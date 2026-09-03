@@ -1,13 +1,13 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16104
+// Function ID: 16105
 // Name: fetchMobileGameCommunities
-// Dependencies: [15448, 673, 581, 684, 706, 527, 1482, 2]
+// Dependencies: [15462, 673, 581, 684, 706, 527, 1482, 2]
 // Exports: dismissGuild, fetchMobileGameCommunities, fetchMobileGameCommunitiesIfStale
 
-// Module 16088 (fetchMobileGameCommunities)
+// Module 16104 (fetchMobileGameCommunities)
 import setDefault from "set" /* 684 */;
 import parseDefault from "parse" /* 1482 */;
-import closure_3 from "set" /* 15448 */;
+import closure_3 from "set" /* 15462 */;
 import { Endpoints } from "ME" /* 673 */;
 import importDefaultResult from "fails" /* 581 */;
 import importDefaultResult1 from "dispatcher" /* 706 */;
@@ -69,7 +69,7 @@ export const fetchMobileGameCommunities = function fetchMobileGameCommunities(ga
               let obj = { url: constants.MOBILE_GAME_COMMUNITIES, query: callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items }), oldFormErrors: true, rejectWithError: true };
               let value = HTTP.get(obj);
               let obj2 = callback(dependencyMap[6]);
-              value.then(() => { ... }, () => { ... }).catch(/* F122805 */ function() { ... });
+              value.then(() => { ... }, () => { ... }).catch(/* F123042 */ function() { ... });
             });
           }
         }).catch(() => {
@@ -137,7 +137,7 @@ export const fetchMobileGameCommunitiesIfStale = function fetchMobileGameCommuni
                   let obj = { url: constants.MOBILE_GAME_COMMUNITIES, query: callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items }), oldFormErrors: true, rejectWithError: true };
                   let value = HTTP.get(obj);
                   let obj2 = callback(dependencyMap[6]);
-                  value.then(() => { ... }, () => { ... }).catch(/* F122805 */ function() { ... });
+                  value.then(() => { ... }, () => { ... }).catch(/* F123042 */ function() { ... });
                 });
               }
             }).catch(() => {

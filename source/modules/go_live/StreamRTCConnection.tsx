@@ -1,7 +1,7 @@
 // Module ID: 4571
 // Function ID: 4572
 // Name: isOwner
-// Dependencies: [4535, 4551, 4572, 1215, 1386, 4573, 4529, 4574, 4554, 4575, 673, 4542, 684, 4556, 4576, 4362, 4544, 4577, 12, 706, 4578, 4579, 4653, 695, 4472, 4659, 4558, 4660, 4661, 4539, 7424, 2]
+// Dependencies: [4535, 4551, 4572, 1215, 1386, 4573, 4529, 4574, 4554, 4575, 673, 4542, 684, 4556, 4576, 4362, 4544, 4577, 12, 706, 4578, 4579, 4653, 695, 4472, 4659, 4558, 4660, 4661, 4539, 7425, 2]
 
 // Module 4571 (isOwner)
 import applyDefault from "apply" /* 12 */;
@@ -758,7 +758,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = closure_1_9.getHardwareEncoding();
         let tmp = null;
         if (self.isOwner) {
-          tmp = tmp4(7424)();
+          tmp = tmp4(7425)();
         }
         obj.device_performance_class = tmp;
         obj.soundshare_experimental = closure_1_9.getExperimentalSoundshare();
@@ -802,7 +802,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = closure_1_9.getHardwareEncoding();
         let tmp2 = null;
         if (self.isOwner) {
-          tmp2 = tmp4(7424)();
+          tmp2 = tmp4(7425)();
         }
         obj.device_performance_class = tmp2;
         obj.track(closure_1_13.VIDEO_STREAM_ENDED, obj);

@@ -1,11 +1,11 @@
-// Module ID: 7626
-// Function ID: 7627
+// Module ID: 7627
+// Function ID: 7628
 // Name: useGradientBottom
-// Dependencies: [19, 4478, 4296, 7627, 2]
+// Dependencies: [19, 4478, 4296, 7628, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 7626 (useGradientBottom)
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7627 */;
+// Module 7627 (useGradientBottom)
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7628 */;
 import closure_3 from "noop" /* 19 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

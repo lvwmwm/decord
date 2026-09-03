@@ -1,14 +1,14 @@
-// Module ID: 6398
-// Function ID: 6399
+// Module ID: 6399
+// Function ID: 6400
 // Name: CandyIllocon
-// Dependencies: [21, 5501, 6399, 2]
+// Dependencies: [21, 5502, 6400, 2]
 // Exports: CandyIllocon
 
-// Module 6398 (CandyIllocon)
+// Module 6399 (CandyIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6399 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6400 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CandyIllocon.native.tsx");

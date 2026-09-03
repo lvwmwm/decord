@@ -1,10 +1,10 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14379
+// Function ID: 14380
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1386, 1921, 1385, 10853, 4471, 21, 4478, 709, 586, 10939, 9098, 14362, 5967, 1470, 14364, 7210, 7436, 4194, 1233, 5989, 4193, 1492, 1627, 1234, 5510, 7617, 5503, 6246, 4421, 5078, 10942, 10953, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 1921, 1385, 10857, 4471, 21, 4478, 709, 586, 10943, 9102, 14378, 5968, 1470, 14380, 7211, 7437, 4194, 1233, 5990, 4193, 1492, 1627, 1234, 5511, 7618, 5504, 6247, 4421, 5079, 10946, 10957, 2]
 // Exports: default
 
-// Module 14363 (ActivityShareLinkModal)
+// Module 14379 (ActivityShareLinkModal)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import closure_9 from "participantFromServer" /* 1385 */;
-import { UserRowModes } from "UserRowModes" /* 10853 */;
+import { UserRowModes } from "UserRowModes" /* 10857 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -136,7 +136,7 @@ export default function ActivityShareLinkModal(applicationId) {
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(10939).getOrResolveChannelIdFromDestinationId));
+              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(10943).getOrResolveChannelIdFromDestinationId));
               return obj1;
             } else {
               c3 = 3;
@@ -147,7 +147,7 @@ export default function ActivityShareLinkModal(applicationId) {
           throw arg1;
         } else if (arg0 !== 2) {
           closure_0 = arg1.filter(closure_1_0(1470).isNotNullish);
-          closure_1 = closure_1_0(14364).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_1 = closure_1_0(14380).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             closure_0 = v3((arg0) => {
@@ -223,7 +223,7 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = closure_1_0(14364);
+          const obj5 = closure_1_0(14380);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
           const intl = closure_1_0(1233).intl;
           const obj3 = { applicationName: null };
@@ -232,8 +232,8 @@ export default function ActivityShareLinkModal(applicationId) {
           closure_1_1(4194).open(obj2);
           callback(true, closure_7);
           const obj6 = closure_1_1(4194);
-          const result = closure_1_0(14362).closeActivityShareLinkModal();
-          const obj9 = closure_1_0(14362);
+          const result = closure_1_0(14378).closeActivityShareLinkModal();
+          const obj9 = closure_1_0(14378);
         }
         c3 = 3;
         obj = { value: null, done: true };

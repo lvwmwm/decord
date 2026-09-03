@@ -1,10 +1,10 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13978
+// Function ID: 13979
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 4927, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 4928, 2]
 // Exports: default
 
-// Module 13962 (Collapsible)
+// Module 13978 (Collapsible)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

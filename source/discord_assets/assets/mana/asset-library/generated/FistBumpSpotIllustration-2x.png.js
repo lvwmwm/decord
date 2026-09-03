@@ -1,9 +1,9 @@
-// Module ID: 6563
-// Function ID: 6564
+// Module ID: 6564
+// Function ID: 6565
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6563 (metadata)
+// Module 6564 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FistBumpSpotIllustration-2x.png.js");

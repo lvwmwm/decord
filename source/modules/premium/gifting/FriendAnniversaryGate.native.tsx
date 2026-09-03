@@ -1,12 +1,12 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 8001
+// Function ID: 8002
 // Name: getFriendAnniversaryGateConfig
-// Dependencies: [7999, 2]
+// Dependencies: [8002, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 7998 (getFriendAnniversaryGateConfig)
+// Module 8001 (getFriendAnniversaryGateConfig)
 import set from "set" /* 2 */;
-import apexExperimentDefault from "apexExperiment" /* 7999 */;
+import apexExperimentDefault from "apexExperiment" /* 8002 */;
 
 const result = set.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 

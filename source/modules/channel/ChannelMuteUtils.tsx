@@ -1,10 +1,10 @@
-// Module ID: 10249
-// Function ID: 10250
+// Module ID: 10253
+// Function ID: 10254
 // Name: getMuteSettings
 // Dependencies: [4074, 2]
 // Exports: getMuteSettings
 
-// Module 10249 (getMuteSettings)
+// Module 10253 (getMuteSettings)
 import set from "set" /* 2 */;
 import hooksDefault from "hooks" /* 4074 */;
 

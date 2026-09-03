@@ -1,10 +1,10 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10933
+// Function ID: 10934
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1468, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 10929 (InappropriateConversationsDefaultOn)
+// Module 10933 (InappropriateConversationsDefaultOn)
 import getUnitIdDefault from "getUnitId" /* 1468 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

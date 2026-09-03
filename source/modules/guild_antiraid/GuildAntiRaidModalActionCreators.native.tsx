@@ -1,25 +1,25 @@
-// Module ID: 13925
-// Function ID: 13926
+// Module ID: 13941
+// Function ID: 13942
 // Name: openReportRaidModal
-// Dependencies: [7934, 4723, 13926, 2008, 2]
+// Dependencies: [7937, 4724, 13942, 2008, 2]
 // Exports: openReportRaidModal
 
-// Module 13925 (openReportRaidModal)
+// Module 13941 (openReportRaidModal)
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4723 from "module_4723" /* 4723 */;
-import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7934 */;
+import _modDef4724 from "module_4724" /* 4724 */;
+import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7937 */;
 
 let closure_3 = GUILD_REPORT_RAID_MOBILE_KEY.GUILD_REPORT_RAID_MOBILE_KEY;
 const result = set.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidModalActionCreators.native.tsx");
 
 export const openReportRaidModal = function openReportRaidModal(id) {
-  let obj = _modDef4723;
+  let obj = _modDef4724;
   obj = {
     onCloseModal() {
       callback(table[1]).popWithKey(closure_3);
     },
     guildId: id
   };
-  obj.pushLazy(asyncRequireImpl(13926, dependencyMap.paths), obj, closure_3);
+  obj.pushLazy(asyncRequireImpl(13942, dependencyMap.paths), obj, closure_3);
 };

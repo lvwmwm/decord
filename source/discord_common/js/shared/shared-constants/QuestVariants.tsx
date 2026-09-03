@@ -1,9 +1,9 @@
-// Module ID: 5396
-// Function ID: 5397
+// Module ID: 5397
+// Function ID: 5398
 // Name: QuestVariants
 // Dependencies: [2]
 
-// Module 5396 (QuestVariants)
+// Module 5397 (QuestVariants)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestVariants.tsx");

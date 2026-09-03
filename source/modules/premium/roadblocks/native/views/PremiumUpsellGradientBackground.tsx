@@ -1,14 +1,14 @@
-// Module ID: 9158
-// Function ID: 9159
+// Module ID: 9162
+// Function ID: 9163
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 7186, 21, 4478, 4940, 688, 2]
+// Dependencies: [19, 17, 7187, 21, 4478, 4941, 688, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 9158 (PremiumUpsellGradientBackground)
+// Module 9162 (PremiumUpsellGradientBackground)
 import noopAll from "noop" /* 19 */;
 import keys from "keys" /* 688 */;
-import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import { Gradients } from "items" /* 7186 */;
+import LinearGradientDefault from "LinearGradient" /* 4941 */;
+import { Gradients } from "items" /* 7187 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

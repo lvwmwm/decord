@@ -1,10 +1,10 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8131
+// Function ID: 8132
 // Name: getProfileTheme
 // Dependencies: [32, 673, 685, 4327, 12, 1362, 686, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8128 (getProfileTheme)
+// Module 8131 (getProfileTheme)
 import apply2 from "apply" /* 12 */;
 import int2hslRaw from "int2hslRaw" /* 685 */;
 import nDefault from "n" /* 686 */;

@@ -1,14 +1,14 @@
-// Module ID: 6510
-// Function ID: 6511
+// Module ID: 6511
+// Function ID: 6512
 // Name: EmojiDistrustExample
-// Dependencies: [21, 5501, 6511, 2]
+// Dependencies: [21, 5502, 6512, 2]
 // Exports: EmojiDistrustExample
 
-// Module 6510 (EmojiDistrustExample)
+// Module 6511 (EmojiDistrustExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6511 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6512 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiDistrustExample.native.tsx");

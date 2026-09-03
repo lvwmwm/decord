@@ -1,13 +1,13 @@
-// Module ID: 7992
-// Function ID: 7993
+// Module ID: 7995
+// Function ID: 7996
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1386, 1921, 7878, 7880, 4478, 709, 1233, 7864, 7993, 7882, 2]
+// Dependencies: [1386, 1921, 7881, 7883, 4478, 709, 1233, 7867, 7996, 7885, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7992 (createFriendRequestAcceptedSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
-import registerAssetDefault from "registerAsset" /* 7993 */;
+// Module 7995 (createFriendRequestAcceptedSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
+import registerAssetDefault from "registerAsset" /* 7996 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
@@ -73,10 +73,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           }
           const obj4 = { content: null, iconUrl: null, textColor: null };
           obj4[0] = formatToPartsResult;
-          tmp15Result = tmp15(7864);
+          tmp15Result = tmp15(7867);
           obj4[1] = tmp15Result.getAssetUriForEmbed(registerAssetDefault);
           obj4[2] = undefined;
-          const merged1 = Object.assign(tmp17(7882)(message));
+          const merged1 = Object.assign(tmp17(7885)(message));
           return obj4;
         }
       }

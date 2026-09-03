@@ -1,19 +1,19 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12379
+// Function ID: 12380
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4470, 21, 4478, 709, 8013, 12368, 4163, 586, 7879, 8243, 12370, 12372, 1296, 4474, 12374, 1233, 2]
+// Dependencies: [17, 4470, 21, 4478, 709, 8016, 12380, 4163, 586, 7882, 8247, 12382, 12384, 1296, 4474, 12386, 1233, 2]
 // Exports: default
 
-// Module 12367 (GuildPowerupsRecentActivityRow)
+// Module 12379 (GuildPowerupsRecentActivityRow)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import resetCache from "resetCache" /* 4163 */;
-import apexExperiment from "apexExperiment" /* 8013 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12368 */;
-import useMaybeGetSortedBoostsDefault from "useMaybeGetSortedBoosts" /* 12368 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12374 */;
+import apexExperiment from "apexExperiment" /* 8016 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12380 */;
+import useMaybeGetSortedBoostsDefault from "useMaybeGetSortedBoosts" /* 12380 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12386 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -37,16 +37,16 @@ function GuildPowerupsRecentActivityRow(row) {
       obj = { color: null };
       obj[0] = roleColor;
     }
-    let tmpResult = tmp(7879);
+    let tmpResult = tmp(7882);
     const processColorStringsArray = tmpResult.useProcessColorStringsArray(roleColorStrings);
-    tmpResult = tmp(7879);
+    tmpResult = tmp(7882);
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp(8243).BoostGemIcon;
+      let BoostGemSlashIcon = tmp(8247).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12370).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12382).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12372).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12384).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp4.boostRowContainer;

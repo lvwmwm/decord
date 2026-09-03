@@ -1,10 +1,10 @@
-// Module ID: 9150
-// Function ID: 9151
+// Module ID: 9154
+// Function ID: 9155
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 1908, 1393, 21, 8178, 1233, 1492, 586, 5465, 4947, 9151, 8186, 2]
+// Dependencies: [19, 1908, 1393, 21, 8182, 1233, 1492, 586, 5466, 4948, 9155, 8190, 2]
 // Exports: default
 
-// Module 9150 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9154 (RoleSubscriptionEmojiUpsellAlert)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import { StaticChannelRoute } from "set" /* 1393 */;

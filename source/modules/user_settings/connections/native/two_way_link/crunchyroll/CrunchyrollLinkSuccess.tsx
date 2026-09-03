@@ -1,17 +1,17 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9364
+// Function ID: 9365
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [19, 17, 21, 4478, 9319, 9361, 4474, 1233, 5561, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 9323, 9365, 4474, 1233, 5562, 4929, 2]
 // Exports: default
 
-// Module 9360 (CrunchyrollLinkDiscordSuccess)
+// Module 9364 (CrunchyrollLinkDiscordSuccess)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import styles from "styles" /* 9319 */;
-import registerAssetDefault from "registerAsset" /* 9361 */;
+import Button from "Button" /* 4929 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import styles from "styles" /* 9323 */;
+import registerAssetDefault from "registerAsset" /* 9365 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

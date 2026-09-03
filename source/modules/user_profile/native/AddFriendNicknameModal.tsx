@@ -1,15 +1,15 @@
-// Module ID: 12827
-// Function ID: 12828
+// Module ID: 12839
+// Function ID: 12840
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4130, 1921, 21, 4478, 709, 10885, 586, 1233, 4723, 9073, 6057, 4947, 4474, 6231, 4322, 2]
+// Dependencies: [5, 32, 19, 17, 4130, 1921, 21, 4478, 709, 10889, 586, 1233, 4724, 9077, 6058, 4948, 4474, 6232, 4322, 2]
 // Exports: default
 
-// Module 12827 (AddFriendNicknameModal)
+// Module 12839 (AddFriendNicknameModal)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import TextField from "TextField" /* 6231 */;
+import TextField from "TextField" /* 6232 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -153,7 +153,7 @@ export default function AddFriendNicknameModal(arg0) {
   let tmp = callback4();
   let obj = React;
   [c2, c3] = callback(React.useState(false), 2);
-  callback = showUserProfile(10885)();
+  callback = showUserProfile(10889)();
   obj1 = initialize;
   const items = [_handleSubmit];
   const stateFromStores = obj1.useStateFromStores(items, () => _handleSubmit.getNickname(closure_0));
@@ -185,9 +185,9 @@ export default function AddFriendNicknameModal(arg0) {
   }, items2);
   obj = { style: tmp.container, children: null };
   obj = { children: null };
-  let tmp3Result = tmp3(6057);
+  let tmp3Result = tmp3(6058);
   obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  tmp3Result = tmp3(4947);
+  tmp3Result = tmp3(4948);
   const intl3 = tmp5(1233).intl;
   obj1[0] = intl3.string(getSystemLocale.t["R3BPH+"]);
   obj1[1] = function handleSubmit() {

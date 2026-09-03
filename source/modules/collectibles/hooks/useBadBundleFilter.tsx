@@ -1,16 +1,16 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14918
+// Function ID: 14919
 // Name: useBadBundleFilter
-// Dependencies: [19, 1921, 7312, 644, 4139, 12763, 7308, 7307, 2]
+// Dependencies: [19, 1921, 7313, 644, 4139, 12775, 7309, 7308, 2]
 // Exports: useBadBundleFilter
 
-// Module 14903 (useBadBundleFilter)
+// Module 14918 (useBadBundleFilter)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "map" /* 7312 */;
+import closure_5 from "map" /* 7313 */;
 
 noop.useCallback;
 let result = set.fileFinishedImporting("modules/collectibles/hooks/useBadBundleFilter.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11218
+// Function ID: 11219
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5229, 4121, 1386, 4529, 4554, 673, 1393, 4478, 709, 11215, 4960, 4342, 644, 1625, 1234, 4197, 7626, 2]
+// Dependencies: [19, 5230, 4121, 1386, 4529, 4554, 673, 1393, 4478, 709, 11219, 4961, 4342, 644, 1625, 1234, 4197, 7627, 2]
 // Exports: default
 
-// Module 11214 (useChannelSafeAreaBottomStyles)
+// Module 11218 (useChannelSafeAreaBottomStyles)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5229 */;
+import closure_4 from "_handleConnectionOpen" /* 5230 */;
 import closure_5 from "initialize" /* 4121 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "_detectH265HardwareDecode" /* 4529 */;

@@ -1,12 +1,12 @@
-// Module ID: 8792
-// Function ID: 8793
+// Module ID: 8796
+// Function ID: 8797
 // Name: TextElement
-// Dependencies: [19, 17, 21, 4478, 4948, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 4949, 4474, 2]
 // Exports: default
 
-// Module 8792 (TextElement)
+// Module 8796 (TextElement)
 import Text from "Text" /* 4474 */;
-import createRulesAll from "createRules" /* 4948 */;
+import createRulesAll from "createRules" /* 4949 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

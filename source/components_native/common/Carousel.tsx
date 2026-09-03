@@ -1,9 +1,9 @@
-// Module ID: 8225
-// Function ID: 8226
+// Module ID: 8229
+// Function ID: 8230
 // Name: render
 // Dependencies: [19, 17, 21, 4478, 709, 4204, 1296, 2]
 
-// Module 8225 (render)
+// Module 8229 (render)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import importAllResult from "noop" /* 19 */;

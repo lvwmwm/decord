@@ -1,15 +1,15 @@
-// Module ID: 14730
-// Function ID: 14731
+// Module ID: 14745
+// Function ID: 14746
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4478, 709, 8090, 14731, 6089, 14732, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8093, 14746, 6090, 14747, 4474, 2]
 // Exports: default
 
-// Module 14730 (FamilyCenterActivityPurchaseRow)
+// Module 14745 (FamilyCenterActivityPurchaseRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8090 */;
-import getCollectibleTypeName from "getCollectibleTypeName" /* 14731 */;
-import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14732 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8093 */;
+import getCollectibleTypeName from "getCollectibleTypeName" /* 14746 */;
+import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14747 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -47,7 +47,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(6089);
+    const tmp5Result = tmp5(6090);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[0] = tmp.container;
     obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj[0] = displayName;
-    const formatPriceResult = tmp5(6089).formatPrice(total, currency);
+    const formatPriceResult = tmp5(6090).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }

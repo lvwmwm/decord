@@ -1,10 +1,10 @@
-// Module ID: 15982
-// Function ID: 15983
+// Module ID: 15998
+// Function ID: 15999
 // Name: _saveGuildThemeNuxPreference
 // Dependencies: [5, 1339, 4409, 1369, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15982 (_saveGuildThemeNuxPreference)
+// Module 15998 (_saveGuildThemeNuxPreference)
 import GuildThemeSourcePreference2 from "GuildThemeSourcePreference" /* 4409 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;

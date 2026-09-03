@@ -1,10 +1,10 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 6065
+// Function ID: 6066
 // Name: _fetchWebAuthnConditionalChallenge
-// Dependencies: [5, 673, 527, 706, 4713, 660, 2]
+// Dependencies: [5, 673, 527, 706, 4714, 660, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 6064 (_fetchWebAuthnConditionalChallenge)
+// Module 6065 (_fetchWebAuthnConditionalChallenge)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -256,7 +256,7 @@ function _finishRegisterWebAuthnCredential() {
               c5 = 1;
               c6 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = callback(4713).post(obj1);
+              obj4[0] = callback(4714).post(obj1);
               return obj4;
             }
           } else if (arg0 === 1) {

@@ -1,15 +1,15 @@
-// Module ID: 8691
-// Function ID: 8692
+// Module ID: 8695
+// Function ID: 8696
 // Name: getSafetyToastTypeContent
-// Dependencies: [1386, 1921, 8685, 4673, 4322, 1233, 2918, 2500, 2]
+// Dependencies: [1386, 1921, 8689, 4673, 4322, 1233, 2918, 2500, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 8691 (getSafetyToastTypeContent)
+// Module 8695 (getSafetyToastTypeContent)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { SafetyToastType } from "SafetyToastType" /* 8685 */;
+import { SafetyToastType } from "SafetyToastType" /* 8689 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_common/SafetyToastsUtils.tsx");

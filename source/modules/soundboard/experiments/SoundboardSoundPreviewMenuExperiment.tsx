@@ -1,10 +1,10 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 16910
+// Function ID: 16911
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: useSoundboardSoundPreviewMenuEnabled
 
-// Module 16890 (apexExperiment)
+// Module 16910 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

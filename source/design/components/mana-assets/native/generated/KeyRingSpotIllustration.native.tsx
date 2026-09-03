@@ -1,14 +1,14 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6777
+// Function ID: 6778
 // Name: KeyRingSpotIllustration
-// Dependencies: [21, 5501, 6777, 2]
+// Dependencies: [21, 5502, 6778, 2]
 // Exports: KeyRingSpotIllustration
 
-// Module 6776 (KeyRingSpotIllustration)
+// Module 6777 (KeyRingSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6777 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6778 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/KeyRingSpotIllustration.native.tsx");

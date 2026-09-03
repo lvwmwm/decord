@@ -1,10 +1,10 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10822
+// Function ID: 10823
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 6016, 5503, 4723, 4474, 1233, 2]
+// Dependencies: [19, 17, 21, 6017, 5504, 4724, 4474, 1233, 2]
 // Exports: default
 
-// Module 10818 (UnsupportedFeatureModal)
+// Module 10822 (UnsupportedFeatureModal)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -19,7 +19,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   obj = { Unsupported: null };
   obj = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5503).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5504).getHeaderCloseButton(() => {
       let arr = closure_1_1(closure_1_2[5]);
       arr = arr.pop();
       if (onDismiss != null) {
@@ -37,9 +37,9 @@ export default function UnsupportedFeatureModal(onDismiss) {
   };
   obj[0] = obj;
   obj[1] = obj;
-  return jsx(onDismiss(6016).Navigator, {
+  return jsx(onDismiss(6017).Navigator, {
     title: onDismiss.title,
-    headerLeft: onDismiss(5503).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5504).getHeaderCloseButton(() => {
       let arr = closure_1_1(closure_1_2[5]);
       arr = arr.pop();
       if (onDismiss != null) {

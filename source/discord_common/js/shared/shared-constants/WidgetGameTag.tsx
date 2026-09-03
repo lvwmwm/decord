@@ -1,9 +1,9 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7387
+// Function ID: 7388
 // Name: WidgetGameTag
 // Dependencies: [2]
 
-// Module 7386 (WidgetGameTag)
+// Module 7387 (WidgetGameTag)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetGameTag.tsx");

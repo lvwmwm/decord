@@ -1,10 +1,10 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17375
+// Function ID: 17376
 // Name: ConnectedGuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 1386, 1908, 1980, 1921, 17356, 673, 21, 4478, 709, 1498, 586, 17358, 4322, 1233, 5994, 17365, 17375, 6246, 17366, 6056, 5607, 4474, 5614, 1296, 17376, 5947, 2]
+// Dependencies: [32, 19, 17, 1386, 1908, 1980, 1921, 17376, 673, 21, 4478, 709, 1498, 586, 17378, 4322, 1233, 5995, 17385, 17395, 6247, 17386, 6057, 5608, 4474, 5615, 1296, 17396, 5948, 2]
 // Exports: default
 
-// Module 17355 (ConnectedGuildSettingsModalAuditLog)
+// Module 17375 (ConnectedGuildSettingsModalAuditLog)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -13,7 +13,7 @@ import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "handleConnectionOpen" /* 1980 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "AuditLogActions" /* 17356 */;
+import closure_12 from "AuditLogActions" /* 17376 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

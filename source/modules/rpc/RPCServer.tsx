@@ -1,12 +1,12 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14419
+// Function ID: 14420
 // Name: registerTransport
-// Dependencies: [5, 4380, 673, 12, 9522, 9516, 14379, 695, 38, 14404, 684, 2]
+// Dependencies: [5, 4380, 673, 12, 9526, 9520, 14395, 695, 38, 14420, 684, 2]
 
-// Module 14403 (registerTransport)
+// Module 14419 (registerTransport)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import transformUserDefault from "transformUser" /* 9522 */;
+import transformUserDefault from "transformUser" /* 9526 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
 import ME from "ME" /* 673 */;

@@ -1,21 +1,21 @@
-// Module ID: 15522
-// Function ID: 15523
+// Module ID: 15536
+// Function ID: 15537
 // Name: BalanceWidgetMenuSection
-// Dependencies: [32, 19, 17, 21, 7831, 6016, 7617, 10883, 4478, 709, 4926, 4474, 15523, 4445, 11070, 2008, 1233, 7714, 4928, 11060, 11069, 5602, 5948, 15525, 2]
+// Dependencies: [32, 19, 17, 21, 7834, 6017, 7618, 10887, 4478, 709, 4927, 4474, 15537, 4445, 11074, 2008, 1233, 7717, 4929, 11064, 11073, 5603, 5949, 15539, 2]
 
-// Module 15522 (BalanceWidgetMenuSection)
+// Module 15536 (BalanceWidgetMenuSection)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4926 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import Layer from "Layer" /* 5948 */;
-import BalanceWidgetDefault from "BalanceWidget" /* 15523 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15525 */;
+import Stack from "Stack" /* 4927 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
+import Layer from "Layer" /* 5949 */;
+import BalanceWidgetDefault from "BalanceWidget" /* 15537 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15539 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
@@ -104,7 +104,7 @@ createCacheKey = { flexDirection: "row", justifyContent: "center", marginBottom:
 obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(6016);
+  let obj = _require(6017);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

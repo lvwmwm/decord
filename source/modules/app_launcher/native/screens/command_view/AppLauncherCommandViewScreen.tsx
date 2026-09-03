@@ -1,27 +1,27 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 11952
+// Function ID: 11953
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 32, 19, 17, 4470, 8154, 1984, 1497, 673, 1622, 21, 4478, 709, 11947, 586, 4217, 4479, 4482, 4446, 4940, 4326, 4929, 1233, 4423, 9063, 4700, 5602, 11948, 7277, 8591, 11846, 702, 11823, 11950, 1954, 8153, 11788, 9490, 1492, 11213, 10649, 11951, 10650, 5090, 1890, 5081, 11952, 8444, 5632, 4474, 11953, 11954, 11982, 1296, 38, 11923, 8452, 7275, 8159, 8439, 11983, 11984, 11909, 11910, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 8158, 1984, 1497, 673, 1622, 21, 4478, 709, 11953, 586, 4217, 4479, 4482, 4446, 4941, 4326, 4930, 1233, 4423, 9067, 4701, 5603, 11954, 7278, 8595, 11852, 702, 11829, 11956, 1954, 8157, 11794, 9494, 1492, 11217, 10653, 11957, 10654, 5091, 1890, 5082, 11958, 8448, 5633, 4474, 11959, 11960, 11988, 1296, 38, 11929, 8456, 7276, 8163, 8443, 11989, 11990, 11915, 11916, 2]
 // Exports: default
 
-// Module 11946 (AppLauncherCommandViewFooter)
+// Module 11952 (AppLauncherCommandViewFooter)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import CollapsingText from "CollapsingText" /* 4929 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8444 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11846 */;
-import registerAssetDefault from "registerAsset" /* 11909 */;
-import registerAssetDefault2 from "registerAsset" /* 11910 */;
-import registerAssetDefault3 from "registerAsset" /* 11983 */;
-import registerAssetDefault4 from "registerAsset" /* 11984 */;
+import CollapsingText from "CollapsingText" /* 4930 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8448 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11852 */;
+import registerAssetDefault from "registerAsset" /* 11915 */;
+import registerAssetDefault2 from "registerAsset" /* 11916 */;
+import registerAssetDefault3 from "registerAsset" /* 11989 */;
+import registerAssetDefault4 from "registerAsset" /* 11990 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import getIndexKey from "getIndexKey" /* 8154 */;
+import getIndexKey from "getIndexKey" /* 8158 */;
 import closure_13 from "createGuildRoleRecordFromRust" /* 1984 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import ME from "ME" /* 673 */;

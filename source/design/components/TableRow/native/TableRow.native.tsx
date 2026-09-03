@@ -1,16 +1,16 @@
-// Module ID: 5607
-// Function ID: 5608
+// Module ID: 5608
+// Function ID: 5609
 // Name: TableRowInner
-// Dependencies: [19, 17, 21, 4478, 709, 5608, 4197, 5609, 5565, 5613, 5614, 5616, 4935, 1234, 5617, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5609, 4197, 5610, 5566, 5614, 5615, 5617, 4936, 1234, 5618, 4474, 2]
 
-// Module 5607 (TableRowInner)
+// Module 5608 (TableRowInner)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
 import map from "map" /* 4197 */;
-import getFontScale from "getFontScale" /* 4935 */;
-import context2 from "context" /* 5608 */;
-import PressableCard from "PressableCard" /* 5609 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 5616 */;
+import getFontScale from "getFontScale" /* 4936 */;
+import context2 from "context" /* 5609 */;
+import PressableCard from "PressableCard" /* 5610 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 5617 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

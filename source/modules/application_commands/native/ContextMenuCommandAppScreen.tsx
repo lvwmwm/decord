@@ -1,10 +1,10 @@
-// Module ID: 16685
-// Function ID: 16686
+// Module ID: 16705
+// Function ID: 16706
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4478, 709, 5602, 7784, 16684, 7787, 2]
+// Dependencies: [19, 21, 4478, 709, 5603, 7787, 16704, 7790, 2]
 // Exports: default
 
-// Module 16685 (ContextMenuCommandAppScreen)
+// Module 16705 (ContextMenuCommandAppScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

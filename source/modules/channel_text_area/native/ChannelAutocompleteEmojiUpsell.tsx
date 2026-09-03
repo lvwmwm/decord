@@ -1,10 +1,10 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12187
+// Function ID: 12188
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1924, 21, 4478, 709, 5501, 1430, 4474, 1233, 2]
+// Dependencies: [19, 17, 1924, 21, 4478, 709, 5502, 1430, 4474, 1233, 2]
 // Exports: default
 
-// Module 12181 (ChannelAutocompleteEmojiUpsell)
+// Module 12187 (ChannelAutocompleteEmojiUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

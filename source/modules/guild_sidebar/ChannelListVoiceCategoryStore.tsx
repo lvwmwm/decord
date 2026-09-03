@@ -1,9 +1,9 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7288
+// Function ID: 7289
 // Name: handleChange
 // Dependencies: [586, 706, 2]
 
-// Module 7287 (handleChange)
+// Module 7288 (handleChange)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

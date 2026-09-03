@@ -1,10 +1,10 @@
-// Module ID: 9247
-// Function ID: 9248
+// Module ID: 9251
+// Function ID: 9252
 // Name: getMutualGuildsLabel
 // Dependencies: [1233, 2]
 // Exports: default
 
-// Module 9247 (getMutualGuildsLabel)
+// Module 9251 (getMutualGuildsLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 

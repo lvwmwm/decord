@@ -1,10 +1,10 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12823
+// Function ID: 12824
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 673, 21, 4478, 709, 12809, 11000, 12760, 695, 10685, 4194, 1233, 11001, 8908, 2]
+// Dependencies: [5, 32, 19, 17, 673, 21, 4478, 709, 12821, 11004, 12772, 695, 10689, 4194, 1233, 11005, 8912, 2]
 // Exports: default
 
-// Module 12811 (AddToWishlistItemCard)
+// Module 12823 (AddToWishlistItemCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;

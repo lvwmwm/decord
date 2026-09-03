@@ -1,10 +1,10 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 16791
+// Function ID: 16792
 // Name: ToastIcon
 // Dependencies: [32, 19, 17, 21, 4478, 709, 4197, 1296, 4474, 2]
 // Exports: default
 
-// Module 16771 (ToastIcon)
+// Module 16791 (ToastIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;

@@ -1,7 +1,7 @@
 // Module ID: 4469
 // Function ID: 4470
 // Name: MarkupText
-// Dependencies: [19, 17, 4470, 1386, 1984, 1908, 673, 1393, 502, 21, 4473, 4474, 4478, 709, 4489, 4675, 4333, 4723, 8911, 4857, 1233, 5989, 4193, 6012, 1296, 1485, 8656, 4190, 11423, 11404, 8014, 586, 4326, 7879, 4445, 11407, 2008, 11, 4166, 5501, 11385, 13802, 9058, 4949, 10230, 13803, 13805, 4421, 4951, 1234, 4981, 13807, 10232, 2]
+// Dependencies: [19, 17, 4470, 1386, 1984, 1908, 673, 1393, 502, 21, 4473, 4474, 4478, 709, 4489, 4675, 4333, 4724, 8915, 4858, 1233, 5990, 4193, 6013, 1296, 1485, 8660, 4190, 11428, 11409, 8017, 586, 4326, 7882, 4445, 11412, 2008, 11, 4166, 5502, 11390, 13818, 9062, 4950, 10234, 13819, 13821, 4421, 4952, 1234, 4982, 13823, 10236, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4469 (MarkupText)
@@ -9,9 +9,9 @@ import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5501 */;
-import smartOutput from "smartOutput" /* 8014 */;
-import handleTapCommandMentionDefault from "handleTapCommandMention" /* 9058 */;
+import preloadDefault from "preload" /* 5502 */;
+import smartOutput from "smartOutput" /* 8017 */;
+import handleTapCommandMentionDefault from "handleTapCommandMention" /* 9062 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -122,7 +122,7 @@ function MarkupLink(arg0) {
   obj = {};
   const merged = Object.assign(state);
   obj.inLink = true;
-  obj[5] = node(8014).smartOutput(node, output, obj);
+  obj[5] = node(8017).smartOutput(node, output, obj);
   return tmp2(node(4474).Text, obj, state.key);
 }
 function MarkupMention(styles) {
@@ -324,7 +324,7 @@ function MarkupInlineCode(arg0) {
   const tmp5 = styles.inlineCode || callback2().inlineCode;
   const tmp7 = closure_15;
   const tmp8 = MarkupText;
-  obj[4] = node(8014).smartOutput(node, output, state);
+  obj[4] = node(8017).smartOutput(node, output, state);
   return tmp7(tmp8, obj, state.key);
 }
 function MarkupCodeBlock(state) {
@@ -414,7 +414,7 @@ function MarkupChannelMention(state) {
   const items = [outputResult, , ];
   if (null == node.inContent) {
     items[1] = null;
-    items[2] = tmp3(8014).smartOutput(node, output, state);
+    items[2] = tmp3(8017).smartOutput(node, output, state);
     obj[2] = items;
     const tmp2Result = closure_16(state(4474).Text, obj, state.key);
     let tmp13Result = tmp2Result;
@@ -494,7 +494,7 @@ function MarkupChannelMention(state) {
       obj3 = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
     obj2[1] = obj3;
-    obj2[2] = node(11385);
+    obj2[2] = node(11390);
     obj2[3] = tmp3(1296).Icon.Sizes.CUSTOM;
     closure_15(tmp3(1296).ThemedIcon, obj2);
     const tmp6 = closure_15;
@@ -515,7 +515,7 @@ function MarkupAttachmentLink(state) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: null };
-  obj = { themedColor: node(709).colors.MENTION_FOREGROUND, source: node(13802), size: null };
+  obj = { themedColor: node(709).colors.MENTION_FOREGROUND, source: node(13818), size: null };
   const fontScale = store.getFontScale();
   if (fontScale < 1) {
     let SMALL = tmp3(1296).Icon.Sizes.EXTRA_SMALL_10;
@@ -525,7 +525,7 @@ function MarkupAttachmentLink(state) {
     SMALL = tmp3(1296).Icon.Sizes.SMALL;
   }
   obj[2] = SMALL;
-  const items = [closure_15(state(1296).ThemedIcon, obj), state(8014).smartOutput(node, output, state)];
+  const items = [closure_15(state(1296).ThemedIcon, obj), state(8017).smartOutput(node, output, state)];
   obj[2] = items;
   const tmp2Result = closure_16(state(4474).Text, obj, state.key);
   let tmp5Result = tmp2Result;
@@ -661,9 +661,9 @@ export default function createRules() {
           }
           obj = { color: null, children: null };
           obj[0] = textColor;
-          obj[1] = obj(8014).smartOutput(content, output, textColor);
+          obj[1] = obj(8017).smartOutput(content, output, textColor);
           content = closure_15(closure_19, obj, textColor.key);
-          const obj2 = obj(8014);
+          const obj2 = obj(8017);
           const tmp6 = closure_15;
           const tmp7 = closure_19;
         }
@@ -679,7 +679,7 @@ export default function createRules() {
         }
         obj[1] = textColor;
         obj[2] = textColor.textVariant;
-        obj[3] = obj(8014).smartOutput(node, output, textColor);
+        obj[3] = obj(8017).smartOutput(node, output, textColor);
         return closure_15(closure_19, obj, textColor.key);
       }
     },
@@ -692,7 +692,7 @@ export default function createRules() {
         }
         obj[1] = textColor;
         obj[2] = textColor.textVariant;
-        obj[3] = obj(8014).smartOutput(node, output, textColor);
+        obj[3] = obj(8017).smartOutput(node, output, textColor);
         return closure_15(closure_19, obj, textColor.key);
       }
     },
@@ -752,7 +752,7 @@ export default function createRules() {
         if (textColor != null) {
           textColor = textColor.textColor;
         }
-        obj = { color: textColor, children: obj(8014).smartOutput(node, output, textColor) };
+        obj = { color: textColor, children: obj(8017).smartOutput(node, output, textColor) };
         return closure_15(closure_19, obj, textColor.key);
       }
     },
@@ -769,7 +769,7 @@ export default function createRules() {
         if (textColor != null) {
           textColor = textColor.textColor;
         }
-        obj = { color: textColor, children: obj(8014).smartOutput(node, output, textColor) };
+        obj = { color: textColor, children: obj(8017).smartOutput(node, output, textColor) };
         return closure_15(closure_19, obj, textColor.key);
       }
     },
@@ -857,7 +857,7 @@ export default function createRules() {
     },
     [closure_0(closure_2[43]).AST_KEY.CODE_BLOCK]: {
       parse(arg0, arg1, arg2) {
-        obj = str(4951).RULES[obj(undefined, 4949).AST_KEY.CODE_BLOCK];
+        obj = str(4952).RULES[obj(undefined, 4950).AST_KEY.CODE_BLOCK];
         const parsed = obj.parse(arg0, arg1, arg2);
         if ("ansi" === parsed.lang.toLowerCase()) {
           const content = parsed.content;
@@ -891,7 +891,7 @@ export default function createRules() {
     [closure_0(closure_2[43]).AST_KEY.SOUNDBOARD]: {
       react(node, output, key) {
         obj = { variant: "text-md/bold", children: null };
-        const items = ["<sound:", obj(8014).smartOutput(node, output, key), ">"];
+        const items = ["<sound:", obj(8017).smartOutput(node, output, key), ">"];
         obj[1] = items;
         return callback2(obj(4474).Text, obj, key.key);
       }
@@ -924,7 +924,7 @@ export default function createRules() {
           }
           obj1 = { color: null, children: null };
           obj1[0] = textColor1;
-          obj1[1] = tmp(8014).smartOutput(icon, output, textColor);
+          obj1[1] = tmp(8017).smartOutput(icon, output, textColor);
           items[1] = callback(closure_19, obj1);
           obj[1] = items;
           return closure_16(closure_19, obj, textColor.key);
@@ -936,16 +936,16 @@ export default function createRules() {
           obj2[1] = icon.icon;
           const fontScale = store.getFontScale();
           if (fontScale < 1) {
-            let XXSMALL = tmp(6012).GuildIconSizes.XXXSMALL;
+            let XXSMALL = tmp(6013).GuildIconSizes.XXXSMALL;
           } else if (fontScale < 1.25) {
-            XXSMALL = tmp(6012).GuildIconSizes.XXSMALL_12;
+            XXSMALL = tmp(6013).GuildIconSizes.XXSMALL_12;
           } else {
-            XXSMALL = tmp(6012).GuildIconSizes.XXSMALL;
+            XXSMALL = tmp(6013).GuildIconSizes.XXSMALL;
           }
           obj2[2] = XXSMALL;
-          callback(str(6012), obj2);
+          callback(str(6013), obj2);
           const tmp4 = callback;
-          const tmp6 = str(6012);
+          const tmp6 = str(6013);
         }
       }
     },
@@ -959,7 +959,7 @@ export default function createRules() {
         if ("text" === str) {
           num = 0;
         }
-        obj = { themedColor: str(709).colors.MENTION_FOREGROUND, source: obj(4981).getChannelMentionIcon(str), size: null, style: null };
+        obj = { themedColor: str(709).colors.MENTION_FOREGROUND, source: obj(4982).getChannelMentionIcon(str), size: null, style: null };
         const fontScale = store.getFontScale();
         if (fontScale < 1) {
           let SMALL = tmp2(1296).Icon.Sizes.EXTRA_SMALL_10;
@@ -971,7 +971,7 @@ export default function createRules() {
         obj[2] = SMALL;
         obj[3] = { top: 1 };
         textColor = undefined;
-        const obj2 = obj(4981);
+        const obj2 = obj(4982);
         if (textColor != null) {
           textColor = textColor.textColor;
         }
@@ -980,7 +980,7 @@ export default function createRules() {
         const tmp6 = closure_16;
         const tmp7 = closure_19;
         const tmpResult = closure_15(obj(1296).ThemedIcon, obj);
-        items[1] = obj(8014).smartOutput(iconType, output, textColor);
+        items[1] = obj(8017).smartOutput(iconType, output, textColor);
         obj[1] = items;
         return tmp6(tmp7, obj, textColor.key);
       }
@@ -993,7 +993,7 @@ export default function createRules() {
     },
     [closure_0(closure_2[43]).AST_KEY.GAME_MENTION]: {
       react(node, arg1, key) {
-        return callback(str(13807), { node, state: key }, key.key);
+        return callback(str(13823), { node, state: key }, key.key);
       }
     },
     [closure_0(closure_2[43]).AST_KEY.TIMESTAMP]: {
@@ -1145,7 +1145,7 @@ export default function createRules() {
           obj = {};
           const merged = Object.assign(formatInline);
           obj.textVariant = "text-sm/semibold";
-          const items = [obj(8014).smartOutput(level, output, obj), " "];
+          const items = [obj(8017).smartOutput(level, output, obj), " "];
           obj[2] = items;
           return closure_16(closure_19, obj, formatInline.key);
         } else {
@@ -1167,7 +1167,7 @@ export default function createRules() {
           obj1 = {};
           const merged1 = Object.assign(formatInline);
           obj1.textVariant = str;
-          const items1 = [obj(8014).smartOutput(level, output, obj1), "\n"];
+          const items1 = [obj(8017).smartOutput(level, output, obj1), "\n"];
           obj[2] = items1;
           return closure_16(obj(4474).Text, obj, formatInline.key);
         }
@@ -1176,7 +1176,7 @@ export default function createRules() {
     [closure_0(closure_2[43]).AST_KEY.SUBTEXT]: {
       react(node, output, key) {
         obj = { variant: "text-sm/normal", color: "text-muted", children: null };
-        const items = [obj(8014).smartOutput(node, output, key), "\n"];
+        const items = [obj(8017).smartOutput(node, output, key), "\n"];
         obj[2] = items;
         return callback2(obj(4474).Text, obj, key.key);
       }
@@ -1192,9 +1192,9 @@ export default function createRules() {
           }
           obj = { color: null, children: null };
           obj[0] = textColor;
-          obj[1] = obj(8014).smartOutput(content, output, textColor);
+          obj[1] = obj(8017).smartOutput(content, output, textColor);
           content = closure_15(closure_19, obj, textColor.key);
-          const obj2 = obj(8014);
+          const obj2 = obj(8017);
           const tmp6 = closure_15;
           const tmp7 = closure_19;
         }

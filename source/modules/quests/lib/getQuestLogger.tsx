@@ -1,10 +1,10 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 7465
+// Function ID: 7466
 // Name: getQuestLogger
 // Dependencies: [703, 502, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7464 (getQuestLogger)
+// Module 7465 (getQuestLogger)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "refreshSourceMapCookie" /* 703 */;
 import { NOOP } from "sum" /* 502 */;

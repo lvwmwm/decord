@@ -1,23 +1,23 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 9738
+// Function ID: 9739
 // Name: RemoveIcon
-// Dependencies: [19, 17, 1921, 8687, 21, 4478, 4863, 1233, 4491, 4193, 5076, 6234, 5607, 9735, 9721, 4474, 1296, 9736, 9737, 4205, 7693, 2]
+// Dependencies: [19, 17, 1921, 8691, 21, 4478, 4864, 1233, 4491, 4193, 5077, 6235, 5608, 9739, 9725, 4474, 1296, 9740, 9741, 4205, 7696, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9734 (RemoveIcon)
+// Module 9738 (RemoveIcon)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
 import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4205 */;
 import Text from "Text" /* 4474 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import FormCheckbox from "FormCheckbox" /* 7693 */;
-import getRoleRowDataAll from "getRoleRowData" /* 9721 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9735 */;
-import registerAssetDefault from "registerAsset" /* 9736 */;
-import registerAssetDefault2 from "registerAsset" /* 9737 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import FormCheckbox from "FormCheckbox" /* 7696 */;
+import getRoleRowDataAll from "getRoleRowData" /* 9725 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9739 */;
+import registerAssetDefault from "registerAsset" /* 9740 */;
+import registerAssetDefault2 from "registerAsset" /* 9741 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { RowType } from "RowType" /* 8687 */;
+import { RowType } from "RowType" /* 8691 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -65,8 +65,8 @@ function RemoveIcon(item) {
     }
     obj = { style: null };
     obj[0] = prop;
-    obj[4] = closure_7(item(6234).CircleXIcon, obj);
-    tmp3Result = tmp3(item(5076).PressableOpacity, obj);
+    obj[4] = closure_7(item(6235).CircleXIcon, obj);
+    tmp3Result = tmp3(item(5077).PressableOpacity, obj);
   }
   return tmp3Result;
 }

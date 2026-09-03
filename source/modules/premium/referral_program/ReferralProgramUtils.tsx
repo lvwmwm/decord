@@ -1,10 +1,10 @@
-// Module ID: 7973
-// Function ID: 7974
+// Module ID: 7976
+// Function ID: 7977
 // Name: getReferralTrialOfferExpirationCopy
-// Dependencies: [7206, 1383, 684, 1233, 4298, 1372, 11, 1374, 7974, 586, 7984, 2]
+// Dependencies: [7207, 1383, 684, 1233, 4298, 1372, 11, 1374, 7977, 586, 7987, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, isReferralProgramPopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7973 (getReferralTrialOfferExpirationCopy)
+// Module 7976 (getReferralTrialOfferExpirationCopy)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
@@ -12,8 +12,8 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1374 */;
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7974 */;
-import closure_3 from "emitChanges" /* 7206 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7977 */;
+import closure_3 from "emitChanges" /* 7207 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 
 require = arg1;

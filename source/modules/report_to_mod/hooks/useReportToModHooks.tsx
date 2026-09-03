@@ -1,16 +1,16 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11477
+// Function ID: 11478
 // Name: useIsReportToModEnabled
-// Dependencies: [19, 1908, 4735, 586, 6121, 6144, 6131, 7210, 8124, 2]
+// Dependencies: [19, 1908, 4736, 586, 6122, 6145, 6132, 7211, 8127, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 11472 (useIsReportToModEnabled)
+// Module 11477 (useIsReportToModEnabled)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import canReportMessageToMods from "canReportMessageToMods" /* 6131 */;
-import _fetchProfile from "_fetchProfile" /* 8124 */;
+import canReportMessageToMods from "canReportMessageToMods" /* 6132 */;
+import _fetchProfile from "_fetchProfile" /* 8127 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "reinjectEphemerals" /* 4735 */;
+import closure_5 from "reinjectEphemerals" /* 4736 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");

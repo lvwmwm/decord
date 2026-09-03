@@ -1,10 +1,10 @@
-// Module ID: 9957
-// Function ID: 9958
+// Module ID: 9961
+// Function ID: 9962
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1386, 4130, 1921, 5460, 673, 4674, 2]
+// Dependencies: [1386, 4130, 1921, 5461, 673, 4674, 2]
 // Exports: default
 
-// Module 9957 (createAutocompleterResultForChannelId)
+// Module 9961 (createAutocompleterResultForChannelId)
 import computeChannelName from "computeChannelName" /* 4674 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;

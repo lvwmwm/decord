@@ -1,26 +1,26 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13502
+// Function ID: 13503
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1301, 673, 21, 4478, 709, 5392, 1362, 13488, 13489, 13490, 13491, 13492, 13493, 13494, 13495, 1296, 4369, 586, 6012, 2]
+// Dependencies: [19, 17, 1301, 673, 21, 4478, 709, 5393, 1362, 13503, 13504, 13505, 13506, 13507, 13508, 13509, 13510, 1296, 4369, 586, 6013, 2]
 // Exports: default
 
-// Module 13487 (PremiumGuildTierPill)
+// Module 13502 (PremiumGuildTierPill)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4369 */;
-import GuildIconSizes from "GuildIconSizes" /* 6012 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
-import registerAssetDefault from "registerAsset" /* 13488 */;
-import registerAssetDefault2 from "registerAsset" /* 13489 */;
-import registerAssetDefault3 from "registerAsset" /* 13490 */;
-import registerAssetDefault4 from "registerAsset" /* 13491 */;
-import registerAssetDefault5 from "registerAsset" /* 13492 */;
-import registerAssetDefault6 from "registerAsset" /* 13493 */;
-import registerAssetDefault7 from "registerAsset" /* 13494 */;
-import registerAssetDefault8 from "registerAsset" /* 13495 */;
+import GuildIconSizes from "GuildIconSizes" /* 6013 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
+import registerAssetDefault from "registerAsset" /* 13503 */;
+import registerAssetDefault2 from "registerAsset" /* 13504 */;
+import registerAssetDefault3 from "registerAsset" /* 13505 */;
+import registerAssetDefault4 from "registerAsset" /* 13506 */;
+import registerAssetDefault5 from "registerAsset" /* 13507 */;
+import registerAssetDefault6 from "registerAsset" /* 13508 */;
+import registerAssetDefault7 from "registerAsset" /* 13509 */;
+import registerAssetDefault8 from "registerAsset" /* 13510 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleThemeChange" /* 1301 */;
 import { BoostedGuildTiers } from "ME" /* 673 */;

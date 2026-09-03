@@ -1,10 +1,10 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13622
+// Function ID: 13623
 // Name: PremiumRewardsOrbsTreatment
 // Dependencies: [1468, 2]
 // Exports: getPremiumRewardsOrbsExperiment, usePremiumRewardsOrbsExperiment
 
-// Module 13607 (PremiumRewardsOrbsTreatment)
+// Module 13622 (PremiumRewardsOrbsTreatment)
 import getUnitIdDefault from "getUnitId" /* 1468 */;
 
 let obj = { CONTROL: "control", TREATMENT_A: "treatment_a", TREATMENT_B: "treatment_b", TREATMENT_C: "treatment_c", TREATMENT_D: "treatment_d" };

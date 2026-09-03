@@ -1,9 +1,9 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14014
+// Function ID: 14015
 // Name: MenuItem
-// Dependencies: [19, 21, 4478, 13996, 4930, 5600, 5619, 2]
+// Dependencies: [19, 21, 4478, 14012, 4931, 5601, 5620, 2]
 
-// Module 13998 (MenuItem)
+// Module 14014 (MenuItem)
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -23,7 +23,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13996).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(14012).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {
@@ -32,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
       let obj = { source: null, style: null };
       obj[0] = iconSource;
       obj[1] = tmp.formIcon;
-      tmp3 = jsx(menuClose(4930), { source: null, style: null });
+      tmp3 = jsx(menuClose(4931), { source: null, style: null });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null };
@@ -57,14 +57,14 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     obj = { text: null, style: null };
     obj[0] = label;
     obj[1] = tmp.formLabel;
-    tmp7Result = tmp7(menuClose(5619), obj);
+    tmp7Result = tmp7(menuClose(5620), obj);
   }
   obj[6] = tmp7Result;
   obj[7] = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(5600), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
+  return jsx(menuClose(5601), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
 });
 const result = require("set").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 

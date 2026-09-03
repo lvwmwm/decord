@@ -1,10 +1,10 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14508
+// Function ID: 14509
 // Name: getDisplayNameStylesFontName
 // Dependencies: [1940, 2758, 2]
 // Exports: default
 
-// Module 14492 (getDisplayNameStylesFontName)
+// Module 14508 (getDisplayNameStylesFontName)
 import messagesProxyDefault from "messagesProxy" /* 2758 */;
 
 const obj = {};

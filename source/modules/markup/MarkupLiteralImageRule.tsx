@@ -1,11 +1,11 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 12992
+// Function ID: 12993
 // Name: parse
-// Dependencies: [4192, 4949, 2]
+// Dependencies: [4192, 4950, 2]
 
-// Module 12980 (parse)
+// Module 12992 (parse)
 import tDefault from "t" /* 4192 */;
-import AST_KEY from "AST_KEY" /* 4949 */;
+import AST_KEY from "AST_KEY" /* 4950 */;
 
 require = arg1;
 const obj = {};

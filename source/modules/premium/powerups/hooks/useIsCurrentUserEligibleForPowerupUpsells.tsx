@@ -1,12 +1,12 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16003
+// Function ID: 16004
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [1991, 5389, 1921, 4370, 1923, 1945, 586, 2]
+// Dependencies: [1991, 5390, 1921, 4370, 1923, 1945, 586, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 15987 (useIsCurrentUserEligibleForPowerupUpsells)
+// Module 16003 (useIsCurrentUserEligibleForPowerupUpsells)
 import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "insertUnsortedGuilds" /* 5389 */;
+import closure_3 from "insertUnsortedGuilds" /* 5390 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "handleGuildBoostsUpdate" /* 4370 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;

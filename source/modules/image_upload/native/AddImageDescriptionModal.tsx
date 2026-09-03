@@ -1,18 +1,18 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11102
+// Function ID: 11103
 // Name: AddDescription
-// Dependencies: [32, 19, 17, 4854, 4853, 21, 4478, 709, 586, 1492, 1498, 5602, 9227, 7617, 1233, 8171, 11097, 7817, 10882, 2]
+// Dependencies: [32, 19, 17, 4855, 4854, 21, 4478, 709, 586, 1492, 1498, 5603, 9231, 7618, 1233, 8175, 11101, 7820, 10886, 2]
 // Exports: default
 
-// Module 11098 (AddDescription)
+// Module 11102 (AddDescription)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef10882 from "module_10882" /* 10882 */;
+import _modDef10886 from "module_10886" /* 10886 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { DraftType } from "handleChanged" /* 4854 */;
-import closure_9 from "map" /* 4853 */;
+import { DraftType } from "handleChanged" /* 4855 */;
+import closure_9 from "map" /* 4854 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -127,5 +127,5 @@ export default function AddImageDescriptionModal(arg0) {
   obj[2] = function render() {
     return closure_1_10(closure_1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(_modDef10882, obj);
+  return callback(_modDef10886, obj);
 };

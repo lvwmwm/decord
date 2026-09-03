@@ -1,10 +1,10 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 7884
+// Function ID: 7885
 // Name: createDisplayNameStylesMobile
 // Dependencies: [4470, 1991, 1921, 1940, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 7881 (createDisplayNameStylesMobile)
+// Module 7884 (createDisplayNameStylesMobile)
 import DisplayNameFont from "DisplayNameFont" /* 1940 */;
 import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_3 from "trackCommunicationDisabled" /* 1991 */;

@@ -1,21 +1,21 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14396
+// Function ID: 14397
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1385, 9477, 7458, 4380, 673, 4506, 9478, 9530, 5079, 14341, 7479, 2]
+// Dependencies: [1385, 9481, 7459, 4380, 673, 4506, 9482, 9534, 5080, 14357, 7480, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14380 (getInitialSubscriptionPayload)
-import getIsScreenLandscape from "getIsScreenLandscape" /* 5079 */;
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7479 */;
-import useThermalState from "useThermalState" /* 9530 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14341 */;
+// Module 14396 (getInitialSubscriptionPayload)
+import getIsScreenLandscape from "getIsScreenLandscape" /* 5080 */;
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7480 */;
+import useThermalState from "useThermalState" /* 9534 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14357 */;
 import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "map" /* 9477 */;
-import closure_4 from "initializeState" /* 7458 */;
+import closure_3 from "map" /* 9481 */;
+import closure_4 from "initializeState" /* 7459 */;
 import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
 import { RPCEvents } from "ME" /* 673 */;
 import items3 from "items3" /* 4506 */;
-import { asLaunched } from "FrameLayoutModes" /* 9478 */;
+import { asLaunched } from "FrameLayoutModes" /* 9482 */;
 
 require = arg1;
 ({ ActivityLayoutMode: error, ActivityScreenOrientation: closure_8 } = items3);

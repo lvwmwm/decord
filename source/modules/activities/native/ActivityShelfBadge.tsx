@@ -1,10 +1,10 @@
-// Module ID: 11881
-// Function ID: 11882
+// Module ID: 11887
+// Function ID: 11888
 // Name: ActivityShelfBadge
 // Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 1954, 4474, 1233, 2]
 // Exports: default
 
-// Module 11881 (ActivityShelfBadge)
+// Module 11887 (ActivityShelfBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;

@@ -1,14 +1,14 @@
-// Module ID: 13005
-// Function ID: 13006
+// Module ID: 13017
+// Function ID: 13018
 // Name: SettingsUpsellsTableRow
-// Dependencies: [32, 19, 17, 1386, 673, 21, 4478, 709, 4945, 8775, 12998, 6249, 586, 8782, 6000, 1233, 4474, 6254, 4700, 2]
+// Dependencies: [32, 19, 17, 1386, 673, 21, 4478, 709, 4946, 8779, 13010, 6250, 586, 8786, 6001, 1233, 4474, 6255, 4701, 2]
 // Exports: default
 
-// Module 13005 (SettingsUpsellsTableRow)
+// Module 13017 (SettingsUpsellsTableRow)
 import ThemesDefault from "Themes" /* 709 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
-import SettingsIcon from "SettingsIcon" /* 6249 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12998 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4946 */;
+import SettingsIcon from "SettingsIcon" /* 6250 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13010 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -25,7 +25,7 @@ function SettingsUpsellsTableRow(arg0) {
   const tmp = callback(React.useState(false), 2);
   dependencyMap = tmp[1];
   useMountLayoutEffectDefault(() => {
-    callback2(closure_1_0(8775).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+    callback2(closure_1_0(8779).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -35,7 +35,7 @@ function SettingsUpsellsTableRow(arg0) {
     onPress() {
       callback();
       dependencyMap(true);
-      callback2(closure_1_0(8775).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      callback2(closure_1_0(8779).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: callback2(SettingsIcon.SettingsIcon, {})
   };

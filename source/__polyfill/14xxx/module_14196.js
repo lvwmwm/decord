@@ -1,15 +1,10 @@
 // Module ID: 14196
 // Function ID: 14197
-// Dependencies: [14175]
+// Dependencies: [14197, 14201]
 
 // Module 14196
-import _mod14175 from "module_14175" /* 14175 */;
+import _mod14197 from "module_14197" /* 14197 */;
+import _mod14201 from "module_14201" /* 14201 */;
 
-const tmp = _mod14175.navigator && _mod14175.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
 
-export default str;
+export default (arg0) => _mod14197(_mod14201(arg0));

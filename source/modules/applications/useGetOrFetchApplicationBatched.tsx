@@ -1,10 +1,10 @@
-// Module ID: 11383
-// Function ID: 11384
+// Module ID: 11388
+// Function ID: 11389
 // Name: request
-// Dependencies: [19, 4519, 4362, 12, 5962, 586, 2]
+// Dependencies: [19, 4519, 4362, 12, 5963, 586, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11383 (request)
+// Module 11388 (request)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addApplication" /* 4519 */;
 import set from "set" /* 2 */;

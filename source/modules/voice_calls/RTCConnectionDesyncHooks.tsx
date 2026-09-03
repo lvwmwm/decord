@@ -1,10 +1,10 @@
-// Module ID: 16056
-// Function ID: 16057
+// Module ID: 16072
+// Function ID: 16073
 // Name: useEnsureSyncedChannelVoiceStates
-// Dependencies: [32, 19, 4494, 4498, 1215, 1386, 1991, 13632, 4554, 1921, 4497, 12, 586, 1470, 9503, 2]
+// Dependencies: [32, 19, 4494, 4498, 1215, 1386, 1991, 13647, 4554, 1921, 4497, 12, 586, 1470, 9507, 2]
 // Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 16056 (useEnsureSyncedChannelVoiceStates)
+// Module 16072 (useEnsureSyncedChannelVoiceStates)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "getParticipants" /* 4494 */;
@@ -12,7 +12,7 @@ import closure_5 from "isVoiceMuted" /* 4498 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "retryFailedUsers" /* 13632 */;
+import closure_9 from "retryFailedUsers" /* 13647 */;
 import closure_10 from "createRTCConnection" /* 4554 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
 import closure_12 from "updateVoiceState" /* 4497 */;

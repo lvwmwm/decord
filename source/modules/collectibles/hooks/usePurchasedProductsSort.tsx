@@ -1,13 +1,13 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14920
+// Function ID: 14921
 // Name: usePurchasedProductsSort
-// Dependencies: [19, 7312, 1949, 7307, 644, 2]
+// Dependencies: [19, 7313, 1949, 7308, 644, 2]
 // Exports: usePurchasedProductsSort
 
-// Module 14905 (usePurchasedProductsSort)
+// Module 14920 (usePurchasedProductsSort)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "map" /* 7312 */;
+import closure_3 from "map" /* 7313 */;
 
 let useMemo = noop.useMemo;
 let closure_4 = { NOT_PURCHASED: 0, [0]: "NOT_PURCHASED", PARTIAL_OWNED_BUNDLE: 1, [1]: "PARTIAL_OWNED_BUNDLE", PURCHASED: 2, [2]: "PURCHASED" };

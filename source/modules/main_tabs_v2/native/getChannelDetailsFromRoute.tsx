@@ -1,10 +1,10 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14451
+// Function ID: 14452
 // Name: getChannelDetailsFromRoute
 // Dependencies: [4332, 2]
 // Exports: default
 
-// Module 14435 (getChannelDetailsFromRoute)
+// Module 14451 (getChannelDetailsFromRoute)
 import set from "set" /* 2 */;
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 

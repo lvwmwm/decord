@@ -1,14 +1,14 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 8740
+// Function ID: 8741
 // Name: UnknownGameIcon
-// Dependencies: [19, 21, 709, 4196, 8049, 2]
+// Dependencies: [19, 21, 709, 4196, 8052, 2]
 // Exports: UnknownGameIcon
 
-// Module 8736 (UnknownGameIcon)
+// Module 8740 (UnknownGameIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8049 */;
+import registerAsset from "registerAsset" /* 8052 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

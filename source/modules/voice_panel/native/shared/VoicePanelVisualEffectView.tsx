@@ -1,12 +1,12 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17017
+// Function ID: 17018
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4478, 709, 4197, 8998, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4197, 9002, 2]
 
-// Module 16997 (VoicePanelVisualEffectView)
+// Module 17017 (VoicePanelVisualEffectView)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import TwinButtons from "TwinButtons" /* 8998 */;
+import TwinButtons from "TwinButtons" /* 9002 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -32,18 +32,17 @@ const memoResult = importAllResult.memo(function VoicePanelVisualEffectViewInner
     flag = false;
   }
   let obj = map;
-  const token = obj.useToken(ThemesDefault.colors.THEME_LOCKED_BLUR_FALLBACK);
-  const tmp2 = callback2();
-  obj = { blurTheme: str, android_fallbackColor: null };
-  let tmp4;
-  if (!flag) {
-    tmp4 = token;
+  let token = obj.useToken(ThemesDefault.colors.THEME_LOCKED_BLUR_FALLBACK);
+  if (flag) {
+    token = obj2.useToken(ThemesDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND);
   }
-  obj[1] = tmp4;
-  obj = { style: tmp2.wrapper, children: null };
-  const items = [closure_4(TwinButtons.BackgroundBlurFill, obj), closure_4(closure_3, { style: tmp2.border })];
+  const tmp4 = callback3();
+  obj = { style: tmp4.wrapper, children: null };
+  const items = [callback(TwinButtons.BackgroundBlurFill, { blurTheme: "dark", android_fallbackColor: token }), ];
+  obj = { style: tmp4.border };
+  items[1] = callback(closure_3, obj);
   obj[1] = items;
-  return callback(closure_3, obj);
+  return callback2(closure_3, obj);
 });
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelVisualEffectView.tsx");
 

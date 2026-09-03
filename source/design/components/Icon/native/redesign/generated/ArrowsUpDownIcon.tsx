@@ -1,14 +1,14 @@
-// Module ID: 11944
-// Function ID: 11945
+// Module ID: 11950
+// Function ID: 11951
 // Name: ArrowsUpDownIcon
-// Dependencies: [19, 21, 709, 4196, 11945, 2]
+// Dependencies: [19, 21, 709, 4196, 11951, 2]
 // Exports: ArrowsUpDownIcon
 
-// Module 11944 (ArrowsUpDownIcon)
+// Module 11950 (ArrowsUpDownIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11945 */;
+import registerAsset from "registerAsset" /* 11951 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

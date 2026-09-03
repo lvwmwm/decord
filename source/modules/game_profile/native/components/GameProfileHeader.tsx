@@ -1,10 +1,10 @@
-// Module ID: 8855
-// Function ID: 8856
+// Module ID: 8859
+// Function ID: 8860
 // Name: GameProfileHeader
-// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 8856, 4940, 8857, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 8860, 4941, 8861, 4474, 2]
 // Exports: default
 
-// Module 8855 (GameProfileHeader)
+// Module 8859 (GameProfileHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

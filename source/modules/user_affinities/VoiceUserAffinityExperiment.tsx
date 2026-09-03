@@ -1,10 +1,10 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 7994
+// Function ID: 7995
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 7991 (apexExperiment)
+// Module 7994 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

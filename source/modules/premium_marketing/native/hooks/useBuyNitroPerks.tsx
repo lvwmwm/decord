@@ -1,13 +1,13 @@
-// Module ID: 13243
-// Function ID: 13244
+// Module ID: 13255
+// Function ID: 13256
 // Name: useBuyNitroPerks
-// Dependencies: [19, 7186, 1923, 686, 7150, 1233, 8237, 13244, 8235, 13245, 13246, 5059, 8245, 13248, 8243, 13249, 8241, 13250, 8239, 13251, 8104, 10219, 13252, 12316, 13253, 13254, 10215, 13256, 5024, 13257, 13258, 13260, 13261, 13263, 13264, 8858, 13266, 10641, 2]
+// Dependencies: [19, 7187, 1923, 686, 7151, 1233, 8241, 13256, 8239, 13257, 13258, 5060, 8249, 13260, 8247, 13261, 8245, 13262, 8243, 13263, 8107, 10223, 13264, 12328, 13265, 13266, 10219, 13268, 5025, 13269, 13270, 13272, 13273, 13275, 13276, 8862, 13278, 10645, 2]
 // Exports: default
 
-// Module 13243 (useBuyNitroPerks)
-import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7150 */;
+// Module 13255 (useBuyNitroPerks)
+import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7151 */;
 import closure_3 from "noop" /* 19 */;
-import { Gradients } from "items" /* 7186 */;
+import { Gradients } from "items" /* 7187 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import importDefaultResult from "n" /* 686 */;
 

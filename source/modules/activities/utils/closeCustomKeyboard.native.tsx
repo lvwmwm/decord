@@ -1,10 +1,10 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12702
+// Function ID: 12703
 // Name: closeCustomKeyboard
 // Dependencies: [4340, 2]
 // Exports: default
 
-// Module 12690 (closeCustomKeyboard)
+// Module 12702 (closeCustomKeyboard)
 import set from "set" /* 2 */;
 import getBestActiveInput from "getBestActiveInput" /* 4340 */;
 

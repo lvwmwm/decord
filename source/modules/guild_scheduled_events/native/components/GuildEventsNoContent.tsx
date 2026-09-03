@@ -1,10 +1,10 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9922
+// Function ID: 9923
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4120, 673, 502, 21, 4478, 5469, 709, 586, 8693, 9775, 9777, 4474, 1233, 9750, 2]
+// Dependencies: [19, 17, 4120, 673, 502, 21, 4478, 5470, 709, 586, 8697, 9779, 9781, 4474, 1233, 9754, 2]
 // Exports: default
 
-// Module 9918 (GuildEventsNoContent)
+// Module 9922 (GuildEventsNoContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -13,7 +13,7 @@ import { GuildSettingsSections } from "ME" /* 673 */;
 import sum from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 
 const require = arg1;
 noopAll;
@@ -37,8 +37,8 @@ export default function GuildEventsNoContent(guild) {
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => closure_1_4.can(closure_1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
-  obj = { icon: onClose(9775), IconComponent: guild(9777).CalendarIcon };
-  const items2 = [callback(onClose(8693), obj), , , ];
+  obj = { icon: onClose(9779), IconComponent: guild(9781).CalendarIcon };
+  const items2 = [callback(onClose(8697), obj), , , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1233).intl;
   obj1[4] = intl.string(guild(1233).t["WgZ+3D"]);

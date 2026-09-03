@@ -1,12 +1,12 @@
-// Module ID: 7880
-// Function ID: 7881
+// Module ID: 7883
+// Function ID: 7884
 // Name: formatUsernameOnClick
-// Dependencies: [1921, 7879, 7881, 2]
+// Dependencies: [1921, 7882, 7884, 2]
 // Exports: default
 
-// Module 7880 (formatUsernameOnClick)
-import processColorStrings from "processColorStrings" /* 7879 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7881 */;
+// Module 7883 (formatUsernameOnClick)
+import processColorStrings from "processColorStrings" /* 7882 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7884 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

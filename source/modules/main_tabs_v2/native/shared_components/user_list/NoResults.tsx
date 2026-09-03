@@ -1,10 +1,10 @@
-// Module ID: 10952
-// Function ID: 10953
+// Module ID: 10956
+// Function ID: 10957
 // Name: NoResults
 // Dependencies: [19, 17, 21, 4478, 4474, 2]
 // Exports: default
 
-// Module 10952 (NoResults)
+// Module 10956 (NoResults)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

@@ -1,19 +1,19 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11667
+// Function ID: 11668
 // Name: Navbar
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 5561, 6246, 1233, 7773, 7272, 1627, 4474, 8372, 1296, 4928, 4700, 11663, 7271, 4193, 6016, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 5562, 6247, 1233, 7776, 7273, 1627, 4474, 8376, 1296, 4929, 4701, 11668, 7272, 4193, 6017, 2]
 // Exports: default
 
-// Module 11662 (Navbar)
+// Module 11667 (Navbar)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import HeaderActionButton from "HeaderActionButton" /* 6246 */;
-import Feedback from "Feedback" /* 7272 */;
-import registerAssetDefault from "registerAsset" /* 7773 */;
+import Button from "Button" /* 4929 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import HeaderActionButton from "HeaderActionButton" /* 6247 */;
+import Feedback from "Feedback" /* 7273 */;
+import registerAssetDefault from "registerAsset" /* 7776 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

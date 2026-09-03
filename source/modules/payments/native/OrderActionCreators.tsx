@@ -1,10 +1,10 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7184
+// Function ID: 7185
 // Name: getOrders
-// Dependencies: [5, 4460, 673, 3, 527, 4154, 706, 6098, 2]
+// Dependencies: [5, 4460, 673, 3, 527, 4154, 706, 6099, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7183 (getOrders)
+// Module 7184 (getOrders)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { OrderStatus } from "CustomCheckoutFlow" /* 4460 */;

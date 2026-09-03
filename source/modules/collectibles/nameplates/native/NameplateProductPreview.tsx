@@ -1,16 +1,16 @@
-// Module ID: 12770
-// Function ID: 12771
+// Module ID: 12782
+// Function ID: 12783
 // Name: NameplateUser
-// Dependencies: [19, 17, 4470, 21, 4478, 709, 8506, 1946, 1233, 4474, 4940, 8906, 8115, 8084, 586, 4322, 4747, 8937, 8938, 1296, 10867, 5607, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 8510, 1946, 1233, 4474, 4941, 8910, 8118, 8087, 586, 4322, 4748, 8941, 8942, 1296, 10871, 5608, 2]
 // Exports: default
 
-// Module 12770 (NameplateUser)
+// Module 12782 (NameplateUser)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import getNameplateData from "getNameplateData" /* 1946 */;
-import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import firstAvatarDecoration from "firstAvatarDecoration" /* 8506 */;
+import LinearGradientDefault from "LinearGradient" /* 4941 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import firstAvatarDecoration from "firstAvatarDecoration" /* 8510 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -51,7 +51,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = React.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "year", autoStatusCutout: "week", "aria-hidden": "hour" };
+    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "onAnimationFailureCapture", autoStatusCutout: "onAnimationFailure", "aria-hidden": "onAnimationLoadedCapture" };
     obj[2] = currentUser(stateFromStores[19]).AvatarSizes.NORMAL;
     obj[3] = closure_1;
     obj[4] = !stateFromStores;

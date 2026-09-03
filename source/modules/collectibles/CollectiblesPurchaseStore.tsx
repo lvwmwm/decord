@@ -1,9 +1,9 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7313
+// Function ID: 7314
 // Name: map
 // Dependencies: [12, 586, 706, 2]
 
-// Module 7312 (map)
+// Module 7313 (map)
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

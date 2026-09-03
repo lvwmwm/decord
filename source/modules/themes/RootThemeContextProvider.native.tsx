@@ -1,10 +1,10 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14462
+// Function ID: 14463
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4470, 1301, 502, 21, 586, 4328, 8013, 14447, 4204, 10180, 4483, 2]
+// Dependencies: [19, 4470, 1301, 502, 21, 586, 4328, 8016, 14463, 4204, 10184, 4483, 2]
 // Exports: RootThemeContextProvider
 
-// Module 14446 (RootThemeContextProvider)
+// Module 14462 (RootThemeContextProvider)
 import getGuildThemeNameDefault from "getGuildThemeName" /* 4328 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -22,10 +22,10 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ saturation: closure_4.saturation, contrast: closure_4.contrast, theme: theme.theme }));
   ({ saturation, contrast } = stateFromStoresObject);
   const tmp4 = getGuildThemeNameDefault();
-  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(8013).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  const obj2 = manaTypeConsolidationExperiment(8013);
+  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(8016).useManaTypeConsolidationExperiment("RootThemeContextProvider");
+  const obj2 = manaTypeConsolidationExperiment(8016);
   [][0] = manaTypeConsolidationExperiment;
-  const plainTextExperiment = manaTypeConsolidationExperiment(14447).usePlainTextExperiment("RootThemeContextProvider");
+  const plainTextExperiment = manaTypeConsolidationExperiment(14463).usePlainTextExperiment("RootThemeContextProvider");
   if (null == tmp4) {
     let num2 = 0;
     if (1 !== saturation) {
@@ -43,7 +43,7 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
       obj[0] = plainTextExperiment;
       obj[1] = children.children;
       obj[5] = jsx(tmp(4483).PlainTextExperimentProvider, { enabled: null, children: null });
-      return jsx(tmp(10180).RootThemeContextProvider, { enabled: null, children: null });
+      return jsx(tmp(10184).RootThemeContextProvider, { enabled: null, children: null });
     } else {
       tmpResult = tmp(4204);
       if (contrast > 1) {

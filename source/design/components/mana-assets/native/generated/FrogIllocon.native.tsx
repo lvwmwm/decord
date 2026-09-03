@@ -1,14 +1,14 @@
-// Module ID: 6568
-// Function ID: 6569
+// Module ID: 6569
+// Function ID: 6570
 // Name: FrogIllocon
-// Dependencies: [21, 5501, 6569, 2]
+// Dependencies: [21, 5502, 6570, 2]
 // Exports: FrogIllocon
 
-// Module 6568 (FrogIllocon)
+// Module 6569 (FrogIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6569 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6570 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FrogIllocon.native.tsx");

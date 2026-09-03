@@ -1,17 +1,17 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16097
+// Function ID: 16098
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12263, 1981, 1908, 1921, 7288, 673, 1383, 644, 5962, 5964, 16082, 6260, 1372, 4298, 16004, 16083, 2]
+// Dependencies: [32, 19, 12275, 1981, 1908, 1921, 7289, 673, 1383, 644, 5963, 5965, 16098, 6261, 1372, 4298, 16020, 16099, 2]
 // Exports: default
 
-// Module 16081 (useChannelNoticeRows)
+// Module 16097 (useChannelNoticeRows)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "completeStep" /* 12263 */;
+import closure_5 from "completeStep" /* 12275 */;
 import closure_6 from "comparator" /* 1981 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import { ChannelListChannelNoticeRow as closure_9 } from "ChannelListGuildActionRow" /* 7288 */;
+import { ChannelListChannelNoticeRow as closure_9 } from "ChannelListGuildActionRow" /* 7289 */;
 import { MFALevels } from "ME" /* 673 */;
 import ContentDismissActionType from "ContentDismissActionType" /* 1383 */;
 

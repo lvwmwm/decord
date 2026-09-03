@@ -1,10 +1,10 @@
-// Module ID: 7599
-// Function ID: 7600
+// Module ID: 7600
+// Function ID: 7601
 // Name: ScheduledMessagesConfig
-// Dependencies: [32, 1921, 673, 1923, 7600, 3, 38, 1467, 7438, 1398, 695, 4074, 1233, 11, 1945, 586, 4737, 7601, 1470, 2]
+// Dependencies: [32, 1921, 673, 1923, 7601, 3, 38, 1467, 7439, 1398, 695, 4074, 1233, 11, 1945, 586, 4738, 7602, 1470, 2]
 // Exports: canUseScheduledMessages, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanUseScheduledMessages, useScheduledMessagesLimit
 
-// Module 7599 (ScheduledMessagesConfig)
+// Module 7600 (ScheduledMessagesConfig)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
@@ -12,15 +12,15 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hasFlag from "hasFlag" /* 1398 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
 import hooksDefault from "hooks" /* 4074 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import regExp from "regExp" /* 7438 */;
-import regExpDefault from "regExp" /* 7438 */;
-import ScheduledMessageSendState from "ScheduledMessageSendState" /* 7601 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4738 */;
+import regExp from "regExp" /* 7439 */;
+import regExpDefault from "regExp" /* 7439 */;
+import ScheduledMessageSendState from "ScheduledMessageSendState" /* 7602 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
-import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7600 */;
+import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7601 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 require = arg1;
@@ -219,27 +219,27 @@ export const getMessageForState = function getMessageForState(state) {
     const intl6 = tmp(1233).intl;
     obj[1] = intl6.string(tmp(1233).t.Fn6Odn);
     return obj;
-  } else if (tmp(7601).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
+  } else if (tmp(7602).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
     obj = { isError: true, stateMessage: null };
     const intl5 = tmp(1233).intl;
     obj[1] = intl5.string(tmp(1233).t.v5O2dK);
     return obj;
-  } else if (tmp(7601).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
+  } else if (tmp(7602).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
     obj1 = { isError: true, stateMessage: null };
     const intl4 = tmp(1233).intl;
     obj1[1] = intl4.string(tmp(1233).t.j8uIfG);
     return obj1;
-  } else if (tmp(7601).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
+  } else if (tmp(7602).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
     const obj2 = { isError: true, stateMessage: null };
     const intl3 = tmp(1233).intl;
     obj2[1] = intl3.string(tmp(1233).t["w6zHX/"]);
     return obj2;
-  } else if (tmp(7601).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
+  } else if (tmp(7602).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
     const obj3 = { isError: true, stateMessage: null };
     const intl2 = tmp(1233).intl;
     obj3[1] = intl2.string(tmp(1233).t.pflV7z);
     return obj3;
-  } else if (tmp(7601).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
+  } else if (tmp(7602).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
     const obj4 = { isError: true, stateMessage: null };
     const intl = tmp(1233).intl;
     obj4[1] = intl.string(tmp(1233).t.j8uIfG);

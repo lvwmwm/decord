@@ -1,10 +1,10 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16441
+// Function ID: 16442
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 16422, 586, 4322, 1296, 4474, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 709, 16442, 586, 4322, 1296, 4474, 2]
 // Exports: default
 
-// Module 16421 (VibegrationsMessageAuthor)
+// Module 16441 (VibegrationsMessageAuthor)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -39,7 +39,7 @@ export default function VibegrationsMessageAuthor(userId) {
   if (null != stateFromStores) {
     obj = { style: null, children: null };
     obj[0] = tmp.author;
-    obj = { size: null, user: null, guildId: "r" };
+    obj = { size: null, user: null, guildId: "accessible" };
     obj[0] = tmp3(1296).AvatarSizes.SIZE_16;
     obj[1] = stateFromStores;
     const items3 = [callback(tmp3(1296).Avatar, obj), ];

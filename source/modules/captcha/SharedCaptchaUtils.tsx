@@ -1,13 +1,13 @@
-// Module ID: 11134
-// Function ID: 11135
+// Module ID: 11138
+// Function ID: 11139
 // Name: prototype
-// Dependencies: [11135, 11136, 2]
+// Dependencies: [11139, 11140, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 11134 (prototype)
+// Module 11138 (prototype)
 import set from "set" /* 2 */;
-import CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS" /* 11136 */;
-import useCaptchaStore from "useCaptchaStore" /* 11135 */;
+import CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS" /* 11140 */;
+import useCaptchaStore from "useCaptchaStore" /* 11139 */;
 
 ({ incrementCaptchaServeVolume: c0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: obj1 } = useCaptchaStore);
 let closure_3 = CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS.CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS;

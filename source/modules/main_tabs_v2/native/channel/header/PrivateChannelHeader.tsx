@@ -1,9 +1,9 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13164
+// Function ID: 13165
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1386, 4569, 4130, 1921, 673, 21, 1296, 4478, 709, 586, 13149, 4674, 1233, 9253, 13153, 4322, 13155, 2]
+// Dependencies: [19, 1386, 4569, 4130, 1921, 673, 21, 1296, 4478, 709, 586, 13161, 4674, 1233, 9257, 13165, 4322, 13167, 2]
 
-// Module 13152 (GroupDmMemberCount)
+// Module 13164 (GroupDmMemberCount)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
@@ -45,7 +45,7 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(586);
-  return channel(13155).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(13167).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: closure_8, StatusTypes: c9 } = ME);

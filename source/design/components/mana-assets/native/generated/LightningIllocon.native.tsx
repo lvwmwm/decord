@@ -1,14 +1,14 @@
-// Module ID: 6786
-// Function ID: 6787
+// Module ID: 6787
+// Function ID: 6788
 // Name: LightningIllocon
-// Dependencies: [21, 5501, 6787, 2]
+// Dependencies: [21, 5502, 6788, 2]
 // Exports: LightningIllocon
 
-// Module 6786 (LightningIllocon)
+// Module 6787 (LightningIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6787 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6788 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LightningIllocon.native.tsx");

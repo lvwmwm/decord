@@ -1,16 +1,16 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 11702
+// Function ID: 11703
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4478, 709, 5076, 4190, 4474, 1296, 8781, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5077, 4190, 4474, 1296, 8785, 2]
 // Exports: default
 
-// Module 11697 (AppealIngestionExternalLink)
+// Module 11702 (AppealIngestionExternalLink)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import registerAsset from "registerAsset" /* 8781 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import registerAsset from "registerAsset" /* 8785 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

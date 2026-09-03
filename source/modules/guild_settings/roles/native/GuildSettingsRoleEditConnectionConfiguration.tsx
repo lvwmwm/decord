@@ -1,22 +1,22 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17476
+// Function ID: 17477
 // Name: Header
-// Dependencies: [32, 19, 17, 673, 5360, 21, 4478, 709, 4413, 11383, 1296, 1430, 1362, 5607, 1233, 5076, 5559, 6001, 17457, 1234, 4474, 5235, 6000, 2]
+// Dependencies: [32, 19, 17, 673, 5361, 21, 4478, 709, 4413, 11388, 1296, 1430, 1362, 5608, 1233, 5077, 5560, 6002, 17477, 1234, 4474, 5236, 6001, 2]
 // Exports: default
 
-// Module 17456 (Header)
+// Module 17476 (Header)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5235 */;
-import XSmallIcon from "XSmallIcon" /* 5559 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import request from "request" /* 11383 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
+import XSmallIcon from "XSmallIcon" /* 5560 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import request from "request" /* 11388 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PlatformTypes } from "ME" /* 673 */;
-import OperatorTypes from "OperatorTypes" /* 5360 */;
+import OperatorTypes from "OperatorTypes" /* 5361 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -39,7 +39,7 @@ function Header(arg0) {
     application1 = integration.application;
   }
   if (null != application1) {
-    obj = { size: null, user: null, guildId: "r" };
+    obj = { size: null, user: null, guildId: "accessible" };
     obj[0] = tmp3(1296).AvatarSizes.XSMALL;
     let bot;
     if (integration != null) {
@@ -62,7 +62,7 @@ function Header(arg0) {
       }
       let tmp11;
       if (null != bot1) {
-        obj = { size: null, user: null, guildId: "r" };
+        obj = { size: null, user: null, guildId: "accessible" };
         obj[0] = tmp3(1296).AvatarSizes.XSMALL;
         obj[1] = getOrFetchApplicationBatched.bot;
         tmp11 = callback2(tmp3(1296).Avatar, obj);
@@ -143,7 +143,7 @@ function BooleanConfigRule(metadataField) {
     }
     closure_3(tmp, num);
   };
-  return closure_12(metadataField(6001).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(6002).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   ({ fieldText, fieldTextHook, metadataField } = existingPendingConfiguration);
@@ -195,7 +195,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(17457);
+  let obj = metadataField(17477);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -204,7 +204,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(17457);
+  let tmpResult = tmp(17477);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -330,7 +330,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       }
       closure_3(tmp3, num);
     };
-    return onInputValueChange(tmp(6001).TableSwitchRow, obj5, metadataField);
+    return onInputValueChange(tmp(6002).TableSwitchRow, obj5, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {
@@ -599,7 +599,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: true, onRemove: true, locked: "year" };
+      obj = { platform: null, integration: "a", applicationId: "a", onRemove: "isArray", locked: "icon" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

@@ -1,16 +1,16 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11689
+// Function ID: 11690
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8716, 8705, 673, 21, 4478, 586, 11677, 11694, 1233, 11692, 11695, 11696, 11697, 4474, 2]
+// Dependencies: [19, 17, 8720, 8709, 673, 21, 4478, 586, 11682, 11690, 1233, 11688, 11691, 11701, 11702, 4474, 2]
 // Exports: default
 
-// Module 11693 (AppealIngestionSpeedBump)
+// Module 11689 (AppealIngestionSpeedBump)
 import noopAll from "noop" /* 19 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11695 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11696 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11691 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11701 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8716 */;
-import SafetyHubView from "SafetyHubView" /* 8705 */;
+import closure_4 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
+import SafetyHubView from "SafetyHubView" /* 8709 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -28,13 +28,13 @@ export default function AppealIngestionSpeedBump(arg0) {
   let obj = _require(586);
   const items = [closure_4];
   let stateFromStores = obj.useStateFromStores(items, () => appealClassificationId.getAppealClassificationId());
-  obj1 = _require(11677);
+  obj1 = _require(11682);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = obj1.useSafetyHubClassification(stateFromStores);
   const tmp = callback2();
-  _require = _require(11694).useEmitAppealIngestionEvent();
+  _require = _require(11690).useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
   if (classification != null) {
@@ -52,10 +52,10 @@ export default function AppealIngestionSpeedBump(arg0) {
     flagged_content = [];
   }
   const intl = tmp2(1233).intl;
-  const tmp2Result = _require(11694);
+  const tmp2Result = _require(11690);
   const intl2 = tmp2(1233).intl;
   const stringResult = intl.string(_require(1233).t["C5q+pW"]);
-  const items1 = [callback(_require(11692).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1233).t.URt7VI) }), ];
+  const items1 = [callback(_require(11688).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1233).t.URt7VI) }), ];
   obj = { style: tmp.container, children: null };
   let tmp9Result = flagged_content.length > 0;
   if (tmp9Result) {
@@ -69,7 +69,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   tmp9Result = isCoppa;
   if (isCoppa) {
     const obj2 = { text: null, url: null, onPress: null };
-    let tmp13Result = tmp13(11697);
+    let tmp13Result = tmp13(11702);
     const intl3 = tmp2(1233).intl;
     obj2[0] = intl3.string(tmp2(1233).t["gJs+kf"]);
     obj2[1] = constants.AGE_VERIFICATION_LINK;
@@ -84,7 +84,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   }
   if (isSpam) {
     const obj3 = { text: null, url: null, onPress: null };
-    tmp13Result = tmp13(11697);
+    tmp13Result = tmp13(11702);
     const intl4 = tmp2(1233).intl;
     obj3[0] = intl4.string(tmp2(1233).t.NBsJvm);
     obj3[1] = constants.SPAM_LINK;
@@ -102,8 +102,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj4[2] = function onPress() {
       return callback(closure_1_5.ClickAppAppealLink);
     };
-    isDeveloperClassification = tmp9(tmp13(11697), obj4);
-    const tmp13Result1 = tmp13(11697);
+    isDeveloperClassification = tmp9(tmp13(11702), obj4);
+    const tmp13Result1 = tmp13(11702);
   }
   items2[4] = isDeveloperClassification;
   let tmp9Result1 = !isCoppa;
@@ -115,8 +115,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj5[2] = function onPress() {
       return callback(closure_1_5.ClickLearnMoreLink);
     };
-    tmp9Result1 = tmp9(tmp13(11697), obj5);
-    const tmp13Result2 = tmp13(11697);
+    tmp9Result1 = tmp9(tmp13(11702), obj5);
+    const tmp13Result2 = tmp13(11702);
   }
   items2[5] = tmp9Result1;
   if (isDsaEligible) {
@@ -130,5 +130,5 @@ export default function AppealIngestionSpeedBump(arg0) {
   obj[1] = items2;
   items1[1] = closure_9(View, obj);
   obj7[0] = items1;
-  return closure_9(_require(11692).AppealIngestionModalScreen, obj7);
+  return closure_9(_require(11688).AppealIngestionModalScreen, obj7);
 };

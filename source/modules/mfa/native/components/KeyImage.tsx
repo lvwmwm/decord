@@ -1,22 +1,25 @@
-// Module ID: 14553
-// Function ID: 14554
+// Module ID: 14569
+// Function ID: 14570
 // Name: KeyImage
-// Dependencies: [17, 21, 4478, 14554, 2]
+// Dependencies: [17, 21, 4478, 709, 6266, 2]
 // Exports: KeyImage
 
-// Module 14553 (KeyImage)
+// Module 14569 (KeyImage)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import registerAssetDefault from "registerAsset" /* 14554 */;
+import ThemesDefault from "Themes" /* 709 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6266 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
-const Image = get_ActivityIndicator.Image;
+const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;
-let closure_4 = createCacheKey.createStyles({ icon: { width: 128, height: 128, marginBottom: 8 } });
+let obj = { container: null };
+obj = { marginBottom: ThemesDefault.space.PX_8 };
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
 const result = set.fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
 
 export const KeyImage = function KeyImage() {
-  const obj = { source: registerAssetDefault, style: callback().icon };
-  return <Image source={registerAssetDefault} style={callback().icon} />;
+  return <View style={callback().container}>{jsx(AccountAgeTier10LargeBadge.SecurityKeySpotIllustration, { scale: 0.6 })}</View>;
 };

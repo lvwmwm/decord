@@ -1,12 +1,12 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 9460
+// Function ID: 9461
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1386, 1908, 4120, 1921, 4497, 673, 9457, 4666, 9458, 586, 2]
+// Dependencies: [1386, 1908, 4120, 1921, 4497, 673, 9461, 4666, 9462, 586, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 9456 (getEmbeddedActivityJoinability)
+// Module 9460 (getEmbeddedActivityJoinability)
 import allowChannelAccess from "allowChannelAccess" /* 4666 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9457 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9461 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;

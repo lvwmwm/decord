@@ -1,10 +1,10 @@
-// Module ID: 9124
-// Function ID: 9125
+// Module ID: 9128
+// Function ID: 9129
 // Name: DoubleTapReminderContent
-// Dependencies: [19, 1383, 21, 4478, 709, 4474, 1233, 4298, 1372, 4166, 7886, 4194, 9125, 2]
+// Dependencies: [19, 1383, 21, 4478, 709, 4474, 1233, 4298, 1372, 4166, 7889, 4194, 9129, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9124 (DoubleTapReminderContent)
+// Module 9128 (DoubleTapReminderContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -49,14 +49,14 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     if (flag == null) {
       flag = false;
     }
-    let tmpResult = tmp(7886);
+    let tmpResult = tmp(7889);
     const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      tmpResult = tmp(7886);
+      tmpResult = tmp(7889);
       areEmojisEqualResult = tmpResult.areEmojisEqual(result, emoji);
     }
     if (areEmojisEqualResult) {

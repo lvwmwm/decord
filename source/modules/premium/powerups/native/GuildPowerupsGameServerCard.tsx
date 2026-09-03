@@ -1,14 +1,14 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12374
+// Function ID: 12375
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4470, 4385, 21, 4478, 709, 586, 12363, 12364, 12355, 12359, 4204, 2]
+// Dependencies: [19, 17, 4470, 4385, 21, 4478, 709, 586, 12375, 12376, 12367, 12371, 4204, 2]
 // Exports: default
 
-// Module 12362 (GuildPowerupsGameServerCard)
+// Module 12374 (GuildPowerupsGameServerCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12359 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12364 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12371 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_5 from "handleGameServerInstanceCreated" /* 4385 */;

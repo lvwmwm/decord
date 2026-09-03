@@ -1,9 +1,9 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16396
+// Function ID: 16397
 // Name: ONBOARDING_HOME_RESOURCES_SHEET_KEY
 // Dependencies: [2]
 
-// Module 16377 (ONBOARDING_HOME_RESOURCES_SHEET_KEY)
+// Module 16396 (ONBOARDING_HOME_RESOURCES_SHEET_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeConstants.tsx");

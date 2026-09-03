@@ -1,14 +1,14 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9275
+// Function ID: 9276
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4478, 9272, 9261, 1233, 2]
+// Dependencies: [19, 21, 4478, 9276, 9265, 1233, 2]
 // Exports: default
 
-// Module 9271 (VoiceActivityStatus)
+// Module 9275 (VoiceActivityStatus)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 9261 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 9272 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 9265 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 9276 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

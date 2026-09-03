@@ -1,24 +1,24 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10087
+// Function ID: 10088
 // Name: VoiceSettingsActionSheet
-// Dependencies: [19, 17, 4495, 4529, 4120, 4496, 9533, 673, 502, 21, 4478, 9557, 4445, 5630, 1623, 5632, 10084, 4674, 10050, 9931, 10105, 10106, 1233, 9803, 5363, 4413, 10107, 9663, 586, 9897, 6198, 10114, 9899, 10115, 709, 9609, 10116, 2]
+// Dependencies: [19, 17, 4495, 4529, 4120, 4496, 9537, 673, 502, 21, 4478, 9561, 4445, 5631, 1623, 5633, 10088, 4674, 10054, 9935, 10109, 10110, 1233, 9807, 5364, 4413, 10111, 9667, 586, 9901, 6199, 10118, 9903, 10119, 709, 9613, 10120, 2]
 // Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
 
-// Module 10083 (VoiceSettingsActionSheet)
+// Module 10087 (VoiceSettingsActionSheet)
 import isMetaQuest from "isMetaQuest" /* 1623 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import Background from "Background" /* 5630 */;
-import BottomSheetModal from "BottomSheetModal" /* 5632 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10084 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 10107 */;
+import Background from "Background" /* 5631 */;
+import BottomSheetModal from "BottomSheetModal" /* 5633 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10088 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 10111 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "set" /* 4495 */;
 import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_8 from "handleUpdate" /* 4496 */;
-import { resetFocus } from "VoiceChatDrawerState" /* 9533 */;
+import { resetFocus } from "VoiceChatDrawerState" /* 9537 */;
 import { InstantInviteSources } from "ME" /* 673 */;
 import { Permissions } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -144,7 +144,7 @@ export const showVoiceSettingsActionSheet = function showVoiceSettingsActionShee
 export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(channel) {
   channel = channel.channel;
   const tmp = callback3();
-  let obj = channel(10050);
+  let obj = channel(10054);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (closure_7.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
@@ -161,14 +161,14 @@ export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(
   let tmp9Result = null;
   if (null != fn) {
     obj = { source: null, onPress: null, accessibilityLabel: null };
-    obj[0] = tmp2(10106);
+    obj[0] = tmp2(10110);
     obj[1] = fn;
     const intl = tmp5(1233).intl;
     obj = { channelName: null };
     obj[0] = tmp4;
     obj[2] = intl.formatToPlainString(tmp5(1233).t["dHHb/2"], obj);
-    tmp9Result = tmp9(tmp2(10105), obj);
-    const tmp2Result = tmp2(10105);
+    tmp9Result = tmp9(tmp2(10109), obj);
+    const tmp2Result = tmp2(10109);
   }
   obj1 = { children: null };
   items[1] = tmp9Result;

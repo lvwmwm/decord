@@ -1,14 +1,14 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16101
+// Function ID: 16102
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7230, 5229, 673, 4332, 4333, 1228, 2]
+// Dependencies: [32, 19, 7231, 5230, 673, 4332, 4333, 1228, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 16085 (useShouldRenderChannelList)
+// Module 16101 (useShouldRenderChannelList)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleClearCaches" /* 7230 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
+import closure_4 from "handleClearCaches" /* 7231 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
 import { ComponentActions } from "ME" /* 673 */;
 
 const require = arg1;

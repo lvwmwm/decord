@@ -1,10 +1,10 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17324
+// Function ID: 17325
 // Name: prototype
-// Dependencies: [5494, 14568, 2]
+// Dependencies: [5495, 14583, 2]
 
-// Module 17304 (prototype)
-import initializeDefault from "initialize" /* 5494 */;
+// Module 17324 (prototype)
+import initializeDefault from "initialize" /* 5495 */;
 
 initializeDefault;
 let prototype = function SettingTreeManagerLifecycleManager() {

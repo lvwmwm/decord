@@ -1,15 +1,15 @@
-// Module ID: 9451
-// Function ID: 9452
+// Module ID: 9455
+// Function ID: 9456
 // Name: computeActivityFlags
-// Dependencies: [673, 4166, 592, 1398, 7494, 2]
+// Dependencies: [673, 4166, 592, 1398, 7495, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 9451 (computeActivityFlags)
+// Module 9455 (computeActivityFlags)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 592 */;
 import hasFlag from "hasFlag" /* 1398 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7494 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7495 */;
 import ME from "ME" /* 673 */;
 
 ({ ActivityFlags: c3, ActivityPartyPrivacy: c4 } = ME);

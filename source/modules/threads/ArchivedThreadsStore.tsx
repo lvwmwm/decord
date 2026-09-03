@@ -1,14 +1,14 @@
-// Module ID: 7520
-// Function ID: 7521
+// Module ID: 7521
+// Function ID: 7522
 // Name: listKey
-// Dependencies: [32, 1390, 1386, 4493, 4122, 1395, 7521, 12, 1397, 11, 6160, 586, 706, 2]
+// Dependencies: [32, 1390, 1386, 4493, 4122, 1395, 7522, 12, 1397, 11, 6161, 586, 706, 2]
 
-// Module 7520 (listKey)
+// Module 7521 (listKey)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import set from "set" /* 1395 */;
-import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7521 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7522 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
@@ -296,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
     } else {
       return false;
     }
-    obj = channel(6160);
+    obj = channel(6161);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;

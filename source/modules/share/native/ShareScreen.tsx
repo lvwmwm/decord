@@ -1,10 +1,10 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13878
+// Function ID: 13879
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1390, 1386, 4120, 673, 11489, 10853, 21, 4478, 709, 1234, 1233, 13863, 10939, 1470, 13864, 4756, 695, 10054, 4489, 8648, 11509, 2008, 4859, 13865, 13866, 5510, 7617, 1623, 5503, 10942, 13867, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1386, 4120, 673, 11494, 10857, 21, 4478, 709, 1234, 1233, 13879, 10943, 1470, 13880, 4757, 695, 10058, 4489, 8652, 11514, 2008, 4860, 13881, 13882, 5511, 7618, 1623, 5504, 10946, 13883, 2]
 // Exports: default
 
-// Module 13862 (getAttachmentsRestriction)
+// Module 13878 (getAttachmentsRestriction)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -15,8 +15,8 @@ import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11489 */;
-import { UserRowModes } from "UserRowModes" /* 10853 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11494 */;
+import { UserRowModes } from "UserRowModes" /* 10857 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import set from "set" /* 1234 */;
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13864);
+                              obj1 = callback(13880);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;

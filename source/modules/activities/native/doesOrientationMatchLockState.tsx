@@ -1,10 +1,10 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9622
+// Function ID: 9623
 // Name: doesOrientationMatchLockState
 // Dependencies: [4506, 2]
 // Exports: default
 
-// Module 9618 (doesOrientationMatchLockState)
+// Module 9622 (doesOrientationMatchLockState)
 import set from "set" /* 2 */;
 import items3 from "items3" /* 4506 */;
 

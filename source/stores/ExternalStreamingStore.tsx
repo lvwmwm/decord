@@ -1,17 +1,17 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9453
+// Function ID: 9454
 // Name: makeTwitchRequest
-// Dependencies: [5, 5233, 4323, 673, 684, 527, 5358, 706, 8057, 5235, 656, 586, 2]
+// Dependencies: [5, 5234, 4323, 673, 684, 527, 5359, 706, 8060, 5236, 656, 586, 2]
 
-// Module 9449 (makeTwitchRequest)
+// Module 9453 (makeTwitchRequest)
 import sendRequest from "sendRequest" /* 527 */;
 import initializeDefault from "initialize" /* 586 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import callbackDefault from "callback" /* 5358 */;
+import callbackDefault from "callback" /* 5359 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5233 */;
+import closure_4 from "set" /* 5234 */;
 import closure_5 from "initialize" /* 4323 */;
 import { PlatformTypes } from "ME" /* 673 */;
 import set from "set" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16447
+// Function ID: 16448
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 16408, 21, 4478, 709, 586, 4445, 16428, 4474, 1233, 3500, 4928, 2]
+// Dependencies: [19, 17, 16427, 21, 4478, 709, 586, 4445, 16448, 4474, 1233, 3500, 4929, 2]
 // Exports: default
 
-// Module 16427 (VibegrationsSettingsRequestCard)
+// Module 16447 (VibegrationsSettingsRequestCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "rejectPendingPublish" /* 16408 */;
+import closure_5 from "rejectPendingPublish" /* 16427 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -83,7 +83,7 @@ export default function VibegrationsSettingsRequestCard(projectId) {
     obj3[2] = callback;
     const intl3 = tmp2(1233).intl;
     obj3[3] = intl3.string(tmp8(3500)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(4928).Button, obj3);
+    items2[3] = tmp7(tmp2(4929).Button, obj3);
     obj[1] = items2;
     return closure_7(tmp6, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7239
+// Function ID: 7240
 // Name: isReadableChannel
 // Dependencies: [1390, 1386, 4120, 673, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 7238 (isReadableChannel)
+// Module 7239 (isReadableChannel)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_1 from "ensureGuildLoaded" /* 1386 */;

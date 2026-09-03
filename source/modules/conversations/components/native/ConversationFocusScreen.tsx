@@ -1,14 +1,14 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 13151
+// Function ID: 13152
 // Name: ConversationFocusScreen
-// Dependencies: [19, 17, 7350, 21, 4478, 709, 1501, 586, 7827, 7841, 1233, 4474, 4928, 13140, 2]
+// Dependencies: [19, 17, 7351, 21, 4478, 709, 1501, 586, 7830, 7844, 1233, 4474, 4929, 13152, 2]
 // Exports: default
 
-// Module 13139 (ConversationFocusScreen)
+// Module 13151 (ConversationFocusScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "removePendingListFetch" /* 7350 */;
+import closure_6 from "removePendingListFetch" /* 7351 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

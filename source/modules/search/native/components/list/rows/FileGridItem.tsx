@@ -1,12 +1,12 @@
-// Module ID: 16493
-// Function ID: 16494
-// Dependencies: [19, 17, 1386, 7632, 21, 4478, 4671, 5040, 10215, 10240, 586, 8134, 16481, 16483, 5086, 2]
+// Module ID: 16514
+// Function ID: 16515
+// Dependencies: [19, 17, 1386, 7633, 21, 4478, 4671, 5041, 10219, 10244, 586, 8138, 16502, 16504, 5087, 2]
 
-// Module 16493
+// Module 16514
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7632 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7633 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 10163
+// Function ID: 10164
 // Name: UserSummaryItem
 // Dependencies: [19, 17, 1991, 21, 4478, 709, 1296, 586, 1430, 4673, 1233, 4474, 2]
 // Exports: default
 
-// Module 10159 (UserSummaryItem)
+// Module 10163 (UserSummaryItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;

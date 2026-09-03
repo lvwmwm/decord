@@ -1,27 +1,27 @@
-// Module ID: 5499
-// Function ID: 5500
+// Module ID: 5500
+// Function ID: 5501
 // Name: _getBackgroundGradientColor
-// Dependencies: [32, 5, 19, 17, 4470, 5498, 1386, 1908, 1980, 5475, 5476, 5472, 673, 21, 1219, 4478, 5500, 709, 1489, 4326, 5501, 4940, 688, 586, 1627, 1498, 4217, 5480, 5482, 1430, 1894, 695, 4700, 4479, 5503, 5561, 5563, 1470, 5952, 4474, 1233, 2]
+// Dependencies: [32, 5, 19, 17, 4470, 5499, 1386, 1908, 1980, 5476, 5477, 5473, 673, 21, 1219, 4478, 5501, 709, 1489, 4326, 5502, 4941, 688, 586, 1627, 1498, 4217, 5481, 5483, 1430, 1894, 695, 4701, 4479, 5504, 5562, 5564, 1470, 5953, 4474, 1233, 2]
 // Exports: default
 
-// Module 5499 (_getBackgroundGradientColor)
+// Module 5500 (_getBackgroundGradientColor)
 import keys from "keys" /* 688 */;
 import ThemesDefault from "Themes" /* 709 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
-import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import preloadDefault from "preload" /* 5501 */;
+import LinearGradientDefault from "LinearGradient" /* 4941 */;
+import preloadDefault from "preload" /* 5502 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_9 from "get" /* 5498 */;
+import closure_9 from "get" /* 5499 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
 import closure_12 from "handleConnectionOpen" /* 1980 */;
-import closure_13 from "handleUpdate" /* 5475 */;
-import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 5476 */;
-import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
+import closure_13 from "handleUpdate" /* 5476 */;
+import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 5477 */;
+import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5473 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

@@ -1,16 +1,16 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11300
+// Function ID: 11301
 // Name: useMessageAuthorActivities
-// Dependencies: [32, 19, 17, 11165, 9547, 4855, 1908, 4569, 586, 12, 640, 5962, 1470, 7490, 11297, 11110, 11298, 2]
+// Dependencies: [32, 19, 17, 11169, 9551, 4856, 1908, 4569, 586, 12, 640, 5963, 1470, 7491, 11301, 11114, 11302, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11296 (useMessageAuthorActivities)
+// Module 11300 (useMessageAuthorActivities)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { findNodeHandle } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_toTimestampMs" /* 11165 */;
-import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9547 */;
-import closure_8 from "handleConnectionOpen" /* 4855 */;
+import closure_6 from "_toTimestampMs" /* 11169 */;
+import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9551 */;
+import closure_8 from "handleConnectionOpen" /* 4856 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "sortActivity" /* 4569 */;
 

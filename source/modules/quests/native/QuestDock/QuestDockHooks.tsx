@@ -1,15 +1,15 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 14934
+// Function ID: 14935
 // Name: useQuestDockModeAnimatedReaction
-// Dependencies: [32, 19, 14920, 5395, 14922, 14923, 14926, 11210, 14924, 14927, 4217, 9223, 14921, 586, 684, 11306, 14929, 9012, 9013, 9017, 7483, 5398, 7456, 7473, 4445, 14930, 2008, 2]
-// Exports: useActionSheetPressHandler, useQuestDockDismissalReset, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
+// Dependencies: [32, 19, 14935, 5396, 14937, 14938, 14941, 11214, 14939, 14942, 4217, 9227, 14936, 586, 684, 11310, 14944, 9016, 9017, 9021, 7484, 5399, 7457, 7474, 4445, 14945, 2008, 2]
+// Exports: useActionSheetPressHandler, useQuestDockDismissalReset, useQuestDockExpandHandler, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 14919 (useQuestDockModeAnimatedReaction)
+// Module 14934 (useQuestDockModeAnimatedReaction)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "QuestDockMode" /* 14920 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5395 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
+import closure_5 from "QuestDockMode" /* 14935 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5396 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
 
 const require = arg1;
 ({ QUEST_DOCK_CLOSED_HEIGHT: error, QUEST_DOCK_COLLAPSED_HEIGHT: closure_8, QUEST_DOCK_EXTERNAL_OFFSET_CLOSED: c9, QUEST_DOCK_EXTERNAL_OFFSET_COLLAPSED_WITH_YOU_BAR: c10, QUEST_DOCK_EXTERNAL_OFFSET_EXPANDED_WITH_YOU_BAR: unpackModuleId, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: closure_12 } = QUEST_DOCK_COLLAPSED_HEIGHT);
@@ -145,8 +145,8 @@ export const useQuestDockExternalOffset = function useQuestDockExternalOffset() 
   }, items1);
 };
 export const useQuestDockDismissalReset = function useQuestDockDismissalReset() {
-  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14926).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14923).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14941).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14938).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = React.useEffect(() => {
     let isSoftDismissedResult = activeQuestDockMode.get() !== closure_1_6.SOFT_DISMISSED;
@@ -175,7 +175,7 @@ export const useQuestDockDismissalReset = function useQuestDockDismissalReset() 
 };
 export const useActionSheetPressHandler = function useActionSheetPressHandler(questCreative) {
   const _require = questCreative;
-  const questImpressionId = _require(11306).useQuestImpressionId();
+  const questImpressionId = _require(11310).useQuestImpressionId();
   const items = [questCreative, questImpressionId];
   return React.useCallback(() => {
     let obj = questCreative(closure_1_2[16]);
@@ -214,5 +214,20 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(qu
       const tmpResult1 = tmp(tmp2[23]);
     }
     questImpressionId(closure_1_2[24]).openLazy(questCreative(closure_1_2[26])(closure_1_2[25], closure_1_2.paths), "QuestDockContextMenuActionSheet", { creative: questCreative, impressionId: tmp7 });
+  }, items);
+};
+export const useQuestDockExpandHandler = function useQuestDockExpandHandler(questDockCreative) {
+  const _require = questDockCreative;
+  const getQuestImpressionId = _require(11310).useGetQuestImpressionId();
+  const items = [questDockCreative, getQuestImpressionId];
+  return React.useCallback(() => {
+    let obj = questDockCreative(closure_1_2[18]);
+    obj = { type: questDockCreative(closure_1_2[19]).AdUserActionType.CLICK_INTERNAL };
+    const merged = Object.assign(questDockCreative(closure_1_2[16]).getCreativeAnalyticsParams(questDockCreative));
+    obj.questContentCTA = questDockCreative(closure_1_2[20]).QuestContentCTA.EXPAND;
+    obj.surfaceId = questDockCreative(closure_1_2[21]).QuestContent.QUEST_BAR_MOBILE;
+    obj.sourceQuestContent = questDockCreative(closure_1_2[21]).QuestContent.QUEST_BAR_MOBILE;
+    obj.impressionId = getQuestImpressionId();
+    obj.captureAdUserAction(obj);
   }, items);
 };

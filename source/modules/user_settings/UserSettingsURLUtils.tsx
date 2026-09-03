@@ -1,13 +1,13 @@
-// Module ID: 5404
-// Function ID: 5405
+// Module ID: 5405
+// Function ID: 5406
 // Name: settingsPathToRoute
-// Dependencies: [32, 682, 673, 5405, 695, 5406, 2]
+// Dependencies: [32, 682, 673, 5406, 695, 5407, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 5404 (settingsPathToRoute)
+// Module 5405 (settingsPathToRoute)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import WebUserSettings from "WebUserSettings" /* 5405 */;
-import keysSorter from "keysSorter" /* 5406 */;
+import WebUserSettings from "WebUserSettings" /* 5406 */;
+import keysSorter from "keysSorter" /* 5407 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { UserSettingsPath } from "MAX_FAVORITES" /* 682 */;
 import ME from "ME" /* 673 */;

@@ -1,10 +1,10 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11349
+// Function ID: 11350
 // Name: getMessageJumpData
 // Dependencies: [32, 19, 1494, 1921, 1234, 1893, 4409, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 11344 (getMessageJumpData)
+// Module 11349 (getMessageJumpData)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import set from "set" /* 1234 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1893 */;

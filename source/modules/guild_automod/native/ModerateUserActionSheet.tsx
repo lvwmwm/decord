@@ -1,8 +1,8 @@
-// Module ID: 11630
-// Function ID: 11631
-// Dependencies: [19, 1991, 1908, 4120, 1921, 673, 21, 4478, 586, 11631, 8437, 4673, 4445, 5999, 1233, 6249, 4723, 11632, 2008, 11629, 4109, 11649, 11635, 4419, 11651, 9386, 11653, 5630, 5629, 11655, 6000, 2]
+// Module ID: 11635
+// Function ID: 11636
+// Dependencies: [19, 1991, 1908, 4120, 1921, 673, 21, 4478, 586, 11636, 8441, 4673, 4445, 6000, 1233, 6250, 4724, 11637, 2008, 11634, 4109, 11654, 11640, 4419, 11656, 9390, 11658, 5631, 5630, 11660, 6001, 2]
 
-// Module 11630
+// Module 11635
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;

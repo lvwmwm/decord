@@ -1,14 +1,14 @@
-// Module ID: 6426
-// Function ID: 6427
+// Module ID: 6427
+// Function ID: 6428
 // Name: ClydeHologramSpotIllustration
-// Dependencies: [21, 5501, 6427, 2]
+// Dependencies: [21, 5502, 6428, 2]
 // Exports: ClydeHologramSpotIllustration
 
-// Module 6426 (ClydeHologramSpotIllustration)
+// Module 6427 (ClydeHologramSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6427 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6428 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHologramSpotIllustration.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 9287
-// Function ID: 9288
+// Module ID: 9291
+// Function ID: 9292
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 6009, 21, 4478, 1492, 2]
+// Dependencies: [19, 17, 6010, 21, 4478, 1492, 2]
 // Exports: default
 
-// Module 9287 (UserProfileTextButtonGroup)
+// Module 9291 (UserProfileTextButtonGroup)
 import noopAll from "noop" /* 19 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

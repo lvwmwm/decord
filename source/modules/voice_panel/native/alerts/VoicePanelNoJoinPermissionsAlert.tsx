@@ -1,14 +1,14 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17023
+// Function ID: 17024
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 4863, 4863, 17004, 1233, 2]
+// Dependencies: [19, 21, 4864, 4864, 17024, 1233, 2]
 // Exports: default
 
-// Module 17003 (VoicePanelNoJoinPermissionsAlert)
+// Module 17023 (VoicePanelNoJoinPermissionsAlert)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17004 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17024 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15143
+// Function ID: 15144
 // Name: route
-// Dependencies: [1301, 1304, 7893, 673, 586, 11288, 1233, 15129, 15130, 2]
+// Dependencies: [1301, 1304, 7896, 673, 586, 11292, 1233, 15144, 15145, 2]
 
-// Module 15128 (route)
+// Module 15143 (route)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15129 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15144 */;
 import closure_2 from "handleThemeChange" /* 1301 */;
 import { SystemTheme } from "SystemThemeState" /* 1304 */;
-import createToggle from "createToggle" /* 11288 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 createToggle = {
@@ -30,7 +30,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_LIGHT_MODE_THEME_PICKER,
   getComponent() {
-    return require(15130) /* SettingsAppearanceLightModeThemePickerScreen */.default;
+    return require(15145) /* SettingsAppearanceLightModeThemePickerScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

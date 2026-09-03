@@ -1,9 +1,9 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7402
+// Function ID: 7403
 // Name: handleBackgroundSync
 // Dependencies: [1390, 1215, 1386, 1955, 2]
 
-// Module 7401 (handleBackgroundSync)
+// Module 7402 (handleBackgroundSync)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;

@@ -1,12 +1,12 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14486
+// Function ID: 14487
 // Name: createPendingImage
-// Dependencies: [7770, 1470, 2]
+// Dependencies: [7773, 1470, 2]
 // Exports: createPendingImage
 
-// Module 14470 (createPendingImage)
+// Module 14486 (createPendingImage)
 import set from "set" /* 2 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 7770 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 7773 */;
 
 const result = set.fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");
 
@@ -17,14 +17,14 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
   }
   ({ imageUri, staticImageUri, description, originalAsset, originalMd5 } = assetOrigin);
   if (AssetOriginTypes.AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
-    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: true };
+    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: "NSFW_SERVER_AGE_RESTRICTION" };
     obj[0] = NEW_ASSET;
     obj[1] = imageUri;
     obj[2] = staticImageUri;
     obj[3] = description;
     obj[5] = originalMd5;
     return obj;
-  } else if (tmp3(7770).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
+  } else if (tmp3(7773).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
     obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: null, originalMd5: null };
     obj[0] = NEW_ASSET;
     obj[1] = imageUri;
@@ -33,8 +33,8 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
     obj[4] = originalAsset;
     obj[5] = originalMd5;
     return obj;
-  } else if (tmp3(7770).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
-    obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: true };
+  } else if (tmp3(7773).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
+    obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: 409390404914198900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     obj1[0] = NEW_ASSET;
     obj1[1] = imageUri;
     obj1[3] = originalAsset;

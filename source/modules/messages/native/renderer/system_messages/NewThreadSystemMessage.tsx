@@ -1,13 +1,13 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7932
+// Function ID: 7933
 // Name: createNewThreadSystemMessage
-// Dependencies: [1386, 4130, 1921, 7878, 1233, 7880, 4674, 7882, 2]
+// Dependencies: [1386, 4130, 1921, 7881, 1233, 7883, 4674, 7885, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7929 (createNewThreadSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
+// Module 7932 (createNewThreadSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;

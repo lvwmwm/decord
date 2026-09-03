@@ -1,13 +1,13 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 15978
+// Function ID: 15979
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 15963, 1390, 673, 21, 15964, 1627, 1233, 15965, 15961, 6016, 2]
+// Dependencies: [19, 15979, 1390, 673, 21, 15980, 1627, 1233, 15981, 15977, 6017, 2]
 // Exports: default
 
-// Module 15962 (FavoritesGuildChannelSortModal)
+// Module 15978 (FavoritesGuildChannelSortModal)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "sortCategoryList" /* 15963 */;
+import closure_4 from "sortCategoryList" /* 15979 */;
 import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
 import { FAVORITES } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -21,9 +21,9 @@ export default function FavoritesGuildChannelSortModal() {
     const items = [...closure_5];
     callback(table[5]).startReordering.apply(items);
     return () => {
-      callback(15964).stopReordering();
-      const obj = callback(15964);
-      callback(15964).terminate();
+      callback(15980).stopReordering();
+      const obj = callback(15980);
+      callback(15980).terminate();
     };
   }, []);
   const bottom = useSafeAreaInsetsDefault().bottom;
@@ -42,5 +42,5 @@ export default function FavoritesGuildChannelSortModal() {
     obj[0] = obj;
     return obj;
   }, items);
-  return jsx(bottom(6016).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(6017).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 };

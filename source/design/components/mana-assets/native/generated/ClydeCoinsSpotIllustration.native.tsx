@@ -1,14 +1,14 @@
-// Module ID: 6422
-// Function ID: 6423
+// Module ID: 6423
+// Function ID: 6424
 // Name: ClydeCoinsSpotIllustration
-// Dependencies: [21, 5501, 6423, 2]
+// Dependencies: [21, 5502, 6424, 2]
 // Exports: ClydeCoinsSpotIllustration
 
-// Module 6422 (ClydeCoinsSpotIllustration)
+// Module 6423 (ClydeCoinsSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6423 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6424 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeCoinsSpotIllustration.native.tsx");

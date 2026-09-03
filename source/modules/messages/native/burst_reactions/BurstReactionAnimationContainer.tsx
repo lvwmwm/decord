@@ -1,10 +1,10 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16747
+// Function ID: 16748
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [32, 19, 17, 1383, 21, 4478, 709, 7538, 4446, 4447, 706, 4217, 4479, 10639, 1372, 1296, 7580, 4474, 1233, 4204, 2]
+// Dependencies: [32, 19, 17, 1383, 21, 4478, 709, 7539, 4446, 4447, 706, 4217, 4479, 10643, 1372, 1296, 7581, 4474, 1233, 4204, 2]
 // Exports: default
 
-// Module 16727 (BurstReactionAnimationContainerInner)
+// Module 16747 (BurstReactionAnimationContainerInner)
 import ThemesDefault from "Themes" /* 709 */;
 import ManaContext from "ManaContext" /* 4204 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -86,7 +86,7 @@ function BurstReactionAnimationContainerInner() {
       obj = { style: items, children: null };
       items = [markAsDismissed.fill, closure_7];
       obj = {
-        activeOpacity: callback(7538).BACKDROP_OPACITY,
+        activeOpacity: callback(7539).BACKDROP_OPACITY,
         onPress() {
           closure_1_4(false);
           closure_1_5.current = false;
@@ -107,7 +107,7 @@ function BurstReactionAnimationContainerInner() {
             closure_5.current = false;
           }
         };
-        tmpResult = tmp(first(7580), obj3);
+        tmpResult = tmp(first(7581), obj3);
       }
       obj2[1] = tmpResult;
       items1[1] = closure_1_8(handleComponentFinish, obj2);
@@ -131,8 +131,8 @@ function BurstReactionAnimationContainerInner() {
       obj[1] = closure_1_8(first(4217).View, obj);
       return closure_1_8(callback(1296).OverlayView, obj);
     };
-    tmp8 = callback(first(10639), obj);
-    let tmp11 = first(10639);
+    tmp8 = callback(first(10643), obj);
+    let tmp11 = first(10643);
   }
   return tmp8;
 }

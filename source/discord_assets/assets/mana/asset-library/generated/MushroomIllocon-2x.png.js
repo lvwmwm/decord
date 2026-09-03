@@ -1,9 +1,9 @@
-// Module ID: 6813
-// Function ID: 6814
+// Module ID: 6814
+// Function ID: 6815
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6813 (metadata)
+// Module 6814 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MushroomIllocon-2x.png.js");

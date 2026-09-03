@@ -1,9 +1,9 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12473
+// Function ID: 12474
 // Name: SuggestedFriendSource
 // Dependencies: [2]
 
-// Module 12461 (SuggestedFriendSource)
+// Module 12473 (SuggestedFriendSource)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 15987
+// Function ID: 15988
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 673, 10329, 1219, 1233, 3178, 2]
+// Dependencies: [19, 673, 10333, 1219, 1233, 3178, 2]
 // Exports: default
 
-// Module 15971 (useFavoritesGuildHeaderAction)
+// Module 15987 (useFavoritesGuildHeaderAction)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10329 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10333 */;
 import closure_3 from "noop" /* 19 */;
 import { Routes } from "ME" /* 673 */;
 

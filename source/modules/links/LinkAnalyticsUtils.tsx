@@ -1,9 +1,9 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8665
+// Function ID: 8666
 // Name: SERVER_INVITE
-// Dependencies: [673, 8662, 1485, 4675, 695, 2]
+// Dependencies: [673, 8666, 1485, 4675, 695, 2]
 
-// Module 8661 (SERVER_INVITE)
+// Module 8665 (SERVER_INVITE)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;

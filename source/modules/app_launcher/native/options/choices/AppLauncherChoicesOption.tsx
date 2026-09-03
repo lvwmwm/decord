@@ -1,10 +1,10 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 11963
+// Function ID: 11964
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 4478, 709, 1890, 4445, 11958, 2008, 11962, 8372, 4474, 2]
+// Dependencies: [32, 19, 21, 4478, 709, 1890, 4445, 11964, 2008, 11968, 8376, 4474, 2]
 // Exports: default
 
-// Module 11957 (AppLauncherChoicesOption)
+// Module 11963 (AppLauncherChoicesOption)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

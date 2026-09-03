@@ -1,12 +1,12 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11516
+// Function ID: 11517
 // Name: _upsertSavedMessage
-// Dependencies: [5, 11466, 673, 527, 7614, 706, 4737, 2]
+// Dependencies: [5, 11471, 673, 527, 7615, 706, 4738, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 11511 (_upsertSavedMessage)
+// Module 11516 (_upsertSavedMessage)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getTimeSafe" /* 11466 */;
+import closure_4 from "getTimeSafe" /* 11471 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
@@ -169,10 +169,10 @@ function _fetchAndUpdateSavedMessages() {
           callback = results.map((message) => {
             let messageRecord = null;
             if (null != message.message) {
-              let obj = callback(4737);
+              let obj = callback(4738);
               messageRecord = obj.createMessageRecord(message.message);
             }
-            obj = { message: messageRecord, saveData: callback(7614).savedMessageDataToClient(message.save_data) };
+            obj = { message: messageRecord, saveData: callback(7615).savedMessageDataToClient(message.save_data) };
             return obj;
           });
           obj10 = { type: "SAVED_MESSAGES_UPDATE", savedMessages: null };

@@ -1,13 +1,13 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5102
+// Function ID: 5103
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 4863, 4863, 1233, 2]
+// Dependencies: [19, 21, 4864, 4864, 1233, 2]
 // Exports: default
 
-// Module 5101 (PermissionsAlertModal)
+// Module 5102 (PermissionsAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

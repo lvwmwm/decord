@@ -1,15 +1,15 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9902
+// Function ID: 9903
 // Name: onConnectToConsole
-// Dependencies: [19, 673, 4298, 1372, 9313, 9341, 9899, 2]
+// Dependencies: [19, 673, 4298, 1372, 9317, 9345, 9903, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 9898 (onConnectToConsole)
+// Module 9902 (onConnectToConsole)
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
-import _modDef9313 from "module_9313" /* 9313 */;
-import _modDef9341 from "module_9341" /* 9341 */;
-import _beginConsoleTransfer from "_beginConsoleTransfer" /* 9899 */;
+import _modDef9317 from "module_9317" /* 9317 */;
+import _modDef9345 from "module_9345" /* 9345 */;
+import _beginConsoleTransfer from "_beginConsoleTransfer" /* 9903 */;
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
 
@@ -27,10 +27,10 @@ export const onConnectToConsole = function onConnectToConsole(channel, closure_0
   const type = closure_0.type;
   if (constants2.XBOX === type) {
     const items = [constants.CHANNEL_CALL];
-    return _modDef9313.showModal(items);
+    return _modDef9317.showModal(items);
   } else {
     const items1 = [constants.CHANNEL_CALL];
-    return _modDef9341.showModal(items1, closure_0.type);
+    return _modDef9345.showModal(items1, closure_0.type);
   }
   const obj = UNSAFE_isDismissibleContentDismissed;
   const tmp = require;

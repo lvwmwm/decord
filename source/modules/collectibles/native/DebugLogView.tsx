@@ -1,15 +1,15 @@
-// Module ID: 15670
-// Function ID: 15671
+// Module ID: 15684
+// Function ID: 15685
 // Name: DebugLogView
-// Dependencies: [19, 17, 4477, 7311, 21, 4478, 709, 586, 4474, 2]
+// Dependencies: [19, 17, 4477, 7312, 21, 4478, 709, 586, 4474, 2]
 // Exports: default
 
-// Module 15670 (DebugLogView)
+// Module 15684 (DebugLogView)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "getUserAgnosticState" /* 4477 */;
-import useCollectiblesDebugStore from "useCollectiblesDebugStore" /* 7311 */;
+import useCollectiblesDebugStore from "useCollectiblesDebugStore" /* 7312 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

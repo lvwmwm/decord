@@ -1,16 +1,16 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11351
+// Function ID: 11352
 // Name: useChatWidth
-// Dependencies: [19, 4335, 4337, 11347, 11348, 2]
+// Dependencies: [19, 4335, 4337, 11352, 11353, 2]
 // Exports: default, getChatWidth
 
-// Module 11346 (useChatWidth)
+// Module 11351 (useChatWidth)
 import useChatLayout from "useChatLayout" /* 4335 */;
 import useChatLayoutDefault from "useChatLayout" /* 4335 */;
 import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4337 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4337 */;
-import sum from "sum" /* 11347 */;
-import contextDefault from "context" /* 11348 */;
+import sum from "sum" /* 11352 */;
+import contextDefault from "context" /* 11353 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;

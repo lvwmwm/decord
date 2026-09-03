@@ -1,10 +1,10 @@
-// Module ID: 5982
-// Function ID: 5983
+// Module ID: 5983
+// Function ID: 5984
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4470, 1984, 1908, 1921, 5475, 21, 4478, 709, 1498, 586, 5590, 4204, 5983, 1430, 1894, 1470, 4915, 4217, 4479, 5501, 5561, 4474, 1233, 1296, 5984, 6012, 4074, 6015, 4928, 2]
+// Dependencies: [19, 17, 4470, 1984, 1908, 1921, 5476, 21, 4478, 709, 1498, 586, 5591, 4204, 5984, 1430, 1894, 1470, 4916, 4217, 4479, 5502, 5562, 4474, 1233, 1296, 5985, 6013, 4074, 6016, 4929, 2]
 // Exports: default
 
-// Module 5982 (GuildOnboardingCompleted)
+// Module 5983 (GuildOnboardingCompleted)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -12,7 +12,7 @@ import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "handleUpdate" /* 5475 */;
+import closure_9 from "handleUpdate" /* 5476 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

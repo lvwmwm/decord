@@ -1,10 +1,10 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9183
+// Function ID: 9184
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [19, 17, 21, 4478, 709, 1627, 6242, 688, 4217, 9180, 7607, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1627, 6243, 688, 4217, 9184, 7608, 2]
 // Exports: default
 
-// Module 9179 (PremiumEmojiFeatureUpsell)
+// Module 9183 (PremiumEmojiFeatureUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

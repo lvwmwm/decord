@@ -1,16 +1,16 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8010
+// Function ID: 8011
 // Name: parseEmbedTitleMarkup
-// Dependencies: [673, 684, 1400, 4468, 8008, 7641, 2]
+// Dependencies: [673, 684, 1400, 4468, 8011, 7642, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8007 (parseEmbedTitleMarkup)
+// Module 8010 (parseEmbedTitleMarkup)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import setDefault from "set" /* 684 */;
 import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
-import getInitialParserState from "getInitialParserState" /* 7641 */;
-import LHeading from "LHeading" /* 8008 */;
+import getInitialParserState from "getInitialParserState" /* 7642 */;
+import LHeading from "LHeading" /* 8011 */;
 import importDefaultResult from "priv" /* 1400 */;
 
 const MessageTypes = ME.MessageTypes;

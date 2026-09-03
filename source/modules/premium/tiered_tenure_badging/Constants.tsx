@@ -1,9 +1,9 @@
-// Module ID: 8575
-// Function ID: 8576
+// Module ID: 8579
+// Function ID: 8580
 // Name: DEFAULT_PREMIUM_BADGE_ID
 // Dependencies: [2]
 
-// Module 8575 (DEFAULT_PREMIUM_BADGE_ID)
+// Module 8579 (DEFAULT_PREMIUM_BADGE_ID)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/tiered_tenure_badging/Constants.tsx");

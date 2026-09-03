@@ -1,11 +1,11 @@
-// Module ID: 16076
-// Function ID: 16077
-// Dependencies: [19, 17, 4120, 673, 21, 4478, 4474, 709, 644, 9750, 9720, 14927, 8374, 1296, 16077, 1233, 16078, 4929, 2]
+// Module ID: 16092
+// Function ID: 16093
+// Dependencies: [19, 17, 4120, 673, 21, 4478, 4474, 709, 644, 9754, 9724, 14942, 8378, 1296, 16093, 1233, 16094, 4930, 2]
 
-// Module 16076
+// Module 16092
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 16077 */;
-import registerAssetDefault2 from "registerAsset" /* 16078 */;
+import registerAssetDefault from "registerAsset" /* 16093 */;
+import registerAssetDefault2 from "registerAsset" /* 16094 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     closure_1_1(closure_1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  obj1 = guild(14927);
+  obj1 = guild(14942);
   obj = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
   obj = { paddingBottom: obj1.useYouBarTotalHeight(16) };
@@ -62,7 +62,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const intl = tmp2(1233).intl;
     obj2[1] = intl.string(tmp2(1233).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = callback(tmp2(8374).RowButton, obj2);
+    obj1[1] = callback(tmp2(8378).RowButton, obj2);
     canCustomizeGuild = callback(tmp8, obj1);
   }
   const items5 = [canCustomizeGuild, ];
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const intl4 = tmp2(1233).intl;
     obj9[3] = intl4.string(tmp2(1233).t["63PyJQ"]);
     obj9[4] = callback1;
-    obj8[1] = tmp11(tmp2(4929).BaseTextButton, obj9);
+    obj8[1] = tmp11(tmp2(4930).BaseTextButton, obj9);
     canCreateChannel = tmp11(tmp8, obj8);
   }
   items6[3] = canCreateChannel;

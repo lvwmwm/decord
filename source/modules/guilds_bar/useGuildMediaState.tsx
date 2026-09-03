@@ -1,10 +1,10 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16168
+// Function ID: 16169
 // Name: canConnectToChannel
-// Dependencies: [1385, 1391, 1390, 4500, 1215, 1386, 1908, 4120, 4130, 1980, 4701, 4497, 673, 689, 586, 13584, 9644, 4110, 13585, 8152, 11, 5368, 2]
+// Dependencies: [1385, 1391, 1390, 4500, 1215, 1386, 1908, 4120, 4130, 1980, 4702, 4497, 673, 689, 586, 13599, 9648, 4110, 13600, 8156, 11, 5369, 2]
 // Exports: default
 
-// Module 16152 (canConnectToChannel)
+// Module 16168 (canConnectToChannel)
 import set from "set" /* 689 */;
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
@@ -16,7 +16,7 @@ import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_11 from "markAllUserIdListsStale" /* 4130 */;
 import closure_12 from "handleConnectionOpen" /* 1980 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_14 from "updateVoiceState" /* 4497 */;
 import { BasicPermissions } from "ME" /* 673 */;
 

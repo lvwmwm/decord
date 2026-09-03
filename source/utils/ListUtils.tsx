@@ -1,10 +1,10 @@
-// Module ID: 9286
-// Function ID: 9287
+// Module ID: 9290
+// Function ID: 9291
 // Name: getListSummaryLabel
 // Dependencies: [1233, 2]
 // Exports: getListSummaryLabel
 
-// Module 9286 (getListSummaryLabel)
+// Module 9290 (getListSummaryLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 

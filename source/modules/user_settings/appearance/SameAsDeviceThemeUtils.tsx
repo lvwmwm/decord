@@ -1,14 +1,14 @@
-// Module ID: 15006
-// Function ID: 15007
+// Module ID: 15021
+// Function ID: 15022
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4297, 1301, 1304, 8222, 1346, 1362, 4325, 2]
+// Dependencies: [4297, 1301, 1304, 8226, 1346, 1362, 4325, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 15006 (enableSameAsDeviceTheme)
+// Module 15021 (enableSameAsDeviceTheme)
 import getThemeForColor from "getThemeForColor" /* 1346 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import setSystemTheme from "setSystemTheme" /* 4325 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8222 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8226 */;
 import closure_3 from "reset" /* 4297 */;
 import closure_4 from "handleThemeChange" /* 1301 */;
 import SystemThemeState from "SystemThemeState" /* 1304 */;

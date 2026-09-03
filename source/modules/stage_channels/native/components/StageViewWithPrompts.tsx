@@ -1,15 +1,15 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9661
+// Function ID: 9662
 // Name: styles
-// Dependencies: [19, 17, 502, 21, 9658, 4478, 1627, 9659, 8693, 4474, 2]
+// Dependencies: [19, 17, 502, 21, 9662, 4478, 1627, 9663, 8697, 4474, 2]
 // Exports: default
 
-// Module 9657 (styles)
+// Module 9661 (styles)
 import noopAll from "noop" /* 19 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text from "Text" /* 4474 */;
-import StageSparkleInnerDefault from "StageSparkleInner" /* 8693 */;
-import FocusedControlsHeader from "FocusedControlsHeader" /* 9659 */;
+import StageSparkleInnerDefault from "StageSparkleInner" /* 8697 */;
+import FocusedControlsHeader from "FocusedControlsHeader" /* 9663 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;

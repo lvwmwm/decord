@@ -1,18 +1,18 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12466
+// Function ID: 12467
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 4730, 21, 4478, 709, 5500, 5091, 12455, 4474, 1233, 4928, 12456, 12448, 2]
+// Dependencies: [5, 19, 17, 4731, 21, 4478, 709, 5501, 5092, 12467, 4474, 1233, 4929, 12468, 12460, 2]
 // Exports: default
 
-// Module 12454 (ContactSyncLandingOnboardingRedesign)
+// Module 12466 (ContactSyncLandingOnboardingRedesign)
 import ThemesDefault from "Themes" /* 709 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12448 */;
-import registerAssetDefault from "registerAsset" /* 12455 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12456 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12460 */;
+import registerAssetDefault from "registerAsset" /* 12467 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12468 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -116,7 +116,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj4[2] = intl3.string(onNext(1233).t.LhlgY9);
   obj4[3] = callback;
   obj4[4] = loading;
-  obj3[1] = callback2(onNext(4928).Button, obj4);
+  obj3[1] = callback2(onNext(4929).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
   items1[4] = callback2(ContactSyncErrorDefault, { error });
   obj[1] = items1;

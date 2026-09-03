@@ -1,9 +1,9 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8515
+// Function ID: 8516
 // Name: initialize
-// Dependencies: [673, 8445, 586, 4166, 706, 2]
+// Dependencies: [673, 8449, 586, 4166, 706, 2]
 
-// Module 8511 (initialize)
+// Module 8515 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import ME from "ME" /* 673 */;

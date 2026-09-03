@@ -1,14 +1,14 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11214
+// Function ID: 11215
 // Name: _loop
-// Dependencies: [4217, 1627, 9628, 11211, 1640, 1495, 2]
+// Dependencies: [4217, 1627, 9632, 11215, 1640, 1495, 2]
 // Exports: default
 
-// Module 11210 (_loop)
+// Module 11214 (_loop)
 import set from "set" /* 2 */;
 import context from "context" /* 1495 */;
 import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1640 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9628 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9632 */;
 import module_4217 from "module_4217" /* 4217 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1627 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 4922
-// Function ID: 4923
+// Module ID: 4923
+// Function ID: 4924
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [26, 65, 2]
 
-// Module 4922 (__INTERNAL_VIEW_CONFIG)
+// Module 4923 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import result2 from "result" /* 26 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;

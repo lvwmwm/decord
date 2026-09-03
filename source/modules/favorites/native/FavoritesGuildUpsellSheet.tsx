@@ -1,12 +1,12 @@
-// Module ID: 10333
-// Function ID: 10334
+// Module ID: 10337
+// Function ID: 10338
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 1424, 673, 21, 10330, 10334, 4445, 10332, 10335, 1233, 3178, 6554, 5384, 4928, 8402, 8226, 10336, 1219, 2]
+// Dependencies: [19, 1424, 673, 21, 10334, 10338, 4445, 10336, 10339, 1233, 3178, 6555, 5385, 4929, 8406, 8230, 10340, 1219, 2]
 // Exports: default
 
-// Module 10333 (FavoritesGuildUpsellSheet)
+// Module 10337 (FavoritesGuildUpsellSheet)
 import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10334 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10338 */;
 import closure_3 from "noop" /* 19 */;
 import { MAX_FAVORITE_CHANNELS } from "date" /* 1424 */;
 import { FAVORITES } from "ME" /* 673 */;
@@ -19,7 +19,7 @@ let result = require("set").fileFinishedImporting("modules/favorites/native/Favo
 export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
-    FREE_FAVORITE_LIMIT = analyticsLocations(10330).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10334).FREE_FAVORITE_LIMIT;
   }
   let str = limit.source;
   if (str === undefined) {
@@ -33,7 +33,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
   importDefault = undefined;
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault(str).analyticsLocations;
   importDefault = React.useCallback(() => {
-    callback(4445).hideActionSheet(analyticsLocations(10332).FAVORITES_UPSELL_SHEET_KEY);
+    callback(4445).hideActionSheet(analyticsLocations(10336).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
   const intl = analyticsLocations(1233).intl;
   const tmp8 = messagesProxyDefault;
@@ -48,7 +48,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
     formatToPlainStringResult = intl2.string(tmp3(3178)["WaP/lz"]);
   }
   obj[1] = formatToPlainStringResult;
-  obj[2] = closure_6(analyticsLocations(6554).FavoritesSpotIllustration, {});
+  obj[2] = closure_6(analyticsLocations(6555).FavoritesSpotIllustration, {});
   obj = { size: "lg", variant: "primary", text: null, onPress: null };
   const intl3 = tmp7(1233).intl;
   obj[2] = intl3.string(analyticsLocations(1233).t.pj0XBN);
@@ -57,11 +57,11 @@ export default function FavoritesGuildUpsellSheet(limit) {
     const obj = { analyticsLocations, premiumFeatureCardOrder: analyticsLocations(closure_1_2[15]).PremiumFeatureCardOrder.TIER_2_LEADING };
     callback(closure_1_2[14])(obj);
   };
-  const items = [closure_6(analyticsLocations(4928).Button, obj), ];
+  const items = [closure_6(analyticsLocations(4929).Button, obj), ];
   const intl4 = tmp7(1233).intl;
   const tmp3Result = messagesProxyDefault;
   obj1 = { children: null };
-  items[1] = closure_6(analyticsLocations(4928).Button, {
+  items[1] = closure_6(analyticsLocations(4929).Button, {
     size: "lg",
     variant: "secondary",
     text: intl4.string("limit_reached" === str2 ? tmp3Result.PprSsy : tmp3Result["+dSwhE"]),
@@ -73,6 +73,6 @@ export default function FavoritesGuildUpsellSheet(limit) {
     }
   });
   obj1[0] = items;
-  obj[3] = closure_7(analyticsLocations(5384).ButtonGroup, obj1);
-  return closure_6(analyticsLocations(10335).PromoSheet, obj);
+  obj[3] = closure_7(analyticsLocations(5385).ButtonGroup, obj1);
+  return closure_6(analyticsLocations(10339).PromoSheet, obj);
 };

@@ -1,14 +1,14 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14533
+// Function ID: 14534
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 1908, 7862, 21, 4478, 709, 586, 14518, 8083, 8082, 1233, 1234, 4474, 14495, 4445, 14519, 2008, 6012, 9021, 2]
+// Dependencies: [19, 1908, 7865, 21, 4478, 709, 586, 14534, 8086, 8085, 1233, 1234, 4474, 14511, 4445, 14535, 2008, 6013, 9025, 2]
 // Exports: default
 
-// Module 14517 (UserProfilePrimaryGuildEditButton)
+// Module 14533 (UserProfilePrimaryGuildEditButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildTagBadgeSize } from "items" /* 7862 */;
+import { GuildTagBadgeSize } from "items" /* 7865 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14380
+// Function ID: 14381
 // Name: items
 // Dependencies: [4461, 1485, 1233, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14364 (items)
+// Module 14380 (items)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import getPathsFromURL from "getPathsFromURL" /* 4461 */;

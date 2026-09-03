@@ -1,14 +1,14 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5059
+// Function ID: 5060
 // Name: AppsLockIcon
-// Dependencies: [19, 21, 709, 4196, 5022, 2]
+// Dependencies: [19, 21, 709, 4196, 5023, 2]
 // Exports: AppsLockIcon
 
-// Module 5058 (AppsLockIcon)
+// Module 5059 (AppsLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5022 */;
+import registerAsset from "registerAsset" /* 5023 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

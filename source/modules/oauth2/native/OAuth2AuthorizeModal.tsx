@@ -1,10 +1,10 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9301
+// Function ID: 9302
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4478, 709, 9298, 1627, 4217, 4927, 5076, 1233, 9391, 5559, 4474, 5561, 9393, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 9302, 1627, 4217, 4928, 5077, 1233, 9395, 5560, 4474, 5562, 9397, 2]
 // Exports: default
 
-// Module 9297 (OAuth2AuthorizeModal)
+// Module 9301 (OAuth2AuthorizeModal)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -29,7 +29,7 @@ let result = require("set").fileFinishedImporting("modules/oauth2/native/OAuth2A
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = callback();
-  const tmp4 = sharedValue(9298)(arg0);
+  const tmp4 = sharedValue(9302)(arg0);
   const _require = tmp4;
   let obj = _require(4217);
   sharedValue = obj.useSharedValue(0);
@@ -81,14 +81,14 @@ export default function OAuth2AuthorizeModal(arg0) {
   if (null != tmp4.backStep) {
     const obj3 = { color: null };
     obj3[0] = tmp2(709).colors.INTERACTIVE_TEXT_DEFAULT;
-    let tmp11Result = tmp11(tmp5(9391).ArrowSmallLeftIcon, obj3);
+    let tmp11Result = tmp11(tmp5(9395).ArrowSmallLeftIcon, obj3);
   } else {
     const obj4 = { color: null };
     obj4[0] = tmp2(709).colors.INTERACTIVE_TEXT_DEFAULT;
-    tmp11Result = tmp11(tmp5(5559).XSmallIcon, obj4);
+    tmp11Result = tmp11(tmp5(5560).XSmallIcon, obj4);
   }
   obj2[3] = tmp11Result;
-  const items2 = [closure_5(_require(5076).PressableOpacity, obj2), , ];
+  const items2 = [closure_5(_require(5077).PressableOpacity, obj2), , ];
   const obj5 = { style: tmp.title, children: null };
   const obj6 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
   const intl3 = tmp5(1233).intl;
@@ -104,8 +104,8 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp4);
   obj8.onScroll = callback;
   obj8.centerContent = true;
-  obj7[2] = closure_5(sharedValue(9393), obj8);
-  items4[1] = closure_5(_require(5561).SafeAreaPaddingView, obj7);
+  obj7[2] = closure_5(sharedValue(9397), obj8);
+  items4[1] = closure_5(_require(5562).SafeAreaPaddingView, obj7);
   obj[1] = items4;
   return closure_6(View, obj);
 };

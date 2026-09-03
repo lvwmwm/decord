@@ -1,10 +1,10 @@
-// Module ID: 10391
-// Function ID: 10392
-// Dependencies: [19, 17, 673, 21, 4478, 709, 10376, 9169, 1233, 9173, 5632, 1296, 2]
+// Module ID: 10395
+// Function ID: 10396
+// Dependencies: [19, 17, 673, 21, 4478, 709, 10380, 9173, 1233, 9177, 5633, 1296, 2]
 
-// Module 10391
+// Module 10395
 import ThemesDefault from "Themes" /* 709 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10376 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10380 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
   const memo = importAllResult.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  let obj = safeAreaBottomKeyboardAware(9169);
+  let obj = safeAreaBottomKeyboardAware(9173);
   const searchEmptySource = obj.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
     const intl2 = tmp4(1233).intl;
@@ -35,9 +35,9 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
     const intl = tmp4(1233).intl;
     stringResult = intl.string(tmp4(1233).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9173).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9177).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5632).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5633).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

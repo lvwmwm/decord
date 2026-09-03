@@ -1,9 +1,9 @@
-// Module ID: 6353
-// Function ID: 6354
+// Module ID: 6354
+// Function ID: 6355
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6353 (metadata)
+// Module 6354 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarWumpusExample-2x.png.js");

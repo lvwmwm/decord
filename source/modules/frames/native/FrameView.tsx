@@ -1,15 +1,15 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16452
+// Function ID: 16453
 // Name: FrameViewInner
-// Dependencies: [32, 19, 9477, 9478, 4506, 21, 5962, 706, 9510, 16433, 9617, 16434, 9632, 586, 2]
+// Dependencies: [32, 19, 9481, 9482, 4506, 21, 5963, 706, 9514, 16453, 9621, 16454, 16455, 9636, 586, 2]
 // Exports: InlineFrameView
 
-// Module 16432 (FrameViewInner)
+// Module 16452 (FrameViewInner)
 import initialize from "initialize" /* 586 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "map" /* 9477 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9478 */;
+import closure_5 from "map" /* 9481 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9482 */;
 import { ActivityPlatform } from "items3" /* 4506 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -45,6 +45,7 @@ function FrameViewInner(frame) {
   setIsResetting = baseActivityView.setIsResetting;
   obj = { instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE, discord_proxy_ticket: frame.data.proxyTicket };
   ({ isResetting, isLandscape } = baseActivityView);
+  const merged = Object.assign(layoutMode(tmp2[11])(frame.data));
   obj = { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null };
   obj1 = {
     onActivityCrash() {
@@ -62,7 +63,7 @@ function FrameViewInner(frame) {
     webViewKey: null,
     safeAreasConfig: null
   };
-  tmpResult = tmp(tmp2[12]);
+  tmpResult = tmp(tmp2[13]);
   obj1[6] = tmpResult.allowPopups(data);
   obj1[8] = layoutMode === constants.PIP;
   obj1[9] = frame(setIsResetting[8]).FRAME_WEB_VIEW_KEY;
@@ -70,7 +71,7 @@ function FrameViewInner(frame) {
     landscapeSafeAreasConfig = frame.landscapeSafeAreasConfig;
   }
   obj1[10] = landscapeSafeAreasConfig;
-  obj[3] = jsx(layoutMode(setIsResetting[11]), {
+  obj[3] = jsx(layoutMode(setIsResetting[12]), {
     onActivityCrash() {
       setIsResetting(true);
       const timerId = setTimeout(() => callback(false), 0);

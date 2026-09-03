@@ -1,10 +1,10 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 12744
+// Function ID: 12745
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 709, 1305, 1233, 12733, 8786, 4166, 1372, 6260, 4474, 6254, 4433, 5076, 5559, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 709, 1305, 1233, 12745, 8790, 4166, 1372, 6261, 4474, 6255, 4433, 5077, 5560, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12732 (UserProfilePrivacyNotice)
+// Module 12744 (UserProfilePrivacyNotice)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;

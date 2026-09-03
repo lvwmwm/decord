@@ -1,17 +1,17 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11537
+// Function ID: 11538
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1924, 21, 4478, 709, 1362, 5076, 1233, 8237, 5593, 1430, 4137, 2]
+// Dependencies: [19, 17, 1924, 21, 4478, 709, 1362, 5077, 1233, 8241, 5594, 1430, 4137, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11532 (EmojiPickerRowButton)
+// Module 11537 (EmojiPickerRowButton)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import EmojiTypes from "EmojiTypes" /* 4137 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import EmojiDefault from "Emoji" /* 5593 */;
-import ReactionIcon from "ReactionIcon" /* 8237 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import EmojiDefault from "Emoji" /* 5594 */;
+import ReactionIcon from "ReactionIcon" /* 8241 */;
 import closure_3 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;

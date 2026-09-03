@@ -1,9 +1,9 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8057
+// Function ID: 8058
 // Name: ContentInventoryTraitType
 // Dependencies: [2]
 
-// Module 8054 (ContentInventoryTraitType)
+// Module 8057 (ContentInventoryTraitType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryTraitType.tsx");

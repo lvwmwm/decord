@@ -1,13 +1,13 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10386
+// Function ID: 10387
 // Name: isKlipyProvider
-// Dependencies: [673, 10381, 2]
+// Dependencies: [673, 10385, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10382 (isKlipyProvider)
+// Module 10386 (isKlipyProvider)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10381 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10385 */;
 
 const SearchTypes = ME.SearchTypes;
 const result = set.fileFinishedImporting("utils/GIFPickerUtils.tsx");

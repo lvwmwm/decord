@@ -1,13 +1,13 @@
-// Module ID: 13673
-// Function ID: 13674
+// Module ID: 13688
+// Function ID: 13689
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 1215, 5230, 4497, 21, 586, 1233, 13672, 1296, 2]
+// Dependencies: [19, 1215, 5231, 4497, 21, 586, 1233, 13687, 1296, 2]
 // Exports: default
 
-// Module 13673 (OngoingCallStatusLabel)
+// Module 13688 (OngoingCallStatusLabel)
 import noopAll from "noop" /* 19 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "callConnect" /* 5230 */;
+import closure_3 from "callConnect" /* 5231 */;
 import closure_4 from "updateVoiceState" /* 4497 */;
 import { jsx } from "jsxProd" /* 21 */;
 

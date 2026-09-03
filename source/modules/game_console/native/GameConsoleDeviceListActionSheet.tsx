@@ -1,17 +1,17 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9912
+// Function ID: 9913
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4495, 673, 21, 4478, 709, 5561, 4928, 1233, 9909, 4474, 9910, 586, 9900, 38, 9907, 4445, 1228, 1296, 8518, 5630, 5629, 5632, 2]
+// Dependencies: [5, 32, 19, 17, 4495, 673, 21, 4478, 709, 5562, 4929, 1233, 9913, 4474, 9914, 586, 9904, 38, 9911, 4445, 1228, 1296, 8522, 5631, 5630, 5633, 2]
 // Exports: default
 
-// Module 9908 (TransferFooter)
+// Module 9912 (TransferFooter)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import registerAssetDefault from "registerAsset" /* 9909 */;
-import registerAssetDefault2 from "registerAsset" /* 9910 */;
+import Button from "Button" /* 4929 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import registerAssetDefault from "registerAsset" /* 9913 */;
+import registerAssetDefault2 from "registerAsset" /* 9914 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -123,7 +123,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(9907).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
+              obj1[0] = closure_1_0(9911).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14555
+// Function ID: 14556
 // Name: handlePasskeyUpsellShow
-// Dependencies: [1215, 1921, 14533, 673, 5494, 7733, 4298, 1372, 4332, 6064, 14540, 2]
+// Dependencies: [1215, 1921, 14549, 673, 5495, 7736, 4298, 1372, 4332, 6065, 14556, 2]
 
-// Module 14539 (handlePasskeyUpsellShow)
+// Module 14555 (handlePasskeyUpsellShow)
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
-import initializeDefault from "initialize" /* 5494 */;
-import _crypto from "_crypto" /* 7733 */;
-import _modDef14540 from "module_14540" /* 14540 */;
+import initializeDefault from "initialize" /* 5495 */;
+import _crypto from "_crypto" /* 7736 */;
+import _modDef14556 from "module_14556" /* 14556 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "hasFetchedCredentials" /* 14533 */;
+import closure_5 from "hasFetchedCredentials" /* 14549 */;
 import { LoginStates } from "ME" /* 673 */;
 
 require = arg1;
@@ -43,12 +43,12 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
                 currentUser = currentUser.getCurrentUser();
                 if (tmp6) {
                   if (obj3.hasFetchedCredentials()) {
-                    _modDef14540.openPasskeyUpsell();
-                    const obj6 = _modDef14540;
+                    _modDef14556.openPasskeyUpsell();
+                    const obj6 = _modDef14556;
                   } else if (!c7) {
                     c7 = true;
-                    const webAuthnCredentials = tmp(6064).fetchWebAuthnCredentials();
-                    const tmpResult1 = tmp(6064);
+                    const webAuthnCredentials = tmp(6065).fetchWebAuthnCredentials();
+                    const tmpResult1 = tmp(6065);
                   }
                 }
                 tmp6 = undefined !== currentUser && currentUser.verified;

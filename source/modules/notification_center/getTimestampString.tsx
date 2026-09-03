@@ -1,10 +1,10 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7397
+// Function ID: 7398
 // Name: getDurationString
 // Dependencies: [1233, 4074, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 7396 (getDurationString)
+// Module 7397 (getDurationString)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;

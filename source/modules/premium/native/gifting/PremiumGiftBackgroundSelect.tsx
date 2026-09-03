@@ -1,12 +1,12 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10826
+// Function ID: 10827
 // Name: GiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4217, 4478, 709, 1492, 4479, 1296, 10823, 10698, 2]
+// Dependencies: [32, 19, 17, 21, 4217, 4478, 709, 1492, 4479, 1296, 10827, 10702, 2]
 // Exports: default
 
-// Module 10822 (GiftBackgroundSelect)
+// Module 10826 (GiftBackgroundSelect)
 import ThemesDefault from "Themes" /* 709 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10698 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10702 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;

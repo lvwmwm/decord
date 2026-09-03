@@ -1,16 +1,16 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15704
+// Function ID: 15705
 // Name: AdTopicRow
-// Dependencies: [19, 17, 673, 21, 1305, 2042, 4166, 6001, 1233, 4478, 709, 6000, 1994, 2]
+// Dependencies: [19, 17, 673, 21, 1305, 2042, 4166, 6002, 1233, 4478, 709, 6001, 1994, 2]
 // Exports: default
 
-// Module 15690 (AdTopicRow)
+// Module 15704 (AdTopicRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
 import messagesProxyDefault from "messagesProxy" /* 2042 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -41,7 +41,7 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(6001).TableSwitchRow, obj);
+  return closure_5(adTopic(6002).TableSwitchRow, obj);
 }
 noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

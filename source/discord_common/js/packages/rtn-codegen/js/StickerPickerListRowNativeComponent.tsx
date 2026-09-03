@@ -1,9 +1,9 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 10420
+// Function ID: 10421
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 2]
 
-// Module 10416 (__INTERNAL_VIEW_CONFIG)
+// Module 10420 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;

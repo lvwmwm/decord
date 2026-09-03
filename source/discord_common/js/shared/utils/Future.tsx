@@ -1,9 +1,9 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8161
+// Function ID: 8162
 // Name: Future
 // Dependencies: [2]
 
-// Module 8157 (Future)
+// Module 8161 (Future)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 5049
-// Function ID: 5050
+// Module ID: 5050
+// Function ID: 5051
 // Name: StageLockIcon
-// Dependencies: [19, 21, 709, 4196, 4996, 2]
+// Dependencies: [19, 21, 709, 4196, 4997, 2]
 // Exports: StageLockIcon
 
-// Module 5049 (StageLockIcon)
+// Module 5050 (StageLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4996 */;
+import registerAsset from "registerAsset" /* 4997 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

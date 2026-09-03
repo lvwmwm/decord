@@ -1,14 +1,14 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6813
+// Function ID: 6814
 // Name: MushroomIllocon
-// Dependencies: [21, 5501, 6813, 2]
+// Dependencies: [21, 5502, 6814, 2]
 // Exports: MushroomIllocon
 
-// Module 6812 (MushroomIllocon)
+// Module 6813 (MushroomIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6813 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6814 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");

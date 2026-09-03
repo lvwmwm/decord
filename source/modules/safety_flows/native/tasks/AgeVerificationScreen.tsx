@@ -1,10 +1,10 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17720
+// Function ID: 17721
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1921, 673, 21, 4478, 511, 17689, 586, 8747, 17683, 1954, 8699, 17692, 6265, 1233, 2662, 2918, 8697, 1994, 14042, 6060, 4474, 8749, 2]
+// Dependencies: [19, 17, 1921, 673, 21, 4478, 511, 17713, 586, 8751, 17707, 1954, 8703, 17716, 6266, 1233, 2662, 2918, 8701, 1994, 14058, 6061, 4474, 8753, 2]
 // Exports: default
 
-// Module 17696 (AgeVerificationScreen)
+// Module 17720 (AgeVerificationScreen)
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;

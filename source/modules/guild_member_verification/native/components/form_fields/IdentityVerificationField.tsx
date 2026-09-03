@@ -1,10 +1,10 @@
-// Module ID: 7695
-// Function ID: 7696
+// Module ID: 7698
+// Function ID: 7699
 // Name: BaseIdentityVerificationField
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4429, 4928, 4302, 7696, 4723, 7777, 2008, 7780, 7813, 7742, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4429, 4929, 4302, 7699, 4724, 7780, 2008, 7783, 7816, 7745, 2]
 // Exports: default
 
-// Module 7695 (BaseIdentityVerificationField)
+// Module 7698 (BaseIdentityVerificationField)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
@@ -42,7 +42,7 @@ function BaseIdentityVerificationField(icon) {
     const intl = tmp7(1233).intl;
     obj2[3] = intl.string(tmp7(1233).t["13ofGu"]);
     obj2[4] = onPress;
-    obj1[1] = tmp6(tmp7(4928).Button, obj2);
+    obj1[1] = tmp6(tmp7(4929).Button, obj2);
   }
   items[2] = callback(View, obj1);
   obj[1] = items;
@@ -88,11 +88,11 @@ export default function IdentityVerificationField(arg0) {
       stringResult1 = intl.string(tmp(1233).t.mhv8BM);
     }
     if (tmp(4302).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(7813).EnvelopeIcon;
+      let EnvelopeIcon = tmp(7816).EnvelopeIcon;
     } else if (tmp(4302).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(7742).MobilePhoneIcon;
+      EnvelopeIcon = tmp(7745).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(7813).EnvelopeIcon;
+      EnvelopeIcon = tmp(7816).EnvelopeIcon;
     }
     if (tmp(4302).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {

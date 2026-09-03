@@ -1,14 +1,14 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15404
+// Function ID: 15405
 // Name: WrenchIcon
-// Dependencies: [19, 21, 709, 4196, 15391, 2]
+// Dependencies: [19, 21, 709, 4196, 15405, 2]
 // Exports: WrenchIcon
 
-// Module 15390 (WrenchIcon)
+// Module 15404 (WrenchIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15391 */;
+import registerAsset from "registerAsset" /* 15405 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

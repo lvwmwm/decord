@@ -1,10 +1,10 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9880
+// Function ID: 9881
 // Name: SecureFramesCodeGrid
 // Dependencies: [19, 17, 502, 21, 4478, 709, 4474, 2]
 // Exports: default
 
-// Module 9876 (SecureFramesCodeGrid)
+// Module 9880 (SecureFramesCodeGrid)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import closure_2 from "noop" /* 19 */;

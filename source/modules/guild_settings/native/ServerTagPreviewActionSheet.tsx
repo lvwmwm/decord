@@ -1,15 +1,15 @@
-// Module ID: 13874
-// Function ID: 13875
+// Module ID: 13890
+// Function ID: 13891
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 9023, 21, 4478, 709, 9025, 9026, 13875, 4445, 4474, 1233, 4928, 6055, 5997, 5629, 2]
+// Dependencies: [19, 17, 9027, 21, 4478, 709, 9029, 9030, 13891, 4445, 4474, 1233, 4929, 6056, 5998, 5630, 2]
 // Exports: default
 
-// Module 13874 (ServerTagPreviewActionSheet)
+// Module 13890 (ServerTagPreviewActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 13875 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 13891 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { GuildProfileFetchStatus } from "handleUpdateStart" /* 9023 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 9027 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -23,7 +23,7 @@ const result = require("set").fileFinishedImporting("modules/guild_settings/nati
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(9025);
+  let obj = guildId(9029);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -52,19 +52,19 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj2[2] = function onPress() {
       return guildId(closure_1_2[7]).getGuildProfile(guildId, true);
     };
-    items1[1] = callback(tmp2(4928).Button, obj2);
+    items1[1] = callback(tmp2(4929).Button, obj2);
     obj[1] = items1;
     tmp7 = callback2(View, obj);
     tmp8 = callback;
   } else {
-    tmp7 = callback(tmp2(6055).SceneLoadingIndicator, {});
+    tmp7 = callback(tmp2(6056).SceneLoadingIndicator, {});
     tmp8 = callback;
   }
   const obj3 = { children: null };
   const obj4 = { title: null };
   const intl3 = tmp2(1233).intl;
   obj4[0] = intl3.string(guildId(1233).t["2QmKZ2"]);
-  const items2 = [tmp8(guildId(5629).BottomSheetTitleHeader, obj4), tmp7];
+  const items2 = [tmp8(guildId(5630).BottomSheetTitleHeader, obj4), tmp7];
   obj3[0] = items2;
-  return callback2(guildId(5997).ActionSheet, obj3);
+  return callback2(guildId(5998).ActionSheet, obj3);
 };

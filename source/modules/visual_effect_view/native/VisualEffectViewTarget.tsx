@@ -1,11 +1,11 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16633
+// Function ID: 16634
 // Name: View
-// Dependencies: [17, 1234, 16614, 2]
+// Dependencies: [17, 1234, 16634, 2]
 
-// Module 16613 (View)
+// Module 16633 (View)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 16614 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 16634 */;
 import set from "set" /* 1234 */;
 
 let View = get_ActivityIndicator.View;

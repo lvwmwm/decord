@@ -1,15 +1,15 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8882
+// Function ID: 8883
 // Name: map
-// Dependencies: [1215, 1908, 7491, 673, 7490, 4463, 695, 4713, 500, 1399, 2]
+// Dependencies: [1215, 1908, 7492, 673, 7491, 4463, 695, 4714, 500, 1399, 2]
 // Exports: default
 
-// Module 8878 (map)
+// Module 8882 (map)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import _modDef4713 from "module_4713" /* 4713 */;
+import _modDef4714 from "module_4714" /* 4714 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import InviteSendStates from "InviteSendStates" /* 7491 */;
+import InviteSendStates from "InviteSendStates" /* 7492 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;
@@ -160,8 +160,8 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
       return obj.exact(obj);
     };
     obj1[3] = obj2;
-    const value = _modDef4713.get(obj1);
-    const tmp4Result = _modDef4713;
+    const value = _modDef4714.get(obj1);
+    const tmp4Result = _modDef4714;
     const cleanupPromise = value.then((body) => {
       body = body.body;
       if (null != callback) {

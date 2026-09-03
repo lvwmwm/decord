@@ -1,21 +1,21 @@
-// Module ID: 6073
-// Function ID: 6074
+// Module ID: 6074
+// Function ID: 6075
 // Name: makeSortedChannel
-// Dependencies: [6074, 6075, 1390, 1386, 1908, 4493, 4701, 1921, 11, 4116, 4074, 6076, 586, 706, 2]
+// Dependencies: [6075, 6076, 1390, 1386, 1908, 4493, 4702, 1921, 11, 4116, 4074, 6077, 586, 706, 2]
 
-// Module 6073 (makeSortedChannel)
+// Module 6074 (makeSortedChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import hooksDefault from "hooks" /* 4074 */;
-import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 6076 */;
-import closure_3 from "processChannel" /* 6074 */;
-import closure_4 from "processChannel" /* 6075 */;
+import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 6077 */;
+import closure_3 from "processChannel" /* 6075 */;
+import closure_4 from "processChannel" /* 6076 */;
 import { isPrivate } from "createChannelRecord" /* 1390 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
@@ -83,7 +83,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f37473 = () => {
+const f37508 = () => {
 
 };
 const Store = initializeDefault.Store;
@@ -96,7 +96,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f37473 !== "function") {
+  if (typeof f37508 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);

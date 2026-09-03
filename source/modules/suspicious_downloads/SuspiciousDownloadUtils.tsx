@@ -1,15 +1,15 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8048
+// Function ID: 8049
 // Name: set
-// Dependencies: [8046, 1485, 2]
+// Dependencies: [8049, 1485, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8045 (set)
+// Module 8048 (set)
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import _modDef8046 from "module_8046" /* 8046 */;
+import _modDef8049 from "module_8049" /* 8049 */;
 import set from "set" /* 2 */;
 
-let set = new Set(_modDef8046);
+let set = new Set(_modDef8049);
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;

@@ -1,20 +1,20 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12164
+// Function ID: 12165
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1386, 4130, 1921, 10853, 21, 4478, 709, 5462, 4322, 4674, 12, 10855, 1233, 4474, 10857, 10859, 10952, 12159, 2]
+// Dependencies: [32, 19, 17, 1386, 4130, 1921, 10857, 21, 4478, 709, 5463, 4322, 4674, 12, 10859, 1233, 4474, 10861, 10863, 10956, 12165, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 12158 (matchGroupDMRecipients)
+// Module 12164 (matchGroupDMRecipients)
 import ThemesDefault from "Themes" /* 709 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5462 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5463 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import { UserRowModes } from "UserRowModes" /* 10853 */;
+import { UserRowModes } from "UserRowModes" /* 10857 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(5462)(trimmed1, tmp7)) {
+          if (tmp19(5463)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(5462)(trimmed1, tmp12)) {
+          if (tmp19(5463)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;

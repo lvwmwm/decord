@@ -1,10 +1,10 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9476
+// Function ID: 9477
 // Name: NativeModules
-// Dependencies: [17, 1234, 9473, 4457, 641, 702, 2]
+// Dependencies: [17, 1234, 9477, 4457, 641, 702, 2]
 
-// Module 9472 (NativeModules)
-import enforcingDefault from "enforcing" /* 9473 */;
+// Module 9476 (NativeModules)
+import enforcingDefault from "enforcing" /* 9477 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 1234 */;
 import keys from "keys" /* 641 */;
@@ -55,7 +55,7 @@ let closure_5 = keys.create((arg0) => {
         return tmp;
       }));
     });
-    return { rawThermalState: "r" };
+    return { rawThermalState: "Array" };
   }
 });
 const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");

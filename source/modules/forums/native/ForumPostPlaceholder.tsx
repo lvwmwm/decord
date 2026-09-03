@@ -1,8 +1,8 @@
-// Module ID: 11822
-// Function ID: 11823
-// Dependencies: [32, 19, 4470, 21, 4478, 709, 586, 4217, 4479, 5609, 2]
+// Module ID: 11828
+// Function ID: 11829
+// Dependencies: [32, 19, 4470, 21, 4478, 709, 586, 4217, 4479, 5610, 2]
 
-// Module 11822
+// Module 11828
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -53,9 +53,9 @@ const memoResult = importAllResult.memo(() => {
   fn.__workletHash = 9488742940898;
   fn.__initData = closure_9;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  obj = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5609).Card, obj1) };
+  obj = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5610).Card, obj1) };
   obj1 = { variant: "secondary", style: callback2().postPlaceholder };
-  return jsx(timingConfig(4217).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5609).Card, { variant: "secondary", style: callback2().postPlaceholder }) });
+  return jsx(timingConfig(4217).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5610).Card, { variant: "secondary", style: callback2().postPlaceholder }) });
 });
 const result = require("set").fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
 

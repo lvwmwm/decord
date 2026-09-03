@@ -1,31 +1,31 @@
-// Module ID: 16784
-// Function ID: 16785
+// Module ID: 16804
+// Function ID: 16805
 // Name: TabButton
-// Dependencies: [32, 19, 17, 4186, 7279, 6181, 5456, 1390, 1215, 1386, 7475, 7390, 1908, 13630, 4493, 5389, 4701, 4497, 673, 21, 709, 4478, 5076, 4474, 586, 4217, 4340, 6230, 1233, 9418, 9768, 15403, 1234, 14458, 10924, 9957, 4332, 9958, 9946, 1492, 1627, 9947, 12551, 695, 16785, 16792, 15571, 16811, 16812, 2]
+// Dependencies: [32, 19, 17, 4186, 7280, 6182, 5457, 1390, 1215, 1386, 7476, 7391, 1908, 13645, 4493, 5390, 4702, 4497, 673, 21, 709, 4478, 5077, 4474, 586, 4217, 4340, 6231, 1233, 9422, 9772, 15417, 1234, 14474, 10928, 9961, 4332, 9962, 9950, 1492, 1627, 9951, 12563, 695, 16805, 16812, 15585, 16831, 16832, 2]
 
-// Module 16784 (TabButton)
+// Module 16804 (TabButton)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9957 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9961 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "setContent" /* 4186 */;
-import closure_7 from "handleReset" /* 7279 */;
-import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6181 */;
-import closure_11 from "getIdFromHistoryItem" /* 6181 */;
-import closure_12 from "rebuild" /* 5456 */;
+import closure_7 from "handleReset" /* 7280 */;
+import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6182 */;
+import closure_11 from "getIdFromHistoryItem" /* 6182 */;
+import closure_12 from "rebuild" /* 5457 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_15 from "fetchFingerprint" /* 1215 */;
 import closure_16 from "ensureGuildLoaded" /* 1386 */;
-import closure_17 from "init" /* 7475 */;
-import closure_18 from "updateGuildUnreadSentinel" /* 7390 */;
+import closure_17 from "init" /* 7476 */;
+import closure_18 from "updateGuildUnreadSentinel" /* 7391 */;
 import closure_19 from "createGuildRecordFromRust" /* 1908 */;
-import closure_20 from "rebuildUnreads" /* 13630 */;
+import closure_20 from "rebuildUnreads" /* 13645 */;
 import closure_21 from "generateOldThreadCutoff" /* 4493 */;
-import closure_22 from "insertUnsortedGuilds" /* 5389 */;
-import closure_23 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_22 from "insertUnsortedGuilds" /* 5390 */;
+import closure_23 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_24 from "updateVoiceState" /* 4497 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

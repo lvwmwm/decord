@@ -1,10 +1,10 @@
-// Module ID: 7447
-// Function ID: 7448
+// Module ID: 7448
+// Function ID: 7449
 // Name: trackAppDirectoryProfileEmbed
 // Dependencies: [1980, 4299, 673, 695, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7447 (trackAppDirectoryProfileEmbed)
+// Module 7448 (trackAppDirectoryProfileEmbed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_2 from "handleConnectionOpen" /* 1980 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;

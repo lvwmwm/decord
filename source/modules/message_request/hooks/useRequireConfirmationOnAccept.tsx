@@ -1,12 +1,12 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12244
+// Function ID: 12245
 // Name: useRequireConfirmationOnAccept
-// Dependencies: [12233, 2]
+// Dependencies: [12245, 2]
 // Exports: default
 
-// Module 12232 (useRequireConfirmationOnAccept)
+// Module 12244 (useRequireConfirmationOnAccept)
 import set from "set" /* 2 */;
-import setDefault from "set" /* 12233 */;
+import setDefault from "set" /* 12245 */;
 
 const result = set.fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");
 

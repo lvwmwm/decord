@@ -1,11 +1,11 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7643
+// Function ID: 7644
 // Name: checkSpoilerEmbeds
-// Dependencies: [673, 4850, 4393, 7643, 4461, 1205, 2]
+// Dependencies: [673, 4851, 4393, 7644, 4461, 1205, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 7642 (checkSpoilerEmbeds)
-import getEffectiveVideoProvider from "getEffectiveVideoProvider" /* 4850 */;
+// Module 7643 (checkSpoilerEmbeds)
+import getEffectiveVideoProvider from "getEffectiveVideoProvider" /* 4851 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
@@ -40014,8 +40014,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(7643).isExperimentEmbedURL(type.target);
-      const obj = callback(7643);
+      tmp = !callback(7644).isExperimentEmbedURL(type.target);
+      const obj = callback(7644);
     }
     return tmp;
   });
@@ -40171,7 +40171,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
             if (obj3.isEmbedInline(first1)) {
               items2 = [];
             }
-            obj3 = _require(4850);
+            obj3 = _require(4851);
           }
         } else {
           items2 = arr;
@@ -40283,8 +40283,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(7643).isExperimentEmbedURL(type.target);
-        const obj = callback(7643);
+        tmp = !callback(7644).isExperimentEmbedURL(type.target);
+        const obj = callback(7644);
       }
       return tmp;
     });

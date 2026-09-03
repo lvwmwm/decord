@@ -1,10 +1,10 @@
-// Module ID: 11752
-// Function ID: 11753
-// Dependencies: [673, 6179, 4466, 7643, 4669, 2]
+// Module ID: 11757
+// Function ID: 11758
+// Dependencies: [673, 6180, 4466, 7644, 4669, 2]
 
-// Module 11752
+// Module 11757
 import set from "set" /* 2 */;
-import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6179 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6180 */;
 import ME from "ME" /* 673 */;
 
 ({ InviteStates: obj1, MessageEmbedTypes: c3 } = ME);

@@ -1,10 +1,10 @@
-// Module ID: 5628
-// Function ID: 5629
+// Module ID: 5629
+// Function ID: 5630
 // Name: FormIcon
 // Dependencies: [19, 21, 4478, 1296, 2]
 // Exports: default
 
-// Module 5628 (FormIcon)
+// Module 5629 (FormIcon)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
 import { jsx } from "jsxProd" /* 21 */;

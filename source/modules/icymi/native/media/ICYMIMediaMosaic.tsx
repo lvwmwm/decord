@@ -1,14 +1,14 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16335
+// Function ID: 16336
 // Name: MediaMosaicVideo
-// Dependencies: [32, 19, 17, 4470, 1386, 4130, 1921, 8621, 673, 21, 4478, 709, 4671, 688, 586, 8617, 4217, 4479, 16317, 5501, 4474, 1233, 8593, 5090, 5076, 8637, 10092, 5054, 16272, 8583, 8634, 1470, 12, 5486, 8581, 4674, 2]
+// Dependencies: [32, 19, 17, 4470, 1386, 4130, 1921, 8625, 673, 21, 4478, 709, 4671, 688, 586, 8621, 4217, 4479, 16336, 5502, 4474, 1233, 8597, 5091, 5077, 8641, 10096, 5055, 16291, 8587, 8638, 1470, 12, 5487, 8585, 4674, 2]
 // Exports: default
 
-// Module 16316 (MediaMosaicVideo)
+// Module 16335 (MediaMosaicVideo)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import VideoComponentDefault from "VideoComponent" /* 8617 */;
-import context2 from "context" /* 16272 */;
+import VideoComponentDefault from "VideoComponent" /* 8621 */;
+import context2 from "context" /* 16291 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -16,7 +16,7 @@ import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "filterStaffGuild" /* 8621 */;
+import closure_11 from "filterStaffGuild" /* 8625 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -73,12 +73,12 @@ function MediaMosaicImage(source) {
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
       const obj = { uri: null, width: null, height: null };
-      obj[0] = source(16317).createThumbhashImageFromPlaceholder(tmp.placeholder);
+      obj[0] = source(16336).createThumbhashImageFromPlaceholder(tmp.placeholder);
       ({ width: obj[1], height: obj[2] } = tmp);
       return obj;
     }
   }, items);
-  obj = { style: items1, children: callback2(first(5501), { source: memo, style: items2 }) };
+  obj = { style: items1, children: callback2(first(5502), { source: memo, style: items2 }) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
   items2 = [style, tmp.media, dimensions];
   const items3 = [callback2(first(4217).View, obj), ];
@@ -367,7 +367,7 @@ function SingleImage(source) {
   ({ initialIndex, handlePressMedia, visible } = source);
   const tmp = callback4();
   let obj = React;
-  const context = React.useContext(source(16272).ICYMIContext);
+  const context = React.useContext(source(16291).ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {

@@ -1,14 +1,14 @@
-// Module ID: 8819
-// Function ID: 8820
+// Module ID: 8823
+// Function ID: 8824
 // Name: useResolveGameForProfile
-// Dependencies: [5967, 4654, 8820, 4655, 6162, 2]
+// Dependencies: [5968, 4654, 8824, 4655, 6163, 2]
 // Exports: default
 
-// Module 8819 (useResolveGameForProfile)
+// Module 8823 (useResolveGameForProfile)
 import set from "set" /* 2 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 5967 */;
-import importDefaultResult1 from "importDefaultResult1" /* 6162 */;
-import useResolveGameDefault from "useResolveGame" /* 8820 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 5968 */;
+import importDefaultResult1 from "importDefaultResult1" /* 6163 */;
+import useResolveGameDefault from "useResolveGame" /* 8824 */;
 
 let result = set.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 

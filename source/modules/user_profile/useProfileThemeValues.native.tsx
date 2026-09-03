@@ -1,10 +1,10 @@
-// Module ID: 5983
-// Function ID: 5984
+// Module ID: 5984
+// Function ID: 5985
 // Name: useProfileThemeValues
 // Dependencies: [19, 4470, 644, 709, 708, 2]
 // Exports: useProfileThemeValues
 
-// Module 5983 (useProfileThemeValues)
+// Module 5984 (useProfileThemeValues)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

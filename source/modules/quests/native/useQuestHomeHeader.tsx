@@ -1,17 +1,17 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14841
+// Function ID: 14842
 // Name: QuestHomeHeaderTitle
-// Dependencies: [19, 17, 5395, 673, 675, 21, 4478, 709, 14823, 4474, 1233, 11055, 4445, 11070, 2008, 695, 5981, 7295, 11059, 14827, 8016, 14828, 1498, 13030, 2]
+// Dependencies: [19, 17, 5396, 673, 675, 21, 4478, 709, 14838, 4474, 1233, 11059, 4445, 11074, 2008, 695, 5982, 7296, 11063, 14842, 8019, 14843, 1498, 13042, 2]
 // Exports: default
 
-// Module 14826 (QuestHomeHeaderTitle)
+// Module 14841 (QuestHomeHeaderTitle)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import QuestsIcon from "QuestsIcon" /* 14823 */;
+import QuestsIcon from "QuestsIcon" /* 14838 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5395 */;
+import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5396 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { CollectiblesMobileShopScreen as closure_7 } from "items" /* 675 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -33,7 +33,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   isVirtualCurrencyEnabled = isVirtualCurrencyEnabled.isVirtualCurrencyEnabled;
   const merged = Object.assign(isVirtualCurrencyEnabled, Object.create(null));
   let balance;
-  let obj = balance(11055);
+  let obj = balance(11059);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   obj = { style: callback3().headerRightContainer, children: null };
@@ -41,7 +41,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
     obj = { balance: null, onPress: null };
     obj[0] = balance;
     obj[1] = tmp5;
-    isVirtualCurrencyEnabled = callback(balance(11059).BalanceWidgetPillButton, obj);
+    isVirtualCurrencyEnabled = callback(balance(11063).BalanceWidgetPillButton, obj);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);

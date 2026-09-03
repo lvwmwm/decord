@@ -1,18 +1,18 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11411
+// Function ID: 11412
 // Name: onTapMention
-// Dependencies: [5, 11404, 10055, 8661, 4190, 11367, 8911, 5981, 4445, 11407, 2008, 11, 4166, 1233, 5989, 4193, 4857, 9185, 2]
+// Dependencies: [5, 11409, 10059, 8665, 4190, 11372, 8915, 5982, 4445, 11412, 2008, 11, 4166, 1233, 5990, 4193, 4858, 9189, 2]
 
-// Module 11406 (onTapMention)
+// Module 11411 (onTapMention)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import presentAddedFriendToast from "presentAddedFriendToast" /* 4193 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import setDefault from "set" /* 4857 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
-import _copy from "_copy" /* 5989 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8911 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11404 */;
+import setDefault from "set" /* 4858 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+import _copy from "_copy" /* 5990 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8915 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11409 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -89,7 +89,7 @@ let closure_5 = importDefaultResult((arg0) => {
             } else {
               if (null != attachmentUrl) {
                 if ("" !== attachmentUrl) {
-                  let obj3 = callback2(10055);
+                  let obj3 = callback2(10059);
                   dependencyMap = 2;
                   c4 = 1;
                   const obj2 = { value: null, done: false };
@@ -104,7 +104,7 @@ let closure_5 = importDefaultResult((arg0) => {
             throw arg1;
           } else if (arg0 !== 2) {
             callback = arg1;
-            obj = callback(8661);
+            obj = callback(8665);
             obj.trackLinkClicked(callback);
             obj1 = callback(4190);
             obj1.openURL(callback);
@@ -186,7 +186,7 @@ let closure_4 = importDefaultResult((arg0) => {
             } else {
               if (null != attachmentUrl) {
                 if ("" !== attachmentUrl) {
-                  let obj2 = callback2(10055);
+                  let obj2 = callback2(10059);
                   dependencyMap = 2;
                   c4 = 1;
                   obj2 = { value: null, done: false };
@@ -203,7 +203,7 @@ let closure_4 = importDefaultResult((arg0) => {
             callback = arg1;
             obj = { urlString: null };
             obj[0] = callback;
-            callback(11404)(obj);
+            callback(11409)(obj);
           }
           c4 = 3;
           const obj3 = { value: null, done: true };
@@ -230,7 +230,7 @@ obj[2] = function() {
   return applyArgumentsResult;
 };
 obj[3] = function onTapMention(closure_0) {
-  let obj = parsedUserId(11367);
+  let obj = parsedUserId(11372);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(closure_0);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
@@ -249,7 +249,7 @@ obj[3] = function onTapMention(closure_0) {
         obj[0] = guildId;
         obj[1] = roleId;
         obj[2] = channelId;
-        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp(2008)(11407, tmp2.paths), "RoleMembersActionSheet", obj);
+        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp(2008)(11412, tmp2.paths), "RoleMembersActionSheet", obj);
         const obj9 = ACTION_SHEET_HEIGHT_HALFDefault;
       }
     }
@@ -258,7 +258,7 @@ obj[3] = function onTapMention(closure_0) {
         obj1 = { guildId: null, roleId: null, channelId: null };
         obj1[0] = guildId;
         const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
-        const tmp10 = tmp(2008)(11407, tmp2.paths);
+        const tmp10 = tmp(2008)(11412, tmp2.paths);
         obj1[1] = DISCORD_EPOCHDefault.castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1[2] = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj1);
@@ -307,7 +307,7 @@ obj[5] = function onTapInlineCode(nativeEvent) {
   }
 };
 obj[6] = function onTapEmoji(emojiNode) {
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9185, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9189, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 let result = require("set").fileFinishedImporting("components_native/chat/contentHandlers.tsx");
 

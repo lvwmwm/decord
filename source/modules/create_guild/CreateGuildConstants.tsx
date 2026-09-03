@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12481
+// Function ID: 12482
 // Name: GuildTemplateId
 // Dependencies: [673, 1233, 4125, 503, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 12469 (GuildTemplateId)
+// Module 12481 (GuildTemplateId)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 503 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

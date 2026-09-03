@@ -1,13 +1,13 @@
-// Module ID: 15938
-// Function ID: 15939
+// Module ID: 15954
+// Function ID: 15955
 // Name: SubscriptionGatedChannelIcon
-// Dependencies: [19, 21, 1296, 9153, 2]
+// Dependencies: [19, 21, 1296, 9157, 2]
 // Exports: default
 
-// Module 15938 (SubscriptionGatedChannelIcon)
+// Module 15954 (SubscriptionGatedChannelIcon)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
-import registerAssetDefault from "registerAsset" /* 9153 */;
+import registerAssetDefault from "registerAsset" /* 9157 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,19 +1,19 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15194
+// Function ID: 15195
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [673, 15180, 1372, 11288, 1233, 3502, 15182, 11762, 15184, 15233, 2]
+// Dependencies: [673, 15195, 1372, 11292, 1233, 3502, 15197, 11768, 15199, 15248, 2]
 
-// Module 15179 (dismissiblePremiumNewBadgeRouteProps)
+// Module 15194 (dismissiblePremiumNewBadgeRouteProps)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import messagesProxyDefault from "messagesProxy" /* 3502 */;
-import apexExperiment from "apexExperiment" /* 11762 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 15182 */;
-import SettingsBadgeType from "SettingsBadgeType" /* 15233 */;
-import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps" /* 15180 */;
-import createToggle from "createToggle" /* 11288 */;
+import apexExperiment from "apexExperiment" /* 11768 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 15197 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 15248 */;
+import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps" /* 15195 */;
+import createToggle from "createToggle" /* 11292 */;
 
 const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRouteProps.createDismissiblePremiumNewBadgeRouteProps(DismissibleContent.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
 ({ useTrailing, usePreNavigationAction } = dismissiblePremiumNewBadgeRouteProps);
@@ -34,7 +34,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(15184) /* CustomTypingIndicatorEditScreen */.default;
+    return require(15199) /* CustomTypingIndicatorEditScreen */.default;
   },
   usePersistentBadge() {
     return { badgeType: SettingsBadgeType.SettingsBadgeType.BETA };

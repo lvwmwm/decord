@@ -1,9 +1,9 @@
-// Module ID: 13126
-// Function ID: 13127
+// Module ID: 13138
+// Function ID: 13139
 // Name: getCoverImageURL
 // Dependencies: [1400, 586, 706, 2]
 
-// Module 13126 (getCoverImageURL)
+// Module 13138 (getCoverImageURL)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import privDefault from "priv" /* 1400 */;

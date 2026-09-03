@@ -1,10 +1,10 @@
-// Module ID: 7807
-// Function ID: 7808
+// Module ID: 7810
+// Function ID: 7811
 // Name: refObjectUnionAsProp
 // Dependencies: [2]
 // Exports: default
 
-// Module 7807 (refObjectUnionAsProp)
+// Module 7810 (refObjectUnionAsProp)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/typescript/refObjectUnionAsProp.tsx");

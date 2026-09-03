@@ -1,14 +1,14 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16736
+// Function ID: 16737
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4478, 16714, 709, 5076, 4474, 1233, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 16734, 709, 5077, 4474, 1233, 2]
 // Exports: default
 
-// Module 16716 (RestrictedBlockedMessageGroup)
+// Module 16736 (RestrictedBlockedMessageGroup)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
+import PressableBase from "PressableBase" /* 5077 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

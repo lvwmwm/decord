@@ -1,13 +1,13 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11869
+// Function ID: 11870
 // Name: getSearchResults
-// Dependencies: [11864, 1400, 586, 706, 2]
+// Dependencies: [11870, 1400, 586, 706, 2]
 
-// Module 11863 (getSearchResults)
+// Module 11869 (getSearchResults)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import privDefault from "priv" /* 1400 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 11864 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 11870 */;
 
 require = arg1;
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };

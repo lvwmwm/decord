@@ -1,13 +1,13 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9885
+// Function ID: 9886
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [1386, 4554, 9863, 586, 2]
+// Dependencies: [1386, 4554, 9867, 586, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 9881 (useIsSecureFramesUIEnabled)
+// Module 9885 (useIsSecureFramesUIEnabled)
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "createRTCConnection" /* 4554 */;
-import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9863 */;
+import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9867 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");

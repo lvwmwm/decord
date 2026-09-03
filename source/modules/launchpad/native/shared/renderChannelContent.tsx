@@ -1,19 +1,19 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 16818
+// Function ID: 16819
 // Name: ChannelContent
-// Dependencies: [19, 17, 10223, 4702, 21, 4478, 1234, 16793, 5015, 16799, 4474, 5048, 8751, 15938, 2]
+// Dependencies: [19, 17, 10227, 4703, 21, 4478, 1234, 16813, 5016, 16819, 4474, 5049, 8755, 15954, 2]
 // Exports: default
 
-// Module 16798 (ChannelContent)
+// Module 16818 (ChannelContent)
 import Text from "Text" /* 4474 */;
-import LockIcon from "LockIcon" /* 5048 */;
-import WarningIcon from "WarningIcon" /* 8751 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16793 */;
-import _modDef16799 from "module_16799" /* 16799 */;
+import LockIcon from "LockIcon" /* 5049 */;
+import WarningIcon from "WarningIcon" /* 8755 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16813 */;
+import _modDef16819 from "module_16819" /* 16819 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10223 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10227 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import set from "set" /* 1234 */;
@@ -26,7 +26,7 @@ function ChannelContent(arg0) {
   let tmp9Result = null != channel;
   if (tmp9Result) {
     if (!locked) {
-      locked = tmp2(5015)(channel);
+      locked = tmp2(5016)(channel);
     }
     tmp9Result = locked;
   }
@@ -60,7 +60,7 @@ function ChannelContent(arg0) {
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(_modDef16799, obj3), , ];
+  const items1 = [closure_7(_modDef16819, obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
@@ -102,7 +102,7 @@ function ChannelContent(arg0) {
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15938), obj9);
+      isSubscriptionGated = tmp9(tmp2(15954), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;

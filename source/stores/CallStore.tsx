@@ -1,9 +1,9 @@
-// Module ID: 5230
-// Function ID: 5231
+// Module ID: 5231
+// Function ID: 5232
 // Name: callConnect
 // Dependencies: [1386, 1980, 4299, 673, 706, 527, 12, 586, 2]
 
-// Module 5230 (callConnect)
+// Module 5231 (callConnect)
 import applyDefault from "apply" /* 12 */;
 import sendRequest from "sendRequest" /* 527 */;
 import initializeDefault from "initialize" /* 586 */;

@@ -1,10 +1,10 @@
-// Module ID: 12248
-// Function ID: 12249
-// Dependencies: [19, 17, 21, 4478, 709, 12236, 1233, 4190, 2]
+// Module ID: 12260
+// Function ID: 12261
+// Dependencies: [19, 17, 21, 4478, 709, 12248, 1233, 4190, 2]
 
-// Module 12248
+// Module 12260
 import ThemesDefault from "Themes" /* 709 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12236 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12248 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

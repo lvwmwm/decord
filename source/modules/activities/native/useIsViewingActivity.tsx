@@ -1,12 +1,12 @@
-// Module ID: 9555
-// Function ID: 9556
+// Module ID: 9559
+// Function ID: 9560
 // Name: useIsViewingActivity
-// Dependencies: [4494, 9542, 4332, 9539, 586, 2]
+// Dependencies: [4494, 9546, 4332, 9543, 586, 2]
 // Exports: useIsViewingActivity
 
-// Module 9555 (useIsViewingActivity)
-import ChannelCallCameraPreviewDefault from "ChannelCallCameraPreview" /* 9539 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9542 */;
+// Module 9559 (useIsViewingActivity)
+import ChannelCallCameraPreviewDefault from "ChannelCallCameraPreview" /* 9543 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9546 */;
 import closure_3 from "getParticipants" /* 4494 */;
 
 const require = arg1;

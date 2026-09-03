@@ -1,13 +1,13 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8020
+// Function ID: 8021
 // Name: XNeutralIcon
-// Dependencies: [19, 21, 4196, 8018, 2]
+// Dependencies: [19, 21, 4196, 8021, 2]
 // Exports: XNeutralIcon
 
-// Module 8017 (XNeutralIcon)
+// Module 8020 (XNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8018 */;
+import registerAsset from "registerAsset" /* 8021 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

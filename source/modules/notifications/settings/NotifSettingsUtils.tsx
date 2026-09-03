@@ -1,13 +1,13 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13570
+// Function ID: 13571
 // Name: b64ToDeclarativeSettingsProto
-// Dependencies: [13556, 1341, 13557, 586, 2]
+// Dependencies: [13571, 1341, 13572, 586, 2]
 // Exports: b64ToDeclarativeSettingsProto, useNotifSettingRadioValue, useNotifSettingToggleValue, useNotifSettingValue
 
-// Module 13555 (b64ToDeclarativeSettingsProto)
+// Module 13570 (b64ToDeclarativeSettingsProto)
 import b64ToProto from "b64ToProto" /* 1341 */;
-import create from "create" /* 13557 */;
-import closure_2 from "initialize" /* 13556 */;
+import create from "create" /* 13572 */;
+import closure_2 from "initialize" /* 13571 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");

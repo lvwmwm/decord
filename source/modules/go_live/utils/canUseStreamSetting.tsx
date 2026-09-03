@@ -1,10 +1,10 @@
-// Module ID: 10070
-// Function ID: 10071
+// Module ID: 10074
+// Function ID: 10075
 // Name: canUseStreamSetting
 // Dependencies: [1923, 4139, 4369, 2]
 // Exports: default
 
-// Module 10070 (canUseStreamSetting)
+// Module 10074 (canUseStreamSetting)
 import set from "set" /* 2 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;

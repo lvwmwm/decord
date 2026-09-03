@@ -1,12 +1,12 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16741
+// Function ID: 16742
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7893, 21, 1233, 1470, 4139, 11288, 14564, 2]
+// Dependencies: [19, 7896, 21, 1233, 1470, 15756, 4139, 11292, 14579, 2]
 // Exports: default
 
-// Module 16721 (SettingsOverviewScreen)
+// Module 16741 (SettingsOverviewScreen)
 import closure_2 from "noop" /* 19 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ export default function SettingsOverviewScreen() {
   hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4139).useHasPremiumSubscriptionToDisplay();
   let items = [hasPremiumSubscriptionToDisplay];
   const node = React.useMemo(() => {
-    let obj = hasPremiumSubscriptionToDisplay(closure_1_1[6]);
+    let obj = hasPremiumSubscriptionToDisplay(closure_1_1[7]);
     obj = { label: null, settings: null };
     const intl = hasPremiumSubscriptionToDisplay(closure_1_1[3]).intl;
     obj[0] = intl.string(hasPremiumSubscriptionToDisplay(closure_1_1[3]).t.C6COaT);
@@ -45,8 +45,10 @@ export default function SettingsOverviewScreen() {
     const obj2 = { label: null, settings: null };
     const intl3 = tmp(tmp2[3]).intl;
     obj2[0] = intl3.string(hasPremiumSubscriptionToDisplay(closure_1_1[3]).t.f2n1TP);
-    const items3 = [, , , , , , , , , ];
-    ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7], APP_ICONS: arr4[8], ADVANCED: arr4[9] } = closure_1_3);
+    const items3 = [, , , , , , , , , , ];
+    ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7] } = closure_1_3);
+    items3[8] = hasPremiumSubscriptionToDisplay(closure_1_1[5]).MobileNotifSettings.NOTIFICATIONS_REDESIGN;
+    ({ APP_ICONS: arr4[9], ADVANCED: arr4[10] } = closure_1_3);
     obj2[1] = items3.filter(hasPremiumSubscriptionToDisplay(closure_1_1[4]).isNotNullish);
     items1[2] = obj2;
     const obj3 = { label: null, settings: null };
@@ -87,5 +89,5 @@ export default function SettingsOverviewScreen() {
     obj1[0] = items1;
     return obj.createList(obj1);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14564).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(14579).SearchableSettingsList, { node });
 };

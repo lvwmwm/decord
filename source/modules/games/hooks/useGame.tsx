@@ -1,10 +1,10 @@
-// Module ID: 6162
-// Function ID: 6163
+// Module ID: 6163
+// Function ID: 6164
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4502, 673, 586, 684, 6163, 2]
+// Dependencies: [5, 19, 4502, 673, 586, 684, 6164, 2]
 // Exports: useGames
 
-// Module 6162 (importDefaultResult1)
+// Module 6163 (importDefaultResult1)
 import setDefault from "set" /* 684 */;
 import closure_3 from "noop" /* 19 */;
 import importDefaultResult1 from "handleLoadMessages" /* 4502 */;

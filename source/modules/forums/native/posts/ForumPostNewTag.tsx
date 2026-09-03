@@ -1,10 +1,10 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11816
+// Function ID: 11817
 // Name: ForumPostNewTag
 // Dependencies: [19, 21, 4478, 709, 1296, 2]
 // Exports: default
 
-// Module 11810 (ForumPostNewTag)
+// Module 11816 (ForumPostNewTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;

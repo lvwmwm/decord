@@ -1,15 +1,15 @@
-// Module ID: 7675
-// Function ID: 7676
+// Module ID: 7678
+// Function ID: 7679
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 673, 21, 4478, 4947, 1233, 4190, 7676, 4474, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 4948, 1233, 4190, 7679, 4474, 2]
 // Exports: default
 
-// Module 7675 (MemberVerificationAlertUpdate)
+// Module 7678 (MemberVerificationAlertUpdate)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import componentDidMountDefault from "componentDidMount" /* 4947 */;
-import registerAssetDefault from "registerAsset" /* 7676 */;
+import componentDidMountDefault from "componentDidMount" /* 4948 */;
+import registerAssetDefault from "registerAsset" /* 7679 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { DownloadLinks } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

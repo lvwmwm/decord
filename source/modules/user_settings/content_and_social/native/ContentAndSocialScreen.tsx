@@ -1,18 +1,18 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15709
+// Function ID: 15710
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 7893, 673, 21, 4478, 709, 1233, 1994, 15696, 12442, 15699, 6154, 11288, 14644, 14563, 15700, 4474, 2]
+// Dependencies: [32, 19, 17, 7896, 673, 21, 4478, 709, 1233, 1994, 15710, 12454, 15713, 6155, 11292, 14659, 14578, 15714, 4474, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15695 (ContentAndSocialSettings)
+// Module 15709 (ContentAndSocialSettings)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15700 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15714 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -212,7 +212,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(14563), obj);
+    tmp7 = callback2(tmp2(14578), obj);
   }
   return tmp7;
 };

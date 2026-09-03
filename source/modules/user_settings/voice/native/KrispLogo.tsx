@@ -1,10 +1,10 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 10106
+// Function ID: 10107
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1301, 673, 21, 1994, 695, 1233, 4190, 586, 1362, 10103, 10104, 4474, 2]
+// Dependencies: [19, 17, 1301, 673, 21, 1994, 695, 1233, 4190, 586, 1362, 10107, 10108, 4474, 2]
 // Exports: default
 
-// Module 10102 (handleKrispLinkPressed)
+// Module 10106 (handleKrispLinkPressed)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
@@ -45,9 +45,9 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   obj1 = AccessibilityAnnouncer;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10103);
+    let tmp4Result = tmp4(10107);
   } else {
-    tmp4Result = tmp4(10104);
+    tmp4Result = tmp4(10108);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

@@ -1,13 +1,13 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9127
+// Function ID: 9128
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5409, 702, 1369, 2]
+// Dependencies: [32, 19, 5410, 702, 1369, 2]
 // Exports: default
 
-// Module 9123 (useEmojiPickerSearchState)
+// Module 9127 (useEmojiPickerSearchState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5409 */;
+import closure_4 from "getEmojiToGroupId" /* 5410 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");

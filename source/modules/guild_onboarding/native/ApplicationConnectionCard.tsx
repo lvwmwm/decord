@@ -1,10 +1,10 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 5961
+// Function ID: 5962
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 4519, 673, 21, 586, 5961, 5962, 1233, 5964, 5971, 695, 4700, 5976, 2]
+// Dependencies: [19, 4519, 673, 21, 586, 5962, 5963, 1233, 5965, 5972, 695, 4701, 5977, 2]
 // Exports: default
 
-// Module 5960 (ApplicationConnectionCard)
+// Module 5961 (ApplicationConnectionCard)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addApplication" /* 4519 */;
 import { AnalyticEvents } from "ME" /* 673 */;

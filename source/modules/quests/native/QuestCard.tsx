@@ -1,9 +1,9 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14932
+// Function ID: 14933
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1921, 7458, 5395, 502, 21, 709, 4478, 1349, 4326, 5398, 7464, 11564, 11303, 1492, 11142, 14918, 8113, 7356, 7361, 7483, 586, 11147, 7479, 7453, 11152, 4413, 8505, 4197, 14945, 11306, 9012, 9013, 9017, 7456, 11316, 4445, 14947, 2008, 11565, 7306, 1233, 11557, 11333, 14951, 11133, 11149, 11150, 4935, 9102, 8827, 1234, 10974, 4474, 14952, 5609, 14991, 5501, 4940, 688, 14977, 4926, 7683, 14958, 11560, 14992, 4928, 14995, 8015, 9422, 14978, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 7459, 5396, 502, 21, 709, 4478, 1349, 4326, 5399, 7465, 11569, 11307, 1492, 11146, 14933, 8116, 7357, 7362, 7484, 586, 11151, 7480, 7454, 11156, 4413, 8509, 4197, 14960, 11310, 9016, 9017, 9021, 7457, 11320, 4445, 14962, 2008, 11570, 7307, 1233, 11562, 11337, 14966, 11137, 11153, 11154, 4936, 9106, 8831, 1234, 10978, 4474, 14967, 5610, 15006, 5502, 4941, 688, 14992, 4927, 7686, 14973, 11565, 15007, 4929, 15010, 8018, 9426, 14993, 2]
 
-// Module 14917 (ESTIMATED_CARD_HEIGHT)
+// Module 14932 (ESTIMATED_CARD_HEIGHT)
 import ThemesDefault from "Themes" /* 709 */;
 import _mod1349 from "module_1349" /* 1349 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
@@ -12,8 +12,8 @@ import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "initializeState" /* 7458 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5395 */;
+import closure_9 from "initializeState" /* 7459 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5396 */;
 import { NOOP } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -506,12 +506,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 closure_0 = tmp2;
                 closure_1_5.log("Enrolling in quest");
-                closure_1_0(11133);
+                closure_1_0(11137);
                 obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!closure_1_20) {
                   if (!closure_1_14) {
-                    let START_QUEST = tmp31(7483).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7484).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = closure_1_4;
@@ -519,7 +519,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7483).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7484).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -535,7 +535,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = closure_4;
-                  v0(14951)(obj);
+                  v0(14966)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

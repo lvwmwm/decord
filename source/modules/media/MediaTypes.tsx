@@ -1,10 +1,10 @@
-// Module ID: 4744
-// Function ID: 4745
+// Module ID: 4745
+// Function ID: 4746
 // Name: messageAttachmentToUnfurledMediaItem
 // Dependencies: [673, 1398, 1954, 4671, 1485, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4744 (messageAttachmentToUnfurledMediaItem)
+// Module 4745 (messageAttachmentToUnfurledMediaItem)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import hasFlag from "hasFlag" /* 1398 */;

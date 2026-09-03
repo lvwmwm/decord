@@ -1,12 +1,12 @@
-// Module ID: 10393
-// Function ID: 10394
+// Module ID: 10397
+// Function ID: 10398
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4478, 10383, 709, 1890, 4445, 10394, 2008, 1233, 5076, 5501, 2]
+// Dependencies: [19, 17, 21, 4478, 10387, 709, 1890, 4445, 10398, 2008, 1233, 5077, 5502, 2]
 // Exports: default
 
-// Module 10393 (GIFPickerItemView)
+// Module 10397 (GIFPickerItemView)
 import ThemesDefault from "Themes" /* 709 */;
-import transformFavoriteGifUrl from "transformFavoriteGifUrl" /* 10383 */;
+import transformFavoriteGifUrl from "transformFavoriteGifUrl" /* 10387 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

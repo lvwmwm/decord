@@ -1,14 +1,14 @@
-// Module ID: 12695
-// Function ID: 12696
+// Module ID: 12707
+// Function ID: 12708
 // Name: useUserProfileActivity
-// Dependencies: [19, 9432, 4529, 4569, 4542, 586, 9255, 12696, 8053, 8627, 8623, 2]
+// Dependencies: [19, 9436, 4529, 4569, 4542, 586, 9259, 12708, 8056, 8631, 8627, 2]
 // Exports: default
 
-// Module 12695 (useUserProfileActivity)
+// Module 12707 (useUserProfileActivity)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
-import closure_4 from "map" /* 9432 */;
+import closure_4 from "map" /* 9436 */;
 import closure_5 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_6 from "sortActivity" /* 4569 */;
 

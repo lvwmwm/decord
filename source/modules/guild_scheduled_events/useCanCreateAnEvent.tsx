@@ -1,10 +1,10 @@
-// Module ID: 9655
-// Function ID: 9656
+// Module ID: 9659
+// Function ID: 9660
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 1981, 1908, 4120, 673, 586, 9653, 2]
+// Dependencies: [32, 1981, 1908, 4120, 673, 586, 9657, 2]
 // Exports: default
 
-// Module 9655 (useCanCreateAnEvent)
+// Module 9659 (useCanCreateAnEvent)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "comparator" /* 1981 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;

@@ -1,10 +1,10 @@
-// Module ID: 7576
-// Function ID: 7577
+// Module ID: 7577
+// Function ID: 7578
 // Name: replaceAnimationColors
 // Dependencies: [4326, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 7576 (replaceAnimationColors)
+// Module 7577 (replaceAnimationColors)
 import set from "set" /* 2 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import apply from "apply" /* 12 */;

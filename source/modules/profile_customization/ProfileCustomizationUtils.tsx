@@ -1,16 +1,16 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8087
+// Function ID: 8088
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8078, 7375, 1991, 586, 1362, 1233, 2]
+// Dependencies: [19, 8081, 7376, 1991, 586, 1362, 1233, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8084 (useAvatarsWithGuilds)
+// Module 8087 (useAvatarsWithGuilds)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer4 from "AccessibilityAnnouncer" /* 1362 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleFormOpen" /* 8078 */;
-import closure_4 from "createUserWidgetFromServer" /* 7375 */;
+import closure_3 from "handleFormOpen" /* 8081 */;
+import closure_4 from "createUserWidgetFromServer" /* 7376 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 
 require = arg1;

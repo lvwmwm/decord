@@ -1,14 +1,14 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7221
+// Function ID: 7222
 // Name: isClickstreamEnabled
-// Dependencies: [32, 1215, 4554, 11, 7221, 695, 7222, 2]
+// Dependencies: [32, 1215, 4554, 11, 7222, 695, 7223, 2]
 // Exports: trackClickstream
 
-// Module 7220 (isClickstreamEnabled)
+// Module 7221 (isClickstreamEnabled)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7221 */;
-import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7222 */;
+import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7222 */;
+import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7223 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "createRTCConnection" /* 4554 */;

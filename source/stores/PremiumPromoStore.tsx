@@ -1,9 +1,9 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13644
+// Function ID: 13645
 // Name: initialize
 // Dependencies: [1215, 4130, 684, 11, 586, 706, 2]
 
-// Module 13629 (initialize)
+// Module 13644 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;

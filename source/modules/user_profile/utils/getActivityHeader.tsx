@@ -1,15 +1,15 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9429
+// Function ID: 9430
 // Name: getActivityHeader
-// Dependencies: [673, 9426, 9427, 1233, 9429, 9430, 9270, 2]
+// Dependencies: [673, 9430, 9431, 1233, 9433, 9434, 9274, 2]
 // Exports: default
 
-// Module 9425 (getActivityHeader)
+// Module 9429 (getActivityHeader)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import unpackStageChannelParty from "unpackStageChannelParty" /* 9270 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 9426 */;
-import PlatformTypesDefault from "PlatformTypes" /* 9427 */;
+import unpackStageChannelParty from "unpackStageChannelParty" /* 9274 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 9430 */;
+import PlatformTypesDefault from "PlatformTypes" /* 9431 */;
 import ME from "ME" /* 673 */;
 
 ({ ActivityTypes: c3, PlatformTypes: c4 } = ME);
@@ -167,7 +167,7 @@ export default function getActivityHeader(session_id) {
       obj11[2] = str;
       return obj11;
     }
-    tmp35 = tmp(9430)(tmp3, session_id);
+    tmp35 = tmp(9434)(tmp3, session_id);
   }
   if (session_id.type === constants.PLAYING) {
     const obj13 = { text: null, platformIcon: null, platformLabel: null };

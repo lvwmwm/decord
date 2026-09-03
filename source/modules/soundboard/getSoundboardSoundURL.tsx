@@ -1,10 +1,10 @@
-// Module ID: 14418
-// Function ID: 14419
+// Module ID: 14434
+// Function ID: 14435
 // Name: getSoundboardSoundURL
 // Dependencies: [673, 2]
 // Exports: default
 
-// Module 14418 (getSoundboardSoundURL)
+// Module 14434 (getSoundboardSoundURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

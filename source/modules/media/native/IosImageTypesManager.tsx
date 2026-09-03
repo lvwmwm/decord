@@ -1,9 +1,9 @@
-// Module ID: 5112
-// Function ID: 5113
+// Module ID: 5113
+// Function ID: 5114
 // Name: _initialize
 // Dependencies: [32, 17, 3, 4662, 2]
 
-// Module 5112 (_initialize)
+// Module 5113 (_initialize)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 4662 */;
 import closure_0 from "_slicedToArray" /* 32 */;

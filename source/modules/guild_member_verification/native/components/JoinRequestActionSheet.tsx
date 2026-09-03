@@ -1,9 +1,9 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16417
+// Function ID: 16418
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4470, 1934, 1921, 673, 21, 4478, 586, 8122, 8088, 4217, 8541, 4413, 5983, 4197, 709, 685, 8128, 7671, 1978, 8123, 5630, 1296, 8925, 1233, 4204, 5632, 16399, 5945, 2]
+// Dependencies: [19, 17, 4470, 1934, 1921, 673, 21, 4478, 586, 8125, 8091, 4217, 8545, 4413, 5984, 4197, 709, 685, 8131, 7674, 1978, 8126, 5631, 1296, 8929, 1233, 4204, 5633, 16418, 5946, 2]
 
-// Module 16398 (JoinRequestActionSheet)
+// Module 16417 (JoinRequestActionSheet)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

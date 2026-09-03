@@ -1,10 +1,10 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16089
+// Function ID: 16090
 // Name: items
-// Dependencies: [1429, 1908, 1921, 673, 586, 6115, 2]
+// Dependencies: [1429, 1908, 1921, 673, 586, 6116, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 16073 (items)
+// Module 16089 (items)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
@@ -49,9 +49,9 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = guild(6115).getGuildRoleSubscriptionSettingsVisibility(guild);
-      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(6115).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
-      const obj = guild(6115);
+      const guildRoleSubscriptionSettingsVisibility = guild(6116).getGuildRoleSubscriptionSettingsVisibility(guild);
+      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(6116).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+      const obj = guild(6116);
       const tmp7 = isGuildOwner(guild, currentUser);
       if (tmp5) {
         tmp5 = tmp7;

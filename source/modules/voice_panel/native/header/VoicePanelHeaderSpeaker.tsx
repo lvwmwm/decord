@@ -1,16 +1,16 @@
-// Module ID: 16934
-// Function ID: 16935
-// Dependencies: [109, 19, 17, 16935, 4495, 16936, 9797, 1386, 4496, 673, 21, 16938, 16911, 9796, 9916, 9663, 644, 9914, 9897, 16942, 1234, 9825, 9798, 1233, 9822, 9824, 16943, 9898, 4298, 1372, 6014, 16851, 13999, 2]
+// Module ID: 16954
+// Function ID: 16955
+// Dependencies: [109, 19, 17, 16955, 4495, 16956, 9801, 1386, 4496, 673, 21, 16958, 16931, 9800, 9920, 9667, 644, 9918, 9901, 16962, 1234, 9829, 9802, 1233, 9826, 9828, 16963, 9902, 4298, 1372, 6015, 16871, 14015, 2]
 
-// Module 16934
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16938 */;
+// Module 16954
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16958 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 16935 */;
+import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 16955 */;
 import closure_8 from "set" /* 4495 */;
-import closure_9 from "handleAudioRouteChanged" /* 16936 */;
-import closure_10 from "handleAudioRouteChanged" /* 9797 */;
+import closure_9 from "handleAudioRouteChanged" /* 16956 */;
+import closure_10 from "handleAudioRouteChanged" /* 9801 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
 import closure_12 from "handleUpdate" /* 4496 */;
 import { PlatformTypes } from "ME" /* 673 */;
@@ -217,7 +217,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        let obj = { onPress: null, ref: "r" };
+        let obj = { onPress: null, ref: "Array" };
         obj[0] = closure_15;
         tmp = obj;
       }

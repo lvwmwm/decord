@@ -1,16 +1,16 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 14978
+// Function ID: 14979
 // Name: SimpleMuxWrapper
-// Dependencies: [2, 14964, 14968, 14966, 14969, 14965, 14970]
+// Dependencies: [2, 14979, 14983, 14981, 14984, 14980, 14985]
 
-// Module 14963 (SimpleMuxWrapper)
+// Module 14978 (SimpleMuxWrapper)
 import set from "set" /* 2 */;
-import logger from "logger" /* 14964 */;
-import generateSessionId from "generateSessionId" /* 14965 */;
-import mapDiscordToMuxMetadata from "mapDiscordToMuxMetadata" /* 14966 */;
-import logger2 from "logger" /* 14968 */;
-import logger3 from "logger" /* 14969 */;
-import getVideoQoEMetricsConfig from "getVideoQoEMetricsConfig" /* 14970 */;
+import logger from "logger" /* 14979 */;
+import generateSessionId from "generateSessionId" /* 14980 */;
+import mapDiscordToMuxMetadata from "mapDiscordToMuxMetadata" /* 14981 */;
+import logger2 from "logger" /* 14983 */;
+import logger3 from "logger" /* 14984 */;
+import getVideoQoEMetricsConfig from "getVideoQoEMetricsConfig" /* 14985 */;
 
 const result = set.fileFinishedImporting("modules/video-qoe/index.tsx");
 

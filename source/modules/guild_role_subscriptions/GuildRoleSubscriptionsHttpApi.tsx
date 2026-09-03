@@ -1,10 +1,10 @@
-// Module ID: 6111
-// Function ID: 6112
+// Module ID: 6112
+// Function ID: 6113
 // Name: _updateGuildRoleSubscriptionGroupListing
 // Dependencies: [5, 673, 502, 527, 4376, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 6111 (_updateGuildRoleSubscriptionGroupListing)
+// Module 6112 (_updateGuildRoleSubscriptionGroupListing)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 import { PriceTierTypes } from "sum" /* 502 */;

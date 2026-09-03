@@ -1,10 +1,10 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 16627
+// Function ID: 16628
 // Name: result
 // Dependencies: [684, 1467, 2]
 // Exports: useMobileReferralSubscriberProfileEntrypointButtonConfig
 
-// Module 16607 (result)
+// Module 16627 (result)
 import setDefault from "set" /* 684 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

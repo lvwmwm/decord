@@ -1,9 +1,9 @@
-// Module ID: 13696
-// Function ID: 13697
+// Module ID: 13711
+// Function ID: 13712
 // Name: _initStats
 // Dependencies: [4574, 673, 4558, 2]
 
-// Module 13696 (_initStats)
+// Module 13711 (_initStats)
 import sleep from "sleep" /* 4558 */;
 import closure_2 from "handleConnectionInfoChange" /* 4574 */;
 import ME from "ME" /* 673 */;

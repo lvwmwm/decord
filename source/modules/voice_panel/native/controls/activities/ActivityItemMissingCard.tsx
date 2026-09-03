@@ -1,11 +1,11 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16982
+// Function ID: 16983
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 19, 17, 21, 4478, 709, 12062, 5961, 9527, 9634, 5076, 16963, 16964, 6014, 2]
+// Dependencies: [5, 19, 17, 21, 4478, 709, 12068, 5962, 9531, 9638, 5077, 16983, 16984, 6015, 2]
 
-// Module 16962 (ActivityItemEmptyCard)
+// Module 16982 (ActivityItemEmptyCard)
 import ThemesDefault from "Themes" /* 709 */;
-import setDefault from "set" /* 6014 */;
+import setDefault from "set" /* 6015 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13726
+// Function ID: 13727
 // Name: HdrCaptureMode
 // Dependencies: [1467, 2]
 // Exports: getGoLiveHdrConfig
 
-// Module 13711 (HdrCaptureMode)
+// Module 13726 (HdrCaptureMode)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

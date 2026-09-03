@@ -1,14 +1,14 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7893
+// Function ID: 7894
 // Name: DoubleTapErrorToastIcon
-// Dependencies: [19, 17, 1924, 21, 4478, 709, 7891, 4194, 4474, 1233, 2]
+// Dependencies: [19, 17, 1924, 21, 4478, 709, 7894, 4194, 4474, 1233, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7890 (DoubleTapErrorToastIcon)
+// Module 7893 (DoubleTapErrorToastIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 7891 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 7894 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EmojiDisabledReasons } from "set" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;

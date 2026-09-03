@@ -1,10 +1,10 @@
-// Module ID: 4944
-// Function ID: 4945
+// Module ID: 4945
+// Function ID: 4946
 // Name: EllipsisCircle
-// Dependencies: [19, 21, 4217, 4478, 709, 4479, 4934, 4945, 2]
+// Dependencies: [19, 21, 4217, 4478, 709, 4479, 4935, 4946, 2]
 // Exports: Ellipsis
 
-// Module 4944 (EllipsisCircle)
+// Module 4945 (EllipsisCircle)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import _mod4217 from "module_4217" /* 4217 */;

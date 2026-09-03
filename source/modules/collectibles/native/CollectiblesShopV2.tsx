@@ -1,18 +1,18 @@
-// Module ID: 15635
-// Function ID: 15636
+// Module ID: 15649
+// Function ID: 15650
 // Name: CollectiblesShopInternal
-// Dependencies: [32, 19, 17, 4477, 1301, 1921, 7296, 675, 673, 21, 4478, 5981, 13293, 15636, 586, 5949, 511, 8092, 15637, 1234, 7307, 8230, 8906, 10678, 1362, 5961, 1498, 10965, 4152, 15639, 695, 7344, 8123, 15640, 15642, 15665, 1205, 8905, 10815, 15668, 15669, 15645, 15670, 7357, 2]
+// Dependencies: [32, 19, 17, 4477, 1301, 1921, 7297, 675, 673, 21, 4478, 5982, 13305, 15650, 586, 5950, 511, 8095, 15651, 1234, 7308, 8234, 8910, 10682, 1362, 5962, 1498, 10969, 4152, 15653, 695, 7345, 8126, 15654, 15656, 15679, 1205, 8909, 10819, 15682, 15683, 15659, 15684, 7358, 2]
 
-// Module 15635 (CollectiblesShopInternal)
+// Module 15649 (CollectiblesShopInternal)
 import _modDef1205 from "module_1205" /* 1205 */;
-import notSupportedDefault from "notSupported" /* 8230 */;
+import notSupportedDefault from "notSupported" /* 8234 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "getUserAgnosticState" /* 4477 */;
 import closure_8 from "handleThemeChange" /* 1301 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "updateCategoriesAndProducts" /* 7296 */;
+import closure_10 from "updateCategoriesAndProducts" /* 7297 */;
 import items from "items" /* 675 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

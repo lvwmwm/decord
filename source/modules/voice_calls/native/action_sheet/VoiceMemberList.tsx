@@ -1,13 +1,13 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13676
+// Function ID: 13677
 // Name: ItemSeparator
-// Dependencies: [32, 5, 19, 17, 1385, 1934, 4500, 4120, 1921, 4555, 673, 1300, 5631, 502, 21, 4478, 13657, 10050, 586, 8372, 13345, 1233, 10136, 4332, 9931, 4474, 9183, 5961, 1890, 5363, 9463, 4727, 13662, 13663, 1492, 13670, 12, 4445, 8911, 4204, 13671, 7804, 2]
+// Dependencies: [32, 5, 19, 17, 1385, 1934, 4500, 4120, 1921, 4555, 673, 1300, 5632, 502, 21, 4478, 13672, 10054, 586, 8376, 13360, 1233, 10140, 4332, 9935, 4474, 9187, 5962, 1890, 5364, 9467, 4728, 13677, 13678, 1492, 13685, 12, 4445, 8915, 4204, 13686, 7807, 2]
 
-// Module 13661 (ItemSeparator)
+// Module 13676 (ItemSeparator)
 import Text from "Text" /* 4474 */;
-import Form from "Form" /* 8372 */;
-import registerAssetDefault from "registerAsset" /* 10136 */;
-import _modDef13657 from "module_13657" /* 13657 */;
+import Form from "Form" /* 8376 */;
+import registerAssetDefault from "registerAsset" /* 10140 */;
+import _modDef13672 from "module_13672" /* 13672 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
@@ -20,7 +20,7 @@ import closure_13 from "mergeGuildAvatar" /* 1921 */;
 import closure_14 from "getVoiceStatesForGuild" /* 4555 */;
 import ME from "ME" /* 673 */;
 import { FORM_ROW_VERTICAL_PADDING } from "semanticColor" /* 1300 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -189,7 +189,7 @@ function VoiceSectionRow(arg0) {
 ({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 let closure_24 = createCacheKey.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(_modDef13657, { channel: channel.channel }));
+let closure_25 = importAllResult.memo((channel) => callback2(_modDef13672, { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
   channel(586);
@@ -205,8 +205,8 @@ let closure_26 = importAllResult.memo((channel) => {
       const intl = tmp4(1233).intl;
       obj[0] = intl.string(tmp4(1233).t["6Qgrev"]);
       obj[2] = registerAssetDefault;
-      obj[3] = tmp4(13345).CircularIconButton.Sizes.MEDIUM_32;
-      obj[0] = callback2(tmp4(13345).CircularIconButton, obj);
+      obj[3] = tmp4(13360).CircularIconButton.Sizes.MEDIUM_32;
+      obj[0] = callback2(tmp4(13360).CircularIconButton, obj);
       const intl2 = tmp4(1233).intl;
       obj[1] = intl2.string(tmp4(1233).t["6Qgrev"]);
       obj[2] = function onPress() {
@@ -220,7 +220,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = tmp2Result.showInstantInviteActionSheet(tmp, obj);
         }
       };
-      items[1] = callback2(tmp4(8372).FormRow, obj);
+      items[1] = callback2(tmp4(8376).FormRow, obj);
       obj[0] = items;
       tmp7 = callback3(importAllResult.Fragment, obj);
     }

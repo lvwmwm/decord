@@ -1,15 +1,15 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11825
+// Function ID: 11826
 // Name: useNativeForumPostContent
-// Dependencies: [673, 4478, 1233, 6125, 4852, 2]
+// Dependencies: [673, 4478, 1233, 6126, 4853, 2]
 // Exports: default
 
-// Module 11819 (useNativeForumPostContent)
+// Module 11825 (useNativeForumPostContent)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4852 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6125 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4853 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6126 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const MessageFlags = ME.MessageFlags;

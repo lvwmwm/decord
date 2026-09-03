@@ -1,10 +1,10 @@
-// Module ID: 16203
-// Function ID: 16204
-// Dependencies: [19, 4470, 14925, 21, 4197, 709, 15011, 586, 4217, 4927, 8535, 2]
+// Module ID: 16222
+// Function ID: 16223
+// Dependencies: [19, 4470, 14940, 21, 4197, 709, 15026, 586, 4217, 4928, 8539, 2]
 
-// Module 16203
+// Module 16222
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT" /* 14925 */;
+import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT" /* 14940 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -18,7 +18,7 @@ const memoResult = importAllResult.memo(function YouBarNameplate(isQuestRendered
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(4197);
   token = obj.useToken(token(709).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(15011)(token);
+  const tmp4 = token(15026)(token);
   dependencyMap = tmp4;
   obj1 = isQuestRendered(586);
   const items = [closure_3];
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function YouBarNameplate(isQuestRendered
     obj = { borderTopRightRadius: obj.withSpring(value, closure_1_4) };
     return obj;
   };
-  obj = { withSpring: isQuestRendered(4927).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  obj = { withSpring: isQuestRendered(4928).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 17156260157738;
   fn.__initData = closure_6;
@@ -55,7 +55,7 @@ const memoResult = importAllResult.memo(function YouBarNameplate(isQuestRendered
     str = "always";
   }
   obj2[2] = str;
-  obj1[2] = jsx(token(8535), { nameplate, isFocused: true, animate: null });
+  obj1[2] = jsx(token(8539), { nameplate, isFocused: true, animate: null });
   return jsx(token(4217).View, { style: items1, pointerEvents: "none", children: null });
 });
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");

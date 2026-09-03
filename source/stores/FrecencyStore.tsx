@@ -1,9 +1,9 @@
-// Module ID: 5459
-// Function ID: 5460
+// Module ID: 5460
+// Function ID: 5461
 // Name: handleChannelSelect
 // Dependencies: [1339, 1386, 1908, 1980, 4299, 673, 682, 4566, 12, 586, 706, 2]
 
-// Module 5459 (handleChannelSelect)
+// Module 5460 (handleChannelSelect)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

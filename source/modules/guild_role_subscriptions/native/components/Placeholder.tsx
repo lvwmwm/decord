@@ -1,10 +1,10 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17520
+// Function ID: 17521
 // Name: Placeholder
 // Dependencies: [19, 17, 21, 4478, 2]
 // Exports: default
 
-// Module 17500 (Placeholder)
+// Module 17520 (Placeholder)
 import noopAll from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

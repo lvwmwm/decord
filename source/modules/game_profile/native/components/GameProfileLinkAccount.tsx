@@ -1,10 +1,10 @@
-// Module ID: 8874
-// Function ID: 8875
+// Module ID: 8878
+// Function ID: 8879
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 5964, 586, 8827, 4474, 1233, 5501, 1296, 4928, 8875, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 709, 5965, 586, 8831, 4474, 1233, 5502, 1296, 4929, 8879, 2]
 // Exports: default
 
-// Module 8874 (GameProfileLinkAccount)
+// Module 8878 (GameProfileLinkAccount)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -84,7 +84,7 @@ export default function GameProfileLinkAccount(trackAction) {
               items4[2] = tmp13(tmp12, obj7);
               obj4[1] = items4;
               items3[1] = tmp11(tmp12, obj4);
-              const obj8 = { size: null, user: null, guildId: "r" };
+              const obj8 = { size: null, user: null, guildId: "accessible" };
               obj8[0] = tmp5(tmp3[12]).AvatarSizes.LARGE_48;
               obj8[1] = stateFromStores;
               items3[2] = tmp13(tmp5(tmp3[12]).Avatar, obj8);

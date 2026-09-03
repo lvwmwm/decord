@@ -1,10 +1,10 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 16950
+// Function ID: 16951
 // Name: Permissions
 // Dependencies: [4120, 502, 4125, 586, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
 
-// Module 16930 (Permissions)
+// Module 16950 (Permissions)
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import { Permissions } from "sum" /* 502 */;
 

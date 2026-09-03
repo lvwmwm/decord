@@ -1,10 +1,10 @@
-// Module ID: 13272
-// Function ID: 13273
+// Module ID: 13284
+// Function ID: 13285
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
 // Dependencies: [19, 673, 21, 4478, 709, 1233, 1234, 4139, 1994, 4474, 2]
 // Exports: default
 
-// Module 13272 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 13284 (BuyNitroPurchaseButtonLegalDisclaimer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

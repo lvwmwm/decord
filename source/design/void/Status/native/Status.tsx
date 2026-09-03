@@ -1,19 +1,19 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 13987
+// Function ID: 13988
 // Name: Status
-// Dependencies: [32, 19, 17, 1297, 673, 9442, 21, 4478, 13969, 709, 13972, 13973, 13974, 13975, 13976, 13977, 13978, 13970, 13979, 4217, 4927, 13956, 2]
+// Dependencies: [32, 19, 17, 1297, 673, 9446, 21, 4478, 13985, 709, 13988, 13989, 13990, 13991, 13992, 13993, 13994, 13986, 13995, 4217, 4928, 13972, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13971 (Status)
+// Module 13987 (Status)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 13969 */;
-import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13970 */;
+import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 13985 */;
+import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13986 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { STATUS_PADDING } from "STATUS_PADDING" /* 1297 */;
 import { StatusTypes } from "ME" /* 673 */;
-import n from "n" /* 9442 */;
+import n from "n" /* 9446 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -75,23 +75,23 @@ export default function Status(isMobileOnline) {
   obj[0] = items;
   obj = { style: callback2().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(13972);
+    let tmp4Result = tmp4(13988);
   } else if (flag2) {
-    tmp4Result = tmp4(13973);
+    tmp4Result = tmp4(13989);
   } else if (flag) {
-    tmp4Result = tmp4(13974);
+    tmp4Result = tmp4(13990);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13975);
+    tmp4Result = tmp4(13991);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(13976);
+    tmp4Result = tmp4(13992);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13978);
+        tmp4Result = tmp4(13994);
       }
     }
-    tmp4Result = tmp4(13977);
+    tmp4Result = tmp4(13993);
   }
   obj[1] = tmp4Result;
   obj[1] = closure_11(closure_4, obj);

@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9526
+// Function ID: 9527
 // Name: transformUser
 // Dependencies: [1897, 2]
 // Exports: default
 
-// Module 9522 (transformUser)
+// Module 9526 (transformUser)
 import set from "set" /* 2 */;
 import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1897 */;
 

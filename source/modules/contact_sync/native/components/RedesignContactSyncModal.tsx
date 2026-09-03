@@ -1,25 +1,25 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12459
+// Function ID: 12460
 // Name: headerTitle
-// Dependencies: [5, 32, 19, 17, 1921, 7166, 12439, 12440, 673, 4730, 21, 4478, 709, 5500, 12438, 4474, 1233, 12442, 12448, 1627, 1498, 586, 12446, 1234, 688, 695, 4445, 12449, 2008, 5091, 5078, 12450, 12451, 12454, 12457, 12458, 12459, 12460, 12462, 500, 5503, 12464, 12465, 6016, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 7167, 12451, 12452, 673, 4731, 21, 4478, 709, 5501, 12450, 4474, 1233, 12454, 12460, 1627, 1498, 586, 12458, 1234, 688, 695, 4445, 12461, 2008, 5092, 5079, 12462, 12463, 12466, 12469, 12470, 12471, 12472, 12474, 500, 5504, 12476, 12477, 6017, 2]
 // Exports: ContactSyncOnboardingModal
 
-// Module 12447 (headerTitle)
+// Module 12459 (headerTitle)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import _uploadContacts from "_uploadContacts" /* 12442 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12448 */;
+import _uploadContacts from "_uploadContacts" /* 12454 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12460 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "getState" /* 7166 */;
-import ContactSyncModes from "ContactSyncModes" /* 12439 */;
-import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12440 */;
+import closure_8 from "getState" /* 7167 */;
+import ContactSyncModes from "ContactSyncModes" /* 12451 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12452 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -115,7 +115,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               closure_1 = tmp2;
               closure_0 = tmp2;
               if (!closure_1_7) {
-                let obj2 = closure_1_1(12446);
+                let obj2 = closure_1_1(12458);
                 let tmp12 = closure_1_6;
                 if (tmp12) {
                   let email;
@@ -165,7 +165,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           dependencyMap = 1;
           c3 = 1;
           const obj4 = { value: null, done: false };
-          obj4[0] = closure_1_0(12438).startContactSync(c3);
+          obj4[0] = closure_1_0(12450).startContactSync(c3);
           return obj4;
         } catch (tmp22) {
           c3 = tmp;
@@ -228,7 +228,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
             return obj;
           } else {
             closure_0 = tmp4;
-            let obj3 = v0(5091);
+            let obj3 = v0(5092);
             v0 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -247,7 +247,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           if (arg1) {
             callback();
           } else {
-            obj = closure_1_0(12438);
+            obj = closure_1_0(12450);
             obj3 = { onComplete: null, skip: true };
             obj3[0] = dependencyMap;
             const result = obj.closeContactSyncModal(obj3);
@@ -319,7 +319,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   const tmp5 = callback2();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  first(12457)(navigation, navigateToLandingPage.navigateToLandingPage);
+  first(12469)(navigation, navigateToLandingPage.navigateToLandingPage);
   _require = undefined;
   _require = callback((arg0) => {
     closure_0 = arg0;
@@ -355,7 +355,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
               closure_1 = tmp2;
               dependencyMap(true);
               closure_2_9(callback);
-              obj1 = callback(12438);
+              obj1 = callback(12450);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -425,7 +425,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
     tmp12 = isNameFromContactBook;
   }
   obj[4] = tmp12;
-  obj[1] = closure_16(first(12459), obj);
+  obj[1] = closure_16(first(12471), obj);
   return closure_16(tmp10, obj);
 }
 function ContactSyncSuggestionScreen(onComplete) {
@@ -568,7 +568,7 @@ class ContactSyncModal {
         return closure_1_16(closure_1_1(closure_1_2[41]), obj);
       };
       obj6[5] = function render() {
-        return callback2(callback(12465).AddPhoneScreen, {});
+        return callback2(callback(12477).AddPhoneScreen, {});
       };
       obj1[closure_1_13.ADD_PHONE] = obj6;
       const obj8 = { impressionName: onComplete(first[39]).ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
@@ -582,7 +582,7 @@ class ContactSyncModal {
         return closure_1_16(closure_1_1(closure_1_2[41]), obj);
       };
       obj8[5] = function render() {
-        return callback2(callback(12465).VerifyPhoneScreen, {});
+        return callback2(callback(12477).VerifyPhoneScreen, {});
       };
       obj1[closure_1_13.VERIFY_PHONE] = obj8;
       const obj10 = { impressionName: onComplete(first[39]).ImpressionNames.USER_VERIFY_PASSWORD, impressionProperties: null, fullscreen: true, headerLeft: null, headerTitle: null, render: null };
@@ -596,7 +596,7 @@ class ContactSyncModal {
       };
       obj10[4] = closure_1_20;
       obj10[5] = function render() {
-        return callback2(callback(12465).VerifyPasswordScreen, {});
+        return callback2(callback(12477).VerifyPasswordScreen, {});
       };
       obj1[closure_1_13.VERIFY_PASSWORD] = obj10;
       return obj1;

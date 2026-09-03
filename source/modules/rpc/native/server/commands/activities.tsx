@@ -1,16 +1,16 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14406
+// Function ID: 14407
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4380, 673, 4730, 8625, 14357, 9516, 9931, 14345, 5091, 5102, 9482, 4377, 2]
+// Dependencies: [5, 4380, 673, 4731, 8629, 14373, 9520, 9935, 14361, 5092, 5103, 9486, 4377, 2]
 
-// Module 14390 (RPC_LOCAL_SCOPE)
-import prototypeDefault from "prototype" /* 9516 */;
-import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9931 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14357 */;
+// Module 14406 (RPC_LOCAL_SCOPE)
+import prototypeDefault from "prototype" /* 9520 */;
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9935 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14373 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
 import ME from "ME" /* 673 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
 
 require = arg1;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);

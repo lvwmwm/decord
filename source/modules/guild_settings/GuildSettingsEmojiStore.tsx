@@ -1,13 +1,13 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17402
+// Function ID: 17403
 // Name: initialize
-// Dependencies: [17383, 4299, 1400, 684, 586, 706, 2]
+// Dependencies: [17403, 4299, 1400, 684, 586, 706, 2]
 
-// Module 17382 (initialize)
+// Module 17402 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "prototype" /* 17383 */;
+import closure_0 from "prototype" /* 17403 */;
 import closure_1 from "handleConnectionOpen" /* 4299 */;
 import importDefaultResult from "priv" /* 1400 */;
 

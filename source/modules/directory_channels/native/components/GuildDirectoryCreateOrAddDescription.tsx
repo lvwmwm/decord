@@ -1,12 +1,12 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12115
+// Function ID: 12116
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4478, 12110, 1425, 12111, 12098, 12099, 4474, 1233, 12107, 2]
+// Dependencies: [5, 19, 17, 21, 4478, 12116, 1425, 12117, 12104, 12105, 4474, 1233, 12113, 2]
 // Exports: default
 
-// Module 12109 (GuildDirectoryCreateOrAddDescription)
+// Module 12115 (GuildDirectoryCreateOrAddDescription)
 import noopAll from "noop" /* 19 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12107 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12113 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -163,5 +163,5 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   items1[1] = callback(GuildDirectoryEditDescriptionTemplateDefault, obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(12099).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(12105).GuildDirectoryAddModalScreen, obj);
 };

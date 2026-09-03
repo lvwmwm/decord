@@ -1,14 +1,14 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 8599
+// Function ID: 8600
 // Name: PauseIcon
-// Dependencies: [19, 21, 709, 4196, 8596, 2]
+// Dependencies: [19, 21, 709, 4196, 8600, 2]
 // Exports: PauseIcon
 
-// Module 8595 (PauseIcon)
+// Module 8599 (PauseIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8596 */;
+import registerAsset from "registerAsset" /* 8600 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

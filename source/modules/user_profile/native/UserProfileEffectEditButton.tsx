@@ -1,14 +1,14 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14519
+// Function ID: 14520
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 6009, 8520, 502, 21, 4478, 709, 8084, 8505, 4445, 14504, 2008, 1233, 14495, 6056, 5501, 10968, 8523, 1296, 8100, 2]
+// Dependencies: [19, 17, 6010, 8524, 502, 21, 4478, 709, 8087, 8509, 4445, 14520, 2008, 1233, 14511, 6057, 5502, 10972, 8527, 1296, 8103, 2]
 // Exports: default
 
-// Module 14503 (UserProfileEffectEditButton)
+// Module 14519 (UserProfileEffectEditButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import { NOOP } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

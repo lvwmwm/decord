@@ -1,12 +1,12 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11564
+// Function ID: 11565
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 11557, 4445, 11303, 11147, 7463, 1233, 586, 5630, 4926, 11560, 4474, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 709, 11562, 4445, 11307, 11151, 7464, 1233, 586, 5631, 4927, 11565, 4474, 2]
 // Exports: default
 
-// Module 11559 (QuestRewardDetailsBottomSheet)
+// Module 11564 (QuestRewardDetailsBottomSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import useQuests from "useQuests" /* 11303 */;
+import useQuests from "useQuests" /* 11307 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
@@ -38,20 +38,20 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(586);
   const items2 = [closure_5];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  obj1 = quest(11147);
+  obj1 = quest(11151);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { direction: "vertical", spacing: memo(709).space.PX_16, style: tmp.wrapper, children: null };
   obj = { align: "center", direction: "horizontal", spacing: memo(709).space.PX_16, children: null };
-  const items3 = [callback(memo(11560), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [callback(memo(11565), { quest, height: 56, width: 56, withAnimation: true }), ];
   obj1 = { direction: "vertical", spacing: memo(709).space.PX_4, style: tmp.rewardDetailsCopy, children: null };
   const obj2 = { variant: "eyebrow", color: "text-subtle", children: null };
   let intl = quest(1233).intl;
   obj2[2] = intl.string(quest(1233).t["jyYgZ+"]);
   const items4 = [callback(quest(4474).Text, obj2), callback(quest(4474).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   obj1[3] = items4;
-  items3[1] = callback2(quest(4926).Stack, obj1);
+  items3[1] = callback2(quest(4927).Stack, obj1);
   obj[3] = items3;
-  const items5 = [callback2(quest(4926).Stack, obj), ];
+  const items5 = [callback2(quest(4927).Stack, obj), ];
   let tmp9Result = null != memo1;
   if (tmp9Result) {
     const obj3 = { children: null };
@@ -66,7 +66,7 @@ function QuestRewardDetailsBottomSheet(quest) {
   }
   items5[1] = tmp9Result;
   obj[3] = items5;
-  return callback(quest(5630).BottomSheet, { startExpanded: true, children: callback2(quest(4926).Stack, obj) });
+  return callback(quest(5631).BottomSheet, { startExpanded: true, children: callback2(quest(4927).Stack, obj) });
 }
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
 createCacheKey = { wrapper: null, rewardDetailsCopy: null, separator: null };
@@ -80,8 +80,8 @@ let result = require("set").fileFinishedImporting("modules/quests/native/QuestRe
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = callback(11557).showQuestUnavailableAlert();
-    const obj = callback(11557);
+    const result = callback(11562).showQuestUnavailableAlert();
+    const obj = callback(11562);
     callback2(4445).hideActionSheet();
   }, []);
   let obj = useQuests;

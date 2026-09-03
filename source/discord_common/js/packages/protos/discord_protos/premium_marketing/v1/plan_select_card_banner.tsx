@@ -1,13 +1,13 @@
-// Module ID: 8481
-// Function ID: 8482
+// Module ID: 8485
+// Function ID: 8486
 // Name: create
-// Dependencies: [32, 1306, 8472, 8462, 8463, 2]
+// Dependencies: [32, 1306, 8476, 8466, 8467, 2]
 
-// Module 8481 (create)
+// Module 8485 (create)
 import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 8462 */;
-import create2 from "create" /* 8463 */;
-import create3 from "create" /* 8472 */;
+import create from "create" /* 8466 */;
+import create2 from "create" /* 8467 */;
+import create3 from "create" /* 8476 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;
 
@@ -19,7 +19,7 @@ class PlanSelectCardBanner$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(8472).ThemeAwareAsset;
+            return callback(8476).ThemeAwareAsset;
           }
     };
     items = [, , , ];
@@ -38,7 +38,7 @@ class PlanSelectCardBanner$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8463).HelpArticle;
+            return callback(8467).HelpArticle;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PlanSelectCardBanner", items, T);
@@ -170,7 +170,7 @@ let obj = {
   name: "asset",
   kind: "message",
   T() {
-    return callback(8472).ThemeAwareAsset;
+    return callback(8476).ThemeAwareAsset;
   }
 };
 let items = [obj, { no: 2, name: "body", kind: "scalar", T: 9 }, , ];
@@ -187,7 +187,7 @@ items[3] = {
   name: "help_article",
   kind: "message",
   T() {
-    return callback(8463).HelpArticle;
+    return callback(8467).HelpArticle;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PlanSelectCardBanner", items, tmp, T, PlanSelectCardBanner$Type, prototype, items);

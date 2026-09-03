@@ -1,10 +1,10 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7302
+// Function ID: 7303
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7301 (fromServer)
+// Module 7302 (fromServer)
 import fromServerDefault from "fromServer" /* 1948 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 

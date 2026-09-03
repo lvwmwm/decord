@@ -1,9 +1,9 @@
-// Module ID: 7089
-// Function ID: 7090
+// Module ID: 7090
+// Function ID: 7091
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 7089 (vanityUrl)
+// Module 7090 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier9SmallBadge-2x.png.js");

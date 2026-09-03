@@ -1,12 +1,12 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17320
+// Function ID: 17321
 // Name: scheduleNextNotification
-// Dependencies: [11466, 7609, 706, 684, 5494, 2]
+// Dependencies: [11471, 7610, 706, 684, 5495, 2]
 
-// Module 17300 (scheduleNextNotification)
+// Module 17320 (scheduleNextNotification)
 import setDefault from "set" /* 684 */;
-import initializeDefault from "initialize" /* 5494 */;
-import closure_3 from "getTimeSafe" /* 11466 */;
+import initializeDefault from "initialize" /* 5495 */;
+import closure_3 from "getTimeSafe" /* 11471 */;
 
 let require = arg1;
 function scheduleNextNotification() {

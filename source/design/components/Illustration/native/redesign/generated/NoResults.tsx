@@ -1,13 +1,13 @@
-// Module ID: 8925
-// Function ID: 8926
+// Module ID: 8929
+// Function ID: 8930
 // Name: getNoResultsSource
-// Dependencies: [19, 17, 21, 8926, 8927, 8928, 8929, 1362, 2]
+// Dependencies: [19, 17, 21, 8930, 8931, 8932, 8933, 1362, 2]
 // Exports: NoResults, getNoResultsSource, useNoResultsSource
 
-// Module 8925 (getNoResultsSource)
+// Module 8929 (getNoResultsSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getIllustrationSource from "getIllustrationSource" /* 8926 */;
+import getIllustrationSource from "getIllustrationSource" /* 8930 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getNoResultsSource = function getNoResultsSource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(8927);
+      return callback(8931);
     },
     darker() {
-      return callback(8928);
+      return callback(8932);
     },
     light() {
-      return callback(8929);
+      return callback(8933);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useNoResultsSource = function useNoResultsSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(8927);
+      return callback(8931);
     },
     darker() {
-      return callback(8928);
+      return callback(8932);
     },
     light() {
-      return callback(8929);
+      return callback(8933);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const NoResults = function NoResults(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(8927);
+      return callback(8931);
     },
     darker() {
-      return callback(8928);
+      return callback(8932);
     },
     light() {
-      return callback(8929);
+      return callback(8933);
     }
   };
   obj = {};

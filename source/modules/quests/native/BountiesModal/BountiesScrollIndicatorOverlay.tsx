@@ -1,10 +1,10 @@
-// Module ID: 14865
-// Function ID: 14866
+// Module ID: 14880
+// Function ID: 14881
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4482, 4478, 709, 4217, 4479, 4940, 14866, 4474, 1233, 2]
+// Dependencies: [32, 19, 17, 21, 4482, 4478, 709, 4217, 4479, 4941, 14881, 4474, 1233, 2]
 // Exports: default
 
-// Module 14865 (BountiesScrollIndicatorOverlay)
+// Module 14880 (BountiesScrollIndicatorOverlay)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

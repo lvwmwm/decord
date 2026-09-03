@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 8223
+// Module ID: 8226
+// Function ID: 8227
 // Name: saveGuildFolders
 // Dependencies: [5, 4297, 1302, 1301, 673, 1304, 1369, 1305, 1336, 706, 4325, 4166, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8222 (saveGuildFolders)
+// Module 8226 (saveGuildFolders)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

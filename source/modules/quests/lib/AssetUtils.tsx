@@ -1,24 +1,24 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 11146
+// Function ID: 11147
 // Name: resolveAsset
-// Dependencies: [5395, 673, 11143, 11144, 11145, 11146, 11147, 7463, 11154, 11155, 5402, 1485, 1894, 2]
+// Dependencies: [5396, 673, 11147, 11148, 11149, 11150, 11151, 7464, 11158, 11159, 5403, 1485, 1894, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 11142 (resolveAsset)
+// Module 11146 (resolveAsset)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1894 */;
-import set2 from "set" /* 5402 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7463 */;
-import metadataDefault from "metadata" /* 11143 */;
-import metadataDefault2 from "metadata" /* 11144 */;
-import metadataDefault3 from "metadata" /* 11145 */;
-import metadataDefault4 from "metadata" /* 11146 */;
-import _getDefaultRewardName from "_getDefaultRewardName" /* 11147 */;
-import metadataDefault5 from "metadata" /* 11154 */;
-import metadataDefault6 from "metadata" /* 11155 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5395 */;
+import set2 from "set" /* 5403 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7464 */;
+import metadataDefault from "metadata" /* 11147 */;
+import metadataDefault2 from "metadata" /* 11148 */;
+import metadataDefault3 from "metadata" /* 11149 */;
+import metadataDefault4 from "metadata" /* 11150 */;
+import _getDefaultRewardName from "_getDefaultRewardName" /* 11151 */;
+import metadataDefault5 from "metadata" /* 11158 */;
+import metadataDefault6 from "metadata" /* 11159 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5396 */;
 
 function resolveAsset(id, questBarHeroVideo) {
   if (questBarHeroVideo.startsWith("blob:")) {

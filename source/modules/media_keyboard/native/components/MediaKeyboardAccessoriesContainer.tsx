@@ -1,12 +1,12 @@
-// Module ID: 16575
-// Function ID: 16576
+// Module ID: 16596
+// Function ID: 16597
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [19, 17, 9667, 21, 1234, 4478, 4217, 586, 2]
+// Dependencies: [19, 17, 9671, 21, 1234, 4478, 4217, 586, 2]
 // Exports: default
 
-// Module 16575 (MediaKeyboardAccessoriesContainer)
+// Module 16596 (MediaKeyboardAccessoriesContainer)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 9667 */;
+import closure_4 from "initialize" /* 9671 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

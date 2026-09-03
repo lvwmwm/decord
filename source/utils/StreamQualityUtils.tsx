@@ -1,10 +1,10 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9605
+// Function ID: 9606
 // Name: isPremiumResolution
 // Dependencies: [19, 4572, 1215, 1908, 4554, 1921, 673, 4537, 1923, 4542, 1233, 586, 695, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9601 (isPremiumResolution)
+// Module 9605 (isPremiumResolution)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "noop" /* 19 */;

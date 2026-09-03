@@ -1,9 +1,9 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7413
+// Function ID: 7414
 // Name: recountRelationshipTypes
 // Dependencies: [4130, 673, 4116, 586, 706, 2]
 
-// Module 7412 (recountRelationshipTypes)
+// Module 7413 (recountRelationshipTypes)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "markAllUserIdListsStale" /* 4130 */;

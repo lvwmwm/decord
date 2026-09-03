@@ -1,10 +1,10 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12316
+// Function ID: 12317
 // Name: orderPowerupListings
 // Dependencies: [32, 19, 4364, 4365, 4368, 586, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 12304 (orderPowerupListings)
+// Module 12316 (orderPowerupListings)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "calculateAppliedBoosts" /* 4364 */;

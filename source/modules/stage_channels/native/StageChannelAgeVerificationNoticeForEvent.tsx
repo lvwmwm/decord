@@ -1,18 +1,18 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 9753
+// Function ID: 9754
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4733, 1233, 4474, 4184, 1994, 8697, 8699, 4433, 8751, 1296, 5374, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 4734, 1233, 4474, 4184, 1994, 8701, 8703, 4433, 8755, 1296, 5375, 2]
 // Exports: default
 
-// Module 9749 (StageChannelAgeVerificationNoticeContent)
+// Module 9753 (StageChannelAgeVerificationNoticeContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
 import Text2 from "Text" /* 4474 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4733 */;
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5374 */;
-import WarningIcon2 from "WarningIcon" /* 8751 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5375 */;
+import WarningIcon2 from "WarningIcon" /* 8755 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -23,7 +23,7 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   closure_1 = undefined;
   closure_1 = callback2();
-  let obj = onConfirmPress(4733);
+  let obj = onConfirmPress(4734);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1233).intl;
   const format = intl.format;

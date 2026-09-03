@@ -1,13 +1,13 @@
-// Module ID: 7481
-// Function ID: 7482
+// Module ID: 7482
+// Function ID: 7483
 // Name: canStreamInChannel
-// Dependencies: [4495, 1390, 1981, 1908, 4120, 4497, 673, 5368, 4666, 4731, 586, 2]
+// Dependencies: [4495, 1390, 1981, 1908, 4120, 4497, 673, 5369, 4666, 4732, 586, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 7481 (canStreamInChannel)
+// Module 7482 (canStreamInChannel)
 import allowChannelAccess from "allowChannelAccess" /* 4666 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4731 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5368 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4732 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5369 */;
 import closure_3 from "set" /* 4495 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;

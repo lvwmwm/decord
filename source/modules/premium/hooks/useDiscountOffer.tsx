@@ -1,14 +1,14 @@
-// Module ID: 7979
-// Function ID: 7980
+// Module ID: 7982
+// Function ID: 7983
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1921, 7204, 1923, 586, 4139, 4362, 2]
+// Dependencies: [32, 19, 1921, 7205, 1923, 586, 4139, 4362, 2]
 // Exports: default
 
-// Module 7979 (useDiscountOffer)
+// Module 7982 (useDiscountOffer)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "emitChanges" /* 7204 */;
+import closure_5 from "emitChanges" /* 7205 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 const require = arg1;

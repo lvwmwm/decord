@@ -1,14 +1,14 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10358
+// Function ID: 10359
 // Name: useCreateThread
-// Dependencies: [5, 19, 4854, 4471, 5961, 8169, 7210, 7436, 8173, 8171, 7593, 5131, 5086, 8174, 2]
+// Dependencies: [5, 19, 4855, 4471, 5962, 8173, 7211, 7437, 8177, 8175, 7594, 5132, 5087, 8178, 2]
 // Exports: default, useCreateForumPost
 
-// Module 10354 (useCreateThread)
-import contextDefault from "context" /* 5961 */;
+// Module 10358 (useCreateThread)
+import contextDefault from "context" /* 5962 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { DraftType } from "handleChanged" /* 4854 */;
+import { DraftType } from "handleChanged" /* 4855 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ export default function useCreateThread(arg0) {
   let analyticsLocations;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   analyticsLocations = contextDefault().analyticsLocations;
-  let obj = analyticsLocations(8169);
+  let obj = analyticsLocations(8173);
   obj = {
     parentChannel,
     parentMessageId,
@@ -58,7 +58,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(5961)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
   _require = undefined;
   _require = callback((arg0) => {
     closure_0 = arg0;
@@ -74,7 +74,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
       obj7.on("progress", (currentSize) => {
         if (currentSize.currentSize > c3) {
           obj7.cancel();
-          let obj = closure_2_1(8171);
+          let obj = closure_2_1(8175);
           obj = { channelId: null, uploads: null, draftType: null, resetState: true };
           obj[0] = guildId.id;
           obj[1] = guildId;
@@ -86,8 +86,8 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
           obj[2] = dependencyMap;
           obj[3] = guildId.getGuildId();
           obj[4] = obj7;
-          closure_2_1(8174)(obj);
-          const tmp10 = closure_2_1(8174);
+          closure_2_1(8178)(obj);
+          const tmp10 = closure_2_1(8178);
         }
       });
       closure_4 = yield obj7.uploadFiles(guildId);
@@ -108,7 +108,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
     }
     return applyArgumentsResult;
   }, items);
-  let obj = _require(8169);
+  let obj = _require(8173);
   obj = { parentChannel, name: null, appliedTags: null, analyticsLocations: null, onThreadCreated: null, upload: null };
   let str;
   if (threadSettings != null) {

@@ -1,15 +1,15 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8522
+// Function ID: 8523
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4478, 709, 4433, 7717, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4433, 7720, 4474, 2]
 // Exports: default
 
-// Module 8518 (InfoBox)
+// Module 8522 (InfoBox)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
 import Text from "Text" /* 4474 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7717 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7720 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

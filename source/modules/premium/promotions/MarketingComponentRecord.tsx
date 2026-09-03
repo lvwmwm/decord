@@ -1,9 +1,9 @@
-// Module ID: 8459
-// Function ID: 8460
+// Module ID: 8463
+// Function ID: 8464
 // Name: createFromServer
-// Dependencies: [1935, 8460, 1306, 684, 1214, 2]
+// Dependencies: [1935, 8464, 1306, 684, 1214, 2]
 
-// Module 8459 (createFromServer)
+// Module 8463 (createFromServer)
 import setDefault from "set" /* 684 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
 import toJSDefault from "toJS" /* 1935 */;
@@ -49,7 +49,7 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
     endDate = null;
   }
   ({ id, component_type } = start_date);
-  const PremiumMarketingComponentProperties = textDecoder(8460).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(8464).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1306);
   function readerFactory(buf) {

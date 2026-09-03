@@ -1,10 +1,10 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12280
+// Function ID: 12281
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4365, 21, 4478, 709, 4388, 12269, 12279, 12299, 1627, 5961, 12304, 12305, 12334, 4723, 4384, 5510, 1233, 2400, 7617, 5503, 12341, 12343, 12351, 12357, 12367, 12375, 2]
+// Dependencies: [19, 17, 4365, 21, 4478, 709, 4388, 12281, 12291, 12311, 1627, 5962, 12316, 12317, 12346, 4724, 4384, 5511, 1233, 2400, 7618, 5504, 12353, 12355, 12363, 12369, 12379, 12387, 2]
 // Exports: default
 
-// Module 12268 (GuildPowerupsModal)
+// Module 12280 (GuildPowerupsModal)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

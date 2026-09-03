@@ -1,16 +1,16 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15921
+// Function ID: 15922
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1921, 15119, 673, 21, 4478, 709, 644, 15906, 5967, 695, 5981, 12689, 2008, 15878, 4217, 8907, 500, 15889, 15120, 5059, 5501, 15902, 2]
+// Dependencies: [32, 19, 17, 1921, 15134, 673, 21, 4478, 709, 644, 15922, 5968, 695, 5982, 12701, 2008, 15894, 4217, 8911, 500, 15905, 15135, 5060, 5502, 15918, 2]
 // Exports: default
 
-// Module 15905 (HappeningNowCardEmbeddedActivity)
+// Module 15921 (HappeningNowCardEmbeddedActivity)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

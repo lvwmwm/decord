@@ -1,13 +1,13 @@
-// Module ID: 5394
-// Function ID: 5395
+// Module ID: 5395
+// Function ID: 5396
 // Name: fromType
-// Dependencies: [1935, 673, 5395, 682, 5404, 2]
+// Dependencies: [1935, 673, 5396, 682, 5405, 2]
 
-// Module 5394 (fromType)
+// Module 5395 (fromType)
 import toJSDefault from "toJS" /* 1935 */;
-import settingsPathToRoute from "settingsPathToRoute" /* 5404 */;
+import settingsPathToRoute from "settingsPathToRoute" /* 5405 */;
 import { Routes } from "ME" /* 673 */;
-import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5395 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5396 */;
 import { UserSettingsPath } from "MAX_FAVORITES" /* 682 */;
 
 require = arg1;

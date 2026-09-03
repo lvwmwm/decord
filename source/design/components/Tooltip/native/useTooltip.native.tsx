@@ -1,10 +1,10 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 8992
+// Function ID: 8993
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 511, 5950, 8989, 1492, 8994, 2]
+// Dependencies: [32, 5, 19, 21, 3, 511, 5951, 8993, 1492, 8998, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 8988 (useTooltip)
+// Module 8992 (useTooltip)
 import timestampDefault from "timestamp" /* 3 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -136,7 +136,7 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
   const tmp = useWindowDimensionsDefault();
   closure_3 = tmp;
   closure_4 = context.useRef(tmp);
-  context = context.useContext(_require(5950).LayerContext);
+  context = context.useContext(_require(5951).LayerContext);
   closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {

@@ -1,9 +1,9 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7382
+// Function ID: 7383
 // Name: USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH
 // Dependencies: [2]
 
-// Module 7381 (USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH)
+// Module 7382 (USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ClipsConstants.tsx");

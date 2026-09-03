@@ -1,12 +1,12 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10812
+// Function ID: 10813
 // Name: HeadlessSlayerStorefrontPurchaseRunner
-// Dependencies: [19, 7178, 673, 695, 10809, 1234, 2]
+// Dependencies: [19, 7179, 673, 695, 10813, 1234, 2]
 // Exports: HeadlessSlayerStorefrontPurchaseRunner
 
-// Module 10808 (HeadlessSlayerStorefrontPurchaseRunner)
+// Module 10812 (HeadlessSlayerStorefrontPurchaseRunner)
 import closure_3 from "noop" /* 19 */;
-import { useNativeCheckoutStore } from "context" /* 7178 */;
+import { useNativeCheckoutStore } from "context" /* 7179 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;

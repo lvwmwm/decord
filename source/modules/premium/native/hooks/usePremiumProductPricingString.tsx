@@ -1,11 +1,11 @@
-// Module ID: 10746
-// Function ID: 10747
+// Module ID: 10750
+// Function ID: 10751
 // Name: usePremiumProductPricingString
-// Dependencies: [6092, 1923, 4139, 6095, 586, 2]
+// Dependencies: [6093, 1923, 4139, 6096, 586, 2]
 // Exports: default
 
-// Module 10746 (usePremiumProductPricingString)
-import closure_2 from "updateProduct" /* 6092 */;
+// Module 10750 (usePremiumProductPricingString)
+import closure_2 from "updateProduct" /* 6093 */;
 import { PRICE_PLACEHOLDER } from "GuildFeatures" /* 1923 */;
 
 const require = arg1;
@@ -14,8 +14,8 @@ const result = require("set").fileFinishedImporting("modules/premium/native/hook
 export default function usePremiumProductPricingString(closure_0, YEAR) {
   const planIdForPremiumType = _require(4139).getPlanIdForPremiumType(closure_0, YEAR);
   const obj = _require(4139);
-  _require = _require(6095).getProductIdForGift(planIdForPremiumType);
-  const obj2 = _require(6095);
+  _require = _require(6096).getProductIdForGift(planIdForPremiumType);
+  const obj2 = _require(6096);
   const items = [closure_2];
   const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_2.getProduct(closure_0));
   let priceString;

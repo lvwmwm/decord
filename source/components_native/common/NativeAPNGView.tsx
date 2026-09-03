@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 10285
-// Dependencies: [17, 1234, 10285, 2]
+// Module ID: 10288
+// Function ID: 10289
+// Dependencies: [17, 1234, 10289, 2]
 
-// Module 10284
+// Module 10288
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10285 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10289 */;
 import set from "set" /* 1234 */;
 
 if (set.isAndroid()) {

@@ -1,10 +1,10 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15406
+// Function ID: 15407
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 6239, 1627, 4194, 592, 7, 4474, 6230, 14828, 1233, 15393, 4445, 15394, 8113, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 6240, 1627, 4194, 592, 7, 4474, 6231, 14843, 1233, 15407, 4445, 15408, 8116, 2]
 // Exports: default
 
-// Module 15392 (UserSettingsDebugLogs)
+// Module 15406 (UserSettingsDebugLogs)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

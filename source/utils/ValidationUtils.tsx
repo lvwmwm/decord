@@ -1,9 +1,9 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8666
+// Function ID: 8667
 // Name: set
 // Dependencies: [2]
 
-// Module 8662 (set)
+// Module 8666 (set)
 import set from "set" /* 2 */;
 
 const re0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;

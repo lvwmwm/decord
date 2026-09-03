@@ -1,10 +1,10 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13452
+// Function ID: 13453
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4478, 709, 13438, 5961, 5981, 13238, 13439, 4474, 1233, 4928, 5989, 13440, 4947, 4190, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 13453, 5962, 5982, 13250, 13454, 4474, 1233, 4929, 5990, 13455, 4948, 4190, 2]
 // Exports: default
 
-// Module 13437 (OutboundPromotionClaimAlert)
+// Module 13452 (OutboundPromotionClaimAlert)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

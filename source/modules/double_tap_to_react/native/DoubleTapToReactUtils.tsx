@@ -1,16 +1,16 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 7889
+// Function ID: 7890
 // Name: getFallbackDoubleTapDisambiguatedEmoji
-// Dependencies: [19, 1378, 5409, 7887, 1383, 1924, 21, 4134, 4166, 7888, 4132, 4446, 7518, 7890, 4138, 7892, 2008, 4859, 4298, 1372, 2]
+// Dependencies: [19, 1378, 5410, 7890, 1383, 1924, 21, 4134, 4166, 7891, 4132, 4446, 7519, 7893, 4138, 7895, 2008, 4860, 4298, 1372, 2]
 // Exports: areEmojisEqual, disambiguatedEmojiFromSettingsValue, getFallbackDoubleTapDisambiguatedEmoji, handleAddDefaultDoubleTapReaction, reactionEmojiFromSettingsValue
 
-// Module 7886 (getFallbackDoubleTapDisambiguatedEmoji)
+// Module 7889 (getFallbackDoubleTapDisambiguatedEmoji)
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
 import closure_3 from "noop" /* 19 */;
 import { isContentShown } from "withContent" /* 1378 */;
-import closure_5 from "getEmojiToGroupId" /* 5409 */;
-import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7887 */;
+import closure_5 from "getEmojiToGroupId" /* 5410 */;
+import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7890 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import set from "set" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -85,7 +85,7 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
     disableDoubleTap = setting.disableDoubleTap;
   }
   if (true !== disableDoubleTap) {
-    let tmpResult = tmp(7888);
+    let tmpResult = tmp(7891);
     if (tmpResult.canReactToMessage(message, channel)) {
       obj = setting;
       if (setting == null) {
@@ -124,7 +124,7 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
         const result1 = obj3.convertNameToSurrogate("heart");
         let tmp11 = null;
         if ("" !== result1) {
-          obj = { name: null, id: "PX_16", animated: "circle" };
+          obj = { name: null, id: "PX_16", animated: "Bolivia, Plurinational State of" };
           obj[0] = result1;
           tmp11 = obj;
         }
@@ -152,8 +152,8 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
         obj1[0] = channel.id;
         obj1[1] = message.id;
         obj1[2] = tmp8;
-        obj1[3] = tmp(7518).ReactionLocations.DOUBLE_TAP;
-        tmp(7518).removeReaction(obj1);
+        obj1[3] = tmp(7519).ReactionLocations.DOUBLE_TAP;
+        tmp(7519).removeReaction(obj1);
       } else {
         if (flag) {
           let obj7 = parseRawEmojiObjectDefault;
@@ -198,19 +198,19 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
               const lazyResult = React.lazy(() => obj(paths[16])(paths[15], paths.paths));
               const obj4 = { emojiName: null };
               obj4[0] = customEmojiById.name;
-              tmp(4859).openAlert(NITRO_UPSELL_ALERT_KEY, <lazyResult emojiName={null} />);
+              tmp(4860).openAlert(NITRO_UPSELL_ALERT_KEY, <lazyResult emojiName={null} />);
             } else if (null != emojiUnavailableReason) {
               const obj5 = { emojiName: null, reason: null };
               obj5[0] = customEmojiById.name;
               obj5[1] = emojiUnavailableReason;
-              const result3 = tmp(7890).showDoubleTapErrorToast(obj5);
+              const result3 = tmp(7893).showDoubleTapErrorToast(obj5);
             }
             const obj12 = getEmojiUnavailableReasonDefault;
           }
           const result4 = tmp(4446).triggerHapticFeedback(tmp(4446).HapticFeedbackTypes.IMPACT_LIGHT);
-          const tmpResult5 = tmp(7518);
+          const tmpResult5 = tmp(7519);
           const id = channel.id;
-          tmpResult5.addReaction(id, message.id, tmp8, tmp(7518).ReactionLocations.DOUBLE_TAP);
+          tmpResult5.addReaction(id, message.id, tmp8, tmp(7519).ReactionLocations.DOUBLE_TAP);
           const tmpResult4 = tmp(4446);
           obj6 = { dismissAction: null };
           obj6[0] = ContentDismissActionType.INDIRECT_ACTION;
@@ -230,8 +230,8 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
           }
           const obj8 = { emojiName: null };
           obj8[0] = emojiName;
-          const result7 = tmp(7890).showDoubleTapErrorToast(obj8);
-          const tmpResult8 = tmp(7890);
+          const result7 = tmp(7893).showDoubleTapErrorToast(obj8);
+          const tmpResult8 = tmp(7893);
         }
       }
     }

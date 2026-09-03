@@ -1,33 +1,33 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13311
+// Function ID: 13312
 // Name: frozen
-// Dependencies: [19, 17, 1923, 673, 21, 4935, 13300, 4372, 6254, 5981, 1233, 13301, 13302, 13303, 13304, 13305, 13306, 13307, 13308, 13309, 13310, 13311, 13312, 13313, 13314, 13315, 13316, 13317, 4474, 1994, 4478, 709, 5501, 13318, 4928, 2]
+// Dependencies: [19, 17, 1923, 673, 21, 4936, 13312, 4372, 6255, 5982, 1233, 13313, 13314, 13315, 13316, 13317, 13318, 13319, 13320, 13321, 13322, 13323, 13324, 13325, 13326, 13327, 13328, 13329, 4474, 1994, 4478, 709, 5502, 13330, 4929, 2]
 // Exports: default, usePerkCardHeight, usePremiumPerkCard
 
-// Module 13299 (frozen)
+// Module 13311 (frozen)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
-import getFontScale from "getFontScale" /* 4935 */;
-import preloadDefault from "preload" /* 5501 */;
-import registerAssetDefault from "registerAsset" /* 13301 */;
-import registerAssetDefault2 from "registerAsset" /* 13302 */;
-import registerAssetDefault3 from "registerAsset" /* 13303 */;
-import registerAssetDefault4 from "registerAsset" /* 13304 */;
-import registerAssetDefault5 from "registerAsset" /* 13305 */;
-import registerAssetDefault6 from "registerAsset" /* 13306 */;
-import registerAssetDefault7 from "registerAsset" /* 13307 */;
-import registerAssetDefault8 from "registerAsset" /* 13308 */;
-import registerAssetDefault9 from "registerAsset" /* 13309 */;
-import registerAssetDefault10 from "registerAsset" /* 13310 */;
-import registerAssetDefault11 from "registerAsset" /* 13311 */;
-import registerAssetDefault12 from "registerAsset" /* 13312 */;
-import registerAssetDefault13 from "registerAsset" /* 13313 */;
-import registerAssetDefault14 from "registerAsset" /* 13314 */;
-import registerAssetDefault15 from "registerAsset" /* 13315 */;
-import registerAssetDefault16 from "registerAsset" /* 13316 */;
-import metadataDefault from "metadata" /* 13317 */;
-import PillTextDefault from "PillText" /* 13318 */;
+import getFontScale from "getFontScale" /* 4936 */;
+import preloadDefault from "preload" /* 5502 */;
+import registerAssetDefault from "registerAsset" /* 13313 */;
+import registerAssetDefault2 from "registerAsset" /* 13314 */;
+import registerAssetDefault3 from "registerAsset" /* 13315 */;
+import registerAssetDefault4 from "registerAsset" /* 13316 */;
+import registerAssetDefault5 from "registerAsset" /* 13317 */;
+import registerAssetDefault6 from "registerAsset" /* 13318 */;
+import registerAssetDefault7 from "registerAsset" /* 13319 */;
+import registerAssetDefault8 from "registerAsset" /* 13320 */;
+import registerAssetDefault9 from "registerAsset" /* 13321 */;
+import registerAssetDefault10 from "registerAsset" /* 13322 */;
+import registerAssetDefault11 from "registerAsset" /* 13323 */;
+import registerAssetDefault12 from "registerAsset" /* 13324 */;
+import registerAssetDefault13 from "registerAsset" /* 13325 */;
+import registerAssetDefault14 from "registerAsset" /* 13326 */;
+import registerAssetDefault15 from "registerAsset" /* 13327 */;
+import registerAssetDefault16 from "registerAsset" /* 13328 */;
+import metadataDefault from "metadata" /* 13329 */;
+import PillTextDefault from "PillText" /* 13330 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE as closure_6 } from "GuildFeatures" /* 1923 */;
@@ -165,7 +165,7 @@ export default function PremiumPerkCard(variant) {
       const obj11 = { size: "sm", variant: "secondary", text: null, onPress: null };
       obj11[2] = cta;
       obj11[3] = buttonOnPress;
-      obj10[1] = tmp29(tmp6(4928).Button, obj11);
+      obj10[1] = tmp29(tmp6(4929).Button, obj11);
       tmp29Result = tmp29(tmp24, obj10);
     }
     items4[4] = tmp29Result;
@@ -180,25 +180,25 @@ export const usePerkCardHeight = function usePerkCardHeight(NARROW) {
   return getFontScale.useFontScale() > 1 ? frozen[NARROW].scaledFontHeight : frozen[NARROW].height;
 };
 export const usePremiumPerkCard = function usePremiumPerkCard() {
-  obj = subscriptionPlansLoaded(13300);
+  obj = subscriptionPlansLoaded(13312);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   obj1 = subscriptionPlansLoaded(4372);
   const formatSizeResult = obj1.formatSize(closure_6 / 1024, { useKibibytes: true });
   const callback = React.useCallback(() => {
-    obj = subscriptionPlansLoaded(6254);
+    obj = subscriptionPlansLoaded(6255);
     obj = { screen: constants.COLLECTIBLES_SHOP, params: null };
-    obj = { analyticsSource: callback(5981).PREMIUM_MARKETING_PERK_CARD };
+    obj = { analyticsSource: callback(5982).PREMIUM_MARKETING_PERK_CARD };
     obj[1] = obj;
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    obj = subscriptionPlansLoaded(6254);
+    obj = subscriptionPlansLoaded(6255);
     obj = { screen: constants.PROFILE_CUSTOMIZATION };
     obj.openUserSettings(obj);
   }, []);
   const items = [subscriptionPlansLoaded];
   const callback2 = React.useCallback(() => {
-    obj = subscriptionPlansLoaded(6254);
+    obj = subscriptionPlansLoaded(6255);
     obj = { screen: constants.APPEARANCE_THEME_PICKER };
     obj.openUserSettings(obj);
   }, []);
@@ -211,7 +211,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj = { customProfile: null, clientThemes: null, serverBoosts: null, greyServerBoosts: null, customAppIcons: null, emoji: null, customSounds: null, sticker: null, earlyAccess: null, memberPricing: null, largeUploads: null, hdVideo: null, superReactions: null, entranceSounds: null, badge: null, greyBadge: null, xboxGamePass: null };
   obj = { title: null, description: null, imageSrc: null, buttonOnPress: null };
   const callback4 = React.useCallback(() => {
-    obj = subscriptionPlansLoaded(6254);
+    obj = subscriptionPlansLoaded(6255);
     obj = { screen: constants.APP_ICONS };
     obj.openUserSettings(obj);
   }, []);

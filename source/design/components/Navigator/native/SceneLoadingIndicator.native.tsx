@@ -1,13 +1,13 @@
-// Module ID: 6055
-// Function ID: 6056
+// Module ID: 6056
+// Function ID: 6057
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4478, 6056, 5947, 2]
+// Dependencies: [19, 17, 21, 4478, 6057, 5948, 2]
 // Exports: SceneLoadingIndicator
 
-// Module 6055 (SceneLoadingIndicator)
+// Module 6056 (SceneLoadingIndicator)
 import noopAll from "noop" /* 19 */;
-import NavScrim from "NavScrim" /* 5947 */;
-import ActivityIndicator from "ActivityIndicator" /* 6056 */;
+import NavScrim from "NavScrim" /* 5948 */;
+import ActivityIndicator from "ActivityIndicator" /* 6057 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

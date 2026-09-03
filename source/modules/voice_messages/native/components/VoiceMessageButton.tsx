@@ -1,25 +1,25 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12051
+// Function ID: 12052
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 32, 19, 17, 4186, 7434, 1386, 4854, 11756, 11757, 673, 4471, 4730, 21, 4478, 709, 7891, 4332, 4727, 12046, 4217, 11346, 1492, 11669, 5080, 5081, 7210, 8173, 11475, 1228, 4194, 1233, 10194, 4333, 5091, 4193, 9742, 5660, 12048, 12029, 10110, 2]
+// Dependencies: [5, 32, 19, 17, 4186, 7435, 1386, 4855, 11761, 11762, 673, 4471, 4731, 21, 4478, 709, 7894, 4332, 4728, 12052, 4217, 11351, 1492, 11674, 5081, 5082, 7211, 8177, 11480, 1228, 4194, 1233, 10198, 4333, 5092, 4193, 9746, 5661, 12054, 12035, 10114, 2]
 
-// Module 12045 (VoiceMessageRecordingCancelledToastIcon)
+// Module 12051 (VoiceMessageRecordingCancelledToastIcon)
 import ThemesDefault from "Themes" /* 709 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 7891 */;
-import _startAudioRecording from "_startAudioRecording" /* 12046 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 7894 */;
+import _startAudioRecording from "_startAudioRecording" /* 12052 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "setContent" /* 4186 */;
-import closure_9 from "getState" /* 7434 */;
+import closure_9 from "getState" /* 7435 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "handleChanged" /* 4854 */;
-import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11756 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11757 */;
+import closure_11 from "handleChanged" /* 4855 */;
+import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11761 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11762 */;
 import ME from "ME" /* 673 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((disabled) => {
   currentState = importAllResult.useRef(true);
   closure_8 = importAllResult.useRef(currentState.currentState);
   closure_9 = importAllResult.useRef(null);
-  const tmp9 = sharedValue1(11346)();
+  const tmp9 = sharedValue1(11351)();
   _require = undefined;
   _require = sharedValue((arg0) => {
     closure_0 = arg0;
@@ -630,7 +630,7 @@ const memoResult = importAllResult.memo((disabled) => {
     }
   }, items9);
   let obj3 = _require(4332);
-  const tmp21 = sharedValue1(9742);
+  const tmp21 = sharedValue1(9746);
   let intl = _require(1233).intl;
   const tmp22 = sharedValue(function*() {
     if (c2 === 2) {
@@ -800,7 +800,7 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items10);
   obj = { gesture: memo, children: null };
-  obj1 = { ref: sharedValue1(12048)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
+  obj1 = { ref: sharedValue1(12054)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
   const tmp21Result = tmp21(sharedValue(function*() {
     if (c2 === 2) {
       c2 = 3;
@@ -857,14 +857,14 @@ const memoResult = importAllResult.memo((disabled) => {
       }
     }
   }), intl.string(_require(1233).t.lwy6aX));
-  obj1[1] = _require(10110).MicrophoneIcon;
+  obj1[1] = _require(10114).MicrophoneIcon;
   const intl2 = _require(1233).intl;
   obj1[3] = intl2.string(_require(1233).t.lwy6aX);
   obj1[4] = accessibilityActions;
   obj1[5] = onAccessibilityAction;
   obj1[6] = disabled;
-  obj[1] = jsx(sharedValue1(12029), { ref: sharedValue1(12048)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
-  return jsx(_require(5660).GestureDetector, { gesture: memo, children: null });
+  obj[1] = jsx(sharedValue1(12035), { ref: sharedValue1(12054)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
+  return jsx(_require(5661).GestureDetector, { gesture: memo, children: null });
 });
 let result = require("set").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");
 

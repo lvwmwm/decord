@@ -1,15 +1,15 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 14541
+// Function ID: 14542
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4478, 14526, 4474, 1233, 4928, 12470, 2008, 2]
+// Dependencies: [5, 19, 17, 21, 4478, 14542, 4474, 1233, 4929, 12482, 2008, 2]
 // Exports: default
 
-// Module 14525 (GuildProfileEmptyState)
+// Module 14541 (GuildProfileEmptyState)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import SvgComponentDefault from "SvgComponent" /* 14526 */;
+import Button from "Button" /* 4929 */;
+import SvgComponentDefault from "SvgComponent" /* 14542 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

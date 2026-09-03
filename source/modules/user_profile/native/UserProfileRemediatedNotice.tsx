@@ -1,10 +1,10 @@
-// Module ID: 12835
-// Function ID: 12836
+// Module ID: 12847
+// Function ID: 12848
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 4130, 673, 21, 4478, 709, 8543, 644, 4474, 1233, 9073, 2]
+// Dependencies: [19, 17, 4130, 673, 21, 4478, 709, 8547, 644, 4474, 1233, 9077, 2]
 // Exports: default
 
-// Module 12835 (RemediatedUserNotice)
+// Module 12847 (RemediatedUserNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

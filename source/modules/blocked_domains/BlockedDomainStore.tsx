@@ -1,9 +1,9 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8661
+// Function ID: 8662
 // Name: isBlockedDomain
 // Dependencies: [673, 1915, 695, 2]
 
-// Module 8657 (isBlockedDomain)
+// Module 8661 (isBlockedDomain)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;

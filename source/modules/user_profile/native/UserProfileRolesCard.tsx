@@ -1,10 +1,10 @@
-// Module ID: 5984
-// Function ID: 5985
+// Module ID: 5985
+// Function ID: 5986
 // Name: RoleDot
-// Dependencies: [19, 17, 1991, 1984, 673, 21, 4478, 709, 5985, 4166, 5988, 5989, 4193, 1233, 5986, 5994, 6005, 4474, 5076, 586, 6007, 6008, 2]
+// Dependencies: [19, 17, 1991, 1984, 673, 21, 4478, 709, 5986, 4166, 5989, 5990, 4193, 1233, 5987, 5995, 6006, 4474, 5077, 586, 6008, 6009, 2]
 // Exports: default
 
-// Module 5984 (RoleDot)
+// Module 5985 (RoleDot)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -184,8 +184,8 @@ export default function UserProfileRolesCard(userId) {
     obj[0] = guildId;
     obj[1] = roles;
     obj[2] = callback(RolesList, obj);
-    tmp4 = callback(guildId(6008), obj);
-    const tmp7 = guildId(6008);
+    tmp4 = callback(guildId(6009), obj);
+    const tmp7 = guildId(6009);
   }
   return tmp4;
 };

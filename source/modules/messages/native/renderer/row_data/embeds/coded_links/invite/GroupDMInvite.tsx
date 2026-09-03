@@ -1,17 +1,17 @@
-// Module ID: 13099
-// Function ID: 13100
+// Module ID: 13111
+// Function ID: 13112
 // Name: createGroupDMInvite
-// Dependencies: [1386, 4130, 1921, 7491, 7863, 11167, 1233, 9443, 1433, 4674, 2]
+// Dependencies: [1386, 4130, 1921, 7492, 7866, 11171, 1233, 9447, 1433, 4674, 2]
 // Exports: createGroupDMInvite
 
-// Module 13099 (createGroupDMInvite)
+// Module 13111 (createGroupDMInvite)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7863 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 11167 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 11171 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { InviteTypes } from "InviteSendStates" /* 7491 */;
+import { InviteTypes } from "InviteSendStates" /* 7492 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/GroupDMInvite.tsx");
@@ -56,7 +56,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    let tmp8Result = tmp8(9443);
+    let tmp8Result = tmp8(9447);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;

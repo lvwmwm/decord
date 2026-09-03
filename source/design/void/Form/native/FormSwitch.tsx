@@ -1,10 +1,10 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8388
+// Function ID: 8389
 // Name: FormSwitch
 // Dependencies: [19, 17, 21, 4478, 709, 4413, 1362, 2]
 // Exports: default
 
-// Module 8384 (FormSwitch)
+// Module 8388 (FormSwitch)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;

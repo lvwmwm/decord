@@ -1,10 +1,10 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17764
+// Function ID: 17765
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 673, 3, 1919, 1915, 1912, 695, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 17740 (libDiscoreSmokeTest)
+// Module 17764 (libDiscoreSmokeTest)
 import timestampDefault from "timestamp" /* 3 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

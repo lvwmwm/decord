@@ -1,16 +1,16 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16142
+// Function ID: 16143
 // Name: Wrapper
-// Dependencies: [19, 17, 7390, 1908, 5389, 4701, 4497, 673, 21, 4478, 586, 10260, 4474, 1233, 16127, 4338, 4335, 2]
+// Dependencies: [19, 17, 7391, 1908, 5390, 4702, 4497, 673, 21, 4478, 586, 10264, 4474, 1233, 16143, 4338, 4335, 2]
 // Exports: default
 
-// Module 16126 (Wrapper)
+// Module 16142 (Wrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 7390 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "insertUnsortedGuilds" /* 5389 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_7 from "insertUnsortedGuilds" /* 5390 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_9 from "updateVoiceState" /* 4497 */;
 import { NOOP } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

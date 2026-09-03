@@ -1,14 +1,14 @@
-// Module ID: 15206
-// Function ID: 15207
+// Module ID: 15221
+// Function ID: 15222
 // Name: EmojiMoneyMouthFaceIcon
-// Dependencies: [19, 21, 709, 4196, 15207, 2]
+// Dependencies: [19, 21, 709, 4196, 15222, 2]
 // Exports: EmojiMoneyMouthFaceIcon
 
-// Module 15206 (EmojiMoneyMouthFaceIcon)
+// Module 15221 (EmojiMoneyMouthFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15207 */;
+import registerAsset from "registerAsset" /* 15222 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,11 +1,11 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7918
+// Function ID: 7919
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1991, 4120, 1921, 673, 6124, 2]
+// Dependencies: [1991, 4120, 1921, 673, 6125, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7915 (computeIsStickerReplyEnabled)
-import useCanStartPrivateThread from "useCanStartPrivateThread" /* 6124 */;
+// Module 7918 (computeIsStickerReplyEnabled)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 6125 */;
 import closure_2 from "trackCommunicationDisabled" /* 1991 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;

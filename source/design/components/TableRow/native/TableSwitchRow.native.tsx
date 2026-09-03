@@ -1,14 +1,14 @@
-// Module ID: 6001
-// Function ID: 6002
+// Module ID: 6002
+// Function ID: 6003
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4478, 1234, 4199, 5607, 4474, 6002, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 1234, 4199, 5608, 4474, 6003, 2]
 // Exports: TableSwitchRow
 
-// Module 6001 (TableSwitchRow)
+// Module 6002 (TableSwitchRow)
 import set from "set" /* 1234 */;
 import getNodeText from "getNodeText" /* 4199 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import FormSwitch from "FormSwitch" /* 6002 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import FormSwitch from "FormSwitch" /* 6003 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

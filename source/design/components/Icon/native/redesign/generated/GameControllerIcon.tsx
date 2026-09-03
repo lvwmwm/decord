@@ -1,14 +1,14 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9217
+// Function ID: 9218
 // Name: GameControllerIcon
-// Dependencies: [19, 21, 709, 4196, 8056, 2]
+// Dependencies: [19, 21, 709, 4196, 8059, 2]
 // Exports: GameControllerIcon
 
-// Module 9213 (GameControllerIcon)
+// Module 9217 (GameControllerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8056 */;
+import registerAsset from "registerAsset" /* 8059 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

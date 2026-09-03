@@ -1,14 +1,14 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16493
+// Function ID: 16494
 // Name: ChannelSubtitle
-// Dependencies: [19, 21, 10224, 4474, 16046, 10221, 2]
+// Dependencies: [19, 21, 10228, 4474, 16062, 10225, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16472 (ChannelSubtitle)
+// Module 16493 (ChannelSubtitle)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
-import getLayoutStyles from "getLayoutStyles" /* 10224 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16046 */;
+import getLayoutStyles from "getLayoutStyles" /* 10228 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16062 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -32,7 +32,7 @@ function ChannelSubtitle(arg0) {
     obj[3] = guildId;
     obj[4] = layout;
     obj[6] = !("voice" === channelSubtitleData.type && connected);
-    obj.children = tmp(10221).renderMessagePreviewMarkup(obj);
+    obj.children = tmp(10225).renderMessagePreviewMarkup(obj);
     return jsx(tmp(4474).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
   }
 }

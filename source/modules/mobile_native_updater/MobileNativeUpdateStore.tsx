@@ -1,14 +1,14 @@
-// Module ID: 14272
-// Function ID: 14273
+// Module ID: 14288
+// Function ID: 14289
 // Name: checkForNewerBuild
-// Dependencies: [4459, 3, 586, 706, 13868, 2]
+// Dependencies: [4459, 3, 586, 706, 13884, 2]
 
-// Module 14272 (checkForNewerBuild)
+// Module 14288 (checkForNewerBuild)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _checkForNewerBuild from "_checkForNewerBuild" /* 13868 */;
+import _checkForNewerBuild from "_checkForNewerBuild" /* 13884 */;
 import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL" /* 4459 */;
 
 ({ UPDATE_CONFIG: c3, UPDATE_CHECK_INTERVAL: c4 } = UPDATE_CHECK_INTERVAL);

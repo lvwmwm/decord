@@ -1,21 +1,21 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16562
+// Function ID: 16563
 // Name: MuteButton
-// Dependencies: [19, 17, 4121, 4122, 1386, 4701, 7630, 10875, 673, 7631, 21, 4478, 12162, 709, 4197, 586, 1498, 8015, 1233, 10261, 7867, 12089, 12150, 4731, 6245, 10872, 8767, 6250, 16542, 4204, 4217, 4479, 16442, 4482, 11421, 5076, 5507, 2]
+// Dependencies: [19, 17, 4121, 4122, 1386, 4702, 7631, 10879, 673, 7632, 21, 4478, 12168, 709, 4197, 586, 1498, 8018, 1233, 10265, 7870, 12095, 12156, 4732, 6246, 10876, 8771, 6251, 16563, 4204, 4217, 4479, 16463, 4482, 11426, 5077, 5508, 2]
 
-// Module 16541 (MuteButton)
+// Module 16562 (MuteButton)
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 6245 */;
+import registerAssetDefault from "registerAsset" /* 6246 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "initialize" /* 4121 */;
 import closure_6 from "storeThread" /* 4122 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4701 */;
-import useChannelDetailsStore from "useChannelDetailsStore" /* 7630 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10875 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4702 */;
+import useChannelDetailsStore from "useChannelDetailsStore" /* 7631 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10879 */;
 import { ChannelSettingsSections } from "ME" /* 673 */;
-import { SearchEntrypointAnalyticsLocations as closure_14 } from "SearchEntrypointAnalyticsLocations" /* 7631 */;
+import { SearchEntrypointAnalyticsLocations as closure_14 } from "SearchEntrypointAnalyticsLocations" /* 7632 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -52,8 +52,8 @@ function MuteButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = tmp5(stateFromStores ? 10261 : 7867);
-  return closure_15(channelId(8015).IconButton, obj, constants.MUTE);
+  obj[4] = tmp5(stateFromStores ? 10265 : 7870);
+  return closure_15(channelId(8018).IconButton, obj, constants.MUTE);
 }
 function SearchButton(channelId) {
   channelId = channelId.channelId;
@@ -79,8 +79,8 @@ function SearchButton(channelId) {
   let obj = channelId(586);
   const items1 = [closure_7];
   const stateFromStores = obj.useStateFromStores(items1, () => closure_1_7.getChannel(channelId));
-  const shouldHideChannelContent = channelId(4731).useShouldHideChannelContent(stateFromStores);
-  let obj2 = channelId(4731);
+  const shouldHideChannelContent = channelId(4732).useShouldHideChannelContent(stateFromStores);
+  let obj2 = channelId(4732);
   const token = channelId(4197).useToken(ThemesDefault.modules.mobile.CHANNEL_DETAILS_NAV_ICON_BUTTON_SIZE);
   const obj3 = channelId(4197);
   const token1 = channelId(4197).useToken(ThemesDefault.modules.mobile.CHANNEL_DETAILS_NAV_ICON_BUTTON_VARIANT);
@@ -92,7 +92,7 @@ function SearchButton(channelId) {
   obj[3] = token;
   obj[4] = registerAssetDefault;
   obj[5] = shouldHideChannelContent;
-  return callback2(channelId(8015).IconButton, obj, constants.SEARCH);
+  return callback2(channelId(8018).IconButton, obj, constants.SEARCH);
 }
 function SettingsButton(channel) {
   channel = channel.channel;
@@ -126,8 +126,8 @@ function SettingsButton(channel) {
   obj[1] = callback;
   obj[3] = token1;
   obj[4] = token;
-  obj[5] = navigation(6250);
-  return callback2(channel(8015).IconButton, obj, constants.SETTINGS);
+  obj[5] = navigation(6251);
+  return callback2(channel(8018).IconButton, obj, constants.SETTINGS);
 }
 function NavigationHeader(channel) {
   channel = channel.channel;
@@ -281,7 +281,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   S.__workletHash = 1270940013897;
   S.__initData = closure_22;
   const animatedStyle = obj.useAnimatedStyle(S);
-  obj = { style: items, children: callback2(cleanUp(16442), obj1) };
+  obj = { style: items, children: callback2(cleanUp(16463), obj1) };
   items = [callback4().searchHeader, animatedStyle];
   return callback2(cleanUp(4217).View, obj);
 });

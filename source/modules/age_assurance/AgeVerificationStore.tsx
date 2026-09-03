@@ -1,9 +1,9 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8734
+// Function ID: 8735
 // Name: initialize
 // Dependencies: [1921, 592, 586, 706, 2]
 
-// Module 8730 (initialize)
+// Module 8734 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
@@ -32,7 +32,7 @@ Object.defineProperty(prototype, "loading", {
   set: undefined
 });
 Object.defineProperty(prototype, "methods", {
-  get: function methods(arg0) {
+  get: function methods(first, arg1) {
     return c4;
   },
   set: undefined

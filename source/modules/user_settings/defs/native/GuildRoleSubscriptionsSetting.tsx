@@ -1,17 +1,17 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15044
+// Function ID: 15045
 // Name: route
-// Dependencies: [7893, 673, 15030, 15031, 11288, 1233, 15032, 15034, 2]
+// Dependencies: [7896, 673, 15045, 15046, 11292, 1233, 15047, 15049, 2]
 
-// Module 15029 (route)
+// Module 15044 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MobileUserSettings from "MobileUserSettings" /* 7893 */;
-import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15031 */;
-import TicketIcon from "TicketIcon" /* 15032 */;
-import createToggle from "createToggle" /* 11288 */;
+import MobileUserSettings from "MobileUserSettings" /* 7896 */;
+import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 15045 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15046 */;
+import TicketIcon from "TicketIcon" /* 15047 */;
+import createToggle from "createToggle" /* 11292 */;
 
 let closure_3 = MAX_SUBSCRIPTION_TIERS.UserGuildRoleSubscriptionRelationship;
 obj = {
@@ -29,7 +29,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
   getComponent() {
-    return require(15034) /* GuildRoleSubscriptionsSectionHeader */.default;
+    return require(15049) /* GuildRoleSubscriptionsSectionHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

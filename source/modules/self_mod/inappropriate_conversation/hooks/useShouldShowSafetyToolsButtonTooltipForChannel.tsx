@@ -1,16 +1,16 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 11252
+// Function ID: 11253
 // Name: useSafetyToolsButtonTooltipForChannel
-// Dependencies: [10874, 684, 11249, 10930, 11250, 11251, 2]
+// Dependencies: [10878, 684, 11253, 10934, 11254, 11255, 2]
 // Exports: useSafetyToolsButtonTooltipForChannel
 
-// Module 11248 (useSafetyToolsButtonTooltipForChannel)
+// Module 11252 (useSafetyToolsButtonTooltipForChannel)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 684 */;
-import handleConnectionOpen from "handleConnectionOpen" /* 10874 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10930 */;
-import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 11249 */;
-import getSafetyAlertsSettingOrDefault from "getSafetyAlertsSettingOrDefault" /* 11251 */;
+import handleConnectionOpen from "handleConnectionOpen" /* 10878 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10934 */;
+import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 11253 */;
+import getSafetyAlertsSettingOrDefault from "getSafetyAlertsSettingOrDefault" /* 11255 */;
 
 const SafetyWarningTypes = handleConnectionOpen.SafetyWarningTypes;
 const HOUR = setDefault.Millis.HOUR;

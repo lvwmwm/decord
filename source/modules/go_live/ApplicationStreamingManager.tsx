@@ -1,13 +1,13 @@
-// Module ID: 17674
-// Function ID: 17675
+// Module ID: 17694
+// Function ID: 17695
 // Name: updateRegion
-// Dependencies: [4500, 1215, 1386, 4398, 4575, 1980, 4568, 1921, 4545, 673, 12, 4663, 684, 4544, 4362, 706, 5494, 9578, 17654, 2]
+// Dependencies: [4500, 1215, 1386, 4398, 4575, 1980, 4568, 1921, 4545, 673, 12, 4663, 684, 4544, 4362, 706, 5495, 9582, 17674, 2]
 
-// Module 17674 (updateRegion)
+// Module 17694 (updateRegion)
 import setDefault from "set" /* 684 */;
 import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1921 */;
 import watchStream from "watchStream" /* 4663 */;
-import initializeDefault from "initialize" /* 5494 */;
+import initializeDefault from "initialize" /* 5495 */;
 import closure_3 from "reset" /* 4500 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;

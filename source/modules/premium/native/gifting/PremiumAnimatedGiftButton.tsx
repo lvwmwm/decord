@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12045
+// Function ID: 12046
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4470, 21, 4478, 709, 4197, 586, 1234, 4217, 5076, 5952, 2]
+// Dependencies: [19, 4470, 21, 4478, 709, 4197, 586, 1234, 4217, 5077, 5953, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 12039 (PremiumAnimatedGiftButton)
+// Module 12045 (PremiumAnimatedGiftButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { useRef } from "noop" /* 19 */;
@@ -81,7 +81,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj[3] = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj.children = jsx(stateFromStores(5952), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj[1] = jsx(_require(5076).PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  obj.children = jsx(stateFromStores(5953), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj[1] = jsx(_require(5077).PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
   return jsx(stateFromStores(4217).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
 };

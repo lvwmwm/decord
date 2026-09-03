@@ -1,10 +1,10 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7666
+// Function ID: 7667
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4470, 1908, 21, 4478, 586, 4947, 1233, 5952, 7664, 4474, 2]
+// Dependencies: [19, 17, 4470, 1908, 21, 4478, 586, 4948, 1233, 5953, 7667, 4474, 2]
 // Exports: default
 
-// Module 7663 (MemberVerificationAlertSuccess)
+// Module 7666 (MemberVerificationAlertSuccess)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

@@ -1,11 +1,11 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12752
+// Function ID: 12753
 // Name: fetchStore
-// Dependencies: [5, 12741, 673, 706, 527, 586, 2]
+// Dependencies: [5, 12753, 673, 706, 527, 586, 2]
 
-// Module 12740 (fetchStore)
+// Module 12752 (fetchStore)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "map" /* 12741 */;
+import importDefaultResult from "map" /* 12753 */;
 import ME from "ME" /* 673 */;
 import initialize from "initialize" /* 586 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9883
+// Function ID: 9884
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 4193, 5989, 8015, 4425, 1233, 2]
+// Dependencies: [19, 21, 4193, 5990, 8018, 4425, 1233, 2]
 // Exports: default
 
-// Module 9879 (SecureFramesCopyIcon)
+// Module 9883 (SecureFramesCopyIcon)
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

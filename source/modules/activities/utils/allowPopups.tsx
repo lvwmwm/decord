@@ -1,10 +1,10 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9636
+// Function ID: 9637
 // Name: allowPopups
 // Dependencies: [4506, 2]
 // Exports: allowPopups
 
-// Module 9632 (allowPopups)
+// Module 9636 (allowPopups)
 import set from "set" /* 2 */;
 import items3 from "items3" /* 4506 */;
 

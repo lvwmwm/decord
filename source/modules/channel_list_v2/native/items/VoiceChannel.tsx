@@ -1,21 +1,21 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16071
+// Function ID: 16072
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 19, 17, 7281, 4120, 4493, 4701, 4555, 10223, 673, 21, 709, 5010, 7655, 2008, 4727, 9644, 16053, 16056, 9537, 586, 16046, 9101, 4468, 7869, 9438, 695, 16047, 15936, 10872, 1233, 4666, 15950, 15941, 11854, 2]
+// Dependencies: [5, 19, 17, 7282, 4120, 4493, 4702, 4555, 10227, 673, 21, 709, 5011, 7658, 2008, 4728, 9648, 16069, 16072, 9541, 586, 16062, 9105, 4468, 7872, 9442, 695, 16063, 15952, 10876, 1233, 4666, 15966, 15957, 11860, 2]
 
-// Module 16055 (_handleVoiceChannelPress)
+// Module 16071 (_handleVoiceChannelPress)
 import ThemesDefault from "Themes" /* 709 */;
-import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11854 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11860 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 7281 */;
+import closure_6 from "handleConnectionOpen" /* 7282 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_10 from "getVoiceStatesForGuild" /* 4555 */;
 import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4555 */;
-import hairlineWidth from "hairlineWidth" /* 10223 */;
+import hairlineWidth from "hairlineWidth" /* 10227 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

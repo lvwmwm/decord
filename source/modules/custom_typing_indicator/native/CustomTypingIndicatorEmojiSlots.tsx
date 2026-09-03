@@ -1,15 +1,15 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15202
+// Function ID: 15203
 // Name: EmojiGlyph
-// Dependencies: [32, 19, 1924, 21, 15188, 15190, 15192, 15194, 15196, 15198, 15200, 15202, 15204, 15206, 15208, 15210, 15212, 15214, 15216, 15218, 15220, 15222, 15224, 15226, 15228, 15230, 4478, 5593, 1430, 4217, 4927, 4931, 9112, 1233, 3502, 1941, 5609, 12, 4926, 2]
+// Dependencies: [32, 19, 1924, 21, 15203, 15205, 15207, 15209, 15211, 15213, 15215, 15217, 15219, 15221, 15223, 15225, 15227, 15229, 15231, 15233, 15235, 15237, 15239, 15241, 15243, 15245, 4478, 5594, 1430, 4217, 4928, 4932, 9116, 1233, 3502, 1941, 5610, 12, 4927, 2]
 // Exports: default
 
-// Module 15187 (EmojiGlyph)
+// Module 15202 (EmojiGlyph)
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import CUSTOM_TYPING_INDICATOR_EMOJI_COUNT from "CUSTOM_TYPING_INDICATOR_EMOJI_COUNT" /* 1941 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import Stack from "Stack" /* 4926 */;
-import EmojiDefault from "Emoji" /* 5593 */;
+import Stack from "Stack" /* 4927 */;
+import EmojiDefault from "Emoji" /* 5594 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { EmojiIntention } from "set" /* 1924 */;
@@ -56,7 +56,7 @@ function PlaceholderEmojiGlyph(pressed) {
     obj[1] = items;
     return obj;
   };
-  obj = { pressed, withSpring: pressed(4927).withSpring, interpolate: pressed(4217).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4931).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
+  obj = { pressed, withSpring: pressed(4928).withSpring, interpolate: pressed(4217).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4932).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
   fn.__closure = obj;
   fn.__workletHash = 16574219123934;
   fn.__initData = closure_11;

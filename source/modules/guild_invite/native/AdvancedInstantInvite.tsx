@@ -1,10 +1,10 @@
-// Module ID: 17615
-// Function ID: 17616
+// Module ID: 17635
+// Function ID: 17636
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4130, 1921, 21, 4478, 4981, 4674, 17616, 9935, 17617, 4445, 17618, 2008, 17619, 1233, 6012, 5613, 4926, 709, 6000, 5607, 6001, 1398, 8678, 2]
+// Dependencies: [19, 17, 4130, 1921, 21, 4478, 4982, 4674, 17636, 9939, 17637, 4445, 17638, 2008, 17639, 1233, 6013, 5614, 4927, 709, 6001, 5608, 6002, 1398, 8682, 2]
 // Exports: default
 
-// Module 17615 (AdvancedInstantInvite)
+// Module 17635 (AdvancedInstantInvite)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;

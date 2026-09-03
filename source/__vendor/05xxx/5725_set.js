@@ -4,4 +4,4 @@
 // Dependencies: []
 
 // Module 5725 (set)
-arg5.HoverNativeProperties = new Set(["hoverEffect"]);
+arg5.FlingNativeProperties = new Set(["direction", "numberOfPointers"]);

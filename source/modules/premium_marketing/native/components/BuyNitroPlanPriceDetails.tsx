@@ -1,14 +1,14 @@
-// Module ID: 13269
-// Function ID: 13270
+// Module ID: 13281
+// Function ID: 13282
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [19, 17, 6092, 1923, 502, 21, 4478, 709, 586, 6089, 4474, 1233, 2]
+// Dependencies: [19, 17, 6093, 1923, 502, 21, 4478, 709, 586, 6090, 4474, 1233, 2]
 // Exports: default
 
-// Module 13269 (BuyNitroPlanPriceDetails)
+// Module 13281 (BuyNitroPlanPriceDetails)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_3 from "updateProduct" /* 6092 */;
+import closure_3 from "updateProduct" /* 6093 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import { CurrencyCodes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -54,7 +54,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
   const value = priceStringByProductId.get(item.productId);
   if (null != trialTier) {
     if (item.premiumTier === trialTier) {
-      let tmp2Result = tmp2(6089);
+      let tmp2Result = tmp2(6090);
       obj = { style: null, children: null };
       obj[0] = tmp.container;
       obj = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
@@ -98,11 +98,11 @@ export default function BuyNitroPlanPriceDetails(centered) {
       if (num == null) {
         num = 1;
       }
-      tmp2Result = tmp2(6089);
+      tmp2Result = tmp2(6090);
       let formatRateResult1 = null;
       if (null != value) {
-        formatRateResult1 = tmp2(6089).formatRate(value, item.interval, num);
-        const tmp2Result1 = tmp2(6089);
+        formatRateResult1 = tmp2(6090).formatRate(value, item.interval, num);
+        const tmp2Result1 = tmp2(6090);
       }
       const obj4 = { style: null, children: null };
       obj4[0] = tmp.container;

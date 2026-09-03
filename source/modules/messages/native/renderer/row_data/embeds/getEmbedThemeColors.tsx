@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7866
+// Function ID: 7867
 // Name: getEmbedThemeColors
 // Dependencies: [19, 4478, 1362, 709, 4326, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 7863 (getEmbedThemeColors)
+// Module 7866 (getEmbedThemeColors)
 import ThemesDefault from "Themes" /* 709 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import hexToRgba from "hexToRgba" /* 4326 */;

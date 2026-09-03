@@ -1,10 +1,10 @@
-// Module ID: 7392
-// Function ID: 7393
+// Module ID: 7393
+// Function ID: 7394
 // Name: shouldRemoveSelfMention
 // Dependencies: [673, 2]
 // Exports: default
 
-// Module 7392 (shouldRemoveSelfMention)
+// Module 7393 (shouldRemoveSelfMention)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

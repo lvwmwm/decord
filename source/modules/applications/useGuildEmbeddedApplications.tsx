@@ -1,10 +1,10 @@
-// Module ID: 9727
-// Function ID: 9728
+// Module ID: 9731
+// Function ID: 9732
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4519, 673, 586, 684, 1470, 5962, 2]
+// Dependencies: [5, 19, 4519, 673, 586, 684, 1470, 5963, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 9727 (importDefaultResult1)
+// Module 9731 (importDefaultResult1)
 import setDefault from "set" /* 684 */;
 import closure_4 from "noop" /* 19 */;
 import importDefaultResult1 from "addApplication" /* 4519 */;

@@ -1,17 +1,17 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13343
+// Function ID: 13344
 // Name: mapToUser
-// Dependencies: [5, 32, 19, 17, 1921, 7206, 673, 21, 4478, 709, 586, 13329, 38, 1470, 10856, 13330, 1233, 1350, 13331, 5961, 5981, 695, 7207, 4445, 13332, 2008, 4193, 5629, 4474, 5501, 13333, 13334, 10857, 6056, 4928, 5630, 9738, 10859, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 7207, 673, 21, 4478, 709, 586, 13344, 38, 1470, 10860, 13345, 1233, 1350, 13346, 5962, 5982, 695, 7208, 4445, 13347, 2008, 4193, 5630, 4474, 5502, 13348, 13349, 10861, 6057, 4929, 5631, 9742, 10863, 2]
 // Exports: default
 
-// Module 13328 (mapToUser)
+// Module 13343 (mapToUser)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "emitChanges" /* 7206 */;
+import closure_8 from "emitChanges" /* 7207 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

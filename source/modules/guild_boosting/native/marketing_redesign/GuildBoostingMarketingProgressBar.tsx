@@ -1,10 +1,10 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13476
+// Function ID: 13477
 // Name: BoostedGuildTiers
-// Dependencies: [32, 19, 17, 4470, 673, 21, 4478, 13462, 709, 4413, 644, 4217, 4369, 4927, 4940, 1362, 2]
+// Dependencies: [32, 19, 17, 4470, 673, 21, 4478, 13477, 709, 4413, 644, 4217, 4369, 4928, 4941, 1362, 2]
 // Exports: default
 
-// Module 13461 (BoostedGuildTiers)
+// Module 13476 (BoostedGuildTiers)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

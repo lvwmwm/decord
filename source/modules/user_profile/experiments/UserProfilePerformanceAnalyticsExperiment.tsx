@@ -1,10 +1,10 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8583
+// Function ID: 8584
 // Name: isUserProfilePerformanceAnalyticsEnabled
 // Dependencies: [1467, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 8579 (isUserProfilePerformanceAnalyticsEnabled)
+// Module 8583 (isUserProfilePerformanceAnalyticsEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14431
+// Function ID: 14432
 // Name: map
-// Dependencies: [5, 4529, 1980, 4965, 3, 14416, 14417, 14418, 10015, 6191, 2]
+// Dependencies: [5, 4529, 1980, 4966, 3, 14432, 14433, 14434, 10019, 6192, 2]
 
-// Module 14415 (map)
+// Module 14431 (map)
 import timestampDefault from "timestamp" /* 3 */;
-import _initializeDefault from "_initialize" /* 14416 */;
+import _initializeDefault from "_initialize" /* 14432 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "handleSoundCreateOrUpdate" /* 4965 */;
+import closure_6 from "handleSoundCreateOrUpdate" /* 4966 */;
 
 const require = arg1;
 let map = new Map();

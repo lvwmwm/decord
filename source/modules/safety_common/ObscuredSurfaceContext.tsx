@@ -1,10 +1,10 @@
-// Module ID: 8853
-// Function ID: 8854
+// Module ID: 8857
+// Function ID: 8858
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 8853 (context)
+// Module 8857 (context)
 import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;

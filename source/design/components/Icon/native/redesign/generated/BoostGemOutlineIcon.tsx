@@ -1,14 +1,14 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17414
+// Function ID: 17415
 // Name: BoostGemOutlineIcon
-// Dependencies: [19, 21, 709, 4196, 17395, 2]
+// Dependencies: [19, 21, 709, 4196, 17415, 2]
 // Exports: BoostGemOutlineIcon
 
-// Module 17394 (BoostGemOutlineIcon)
+// Module 17414 (BoostGemOutlineIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 17395 */;
+import registerAsset from "registerAsset" /* 17415 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

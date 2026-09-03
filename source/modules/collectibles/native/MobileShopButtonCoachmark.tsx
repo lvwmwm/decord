@@ -1,10 +1,10 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16631
+// Function ID: 16632
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 1383, 21, 4478, 709, 1233, 8987, 2]
+// Dependencies: [19, 17, 1383, 21, 4478, 709, 1233, 8991, 2]
 // Exports: default
 
-// Module 16611 (MobileShopButtonCoachmark)
+// Module 16631 (MobileShopButtonCoachmark)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;

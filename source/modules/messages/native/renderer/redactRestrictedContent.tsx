@@ -1,9 +1,9 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8026
+// Function ID: 8027
 // Name: nodeToText
 // Dependencies: [2]
 
-// Module 8023 (nodeToText)
+// Module 8026 (nodeToText)
 import set from "set" /* 2 */;
 
 function nodeToText(content) {

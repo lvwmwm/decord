@@ -1,10 +1,10 @@
-// Module ID: 11120
-// Function ID: 11121
+// Module ID: 11124
+// Function ID: 11125
 // Name: Tab
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 5660, 1233, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 5661, 1233, 2]
 // Exports: default
 
-// Module 11120 (Tab)
+// Module 11124 (Tab)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;

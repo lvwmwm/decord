@@ -1,10 +1,10 @@
-// Module ID: 8009
-// Function ID: 8010
+// Module ID: 8012
+// Function ID: 8013
 // Name: useChangelog
-// Dependencies: [19, 1995, 4492, 1979, 644, 8010, 2]
+// Dependencies: [19, 1995, 4492, 1979, 644, 8013, 2]
 // Exports: useCurrentChangelog
 
-// Module 8009 (useChangelog)
+// Module 8012 (useChangelog)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;

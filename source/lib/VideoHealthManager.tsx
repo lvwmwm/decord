@@ -1,15 +1,15 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 13715
+// Function ID: 13716
 // Name: calculateFps
-// Dependencies: [673, 3, 4754, 13701, 4558, 684, 2]
+// Dependencies: [673, 3, 4755, 13716, 4558, 684, 2]
 
-// Module 13700 (calculateFps)
+// Module 13715 (calculateFps)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import ME from "ME" /* 673 */;
 import sleep from "sleep" /* 4558 */;
-import isTablet from "isTablet" /* 4754 */;
-import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13701 */;
+import isTablet from "isTablet" /* 4755 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13716 */;
 
 const VideoToggleState = ME.VideoToggleState;
 class VideoHealthManager {

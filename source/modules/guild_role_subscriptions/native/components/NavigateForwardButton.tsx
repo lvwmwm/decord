@@ -1,16 +1,16 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15061
+// Function ID: 15062
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4478, 709, 5076, 4474, 1296, 15047, 2]
+// Dependencies: [19, 21, 4478, 709, 5077, 4474, 1296, 15062, 2]
 // Exports: default
 
-// Module 15046 (NavigateForwardButton)
+// Module 15061 (NavigateForwardButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import registerAssetDefault from "registerAsset" /* 15047 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import registerAssetDefault from "registerAsset" /* 15062 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

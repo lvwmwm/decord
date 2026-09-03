@@ -1,9 +1,9 @@
-// Module ID: 16787
-// Function ID: 16788
+// Module ID: 16807
+// Function ID: 16808
 // Name: styles
 // Dependencies: [4478, 709, 2]
 
-// Module 16787 (styles)
+// Module 16807 (styles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

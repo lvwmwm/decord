@@ -2,7 +2,7 @@
 // Function ID: 4654
 // Name: removeExecutablePathPrefix
 // Dependencies: [4514, 4654, 1234, 2]
-// Exports: getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
+// Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
 // Module 4653 (removeExecutablePathPrefix)
 import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4654 */;
@@ -23,7 +23,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "call", exe: "Object", distributor: "values", sku: "disabled", gameMetadata: "o", rawExePath: "isArray" };
+    return { gameName: "Array", gameId: "call", exe: "getCurrentUser", distributor: "window", sku: "HermesInternal", gameMetadata: "w", rawExePath: "__closure" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     let id = streamApplication.id;
@@ -79,6 +79,19 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     obj[6] = str;
     return obj;
   }
+};
+export const getGameAnalyticsMetadata = function getGameAnalyticsMetadata(currentGameForAnalytics) {
+  if (arg1) {
+    if (null != arg2) {
+      const _JSON = JSON;
+      let obj = { detected_game_id: null };
+      obj[0] = arg2;
+      let json = JSON.stringify(obj);
+    }
+    return json;
+  }
+  obj = _openRobloxURLWithRootPlaceId;
+  json = obj.getSubgameMetadata(currentGameForAnalytics);
 };
 export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, arr) {
   if (null != str) {

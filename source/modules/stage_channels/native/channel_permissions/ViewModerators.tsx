@@ -1,10 +1,10 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16658
+// Function ID: 16659
 // Name: ViewModerators
-// Dependencies: [5, 19, 1991, 1984, 1908, 673, 8687, 21, 695, 4445, 16639, 2008, 1498, 586, 5367, 9721, 1394, 1954, 4858, 1233, 4491, 9722, 4193, 1296, 9734, 4926, 6000, 5607, 9238, 2]
+// Dependencies: [5, 19, 1991, 1984, 1908, 673, 8691, 21, 695, 4445, 16659, 2008, 1498, 586, 5368, 9725, 1394, 1954, 4859, 1233, 4491, 9726, 4193, 1296, 9738, 4927, 6001, 5608, 9242, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 16638 (ViewModerators)
+// Module 16658 (ViewModerators)
 import noopAll from "noop" /* 19 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
@@ -14,7 +14,7 @@ import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { RowType } from "RowType" /* 8687 */;
+import { RowType } from "RowType" /* 8691 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -224,5 +224,5 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel, canSkip: flag };
-  obj2.openLazy(asyncRequireImpl(16639, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(asyncRequireImpl(16659, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

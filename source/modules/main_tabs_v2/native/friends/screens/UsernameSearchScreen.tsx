@@ -1,10 +1,10 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16608
+// Function ID: 16609
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 673, 21, 4478, 709, 695, 5602, 4915, 7626, 1234, 6057, 5078, 13817, 1233, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 695, 5603, 4916, 7627, 1234, 6058, 5079, 13833, 1233, 2]
 // Exports: default
 
-// Module 16588 (UsernameSearchScreen)
+// Module 16608 (UsernameSearchScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -40,7 +40,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5602)().insets;
+  const insets = ref(5603)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -56,7 +56,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(7626);
+  let obj = navigation(7627);
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = navigation(1234);
   let prop = null;
@@ -72,13 +72,13 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  let tmp3Result = tmp3(6057);
-  const items2 = [callback(ref(5078), { absolute: true }), ];
+  let tmp3Result = tmp3(6058);
+  const items2 = [callback(ref(5079), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(709).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13817);
+  tmp3Result = tmp3(13833);
   const intl = tmp7(1233).intl;
   obj3[2] = intl.string(navigation(1233).t.YEOwDM);
   obj3[3] = tmp.headerText;

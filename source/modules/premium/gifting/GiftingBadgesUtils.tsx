@@ -1,14 +1,14 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 13465
+// Function ID: 13466
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8573, 1921, 10737, 13451, 586, 4298, 1372, 2]
+// Dependencies: [8577, 1921, 10741, 13466, 586, 4298, 1372, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 13450 (getGiftingBadgeProgressPercent)
+// Module 13465 (getGiftingBadgeProgressPercent)
 import set from "set" /* 2 */;
-import initialize from "initialize" /* 8573 */;
-import apexExperiment from "apexExperiment" /* 10737 */;
-import apexExperiment2 from "apexExperiment" /* 13451 */;
+import initialize from "initialize" /* 8577 */;
+import apexExperiment from "apexExperiment" /* 10741 */;
+import apexExperiment2 from "apexExperiment" /* 13466 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 let closure_2 = initialize.getSingleRequirementThreshold;

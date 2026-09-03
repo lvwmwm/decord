@@ -1,9 +1,9 @@
-// Module ID: 6445
-// Function ID: 6446
+// Module ID: 6446
+// Function ID: 6447
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6445 (metadata)
+// Module 6446 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CouchSpotIllustration-2x.png.js");

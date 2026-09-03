@@ -1,9 +1,9 @@
-// Module ID: 8938
-// Function ID: 8939
+// Module ID: 8942
+// Function ID: 8943
 // Name: DisplayNameStyleColorPreset
 // Dependencies: [2]
 
-// Module 8938 (DisplayNameStyleColorPreset)
+// Module 8942 (DisplayNameStyleColorPreset)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/display_name_styles/types.tsx");

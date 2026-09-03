@@ -1,14 +1,14 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6845
+// Function ID: 6846
 // Name: NitroPlatinumBadgeLargeBadge
-// Dependencies: [21, 5501, 6845, 2]
+// Dependencies: [21, 5502, 6846, 2]
 // Exports: NitroPlatinumBadgeLargeBadge
 
-// Module 6844 (NitroPlatinumBadgeLargeBadge)
+// Module 6845 (NitroPlatinumBadgeLargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import vanityUrlDefault from "vanityUrl" /* 6845 */;
+import preloadDefault from "preload" /* 5502 */;
+import vanityUrlDefault from "vanityUrl" /* 6846 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroPlatinumBadgeLargeBadge.native.tsx");

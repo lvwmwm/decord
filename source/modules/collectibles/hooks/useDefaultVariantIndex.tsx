@@ -1,11 +1,11 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8907
+// Function ID: 8908
 // Name: useDefaultVariantIndex
-// Dependencies: [7312, 586, 7307, 2]
+// Dependencies: [7313, 586, 7308, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 8903 (useDefaultVariantIndex)
-import closure_2 from "map" /* 7312 */;
+// Module 8907 (useDefaultVariantIndex)
+import closure_2 from "map" /* 7313 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useDefaultVariantIndex.tsx");
@@ -21,7 +21,7 @@ export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
       const variants = product.variants;
       num = Math.max(0, variants.findIndex((skuId) => !set.has(skuId.skuId)));
     }
-    tmpResult = _require(7307);
+    tmpResult = _require(7308);
   }
   return num;
 };

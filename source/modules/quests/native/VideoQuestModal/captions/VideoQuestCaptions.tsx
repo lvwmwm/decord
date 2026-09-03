@@ -1,10 +1,10 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 14986
+// Function ID: 14987
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4478, 709, 686, 14972, 14974, 4918, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 686, 14987, 14989, 4919, 4474, 2]
 // Exports: VideoQuestCaptions
 
-// Module 14971 (VideoQuestCaptions)
+// Module 14986 (VideoQuestCaptions)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

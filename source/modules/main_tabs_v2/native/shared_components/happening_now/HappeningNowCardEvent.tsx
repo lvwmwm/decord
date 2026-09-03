@@ -1,15 +1,15 @@
-// Module ID: 15907
-// Function ID: 15908
+// Module ID: 15923
+// Function ID: 15924
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [19, 17, 1995, 1921, 15119, 673, 21, 4478, 709, 1296, 8106, 586, 15908, 9647, 9772, 695, 9781, 1430, 9771, 15120, 5042, 4474, 1896, 1233, 2]
+// Dependencies: [19, 17, 1995, 1921, 15134, 673, 21, 4478, 709, 1296, 8109, 586, 15924, 9651, 9776, 695, 9785, 1430, 9775, 15135, 5043, 4474, 1896, 1233, 2]
 
-// Module 15907 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15923 (HAPPENING_NOW_CONTENT_HEIGHT)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "_getSystemLocale" /* 1995 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

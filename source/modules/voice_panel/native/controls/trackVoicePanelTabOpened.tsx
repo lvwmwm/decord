@@ -1,10 +1,10 @@
-// Module ID: 16987
-// Function ID: 16988
+// Module ID: 17007
+// Function ID: 17008
 // Name: trackVoicePanelTabOpened
 // Dependencies: [4493, 673, 695, 2]
 // Exports: default
 
-// Module 16987 (trackVoicePanelTabOpened)
+// Module 17007 (trackVoicePanelTabOpened)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_2 from "generateOldThreadCutoff" /* 4493 */;
 import { AnalyticEvents } from "ME" /* 673 */;

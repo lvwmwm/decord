@@ -1,10 +1,10 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11827
+// Function ID: 11828
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 4555, 21, 4478, 586, 5054, 709, 4474, 2]
+// Dependencies: [19, 17, 4555, 21, 4478, 586, 5055, 709, 4474, 2]
 // Exports: default
 
-// Module 11821 (GameInviteVoiceCount)
+// Module 11827 (GameInviteVoiceCount)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -30,7 +30,7 @@ export default function GameInviteVoiceCount(channel) {
     obj[0] = tmp.container;
     obj = { size: "xs", color: null };
     obj[1] = ThemesDefault.colors.ICON_FEEDBACK_POSITIVE;
-    const items2 = [callback(tmp2(5054).VoiceNormalIcon, obj), ];
+    const items2 = [callback(tmp2(5055).VoiceNormalIcon, obj), ];
     obj1 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     obj1[2] = stateFromStores;
     items2[1] = callback(tmp2(4474).Text, obj1);

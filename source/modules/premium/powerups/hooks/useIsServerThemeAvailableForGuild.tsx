@@ -1,10 +1,10 @@
-// Module ID: 13873
-// Function ID: 13874
+// Module ID: 13889
+// Function ID: 13890
 // Name: useIsServerThemeAvailableForGuild
 // Dependencies: [4407, 4359, 2]
 // Exports: default
 
-// Module 13873 (useIsServerThemeAvailableForGuild)
+// Module 13889 (useIsServerThemeAvailableForGuild)
 import set from "set" /* 2 */;
 import resolveSavedActiveGuildTheme from "resolveSavedActiveGuildTheme" /* 4359 */;
 import experiment from "experiment" /* 4407 */;

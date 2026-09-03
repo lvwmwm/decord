@@ -1,10 +1,10 @@
-// Module ID: 13723
-// Function ID: 13724
+// Module ID: 13739
+// Function ID: 13740
 // Name: getKrispCpuDisablementConfig
 // Dependencies: [1467, 2]
 // Exports: getKrispCpuDisablementConfig
 
-// Module 13723 (getKrispCpuDisablementConfig)
+// Module 13739 (getKrispCpuDisablementConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

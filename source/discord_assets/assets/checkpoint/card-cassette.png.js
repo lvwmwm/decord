@@ -1,9 +1,9 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8074
+// Function ID: 8075
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8071 (metadata)
+// Module 8074 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-cassette.png.js");

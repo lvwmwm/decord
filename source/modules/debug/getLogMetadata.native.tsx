@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10304
+// Function ID: 10305
 // Name: getLogMetadata
 // Dependencies: [1624, 4457, 2]
 // Exports: default
 
-// Module 10300 (getLogMetadata)
+// Module 10304 (getLogMetadata)
 import set from "set" /* 2 */;
 import getConstantsAll from "getConstants" /* 1624 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;

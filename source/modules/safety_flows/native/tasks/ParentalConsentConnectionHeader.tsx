@@ -1,10 +1,10 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 17721
+// Function ID: 17722
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [19, 17, 1921, 21, 4478, 5500, 709, 1627, 586, 4474, 6060, 1233, 2662, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 5501, 709, 1627, 586, 4474, 6061, 1233, 2662, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 17697 (ParentalConsentConnectionNavbar)
+// Module 17721 (ParentalConsentConnectionNavbar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;

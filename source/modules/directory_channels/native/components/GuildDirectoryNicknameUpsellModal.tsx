@@ -1,27 +1,27 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12436
+// Function ID: 12437
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 32, 19, 17, 1908, 12413, 21, 4478, 5500, 709, 586, 5602, 5496, 4376, 6012, 4474, 1233, 7713, 1296, 4928, 12414, 12423, 5503, 6016, 5949, 2]
+// Dependencies: [5, 32, 19, 17, 1908, 12425, 21, 4478, 5501, 709, 586, 5603, 5497, 4376, 6013, 4474, 1233, 7716, 1296, 4929, 12426, 12435, 5504, 6017, 5950, 2]
 // Exports: default
 
-// Module 12424 (GuildDirectoryNicknameUpsell)
+// Module 12436 (GuildDirectoryNicknameUpsell)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import Button2 from "Button" /* 4928 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import useInitialValueDefault from "useInitialValue" /* 5949 */;
-import GuildIconSizes from "GuildIconSizes" /* 6012 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
-import _modDef7713 from "module_7713" /* 7713 */;
+import Button2 from "Button" /* 4929 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
+import useInitialValueDefault from "useInitialValue" /* 5950 */;
+import GuildIconSizes from "GuildIconSizes" /* 6013 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
+import _modDef7716 from "module_7716" /* 7716 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildPrompts } from "GuildPrompts" /* 12413 */;
+import { GuildPrompts } from "GuildPrompts" /* 12425 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -132,7 +132,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = callback(_modDef7713, obj5);
+  items2[2] = callback(_modDef7716, obj5);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj7 = { style: tmp.redesignButtonContainer, children: null };
   const obj8 = { size: "lg", text: null, onPress: null };
@@ -175,7 +175,7 @@ const result = require("set").fileFinishedImporting("modules/directory_channels/
 
 export default function GuildDirectoryNicknameUpsellModal(arg0) {
   const _require = arg0;
-  return callback(_require(6016).Navigator, {
+  return callback(_require(6017).Navigator, {
     screens: useInitialValueDefault(() => {
       ({ guildId: closure_0, onHide: closure_1 } = callback);
       function handleClose() {

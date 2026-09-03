@@ -1,26 +1,26 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14548
+// Function ID: 14549
 // Name: PasswordlessUpsell
-// Dependencies: [32, 19, 17, 14533, 7893, 11675, 673, 14534, 21, 4478, 709, 1498, 5609, 5501, 14535, 4474, 1233, 4928, 4723, 14536, 2008, 586, 14559, 7733, 6064, 6000, 11288, 14560, 14563, 14578, 7168, 9273, 695, 9784, 9281, 2]
+// Dependencies: [32, 19, 17, 14549, 7896, 11680, 673, 14550, 21, 4478, 709, 1498, 5610, 5502, 14551, 4474, 1233, 4929, 4724, 14552, 2008, 586, 14574, 7736, 6065, 6001, 11292, 14575, 14578, 14593, 7169, 9277, 695, 9788, 9285, 2]
 
-// Module 14532 (PasswordlessUpsell)
+// Module 14548 (PasswordlessUpsell)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import preloadDefault from "preload" /* 5501 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7168 */;
-import useSegmentedControlState from "useSegmentedControlState" /* 9273 */;
-import SegmentedControlPage from "SegmentedControlPage" /* 9281 */;
-import SegmentedControl from "SegmentedControl" /* 9784 */;
-import _modDef14563 from "module_14563" /* 14563 */;
-import AutomatedUnderageAppealStatus from "AutomatedUnderageAppealStatus" /* 14578 */;
+import preloadDefault from "preload" /* 5502 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7169 */;
+import useSegmentedControlState from "useSegmentedControlState" /* 9277 */;
+import SegmentedControlPage from "SegmentedControlPage" /* 9285 */;
+import SegmentedControl from "SegmentedControl" /* 9788 */;
+import _modDef14578 from "module_14578" /* 14578 */;
+import handleLogInClick from "handleLogInClick" /* 14593 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "hasFetchedCredentials" /* 14533 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11675 */;
+import closure_6 from "hasFetchedCredentials" /* 14549 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11680 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { WebAuthnScreens } from "WebAuthnScreens" /* 14534 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14550 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -33,7 +33,7 @@ function PasswordlessUpsell() {
   obj = { border: "none", shadow: "none", children: null };
   obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
   const obj2 = { style: { width: 70, height: 70 }, children: null };
-  const obj3 = { source: _require(14535), resizeMode: "contain", style: tmp.upsellImagePasswordless };
+  const obj3 = { source: _require(14551), resizeMode: "contain", style: tmp.upsellImagePasswordless };
   obj2[1] = callback2(preloadDefault, obj3);
   const items = [callback2(View, obj2), ];
   const obj4 = { style: { flex: 1 }, children: null };
@@ -55,7 +55,7 @@ function PasswordlessUpsell() {
     obj = { navigation: callback, initialRouteName: closure_1_10.REGISTER, showNav: true };
     obj.pushLazy(callback(closure_1_2[20])(closure_1_2[19], closure_1_2.paths), obj);
   };
-  const items2 = [callback2(_require(4928).Button, obj9), callback2(View, {})];
+  const items2 = [callback2(_require(4929).Button, obj9), callback2(View, {})];
   obj8[1] = items2;
   items1[2] = callback3(View, obj8);
   obj5[1] = items1;
@@ -63,7 +63,7 @@ function PasswordlessUpsell() {
   items[1] = callback2(View, obj4);
   obj1[1] = items;
   obj[2] = callback3(View, obj1);
-  obj[1] = callback2(_require(5609).Card, obj);
+  obj[1] = callback2(_require(5610).Card, obj);
   return callback2(View, obj);
 }
 function AccountTwoFALabel() {
@@ -106,7 +106,7 @@ function AccountTwoFALabel() {
 }
 function AccountSecurityPage() {
   const node = importAllResult.useMemo(() => {
-    let obj = callback(11288);
+    let obj = callback(11292);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1233).intl;
@@ -126,13 +126,13 @@ function AccountSecurityPage() {
     obj2[1] = items3;
     items1[2] = obj2;
     obj[0] = items1.filter(Boolean);
-    obj[1] = callback2(14560);
+    obj[1] = callback2(14575);
     return obj.createList(obj);
   }, []);
-  return callback2(_modDef14563, { node });
+  return callback2(_modDef14578, { node });
 }
 function AccountStandingPage() {
-  return callback2(AutomatedUnderageAppealStatus.default, { visible: true });
+  return callback2(handleLogInClick.default, { visible: true });
 }
 let c4 = importAllResult;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);

@@ -1,9 +1,9 @@
-// Module ID: 9817
-// Function ID: 9818
+// Module ID: 9821
+// Function ID: 9822
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9817 (metadata)
+// Module 9821 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/tropical.png.js");

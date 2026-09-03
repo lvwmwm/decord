@@ -1,10 +1,10 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16507
+// Function ID: 16508
 // Name: useSearchMessageTimestamp
-// Dependencies: [19, 11, 7395, 2]
+// Dependencies: [19, 11, 7396, 2]
 // Exports: useSearchMessageTimestamp
 
-// Module 16486 (useSearchMessageTimestamp)
+// Module 16507 (useSearchMessageTimestamp)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

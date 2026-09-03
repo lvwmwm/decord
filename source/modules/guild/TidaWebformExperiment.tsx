@@ -1,9 +1,9 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 5989
+// Function ID: 5990
 // Name: experiment
 // Dependencies: [4389, 2]
 
-// Module 5988 (experiment)
+// Module 5989 (experiment)
 import set from "set" /* 2 */;
 import createExperiment from "createExperiment" /* 4389 */;
 

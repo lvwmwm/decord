@@ -1,10 +1,10 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11673
+// Function ID: 11674
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4478, 709, 5392, 4474, 1233, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5393, 4474, 1233, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11668 (ForumOriginalPoster)
+// Module 11673 (ForumOriginalPoster)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

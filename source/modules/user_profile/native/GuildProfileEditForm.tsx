@@ -1,20 +1,20 @@
-// Module ID: 14528
-// Function ID: 14529
+// Module ID: 14544
+// Function ID: 14545
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1991, 7375, 6009, 673, 1923, 21, 4139, 5961, 5981, 14468, 4445, 14469, 2008, 8084, 1233, 8082, 8177, 8543, 14480, 8080, 6242, 5602, 709, 9227, 14523, 586, 8122, 8544, 8559, 8087, 13923, 14529, 8541, 8545, 4474, 4204, 14530, 9233, 9100, 8936, 14490, 4322, 14491, 14500, 14502, 14503, 14507, 14511, 14499, 8402, 8226, 2]
+// Dependencies: [109, 19, 17, 1991, 7376, 6010, 673, 1923, 21, 4139, 5962, 5982, 14484, 4445, 14485, 2008, 8087, 1233, 8085, 8181, 8547, 14496, 8083, 6243, 5603, 709, 9231, 14539, 586, 8125, 8548, 8563, 8090, 13939, 14545, 8545, 8549, 4474, 4204, 14546, 9237, 9104, 8940, 14506, 4322, 14507, 14516, 14518, 14519, 14523, 14527, 14515, 8406, 8230, 2]
 // Exports: default
 
-// Module 14528 (EditGuildProfileBanner)
+// Module 14544 (EditGuildProfileBanner)
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import contextDefault from "context" /* 5961 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
-import ProfilePreviewButtonDefault from "ProfilePreviewButton" /* 14468 */;
+import contextDefault from "context" /* 5962 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+import ProfilePreviewButtonDefault from "ProfilePreviewButton" /* 14484 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createUserWidgetFromServer" /* 7375 */;
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import closure_9 from "createUserWidgetFromServer" /* 7376 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import ME from "ME" /* 673 */;
 import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -78,7 +78,7 @@ function EditGuildProfileBanner(user) {
   obj[8] = intl.string(user(1233).t["95hPAe"]);
   obj[9] = disabled;
   obj[1] = closure_17(ProfilePreviewButtonDefault, obj);
-  return closure_17(user(5961).AnalyticsLocationProvider, obj);
+  return closure_17(user(5962).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

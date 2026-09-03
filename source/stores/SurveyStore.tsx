@@ -1,15 +1,15 @@
-// Module ID: 4711
-// Function ID: 4712
+// Module ID: 4712
+// Function ID: 4713
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4398, 1908, 4120, 4299, 1921, 673, 684, 4712, 503, 592, 4074, 586, 706, 2]
+// Dependencies: [4398, 1908, 4120, 4299, 1921, 673, 684, 4713, 503, 592, 4074, 586, 706, 2]
 
-// Module 4711 (fetchSurveyIfNeeded)
+// Module 4712 (fetchSurveyIfNeeded)
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import hooksDefault from "hooks" /* 4074 */;
-import overrideSurvey from "overrideSurvey" /* 4712 */;
+import overrideSurvey from "overrideSurvey" /* 4713 */;
 import closure_4 from "handleInviteData" /* 4398 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
@@ -705,12 +705,16 @@ obj = {
     id = id.id;
     if (id.isActionTriggered) {
       c19 = id;
+      if (null != id) {
+        const hiddenSurveys2 = obj.hiddenSurveys;
+        delete tmp[tmp2];
+      }
     } else {
       c19 = null;
       obj.surveyOverride = id;
       if (null != id) {
         const hiddenSurveys = obj.hiddenSurveys;
-        delete tmp2[tmp];
+        delete tmp3[tmp2];
       }
       obj = overrideSurvey;
       obj.surveyFetch(obj.surveyOverride, true);

@@ -1,12 +1,12 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11888
+// Function ID: 11889
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 8443, 4217, 11883, 8907, 500, 2]
+// Dependencies: [19, 8447, 4217, 11889, 8911, 500, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11882 (useViewableAppLauncherHomeItems)
+// Module 11888 (useViewableAppLauncherHomeItems)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleDismissWithDismissed" /* 8443 */;
+import closure_3 from "handleDismissWithDismissed" /* 8447 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");

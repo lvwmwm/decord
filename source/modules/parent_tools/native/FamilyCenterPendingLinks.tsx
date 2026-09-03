@@ -1,20 +1,20 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14768
+// Function ID: 14769
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 7292, 21, 4478, 709, 8787, 11715, 1233, 2368, 4474, 8788, 5076, 4723, 14754, 2008, 1296, 9531, 14755, 14752, 14756, 14747, 2]
+// Dependencies: [19, 17, 7293, 21, 4478, 709, 8791, 11720, 1233, 2368, 4474, 8792, 5077, 4724, 14769, 2008, 1296, 9535, 14770, 14767, 14771, 14762, 2]
 // Exports: default
 
-// Module 14753 (FamilyCenterPendingLinkRow)
+// Module 14768 (FamilyCenterPendingLinkRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import Text from "Text" /* 4474 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8787 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8788 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11715 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8791 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8792 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11720 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UserLinkStatus } from "items" /* 7292 */;
+import { UserLinkStatus } from "items" /* 7293 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -22,7 +22,7 @@ require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback4();
-  str(8787);
+  str(8791);
   if (undefined === str) {
     return null;
   } else {
@@ -44,9 +44,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj[3] = tmp.actionButton;
       obj1 = { size: null, disableColor: true, source: null };
       obj1[0] = tmp5(1296).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14752);
+      obj1[2] = tmp2(14767);
       obj[4] = closure_5(tmp5(1296).Icon, obj1);
-      let tmp8Result = tmp17(tmp5(5076).PressableOpacity, obj);
+      let tmp8Result = tmp17(tmp5(5077).PressableOpacity, obj);
       let tmp14 = tmp17;
     } else {
       let tmp12Result = null;
@@ -70,9 +70,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj[3] = items;
         const obj3 = { size: null, disableColor: true, source: null };
         obj3[0] = tmp5(1296).Icon.Sizes.SMALL;
-        obj3[2] = tmp2(9531);
+        obj3[2] = tmp2(9535);
         obj[4] = closure_5(tmp5(1296).Icon, obj3);
-        tmp12Result = tmp12(tmp5(5076).PressableOpacity, obj);
+        tmp12Result = tmp12(tmp5(5077).PressableOpacity, obj);
       }
       const items1 = [tmp12Result, ];
       tmp14 = closure_5;
@@ -94,9 +94,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
       obj7[0] = tmp5(1296).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14752);
+      obj7[2] = tmp2(14767);
       obj5[4] = tmp14(tmp5(1296).Icon, obj7);
-      items1[1] = tmp14(tmp5(5076).PressableOpacity, obj5);
+      items1[1] = tmp14(tmp5(5077).PressableOpacity, obj5);
       obj4[0] = items1;
       tmp8Result = closure_6(closure_7, obj4);
       const tmp8 = closure_6;
@@ -105,7 +105,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14747), obj8);
+    return tmp14(tmp2(14762), obj8);
   }
   tmp4 = useIsInAdultAgeGroupDefault();
 }

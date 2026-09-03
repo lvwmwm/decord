@@ -1,10 +1,10 @@
-// Module ID: 4926
-// Function ID: 4927
+// Module ID: 4927
+// Function ID: 4928
 // Name: Stack
 // Dependencies: [19, 17, 21, 4478, 2]
 // Exports: Stack
 
-// Module 4926 (Stack)
+// Module 4927 (Stack)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

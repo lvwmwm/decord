@@ -1,10 +1,10 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13022
+// Function ID: 13023
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 502, 21, 4478, 709, 1233, 2500, 4474, 4928, 1296, 2]
+// Dependencies: [19, 17, 502, 21, 4478, 709, 1233, 2500, 4474, 4929, 1296, 2]
 // Exports: default
 
-// Module 13010 (InAppReportsBottomButton)
+// Module 13022 (InAppReportsBottomButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 2500 */;
@@ -84,7 +84,7 @@ export default function InAppReportsBottomButton(button) {
       };
       obj2[2] = stringResult2;
       obj2[3] = str2;
-      items1[1] = callback(tmp17(4928).Button, obj2);
+      items1[1] = callback(tmp17(4929).Button, obj2);
       tmp14Result = null;
       if (hasError) {
         const obj3 = { style: null, children: null };

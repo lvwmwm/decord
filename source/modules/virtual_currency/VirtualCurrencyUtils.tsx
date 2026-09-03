@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11141
+// Function ID: 11142
 // Name: get1PShopApplicationIdForSKU
 // Dependencies: [673, 675, 1383, 1923, 4298, 1372, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 11137 (get1PShopApplicationIdForSKU)
+// Module 11141 (get1PShopApplicationIdForSKU)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import items from "items" /* 675 */;

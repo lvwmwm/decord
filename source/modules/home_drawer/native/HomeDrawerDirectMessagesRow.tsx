@@ -1,17 +1,17 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16147
+// Function ID: 16148
 // Name: HomeDrawerDMsRow
-// Dependencies: [19, 17, 4569, 4130, 673, 21, 4478, 709, 586, 4474, 1233, 16127, 4338, 4335, 2]
+// Dependencies: [19, 17, 4569, 4130, 673, 21, 4478, 709, 586, 4474, 1233, 16143, 4338, 4335, 2]
 // Exports: default
 
-// Module 16131 (HomeDrawerDMsRow)
+// Module 16147 (HomeDrawerDMsRow)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4338 */;
 import Text from "Text" /* 4474 */;
-import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 16127 */;
+import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 16143 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "sortActivity" /* 4569 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;

@@ -1,9 +1,9 @@
-// Module ID: 14330
-// Function ID: 14331
+// Module ID: 14346
+// Function ID: 14347
 // Name: processColor
-// Dependencies: [32, 17, 1385, 4519, 4500, 1386, 4529, 4554, 4130, 1921, 673, 709, 7512, 7511, 10145, 9268, 4674, 1233, 4662, 2]
+// Dependencies: [32, 17, 1385, 4519, 4500, 1386, 4529, 4554, 4130, 1921, 673, 709, 7513, 7512, 10149, 9272, 4674, 1233, 4662, 2]
 
-// Module 14330 (processColor)
+// Module 14346 (processColor)
 import ThemesDefault from "Themes" /* 709 */;
 import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_INVALID_MANDATE_TYPE", embeddedActivity: "SEPA mandate type is invalid", isStreaming: "aC" };
+    obj.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED", embeddedActivity: "Something went wrong when setting up the checkout workflow.", isStreaming: "Djibouti" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_INVALID_MANDATE_TYPE", embeddedActivity: "SEPA mandate type is invalid", isStreaming: "aC" };
+set.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED", embeddedActivity: "Something went wrong when setting up the checkout workflow.", isStreaming: "Djibouti" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

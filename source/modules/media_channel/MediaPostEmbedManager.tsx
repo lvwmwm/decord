@@ -1,16 +1,16 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17641
+// Function ID: 17642
 // Name: resolveMediaPostEmbeds
-// Dependencies: [1982, 1215, 1991, 11280, 673, 690, 4669, 1398, 11671, 5494, 17237, 2]
+// Dependencies: [1982, 1215, 1991, 11284, 673, 690, 4669, 1398, 11676, 5495, 17257, 2]
 
-// Module 17621 (resolveMediaPostEmbeds)
-import initializeDefault from "initialize" /* 5494 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17237 */;
+// Module 17641 (resolveMediaPostEmbeds)
+import initializeDefault from "initialize" /* 5495 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17257 */;
 import closure_3 from "isSubscriptionGated" /* 1982 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "getMediaPostEmbed" /* 11280 */;
-import { FetchState } from "getMediaPostEmbed" /* 11280 */;
+import closure_6 from "getMediaPostEmbed" /* 11284 */;
+import { FetchState } from "getMediaPostEmbed" /* 11284 */;
 import { MessageFlags } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

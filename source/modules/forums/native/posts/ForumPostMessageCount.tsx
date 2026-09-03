@@ -1,16 +1,16 @@
-// Module ID: 11813
-// Function ID: 11814
+// Module ID: 11819
+// Function ID: 11820
 // Name: num2
-// Dependencies: [19, 17, 21, 4478, 709, 1234, 7638, 1233, 5024, 4474, 11173, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1234, 7639, 1233, 5025, 4474, 11177, 2]
 // Exports: default
 
-// Module 11813 (num2)
+// Module 11819 (num2)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ChatIcon from "ChatIcon" /* 5024 */;
-import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7638 */;
-import AnimatedCountDefault from "AnimatedCount" /* 11173 */;
+import ChatIcon from "ChatIcon" /* 5025 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7639 */;
+import AnimatedCountDefault from "AnimatedCount" /* 11177 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

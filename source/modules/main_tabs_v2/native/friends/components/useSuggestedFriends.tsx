@@ -1,14 +1,14 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15884
+// Function ID: 15885
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7416, 12461, 644, 12, 4322, 2]
+// Dependencies: [32, 19, 7417, 12473, 644, 12, 4322, 2]
 // Exports: default
 
-// Module 15868 (useSuggestedFriends)
+// Module 15884 (useSuggestedFriends)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "initialize" /* 7416 */;
-import { SuggestedFriendSource } from "SuggestedFriendSource" /* 12461 */;
+import closure_5 from "initialize" /* 7417 */;
+import { SuggestedFriendSource } from "SuggestedFriendSource" /* 12473 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");

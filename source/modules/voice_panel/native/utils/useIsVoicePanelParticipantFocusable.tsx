@@ -1,10 +1,10 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16917
+// Function ID: 16918
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1385, 4494, 4500, 4529, 4499, 9604, 1470, 586, 2]
+// Dependencies: [1385, 4494, 4500, 4529, 4499, 9608, 1470, 586, 2]
 // Exports: default
 
-// Module 16897 (isVoicePanelParticipantFocusable)
+// Module 16917 (isVoicePanelParticipantFocusable)
 import closure_2 from "participantFromServer" /* 1385 */;
 import closure_3 from "getParticipants" /* 4494 */;
 import closure_4 from "reset" /* 4500 */;
@@ -46,7 +46,7 @@ function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, cl
       if (callback2(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, sharedValue1);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(9604);
+        let tmp4Result = tmp4(9608);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
         tmp4Result = tmp4(1470);

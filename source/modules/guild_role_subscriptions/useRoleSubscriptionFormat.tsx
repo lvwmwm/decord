@@ -1,15 +1,15 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17560
+// Function ID: 17561
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 1985, 1984, 1908, 15030, 673, 586, 2]
+// Dependencies: [19, 1985, 1984, 1908, 15045, 673, 586, 2]
 // Exports: default
 
-// Module 17540 (useRoleSubscriptionFormat)
+// Module 17560 (useRoleSubscriptionFormat)
 import closure_2 from "noop" /* 19 */;
 import { hasPermission } from "GuildRoleRecordTypeTag" /* 1985 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildRoleSubscriptionFormat as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
+import { GuildRoleSubscriptionFormat as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 15045 */;
 import { Permissions } from "ME" /* 673 */;
 
 const require = arg1;

@@ -1,25 +1,20 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7540
+// Function ID: 7541
 // Name: items
-// Dependencies: [5, 7540, 7541, 7542, 7543, 7544, 7545, 7546, 7547, 7548, 7549, 7550, 7551, 7552, 7553, 7554, 7555, 7556, 7557, 7558, 7559, 7560, 7561, 7562, 7563, 7564, 7565, 7566, 7567, 7568, 7569, 7570, 7571, 7572, 7573, 7574, 7575, 7576, 2]
+// Dependencies: [5, 7541, 7542, 7543, 7544, 7545, 7546, 7547, 7548, 7549, 7550, 7551, 7552, 7553, 7554, 7555, 7556, 7557, 7558, 7559, 7560, 7561, 7562, 7563, 7564, 7565, 7566, 7567, 7568, 7569, 7570, 7571, 7572, 7573, 7574, 7575, 7576, 7577, 2]
 // Exports: getBurstAnimation
 
-// Module 7539 (items)
+// Module 7540 (items)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7540);
+    return callback(7541);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7541);
-    }
-  },
   {
     load() {
       return callback(7542);
@@ -99,20 +94,20 @@ const items = [
     load() {
       return callback(7557);
     }
+  },
+  {
+    load() {
+      return callback(7558);
+    }
   }
 ];
 obj = {
   load() {
-    return callback(7558);
+    return callback(7559);
   }
 };
 const items1 = [
   obj,
-  {
-    load() {
-      return callback(7559);
-    }
-  },
   {
     load() {
       return callback(7560);
@@ -191,6 +186,11 @@ const items1 = [
   {
     load() {
       return callback(7575);
+    }
+  },
+  {
+    load() {
+      return callback(7576);
     }
   }
 ];

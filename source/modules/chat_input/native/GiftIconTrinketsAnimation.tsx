@@ -1,15 +1,15 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12046
+// Function ID: 12047
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4470, 21, 4478, 4197, 709, 586, 1901, 1234, 8530, 5501, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 4197, 709, 586, 1901, 1234, 8534, 5502, 2]
 
-// Module 12040 (GiftIconTrinketsAnimation)
+// Module 12046 (GiftIconTrinketsAnimation)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
 import map from "map" /* 4197 */;
-import preloadDefault from "preload" /* 5501 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8530 */;
+import preloadDefault from "preload" /* 5502 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8534 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { jsx } from "jsxProd" /* 21 */;

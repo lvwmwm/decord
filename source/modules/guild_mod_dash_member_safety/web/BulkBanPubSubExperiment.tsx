@@ -1,10 +1,10 @@
-// Module ID: 6175
-// Function ID: 6176
+// Module ID: 6176
+// Function ID: 6177
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: useBulkBanPubSubExperimentConfig
 
-// Module 6175 (apexExperiment)
+// Module 6176 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13590
-// Function ID: 13591
+// Module ID: 13605
+// Function ID: 13606
 // Name: GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT
 // Dependencies: [1467, 2]
 
-// Module 13590 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
+// Module 13605 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

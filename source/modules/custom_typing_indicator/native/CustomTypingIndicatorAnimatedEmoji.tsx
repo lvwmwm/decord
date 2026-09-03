@@ -1,13 +1,13 @@
-// Module ID: 11777
-// Function ID: 11778
+// Module ID: 11783
+// Function ID: 11784
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 7166, 673, 21, 4478, 1355, 4166, 4217, 586, 1929, 4479, 5593, 1430, 2]
+// Dependencies: [32, 19, 7167, 673, 21, 4478, 1355, 4166, 4217, 586, 1929, 4479, 5594, 1430, 2]
 // Exports: default
 
-// Module 11777 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11783 (CustomTypingIndicatorAnimatedEmoji)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getState" /* 7166 */;
+import closure_5 from "getState" /* 7167 */;
 import { AppStates } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

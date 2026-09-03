@@ -1,14 +1,14 @@
-// Module ID: 11269
-// Function ID: 11270
+// Module ID: 11273
+// Function ID: 11274
 // Name: ArrowLargeUpIcon
-// Dependencies: [19, 21, 709, 4196, 11270, 2]
+// Dependencies: [19, 21, 709, 4196, 11274, 2]
 // Exports: ArrowLargeUpIcon
 
-// Module 11269 (ArrowLargeUpIcon)
+// Module 11273 (ArrowLargeUpIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11270 */;
+import registerAsset from "registerAsset" /* 11274 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

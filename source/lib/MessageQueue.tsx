@@ -1,14 +1,14 @@
-// Module ID: 7588
-// Function ID: 7589
+// Module ID: 7589
+// Function ID: 7590
 // Name: items
-// Dependencies: [109, 4477, 1215, 4574, 673, 4471, 684, 7589, 3, 4700, 7590, 7214, 527, 1954, 38, 5080, 5082, 5086, 2]
+// Dependencies: [109, 4477, 1215, 4574, 673, 4471, 684, 7590, 3, 4701, 7591, 7215, 527, 1954, 38, 5081, 5083, 5087, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7588 (items)
+// Module 7589 (items)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
-import enqueueDefault from "enqueue" /* 7589 */;
-import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7590 */;
+import enqueueDefault from "enqueue" /* 7590 */;
+import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7591 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "getUserAgnosticState" /* 4477 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
@@ -208,7 +208,7 @@ prototype["handleSend"] = function handleSend(nonce) {
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7214);
+  obj1 = handleCommand(7215);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(nonce, closure_3));
@@ -258,7 +258,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7214);
+  obj1 = handleCommand(7215);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(message, closure_4));

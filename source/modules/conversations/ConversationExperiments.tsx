@@ -1,10 +1,10 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7826
+// Function ID: 7827
 // Name: apexExperiment
 // Dependencies: [1908, 673, 1467, 586, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 7823 (apexExperiment)
+// Module 7826 (apexExperiment)
 import closure_2 from "createGuildRecordFromRust" /* 1908 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;

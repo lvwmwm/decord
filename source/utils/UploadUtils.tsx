@@ -1,13 +1,13 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 5083
+// Function ID: 5084
 // Name: items
-// Dependencies: [5083, 5081, 2]
+// Dependencies: [5084, 5082, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 5082 (items)
+// Module 5083 (items)
 import set from "set" /* 2 */;
-import cancel from "cancel" /* 5081 */;
-import getClipCreatedAt from "getClipCreatedAt" /* 5083 */;
+import cancel from "cancel" /* 5082 */;
+import getClipCreatedAt from "getClipCreatedAt" /* 5084 */;
 
 const items = [
   {

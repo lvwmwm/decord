@@ -1,13 +1,13 @@
-// Module ID: 9094
-// Function ID: 9095
+// Module ID: 9098
+// Function ID: 9099
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4478, 709, 4947, 1233, 4857, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4948, 1233, 4858, 4474, 2]
 // Exports: default
 
-// Module 9094 (AcceptRequestConfirmationModal)
+// Module 9098 (AcceptRequestConfirmationModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import componentDidMountDefault from "componentDidMount" /* 4947 */;
+import componentDidMountDefault from "componentDidMount" /* 4948 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

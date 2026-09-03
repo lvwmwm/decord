@@ -1,13 +1,13 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13240
+// Function ID: 13241
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 12531, 4474, 1233, 4139, 4928, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 12543, 4474, 1233, 4139, 4929, 2]
 // Exports: default
 
-// Module 13228 (SubscriptionAccountHoldNotice)
+// Module 13240 (SubscriptionAccountHoldNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 12531 */;
+import registerAssetDefault from "registerAsset" /* 12543 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { SubscriptionStatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -56,7 +56,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj3[2] = function onPress() {
       return closure_1_3.openURL(subscription(closure_1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4928).Button, obj3);
+    items1[1] = callback(subscription(4929).Button, obj3);
     obj[1] = items1;
     tmp2 = callback2(closure_4, obj);
     const obj6 = subscription(4139);

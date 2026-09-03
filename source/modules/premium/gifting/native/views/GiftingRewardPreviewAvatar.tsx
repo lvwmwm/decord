@@ -1,10 +1,10 @@
-// Module ID: 11013
-// Function ID: 11014
+// Module ID: 11017
+// Function ID: 11018
 // Name: GiftingRewardPreviewAvatar
 // Dependencies: [19, 4470, 1921, 21, 586, 1296, 2]
 // Exports: default
 
-// Module 11013 (GiftingRewardPreviewAvatar)
+// Module 11017 (GiftingRewardPreviewAvatar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import Button from "Button" /* 1296 */;
@@ -28,9 +28,9 @@ export default function GiftingRewardPreviewAvatar(asset) {
     obj[0] = asset.asset;
     tmp5 = obj;
   }
-  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "getChannelIcon", animate: "landscape" };
+  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "PX_16", animate: null };
   obj[2] = tmp5;
   obj[3] = !stateFromStores1;
   const merged = Object.assign(asset);
-  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "getChannelIcon", animate: "landscape" });
+  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "PX_16", animate: null });
 };

@@ -1,16 +1,16 @@
-// Module ID: 15918
-// Function ID: 15919
+// Module ID: 15934
+// Function ID: 15935
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 673, 21, 13141, 709, 4478, 8664, 4193, 1233, 9931, 7513, 4333, 5076, 4474, 13816, 15919, 2]
+// Dependencies: [5, 19, 17, 673, 21, 13153, 709, 4478, 8668, 4193, 1233, 9935, 7514, 4333, 5077, 4474, 13832, 15935, 2]
 
-// Module 15918 (getFriendInviteCode)
+// Module 15934 (getFriendInviteCode)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 13141 */;
-import registerAssetDefault from "registerAsset" /* 13816 */;
-import registerAssetDefault2 from "registerAsset" /* 15919 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 13153 */;
+import registerAssetDefault from "registerAsset" /* 13832 */;
+import registerAssetDefault2 from "registerAsset" /* 15935 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -172,10 +172,10 @@ function _handleShare() {
           return obj;
         } else {
           callback = arg1;
-          const obj5 = callback(9931);
+          const obj5 = callback(9935);
           const intl = callback(1233).intl;
           const obj2 = { link: null };
-          obj2[0] = callback2(7513)(callback);
+          obj2[0] = callback2(7514)(callback);
           obj5.handleOpenShareSheet(callback, null, intl.formatToPlainString(callback(1233).t.PJf9P9, obj2), constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
           return { value: "HermesInternal", done: null };

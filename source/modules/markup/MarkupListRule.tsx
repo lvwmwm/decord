@@ -1,9 +1,9 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4979
+// Function ID: 4980
 // Name: regExp
 // Dependencies: [4192, 38, 2]
 
-// Module 4978 (regExp)
+// Module 4979 (regExp)
 import _modDef38 from "module_38" /* 38 */;
 import tDefault from "t" /* 4192 */;
 import closure_10 from "module_0" /* 0 */;

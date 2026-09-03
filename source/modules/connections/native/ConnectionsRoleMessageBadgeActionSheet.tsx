@@ -1,17 +1,17 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11620
+// Function ID: 11621
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 1908, 11616, 5360, 673, 21, 4478, 709, 1233, 5359, 4429, 4474, 4413, 12, 4197, 5235, 11386, 8947, 1296, 1430, 1362, 38, 5961, 5981, 586, 695, 4700, 5465, 5630, 6005, 4928, 4445, 11389, 8911, 2]
+// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 1908, 11621, 5361, 673, 21, 4478, 709, 1233, 5360, 4429, 4474, 4413, 12, 4197, 5236, 11391, 8951, 1296, 1430, 1362, 38, 5962, 5982, 586, 695, 4701, 5466, 5631, 6006, 4929, 4445, 11394, 8915, 2]
 // Exports: default
 
-// Module 11615 (PopoutCheck)
+// Module 11620 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4429 */;
 import Text from "Text" /* 4474 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5359 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5360 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -20,8 +20,8 @@ import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "trackCommunicationDisabled" /* 1991 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "map" /* 11616 */;
-import { OperatorTypes } from "OperatorTypes" /* 5360 */;
+import closure_12 from "map" /* 11621 */;
+import { OperatorTypes } from "OperatorTypes" /* 5361 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -149,7 +149,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj3 = { style: null, user: null, size: null, guildId: "Array" };
+                const obj3 = { style: null, user: null, size: null, guildId: "PX_16" };
                 obj3[0] = tmp21.popoutCheckGroupPlatformIcon;
                 obj3[1] = tmp7;
                 obj3[2] = tmp11(tmp3[24]).AvatarSizes.XSMALL;

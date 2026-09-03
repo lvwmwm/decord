@@ -1,9 +1,9 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9050
+// Function ID: 9051
 // Name: zustandStore
 // Dependencies: [4344, 682, 2]
 
-// Module 9046 (zustandStore)
+// Module 9050 (zustandStore)
 import set from "set" /* 2 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4344 */;

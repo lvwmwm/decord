@@ -1,10 +1,10 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9042
+// Function ID: 9043
 // Name: useGuildProfileGames
-// Dependencies: [19, 4503, 4502, 1215, 586, 6162, 1470, 2]
+// Dependencies: [19, 4503, 4502, 1215, 586, 6163, 1470, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 9038 (useGuildProfileGames)
+// Module 9042 (useGuildProfileGames)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "getOfficialApplicationId" /* 4503 */;
 import closure_4 from "handleLoadMessages" /* 4502 */;
@@ -103,7 +103,7 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
   games = profile.games;
   const items = [closure_5];
   const stateFromStores = games(586).useStateFromStores(items, () => authenticated.isAuthenticated());
-  games(6162);
+  games(6163);
   if (null != games) {
     if (!stateFromStores) {
       let items1 = [];

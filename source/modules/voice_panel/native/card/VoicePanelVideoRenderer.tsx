@@ -1,17 +1,17 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16969
+// Function ID: 16970
 // Name: VoicePanelModes
-// Dependencies: [32, 19, 17, 12063, 12061, 16904, 12064, 21, 4217, 9598, 4478, 12062, 4927, 9223, 4446, 5660, 9587, 16908, 9590, 9588, 16898, 11211, 16820, 9592, 4197, 709, 4479, 7805, 9595, 2]
+// Dependencies: [32, 19, 17, 12069, 12067, 16924, 12070, 21, 4217, 9602, 4478, 12068, 4928, 9227, 4446, 5661, 9591, 16928, 9594, 9592, 16918, 11215, 16840, 9596, 4197, 709, 4479, 7808, 9599, 2]
 
-// Module 16949 (VoicePanelModes)
-import _modDef9598 from "module_9598" /* 9598 */;
+// Module 16969 (VoicePanelModes)
+import _modDef9602 from "module_9602" /* 9602 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
-import VoicePanelModes from "VoicePanelModes" /* 12063 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16904 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
+import VoicePanelModes from "VoicePanelModes" /* 12069 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12067 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16924 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 12070 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importDefaultResult from "module_4217" /* 4217 */;
@@ -24,7 +24,7 @@ const MODE_CHANGE_PHYSICS = VoicePanelModes.MODE_CHANGE_PHYSICS;
 let c13 = 25;
 let c14 = 0.05;
 let c15 = 0.0075;
-let closure_16 = importDefaultResult.createAnimatedComponent(_modDef9598);
+let closure_16 = importDefaultResult.createAnimatedComponent(_modDef9602);
 function getScaleChangeWithOverscroll(arg0, arg1, arg2) {
   if (arg0 >= arg2) {
     return arg1;
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   const isScrollVisible = streamKey.isScrollVisible;
   let mode = isScrollVisible;
   isCamera = streamKey.isCamera;
-  importAllResult = isCamera;
+  id = isCamera;
   let flag = streamKey.mirror;
   if (flag === undefined) {
     flag = false;
@@ -146,10 +146,11 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   let token;
   let sharedValue10;
   let tmp = sharedValue5();
+  let tmp3 = focused;
   let obj = id(focused[16]);
-  obj1 = importAllResult;
+  obj1 = id;
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "VoicePanelVideoRenderer" });
-  const context = importAllResult.useContext(isCamera(focused[11]));
+  const context = id.useContext(isCamera(focused[11]));
   mode = context.mode;
   setIsFocusedVideoZoomed = mode;
   focused = context.focused;
@@ -169,44 +170,45 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   let obj5 = id(focused[17]);
   const pIPState = obj5.usePIPState();
   sharedValue2 = pIPState;
-  [tmp12, sharedValue3] = mode(importAllResult.useState(true), 2);
-  sharedValue4 = importAllResult.useRef(() => {
+  let tmp11 = isCamera;
+  if (isCamera) {
+    tmp11 = pIPState.id === id;
+  }
+  [tmp13, sharedValue3] = mode(obj1.useState(true), 2);
+  sharedValue4 = obj1.useRef(() => {
     if (sharedValue1) {
       dismissToPIPGestureRef(id);
     }
   });
-  const onReady = isCamera(focused[18])({ streamId, userId, loading: tmp12, videoSpinnerContext, paused: flag3, streamKey: streamKey.streamKey }).onReady;
+  const onReady = tmp5(tmp3[18])({ streamId, userId, loading: tmp13, videoSpinnerContext, paused: flag3, streamKey: streamKey.streamKey }).onReady;
   sharedValue5 = onReady;
-  isCamera(focused[19])({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, loading: tmp12 });
+  isCamera(tmp3[19])({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, loading: tmp13 });
   let items = [onReady];
-  const callback = importAllResult.useCallback(() => {
+  const callback = obj1.useCallback(() => {
     sharedValue3(false);
     sharedValue4.current();
     sharedValue5();
   }, items);
-  let obj6 = id(focused[20]);
-  const setHasActiveVideoOutputSink = obj6.useSetHasActiveVideoOutputSink(context.streamOutputSinkStack);
+  let tmp2Result = tmp2(tmp3[20]);
+  const setHasActiveVideoOutputSink = tmp2Result.useSetHasActiveVideoOutputSink(context.streamOutputSinkStack);
   sharedValue6 = setHasActiveVideoOutputSink;
-  let obj7 = id(focused[8]);
-  class Je {
-    constructor() {
-      items = [, , , ];
-      items[0] = setIsFocusedVideoZoomed.get();
-      value = windowDimensions.get();
-      id = undefined;
-      if (value != null) {
-        id = value.id;
-      }
-      items[1] = id;
-      items[2] = mode.get();
-      items[3] = isCamera;
-      return items;
+  tmp2Result = tmp2(tmp3[8]);
+  function qe() {
+    const items = [setIsFocusedVideoZoomed.get(), , , ];
+    const value = windowDimensions2.get();
+    id = undefined;
+    if (value != null) {
+      id = value.id;
     }
+    items[1] = id;
+    items[2] = mode.get();
+    items[3] = isCamera;
+    return items;
   }
-  Je.__closure = { mode, focused, isScrollVisible, streamId };
-  Je.__workletHash = 3558943323767;
-  Je.__initData = closure_55;
-  class We {
+  qe.__closure = { mode, focused, isScrollVisible, streamId };
+  qe.__workletHash = 3558943323767;
+  qe.__initData = closure_55;
+  class Je {
     constructor(arg0, arg1) {
       tmp = arg1;
       tmp2 = id;
@@ -244,13 +246,13 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       return;
     }
   }
-  obj = { cheapWorkletArrayShallowEqual: id(focused[13]).cheapWorkletArrayShallowEqual, runOnJS: id(focused[8]).runOnJS, setHasActiveVideoOutputSink, shouldMakeActive, id };
-  We.__closure = obj;
-  We.__workletHash = 12089612803324;
-  We.__initData = closure_56;
-  const animatedReaction = obj7.useAnimatedReaction(Je, We);
+  obj = { cheapWorkletArrayShallowEqual: tmp2(tmp3[13]).cheapWorkletArrayShallowEqual, runOnJS: tmp2(tmp3[8]).runOnJS, setHasActiveVideoOutputSink, shouldMakeActive, id };
+  Je.__closure = obj;
+  Je.__workletHash = 12089612803324;
+  Je.__initData = closure_56;
+  const animatedReaction = tmp2Result.useAnimatedReaction(qe, Je);
   const items1 = [sharedValue1, layoutManager, id, sharedValue];
-  const callback1 = importAllResult.useCallback((nativeEvent) => {
+  const callback1 = obj1.useCallback((nativeEvent) => {
     ({ width, height } = nativeEvent.nativeEvent);
     isCamera(focused[21])(showControls, { width, height });
     setFocused.setTargetDimensions(id, width, height);
@@ -261,8 +263,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       }, 34);
     }
   }, items1);
-  let obj9 = id(focused[8]);
-  class Ue {
+  const tmp12 = mode(obj1.useState(true), 2);
+  class Be {
     constructor() {
       value = windowDimensions.get();
       id = undefined;
@@ -283,11 +285,11 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       return obj;
     }
   }
-  Ue.__closure = { focused, id, windowDimensions, sharedCoords };
-  Ue.__workletHash = 9631392718391;
-  Ue.__initData = closure_57;
-  derivedValue = obj9.useDerivedValue(Ue);
-  importAllResult = tmp12;
+  Be.__closure = { focused, id, windowDimensions, sharedCoords };
+  Be.__workletHash = 9631392718391;
+  Be.__initData = closure_57;
+  derivedValue = id(tmp3[8]).useDerivedValue(Be);
+  id = tmp13;
   setIsFocusedVideoZoomed = undefined;
   windowDimensions2 = undefined;
   dismissToPIPGestureRef = undefined;
@@ -310,7 +312,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   sharedValue10 = undefined;
   let callback4;
   let callback5;
-  const context1 = importAllResult.useContext(isCamera(focused[11]));
+  const context1 = obj1.useContext(tmp5(tmp3[11]));
   setIsFocusedVideoZoomed = context1.setIsFocusedVideoZoomed;
   windowDimensions2 = context1.windowDimensions;
   dismissToPIPGestureRef = context1.dismissToPIPGestureRef;
@@ -318,26 +320,26 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   hideControls = context1.hideControls;
   controlsSpecs = context1.controlsSpecs;
   showControls = context1.showControls;
-  let obj10 = id(focused[8]);
-  sharedValue2 = obj10.useSharedValue(1);
-  let obj11 = id(focused[8]);
-  sharedValue3 = obj11.useSharedValue(0);
-  let obj12 = id(focused[8]);
-  sharedValue4 = obj12.useSharedValue(0);
-  let obj13 = id(focused[8]);
-  sharedValue5 = obj13.useSharedValue(0);
-  const tmp11 = mode(importAllResult.useState(true), 2);
-  sharedValue6 = id(focused[8]).useSharedValue(false);
-  const obj15 = id(focused[8]);
-  const sharedValue7 = id(focused[8]).useSharedValue(0);
+  const tmp2Result1 = id(tmp3[8]);
+  sharedValue2 = id(tmp3[8]).useSharedValue(1);
+  const tmp2Result2 = id(tmp3[8]);
+  sharedValue3 = id(tmp3[8]).useSharedValue(0);
+  const tmp2Result3 = id(tmp3[8]);
+  sharedValue4 = id(tmp3[8]).useSharedValue(0);
+  const tmp2Result4 = id(tmp3[8]);
+  sharedValue5 = id(tmp3[8]).useSharedValue(0);
+  const tmp2Result5 = id(tmp3[8]);
+  sharedValue6 = id(tmp3[8]).useSharedValue(false);
+  const tmp2Result6 = id(tmp3[8]);
+  const sharedValue7 = id(tmp3[8]).useSharedValue(0);
   sharedValue2 = sharedValue7;
-  const obj16 = id(focused[8]);
-  const sharedValue8 = id(focused[8]).useSharedValue(false);
+  const tmp2Result7 = id(tmp3[8]);
+  const sharedValue8 = id(tmp3[8]).useSharedValue(false);
   sharedValue3 = sharedValue8;
-  const obj17 = id(focused[8]);
-  const sharedValue9 = id(focused[8]).useSharedValue(null);
+  const tmp2Result8 = id(tmp3[8]);
+  const sharedValue9 = id(tmp3[8]).useSharedValue(null);
   sharedValue4 = sharedValue9;
-  const obj18 = id(focused[8]);
+  const tmp2Result9 = id(tmp3[8]);
   let fn = function w() {
     const result = derivedValue.get().width / sharedValue1.get().width;
     return Math.max(result, derivedValue.get().height / sharedValue1.get().height);
@@ -345,9 +347,9 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   fn.__closure = { containerLayout: derivedValue, videoDimensions: sharedValue1 };
   fn.__workletHash = 4177496646282;
   fn.__initData = sharedValue6;
-  const derivedValue1 = id(focused[8]).useDerivedValue(fn);
+  const derivedValue1 = id(tmp3[8]).useDerivedValue(fn);
   sharedValue6 = derivedValue1;
-  const obj19 = id(focused[8]);
+  const tmp2Result10 = id(tmp3[8]);
   class D {
     constructor() {
       result = closure_5.get().width / closure_6.get().width;
@@ -357,8 +359,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   D.__closure = { containerLayout: derivedValue, videoDimensions: sharedValue1 };
   D.__workletHash = 5260375952053;
   D.__initData = sharedValue2;
-  derivedValue2 = id(focused[8]).useDerivedValue(D);
-  const obj20 = id(focused[8]);
+  derivedValue2 = id(tmp3[8]).useDerivedValue(D);
+  const tmp2Result11 = id(tmp3[8]);
   class I {
     constructor() {
       tmp = 0 === closure_16.get();
@@ -384,7 +386,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   I.__closure = { translateX: sharedValue3, translateY: sharedValue4, scale: sharedValue2, fitScale: derivedValue2, coverScale: derivedValue1 };
   I.__workletHash = 15099362638406;
   I.__initData = sharedValue3;
-  const derivedValue3 = id(focused[8]).useDerivedValue(I);
+  const derivedValue3 = id(tmp3[8]).useDerivedValue(I);
   callback6 = derivedValue3;
   function ae(arg0) {
     if ("fit" === arg0) {
@@ -411,12 +413,12 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     const result3 = sharedValue4.set(id(focused[12]).withSpring(0, dismissToPIPGestureRef));
     const result4 = sharedValue4.set(arg0);
   }
-  obj1 = { scale: sharedValue2, withSpring: id(focused[12]).withSpring, fitScale: derivedValue2, MODE_CHANGE_PHYSICS: sharedValue, disableAnimations: sharedValue, coverScale: derivedValue1, translateX: sharedValue3, SCALE_PHYSICS: dismissToPIPGestureRef, translateY: sharedValue4, currentSizeThreshold: sharedValue9 };
+  obj1 = { scale: sharedValue2, withSpring: tmp2(tmp3[12]).withSpring, fitScale: derivedValue2, MODE_CHANGE_PHYSICS: sharedValue, disableAnimations: sharedValue, coverScale: derivedValue1, translateX: sharedValue3, SCALE_PHYSICS: dismissToPIPGestureRef, translateY: sharedValue4, currentSizeThreshold: sharedValue9 };
   ae.__closure = obj1;
   ae.__workletHash = 16610861286231;
   ae.__initData = sharedValue4;
   const items2 = [sharedValue2, sharedValue3, sharedValue4, derivedValue1, sharedValue9, derivedValue2, sharedValue];
-  const callback2 = importAllResult.useCallback(ae, items2);
+  const callback2 = obj1.useCallback(ae, items2);
   token = callback2;
   function re() {
     const value = focused.get();
@@ -445,9 +447,9 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   re.__workletHash = 15643035811761;
   re.__initData = sharedValue6;
   const items3 = [focused, id, isCamera, sharedValue1, windowDimensions2, callback2];
-  const callback3 = importAllResult.useCallback(re, items3);
+  const callback3 = obj1.useCallback(re, items3);
   sharedValue10 = callback3;
-  const obj21 = id(focused[8]);
+  const tmp2Result12 = id(tmp3[8]);
   function le() {
     return derivedValue.get();
   }
@@ -467,11 +469,11 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       tmp6 = id === id && safeAreaState !== current && null != current;
     }
   }
-  obj2 = { cheapWorkletShallowEqual: id(focused[13]).cheapWorkletShallowEqual, focused, id, resetOnLayoutChange: callback3 };
+  obj2 = { cheapWorkletShallowEqual: tmp2(tmp3[13]).cheapWorkletShallowEqual, focused, id, resetOnLayoutChange: callback3 };
   ce.__closure = obj2;
   ce.__workletHash = 13816224514199;
   ce.__initData = callback6;
-  const animatedReaction1 = id(focused[8]).useAnimatedReaction(le, ce);
+  const animatedReaction1 = id(tmp3[8]).useAnimatedReaction(le, ce);
   class Le {
     constructor() {
       value = closure_23.get();
@@ -544,7 +546,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   Le.__workletHash = 3902544453390;
   Le.__initData = token;
   const items4 = [derivedValue1, sharedValue2, sharedValue3, sharedValue4, derivedValue, sharedValue1, derivedValue2];
-  callback4 = importAllResult.useCallback(Le, items4);
+  callback4 = obj1.useCallback(Le, items4);
   function ye() {
     if (sharedValue5.get() <= 0) {
       if (sharedValue6.get()) {
@@ -574,14 +576,14 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       obj2 = sharedValue6;
     }
   }
-  obj3 = { numGesturesActive: sharedValue5, isInSnap: sharedValue6, resetToDefaultSize: callback2, scale: sharedValue2, fitScale: derivedValue2, videoDimensions: sharedValue1, containerLayout: derivedValue, translateX: sharedValue3, withSpring: id(focused[12]).withSpring, SCALE_PHYSICS: dismissToPIPGestureRef, translateY: sharedValue4 };
+  obj3 = { numGesturesActive: sharedValue5, isInSnap: sharedValue6, resetToDefaultSize: callback2, scale: sharedValue2, fitScale: derivedValue2, videoDimensions: sharedValue1, containerLayout: derivedValue, translateX: sharedValue3, withSpring: tmp2(tmp3[12]).withSpring, SCALE_PHYSICS: dismissToPIPGestureRef, translateY: sharedValue4 };
   ye.__closure = obj3;
   ye.__workletHash = 3493652911835;
   ye.__initData = sharedValue10;
   const items5 = [derivedValue2, sharedValue5, sharedValue6, sharedValue2, sharedValue1, derivedValue, sharedValue3, sharedValue4, callback2];
-  callback5 = importAllResult.useCallback(ye, items5);
-  const obj23 = id(focused[8]);
-  const tmp34 = controlsSpecs;
+  callback5 = obj1.useCallback(ye, items5);
+  const tmp2Result13 = id(tmp3[8]);
+  const tmp35 = controlsSpecs;
   function xe() {
     let value = focused.get();
     id = undefined;
@@ -610,8 +612,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   ke.__closure = { setIsFocusedVideoZoomed };
   ke.__workletHash = 10707557639101;
   ke.__initData = callback5;
-  const animatedReaction2 = id(focused[8]).useAnimatedReaction(xe, ke);
-  const obj26 = id(focused[8]);
+  const animatedReaction2 = id(tmp3[8]).useAnimatedReaction(xe, ke);
+  const tmp2Result14 = id(tmp3[8]);
   class Me {
     constructor() {
       value = focused.get();
@@ -633,8 +635,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   be.__closure = { resetOnLayoutChange: callback3 };
   be.__workletHash = 8458824233146;
   be.__initData = closure_31;
-  const animatedReaction3 = id(focused[8]).useAnimatedReaction(Me, be);
-  const obj27 = id(focused[8]);
+  const animatedReaction3 = id(tmp3[8]).useAnimatedReaction(Me, be);
+  const tmp2Result15 = id(tmp3[8]);
   class Ye {
     constructor() {
       return mode.get();
@@ -655,8 +657,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   Ne.__closure = { resetOnLayoutChange: callback3 };
   Ne.__workletHash = 9279120690968;
   Ne.__initData = closure_33;
-  const animatedReaction4 = id(focused[8]).useAnimatedReaction(Ye, Ne);
-  const obj28 = id(focused[8]);
+  const animatedReaction4 = id(tmp3[8]).useAnimatedReaction(Ye, Ne);
+  const tmp2Result16 = id(tmp3[8]);
   class Ge {
     constructor() {
       return closure_6.get();
@@ -693,8 +695,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   Fe.__closure = { currentSizeThreshold: sharedValue9, resetOnLayoutChange: callback3 };
   Fe.__workletHash = 8464422969486;
   Fe.__initData = closure_35;
-  const animatedReaction5 = id(focused[8]).useAnimatedReaction(Ge, Fe);
-  const obj29 = id(focused[8]);
+  const animatedReaction5 = id(tmp3[8]).useAnimatedReaction(Ge, Fe);
+  const tmp2Result17 = id(tmp3[8]);
   function ze() {
     return sharedValue6.get();
   }
@@ -720,8 +722,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   Xe.__closure = { currentSizeThreshold: sharedValue9, resetToDefaultSize: callback2 };
   Xe.__workletHash = 10764193588506;
   Xe.__initData = closure_37;
-  const animatedReaction6 = id(focused[8]).useAnimatedReaction(ze, Xe);
-  const obj30 = id(focused[8]);
+  const animatedReaction6 = id(tmp3[8]).useAnimatedReaction(ze, Xe);
+  const tmp2Result18 = id(tmp3[8]);
   function $e() {
     return sharedValue6.get();
   }
@@ -741,13 +743,13 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       return;
     }
   }
-  const obj31 = id(focused[8]);
-  Ze.__closure = { runOnJS: id(focused[8]).runOnJS, triggerHapticFeedback: id(focused[14]).triggerHapticFeedback, HapticFeedbackTypes: id(focused[14]).HapticFeedbackTypes };
+  const tmp2Result19 = id(tmp3[8]);
+  Ze.__closure = { runOnJS: id(tmp3[8]).runOnJS, triggerHapticFeedback: id(tmp3[14]).triggerHapticFeedback, HapticFeedbackTypes: id(tmp3[14]).HapticFeedbackTypes };
   Ze.__workletHash = 11115846398818;
   Ze.__initData = closure_39;
-  const animatedReaction7 = obj31.useAnimatedReaction($e, Ze);
-  const items6 = [tmp12, dismissToPIPGestureRef, focused, id, sharedValue2, sharedValue3, sharedValue4, callback3, sharedValue5, sharedValue9, derivedValue, sharedValue6, callback4, callback5, sharedValue7, sharedValue8, derivedValue3, setFocused, hideControls, controlsSpecs, showControls, derivedValue2];
-  const memo = importAllResult.useMemo(() => {
+  const animatedReaction7 = tmp2Result19.useAnimatedReaction($e, Ze);
+  const items6 = [tmp13, dismissToPIPGestureRef, focused, id, sharedValue2, sharedValue3, sharedValue4, callback3, sharedValue5, sharedValue9, derivedValue, sharedValue6, callback4, callback5, sharedValue7, sharedValue8, derivedValue3, setFocused, hideControls, controlsSpecs, showControls, derivedValue2];
+  const memo = obj1.useMemo(() => {
     const Gesture = id(focused[15]).Gesture;
     const Gesture2 = id(focused[15]).Gesture;
     const Gesture3 = id(focused[15]).Gesture;
@@ -850,7 +852,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     I.__closure = { focused, id };
     I.__workletHash = 8765017804058;
     I.__initData = closure_1_47;
-    const enabledResult = Gesture5.Pinch().enabled(!closure_4);
+    const enabledResult = Gesture5.Pinch().enabled(!id);
     class D {
       constructor() {
         result = closure_18.set(closure_18.get() + 1);
@@ -863,7 +865,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     D.__workletHash = 3449238089307;
     D.__initData = closure_1_46;
     obj1 = { numGesturesActive: sharedValue5, isInPanToZoom: sharedValue3, currentSizeThreshold: sharedValue4 };
-    const onTouchesDownResult = Gesture5.Pinch().enabled(!closure_4).onTouchesDown(I);
+    const onTouchesDownResult = Gesture5.Pinch().enabled(!id).onTouchesDown(I);
     const fn = function w(scaleChange) {
       let value = store3.get();
       value = store3.get();
@@ -894,7 +896,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     fn.__workletHash = 2077670235308;
     fn.__initData = closure_1_45;
     let obj2 = { scale: sharedValue2, getScaleChangeWithOverscroll: sharedValue4, fitScale: derivedValue2, containerLayout: derivedValue, translateX: sharedValue3, translateY: sharedValue4, isInSnap: sharedValue6, isInCoverSnap: callback4 };
-    const onStartResult1 = Gesture5.Pinch().enabled(!closure_4).onTouchesDown(I).onStart(D);
+    const onStartResult1 = Gesture5.Pinch().enabled(!id).onTouchesDown(I).onStart(D);
     const fn2 = function v() {
       const result = store6.set(store6.get() - 1);
       callback3();
@@ -903,12 +905,12 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     fn2.__workletHash = 5853458336611;
     fn2.__initData = closure_1_44;
     const obj3 = { numGesturesActive: sharedValue5, handleMovementEnd: callback5 };
-    const onChangeResult = Gesture5.Pinch().enabled(!closure_4).onTouchesDown(I).onStart(D).onChange(fn);
+    const onChangeResult = Gesture5.Pinch().enabled(!id).onTouchesDown(I).onStart(D).onChange(fn);
     const Gesture6 = id(focused[15]).Gesture;
-    const onEndResult = Gesture5.Pinch().enabled(!closure_4).onTouchesDown(I).onStart(D).onChange(fn).onEnd(fn2);
+    const onEndResult = Gesture5.Pinch().enabled(!id).onTouchesDown(I).onStart(D).onChange(fn).onEnd(fn2);
     const PanResult = Gesture6.Pan();
-    let result = Gesture6.Pan().enabled(!closure_4).requireExternalGestureToFail(dismissToPIPGestureRef);
-    const enabledResult1 = Gesture6.Pan().enabled(!closure_4);
+    let result = Gesture6.Pan().enabled(!id).requireExternalGestureToFail(dismissToPIPGestureRef);
+    const enabledResult1 = Gesture6.Pan().enabled(!id);
     const fn3 = function f(arg0, fail) {
       const value = store.get();
       id = undefined;
@@ -979,7 +981,7 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     fn5.__initData = closure_1_50;
     const obj6 = { isInPanToZoom: sharedValue3, PAN_TO_ZOOM_SCALE_FACTOR: sharedValue2, scale: sharedValue2, getScaleChangeWithOverscroll: sharedValue4, fitScale: derivedValue2, translateX: sharedValue3, translateY: sharedValue4, isInSnap: sharedValue6, isInCoverSnap: callback4 };
     const onStartResult2 = onBeginResult.onStart(fn4);
-    const fn6 = function o(velocityX) {
+    const fn6 = function n(velocityX) {
       const result = store6.set(store6.get() - 1);
       let value = store4.get();
       const result1 = velocityX.velocityX * closure_1_14;
@@ -1006,10 +1008,10 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
   let value = derivedValue.get();
   derivedValue2 = value;
   const items7 = [streamId, isCamera, sharedValue2, sharedValue1, mode, value];
-  callback6 = importAllResult.useCallback(() => {
+  callback6 = obj1.useCallback(() => {
     let tmp2 = null == isCamera;
     if (!tmp2) {
-      tmp2 = closure_4;
+      tmp2 = id;
     }
     if (!tmp2) {
       tmp2 = setIsFocusedVideoZoomed.get() !== sharedValue1.PANEL;
@@ -1022,8 +1024,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       obj.updateVideoSize(isCamera, obj, sharedValue2.get());
     }
   }, items7);
-  let obj4 = { runOnJS: id(focused[8]).runOnJS, triggerHapticFeedback: id(focused[14]).triggerHapticFeedback, HapticFeedbackTypes: id(focused[14]).HapticFeedbackTypes };
-  class Ke {
+  let obj4 = { runOnJS: id(tmp3[8]).runOnJS, triggerHapticFeedback: id(tmp3[14]).triggerHapticFeedback, HapticFeedbackTypes: id(tmp3[14]).HapticFeedbackTypes };
+  class Qe {
     constructor() {
       items = [, , ];
       items[0] = closure_20.get();
@@ -1032,10 +1034,10 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       return items;
     }
   }
-  Ke.__closure = { scale: sharedValue2, videoDimensions: sharedValue1, mode };
-  Ke.__workletHash = 16492795532326;
-  Ke.__initData = closure_58;
-  class Be {
+  Qe.__closure = { scale: sharedValue2, videoDimensions: sharedValue1, mode };
+  Qe.__workletHash = 16492795532326;
+  Qe.__initData = closure_58;
+  class Ke {
     constructor(arg0, arg1) {
       if (null != isCamera) {
         tmp = arg1;
@@ -1052,13 +1054,13 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       return;
     }
   }
-  obj5 = { streamId, cheapWorkletShallowEqual: id(focused[13]).cheapWorkletShallowEqual, runOnJS: id(focused[8]).runOnJS, respondToVideoSizeUpdate: callback6 };
-  Be.__closure = obj5;
-  Be.__workletHash = 5259362546534;
-  Be.__initData = closure_59;
-  const animatedReaction8 = id(focused[8]).useAnimatedReaction(Ke, Be);
+  obj5 = { streamId, cheapWorkletShallowEqual: tmp2(tmp3[13]).cheapWorkletShallowEqual, runOnJS: tmp2(tmp3[8]).runOnJS, respondToVideoSizeUpdate: callback6 };
+  Ke.__closure = obj5;
+  Ke.__workletHash = 5259362546534;
+  Ke.__initData = closure_59;
+  const animatedReaction8 = id(tmp3[8]).useAnimatedReaction(Qe, Ke);
   const items8 = [callback6];
-  const effect = importAllResult.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     closure_0 = isCamera(focused[23]).addOnPipModeChangedListener((arg0) => {
       if (!arg0) {
         callback();
@@ -1070,8 +1072,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       }
     };
   }, items8);
-  const obj33 = id(focused[8]);
-  function lt() {
+  const tmp2Result20 = id(tmp3[8]);
+  function dt() {
     const value = showControls.get();
     ({ width, height } = value);
     let size = sharedValue2;
@@ -1115,14 +1117,14 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       result1 = size.width / sharedValue2.get();
     }
   }
-  obj6 = { videoDimensions: sharedValue1, pipState: pIPState, VoicePanelPIPModes: windowDimensions2, scale: sharedValue2, disableAnimations: sharedValue, translateX: sharedValue3, translateY: sharedValue4, mirror: flag };
-  lt.__closure = obj6;
-  lt.__workletHash = 4149619035590;
-  lt.__initData = closure_60;
-  const animatedStyle = id(focused[8]).useAnimatedStyle(lt);
-  const obj35 = id(focused[8]);
-  token = id(focused[24]).useToken(isCamera(focused[25]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
-  const obj37 = id(focused[24]);
+  dt.__closure = { videoDimensions: sharedValue1, pipState: pIPState, VoicePanelPIPModes: windowDimensions2, scale: sharedValue2, disableAnimations: sharedValue, translateX: sharedValue3, translateY: sharedValue4, mirror: flag };
+  dt.__workletHash = 4149619035590;
+  dt.__initData = closure_60;
+  const animatedStyle = id(tmp3[8]).useAnimatedStyle(dt);
+  let obj6 = { videoDimensions: sharedValue1, pipState: pIPState, VoicePanelPIPModes: windowDimensions2, scale: sharedValue2, disableAnimations: sharedValue, translateX: sharedValue3, translateY: sharedValue4, mirror: flag };
+  const tmp2Result21 = id(tmp3[8]);
+  token = id(tmp3[24]).useToken(tmp5(tmp3[25]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
+  const tmp2Result22 = id(tmp3[24]);
   let num = 0;
   if (mode.get() !== sharedValue1.PIP) {
     value = focused.get();
@@ -1135,9 +1137,10 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       num = 0.3;
     }
   }
-  sharedValue10 = id(focused[8]).useSharedValue(num);
-  let tmp2Result = tmp2(tmp3[8]);
-  function ut() {
+  sharedValue10 = id(tmp3[8]).useSharedValue(num);
+  const tmp2Result23 = id(tmp3[8]);
+  const tmp51 = sharedValue1;
+  function _t() {
     const obj = { inPip: setIsFocusedVideoZoomed.get() === sharedValue1.PIP, isFocused: null };
     const value = windowDimensions2.get();
     id = undefined;
@@ -1147,10 +1150,10 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
     obj[1] = id === id;
     return obj;
   }
-  ut.__closure = { mode, VoicePanelModes: sharedValue1, focused, id };
-  ut.__workletHash = 16147365192890;
-  ut.__initData = closure_61;
-  function dt(inPip, isFocused) {
+  _t.__closure = { mode, VoicePanelModes: tmp51, focused, id };
+  _t.__workletHash = 16147365192890;
+  _t.__initData = closure_61;
+  function ut(inPip, isFocused) {
     if (!obj.cheapWorkletShallowEqual(inPip, isFocused)) {
       if (!inPip.inPip) {
         if (!inPip.isFocused) {
@@ -1170,65 +1173,68 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
       const result1 = sharedValue10.set(0);
     }
   }
-  obj7 = { cheapWorkletShallowEqual: tmp2(tmp3[13]).cheapWorkletShallowEqual, strokeOpacity: sharedValue10, withDelay: tmp2(tmp3[8]).withDelay, withTiming: tmp2(tmp3[26]).withTiming };
-  dt.__closure = obj7;
-  dt.__workletHash = 5119744299592;
-  dt.__initData = closure_62;
-  const animatedReaction9 = tmp2Result.useAnimatedReaction(ut, dt);
-  tmp2Result = tmp2(tmp3[8]);
-  class St {
-    constructor() {
-      if (closure_23.get()) {
-        obj = { position: "absolute", top: 0, left: 0, bottom: 0, right: 0, borderWidth: null, overflow: "hidden", borderColor: "white", opacity: 0.5 };
-        tmp3 = controlsSpecs;
-        obj[5] = controlsSpecs;
-      } else {
-        obj = { position: "absolute", top: -1, left: -1, bottom: -1, right: -1, borderWidth: 2, borderRadius: null, overflow: "hidden", borderColor: "white", opacity: null };
-        tmp = closure_26;
-        num = 2;
-        obj[6] = closure_26 + 2;
-        tmp2 = closure_27;
-        obj[9] = closure_27.get();
-      }
-      return obj;
+  const tmp2Result24 = id(tmp3[8]);
+  ut.__closure = { cheapWorkletShallowEqual: id(tmp3[13]).cheapWorkletShallowEqual, strokeOpacity: sharedValue10, withDelay: id(tmp3[8]).withDelay, withTiming: id(tmp3[26]).withTiming };
+  ut.__workletHash = 5119744299592;
+  ut.__initData = closure_62;
+  const animatedReaction9 = tmp2Result24.useAnimatedReaction(_t, ut);
+  let obj7 = { cheapWorkletShallowEqual: id(tmp3[13]).cheapWorkletShallowEqual, strokeOpacity: sharedValue10, withDelay: id(tmp3[8]).withDelay, withTiming: id(tmp3[26]).withTiming };
+  function ft() {
+    if (sharedValue6.get()) {
+      let obj = { position: "absolute", top: 0, left: 0, bottom: 0, right: 0, borderWidth: null, overflow: "hidden", borderColor: "white", opacity: 0.5 };
+      obj[5] = controlsSpecs;
+    } else {
+      obj = { position: "absolute", top: -1, left: -1, bottom: -1, right: -1, borderWidth: 2, borderRadius: null, overflow: "hidden", borderColor: "white", opacity: null };
+      obj[6] = token + 2;
+      obj[9] = sharedValue10.get();
     }
+    return obj;
   }
-  St.__closure = { isInSnap: sharedValue6, SNAP_EDGE_INNER_THRESHOLD: tmp34, borderRadius: token, strokeOpacity: sharedValue10 };
-  St.__workletHash = 5172898891721;
-  St.__initData = closure_63;
-  function ft(arg0) {
+  ft.__closure = { isInSnap: sharedValue6, SNAP_EDGE_INNER_THRESHOLD: tmp35, borderRadius: token, strokeOpacity: sharedValue10 };
+  ft.__workletHash = 5172898891721;
+  ft.__initData = closure_63;
+  function mt(arg0) {
     return sharedValue(arg0, controlsSpecs.get());
   }
-  ft.__closure = { layout, disableAnimations: sharedValue };
-  ft.__workletHash = 12145775353383;
-  ft.__initData = closure_64;
+  mt.__closure = { layout, disableAnimations: sharedValue };
+  mt.__workletHash = 12145775353383;
+  mt.__initData = closure_64;
   const items9 = [layout, sharedValue];
-  const animatedStyle1 = tmp2Result.useAnimatedStyle(St);
-  const callback7 = obj1.useCallback(ft, items9);
+  const animatedStyle1 = id(tmp3[8]).useAnimatedStyle(ft);
+  const callback7 = obj1.useCallback(mt, items9);
   const obj8 = { gesture: memo, children: null };
-  obj9 = { style: items10, layout: callback7, children: null };
+  const obj9 = { style: items10, layout: callback7, children: null };
   items10 = [tmp.wrapper, streamKey.style];
   let tmp5Result = tmp5(tmp3[27]);
-  obj10 = { style: items11, layout: callback7, children: null };
+  const obj10 = { style: items11, layout: callback7, children: null };
   items11 = [tmp.animatedWrapperStyles, animatedStyle];
-  obj11 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onReady: callback, onSize: callback1, style: tmp.video, layout: callback7 };
+  const obj11 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: null, onReady: null, onSize: null, style: null, layout: null };
+  let tmp63 = null;
   tmp5Result = tmp5(tmp3[27]);
+  if (!tmp11) {
+    tmp63 = streamId;
+  }
+  obj11[1] = tmp63;
+  obj11[2] = callback;
+  obj11[3] = callback1;
+  obj11[4] = tmp.video;
+  obj11[5] = callback7;
   obj10[2] = setFocused(sharedValue3, obj11);
   const items12 = [setFocused(tmp5Result, obj10), ];
-  if (tmp12) {
-    obj12 = { animate: true, style: null };
+  if (tmp13) {
+    const obj12 = { animate: true, style: null };
     obj12[1] = tmp.spinner;
-    let tmp57Result = tmp57(tmp5(tmp3[28]), obj12);
+    let tmp58Result = tmp58(tmp5(tmp3[28]), obj12);
   } else {
-    obj13 = { style: null, layout: null, pointerEvents: "none" };
+    const obj13 = { style: null, layout: null, pointerEvents: "none" };
     obj13[0] = animatedStyle1;
     obj13[1] = callback7;
-    tmp57Result = tmp57(tmp5(tmp3[27]), obj13);
+    tmp58Result = tmp58(tmp5(tmp3[27]), obj13);
   }
-  items12[1] = tmp57Result;
+  items12[1] = tmp58Result;
   obj9[2] = items12;
   obj8[1] = hideControls(tmp5Result, obj9);
-  return setFocused(id(focused[15]).GestureDetector, obj8);
+  return setFocused(id(tmp3[15]).GestureDetector, obj8);
 });
 let result = require("set").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelVideoRenderer.tsx");
 

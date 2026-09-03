@@ -1,9 +1,9 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 7734
+// Function ID: 7735
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 6064, 1233, 1234, 7732, 7733, 1623, 2]
+// Dependencies: [5, 17, 3, 6065, 1233, 1234, 7735, 7736, 1623, 2]
 
-// Module 7731 (_promptForRegisterCredential)
+// Module 7734 (_promptForRegisterCredential)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;

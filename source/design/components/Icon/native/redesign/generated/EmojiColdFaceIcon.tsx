@@ -1,14 +1,14 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15205
+// Function ID: 15206
 // Name: EmojiColdFaceIcon
-// Dependencies: [19, 21, 709, 4196, 15191, 2]
+// Dependencies: [19, 21, 709, 4196, 15206, 2]
 // Exports: EmojiColdFaceIcon
 
-// Module 15190 (EmojiColdFaceIcon)
+// Module 15205 (EmojiColdFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15191 */;
+import registerAsset from "registerAsset" /* 15206 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

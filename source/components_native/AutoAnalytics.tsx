@@ -1,22 +1,22 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16570
+// Function ID: 16571
 // Name: componentDidMount
-// Dependencies: [19, 4494, 5229, 7280, 1391, 1386, 1991, 1908, 4529, 4574, 4554, 1980, 4299, 5231, 4701, 1921, 673, 1393, 21, 4700, 7529, 16550, 7220, 1911, 16551, 695, 1470, 16552, 586, 16553, 16554, 2]
+// Dependencies: [19, 4494, 5230, 7281, 1391, 1386, 1991, 1908, 4529, 4574, 4554, 1980, 4299, 5232, 4702, 1921, 673, 1393, 21, 4701, 7530, 16571, 7221, 1911, 16572, 695, 1470, 16573, 586, 16574, 16575, 2]
 // Exports: default
 
-// Module 16549 (componentDidMount)
+// Module 16570 (componentDidMount)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import isClickstreamEnabled from "isClickstreamEnabled" /* 7220 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7529 */;
-import collectGuildThemeAnalyticsMetadata from "collectGuildThemeAnalyticsMetadata" /* 16550 */;
-import trackFavoritesGuildViewedDefault from "trackFavoritesGuildViewed" /* 16551 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16552 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import isClickstreamEnabled from "isClickstreamEnabled" /* 7221 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7530 */;
+import collectGuildThemeAnalyticsMetadata from "collectGuildThemeAnalyticsMetadata" /* 16571 */;
+import trackFavoritesGuildViewedDefault from "trackFavoritesGuildViewed" /* 16572 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16573 */;
 import closure_3 from "getParticipants" /* 4494 */;
-import closure_4 from "_handleConnectionOpen" /* 5229 */;
-import closure_5 from "scheduledEventSort" /* 7280 */;
+import closure_4 from "_handleConnectionOpen" /* 5230 */;
+import closure_5 from "scheduledEventSort" /* 7281 */;
 import closure_6 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
@@ -26,8 +26,8 @@ import closure_11 from "handleConnectionInfoChange" /* 4574 */;
 import closure_12 from "createRTCConnection" /* 4554 */;
 import closure_13 from "handleConnectionOpen" /* 1980 */;
 import closure_14 from "handleConnectionOpen" /* 4299 */;
-import closure_15 from "filterPlayingActivities" /* 5231 */;
-import closure_16 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_15 from "filterPlayingActivities" /* 5232 */;
+import closure_16 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_17 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import { isStaticChannelRoute } from "set" /* 1393 */;
@@ -56,8 +56,8 @@ prototype["componentDidMount"] = function componentDidMount() {
     if (tmp) {
       obj1 = { channel_is_nsfw: null };
       obj1[0] = tmp2;
-      tmp18(4700).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj1);
-      const tmp18Result = tmp18(4700);
+      tmp18(4701).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj1);
+      const tmp18Result = tmp18(4701);
     }
     const obj11 = collectGuildAnalyticsMetadata;
     tmp17 = constants;
@@ -230,8 +230,8 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
     if (isTextInVoice) {
       obj4 = { channel_is_nsfw: null };
       obj4[0] = isNSFWChannel;
-      tmp44(4700).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj4);
-      const tmp44Result = tmp44(4700);
+      tmp44(4701).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj4);
+      const tmp44Result = tmp44(4701);
     }
     tmp43 = constants;
     tmp44 = require;

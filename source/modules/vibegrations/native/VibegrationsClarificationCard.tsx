@@ -1,10 +1,10 @@
-// Module ID: 16423
-// Function ID: 16424
+// Module ID: 16443
+// Function ID: 16444
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4478, 709, 16424, 4474, 1233, 3500, 5609, 4928, 14036, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 16444, 4474, 1233, 3500, 5610, 4929, 14052, 2]
 // Exports: default
 
-// Module 16423 (VibegrationsClarificationCard)
+// Module 16443 (VibegrationsClarificationCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -174,7 +174,7 @@ export default function VibegrationsClarificationCard(clarification) {
       let intl2 = tmp20(1233).intl;
       obj4[2] = intl2.string(onSubmit(3500).yKdgqw);
       obj4[3] = callback1;
-      tmp19Result = tmp19(tmp20(4928).Button, obj4);
+      tmp19Result = tmp19(tmp20(4929).Button, obj4);
     }
   }
   const items5 = [tmp19Result, ];
@@ -193,7 +193,7 @@ export default function VibegrationsClarificationCard(clarification) {
     });
   };
   obj6[5] = callback2;
-  obj5[1] = callback(clarification(14036).GhostInput, obj6);
+  obj5[1] = callback(clarification(14052).GhostInput, obj6);
   items5[1] = callback(closure_5, obj5);
   obj3[1] = items5;
   items4[3] = closure_7(closure_5, obj3);

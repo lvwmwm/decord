@@ -1,9 +1,9 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17779
+// Function ID: 17780
 // Name: promise
-// Dependencies: [1386, 4554, 17748, 5363, 4727, 4489, 2]
+// Dependencies: [1386, 4554, 17772, 5364, 4728, 4489, 2]
 
-// Module 17755 (promise)
+// Module 17779 (promise)
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 14989
+// Function ID: 14990
 // Name: findActiveCaption
 // Dependencies: [2]
 // Exports: findActiveCaption
 
-// Module 14974 (findActiveCaption)
+// Module 14989 (findActiveCaption)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptionsUtils.tsx");

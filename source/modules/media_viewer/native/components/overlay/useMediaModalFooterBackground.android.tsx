@@ -1,10 +1,10 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13069
+// Function ID: 13070
 // Name: useMediaModalFooterBackground
 // Dependencies: [32, 686, 4197, 709, 2]
 // Exports: default
 
-// Module 13057 (useMediaModalFooterBackground)
+// Module 13069 (useMediaModalFooterBackground)
 import nDefault from "n" /* 686 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
@@ -18,5 +18,5 @@ export default function useMediaModalFooterBackground() {
   const tmp = nDefault;
   const tmp2 = callback(nDefault(mediaModalFooterBackgroundColorRgba.useToken(ThemesDefault.colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
   mediaModalFooterBackgroundColorRgba = { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] };
-  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "r" };
+  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "Array" };
 };

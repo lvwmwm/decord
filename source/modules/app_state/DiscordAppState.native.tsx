@@ -1,10 +1,10 @@
-// Module ID: 11157
-// Function ID: 11158
-// Dependencies: [7166, 586, 2]
+// Module ID: 11161
+// Function ID: 11162
+// Dependencies: [7167, 586, 2]
 
-// Module 11157
+// Module 11161
 import initialize from "initialize" /* 586 */;
-import closure_2 from "getState" /* 7166 */;
+import closure_2 from "getState" /* 7167 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9224
+// Function ID: 9225
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 673, 4478, 709, 7794, 2]
+// Dependencies: [19, 673, 4478, 709, 7797, 2]
 // Exports: default
 
-// Module 9220 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9224 (useExpressionPickerCategoriesPlaceholderConfig)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { CATEGORY_ICON_SIZE } from "ME" /* 673 */;

@@ -1,10 +1,10 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 10755
+// Function ID: 10756
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4470, 21, 4478, 709, 586, 8530, 1235, 10750, 5501, 4474, 2]
+// Dependencies: [32, 19, 17, 4470, 21, 4478, 709, 586, 8534, 1235, 10754, 5502, 4474, 2]
 // Exports: default
 
-// Module 10751 (AnimatedImage)
+// Module 10755 (AnimatedImage)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "_slicedToArray" /* 32 */;

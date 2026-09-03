@@ -1,14 +1,14 @@
-// Module ID: 11674
-// Function ID: 11675
+// Module ID: 11679
+// Function ID: 11680
 // Name: ClassificationDetailModal
-// Dependencies: [19, 673, 11675, 21, 4478, 709, 4723, 5503, 11676, 6254, 11706, 11678, 1499, 6016, 1233, 2]
+// Dependencies: [19, 673, 11680, 21, 4478, 709, 4724, 5504, 11681, 6255, 11711, 11683, 1499, 6017, 1233, 2]
 // Exports: default
 
-// Module 11674 (ClassificationDetailModal)
+// Module 11679 (ClassificationDetailModal)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "noop" /* 19 */;
 import { UserSettingsSections } from "ME" /* 673 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11675 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11680 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,7 +31,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = callback();
   dependencyMap = tmp;
-  let obj = classificationId(11706);
+  let obj = classificationId(11711);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -72,9 +72,9 @@ export default function ClassificationDetailModal(classificationId) {
             }
           },
           onError() {
-            let arr = callback2(4723);
+            let arr = callback2(4724);
             arr = arr.pop();
-            let obj = callback(6254);
+            let obj = callback(6255);
             obj = { screen: constants.ACCOUNT, params: obj };
             obj = { initialTab: constants2.STANDING };
             obj.openUserSettings(obj);
@@ -88,5 +88,5 @@ export default function ClassificationDetailModal(classificationId) {
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null };
   const intl = classificationId(1233).intl;
   obj[2] = intl.string(classificationId(1233).t["13/7kX"]);
-  return jsx(classificationId(6016).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
+  return jsx(classificationId(6017).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
 };

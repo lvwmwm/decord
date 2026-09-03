@@ -1,10 +1,10 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14004
+// Function ID: 14005
 // Name: LiveTag
 // Dependencies: [19, 17, 21, 4478, 709, 1234, 4474, 1233, 2]
 // Exports: default
 
-// Module 13988 (LiveTag)
+// Module 14004 (LiveTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

@@ -1,20 +1,20 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15159
+// Function ID: 15160
 // Name: addWant
-// Dependencies: [32, 5, 5229, 1390, 1215, 1386, 13594, 673, 3, 5494, 12, 1955, 706, 527, 15145, 2]
+// Dependencies: [32, 5, 5230, 1390, 1215, 1386, 13609, 673, 3, 5495, 12, 1955, 706, 527, 15160, 2]
 
-// Module 15144 (addWant)
+// Module 15159 (addWant)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 5494 */;
-import FetchStatus from "FetchStatus" /* 15145 */;
+import initializeDefault from "initialize" /* 5495 */;
+import FetchStatus from "FetchStatus" /* 15160 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
 import { isThread } from "createChannelRecord" /* 1390 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "initialize" /* 13594 */;
+import closure_9 from "initialize" /* 13609 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;

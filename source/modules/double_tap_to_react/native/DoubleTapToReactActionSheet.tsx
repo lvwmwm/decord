@@ -1,17 +1,17 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 12179
+// Function ID: 12180
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4470, 5409, 673, 1924, 21, 4478, 1234, 709, 4217, 4479, 4945, 586, 4927, 4166, 4134, 7886, 1430, 5593, 695, 5981, 9125, 4445, 5997, 4474, 1233, 12081, 12174, 4928, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 5410, 673, 1924, 21, 4478, 1234, 709, 4217, 4479, 4946, 586, 4928, 4166, 4134, 7889, 1430, 5594, 695, 5982, 9129, 4445, 5998, 4474, 1233, 12087, 12180, 4929, 2]
 // Exports: default
 
-// Module 12173 (EmojiConfetti)
+// Module 12179 (EmojiConfetti)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_8 from "getEmojiToGroupId" /* 5409 */;
+import closure_8 from "getEmojiToGroupId" /* 5410 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -35,7 +35,7 @@ function EmojiConfetti(children) {
   let obj3 = top(4217);
   sharedValue3 = top(4217).useSharedValue(0);
   let obj4 = top(4217);
-  const mountLayoutEffect = top(4945).useMountLayoutEffect(() => {
+  const mountLayoutEffect = top(4946).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
     if (!closure_2) {
@@ -76,7 +76,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(closure_1_2[13]).withTiming(1, { duration: 360 });
     const result5 = obj4.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(closure_1_2[13]).withTiming(0, { duration: 240 })));
   });
-  let obj5 = top(4945);
+  let obj5 = top(4946);
   const fn = function f() {
     let obj = { scale: sharedValue2.get() };
     const items = [obj, ];

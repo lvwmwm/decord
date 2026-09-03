@@ -1,10 +1,10 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 12061
+// Function ID: 12062
 // Name: getDmHasMessageHistory
 // Dependencies: [1386, 673, 695, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 12055 (getDmHasMessageHistory)
+// Module 12061 (getDmHasMessageHistory)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import { AnalyticEvents } from "ME" /* 673 */;

@@ -1,9 +1,9 @@
-// Module ID: 5097
-// Function ID: 5098
+// Module ID: 5098
+// Function ID: 5099
 // Name: setPermission
 // Dependencies: [706, 2]
 
-// Module 5097 (setPermission)
+// Module 5098 (setPermission)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

@@ -1,8 +1,8 @@
-// Module ID: 10431
-// Function ID: 10432
-// Dependencies: [19, 17, 673, 21, 4478, 709, 9173, 5632, 1296, 1233, 10432, 2]
+// Module ID: 10435
+// Function ID: 10436
+// Dependencies: [19, 17, 673, 21, 4478, 709, 9177, 5633, 1296, 1233, 10436, 2]
 
-// Module 10431
+// Module 10435
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
@@ -23,10 +23,10 @@ const memoResult = importAllResult.memo(function StickerPickerListEmptyState(ins
   insetBottom = insetBottom.insetBottom;
   const items = [insetBottom, insetTop];
   const memo = importAllResult.useMemo(() => ({ marginBottom: insetBottom + closure_1_5, marginTop: insetTop, flex: 1 }), items);
-  let obj = insetTop(9173);
+  let obj = insetTop(9177);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5632).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5633).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function StickerPickerListEmptyState(ins
   const intl = tmp3(1233).intl;
   obj[0] = intl.string(insetTop(1233).t.jyiGfc);
   ({ emptyStateBody: obj3[1], emptyStateContainer: obj3[2], emptyStateImage: obj3[3] } = callback());
-  obj[4] = insetBottom(10432);
+  obj[4] = insetBottom(10436);
   obj[5] = { marginBottom: 0 };
   obj[3] = jsx(insetTop(1296).RefreshEmptyState, { body: null, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
   return <BottomSheetScrollView body={null} bodyStyle={null} containerStyle={null} imageStyle={null} source={null} titleStyle={null} />;

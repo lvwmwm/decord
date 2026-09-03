@@ -1,16 +1,16 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15328
+// Function ID: 15329
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 17, 7893, 673, 4730, 12203, 12211, 695, 9670, 11288, 1233, 2]
+// Dependencies: [5, 17, 7896, 673, 4731, 12210, 12218, 695, 9674, 11292, 1233, 2]
 
-// Module 15313 (_handleEnableSystemNotification)
+// Module 15328 (_handleEnableSystemNotification)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4730 */;
-import EventActionType from "EventActionType" /* 12203 */;
-import createToggle from "createToggle" /* 11288 */;
+import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4731 */;
+import EventActionType from "EventActionType" /* 12210 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 function _handleEnableSystemNotification() {
@@ -63,7 +63,7 @@ function _handleEnableSystemNotification() {
         } else {
           closure_0 = arg1;
           if (closure_0 === constants2.UNDETERMINED) {
-            let obj3 = callback(12211);
+            let obj3 = callback(12218);
             const permission = obj3.requestPermission((permission_granted) => {
               let obj = tmp2(table[7]);
               obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
@@ -82,7 +82,7 @@ function _handleEnableSystemNotification() {
             obj3 = { setting_type: "os", current_status: null };
             obj3[1] = num3;
             obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
-            obj2 = callback(9670);
+            obj2 = callback(9674);
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;

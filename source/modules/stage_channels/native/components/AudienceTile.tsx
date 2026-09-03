@@ -1,10 +1,10 @@
-// Module ID: 10174
-// Function ID: 10175
+// Module ID: 10178
+// Function ID: 10179
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1991, 21, 4478, 709, 4668, 1296, 8758, 1492, 586, 5376, 4673, 5660, 1233, 8679, 10155, 1362, 10175, 2]
+// Dependencies: [19, 17, 1991, 21, 4478, 709, 4668, 1296, 8762, 1492, 586, 5377, 4673, 5661, 1233, 8683, 10159, 1362, 10179, 2]
 // Exports: getTileWidthStyle
 
-// Module 10174 (RaisedHandIcon)
+// Module 10178 (RaisedHandIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
@@ -32,7 +32,7 @@ function RaisedHandIcon(rtsState) {
   }
   let obj = { style: items, children: null };
   items[1] = activeBackground;
-  obj = { style: tmp.raisedHand, source: tmp5(8758), color: PRIMARY_800 };
+  obj = { style: tmp.raisedHand, source: tmp5(8762), color: PRIMARY_800 };
   obj[1] = closure_5(Button.Icon, obj);
   return closure_5(View, obj);
 }

@@ -1,22 +1,22 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15873
+// Function ID: 15874
 // Name: MessagesItemChannelContentIcon
-// Dependencies: [19, 17, 4493, 4702, 21, 4478, 709, 1296, 7848, 7751, 10250, 10912, 1363, 4413, 586, 15142, 4074, 8660, 15858, 11, 4674, 15859, 4197, 8937, 8938, 4474, 9021, 8947, 10214, 4171, 9253, 1233, 15861, 2]
+// Dependencies: [19, 17, 4493, 4703, 21, 4478, 709, 1296, 7851, 7754, 10254, 10916, 1363, 4413, 586, 15157, 4074, 8664, 15874, 11, 4674, 15875, 4197, 8941, 8942, 4474, 9025, 8951, 10218, 4171, 9257, 1233, 15877, 2]
 
-// Module 15857 (MessagesItemChannelContentIcon)
+// Module 15873 (MessagesItemChannelContentIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import registerAssetDefault from "registerAsset" /* 7751 */;
-import registerAssetDefault2 from "registerAsset" /* 7848 */;
-import registerAssetDefault3 from "registerAsset" /* 10250 */;
-import registerAssetDefault4 from "registerAsset" /* 10912 */;
-import useMessagePreviewDefault from "useMessagePreview" /* 15142 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15859 */;
+import registerAssetDefault from "registerAsset" /* 7754 */;
+import registerAssetDefault2 from "registerAsset" /* 7851 */;
+import registerAssetDefault3 from "registerAsset" /* 10254 */;
+import registerAssetDefault4 from "registerAsset" /* 10916 */;
+import useMessagePreviewDefault from "useMessagePreview" /* 15157 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15875 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -139,9 +139,9 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     const tmp13 = obj2.diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
   }
   if (tmp12) {
-    tmp12 = !tmp3(8660)(channel.id);
+    tmp12 = !tmp3(8664)(channel.id);
   }
-  tmpResult = tmp(15858);
+  tmpResult = tmp(15874);
   let tmp3Result = tmp3(11);
   let id = stateFromStores;
   if (stateFromStores == null) {
@@ -171,8 +171,8 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         const obj4 = { userId: null, userName: null, effectDisplayType: null };
         obj4[0] = channel.recipients[0];
         obj4[1] = tmp16;
-        tmp3Result = tmp3(8937);
-        const EffectDisplayType = tmp(8938).EffectDisplayType;
+        tmp3Result = tmp3(8941);
+        const EffectDisplayType = tmp(8942).EffectDisplayType;
         obj4[2] = channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN;
         obj = Object.assign(obj);
         callback(tmp3Result, obj4);
@@ -187,16 +187,16 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   if (tmp15) {
     const obj6 = { userId: null, disabledTooltip: true };
     obj6[0] = channel.recipients[0];
-    tmp20Result = tmp20(tmp3(9021), obj6);
+    tmp20Result = tmp20(tmp3(9025), obj6);
   }
   items2[1] = tmp20Result;
   tmp20Result = null;
   if (channel.isSystemDM()) {
     const obj7 = { style: null, type: null, verified: true };
     obj7[0] = tmp8.botTag;
-    obj7[1] = tmp3(8947).Types.SYSTEM_DM;
-    tmp20Result = tmp20(tmp3(8947), obj7);
-    const tmp3Result1 = tmp3(8947);
+    obj7[1] = tmp3(8951).Types.SYSTEM_DM;
+    tmp20Result = tmp20(tmp3(8951), obj7);
+    const tmp3Result1 = tmp3(8951);
   }
   items2[2] = tmp20Result;
   obj3[1] = items2;
@@ -269,7 +269,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
       obj15[2] = str7;
       obj15[3] = tmp(4171).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
       obj15[4] = muted;
-      let tmp20Result2 = tmp20(tmp(10214).ChannelRowPreview, obj15);
+      let tmp20Result2 = tmp20(tmp(10218).ChannelRowPreview, obj15);
     } else if (channel.isDM()) {
       const obj16 = { textStyle: null, userId: null, guildId: null };
       obj16[0] = tmp9.channelText;
@@ -279,11 +279,11 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         guild_id = channel.guild_id;
       }
       obj16[2] = guild_id;
-      tmp20Result2 = tmp20(tmp3(9253), obj16);
-      const tmp3Result2 = tmp3(9253);
+      tmp20Result2 = tmp20(tmp3(9257), obj16);
+      const tmp3Result2 = tmp3(9257);
     } else {
       tmp20Result2 = null;
-      if (tmp3(8660)(channel.id)) {
+      if (tmp3(8664)(channel.id)) {
         const obj17 = { variant: "text-xs/medium", style: null, lineClamp: 1, children: null };
         obj17[1] = tmp9.channelText;
         const intl = tmp(1233).intl;
@@ -300,7 +300,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
       const obj18 = { wavePressed: null, hasNameplate: null };
       obj18[0] = tmp17.wavePressed;
       obj18[1] = hasNameplate;
-      tmp20Result3 = tmp20(tmp3(15861), obj18);
+      tmp20Result3 = tmp20(tmp3(15877), obj18);
     }
     const obj19 = { children: null };
     items9[1] = tmp20Result3;

@@ -1,12 +1,12 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14480
+// Function ID: 14481
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1921, 21, 5961, 5981, 586, 8123, 14465, 2]
+// Dependencies: [19, 1921, 21, 5962, 5982, 586, 8126, 14481, 2]
 // Exports: default
 
-// Module 14464 (UserSettingsEditUserProfile)
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
-import EditUserProfileBannerDefault from "EditUserProfileBanner" /* 14465 */;
+// Module 14480 (UserSettingsEditUserProfile)
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+import EditUserProfileBannerDefault from "EditUserProfileBanner" /* 14481 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -33,7 +33,7 @@ export default function UserSettingsEditUserProfile(arg0) {
     obj[0] = stateFromStores;
     const merged = Object.assign(arg0);
     obj[1] = jsx(EditUserProfileBannerDefault, { currentUser: null });
-    tmp7 = jsx(stateFromStores(5961).AnalyticsLocationProvider, { currentUser: null });
+    tmp7 = jsx(stateFromStores(5962).AnalyticsLocationProvider, { currentUser: null });
     const tmpResult = EditUserProfileBannerDefault;
   }
   return tmp7;

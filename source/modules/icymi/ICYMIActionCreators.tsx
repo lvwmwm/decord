@@ -1,10 +1,10 @@
-// Module ID: 8637
-// Function ID: 8638
-// Dependencies: [5, 673, 527, 706, 1205, 8636, 4166, 2]
+// Module ID: 8641
+// Function ID: 8642
+// Dependencies: [5, 673, 527, 706, 1205, 8640, 4166, 2]
 
-// Module 8637
+// Module 8641
 import dispatcherDefault from "dispatcher" /* 706 */;
-import generateHydrationId from "generateHydrationId" /* 8636 */;
+import generateHydrationId from "generateHydrationId" /* 8640 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -156,7 +156,7 @@ export default {
                 obj3[0] = HTTP.get(obj1);
                 return obj3;
               }
-              obj13 = closure_1_0(8636);
+              obj13 = closure_1_0(8640);
               tmp42 = closure_1_0;
             }
           } else {

@@ -1,10 +1,10 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 8994
+// Function ID: 8995
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 4197, 8991, 4927, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 4197, 8995, 4928, 4474, 2]
 // Exports: Tooltip
 
-// Module 8990 (Tooltip)
+// Module 8994 (Tooltip)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16847
+// Function ID: 16848
 // Name: useScreenNameSharedValue
 // Dependencies: [19, 4333, 4217, 2]
 // Exports: default
 
-// Module 16827 (useScreenNameSharedValue)
+// Module 16847 (useScreenNameSharedValue)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 6965
+// Function ID: 6966
 // Name: SafetyShieldIllocon
-// Dependencies: [21, 5501, 6965, 2]
+// Dependencies: [21, 5502, 6966, 2]
 // Exports: SafetyShieldIllocon
 
-// Module 6964 (SafetyShieldIllocon)
+// Module 6965 (SafetyShieldIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6965 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6966 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldIllocon.native.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14759
+// Function ID: 14760
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [19, 17, 7292, 21, 4478, 709, 8788, 8787, 11715, 1233, 2368, 4474, 14745, 14747, 5076, 4723, 14750, 2008, 1296, 14752, 2]
+// Dependencies: [19, 17, 7293, 21, 4478, 709, 8792, 8791, 11720, 1233, 2368, 4474, 14760, 14762, 5077, 4724, 14765, 2008, 1296, 14767, 2]
 // Exports: default
 
-// Module 14744 (FamilyCenterAcceptedLinkRow)
+// Module 14759 (FamilyCenterAcceptedLinkRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import Text from "Text" /* 4474 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8787 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8788 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11715 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 14747 */;
-import registerAssetDefault from "registerAsset" /* 14752 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8791 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8792 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11720 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 14762 */;
+import registerAssetDefault from "registerAsset" /* 14767 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 7292 */;
+import items from "items" /* 7293 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -45,7 +45,7 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     obj1[0] = str(1296).Icon.Sizes.SMALL;
     obj1[2] = registerAssetDefault;
     obj[4] = closure_6(str(1296).Icon, obj1);
-    obj[1] = closure_6(str(5076).PressableOpacity, obj);
+    obj[1] = closure_6(str(5077).PressableOpacity, obj);
     tmp4Result = tmp4(FamilyCenterLinkRowDefault, obj);
     const tmp5 = importDefault;
     const tmp7 = FamilyCenterLinkRowDefault;
@@ -85,9 +85,9 @@ export default function FamilyCenterAcceptedLinks() {
     const obj4 = { text: null };
     const intl3 = tmp5(1233).intl;
     obj4[0] = intl3.string(tmp2(2368).C4ScLD);
-    obj3[1] = tmp10(tmp2(14745), obj4);
+    obj3[1] = tmp10(tmp2(14760), obj4);
     let mapped = tmp10(tmp9, obj3);
-    const tmp2Result = tmp2(14745);
+    const tmp2Result = tmp2(14760);
   } else {
     mapped = activeLinkUsers.map((id) => callback(closure_10, { otherUser: id }, "accepted-" + id.id));
   }

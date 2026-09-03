@@ -1,15 +1,16 @@
 // Module ID: 5674
 // Function ID: 5675
 // Name: GestureDetectorType
-// Dependencies: [17, 5675]
+// Dependencies: [5675, 5678, 5738, 5740]
 
 // Module 5674 (GestureDetectorType)
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 5675 */;
-import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import GestureDetectorType from "GestureDetectorType" /* 5675 */;
+import GestureDetector from "GestureDetector" /* 5678 */;
+import InterceptingGestureDetector from "InterceptingGestureDetector" /* 5738 */;
+import VirtualDetector from "VirtualDetector" /* 5740 */;
 
-({ Animated, StyleSheet } = get_ActivityIndicator);
-const animatedComponent = Animated.createAnimatedComponent(__INTERNAL_VIEW_CONFIGDefault);
 
-export const GestureDetectorType = { Native: 0, [0]: "Native", Virtual: 1, [1]: "Virtual", Intercepting: 2, [2]: "Intercepting" };
-export const AnimatedNativeDetector = animatedComponent;
-export const nativeDetectorStyles = StyleSheet.create({ detector: { display: "contents" } });
+export const GestureDetectorType = GestureDetectorType.GestureDetectorType;
+export const GestureDetector = GestureDetector.GestureDetector;
+export const InterceptingGestureDetector = InterceptingGestureDetector.InterceptingGestureDetector;
+export const VirtualGestureDetector = VirtualDetector.VirtualDetector;

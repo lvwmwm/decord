@@ -1,15 +1,15 @@
-// Module ID: 17428
-// Function ID: 17429
+// Module ID: 17448
+// Function ID: 17449
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1429, 1984, 1921, 9751, 17429, 673, 21, 4478, 5500, 709, 695, 4700, 4474, 1233, 17427, 586, 38, 4125, 1498, 6242, 5503, 5465, 4193, 17426, 4445, 16113, 2008, 4926, 7714, 6000, 5607, 14474, 685, 4928, 17433, 17434, 9750, 17435, 5602, 4915, 4924, 6055, 4945, 6016, 2]
+// Dependencies: [5, 32, 19, 17, 1429, 1984, 1921, 9755, 17449, 673, 21, 4478, 5501, 709, 695, 4701, 4474, 1233, 17447, 586, 38, 4125, 1498, 6243, 5504, 5466, 4193, 17446, 4445, 16129, 2008, 4927, 7717, 6001, 5608, 14490, 685, 4929, 17453, 17454, 9754, 17455, 5603, 4916, 4925, 6056, 4946, 6017, 2]
 // Exports: default
 
-// Module 17428 (RoleCreateScene)
+// Module 17448 (RoleCreateScene)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4946 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -17,8 +17,8 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "handleFormInit" /* 9751 */;
-import title from "title" /* 17429 */;
+import closure_12 from "handleFormInit" /* 9755 */;
+import title from "title" /* 17449 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -70,7 +70,7 @@ function RoleCreateScene() {
     if (dependencyMap === closure_1_17) {
       const num5 = 0;
     }
-    yield closure_1_1(5465).createRole(closure_1_1.id, c2, num5);
+    yield closure_1_1(5466).createRole(closure_1_1.id, c2, num5);
     if (1 === tmp7) {
       c2 = 0;
       callback(false);
@@ -96,13 +96,13 @@ function RoleCreateScene() {
               tmp3(4193).roleCreatedToast();
               const obj5 = tmp3(4193);
               const tmp13 = tmp3;
-              tmp3(17426).setRoleJustCreated(true);
+              tmp3(17446).setRoleJustCreated(true);
               let STEP_MEMBERS = closure_1_25.STEP_PERMISSIONS;
               const guild2 = obj.getProps().guild;
               tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               const currentUser = closure_1_11.getCurrentUser();
               const tmp23 = closure_1_9(guild2, currentUser);
-              const obj6 = tmp3(17426);
+              const obj6 = tmp3(17446);
               const tmp18 = tmp32;
               obj = { permission: null, user: null, context: null };
               obj[0] = closure_1_20.ADMINISTRATOR;
@@ -122,7 +122,7 @@ function RoleCreateScene() {
               obj[1] = closure_1_26[closure_1_25.STEP_DISPLAY];
               obj[2] = closure_1_26[STEP_MEMBERS];
               const tmp18Result = tmp18(695);
-              const merged = Object.assign(tmp13(4700).collectGuildAnalyticsMetadata(guild.id));
+              const merged = Object.assign(tmp13(4701).collectGuildAnalyticsMetadata(guild.id));
               tmp18Result.track(closure_1_18.USER_FLOW_TRANSITION, obj);
               return false;
             }
@@ -520,5 +520,5 @@ export default function GuildSettingsRoleCreateModal() {
     obj.track(closure_1_18.USER_FLOW_TRANSITION, obj);
   });
   obj = { screens: closure_32, initialRouteName: obj4.STEP_DISPLAY };
-  return callback3(stateFromStores(6016).Navigator, obj);
+  return callback3(stateFromStores(6017).Navigator, obj);
 };

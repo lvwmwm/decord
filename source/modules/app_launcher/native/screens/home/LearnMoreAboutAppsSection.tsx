@@ -1,16 +1,16 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11896
+// Function ID: 11897
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4190, 1994, 1233, 11891, 8444, 4474, 5076, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 4190, 1994, 1233, 11897, 8448, 4474, 5077, 2]
 // Exports: default
 
-// Module 11890 (LearnMoreAboutAppsSection)
+// Module 11896 (LearnMoreAboutAppsSection)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8444 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11891 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8448 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11897 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;

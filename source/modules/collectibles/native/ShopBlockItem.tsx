@@ -1,14 +1,14 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15657
+// Function ID: 15658
 // Name: block
-// Dependencies: [19, 17, 7296, 21, 4478, 709, 586, 7327, 8905, 15644, 15655, 15657, 15664, 2]
+// Dependencies: [19, 17, 7297, 21, 4478, 709, 586, 7328, 8909, 15658, 15669, 15671, 15678, 2]
 // Exports: default
 
-// Module 15643 (block)
+// Module 15657 (block)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7296 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7297 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

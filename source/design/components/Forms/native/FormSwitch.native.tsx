@@ -1,14 +1,14 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6003
+// Function ID: 6004
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4217, 4478, 709, 4930, 1355, 4927, 4931, 4197, 6003, 6004, 4446, 4447, 2]
+// Dependencies: [32, 19, 17, 21, 4217, 4478, 709, 4931, 1355, 4928, 4932, 4197, 6004, 6005, 4446, 4447, 2]
 // Exports: FormSwitch
 
-// Module 6002 (FormSwitch)
+// Module 6003 (FormSwitch)
 import ThemesDefault from "Themes" /* 709 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
-import IconSizesDefault from "IconSizes" /* 4930 */;
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4931 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4928 */;
+import IconSizesDefault from "IconSizes" /* 4931 */;
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4932 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

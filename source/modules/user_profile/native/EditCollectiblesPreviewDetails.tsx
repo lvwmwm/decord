@@ -1,16 +1,16 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8114
+// Function ID: 8115
 // Name: EditCollectiblesPreviewDescription
-// Dependencies: [19, 17, 1995, 21, 4478, 586, 4139, 7308, 4163, 4474, 1233, 8090, 2]
+// Dependencies: [19, 17, 1995, 21, 4478, 586, 4139, 7309, 4163, 4474, 1233, 8093, 2]
 // Exports: default
 
-// Module 8111 (EditCollectiblesPreviewDescription)
+// Module 8114 (EditCollectiblesPreviewDescription)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import Text2 from "Text" /* 4474 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7308 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8090 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8093 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -29,12 +29,12 @@ function EditCollectiblesPreviewDescription(arg0) {
   let obj2 = getItemRecordsFromPurchases;
   let result = obj2.isPremiumCollectiblesProduct(product);
   if (!result) {
-    let tmpResult = tmp(7308);
+    let tmpResult = tmp(7309);
     result = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    tmpResult = tmp(7308);
+    tmpResult = tmp(7309);
     result1 = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   if (null != purchase) {

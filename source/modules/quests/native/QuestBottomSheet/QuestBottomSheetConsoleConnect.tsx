@@ -1,12 +1,12 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 15005
+// Function ID: 15006
 // Name: NonInlineConsoleConnection
-// Dependencies: [19, 17, 673, 21, 709, 4478, 11303, 11564, 11306, 11316, 4445, 6254, 14947, 2008, 9012, 9013, 9017, 7456, 7483, 5398, 9312, 6000, 5607, 12859, 1233, 8849, 2]
+// Dependencies: [19, 17, 673, 21, 709, 4478, 11307, 11569, 11310, 11320, 4445, 6255, 14962, 2008, 9016, 9017, 9021, 7457, 7484, 5399, 9316, 6001, 5608, 12871, 1233, 8853, 2]
 // Exports: default
 
-// Module 14990 (NonInlineConsoleConnection)
+// Module 15005 (NonInlineConsoleConnection)
 import ThemesDefault from "Themes" /* 709 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
@@ -32,7 +32,7 @@ function ConsoleRow(onPress) {
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
     let obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(12859).PlaystationNeutralIcon, {});
+    obj[1] = callback(onPress(12871).PlaystationNeutralIcon, {});
     const intl3 = onPress(1233).intl;
     obj[2] = intl3.string(onPress(1233).t.JafL6p);
     let stringResult;
@@ -44,10 +44,10 @@ function ConsoleRow(onPress) {
     obj[4] = function onPress() {
       return onPress(merged);
     };
-    return callback(onPress(5607).TableRow, obj);
+    return callback(onPress(5608).TableRow, obj);
   } else if (tmp2.XBOX === type) {
     obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(8849).XboxNeutralIcon, {});
+    obj[1] = callback(onPress(8853).XboxNeutralIcon, {});
     const intl = onPress(1233).intl;
     obj[2] = intl.string(onPress(1233).t.Nfvo72);
     let stringResult1;
@@ -59,7 +59,7 @@ function ConsoleRow(onPress) {
     obj[4] = function onPress() {
       return onPress(merged);
     };
-    return callback(onPress(5607).TableRow, obj);
+    return callback(onPress(5608).TableRow, obj);
   } else {
     return null;
   }
@@ -86,11 +86,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
     obj = { questId: quest.id, initialStep: closure_1, sourceQuestContent: closure_2 };
     obj.openLazy(quest(closure_1_2[13])(closure_1_2[12], closure_1_2.paths), "QuestBottomSheet", obj);
   }
-  let obj = quest(11303);
+  let obj = quest(11307);
   xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  closure_4 = quest(11564).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(11564);
-  closure_5 = quest(11306).useQuestImpressionId();
+  closure_4 = quest(11569).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(11569);
+  closure_5 = quest(11310).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   obj = {
     consoles: xboxAndPlaystationAccounts.useMemo(() => {

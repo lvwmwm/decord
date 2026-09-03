@@ -1,15 +1,15 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14082
+// Function ID: 14083
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [673, 7428, 13513, 13685, 2]
+// Dependencies: [673, 7429, 13528, 13700, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 14066 (buildZoomedInAnalyticsEvent)
+// Module 14082 (buildZoomedInAnalyticsEvent)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7428 */;
-import Opcode from "Opcode" /* 13513 */;
-import noop from "noop" /* 13685 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7429 */;
+import Opcode from "Opcode" /* 13528 */;
+import noop from "noop" /* 13700 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -538,7 +538,7 @@ let closure_5 = {
   [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => {
     data = data.data;
     if (null == data) {
-      let obj = { message_identity: "unknown", socket_kind: "call" };
+      let obj = { message_identity: "unknown", socket_kind: "accessible" };
     } else {
       const url = data.url;
       let tmp61 = null;

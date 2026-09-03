@@ -1,10 +1,10 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7844
+// Function ID: 7845
 // Name: closeConversationsAndJumpToMessage
 // Dependencies: [4333, 4489, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 7841 (closeConversationsAndJumpToMessage)
+// Module 7844 (closeConversationsAndJumpToMessage)
 import set from "set" /* 2 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import transitionToChannel from "transitionToChannel" /* 4489 */;

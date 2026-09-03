@@ -1,17 +1,17 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14958
+// Function ID: 14959
 // Name: maybeRefreshAd
-// Dependencies: [19, 7454, 7458, 684, 11304, 11157, 11133, 586, 14944, 7455, 7453, 2]
+// Dependencies: [19, 7455, 7459, 684, 11308, 11161, 11137, 586, 14959, 7456, 7454, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop
 
-// Module 14943 (maybeRefreshAd)
+// Module 14958 (maybeRefreshAd)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 684 */;
-import _modDef11157 from "module_11157" /* 11157 */;
-import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11304 */;
+import _modDef11161 from "module_11161" /* 11161 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11308 */;
 import noop from "noop" /* 19 */;
-import closure_5 from "map" /* 7454 */;
-import closure_6 from "initializeState" /* 7458 */;
+import closure_5 from "map" /* 7455 */;
+import closure_6 from "initializeState" /* 7459 */;
 
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
   let isEligibleForQuests = getIsEligibleForQuests.getIsEligibleForQuests();
@@ -28,18 +28,18 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
     if ("active" === obj2.getState()) {
       if (!fetchingAdToDeliverByPlacement.isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
         if (obj4.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
-          let tmpResult = tmp(11133);
+          let tmpResult = tmp(11137);
           const currentQuests = tmpResult.fetchCurrentQuests();
-          tmpResult = tmp(11133);
+          tmpResult = tmp(11137);
           const questToDeliver = tmpResult.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
         }
       }
       obj4 = fetchingAdToDeliverByPlacement;
     } else if (null != fetchedAt) {
-      tmp(11133).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
-      const tmpResult1 = tmp(11133);
+      tmp(11137).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
+      const tmpResult1 = tmp(11137);
     }
-    obj2 = _modDef11157;
+    obj2 = _modDef11161;
   }
 }
 ({ useEffect: c3, useRef: c4 } = noop);

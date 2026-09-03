@@ -1,15 +1,15 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15152
+// Function ID: 15153
 // Name: CircleMinusIcon
-// Dependencies: [19, 17, 21, 709, 4196, 15138, 15139, 2]
+// Dependencies: [19, 17, 21, 709, 4196, 15153, 15154, 2]
 // Exports: CircleMinusIcon
 
-// Module 15137 (CircleMinusIcon)
+// Module 15152 (CircleMinusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15138 */;
-import registerAsset2 from "registerAsset" /* 15139 */;
+import registerAsset from "registerAsset" /* 15153 */;
+import registerAsset2 from "registerAsset" /* 15154 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

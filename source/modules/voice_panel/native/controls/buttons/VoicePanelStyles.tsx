@@ -1,13 +1,13 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17020
+// Function ID: 17021
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4478, 709, 8584, 2]
+// Dependencies: [4478, 709, 8588, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 17000 (useVoicePanelButtonStyles)
+// Module 17020 (useVoicePanelButtonStyles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 8584 */;
+import map from "map" /* 8588 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 let closure_3 = createCacheKey.createStyles((arg0) => {

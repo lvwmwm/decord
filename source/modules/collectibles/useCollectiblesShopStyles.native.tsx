@@ -1,12 +1,12 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11050
+// Function ID: 11051
 // Name: importDefaultResult1
-// Dependencies: [7306, 709, 11047, 2]
+// Dependencies: [7307, 709, 11051, 2]
 
-// Module 11046 (importDefaultResult1)
+// Module 11050 (importDefaultResult1)
 import ThemesDefault from "Themes" /* 709 */;
-import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 11047 */;
-import importDefaultResult from "tinycolor" /* 7306 */;
+import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 11051 */;
+import importDefaultResult from "tinycolor" /* 7307 */;
 import saturateResult from "module_1" /* 1 */;
 import saturateResult1 from "module_1" /* 1 */;
 

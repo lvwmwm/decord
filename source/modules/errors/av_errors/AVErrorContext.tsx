@@ -1,10 +1,10 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17674
+// Function ID: 17675
 // Name: getVoiceChannelErrorContext
 // Dependencies: [4529, 4554, 1980, 4568, 4579, 4544, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 17654 (getVoiceChannelErrorContext)
+// Module 17674 (getVoiceChannelErrorContext)
 import isStreamKey from "isStreamKey" /* 4544 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
 import closure_2 from "_detectH265HardwareDecode" /* 4529 */;

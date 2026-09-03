@@ -1,10 +1,10 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 13002
+// Function ID: 13003
 // Name: getApplicationAssetUrl
 // Dependencies: [527, 1464, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 12990 (getApplicationAssetUrl)
+// Module 13002 (getApplicationAssetUrl)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 527 */;
 import handleImageLoad from "handleImageLoad" /* 1464 */;

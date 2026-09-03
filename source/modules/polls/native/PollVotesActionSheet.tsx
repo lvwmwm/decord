@@ -1,23 +1,23 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11527
+// Function ID: 11528
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4470, 5409, 1386, 4735, 1921, 21, 4478, 709, 586, 1430, 5593, 1233, 5076, 4474, 7515, 5660, 8135, 5961, 11523, 11114, 7517, 4673, 4322, 5607, 1296, 9793, 8911, 4217, 4479, 8113, 4413, 1362, 11524, 11525, 5981, 4445, 5630, 2]
+// Dependencies: [32, 5, 19, 17, 4470, 5410, 1386, 4736, 1921, 21, 4478, 709, 586, 1430, 5594, 1233, 5077, 4474, 7516, 5661, 8139, 5962, 11528, 11118, 7518, 4673, 4322, 5608, 1296, 9797, 8915, 4217, 4479, 8116, 4413, 1362, 11529, 11530, 5982, 4445, 5631, 2]
 // Exports: default
 
-// Module 11522 (PollEmoji)
+// Module 11527 (PollEmoji)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
-import EmojiDefault from "Emoji" /* 5593 */;
+import EmojiDefault from "Emoji" /* 5594 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_10 from "getEmojiToGroupId" /* 5409 */;
+import closure_10 from "getEmojiToGroupId" /* 5410 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "reinjectEphemerals" /* 4735 */;
+import closure_12 from "reinjectEphemerals" /* 4736 */;
 import closure_13 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -338,9 +338,9 @@ function NoResults() {
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11524);
+    let tmp2Result = tmp2(11529);
   } else {
-    tmp2Result = tmp2(11525);
+    tmp2Result = tmp2(11530);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];
@@ -428,7 +428,7 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
   obj2[3] = items3;
   items2[2] = closure_15(answer(4474).Text, obj2);
   obj[6] = items2;
-  return closure_15(answer(5076).PressableHighlight, obj);
+  return closure_15(answer(5077).PressableHighlight, obj);
 });
 let closure_20 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 let result = require("set").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");

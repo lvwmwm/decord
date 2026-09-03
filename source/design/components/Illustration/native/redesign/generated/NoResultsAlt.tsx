@@ -1,13 +1,13 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 9747
+// Function ID: 9748
 // Name: getNoResultsAltSource
-// Dependencies: [19, 17, 21, 8926, 9744, 9745, 7786, 1362, 2]
+// Dependencies: [19, 17, 21, 8930, 9748, 9749, 7789, 1362, 2]
 // Exports: NoResultsAlt, getNoResultsAltSource, useNoResultsAltSource
 
-// Module 9743 (getNoResultsAltSource)
+// Module 9747 (getNoResultsAltSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getIllustrationSource from "getIllustrationSource" /* 8926 */;
+import getIllustrationSource from "getIllustrationSource" /* 8930 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getNoResultsAltSource = function getNoResultsAltSource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9744);
+      return callback(9748);
     },
     darker() {
-      return callback(9745);
+      return callback(9749);
     },
     light() {
-      return callback(7786);
+      return callback(7789);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useNoResultsAltSource = function useNoResultsAltSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9744);
+      return callback(9748);
     },
     darker() {
-      return callback(9745);
+      return callback(9749);
     },
     light() {
-      return callback(7786);
+      return callback(7789);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const NoResultsAlt = function NoResultsAlt(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9744);
+      return callback(9748);
     },
     darker() {
-      return callback(9745);
+      return callback(9749);
     },
     light() {
-      return callback(7786);
+      return callback(7789);
     }
   };
   obj = {};

@@ -1,13 +1,13 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 7714
+// Function ID: 7715
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 7698, 21, 1498, 688, 7712, 7709, 1233, 2]
+// Dependencies: [5, 19, 7701, 21, 1498, 688, 7715, 7712, 1233, 2]
 // Exports: default
 
-// Module 7711 (ConfirmEmailChangeCode)
+// Module 7714 (ConfirmEmailChangeCode)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { setEmailToken } from "ChangeEmailFields" /* 7698 */;
+import { setEmailToken } from "ChangeEmailFields" /* 7701 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -113,5 +113,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj[3] = intl.string(_require(1233).t["2x/2Uo"]);
   const intl2 = _require(1233).intl;
   obj[4] = intl2.string(_require(1233).t.PDTjLN);
-  return jsx(navigation(7712), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(7715), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

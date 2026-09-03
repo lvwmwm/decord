@@ -1,9 +1,9 @@
-// Module ID: 11284
-// Function ID: 11285
+// Module ID: 11288
+// Function ID: 11289
 // Name: LAUNCH_PAD_SPRING_CONFIG
 // Dependencies: [17, 1234, 4457, 2]
 
-// Module 11284 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 11288 (LAUNCH_PAD_SPRING_CONFIG)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 import set from "set" /* 1234 */;

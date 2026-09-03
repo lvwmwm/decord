@@ -1,14 +1,14 @@
-// Module ID: 7828
-// Function ID: 7829
+// Module ID: 7831
+// Function ID: 7832
 // Name: PaperIcon
-// Dependencies: [19, 21, 709, 4196, 7829, 2]
+// Dependencies: [19, 21, 709, 4196, 7832, 2]
 // Exports: PaperIcon
 
-// Module 7828 (PaperIcon)
+// Module 7831 (PaperIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7829 */;
+import registerAsset from "registerAsset" /* 7832 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

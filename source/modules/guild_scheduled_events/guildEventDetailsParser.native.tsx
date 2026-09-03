@@ -1,9 +1,9 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9766
+// Function ID: 9767
 // Name: guildEventDetailsParser
 // Dependencies: [4468, 2]
 
-// Module 9762 (guildEventDetailsParser)
+// Module 9766 (guildEventDetailsParser)
 import importDefaultResult from "get defaultRules" /* 4468 */;
 
 const reactParserForResult = importDefaultResult.reactParserFor(importDefaultResult.guildEventLocationRules);

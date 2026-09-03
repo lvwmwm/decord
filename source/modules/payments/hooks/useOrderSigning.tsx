@@ -1,10 +1,10 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11583
+// Function ID: 11584
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4460, 4161, 4154, 6098, 2]
+// Dependencies: [5, 32, 19, 4460, 4161, 4154, 6099, 2]
 // Exports: useOrderSigning
 
-// Module 11578 (useOrderSigning)
+// Module 11583 (useOrderSigning)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;

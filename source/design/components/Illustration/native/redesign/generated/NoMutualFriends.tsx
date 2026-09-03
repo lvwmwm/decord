@@ -1,13 +1,13 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9279
+// Function ID: 9280
 // Name: getNoMutualFriendsSource
-// Dependencies: [19, 17, 21, 8926, 9276, 9277, 9278, 1362, 2]
+// Dependencies: [19, 17, 21, 8930, 9280, 9281, 9282, 1362, 2]
 // Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 9275 (getNoMutualFriendsSource)
+// Module 9279 (getNoMutualFriendsSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getIllustrationSource from "getIllustrationSource" /* 8926 */;
+import getIllustrationSource from "getIllustrationSource" /* 8930 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getNoMutualFriendsSource = function getNoMutualFriendsSource(theme)
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9276);
+      return callback(9280);
     },
     darker() {
-      return callback(9277);
+      return callback(9281);
     },
     light() {
-      return callback(9278);
+      return callback(9282);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useNoMutualFriendsSource = function useNoMutualFriendsSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9276);
+      return callback(9280);
     },
     darker() {
-      return callback(9277);
+      return callback(9281);
     },
     light() {
-      return callback(9278);
+      return callback(9282);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const NoMutualFriends = function NoMutualFriends(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9276);
+      return callback(9280);
     },
     darker() {
-      return callback(9277);
+      return callback(9281);
     },
     light() {
-      return callback(9278);
+      return callback(9282);
     }
   };
   obj = {};

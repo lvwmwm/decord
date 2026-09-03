@@ -1,9 +1,9 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9642
+// Function ID: 9643
 // Name: _initialize
-// Dependencies: [1921, 4497, 4662, 706, 4727, 2]
+// Dependencies: [1921, 4497, 4662, 706, 4728, 2]
 
-// Module 9638 (_initialize)
+// Module 9642 (_initialize)
 import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import closure_4 from "updateVoiceState" /* 4497 */;

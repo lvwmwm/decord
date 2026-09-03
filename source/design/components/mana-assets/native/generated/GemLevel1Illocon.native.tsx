@@ -1,14 +1,14 @@
-// Module ID: 6670
-// Function ID: 6671
+// Module ID: 6671
+// Function ID: 6672
 // Name: GemLevel1Illocon
-// Dependencies: [21, 5501, 6671, 2]
+// Dependencies: [21, 5502, 6672, 2]
 // Exports: GemLevel1Illocon
 
-// Module 6670 (GemLevel1Illocon)
+// Module 6671 (GemLevel1Illocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6671 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6672 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1Illocon.native.tsx");

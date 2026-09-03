@@ -1,10 +1,10 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 7970
+// Function ID: 7971
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1921, 4153, 4322, 1233, 3016, 2, 7968]
+// Dependencies: [1921, 4153, 4322, 1233, 3016, 2, 7971]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7967 (getPremiumGroupInviteEmbedText)
+// Module 7970 (getPremiumGroupInviteEmbedText)
 import messagesProxyDefault from "messagesProxy" /* 3016 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;

@@ -1,7 +1,7 @@
 // Module ID: 1206
 // Function ID: 1207
 // Name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing
-// Dependencies: [5, 17, 673, 502, 807, 3, 1207, 1219, 695, 14069, 7356, 7361, 14070, 1205, 1624, 7357, 1234, 4457, 1623, 7428, 670, 2]
+// Dependencies: [5, 17, 673, 502, 807, 3, 1207, 1219, 695, 14085, 7357, 7362, 14086, 1205, 1624, 7358, 1234, 4457, 1623, 7429, 670, 2]
 // Exports: initSentry
 
 // Module 1206 (_maybeBackfillMissingBreadcrumbsFromTelemetryRing)
@@ -14,7 +14,7 @@ import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import { PRIMARY_DOMAIN } from "sum" /* 502 */;
 import addBreadcrumb from "addBreadcrumb" /* 807 */;
-import IGNORE_ANALYTICS_BREADCRUMB_EVENTS from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 14070 */;
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 14086 */;
 
 require = arg1;
 function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
@@ -562,17 +562,17 @@ function trackCrash(event, hint, arg2) {
     tmp25(1205).markCrashHandled(event_id2);
     const tmp25Result = tmp25(1205);
   }
-  const AppCrashedReasons = tmp11(14069).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(14085).AppCrashedReasons;
   const tmp19 = expandEventPropertiesDefault;
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  obj1 = { name: tmp11(7361).MetricEvents.APP_CRASHED, tags: null };
+  obj1 = { name: tmp11(7362).MetricEvents.APP_CRASHED, tags: null };
   items = ["reason:" + tmp41, ];
   if (level == null) {
     level = "unknown";
   }
   items[1] = "level:" + level;
   obj1[1] = items;
-  tmp26(7356).increment(obj1, true);
+  tmp26(7357).increment(obj1, true);
 }
 ({ AnalyticEvents: closure_6, Endpoints } = ME);
 addBreadcrumb = addBreadcrumb.reactNavigationIntegration();
@@ -651,7 +651,7 @@ export const initSentry = function initSentry() {
           if (tmp14Result2.isAndroid()) {
             str2 = "android";
           }
-          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6336", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@345.2.0-2+345202", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6342", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@345.3.0-2+345203", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           obj[0] = `/error-reporting-proxy/${str2}`;
           obj[2] = closure_16;
           obj[4] = SentryStaffDsn;
@@ -689,7 +689,7 @@ export const initSentry = function initSentry() {
           };
           tmp14Result1.init(obj);
           const tmp14Result4 = callback(tmp[4]);
-          callback(tmp[4]).setTag("buildNumber", "6336");
+          callback(tmp[4]).setTag("buildNumber", "6342");
           const tmp14Result5 = callback(tmp[4]);
           callback(tmp[4]).setTag("appVersion", constants.Version);
           const tmp14Result6 = callback(tmp[4]);

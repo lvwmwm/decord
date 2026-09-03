@@ -1,8 +1,8 @@
-// Module ID: 11168
-// Function ID: 11169
-// Dependencies: [4108, 1398, 8678, 2]
+// Module ID: 11172
+// Function ID: 11173
+// Dependencies: [4108, 1398, 8682, 2]
 
-// Module 11168
+// Module 11172
 import set from "set" /* 2 */;
 import hasFlag from "hasFlag" /* 1398 */;
 import GuildMemberFlags2 from "GuildMemberFlags" /* 4108 */;
@@ -31,7 +31,7 @@ export default {
         if (num2 == null) {
           num2 = 0;
         }
-        hasFlagResult1 = tmp2(1398).hasFlag(num2, tmp2(8678).GuildInviteFlags.IS_GUEST_INVITE);
+        hasFlagResult1 = tmp2(1398).hasFlag(num2, tmp2(8682).GuildInviteFlags.IS_GUEST_INVITE);
         const tmp2Result = tmp2(1398);
       }
       tmp = hasFlagResult1;

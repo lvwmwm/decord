@@ -1,11 +1,11 @@
-// Module ID: 7224
-// Function ID: 7225
+// Module ID: 7225
+// Function ID: 7226
 // Name: shouldLogClientHeartbeatSkipped
-// Dependencies: [1921, 7225, 2]
+// Dependencies: [1921, 7226, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 7224 (shouldLogClientHeartbeatSkipped)
-import sampleWithUserId from "sampleWithUserId" /* 7225 */;
+// Module 7225 (shouldLogClientHeartbeatSkipped)
+import sampleWithUserId from "sampleWithUserId" /* 7226 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

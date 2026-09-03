@@ -1,10 +1,10 @@
-// Module ID: 6103
-// Function ID: 6104
+// Module ID: 6104
+// Function ID: 6105
 // Name: frozen
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 6103 (frozen)
+// Module 6104 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });
@@ -81,5 +81,4 @@ export const formatVibegrationsAttachmentLimit = function formatVibegrationsAtta
   return "" + Math.round(arg0 / 1048576) + " MB";
 };
 export const VIBEGRATIONS_FALLBACK_MODEL_CHOICES = obj;
-export const VIBEGRATIONS_FALLBACK_MODEL_SETTINGS = { main: { model: "gpt-5.6-sol", thinking: "high" }, subagent: { model: "gpt-5.6-luna", thinking: "high" } };
 export const VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES = obj;

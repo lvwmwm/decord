@@ -1,15 +1,15 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7214
+// Function ID: 7215
 // Name: trackRoundtrip
-// Dependencies: [1386, 4398, 4574, 673, 3, 7214, 695, 7431, 586, 706, 2]
+// Dependencies: [1386, 4398, 4574, 673, 3, 7215, 695, 7432, 586, 706, 2]
 
-// Module 7213 (trackRoundtrip)
+// Module 7214 (trackRoundtrip)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7214 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7431 */;
+import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7215 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7432 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "handleInviteData" /* 4398 */;
 import closure_5 from "handleConnectionInfoChange" /* 4574 */;

@@ -1,14 +1,14 @@
-// Module ID: 6472
-// Function ID: 6473
+// Module ID: 6473
+// Function ID: 6474
 // Name: DiamondSpotIllustration
-// Dependencies: [21, 5501, 6473, 2]
+// Dependencies: [21, 5502, 6474, 2]
 // Exports: DiamondSpotIllustration
 
-// Module 6472 (DiamondSpotIllustration)
+// Module 6473 (DiamondSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6473 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6474 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DiamondSpotIllustration.native.tsx");

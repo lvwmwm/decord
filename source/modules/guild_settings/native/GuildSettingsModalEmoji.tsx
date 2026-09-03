@@ -1,17 +1,17 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17401
+// Function ID: 17402
 // Name: computeEmojiItem
-// Dependencies: [32, 19, 17, 1908, 17382, 21, 12, 9191, 4478, 709, 1233, 5414, 4369, 586, 9653, 4474, 17384, 17388, 1296, 17389, 6056, 5947, 1498, 5503, 2]
+// Dependencies: [32, 19, 17, 1908, 17402, 21, 12, 9195, 4478, 709, 1233, 5415, 4369, 586, 9657, 4474, 17404, 17408, 1296, 17409, 6057, 5948, 1498, 5504, 2]
 // Exports: computeSectionItem, default
 
-// Module 17381 (computeEmojiItem)
+// Module 17401 (computeEmojiItem)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "initialize" /* 17382 */;
+import closure_8 from "initialize" /* 17402 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importDefaultResult from "apply" /* 12 */;

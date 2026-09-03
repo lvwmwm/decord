@@ -1,10 +1,10 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8016
+// Function ID: 8017
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 8013 (apexExperiment)
+// Module 8016 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

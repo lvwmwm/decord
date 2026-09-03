@@ -1,10 +1,10 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7311
+// Function ID: 7312
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: getIsXboxGamePassPerksEnabled, useIsXboxGamePassPerksEnabled
 
-// Module 7310 (apexExperiment)
+// Module 7311 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

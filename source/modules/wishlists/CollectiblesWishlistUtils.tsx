@@ -1,13 +1,13 @@
-// Module ID: 8908
-// Function ID: 8909
+// Module ID: 8912
+// Function ID: 8913
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1949, 1233, 7308, 2]
+// Dependencies: [1949, 1233, 7309, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8908 (getProductNameAndTypeFromSku)
+// Module 8912 (getProductNameAndTypeFromSku)
 import set from "set" /* 2 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7308 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
 
 let result = set.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 

@@ -1,8 +1,8 @@
-// Module ID: 16931
-// Function ID: 16932
-// Dependencies: [19, 21, 5489, 6014, 5607, 1233, 5613, 13805, 2]
+// Module ID: 16951
+// Function ID: 16952
+// Dependencies: [19, 21, 5490, 6015, 5608, 1233, 5614, 13821, 2]
 
-// Module 16931
+// Module 16951
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -23,11 +23,11 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
   obj[0] = intl.string(channel(1233).t["9mysCh"]);
   const intl2 = channel(1233).intl;
   obj[1] = intl2.string(channel(1233).t.PDUCIN);
-  obj = { IconComponent: channel(13805).ChannelListMagnifyingGlassIcon };
-  obj[2] = jsx(channel(5613).TableRowIcon, { IconComponent: channel(13805).ChannelListMagnifyingGlassIcon });
+  obj = { IconComponent: channel(13821).ChannelListMagnifyingGlassIcon };
+  obj[2] = jsx(channel(5614).TableRowIcon, { IconComponent: channel(13821).ChannelListMagnifyingGlassIcon });
   obj[3] = callback;
-  obj[1] = jsx(channel(5607).TableRow, { IconComponent: channel(13805).ChannelListMagnifyingGlassIcon });
-  return jsx(analyticsSection(6014), { IconComponent: channel(13805).ChannelListMagnifyingGlassIcon });
+  obj[1] = jsx(channel(5608).TableRow, { IconComponent: channel(13821).ChannelListMagnifyingGlassIcon });
+  return jsx(analyticsSection(6015), { IconComponent: channel(13821).ChannelListMagnifyingGlassIcon });
 });
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
 

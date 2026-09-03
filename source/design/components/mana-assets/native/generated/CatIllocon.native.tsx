@@ -1,14 +1,14 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6401
+// Function ID: 6402
 // Name: CatIllocon
-// Dependencies: [21, 5501, 6401, 2]
+// Dependencies: [21, 5502, 6402, 2]
 // Exports: CatIllocon
 
-// Module 6400 (CatIllocon)
+// Module 6401 (CatIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6401 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6402 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CatIllocon.native.tsx");

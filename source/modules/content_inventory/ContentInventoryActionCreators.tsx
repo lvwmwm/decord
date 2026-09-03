@@ -1,19 +1,19 @@
-// Module ID: 11732
-// Function ID: 11733
+// Module ID: 11737
+// Function ID: 11738
 // Name: toggleMemberListContentFeedHidden
-// Dependencies: [1386, 1980, 4299, 1921, 11733, 673, 706, 695, 11734, 5981, 2]
+// Dependencies: [1386, 1980, 4299, 1921, 11738, 673, 706, 695, 11739, 5982, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 11732 (toggleMemberListContentFeedHidden)
+// Module 11737 (toggleMemberListContentFeedHidden)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
-import showUserProfileAll from "showUserProfile" /* 11734 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+import showUserProfileAll from "showUserProfile" /* 11739 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "handleConnectionOpen" /* 1980 */;
 import closure_5 from "handleConnectionOpen" /* 4299 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "updateImpressionCaches" /* 11733 */;
+import closure_7 from "updateImpressionCaches" /* 11738 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryActionCreators.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13353
-// Function ID: 13354
+// Module ID: 13368
+// Function ID: 13369
 // Name: PremiumPromotionCard
-// Dependencies: [19, 17, 4470, 673, 1923, 21, 4478, 709, 586, 5961, 7176, 5501, 4474, 1233, 1994, 4928, 8104, 2]
+// Dependencies: [19, 17, 4470, 673, 1923, 21, 4478, 709, 586, 5962, 7177, 5502, 4474, 1233, 1994, 4929, 8107, 2]
 // Exports: default
 
-// Module 13353 (PremiumPromotionCard)
+// Module 13368 (PremiumPromotionCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

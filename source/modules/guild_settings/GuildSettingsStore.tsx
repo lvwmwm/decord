@@ -1,9 +1,9 @@
-// Module ID: 9751
-// Function ID: 9752
+// Module ID: 9755
+// Function ID: 9756
 // Name: handleFormInit
-// Dependencies: [1426, 9023, 1390, 1429, 8666, 1934, 1908, 1921, 673, 9752, 7953, 11, 9753, 527, 706, 9755, 1425, 9756, 4074, 9757, 586, 12, 592, 2]
+// Dependencies: [1426, 9027, 1390, 1429, 8670, 1934, 1908, 1921, 673, 9756, 7956, 11, 9757, 527, 706, 9759, 1425, 9760, 4074, 9761, 586, 12, 592, 2]
 
-// Module 9751 (handleFormInit)
+// Module 9755 (handleFormInit)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import sendRequest from "sendRequest" /* 527 */;
@@ -15,18 +15,18 @@ import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAddi
 import isValueEqual from "isValueEqual" /* 1426 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
 import hooksDefault from "hooks" /* 4074 */;
-import DEFAULT_DISCOVERY_CATEGORY_ID2 from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9752 */;
-import canUseMobileServerTagSettings from "canUseMobileServerTagSettings" /* 9753 */;
-import fetchVanityUrl from "fetchVanityUrl" /* 9755 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9756 */;
-import _fetchGuildIntegrationsApplications from "_fetchGuildIntegrationsApplications" /* 9757 */;
-import closure_14 from "handleUpdateStart" /* 9023 */;
-import closure_17 from "createFromServer" /* 8666 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID2 from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9756 */;
+import canUseMobileServerTagSettings from "canUseMobileServerTagSettings" /* 9757 */;
+import fetchVanityUrl from "fetchVanityUrl" /* 9759 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9760 */;
+import _fetchGuildIntegrationsApplications from "_fetchGuildIntegrationsApplications" /* 9761 */;
+import closure_14 from "handleUpdateStart" /* 9027 */;
+import closure_17 from "createFromServer" /* 8670 */;
 import closure_18 from "createdAt" /* 1934 */;
 import closure_19 from "createGuildRecordFromRust" /* 1908 */;
 import closure_20 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7953 */;
+import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7956 */;
 import set from "set" /* 2 */;
 
 function handleFormInit(location) {

@@ -1,12 +1,12 @@
 // Module ID: 4467
 // Function ID: 4468
 // Name: findCodedLinkUrls
-// Dependencies: [4468, 7907, 4949, 13808, 13809, 2]
+// Dependencies: [4468, 7910, 4950, 13824, 13825, 2]
 // Exports: default
 
 // Module 4467 (findCodedLinkUrls)
 import set from "set" /* 2 */;
-import trimTrailingPunctuationDefault from "trimTrailingPunctuation" /* 13809 */;
+import trimTrailingPunctuationDefault from "trimTrailingPunctuation" /* 13825 */;
 
 const result = set.fileFinishedImporting("modules/coded_links/findCodedLinkUrls.native.tsx");
 
@@ -17,7 +17,7 @@ export default function findCodedLinkUrls(content) {
     items = [];
     const _default = tmp(4468).default;
     const parseToASTResult = tmp(4468).default.parseToAST(content, true, { allowLinks: true });
-    tmp(7907).walkAst(parseToASTResult, (type) => {
+    tmp(7910).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === items(closure_1_2[2]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -26,7 +26,7 @@ export default function findCodedLinkUrls(content) {
         items.push(type.target);
       }
     });
-    const tmpResult = tmp(7907);
+    const tmpResult = tmp(7910);
   }
   return items;
 };

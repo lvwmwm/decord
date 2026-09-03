@@ -1,13 +1,13 @@
-// Module ID: 6067
-// Function ID: 6068
+// Module ID: 6068
+// Function ID: 6069
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1908, 1921, 673, 586, 6068, 4139, 2]
+// Dependencies: [1908, 1921, 673, 586, 6069, 4139, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 6067 (useShouldShowInlineGuildCapUpsell)
+// Module 6068 (useShouldShowInlineGuildCapUpsell)
 import initialize from "initialize" /* 586 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import HotspotStore2 from "HotspotStore" /* 6068 */;
+import HotspotStore2 from "HotspotStore" /* 6069 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { MAX_USER_GUILDS } from "ME" /* 673 */;
@@ -21,8 +21,8 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   const obj = initialize;
   const items1 = [HotspotStore2.HotspotStore];
   const stateFromStores1 = initialize.useStateFromStores(items1, () => {
-    const HotspotStore = callback(6068).HotspotStore;
-    return HotspotStore.hasHotspot(callback(6068).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+    const HotspotStore = callback(6069).HotspotStore;
+    return HotspotStore.hasHotspot(callback(6069).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
   const obj2 = initialize;
   const items2 = [closure_4];

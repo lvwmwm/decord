@@ -1,14 +1,14 @@
-// Module ID: 10893
-// Function ID: 10894
+// Module ID: 10897
+// Function ID: 10898
 // Name: ArrowSmallRightIcon
-// Dependencies: [19, 21, 709, 4196, 10894, 2]
+// Dependencies: [19, 21, 709, 4196, 10898, 2]
 // Exports: ArrowSmallRightIcon
 
-// Module 10893 (ArrowSmallRightIcon)
+// Module 10897 (ArrowSmallRightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10894 */;
+import registerAsset from "registerAsset" /* 10898 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

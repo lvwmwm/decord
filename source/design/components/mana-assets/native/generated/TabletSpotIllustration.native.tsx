@@ -1,14 +1,14 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7099
+// Function ID: 7100
 // Name: TabletSpotIllustration
-// Dependencies: [21, 5501, 7099, 2]
+// Dependencies: [21, 5502, 7100, 2]
 // Exports: TabletSpotIllustration
 
-// Module 7098 (TabletSpotIllustration)
+// Module 7099 (TabletSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7099 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7100 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TabletSpotIllustration.native.tsx");

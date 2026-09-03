@@ -1,10 +1,10 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12884
+// Function ID: 12885
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 673, 21, 8827, 6169, 1954, 4928, 1233, 2]
+// Dependencies: [5, 19, 673, 21, 8831, 6170, 1954, 4929, 1233, 2]
 // Exports: default
 
-// Module 12872 (GameProfileGameClaimCta)
+// Module 12884 (GameProfileGameClaimCta)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { RelativeMarketingURLs } from "ME" /* 673 */;
@@ -79,7 +79,7 @@ export default function GameProfileGameClaimCta(trackAction) {
     const intl = trackAction(1233).intl;
     obj[2] = intl.string(trackAction(1233).t["mqg+to"]);
     obj[3] = callback;
-    let tmp3 = jsx(trackAction(4928).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(4929).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }

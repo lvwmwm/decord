@@ -1,13 +1,13 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16166
+// Function ID: 16167
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10185, 4300, 1991, 1908, 4120, 1921, 673, 21, 4478, 586, 4301, 16151, 4197, 709, 1296, 16155, 16119, 16118, 2]
+// Dependencies: [109, 19, 10189, 4300, 1991, 1908, 4120, 1921, 673, 21, 4478, 586, 4301, 16167, 4197, 709, 1296, 16171, 16135, 16134, 2]
 // Exports: default
 
-// Module 16150 (useGuildsBarBadges)
+// Module 16166 (useGuildsBarBadges)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "computeAlertSettings" /* 10185 */;
+import closure_6 from "computeAlertSettings" /* 10189 */;
 import closure_7 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;

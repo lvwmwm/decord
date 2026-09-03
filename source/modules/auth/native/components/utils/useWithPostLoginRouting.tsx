@@ -1,10 +1,10 @@
-// Module ID: 7737
-// Function ID: 7738
+// Module ID: 7740
+// Function ID: 7741
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 1215, 673, 586, 1233, 7738, 6060, 2]
+// Dependencies: [5, 32, 19, 1215, 673, 586, 1233, 7741, 6061, 2]
 // Exports: default
 
-// Module 7737 (useWithPostLoginRouting)
+// Module 7740 (useWithPostLoginRouting)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -52,10 +52,10 @@ export default function useWithPostLoginRouting(arg0, arg1) {
       obj[1] = intl2.string(arr(first[6]).t.myKyqh);
       obj[2] = closure_1_6.getCredentials().login;
       obj[3] = function onPhoneTokenReceived(arg0) {
-        const replaced = closure_0.replace(closure_1_8.EXTERNAL_LINK, { externalURL: closure_1_1(7738)(arg0) });
+        const replaced = closure_0.replace(closure_1_8.EXTERNAL_LINK, { externalURL: closure_1_1(7741)(arg0) });
       };
       obj[4] = function onClose() {
-        callback(6060).loginReset();
+        callback(6061).loginReset();
       };
       let replaced = arr.replace(closure_1_8.VERIFY_PHONE, obj);
     } else if (tmp2.PHONE_IP_AUTHORIZATION === tmp6) {

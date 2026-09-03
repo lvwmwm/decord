@@ -1,10 +1,10 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11211
+// Function ID: 11212
 // Name: apexExperiment
 // Dependencies: [1467, 1234, 2]
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 11207 (apexExperiment)
+// Module 11211 (apexExperiment)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1234 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;

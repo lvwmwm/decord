@@ -1,14 +1,14 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12470
+// Function ID: 12471
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4478, 709, 1233, 7617, 2]
+// Dependencies: [19, 21, 4478, 709, 1233, 7618, 2]
 // Exports: default
 
-// Module 12458 (SkipHeaderButton)
+// Module 12470 (SkipHeaderButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import GenericHeaderTitle from "GenericHeaderTitle" /* 7617 */;
+import GenericHeaderTitle from "GenericHeaderTitle" /* 7618 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

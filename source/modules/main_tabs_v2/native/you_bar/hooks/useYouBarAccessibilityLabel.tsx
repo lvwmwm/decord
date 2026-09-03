@@ -1,16 +1,16 @@
-// Module ID: 16188
-// Function ID: 16189
+// Module ID: 16204
+// Function ID: 16205
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4500, 1386, 4120, 4569, 4130, 5231, 4497, 673, 4322, 16189, 16190, 4166, 9101, 8083, 586, 9255, 9256, 9262, 1233, 9266, 2]
+// Dependencies: [4500, 1386, 4120, 4569, 4130, 5232, 4497, 673, 4322, 16205, 16206, 4166, 9105, 8086, 586, 9259, 9260, 9266, 1233, 9270, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 16188 (useYouBarAccessibilityLabel)
+// Module 16204 (useYouBarAccessibilityLabel)
 import closure_3 from "reset" /* 4500 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_6 from "sortActivity" /* 4569 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "filterPlayingActivities" /* 5231 */;
+import closure_8 from "filterPlayingActivities" /* 5232 */;
 import closure_9 from "updateVoiceState" /* 4497 */;
 import ME from "ME" /* 673 */;
 
@@ -25,16 +25,16 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
     id = stateFromStores.id;
   }
   let obj = id(4322);
-  dependencyMap = _require(16189).useYouBarActivityStatusEnabled("YouBar");
-  const obj2 = _require(16189);
-  const isYouBarGuildTagEnabled = _require(16190).useIsYouBarGuildTagEnabled("YouBar");
+  dependencyMap = _require(16205).useYouBarActivityStatusEnabled("YouBar");
+  const obj2 = _require(16205);
+  const isYouBarGuildTagEnabled = _require(16206).useIsYouBarGuildTagEnabled("YouBar");
   const CustomStatusSetting = _require(4166).CustomStatusSetting;
   const setting = CustomStatusSetting.useSetting();
   let text;
   if (setting != null) {
     text = setting.text;
   }
-  let tmp3Result = tmp3(9101);
+  let tmp3Result = tmp3(9105);
   let tmp7 = null;
   if ("" !== text) {
     tmp7 = text;
@@ -42,7 +42,7 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
   closure_3 = tmp3Result.useGameMentionsAsPlainText(tmp7);
   let tmp8;
   if (isYouBarGuildTagEnabled) {
-    tmp3Result = tmp3(8083);
+    tmp3Result = tmp3(8086);
     let primaryGuild;
     if (stateFromStores != null) {
       primaryGuild = stateFromStores.primaryGuild;
@@ -55,15 +55,15 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
     tmp8 = tag;
   }
   tag = tmp8;
-  const obj3 = _require(16190);
+  const obj3 = _require(16206);
   let items = [closure_8, closure_3, closure_7, tag, closure_5, closure_9, closure_6];
   return _require(586).useStateFromStores(items, () => {
     if (null != callback) {
       const status = closure_1_8.getStatus();
-      let obj = callback(9255);
+      let obj = callback(9259);
       const items = [closure_3, closure_1_7];
       const discoverableApplicationStream = obj.getDiscoverableApplicationStream(id, items);
-      obj1 = callback(9256);
+      obj1 = callback(9260);
       obj = { userId: null };
       obj[0] = id;
       obj = { ChannelStore: null, PermissionStore: null, VoiceStateStore: null };
@@ -83,7 +83,7 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
               if (null != discoverableApplicationStream) {
                 let name;
                 if (activities != null) {
-                  const found = activities.find(id(9262));
+                  const found = activities.find(id(9266));
                   if (found != null) {
                     name = found.name;
                   }
@@ -105,7 +105,7 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                   });
                 }
                 if (null != found1) {
-                  text = id(9266)(found1, true).text;
+                  text = id(9270)(found1, true).text;
                 } else {
                   text = null;
                   if (null != voiceChannel) {

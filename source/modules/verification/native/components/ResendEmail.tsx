@@ -1,10 +1,10 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7709
+// Function ID: 7710
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1380, 1921, 673, 21, 4478, 1498, 586, 38, 7707, 7696, 6265, 4474, 1233, 4928, 6060, 4194, 2]
+// Dependencies: [32, 19, 17, 1380, 1921, 673, 21, 4478, 1498, 586, 38, 7710, 7699, 6266, 4474, 1233, 4929, 6061, 4194, 2]
 // Exports: default
 
-// Module 7706 (ResendEmail)
+// Module 7709 (ResendEmail)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -34,7 +34,7 @@ export default function ResendEmail() {
   let obj2 = navigation(586);
   const items1 = [closure_6];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(7707);
+  let obj3 = verified(7710);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -58,7 +58,7 @@ export default function ResendEmail() {
   callback = React.useCallback(() => {
     navigation.push(closure_1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(6265).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(6266).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1233).intl;
   obj[4] = intl.string(navigation(1233).t.fUtddV);
@@ -87,7 +87,7 @@ export default function ResendEmail() {
     obj[1] = intl.string(navigation(closure_1_2[15]).t["84yeoz"]);
     verified(closure_1_2[18]).open(obj);
   };
-  obj3[1] = callback2(navigation(4928).Button, obj4);
+  obj3[1] = callback2(navigation(4929).Button, obj4);
   items4[3] = callback2(View, obj3);
   if (!result) {
     const obj5 = { style: null, children: null };
@@ -96,7 +96,7 @@ export default function ResendEmail() {
     const intl4 = tmp2(1233).intl;
     obj6[0] = intl4.string(tmp2(1233).t.Vm8akB);
     obj6[2] = callback;
-    obj5[1] = tmp16(tmp2(4928).Button, obj6);
+    obj5[1] = tmp16(tmp2(4929).Button, obj6);
     tmp16Result = tmp16(tmp15, obj5);
   }
   items4[4] = tmp16Result;

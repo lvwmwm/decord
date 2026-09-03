@@ -1,16 +1,16 @@
-// Module ID: 13141
-// Function ID: 13142
+// Module ID: 13153
+// Function ID: 13154
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4478, 709, 1234, 1296, 4935, 5076, 4474, 7623, 2]
+// Dependencies: [19, 21, 4478, 709, 1234, 1296, 4936, 5077, 4474, 7624, 2]
 // Exports: default
 
-// Module 13141 (ButtonBadge)
+// Module 13153 (ButtonBadge)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
-import getFontScale from "getFontScale" /* 4935 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7623 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7623 */;
+import getFontScale from "getFontScale" /* 4936 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7624 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7624 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

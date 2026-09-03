@@ -1,14 +1,14 @@
-// Module ID: 16163
-// Function ID: 16164
-// Dependencies: [19, 1215, 5230, 1386, 7390, 4130, 1921, 673, 21, 4478, 709, 16116, 586, 9438, 1233, 16118, 4489, 10872, 16164, 10869, 1296, 5501, 2]
+// Module ID: 16179
+// Function ID: 16180
+// Dependencies: [19, 1215, 5231, 1386, 7391, 4130, 1921, 673, 21, 4478, 709, 16132, 586, 9442, 1233, 16134, 4489, 10876, 16180, 10873, 1296, 5502, 2]
 
-// Module 16163
+// Module 16179
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "callConnect" /* 5230 */;
+import closure_5 from "callConnect" /* 5231 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "updateGuildUnreadSentinel" /* 7390 */;
+import closure_7 from "updateGuildUnreadSentinel" /* 7391 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import { ChannelTypes } from "ME" /* 673 */;

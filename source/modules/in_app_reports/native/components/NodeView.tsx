@@ -1,23 +1,23 @@
-// Module ID: 8778
-// Function ID: 8779
+// Module ID: 8782
+// Function ID: 8783
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4477, 1386, 4120, 8779, 8777, 673, 502, 21, 4478, 709, 5949, 4948, 4474, 4326, 4433, 586, 5076, 8780, 1498, 4915, 4924, 8774, 8772, 4700, 1350, 8782, 8786, 8787, 5561, 8790, 8791, 8792, 8793, 8798, 8799, 12991, 12992, 12993, 12994, 12995, 12996, 12997, 12999, 13001, 13002, 13003, 13004, 13005, 13006, 13007, 13010, 2]
+// Dependencies: [32, 19, 17, 4477, 1386, 4120, 8783, 8781, 673, 502, 21, 4478, 709, 5950, 4949, 4474, 4326, 4433, 586, 5077, 8784, 1498, 4916, 4925, 8778, 8776, 4701, 1350, 8786, 8790, 8791, 5562, 8794, 8795, 8796, 8797, 8802, 8803, 13003, 13004, 13005, 13006, 13007, 13008, 13009, 13011, 13013, 13014, 13015, 13016, 13017, 13018, 13019, 13022, 2]
 // Exports: default
 
-// Module 8778 (HeaderView)
+// Module 8782 (HeaderView)
 import ThemesDefault from "Themes" /* 709 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
 import Text from "Text" /* 4474 */;
-import ArrowDefault from "Arrow" /* 8780 */;
+import ArrowDefault from "Arrow" /* 8784 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "getUserAgnosticState" /* 4477 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES" /* 8779 */;
-import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8777 */;
+import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES" /* 8783 */;
+import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8781 */;
 import ME from "ME" /* 673 */;
 import { Permissions } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -120,7 +120,7 @@ function ChildItem(child) {
   const items2 = [closure_17(closure_6, obj1), callback2(ArrowDefault, {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
-  return callback2(child(5076).PressableHighlight, obj);
+  return callback2(child(5077).PressableHighlight, obj);
 }
 function ChildrenView(node) {
   const children = node.node.children;

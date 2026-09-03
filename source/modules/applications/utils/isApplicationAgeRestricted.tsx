@@ -1,12 +1,12 @@
-// Module ID: 8440
-// Function ID: 8441
+// Module ID: 8444
+// Function ID: 8445
 // Name: isApplicationAgeRestricted
-// Dependencies: [4519, 8441, 5065, 2]
+// Dependencies: [4519, 8445, 5066, 2]
 // Exports: default
 
-// Module 8440 (isApplicationAgeRestricted)
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5065 */;
-import getUnitIdDefault from "getUnitId" /* 8441 */;
+// Module 8444 (isApplicationAgeRestricted)
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5066 */;
+import getUnitIdDefault from "getUnitId" /* 8445 */;
 import closure_3 from "addApplication" /* 4519 */;
 
 require = arg1;

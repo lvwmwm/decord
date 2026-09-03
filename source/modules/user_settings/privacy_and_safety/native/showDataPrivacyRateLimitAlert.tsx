@@ -1,13 +1,13 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 14700
+// Function ID: 14701
 // Name: showDataPrivacyRateLimitAlert
-// Dependencies: [4857, 1233, 2]
+// Dependencies: [4858, 1233, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 14685 (showDataPrivacyRateLimitAlert)
+// Module 14700 (showDataPrivacyRateLimitAlert)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault from "set" /* 4857 */;
+import setDefault from "set" /* 4858 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");
 

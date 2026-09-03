@@ -1,13 +1,13 @@
-// Module ID: 12727
-// Function ID: 12728
+// Module ID: 12739
+// Function ID: 12740
 // Name: useProfileTabIndices
-// Dependencies: [32, 19, 8569, 2]
+// Dependencies: [32, 19, 8573, 2]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 12727 (useProfileTabIndices)
+// Module 12739 (useProfileTabIndices)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
 
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 

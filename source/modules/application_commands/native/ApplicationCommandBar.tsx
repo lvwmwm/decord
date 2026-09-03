@@ -1,14 +1,14 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12203
+// Function ID: 12204
 // Name: ApplicationCommandOptionItem
-// Dependencies: [32, 19, 17, 1991, 21, 4478, 709, 5392, 5076, 1233, 1296, 586, 12021, 5501, 4474, 8372, 8591, 12197, 2]
+// Dependencies: [32, 19, 17, 1991, 21, 4478, 709, 5393, 5077, 1233, 1296, 586, 12027, 5502, 4474, 8376, 8595, 12204, 2]
 // Exports: default
 
-// Module 12196 (ApplicationCommandOptionItem)
+// Module 12203 (ApplicationCommandOptionItem)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5076 */;
+import PressableBase from "PressableBase" /* 5077 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -330,7 +330,7 @@ export default function _default(command) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.applicationIcon;
     obj1[1] = memo;
-    tmp22 = callback2(section(5501), obj1);
+    tmp22 = callback2(section(5502), obj1);
   }
   const items5 = [tmp22, callback2(command(4474).Text, { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` }), , ];
   let options = command.options;
@@ -404,7 +404,7 @@ export default function _default(command) {
   }
   items5[3] = tmp19Result;
   obj[5] = items5;
-  const items8 = [c10(closure_6, obj), callback2(command(8372).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(8372).FormDivider, { style: tmp.applicationDescriptionDivider })];
+  const items8 = [c10(closure_6, obj), callback2(command(8376).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(8376).FormDivider, { style: tmp.applicationDescriptionDivider })];
   obj[1] = items8;
   return c10(onPressOption, obj);
 };

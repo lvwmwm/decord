@@ -1,16 +1,16 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15701
+// Function ID: 15702
 // Name: route
-// Dependencies: [673, 11288, 1233, 2042, 14823, 15685, 15688, 2]
+// Dependencies: [673, 11292, 1233, 2042, 14838, 15699, 15702, 2]
 
-// Module 15687 (route)
+// Module 15701 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2042 */;
-import QuestsIcon from "QuestsIcon" /* 14823 */;
-import apexExperiment from "apexExperiment" /* 15685 */;
-import createToggle from "createToggle" /* 11288 */;
+import QuestsIcon from "QuestsIcon" /* 14838 */;
+import apexExperiment from "apexExperiment" /* 15699 */;
+import createToggle from "createToggle" /* 11292 */;
 
 obj = {
   useTitle() {
@@ -25,7 +25,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SPONSORED_CONTENT_PREFERENCES,
   getComponent() {
-    return require(15688) /* SponsoredContentPreferencesScreen */.default;
+    return require(15702) /* SponsoredContentPreferencesScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

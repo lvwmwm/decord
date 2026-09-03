@@ -1,13 +1,13 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10281
+// Function ID: 10282
 // Name: NOTIFICATION_MAX_WIDTH
-// Dependencies: [19, 10200, 673, 21, 4478, 709, 10199, 10244, 4217, 4927, 4479, 4700, 5076, 10278, 10280, 2]
+// Dependencies: [19, 10204, 673, 21, 4478, 709, 10203, 10248, 4217, 4928, 4479, 4701, 5077, 10282, 10284, 2]
 // Exports: NotificationPressable
 
-// Module 10277 (NOTIFICATION_MAX_WIDTH)
+// Module 10281 (NOTIFICATION_MAX_WIDTH)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import set from "set" /* 10200 */;
+import set from "set" /* 10204 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

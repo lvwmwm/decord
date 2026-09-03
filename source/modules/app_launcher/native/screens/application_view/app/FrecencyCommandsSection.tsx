@@ -1,11 +1,11 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 11946
+// Function ID: 11947
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 673, 21, 4478, 11924, 11941, 4700, 8444, 4474, 1233, 7277, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 11930, 11947, 4701, 8448, 4474, 1233, 7278, 2]
 // Exports: default
 
-// Module 11940 (FrecencyCommandsSection)
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11941 */;
+// Module 11946 (FrecencyCommandsSection)
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11947 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;

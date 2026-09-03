@@ -1,20 +1,20 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17059
+// Function ID: 17060
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1386, 4735, 4130, 1921, 673, 16904, 21, 4478, 709, 4197, 586, 4674, 8134, 4474, 17040, 4940, 7210, 6099, 4217, 4479, 1233, 8998, 5507, 4431, 695, 14413, 4107, 17037, 8595, 8593, 14886, 2]
+// Dependencies: [32, 19, 17, 1386, 4736, 4130, 1921, 673, 16924, 21, 4478, 709, 4197, 586, 4674, 8138, 4474, 17060, 4941, 7211, 6100, 4217, 4479, 1233, 9002, 5508, 4431, 695, 14429, 4107, 17057, 8599, 8597, 14901, 2]
 // Exports: default
 
-// Module 17039 (MediaInfo)
+// Module 17059 (MediaInfo)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "reinjectEphemerals" /* 4735 */;
+import closure_9 from "reinjectEphemerals" /* 4736 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes" /* 16904 */;
+import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes" /* 16924 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -67,7 +67,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8134)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8138)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -91,7 +91,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(17040).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(17060).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };
@@ -99,7 +99,7 @@ function MediaInfo(message) {
           const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           obj4[3] = items4;
           obj4[4] = tmp.infoContainerGradient;
-          items3[1] = tmp13(tmp4(4940), obj4);
+          items3[1] = tmp13(tmp4(4941), obj4);
           obj2[1] = items3;
           tmp16Result = tmp16(tmp15, obj2);
         }
@@ -177,11 +177,11 @@ function PiPControls(message) {
   }
   obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback2(message(8998).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback2(message(9002).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
-  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5507).ArrowLargeLeftIcon, { size: "sm" }) });
-  obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5507).ArrowLargeLeftIcon, { size: "sm" }) };
+  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5508).ArrowLargeLeftIcon, { size: "sm" }) });
+  obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5508).ArrowLargeLeftIcon, { size: "sm" }) };
   const items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
   items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4431).XLargeIcon, { size: "sm" }) });

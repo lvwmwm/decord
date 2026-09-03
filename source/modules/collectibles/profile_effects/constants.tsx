@@ -1,9 +1,9 @@
-// Module ID: 8525
-// Function ID: 8526
+// Module ID: 8529
+// Function ID: 8530
 // Name: PROFILE_EFFECT_INTRO_MINIMUM_DELAY
 // Dependencies: [2]
 
-// Module 8525 (PROFILE_EFFECT_INTRO_MINIMUM_DELAY)
+// Module 8529 (PROFILE_EFFECT_INTRO_MINIMUM_DELAY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_effects/constants.tsx");

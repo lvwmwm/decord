@@ -1,16 +1,16 @@
-// Module ID: 14508
-// Function ID: 14509
+// Module ID: 14524
+// Function ID: 14525
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 7312, 7303, 673, 21, 4478, 709, 8122, 8088, 5961, 5981, 695, 8082, 5630, 4474, 1233, 8089, 8092, 586, 14509, 8084, 8123, 14510, 8111, 8112, 8090, 11077, 4940, 2]
+// Dependencies: [32, 19, 17, 7313, 7304, 673, 21, 4478, 709, 8125, 8091, 5962, 5982, 695, 8085, 5631, 4474, 1233, 8092, 8095, 586, 14525, 8087, 8126, 14526, 8114, 8115, 8093, 11081, 4941, 2]
 // Exports: default
 
-// Module 14508 (EditProfileFrameInner)
+// Module 14524 (EditProfileFrameInner)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7312 */;
-import { isProfileFrameRecord } from "fromServer" /* 7303 */;
+import closure_6 from "map" /* 7313 */;
+import { isProfileFrameRecord } from "fromServer" /* 7304 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -97,7 +97,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = callback3();
-  const tmp2 = purchase(8090)(previewSkuId);
+  const tmp2 = purchase(8093)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -121,11 +121,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(11077), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(11081), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4940), obj);
+  items1[1] = callback(purchase(4941), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }

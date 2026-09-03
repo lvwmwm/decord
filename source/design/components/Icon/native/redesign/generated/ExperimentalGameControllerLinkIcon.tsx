@@ -1,14 +1,14 @@
-// Module ID: 8875
-// Function ID: 8876
+// Module ID: 8879
+// Function ID: 8880
 // Name: ExperimentalGameControllerLinkIcon
-// Dependencies: [19, 21, 709, 4196, 8876, 2]
+// Dependencies: [19, 21, 709, 4196, 8880, 2]
 // Exports: ExperimentalGameControllerLinkIcon
 
-// Module 8875 (ExperimentalGameControllerLinkIcon)
+// Module 8879 (ExperimentalGameControllerLinkIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8876 */;
+import registerAsset from "registerAsset" /* 8880 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

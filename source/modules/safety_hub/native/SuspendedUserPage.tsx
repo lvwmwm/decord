@@ -1,20 +1,20 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16742
+// Function ID: 16743
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 8705, 21, 4478, 709, 5561, 8015, 1233, 6060, 7773, 4474, 4190, 14578, 2]
+// Dependencies: [19, 17, 8709, 21, 4478, 709, 5562, 8018, 1233, 6061, 7776, 4474, 4190, 14593, 2]
 // Exports: default
 
-// Module 16722 (SuspendedUserSafetyHubPage)
+// Module 16742 (SuspendedUserSafetyHubPage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import registerAssetDefault from "registerAsset" /* 7773 */;
-import IconButton from "IconButton" /* 8015 */;
-import AutomatedUnderageAppealStatusDefault from "AutomatedUnderageAppealStatus" /* 14578 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import registerAssetDefault from "registerAsset" /* 7776 */;
+import IconButton from "IconButton" /* 8018 */;
+import handleLogInClickDefault from "handleLogInClick" /* 14593 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8705 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8709 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -41,7 +41,7 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(6060).closeSuspendedUser();
+    callback(6061).closeSuspendedUser();
   };
   obj1[3] = registerAssetDefault;
   const items = [callback(IconButton.IconButton, obj1), ];
@@ -63,7 +63,7 @@ export default function SuspendedUserSafetyHubPage() {
   obj2[4] = items1;
   items[1] = callback2(Text.Text, obj2);
   obj[1] = items;
-  const items2 = [callback2(View, obj), callback(AutomatedUnderageAppealStatusDefault, { visible: true })];
+  const items2 = [callback2(View, obj), callback(handleLogInClickDefault, { visible: true })];
   obj[1] = items2;
   obj[3] = callback2(View, obj);
   return callback(SafeAreaPaddingView.SafeAreaPaddingView, obj);

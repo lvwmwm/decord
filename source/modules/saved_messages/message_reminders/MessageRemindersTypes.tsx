@@ -1,9 +1,9 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11523
+// Function ID: 11524
 // Name: items
 // Dependencies: [4074, 1233, 2]
 
-// Module 11518 (items)
+// Module 11523 (items)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;

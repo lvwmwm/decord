@@ -1,10 +1,10 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 8812
+// Function ID: 8813
 // Name: updateContextMenuState
 // Dependencies: [19, 641, 702, 4217, 4446, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState
 
-// Module 8808 (updateContextMenuState)
+// Module 8812 (updateContextMenuState)
 import batchUpdates from "batchUpdates" /* 702 */;
 import _mod4217 from "module_4217" /* 4217 */;
 import HapticFeedbackTypes from "HapticFeedbackTypes" /* 4446 */;

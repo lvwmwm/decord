@@ -1,10 +1,10 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11526
+// Function ID: 11527
 // Name: showVotesForAnswer
-// Dependencies: [4445, 11522, 2008, 2]
+// Dependencies: [4445, 11527, 2008, 2]
 // Exports: showVotesForAnswer
 
-// Module 11521 (showVotesForAnswer)
+// Module 11526 (showVotesForAnswer)
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
@@ -15,5 +15,5 @@ export const showVotesForAnswer = function showVotesForAnswer(initialAnswerId) {
   const message = initialAnswerId.message;
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channelId: message.channel_id, messageId: message.id, initialAnswerId: initialAnswerId.initialAnswerId };
-  obj.openLazy(asyncRequireImpl(11522, dependencyMap.paths), "PollVotesActionSheet", obj);
+  obj.openLazy(asyncRequireImpl(11527, dependencyMap.paths), "PollVotesActionSheet", obj);
 };

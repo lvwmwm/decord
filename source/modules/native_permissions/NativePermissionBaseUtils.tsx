@@ -1,12 +1,12 @@
-// Module ID: 5095
-// Function ID: 5096
+// Module ID: 5096
+// Function ID: 5097
 // Name: requestAuthorization
-// Dependencies: [5, 5096, 4730, 673, 695, 5097, 1233, 2]
+// Dependencies: [5, 5097, 4731, 673, 695, 5098, 1233, 2]
 
-// Module 5095 (requestAuthorization)
+// Module 5096 (requestAuthorization)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 5096 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4730 */;
+import closure_4 from "initialize" /* 5097 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4731 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;

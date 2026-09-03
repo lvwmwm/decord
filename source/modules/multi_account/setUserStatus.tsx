@@ -1,13 +1,13 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10200
+// Function ID: 10201
 // Name: _setUserStatus
-// Dependencies: [5, 5491, 5231, 673, 4322, 1233, 10197, 1369, 1336, 1349, 695, 2]
+// Dependencies: [5, 5492, 5232, 673, 4322, 1233, 10201, 1369, 1336, 1349, 695, 2]
 // Exports: default
 
-// Module 10196 (_setUserStatus)
+// Module 10200 (_setUserStatus)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 5491 */;
-import closure_5 from "filterPlayingActivities" /* 5231 */;
+import closure_4 from "initialize" /* 5492 */;
+import closure_5 from "filterPlayingActivities" /* 5232 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;

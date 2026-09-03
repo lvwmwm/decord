@@ -1,10 +1,10 @@
-// Module ID: 4976
-// Function ID: 4977
+// Module ID: 4977
+// Function ID: 4978
 // Name: staticRouteToTranslation
 // Dependencies: [1984, 1233, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 4976 (staticRouteToTranslation)
+// Module 4977 (staticRouteToTranslation)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_2 from "createGuildRoleRecordFromRust" /* 1984 */;
 

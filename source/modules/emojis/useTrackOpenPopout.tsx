@@ -1,12 +1,12 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9192
+// Function ID: 9193
 // Name: useTrackOpenPopout
-// Dependencies: [19, 1386, 1980, 1924, 673, 4700, 4945, 9113, 695, 2]
+// Dependencies: [19, 1386, 1980, 1924, 673, 4701, 4946, 9117, 695, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9188 (useTrackOpenPopout)
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
+// Module 9192 (useTrackOpenPopout)
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4946 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;

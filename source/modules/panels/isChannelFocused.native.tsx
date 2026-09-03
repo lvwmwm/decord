@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10198
+// Function ID: 10199
 // Name: getFocusedChannelId
-// Dependencies: [32, 19, 4494, 6181, 4728, 4334, 4332, 4333, 4335, 2]
+// Dependencies: [32, 19, 4494, 6182, 4729, 4334, 4332, 4333, 4335, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10194 (getFocusedChannelId)
+// Module 10198 (getFocusedChannelId)
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import getInitialGuildStateDefault from "getInitialGuildState" /* 4334 */;
@@ -13,9 +13,9 @@ import useChatLayoutDefault from "useChatLayout" /* 4335 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "getParticipants" /* 4494 */;
-import closure_6 from "getIdFromHistoryItem" /* 6181 */;
-import { CHANNEL_PREFIX } from "getIdFromHistoryItem" /* 6181 */;
-import closure_8 from "withEqualityFn" /* 4728 */;
+import closure_6 from "getIdFromHistoryItem" /* 6182 */;
+import { CHANNEL_PREFIX } from "getIdFromHistoryItem" /* 6182 */;
+import closure_8 from "withEqualityFn" /* 4729 */;
 
 require = arg1;
 function getFocusedChannelId() {

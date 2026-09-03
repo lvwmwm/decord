@@ -1,20 +1,20 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11761
+// Function ID: 11762
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11757, 641, 4217, 702, 4927, 2]
+// Dependencies: [11762, 641, 4217, 702, 4928, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11756 (VoiceMessageRecordingStatus)
+// Module 11761 (VoiceMessageRecordingStatus)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 702 */;
 import _mod4217 from "module_4217" /* 4217 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11757 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4928 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11762 */;
 import keys from "keys" /* 641 */;
 
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  obj = { voiceMessageAnimationState: _mod4217.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "PX_16", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flex", showVoiceMessagesTooltip: "M5 2H4v1h1V2Z", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: 0.75, isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: _mod4217.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "PX_16", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flex", showVoiceMessagesTooltip: "exercise", savedVoiceMessageUploadData: "gesture", isVoiceMessageButtonMounted: "gesturing", isUsingHoldGesture: "hand" };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
   obj[6] = [];
@@ -60,7 +60,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4927);
+    obj = waveformVersion(4928);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];

@@ -1,13 +1,13 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 9320
+// Function ID: 9321
 // Name: XboxLinkLanding
-// Dependencies: [19, 9315, 673, 21, 4478, 1233, 5054, 8241, 5042, 9213, 1498, 1994, 9317, 9318, 2]
+// Dependencies: [19, 9319, 673, 21, 4478, 1233, 5055, 8245, 5043, 9217, 1498, 1994, 9321, 9322, 2]
 // Exports: default
 
-// Module 9316 (XboxLinkLanding)
+// Module 9320 (XboxLinkLanding)
 import combinedDefault from "combined" /* 1994 */;
 import closure_3 from "noop" /* 19 */;
-import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9315 */;
+import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9319 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -29,29 +29,29 @@ export default function XboxLinkLanding() {
     let obj = { label: null, icon: null };
     const intl = navigation(1233).intl;
     obj[0] = intl.string(navigation(1233).t.ihQXsb);
-    obj[1] = navigation(5054).VoiceNormalIcon;
+    obj[1] = navigation(5055).VoiceNormalIcon;
     const items = [obj, , , ];
     obj = { label: null, icon: null };
     const intl2 = navigation(1233).intl;
     obj[0] = intl2.string(navigation(1233).t.Xt1n4P);
-    obj[1] = navigation(8241).ScreenStreamIcon;
+    obj[1] = navigation(8245).ScreenStreamIcon;
     items[1] = obj;
     obj = { label: null, icon: null };
     const intl3 = navigation(1233).intl;
     obj[0] = intl3.string(navigation(1233).t.xqVY3p);
-    obj[1] = navigation(5042).GroupIcon;
+    obj[1] = navigation(5043).GroupIcon;
     items[2] = obj;
     obj1 = { label: null, icon: null };
     const intl4 = navigation(1233).intl;
     obj1[0] = intl4.string(navigation(1233).t.iQsKVW);
-    obj1[1] = navigation(9213).GameControllerIcon;
+    obj1[1] = navigation(9217).GameControllerIcon;
     items[3] = obj1;
     return items;
   }, []);
   callback = React.useCallback(() => {
     navigation.push(closure_1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(9317) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(9321) }), []);
   obj = { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1233).intl;
   obj[3] = intl2.string(navigation(1233).t.m8aahn);
@@ -60,5 +60,5 @@ export default function XboxLinkLanding() {
   obj[5] = intl.format(navigation(1233).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(9318).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(9322).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11776
-// Function ID: 11777
+// Module ID: 11782
+// Function ID: 11783
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4478, 1941, 1296, 709, 11777, 2]
+// Dependencies: [19, 17, 21, 4478, 1941, 1296, 709, 11783, 2]
 // Exports: default
 
-// Module 11776 (CustomTypingIndicatorGlyph)
+// Module 11782 (CustomTypingIndicatorGlyph)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,20 +1,18 @@
 // Module ID: 8286
 // Function ID: 8287
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8287, 8288, 8289]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8287]
 
 // Module 8286 (_isNativeReflectConstruct)
-import noopDefault from "noop" /* 19 */;
+import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8287 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8289 */;
-import closure_3 from "_classCallCheck" /* 41 */;
-import closure_4 from "_possibleConstructorReturn" /* 93 */;
-import closure_5 from "_getPrototypeOf" /* 95 */;
+import closure_2 from "_classCallCheck" /* 41 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
 import { jsx } from "jsxProd" /* 21 */;
 
-const FeBlend = arg1;
+const Defs = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -34,14 +32,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-noopDefault;
-class FeBlend {
+noopAll;
+class Defs {
   constructor() {
     self = this;
-    tmp = closure_3(this, FeBlend);
-    tmp2 = closure_5;
-    obj = closure_5(FeBlend);
-    tmp3 = closure_4;
+    tmp = closure_2(this, Defs);
+    tmp2 = closure_4;
+    obj = closure_4(Defs);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -55,33 +53,16 @@ class FeBlend {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(FeBlend, _isNativeReflectConstructDefault);
-let obj = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const tmp = __INTERNAL_VIEW_CONFIGDefault;
-    const merged = Object.assign(self(8288).extractFilter(this.props));
-    const obj2 = self(8288);
-    const merged1 = Object.assign(self(8288).extractIn(this.props));
-    const obj3 = self(8288);
-    const merged2 = Object.assign(self(8288).extractFeBlend(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+_inheritsDefault(Defs, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      return jsx(Defs(8287), { children: this.props.children });
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeBlend, items);
-importDefaultResultResult.displayName = "FeBlend";
-obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.mode = "normal";
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(Defs, items);
+importDefaultResultResult.displayName = "Defs";
 
 export default importDefaultResultResult;

@@ -1,9 +1,9 @@
-// Module ID: 17393
-// Function ID: 17394
+// Module ID: 17413
+// Function ID: 17414
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1908, 4120, 1921, 673, 4169, 21, 1233, 17394, 8243, 13404, 4478, 709, 1627, 586, 9653, 17396, 6055, 4369, 4474, 4372, 4928, 17397, 8372, 4926, 6000, 5607, 5048, 10283, 1296, 4322, 5614, 17403, 2]
+// Dependencies: [19, 17, 1908, 4120, 1921, 673, 4169, 21, 1233, 17414, 8247, 13419, 4478, 709, 1627, 586, 9657, 17416, 6056, 4369, 4474, 4372, 4929, 17417, 8376, 4927, 6001, 5608, 5049, 10287, 1296, 4322, 5615, 17423, 2]
 
-// Module 17393 (BoostedGuildTiers)
+// Module 17413 (BoostedGuildTiers)
 import ThemesDefault from "Themes" /* 709 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
@@ -21,7 +21,7 @@ const require = arg1;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_8, BoostedGuildTiers } = ME);
 const GuildFeatures = ME.GuildFeatures;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "r" };
+let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "accessible" };
 obj[1] = intl.string(require("getSystemLocale").t.tfVXhP);
 let items = [obj, , , ];
 obj = { tier: BoostedGuildTiers.TIER_1, title: null, IconComponent: null };

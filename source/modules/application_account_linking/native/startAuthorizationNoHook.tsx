@@ -1,10 +1,10 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 11559
+// Function ID: 11560
 // Name: _startAuthorizationNoHook
-// Dependencies: [5, 673, 5966, 4190, 695, 2]
+// Dependencies: [5, 673, 5967, 4190, 695, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11554 (_startAuthorizationNoHook)
+// Module 11559 (_startAuthorizationNoHook)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 

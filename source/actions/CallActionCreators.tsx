@@ -1,12 +1,12 @@
-// Module ID: 9893
-// Function ID: 9894
-// Dependencies: [1386, 4130, 1921, 673, 5363, 527, 695, 4857, 1233, 9073, 9887, 706, 2]
+// Module ID: 9897
+// Function ID: 9898
+// Dependencies: [1386, 4130, 1921, 673, 5364, 527, 695, 4858, 1233, 9077, 9891, 706, 2]
 
-// Module 9893
+// Module 9897
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef5363 from "module_5363" /* 5363 */;
-import useCanRingToGuildVoiceChannel from "useCanRingToGuildVoiceChannel" /* 9887 */;
+import _modDef5364 from "module_5364" /* 5364 */;
+import useCanRingToGuildVoiceChannel from "useCanRingToGuildVoiceChannel" /* 9891 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
@@ -37,7 +37,7 @@ export default {
           if (closure_3) {
             ringable = body.body.ringable;
           }
-          const voiceChannel = id(5363).selectVoiceChannel(id, dependencyMap);
+          const voiceChannel = id(5364).selectVoiceChannel(id, dependencyMap);
           if (ringable) {
             self.ring(tmp2);
           }
@@ -65,11 +65,11 @@ export default {
             obj = { userId: closure_4, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          id(4857).show(obj);
+          id(4858).show(obj);
         });
       }
     } else {
-      obj = _modDef5363;
+      obj = _modDef5364;
       let voiceChannel = obj.selectVoiceChannel(id, c1);
       if (arg2) {
         self.ring(id);

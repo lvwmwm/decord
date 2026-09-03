@@ -1,10 +1,10 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8054
+// Function ID: 8055
 // Name: useHeroColors
-// Dependencies: [32, 19, 4470, 1301, 8050, 7306, 8052, 685, 686, 586, 2]
+// Dependencies: [32, 19, 4470, 1301, 8053, 7307, 8055, 685, 686, 586, 2]
 // Exports: default, getHeroColors
 
-// Module 8051 (useHeroColors)
+// Module 8054 (useHeroColors)
 import nDefault from "n" /* 686 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -22,9 +22,9 @@ export default function useHeroColors(pendingAvatarSrc) {
   const items1 = [closure_6];
   const stateFromStores1 = first(586).useStateFromStores(items1, () => theme.theme);
   let obj2 = first(586);
-  const fallbackHeroColor = first(8052).getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj3 = first(8052);
-  let tmp4 = callback(first(8050).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
+  const fallbackHeroColor = first(8055).getFallbackHeroColor(stateFromStores1, stateFromStores);
+  let obj3 = first(8055);
+  let tmp4 = callback(first(8053).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [first, tmp4[1]];
@@ -90,14 +90,14 @@ export default function useHeroColors(pendingAvatarSrc) {
   }, items2);
 };
 export const getHeroColors = function getHeroColors(game_name) {
-  let obj = num(8052);
+  let obj = num(8055);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme.theme, closure_5.saturation);
   num = undefined;
   num = 1;
   if (closure_5.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(8050).useColorStore;
+  const useColorStore = tmp2(8053).useColorStore;
   const arr = useColorStore.getState().palette[game_name];
   let mapped;
   if (arr != null) {

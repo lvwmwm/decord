@@ -1,16 +1,16 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 11987
+// Function ID: 11988
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1908, 21, 4478, 709, 5033, 4981, 11972, 5393, 4445, 11959, 11960, 4674, 5607, 4474, 2]
+// Dependencies: [32, 19, 1908, 21, 4478, 709, 5034, 4982, 11978, 5394, 4445, 11965, 11966, 4674, 5608, 4474, 2]
 // Exports: default
 
-// Module 11981 (ChannelIcon)
+// Module 11987 (ChannelIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import TextIcon3 from "TextIcon" /* 5033 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import stylesDefault from "styles" /* 11972 */;
+import TextIcon3 from "TextIcon" /* 5034 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import stylesDefault from "styles" /* 11978 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;

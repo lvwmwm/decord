@@ -1,10 +1,10 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9130
+// Function ID: 9131
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4470, 1383, 21, 4217, 586, 4197, 709, 4479, 4927, 4478, 9127, 1233, 8239, 2]
+// Dependencies: [19, 17, 4470, 1383, 21, 4217, 586, 4197, 709, 4479, 4928, 4478, 9131, 1233, 8243, 2]
 // Exports: default
 
-// Module 9126 (BurstReactionToggle)
+// Module 9130 (BurstReactionToggle)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;

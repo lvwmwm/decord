@@ -1,11 +1,11 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7504
+// Function ID: 7505
 // Name: getStats
-// Dependencies: [5, 7497, 7428, 7504, 2]
+// Dependencies: [5, 7498, 7429, 7505, 2]
 
-// Module 7503 (getStats)
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7428 */;
-import getSamples from "getSamples" /* 7497 */;
+// Module 7504 (getStats)
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7429 */;
+import getSamples from "getSamples" /* 7498 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;

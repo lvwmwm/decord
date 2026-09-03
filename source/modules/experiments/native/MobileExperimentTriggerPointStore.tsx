@@ -1,12 +1,12 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 13584
+// Function ID: 13585
 // Name: handleConnectionOpen
-// Dependencies: [4391, 1209, 13570, 586, 706, 2]
+// Dependencies: [4391, 1209, 13585, 586, 706, 2]
 
-// Module 13569 (handleConnectionOpen)
+// Module 13584 (handleConnectionOpen)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcher from "dispatcher" /* 706 */;
-import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 13570 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 13585 */;
 import closure_3 from "getHash" /* 4391 */;
 import closure_4 from "initialize" /* 1209 */;
 import importDefaultResult from "dispatcher" /* 706 */;

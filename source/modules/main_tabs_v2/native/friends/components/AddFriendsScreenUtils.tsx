@@ -1,12 +1,12 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15882
+// Function ID: 15883
 // Name: _sendWave
-// Dependencies: [5, 1386, 673, 4471, 9089, 4491, 4193, 1233, 12055, 7210, 9073, 2]
+// Dependencies: [5, 1386, 673, 4471, 9093, 4491, 4193, 1233, 12061, 7211, 9077, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 15866 (_sendWave)
-import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 9073 */;
-import _modDef9089 from "module_9089" /* 9089 */;
+// Module 15882 (_sendWave)
+import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 9077 */;
+import _modDef9093 from "module_9093" /* 9093 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { AnalyticsSections } from "ME" /* 673 */;
@@ -83,12 +83,12 @@ function _sendWave() {
                 } else {
                   constants = 2;
                   if (null != dMFromUserId2) {
-                    let obj7 = callback(12055);
+                    let obj7 = callback(12061);
                     const obj3 = { channelId: null, source: null };
                     obj3[0] = dMFromUserId2;
                     obj3[1] = dependencyMap;
                     obj7.trackWaveCtaClicked(obj3);
-                    let obj9 = flag(7210);
+                    let obj9 = flag(7211);
                     let obj4 = { location: null };
                     obj4[0] = constants.SEND_WAVE;
                     c7 = 5;
@@ -179,13 +179,13 @@ let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/f
 
 export const dismissIncomingRequest = function dismissIncomingRequest(arg0) {
   ({ userId, applicationId } = arg0);
-  let obj = _modDef9089;
+  let obj = _modDef9093;
   obj = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj.cancelFriendRequest(obj);
 };
 export const acceptIncomingRequest = function acceptIncomingRequest(arg0) {
   ({ userId, applicationId } = arg0);
-  let obj = _modDef9089;
+  let obj = _modDef9093;
   obj = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   const result = obj.maybeConfirmFriendRequestAccept(obj);
 };

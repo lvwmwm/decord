@@ -1,10 +1,10 @@
-// Module ID: 11978
-// Function ID: 11979
+// Module ID: 11984
+// Function ID: 11985
 // Name: EmptyStateWithSnowflakeQuery
-// Dependencies: [19, 1497, 21, 4478, 4445, 7275, 1296, 11961, 1233, 11959, 11979, 11408, 11960, 5607, 2]
+// Dependencies: [19, 1497, 21, 4478, 4445, 7276, 1296, 11967, 1233, 11965, 11985, 11413, 11966, 5608, 2]
 // Exports: default
 
-// Module 11978 (EmptyStateWithSnowflakeQuery)
+// Module 11984 (EmptyStateWithSnowflakeQuery)
 import closure_3 from "noop" /* 19 */;
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -15,7 +15,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
   onPressRow = onPressRow.onPressRow;
   const tmp = callback();
   const items = [onPressRow.query];
-  return jsx(onPressRow(11960).AppLauncherList, {
+  return jsx(onPressRow(11966).AppLauncherList, {
     contentContainerStyle: callback().emptyState,
     data: items,
     renderItem(item) {

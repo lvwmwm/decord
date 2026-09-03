@@ -1,7 +1,7 @@
 // Module ID: 4132
 // Function ID: 4133
 // Name: MAX_REACTIONS
-// Dependencies: [1215, 673, 4133, 4134, 1233, 7517, 4166, 695, 2]
+// Dependencies: [1215, 673, 4133, 4134, 1233, 7518, 4166, 695, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
 // Module 4132 (MAX_REACTIONS)
@@ -9,7 +9,7 @@ import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import ReactionTypes from "ReactionTypes" /* 7517 */;
+import ReactionTypes from "ReactionTypes" /* 7518 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import ME from "ME" /* 673 */;
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4133 */;

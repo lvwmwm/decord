@@ -1,13 +1,13 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9034
+// Function ID: 9035
 // Name: useProfilePrimaryColor
-// Dependencies: [32, 4470, 1430, 8050, 7306, 2]
+// Dependencies: [32, 4470, 1430, 8053, 7307, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 9030 (useProfilePrimaryColor)
+// Module 9034 (useProfilePrimaryColor)
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import hasFetchedColors from "hasFetchedColors" /* 8050 */;
-import hasFetchedColorsDefault from "hasFetchedColors" /* 8050 */;
+import hasFetchedColors from "hasFetchedColors" /* 8053 */;
+import hasFetchedColorsDefault from "hasFetchedColors" /* 8053 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 
@@ -61,9 +61,9 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         obj[1] = tmp5;
         obj[2] = tmp6;
         const tmp3 = callback(first, 3);
-        const obj2 = tmp8(7306)(obj);
+        const obj2 = tmp8(7307)(obj);
         let num2 = 1;
-        ({ h, s, l } = tmp8(7306)(obj).toHsl());
+        ({ h, s, l } = tmp8(7307)(obj).toHsl());
         if (closure_4.desaturateUserColors) {
           num2 = closure_4.saturation;
         }
@@ -71,8 +71,8 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         obj[0] = h;
         obj[1] = s * num2;
         obj[2] = l;
-        const toHslResult = tmp8(7306)(obj).toHsl();
-        return tmp8(7306)(obj).toHexString();
+        const toHslResult = tmp8(7307)(obj).toHsl();
+        return tmp8(7307)(obj).toHexString();
       } else {
         return null;
       }

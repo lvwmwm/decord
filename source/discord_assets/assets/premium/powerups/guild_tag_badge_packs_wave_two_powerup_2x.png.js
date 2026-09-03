@@ -1,9 +1,9 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16012
+// Function ID: 16013
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15996 (metadata)
+// Module 16012 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/powerups/guild_tag_badge_packs_wave_two_powerup_2x.png.js");

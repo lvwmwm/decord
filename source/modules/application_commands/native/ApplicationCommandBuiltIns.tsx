@@ -1,10 +1,10 @@
-// Module ID: 8166
-// Function ID: 8167
+// Module ID: 8170
+// Function ID: 8171
 // Name: get untranslatedDescription
-// Dependencies: [4130, 1921, 4952, 1954, 7277, 1233, 4674, 4857, 4491, 7210, 2]
+// Dependencies: [4130, 1921, 4953, 1954, 7278, 1233, 4674, 4858, 4491, 7211, 2]
 
-// Module 8166 (get untranslatedDescription)
-import setDefault from "set" /* 4857 */;
+// Module 8170 (get untranslatedDescription)
+import setDefault from "set" /* 4858 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 

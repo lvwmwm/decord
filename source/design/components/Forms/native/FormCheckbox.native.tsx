@@ -1,12 +1,12 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7696
+// Function ID: 7697
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4478, 709, 4217, 4930, 1355, 6003, 4927, 4931, 2]
+// Dependencies: [19, 21, 4478, 709, 4217, 4931, 1355, 6004, 4928, 4932, 2]
 // Exports: FormCheckbox
 
-// Module 7693 (FormCheckbox)
+// Module 7696 (FormCheckbox)
 import ThemesDefault from "Themes" /* 709 */;
-import IconSizesDefault from "IconSizes" /* 4930 */;
+import IconSizesDefault from "IconSizes" /* 4931 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

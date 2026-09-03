@@ -1,14 +1,14 @@
-// Module ID: 7845
-// Function ID: 7846
+// Module ID: 7848
+// Function ID: 7849
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 7352, 21, 4478, 709, 4217, 4479, 2]
+// Dependencies: [19, 17, 7353, 21, 4478, 709, 4217, 4479, 2]
 // Exports: default
 
-// Module 7845 (ConversationPreviewSkeleton)
+// Module 7848 (ConversationPreviewSkeleton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS" /* 7352 */;
+import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS" /* 7353 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

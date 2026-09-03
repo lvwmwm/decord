@@ -1,10 +1,10 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11675
+// Function ID: 11676
 // Name: logMediaAttachmentPlaybackStarted
 // Dependencies: [673, 695, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 11670 (logMediaAttachmentPlaybackStarted)
+// Module 11675 (logMediaAttachmentPlaybackStarted)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;

@@ -1,7 +1,7 @@
 // Module ID: 4661
 // Function ID: 4662
 // Name: handleThumbnailUpload
-// Dependencies: [5, 17, 4500, 1386, 1980, 673, 4506, 3, 4362, 4166, 706, 527, 4662, 4531, 38, 4663, 4721, 4544, 1492, 10064, 9670, 1233, 2]
+// Dependencies: [5, 17, 4500, 1386, 1980, 673, 4506, 3, 4362, 4166, 706, 527, 4662, 4531, 38, 4663, 4722, 4544, 1492, 10068, 9674, 1233, 2]
 
 // Module 4661 (handleThumbnailUpload)
 import timestampDefault from "timestamp" /* 3 */;
@@ -185,7 +185,7 @@ prototype["_initialize"] = function _initialize() {
       currentUserActiveStream(4663).startStream(guildId, channel.id, { sourceId: "screen:0" });
       currentUserActiveStream = currentAppIntent.getCurrentUserActiveStream();
       if (null != currentUserActiveStream) {
-        const tmp2Result = callback2(4721);
+        const tmp2Result = callback2(4722);
         const participant = tmp2Result.selectParticipant(channel.id, tmp9(4544).encodeStreamKey(currentUserActiveStream));
         if ("android" === voiceEngine.platform) {
           closure_15.start(15000, () => {
@@ -213,7 +213,7 @@ prototype["_initialize"] = function _initialize() {
     logger.log("Broadcast Finished");
     closure_14.stop();
     closure_15.stop();
-    const result = callback(10064).handleCloseScreenshare();
+    const result = callback(10068).handleCloseScreenshare();
   });
   const result2 = voiceEngine.setBroadcastAnnotatedCallback((arg0) => {
     logger.log("Broadcast Annotated:", arg0);
@@ -227,7 +227,7 @@ prototype["_initialize"] = function _initialize() {
   });
   const result3 = voiceEngine.setBroadcastBlockedCallback(() => {
     logger.log("Broadcast Blocked");
-    let obj = callback2(9670);
+    let obj = callback2(9674);
     obj = { alertBody: null };
     const intl = callback(1233).intl;
     obj[0] = intl.string(callback(1233).t.iYQlwv);

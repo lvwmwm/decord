@@ -1,16 +1,16 @@
 // Module ID: 5193
 // Function ID: 5194
 // Name: getStringValue
-// Dependencies: [5190]
+// Dependencies: [5191]
 
 // Module 5193 (getStringValue)
-import getStringValue from "getStringValue" /* 5190 */;
+import getStringValue from "getStringValue" /* 5191 */;
 
 require = arg1;
 const dependencyMap = arg6;
-const obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
-obj[45056] = {
-  name: "MPFVersion",
+const obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
   description(value) {
     return getStringValue.getStringValue(value);
   }

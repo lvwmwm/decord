@@ -1,10 +1,10 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9497
+// Function ID: 9498
 // Name: _getApplicationSubscriptionGroupListingsForApplication
 // Dependencies: [5, 673, 527, 706, 4377, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 9493 (_getApplicationSubscriptionGroupListingsForApplication)
+// Module 9497 (_getApplicationSubscriptionGroupListingsForApplication)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;

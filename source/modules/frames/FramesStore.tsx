@@ -1,16 +1,16 @@
-// Module ID: 9477
-// Function ID: 9478
+// Module ID: 9481
+// Function ID: 9482
 // Name: map
-// Dependencies: [9478, 9479, 502, 9480, 586, 706, 2]
+// Dependencies: [9482, 9483, 502, 9484, 586, 706, 2]
 
-// Module 9477 (map)
+// Module 9481 (map)
 import set from "set" /* 2 */;
 import sum from "sum" /* 502 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import ActivityPanelModes2 from "ActivityPanelModes" /* 9479 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9480 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9478 */;
+import ActivityPanelModes2 from "ActivityPanelModes" /* 9483 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9484 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9482 */;
 
 ({ FrameIntent: obj1, FrameLayoutModes: c3, getFrameIntentForSurface: c4, isLaunched: c5, makeFrameId: closure_6 } = FrameLayoutModes);
 const ActivityPanelModes = ActivityPanelModes2.ActivityPanelModes;
@@ -69,6 +69,7 @@ const framesStoreClass = new FramesStoreClass(dispatcherDefault, {
   FRAME_LAUNCH: function handleFrameLaunch(frameId) {
     frameId = frameId.frameId;
     let obj = map;
+    ({ proxyTicket, customId, referrerId } = frameId);
     const value = map.get(frameId);
     if (null != value) {
       const tmp14 = getURLForApplicationDefault(value.applicationId);
@@ -81,13 +82,15 @@ const framesStoreClass = new FramesStoreClass(dispatcherDefault, {
         obj = {};
         const merged = Object.assign(value);
         obj.state = "launched";
-        obj = { url: null, connectedSince: null, layoutMode: null, activityPanelMode: null, proxyTicket: null, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null };
+        obj = { url: null, connectedSince: null, layoutMode: null, activityPanelMode: null, proxyTicket: null, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, customId: null, referrerId: null };
         obj[0] = tmp14;
         const _Date = Date;
         obj[1] = Date.now();
         obj[2] = constants2.FOCUSED;
         obj[3] = ActivityPanelModes.PANEL;
-        obj[4] = frameId.proxyTicket;
+        obj[4] = proxyTicket;
+        obj[10] = customId;
+        obj[11] = referrerId;
         obj.data = obj;
         const result = obj.set(frameId, obj);
       }

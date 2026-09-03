@@ -1,9 +1,9 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11150
+// Function ID: 11151
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11146 (metadata)
+// Module 11150 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/tier4_rewardTile_animated.webm.js");

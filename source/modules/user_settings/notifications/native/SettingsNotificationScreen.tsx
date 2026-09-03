@@ -1,19 +1,19 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15321
+// Function ID: 15322
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 15307, 7893, 21, 4478, 709, 8013, 12204, 15308, 15309, 4474, 1233, 5609, 7717, 7348, 11288, 15310, 15311, 14563, 2]
+// Dependencies: [19, 17, 15322, 7896, 21, 4478, 709, 8016, 12211, 15323, 15324, 4474, 1233, 5610, 7720, 7349, 11292, 15325, 15326, 14578, 2]
 
-// Module 15306 (SystemNotificationsSubLabel)
+// Module 15321 (SystemNotificationsSubLabel)
 import ThemesDefault from "Themes" /* 709 */;
-import apexExperiment from "apexExperiment" /* 8013 */;
-import _requestPushNotificationPermission from "_requestPushNotificationPermission" /* 12204 */;
-import _modDef14563 from "module_14563" /* 14563 */;
-import apexExperimentDefault from "apexExperiment" /* 15308 */;
-import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15309 */;
+import apexExperiment from "apexExperiment" /* 8016 */;
+import _requestPushNotificationPermission from "_requestPushNotificationPermission" /* 12211 */;
+import _modDef14578 from "module_14578" /* 14578 */;
+import apexExperimentDefault from "apexExperiment" /* 15323 */;
+import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15324 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore" /* 15307 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore" /* 15322 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -51,7 +51,7 @@ function SystemNotificationsSubLabel() {
     obj2[0] = tmp.cardContent;
     obj3 = { color: null };
     obj3[0] = ThemesDefault.unsafe_rawColors.YELLOW_300;
-    const items1 = [callback(tmp2(7717).CircleErrorIcon, obj3), ];
+    const items1 = [callback(tmp2(7720).CircleErrorIcon, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.text;
     const obj5 = { color: "text-default", variant: "text-sm/medium", children: null };
@@ -61,7 +61,7 @@ function SystemNotificationsSubLabel() {
     items1[1] = callback(View, obj4);
     obj2[1] = items1;
     obj1[2] = tmp8(View, obj2);
-    obj[1] = callback(tmp2(5609).Card, obj1);
+    obj[1] = callback(tmp2(5610).Card, obj1);
     showReactivationPrompt = callback(View, obj);
   }
   children[1] = showReactivationPrompt;
@@ -76,8 +76,8 @@ obj[1] = { flexDirection: "row", alignItems: "center", gap: 8 };
 obj[2] = { flex: 1 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7348).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
-  let obj = isFamilyCenterV3Enabled(7348);
+  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7349).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
+  let obj = isFamilyCenterV3Enabled(7349);
   let tmp2 = !apexExperimentDefault.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(() => {
   const effect1 = importAllResult.useEffect(() => {
     const result = isFamilyCenterV3Enabled(closure_1_2[18]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(_modDef14563, { node });
+  return callback(_modDef14578, { node });
 });
 let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 

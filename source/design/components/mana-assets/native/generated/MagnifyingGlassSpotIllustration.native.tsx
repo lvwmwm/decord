@@ -1,14 +1,14 @@
-// Module ID: 6792
-// Function ID: 6793
+// Module ID: 6793
+// Function ID: 6794
 // Name: MagnifyingGlassSpotIllustration
-// Dependencies: [21, 5501, 6793, 2]
+// Dependencies: [21, 5502, 6794, 2]
 // Exports: MagnifyingGlassSpotIllustration
 
-// Module 6792 (MagnifyingGlassSpotIllustration)
+// Module 6793 (MagnifyingGlassSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6793 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6794 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MagnifyingGlassSpotIllustration.native.tsx");

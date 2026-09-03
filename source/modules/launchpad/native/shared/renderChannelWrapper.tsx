@@ -1,13 +1,13 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16815
+// Function ID: 16816
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 16793, 16796, 2]
+// Dependencies: [19, 17, 21, 16813, 16816, 2]
 // Exports: default
 
-// Module 16795 (renderChannelWrapper)
+// Module 16815 (renderChannelWrapper)
 import noopAll from "noop" /* 19 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16793 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 16796 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16813 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 16816 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 17496
-// Function ID: 17497
+// Module ID: 17516
+// Function ID: 17517
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9751, 1386, 1981, 4130, 1921, 7953, 673, 21, 4197, 709, 17485, 586, 4674, 1233, 17486, 4445, 9377, 2008, 9750, 17483, 4474, 4926, 6000, 5607, 2]
+// Dependencies: [19, 17, 9755, 1386, 1981, 4130, 1921, 7956, 673, 21, 4197, 709, 17505, 586, 4674, 1233, 17506, 4445, 9381, 2008, 9754, 17503, 4474, 4927, 6001, 5608, 2]
 // Exports: default
 
-// Module 17496 (ChannelSetupScreen)
+// Module 17516 (ChannelSetupScreen)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 9751 */;
+import closure_6 from "handleFormInit" /* 9755 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "comparator" /* 1981 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_9 } from "comparator" /* 1981 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7953 */;
+import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7956 */;
 import { ChannelTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -96,7 +96,7 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.Yr6nGx);
     obj[1] = callback();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(9750);
+      let obj = callback(9754);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
       callback(4445).hideActionSheet();
@@ -118,7 +118,7 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.VqhxxN);
     obj[1] = callback();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(9750);
+      let obj = callback(9754);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
       callback(4445).hideActionSheet();

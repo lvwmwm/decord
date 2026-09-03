@@ -1,19 +1,19 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15101
+// Function ID: 15102
 // Name: useAppearanceSettingTrailing
-// Dependencies: [4297, 1304, 673, 4413, 586, 1346, 7628, 1233, 2598, 11288, 13261, 15087, 2]
+// Dependencies: [4297, 1304, 673, 4413, 586, 1346, 7629, 1233, 2598, 11292, 13273, 15102, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 15086 (useAppearanceSettingTrailing)
+// Module 15101 (useAppearanceSettingTrailing)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getThemeForColor from "getThemeForColor" /* 1346 */;
 import messagesProxyDefault from "messagesProxy" /* 2598 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import useActiveThemeType from "useActiveThemeType" /* 7628 */;
+import useActiveThemeType from "useActiveThemeType" /* 7629 */;
 import closure_3 from "reset" /* 4297 */;
 import { ActiveThemeType } from "SystemThemeState" /* 1304 */;
-import createToggle from "createToggle" /* 11288 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 function useAppearanceSettingTrailing() {
@@ -61,7 +61,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(15087).default;
+    return require(15102).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

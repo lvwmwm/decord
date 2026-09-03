@@ -1,15 +1,15 @@
-// Module ID: 9946
-// Function ID: 9947
+// Module ID: 9950
+// Function ID: 9951
 // Name: sortByMatchScore
-// Dependencies: [2, 9947, 5460, 9955, 9956, 5463]
+// Dependencies: [2, 9951, 5461, 9959, 9960, 5464]
 
-// Module 9946 (sortByMatchScore)
+// Module 9950 (sortByMatchScore)
 import set from "set" /* 2 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5463 */;
-import getAutocompleterBoosterMapDefault from "getAutocompleterBoosterMap" /* 9947 */;
-import HeaderRecord2 from "HeaderRecord" /* 9955 */;
-import _modDef9956 from "module_9956" /* 9956 */;
-import HeaderRecord from "HeaderRecord" /* 5460 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5464 */;
+import getAutocompleterBoosterMapDefault from "getAutocompleterBoosterMap" /* 9951 */;
+import HeaderRecord2 from "HeaderRecord" /* 9959 */;
+import _modDef9960 from "module_9960" /* 9960 */;
+import HeaderRecord from "HeaderRecord" /* 5461 */;
 
 const result = set.fileFinishedImporting("modules/autocompleter/index.tsx");
 for (const key10022 in _module1) {
@@ -20,5 +20,5 @@ for (const key10022 in _module1) {
 
 export default getAutocompleterBoosterMapDefault;
 export const createHeaderResult = HeaderRecord2.createHeaderResult;
-export const findNextSelectedResult = _modDef9956;
+export const findNextSelectedResult = _modDef9960;
 export const sortByMatchScore = sortByMatchScoreDefault;

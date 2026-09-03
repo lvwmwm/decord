@@ -1,10 +1,10 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16445
+// Function ID: 16446
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4478, 709, 4445, 16426, 4474, 1233, 3500, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4445, 16446, 4474, 1233, 3500, 4929, 2]
 // Exports: default
 
-// Module 16425 (VibegrationsSecretRequestCard)
+// Module 16445 (VibegrationsSecretRequestCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -61,7 +61,7 @@ export default function VibegrationsSecretRequestCard(projectId) {
     obj2[2] = callback;
     const intl3 = tmp6(1233).intl;
     obj2[3] = intl3.string(tmp8(3500)["gVV+HX"]);
-    items1[3] = tmp5(tmp6(4928).Button, obj2);
+    items1[3] = tmp5(tmp6(4929).Button, obj2);
     obj[1] = items1;
     return closure_6(tmp4, obj);
   }

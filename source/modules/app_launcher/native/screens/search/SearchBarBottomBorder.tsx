@@ -1,10 +1,10 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11898
+// Function ID: 11899
 // Name: usePinnedSearchBarBottomBorder
-// Dependencies: [19, 21, 4478, 709, 4217, 4927, 4931, 2]
+// Dependencies: [19, 21, 4478, 709, 4217, 4928, 4932, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 11892 (usePinnedSearchBarBottomBorder)
+// Module 11898 (usePinnedSearchBarBottomBorder)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -44,7 +44,7 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     obj = { opacity: obj.withSpring(num, triggerScrollHeight(closure_1_2[6]).springStandard) };
     return obj;
   };
-  obj = { withSpring: triggerScrollHeight(4927).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4931).springStandard };
+  obj = { withSpring: triggerScrollHeight(4928).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4932).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 5466161440826;
   fn.__initData = closure_6;

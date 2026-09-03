@@ -1,10 +1,10 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10335
+// Function ID: 10336
 // Name: useFavoritesGuildConfig
 // Dependencies: [1467, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10331 (useFavoritesGuildConfig)
+// Module 10335 (useFavoritesGuildConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

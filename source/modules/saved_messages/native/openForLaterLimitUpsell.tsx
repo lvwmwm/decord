@@ -1,14 +1,14 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11517
+// Function ID: 11518
 // Name: openForLaterLimitUpsell
-// Dependencies: [7604, 7607, 7608, 2]
+// Dependencies: [7605, 7608, 7609, 2]
 // Exports: default
 
-// Module 11512 (openForLaterLimitUpsell)
+// Module 11517 (openForLaterLimitUpsell)
 import set from "set" /* 2 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7604 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7607 */;
-import PremiumUpsellSubfeatureNames2 from "PremiumUpsellSubfeatureNames" /* 7608 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7605 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7608 */;
+import PremiumUpsellSubfeatureNames2 from "PremiumUpsellSubfeatureNames" /* 7609 */;
 
 const result = set.fileFinishedImporting("modules/saved_messages/native/openForLaterLimitUpsell.tsx");
 

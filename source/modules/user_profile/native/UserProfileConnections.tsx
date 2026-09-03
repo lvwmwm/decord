@@ -1,23 +1,23 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12749
+// Function ID: 12750
 // Name: VerifiedIcon
-// Dependencies: [19, 17, 1995, 4323, 6009, 673, 5360, 21, 1296, 4478, 709, 11395, 4197, 1362, 11400, 11401, 8571, 5359, 5235, 1430, 8656, 4700, 4190, 4446, 5989, 4193, 1233, 4474, 5607, 4196, 8743, 4204, 586, 12738, 6008, 6000, 12743, 2]
+// Dependencies: [19, 17, 1995, 4323, 6010, 673, 5361, 21, 1296, 4478, 709, 11400, 4197, 1362, 11405, 11406, 8575, 5360, 5236, 1430, 8660, 4701, 4190, 4446, 5990, 4193, 1233, 4474, 5608, 4196, 8747, 4204, 586, 12750, 6009, 6001, 12755, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12737 (VerifiedIcon)
+// Module 12749 (VerifiedIcon)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import map from "map" /* 4197 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6008 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12743 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6009 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12755 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
 import closure_6 from "initialize" /* 4323 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import ME from "ME" /* 673 */;
-import { MetadataFields } from "OperatorTypes" /* 5360 */;
+import { MetadataFields } from "OperatorTypes" /* 5361 */;
 import jsxProd from "jsxProd" /* 21 */;
 import Button from "Button" /* 1296 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -42,12 +42,12 @@ function VerifiedIcon(arg0) {
     obj = { style: null, children: null };
     obj[0] = tmp.verifiedIconContainer;
     obj = { source: null, color: null };
-    obj[0] = tmp4(11400);
+    obj[0] = tmp4(11405);
     obj[1] = PLATFORM_TWITTER;
     const merged = Object.assign(obj);
     const items = [callback(tmp2(1296).Icon, obj), ];
     obj1 = { source: null, color: null };
-    obj1[0] = tmp4(11401);
+    obj1[0] = tmp4(11406);
     obj1[1] = WHITE;
     const merged1 = Object.assign(obj);
     items[1] = callback(tmp2(1296).Icon, obj1);
@@ -361,7 +361,7 @@ let closure_19 = importAllResult.memo((application) => {
 const memoResult = importAllResult.memo((applicationRoleConnection) => {
   applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
   const tmp = callback3();
-  let obj = applicationRoleConnection(11395);
+  let obj = applicationRoleConnection(11400);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   obj1 = getAvatarURLDefault;
   obj = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
@@ -416,7 +416,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
   const tmp5Result = closure_13(closure_14, obj2);
   const tmp6 = closure_14;
   obj6[2] = callback(applicationRoleConnection(1296).Icon, { size: applicationRoleConnection(1296).Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true });
-  return callback(applicationRoleConnection(5607).TableRow, obj6);
+  return callback(applicationRoleConnection(5608).TableRow, obj6);
 });
 let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
 
@@ -435,7 +435,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const stateFromStores = userId(586).useStateFromStores(items1, () => obj.hidePersonalInformation);
   const obj3 = userId(586);
   const tmp5 = theme;
-  ({ connections, appIdentities } = theme(12738)(userId));
+  ({ connections, appIdentities } = theme(12750)(userId));
   if (!stateFromStores) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(connections.map((account) => closure_1_12(closure_1_18, { account, theme, locale: closure_2, userId }, account.id)), 0);
@@ -451,8 +451,8 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
     obj[2] = tmp.refreshCardTitle;
     obj = { hasIcons: true, children: null };
     obj[1] = items2;
-    obj[3] = callback(tmp2(6000).TableRowGroup, obj);
-    return callback(tmp5(6008), obj);
+    obj[3] = callback(tmp2(6001).TableRowGroup, obj);
+    return callback(tmp5(6009), obj);
   }
   return null;
 };
@@ -473,7 +473,7 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
       obj[2] = tmp.refreshCardTitle;
       obj = { hasIcons: true, children: null };
       obj[1] = mapped;
-      obj[3] = callback(tmp4(6000).TableRowGroup, obj);
+      obj[3] = callback(tmp4(6001).TableRowGroup, obj);
       return callback(UserProfileCardDefault, obj);
     }
   }

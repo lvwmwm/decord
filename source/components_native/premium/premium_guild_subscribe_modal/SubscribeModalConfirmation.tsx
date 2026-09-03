@@ -1,27 +1,27 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13500
+// Function ID: 13501
 // Name: PendingCancellationWarning
-// Dependencies: [5, 19, 17, 12350, 1908, 4370, 4145, 673, 7186, 4365, 21, 4478, 4326, 709, 586, 4369, 7689, 4474, 1233, 13486, 13487, 4928, 13496, 4940, 688, 695, 13453, 38, 4373, 4858, 13500, 2008, 2]
+// Dependencies: [5, 19, 17, 12362, 1908, 4370, 4145, 673, 7187, 4365, 21, 4478, 4326, 709, 586, 4369, 7692, 4474, 1233, 13501, 13502, 4929, 13511, 4941, 688, 695, 13468, 38, 4373, 4859, 13515, 2008, 2]
 // Exports: default
 
-// Module 13485 (PendingCancellationWarning)
+// Module 13500 (PendingCancellationWarning)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import registerAssetDefault from "registerAsset" /* 7689 */;
-import registerAssetDefault2 from "registerAsset" /* 13486 */;
-import PremiumGuildTierPillDefault from "PremiumGuildTierPill" /* 13487 */;
+import Button from "Button" /* 4929 */;
+import registerAssetDefault from "registerAsset" /* 7692 */;
+import registerAssetDefault2 from "registerAsset" /* 13501 */;
+import PremiumGuildTierPillDefault from "PremiumGuildTierPill" /* 13502 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "handleModifyingAppliedBoostStart" /* 12350 */;
+import closure_9 from "handleModifyingAppliedBoostStart" /* 12362 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
 import closure_11 from "handleGuildBoostsUpdate" /* 4370 */;
 import closure_12 from "reset" /* 4145 */;
 import ME from "ME" /* 673 */;
-import { Gradients } from "items" /* 7186 */;
+import { Gradients } from "items" /* 7187 */;
 import { BoostPurchaseIntent } from "BoostedGuildTiers" /* 4365 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -96,7 +96,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = callback3();
-  let obj = prop(13496);
+  let obj = prop(13511);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   obj1 = prop(586);
   const items = [closure_10];
@@ -143,7 +143,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     const obj7 = { style: null, guild: null };
     obj7[0] = tmp.guildPreview;
     obj7[1] = stateFromStores;
-    items2[1] = callback(onPremiumGuildSubscribe(13487), obj7);
+    items2[1] = callback(onPremiumGuildSubscribe(13502), obj7);
     const obj8 = { style: null, variant: "eyebrow", color: "text-default", children: null };
     obj8[0] = tmp.previewHeader;
     const intl4 = tmp2(1233).intl;
@@ -160,8 +160,8 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj10[3] = Gradients.PREMIUM_GUILD;
     const obj11 = { guild: null };
     obj11[0] = guild;
-    obj10[4] = callback(onPremiumGuildSubscribe(13487), obj11);
-    items2[3] = callback(onPremiumGuildSubscribe(4940), obj10);
+    obj10[4] = callback(onPremiumGuildSubscribe(13502), obj11);
+    items2[3] = callback(onPremiumGuildSubscribe(4941), obj10);
     obj5[1] = items2;
     items1[3] = callback2(closure_7, obj5);
     const obj12 = { slots: null };
@@ -178,11 +178,11 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
       return onPremiumGuildSubscribe(true);
     };
     obj14[3] = isModifyingSubscription;
-    obj13[1] = callback(tmp2(4928).Button, obj14);
+    obj13[1] = callback(tmp2(4929).Button, obj14);
     items1[5] = callback(closure_7, obj13);
     obj[0] = items1;
     tmp8 = callback2(closure_21, obj);
-    const tmp15 = onPremiumGuildSubscribe(4940);
+    const tmp15 = onPremiumGuildSubscribe(4941);
   }
   return tmp8;
 }

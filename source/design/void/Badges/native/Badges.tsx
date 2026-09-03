@@ -1,10 +1,10 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14064
+// Function ID: 14065
 // Name: BadgeColors
 // Dependencies: [19, 17, 21, 4478, 709, 4474, 2]
 // Exports: TextBadge
 
-// Module 14048 (BadgeColors)
+// Module 14064 (BadgeColors)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;

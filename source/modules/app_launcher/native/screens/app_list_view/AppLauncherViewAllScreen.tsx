@@ -1,10 +1,10 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 11991
+// Function ID: 11992
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1497, 21, 4478, 709, 11926, 1627, 9063, 11846, 7277, 5076, 1233, 5507, 4474, 1296, 11888, 11851, 11924, 11893, 11896, 11897, 11847, 8444, 2]
+// Dependencies: [19, 17, 1497, 21, 4478, 709, 11932, 1627, 9067, 11852, 7278, 5077, 1233, 5508, 4474, 1296, 11894, 11857, 11930, 11899, 11902, 11903, 11853, 8448, 2]
 // Exports: default
 
-// Module 11985 (DEFAULT_CONTENT_PADDING)
+// Module 11991 (DEFAULT_CONTENT_PADDING)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

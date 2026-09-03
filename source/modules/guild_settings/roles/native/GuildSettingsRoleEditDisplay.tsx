@@ -1,19 +1,19 @@
-// Module ID: 17445
-// Function ID: 17446
+// Module ID: 17465
+// Function ID: 17466
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 1985, 17430, 17429, 673, 17432, 21, 4478, 709, 4957, 586, 5986, 5985, 1296, 17446, 4445, 16113, 2008, 17444, 17447, 17448, 7714, 1233, 17450, 6000, 5607, 4940, 1470, 685, 14474, 4433, 4474, 2400, 6001, 2]
+// Dependencies: [19, 17, 1985, 17450, 17449, 673, 17452, 21, 4478, 709, 4958, 586, 5987, 5986, 1296, 17466, 4445, 16129, 2008, 17464, 17467, 17468, 7717, 1233, 17470, 6001, 5608, 4941, 1470, 685, 14490, 4433, 4474, 2400, 6002, 2]
 // Exports: default
 
-// Module 17445 (GuildSettingsRoleEditDisplay)
+// Module 17465 (GuildSettingsRoleEditDisplay)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1985 */;
-import closure_6 from "handleSetSection" /* 17430 */;
-import { RoleColorsStyle } from "handleSetSection" /* 17430 */;
-import { STYLE_CONFIGS } from "title" /* 17429 */;
+import closure_6 from "handleSetSection" /* 17450 */;
+import { RoleColorsStyle } from "handleSetSection" /* 17450 */;
+import { STYLE_CONFIGS } from "title" /* 17449 */;
 import ME from "ME" /* 673 */;
-import { DEFAULT_GRADIENT_ROLE_COLORS as closure_11 } from "HOLOGRAPHIC_ROLE_COLORS" /* 17432 */;
+import { DEFAULT_GRADIENT_ROLE_COLORS as closure_11 } from "HOLOGRAPHIC_ROLE_COLORS" /* 17452 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

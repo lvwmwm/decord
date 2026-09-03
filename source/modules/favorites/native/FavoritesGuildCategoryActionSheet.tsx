@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15946
+// Function ID: 15947
 // Name: FavoritesGuildCategoryActionSheetConnected
-// Dependencies: [19, 1389, 21, 4674, 10933, 4166, 5997, 5629, 5999, 10909, 1233, 6249, 15931, 9061, 5989, 4193, 586, 2]
+// Dependencies: [19, 1389, 21, 4674, 10937, 4166, 5998, 5630, 6000, 10913, 1233, 6250, 15947, 9065, 5990, 4193, 586, 2]
 // Exports: default
 
-// Module 15930 (FavoritesGuildCategoryActionSheetConnected)
+// Module 15946 (FavoritesGuildCategoryActionSheetConnected)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initializeFromUserSettings" /* 1389 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -14,25 +14,25 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
   dependencyMap = undefined;
-  const tmp3 = onClose(10933)(category);
+  const tmp3 = onClose(10937)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(4166).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { header: callback(category(5629).BottomSheetTitleHeader, { title: onClose(4674)(category, true) }), children: null };
+  let obj = { header: callback(category(5630).BottomSheetTitleHeader, { title: onClose(4674)(category, true) }), children: null };
   let tmp7Result = null;
   if (null != tmp3) {
     obj = { hasIcons: true, children: null };
     obj = { label: null, icon: null, onPress: null };
     obj[0] = tmp3.label;
     obj1 = { IconComponent: null };
-    obj1[0] = tmp4(10909).PlusLargeIcon;
-    obj[1] = tmp7(tmp4(5999).ActionSheetRow.Icon, obj1);
+    obj1[0] = tmp4(10913).PlusLargeIcon;
+    obj[1] = tmp7(tmp4(6000).ActionSheetRow.Icon, obj1);
     obj[2] = function onPress() {
       closure_2.perform();
       onClose();
     };
-    obj[1] = tmp7(tmp4(5999).ActionSheetRow, obj);
-    tmp7Result = tmp7(tmp4(5999).ActionSheetRow.Group, obj);
+    obj[1] = tmp7(tmp4(6000).ActionSheetRow, obj);
+    tmp7Result = tmp7(tmp4(6000).ActionSheetRow.Group, obj);
   }
   const items = [tmp7Result, , ];
   const obj2 = { hasIcons: true, children: null };
@@ -41,13 +41,13 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   obj3[0] = intl.string(category(1233).t.zdPFs9);
   const tmp2 = onClose(4674)(category, true);
   const tmp6 = closure_6;
-  obj3[1] = callback(category(5999).ActionSheetRow.Icon, { IconComponent: category(6249).SettingsIcon });
+  obj3[1] = callback(category(6000).ActionSheetRow.Icon, { IconComponent: category(6250).SettingsIcon });
   obj3[2] = function onPress() {
     onClose(closure_2[12])(category.id);
     onClose();
   };
-  obj2[1] = callback(category(5999).ActionSheetRow, obj3);
-  items[1] = callback(category(5999).ActionSheetRow.Group, obj2);
+  obj2[1] = callback(category(6000).ActionSheetRow, obj3);
+  items[1] = callback(category(6000).ActionSheetRow.Group, obj2);
   tmp7Result = null;
   if (setting) {
     const obj5 = { hasIcons: true, children: null };
@@ -55,20 +55,20 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
     const intl2 = tmp4(1233).intl;
     obj6[0] = intl2.string(tmp4(1233).t["2visC6"]);
     const obj7 = { IconComponent: null };
-    obj7[0] = tmp4(9061).IdIcon;
-    obj6[1] = tmp7(tmp4(5999).ActionSheetRow.Icon, obj7);
+    obj7[0] = tmp4(9065).IdIcon;
+    obj6[1] = tmp7(tmp4(6000).ActionSheetRow.Icon, obj7);
     obj6[2] = function onPress() {
       category(closure_2[14]).copy(category.id);
       const obj = category(closure_2[14]);
       category(closure_2[15]).presentIdCopied();
       onClose();
     };
-    obj5[1] = tmp7(tmp4(5999).ActionSheetRow, obj6);
-    tmp7Result = tmp7(tmp4(5999).ActionSheetRow.Group, obj5);
+    obj5[1] = tmp7(tmp4(6000).ActionSheetRow, obj6);
+    tmp7Result = tmp7(tmp4(6000).ActionSheetRow.Group, obj5);
   }
   items[2] = tmp7Result;
   obj[1] = items;
-  return tmp6(category(5997).ActionSheet, obj);
+  return tmp6(category(5998).ActionSheet, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 const result = require("set").fileFinishedImporting("modules/favorites/native/FavoritesGuildCategoryActionSheet.tsx");

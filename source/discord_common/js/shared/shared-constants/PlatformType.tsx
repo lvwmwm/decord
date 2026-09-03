@@ -1,9 +1,9 @@
-// Module ID: 8628
-// Function ID: 8629
+// Module ID: 8632
+// Function ID: 8633
 // Name: PlatformType
 // Dependencies: [2]
 
-// Module 8628 (PlatformType)
+// Module 8632 (PlatformType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/PlatformType.tsx");

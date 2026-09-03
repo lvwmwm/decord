@@ -1,9 +1,9 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17377
+// Function ID: 17378
 // Name: getTargetType
 // Dependencies: [1935, 673, 1205, 4074, 11, 2]
 
-// Module 17357 (getTargetType)
+// Module 17377 (getTargetType)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import _modDef1205 from "module_1205" /* 1205 */;
 import toJSDefault from "toJS" /* 1935 */;

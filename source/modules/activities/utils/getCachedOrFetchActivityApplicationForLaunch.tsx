@@ -1,10 +1,10 @@
-// Module ID: 9492
-// Function ID: 9493
+// Module ID: 9496
+// Function ID: 9497
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4519, 4504, 1386, 9482, 9471, 9493, 2]
+// Dependencies: [5, 4519, 4504, 1386, 9486, 9475, 9497, 2]
 // Exports: default
 
-// Module 9492 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 9496 (_getCachedOrFetchActivityApplicationForLaunch)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "addApplication" /* 4519 */;
 import closure_5 from "createExecutable" /* 4504 */;

@@ -1,23 +1,23 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16743
+// Function ID: 16744
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1386, 4554, 21, 586, 9552, 4332, 9664, 16724, 1234, 14457, 1233, 16726, 14452, 14312, 2, 16727, 16728, 16729, 16730, 16738, 16739, 16769]
+// Dependencies: [19, 17, 1386, 4554, 21, 586, 9556, 4332, 9668, 16744, 1234, 14473, 1233, 16746, 14468, 14328, 2, 16747, 16748, 16749, 16750, 16758, 16759, 16789]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 16723 (BurstReactionAnimationContainer)
+// Module 16743 (BurstReactionAnimationContainer)
 import initialize from "initialize" /* 586 */;
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 9552 */;
-import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9664 */;
-import KeyCommandsView from "KeyCommandsView" /* 14452 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16724 */;
-import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16727 */;
-import MenuContainerDefault from "MenuContainer" /* 16728 */;
-import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16729 */;
-import StyleSheetDefault from "StyleSheet" /* 16730 */;
-import MuteDeafenDefault from "MuteDeafen" /* 16738 */;
-import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16739 */;
-import AnimatedToastDefault from "AnimatedToast" /* 16769 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 9556 */;
+import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9668 */;
+import KeyCommandsView from "KeyCommandsView" /* 14468 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16744 */;
+import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16747 */;
+import MenuContainerDefault from "MenuContainer" /* 16748 */;
+import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16749 */;
+import StyleSheetDefault from "StyleSheet" /* 16750 */;
+import MuteDeafenDefault from "MuteDeafen" /* 16758 */;
+import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16759 */;
+import AnimatedToastDefault from "AnimatedToast" /* 16789 */;
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;

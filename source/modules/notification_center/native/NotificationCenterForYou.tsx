@@ -1,21 +1,21 @@
-// Module ID: 16230
-// Function ID: 16231
+// Module ID: 16249
+// Function ID: 16250
 // Name: YouBarNavigatorScreens
-// Dependencies: [32, 19, 17, 7390, 4493, 1921, 7393, 16231, 673, 11051, 4702, 21, 7394, 1499, 4332, 4166, 1492, 4171, 16232, 586, 16234, 15868, 4731, 11, 7395, 4458, 688, 12, 695, 16233, 16235, 8907, 500, 16236, 16237, 2]
+// Dependencies: [32, 19, 17, 7391, 4493, 1921, 7394, 16250, 673, 11055, 4703, 21, 7395, 1499, 4332, 4166, 1492, 4171, 16251, 586, 16253, 15884, 4732, 11, 7396, 4458, 688, 12, 695, 16252, 16254, 8911, 500, 16255, 16256, 2]
 // Exports: NotificationCenterForYou
 
-// Module 16230 (YouBarNavigatorScreens)
+// Module 16249 (YouBarNavigatorScreens)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7390 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7391 */;
 import closure_7 from "generateOldThreadCutoff" /* 4493 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "_validate" /* 7393 */;
-import closure_10 from "handleLoadFinished" /* 16231 */;
+import closure_9 from "_validate" /* 7394 */;
+import closure_10 from "handleLoadFinished" /* 16250 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import MODE_CHANGE_PHYSICS from "MODE_CHANGE_PHYSICS" /* 11051 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4702 */;
+import MODE_CHANGE_PHYSICS from "MODE_CHANGE_PHYSICS" /* 11055 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 2 */;
 

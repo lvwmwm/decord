@@ -1,10 +1,10 @@
-// Module ID: 9429
-// Function ID: 9430
+// Module ID: 9433
+// Function ID: 9434
 // Name: isOnMetaHorizon
 // Dependencies: [4506, 673, 2]
 // Exports: default
 
-// Module 9429 (isOnMetaHorizon)
+// Module 9433 (isOnMetaHorizon)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import items3 from "items3" /* 4506 */;

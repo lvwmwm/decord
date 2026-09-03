@@ -1,17 +1,17 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16353
+// Function ID: 16354
 // Name: ExploreServersRow
-// Dependencies: [5, 32, 19, 17, 21, 4217, 4474, 16271, 709, 8637, 16288, 16284, 4333, 4479, 4197, 9418, 1233, 4928, 16310, 4940, 688, 686, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4217, 4474, 16290, 709, 8641, 16307, 16303, 4333, 4479, 4197, 9422, 1233, 4929, 16329, 4941, 688, 686, 2]
 // Exports: default
 
-// Module 16334 (ExploreServersRow)
+// Module 16353 (ExploreServersRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16271 */;
+import createICYMIStyles from "createICYMIStyles" /* 16290 */;
 import importDefaultResult from "module_4217" /* 4217 */;
 
 const require = arg1;
@@ -91,16 +91,16 @@ export default function ExploreServersRow(visible) {
           } else {
             closure_0 = tmp4;
             dependencyMap(true);
-            v0(8637).itemInteracted("caught_up", "caught_up", "press_explore");
-            const obj5 = v0(8637);
+            v0(8641).itemInteracted("caught_up", "caught_up", "press_explore");
+            const obj5 = v0(8641);
             obj1 = { itemId: "caught_up", itemType: "caught_up", actionParameters: null };
             obj1[2] = { actionGestureType: "press", actionTargetElement: "browse_servers_button", actionIntentType: "open", actionDestinationType: null };
-            v0(8637).feedItemActioned(obj1);
-            const obj6 = v0(8637);
+            v0(8641).feedItemActioned(obj1);
+            const obj6 = v0(8641);
             v0 = 1;
             dependencyMap = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = closure_1_0(16288).maybeFetchGuildDiscoveryCategories();
+            obj2[0] = closure_1_0(16307).maybeFetchGuildDiscoveryCategories();
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -129,10 +129,10 @@ export default function ExploreServersRow(visible) {
     }
   }), []);
   const callback1 = React.useCallback(() => {
-    sharedValue(8637).itemInteracted("caught_up", "caught_up", "press_home");
-    const obj = sharedValue(8637);
-    sharedValue(8637).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
-    const obj2 = sharedValue(8637);
+    sharedValue(8641).itemInteracted("caught_up", "caught_up", "press_home");
+    const obj = sharedValue(8641);
+    sharedValue(8641).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
+    const obj2 = sharedValue(8641);
     const rootNavigationRef = visible(4333).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
@@ -249,7 +249,7 @@ export default function ExploreServersRow(visible) {
   let obj2 = { children: null };
   obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.textContainer, children: null };
-  obj5 = { style: items1, children: callback3(visible(9418).FlashIcon, obj6) };
+  obj5 = { style: items1, children: callback3(visible(9422).FlashIcon, obj6) };
   items1 = [tmp.iconWrapper, animatedStyle];
   const items2 = [callback3(sharedValue(4217).View, obj5), , ];
   obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: null };
@@ -270,19 +270,19 @@ export default function ExploreServersRow(visible) {
   obj10[1] = intl3.string(visible(1233).t.lNJYV8);
   obj10[4] = callback;
   obj10[5] = tmp4[0];
-  const items6 = [callback3(visible(4928).Button, obj10), ];
+  const items6 = [callback3(visible(4929).Button, obj10), ];
   const obj11 = { size: "md", text: null, grow: true, variant: "secondary", onPress: null };
   const intl4 = visible(1233).intl;
   obj11[1] = intl4.string(visible(1233).t.AGrUbj);
   obj11[4] = callback1;
-  items6[1] = callback3(visible(4928).Button, obj11);
+  items6[1] = callback3(visible(4929).Button, obj11);
   obj9[1] = items6;
   items5[1] = callback4(View, obj9);
   obj3[1] = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(16310).Separator, {}), ];
+  const items7 = [callback4(View, obj3), callback3(visible(16329).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: visible(688).VerticalGradient.START, end: visible(688).VerticalGradient.END, colors: null, pointerEvents: "none" };
   obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  const tmp11 = sharedValue(4940);
+  const tmp11 = sharedValue(4941);
   const obj20 = sharedValue(686)(token);
   const items8 = [sharedValue(686)(token).alpha(0.2).hex(), ];
   const alphaResult = sharedValue(686)(token).alpha(0.2);

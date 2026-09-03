@@ -1,14 +1,14 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12253
+// Function ID: 12254
 // Name: ChatWarningIcon
-// Dependencies: [19, 21, 709, 4196, 7936, 2]
+// Dependencies: [19, 21, 709, 4196, 7939, 2]
 // Exports: ChatWarningIcon
 
-// Module 12241 (ChatWarningIcon)
+// Module 12253 (ChatWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7936 */;
+import registerAsset from "registerAsset" /* 7939 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,23 +1,23 @@
-// Module ID: 16833
-// Function ID: 16834
+// Module ID: 16853
+// Function ID: 16854
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4470, 9640, 1386, 1385, 4506, 9479, 16834, 673, 12064, 21, 1296, 4478, 709, 1627, 586, 1492, 16829, 11211, 4217, 16835, 4204, 4479, 4927, 16836, 16837, 1233, 5660, 4110, 16831, 9617, 2]
+// Dependencies: [19, 17, 4470, 9644, 1386, 1385, 4506, 9483, 16854, 673, 12070, 21, 1296, 4478, 709, 1627, 586, 1492, 16849, 11215, 4217, 16855, 4204, 4479, 4928, 16856, 16857, 1233, 5661, 4110, 16851, 9621, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16833 (BaseActivityPanelPIPView)
+// Module 16853 (BaseActivityPanelPIPView)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "module_9640" /* 9640 */;
+import closure_6 from "module_9644" /* 9644 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "participantFromServer" /* 1385 */;
 import { ActivityLayoutMode } from "items3" /* 4506 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9479 */;
-import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16834 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9483 */;
+import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16854 */;
 import { ThemeTypes } from "ME" /* 673 */;
-import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
+import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12070 */;
 import { jsx } from "jsxProd" /* 21 */;
 import Button from "Button" /* 1296 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

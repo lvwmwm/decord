@@ -1,10 +1,10 @@
-// Module ID: 11527
-// Function ID: 11528
+// Module ID: 11532
+// Function ID: 11533
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1934, 1908, 1921, 21, 4478, 1627, 11528, 8442, 586, 8124, 6012, 4474, 1233, 5076, 8911, 1296, 5630, 2]
+// Dependencies: [19, 17, 1934, 1908, 1921, 21, 4478, 1627, 11533, 8446, 586, 8127, 6013, 4474, 1233, 5077, 8915, 1296, 5631, 2]
 // Exports: default
 
-// Module 11527 (AppInteractionInfoActionSheet)
+// Module 11532 (AppInteractionInfoActionSheet)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createdAt" /* 1934 */;
@@ -31,15 +31,15 @@ export default function AppInteractionInfoActionSheet(message) {
   const items = [onBack];
   const interactionMetadata = message.interactionMetadata;
   let tmp5;
-  const memo = React.useMemo(() => closure_1_8(onBack(11528), { onBack }), items);
+  const memo = React.useMemo(() => closure_1_8(onBack(11533), { onBack }), items);
   if (interactionMetadata != null) {
-    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 8442).ApplicationIntegrationType.USER_INSTALL];
+    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 8446).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp5;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp7;
   if (interactionMetadata2 != null) {
-    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8442).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8446).ApplicationIntegrationType.GUILD_INSTALL];
   }
   React = tmp7;
   const interactionMetadata3 = message.interactionMetadata;
@@ -64,8 +64,8 @@ export default function AppInteractionInfoActionSheet(message) {
       tmp = null != dependencyMap;
     }
     if (tmp) {
-      const user = message(8124).getUser(dependencyMap);
-      const obj = message(8124);
+      const user = message(8127).getUser(dependencyMap);
+      const obj = message(8127);
     }
   }, items4);
   let tmp15 = stateFromStores2;
@@ -85,8 +85,8 @@ export default function AppInteractionInfoActionSheet(message) {
     obj[0] = tmp.itemContainer;
     obj = { guild: null, size: null };
     obj[0] = stateFromStores1;
-    obj[1] = tmp10(6012).GuildIconSizes.SMALL_32;
-    const items5 = [callback(onBack(6012), obj), ];
+    obj[1] = tmp10(6013).GuildIconSizes.SMALL_32;
+    const items5 = [callback(onBack(6013), obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.itemLabel;
     obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -102,13 +102,13 @@ export default function AppInteractionInfoActionSheet(message) {
     items5[1] = callback2(id, obj1);
     obj[1] = items5;
     let tmp26 = callback2(id, obj);
-    const tmp2Result = onBack(6012);
+    const tmp2Result = onBack(6013);
   } else {
     tmp26 = null;
     if (null != stateFromStores) {
       const obj5 = { onPress: null, children: null };
       obj5[0] = function onPress() {
-        return onBack(8911)({ userId: stateFromStores.id, channelId: message.channel_id });
+        return onBack(8915)({ userId: stateFromStores.id, channelId: message.channel_id });
       };
       const obj6 = { style: null, children: null };
       obj6[0] = tmp.itemContainer;
@@ -132,7 +132,7 @@ export default function AppInteractionInfoActionSheet(message) {
       items7[1] = callback2(id, obj8);
       obj6[1] = items7;
       obj5[1] = callback2(id, obj6);
-      tmp26 = callback(tmp10(5076).PressableOpacity, obj5);
+      tmp26 = callback(tmp10(5077).PressableOpacity, obj5);
     }
   }
   const obj12 = { header: memo, bodyStyles: { paddingBottom: onBack(1627)().bottom }, children: null };
@@ -141,7 +141,7 @@ export default function AppInteractionInfoActionSheet(message) {
   if (null != tmp15) {
     const obj13 = { onPress: null, children: null };
     obj13[0] = function onPress() {
-      return onBack(8911)({ userId: guild.id, channelId: message.channel_id });
+      return onBack(8915)({ userId: guild.id, channelId: message.channel_id });
     };
     const obj14 = { style: null, children: null };
     obj14[0] = tmp.itemContainer;
@@ -163,9 +163,9 @@ export default function AppInteractionInfoActionSheet(message) {
     items10[1] = tmp31(id, obj16);
     obj14[1] = items10;
     obj13[1] = tmp31(id, obj14);
-    tmp32 = callback(tmp10(5076).PressableOpacity, obj13);
+    tmp32 = callback(tmp10(5077).PressableOpacity, obj13);
   }
   items9[1] = tmp32;
   obj12[2] = items9;
-  return callback2(message(5630).BottomSheet, obj12);
+  return callback2(message(5631).BottomSheet, obj12);
 };

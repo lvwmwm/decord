@@ -1,11 +1,11 @@
-// Module ID: 4835
-// Function ID: 4836
+// Module ID: 4836
+// Function ID: 4837
 // Name: num2
-// Dependencies: [4836, 2]
+// Dependencies: [4837, 2]
 // Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 4835 (num2)
-import formatDefault from "format" /* 4836 */;
+// Module 4836 (num2)
+import formatDefault from "format" /* 4837 */;
 
 let str = formatDefault.name;
 if (str == null) {

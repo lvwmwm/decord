@@ -1,10 +1,10 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16100
+// Function ID: 16101
 // Name: experiment
 // Dependencies: [4389, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 16084 (experiment)
+// Module 16100 (experiment)
 import set from "set" /* 2 */;
 import createExperiment from "createExperiment" /* 4389 */;
 

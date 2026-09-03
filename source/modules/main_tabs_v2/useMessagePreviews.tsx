@@ -1,12 +1,12 @@
-// Module ID: 15142
-// Function ID: 15143
+// Module ID: 15157
+// Function ID: 15158
 // Name: useMessagePreview
-// Dependencies: [1339, 4493, 4166, 586, 7637, 4171, 15143, 2]
+// Dependencies: [1339, 4493, 4166, 586, 7638, 4171, 15158, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 15142 (useMessagePreview)
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7637 */;
-import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 15143 */;
+// Module 15157 (useMessagePreview)
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7638 */;
+import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 15158 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 

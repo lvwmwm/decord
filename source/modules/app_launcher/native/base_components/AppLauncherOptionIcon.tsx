@@ -1,10 +1,10 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 11978
+// Function ID: 11979
 // Name: styles
 // Dependencies: [19, 17, 21, 4478, 709, 2]
 // Exports: default
 
-// Module 11972 (styles)
+// Module 11978 (styles)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

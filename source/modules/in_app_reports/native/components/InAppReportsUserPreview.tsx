@@ -1,10 +1,10 @@
-// Module ID: 8798
-// Function ID: 8799
+// Module ID: 8802
+// Function ID: 8803
 // Name: UserPreview
 // Dependencies: [19, 17, 21, 4478, 709, 4326, 4474, 1233, 1296, 2]
 // Exports: default
 
-// Module 8798 (UserPreview)
+// Module 8802 (UserPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -41,7 +41,7 @@ export default function UserPreview(user) {
   obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   const str = intl.string(getSystemLocale.t.Rsth7z);
-  const items2 = [callback(Button.Avatar, { size: Button.AvatarSizes.LARGE_48, user, guildId: "r" }), ];
+  const items2 = [callback(Button.Avatar, { size: Button.AvatarSizes.LARGE_48, user, guildId: "accessible" }), ];
   const obj3 = { style: tmp.userProfileInfo, children: null };
   let tmp7Result = null != user.globalName;
   if (tmp7Result) {

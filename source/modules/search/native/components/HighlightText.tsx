@@ -1,10 +1,10 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10233
+// Function ID: 10234
 // Name: HighlightText
 // Dependencies: [19, 673, 21, 4478, 4326, 709, 1296, 2]
 // Exports: default
 
-// Module 10229 (HighlightText)
+// Module 10233 (HighlightText)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;

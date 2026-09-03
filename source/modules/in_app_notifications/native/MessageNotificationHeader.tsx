@@ -1,10 +1,10 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10283
+// Function ID: 10284
 // Name: LocationText
-// Dependencies: [19, 17, 4470, 4130, 1921, 21, 4478, 709, 4474, 4674, 689, 5024, 5026, 4981, 586, 2]
+// Dependencies: [19, 17, 4470, 4130, 1921, 21, 4478, 709, 4474, 4674, 689, 5025, 5027, 4982, 586, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10279 (LocationText)
+// Module 10283 (LocationText)
 import initialize from "initialize" /* 586 */;
 import set from "set" /* 689 */;
 import ThemesDefault from "Themes" /* 709 */;

@@ -1,15 +1,15 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11045
+// Function ID: 11046
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4478, 709, 10698, 1498, 10737, 10676, 4928, 1233, 2432, 10823, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 10702, 1498, 10741, 10680, 4929, 1233, 2432, 10827, 4474, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 11041 (PremiumGiftDMSuccessBody)
+// Module 11045 (PremiumGiftDMSuccessBody)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10698 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10823 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10702 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10827 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

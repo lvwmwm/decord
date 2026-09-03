@@ -1,10 +1,10 @@
-// Module ID: 16130
-// Function ID: 16131
+// Module ID: 16146
+// Function ID: 16147
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [1980, 4299, 673, 4333, 4332, 4489, 6195, 2]
+// Dependencies: [1980, 4299, 673, 4333, 4332, 4489, 6196, 2]
 // Exports: default
 
-// Module 16130 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 16146 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import closure_2 from "handleConnectionOpen" /* 1980 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;
@@ -51,7 +51,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
     tmpResult = tmp(4489);
     tmpResult.transitionToChannel(tmp4);
   } else {
-    tmp(6195).transitionToGuild(arg0);
-    const tmpResult1 = tmp(6195);
+    tmp(6196).transitionToGuild(arg0);
+    const tmpResult1 = tmp(6196);
   }
 };

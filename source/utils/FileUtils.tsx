@@ -1,12 +1,12 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5087
+// Function ID: 5088
 // Name: getUploadFileSizeSum
-// Dependencies: [1908, 1921, 673, 1923, 12, 5087, 4404, 4139, 4372, 1233, 2]
+// Dependencies: [1908, 1921, 673, 1923, 12, 5088, 4404, 4139, 4372, 1233, 2]
 // Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, getMaxRequestSize, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5086 (getUploadFileSizeSum)
+// Module 5087 (getUploadFileSizeSum)
 import applyDefault from "apply" /* 12 */;
-import noConflictDefault from "noConflict" /* 5087 */;
+import noConflictDefault from "noConflict" /* 5088 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;

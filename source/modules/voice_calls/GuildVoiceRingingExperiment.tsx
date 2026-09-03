@@ -1,9 +1,9 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9892
+// Function ID: 9893
 // Name: experiment
 // Dependencies: [4392, 4389, 2]
 
-// Module 9888 (experiment)
+// Module 9892 (experiment)
 import set from "set" /* 2 */;
 import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
 import createExperiment from "createExperiment" /* 4389 */;

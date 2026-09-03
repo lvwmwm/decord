@@ -1,13 +1,13 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10815
+// Function ID: 10816
 // Name: _fetchSKU
-// Dependencies: [5, 8509, 4527, 673, 706, 4755, 527, 4162, 8510, 7343, 4376, 4161, 4154, 4837, 4846, 1470, 2]
+// Dependencies: [5, 8513, 4527, 673, 706, 4756, 527, 4162, 8514, 7344, 4376, 4161, 4154, 4838, 4847, 1470, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10811 (_fetchSKU)
+// Module 10815 (_fetchSKU)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getPromotionIdOverride" /* 8509 */;
+import closure_4 from "getPromotionIdOverride" /* 8513 */;
 import closure_5 from "addSku" /* 4527 */;
 import ME from "ME" /* 673 */;
 
@@ -438,7 +438,7 @@ function _previewPurchaseSku() {
                 c5.promotion_id_override = promotionIdOverride2;
               }
               promotionIdOverride = 1;
-              obj2 = callback(4755);
+              obj2 = callback(4756);
               const obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
               obj3[0] = billingError.STORE_SKU_PURCHASE(c1);
               obj3[1] = c5;
@@ -825,12 +825,12 @@ function _purchaseSKU() {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
                 const obj27 = callback2(706);
-                c11 = callback(8510).isTestModeForApplication(callback);
+                c11 = callback(8514).isTestModeForApplication(callback);
                 c8 = 1;
                 obj2 = { gift: isGift, sku_subscription_plan_id: obj1.subscriptionPlanId };
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
-                const obj28 = callback(8510);
+                const obj28 = callback(8514);
                 c10 = 2;
                 c11 = 1;
                 const obj3 = { value: null, done: false };

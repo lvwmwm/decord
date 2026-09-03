@@ -1,10 +1,10 @@
-// Module ID: 9280
-// Function ID: 9281
+// Module ID: 9284
+// Function ID: 9285
 // Name: TabItemCount
-// Dependencies: [19, 17, 21, 4217, 4478, 709, 4927, 4474, 1234, 1233, 2]
+// Dependencies: [19, 17, 21, 4217, 4478, 709, 4928, 4474, 1234, 1233, 2]
 // Exports: TabItem
 
-// Module 9280 (TabItemCount)
+// Module 9284 (TabItemCount)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;

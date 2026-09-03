@@ -1,14 +1,14 @@
-// Module ID: 4748
-// Function ID: 4749
+// Module ID: 4749
+// Function ID: 4750
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 4470, 586, 4749, 2]
+// Dependencies: [19, 4470, 586, 4750, 2]
 // Exports: useDisplayNameStylesEnabled
 
-// Module 4748 (useDisplayNameStylesEnabled)
+// Module 4749 (useDisplayNameStylesEnabled)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
-import context from "context" /* 4749 */;
+import context from "context" /* 4750 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 
 const useContext = noop.useContext;

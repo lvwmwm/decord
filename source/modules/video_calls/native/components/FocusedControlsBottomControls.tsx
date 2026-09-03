@@ -1,24 +1,24 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9678
+// Function ID: 9679
 // Name: FocusedControlsExpanded
-// Dependencies: [32, 19, 17, 9533, 9534, 673, 21, 1234, 4478, 709, 5469, 1296, 1627, 4217, 9675, 688, 1233, 5945, 4298, 1372, 4479, 5660, 9677, 1492, 9559, 1228, 4204, 4918, 1362, 9678, 2]
+// Dependencies: [32, 19, 17, 9537, 9538, 673, 21, 1234, 4478, 709, 5470, 1296, 1627, 4217, 9679, 688, 1233, 5946, 4298, 1372, 4479, 5661, 9681, 1492, 9563, 1228, 4204, 4919, 1362, 9682, 2]
 // Exports: default
 
-// Module 9674 (FocusedControlsExpanded)
+// Module 9678 (FocusedControlsExpanded)
 import ThemesDefault from "Themes" /* 709 */;
 import _mod4217 from "module_4217" /* 4217 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4479 */;
-import CallPTTButtonLooksDefault from "CallPTTButtonLooks" /* 9678 */;
+import CallPTTButtonLooksDefault from "CallPTTButtonLooks" /* 9682 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9533 */;
-import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9534 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9537 */;
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9538 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 
 require = arg1;
 function FocusedControlsExpanded(children) {
@@ -63,7 +63,7 @@ function FocusedControlsExpanded(children) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = callback3();
-  let obj = positionY(9675);
+  let obj = positionY(9679);
   const canShowTooltip = obj.useCanShowTooltip(positionY(688).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(4217);
   const fn = function o() {
@@ -106,7 +106,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   obj = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: null };
   obj1 = { style: tmp.aboveActionBarContainer, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5945).ActionSheetHeaderBar, {}), ];
+  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5946).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   if (tmp4Result) {
     const obj2 = { style: null, children: null };
@@ -620,7 +620,7 @@ export default function FocusedControlsBottomControls(omitPTT) {
   let tmp4Result = null;
   if (!flag) {
     obj = { look: null, style: null, sendCallback: null, stopCallback: null };
-    obj[0] = _require(9678).CallPTTButtonLooks.BLUR;
+    obj[0] = _require(9682).CallPTTButtonLooks.BLUR;
     obj[1] = tmp.ptbButton;
     obj[2] = closure_8;
     obj[3] = closure_9;

@@ -1,9 +1,9 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8061
+// Function ID: 8062
 // Name: handleFetchEmbeddedActivityShelfSuccess
 // Dependencies: [12, 586, 706, 2]
 
-// Module 8058 (handleFetchEmbeddedActivityShelfSuccess)
+// Module 8061 (handleFetchEmbeddedActivityShelfSuccess)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

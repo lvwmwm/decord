@@ -1,9 +1,9 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12146
+// Function ID: 12147
 // Name: fetch
 // Dependencies: [5, 1386, 673, 684, 3, 527, 1482, 2]
 
-// Module 12140 (fetch)
+// Module 12146 (fetch)
 import sendRequest from "sendRequest" /* 527 */;
 import parseDefault from "parse" /* 1482 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

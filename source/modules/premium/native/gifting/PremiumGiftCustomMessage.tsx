@@ -1,11 +1,11 @@
-// Module ID: 10851
-// Function ID: 10852
+// Module ID: 10855
+// Function ID: 10856
 // Name: GiftCustomMessage
-// Dependencies: [19, 17, 1923, 21, 4478, 709, 1233, 7817, 10698, 2]
+// Dependencies: [19, 17, 1923, 21, 4478, 709, 1233, 7820, 10702, 2]
 
-// Module 10851 (GiftCustomMessage)
+// Module 10855 (GiftCustomMessage)
 import ThemesDefault from "Themes" /* 709 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10698 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10702 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { CUSTOM_GIFT_MESSAGE_MAX_LENGTH as closure_4 } from "GuildFeatures" /* 1923 */;

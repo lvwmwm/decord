@@ -1,26 +1,26 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13828
+// Function ID: 13829
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5577, 7280, 7175, 13296, 1215, 673, 1393, 4545, 4730, 9291, 7292, 4460, 13813, 11675, 7893, 12438, 4723, 4333, 13814, 8911, 6254, 8879, 11586, 1890, 8490, 695, 8492, 6100, 11405, 11709, 13821, 12470, 9297, 2008, 9292, 9290, 13823, 13825, 1623, 5091, 13830, 4190, 13832, 1908, 6195, 9686, 9781, 6169, 4722, 9900, 4332, 5406, 1219, 706, 5358, 1485, 9750, 13835, 13850, 1234, 13861, 9931, 13868, 4837, 13869, 7295, 5981, 9865, 7473, 5400, 11557, 10675, 13941, 5385, 9475, 8827, 8821, 4443, 2]
+// Dependencies: [109, 5, 5578, 7281, 7176, 13308, 1215, 673, 1393, 4545, 4731, 9295, 7293, 4460, 13829, 11680, 7896, 12450, 4724, 4333, 13830, 8915, 6255, 8883, 11591, 1890, 8494, 695, 8496, 6101, 11410, 11714, 13837, 12482, 9301, 2008, 9296, 9294, 13839, 13841, 1623, 5092, 13846, 4190, 13848, 1908, 6196, 9690, 9785, 6170, 4723, 9904, 4332, 5407, 1219, 706, 5359, 1485, 9754, 13851, 13866, 1234, 13877, 9935, 13884, 4838, 13885, 7296, 5982, 9869, 7474, 5401, 11562, 10679, 13957, 5386, 9479, 8831, 8825, 4443, 2]
 // Exports: default
 
-// Module 13812 (handleSupportedURL)
+// Module 13828 (handleSupportedURL)
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_8 from "scheduledEventSort" /* 7280 */;
-import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7175 */;
-import closure_10 from "zustandStore" /* 13296 */;
+import closure_8 from "scheduledEventSort" /* 7281 */;
+import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7176 */;
+import closure_10 from "zustandStore" /* 13308 */;
 import closure_11 from "fetchFingerprint" /* 1215 */;
 import ME from "ME" /* 673 */;
 import { StaticChannelRoute } from "set" /* 1393 */;
 import { StreamTypes } from "StreamIssueReportReasons" /* 4545 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9291 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7292 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9295 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7293 */;
 import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4460 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13813 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11675 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13829 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11680 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
 
 const require = arg1;
 let closure_4 = ["code", "state"];
@@ -206,7 +206,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: 409390404914198900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

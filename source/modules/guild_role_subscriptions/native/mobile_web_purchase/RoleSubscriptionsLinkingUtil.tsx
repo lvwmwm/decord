@@ -1,9 +1,9 @@
-// Module ID: 6168
-// Function ID: 6169
+// Module ID: 6169
+// Function ID: 6170
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 673, 1393, 6169, 2008, 3, 2]
+// Dependencies: [5, 673, 1393, 6170, 2008, 3, 2]
 
-// Module 6168 (performRoleSubscriptionUpsellRedirect)
+// Module 6169 (performRoleSubscriptionUpsellRedirect)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 673 */;
 import { StaticChannelRoute } from "set" /* 1393 */;

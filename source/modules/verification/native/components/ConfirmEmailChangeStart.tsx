@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7711
+// Function ID: 7712
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1921, 21, 4478, 1498, 586, 7709, 688, 4377, 4194, 1233, 7710, 4474, 4928, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 21, 4478, 1498, 586, 7712, 688, 4377, 4194, 1233, 7713, 4474, 4929, 2]
 // Exports: default
 
-// Module 7708 (ConfirmEmailChangeStart)
+// Module 7711 (ConfirmEmailChangeStart)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -41,7 +41,7 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(7710);
+    obj2[1] = navigation(7713);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;
@@ -56,7 +56,7 @@ export default function ConfirmEmailChangeStart() {
     obj5[0] = intl3.string(tmp2(1233).t.rXV81H);
     obj5[1] = tmp7;
     obj5[2] = tmp6[0];
-    obj4[1] = callback2(tmp2(4928).Button, obj5);
+    obj4[1] = callback2(tmp2(4929).Button, obj5);
     items1[3] = callback2(closure_6, obj4);
     obj1[1] = items1;
     obj[2] = callback3(closure_6, obj1);

@@ -1,13 +1,13 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7414
+// Function ID: 7415
 // Name: recomputeAffinities
-// Dependencies: [4130, 7414, 586, 706, 2]
+// Dependencies: [4130, 7415, 586, 706, 2]
 
-// Module 7413 (recomputeAffinities)
+// Module 7414 (recomputeAffinities)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "markAllUserIdListsStale" /* 4130 */;
-import { USER_AFFINITY_TTL } from "result" /* 7414 */;
+import { USER_AFFINITY_TTL } from "result" /* 7415 */;
 
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;

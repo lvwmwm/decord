@@ -1,10 +1,10 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13006
+// Function ID: 13007
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4470, 21, 4478, 709, 586, 4326, 4474, 1233, 6012, 1425, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 586, 4326, 4474, 1233, 6013, 1425, 2]
 // Exports: default
 
-// Module 12994 (GuildDiscoveryPreviewElement)
+// Module 13006 (GuildDiscoveryPreviewElement)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
@@ -12,7 +12,7 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import Text from "Text" /* 4474 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;

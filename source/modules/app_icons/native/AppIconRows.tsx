@@ -1,13 +1,13 @@
-// Module ID: 15353
-// Function ID: 15354
+// Module ID: 15367
+// Function ID: 15368
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1921, 21, 4478, 8188, 6000, 1233, 15354, 13246, 586, 1945, 2]
+// Dependencies: [32, 19, 17, 1921, 21, 4478, 8192, 6001, 1233, 15368, 13258, 586, 1945, 2]
 // Exports: default
 
-// Module 15353 (BackwardsCompatibleAppIconRows)
+// Module 15367 (BackwardsCompatibleAppIconRows)
 import initialize from "initialize" /* 586 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13246 */;
+import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13258 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -49,7 +49,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return closure_1_7(_undefined(_undefined2[9]), obj);
     });
-    obj[1] = callback(merged(6000).TableRowGroup, obj);
+    obj[1] = callback(merged(6001).TableRowGroup, obj);
     return callback(View, obj);
   }
 }

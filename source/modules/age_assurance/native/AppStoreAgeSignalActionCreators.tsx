@@ -1,10 +1,10 @@
-// Module ID: 17276
-// Function ID: 17277
+// Module ID: 17296
+// Function ID: 17297
 // Name: _requestAgeSignalChallenge
 // Dependencies: [5, 673, 527, 2]
 // Exports: requestAgeSignalChallenge, submitAgeSignal
 
-// Module 17276 (_requestAgeSignalChallenge)
+// Module 17296 (_requestAgeSignalChallenge)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 

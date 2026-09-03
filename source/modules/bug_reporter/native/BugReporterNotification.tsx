@@ -1,14 +1,14 @@
-// Module ID: 10288
-// Function ID: 10289
+// Module ID: 10292
+// Function ID: 10293
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 10289, 673, 21, 4478, 709, 10277, 10212, 10199, 4723, 10201, 10290, 2008, 6254, 2]
+// Dependencies: [19, 17, 10293, 673, 21, 4478, 709, 10281, 10216, 10203, 4724, 10205, 10294, 2008, 6255, 2]
 // Exports: BugReporterNotification
 
-// Module 10288 (BugReporterNotification)
+// Module 10292 (BugReporterNotification)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "zustandStore" /* 10289 */;
+import closure_6 from "zustandStore" /* 10293 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -32,7 +32,7 @@ export const BugReporterNotification = function BugReporterNotification(notifica
   obj[1] = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
   obj = {
     header: memo,
-    children: jsx(notification(10212).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
+    children: jsx(notification(10216).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
     rightAccessory: <closure_5 source={{ uri: notification.imageUri }} style={tmp.preview} />,
     onPress() {
       let obj = closure_1_6;
@@ -59,9 +59,9 @@ export const BugReporterNotification = function BugReporterNotification(notifica
     },
     notification
   };
-  return jsx(notification(10277).NotificationPressable, {
+  return jsx(notification(10281).NotificationPressable, {
     header: memo,
-    children: jsx(notification(10212).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
+    children: jsx(notification(10216).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
     rightAccessory: <closure_5 source={{ uri: notification.imageUri }} style={tmp.preview} />,
     onPress() {
       let obj = closure_1_6;

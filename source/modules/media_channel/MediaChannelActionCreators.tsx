@@ -1,10 +1,10 @@
-// Module ID: 11671
-// Function ID: 11672
+// Module ID: 11676
+// Function ID: 11677
 // Name: _fetchMediaPostEmbed
 // Dependencies: [5, 673, 706, 527, 4376, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11671 (_fetchMediaPostEmbed)
+// Module 11676 (_fetchMediaPostEmbed)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;

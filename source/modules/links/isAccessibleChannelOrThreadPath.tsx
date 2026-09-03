@@ -1,13 +1,13 @@
-// Module ID: 6101
-// Function ID: 6102
+// Module ID: 6102
+// Function ID: 6103
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1982, 5471, 1386, 1984, 1908, 673, 1393, 6102, 6105, 6114, 6081, 6117, 6119, 6077, 6120, 6121, 4388, 6122, 6079, 1470, 6167, 4491, 4675, 2]
+// Dependencies: [5, 1982, 5472, 1386, 1984, 1908, 673, 1393, 6103, 6106, 6115, 6082, 6118, 6120, 6078, 6121, 6122, 4388, 6123, 6080, 1470, 6168, 4491, 4675, 2]
 // Exports: default
 
-// Module 6101 (_isAccessibleChannelOrThreadPath)
+// Module 6102 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "isSubscriptionGated" /* 1982 */;
-import closure_5 from "shouldShowOnboarding" /* 5471 */;
+import closure_5 from "shouldShowOnboarding" /* 5472 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;

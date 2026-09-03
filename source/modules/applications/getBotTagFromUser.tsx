@@ -1,10 +1,10 @@
-// Module ID: 10866
-// Function ID: 10867
+// Module ID: 10870
+// Function ID: 10871
 // Name: getBotTagTypeFromUser
 // Dependencies: [4507, 2]
 // Exports: getBotTagTypeFromUser
 
-// Module 10866 (getBotTagTypeFromUser)
+// Module 10870 (getBotTagTypeFromUser)
 import set from "set" /* 2 */;
 import ApplicationTypes from "ApplicationTypes" /* 4507 */;
 

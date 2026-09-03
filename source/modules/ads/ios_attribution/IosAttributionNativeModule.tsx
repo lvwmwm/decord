@@ -1,10 +1,10 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11315
+// Function ID: 11316
 // Name: getActiveIosAttributionFramework
 // Dependencies: [2]
 // Exports: endImpression, getActiveIosAttributionFramework, startImpression
 
-// Module 11311 (getActiveIosAttributionFramework)
+// Module 11315 (getActiveIosAttributionFramework)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionNativeModule.tsx");

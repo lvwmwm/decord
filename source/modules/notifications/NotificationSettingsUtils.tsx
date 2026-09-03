@@ -1,14 +1,14 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14344
+// Function ID: 14345
 // Name: getNamedExperiment
-// Dependencies: [32, 19, 14322, 14329, 586, 1467, 2]
-// Exports: getAssignedNotifSettingsAndMappings, useNotifSettingVisibility
+// Dependencies: [32, 19, 14338, 14345, 586, 1467, 2]
+// Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 14328 (getNamedExperiment)
-import knownExperimentConfigs from "knownExperimentConfigs" /* 14329 */;
+// Module 14344 (getNamedExperiment)
+import knownExperimentConfigs from "knownExperimentConfigs" /* 14345 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import items2 from "items2" /* 14322 */;
+import items2 from "items2" /* 14338 */;
 
 require = arg1;
 function getNamedExperiment(experiment) {
@@ -73,6 +73,12 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
   }
   return { settings, mappings };
 };
+export function useIsDeclarativeSettingsUIAvailable() {
+  return false;
+}
+export function useNotifCategoryVisibility() {
+  return false;
+}
 export const useNotifSettingVisibility = function useNotifSettingVisibility(GAMING_DEFAULT) {
   const _require = GAMING_DEFAULT;
   const items = [GAMING_DEFAULT];

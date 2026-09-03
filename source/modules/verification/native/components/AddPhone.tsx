@@ -1,16 +1,16 @@
-// Module ID: 7779
-// Function ID: 7780
+// Module ID: 7782
+// Function ID: 7783
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 7725, 1380, 1921, 673, 502, 21, 4478, 709, 586, 7707, 7780, 4376, 4474, 1233, 7781, 7745, 4723, 7782, 2008, 4928, 4858, 7809, 2]
+// Dependencies: [5, 32, 19, 17, 7728, 1380, 1921, 673, 502, 21, 4478, 709, 586, 7710, 7783, 4376, 4474, 1233, 7784, 7748, 4724, 7785, 2008, 4929, 4859, 7812, 2]
 // Exports: default
 
-// Module 7779 (AddPhone)
+// Module 7782 (AddPhone)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSetLocationMetadata" /* 7725 */;
+import closure_8 from "handleSetLocationMetadata" /* 7728 */;
 import closure_9 from "handleRequiredAction" /* 1380 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
 import { UserFlags } from "ME" /* 673 */;

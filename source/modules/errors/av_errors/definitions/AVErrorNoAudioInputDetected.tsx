@@ -1,11 +1,11 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17673
+// Function ID: 17674
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1386, 4529, 4554, 673, 9578, 17654, 2]
+// Dependencies: [1386, 4529, 4554, 673, 9582, 17674, 2]
 
-// Module 17653 (AVErrorNoAudioInputDetectedDefinition)
-import mapped from "mapped" /* 9578 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17654 */;
+// Module 17673 (AVErrorNoAudioInputDetectedDefinition)
+import mapped from "mapped" /* 9582 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17674 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_4 from "createRTCConnection" /* 4554 */;

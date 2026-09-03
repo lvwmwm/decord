@@ -1,18 +1,18 @@
-// Module ID: 10146
-// Function ID: 10147
+// Module ID: 10150
+// Function ID: 10151
 // Name: StageChannelCallBackground
-// Dependencies: [19, 21, 9659, 4478, 1627, 10147, 10148, 4217, 9543, 10149, 2]
+// Dependencies: [19, 21, 9663, 4478, 1627, 10151, 10152, 4217, 9547, 10153, 2]
 // Exports: default
 
-// Module 10146 (StageChannelCallBackground)
+// Module 10150 (StageChannelCallBackground)
 import noopAll from "noop" /* 19 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import componentDidMountDefault from "componentDidMount" /* 9543 */;
-import FocusedControlsHeader from "FocusedControlsHeader" /* 9659 */;
-import useStageActionBarAnimation from "useStageActionBarAnimation" /* 10147 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 10148 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 10149 */;
+import componentDidMountDefault from "componentDidMount" /* 9547 */;
+import FocusedControlsHeader from "FocusedControlsHeader" /* 9663 */;
+import useStageActionBarAnimation from "useStageActionBarAnimation" /* 10151 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 10152 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 10153 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

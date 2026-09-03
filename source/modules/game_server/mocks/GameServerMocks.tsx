@@ -1,12 +1,12 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12284
+// Function ID: 12285
 // Name: items5
-// Dependencies: [4367, 12273, 2]
+// Dependencies: [4367, 12285, 2]
 
-// Module 12272 (items5)
+// Module 12284 (items5)
 import set from "set" /* 2 */;
 import GameServerProviderType from "GameServerProviderType" /* 4367 */;
-import GameServerStatus from "GameServerStatus" /* 12273 */;
+import GameServerStatus from "GameServerStatus" /* 12285 */;
 
 const items = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
 const items1 = [{ id: "1", name: "GameServer #1", cost: 3, specifications: items }, , ];

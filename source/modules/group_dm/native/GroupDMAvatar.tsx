@@ -1,10 +1,10 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10873
+// Function ID: 10874
 // Name: FacepileGroupDMAvatar
-// Dependencies: [19, 17, 1921, 21, 1296, 4478, 8106, 586, 1470, 2]
+// Dependencies: [19, 17, 1921, 21, 1296, 4478, 8109, 586, 1470, 2]
 // Exports: default
 
-// Module 10869 (FacepileGroupDMAvatar)
+// Module 10873 (FacepileGroupDMAvatar)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
@@ -57,7 +57,7 @@ class FacepileGroupDMAvatar {
     }, items1);
     tmp9 = jsxs;
     tmp10 = View;
-    obj1 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: "<string:33555030>", animate: "<string:1358954783>" };
+    obj1 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: 0, animate: "absolute" };
     obj1[3] = memo1;
     obj1[4] = animate;
     if (null == users) {
@@ -71,7 +71,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj3);
     items3 = [, ];
     items3[0] = tmp11(require("Button").Avatar, obj1);
-    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "true" };
+    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Add Friend Modal" };
     obj4[6] = animate;
     if (null == users) {
       obj5 = { source: null };

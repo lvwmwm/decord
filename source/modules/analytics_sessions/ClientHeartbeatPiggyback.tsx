@@ -1,10 +1,10 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7224
+// Function ID: 7225
 // Name: getClientHeartbeatPiggybackProperties
 // Dependencies: [4501, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 7223 (getClientHeartbeatPiggybackProperties)
+// Module 7224 (getClientHeartbeatPiggybackProperties)
 import initializeDefault from "initialize" /* 4501 */;
 
 initializeDefault;

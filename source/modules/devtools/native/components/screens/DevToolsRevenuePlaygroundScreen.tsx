@@ -1,24 +1,24 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15528
+// Function ID: 15529
 // Name: describeServerError
-// Dependencies: [5, 32, 19, 17, 7996, 7413, 1339, 1386, 1980, 1921, 4477, 1923, 21, 706, 644, 527, 4194, 5607, 5614, 6000, 5995, 7210, 1296, 709, 10738, 4478, 7201, 4445, 15515, 2008, 6001, 15518, 11014, 11585, 4723, 15519, 15522, 15526, 15528, 15531, 2]
+// Dependencies: [5, 32, 19, 17, 7999, 7414, 1339, 1386, 1980, 1921, 4477, 1923, 21, 706, 644, 527, 4194, 5608, 5615, 6001, 5996, 7211, 1296, 709, 10742, 4478, 7202, 4445, 15529, 2008, 6002, 15532, 11018, 11590, 4724, 15533, 15536, 15540, 15542, 15545, 2]
 // Exports: default
 
-// Module 15514 (describeServerError)
+// Module 15528 (describeServerError)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import TableRowArrow from "TableRowArrow" /* 5614 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
-import TableSwitchRow from "TableSwitchRow" /* 6001 */;
-import serializePurchaseResponse from "serializePurchaseResponse" /* 11014 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import TableRowArrow from "TableRowArrow" /* 5615 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
+import TableSwitchRow from "TableSwitchRow" /* 6002 */;
+import serializePurchaseResponse from "serializePurchaseResponse" /* 11018 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getCurrentTime" /* 7996 */;
-import closure_8 from "recomputeAffinities" /* 7413 */;
+import closure_7 from "getCurrentTime" /* 7999 */;
+import closure_8 from "recomputeAffinities" /* 7414 */;
 import closure_9 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "handleConnectionOpen" /* 1980 */;
@@ -634,7 +634,7 @@ function FriendAnniversary() {
   return callback3(closure_19, obj9);
 }
 function TrialOfferSheetExample() {
-  let obj = premiumTrialOffer(7201);
+  let obj = premiumTrialOffer(7202);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   obj = {
     label: "Trial Offer Nitro Basic",
@@ -653,9 +653,9 @@ function TrialOfferSheetExample() {
       }
     }
   };
-  items = [closure_17(premiumTrialOffer(5607).TableRow, obj), ];
+  items = [closure_17(premiumTrialOffer(5608).TableRow, obj), ];
   obj = { title: "Trial Offers", hasIcons: false, children: null };
-  items[1] = closure_17(premiumTrialOffer(5607).TableRow, {
+  items[1] = closure_17(premiumTrialOffer(5608).TableRow, {
     label: "Trial Offer Nitro",
     subLabel: "No trial offer in store",
     disabled: null == premiumTrialOffer,
@@ -673,7 +673,7 @@ function TrialOfferSheetExample() {
     }
   });
   obj[2] = items;
-  return closure_18(premiumTrialOffer(6000).TableRowGroup, obj);
+  return closure_18(premiumTrialOffer(6001).TableRowGroup, obj);
 }
 function PremiumToggles() {
   let obj = defaultAreStatesEqual;
@@ -717,10 +717,10 @@ function ForceMockIAP() {
   obj[2] = tmp4;
   obj[3] = result;
   obj[4] = function onValueChange(arg0) {
-    callback(15518).toggle("force_mock_iap", arg0);
+    callback(15532).toggle("force_mock_iap", arg0);
     closure_13.persist();
-    const obj = callback(15518);
-    const result = callback2(11585).checkForUpdateAndReload();
+    const obj = callback(15532);
+    const result = callback2(11590).checkForUpdateAndReload();
   };
   return closure_17(TableRowGroupTitle.TableRowGroup, obj);
 }

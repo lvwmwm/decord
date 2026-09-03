@@ -1,10 +1,10 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16326
+// Function ID: 16327
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 8645, 2]
+// Dependencies: [19, 8649, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 16307 (useICYMIEmptyLoadingAnalytics)
+// Module 16326 (useICYMIEmptyLoadingAnalytics)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

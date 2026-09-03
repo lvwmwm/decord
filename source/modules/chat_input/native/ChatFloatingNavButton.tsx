@@ -1,10 +1,10 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12064
+// Function ID: 12065
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4478, 709, 4217, 4197, 4927, 4931, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4217, 4197, 4928, 4932, 2]
 // Exports: default
 
-// Module 12058 (ChatFloatingNavButton)
+// Module 12064 (ChatFloatingNavButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

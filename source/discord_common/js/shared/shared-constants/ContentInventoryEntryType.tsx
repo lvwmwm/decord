@@ -1,9 +1,9 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8051
+// Function ID: 8052
 // Name: ContentInventoryEntryType
 // Dependencies: [2]
 
-// Module 8048 (ContentInventoryEntryType)
+// Module 8051 (ContentInventoryEntryType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryEntryType.tsx");

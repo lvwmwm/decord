@@ -1,17 +1,17 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 8060
+// Function ID: 8061
 // Name: updateAssets
-// Dependencies: [32, 5, 8058, 673, 38, 3, 527, 706, 1464, 2]
+// Dependencies: [32, 5, 8061, 673, 38, 3, 527, 706, 1464, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8057 (updateAssets)
+// Module 8060 (updateAssets)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import sendRequest from "sendRequest" /* 527 */;
 import handleImageLoad from "handleImageLoad" /* 1464 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8058 */;
+import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8061 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

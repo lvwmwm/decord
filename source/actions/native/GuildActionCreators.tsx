@@ -1,10 +1,10 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17456
+// Function ID: 17457
 // Name: batchChannelUpdate
 // Dependencies: [673, 706, 527, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 17436 (batchChannelUpdate)
+// Module 17456 (batchChannelUpdate)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 527 */;
 import ME from "ME" /* 673 */;

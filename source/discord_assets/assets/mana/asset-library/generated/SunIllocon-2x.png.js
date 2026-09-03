@@ -1,9 +1,9 @@
-// Module ID: 7091
-// Function ID: 7092
+// Module ID: 7092
+// Function ID: 7093
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7091 (metadata)
+// Module 7092 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SunIllocon-2x.png.js");

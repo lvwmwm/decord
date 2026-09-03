@@ -1,10 +1,10 @@
-// Module ID: 11300
-// Function ID: 11301
+// Module ID: 11304
+// Function ID: 11305
 // Name: parseRegisteredExperiments
-// Dependencies: [32, 19, 4391, 4392, 7646, 4399, 7644, 586, 2]
+// Dependencies: [32, 19, 4391, 4392, 7647, 4399, 7645, 586, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11300 (parseRegisteredExperiments)
+// Module 11304 (parseRegisteredExperiments)
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
 import closure_5 from "getHash" /* 4391 */;

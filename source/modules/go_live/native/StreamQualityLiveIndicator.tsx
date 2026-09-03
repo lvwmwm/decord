@@ -1,10 +1,10 @@
-// Module ID: 9600
-// Function ID: 9601
+// Module ID: 9604
+// Function ID: 9605
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 673, 1923, 4542, 21, 4478, 709, 9541, 9183, 5961, 4217, 4479, 1296, 9601, 9602, 695, 8402, 8226, 4139, 5076, 5501, 8224, 2]
+// Dependencies: [19, 17, 673, 1923, 4542, 21, 4478, 709, 9545, 9187, 5962, 4217, 4479, 1296, 9605, 9606, 695, 8406, 8230, 4139, 5077, 5502, 8228, 2]
 // Exports: default
 
-// Module 9600 (StreamQualityLiveIndicator)
+// Module 9604 (StreamQualityLiveIndicator)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

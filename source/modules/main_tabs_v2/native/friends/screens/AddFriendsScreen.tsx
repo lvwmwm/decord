@@ -1,22 +1,22 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16602
+// Function ID: 16603
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 7412, 4130, 1921, 12461, 673, 12440, 21, 4478, 709, 12438, 8664, 4193, 1233, 7513, 12442, 1234, 5961, 5981, 4945, 695, 8911, 644, 12, 4322, 15868, 5967, 5078, 9968, 6056, 10859, 5607, 4195, 5043, 16583, 16584, 16586, 16587, 2]
+// Dependencies: [32, 5, 19, 17, 7413, 4130, 1921, 12473, 673, 12452, 21, 4478, 709, 12450, 8668, 4193, 1233, 7514, 12454, 1234, 5962, 5982, 4946, 695, 8915, 644, 12, 4322, 15884, 5968, 5079, 9972, 6057, 10863, 5608, 4195, 5044, 16603, 16604, 16606, 16607, 2]
 // Exports: default
 
-// Module 16582 (handleFindFriends)
+// Module 16602 (handleFindFriends)
 import ThemesDefault from "Themes" /* 709 */;
-import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 12438 */;
+import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 12450 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "recountRelationshipTypes" /* 7412 */;
+import closure_8 from "recountRelationshipTypes" /* 7413 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { Sections } from "SuggestedFriendSource" /* 12461 */;
+import { Sections } from "SuggestedFriendSource" /* 12473 */;
 import ME from "ME" /* 673 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12440 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12452 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -104,7 +104,7 @@ function _handleShare() {
             obj3[1] = code;
             const intl2 = callback(1233).intl;
             const obj4 = { link: null };
-            obj4[0] = code(7513)(code);
+            obj4[0] = code(7514)(code);
             obj3[2] = intl2.formatToPlainString(callback(1233).t.PJf9P9, obj4);
             obj3[3] = constants.ADD_FRIENDS_MODAL;
             callback(obj3);

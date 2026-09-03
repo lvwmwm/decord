@@ -1,14 +1,14 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9781
+// Function ID: 9782
 // Name: CalendarIcon
-// Dependencies: [19, 21, 709, 4196, 9778, 2]
+// Dependencies: [19, 21, 709, 4196, 9782, 2]
 // Exports: CalendarIcon
 
-// Module 9777 (CalendarIcon)
+// Module 9781 (CalendarIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9778 */;
+import registerAsset from "registerAsset" /* 9782 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

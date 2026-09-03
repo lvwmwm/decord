@@ -1,9 +1,9 @@
-// Module ID: 5498
-// Function ID: 5499
+// Module ID: 5499
+// Function ID: 5500
 // Name: get
 // Dependencies: [586, 12, 4302, 706, 2]
 
-// Module 5498 (get)
+// Module 5499 (get)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

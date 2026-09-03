@@ -1,14 +1,14 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 7107
+// Function ID: 7108
 // Name: TrafficConeSpotIllustration
-// Dependencies: [21, 5501, 7107, 2]
+// Dependencies: [21, 5502, 7108, 2]
 // Exports: TrafficConeSpotIllustration
 
-// Module 7106 (TrafficConeSpotIllustration)
+// Module 7107 (TrafficConeSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7107 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7108 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");

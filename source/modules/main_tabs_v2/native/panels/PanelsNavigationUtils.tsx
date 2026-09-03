@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15842
+// Function ID: 15843
 // Name: convertPortraitToLandscapeScreens
 // Dependencies: [4333, 4332, 1503, 511, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15826 (convertPortraitToLandscapeScreens)
+// Module 15842 (convertPortraitToLandscapeScreens)
 import set from "set" /* 2 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 

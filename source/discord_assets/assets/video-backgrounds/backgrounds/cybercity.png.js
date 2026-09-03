@@ -1,9 +1,9 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9819
+// Function ID: 9820
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9815 (metadata)
+// Module 9819 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/cybercity.png.js");

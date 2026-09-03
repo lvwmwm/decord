@@ -1,15 +1,15 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9242
+// Function ID: 9243
 // Name: CirclePlusIcon
-// Dependencies: [19, 17, 21, 709, 4196, 9239, 9240, 2]
+// Dependencies: [19, 17, 21, 709, 4196, 9243, 9244, 2]
 // Exports: CirclePlusIcon
 
-// Module 9238 (CirclePlusIcon)
+// Module 9242 (CirclePlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9239 */;
-import registerAsset2 from "registerAsset" /* 9240 */;
+import registerAsset from "registerAsset" /* 9243 */;
+import registerAsset2 from "registerAsset" /* 9244 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

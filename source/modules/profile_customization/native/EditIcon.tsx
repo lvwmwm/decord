@@ -1,10 +1,10 @@
-// Module ID: 14489
-// Function ID: 14490
+// Module ID: 14505
+// Function ID: 14506
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4478, 709, 10349, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 10353, 2]
 // Exports: default
 
-// Module 14489 (EditIcon)
+// Module 14505 (EditIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

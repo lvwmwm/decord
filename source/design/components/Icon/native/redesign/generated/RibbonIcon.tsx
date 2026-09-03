@@ -1,14 +1,14 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12890
+// Function ID: 12891
 // Name: RibbonIcon
-// Dependencies: [19, 21, 709, 4196, 12879, 2]
+// Dependencies: [19, 21, 709, 4196, 12891, 2]
 // Exports: RibbonIcon
 
-// Module 12878 (RibbonIcon)
+// Module 12890 (RibbonIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12879 */;
+import registerAsset from "registerAsset" /* 12891 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

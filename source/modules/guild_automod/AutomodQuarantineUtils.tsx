@@ -1,12 +1,12 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11672
+// Function ID: 11673
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 9046, 1215, 1991, 1908, 4120, 4299, 673, 4108, 682, 644, 4126, 1233, 9047, 9048, 6254, 2]
+// Dependencies: [19, 9050, 1215, 1991, 1908, 4120, 4299, 673, 4108, 682, 644, 4126, 1233, 9051, 9052, 6255, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11667 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11672 (useCurrentUserHasAutomodQuarantinedProfile)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "zustandStore" /* 9046 */;
+import closure_3 from "zustandStore" /* 9050 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
@@ -42,7 +42,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (id == null) {
       guildId = closure_1_8.getGuildId();
     }
-    let obj = { nick: "disabled", bio: "Date" };
+    let obj = { nick: "Array", bio: "PX_16" };
     let guild = closure_1_6.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

@@ -1,10 +1,10 @@
-// Module ID: 17426
-// Function ID: 17427
+// Module ID: 17446
+// Function ID: 17447
 // Name: setRoleJustCreated
 // Dependencies: [641, 702, 2]
 // Exports: setRoleJustCreated
 
-// Module 17426 (setRoleJustCreated)
+// Module 17446 (setRoleJustCreated)
 import set from "set" /* 2 */;
 import keys from "keys" /* 641 */;
 

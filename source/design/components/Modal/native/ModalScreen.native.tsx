@@ -1,13 +1,13 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8711
+// Function ID: 8712
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 4478, 709, 5602, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5603, 2]
 // Exports: ModalScreen
 
-// Module 8707 (ModalScreen)
+// Module 8711 (ModalScreen)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

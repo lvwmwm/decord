@@ -1,16 +1,16 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 9786
+// Function ID: 9787
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 1908, 7280, 1392, 21, 4478, 709, 1233, 5961, 5981, 586, 9772, 9783, 9684, 9773, 1627, 9273, 9763, 9784, 5630, 5632, 9786, 9791, 2]
+// Dependencies: [32, 19, 17, 1908, 7281, 1392, 21, 4478, 709, 1233, 5962, 5982, 586, 9776, 9787, 9688, 9777, 1627, 9277, 9767, 9788, 5631, 5633, 9790, 9795, 2]
 // Exports: default
 
-// Module 9782 (GuildScheduledEventDetailsActionSheet)
+// Module 9786 (GuildScheduledEventDetailsActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "scheduledEventSort" /* 7280 */;
+import closure_7 from "scheduledEventSort" /* 7281 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

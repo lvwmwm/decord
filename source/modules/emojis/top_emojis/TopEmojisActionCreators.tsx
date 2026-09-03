@@ -1,10 +1,10 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 9123
+// Function ID: 9124
 // Name: fetchTopEmojis
 // Dependencies: [673, 4317, 706, 527, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9119 (fetchTopEmojis)
+// Module 9123 (fetchTopEmojis)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

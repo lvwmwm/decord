@@ -1,14 +1,14 @@
-// Module ID: 12211
-// Function ID: 12212
-// Dependencies: [5, 17, 12202, 673, 12205, 695, 9670, 10015, 2]
+// Module ID: 12218
+// Function ID: 12219
+// Dependencies: [5, 17, 12209, 673, 12212, 695, 9674, 10019, 2]
 
-// Module 12211
+// Module 12218
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import NativeModulesDefault from "NativeModules" /* 9670 */;
-import createSoundForPack from "createSoundForPack" /* 10015 */;
+import NativeModulesDefault from "NativeModules" /* 9674 */;
+import createSoundForPack from "createSoundForPack" /* 10019 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { PermissionStateType } from "set" /* 12202 */;
+import { PermissionStateType } from "set" /* 12209 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
@@ -29,8 +29,8 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(12205).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(12205);
+    let result = _require(12212).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(12212);
     expandEventPropertiesDefault.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj2 = expandEventPropertiesDefault;
     const permissions = NativeModulesDefault.requestPermissions();

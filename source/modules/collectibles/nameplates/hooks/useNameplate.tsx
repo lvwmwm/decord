@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8924
+// Function ID: 8925
 // Name: useNameplate
 // Dependencies: [19, 1991, 586, 1946, 2]
 // Exports: useNameplate
 
-// Module 8920 (useNameplate)
+// Module 8924 (useNameplate)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "trackCommunicationDisabled" /* 1991 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7595
+// Function ID: 7596
 // Name: _fileSize
-// Dependencies: [5, 673, 4471, 3, 649, 12, 5126, 5131, 5088, 5089, 2]
+// Dependencies: [5, 673, 4471, 3, 649, 12, 5127, 5132, 5089, 5090, 2]
 
-// Module 7594 (_fileSize)
+// Module 7595 (_fileSize)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

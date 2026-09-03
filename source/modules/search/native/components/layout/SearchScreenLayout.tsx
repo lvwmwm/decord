@@ -1,14 +1,14 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16473
+// Function ID: 16474
 // Name: SearchFreezeContainer
-// Dependencies: [19, 17, 12129, 21, 4478, 16341, 586, 16453, 16537, 2]
+// Dependencies: [19, 17, 12135, 21, 4478, 16360, 586, 16474, 16558, 2]
 
-// Module 16452 (SearchFreezeContainer)
-import jsxDefault from "jsx" /* 16341 */;
-import NoSearchResultsScreenDefault from "NoSearchResultsScreen" /* 16453 */;
-import _modDef16537 from "module_16537" /* 16537 */;
+// Module 16473 (SearchFreezeContainer)
+import jsxDefault from "jsx" /* 16360 */;
+import NoSearchResultsScreenDefault from "NoSearchResultsScreen" /* 16474 */;
+import _modDef16558 from "module_16558" /* 16558 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "prototype" /* 12129 */;
+import closure_4 from "prototype" /* 12135 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo((width) => {
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.isAutocompleteVisible(searchContext), items1);
   obj = { children: null };
   obj = { visible: !stateFromStores, containerStyle, children: callback(NoSearchResultsScreenDefault, { searchContext, width: width.width }) };
-  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(_modDef16537, { searchContext }) })];
+  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(_modDef16558, { searchContext }) })];
   obj[0] = items2;
   return callback2(closure_6, obj);
 });

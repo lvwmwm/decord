@@ -1,9 +1,9 @@
-// Module ID: 7170
-// Function ID: 7171
+// Module ID: 7171
+// Function ID: 7172
 // Name: AppleProductIds
 // Dependencies: [2]
 
-// Module 7170 (AppleProductIds)
+// Module 7171 (AppleProductIds)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AppleProductIds.tsx");

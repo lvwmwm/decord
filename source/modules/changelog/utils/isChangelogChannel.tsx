@@ -1,10 +1,10 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8664
+// Function ID: 8665
 // Name: isChangelogChannel
 // Dependencies: [1386, 1979, 2]
 // Exports: default
 
-// Module 8660 (isChangelogChannel)
+// Module 8664 (isChangelogChannel)
 import closure_0 from "ensureGuildLoaded" /* 1386 */;
 import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY" /* 1979 */;
 

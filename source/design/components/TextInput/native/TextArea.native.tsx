@@ -1,12 +1,12 @@
-// Module ID: 7817
-// Function ID: 7818
+// Module ID: 7820
+// Function ID: 7821
 // Name: TextArea
-// Dependencies: [109, 19, 21, 4206, 7715, 7818, 2]
+// Dependencies: [109, 19, 21, 4206, 7718, 7821, 2]
 
-// Module 7817 (TextArea)
+// Module 7820 (TextArea)
 import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4206 */;
-import Input from "Input" /* 7715 */;
-import TextAreaField from "TextAreaField" /* 7818 */;
+import Input from "Input" /* 7718 */;
+import TextAreaField from "TextAreaField" /* 7821 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

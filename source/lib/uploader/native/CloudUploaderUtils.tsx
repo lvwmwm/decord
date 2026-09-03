@@ -1,10 +1,10 @@
-// Module ID: 5125
-// Function ID: 5126
+// Module ID: 5126
+// Function ID: 5127
 // Name: getUploadPayload
-// Dependencies: [1995, 1215, 703, 5082, 12, 695, 2]
+// Dependencies: [1995, 1215, 703, 5083, 12, 695, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 5125 (getUploadPayload)
+// Module 5126 (getUploadPayload)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_3 from "_getSystemLocale" /* 1995 */;
@@ -13,7 +13,7 @@ import closure_5 from "refreshSourceMapCookie" /* 703 */;
 
 const require = arg1;
 function getUploadPayload(c0) {
-  const obj = { filename: c0.filename, file_size: c0.currentSize, id: applyDefault.uniqueId(), original_content_type: "Array" };
+  const obj = { filename: c0.filename, file_size: c0.currentSize, id: applyDefault.uniqueId(), original_content_type: "PX_16" };
   return obj;
 }
 let result = require("set").fileFinishedImporting("lib/uploader/native/CloudUploaderUtils.tsx");

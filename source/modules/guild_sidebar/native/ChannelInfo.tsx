@@ -1,16 +1,16 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16063
+// Function ID: 16064
 // Name: LimitAndDurationInfo
-// Dependencies: [19, 7286, 1908, 4120, 4493, 4497, 673, 21, 4478, 586, 11854, 7638, 16048, 16049, 4667, 1296, 16051, 16052, 15938, 5369, 12084, 15939, 16053, 9413, 2]
+// Dependencies: [19, 7287, 1908, 4120, 4493, 4497, 673, 21, 4478, 586, 11860, 7639, 16064, 16065, 4667, 1296, 16067, 16068, 15954, 5370, 12090, 15955, 16069, 9417, 2]
 // Exports: default
 
-// Module 16047 (LimitAndDurationInfo)
+// Module 16063 (LimitAndDurationInfo)
 import noopAll from "noop" /* 19 */;
-import ActiveTimestamp from "ActiveTimestamp" /* 9413 */;
-import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11854 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 16048 */;
-import useStartTime from "useStartTime" /* 16053 */;
-import closure_3 from "guildHasCommunity" /* 7286 */;
+import ActiveTimestamp from "ActiveTimestamp" /* 9417 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11860 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 16064 */;
+import useStartTime from "useStartTime" /* 16069 */;
+import closure_3 from "guildHasCommunity" /* 7287 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_6 from "generateOldThreadCutoff" /* 4493 */;
@@ -50,7 +50,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj[1] = hasVideo;
     obj[2] = channel;
-    let tmp6Result = tmp6(channel(15939).ConnectedUserLimit, obj);
+    let tmp6Result = tmp6(channel(15955).ConnectedUserLimit, obj);
   } else {
     obj1 = { channel: null };
     obj1[0] = channel;
@@ -86,7 +86,7 @@ export default function ChannelInfo(channel) {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: closure_1_4.getGuild(channel.guild_id), mentionsCount: closure_1_6.getMentionCount(channel.id), isMentionLowImportance: closure_1_6.getIsMentionLowImportance(channel.id), isNewChannel: closure_1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
   const tmp5 = useEmbeddedAppsDefault(channel);
-  obj1 = channel(7638);
+  obj1 = channel(7639);
   const postsWithUnreadsCount = obj1.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     obj = { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null };
@@ -99,9 +99,9 @@ export default function ChannelInfo(channel) {
     }
     obj[3] = tmp18;
     obj[4] = muted;
-    let tmp11Result = jsx(tmp4(16049), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
+    let tmp11Result = jsx(tmp4(16065), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
     const tmp16 = jsx;
-    const tmp4Result = tmp4(16049);
+    const tmp4Result = tmp4(16065);
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -120,12 +120,12 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        tmpResult = tmp(16051);
+        tmpResult = tmp(16067);
         if (tmpResult.showChannelItemEmbeddedActivities(tmp5)) {
           obj = { embeddedApps: null, muted: null };
           obj[0] = tmp5;
           obj[1] = muted;
-          tmp11Result = jsx(tmp4(16052), { embeddedApps: null, muted: null });
+          tmp11Result = jsx(tmp4(16068), { embeddedApps: null, muted: null });
         }
       }
     }
@@ -134,7 +134,7 @@ export default function ChannelInfo(channel) {
         if (isSubscriptionGated) {
           obj1 = { locked: null };
           obj1[0] = needSubscriptionToAccess;
-          tmp11Result = jsx(tmp4(15938), { locked: null });
+          tmp11Result = jsx(tmp4(15954), { locked: null });
         }
       }
     }

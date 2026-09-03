@@ -1,20 +1,20 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13070
+// Function ID: 13071
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 6132, 6136, 1386, 4735, 8646, 673, 21, 7850, 8044, 4478, 8603, 8794, 709, 586, 11171, 1233, 11, 13059, 11367, 11110, 7518, 11404, 5660, 11684, 11425, 4489, 2]
+// Dependencies: [32, 19, 17, 6133, 6137, 1386, 4736, 8650, 673, 21, 7853, 8047, 4478, 8607, 8798, 709, 586, 11175, 1233, 11, 13071, 11372, 11114, 7519, 11409, 5661, 11696, 11430, 4489, 2]
 // Exports: default
 
-// Module 13058 (MeasureMessage)
+// Module 13070 (MeasureMessage)
 import ThemesDefault from "Themes" /* 709 */;
-import setOptionsDefault from "setOptions" /* 7850 */;
+import setOptionsDefault from "setOptions" /* 7853 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 6132 */;
-import closure_8 from "handleReaction" /* 6136 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 6133 */;
+import closure_8 from "handleReaction" /* 6137 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import closure_10 from "reinjectEphemerals" /* 4735 */;
-import closure_11 from "messages" /* 8646 */;
+import closure_10 from "reinjectEphemerals" /* 4736 */;
+import closure_11 from "messages" /* 8650 */;
 import { ThemeTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -308,7 +308,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "abiti", message: "camice", messageChannel: "camice bianco", selectedChannelId: "camice da laboratorio", tapLinkData: "dottore" };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "BuyNitroPurchaseFlow", message: "absolute", messageChannel: null, selectedChannelId: "call", tapLinkData: "diversity" };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

@@ -1,13 +1,13 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14861
+// Function ID: 14862
 // Name: BountyVideoEndAppStoreProvider
-// Dependencies: [19, 5395, 21, 14847, 11309, 11306, 14845, 5400, 7483, 4479, 4482, 7473, 7456, 11317, 2]
+// Dependencies: [19, 5396, 21, 14862, 11313, 11310, 14860, 5401, 7484, 4479, 4482, 7474, 7457, 11321, 2]
 // Exports: BountyVideoEndAppStoreProvider, canUseBountyVideoEndAppStoreOverlay, useBountyVideoEndAppStoreContext, useBountyVideoEndAppStoreOverlay
 
-// Module 14846 (BountyVideoEndAppStoreProvider)
-import canOpenCustomAppStoreOverlayFromCta from "canOpenCustomAppStoreOverlayFromCta" /* 14847 */;
+// Module 14861 (BountyVideoEndAppStoreProvider)
+import canOpenCustomAppStoreOverlayFromCta from "canOpenCustomAppStoreOverlayFromCta" /* 14862 */;
 import importAllResult from "noop" /* 19 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5395 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5396 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -23,11 +23,11 @@ export const useBountyVideoEndAppStoreContext = function useBountyVideoEndAppSto
 export const canUseBountyVideoEndAppStoreOverlay = function canUseBountyVideoEndAppStoreOverlay(bounty, scrollAffordanceVariant) {
   if ("auto" !== scrollAffordanceVariant) {
     if (obj2.canOpenCustomAppStoreOverlayFromCta(bounty.cta)) {
-      const CustomAppStoreSqueezeBackExperiment = tmp6(11309).CustomAppStoreSqueezeBackExperiment;
+      const CustomAppStoreSqueezeBackExperiment = tmp6(11313).CustomAppStoreSqueezeBackExperiment;
       const obj = { location: null };
       obj[0] = QuestsExperimentLocations.VIDEO_MODAL_MOBILE;
       const config = CustomAppStoreSqueezeBackExperiment.getConfig(obj);
-      return config.enabled && tmp4 === tmp6(11309).BountiesCtrExperiment1Variant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;
+      return config.enabled && tmp4 === tmp6(11313).BountiesCtrExperiment1Variant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;
     }
     obj2 = canOpenCustomAppStoreOverlayFromCta;
   }

@@ -1,10 +1,10 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8714
+// Function ID: 8715
 // Name: withTimeout
 // Dependencies: [5, 3, 641, 4444, 1234, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy, useAgeVerificationCustomTabCopy, useIsAgeVerificationCustomTabOpen
 
-// Module 8710 (withTimeout)
+// Module 8714 (withTimeout)
 import timestampDefault from "timestamp" /* 3 */;
 import enforcingDefault from "enforcing" /* 4444 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

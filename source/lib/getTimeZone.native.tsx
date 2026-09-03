@@ -1,10 +1,10 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17116
+// Function ID: 17117
 // Name: getTimeZone
 // Dependencies: [4457, 2]
 // Exports: default
 
-// Module 17096 (getTimeZone)
+// Module 17116 (getTimeZone)
 import set from "set" /* 2 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 

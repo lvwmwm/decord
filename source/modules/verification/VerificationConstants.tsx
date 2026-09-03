@@ -1,9 +1,9 @@
-// Module ID: 7700
-// Function ID: 7701
+// Module ID: 7703
+// Function ID: 7704
 // Name: ChangeEmailReasons
 // Dependencies: [2]
 
-// Module 7700 (ChangeEmailReasons)
+// Module 7703 (ChangeEmailReasons)
 import set from "set" /* 2 */;
 
 const obj = { DISCORD_EMPLOYEE_ASKED_ME_TO: 0, [0]: "DISCORD_EMPLOYEE_ASKED_ME_TO", SOMEONE_ASKED_ME_TO: 1, [1]: "SOMEONE_ASKED_ME_TO", NEW_EMAIL: 2, [2]: "NEW_EMAIL", SOMETHING_ELSE: 3, [3]: "SOMETHING_ELSE" };

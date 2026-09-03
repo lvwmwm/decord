@@ -1,16 +1,16 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15249
+// Function ID: 15250
 // Name: useValue
-// Dependencies: [4470, 7893, 586, 14315, 11288, 1233, 2758, 2]
+// Dependencies: [4470, 7896, 586, 14331, 11292, 1233, 2758, 2]
 // Exports: onValueChange, useValue
 
-// Module 15234 (useValue)
+// Module 15249 (useValue)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2758 */;
-import setFontSize from "setFontSize" /* 14315 */;
+import setFontSize from "setFontSize" /* 14331 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import createToggle from "createToggle" /* 11288 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 function useValue() {

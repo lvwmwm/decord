@@ -1,8 +1,8 @@
-// Module ID: 9370
-// Function ID: 9371
-// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 8153, 9052, 5079, 8591, 5562, 4474, 1233, 4479, 4482, 5543, 4940, 688, 2]
+// Module ID: 9374
+// Function ID: 9375
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 8157, 9056, 5080, 8595, 5563, 4474, 1233, 4479, 4482, 5544, 4941, 688, 2]
 
-// Module 9370
+// Module 9374
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let isScreenLandscape;
   closure_18 = undefined;
   let tmp = callback();
-  let obj = sharedValue(8153);
+  let obj = sharedValue(8157);
   obj1 = importAllResult;
   const ref = importAllResult.useRef(null);
   sharedValue = ref;
@@ -68,9 +68,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   fn.__workletHash = 23826674246;
   fn.__initData = closure_13;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj4 = sharedValue(8153);
+  let obj4 = sharedValue(8157);
   const sectionName = obj4.getSectionName(application);
-  let obj5 = sharedValue(8153);
+  let obj5 = sharedValue(8157);
   str = obj5.getSectionDescription(application);
   let tmp28Result1 = null != str;
   if (tmp28Result1) {
@@ -93,14 +93,14 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = obj1.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = sharedValue(9052).parseBioReactWithCachedAST(tmp);
-      const obj = sharedValue(9052);
+      result = sharedValue(9056).parseBioReactWithCachedAST(tmp);
+      const obj = sharedValue(9056);
     }
     return result;
   }, items);
   const tmp6Result1 = first1(obj1.useState(false), 2);
-  isScreenLandscape = sharedValue(5079).useIsScreenLandscape();
-  const tmp24 = first(8591)(isScreenLandscape);
+  isScreenLandscape = sharedValue(5080).useIsScreenLandscape();
+  const tmp24 = first(8595)(isScreenLandscape);
   closure_18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj1.useEffect(() => {
@@ -111,7 +111,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     }
   }, items1);
   let tmp27 = first;
-  const tmp2Result = sharedValue(5079);
+  const tmp2Result = sharedValue(5080);
   if (first) {
     tmp27 = !first1;
   }
@@ -190,7 +190,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     const obj6 = { style: null };
     const absoluteFill = str.absoluteFill;
-    let tmp23Result = tmp23(5543);
+    let tmp23Result = tmp23(5544);
     if (tmp27) {
       const obj7 = { style: null, children: null };
       obj7[0] = absoluteFill;
@@ -209,7 +209,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       obj10[0] = tmp.maskFill;
       const items8 = [tmp30(tmp31, obj10), , ];
       const obj11 = { start: null, end: null, colors: null, style: null };
-      tmp23Result = tmp23(4940);
+      tmp23Result = tmp23(4941);
       obj11[0] = tmp2(688).HorizontalGradient.START;
       obj11[1] = tmp2(688).HorizontalGradient.END;
       obj11[2] = closure_11;

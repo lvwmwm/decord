@@ -1,10 +1,10 @@
-// Module ID: 7913
-// Function ID: 7914
+// Module ID: 7916
+// Function ID: 7917
 // Name: getApplicationSubscriptionSystemMessageASTContent
 // Dependencies: [1233, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7913 (getApplicationSubscriptionSystemMessageASTContent)
+// Module 7916 (getApplicationSubscriptionSystemMessageASTContent)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 

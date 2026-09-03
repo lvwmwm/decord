@@ -1,16 +1,16 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 16956
+// Function ID: 16957
 // Name: handleAudioRouteChanged
-// Dependencies: [17, 9797, 1386, 4554, 16937, 9798, 586, 706, 2]
+// Dependencies: [17, 9801, 1386, 4554, 16957, 9802, 586, 706, 2]
 
-// Module 16936 (handleAudioRouteChanged)
+// Module 16956 (handleAudioRouteChanged)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import RouteTypes from "RouteTypes" /* 9798 */;
-import apexExperimentDefault from "apexExperiment" /* 16937 */;
-import closure_4 from "handleAudioRouteChanged" /* 9797 */;
+import RouteTypes from "RouteTypes" /* 9802 */;
+import apexExperimentDefault from "apexExperiment" /* 16957 */;
+import closure_4 from "handleAudioRouteChanged" /* 9801 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "createRTCConnection" /* 4554 */;
 
@@ -19,9 +19,9 @@ function handleAudioRouteChanged() {
     currentRouteType = currentRouteType.getCurrentRouteType();
     let flag2 = currentRouteType !== RouteTypes.RouteTypes.UNKNOWN;
     if (flag2) {
-      if (currentRouteType !== tmp3(9798).RouteTypes.SPEAKER) {
-        if (currentRouteType !== tmp3(9798).RouteTypes.BLUETOOTH) {
-          if (currentRouteType !== tmp3(9798).RouteTypes.WIRED) {
+      if (currentRouteType !== tmp3(9802).RouteTypes.SPEAKER) {
+        if (currentRouteType !== tmp3(9802).RouteTypes.BLUETOOTH) {
+          if (currentRouteType !== tmp3(9802).RouteTypes.WIRED) {
             const AudioRoutePicker = NativeModules.AudioRoutePicker;
             if (AudioRoutePicker != null) {
               AudioRoutePicker.toggleSpeaker(true);

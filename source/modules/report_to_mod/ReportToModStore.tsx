@@ -1,9 +1,9 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11470
+// Function ID: 11471
 // Name: handleSelectedGuildChange
 // Dependencies: [4299, 586, 706, 2]
 
-// Module 11465 (handleSelectedGuildChange)
+// Module 11470 (handleSelectedGuildChange)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "handleConnectionOpen" /* 4299 */;

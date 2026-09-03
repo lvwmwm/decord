@@ -1,10 +1,10 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 10047
+// Function ID: 10048
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 1215, 586, 4668, 5374, 8697, 8699, 8684, 2]
+// Dependencies: [32, 19, 1215, 586, 4668, 5375, 8701, 8703, 8688, 2]
 // Exports: default
 
-// Module 10043 (useToggleRequestToSpeak)
+// Module 10047 (useToggleRequestToSpeak)
 import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4668 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

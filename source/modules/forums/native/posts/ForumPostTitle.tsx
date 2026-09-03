@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11817
+// Function ID: 11818
 // Name: ForumPostTitle
 // Dependencies: [19, 21, 4478, 1235, 4474, 2]
 // Exports: default
 
-// Module 11811 (ForumPostTitle)
+// Module 11817 (ForumPostTitle)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
 import { jsx } from "jsxProd" /* 21 */;

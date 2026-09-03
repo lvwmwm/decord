@@ -1,13 +1,13 @@
-// Module ID: 8389
-// Function ID: 8390
+// Module ID: 8393
+// Function ID: 8394
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4478, 5606, 5609, 4474, 8390, 5600, 2]
+// Dependencies: [19, 17, 21, 4478, 5607, 5610, 4474, 8394, 5601, 2]
 // Exports: default
 
-// Module 8389 (FormSliderRow)
-import _modDef5600 from "module_5600" /* 5600 */;
-import context2 from "context" /* 5606 */;
-import _modDef8390 from "module_8390" /* 8390 */;
+// Module 8393 (FormSliderRow)
+import _modDef5601 from "module_5601" /* 5601 */;
+import context2 from "context" /* 5607 */;
+import _modDef8394 from "module_8394" /* 8394 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -35,22 +35,22 @@ export default function FormSliderRow(arg0) {
     const obj2 = {};
     const merged1 = Object.assign(merged);
     obj2.style = tmp5.slider;
-    items1[1] = callback(_modDef8390, obj2);
+    items1[1] = callback(_modDef8394, obj2);
     obj[0] = items1;
-    let tmp6Result = tmp6(tmp2(5609).Card, obj);
-    const tmp18 = _modDef8390;
+    let tmp6Result = tmp6(tmp2(5610).Card, obj);
+    const tmp18 = _modDef8394;
   } else {
     obj = { children: null };
     const obj3 = { label: null, trailing: null };
     obj3[0] = label;
     obj3[1] = trailing;
-    const items2 = [callback(_modDef5600, obj3), ];
+    const items2 = [callback(_modDef5601, obj3), ];
     const obj4 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(_modDef8390, obj4);
+    items2[1] = callback(_modDef8394, obj4);
     obj[0] = items2;
     tmp6Result = tmp6(closure_7, obj);
-    const tmp10 = _modDef8390;
+    const tmp10 = _modDef8394;
   }
   return tmp6Result;
 };

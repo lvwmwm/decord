@@ -1,10 +1,10 @@
-// Module ID: 7577
-// Function ID: 7578
+// Module ID: 7578
+// Function ID: 7579
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4478, 709, 4445, 7578, 1233, 5630, 7538, 7579, 7517, 1296, 4474, 4928, 4298, 1372, 7577, 2008, 706, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4445, 7579, 1233, 5631, 7539, 7580, 7518, 1296, 4474, 4929, 4298, 1372, 7578, 2008, 706, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7577 (onDismiss)
+// Module 7578 (onDismiss)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -12,12 +12,12 @@ import Button from "Button" /* 1296 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import Text from "Text" /* 4474 */;
-import Button2 from "Button" /* 4928 */;
-import Background from "Background" /* 5630 */;
-import ReactionTypes from "ReactionTypes" /* 7517 */;
-import _generateAnimationSource from "_generateAnimationSource" /* 7538 */;
-import getDeviceSpecificString from "getDeviceSpecificString" /* 7578 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7579 */;
+import Button2 from "Button" /* 4929 */;
+import Background from "Background" /* 5631 */;
+import ReactionTypes from "ReactionTypes" /* 7518 */;
+import _generateAnimationSource from "_generateAnimationSource" /* 7539 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 7579 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7580 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -96,7 +96,7 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(2008)(7577, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    tmpResult.openLazy(tmp4(2008)(7578, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
     const tmp4Result = tmp4(4298);
   }
 };

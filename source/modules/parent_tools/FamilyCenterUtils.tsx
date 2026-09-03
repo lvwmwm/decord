@@ -1,16 +1,16 @@
-// Module ID: 7347
-// Function ID: 7348
+// Module ID: 7348
+// Function ID: 7349
 // Name: getEmptyActivityFormatter
-// Dependencies: [7291, 7292, 1233, 2368, 4074, 7293, 2]
+// Dependencies: [7292, 7293, 1233, 2368, 4074, 7294, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 7347 (getEmptyActivityFormatter)
+// Module 7348 (getEmptyActivityFormatter)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import hooksDefault from "hooks" /* 4074 */;
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7293 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7291 */;
-import items from "items" /* 7292 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7294 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7292 */;
+import items from "items" /* 7293 */;
 
 require = arg1;
 ({ ACTION_TO_TEXT: c4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: c5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: error, UserLinkStatus: closure_8, UserLinkType: c9 } = items);

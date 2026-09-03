@@ -1,12 +1,12 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11922
+// Function ID: 11923
 // Name: useSortApplicationsViaFrecency
-// Dependencies: [19, 8155, 682, 1369, 586, 11, 7275, 2]
+// Dependencies: [19, 8159, 682, 1369, 586, 11, 7276, 2]
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11916 (useSortApplicationsViaFrecency)
+// Module 11922 (useSortApplicationsViaFrecency)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 8155 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 8159 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 10160
-// Function ID: 10161
-// Dependencies: [19, 17, 21, 4478, 10152, 5376, 5079, 10161, 10151, 2]
+// Module ID: 10164
+// Function ID: 10165
+// Dependencies: [19, 17, 21, 4478, 10156, 5377, 5080, 10165, 10155, 2]
 
-// Module 10160
-import getIsScreenLandscape from "getIsScreenLandscape" /* 5079 */;
+// Module 10164
+import getIsScreenLandscape from "getIsScreenLandscape" /* 5080 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -22,11 +22,11 @@ const memoResult = importAllResult.memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10152).StageTileSize.FULL;
+    THIRD = tmp2(10156).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10152).StageTileSize.HALF;
+    THIRD = tmp2(10156).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10152).StageTileSize.THIRD;
+    THIRD = tmp2(10156).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {

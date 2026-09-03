@@ -1,22 +1,22 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15040
+// Function ID: 15041
 // Name: EnrolledBodyWatchTask
-// Dependencies: [5, 19, 17, 7458, 14920, 5395, 14922, 21, 4478, 709, 14926, 14923, 8584, 14918, 14951, 5398, 14948, 14947, 14949, 14929, 1627, 7479, 2]
+// Dependencies: [5, 19, 17, 7459, 14935, 5396, 14937, 21, 4478, 709, 14941, 14938, 8588, 14933, 14966, 5399, 14963, 14962, 14964, 14944, 1627, 7480, 2]
 
-// Module 15025 (EnrolledBodyWatchTask)
+// Module 15040 (EnrolledBodyWatchTask)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5398 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 14947 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14948 */;
-import useQuestRewardClaimHandlerDefault from "useQuestRewardClaimHandler" /* 14949 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5399 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 14962 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14963 */;
+import useQuestRewardClaimHandlerDefault from "useQuestRewardClaimHandler" /* 14964 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initializeState" /* 7458 */;
-import closure_7 from "QuestDockMode" /* 14920 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5395 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
+import closure_6 from "initializeState" /* 7459 */;
+import closure_7 from "QuestDockMode" /* 14935 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5396 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -200,9 +200,9 @@ let closure_15 = createCacheKey.createStyles(obj);
 let obj2 = { marginTop: ThemesDefault.space.PX_16 };
 let obj3 = { marginLeft: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, marginRight: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 const memoResult = importAllResult.memo(function QuestDockEnrolledBody() {
-  let obj = minExpandedContentHeight(14929);
+  let obj = minExpandedContentHeight(14944);
   const questDockQuest = obj.useQuestDockQuest();
-  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14923).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14938).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const items1 = [minExpandedContentHeight];
   const callback = importAllResult.useCallback((nativeEvent) => {

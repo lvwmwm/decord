@@ -1,14 +1,14 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 7009
+// Function ID: 7010
 // Name: SeverHubAbstractUI
-// Dependencies: [21, 5501, 7009, 2]
+// Dependencies: [21, 5502, 7010, 2]
 // Exports: SeverHubAbstractUI
 
-// Module 7008 (SeverHubAbstractUI)
+// Module 7009 (SeverHubAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7009 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7010 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SeverHubAbstractUI.native.tsx");

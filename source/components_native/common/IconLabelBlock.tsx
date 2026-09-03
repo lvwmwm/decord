@@ -1,14 +1,14 @@
-// Module ID: 16666
-// Function ID: 16667
+// Module ID: 16686
+// Function ID: 16687
 // Name: renderLabel
-// Dependencies: [109, 19, 17, 21, 4478, 709, 4204, 1296, 4474, 10886, 1362, 2]
+// Dependencies: [109, 19, 17, 21, 4478, 709, 4204, 1296, 4474, 10890, 1362, 2]
 
-// Module 16666 (renderLabel)
+// Module 16686 (renderLabel)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import Text from "Text" /* 4474 */;
-import IconUploaderDefault from "IconUploader" /* 10886 */;
+import IconUploaderDefault from "IconUploader" /* 10890 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

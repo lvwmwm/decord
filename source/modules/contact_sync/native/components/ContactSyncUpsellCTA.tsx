@@ -1,11 +1,11 @@
-// Module ID: 13819
-// Function ID: 13820
-// Dependencies: [19, 12441, 673, 21, 4478, 709, 8372, 695, 12438, 5994, 1233, 13820, 2]
+// Module ID: 13835
+// Function ID: 13836
+// Dependencies: [19, 12453, 673, 21, 4478, 709, 8376, 695, 12450, 5995, 1233, 13836, 2]
 
-// Module 13819
+// Module 13835
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 13820 */;
-import { dismissUpsellCTA } from "setStoredContacts" /* 12441 */;
+import registerAssetDefault from "registerAsset" /* 13836 */;
+import { dismissUpsellCTA } from "setStoredContacts" /* 12453 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5994);
+      let obj = location(5995);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1233).intl;
@@ -58,7 +58,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
   obj[4] = intl.string(location(1233).t.T6Rfd9);
   const intl2 = location(1233).intl;
   obj[5] = intl2.string(location(1233).t.c6KIpg);
-  return jsx(location(8372).FormCTA, {
+  return jsx(location(8376).FormCTA, {
     onPress() {
       let obj = closure_1_1(closure_1_2[7]);
       obj = { type: closure_1_5.CONTACT_SYNC_MODAL, location: null };
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5994);
+      let obj = location(5995);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1233).intl;

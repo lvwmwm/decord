@@ -1,10 +1,10 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 16623
+// Function ID: 16624
 // Name: CoachmarkImg
-// Dependencies: [19, 1383, 21, 4478, 1296, 709, 1233, 8987, 2]
+// Dependencies: [19, 1383, 21, 4478, 1296, 709, 1233, 8991, 2]
 // Exports: default
 
-// Module 16603 (CoachmarkImg)
+// Module 16623 (CoachmarkImg)
 import Button from "Button" /* 1296 */;
 import closure_3 from "noop" /* 19 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;

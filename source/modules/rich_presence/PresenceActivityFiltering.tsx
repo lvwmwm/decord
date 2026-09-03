@@ -1,10 +1,10 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9454
+// Function ID: 9455
 // Name: doesGameHaveRichPresence
 // Dependencies: [4519, 1954, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 9450 (doesGameHaveRichPresence)
+// Module 9454 (doesGameHaveRichPresence)
 import closure_2 from "addApplication" /* 4519 */;
 
 const require = arg1;

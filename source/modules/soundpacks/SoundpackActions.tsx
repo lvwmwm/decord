@@ -1,13 +1,13 @@
-// Module ID: 17199
-// Function ID: 17200
+// Module ID: 17219
+// Function ID: 17220
 // Name: setSoundpack
-// Dependencies: [10016, 673, 695, 706, 2]
+// Dependencies: [10020, 673, 695, 706, 2]
 // Exports: setSoundpack
 
-// Module 17199 (setSoundpack)
+// Module 17219 (setSoundpack)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "Soundpacks" /* 10016 */;
+import closure_2 from "Soundpacks" /* 10020 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/soundpacks/SoundpackActions.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 9797
+// Function ID: 9798
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 8947, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 8951, 2]
 // Exports: default
 
-// Module 9793 (DiscordTag)
+// Module 9797 (DiscordTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import getBotLabelDefault from "getBotLabel" /* 8947 */;
+import getBotLabelDefault from "getBotLabel" /* 8951 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

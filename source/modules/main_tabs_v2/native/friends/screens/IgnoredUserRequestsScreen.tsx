@@ -1,14 +1,14 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16616
+// Function ID: 16617
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4130, 1921, 10853, 673, 21, 5961, 5981, 586, 16594, 8911, 10859, 2]
+// Dependencies: [19, 4130, 1921, 10857, 673, 21, 5962, 5982, 586, 16614, 8915, 10863, 2]
 // Exports: default
 
-// Module 16596 (IgnoredUserRequestsScreen)
+// Module 16616 (IgnoredUserRequestsScreen)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { UserRowModes } from "UserRowModes" /* 10853 */;
+import { UserRowModes } from "UserRowModes" /* 10857 */;
 import { RelationshipTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 5613
-// Function ID: 5614
+// Module ID: 5614
+// Function ID: 5615
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4478, 709, 4930, 2]
+// Dependencies: [109, 19, 17, 21, 4478, 709, 4931, 2]
 // Exports: TableRowIcon
 
-// Module 5613 (TableRowIcon)
+// Module 5614 (TableRowIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import IconSizes from "IconSizes" /* 4930 */;
-import IconSizesDefault from "IconSizes" /* 4930 */;
+import IconSizes from "IconSizes" /* 4931 */;
+import IconSizesDefault from "IconSizes" /* 4931 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

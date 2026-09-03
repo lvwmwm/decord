@@ -1,9 +1,9 @@
-// Module ID: 8576
-// Function ID: 8577
+// Module ID: 8580
+// Function ID: 8581
 // Name: LEGACY_BADGE_ID_MAP
 // Dependencies: [2]
 
-// Module 8576 (LEGACY_BADGE_ID_MAP)
+// Module 8580 (LEGACY_BADGE_ID_MAP)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/LegacyBadgeIdMap.tsx");

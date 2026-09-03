@@ -1,14 +1,14 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15130
+// Function ID: 15131
 // Name: ChannelRowItem
-// Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 10869, 4474, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 10873, 4474, 2]
 // Exports: default
 
-// Module 15115 (ChannelRowItem)
+// Module 15130 (ChannelRowItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button2 from "Button" /* 1296 */;
-import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10869 */;
+import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10873 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { StatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 16814
-// Function ID: 16815
+// Module ID: 16834
+// Function ID: 16835
 // Name: getIsOnMainSurface
 // Dependencies: [32, 19, 4333, 2]
 // Exports: useIsOnMainSurface
 
-// Module 16814 (getIsOnMainSurface)
+// Module 16834 (getIsOnMainSurface)
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;

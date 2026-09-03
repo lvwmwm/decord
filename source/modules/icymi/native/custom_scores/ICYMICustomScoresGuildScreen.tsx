@@ -1,19 +1,19 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16295
+// Function ID: 16296
 // Name: ICYMICustomScoreChannelRow
-// Dependencies: [32, 19, 17, 7279, 1386, 1908, 4701, 8621, 21, 4478, 709, 586, 4674, 8636, 1233, 4445, 16277, 2008, 4981, 5607, 1296, 10250, 4474, 7282, 1627, 16278, 8949, 8113, 2]
+// Dependencies: [32, 19, 17, 7280, 1386, 1908, 4702, 8625, 21, 4478, 709, 586, 4674, 8640, 1233, 4445, 16296, 2008, 4982, 5608, 1296, 10254, 4474, 7283, 1627, 16297, 8953, 8116, 2]
 // Exports: default
 
-// Module 16276 (ICYMICustomScoreChannelRow)
+// Module 16295 (ICYMICustomScoreChannelRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleReset" /* 7279 */;
+import closure_6 from "handleReset" /* 7280 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_10 from "filterStaffGuild" /* 8621 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_10 from "filterStaffGuild" /* 8625 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -165,7 +165,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   let tmp2Result = tmp2(586);
   const items2 = [closure_10];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => closure_1_10.getCustomGuildScore(guildId));
-  tmp2Result = tmp2(8636);
+  tmp2Result = tmp2(8640);
   const numberToCustomScoreResult = tmp2Result.numberToCustomScore(stateFromStores1);
   React = numberToCustomScoreResult;
   const items3 = [closure_6];
@@ -318,6 +318,6 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   obj[2] = callback;
   obj[3] = memo;
   obj[4] = keyExtractor;
-  obj[1] = callback(navigation(8113).AnimatedFlashList, obj);
+  obj[1] = callback(navigation(8116).AnimatedFlashList, obj);
   return callback(guildChannels, obj);
 };

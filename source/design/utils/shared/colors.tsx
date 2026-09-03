@@ -1,10 +1,10 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8111
+// Function ID: 8112
 // Name: flattenColorOverOpaqueBackground
 // Dependencies: [686, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 8108 (flattenColorOverOpaqueBackground)
+// Module 8111 (flattenColorOverOpaqueBackground)
 import set from "set" /* 2 */;
 import nDefault from "n" /* 686 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5393
-// Function ID: 5394
+// Module ID: 5394
+// Function ID: 5395
 // Name: NOOP
-// Dependencies: [32, 5394, 5409, 4965, 5451, 5452, 5456, 4122, 1390, 1985, 1934, 1386, 5459, 1981, 1991, 1984, 1908, 4735, 4120, 4569, 4130, 1980, 4299, 1921, 4527, 673, 5460, 1393, 3, 5461, 1425, 4465, 5462, 1901, 4322, 5463, 5220, 12, 1990, 1470, 5464, 4125, 4674, 1233, 11, 6184, 4166, 6187, 6077, 6188, 6189, 1369, 6190, 6191, 4971, 6196, 2]
+// Dependencies: [32, 5395, 5410, 4966, 5452, 5453, 5457, 4122, 1390, 1985, 1934, 1386, 5460, 1981, 1991, 1984, 1908, 4736, 4120, 4569, 4130, 1980, 4299, 1921, 4527, 673, 5461, 1393, 3, 5462, 1425, 4465, 5463, 1901, 4322, 5464, 5221, 12, 1990, 1470, 5465, 4125, 4674, 1233, 11, 6185, 4166, 6188, 6078, 6189, 6190, 1369, 6191, 6192, 4972, 6197, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5393 (NOOP)
+// Module 5394 (NOOP)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -14,32 +14,32 @@ import isNullOrEmpty from "isNullOrEmpty" /* 1901 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import setDefault from "set" /* 4465 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import StickerFormat from "StickerFormat" /* 5220 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5462 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5463 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5464 */;
-import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6077 */;
-import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6188 */;
-import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6189 */;
+import StickerFormat from "StickerFormat" /* 5221 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5463 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5464 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5465 */;
+import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6078 */;
+import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6189 */;
+import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6190 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import fromType from "fromType" /* 5394 */;
-import closure_7 from "getEmojiToGroupId" /* 5409 */;
-import closure_8 from "handleSoundCreateOrUpdate" /* 4965 */;
-import closure_9 from "handleStickersStoreUpdate" /* 5451 */;
-import closure_10 from "loadSavedGuildStickers" /* 5452 */;
-import closure_11 from "rebuild" /* 5456 */;
+import fromType from "fromType" /* 5395 */;
+import closure_7 from "getEmojiToGroupId" /* 5410 */;
+import closure_8 from "handleSoundCreateOrUpdate" /* 4966 */;
+import closure_9 from "handleStickersStoreUpdate" /* 5452 */;
+import closure_10 from "loadSavedGuildStickers" /* 5453 */;
+import closure_11 from "rebuild" /* 5457 */;
 import closure_12 from "storeThread" /* 4122 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1985 */;
 import closure_21 from "createdAt" /* 1934 */;
 import closure_22 from "ensureGuildLoaded" /* 1386 */;
-import closure_23 from "handleChannelSelect" /* 5459 */;
+import closure_23 from "handleChannelSelect" /* 5460 */;
 import comparator from "comparator" /* 1981 */;
 import closure_26 from "comparator" /* 1981 */;
 import closure_27 from "trackCommunicationDisabled" /* 1991 */;
 import closure_28 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_29 from "createGuildRecordFromRust" /* 1908 */;
-import closure_30 from "reinjectEphemerals" /* 4735 */;
+import closure_30 from "reinjectEphemerals" /* 4736 */;
 import closure_31 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_32 from "sortActivity" /* 4569 */;
 import closure_33 from "markAllUserIdListsStale" /* 4130 */;
@@ -219,21 +219,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(5462)(toLocaleLowerCaseResult, str4) || tmp12(5462)(normalizeResult, str5);
+                                let tmp28 = tmp12(5463)(toLocaleLowerCaseResult, str4) || tmp12(5463)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(5462)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5463)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(5462)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5463)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(5462)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5463)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(5462)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5463)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -367,13 +367,13 @@ function queryMemberList(arg0) {
 function getPriorityForStickerMetadataType(arg0) {
   if (StickerFormat.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(5220).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5221).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(5220).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5221).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(5220).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(5220).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5221).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5221).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -2167,8 +2167,8 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(6191).maybeFetchSoundboardSounds();
-      const obj2 = _require(6191);
+      const result = _require(6192).maybeFetchSoundboardSounds();
+      const obj2 = _require(6192);
     }
     const FrecencyUserSettingsActionCreators = _require(1369).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -2191,7 +2191,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(6196).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(6197).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, closure_12) {
     const isMatch = regex.test(arg1);

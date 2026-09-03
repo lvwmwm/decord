@@ -1,16 +1,16 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 9149
+// Function ID: 9150
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 1991, 1921, 9146, 673, 21, 4478, 709, 1233, 1994, 695, 8160, 7757, 9147, 4474, 4928, 2]
+// Dependencies: [19, 17, 1991, 1921, 9150, 673, 21, 4478, 709, 1233, 1994, 695, 8164, 7760, 9151, 4474, 4929, 2]
 // Exports: default
 
-// Module 9145 (NsfwGateGuild)
+// Module 9149 (NsfwGateGuild)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { NsfwGateSource } from "NsfwGateSource" /* 9146 */;
+import { NsfwGateSource } from "NsfwGateSource" /* 9150 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -68,8 +68,8 @@ export default function NsfwGateGuild(guildId) {
     obj.track(closure_1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(currentUser(7757), {}), , , , , ];
-  obj = { source: currentUser(9147), style: tmp.image };
+  const items1 = [callback(currentUser(7760), {}), , , , , ];
+  obj = { source: currentUser(9151), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   items1[2] = callback(guildId(4474).Text, obj1);
@@ -80,7 +80,7 @@ export default function NsfwGateGuild(guildId) {
   const obj4 = { onPress: guildId.onClose, size: "md", text: null };
   const intl4 = guildId(1233).intl;
   obj4[2] = intl4.string(guildId(1233).t.gRqiWV);
-  items1[5] = callback(guildId(4928).Button, obj4);
+  items1[5] = callback(guildId(4929).Button, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

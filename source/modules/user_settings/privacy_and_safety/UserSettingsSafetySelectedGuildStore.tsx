@@ -1,10 +1,10 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15711
+// Function ID: 15712
 // Name: GUILD_SELECT_ALL_SERVERS_OPTION_ID
 // Dependencies: [641, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 15697 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
+// Module 15711 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
 import set from "set" /* 2 */;
 import keys from "keys" /* 641 */;
 

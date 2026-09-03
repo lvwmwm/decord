@@ -1,19 +1,19 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8919
+// Function ID: 8920
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8078, 6009, 673, 5631, 21, 4478, 5632, 4217, 1627, 586, 8122, 5961, 5981, 8088, 4166, 8571, 5079, 8546, 8916, 8917, 8918, 8561, 8552, 8531, 8541, 8923, 1492, 5500, 8560, 4413, 4197, 709, 8914, 8924, 8124, 1978, 8123, 695, 4333, 4445, 1498, 8911, 5630, 1296, 8925, 1233, 4204, 8930, 1234, 6254, 8932, 9067, 12715, 8523, 5945, 12843, 1305, 2]
+// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8081, 6010, 673, 5632, 21, 4478, 5633, 4217, 1627, 586, 8125, 5962, 5982, 8091, 4166, 8575, 5080, 8550, 8920, 8921, 8922, 8565, 8556, 8535, 8545, 8927, 1492, 5501, 8564, 4413, 4197, 709, 8918, 8928, 8127, 1978, 8126, 695, 4333, 4445, 1498, 8915, 5631, 1296, 8929, 1233, 4204, 8934, 1234, 6255, 8936, 9071, 12727, 8527, 5946, 12855, 1305, 2]
 
-// Module 8915 (UseAnimatedPosition)
+// Module 8919 (UseAnimatedPosition)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "handleFormOpen" /* 8078 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import closure_10 from "handleFormOpen" /* 8081 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import ME from "ME" /* 673 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,8 +21,8 @@ const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(5632).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5632);
+  animatedPosition2 = animatedPosition(5633).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(5633);
   const fn = function n() {
     return animatedPosition2.get();
   };

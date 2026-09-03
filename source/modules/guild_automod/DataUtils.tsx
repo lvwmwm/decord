@@ -1,10 +1,10 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11669
+// Function ID: 11670
 // Name: _transformMetadataToCamelCase
 // Dependencies: [12, 2]
 // Exports: _transformMetadataToCamelCase, _transformMetadataToSnakeCase
 
-// Module 11664 (_transformMetadataToCamelCase)
+// Module 11669 (_transformMetadataToCamelCase)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");

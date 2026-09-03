@@ -1,15 +1,15 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 9573
+// Function ID: 9574
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1385, 4494, 1215, 4529, 1980, 5371, 9548, 9533, 4499, 21, 4478, 1296, 709, 9570, 12, 9542, 9571, 586, 4721, 9572, 9575, 9586, 9604, 9605, 9613, 9532, 9635, 4197, 8050, 9607, 9555, 9551, 9554, 1492, 1234, 8618, 2]
+// Dependencies: [32, 19, 17, 1385, 4494, 1215, 4529, 1980, 5372, 9552, 9537, 4499, 21, 4478, 1296, 709, 9574, 12, 9546, 9575, 586, 4722, 9576, 9579, 9590, 9608, 9609, 9617, 9536, 9639, 4197, 8053, 9611, 9559, 9555, 9558, 1492, 1234, 8622, 2]
 
-// Module 9569 (areParticipantsEqual)
+// Module 9573 (areParticipantsEqual)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9551 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 9554 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9555 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9555 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 9558 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9559 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -18,9 +18,9 @@ import closure_7 from "getParticipants" /* 4494 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_10 from "handleConnectionOpen" /* 1980 */;
-import closure_11 from "anyoneHasFlagInContext" /* 5371 */;
-import closure_12 from "initialize" /* 9548 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9533 */;
+import closure_11 from "anyoneHasFlagInContext" /* 5372 */;
+import closure_12 from "initialize" /* 9552 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9537 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

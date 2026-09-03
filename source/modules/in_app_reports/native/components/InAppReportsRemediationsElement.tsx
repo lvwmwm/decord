@@ -1,14 +1,14 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13008
+// Function ID: 13009
 // Name: RemediationsElement
-// Dependencies: [19, 17, 21, 4478, 709, 6000, 1233, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 6001, 1233, 2]
 // Exports: default
 
-// Module 12996 (RemediationsElement)
+// Module 13008 (RemediationsElement)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

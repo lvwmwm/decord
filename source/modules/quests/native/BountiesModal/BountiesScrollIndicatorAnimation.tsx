@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14881
+// Function ID: 14882
 // Name: BountiesScrollIndicatorAnimation
 // Dependencies: [32, 19, 17, 21, 4478, 4197, 709, 4204, 2]
 // Exports: default
 
-// Module 14866 (BountiesScrollIndicatorAnimation)
+// Module 14881 (BountiesScrollIndicatorAnimation)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import ManaContext from "ManaContext" /* 4204 */;

@@ -1,10 +1,10 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 14997
+// Function ID: 14998
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 11306, 1485, 11152, 11316, 7483, 2]
+// Dependencies: [19, 11310, 1485, 11156, 11320, 7484, 2]
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 14982 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 14997 (useVideoQuestClickCtaAndMaybeCloseModal)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

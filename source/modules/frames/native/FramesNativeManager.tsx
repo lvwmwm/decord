@@ -1,24 +1,24 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9514
+// Function ID: 9515
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 9477, 9478, 673, 4506, 4380, 8608, 1235, 9467, 9468, 1205, 9511, 9512, 4858, 1233, 1470, 706, 1228, 511, 2]
+// Dependencies: [5, 17, 9481, 9482, 673, 4506, 4380, 8612, 1235, 9471, 9472, 1205, 9515, 9516, 4859, 1233, 1470, 706, 1228, 511, 2]
 
-// Module 9510 (postMessageToWebView)
+// Module 9514 (postMessageToWebView)
 import v1 from "v1" /* 511 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import _modDef4858 from "module_4858" /* 4858 */;
-import enforcingDefault from "enforcing" /* 9467 */;
-import leaveFrameDefault from "leaveFrame" /* 9511 */;
+import _modDef4859 from "module_4859" /* 4859 */;
+import enforcingDefault from "enforcing" /* 9471 */;
+import leaveFrameDefault from "leaveFrame" /* 9515 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9477 */;
-import { isLaunched } from "FrameLayoutModes" /* 9478 */;
+import closure_4 from "map" /* 9481 */;
+import { isLaunched } from "FrameLayoutModes" /* 9482 */;
 import { ComponentActions } from "ME" /* 673 */;
 import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4506 */;
 import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
-import WebView from "WebView" /* 8608 */;
+import WebView from "WebView" /* 8612 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ class FramesNativeManager extends tmp5 {
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   ({ code, message } = reason);
-  let obj = _modDef4858;
+  let obj = _modDef4859;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });

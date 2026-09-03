@@ -1,10 +1,10 @@
-// Module ID: 8050
-// Function ID: 8051
+// Module ID: 8053
+// Function ID: 8054
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4470, 641, 702, 1489, 4326, 586, 7306, 2]
+// Dependencies: [32, 5, 19, 4470, 641, 702, 1489, 4326, 586, 7307, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8050 (hasFetchedColors)
+// Module 8053 (hasFetchedColors)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;

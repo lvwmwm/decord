@@ -1,13 +1,13 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8683
+// Function ID: 8684
 // Name: connectToStage
-// Dependencies: [5, 4500, 1386, 1908, 4120, 1980, 1394, 8680, 6174, 5465, 13012, 13013, 5363, 4544, 4663, 13015, 2]
+// Dependencies: [5, 4500, 1386, 1908, 4120, 1980, 1394, 8684, 6175, 5466, 13024, 13025, 5364, 4544, 4663, 13027, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8679 (connectToStage)
-import _modDef5363 from "module_5363" /* 5363 */;
-import openStageChannelSettingsAll from "openStageChannelSettings" /* 8680 */;
-import _initializeDefault from "_initialize" /* 13013 */;
+// Module 8683 (connectToStage)
+import _modDef5364 from "module_5364" /* 5364 */;
+import openStageChannelSettingsAll from "openStageChannelSettings" /* 8684 */;
+import _initializeDefault from "_initialize" /* 13025 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "reset" /* 4500 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
@@ -27,11 +27,11 @@ function connectToStage(channel, flag) {
     if (canResult) {
       let num = openStageChannelSettingsAll.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(8680).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(8684).openStageBlockedUsersSheet(channel, () => {
           closure_1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(8680);
+        const tmp7Result = tmp7(8684);
       }
       tmp6 = num;
       const obj2 = openStageChannelSettingsAll;
@@ -44,7 +44,7 @@ function connectToStage(channel, flag) {
   _initializeDefault.initialize();
   const obj = closure_9;
   const obj4 = _initializeDefault;
-  const voiceChannel = _modDef5363.selectVoiceChannel(channel.id);
+  const voiceChannel = _modDef5364.selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
@@ -56,7 +56,7 @@ function connectToStage(channel, flag) {
     }
     return true;
   }
-  const obj5 = _modDef5363;
+  const obj5 = _modDef5364;
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -77,19 +77,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(13015).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(13015);
+    result = _require(13027).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(13027);
   }
   if (result) {
-    result = flag2(8680).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(8684).showChannelChangeConfirmationAlert(channel, () => {
       closure_1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(8680);
+    const obj2 = flag2(8684);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(8680).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(8680);
+      flag2(8684).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(8684);
     }
   }
 }

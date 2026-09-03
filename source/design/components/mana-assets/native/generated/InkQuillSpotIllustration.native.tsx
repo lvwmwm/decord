@@ -1,14 +1,14 @@
-// Module ID: 6774
-// Function ID: 6775
+// Module ID: 6775
+// Function ID: 6776
 // Name: InkQuillSpotIllustration
-// Dependencies: [21, 5501, 6775, 2]
+// Dependencies: [21, 5502, 6776, 2]
 // Exports: InkQuillSpotIllustration
 
-// Module 6774 (InkQuillSpotIllustration)
+// Module 6775 (InkQuillSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6775 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6776 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuillSpotIllustration.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13352
+// Function ID: 13353
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13337 (metadata)
+// Module 13352 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/referral_program/referralTrial.png.js");

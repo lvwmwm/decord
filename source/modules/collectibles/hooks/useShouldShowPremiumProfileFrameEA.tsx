@@ -1,14 +1,14 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12806
+// Function ID: 12807
 // Name: useShouldShowPremiumProfileFrameEA
-// Dependencies: [8557, 12755, 2]
+// Dependencies: [8561, 12767, 2]
 // Exports: default
 
-// Module 12794 (useShouldShowPremiumProfileFrameEA)
+// Module 12806 (useShouldShowPremiumProfileFrameEA)
 import set from "set" /* 2 */;
-import apexExperiment from "apexExperiment" /* 8557 */;
-import apexExperiment2 from "apexExperiment" /* 12755 */;
-import apexExperimentDefault from "apexExperiment" /* 12755 */;
+import apexExperiment from "apexExperiment" /* 8561 */;
+import apexExperiment2 from "apexExperiment" /* 12767 */;
+import apexExperimentDefault from "apexExperiment" /* 12767 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameEA.tsx");
 

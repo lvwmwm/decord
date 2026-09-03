@@ -1,9 +1,9 @@
-// Module ID: 6669
-// Function ID: 6670
+// Module ID: 6670
+// Function ID: 6671
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6669 (metadata)
+// Module 6670 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLeftUpwards3dIllustration-2x.png.js");

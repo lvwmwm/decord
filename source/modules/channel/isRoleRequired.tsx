@@ -1,10 +1,10 @@
-// Module ID: 5015
-// Function ID: 5016
+// Module ID: 5016
+// Function ID: 5017
 // Name: isRoleRequired
 // Dependencies: [1390, 502, 4125, 503, 2]
 // Exports: default
 
-// Module 5015 (isRoleRequired)
+// Module 5016 (isRoleRequired)
 import set from "set" /* 2 */;
 import sum from "sum" /* 502 */;
 import fromStringAll from "fromString" /* 503 */;

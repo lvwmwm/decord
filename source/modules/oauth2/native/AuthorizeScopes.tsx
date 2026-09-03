@@ -1,10 +1,10 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9379
+// Function ID: 9380
 // Name: Scope
-// Dependencies: [19, 17, 21, 4478, 1233, 6234, 709, 4438, 4474, 5949, 9301, 8442, 8625, 2]
+// Dependencies: [19, 17, 21, 4478, 1233, 6235, 709, 4438, 4474, 5950, 9305, 8446, 8629, 2]
 // Exports: default
 
-// Module 9375 (Scope)
+// Module 9379 (Scope)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -38,7 +38,7 @@ function Scope(arg0) {
     obj = { style: null, color: null, size: "refresh_sm" };
     obj[0] = tmp.fakeScopeIcon;
     obj[1] = ThemesDefault.colors.TEXT_MUTED;
-    let tmp10Result = tmp10(tmp6(6234).CircleXIcon, obj);
+    let tmp10Result = tmp10(tmp6(6235).CircleXIcon, obj);
   } else {
     obj1 = { color: null, size: "refresh_sm" };
     obj1[0] = ThemesDefault.colors.TEXT_MUTED;
@@ -86,9 +86,9 @@ export default function AuthorizeScopes(accountScopes) {
     } else {
       tmp4 = tmp14;
     }
-    let hasItem = integrationType === tmp4(8442).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp4(8446).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp4(8625).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp4(8629).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: null, children: null };
     obj[0] = tmp.scopesContainer;

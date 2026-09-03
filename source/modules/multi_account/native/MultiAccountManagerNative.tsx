@@ -1,17 +1,17 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17260
+// Function ID: 17261
 // Name: push
-// Dependencies: [12207, 673, 3, 684, 4723, 17241, 2008, 4333, 1228, 17242, 15, 12210, 1219, 4338, 4332, 4194, 1233, 17243, 2]
+// Dependencies: [12214, 673, 3, 684, 4724, 17261, 2008, 4333, 1228, 17262, 15, 12217, 1219, 4338, 4332, 4194, 1233, 17263, 2]
 
-// Module 17240 (push)
+// Module 17260 (push)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
-import _modDef4723 from "module_4723" /* 4723 */;
-import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12207 */;
-import _initializeDefault from "_initialize" /* 17242 */;
-import registerAssetDefault from "registerAsset" /* 17243 */;
+import _modDef4724 from "module_4724" /* 4724 */;
+import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12214 */;
+import _initializeDefault from "_initialize" /* 17262 */;
+import registerAssetDefault from "registerAsset" /* 17263 */;
 import ME from "ME" /* 673 */;
 
 let obj = require;
@@ -94,7 +94,7 @@ class MultiAccountManagerNative extends tmp5 {
 }
 const prototype = MultiAccountManagerNative.prototype;
 prototype["onSwitchStart"] = function onSwitchStart() {
-  obj = _modDef4723;
+  obj = _modDef4724;
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   logger.info("Closing fast-connect socket because of account switch logout");
   let result = obj(15).closeFastConnectSocket();
@@ -139,7 +139,7 @@ prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {
-  obj = _modDef4723;
+  obj = _modDef4724;
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   obj.pop();
   if (null !== c9) {

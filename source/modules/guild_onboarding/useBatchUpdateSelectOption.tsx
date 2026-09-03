@@ -1,13 +1,13 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11379
+// Function ID: 11380
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 4701, 5475, 682, 706, 12, 1470, 11375, 586, 5480, 1398, 2]
+// Dependencies: [19, 4702, 5476, 682, 706, 12, 1470, 11380, 586, 5481, 1398, 2]
 // Exports: default
 
-// Module 11374 (useBatchUpdateSelectOption)
+// Module 11379 (useBatchUpdateSelectOption)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_5 from "handleUpdate" /* 5475 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_5 from "handleUpdate" /* 5476 */;
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 682 */;
 
 const require = arg1;

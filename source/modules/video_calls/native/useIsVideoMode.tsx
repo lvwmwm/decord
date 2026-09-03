@@ -1,10 +1,10 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9920
+// Function ID: 9921
 // Name: useIsVideoMode
 // Dependencies: [4500, 1386, 4529, 1980, 4497, 586, 2]
 // Exports: default, isVideoMode
 
-// Module 9916 (useIsVideoMode)
+// Module 9920 (useIsVideoMode)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "reset" /* 4500 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;

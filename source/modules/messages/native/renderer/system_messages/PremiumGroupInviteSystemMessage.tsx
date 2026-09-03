@@ -1,15 +1,15 @@
-// Module ID: 7964
-// Function ID: 7965
+// Module ID: 7967
+// Function ID: 7968
 // Name: createPremiumGroupInviteSystemMessage
-// Dependencies: [1215, 1386, 4478, 709, 7965, 7882, 7864, 7969, 2]
+// Dependencies: [1215, 1386, 4478, 709, 7968, 7885, 7867, 7972, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7964 (createPremiumGroupInviteSystemMessage)
+// Module 7967 (createPremiumGroupInviteSystemMessage)
 import ThemesDefault from "Themes" /* 709 */;
-import frozen from "frozen" /* 7864 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
-import createPremiumGroupInviteEmbed from "createPremiumGroupInviteEmbed" /* 7965 */;
-import registerAssetDefault from "registerAsset" /* 7969 */;
+import frozen from "frozen" /* 7867 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
+import createPremiumGroupInviteEmbed from "createPremiumGroupInviteEmbed" /* 7968 */;
+import registerAssetDefault from "registerAsset" /* 7972 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

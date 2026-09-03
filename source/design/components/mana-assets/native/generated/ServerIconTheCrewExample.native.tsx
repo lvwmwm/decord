@@ -1,14 +1,14 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 7003
+// Function ID: 7004
 // Name: ServerIconTheCrewExample
-// Dependencies: [21, 5501, 7003, 2]
+// Dependencies: [21, 5502, 7004, 2]
 // Exports: ServerIconTheCrewExample
 
-// Module 7002 (ServerIconTheCrewExample)
+// Module 7003 (ServerIconTheCrewExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7003 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7004 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconTheCrewExample.native.tsx");

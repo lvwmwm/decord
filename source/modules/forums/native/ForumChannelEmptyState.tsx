@@ -1,8 +1,8 @@
-// Module ID: 12528
-// Function ID: 12529
-// Dependencies: [19, 17, 21, 4478, 1362, 1627, 12529, 12530, 4474, 1233, 2]
+// Module ID: 12540
+// Function ID: 12541
+// Dependencies: [19, 17, 21, 4478, 1362, 1627, 12541, 12542, 4474, 1233, 2]
 
-// Module 12528
+// Module 12540
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text from "Text" /* 4474 */;
@@ -28,9 +28,9 @@ const memoResult = importAllResult.memo((topViewHeight) => {
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
   let obj2 = AccessibilityAnnouncer;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12529);
+    let tmp4Result = tmp4(12541);
   } else {
-    tmp4Result = tmp4(12530);
+    tmp4Result = tmp4(12542);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];

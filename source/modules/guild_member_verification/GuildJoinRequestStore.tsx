@@ -1,9 +1,9 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7212
+// Function ID: 7213
 // Name: updateSubmittedGuildJoinRequestTotal
 // Dependencies: [1921, 4300, 4074, 4302, 4116, 4301, 684, 586, 706, 2]
 
-// Module 7211 (updateSubmittedGuildJoinRequestTotal)
+// Module 7212 (updateSubmittedGuildJoinRequestTotal)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

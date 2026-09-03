@@ -1,9 +1,9 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13638
+// Function ID: 13639
 // Name: getVerificationKey
 // Dependencies: [704, 12, 586, 706, 2]
 
-// Module 13623 (getVerificationKey)
+// Module 13638 (getVerificationKey)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import setSecondaryTokenAll from "setSecondaryToken" /* 704 */;

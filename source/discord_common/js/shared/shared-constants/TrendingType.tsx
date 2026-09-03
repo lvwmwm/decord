@@ -1,9 +1,9 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 9424
+// Function ID: 9425
 // Name: TrendingType
 // Dependencies: [2]
 
-// Module 9420 (TrendingType)
+// Module 9424 (TrendingType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/TrendingType.tsx");

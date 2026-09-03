@@ -1,22 +1,22 @@
-// Module ID: 6133
-// Function ID: 6134
+// Module ID: 6134
+// Function ID: 6135
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4391, 4121, 5232, 1215, 6134, 6135, 1386, 4855, 1991, 1908, 4554, 4130, 1980, 4299, 673, 6138, 706, 12, 1911, 586, 2]
+// Dependencies: [32, 4391, 4121, 5233, 1215, 6135, 6136, 1386, 4856, 1991, 1908, 4554, 4130, 1980, 4299, 673, 6139, 706, 12, 1911, 586, 2]
 
-// Module 6133 (handleConnectionOpenOrResumed)
+// Module 6134 (handleConnectionOpenOrResumed)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import _enqueueDefault from "_enqueue" /* 6138 */;
+import _enqueueDefault from "_enqueue" /* 6139 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "getHash" /* 4391 */;
 import closure_6 from "initialize" /* 4121 */;
-import closure_7 from "upsertAccount" /* 5232 */;
+import closure_7 from "upsertAccount" /* 5233 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
-import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 6134 */;
-import closure_10 from "handlePermissionsChange" /* 6135 */;
+import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 6135 */;
+import closure_10 from "handlePermissionsChange" /* 6136 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "handleConnectionOpen" /* 4855 */;
+import closure_12 from "handleConnectionOpen" /* 4856 */;
 import closure_13 from "trackCommunicationDisabled" /* 1991 */;
 import closure_14 from "createGuildRecordFromRust" /* 1908 */;
 import closure_15 from "createRTCConnection" /* 4554 */;

@@ -1,10 +1,10 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16143
+// Function ID: 16144
 // Name: HomeDrawerSharedItem
 // Dependencies: [19, 17, 21, 4478, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 16127 (HomeDrawerSharedItem)
+// Module 16143 (HomeDrawerSharedItem)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

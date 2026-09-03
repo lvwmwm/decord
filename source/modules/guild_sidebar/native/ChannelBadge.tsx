@@ -1,14 +1,14 @@
-// Module ID: 16049
-// Function ID: 16050
+// Module ID: 16065
+// Function ID: 16066
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1995, 21, 4478, 644, 16050, 12086, 4474, 1896, 2]
+// Dependencies: [19, 17, 1995, 21, 4478, 644, 16066, 12092, 4474, 1896, 2]
 // Exports: default
 
-// Module 16049 (ChannelBadge)
+// Module 16065 (ChannelBadge)
 import noopAll from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import NewBadgeDefault from "NewBadge" /* 12086 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 16050 */;
+import NewBadgeDefault from "NewBadge" /* 12092 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 16066 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
 import { jsx } from "jsxProd" /* 21 */;

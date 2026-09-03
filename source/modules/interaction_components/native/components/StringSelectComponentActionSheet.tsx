@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 11618
+// Module ID: 11622
+// Function ID: 11623
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4478, 709, 8037, 1954, 4445, 11618, 5593, 4474, 1233, 2]
+// Dependencies: [32, 19, 21, 4478, 709, 8040, 1954, 4445, 11623, 5594, 4474, 1233, 2]
 // Exports: default
 
-// Module 11617 (StringSelectComponentActionSheet)
+// Module 11622 (StringSelectComponentActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -31,7 +31,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8037);
+  let obj = selectionActionComponent(8040);
   let tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
   first = tmp3[0];
   React = tmp3[1];
@@ -149,5 +149,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj[12] = channelId;
   obj[13] = allowEmpty;
-  return tmp9(onSubmit(11618), obj);
+  return tmp9(onSubmit(11623), obj);
 };

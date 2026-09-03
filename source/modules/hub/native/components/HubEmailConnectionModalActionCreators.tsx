@@ -1,9 +1,9 @@
-// Module ID: 12505
-// Function ID: 12506
-// Dependencies: [5, 4723, 12489, 2008, 2]
+// Module ID: 12517
+// Function ID: 12518
+// Dependencies: [5, 4724, 12501, 2008, 2]
 
-// Module 12505
-import _modDef4723 from "module_4723" /* 4723 */;
+// Module 12517
+import _modDef4724 from "module_4724" /* 4724 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/hub/native/componen
 export default {
   open(closure_0) {
     closure_0 = arg1;
-    _modDef4723.pushLazy(callback(function*() {
+    _modDef4724.pushLazy(callback(function*() {
       closure_1 = tmp5;
       closure_0 = tmp2;
       yield closure_1_0(paths[3])(paths[2], paths.paths);
@@ -27,6 +27,6 @@ export default {
     }), closure_0, HUB_EMAIL_CONNECTION_MODAL_KEY);
   },
   close() {
-    _modDef4723.popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
+    _modDef4724.popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
   }
 };

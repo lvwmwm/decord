@@ -1,10 +1,10 @@
-// Module ID: 16370
-// Function ID: 16371
+// Module ID: 16389
+// Function ID: 16390
 // Name: OnboardingHomeScrollView
 // Dependencies: [19, 17, 21, 4478, 709, 1627, 2]
 // Exports: default
 
-// Module 16370 (OnboardingHomeScrollView)
+// Module 16389 (OnboardingHomeScrollView)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;

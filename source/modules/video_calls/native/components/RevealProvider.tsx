@@ -1,16 +1,16 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9545
+// Function ID: 9546
 // Name: useRevealProviderValue
-// Dependencies: [19, 4186, 4495, 9533, 21, 586, 9535, 9542, 1234, 4413, 9543, 9545, 2]
+// Dependencies: [19, 4186, 4495, 9537, 21, 586, 9539, 9546, 1234, 4413, 9547, 9549, 2]
 // Exports: default
 
-// Module 9541 (useRevealProviderValue)
-import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9535 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9542 */;
+// Module 9545 (useRevealProviderValue)
+import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9539 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9546 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "setContent" /* 4186 */;
 import closure_5 from "set" /* 4495 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9533 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9537 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -85,13 +85,13 @@ export default function RevealProvider(showStatus) {
   }
   const obj = { value: tmp2, children: null };
   let tmp10 = !reveal;
-  let tmp4Result = tmp4(9543);
+  let tmp4Result = tmp4(9547);
   if (!reveal) {
     tmp10 = !flag;
   }
   const items1 = [closure_10(tmp4Result, { hidden: tmp10, animated: true, barStyle: str }), children, ];
   let tmp12 = !reveal;
-  tmp4Result = tmp4(9545);
+  tmp4Result = tmp4(9549);
   if (!reveal) {
     tmp12 = !prefersDeferringSystemGestures;
   }

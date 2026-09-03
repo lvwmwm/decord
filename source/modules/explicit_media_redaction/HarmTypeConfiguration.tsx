@@ -1,17 +1,17 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 6150
+// Function ID: 6151
 // Name: ContentHarmType
-// Dependencies: [673, 6150, 4744, 6151, 4166, 6152, 6154, 1305, 2]
+// Dependencies: [673, 6151, 4745, 6152, 4166, 6153, 6155, 1305, 2]
 
-// Module 6149 (ContentHarmType)
+// Module 6150 (ContentHarmType)
 import set from "set" /* 2 */;
 import create from "create" /* 1305 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import messageAttachmentToUnfurledMediaItem from "messageAttachmentToUnfurledMediaItem" /* 4744 */;
-import ObscureReason from "ObscureReason" /* 6150 */;
-import ContentHarmTypeChannel from "ContentHarmTypeChannel" /* 6151 */;
-import resolveExplicitContentSettingWithDefaults from "resolveExplicitContentSettingWithDefaults" /* 6152 */;
-import resolveGoreSettingWithDefaults from "resolveGoreSettingWithDefaults" /* 6154 */;
+import messageAttachmentToUnfurledMediaItem from "messageAttachmentToUnfurledMediaItem" /* 4745 */;
+import ObscureReason from "ObscureReason" /* 6151 */;
+import ContentHarmTypeChannel from "ContentHarmTypeChannel" /* 6152 */;
+import resolveExplicitContentSettingWithDefaults from "resolveExplicitContentSettingWithDefaults" /* 6153 */;
+import resolveGoreSettingWithDefaults from "resolveGoreSettingWithDefaults" /* 6155 */;
 import ME from "ME" /* 673 */;
 
 ({ MessageAttachmentFlags, MessageEmbedFlags } = ME);
@@ -81,19 +81,19 @@ obj[obj.EXPLICIT] = {
     }
     let tmp9;
     if (tmp != null) {
-      tmp9 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.GUILD];
+      tmp9 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.GUILD];
     }
     obj = { [closure_0(closure_1[3]).ContentHarmTypeChannel.GUILD]: resolveExplicitContentSettingWithDefaults.resolveExplicitContentSettingWithDefaults({ setting: tmp9 }) };
-    let tmp7Result = tmp7(6152);
+    let tmp7Result = tmp7(6153);
     let tmp10;
     if (tmp != null) {
-      tmp10 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.FRIEND_DM];
+      tmp10 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.FRIEND_DM] = tmp7Result.resolveExplicitContentSettingWithDefaults({ setting: tmp10, isDm: true, isFriend: true });
-    tmp7Result = tmp7(6152);
+    tmp7Result = tmp7(6153);
     let tmp11;
     if (tmp != null) {
-      tmp11 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp11 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.NON_FRIEND_DM] = tmp7Result.resolveExplicitContentSettingWithDefaults({ setting: tmp11, isDm: true });
     return obj;
@@ -162,19 +162,19 @@ const obj1 = {
     }
     let tmp9;
     if (tmp != null) {
-      tmp9 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.GUILD];
+      tmp9 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.GUILD];
     }
     obj = { [closure_0(closure_1[3]).ContentHarmTypeChannel.GUILD]: resolveExplicitContentSettingWithDefaults.resolveExplicitContentSettingWithDefaults({ setting: tmp9 }) };
-    let tmp7Result = tmp7(6152);
+    let tmp7Result = tmp7(6153);
     let tmp10;
     if (tmp != null) {
-      tmp10 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.FRIEND_DM];
+      tmp10 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.FRIEND_DM] = tmp7Result.resolveExplicitContentSettingWithDefaults({ setting: tmp10, isDm: true, isFriend: true });
-    tmp7Result = tmp7(6152);
+    tmp7Result = tmp7(6153);
     let tmp11;
     if (tmp != null) {
-      tmp11 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp11 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.NON_FRIEND_DM] = tmp7Result.resolveExplicitContentSettingWithDefaults({ setting: tmp11, isDm: true });
     return obj;
@@ -243,19 +243,19 @@ obj[obj.GORE] = {
     }
     let tmp9;
     if (tmp != null) {
-      tmp9 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.GUILD];
+      tmp9 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.GUILD];
     }
     obj = { [closure_0(closure_1[3]).ContentHarmTypeChannel.GUILD]: resolveGoreSettingWithDefaults.resolveGoreSettingWithDefaults({ setting: tmp9 }) };
-    let tmp7Result = tmp7(6154);
+    let tmp7Result = tmp7(6155);
     let tmp10;
     if (tmp != null) {
-      tmp10 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.FRIEND_DM];
+      tmp10 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.FRIEND_DM] = tmp7Result.resolveGoreSettingWithDefaults({ setting: tmp10, isDm: true, isFriend: true });
-    tmp7Result = tmp7(6154);
+    tmp7Result = tmp7(6155);
     let tmp11;
     if (tmp != null) {
-      tmp11 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp11 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.NON_FRIEND_DM] = tmp7Result.resolveGoreSettingWithDefaults({ setting: tmp11, isDm: true });
     return obj;
@@ -324,19 +324,19 @@ const obj2 = {
     }
     let tmp9;
     if (tmp != null) {
-      tmp9 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.GUILD];
+      tmp9 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.GUILD];
     }
     obj = { [closure_0(closure_1[3]).ContentHarmTypeChannel.GUILD]: resolveGoreSettingWithDefaults.resolveGoreSettingWithDefaults({ setting: tmp9 }) };
-    let tmp7Result = tmp7(6154);
+    let tmp7Result = tmp7(6155);
     let tmp10;
     if (tmp != null) {
-      tmp10 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.FRIEND_DM];
+      tmp10 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.FRIEND_DM] = tmp7Result.resolveGoreSettingWithDefaults({ setting: tmp10, isDm: true, isFriend: true });
-    tmp7Result = tmp7(6154);
+    tmp7Result = tmp7(6155);
     let tmp11;
     if (tmp != null) {
-      tmp11 = tmp[tmp7(undefined, 6151).ContentHarmTypeChannel.NON_FRIEND_DM];
+      tmp11 = tmp[tmp7(undefined, 6152).ContentHarmTypeChannel.NON_FRIEND_DM];
     }
     obj[ContentHarmTypeChannel.ContentHarmTypeChannel.NON_FRIEND_DM] = tmp7Result.resolveGoreSettingWithDefaults({ setting: tmp11, isDm: true });
     return obj;

@@ -1,14 +1,14 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 17228
+// Function ID: 17229
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 8030, 1954, 7715, 2]
+// Dependencies: [19, 17, 21, 8033, 1954, 7718, 2]
 // Exports: default
 
-// Module 17208 (LabelLayoutComponent)
+// Module 17228 (LabelLayoutComponent)
 import noopAll from "noop" /* 19 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import Input from "Input" /* 7715 */;
-import isInteractionComponent from "isInteractionComponent" /* 8030 */;
+import Input from "Input" /* 7718 */;
+import isInteractionComponent from "isInteractionComponent" /* 8033 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

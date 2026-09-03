@@ -1,17 +1,17 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17153
+// Function ID: 17154
 // Name: handleConnectionOpen
-// Dependencies: [32, 4495, 4965, 1215, 4529, 4542, 9806, 11, 1305, 592, 1369, 9805, 12, 13782, 9900, 5494, 2]
+// Dependencies: [32, 4495, 4966, 1215, 4529, 4542, 9810, 11, 1305, 592, 1369, 9809, 12, 13798, 9904, 5495, 2]
 
-// Module 17133 (handleConnectionOpen)
+// Module 17153 (handleConnectionOpen)
 import Storage2 from "Storage" /* 592 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import initializeDefault from "initialize" /* 5494 */;
-import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9806 */;
-import getPendingAudioSettings from "getPendingAudioSettings" /* 13782 */;
+import initializeDefault from "initialize" /* 5495 */;
+import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9810 */;
+import getPendingAudioSettings from "getPendingAudioSettings" /* 13798 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "set" /* 4495 */;
-import closure_5 from "handleSoundCreateOrUpdate" /* 4965 */;
+import closure_5 from "handleSoundCreateOrUpdate" /* 4966 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "_detectH265HardwareDecode" /* 4529 */;
 import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
@@ -37,7 +37,7 @@ function handleConnectionOpen() {
         let tmp8 = tmp5[1];
         let tmp9 = callback;
         let tmp10 = dependencyMap;
-        let obj = callback(9805);
+        let obj = callback(9809);
         let result = obj.coerceAudioContextForProto(first);
         if (null != result) {
           let tmp52 = result;
@@ -82,7 +82,7 @@ function handleConnectionOpen() {
             let merged = Object.assign(obj[first1]);
             let tmp31 = callback;
             let tmp32 = dependencyMap;
-            let obj4 = callback(9805);
+            let obj4 = callback(9809);
             let tmp33 = first;
             obj1.volume = obj4.snapVolumeToDefault(tmp25[1], tmp7);
             obj[first1] = obj1;

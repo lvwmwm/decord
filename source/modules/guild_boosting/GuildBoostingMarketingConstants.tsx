@@ -1,9 +1,9 @@
-// Module ID: 12354
-// Function ID: 12355
+// Module ID: 12366
+// Function ID: 12367
 // Name: BoostedGuildTiers
 // Dependencies: [673, 1923, 4369, 1233, 2]
 
-// Module 12354 (BoostedGuildTiers)
+// Module 12366 (BoostedGuildTiers)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;

@@ -1,10 +1,10 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10040
+// Function ID: 10041
 // Name: participantMemberInfo
 // Dependencies: [684, 4322, 1233, 2]
 // Exports: participantMemberInfo
 
-// Module 10036 (participantMemberInfo)
+// Module 10040 (participantMemberInfo)
 import setDefault from "set" /* 684 */;
 import nameFromUser from "nameFromUser" /* 4322 */;
 

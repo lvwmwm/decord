@@ -1,11 +1,11 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 12298
+// Function ID: 12299
 // Name: useShouldShowFileUploadRollback
-// Dependencies: [4364, 4365, 586, 4368, 12287, 4405, 2]
+// Dependencies: [4364, 4365, 586, 4368, 12299, 4405, 2]
 // Exports: useShouldShowFileUploadRollback
 
-// Module 12286 (useShouldShowFileUploadRollback)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12287 */;
+// Module 12298 (useShouldShowFileUploadRollback)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12299 */;
 import closure_3 from "calculateAppliedBoosts" /* 4364 */;
 import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4365 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 13442
-// Function ID: 13443
+// Module ID: 13457
+// Function ID: 13458
 // Name: handleRevoke
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4204, 8490, 4752, 8647, 6238, 4474, 4928, 1233, 4074, 1296, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 4204, 8494, 4753, 8651, 6239, 4474, 4929, 1233, 4074, 1296, 2]
 
-// Module 13442 (handleRevoke)
+// Module 13457 (handleRevoke)
 import ThemesDefault from "Themes" /* 709 */;
-import resolveGiftCodeDefault from "resolveGiftCode" /* 8490 */;
+import resolveGiftCodeDefault from "resolveGiftCode" /* 8494 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { AnalyticsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;

@@ -1,19 +1,19 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15568
+// Function ID: 15569
 // Name: getSelectedGuildChannel
-// Dependencies: [19, 17, 5452, 1390, 4131, 1386, 1908, 1980, 1921, 673, 21, 4478, 709, 4194, 8751, 10199, 10201, 5220, 11, 1627, 1296, 6000, 5607, 15411, 5614, 2]
+// Dependencies: [19, 17, 5453, 1390, 4131, 1386, 1908, 1980, 1921, 673, 21, 4478, 709, 4194, 8755, 10203, 10205, 5221, 11, 1627, 1296, 6001, 5608, 15425, 5615, 2]
 // Exports: default
 
-// Module 15554 (getSelectedGuildChannel)
+// Module 15568 (getSelectedGuildChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
-import StickerFormat from "StickerFormat" /* 5220 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10199 */;
+import StickerFormat from "StickerFormat" /* 5221 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10203 */;
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "loadSavedGuildStickers" /* 5452 */;
+import closure_5 from "loadSavedGuildStickers" /* 5453 */;
 import { createChannelRecord } from "createChannelRecord" /* 1390 */;
 import closure_7 from "hasFlag" /* 4131 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
@@ -692,7 +692,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
       }, label.label);
     })
   };
-  items1[2] = callback(_require(6000).TableRowGroup, obj);
+  items1[2] = callback(_require(6001).TableRowGroup, obj);
   obj[2] = items1;
   return callback2(ScrollView, obj);
 };

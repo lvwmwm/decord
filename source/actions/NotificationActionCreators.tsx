@@ -1,8 +1,8 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15357
+// Function ID: 15358
 // Dependencies: [673, 695, 706, 2]
 
-// Module 15343
+// Module 15357
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

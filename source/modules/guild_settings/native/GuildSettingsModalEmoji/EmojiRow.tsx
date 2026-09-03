@@ -1,10 +1,10 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17404
+// Function ID: 17405
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 1908, 21, 4478, 709, 1234, 586, 9653, 9191, 4138, 17385, 4915, 4474, 1296, 5607, 4194, 1233, 1430, 4673, 4322, 5076, 17387, 2]
+// Dependencies: [32, 19, 17, 1908, 21, 4478, 709, 1234, 586, 9657, 9195, 4138, 17405, 4916, 4474, 1296, 5608, 4194, 1233, 1430, 4673, 4322, 5077, 17407, 2]
 // Exports: EmojiRow
 
-// Module 17384 (EmojiRow)
+// Module 17404 (EmojiRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 8992
-// Function ID: 8993
+// Module ID: 8996
+// Function ID: 8997
 // Name: tooltipEnterExitAnimation
-// Dependencies: [4927, 2]
+// Dependencies: [4928, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 8992 (tooltipEnterExitAnimation)
+// Module 8996 (tooltipEnterExitAnimation)
 import set from "set" /* 2 */;
 
 let closure_2 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
@@ -26,7 +26,7 @@ export const tooltipEnterExitAnimation = function tooltipEnterExitAnimation(posi
     obj[1] = num(closure_1_1[0]).withSpring(value, closure_1_2, "respect-motion-settings", fn2);
     return obj;
   };
-  fn.__closure = { withSpring: num(4927).withSpring, translateY: num, TOOLTIP_SPRING: closure_2 };
+  fn.__closure = { withSpring: num(4928).withSpring, translateY: num, TOOLTIP_SPRING: closure_2 };
   fn.__workletHash = 7727487832145;
   fn.__initData = closure_3;
   return fn;

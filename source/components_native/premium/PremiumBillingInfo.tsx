@@ -1,16 +1,16 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13241
+// Function ID: 13242
 // Name: GoogleManagementLink
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 4152, 4474, 1233, 4139, 13226, 5961, 5981, 7156, 13230, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 4152, 4474, 1233, 4139, 13238, 5962, 5982, 7157, 13242, 2]
 // Exports: default
 
-// Module 13229 (GoogleManagementLink)
+// Module 13241 (GoogleManagementLink)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4152 */;
-import contextDefault from "context" /* 5961 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
-import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 13226 */;
+import contextDefault from "context" /* 5962 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 13238 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
@@ -66,7 +66,7 @@ export default function PremiumBillingInfo(subscription) {
   if (null == first) {
     return null;
   } else {
-    let tmp2Result = tmp2(7156);
+    let tmp2Result = tmp2(7157);
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     obj = { style: null, children: null };
     obj[0] = subscription.style;
@@ -83,7 +83,7 @@ export default function PremiumBillingInfo(subscription) {
     const items1 = [callback2(tmp2(4474).Text, obj3), , ];
     const obj4 = { style: null, variant: "text-sm/medium", children: null };
     obj4[0] = tmp.billingRenewalInfo;
-    tmp2Result = tmp2(13230);
+    tmp2Result = tmp2(13242);
     obj4[2] = tmp2Result.getBillingInformationStringNative(subscription, first, tmp6);
     items1[1] = callback2(tmp2(4474).Text, obj4);
     const obj5 = { style: null, subscription: null };

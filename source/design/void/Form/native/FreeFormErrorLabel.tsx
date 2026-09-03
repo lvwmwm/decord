@@ -1,10 +1,10 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 7726
+// Function ID: 7727
 // Name: Label
 // Dependencies: [19, 21, 4199, 1362, 4474, 2]
 // Exports: default
 
-// Module 7723 (Label)
+// Module 7726 (Label)
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

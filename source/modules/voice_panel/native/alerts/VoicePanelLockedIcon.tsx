@@ -1,15 +1,15 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17024
+// Function ID: 17025
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4478, 709, 6014, 1296, 17005, 2]
+// Dependencies: [19, 21, 4478, 709, 6015, 1296, 17025, 2]
 // Exports: default
 
-// Module 17004 (VoicePanelLockedIcon)
+// Module 17024 (VoicePanelLockedIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import setDefault from "set" /* 6014 */;
-import registerAssetDefault from "registerAsset" /* 17005 */;
+import setDefault from "set" /* 6015 */;
+import registerAssetDefault from "registerAsset" /* 17025 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

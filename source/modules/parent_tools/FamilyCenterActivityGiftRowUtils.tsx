@@ -1,15 +1,15 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14748
+// Function ID: 14749
 // Name: getGiftRowDisplayInfo
-// Dependencies: [1233, 3717, 6089, 2368, 2]
+// Dependencies: [1233, 3717, 6090, 2368, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 14733 (getGiftRowDisplayInfo)
+// Module 14748 (getGiftRowDisplayInfo)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import _mod3717 from "module_3717" /* 3717 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6089 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6090 */;
 
 const result = set.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 

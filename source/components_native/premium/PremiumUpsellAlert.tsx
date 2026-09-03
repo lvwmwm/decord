@@ -1,9 +1,9 @@
-// Module ID: 8186
-// Function ID: 8187
+// Module ID: 8190
+// Function ID: 8191
 // Name: PremiumUpsellItem
-// Dependencies: [32, 19, 17, 1303, 1921, 673, 8187, 1923, 21, 4478, 709, 4204, 4474, 7201, 1233, 4139, 8178, 8179, 4413, 1362, 8214, 8215, 8216, 8217, 8168, 8218, 8219, 8220, 8221, 586, 6001, 8222, 8177, 1492, 5961, 5981, 4945, 695, 8223, 4372, 4947, 1296, 5501, 8224, 8225, 8181, 2]
+// Dependencies: [32, 19, 17, 1303, 1921, 673, 8191, 1923, 21, 4478, 709, 4204, 4474, 7202, 1233, 4139, 8182, 8183, 4413, 1362, 8218, 8219, 8220, 8221, 8172, 8222, 8223, 8224, 8225, 586, 6002, 8226, 8181, 1492, 5962, 5982, 4946, 695, 8227, 4372, 4948, 1296, 5502, 8228, 8229, 8185, 2]
 
-// Module 8186 (PremiumUpsellItem)
+// Module 8190 (PremiumUpsellItem)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -11,19 +11,19 @@ import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
 import createCacheKey2 from "createCacheKey" /* 4478 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7201 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8168 */;
-import registerAssetDefault from "registerAsset" /* 8178 */;
-import registerAssetDefault2 from "registerAsset" /* 8179 */;
-import registerAssetDefault3 from "registerAsset" /* 8216 */;
-import registerAssetDefault4 from "registerAsset" /* 8217 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7202 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8172 */;
+import registerAssetDefault from "registerAsset" /* 8182 */;
+import registerAssetDefault2 from "registerAsset" /* 8183 */;
+import registerAssetDefault3 from "registerAsset" /* 8220 */;
+import registerAssetDefault4 from "registerAsset" /* 8221 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { getIcons } from "items" /* 8187 */;
+import { getIcons } from "items" /* 8191 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -131,9 +131,9 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8214);
+    let tmp4Result = tmp4(8218);
   } else {
-    tmp4Result = tmp4(8215);
+    tmp4Result = tmp4(8219);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1233).intl;
@@ -208,9 +208,9 @@ function LongerMessageUpsell(alertWidth) {
   const tmp7 = closure_14;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8218);
+    let tmp4Result = tmp4(8222);
   } else {
-    tmp4Result = tmp4(8219);
+    tmp4Result = tmp4(8223);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1233).intl;
@@ -228,9 +228,9 @@ function GuildCapUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8220);
+    let tmp4Result = tmp4(8224);
   } else {
-    tmp4Result = tmp4(8221);
+    tmp4Result = tmp4(8225);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1233).intl;
@@ -259,7 +259,7 @@ function UploadUpsell(arg0) {
       obj = { dataSavingMode };
       const result = obj.updatedUnsyncedSettings(obj);
     };
-    tmp6Result = callback2(tmp(6001).TableSwitchRow, obj);
+    tmp6Result = callback2(tmp(6002).TableSwitchRow, obj);
   }
   children[1] = tmp6Result;
   return closure_15(closure_16, { children });

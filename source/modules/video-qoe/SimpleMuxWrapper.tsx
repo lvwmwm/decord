@@ -1,14 +1,14 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 14979
+// Function ID: 14980
 // Name: logger
-// Dependencies: [4, 14965, 14966, 14967, 2]
+// Dependencies: [4, 14980, 14981, 14982, 2]
 
-// Module 14964 (logger)
+// Module 14979 (logger)
 import set from "set" /* 2 */;
 import log from "log" /* 4 */;
-import generateSessionId from "generateSessionId" /* 14965 */;
-import mapDiscordToMuxMetadata from "mapDiscordToMuxMetadata" /* 14966 */;
-import UDefault from "U" /* 14967 */;
+import generateSessionId from "generateSessionId" /* 14980 */;
+import mapDiscordToMuxMetadata from "mapDiscordToMuxMetadata" /* 14981 */;
+import UDefault from "U" /* 14982 */;
 
 const logger = new log.Logger("SimpleMuxWrapper");
 const result = set.fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
@@ -50,8 +50,8 @@ prototype["endSession"] = function endSession() {
   if (this.isMonitoring) {
     try {
       if (typeof UDefault.destroyMonitor === "function") {
-        tmp(14967).destroyMonitor(self.videoElement);
-        const tmpResult = tmp(14967);
+        tmp(14982).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14982);
       }
       self.isMonitoring = false;
       tmp = importDefault;
@@ -65,8 +65,8 @@ prototype["destroy"] = function destroy() {
   if (this.isMonitoring) {
     try {
       if (typeof UDefault.destroyMonitor === "function") {
-        tmp(14967).destroyMonitor(self.videoElement);
-        const tmpResult = tmp(14967);
+        tmp(14982).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14982);
       }
       self.isMonitoring = false;
       tmp = importDefault;

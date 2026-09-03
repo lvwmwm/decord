@@ -1,9 +1,9 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11935
+// Function ID: 11936
 // Name: CommandListSortOrder
 // Dependencies: [2]
 
-// Module 11929 (CommandListSortOrder)
+// Module 11935 (CommandListSortOrder)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");

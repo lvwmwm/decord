@@ -1,20 +1,20 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11356
+// Function ID: 11357
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4519, 4527, 673, 7491, 7863, 1233, 11352, 6086, 6081, 3370, 8230, 4466, 8508, 1235, 586, 1470, 5967, 2]
+// Dependencies: [32, 19, 4519, 4527, 673, 7492, 7866, 1233, 11357, 6087, 6082, 3370, 8234, 4466, 8512, 1235, 586, 1470, 5968, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11351 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11356 (createSocialLayerStorefrontProductDetailsEmbed)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getPrice from "getPrice" /* 6081 */;
-import useSKUPrice from "useSKUPrice" /* 6086 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7863 */;
+import getPrice from "getPrice" /* 6082 */;
+import useSKUPrice from "useSKUPrice" /* 6087 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "addApplication" /* 4519 */;
 import closure_6 from "addSku" /* 4527 */;
 import { PaymentGateways } from "ME" /* 673 */;
-import { InviteTypes } from "InviteSendStates" /* 7491 */;
+import { InviteTypes } from "InviteSendStates" /* 7492 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11352)(application)) {
+        if (tmp(11357)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = useSKUPrice.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = useSKUPrice;

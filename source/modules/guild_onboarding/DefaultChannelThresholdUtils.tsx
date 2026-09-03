@@ -1,14 +1,14 @@
-// Module ID: 9723
-// Function ID: 9724
+// Module ID: 9727
+// Function ID: 9728
 // Name: _isDefaultChannelThresholdMetAfterDelete
-// Dependencies: [5, 1908, 5475, 5476, 673, 5474, 5482, 503, 4857, 1233, 2]
+// Dependencies: [5, 1908, 5476, 5477, 673, 5475, 5483, 503, 4858, 1233, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9723 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 9727 (_isDefaultChannelThresholdMetAfterDelete)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleUpdate" /* 5475 */;
-import { NUM_DEFAULT_CHATTABLE_CHANNELS_MIN as closure_7 } from "serverPromptToClientPrompt" /* 5476 */;
+import closure_6 from "handleUpdate" /* 5476 */;
+import { NUM_DEFAULT_CHATTABLE_CHANNELS_MIN as closure_7 } from "serverPromptToClientPrompt" /* 5477 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;
@@ -370,7 +370,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
             obj4[0] = tmp54;
             return obj4;
           } else {
-            obj = callback(4857);
+            obj = callback(4858);
             obj5 = { title: null, body: null };
             const intl = guildId(1233).intl;
             obj5[0] = intl.string(guildId(1233).t.ut7sq0);

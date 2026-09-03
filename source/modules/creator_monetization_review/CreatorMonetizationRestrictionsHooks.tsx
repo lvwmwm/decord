@@ -1,11 +1,11 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6109
+// Function ID: 6110
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 4114, 1908, 673, 6109, 6110, 586, 4113, 2]
+// Dependencies: [19, 4114, 1908, 673, 6110, 6111, 586, 4113, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 6108 (useShouldHideGuildPurchaseEntryPoints)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6109 */;
+// Module 6109 (useShouldHideGuildPurchaseEntryPoints)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6110 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;

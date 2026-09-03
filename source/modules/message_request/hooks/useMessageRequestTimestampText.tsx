@@ -1,10 +1,10 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16712
+// Function ID: 16713
 // Name: useMessageRequestTimestampText
-// Dependencies: [4493, 11, 12382, 586, 4074, 7535, 2]
+// Dependencies: [4493, 11, 12394, 586, 4074, 7536, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 16692 (useMessageRequestTimestampText)
+// Module 16712 (useMessageRequestTimestampText)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import hooksDefault from "hooks" /* 4074 */;
 import closure_3 from "generateOldThreadCutoff" /* 4493 */;
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/message_request/hoo
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12382);
+  let obj = _require(12394);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(586).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -40,7 +40,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12382);
+  let obj = _require(12394);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(586).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -53,8 +53,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _require(7535).getTimestampString(extractTimestampResult);
-      const tmpResult = _require(7535);
+      str = _require(7536).getTimestampString(extractTimestampResult);
+      const tmpResult = _require(7536);
     }
     return str;
   }

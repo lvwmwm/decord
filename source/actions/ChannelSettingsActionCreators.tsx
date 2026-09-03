@@ -1,15 +1,15 @@
-// Module ID: 8767
-// Function ID: 8768
+// Module ID: 8771
+// Function ID: 8772
 // Name: init
-// Dependencies: [5, 8768, 1386, 673, 706, 4333, 7519, 527, 6176, 2]
+// Dependencies: [5, 8772, 1386, 673, 706, 4333, 7520, 527, 6177, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8767 (init)
+// Module 8771 (init)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "normalizeChannelPropertyForCompare" /* 8768 */;
+import closure_4 from "normalizeChannelPropertyForCompare" /* 8772 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import ME from "ME" /* 673 */;
 

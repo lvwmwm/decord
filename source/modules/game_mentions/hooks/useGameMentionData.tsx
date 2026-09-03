@@ -1,14 +1,14 @@
-// Module ID: 5060
-// Function ID: 5061
+// Module ID: 5061
+// Function ID: 5062
 // Name: getGameMentionData
-// Dependencies: [4502, 5061, 1921, 5064, 586, 640, 2]
+// Dependencies: [4502, 5062, 1921, 5065, 586, 640, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 5060 (getGameMentionData)
+// Module 5061 (getGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 640 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5064 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5065 */;
 import closure_3 from "handleLoadMessages" /* 4502 */;
-import closure_4 from "set" /* 5061 */;
+import closure_4 from "set" /* 5062 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

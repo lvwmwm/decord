@@ -1,13 +1,13 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11424
+// Function ID: 11425
 // Name: getAppChannelBotUserIdFromApplication
-// Dependencies: [4519, 673, 11420, 503, 4127, 2]
+// Dependencies: [4519, 673, 11425, 503, 4127, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
-// Module 11419 (getAppChannelBotUserIdFromApplication)
+// Module 11424 (getAppChannelBotUserIdFromApplication)
 import fromStringAll from "fromString" /* 503 */;
 import Permissions from "Permissions" /* 4127 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11420 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 11425 */;
 import closure_3 from "addApplication" /* 4519 */;
 import { ChannelTypes } from "ME" /* 673 */;
 

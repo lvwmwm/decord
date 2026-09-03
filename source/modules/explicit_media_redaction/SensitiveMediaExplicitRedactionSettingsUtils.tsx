@@ -1,15 +1,15 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6153
+// Function ID: 6154
 // Name: resolveExplicitContentSettingWithDefaults
-// Dependencies: [1921, 4168, 1305, 4172, 4179, 4166, 6153, 2]
+// Dependencies: [1921, 4168, 1305, 4172, 4179, 4166, 6154, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 6152 (resolveExplicitContentSettingWithDefaults)
+// Module 6153 (resolveExplicitContentSettingWithDefaults)
 import create from "create" /* 1305 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;
-import getShouldObscureForSetting from "getShouldObscureForSetting" /* 6153 */;
+import getShouldObscureForSetting from "getShouldObscureForSetting" /* 6154 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 import { ExplicitContentFilterTypes } from "items" /* 4168 */;
 

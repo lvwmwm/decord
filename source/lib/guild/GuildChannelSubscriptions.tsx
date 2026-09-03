@@ -1,9 +1,9 @@
-// Module ID: 6140
-// Function ID: 6141
+// Module ID: 6141
+// Function ID: 6142
 // Name: reset
 // Dependencies: [1400, 12, 2]
 
-// Module 6140 (reset)
+// Module 6141 (reset)
 import set from "set" /* 2 */;
 import privDefault from "priv" /* 1400 */;
 

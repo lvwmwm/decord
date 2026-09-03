@@ -1,13 +1,13 @@
-// Module ID: 9976
-// Function ID: 9977
+// Module ID: 9980
+// Function ID: 9981
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 1908, 1921, 673, 21, 4478, 709, 6012, 586, 1233, 706, 4193, 5997, 5629, 9977, 4474, 2]
+// Dependencies: [19, 17, 1908, 1921, 673, 21, 4478, 709, 6013, 586, 1233, 706, 4193, 5998, 5630, 9981, 4474, 2]
 // Exports: default
 
-// Module 9976 (InstantInviteQRCodeActionSheet)
+// Module 9980 (InstantInviteQRCodeActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
-import frozenDefault from "frozen" /* 9977 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
+import frozenDefault from "frozen" /* 9981 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
@@ -65,7 +65,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
       if (null != store.getGuild(channel2.guild_id)) {
         const obj2 = { guild: null, size: null };
         obj2[0] = obj7.getGuild(channel2.guild_id);
-        obj2[1] = tmp6(6012).GuildIconSizes.LARGE;
+        obj2[1] = tmp6(6013).GuildIconSizes.LARGE;
         tmp13 = callback(GuildIconSizesDefault, obj2);
         const tmp16 = GuildIconSizesDefault;
       }
@@ -87,7 +87,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     const obj3 = { header: null, children: null };
     const obj4 = { title: null };
     obj4[0] = stringResult;
-    obj3[0] = callback(tmp6(5629).BottomSheetTitleHeader, obj4);
+    obj3[0] = callback(tmp6(5630).BottomSheetTitleHeader, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.container;
     const obj6 = { text: null, size: 240, style: null, accessibilityLabel: null };
@@ -122,7 +122,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     items3[1] = tmp19Result;
     obj5[1] = items3;
     obj3[1] = closure_10(View, obj5);
-    return callback(tmp6(5997).ActionSheet, obj3);
+    return callback(tmp6(5998).ActionSheet, obj3);
   }
   tmp12 = null;
   if (_location === constants.ADD_FRIENDS_MODAL) {

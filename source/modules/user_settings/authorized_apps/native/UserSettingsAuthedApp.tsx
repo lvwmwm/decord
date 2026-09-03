@@ -1,27 +1,27 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14785
+// Function ID: 14786
 // Name: WarningLabel
-// Dependencies: [19, 17, 1385, 5483, 1386, 4130, 4701, 1995, 673, 10875, 9070, 21, 4478, 709, 4433, 4474, 1498, 1499, 1233, 5969, 9466, 9306, 586, 12386, 1430, 4859, 12385, 4445, 9083, 2008, 500, 9073, 8690, 7771, 6251, 8656, 4333, 5495, 5490, 11, 11851, 9052, 6000, 6001, 5607, 2]
+// Dependencies: [19, 17, 1385, 5484, 1386, 4130, 4702, 1995, 673, 10879, 9074, 21, 4478, 709, 4433, 4474, 1498, 1499, 1233, 5970, 9470, 9310, 586, 12398, 1430, 4860, 12397, 4445, 9087, 2008, 500, 9077, 8694, 7774, 6252, 8660, 4333, 5496, 5491, 11, 11857, 9056, 6001, 6002, 5608, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14770 (WarningLabel)
+// Module 14785 (WarningLabel)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
 import Text from "Text" /* 4474 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5969 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 9466 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5970 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 9470 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1385 */;
-import closure_7 from "recomputeFromAppTokens" /* 5483 */;
+import closure_7 from "recomputeFromAppTokens" /* 5484 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_11 from "_getSystemLocale" /* 1995 */;
 import ME from "ME" /* 673 */;
-import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10875 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9070 */;
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10879 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9074 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

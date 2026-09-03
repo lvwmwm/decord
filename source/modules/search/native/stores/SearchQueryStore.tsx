@@ -1,18 +1,18 @@
-// Module ID: 12129
-// Function ID: 12130
+// Module ID: 12135
+// Function ID: 12136
 // Name: prototype
-// Dependencies: [1386, 4130, 1921, 7632, 7631, 673, 4674, 1233, 12130, 12142, 1990, 586, 706, 2]
+// Dependencies: [1386, 4130, 1921, 7633, 7632, 673, 4674, 1233, 12136, 12148, 1990, 586, 706, 2]
 
-// Module 12129 (prototype)
+// Module 12135 (prototype)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 12130 */;
-import isCompleteDefault from "isComplete" /* 12142 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 12136 */;
+import isCompleteDefault from "isComplete" /* 12148 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7632 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7631 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7633 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7632 */;
 import ME from "ME" /* 673 */;
 import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
 
@@ -190,11 +190,11 @@ const prototype = function SearchQueryStateManager(type) {
       const intl = obj(1233).intl;
       const stringResult = intl.string(obj(1233).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj[2] = "" + stringResult + ": " + obj(12130).quoteChannelName(channelName);
+      obj[2] = "" + stringResult + ": " + obj(12136).quoteChannelName(channelName);
       obj[3] = type.channelId;
       obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj];
-      const obj4 = obj(12130);
+      const obj4 = obj(12136);
     }
     items = items1;
   }

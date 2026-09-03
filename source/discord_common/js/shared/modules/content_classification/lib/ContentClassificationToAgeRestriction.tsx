@@ -1,18 +1,18 @@
-// Module ID: 5066
-// Function ID: 5067
+// Module ID: 5067
+// Function ID: 5068
 // Name: contentClassificationToAgeRestrictionConclusion
-// Dependencies: [5067, 5068, 503, 5069, 5070, 5071, 5072, 5073, 5074, 2]
+// Dependencies: [5068, 5069, 503, 5070, 5071, 5072, 5073, 5074, 5075, 2]
 // Exports: contentClassificationToAgeRestriction
 
-// Module 5066 (contentClassificationToAgeRestrictionConclusion)
+// Module 5067 (contentClassificationToAgeRestrictionConclusion)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 503 */;
-import AgeRestrictionSource from "AgeRestrictionSource" /* 5067 */;
-import AgeRestrictionStatus8 from "AgeRestrictionStatus" /* 5068 */;
-import frozen from "frozen" /* 5069 */;
-import set2 from "set" /* 5070 */;
-import set3 from "set" /* 5071 */;
-import set4 from "set" /* 5072 */;
+import AgeRestrictionSource from "AgeRestrictionSource" /* 5068 */;
+import AgeRestrictionStatus8 from "AgeRestrictionStatus" /* 5069 */;
+import frozen from "frozen" /* 5070 */;
+import set2 from "set" /* 5071 */;
+import set3 from "set" /* 5072 */;
+import set4 from "set" /* 5073 */;
 
 function contentClassificationToAgeRestrictionConclusion(data) {
   if (null == data) {
@@ -29,15 +29,15 @@ function contentClassificationToAgeRestrictionConclusion(data) {
         obj = { source: null, status: null };
         obj[0] = AgeRestrictionSource.AgeRestrictionSource.DISCORD_CLASSIFICATION;
         if (obj15.has(deserializeResult, frozen.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
-          ADULT = tmp28(5068).AgeRestrictionStatus.ADULT;
+          ADULT = tmp28(5069).AgeRestrictionStatus.ADULT;
           obj[1] = ADULT;
           let tmp12 = obj;
         } else {
           const tmp29Result = tmp29(503);
-          const AgeRestrictionStatus3 = tmp28(5068).AgeRestrictionStatus;
-          obj[1] = tmp29(503).hasAny(deserializeResult, tmp28(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE;
+          const AgeRestrictionStatus3 = tmp28(5069).AgeRestrictionStatus;
+          obj[1] = tmp29(503).hasAny(deserializeResult, tmp28(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE;
           tmp12 = obj;
-          const hasAnyResult = tmp29(503).hasAny(deserializeResult, tmp28(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
+          const hasAnyResult = tmp29(503).hasAny(deserializeResult, tmp28(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
         }
         items.push(tmp12);
         obj15 = fromStringAll;
@@ -49,14 +49,14 @@ function contentClassificationToAgeRestrictionConclusion(data) {
       obj = { source: null, status: null };
       obj[0] = AgeRestrictionSource.AgeRestrictionSource.MANUAL_CLASSIFICATION;
       if (obj2.has(deserializeResult1, frozen.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
-        obj[1] = tmp4(5068).AgeRestrictionStatus.ADULT;
+        obj[1] = tmp4(5069).AgeRestrictionStatus.ADULT;
         let tmp9 = obj;
       } else {
         const tmp6Result = tmp6(503);
-        const AgeRestrictionStatus2 = tmp4(5068).AgeRestrictionStatus;
-        obj[1] = tmp6(503).hasAny(deserializeResult1, tmp4(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE;
+        const AgeRestrictionStatus2 = tmp4(5069).AgeRestrictionStatus;
+        obj[1] = tmp6(503).hasAny(deserializeResult1, tmp4(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE;
         tmp9 = obj;
-        const hasAnyResult1 = tmp6(503).hasAny(deserializeResult1, tmp4(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
+        const hasAnyResult1 = tmp6(503).hasAny(deserializeResult1, tmp4(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
       }
       items.push(tmp9);
       tmp6 = importAll;
@@ -67,14 +67,14 @@ function contentClassificationToAgeRestrictionConclusion(data) {
       obj1 = { source: null, status: null };
       obj1[0] = AgeRestrictionSource.AgeRestrictionSource.AUTOMATED_CLASSIFICATION;
       if (obj12.has(deserializeResult2, frozen.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
-        obj1[1] = tmp24(5068).AgeRestrictionStatus.ADULT;
+        obj1[1] = tmp24(5069).AgeRestrictionStatus.ADULT;
         let tmp2 = obj1;
       } else {
         const tmp26Result = tmp26(503);
-        const AgeRestrictionStatus = tmp24(5068).AgeRestrictionStatus;
-        obj1[1] = tmp26(503).hasAny(deserializeResult2, tmp24(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
+        const AgeRestrictionStatus = tmp24(5069).AgeRestrictionStatus;
+        obj1[1] = tmp26(503).hasAny(deserializeResult2, tmp24(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
         tmp2 = obj1;
-        const hasAnyResult2 = tmp26(503).hasAny(deserializeResult2, tmp24(5069).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
+        const hasAnyResult2 = tmp26(503).hasAny(deserializeResult2, tmp24(5070).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
       }
       items.push(tmp2);
       obj12 = fromStringAll;
@@ -97,11 +97,11 @@ function contentClassificationToAgeRestrictionConclusion(data) {
                 tmp21 = tmp18;
               }
               obj2 = { source: null, status: null };
-              obj2[0] = tmp21(5067).AgeRestrictionSource.AGENCY_CLASSIFICATION_IGDB;
+              obj2[0] = tmp21(5068).AgeRestrictionSource.AGENCY_CLASSIFICATION_IGDB;
               obj2[1] = EVERYONE;
               AgeRestrictionStatus7 = items.push(obj2);
               someResult = themes.some((arg0) => {
-                const ADULT_THEMES = callback(5073).ContentRatingIGDBThemeSets.ADULT_THEMES;
+                const ADULT_THEMES = callback(5074).ContentRatingIGDBThemeSets.ADULT_THEMES;
                 return ADULT_THEMES.has(arg0);
               });
             }
@@ -154,7 +154,7 @@ function contentClassificationToAgeRestrictionConclusion(data) {
         if (null != tmp) {
           let tmp5 = callback2;
           let tmp6 = dependencyMap;
-          obj = callback2(5074);
+          obj = callback2(5075);
           let tmp7 = nextResult;
           let tmp8 = tmp;
           if (obj.compare(tmp3.status, tmp.status) > 0) {

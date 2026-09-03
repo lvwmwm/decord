@@ -1,10 +1,10 @@
-// Module ID: 5119
-// Function ID: 5120
+// Module ID: 5120
+// Function ID: 5121
 // Name: getMobileImageEncodingLadderConfig
 // Dependencies: [1467, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 5119 (getMobileImageEncodingLadderConfig)
+// Module 5120 (getMobileImageEncodingLadderConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

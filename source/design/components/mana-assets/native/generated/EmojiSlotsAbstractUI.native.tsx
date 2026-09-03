@@ -1,14 +1,14 @@
-// Module ID: 6518
-// Function ID: 6519
+// Module ID: 6519
+// Function ID: 6520
 // Name: EmojiSlotsAbstractUI
-// Dependencies: [21, 5501, 6519, 2]
+// Dependencies: [21, 5502, 6520, 2]
 // Exports: EmojiSlotsAbstractUI
 
-// Module 6518 (EmojiSlotsAbstractUI)
+// Module 6519 (EmojiSlotsAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6519 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6520 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiSlotsAbstractUI.native.tsx");

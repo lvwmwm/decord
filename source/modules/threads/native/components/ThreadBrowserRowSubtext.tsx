@@ -1,21 +1,21 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16540
+// Function ID: 16541
 // Name: MessageContent
-// Dependencies: [19, 17, 4470, 1991, 1921, 6159, 673, 502, 21, 4478, 709, 586, 7535, 4957, 5465, 4474, 1233, 4322, 6164, 4746, 11, 1296, 7641, 7879, 2]
+// Dependencies: [19, 17, 4470, 1991, 1921, 6160, 673, 502, 21, 4478, 709, 586, 7536, 4958, 5466, 4474, 1233, 4322, 6165, 4747, 11, 1296, 7642, 7882, 2]
 // Exports: ThreadSubtext
 
-// Module 16519 (MessageContent)
+// Module 16540 (MessageContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4746 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4957 */;
+import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4747 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4958 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "updateState" /* 6159 */;
+import closure_8 from "updateState" /* 6160 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -27,7 +27,7 @@ function MessageContent(arg0) {
   c3 = undefined;
   c4 = undefined;
   closure_5 = undefined;
-  let obj = message(6164);
+  let obj = message(6165);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   obj1 = message(586);
@@ -47,9 +47,9 @@ function MessageContent(arg0) {
   let tmp4 = useNullableMessageAuthorDefault(message);
   const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(message.id);
   const obj4 = DISCORD_EPOCHDefault;
-  const timestampString = message(7535).getTimestampString(extractTimestampResult);
-  const obj5 = message(7535);
-  const timestampAccessibilityLabel = message(7535).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(7536).getTimestampString(extractTimestampResult);
+  const obj5 = message(7536);
+  const timestampAccessibilityLabel = message(7536).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(7879);
+  let obj = usernameColor(7882);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp5 = !shouldShowRoleDot;
   if (!shouldShowRoleDot) {
@@ -264,7 +264,7 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(7535).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(7536).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -275,9 +275,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  let tmpResult = tmp(7535);
+  let tmpResult = tmp(7536);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  tmpResult = tmp(7535);
+  tmpResult = tmp(7536);
   obj = { thread, timestamp: timestampString, accessibilityLabel: tmpResult.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

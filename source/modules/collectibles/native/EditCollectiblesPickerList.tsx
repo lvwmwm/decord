@@ -1,10 +1,10 @@
-// Module ID: 8112
-// Function ID: 8113
+// Module ID: 8115
+// Function ID: 8116
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4478, 8098, 4474, 12, 8113, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 8101, 4474, 12, 8116, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 8112 (EditCollectiblesPickerList)
+// Module 8115 (EditCollectiblesPickerList)
 import Text from "Text" /* 4474 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;

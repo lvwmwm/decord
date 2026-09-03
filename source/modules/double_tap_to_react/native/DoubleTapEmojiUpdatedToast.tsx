@@ -1,10 +1,10 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9129
+// Function ID: 9130
 // Name: ToastEmoji
-// Dependencies: [19, 4470, 1924, 21, 4478, 709, 1234, 586, 1430, 5593, 4474, 1233, 4915, 1350, 4194, 2]
+// Dependencies: [19, 4470, 1924, 21, 4478, 709, 1234, 586, 1430, 5594, 4474, 1233, 4916, 1350, 4194, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9125 (ToastEmoji)
+// Module 9129 (ToastEmoji)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
@@ -89,7 +89,7 @@ const result = set.fileFinishedImporting("modules/double_tap_to_react/native/Dou
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4915);
+  let obj = emoji(4916);
   if (obj.getIsScreenReaderEnabled()) {
     const AccessibilityAnnouncer = tmp(1350).AccessibilityAnnouncer;
     const intl = tmp(1233).intl;

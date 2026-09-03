@@ -1,10 +1,10 @@
-// Module ID: 17687
-// Function ID: 17688
+// Module ID: 17711
+// Function ID: 17712
 // Name: OverviewScreen
-// Dependencies: [19, 21, 4478, 17688, 1498, 17689, 8707, 8708, 4926, 709, 4474, 1233, 2662, 6000, 8742, 17683, 11722, 17690, 10954, 2]
+// Dependencies: [19, 21, 4478, 17712, 1498, 17713, 8711, 8712, 4927, 709, 4474, 1233, 2662, 6001, 8746, 17707, 11727, 17714, 10958, 2]
 // Exports: default
 
-// Module 17687 (OverviewScreen)
+// Module 17711 (OverviewScreen)
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/safety_flows/native
 
 export default function OverviewScreen() {
   let tmp = callback2();
-  let obj = task(17688);
+  let obj = task(17712);
   task = obj.useSafetyFlowTask().task;
   obj1 = task(1498);
   const navigation = obj1.useNavigation();
@@ -50,32 +50,32 @@ export default function OverviewScreen() {
     const tasks = flow_context.tasks;
     if (tasks != null) {
       mapped = tasks.map((task_type) => {
-        const obj = { tip: task(17683).TASK_TYPE_TO_TITLE[task_type.task_type], index: arg1 + 1 };
-        return callback(navigation(8742), obj, task_type.task_type);
+        const obj = { tip: task(17707).TASK_TYPE_TO_TITLE[task_type.task_type], index: arg1 + 1 };
+        return callback(navigation(8746), obj, task_type.task_type);
       });
     }
   }
   const obj3 = { children: null };
   const obj4 = { children: null };
-  const items2 = [callback(task(6000).TableRowGroup, { hasIcons: true, children: mapped }), ];
+  const items2 = [callback(task(6001).TableRowGroup, { hasIcons: true, children: mapped }), ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl3 = tmp2(1233).intl;
   obj5[2] = intl3.string(navigation(2662)["0TnUrG"]);
   items2[1] = callback(task(4474).Text, obj5);
   obj2[1] = items2;
-  items1[2] = closure_5(task(4926).Stack, obj2);
+  items1[2] = closure_5(task(4927).Stack, obj2);
   obj[2] = items1;
-  obj4[0] = closure_5(task(4926).Stack, obj);
-  const items3 = [callback(task(8708).ModalContent, obj4), ];
+  obj4[0] = closure_5(task(4927).Stack, obj);
+  const items3 = [callback(task(8712).ModalContent, obj4), ];
   const obj6 = { children: null };
-  const items4 = [callback(navigation(17690), {}), ];
+  const items4 = [callback(navigation(17714), {}), ];
   const obj7 = { variant: "primary", text: null, onPress: null };
   const intl4 = tmp2(1233).intl;
   obj7[1] = intl4.string(navigation(2662).Ks6opt);
   obj7[2] = callback;
-  items4[1] = callback(task(10954).ModalActionButton, obj7);
+  items4[1] = callback(task(10958).ModalActionButton, obj7);
   obj6[0] = items4;
-  items3[1] = closure_5(task(11722).ModalFooter, obj6);
+  items3[1] = closure_5(task(11727).ModalFooter, obj6);
   obj3[0] = items3;
-  return closure_5(task(8707).ModalScreen, obj3);
+  return closure_5(task(8711).ModalScreen, obj3);
 };

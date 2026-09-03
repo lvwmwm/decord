@@ -1,10 +1,10 @@
-// Module ID: 4747
-// Function ID: 4748
+// Module ID: 4748
+// Function ID: 4749
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1991, 1921, 4748, 586, 4750, 2]
+// Dependencies: [19, 1991, 1921, 4749, 586, 4751, 2]
 // Exports: default
 
-// Module 4747 (useDisplayNameStyles)
+// Module 4748 (useDisplayNameStyles)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;

@@ -1,9 +1,9 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16213
+// Function ID: 16214
 // Name: RemoveMultiAccountUserButton
-// Dependencies: [32, 5, 19, 17, 1215, 4323, 1921, 12206, 12207, 16198, 673, 21, 7831, 4478, 709, 586, 1296, 4858, 1233, 12210, 5076, 15137, 15773, 4217, 4479, 8591, 695, 5561, 16199, 15774, 12216, 16200, 5617, 8372, 9238, 6016, 7617, 10883, 15799, 6060, 7724, 15798, 2]
+// Dependencies: [32, 5, 19, 17, 1215, 4323, 1921, 12213, 12214, 16214, 673, 21, 7834, 4478, 709, 586, 1296, 4859, 1233, 12217, 5077, 15152, 15789, 4217, 4479, 8595, 695, 5562, 16215, 15790, 12223, 16216, 5618, 8376, 9242, 6017, 7618, 10887, 15815, 6061, 7727, 15814, 2]
 
-// Module 16197 (RemoveMultiAccountUserButton)
+// Module 16213 (RemoveMultiAccountUserButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
@@ -12,12 +12,12 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "initialize" /* 4323 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { MultiAccountTokenStatus } from "initialize" /* 12206 */;
-import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12207 */;
-import { ManageAccountsScreens } from "ManageAccountsScreens" /* 16198 */;
+import { MultiAccountTokenStatus } from "initialize" /* 12213 */;
+import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12214 */;
+import { ManageAccountsScreens } from "ManageAccountsScreens" /* 16214 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
@@ -139,8 +139,8 @@ function RemoveMultiAccountUserButton(user) {
     };
     obj = { color: null };
     obj[0] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
-    obj[3] = callback2(tmp(15137).CircleMinusIcon, obj);
-    return callback2(tmp(5076).PressableOpacity, obj);
+    obj[3] = callback2(tmp(15152).CircleMinusIcon, obj);
+    return callback2(tmp(5077).PressableOpacity, obj);
   }
   let obj2 = user(586);
 }
@@ -320,7 +320,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
   let _require;
   c1 = undefined;
   c2 = undefined;
-  let obj = _require(6016);
+  let obj = _require(6017);
   _require = obj.useAccessibilityNativeStackOptions();
   [c1, c2] = callback(importAllResult.useState(false), 2);
   obj = {
@@ -380,14 +380,14 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return obj;
       },
       children() {
-        return callback2(_undefined(15799), {
+        return callback2(_undefined(15815), {
           handleLogin(login, password, undelete) {
-            let obj = callback(6060);
+            let obj = callback(6061);
             obj = { login, password, undelete };
             obj.login(obj);
           },
           onReset(arg0, arg1, arg2) {
-            callback(6060).loginReset(true);
+            callback(6061).loginReset(true);
           }
         });
       }
@@ -398,7 +398,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return callback2(_undefined(7724), { isMultiAccount: true });
+        return callback2(_undefined(7727), { isMultiAccount: true });
       }
     }),
     callback2(closure_20.Screen, {
@@ -407,7 +407,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return callback2(_undefined(15798), { isMultiAccount: true });
+        return callback2(_undefined(15814), { isMultiAccount: true });
       }
     })
   ];

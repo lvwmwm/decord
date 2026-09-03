@@ -1,9 +1,9 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14079
+// Function ID: 14080
 // Name: append
 // Dependencies: [2]
 
-// Module 14063 (append)
+// Module 14079 (append)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");

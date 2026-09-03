@@ -1,24 +1,24 @@
-// Module ID: 5376
-// Function ID: 5377
+// Module ID: 5377
+// Function ID: 5378
 // Name: sortKey
-// Dependencies: [4500, 1386, 5377, 1991, 4130, 1921, 4497, 4555, 5373, 1391, 5379, 4668, 4116, 4673, 5380, 4544, 2]
+// Dependencies: [4500, 1386, 5378, 1991, 4130, 1921, 4497, 4555, 5374, 1391, 5380, 4668, 4116, 4673, 5381, 4544, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5376 (sortKey)
+// Module 5377 (sortKey)
 import version from "version" /* 4116 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5379 */;
-import getHighestHoistedRole from "getHighestHoistedRole" /* 5380 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5380 */;
+import getHighestHoistedRole from "getHighestHoistedRole" /* 5381 */;
 import closure_3 from "reset" /* 4500 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleConnectionReset" /* 5377 */;
+import closure_5 from "handleConnectionReset" /* 5378 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import closure_9 from "updateVoiceState" /* 4497 */;
 import { getComparator } from "getVoiceStatesForGuild" /* 4555 */;
-import closure_11 from "buildStageChannelUserRoles" /* 5373 */;
+import closure_11 from "buildStageChannelUserRoles" /* 5374 */;
 import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 
 require = arg1;

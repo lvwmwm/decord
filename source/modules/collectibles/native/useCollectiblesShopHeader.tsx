@@ -1,20 +1,20 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15679
+// Function ID: 15680
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1921, 675, 673, 5395, 8569, 21, 4478, 709, 11932, 4474, 1233, 586, 11055, 11304, 7295, 5981, 5596, 4445, 11070, 2008, 695, 11557, 5398, 4723, 8911, 11059, 8015, 9218, 8807, 15666, 1498, 2]
+// Dependencies: [19, 17, 1921, 675, 673, 5396, 8573, 21, 4478, 709, 11938, 4474, 1233, 586, 11059, 11308, 7296, 5982, 5597, 4445, 11074, 2008, 695, 11562, 5399, 4724, 8915, 11063, 8018, 9222, 8811, 15680, 1498, 2]
 // Exports: default
 
-// Module 15665 (CollectiblesShopHeaderTitle)
+// Module 15679 (CollectiblesShopHeaderTitle)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import ShopIcon from "ShopIcon" /* 11932 */;
+import ShopIcon from "ShopIcon" /* 11938 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 675 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5395 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5396 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -54,11 +54,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(7295);
+      let obj = callback(7296);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5981).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
+      const items = [callback2(5982).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5981).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+      obj[1] = callback2(5982).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
       obj[2] = constants.FEATURED_PAGE;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -72,11 +72,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(7295);
+      let obj = callback(7296);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5981).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
+      const items = [callback2(5982).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5981).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+      obj[1] = callback2(5982).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
       obj[2] = constants.SHOP_ALL;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -90,11 +90,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(7295);
+      let obj = callback(7296);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5981).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
+      const items = [callback2(5982).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5981).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+      obj[1] = callback2(5982).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
       obj[2] = constants.ORBS;
       const result = obj.openCollectiblesShopMobile(obj);
     };

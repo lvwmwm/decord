@@ -1,9 +1,9 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7624
+// Function ID: 7625
 // Name: DEFAULT_BADGE_SIZE
 // Dependencies: [19, 17, 21, 4478, 709, 2]
 
-// Module 7623 (DEFAULT_BADGE_SIZE)
+// Module 7624 (DEFAULT_BADGE_SIZE)
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

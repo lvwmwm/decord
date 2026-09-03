@@ -1,9 +1,9 @@
-// Module ID: 6201
-// Function ID: 6202
+// Module ID: 6202
+// Function ID: 6203
 // Name: VoiceChannelEffectAnimationType
 // Dependencies: [2]
 
-// Module 6201 (VoiceChannelEffectAnimationType)
+// Module 6202 (VoiceChannelEffectAnimationType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsConstants.tsx");

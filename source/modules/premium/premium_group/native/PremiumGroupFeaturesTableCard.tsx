@@ -1,10 +1,10 @@
-// Module ID: 13364
-// Function ID: 13365
+// Module ID: 13379
+// Function ID: 13380
 // Name: BetaPill
-// Dependencies: [17, 7186, 21, 4478, 709, 4474, 1233, 13365, 1296, 4940, 4326, 8249, 2]
+// Dependencies: [17, 7187, 21, 4478, 709, 4474, 1233, 13380, 1296, 4941, 4326, 8253, 2]
 // Exports: default
 
-// Module 13364 (BetaPill)
+// Module 13379 (BetaPill)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
@@ -12,8 +12,8 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import Text from "Text" /* 4474 */;
-import items3 from "items" /* 7186 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13365 */;
+import items3 from "items" /* 7187 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13380 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -64,7 +64,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[1] = { x: 1, y: 0 };
     let obj2 = hexToRgba;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4940);
+    const tmp2Result = tmp2(4941);
     items[1] = hexToRgba.hexWithOpacity("#B845C1", 0.15);
     const obj4 = hexToRgba;
     items[2] = hexToRgba.hexWithOpacity("#AB5D8A", 0.15);
@@ -73,7 +73,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(8249), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(8253), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     obj1 = { variant: "text-sm/normal", style: null, children: null };

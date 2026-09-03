@@ -1,10 +1,10 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17011
+// Function ID: 17012
 // Name: getConsoleConnectingText
 // Dependencies: [673, 1233, 2]
 // Exports: getConsoleConnectingText
 
-// Module 16991 (getConsoleConnectingText)
+// Module 17011 (getConsoleConnectingText)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

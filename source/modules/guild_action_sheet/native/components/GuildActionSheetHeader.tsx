@@ -1,18 +1,18 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13945
+// Function ID: 13946
 // Name: CommunityPill
-// Dependencies: [19, 17, 13930, 1908, 6133, 673, 21, 4478, 709, 1235, 1233, 8885, 8884, 9382, 8888, 5076, 4194, 1296, 4474, 7727, 586, 1425, 13931, 13932, 1492, 6012, 1430, 1464, 7626, 4197, 5501, 8881, 13157, 2]
+// Dependencies: [19, 17, 13946, 1908, 6134, 673, 21, 4478, 709, 1235, 1233, 8889, 8888, 9386, 8892, 5077, 4194, 1296, 4474, 7730, 586, 1425, 13947, 13948, 1492, 6013, 1430, 1464, 7627, 4197, 5502, 8885, 13169, 2]
 // Exports: default
 
-// Module 13929 (CommunityPill)
+// Module 13945 (CommunityPill)
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 8885 */;
-import registerAssetDefault2 from "registerAsset" /* 8888 */;
+import registerAssetDefault from "registerAsset" /* 8889 */;
+import registerAssetDefault2 from "registerAsset" /* 8892 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 13930 */;
+import closure_6 from "initialize" /* 13946 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "handleConnectionOpenOrResumed" /* 6133 */;
+import closure_8 from "handleConnectionOpenOrResumed" /* 6134 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -26,10 +26,10 @@ function CommunityPill(guildVisibility) {
   const intl = GlobeEarthIcon(1233).intl;
   importDefault = intl.string(GlobeEarthIcon(1233).t.TME4LJ);
   let tmp4Result = registerAssetDefault;
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(8884).GuildVisibility.PUBLIC) {
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(8888).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1233).intl;
     importDefault = intl2.string(tmp2(1233).t.op2cJ6);
-    GlobeEarthIcon = tmp2(9382).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(9386).GlobeEarthIcon;
     tmp4Result = registerAssetDefault2;
   }
   let obj = {
@@ -49,7 +49,7 @@ function CommunityPill(guildVisibility) {
   obj[3] = intl3.string(GlobeEarthIcon(1233).t.K7iRig);
   items[1] = callback(GlobeEarthIcon(4474).Text, obj);
   obj[3] = items;
-  return callback2(GlobeEarthIcon(5076).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(5077).PressableOpacity, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

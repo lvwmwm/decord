@@ -1,10 +1,10 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16711
+// Function ID: 16712
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4130, 21, 4478, 1296, 709, 586, 4322, 16692, 1433, 4474, 1233, 16693, 16694, 2]
+// Dependencies: [19, 17, 4130, 21, 4478, 1296, 709, 586, 4322, 16712, 1433, 4474, 1233, 16713, 16714, 2]
 // Exports: default
 
-// Module 16691 (MessageRequestRowSenderDetails)
+// Module 16711 (MessageRequestRowSenderDetails)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import ensureAvatarSourceDefault from "ensureAvatarSource" /* 1433 */;
@@ -51,13 +51,13 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     return tmp2;
   });
-  obj1 = otherUser(16692);
+  obj1 = otherUser(16712);
   const messageRequestRelativeTimestampText = obj1.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * ensureAvatarSourceDefault.DEFAULT_AVATARS.length);
   obj = { style: tmp.avatarContainer, children: null };
   if (null != otherUser) {
-    obj = { avatarStyle: null, user: null, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
+    obj = { avatarStyle: null, user: null, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "celebraci\u00F3n" };
     obj[0] = tmp.avatar;
     obj[1] = otherUser;
     let avatarDecoration;
@@ -109,7 +109,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const obj8 = { style: null, channel: null };
     obj8[0] = tmp.messagePreview;
     obj8[1] = channel;
-    tmp11Result = tmp11(tmp7(16693), obj8);
+    tmp11Result = tmp11(tmp7(16713), obj8);
   }
   items5[1] = tmp11Result;
   if (flag) {
@@ -121,8 +121,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     obj9[1] = otherUser.id;
     const intl2 = tmp2(1233).intl;
     obj9[2] = intl2.string(tmp2(1233).t.hTltPn);
-    flag = tmp11(tmp7(16694), obj9);
-    const tmp7Result = tmp7(16694);
+    flag = tmp11(tmp7(16714), obj9);
+    const tmp7Result = tmp7(16714);
   }
   const obj10 = { children: null };
   items5[2] = flag;

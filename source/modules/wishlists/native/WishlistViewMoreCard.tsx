@@ -1,15 +1,15 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 11009
+// Function ID: 11010
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4478, 709, 1233, 10997, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1233, 11001, 4474, 2]
 // Exports: default
 
-// Module 11005 (WishlistViewMoreCard)
+// Module 11009 (WishlistViewMoreCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 10997 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 11001 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

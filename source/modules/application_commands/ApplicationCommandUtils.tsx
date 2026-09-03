@@ -1,21 +1,21 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7276
+// Function ID: 7277
 // Name: buildCommand
-// Dependencies: [1390, 4854, 4952, 673, 502, 7276, 1954, 7277, 503, 12, 38, 14, 4700, 2]
+// Dependencies: [1390, 4855, 4953, 673, 502, 7277, 1954, 7278, 503, 12, 38, 14, 4701, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7275 (buildCommand)
+// Module 7276 (buildCommand)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import IntegerDefault from "Integer" /* 14 */;
 import sum2 from "sum" /* 502 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import handleChanged from "handleChanged" /* 4854 */;
-import commandPermissions from "commandPermissions" /* 7276 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7277 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4952 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import handleChanged from "handleChanged" /* 4855 */;
+import commandPermissions from "commandPermissions" /* 7277 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7278 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4953 */;
 import ME from "ME" /* 673 */;
 import deserializeResult from "module_0" /* 0 */;
 import importAllResult from "fromString" /* 503 */;
@@ -54,7 +54,7 @@ function buildCommand(arg0) {
       CHAT = obj(1954).ApplicationCommandType.CHAT;
     }
     obj[6] = CHAT;
-    obj[7] = obj(7277).ApplicationCommandInputType.BOT;
+    obj[7] = obj(7278).ApplicationCommandInputType.BOT;
     ({ description: obj3[8], options } = command);
     let mapped2;
     if (options != null) {
@@ -329,10 +329,10 @@ function buildCommand(arg0) {
     ({ nsfw: obj3[17], contexts: obj3[18], integration_types: obj3[19], global_popularity_rank: obj3[20], handler: obj3[21] } = rootCommand);
     return obj;
   } else if (useKeyedPermissions) {
-    const keyPermissionsResult = obj(7276).keyPermissions(rootCommand.permissions);
+    const keyPermissionsResult = obj(7277).keyPermissions(rootCommand.permissions);
     obj = keyPermissionsResult;
     obj = keyPermissionsResult;
-    const obj2 = obj(7276);
+    const obj2 = obj(7277);
   } else {
     obj = {};
     const permissions = rootCommand.permissions;

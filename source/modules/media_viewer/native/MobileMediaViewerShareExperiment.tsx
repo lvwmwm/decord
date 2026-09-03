@@ -1,10 +1,10 @@
-// Module ID: 8651
-// Function ID: 8652
+// Module ID: 8655
+// Function ID: 8656
 // Name: apexExperiment
 // Dependencies: [1467, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8651 (apexExperiment)
+// Module 8655 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15111
+// Function ID: 15112
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15097, 21, 4217, 1296, 4478, 709, 4915, 12, 15098, 4479, 4482, 1348, 8224, 4474, 1623, 10753, 4446, 1233, 15101, 2]
+// Dependencies: [19, 17, 15112, 21, 4217, 1296, 4478, 709, 4916, 12, 15113, 4479, 4482, 1348, 8228, 4474, 1623, 10757, 4446, 1233, 15116, 2]
 // Exports: default
 
-// Module 15096 (SettingsAppearanceThemeCarousel)
+// Module 15111 (SettingsAppearanceThemeCarousel)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import importDefaultResult from "THEME_ITEM_WIDTH" /* 15097 */;
+import importDefaultResult from "THEME_ITEM_WIDTH" /* 15112 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importDefaultResult1 from "module_4217" /* 4217 */;

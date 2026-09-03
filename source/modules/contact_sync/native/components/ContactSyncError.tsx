@@ -1,10 +1,10 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12468
+// Function ID: 12469
 // Name: ContactSyncError
 // Dependencies: [19, 21, 4478, 4217, 4479, 4474, 2]
 // Exports: default
 
-// Module 12456 (ContactSyncError)
+// Module 12468 (ContactSyncError)
 import noopAll from "noop" /* 19 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import { jsx } from "jsxProd" /* 21 */;

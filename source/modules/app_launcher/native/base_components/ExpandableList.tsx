@@ -1,12 +1,12 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 11909
+// Function ID: 11910
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4478, 8591, 4217, 4479, 4482, 5607, 1233, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 8595, 4217, 4479, 4482, 5608, 1233, 4474, 2]
 // Exports: default
 
-// Module 11903 (ExpandableList)
+// Module 11909 (ExpandableList)
 import _modDef4217 from "module_4217" /* 4217 */;
-import usePreviousDefault from "usePrevious" /* 8591 */;
+import usePreviousDefault from "usePrevious" /* 8595 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -206,7 +206,7 @@ export default function ExpandableList(items) {
         tmp4(obj);
       }
     };
-    obj5 = tmp16(tmp9(5607).TableRow, obj5);
+    obj5 = tmp16(tmp9(5608).TableRow, obj5);
     obj7[0] = obj5;
     tmp16Result = tmp16(tmp17, obj7);
   }

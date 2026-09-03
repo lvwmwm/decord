@@ -1,11 +1,11 @@
-// Module ID: 5947
-// Function ID: 5948
+// Module ID: 5948
+// Function ID: 5949
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 4478, 709, 5602, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5603, 2]
 
-// Module 5947 (NavScrim)
+// Module 5948 (NavScrim)
 import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

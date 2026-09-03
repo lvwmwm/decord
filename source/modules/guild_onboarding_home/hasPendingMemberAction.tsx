@@ -1,17 +1,17 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4707
+// Function ID: 4708
 // Name: hasPendingMemberAction
-// Dependencies: [1386, 1991, 1908, 4707, 4708, 673, 4108, 4709, 1398, 2]
+// Dependencies: [1386, 1991, 1908, 4708, 4709, 673, 4108, 4710, 1398, 2]
 // Exports: hasPendingMemberAction
 
-// Module 4706 (hasPendingMemberAction)
+// Module 4707 (hasPendingMemberAction)
 import hasFlagAll from "hasFlag" /* 1398 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 4709 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 4710 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleSettingsLoadSuccess" /* 4707 */;
-import closure_7 from "set" /* 4708 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 4708 */;
+import closure_7 from "set" /* 4709 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 

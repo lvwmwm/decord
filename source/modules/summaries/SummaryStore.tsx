@@ -1,24 +1,24 @@
-// Module ID: 11202
-// Function ID: 11203
+// Module ID: 11206
+// Function ID: 11207
 // Name: handleQuickSwitcherUpdate
-// Dependencies: [32, 4391, 9945, 1386, 1908, 4493, 1980, 4701, 1921, 11203, 9946, 586, 11, 684, 11204, 706, 11205, 12, 2]
+// Dependencies: [32, 4391, 9949, 1386, 1908, 4493, 1980, 4702, 1921, 11207, 9950, 586, 11, 684, 11208, 706, 11209, 12, 2]
 
-// Module 11202 (handleQuickSwitcherUpdate)
+// Module 11206 (handleQuickSwitcherUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import canSeeChannelSummaries from "canSeeChannelSummaries" /* 11204 */;
+import canSeeChannelSummaries from "canSeeChannelSummaries" /* 11208 */;
 import closure_7 from "_slicedToArray" /* 32 */;
 import closure_8 from "getHash" /* 4391 */;
-import closure_9 from "handleConnectionOpen" /* 9945 */;
+import closure_9 from "handleConnectionOpen" /* 9949 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
 import closure_12 from "generateOldThreadCutoff" /* 4493 */;
 import closure_13 from "handleConnectionOpen" /* 1980 */;
-import closure_14 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_14 from "updateUserGuildSettingsInternal" /* 4702 */;
 import closure_15 from "mergeGuildAvatar" /* 1921 */;
-import { SUMMARY_POLL_INTERVAL } from "result" /* 11203 */;
+import { SUMMARY_POLL_INTERVAL } from "result" /* 11207 */;
 
 require = arg1;
 function handleQuickSwitcherUpdate() {
@@ -101,11 +101,11 @@ prototype["findSummary"] = function findSummary(channelId, summaryId) {
   }
   return found;
 };
-prototype["selectedSummary"] = function selectedSummary(id) {
+prototype["selectedSummary"] = function selectedSummary(channel_id) {
   let findSummaryResult = null;
   if (null != closure_6) {
     findSummaryResult = null;
-    if (closure_6.channelId === id) {
+    if (closure_6.channelId === channel_id) {
       findSummaryResult = null;
       if (null != closure_6.summaryId) {
         let summaryId;
@@ -113,7 +113,7 @@ prototype["selectedSummary"] = function selectedSummary(id) {
         if (closure_6 != null) {
           summaryId = closure_6.summaryId;
         }
-        findSummaryResult = this.findSummary(id, summaryId);
+        findSummaryResult = this.findSummary(channel_id, summaryId);
       }
     }
   }
@@ -275,7 +275,7 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        obj = summaryFromServer(11205);
+        obj = summaryFromServer(11209);
         summaryFromServer = obj.createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
         if (items == null) {

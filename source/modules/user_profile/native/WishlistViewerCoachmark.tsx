@@ -1,11 +1,11 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12853
+// Function ID: 12854
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1383, 21, 4478, 12842, 1233, 8987, 2]
+// Dependencies: [19, 17, 1383, 21, 4478, 12854, 1233, 8991, 2]
 // Exports: default
 
-// Module 12841 (CoachmarkImage)
-import metadataDefault from "metadata" /* 12842 */;
+// Module 12853 (CoachmarkImage)
+import metadataDefault from "metadata" /* 12854 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;

@@ -1,10 +1,10 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15843
+// Function ID: 15844
 // Name: getActiveTabsRoute
 // Dependencies: [32, 19, 1386, 1980, 4299, 673, 1393, 4333, 4332, 4335, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 15827 (getActiveTabsRoute)
+// Module 15843 (getActiveTabsRoute)
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import useChatLayoutDefault from "useChatLayout" /* 4335 */;

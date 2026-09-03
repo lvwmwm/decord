@@ -1,19 +1,19 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12086
+// Function ID: 12087
 // Name: DoubleTapToReactChatInputBannerInner
-// Dependencies: [32, 19, 17, 4470, 1383, 1924, 21, 4478, 709, 1234, 644, 5593, 1430, 4474, 1233, 12081, 5076, 5559, 8907, 500, 4217, 4479, 1296, 4445, 12173, 2008, 8591, 4946, 8998, 4166, 7889, 7886, 10639, 1372, 2]
+// Dependencies: [32, 19, 17, 4470, 1383, 1924, 21, 4478, 709, 1234, 644, 5594, 1430, 4474, 1233, 12087, 5077, 5560, 8911, 500, 4217, 4479, 1296, 4445, 12179, 2008, 8595, 4947, 9002, 4166, 7892, 7889, 10643, 1372, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 12080 (DoubleTapToReactChatInputBannerInner)
+// Module 12086 (DoubleTapToReactChatInputBannerInner)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import XSmallIcon from "XSmallIcon" /* 5559 */;
-import EmojiDefault from "Emoji" /* 5593 */;
-import renderChannelBadge from "renderChannelBadge" /* 12081 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import XSmallIcon from "XSmallIcon" /* 5560 */;
+import EmojiDefault from "Emoji" /* 5594 */;
+import renderChannelBadge from "renderChannelBadge" /* 12087 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

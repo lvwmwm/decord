@@ -1,12 +1,12 @@
-// Module ID: 12321
-// Function ID: 12322
+// Module ID: 12333
+// Function ID: 12334
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1908, 4365, 673, 12287, 586, 4368, 12284, 2]
+// Dependencies: [1908, 4365, 673, 12299, 586, 4368, 12296, 2]
 // Exports: default
 
-// Module 12321 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12284 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12287 */;
+// Module 12333 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12296 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12299 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 import { GuildFeatures } from "ME" /* 673 */;

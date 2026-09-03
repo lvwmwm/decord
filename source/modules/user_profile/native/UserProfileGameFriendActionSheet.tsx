@@ -1,10 +1,10 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12729
+// Function ID: 12730
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 32, 19, 17, 4130, 673, 21, 4478, 709, 9085, 5999, 5559, 1296, 4474, 12718, 5967, 4673, 9073, 4193, 4445, 5997, 5629, 1233, 2]
+// Dependencies: [5, 32, 19, 17, 4130, 673, 21, 4478, 709, 9089, 6000, 5560, 1296, 4474, 12730, 5968, 4673, 9077, 4193, 4445, 5998, 5630, 1233, 2]
 // Exports: default
 
-// Module 12717 (GameFriendApplicationRow)
+// Module 12729 (GameFriendApplicationRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;

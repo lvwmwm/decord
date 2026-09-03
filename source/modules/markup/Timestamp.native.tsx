@@ -1,13 +1,13 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10236
+// Function ID: 10237
 // Name: Timestamp
-// Dependencies: [19, 21, 4478, 709, 10233, 1296, 4194, 2]
+// Dependencies: [19, 21, 4478, 709, 10237, 1296, 4194, 2]
 // Exports: default
 
-// Module 10232 (Timestamp)
+// Module 10236 (Timestamp)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import itemsDefault from "items" /* 10233 */;
+import itemsDefault from "items" /* 10237 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 15352
-// Function ID: 15353
-// Dependencies: [5, 19, 17, 1921, 673, 8187, 21, 4478, 586, 13246, 1945, 5961, 8188, 8177, 8372, 15353, 8984, 8402, 8226, 1233, 2]
+// Module ID: 15366
+// Function ID: 15367
+// Dependencies: [5, 19, 17, 1921, 673, 8191, 21, 4478, 586, 13258, 1945, 5962, 8192, 8181, 8376, 15367, 8988, 8406, 8230, 1233, 2]
 
-// Module 15352
-import contextDefault from "context" /* 5961 */;
-import _modDef8984 from "module_8984" /* 8984 */;
-import BackwardsCompatibleAppIconRowsDefault from "BackwardsCompatibleAppIconRows" /* 15353 */;
+// Module 15366
+import contextDefault from "context" /* 5962 */;
+import _modDef8988 from "module_8988" /* 8988 */;
+import BackwardsCompatibleAppIconRowsDefault from "BackwardsCompatibleAppIconRows" /* 15367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { getIconById } from "items" /* 8187 */;
+import { getIconById } from "items" /* 8191 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(() => {
                     if (v0 !== id) {
                       if (tmp27) {
                         if (!dependencyMap) {
-                          let obj4 = v0(8177);
+                          let obj4 = v0(8181);
                           obj1 = { initialUpsellKey: null, imageSource: null };
                           obj1[0] = closure_1_6.APP_ICONS;
                           obj1[1] = tmp28;
@@ -74,11 +74,11 @@ const memoResult = importAllResult.memo(() => {
                       dependencyMap = 1;
                       v0 = 1;
                       let obj2 = { value: null, done: false };
-                      obj2[0] = lib(13246).setAppIcon(id, premiumType);
+                      obj2[0] = lib(13258).setAppIcon(id, premiumType);
                       return obj2;
                     }
                   } else {
-                    obj2 = lib(13246);
+                    obj2 = lib(13258);
                     let premiumType1;
                     if (lib != null) {
                       premiumType1 = lib.premiumType;
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo(() => {
                     dependencyMap = 2;
                     v0 = 1;
                     const obj3 = { value: null, done: false };
-                    obj3[0] = obj2.setAppIcon(lib(8188).FreemiumAppIconIds.DEFAULT, premiumType1);
+                    obj3[0] = obj2.setAppIcon(lib(8192).FreemiumAppIconIds.DEFAULT, premiumType1);
                     return obj3;
                   }
                 }
@@ -132,7 +132,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = stateFromStores(586);
   const items = [_onSelect];
   stateFromStores = obj.useStateFromStores(items, () => _onSelect.getCurrentUser());
-  obj1 = stateFromStores(13246);
+  obj1 = stateFromStores(13258);
   importDefault = obj1.useCurrentAppIcon();
   let obj2 = stateFromStores(1945);
   const isPremiumResult = obj2.isPremium(stateFromStores);
@@ -154,7 +154,7 @@ const memoResult = importAllResult.memo(() => {
     }
   };
   obj[0] = callback(obj, obj1);
-  const children = [callback(stateFromStores(8372).Form, obj), ];
+  const children = [callback(stateFromStores(8376).Form, obj), ];
   let tmp9Result = !isPremiumResult;
   if (!isPremiumResult) {
     let obj3 = { style: null, children: null };
@@ -166,9 +166,9 @@ const memoResult = importAllResult.memo(() => {
     };
     const intl = tmp2(1233).intl;
     obj4[1] = intl.string(tmp2(1233).t.M0rDSO);
-    obj3[1] = tmp9(_modDef8984, obj4);
+    obj3[1] = tmp9(_modDef8988, obj4);
     tmp9Result = tmp9(obj, obj3);
-    const tmp6Result = _modDef8984;
+    const tmp6Result = _modDef8988;
   }
   children[1] = tmp9Result;
   return closure_11(closure_10, { children });

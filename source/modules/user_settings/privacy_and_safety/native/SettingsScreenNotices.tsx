@@ -1,16 +1,16 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14659
+// Function ID: 14660
 // Name: items
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 7347, 14645, 14646, 4172, 5375, 4733, 14647, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 709, 7348, 14660, 14661, 4172, 5376, 4734, 14662, 2]
 // Exports: default
 
-// Module 14644 (items)
+// Module 14659 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4733 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5375 */;
-import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14645 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14647 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5376 */;
+import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14660 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14662 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;

@@ -1,14 +1,14 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15908
+// Function ID: 15909
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1385, 4500, 4130, 21, 15893, 15905, 15906, 644, 15883, 2]
+// Dependencies: [19, 1385, 4500, 4130, 21, 15909, 15921, 15922, 644, 15899, 2]
 // Exports: default, useCallActivityData
 
-// Module 15892 (HappeningNowCardUnifiedVC)
+// Module 15908 (HappeningNowCardUnifiedVC)
 import noopAll from "noop" /* 19 */;
-import IconOrPreviewDefault from "IconOrPreview" /* 15893 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15905 */;
-import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15906 */;
+import IconOrPreviewDefault from "IconOrPreview" /* 15909 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15921 */;
+import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15922 */;
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "reset" /* 4500 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;

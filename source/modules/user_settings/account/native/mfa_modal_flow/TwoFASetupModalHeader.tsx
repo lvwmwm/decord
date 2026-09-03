@@ -1,9 +1,9 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14628
+// Function ID: 14629
 // Name: PageMarker
 // Dependencies: [19, 17, 21, 4478, 709, 2]
 
-// Module 14613 (PageMarker)
+// Module 14628 (PageMarker)
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

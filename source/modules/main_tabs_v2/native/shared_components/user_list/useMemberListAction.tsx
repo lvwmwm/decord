@@ -1,10 +1,10 @@
-// Module ID: 11409
-// Function ID: 11410
+// Module ID: 11414
+// Function ID: 11415
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1386, 4120, 4130, 1921, 10318, 673, 21, 4478, 644, 9721, 7784, 4332, 11410, 11411, 1233, 10136, 10137, 4298, 1372, 11413, 11416, 6249, 11417, 1890, 9931, 8374, 2]
+// Dependencies: [32, 19, 17, 1386, 4120, 4130, 1921, 10322, 673, 21, 4478, 644, 9725, 7787, 4332, 11415, 11416, 1233, 10140, 10141, 4298, 1372, 11418, 11421, 6250, 11422, 1890, 9935, 8378, 2]
 // Exports: default
 
-// Module 11409 (useMemberListAction)
+// Module 11414 (useMemberListAction)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -18,7 +18,7 @@ import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "disabled", listActionHeight: "Date" };
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "PX_16" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

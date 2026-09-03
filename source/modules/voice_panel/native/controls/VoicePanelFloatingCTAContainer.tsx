@@ -1,20 +1,20 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17013
+// Function ID: 17014
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1386, 12063, 12066, 502, 21, 15844, 709, 4478, 4926, 8374, 4204, 12062, 16874, 6261, 644, 16870, 16994, 4217, 12069, 10951, 4927, 7805, 10639, 2]
+// Dependencies: [32, 19, 1386, 12069, 12072, 502, 21, 15860, 709, 4478, 4927, 8378, 4204, 12068, 16894, 6262, 644, 16890, 17014, 4217, 12075, 10955, 4928, 7808, 10643, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 16993 (FloatingCTA)
+// Module 17013 (FloatingCTA)
 import ThemesDefault from "Themes" /* 709 */;
 import ManaContext from "ManaContext" /* 4204 */;
-import Stack from "Stack" /* 4926 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8374 */;
-import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 15844 */;
+import Stack from "Stack" /* 4927 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8378 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 15860 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import { UI_SHOW_HIDE_PHYSICS } from "VoicePanelModes" /* 12063 */;
-import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 12066 */;
+import { UI_SHOW_HIDE_PHYSICS } from "VoicePanelModes" /* 12069 */;
+import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 12072 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

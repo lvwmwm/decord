@@ -1,10 +1,10 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7240
+// Function ID: 7241
 // Name: LIMITED_GUILD_MEMBER_THRESHOLD
 // Dependencies: [1386, 4398, 673, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 7239 (LIMITED_GUILD_MEMBER_THRESHOLD)
+// Module 7240 (LIMITED_GUILD_MEMBER_THRESHOLD)
 import closure_0 from "ensureGuildLoaded" /* 1386 */;
 import closure_1 from "handleInviteData" /* 4398 */;
 import { ChannelTypes } from "ME" /* 673 */;

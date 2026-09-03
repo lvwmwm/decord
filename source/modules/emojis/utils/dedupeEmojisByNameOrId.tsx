@@ -1,10 +1,10 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5417
+// Function ID: 5418
 // Name: dedupeEmojisByNameOrId
 // Dependencies: [4134, 2]
 // Exports: default
 
-// Module 5416 (dedupeEmojisByNameOrId)
+// Module 5417 (dedupeEmojisByNameOrId)
 import set from "set" /* 2 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 

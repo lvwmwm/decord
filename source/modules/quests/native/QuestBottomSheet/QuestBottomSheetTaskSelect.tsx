@@ -1,12 +1,12 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 15004
+// Function ID: 15005
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5395, 21, 6000, 5607, 12857, 1233, 9213, 2]
+// Dependencies: [19, 5396, 21, 6001, 5608, 12869, 1233, 9217, 2]
 // Exports: default
 
-// Module 14989 (QuestBottomSheetTaskSelect)
+// Module 15004 (QuestBottomSheetTaskSelect)
 import noopAll from "noop" /* 19 */;
-import { QuestTaskPlatform } from "QuestsExperimentLocations" /* 5395 */;
+import { QuestTaskPlatform } from "QuestsExperimentLocations" /* 5396 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Quest
 export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
   let obj = { hasIcons: true, children: null };
-  obj = { arrow: true, icon: callback(onTaskSelect(12857).ScreenIcon, {}), label: null, onPress: null };
+  obj = { arrow: true, icon: callback(onTaskSelect(12869).ScreenIcon, {}), label: null, onPress: null };
   const intl = onTaskSelect(1233).intl;
   obj[2] = intl.string(onTaskSelect(1233).t["QXc01+"]);
   obj[3] = function onPress() {
@@ -27,8 +27,8 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  const items = [callback(onTaskSelect(5607).TableRow, obj), ];
-  obj = { arrow: true, icon: callback(onTaskSelect(9213).GameControllerIcon, {}), label: null, onPress: null };
+  const items = [callback(onTaskSelect(5608).TableRow, obj), ];
+  obj = { arrow: true, icon: callback(onTaskSelect(9217).GameControllerIcon, {}), label: null, onPress: null };
   const intl2 = onTaskSelect(1233).intl;
   obj[2] = intl2.string(onTaskSelect(1233).t["8lAfuB"]);
   obj[3] = function onPress() {
@@ -38,7 +38,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  items[1] = callback(onTaskSelect(5607).TableRow, obj);
+  items[1] = callback(onTaskSelect(5608).TableRow, obj);
   obj[1] = items;
-  return callback2(onTaskSelect(6000).TableRowGroup, obj);
+  return callback2(onTaskSelect(6001).TableRowGroup, obj);
 };

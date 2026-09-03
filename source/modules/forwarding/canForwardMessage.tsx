@@ -1,10 +1,10 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11472
+// Function ID: 11473
 // Name: canForwardMessage
 // Dependencies: [1982, 1386, 1908, 4120, 673, 1398, 586, 2]
 // Exports: useCanForwardMessage
 
-// Module 11467 (canForwardMessage)
+// Module 11472 (canForwardMessage)
 import hasFlag from "hasFlag" /* 1398 */;
 import closure_2 from "isSubscriptionGated" /* 1982 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;

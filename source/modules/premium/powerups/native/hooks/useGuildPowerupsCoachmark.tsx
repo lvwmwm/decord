@@ -1,10 +1,10 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16008
+// Function ID: 16009
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4470, 1908, 4365, 673, 1383, 502, 21, 4478, 709, 586, 4413, 4384, 12301, 12283, 15993, 12267, 12309, 1233, 2400, 12311, 15994, 12308, 4368, 15990, 15995, 15996, 12339, 15997, 8987, 2]
+// Dependencies: [19, 4470, 1908, 4365, 673, 1383, 502, 21, 4478, 709, 586, 4413, 4384, 12313, 12295, 16009, 12279, 12321, 1233, 2400, 12323, 16010, 12320, 4368, 16006, 16011, 16012, 12351, 16013, 8991, 2]
 // Exports: default
 
-// Module 15992 (useGuildPowerupsCoachmark)
+// Module 16008 (useGuildPowerupsCoachmark)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

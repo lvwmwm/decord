@@ -1,14 +1,14 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 11936
+// Function ID: 11937
 // Name: BillIcon
-// Dependencies: [19, 21, 709, 4196, 11931, 2]
+// Dependencies: [19, 21, 709, 4196, 11937, 2]
 // Exports: BillIcon
 
-// Module 11930 (BillIcon)
+// Module 11936 (BillIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11931 */;
+import registerAsset from "registerAsset" /* 11937 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

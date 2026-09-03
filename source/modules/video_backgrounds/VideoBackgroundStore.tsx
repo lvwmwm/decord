@@ -1,13 +1,13 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9813
+// Function ID: 9814
 // Name: handleSyncedStoresUpdate
-// Dependencies: [1339, 4529, 1980, 1921, 9810, 4579, 586, 706, 2]
+// Dependencies: [1339, 4529, 1980, 1921, 9814, 4579, 586, 706, 2]
 
-// Module 9809 (handleSyncedStoresUpdate)
+// Module 9813 (handleSyncedStoresUpdate)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
-import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9810 */;
+import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9814 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_4 from "handleConnectionOpen" /* 1980 */;

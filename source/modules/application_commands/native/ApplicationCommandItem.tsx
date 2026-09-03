@@ -1,15 +1,15 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12200
+// Function ID: 12201
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 1991, 10362, 21, 4478, 709, 4935, 586, 12021, 5076, 1233, 5501, 4474, 2]
+// Dependencies: [19, 17, 1991, 10366, 21, 4478, 709, 4936, 586, 12027, 5077, 1233, 5502, 4474, 2]
 // Exports: default
 
-// Module 12193 (ApplicationCommandItem)
+// Module 12200 (ApplicationCommandItem)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10362 */;
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10366 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

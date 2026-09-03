@@ -1,16 +1,16 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10019
+// Function ID: 10020
 // Name: createSoundForPack
-// Dependencies: [10016, 4323, 9804, 3, 10018, 10019, 2]
+// Dependencies: [10020, 4323, 9808, 3, 10022, 10023, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 10015 (createSoundForPack)
+// Module 10019 (createSoundForPack)
 import timestampDefault from "timestamp" /* 3 */;
-import getSoundPackDefault from "getSoundPack" /* 10018 */;
-import _createSound from "_createSound" /* 10019 */;
-import closure_3 from "Soundpacks" /* 10016 */;
+import getSoundPackDefault from "getSoundPack" /* 10022 */;
+import _createSound from "_createSound" /* 10023 */;
+import closure_3 from "Soundpacks" /* 10020 */;
 import closure_4 from "initialize" /* 4323 */;
-import { SoundOutputChannel } from "SoundOutputChannel" /* 9804 */;
+import { SoundOutputChannel } from "SoundOutputChannel" /* 9808 */;
 
 require = arg1;
 let closure_6 = new timestampDefault("SoundUtils");
@@ -98,7 +98,7 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
     if (flag === undefined) {
       flag = false;
     }
-    const mobileAudioSound = new _require(10019).MobileAudioSound(tmp13, arg0, num, outputChannel, flag);
+    const mobileAudioSound = new _require(10023).MobileAudioSound(tmp13, arg0, num, outputChannel, flag);
     if (null != arg2) {
       mobileAudioSound.playWithListener().then((arg0) => {
         if (arg0) {

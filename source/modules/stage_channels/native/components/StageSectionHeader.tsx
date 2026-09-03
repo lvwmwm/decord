@@ -1,14 +1,14 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 10162
+// Function ID: 10163
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4478, 709, 4217, 4479, 4474, 1296, 5951, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4217, 4479, 4474, 1296, 5952, 2]
 // Exports: default
 
-// Module 10158 (StageSectionHeader)
+// Module 10162 (StageSectionHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import registerAssetDefault from "registerAsset" /* 5951 */;
+import registerAssetDefault from "registerAsset" /* 5952 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

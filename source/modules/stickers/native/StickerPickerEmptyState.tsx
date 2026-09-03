@@ -1,16 +1,16 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10431
+// Function ID: 10432
 // Name: EmptyStateSticker
-// Dependencies: [32, 19, 17, 5452, 4169, 673, 1923, 21, 4478, 10401, 10283, 5961, 5981, 586, 695, 4474, 1233, 5076, 4446, 4447, 4928, 5501, 8224, 10421, 2]
+// Dependencies: [32, 19, 17, 5453, 4169, 673, 1923, 21, 4478, 10405, 10287, 5962, 5982, 586, 695, 4474, 1233, 5077, 4446, 4447, 4929, 5502, 8228, 10425, 2]
 // Exports: default
 
-// Module 10427 (EmptyStateSticker)
-import StickerDefault from "Sticker" /* 10283 */;
-import useStickerPackCategories from "useStickerPackCategories" /* 10401 */;
+// Module 10431 (EmptyStateSticker)
+import StickerDefault from "Sticker" /* 10287 */;
+import useStickerPackCategories from "useStickerPackCategories" /* 10405 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "loadSavedGuildStickers" /* 5452 */;
+import closure_6 from "loadSavedGuildStickers" /* 5453 */;
 import { EMPTY_STATE_STICKERS } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
 import ME from "ME" /* 673 */;
 import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
@@ -37,16 +37,16 @@ let result = require("set").fileFinishedImporting("modules/stickers/native/Stick
 export default function _default() {
   const tmp = callback4();
   const _require = tmp;
-  let obj = _require(10401);
+  let obj = _require(10405);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5961)(analyticsLocations(5981).EMPTY_STATE).analyticsLocations;
+  analyticsLocations = analyticsLocations(5962)(analyticsLocations(5982).EMPTY_STATE).analyticsLocations;
   obj1 = _require(586);
   const items = [closure_6];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
     const mapped = closure_7.map((arg0) => stickerById.getStickerById(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
-  const tmp3 = analyticsLocations(5961);
+  const tmp3 = analyticsLocations(5962);
   [dependencyMap, closure_3] = callback(React.useState(null), 2);
   const items1 = [analyticsLocations];
   const effect = React.useEffect(() => {
@@ -112,15 +112,15 @@ export default function _default() {
       return closure_1_11(lib(closure_1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5[0] = analyticsLocations(8224);
+  obj5[0] = analyticsLocations(8228);
   obj5[1] = tmp.nitroWheel;
-  obj4[0] = callback2(analyticsLocations(5501), obj5);
+  obj4[0] = callback2(analyticsLocations(5502), obj5);
   const intl3 = _require(1233).intl;
   obj4[1] = intl3.string(_require(1233).t.pj0XBN);
   obj4[4] = function onPress() {
     return analyticsLocations(table[23])({ section: constants.EXPRESSION_PICKER });
   };
-  obj3[1] = callback2(_require(4928).Button, obj4);
+  obj3[1] = callback2(_require(4929).Button, obj4);
   items2[3] = callback2(View, obj3);
   obj[0] = items2;
   return callback3(View, obj);

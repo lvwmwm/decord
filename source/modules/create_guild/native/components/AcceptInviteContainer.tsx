@@ -1,10 +1,10 @@
-// Module ID: 12478
-// Function ID: 12479
+// Module ID: 12490
+// Function ID: 12491
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 1991, 1908, 4462, 4108, 21, 4478, 709, 1498, 586, 5503, 1398, 5470, 2008, 7490, 9681, 6168, 8664, 9144, 12479, 5561, 4204, 2]
+// Dependencies: [5, 19, 1991, 1908, 4462, 4108, 21, 4478, 709, 1498, 586, 5504, 1398, 5471, 2008, 7491, 9685, 6169, 8668, 9148, 12491, 5562, 4204, 2]
 // Exports: default
 
-// Module 12478 (AcceptInviteContainer)
+// Module 12490 (AcceptInviteContainer)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;

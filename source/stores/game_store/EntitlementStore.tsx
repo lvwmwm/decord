@@ -1,9 +1,9 @@
-// Module ID: 7151
-// Function ID: 7152
+// Module ID: 7152
+// Function ID: 7153
 // Name: addEntitlement
 // Dependencies: [4520, 4517, 4527, 673, 1923, 586, 12, 4526, 676, 706, 2]
 
-// Module 7151 (addEntitlement)
+// Module 7152 (addEntitlement)
 import applyDefault from "apply" /* 12 */;
 import initializeAll from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

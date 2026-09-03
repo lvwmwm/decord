@@ -1,12 +1,12 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 9439
+// Function ID: 9440
 // Name: useActivityTimer
-// Dependencies: [32, 19, 684, 8053, 4362, 2]
+// Dependencies: [32, 19, 684, 8056, 4362, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 9435 (useActivityTimer)
+// Module 9439 (useActivityTimer)
 import setDefault from "set" /* 684 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8053 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8056 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 

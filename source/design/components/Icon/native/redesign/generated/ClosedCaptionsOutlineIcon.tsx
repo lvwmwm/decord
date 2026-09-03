@@ -1,14 +1,14 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 14870
+// Function ID: 14871
 // Name: ClosedCaptionsOutlineIcon
-// Dependencies: [19, 21, 709, 4196, 14856, 2]
+// Dependencies: [19, 21, 709, 4196, 14871, 2]
 // Exports: ClosedCaptionsOutlineIcon
 
-// Module 14855 (ClosedCaptionsOutlineIcon)
+// Module 14870 (ClosedCaptionsOutlineIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14856 */;
+import registerAsset from "registerAsset" /* 14871 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

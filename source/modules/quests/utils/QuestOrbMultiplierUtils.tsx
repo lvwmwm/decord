@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11154
+// Function ID: 11155
 // Name: items
-// Dependencies: [4139, 1927, 1929, 7310, 2]
+// Dependencies: [4139, 1927, 1929, 7311, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 11150 (items)
+// Module 11154 (items)
 import set from "set" /* 2 */;
 import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1927 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
@@ -49,7 +49,7 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
             NITRO = obj.CREPE;
           }
         }
-        tmp4Result = tmp4(7310);
+        tmp4Result = tmp4(7311);
       }
       return NITRO;
     }

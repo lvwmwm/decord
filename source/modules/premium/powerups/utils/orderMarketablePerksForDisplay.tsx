@@ -1,10 +1,10 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13472
+// Function ID: 13473
 // Name: orderMarketablePerksForDisplay
 // Dependencies: [32, 4366, 4368, 2]
 // Exports: default
 
-// Module 13457 (orderMarketablePerksForDisplay)
+// Module 13472 (orderMarketablePerksForDisplay)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { GAME_SERVER_POWERUP_SKU_ID as closure_3 } from "str11" /* 4366 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16531
+// Function ID: 16532
 // Name: HistoricalIndexingHeader
-// Dependencies: [19, 1995, 7632, 21, 4478, 12150, 5609, 4474, 1233, 2]
+// Dependencies: [19, 1995, 7633, 21, 4478, 12156, 5610, 4474, 1233, 2]
 // Exports: default
 
-// Module 16510 (HistoricalIndexingHeader)
+// Module 16531 (HistoricalIndexingHeader)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7632 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7633 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

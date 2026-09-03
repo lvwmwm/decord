@@ -1,14 +1,14 @@
-// Module ID: 6682
-// Function ID: 6683
+// Module ID: 6683
+// Function ID: 6684
 // Name: GemRightBackward3dIllustration
-// Dependencies: [21, 5501, 6683, 2]
+// Dependencies: [21, 5502, 6684, 2]
 // Exports: GemRightBackward3dIllustration
 
-// Module 6682 (GemRightBackward3dIllustration)
+// Module 6683 (GemRightBackward3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6683 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6684 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemRightBackward3dIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14357
+// Function ID: 14358
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1385, 1921, 4380, 4110, 4673, 9522, 1470, 12, 2]
+// Dependencies: [1385, 1921, 4380, 4110, 4673, 9526, 1470, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14341 (activityInstanceConnectedParticipants)
+// Module 14357 (activityInstanceConnectedParticipants)
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;

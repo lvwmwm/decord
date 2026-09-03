@@ -1,10 +1,10 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8869
+// Function ID: 8870
 // Name: getSteamReviewScoreDescriptionColor
 // Dependencies: [4516, 1233, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8865 (getSteamReviewScoreDescriptionColor)
+// Module 8869 (getSteamReviewScoreDescriptionColor)
 import set from "set" /* 2 */;
 import GameTheme from "GameTheme" /* 4516 */;
 

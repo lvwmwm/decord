@@ -1,11 +1,11 @@
-// Module ID: 13595
-// Function ID: 13596
+// Module ID: 13610
+// Function ID: 13611
 // Name: isLatest
-// Dependencies: [4131, 4493, 4737, 11, 2]
+// Dependencies: [4131, 4493, 4738, 11, 2]
 
-// Module 13595 (isLatest)
+// Module 13610 (isLatest)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4738 */;
 import closure_3 from "hasFlag" /* 4131 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 

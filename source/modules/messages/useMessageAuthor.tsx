@@ -1,10 +1,10 @@
-// Module ID: 4746
-// Function ID: 4747
+// Module ID: 4747
+// Function ID: 4748
 // Name: useNullableMessageAuthor
-// Dependencies: [1386, 1991, 1984, 1908, 4130, 1921, 38, 586, 4322, 4747, 2]
+// Dependencies: [1386, 1991, 1984, 1908, 4130, 1921, 38, 586, 4322, 4748, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4746 (useNullableMessageAuthor)
+// Module 4747 (useNullableMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;

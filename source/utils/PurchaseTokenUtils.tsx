@@ -1,10 +1,10 @@
-// Module ID: 4846
-// Function ID: 4847
+// Module ID: 4847
+// Function ID: 4848
 // Name: getPurchaseToken
 // Dependencies: [5, 684, 592, 511, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 4846 (getPurchaseToken)
+// Module 4847 (getPurchaseToken)
 import v1 from "v1" /* 511 */;
 import Storage3 from "Storage" /* 592 */;
 import setDefault from "set" /* 684 */;

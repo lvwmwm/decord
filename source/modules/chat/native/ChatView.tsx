@@ -1,14 +1,14 @@
-// Module ID: 11197
-// Function ID: 11198
-// Dependencies: [19, 17, 5229, 1390, 1386, 4735, 673, 21, 4478, 709, 4340, 586, 1233, 4731, 6182, 5949, 11198, 11199, 7229, 6167, 11201, 5486, 11206, 11219, 11278, 11754, 12256, 1234, 12399, 12400, 12057, 12404, 12407, 11353, 12410, 5078, 9, 9144, 12425, 1296, 12427, 12429, 12430, 12522, 2]
+// Module ID: 11201
+// Function ID: 11202
+// Dependencies: [19, 17, 5230, 1390, 1386, 4736, 673, 21, 4478, 709, 4340, 586, 1233, 4732, 6183, 5950, 11202, 11203, 7230, 6168, 11205, 5487, 11210, 11223, 11282, 11759, 12268, 1234, 12411, 12412, 12063, 12416, 12419, 11358, 12422, 5079, 9, 9148, 12437, 1296, 12439, 12441, 12442, 12534, 2]
 
-// Module 11197
+// Module 11201
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5229 */;
+import closure_4 from "_handleConnectionOpen" /* 5230 */;
 import { createChannelRecord } from "createChannelRecord" /* 1390 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "reinjectEphemerals" /* 4735 */;
+import closure_7 from "reinjectEphemerals" /* 4736 */;
 import { ChannelTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

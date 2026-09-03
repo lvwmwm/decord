@@ -1,21 +1,21 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15559
+// Function ID: 15560
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4477, 21, 4478, 709, 5602, 586, 15444, 1372, 4926, 6000, 5607, 6002, 15518, 6001, 2]
+// Dependencies: [19, 17, 4477, 21, 4478, 709, 5603, 586, 15458, 1372, 4927, 6001, 5608, 6003, 15532, 6002, 2]
 // Exports: default
 
-// Module 15545 (DevToolsShopScreen)
+// Module 15559 (DevToolsShopScreen)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
-import Stack from "Stack" /* 4926 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
-import TableSwitchRow from "TableSwitchRow" /* 6001 */;
-import FormSwitch from "FormSwitch" /* 6002 */;
-import useToggleDismissibleContentDismissStateDefault from "useToggleDismissibleContentDismissState" /* 15444 */;
+import Stack from "Stack" /* 4927 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
+import TableSwitchRow from "TableSwitchRow" /* 6002 */;
+import FormSwitch from "FormSwitch" /* 6003 */;
+import useToggleDismissibleContentDismissStateDefault from "useToggleDismissibleContentDismissState" /* 15458 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "getUserAgnosticState" /* 4477 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -56,7 +56,7 @@ export default function DevToolsShopScreen() {
   obj4 = {
     value: stateFromStores,
     onValueChange(arg0) {
-      return callback(15518).toggle("shop_disable_cache", arg0);
+      return callback(15532).toggle("shop_disable_cache", arg0);
     }
   };
   const tmp6Result = useToggleDismissibleContentDismissStateDefault(DismissibleContent.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING);

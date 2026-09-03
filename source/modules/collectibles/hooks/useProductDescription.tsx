@@ -1,10 +1,10 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12788
+// Function ID: 12789
 // Name: getBundleDescription
 // Dependencies: [19, 1233, 1949, 2]
 // Exports: useProductDescription
 
-// Module 12776 (getBundleDescription)
+// Module 12788 (getBundleDescription)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

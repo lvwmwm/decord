@@ -1,12 +1,12 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9719
+// Function ID: 9720
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1390, 1429, 1386, 1908, 4120, 4130, 1921, 673, 8687, 21, 4478, 709, 5033, 5041, 5054, 5050, 5047, 5040, 5059, 5031, 5039, 5051, 5049, 5046, 5038, 5058, 1233, 4474, 1994, 4205, 5607, 7703, 8372, 1296, 5602, 586, 38, 4674, 5367, 9716, 9717, 1498, 9718, 4700, 5503, 9720, 6246, 9721, 12, 9724, 4926, 7714, 6000, 9725, 9732, 6001, 5048, 4666, 9733, 500, 9746, 5949, 6016, 2]
+// Dependencies: [32, 19, 17, 1390, 1429, 1386, 1908, 4120, 4130, 1921, 673, 8691, 21, 4478, 709, 5034, 5042, 5055, 5051, 5048, 5041, 5060, 5032, 5040, 5052, 5050, 5047, 5039, 5059, 1233, 4474, 1994, 4205, 5608, 7706, 8376, 1296, 5603, 586, 38, 4674, 5368, 9720, 9721, 1498, 9722, 4701, 5504, 9724, 6247, 9725, 12, 9728, 4927, 7717, 6001, 9729, 9736, 6002, 5049, 4666, 9737, 500, 9750, 5950, 6017, 2]
 // Exports: default
 
-// Module 9715 (ChannelTypeRow)
+// Module 9719 (ChannelTypeRow)
 import ThemesDefault from "Themes" /* 709 */;
-import useInitialValueDefault from "useInitialValue" /* 5949 */;
+import useInitialValueDefault from "useInitialValue" /* 5950 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -18,7 +18,7 @@ import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
 import closure_13 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { RowType } from "RowType" /* 8687 */;
+import { RowType } from "RowType" /* 8691 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -782,6 +782,6 @@ export default function CreateChannelModal(arg0) {
     obj[1] = items;
     return obj;
   }));
-  return callback(_require(6016).Navigator, { screens, initialRouteStack });
+  return callback(_require(6017).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

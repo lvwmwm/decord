@@ -1,17 +1,17 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15384
+// Function ID: 15385
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 673, 1979, 21, 4478, 709, 4204, 695, 8581, 15371, 5501, 8617, 1233, 5076, 9081, 10411, 1296, 8008, 1492, 8009, 1499, 5503, 4074, 8010, 4474, 4723, 6016, 2]
+// Dependencies: [19, 17, 673, 1979, 21, 4478, 709, 4204, 695, 8585, 15385, 5502, 8621, 1233, 5077, 9085, 10415, 1296, 8011, 1492, 8012, 1499, 5504, 4074, 8013, 4474, 4724, 6017, 2]
 // Exports: default
 
-// Module 15370 (ChangeLogScreen)
+// Module 15384 (ChangeLogScreen)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4723 from "module_4723" /* 4723 */;
-import NavigationStack from "NavigationStack" /* 6016 */;
-import LHeadingDefault from "LHeading" /* 8008 */;
-import VideoComponentDefault from "VideoComponent" /* 8617 */;
-import _modDef15371 from "module_15371" /* 15371 */;
+import _modDef4724 from "module_4724" /* 4724 */;
+import NavigationStack from "NavigationStack" /* 6017 */;
+import LHeadingDefault from "LHeading" /* 8011 */;
+import VideoComponentDefault from "VideoComponent" /* 8621 */;
+import _modDef15385 from "module_15385" /* 15385 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
@@ -133,7 +133,7 @@ class ChangeLogScreen {
   }
 }
 function hideChangeLog() {
-  _modDef4723.popWithKey(CHANGELOG_MODAL_KEY);
+  _modDef4724.popWithKey(CHANGELOG_MODAL_KEY);
 }
 let c3 = importAllResult;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -281,7 +281,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(_modDef15371, obj1), ];
+      const items = [callback(_modDef15385, obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };
@@ -290,8 +290,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj3[0] = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj2[1] = obj3;
-        tmp6Result = tmp6(tmp7(5501), obj2);
-        const tmp7Result = tmp7(5501);
+        tmp6Result = tmp6(tmp7(5502), obj2);
+        const tmp7Result = tmp7(5502);
       }
       items[1] = tmp6Result;
       obj[2] = items;
@@ -321,14 +321,14 @@ prototype["renderVideo"] = function renderVideo() {
     obj7[2] = tmp.videoOverlay;
     obj7[3] = self.playVideo;
     const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: null, onPress: null, style: null, iconSize: null, iconStyle: null };
-    obj8[2] = tmp15(10411);
+    obj8[2] = tmp15(10415);
     obj8[3] = self.playVideo;
     obj8[4] = tmp.playButton;
     obj8[5] = tmp18(1296).IconSizes.CUSTOM;
     obj8[6] = tmp.playIcon;
-    obj7[4] = tmp12(tmp15(9081), obj8);
-    tmp12Result = tmp12(tmp18(5076).PressableOpacity, obj7);
-    const tmp15Result = tmp15(9081);
+    obj7[4] = tmp12(tmp15(9085), obj8);
+    tmp12Result = tmp12(tmp18(5077).PressableOpacity, obj7);
+    const tmp15Result = tmp15(9085);
   }
   items1[1] = tmp12Result;
   obj5[2] = items1;

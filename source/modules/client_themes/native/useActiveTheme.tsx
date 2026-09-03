@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7629
+// Function ID: 7630
 // Name: useActiveThemeType
 // Dependencies: [1303, 4297, 1345, 1304, 586, 4331, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 7628 (useActiveThemeType)
+// Module 7629 (useActiveThemeType)
 import initialize from "initialize" /* 586 */;
 import getGuildIdFromNavigationStateDefault from "getGuildIdFromNavigationState" /* 4331 */;
 import closure_3 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;

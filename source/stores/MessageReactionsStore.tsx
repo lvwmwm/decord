@@ -1,12 +1,12 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 7517
+// Function ID: 7518
 // Name: reactionKey
-// Dependencies: [4121, 1934, 1386, 1921, 7517, 586, 7518, 706, 2]
+// Dependencies: [4121, 1934, 1386, 1921, 7518, 586, 7519, 706, 2]
 
-// Module 7516 (reactionKey)
+// Module 7517 (reactionKey)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import checkReactionResponseAll from "checkReactionResponse" /* 7518 */;
+import checkReactionResponseAll from "checkReactionResponse" /* 7519 */;
 import closure_2 from "initialize" /* 4121 */;
 import closure_3 from "createdAt" /* 1934 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;

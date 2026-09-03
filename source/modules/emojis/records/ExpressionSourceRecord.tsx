@@ -1,9 +1,9 @@
-// Module ID: 6013
-// Function ID: 6014
+// Module ID: 6014
+// Function ID: 6015
 // Name: getEmojiSourceData
 // Dependencies: [5, 1935, 673, 527, 1430, 1428, 1425, 2]
 
-// Module 6013 (getEmojiSourceData)
+// Module 6014 (getEmojiSourceData)
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
 import areSetsEqual from "areSetsEqual" /* 1428 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;

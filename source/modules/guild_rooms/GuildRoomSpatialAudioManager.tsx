@@ -1,12 +1,12 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17209
+// Function ID: 17210
 // Name: _initialize
-// Dependencies: [32, 4391, 1209, 1215, 1386, 4529, 4554, 4679, 5494, 17190, 9803, 4720, 2]
+// Dependencies: [32, 4391, 1209, 1215, 1386, 4529, 4554, 4679, 5495, 17210, 9807, 4721, 2]
 
-// Module 17189 (_initialize)
-import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4720 */;
-import initializeDefault from "initialize" /* 5494 */;
-import GUILD_ROOM_SPATIAL_AUDIO_ENABLED from "GUILD_ROOM_SPATIAL_AUDIO_ENABLED" /* 17190 */;
+// Module 17209 (_initialize)
+import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4721 */;
+import initializeDefault from "initialize" /* 5495 */;
+import GUILD_ROOM_SPATIAL_AUDIO_ENABLED from "GUILD_ROOM_SPATIAL_AUDIO_ENABLED" /* 17210 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "getHash" /* 4391 */;
 import closure_5 from "initialize" /* 1209 */;
@@ -100,7 +100,7 @@ prototype["apply"] = function apply() {
           obj[0] = roomUsers.getRoomUsers(channelId);
           obj[1] = id.getId();
           obj[2] = channelId;
-          _require = _require(17190).computeLivingRoomWorldPoints(obj);
+          _require = _require(17210).computeLivingRoomWorldPoints(obj);
           const mediaEngine = obj.getMediaEngine();
           mediaEngine.eachConnection((setUserPosition) => {
             const entries = Object.entries(callback);
@@ -115,7 +115,7 @@ prototype["apply"] = function apply() {
               continue;
             }
           });
-          const obj3 = _require(17190);
+          const obj3 = _require(17210);
         }
       }
     }

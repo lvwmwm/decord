@@ -1,10 +1,10 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15881
+// Function ID: 15882
 // Name: getSuggestedContactNameForSuggestion
 // Dependencies: [2]
 // Exports: getSuggestedContactNameForSuggestion
 
-// Module 15865 (getSuggestedContactNameForSuggestion)
+// Module 15881 (getSuggestedContactNameForSuggestion)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionUtils.tsx");

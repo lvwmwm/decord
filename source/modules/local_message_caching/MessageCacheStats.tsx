@@ -1,9 +1,9 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7243
+// Function ID: 7244
 // Name: recordChannelFetchStart
 // Dependencies: [2]
 
-// Module 7242 (recordChannelFetchStart)
+// Module 7243 (recordChannelFetchStart)
 import set from "set" /* 2 */;
 
 class MessageCacheStats {

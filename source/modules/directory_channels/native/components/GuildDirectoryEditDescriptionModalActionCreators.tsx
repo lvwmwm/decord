@@ -1,20 +1,20 @@
-// Module ID: 12104
-// Function ID: 12105
-// Dependencies: [4723, 12105, 2008, 2]
+// Module ID: 12110
+// Function ID: 12111
+// Dependencies: [4724, 12111, 2008, 2]
 
-// Module 12104
+// Module 12110
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4723 from "module_4723" /* 4723 */;
+import _modDef4724 from "module_4724" /* 4724 */;
 
 let c3 = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
-    _modDef4723.pushLazy(asyncRequireImpl(12105, dependencyMap.paths), closure_0, c3);
+    _modDef4724.pushLazy(asyncRequireImpl(12111, dependencyMap.paths), closure_0, c3);
   },
   close() {
-    _modDef4723.popWithKey(c3);
+    _modDef4724.popWithKey(c3);
   }
 };

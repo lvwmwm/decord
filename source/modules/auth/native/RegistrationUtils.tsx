@@ -1,16 +1,16 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15792
+// Function ID: 15793
 // Name: trackRegTransition
-// Dependencies: [19, 4462, 8880, 15768, 15769, 673, 21, 695, 15765, 5510, 2]
+// Dependencies: [19, 4462, 8884, 15784, 15785, 673, 21, 695, 15781, 5511, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 15776 (trackRegTransition)
+// Module 15792 (trackRegTransition)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "updateInvite" /* 4462 */;
-import closure_5 from "getDisplayedInviteCode" /* 8880 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15768 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15769 */;
+import closure_5 from "getDisplayedInviteCode" /* 8884 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15784 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15785 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -155,7 +155,7 @@ export function getTrackRegTransition(closure_0) {
   };
 }
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
-  _require = React.useContext(_require(15765).TrackRegistrationContext);
+  _require = React.useContext(_require(15781).TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
   const merged = Object.assign(arg0);
@@ -169,7 +169,7 @@ export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
       tmp();
     }
   };
-  return jsx(_require(5510).HeaderBackButton, {});
+  return jsx(_require(5511).HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

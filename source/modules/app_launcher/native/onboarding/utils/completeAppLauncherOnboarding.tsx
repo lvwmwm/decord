@@ -1,10 +1,10 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11847
+// Function ID: 11848
 // Name: completeAppLauncherOnboarding
 // Dependencies: [4298, 1372, 2]
 // Exports: default
 
-// Module 11841 (completeAppLauncherOnboarding)
+// Module 11847 (completeAppLauncherOnboarding)
 import set from "set" /* 2 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;

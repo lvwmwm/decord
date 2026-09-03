@@ -1,17 +1,17 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10406
+// Function ID: 10407
 // Name: _fetchStickerPack
-// Dependencies: [5, 5229, 1995, 4855, 1921, 5452, 673, 682, 4755, 527, 706, 4852, 5121, 1369, 12, 4857, 1233, 2]
+// Dependencies: [5, 5230, 1995, 4856, 1921, 5453, 673, 682, 4756, 527, 706, 4853, 5122, 1369, 12, 4858, 1233, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 10402 (_fetchStickerPack)
+// Module 10406 (_fetchStickerPack)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5229 */;
+import closure_4 from "_handleConnectionOpen" /* 5230 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "handleConnectionOpen" /* 4855 */;
+import closure_6 from "handleConnectionOpen" /* 4856 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "loadSavedGuildStickers" /* 5452 */;
+import closure_8 from "loadSavedGuildStickers" /* 5453 */;
 import { Endpoints } from "ME" /* 673 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
@@ -228,7 +228,7 @@ function _fetchSticker() {
               obj4[1] = body;
               obj3.dispatch(obj4);
             } else {
-              obj = body(4852);
+              obj = body(4853);
               if (obj.isStandardSticker(body)) {
                 obj1 = callback2(706);
                 const obj5 = { type: "PACK_STICKER_FETCH_SUCCESS", sticker: null };
@@ -241,7 +241,7 @@ function _fetchSticker() {
               }
             }
             c4 = 3;
-            obj10 = body(4852);
+            obj10 = body(4853);
           }
         } catch (tmp24) {
           c4 = tmp;

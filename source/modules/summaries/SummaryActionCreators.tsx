@@ -1,17 +1,17 @@
-// Module ID: 11201
-// Function ID: 11202
+// Module ID: 11205
+// Function ID: 11206
 // Name: fetchSummary
-// Dependencies: [5, 19, 5229, 1386, 11202, 673, 684, 706, 527, 4376, 12, 11204, 644, 2]
+// Dependencies: [5, 19, 5230, 1386, 11206, 673, 684, 706, 527, 4376, 12, 11208, 644, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 11201 (fetchSummary)
+// Module 11205 (fetchSummary)
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "handleQuickSwitcherUpdate" /* 11202 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 11206 */;
 import { Routes } from "ME" /* 673 */;
 
 const require = arg1;

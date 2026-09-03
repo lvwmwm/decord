@@ -1,19 +1,19 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14293
+// Function ID: 14294
 // Name: map
-// Dependencies: [4391, 1209, 8639, 1215, 8621, 511, 8645, 586, 706, 2]
+// Dependencies: [4391, 1209, 8643, 1215, 8625, 511, 8649, 586, 706, 2]
 // Exports: resetGlobalState
 
-// Module 14277 (map)
+// Module 14293 (map)
 import v1 from "v1" /* 511 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import DEFAULT_UX_VARIATION2 from "DEFAULT_UX_VARIATION" /* 8645 */;
+import DEFAULT_UX_VARIATION2 from "DEFAULT_UX_VARIATION" /* 8649 */;
 import closure_2 from "getHash" /* 4391 */;
 import closure_3 from "initialize" /* 1209 */;
-import closure_4 from "getUserAgnosticState" /* 8639 */;
+import closure_4 from "getUserAgnosticState" /* 8643 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "filterStaffGuild" /* 8621 */;
+import closure_6 from "filterStaffGuild" /* 8625 */;
 
 require = arg1;
 let c7 = 300000;
@@ -236,7 +236,7 @@ prototype["trackItemsLongImpression"] = function trackItemsLongImpression(items)
     let tmp19 = result;
     ({ interactionActionTypes: obj[13], interactionCount: obj[14], uxVariation } = tmp7);
     if (uxVariation == null) {
-      uxVariation = tmp11(8645).DEFAULT_UX_VARIATION;
+      uxVariation = tmp11(8649).DEFAULT_UX_VARIATION;
     }
     obj[15] = uxVariation;
     let tmp20 = result;
@@ -404,7 +404,7 @@ prototype["_endImpression"] = function _endImpression(itemId) {
     const _Date = Date;
     tmp2.impressionEndTimestamp = Date.now();
     tmp2.impressionComplete = true;
-    const ICYMIAnalytics = _require(8645).ICYMIAnalytics;
+    const ICYMIAnalytics = _require(8649).ICYMIAnalytics;
     const obj = { icymiSessionId: null, impressionId: null, dwellTimeMs: null, itemId: null, itemType: null, dwellStartTimeMs: null, dwellEndTimeMs: null, triggerType: null, itemOccurenceCountInSession: null, itemFeedIndex: null, itemScore: null, isInitiallyVisible: null, itemChannelType: null, itemCardHeight: null, uxVariation: null, interactionActionTypes: null, interactionCount: null, sessionImpressionIndex: null };
     obj[0] = self._sessionId;
     obj[1] = tmp2.impressionId;
@@ -427,7 +427,7 @@ prototype["_endImpression"] = function _endImpression(itemId) {
     obj[13] = itemCardHeight;
     let DEFAULT_UX_VARIATION = tmp2.uxVariation;
     if (DEFAULT_UX_VARIATION == null) {
-      DEFAULT_UX_VARIATION = tmp5(8645).DEFAULT_UX_VARIATION;
+      DEFAULT_UX_VARIATION = tmp5(8649).DEFAULT_UX_VARIATION;
     }
     obj[14] = DEFAULT_UX_VARIATION;
     ({ interactionActionTypes: obj[15], interactionCount: obj[16], sessionImpressionIndex: obj[17] } = tmp2);

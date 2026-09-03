@@ -1,9 +1,9 @@
-// Module ID: 6737
-// Function ID: 6738
+// Module ID: 6738
+// Function ID: 6739
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6737 (vanityUrl)
+// Module 6738 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftingTier6LargeBadge-2x.png.js");

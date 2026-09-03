@@ -1,20 +1,20 @@
-// Module ID: 5490
-// Function ID: 5491
+// Module ID: 5491
+// Function ID: 5492
 // Name: UserNotificationSettings
-// Dependencies: [5491, 1386, 4735, 4701, 673, 4133, 4702, 682, 1398, 4700, 695, 2]
+// Dependencies: [5492, 1386, 4736, 4702, 673, 4133, 4703, 682, 1398, 4701, 695, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5490 (UserNotificationSettings)
+// Module 5491 (UserNotificationSettings)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import hasFlag from "hasFlag" /* 1398 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import closure_3 from "initialize" /* 5491 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
+import closure_3 from "initialize" /* 5492 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "reinjectEphemerals" /* 4735 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_5 from "reinjectEphemerals" /* 4736 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4702 */;
 import ME from "ME" /* 673 */;
 import { NotificationSettingsUpdateType as closure_9 } from "AccountNotificationFlags" /* 4133 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
 require = arg1;

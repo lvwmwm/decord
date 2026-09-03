@@ -1,10 +1,10 @@
-// Module ID: 7806
-// Function ID: 7807
+// Module ID: 7809
+// Function ID: 7810
 // Name: createFakeSharedValue
 // Dependencies: [2]
 // Exports: createFakeSharedValue
 
-// Module 7806 (createFakeSharedValue)
+// Module 7809 (createFakeSharedValue)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/reanimated/ReanimatedHelperTypes.tsx");

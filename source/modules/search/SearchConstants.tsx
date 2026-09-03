@@ -1,9 +1,9 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7633
+// Function ID: 7634
 // Name: MessageEmbedTypes
 // Dependencies: [673, 4171, 2]
 
-// Module 7632 (MessageEmbedTypes)
+// Module 7633 (MessageEmbedTypes)
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4171 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;

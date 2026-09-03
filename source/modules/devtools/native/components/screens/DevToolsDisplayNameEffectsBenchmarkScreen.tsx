@@ -1,18 +1,18 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15569
+// Function ID: 15570
 // Name: effectName
-// Dependencies: [32, 19, 17, 1921, 1938, 21, 1939, 8946, 1233, 8942, 2758, 4478, 709, 4926, 4474, 4928, 8937, 8938, 586, 15556, 6000, 5607, 9380, 4749, 2]
+// Dependencies: [32, 19, 17, 1921, 1938, 21, 1939, 8950, 1233, 8946, 2758, 4478, 709, 4927, 4474, 4929, 8941, 8942, 586, 15570, 6001, 5608, 9384, 4750, 2]
 // Exports: default
 
-// Module 15555 (effectName)
+// Module 15569 (effectName)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2758 */;
 import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4926 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8937 */;
-import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8938 */;
-import DISPLAY_NAME_STYLES_EFFECT_NAMES from "DISPLAY_NAME_STYLES_EFFECT_NAMES" /* 8942 */;
+import Stack from "Stack" /* 4927 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8941 */;
+import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8942 */;
+import DISPLAY_NAME_STYLES_EFFECT_NAMES from "DISPLAY_NAME_STYLES_EFFECT_NAMES" /* 8946 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

@@ -1,13 +1,13 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 8151
+// Function ID: 8152
 // Name: createSurveyIndication
-// Dependencies: [6063, 1233, 7864, 1362, 8148, 8149, 2]
+// Dependencies: [6064, 1233, 7867, 1362, 8152, 8153, 2]
 // Exports: createSurveyIndication
 
-// Module 8147 (createSurveyIndication)
+// Module 8151 (createSurveyIndication)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import str2 from "str2" /* 6063 */;
+import str2 from "str2" /* 6064 */;
 
 const NotificationTypes = str2.NotificationTypes;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");
@@ -26,12 +26,12 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   }
   obj = { content: intl.formatToParts(_46_Iqc, { handleMessage: obj }), feedbackIconUrl: null };
   obj[2] = TOP_MESSAGE_PUSH;
-  let tmp2Result = tmp2(7864);
+  let tmp2Result = tmp2(7867);
   tmp2Result = tmp2(1362);
   if (tmp2Result.isThemeDark(forcedTheme)) {
-    let tmp6Result = tmp6(8148);
+    let tmp6Result = tmp6(8152);
   } else {
-    tmp6Result = tmp6(8149);
+    tmp6Result = tmp6(8153);
   }
   obj[1] = tmp2Result.getAssetUriForEmbed(tmp6Result);
   return obj;

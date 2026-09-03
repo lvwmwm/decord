@@ -1,10 +1,10 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17144
+// Function ID: 17145
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 673, 21, 4478, 1498, 5561, 4474, 1233, 1994, 4928, 2]
+// Dependencies: [5, 32, 19, 17, 673, 21, 4478, 1498, 5562, 4474, 1233, 1994, 4929, 2]
 // Exports: default
 
-// Module 17124 (ExistingUserAgeGateConfirm)
+// Module 17144 (ExistingUserAgeGateConfirm)
 import combinedDefault from "combined" /* 1994 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -86,8 +86,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4928).Button, obj4);
+  obj3[1] = callback2(onConfirm(4929).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(5561).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(5562).SafeAreaPaddingView, obj);
 };

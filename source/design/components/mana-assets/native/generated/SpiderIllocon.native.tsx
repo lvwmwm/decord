@@ -1,14 +1,14 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7043
+// Function ID: 7044
 // Name: SpiderIllocon
-// Dependencies: [21, 5501, 7043, 2]
+// Dependencies: [21, 5502, 7044, 2]
 // Exports: SpiderIllocon
 
-// Module 7042 (SpiderIllocon)
+// Module 7043 (SpiderIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7043 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7044 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SpiderIllocon.native.tsx");

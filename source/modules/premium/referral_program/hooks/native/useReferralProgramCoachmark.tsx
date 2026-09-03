@@ -1,12 +1,12 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16621
+// Function ID: 16622
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 5501, 16602, 4298, 1372, 7974, 6260, 1233, 709, 6254, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 5502, 16622, 4298, 1372, 7977, 6261, 1233, 709, 6255, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 16601 (ReferralProgramCoachmarkImg)
-import preloadDefault from "preload" /* 5501 */;
-import registerAssetDefault from "registerAsset" /* 16602 */;
+// Module 16621 (ReferralProgramCoachmarkImg)
+import preloadDefault from "preload" /* 5502 */;
+import registerAssetDefault from "registerAsset" /* 16622 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -35,8 +35,8 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(7974).useIsEligibleSenderForReferralProgram(result);
-  _require(6260);
+  const isEligibleSenderForReferralProgram = _require(7977).useIsEligibleSenderForReferralProgram(result);
+  _require(6261);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
       let items = [tmp(1372).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];

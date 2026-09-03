@@ -1,10 +1,10 @@
-// Module ID: 12830
-// Function ID: 12831
+// Module ID: 12842
+// Function ID: 12843
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4478, 709, 8543, 8571, 5961, 12831, 4673, 5967, 4474, 1233, 1296, 1430, 12832, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8547, 8575, 5962, 12843, 4673, 5968, 4474, 1233, 1296, 1430, 12844, 4929, 2]
 // Exports: default
 
-// Module 12830 (UserProfileIncomingFriendRequest)
+// Module 12842 (UserProfileIncomingFriendRequest)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

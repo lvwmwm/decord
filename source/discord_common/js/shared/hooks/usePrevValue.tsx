@@ -1,10 +1,10 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9247
+// Function ID: 9248
 // Name: usePrevValue
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 9243 (usePrevValue)
+// Module 9247 (usePrevValue)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 

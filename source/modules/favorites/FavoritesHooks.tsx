@@ -1,16 +1,16 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10333
+// Function ID: 10334
 // Name: useFavoritesAccess
-// Dependencies: [4299, 1921, 1389, 1424, 1923, 10330, 10331, 586, 1945, 11, 1305, 1911, 2]
+// Dependencies: [4299, 1921, 1389, 1424, 1923, 10334, 10335, 586, 1945, 11, 1305, 1911, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 10329 (useFavoritesAccess)
+// Module 10333 (useFavoritesAccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 586 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
 import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1945 */;
-import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 10330 */;
-import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10331 */;
+import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 10334 */;
+import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10335 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "initializeFromUserSettings" /* 1389 */;

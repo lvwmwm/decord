@@ -1,9 +1,9 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 16868
+// Function ID: 16869
 // Name: set
 // Dependencies: [11, 586, 706, 2]
 
-// Module 16848 (set)
+// Module 16868 (set)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

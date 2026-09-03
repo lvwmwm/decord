@@ -1,10 +1,10 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 7865
+// Function ID: 7866
 // Name: items
 // Dependencies: [673, 4368, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7862 (items)
+// Module 7865 (items)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4368 */;

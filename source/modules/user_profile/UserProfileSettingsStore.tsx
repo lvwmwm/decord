@@ -1,15 +1,15 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8081
+// Function ID: 8082
 // Name: handleFormOpen
-// Dependencies: [673, 1424, 8079, 674, 586, 8080, 706, 2]
+// Dependencies: [673, 1424, 8082, 674, 586, 8083, 706, 2]
 
-// Module 8078 (handleFormOpen)
+// Module 8081 (handleFormOpen)
 import initializeDefault from "initialize" /* 586 */;
 import INVITE from "INVITE" /* 674 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import date from "date" /* 1424 */;
-import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8079 */;
-import useBioMaxLength from "useBioMaxLength" /* 8080 */;
+import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8082 */;
+import useBioMaxLength from "useBioMaxLength" /* 8083 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

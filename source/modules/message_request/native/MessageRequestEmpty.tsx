@@ -1,13 +1,13 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16721
+// Function ID: 16722
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 1296, 16702, 2]
+// Dependencies: [19, 21, 1296, 16722, 2]
 // Exports: default
 
-// Module 16701 (MessageRequestEmpty)
+// Module 16721 (MessageRequestEmpty)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
-import getPendingSource from "getPendingSource" /* 16702 */;
+import getPendingSource from "getPendingSource" /* 16722 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

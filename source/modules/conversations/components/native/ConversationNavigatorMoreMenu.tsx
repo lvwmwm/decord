@@ -1,10 +1,10 @@
-// Module ID: 13138
-// Function ID: 13139
+// Module ID: 13150
+// Function ID: 13151
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 21, 4478, 709, 1233, 12880, 7825, 7827, 4193, 12882, 8807, 8015, 8813, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1233, 12892, 7828, 7830, 4193, 12894, 8811, 8018, 8817, 2]
 // Exports: default
 
-// Module 13138 (ConversationNavigatorMoreMenu)
+// Module 13150 (ConversationNavigatorMoreMenu)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

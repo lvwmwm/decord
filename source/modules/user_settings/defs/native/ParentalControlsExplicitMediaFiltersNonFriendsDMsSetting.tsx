@@ -1,15 +1,15 @@
-// Module ID: 15726
-// Function ID: 15727
+// Module ID: 15740
+// Function ID: 15741
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [7291, 7893, 14653, 7354, 14657, 1233, 14650, 1305, 11288, 2]
+// Dependencies: [7292, 7896, 14668, 7355, 14672, 1233, 14665, 1305, 11292, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 15726 (useObscuredContentNonFriendsDmSettingValue)
+// Module 15740 (useObscuredContentNonFriendsDmSettingValue)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7354 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14653 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7291 */;
-import createToggle from "createToggle" /* 11288 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7355 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14668 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7292 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 function useObscuredContentNonFriendsDmSettingValue() {
@@ -28,7 +28,7 @@ function useObscuredContentNonFriendsDmSettingValue() {
 function onObscuredContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(14657);
+    let obj = selectedTeenId(14672);
     const intl = selectedTeenId(1233).intl;
     const stringResult = intl.string(selectedTeenId(1233).t.GYpoAq);
     obj = { title: null, subtitle: null, excluded: null, handlePress: null, currentValue: null };
@@ -43,8 +43,8 @@ function onObscuredContentNonFriendsDmOnPress() {
       const result = obj.updateExplicitContentSetting(selectedTeenId, obj);
     };
     obj[4] = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
-    let result = selectedTeenId(14650).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(14650);
+    let result = selectedTeenId(14665).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(14665);
   }
 }
 createToggle = {

@@ -1,11 +1,11 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 9007
+// Function ID: 9008
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 4217, 4934, 2]
+// Dependencies: [109, 19, 17, 21, 4217, 4935, 2]
 
-// Module 9003 (PressableScale)
+// Module 9007 (PressableScale)
 import _mod4217 from "module_4217" /* 4217 */;
-import styleProperties from "styleProperties" /* 4934 */;
+import styleProperties from "styleProperties" /* 4935 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

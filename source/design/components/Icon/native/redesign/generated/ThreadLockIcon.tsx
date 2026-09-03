@@ -1,14 +1,14 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5026
+// Function ID: 5027
 // Name: ThreadLockIcon
-// Dependencies: [19, 21, 709, 4196, 4982, 2]
+// Dependencies: [19, 21, 709, 4196, 4983, 2]
 // Exports: ThreadLockIcon
 
-// Module 5025 (ThreadLockIcon)
+// Module 5026 (ThreadLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4982 */;
+import registerAsset from "registerAsset" /* 4983 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

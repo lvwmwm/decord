@@ -1,16 +1,16 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7292
+// Function ID: 7293
 // Name: freshTeenActivityWithMap
-// Dependencies: [32, 4174, 1217, 1921, 7292, 1425, 11, 7293, 7347, 7348, 2]
+// Dependencies: [32, 4174, 1217, 1921, 7293, 1425, 11, 7294, 7348, 7349, 2]
 
-// Module 7291 (freshTeenActivityWithMap)
+// Module 7292 (freshTeenActivityWithMap)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import clearAllDefault from "clearAll" /* 1217 */;
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7293 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7294 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { getCountryCodeByAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME" /* 4174 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import items from "items" /* 7292 */;
+import items from "items" /* 7293 */;
 
 let prototype = arg1;
 function freshTeenActivityWithMap() {
@@ -520,7 +520,7 @@ prototype["loadCache"] = function loadCache() {
     obj[TeenActionDisplayType.GIFTS] = 0;
     snapshot = teenActivityTotals.reduce((arg0, str) => {
       [tmp2, tmp3] = callback(str.split(":"), 2);
-      let obj = lib(7347);
+      let obj = lib(7348);
       const result = obj.displayTypeFromString(tmp2);
       let tmp5 = arg0;
       if (undefined !== result) {
@@ -707,7 +707,7 @@ prototype["isCurrentUserInRestrictedHours"] = function isCurrentUserInRestricted
   } else {
     return false;
   }
-  obj = prototype(7348);
+  obj = prototype(7349);
 };
 FamilyCenterStore.displayName = "FamilyCenterStore";
 FamilyCenterStore.LATEST_SNAPSHOT_VERSION = 3;

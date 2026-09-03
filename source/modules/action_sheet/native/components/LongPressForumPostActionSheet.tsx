@@ -1,14 +1,14 @@
-// Module ID: 10326
-// Function ID: 10327
+// Module ID: 10330
+// Function ID: 10331
 // Name: ForumPostLongPressActionSheet
-// Dependencies: [19, 4121, 4122, 6159, 1215, 1908, 4493, 673, 1393, 21, 10327, 10342, 1233, 10343, 10345, 7752, 5486, 4419, 7519, 9768, 4441, 4431, 10347, 5048, 10349, 10350, 11, 5981, 6249, 8767, 11108, 4445, 11106, 2008, 4421, 11110, 10260, 10247, 10919, 11169, 10911, 4857, 4436, 7210, 1296, 9061, 5989, 4193, 586, 6157, 6124, 7638, 4166, 4674, 10932, 6012, 5997, 1623, 10956, 5999, 2]
+// Dependencies: [19, 4121, 4122, 6160, 1215, 1908, 4493, 673, 1393, 21, 10331, 10346, 1233, 10347, 10349, 7755, 5487, 4419, 7520, 9772, 4441, 4431, 10351, 5049, 10353, 10354, 11, 5982, 6250, 8771, 11112, 4445, 11110, 2008, 4421, 11114, 10264, 10251, 10923, 11173, 10915, 4858, 4436, 7211, 1296, 9065, 5990, 4193, 586, 6158, 6125, 7639, 4166, 4674, 10936, 6013, 5998, 1623, 10960, 6000, 2]
 // Exports: default
 
-// Module 10326 (ForumPostLongPressActionSheet)
+// Module 10330 (ForumPostLongPressActionSheet)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "initialize" /* 4121 */;
 import closure_4 from "storeThread" /* 4122 */;
-import closure_5 from "updateState" /* 6159 */;
+import closure_5 from "updateState" /* 6160 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "generateOldThreadCutoff" /* 4493 */;

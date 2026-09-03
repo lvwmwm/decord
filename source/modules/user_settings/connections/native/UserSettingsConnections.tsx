@@ -1,20 +1,20 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14802
+// Function ID: 14803
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5483, 1215, 5233, 1995, 673, 21, 4478, 709, 4413, 586, 12739, 5969, 5358, 4445, 14786, 2008, 9312, 14788, 8372, 4926, 14791, 14792, 2]
+// Dependencies: [19, 17, 5484, 1215, 5234, 1995, 673, 21, 4478, 709, 4413, 586, 12751, 5970, 5359, 4445, 14801, 2008, 9316, 14803, 8376, 4927, 14806, 14807, 2]
 // Exports: UserSettingsConnections
 
-// Module 14787 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14802 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import ThemesDefault from "Themes" /* 709 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12739 */;
-import EmptyStateCardDefault from "EmptyStateCard" /* 14788 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12751 */;
+import EmptyStateCardDefault from "EmptyStateCard" /* 14803 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeFromAppTokens" /* 5483 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5483 */;
+import closure_5 from "recomputeFromAppTokens" /* 5484 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5484 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "set" /* 5233 */;
+import closure_8 from "set" /* 5234 */;
 import closure_9 from "_getSystemLocale" /* 1995 */;
 import { AnalyticsLocations } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -95,8 +95,8 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id))
       ];
       obj[1] = items5;
-      obj[1] = callback2(tmp4(4926).Stack, obj);
-      tmp14 = callback(tmp4(8372).Form, obj);
+      obj[1] = callback2(tmp4(4927).Stack, obj);
+      tmp14 = callback(tmp4(8376).Form, obj);
     }
     return tmp14;
   }

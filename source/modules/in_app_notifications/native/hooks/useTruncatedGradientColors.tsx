@@ -1,10 +1,10 @@
-// Module ID: 10213
-// Function ID: 10214
+// Module ID: 10217
+// Function ID: 10218
 // Name: useTruncatedGradientColors
 // Dependencies: [19, 4478, 4197, 709, 686, 2]
 // Exports: default
 
-// Module 10213 (useTruncatedGradientColors)
+// Module 10217 (useTruncatedGradientColors)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;

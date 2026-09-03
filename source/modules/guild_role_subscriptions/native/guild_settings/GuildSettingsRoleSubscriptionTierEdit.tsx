@@ -1,34 +1,34 @@
-// Module ID: 17594
-// Function ID: 17595
+// Module ID: 17614
+// Function ID: 17615
 // Name: ArchiveOrDeleteTierSection
-// Dependencies: [32, 19, 17, 4114, 17549, 15030, 673, 1383, 21, 4478, 709, 1498, 17561, 17557, 6108, 9927, 4474, 4928, 1296, 17595, 5561, 17589, 17587, 17564, 15037, 17544, 12013, 17596, 1233, 15052, 4193, 5503, 6246, 9273, 1372, 17597, 2008, 10639, 10640, 9784, 2]
+// Dependencies: [32, 19, 17, 4114, 17569, 15045, 673, 1383, 21, 4478, 709, 1498, 17581, 17577, 6109, 9931, 4474, 4929, 1296, 17615, 5562, 17609, 17607, 17584, 15052, 17564, 12019, 17616, 1233, 15067, 4193, 5504, 6247, 9277, 1372, 17617, 2008, 10643, 10644, 9788, 2]
 // Exports: default
 
-// Module 17594 (ArchiveOrDeleteTierSection)
+// Module 17614 (ArchiveOrDeleteTierSection)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import useNavigation from "useNavigation" /* 1498 */;
 import Text from "Text" /* 4474 */;
-import Button2 from "Button" /* 4928 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import useShouldHideGuildPurchaseEntryPoints from "useShouldHideGuildPurchaseEntryPoints" /* 6108 */;
-import FormHeaderDefault from "FormHeader" /* 9927 */;
-import useFetchListingsForGuild from "useFetchListingsForGuild" /* 15037 */;
-import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17544 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17557 */;
-import useEditStateContext from "useEditStateContext" /* 17561 */;
-import AddBenefitButton from "AddBenefitButton" /* 17564 */;
-import MemberPreviews from "MemberPreviews" /* 17587 */;
-import Content from "Content" /* 17589 */;
-import registerAssetDefault from "registerAsset" /* 17595 */;
+import Button2 from "Button" /* 4929 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import useShouldHideGuildPurchaseEntryPoints from "useShouldHideGuildPurchaseEntryPoints" /* 6109 */;
+import FormHeaderDefault from "FormHeader" /* 9931 */;
+import useFetchListingsForGuild from "useFetchListingsForGuild" /* 15052 */;
+import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17564 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17577 */;
+import useEditStateContext from "useEditStateContext" /* 17581 */;
+import AddBenefitButton from "AddBenefitButton" /* 17584 */;
+import MemberPreviews from "MemberPreviews" /* 17607 */;
+import Content from "Content" /* 17609 */;
+import registerAssetDefault from "registerAsset" /* 17615 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
-import closure_10 from "usePriceTiers" /* 17549 */;
-import { GuildRoleSubscriptionsTierScenes } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
+import closure_10 from "usePriceTiers" /* 17569 */;
+import { GuildRoleSubscriptionsTierScenes } from "MAX_SUBSCRIPTION_TIERS" /* 15045 */;
 import { GuildSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -141,13 +141,13 @@ let closure_22 = require("noop").forwardRef((arg0, ref) => {
           items = [callback2(Button.Spacer, { size: 16 }), , ];
           obj = { children: null };
           obj[0] = error.getAnyErrorMessage();
-          items[1] = callback2(groupListingId(12013), obj);
+          items[1] = callback2(groupListingId(12019), obj);
           Spacer = Button.Spacer;
           tmp = callback2(Spacer, { size: 16 });
           items[2] = tmp;
           obj[0] = items;
           let tmp13 = callback3(closure_15, obj);
-          const tmp12 = groupListingId(12013);
+          const tmp12 = groupListingId(12019);
         } else {
           obj1 = { message: null, ctaMessage: null, onClick: null, submitting: null, disabled: null };
           const intl = getSystemLocale.intl;
@@ -167,8 +167,8 @@ let closure_22 = require("noop").forwardRef((arg0, ref) => {
           };
           obj1[3] = submitting;
           obj1[4] = roleSubscriptionSettingsDisabled;
-          tmp13 = callback2(groupListingId(17596), obj1);
-          const tmp17 = groupListingId(17596);
+          tmp13 = callback2(groupListingId(17616), obj1);
+          const tmp17 = groupListingId(17616);
         }
       }
     }

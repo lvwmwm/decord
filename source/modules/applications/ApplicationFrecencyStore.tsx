@@ -1,9 +1,9 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8159
+// Function ID: 8160
 // Name: handleUserSettingsProtoStoreChange
 // Dependencies: [1385, 1339, 4507, 682, 1954, 4566, 12, 586, 706, 2]
 
-// Module 8155 (handleUserSettingsProtoStoreChange)
+// Module 8159 (handleUserSettingsProtoStoreChange)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

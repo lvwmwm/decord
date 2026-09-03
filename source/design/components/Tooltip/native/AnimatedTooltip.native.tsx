@@ -1,13 +1,13 @@
-// Module ID: 8989
-// Function ID: 8990
+// Module ID: 8993
+// Function ID: 8994
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4217, 8990, 1355, 8992, 8993, 2]
+// Dependencies: [32, 19, 17, 21, 4217, 8994, 1355, 8996, 8997, 2]
 // Exports: AnimatedTooltip
 
-// Module 8989 (renderTooltipItem)
+// Module 8993 (renderTooltipItem)
 import _modDef4217 from "module_4217" /* 4217 */;
-import Tooltip from "Tooltip" /* 8990 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8993 */;
+import Tooltip from "Tooltip" /* 8994 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8997 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
@@ -32,7 +32,7 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
   const merged = Object.assign(visible, Object.create(null));
   importDefault = undefined;
-  let obj = visible(8992);
+  let obj = visible(8996);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const tmp3 = callback(React.useState(false), 2);
   importDefault = tmp3[1];

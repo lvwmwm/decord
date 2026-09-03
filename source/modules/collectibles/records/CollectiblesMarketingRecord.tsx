@@ -1,14 +1,14 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7319
+// Function ID: 7320
 // Name: fromServer
-// Dependencies: [7319, 7321, 7322, 7323, 7320, 2]
+// Dependencies: [7320, 7322, 7323, 7324, 7321, 2]
 
-// Module 7318 (fromServer)
+// Module 7319 (fromServer)
 import set from "set" /* 2 */;
-import fromServer from "fromServer" /* 7319 */;
-import fromServer2 from "fromServer" /* 7321 */;
-import fromServer3 from "fromServer" /* 7322 */;
-import closure_5 from "fromServer" /* 7323 */;
+import fromServer from "fromServer" /* 7320 */;
+import fromServer2 from "fromServer" /* 7322 */;
+import fromServer3 from "fromServer" /* 7323 */;
+import closure_5 from "fromServer" /* 7324 */;
 
 let closure_2 = fromServer.CollectiblesMarketingBadgeRecord;
 let closure_3 = fromServer2.CollectiblesMarketingBannerRecord;

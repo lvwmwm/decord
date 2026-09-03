@@ -1,15 +1,15 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16014
+// Function ID: 16015
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 673, 21, 4478, 709, 6195, 8015, 5508, 1233, 15999, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 6196, 8018, 5509, 1233, 16015, 2]
 // Exports: default
 
-// Module 15998 (ServerPreviewBannerControls)
+// Module 16014 (ServerPreviewBannerControls)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 5508 */;
-import IconButton from "IconButton" /* 8015 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 15999 */;
+import registerAssetDefault from "registerAsset" /* 5509 */;
+import IconButton from "IconButton" /* 8018 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 16015 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { MOBILE_GUILD_UPSELL_LIST } from "ME" /* 673 */;

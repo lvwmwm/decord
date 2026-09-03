@@ -1,20 +1,20 @@
-// Module ID: 13231
-// Function ID: 13232
+// Module ID: 13243
+// Function ID: 13244
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 7151, 673, 21, 4478, 709, 4139, 1233, 3016, 5971, 4474, 586, 12, 2]
+// Dependencies: [19, 17, 7152, 673, 21, 4478, 709, 4139, 1233, 3016, 5972, 4474, 586, 12, 2]
 // Exports: default
 
-// Module 13231 (AccountCreditTier)
+// Module 13243 (AccountCreditTier)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import Text from "Text" /* 4474 */;
-import GameIcon from "GameIcon" /* 5971 */;
-import GameIconDefault from "GameIcon" /* 5971 */;
+import GameIcon from "GameIcon" /* 5972 */;
+import GameIconDefault from "GameIcon" /* 5972 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "addEntitlement" /* 7151 */;
+import closure_4 from "addEntitlement" /* 7152 */;
 import { SubscriptionStatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

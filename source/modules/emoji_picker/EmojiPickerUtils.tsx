@@ -1,23 +1,23 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 9120
+// Function ID: 9121
 // Name: initializeSearch
-// Dependencies: [19, 5409, 1908, 5389, 1921, 5413, 673, 1924, 1337, 1923, 511, 9117, 4700, 9118, 9120, 9121, 586, 1945, 9122, 1233, 4138, 4134, 695, 12, 684, 1369, 2]
+// Dependencies: [19, 5410, 1908, 5390, 1921, 5414, 673, 1924, 1337, 1923, 511, 9121, 4701, 9122, 9124, 9125, 586, 1945, 9126, 1233, 4138, 4134, 695, 12, 684, 1369, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9116 (initializeSearch)
+// Module 9120 (initializeSearch)
 import v1 from "v1" /* 511 */;
 import setDefault from "set" /* 684 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import withEqualityFn from "withEqualityFn" /* 9117 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
+import withEqualityFn from "withEqualityFn" /* 9121 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5409 */;
+import closure_4 from "getEmojiToGroupId" /* 5410 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "insertUnsortedGuilds" /* 5389 */;
+import closure_6 from "insertUnsortedGuilds" /* 5390 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5413 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5414 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 1924 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;

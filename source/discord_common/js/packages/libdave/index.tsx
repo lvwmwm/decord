@@ -1,9 +1,9 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 9850
+// Function ID: 9851
 // Name: set
-// Dependencies: [2, 9847]
+// Dependencies: [2, 9851]
 
-// Module 9846 (set)
+// Module 9850 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/libdave/index.tsx");

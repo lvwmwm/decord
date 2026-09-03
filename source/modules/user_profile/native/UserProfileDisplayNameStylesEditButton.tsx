@@ -1,10 +1,10 @@
-// Module ID: 14491
-// Function ID: 14492
+// Module ID: 14507
+// Function ID: 14508
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 709, 1498, 8939, 6260, 1372, 8084, 4747, 8942, 1939, 695, 1233, 14492, 1296, 8100, 8937, 14493, 14495, 2758, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 709, 1498, 8943, 6261, 1372, 8087, 4748, 8946, 1939, 695, 1233, 14508, 1296, 8103, 8941, 14509, 14511, 2758, 2]
 // Exports: default
 
-// Module 14491 (UserProfileDisplayNameStylesEditButton)
+// Module 14507 (UserProfileDisplayNameStylesEditButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;

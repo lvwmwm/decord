@@ -1,10 +1,10 @@
-// Module ID: 5976
-// Function ID: 5977
+// Module ID: 5977
+// Function ID: 5978
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4438, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4438, 4929, 2]
 // Exports: default
 
-// Module 5976 (ConnectionCardView)
+// Module 5977 (ConnectionCardView)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
@@ -70,7 +70,7 @@ export default function ConnectionCardView(description) {
     const intl = tmp5(1233).intl;
     obj5[3] = intl.string(tmp5(1233).t.S0W8Z5);
     obj5[4] = !canConnect;
-    tmp4Result = tmp4(tmp5(4928).Button, obj5);
+    tmp4Result = tmp4(tmp5(4929).Button, obj5);
   }
   items2[1] = tmp4Result;
   obj[1] = items2;

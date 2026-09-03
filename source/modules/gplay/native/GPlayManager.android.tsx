@@ -1,23 +1,23 @@
-// Module ID: 10706
-// Function ID: 10707
+// Module ID: 10710
+// Function ID: 10711
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 7174, 7175, 1215, 4145, 6092, 8232, 6093, 673, 4460, 1923, 21, 3, 6095, 706, 8231, 1214, 4074, 7183, 4154, 4837, 695, 4858, 1233, 10707, 2008, 4723, 7164, 2]
+// Dependencies: [109, 5, 19, 17, 7175, 7176, 1215, 4145, 6093, 8236, 6094, 673, 4460, 1923, 21, 3, 6096, 706, 8235, 1214, 4074, 7184, 4154, 4838, 695, 4859, 1233, 10711, 2008, 4724, 7165, 2]
 
-// Module 10706 (handleConnectionStateUpdated)
+// Module 10710 (handleConnectionStateUpdated)
 import timestampDefault from "timestamp" /* 3 */;
 import noopAll from "noop" /* 19 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getPlanIdForProduct from "getPlanIdForProduct" /* 8231 */;
+import getPlanIdForProduct from "getPlanIdForProduct" /* 8235 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 7174 */;
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7175 */;
+import closure_6 from "initialize" /* 7175 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7176 */;
 import closure_9 from "fetchFingerprint" /* 1215 */;
 import closure_10 from "reset" /* 4145 */;
-import closure_11 from "updateProduct" /* 6092 */;
-import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 8232 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 6093 */;
+import closure_11 from "updateProduct" /* 6093 */;
+import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 8236 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 6094 */;
 import ME from "ME" /* 673 */;
 import { OrderStatus } from "CustomCheckoutFlow" /* 4460 */;
 import { SubscriptionPlanInfo } from "GuildFeatures" /* 1923 */;
@@ -100,7 +100,7 @@ function _handlePurchaseUpdated() {
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4837);
+                  let obj7 = lib(4838);
                   c6 = 8;
                   let num4 = 1;
                   c7 = 1;
@@ -123,7 +123,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4837);
+                obj1 = lib(4838);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -335,7 +335,7 @@ function _executePendingDowngrade() {
             lib = dependencyMap;
             let obj5 = pendingDowngrade(4154);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4858);
+            let obj6 = lib(4859);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1233).intl;
             obj2[0] = intl.string(pendingDowngrade(1233).t["U+H+kd"]);
@@ -464,7 +464,7 @@ function _fetchAndAlertActiveSubscription() {
             closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            obj1 = closure_1_0(4837);
+            obj1 = closure_1_0(4838);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };

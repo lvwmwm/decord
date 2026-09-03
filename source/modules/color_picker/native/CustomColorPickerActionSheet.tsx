@@ -1,10 +1,10 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14489
+// Function ID: 14490
 // Name: SuggestedColors
-// Dependencies: [32, 19, 17, 21, 4478, 709, 14474, 685, 4217, 14475, 4326, 686, 4445, 5630, 5629, 1233, 4928, 7714, 12, 14476, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 14490, 685, 4217, 14491, 4326, 686, 4445, 5631, 5630, 1233, 4929, 7717, 12, 14492, 2]
 // Exports: default
 
-// Module 14473 (SuggestedColors)
+// Module 14489 (SuggestedColors)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -67,8 +67,8 @@ export default function CustomColorPickerActionSheet(arg0) {
   let sharedValue2;
   let callback;
   function updateInputHexValueFromHsv(h) {
-    const hsvToRgbWorkletResult = onSelect(14475).hsvToRgbWorklet(h);
-    const obj = onSelect(14475);
+    const hsvToRgbWorkletResult = onSelect(14491).hsvToRgbWorklet(h);
+    const obj = onSelect(14491);
     dependencyMap(onSelect(4326).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
   let obj = onSelect(685);
@@ -128,8 +128,8 @@ export default function CustomColorPickerActionSheet(arg0) {
   const intl2 = tmp2(1233).intl;
   obj1[2] = intl2.string(onSelect(1233).t.XqMe3N);
   obj1[3] = callback1;
-  obj[1] = sharedValue2(onSelect(4928).Button, obj1);
-  obj[2] = sharedValue2(onSelect(5629).BottomSheetTitleHeader, obj);
+  obj[1] = sharedValue2(onSelect(4929).Button, obj1);
+  obj[2] = sharedValue2(onSelect(5630).BottomSheetTitleHeader, obj);
   obj2 = { style: tmp.container, children: null };
   obj3 = { accessibilityLabel: null, value: null, onChange: null, maxLength: 7 };
   const intl3 = tmp2(1233).intl;
@@ -152,7 +152,7 @@ export default function CustomColorPickerActionSheet(arg0) {
       const result2 = sharedValue2.set(hex2rgb2hsvResult.v / 100);
     }
   };
-  const items3 = [sharedValue2(onSelect(7714).TextInput, obj3), , ];
+  const items3 = [sharedValue2(onSelect(7717).TextInput, obj3), , ];
   const obj4 = { suggestedColors: null, onSelect: null, color: null };
   const obj8 = onSelect(4217);
   const tmp13 = updateInputHexValueFromHsv;
@@ -187,8 +187,8 @@ export default function CustomColorPickerActionSheet(arg0) {
       obj.runOnJS(updateInputHexValueFromHsv)(obj);
     }
   };
-  items3[2] = sharedValue2(tmp16(14476), obj5);
+  items3[2] = sharedValue2(tmp16(14492), obj5);
   obj2[1] = items3;
   obj[3] = tmp13(tmp14, obj2);
-  return sharedValue2(onSelect(5630).BottomSheet, obj);
+  return sharedValue2(onSelect(5631).BottomSheet, obj);
 };

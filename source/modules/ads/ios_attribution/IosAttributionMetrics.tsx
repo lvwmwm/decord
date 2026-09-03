@@ -1,15 +1,15 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11316
+// Function ID: 11317
 // Name: trackIosAttributionImpression
-// Dependencies: [673, 7356, 7361, 695, 2]
+// Dependencies: [673, 7357, 7362, 695, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
-// Module 11312 (trackIosAttributionImpression)
+// Module 11316 (trackIosAttributionImpression)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import setDefault from "set" /* 7356 */;
-import set2 from "set" /* 7361 */;
+import setDefault from "set" /* 7357 */;
+import set2 from "set" /* 7362 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionMetrics.tsx");

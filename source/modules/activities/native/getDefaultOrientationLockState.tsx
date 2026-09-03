@@ -1,10 +1,10 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9620
+// Function ID: 9621
 // Name: getIsTabletActivitySurface
 // Dependencies: [4457, 1623, 706, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 9616 (getIsTabletActivitySurface)
+// Module 9620 (getIsTabletActivitySurface)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;

@@ -1,13 +1,13 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12188
+// Function ID: 12189
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 9102, 2]
+// Dependencies: [17, 9106, 2]
 // Exports: default
 
-// Module 12182 (useGameMentionSearchBarHeight)
+// Module 12188 (useGameMentionSearchBarHeight)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import map from "map" /* 9102 */;
+import map from "map" /* 9106 */;
 
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 let c3 = "text-sm/semibold";

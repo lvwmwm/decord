@@ -1,10 +1,10 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 12020
+// Function ID: 12021
 // Name: MessageBlock
 // Dependencies: [19, 17, 21, 709, 4478, 1296, 2]
 // Exports: default
 
-// Module 12014 (MessageBlock)
+// Module 12020 (MessageBlock)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;

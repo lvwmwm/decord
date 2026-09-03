@@ -1,10 +1,10 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7675
+// Function ID: 7676
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 1991, 1921, 4300, 21, 7673, 586, 7674, 7670, 7655, 1233, 7666, 5559, 4928, 2]
+// Dependencies: [5, 19, 1991, 1921, 4300, 21, 7676, 586, 7677, 7673, 7658, 1233, 7669, 5560, 4929, 2]
 // Exports: default
 
-// Module 7672 (MemberVerificationAlertRejected)
+// Module 7675 (MemberVerificationAlertRejected)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
@@ -95,7 +95,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (closure_1_3 != null) {
               isPending = closure_1_3.isPending;
             }
-            let obj3 = v0(7670);
+            let obj3 = v0(7673);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -133,7 +133,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = closure_1_0(7655);
+          obj1 = closure_1_0(7658);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
@@ -198,7 +198,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (closure_1_3 != null) {
               isPending = closure_1_3.isPending;
             }
-            let obj3 = v0(7670);
+            let obj3 = v0(7673);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -236,7 +236,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = closure_1_0(7655);
+          obj1 = closure_1_0(7658);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

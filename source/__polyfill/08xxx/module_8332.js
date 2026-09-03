@@ -3,4 +3,6 @@
 // Dependencies: []
 
 // Module 8332
-arg5.maskType = { luminance: 0, alpha: 1 };
+const obj = { objectBoundingBox: 0, userSpaceOnUse: 1 };
+arg5.default = obj;
+arg5.units = obj;

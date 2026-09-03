@@ -1,13 +1,13 @@
-// Module ID: 15910
-// Function ID: 15911
-// Dependencies: [19, 17, 4569, 1921, 15119, 673, 21, 1296, 4478, 5961, 586, 695, 8911, 2008, 4322, 9438, 15120, 8116, 2]
+// Module ID: 15926
+// Function ID: 15927
+// Dependencies: [19, 17, 4569, 1921, 15134, 673, 21, 1296, 4478, 5962, 586, 695, 8915, 2008, 4322, 9442, 15135, 8119, 2]
 
-// Module 15910
+// Module 15926
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "sortActivity" /* 4569 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { HappeningNowCardTrackingType as closure_7 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import { HappeningNowCardTrackingType as closure_7 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

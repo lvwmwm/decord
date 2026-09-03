@@ -1,13 +1,13 @@
-// Module ID: 13369
-// Function ID: 13370
+// Module ID: 13384
+// Function ID: 13385
 // Name: _fetchPremiumGroupMembership
-// Dependencies: [5, 1934, 13370, 673, 706, 527, 38, 2]
+// Dependencies: [5, 1934, 13385, 673, 706, 527, 38, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 13369 (_fetchPremiumGroupMembership)
+// Module 13384 (_fetchPremiumGroupMembership)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createdAt" /* 1934 */;
-import closure_5 from "createFromServer" /* 13370 */;
+import closure_5 from "createFromServer" /* 13385 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 6404
-// Function ID: 6405
+// Module ID: 6405
+// Function ID: 6406
 // Name: ChairIllocon
-// Dependencies: [21, 5501, 6405, 2]
+// Dependencies: [21, 5502, 6406, 2]
 // Exports: ChairIllocon
 
-// Module 6404 (ChairIllocon)
+// Module 6405 (ChairIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6405 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6406 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ChairIllocon.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 10950
+// Function ID: 10951
 // Name: apexExperiment
 // Dependencies: [1921, 1467, 586, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 10946 (apexExperiment)
+// Module 10950 (apexExperiment)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;

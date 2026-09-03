@@ -1,15 +1,15 @@
-// Module ID: 7942
-// Function ID: 7943
+// Module ID: 7945
+// Function ID: 7946
 // Name: createGuildProductPurchaseSystemMessage
-// Dependencies: [4131, 1386, 673, 4746, 7878, 1433, 1430, 7912, 7880, 1233, 7882, 2]
+// Dependencies: [4131, 1386, 673, 4747, 7881, 1433, 1430, 7915, 7883, 1233, 7885, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 7942 (createGuildProductPurchaseSystemMessage)
+// Module 7945 (createGuildProductPurchaseSystemMessage)
 import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4746 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4747 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
 import closure_3 from "hasFlag" /* 4131 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { MessageTypes } from "ME" /* 673 */;
@@ -54,7 +54,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
         let guildMemberAvatarSource = tmp5Result.getGuildMemberAvatarSource(obj, author);
       }
       obj = { content: null, totalMonthsSubscribed: 0, username: null, avatarURL: null, welcomeLabel: null };
-      tmp5Result = tmp5(7912);
+      tmp5Result = tmp5(7915);
       obj1 = { username: null, usernameOnClickHandler: null, productName: null };
       obj1[0] = messageAuthorWithProcessedColor.nick;
       obj2 = { message: null, author: null, roleStyle: null };

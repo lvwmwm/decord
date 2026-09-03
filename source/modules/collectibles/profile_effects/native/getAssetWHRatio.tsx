@@ -1,10 +1,10 @@
-// Module ID: 8527
-// Function ID: 8528
+// Module ID: 8531
+// Function ID: 8532
 // Name: DEFAULT_PROFILE_EFFECT_WH_RATIO
 // Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 8527 (DEFAULT_PROFILE_EFFECT_WH_RATIO)
+// Module 8531 (DEFAULT_PROFILE_EFFECT_WH_RATIO)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");

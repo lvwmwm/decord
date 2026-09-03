@@ -1,21 +1,21 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 4981
+// Function ID: 4982
 // Name: match
-// Dependencies: [17, 4981, 5060, 4511, 1233, 4134, 4192, 5075, 4958, 1430, 4959, 4962, 2]
+// Dependencies: [17, 4982, 5061, 4511, 1233, 4134, 4192, 5076, 4959, 1430, 4960, 4963, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 4980 (match)
+// Module 4981 (match)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import tDefault from "t" /* 4192 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4511 */;
-import textRegexpDefault from "textRegexp" /* 4958 */;
-import getChannelDefault from "getChannel" /* 4959 */;
-import regExpDefault from "regExp" /* 4962 */;
-import getGameMentionData from "getGameMentionData" /* 5060 */;
-import INVISIBLE_CHAR_REGEX2 from "INVISIBLE_CHAR_REGEX" /* 5075 */;
+import textRegexpDefault from "textRegexp" /* 4959 */;
+import getChannelDefault from "getChannel" /* 4960 */;
+import regExpDefault from "regExp" /* 4963 */;
+import getGameMentionData from "getGameMentionData" /* 5061 */;
+import INVISIBLE_CHAR_REGEX2 from "INVISIBLE_CHAR_REGEX" /* 5076 */;
 
 const Image = get_ActivityIndicator.Image;
 obj = { escape: obj, invisibleUnicode: null, text: null, emoji: null, customEmoji: null, channelMention: null, gameMention: null, channelOrMessageUrl: null, mediaPostLink: null, attachmentLink: null, silentPrefix: null };

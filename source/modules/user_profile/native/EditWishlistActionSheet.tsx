@@ -1,22 +1,22 @@
-// Module ID: 12805
-// Function ID: 12806
+// Module ID: 12817
+// Function ID: 12818
 // Name: exitingAnimation
-// Dependencies: [32, 19, 17, 4470, 10679, 10680, 1921, 7375, 8569, 5631, 21, 4478, 709, 4217, 4479, 586, 1627, 5961, 5981, 12746, 12747, 12723, 10685, 8572, 9232, 1233, 5632, 6000, 6001, 7805, 10997, 8015, 4436, 2]
+// Dependencies: [32, 19, 17, 4470, 10683, 10684, 1921, 7376, 8573, 5632, 21, 4478, 709, 4217, 4479, 586, 1627, 5962, 5982, 12758, 12759, 12735, 10689, 8576, 9236, 1233, 5633, 6001, 6002, 7808, 11001, 8018, 4436, 2]
 // Exports: default
 
-// Module 12805 (exitingAnimation)
+// Module 12817 (exitingAnimation)
 import ThemesDefault from "Themes" /* 709 */;
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4479 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_8 from "get" /* 10679 */;
-import { getWishlistProductLines } from "fromServer" /* 10680 */;
+import closure_8 from "get" /* 10683 */;
+import { getWishlistProductLines } from "fromServer" /* 10684 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "createUserWidgetFromServer" /* 7375 */;
-import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import closure_11 from "createUserWidgetFromServer" /* 7376 */;
+import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import { LinearTransition } from "module_4217" /* 4217 */;
@@ -80,10 +80,10 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(5961)(analyticsLocations, tmp4(5981).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(5962)(analyticsLocations, tmp4(5982).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(5961);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12746)(obj));
+  let tmp5 = analyticsContext(5962);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12758)(obj));
   if (null != rowWidth) {
     obj = { width: null };
     obj[0] = rowWidth;
@@ -95,7 +95,7 @@ export default function EditWishlistActionSheet(wishlistId) {
   tmp2Result = tmp2(586);
   const items2 = [first];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => first.isFetching(wishlistId));
-  let tmp6 = analyticsContext(12746)(obj);
+  let tmp6 = analyticsContext(12758)(obj);
   const items3 = [closure_10, closure_11];
   stateFromStores2 = wishlistId(586).useStateFromStores(items3, () => {
     currentUser = currentUser.getCurrentUser();
@@ -172,8 +172,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj6[1] = intl3.string(wishlistId(1233).t.dw58pE);
   obj6[2] = first;
   obj6[3] = callback;
-  obj5[1] = callback2(wishlistId(6001).TableSwitchRow, obj6);
-  obj4[1] = callback2(wishlistId(6000).TableRowGroup, obj5);
+  obj5[1] = callback2(wishlistId(6002).TableSwitchRow, obj6);
+  obj4[1] = callback2(wishlistId(6001).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -185,7 +185,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp16Result;
     obj3[1] = items8;
     obj2[1] = closure_15(tmp19, obj3);
-    obj1[3] = tmp16(tmp2(5632).BottomSheetScrollView, obj2);
+    obj1[3] = tmp16(tmp2(5633).BottomSheetScrollView, obj2);
     return tmp16(tmp4Result, obj1);
   }
   tmp16Result = null;

@@ -1,10 +1,10 @@
-// Module ID: 11904
-// Function ID: 11905
+// Module ID: 11910
+// Function ID: 11911
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4478, 11846, 8444, 1233, 1350, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 11852, 8448, 1233, 1350, 4474, 2]
 // Exports: default
 
-// Module 11904 (EmptyState)
+// Module 11910 (EmptyState)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11846);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8444).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(11852);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8448).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(closure_1_1[6]).intl;

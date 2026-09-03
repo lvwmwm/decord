@@ -1,10 +1,10 @@
-// Module ID: 5078
-// Function ID: 5079
+// Module ID: 5079
+// Function ID: 5080
 // Name: getMixedGradientColor
-// Dependencies: [19, 17, 4297, 21, 4478, 1362, 4327, 4326, 1492, 4940, 4413, 709, 4329, 4296, 686, 1205, 644, 4331, 4412, 1348, 2]
+// Dependencies: [19, 17, 4297, 21, 4478, 1362, 4327, 4326, 1492, 4941, 4413, 709, 4329, 4296, 686, 1205, 644, 4331, 4412, 1348, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 5078 (getMixedGradientColor)
+// Module 5079 (getMixedGradientColor)
 import ThemesDefault from "Themes" /* 709 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
@@ -13,7 +13,7 @@ import hslToRgbDefault from "hslToRgb" /* 4327 */;
 import set from "set" /* 4329 */;
 import getGuildIdFromNavigationStateDefault from "getGuildIdFromNavigationState" /* 4331 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import LinearGradientDefault from "LinearGradient" /* 4940 */;
+import LinearGradientDefault from "LinearGradient" /* 4941 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "reset" /* 4297 */;

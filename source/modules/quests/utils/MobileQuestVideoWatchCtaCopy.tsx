@@ -1,15 +1,15 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11337
+// Function ID: 11338
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [5395, 7479, 1233, 11334, 2]
+// Dependencies: [5396, 7480, 1233, 11338, 2]
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 11333 (formatWatchRemainingDurationShort)
+// Module 11337 (formatWatchRemainingDurationShort)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import QuestsExperimentLocations2 from "QuestsExperimentLocations" /* 5395 */;
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7479 */;
-import apexExperimentDefault from "apexExperiment" /* 11334 */;
+import QuestsExperimentLocations2 from "QuestsExperimentLocations" /* 5396 */;
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7480 */;
+import apexExperimentDefault from "apexExperiment" /* 11338 */;
 
 function formatWatchRemainingDurationShort(questTaskDetails, truncate) {
   let obj = getApplicationIdsByTaskTypes;

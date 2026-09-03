@@ -1,10 +1,10 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10339
+// Function ID: 10340
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4478, 709, 9008, 5630, 4926, 8997, 4474, 2]
+// Dependencies: [109, 19, 17, 21, 4478, 709, 9012, 5631, 4927, 9001, 4474, 2]
 // Exports: PromoSheet
 
-// Module 10335 (PromoSheet)
+// Module 10339 (PromoSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
@@ -42,7 +42,7 @@ export const PromoSheet = function PromoSheet(arg0) {
     obj = {};
     const merged1 = Object.assign(graphic);
     obj.style = tmp2.graphic;
-    let tmp4Result = tmp4(tmp5(8997).Graphic, obj);
+    let tmp4Result = tmp4(tmp5(9001).Graphic, obj);
   } else {
     tmp4Result = null;
     if (null != illustration) {
@@ -63,9 +63,9 @@ export const PromoSheet = function PromoSheet(arg0) {
   }
   const obj3 = { spacing: 24, children: null };
   items2[1] = tmp4Result;
-  items1[1] = closure_8(gradientColor(4926).Stack, { children: items2 });
+  items1[1] = closure_8(gradientColor(4927).Stack, { children: items2 });
   items1[2] = actions;
   obj3[1] = items1;
-  obj.children = closure_8(gradientColor(4926).Stack, obj3);
-  return closure_7(gradientColor(5630).BottomSheet, obj);
+  obj.children = closure_8(gradientColor(4927).Stack, obj3);
+  return closure_7(gradientColor(5631).BottomSheet, obj);
 };

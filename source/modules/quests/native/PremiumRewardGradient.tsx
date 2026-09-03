@@ -1,10 +1,10 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15006
+// Function ID: 15007
 // Name: PremiumRewardFillGradient
-// Dependencies: [19, 17, 21, 4478, 4326, 709, 4197, 4413, 1349, 4940, 5543, 2]
+// Dependencies: [19, 17, 21, 4478, 4326, 709, 4197, 4413, 1349, 4941, 5544, 2]
 // Exports: default
 
-// Module 14991 (PremiumRewardFillGradient)
+// Module 15006 (PremiumRewardFillGradient)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -88,11 +88,11 @@ function PremiumRewardGlowGradient(arg0) {
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  obj = { style: items2, maskElement: tmp11(tmp3(4940), obj1), children: tmp11(tmp3(4940), obj2) };
+  obj = { style: items2, maskElement: tmp11(tmp3(4941), obj1), children: tmp11(tmp3(4941), obj2) };
   items2[1] = glowLight;
   obj1 = { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 };
   obj2 = { style: closure_4.absoluteFill, colors: memo, start: closure_9, end: closure_10 };
-  const items3 = [closure_6(token1(5543), obj), children];
+  const items3 = [closure_6(token1(5544), obj), children];
   obj[1] = items3;
   return tmp9(tmp10, obj);
 }

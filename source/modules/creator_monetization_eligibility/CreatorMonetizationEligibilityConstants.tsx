@@ -1,9 +1,9 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 17522
+// Function ID: 17523
 // Name: CreatorMonetizationApplicationState
 // Dependencies: [2]
 
-// Module 17502 (CreatorMonetizationApplicationState)
+// Module 17522 (CreatorMonetizationApplicationState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityConstants.tsx");

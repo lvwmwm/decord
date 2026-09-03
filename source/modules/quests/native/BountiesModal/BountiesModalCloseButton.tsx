@@ -1,15 +1,15 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14897
+// Function ID: 14898
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4478, 709, 5076, 1233, 5559, 2]
+// Dependencies: [19, 21, 4478, 709, 5077, 1233, 5560, 2]
 // Exports: default
 
-// Module 14882 (BountiesModalCloseButton)
+// Module 14897 (BountiesModalCloseButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import XSmallIcon from "XSmallIcon" /* 5559 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import XSmallIcon from "XSmallIcon" /* 5560 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

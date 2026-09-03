@@ -1,9 +1,9 @@
-// Module ID: 6961
-// Function ID: 6962
+// Module ID: 6962
+// Function ID: 6963
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6961 (metadata)
+// Module 6962 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyChatSpotIllustration-2x.png.js");

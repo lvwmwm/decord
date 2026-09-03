@@ -1,14 +1,14 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11977
+// Function ID: 11978
 // Name: MentionableIcon
-// Dependencies: [32, 19, 4470, 1984, 1921, 502, 21, 4478, 709, 586, 11972, 10876, 11973, 1296, 11974, 11975, 11969, 4445, 11973, 2008, 2]
+// Dependencies: [32, 19, 4470, 1984, 1921, 502, 21, 4478, 709, 586, 11978, 10880, 11979, 1296, 11980, 11981, 11975, 4445, 11979, 2008, 2]
 // Exports: default
 
-// Module 11971 (MentionableIcon)
+// Module 11977 (MentionableIcon)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import UserCircleIcon from "UserCircleIcon" /* 10876 */;
-import stylesDefault from "styles" /* 11972 */;
+import UserCircleIcon from "UserCircleIcon" /* 10880 */;
+import stylesDefault from "styles" /* 11978 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -33,19 +33,19 @@ function MentionableIcon(mentionable) {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(11973).MentionableItemTypes.USER === type) {
+    if (tmp2(11979).MentionableItemTypes.USER === type) {
       obj = { user: null, guildId: null, animate: null, size: null };
       obj[0] = mentionable.result.user;
       obj[1] = mentionable.guildId;
       obj[2] = !stateFromStores;
       obj[3] = tmp2(1296).AvatarSizes.REFRESH_MEDIUM_32;
       return tmp5(tmp2(1296).Avatar, obj);
-    } else if (tmp2(11973).MentionableItemTypes.ROLE === type) {
+    } else if (tmp2(11979).MentionableItemTypes.ROLE === type) {
       obj1 = { role: null };
       obj1[0] = mentionable.result;
-      return tmp5(tmp2(11974).RoleIcon, obj1);
+      return tmp5(tmp2(11980).RoleIcon, obj1);
     } else {
-      const GLOBAL = tmp2(11973).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11979).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }

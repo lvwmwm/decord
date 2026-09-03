@@ -1,10 +1,10 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12990
+// Function ID: 12991
 // Name: ImageSkeleton
 // Dependencies: [19, 17, 21, 4478, 709, 4474, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12978 (ImageSkeleton)
+// Module 12990 (ImageSkeleton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;

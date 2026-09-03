@@ -1,13 +1,13 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 7433
+// Function ID: 7434
 // Name: initialize
-// Dependencies: [7433, 12, 586, 706, 2]
+// Dependencies: [7434, 12, 586, 706, 2]
 
-// Module 7432 (initialize)
+// Module 7433 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import ConfettiLocation from "ConfettiLocation" /* 7433 */;
+import ConfettiLocation from "ConfettiLocation" /* 7434 */;
 import apply from "apply" /* 12 */;
 
 ({ ShakeLocation, ConfettiLocation } = ConfettiLocation);

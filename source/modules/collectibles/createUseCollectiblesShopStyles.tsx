@@ -1,10 +1,10 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 11051
+// Function ID: 11052
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4470, 8128, 7306, 644, 2]
+// Dependencies: [32, 4470, 8131, 7307, 644, 2]
 // Exports: default
 
-// Module 11047 (createUseCollectiblesShopStyles)
+// Module 11051 (createUseCollectiblesShopStyles)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 

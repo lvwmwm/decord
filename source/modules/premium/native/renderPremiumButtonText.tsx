@@ -1,10 +1,10 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13462
+// Function ID: 13463
 // Name: PremiumText
 // Dependencies: [19, 17, 1923, 21, 4478, 4326, 709, 4139, 1233, 1296, 2]
 // Exports: default
 
-// Module 13447 (PremiumText)
+// Module 13462 (PremiumText)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

@@ -1,17 +1,17 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7215
+// Function ID: 7216
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 17, 5229, 7215, 1908, 673, 3, 1474, 1473, 7228, 684, 592, 706, 4339, 7216, 7229, 9, 2]
+// Dependencies: [5, 17, 5230, 7216, 1908, 673, 3, 1474, 1473, 7229, 684, 592, 706, 4339, 7217, 7230, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7214 (receiveNetworkInfoformation)
+// Module 7215 (receiveNetworkInfoformation)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
 import configure from "configure" /* 1474 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
-import closure_6 from "result" /* 7215 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
+import closure_6 from "result" /* 7216 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import importDefaultResult from "notifyListeners" /* 1473 */;
@@ -303,19 +303,19 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     closure_1_19();
     const obj7 = closure_1_1(closure_1_2[13]);
     let callback = yield obj7.getAppFirstVisibleTimestamp();
-    const obj4 = callback(7216);
+    const obj4 = callback(7217);
     let lib = yield obj4.getSession();
     const obj5 = { type: null, properties: null };
     obj5[0] = constants.APP_NETWORK_USAGE;
     const obj6 = {};
-    const merged = Object.assign(callback(7229).getDeviceMetadata());
+    const merged = Object.assign(callback(7230).getDeviceMetadata());
     const _Date = Date;
     obj6.client_track_timestamp = Date.now();
     if (lib != null) {
       const uuid = lib.uuid;
     }
     obj6.client_heartbeat_session_id = uuid;
-    obj = callback(7229);
+    obj = callback(7230);
     obj6.load_id = obj.currentLoadId();
     obj6.num_guilds = guildCount.getGuildCount();
     obj6.was_authenticated = lib(9).wasAuthenticated;
@@ -372,7 +372,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     obj6.download_bytes_received = closure_10.downloadBytesReceived;
     obj6.download_num_requests = closure_10.downloadNumRequests;
     obj6.media_player_bytes_received = closure_10.mediaPlayerBytesReceived;
-    obj1 = callback(7228);
+    obj1 = callback(7229);
     obj6.rtc_bytes = obj1.getRTCTotalBytes();
     obj6.num_message_sends = closure_15;
     if (0 !== closure_15) {

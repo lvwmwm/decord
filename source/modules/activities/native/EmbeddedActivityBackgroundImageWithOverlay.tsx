@@ -1,12 +1,12 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9637
+// Function ID: 9638
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 4478, 709, 9634, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 9638, 2]
 // Exports: default
 
-// Module 9633 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 9637 (EmbeddedActivityBackgroundImageWithOverlay)
 import ThemesDefault from "Themes" /* 709 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9634 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9638 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

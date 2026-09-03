@@ -1,10 +1,10 @@
-// Module ID: 9122
-// Function ID: 9123
+// Module ID: 9126
+// Function ID: 9127
 // Name: getSoundmojiSendExperiment
 // Dependencies: [1467, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
-// Module 9122 (getSoundmojiSendExperiment)
+// Module 9126 (getSoundmojiSendExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 

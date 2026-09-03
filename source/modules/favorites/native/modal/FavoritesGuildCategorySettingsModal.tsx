@@ -1,10 +1,10 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15948
+// Function ID: 15949
 // Name: FavoritesGuildCategorySettings
-// Dependencies: [32, 19, 17, 1389, 1424, 21, 4478, 709, 1498, 586, 1911, 10328, 7617, 1233, 4857, 1296, 4926, 7714, 6000, 5607, 4436, 10881, 10882, 2]
+// Dependencies: [32, 19, 17, 1389, 1424, 21, 4478, 709, 1498, 586, 1911, 10332, 7618, 1233, 4858, 1296, 4927, 7717, 6001, 5608, 4436, 10885, 10886, 2]
 // Exports: default
 
-// Module 15932 (FavoritesGuildCategorySettings)
+// Module 15948 (FavoritesGuildCategorySettings)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -145,12 +145,12 @@ let result = require("set").fileFinishedImporting("modules/favorites/native/moda
 export default function FavoritesGuildCategorySettingsModal(categoryId) {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10881)().onGoBack;
+  onGoBack = onGoBack(10885)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
   const intl = categoryId(1233).intl;
   obj[1] = intl.string(categoryId(1233).t["/uELTj"]);
   obj[2] = function render() {
     return closure_1_8(closure_1_11, { categoryId, onGoBack });
   };
-  return callback(onGoBack(10882), obj);
+  return callback(onGoBack(10886), obj);
 };

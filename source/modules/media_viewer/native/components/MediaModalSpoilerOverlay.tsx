@@ -1,11 +1,11 @@
-// Module ID: 13064
-// Function ID: 13065
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1234, 4197, 13049, 4217, 4918, 5034, 4474, 1233, 2]
+// Module ID: 13076
+// Function ID: 13077
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1234, 4197, 13061, 4217, 4919, 5035, 4474, 1233, 2]
 
-// Module 13064
+// Module 13076
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13049 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13061 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -51,13 +51,13 @@ export default importAllResult.memo(function MediaModalSpoilerOverlay(source) {
     obj[0] = str;
     obj[1] = token;
     obj[2] = absoluteFill.absoluteFill;
-    const items1 = [closure_6(tmp3(4918), obj), ];
+    const items1 = [closure_6(tmp3(4919), obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = items2.spoilerOverlayContainer;
     const obj2 = { style: null, children: null };
     if (source.obscure) {
       obj2[0] = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5034).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5035).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj3 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1233).intl;
       stringResult = intl2.string(tmp(1233).t.SpxcUR);
@@ -79,7 +79,7 @@ export default importAllResult.memo(function MediaModalSpoilerOverlay(source) {
     items1[1] = obj1;
     obj[1] = items1;
     closure_7(tmp3(4217).View, obj);
-    const tmp3Result = tmp3(4918);
+    const tmp3Result = tmp3(4919);
     const tmp8 = absoluteFill;
   }
 });

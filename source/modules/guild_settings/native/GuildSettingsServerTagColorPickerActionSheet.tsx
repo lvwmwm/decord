@@ -1,15 +1,15 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17428
+// Function ID: 17429
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 7862, 21, 709, 4478, 14475, 4326, 1492, 4217, 10177, 1233, 9273, 4445, 5630, 5629, 4926, 9021, 13877, 4474, 9784, 14476, 9739, 4928, 2]
+// Dependencies: [32, 19, 17, 7865, 21, 709, 4478, 14491, 4326, 1492, 4217, 10181, 1233, 9277, 4445, 5631, 5630, 4927, 9025, 13893, 4474, 9788, 14492, 9743, 4929, 2]
 // Exports: default
 
-// Module 17408 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 17428 (GuildSettingsServerTagColorPickerActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 7862 */;
+import items from "items" /* 7865 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

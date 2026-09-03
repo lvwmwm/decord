@@ -1,14 +1,14 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 15986
+// Function ID: 15987
 // Name: FavoritesGuildHeaderActionButton
-// Dependencies: [19, 21, 15971, 8015, 5560, 11989, 15972, 2]
+// Dependencies: [19, 21, 15987, 8018, 5561, 11995, 15988, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 15970 (FavoritesGuildHeaderActionButton)
+// Module 15986 (FavoritesGuildHeaderActionButton)
 import noopAll from "noop" /* 19 */;
-import IconButton from "IconButton" /* 8015 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15971 */;
-import handleCreateCategory from "handleCreateCategory" /* 15972 */;
+import IconButton from "IconButton" /* 8018 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15987 */;
+import handleCreateCategory from "handleCreateCategory" /* 15988 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -17,11 +17,11 @@ const result = require("set").fileFinishedImporting("modules/favorites/native/Fa
 
 export const FavoritesGuildHeaderActionButton = function FavoritesGuildHeaderActionButton() {
   ({ isPreview, exitPreview, label } = useFavoritesGuildHeaderActionDefault());
-  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5560 : 11989), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
+  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5561 : 11995), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
   if (!isPreview) {
     exitPreview = handleCreateCategory.openFavoritesGuildAddActionSheet;
   }
   obj[3] = exitPreview;
   obj[4] = label;
-  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5560 : 11989), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
+  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5561 : 11995), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
 };

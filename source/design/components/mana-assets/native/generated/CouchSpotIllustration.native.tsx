@@ -1,14 +1,14 @@
-// Module ID: 6444
-// Function ID: 6445
+// Module ID: 6445
+// Function ID: 6446
 // Name: CouchSpotIllustration
-// Dependencies: [21, 5501, 6445, 2]
+// Dependencies: [21, 5502, 6446, 2]
 // Exports: CouchSpotIllustration
 
-// Module 6444 (CouchSpotIllustration)
+// Module 6445 (CouchSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6445 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6446 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CouchSpotIllustration.native.tsx");

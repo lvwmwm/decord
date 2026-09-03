@@ -1,10 +1,10 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12426
+// Function ID: 12427
 // Name: viewPrompt
 // Dependencies: [706, 2]
 // Exports: viewPrompt
 
-// Module 12414 (viewPrompt)
+// Module 12426 (viewPrompt)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

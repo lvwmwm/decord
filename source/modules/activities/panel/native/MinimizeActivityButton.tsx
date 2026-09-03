@@ -1,12 +1,12 @@
-// Module ID: 16846
-// Function ID: 16847
-// Dependencies: [19, 17, 9479, 21, 4478, 4928, 8950, 1233, 8015, 2]
+// Module ID: 16866
+// Function ID: 16867
+// Dependencies: [19, 17, 9483, 21, 4478, 4929, 8954, 1233, 8018, 2]
 
-// Module 16846
-import registerAssetDefault from "registerAsset" /* 8950 */;
+// Module 16866
+import registerAssetDefault from "registerAsset" /* 8954 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9479 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -29,7 +29,7 @@ const memoResult = importAllResult.memo(function MinimizeActivityButton(arg0) {
       obj[1] = intl2.string(setMode(1233).t.brPQ5U);
       obj[2] = callback;
       obj[3] = activityName;
-      obj[1] = jsx(setMode(4928).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      obj[1] = jsx(setMode(4929).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
       let tmp3 = <View icon={null} accessibilityLabel={null} onPress={null} text={null} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} shrink />;
     }
     return tmp3;
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(function MinimizeActivityButton(arg0) {
   const intl = setMode(1233).intl;
   obj[1] = intl.string(setMode(1233).t.brPQ5U);
   obj[2] = callback;
-  tmp3 = jsx(setMode(8015).IconButton, { icon: registerAssetDefault, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
+  tmp3 = jsx(setMode(8018).IconButton, { icon: registerAssetDefault, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
 });
 const result = require("set").fileFinishedImporting("modules/activities/panel/native/MinimizeActivityButton.tsx");
 

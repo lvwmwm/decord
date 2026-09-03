@@ -1,10 +1,10 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14754
+// Function ID: 14755
 // Name: useScheduleTimeControlsRowProps
 // Dependencies: [21, 4474, 1233, 2368, 2]
 // Exports: default
 
-// Module 14739 (useScheduleTimeControlsRowProps)
+// Module 14754 (useScheduleTimeControlsRowProps)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -16,7 +16,7 @@ const result = set.fileFinishedImporting("modules/parent_tools/hooks/useSchedule
 
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
-    let obj = { subLabel: null, trailing: "r" };
+    let obj = { subLabel: null, trailing: "Array" };
     obj = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = getSystemLocale.intl;
     obj[2] = intl.string(messagesProxyDefault.fOBIZH);

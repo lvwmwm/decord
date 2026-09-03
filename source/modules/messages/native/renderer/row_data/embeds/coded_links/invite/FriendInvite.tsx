@@ -1,15 +1,15 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13112
+// Function ID: 13113
 // Name: createFriendInvite
-// Dependencies: [17, 4130, 7491, 7863, 1233, 4322, 1430, 2]
+// Dependencies: [17, 4130, 7492, 7866, 1233, 4322, 1430, 2]
 // Exports: createFriendInvite
 
-// Module 13100 (createFriendInvite)
+// Module 13112 (createFriendInvite)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import InviteSendStates from "InviteSendStates" /* 7491 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7863 */;
+import InviteSendStates from "InviteSendStates" /* 7492 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 
 const Image = get_ActivityIndicator.Image;

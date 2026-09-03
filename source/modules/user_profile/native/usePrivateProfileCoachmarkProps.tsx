@@ -1,11 +1,11 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16203
+// Function ID: 16204
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [19, 17, 673, 1383, 21, 4478, 6928, 1305, 1233, 8786, 4166, 1372, 6254, 2]
+// Dependencies: [19, 17, 673, 1383, 21, 4478, 6929, 1305, 1233, 8790, 4166, 1372, 6255, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 16187 (PrivateProfileCoachmarkImage)
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6928 */;
+// Module 16203 (PrivateProfileCoachmarkImage)
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6929 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 673 */;

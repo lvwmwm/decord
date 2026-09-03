@@ -1,17 +1,17 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15912
+// Function ID: 15913
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [5, 32, 19, 17, 4569, 15119, 502, 21, 4478, 709, 644, 4747, 8940, 15897, 15898, 9101, 9438, 15120, 1234, 9234, 1296, 4474, 2]
+// Dependencies: [5, 32, 19, 17, 4569, 15134, 502, 21, 4478, 709, 644, 4748, 8944, 15913, 15914, 9105, 9442, 15135, 1234, 9238, 1296, 4474, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 15896 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15912 (HAPPENING_NOW_CONTENT_HEIGHT)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "sortActivity" /* 4569 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
 import { StatusTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -86,8 +86,8 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   obj = { userId: user.id, guildId };
   const tmp2 = first(React.useState(undefined), 2);
-  let obj2 = user(8940);
-  const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: activity(4747)(obj) });
+  let obj2 = user(8944);
+  const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: activity(4748)(obj) });
   items1 = [activity.emoji];
   const effect = React.useEffect(() => {
     function _loadEmoji() {
@@ -200,16 +200,16 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   if (null != activity.emoji) {
     num = 1;
   }
-  let tmp6Result = tmp6(9101);
+  let tmp6Result = tmp6(9105);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  tmp6Result = tmp6(9438);
+  tmp6Result = tmp6(9442);
   items2[1] = tmp6Result.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   obj = { onPress, width: null, style: null, accessibilityLabel: null, panelVariant: null, children: null };
   let str = "stretchy";
-  let tmp10 = activity(4747)(obj);
+  let tmp10 = activity(4748)(obj);
   if (fullwidth) {
     str = "full";
   }
@@ -238,7 +238,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
       obj5[0] = activity.emoji;
       obj5[1] = c16;
       obj5[2] = tmp.largeEmoji;
-      tmp15Result = tmp15(tmp9(9234), obj5);
+      tmp15Result = tmp15(tmp9(9238), obj5);
     }
     const items4 = [
       tmp15Result,
@@ -283,7 +283,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     const obj8 = { noMargin: true, displayNameFont: null, children: null };
     obj8[1] = displayNameStylesFont;
     obj8[2] = userTitle;
-    items6[1] = tmp15(tmp6(15120).HappeningNowCardHeader, obj8);
+    items6[1] = tmp15(tmp6(15135).HappeningNowCardHeader, obj8);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -323,7 +323,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     const obj14 = { noMargin: true, displayNameFont: null, children: null };
     obj14[1] = displayNameStylesFont;
     obj14[2] = userTitle;
-    const items8 = [tmp15(tmp6(15120).HappeningNowCardHeader, obj14), ];
+    const items8 = [tmp15(tmp6(15135).HappeningNowCardHeader, obj14), ];
     const obj15 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: null, maxFontSizeMultiplier: 2, children: null };
     obj15[3] = num;
     obj15[5] = gameMentionsAsPlainText;
@@ -335,5 +335,5 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   }
   obj1[1] = tmp18Result;
   obj[5] = closure_12(closure_6, obj1);
-  return closure_12(activity(15120), obj);
+  return closure_12(activity(15135), obj);
 };

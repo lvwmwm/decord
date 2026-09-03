@@ -1,10 +1,10 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8038
+// Function ID: 8039
 // Name: _fetchMessageInteractionData
 // Dependencies: [5, 673, 706, 527, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8035 (_fetchMessageInteractionData)
+// Module 8038 (_fetchMessageInteractionData)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;

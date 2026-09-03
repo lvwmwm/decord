@@ -1,10 +1,10 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12196
+// Function ID: 12197
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 1991, 21, 4478, 709, 586, 12021, 1233, 5501, 4474, 2]
+// Dependencies: [19, 17, 1991, 21, 4478, 709, 586, 12027, 1233, 5502, 4474, 2]
 // Exports: default
 
-// Module 12189 (ApplicationSectionHeader)
+// Module 12196 (ApplicationSectionHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -40,7 +40,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const applicationCommandsIconSource = section(12021).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(12027).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -58,7 +58,7 @@ export default function ApplicationSectionHeader(section) {
     obj = { style: null, source: null };
     obj[0] = tmp.applicationIcon;
     obj[1] = applicationCommandsIconSource;
-    tmp9 = callback(guildId(5501), obj);
+    tmp9 = callback(guildId(5502), obj);
   }
   const items1 = [tmp9, callback(section(4474).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj[2] = items1;

@@ -1,10 +1,10 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15131
+// Function ID: 15132
 // Name: MessagesHeaderItem
 // Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 2]
 // Exports: default
 
-// Module 15116 (MessagesHeaderItem)
+// Module 15131 (MessagesHeaderItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

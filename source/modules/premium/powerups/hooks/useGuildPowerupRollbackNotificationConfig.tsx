@@ -1,12 +1,12 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12297
+// Function ID: 12298
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4364, 586, 4368, 12286, 1372, 1233, 2400, 12288, 2]
+// Dependencies: [4364, 586, 4368, 12298, 1372, 1233, 2400, 12300, 2]
 // Exports: default
 
-// Module 12285 (useGuildPowerupRollbackNotificationConfig)
+// Module 12297 (useGuildPowerupRollbackNotificationConfig)
 import messagesProxyDefault from "messagesProxy" /* 2400 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12288 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12300 */;
 import closure_3 from "calculateAppliedBoosts" /* 4364 */;
 
 const require = arg1;

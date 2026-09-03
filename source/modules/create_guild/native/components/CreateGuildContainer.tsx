@@ -1,10 +1,10 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 12129
+// Function ID: 12130
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1981, 1921, 673, 21, 4478, 5500, 5464, 5090, 12110, 5465, 1425, 9960, 5561, 12124, 2]
+// Dependencies: [5, 32, 19, 1981, 1921, 673, 21, 4478, 5501, 5465, 5091, 12116, 5466, 1425, 9964, 5562, 12130, 2]
 // Exports: default
 
-// Module 12123 (CreateGuildContainer)
+// Module 12129 (CreateGuildContainer)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;

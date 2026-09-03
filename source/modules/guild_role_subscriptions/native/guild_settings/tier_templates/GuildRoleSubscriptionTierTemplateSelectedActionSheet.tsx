@@ -1,10 +1,10 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17617
+// Function ID: 17618
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 1383, 21, 4478, 709, 1627, 5630, 5632, 4474, 1233, 1296, 4929, 2]
+// Dependencies: [19, 17, 1383, 21, 4478, 709, 1627, 5631, 5633, 4474, 1233, 1296, 4930, 2]
 // Exports: default
 
-// Module 17597 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 17617 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -52,9 +52,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj3[2] = function onPress() {
     return markAsDismissed(closure_1_4.UNKNOWN);
   };
-  items[4] = callback(markAsDismissed(4929).BaseTextButton, obj3);
+  items[4] = callback(markAsDismissed(4930).BaseTextButton, obj3);
   obj[1] = items;
-  obj[1] = callback2(markAsDismissed(5632).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(5633).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5630).BottomSheet, obj);
+  return callback(markAsDismissed(5631).BottomSheet, obj);
 };

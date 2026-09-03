@@ -1,14 +1,14 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8120
+// Function ID: 8121
 // Name: useUserProfileBannerBackgroundColor
-// Dependencies: [1430, 8118, 685, 2]
+// Dependencies: [1430, 8121, 685, 2]
 // Exports: getAvatarSource, useUserProfileBannerBackgroundColor
 
-// Module 8117 (useUserProfileBannerBackgroundColor)
+// Module 8120 (useUserProfileBannerBackgroundColor)
 import set from "set" /* 2 */;
 import int2hslRaw from "int2hslRaw" /* 685 */;
 import getAvatarURL2 from "getAvatarURL" /* 1430 */;
-import useDominantRGBFromImage from "useDominantRGBFromImage" /* 8118 */;
+import useDominantRGBFromImage from "useDominantRGBFromImage" /* 8121 */;
 
 const result = set.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 

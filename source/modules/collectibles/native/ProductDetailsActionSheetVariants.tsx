@@ -1,16 +1,16 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12794
+// Function ID: 12795
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4478, 709, 12763, 5076, 1233, 12783, 5596, 7307, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 12775, 5077, 1233, 12795, 5597, 7308, 4474, 2]
 // Exports: default
 
-// Module 12782 (VariantOption)
+// Module 12794 (VariantOption)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 5596 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 12763 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 12783 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 5597 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 12775 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 12795 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

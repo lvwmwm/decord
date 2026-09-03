@@ -1,10 +1,10 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13600
+// Function ID: 13601
 // Name: filterOutBlockedOrIgnoredUsers
 // Dependencies: [4130, 1470, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 13585 (filterOutBlockedOrIgnoredUsers)
+// Module 13600 (filterOutBlockedOrIgnoredUsers)
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
 

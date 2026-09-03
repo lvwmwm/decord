@@ -1,13 +1,13 @@
-// Module ID: 7849
-// Function ID: 7850
+// Module ID: 7852
+// Function ID: 7853
 // Name: modifyRow
-// Dependencies: [19, 17, 4470, 1991, 21, 7850, 8044, 4478, 709, 586, 4673, 7879, 4166, 4163, 1296, 4474, 8794, 2]
+// Dependencies: [19, 17, 4470, 1991, 21, 7853, 8047, 4478, 709, 586, 4673, 7882, 4166, 4163, 1296, 4474, 8798, 2]
 // Exports: default
 
-// Module 7849 (modifyRow)
+// Module 7852 (modifyRow)
 import ThemesDefault from "Themes" /* 709 */;
-import setOptionsDefault from "setOptions" /* 7850 */;
-import MediaGalleryItemType from "MediaGalleryItemType" /* 8044 */;
+import setOptionsDefault from "setOptions" /* 7853 */;
+import MediaGalleryItemType from "MediaGalleryItemType" /* 8047 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

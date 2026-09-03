@@ -1,12 +1,12 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13530
+// Function ID: 13531
 // Name: getCachedUseAltGateway
-// Dependencies: [13516, 2]
+// Dependencies: [13531, 2]
 // Exports: default
 
-// Module 13515 (getCachedUseAltGateway)
+// Module 13530 (getCachedUseAltGateway)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 13516 */;
+import enforcingDefault from "enforcing" /* 13531 */;
 
 const result = set.fileFinishedImporting("modules/gateway/getCachedUseAltGateway.native.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9430
+// Function ID: 9431
 // Name: parseProviderRouteHeadlessSessionId
-// Dependencies: [32, 5235, 2]
+// Dependencies: [32, 5236, 2]
 // Exports: default
 
-// Module 9426 (parseProviderRouteHeadlessSessionId)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5235 */;
+// Module 9430 (parseProviderRouteHeadlessSessionId)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 let c3 = "h:";

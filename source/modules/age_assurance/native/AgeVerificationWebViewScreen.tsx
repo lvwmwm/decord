@@ -1,17 +1,17 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8713
+// Function ID: 8714
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8698, 8700, 21, 3, 4478, 709, 4332, 4733, 8703, 4190, 8608, 1234, 6056, 2]
+// Dependencies: [32, 19, 17, 8702, 8704, 21, 3, 4478, 709, 4332, 4734, 8707, 4190, 8612, 1234, 6057, 2]
 // Exports: default
 
-// Module 8709 (AgeVerificationWebViewScreen)
+// Module 8713 (AgeVerificationWebViewScreen)
 import timestampDefault from "timestamp" /* 3 */;
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AGE_VERIFICATION_MODAL_KEY as closure_6 } from "set" /* 8698 */;
-import AGE_VERIFICATION_INCODE_PATH from "AGE_VERIFICATION_INCODE_PATH" /* 8700 */;
+import { AGE_VERIFICATION_MODAL_KEY as closure_6 } from "set" /* 8702 */;
+import AGE_VERIFICATION_INCODE_PATH from "AGE_VERIFICATION_INCODE_PATH" /* 8704 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

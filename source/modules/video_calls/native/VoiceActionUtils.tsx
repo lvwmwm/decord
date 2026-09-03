@@ -1,12 +1,12 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10112
+// Function ID: 10113
 // Name: NOOP
-// Dependencies: [9796, 2]
+// Dependencies: [9800, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 10108 (NOOP)
+// Module 10112 (NOOP)
 import set from "set" /* 2 */;
-import _handleToggleVideo from "_handleToggleVideo" /* 9796 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9800 */;
 
 function NOOP() {
 

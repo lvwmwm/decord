@@ -1,11 +1,11 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13128
+// Function ID: 13129
 // Name: getIconURL
-// Dependencies: [4504, 5235, 2]
+// Dependencies: [4504, 5236, 2]
 
-// Module 13116 (getIconURL)
+// Module 13128 (getIconURL)
 import createExecutableDefault from "createExecutable" /* 4504 */;
-import importDefaultResult1 from "getPlatformUserUrl" /* 5235 */;
+import importDefaultResult1 from "getPlatformUserUrl" /* 5236 */;
 
 createExecutableDefault;
 const spotify = "spotify";

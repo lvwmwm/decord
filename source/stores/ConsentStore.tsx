@@ -1,9 +1,9 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6063
+// Function ID: 6064
 // Name: hasConsented
 // Dependencies: [586, 706, 2]
 
-// Module 6062 (hasConsented)
+// Module 6063 (hasConsented)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

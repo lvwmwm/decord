@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11814
+// Function ID: 11815
 // Name: ForumPostAppliedTagPills
-// Dependencies: [19, 17, 21, 4478, 709, 10643, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 10647, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 11808 (ForumPostAppliedTagPills)
+// Module 11814 (ForumPostAppliedTagPills)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -44,7 +44,7 @@ export const ForumPostAppliedTagPills = function ForumPostAppliedTagPills(additi
     obj[0] = obj;
     obj[1] = tmp.tag;
     obj[2] = hasUnreads;
-    tmp4 = callback(hasUnreads(10643).AppliedForumTagPill, obj);
+    tmp4 = callback(hasUnreads(10647).AppliedForumTagPill, obj);
   }
   items1[1] = tmp4;
   obj[1] = items1;

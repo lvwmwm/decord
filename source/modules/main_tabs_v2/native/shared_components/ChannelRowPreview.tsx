@@ -1,26 +1,26 @@
-// Module ID: 10214
-// Function ID: 10215
+// Module ID: 10218
+// Function ID: 10219
 // Name: PreviewIcon
-// Dependencies: [19, 17, 4130, 21, 5040, 10215, 9264, 10217, 4421, 10219, 7633, 7635, 4935, 10221, 10198, 10224, 9102, 4474, 4413, 4478, 709, 4197, 4166, 7850, 8794, 8044, 7854, 586, 2]
+// Dependencies: [19, 17, 4130, 21, 5041, 10219, 9268, 10221, 4421, 10223, 7634, 7636, 4936, 10225, 10202, 10228, 9106, 4474, 4413, 4478, 709, 4197, 4166, 7853, 8798, 8047, 7857, 586, 2]
 
-// Module 10214 (PreviewIcon)
+// Module 10218 (PreviewIcon)
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import map from "map" /* 4197 */;
 import LinkIcon from "LinkIcon" /* 4421 */;
 import Text from "Text" /* 4474 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import getFontScale from "getFontScale" /* 4935 */;
-import ImageIcon from "ImageIcon" /* 5040 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7633 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7635 */;
-import map2 from "map" /* 9102 */;
-import MusicIcon from "MusicIcon" /* 9264 */;
-import formatMessagePreview from "formatMessagePreview" /* 10198 */;
-import VideoIcon from "VideoIcon" /* 10215 */;
-import AttachmentIcon from "AttachmentIcon" /* 10217 */;
-import StickerIcon from "StickerIcon" /* 10219 */;
-import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10221 */;
-import getLayoutStyles from "getLayoutStyles" /* 10224 */;
+import getFontScale from "getFontScale" /* 4936 */;
+import ImageIcon from "ImageIcon" /* 5041 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7634 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7636 */;
+import map2 from "map" /* 9106 */;
+import MusicIcon from "MusicIcon" /* 9268 */;
+import formatMessagePreview from "formatMessagePreview" /* 10202 */;
+import VideoIcon from "VideoIcon" /* 10219 */;
+import AttachmentIcon from "AttachmentIcon" /* 10221 */;
+import StickerIcon from "StickerIcon" /* 10223 */;
+import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10225 */;
+import getLayoutStyles from "getLayoutStyles" /* 10228 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;

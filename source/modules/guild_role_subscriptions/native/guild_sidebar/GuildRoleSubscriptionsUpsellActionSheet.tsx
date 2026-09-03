@@ -1,17 +1,17 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16080
+// Function ID: 16081
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 673, 1383, 21, 4478, 5630, 5501, 16065, 4474, 1233, 4928, 9750, 2]
+// Dependencies: [19, 17, 673, 1383, 21, 4478, 5631, 5502, 16081, 4474, 1233, 4929, 9754, 2]
 // Exports: default
 
-// Module 16064 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 16080 (GuildRoleSubscriptionsUpsellActionSheet)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import preloadDefault from "preload" /* 5501 */;
-import Background from "Background" /* 5630 */;
-import registerAssetDefault from "registerAsset" /* 16065 */;
+import Button from "Button" /* 4929 */;
+import preloadDefault from "preload" /* 5502 */;
+import Background from "Background" /* 5631 */;
+import registerAssetDefault from "registerAsset" /* 16081 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { GuildSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;

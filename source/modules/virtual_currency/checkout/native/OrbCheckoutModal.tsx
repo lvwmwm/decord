@@ -1,14 +1,14 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12797
+// Function ID: 12798
 // Name: OrbCheckoutModalContent
-// Dependencies: [19, 673, 502, 21, 12786, 8505, 4926, 12787, 11137, 10803, 695, 12788, 4723, 8707, 8708, 11722, 38, 511, 1233, 5503, 11724, 2]
+// Dependencies: [19, 673, 502, 21, 12798, 8509, 4927, 12799, 11141, 10807, 695, 12800, 4724, 8711, 8712, 11727, 38, 511, 1233, 5504, 11729, 2]
 // Exports: default
 
-// Module 12785 (OrbCheckoutModalContent)
-import Stack from "Stack" /* 4926 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 8505 */;
-import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 12786 */;
-import OrbCheckoutErrorCard from "OrbCheckoutErrorCard" /* 12787 */;
+// Module 12797 (OrbCheckoutModalContent)
+import Stack from "Stack" /* 4927 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 8509 */;
+import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 12798 */;
+import OrbCheckoutErrorCard from "OrbCheckoutErrorCard" /* 12799 */;
 import closure_3 from "noop" /* 19 */;
 import noop from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
@@ -25,7 +25,7 @@ function OrbCheckoutModalContent(orbBalance) {
   if (tmp6) {
     obj = { error: null };
     obj[0] = orbRedemptionError.message;
-    tmp6 = callback5(tmp(12787).OrbCheckoutErrorCard, obj);
+    tmp6 = callback5(tmp(12799).OrbCheckoutErrorCard, obj);
   }
   const items = [tmp6, , ];
   if (product == null) {
@@ -54,7 +54,7 @@ function OrbCheckoutModalScreen(startTime) {
   dependencyMap = undefined;
   let virtualCurrencyBalance;
   let callback;
-  let obj = startTime(12786);
+  let obj = startTime(12798);
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   const onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
   startTime = onRedeemVirtualCurrency;
@@ -65,7 +65,7 @@ function OrbCheckoutModalScreen(startTime) {
   virtualCurrencyBalance = undefined;
   callback = undefined;
   let callback2;
-  obj1 = startTime(12786);
+  obj1 = startTime(12798);
   const orbCheckoutModalContext1 = obj1.useOrbCheckoutModalContext();
   skuId = orbCheckoutModalContext1.skuId;
   const loadId = orbCheckoutModalContext1.loadId;
@@ -76,7 +76,7 @@ function OrbCheckoutModalScreen(startTime) {
   callback = orbProductContext;
   const items = [loadId, skuId, analyticsLocations, orbProductContext];
   const tmp5 = callback4(() => {
-    let obj = { load_id: dependencyMap, application_id: startTime(11137).get1PShopApplicationIdForSKU(skuId), location_stack: virtualCurrencyBalance, sku_id: skuId, currency: closure_1_9.DISCORD_ORB, payment_gateway: closure_1_10.VIRTUAL_CURRENCY };
+    let obj = { load_id: dependencyMap, application_id: startTime(11141).get1PShopApplicationIdForSKU(skuId), location_stack: virtualCurrencyBalance, sku_id: skuId, currency: closure_1_9.DISCORD_ORB, payment_gateway: closure_1_10.VIRTUAL_CURRENCY };
     let tmp2 = null != closure_4;
     if (tmp2) {
       const orbPriceAmount = tmp.orbPriceAmount;
@@ -98,8 +98,8 @@ function OrbCheckoutModalScreen(startTime) {
       const merged = Object.assign(closure_5);
       obj.has_saved_payment_source = false;
       obj.continue_session_initial_step = null;
-      const result = startTime(10803).trackPaymentFlowStartedAnalyticsAndCTP(obj);
-      const obj11 = startTime(10803);
+      const result = startTime(10807).trackPaymentFlowStartedAnalyticsAndCTP(obj);
+      const obj11 = startTime(10807);
     } else if (arg0 === tmp2.PAYMENT_FLOW_COMPLETED) {
       obj = {};
       const merged1 = Object.assign(closure_5);
@@ -135,7 +135,7 @@ function OrbCheckoutModalScreen(startTime) {
     }
   }, items1);
   dependencyMap = tmp7;
-  virtualCurrencyBalance = startTime(12788).useVirtualCurrencyBalance();
+  virtualCurrencyBalance = startTime(12800).useVirtualCurrencyBalance();
   const tmp9 = callback(virtualCurrencyBalance);
   callback = tmp9;
   const items2 = [tmp7];
@@ -158,11 +158,11 @@ function OrbCheckoutModalScreen(startTime) {
     current = virtualCurrencyBalance;
   }
   const items4 = [tmp7, virtualCurrencyBalance, onRedeemVirtualCurrency];
-  let obj3 = startTime(12788);
+  let obj3 = startTime(12800);
   const tmp6 = callback3;
   obj = { children: null };
   obj = { children: callback5(OrbCheckoutModalContent, { orbBalance: current }) };
-  const items5 = [callback5(startTime(8708).ModalContent, obj), ];
+  const items5 = [callback5(startTime(8712).ModalContent, obj), ];
   obj1 = {
     children: callback5(OrbCheckoutModalFooter, {
       onPress: callback3(() => {
@@ -176,9 +176,9 @@ function OrbCheckoutModalScreen(startTime) {
       }, items4)
     })
   };
-  items5[1] = callback5(startTime(11722).ModalFooter, obj1);
+  items5[1] = callback5(startTime(11727).ModalFooter, obj1);
   obj[0] = items5;
-  return callback6(startTime(8707).ModalScreen, obj);
+  return callback6(startTime(8711).ModalScreen, obj);
 }
 let result = require("set").fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx");
 

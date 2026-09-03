@@ -1,19 +1,19 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15939
+// Function ID: 15940
 // Name: GuildChannels
-// Dependencies: [32, 19, 17, 4470, 7279, 15846, 1908, 1980, 4555, 673, 21, 1501, 4332, 9066, 15924, 15925, 15952, 16000, 14926, 15845, 16001, 15953, 16003, 7290, 586, 7289, 16004, 16008, 7282, 16009, 10951, 15830, 14927, 11353, 5948, 16061, 16063, 16076, 7804, 16079, 16081, 16085, 16086, 16091, 1911, 16093, 9144, 16101, 11686, 2]
+// Dependencies: [32, 19, 17, 4470, 7280, 15862, 1908, 1980, 4555, 673, 21, 1501, 4332, 9070, 15940, 15941, 15968, 16016, 14941, 15861, 16017, 15969, 16019, 7291, 586, 7290, 16020, 16024, 7283, 16025, 10955, 15846, 14942, 11358, 5949, 16077, 16079, 16092, 7807, 16095, 16097, 16101, 16102, 16107, 1911, 16109, 9148, 16117, 11698, 2]
 
-// Module 15923 (GuildChannels)
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11686 */;
-import itemsDefault from "items" /* 16086 */;
-import handleJoinGuildDefault from "handleJoinGuild" /* 16091 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16101 */;
+// Module 15939 (GuildChannels)
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11698 */;
+import itemsDefault from "items" /* 16102 */;
+import handleJoinGuildDefault from "handleJoinGuild" /* 16107 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16117 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_7 from "handleReset" /* 7279 */;
-import closure_8 from "withEqualityFn" /* 15846 */;
+import closure_7 from "handleReset" /* 7280 */;
+import closure_8 from "withEqualityFn" /* 15862 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "handleConnectionOpen" /* 1980 */;
 import closure_11 from "getVoiceStatesForGuild" /* 4555 */;
@@ -69,9 +69,9 @@ function ChannelsWrapper(selectedGuildId) {
           obj.guild = stateFromStores;
           obj.selectedChannelId = selectedChannelId;
           obj.selectedVoiceChannelId = stateFromStores1;
-          return callback(tmp2(16093).default, obj);
+          return callback(tmp2(16109).default, obj);
         } else {
-          tmp2Result = tmp2(9144);
+          tmp2Result = tmp2(9148);
           if (tmp2Result.shouldNSFWGateGuild(selectedGuildId)) {
             obj1 = { style: null, guildId: null };
             obj1[0] = merged.style;

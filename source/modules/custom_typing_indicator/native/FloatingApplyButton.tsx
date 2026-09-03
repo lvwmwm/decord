@@ -1,10 +1,10 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15247
+// Function ID: 15248
 // Name: FloatingApplyButton
-// Dependencies: [19, 4470, 1622, 21, 586, 1627, 4217, 709, 4927, 4446, 4928, 2]
+// Dependencies: [19, 4470, 1622, 21, 586, 1627, 4217, 709, 4928, 4446, 4929, 2]
 // Exports: default
 
-// Module 15232 (FloatingApplyButton)
+// Module 15247 (FloatingApplyButton)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_5 } from "DRAG_HANDLE" /* 1622 */;

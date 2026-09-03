@@ -1,10 +1,10 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12324
+// Function ID: 12325
 // Name: GuildPowerupCardFooterActive
-// Dependencies: [17, 21, 4478, 4438, 709, 4474, 7717, 1233, 2400, 12313, 12288, 8013, 8243, 2]
+// Dependencies: [17, 21, 4478, 4438, 709, 4474, 7720, 1233, 2400, 12325, 12300, 8016, 8247, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 12312 (GuildPowerupCardFooterActive)
+// Module 12324 (GuildPowerupCardFooterActive)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
@@ -12,10 +12,10 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2400 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 4438 */;
 import Text from "Text" /* 4474 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7717 */;
-import apexExperiment from "apexExperiment" /* 8013 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12288 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12313 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7720 */;
+import apexExperiment from "apexExperiment" /* 8016 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12300 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12325 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

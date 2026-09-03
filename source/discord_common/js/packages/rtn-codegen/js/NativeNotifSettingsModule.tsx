@@ -1,9 +1,9 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14343
+// Function ID: 14344
 // Name: NativeNotifSettingsModule
 // Dependencies: [17, 2]
 
-// Module 14327 (NativeNotifSettingsModule)
+// Module 14343 (NativeNotifSettingsModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

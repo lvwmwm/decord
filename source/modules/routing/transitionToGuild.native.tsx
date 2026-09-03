@@ -1,15 +1,15 @@
-// Module ID: 6195
-// Function ID: 6196
+// Module ID: 6196
+// Function ID: 6197
 // Name: transitionToGuild
-// Dependencies: [673, 6072, 5604, 1219, 2]
+// Dependencies: [673, 6073, 5605, 1219, 2]
 // Exports: transitionToGuild
 
-// Module 6195 (transitionToGuild)
+// Module 6196 (transitionToGuild)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import LayoutAnimation from "LayoutAnimation" /* 5604 */;
-import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 6072 */;
+import LayoutAnimation from "LayoutAnimation" /* 5605 */;
+import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 6073 */;
 
 const Routes = ME.Routes;
 let result = set.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 8138
-// Function ID: 8139
+// Module ID: 8142
+// Function ID: 8143
 // Name: buildPlatformPollResources
-// Dependencies: [12, 8139, 4478, 709, 7864, 5624, 6003, 1433, 2]
+// Dependencies: [12, 8143, 4478, 709, 7867, 5625, 6004, 1433, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 8138 (buildPlatformPollResources)
+// Module 8142 (buildPlatformPollResources)
 import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import registerAssetDefault from "registerAsset" /* 5624 */;
-import registerAssetDefault2 from "registerAsset" /* 6003 */;
+import registerAssetDefault from "registerAsset" /* 5625 */;
+import registerAssetDefault2 from "registerAsset" /* 6004 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -45,9 +45,9 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   importDefault = layoutType;
   const obj = { styles: importDefaultResult.mapValues(closure_3, (arg0) => arg0(closure_0, closure_1)), selectedIcon: null, checkmarkIcon: null };
   const obj2 = importDefaultResult;
-  obj[1] = _require(7864).getAssetUriForEmbed(registerAssetDefault);
-  const obj3 = _require(7864);
-  obj[2] = _require(7864).getAssetUriForEmbed(registerAssetDefault2);
+  obj[1] = _require(7867).getAssetUriForEmbed(registerAssetDefault);
+  const obj3 = _require(7867);
+  obj[2] = _require(7867).getAssetUriForEmbed(registerAssetDefault2);
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {

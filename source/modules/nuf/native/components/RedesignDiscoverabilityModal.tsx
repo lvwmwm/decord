@@ -1,13 +1,13 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17286
+// Function ID: 17287
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 12439, 1921, 673, 21, 4478, 709, 5500, 1498, 586, 12446, 688, 17267, 12466, 12459, 500, 12458, 6016, 1233, 2]
+// Dependencies: [19, 17, 12451, 1921, 673, 21, 4478, 709, 5501, 1498, 586, 12458, 688, 17287, 12478, 12471, 500, 12470, 6017, 1233, 2]
 
-// Module 17266 (DiscoverabilityLandingScene)
+// Module 17286 (DiscoverabilityLandingScene)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 12439 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12451 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -84,7 +84,7 @@ function DiscoverabilityNameScene(onComplete) {
     name = "";
   }
   obj[2] = name;
-  obj[1] = jsx(allowPhone(12459), { onNext: callback, loading: false, initialName: null });
+  obj[1] = jsx(allowPhone(12471), { onNext: callback, loading: false, initialName: null });
   return <tmp6 onNext={callback} loading={false} initialName={null} />;
 }
 class RedesignDiscoverabilityModal {

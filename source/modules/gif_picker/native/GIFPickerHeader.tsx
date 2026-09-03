@@ -1,11 +1,11 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10392
+// Function ID: 10393
 // Name: FavoritesSearch
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 10383, 6239, 4217, 4479, 4482, 8015, 6245, 1233, 6230, 10381, 5076, 10389, 4474, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 10387, 6240, 4217, 4479, 4482, 8018, 6246, 1233, 6231, 10385, 5077, 10393, 4474, 2]
 
-// Module 10388 (FavoritesSearch)
+// Module 10392 (FavoritesSearch)
 import ThemesDefault from "Themes" /* 709 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10381 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10385 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj[2] = tmp5;
     obj[3] = onQueryClear;
     obj[4] = searchInputRef;
-    let tmp13Result = tmp6(tmp2(6230).SearchField, obj);
+    let tmp13Result = tmp6(tmp2(6231).SearchField, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
@@ -159,7 +159,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1[3] = intl4.formatToPlainString(tmp2(1233).t.UTypEu, obj2);
     const obj3 = { color: null, size: "sm" };
     obj3[0] = ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE;
-    const items = [tmp6(tmp2(10389).ChevronLargeLeftIcon, obj3), ];
+    const items = [tmp6(tmp2(10393).ChevronLargeLeftIcon, obj3), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
       const intl3 = tmp2(1233).intl;
       let stringResult = intl3.string(tmp2(1233).t.TsWCdW);
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj4[3] = stringResult;
     items[1] = tmp6(tmp2(4474).Text, obj4);
     obj1[4] = items;
-    const items1 = [closure_9(tmp2(5076).PressableOpacity, obj1), ];
+    const items1 = [closure_9(tmp2(5077).PressableOpacity, obj1), ];
     let tmp6Result = categoryType === tmp8.FAVORITES;
     if (tmp6Result) {
       const obj5 = { columnWidth: null, onQueryChange: null };

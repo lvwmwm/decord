@@ -1,10 +1,10 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16664
+// Function ID: 16665
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 1429, 1386, 1984, 1908, 4120, 4130, 1921, 673, 21, 4478, 709, 1498, 1627, 586, 11420, 11419, 4125, 503, 9723, 4491, 1954, 4322, 4857, 1233, 4190, 1994, 1394, 16645, 7617, 4474, 4674, 10900, 5607, 1296, 6000, 16649, 1234, 16650, 2]
+// Dependencies: [32, 5, 19, 17, 1429, 1386, 1984, 1908, 4120, 4130, 1921, 673, 21, 4478, 709, 1498, 1627, 586, 11425, 11424, 4125, 503, 9727, 4491, 1954, 4322, 4858, 1233, 4190, 1994, 1394, 16665, 7618, 4474, 4674, 10904, 5608, 1296, 6001, 16669, 1234, 16670, 2]
 // Exports: default
 
-// Module 16644 (ChannelSettingsPermissionsOverrides)
+// Module 16664 (ChannelSettingsPermissionsOverrides)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
@@ -55,9 +55,9 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   let items = [first];
   const stateFromStores = obj1.useStateFromStores(items, () => first.getChannel(closure_0));
   callback2 = stateFromStores;
-  let obj2 = _require(11420);
+  let obj2 = _require(11425);
   const appChannelApplication = obj2.useAppChannelApplication(stateFromStores);
-  let obj3 = _require(11419);
+  let obj3 = _require(11424);
   const appChannelBotUserId = obj3.useAppChannelBotUserId(stateFromStores);
   React = appChannelBotUserId;
   let tmp9 = null;
@@ -148,7 +148,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                         c4 = 1;
                         c5 = 1;
                         const obj2 = { value: null, done: false };
-                        obj2[0] = callback(9723).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
+                        obj2[0] = callback(9727).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
                         return obj2;
                       }
                     }
@@ -230,8 +230,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                   const obj = _undefined(obj1[28]);
                   obj.openURL(_undefined(obj1[29]).getArticleURL(constants.PERMISSIONS_LOCKOUT));
                 };
-                throwTypeErrorResult = id(4857).show(obj4);
-                const obj14 = id(4857);
+                throwTypeErrorResult = id(4858).show(obj4);
+                const obj14 = id(4858);
               }
             } else if (guildId1 === 1) {
               c5 = 3;
@@ -361,7 +361,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     obj[0] = id;
     obj[1] = stateFromStores.guild_id;
     obj[4] = tmp13;
-    let tmp12Result = tmp12(tmp5(10900), obj);
+    let tmp12Result = tmp12(tmp5(10904), obj);
   } else {
     role = role.getRole(stateFromStores.guild_id, id);
     let str;
@@ -374,7 +374,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     obj1 = { end: true, label: null, start: true, trailing: null };
     obj1[1] = str;
     obj1[3] = tmp13;
-    tmp12Result = tmp12(tmp2(5607).TableRow, obj1);
+    tmp12Result = tmp12(tmp2(5608).TableRow, obj1);
   }
   obj2 = { style: tmp.container, contentContainerStyle: items5, children: null };
   items5 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + id(1627)().bottom }];

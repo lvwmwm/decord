@@ -1,10 +1,10 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 8368
+// Function ID: 8369
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1923, 21, 4478, 7727, 8365, 8366, 8367, 8368, 8369, 8370, 5501, 2]
+// Dependencies: [19, 1923, 21, 4478, 7730, 8369, 8370, 8371, 8372, 8373, 8374, 5502, 2]
 // Exports: default
 
-// Module 8364 (PremiumFeaturesWumpus)
+// Module 8368 (PremiumFeaturesWumpus)
 import closure_2 from "noop" /* 19 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -19,7 +19,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   premiumType = premiumType.premiumType;
   dependencyMap = undefined;
   const tmp = callback2();
-  const tmp2 = premiumType(7727)();
+  const tmp2 = premiumType(7730)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = React.useMemo(() => {
@@ -44,7 +44,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   }, items);
   ({ wumpusImageSource, cloudsImageSource } = memo);
   let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [callback(premiumType(5501), obj), ];
+  const items1 = [callback(premiumType(5502), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
   if (wumpusLeft) {
@@ -52,7 +52,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   }
   obj = { children: null };
   items2[1] = wumpusLeft;
-  items1[1] = callback(premiumType(5501), { style: items2, resizeMode: "contain", source: wumpusImageSource });
+  items1[1] = callback(premiumType(5502), { style: items2, resizeMode: "contain", source: wumpusImageSource });
   obj[0] = items1;
   return closure_6(closure_5, obj);
 };

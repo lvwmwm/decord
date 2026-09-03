@@ -1,10 +1,10 @@
-// Module ID: 4912
-// Function ID: 4913
+// Module ID: 4913
+// Function ID: 4914
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4913, 4217, 2]
+// Dependencies: [19, 17, 21, 4914, 4217, 2]
 
-// Module 4912 (AccessibilityView)
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 4913 */;
+// Module 4913 (AccessibilityView)
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 4914 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

@@ -1,18 +1,18 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4855
+// Function ID: 4856
 // Name: handleChanged
-// Dependencies: [32, 1215, 1386, 4855, 673, 4856, 12, 11, 586, 1470, 706, 2]
+// Dependencies: [32, 1215, 1386, 4856, 673, 4857, 12, 11, 586, 1470, 706, 2]
 
-// Module 4854 (handleChanged)
+// Module 4855 (handleChanged)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4856 */;
+import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4857 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "handleConnectionOpen" /* 4855 */;
+import closure_6 from "handleConnectionOpen" /* 4856 */;
 
 require = arg1;
 function handleChanged(type) {

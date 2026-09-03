@@ -1,10 +1,10 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16350
+// Function ID: 16351
 // Name: SeparatorDot
 // Dependencies: [19, 17, 21, 4478, 709, 2]
 // Exports: default
 
-// Module 16331 (SeparatorDot)
+// Module 16350 (SeparatorDot)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

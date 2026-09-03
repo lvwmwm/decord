@@ -1,10 +1,10 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12519
+// Function ID: 12520
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 1981, 1908, 21, 4478, 5500, 586, 1498, 5503, 1233, 4491, 4376, 5561, 6012, 1430, 4474, 7713, 4928, 7723, 2]
+// Dependencies: [5, 32, 19, 17, 1981, 1908, 21, 4478, 5501, 586, 1498, 5504, 1233, 4491, 4376, 5562, 6013, 1430, 4474, 7716, 4929, 7726, 2]
 // Exports: default
 
-// Module 12507 (ChannelPrompt)
+// Module 12519 (ChannelPrompt)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;

@@ -1,15 +1,15 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7724
+// Function ID: 7725
 // Name: ClearButton
-// Dependencies: [19, 17, 21, 4478, 709, 5076, 1233, 1296, 7722, 38, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5077, 1233, 1296, 7725, 38, 2]
 
-// Module 7721 (ClearButton)
+// Module 7724 (ClearButton)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import registerAssetDefault from "registerAsset" /* 7722 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import registerAssetDefault from "registerAsset" /* 7725 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

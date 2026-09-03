@@ -1,9 +1,9 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 6980
+// Function ID: 6981
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6979 (metadata)
+// Module 6980 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerBannerUnderboxExample-2x.png.js");

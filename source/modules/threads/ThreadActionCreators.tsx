@@ -1,23 +1,23 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7520
+// Function ID: 7521
 // Name: patchThread
-// Dependencies: [5, 1390, 1215, 1386, 4120, 7520, 4122, 7530, 673, 1393, 527, 706, 4857, 1233, 4700, 7531, 7532, 7535, 7536, 1470, 1397, 2]
+// Dependencies: [5, 1390, 1215, 1386, 4120, 7521, 4122, 7531, 673, 1393, 527, 706, 4858, 1233, 4701, 7532, 7533, 7536, 7537, 1470, 1397, 2]
 
-// Module 7519 (patchThread)
+// Module 7520 (patchThread)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import dispatcherDefault2 from "dispatcher" /* 7531 */;
-import setActiveCommand from "setActiveCommand" /* 7532 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import dispatcherDefault2 from "dispatcher" /* 7532 */;
+import setActiveCommand from "setActiveCommand" /* 7533 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1390 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "listKey" /* 7520 */;
-import { PAGE_SIZE } from "listKey" /* 7520 */;
+import closure_8 from "listKey" /* 7521 */;
+import { PAGE_SIZE } from "listKey" /* 7521 */;
 import closure_10 from "storeThread" /* 4122 */;
-import closure_11 from "handleSummarizeThreadFinish" /* 7530 */;
+import closure_11 from "handleSummarizeThreadFinish" /* 7531 */;
 import ME from "ME" /* 673 */;
 import { ChannelFlags } from "set" /* 1393 */;
 

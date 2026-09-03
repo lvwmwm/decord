@@ -1,16 +1,16 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16107
+// Function ID: 16108
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1215, 1908, 4299, 673, 21, 4478, 709, 4474, 12470, 16092, 1233, 4926, 4928, 1499, 644, 8907, 500, 1911, 4334, 5079, 14927, 2]
+// Dependencies: [32, 19, 17, 1215, 1908, 4299, 673, 21, 4478, 709, 4474, 12482, 16108, 1233, 4927, 4929, 1499, 644, 8911, 500, 1911, 4334, 5080, 14942, 2]
 
-// Module 16091 (handleJoinGuild)
+// Module 16107 (handleJoinGuild)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4926 */;
-import Button from "Button" /* 4928 */;
-import _modDef12470 from "module_12470" /* 12470 */;
-import registerAssetDefault from "registerAsset" /* 16092 */;
+import Stack from "Stack" /* 4927 */;
+import Button from "Button" /* 4929 */;
+import _modDef12482 from "module_12482" /* 12482 */;
+import registerAssetDefault from "registerAsset" /* 16108 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -23,10 +23,10 @@ import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function handleJoinGuild() {
-  const result = _modDef12470.openGuildJoinServerScreen();
+  const result = _modDef12482.openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  _modDef12470.openCreateGuildModal();
+  _modDef12482.openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -123,7 +123,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   selectedGuildId = tmp6;
   obj = { type: navigation(500).ImpressionTypes.VIEW, name: navigation(500).ImpressionNames.GUILDS_EMPTY_NUX };
-  selectedGuildId(8907)(obj);
+  selectedGuildId(8911)(obj);
   const items1 = [tmp6, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != selectedGuildId) {
@@ -160,9 +160,9 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
       obj2 = closure_0;
     }
   }, items1);
-  let tmp2Result = tmp2(5079);
+  let tmp2Result = tmp2(5080);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14927);
+  tmp2Result = tmp2(14942);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };

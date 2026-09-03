@@ -1,14 +1,14 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 7950
+// Function ID: 7951
 // Name: createStageRaiseHandSystemMessage
-// Dependencies: [5370, 1386, 4120, 673, 1233, 1994, 7878, 11, 4668, 7880, 7882, 2]
+// Dependencies: [5371, 1386, 4120, 673, 1233, 1994, 7881, 11, 4668, 7883, 7885, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7947 (createStageRaiseHandSystemMessage)
+// Module 7950 (createStageRaiseHandSystemMessage)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
-import closure_3 from "getActiveStageChannelIds" /* 5370 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
+import closure_3 from "getActiveStageChannelIds" /* 5371 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
@@ -49,7 +49,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
   }
   obj = { content: null, showInviteToSpeakButton: null, buttonLabel: null, ephemeralIndication: null };
   const intl = tmp(1233).intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6(7880)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6(7883)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj[0] = intl.formatToParts(getSystemLocale.t.M87x7Y, obj);
   obj[1] = canResult;
   const intl2 = tmp(1233).intl;
@@ -72,6 +72,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     }
   }
   obj[3] = tmp10;
-  const merged = Object.assign(tmp6(7882)(roleStyle));
+  const merged = Object.assign(tmp6(7885)(roleStyle));
   return obj;
 };

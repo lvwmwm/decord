@@ -1,10 +1,10 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 9630
+// Function ID: 9631
 // Name: useIframeLifecycle
 // Dependencies: [19, 673, 1228, 2]
 // Exports: default
 
-// Module 9626 (useIframeLifecycle)
+// Module 9630 (useIframeLifecycle)
 import closure_2 from "noop" /* 19 */;
 import { ComponentActions } from "ME" /* 673 */;
 

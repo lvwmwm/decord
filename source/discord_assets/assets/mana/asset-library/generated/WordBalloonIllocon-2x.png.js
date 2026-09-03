@@ -1,9 +1,9 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 7140
+// Function ID: 7141
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7139 (metadata)
+// Module 7140 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WordBalloonIllocon-2x.png.js");

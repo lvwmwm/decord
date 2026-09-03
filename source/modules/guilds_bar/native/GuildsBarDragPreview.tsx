@@ -1,14 +1,14 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16198
+// Function ID: 16199
 // Name: PreviewItem
-// Dependencies: [19, 5389, 16106, 16107, 21, 4478, 15845, 4217, 4927, 7805, 4204, 4197, 709, 16115, 16137, 4105, 2]
+// Dependencies: [19, 5390, 16122, 16123, 21, 4478, 15861, 4217, 4928, 7808, 4204, 4197, 709, 16131, 16153, 4105, 2]
 
-// Module 16182 (PreviewItem)
+// Module 16198 (PreviewItem)
 import isIterable from "isIterable" /* 4105 */;
 import importAllResult from "noop" /* 19 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5389 */;
-import closure_5 from "withEqualityFn" /* 16106 */;
-import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 16107 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5390 */;
+import closure_5 from "withEqualityFn" /* 16122 */;
+import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 16123 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -137,7 +137,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "PX_16", name: "Array", color: "paddingHorizontal", expanded: true, children: true };
+        const obj = { type: null, id: -1, parentId: "PX_16", name: "Array", color: "call", expanded: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018511064740781746, children: 16661473071873657000000000000000000000000000000000000000000000000000000000000000000 };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -341,7 +341,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: true, scrollPosition: "light-content", dragRegion: null, windowSize: "PAYPAL_POPUP_OPEN_FAILED", dropComplete: "PayPal popup failed to open, make sure to tokenize in response to a user action.", listInsets: "text-md/semibold" };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "VOICE_STATE_UPDATE", scrollPosition: null, dragRegion: "text-sm/medium", windowSize: "text-muted", dropComplete: false, listInsets: null };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

@@ -1,10 +1,10 @@
-// Module ID: 7229
-// Function ID: 7230
+// Module ID: 7230
+// Function ID: 7231
 // Name: getDeviceMetadata
-// Dependencies: [5, 7230, 4391, 1301, 1215, 1386, 703, 673, 7423, 1393, 21, 4457, 7424, 511, 1624, 4333, 4332, 10, 1205, 695, 7425, 4339, 7427, 9, 684, 7428, 7430, 4858, 4947, 2008, 2]
+// Dependencies: [5, 7231, 4391, 1301, 1215, 1386, 703, 673, 7424, 1393, 21, 4457, 7425, 511, 1624, 4333, 4332, 10, 1205, 695, 7426, 4339, 7428, 9, 684, 7429, 7431, 4859, 4948, 2008, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7229 (getDeviceMetadata)
+// Module 7230 (getDeviceMetadata)
 import isTracingDefault from "isTracing" /* 10 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import _modDef1205 from "module_1205" /* 1205 */;
@@ -12,17 +12,17 @@ import getConstantsAll from "getConstants" /* 1624 */;
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7424 */;
-import AppStartInfo2 from "AppStartInfo" /* 7425 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7425 */;
+import AppStartInfo2 from "AppStartInfo" /* 7426 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleClearCaches" /* 7230 */;
+import closure_4 from "handleClearCaches" /* 7231 */;
 import closure_5 from "getHash" /* 4391 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "refreshSourceMapCookie" /* 703 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7423 */;
+import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7424 */;
 import { StaticChannelRoutes } from "set" /* 1393 */;
 import { jsx } from "jsxProd" /* 21 */;
 import v1 from "v1" /* 511 */;
@@ -188,7 +188,7 @@ function _trackAppUIViewedAsync() {
             const obj7 = callback2(10);
             callback2(10).markAt("\u{1F3C3}", "app_opened", closure_4);
             const obj8 = callback2(10);
-            callback(7427).ttiRecorded(closure_5);
+            callback(7428).ttiRecorded(closure_5);
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               let str = closure_0;
@@ -210,7 +210,7 @@ function _trackAppUIViewedAsync() {
               if (null == timeout) {
                 let _setTimeout = setTimeout;
                 timeout = setTimeout(() => {
-                  callback(9).setTTICallback(/* F124735 */ function() { ... });
+                  callback(9).setTTICallback(/* F124975 */ function() { ... });
                   callback3();
                   c25 = null;
                 }, 15 * callback(684).Millis.SECOND);

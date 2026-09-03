@@ -1,16 +1,16 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8577
+// Function ID: 8578
 // Name: initialize
-// Dependencies: [1921, 684, 1400, 8574, 581, 8578, 586, 706, 2]
+// Dependencies: [1921, 684, 1400, 8578, 581, 8582, 586, 706, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8573 (initialize)
+// Module 8577 (initialize)
 import failsDefault from "fails" /* 581 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import privDefault from "priv" /* 1400 */;
-import urlUserId from "urlUserId" /* 8578 */;
+import urlUserId from "urlUserId" /* 8582 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 11553
-// Function ID: 11554
+// Module ID: 11558
+// Function ID: 11559
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [5483, 5966, 5969, 2]
+// Dependencies: [5484, 5967, 5970, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11553 (getShouldShowAppAuthPrompt)
-import getAuthorizationApp from "getAuthorizationApp" /* 5966 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5969 */;
-import closure_3 from "recomputeFromAppTokens" /* 5483 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5483 */;
+// Module 11558 (getShouldShowAppAuthPrompt)
+import getAuthorizationApp from "getAuthorizationApp" /* 5967 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5970 */;
+import closure_3 from "recomputeFromAppTokens" /* 5484 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5484 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 15811
+// Function ID: 15812
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 7725, 15768, 21, 4478, 709, 4217, 15792, 1233, 4474, 15786, 7739, 586, 4176, 7714, 4201, 7750, 7752, 2]
+// Dependencies: [109, 32, 19, 7728, 15784, 21, 4478, 709, 4217, 15808, 1233, 4474, 15802, 7742, 586, 4176, 7717, 4201, 7753, 7755, 2]
 
-// Module 15795 (PasswordStrength)
+// Module 15811 (PasswordStrength)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import PasswordScore from "PasswordScore" /* 15792 */;
+import PasswordScore from "PasswordScore" /* 15808 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_7 from "handleSetLocationMetadata" /* 7725 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15768 */;
+import closure_7 from "handleSetLocationMetadata" /* 7728 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15784 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import { FadeIn, FadeOut, LinearTransition, Easing } from "module_4217" /* 4217 */;
@@ -30,13 +30,13 @@ function PasswordStrength(passwordScore) {
             const intl2 = tmp9(1233).intl;
             let str = intl2.string(tmp9(1233).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15792).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15808).PasswordScore.MEDIUM) {
             const intl = tmp9(1233).intl;
             str = intl.string(tmp9(1233).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15792).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15808).PasswordScore.STRONG) {
               const intl4 = tmp9(1233).intl;
               str = intl4.string(tmp9(1233).t.Xraqqc);
               strong = tmp.strong;

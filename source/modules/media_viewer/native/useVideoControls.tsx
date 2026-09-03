@@ -1,10 +1,10 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8593
+// Function ID: 8594
 // Name: useVideoControls
-// Dependencies: [32, 19, 4470, 21, 641, 702, 8590, 4478, 586, 8582, 8591, 8583, 8592, 2]
+// Dependencies: [32, 19, 4470, 21, 641, 702, 8594, 4478, 586, 8586, 8595, 8587, 8596, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8589 (useVideoControls)
+// Module 8593 (useVideoControls)
 import batchUpdates from "batchUpdates" /* 702 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

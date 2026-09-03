@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 9929
+// Function ID: 9930
 // Name: useCanSendStageStartNotification
 // Dependencies: [4398, 4120, 502, 586, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 9925 (useCanSendStageStartNotification)
+// Module 9929 (useCanSendStageStartNotification)
 import closure_2 from "handleInviteData" /* 4398 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import { Permissions } from "sum" /* 502 */;

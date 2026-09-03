@@ -1,13 +1,13 @@
-// Module ID: 8159
-// Function ID: 8160
+// Module ID: 8163
+// Function ID: 8164
 // Name: computePermissions
-// Dependencies: [19, 1983, 1390, 1429, 1215, 1386, 1991, 1908, 4120, 1921, 673, 8160, 586, 503, 1954, 2]
+// Dependencies: [19, 1983, 1390, 1429, 1215, 1386, 1991, 1908, 4120, 1921, 673, 8164, 586, 503, 1954, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8159 (computePermissions)
+// Module 8163 (computePermissions)
 import fromStringAll from "fromString" /* 503 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8160 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8164 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initialize" /* 1983 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;

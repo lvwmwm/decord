@@ -1,10 +1,10 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9302
+// Function ID: 9303
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4135, 4470, 4504, 5233, 1921, 9299, 673, 21, 4478, 4125, 586, 4915, 4217, 4479, 5962, 9300, 9301, 503, 9302, 527, 511, 9303, 9305, 9307, 8442, 5969, 1205, 9308, 9309, 4700, 9310, 4925, 9293, 4928, 1233, 6056, 5235, 9311, 9367, 8625, 9306, 9371, 9375, 9374, 9376, 9378, 9379, 9381, 9390, 5593, 2]
+// Dependencies: [5, 32, 19, 17, 4135, 4470, 4504, 5234, 1921, 9303, 673, 21, 4478, 4125, 586, 4916, 4217, 4479, 5963, 9304, 9305, 503, 9306, 527, 511, 9307, 9309, 9311, 8446, 5970, 1205, 9312, 9313, 4701, 9314, 4926, 9297, 4929, 1233, 6057, 5236, 9315, 9371, 8629, 9310, 9375, 9379, 9378, 9380, 9382, 9383, 9385, 9394, 5594, 2]
 // Exports: default
 
-// Module 9298 (useOAuth2AuthorizeForm)
+// Module 9302 (useOAuth2AuthorizeForm)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
@@ -12,9 +12,9 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_8 from "defaultImageSrcGenerator" /* 4135 */;
 import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_10 from "createExecutable" /* 4504 */;
-import closure_11 from "set" /* 5233 */;
+import closure_11 from "set" /* 5234 */;
 import closure_12 from "mergeGuildAvatar" /* 1921 */;
-import OAuth2Steps from "OAuth2Steps" /* 9299 */;
+import OAuth2Steps from "OAuth2Steps" /* 9303 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -826,13 +826,13 @@ export default function useOAuth2AuthorizeForm(clientId) {
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => callback2(9302).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => callback2(9302).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => callback2(9306).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => callback2(9306).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => callback2(9302).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => callback2(9306).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -841,7 +841,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const items = [tmp, closure_1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => callback2(9302).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => callback2(9306).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -853,7 +853,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         [tmp, tmp2] = arg0;
         return closure_1_1(closure_1_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
       });
-      result.then(() => callback2(9302).getAccountUrlAndAuthCode()).then((arg0) => {
+      result.then(() => callback2(9306).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -873,7 +873,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }).catch((arg0) => {
         callback2(1205).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => callback2(9302).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => callback2(9306).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);

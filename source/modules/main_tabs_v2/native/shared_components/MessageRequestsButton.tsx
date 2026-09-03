@@ -1,17 +1,17 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15866
+// Function ID: 15867
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 6074, 6075, 21, 4478, 586, 15851, 4928, 1233, 8015, 13141, 9996, 2]
+// Dependencies: [19, 17, 6075, 6076, 21, 4478, 586, 15867, 4929, 1233, 8018, 13153, 10000, 2]
 // Exports: default
 
-// Module 15850 (MessageRequestAnimation)
+// Module 15866 (MessageRequestAnimation)
 import initialize from "initialize" /* 586 */;
-import registerAssetDefault from "registerAsset" /* 9996 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 13141 */;
+import registerAssetDefault from "registerAsset" /* 10000 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 13153 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "processChannel" /* 6074 */;
-import closure_6 from "processChannel" /* 6075 */;
+import closure_5 from "processChannel" /* 6075 */;
+import closure_6 from "processChannel" /* 6076 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,7 +36,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15851).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15867).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -72,7 +72,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1233).intl;
       obj[4] = intl3.string(tmp3(1233).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4928).Button, obj);
+      let tmp21 = callback(tmp3(4929).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
@@ -81,9 +81,9 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1233).intl;
       obj1[3] = intl2.string(tmp3(1233).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(8015).IconButton, obj1);
+      tmp21 = callback(tmp3(8018).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(13141).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(13153).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {

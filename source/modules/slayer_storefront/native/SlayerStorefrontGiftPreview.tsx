@@ -1,16 +1,16 @@
-// Module ID: 8515
-// Function ID: 8516
+// Module ID: 8519
+// Function ID: 8520
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4478, 8516, 4474, 1233, 8518, 3370, 2]
+// Dependencies: [19, 17, 21, 4478, 8520, 4474, 1233, 8522, 3370, 2]
 // Exports: default
 
-// Module 8515 (WarningBox)
+// Module 8519 (WarningBox)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8516 */;
-import InfoBox from "InfoBox" /* 8518 */;
-import InfoBoxDefault from "InfoBox" /* 8518 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8520 */;
+import InfoBox from "InfoBox" /* 8522 */;
+import InfoBoxDefault from "InfoBox" /* 8522 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

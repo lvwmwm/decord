@@ -1,9 +1,9 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13360
+// Function ID: 13361
 // Name: SquareIconButton
-// Dependencies: [19, 21, 4478, 709, 5392, 5076, 1296, 2]
+// Dependencies: [19, 21, 4478, 709, 5393, 5077, 1296, 2]
 
-// Module 13345 (SquareIconButton)
+// Module 13360 (SquareIconButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

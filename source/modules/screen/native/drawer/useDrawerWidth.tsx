@@ -1,10 +1,10 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11352
+// Function ID: 11353
 // Name: sum
 // Dependencies: [673, 4337, 4335, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11347 (sum)
+// Module 11352 (sum)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import useChatLayout from "useChatLayout" /* 4335 */;

@@ -1,10 +1,10 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15063
+// Function ID: 15064
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 1908, 4114, 673, 4074, 6089, 1233, 15039, 586, 15037, 2]
+// Dependencies: [32, 19, 1908, 4114, 673, 4074, 6090, 1233, 15054, 586, 15052, 2]
 // Exports: default
 
-// Module 15048 (useManageSubscriptionCardData)
+// Module 15063 (useManageSubscriptionCardData)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;

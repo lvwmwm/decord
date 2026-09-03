@@ -1,14 +1,14 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16576
+// Function ID: 16577
 // Name: Loading
-// Dependencies: [19, 17, 1981, 1908, 4300, 673, 21, 4478, 709, 6056, 7657, 586, 5949, 4302, 7662, 1219, 4332, 1627, 6057, 16556, 2]
+// Dependencies: [19, 17, 1981, 1908, 4300, 673, 21, 4478, 709, 6057, 7660, 586, 5950, 4302, 7665, 1219, 4332, 1627, 6058, 16577, 2]
 
-// Module 16555 (Loading)
+// Module 16576 (Loading)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActivityIndicator from "ActivityIndicator" /* 6056 */;
-import _modDef6057 from "module_6057" /* 6057 */;
-import MemberVerificationModalDefault from "MemberVerificationModal" /* 7657 */;
+import ActivityIndicator from "ActivityIndicator" /* 6057 */;
+import _modDef6058 from "module_6058" /* 6058 */;
+import MemberVerificationModalDefault from "MemberVerificationModal" /* 7660 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "comparator" /* 1981 */;
@@ -17,7 +17,7 @@ import closure_8 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import makeAuthenticated from "makeAuthenticated" /* 16556 */;
+import makeAuthenticated from "makeAuthenticated" /* 16577 */;
 
 require = arg1;
 function Loading() {
@@ -168,9 +168,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(_modDef6057, { marginLeft: null, marginRight: null });
+    obj[2] = jsx(_modDef6058, { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = _modDef6057;
+    const tmp3Result = _modDef6058;
   }
   return tmp10;
 });

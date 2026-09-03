@@ -1,10 +1,10 @@
-// Module ID: 15903
-// Function ID: 15904
+// Module ID: 15919
+// Function ID: 15920
 // Name: TypingIndicator
 // Dependencies: [19, 17, 21, 4478, 709, 4413, 1362, 1296, 2]
 // Exports: TypingIndicator
 
-// Module 15903 (TypingIndicator)
+// Module 15919 (TypingIndicator)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;

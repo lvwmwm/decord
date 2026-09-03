@@ -1,10 +1,10 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7389
+// Function ID: 7390
 // Name: getTieredTenureBadgeData
 // Dependencies: [1923, 4074, 2]
 // Exports: getEarnedOnDate, getEarnedTenureBadge, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 7388 (getTieredTenureBadgeData)
+// Module 7389 (getTieredTenureBadgeData)
 import set from "set" /* 2 */;
 import hooksDefault from "hooks" /* 4074 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;

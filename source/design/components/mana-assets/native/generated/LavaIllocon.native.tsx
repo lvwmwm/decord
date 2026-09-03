@@ -1,14 +1,14 @@
-// Module ID: 6782
-// Function ID: 6783
+// Module ID: 6783
+// Function ID: 6784
 // Name: LavaIllocon
-// Dependencies: [21, 5501, 6783, 2]
+// Dependencies: [21, 5502, 6784, 2]
 // Exports: LavaIllocon
 
-// Module 6782 (LavaIllocon)
+// Module 6783 (LavaIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6783 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6784 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LavaIllocon.native.tsx");

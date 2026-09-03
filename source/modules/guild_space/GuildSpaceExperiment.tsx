@@ -1,10 +1,10 @@
-// Module ID: 6080
-// Function ID: 6081
+// Module ID: 6081
+// Function ID: 6082
 // Name: experiment
 // Dependencies: [4389, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 6080 (experiment)
+// Module 6081 (experiment)
 import set from "set" /* 2 */;
 import createExperiment from "createExperiment" /* 4389 */;
 

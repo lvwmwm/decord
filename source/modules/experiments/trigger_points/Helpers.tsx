@@ -1,9 +1,9 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10808
+// Function ID: 10809
 // Name: registeredExperimentIds
 // Dependencies: [1209, 4392, 2]
 
-// Module 10804 (registeredExperimentIds)
+// Module 10808 (registeredExperimentIds)
 import closure_0 from "initialize" /* 1209 */;
 import { CommonTriggerPoints } from "ExperimentBuckets" /* 4392 */;
 

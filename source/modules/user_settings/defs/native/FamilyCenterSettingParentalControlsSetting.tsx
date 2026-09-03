@@ -1,15 +1,15 @@
-// Module ID: 14757
-// Function ID: 14758
+// Module ID: 14772
+// Function ID: 14773
 // Name: route
-// Dependencies: [7893, 673, 11288, 1233, 2368, 14758, 2]
+// Dependencies: [7896, 673, 11292, 1233, 2368, 14773, 2]
 
-// Module 14757 (route)
+// Module 14772 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import MobileUserSettings from "MobileUserSettings" /* 7893 */;
-import createToggle from "createToggle" /* 11288 */;
+import MobileUserSettings from "MobileUserSettings" /* 7896 */;
+import createToggle from "createToggle" /* 11292 */;
 
 obj = {
   useTitle() {
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(14758) /* FamilyCenterParentalControlsSettings */.default;
+    return require(14773) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);

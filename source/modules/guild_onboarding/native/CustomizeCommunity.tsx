@@ -1,27 +1,27 @@
-// Module ID: 11370
-// Function ID: 11371
+// Module ID: 11375
+// Function ID: 11376
 // Name: EmptyCustomizeCommunity
-// Dependencies: [19, 17, 5409, 1908, 4493, 4299, 5475, 5476, 673, 1924, 4702, 21, 4478, 709, 5469, 1363, 4413, 586, 11371, 11372, 1296, 1233, 4474, 5482, 5588, 5959, 5981, 1627, 11373, 5474, 5486, 5480, 5593, 1430, 1470, 4197, 4217, 4479, 11374, 4445, 5598, 2008, 5076, 5951, 5589, 2]
+// Dependencies: [19, 17, 5410, 1908, 4493, 4299, 5476, 5477, 673, 1924, 4703, 21, 4478, 709, 5470, 1363, 4413, 586, 11376, 11377, 1296, 1233, 4474, 5483, 5589, 5960, 5982, 1627, 11378, 5475, 5487, 5481, 5594, 1430, 1470, 4197, 4217, 4479, 11379, 4445, 5599, 2008, 5077, 5952, 5590, 2]
 // Exports: default
 
-// Module 11370 (EmptyCustomizeCommunity)
+// Module 11375 (EmptyCustomizeCommunity)
 import ThemesDefault from "Themes" /* 709 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
-import EmojiDefault from "Emoji" /* 5593 */;
+import EmojiDefault from "Emoji" /* 5594 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getEmojiToGroupId" /* 5409 */;
+import closure_7 from "getEmojiToGroupId" /* 5410 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import closure_9 from "generateOldThreadCutoff" /* 4493 */;
 import closure_10 from "handleConnectionOpen" /* 4299 */;
-import closure_11 from "handleUpdate" /* 5475 */;
-import serverPromptToClientPrompt from "serverPromptToClientPrompt" /* 5476 */;
+import closure_11 from "handleUpdate" /* 5476 */;
+import serverPromptToClientPrompt from "serverPromptToClientPrompt" /* 5477 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4702 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 
 require = arg1;
 function EmptyCustomizeCommunity(setTab) {
@@ -33,7 +33,7 @@ function EmptyCustomizeCommunity(setTab) {
   const items = [closure_10];
   importDefault = obj1.useStateFromStores(items, () => guildId.getGuildId());
   obj = { style: tmp.emptyContainer, children: null };
-  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(useThemeDefault()) ? 11371 : 11372) };
+  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(useThemeDefault()) ? 11376 : 11377) };
   const items1 = [closure_16(closure_5, obj), , ];
   obj1 = { style: tmp.emptyContainerHeader, children: null };
   const intl = tmp2(1233).intl;
@@ -488,7 +488,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11373)(guildId);
+  const tmp7 = stateFromStores(11378)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

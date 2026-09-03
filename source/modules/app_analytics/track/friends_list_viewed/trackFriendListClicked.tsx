@@ -1,14 +1,14 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16585
+// Function ID: 16586
 // Name: trackFriendsListClicked
-// Dependencies: [673, 16562, 695, 2]
+// Dependencies: [673, 16583, 695, 2]
 // Exports: default
 
-// Module 16564 (trackFriendsListClicked)
+// Module 16585 (trackFriendsListClicked)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 16562 */;
+import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 16583 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListClicked.tsx");

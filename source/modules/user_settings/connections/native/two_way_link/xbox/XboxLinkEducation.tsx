@@ -1,16 +1,16 @@
-// Module ID: 9334
-// Function ID: 9335
+// Module ID: 9338
+// Function ID: 9339
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 673, 21, 4478, 9319, 1994, 9335, 4474, 1233, 5561, 4928, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 9323, 1994, 9339, 4474, 1233, 5562, 4929, 2]
 // Exports: default
 
-// Module 9334 (XboxLinkEducation)
+// Module 9338 (XboxLinkEducation)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
 import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4928 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
-import styles from "styles" /* 9319 */;
+import Button from "Button" /* 4929 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import styles from "styles" /* 9323 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;

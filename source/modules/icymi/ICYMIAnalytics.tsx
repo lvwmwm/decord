@@ -1,11 +1,11 @@
-// Module ID: 8645
-// Function ID: 8646
+// Module ID: 8649
+// Function ID: 8650
 // Name: DEFAULT_UX_VARIATION
-// Dependencies: [8621, 673, 8048, 8634, 695, 2]
+// Dependencies: [8625, 673, 8051, 8638, 695, 2]
 
-// Module 8645 (DEFAULT_UX_VARIATION)
+// Module 8649 (DEFAULT_UX_VARIATION)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_3 from "filterStaffGuild" /* 8621 */;
+import closure_3 from "filterStaffGuild" /* 8625 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;

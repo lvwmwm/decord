@@ -1,10 +1,10 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9055
+// Function ID: 9056
 // Name: LinkButton
-// Dependencies: [19, 17, 673, 1979, 21, 4478, 4190, 695, 4474, 9052, 1234, 1978, 1233, 2]
+// Dependencies: [19, 17, 673, 1979, 21, 4478, 4190, 695, 4474, 9056, 1234, 1978, 1233, 2]
 // Exports: default
 
-// Module 9051 (LinkButton)
+// Module 9055 (LinkButton)
 import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;

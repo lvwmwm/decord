@@ -1,12 +1,12 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7429
+// Function ID: 7430
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 7429, 2]
+// Dependencies: [17, 7430, 2]
 
-// Module 7428 (getHermesInstrumentedStatsSummary)
+// Module 7429 (getHermesInstrumentedStatsSummary)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ElectronProcessType from "ElectronProcessType" /* 7429 */;
+import ElectronProcessType from "ElectronProcessType" /* 7430 */;
 
 let closure_1 = function getHermesInstrumentedStatsSummary() {
   const _HermesInternal = HermesInternal;

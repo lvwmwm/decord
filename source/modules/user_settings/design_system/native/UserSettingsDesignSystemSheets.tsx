@@ -1,22 +1,22 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15639
+// Function ID: 15640
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 673, 21, 4478, 5997, 5629, 9701, 5998, 4926, 7714, 5999, 4445, 4928, 1233, 10335, 6385, 5609, 4474, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 5998, 5630, 9705, 5999, 4927, 7717, 6000, 4445, 4929, 1233, 10339, 6386, 5610, 4474, 2]
 // Exports: default
 
-// Module 15625 (DemoActionSheet)
+// Module 15639 (DemoActionSheet)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4926 */;
-import Button from "Button" /* 4928 */;
-import PressableCard from "PressableCard" /* 5609 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5629 */;
-import ActionSheet from "ActionSheet" /* 5997 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5999 */;
-import metadataDefault from "metadata" /* 6385 */;
-import TextInput from "TextInput" /* 7714 */;
-import PromoSheet from "PromoSheet" /* 10335 */;
+import Stack from "Stack" /* 4927 */;
+import Button from "Button" /* 4929 */;
+import PressableCard from "PressableCard" /* 5610 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
+import ActionSheet from "ActionSheet" /* 5998 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 6000 */;
+import metadataDefault from "metadata" /* 6386 */;
+import TextInput from "TextInput" /* 7717 */;
+import PromoSheet from "PromoSheet" /* 10339 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
@@ -48,14 +48,14 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(9701).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(9705).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
   if (tmp2) {
     obj = { onPress: null };
     obj[0] = NOOP;
-    tmp14Result = tmp14(tmp15(5998).ActionSheetCloseButton, obj);
+    tmp14Result = tmp14(tmp15(5999).ActionSheetCloseButton, obj);
   }
   obj1 = { header: closure_7(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), children: null };
   obj[3] = tmp14Result;

@@ -1,10 +1,10 @@
-// Module ID: 15942
-// Function ID: 15943
+// Module ID: 15958
+// Function ID: 15959
 // Name: VoiceUserConnected
-// Dependencies: [19, 1385, 4494, 4500, 1215, 4529, 4496, 4497, 21, 586, 15943, 2]
+// Dependencies: [19, 1385, 4494, 4500, 1215, 4529, 4496, 4497, 21, 586, 15959, 2]
 // Exports: default
 
-// Module 15942 (VoiceUserConnected)
+// Module 15958 (VoiceUserConnected)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "getParticipants" /* 4494 */;

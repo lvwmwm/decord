@@ -1,10 +1,10 @@
-// Module ID: 6181
-// Function ID: 6182
+// Module ID: 6182
+// Function ID: 6183
 // Name: getIdFromHistoryItem
 // Dependencies: [1386, 586, 706, 4333, 4332, 4335, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 6181 (getIdFromHistoryItem)
+// Module 6182 (getIdFromHistoryItem)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;

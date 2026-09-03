@@ -1,19 +1,19 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17600
+// Function ID: 17601
 // Name: BaseBenefitRow
-// Dependencies: [19, 17, 15030, 21, 4478, 15065, 1296, 10052, 4474, 4134, 15058, 4674, 4981, 1233, 2]
+// Dependencies: [19, 17, 15045, 21, 4478, 15080, 1296, 10056, 4474, 4134, 15073, 4674, 4982, 1233, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 17580 (BaseBenefitRow)
+// Module 17600 (BaseBenefitRow)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import Text from "Text" /* 4474 */;
-import registerAssetDefault from "registerAsset" /* 10052 */;
-import getUsedTemplateChannelsForGuild from "getUsedTemplateChannelsForGuild" /* 15058 */;
-import EmojiIconDefault from "EmojiIcon" /* 15065 */;
+import registerAssetDefault from "registerAsset" /* 10056 */;
+import getUsedTemplateChannelsForGuild from "getUsedTemplateChannelsForGuild" /* 15073 */;
+import EmojiIconDefault from "EmojiIcon" /* 15080 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { GuildRoleSubscriptionBenefitTypes as closure_4 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
+import { GuildRoleSubscriptionBenefitTypes as closure_4 } from "MAX_SUBSCRIPTION_TIERS" /* 15045 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -72,8 +72,8 @@ function ChannelBenefitRow(benefit) {
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    channelIcon = tmp2(4981).getChannelIcon(channelWithTemplateFallback);
-    const tmp2Result = tmp2(4981);
+    channelIcon = tmp2(4982).getChannelIcon(channelWithTemplateFallback);
+    const tmp2Result = tmp2(4982);
   }
   if (null == channelWithTemplateFallback) {
     obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };

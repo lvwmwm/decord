@@ -1,10 +1,10 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10184
+// Function ID: 10185
 // Name: RootThemeContextProvider
 // Dependencies: [19, 502, 21, 4204, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10180 (RootThemeContextProvider)
+// Module 10184 (RootThemeContextProvider)
 import closure_2 from "noop" /* 19 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;

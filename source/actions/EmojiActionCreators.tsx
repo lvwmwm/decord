@@ -1,18 +1,18 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9195
+// Function ID: 9196
 // Name: _updateEmoji
-// Dependencies: [5, 5409, 5229, 4855, 673, 682, 1369, 1336, 706, 527, 5121, 1362, 1233, 4377, 4134, 1470, 5416, 12, 4857, 2]
+// Dependencies: [5, 5410, 5230, 4856, 673, 682, 1369, 1336, 706, 527, 5122, 1362, 1233, 4377, 4134, 1470, 5417, 12, 4858, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 9191 (_updateEmoji)
+// Module 9195 (_updateEmoji)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import fromBlobDefault from "fromBlob" /* 5121 */;
+import fromBlobDefault from "fromBlob" /* 5122 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getEmojiToGroupId" /* 5409 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
-import closure_6 from "handleConnectionOpen" /* 4855 */;
+import closure_4 from "getEmojiToGroupId" /* 5410 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
+import closure_6 from "handleConnectionOpen" /* 4856 */;
 import { Endpoints } from "ME" /* 673 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 

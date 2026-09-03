@@ -1,21 +1,21 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10865
+// Function ID: 10866
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4470, 4519, 7416, 1386, 4569, 4130, 10853, 673, 21, 4478, 709, 4491, 38, 10862, 9089, 4193, 9090, 9073, 7417, 586, 1296, 4474, 4322, 9253, 5961, 8919, 1233, 10863, 4431, 4429, 4928, 1902, 7633, 5024, 8911, 2008, 8920, 10864, 8243, 4957, 7879, 4747, 8940, 8937, 8947, 10866, 9021, 7692, 10867, 5607, 2]
+// Dependencies: [19, 17, 4470, 4519, 7417, 1386, 4569, 4130, 10857, 673, 21, 4478, 709, 4491, 38, 10866, 9093, 4193, 9094, 9077, 7418, 586, 1296, 4474, 4322, 9257, 5962, 8923, 1233, 10867, 4431, 4429, 4929, 1902, 7634, 5025, 8915, 2008, 8924, 10868, 8247, 4958, 7882, 4748, 8944, 8941, 8951, 10870, 9025, 7695, 10871, 5608, 2]
 
-// Module 10861 (UserRowSubLabel)
+// Module 10865 (UserRowSubLabel)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9253 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9257 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_6 from "addApplication" /* 4519 */;
-import closure_7 from "initialize" /* 7416 */;
+import closure_7 from "initialize" /* 7417 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "sortActivity" /* 4569 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import { UserRowModes } from "UserRowModes" /* 10853 */;
+import { UserRowModes } from "UserRowModes" /* 10857 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "r" };
+      let obj = { accessibilityActions: null, actions: "Array" };
       obj[0] = items;
       return obj;
     } else {

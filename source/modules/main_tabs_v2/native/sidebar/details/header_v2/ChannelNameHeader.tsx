@@ -1,9 +1,9 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16564
+// Function ID: 16565
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1386, 1908, 4120, 4569, 1921, 673, 21, 4478, 709, 586, 1296, 4674, 1498, 4489, 5076, 4474, 1233, 4666, 3436, 10869, 4981, 8937, 5961, 8911, 2]
+// Dependencies: [19, 17, 1386, 1908, 4120, 4569, 1921, 673, 21, 4478, 709, 586, 1296, 4674, 1498, 4489, 5077, 4474, 1233, 4666, 3436, 10873, 4982, 8941, 5962, 8915, 2]
 
-// Module 16543 (DirectMessageIcon)
+// Module 16564 (DirectMessageIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 3436 */;
 import importAllResult from "noop" /* 19 */;
@@ -241,7 +241,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5961)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   const tmp = callback2();
   const items1 = [tmp.container, channel.containerStyle];
-  return callback(channel(5076).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
+  return callback(channel(5077).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);

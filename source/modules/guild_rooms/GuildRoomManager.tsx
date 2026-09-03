@@ -1,12 +1,12 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17208
+// Function ID: 17209
 // Name: isExperimentEnabled
-// Dependencies: [1215, 4679, 5494, 4720, 4677, 2]
+// Dependencies: [1215, 4679, 5495, 4721, 4677, 2]
 
-// Module 17188 (isExperimentEnabled)
+// Module 17208 (isExperimentEnabled)
 import _guildRoomConnect from "_guildRoomConnect" /* 4677 */;
-import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4720 */;
-import initializeDefault from "initialize" /* 5494 */;
+import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4721 */;
+import initializeDefault from "initialize" /* 5495 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "resolveCreatingNotes" /* 4679 */;
 

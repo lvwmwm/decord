@@ -1,16 +1,16 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 10890
+// Function ID: 10891
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 673, 21, 4478, 5090, 6012, 1430, 10887, 5076, 1233, 2]
+// Dependencies: [5, 19, 17, 673, 21, 4478, 5091, 6013, 1430, 10891, 5077, 1233, 2]
 // Exports: default
 
-// Module 10886 (IconUploader)
+// Module 10890 (IconUploader)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getAvatarURL from "getAvatarURL" /* 1430 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import GuildIconSizes from "GuildIconSizes" /* 6012 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
-import registerAssetDefault from "registerAsset" /* 10887 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import GuildIconSizes from "GuildIconSizes" /* 6013 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
+import registerAssetDefault from "registerAsset" /* 10891 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

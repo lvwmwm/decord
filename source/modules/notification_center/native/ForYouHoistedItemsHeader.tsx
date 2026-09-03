@@ -1,10 +1,10 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16275
+// Function ID: 16276
 // Name: ForYouHoistedItemsHeader
 // Dependencies: [19, 17, 21, 4478, 709, 2]
 // Exports: ForYouHoistedItemsHeader
 
-// Module 16256 (ForYouHoistedItemsHeader)
+// Module 16275 (ForYouHoistedItemsHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;

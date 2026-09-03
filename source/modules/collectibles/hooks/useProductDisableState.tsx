@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12791
+// Function ID: 12792
 // Name: useProductDisableState
 // Dependencies: [4145, 586, 676, 1233, 2]
 // Exports: useProductDisableState
 
-// Module 12779 (useProductDisableState)
+// Module 12791 (useProductDisableState)
 import initialize from "initialize" /* 586 */;
 import set from "set" /* 676 */;
 import closure_2 from "reset" /* 4145 */;

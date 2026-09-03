@@ -1,10 +1,10 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14801
+// Function ID: 14802
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [673, 4508, 21, 4478, 1296, 4413, 1627, 7257, 5967, 5630, 5629, 1233, 5632, 5607, 4445, 9312, 1430, 1362, 5964, 5961, 5981, 2]
+// Dependencies: [673, 4508, 21, 4478, 1296, 4413, 1627, 7258, 5968, 5631, 5630, 1233, 5633, 5608, 4445, 9316, 1430, 1362, 5965, 5962, 5982, 2]
 // Exports: default
 
-// Module 14786 (AddApplicationIdentityTableRow)
+// Module 14801 (AddApplicationIdentityTableRow)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import items2 from "items" /* 4508 */;
@@ -17,10 +17,10 @@ function AddApplicationIdentityTableRow(application) {
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5964)(application));
-  const tmp2 = analyticsLocations(5964)(application);
-  analyticsLocations = analyticsLocations(5961)(analyticsLocations(5981).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(5961);
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5965)(application));
+  const tmp2 = analyticsLocations(5965)(application);
+  analyticsLocations = analyticsLocations(5962)(analyticsLocations(5982).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5962);
   let obj = _require(1296);
   const iconSource = application.getIconSource(obj.getIconSize(_require(1296).IconSizes.LARGE));
   obj = {
@@ -45,9 +45,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp7Result = tmp7(tmp5(1296).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5607).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5608).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5607).TableRow, obj, application.id);
+  return closure_5(_require(5608).TableRow, obj, application.id);
 }
 const AnalyticsLocations = ME.AnalyticsLocations;
 let closure_4 = items2.getMigratedApplicationIdentityConnectionsScreenApplications;

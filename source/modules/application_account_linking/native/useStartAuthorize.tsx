@@ -1,13 +1,13 @@
-// Module ID: 5964
-// Function ID: 5965
+// Module ID: 5965
+// Function ID: 5966
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 5965, 673, 5966, 5968, 4190, 695, 5970, 2]
+// Dependencies: [5, 19, 5966, 673, 5967, 5969, 4190, 695, 5971, 2]
 // Exports: default
 
-// Module 5964 (useStartAuthorize)
+// Module 5965 (useStartAuthorize)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { AuthorizeFlow } from "AuthorizeFlow" /* 5965 */;
+import { AuthorizeFlow } from "AuthorizeFlow" /* 5966 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
@@ -20,7 +20,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   }
   let _require;
   const debug = obj.debug;
-  const authorizationApp = _require(5966).useAuthorizationApp(getOfficialApplicationId);
+  const authorizationApp = _require(5967).useAuthorizationApp(getOfficialApplicationId);
   _require = authorizationApp;
   let prop;
   if (authorizationApp != null) {
@@ -30,7 +30,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (null != prop) {
     WEB = AuthorizeFlow.WEB;
   }
-  let obj2 = _require(5966);
+  let obj2 = _require(5967);
   const tmp = undefined !== debug && debug;
   const tmp2 = _require;
   let parentId;
@@ -44,7 +44,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = _require(5968).useAuthorizedAppsToken(parentId);
+  const authorizedAppsToken = _require(5969).useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   _require = undefined;
   _require = callback((arg0) => {

@@ -1,10 +1,10 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12498
+// Function ID: 12499
 // Name: getDescriptiveInviteError
 // Dependencies: [1921, 673, 4139, 1233, 1994, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12486 (getDescriptiveInviteError)
+// Module 12498 (getDescriptiveInviteError)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;

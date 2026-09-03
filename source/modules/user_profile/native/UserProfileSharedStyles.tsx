@@ -1,13 +1,13 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8547
+// Function ID: 8548
 // Name: useSharedStyles
-// Dependencies: [6009, 4478, 709, 2]
+// Dependencies: [6010, 4478, 709, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8543 (useSharedStyles)
+// Module 8547 (useSharedStyles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 ({ AVATAR_CONTAINER_SIZE: obj1, AVATAR_CUSTOM_STATUS_GAP: c3, AVATAR_PADDING: c4, CARD_PADDING: c5, PROFILE_CONTENT_BOTTOM_PADDING: closure_6, PROFILE_SIDE_PADDING: error, PROFILE_TOP_LAYER_Z_INDEX: closure_8 } = ARBITRARY_LARGE_OFFSET);

@@ -1,10 +1,10 @@
-// Module ID: 13375
-// Function ID: 13376
+// Module ID: 13390
+// Function ID: 13391
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4470, 673, 21, 4478, 709, 1627, 586, 13373, 5981, 686, 4217, 4479, 4940, 8984, 2]
+// Dependencies: [19, 17, 4470, 673, 21, 4478, 709, 1627, 586, 13388, 5982, 686, 4217, 4479, 4941, 8988, 2]
 // Exports: default
 
-// Module 13375 (PremiumMarketingFloatingSubscribeButton)
+// Module 13390 (PremiumMarketingFloatingSubscribeButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

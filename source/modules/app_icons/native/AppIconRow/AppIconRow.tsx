@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15368
+// Function ID: 15369
 // Name: items
-// Dependencies: [32, 19, 21, 1233, 4478, 709, 8188, 12, 4205, 5607, 15351, 7703, 2]
+// Dependencies: [32, 19, 21, 1233, 4478, 709, 8192, 12, 4205, 5608, 15365, 7706, 2]
 // Exports: default
 
-// Module 15354 (items)
+// Module 15368 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "_slicedToArray" /* 32 */;

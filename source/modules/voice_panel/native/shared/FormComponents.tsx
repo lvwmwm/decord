@@ -1,15 +1,15 @@
-// Module ID: 9829
-// Function ID: 9830
+// Module ID: 9833
+// Function ID: 9834
 // Name: VoiceBadges
-// Dependencies: [19, 4569, 21, 4478, 709, 6014, 6000, 9830, 1296, 5961, 9831, 9842, 9887, 4747, 8940, 8911, 586, 7493, 9889, 9890, 9892, 4474, 1233, 5607, 4928, 9893, 9894, 4322, 9021, 9895, 2]
+// Dependencies: [19, 4569, 21, 4478, 709, 6015, 6001, 9834, 1296, 5962, 9835, 9846, 9891, 4748, 8944, 8915, 586, 7494, 9893, 9894, 9896, 4474, 1233, 5608, 4929, 9897, 9898, 4322, 9025, 9899, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9829 (VoiceBadges)
+// Module 9833 (VoiceBadges)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
-import setDefault from "set" /* 6014 */;
-import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9830 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
+import setDefault from "set" /* 6015 */;
+import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9834 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "sortActivity" /* 4569 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -24,7 +24,7 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: null, children: null };
     obj[0] = tmp.iconWrapper;
-    let tmp3Result = tmp3(6014);
+    let tmp3Result = tmp3(6015);
     obj = { state: null, size: null, style: null };
     obj[0] = muteDeafenIconState;
     obj[1] = Button.IconSizes.SMALL;
@@ -37,7 +37,7 @@ function VoiceBadges(arg0) {
   if (null != videoIconState) {
     obj1 = { style: null, children: null };
     obj1[0] = tmp.iconWrapper;
-    tmp3Result = tmp3(6014);
+    tmp3Result = tmp3(6015);
     const obj2 = { state: null, size: null, style: null };
     obj2[0] = videoIconState;
     obj2[1] = Button.IconSizes.SMALL;

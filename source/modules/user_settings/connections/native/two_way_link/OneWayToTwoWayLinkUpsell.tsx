@@ -1,19 +1,19 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14810
+// Function ID: 14811
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [19, 17, 673, 1383, 21, 4478, 709, 5469, 1296, 10639, 4474, 4928, 1233, 2]
+// Dependencies: [19, 17, 673, 1383, 21, 4478, 709, 5470, 1296, 10643, 4474, 4929, 1233, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 14795 (OneWayToTwoWayNewTag)
+// Module 14810 (OneWayToTwoWayNewTag)
 import ThemesDefault from "Themes" /* 709 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10639 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10643 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 
 const require = arg1;
 function OneWayToTwoWayNewTag(markAsDismissed) {
@@ -73,7 +73,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   const intl = newIndicatorDismissibleContent(1233).intl;
   obj5[0] = intl.string(newIndicatorDismissibleContent(1233).t.vD60Pv);
   obj5[1] = onPress;
-  obj4[1] = callback(newIndicatorDismissibleContent(4928).Button, obj5);
+  obj4[1] = callback(newIndicatorDismissibleContent(4929).Button, obj5);
   items3[2] = callback(View, obj4);
   obj[1] = items3;
   return callback2(View, obj);

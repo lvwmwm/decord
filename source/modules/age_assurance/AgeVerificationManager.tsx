@@ -1,19 +1,19 @@
-// Module ID: 17126
-// Function ID: 17127
+// Module ID: 17146
+// Function ID: 17147
 // Name: handleMessageCreate
-// Dependencies: [1386, 4735, 1980, 1921, 673, 8685, 3, 690, 7210, 6157, 5494, 1954, 4172, 5375, 11725, 5224, 2]
+// Dependencies: [1386, 4736, 1980, 1921, 673, 8689, 3, 690, 7211, 6158, 5495, 1954, 4172, 5376, 11730, 5225, 2]
 
-// Module 17126 (handleMessageCreate)
+// Module 17146 (handleMessageCreate)
 import timestampDefault from "timestamp" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 690 */;
-import initializeDefault from "initialize" /* 5494 */;
+import initializeDefault from "initialize" /* 5495 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reinjectEphemerals" /* 4735 */;
+import closure_4 from "reinjectEphemerals" /* 4736 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import { transformUser } from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { SafetyToastType } from "SafetyToastType" /* 8685 */;
+import { SafetyToastType } from "SafetyToastType" /* 8689 */;
 
 require = arg1;
 function handleMessageCreate(channelId) {
@@ -82,7 +82,7 @@ let prototype = function AgeVerificationManager() {
         }
         if (tmp20) {
           (function handleLoadChannelMessages(channelId) {
-            let obj = callback(7210);
+            let obj = callback(7211);
             obj = { channelId, limit: closure_9 };
             const messages = obj.fetchMessages(obj);
           })(tmp16);
@@ -101,8 +101,8 @@ let prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(6157).preloadForumThreads(channel);
-              const obj = channelId(6157);
+              channelId(6158).preloadForumThreads(channel);
+              const obj = channelId(6158);
             }
           })(tmp16);
         }

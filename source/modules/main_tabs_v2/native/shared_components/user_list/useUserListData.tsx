@@ -1,22 +1,22 @@
-// Module ID: 10855
-// Function ID: 10856
+// Module ID: 10859
+// Function ID: 10860
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 7416, 7412, 7413, 1934, 4130, 1921, 673, 4116, 7411, 9950, 706, 7415, 5464, 12, 1233, 9961, 2]
+// Dependencies: [109, 32, 19, 7417, 7413, 7414, 1934, 4130, 1921, 673, 4116, 7412, 9954, 706, 7416, 5465, 12, 1233, 9965, 2]
 // Exports: default
 
-// Module 10855 (_toPropertyKey)
+// Module 10859 (_toPropertyKey)
 import applyDefault from "apply" /* 12 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5464 */;
-import getAllDefault from "getAll" /* 7411 */;
-import cleanString from "cleanString" /* 7415 */;
-import getTransformedUserDefault from "getTransformedUser" /* 9950 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5465 */;
+import getAllDefault from "getAll" /* 7412 */;
+import cleanString from "cleanString" /* 7416 */;
+import getTransformedUserDefault from "getTransformedUser" /* 9954 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 7416 */;
-import closure_7 from "recountRelationshipTypes" /* 7412 */;
-import closure_8 from "recomputeAffinities" /* 7413 */;
+import closure_6 from "initialize" /* 7417 */;
+import closure_7 from "recountRelationshipTypes" /* 7413 */;
+import closure_8 from "recomputeAffinities" /* 7414 */;
 import closure_9 from "createdAt" /* 1934 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
@@ -550,7 +550,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
   let self = this;
   self = this;
   let _require = toLocaleLowerCase;
-  let obj = _require(7415);
+  let obj = _require(7416);
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   _require = cleanStringResult;
   if (this.currentQuery === cleanStringResult) {

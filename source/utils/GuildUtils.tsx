@@ -1,10 +1,10 @@
-// Module ID: 5464
-// Function ID: 5465
+// Module ID: 5465
+// Function ID: 5466
 // Name: getGuildNameSuggestion
-// Dependencies: [1908, 1921, 1400, 684, 5465, 4322, 1233, 2]
+// Dependencies: [1908, 1921, 1400, 684, 5466, 4322, 1233, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5464 (getGuildNameSuggestion)
+// Module 5465 (getGuildNameSuggestion)
 import setDefault from "set" /* 684 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import nameFromUserAll from "nameFromUser" /* 4322 */;

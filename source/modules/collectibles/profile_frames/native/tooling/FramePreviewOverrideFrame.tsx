@@ -1,14 +1,14 @@
-// Module ID: 8564
-// Function ID: 8565
+// Module ID: 8568
+// Function ID: 8569
 // Name: OverrideProfileFrameLayer
-// Dependencies: [19, 17, 8562, 6009, 21, 4478, 5501, 2]
+// Dependencies: [19, 17, 8566, 6010, 21, 4478, 5502, 2]
 // Exports: default
 
-// Module 8564 (OverrideProfileFrameLayer)
+// Module 8568 (OverrideProfileFrameLayer)
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8562 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8566 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

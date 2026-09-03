@@ -1,9 +1,9 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13596
+// Function ID: 13597
 // Name: truncateOldMessageData
 // Dependencies: [1386, 4299, 1393, 11, 12, 586, 706, 2]
 
-// Module 13581 (truncateOldMessageData)
+// Module 13596 (truncateOldMessageData)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;

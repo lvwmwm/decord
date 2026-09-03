@@ -1,9 +1,9 @@
-// Module ID: 14405
-// Function ID: 14406
+// Module ID: 14421
+// Function ID: 14422
 // Name: importDefaultResult1
-// Dependencies: [1386, 1981, 1908, 4529, 4120, 4554, 4130, 5371, 1921, 4497, 10085, 673, 14406, 14407, 14408, 14409, 7773, 13664, 14410, 14411, 8765, 1233, 14412, 10096, 7511, 4674, 5393, 695, 4700, 4662, 2]
+// Dependencies: [1386, 1981, 1908, 4529, 4120, 4554, 4130, 5372, 1921, 4497, 10089, 673, 14422, 14423, 14424, 14425, 7776, 13679, 14426, 14427, 8769, 1233, 14428, 10100, 7512, 4674, 5394, 695, 4701, 4662, 2]
 
-// Module 14405 (importDefaultResult1)
+// Module 14421 (importDefaultResult1)
 import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
@@ -12,12 +12,12 @@ import importDefaultResult from "_detectH265HardwareDecode" /* 4529 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import importDefaultResult1 from "createRTCConnection" /* 4554 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5371 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5372 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
 import importDefaultResult2 from "updateVoiceState" /* 4497 */;
-import closure_13 from "getUserAgnosticState" /* 10085 */;
+import closure_13 from "getUserAgnosticState" /* 10089 */;
 import ME from "ME" /* 673 */;
-import registerAsset from "registerAsset" /* 14406 */;
+import registerAsset from "registerAsset" /* 14422 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1233 */;
 
 const require = arg1;

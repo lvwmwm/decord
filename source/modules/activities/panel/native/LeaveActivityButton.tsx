@@ -1,13 +1,13 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16872
+// Function ID: 16873
 // Name: BaseLeaveActivityButton
-// Dependencies: [19, 9479, 21, 4928, 10026, 1233, 9466, 2]
+// Dependencies: [19, 9483, 21, 4929, 10030, 1233, 9470, 2]
 
-// Module 16852 (BaseLeaveActivityButton)
+// Module 16872 (BaseLeaveActivityButton)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4928 */;
-import registerAssetDefault from "registerAsset" /* 10026 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9479 */;
+import Button from "Button" /* 4929 */;
+import registerAssetDefault from "registerAsset" /* 10030 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

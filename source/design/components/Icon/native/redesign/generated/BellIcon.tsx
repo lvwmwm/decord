@@ -1,14 +1,14 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9772
+// Function ID: 9773
 // Name: BellIcon
-// Dependencies: [19, 21, 709, 4196, 7867, 2]
+// Dependencies: [19, 21, 709, 4196, 7870, 2]
 // Exports: BellIcon
 
-// Module 9768 (BellIcon)
+// Module 9772 (BellIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7867 */;
+import registerAsset from "registerAsset" /* 7870 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

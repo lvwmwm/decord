@@ -1,10 +1,10 @@
-// Module ID: 6163
-// Function ID: 6164
+// Module ID: 6164
+// Function ID: 6165
 // Name: requestGames
 // Dependencies: [5, 4502, 673, 527, 706, 4362, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6163 (requestGames)
+// Module 6164 (requestGames)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleLoadMessages" /* 4502 */;

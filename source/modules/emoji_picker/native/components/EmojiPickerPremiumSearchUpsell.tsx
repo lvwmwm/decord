@@ -1,10 +1,10 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9168
+// Function ID: 9169
 // Name: EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT
-// Dependencies: [19, 17, 1921, 673, 1923, 21, 4478, 709, 695, 4139, 4445, 8402, 8226, 9165, 8104, 1296, 9166, 4474, 1233, 5076, 2]
+// Dependencies: [19, 17, 1921, 673, 1923, 21, 4478, 709, 695, 4139, 4445, 8406, 8230, 9169, 8107, 1296, 9170, 4474, 1233, 5077, 2]
 // Exports: useEmojiPickerPremiumSearchUpsellClick, useEmojiPickerPremiumSearchUpsellViewed
 
-// Module 9164 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
+// Module 9168 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

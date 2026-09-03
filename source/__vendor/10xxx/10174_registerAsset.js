@@ -1,0 +1,10 @@
+// Module ID: 10174
+// Function ID: 10175
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 10174 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "436501dcf3af209f85edbd0cde1cf184", name: "ic_vr_headset_24px", type: "png" });

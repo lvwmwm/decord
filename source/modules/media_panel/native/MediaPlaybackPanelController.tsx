@@ -1,18 +1,18 @@
-// Module ID: 17036
-// Function ID: 17037
+// Module ID: 17056
+// Function ID: 17057
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4470, 1385, 4728, 14414, 9479, 12064, 21, 4217, 1627, 16826, 14413, 586, 17037, 2]
+// Dependencies: [32, 19, 4470, 1385, 4729, 14430, 9483, 12070, 21, 4217, 1627, 16846, 14429, 586, 17057, 2]
 // Exports: default
 
-// Module 17036 (MediaPlaybackPanelController)
+// Module 17056 (MediaPlaybackPanelController)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_6 from "participantFromServer" /* 1385 */;
-import closure_7 from "withEqualityFn" /* 4728 */;
-import { MediaPlaybackPanelModes } from "MediaPlaybackPanelModes" /* 14414 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9479 */;
-import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
+import closure_7 from "withEqualityFn" /* 4729 */;
+import { MediaPlaybackPanelModes } from "MediaPlaybackPanelModes" /* 14430 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
+import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE" /* 12070 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

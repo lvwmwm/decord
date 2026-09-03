@@ -1,10 +1,10 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16254
+// Function ID: 16255
 // Name: setTab
 // Dependencies: [706, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 16235 (setTab)
+// Module 16254 (setTab)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 7717
-// Function ID: 7718
+// Module ID: 7720
+// Function ID: 7721
 // Name: CircleErrorIcon
-// Dependencies: [19, 17, 21, 709, 4196, 7718, 7719, 2]
+// Dependencies: [19, 17, 21, 709, 4196, 7721, 7722, 2]
 // Exports: CircleErrorIcon
 
-// Module 7717 (CircleErrorIcon)
+// Module 7720 (CircleErrorIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7718 */;
-import registerAsset2 from "registerAsset" /* 7719 */;
+import registerAsset from "registerAsset" /* 7721 */;
+import registerAsset2 from "registerAsset" /* 7722 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

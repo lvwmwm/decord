@@ -1,14 +1,14 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7878
+// Function ID: 7879
 // Name: buildPlatformedThemedEmojiColorPalette
-// Dependencies: [4326, 4327, 686, 7537, 2]
+// Dependencies: [4326, 4327, 686, 7538, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 7875 (buildPlatformedThemedEmojiColorPalette)
+// Module 7878 (buildPlatformedThemedEmojiColorPalette)
 import set from "set" /* 2 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import hslToRgbDefault from "hslToRgb" /* 4327 */;
-import getURLDefault from "getURL" /* 7537 */;
+import getURLDefault from "getURL" /* 7538 */;
 
 function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
   ({ colors, saturationFactor } = shouldProcessMobileColors);

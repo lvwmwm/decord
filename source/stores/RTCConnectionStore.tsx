@@ -1,16 +1,16 @@
 // Module ID: 4554
 // Function ID: 4555
 // Name: createRTCConnection
-// Dependencies: [4495, 1215, 4555, 673, 4542, 3, 4556, 4578, 706, 13703, 4362, 4558, 5363, 13704, 586, 13706, 695, 2008, 2]
+// Dependencies: [4495, 1215, 4555, 673, 4542, 3, 4556, 4578, 706, 13718, 4362, 4558, 5364, 13719, 586, 13721, 695, 2008, 2]
 
 // Module 4554 (createRTCConnection)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import sleep from "sleep" /* 4558 */;
-import updateVoiceStatesDefault from "updateVoiceStates" /* 13703 */;
-import useIsSpatialAudioAvailable from "useIsSpatialAudioAvailable" /* 13704 */;
-import trackVideoToggle from "trackVideoToggle" /* 13706 */;
+import updateVoiceStatesDefault from "updateVoiceStates" /* 13718 */;
+import useSpatialAudioControlState from "useSpatialAudioControlState" /* 13719 */;
+import trackVideoToggle from "trackVideoToggle" /* 13721 */;
 import closure_5 from "set" /* 4495 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "getVoiceStatesForGuild" /* 4555 */;
@@ -628,8 +628,8 @@ const rTCConnectionStore = new RTCConnectionStore(dispatcherDefault, {
         flag = false;
       }
       if (flag) {
-        flag = useIsSpatialAudioAvailable.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = useIsSpatialAudioAvailable;
+        flag = useSpatialAudioControlState.isSpatialAudioEligible("RTCConnectionStore");
+        const obj = useSpatialAudioControlState;
       }
       if (closure_3 != null) {
         const result = closure_3.setSpatialAudioEnabled(flag);
@@ -924,8 +924,8 @@ let obj = {
         flag = false;
       }
       if (flag) {
-        flag = useIsSpatialAudioAvailable.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = useIsSpatialAudioAvailable;
+        flag = useSpatialAudioControlState.isSpatialAudioEligible("RTCConnectionStore");
+        const obj = useSpatialAudioControlState;
       }
       if (closure_3 != null) {
         const result = closure_3.setSpatialAudioEnabled(flag);

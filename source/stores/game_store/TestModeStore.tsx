@@ -1,9 +1,9 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8516
+// Function ID: 8517
 // Name: reset
 // Dependencies: [1302, 1339, 4517, 586, 4166, 706, 2]
 
-// Module 8512 (reset)
+// Module 8516 (reset)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;

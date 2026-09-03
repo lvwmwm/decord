@@ -1,16 +1,16 @@
-// Module ID: 6478
-// Function ID: 6479
+// Module ID: 6479
+// Function ID: 6480
 // Name: DiscordShopLockupLogo
-// Dependencies: [17, 21, 709, 4197, 6479, 2]
+// Dependencies: [17, 21, 709, 4197, 6480, 2]
 // Exports: DiscordShopLockupLogo
 
-// Module 6478 (DiscordShopLockupLogo)
+// Module 6479 (DiscordShopLockupLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6479 */;
+import metadataDefault from "metadata" /* 6480 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

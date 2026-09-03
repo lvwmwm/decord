@@ -1,13 +1,13 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16483
+// Function ID: 16484
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4470, 7632, 1492, 586, 4217, 4479, 1296, 2]
+// Dependencies: [4470, 7633, 1492, 586, 4217, 4479, 1296, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 16462 (useFullscreenPlaceholderCount)
+// Module 16483 (useFullscreenPlaceholderCount)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7632 */;
+import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7633 */;
 
 const require = arg1;
 let closure_5 = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };

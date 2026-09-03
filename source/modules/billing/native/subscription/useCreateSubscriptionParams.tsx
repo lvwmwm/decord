@@ -1,11 +1,11 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10805
+// Function ID: 10806
 // Name: useCreateSubscriptionParams
-// Dependencies: [19, 10802, 511, 2]
+// Dependencies: [19, 10806, 511, 2]
 // Exports: default
 
-// Module 10801 (useCreateSubscriptionParams)
-import useToggleOnIAPSuccessDefault from "useToggleOnIAPSuccess" /* 10802 */;
+// Module 10805 (useCreateSubscriptionParams)
+import useToggleOnIAPSuccessDefault from "useToggleOnIAPSuccess" /* 10806 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

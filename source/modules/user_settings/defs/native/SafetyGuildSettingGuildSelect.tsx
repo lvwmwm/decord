@@ -1,17 +1,17 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15710
+// Function ID: 15711
 // Name: MobileUserSettings
-// Dependencies: [19, 5389, 14565, 15697, 7893, 4445, 15698, 2008, 11288, 2]
+// Dependencies: [19, 5390, 14580, 15711, 7896, 4445, 15712, 2008, 11292, 2]
 
-// Module 15696 (MobileUserSettings)
+// Module 15710 (MobileUserSettings)
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "insertUnsortedGuilds" /* 5389 */;
-import closure_5 from "zustandStore" /* 14565 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15697 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
-import createToggle from "createToggle" /* 11288 */;
+import closure_4 from "insertUnsortedGuilds" /* 5390 */;
+import closure_5 from "zustandStore" /* 14580 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15711 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 ({ getSelectedGuildId: closure_6, GUILD_SELECT_ALL_SERVERS_OPTION_ID: error, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: c9 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
@@ -39,7 +39,7 @@ createToggle = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
-    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(15698, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(15712, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 createToggle = createToggle.createGuildSelector(createToggle);

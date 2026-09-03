@@ -1,10 +1,10 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16304
+// Function ID: 16305
 // Name: ICYMIInfoModal
-// Dependencies: [19, 21, 6016, 16286, 5503, 16287, 500, 4723, 6246, 1233, 8645, 16295, 16303, 11724, 14040, 2]
+// Dependencies: [19, 21, 6017, 16305, 5504, 16306, 500, 4724, 6247, 1233, 8649, 16314, 16322, 11729, 14056, 2]
 // Exports: default
 
-// Module 16285 (ICYMIInfoModal)
+// Module 16304 (ICYMIInfoModal)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -14,7 +14,7 @@ let result = require("set").fileFinishedImporting("modules/icymi/native/info_mod
 export default function ICYMIInfoModal(extendedOnboarding) {
   extendedOnboarding = extendedOnboarding.extendedOnboarding;
   const skipIntro = extendedOnboarding.skipIntro;
-  let obj = extendedOnboarding(6016);
+  let obj = extendedOnboarding(6017);
   let items = [extendedOnboarding, skipIntro];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj = {};
@@ -30,7 +30,7 @@ export default function ICYMIInfoModal(extendedOnboarding) {
     obj[extendedOnboarding(closure_1_2[3]).ICYMIInfoScreens.DEFAULT] = obj;
     const obj5 = extendedOnboarding(closure_1_2[4]);
     if (skipIntro) {
-      let headerCloseButton = obj5.getHeaderCloseButton(() => callback2(4723).popWithKey(callback(16286).ICYMI_INFO_MODAL_KEY));
+      let headerCloseButton = obj5.getHeaderCloseButton(() => callback2(4724).popWithKey(callback(16305).ICYMI_INFO_MODAL_KEY));
     } else {
       headerCloseButton = obj5.getHeaderBackButton();
     }
@@ -43,9 +43,9 @@ export default function ICYMIInfoModal(extendedOnboarding) {
           const intl = closure_1_0(closure_1_2[9]).intl;
           obj[0] = intl.string(closure_1_0(closure_1_2[9]).t["5Wxrcd"]);
           obj[1] = function onPress() {
-            const ICYMIAnalytics = callback(8645).ICYMIAnalytics;
+            const ICYMIAnalytics = callback(8649).ICYMIAnalytics;
             const result = ICYMIAnalytics.trackFeedOnboardingScreenSkipped({ location: "topics" });
-            let arr = callback2(4723);
+            let arr = callback2(4724);
             arr = arr.pop();
           };
           tmp = closure_1_4(closure_1_0(closure_1_2[8]).HeaderActionButton, obj);
@@ -53,7 +53,7 @@ export default function ICYMIInfoModal(extendedOnboarding) {
         return tmp;
       },
       render() {
-        return callback3(callback2(16295), {});
+        return callback3(callback2(16314), {});
       },
       impressionName: extendedOnboarding(closure_1_2[6]).ImpressionNames.ICYMI_ONBOARDING_TOPICS
     };
@@ -67,9 +67,9 @@ export default function ICYMIInfoModal(extendedOnboarding) {
           const intl = closure_1_0(closure_1_2[9]).intl;
           obj[0] = intl.string(closure_1_0(closure_1_2[9]).t["5Wxrcd"]);
           obj[1] = function onPress() {
-            const ICYMIAnalytics = callback(8645).ICYMIAnalytics;
+            const ICYMIAnalytics = callback(8649).ICYMIAnalytics;
             const result = ICYMIAnalytics.trackFeedOnboardingScreenSkipped({ location: "topics" });
-            let arr = callback2(4723);
+            let arr = callback2(4724);
             arr = arr.pop();
           };
           tmp = closure_1_4(closure_1_0(closure_1_2[8]).HeaderActionButton, obj);
@@ -77,7 +77,7 @@ export default function ICYMIInfoModal(extendedOnboarding) {
         return tmp;
       },
       render() {
-        return callback3(callback2(16295), {});
+        return callback3(callback2(16314), {});
       },
       impressionName: extendedOnboarding(closure_1_2[6]).ImpressionNames.ICYMI_ONBOARDING_TOPICS
     };
@@ -87,15 +87,15 @@ export default function ICYMIInfoModal(extendedOnboarding) {
       const intl = callback(1233).intl;
       obj[0] = intl.string(callback(1233).t["5Wxrcd"]);
       obj[1] = function onPress() {
-        const ICYMIAnalytics = callback(8645).ICYMIAnalytics;
+        const ICYMIAnalytics = callback(8649).ICYMIAnalytics;
         const result = ICYMIAnalytics.trackFeedOnboardingScreenSkipped({ location: "guilds" });
-        let arr = callback2(4723);
+        let arr = callback2(4724);
         arr = arr.pop();
       };
-      return callback3(callback(6246).HeaderActionButton, obj);
+      return callback3(callback(6247).HeaderActionButton, obj);
     };
     obj2[2] = function render() {
-      return callback3(callback2(16303), {});
+      return callback3(callback2(16322), {});
     };
     obj2[3] = extendedOnboarding(closure_1_2[6]).ImpressionNames.ICYMI_ONBOARDING_SELECT_GUILDS;
     obj[extendedOnboarding(closure_1_2[3]).ICYMIInfoScreens.JOIN_GUILDS] = obj2;
@@ -106,13 +106,13 @@ export default function ICYMIInfoModal(extendedOnboarding) {
     obj = { screens: null, steps: null, initialRouteName: null };
     obj[0] = navigatorScreens;
     obj[1] = tmp4;
-    let ICYMIInfoScreens = tmp(16286).ICYMIInfoScreens;
+    let ICYMIInfoScreens = tmp(16305).ICYMIInfoScreens;
     obj[2] = skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT;
-    tmp5(tmp(14040).StepModal, obj);
+    tmp5(tmp(14056).StepModal, obj);
   } else {
     obj = { screens: null, initialRouteName: null };
     obj[0] = navigatorScreens;
-    obj[1] = tmp(16286).ICYMIInfoScreens.DEFAULT;
-    return tmp5(tmp(11724).Modal, obj);
+    obj[1] = tmp(16305).ICYMIInfoScreens.DEFAULT;
+    return tmp5(tmp(11729).Modal, obj);
   }
 };

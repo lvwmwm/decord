@@ -1,11 +1,11 @@
-// Module ID: 12400
-// Function ID: 12401
-// Dependencies: [19, 17, 9547, 21, 4478, 709, 1627, 5602, 1492, 12401, 12402, 12403, 4217, 2]
+// Module ID: 12412
+// Function ID: 12413
+// Dependencies: [19, 17, 9551, 21, 4478, 709, 1627, 5603, 1492, 12413, 12414, 12415, 4217, 2]
 
-// Module 12400
+// Module 12412
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
-import { useChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 9547 */;
+import { useChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 9551 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

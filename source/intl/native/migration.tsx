@@ -1,10 +1,10 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14066
+// Function ID: 14067
 // Name: IntlLink
 // Dependencies: [19, 21, 4478, 709, 1355, 4190, 4192, 1296, 2]
 // Exports: IntlLink
 
-// Module 14050 (IntlLink)
+// Module 14066 (IntlLink)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

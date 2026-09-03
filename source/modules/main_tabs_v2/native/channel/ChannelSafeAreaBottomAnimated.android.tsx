@@ -1,11 +1,11 @@
-// Module ID: 12406
-// Function ID: 12407
-// Dependencies: [19, 17, 21, 11209, 11214, 4217, 2]
+// Module ID: 12418
+// Function ID: 12419
+// Dependencies: [19, 17, 21, 11213, 11218, 4217, 2]
 
-// Module 12406
+// Module 12418
 import _modDef4217 from "module_4217" /* 4217 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11209 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11214 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11213 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11218 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

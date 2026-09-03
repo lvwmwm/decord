@@ -1,10 +1,10 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8746
+// Function ID: 8747
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4478, 709, 5607, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5608, 4474, 2]
 // Exports: default
 
-// Module 8742 (SafetyTipsRow)
+// Module 8746 (SafetyTipsRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -23,5 +23,5 @@ export default function SafetyTipsRow(arg0) {
   let _require;
   ({ index, tip, description, end } = arg0);
   _require = callback();
-  return jsx(_require(5607).TableRow, { icon: jsx((children) => closure_1_3(closure_1_2, { style: lib.indexContainer, children: closure_1_3(lib(closure_1_1[6]).Text, { variant: "heading-md/semibold", color: "text-brand", children: children.index }) }), { index }), label: tip, subLabel: description, end });
+  return jsx(_require(5608).TableRow, { icon: jsx((children) => closure_1_3(closure_1_2, { style: lib.indexContainer, children: closure_1_3(lib(closure_1_1[6]).Text, { variant: "heading-md/semibold", color: "text-brand", children: children.index }) }), { index }), label: tip, subLabel: description, end });
 };

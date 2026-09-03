@@ -1,15 +1,15 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 17429
+// Function ID: 17430
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7862, 21, 709, 4478, 17410, 12267, 4926, 4474, 1233, 17411, 17412, 13877, 6011, 2]
+// Dependencies: [19, 17, 7865, 21, 709, 4478, 17430, 12279, 4927, 4474, 1233, 17431, 17432, 13893, 6012, 2]
 // Exports: default
 
-// Module 17409 (GuildSettingsServerTagBadgeGrid)
+// Module 17429 (GuildSettingsServerTagBadgeGrid)
 import ThemesDefault from "Themes" /* 709 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17410 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17430 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { GuildTagBadgeSize } from "items" /* 7862 */;
+import { GuildTagBadgeSize } from "items" /* 7865 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -78,11 +78,11 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     items2[1] = tmp8(tmp7(4474).Text, obj3);
     const obj4 = { size: "md", color: null };
     obj4[1] = ThemesDefault.colors.ICON_SUBTLE;
-    items2[2] = tmp8(tmp7(6011).ChevronSmallRightIcon, obj4);
+    items2[2] = tmp8(tmp7(6012).ChevronSmallRightIcon, obj4);
     obj1[4] = items2;
     tmp6Result = tmp6(closure_4, obj1);
   }
   items1[2] = tmp6Result;
   obj[1] = items1;
-  return closure_8(guildId(4926).Stack, obj);
+  return closure_8(guildId(4927).Stack, obj);
 };

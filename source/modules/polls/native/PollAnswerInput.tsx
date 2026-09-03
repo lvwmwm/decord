@@ -1,16 +1,16 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 12021
+// Function ID: 12022
 // Name: ImageInput
-// Dependencies: [19, 17, 1386, 4854, 7583, 1924, 21, 4478, 709, 12016, 1233, 7515, 5076, 1296, 9112, 8171, 4445, 12017, 2008, 8238, 8372, 4437, 12020, 2]
+// Dependencies: [19, 17, 1386, 4855, 7584, 1924, 21, 4478, 709, 12022, 1233, 7516, 5077, 1296, 9116, 8175, 4445, 12023, 2008, 8242, 8376, 4437, 12026, 2]
 // Exports: default
 
-// Module 12015 (ImageInput)
+// Module 12021 (ImageInput)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import { DraftType } from "handleChanged" /* 4854 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7583 */;
+import { DraftType } from "handleChanged" /* 4855 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7584 */;
 import { EmojiIntention } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

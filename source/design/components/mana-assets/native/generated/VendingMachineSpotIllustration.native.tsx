@@ -1,14 +1,14 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 7115
+// Function ID: 7116
 // Name: VendingMachineSpotIllustration
-// Dependencies: [21, 5501, 7115, 2]
+// Dependencies: [21, 5502, 7116, 2]
 // Exports: VendingMachineSpotIllustration
 
-// Module 7114 (VendingMachineSpotIllustration)
+// Module 7115 (VendingMachineSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 7115 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 7116 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VendingMachineSpotIllustration.native.tsx");

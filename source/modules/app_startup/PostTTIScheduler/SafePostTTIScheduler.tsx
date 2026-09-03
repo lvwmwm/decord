@@ -1,10 +1,10 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7421
+// Function ID: 7422
 // Name: waitSafelyForPostTTI
-// Dependencies: [7421, 2]
+// Dependencies: [7422, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 7420 (waitSafelyForPostTTI)
+// Module 7421 (waitSafelyForPostTTI)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");

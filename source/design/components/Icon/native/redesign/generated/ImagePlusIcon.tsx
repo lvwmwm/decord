@@ -1,14 +1,14 @@
-// Module ID: 17551
-// Function ID: 17552
+// Module ID: 17571
+// Function ID: 17572
 // Name: ImagePlusIcon
-// Dependencies: [19, 21, 709, 4196, 17552, 2]
+// Dependencies: [19, 21, 709, 4196, 17572, 2]
 // Exports: ImagePlusIcon
 
-// Module 17551 (ImagePlusIcon)
+// Module 17571 (ImagePlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 17552 */;
+import registerAsset from "registerAsset" /* 17572 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

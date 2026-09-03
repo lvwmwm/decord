@@ -1,10 +1,10 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17728
+// Function ID: 17729
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4478, 709, 1498, 17685, 17689, 4474, 1233, 4926, 4928, 6060, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4478, 709, 1498, 17709, 17713, 4474, 1233, 4927, 4929, 6061, 2]
 // Exports: default
 
-// Module 17704 (ErrorScreen)
+// Module 17728 (ErrorScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;

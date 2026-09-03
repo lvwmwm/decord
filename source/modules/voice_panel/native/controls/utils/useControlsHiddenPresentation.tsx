@@ -1,12 +1,12 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17014
+// Function ID: 17015
 // Name: useControlsHiddenPresentation
-// Dependencies: [12063, 4204, 4217, 4927, 2]
+// Dependencies: [12069, 4204, 4217, 4928, 2]
 // Exports: default
 
-// Module 16994 (useControlsHiddenPresentation)
+// Module 17014 (useControlsHiddenPresentation)
 import set from "set" /* 2 */;
-import VoicePanelModes from "VoicePanelModes" /* 12063 */;
+import VoicePanelModes from "VoicePanelModes" /* 12069 */;
 
 VoicePanelModes = VoicePanelModes.VoicePanelModes;
 let obj = {};
@@ -73,7 +73,7 @@ export default function useControlsHiddenPresentation(mode, wrapperSpecs) {
     }
   }
   const obj5 = _require(4217);
-  S.__closure = { withSpring: _require(4927).withSpring, yeeted: tmp, wrapperSpecs, HIDDEN_OPACITY_PHYSICS: closure_3, cleanUp, runOnJS: _require(4217).runOnJS };
+  S.__closure = { withSpring: _require(4928).withSpring, yeeted: tmp, wrapperSpecs, HIDDEN_OPACITY_PHYSICS: closure_3, cleanUp, runOnJS: _require(4217).runOnJS };
   S.__workletHash = 13662769817707;
   S.__initData = closure_5;
   obj[1] = obj5.useAnimatedStyle(S);

@@ -1,10 +1,10 @@
-// Module ID: 7934
-// Function ID: 7935
+// Module ID: 7937
+// Function ID: 7938
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
 // Dependencies: [502, 1233, 503, 2]
 // Exports: getTimeframes
 
-// Module 7934 (GUILD_REPORT_RAID_MOBILE_KEY)
+// Module 7937 (GUILD_REPORT_RAID_MOBILE_KEY)
 import set from "set" /* 2 */;
 import sum from "sum" /* 502 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

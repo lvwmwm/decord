@@ -1,10 +1,10 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9568
+// Function ID: 9569
 // Name: useCanCurrentUserSpeakInChannel
 // Dependencies: [1215, 586, 4668, 2]
 // Exports: default
 
-// Module 9564 (useCanCurrentUserSpeakInChannel)
+// Module 9568 (useCanCurrentUserSpeakInChannel)
 import initialize from "initialize" /* 586 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
 import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4668 */;

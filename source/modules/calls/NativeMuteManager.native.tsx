@@ -1,12 +1,12 @@
-// Module ID: 13694
-// Function ID: 13695
+// Module ID: 13709
+// Function ID: 13710
 // Name: nativeMuteChanged
-// Dependencies: [9797, 4529, 3, 4362, 706, 9803, 4531, 2]
+// Dependencies: [9801, 4529, 3, 4362, 706, 9807, 4531, 2]
 
-// Module 13694 (nativeMuteChanged)
+// Module 13709 (nativeMuteChanged)
 import timestampDefault from "timestamp" /* 3 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9803 */;
-import importDefaultResult from "handleAudioRouteChanged" /* 9797 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9807 */;
+import importDefaultResult from "handleAudioRouteChanged" /* 9801 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 import importDefaultResult1 from "dispatcher" /* 706 */;
 

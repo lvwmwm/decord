@@ -1,12 +1,12 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8642
+// Function ID: 8643
 // Name: apexExperiment
-// Dependencies: [8639, 1467, 8641, 2]
+// Dependencies: [8643, 1467, 8645, 2]
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 8638 (apexExperiment)
-import useLabFeatureDefault from "useLabFeature" /* 8641 */;
-import closure_2 from "getUserAgnosticState" /* 8639 */;
+// Module 8642 (apexExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 8645 */;
+import closure_2 from "getUserAgnosticState" /* 8643 */;
 import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const hide_icymi_tab = "hide_icymi_tab";

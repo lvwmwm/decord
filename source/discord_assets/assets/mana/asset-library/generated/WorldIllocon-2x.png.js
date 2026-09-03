@@ -1,9 +1,9 @@
-// Module ID: 7141
-// Function ID: 7142
+// Module ID: 7142
+// Function ID: 7143
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7141 (metadata)
+// Module 7142 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WorldIllocon-2x.png.js");

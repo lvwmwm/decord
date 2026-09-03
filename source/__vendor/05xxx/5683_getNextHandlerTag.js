@@ -1,0 +1,11 @@
+// Module ID: 5683
+// Function ID: 5684
+// Name: getNextHandlerTag
+// Dependencies: []
+
+// Module 5683 (getNextHandlerTag)
+let c0 = 1;
+arg5.getNextHandlerTag = function getNextHandlerTag() {
+  closure_0 = tmp + 1;
+  return +closure_0;
+};

@@ -1,19 +1,19 @@
-// Module ID: 10787
-// Function ID: 10788
+// Module ID: 10791
+// Function ID: 10792
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6082, 1923, 673, 675, 8569, 21, 709, 4478, 8902, 10678, 10788, 10792, 5961, 5981, 695, 8911, 10739, 10793, 4333, 4194, 1233, 7295, 10962, 4322, 4474, 10997, 11005, 2]
+// Dependencies: [5, 19, 17, 6083, 1923, 673, 675, 8573, 21, 709, 4478, 8906, 10682, 10792, 10796, 5962, 5982, 695, 8915, 10743, 10797, 4333, 4194, 1233, 7296, 10966, 4322, 4474, 11001, 11009, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10787 (PremiumGiftWishlistBanner)
+// Module 10791 (PremiumGiftWishlistBanner)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { WishlistRecommendationReason as closure_7 } from "fromServer" /* 6082 */;
+import { WishlistRecommendationReason as closure_7 } from "fromServer" /* 6083 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import ME from "ME" /* 673 */;
 import { CollectiblesMobileShopScreen as closure_12 } from "items" /* 675 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

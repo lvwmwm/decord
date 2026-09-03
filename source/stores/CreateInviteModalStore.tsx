@@ -1,17 +1,17 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9936
+// Function ID: 9937
 // Name: updateWithLatestInvite
-// Dependencies: [1386, 1908, 8665, 673, 9933, 9935, 38, 586, 706, 2]
+// Dependencies: [1386, 1908, 8669, 673, 9937, 9939, 38, 586, 706, 2]
 
-// Module 9932 (updateWithLatestInvite)
+// Module 9936 (updateWithLatestInvite)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isGuildMemberDefault from "isGuildMember" /* 9933 */;
-import getDefaultInviteExpiration from "getDefaultInviteExpiration" /* 9935 */;
+import isGuildMemberDefault from "isGuildMember" /* 9937 */;
+import getDefaultInviteExpiration from "getDefaultInviteExpiration" /* 9939 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "map" /* 8665 */;
+import closure_11 from "map" /* 8669 */;
 import { FormStates } from "ME" /* 673 */;
 
 require = arg1;

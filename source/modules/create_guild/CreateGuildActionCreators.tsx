@@ -1,9 +1,9 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 12116
+// Function ID: 12117
 // Name: _createGuildFromTemplate
-// Dependencies: [5, 673, 4713, 500, 4376, 2]
+// Dependencies: [5, 673, 4714, 500, 4376, 2]
 
-// Module 12110 (_createGuildFromTemplate)
+// Module 12116 (_createGuildFromTemplate)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -67,7 +67,7 @@ function _createGuildFromTemplate() {
               c9 = 2;
               c10 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = callback2(4713).post(obj1);
+              obj5[0] = callback2(4714).post(obj1);
               return obj5;
             }
           } else if (1 === tmp7) {

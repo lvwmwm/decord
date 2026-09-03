@@ -1,11 +1,11 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10196
+// Function ID: 10197
 // Name: isChannelCurrentlyVisible
-// Dependencies: [6135, 1980, 4299, 2]
+// Dependencies: [6136, 1980, 4299, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 10192 (isChannelCurrentlyVisible)
-import closure_0 from "handlePermissionsChange" /* 6135 */;
+// Module 10196 (isChannelCurrentlyVisible)
+import closure_0 from "handlePermissionsChange" /* 6136 */;
 import closure_1 from "handleConnectionOpen" /* 1980 */;
 import closure_2 from "handleConnectionOpen" /* 4299 */;
 

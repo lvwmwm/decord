@@ -1,12 +1,12 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11615
+// Function ID: 11616
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
-// Dependencies: [4145, 7204, 2]
+// Dependencies: [4145, 7205, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 11610 (canOpenPremiumPlanDirectlyForReferralTrial)
+// Module 11615 (canOpenPremiumPlanDirectlyForReferralTrial)
 import closure_0 from "reset" /* 4145 */;
-import closure_1 from "emitChanges" /* 7204 */;
+import closure_1 from "emitChanges" /* 7205 */;
 
 let result = require("set").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageUtils.tsx");
 

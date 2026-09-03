@@ -1,10 +1,10 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 9142
+// Function ID: 9143
 // Name: PortalKeyboardFooterIOS
 // Dependencies: [19, 21, 4478, 709, 1627, 1641, 4342, 4217, 1625, 688, 4347, 2]
 // Exports: default
 
-// Module 9138 (PortalKeyboardFooterIOS)
+// Module 9142 (PortalKeyboardFooterIOS)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

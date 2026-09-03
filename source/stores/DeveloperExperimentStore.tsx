@@ -1,9 +1,9 @@
-// Module ID: 7475
-// Function ID: 7476
+// Module ID: 7476
+// Function ID: 7477
 // Name: init
 // Dependencies: [1908, 1921, 4392, 1933, 1932, 586, 706, 2]
 
-// Module 7475 (init)
+// Module 7476 (init)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import validatePremiumType from "validatePremiumType" /* 1932 */;

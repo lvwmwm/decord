@@ -1,14 +1,14 @@
-// Module ID: 11885
-// Function ID: 11886
+// Module ID: 11891
+// Function ID: 11892
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4478, 709, 11849, 5607, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 11855, 5608, 2]
 // Exports: default
 
-// Module 11885 (PlaceholderAppRow)
+// Module 11891 (PlaceholderAppRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import usePlaceholderWidth from "usePlaceholderWidth" /* 11849 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import usePlaceholderWidth from "usePlaceholderWidth" /* 11855 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

@@ -1,12 +1,12 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7298
+// Function ID: 7299
 // Name: fromServer
-// Dependencies: [7298, 7305, 1949, 7307, 7308, 2]
+// Dependencies: [7299, 7306, 1949, 7308, 7309, 2]
 
-// Module 7297 (fromServer)
-import fromServerDefault from "fromServer" /* 7305 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7308 */;
-import closure_2 from "fromServer" /* 7298 */;
+// Module 7298 (fromServer)
+import fromServerDefault from "fromServer" /* 7306 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
+import closure_2 from "fromServer" /* 7299 */;
 
 require = arg1;
 fromServerDefault;

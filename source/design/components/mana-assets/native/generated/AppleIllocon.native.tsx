@@ -1,14 +1,14 @@
-// Module ID: 6318
-// Function ID: 6319
+// Module ID: 6319
+// Function ID: 6320
 // Name: AppleIllocon
-// Dependencies: [21, 5501, 6319, 2]
+// Dependencies: [21, 5502, 6320, 2]
 // Exports: AppleIllocon
 
-// Module 6318 (AppleIllocon)
+// Module 6319 (AppleIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6319 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6320 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");

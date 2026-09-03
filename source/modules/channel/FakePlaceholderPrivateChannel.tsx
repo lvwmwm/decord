@@ -1,9 +1,9 @@
-// Module ID: 6076
-// Function ID: 6077
+// Module ID: 6077
+// Function ID: 6078
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
 // Dependencies: [1390, 673, 2]
 
-// Module 6076 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
+// Module 6077 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;

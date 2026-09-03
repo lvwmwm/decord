@@ -1,10 +1,10 @@
-// Module ID: 9729
-// Function ID: 9730
+// Module ID: 9733
+// Function ID: 9734
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 9726, 4445, 5997, 5629, 1233, 7701, 7702, 9730, 9728, 2]
+// Dependencies: [19, 21, 9730, 4445, 5998, 5630, 1233, 7704, 7705, 9734, 9732, 2]
 // Exports: default
 
-// Module 9729 (AppChannelApplicationActionSheet)
+// Module 9733 (AppChannelApplicationActionSheet)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/app_channels/native
 export default function AppChannelApplicationActionSheet(arg0) {
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(9726);
+  let obj = onChange(9730);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = React.useCallback((arg0) => {
@@ -25,7 +25,7 @@ export default function AppChannelApplicationActionSheet(arg0) {
   obj = { title: null };
   const intl = onChange(1233).intl;
   obj[0] = intl.string(onChange(1233).t.F2FMFR);
-  obj[0] = jsx(onChange(5629).BottomSheetTitleHeader, { title: null });
+  obj[0] = jsx(onChange(5630).BottomSheetTitleHeader, { title: null });
   obj1 = { accessibilityLabel: null, value: null, onChange: null, hasIcons: true, children: null };
   const intl2 = onChange(1233).intl;
   obj1[0] = intl2.string(onChange(1233).t.F2FMFR);
@@ -36,9 +36,9 @@ export default function AppChannelApplicationActionSheet(arg0) {
   obj1[2] = callback;
   obj1[4] = options.map((arg0) => {
     ({ application, status } = arg0);
-    return callback2(onChange(7702).TableRadioRow, { value: application.id, label: application.name, subLabel: callback(9730)(status), disabled: !status.supported, icon: callback2(callback(9728), { application }) }, application.id);
+    return callback2(onChange(7705).TableRadioRow, { value: application.id, label: application.name, subLabel: callback(9734)(status), disabled: !status.supported, icon: callback2(callback(9732), { application }) }, application.id);
   });
-  obj[1] = jsx(onChange(7701).TableRadioGroup, { accessibilityLabel: null, value: null, onChange: null, hasIcons: true, children: null });
-  return jsx(onChange(5997).ActionSheet, { title: null });
+  obj[1] = jsx(onChange(7704).TableRadioGroup, { accessibilityLabel: null, value: null, onChange: null, hasIcons: true, children: null });
+  return jsx(onChange(5998).ActionSheet, { title: null });
 };
 export const APP_CHANNEL_APPLICATION_ACTION_SHEET_KEY = "AppChannelApplicationActionSheet";

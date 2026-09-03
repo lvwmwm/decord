@@ -1,17 +1,17 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12017
+// Function ID: 12018
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 4478, 709, 8751, 9182, 4474, 1233, 8984, 4928, 2]
+// Dependencies: [17, 21, 4478, 709, 8755, 9186, 4474, 1233, 8988, 4929, 2]
 // Exports: default
 
-// Module 12011 (NitroLimitUpsellBar)
+// Module 12017 (NitroLimitUpsellBar)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import WarningIcon from "WarningIcon" /* 8751 */;
-import _modDef8984 from "module_8984" /* 8984 */;
-import registerAssetDefault from "registerAsset" /* 9182 */;
+import WarningIcon from "WarningIcon" /* 8755 */;
+import _modDef8988 from "module_8988" /* 8988 */;
+import registerAssetDefault from "registerAsset" /* 9186 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -52,9 +52,9 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   obj1[3] = items1;
   items[1] = closure_6(Text.Text, obj1);
   if (isAtLimit) {
-    let Button = _modDef8984;
+    let Button = _modDef8988;
   } else {
-    Button = tmp12(4928).Button;
+    Button = tmp12(4929).Button;
   }
   const obj3 = { size: "sm", text: null, onPress: null, loading: null };
   const intl2 = tmp12(1233).intl;

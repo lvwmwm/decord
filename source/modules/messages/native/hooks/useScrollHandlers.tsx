@@ -1,13 +1,13 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11367
+// Function ID: 11368
 // Name: useScrollHandlers
-// Dependencies: [19, 9547, 3, 4915, 10945, 702, 11129, 11131, 5398, 2]
+// Dependencies: [19, 9551, 3, 4916, 10949, 702, 11133, 11135, 5399, 2]
 // Exports: default
 
-// Module 11362 (useScrollHandlers)
+// Module 11367 (useScrollHandlers)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "noop" /* 19 */;
-import updateChatInputContainerHeight from "updateChatInputContainerHeight" /* 9547 */;
+import updateChatInputContainerHeight from "updateChatInputContainerHeight" /* 9551 */;
 
 const require = arg1;
 ({ updateIsAtBottom: c4, updateShouldShowJumpToPresentButton: c5 } = updateChatInputContainerHeight);

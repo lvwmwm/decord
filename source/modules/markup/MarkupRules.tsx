@@ -1,28 +1,28 @@
-// Module ID: 4951
-// Function ID: 4952
+// Module ID: 4952
+// Function ID: 4953
 // Name: parseLink
-// Dependencies: [32, 850, 1386, 1984, 1908, 1921, 673, 4952, 4953, 4954, 1233, 4957, 1987, 4673, 4322, 4192, 4958, 4959, 4962, 4134, 4964, 4975, 4976, 4977, 4978, 4979, 4950, 4980, 12, 2]
+// Dependencies: [32, 850, 1386, 1984, 1908, 1921, 673, 4953, 4954, 4955, 1233, 4958, 1987, 4673, 4322, 4192, 4959, 4960, 4963, 4134, 4965, 4976, 4977, 4978, 4979, 4980, 4951, 4981, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 4951 (parseLink)
+// Module 4952 (parseLink)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1987 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
-import validateContentTypes from "validateContentTypes" /* 4954 */;
-import validateContentTypesDefault from "validateContentTypes" /* 4954 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4957 */;
-import textRegexpDefault from "textRegexp" /* 4958 */;
-import getChannelDefault from "getChannel" /* 4959 */;
-import regExpDefault from "regExp" /* 4962 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 4964 */;
-import getSoundmojiASTFromStringDefault from "getSoundmojiASTFromString" /* 4964 */;
-import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 4975 */;
-import staticRouteToTranslation from "staticRouteToTranslation" /* 4976 */;
-import matchDefault from "match" /* 4977 */;
-import regExpDefault2 from "regExp" /* 4978 */;
-import _modDef4979 from "module_4979" /* 4979 */;
-import matchDefault2 from "match" /* 4980 */;
+import validateContentTypes from "validateContentTypes" /* 4955 */;
+import validateContentTypesDefault from "validateContentTypes" /* 4955 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4958 */;
+import textRegexpDefault from "textRegexp" /* 4959 */;
+import getChannelDefault from "getChannel" /* 4960 */;
+import regExpDefault from "regExp" /* 4963 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 4965 */;
+import getSoundmojiASTFromStringDefault from "getSoundmojiASTFromString" /* 4965 */;
+import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 4976 */;
+import staticRouteToTranslation from "staticRouteToTranslation" /* 4977 */;
+import matchDefault from "match" /* 4978 */;
+import regExpDefault2 from "regExp" /* 4979 */;
+import _modDef4980 from "module_4980" /* 4980 */;
+import matchDefault2 from "match" /* 4981 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "_toArray" /* 850 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
@@ -30,10 +30,10 @@ import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4952 */;
-import { GAME_MENTION_RAW_RE } from "regExp" /* 4953 */;
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4953 */;
+import { GAME_MENTION_RAW_RE } from "regExp" /* 4954 */;
 import importDefaultResult from "t" /* 4192 */;
-import importDefaultResult3 from "combineMarkupRules" /* 4950 */;
+import importDefaultResult3 from "combineMarkupRules" /* 4951 */;
 import importDefaultResult4 from "apply" /* 12 */;
 
 require = arg1;
@@ -879,7 +879,7 @@ obj[33] = {
 };
 obj[34] = matchDefault;
 obj[35] = regExpDefault2;
-obj[36] = _modDef4979;
+obj[36] = _modDef4980;
 let items = [obj, ];
 const obj20 = {
   order: textRegexpDefault.order,

@@ -1,18 +1,18 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12353
+// Function ID: 12354
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4365, 21, 4478, 709, 8013, 12342, 8243, 4474, 2]
+// Dependencies: [17, 4365, 21, 4478, 709, 8016, 12354, 8247, 4474, 2]
 // Exports: default
 
-// Module 12341 (GuildPowerupsBoostInfo)
+// Module 12353 (GuildPowerupsBoostInfo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 import Text from "Text" /* 4474 */;
-import apexExperiment from "apexExperiment" /* 8013 */;
-import BoostGemIcon from "BoostGemIcon" /* 8243 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12342 */;
+import apexExperiment from "apexExperiment" /* 8016 */;
+import BoostGemIcon from "BoostGemIcon" /* 8247 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12354 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

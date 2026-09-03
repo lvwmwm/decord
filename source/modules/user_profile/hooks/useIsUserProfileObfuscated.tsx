@@ -1,11 +1,11 @@
-// Module ID: 9245
-// Function ID: 9246
+// Module ID: 9249
+// Function ID: 9250
 // Name: useIsUserProfileObfuscated
-// Dependencies: [7375, 586, 2]
+// Dependencies: [7376, 586, 2]
 // Exports: default
 
-// Module 9245 (useIsUserProfileObfuscated)
-import closure_2 from "createUserWidgetFromServer" /* 7375 */;
+// Module 9249 (useIsUserProfileObfuscated)
+import closure_2 from "createUserWidgetFromServer" /* 7376 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");

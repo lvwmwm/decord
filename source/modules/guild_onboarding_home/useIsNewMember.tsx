@@ -1,10 +1,10 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 6079
+// Function ID: 6080
 // Name: useIsNewMember
 // Dependencies: [1983, 1991, 4108, 1398, 684, 586, 2]
 // Exports: default, getIsNewMember
 
-// Module 6078 (useIsNewMember)
+// Module 6079 (useIsNewMember)
 import setDefault from "set" /* 684 */;
 import hasFlag from "hasFlag" /* 1398 */;
 import closure_3 from "initialize" /* 1983 */;

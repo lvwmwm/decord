@@ -1,9 +1,9 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7531
+// Function ID: 7532
 // Name: handleSummarizeThreadFinish
 // Dependencies: [586, 706, 2]
 
-// Module 7530 (handleSummarizeThreadFinish)
+// Module 7531 (handleSummarizeThreadFinish)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

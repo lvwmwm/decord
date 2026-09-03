@@ -1,16 +1,16 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14472
+// Function ID: 14473
 // Name: NativeModules
-// Dependencies: [5, 19, 17, 7475, 7474, 21, 1234, 14457, 14458, 2008, 586, 14452, 15747, 2]
+// Dependencies: [5, 19, 17, 7476, 7475, 21, 1234, 14473, 14474, 2008, 586, 14468, 15763, 2]
 // Exports: default
 
-// Module 14456 (NativeModules)
-import enforcingDefault from "enforcing" /* 14457 */;
+// Module 14472 (NativeModules)
+import enforcingDefault from "enforcing" /* 14473 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "init" /* 7475 */;
-import closure_6 from "initialize" /* 7474 */;
+import closure_5 from "init" /* 7476 */;
+import closure_6 from "initialize" /* 7475 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
 
@@ -102,10 +102,10 @@ export default function DevToolsLazy() {
     }
   });
   const obj2 = stateFromStores(586);
-  const keyCommands = stateFromStores(14452).useKeyCommands(stateFromStores ? items : []);
+  const keyCommands = stateFromStores(14468).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(15747).default, {});
+      return jsx(tmp(15763).default, {});
     }
   }
   return null;

@@ -1,14 +1,14 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15051
+// Function ID: 15052
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 4145, 15030, 15031, 586, 4837, 2]
+// Dependencies: [19, 4145, 15045, 15046, 586, 4838, 2]
 // Exports: default
 
-// Module 15036 (useActiveGuildSubscriptions)
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15031 */;
+// Module 15051 (useActiveGuildSubscriptions)
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15046 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "reset" /* 4145 */;
-import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
+import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 15045 */;
 
 const require = arg1;
 let closure_7 = [];

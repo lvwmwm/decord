@@ -1,21 +1,21 @@
-// Module ID: 12536
-// Function ID: 12537
+// Module ID: 12548
+// Function ID: 12549
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 5229, 1390, 1386, 1908, 4569, 4130, 1921, 673, 1393, 1383, 21, 4478, 5469, 709, 586, 1233, 4981, 4674, 9253, 12537, 12538, 1296, 12539, 12540, 5501, 12541, 9144, 5076, 4474, 4322, 8116, 9081, 4298, 1372, 10639, 12542, 2]
+// Dependencies: [19, 17, 5230, 1390, 1386, 1908, 4569, 4130, 1921, 673, 1393, 1383, 21, 4478, 5470, 709, 586, 1233, 4982, 4674, 9257, 12549, 12550, 1296, 12551, 12552, 5502, 12553, 9148, 5077, 4474, 4322, 8119, 9085, 4298, 1372, 10643, 12554, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12536 (ChannelTitleContent)
+// Module 12548 (ChannelTitleContent)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import PressableBase from "PressableBase" /* 5076 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9253 */;
+import PressableBase from "PressableBase" /* 5077 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9257 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_handleConnectionOpen" /* 5229 */;
+import closure_5 from "_handleConnectionOpen" /* 5230 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
@@ -27,7 +27,7 @@ import { StaticChannelRoute } from "set" /* 1393 */;
 import ContentDismissActionType from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 
 require = arg1;
 function ChannelTitleContent(arg0) {
@@ -420,7 +420,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let tmp2Result = tmp2(4981);
+    let tmp2Result = tmp2(4982);
     channelIcon = tmp2Result.getChannelIcon(stateFromStores);
   }
   let channelName = null;

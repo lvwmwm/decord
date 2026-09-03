@@ -1,12 +1,12 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13659
+// Function ID: 13660
 // Name: _initialize
-// Dependencies: [1991, 1908, 4299, 1921, 673, 4108, 592, 4322, 5494, 4333, 4332, 1398, 4445, 13645, 2008, 2]
+// Dependencies: [1991, 1908, 4299, 1921, 673, 4108, 592, 4322, 5495, 4333, 4332, 1398, 4445, 13660, 2008, 2]
 
-// Module 13644 (_initialize)
+// Module 13659 (_initialize)
 import Storage3 from "Storage" /* 592 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import initializeDefault from "initialize" /* 5494 */;
+import initializeDefault from "initialize" /* 5495 */;
 import closure_3 from "trackCommunicationDisabled" /* 1991 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "handleConnectionOpen" /* 4299 */;

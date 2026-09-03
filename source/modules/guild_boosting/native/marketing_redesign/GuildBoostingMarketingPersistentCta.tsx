@@ -1,10 +1,10 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7154
+// Function ID: 7155
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4470, 673, 21, 4478, 709, 644, 4217, 4927, 4940, 6012, 4474, 7154, 2]
+// Dependencies: [19, 17, 4470, 673, 21, 4478, 709, 644, 4217, 4928, 4941, 6013, 4474, 7155, 2]
 // Exports: default
 
-// Module 7153 (GuildBoostingMarketingPersistentCta)
+// Module 7154 (GuildBoostingMarketingPersistentCta)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -60,7 +60,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
     obj[1] = isVisible(closure_1_2[9]).withSpring(num3, closure_1_8);
     return obj;
   };
-  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4927).withSpring, isVisible, SPRING_CONFIG: closure_8 };
+  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4928).withSpring, isVisible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14370895185277;
   fn.__initData = closure_10;
@@ -75,14 +75,14 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const obj2 = { style: tmp.innerWraper, children: null };
   const obj3 = { style: tmp.guildInfoContainer, children: null };
   const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: null };
-  const tmp4 = stateFromStores(4940);
-  obj4[3] = isVisible(6012).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(6012), obj4), callback(isVisible(4474).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
+  const tmp4 = stateFromStores(4941);
+  obj4[3] = isVisible(6013).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(6013), obj4), callback(isVisible(4474).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
   obj3[1] = items3;
   const items4 = [callback2(View, obj3), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  const tmp5 = stateFromStores(6012);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7154), obj7) });
+  const tmp5 = stateFromStores(6013);
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7155), obj7) });
   obj2[1] = items4;
   obj1[6] = callback2(View, obj2);
   obj[1] = callback(tmp4, obj1);

@@ -1,14 +1,14 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11194
+// Function ID: 11195
 // Name: items
-// Dependencies: [19, 17, 21, 11191, 11192, 11193, 11194, 11195, 11196, 1233, 4478, 4413, 1362, 7194, 12, 4947, 4474, 2]
+// Dependencies: [19, 17, 21, 11195, 11196, 11197, 11198, 11199, 11200, 1233, 4478, 4413, 1362, 7195, 12, 4948, 4474, 2]
 // Exports: default
 
-// Module 11190 (items)
+// Module 11194 (items)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import componentDidMountDefault from "componentDidMount" /* 4947 */;
+import componentDidMountDefault from "componentDidMount" /* 4948 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -68,10 +68,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   let obj = _require(1362);
   const tmp6 = obj.isThemeDark(useThemeDefault()) ? items1 : items;
   _require = tmp6;
-  let tmp5Result = tmp5(7194);
+  let tmp5Result = tmp5(7195);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => closure_1_1(closure_1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(7194);
+  tmp5Result = tmp5(7195);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;

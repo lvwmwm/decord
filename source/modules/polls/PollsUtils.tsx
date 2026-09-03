@@ -1,26 +1,26 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7516
+// Function ID: 7517
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1386, 7516, 4735, 4120, 4130, 7583, 673, 511, 586, 6076, 684, 1902, 4746, 1233, 7517, 12, 4673, 2]
+// Dependencies: [1386, 7517, 4736, 4120, 4130, 7584, 673, 511, 586, 6077, 684, 1902, 4747, 1233, 7518, 12, 4673, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7515 (getSampleOfVoterUsernamesForAnswer)
+// Module 7516 (getSampleOfVoterUsernamesForAnswer)
 import v1 from "v1" /* 511 */;
 import setDefault from "set" /* 684 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4746 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4747 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reactionKey" /* 7516 */;
-import closure_5 from "reinjectEphemerals" /* 4735 */;
+import closure_4 from "reactionKey" /* 7517 */;
+import closure_5 from "reinjectEphemerals" /* 4736 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7583 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7584 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7517).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7518).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {

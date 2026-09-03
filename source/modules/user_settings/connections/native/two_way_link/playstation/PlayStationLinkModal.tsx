@@ -1,15 +1,15 @@
-// Module ID: 9342
-// Function ID: 9343
+// Module ID: 9346
+// Function ID: 9347
 // Name: CloseButton
-// Dependencies: [19, 9343, 21, 6246, 7773, 9341, 1233, 9344, 9320, 9346, 9348, 9350, 9351, 9319, 9340, 6016, 2]
+// Dependencies: [19, 9347, 21, 6247, 7776, 9345, 1233, 9348, 9324, 9350, 9352, 9354, 9355, 9323, 9344, 6017, 2]
 // Exports: default
 
-// Module 9342 (CloseButton)
+// Module 9346 (CloseButton)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import HeaderActionButton from "HeaderActionButton" /* 6246 */;
-import registerAssetDefault from "registerAsset" /* 7773 */;
+import HeaderActionButton from "HeaderActionButton" /* 6247 */;
+import registerAssetDefault from "registerAsset" /* 7776 */;
 import closure_3 from "noop" /* 19 */;
-import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9343 */;
+import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9347 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -36,12 +36,12 @@ const result = require("set").fileFinishedImporting("modules/user_settings/conne
 export default function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
   let twoWayLinkStyles;
-  let obj = platformType(9319);
+  let obj = platformType(9323);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = React.useMemo(() => {
     function onClose() {
-      return onClose(9341).hideModal();
+      return onClose(9345).hideModal();
     }
     function blank() {
       return null;
@@ -60,7 +60,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_1_6,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(callback(9320).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+        return callback2(callback(9324).TwoWayLinkStepHeader, { idx: 1, total: 2 });
       },
       render() {
         return closure_1_5(callback(closure_1_2[9]).PlayStationLinkPreConnect, { platformType: callback });
@@ -71,7 +71,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_1_6,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(callback(9320).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+        return callback2(callback(9324).TwoWayLinkStepHeader, { idx: 2, total: 2 });
       },
       render(arg0) {
         ({ callbackCode, callbackState } = arg0);
@@ -102,9 +102,9 @@ export default function PlayStationLinkModal(platformType) {
       }
     };
   }, items);
-  const accountLinkStepTracking = platformType(9340).useAccountLinkStepTracking(platformType, platformType.locationStack);
+  const accountLinkStepTracking = platformType(9344).useAccountLinkStepTracking(platformType, platformType.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null };
   const intl = platformType(1233).intl;
   obj[3] = intl.string(platformType(1233).t["13/7kX"]);
-  return jsx(platformType(6016).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null });
+  return jsx(platformType(6017).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null });
 };

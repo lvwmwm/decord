@@ -1,23 +1,23 @@
-// Module ID: 17448
-// Function ID: 17449
+// Module ID: 17468
+// Function ID: 17469
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 17430, 17432, 17429, 502, 21, 4478, 709, 4413, 4957, 17449, 1233, 7850, 5630, 5629, 4445, 8794, 1987, 7879, 13176, 4474, 2400, 2]
+// Dependencies: [17, 17450, 17452, 17449, 502, 21, 4478, 709, 4413, 4958, 17469, 1233, 7853, 5631, 5630, 4445, 8798, 1987, 7882, 13188, 4474, 2400, 2]
 // Exports: default
 
-// Module 17448 (EnhancedRoleColorsSelectStyleModal)
+// Module 17468 (EnhancedRoleColorsSelectStyleModal)
 import set from "set" /* 2 */;
 import sum from "sum" /* 502 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4957 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5629 */;
-import Background from "Background" /* 5630 */;
-import setOptionsDefault from "setOptions" /* 7850 */;
-import title from "title" /* 17429 */;
-import handleSetSection from "handleSetSection" /* 17430 */;
-import HOLOGRAPHIC_ROLE_COLORS2 from "HOLOGRAPHIC_ROLE_COLORS" /* 17432 */;
-import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 17449 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4958 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
+import Background from "Background" /* 5631 */;
+import setOptionsDefault from "setOptions" /* 7853 */;
+import title from "title" /* 17449 */;
+import handleSetSection from "handleSetSection" /* 17450 */;
+import HOLOGRAPHIC_ROLE_COLORS2 from "HOLOGRAPHIC_ROLE_COLORS" /* 17452 */;
+import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 17469 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -120,9 +120,9 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             message.message.roleColor = undefined;
             const result = closure_2_0(1987).extractColorStringsFromServerColors(id.colors);
             const obj = closure_2_0(1987);
-            message.message.roleColors = closure_2_0(7879).processColorStrings(result);
+            message.message.roleColors = closure_2_0(7882).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = closure_2_1(13176);
+            message.message.avatarURL = closure_2_1(13188);
           }
         };
         const items1 = [closure_1_9(closure_1_1(button[16]), obj), ];

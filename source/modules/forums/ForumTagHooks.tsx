@@ -1,10 +1,10 @@
-// Module ID: 6130
-// Function ID: 6131
+// Module ID: 6131
+// Function ID: 6132
 // Name: useAvailableTags
-// Dependencies: [19, 1386, 4120, 502, 586, 1470, 6131, 2]
+// Dependencies: [19, 1386, 4120, 502, 586, 1470, 6132, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 6130 (useAvailableTags)
+// Module 6131 (useAvailableTags)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4120 */;

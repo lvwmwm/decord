@@ -1,13 +1,13 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14514
+// Function ID: 14515
 // Name: PX_16
-// Dependencies: [5631, 709, 2]
+// Dependencies: [5632, 709, 2]
 // Exports: getBadgeTileSize
 
-// Module 14498 (PX_16)
+// Module 14514 (PX_16)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
 
 const ACTION_SHEET_MAX_WIDTH = ACTION_SHEET_START_HEIGHT_RATIO.ACTION_SHEET_MAX_WIDTH;
 const PX_16 = ThemesDefault.space.PX_16;

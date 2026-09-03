@@ -1,9 +1,9 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16409
+// Function ID: 16410
 // Name: items
-// Dependencies: [32, 19, 17, 1215, 4398, 1991, 1984, 1908, 4120, 1921, 9751, 673, 21, 9946, 4478, 709, 1498, 10905, 4673, 4322, 1233, 10900, 1627, 586, 6120, 9721, 8807, 16391, 6246, 9790, 5465, 9750, 11, 1350, 6230, 8113, 1296, 8925, 5947, 2]
+// Dependencies: [32, 19, 17, 1215, 4398, 1991, 1984, 1908, 4120, 1921, 9755, 673, 21, 9950, 4478, 709, 1498, 10909, 4673, 4322, 1233, 10904, 1627, 586, 6121, 9725, 8811, 16410, 6247, 9794, 5466, 9754, 11, 1350, 6231, 8116, 1296, 8929, 5948, 2]
 
-// Module 16390 (items)
+// Module 16409 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -15,7 +15,7 @@ import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
 import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_12 from "mergeGuildAvatar" /* 1921 */;
-import closure_13 from "handleFormInit" /* 9751 */;
+import closure_13 from "handleFormInit" /* 9755 */;
 import { GuildSettingsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -97,7 +97,7 @@ let closure_20 = importAllResult.memo((guild) => {
     };
     obj[7] = start;
     obj[8] = end;
-    return closure_15(guildMember(10900), obj);
+    return closure_15(guildMember(10904), obj);
   }
   tmp = callback();
 });
@@ -287,12 +287,12 @@ const memoResult = importAllResult.memo(function GuildSettingsModalMembers(guild
           items: membersManagementActions,
           children(ref) {
             const merged = Object.assign(ref, Object.create(null));
-            const obj = { source: callback2(9790), accessibilityLabel: null, ref: null };
+            const obj = { source: callback2(9794), accessibilityLabel: null, ref: null };
             const intl = callback(1233).intl;
             obj[1] = intl.string(callback(1233).t.ogxXGq);
             obj[2] = ref.ref;
             const merged1 = Object.assign(merged);
-            return callback3(callback(6246).HeaderActionButton, obj);
+            return callback3(callback(6247).HeaderActionButton, obj);
           }
         };
         return closure_1_15(closure_1_0(closure_1_2[26]).ContextMenu, obj);

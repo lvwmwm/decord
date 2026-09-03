@@ -1,9 +1,9 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7331
+// Function ID: 7332
 // Name: FeaturedSubblockType
 // Dependencies: [2]
 
-// Module 7330 (FeaturedSubblockType)
+// Module 7331 (FeaturedSubblockType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/FeaturedSubblockType.tsx");

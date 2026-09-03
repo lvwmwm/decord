@@ -1,15 +1,15 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9025
+// Function ID: 9026
 // Name: memoResult1
-// Dependencies: [19, 17, 1921, 7862, 21, 4478, 709, 1234, 1233, 4474, 5076, 586, 8083, 4445, 9022, 2008, 2]
+// Dependencies: [19, 17, 1921, 7865, 21, 4478, 709, 1234, 1233, 4474, 5077, 586, 8086, 4445, 9026, 2008, 2]
 
-// Module 9021 (memoResult1)
+// Module 9025 (memoResult1)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { GuildTagBadgeSize } from "items" /* 7862 */;
+import { GuildTagBadgeSize } from "items" /* 7865 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import set from "set" /* 1234 */;

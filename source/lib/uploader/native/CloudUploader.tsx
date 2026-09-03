@@ -1,11 +1,11 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7594
+// Function ID: 7595
 // Name: nativeEventEmitter
-// Dependencies: [5, 17, 673, 4471, 3, 7594, 7510, 1233, 5131, 5090, 5126, 7595, 1234, 7596, 5080, 5081, 12, 2]
+// Dependencies: [5, 17, 673, 4471, 3, 7595, 7511, 1233, 5132, 5091, 5127, 7596, 1234, 7597, 5081, 5082, 12, 2]
 
-// Module 7593 (nativeEventEmitter)
+// Module 7594 (nativeEventEmitter)
 import timestampDefault from "timestamp" /* 3 */;
-import _fileSizeDefault from "_fileSize" /* 7594 */;
+import _fileSizeDefault from "_fileSize" /* 7595 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
@@ -116,7 +116,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                       obj1[1] = intl2.formatToPlainString(callback(1233).t.D0noUt, obj2);
                       dependencyMap = 1;
                       const obj3 = { value: null, done: false };
-                      obj3[0] = files(7510).startBackgroundTask(obj1);
+                      obj3[0] = files(7511).startBackgroundTask(obj1);
                       return obj3;
                     }
                   } else if (arg0 === 1) {
@@ -130,7 +130,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   } else {
                     callback = arg1;
                     if (closure_1_0._aborted) {
-                      obj = files(7510);
+                      obj = files(7511);
                       obj.endBackgroundTask(closure_1_0);
                     }
                     dependencyMap = 3;

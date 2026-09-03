@@ -1,8 +1,8 @@
-// Module ID: 8089
-// Function ID: 8090
-// Dependencies: [19, 4470, 675, 1622, 21, 4478, 1627, 586, 8090, 4217, 4927, 4139, 7308, 1233, 4446, 8091, 7295, 4445, 4928, 2]
+// Module ID: 8092
+// Function ID: 8093
+// Dependencies: [19, 4470, 675, 1622, 21, 4478, 1627, 586, 8093, 4217, 4928, 4139, 7309, 1233, 4446, 8094, 7296, 4445, 4929, 2]
 
-// Module 8089
+// Module 8092
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 675 */;

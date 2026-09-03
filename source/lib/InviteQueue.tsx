@@ -1,13 +1,13 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 10012
+// Function ID: 10013
 // Name: sum
-// Dependencies: [1386, 684, 7589, 3, 7210, 4491, 2]
+// Dependencies: [1386, 684, 7590, 3, 7211, 4491, 2]
 
-// Module 10008 (sum)
+// Module 10012 (sum)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
-import trackInviteDefault from "trackInvite" /* 7210 */;
-import enqueueDefault from "enqueue" /* 7589 */;
+import trackInviteDefault from "trackInvite" /* 7211 */;
+import enqueueDefault from "enqueue" /* 7590 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 
 const sum = setDefault.Millis.SECOND + 10;

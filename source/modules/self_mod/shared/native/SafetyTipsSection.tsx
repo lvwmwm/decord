@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11237
+// Function ID: 11238
 // Name: SafetyTipsContainer
-// Dependencies: [19, 17, 21, 4478, 709, 4926, 6265, 4474, 1233, 8742, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4927, 6266, 4474, 1233, 8746, 2]
 // Exports: default
 
-// Module 11233 (SafetyTipsContainer)
+// Module 11237 (SafetyTipsContainer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -25,7 +25,7 @@ export default function SafetyTipsContainer(children) {
   const safetyTips = children.safetyTips;
   let showHeader = children.showHeader;
   const tmp = callback2();
-  let obj = { style: tmp.image, children: callback(safetyTips(6265).SafetyBookletSpotIllustration, {}) };
+  let obj = { style: tmp.image, children: callback(safetyTips(6266).SafetyBookletSpotIllustration, {}) };
   const items = [callback(View, obj), , ];
   if (showHeader) {
     obj = { style: null, variant: "heading-xl/semibold", children: null };
@@ -38,8 +38,8 @@ export default function SafetyTipsContainer(children) {
   obj1 = { spacing: 8, align: "center", justify: "center", children: null };
   const items1 = [showHeader, callback(safetyTips(4474).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
   obj1[3] = items1;
-  items[1] = closure_5(safetyTips(4926).Stack, obj1);
+  items[1] = closure_5(safetyTips(4927).Stack, obj1);
   items[2] = callback(View, { style: tmp.tips, children: safetyTips.map((tip) => closure_1_4(closure_1_1(closure_1_2[9]), { index: arg1 + 1, tip, end: arg1 === safetyTips.length - 1 }, arg1)) });
   obj[1] = items;
-  return closure_5(safetyTips(4926).Stack, obj);
+  return closure_5(safetyTips(4927).Stack, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 6005
-// Function ID: 6006
+// Module ID: 6006
+// Function ID: 6007
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 673, 21, 709, 4478, 6006, 5985, 4421, 2]
+// Dependencies: [19, 17, 673, 21, 709, 4478, 6007, 5986, 4421, 2]
 // Exports: default
 
-// Module 6005 (VerifiedRoleIcon)
+// Module 6006 (VerifiedRoleIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import LinkIcon from "LinkIcon" /* 4421 */;
-import useRoleIcon from "useRoleIcon" /* 5985 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 6006 */;
+import useRoleIcon from "useRoleIcon" /* 5986 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 6007 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;

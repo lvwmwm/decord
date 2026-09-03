@@ -1,18 +1,18 @@
-// Module ID: 15450
-// Function ID: 15451
+// Module ID: 15464
+// Function ID: 15465
 // Name: TestLocaleSelector
-// Dependencies: [32, 5, 19, 17, 1996, 1995, 21, 4478, 709, 7701, 1233, 8222, 7702, 586, 4074, 6000, 5607, 1273, 4926, 4474, 15451, 15483, 2]
+// Dependencies: [32, 5, 19, 17, 1996, 1995, 21, 4478, 709, 7704, 1233, 8226, 7705, 586, 4074, 6001, 5608, 1273, 4927, 4474, 15465, 15497, 2]
 // Exports: default
 
-// Module 15450 (TestLocaleSelector)
+// Module 15464 (TestLocaleSelector)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;
-import TableRowInner from "TableRowInner" /* 5607 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
-import messagesProxyDefault from "messagesProxy" /* 15451 */;
-import messagesProxyDefault2 from "messagesProxy" /* 15483 */;
+import TableRowInner from "TableRowInner" /* 5608 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
+import messagesProxyDefault from "messagesProxy" /* 15465 */;
+import messagesProxyDefault2 from "messagesProxy" /* 15497 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
@@ -96,9 +96,9 @@ function TestLocaleSelector() {
     }
     return applyArgumentsResult;
   };
-  const items = [callback3(_require(7702).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(7702).TableRadioRow, { label: "French", value: "fr" })];
+  const items = [callback3(_require(7705).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(7705).TableRadioRow, { label: "French", value: "fr" })];
   obj[4] = items;
-  return callback4(_require(7701).TableRadioGroup, obj);
+  return callback4(_require(7704).TableRadioGroup, obj);
 }
 function LocaleInfo() {
   let obj = initialize;
@@ -198,6 +198,6 @@ export default function IntlTestingSettingsPage() {
   });
   items[7] = callback3(_require(4474).Text, obj6);
   obj[2] = items;
-  obj[1] = callback4(_require(4926).Stack, obj);
+  obj[1] = callback4(_require(4927).Stack, obj);
   return callback3(closure_7, obj);
 };

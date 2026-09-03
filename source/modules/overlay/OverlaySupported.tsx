@@ -1,9 +1,9 @@
-// Module ID: 13796
-// Function ID: 13797
+// Module ID: 13812
+// Function ID: 13813
 // Name: IS_OVERLAY_DEV_ENV
 // Dependencies: [1234, 2]
 
-// Module 13796 (IS_OVERLAY_DEV_ENV)
+// Module 13812 (IS_OVERLAY_DEV_ENV)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1234 */;
 

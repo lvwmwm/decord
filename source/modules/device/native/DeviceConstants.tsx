@@ -1,9 +1,9 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10667
+// Function ID: 10668
 // Name: frozen
 // Dependencies: [2]
 
-// Module 10663 (frozen)
+// Module 10667 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ VIDEO: "ALAssetTypeVideo", PHOTO: "ALAssetTypePhoto" });

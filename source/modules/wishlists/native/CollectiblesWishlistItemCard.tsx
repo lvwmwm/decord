@@ -1,13 +1,13 @@
-// Module ID: 10998
-// Function ID: 10999
+// Module ID: 11002
+// Function ID: 11003
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 7300, 10999, 21, 586, 8908, 11000, 11001, 2]
+// Dependencies: [19, 7301, 11003, 21, 586, 8912, 11004, 11005, 2]
 // Exports: default
 
-// Module 10998 (CollectiblesWishlistItemCard)
+// Module 11002 (CollectiblesWishlistItemCard)
 import closure_3 from "noop" /* 19 */;
-import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse" /* 7300 */;
-import closure_5 from "initialize" /* 10999 */;
+import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse" /* 7301 */;
+import closure_5 from "initialize" /* 11003 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

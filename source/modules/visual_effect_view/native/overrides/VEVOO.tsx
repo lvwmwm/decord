@@ -1,9 +1,9 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 15764
+// Function ID: 15765
 // Name: VisualEffectViewOverrideOverlay_
-// Dependencies: [19, 17, 4477, 707, 21, 4478, 709, 4217, 4927, 4931, 8372, 15749, 15751, 15752, 10863, 5559, 586, 15518, 2]
+// Dependencies: [19, 17, 4477, 707, 21, 4478, 709, 4217, 4928, 4932, 8376, 15765, 15767, 15768, 10867, 5560, 586, 15532, 2]
 
-// Module 15748 (VisualEffectViewOverrideOverlay_)
+// Module 15764 (VisualEffectViewOverrideOverlay_)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;

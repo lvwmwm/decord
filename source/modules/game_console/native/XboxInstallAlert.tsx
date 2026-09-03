@@ -1,14 +1,14 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9917
+// Function ID: 9918
 // Name: XboxInstallAlert
-// Dependencies: [19, 9326, 21, 4478, 709, 4947, 1233, 1296, 9333, 1234, 4190, 2]
+// Dependencies: [19, 9330, 21, 4478, 709, 4948, 1233, 1296, 9337, 1234, 4190, 2]
 // Exports: default
 
-// Module 9913 (XboxInstallAlert)
+// Module 9917 (XboxInstallAlert)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import componentDidMountDefault from "componentDidMount" /* 4947 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9326 */;
+import componentDidMountDefault from "componentDidMount" /* 4948 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9330 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

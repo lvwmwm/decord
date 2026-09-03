@@ -1,18 +1,18 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5091
+// Function ID: 5092
 // Name: openImagePickerUnhandled
-// Dependencies: [109, 5, 17, 1303, 4574, 1921, 673, 4730, 3, 5091, 5102, 5082, 5108, 1234, 4193, 1233, 4139, 5081, 1270, 5111, 5113, 5086, 4457, 5114, 5115, 5116, 1470, 5117, 5118, 5119, 4744, 5120, 2]
+// Dependencies: [109, 5, 17, 1303, 4574, 1921, 673, 4731, 3, 5092, 5103, 5083, 5109, 1234, 4193, 1233, 4139, 5082, 1270, 5112, 5114, 5087, 4457, 5115, 5116, 5117, 1470, 5118, 5119, 5120, 4745, 5121, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 5090 (openImagePickerUnhandled)
+// Module 5091 (openImagePickerUnhandled)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 1234 */;
 import enforcingDefault from "enforcing" /* 1270 */;
-import cancel from "cancel" /* 5081 */;
-import items2 from "items" /* 5082 */;
-import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5086 */;
-import toString from "toString" /* 5113 */;
-import getTimeFormat from "getTimeFormat" /* 5120 */;
+import cancel from "cancel" /* 5082 */;
+import items2 from "items" /* 5083 */;
+import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5087 */;
+import toString from "toString" /* 5114 */;
+import getTimeFormat from "getTimeFormat" /* 5121 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -21,7 +21,7 @@ import closure_10 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 import closure_11 from "handleConnectionInfoChange" /* 4574 */;
 import closure_12 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
 
 require = arg1;
 function openImagePickerUnhandled() {
@@ -989,7 +989,7 @@ function convertVideo(videoMetadata) {
   if (obj6.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() > 34) {
       let _Math = Math;
-      let frameRate = Math.min(videoMetadata.frameRate, tmp(5113).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
+      let frameRate = Math.min(videoMetadata.frameRate, tmp(5114).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
     }
     obj.frameRate = frameRate;
     obj.skipVideoTranscode = result1;
@@ -1526,7 +1526,7 @@ function convertVideo(videoMetadata) {
                   } else {
                     isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                     if (isVideo2) {
-                      const obj4 = { uri: null, overrideType: "r" };
+                      const obj4 = { uri: null, overrideType: "Array" };
                       obj4[0] = str3;
                       isVideo2 = tmp12(tmp13[11]).getFile(obj4).isVideo;
                       const tmp12Result3 = tmp12(tmp13[11]);
@@ -1545,7 +1545,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj5 = { uri: null, overrideType: "r" };
+                  const obj5 = { uri: null, overrideType: "Array" };
                   obj5[0] = str3;
                   isVideo = tmp12(tmp13[11]).getFile(obj5).isVideo;
                   const tmp12Result5 = tmp12(tmp13[11]);
@@ -2393,7 +2393,7 @@ function _tryConvertImage() {
                   if (closure_11) {
                     const obj9 = { path: null, encoderUsed: null };
                     obj9[0] = closure_11;
-                    obj9[1] = lib(4744).ImageEncoder.NATIVE;
+                    obj9[1] = lib(4745).ImageEncoder.NATIVE;
                     tmp51 = obj9;
                   }
                   c8 = 3;
@@ -2459,7 +2459,7 @@ function _tryConvertImage() {
                   return obj16;
                 } else {
                   dependencyMap.path = path;
-                  dependencyMap.encoderUsed = lib(4744).ImageEncoder.PASSTHROUGH;
+                  dependencyMap.encoderUsed = lib(4745).ImageEncoder.PASSTHROUGH;
                   c5 = 0;
                   c8 = 3;
                   let obj17 = { value: null, done: true };
@@ -2534,10 +2534,10 @@ function _tryConvertImage() {
                 obj22[0] = tmp10;
                 return obj22;
               }
-              obj16 = lib(5111);
+              obj16 = lib(5112);
               closure_13 = obj16.shouldForceConvertToJPG(closure_0, closure_1_1, closure_1_10);
               if (!closure_13) {
-                obj17 = lib(5111);
+                obj17 = lib(5112);
                 if (!obj17.shouldConvertToJPG(closure_0, closure_1_1, closure_1_2, closure_1_4, c7)) {
                   if ((function shouldConvertToGifFilepath(closure_0, closure_1_1) {
                     const isIOSResult = _undefined(1234).isIOS();
@@ -2553,7 +2553,7 @@ function _tryConvertImage() {
                       } else {
                         tmp7 = null != closure_0.match(/^assets-library:\/\/.+&ext=gif$/i);
                       }
-                      tmpResult = _undefined(5111);
+                      tmpResult = _undefined(5112);
                     }
                   })(closure_0, closure_1_1)) {
                     c7 = 9;

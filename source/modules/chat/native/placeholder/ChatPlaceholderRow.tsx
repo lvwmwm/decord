@@ -1,10 +1,10 @@
-// Module ID: 12403
-// Function ID: 12404
-// Dependencies: [19, 17, 21, 1296, 4478, 709, 12402, 12127, 2]
+// Module ID: 12415
+// Function ID: 12416
+// Dependencies: [19, 17, 21, 1296, 4478, 709, 12414, 12133, 2]
 
-// Module 12403
+// Module 12415
 import ThemesDefault from "Themes" /* 709 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12127 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12133 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

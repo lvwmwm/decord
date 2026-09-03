@@ -1,9 +1,9 @@
-// Module ID: 11067
-// Function ID: 11068
+// Module ID: 11071
+// Function ID: 11072
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4217, 1355, 4927, 11068, 4474, 2]
+// Dependencies: [32, 19, 21, 4217, 1355, 4928, 11072, 4474, 2]
 
-// Module 11067 (BalanceCounter)
+// Module 11071 (BalanceCounter)
 import context from "context" /* 1355 */;
 import _mod4217 from "module_4217" /* 4217 */;
 import Text from "Text" /* 4474 */;

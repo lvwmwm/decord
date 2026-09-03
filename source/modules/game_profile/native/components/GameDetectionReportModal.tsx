@@ -1,12 +1,12 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12886
+// Function ID: 12887
 // Name: ReportContent
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1498, 8827, 9953, 4723, 1233, 6246, 5559, 5503, 4474, 7701, 7702, 7714, 4928, 7817, 6016, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1498, 8831, 9957, 4724, 1233, 6247, 5560, 5504, 4474, 7704, 7705, 7717, 4929, 7820, 6017, 2]
 // Exports: default
 
-// Module 12874 (ReportContent)
+// Module 12886 (ReportContent)
 import ThemesDefault from "Themes" /* 709 */;
-import NavigationStack from "NavigationStack" /* 6016 */;
+import NavigationStack from "NavigationStack" /* 6017 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -128,7 +128,7 @@ function ReportContent(applicationId) {
     const intl4 = tmp2(tmp3[10]).intl;
     obj1[2] = intl4.string(tmp2(tmp3[10]).t.IQHicr);
     const items3 = [tmp15(tmp2(tmp3[14]).Text, obj1), ];
-    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: "CLIENT_REQUEST_TIMEOUT" };
+    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: 500 };
     obj2[1] = function onChange(arg0) {
       closure_0 = arg0;
       const timerId = setTimeout(() => {

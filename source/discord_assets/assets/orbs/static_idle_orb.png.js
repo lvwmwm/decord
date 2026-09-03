@@ -1,9 +1,9 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11577
+// Function ID: 11578
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11572 (metadata)
+// Module 11577 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/static_idle_orb.png.js");

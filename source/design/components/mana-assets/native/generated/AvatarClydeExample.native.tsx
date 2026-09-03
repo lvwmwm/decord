@@ -1,14 +1,14 @@
-// Module ID: 6326
-// Function ID: 6327
+// Module ID: 6327
+// Function ID: 6328
 // Name: AvatarClydeExample
-// Dependencies: [21, 5501, 6327, 2]
+// Dependencies: [21, 5502, 6328, 2]
 // Exports: AvatarClydeExample
 
-// Module 6326 (AvatarClydeExample)
+// Module 6327 (AvatarClydeExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5501 */;
-import metadataDefault from "metadata" /* 6327 */;
+import preloadDefault from "preload" /* 5502 */;
+import metadataDefault from "metadata" /* 6328 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarClydeExample.native.tsx");

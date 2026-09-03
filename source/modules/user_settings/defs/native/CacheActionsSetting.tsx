@@ -1,23 +1,23 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15411
+// Function ID: 15412
 // Name: handleCacheActionPress
-// Dependencies: [5, 5229, 21, 4445, 4194, 4433, 1233, 586, 4166, 5997, 5629, 5999, 15366, 15398, 15399, 11288, 2]
+// Dependencies: [5, 5230, 21, 4445, 4194, 4433, 1233, 586, 4166, 5998, 5630, 6000, 15380, 15412, 15413, 11292, 2]
 
-// Module 15397 (handleCacheActionPress)
+// Module 15411 (handleCacheActionPress)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5629 */;
-import ActionSheet from "ActionSheet" /* 5997 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5999 */;
-import FileUpIcon from "FileUpIcon" /* 15366 */;
-import FileWarningIcon from "FileWarningIcon" /* 15399 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
+import ActionSheet from "ActionSheet" /* 5998 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 6000 */;
+import FileUpIcon from "FileUpIcon" /* 15380 */;
+import FileWarningIcon from "FileWarningIcon" /* 15413 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5229 */;
+import closure_4 from "_handleConnectionOpen" /* 5230 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11288 */;
+import createToggle from "createToggle" /* 11292 */;
 
 require = arg1;
 function handleCacheActionPress(key) {
@@ -70,7 +70,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            obj1 = closure_1_0(15398);
+            obj1 = closure_1_0(15412);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -102,7 +102,7 @@ function CacheActionsActionSheet() {
   const intl3 = getSystemLocale.intl;
   obj2[2] = intl3.string(getSystemLocale.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(15398);
+    let obj = callback(15412);
     obj.clearCaches();
     const intl = callback(1233).intl;
     const stringResult = intl.string(callback(1233).t["23xR5w"]);

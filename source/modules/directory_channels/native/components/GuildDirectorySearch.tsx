@@ -1,17 +1,17 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12098
+// Function ID: 12099
 // Name: DefaultState
-// Dependencies: [32, 19, 17, 1908, 12093, 673, 21, 4478, 709, 12096, 4474, 1233, 1296, 586, 12097, 12098, 1627, 12125, 12126, 5503, 6229, 12106, 12090, 695, 2]
+// Dependencies: [32, 19, 17, 1908, 12099, 673, 21, 4478, 709, 12102, 4474, 1233, 1296, 586, 12103, 12104, 1627, 12131, 12132, 5504, 6230, 12112, 12096, 695, 2]
 // Exports: default
 
-// Module 12092 (DefaultState)
+// Module 12098 (DefaultState)
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 12096 */;
+import registerAssetDefault from "registerAsset" /* 12102 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getSearchState" /* 12093 */;
+import closure_10 from "getSearchState" /* 12099 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -42,7 +42,7 @@ function EmptyState(channel) {
   let obj = channel(586);
   const items = [closure_9];
   importDefault = obj.useStateFromStores(items, () => closure_1_9.getGuild(channel.getGuildId()));
-  obj1 = channel(12097);
+  obj1 = channel(12103);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1233).intl;
   if (canCreateOrAddGuildInDirectory) {

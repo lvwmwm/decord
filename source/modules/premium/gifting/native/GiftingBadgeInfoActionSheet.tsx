@@ -1,18 +1,18 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 10746
+// Function ID: 10747
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4470, 8573, 673, 21, 4478, 709, 1627, 586, 8570, 695, 5630, 4474, 1233, 2464, 10743, 2]
+// Dependencies: [19, 17, 4470, 8577, 673, 21, 4478, 709, 1627, 586, 8574, 695, 5631, 4474, 1233, 2464, 10747, 2]
 // Exports: default
 
-// Module 10742 (GiftingBadgeInfoActionSheet)
+// Module 10746 (GiftingBadgeInfoActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import messagesProxyDefault from "messagesProxy" /* 2464 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "initialize" /* 8573 */;
-import { getSingleRequirementThreshold as closure_7 } from "initialize" /* 8573 */;
+import closure_6 from "initialize" /* 8577 */;
+import { getSingleRequirementThreshold as closure_7 } from "initialize" /* 8577 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -42,7 +42,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const _require = tmp;
   let obj = _require(586);
   let items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(lib(8570).BadgeId.GIFTING));
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(lib(8574).BadgeId.GIFTING));
   obj1 = _require(586);
   const items1 = [closure_5];
   importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -118,5 +118,5 @@ export default function GiftingBadgeInfoActionSheet() {
   items4[1] = callback(View, obj4);
   obj[1] = items4;
   obj5[2] = callback2(View, obj);
-  return callback(_require(5630).BottomSheet, obj5);
+  return callback(_require(5631).BottomSheet, obj5);
 };

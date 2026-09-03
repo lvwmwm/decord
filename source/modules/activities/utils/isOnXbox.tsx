@@ -1,10 +1,10 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9404
+// Function ID: 9405
 // Name: isOnXbox
 // Dependencies: [4506, 673, 2]
 // Exports: default
 
-// Module 9400 (isOnXbox)
+// Module 9404 (isOnXbox)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import items3 from "items3" /* 4506 */;

@@ -1,14 +1,14 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16323
+// Function ID: 16324
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 8621, 16270, 16305, 586, 8645, 8643, 9243, 8637, 8636, 8634, 16306, 2]
+// Dependencies: [32, 19, 8625, 16289, 16324, 586, 8649, 8647, 9247, 8641, 8640, 8638, 16325, 2]
 // Exports: useSharedICYMILogic
 
-// Module 16304 (useSharedICYMILogic)
+// Module 16323 (useSharedICYMILogic)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "filterStaffGuild" /* 8621 */;
-import { SCROLL_EVENT_THROTTLE_MS } from "NUM_GUILDS_EXTENDED_ONBOARDING" /* 16270 */;
+import closure_5 from "filterStaffGuild" /* 8625 */;
+import { SCROLL_EVENT_THROTTLE_MS } from "NUM_GUILDS_EXTENDED_ONBOARDING" /* 16289 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/icymi/useSharedICYMILogic.tsx");
@@ -149,17 +149,17 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
       const viewableFeedItemsArray = notificationItem(unreadItems[10]).getViewableFeedItemsArray(viewableItems);
       const ICYMIAnalytics = notificationItem(unreadItems[6]).ICYMIAnalytics;
       const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.map((id) => {
-        const obj = { id: id.id, type: callback(8634).typeToString(id) };
+        const obj = { id: id.id, type: callback(8638).typeToString(id) };
         return obj;
       }), stateFromStores);
       let obj = notificationItem(unreadItems[10]);
       const found = viewableItems.filter((item) => {
-        const NON_ELIGIBLE_SCROLL_ITEMS = callback(8643).NON_ELIGIBLE_SCROLL_ITEMS;
+        const NON_ELIGIBLE_SCROLL_ITEMS = callback(8647).NON_ELIGIBLE_SCROLL_ITEMS;
         return !NON_ELIGIBLE_SCROLL_ITEMS.has(item.item.data.kind);
       });
       const result1 = callback(unreadItems[9]).triggerItemsLongImpression(found.map((item) => {
         item = item.item;
-        const obj = { itemId: item.id, itemType: callback(8636).itemToType(item), triggerType: "list", itemFeedIndex: item.index, itemScore: null, itemChannelType: null, isInitiallyVisible: false };
+        const obj = { itemId: item.id, itemType: callback(8640).itemToType(item), triggerType: "list", itemFeedIndex: item.index, itemScore: null, itemChannelType: null, isInitiallyVisible: false };
         let score = item.score;
         if (score == null) {
           score = null;
@@ -178,12 +178,12 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
   callback2 = allUnreadItemsHydrated.useCallback((viewableItems) => {
     viewableItems = viewableItems.viewableItems;
     const found = viewableItems.filter((item) => {
-      const NON_ELIGIBLE_SCROLL_ITEMS = callback(8643).NON_ELIGIBLE_SCROLL_ITEMS;
+      const NON_ELIGIBLE_SCROLL_ITEMS = callback(8647).NON_ELIGIBLE_SCROLL_ITEMS;
       return !NON_ELIGIBLE_SCROLL_ITEMS.has(item.item.data.kind);
     });
     callback(unreadItems[9]).startItemsDwell(found.map((item) => {
       item = item.item;
-      const obj = { itemId: item.id, itemType: callback(8636).itemToType(item), triggerType: "list", itemFeedIndex: item.index, itemScore: null, itemChannelType: null, isInitiallyVisible: false };
+      const obj = { itemId: item.id, itemType: callback(8640).itemToType(item), triggerType: "list", itemFeedIndex: item.index, itemScore: null, itemChannelType: null, isInitiallyVisible: false };
       let score = item.score;
       if (score == null) {
         score = null;

@@ -1,17 +1,17 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16708
+// Function ID: 16709
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 7831, 4478, 709, 6016, 7229, 1627, 7617, 1233, 10883, 16689, 16708, 16709, 2]
+// Dependencies: [19, 17, 21, 7834, 4478, 709, 6017, 7230, 1627, 7618, 1233, 10887, 16709, 16728, 16729, 2]
 // Exports: default
 
-// Module 16688 (MessageRequestsNavigator)
+// Module 16708 (MessageRequestsNavigator)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10883 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10887 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
@@ -28,9 +28,9 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 export default function MessageRequestsNavigator() {
   const tmp = callback3();
   const _require = tmp;
-  let obj = _require(6016);
+  let obj = _require(6017);
   importDefault = obj.useAccessibilityNativeStackOptions();
-  const layoutEffect = React.useLayoutEffect(() => lib(7229).trackAppUIViewed(), []);
+  const layoutEffect = React.useLayoutEffect(() => lib(7230).trackAppUIViewed(), []);
   const rect = useSafeAreaInsetsDefault();
   obj = { style: items, children: null };
   items = [tmp.container, { paddingLeft: rect.left, paddingRight: rect.right }];
@@ -60,7 +60,7 @@ export default function MessageRequestsNavigator() {
   let merged = Object.assign(getNavigationModalPresentationDefault());
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return lib(16689).default;
+    return lib(16709).default;
   };
   const items1 = [callback(Screen, obj1), , ];
   const obj3 = { name: "spam", options: null, getComponent: null };
@@ -70,7 +70,7 @@ export default function MessageRequestsNavigator() {
   let merged1 = Object.assign(getNavigationModalPresentationDefault());
   obj3[1] = obj4;
   obj3[2] = function getComponent() {
-    return lib(16708).default;
+    return lib(16728).default;
   };
   items1[1] = callback(closure_7.Screen, obj3);
   const obj5 = { name: "preview", options: null, getComponent: null };
@@ -80,7 +80,7 @@ export default function MessageRequestsNavigator() {
   const merged2 = Object.assign(getNavigationModalPresentationDefault());
   obj5[1] = obj6;
   obj5[2] = function getComponent() {
-    return lib(16709).default;
+    return lib(16729).default;
   };
   items1[2] = callback(closure_7.Screen, obj5);
   obj[1] = items1;

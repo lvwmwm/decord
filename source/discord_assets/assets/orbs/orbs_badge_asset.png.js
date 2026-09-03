@@ -1,9 +1,9 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 8990
+// Function ID: 8991
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8986 (metadata)
+// Module 8990 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/orbs_badge_asset.png.js");

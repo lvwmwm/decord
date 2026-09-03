@@ -1,16 +1,16 @@
-// Module ID: 16244
-// Function ID: 16245
+// Module ID: 16263
+// Function ID: 16264
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 1429, 1908, 1921, 16245, 21, 4478, 709, 7394, 9994, 16246, 16247, 16248, 16249, 5501, 16250, 1296, 16251, 16252, 5961, 586, 5076, 8911, 8117, 16253, 4474, 2]
+// Dependencies: [19, 17, 1429, 1908, 1921, 16264, 21, 4478, 709, 7395, 9998, 16265, 16266, 16267, 16268, 5502, 16269, 1296, 16270, 16271, 5962, 586, 5077, 8915, 8120, 16272, 4474, 2]
 
-// Module 16244 (ForYouItemImage)
+// Module 16263 (ForYouItemImage)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { getGuildAcronym } from "GuildNSFWContentLevel" /* 1429 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import PROFILE_BACKGROUND from "PROFILE_BACKGROUND" /* 16245 */;
+import PROFILE_BACKGROUND from "PROFILE_BACKGROUND" /* 16264 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

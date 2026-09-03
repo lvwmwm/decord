@@ -1,18 +1,18 @@
-// Module ID: 5475
-// Function ID: 5476
+// Module ID: 5476
+// Function ID: 5477
 // Name: handleUpdate
-// Dependencies: [1983, 1386, 5471, 5476, 5477, 12, 586, 684, 11, 706, 2]
+// Dependencies: [1983, 1386, 5472, 5477, 5478, 12, 586, 684, 11, 706, 2]
 
-// Module 5475 (handleUpdate)
+// Module 5476 (handleUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "initialize" /* 1983 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "shouldShowOnboarding" /* 5471 */;
-import { GuildOnboardingStatus } from "shouldShowOnboarding" /* 5471 */;
-import { GuildOnboardingMode } from "serverPromptToClientPrompt" /* 5476 */;
+import closure_5 from "shouldShowOnboarding" /* 5472 */;
+import { GuildOnboardingStatus } from "shouldShowOnboarding" /* 5472 */;
+import { GuildOnboardingMode } from "serverPromptToClientPrompt" /* 5477 */;
 
 const require = arg1;
 function handleUpdate(arg0) {

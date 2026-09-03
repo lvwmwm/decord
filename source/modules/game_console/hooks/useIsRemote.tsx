@@ -1,10 +1,10 @@
-// Module ID: 6126
-// Function ID: 6127
+// Module ID: 6127
+// Function ID: 6128
 // Name: useIsRemote
 // Dependencies: [4495, 586, 2]
 // Exports: default
 
-// Module 6126 (useIsRemote)
+// Module 6127 (useIsRemote)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "set" /* 4495 */;
 

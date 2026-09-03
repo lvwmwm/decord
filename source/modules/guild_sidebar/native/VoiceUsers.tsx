@@ -1,17 +1,17 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15957
+// Function ID: 15958
 // Name: AudienceItem
-// Dependencies: [19, 17, 1991, 21, 4478, 709, 10224, 7627, 586, 15942, 9102, 1233, 12318, 4474, 9889, 15946, 6164, 15949, 2]
+// Dependencies: [19, 17, 1991, 21, 4478, 709, 10228, 7628, 586, 15958, 9106, 1233, 12330, 4474, 9893, 15962, 6165, 15965, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15941 (AudienceItem)
+// Module 15957 (AudienceItem)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7627 */;
-import map from "map" /* 9102 */;
-import getLayoutStyles from "getLayoutStyles" /* 10224 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12318 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7628 */;
+import map from "map" /* 9106 */;
+import getLayoutStyles from "getLayoutStyles" /* 10228 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12330 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
@@ -81,7 +81,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj = { style: userCollapsedOverlap, children: null };
   obj = { user, member: null, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed: null, sessionId: null, channel: null, isGuest: null };
   const tmp = channel;
-  tmp3 = callback2(channel(7627)());
+  tmp3 = callback2(channel(7628)());
   const tmp6 = View;
   if (member == null) {
     member = storeMember;
@@ -92,7 +92,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj[9] = voiceState2.sessionId;
   obj[10] = channel;
   obj[11] = isGuest;
-  obj[1] = closure_6(channel(15942), obj, user.id);
+  obj[1] = closure_6(channel(15958), obj, user.id);
   return closure_6(tmp6, obj);
 });
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17339
+// Function ID: 17340
 // Name: handleChannelDelete
-// Dependencies: [1215, 16022, 673, 10328, 1911, 5494, 2]
+// Dependencies: [1215, 16038, 673, 10332, 1911, 5495, 2]
 
-// Module 17319 (handleChannelDelete)
-import initializeDefault from "initialize" /* 5494 */;
-import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10328 */;
+// Module 17339 (handleChannelDelete)
+import initializeDefault from "initialize" /* 5495 */;
+import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10332 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
-import items from "items" /* 16022 */;
+import items from "items" /* 16038 */;
 import { NOOP } from "ME" /* 673 */;
 
 require = arg1;
@@ -40,9 +40,9 @@ function handleThreadMembersUpdate(addedMembers) {
   let id;
   id = store.getId();
   if (tmp2) {
-    const result = id(10328).autoAddJoinedThreadToFavorites(addedMembers.id);
+    const result = id(10332).autoAddJoinedThreadToFavorites(addedMembers.id);
     result.catch(NOOP);
-    const obj = id(10328);
+    const obj = id(10332);
   }
 }
 function handleThreadCreate(channel) {

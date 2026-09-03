@@ -1,10 +1,10 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 11953
+// Function ID: 11954
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1497, 21, 11926, 4478, 709, 11846, 4217, 4197, 8050, 5501, 4474, 1296, 2]
+// Dependencies: [19, 17, 1497, 21, 11932, 4478, 709, 11852, 4217, 4197, 8053, 5502, 4474, 1296, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 11947 (DEFAULT_CONTENT_PADDING)
+// Module 11953 (DEFAULT_CONTENT_PADDING)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -136,12 +136,12 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   if (str == null) {
     str = "";
   }
-  const tmp9 = section(8050);
+  const tmp9 = section(8053);
   if (null != memo) {
     obj2 = { style: null, source: null };
     obj2[0] = tmp.appIcon;
     obj2[1] = memo;
-    let tmp15 = callback(tmp8(5501), obj2);
+    let tmp15 = callback(tmp8(5502), obj2);
     let tmp16 = callback;
   } else {
     const obj3 = { style: null };
@@ -161,7 +161,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   obj4 = { style: items2, children: null };
   items2[1] = prop;
   let items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  const items4 = [tmp16(section(4217).View, { style: items3 }), tmp16(section(11926), { onPress: onPress.onPressBack }), , , ];
+  const items4 = [tmp16(section(4217).View, { style: items3 }), tmp16(section(11932), { onPress: onPress.onPressBack }), , , ];
   const obj5 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: null };
   items5 = [tmp.appSmallName, animatedStyle];
   let displayName;

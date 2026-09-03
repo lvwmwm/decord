@@ -1,29 +1,29 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12534
+// Function ID: 12535
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 4121, 5457, 1386, 4854, 5365, 11796, 673, 502, 21, 4478, 709, 5469, 7626, 4474, 1233, 7638, 6157, 586, 12523, 6127, 9, 8817, 8827, 5076, 8821, 5971, 4445, 12525, 2008, 4928, 11944, 12526, 10641, 7651, 12527, 4674, 11822, 11795, 12528, 8113, 7521, 5078, 4194, 12531, 6124, 5961, 5981, 5010, 11276, 7649, 12532, 7531, 10350, 10368, 4446, 4447, 10366, 7655, 5602, 11274, 9005, 12535, 12077, 2]
+// Dependencies: [19, 17, 4121, 5458, 1386, 4855, 5366, 11802, 673, 502, 21, 4478, 709, 5470, 7627, 4474, 1233, 7639, 6158, 586, 12535, 6128, 9, 8821, 8831, 5077, 8825, 5972, 4445, 12537, 2008, 4929, 11950, 12538, 10645, 7654, 12539, 4674, 11828, 11801, 12540, 8116, 7522, 5079, 4194, 12543, 6125, 5962, 5982, 5011, 11280, 7652, 12544, 7532, 10354, 10372, 4446, 4447, 10370, 7658, 5603, 11278, 9009, 12547, 12083, 2]
 // Exports: default
 
-// Module 12522 (forumKeyExtractor)
+// Module 12534 (forumKeyExtractor)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
 import Text from "Text" /* 4474 */;
-import useGradientBottom from "useGradientBottom" /* 7626 */;
-import registerAssetDefault from "registerAsset" /* 12531 */;
+import useGradientBottom from "useGradientBottom" /* 7627 */;
+import registerAssetDefault from "registerAsset" /* 12543 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "initialize" /* 4121 */;
-import closure_6 from "handleThreadCreateOrUpdate" /* 5457 */;
+import closure_6 from "handleThreadCreateOrUpdate" /* 5458 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleChanged" /* 4854 */;
-import closure_9 from "recomputeGuild" /* 5365 */;
-import { useForumChannelStore } from "set" /* 11796 */;
+import closure_8 from "handleChanged" /* 4855 */;
+import closure_9 from "recomputeGuild" /* 5366 */;
+import { useForumChannelStore } from "set" /* 11802 */;
 import ME from "ME" /* 673 */;
 import { Fonts } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5469 */;
+import importDefaultResult from "createTextStyle" /* 5470 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -157,7 +157,7 @@ function SortAndViewOptions(channel) {
   }
   isMediaChannelResult = channel.isMediaChannel();
   const tmp4 = id;
-  return closure_14(id(4928).Button, { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: closure_14(id(11944).ArrowsUpDownIcon, { size: "xxs" }) });
+  return closure_14(id(4929).Button, { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: closure_14(id(11950).ArrowsUpDownIcon, { size: "xxs" }) });
 }
 function TagFilter(channel) {
   channel = channel.channel;
@@ -169,8 +169,8 @@ function TagFilter(channel) {
     obj = { channel };
     obj.openLazy(channel(closure_1_2[30])(closure_1_2[33], closure_1_2.paths), "ForumTagFilterActionSheet", obj);
   };
-  obj[4] = callback(channel(10641).TagIcon, { size: "xxs" });
-  return callback(channel(4928).Button, obj);
+  obj[4] = callback(channel(10645).TagIcon, { size: "xxs" });
+  return callback(channel(4929).Button, obj);
 }
 function getForumItemType(arg0) {
   let str = "thread";

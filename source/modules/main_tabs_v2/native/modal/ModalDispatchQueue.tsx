@@ -1,9 +1,9 @@
-// Module ID: 4726
-// Function ID: 4727
+// Module ID: 4727
+// Function ID: 4728
 // Name: enqueue
 // Dependencies: [2]
 
-// Module 4726 (enqueue)
+// Module 4727 (enqueue)
 import set from "set" /* 2 */;
 
 class ModalDispatchQueue {

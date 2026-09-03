@@ -1,9 +1,9 @@
-// Module ID: 13628
-// Function ID: 13629
+// Module ID: 13643
+// Function ID: 13644
 // Name: initialize
 // Dependencies: [1386, 1908, 592, 586, 706, 2]
 
-// Module 13628 (initialize)
+// Module 13643 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

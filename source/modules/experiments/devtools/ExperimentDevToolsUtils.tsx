@@ -1,13 +1,13 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7646
+// Function ID: 7647
 // Name: getExperimentVariantsForDevTools
-// Dependencies: [7646, 4399, 2]
+// Dependencies: [7647, 4399, 2]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 7645 (getExperimentVariantsForDevTools)
+// Module 7646 (getExperimentVariantsForDevTools)
 import set from "set" /* 2 */;
 import trackExposureToExperiment from "trackExposureToExperiment" /* 4399 */;
-import create from "create" /* 7646 */;
+import create from "create" /* 7647 */;
 
 const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: create.Variation_Type.OVERRIDE };
 const result = set.fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 9456
+// Function ID: 9457
 // Name: getActivityChannelId
 // Dependencies: [1390, 1386, 4497, 2]
 // Exports: default
 
-// Module 9452 (getActivityChannelId)
+// Module 9456 (getActivityChannelId)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_1 from "ensureGuildLoaded" /* 1386 */;

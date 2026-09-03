@@ -1,15 +1,15 @@
-// Module ID: 10346
-// Function ID: 10347
+// Module ID: 10350
+// Function ID: 10351
 // Name: _markUnread
-// Dependencies: [5, 4122, 1386, 4735, 4493, 1921, 673, 3, 11, 7519, 527, 2]
+// Dependencies: [5, 4122, 1386, 4736, 4493, 1921, 673, 3, 11, 7520, 527, 2]
 // Exports: default
 
-// Module 10346 (_markUnread)
+// Module 10350 (_markUnread)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "storeThread" /* 4122 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "reinjectEphemerals" /* 4735 */;
+import closure_6 from "reinjectEphemerals" /* 4736 */;
 import { shouldBadgeMessage } from "generateOldThreadCutoff" /* 4493 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import { Endpoints } from "ME" /* 673 */;

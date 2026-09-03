@@ -1,15 +1,15 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16980
+// Function ID: 16981
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 12063, 21, 4478, 4924, 1233, 4912, 4915, 2]
+// Dependencies: [32, 19, 17, 12069, 21, 4478, 4925, 1233, 4913, 4916, 2]
 // Exports: default
 
-// Module 16960 (FocusedActivityAccessibilityLayer)
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4915 */;
+// Module 16980 (FocusedActivityAccessibilityLayer)
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4916 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { IS_IOS } from "VoicePanelModes" /* 12063 */;
+import { IS_IOS } from "VoicePanelModes" /* 12069 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

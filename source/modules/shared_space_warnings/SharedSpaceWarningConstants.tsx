@@ -1,9 +1,9 @@
-// Module ID: 13614
-// Function ID: 13615
+// Module ID: 13629
+// Function ID: 13630
 // Name: GdmWarningMedium
 // Dependencies: [2]
 
-// Module 13614 (GdmWarningMedium)
+// Module 13629 (GdmWarningMedium)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/shared_space_warnings/SharedSpaceWarningConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8230
+// Function ID: 8231
 // Name: PremiumFeaturesCards
-// Dependencies: [19, 17, 1923, 21, 4478, 8227, 2]
+// Dependencies: [19, 17, 1923, 21, 4478, 8231, 2]
 // Exports: default
 
-// Module 8226 (PremiumFeaturesCards)
+// Module 8230 (PremiumFeaturesCards)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;

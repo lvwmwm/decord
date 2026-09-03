@@ -1,10 +1,10 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12508
+// Function ID: 12509
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 673, 21, 4478, 709, 1498, 6246, 1233, 12497, 1296, 4474, 4928, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1498, 6247, 1233, 12509, 1296, 4474, 4929, 2]
 // Exports: default
 
-// Module 12496 (HubEmailConnectionWaitlist)
+// Module 12508 (HubEmailConnectionWaitlist)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -41,7 +41,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12497), style: tmp.header };
+  obj = { source: navigation(12509), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
   let intl = onClose(1233).intl;
@@ -56,7 +56,7 @@ export default function HubEmailConnectionWaitlist(school) {
   const intl3 = onClose(1233).intl;
   obj4[1] = intl3.string(onClose(1233).t.i4jeWR);
   obj4[2] = onClose;
-  obj3[1] = callback(onClose(4928).Button, obj4);
+  obj3[1] = callback(onClose(4929).Button, obj4);
   items1[3] = callback(closure_4, obj3);
   obj[1] = items1;
   return callback2(closure_4, obj);

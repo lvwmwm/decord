@@ -1,9 +1,9 @@
-// Module ID: 6607
-// Function ID: 6608
+// Module ID: 6608
+// Function ID: 6609
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6607 (vanityUrl)
+// Module 6608 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier8SmallBadge-2x.png.js");

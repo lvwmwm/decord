@@ -1,23 +1,23 @@
-// Module ID: 5563
-// Function ID: 5564
+// Module ID: 5564
+// Function ID: 5565
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5409, 5498, 1908, 5475, 5472, 1924, 21, 4478, 5500, 709, 1498, 586, 1627, 4197, 686, 5561, 5564, 4474, 1233, 4928, 5567, 4940, 688, 5482, 5588, 5589, 5593, 1430, 4445, 5598, 2008, 5076, 5951, 2]
+// Dependencies: [32, 19, 17, 5410, 5499, 1908, 5476, 5473, 1924, 21, 4478, 5501, 709, 1498, 586, 1627, 4197, 686, 5562, 5565, 4474, 1233, 4929, 5568, 4941, 688, 5483, 5589, 5590, 5594, 1430, 4445, 5599, 2008, 5077, 5952, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5563 (PromptHeader)
+// Module 5564 (PromptHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import Text2 from "Text" /* 4474 */;
-import EmojiDefault from "Emoji" /* 5593 */;
+import EmojiDefault from "Emoji" /* 5594 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "getEmojiToGroupId" /* 5409 */;
-import closure_10 from "get" /* 5498 */;
+import closure_9 from "getEmojiToGroupId" /* 5410 */;
+import closure_10 from "get" /* 5499 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "handleUpdate" /* 5475 */;
-import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
+import closure_12 from "handleUpdate" /* 5476 */;
+import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5473 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

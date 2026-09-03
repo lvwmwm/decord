@@ -1,16 +1,16 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10903
+// Function ID: 10904
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1390, 4130, 1921, 21, 4478, 709, 4981, 5033, 4926, 4474, 4674, 4441, 1233, 10888, 2]
+// Dependencies: [19, 17, 1390, 4130, 1921, 21, 4478, 709, 4982, 5034, 4927, 4474, 4674, 4441, 1233, 10892, 2]
 // Exports: default
 
-// Module 10899 (InstantInviteDetails)
+// Module 10903 (InstantInviteDetails)
 import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import Stack from "Stack" /* 4926 */;
-import getChannelIcon from "getChannelIcon" /* 4981 */;
-import componentDidMountDefault from "componentDidMount" /* 10888 */;
+import Stack from "Stack" /* 4927 */;
+import getChannelIcon from "getChannelIcon" /* 4982 */;
+import componentDidMountDefault from "componentDidMount" /* 10892 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord" /* 1390 */;
@@ -82,7 +82,7 @@ export default function InstantInviteCode(invite) {
   const tmp = callback3();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj[0] = items1;
-  obj[1] = callback2(invite(4926).Stack, obj);
+  obj[1] = callback2(invite(4927).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

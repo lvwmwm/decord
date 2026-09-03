@@ -1,10 +1,10 @@
-// Module ID: 5458
-// Function ID: 5459
+// Module ID: 5459
+// Function ID: 5460
 // Name: getThreadAutoArchiveTimeOnce
 // Dependencies: [4493, 684, 11, 2]
 // Exports: default, getThreadLastActivityTime
 
-// Module 5458 (getThreadAutoArchiveTimeOnce)
+// Module 5459 (getThreadAutoArchiveTimeOnce)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 684 */;
 import closure_2 from "generateOldThreadCutoff" /* 4493 */;

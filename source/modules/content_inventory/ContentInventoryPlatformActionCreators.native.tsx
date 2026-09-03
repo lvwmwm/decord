@@ -1,12 +1,12 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11739
+// Function ID: 11740
 // Name: showUserProfile
-// Dependencies: [8911, 2]
+// Dependencies: [8915, 2]
 // Exports: showUserProfile
 
-// Module 11734 (showUserProfile)
+// Module 11739 (showUserProfile)
 import set from "set" /* 2 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8911 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8915 */;
 
 const result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 6852
+// Function ID: 6853
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6851 (metadata)
+// Module 6852 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRocketSpotIllustration-2x.png.js");

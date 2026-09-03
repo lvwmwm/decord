@@ -1,11 +1,11 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16048
+// Function ID: 16049
 // Name: useHubUnreadCount
-// Dependencies: [12102, 4493, 586, 11, 12094, 2]
+// Dependencies: [12108, 4493, 586, 11, 12100, 2]
 // Exports: useHubUnreadCount
 
-// Module 16032 (useHubUnreadCount)
-import closure_3 from "isFetching" /* 12102 */;
+// Module 16048 (useHubUnreadCount)
+import closure_3 from "isFetching" /* 12108 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 
 const require = arg1;

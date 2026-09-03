@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11208
+// Function ID: 11209
 // Name: canSeeChannelSummaries
 // Dependencies: [1429, 1908, 673, 1393, 1911, 644, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 11204 (canSeeChannelSummaries)
+// Module 11208 (canSeeChannelSummaries)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1393 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;

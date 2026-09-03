@@ -1,14 +1,14 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16566
+// Function ID: 16567
 // Name: GuildChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1921, 10875, 673, 21, 1234, 4478, 16546, 4217, 4927, 4468, 5076, 4474, 4940, 586, 4322, 4666, 2]
+// Dependencies: [32, 19, 17, 1921, 10879, 673, 21, 1234, 4478, 16567, 4217, 4928, 4468, 5077, 4474, 4941, 586, 4322, 4666, 2]
 
-// Module 16545 (GuildChannelDetailsTopic)
+// Module 16566 (GuildChannelDetailsTopic)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10875 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10879 */;
 import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;

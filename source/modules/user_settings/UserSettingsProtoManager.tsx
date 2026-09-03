@@ -1,15 +1,15 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14347
+// Function ID: 14348
 // Name: handleConnectionOpen
-// Dependencies: [1339, 682, 1342, 14332, 14333, 706, 12, 1369, 2]
+// Dependencies: [1339, 682, 1342, 14348, 14349, 706, 12, 1369, 2]
 
-// Module 14331 (handleConnectionOpen)
+// Module 14347 (handleConnectionOpen)
 import applyDefault from "apply" /* 12 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import MAX_FAVORITESDefault from "MAX_FAVORITES" /* 1342 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import migrateHotspotLocationDefault from "migrateHotspotLocation" /* 14332 */;
-import readFavoriteGIFsDefault from "readFavoriteGIFs" /* 14333 */;
+import migrateHotspotLocationDefault from "migrateHotspotLocation" /* 14348 */;
+import readFavoriteGIFsDefault from "readFavoriteGIFs" /* 14349 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 

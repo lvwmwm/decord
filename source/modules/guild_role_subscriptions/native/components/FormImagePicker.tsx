@@ -1,13 +1,13 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17570
+// Function ID: 17571
 // Name: pickImage
-// Dependencies: [5, 19, 17, 21, 4478, 709, 5090, 1464, 9081, 1233, 5501, 17551, 10349, 4474, 4928, 2]
+// Dependencies: [5, 19, 17, 21, 4478, 709, 5091, 1464, 9085, 1233, 5502, 17571, 10353, 4474, 4929, 2]
 // Exports: default
 
-// Module 17550 (pickImage)
+// Module 17570 (pickImage)
 import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5501 */;
-import renderDefault from "render" /* 9081 */;
+import preloadDefault from "preload" /* 5502 */;
+import renderDefault from "render" /* 9085 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -240,7 +240,7 @@ export default function FormImagePicker(children) {
   obj = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description };
   const items = [
     callback2(tmp6(4474).Text, obj),
-    callback2(tmp6(4928).Button, {
+    callback2(tmp6(4929).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

@@ -1,10 +1,10 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15187
+// Function ID: 15188
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1938, 21, 4478, 709, 4217, 1937, 685, 4446, 4445, 5630, 5629, 1233, 4928, 15173, 14478, 2]
+// Dependencies: [19, 17, 1938, 21, 4478, 709, 4217, 1937, 685, 4446, 4445, 5631, 5630, 1233, 4929, 15188, 14494, 2]
 // Exports: default
 
-// Module 15172 (DisplayNameStylesGummyCustomColorSheet)
+// Module 15187 (DisplayNameStylesGummyCustomColorSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -53,14 +53,14 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   const intl2 = onSelect(1233).intl;
   obj1[2] = intl2.string(onSelect(1233).t.XqMe3N);
   obj1[3] = callback1;
-  obj[1] = callback(onSelect(4928).Button, obj1);
-  obj[0] = callback(onSelect(5629).BottomSheetTitleHeader, obj);
+  obj[1] = callback(onSelect(4929).Button, obj1);
+  obj[0] = callback(onSelect(5630).BottomSheetTitleHeader, obj);
   obj2 = { style: tmp.body, children: null };
-  const obj3 = { style: tmp.previewWrapper, children: callback(View, { style: tmp.preview, children: callback(sharedValue(15173), { hue: sharedValue }) }) };
+  const obj3 = { style: tmp.previewWrapper, children: callback(View, { style: tmp.preview, children: callback(sharedValue(15188), { hue: sharedValue }) }) };
   const items1 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.preview, children: callback(sharedValue(15173), { hue: sharedValue }) };
-  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(14478), obj6) });
+  const obj4 = { style: tmp.preview, children: callback(sharedValue(15188), { hue: sharedValue }) };
+  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(14494), obj6) });
   obj2[1] = items1;
   obj[1] = callback2(View, obj2);
-  return callback(onSelect(5630).BottomSheet, obj);
+  return callback(onSelect(5631).BottomSheet, obj);
 };

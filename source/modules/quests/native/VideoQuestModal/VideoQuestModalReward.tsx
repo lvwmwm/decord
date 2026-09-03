@@ -1,10 +1,10 @@
-// Module ID: 14976
-// Function ID: 14977
-// Dependencies: [19, 21, 4478, 14953, 11303, 11557, 4926, 709, 14958, 4474, 1233, 2]
+// Module ID: 14991
+// Function ID: 14992
+// Dependencies: [19, 21, 4478, 14968, 11307, 11562, 4927, 709, 14973, 4474, 1233, 2]
 
-// Module 14976
+// Module 14991
 import ThemesDefault from "Themes" /* 709 */;
-import COMPLETION_GLOW_SHADOW_RADIUSDefault from "COMPLETION_GLOW_SHADOW_RADIUS" /* 14958 */;
+import COMPLETION_GLOW_SHADOW_RADIUSDefault from "COMPLETION_GLOW_SHADOW_RADIUS" /* 14973 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -27,9 +27,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(style) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  let obj = quest(14953);
+  let obj = quest(14968);
   quest = obj.useVideoQuestModalContext().quest;
-  obj1 = quest(11303);
+  obj1 = quest(11307);
   const items = [quest.id];
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const callback = importAllResult.useCallback(() => {
@@ -59,9 +59,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(style) {
   }
   items2[1] = tmp9Result;
   obj1[3] = items2;
-  items1[1] = closure_5(quest(4926).Stack, obj1);
+  items1[1] = closure_5(quest(4927).Stack, obj1);
   obj[4] = items1;
-  return closure_5(quest(4926).Stack, obj);
+  return closure_5(quest(4927).Stack, obj);
 });
 let result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
 

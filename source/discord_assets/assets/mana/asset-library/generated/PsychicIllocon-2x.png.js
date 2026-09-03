@@ -1,9 +1,9 @@
-// Module ID: 6933
-// Function ID: 6934
+// Module ID: 6934
+// Function ID: 6935
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6933 (metadata)
+// Module 6934 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PsychicIllocon-2x.png.js");

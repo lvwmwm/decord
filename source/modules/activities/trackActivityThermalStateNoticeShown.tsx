@@ -1,10 +1,10 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16889
+// Function ID: 16890
 // Name: trackActivityThermalStateNoticeShown
 // Dependencies: [1386, 4554, 1385, 673, 4110, 695, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 16869 (trackActivityThermalStateNoticeShown)
+// Module 16889 (trackActivityThermalStateNoticeShown)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4110 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;

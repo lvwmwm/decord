@@ -1,15 +1,15 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15042
+// Function ID: 15043
 // Name: QUEST_DOCK_EXPANDED_HEIGHT
-// Dependencies: [32, 19, 17, 4470, 5395, 14922, 673, 21, 4478, 14929, 14918, 14923, 14926, 8584, 586, 4197, 709, 686, 4217, 4927, 1234, 15009, 11557, 7805, 8617, 5501, 4940, 2]
+// Dependencies: [32, 19, 17, 4470, 5396, 14937, 673, 21, 4478, 14944, 14933, 14938, 14941, 8588, 586, 4197, 709, 686, 4217, 4928, 1234, 15024, 11562, 7808, 8621, 5502, 4941, 2]
 
-// Module 15027 (QUEST_DOCK_EXPANDED_HEIGHT)
+// Module 15042 (QUEST_DOCK_EXPANDED_HEIGHT)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5395 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5396 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
 import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

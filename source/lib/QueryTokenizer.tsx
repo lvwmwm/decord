@@ -1,9 +1,9 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12142
+// Function ID: 12143
 // Name: getMatch
 // Dependencies: [2]
 
-// Module 12136 (getMatch)
+// Module 12142 (getMatch)
 import set from "set" /* 2 */;
 
 function getMatch(str, arg1, index) {
@@ -438,7 +438,7 @@ prototype2["getMatch"] = function getMatch() {
   }
   return this.match[num];
 };
-prototype2["setData"] = function setData(arg0, arg1) {
+prototype2["setData"] = function setData(pinned, combined) {
   const self = this;
   if (null == this._data) {
     const _Map = Map;
@@ -446,7 +446,7 @@ prototype2["setData"] = function setData(arg0, arg1) {
     self._data = map;
   }
   const _data = self._data;
-  const result = _data.set(arg0, arg1);
+  const result = _data.set(pinned, combined);
 };
 prototype2["getData"] = function getData(arg0) {
   if (null != this._data) {

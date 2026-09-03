@@ -1,13 +1,13 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11838
+// Function ID: 11839
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 8155, 1386, 1383, 4298, 1372, 586, 11833, 11838, 6260, 2]
+// Dependencies: [32, 8159, 1386, 1383, 4298, 1372, 586, 11839, 11844, 6261, 2]
 // Exports: default
 
-// Module 11832 (useAppLauncherOnboardingContent)
-import resultDefault from "result" /* 11838 */;
+// Module 11838 (useAppLauncherOnboardingContent)
+import resultDefault from "result" /* 11844 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 8155 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 8159 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import { DismissibleContentGroupName as closure_6 } from "ContentDismissActionType" /* 1383 */;
 
@@ -45,7 +45,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
         result = result1;
       }
       obj[1] = !result;
-      const activityApplications = tmp(11833).useActivityApplications(obj);
+      const activityApplications = tmp(11839).useActivityApplications(obj);
       let flag = false;
       for (const item10042 of activityApplications) {
         if (null != stateFromStores.getEntry(item10042.id)) {
@@ -65,7 +65,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
     }
   }
   let obj2 = channelId(586);
-  let tmp7 = callback(channelId(6260).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let tmp7 = callback(channelId(6261).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   obj = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
   return obj;
 };

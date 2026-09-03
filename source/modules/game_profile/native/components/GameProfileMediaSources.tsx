@@ -1,10 +1,10 @@
-// Module ID: 8860
-// Function ID: 8861
+// Module ID: 8864
+// Function ID: 8865
 // Name: MEDIA_ITEM_MAX_WIDTH
-// Dependencies: [1464, 4755, 4512, 2]
+// Dependencies: [1464, 4756, 4512, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8860 (MEDIA_ITEM_MAX_WIDTH)
+// Module 8864 (MEDIA_ITEM_MAX_WIDTH)
 import set from "set" /* 2 */;
 import handleImageLoad from "handleImageLoad" /* 1464 */;
 
@@ -35,9 +35,9 @@ export const buildMediaEntries = function buildMediaEntries(game) {
     }
     items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(trailers.map((application_id) => {
-      const obj = { type: "trailer", originalUrl: callback(4755).getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: null };
-      const obj2 = callback(4755);
-      obj[2] = callback(4755).getAssetURL(application_id.application_id, application_id.id, closure_2, "webp");
+      const obj = { type: "trailer", originalUrl: callback(4756).getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: null };
+      const obj2 = callback(4756);
+      obj[2] = callback(4756).getAssetURL(application_id.application_id, application_id.id, closure_2, "webp");
       return obj;
     }), 0);
     let screenshotUrls = game.screenshotUrls;

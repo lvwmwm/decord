@@ -1,13 +1,13 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 11275
+// Function ID: 11276
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [19, 17, 682, 21, 4478, 709, 11272, 4474, 1233, 5076, 11273, 2]
+// Dependencies: [19, 17, 682, 21, 4478, 709, 11276, 4474, 1233, 5077, 11277, 2]
 // Exports: default
 
-// Module 11271 (UnreadSettingNoticeConnected)
+// Module 11275 (UnreadSettingNoticeConnected)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11272 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11276 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES" /* 682 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -52,7 +52,7 @@ export default function UnreadSettingNoticeConnected(channel) {
   const intl2 = _require(1233).intl;
   obj4[2] = intl2.string(_require(1233).t.KyUKhT);
   obj3[3] = callback(_require(4474).Text, obj4);
-  obj2[1] = callback(_require(5076).PressableOpacity, obj3);
+  obj2[1] = callback(_require(5077).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   return callback2(View, obj);

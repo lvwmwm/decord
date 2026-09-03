@@ -1,10 +1,10 @@
-// Module ID: 4725
-// Function ID: 4726
+// Module ID: 4726
+// Function ID: 4727
 // Name: getDeprecatedModalData
 // Dependencies: [4470, 673, 2]
 // Exports: default
 
-// Module 4725 (getDeprecatedModalData)
+// Module 4726 (getDeprecatedModalData)
 import closure_0 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { ModalAnimation } from "ME" /* 673 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 6753
-// Function ID: 6754
+// Module ID: 6754
+// Function ID: 6755
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6753 (metadata)
+// Module 6754 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeadphonesPairSpotIllustration-2x.png.js");

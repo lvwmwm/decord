@@ -1,22 +1,22 @@
-// Module ID: 8815
-// Function ID: 8816
+// Module ID: 8819
+// Function ID: 8820
 // Name: WidgetRenderer
-// Dependencies: [32, 19, 17, 1215, 8569, 21, 4478, 709, 8816, 8827, 8571, 12876, 4474, 12884, 1901, 12885, 586, 12, 7376, 1233, 6008, 7378, 8804, 7387, 12887, 7384, 8800, 12724, 2]
+// Dependencies: [32, 19, 17, 1215, 8573, 21, 4478, 709, 8820, 8831, 8575, 12888, 4474, 12896, 1901, 12897, 586, 12, 7377, 1233, 6009, 7379, 8808, 7388, 12899, 7385, 8804, 12736, 2]
 // Exports: default
 
-// Module 8815 (WidgetRenderer)
+// Module 8819 (WidgetRenderer)
 import ThemesDefault from "Themes" /* 709 */;
-import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7384 */;
-import toSubmission from "toSubmission" /* 7387 */;
-import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8800 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8816 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12884 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12887 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7385 */;
+import toSubmission from "toSubmission" /* 7388 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8804 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8820 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12896 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12899 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -145,7 +145,7 @@ let closure_17 = importAllResult.memo((game) => {
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = importDefault;
   const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(8827).GameProfileSources.UserProfile;
+  obj[2] = _require(8831).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp5Result;
   if (!disableInteraction) {
@@ -211,7 +211,7 @@ let closure_17 = importAllResult.memo((game) => {
     obj3[0] = tmp.comment;
     const obj4 = { size: "xxs", color: null };
     obj4[1] = ThemesDefault.colors.TEXT_MUTED;
-    const items3 = [tmp10(tmp6(12885).QuoteIcon, obj4), ];
+    const items3 = [tmp10(tmp6(12897).QuoteIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: null, children: null };
     obj5[3] = tmp.commentText;
     obj5[4] = game.comment;
@@ -234,7 +234,7 @@ let closure_18 = importAllResult.memo((game) => {
   ({ gameName, coverImageUrl } = useGameNameAndCoverImageDefault(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp3 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(8827).GameProfileSources.UserProfile;
+  obj[2] = _require(8831).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp4Result;
   if (!disableInteraction) {
@@ -289,7 +289,7 @@ let closure_19 = importAllResult.memo((game) => {
   ({ coverImageUrl, gameName } = useGameNameAndCoverImageDefault(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(8827).GameProfileSources.UserProfile;
+  obj[2] = _require(8831).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp3Result;
   if (!disableInteraction) {

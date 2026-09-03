@@ -1,18 +1,18 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12477
+// Function ID: 12478
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1921, 12439, 21, 4478, 5500, 709, 1498, 4474, 1233, 7779, 7780, 12438, 644, 6054, 38, 7810, 7774, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 12451, 21, 4478, 5501, 709, 1498, 4474, 1233, 7782, 7783, 12450, 644, 6055, 38, 7813, 7777, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12465 (AddPhoneScreen)
+// Module 12477 (AddPhoneScreen)
 import ThemesDefault from "Themes" /* 709 */;
-import AddPhoneDefault from "AddPhone" /* 7779 */;
+import AddPhoneDefault from "AddPhone" /* 7782 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 12439 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12451 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -45,7 +45,7 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   obj[1] = items;
   const obj2 = { style: tmp.container, reason: null, header: null, onComplete: null };
   const tmp2 = callback3(View, obj);
-  obj2[1] = _require(7780).ChangePhoneReason.CONTACT_SYNC;
+  obj2[1] = _require(7783).ChangePhoneReason.CONTACT_SYNC;
   obj2[2] = tmp2;
   obj2[3] = function onComplete(arg0) {
     return callback(closure_1_2[15]).submitPhone(arg0, callback);

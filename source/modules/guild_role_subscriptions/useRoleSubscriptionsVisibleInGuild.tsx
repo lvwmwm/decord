@@ -1,13 +1,13 @@
-// Module ID: 6105
-// Function ID: 6106
+// Module ID: 6106
+// Function ID: 6107
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
-// Dependencies: [1983, 1908, 673, 6106, 6107, 586, 6108, 6113, 2]
+// Dependencies: [1983, 1908, 673, 6107, 6108, 586, 6109, 6114, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild, useRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
 
-// Module 6105 (computeCanEveryoneInGuildSeeRoleSubscriptions)
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6106 */;
-import computeHasRoleSubscriptionsInGuild from "computeHasRoleSubscriptionsInGuild" /* 6107 */;
-import computeHasRoleSubscriptionsInGuildDefault from "computeHasRoleSubscriptionsInGuild" /* 6107 */;
+// Module 6106 (computeCanEveryoneInGuildSeeRoleSubscriptions)
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6107 */;
+import computeHasRoleSubscriptionsInGuild from "computeHasRoleSubscriptionsInGuild" /* 6108 */;
+import computeHasRoleSubscriptionsInGuildDefault from "computeHasRoleSubscriptionsInGuild" /* 6108 */;
 import closure_3 from "initialize" /* 1983 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import { GuildFeatures } from "ME" /* 673 */;
@@ -57,7 +57,7 @@ export const useRoleSubscriptionsVisibleInGuild = function useRoleSubscriptionsV
     return closure_1_6(closure_0, items);
   }, items1);
   const obj = _require(586);
-  const shouldHideGuildPurchaseEntryPoints = _require(6108).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
+  const shouldHideGuildPurchaseEntryPoints = _require(6109).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
   let tmp3 = !shouldHideGuildPurchaseEntryPoints;
   if (!shouldHideGuildPurchaseEntryPoints) {
     if (!stateFromStores) {
@@ -78,7 +78,7 @@ export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscri
     return closure_1_6(closure_0, items);
   }, items1);
   const obj = _require(586);
-  const shouldHideGuildPurchaseEntryPoints = _require(6108).useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
+  const shouldHideGuildPurchaseEntryPoints = _require(6109).useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
   let tmp5 = !shouldHideGuildPurchaseEntryPoints;
   if (!shouldHideGuildPurchaseEntryPoints) {
     if (!stateFromStores) {
@@ -86,8 +86,8 @@ export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscri
     }
     tmp5 = stateFromStores;
   }
-  const obj2 = _require(6108);
-  const guildEligibleForGuildProducts = tmp3(6113).useGuildEligibleForGuildProducts(id);
+  const obj2 = _require(6109);
+  const guildEligibleForGuildProducts = tmp3(6114).useGuildEligibleForGuildProducts(id);
   if (tmp5) {
     let flag = !guildEligibleForGuildProducts;
     if (guildEligibleForGuildProducts) {

@@ -1,10 +1,10 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14574
+// Function ID: 14575
 // Name: useIs2FAEnabled
 // Dependencies: [1215, 1921, 644, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 14559 (useIs2FAEnabled)
+// Module 14574 (useIs2FAEnabled)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;

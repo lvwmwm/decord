@@ -1,14 +1,14 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14389
+// Function ID: 14390
 // Name: validateTransportType
-// Dependencies: [4380, 673, 9516, 2]
+// Dependencies: [4380, 673, 9520, 2]
 // Exports: validateTransportType
 
-// Module 14373 (validateTransportType)
+// Module 14389 (validateTransportType)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
-import prototypeDefault from "prototype" /* 9516 */;
+import prototypeDefault from "prototype" /* 9520 */;
 
 const TransportTypes = RPC_SCOPE_CONFIG.TransportTypes;
 const RPCErrors = ME.RPCErrors;

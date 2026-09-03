@@ -1,26 +1,26 @@
-// Module ID: 6197
-// Function ID: 6198
+// Module ID: 6198
+// Function ID: 6199
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1339, 1390, 4120, 1921, 4965, 4967, 673, 1337, 4166, 4139, 6198, 6191, 6199, 706, 6226, 6227, 6228, 644, 4322, 1372, 1369, 4973, 695, 4700, 2]
+// Dependencies: [5, 1339, 1390, 4120, 1921, 4966, 4968, 673, 1337, 4166, 4139, 6199, 6192, 6200, 706, 6227, 6228, 6229, 644, 4322, 1372, 1369, 4974, 695, 4701, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 6197 (hasPermissionToPlaySound)
+// Module 6198 (hasPermissionToPlaySound)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 6191 */;
-import getMuteStates from "getMuteStates" /* 6198 */;
-import VoiceChannelEffectSentLocation from "VoiceChannelEffectSentLocation" /* 6199 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
+import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 6192 */;
+import getMuteStates from "getMuteStates" /* 6199 */;
+import VoiceChannelEffectSentLocation from "VoiceChannelEffectSentLocation" /* 6200 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord" /* 1390 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "handleSoundCreateOrUpdate" /* 4965 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4967 */;
+import closure_8 from "handleSoundCreateOrUpdate" /* 4966 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4968 */;
 import ME from "ME" /* 673 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
 

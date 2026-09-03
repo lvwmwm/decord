@@ -1,14 +1,14 @@
-// Module ID: 13598
-// Function ID: 13599
+// Module ID: 13613
+// Function ID: 13614
 // Name: initialize
-// Dependencies: [5231, 673, 684, 4166, 706, 586, 2]
+// Dependencies: [5232, 673, 684, 4166, 706, 586, 2]
 
-// Module 13598 (initialize)
+// Module 13613 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import closure_3 from "filterPlayingActivities" /* 5231 */;
+import closure_3 from "filterPlayingActivities" /* 5232 */;
 import { StatusTypes } from "ME" /* 673 */;
 
 require = arg1;

@@ -1,19 +1,19 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12787
+// Function ID: 12788
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4478, 709, 12776, 4474, 7308, 12763, 1233, 12777, 1949, 2]
+// Dependencies: [17, 21, 4478, 709, 12788, 4474, 7309, 12775, 1233, 12789, 1949, 2]
 // Exports: default
 
-// Module 12775 (ProductNameAndDescription)
+// Module 12787 (ProductNameAndDescription)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 import Text from "Text" /* 4474 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7308 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 12763 */;
-import getBundleDescription from "getBundleDescription" /* 12776 */;
-import PriceTagDefault from "PriceTag" /* 12777 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 12775 */;
+import getBundleDescription from "getBundleDescription" /* 12788 */;
+import PriceTagDefault from "PriceTag" /* 12789 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
