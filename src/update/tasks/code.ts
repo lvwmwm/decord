@@ -3,7 +3,9 @@ import { join as pathJoin } from "node:path";
 import { commit } from "../git";
 import type { Progress } from "../progress";
 import { commitAnyway, cuteVersion, modulePathsDest, modulesPath } from "../shared";
-import { join, sortEntries } from "../utils";
+import { formatBytes, join, sortEntries } from "../utils";
+
+const MAX_FILE_SIZE = 100 * 1024 * 1024;
 
 function extractModuleId(filename: string): number | undefined {
 	const m1 = filename.match(/^module_(\d+)\.js$/);
@@ -75,7 +77,12 @@ export default async function code(progress: Progress, _code: string[]) {
 	}
 
 	const files = new Map<string, number>();
+	const skipped: string[] = [];
 	for (const [relativePath, fileSize] of rawFiles) {
+		if (fileSize > MAX_FILE_SIZE) {
+			skipped.push(`${join("source", resolveDest(relativePath))} (${formatBytes(fileSize)})`);
+			continue;
+		}
 		const dest = resolveDest(relativePath);
 		if (!files.has(dest)) files.set(dest, fileSize);
 	}
@@ -96,7 +103,8 @@ export default async function code(progress: Progress, _code: string[]) {
 		await rm(filePrefix, { recursive: true, force: true });
 
 		await Promise.all(
-			[...rawFiles.entries()].map(async ([relativePath]) => {
+			[...rawFiles.entries()].map(async ([relativePath, fileSize]) => {
+				if (fileSize > MAX_FILE_SIZE) return;
 				const dest = join(filePrefix, resolveDest(relativePath));
 				await mkdir(pathJoin(dest, ".."), { recursive: true });
 				await Bun.write(dest, Bun.file(join(modulesPath, relativePath)));
@@ -108,7 +116,12 @@ export default async function code(progress: Progress, _code: string[]) {
 
 		await Bun.sleep(1500);
 
-		await commit(["source.jsonl", "source/*"], `chore: update source for ${cuteVersion}`);
+		if (skipped.length) console.warn(`Skipped ${skipped.length} file(s) >100MB (GitHub limit):\n${skipped.join("\n")}`);
+
+		const message = skipped.length
+			? `chore: update source for ${cuteVersion}\n\nSkipped ${skipped.length} file(s) >100MB (GitHub limit): ${skipped.join(", ")}`
+			: `chore: update source for ${cuteVersion}`;
+		await commit(["source.jsonl", "source/*"], message);
 		progress.update("code_pushing", true);
 	} else {
 		progress.update("code_remaking", null);
