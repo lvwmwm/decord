@@ -47,6 +47,11 @@ export async function runTasks() {
 			progress.start("preinit");
 
 			progress.start("preinit_discard");
+			await Bun.$`git clean -f -- .update-skipped`
+				.cwd("../data")
+				.nothrow()
+				.quiet()
+				.catch(() => {});
 			await Bun.$`git reset --hard`.cwd("../data").nothrow().quiet().then(handleShellErr);
 			await Bun.write("../data/version.txt", version);
 			// canvas branch may not exist in test
@@ -90,7 +95,25 @@ export async function runTasks() {
 				"decompile",
 			)) as Promise<void> | undefined;
 		} catch (e) {
-			throw new Error(`Failed to decompile!\n${e}`);
+			const detail = (formatError(e) || String(e)).split("\n")[0];
+			console.warn(
+				`\nDecompile failed or timed out (${detail}).` +
+					`\nSkipping update for this release so the next run can retry.\n`,
+			);
+			// restore version.txt so the next check sees the release as still pending and re-runs
+			await Bun.$`git checkout -- version.txt`
+				.cwd("../data")
+				.nothrow()
+				.quiet()
+				.catch(() => {});
+			await Bun.$`git checkout -- version.txt`
+				.cwd("../canvas")
+				.nothrow()
+				.quiet()
+				.catch(() => {});
+			// mark the run as skipped so the workflow won't publish/tag a release that never decompiled
+			await Bun.write("../data/.update-skipped", version).catch(() => {});
+			return;
 		}
 
 		const code = (await Bun.file(codePath).text()).replace(/\r/g, "").split("\n");

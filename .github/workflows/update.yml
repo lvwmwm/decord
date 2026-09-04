@@ -70,16 +70,30 @@ jobs:
             - name: Publish changes
               if: ${{ steps.check.outputs.version != 'false' }}
               working-directory: data
-              run: git push
+              run: |
+                  if [ -f .update-skipped ]; then
+                      echo "Update skipped (decompile failed); not publishing."
+                      exit 0
+                  fi
+                  git push
 
             - name: Publish canvas
               if: ${{ steps.check.outputs.version != 'false' }}
-              working-directory: canvas
-              run: git push
+              working-directory: data
+              run: |
+                  if [ -f .update-skipped ]; then
+                      echo "Update skipped (decompile failed); not publishing canvas."
+                      exit 0
+                  fi
+                  git -C ../canvas push
 
             - name: Tag changes
               if: ${{ steps.check.outputs.version != 'false' }}
               working-directory: data
               run: |
-                git tag -f ${{ steps.check.outputs.version }}
-                git push origin -f ${{ steps.check.outputs.version }}
+                  if [ -f .update-skipped ]; then
+                      echo "Update skipped (decompile failed); not tagging."
+                      exit 0
+                  fi
+                  git tag -f ${{ steps.check.outputs.version }}
+                  git push origin -f ${{ steps.check.outputs.version }}

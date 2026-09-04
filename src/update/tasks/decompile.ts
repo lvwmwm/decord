@@ -1,4 +1,5 @@
 import { exists } from "node:fs/promises";
+import { spawn } from "bun";
 import { commit } from "../git";
 import type { Progress } from "../progress";
 import { codePath, commitAnyway, cuteVersion, modulePathsDest, modulesPath, workFolder } from "../shared";
@@ -7,6 +8,23 @@ import { handleShellErr, join } from "../utils";
 const bundleDest = join("..", "data", "index.android.bundle");
 
 const gzipWorkerURL = new URL("decompile-gzip.ts", import.meta.url).href;
+
+// generous cap so a hanging decompiler is aborted deterministically instead of wedging the job
+const DECOMPILE_TIMEOUT_MS = 20 * 60 * 1000;
+
+async function runDecompiler(cmd: string[], label: string) {
+	const proc = spawn({ cmd, stdout: "pipe", stderr: "pipe", stdin: "ignore" });
+	const timer = setTimeout(() => {
+		console.warn(`${label} exceeded ${DECOMPILE_TIMEOUT_MS / 1000}s, killing it`);
+		proc.kill();
+	}, DECOMPILE_TIMEOUT_MS);
+	const exitCode = await proc.exited;
+	clearTimeout(timer);
+	const out = `${await new Response(proc.stdout).text().catch(() => "")}${await new Response(proc.stderr)
+		.text()
+		.catch(() => "")}`.trim();
+	if (exitCode !== 0 && exitCode !== 11) throw new Error(`${label} failed (exit ${exitCode})\n${out}`.trim());
+}
 
 export default async function decompile(progress: Progress, pathToBundle: string) {
 	const pathToDecompiler = join(workFolder, "decompiler");
@@ -30,14 +48,11 @@ export default async function decompile(progress: Progress, pathToBundle: string
 	}
 
 	if (!(await Bun.file(codePath).exists())) {
-		await Bun.$`${decompilerBin} decompile ${pathToBundle} --output ${codePath}`.quiet().nothrow().then(handleShellErr);
+		await runDecompiler([decompilerBin, "decompile", pathToBundle, "--output", codePath], "decompile");
 	}
 
 	if (!(await exists(modulesPath))) {
-		await Bun.$`${decompilerBin} extract ${pathToBundle} --output ${modulesPath}`
-			.quiet()
-			.nothrow()
-			.then(handleShellErr);
+		await runDecompiler([decompilerBin, "extract", pathToBundle, "--output", modulesPath], "extract");
 	}
 
 	progress.update("decompile_decompiling", true);
