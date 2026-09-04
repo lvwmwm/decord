@@ -1,9 +1,9 @@
-// Module ID: 6294
-// Function ID: 6295
+// Module ID: 5675
+// Function ID: 5676
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6294 (vanityUrl)
+// Module 5675 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AccountAgeTier6SmallBadge-2x.png.js");

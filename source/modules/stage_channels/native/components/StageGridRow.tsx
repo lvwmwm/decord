@@ -1,12 +1,12 @@
-// Module ID: 10164
-// Function ID: 10165
-// Dependencies: [19, 17, 21, 4478, 10156, 5377, 5080, 10165, 10155, 2]
+// Module ID: 9984
+// Function ID: 9985
+// Dependencies: [19, 17, 21, 4481, 9976, 5385, 5087, 9985, 9975, 2]
 
-// Module 10164
-import getIsScreenLandscape from "getIsScreenLandscape" /* 5080 */;
+// Module 9984
+import getIsScreenLandscape from "getIsScreenLandscape" /* 5087 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -22,11 +22,11 @@ const memoResult = importAllResult.memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10156).StageTileSize.FULL;
+    THIRD = tmp2(9976).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10156).StageTileSize.HALF;
+    THIRD = tmp2(9976).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10156).StageTileSize.THIRD;
+    THIRD = tmp2(9976).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {

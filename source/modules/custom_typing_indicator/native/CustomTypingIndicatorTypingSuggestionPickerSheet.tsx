@@ -1,16 +1,16 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15282
+// Function ID: 15283
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 4478, 709, 5998, 5630, 1233, 3502, 7704, 11772, 7705, 2]
+// Dependencies: [32, 19, 21, 4481, 709, 7138, 7089, 1233, 3502, 5640, 11903, 5643, 2]
 // Exports: default
 
-// Module 15200 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 15282 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 3502 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { content: null };
@@ -28,7 +28,7 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
   obj = { title: null };
   let intl = onChange(1233).intl;
   obj[0] = intl.string(messagesProxyDefault["X+ijyw"]);
-  obj[1] = jsx(onChange(5630).BottomSheetTitleHeader, { title: null });
+  obj[1] = jsx(onChange(7089).BottomSheetTitleHeader, { title: null });
   const intl2 = onChange(1233).intl;
   obj[2] = intl2.string(messagesProxyDefault.hrl2cG);
   obj = {
@@ -41,14 +41,14 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
     children: null
   };
   const tmp = callback2();
-  const customTypingIndicatorSuggestionPresets = onChange(11772).getCustomTypingIndicatorSuggestionPresets();
+  const customTypingIndicatorSuggestionPresets = onChange(11903).getCustomTypingIndicatorSuggestionPresets();
   obj[3] = customTypingIndicatorSuggestionPresets.map((value) => {
     const obj = { value, label: null };
     const intl = onChange(1233).intl;
-    obj[1] = intl.string(onChange(11772).getCustomTypingIndicatorSuggestionMessage(value));
-    return callback2(onChange(7705).TableRadioRow, obj, value);
+    obj[1] = intl.string(onChange(11903).getCustomTypingIndicatorSuggestionMessage(value));
+    return callback2(onChange(5643).TableRadioRow, obj, value);
   });
-  obj[3] = jsx(onChange(7704).TableRadioGroup, {
+  obj[3] = jsx(onChange(5640).TableRadioGroup, {
     value: tmp2[0],
     onChange(arg0) {
       callback(arg0);
@@ -57,7 +57,7 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
     hasIcons: false,
     children: null
   });
-  return jsx(onChange(5998).ActionSheet, {
+  return jsx(onChange(7138).ActionSheet, {
     value: tmp2[0],
     onChange(arg0) {
       callback(arg0);

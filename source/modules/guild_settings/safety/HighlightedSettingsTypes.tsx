@@ -1,9 +1,9 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14763
+// Function ID: 14764
 // Name: HighlightColors
 // Dependencies: [2]
 
-// Module 14682 (HighlightColors)
+// Module 14763 (HighlightColors)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_settings/safety/HighlightedSettingsTypes.tsx");

@@ -1,18 +1,19 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5095
+// Function ID: 5096
 // Name: getUploadFileSizeSum
-// Dependencies: [1908, 1921, 673, 1923, 12, 5088, 4404, 4139, 4372, 1233, 2]
-// Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, getMaxRequestSize, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
+// Dependencies: [1908, 1921, 673, 1923, 12, 5096, 4407, 4139, 5090, 4375, 1233, 2]
+// Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5087 (getUploadFileSizeSum)
+// Module 5095 (getUploadFileSizeSum)
 import applyDefault from "apply" /* 12 */;
-import noConflictDefault from "noConflict" /* 5088 */;
+import items5 from "items" /* 5090 */;
+import noConflictDefault from "noConflict" /* 5096 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 
-const require = arg1;
+require = arg1;
 function getUploadFileSizeSum(arg0) {
   let num = 0;
   while (tmp !== undefined) {
@@ -131,7 +132,7 @@ export const maxFileSize = function maxFileSize(guildId) {
   } else {
     const guild = store.getGuild(guildId);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4404).FileUploadPowerupHoldoutExperiment;
+      const FileUploadPowerupHoldoutExperiment = guild(4407).FileUploadPowerupHoldoutExperiment;
       enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
       let reduced = items2.reduce((arg0, arg1) => {
         [tmp, tmp2] = arg1;
@@ -169,7 +170,7 @@ export const anyFileTooLarge = function anyFileTooLarge(arg0, arg1) {
   } else {
     guild = store.getGuild(arg1);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4404).FileUploadPowerupHoldoutExperiment;
+      const FileUploadPowerupHoldoutExperiment = guild(4407).FileUploadPowerupHoldoutExperiment;
       enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
       guild = items2;
       reduce = items2.reduce;
@@ -199,23 +200,13 @@ export const anyFileTooLarge = function anyFileTooLarge(arg0, arg1) {
 };
 export { getUploadFileSizeSum };
 export const uploadSumTooLarge = function uploadSumTooLarge(arg0) {
-  const currentUser = authStore.getCurrentUser();
-  if (null != currentUser) {
-    currentUser.isStaff();
-  }
-  return getUploadFileSizeSum(arg0) > 524288000;
-};
-export const getMaxRequestSize = function getMaxRequestSize() {
-  const currentUser = authStore.getCurrentUser();
-  if (null != currentUser) {
-    currentUser.isStaff();
-  }
-  return 524288000;
+  const tmp = getUploadFileSizeSum(arg0);
+  return tmp > items5.getMaxTotalAttachmentSize({ location: "uploadSumTooLarge" });
 };
 export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadblockDescription(arg0) {
   ({ guildId, maxSize } = arg0);
   ({ onClick, hideLearnMore } = arg0);
-  let obj = _Math(4372);
+  let obj = _Math(4375);
   if (maxSize == null) {
     const currentUser = authStore.getCurrentUser();
     const userMaxFileSize = enabled(4139).getUserMaxFileSize(currentUser);
@@ -224,7 +215,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
     } else {
       _Math = store.getGuild(guildId);
       if (null != _Math) {
-        const FileUploadPowerupHoldoutExperiment = tmp(4404).FileUploadPowerupHoldoutExperiment;
+        const FileUploadPowerupHoldoutExperiment = tmp(4407).FileUploadPowerupHoldoutExperiment;
         enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
         let reduced = items2.reduce((arg0, arg1) => {
           [tmp, tmp2] = arg1;
@@ -252,7 +243,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
     const obj5 = enabled(4139);
   }
   const formatSizeResult = obj.formatSize(maxSize / 1024, { useKibibytes: true });
-  const formatSizeResult1 = _Math(4372).formatSize(closure_7 / 1024, { useKibibytes: true });
+  const formatSizeResult1 = _Math(4375).formatSize(closure_7 / 1024, { useKibibytes: true });
   if (true === hideLearnMore) {
     const intl2 = tmp(1233).intl;
     obj = { maxSize: null, premiumMaxSize: null };

@@ -1,19 +1,19 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11468
+// Function ID: 11469
 // Name: MediaViewerAltTextSheet
-// Dependencies: [19, 21, 4478, 709, 11362, 5080, 5631, 5630, 1233, 4474, 2]
+// Dependencies: [19, 21, 4481, 709, 11469, 5087, 7090, 7089, 1233, 4477, 2]
 // Exports: default
 
-// Module 11361 (MediaViewerAltTextSheet)
+// Module 11468 (MediaViewerAltTextSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
-import useMessagePreviewHeightStore from "useMessagePreviewHeightStore" /* 11362 */;
+import Text from "Text" /* 4477 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
+import useMessagePreviewHeightStore from "useMessagePreviewHeightStore" /* 11469 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

@@ -1,9 +1,9 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6157
+// Function ID: 6158
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6776 (metadata)
+// Module 6157 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/InkQuillSpotIllustration-2x.png.js");

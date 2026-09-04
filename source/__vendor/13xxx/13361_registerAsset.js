@@ -1,0 +1,10 @@
+// Module ID: 13361
+// Function ID: 13362
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 13361 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "69d07b73ba14be901804955fa84a0ead", name: "grey_badge", type: "png" });

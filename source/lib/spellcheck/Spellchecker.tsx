@@ -1,10 +1,10 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 5515
+// Function ID: 5516
 // Name: _install
-// Dependencies: [5, 32, 1995, 3, 4103, 5581, 5582, 5583, 5584, 1470, 12, 1904, 2]
+// Dependencies: [5, 32, 1995, 3, 4103, 5516, 5517, 5518, 5519, 1394, 12, 1904, 2]
 // Exports: install
 
-// Module 5580 (_install)
+// Module 5515 (_install)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 1904 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -260,7 +260,7 @@ prototype["applyLanguages"] = function applyLanguages(locale) {
     }
     closure_1_6.error("" + str2 + " is not a valid locale.");
   });
-  const arr = Array.from(new Set(mapped.filter(mapped1(1470).isNotNullish)));
+  const arr = Array.from(new Set(mapped.filter(mapped1(1394).isNotNullish)));
   if (0 !== arr.length) {
     mapped1 = arr.map((arg0) => {
       let tmp = self.rawLocaleByNormalized[arg0];

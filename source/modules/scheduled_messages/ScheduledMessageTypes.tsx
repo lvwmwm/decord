@@ -1,9 +1,9 @@
-// Module ID: 7602
-// Function ID: 7603
+// Module ID: 7779
+// Function ID: 7780
 // Name: ScheduledMessageSendState
 // Dependencies: [2]
 
-// Module 7602 (ScheduledMessageSendState)
+// Module 7779 (ScheduledMessageSendState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageTypes.tsx");

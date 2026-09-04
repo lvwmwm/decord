@@ -1,12 +1,12 @@
-// Module ID: 13203
-// Function ID: 13204
+// Module ID: 13236
+// Function ID: 13237
 // Name: getMobileNitroMarketingRedesignExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getMobileNitroMarketingRedesignExperiment
 
-// Module 13203 (getMobileNitroMarketingRedesignExperiment)
+// Module 13236 (getMobileNitroMarketingRedesignExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

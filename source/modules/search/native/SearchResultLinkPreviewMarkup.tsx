@@ -1,13 +1,13 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16598
+// Function ID: 16599
 // Name: NativeSearchResultLinkPreviewParser
-// Dependencies: [4951, 4952, 16513, 7908, 2]
+// Dependencies: [4958, 4959, 16599, 7918, 2]
 
-// Module 16512 (NativeSearchResultLinkPreviewParser)
-import parseLinkDefault from "parseLink" /* 4952 */;
-import importDefaultResult from "combineMarkupRules" /* 4951 */;
-import createSearchResultLinkPreviewReactRules from "createSearchResultLinkPreviewReactRules" /* 16513 */;
-import importAllResult from "reactParserFor" /* 7908 */;
+// Module 16598 (NativeSearchResultLinkPreviewParser)
+import parseLinkDefault from "parseLink" /* 4959 */;
+import importDefaultResult from "combineMarkupRules" /* 4958 */;
+import createSearchResultLinkPreviewReactRules from "createSearchResultLinkPreviewReactRules" /* 16599 */;
+import importAllResult from "reactParserFor" /* 7918 */;
 
 const items = [parseLinkDefault.NATIVE_SEARCH_RESULT_LINK_RULES, ];
 items[1] = require("createSearchResultLinkPreviewReactRules").createSearchResultLinkPreviewReactRules();

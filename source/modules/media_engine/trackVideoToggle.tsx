@@ -1,14 +1,14 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 13754
+// Function ID: 13755
 // Name: trackVideoToggle
-// Dependencies: [673, 13715, 695, 2]
+// Dependencies: [673, 13748, 695, 2]
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 13721 (trackVideoToggle)
+// Module 13754 (trackVideoToggle)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import calculateFps from "calculateFps" /* 13715 */;
+import calculateFps from "calculateFps" /* 13748 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");

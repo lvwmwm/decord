@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "436501dcf3af209f85edbd0cde1cf184", name: "ic_vr_headset_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a97ebd26f28acc69dba8dec170283378", name: "ChatMarkUnreadIcon", type: "png" });

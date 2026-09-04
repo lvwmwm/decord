@@ -1,10 +1,10 @@
-// Module ID: 15199
-// Function ID: 15200
+// Module ID: 15281
+// Function ID: 15282
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1921, 673, 21, 4478, 709, 1929, 1233, 3502, 1498, 1499, 586, 4139, 5962, 695, 11772, 1941, 4643, 4445, 15200, 2008, 15201, 8088, 8085, 7768, 4376, 14498, 8406, 11781, 4673, 4474, 15202, 6001, 5608, 1994, 4927, 4929, 12183, 7850, 15247, 8988, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 673, 21, 4481, 709, 1929, 1233, 3502, 1498, 1499, 586, 4139, 7102, 695, 11903, 1941, 4646, 4448, 15282, 2008, 15283, 8098, 8095, 6924, 4379, 14530, 9321, 11912, 4680, 4477, 15284, 5642, 5560, 1994, 4934, 4936, 8764, 7860, 15329, 9899, 2]
 // Exports: default
 
-// Module 15199 (CustomTypingIndicatorEditScreen)
+// Module 15281 (CustomTypingIndicatorEditScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

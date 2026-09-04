@@ -1,19 +1,19 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12337
+// Function ID: 12338
 // Name: areResolvedGamesEqual
-// Dependencies: [32, 19, 7534, 7535, 4502, 5062, 1921, 4954, 4478, 709, 11793, 12, 6163, 586, 5065, 11794, 11792, 8456, 1954, 12206, 2]
+// Dependencies: [32, 19, 7711, 7712, 4505, 5069, 1921, 4961, 4481, 709, 11924, 12, 7247, 586, 5072, 11925, 11923, 9345, 1954, 12338, 2]
 
-// Module 12205 (areResolvedGamesEqual)
+// Module 12337 (areResolvedGamesEqual)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_6 from "handleInit" /* 7534 */;
-import closure_7 from "handleInit" /* 7535 */;
-import closure_8 from "handleLoadMessages" /* 4502 */;
-import closure_9 from "set" /* 5062 */;
+import closure_6 from "handleInit" /* 7711 */;
+import closure_7 from "handleInit" /* 7712 */;
+import closure_8 from "handleLoadMessages" /* 4505 */;
+import closure_9 from "set" /* 5069 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import regExp from "regExp" /* 4954 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import regExp from "regExp" /* 4961 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function areResolvedGamesEqual(size, size2) {

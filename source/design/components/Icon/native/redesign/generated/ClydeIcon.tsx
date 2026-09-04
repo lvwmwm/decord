@@ -1,14 +1,14 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 10749
+// Function ID: 10750
 // Name: ClydeIcon
-// Dependencies: [19, 21, 709, 4196, 9058, 2]
+// Dependencies: [19, 21, 709, 4196, 10750, 2]
 // Exports: ClydeIcon
 
-// Module 9057 (ClydeIcon)
+// Module 10749 (ClydeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9058 */;
+import registerAsset from "registerAsset" /* 10750 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

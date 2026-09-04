@@ -1,16 +1,16 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15271
+// Function ID: 15272
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1938, 21, 4478, 709, 4217, 1937, 685, 4446, 4445, 5631, 5630, 1233, 4929, 15188, 14494, 2]
+// Dependencies: [19, 17, 1938, 21, 4481, 709, 4218, 1937, 685, 4449, 4448, 7090, 7089, 1233, 4936, 15272, 14526, 2]
 // Exports: default
 
-// Module 15187 (DisplayNameStylesGummyCustomColorSheet)
+// Module 15271 (DisplayNameStylesGummyCustomColorSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import items3 from "items3" /* 1938 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: c5, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_6 } = items3);
@@ -30,13 +30,13 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   onSelect = onSelect.onSelect;
   let sharedValue;
   const tmp = callback3();
-  let obj = onSelect(4217);
+  let obj = onSelect(4218);
   obj1 = onSelect(1937);
   let obj2 = onSelect(685);
   sharedValue = obj.useSharedValue(obj1.wrapHue(obj2.int2hslRaw(onSelect.initialColor).h));
   const items = [sharedValue, onSelect];
   const callback = React.useCallback(() => {
-    const result = onSelect(4446).triggerHapticFeedback(onSelect(4446).HapticFeedbackTypes.IMPACT_LIGHT);
+    const result = onSelect(4449).triggerHapticFeedback(onSelect(4449).HapticFeedbackTypes.IMPACT_LIGHT);
   }, []);
   const callback1 = React.useCallback(() => {
     const result = onSelect(closure_1_2[9]).triggerHapticFeedback(onSelect(closure_1_2[9]).HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -53,14 +53,14 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   const intl2 = onSelect(1233).intl;
   obj1[2] = intl2.string(onSelect(1233).t.XqMe3N);
   obj1[3] = callback1;
-  obj[1] = callback(onSelect(4929).Button, obj1);
-  obj[0] = callback(onSelect(5630).BottomSheetTitleHeader, obj);
+  obj[1] = callback(onSelect(4936).Button, obj1);
+  obj[0] = callback(onSelect(7089).BottomSheetTitleHeader, obj);
   obj2 = { style: tmp.body, children: null };
-  const obj3 = { style: tmp.previewWrapper, children: callback(View, { style: tmp.preview, children: callback(sharedValue(15188), { hue: sharedValue }) }) };
+  const obj3 = { style: tmp.previewWrapper, children: callback(View, { style: tmp.preview, children: callback(sharedValue(15272), { hue: sharedValue }) }) };
   const items1 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.preview, children: callback(sharedValue(15188), { hue: sharedValue }) };
-  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(14494), obj6) });
+  const obj4 = { style: tmp.preview, children: callback(sharedValue(15272), { hue: sharedValue }) };
+  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(14526), obj6) });
   obj2[1] = items1;
   obj[1] = callback2(View, obj2);
-  return callback(onSelect(5631).BottomSheet, obj);
+  return callback(onSelect(7090).BottomSheet, obj);
 };

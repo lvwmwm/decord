@@ -1,15 +1,15 @@
-// Module ID: 6093
-// Function ID: 6094
+// Module ID: 7177
+// Function ID: 7178
 // Name: updateProduct
-// Dependencies: [6094, 502, 6090, 4154, 586, 706, 2]
+// Dependencies: [7178, 502, 7174, 4154, 586, 706, 2]
 
-// Module 6093 (updateProduct)
+// Module 7177 (updateProduct)
 import sum from "sum" /* 502 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4154 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6090 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 6094 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 7178 */;
 import set from "set" /* 2 */;
 
 function updateProduct(currencyCode) {

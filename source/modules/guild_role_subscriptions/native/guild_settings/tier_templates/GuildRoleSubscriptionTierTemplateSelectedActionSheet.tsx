@@ -1,17 +1,17 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17697
+// Function ID: 17698
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 1383, 21, 4478, 709, 1627, 5631, 5633, 4474, 1233, 1296, 4930, 2]
+// Dependencies: [19, 17, 1383, 21, 4481, 709, 1627, 7090, 6567, 4477, 1233, 1296, 4937, 2]
 // Exports: default
 
-// Module 17617 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 17697 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -39,11 +39,11 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1233).intl;
   obj1[2] = intl.string(markAsDismissed(1233).t.Y0PTc0);
-  const items = [callback(markAsDismissed(4474).Text, obj1), callback(markAsDismissed(1296).Spacer, { size: 12 }), , , ];
+  const items = [callback(markAsDismissed(4477).Text, obj1), callback(markAsDismissed(1296).Spacer, { size: 12 }), , , ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = markAsDismissed(1233).intl;
   obj2[2] = intl2.string(markAsDismissed(1233).t["YSI/1/"]);
-  items[2] = callback(markAsDismissed(4474).Text, obj2);
+  items[2] = callback(markAsDismissed(4477).Text, obj2);
   items[3] = callback(markAsDismissed(1296).Spacer, { size: 48 });
   const obj3 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl3 = markAsDismissed(1233).intl;
@@ -52,9 +52,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj3[2] = function onPress() {
     return markAsDismissed(closure_1_4.UNKNOWN);
   };
-  items[4] = callback(markAsDismissed(4930).BaseTextButton, obj3);
+  items[4] = callback(markAsDismissed(4937).BaseTextButton, obj3);
   obj[1] = items;
-  obj[1] = callback2(markAsDismissed(5633).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(6567).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5631).BottomSheet, obj);
+  return callback(markAsDismissed(7090).BottomSheet, obj);
 };

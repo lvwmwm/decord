@@ -1,9 +1,9 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7578
+// Function ID: 7579
 // Name: set
-// Dependencies: [32, 1215, 3, 1972, 1956, 706, 7401, 2]
+// Dependencies: [32, 1215, 3, 1972, 1956, 706, 7579, 2]
 
-// Module 7400 (set)
+// Module 7578 (set)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import databaseNameDefault from "databaseName" /* 1972 */;

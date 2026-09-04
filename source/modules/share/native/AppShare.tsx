@@ -1,18 +1,18 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17847
+// Function ID: 17848
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7216, 14289, 1215, 673, 12214, 21, 586, 6061, 1234, 14328, 12217, 7230, 695, 4946, 14447, 13878, 1623, 8652, 6056, 16743, 16789, 4864, 2]
+// Dependencies: [32, 19, 17, 7394, 14321, 1215, 673, 12346, 21, 586, 6534, 1234, 14360, 12349, 7408, 695, 4953, 14479, 13910, 1623, 8292, 6979, 16830, 16876, 4871, 2]
 // Exports: default
 
-// Module 17767 (AppShare)
+// Module 17847 (AppShare)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import result from "result" /* 7216 */;
-import handleTokenUpdated from "handleTokenUpdated" /* 14289 */;
+import result from "result" /* 7394 */;
+import handleTokenUpdated from "handleTokenUpdated" /* 14321 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { MultiAccountSwitchLocation as closure_9 } from "MAX_ACCOUNTS" /* 12214 */;
+import { MultiAccountSwitchLocation as closure_9 } from "MAX_ACCOUNTS" /* 12346 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -41,9 +41,9 @@ export default function AppShare(targetUserId) {
   const items = [first];
   const effect = obj.useEffect(() => {
     if (!first) {
-      first(14328).init();
+      first(14360).init();
       dependencyMap(true);
-      const obj = first(14328);
+      const obj = first(14360);
     }
   }, items);
   const items1 = [targetUserId];
@@ -71,8 +71,8 @@ export default function AppShare(targetUserId) {
   const items3 = [stateFromStores];
   const effect2 = obj.useEffect(() => {
     if (stateFromStores) {
-      first(6061).startSession(closure_1_7.getToken());
-      const obj = first(6061);
+      first(6534).startSession(closure_1_7.getToken());
+      const obj = first(6534);
       if (obj2.isAndroid()) {
         const NativePermissionManager = closure_1_6.NativePermissionManager;
         const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
@@ -90,7 +90,7 @@ export default function AppShare(targetUserId) {
     obj = { has_content: tmp2, has_attachment: tmp.attachments.length > 0 };
     obj.track(closure_1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items4);
-  first(4946)(() => {
+  first(4953)(() => {
     const attachments = stateFromStores.attachments;
     const mapped = attachments.map((mimeType) => {
       let str = mimeType.mimeType;
@@ -99,16 +99,16 @@ export default function AppShare(targetUserId) {
       }
       return str;
     });
-    stateFromStores(7230).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
+    stateFromStores(7408).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
   });
   obj = { appEntryKey: share, children: null };
   if (first) {
     obj = { appEntryKey: null, sharedContent: null, onClose: null };
     obj[0] = tmp18;
     obj[1] = targetUserId;
-    const tmp14Result = tmp14(13878);
+    const tmp14Result = tmp14(13910);
     if (tmp9Result.isMetaQuest()) {
-      let exitApp = tmp14(8652).close;
+      let exitApp = tmp14(8292).close;
     } else {
       exitApp = exitApp.exitApp;
     }
@@ -116,12 +116,12 @@ export default function AppShare(targetUserId) {
     tmp19(tmp14Result, obj);
     tmp9Result = tmp9(1623);
   } else {
-    const items5 = [tmp19(tmp9(6056).SceneLoadingIndicator, {}), , , ];
+    const items5 = [tmp19(tmp9(6979).SceneLoadingIndicator, {}), , , ];
     obj1 = { appEntryKey: null };
     obj1[0] = tmp18;
-    items5[1] = tmp19(tmp9(16743).ActionSheetContainer, obj1);
-    items5[2] = tmp19(tmp14(16789), {});
-    items5[3] = tmp19(tmp9(4864).AlertModalContainer, {});
+    items5[1] = tmp19(tmp9(16830).ActionSheetContainer, obj1);
+    items5[2] = tmp19(tmp14(16876), {});
+    items5[3] = tmp19(tmp9(4871).AlertModalContainer, {});
     obj[1] = items5;
     return closure_11(tmp17, obj);
   }

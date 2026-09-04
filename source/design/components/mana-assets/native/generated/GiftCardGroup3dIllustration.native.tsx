@@ -1,14 +1,14 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6080
+// Function ID: 6081
 // Name: GiftCardGroup3dIllustration
-// Dependencies: [21, 5502, 6700, 2]
+// Dependencies: [21, 5542, 6081, 2]
 // Exports: GiftCardGroup3dIllustration
 
-// Module 6699 (GiftCardGroup3dIllustration)
+// Module 6080 (GiftCardGroup3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6700 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6081 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardGroup3dIllustration.native.tsx");

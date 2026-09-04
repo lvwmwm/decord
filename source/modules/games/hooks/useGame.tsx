@@ -1,13 +1,13 @@
-// Module ID: 6163
-// Function ID: 6164
+// Module ID: 7247
+// Function ID: 7248
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4502, 673, 586, 684, 6164, 2]
+// Dependencies: [5, 19, 4505, 673, 586, 684, 7248, 2]
 // Exports: useGames
 
-// Module 6163 (importDefaultResult1)
+// Module 7247 (importDefaultResult1)
 import setDefault from "set" /* 684 */;
 import closure_3 from "noop" /* 19 */;
-import importDefaultResult1 from "handleLoadMessages" /* 4502 */;
+import importDefaultResult1 from "handleLoadMessages" /* 4505 */;
 import initialize from "initialize" /* 586 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 

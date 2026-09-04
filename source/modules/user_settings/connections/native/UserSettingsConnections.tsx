@@ -1,24 +1,24 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14883
+// Function ID: 14884
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5484, 1215, 5234, 1995, 673, 21, 4478, 709, 4413, 586, 12751, 5970, 5359, 4445, 14801, 2008, 9316, 14803, 8376, 4927, 14806, 14807, 2]
+// Dependencies: [19, 17, 7047, 1215, 5242, 1995, 673, 21, 4481, 709, 4416, 586, 13013, 7110, 5367, 4448, 14882, 2008, 9181, 14884, 8523, 4934, 14887, 14888, 2]
 // Exports: UserSettingsConnections
 
-// Module 14802 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14883 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import ThemesDefault from "Themes" /* 709 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12751 */;
-import EmptyStateCardDefault from "EmptyStateCard" /* 14803 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13013 */;
+import EmptyStateCardDefault from "EmptyStateCard" /* 14884 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeFromAppTokens" /* 5484 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5484 */;
+import closure_5 from "recomputeFromAppTokens" /* 7047 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "set" /* 5234 */;
+import closure_8 from "set" /* 5242 */;
 import closure_9 from "_getSystemLocale" /* 1995 */;
 import { AnalyticsLocations } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -95,8 +95,8 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id))
       ];
       obj[1] = items5;
-      obj[1] = callback2(tmp4(4927).Stack, obj);
-      tmp14 = callback(tmp4(8376).Form, obj);
+      obj[1] = callback2(tmp4(4934).Stack, obj);
+      tmp14 = callback(tmp4(8523).Form, obj);
     }
     return tmp14;
   }

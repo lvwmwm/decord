@@ -1,9 +1,9 @@
-// Module ID: 5398
-// Function ID: 5399
+// Module ID: 5406
+// Function ID: 5407
 // Name: Quests
 // Dependencies: [2]
 
-// Module 5398 (Quests)
+// Module 5406 (Quests)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/Quests.tsx");

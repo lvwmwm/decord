@@ -1,14 +1,14 @@
-// Module ID: 11828
-// Function ID: 11829
-// Dependencies: [32, 19, 4470, 21, 4478, 709, 586, 4217, 4479, 5610, 2]
+// Module ID: 11959
+// Function ID: 11960
+// Dependencies: [32, 19, 4473, 21, 4481, 709, 586, 4218, 4482, 5562, 2]
 
-// Module 11828
+// Module 11959
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -25,12 +25,12 @@ const memoResult = importAllResult.memo(() => {
   const timingConfig = callback(importAllResult.useState(() => {
     let obj = { timingConfig: null };
     obj = { duration: 1000 + 500 * Math.random(), easing: null };
-    const Easing = stateFromStores(4217).Easing;
-    obj[1] = Easing.inOut(stateFromStores(4217).Easing.sin);
+    const Easing = stateFromStores(4218).Easing;
+    obj[1] = Easing.inOut(stateFromStores(4218).Easing.sin);
     obj[0] = obj;
     return obj;
   }), 1)[0].timingConfig;
-  obj1 = stateFromStores(4217);
+  obj1 = stateFromStores(4218);
   const fn = function _() {
     const obj = { opacity: null };
     if (stateFromStores) {
@@ -48,14 +48,14 @@ const memoResult = importAllResult.memo(() => {
     }
     return tmp6;
   };
-  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: c8, withDelay: stateFromStores(4217).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4217).withRepeat, withSequence: stateFromStores(4217).withSequence, withTiming: stateFromStores(4479).withTiming, timingConfig };
+  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: c8, withDelay: stateFromStores(4218).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4218).withRepeat, withSequence: stateFromStores(4218).withSequence, withTiming: stateFromStores(4482).withTiming, timingConfig };
   fn.__closure = obj;
   fn.__workletHash = 9488742940898;
   fn.__initData = closure_9;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  obj = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5610).Card, obj1) };
+  obj = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5562).Card, obj1) };
   obj1 = { variant: "secondary", style: callback2().postPlaceholder };
-  return jsx(timingConfig(4217).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5610).Card, { variant: "secondary", style: callback2().postPlaceholder }) });
+  return jsx(timingConfig(4218).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5562).Card, { variant: "secondary", style: callback2().postPlaceholder }) });
 });
 const result = require("set").fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
 

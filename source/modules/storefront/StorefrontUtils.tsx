@@ -1,17 +1,17 @@
-// Module ID: 6087
-// Function ID: 6088
+// Module ID: 7171
+// Function ID: 7172
 // Name: useSKUPrice
-// Dependencies: [19, 1995, 1921, 6088, 673, 1923, 12, 6089, 1235, 1398, 586, 6082, 6090, 4139, 6097, 2]
+// Dependencies: [19, 1995, 1921, 7172, 673, 1923, 12, 7173, 1235, 1399, 586, 7166, 7174, 4139, 7181, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6087 (useSKUPrice)
+// Module 7171 (useSKUPrice)
 import applyDefault from "apply" /* 12 */;
-import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6089 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6090 */;
+import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 7173 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "resetStoreState" /* 6088 */;
+import closure_6 from "resetStoreState" /* 7172 */;
 import ME from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
@@ -85,7 +85,7 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "channel", purchaseType: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001141953147857043, storeHasPrice: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013458295484790203 };
+    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: -766651663, storeHasPrice: 1359167573 };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;
@@ -275,15 +275,15 @@ export const isSlayerSkuAvailableOnThisPlatform = function isSlayerSkuAvailableO
         num = 0;
       }
       if (obj.isIOS()) {
-        let tmpResult = tmp(1398);
+        let tmpResult = tmp(1399);
         let hasFlagResult = tmpResult.hasFlag(num, constants2.AVAILABLE_ON_IOS);
       } else {
         tmpResult = tmp(1235);
         const isAndroidResult = tmpResult.isAndroid();
         hasFlagResult = !isAndroidResult;
         if (isAndroidResult) {
-          hasFlagResult = tmp(1398).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
-          const tmpResult1 = tmp(1398);
+          hasFlagResult = tmp(1399).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
+          const tmpResult1 = tmp(1399);
         }
       }
       return hasFlagResult;
@@ -381,7 +381,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "channel", purchaseType: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001141953147857043, storeHasPrice: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013458295484790203 };
+    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: -766651663, storeHasPrice: 1359167573 };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;

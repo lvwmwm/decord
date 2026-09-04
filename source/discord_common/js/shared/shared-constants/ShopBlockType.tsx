@@ -1,9 +1,9 @@
-// Module ID: 7328
-// Function ID: 7329
+// Module ID: 7506
+// Function ID: 7507
 // Name: ShopBlockType
 // Dependencies: [2]
 
-// Module 7328 (ShopBlockType)
+// Module 7506 (ShopBlockType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopBlockType.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 4334
-// Function ID: 4335
+// Module ID: 4337
+// Function ID: 4338
 // Name: getInitialGuildState
-// Dependencies: [32, 1215, 4303, 1980, 673, 3, 4335, 1219, 4304, 4317, 4338, 2]
+// Dependencies: [32, 1215, 4306, 1980, 673, 3, 4338, 1219, 4307, 4320, 4341, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4334 (getInitialGuildState)
+// Module 4337 (getInitialGuildState)
 import timestampDefault from "timestamp" /* 3 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import matchPath from "matchPath" /* 4304 */;
-import RouteParam5 from "RouteParam" /* 4317 */;
-import useChatLayout from "useChatLayout" /* 4335 */;
-import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4338 */;
+import matchPath from "matchPath" /* 4307 */;
+import RouteParam5 from "RouteParam" /* 4320 */;
+import useChatLayout from "useChatLayout" /* 4338 */;
+import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4341 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "initialize" /* 4303 */;
+import closure_4 from "initialize" /* 4306 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
 import ME from "ME" /* 673 */;
 
@@ -85,9 +85,9 @@ function computeInitialNavigationStateWithoutLogging() {
     const tmp5 = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
       obj = { path: null };
-      const RouteParam3 = tmp(4317).RouteParam;
-      const tmpResult = tmp(4304);
-      const RouteParam4 = tmp(4317).RouteParam;
+      const RouteParam3 = tmp(4320).RouteParam;
+      const tmpResult = tmp(4307);
+      const RouteParam4 = tmp(4320).RouteParam;
       obj[0] = obj5.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId({ optional: true }), ":messageId?");
       let matchPathResult1 = tmpResult.matchPath(lastNonVoiceRoute.lastNonVoiceRoute, obj);
       let flag = false;

@@ -1,14 +1,14 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8370
+// Function ID: 8371
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 8731, 2]
+// Dependencies: [19, 21, 709, 4196, 8371, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 8730 (GoogleNeutralIcon)
+// Module 8370 (GoogleNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8731 */;
+import registerAsset from "registerAsset" /* 8371 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

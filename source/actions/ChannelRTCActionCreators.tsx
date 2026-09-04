@@ -1,12 +1,12 @@
-// Module ID: 4722
-// Function ID: 4723
-// Dependencies: [673, 706, 695, 4701, 1228, 2]
+// Module ID: 4729
+// Function ID: 4730
+// Dependencies: [673, 706, 695, 4708, 1228, 2]
 
-// Module 4722
+// Module 4729
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
 import ME from "ME" /* 673 */;
 
 ({ AppContext: c3, AnalyticEvents: c4, ComponentActions: c5 } = ME);

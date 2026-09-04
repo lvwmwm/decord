@@ -1,14 +1,14 @@
-// Module ID: 9965
-// Function ID: 9966
+// Module ID: 9777
+// Function ID: 9778
 // Name: fetchUserAffinitiesV2
-// Dependencies: [6063, 7414, 673, 706, 527, 2]
+// Dependencies: [6536, 7592, 673, 706, 527, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 9965 (fetchUserAffinitiesV2)
+// Module 9777 (fetchUserAffinitiesV2)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "hasConsented" /* 6063 */;
-import closure_4 from "recomputeAffinities" /* 7414 */;
+import closure_3 from "hasConsented" /* 6536 */;
+import closure_4 from "recomputeAffinities" /* 7592 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

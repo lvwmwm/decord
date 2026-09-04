@@ -1,21 +1,21 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14586
+// Function ID: 14587
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 14550, 673, 1383, 21, 4478, 709, 1498, 1233, 14555, 14556, 5504, 1994, 5562, 14559, 4474, 1234, 4929, 7734, 2]
+// Dependencies: [32, 19, 17, 14582, 673, 1383, 21, 4481, 709, 1498, 1233, 14587, 14588, 5579, 1994, 7063, 14591, 4477, 1234, 4936, 6889, 2]
 // Exports: default
 
-// Module 14554 (PasskeyUpsellView)
+// Module 14586 (PasskeyUpsellView)
 import ThemesDefault from "Themes" /* 709 */;
 import combinedDefault from "combined" /* 1994 */;
-import registerAssetDefault from "registerAsset" /* 14559 */;
+import registerAssetDefault from "registerAsset" /* 14591 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { WebAuthnScreens } from "WebAuthnScreens" /* 14550 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14582 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c5, Image: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -50,9 +50,9 @@ export default function PasskeyUpsellView() {
     navigation.push(closure_1_8.NAME, obj);
   }
   function onCancel() {
-    callback(14555).markDismissed(constants.USER_DISMISS);
-    const obj = callback(14555);
-    const result = callback(14556).closePasskeyUpsellModal();
+    callback(14587).markDismissed(constants.USER_DISMISS);
+    const obj = callback(14587);
+    const result = callback(14588).closePasskeyUpsellModal();
   }
   let obj = navigation(1498);
   navigation = obj.useNavigation();
@@ -75,7 +75,7 @@ export default function PasskeyUpsellView() {
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };
   let intl = navigation(1233).intl;
   obj3[4] = intl.string(navigation(1233).t.CjleBl);
-  items1[1] = callback(navigation(4474).Text, obj3);
+  items1[1] = callback(navigation(4477).Text, obj3);
   const obj4 = { variant: "heading-md/normal", color: "text-default", style: tmp4.headerText, children: null };
   let obj8 = navigation(1234);
   const obj2 = { source: registerAssetDefault, style: tmp4.headerImage };
@@ -89,7 +89,7 @@ export default function PasskeyUpsellView() {
     stringResult = string(t.d6uxJy);
   }
   obj4[3] = stringResult;
-  items1[2] = callback(navigation(4474).Text, obj4);
+  items1[2] = callback(navigation(4477).Text, obj4);
   obj1[1] = items1;
   const items2 = [closure_12(closure_5, obj1), , ];
   const obj5 = { style: tmp4.listContainer, children: null };
@@ -98,7 +98,7 @@ export default function PasskeyUpsellView() {
   obj8 = { variant: "heading-md/normal", color: "text-default", style: tmp4.text, children: null };
   const intl3 = tmp(1233).intl;
   obj8[3] = intl3.string(navigation(1233).t.HtqVkj);
-  items3[1] = callback(navigation(4474).Text, obj8);
+  items3[1] = callback(navigation(4477).Text, obj8);
   obj6[1] = items3;
   const items4 = [closure_12(closure_5, obj6), ];
   const obj9 = { style: tmp4.row, children: null };
@@ -117,7 +117,7 @@ export default function PasskeyUpsellView() {
     string2Result = string2(t2.uYfqlo);
   }
   obj11[3] = string2Result;
-  items5[1] = callback(navigation(4474).Text, obj11);
+  items5[1] = callback(navigation(4477).Text, obj11);
   obj9[1] = items5;
   items4[1] = closure_12(closure_5, obj9);
   obj5[1] = items4;
@@ -126,7 +126,7 @@ export default function PasskeyUpsellView() {
   const obj13 = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl5 = tmp(1233).intl;
   obj13[2] = intl5.format(navigation(1233).t.OeGXVv, { learnMoreLink: articleURL });
-  const items6 = [callback(navigation(4474).Text, obj13), , ];
+  const items6 = [callback(navigation(4477).Text, obj13), , ];
   const intl6 = tmp(1233).intl;
   const string3 = intl6.string;
   const t3 = tmp(1233).t;
@@ -135,7 +135,7 @@ export default function PasskeyUpsellView() {
   } else {
     string3Result = string3(t3.NIFmCJ);
   }
-  items6[1] = callback(navigation(4929).Button, {
+  items6[1] = callback(navigation(4936).Button, {
     text: string3Result,
     onPress() {
       let obj = closure_1_1(closure_1_2[11]);
@@ -156,10 +156,10 @@ export default function PasskeyUpsellView() {
   } else {
     string4Result = string4(t4["7J6/nG"]);
   }
-  items6[2] = callback(navigation(4929).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
+  items6[2] = callback(navigation(4936).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
   obj12[1] = items6;
   items2[2] = closure_12(closure_5, obj12);
   obj[1] = items2;
   obj[2] = closure_12(tmp12, obj);
-  return callback(navigation(5562).SafeAreaPaddingView, obj);
+  return callback(navigation(7063).SafeAreaPaddingView, obj);
 };

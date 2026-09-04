@@ -1,14 +1,14 @@
-// Module ID: 6897
-// Function ID: 6898
+// Module ID: 6278
+// Function ID: 6279
 // Name: OrbNitroCardSpotIllustration
-// Dependencies: [21, 5502, 6898, 2]
+// Dependencies: [21, 5542, 6279, 2]
 // Exports: OrbNitroCardSpotIllustration
 
-// Module 6897 (OrbNitroCardSpotIllustration)
+// Module 6278 (OrbNitroCardSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6898 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6279 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroCardSpotIllustration.native.tsx");

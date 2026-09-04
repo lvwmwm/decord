@@ -1,15 +1,15 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15164
+// Function ID: 15165
 // Name: EmojiIcon
-// Dependencies: [19, 21, 15081, 5502, 9157, 5594, 1430, 2]
+// Dependencies: [19, 21, 15165, 5542, 10231, 7070, 1431, 2]
 // Exports: default
 
-// Module 15080 (EmojiIcon)
+// Module 15164 (EmojiIcon)
 import noopAll from "noop" /* 19 */;
-import preloadDefault from "preload" /* 5502 */;
-import EmojiDefault from "Emoji" /* 5594 */;
-import registerAssetDefault from "registerAsset" /* 9157 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15081 */;
+import preloadDefault from "preload" /* 5542 */;
+import EmojiDefault from "Emoji" /* 7070 */;
+import registerAssetDefault from "registerAsset" /* 10231 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15165 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -75,8 +75,8 @@ export default function EmojiIcon(size) {
       const obj4 = { id: null, animated: null, size: null };
       ({ id: obj4[0], animated: obj4[1] } = emojiByIdOrName);
       obj4[2] = num;
-      let url = tmp9(1430).getEmojiURL(obj4);
-      const tmp9Result = tmp9(1430);
+      let url = tmp9(1431).getEmojiURL(obj4);
+      const tmp9Result = tmp9(1431);
     } else {
       url = emojiByIdOrName.url;
     }

@@ -1,21 +1,21 @@
-// Module ID: 9002
-// Function ID: 9003
+// Module ID: 8832
+// Function ID: 8833
 // Name: TwinButtons
-// Dependencies: [9003, 2, 9004, 9005, 9006, 9007, 9008, 9010, 8379, 8380, 5612, 9011]
+// Dependencies: [8833, 2, 8834, 8835, 8836, 8837, 8838, 8840, 8526, 8527, 5564, 8841]
 
-// Module 9002 (TwinButtons)
+// Module 8832 (TwinButtons)
 import set from "set" /* 2 */;
-import AnimatedPressableHighlight from "AnimatedPressableHighlight" /* 5612 */;
-import BackgroundBlurView from "BackgroundBlurView" /* 8379 */;
-import BlurTheme from "BlurTheme" /* 8380 */;
-import PX_4 from "PX_4" /* 9003 */;
-import TwinButtons from "TwinButtons" /* 9004 */;
-import HeaderButton from "HeaderButton" /* 9005 */;
-import InputButton from "InputButton" /* 9006 */;
-import PressableScale from "PressableScale" /* 9007 */;
-import CollapsableButton from "CollapsableButton" /* 9008 */;
-import useCollapsibleFloatingActionButtonState from "useCollapsibleFloatingActionButtonState" /* 9010 */;
-import ActionSheetDragHandle from "ActionSheetDragHandle" /* 9011 */;
+import AnimatedPressableHighlight from "AnimatedPressableHighlight" /* 5564 */;
+import BackgroundBlurView from "BackgroundBlurView" /* 8526 */;
+import BlurTheme from "BlurTheme" /* 8527 */;
+import PX_4 from "PX_4" /* 8833 */;
+import TwinButtons from "TwinButtons" /* 8834 */;
+import HeaderButton from "HeaderButton" /* 8835 */;
+import InputButton from "InputButton" /* 8836 */;
+import PressableScale from "PressableScale" /* 8837 */;
+import CollapsableButton from "CollapsableButton" /* 8838 */;
+import useCollapsibleFloatingActionButtonState from "useCollapsibleFloatingActionButtonState" /* 8840 */;
+import ActionSheetDragHandle from "ActionSheetDragHandle" /* 8841 */;
 
 const result = set.fileFinishedImporting("design/components/experimental/native.tsx");
 

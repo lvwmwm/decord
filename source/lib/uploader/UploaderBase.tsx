@@ -1,14 +1,14 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7772
+// Function ID: 7773
 // Name: _fileSize
-// Dependencies: [5, 673, 4471, 3, 649, 12, 5127, 5132, 5089, 5090, 2]
+// Dependencies: [5, 673, 4474, 3, 649, 12, 5135, 5140, 5097, 5098, 2]
 
-// Module 7595 (_fileSize)
+// Module 7772 (_fileSize)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AbortCodes } from "ME" /* 673 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 import { EventEmitter } from "EventEmitter" /* 649 */;
 
 const require = arg1;

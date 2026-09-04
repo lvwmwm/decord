@@ -1,14 +1,14 @@
-// Module ID: 6359
-// Function ID: 6360
+// Module ID: 5740
+// Function ID: 5741
 // Name: BagOfCoinsSpotIllustration
-// Dependencies: [21, 5502, 6360, 2]
+// Dependencies: [21, 5542, 5741, 2]
 // Exports: BagOfCoinsSpotIllustration
 
-// Module 6359 (BagOfCoinsSpotIllustration)
+// Module 5740 (BagOfCoinsSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6360 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5741 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BagOfCoinsSpotIllustration.native.tsx");

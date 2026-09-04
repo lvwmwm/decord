@@ -1,22 +1,22 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 16020
+// Function ID: 16021
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 673, 21, 13153, 709, 4478, 8668, 4193, 1233, 9935, 7514, 4333, 5077, 4474, 13832, 15935, 2]
+// Dependencies: [5, 19, 17, 673, 21, 13185, 709, 4481, 8308, 4193, 1233, 9749, 7691, 4336, 5084, 4477, 13864, 16021, 2]
 
-// Module 15934 (getFriendInviteCode)
+// Module 16020 (getFriendInviteCode)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 13153 */;
-import registerAssetDefault from "registerAsset" /* 13832 */;
-import registerAssetDefault2 from "registerAsset" /* 15935 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 13185 */;
+import registerAssetDefault from "registerAsset" /* 13864 */;
+import registerAssetDefault2 from "registerAsset" /* 16021 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { InstantInviteSources } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function getFriendInviteCode() {
@@ -172,10 +172,10 @@ function _handleShare() {
           return obj;
         } else {
           callback = arg1;
-          const obj5 = callback(9935);
+          const obj5 = callback(9749);
           const intl = callback(1233).intl;
           const obj2 = { link: null };
-          obj2[0] = callback2(7514)(callback);
+          obj2[0] = callback2(7691)(callback);
           obj5.handleOpenShareSheet(callback, null, intl.formatToPlainString(callback(1233).t.PJf9P9, obj2), constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
           return { value: "HermesInternal", done: null };

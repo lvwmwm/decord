@@ -1,14 +1,14 @@
-// Module ID: 4427
-// Function ID: 4428
+// Module ID: 4430
+// Function ID: 4431
 // Name: DownloadIcon
-// Dependencies: [19, 21, 709, 4196, 4428, 2]
+// Dependencies: [19, 21, 709, 4196, 4431, 2]
 // Exports: DownloadIcon
 
-// Module 4427 (DownloadIcon)
+// Module 4430 (DownloadIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4428 */;
+import registerAsset from "registerAsset" /* 4431 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

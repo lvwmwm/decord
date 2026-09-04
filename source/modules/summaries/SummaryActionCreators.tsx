@@ -1,17 +1,17 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11276
+// Function ID: 11277
 // Name: fetchSummary
-// Dependencies: [5, 19, 5230, 1386, 11206, 673, 684, 706, 527, 4376, 12, 11208, 644, 2]
+// Dependencies: [5, 19, 5238, 1386, 11277, 673, 684, 706, 527, 4379, 12, 11279, 644, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 11205 (fetchSummary)
+// Module 11276 (fetchSummary)
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_handleConnectionOpen" /* 5230 */;
+import closure_5 from "_handleConnectionOpen" /* 5238 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "handleQuickSwitcherUpdate" /* 11206 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 11277 */;
 import { Routes } from "ME" /* 673 */;
 
 const require = arg1;
@@ -219,7 +219,7 @@ function _fetchSummaries() {
           } else {
             if (1 === dispatchResult1) {
               c6 = 0;
-              const aPIError = new callback(4376).APIError(closure_5);
+              const aPIError = new callback(4379).APIError(closure_5);
               dependencyMap = aPIError;
             } else if (arg0 === 1) {
               c8 = 3;
@@ -611,7 +611,7 @@ function _fetchSummariesBulk() {
             if (2 === tmp7) {
               summaries = 0;
               c7 = _undefined;
-              aPIError = new substr(4376).APIError(c7);
+              aPIError = new substr(4379).APIError(c7);
             } else if (arg0 === 1) {
               constants = 3;
               throw arg1;
@@ -800,7 +800,7 @@ function _deleteSummary() {
           } else if (1 === tmp7) {
             c4 = 0;
             callback = closure_3;
-            const aPIError = new lib(4376).APIError(callback);
+            const aPIError = new lib(4379).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;

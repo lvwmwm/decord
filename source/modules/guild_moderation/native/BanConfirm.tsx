@@ -1,9 +1,9 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11783
+// Function ID: 11784
 // Name: items
-// Dependencies: [32, 19, 17, 1908, 1921, 21, 1233, 684, 4478, 709, 5603, 9231, 586, 5466, 11653, 4474, 4322, 7704, 7705, 7820, 4929, 2]
+// Dependencies: [32, 19, 17, 1908, 1921, 21, 1233, 684, 4481, 709, 6921, 11078, 586, 5475, 11784, 4477, 4325, 5640, 5643, 7025, 4936, 2]
 
-// Module 11652 (items)
+// Module 11783 (items)
 import setDefault from "set" /* 684 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -13,7 +13,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c4 = importAllResult;

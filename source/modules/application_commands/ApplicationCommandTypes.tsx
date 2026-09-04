@@ -1,9 +1,9 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 7456
+// Function ID: 7457
 // Name: ApplicationCommandSectionType
 // Dependencies: [2]
 
-// Module 7278 (ApplicationCommandSectionType)
+// Module 7456 (ApplicationCommandSectionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");

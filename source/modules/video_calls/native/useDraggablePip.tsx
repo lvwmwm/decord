@@ -1,13 +1,13 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9423
+// Function ID: 9424
 // Name: clamp
-// Dependencies: [32, 9537, 9544, 4217, 4479, 1296, 9227, 5661, 4928, 2]
+// Dependencies: [32, 9396, 9402, 4218, 4482, 1296, 9424, 6595, 4935, 2]
 // Exports: useDraggablePip
 
-// Module 9560 (clamp)
+// Module 9423 (clamp)
 import closure_2 from "_slicedToArray" /* 32 */;
-import { useChannelCallStore } from "VoiceChatDrawerState" /* 9537 */;
-import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 9544 */;
+import { useChannelCallStore } from "VoiceChatDrawerState" /* 9396 */;
+import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 9402 */;
 
 const require = arg1;
 ({ PIP_FOCUS_SCALE: c4, PIP_GESTURE_ACTIVE_OFFSET: c5 } = PIP_GESTURE_ACTIVE_OFFSET);

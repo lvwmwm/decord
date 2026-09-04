@@ -1,13 +1,13 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 10246
+// Function ID: 10247
 // Name: getSearchEmptySource
-// Dependencies: [19, 17, 21, 8930, 9174, 9175, 9176, 1362, 2]
+// Dependencies: [19, 17, 21, 8164, 10247, 10248, 10249, 1362, 2]
 // Exports: SearchEmpty, getSearchEmptySource, useSearchEmptySource
 
-// Module 9173 (getSearchEmptySource)
+// Module 10246 (getSearchEmptySource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getIllustrationSource from "getIllustrationSource" /* 8930 */;
+import getIllustrationSource from "getIllustrationSource" /* 8164 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getSearchEmptySource = function getSearchEmptySource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9174);
+      return callback(10247);
     },
     darker() {
-      return callback(9175);
+      return callback(10248);
     },
     light() {
-      return callback(9176);
+      return callback(10249);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useSearchEmptySource = function useSearchEmptySource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9174);
+      return callback(10247);
     },
     darker() {
-      return callback(9175);
+      return callback(10248);
     },
     light() {
-      return callback(9176);
+      return callback(10249);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const SearchEmpty = function SearchEmpty(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9174);
+      return callback(10247);
     },
     darker() {
-      return callback(9175);
+      return callback(10248);
     },
     light() {
-      return callback(9176);
+      return callback(10249);
     }
   };
   obj = {};

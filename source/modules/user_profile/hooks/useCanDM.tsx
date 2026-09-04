@@ -1,11 +1,11 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 13036
+// Function ID: 13037
 // Name: useCanDM
-// Dependencies: [7413, 4121, 1215, 1991, 4130, 4166, 586, 2]
+// Dependencies: [7591, 4121, 1215, 1991, 4130, 4166, 586, 2]
 // Exports: canDm, default
 
-// Module 12832 (useCanDM)
-import closure_2 from "recountRelationshipTypes" /* 7413 */;
+// Module 13036 (useCanDM)
+import closure_2 from "recountRelationshipTypes" /* 7591 */;
 import closure_3 from "initialize" /* 4121 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;

@@ -1,13 +1,14 @@
-// Module ID: 5083
-// Function ID: 5084
+// Module ID: 5090
+// Function ID: 5091
 // Name: items
-// Dependencies: [5084, 5082, 2]
-// Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
+// Dependencies: [5091, 5092, 5089, 2]
+// Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData, getMaxTotalAttachmentSize
 
-// Module 5083 (items)
+// Module 5090 (items)
 import set from "set" /* 2 */;
-import cancel from "cancel" /* 5082 */;
-import getClipCreatedAt from "getClipCreatedAt" /* 5084 */;
+import cancel from "cancel" /* 5089 */;
+import getNitroFileUploadLimitBytes from "getNitroFileUploadLimitBytes" /* 5091 */;
+import getClipCreatedAt from "getClipCreatedAt" /* 5092 */;
 
 const items = [
   {
@@ -109,10 +110,16 @@ const items = [
     type: "image/webm"
   }
 ];
+let c3 = 524288000;
+let c4 = 1073741824;
 const result = set.fileFinishedImporting("utils/UploadUtils.tsx");
 
 export const MAX_TOTAL_ATTACHMENT_SIZE = 524288000;
+export const MAX_TOTAL_ATTACHMENT_SIZE_1GB = 1073741824;
 export const MAX_TOTAL_ATTACHMENT_SIZE_MB = 500;
+export const getMaxTotalAttachmentSize = function getMaxTotalAttachmentSize(location) {
+  return getNitroFileUploadLimitBytes.getNitroFileUploadRolloutConfig({ location: location.location }).enabled ? c4 : c3;
+};
 export const getAttachmentPayload = function getAttachmentPayload(closure_0, closure_1, name) {
   let tmp = closure_1;
   if (closure_1 === undefined) {

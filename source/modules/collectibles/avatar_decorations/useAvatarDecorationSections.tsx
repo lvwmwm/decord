@@ -1,14 +1,14 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 13100
+// Function ID: 13101
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7297, 7313, 644, 7309, 1233, 2]
+// Dependencies: [32, 19, 7475, 7491, 644, 7487, 1233, 2]
 // Exports: default
 
-// Module 8099 (useAvatarDecorationSections)
+// Module 13100 (useAvatarDecorationSections)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7297 */;
-import closure_5 from "map" /* 7313 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
+import closure_5 from "map" /* 7491 */;
 
 const require = arg1;
 let obj = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };

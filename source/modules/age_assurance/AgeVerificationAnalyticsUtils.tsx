@@ -1,10 +1,10 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 8343
+// Function ID: 8344
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: [1386, 673, 695, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 8703 (AgeVerificationModalEntryPoint)
+// Module 8343 (AgeVerificationModalEntryPoint)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import { AnalyticEvents } from "ME" /* 673 */;
@@ -22,9 +22,9 @@ export const trackAgeVerificationModalViewed = function trackAgeVerificationModa
   obj = { modal_session_id: memo, modal_version: EXPRESSIVE_PRIMARY, entry_point: entryPoint };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_VIEWED, obj);
 };
-export const trackAgeVerificationModalClicked = function trackAgeVerificationModalClicked(modalSessionId, PRIMARY, METHOD_SELECT, GOOGLE_WALLET) {
+export const trackAgeVerificationModalClicked = function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_V2, METHOD_SELECT, GOOGLE_WALLET) {
   let obj = expandEventPropertiesDefault;
-  obj = { modal_session_id: modalSessionId, modal_version: PRIMARY, cta: METHOD_SELECT, method: GOOGLE_WALLET };
+  obj = { modal_session_id: modalSessionId, modal_version: EXPRESSIVE_V2, cta: METHOD_SELECT, method: GOOGLE_WALLET };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_CLICKED, obj);
 };
 export const trackAgeVerificationDmClicked = function trackAgeVerificationDmClicked(CONNECT_TO_TEEN, channelId) {

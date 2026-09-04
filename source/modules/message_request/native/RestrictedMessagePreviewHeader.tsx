@@ -1,16 +1,16 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16818
+// Function ID: 16819
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 12243, 21, 4478, 709, 5962, 4322, 8915, 5990, 4193, 4445, 9250, 2008, 8576, 6196, 4724, 5077, 1233, 1296, 4474, 16714, 6013, 16732, 2]
+// Dependencies: [19, 17, 12375, 21, 4481, 709, 7102, 4325, 8110, 7130, 4193, 4448, 12533, 2008, 8122, 7280, 4731, 5084, 1233, 1296, 4477, 16801, 5539, 16819, 2]
 // Exports: default
 
-// Module 16731 (RestrictedMessagePreviewHeader)
+// Module 16818 (RestrictedMessagePreviewHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MOBILE_MESSAGE_REQUESTS_MODAL_KEY as closure_5 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12243 */;
+import { MOBILE_MESSAGE_REQUESTS_MODAL_KEY as closure_5 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12375 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -50,13 +50,13 @@ export default function RestrictedMessagePreviewHeader(channel) {
     obj = {
       user,
       onPressMutualGuild(arg0) {
-        const result = callback(8576).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-        const obj = callback(8576);
-        callback(6196).transitionToGuild(arg0);
-        const obj2 = callback(6196);
-        callback2(4445).hideActionSheet();
-        const obj3 = callback2(4445);
-        callback2(4724).popWithKey(closure_5);
+        const result = callback(8122).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
+        const obj = callback(8122);
+        callback(7280).transitionToGuild(arg0);
+        const obj2 = callback(7280);
+        callback2(4448).hideActionSheet();
+        const obj3 = callback2(4448);
+        callback2(4731).popWithKey(closure_5);
       }
     };
     obj.openLazy(channel(analyticsLocations[13])(analyticsLocations[12], analyticsLocations.paths), "MutualGuildsActionSheet", obj);

@@ -1,16 +1,16 @@
-// Module ID: 16250
-// Function ID: 16251
+// Module ID: 16336
+// Function ID: 16337
 // Name: handleLoadFinished
-// Dependencies: [32, 7392, 684, 586, 7395, 11, 706, 2]
+// Dependencies: [32, 7570, 684, 586, 7573, 11, 706, 2]
 
-// Module 16250 (handleLoadFinished)
+// Module 16336 (handleLoadFinished)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import NotificationCenterScenes from "NotificationCenterScenes" /* 7395 */;
+import NotificationCenterScenes from "NotificationCenterScenes" /* 7573 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "findOrCreateMessageRecord" /* 7392 */;
+import closure_4 from "findOrCreateMessageRecord" /* 7570 */;
 
 require = arg1;
 function handleLoadFinished() {

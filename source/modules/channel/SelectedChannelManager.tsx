@@ -1,18 +1,18 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17402
+// Function ID: 17403
 // Name: handleGuildCreate
-// Dependencies: [4529, 1980, 4299, 673, 5495, 6196, 5364, 1219, 706, 2]
+// Dependencies: [4532, 1980, 4302, 673, 7058, 7280, 5372, 1219, 706, 2]
 
-// Module 17322 (handleGuildCreate)
+// Module 17402 (handleGuildCreate)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import _modDef5364 from "module_5364" /* 5364 */;
-import initializeDefault from "initialize" /* 5495 */;
-import transitionToGuild from "transitionToGuild" /* 6196 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
+import _modDef5372 from "module_5372" /* 5372 */;
+import initializeDefault from "initialize" /* 7058 */;
+import transitionToGuild from "transitionToGuild" /* 7280 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_4 from "handleConnectionOpen" /* 1980 */;
 import { findFirstVoiceChannelId } from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "handleConnectionOpen" /* 4299 */;
+import closure_6 from "handleConnectionOpen" /* 4302 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -42,8 +42,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
     tmp6 = null == voiceChannelId;
   }
   if (tmp6) {
-    const voiceChannel = _modDef5364.selectVoiceChannel(findFirstVoiceChannelId(guild.id));
-    const obj2 = _modDef5364;
+    const voiceChannel = _modDef5372.selectVoiceChannel(findFirstVoiceChannelId(guild.id));
+    const obj2 = _modDef5372;
   }
 };
 prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
@@ -58,8 +58,8 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
     const obj3 = store;
     tmp = null == guildId.getGuildId() && null != originChannelId && originChannelId === channelId;
     if (tmp7) {
-      const voiceChannel = _modDef5364.selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
-      const obj2 = _modDef5364;
+      const voiceChannel = _modDef5372.selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
+      const obj2 = _modDef5372;
     }
     tmp7 = null != originChannelId && originChannelId === store.getVoiceChannelId();
   }

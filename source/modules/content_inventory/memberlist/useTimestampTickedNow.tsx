@@ -1,14 +1,14 @@
-// Module ID: 9415
-// Function ID: 9416
+// Module ID: 12938
+// Function ID: 12939
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4470, 684, 586, 4362, 2]
+// Dependencies: [32, 19, 4473, 684, 586, 4365, 2]
 // Exports: useTimestampTickedNow
 
-// Module 9415 (useTimestampTickedNow)
+// Module 12938 (useTimestampTickedNow)
 import setDefault from "set" /* 684 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");

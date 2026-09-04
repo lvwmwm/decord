@@ -1,14 +1,14 @@
-// Module ID: 7294
-// Function ID: 7295
+// Module ID: 7472
+// Function ID: 7473
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: [5, 7295, 7293, 673, 7296, 706, 527, 695, 1370, 1305, 1341, 2]
+// Dependencies: [5, 7473, 7471, 673, 7474, 706, 527, 695, 1370, 1305, 1341, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7294 (maybeFetchCollectiblesForInvoices)
+// Module 7472 (maybeFetchCollectiblesForInvoices)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getSettings" /* 7295 */;
-import { FamilyCenterAction } from "items" /* 7293 */;
+import closure_4 from "getSettings" /* 7473 */;
+import { FamilyCenterAction } from "items" /* 7471 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;

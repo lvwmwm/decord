@@ -1,12 +1,12 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 17738
+// Function ID: 17739
 // Name: shouldEnableYYTextReplacement
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 17658 (shouldEnableYYTextReplacement)
+// Module 17738 (shouldEnableYYTextReplacement)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

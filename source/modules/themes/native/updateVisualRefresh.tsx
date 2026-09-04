@@ -1,13 +1,13 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 16880
+// Function ID: 16881
 // Name: updateVisualRefresh
-// Dependencies: [17, 1234, 14333, 2]
+// Dependencies: [17, 1234, 14365, 2]
 // Exports: updateVisualRefresh
 
-// Module 16793 (updateVisualRefresh)
+// Module 16880 (updateVisualRefresh)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 14333 */;
+import enforcingDefault from "enforcing" /* 14365 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let result = set.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");

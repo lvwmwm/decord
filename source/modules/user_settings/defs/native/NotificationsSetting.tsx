@@ -1,15 +1,15 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15402
+// Function ID: 15403
 // Name: route
-// Dependencies: [673, 11292, 1233, 9772, 14344, 15321, 2]
+// Dependencies: [673, 11400, 1233, 9705, 14376, 15403, 2]
 
-// Module 15320 (route)
+// Module 15402 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import BellIcon from "BellIcon" /* 9772 */;
-import getNamedExperiment from "getNamedExperiment" /* 14344 */;
-import createToggle from "createToggle" /* 11292 */;
+import BellIcon from "BellIcon" /* 9705 */;
+import getNamedExperiment from "getNamedExperiment" /* 14376 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -26,7 +26,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.NOTIFICATIONS,
   getComponent() {
-    return require(15321) /* SystemNotificationsSubLabel */.default;
+    return require(15403) /* SystemNotificationsSubLabel */.default;
   }
 };
 const route = createToggle.createRoute(obj);

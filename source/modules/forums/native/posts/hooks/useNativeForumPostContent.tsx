@@ -1,16 +1,16 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11956
+// Function ID: 11957
 // Name: useNativeForumPostContent
-// Dependencies: [673, 4478, 1233, 6126, 4853, 2]
+// Dependencies: [673, 4481, 1233, 7210, 4860, 2]
 // Exports: default
 
-// Module 11825 (useNativeForumPostContent)
+// Module 11956 (useNativeForumPostContent)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4853 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6126 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4860 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7210 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const MessageFlags = ME.MessageFlags;
 let closure_4 = createCacheKey.createStyles({ italics: { fontStyle: "italic" } });

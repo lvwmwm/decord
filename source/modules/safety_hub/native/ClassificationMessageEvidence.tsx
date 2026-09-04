@@ -1,21 +1,21 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11823
+// Function ID: 11824
 // Name: ClassificationEvidence
-// Dependencies: [32, 19, 17, 1301, 1921, 8720, 8709, 673, 21, 7853, 4478, 586, 1362, 11694, 11695, 8708, 4671, 8585, 8415, 11696, 8798, 4738, 11, 2]
+// Dependencies: [32, 19, 17, 1301, 1921, 8360, 8349, 673, 21, 7863, 4481, 586, 1362, 11824, 11825, 8348, 4678, 8191, 8238, 11826, 8582, 4745, 11, 2]
 // Exports: default
 
-// Module 11693 (ClassificationEvidence)
-import setOptionsDefault from "setOptions" /* 7853 */;
+// Module 11823 (ClassificationEvidence)
+import setOptionsDefault from "setOptions" /* 7863 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "handleThemeChange" /* 1301 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
-import SafetyHubView from "SafetyHubView" /* 8709 */;
+import closure_11 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
+import SafetyHubView from "SafetyHubView" /* 8349 */;
 import { MessageTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c5, findNodeHandle: closure_6, Image: error, ActivityIndicator: closure_8 } = get_ActivityIndicator);
@@ -43,10 +43,10 @@ export default function ClassificationEvidence(arg0) {
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
   if (obj2.useStateFromStores(items1, () => ref(1362).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(11694));
+    let assetSource = resolveAssetSource(tmp11(11824));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(11695));
+    assetSource = resolveAssetSource(tmp11(11825));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
@@ -156,7 +156,7 @@ export default function ClassificationEvidence(arg0) {
       obj[9] = uri.id;
       return obj;
     });
-    ref(8585).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
+    ref(8191).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
   }, items4);
   const items6 = [first2.attachments];
   const callback1 = obj1.useCallback((arg0) => {
@@ -202,7 +202,7 @@ export default function ClassificationEvidence(arg0) {
     obj = { style: null, children: null };
     obj[0] = attachments.dummyVideoAttachments;
     attachments = first2.attachments;
-    first2 = attachments.filter((filename) => ref(4671).isVideoFile(filename.filename));
+    first2 = attachments.filter((filename) => ref(4678).isVideoFile(filename.filename));
     obj[1] = first2.map((uri) => {
       closure_0 = uri;
       obj = {
@@ -223,7 +223,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return closure_1_18(first(8415), obj, arg1);
+      return closure_1_18(first(8238), obj, arg1);
     });
     items8[1] = callback(tmp24, obj);
     obj[0] = items8;
@@ -232,11 +232,11 @@ export default function ClassificationEvidence(arg0) {
     obj1 = { ref: null, onTapImage: null, inverted: false };
     obj1[0] = ref;
     obj1[1] = callback;
-    const items9 = [callback(tmp13(11696), obj1), ];
+    const items9 = [callback(tmp13(11826), obj1), ];
     obj2 = { rowGenerator: null, message: null, modifyRow: null, pointerEvents: "none" };
     obj2[0] = closure_20;
-    let tmp13Result = tmp13(8798);
-    tmpResult = tmp(4738);
+    let tmp13Result = tmp13(8582);
+    tmpResult = tmp(4745);
     const obj3 = { id: null, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
     obj3[0] = first2.id;
     const _Date = Date;

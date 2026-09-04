@@ -1,12 +1,12 @@
-// Module ID: 7456
-// Function ID: 7457
+// Module ID: 7634
+// Function ID: 7635
 // Name: result
-// Dependencies: [684, 7457, 2]
+// Dependencies: [684, 5411, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7456 (result)
+// Module 7634 (result)
 import setDefault from "set" /* 684 */;
-import AdCreativeType from "AdCreativeType" /* 7457 */;
+import AdCreativeType from "AdCreativeType" /* 5411 */;
 
 require = arg1;
 let result = 6 * setDefault.Millis.HOUR;
@@ -20,9 +20,9 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) 
     type = type.type;
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       return type.questId;
-    } else if (tmp(7457).AdCreativeType.BOUNTY === type) {
+    } else if (tmp(5411).AdCreativeType.BOUNTY === type) {
       return type.bounty.id;
-    } else if (tmp(7457).AdCreativeType.QUEST_HOME_HERO === type) {
+    } else if (tmp(5411).AdCreativeType.QUEST_HOME_HERO === type) {
       return type.questHomeHero.id;
     }
   }

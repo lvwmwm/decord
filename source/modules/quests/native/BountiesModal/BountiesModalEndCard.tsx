@@ -1,17 +1,17 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14987
+// Function ID: 14988
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4478, 4217, 4479, 4482, 4941, 14886, 2]
+// Dependencies: [17, 21, 4481, 4218, 4482, 4485, 4948, 14968, 2]
 // Exports: default
 
-// Module 14905 (BountiesModalEndCard)
+// Module 14987 (BountiesModalEndCard)
 import set from "set" /* 2 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 14886 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 14968 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 ({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -33,7 +33,7 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  visible(4217);
+  visible(4218);
   const fn = function y() {
     let obj = visible(closure_1_2[4]);
     let num = 0;
@@ -43,7 +43,7 @@ export default function BountiesModalEndCard(visible) {
     obj = { opacity: obj.withTiming(num, visible(closure_1_2[5]).timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(4479).withTiming, visible, timingStandard: visible(4482).timingStandard };
+  let obj = { withTiming: visible(4482).withTiming, visible, timingStandard: visible(4485).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
@@ -64,7 +64,7 @@ export default function BountiesModalEndCard(visible) {
     obj2[1] = sourceQuestContent;
     items1[2] = callback(BountiesEndCardPressableCtaDefault, obj2);
     obj[2] = items1;
-    visible = callback2(_modDef4217.View, obj);
+    visible = callback2(_modDef4218.View, obj);
   }
   return visible;
 };

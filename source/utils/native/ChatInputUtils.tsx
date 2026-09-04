@@ -1,14 +1,14 @@
-// Module ID: 4340
-// Function ID: 4341
+// Module ID: 4343
+// Function ID: 4344
 // Name: getBestActiveInput
-// Dependencies: [4341, 1890, 4342, 1625, 1496, 4343, 2]
+// Dependencies: [4344, 1890, 4345, 1625, 1496, 4346, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4340 (getBestActiveInput)
+// Module 4343 (getBestActiveInput)
 import set from "set" /* 2 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import dismissGlobalKeyboard from "dismissGlobalKeyboard" /* 1890 */;
-import zustandStore from "zustandStore" /* 4343 */;
+import zustandStore from "zustandStore" /* 4346 */;
 
 function getBestActiveInput() {
   let str;
@@ -239,7 +239,7 @@ export const dismissKeyboard = function dismissKeyboard() {
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  let tmpResult = tmp(4342);
+  let tmpResult = tmp(4345);
   const keyboardType = tmpResult.getKeyboardType();
   if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
     tmpResult = tmp(1496);

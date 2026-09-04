@@ -1,25 +1,26 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15107
+// Function ID: 15108
 // Name: QuestDockWithGestureAnimation
-// Dependencies: [5, 32, 109, 19, 17, 14935, 5396, 14937, 673, 502, 21, 4478, 709, 14944, 14934, 14938, 14941, 4916, 4217, 8588, 1627, 14942, 4197, 15026, 4928, 14936, 4932, 4913, 15027, 7808, 1233, 15028, 15029, 15030, 4917, 11307, 5399, 15031, 7357, 7362, 7484, 15024, 586, 11308, 7627, 11137, 4204, 14933, 695, 15032, 15033, 15040, 15041, 15042, 11573, 15043, 7457, 2]
+// Dependencies: [5, 32, 109, 19, 17, 15017, 5404, 15019, 673, 502, 21, 4481, 709, 15026, 15016, 15020, 15023, 4923, 4218, 8195, 1627, 15024, 4197, 15108, 4935, 15018, 4939, 4920, 15109, 7013, 1233, 15110, 15111, 15112, 4924, 11415, 5407, 15113, 7535, 7540, 7661, 15106, 586, 11416, 7804, 11208, 4205, 15015, 695, 15114, 15115, 15122, 15123, 15125, 11710, 15126, 15127, 5411, 2]
 
-// Module 15025 (QuestDockWithGestureAnimation)
+// Module 15107 (QuestDockWithGestureAnimation)
 import ThemesDefault from "Themes" /* 709 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5399 */;
-import useQuests from "useQuests" /* 11307 */;
-import _modDef15043 from "module_15043" /* 15043 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5407 */;
+import useQuests from "useQuests" /* 11415 */;
+import _modDef15126 from "module_15126" /* 15126 */;
+import _modDef15127 from "module_15127" /* 15127 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_11 from "QuestDockMode" /* 14935 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5396 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
+import closure_11 from "QuestDockMode" /* 15017 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5404 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function QuestDockWithGestureAnimation(appThemedBackgroundColor) {
@@ -750,18 +751,18 @@ function QuestDockBountyContent(bounty) {
     iconUrl: bounty.productIcon,
     layoutVariant: "insetHeader",
     theme: ThemeTypes.DARK,
-    collapsedContent: callback3(_modDef15043, {}),
-    expandedContent: null,
+    collapsedContent: callback3(_modDef15126, {}),
+    expandedContent: callback3(_modDef15127, {}),
     backgroundContent: null,
     renderImpressionTracker(children) {
-      return closure_1_21(bounty(closure_1_2[54]).BillableAdPlacementImpressionTrackerNative, { adContentId: bounty.id, adCreativeType: bounty(closure_1_2[56]).AdCreativeType.BOUNTY, overrideVisibility: false, questContent: bounty(closure_1_2[36]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: bounty(closure_1_2[36]).QuestContent.QUEST_BAR_MOBILE, children: children.children });
+      return closure_1_21(bounty(closure_1_2[54]).BillableAdPlacementImpressionTrackerNative, { adContentId: bounty.id, adCreativeType: bounty(closure_1_2[57]).AdCreativeType.BOUNTY, overrideVisibility: false, questContent: bounty(closure_1_2[36]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: bounty(closure_1_2[36]).QuestContent.QUEST_BAR_MOBILE, children: children.children });
     },
     renderModeChangeTracker(mode) {
-      return closure_1_21(closure_1_34, { adCreativeType: bounty(closure_1_2[56]).AdCreativeType.BOUNTY, adContentId: bounty.id, mode: mode.mode });
+      return closure_1_21(closure_1_34, { adCreativeType: bounty(closure_1_2[57]).AdCreativeType.BOUNTY, adContentId: bounty.id, mode: mode.mode });
     }
   };
   obj[1] = callback3(QuestDockWithEntranceAnimation, obj);
-  return callback3(bounty(14944).QuestDockBountyProvider, obj);
+  return callback3(bounty(15026).QuestDockBountyProvider, obj);
 }
 let closure_3 = ["mode"];
 const error = importAllResult;
@@ -821,20 +822,20 @@ const memoResult = importAllResult.memo(function QuestDockWithVisibilityContext(
   const memo = importAllResult.useMemo(() => ({ isRendered: isMobileQuestDockRenderedBase, isVisibleToUser: isMobileQuestDockVisibleToUser }), items);
   const memo1 = importAllResult.useMemo(() => {
     const type = mobileQuestDock.type;
-    if (mobileQuestDock(isMobileQuestDockVisibleToUser[56]).AdCreativeType.BOUNTY === type) {
+    if (mobileQuestDock(isMobileQuestDockVisibleToUser[57]).AdCreativeType.BOUNTY === type) {
       let obj = { bounty: null };
       obj[0] = tmp.bounty;
       return closure_1_21(closure_1_42, obj);
-    } else if (tmp2(tmp3[56]).AdCreativeType.QUEST === type) {
+    } else if (tmp2(tmp3[57]).AdCreativeType.QUEST === type) {
       obj = { quest: null };
       obj[0] = tmp.quest;
       return closure_1_21(closure_1_41, obj);
-    } else if (tmp2(tmp3[56]).AdCreativeType.NO_FILL === type) {
+    } else if (tmp2(tmp3[57]).AdCreativeType.NO_FILL === type) {
       return null;
     }
   }, items1);
   let tmp7 = null;
-  if (mobileQuestDock.type !== mobileQuestDock(isMobileQuestDockVisibleToUser[56]).AdCreativeType.NO_FILL) {
+  if (mobileQuestDock.type !== mobileQuestDock(isMobileQuestDockVisibleToUser[57]).AdCreativeType.NO_FILL) {
     obj = { value: null, children: null };
     obj[0] = memo;
     obj[1] = memo1;

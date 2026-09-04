@@ -1,21 +1,21 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17383
+// Function ID: 17384
 // Name: ConnectGuardianShareScreen
-// Dependencies: [19, 17, 7292, 21, 4478, 709, 1233, 2368, 4193, 4724, 11717, 644, 14724, 8711, 8712, 4927, 4474, 14725, 6057, 5504, 11729, 2]
+// Dependencies: [19, 17, 7470, 21, 4481, 709, 1233, 2368, 4193, 4731, 11848, 644, 14805, 8351, 8352, 4934, 4477, 14806, 5532, 5579, 11860, 2]
 // Exports: default
 
-// Module 17303 (ConnectGuardianShareScreen)
+// Module 17383 (ConnectGuardianShareScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import Modal from "Modal" /* 11729 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import Modal from "Modal" /* 11860 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14805 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7292 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ConnectGuardianShareScreen() {
@@ -25,10 +25,10 @@ function ConnectGuardianShareScreen() {
   const callback = React.useCallback(() => {
     const intl = getLinkCode(1233).intl;
     getLinkCode(4193).presentFailedToast(intl.string(getLinkCode(1233).t.R0RpRX));
-    let arr = callback(4724);
+    let arr = callback(4731);
     arr = arr.pop();
   }, []);
-  obj1 = getLinkCode(11717);
+  obj1 = getLinkCode(11848);
   getLinkCode = obj1.useFamilyCenterActions({ onError: callback }).getLinkCode;
   let obj2 = getLinkCode(644);
   const items = [closure_5];
@@ -39,44 +39,44 @@ function ConnectGuardianShareScreen() {
   const effect = React.useEffect(() => {
     getLinkCode();
   }, []);
-  useOnNewPendingRequestDefault(_modDef4724.pop);
+  useOnNewPendingRequestDefault(_modDef4731.pop);
   obj = { spacing: ThemesDefault.space.PX_40, children: null };
   obj = { spacing: ThemesDefault.space.PX_8, children: null };
   obj1 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   let intl = getLinkCode(1233).intl;
   obj1[4] = intl.string(messagesProxyDefault.ITlV6p);
-  const items2 = [callback(getLinkCode(4474).Text, obj1), ];
+  const items2 = [callback(getLinkCode(4477).Text, obj1), ];
   obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl2 = getLinkCode(1233).intl;
   obj2[3] = intl2.format(messagesProxyDefault.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
-  items2[1] = callback(getLinkCode(4474).Text, obj2);
+  items2[1] = callback(getLinkCode(4477).Text, obj2);
   obj[1] = items2;
-  const items3 = [callback2(getLinkCode(4927).Stack, obj), ];
+  const items3 = [callback2(getLinkCode(4934).Stack, obj), ];
   obj3 = { spacing: ThemesDefault.space.PX_24, style: tmp.cardSection, children: null };
   const obj4 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl3 = getLinkCode(1233).intl;
   obj4[3] = intl3.string(messagesProxyDefault.pojgfk);
-  const items4 = [callback(getLinkCode(4474).Text, obj4), ];
+  const items4 = [callback(getLinkCode(4477).Text, obj4), ];
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const obj5 = { shareActions: "full", linkCode: null, expiresAt: null, onRefresh: null };
       obj5[1] = stateFromStores;
       obj5[2] = stateFromStores1;
       obj5[3] = getLinkCode;
-      let tmp11Result = tmp11(tmp2(14725).ConnectGuardianCard, obj5);
+      let tmp11Result = tmp11(tmp2(14806).ConnectGuardianCard, obj5);
     }
     const obj6 = { children: null };
     const obj7 = { children: null };
     items4[1] = tmp11Result;
     obj3[2] = items4;
-    items3[1] = tmp12(getLinkCode(4927).Stack, obj3);
+    items3[1] = tmp12(getLinkCode(4934).Stack, obj3);
     obj[1] = items3;
-    obj7[0] = tmp12(getLinkCode(4927).Stack, obj);
-    obj6[0] = tmp11(getLinkCode(8712).ModalContent, obj7);
-    return tmp11(getLinkCode(8711).ModalScreen, obj6);
+    obj7[0] = tmp12(getLinkCode(4934).Stack, obj);
+    obj6[0] = tmp11(getLinkCode(8352).ModalContent, obj7);
+    return tmp11(getLinkCode(8351).ModalScreen, obj6);
   }
   const tmp9 = useOnNewPendingRequestDefault;
-  tmp11Result = tmp11(View, { style: tmp.loading, children: callback(getLinkCode(6057).ActivityIndicator, {}) });
+  tmp11Result = tmp11(View, { style: tmp.loading, children: callback(getLinkCode(5532).ActivityIndicator, {}) });
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { title: { textAlign: "center" }, body: { textAlign: "center" }, qrLabel: { textAlign: "center" }, cardSection: { alignItems: "center" }, loading: null };
@@ -90,7 +90,7 @@ export default function ConnectGuardianShareModal() {
     let obj = { CONNECT_GUARDIAN_SHARE: null };
     obj = {
       headerShown: true,
-      headerLeft: callback(5504).getHeaderBackButton(callback2(4724).pop),
+      headerLeft: callback(5579).getHeaderBackButton(callback2(4731).pop),
       headerTitle() {
         return null;
       },

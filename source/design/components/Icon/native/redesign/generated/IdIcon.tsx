@@ -1,14 +1,14 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 10558
+// Function ID: 10559
 // Name: IdIcon
-// Dependencies: [19, 21, 709, 4196, 9066, 2]
+// Dependencies: [19, 21, 709, 4196, 10559, 2]
 // Exports: IdIcon
 
-// Module 9065 (IdIcon)
+// Module 10558 (IdIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9066 */;
+import registerAsset from "registerAsset" /* 10559 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

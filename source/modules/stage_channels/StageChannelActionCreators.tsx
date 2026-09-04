@@ -1,26 +1,26 @@
-// Module ID: 8688
-// Function ID: 8689
+// Module ID: 8328
+// Function ID: 8329
 // Name: audienceAckRequestToSpeak
-// Dependencies: [5, 1980, 4497, 673, 8689, 38, 4701, 8690, 527, 8694, 4668, 5375, 5466, 1954, 4125, 503, 4491, 8683, 8696, 2]
+// Dependencies: [5, 1980, 4500, 673, 8329, 38, 4708, 8330, 527, 8334, 4675, 5383, 5475, 1954, 4125, 503, 4494, 8323, 8336, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 8688 (audienceAckRequestToSpeak)
+// Module 8328 (audienceAckRequestToSpeak)
 import _modDef38 from "module_38" /* 38 */;
 import fromStringAll from "fromString" /* 503 */;
 import sendRequest from "sendRequest" /* 527 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import _modDef4491 from "module_4491" /* 4491 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5375 */;
-import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5466 */;
-import fillChunk from "fillChunk" /* 8690 */;
+import _modDef4494 from "module_4494" /* 4494 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4675 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5383 */;
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5475 */;
+import fillChunk from "fillChunk" /* 8330 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "updateVoiceState" /* 4497 */;
+import closure_6 from "updateVoiceState" /* 4500 */;
 import ME from "ME" /* 673 */;
-import { SafetyToastType } from "SafetyToastType" /* 8689 */;
+import { SafetyToastType } from "SafetyToastType" /* 8329 */;
 
 require = arg1;
 function audienceAckRequestToSpeak(channel, suppress) {
@@ -109,10 +109,10 @@ function _startStage() {
               closure_1 = undefined;
               if ("" !== closure_1) {
                 if (closure_1_5.getVoiceChannelId() !== tmp28.id) {
-                  let obj2 = callback(8683);
+                  let obj2 = callback(8323);
                   obj2.connectToStage(tmp28);
                 }
-                const obj4 = callback(8696);
+                const obj4 = callback(8336);
                 c6 = 1;
                 c7 = 1;
                 obj1 = { value: null, done: false };
@@ -429,7 +429,7 @@ export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissi
     tmp5Result = tmp5(503);
     obj.deny = tmp5Result.add(obj.deny, REQUEST_TO_SPEAK);
   }
-  const result = _modDef4491.updatePermissionOverwrite(getGuildId.id, obj);
+  const result = _modDef4494.updatePermissionOverwrite(getGuildId.id, obj);
 };
 export const startStage = function startStage(closure_1_0, arg1, GUILD_ONLY, closure_1_11) {
   const self = this;

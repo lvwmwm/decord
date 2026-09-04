@@ -1,14 +1,14 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11629
+// Function ID: 11630
 // Name: isVisualMedia
-// Dependencies: [673, 4671, 1398, 11509, 2]
+// Dependencies: [673, 4678, 1399, 11630, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 11508 (isVisualMedia)
+// Module 11629 (isVisualMedia)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4671 */;
-import set2 from "set" /* 11509 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4678 */;
+import set2 from "set" /* 11630 */;
 
 const MessageAttachmentFlags = ME.MessageAttachmentFlags;
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
@@ -36,12 +36,12 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
           if (height > 0) {
             let str3 = "IMAGE";
             if (!obj2.isImageFile(filename)) {
-              let tmp5Result = tmp5(4671);
+              let tmp5Result = tmp5(4678);
               let str5 = "INVALID";
               if (tmp5Result.isVideoFile(filename)) {
                 str5 = "INVALID";
                 if (null != proxy_url.proxy_url) {
-                  tmp5Result = tmp5(1398);
+                  tmp5Result = tmp5(1399);
                   let num2 = proxy_url.flags;
                   if (num2 == null) {
                     num2 = 0;
@@ -90,7 +90,7 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
             if (tmpResult.isVideoContentType(contentType)) {
               return "VIDEO";
             }
-            tmpResult = tmp(4671);
+            tmpResult = tmp(4678);
           }
           obj = urlMatchesFileExtension;
           tmp = require;

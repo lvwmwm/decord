@@ -1,17 +1,17 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14587
+// Function ID: 14588
 // Name: handlePasskeyUpsellShow
-// Dependencies: [1215, 1921, 14549, 673, 5495, 7736, 4298, 1372, 4332, 6065, 14556, 2]
+// Dependencies: [1215, 1921, 14581, 673, 7058, 6891, 4301, 1372, 4335, 6538, 14588, 2]
 
-// Module 14555 (handlePasskeyUpsellShow)
+// Module 14587 (handlePasskeyUpsellShow)
 import DismissibleContent from "DismissibleContent" /* 1372 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
-import initializeDefault from "initialize" /* 5495 */;
-import _crypto from "_crypto" /* 7736 */;
-import _modDef14556 from "module_14556" /* 14556 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
+import _crypto from "_crypto" /* 6891 */;
+import initializeDefault from "initialize" /* 7058 */;
+import _modDef14588 from "module_14588" /* 14588 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "hasFetchedCredentials" /* 14549 */;
+import closure_5 from "hasFetchedCredentials" /* 14581 */;
 import { LoginStates } from "ME" /* 673 */;
 
 require = arg1;
@@ -35,20 +35,20 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
     if (_crypto.hasWebAuthn) {
       if (loginStatus.getLoginStatus() === LoginStates.NONE) {
         if (obj.attemptedPasswordLogin()) {
-          let tmpResult = tmp(4298);
+          let tmpResult = tmp(4301);
           if (!tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(1372).DismissibleContent.PASSWORDLESS_UPSELL)) {
             if (!closure_5.hasFetchedCredentials()) {
-              tmpResult = tmp(4332);
+              tmpResult = tmp(4335);
               if (!tmpResult.isModalOpen()) {
                 currentUser = currentUser.getCurrentUser();
                 if (tmp6) {
                   if (obj3.hasFetchedCredentials()) {
-                    _modDef14556.openPasskeyUpsell();
-                    const obj6 = _modDef14556;
+                    _modDef14588.openPasskeyUpsell();
+                    const obj6 = _modDef14588;
                   } else if (!c7) {
                     c7 = true;
-                    const webAuthnCredentials = tmp(6065).fetchWebAuthnCredentials();
-                    const tmpResult1 = tmp(6065);
+                    const webAuthnCredentials = tmp(6538).fetchWebAuthnCredentials();
+                    const tmpResult1 = tmp(6538);
                   }
                 }
                 tmp6 = undefined !== currentUser && currentUser.verified;

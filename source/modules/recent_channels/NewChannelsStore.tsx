@@ -1,14 +1,14 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7465
+// Function ID: 7466
 // Name: guildHasCommunity
-// Dependencies: [1339, 1215, 1386, 1981, 1991, 1908, 4493, 4702, 673, 684, 6138, 706, 5487, 11, 586, 2]
+// Dependencies: [1339, 1215, 1386, 1981, 1991, 1908, 4496, 4709, 673, 684, 7222, 706, 7050, 11, 586, 2]
 
-// Module 7287 (guildHasCommunity)
+// Module 7465 (guildHasCommunity)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import SidebarType from "SidebarType" /* 6138 */;
+import SidebarType from "SidebarType" /* 7222 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
@@ -16,8 +16,8 @@ import closure_6 from "comparator" /* 1981 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1981 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "generateOldThreadCutoff" /* 4493 */;
-import closure_11 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_10 from "generateOldThreadCutoff" /* 4496 */;
+import closure_11 from "updateUserGuildSettingsInternal" /* 4709 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

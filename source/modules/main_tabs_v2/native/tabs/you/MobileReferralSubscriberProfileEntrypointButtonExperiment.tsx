@@ -1,12 +1,12 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16714
+// Function ID: 16715
 // Name: result
-// Dependencies: [684, 1467, 2]
+// Dependencies: [684, 1468, 2]
 // Exports: useMobileReferralSubscriberProfileEntrypointButtonConfig
 
-// Module 16627 (result)
+// Module 16714 (result)
 import setDefault from "set" /* 684 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const result = 3 * setDefault.Millis.DAYS_30;
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-05-mobile-referral-subscriber-profile-entrypoint-button", kind: "user", defaultConfig: { enabled: false, showReferralNotificationDot: false }, variations: { 0: { enabled: false, showReferralNotificationDot: false }, 1: { enabled: true, showReferralNotificationDot: false }, 2: { enabled: true, showReferralNotificationDot: true } } });

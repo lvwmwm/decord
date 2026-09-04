@@ -1,12 +1,12 @@
-// Module ID: 9908
-// Function ID: 9909
-// Dependencies: [19, 4529, 9330, 673, 21, 4298, 1372, 1233, 4859, 9909, 9316, 2]
+// Module ID: 9381
+// Function ID: 9382
+// Dependencies: [19, 4532, 9162, 673, 21, 4301, 1372, 1233, 4866, 9382, 9181, 2]
 
-// Module 9908
+// Module 9381
 import noopAll from "noop" /* 19 */;
-import _modDef4859 from "module_4859" /* 4859 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
-import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE" /* 9330 */;
+import _modDef4866 from "module_4866" /* 4866 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
+import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE" /* 9162 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -45,17 +45,17 @@ export default {
         }
         return resolved;
       }
-      obj2 = _require(4298);
+      obj2 = _require(4301);
     }
     return Promise.resolve();
   },
   showSelfDismissableAlert(reconnectPlatformType) {
     reconnectPlatformType = reconnectPlatformType.reconnectPlatformType;
     ({ title, body, errorCodeMessage } = reconnectPlatformType);
-    let obj = _modDef4859;
+    let obj = _modDef4866;
     obj = { title, body: null, onConfirm: null };
-    obj = { body, errorCodeMessage, dismissCallback: _modDef4859.close };
-    obj[1] = jsx(reconnectPlatformType(9909).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: _modDef4859.close });
+    obj = { body, errorCodeMessage, dismissCallback: _modDef4866.close };
+    obj[1] = jsx(reconnectPlatformType(9382).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: _modDef4866.close });
     obj[2] = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: null, location: null };

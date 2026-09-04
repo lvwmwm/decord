@@ -1,21 +1,21 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17488
+// Function ID: 17489
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 17402, 673, 1924, 21, 4478, 709, 9657, 9195, 695, 1233, 511, 5091, 4929, 4474, 586, 2]
+// Dependencies: [5, 32, 19, 17, 17482, 673, 1924, 21, 4481, 709, 9600, 10265, 695, 1233, 511, 5099, 4936, 4477, 586, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 17408 (HeaderRow)
+// Module 17488 (HeaderRow)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 17402 */;
+import closure_8 from "initialize" /* 17482 */;
 import ME from "ME" /* 673 */;
 import { EMOJI_MAX_FILESIZE_KB } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function HeaderRow(guild) {
@@ -196,7 +196,7 @@ function HeaderRow(guild) {
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(9657);
+  let obj = guild(9600);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1233).intl;
   obj = { id: null, text: null };
@@ -240,7 +240,7 @@ function HeaderRow(guild) {
     const intl5 = tmp7(1233).intl;
     obj5[3] = intl5.string(tmp7(1233).t["DU0dy/"]);
     obj5[4] = uploadDisabled;
-    canCreateExpressions = tmp13(tmp7(4929).Button, obj5);
+    canCreateExpressions = tmp13(tmp7(4936).Button, obj5);
   }
   const items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;
@@ -248,18 +248,18 @@ function HeaderRow(guild) {
     const obj6 = { style: null, variant: "text-sm/medium", color: "text-feedback-critical", children: null };
     obj6[0] = tmp.errorText;
     obj6[3] = tmp5;
-    tmp13Result = tmp13(tmp7(4474).Text, obj6);
+    tmp13Result = tmp13(tmp7(4477).Text, obj6);
   }
   let obj7 = { children: null };
   items1[1] = tmp13Result;
   let obj8 = { style: tmp.uploadInstructionsContainer, children: null };
-  const items2 = [closure_14(guild(4474).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
+  const items2 = [closure_14(guild(4477).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
   const obj9 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: null };
   const intl6 = tmp7(1233).intl;
   const stringResult2 = intl4.string(guild(1233).t["8Vr5Qd"]);
   const tmp14 = closure_15;
   obj9[3] = intl6.string(guild(1233).t.jrXfyw).toUpperCase();
-  items2[1] = closure_14(guild(4474).Text, obj9);
+  items2[1] = closure_14(guild(4477).Text, obj9);
   items2[2] = closure_14(c7, {
     style: tmp.uploadInstructionsList,
     data: items,

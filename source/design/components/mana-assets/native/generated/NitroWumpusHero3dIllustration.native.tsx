@@ -1,14 +1,14 @@
-// Module ID: 6883
-// Function ID: 6884
+// Module ID: 6264
+// Function ID: 6265
 // Name: NitroWumpusHero3dIllustration
-// Dependencies: [21, 5502, 6884, 2]
+// Dependencies: [21, 5542, 6265, 2]
 // Exports: NitroWumpusHero3dIllustration
 
-// Module 6883 (NitroWumpusHero3dIllustration)
+// Module 6264 (NitroWumpusHero3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6884 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6265 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusHero3dIllustration.native.tsx");

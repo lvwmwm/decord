@@ -1,9 +1,9 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11320
+// Function ID: 11321
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [19, 21, 11231, 11247, 1233, 2]
+// Dependencies: [19, 21, 11302, 11321, 1233, 2]
 
-// Module 11246 (InappropriateConversationBlockAndReportAlert)
+// Module 11320 (InappropriateConversationBlockAndReportAlert)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

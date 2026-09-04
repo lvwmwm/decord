@@ -1,14 +1,14 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 8783
+// Function ID: 8784
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4527, 673, 3, 706, 527, 4376, 8514, 1205, 2]
+// Dependencies: [5, 4530, 673, 3, 706, 527, 4379, 8784, 1205, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 11061 (fetchVirtualCurrencyBalance)
+// Module 8783 (fetchVirtualCurrencyBalance)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addSku" /* 4527 */;
+import closure_4 from "addSku" /* 4530 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
@@ -220,7 +220,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(8514);
+                  let obj8 = callback(8784);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;
@@ -242,10 +242,10 @@ function _redeemVirtualCurrencyForSKU() {
             } else if (2 === tmp7) {
               c4 = 0;
               closure_14 = c3;
-              if (closure_14 instanceof callback(4376).BillingError) {
+              if (closure_14 instanceof callback(4379).BillingError) {
                 billingError = closure_14;
               } else {
-                billingError = new callback(4376).BillingError(closure_14);
+                billingError = new callback(4379).BillingError(closure_14);
               }
               let obj6 = callback2(706);
               const obj5 = { type: "VIRTUAL_CURRENCY_REDEEM_FAIL", skuId: null, error: null };

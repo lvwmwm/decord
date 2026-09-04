@@ -1,19 +1,19 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14555
+// Function ID: 14556
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [32, 19, 17, 6010, 1383, 502, 21, 709, 4478, 12766, 6261, 1372, 8087, 8509, 1949, 4445, 14524, 2008, 1233, 14511, 6057, 10973, 1296, 8103, 2]
+// Dependencies: [32, 19, 17, 7148, 1383, 502, 21, 709, 4481, 8760, 7326, 1372, 8097, 10973, 1949, 4448, 14556, 2008, 1233, 14543, 5532, 8752, 1296, 13104, 2]
 // Exports: default
 
-// Module 14523 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 14555 (COLLECTIBLES_PREVIEW_SIZE)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { NOOP } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 const PX_4 = ThemesDefault.space.PX_4;
@@ -31,13 +31,13 @@ export default function UserProfileFrameEditButton(arg0) {
   dependencyMap = undefined;
   let userProfileFrame;
   const tmp = callback();
-  let obj = user(12766);
+  let obj = user(8760);
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop("UserProfileFrameEditButton");
-  obj1 = user(6261);
+  obj1 = user(7326);
   const items = [user(1372).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
   const tmp5 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
   dependencyMap = tmp6;
-  let obj2 = user(8087);
+  let obj2 = user(8097);
   obj = { pendingValue: pendingProfileFrame, userValue: null, guildValue: null, guildId: null };
   let profileFrame;
   if (displayProfile != null) {
@@ -57,7 +57,7 @@ export default function UserProfileFrameEditButton(arg0) {
   obj[2] = profileFrame1;
   obj[3] = guildId;
   const profilePreviewValue = obj2.getProfilePreviewValue(obj);
-  let tmp2Result = tmp2(8509);
+  let tmp2Result = tmp2(10973);
   let skuId;
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
@@ -74,7 +74,7 @@ export default function UserProfileFrameEditButton(arg0) {
   if (type === user(1949).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  tmp2Result = tmp2(8087);
+  tmp2Result = tmp2(8097);
   userProfileFrame = tmp2Result.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
@@ -106,7 +106,7 @@ export default function UserProfileFrameEditButton(arg0) {
       const intl5 = tmp2(1233).intl;
       obj1[1] = intl5.string(tmp2(1233).t.MKDeyL);
       obj1[2] = NOOP;
-      obj1[3] = tmp19(tmp2(6057).ActivityIndicator, { animating: true, size: "large" });
+      obj1[3] = tmp19(tmp2(5532).ActivityIndicator, { animating: true, size: "large" });
       obj2 = obj1;
     } else {
       obj2 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
@@ -114,7 +114,7 @@ export default function UserProfileFrameEditButton(arg0) {
       obj2[0] = intl3.string(tmp2(1233).t.GWrZOd);
       const obj3 = { showNewBadge: null };
       obj3[0] = tmp5[0] === tmp2(1372).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE;
-      obj2[1] = tmp19(tmp2(14511).UserProfileEditFormLabelBadges, obj3);
+      obj2[1] = tmp19(tmp2(14543).UserProfileEditFormLabelBadges, obj3);
       obj2[2] = formatToPlainStringResult;
       const obj4 = { text: null };
       obj4[0] = formatToPlainStringResult;
@@ -128,18 +128,18 @@ export default function UserProfileFrameEditButton(arg0) {
         obj6[1] = COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(709).space.PX_8;
         obj6[2] = COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4;
         obj6[3] = guildId(709).colors.BACKGROUND_SURFACE_HIGH;
-        obj5[1] = tmp19(guildId(10973), obj6);
+        obj5[1] = tmp19(guildId(8752), obj6);
         let tmp19Result = tmp19(View, obj5);
-        const tmp24 = guildId(10973);
+        const tmp24 = guildId(8752);
       } else {
         const obj7 = { source: null, style: null };
-        obj7[0] = guildId(8103);
+        obj7[0] = guildId(13104);
         obj7[1] = tmp.noneIcon;
         tmp19Result = tmp19(tmp2(1296).Icon, obj7);
       }
       obj2[5] = tmp19Result;
     }
-    return jsx(tmp2(14511).UserProfileEditFormButton, obj2);
+    return jsx(tmp2(14543).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

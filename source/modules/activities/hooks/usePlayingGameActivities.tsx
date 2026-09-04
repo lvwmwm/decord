@@ -1,14 +1,14 @@
-// Module ID: 9894
-// Function ID: 9895
+// Module ID: 9108
+// Function ID: 9109
 // Name: usePlayingGameActivities
-// Dependencies: [19, 1215, 4569, 5232, 586, 9895, 2]
+// Dependencies: [19, 1215, 4572, 5240, 586, 9109, 2]
 // Exports: default
 
-// Module 9894 (usePlayingGameActivities)
+// Module 9108 (usePlayingGameActivities)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "sortActivity" /* 4569 */;
-import closure_6 from "filterPlayingActivities" /* 5232 */;
+import closure_5 from "sortActivity" /* 4572 */;
+import closure_6 from "filterPlayingActivities" /* 5240 */;
 
 const require = arg1;
 let closure_7 = [];

@@ -1,9 +1,9 @@
-// Module ID: 6994
-// Function ID: 6995
+// Module ID: 6375
+// Function ID: 6376
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6994 (metadata)
+// Module 6375 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconLilQuackSPondverseExample-2x.png.js");

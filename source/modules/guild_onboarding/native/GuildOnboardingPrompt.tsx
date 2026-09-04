@@ -1,26 +1,26 @@
-// Module ID: 5564
-// Function ID: 5565
+// Module ID: 7064
+// Function ID: 7065
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5410, 5499, 1908, 5476, 5473, 1924, 21, 4478, 5501, 709, 1498, 586, 1627, 4197, 686, 5562, 5565, 4474, 1233, 4929, 5568, 4941, 688, 5483, 5589, 5590, 5594, 1430, 4445, 5599, 2008, 5077, 5952, 2]
+// Dependencies: [32, 19, 17, 5419, 5527, 1908, 7040, 7037, 1924, 21, 4481, 5637, 709, 1498, 586, 1627, 4197, 686, 7063, 5556, 4477, 1233, 4936, 5502, 4948, 688, 7046, 7065, 7066, 7070, 1431, 4448, 7075, 2008, 5084, 7098, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5564 (PromptHeader)
+// Module 7064 (PromptHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import Text2 from "Text" /* 4474 */;
-import EmojiDefault from "Emoji" /* 5594 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import Text2 from "Text" /* 4477 */;
+import EmojiDefault from "Emoji" /* 7070 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "getEmojiToGroupId" /* 5410 */;
-import closure_10 from "get" /* 5499 */;
+import closure_9 from "getEmojiToGroupId" /* 5419 */;
+import closure_10 from "get" /* 5527 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "handleUpdate" /* 5476 */;
-import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5473 */;
+import closure_12 from "handleUpdate" /* 7040 */;
+import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7037 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function PromptHeader(currentPrompt) {
@@ -46,7 +46,7 @@ function PromptHeader(currentPrompt) {
     const obj3 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1233).intl;
     obj3[2] = intl2.string(tmp6(1233).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4474).Text, obj3);
+    items1[1] = tmp5(tmp6(4477).Text, obj3);
     obj1[0] = items1;
     tmp2Result = tmp2(tmp3, obj1);
   }
@@ -219,7 +219,7 @@ function DropdownOption(option) {
   }
   obj1[3] = str;
   obj[1] = closure_15(EmojiDefault, obj1);
-  const items1 = [closure_15(closure_6, obj), closure_15(option(4474).Text, { variant: "text-md/semibold", children: option.title })];
+  const items1 = [closure_15(closure_6, obj), closure_15(option(4477).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
   return closure_16(closure_6, obj);
 }

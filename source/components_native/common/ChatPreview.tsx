@@ -1,29 +1,29 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13184
+// Function ID: 13185
 // Name: componentDidMount
-// Dependencies: [19, 17, 4470, 4186, 1386, 1921, 7854, 21, 4478, 709, 4204, 11363, 7853, 11114, 11753, 4163, 1233, 11132, 11133, 12, 4489, 11430, 11409, 11372, 4746, 1890, 11468, 7892, 11116, 7519, 11371, 11373, 11408, 12439, 12441, 11696, 1234, 5562, 5077, 4474, 4166, 586, 1492, 6183, 4732, 2]
+// Dependencies: [19, 17, 4473, 4186, 1386, 1921, 7864, 21, 4481, 709, 4205, 11470, 7863, 11184, 11884, 4163, 1233, 11202, 11203, 12, 4492, 11548, 11516, 11479, 4753, 1890, 11589, 7902, 11186, 7696, 11478, 11480, 11515, 12597, 12599, 11826, 1234, 7063, 5084, 4477, 4166, 586, 1492, 7267, 4739, 2]
 // Exports: ChatPreview
 
-// Module 13152 (componentDidMount)
+// Module 13184 (componentDidMount)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import setOptionsDefault from "setOptions" /* 7853 */;
-import getPreviousMessagesDefault from "getPreviousMessages" /* 11363 */;
-import DCDChatListDefault from "DCDChatList" /* 11696 */;
-import GuildNSFWDefault from "GuildNSFW" /* 12439 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 12441 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import setOptionsDefault from "setOptions" /* 7863 */;
+import getPreviousMessagesDefault from "getPreviousMessages" /* 11470 */;
+import DCDChatListDefault from "DCDChatList" /* 11826 */;
+import GuildNSFWDefault from "GuildNSFW" /* 12597 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 12599 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_7 from "setContent" /* 4186 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import Changeset from "Changeset" /* 7854 */;
+import Changeset from "Changeset" /* 7864 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -97,7 +97,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(11753)(c0, first[first.length - 1], props)) {
+            if (messages(11884)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -220,7 +220,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "flex", shouldInitialScroll: "Array", animated: "agente", scrollPosition: "b\u00FAsqueda", focusTargetId: "cara" };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "flex", shouldInitialScroll: "Array", animated: 984.8, scrollPosition: 956, focusTargetId: 0 };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -273,7 +273,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(closure_1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "isInRestrictedHours" };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: "absolute", messageChannel: -2, selectedChannelId: -1, tapLinkData: "text-xxs/semibold" };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -508,7 +508,7 @@ prototype["render"] = function render() {
   const obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer, children: null };
   tmp9Result = set;
   obj2[2] = callback(PressableBase.PressableOpacity, { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat, children: callback(Text.Text, obj4) });
-  tmp6Result = tmp6(tmp9(5562).SafeAreaPaddingView, obj2);
+  tmp6Result = tmp6(tmp9(7063).SafeAreaPaddingView, obj2);
   tmp14 = tmp6Result;
 };
 ChatPreviewBase.contextType = require("ManaContext").ThemeContext;
@@ -530,10 +530,10 @@ export const ChatPreview = function ChatPreview(channelId) {
   const items1 = [closure_8];
   const stateFromStores1 = channelId(586).useStateFromStores(items1, () => closure_1_8.getChannel(channelId));
   const obj2 = channelId(586);
-  const isChannelSpoilerGated = channelId(6183).useIsChannelSpoilerGated(stateFromStores1);
-  const obj3 = channelId(6183);
-  const isChannelContentGated = channelId(4732).useIsChannelContentGated(stateFromStores1);
-  const obj4 = channelId(4732);
+  const isChannelSpoilerGated = channelId(7267).useIsChannelSpoilerGated(stateFromStores1);
+  const obj3 = channelId(7267);
+  const isChannelContentGated = channelId(4739).useIsChannelContentGated(stateFromStores1);
+  const obj4 = channelId(4739);
   const items2 = [closure_7];
   obj = {};
   const stateFromStores2 = channelId(586).useStateFromStores(items2, () => null != content.getContent());

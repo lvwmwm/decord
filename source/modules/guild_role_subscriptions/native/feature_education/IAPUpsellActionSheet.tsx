@@ -1,10 +1,10 @@
-// Module ID: 16082
-// Function ID: 16083
+// Module ID: 16168
+// Function ID: 16169
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 673, 1393, 1383, 21, 16083, 16084, 1233, 1219, 2]
+// Dependencies: [19, 673, 1393, 1383, 21, 16169, 16170, 1233, 1219, 2]
 // Exports: default
 
-// Module 16082 (IAPUpsellActionSheet)
+// Module 16168 (IAPUpsellActionSheet)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import { Routes } from "ME" /* 673 */;
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 
 export default function IAPUpsellActionSheet(arg0) {
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(16084), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
+  const obj = { imageSource: markAsDismissed(16170), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
   const intl = getSystemLocale.intl;
   obj[1] = intl.string(getSystemLocale.t.rBw4cE);
   const intl2 = getSystemLocale.intl;
@@ -30,5 +30,5 @@ export default function IAPUpsellActionSheet(arg0) {
     markAsDismissed(closure_1_5.UNKNOWN);
   };
   obj[5] = markAsDismissed;
-  return jsx(markAsDismissed(16083), { imageSource: markAsDismissed(16084), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
+  return jsx(markAsDismissed(16169), { imageSource: markAsDismissed(16170), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
 };

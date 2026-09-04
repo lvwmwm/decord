@@ -1,9 +1,9 @@
-// Module ID: 7120
-// Function ID: 7121
+// Module ID: 6501
+// Function ID: 6502
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7120 (metadata)
+// Module 6501 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VideoCameraSpotIllustration-2x.png.js");

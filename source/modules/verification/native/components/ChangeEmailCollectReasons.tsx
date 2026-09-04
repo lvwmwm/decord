@@ -1,18 +1,18 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 5638
+// Function ID: 5639
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1921, 7703, 673, 21, 4478, 709, 586, 1498, 695, 688, 7704, 7705, 7707, 4474, 1233, 4929, 2]
+// Dependencies: [19, 17, 1921, 5639, 673, 21, 4481, 709, 586, 1498, 695, 688, 5640, 5643, 5645, 4477, 1233, 4936, 2]
 // Exports: default
 
-// Module 7702 (ChangeEmailCollectReasons)
+// Module 5638 (ChangeEmailCollectReasons)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import ChangeEmailReasons from "ChangeEmailReasons" /* 7703 */;
+import ChangeEmailReasons from "ChangeEmailReasons" /* 5639 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);

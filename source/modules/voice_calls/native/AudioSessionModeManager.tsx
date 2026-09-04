@@ -1,20 +1,20 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17236
+// Function ID: 17237
 // Name: handleAVAudioSessionMode
-// Dependencies: [17, 1385, 5374, 4500, 1215, 1386, 4529, 1980, 4497, 7167, 673, 1234, 17151, 5495, 2]
+// Dependencies: [17, 1385, 5382, 4503, 1215, 1386, 4532, 1980, 4500, 7347, 673, 1234, 17237, 7058, 2]
 
-// Module 17150 (handleAVAudioSessionMode)
-import initializeDefault from "initialize" /* 5495 */;
-import handleVoiceChannelSelect from "handleVoiceChannelSelect" /* 17151 */;
+// Module 17236 (handleAVAudioSessionMode)
+import initializeDefault from "initialize" /* 7058 */;
+import handleVoiceChannelSelect from "handleVoiceChannelSelect" /* 17237 */;
 import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "buildStageChannelUserRoles" /* 5374 */;
-import closure_4 from "reset" /* 4500 */;
+import closure_3 from "buildStageChannelUserRoles" /* 5382 */;
+import closure_4 from "reset" /* 4503 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateVoiceState" /* 4497 */;
-import closure_10 from "getState" /* 7167 */;
+import closure_9 from "updateVoiceState" /* 4500 */;
+import closure_10 from "getState" /* 7347 */;
 import { AppStates } from "ME" /* 673 */;
 import set from "set" /* 1234 */;
 

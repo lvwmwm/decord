@@ -1,12 +1,12 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8053
+// Function ID: 8054
 // Name: transformSearchableSelectOptions
-// Dependencies: [1386, 1984, 1908, 1921, 673, 4746, 1470, 1433, 5987, 8044, 685, 709, 8045, 4982, 2]
+// Dependencies: [1386, 1984, 1908, 1921, 673, 4753, 1394, 1434, 7127, 8054, 685, 709, 8055, 4989, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8043 (transformSearchableSelectOptions)
-import getChannelIcon from "getChannelIcon" /* 4982 */;
-import registerAssetDefault from "registerAsset" /* 8045 */;
+// Module 8053 (transformSearchableSelectOptions)
+import getChannelIcon from "getChannelIcon" /* 4989 */;
+import registerAssetDefault from "registerAsset" /* 8055 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
@@ -105,7 +105,7 @@ export const transformSearchableSelectOptions = function transformSearchableSele
       return null;
     }
   });
-  return mapped.filter(_require(1470).isNotNullish);
+  return mapped.filter(_require(1394).isNotNullish);
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {

@@ -1,22 +1,22 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 11081
+// Function ID: 11082
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1921, 6010, 21, 4478, 709, 586, 9072, 4673, 1233, 9236, 8117, 9104, 2]
+// Dependencies: [19, 17, 1921, 7148, 21, 4481, 709, 586, 11082, 4680, 1233, 11083, 8187, 11044, 2]
 // Exports: default
 
-// Module 9235 (UserProfileCustomStatusActionSheet)
+// Module 11081 (UserProfileCustomStatusActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getNicknameDefault from "getNickname" /* 4673 */;
-import _modDef8117 from "module_8117" /* 8117 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 9072 */;
-import StatusBubbleConnectorDefault from "StatusBubbleConnector" /* 9104 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9236 */;
+import getNicknameDefault from "getNickname" /* 4680 */;
+import _modDef8187 from "module_8187" /* 8187 */;
+import StatusBubbleConnectorDefault from "StatusBubbleConnector" /* 11044 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11082 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11083 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -62,7 +62,7 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj1 = { style: tmp.statusPreviewContainer, children: null };
   const obj2 = { style: tmp.avatarContainer, children: null };
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
-  obj2[1] = callback(_modDef8117, { user, statusStyle: tmp.avatarStatus });
+  obj2[1] = callback(_modDef8187, { user, statusStyle: tmp.avatarStatus });
   const items2 = [callback(View, obj2), callback(StatusBubbleConnectorDefault, { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
   obj1[1] = items2;
   obj[1] = callback2(View, obj1);

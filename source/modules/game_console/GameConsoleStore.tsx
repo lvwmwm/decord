@@ -1,13 +1,13 @@
-// Module ID: 4495
-// Function ID: 4496
+// Module ID: 4498
+// Function ID: 4499
 // Name: set
-// Dependencies: [4496, 4497, 586, 706, 2]
+// Dependencies: [4499, 4500, 586, 706, 2]
 
-// Module 4495 (set)
+// Module 4498 (set)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "handleUpdate" /* 4496 */;
-import closure_1 from "updateVoiceState" /* 4497 */;
+import closure_0 from "handleUpdate" /* 4499 */;
+import closure_1 from "updateVoiceState" /* 4500 */;
 import set from "set" /* 2 */;
 
 let c2 = null;

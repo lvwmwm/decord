@@ -1,25 +1,25 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 14931
+// Function ID: 14932
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4470, 5396, 21, 4478, 709, 4479, 4482, 586, 1627, 4217, 4204, 14851, 14852, 8997, 2]
+// Dependencies: [19, 17, 4473, 5404, 21, 4481, 709, 4482, 4485, 586, 1627, 4218, 4205, 14932, 14933, 9898, 2]
 // Exports: default
 
-// Module 14850 (BountiesScrollPromptFooterContent)
+// Module 14931 (BountiesScrollPromptFooterContent)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4479 */;
-import timingNone from "timingNone" /* 4482 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8997 */;
-import apexExperiment from "apexExperiment" /* 14851 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 14852 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4482 */;
+import timingNone from "timingNone" /* 4485 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9898 */;
+import apexExperiment from "apexExperiment" /* 14932 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 14933 */;
 import closure_3 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5396 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function BountiesScrollPromptFooterContent(zIndex) {
@@ -53,12 +53,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   if (stateFromStores) {
     str = "halt";
   }
-  obj[1] = closure_7(zIndex(4204).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
-  const items5 = [closure_7(_modDef4217.View, obj), ];
+  obj[1] = closure_7(zIndex(4205).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  const items5 = [closure_7(_modDef4218.View, obj), ];
   const items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(_modDef4217.View, { style: items6, onLayout: onContentLayout, children });
+  items5[1] = closure_7(_modDef4218.View, { style: items6, onLayout: onContentLayout, children });
   obj[2] = items5;
-  return closure_8(_modDef4217.View, obj);
+  return closure_8(_modDef4218.View, obj);
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {

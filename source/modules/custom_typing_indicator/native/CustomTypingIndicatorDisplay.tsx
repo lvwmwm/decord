@@ -1,20 +1,20 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11912
+// Function ID: 11913
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 4478, 1233, 11772, 4927, 11782, 4474, 5077, 709, 2]
+// Dependencies: [19, 21, 4481, 1233, 11903, 4934, 11913, 4477, 5084, 709, 2]
 // Exports: default
 
-// Module 11781 (CustomTypingIndicatorDisplay)
+// Module 11912 (CustomTypingIndicatorDisplay)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import items2 from "items" /* 11772 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11782 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import items2 from "items" /* 11903 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11913 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

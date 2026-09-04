@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d1dac949a0f852ec9c729a240d5758b0", name: "MusicIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/CherryBlossomIcon", width: 60, height: 60, scales: [2, 3], hash: "0958a3140b1354fdc2a2c5ce3e4f3233", name: "CherryBlossomIcon", type: "png" });

@@ -1,16 +1,16 @@
-// Module ID: 8127
-// Function ID: 8128
+// Module ID: 8112
+// Function ID: 8113
 // Name: _fetchProfile
-// Dependencies: [5, 1934, 1921, 673, 674, 3, 527, 706, 4714, 660, 38, 4376, 2]
+// Dependencies: [5, 1934, 1921, 673, 674, 3, 527, 706, 4721, 660, 38, 4379, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8127 (_fetchProfile)
+// Module 8112 (_fetchProfile)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import sendRequest from "sendRequest" /* 527 */;
 import ImpressionNames from "ImpressionNames" /* 660 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef4714 from "module_4714" /* 4714 */;
+import _modDef4721 from "module_4721" /* 4721 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createdAt" /* 1934 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
@@ -159,7 +159,7 @@ function _fetchProfile() {
               }
               let obj7 = callback2(706);
               obj7 = { type: "USER_PROFILE_FETCH_FAILURE", apiError: null, fetchStartedAt: null, userId: null, guildId: null };
-              const aPIError = new callback(4376).APIError(closure_13);
+              const aPIError = new callback(4379).APIError(closure_13);
               obj7[1] = aPIError;
               obj7[2] = closure_10;
               obj7[3] = callback;
@@ -377,7 +377,7 @@ export const acceptAgreements = function acceptAgreements() {
   if (arg1 === undefined) {
     flag2 = true;
   }
-  let obj = _modDef4714;
+  let obj = _modDef4721;
   obj = { url: Endpoints.USER_AGREEMENTS, trackedActionData: null, body: null, oldFormErrors: true, rejectWithError: null };
   obj = { event: ImpressionNames.NetworkActionNames.USER_ACCEPT_AGREEMENTS };
   obj[1] = obj;

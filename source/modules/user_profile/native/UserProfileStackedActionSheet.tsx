@@ -1,17 +1,17 @@
-// Module ID: 9236
-// Function ID: 9237
+// Module ID: 11083
+// Function ID: 11084
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4478, 709, 1627, 5633, 8376, 1234, 5631, 5077, 1233, 5508, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1627, 6567, 8523, 1234, 7090, 5084, 1233, 5583, 4477, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 9236 (UserProfileStackedActionSheet)
+// Module 11083 (UserProfileStackedActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import Background from "Background" /* 5631 */;
+import Text from "Text" /* 4477 */;
+import Background from "Background" /* 7090 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -48,8 +48,8 @@ export default function UserProfileStackedActionSheet(onBack) {
     const intl = tmp5(1233).intl;
     obj[1] = intl.string(tmp5(1233).t["13/7kX"]);
     obj[2] = onBack;
-    obj[3] = tmp4(tmp5(5508).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(5077).PressableOpacity, obj);
+    obj[3] = tmp4(tmp5(5583).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(5084).PressableOpacity, obj);
   }
   const items1 = [tmp4Result, closure_4(Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result) {
@@ -89,7 +89,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(5633).BottomSheetFlatList, obj);
+  return closure_4(data(6567).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
@@ -106,5 +106,5 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return closure_1_4(renderItem(closure_1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(5633).BottomSheetSectionList, obj);
+  return callback(renderItem(6567).BottomSheetSectionList, obj);
 };

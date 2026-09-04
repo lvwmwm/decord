@@ -1,13 +1,13 @@
-// Module ID: 10197
-// Function ID: 10198
+// Module ID: 10017
+// Function ID: 10018
 // Name: computeThreadNotificationSetting
-// Dependencies: [1386, 4702, 4122, 1232, 673, 1398, 586, 2]
+// Dependencies: [1386, 4709, 4122, 1232, 673, 1399, 586, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10197 (computeThreadNotificationSetting)
-import hasFlag from "hasFlag" /* 1398 */;
+// Module 10017 (computeThreadNotificationSetting)
+import hasFlag from "hasFlag" /* 1399 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_4 from "storeThread" /* 4122 */;
 import { ThreadMemberFlags } from "AbortCodes" /* 1232 */;
 import { UserNotificationSettings } from "ME" /* 673 */;
@@ -33,11 +33,11 @@ function computeThreadNotificationSetting(channel) {
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
       return tmp8.ALL_MESSAGES;
     } else {
-      let tmp6Result = tmp6(1398);
+      let tmp6Result = tmp6(1399);
       if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
         return tmp8.ONLY_MENTIONS;
       } else {
-        tmp6Result = tmp6(1398);
+        tmp6Result = tmp6(1399);
         if (tmp6Result.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
           return tmp8.NO_MESSAGES;
         } else {

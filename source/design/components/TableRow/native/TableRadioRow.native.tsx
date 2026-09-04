@@ -1,14 +1,14 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 5643
+// Function ID: 5644
 // Name: TableRadioRow
-// Dependencies: [19, 21, 7704, 4199, 4205, 5608, 7706, 2]
+// Dependencies: [19, 21, 5640, 4199, 4206, 5560, 5644, 2]
 // Exports: TableRadioRow
 
-// Module 7705 (TableRadioRow)
-import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4205 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import context2 from "context" /* 7704 */;
-import FormRadio from "FormRadio" /* 7706 */;
+// Module 5643 (TableRadioRow)
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4206 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import context2 from "context" /* 5640 */;
+import FormRadio from "FormRadio" /* 5644 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

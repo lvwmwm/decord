@@ -1,19 +1,19 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16708
+// Function ID: 16709
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 5502, 16622, 4298, 1372, 7977, 6261, 1233, 709, 6255, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 21, 4481, 5542, 16709, 4301, 1372, 7987, 7326, 1233, 709, 7320, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 16621 (ReferralProgramCoachmarkImg)
-import preloadDefault from "preload" /* 5502 */;
-import registerAssetDefault from "registerAsset" /* 16622 */;
+// Module 16708 (ReferralProgramCoachmarkImg)
+import preloadDefault from "preload" /* 5542 */;
+import registerAssetDefault from "registerAsset" /* 16709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function ReferralProgramCoachmarkImg() {
@@ -30,13 +30,13 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   disabled = disabled.disabled;
   let _require;
   closure_1 = undefined;
-  let obj = _require(4298);
+  let obj = _require(4301);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1372).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK);
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(7977).useIsEligibleSenderForReferralProgram(result);
-  _require(6261);
+  const isEligibleSenderForReferralProgram = _require(7987).useIsEligibleSenderForReferralProgram(result);
+  _require(7326);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
       let items = [tmp(1372).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];

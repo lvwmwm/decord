@@ -1,10 +1,10 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 14731
+// Function ID: 14732
 // Name: BlockedUserRow
-// Dependencies: [19, 1921, 21, 9077, 5962, 5608, 1296, 1233, 8915, 4929, 586, 2]
+// Dependencies: [19, 1921, 21, 8972, 7102, 5560, 1296, 1233, 8110, 4936, 586, 2]
 // Exports: default
 
-// Module 14650 (BlockedUserRow)
+// Module 14731 (BlockedUserRow)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -13,11 +13,11 @@ const require = arg1;
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: 102039555 };
+  obj = { user: userRecord, guildId: "Array", size: "Array" };
   obj[2] = userRecord(1296).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1296).Avatar, { user: userRecord, guildId: "Array", size: 102039555 });
+  obj[0] = jsx(userRecord(1296).Avatar, { user: userRecord, guildId: "Array", size: "Array" });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
@@ -59,8 +59,8 @@ function BlockedUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(closure_1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj[9] = jsx(userRecord(4929).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5608).TableRow, { name: "unblock", label: null });
+  obj[9] = jsx(userRecord(4936).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5560).TableRow, { name: "unblock", label: null });
 }
 noopAll;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");

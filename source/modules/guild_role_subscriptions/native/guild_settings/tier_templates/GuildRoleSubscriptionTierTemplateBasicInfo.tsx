@@ -1,18 +1,18 @@
-// Module ID: 17625
-// Function ID: 17626
+// Module ID: 17705
+// Function ID: 17706
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1923, 502, 21, 4478, 709, 5502, 1296, 4474, 1233, 6090, 15071, 4930, 2]
+// Dependencies: [19, 17, 1923, 502, 21, 4481, 709, 5542, 1296, 4477, 1233, 7174, 15155, 4937, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 17625 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 17705 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5502 */;
+import preloadDefault from "preload" /* 5542 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1923 */;
 import { CurrencyCodes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -36,15 +36,15 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   obj = { source: { uri: image }, style: tmp.image };
   const items = [callback(preloadDefault, obj), callback(template(1296).Spacer, { size: 16 }), ];
   obj1 = { style: { flexShrink: 1 }, children: null };
-  const items1 = [callback(template(4474).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), callback(template(1296).Spacer, { size: 4 }), ];
+  const items1 = [callback(template(4477).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), callback(template(1296).Spacer, { size: 4 }), ];
   const obj2 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: null };
   const intl = template(1233).intl;
   const obj3 = { price: null, interval: null };
-  let obj6 = template(6090);
+  let obj6 = template(7174);
   obj3[0] = obj6.formatPrice(price_tier, CurrencyCodes.USD);
-  obj3[1] = template(15071).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj3[1] = template(15155).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj2[2] = intl.format(template(1233).t.CgmBaG, obj3);
-  items1[2] = callback(template(4474).Text, obj2);
+  items1[2] = callback(template(4477).Text, obj2);
   obj1[1] = items1;
   items[2] = callback2(View, obj1);
   obj[1] = items;
@@ -52,7 +52,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   const obj5 = { variant: "text-sm/normal", style: descriptionTextStyle };
   const merged = Object.assign(descriptionTextProps);
   obj5.children = description;
-  items2[1] = callback(template(4474).Text, obj5);
+  items2[1] = callback(template(4477).Text, obj5);
   obj6 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl2 = template(1233).intl;
   obj6[0] = intl2.string(template(1233).t["1W7mCt"]);
@@ -60,7 +60,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   obj6[2] = function onPress() {
     return callback(template, closure_2);
   };
-  items2[2] = callback(template(4930).BaseTextButton, obj6);
+  items2[2] = callback(template(4937).BaseTextButton, obj6);
   obj[1] = items2;
   return callback2(View, obj);
 };

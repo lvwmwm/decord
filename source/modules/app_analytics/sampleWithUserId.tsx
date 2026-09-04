@@ -1,10 +1,10 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 7404
+// Function ID: 7405
 // Name: sampleWithUserId
 // Dependencies: [1214, 2]
 // Exports: sampleWithUserId
 
-// Module 7226 (sampleWithUserId)
+// Module 7404 (sampleWithUserId)
 import set from "set" /* 2 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
 

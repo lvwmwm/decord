@@ -1,24 +1,24 @@
-// Module ID: 4369
-// Function ID: 4370
+// Module ID: 4372
+// Function ID: 4373
 // Name: getGuildTierFromGuild
-// Dependencies: [1908, 1921, 4370, 4145, 673, 1924, 1923, 4153, 4371, 1233, 1470, 4372, 1994, 12, 4074, 4373, 3016, 4139, 1205, 4384, 4403, 2]
+// Dependencies: [1908, 1921, 4373, 4145, 673, 1924, 1923, 4153, 4374, 1233, 1394, 4375, 1994, 12, 4074, 4376, 3016, 4139, 1205, 4387, 4406, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
-// Module 4369 (getGuildTierFromGuild)
+// Module 4372 (getGuildTierFromGuild)
 import _modDef1205 from "module_1205" /* 1205 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
 import combinedDefault from "combined" /* 1994 */;
 import messagesProxyDefault from "messagesProxy" /* 3016 */;
 import hooksDefault from "hooks" /* 4074 */;
 import getPremiumPlanItemAll from "getPremiumPlanItem" /* 4139 */;
-import PremiumGuildOverrides from "PremiumGuildOverrides" /* 4371 */;
-import formatSize from "formatSize" /* 4372 */;
-import _fetchAppliedGuildBoostsForGuild from "_fetchAppliedGuildBoostsForGuild" /* 4373 */;
-import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4384 */;
+import PremiumGuildOverrides from "PremiumGuildOverrides" /* 4374 */;
+import formatSize from "formatSize" /* 4375 */;
+import _fetchAppliedGuildBoostsForGuild from "_fetchAppliedGuildBoostsForGuild" /* 4376 */;
+import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4387 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4370 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4373 */;
 import closure_7 from "reset" /* 4145 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 1924 */;
@@ -772,7 +772,7 @@ export const getNextPremiumTierForSubscriberCount = function getNextPremiumTierF
 };
 export const TierMarkerPositions = obj1;
 export const getGuildBoostingProgressBarFillFactor = function getGuildBoostingProgressBarFillFactor(guild) {
-  totalAvailableBoostsCount = totalAvailableBoostsCount(4403).getGuildPowerupBoostLevelProgress(guild.id);
+  totalAvailableBoostsCount = totalAvailableBoostsCount(4406).getGuildPowerupBoostLevelProgress(guild.id);
   let NONE = reversed.find((arg0) => totalAvailableBoostsCount >= closure_1_9[arg0]);
   if (NONE == null) {
     NONE = BoostedGuildTiers.NONE;

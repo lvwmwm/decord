@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 163.5, height: 20, scales: [2, 3], hash: "cd3f012d84fd9fd0e06d08e5556058d7", name: "img_logo_nitro_tier_0_horizontal_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7b2d2e9a77a15fa8da20d6c6b46e3600", name: "VideoSelfieIcon", type: "png" });

@@ -1,28 +1,28 @@
-// Module ID: 10214
-// Function ID: 10215
+// Module ID: 10034
+// Function ID: 10035
 // Name: NotificationWrapper
-// Dependencies: [32, 19, 17, 9671, 10204, 673, 21, 4217, 4478, 10215, 10290, 10291, 10292, 10325, 10326, 11179, 11180, 11183, 10203, 586, 4946, 4479, 695, 5661, 4928, 1296, 5562, 10248, 2]
+// Dependencies: [32, 19, 17, 9613, 10024, 673, 21, 4218, 4481, 10035, 10108, 10111, 10112, 10145, 10146, 11250, 11251, 11254, 10023, 586, 4953, 4482, 695, 6595, 4935, 1296, 7063, 10070, 2]
 // Exports: default
 
-// Module 10214 (NotificationWrapper)
-import _modDef10215 from "module_10215" /* 10215 */;
-import _modDef10290 from "module_10290" /* 10290 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 10291 */;
-import BugReporterNotification from "BugReporterNotification" /* 10292 */;
-import AlertNotificationDefault from "AlertNotification" /* 10325 */;
-import ReactionNotificationBodyDefault from "ReactionNotificationBody" /* 10326 */;
-import NotificationAvatarDefault from "NotificationAvatar" /* 11179 */;
-import _modDef11180 from "module_11180" /* 11180 */;
-import MessageRequestInAppNotificationDefault from "MessageRequestInAppNotification" /* 11183 */;
+// Module 10034 (NotificationWrapper)
+import _modDef10035 from "module_10035" /* 10035 */;
+import _modDef10108 from "module_10108" /* 10108 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 10111 */;
+import BugReporterNotification from "BugReporterNotification" /* 10112 */;
+import AlertNotificationDefault from "AlertNotification" /* 10145 */;
+import ReactionNotificationBodyDefault from "ReactionNotificationBody" /* 10146 */;
+import NotificationAvatarDefault from "NotificationAvatar" /* 11250 */;
+import _modDef11251 from "module_11251" /* 11251 */;
+import MessageRequestInAppNotificationDefault from "MessageRequestInAppNotification" /* 11254 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 9671 */;
-import set from "set" /* 10204 */;
+import closure_6 from "initialize" /* 9613 */;
+import set from "set" /* 10024 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import { Easing } from "module_4217" /* 4217 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import { Easing } from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function NotificationWrapper(notification) {
@@ -31,11 +31,11 @@ function NotificationWrapper(notification) {
   if (constants.MESSAGE === type) {
     obj = { notification: null };
     obj[0] = notification;
-    return jsx(_modDef10215, { notification: null });
+    return jsx(_modDef10035, { notification: null });
   } else if (tmp.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification: null };
     obj[0] = notification;
-    return jsx(_modDef10290, { notification: null });
+    return jsx(_modDef10108, { notification: null });
   } else if (tmp.FORUM_THREAD_CREATED === type) {
     obj1 = { notification: null };
     obj1[0] = notification;
@@ -70,13 +70,13 @@ function NotificationWrapper(notification) {
     }
     const obj6 = { notification: null };
     obj6[0] = notification;
-    return jsx(_modDef11180, { notification: null });
+    return jsx(_modDef11251, { notification: null });
   }
 }
 ({ DEFAULT_ANIMATION_TIMING: error, extrapolateConfig: closure_8, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = set);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = ME);
 let obj = { duration: 200, easing: null };
-obj[1] = Easing.in(require("module_4217").Easing.ease);
+obj[1] = Easing.in(require("module_4218").Easing.ease);
 let closure_16 = createCacheKey.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_18 = { code: "function InAppNotificationContainerTsx1(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };
 let closure_19 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setPanning}=this.__closure;runOnJS(setPanning)(false);}" };

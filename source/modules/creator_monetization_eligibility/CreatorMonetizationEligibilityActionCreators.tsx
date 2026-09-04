@@ -1,14 +1,14 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17605
+// Function ID: 17606
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: [5, 673, 4507, 527, 706, 5963, 2]
+// Dependencies: [5, 673, 4510, 527, 706, 7103, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 17525 (_createCreatorMonetizationEnableRequest)
+// Module 17605 (_createCreatorMonetizationEnableRequest)
 import sendRequest from "sendRequest" /* 527 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4510 */;
 
 require = arg1;
 function _createCreatorMonetizationEnableRequest() {

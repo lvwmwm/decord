@@ -1,15 +1,15 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10011
+// Function ID: 10012
 // Name: isOnlyDayLoss
-// Dependencies: [12, 2368, 1233, 10192, 2]
+// Dependencies: [12, 2368, 1233, 10012, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10191 (isOnlyDayLoss)
+// Module 10011 (isOnlyDayLoss)
 import set2 from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import setsEqual from "setsEqual" /* 10192 */;
+import setsEqual from "setsEqual" /* 10012 */;
 
 function isOnlyDayLoss(label, label2) {
   if (label.label !== label2.label) {

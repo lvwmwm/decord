@@ -1,13 +1,13 @@
-// Module ID: 5497
-// Function ID: 5498
+// Module ID: 7060
+// Function ID: 7061
 // Name: updateGuildSelfMember
-// Dependencies: [1983, 673, 5482, 706, 527, 2]
+// Dependencies: [1983, 673, 5507, 706, 527, 2]
 // Exports: updateGuildSelfMember
 
-// Module 5497 (updateGuildSelfMember)
+// Module 7060 (updateGuildSelfMember)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import updateImpersonating from "updateImpersonating" /* 5482 */;
+import updateImpersonating from "updateImpersonating" /* 5507 */;
 import closure_3 from "initialize" /* 1983 */;
 import { Endpoints } from "ME" /* 673 */;
 

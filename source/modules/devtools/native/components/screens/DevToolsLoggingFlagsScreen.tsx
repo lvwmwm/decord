@@ -1,19 +1,19 @@
-// Module ID: 15427
-// Function ID: 15428
+// Module ID: 15509
+// Function ID: 15510
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 703, 21, 4478, 709, 586, 6001, 6002, 705, 2]
+// Dependencies: [17, 703, 21, 4481, 709, 586, 5642, 7141, 705, 2]
 // Exports: default
 
-// Module 15427 (DevToolsLoggingFlagsScreen)
+// Module 15509 (DevToolsLoggingFlagsScreen)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import TableSwitchRow from "TableSwitchRow" /* 6002 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import TableSwitchRow from "TableSwitchRow" /* 7141 */;
 import closure_3 from "refreshSourceMapCookie" /* 703 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const ScrollView = get_ActivityIndicator.ScrollView;
 ({ jsx: c4, jsxs: c5 } = jsxProd);

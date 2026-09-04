@@ -1,23 +1,23 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13711
+// Function ID: 13712
 // Name: StreamingUserRow
-// Dependencies: [19, 17, 1301, 1215, 5231, 1386, 1991, 4529, 4569, 673, 21, 4478, 709, 9509, 586, 1362, 13679, 13680, 1296, 13681, 13682, 13683, 13684, 9611, 4474, 1233, 8376, 7494, 10167, 4332, 4728, 4445, 5077, 9897, 4673, 9891, 4322, 2]
+// Dependencies: [19, 17, 1301, 1215, 5239, 1386, 1991, 4532, 4572, 673, 21, 4481, 709, 9407, 586, 1362, 13712, 13713, 1296, 13714, 13715, 13716, 13717, 9554, 4477, 1233, 8523, 7671, 9987, 4335, 4735, 4448, 5084, 9111, 4680, 9103, 4325, 2]
 
-// Module 13678 (StreamingUserRow)
+// Module 13711 (StreamingUserRow)
 import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_4 from "handleThemeChange" /* 1301 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "callConnect" /* 5231 */;
+import closure_6 from "callConnect" /* 5239 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_10 from "sortActivity" /* 4569 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_10 from "sortActivity" /* 4572 */;
 import { Fonts } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function StreamingUserRow(user) {
@@ -46,7 +46,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj[1] = labelCallScreen;
-    obj.subLabel = closure_11(tmp3(8376).FormSubLabel, obj);
+    obj.subLabel = closure_11(tmp3(8523).FormSubLabel, obj);
     const items1 = [closure_11(closure_16, obj), ];
     let tmp10Result = user.id !== store.getId();
     if (tmp10Result) {
@@ -72,10 +72,10 @@ function StreamingUserRow(user) {
           const obj4 = user(closure_1_2[30]);
         }
       };
-      obj1[1] = tmp10(channel(10167), obj2);
+      obj1[1] = tmp10(channel(9987), obj2);
       tmp10Result = tmp10(closure_3, obj1);
       const tmp18 = closure_3;
-      const tmp20 = channel(10167);
+      const tmp20 = channel(9987);
     }
     let obj3 = { children: null };
     items1[1] = tmp10Result;
@@ -107,7 +107,7 @@ function RingButton(channelId) {
       obj[1] = stringResult;
       tmp4Result = tmp4(tmp5(1296).LegacyText, obj);
       obj[3] = tmp4Result;
-      tmp4Result = tmp4(channelId(5077).PressableOpacity, obj);
+      tmp4Result = tmp4(channelId(5084).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -136,7 +136,7 @@ function StopRingButton(channelId) {
       obj[1] = stringResult;
       tmp4Result = tmp4(tmp5(1296).LegacyText, obj);
       obj[3] = tmp4Result;
-      tmp4Result = tmp4(channelId(5077).PressableOpacity, obj);
+      tmp4Result = tmp4(channelId(5084).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -270,7 +270,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1[1] = guild_id;
   obj1[2] = user(1296).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1[3] = channel(9509)(obj);
+  obj1[3] = channel(9407)(obj);
   obj[2] = closure_11(user(1296).Avatar, obj1);
   let tmp23Result = null;
   if (flag3) {
@@ -282,7 +282,7 @@ let closure_16 = importAllResult.memo((user) => {
       if (user.isSpectating) {
         obj3 = { size: null, source: null, style: null };
         obj3[0] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
-        obj3[1] = tmp5(13684);
+        obj3[1] = tmp5(13717);
         obj3[2] = tmp19;
         tmp20Result = tmp20(tmp8(1296).Icon, obj3);
       }
@@ -293,7 +293,7 @@ let closure_16 = importAllResult.memo((user) => {
         if (tmp14) {
           obj4 = { size: null, source: null, style: null };
           obj4[0] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
-          obj4[1] = tmp5(13681);
+          obj4[1] = tmp5(13714);
           obj4[2] = tmp19;
           tmp20Result = tmp20(tmp8(1296).Icon, obj4);
         }
@@ -313,22 +313,22 @@ let closure_16 = importAllResult.memo((user) => {
           if (localVideoDisabled) {
             const obj6 = { size: null, source: null, style: null, disableColor: true };
             obj6[0] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
-            obj6[1] = tmp5(13682);
+            obj6[1] = tmp5(13715);
             obj6[2] = tmp2.voiceStatusIconMargin;
             let obj7 = obj6;
           } else {
             obj7 = { size: null, source: null, style: null };
             obj7[0] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
-            obj7[1] = tmp5(13683);
+            obj7[1] = tmp5(13716);
             obj7[2] = tmp19;
           }
           tmp20(tmp8(1296).Icon, obj7);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(13679);
+          let tmp5Result = tmp5(13712);
         } else {
-          tmp5Result = tmp5(13680);
+          tmp5Result = tmp5(13713);
         }
         const obj8 = { size: null, source: null, style: null, color: null, disableColor: null };
         obj8[0] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
@@ -355,7 +355,7 @@ let closure_16 = importAllResult.memo((user) => {
     const intl = tmp8(1233).intl;
     const items5 = ["\u00A0", intl.string(tmp8(1233).t["pFO/Ph"])];
     obj11[3] = items5;
-    items4[1] = callback(tmp8(4474).Text, obj11);
+    items4[1] = callback(tmp8(4477).Text, obj11);
     obj10[0] = items4;
     tmp35 = callback(closure_13, obj10);
   }
@@ -365,19 +365,19 @@ let closure_16 = importAllResult.memo((user) => {
     labelCallScreen = tmp3.labelCallScreen;
   }
   obj12[1] = labelCallScreen;
-  obj9.label = closure_11(user(8376).FormRow.Label, obj12);
+  obj9.label = closure_11(user(8523).FormRow.Label, obj12);
   if (localVideoAutoDisabled) {
     const obj13 = { style: null, children: null };
     obj13[0] = tmp2.autoDisabledVideo;
     const obj14 = { source: null, size: null, disableColor: true };
-    obj14[0] = tmp5(9611);
+    obj14[0] = tmp5(9554);
     obj14[1] = tmp8(1296).Icon.Sizes.EXTRA_SMALL;
     const items6 = [tmp20(tmp8(1296).Icon, obj14), ];
     const obj15 = { variant: "text-xs/medium", color: "text-default", style: null, children: null };
     obj15[2] = tmp2.autoDisabledVideoLabel;
     const intl3 = tmp8(1233).intl;
     obj15[3] = intl3.string(tmp8(1233).t.m2Hyj0);
-    items6[1] = tmp20(tmp8(4474).Text, obj15);
+    items6[1] = tmp20(tmp8(4477).Text, obj15);
     obj13[1] = items6;
     let stringResult = callback(id, obj13);
   } else {
@@ -388,7 +388,7 @@ let closure_16 = importAllResult.memo((user) => {
     }
   }
   obj9.subLabel = stringResult;
-  return closure_11(user(8376).FormRow, obj9);
+  return closure_11(user(8523).FormRow, obj9);
 });
 let obj7 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
@@ -407,9 +407,9 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  obj1 = id2(4673);
+  obj1 = id2(4680);
   const name = obj1.getName(id2.guild_id, id2.id, id);
-  let obj2 = id(9891);
+  let obj2 = id(9103);
   obj = {
     onPress() {
       return callback(id);
@@ -425,14 +425,14 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj[1] = labelCallScreen;
-  obj[1] = closure_11(id(8376).FormRow.Label, obj);
+  obj[1] = closure_11(id(8523).FormRow.Label, obj);
   obj1 = { user: id, guildId: id2.guild_id, size: tmp2(1296).AvatarSizes.REFRESH_MEDIUM_32 };
   obj[2] = closure_11(id(1296).Avatar, obj1);
   if (!canRing) {
     obj[3] = null;
     obj2 = {};
     const merged = Object.assign(obj);
-    return tmp7(tmp2(8376).FormRow, obj2);
+    return tmp7(tmp2(8523).FormRow, obj2);
   } else {
     const obj3 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;

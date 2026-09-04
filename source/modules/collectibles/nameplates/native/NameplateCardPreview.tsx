@@ -1,10 +1,10 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 8754
+// Function ID: 8755
 // Name: NameplateCardPreview
-// Dependencies: [17, 21, 4478, 709, 38, 1949, 1946, 8538, 1296, 2]
+// Dependencies: [17, 21, 4481, 709, 38, 1949, 1946, 8747, 1296, 2]
 // Exports: default
 
-// Module 11006 (NameplateCardPreview)
+// Module 8754 (NameplateCardPreview)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -12,9 +12,9 @@ import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import getNameplateData from "getNameplateData" /* 1946 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8538 */;
+import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8747 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);

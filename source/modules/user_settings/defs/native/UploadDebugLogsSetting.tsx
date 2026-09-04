@@ -1,16 +1,16 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15460
+// Function ID: 15461
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 673, 21, 641, 702, 1234, 10297, 4194, 4433, 1233, 11292, 2]
+// Dependencies: [5, 17, 673, 21, 641, 702, 1234, 10117, 4194, 4436, 1233, 11400, 2]
 
-// Module 15378 (_handleUploadDebugLogSettingPress)
+// Module 15460 (_handleUploadDebugLogSettingPress)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
 import { DebugLogCategory } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import keys from "keys" /* 641 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 function _handleUploadDebugLogSettingPress() {
@@ -73,7 +73,7 @@ function _handleUploadDebugLogSettingPress() {
             c3 = 1;
             obj1 = callback2(4194);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4433).CircleInformationIcon;
+            obj1[1] = callback(4436).CircleInformationIcon;
             const intl = callback(1233).intl;
             obj1[2] = intl.string(callback(1233).t.VzHcSm);
             obj1.open(obj1);
@@ -88,7 +88,7 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4433).CircleInformationIcon;
+            obj2[1] = callback(4436).CircleInformationIcon;
             const intl2 = callback(1233).intl;
             obj2[2] = intl2.string(callback(1233).t.BvyxE7);
             callback2(4194).open(obj2);

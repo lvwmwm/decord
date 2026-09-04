@@ -1,13 +1,13 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 12952
+// Function ID: 12953
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 9436, 8575, 5962, 586, 8576, 2]
+// Dependencies: [19, 8721, 8121, 7102, 586, 8122, 2]
 // Exports: default
 
-// Module 9435 (useTrackUserProfileActivityAction)
+// Module 12952 (useTrackUserProfileActivityAction)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "map" /* 9436 */;
+import closure_4 from "map" /* 8721 */;
 
 noop.useCallback;
 let result = set.fileFinishedImporting("modules/user_profile/hooks/useTrackUserProfileActivityAction.tsx");

@@ -1,16 +1,17 @@
-// Module ID: 16472
-// Function ID: 16473
-// Dependencies: [19, 7632, 21, 16471, 16468, 8811, 1233, 8018, 14843, 2]
+// Module ID: 16558
+// Function ID: 16559
+// Dependencies: [19, 7809, 21, 16557, 16554, 8596, 1233, 8028, 14924, 2]
 
-// Module 16472
+// Module 16558
 import importAllResult from "noop" /* 19 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7632 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7809 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
   let validOrderedFilterTokens;
+  ({ onOpen, onClose } = searchContext);
   let obj = searchContext(validOrderedFilterTokens[3]);
   validOrderedFilterTokens = obj.useValidOrderedFilterTokens(searchContext);
   const items = [searchContext, validOrderedFilterTokens];
@@ -22,10 +23,12 @@ const memoResult = importAllResult.memo((searchContext) => {
     obj[2] = closure_1_0(closure_1_1[4]).getSearchTokenPressHandler(closure_0, searchTokenType, closure_1_3.CONTEXT_MENU);
     return obj;
   }), items);
-  obj = { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null };
+  obj = { items: memo, align: "below", title: null, ignoreKeyboardHide: true, onOpen: null, onClose: null, children: null };
   let intl = searchContext(validOrderedFilterTokens[6]).intl;
   obj[2] = intl.string(searchContext(validOrderedFilterTokens[6]).t.oYEmhB);
-  obj[4] = function children(ref) {
+  obj[4] = onOpen;
+  obj[5] = onClose;
+  obj[6] = function children(ref) {
     const merged = Object.assign(ref, Object.create(null));
     const obj = { ref: ref.ref };
     const merged1 = Object.assign(merged);
@@ -36,7 +39,7 @@ const memoResult = importAllResult.memo((searchContext) => {
     obj.icon = callback(searchContext(validOrderedFilterTokens[8]).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
     return callback(searchContext(validOrderedFilterTokens[7]).IconButton, obj);
   };
-  return jsx(searchContext(validOrderedFilterTokens[5]).ContextMenu, { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null });
+  return jsx(searchContext(validOrderedFilterTokens[5]).ContextMenu, { items: memo, align: "below", title: null, ignoreKeyboardHide: true, onOpen: null, onClose: null, children: null });
 });
 const result = require("set").fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterButton.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16511
+// Function ID: 16512
 // Name: isProjectOwner
-// Dependencies: [32, 1921, 6104, 586, 706, 2]
+// Dependencies: [32, 1921, 7188, 586, 706, 2]
 // Exports: canPublishProject
 
-// Module 16425 (isProjectOwner)
+// Module 16511 (isProjectOwner)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import frozen from "frozen" /* 6104 */;
+import frozen from "frozen" /* 7188 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import set from "set" /* 2 */;

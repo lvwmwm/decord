@@ -1,22 +1,22 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14536
+// Function ID: 14537
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4478, 709, 5110, 14486, 8090, 8088, 8085, 8087, 7773, 4445, 5631, 5630, 1233, 8107, 10382, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4481, 709, 5118, 14518, 8100, 8098, 8095, 8097, 6929, 4448, 7090, 7089, 1233, 8592, 10293, 2]
 // Exports: default
 
-// Module 14504 (ProfileGIFSelectActionSheet)
+// Module 14536 (ProfileGIFSelectActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8107 */;
-import _modDef10382 from "module_10382" /* 10382 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8592 */;
+import _modDef10293 from "module_10293" /* 10293 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -164,7 +164,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 }
               } else {
                 if (closure_1_10.BANNER === tmp65) {
-                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "patch" };
+                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "none" };
                   obj9[0] = lib(closure_1_2[13]).AssetOriginTypes.NEW_ASSET;
                   obj9[1] = c5;
                   obj9[4] = closure_6;
@@ -210,7 +210,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   obj[1] = callback(NitroWheelIcon.NitroWheelIcon, {});
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
   let items = [callback(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(_modDef10382, obj1) };
+  obj = { style: tmp.gifPicker, children: callback(_modDef10293, obj1) };
   items[1] = callback(View, obj);
   obj[3] = items;
   return callback2(Background.BottomSheet, obj);

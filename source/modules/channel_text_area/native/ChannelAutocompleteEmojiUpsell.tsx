@@ -1,16 +1,16 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12319
+// Function ID: 12320
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1924, 21, 4478, 709, 5502, 1430, 4474, 1233, 2]
+// Dependencies: [19, 17, 1924, 21, 4481, 709, 5542, 1431, 4477, 1233, 2]
 // Exports: default
 
-// Module 12187 (ChannelAutocompleteEmojiUpsell)
+// Module 12319 (ChannelAutocompleteEmojiUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -53,7 +53,7 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
   const intl = _require(1233).intl;
   obj = { count: results.length };
   obj[3] = intl.format(_require(1233).t.uEky42, obj);
-  let items = [callback(_require(4474).Text, obj), ];
+  let items = [callback(_require(4477).Text, obj), ];
   const items1 = [tmp.emojis, { width: result + 16 }];
   items[1] = callback(View, { style: items1, children: mapped });
   obj[1] = items;

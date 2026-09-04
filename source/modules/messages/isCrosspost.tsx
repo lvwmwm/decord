@@ -1,12 +1,12 @@
-// Module ID: 7957
-// Function ID: 7958
+// Module ID: 7967
+// Function ID: 7968
 // Name: isCrosspost
-// Dependencies: [673, 1398, 2]
+// Dependencies: [673, 1399, 2]
 // Exports: default
 
-// Module 7957 (isCrosspost)
+// Module 7967 (isCrosspost)
 import set from "set" /* 2 */;
-import hasFlag from "hasFlag" /* 1398 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import ME from "ME" /* 673 */;
 
 ({ MessageFlags: obj1, MessageReferenceTypes: c3, MessageTypes: c4 } = ME);

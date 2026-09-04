@@ -1,25 +1,25 @@
-// Module ID: 10326
-// Function ID: 10327
+// Module ID: 10146
+// Function ID: 10147
 // Name: ReactionNotificationBody
-// Dependencies: [19, 17, 4470, 10204, 673, 21, 4478, 1235, 709, 4166, 10238, 4474, 1430, 10327, 5594, 1233, 6156, 10203, 10217, 10218, 10247, 10873, 1296, 6013, 12, 4747, 586, 4724, 4489, 10205, 10249, 2008, 10281, 10285, 2]
+// Dependencies: [19, 17, 4473, 10024, 673, 21, 4481, 1235, 709, 4166, 10060, 4477, 1431, 10147, 7070, 1233, 7240, 10023, 10037, 10038, 10069, 10841, 1296, 5539, 12, 4754, 586, 4731, 4492, 10025, 10071, 2008, 10099, 10103, 2]
 // Exports: default
 
-// Module 10326 (ReactionNotificationBody)
+// Module 10146 (ReactionNotificationBody)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4474 */;
-import GuildIconSizes from "GuildIconSizes" /* 6013 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10203 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10217 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10873 */;
+import Text from "Text" /* 4477 */;
+import GuildIconSizes from "GuildIconSizes" /* 5539 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10023 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10037 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10841 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import set from "set" /* 10204 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import set from "set" /* 10024 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
@@ -37,7 +37,7 @@ function ReactionNotificationBody(arg0) {
     obj = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: null, children: null };
     obj[2] = closure_7;
     obj[3] = secondaryText;
-    tmp8Result = tmp8(tmp2(4474).Text, obj);
+    tmp8Result = tmp8(tmp2(4477).Text, obj);
   }
   children[1] = tmp8Result;
   tmp8Result = null;
@@ -49,7 +49,7 @@ function ReactionNotificationBody(arg0) {
       obj1[2] = closure_6;
       obj1[4] = gradientStyles;
       obj1[5] = gradientColors;
-      tmp8Result = tmp8(tmp2(10218).NativeChannelRowPreview, obj1);
+      tmp8Result = tmp8(tmp2(10038).NativeChannelRowPreview, obj1);
     }
   }
   children[2] = tmp8Result;
@@ -75,7 +75,7 @@ function ReactionNotificationBodyWrapper(arg0) {
   const React = tmp4;
   const AnimateEmoji = message(4166).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  let obj = message(10238);
+  let obj = message(10060);
   const previewableMedia = obj.usePreviewableMedia(message);
   const items = [setting, reaction, , , ];
   ({ imageEmoji: arr[2], textEmoji: arr[3], italic: arr[4] } = tmp4);
@@ -100,7 +100,7 @@ function ReactionNotificationBodyWrapper(arg0) {
           let obj = { style: null, variant: "text-sm/normal", children: null };
           obj[0] = italic.italic;
           obj[2] = tmp.emoji.name;
-          return closure_1_10(message(4474).Text, obj, tmp.emoji.name);
+          return closure_1_10(message(4477).Text, obj, tmp.emoji.name);
         }
       }
       let id1;
@@ -109,7 +109,7 @@ function ReactionNotificationBodyWrapper(arg0) {
       }
       let emojiURL;
       if (null != id1) {
-        obj = reaction(1430);
+        obj = reaction(1431);
         obj = { id: null, animated: null, size: null };
         obj[0] = tmp.emoji.id;
         let animated = setting;
@@ -117,14 +117,14 @@ function ReactionNotificationBodyWrapper(arg0) {
           animated = tmp.emoji.animated;
         }
         obj[1] = animated;
-        obj[2] = message(10327).DEFAULT_EMOJI_SIZE;
+        obj[2] = message(10147).DEFAULT_EMOJI_SIZE;
         emojiURL = obj.getEmojiURL(obj);
       }
       obj1 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
       ({ textEmoji: obj3[0], imageEmoji: obj3[1] } = italic);
       obj1[2] = emojiURL;
       obj1[3] = tmp.emoji.name;
-      return closure_1_10(reaction(5594), obj1);
+      return closure_1_10(reaction(7070), obj1);
     }
   }, items);
   const items1 = [callback, tmp3, message, previewableMedia];
@@ -134,21 +134,21 @@ function ReactionNotificationBodyWrapper(arg0) {
         if (1 === arr.length) {
           const first = arr[0];
           const type = first.type;
-          if (message(10238).PreviewableMediaTypes.IMAGE === type) {
+          if (message(10060).PreviewableMediaTypes.IMAGE === type) {
             let obj = { text: null, secondaryText: null };
             const intl11 = message(1233).intl;
             obj = { emojiHook: null };
             obj[0] = callback;
             obj[0] = intl11.format(message(1233).t.I7mNcA, obj);
             return obj;
-          } else if (message(10238).PreviewableMediaTypes.VIDEO === type) {
+          } else if (message(10060).PreviewableMediaTypes.VIDEO === type) {
             obj1 = { text: null, secondaryText: null };
             const intl10 = message(1233).intl;
             const obj2 = { emojiHook: null };
             obj2[0] = callback;
             obj1[0] = intl10.format(message(1233).t["Umew/z"], obj2);
             return obj1;
-          } else if (message(10238).PreviewableMediaTypes.AUDIO === type) {
+          } else if (message(10060).PreviewableMediaTypes.AUDIO === type) {
             const obj3 = { text: null, secondaryText: null };
             const intl9 = message(1233).intl;
             const obj4 = { emojiHook: null };
@@ -156,7 +156,7 @@ function ReactionNotificationBodyWrapper(arg0) {
             obj3[0] = intl9.format(message(1233).t["P/bwx9"], obj4);
             obj3[1] = first.media.filename;
             return obj3;
-          } else if (message(10238).PreviewableMediaTypes.FILE === type) {
+          } else if (message(10060).PreviewableMediaTypes.FILE === type) {
             const obj5 = { text: null, secondaryText: null };
             const intl8 = message(1233).intl;
             const obj6 = { emojiHook: null };
@@ -164,21 +164,21 @@ function ReactionNotificationBodyWrapper(arg0) {
             obj5[0] = intl8.format(message(1233).t.TXNjGW, obj6);
             obj5[1] = first.media.filename;
             return obj5;
-          } else if (message(10238).PreviewableMediaTypes.STICKER === type) {
+          } else if (message(10060).PreviewableMediaTypes.STICKER === type) {
             const obj7 = { text: null, secondaryText: null };
             const intl7 = message(1233).intl;
             const obj8 = { emojiHook: null };
             obj8[0] = callback;
             obj7[0] = intl7.format(message(1233).t.pnm8NC, obj8);
             return obj7;
-          } else if (message(10238).PreviewableMediaTypes.VOICE_MESSAGE === type) {
+          } else if (message(10060).PreviewableMediaTypes.VOICE_MESSAGE === type) {
             const obj9 = { text: null, secondaryText: null };
             const intl6 = message(1233).intl;
             const obj10 = { emojiHook: null };
             obj10[0] = callback;
             obj9[0] = intl6.format(message(1233).t.k6YnQO, obj10);
             return obj9;
-          } else if (message(10238).PreviewableMediaTypes.GIF === type) {
+          } else if (message(10060).PreviewableMediaTypes.GIF === type) {
             const obj11 = { text: null, secondaryText: null };
             const intl5 = message(1233).intl;
             const obj12 = { emojiHook: null };
@@ -193,7 +193,7 @@ function ReactionNotificationBodyWrapper(arg0) {
             obj13[0] = intl4.format(message(1233).t.sHV43G, obj14);
             return obj13;
           }
-        } else if (reaction(6156)(message)) {
+        } else if (reaction(7240)(message)) {
           const obj15 = { text: null, secondaryText: null };
           const intl3 = message(1233).intl;
           const obj16 = { emojiHook: null };
@@ -235,9 +235,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     return { text, secondaryText: null };
   }, items1);
   ({ secondaryText, text } = memo);
-  obj1 = message(10203);
+  obj1 = message(10023);
   const hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
-  let obj2 = message(10247);
+  let obj2 = message(10069);
   if (hasPreviewableMedia) {
     message = obj2.useGetInitialMessagePreview({ message });
   }

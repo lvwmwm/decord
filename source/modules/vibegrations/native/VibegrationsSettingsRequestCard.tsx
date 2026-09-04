@@ -1,16 +1,16 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16533
+// Function ID: 16534
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 16427, 21, 4478, 709, 586, 4445, 16448, 4474, 1233, 3500, 4929, 2]
+// Dependencies: [19, 17, 16513, 21, 4481, 709, 586, 4448, 16534, 4477, 1233, 3500, 4936, 2]
 // Exports: default
 
-// Module 16447 (VibegrationsSettingsRequestCard)
+// Module 16533 (VibegrationsSettingsRequestCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "rejectPendingPublish" /* 16427 */;
+import closure_5 from "rejectPendingPublish" /* 16513 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -59,7 +59,7 @@ export default function VibegrationsSettingsRequestCard(projectId) {
   obj = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = tmp2(1233).intl;
   obj[2] = intl.string(request(3500).wgDhiQ);
-  const items2 = [callback(projectId(4474).Text, obj), , , ];
+  const items2 = [callback(projectId(4477).Text, obj), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -83,7 +83,7 @@ export default function VibegrationsSettingsRequestCard(projectId) {
     obj3[2] = callback;
     const intl3 = tmp2(1233).intl;
     obj3[3] = intl3.string(tmp8(3500)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(4929).Button, obj3);
+    items2[3] = tmp7(tmp2(4936).Button, obj3);
     obj[1] = items2;
     return closure_7(tmp6, obj);
   }

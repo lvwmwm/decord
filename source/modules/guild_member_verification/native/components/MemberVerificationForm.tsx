@@ -1,19 +1,19 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 5551
+// Function ID: 5552
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5499, 673, 21, 4478, 4194, 1233, 7692, 7662, 5950, 4302, 586, 5012, 5568, 7693, 7726, 4929, 2]
+// Dependencies: [5, 32, 19, 17, 5527, 673, 21, 4481, 4194, 1233, 5552, 5529, 5553, 4305, 586, 5019, 5502, 5554, 6881, 4936, 2]
 // Exports: default
 
-// Module 7691 (MemberVerificationForm)
+// Module 5551 (MemberVerificationForm)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "get" /* 5499 */;
-import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5499 */;
+import closure_7 from "get" /* 5527 */;
+import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5527 */;
 import { VerificationLevels } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

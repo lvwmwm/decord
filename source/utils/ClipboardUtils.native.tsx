@@ -1,11 +1,11 @@
-// Module ID: 5990
-// Function ID: 5991
+// Module ID: 7130
+// Function ID: 7131
 // Name: _copy
-// Dependencies: [5, 5991, 2]
+// Dependencies: [5, 7131, 2]
 // Exports: copy, getString
 
-// Module 5990 (_copy)
-import useClipboardDefault from "useClipboard" /* 5991 */;
+// Module 7130 (_copy)
+import useClipboardDefault from "useClipboard" /* 7131 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function _copy() {

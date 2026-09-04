@@ -1,14 +1,14 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6282
+// Function ID: 6283
 // Name: PaintIllocon
-// Dependencies: [21, 5502, 6902, 2]
+// Dependencies: [21, 5542, 6283, 2]
 // Exports: PaintIllocon
 
-// Module 6901 (PaintIllocon)
+// Module 6282 (PaintIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6902 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6283 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PaintIllocon.native.tsx");

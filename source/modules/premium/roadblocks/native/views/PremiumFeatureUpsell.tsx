@@ -1,18 +1,18 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 9893
+// Function ID: 9894
 // Name: PremiumFeatureUpsellPill
-// Dependencies: [19, 17, 1923, 673, 7187, 21, 7608, 4139, 1233, 4478, 709, 8181, 9152, 9169, 7605, 8987, 1296, 9185, 9186, 4474, 8107, 4941, 688, 4928, 4932, 5962, 9187, 8588, 4217, 695, 8997, 2]
+// Dependencies: [19, 17, 1923, 673, 7366, 21, 7785, 4139, 1233, 4481, 709, 9242, 9894, 9895, 7782, 9896, 1296, 9897, 9892, 4477, 8592, 4948, 688, 4935, 4939, 7102, 9548, 8195, 4218, 695, 9898, 2]
 // Exports: default
 
-// Module 9184 (PremiumFeatureUpsellPill)
+// Module 9893 (PremiumFeatureUpsellPill)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import ME from "ME" /* 673 */;
-import { Gradients } from "items" /* 7187 */;
+import { Gradients } from "items" /* 7366 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function PremiumFeatureUpsellPill(featureName) {
@@ -25,31 +25,31 @@ function PremiumFeatureUpsellPill(featureName) {
   dependencyMap = undefined;
   let mobileEmojiPickerUpsellRestyleEnabledForFeature;
   let loading;
-  let obj = featureName(8181);
-  obj1 = featureName(9152);
+  let obj = featureName(9242);
+  obj1 = featureName(9894);
   const premiumUpsellConfig = obj.usePremiumUpsellConfig(obj1.getUpsellType(featureName));
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   const tmp4 = callback2(useTier0UpsellContent);
   dependencyMap = tmp4;
-  let obj2 = featureName(9169);
+  let obj2 = featureName(9895);
   mobileEmojiPickerUpsellRestyleEnabledForFeature = obj2.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
   const tmp7 = useTier0UpsellContent ? closure_7.TIER_0 : closure_7.TIER_2;
   const fn = () => useTier0UpsellContent(closure_2[14])(featureName);
   let tmpResult = tmp(4139);
   const premiumTypeDisplayName = tmpResult.getPremiumTypeDisplayName(tmp7);
-  if (featureName(7608).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
+  if (featureName(7785).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
     const intl4 = tmp(1233).intl;
     obj = { nitroTierName: null, onClick: null };
     obj[0] = premiumTypeDisplayName;
     obj[1] = fn;
     let formatResult = intl4.format(tmp(1233).t["tw/SSq"], obj);
-  } else if (tmp(7608).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
+  } else if (tmp(7785).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
     const intl3 = tmp(1233).intl;
     obj = { nitroTierName: null, onClick: null };
     obj[0] = premiumTypeDisplayName;
     obj[1] = fn;
     formatResult = intl3.format(tmp(1233).t.gMVjeS, obj);
-  } else if (tmp(7608).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
+  } else if (tmp(7785).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
     const intl2 = tmp(1233).intl;
     obj1 = { maxFileSize: null, nitroTierName: null, onClick: null };
     tmpResult = tmp(4139);
@@ -57,19 +57,19 @@ function PremiumFeatureUpsellPill(featureName) {
     obj1[1] = premiumTypeDisplayName;
     obj1[2] = fn;
     formatResult = intl2.format(tmp(1233).t.zzyLEK, obj1);
-  } else if (tmp(7608).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
+  } else if (tmp(7785).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
     const intl = tmp(1233).intl;
     obj2 = { nitroTierName: null, onClick: null };
     obj2[0] = premiumTypeDisplayName;
     obj2[1] = fn;
     formatResult = intl.format(tmp(1233).t.lyxfbj, obj2);
-  } else if (tmp(7608).EntitlementFeatureNames.APP_ICONS === featureName) {
+  } else if (tmp(7785).EntitlementFeatureNames.APP_ICONS === featureName) {
     const intl6 = tmp(1233).intl;
     const obj3 = { onClick: null };
     obj3[0] = fn;
     formatResult = intl6.format(tmp(1233).t.x2dQxN, obj3);
   }
-  const tmp11 = useTier0UpsellContent(8987)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants.PREMIUM_UPSELL_FILE_UPLOAD);
+  const tmp11 = useTier0UpsellContent(9896)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants.PREMIUM_UPSELL_FILE_UPLOAD);
   loading = tmp11.loading;
   let items = [tmp4.container, , ];
   if (flag) {
@@ -84,7 +84,7 @@ function PremiumFeatureUpsellPill(featureName) {
     const obj6 = { style: null, variant: "text-sm/medium", children: null };
     obj6[0] = tmp4.text;
     obj6[2] = formatResult;
-    items1[1] = callback(tmp(4474).Text, obj6);
+    items1[1] = callback(tmp(4477).Text, obj6);
     obj5[1] = items1;
     const items2 = [tmp12(tmp13, obj5), ];
     const obj7 = { disabled: null, shrink: true, style: null, size: null, onPress: null, text: null, color: null, renderIcon: null, renderLinearGradient: null };
@@ -136,7 +136,7 @@ function PremiumFeatureUpsellPill(featureName) {
     return tmp12(tmp13, obj4);
   } else {
     const obj8 = { source: null, style: null, disableColor: true };
-    obj8[0] = useTier0UpsellContent(useTier0UpsellContent ? 9185 : 9186);
+    obj8[0] = useTier0UpsellContent(useTier0UpsellContent ? 9897 : 9892);
     obj8[1] = tmp4.nitroWheel;
     callback(tmp(1296).Icon, obj8);
     const tmp15 = callback;
@@ -172,7 +172,7 @@ let closure_14 = createCacheKey.createStyles((arg0) => {
 let closure_16 = { code: "function PremiumFeatureUpsellTsx2(finished){const{cleanUp}=this.__closure;var _cleanUp;(_cleanUp=cleanUp)===null||_cleanUp===void 0||_cleanUp(finished);}" };
 function animationEnterExit(value, cleanUp) {
   const _require = cleanUp;
-  const obj = { opacity: _require(4928).withSpring(value, _require(4932).springStandard, "respect-motion-settings", fn) };
+  const obj = { opacity: _require(4935).withSpring(value, _require(4939).springStandard, "respect-motion-settings", fn) };
   fn = function l(arg0) {
     if (closure_0 != null) {
       tmp(arg0);

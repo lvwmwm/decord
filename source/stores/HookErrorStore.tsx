@@ -1,9 +1,9 @@
-// Module ID: 4573
-// Function ID: 4574
+// Module ID: 4576
+// Function ID: 4577
 // Name: getHookError
 // Dependencies: [673, 586, 706, 2]
 
-// Module 4573 (getHookError)
+// Module 4576 (getHookError)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import ME from "ME" /* 673 */;

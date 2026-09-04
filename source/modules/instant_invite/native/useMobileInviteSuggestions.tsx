@@ -1,17 +1,17 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 9761
+// Function ID: 9762
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 1991, 1908, 9948, 4555, 7492, 673, 502, 586, 695, 9963, 9964, 2]
+// Dependencies: [32, 19, 1991, 1908, 9762, 4558, 7669, 673, 502, 586, 695, 9775, 9776, 2]
 // Exports: default
 
-// Module 9947 (useMobileInviteSuggestions)
+// Module 9761 (useMobileInviteSuggestions)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "compareRowsByMatchScore" /* 9948 */;
-import closure_8 from "getVoiceStatesForGuild" /* 4555 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7492 */;
+import closure_7 from "compareRowsByMatchScore" /* 9762 */;
+import closure_8 from "getVoiceStatesForGuild" /* 4558 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7669 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { NOOP_NULL } from "sum" /* 502 */;
 
@@ -60,7 +60,7 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       isGuildVoiceResult = set.isGuildVoice();
     }
     if (isGuildVoiceResult) {
-      let obj = lib(9963);
+      let obj = lib(9775);
       obj = { location: "useMobileInviteSuggestions", guildId: null };
       obj[1] = set.guild_id;
       isGuildVoiceResult = obj.getGuildMembersInMobileVCInvitesExperiment(obj);
@@ -84,8 +84,8 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       obj[1] = isFetchingRows.getGuild(set.guild_id);
       obj[2] = set;
       obj[3] = dependencyMap;
-      const inviteSuggestions = lib(9964).loadInviteSuggestions(obj);
-      const obj3 = lib(9964);
+      const inviteSuggestions = lib(9776).loadInviteSuggestions(obj);
+      const obj3 = lib(9776);
       inviteSuggestions.catch(closure_1_11).finally(() => {
         callback(false);
       });

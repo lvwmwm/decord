@@ -1,19 +1,19 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 8778
+// Function ID: 8779
 // Name: hasAtLeastOneGPlaySynced
-// Dependencies: [673, 6090, 4152, 6093, 7309, 4139, 7308, 8581, 10970, 2]
+// Dependencies: [673, 7174, 4152, 7177, 7487, 4139, 7486, 8127, 8779, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 10969 (hasAtLeastOneGPlaySynced)
+// Module 8778 (hasAtLeastOneGPlaySynced)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4152 */;
-import updateProductDefault from "updateProduct" /* 6093 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7308 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
-import BalanceWidgetMode from "BalanceWidgetMode" /* 8581 */;
-import metadataDefault from "metadata" /* 10970 */;
+import updateProductDefault from "updateProduct" /* 7177 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7486 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7487 */;
+import BalanceWidgetMode from "BalanceWidgetMode" /* 8127 */;
+import metadataDefault from "metadata" /* 8779 */;
 
 function hasAtLeastOneGPlaySynced(nextResult) {
   const products = nextResult.products;
@@ -148,7 +148,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
         result = null;
       }
     } else {
-      let tmp7Result = tmp7(7309);
+      let tmp7Result = tmp7(7487);
       result = tmp7Result.extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
     }
     if (null == result) {
@@ -156,7 +156,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     } else if (null != result.priceString) {
       let priceString = result.priceString;
     } else {
-      tmp7Result = tmp7(6090);
+      tmp7Result = tmp7(7174);
       priceString = tmp7Result.formatPrice(result.amount, result.currency);
     }
   }

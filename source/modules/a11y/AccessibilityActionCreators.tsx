@@ -1,13 +1,13 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14363
+// Function ID: 14364
 // Name: setFontSize
-// Dependencies: [4470, 673, 4169, 682, 706, 695, 8226, 2]
+// Dependencies: [4473, 673, 4169, 682, 706, 695, 9287, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14331 (setFontSize)
+// Module 14363 (setFontSize)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
 import { SettingsOverrideReasonKeys as closure_5 } from "MAX_FAVORITES" /* 682 */;
@@ -84,7 +84,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
   const useReducedMotion2 = closure_2.useReducedMotion;
   if (!useReducedMotion) {
     if (useReducedMotion2) {
-      let tmpResult = tmp(8226);
+      let tmpResult = tmp(9287);
       obj = { gifAutoPlay: null, animateEmoji: null, animateStickers: null };
       obj1 = { value: false, reasonKey: null };
       obj1[1] = constants.REDUCED_MOTION;
@@ -103,7 +103,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    tmpResult = tmp(8226);
+    tmpResult = tmp(9287);
     const result1 = tmpResult.clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
   }
 };

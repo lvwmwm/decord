@@ -1,10 +1,10 @@
-// Module ID: 8588
-// Function ID: 8589
+// Module ID: 8195
+// Function ID: 8196
 // Name: map
-// Dependencies: [32, 19, 702, 4217, 2]
+// Dependencies: [32, 19, 702, 4218, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8588 (map)
+// Module 8195 (map)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 
@@ -79,11 +79,11 @@ export default function useStateFromSharedValue(arg0) {
   }, items);
   return tmp[0];
 };
-export const useDerivedStateFromSharedValue = function useDerivedStateFromSharedValue(activeIndex, stateFromStores) {
+export const useDerivedStateFromSharedValue = function useDerivedStateFromSharedValue(activeIndex, first) {
   closure_0 = activeIndex;
-  let callback = stateFromStores;
+  let callback = first;
   [tmp2, closure_2] = callback(React.useState(() => callback(activeIndex.get(), undefined)), 2);
-  React = React.useRef(stateFromStores);
+  React = React.useRef(first);
   const layoutEffect = React.useLayoutEffect(() => {
     closure_3.current = callback;
   });

@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 160, height: 160, scales: [2, 3], hash: "b7eca7761481c5ff3cc170b16fbdff57", name: "img_no_results", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/roadblocks/images", width: 552, height: 336, scales: [1], hash: "f59c66d6f542b08761b44d6d5de547c8", name: "client_themes_upsell", type: "png" });

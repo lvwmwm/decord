@@ -1,14 +1,14 @@
-// Module ID: 13695
-// Function ID: 13696
+// Module ID: 13728
+// Function ID: 13729
 // Name: reset
-// Dependencies: [673, 4558, 12, 13696, 2]
+// Dependencies: [673, 4561, 12, 13729, 2]
 
-// Module 13695 (reset)
+// Module 13728 (reset)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import ME from "ME" /* 673 */;
-import sleep from "sleep" /* 4558 */;
-import zipWithNextDefault from "zipWithNext" /* 13696 */;
+import sleep from "sleep" /* 4561 */;
+import zipWithNextDefault from "zipWithNext" /* 13729 */;
 
 const RTCConnectionStates = ME.RTCConnectionStates;
 const result = set.fileFinishedImporting("lib/RTCConnectionStats.tsx");
@@ -50,7 +50,7 @@ prototype["update"] = function update(current) {
 };
 prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccessStats(nowResult) {
   if (nowResult === undefined) {
-    let obj = RTC_DISCONNECTED(4558);
+    let obj = RTC_DISCONNECTED(4561);
     nowResult = obj.now();
   }
   const stateDurations = this.getStateDurations(nowResult);

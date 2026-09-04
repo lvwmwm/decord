@@ -1,26 +1,26 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16939
+// Function ID: 16940
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4470, 9644, 1386, 1385, 4506, 9483, 16854, 673, 12070, 21, 1296, 4478, 709, 1627, 586, 1492, 16849, 11215, 4217, 16855, 4204, 4479, 4928, 16856, 16857, 1233, 5661, 4110, 16851, 9621, 2]
+// Dependencies: [19, 17, 4473, 9587, 1386, 1385, 4509, 9434, 16940, 673, 12206, 21, 1296, 4481, 709, 1627, 586, 1492, 16935, 11286, 4218, 16941, 4205, 4482, 4935, 16942, 16943, 1233, 6595, 4110, 16937, 9564, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16853 (BaseActivityPanelPIPView)
+// Module 16939 (BaseActivityPanelPIPView)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "module_9644" /* 9644 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_6 from "module_9587" /* 9587 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "participantFromServer" /* 1385 */;
-import { ActivityLayoutMode } from "items3" /* 4506 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9483 */;
-import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16854 */;
+import { ActivityLayoutMode } from "items3" /* 4509 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9434 */;
+import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16940 */;
 import { ThemeTypes } from "ME" /* 673 */;
-import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12070 */;
+import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12206 */;
 import { jsx } from "jsxProd" /* 21 */;
 import Button from "Button" /* 1296 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 class BaseActivityPanelPIPView {
@@ -66,7 +66,7 @@ class BaseActivityPanelPIPView {
     }, items1);
     tmp8 = setMode((shouldDisableSafeAreas) => shouldDisableSafeAreas.shouldDisableSafeAreas());
     closure_10 = tmp8;
-    obj3 = require("module_4217");
+    obj3 = require("module_4218");
     class J {
       constructor() {
         point = pipState.get();
@@ -107,7 +107,7 @@ class BaseActivityPanelPIPView {
           tmp13 = transitionState;
           obj1[0] = transitionState;
           obj1[1] = require("ManaContext").TransitionStates;
-          obj1[2] = require("module_4217").runOnJS;
+          obj1[2] = require("module_4218").runOnJS;
           tmp14 = transitionCleanUp;
           obj1[3] = transitionCleanUp;
           transitionComplete.__closure = obj1;
@@ -176,7 +176,7 @@ class BaseActivityPanelPIPView {
         return;
       }
     }
-    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: closure_10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4217").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: closure_19, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_13 };
+    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: closure_10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4218").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: closure_19, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_13 };
     J.__closure = obj;
     J.__workletHash = 14326479117867;
     J.__initData = closure_21;
@@ -190,14 +190,14 @@ class BaseActivityPanelPIPView {
     items2[1] = height;
     class W {
       constructor() {
-        obj = require("module_4217");
+        obj = require("module_4218");
         tmp = obj.runOnJS(setMode)(width.PANEL);
         return;
       }
     }
     obj2 = { runOnJS: null, setMode: null, ActivityPanelModes: null };
     memo = closure_3.useMemo(() => ({ width, height, pointerEvents: "none" }), items2);
-    obj2[0] = require("module_4217").runOnJS;
+    obj2[0] = require("module_4218").runOnJS;
     obj2[1] = setMode;
     obj2[2] = width;
     W.__closure = obj2;
@@ -249,7 +249,7 @@ class BaseActivityPanelPIPView {
     obj7[1] = tmp15Result;
     obj6[1] = tmp15(tmp17, obj7);
     obj5.children = tmp15(require("LegacyBaseButton").GestureDetector, obj6);
-    obj4[1] = tmp15(require("module_4217").View, obj5);
+    obj4[1] = tmp15(require("module_4218").View, obj5);
     return tmp15(require("ManaContext").ThemeContextProvider, obj4);
   }
 }

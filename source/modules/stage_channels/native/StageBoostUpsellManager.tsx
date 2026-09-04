@@ -1,17 +1,17 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17405
+// Function ID: 17406
 // Name: handleVoiceChannelSelect
-// Dependencies: [4186, 1386, 4120, 1980, 5367, 5495, 4445, 5370, 9806, 1394, 5382, 2008, 2]
+// Dependencies: [4186, 1386, 4120, 1980, 5375, 7058, 4448, 5378, 9018, 1395, 5390, 2008, 2]
 
-// Module 17325 (handleVoiceChannelSelect)
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import useStageHasMedia from "useStageHasMedia" /* 5370 */;
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17405 (handleVoiceChannelSelect)
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import useStageHasMedia from "useStageHasMedia" /* 5378 */;
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "setContent" /* 4186 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
-import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5367 */;
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5375 */;
 
 require = arg1;
 let c8 = false;
@@ -48,15 +48,15 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
           let obj = useStageHasMedia;
           if (obj.getStageHasMedia(channel.id)) {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
-              if (closure_5.can(tmp5(1394).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
+              if (closure_5.can(tmp5(1395).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 obj = { channel: null };
                 obj[0] = channel;
-                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp5(2008)(5382, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp5(2008)(5390, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
                 c8 = true;
                 const obj3 = ACTION_SHEET_HEIGHT_HALFDefault;
               }
             }
-            tmp5Result = tmp5(9806);
+            tmp5Result = tmp5(9018);
           }
           tmp6 = dependencyMap;
         }

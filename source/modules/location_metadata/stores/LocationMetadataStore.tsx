@@ -1,9 +1,9 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13641
+// Function ID: 13642
 // Name: handleSetLocationMetadata
 // Dependencies: [4174, 586, 706, 2]
 
-// Module 13608 (handleSetLocationMetadata)
+// Module 13641 (handleSetLocationMetadata)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

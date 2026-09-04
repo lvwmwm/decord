@@ -1,10 +1,10 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 11688
+// Function ID: 11689
 // Name: hasPartySize
 // Dependencies: [2]
 // Exports: hasPartySize
 
-// Module 9465 (hasPartySize)
+// Module 11688 (hasPartySize)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/hasPartySize.tsx");

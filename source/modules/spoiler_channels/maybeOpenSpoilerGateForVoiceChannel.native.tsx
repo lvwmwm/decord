@@ -1,14 +1,14 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 12864
+// Function ID: 12865
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [1386, 21, 6183, 4860, 13030, 2]
+// Dependencies: [1386, 21, 7267, 4867, 12865, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 13029 (maybeOpenSpoilerGateForVoiceChannel)
-import useAlertStore from "useAlertStore" /* 4860 */;
-import isChannelSpoilerGated from "isChannelSpoilerGated" /* 6183 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13030 */;
-import VoicePanelSpoilerAlertDefault from "VoicePanelSpoilerAlert" /* 13030 */;
+// Module 12864 (maybeOpenSpoilerGateForVoiceChannel)
+import useAlertStore from "useAlertStore" /* 4867 */;
+import isChannelSpoilerGated from "isChannelSpoilerGated" /* 7267 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 12865 */;
+import VoicePanelSpoilerAlertDefault from "VoicePanelSpoilerAlert" /* 12865 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import { jsx } from "jsxProd" /* 21 */;
 

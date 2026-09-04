@@ -1,9 +1,9 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11778
+// Function ID: 11779
 // Name: TransferOwnershipModalScenes
 // Dependencies: [2]
 
-// Module 11647 (TransferOwnershipModalScenes)
+// Module 11778 (TransferOwnershipModalScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_settings/safety/TransferOwnershipConstants.tsx");

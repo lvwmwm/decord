@@ -1,24 +1,24 @@
-// Module ID: 6135
-// Function ID: 6136
+// Module ID: 7219
+// Function ID: 7220
 // Name: getMemberListId
-// Dependencies: [4391, 4500, 1215, 1386, 4398, 1991, 1984, 1908, 4569, 5232, 1921, 673, 1233, 4125, 1214, 12, 503, 586, 706, 2]
+// Dependencies: [4394, 4503, 1215, 1386, 4401, 1991, 1984, 1908, 4572, 5240, 1921, 673, 1233, 4125, 1214, 12, 503, 586, 706, 2]
 
-// Module 6135 (getMemberListId)
+// Module 7219 (getMemberListId)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import closure_4 from "getHash" /* 4391 */;
-import closure_5 from "reset" /* 4500 */;
+import closure_4 from "getHash" /* 4394 */;
+import closure_5 from "reset" /* 4503 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleInviteData" /* 4398 */;
+import closure_8 from "handleInviteData" /* 4401 */;
 import closure_9 from "trackCommunicationDisabled" /* 1991 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "sortActivity" /* 4569 */;
-import closure_13 from "filterPlayingActivities" /* 5232 */;
+import closure_12 from "sortActivity" /* 4572 */;
+import closure_13 from "filterPlayingActivities" /* 5240 */;
 import closure_14 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 
@@ -200,7 +200,7 @@ prototype["insert"] = function insert(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id);
           }
-          obj = { type: null, key: null, id: null, title: null, count: null, index: "accessible" };
+          obj = { type: null, key: null, id: null, title: null, count: null, index: "call" };
           obj[0] = obj.GROUP;
           obj[1] = id;
           obj[2] = id;
@@ -300,7 +300,7 @@ prototype["update"] = function update(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id2);
           }
-          obj = { type: null, key: null, id: null, title: null, count: null, index: "accessible" };
+          obj = { type: null, key: null, id: null, title: null, count: null, index: "call" };
           obj[0] = obj.GROUP;
           obj[1] = id2;
           obj[2] = id2;

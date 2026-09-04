@@ -1,18 +1,18 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9348
+// Function ID: 9349
 // Name: parseBioReact
-// Dependencies: [4951, 4952, 4469, 1400, 7908, 4468, 4192, 12, 2]
+// Dependencies: [4958, 4959, 4472, 1401, 7918, 4471, 4192, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 9056 (parseBioReact)
-import privDefault from "priv" /* 1400 */;
+// Module 9348 (parseBioReact)
+import privDefault from "priv" /* 1401 */;
 import tDefault from "t" /* 4192 */;
-import MarkupTextDefault from "MarkupText" /* 4469 */;
-import parseLinkDefault from "parseLink" /* 4952 */;
-import MarkupText from "MarkupText" /* 4469 */;
-import importDefaultResult from "combineMarkupRules" /* 4951 */;
-import importAllResult from "reactParserFor" /* 7908 */;
-import importDefaultResult1 from "get defaultRules" /* 4468 */;
+import MarkupTextDefault from "MarkupText" /* 4472 */;
+import parseLinkDefault from "parseLink" /* 4959 */;
+import MarkupText from "MarkupText" /* 4472 */;
+import importDefaultResult from "combineMarkupRules" /* 4958 */;
+import importAllResult from "reactParserFor" /* 7918 */;
+import importDefaultResult1 from "get defaultRules" /* 4471 */;
 import importDefaultResult3 from "apply" /* 12 */;
 
 const items = [parseLinkDefault.PROFILE_BIO_RULES, MarkupTextDefault({ enableBuildOverrides: false, mustConfirmExternalLink: true }), ];

@@ -1,12 +1,12 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 12915
+// Function ID: 12916
 // Name: getMediaViewerStateForScreen
-// Dependencies: [8587, 2]
+// Dependencies: [8193, 2]
 // Exports: default
 
-// Module 13080 (getMediaViewerStateForScreen)
+// Module 12915 (getMediaViewerStateForScreen)
 import set from "set" /* 2 */;
-import isValidImageAttachment from "isValidImageAttachment" /* 8587 */;
+import isValidImageAttachment from "isValidImageAttachment" /* 8193 */;
 
 let result = set.fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 

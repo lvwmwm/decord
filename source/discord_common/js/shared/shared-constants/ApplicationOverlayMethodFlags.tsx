@@ -1,9 +1,9 @@
-// Module ID: 4510
-// Function ID: 4511
+// Module ID: 4513
+// Function ID: 4514
 // Name: ApplicationOverlayMethodFlags
 // Dependencies: [2]
 
-// Module 4510 (ApplicationOverlayMethodFlags)
+// Module 4513 (ApplicationOverlayMethodFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationOverlayMethodFlags.tsx");

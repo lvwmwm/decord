@@ -1,17 +1,17 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 9224
+// Function ID: 9225
 // Name: computePermissions
-// Dependencies: [19, 1983, 1390, 1429, 1215, 1386, 1991, 1908, 4120, 1921, 673, 8164, 586, 503, 1954, 2]
+// Dependencies: [19, 1983, 1390, 1430, 1215, 1386, 1991, 1908, 4120, 1921, 673, 9225, 586, 503, 1954, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8163 (computePermissions)
+// Module 9224 (computePermissions)
 import fromStringAll from "fromString" /* 503 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8164 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 9225 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initialize" /* 1983 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;
-import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1429 */;
+import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "trackCommunicationDisabled" /* 1991 */;

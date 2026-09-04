@@ -1,20 +1,20 @@
-// Module ID: 15202
-// Function ID: 15203
+// Module ID: 15284
+// Function ID: 15285
 // Name: EmojiGlyph
-// Dependencies: [32, 19, 1924, 21, 15203, 15205, 15207, 15209, 15211, 15213, 15215, 15217, 15219, 15221, 15223, 15225, 15227, 15229, 15231, 15233, 15235, 15237, 15239, 15241, 15243, 15245, 4478, 5594, 1430, 4217, 4928, 4932, 9116, 1233, 3502, 1941, 5610, 12, 4927, 2]
+// Dependencies: [32, 19, 1924, 21, 15285, 15287, 15289, 15291, 15293, 15295, 15297, 15299, 15301, 15303, 15305, 15307, 15309, 15311, 15313, 15315, 15317, 15319, 15321, 15323, 15325, 15327, 4481, 7070, 1431, 4218, 4935, 4939, 11053, 1233, 3502, 1941, 5562, 12, 4934, 2]
 // Exports: default
 
-// Module 15202 (EmojiGlyph)
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+// Module 15284 (EmojiGlyph)
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import CUSTOM_TYPING_INDICATOR_EMOJI_COUNT from "CUSTOM_TYPING_INDICATOR_EMOJI_COUNT" /* 1941 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import Stack from "Stack" /* 4927 */;
-import EmojiDefault from "Emoji" /* 5594 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import Stack from "Stack" /* 4934 */;
+import EmojiDefault from "Emoji" /* 7070 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { EmojiIntention } from "set" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function EmojiGlyph(emoji) {
@@ -40,7 +40,7 @@ function EmojiGlyph(emoji) {
 }
 function PlaceholderEmojiGlyph(pressed) {
   pressed = pressed.pressed;
-  let obj = pressed(4217);
+  let obj = pressed(4218);
   const fn = function t() {
     const value = pressed.get();
     let obj = { opacity: null, transform: null };
@@ -56,13 +56,13 @@ function PlaceholderEmojiGlyph(pressed) {
     obj[1] = items;
     return obj;
   };
-  obj = { pressed, withSpring: pressed(4928).withSpring, interpolate: pressed(4217).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4932).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
+  obj = { pressed, withSpring: pressed(4935).withSpring, interpolate: pressed(4218).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4939).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
   fn.__closure = obj;
   fn.__workletHash = 16574219123934;
   fn.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) };
-  return jsx(_modDef4217.View, { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) });
+  return jsx(_modDef4218.View, { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) });
 }
 function CustomTypingIndicatorEmojiSlot(index) {
   index = index.index;

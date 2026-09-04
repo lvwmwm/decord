@@ -1,9 +1,9 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6073
+// Function ID: 6074
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6692 (metadata)
+// Module 6073 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftBagGlowSpotIllustration-2x.png.js");

@@ -1,11 +1,11 @@
-// Module ID: 6109
-// Function ID: 6110
+// Module ID: 7193
+// Function ID: 7194
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 4114, 1908, 673, 6110, 6111, 586, 4113, 2]
+// Dependencies: [19, 4114, 1908, 673, 7194, 7195, 586, 4113, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 6109 (useShouldHideGuildPurchaseEntryPoints)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6110 */;
+// Module 7193 (useShouldHideGuildPurchaseEntryPoints)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7194 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
@@ -83,23 +83,15 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     hasItem = hasItem1;
   }
   if (!hasItem) {
-    let hasItem2;
-    if (has != null) {
-      const features3 = has.features;
-      hasItem2 = features3.has(constants.SOCIAL_LAYER_STOREFRONT);
-    }
-    hasItem = hasItem2;
-  }
-  if (!hasItem) {
     obj = { shouldHideGuildPurchaseEntryPoints: null, restrictionsLoading: null };
-    obj[0] = tmp14;
+    obj[0] = tmp12;
     obj[1] = stateFromStores;
     return obj;
   } else if (stateFromStores) {
     let flag;
     if (has != null) {
-      const features4 = has.features;
-      has = features4.has;
+      const features3 = has.features;
+      has = features3.has;
       flag = has(constants.CREATOR_MONETIZABLE_RESTRICTED);
     }
     if (flag == null) {

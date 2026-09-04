@@ -1,16 +1,16 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15969
+// Function ID: 15970
 // Name: useMessagesData
-// Dependencies: [32, 19, 5230, 1215, 4130, 6074, 586, 15884, 4166, 2]
+// Dependencies: [32, 19, 5238, 1215, 4130, 7158, 586, 15970, 4166, 2]
 // Exports: default
 
-// Module 15883 (useMessagesData)
+// Module 15969 (useMessagesData)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_handleConnectionOpen" /* 5230 */;
+import closure_5 from "_handleConnectionOpen" /* 5238 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "makeSortedChannel" /* 6074 */;
+import closure_8 from "makeSortedChannel" /* 7158 */;
 
 const require = arg1;
 let obj = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };

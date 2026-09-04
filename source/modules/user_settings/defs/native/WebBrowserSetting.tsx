@@ -1,15 +1,15 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15399
+// Function ID: 15400
 // Name: route
-// Dependencies: [673, 11292, 1233, 15318, 9386, 15319, 2]
+// Dependencies: [673, 11400, 1233, 15400, 8816, 15401, 2]
 
-// Module 15317 (route)
+// Module 15399 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9386 */;
-import useWebBrowserSettingOptions from "useWebBrowserSettingOptions" /* 15318 */;
-import createToggle from "createToggle" /* 11292 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8816 */;
+import useWebBrowserSettingOptions from "useWebBrowserSettingOptions" /* 15400 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -26,7 +26,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.BROWSER,
   getComponent() {
-    return require(15319).default;
+    return require(15401).default;
   }
 };
 const route = createToggle.createRoute(obj);

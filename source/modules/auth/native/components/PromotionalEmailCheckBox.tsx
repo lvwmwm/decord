@@ -1,15 +1,15 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15909
+// Function ID: 15910
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6062, 21, 4478, 4205, 1233, 7696, 4474, 2]
+// Dependencies: [19, 17, 6535, 21, 4481, 4206, 1233, 5572, 4477, 2]
 // Exports: default
 
-// Module 15823 (PromotionalEmailCheckBox)
+// Module 15909 (PromotionalEmailCheckBox)
 import noopAll from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import setPromoEmailConsentState from "setPromoEmailConsentState" /* 6062 */;
+import setPromoEmailConsentState from "setPromoEmailConsentState" /* 6535 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -24,7 +24,7 @@ export default function PromotionalEmailCheckBox(style) {
   const tmp = callback4();
   const tmp3 = callback((checked) => checked.checked);
   _require = tmp3;
-  let obj = _require(4205);
+  let obj = _require(4206);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: tmp3 });
   let tmp9 = null;
   if (tmp2) {
@@ -41,12 +41,12 @@ export default function PromotionalEmailCheckBox(style) {
     obj[4] = tmp.checkboxRow;
     obj1 = { checked: null };
     obj1[0] = tmp3;
-    const items = [callback2(tmp4(7696).FormCheckbox, obj1), ];
+    const items = [callback2(tmp4(5572).FormCheckbox, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj2[2] = tmp.checkboxLabel;
     const intl2 = tmp4(1233).intl;
     obj2[3] = intl2.string(tmp4(1233).t.ylFCLt);
-    items[1] = callback2(tmp4(4474).Text, obj2);
+    items[1] = callback2(tmp4(4477).Text, obj2);
     obj[5] = items;
     obj[1] = callback3(closure_3, obj);
     tmp9 = callback2(closure_2, obj);

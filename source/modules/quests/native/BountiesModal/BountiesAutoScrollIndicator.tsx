@@ -1,21 +1,21 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14980
+// Function ID: 14981
 // Name: BouncingArrow
-// Dependencies: [19, 17, 21, 4217, 4479, 4478, 709, 4197, 14899, 4474, 1233, 14901, 2]
+// Dependencies: [19, 17, 21, 4218, 4482, 4481, 709, 4197, 14981, 4477, 1233, 14983, 2]
 // Exports: default
 
-// Module 14898 (BouncingArrow)
+// Module 14980 (BouncingArrow)
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4217 from "module_4217" /* 4217 */;
+import _modDef4218 from "module_4218" /* 4218 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function BouncingArrow(children) {
   let sharedValue;
-  sharedValue = sharedValue(4217).useSharedValue(0);
+  sharedValue = sharedValue(4218).useSharedValue(0);
   let items = [sharedValue];
   const effect = React.useEffect(() => {
     let obj = sharedValue(closure_1_2[3]);
@@ -31,7 +31,7 @@ function BouncingArrow(children) {
     const result = sharedValue.set(obj.withRepeat(obj2.withSequence(withTimingResult, sharedValue(closure_1_2[4]).withTiming(0, obj)), -1));
     return () => closure_1_0(closure_1_2[3]).cancelAnimation(closure_0);
   }, items);
-  let obj = sharedValue(4217);
+  let obj = sharedValue(4218);
   const fn = function l() {
     let obj = { transform: null };
     obj = { translateY: sharedValue.get() };
@@ -42,8 +42,8 @@ function BouncingArrow(children) {
   fn.__closure = { translateY: sharedValue };
   fn.__workletHash = 10126349088819;
   fn.__initData = closure_7;
-  const style = sharedValue(4217).useAnimatedStyle(fn);
-  return callback(_modDef4217.View, { style, children: children.children });
+  const style = sharedValue(4218).useAnimatedStyle(fn);
+  return callback(_modDef4218.View, { style, children: children.children });
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { code: "function BountiesAutoScrollIndicatorTsx1(){const{translateY}=this.__closure;return{transform:[{translateY:translateY.get()}]};}" };
@@ -64,13 +64,13 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
   let obj = _require(4197);
   const token = obj.useToken(ThemesDefault.colors.WHITE);
   obj = { size: "md", color: ThemesDefault.colors.WHITE };
-  const tmp6 = callback(_require(14899).ArrowSmallUpIcon, obj);
+  const tmp6 = callback(_require(14981).ArrowSmallUpIcon, obj);
   _require = tmp6;
   obj = { style: tmp.root, children: null };
   obj1 = { variant: "text-md/semibold", color: "text-default", children: null };
   const intl = _require(1233).intl;
   obj1[2] = intl.string(_require(1233).t.eafsh4);
-  const items = [callback(_require(4474).Text, obj1), ];
+  const items = [callback(_require(4477).Text, obj1), ];
   const obj2 = { style: tmp.ringContainer, children: null };
   if (flag) {
     const obj3 = { size: 40, width: 3, fill: null, duration: 0, rotation: 0, lineCap: "round", tintColor: null, backgroundColor: "rgba(255, 255, 255, 0.35)", children: null };
@@ -79,7 +79,7 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
     obj3[8] = function children() {
       return closure_0;
     };
-    let tmp5Result = tmp5(_require(14901).AnimatedCircularProgress, obj3);
+    let tmp5Result = tmp5(_require(14983).AnimatedCircularProgress, obj3);
   } else {
     const obj4 = { children: null };
     obj4[0] = tmp6;

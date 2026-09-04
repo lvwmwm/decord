@@ -1,13 +1,13 @@
-// Module ID: 8412
-// Function ID: 8413
+// Module ID: 9327
+// Function ID: 9328
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [19, 6148, 7356, 21, 644, 8413, 8414, 8411, 7365, 4445, 7355, 2]
+// Dependencies: [19, 7232, 7534, 21, 644, 9328, 9329, 9326, 7543, 4448, 7533, 2]
 // Exports: default
 
-// Module 8412 (ExplicitMediaObscuredFalsePositiveActionSheet)
+// Module 9327 (ExplicitMediaObscuredFalsePositiveActionSheet)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getFpMessageInfo" /* 6148 */;
-import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7356 */;
+import closure_4 from "getFpMessageInfo" /* 7232 */;
+import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7534 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -28,27 +28,27 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   React = attachments1.map((filename) => filename.filename);
   obj = {
     onSuccess() {
-      channelId(8414).handleSuccess(closure_1_5);
-      const obj = channelId(8414);
-      const result = messageId(8411).disableFalsePositiveButton(channelId, messageId);
+      channelId(9329).handleSuccess(closure_1_5);
+      const obj = channelId(9329);
+      const result = messageId(9326).disableFalsePositiveButton(channelId, messageId);
     },
     onError() {
-      return channelId(8414).handleError();
+      return channelId(9329).handleError();
     },
     report() {
-      return channelId(7365).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, closure_3);
+      return channelId(7543).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, closure_3);
     }
   };
-  const explicitMediaActions = channelId(8413).useExplicitMediaActions(obj);
+  const explicitMediaActions = channelId(9328).useExplicitMediaActions(obj);
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   if (stateFromStores.attachments.length <= 0) {
-    messageId(4445).hideActionSheet();
-    const obj4 = messageId(4445);
+    messageId(4448).hideActionSheet();
+    const obj4 = messageId(4448);
   }
   const items1 = [reportFalsePositive];
   const callback = React.useCallback(() => {
     reportFalsePositive();
   }, items1);
-  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(7355).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW };
-  return jsx(channelId(8414).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(7355).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW });
+  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(7533).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW };
+  return jsx(channelId(9329).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: tmp(7533).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW });
 };

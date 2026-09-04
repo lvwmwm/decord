@@ -1,25 +1,25 @@
-// Module ID: 9912
-// Function ID: 9913
+// Module ID: 9385
+// Function ID: 9386
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4495, 673, 21, 4478, 709, 5562, 4929, 1233, 9913, 4474, 9914, 586, 9904, 38, 9911, 4445, 1228, 1296, 8522, 5631, 5630, 5633, 2]
+// Dependencies: [5, 32, 19, 17, 4498, 673, 21, 4481, 709, 7063, 4936, 1233, 9386, 4477, 9387, 586, 9377, 38, 9384, 4448, 1228, 1296, 9388, 7090, 7089, 6567, 2]
 // Exports: default
 
-// Module 9912 (TransferFooter)
+// Module 9385 (TransferFooter)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import registerAssetDefault from "registerAsset" /* 9913 */;
-import registerAssetDefault2 from "registerAsset" /* 9914 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import registerAssetDefault from "registerAsset" /* 9386 */;
+import registerAssetDefault2 from "registerAsset" /* 9387 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "set" /* 4495 */;
+import closure_10 from "set" /* 4498 */;
 import { ComponentActions } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TransferFooter(arg0) {
@@ -123,7 +123,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(9911).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
+              obj1[0] = closure_1_0(9384).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -135,7 +135,7 @@ export default function GameConsoleListActionSheet(arg0) {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4445);
+            obj = v0(4448);
             obj.hideActionSheet();
             const ComponentDispatch = closure_1_0(1228).ComponentDispatch;
             ComponentDispatch.dispatch(closure_1_11.TOGGLE_CALL_CONTROL_DRAWER);

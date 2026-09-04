@@ -1,21 +1,21 @@
-// Module ID: 4365
-// Function ID: 4366
+// Module ID: 4368
+// Function ID: 4369
 // Name: BoostedGuildTiers
-// Dependencies: [1923, 673, 4366, 4368, 1372, 4369, 1233, 4404, 4405, 4406, 4407, 4388, 2]
+// Dependencies: [1923, 673, 4369, 4371, 1372, 4372, 1233, 4407, 4408, 4409, 4410, 4391, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4365 (BoostedGuildTiers)
+// Module 4368 (BoostedGuildTiers)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import GuildFeatures2 from "GuildFeatures" /* 1923 */;
-import str11 from "str11" /* 4366 */;
-import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4368 */;
-import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4369 */;
-import experiment from "experiment" /* 4388 */;
-import apexExperiment from "apexExperiment" /* 4404 */;
-import experiment2 from "experiment" /* 4405 */;
-import apexExperiment2 from "apexExperiment" /* 4406 */;
-import experiment3 from "experiment" /* 4407 */;
+import str11 from "str11" /* 4369 */;
+import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4371 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4372 */;
+import experiment from "experiment" /* 4391 */;
+import apexExperiment from "apexExperiment" /* 4407 */;
+import experiment2 from "experiment" /* 4408 */;
+import apexExperiment2 from "apexExperiment" /* 4409 */;
+import experiment3 from "experiment" /* 4410 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

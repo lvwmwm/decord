@@ -1,18 +1,18 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10787
+// Function ID: 10788
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4478, 709, 1296, 4474, 4322, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1296, 4477, 4325, 2]
 // Exports: default
 
-// Module 10853 (LockedRecipientField)
+// Module 10787 (LockedRecipientField)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import Text from "Text" /* 4474 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import Text from "Text" /* 4477 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -29,7 +29,7 @@ export default function LockedRecipientField(user) {
   user = user.user;
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.avatar, user, guildId: "Array", size: 409390404914198900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { style: tmp.avatar, user, guildId: "Array", size: true };
   obj[3] = Button.AvatarSizes.NORMAL;
   const items = [callback(Button.Avatar, obj), ];
   obj = { variant: "text-md/semibold", children: nameFromUserDefault.getName(user) };

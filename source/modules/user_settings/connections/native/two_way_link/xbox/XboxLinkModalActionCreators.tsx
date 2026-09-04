@@ -1,22 +1,22 @@
-// Module ID: 9317
-// Function ID: 9318
-// Dependencies: [4724, 9318, 2008, 2]
+// Module ID: 9146
+// Function ID: 9147
+// Dependencies: [4731, 9147, 2008, 2]
 
-// Module 9317
+// Module 9146
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
 
 let c3 = "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack) {
-    let obj = _modDef4724;
+    let obj = _modDef4731;
     obj = { locationStack };
-    obj.pushLazy(asyncRequireImpl(9318, dependencyMap.paths), obj, c3);
+    obj.pushLazy(asyncRequireImpl(9147, dependencyMap.paths), obj, c3);
   },
   hideModal() {
-    _modDef4724.popWithKey(c3);
+    _modDef4731.popWithKey(c3);
   }
 };

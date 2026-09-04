@@ -1,9 +1,9 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 6407
+// Function ID: 6408
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7026 (metadata)
+// Module 6407 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SleepingWumpusSpotIllustration-2x.png.js");

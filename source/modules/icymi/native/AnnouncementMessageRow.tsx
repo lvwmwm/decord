@@ -1,21 +1,21 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16413
+// Function ID: 16414
 // Name: AnnouncementMessageRowWrapper
-// Dependencies: [19, 17, 1386, 1908, 4130, 4702, 1921, 16328, 21, 16290, 709, 586, 5466, 8641, 10876, 11468, 16329, 8640, 16331, 1233, 11, 5077, 9442, 16333, 16337, 2]
+// Dependencies: [19, 17, 1386, 1908, 4130, 4709, 1921, 16414, 21, 16376, 709, 586, 5475, 8281, 10844, 11589, 16415, 8280, 16417, 1233, 11, 5084, 9699, 16419, 16423, 2]
 // Exports: default
 
-// Module 16327 (AnnouncementMessageRowWrapper)
+// Module 16413 (AnnouncementMessageRowWrapper)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { ITEM_PADDING } from "ITEM_PADDING" /* 16328 */;
+import { ITEM_PADDING } from "ITEM_PADDING" /* 16414 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16290 */;
+import createICYMIStyles from "createICYMIStyles" /* 16376 */;
 
 const require = arg1;
 let c3 = importAllResult;

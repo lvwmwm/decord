@@ -1,14 +1,14 @@
-// Module ID: 6855
-// Function ID: 6856
+// Module ID: 6236
+// Function ID: 6237
 // Name: NitroRubyBadgeSmallBadge
-// Dependencies: [21, 5502, 6856, 2]
+// Dependencies: [21, 5542, 6237, 2]
 // Exports: NitroRubyBadgeSmallBadge
 
-// Module 6855 (NitroRubyBadgeSmallBadge)
+// Module 6236 (NitroRubyBadgeSmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import vanityUrlDefault from "vanityUrl" /* 6856 */;
+import preloadDefault from "preload" /* 5542 */;
+import vanityUrlDefault from "vanityUrl" /* 6237 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeSmallBadge.native.tsx");

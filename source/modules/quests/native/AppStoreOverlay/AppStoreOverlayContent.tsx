@@ -1,10 +1,10 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11430
+// Function ID: 11431
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 4190, 4184, 1233, 11323, 2]
+// Dependencies: [5, 4190, 4184, 1233, 11431, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 11322 (_getAppStoreOverlayContent)
+// Module 11430 (_getAppStoreOverlayContent)
 import _openURL from "_openURL" /* 4184 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -177,7 +177,7 @@ export const openAppStoreReviews = function openAppStoreReviews(storeUrl, platfo
   }
   _openURL.default(storeUrl);
 };
-export const getAppStoreOverlayContent = function getAppStoreOverlayContent(inlineStoreParamsFromCta, url) {
+export const getAppStoreOverlayContent = function getAppStoreOverlayContent(inlineStoreParams, link) {
   const self = this;
   const apply = _getAppStoreOverlayContent.apply;
   if (typeof apply === "unknown") {

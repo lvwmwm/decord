@@ -1,14 +1,14 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 8848
+// Function ID: 8849
 // Name: ThumbsDownIcon
-// Dependencies: [19, 21, 709, 4196, 12895, 2]
+// Dependencies: [19, 21, 709, 4196, 8849, 2]
 // Exports: ThumbsDownIcon
 
-// Module 12894 (ThumbsDownIcon)
+// Module 8848 (ThumbsDownIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12895 */;
+import registerAsset from "registerAsset" /* 8849 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

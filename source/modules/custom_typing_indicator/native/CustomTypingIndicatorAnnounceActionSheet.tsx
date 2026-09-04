@@ -1,17 +1,17 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11901
+// Function ID: 11902
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 673, 1383, 21, 4478, 709, 6255, 5631, 5562, 5946, 11771, 1929, 11773, 11774, 11775, 11776, 11777, 11778, 11779, 1296, 1233, 4474, 3502, 4929, 2]
+// Dependencies: [19, 17, 673, 1383, 21, 4481, 709, 7320, 7090, 7063, 7094, 11902, 1929, 11904, 11905, 11906, 11907, 11908, 11909, 11910, 1296, 1233, 4477, 3502, 4936, 2]
 // Exports: default
 
-// Module 11770 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 11901 (CustomTypingIndicatorAnnounceActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -65,7 +65,7 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   obj = { bottom: true, children: null };
   obj = { style: tmp2.content, children: null };
   const items3 = [
-    callback(markAsDismissed(5946).ActionSheetHeaderBar, {
+    callback(markAsDismissed(7094).ActionSheetHeaderBar, {
       onPress() {
         const current = ref.current;
         if (current != null) {
@@ -85,10 +85,10 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   items4 = [, ];
   ({ row: arr5[0], outerRow: arr5[1] } = tmp2);
   const obj4 = { name: "Cap", suggestion: markAsDismissed(1929).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: null, style: null };
-  const items5 = [ref(11773), ref(11774), ref(11773)];
+  const items5 = [ref(11904), ref(11905), ref(11904)];
   obj4[7] = items5;
   obj4[8] = tmp2.outerStack;
-  obj3[1] = callback(ref(11771), obj4);
+  obj3[1] = callback(ref(11902), obj4);
   const items6 = [callback(View, obj3), , ];
   const obj5 = { style: items7, children: null };
   items7 = [, ];
@@ -103,23 +103,23 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
       markAsDismissed(closure_1_6.USER_DISMISS);
     }
   };
-  const tmp6 = ref(11771);
+  const tmp6 = ref(11902);
   obj6[1] = markAsDismissed(1929).TypingSuggestion.YAPPING;
   obj6[7] = tmp2.innerStack;
-  const items8 = [ref(11775), ref(11776), ref(11775)];
+  const items8 = [ref(11906), ref(11907), ref(11906)];
   obj6[8] = items8;
-  obj5[1] = callback(ref(11771), obj6);
+  obj5[1] = callback(ref(11902), obj6);
   items6[1] = callback(View, obj5);
   const obj7 = { style: items9, children: null };
   items9 = [, ];
   ({ row: arr10[0], outerRow: arr10[1] } = tmp2);
   const obj8 = { name: "Loky", suggestion: null, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, style: null, emojiSource: null };
-  const tmp7 = ref(11771);
+  const tmp7 = ref(11902);
   obj8[1] = markAsDismissed(1929).TypingSuggestion.OVERSHARING;
   obj8[7] = tmp2.outerStack;
-  const items10 = [ref(11777), ref(11778), ref(11779)];
+  const items10 = [ref(11908), ref(11909), ref(11910)];
   obj8[8] = items10;
-  obj7[1] = callback(ref(11771), obj8);
+  obj7[1] = callback(ref(11902), obj8);
   items6[2] = callback(View, obj7);
   obj2[1] = items6;
   items3[1] = callback2(View, obj2);
@@ -132,26 +132,26 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   const obj10 = { variant: "heading-lg/medium", style: tmp2.title, color: "text-default", children: null };
   const intl2 = markAsDismissed(1233).intl;
   obj10[3] = intl2.string(ref(3502).uGxDiu);
-  items3[3] = callback(markAsDismissed(4474).Text, obj10);
+  items3[3] = callback(markAsDismissed(4477).Text, obj10);
   const obj11 = { variant: "text-md/normal", style: tmp2.body, color: "text-muted", children: null };
   const intl3 = markAsDismissed(1233).intl;
   obj11[3] = intl3.string(ref(3502).yezU3E);
-  items3[4] = callback(markAsDismissed(4474).Text, obj11);
+  items3[4] = callback(markAsDismissed(4477).Text, obj11);
   const obj12 = { style: tmp2.actions, children: null };
   const obj13 = { text: null, variant: "primary", size: "lg", onPress: null };
   const intl4 = markAsDismissed(1233).intl;
   obj13[0] = intl4.string(ref(3502).TswY68);
   obj13[3] = callback;
-  const items11 = [callback(markAsDismissed(4929).Button, obj13), ];
+  const items11 = [callback(markAsDismissed(4936).Button, obj13), ];
   const obj14 = { text: null, variant: "secondary", size: "lg", onPress: null };
   const intl5 = markAsDismissed(1233).intl;
   obj14[0] = intl5.string(markAsDismissed(1233).t.TulDPl);
   obj14[3] = callback1;
-  items11[1] = callback(markAsDismissed(4929).Button, obj14);
+  items11[1] = callback(markAsDismissed(4936).Button, obj14);
   obj12[1] = items11;
   items3[5] = callback2(View, obj12);
   obj[1] = items3;
   obj[1] = callback2(View, obj);
-  obj[4] = callback(markAsDismissed(5562).SafeAreaPaddingView, obj);
-  return callback(markAsDismissed(5631).BottomSheet, obj);
+  obj[4] = callback(markAsDismissed(7063).SafeAreaPaddingView, obj);
+  return callback(markAsDismissed(7090).BottomSheet, obj);
 };

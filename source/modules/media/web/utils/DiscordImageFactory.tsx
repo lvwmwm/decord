@@ -1,12 +1,12 @@
-// Module ID: 5135
-// Function ID: 5136
+// Module ID: 5143
+// Function ID: 5144
 // Name: create
-// Dependencies: [5136, 5163, 2]
+// Dependencies: [5144, 5171, 2]
 
-// Module 5135 (create)
+// Module 5143 (create)
 import set from "set" /* 2 */;
-import detectFile from "detectFile" /* 5136 */;
-import create from "create" /* 5163 */;
+import detectFile from "detectFile" /* 5144 */;
+import create from "create" /* 5171 */;
 
 const result = set.fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
 const prototype = function DiscordImageFactory() {

@@ -1,24 +1,24 @@
-// Module ID: 7157
-// Function ID: 7158
+// Module ID: 7337
+// Function ID: 7338
 // Name: defaultMobileWebNitroManagementSuccessCallback
-// Dependencies: [673, 502, 21, 3, 4859, 1233, 1234, 1623, 7158, 7161, 2]
+// Dependencies: [673, 502, 21, 3, 4866, 1233, 1234, 1623, 7338, 7341, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 7157 (defaultMobileWebNitroManagementSuccessCallback)
+// Module 7337 (defaultMobileWebNitroManagementSuccessCallback)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import jsxProd from "jsxProd" /* 21 */;
 import sum from "sum" /* 502 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef4859 from "module_4859" /* 4859 */;
+import _modDef4866 from "module_4866" /* 4866 */;
 
 function defaultMobileWebNitroManagementSuccessCallback() {
   return logger.log("Successfully opened mobile web Nitro Management page");
 }
 function defaultMobileWebNitroManagementFailureCallback(arg0) {
   logger.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
-  obj = _modDef4859;
+  obj = _modDef4866;
   obj = { title: null, body: null, hideActionSheet: true };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.NrBVjw);
@@ -105,7 +105,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1233).intl;
                 const t = tmp13(1233).t;
                 obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(7161).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                jsx(tmp13(7341).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
                 const tmp9 = jsx;
               } else {
                 function manageExternalNitroSubscription() {

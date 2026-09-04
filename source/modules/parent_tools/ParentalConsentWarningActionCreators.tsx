@@ -1,14 +1,14 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17384
+// Function ID: 17385
 // Name: clearPendingRetry
-// Dependencies: [5, 14711, 4, 581, 684, 17305, 527, 706, 1205, 2]
+// Dependencies: [5, 14792, 4, 581, 684, 17385, 527, 706, 1205, 2]
 // Exports: clearWarning, forceFetchWarning, resetFetchState
 
-// Module 17304 (clearPendingRetry)
+// Module 17384 (clearPendingRetry)
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 14711 */;
+import closure_4 from "initialize" /* 14792 */;
 import importDefaultResult from "fails" /* 581 */;
 
 const require = arg1;
@@ -163,7 +163,7 @@ function fetchWarning() {
   } else {
     return Promise.resolve();
   }
-  obj = _require(17305);
+  obj = _require(17385);
 }
 function maybeFetchWarning() {
   const self = this;

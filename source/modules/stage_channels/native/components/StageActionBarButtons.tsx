@@ -1,32 +1,32 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 9827
+// Function ID: 9828
 // Name: AgeVerificationSpeakerActionSheet
-// Dependencies: [32, 19, 17, 4470, 4493, 10016, 5367, 673, 21, 4478, 709, 9562, 1233, 10017, 8688, 586, 10018, 10024, 10025, 10026, 9268, 10028, 8761, 10029, 10031, 8684, 9800, 5962, 5383, 5377, 4445, 10032, 2008, 10044, 10045, 1627, 5998, 6266, 4474, 4929, 8701, 8703, 10047, 10048, 5375, 10049, 8762, 10050, 10052, 10054, 9574, 5025, 10055, 4217, 4928, 9660, 8376, 8698, 8683, 5077, 1296, 10056, 2]
+// Dependencies: [32, 19, 17, 4473, 4496, 9828, 5375, 673, 21, 4481, 709, 9426, 1233, 9829, 8328, 586, 9830, 9836, 9837, 9838, 9840, 9842, 8545, 9003, 9843, 8324, 9012, 7102, 5391, 5385, 4448, 9844, 2008, 9856, 9857, 1627, 7138, 5647, 4477, 4936, 8341, 8343, 9859, 9860, 5383, 9861, 8546, 9862, 9864, 9866, 9518, 5032, 9867, 4218, 4935, 9603, 8523, 8338, 8323, 5084, 1296, 9868, 2]
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
 
-// Module 10015 (AgeVerificationSpeakerActionSheet)
+// Module 9827 (AgeVerificationSpeakerActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import Form from "Form" /* 8376 */;
-import registerAssetDefault from "registerAsset" /* 8698 */;
-import registerAssetDefault2 from "registerAsset" /* 8761 */;
-import ActionButtonAll from "ActionButton" /* 9562 */;
-import registerAssetDefault3 from "registerAsset" /* 10017 */;
-import registerAssetDefault4 from "registerAsset" /* 10056 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import registerAssetDefault from "registerAsset" /* 8338 */;
+import Form from "Form" /* 8523 */;
+import registerAssetDefault2 from "registerAsset" /* 8545 */;
+import ActionButtonAll from "ActionButton" /* 9426 */;
+import registerAssetDefault3 from "registerAsset" /* 9829 */;
+import registerAssetDefault4 from "registerAsset" /* 9868 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "initialize" /* 10016 */;
-import { REQUEST_TO_SPEAK_SHEET_KEY as closure_10 } from "MAX_STAGE_TOPIC_LENGTH" /* 5367 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_8 from "generateOldThreadCutoff" /* 4496 */;
+import closure_9 from "initialize" /* 9828 */;
+import { REQUEST_TO_SPEAK_SHEET_KEY as closure_10 } from "MAX_STAGE_TOPIC_LENGTH" /* 5375 */;
 import { NOOP } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class AgeVerificationSpeakerActionSheet {
@@ -90,7 +90,7 @@ class AnimatedPrompt {
     items = [];
     items[0] = closure_7;
     stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-    obj2 = require("module_4217");
+    obj2 = require("module_4218");
     fn = function c() {
       let obj = show(closure_1_3[54]);
       let num = 20;
@@ -119,7 +119,7 @@ class AnimatedPrompt {
       tmp5 = animatedStyle;
     }
     items1[2] = tmp5;
-    return tmp4(require("module_4217").View, { style: items1, children });
+    return tmp4(require("module_4218").View, { style: items1, children });
   }
 }
 class StartStagePrompt {
@@ -211,12 +211,12 @@ export const MusicMuteButton = function MusicMuteButton(arg0) {
     }
     obj = { accessibilityLabel: null, source: null, IconComponent: null, imageStyle: null, onPress: null, isSmallSize: null };
     obj[0] = stringResult;
-    obj[1] = importDefault(stateFromStores ? 10024 : 10025);
+    obj[1] = importDefault(stateFromStores ? 9836 : 9837);
     if (stateFromStores) {
-      tmpResult = tmp(10026);
+      tmpResult = tmp(9838);
       let MusicIcon = tmpResult.MusicSlashIcon;
     } else {
-      MusicIcon = tmp(9268).MusicIcon;
+      MusicIcon = tmp(9840).MusicIcon;
     }
     obj[2] = MusicIcon;
     imageStyle = imageStyle.imageStyle;
@@ -235,7 +235,7 @@ export const DisconnectStageButton = function DisconnectStageButton(channel) {
   const intl = channel(1233).intl;
   obj[0] = intl.string(channel(1233).t.SMKyih);
   obj[1] = registerAssetDefault2;
-  obj[2] = channel(10029).DoorExitIcon;
+  obj[2] = channel(9003).DoorExitIcon;
   obj[3] = function onPress() {
     if (closure_1_1(closure_1_3[24])(channel)) {
       let tmp3Result = tmp3(tmp[25]);
@@ -257,20 +257,20 @@ export const RequestToSpeakListButton = function RequestToSpeakListButton(channe
     obj = { channelId: channel.id, analyticsLocations };
     obj.openLazy(channel(closure_1_3[32])(closure_1_3[31], closure_1_3.paths), closure_1_10, obj);
   }
-  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
-  let obj = channel(5383);
-  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(5377).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
+  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
+  let obj = channel(5391);
+  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(5385).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
   if (stageParticipantsCount > 0) {
     obj = { accessibilityLabel: null, source: null, imageStyle: null, IconComponent: null, onPress: null, notifications: null, isSmallSize: null };
     const intl = tmp3(1233).intl;
     obj = { count: null };
     obj[0] = stageParticipantsCount;
     obj[0] = intl.formatToPlainString(tmp3(1233).t.OhK58v, obj);
-    obj[1] = tmp(10044);
+    obj[1] = tmp(9856);
     obj1 = { tintColor: null };
     obj1[0] = tmp(709).unsafe_rawColors.WHITE;
     obj[2] = obj1;
-    obj[3] = tmp3(10045).HandRequestSpeakListIcon;
+    obj[3] = tmp3(9857).HandRequestSpeakListIcon;
     obj[4] = handleOpenAudienceList;
     obj[5] = stageParticipantsCount;
     obj[6] = isSmallSize;
@@ -279,11 +279,11 @@ export const RequestToSpeakListButton = function RequestToSpeakListButton(channe
     const obj2 = { accessibilityLabel: null, source: null, imageStyle: null, IconComponent: null, onPress: null, isSmallSize: null };
     const intl2 = tmp3(1233).intl;
     obj2[0] = intl2.string(tmp3(1233).t.KJnyvh);
-    obj2[1] = tmp(10044);
+    obj2[1] = tmp(9856);
     const obj3 = { tintColor: null };
     obj3[0] = tmp(709).unsafe_rawColors.WHITE;
     obj2[2] = obj3;
-    obj2[3] = tmp3(10045).HandRequestSpeakListIcon;
+    obj2[3] = tmp3(9857).HandRequestSpeakListIcon;
     obj2[4] = handleOpenAudienceList;
     obj2[5] = isSmallSize;
     tmp7 = callback2(ActionButtonAll.ActionButton, obj2);
@@ -370,9 +370,9 @@ export const ChatButton = function ChatButton(channel) {
   const items1 = [channel.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ unreadCount: closure_1_8.getUnreadCount(channel.id), mentionCount: closure_1_8.getMentionCount(channel.id) }), items1);
   ({ unreadCount, mentionCount } = stateFromStoresObject);
-  obj1 = channel(10054);
+  obj1 = channel(9866);
   isVoiceChannelLocked = obj1.useIsVoiceChannelLocked(channel);
-  let obj2 = channel(9574);
+  let obj2 = channel(9518);
   const voiceChatNavigationContext = obj2.useVoiceChatNavigationContext();
   openChat = undefined;
   if (voiceChatNavigationContext != null) {
@@ -393,12 +393,12 @@ export const ChatButton = function ChatButton(channel) {
       obj[0] = obj;
       const intl2 = tmp(1233).intl;
       obj[1] = intl2.string(tmp(1233).t.ZXxLQg);
-      obj[2] = tmp(5025).ChatIcon;
-      obj[3] = isVoiceChannelLocked(10055);
+      obj[2] = tmp(5032).ChatIcon;
+      obj[3] = isVoiceChannelLocked(9867);
       obj[4] = onPress;
       obj[5] = isVoiceChannelLocked;
       obj[6] = isSmallSize;
-      let tmp7Result = callback2(openChat(9562).ActionButton, obj);
+      let tmp7Result = callback2(openChat(9426).ActionButton, obj);
     }
     return tmp7Result;
   }
@@ -410,12 +410,12 @@ export const ChatButton = function ChatButton(channel) {
   obj1[2] = obj2;
   const intl = tmp(1233).intl;
   obj1[3] = intl.string(channel(1233).t.ZXxLQg);
-  obj1[4] = channel(5025).ChatIcon;
-  obj1[5] = isVoiceChannelLocked(10055);
+  obj1[4] = channel(5032).ChatIcon;
+  obj1[5] = isVoiceChannelLocked(9867);
   obj1[6] = onPress;
   obj1[7] = isVoiceChannelLocked;
   obj1[8] = isSmallSize;
-  tmp7Result = callback2(openChat(9562).NotifiedActionButton, obj1);
+  tmp7Result = callback2(openChat(9426).NotifiedActionButton, obj1);
 };
 export { AnimatedPrompt };
 export const AnimatedStartStagePrompt = function AnimatedStartStagePrompt(channel) {
@@ -511,7 +511,7 @@ export const JoinStagePrompt = function JoinStagePrompt(channel) {
   obj[5] = intl.string(channel(1233).t["7vb2cc"]);
   const intl2 = channel(1233).intl;
   obj[6] = intl2.string(channel(1233).t.lyCW4E);
-  return callback2(channel(8376).FormCTA, obj);
+  return callback2(channel(8523).FormCTA, obj);
 };
 export const ContinueToStagePrompt = function ContinueToStagePrompt(onContinue) {
   const tmp = callback4();

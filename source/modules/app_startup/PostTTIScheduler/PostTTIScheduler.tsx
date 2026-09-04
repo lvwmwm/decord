@@ -1,10 +1,10 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7600
+// Function ID: 7601
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 7422 (promise)
+// Module 7600 (promise)
 import set from "set" /* 2 */;
 
 const obj = {

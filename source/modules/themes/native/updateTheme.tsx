@@ -1,13 +1,13 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16881
+// Function ID: 16882
 // Name: updateTheme
-// Dependencies: [17, 1234, 14333, 2]
+// Dependencies: [17, 1234, 14365, 2]
 // Exports: updateTheme
 
-// Module 16794 (updateTheme)
+// Module 16881 (updateTheme)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 14333 */;
+import enforcingDefault from "enforcing" /* 14365 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/themes/native/updateTheme.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 7882
-// Function ID: 7883
+// Module ID: 7892
+// Function ID: 7893
 // Name: processColorStrings
-// Dependencies: [32, 19, 17, 1301, 502, 686, 1470, 4958, 2]
+// Dependencies: [32, 19, 17, 1301, 502, 686, 1394, 4965, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7882 (processColorStrings)
+// Module 7892 (processColorStrings)
 import nDefault from "n" /* 686 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4958 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4958 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4965 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4965 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;

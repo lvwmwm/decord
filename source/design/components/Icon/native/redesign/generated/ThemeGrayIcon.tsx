@@ -1,14 +1,14 @@
-// Module ID: 16210
-// Function ID: 16211
+// Module ID: 16296
+// Function ID: 16297
 // Name: ThemeGrayIcon
-// Dependencies: [19, 21, 709, 4196, 16211, 2]
+// Dependencies: [19, 21, 709, 4196, 16297, 2]
 // Exports: ThemeGrayIcon
 
-// Module 16210 (ThemeGrayIcon)
+// Module 16296 (ThemeGrayIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 16211 */;
+import registerAsset from "registerAsset" /* 16297 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

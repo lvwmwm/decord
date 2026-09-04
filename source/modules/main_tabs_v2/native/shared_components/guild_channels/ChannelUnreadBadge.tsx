@@ -1,16 +1,16 @@
-// Module ID: 15871
-// Function ID: 15872
-// Dependencies: [19, 17, 10227, 4703, 21, 4478, 10228, 4936, 7624, 2]
+// Module ID: 15957
+// Function ID: 15958
+// Dependencies: [19, 17, 10047, 4710, 21, 4481, 10050, 4943, 7801, 2]
 
-// Module 15871
-import getFontScale from "getFontScale" /* 4936 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7624 */;
-import getLayoutStyles from "getLayoutStyles" /* 10228 */;
+// Module 15957
+import getFontScale from "getFontScale" /* 4943 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
+import getLayoutStyles from "getLayoutStyles" /* 10050 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10227 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10047 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -36,14 +36,14 @@ const memoResult = importAllResult.memo(function ChannelUnreadBadge(panelVariant
     const unreadBadge = layoutStyles.unreadBadge;
     obj = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(10228).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(10050).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj[0] = items;
     obj = { classic: null, size: null, badgeStyle: null };
     obj[0] = flag;
-    const tmp2Result = tmp2(10228);
+    const tmp2Result = tmp2(10050);
     const tmp9 = View;
     const _Math = Math;
-    obj[1] = tmp2(7624).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    obj[1] = tmp2(7801).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {

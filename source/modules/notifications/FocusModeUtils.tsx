@@ -1,14 +1,14 @@
-// Module ID: 10199
-// Function ID: 10200
+// Module ID: 10019
+// Function ID: 10020
 // Name: useFocusModeEnabled
-// Dependencies: [5232, 4133, 673, 4166, 1369, 1336, 695, 4858, 1233, 10200, 2]
+// Dependencies: [5240, 4133, 673, 4166, 1369, 1336, 695, 4865, 1233, 10020, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10199 (useFocusModeEnabled)
+// Module 10019 (useFocusModeEnabled)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import setDefault from "set" /* 4858 */;
-import closure_3 from "filterPlayingActivities" /* 5232 */;
+import setDefault from "set" /* 4865 */;
+import closure_3 from "filterPlayingActivities" /* 5240 */;
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4133 */;
 import ME from "ME" /* 673 */;
 

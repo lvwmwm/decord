@@ -1,10 +1,10 @@
-// Module ID: 9314
-// Function ID: 9315
+// Module ID: 9177
+// Function ID: 9178
 // Name: Permissions
 // Dependencies: [673, 503, 1233, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 9314 (Permissions)
+// Module 9177 (Permissions)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

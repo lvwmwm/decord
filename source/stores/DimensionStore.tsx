@@ -1,9 +1,9 @@
-// Module ID: 5224
-// Function ID: 5225
+// Module ID: 5232
+// Function ID: 5233
 // Name: percentageScrolled
 // Dependencies: [640, 586, 706, 2]
 
-// Module 5224 (percentageScrolled)
+// Module 5232 (percentageScrolled)
 import initializeDefault from "initialize" /* 586 */;
 import shallowEqualDefault from "shallowEqual" /* 640 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

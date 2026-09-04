@@ -1,12 +1,12 @@
-// Module ID: 7274
-// Function ID: 7275
+// Module ID: 7452
+// Function ID: 7453
 // Name: hasStringMatch
-// Dependencies: [32, 7275, 4643, 11, 4109, 4126, 2]
+// Dependencies: [32, 7453, 4646, 11, 4109, 4126, 2]
 // Exports: getDefaultSearchState
 
-// Module 7274 (hasStringMatch)
+// Module 7452 (hasStringMatch)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import isEqualDefault from "isEqual" /* 4643 */;
+import isEqualDefault from "isEqual" /* 4646 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import set from "set" /* 2 */;
 

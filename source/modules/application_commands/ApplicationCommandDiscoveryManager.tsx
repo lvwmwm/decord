@@ -1,10 +1,10 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12329
+// Function ID: 12330
 // Name: useCommandDiscoveryManager
 // Dependencies: [641, 702, 2]
 // Exports: updateInitialSectionId
 
-// Module 12197 (useCommandDiscoveryManager)
+// Module 12329 (useCommandDiscoveryManager)
 import set from "set" /* 2 */;
 import keys from "keys" /* 641 */;
 

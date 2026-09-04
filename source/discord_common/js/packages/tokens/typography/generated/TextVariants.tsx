@@ -1,9 +1,9 @@
-// Module ID: 4475
-// Function ID: 4476
+// Module ID: 4478
+// Function ID: 4479
 // Name: TEXT_VARIANT
 // Dependencies: [2]
 
-// Module 4475 (TEXT_VARIANT)
+// Module 4478 (TEXT_VARIANT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/typography/generated/TextVariants.tsx");

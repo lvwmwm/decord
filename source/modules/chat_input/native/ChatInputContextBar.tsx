@@ -1,25 +1,25 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12353
+// Function ID: 12354
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [19, 17, 4470, 4855, 1921, 673, 21, 1296, 4478, 709, 4197, 4474, 1233, 5077, 7725, 586, 4205, 4748, 8944, 7882, 12222, 4296, 4217, 4479, 11480, 695, 11478, 1219, 4747, 12223, 7532, 12007, 7602, 2]
+// Dependencies: [19, 17, 4473, 4862, 1921, 673, 21, 1296, 4481, 709, 4197, 4477, 1233, 5084, 6880, 586, 4206, 4755, 9105, 7892, 12354, 4299, 4218, 4482, 11601, 695, 11599, 1219, 4754, 12355, 7709, 12143, 7779, 2]
 
-// Module 12221 (ChatInputReplyBarNoAuthor)
+// Module 12353 (ChatInputReplyBarNoAuthor)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import registerAssetDefault from "registerAsset" /* 7725 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import registerAssetDefault from "registerAsset" /* 6880 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_7 from "handleChanged" /* 4855 */;
-import { DraftType } from "handleChanged" /* 4855 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_7 from "handleChanged" /* 4862 */;
+import { DraftType } from "handleChanged" /* 4862 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ChatInputReplyBarNoAuthor(onCancelReplying) {

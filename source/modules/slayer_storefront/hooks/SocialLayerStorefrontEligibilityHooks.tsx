@@ -1,18 +1,18 @@
-// Module ID: 10695
-// Function ID: 10696
+// Module ID: 8720
+// Function ID: 8721
 // Name: useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
-// Dependencies: [19, 9436, 4501, 7376, 1908, 4569, 6084, 586, 8631, 10696, 2]
+// Dependencies: [19, 8721, 4504, 7554, 1908, 4572, 7168, 586, 8271, 8722, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 10695 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
+// Module 8720 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "map" /* 9436 */;
-import closure_4 from "initialize" /* 4501 */;
-import closure_5 from "createUserWidgetFromServer" /* 7376 */;
+import closure_3 from "map" /* 8721 */;
+import closure_4 from "initialize" /* 4504 */;
+import closure_5 from "createUserWidgetFromServer" /* 7554 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "sortActivity" /* 4569 */;
-import closure_8 from "handleUserSettingsStoreUpdate" /* 6084 */;
+import closure_7 from "sortActivity" /* 4572 */;
+import closure_8 from "handleUserSettingsStoreUpdate" /* 7168 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");

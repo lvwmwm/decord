@@ -1,19 +1,19 @@
-// Module ID: 10092
-// Function ID: 10093
+// Module ID: 9912
+// Function ID: 9913
 // Name: handleInputModePress
-// Dependencies: [19, 17, 4529, 673, 21, 4478, 5995, 1233, 9807, 586, 10088, 5608, 4474, 6002, 10093, 2]
+// Dependencies: [19, 17, 4532, 673, 21, 4481, 7135, 1233, 9019, 586, 9908, 5560, 4477, 7141, 9913, 2]
 // Exports: default
 
-// Module 10092 (handleInputModePress)
+// Module 9912 (handleInputModePress)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 5995 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10093 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7135 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 9913 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
 import { InputModes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function handleInputModePress() {
@@ -27,14 +27,14 @@ function handleInputModePress() {
   const intl2 = getSystemLocale.intl;
   obj1[0] = intl2.string(getSystemLocale.t.Q8gkVL);
   obj1[1] = function onPress() {
-    callback(9807).setMode(constants.PUSH_TO_TALK);
+    callback(9019).setMode(constants.PUSH_TO_TALK);
   };
   const items = [obj1, ];
   const obj2 = { label: null, onPress: null };
   const intl3 = getSystemLocale.intl;
   obj2[0] = intl3.string(getSystemLocale.t.cHCEOJ);
   obj2[1] = function onPress() {
-    callback(9807).setMode(constants.VOICE_ACTIVITY);
+    callback(9019).setMode(constants.VOICE_ACTIVITY);
   };
   items[1] = obj2;
   obj[2] = items;
@@ -67,9 +67,9 @@ export default function UserSettingsVoiceInputOptions() {
     stringResult = intl3.string(tmp(1233).t.cHCEOJ);
   }
   obj1[3] = stringResult;
-  obj[1] = closure_6(inputMode(4474).Text, obj1);
+  obj[1] = closure_6(inputMode(4477).Text, obj1);
   obj[2] = handleInputModePress;
-  const items1 = [closure_6(inputMode(5608).TableRow, obj), ];
+  const items1 = [closure_6(inputMode(5560).TableRow, obj), ];
   let tmp4Result = null;
   if (inputMode !== InputModes.PUSH_TO_TALK) {
     const obj2 = { children: null };
@@ -82,7 +82,7 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { autoThreshold };
       return obj.setMode(inputMode, obj);
     };
-    const items2 = [tmp5(tmp(6002).TableSwitchRow, obj3), ];
+    const items2 = [tmp5(tmp(7141).TableSwitchRow, obj3), ];
     const obj4 = { label: null, subLabel: null };
     const intl6 = tmp(1233).intl;
     obj4[0] = intl6.string(tmp(1233).t["o+2oMK"]);
@@ -98,12 +98,12 @@ export default function UserSettingsVoiceInputOptions() {
     };
     obj5[1] = tmp5(VoiceSensitivityDefault, obj6);
     obj4[1] = tmp5(View, obj5);
-    items2[1] = tmp5(tmp(5608).TableRow, obj4);
+    items2[1] = tmp5(tmp(5560).TableRow, obj4);
     obj2[0] = items2;
     tmp4Result = tmp4(closure_7, obj2);
   }
   items1[1] = tmp4Result;
   obj[2] = items1;
-  return closure_8(inputMode(10088).UserSettingsTableRowGroup, obj);
+  return closure_8(inputMode(9908).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

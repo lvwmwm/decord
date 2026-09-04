@@ -1,15 +1,15 @@
-// Module ID: 9287
-// Function ID: 9288
+// Module ID: 12550
+// Function ID: 12551
 // Name: GuildIconPile
-// Dependencies: [19, 21, 6013, 9288, 9290, 8109, 9289, 2]
+// Dependencies: [19, 21, 5539, 10931, 12551, 8743, 10932, 2]
 // Exports: GuildIconPile
 
-// Module 9287 (GuildIconPile)
-import GuildIconSizes from "GuildIconSizes" /* 6013 */;
-import SolidCutout from "SolidCutout" /* 8109 */;
-import Pile from "Pile" /* 9288 */;
-import map from "map" /* 9289 */;
-import getListSummaryLabel from "getListSummaryLabel" /* 9290 */;
+// Module 12550 (GuildIconPile)
+import GuildIconSizes from "GuildIconSizes" /* 5539 */;
+import SolidCutout from "SolidCutout" /* 8743 */;
+import Pile from "Pile" /* 10931 */;
+import map from "map" /* 10932 */;
+import getListSummaryLabel from "getListSummaryLabel" /* 12551 */;
 import closure_2 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 

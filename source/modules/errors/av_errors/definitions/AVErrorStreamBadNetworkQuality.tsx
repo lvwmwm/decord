@@ -1,11 +1,11 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17761
+// Function ID: 17762
 // Name: AVErrorStreamBadNetworkQualityDefinition
-// Dependencies: [4568, 673, 9582, 17674, 1470, 2]
+// Dependencies: [4571, 673, 9039, 17754, 1394, 2]
 
-// Module 17681 (AVErrorStreamBadNetworkQualityDefinition)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import closure_2 from "initialize" /* 4568 */;
+// Module 17761 (AVErrorStreamBadNetworkQualityDefinition)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import closure_2 from "initialize" /* 4571 */;
 import { RTCConnectionQuality } from "ME" /* 673 */;
 
 require = arg1;
@@ -18,10 +18,10 @@ export const AVErrorStreamBadNetworkQualityDefinition = {
       let tmp = null;
       if (quality.getQuality(streamKey) === constants.BAD) {
         const obj = { type: null };
-        obj[0] = callback(9582).AVError.STREAM_BAD_NETWORK_QUALITY;
-        const merged = Object.assign(callback(17674).getStreamErrorContext(streamKey));
+        obj[0] = callback(9039).AVError.STREAM_BAD_NETWORK_QUALITY;
+        const merged = Object.assign(callback(17754).getStreamErrorContext(streamKey));
         tmp = obj;
-        const obj2 = callback(17674);
+        const obj2 = callback(17754);
       }
       return tmp;
     });

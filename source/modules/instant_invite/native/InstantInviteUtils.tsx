@@ -1,32 +1,32 @@
-// Module ID: 9935
-// Function ID: 9936
+// Module ID: 9749
+// Function ID: 9750
 // Name: showInstantInviteActionSheet
-// Dependencies: [7213, 1390, 1386, 9936, 1981, 4462, 4569, 1921, 8884, 7492, 9940, 673, 695, 7494, 9941, 9942, 4463, 4445, 8651, 4193, 7514, 5990, 4657, 38, 9938, 2]
+// Dependencies: [7391, 1390, 1386, 9750, 1981, 4465, 4572, 1921, 8669, 7669, 9754, 673, 695, 7671, 9755, 9756, 4466, 4448, 8291, 4193, 7691, 7130, 4660, 38, 9752, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
-// Module 9935 (showInstantInviteActionSheet)
+// Module 9749 (showInstantInviteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import readSnowflake from "readSnowflake" /* 4463 */;
-import sendSMS from "sendSMS" /* 4657 */;
-import _copy from "_copy" /* 5990 */;
-import _findPlayingActivity from "_findPlayingActivity" /* 7494 */;
-import getInviteURLDefault from "getInviteURL" /* 7514 */;
-import get_label from "get label" /* 9938 */;
-import _modDef9941 from "module_9941" /* 9941 */;
-import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 9942 */;
-import closure_3 from "handleGuildTemplateResolveSuccess" /* 7213 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import readSnowflake from "readSnowflake" /* 4466 */;
+import sendSMS from "sendSMS" /* 4660 */;
+import _copy from "_copy" /* 7130 */;
+import _findPlayingActivity from "_findPlayingActivity" /* 7671 */;
+import getInviteURLDefault from "getInviteURL" /* 7691 */;
+import get_label from "get label" /* 9752 */;
+import _modDef9755 from "module_9755" /* 9755 */;
+import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 9756 */;
+import closure_3 from "handleGuildTemplateResolveSuccess" /* 7391 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "updateWithLatestInvite" /* 9936 */;
+import closure_6 from "updateWithLatestInvite" /* 9750 */;
 import closure_7 from "comparator" /* 1981 */;
-import closure_8 from "updateInvite" /* 4462 */;
-import closure_9 from "sortActivity" /* 4569 */;
+import closure_8 from "updateInvite" /* 4465 */;
+import closure_9 from "sortActivity" /* 4572 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "getDisplayedInviteCode" /* 8884 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7492 */;
-import { IOS_COPY_TO_PASTEBOARD } from "SHARE_APPS_KEY" /* 9940 */;
+import closure_11 from "getDisplayedInviteCode" /* 8669 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7669 */;
+import { IOS_COPY_TO_PASTEBOARD } from "SHARE_APPS_KEY" /* 9754 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -91,7 +91,7 @@ function showInstantInviteActionSheet(channel, source) {
     tmp17 = null == code;
   }
   if (tmp17) {
-    tmpResult = tmp(9941);
+    tmpResult = tmp(9755);
     tmpResult.init(channel.getGuildId(), channel.id, obj);
   }
   obj1 = { channel, source: null, guildScheduledEventId: null, targetApplicationId: null, code: null, vanityURLCode: null, stackingBehavior: null };
@@ -183,10 +183,10 @@ export const showVanityUrlInviteActionSheet = function showVanityUrlInviteAction
   let obj = expandEventPropertiesDefault;
   obj = { type: "Vanity URL Invite", source: GUILD_SCHEDULED_EVENT };
   obj.track(constants.OPEN_POPOUT, obj);
-  _modDef9941.init(guild.id, channel.id, { skipCreateInvite: true });
+  _modDef9755.init(guild.id, channel.id, { skipCreateInvite: true });
   obj = { vanityURLCode: guild.vanityURLCode, channel, source: GUILD_SCHEDULED_EVENT, guildScheduledEventId: null, stackingBehavior: null };
   let prop;
-  const obj3 = _modDef9941;
+  const obj3 = _modDef9755;
   if (guildScheduledEventId != null) {
     prop = guildScheduledEventId.guildScheduledEventId;
   }
@@ -259,8 +259,8 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
       trackOptionClicked(code, channel, constants2.SHARE, ADD_FRIENDS_WIDGET);
     }
     const obj7 = expandEventPropertiesDefault;
-    tmp26(4445).hideAllActionSheets();
-    const tmp26Result = tmp26(4445);
+    tmp26(4448).hideAllActionSheets();
+    const tmp26Result = tmp26(4448);
     obj = { message: null, iOSOnlyShareCallback: null };
     obj[0] = intl;
     obj[1] = function iOSOnlyShareCallback(arg0, arr) {
@@ -276,8 +276,8 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
         const obj = callback(table[19]);
       }
     };
-    tmp21(8651).showShareActionSheet(obj, ADD_FRIENDS_WIDGET);
-    const tmp21Result = tmp21(8651);
+    tmp21(8291).showShareActionSheet(obj, ADD_FRIENDS_WIDGET);
+    const tmp21Result = tmp21(8291);
   }
 };
 export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
@@ -347,7 +347,7 @@ export const handlePressSettings = function handlePressSettings(channel, closure
   if (closure_3 == null) {
     str = "Instant Invite Action Sheet";
   }
-  _modDef9941.openSettings(guild_id, id, str, () => {
+  _modDef9755.openSettings(guild_id, id, str, () => {
     if (null != closure_1) {
       tmp();
     } else {
@@ -379,7 +379,7 @@ export const handleOpenInviteActionsheet = function handleOpenInviteActionsheet(
       obj = { type: "Vanity URL Invite", source: null };
       obj[1] = GUILD_HEADER;
       tmp4Result.track(constants.OPEN_POPOUT, obj);
-      tmp4Result = tmp4(9941);
+      tmp4Result = tmp4(9755);
       tmp4Result.init(guild.id, channel.id, { skipCreateInvite: true });
       obj = { vanityURLCode: null, channel: null, source: null, guildScheduledEventId: null, stackingBehavior: null };
       obj[0] = guild.vanityURLCode;
@@ -387,7 +387,7 @@ export const handleOpenInviteActionsheet = function handleOpenInviteActionsheet(
       obj[2] = GUILD_HEADER;
       obj[3] = undefined;
       obj[4] = undefined;
-      tmp4(9942)(obj);
+      tmp4(9756)(obj);
     }
   }
   obj1 = get_label;

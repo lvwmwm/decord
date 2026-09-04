@@ -1,14 +1,14 @@
-// Module ID: 6537
-// Function ID: 6538
+// Module ID: 5918
+// Function ID: 5919
 // Name: ExperimentalCustomUrlAbstractUI
-// Dependencies: [21, 5502, 6538, 2]
+// Dependencies: [21, 5542, 5919, 2]
 // Exports: ExperimentalCustomUrlAbstractUI
 
-// Module 6537 (ExperimentalCustomUrlAbstractUI)
+// Module 5918 (ExperimentalCustomUrlAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6538 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5919 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalCustomUrlAbstractUI.native.tsx");

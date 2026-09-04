@@ -1,14 +1,14 @@
-// Module ID: 17421
-// Function ID: 17422
+// Module ID: 17501
+// Function ID: 17502
 // Name: StickerPlusIcon
-// Dependencies: [19, 21, 709, 4196, 17422, 2]
+// Dependencies: [19, 21, 709, 4196, 17502, 2]
 // Exports: StickerPlusIcon
 
-// Module 17421 (StickerPlusIcon)
+// Module 17501 (StickerPlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 17422 */;
+import registerAsset from "registerAsset" /* 17502 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

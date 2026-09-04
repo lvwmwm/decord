@@ -1,9 +1,9 @@
-// Module ID: 17452
-// Function ID: 17453
+// Module ID: 17532
+// Function ID: 17533
 // Name: HOLOGRAPHIC_ROLE_COLORS
 // Dependencies: [2]
 
-// Module 17452 (HOLOGRAPHIC_ROLE_COLORS)
+// Module 17532 (HOLOGRAPHIC_ROLE_COLORS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/constants/EnhancedRoleColorConstants.tsx");

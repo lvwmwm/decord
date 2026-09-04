@@ -1,19 +1,19 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17654
+// Function ID: 17655
 // Name: ApplicationRejectedNotice
-// Dependencies: [19, 17, 1908, 673, 21, 4478, 586, 17550, 12019, 17523, 1233, 15053, 17564, 2]
+// Dependencies: [19, 17, 1908, 673, 21, 4481, 586, 17630, 12155, 17603, 1233, 15137, 17644, 2]
 // Exports: default
 
-// Module 17574 (ApplicationRejectedNotice)
+// Module 17654 (ApplicationRejectedNotice)
 import noopAll from "noop" /* 19 */;
-import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15053 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17550 */;
-import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17564 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15137 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17630 */;
+import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17644 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ApplicationRejectedNotice(guildId) {
@@ -33,16 +33,16 @@ function ApplicationRejectedNotice(guildId) {
   ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = useOnboardingMonetizationEnableFlowDefault(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: null };
-    let tmp9Result = tmp9(12019);
+    let tmp9Result = tmp9(12155);
     obj[0] = resubmissionError.getAnyErrorMessage();
     let tmp14 = callback(tmp9Result, obj);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: null };
     obj[0] = requestRejectedNoticeText;
-    tmp14 = callback(tmp9(17523), obj);
+    tmp14 = callback(tmp9(17603), obj);
   } else if (tmp13) {
     obj1 = { notice: null };
-    tmp9Result = tmp9(17523);
+    tmp9Result = tmp9(17603);
     const intl3 = tmp2(1233).intl;
     obj1[0] = intl3.string(tmp2(1233).t.MyJpJT);
     tmp14 = callback(tmp9Result, obj1);
@@ -53,22 +53,22 @@ function ApplicationRejectedNotice(guildId) {
     obj2[1] = intl2.string(tmp2(1233).t["YKw/NQ"]);
     obj2[2] = tmp12;
     obj2[3] = tmp11;
-    tmp14 = callback(tmp9(17523), obj2);
-    const tmp9Result1 = tmp9(17523);
+    tmp14 = callback(tmp9(17603), obj2);
+    const tmp9Result1 = tmp9(17603);
   } else if (true === hasItem1) {
     const obj3 = { notice: null };
     const intl = tmp2(1233).intl;
     obj3[0] = intl.string(tmp2(1233).t.e2g9sW);
-    tmp14 = callback(tmp9(17523), obj3);
-    const tmp9Result2 = tmp9(17523);
+    tmp14 = callback(tmp9(17603), obj3);
+    const tmp9Result2 = tmp9(17603);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj4 = { notice: null };
       const intl4 = tmp2(1233).intl;
       obj4[0] = intl4.string(tmp2(1233).t.rxI9sl);
-      tmp14 = callback(tmp9(17523), obj4);
-      const tmp9Result3 = tmp9(17523);
+      tmp14 = callback(tmp9(17603), obj4);
+      const tmp9Result3 = tmp9(17603);
     }
   }
   let tmp24 = null;

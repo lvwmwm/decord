@@ -1,16 +1,16 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 8169
+// Function ID: 8170
 // Name: useUserProfileColors
-// Dependencies: [4470, 502, 4413, 5984, 586, 4197, 709, 8131, 685, 2]
+// Dependencies: [4473, 502, 4416, 7124, 586, 4197, 709, 8160, 685, 2]
 // Exports: useUserProfileColors
 
-// Module 8549 (useUserProfileColors)
+// Module 8169 (useUserProfileColors)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 5984 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7124 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { ThemeTypes } from "sum" /* 502 */;
 
 require = arg1;
@@ -40,7 +40,7 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
     if (null != secondaryColor) {
       if (null != profileThemeValues) {
         ({ overlay, sectionBox, overlaySyncedWithUserTheme } = profileThemeValues);
-        let tmp3Result = tmp3(8131);
+        let tmp3Result = tmp3(8160);
         let tmp7 = overlay;
         if (stateFromStores) {
           tmp7 = overlaySyncedWithUserTheme;
@@ -50,12 +50,12 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
         const merged = Object.assign(obj);
         obj.containerBackground = tmp6;
         tmp3Result = tmp3(685);
-        obj.gradientSecondaryBackground = tmp3Result.int2hex(tmp3(8131).calculateOverlayedColor(secondaryColor, overlay));
-        const tmp3Result1 = tmp3(8131);
+        obj.gradientSecondaryBackground = tmp3Result.int2hex(tmp3(8160).calculateOverlayedColor(secondaryColor, overlay));
+        const tmp3Result1 = tmp3(8160);
         obj.avatarBackground = tmp3(685).int2hex(result);
         const tmp3Result2 = tmp3(685);
         const tmp3Result3 = tmp3(685);
-        obj.statusBackground = tmp3Result3.int2hex(tmp3(8131).calculateOverlayedColor(result, sectionBox));
+        obj.statusBackground = tmp3Result3.int2hex(tmp3(8160).calculateOverlayedColor(result, sectionBox));
         return obj;
       }
     }

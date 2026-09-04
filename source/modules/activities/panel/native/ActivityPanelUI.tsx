@@ -1,22 +1,22 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16938
+// Function ID: 16939
 // Name: renderActivityOrPIP
-// Dependencies: [19, 17, 9483, 21, 16853, 16859, 16873, 5949, 4204, 16874, 16851, 2]
+// Dependencies: [19, 17, 9434, 21, 16939, 16945, 16959, 7096, 4205, 16960, 16937, 2]
 // Exports: default
 
-// Module 16852 (renderActivityOrPIP)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16873 */;
+// Module 16938 (renderActivityOrPIP)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16959 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9434 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 16853;
+    let tmp4 = 16939;
   } else {
-    tmp4 = 16859;
+    tmp4 = 16945;
   }
   return closure_7(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }

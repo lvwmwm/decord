@@ -1,17 +1,17 @@
-// Module ID: 7859
-// Function ID: 7860
+// Module ID: 7869
+// Function ID: 7870
 // Name: handleMessageSendFailedAutomod
-// Dependencies: [1386, 4736, 673, 7589, 7860, 4738, 7263, 11, 586, 706, 2]
+// Dependencies: [1386, 4743, 673, 7766, 7870, 4745, 7441, 11, 586, 706, 2]
 
-// Module 7859 (handleMessageSendFailedAutomod)
+// Module 7869 (handleMessageSendFailedAutomod)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4738 */;
-import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7263 */;
-import items from "items" /* 7589 */;
-import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7860 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7441 */;
+import items from "items" /* 7766 */;
+import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7870 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reinjectEphemerals" /* 4736 */;
+import closure_4 from "reinjectEphemerals" /* 4743 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -137,13 +137,13 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(dispatcherDefault,
       const tmp = require;
       let result = getDecisionOutcomeFromMessage.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7263).isAutomodNotification(messageRecord);
+        let flag = tmp(7441).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7263);
+        const tmpResult = tmp(7441);
       }
       return result;
     }

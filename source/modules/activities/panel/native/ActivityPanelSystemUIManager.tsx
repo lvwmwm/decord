@@ -1,15 +1,15 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16960
+// Function ID: 16961
 // Name: BaseActivityPanelSystemUIManager
-// Dependencies: [19, 9483, 21, 16851, 1234, 9547, 9549, 2]
+// Dependencies: [19, 9434, 21, 16937, 1234, 9410, 9412, 2]
 
-// Module 16874 (BaseActivityPanelSystemUIManager)
+// Module 16960 (BaseActivityPanelSystemUIManager)
 import set from "set" /* 1234 */;
-import componentDidMountDefault from "componentDidMount" /* 9547 */;
-import pushStackEntryDefault from "pushStackEntry" /* 9549 */;
-import useActivityWebViewLockDefault from "useActivityWebViewLock" /* 16851 */;
+import componentDidMountDefault from "componentDidMount" /* 9410 */;
+import pushStackEntryDefault from "pushStackEntry" /* 9412 */;
+import useActivityWebViewLockDefault from "useActivityWebViewLock" /* 16937 */;
 import importAllResult from "noop" /* 19 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9434 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

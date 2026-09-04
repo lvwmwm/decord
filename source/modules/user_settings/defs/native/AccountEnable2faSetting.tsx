@@ -1,15 +1,15 @@
-// Module ID: 14624
-// Function ID: 14625
+// Module ID: 14705
+// Function ID: 14706
 // Name: pressable
-// Dependencies: [1921, 7896, 14574, 14625, 4858, 1233, 11292, 2]
+// Dependencies: [1921, 7906, 14606, 14706, 4865, 1233, 11400, 2]
 
-// Module 14624 (pressable)
+// Module 14705 (pressable)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault from "set" /* 4858 */;
-import useIs2FAEnabled from "useIs2FAEnabled" /* 14574 */;
-import _modDef14625 from "module_14625" /* 14625 */;
+import setDefault from "set" /* 4865 */;
+import useIs2FAEnabled from "useIs2FAEnabled" /* 14606 */;
+import _modDef14706 from "module_14706" /* 14706 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -26,7 +26,7 @@ createToggle = {
     }
     if (verified != null) {
       if (verified) {
-        let obj = _modDef14625;
+        let obj = _modDef14706;
         obj.open();
       }
     }

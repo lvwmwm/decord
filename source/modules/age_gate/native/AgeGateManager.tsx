@@ -1,16 +1,16 @@
-// Module ID: 17138
-// Function ID: 17139
+// Module ID: 17224
+// Function ID: 17225
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1386, 1980, 4299, 1218, 673, 5495, 4732, 4724, 17139, 2008, 688, 2]
+// Dependencies: [5, 1386, 1980, 4302, 1218, 673, 7058, 4739, 4731, 17225, 2008, 688, 2]
 
-// Module 17138 (handlePostConnectionOpen)
-import _modDef4724 from "module_4724" /* 4724 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4732 */;
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17224 (handlePostConnectionOpen)
+import _modDef4731 from "module_4731" /* 4731 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4739 */;
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "handleConnectionOpen" /* 4299 */;
+import closure_6 from "handleConnectionOpen" /* 4302 */;
 import result from "result" /* 1218 */;
 import ME from "ME" /* 673 */;
 
@@ -49,7 +49,7 @@ prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
 };
 prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   source = source.source;
-  _modDef4724.pushLazy(callback(function*() {
+  _modDef4731.pushLazy(callback(function*() {
     closure_1 = tmp5;
     closure_0 = tmp2;
     yield closure_1_0(paths[10])(paths[9], paths.paths);
@@ -63,7 +63,7 @@ prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   }), { source }, closure_7);
 };
 prototype["handleAgeGateModalClose"] = function handleAgeGateModalClose() {
-  _modDef4724.popWithKey(closure_7);
+  _modDef4731.popWithKey(closure_7);
 };
 prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
   guild = guild.guild;

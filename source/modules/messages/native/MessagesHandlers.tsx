@@ -1,45 +1,45 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11475
+// Function ID: 11476
 // Name: items
-// Dependencies: [109, 5, 32, 8734, 4519, 5964, 10189, 7281, 7999, 7459, 7350, 11206, 4122, 7414, 1215, 1386, 8460, 1991, 1908, 4462, 9450, 4736, 4120, 4569, 1980, 4299, 5232, 7593, 1921, 7854, 673, 7492, 1923, 8709, 1232, 5982, 11369, 11371, 2008, 11372, 11373, 11408, 11411, 7902, 4728, 5995, 1233, 7634, 10219, 9062, 4445, 9069, 7278, 11427, 11428, 4458, 7491, 11429, 11430, 11114, 11116, 10421, 1234, 7957, 6125, 10365, 7955, 11462, 9026, 8915, 11, 11464, 11465, 11205, 4746, 11468, 7892, 4446, 4447, 11490, 1219, 11478, 11551, 5386, 4701, 7263, 7889, 11552, 9406, 1398, 11553, 9458, 11557, 11558, 11559, 11560, 9491, 4190, 11561, 10068, 11296, 4463, 9685, 7514, 1623, 7454, 11562, 5401, 11137, 7484, 4466, 11167, 11168, 8668, 11588, 10797, 6196, 9047, 11591, 7644, 11607, 9294, 695, 4732, 6183, 8683, 5364, 9148, 6068, 8181, 7699, 8497, 4724, 8502, 11615, 7177, 6255, 11616, 10679, 11617, 8911, 500, 4194, 11619, 11115, 11620, 7211, 4740, 1954, 4858, 8037, 11622, 11624, 11628, 7922, 11629, 8688, 7938, 7936, 11630, 11634, 11661, 11662, 4489, 5990, 4193, 11673, 11674, 11675, 4675, 6195, 11676, 11677, 7355, 4734, 8701, 8703, 11679, 11525, 8587, 8585, 11712, 8410, 11714, 11730, 7888, 10882, 11431, 11731, 11732, 11733, 11491, 11734, 11737, 11740, 11741, 11747, 11750, 2]
+// Dependencies: [109, 5, 32, 8376, 4522, 7104, 10009, 7459, 8009, 7636, 7528, 11277, 4122, 7592, 1215, 1386, 11361, 1991, 1908, 4465, 11389, 4743, 4120, 4572, 1980, 4302, 5240, 7770, 1921, 7864, 673, 7669, 1923, 8349, 1232, 7122, 11476, 11478, 2008, 11479, 11480, 11515, 11518, 7912, 4735, 7135, 1233, 7811, 10039, 11144, 4448, 11149, 7456, 11545, 11546, 4461, 7668, 11547, 11548, 11184, 11186, 10332, 1234, 7967, 7209, 10191, 7965, 11581, 9114, 8110, 11, 11583, 11584, 11276, 4753, 11589, 7902, 4449, 4450, 11611, 1219, 11599, 11678, 5394, 4708, 7441, 7899, 11679, 11680, 1399, 11685, 11693, 11694, 11695, 11696, 11697, 9499, 4190, 11698, 9880, 11404, 4466, 9627, 7691, 1623, 7632, 11699, 5409, 11208, 7661, 4469, 11238, 11239, 8308, 11721, 10728, 7280, 9134, 11724, 7821, 11738, 9502, 695, 4739, 7267, 8323, 5372, 10223, 7152, 9242, 5576, 11365, 4731, 11370, 11746, 7356, 7320, 11747, 10590, 11748, 8698, 500, 4194, 11750, 11185, 11751, 7390, 4747, 1954, 4865, 8047, 11753, 11755, 11759, 7932, 11760, 8328, 7948, 7946, 11761, 11765, 11792, 11793, 4492, 7130, 4193, 11804, 11805, 11806, 4682, 7279, 11807, 11808, 7533, 4741, 8341, 8343, 11810, 11646, 8193, 8191, 11843, 9325, 11845, 11861, 7898, 10850, 11549, 11862, 11863, 11864, 11612, 11865, 11868, 11871, 11872, 11878, 11881, 2]
 
-// Module 11368 (items)
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
+// Module 11475 (items)
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import closure_7 from "asyncGeneratorStep" /* 5 */;
 import closure_8 from "_slicedToArray" /* 32 */;
-import closure_9 from "initialize" /* 8734 */;
-import closure_10 from "addApplication" /* 4519 */;
-import closure_11 from "set" /* 5964 */;
-import closure_12 from "computeAlertSettings" /* 10189 */;
-import closure_13 from "scheduledEventSort" /* 7281 */;
-import { isGuildScheduledEventActive as closure_14 } from "scheduledEventSort" /* 7281 */;
-import closure_15 from "getCurrentTime" /* 7999 */;
-import closure_16 from "initializeState" /* 7459 */;
-import closure_17 from "processMessage" /* 7350 */;
-import closure_18 from "handleQuickSwitcherUpdate" /* 11206 */;
+import closure_9 from "initialize" /* 8376 */;
+import closure_10 from "addApplication" /* 4522 */;
+import closure_11 from "set" /* 7104 */;
+import closure_12 from "computeAlertSettings" /* 10009 */;
+import closure_13 from "scheduledEventSort" /* 7459 */;
+import { isGuildScheduledEventActive as closure_14 } from "scheduledEventSort" /* 7459 */;
+import closure_15 from "getCurrentTime" /* 8009 */;
+import closure_16 from "initializeState" /* 7636 */;
+import closure_17 from "processMessage" /* 7528 */;
+import closure_18 from "handleQuickSwitcherUpdate" /* 11277 */;
 import closure_19 from "storeThread" /* 4122 */;
-import closure_20 from "recomputeAffinities" /* 7414 */;
+import closure_20 from "recomputeAffinities" /* 7592 */;
 import closure_21 from "fetchFingerprint" /* 1215 */;
 import closure_22 from "ensureGuildLoaded" /* 1386 */;
-import closure_23 from "updateGiftCode" /* 8460 */;
+import closure_23 from "updateGiftCode" /* 11361 */;
 import closure_24 from "trackCommunicationDisabled" /* 1991 */;
 import closure_25 from "createGuildRecordFromRust" /* 1908 */;
-import closure_26 from "updateInvite" /* 4462 */;
-import closure_27 from "updateActivities" /* 9450 */;
-import closure_28 from "reinjectEphemerals" /* 4736 */;
+import closure_26 from "updateInvite" /* 4465 */;
+import closure_27 from "updateActivities" /* 11389 */;
+import closure_28 from "reinjectEphemerals" /* 4743 */;
 import closure_29 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_30 from "sortActivity" /* 4569 */;
+import closure_30 from "sortActivity" /* 4572 */;
 import closure_31 from "handleConnectionOpen" /* 1980 */;
-import closure_32 from "handleConnectionOpen" /* 4299 */;
-import closure_33 from "filterPlayingActivities" /* 5232 */;
-import closure_34 from "initialize" /* 7593 */;
+import closure_32 from "handleConnectionOpen" /* 4302 */;
+import closure_33 from "filterPlayingActivities" /* 5240 */;
+import closure_34 from "initialize" /* 7770 */;
 import closure_35 from "mergeGuildAvatar" /* 1921 */;
-import { SeparatorAction } from "Changeset" /* 7854 */;
+import { SeparatorAction } from "Changeset" /* 7864 */;
 import ME from "ME" /* 673 */;
-import { InviteTypes } from "InviteSendStates" /* 7492 */;
+import { InviteTypes } from "InviteSendStates" /* 7669 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
-import { SafetySystemNotificationCtaType as closure_61 } from "SafetyHubView" /* 8709 */;
+import { SafetySystemNotificationCtaType as closure_61 } from "SafetyHubView" /* 8349 */;
 import { OpenThreadAnalyticsLocations as closure_62 } from "AbortCodes" /* 1232 */;
 
 const require = arg1;
@@ -2289,25 +2289,25 @@ class MessagesHandlers {
                 closure_1 = tmp2;
                 isReveal = undefined;
                 closure_1 = undefined;
-                const nativeSyntheticEventData = callback(11372).getNativeSyntheticEventData(isReveal);
+                const nativeSyntheticEventData = callback(11479).getNativeSyntheticEventData(isReveal);
                 ({ messageId, channelId, isReveal } = nativeSyntheticEventData);
                 ({ attachmentId, embedId } = nativeSyntheticEventData);
-                const obj10 = callback(11372);
+                const obj10 = callback(11479);
                 if (isReveal) {
                   if (obj11.shouldAgeVerifyForExplicitMedia()) {
                     dependencyMap = 1;
                     c4 = 1;
                     obj1 = { value: null, done: false };
-                    obj1[0] = callback(4734).maybePerformReactiveCheck();
+                    obj1[0] = callback(4741).maybePerformReactiveCheck();
                     return obj1;
                   }
                 }
-                let obj3 = callback(7355);
+                let obj3 = callback(7533);
                 const obj2 = { obscure: null };
                 obj2[0] = isReveal;
                 const result = obj3.trackToggleMediaObscurityV2(obj2);
                 c4 = 3;
-                obj11 = callback(7355);
+                obj11 = callback(7533);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -2320,9 +2320,9 @@ class MessagesHandlers {
                 reactiveCheckPassed = closure_1_9.getReactiveCheckPassed();
               }
               if (!reactiveCheckPassed) {
-                obj = closure_1_1(8701);
+                obj = closure_1_1(8341);
                 obj3 = { entryPoint: null };
-                obj3[0] = callback(8703).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+                obj3[0] = callback(8343).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
                 const result1 = obj.showAgeVerificationGetStartedModal(obj3);
               }
             }

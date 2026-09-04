@@ -1,16 +1,16 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11462
+// Function ID: 11463
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4519, 4506, 11355, 8127, 5963, 8053, 38, 8060, 1954, 8050, 6156, 2]
+// Dependencies: [32, 5, 19, 4522, 4509, 8958, 8112, 7103, 8063, 38, 8070, 1954, 8060, 7240, 2]
 // Exports: default
 
-// Module 11354 (fetchColors)
+// Module 11462 (fetchColors)
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "addApplication" /* 4519 */;
-import { ImageSizes } from "items3" /* 4506 */;
+import closure_6 from "addApplication" /* 4522 */;
+import { ImageSizes } from "items3" /* 4509 */;
 
 require = arg1;
 function fetchColors(play) {
@@ -417,7 +417,7 @@ function _fetchTopArtistContentParts() {
             } else if ("media" in lib.extra) {
               const image_url = lib.extra.media.image_url;
               v0(38)(null != image_url, "missing image url for top artist");
-              obj1 = lib(8053);
+              obj1 = lib(8063);
               dependencyMap = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -517,7 +517,7 @@ function _loadContentEntryParts() {
                       if (closure_1_2.type === arr(closure_1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = closure_1_4(/* F125271 */ function() { ... });
+                          const tmp = closure_1_4(/* F125617 */ function() { ... });
                           closure_1 = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {
@@ -737,7 +737,7 @@ function isMessageRenderable(arg0) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
     if (nextResult.type === PermissionOverwriteType.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8050);
+      let tmp3Result = tmp3(8060);
       let obj = { component: null, message: null };
       obj = { contentInventoryEntry: null };
       let tmp5 = nextResult;
@@ -773,7 +773,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
   closure_6 = tmp7[1];
-  let obj = _require(8053);
+  let obj = _require(8063);
   _require = undefined;
   const colorStore = obj.useColorStore((palette) => palette.palette);
   _require = callback((arg0, arg1) => {

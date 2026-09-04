@@ -1,9 +1,9 @@
-// Module ID: 4411
-// Function ID: 4412
+// Module ID: 4414
+// Function ID: 4415
 // Name: validateSavedTheme
 // Dependencies: [1304, 1205, 586, 706, 2]
 
-// Module 4411 (validateSavedTheme)
+// Module 4414 (validateSavedTheme)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

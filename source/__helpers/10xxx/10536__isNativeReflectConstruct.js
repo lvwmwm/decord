@@ -1,18 +1,18 @@
 // Module ID: 10536
 // Function ID: 10537
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10474, 10457]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10355, 10375]
 
 // Module 10536 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
-import now from "now" /* 10474 */;
-import PTCasualDateParser from "_classCallCheck" /* 41 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10375 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_5 from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-let self = this;
+const ENTimeExpressionParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,123 +32,94 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let __setModuleDefault = self;
-  if (self) {
-    __setModuleDefault = self.__setModuleDefault;
+class ENTimeExpressionParser {
+  constructor(arg0) {
+    self = this;
+    tmp = closure_2(this, ENTimeExpressionParser);
+    items = [];
+    items[0] = global;
+    tmp2 = closure_4;
+    obj = closure_4(ENTimeExpressionParser);
+    tmp3 = closure_3;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    return tmp3(self, constructResult);
   }
-  if (__setModuleDefault) {
-    let fn = self;
-    if (self) {
-      fn = self.__importStar;
-    }
-    if (!fn) {
-      function u(arg0) {
-        let fn = Object.getOwnPropertyNames;
-        if (!fn) {
-          fn = (obj) => {
-            const items = [];
-            for (const key10005 in arg0) {
-              let tmp2 = key10005;
-              let _Object = Object;
-              let call = hasOwnProperty.call;
-              if (typeof call === "unknown") {
-                let hasOwnPropertyResult = hasOwnProperty(key10005);
-              } else {
-                hasOwnPropertyResult = call(arg0, key10005);
-              }
-              if (!hasOwnPropertyResult) {
-                continue;
-              } else {
-                items[items.length] = key10005;
-                continue;
-              }
-              continue;
-            }
-            return items;
-          };
-        }
-        return fn(arg0);
-      }
-      fn = (__esModule) => {
-        if (__esModule) {
-          if (__esModule.__esModule) {
-            return __esModule;
-          }
-        }
-        const obj = {};
-        if (null != __esModule) {
-          const arr = u(__esModule);
-          for (let num = 0; num < arr.length; num = num + 1) {
-            let tmp2 = num;
-            if ("default" !== arr[num]) {
-              let tmp3 = self2;
-              let tmp4 = self2(obj, __esModule, arr[num]);
-            }
-          }
-        }
-        __setModuleDefault(obj, __esModule);
-        return obj;
-      };
-    }
-    const _Object3 = Object;
-    let closure_7 = fn(now);
-    class PTCasualDateParser {
-      constructor() {
-        self = this;
-        tmp = PTCasualDateParser(this, PTCasualDateParser);
-        tmp2 = closure_2;
-        obj = closure_2(PTCasualDateParser);
-        tmp3 = closure_1;
-        if (_isNativeReflectConstruct()) {
-          tmp7 = globalThis;
-          _Reflect = Reflect;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-        } else {
-          tmp4 = arguments;
-          tmp5 = arguments;
-          constructResult = obj(...arguments);
-        }
-        return tmp3(self, constructResult);
-      }
-    }
-    _inherits(PTCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-    let obj = { key: "innerPattern", value: null };
-    obj[1] = function innerPattern(arg0) {
-      return /(agora|hoje|amanha|amanhã|ontem)(?=\W|$)/i;
-    };
-    let items = [obj, ];
-    obj = { key: "innerExtract", value: null };
-    obj[1] = function innerExtract(reference) {
-      const formatted = arg1[0].toLowerCase();
-      if ("agora" === formatted) {
-        return closure_7.now(reference.reference);
-      } else if ("hoje" === formatted) {
-        return closure_7.today(reference.reference);
-      } else {
-        if ("amanha" !== formatted) {
-          if ("amanh\u00E3" !== formatted) {
-            if ("ontem" === formatted) {
-              return closure_7.yesterday(reference.reference);
-            } else {
-              return tmp2;
-            }
-          }
-        }
-        return closure_7.tomorrow(reference.reference);
-      }
-      const str = arg1[0];
-    };
-    items[1] = obj;
-    exports.default = _createClass(PTCasualDateParser, items);
-  } else {
-    const _Object2 = Object;
-  }
-} else {
-  let _Object = Object;
 }
+_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+let items = [
+  {
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
+    }
+  },
+  {
+    key: "primaryPrefix",
+    value: function primaryPrefix() {
+      return "(?:(?:alle|dalle)\\s*)??";
+    }
+  },
+  {
+    key: "primarySuffix",
+    value: function primarySuffix() {
+      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      const self = this;
+      const tmp = callback3(callback2(self.prototype), "extractPrimaryTimeComponents", this);
+      closure_1 = tmp;
+      let fn = tmp;
+      if (typeof tmp === "function") {
+        fn = (items) => callback.apply(self, items);
+      }
+      const items = [arg0, arg1];
+      const fnResult = fn(items);
+      if (fnResult) {
+        const first = arg1[0];
+        if (first.endsWith("sera")) {
+          let value = fnResult.get("hour");
+          if (value >= 6) {
+            if (value < 12) {
+              fnResult.assign("hour", fnResult.get("hour") + 12);
+              fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.PM);
+            }
+          }
+          if (value < 6) {
+            fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.AM);
+          }
+        }
+        const first1 = arg1[0];
+        if (first1.endsWith("pomeriggio")) {
+          fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.PM);
+          value = fnResult.get("hour");
+          let tmp14 = value >= 0;
+          if (tmp14) {
+            tmp14 = value <= 6;
+          }
+          if (tmp14) {
+            fnResult.assign("hour", fnResult.get("hour") + 12);
+          }
+        }
+        const first2 = arg1[0];
+        if (first2.endsWith("mattina")) {
+          fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.AM);
+          if (fnResult.get("hour") < 12) {
+            fnResult.assign("hour", fnResult.get("hour"));
+          }
+        }
+      }
+      return fnResult;
+    }
+  }
+];
+
+export default _createClass(ENTimeExpressionParser, items);

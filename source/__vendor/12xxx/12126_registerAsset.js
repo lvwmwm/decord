@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "f81aa6122025b21f0644342f00a50152", name: "img_gaming", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 128, height: 128, scales: [2, 3], hash: "153e24032a5a8790888aef41caaf4b2c", name: "app_dock_not_found_dark", type: "png" });

@@ -1,23 +1,23 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8074
+// Function ID: 8075
 // Name: items
-// Dependencies: [4558, 7397, 1233, 8065, 8066, 8067, 8068, 8069, 8070, 8071, 8072, 8073, 8074, 2]
+// Dependencies: [4561, 7575, 1233, 8075, 8076, 8077, 8078, 8079, 8080, 8081, 8082, 8083, 8084, 2]
 // Exports: getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString
 
-// Module 8064 (items)
+// Module 8074 (items)
 import set from "set" /* 2 */;
-import sleep from "sleep" /* 4558 */;
-import getDurationString from "getDurationString" /* 7397 */;
-import metadataDefault from "metadata" /* 8065 */;
-import metadataDefault2 from "metadata" /* 8066 */;
-import metadataDefault3 from "metadata" /* 8067 */;
-import metadataDefault4 from "metadata" /* 8068 */;
-import metadataDefault5 from "metadata" /* 8069 */;
-import metadataDefault6 from "metadata" /* 8070 */;
-import metadataDefault7 from "metadata" /* 8071 */;
-import metadataDefault8 from "metadata" /* 8072 */;
-import metadataDefault9 from "metadata" /* 8073 */;
-import metadataDefault10 from "metadata" /* 8074 */;
+import sleep from "sleep" /* 4561 */;
+import getDurationString from "getDurationString" /* 7575 */;
+import metadataDefault from "metadata" /* 8075 */;
+import metadataDefault2 from "metadata" /* 8076 */;
+import metadataDefault3 from "metadata" /* 8077 */;
+import metadataDefault4 from "metadata" /* 8078 */;
+import metadataDefault5 from "metadata" /* 8079 */;
+import metadataDefault6 from "metadata" /* 8080 */;
+import metadataDefault7 from "metadata" /* 8081 */;
+import metadataDefault8 from "metadata" /* 8082 */;
+import metadataDefault9 from "metadata" /* 8083 */;
+import metadataDefault10 from "metadata" /* 8084 */;
 
 const items = [sleep.TimeUnits.HOURS, sleep.TimeUnits.MINUTES];
 const result = set.fileFinishedImporting("modules/checkpoint/CheckpointUtils.tsx");
@@ -33,7 +33,7 @@ export const getVoiceDurationString = function getVoiceDurationString(totalVoice
   } else {
     const _Math = Math;
     const rounded = Math.round(time);
-    if (unit === tmp(4558).TimeUnits.HOURS) {
+    if (unit === tmp(4561).TimeUnits.HOURS) {
       const intl2 = tmp(1233).intl;
       obj = { hours: null };
       obj[0] = rounded;

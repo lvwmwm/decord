@@ -1,16 +1,16 @@
-// Module ID: 4297
-// Function ID: 4298
+// Module ID: 4300
+// Function ID: 4301
 // Name: reset
-// Dependencies: [1302, 1301, 1303, 1339, 1390, 1386, 1921, 1347, 1304, 4298, 1372, 4322, 4139, 4166, 1365, 4325, 586, 1346, 706, 2]
+// Dependencies: [1302, 1301, 1303, 1339, 1390, 1386, 1921, 1347, 1304, 4301, 1372, 4325, 4139, 4166, 1365, 4328, 586, 1346, 706, 2]
 
-// Module 4297 (reset)
+// Module 4300 (reset)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getThemeForColor from "getThemeForColor" /* 1346 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
 import closure_5 from "initialize" /* 1302 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
 import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
@@ -72,7 +72,7 @@ function handleUserSettingsProtoStoreUpdate() {
     result = tmpResult.isPerModeThemingActive();
   }
   if (!result) {
-    tmpResult = tmp(4325);
+    tmpResult = tmp(4328);
     tmpResult.setUseSystemTheme(SystemThemeState.OFF);
   }
   if (null != backgroundGradientPresetId) {
@@ -241,7 +241,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(dispatcherDe
               c15 = true;
             }
           }
-          tmp6Result = tmp6(4322);
+          tmp6Result = tmp6(4325);
         }
         obj2 = UNSAFE_isDismissibleContentDismissed;
         tmp6 = require;

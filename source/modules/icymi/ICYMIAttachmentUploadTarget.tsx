@@ -1,11 +1,11 @@
-// Module ID: 5130
-// Function ID: 5131
+// Module ID: 5138
+// Function ID: 5139
 // Name: getCreateAttachmentURL
-// Dependencies: [673, 5083, 2]
+// Dependencies: [673, 5090, 2]
 
-// Module 5130 (getCreateAttachmentURL)
+// Module 5138 (getCreateAttachmentURL)
 import set from "set" /* 2 */;
-import items from "items" /* 5083 */;
+import items from "items" /* 5090 */;
 import ME from "ME" /* 673 */;
 
 ({ Endpoints: obj1, MAX_ATTACHMENT_SIZE: c3, MAX_UPLOAD_COUNT: c4 } = ME);
@@ -26,7 +26,7 @@ prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_4;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return items.MAX_TOTAL_ATTACHMENT_SIZE;
+  return items.getMaxTotalAttachmentSize({ location: "ICYMIAttachmentUploadTarget" });
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {

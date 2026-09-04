@@ -1,31 +1,31 @@
-// Module ID: 7934
-// Function ID: 7935
+// Module ID: 7944
+// Function ID: 7945
 // Name: createAutoModerationActionSystemMessage
-// Dependencies: [17, 1386, 1991, 4120, 4130, 1921, 673, 12, 1362, 709, 7857, 7263, 4747, 1233, 7912, 4074, 7935, 7936, 1430, 7939, 7722, 1433, 7940, 5986, 7885, 4674, 4109, 4163, 7941, 7942, 2]
+// Dependencies: [17, 1386, 1991, 4120, 4130, 1921, 673, 12, 1362, 709, 7867, 7441, 4754, 1233, 7922, 4074, 7945, 7946, 1431, 7949, 6552, 1434, 7950, 7126, 7895, 4681, 4109, 4163, 7951, 7952, 2]
 // Exports: createAutoModerationActionSystemMessage
 
-// Module 7934 (createAutoModerationActionSystemMessage)
+// Module 7944 (createAutoModerationActionSystemMessage)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getAvatarURL from "getAvatarURL" /* 1430 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
 import hooksDefault from "hooks" /* 4074 */;
 import isCommunicationDisabled from "isCommunicationDisabled" /* 4109 */;
 import resetCache from "resetCache" /* 4163 */;
-import computeChannelName from "computeChannelName" /* 4674 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4747 */;
-import useRoleIcon from "useRoleIcon" /* 5986 */;
-import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7263 */;
-import registerAssetDefault from "registerAsset" /* 7722 */;
-import processColorOrThrow from "processColorOrThrow" /* 7857 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7912 */;
-import AutomodRaidAlertTypes from "AutomodRaidAlertTypes" /* 7935 */;
-import DATE_CONFIG from "DATE_CONFIG" /* 7936 */;
-import registerAssetDefault2 from "registerAsset" /* 7940 */;
+import computeChannelName from "computeChannelName" /* 4681 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4754 */;
+import registerAssetDefault from "registerAsset" /* 6552 */;
+import useRoleIcon from "useRoleIcon" /* 7126 */;
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7441 */;
+import processColorOrThrow from "processColorOrThrow" /* 7867 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7922 */;
+import AutomodRaidAlertTypes from "AutomodRaidAlertTypes" /* 7945 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 7946 */;
+import registerAssetDefault2 from "registerAsset" /* 7950 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
@@ -242,7 +242,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       let getRaidAlertResolveCTAText = closure_4.resolveAssetSource;
       let internal6 = getAvatarURL;
       let intl9 = internal6.makeSource;
-      obj5[6] = getRaidAlertResolveCTAText(intl9(importDefault(tmp42 ? 7939 : 7722))).uri;
+      obj5[6] = getRaidAlertResolveCTAText(intl9(importDefault(tmp42 ? 7949 : 6552))).uri;
       const tmpResult16 = processColorOrThrow;
       internal6 = tmp45(709).internal;
       obj5[7] = processColorOrThrow.processColorOrThrow(internal6.resolveSemanticColor(theme, ThemesDefault.colors.TEXT_FEEDBACK_CRITICAL));
@@ -366,7 +366,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       }
       obj9[6] = formatToPlainStringResult1;
       const tmpResult25 = resetCache;
-      obj9[7] = closure_4.resolveAssetSource(getAvatarURL.makeSource(tmp57(result1 ? 7941 : 7942))).uri;
+      obj9[7] = closure_4.resolveAssetSource(getAvatarURL.makeSource(tmp57(result1 ? 7951 : 7952))).uri;
       const intl16 = getSystemLocale.intl;
       const string2 = intl16.string;
       const t3 = getSystemLocale.t;

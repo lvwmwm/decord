@@ -1,16 +1,16 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 7162
+// Function ID: 7163
 // Name: useCanSeeOnboardingHome
-// Dependencies: [1983, 1386, 1908, 4708, 673, 1393, 6079, 644, 1911, 5483, 4710, 2]
+// Dependencies: [1983, 1386, 1908, 4715, 673, 1393, 7163, 644, 1911, 7046, 4717, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 6078 (useCanSeeOnboardingHome)
+// Module 7162 (useCanSeeOnboardingHome)
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6079 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7163 */;
 import closure_3 from "initialize" /* 1983 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleSettingsLoadSuccess" /* 4708 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 4715 */;
 import ME from "ME" /* 673 */;
 import { ChannelFlags } from "set" /* 1393 */;
 
@@ -117,7 +117,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          let result = tmp14(5483).isGuildOnboardingSettingsAvailable(id);
+          let result = tmp14(7046).isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

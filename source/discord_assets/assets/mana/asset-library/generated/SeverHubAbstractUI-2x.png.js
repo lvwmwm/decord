@@ -1,9 +1,9 @@
-// Module ID: 7010
-// Function ID: 7011
+// Module ID: 6391
+// Function ID: 6392
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7010 (metadata)
+// Module 6391 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SeverHubAbstractUI-2x.png.js");

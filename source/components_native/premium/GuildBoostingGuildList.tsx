@@ -1,20 +1,20 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13465
+// Function ID: 13466
 // Name: GuildBoostingGuildListItem
-// Dependencies: [19, 17, 1908, 5390, 673, 21, 4478, 709, 4413, 586, 4384, 9085, 6196, 7774, 6013, 4474, 10428, 1233, 13401, 2]
+// Dependencies: [19, 17, 1908, 5398, 673, 21, 4481, 709, 4416, 586, 4387, 8980, 7280, 6930, 5539, 4477, 10339, 1233, 13434, 2]
 // Exports: default
 
-// Module 13432 (GuildBoostingGuildListItem)
+// Module 13465 (GuildBoostingGuildListItem)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4384 */;
+import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4387 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "insertUnsortedGuilds" /* 5390 */;
+import closure_6 from "insertUnsortedGuilds" /* 5398 */;
 import { NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING as closure_7 } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function GuildBoostingGuildListItem(guildId) {
@@ -36,22 +36,22 @@ function GuildBoostingGuildListItem(guildId) {
       const obj = guildId(closure_1_2[12]);
       closure_1_1(closure_1_2[13]).close();
     };
-    let tmp2Result = tmp2(9085);
+    let tmp2Result = tmp2(8980);
     obj = { guild: null, size: null, style: null, selected: false };
     obj[0] = stateFromStores;
-    tmp2Result = tmp2(6013);
-    obj[1] = tmp5(6013).GuildIconSizes.LARGE;
+    tmp2Result = tmp2(5539);
+    obj[1] = tmp5(5539).GuildIconSizes.LARGE;
     obj[2] = tmp.guildIcon;
     const items1 = [callback(tmp2Result, obj), , ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.guildCardDescription;
     const obj2 = { variant: "text-md/bold", children: null };
     obj2[1] = stateFromStores.name;
-    const items2 = [callback(tmp5(4474).Text, obj2), ];
+    const items2 = [callback(tmp5(4477).Text, obj2), ];
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.subscriptionInfo;
     const obj4 = { source: null, style: null, resizeMode: "contain", resizeMethod: "resize" };
-    obj4[0] = tmp2(10428);
+    obj4[0] = tmp2(10339);
     obj4[1] = tmp.premiumGuildImage;
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium", children: null };
@@ -59,7 +59,7 @@ function GuildBoostingGuildListItem(guildId) {
     const obj6 = { subscriberCount: null };
     obj6[0] = tmp8;
     obj5[1] = intl.format(tmp5(1233).t.If4iTS, obj6);
-    items3[1] = callback(tmp5(4474).Text, obj5);
+    items3[1] = callback(tmp5(4477).Text, obj5);
     obj3[1] = items3;
     items2[1] = callback2(closure_3, obj3);
     obj1[1] = items2;
@@ -67,7 +67,7 @@ function GuildBoostingGuildListItem(guildId) {
     const obj7 = { guild: null, theme: null };
     obj7[0] = stateFromStores;
     obj7[1] = tmp4;
-    items1[2] = callback(tmp2(13401), obj7);
+    items1[2] = callback(tmp2(13434), obj7);
     obj[4] = items1;
     tmp9 = callback2(tmp2Result, obj);
   }

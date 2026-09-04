@@ -1,13 +1,13 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14402
+// Function ID: 14403
 // Name: VoiceCapabilities
-// Dependencies: [14371, 8629, 14372, 2]
+// Dependencies: [14403, 8269, 14404, 2]
 
-// Module 14370 (VoiceCapabilities)
+// Module 14402 (VoiceCapabilities)
 import set from "set" /* 2 */;
-import set2 from "set" /* 8629 */;
-import RPCCommands from "RPCCommands" /* 14371 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14372 */;
+import set2 from "set" /* 8269 */;
+import RPCCommands from "RPCCommands" /* 14403 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14404 */;
 
 function VoiceCapabilities(boolean) {
   let obj = { available: boolean.boolean().required(), connected: null, participant_updates: null, binary_speaking: null, spatial: null };

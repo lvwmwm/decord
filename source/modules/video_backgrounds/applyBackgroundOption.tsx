@@ -1,17 +1,17 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9024
+// Function ID: 9025
 // Name: _getFilterBlob
-// Dependencies: [5, 1921, 9813, 7771, 673, 9815, 4579, 9818, 1430, 9823, 9814, 9817, 9824, 2]
+// Dependencies: [5, 1921, 9025, 6927, 673, 9027, 4582, 9030, 1431, 9035, 9026, 9029, 9036, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9812 (_getFilterBlob)
-import _fetchVideoFilterAssets from "_fetchVideoFilterAssets" /* 9815 */;
-import getLastUsedVideoBackgroundOption from "getLastUsedVideoBackgroundOption" /* 9817 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9824 */;
+// Module 9024 (_getFilterBlob)
+import _fetchVideoFilterAssets from "_fetchVideoFilterAssets" /* 9027 */;
+import getLastUsedVideoBackgroundOption from "getLastUsedVideoBackgroundOption" /* 9029 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9036 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "handleSyncedStoresUpdate" /* 9813 */;
-import VideoFilterType from "VideoFilterType" /* 7771 */;
+import closure_5 from "handleSyncedStoresUpdate" /* 9025 */;
+import VideoFilterType from "VideoFilterType" /* 6927 */;
 import { NOOP } from "ME" /* 673 */;
 
 require = arg1;
@@ -98,31 +98,31 @@ function _applyBackgroundOption() {
               c5 = undefined;
               closure_3 = false;
               if (null == source) {
-                closure_1_10(tmp59, tmp60, callback(4579).FilterSettingsGraph.NONE);
+                closure_1_10(tmp59, tmp60, callback(4582).FilterSettingsGraph.NONE);
                 c9 = 3;
                 return { value: "HermesInternal", done: null };
               } else if (tmp61 === c7) {
-                closure_1_10(tmp59, tmp60, callback(4579).FilterSettingsGraph.BACKGROUND_BLUR);
+                closure_1_10(tmp59, tmp60, callback(4582).FilterSettingsGraph.BACKGROUND_BLUR);
                 c9 = 3;
                 return { value: "HermesInternal", done: null };
               } else {
                 if (typeof tmp61 !== "string") {
                   if (typeof tmp61 !== "number") {
                     const asset = tmp61.asset;
-                    let isAnimatedIconHashResult = callback(1430).isAnimatedIconHash(asset);
+                    let isAnimatedIconHashResult = callback(1431).isAnimatedIconHash(asset);
                     if (!isAnimatedIconHashResult) {
-                      let obj3 = callback(1430);
+                      let obj3 = callback(1431);
                       isAnimatedIconHashResult = obj3.isVideoAssetHash(asset);
                     }
                     closure_3 = isAnimatedIconHashResult;
-                    let obj4 = callback(1430);
+                    let obj4 = callback(1431);
                     obj1 = { userId: null, assetId: null, assetHash: null, size: null };
                     ({ user_id: obj6[0], id: obj6[1] } = tmp61);
                     obj1[2] = asset;
                     obj1[3] = closure_1_6.width;
                     let videoFilterAssetURL = obj4.getVideoFilterAssetURL(obj1);
                     source = videoFilterAssetURL;
-                    const obj11 = callback(1430);
+                    const obj11 = callback(1431);
                   }
                   if (null != videoFilterAssetURL) {
                     c7 = 1;
@@ -153,12 +153,12 @@ function _applyBackgroundOption() {
                       c8 = 2;
                       c9 = 1;
                       obj3 = { value: null, done: false };
-                      obj3[0] = callback2(9823)(videoFilterAssetURL);
+                      obj3[0] = callback2(9035)(videoFilterAssetURL);
                       return obj3;
                     }
                   }
                 }
-                const tmp24 = callback2(9818)()[tmp61];
+                const tmp24 = callback2(9030)()[tmp61];
                 const isVideo = tmp24.isVideo;
                 closure_3 = isVideo;
                 if (isVideo == null) {

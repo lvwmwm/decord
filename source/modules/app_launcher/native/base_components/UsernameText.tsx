@@ -1,13 +1,13 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 12114
+// Function ID: 12115
 // Name: UsernameText
-// Dependencies: [19, 21, 4673, 4474, 2]
+// Dependencies: [19, 21, 4680, 4477, 2]
 // Exports: default
 
-// Module 11981 (UsernameText)
+// Module 12114 (UsernameText)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4474 */;
-import getNickname from "getNickname" /* 4673 */;
+import Text from "Text" /* 4477 */;
+import getNickname from "getNickname" /* 4680 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -37,7 +37,7 @@ export default function UsernameText(color) {
     obj.color = "text-muted";
     const items1 = ["#", user.discriminator];
     obj.children = items1;
-    items[1] = callback(tmp(4474).Text, obj);
+    items[1] = callback(tmp(4477).Text, obj);
     obj[0] = items;
     str = callback(closure_3, obj);
   }
@@ -52,7 +52,7 @@ export default function UsernameText(color) {
     obj3.color = "text-muted";
     const items3 = ["(", str, ")"];
     obj3.children = items3;
-    items2[2] = callback(tmp(4474).Text, obj3);
+    items2[2] = callback(tmp(4477).Text, obj3);
     obj2[0] = items2;
     tmp13 = callback(closure_3, obj2);
   }

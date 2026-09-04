@@ -1,17 +1,17 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 7993
+// Function ID: 7994
 // Name: getPaymentGateway
-// Dependencies: [5, 7984, 7209, 7205, 1923, 673, 1234, 706, 695, 527, 7985, 1205, 4298, 1372, 1369, 2]
+// Dependencies: [5, 7994, 7388, 7384, 1923, 673, 1234, 706, 695, 527, 7995, 1205, 4301, 1372, 1369, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 7983 (getPaymentGateway)
+// Module 7993 (getPaymentGateway)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import set from "set" /* 1234 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7984 */;
-import closure_5 from "createFromServer" /* 7209 */;
-import closure_6 from "emitChanges" /* 7205 */;
+import closure_4 from "createFromServer" /* 7994 */;
+import closure_5 from "createFromServer" /* 7388 */;
+import closure_6 from "emitChanges" /* 7384 */;
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_7 } from "GuildFeatures" /* 1923 */;
 import ME from "ME" /* 673 */;
 
@@ -83,7 +83,7 @@ function _fetchUserOffer() {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "Array", paymentGatewayOverride: "PX_16" };
+                  obj1 = { offerId: "left", paymentGatewayOverride: "call" };
                 }
                 throwTypeErrorResult = retries;
                 throwTypeErrorResult = closure_4;

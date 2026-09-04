@@ -1,10 +1,10 @@
-// Module ID: 13830
-// Function ID: 13831
-// Dependencies: [1921, 4724, 13831, 2008, 2]
+// Module ID: 13862
+// Function ID: 13863
+// Dependencies: [1921, 4731, 13863, 2008, 2]
 
-// Module 13830
+// Module 13862
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
@@ -12,14 +12,14 @@ const result = require("set").fileFinishedImporting("components_native/add_frien
 
 export default {
   openAddFriendModalDeeplink() {
-    _modDef4724.pushLazy(asyncRequireImpl(13831, dependencyMap.paths));
+    _modDef4731.pushLazy(asyncRequireImpl(13863, dependencyMap.paths));
   },
   openAddFriendModal(arg0) {
     if (null != currentUser.getCurrentUser()) {
-      let obj = _modDef4724;
+      let obj = _modDef4731;
       obj = { sourceMetadata: null };
       obj[0] = arg0;
-      obj.pushLazy(asyncRequireImpl(13831, dependencyMap.paths), obj);
+      obj.pushLazy(asyncRequireImpl(13863, dependencyMap.paths), obj);
     }
   }
 };

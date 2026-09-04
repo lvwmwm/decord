@@ -1,16 +1,16 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9026
+// Function ID: 9027
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1386, 4554, 7771, 673, 1430, 4701, 695, 2]
+// Dependencies: [1386, 4557, 6927, 673, 1431, 4708, 695, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9814 (isAnimatedBackgroundOption)
+// Module 9026 (isAnimatedBackgroundOption)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getAvatarURL from "getAvatarURL" /* 1430 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "createRTCConnection" /* 4554 */;
-import VideoFilterType from "VideoFilterType" /* 7771 */;
+import closure_4 from "createRTCConnection" /* 4557 */;
+import VideoFilterType from "VideoFilterType" /* 6927 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
@@ -38,8 +38,8 @@ function isAnimatedBackgroundOption(closure_0) {
     if (hasItem) {
       let isAnimatedIconHashResult = getAvatarURL.isAnimatedIconHash(closure_0.asset);
       if (!isAnimatedIconHashResult) {
-        isAnimatedIconHashResult = tmp6(1430).isVideoAssetHash(closure_0.asset);
-        const tmp6Result = tmp6(1430);
+        isAnimatedIconHashResult = tmp6(1431).isVideoAssetHash(closure_0.asset);
+        const tmp6Result = tmp6(1431);
       }
       hasItem = isAnimatedIconHashResult;
       const obj = getAvatarURL;

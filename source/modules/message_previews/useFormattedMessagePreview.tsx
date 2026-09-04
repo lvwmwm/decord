@@ -1,16 +1,16 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10022
+// Function ID: 10023
 // Name: formatMessagePreview
-// Dependencies: [1215, 4130, 1921, 673, 683, 586, 7902, 4747, 1233, 4671, 6156, 12, 7907, 7992, 2]
+// Dependencies: [1215, 4130, 1921, 673, 683, 586, 7912, 4754, 1233, 4678, 7240, 12, 7917, 8002, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 10202 (formatMessagePreview)
+// Module 10022 (formatMessagePreview)
 import set from "set" /* 683 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4747 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6156 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 7902 */;
-import getSystemMessageUserJoinMobileDefault from "getSystemMessageUserJoinMobile" /* 7907 */;
+import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4754 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7240 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 7912 */;
+import getSystemMessageUserJoinMobileDefault from "getSystemMessageUserJoinMobile" /* 7917 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
@@ -69,11 +69,11 @@ function formatMessagePreview(type, isBlocked) {
                   tmp10 = obj4;
                 } else if (type.attachments.length > 0) {
                   const attachments = type.attachments;
-                  const everyResult = attachments.every((filename) => callback(4671).isImageFile(filename.filename));
+                  const everyResult = attachments.every((filename) => callback(4678).isImageFile(filename.filename));
                   let everyResult1 = !everyResult;
                   if (!everyResult) {
                     const attachments2 = type.attachments;
-                    everyResult1 = attachments2.every((filename) => callback(4671).isVideoFile(filename.filename));
+                    everyResult1 = attachments2.every((filename) => callback(4678).isVideoFile(filename.filename));
                   }
                   let everyResult2 = !everyResult;
                   if (!everyResult) {
@@ -81,7 +81,7 @@ function formatMessagePreview(type, isBlocked) {
                   }
                   if (everyResult2) {
                     const attachments3 = type.attachments;
-                    everyResult2 = attachments3.every((filename) => callback(4671).isAudioFile(filename.filename));
+                    everyResult2 = attachments3.every((filename) => callback(4678).isAudioFile(filename.filename));
                   }
                   if (everyResult) {
                     const obj5 = { type: "text", text: null, trailingIcon: "image" };
@@ -117,8 +117,8 @@ function formatMessagePreview(type, isBlocked) {
                   const everyResult3 = embeds.every((url) => {
                     let isImageUrlResult = null != url.url;
                     if (isImageUrlResult) {
-                      isImageUrlResult = callback(4671).isImageUrl(url.url);
-                      const obj = callback(4671);
+                      isImageUrlResult = callback(4678).isImageUrl(url.url);
+                      const obj = callback(4678);
                     }
                     return isImageUrlResult;
                   });
@@ -128,8 +128,8 @@ function formatMessagePreview(type, isBlocked) {
                     everyResult4 = embeds2.every((url) => {
                       let isVideoUrlResult = null != url.url;
                       if (isVideoUrlResult) {
-                        isVideoUrlResult = callback(4671).isVideoUrl(url.url);
-                        const obj = callback(4671);
+                        isVideoUrlResult = callback(4678).isVideoUrl(url.url);
+                        const obj = callback(4678);
                       }
                       return isVideoUrlResult;
                     });
@@ -143,8 +143,8 @@ function formatMessagePreview(type, isBlocked) {
                     everyResult5 = embeds3.every((url) => {
                       let isAudioFileResult = null != url.url;
                       if (isAudioFileResult) {
-                        isAudioFileResult = callback(4671).isAudioFile(url.url);
-                        const obj = callback(4671);
+                        isAudioFileResult = callback(4678).isAudioFile(url.url);
+                        const obj = callback(4678);
                       }
                       return isAudioFileResult;
                     });
@@ -377,9 +377,9 @@ function formatMessagePreview(type, isBlocked) {
                 tmp21 = obj50;
               } else if (type.type === tmp4(683).MessageTypes.VOICE_SESSION) {
                 const obj52 = { type: "text", text: null };
-                obj52[1] = tmp4(7992).getVoiceSessionMessageContent(type);
+                obj52[1] = tmp4(8002).getVoiceSessionMessageContent(type);
                 tmp21 = obj52;
-                const tmp4Result = tmp4(7992);
+                const tmp4Result = tmp4(8002);
               }
             }
           }
@@ -438,7 +438,7 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
     }
     return user;
   });
-  tmpResult = tmp(4747);
+  tmpResult = tmp(4754);
   obj = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: tmpResult.useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp4 };
   return formatMessagePreview(message, obj);
 };

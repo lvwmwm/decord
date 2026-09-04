@@ -1,14 +1,14 @@
-// Module ID: 15102
-// Function ID: 15103
-// Dependencies: [19, 4297, 1302, 1301, 15103, 7896, 673, 21, 1498, 1234, 7618, 1233, 9107, 702, 3178, 1994, 4946, 15104, 644, 11292, 14578, 2]
+// Module ID: 15186
+// Function ID: 15187
+// Dependencies: [19, 4300, 1302, 1301, 15187, 7906, 673, 21, 1498, 1234, 7795, 1233, 10049, 702, 3178, 1994, 4953, 15188, 644, 11400, 14614, 2]
 
-// Module 15102
+// Module 15186
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "reset" /* 4297 */;
+import closure_4 from "reset" /* 4300 */;
 import closure_5 from "initialize" /* 1302 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
-import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15103 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15187 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -16,10 +16,10 @@ const require = arg1;
 let c3 = importAllResult;
 ({ DEFAULT_FONT_SCALE_STORE_STATE: error, useFontScaleStore: closure_8 } = DEFAULT_FONT_SCALE_STORE_STATE);
 const memoResult = importAllResult.memo(() => {
-  nativeStackNavigation(4946)(() => {
+  nativeStackNavigation(4953)(() => {
     if (closure_5.shouldSync("appearance")) {
-      const userCustomThemes = lib(15104).fetchUserCustomThemes();
-      const obj = lib(15104);
+      const userCustomThemes = lib(15188).fetchUserCustomThemes();
+      const obj = lib(15188);
     }
   });
   let items = [closure_6, closure_4];
@@ -64,7 +64,7 @@ const memoResult = importAllResult.memo(() => {
     callback(table[13]).batchUpdates(() => state.setState(closure_7));
   }, []);
   const node = importAllResult.useMemo(() => {
-    let obj = lib(11292);
+    let obj = lib(11400);
     obj = { sections: null };
     obj = { label: null, settings: null };
     const intl = lib(1233).intl;
@@ -110,7 +110,7 @@ const memoResult = importAllResult.memo(() => {
     return obj.createList(obj);
   }, []);
   let obj2 = _require(1498);
-  return jsx(nativeStackNavigation(14578), { node }, "" + theme + "-" + gradientPresetId);
+  return jsx(nativeStackNavigation(14614), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

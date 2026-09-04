@@ -1,20 +1,20 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15891
+// Function ID: 15892
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14606, 15784, 15785, 21, 4478, 709, 1233, 7729, 1498, 15781, 15800, 15783, 688, 15799, 15802, 14607, 6247, 7742, 7757, 7717, 4929, 6058, 2]
+// Dependencies: [5, 32, 19, 17, 14634, 15870, 15871, 21, 4481, 709, 1233, 6884, 1498, 15867, 15886, 15869, 688, 15885, 15888, 14635, 7315, 6897, 6912, 6547, 4936, 5533, 2]
 // Exports: default
 
-// Module 15805 (RegisterDisplayName)
+// Module 15891 (RegisterDisplayName)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "isRateLimited" /* 14606 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15784 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15785 */;
+import closure_7 from "isRateLimited" /* 14634 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15870 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15871 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ updateRegistrationOptions: closure_8, useRegistrationUIStore: c9 } = useRegistrationUIStore);

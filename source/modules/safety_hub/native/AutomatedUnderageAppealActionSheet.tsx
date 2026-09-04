@@ -1,17 +1,17 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11816
+// Function ID: 11817
 // Name: items
-// Dependencies: [19, 17, 8720, 8709, 21, 4478, 709, 1233, 586, 1627, 11685, 8701, 8703, 4445, 5631, 5633, 4474, 6001, 5608, 4190, 4929, 11683, 2]
+// Dependencies: [19, 17, 8360, 8349, 21, 4481, 709, 1233, 586, 1627, 11815, 8341, 8343, 4448, 7090, 6567, 4477, 5642, 5560, 4190, 4936, 11813, 2]
 // Exports: default
 
-// Module 11686 (items)
+// Module 11816 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
-import SafetyHubView from "SafetyHubView" /* 8709 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
+import SafetyHubView from "SafetyHubView" /* 8349 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6 } from "getSystemLocale" /* 1233 */;
 
 const require = arg1;
@@ -103,15 +103,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = onClose(1233).intl;
   obj4[2] = intl.string(onClose(1233).t["9SDLnj"]);
-  const items5 = [callback(onClose(4474).Text, obj4), ];
+  const items5 = [callback(onClose(4477).Text, obj4), ];
   const obj5 = { variant: "heading-md/medium", color: "text-default", children: null };
   const intl2 = onClose(1233).intl;
   obj5[2] = intl2.string(onClose(1233).t["yvx//1"]);
-  items5[1] = callback(onClose(4474).Text, obj5);
+  items5[1] = callback(onClose(4477).Text, obj5);
   obj3[1] = items5;
   const items6 = [callback2(callback, obj3), , , ];
   const obj6 = {
-    children: callback(onClose(6001).TableRowGroup, {
+    children: callback(onClose(5642).TableRowGroup, {
       hasIcons: true,
       children: items.map((arg0, arg1) => {
         ({ title, description } = arg0);
@@ -136,8 +136,8 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj10[2] = function onPress() {
     return classificationId(number[19]).openURL(constants.AGE_VERIFICATION_LINK);
   };
-  obj9[2] = callback(onClose(5608).TableRow, obj10);
-  obj8[1] = callback(onClose(6001).TableRowGroup, obj9);
+  obj9[2] = callback(onClose(5560).TableRow, obj10);
+  obj8[1] = callback(onClose(5642).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer, children: null };
   const obj12 = {
@@ -150,15 +150,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   };
   const intl6 = onClose(1233).intl;
   obj12[3] = intl6.string(onClose(1233).t["54b8V0"]);
-  const items7 = [callback(onClose(4929).Button, obj12), ];
+  const items7 = [callback(onClose(4936).Button, obj12), ];
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: null };
   const intl7 = onClose(1233).intl;
   obj13[3] = intl7.format(onClose(1233).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(4474).Text, obj13);
+  items7[1] = callback(onClose(4477).Text, obj13);
   obj11[1] = items7;
   items6[3] = callback2(callback, obj11);
   obj1[1] = items6;
   obj[1] = callback2(callback, obj1);
-  obj[2] = callback(onClose(5633).BottomSheetScrollView, obj);
-  return callback(onClose(5631).BottomSheet, obj);
+  obj[2] = callback(onClose(6567).BottomSheetScrollView, obj);
+  return callback(onClose(7090).BottomSheet, obj);
 };

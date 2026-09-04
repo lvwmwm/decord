@@ -1,10 +1,10 @@
-// Module ID: 13878
-// Function ID: 13879
+// Module ID: 13910
+// Function ID: 13911
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1390, 1386, 4120, 673, 11494, 10857, 21, 4478, 709, 1234, 1233, 13879, 10943, 1470, 13880, 4757, 695, 10058, 4489, 8652, 11514, 2008, 4860, 13881, 13882, 5511, 7618, 1623, 5504, 10946, 13883, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1386, 4120, 673, 11615, 10791, 21, 4481, 709, 1234, 1233, 13911, 10912, 1394, 13912, 4764, 695, 9870, 4492, 8292, 11635, 2008, 4867, 13913, 13914, 5586, 7795, 1623, 5579, 10915, 13915, 2]
 // Exports: default
 
-// Module 13878 (getAttachmentsRestriction)
+// Module 13910 (getAttachmentsRestriction)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -15,10 +15,10 @@ import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11494 */;
-import { UserRowModes } from "UserRowModes" /* 10857 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11615 */;
+import { UserRowModes } from "UserRowModes" /* 10791 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 require = arg1;
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13880);
+                              obj1 = callback(13912);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;

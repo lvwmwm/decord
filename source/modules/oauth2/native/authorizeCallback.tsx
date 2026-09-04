@@ -1,18 +1,18 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9504
+// Function ID: 9505
 // Name: authorizeCallback
-// Dependencies: [9295, 4724, 9297, 2008, 1485, 9299, 4443, 688, 4190, 2]
+// Dependencies: [9503, 4731, 9178, 2008, 1485, 9505, 4446, 688, 4190, 2]
 // Exports: default
 
-// Module 9296 (authorizeCallback)
+// Module 9504 (authorizeCallback)
 import set from "set" /* 2 */;
 import keys from "keys" /* 688 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import NativeModules from "NativeModules" /* 4443 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9295 */;
+import NativeModules from "NativeModules" /* 4446 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9503 */;
 
 ({ OAUTH2_SUCCESS_RESULT_MODAL_KEY: c3, OAUTH2_ERROR_RESULT_MODAL_KEY: c4 } = OAUTH2_AUTHORIZE_MODAL_KEY);
 const re5 = /oauth2\/authorized/;
@@ -32,15 +32,15 @@ export default function authorizeCallback(arg0) {
       if (tmp8Result.isDiscordHostname(host)) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
-            tmp8Result = tmp8(4724);
+            tmp8Result = tmp8(4731);
             let obj = { application: null, guild: null };
             obj[0] = tmp;
             obj[1] = tmp2;
-            tmp8Result.pushLazy(asyncRequireImpl(9299, tmp9.paths), obj, closure_3);
+            tmp8Result.pushLazy(asyncRequireImpl(9505, tmp9.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               let str;
-              const tmp8Result1 = tmp8(4724);
+              const tmp8Result1 = tmp8(4731);
               if (searchParams != null) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -60,8 +60,8 @@ export default function authorizeCallback(arg0) {
               }
               obj = { error: null };
               obj[0] = str;
-              tmp8Result1.pushLazy(asyncRequireImpl(9297, tmp9.paths), obj, closure_4);
-              const tmp17 = asyncRequireImpl(9297, tmp9.paths);
+              tmp8Result1.pushLazy(asyncRequireImpl(9178, tmp9.paths), obj, closure_4);
+              const tmp17 = asyncRequireImpl(9178, tmp9.paths);
             }
           }
         }
@@ -80,7 +80,7 @@ export default function authorizeCallback(arg0) {
     _modDef4190.openURL(_location, SAFARI);
     const tmp8Result2 = _modDef4190;
   } else if (!canceled) {
-    obj = _modDef4724;
-    obj.pushLazy(asyncRequireImpl(9297, dependencyMap.paths), undefined, closure_4);
+    obj = _modDef4731;
+    obj.pushLazy(asyncRequireImpl(9178, dependencyMap.paths), undefined, closure_4);
   }
 };

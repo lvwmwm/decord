@@ -1,13 +1,13 @@
-// Module ID: 7962
-// Function ID: 7963
+// Module ID: 7972
+// Function ID: 7973
 // Name: createPollResultSystemMessage
-// Dependencies: [1924, 7881, 7883, 1233, 1430, 4134, 7963, 7885, 2]
+// Dependencies: [1924, 7891, 7893, 1233, 1431, 4134, 7973, 7895, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 7962 (createPollResultSystemMessage)
+// Module 7972 (createPollResultSystemMessage)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1924 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7963 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7973 */;
 
 const EMOJI_URL_BASE_SIZE = set2.EMOJI_URL_BASE_SIZE;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
@@ -20,14 +20,14 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = obj6(7881).getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = obj6(7891).getMessageAuthorWithProcessedColor(message);
     let obj = { username: null, usernameOnClick: null, title: null, titleOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
     obj = { message: null, author: null, roleStyle: null };
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = message.roleStyle;
-    obj[1] = tmp(7883)(obj);
+    obj[1] = tmp(7893)(obj);
     obj[2] = tmp3.questionText;
     obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
     obj1[1] = message.messageReference.channel_id;
@@ -69,12 +69,12 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
           if (null != id.id) {
             const obj7 = { id: null, type: "customEmoji", alt: null, src: null, frozenSrc: null };
             ({ id: obj3[0], name: obj3[2] } = id);
-            let tmpResult = tmp(1430);
+            let tmpResult = tmp(1431);
             const obj8 = { id: null, animated: null, size: null };
             ({ id: obj5[0], animated: obj5[1] } = id);
             obj8[2] = EMOJI_URL_BASE_SIZE;
             obj7[3] = tmpResult.getEmojiURL(obj8);
-            tmpResult = tmp(1430);
+            tmpResult = tmp(1431);
             const obj9 = { id: null, animated: false, size: null };
             id = id.id;
             obj9[0] = id;
@@ -93,7 +93,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(tmp(7885)(message));
+    const merged3 = Object.assign(tmp(7895)(message));
     obj10.content = formatToPartsResult;
     return obj10;
   }

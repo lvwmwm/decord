@@ -1,9 +1,9 @@
-// Module ID: 6790
-// Function ID: 6791
+// Module ID: 6171
+// Function ID: 6172
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6790 (metadata)
+// Module 6171 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LogoHandSpotIllustration-2x.png.js");

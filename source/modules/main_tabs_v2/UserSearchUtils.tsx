@@ -1,13 +1,13 @@
-// Module ID: 7416
-// Function ID: 7417
+// Module ID: 7594
+// Function ID: 7595
 // Name: cleanString
-// Dependencies: [7417, 1991, 4130, 673, 1901, 4322, 2]
+// Dependencies: [7595, 1991, 4130, 673, 1901, 4325, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7416 (cleanString)
+// Module 7594 (cleanString)
 import isNullOrEmpty from "isNullOrEmpty" /* 1901 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import closure_3 from "initialize" /* 7417 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import closure_3 from "initialize" /* 7595 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import { RelationshipTypes } from "ME" /* 673 */;

@@ -1,0 +1,20 @@
+// Module ID: 14128
+// Function ID: 14129
+// Name: __exportStarResult1
+// Dependencies: []
+
+// Module 14128 (__exportStarResult1)
+arg5.CanonicalizeTimeZoneName = function CanonicalizeTimeZoneName(str) {
+  ({ zoneNames, uppercaseLinks } = arg1);
+  const formatted = str.toUpperCase();
+  const tmp2 = uppercaseLinks[formatted] || zoneNames.reduce((arg0, str) => {
+    arg0[str.toUpperCase()] = str;
+    return arg0;
+  }, {})[formatted];
+  if ("Etc/UTC" !== tmp2) {
+    if ("Etc/GMT" !== tmp2) {
+      return tmp2;
+    }
+  }
+  return "UTC";
+};

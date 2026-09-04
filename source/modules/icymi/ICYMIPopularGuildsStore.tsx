@@ -1,9 +1,9 @@
-// Module ID: 16321
-// Function ID: 16322
+// Module ID: 16407
+// Function ID: 16408
 // Name: initialize
-// Dependencies: [1908, 1425, 6195, 586, 706, 2]
+// Dependencies: [1908, 1426, 7279, 586, 706, 2]
 
-// Module 16321 (initialize)
+// Module 16407 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "createGuildRecordFromRust" /* 1908 */;

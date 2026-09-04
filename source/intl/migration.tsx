@@ -1,10 +1,10 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17284
+// Function ID: 17285
 // Name: newGetEnglishMessageText
 // Dependencies: [1233, 1273, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 17198 (newGetEnglishMessageText)
+// Module 17284 (newGetEnglishMessageText)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import _mod1273 from "module_1273" /* 1273 */;

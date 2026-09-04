@@ -1,53 +1,64 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12989
+// Function ID: 12990
 // Name: UserProfileEditNoteModal
-// Dependencies: [19, 21, 4724, 6017, 1235, 1233, 4474, 5504, 12725, 2]
+// Dependencies: [32, 19, 21, 1498, 4731, 6940, 1235, 1233, 4477, 5579, 12990, 2]
 // Exports: default
 
-// Module 12724 (UserProfileEditNoteModal)
-import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import NavigationStack from "NavigationStack" /* 6017 */;
+// Module 12989 (UserProfileEditNoteModal)
+import closure_3 from "_slicedToArray" /* 32 */;
+import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
-require = arg1;
-noopAll;
+const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
-  ({ userId: require, onSave: importDefault, onBack: dependencyMap } = arg0);
+  ({ userId: navigation, onSave: closure_1, onBack: dependencyMap } = arg0);
+  let callback;
   function handleClose() {
-    let arr = closure_1_1(closure_1_2[2]);
+    let arr = callback(closure_1_2[4]);
     arr = arr.pop();
     if (dependencyMap != null) {
       dependencyMap();
     }
   }
-  let obj = PlatformTypes;
+  navigation = undefined;
+  closure_1 = undefined;
+  let obj = navigation(1498);
+  navigation = obj.useNavigation();
+  const tmp4 = callback(handleClose.useState(false), 2);
+  closure_1 = tmp4[1];
+  const items = [navigation];
+  const effect = handleClose.useEffect(() => navigation.addListener("transitionEnd", (data) => {
+    if (!data.data.closing) {
+      callback(true);
+    }
+  }), items);
+  callback = tmp4[0];
+  obj1 = navigation(1235);
   obj = { initialRouteName: "root", headerStatusBarHeight: num, headerStyle: null, screens: null };
-  let tmp2Result = tmp2(1235);
+  let tmpResult = tmp(1235);
   obj = undefined;
-  if (!tmp2Result.isAndroid()) {
+  if (!tmpResult.isAndroid()) {
     obj = { height: 56 };
   }
   obj[2] = obj;
   obj1 = { root: null };
   const obj2 = { title: null, headerTitle: null, headerLeft: null, render: null };
-  let intl = tmp2(1233).intl;
-  obj2[0] = intl.string(getSystemLocale.t.sHHsOM);
+  let intl = tmp(1233).intl;
+  obj2[0] = intl.string(navigation(1233).t.sHHsOM);
   obj2[1] = function headerTitle() {
     const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
-    const intl = callback(1233).intl;
-    obj[2] = intl.string(callback(1233).t.sHHsOM);
-    return handleClose(callback(4474).Text, obj);
+    const intl = navigation(1233).intl;
+    obj[2] = intl.string(navigation(1233).t.sHHsOM);
+    return callback2(navigation(4477).Text, obj);
   };
-  tmp2Result = tmp2(5504);
-  obj2[2] = tmp2Result.getHeaderCloseButton(handleClose);
+  tmpResult = tmp(5579);
+  obj2[2] = tmpResult.getHeaderCloseButton(handleClose);
   obj2[3] = function render() {
-    return handleClose(closure_1_0(closure_1_2[8]).default, { userId: closure_0, onSave: closure_1, onClose: handleClose });
+    return closure_1_5(navigation(closure_1_2[10]).default, { userId: navigation, onSave: closure_1, onClose: handleClose, shouldFocusInput: closure_3 });
   };
   obj1[0] = obj2;
   obj[3] = obj1;
-  return handleClose(NavigationStack.Navigator, obj);
+  return jsx(navigation(6940).Navigator, obj);
 };

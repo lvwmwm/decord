@@ -1,9 +1,9 @@
-// Module ID: 12813
-// Function ID: 12814
+// Module ID: 13041
+// Function ID: 13042
 // Name: getFetchState
 // Dependencies: [586, 706, 2]
 
-// Module 12813 (getFetchState)
+// Module 13041 (getFetchState)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

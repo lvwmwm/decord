@@ -1,18 +1,18 @@
-// Module ID: 5565
-// Function ID: 5566
+// Module ID: 5556
+// Function ID: 5557
 // Name: TermsFieldListItem
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4468, 5566, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4477, 1233, 4471, 5557, 2]
 // Exports: default
 
-// Module 5565 (TermsFieldListItem)
+// Module 5556 (TermsFieldListItem)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
-import Text from "Text" /* 4474 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4471 */;
+import Text from "Text" /* 4477 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TermsFieldListItem(rowNumber) {
@@ -55,7 +55,7 @@ export default function TermsFieldList(rules) {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = rules(1233).intl;
   obj[4] = intl.string(rules(1233).t.prJqwT);
-  let items = [callback(rules(4474).Text, obj), ];
+  let items = [callback(rules(4477).Text, obj), ];
   obj = {
     accessibilityRole: "list",
     children: rules.map((rule) => {

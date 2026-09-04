@@ -1,16 +1,16 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11248
+// Function ID: 11249
 // Name: AnimatedCount
-// Dependencies: [32, 19, 17, 21, 4478, 38, 4217, 4204, 4928, 4474, 4932, 11178, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 38, 4218, 4205, 4935, 4477, 4939, 11249, 2]
 
-// Module 11177 (AnimatedCount)
-import Text from "Text" /* 4474 */;
-import defaultFormatter2 from "defaultFormatter" /* 11178 */;
+// Module 11248 (AnimatedCount)
+import Text from "Text" /* 4477 */;
+import defaultFormatter2 from "defaultFormatter" /* 11249 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AnimatedCount(state) {

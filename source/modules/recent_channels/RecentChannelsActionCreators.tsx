@@ -1,10 +1,10 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11492
+// Function ID: 11493
 // Name: _bulkClearRecents
 // Dependencies: [5, 673, 1369, 1335, 706, 695, 2]
 // Exports: bulkClearRecents
 
-// Module 11385 (_bulkClearRecents)
+// Module 11492 (_bulkClearRecents)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 

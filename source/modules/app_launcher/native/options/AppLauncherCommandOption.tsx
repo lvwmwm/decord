@@ -1,23 +1,23 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 12095
+// Function ID: 12096
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1497, 21, 4478, 709, 1954, 11963, 11969, 11971, 11974, 11976, 11977, 11979, 5462, 11982, 11983, 11986, 5077, 6235, 2]
+// Dependencies: [19, 17, 1497, 21, 4481, 709, 1954, 12096, 12102, 12104, 12107, 12109, 12110, 12112, 5471, 12115, 12116, 12122, 5084, 6556, 2]
 // Exports: default
 
-// Module 11962 (AppLauncherCommandOption)
+// Module 12095 (AppLauncherCommandOption)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11963 */;
-import AttachmentPreviewAppLauncherDefault from "AttachmentPreviewAppLauncher" /* 11974 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11976 */;
-import MentionableIconDefault from "MentionableIcon" /* 11977 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11982 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11983 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11986 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12096 */;
+import AttachmentPreviewAppLauncherDefault from "AttachmentPreviewAppLauncher" /* 12107 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12109 */;
+import MentionableIconDefault from "MentionableIcon" /* 12110 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12115 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12116 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12122 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AppLauncherOptionAutoFocusType as closure_4 } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -241,8 +241,8 @@ export default function AppLauncherCommandOption(option) {
           obj6[1] = function onPress() {
             return onDismiss(name);
           };
-          obj6[2] = tmp13(tmp2(6235).CircleXIcon, { size: "md" });
-          items[1] = tmp13(tmp2(5077).PressableOpacity, obj6);
+          obj6[2] = tmp13(tmp2(6556).CircleXIcon, { size: "md" });
+          items[1] = tmp13(tmp2(5084).PressableOpacity, obj6);
           obj4[1] = items;
           tmp62 = callback(View, obj4);
         }
@@ -294,7 +294,7 @@ export default function AppLauncherCommandOption(option) {
     obj8[3] = command;
     obj8[4] = optionValues;
     let first6;
-    let tmp64Result = tmp64(11969);
+    let tmp64Result = tmp64(12102);
     if (optionValues.current[name.name] != tmp44) {
       first6 = tmp52[0];
     }
@@ -327,7 +327,7 @@ export default function AppLauncherCommandOption(option) {
     obj9[1] = name;
     obj9[2] = channel.guild_id;
     let first7;
-    tmp64Result = tmp64(11971);
+    tmp64Result = tmp64(12104);
     if (optionValues.current[name.name] != tmp44) {
       first7 = tmp46[0];
     }

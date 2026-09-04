@@ -1,9 +1,9 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8287
+// Function ID: 8288
 // Name: set
 // Dependencies: [2]
 
-// Module 8647 (set)
+// Module 8287 (set)
 import set from "set" /* 2 */;
 
 let set = new Set(["end", "loading", "bottomLoading", "icymiHeader", "recommendedGuilds"]);

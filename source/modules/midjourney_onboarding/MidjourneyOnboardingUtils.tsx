@@ -1,14 +1,14 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13869
+// Function ID: 13870
 // Name: isMidjourneyOnboardingFlow
-// Dependencies: [1908, 4299, 13838, 586, 2]
+// Dependencies: [1908, 4302, 13870, 586, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow, useIsMidjourneyOnboardingFlow
 
-// Module 13837 (isMidjourneyOnboardingFlow)
+// Module 13869 (isMidjourneyOnboardingFlow)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "handleConnectionOpen" /* 4299 */;
-import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID" /* 13838 */;
+import closure_3 from "handleConnectionOpen" /* 4302 */;
+import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID" /* 13870 */;
 
 require = arg1;
 ({ MIDJOURNEY_BOT_ID: c4, MIDJOURNEY_GUILD_ID: c5 } = MIDJOURNEY_GUILD_ID);

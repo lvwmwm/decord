@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15983
+// Function ID: 15984
 // Name: _fetchActiveChannels
-// Dependencies: [5, 673, 706, 527, 4377, 2]
+// Dependencies: [5, 673, 706, 527, 4380, 2]
 // Exports: fetchActiveChannels
 
-// Module 15897 (_fetchActiveChannels)
+// Module 15983 (_fetchActiveChannels)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 

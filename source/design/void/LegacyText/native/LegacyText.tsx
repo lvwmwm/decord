@@ -1,12 +1,12 @@
-// Module ID: 8404
-// Function ID: 8405
-// Dependencies: [19, 17, 673, 21, 4478, 8405, 2]
+// Module ID: 8542
+// Function ID: 8543
+// Dependencies: [19, 17, 673, 21, 4481, 8543, 2]
 
-// Module 8404
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8405 */;
+// Module 8542
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8543 */;
 import { Text } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

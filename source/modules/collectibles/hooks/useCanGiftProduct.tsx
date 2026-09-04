@@ -1,15 +1,15 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 13094
+// Function ID: 13095
 // Name: useCanGiftProduct
-// Dependencies: [8910, 7309, 7308, 4139, 1949, 4152, 2]
+// Dependencies: [8109, 7487, 7486, 4139, 1949, 4152, 2]
 // Exports: useCanGiftProduct
 
-// Module 12807 (useCanGiftProduct)
+// Module 13094 (useCanGiftProduct)
 import set from "set" /* 2 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7308 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7309 */;
-import useCurrentUser from "useCurrentUser" /* 8910 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7486 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7487 */;
+import useCurrentUser from "useCurrentUser" /* 8109 */;
 
 let result = set.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
@@ -37,7 +37,7 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = product.type === tmp(1949).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
-    let tmpResult = tmp(7309);
+    let tmpResult = tmp(7487);
     let currency;
     if (result3 != null) {
       currency = result3.currency;

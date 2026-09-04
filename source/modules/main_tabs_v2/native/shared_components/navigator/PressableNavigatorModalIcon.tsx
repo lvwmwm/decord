@@ -1,14 +1,14 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7802
+// Function ID: 7803
 // Name: PressableNavigatorModalIcon
-// Dependencies: [21, 7621, 7618, 7622, 7626, 1233, 2]
+// Dependencies: [21, 7798, 7795, 7799, 7803, 1233, 2]
 // Exports: default
 
-// Module 7625 (PressableNavigatorModalIcon)
+// Module 7802 (PressableNavigatorModalIcon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import GenericHeaderTitle from "GenericHeaderTitle" /* 7618 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7621 */;
+import GenericHeaderTitle from "GenericHeaderTitle" /* 7795 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7798 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx");
@@ -22,7 +22,7 @@ export default function PressableNavigatorModalIcon(onPress) {
   if (str === undefined) {
     str = "back";
   }
-  let obj = { source: importDefault(tmp6 ? 7622 : 7626), onPress: goBack, accessibilityLabel: null };
+  let obj = { source: importDefault(tmp6 ? 7799 : 7803), onPress: goBack, accessibilityLabel: null };
   const intl = tmp5(1233).intl;
   const string = intl.string;
   const t = tmp5(1233).t;

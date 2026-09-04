@@ -1,9 +1,9 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11797
+// Function ID: 11798
 // Name: AutomodActionType
 // Dependencies: [2]
 
-// Module 11666 (AutomodActionType)
+// Module 11797 (AutomodActionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodActionType.tsx");

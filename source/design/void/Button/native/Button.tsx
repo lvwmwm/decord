@@ -1,20 +1,20 @@
 // Module ID: 1299
 // Function ID: 1300
 // Name: getTextStyles
-// Dependencies: [19, 17, 673, 1300, 21, 4478, 709, 4326, 5393, 1234, 12434, 8404, 1362, 5607, 4929, 2]
+// Dependencies: [19, 17, 673, 1300, 21, 4481, 709, 4329, 5401, 1234, 12592, 8542, 1362, 5641, 4936, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
 // Module 1299 (getTextStyles)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
-import _modDef8404 from "module_8404" /* 8404 */;
-import getClass from "getClass" /* 12434 */;
+import _modDef8542 from "module_8542" /* 8542 */;
+import getClass from "getClass" /* 12592 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { getThemedRippleConfig } from "semanticColor" /* 1300 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 
 require = arg1;
 function getTextStyles(disabled, text) {
@@ -102,7 +102,7 @@ class ButtonText {
       obj[2] = size;
       obj[3] = disabled;
       num = 0;
-      tmp5 = require("module_8404");
+      tmp5 = require("module_8542");
       items = [, ];
       items[0] = getTextStyles(obj, tmp);
       items[1] = style;

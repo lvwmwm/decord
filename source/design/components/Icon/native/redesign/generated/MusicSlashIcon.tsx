@@ -1,14 +1,14 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 9838
+// Function ID: 9839
 // Name: MusicSlashIcon
-// Dependencies: [19, 21, 709, 4196, 10027, 2]
+// Dependencies: [19, 21, 709, 4196, 9839, 2]
 // Exports: MusicSlashIcon
 
-// Module 10026 (MusicSlashIcon)
+// Module 9838 (MusicSlashIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10027 */;
+import registerAsset from "registerAsset" /* 9839 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

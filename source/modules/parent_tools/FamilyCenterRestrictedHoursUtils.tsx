@@ -1,10 +1,10 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10012
+// Function ID: 10013
 // Name: setsEqual
 // Dependencies: [1929, 1233, 2368, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 10192 (setsEqual)
+// Module 10012 (setsEqual)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import create from "create" /* 1929 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;

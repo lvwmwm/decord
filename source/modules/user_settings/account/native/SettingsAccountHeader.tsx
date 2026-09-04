@@ -1,22 +1,22 @@
-// Module ID: 14575
-// Function ID: 14576
+// Module ID: 14611
+// Function ID: 14612
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4130, 1921, 673, 8689, 21, 4478, 709, 14576, 1233, 6255, 586, 7778, 7699, 5608, 4929, 2]
+// Dependencies: [19, 17, 4130, 1921, 673, 8329, 21, 4481, 709, 14612, 1233, 7320, 586, 6938, 5576, 5560, 4936, 2]
 
-// Module 14575 (RestrictedAccountRedirect)
+// Module 14611 (RestrictedAccountRedirect)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import handleOpenEmailVerification from "handleOpenEmailVerification" /* 7778 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14576 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 6938 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14612 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import { AnalyticsSections } from "ME" /* 673 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8689 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8329 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function RestrictedAccountRedirect() {
@@ -65,8 +65,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4929).Button, obj1);
-      tmp14 = callback(tmp2(5608).TableRow, obj);
+      obj[4] = callback(tmp2(4936).Button, obj1);
+      tmp14 = callback(tmp2(5560).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

@@ -1,21 +1,21 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 9915
+// Function ID: 9916
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4542, 21, 1234, 4478, 709, 4197, 10096, 8394, 4969, 1233, 5055, 2]
+// Dependencies: [19, 17, 4545, 21, 1234, 4481, 709, 4197, 9916, 8208, 4976, 1233, 5062, 2]
 // Exports: default
 
-// Module 10095 (VolumeSlider)
+// Module 9915 (VolumeSlider)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5055 */;
-import _modDef8394 from "module_8394" /* 8394 */;
-import VoiceXIcon from "VoiceXIcon" /* 10096 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5062 */;
+import _modDef8208 from "module_8208" /* 8208 */;
+import VoiceXIcon from "VoiceXIcon" /* 9916 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4542 */;
+import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4545 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -49,7 +49,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: tmp4.leftIcon };
   const items1 = [callback(VoiceXIcon.VoiceXIcon, obj), , ];
   obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
-  let tmp5Result = tmp5(4969);
+  let tmp5Result = tmp5(4976);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);
   obj1[3] = maxVolume;
   obj1[4] = minTrackColor;
@@ -71,7 +71,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     onResponderGrant = fn;
   }
   obj1[8] = onResponderGrant;
-  items1[1] = callback(_modDef8394, obj1);
+  items1[1] = callback(_modDef8208, obj1);
   items1[2] = callback(VoiceNormalIcon.VoiceNormalIcon, { style: tmp4.rightIcon });
   obj[1] = items1;
   return closure_6(View, obj);

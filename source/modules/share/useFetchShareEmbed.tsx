@@ -1,10 +1,10 @@
-// Module ID: 13879
-// Function ID: 13880
+// Module ID: 13911
+// Function ID: 13912
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1485, 11676, 702, 2]
+// Dependencies: [5, 32, 19, 1485, 11807, 702, 2]
 // Exports: default
 
-// Module 13879 (useFetchShareEmbed)
+// Module 13911 (useFetchShareEmbed)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -68,7 +68,7 @@ export default function useFetchShareEmbed(arg0) {
                   c4 = 3;
                   c5 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = closure_2_0(11676).unfurlEmbedUrl(items);
+                  obj1[0] = closure_2_0(11807).unfurlEmbedUrl(items);
                   return obj1;
                 } else {
                   c5 = 3;

@@ -1,17 +1,17 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 13055
+// Function ID: 13056
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 4130, 673, 21, 4478, 709, 8547, 644, 4474, 1233, 9077, 2]
+// Dependencies: [19, 17, 4130, 673, 21, 4481, 709, 8172, 644, 4477, 1233, 8972, 2]
 // Exports: default
 
-// Module 12847 (RemediatedUserNotice)
+// Module 13055 (RemediatedUserNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import { RelationshipTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -37,7 +37,7 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1233).intl;
       obj[3] = intl.string(tmp4(1233).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4474).Text, obj);
+      isBlocked = callback(tmp4(4477).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -45,7 +45,7 @@ export default function RemediatedUserNotice(user) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1233).intl;
       obj2[3] = intl2.string(tmp4(1233).t.HXz5An);
-      const items3 = [callback(tmp4(4474).Text, obj2), callback(tmp4(4474).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(tmp4(4477).Text, obj2), callback(tmp4(4477).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1233).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {

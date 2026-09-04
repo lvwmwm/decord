@@ -1,10 +1,10 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9446
+// Function ID: 9447
 // Name: getPostMessageJavaScript
 // Dependencies: [2]
 // Exports: default
 
-// Module 9472 (getPostMessageJavaScript)
+// Module 9446 (getPostMessageJavaScript)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/native/getPostMessageJavaScript.tsx");

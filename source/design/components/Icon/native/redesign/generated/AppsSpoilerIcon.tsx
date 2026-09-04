@@ -1,14 +1,14 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5065
+// Function ID: 5066
 // Name: AppsSpoilerIcon
-// Dependencies: [19, 21, 709, 4196, 5010, 2]
+// Dependencies: [19, 21, 709, 4196, 5017, 2]
 // Exports: AppsSpoilerIcon
 
-// Module 5058 (AppsSpoilerIcon)
+// Module 5065 (AppsSpoilerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5010 */;
+import registerAsset from "registerAsset" /* 5017 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 7233
+// Function ID: 7234
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 6149 (apexExperiment)
+// Module 7233 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,26 +1,26 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 14444
+// Function ID: 14445
 // Name: messageEventsValidation
-// Dependencies: [4519, 4501, 1429, 4500, 1386, 1991, 1908, 4529, 4554, 1921, 4497, 4380, 673, 9523, 9525, 9520, 4732, 14352, 8629, 12, 14357, 503, 640, 9526, 14413, 14414, 2]
+// Dependencies: [4522, 4504, 1430, 4503, 1386, 1991, 1908, 4532, 4557, 1921, 4500, 4383, 673, 9486, 9488, 9483, 4739, 14384, 8269, 12, 14389, 503, 640, 9489, 14445, 14446, 2]
 
-// Module 14412 (messageEventsValidation)
+// Module 14444 (messageEventsValidation)
 import fromStringAll from "fromString" /* 503 */;
-import prototypeDefault from "prototype" /* 9520 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9523 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9525 */;
-import getCapabilitiesForSocketDefault from "getCapabilitiesForSocket" /* 14352 */;
-import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "initialize" /* 4501 */;
-import { getGuildIconURL } from "GuildNSFWContentLevel" /* 1429 */;
-import closure_7 from "reset" /* 4500 */;
+import prototypeDefault from "prototype" /* 9483 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9486 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9488 */;
+import getCapabilitiesForSocketDefault from "getCapabilitiesForSocket" /* 14384 */;
+import closure_4 from "addApplication" /* 4522 */;
+import closure_5 from "initialize" /* 4504 */;
+import { getGuildIconURL } from "GuildNSFWContentLevel" /* 1430 */;
+import closure_7 from "reset" /* 4503 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "trackCommunicationDisabled" /* 1991 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_12 from "createRTCConnection" /* 4554 */;
+import closure_11 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_12 from "createRTCConnection" /* 4557 */;
 import closure_13 from "mergeGuildAvatar" /* 1921 */;
-import closure_14 from "updateVoiceState" /* 4497 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
+import closure_14 from "updateVoiceState" /* 4500 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -45,7 +45,7 @@ function messageEvents(args) {
         tmp3 = new tmp3(obj, "Invalid nsfw channel id: " + channel.id);
         throw tmp3;
       }
-      tmp13Result = tmp13(4732);
+      tmp13Result = tmp13(4739);
     }
     obj4 = recurseReplaceContentTree;
     tmp13 = require;
@@ -258,9 +258,9 @@ obj8[RPC_SCOPE_CONFIG.ANY] = items4;
 obj7[0] = obj8;
 obj7[1] = function handler() {
   return (arg0) => {
-    const obj = { state: callback(9525).getVoiceConnectionState(store.getState()), hostname: store.getHostname(), pings: store.getPings(), average_ping: store.getAveragePing(), last_ping: store.getLastPing() };
+    const obj = { state: callback(9488).getVoiceConnectionState(store.getState()), hostname: store.getHostname(), pings: store.getPings(), average_ping: store.getAveragePing(), last_ping: store.getLastPing() };
     ({ prevState, dispatch } = arg0);
-    const obj2 = callback(9525);
+    const obj2 = callback(9488);
     if (!obj3.isEqual(obj, prevState)) {
       dispatch(obj);
     }
@@ -295,7 +295,7 @@ obj[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    const result = socket(14352).validateEventSubscription(socket, session_id);
+    const result = socket(14384).validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;
       let obj = socket(closure_1_3[17]);
@@ -502,7 +502,7 @@ obj39[1] = function handler() {
       tmp = tmp2;
     }
     if (!tmp) {
-      prevState.dispatch(callback(9526)(obj.currentUser));
+      prevState.dispatch(callback(9489)(obj.currentUser));
     }
     return obj;
   };
@@ -574,7 +574,7 @@ obj45[1] = function handler() {
     }
     let tmp8 = null;
     if (null != application) {
-      tmp8 = callback(14414)(application);
+      tmp8 = callback(14446)(application);
     }
     if (streamerActiveStreamMetadata != null) {
       const sourceName = streamerActiveStreamMetadata.sourceName;

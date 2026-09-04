@@ -1,10 +1,10 @@
-// Module ID: 16862
-// Function ID: 16863
-// Dependencies: [19, 9450, 5232, 21, 4445, 16863, 2008, 586, 9458, 4929, 10140, 1233, 2]
+// Module ID: 16948
+// Function ID: 16949
+// Dependencies: [19, 11389, 5240, 21, 4448, 16949, 2008, 586, 11693, 4936, 9960, 1233, 2]
 
-// Module 16862
-import closure_3 from "updateActivities" /* 9450 */;
-import closure_4 from "filterPlayingActivities" /* 5232 */;
+// Module 16948
+import closure_3 from "updateActivities" /* 11389 */;
+import closure_4 from "filterPlayingActivities" /* 5240 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -24,12 +24,12 @@ const memoResult = importAllResult.memo(function InviteActivityButton(applicatio
       obj = { activity: stateFromStores };
       obj.openLazy(applicationId(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     };
-    obj[1] = stateFromStores(10140);
+    obj[1] = stateFromStores(9960);
     const intl = tmp(1233).intl;
     obj[2] = intl.string(tmp(1233).t["OzOM/q"]);
     const intl2 = tmp(1233).intl;
     obj[3] = intl2.string(tmp(1233).t["OzOM/q"]);
-    tmp4 = jsx(tmp(4929).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
+    tmp4 = jsx(tmp(4936).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
   }
   return tmp4;
 });

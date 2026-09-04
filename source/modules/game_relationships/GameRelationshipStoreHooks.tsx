@@ -1,12 +1,12 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12995
+// Function ID: 12996
 // Name: useGameRelationshipsByType
-// Dependencies: [32, 7413, 673, 586, 5384, 2]
+// Dependencies: [32, 7591, 673, 586, 5392, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 12730 (useGameRelationshipsByType)
+// Module 12995 (useGameRelationshipsByType)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "recountRelationshipTypes" /* 7413 */;
+import closure_3 from "recountRelationshipTypes" /* 7591 */;
 import { RelationshipTypes } from "ME" /* 673 */;
 
 const require = arg1;
@@ -19,7 +19,7 @@ export const useGameRelationshipsByType = function useGameRelationshipsByType(FR
   return callback(_require(586).useStateFromStores(items, () => {
     const items = [closure_1_3.getGameRelationshipsByType(closure_0), closure_1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5384).isVersionEqual), 1)[0];
+  }, items1, _require(5392).isVersionEqual), 1)[0];
 };
 export const useGameFriendsForUser = function useGameFriendsForUser(id) {
   const FRIEND = RelationshipTypes.FRIEND;
@@ -49,7 +49,7 @@ export const useHasGameRelationshipsForUser = function useHasGameRelationshipsFo
     const gameRelationshipsForUser = closure_1_3.getGameRelationshipsForUser(closure_0);
     const items = [gameRelationshipsForUser.length > 0, closure_1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5384).isVersionEqual), 1)[0];
+  }, items1, _require(5392).isVersionEqual), 1)[0];
 };
 export const useHasGameRelationshipsForUserByType = function useHasGameRelationshipsForUserByType(arg0, arg1) {
   const _require = arg0;
@@ -60,5 +60,5 @@ export const useHasGameRelationshipsForUserByType = function useHasGameRelations
     const gameRelationshipsForUserByType = closure_1_3.getGameRelationshipsForUserByType(closure_0, closure_1);
     const items = [gameRelationshipsForUserByType.length > 0, closure_1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5384).isVersionEqual), 1)[0];
+  }, items1, _require(5392).isVersionEqual), 1)[0];
 };

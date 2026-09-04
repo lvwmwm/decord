@@ -1,10 +1,10 @@
-// Module ID: 11398
-// Function ID: 11399
+// Module ID: 11505
+// Function ID: 11506
 // Name: _putRoleConnectionsConfigurations
-// Dependencies: [5, 673, 527, 706, 5593, 2]
+// Dependencies: [5, 673, 527, 706, 7069, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11398 (_putRoleConnectionsConfigurations)
+// Module 11505 (_putRoleConnectionsConfigurations)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -165,7 +165,7 @@ export const fetchRoleConnectionsConfiguration = function fetchRoleConnectionsCo
 
   });
 };
-export const putRoleConnectionsConfigurations = function putRoleConnectionsConfigurations(closure_1_4, id, arg2) {
+export const putRoleConnectionsConfigurations = function putRoleConnectionsConfigurations(closure_1_4, id, closure_11) {
   const self = this;
   const apply = _putRoleConnectionsConfigurations.apply;
   if (typeof apply === "unknown") {

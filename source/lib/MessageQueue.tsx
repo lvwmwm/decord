@@ -1,20 +1,20 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7766
+// Function ID: 7767
 // Name: items
-// Dependencies: [109, 4477, 1215, 4574, 673, 4471, 684, 7590, 3, 4701, 7591, 7215, 527, 1954, 38, 5081, 5083, 5087, 2]
+// Dependencies: [109, 4480, 1215, 4577, 673, 4474, 684, 7767, 3, 4708, 7768, 7393, 527, 1954, 38, 5088, 5090, 5095, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7589 (items)
+// Module 7766 (items)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
-import enqueueDefault from "enqueue" /* 7590 */;
-import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7591 */;
+import enqueueDefault from "enqueue" /* 7767 */;
+import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7768 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
-import closure_6 from "getUserAgnosticState" /* 4477 */;
+import closure_6 from "getUserAgnosticState" /* 4480 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "handleConnectionInfoChange" /* 4574 */;
+import closure_8 from "handleConnectionInfoChange" /* 4577 */;
 import ME from "ME" /* 673 */;
-import { MESSAGE_HTTP_TIMEOUT_RETRY_OPTIONS as closure_12 } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { MESSAGE_HTTP_TIMEOUT_RETRY_OPTIONS as closure_12 } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 
 let handleCommand = arg1;
 let closure_3 = ["channelId", "analyticsLocation"];
@@ -208,7 +208,7 @@ prototype["handleSend"] = function handleSend(nonce) {
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7215);
+  obj1 = handleCommand(7393);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(nonce, closure_3));
@@ -258,7 +258,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7215);
+  obj1 = handleCommand(7393);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(message, closure_4));

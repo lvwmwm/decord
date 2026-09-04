@@ -1,7 +1,7 @@
 // Module ID: 4125
 // Function ID: 4126
 // Name: applyOverwrites
-// Dependencies: [1983, 4121, 4122, 1390, 1429, 1985, 1215, 1386, 1991, 1984, 1908, 1921, 673, 503, 12, 4126, 4109, 11, 1954, 4127, 1988, 2]
+// Dependencies: [1983, 4121, 4122, 1390, 1430, 1985, 1215, 1386, 1991, 1984, 1908, 1921, 673, 503, 12, 4126, 4109, 11, 1954, 4127, 1988, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
 // Module 4125 (applyOverwrites)
@@ -14,7 +14,7 @@ import closure_4 from "initialize" /* 1983 */;
 import closure_5 from "initialize" /* 4121 */;
 import closure_6 from "storeThread" /* 4122 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import { hasPermission } from "GuildRoleRecordTypeTag" /* 1985 */;
 import closure_12 from "fetchFingerprint" /* 1215 */;
 import closure_13 from "ensureGuildLoaded" /* 1386 */;

@@ -1,10 +1,10 @@
-// Module ID: 10235
-// Function ID: 10236
+// Module ID: 10057
+// Function ID: 10058
 // Name: inlineChannelMentionReact
-// Dependencies: [19, 21, 8017, 1296, 1470, 2]
+// Dependencies: [19, 21, 8027, 1296, 1394, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 10235 (inlineChannelMentionReact)
+// Module 10057 (inlineChannelMentionReact)
 import noopAll from "noop" /* 19 */;
 import { jsxs } from "jsxProd" /* 21 */;
 
@@ -15,14 +15,14 @@ const result = require("set").fileFinishedImporting("modules/markup/native/Marku
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = u1F4AC(8017).smartOutput(inContent, output, key);
-    const obj3 = u1F4AC(8017);
+    let smartOutputResult = u1F4AC(8027).smartOutput(inContent, output, key);
+    const obj3 = u1F4AC(8027);
   } else {
     const obj = { children: null };
-    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8017).smartOutput(inContent, output, key)];
+    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8027).smartOutput(inContent, output, key)];
     obj[0] = items;
     smartOutputResult = jsxs(u1F4AC(1296).LegacyText, { children: null }, key.key);
-    const obj2 = u1F4AC(8017);
+    const obj2 = u1F4AC(8027);
   }
   return smartOutputResult;
 };
@@ -31,16 +31,16 @@ export function createInlineChannelReact(arg0) {
   if (arg0 === undefined) {
     str = "\u{1F4AC}";
   }
-  return (arg0, output, key) => {
+  return (node, output, key) => {
     const obj = { children: null };
-    const items = [str, str(closure_1_1[2]).smartOutput(tmp2, output, key), undefined];
+    const items = [str, str(closure_1_1[2]).smartOutput(node, output, key), undefined];
     obj[0] = items;
     closure_1_2(str(closure_1_1[3]).LegacyText, obj, key.key);
   };
 }
-export const inlineChannelReact = (arg0, output, key) => {
+export const inlineChannelReact = (node, output, key) => {
   const obj = { children: null };
-  const items = [str, str(closure_1_1[2]).smartOutput(tmp2, output, key), undefined];
+  const items = [str, str(closure_1_1[2]).smartOutput(node, output, key), undefined];
   obj[0] = items;
   closure_1_2(str(closure_1_1[3]).LegacyText, obj, key.key);
 };

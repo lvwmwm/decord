@@ -1,9 +1,9 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16653
+// Function ID: 16654
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1386, 1908, 4120, 4569, 1921, 673, 21, 4478, 709, 586, 1296, 4674, 1498, 4489, 5077, 4474, 1233, 4666, 3436, 10873, 4982, 8941, 5962, 8915, 2]
+// Dependencies: [19, 17, 1386, 1908, 4120, 4572, 1921, 673, 21, 4481, 709, 586, 1296, 4681, 1498, 4492, 5084, 4477, 1233, 4673, 3436, 10841, 4989, 10830, 7102, 8110, 2]
 
-// Module 16564 (DirectMessageIcon)
+// Module 16653 (DirectMessageIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 3436 */;
 import importAllResult from "noop" /* 19 */;
@@ -11,11 +11,11 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "sortActivity" /* 4569 */;
+import closure_8 from "sortActivity" /* 4572 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function DirectMessageIcon(channel) {
@@ -48,7 +48,7 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", statusStyle: "hourglass" };
+    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: false, isMobileOnline: null, isVROnline: true, statusStyle: null };
     obj[0] = stateFromStores.avatarDecoration;
     obj[1] = stateFromStores;
     obj[3] = tmp2(1296).AvatarSizes.NORMAL;
@@ -114,7 +114,7 @@ function ChannelSubtitle(channel) {
       if ("" !== stateFromStores) {
         obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: null };
         obj[3] = stateFromStores;
-        tmp8 = callback(tmp(4474).Text, obj);
+        tmp8 = callback(tmp(4477).Text, obj);
       }
     }
     return tmp8;
@@ -122,8 +122,8 @@ function ChannelSubtitle(channel) {
     const intl = tmp(1233).intl;
     let stringResult = intl.string(messagesProxyDefault["D+2/QP"]);
   } else {
-    stringResult = tmp(4666).channelTypeString(channel);
-    const tmpResult = tmp(4666);
+    stringResult = tmp(4673).channelTypeString(channel);
+    const tmpResult = tmp(4673);
   }
 }
 function ChannelNameHeaderContent(channel) {
@@ -241,7 +241,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   const tmp = callback2();
   const items1 = [tmp.container, channel.containerStyle];
-  return callback(channel(5077).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
+  return callback(channel(5084).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);

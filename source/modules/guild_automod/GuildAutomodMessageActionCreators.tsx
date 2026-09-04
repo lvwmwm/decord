@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11550
+// Function ID: 11551
 // Name: removeAutomodMessageNotice
 // Dependencies: [706, 2]
 // Exports: removeAutomodMessageNotice
 
-// Module 11432 (removeAutomodMessageNotice)
+// Module 11550 (removeAutomodMessageNotice)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

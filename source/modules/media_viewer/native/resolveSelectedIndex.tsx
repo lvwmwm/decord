@@ -1,10 +1,10 @@
-// Module ID: 8609
-// Function ID: 8610
+// Module ID: 8225
+// Function ID: 8226
 // Name: resolveSelectedIndex
 // Dependencies: [2]
 // Exports: resolveSelectedIndex
 
-// Module 8609 (resolveSelectedIndex)
+// Module 8225 (resolveSelectedIndex)
 import set from "set" /* 2 */;
 
 function resolveSelectedIndex(arg0) {

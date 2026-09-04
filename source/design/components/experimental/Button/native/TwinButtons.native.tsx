@@ -1,15 +1,15 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 8834
+// Function ID: 8835
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4478, 709, 4936, 4929, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4943, 4936, 2]
 // Exports: TwinButtons
 
-// Module 9004 (TwinButtons)
+// Module 8834 (TwinButtons)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles((arg0) => {
@@ -26,7 +26,7 @@ const result = require("set").fileFinishedImporting("design/components/experimen
 
 export const TwinButtons = function TwinButtons(children) {
   let _require;
-  let obj = _require(4936);
+  let obj = _require(4943);
   let tmp = callback(obj.useFontScale() > 1.2);
   _require = tmp;
   obj = {

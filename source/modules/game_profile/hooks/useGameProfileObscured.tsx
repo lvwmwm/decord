@@ -1,12 +1,12 @@
-// Module ID: 5065
-// Function ID: 5066
+// Module ID: 5072
+// Function ID: 5073
 // Name: useGameProfileObscured
-// Dependencies: [1921, 5066, 586, 2]
+// Dependencies: [1921, 5073, 586, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 5065 (useGameProfileObscured)
+// Module 5072 (useGameProfileObscured)
 import initialize from "initialize" /* 586 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5066 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5073 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

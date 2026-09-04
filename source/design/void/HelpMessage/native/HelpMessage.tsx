@@ -1,20 +1,20 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 14006
+// Function ID: 14007
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4478, 709, 685, 7720, 4433, 6235, 4438, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 685, 6550, 4436, 6556, 4441, 4477, 2]
 // Exports: default
 
-// Module 13974 (HelpMessage)
+// Module 14006 (HelpMessage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4438 */;
-import Text from "Text" /* 4474 */;
-import CircleXIcon from "CircleXIcon" /* 6235 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7720 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4441 */;
+import Text from "Text" /* 4477 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6550 */;
+import CircleXIcon from "CircleXIcon" /* 6556 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import int2hslRaw from "int2hslRaw" /* 685 */;
 
 require = arg1;

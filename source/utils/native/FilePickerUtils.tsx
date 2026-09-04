@@ -1,10 +1,10 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11155
+// Function ID: 11156
 // Name: _handleDocumentSelection
-// Dependencies: [5, 673, 11086, 1234, 4859, 1233, 4701, 2]
+// Dependencies: [5, 673, 11156, 1234, 4866, 1233, 4708, 2]
 // Exports: handleDocumentSelection
 
-// Module 11085 (_handleDocumentSelection)
+// Module 11155 (_handleDocumentSelection)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
@@ -115,7 +115,7 @@ function _handleDocumentSelection() {
               }
               dependencyMap = tmp54;
               c4 = 1;
-              let pick = callback(11086).pick;
+              let pick = callback(11156).pick;
               let obj8 = callback(1234);
               if (obj8.isIOS()) {
                 let obj3 = { mode: "open" };
@@ -129,24 +129,24 @@ function _handleDocumentSelection() {
               pick = pick(obj4);
               c5 = 3;
               c6 = 1;
-              const tmp61 = callback(11086);
+              const tmp61 = callback(11156);
             }
           } else if (2 === tmp7) {
             c4 = 0;
             c4 = closure_3;
-            obj3 = flag(11086);
+            obj3 = flag(11156);
             if (obj3.isErrorWithCode(c4)) {
-              if (c4.code === flag(11086).errorCodes.OPERATION_CANCELED) {
+              if (c4.code === flag(11156).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
               }
             }
-            obj4 = flag(4701);
+            obj4 = flag(4708);
             const obj5 = { error_message: null };
             const _JSON = JSON;
             obj5[0] = JSON.stringify(c4);
             obj4.trackWithMetadata(c4.MOBILE_FILE_PICKER_ERROR, obj5);
-            let obj6 = extensions(4859);
+            let obj6 = extensions(4866);
             obj6 = { title: null, body: null };
             const intl3 = flag(1233).intl;
             obj6[0] = intl3.string(flag(1233).t.rWHepR);
@@ -167,7 +167,7 @@ function _handleDocumentSelection() {
           } else {
             closure_3 = arg1;
             if (closure_3.some((size) => 0 === size.size)) {
-              obj = extensions(4859);
+              obj = extensions(4866);
               obj8 = { title: null, body: null };
               const intl = flag(1233).intl;
               obj8[0] = intl.string(flag(1233).t.B3vFdU);

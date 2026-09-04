@@ -1,14 +1,14 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16338
+// Function ID: 16339
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7394, 673, 706, 4714, 500, 1399, 7396, 527, 4166, 2]
+// Dependencies: [5, 7572, 673, 706, 4721, 500, 1400, 7574, 527, 4166, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 16252 (_fetchNotificationCenterItems)
+// Module 16338 (_fetchNotificationCenterItems)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getRelativeTimestamp from "getRelativeTimestamp" /* 7396 */;
+import getRelativeTimestamp from "getRelativeTimestamp" /* 7574 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_validate" /* 7394 */;
+import closure_4 from "_validate" /* 7572 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
@@ -100,7 +100,7 @@ function _fetchNotificationCenterItems() {
               c6 = 3;
               c7 = 1;
               let obj6 = { value: null, done: false };
-              obj6[0] = callback(4714).get(obj3);
+              obj6[0] = callback(4721).get(obj3);
               return obj6;
             }
           } else if (2 === tmp7) {

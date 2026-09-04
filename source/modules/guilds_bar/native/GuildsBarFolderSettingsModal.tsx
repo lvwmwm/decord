@@ -1,17 +1,17 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16213
+// Function ID: 16214
 // Name: GuildFolderSettingsScene
-// Dependencies: [32, 19, 17, 5390, 16128, 21, 4478, 8226, 5603, 4445, 16129, 2008, 709, 4927, 7717, 1233, 6001, 5608, 685, 14490, 5504, 586, 16126, 6017, 2]
+// Dependencies: [32, 19, 17, 5398, 16214, 21, 4481, 9287, 6921, 4448, 16215, 2008, 709, 4934, 6547, 1233, 5642, 5560, 685, 14522, 5579, 586, 16212, 6940, 2]
 // Exports: default
 
-// Module 16127 (GuildFolderSettingsScene)
+// Module 16213 (GuildFolderSettingsScene)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "insertUnsortedGuilds" /* 5390 */;
-import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 16128 */;
+import closure_7 from "insertUnsortedGuilds" /* 5398 */;
+import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 16214 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function GuildFolderSettingsScene(color) {
@@ -29,7 +29,7 @@ function GuildFolderSettingsScene(color) {
     obj.openLazy(color(closure_1_2[11])(closure_1_2[10], closure_1_2.paths), "RoleColorPicker", obj);
   }, items);
   obj[0] = onColorChange(709).space.PX_16;
-  obj[1] = 38 + onColorChange(5603)().insets.bottom;
+  obj[1] = 38 + onColorChange(6921)().insets.bottom;
   obj[4] = obj;
   obj = { spacing: onColorChange(709).space.PX_16, children: null };
   obj1 = { label: null, placeholder: null, value: null, onChange: null, maxLength: 32, autoFocus: true, isClearable: true };
@@ -39,18 +39,18 @@ function GuildFolderSettingsScene(color) {
   obj1[1] = intl2.string(color(1233).t.xV9hVh);
   obj1[2] = name;
   obj1[3] = onNameChange;
-  const items1 = [callback(color(7717).TextInput, obj1), ];
+  const items1 = [callback(color(6547).TextInput, obj1), ];
   const obj2 = { hasIcons: false, children: null };
   const obj3 = { label: null, subLabel: null, onPress: null, arrow: true, trailing: null };
   const intl3 = color(1233).intl;
   obj3[0] = intl3.string(color(1233).t.xpurRF);
   obj3[1] = color(685).int2hex(color);
   obj3[2] = callback;
-  obj3[4] = callback(onColorChange(14490), { color, style: tmp.colorBlock });
-  obj2[1] = callback(color(5608).TableRow, obj3);
-  items1[1] = callback(color(6001).TableRowGroup, obj2);
+  obj3[4] = callback(onColorChange(14522), { color, style: tmp.colorBlock });
+  obj2[1] = callback(color(5560).TableRow, obj3);
+  items1[1] = callback(color(5642).TableRowGroup, obj2);
   obj[1] = items1;
-  obj[5] = callback2(color(4927).Stack, obj);
+  obj[5] = callback2(color(4934).Stack, obj);
   return callback(closure_6, obj);
 }
 ({ Keyboard: c5, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -101,7 +101,7 @@ export default function GuildFolderSettingsModal(folderId) {
   callback = obj2.useCallback(() => {
     dependencyMap = first1;
     const guildFolders = callback1.getGuildFolders();
-    folderId(8226).saveGuildFolders(guildFolders.map((folderId) => {
+    folderId(9287).saveGuildFolders(guildFolders.map((folderId) => {
       let tmp = folderId;
       if (folderId.folderId === closure_0) {
         const obj = {};
@@ -112,11 +112,11 @@ export default function GuildFolderSettingsModal(folderId) {
       }
       return tmp;
     }));
-    let obj = folderId(8226);
-    const result = folderId(16126).hideGuildsBarFolderModal();
+    let obj = folderId(9287);
+    const result = folderId(16212).hideGuildsBarFolderModal();
   }, items2);
   callback1 = obj2.useCallback(() => {
-    const result = folderId(16126).hideGuildsBarFolderModal();
+    const result = folderId(16212).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
   const memo = obj2.useMemo(() => {
@@ -142,11 +142,11 @@ export default function GuildFolderSettingsModal(folderId) {
     };
     const intl = folderId(1233).intl;
     obj[1] = intl.string(folderId(1233).t.Dx7im5);
-    obj[2] = folderId(5504).getHeaderCloseButton(callback1);
+    obj[2] = folderId(5579).getHeaderCloseButton(callback1);
     if (closure_5) {
       const intl2 = tmp3(1233).intl;
-      let fn = tmp3(5504).getHeaderTextButton(intl2.string(tmp3(1233).t["R3BPH+"]), callback);
-      const tmp3Result = tmp3(5504);
+      let fn = tmp3(5579).getHeaderTextButton(intl2.string(tmp3(1233).t["R3BPH+"]), callback);
+      const tmp3Result = tmp3(5579);
     } else {
       fn = () => null;
     }
@@ -154,5 +154,5 @@ export default function GuildFolderSettingsModal(folderId) {
     return { [closure_1_13]: obj };
   }, items3);
   obj = { screens: memo, initialRouteName: c13 };
-  return callback(folderId(6017).Navigator, obj);
+  return callback(folderId(6940).Navigator, obj);
 };

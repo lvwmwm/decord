@@ -1,23 +1,23 @@
-// Module ID: 14741
-// Function ID: 14742
+// Module ID: 14822
+// Function ID: 14823
 // Name: UserRow
-// Dependencies: [19, 1921, 21, 4478, 7348, 5608, 4322, 1296, 5998, 4474, 1233, 2368, 6001, 2]
+// Dependencies: [19, 1921, 21, 4481, 7526, 5560, 4325, 1296, 7138, 4477, 1233, 2368, 5642, 2]
 // Exports: default
 
-// Module 14741 (UserRow)
+// Module 14822 (UserRow)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import Text from "Text" /* 4474 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import ActionSheet from "ActionSheet" /* 5998 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7348 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import Text from "Text" /* 4477 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import ActionSheet from "ActionSheet" /* 7138 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7526 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function UserRow(userActivity) {
@@ -31,7 +31,7 @@ function UserRow(userActivity) {
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = nameFromUserDefault.getName(user);
     obj[1] = topUserOrGuildDescription;
-    obj = { size: null, user: null, guildId: "accessible" };
+    obj = { size: null, user: null, guildId: "Array" };
     obj[0] = Button.AvatarSizes.SMALL;
     obj[1] = user;
     obj[2] = callback(Button.Avatar, obj);

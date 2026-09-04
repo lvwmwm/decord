@@ -1,15 +1,15 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13490
+// Function ID: 13491
 // Name: handleRevoke
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4204, 8494, 4753, 8651, 6239, 4474, 4929, 1233, 4074, 1296, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 4205, 11362, 4760, 8291, 6561, 4477, 4936, 1233, 4074, 1296, 2]
 
-// Module 13457 (handleRevoke)
+// Module 13490 (handleRevoke)
 import ThemesDefault from "Themes" /* 709 */;
-import resolveGiftCodeDefault from "resolveGiftCode" /* 8494 */;
+import resolveGiftCodeDefault from "resolveGiftCode" /* 11362 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { AnalyticsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 let require = arg1;

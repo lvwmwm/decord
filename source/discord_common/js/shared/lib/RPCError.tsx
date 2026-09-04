@@ -1,9 +1,9 @@
-// Module ID: 9521
-// Function ID: 9522
+// Module ID: 9484
+// Function ID: 9485
 // Name: prototype
 // Dependencies: [2]
 
-// Module 9521 (prototype)
+// Module 9484 (prototype)
 import set from "set" /* 2 */;
 
 const prototype = function RPCError(arg0, message) {

@@ -1,15 +1,15 @@
-// Module ID: 17701
-// Function ID: 17702
+// Module ID: 17781
+// Function ID: 17782
 // Name: handleChannelSelect
-// Dependencies: [1386, 4736, 1980, 17702, 17703, 500, 5495, 2]
+// Dependencies: [1386, 4743, 1980, 17782, 17783, 500, 7058, 2]
 
-// Module 17701 (handleChannelSelect)
+// Module 17781 (handleChannelSelect)
 import encodeProperties from "encodeProperties" /* 500 */;
-import initializeDefault from "initialize" /* 5495 */;
-import isNavigationTTIEnabled from "isNavigationTTIEnabled" /* 17702 */;
-import getLastBundleDefault from "getLastBundle" /* 17703 */;
+import initializeDefault from "initialize" /* 7058 */;
+import isNavigationTTIEnabled from "isNavigationTTIEnabled" /* 17782 */;
+import getLastBundleDefault from "getLastBundle" /* 17783 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reinjectEphemerals" /* 4736 */;
+import closure_4 from "reinjectEphemerals" /* 4743 */;
 import closure_5 from "handleConnectionOpen" /* 1980 */;
 
 require = arg1;
@@ -30,7 +30,7 @@ function handleChannelSelect(opensChannel) {
           fromChannelId = lastSelectedChannelId;
         }
         if (undefined === fromGuildId) {
-          channel = channel.getChannel(fromChannelId);
+          const channel = store.getChannel(fromChannelId);
           guildId = undefined;
           if (channel != null) {
             guildId = channel.getGuildId();
@@ -43,13 +43,22 @@ function handleChannelSelect(opensChannel) {
         obj = { spanTtiName: null, destinationKey: null, properties: null };
         obj[0] = encodeProperties.SpanTtiNames.CHANNEL;
         obj[1] = channelId;
-        obj = { trigger: "navigation", from_guild_id: null, to_guild_id: null, from_channel_id: null, to_channel_id: null, changed_guild: null, warm_message_cache: null };
+        obj = { trigger: "navigation", from_guild_id: null, to_guild_id: null, from_channel_id: null, to_channel_id: null, channel_type: null, changed_guild: null, warm_message_cache: null };
         obj[1] = fromGuildId;
         obj[2] = guildId;
         obj[3] = fromChannelId;
         obj[4] = channelId;
-        obj[5] = fromGuildId !== guildId;
-        obj[6] = closure_4.hasPresent(channelId);
+        const channel1 = store.getChannel(channelId);
+        let type;
+        if (channel1 != null) {
+          type = channel1.type;
+        }
+        if (type == null) {
+          type = null;
+        }
+        obj[5] = type;
+        obj[6] = fromGuildId !== guildId;
+        obj[7] = closure_4.hasPresent(channelId);
         obj[2] = obj;
         getLastBundleDefault.beginNavigation(obj);
         const obj3 = getLastBundleDefault;

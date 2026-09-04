@@ -1,12 +1,12 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14736
+// Function ID: 14737
 // Name: handleDisableAccount
-// Dependencies: [1908, 1921, 1233, 7768, 14640, 4858, 2]
+// Dependencies: [1908, 1921, 1233, 6924, 14721, 4865, 2]
 // Exports: default
 
-// Module 14655 (handleDisableAccount)
-import setDefault from "set" /* 4858 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14640 */;
+// Module 14736 (handleDisableAccount)
+import setDefault from "set" /* 4865 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14721 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
@@ -41,7 +41,7 @@ export default function handleDisableAccount() {
     obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     if (flag) {
       obj[0] = function onSubmit(password) {
-        return currentUser(7768).disableAccount(password, true);
+        return currentUser(6924).disableAccount(password, true);
       };
       const intl3 = tmp4(1233).intl;
       obj[1] = intl3.string(tmp4(1233).t["8lQ2rR"]).toUpperCase();
@@ -50,7 +50,7 @@ export default function handleDisableAccount() {
       const str3 = intl3.string(tmp4(1233).t["8lQ2rR"]);
     } else {
       obj[0] = function onSubmit(password) {
-        return currentUser(7768).disableAccount(password, false);
+        return currentUser(6924).disableAccount(password, false);
       };
       const intl2 = tmp4(1233).intl;
       obj[1] = intl2.string(tmp4(1233).t.jf5GGb).toUpperCase();

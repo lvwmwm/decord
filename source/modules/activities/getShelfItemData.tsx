@@ -1,11 +1,11 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9449
+// Function ID: 9450
 // Name: getShelfItemData
-// Dependencies: [4519, 2]
+// Dependencies: [4522, 2]
 // Exports: default
 
-// Module 9475 (getShelfItemData)
-import closure_0 from "addApplication" /* 4519 */;
+// Module 9449 (getShelfItemData)
+import closure_0 from "addApplication" /* 4522 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/getShelfItemData.tsx");
 

@@ -1,18 +1,16 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 6548
+// Function ID: 6549
 // Name: Input
-// Dependencies: [19, 17, 21, 4478, 709, 1233, 4474, 7719, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4199, 1233, 4477, 6549, 2]
 // Exports: Input
 
-// Module 7718 (Input)
+// Module 6548 (Input)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import ErrorText from "ErrorText" /* 7719 */;
+import getNodeText from "getNodeText" /* 4199 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -35,62 +33,63 @@ export const Input = function Input(arg0) {
   const tmp = callback2();
   ({ label, labelTrailing, labelId, description, errorMessage, required } = arg0);
   ({ children, containerStyle } = arg0);
-  if (typeof label === "string") {
+  let obj = getNodeText;
+  const nodeText = obj.getNodeText(label);
+  if (null != nodeText) {
     if (true === required) {
-      const intl = getSystemLocale.intl;
+      const intl = tmp2(1233).intl;
       const _HermesInternal = HermesInternal;
-      const combined = "" + label + " (" + intl.string(getSystemLocale.t.EkokLy) + ")";
+      const combined = "" + nodeText + " (" + intl.string(tmp2(1233).t.EkokLy) + ")";
     }
   }
-  let obj = { style: containerStyle, children: null };
+  obj = { style: containerStyle, children: null };
   if (null == label) {
     const items = [null, , , ];
     obj = { style: null, children: null };
     obj[0] = tmp.inputRow;
     obj[1] = children;
-    items[1] = callback(tmp8, obj);
-    let tmp15Result = null;
+    items[1] = callback(tmp9, obj);
+    let tmp14Result = null;
     if (null != description) {
-      obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
-      obj[2] = tmp.description;
-      obj[3] = description;
-      tmp15Result = tmp15(Text.Text, obj);
+      obj1 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
+      obj1[2] = tmp.description;
+      obj1[3] = description;
+      tmp14Result = tmp14(tmp2(4477).Text, obj1);
     }
-    items[2] = tmp15Result;
-    tmp15Result = null;
+    items[2] = tmp14Result;
+    tmp14Result = null;
     if (null != errorMessage) {
-      obj1 = { style: null, children: null };
-      obj1[0] = tmp.error;
-      obj1[1] = errorMessage;
-      tmp15Result = tmp15(ErrorText.ErrorText, obj1);
+      const obj2 = { style: null, children: null };
+      obj2[0] = tmp.error;
+      obj2[1] = errorMessage;
+      tmp14Result = tmp14(tmp2(6549).ErrorText, obj2);
     }
-    items[3] = tmp15Result;
+    items[3] = tmp14Result;
     obj[1] = items;
-    return tmp7(tmp8, obj);
+    return tmp8(tmp9, obj);
   } else if (null != labelTrailing) {
-    const obj2 = { style: null, children: null };
-    obj2[0] = tmp.labelWrapper;
-    const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: null, children: null };
-    obj3[2] = labelId;
-    obj3[3] = label;
-    const items1 = [callback(Text.Text, obj3), labelTrailing];
-    obj2[1] = items1;
-    let tmp7Result = tmp7(tmp8, obj2);
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.labelWrapper;
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: null, children: null };
+    obj4[2] = labelId;
+    obj4[3] = label;
+    const items1 = [callback(tmp2(4477).Text, obj4), labelTrailing];
+    obj3[1] = items1;
+    let tmp8Result = tmp8(tmp9, obj3);
   } else {
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: null, nativeID: null, accessibilityLabel: null, children: null };
-    obj4[2] = tmp.label;
-    obj4[3] = labelId;
-    obj4[4] = combined;
+    const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: null, nativeID: null, accessibilityLabel: null, children: null };
+    obj5[2] = tmp.label;
+    obj5[3] = labelId;
+    obj5[4] = combined;
     const items2 = [label, ];
-    tmp7Result = null;
+    tmp8Result = null;
     if (required) {
-      const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: null };
-      obj5[3] = [" ", "*"];
-      tmp7Result = tmp7(tmp22(4474).Text, obj5);
+      const obj6 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: null };
+      obj6[3] = [" ", "*"];
+      tmp8Result = tmp8(tmp2(4477).Text, obj6);
     }
-    items2[1] = tmp7Result;
-    obj4[5] = items2;
-    tmp7Result = tmp7(Text.Text, obj4);
-    tmp22 = require;
+    items2[1] = tmp8Result;
+    obj5[5] = items2;
+    tmp8Result = tmp8(tmp2(4477).Text, obj5);
   }
 };

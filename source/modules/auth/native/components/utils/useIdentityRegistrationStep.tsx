@@ -1,15 +1,15 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 15880
+// Function ID: 15881
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15784, 15785, 673, 1498, 15781, 1233, 15795, 11138, 7733, 15792, 688, 15783, 1499, 7748, 7742, 8666, 2]
+// Dependencies: [5, 32, 19, 15870, 15871, 673, 1498, 15867, 1233, 15881, 11209, 6888, 15878, 688, 15869, 1499, 6903, 6897, 8306, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15794 (useIdentityRegistrationStep)
+// Module 15880 (useIdentityRegistrationStep)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15784 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15785 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15870 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15871 */;
 import { AbortCodes } from "ME" /* 673 */;
 
 const require = arg1;
@@ -165,10 +165,8 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             obj7[1] = intl2.formatToPlainString(callback(navigation[8]).t.e5WzVa, obj8);
             obj7[2] = closure_1;
             obj7[3] = callback;
-            obj7[4] = function onPhoneTokenReceived(arg0) {
-              let obj = { email: "r", phone: "flexDirection", phoneToken: null };
-              obj[1] = closure_1;
-              obj[2] = arg0;
+            obj7[4] = function onPhoneTokenReceived(phoneToken) {
+              let obj = { email: "r", phone: closure_1, phoneToken };
               v3(obj);
               obj = { step: closure_2_10.PHONE_VERIFICATION, toStep: callback(closure_2_2[14]).getNextRegistrationTransitionStep(callback), actionType: closure_2_11.SUCCESS };
               _undefined(obj);

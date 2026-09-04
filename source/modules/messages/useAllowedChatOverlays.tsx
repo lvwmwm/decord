@@ -1,17 +1,17 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11355
+// Function ID: 11356
 // Name: ChatOverlays
-// Dependencies: [1385, 1386, 11279, 9483, 644, 4110, 9505, 2]
+// Dependencies: [1385, 1386, 11353, 9434, 644, 4110, 9454, 2]
 // Exports: default
 
-// Module 11281 (ChatOverlays)
+// Module 11355 (ChatOverlays)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4110 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9505 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9454 */;
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { ChatOverlays } from "ChatOverlays" /* 11279 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9483 */;
+import { ChatOverlays } from "ChatOverlays" /* 11353 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9434 */;
 
 require = arg1;
 const no_text_activity = "no_text_activity";

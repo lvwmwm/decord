@@ -1,10 +1,10 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12677
+// Function ID: 12678
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 1981, 1908, 21, 4478, 5501, 586, 1498, 5504, 1233, 4491, 4376, 5562, 6013, 1430, 4474, 7716, 4929, 7726, 2]
+// Dependencies: [5, 32, 19, 17, 1981, 1908, 21, 4481, 5637, 586, 1498, 5579, 1233, 4494, 4379, 7063, 5539, 1431, 4477, 6546, 4936, 6881, 2]
 // Exports: default
 
-// Module 12519 (ChannelPrompt)
+// Module 12677 (ChannelPrompt)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -12,7 +12,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "comparator" /* 1981 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

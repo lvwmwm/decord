@@ -1,14 +1,14 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 10811
+// Function ID: 10812
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 4502, 1921, 4954, 6163, 586, 1901, 5065, 1233, 2]
+// Dependencies: [19, 4505, 1921, 4961, 7247, 586, 1901, 5072, 1233, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9105 (useGameMentionsAsPlainText)
+// Module 10811 (useGameMentionsAsPlainText)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleLoadMessages" /* 4502 */;
+import closure_3 from "handleLoadMessages" /* 4505 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import regExp from "regExp" /* 4954 */;
+import regExp from "regExp" /* 4961 */;
 
 const require = arg1;
 ({ extractGameMentionIds: c5, GAME_MENTION_RAW_RE_GLOBAL: closure_6 } = regExp);

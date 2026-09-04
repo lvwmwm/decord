@@ -1,15 +1,15 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 10841
+// Function ID: 10842
 // Name: FacepileGroupDMAvatar
-// Dependencies: [19, 17, 1921, 21, 1296, 4478, 8109, 586, 1470, 2]
+// Dependencies: [19, 17, 1921, 21, 1296, 4481, 8743, 586, 1394, 2]
 // Exports: default
 
-// Module 10873 (FacepileGroupDMAvatar)
+// Module 10841 (FacepileGroupDMAvatar)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 class FacepileGroupDMAvatar {
@@ -71,7 +71,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj3);
     items3 = [, ];
     items3[0] = tmp11(require("Button").Avatar, obj1);
-    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Add Friend Modal" };
+    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "0px" };
     obj4[6] = animate;
     if (null == users) {
       obj5 = { source: null };
@@ -114,7 +114,7 @@ export default function GroupDMAvatar(pileSizeOverride) {
     if (0 !== channel.recipients.length) {
       if (0 !== stateFromStoresArray.length) {
         if (1 === stateFromStoresArray.length) {
-          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: "md", accessible: "primary", accessibilityLabel: null };
+          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: "previousElementSibling", accessible: null, accessibilityLabel: "nb" };
           obj[1] = status;
           obj[2] = style;
           obj[3] = size;

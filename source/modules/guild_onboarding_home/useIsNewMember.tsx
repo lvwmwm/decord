@@ -1,12 +1,12 @@
-// Module ID: 6079
-// Function ID: 6080
+// Module ID: 7163
+// Function ID: 7164
 // Name: useIsNewMember
-// Dependencies: [1983, 1991, 4108, 1398, 684, 586, 2]
+// Dependencies: [1983, 1991, 4108, 1399, 684, 586, 2]
 // Exports: default, getIsNewMember
 
-// Module 6079 (useIsNewMember)
+// Module 7163 (useIsNewMember)
 import setDefault from "set" /* 684 */;
-import hasFlag from "hasFlag" /* 1398 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import closure_3 from "initialize" /* 1983 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;

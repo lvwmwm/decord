@@ -1,15 +1,15 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16868
+// Function ID: 16869
 // Name: deriveProfileFramesMarketing
-// Dependencies: [12766, 8561, 12767, 2]
+// Dependencies: [8760, 8143, 8761, 2]
 // Exports: deriveProfileFramesMarketing, getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 16781 (deriveProfileFramesMarketing)
+// Module 16868 (deriveProfileFramesMarketing)
 import set from "set" /* 2 */;
-import apexExperimentDefault from "apexExperiment" /* 8561 */;
-import useCanPurchaseFrames from "useCanPurchaseFrames" /* 12766 */;
-import apexExperiment from "apexExperiment" /* 12767 */;
-import apexExperimentDefault2 from "apexExperiment" /* 12767 */;
+import apexExperimentDefault from "apexExperiment" /* 8143 */;
+import useCanPurchaseFrames from "useCanPurchaseFrames" /* 8760 */;
+import apexExperiment from "apexExperiment" /* 8761 */;
+import apexExperimentDefault2 from "apexExperiment" /* 8761 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useProfileFramesMarketing.tsx");
 

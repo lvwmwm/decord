@@ -1,30 +1,30 @@
-// Module ID: 7391
-// Function ID: 7392
+// Module ID: 7569
+// Function ID: 7570
 // Name: updateGuildUnreadSentinel
-// Dependencies: [7392, 7394, 5457, 4122, 1390, 1215, 1386, 1908, 1217, 4120, 4493, 1980, 4702, 1921, 673, 1393, 4703, 7290, 11, 1911, 12, 4128, 2]
+// Dependencies: [7570, 7572, 5466, 4122, 1390, 1215, 1386, 1908, 1217, 4120, 4496, 1980, 4709, 1921, 673, 1393, 4710, 7468, 11, 1911, 12, 4128, 2]
 
-// Module 7391 (updateGuildUnreadSentinel)
+// Module 7569 (updateGuildUnreadSentinel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import clearAllDefault from "clearAll" /* 1217 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
 import doesThreadMembersActionAffectMe from "doesThreadMembersActionAffectMe" /* 4128 */;
-import useOptInEnabledForGuild from "useOptInEnabledForGuild" /* 7290 */;
-import closure_3 from "findOrCreateMessageRecord" /* 7392 */;
-import closure_4 from "_validate" /* 7394 */;
-import closure_5 from "rebuild" /* 5457 */;
+import useOptInEnabledForGuild from "useOptInEnabledForGuild" /* 7468 */;
+import closure_3 from "findOrCreateMessageRecord" /* 7570 */;
+import closure_4 from "_validate" /* 7572 */;
+import closure_5 from "rebuild" /* 5466 */;
 import closure_6 from "storeThread" /* 4122 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_10 from "fetchFingerprint" /* 1215 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
 import closure_12 from "createGuildRecordFromRust" /* 1908 */;
 import closure_13 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_14 from "generateOldThreadCutoff" /* 4493 */;
+import closure_14 from "generateOldThreadCutoff" /* 4496 */;
 import closure_15 from "handleConnectionOpen" /* 1980 */;
-import closure_16 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_16 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_17 from "mergeGuildAvatar" /* 1921 */;
 import { ChannelFlags } from "set" /* 1393 */;
-import ReadStateTypes from "ReadStateTypes" /* 4703 */;
+import ReadStateTypes from "ReadStateTypes" /* 4710 */;
 import { NULL_STRING_GUILD_ID } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

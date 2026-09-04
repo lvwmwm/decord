@@ -1,9 +1,9 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 10353
+// Function ID: 10354
 // Name: AutocompleteTypes
 // Dependencies: [2]
 
-// Module 10442 (AutocompleteTypes)
+// Module 10353 (AutocompleteTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteConstants.tsx");

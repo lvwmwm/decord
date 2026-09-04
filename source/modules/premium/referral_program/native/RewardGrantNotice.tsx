@@ -1,20 +1,20 @@
-// Module ID: 13341
-// Function ID: 13342
+// Module ID: 13374
+// Function ID: 13375
 // Name: OrbsGrantNotice
-// Dependencies: [19, 17, 21, 4478, 709, 13340, 11063, 4474, 1233, 5597, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 13373, 11022, 4477, 1233, 7073, 2]
 // Exports: default
 
-// Module 13341 (OrbsGrantNotice)
+// Module 13374 (OrbsGrantNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 5597 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 11063 */;
-import apexExperiment from "apexExperiment" /* 13340 */;
+import Text from "Text" /* 4477 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7073 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 11022 */;
+import apexExperiment from "apexExperiment" /* 13373 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function OrbsGrantNotice(nRewardsGranted) {
@@ -66,7 +66,7 @@ export default function RewardGrantNotice(arg0) {
       let tmp3 = callback(OrbsGrantNotice, obj);
     } else {
       tmp3 = null;
-      if (referralRewardType === tmp(13340).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp(13373).ReferralRewardType.DISCOUNT) {
         obj = { nRewardsGranted: null };
         obj[0] = nRewardsGranted;
         tmp3 = callback(DiscountGrantNotice, obj);

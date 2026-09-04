@@ -1,9 +1,9 @@
-// Module ID: 7018
-// Function ID: 7019
+// Module ID: 6399
+// Function ID: 6400
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7018 (metadata)
+// Module 6399 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShoesSpotIllustration-2x.png.js");

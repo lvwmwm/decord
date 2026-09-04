@@ -1,21 +1,21 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9045
+// Function ID: 9046
 // Name: VoicePanelAudioPhoneOutputSection
-// Dependencies: [19, 17, 4495, 9804, 1386, 4496, 9830, 673, 21, 4478, 4445, 644, 9832, 9833, 1233, 7704, 7705, 5614, 9800, 9901, 9667, 9902, 4298, 1372, 9918, 5631, 5630, 6015, 2]
+// Dependencies: [19, 17, 4498, 9016, 1386, 4499, 9044, 673, 21, 4481, 4448, 644, 9046, 9047, 1233, 5640, 5643, 5566, 9012, 9143, 9144, 9145, 4301, 1372, 9392, 7090, 7089, 5544, 2]
 
-// Module 9831 (VoicePanelAudioPhoneOutputSection)
+// Module 9045 (VoicePanelAudioPhoneOutputSection)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import setDefault from "set" /* 6015 */;
+import setDefault from "set" /* 5544 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "set" /* 4495 */;
-import closure_6 from "nativeEventEmitter" /* 9804 */;
+import closure_5 from "set" /* 4498 */;
+import closure_6 from "nativeEventEmitter" /* 9016 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleUpdate" /* 4496 */;
-import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_9 } from "VOICE_PANEL_SETTINGS_KEY" /* 9830 */;
+import closure_8 from "handleUpdate" /* 4499 */;
+import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_9 } from "VOICE_PANEL_SETTINGS_KEY" /* 9044 */;
 import { PlatformTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function VoicePanelAudioPhoneOutputSection() {
@@ -24,9 +24,9 @@ function VoicePanelAudioPhoneOutputSection() {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ activeDevice: store.getActiveAudioDevice(), availableDevices: store.getAudioDevices() }));
   availableDevices = stateFromStoresObject.availableDevices;
   closure_1 = importAllResult.useCallback((arg0) => {
-    availableDevices(9832).setAudioOutputDevice(arg0);
-    const obj = availableDevices(9832);
-    callback(4445).hideActionSheet(closure_9);
+    availableDevices(9046).setAudioOutputDevice(arg0);
+    const obj = availableDevices(9046);
+    callback(4448).hideActionSheet(closure_9);
   }, []);
   let tmp5 = null;
   if (availableDevices.length > 0) {
@@ -45,9 +45,9 @@ function VoicePanelAudioPhoneOutputSection() {
     };
     obj[3] = availableDevices.map((deviceId) => {
       let obj = { value: deviceId.deviceId, icon: null, label: null, subLabel: null };
-      obj = { source: availableDevices(9800).audioDeviceToIconMap[deviceId.simpleDeviceType] };
-      obj[1] = callback2(availableDevices(5614).TableRowIcon, obj);
-      obj[2] = availableDevices(9800).getAudioDeviceToDisplayText(deviceId);
+      obj = { source: availableDevices(9012).audioDeviceToIconMap[deviceId.simpleDeviceType] };
+      obj[1] = callback2(availableDevices(5566).TableRowIcon, obj);
+      obj[2] = availableDevices(9012).getAudioDeviceToDisplayText(deviceId);
       const deviceName = deviceId.deviceName;
       let length;
       if (deviceName != null) {
@@ -58,10 +58,10 @@ function VoicePanelAudioPhoneOutputSection() {
         deviceName1 = deviceId.deviceName;
       }
       obj[3] = deviceName1;
-      return callback2(availableDevices(7705).TableRadioRow, obj, deviceId.deviceId);
+      return callback2(availableDevices(5643).TableRadioRow, obj, deviceId.deviceId);
     });
-    obj[3] = callback(tmp2(7704).TableRadioGroup, obj);
-    tmp5 = callback(tmp2(9833).VoicePanelFormSection, obj);
+    obj[3] = callback(tmp2(5640).TableRadioGroup, obj);
+    tmp5 = callback(tmp2(9047).VoicePanelFormSection, obj);
   }
   return tmp5;
 }
@@ -72,8 +72,8 @@ function VoicePanelAudioConsoleSection(channel) {
   let stateFromStores;
   let stateFromStores1;
   closure_5 = undefined;
-  arr = arr(9901)();
-  dependencyMap = arr(9667)();
+  arr = arr(9143)();
+  dependencyMap = arr(9144)();
   let obj = channel(644);
   const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
@@ -125,7 +125,7 @@ function VoicePanelAudioConsoleSection(channel) {
     }
   }, items3);
   let obj2 = channel(644);
-  const tmp8 = !channel(4298).useIsDismissibleContentDismissed_UNSAFE(channel(1372).DismissibleContent.DONUT_MOBILE_NUX);
+  const tmp8 = !channel(4301).useIsDismissibleContentDismissed_UNSAFE(channel(1372).DismissibleContent.DONUT_MOBILE_NUX);
   closure_5 = tmp8;
   const items4 = [arr, tmp8];
   const effect = stateFromStores.useEffect(() => {
@@ -177,8 +177,8 @@ function VoicePanelAudioConsoleSection(channel) {
       return tmp5;
     });
     obj[3] = mapped.filter((arg0) => Boolean(arg0));
-    obj[3] = callback(tmp3(7704).TableRadioGroup, obj);
-    tmp10 = callback(tmp3(9833).VoicePanelFormSection, obj);
+    obj[3] = callback(tmp3(5640).TableRadioGroup, obj);
+    tmp10 = callback(tmp3(9047).VoicePanelFormSection, obj);
   }
   return tmp10;
 }
@@ -196,7 +196,7 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     obj = { title: null };
     const intl = tmp(1233).intl;
     obj[0] = intl.string(tmp(1233).t.iwxPM3);
-    obj[0] = callback(tmp(5630).BottomSheetTitleHeader, obj);
+    obj[0] = callback(tmp(7089).BottomSheetTitleHeader, obj);
     if (isConnectedToVoiceChannel) {
       isConnectedToVoiceChannel = tmp5(VoicePanelAudioPhoneOutputSection, {});
     }
@@ -209,7 +209,7 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     obj2[0] = items1;
     obj1[0] = closure_12(setDefault, obj2);
     obj[1] = callback(ScrollView, obj1);
-    tmp5Result = tmp5(tmp(5631).BottomSheet, obj);
+    tmp5Result = tmp5(tmp(7090).BottomSheet, obj);
     const tmp6 = ScrollView;
     const tmp7 = closure_12;
     const tmp9 = setDefault;

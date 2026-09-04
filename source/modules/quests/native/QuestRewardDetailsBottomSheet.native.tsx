@@ -1,17 +1,17 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11701
+// Function ID: 11702
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 11562, 4445, 11307, 11151, 7464, 1233, 586, 5631, 4927, 11565, 4474, 2]
+// Dependencies: [19, 17, 1921, 21, 4481, 709, 11699, 4448, 11415, 11222, 7641, 1233, 586, 7090, 4934, 11702, 4477, 2]
 // Exports: default
 
-// Module 11564 (QuestRewardDetailsBottomSheet)
+// Module 11701 (QuestRewardDetailsBottomSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import useQuests from "useQuests" /* 11307 */;
+import useQuests from "useQuests" /* 11415 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function QuestRewardDetailsBottomSheet(quest) {
@@ -38,20 +38,20 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(586);
   const items2 = [closure_5];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  obj1 = quest(11151);
+  obj1 = quest(11222);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { direction: "vertical", spacing: memo(709).space.PX_16, style: tmp.wrapper, children: null };
   obj = { align: "center", direction: "horizontal", spacing: memo(709).space.PX_16, children: null };
-  const items3 = [callback(memo(11565), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [callback(memo(11702), { quest, height: 56, width: 56, withAnimation: true }), ];
   obj1 = { direction: "vertical", spacing: memo(709).space.PX_4, style: tmp.rewardDetailsCopy, children: null };
   const obj2 = { variant: "eyebrow", color: "text-subtle", children: null };
   let intl = quest(1233).intl;
   obj2[2] = intl.string(quest(1233).t["jyYgZ+"]);
-  const items4 = [callback(quest(4474).Text, obj2), callback(quest(4474).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  const items4 = [callback(quest(4477).Text, obj2), callback(quest(4477).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   obj1[3] = items4;
-  items3[1] = callback2(quest(4927).Stack, obj1);
+  items3[1] = callback2(quest(4934).Stack, obj1);
   obj[3] = items3;
-  const items5 = [callback2(quest(4927).Stack, obj), ];
+  const items5 = [callback2(quest(4934).Stack, obj), ];
   let tmp9Result = null != memo1;
   if (tmp9Result) {
     const obj3 = { children: null };
@@ -60,13 +60,13 @@ function QuestRewardDetailsBottomSheet(quest) {
     const items6 = [tmp8(View, obj4), ];
     const obj5 = { variant: "text-md/normal", color: "text-subtle", children: null };
     obj5[2] = memo1;
-    items6[1] = tmp8(quest(4474).Text, obj5);
+    items6[1] = tmp8(quest(4477).Text, obj5);
     obj3[0] = items6;
     tmp9Result = tmp9(closure_8, obj3);
   }
   items5[1] = tmp9Result;
   obj[3] = items5;
-  return callback(quest(5631).BottomSheet, { startExpanded: true, children: callback2(quest(4927).Stack, obj) });
+  return callback(quest(7090).BottomSheet, { startExpanded: true, children: callback2(quest(4934).Stack, obj) });
 }
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
 createCacheKey = { wrapper: null, rewardDetailsCopy: null, separator: null };
@@ -80,9 +80,9 @@ let result = require("set").fileFinishedImporting("modules/quests/native/QuestRe
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = callback(11562).showQuestUnavailableAlert();
-    const obj = callback(11562);
-    callback2(4445).hideActionSheet();
+    const result = callback(11699).showQuestUnavailableAlert();
+    const obj = callback(11699);
+    callback2(4448).hideActionSheet();
   }, []);
   let obj = useQuests;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);

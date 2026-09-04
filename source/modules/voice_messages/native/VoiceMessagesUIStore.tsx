@@ -1,20 +1,20 @@
-// Module ID: 11761
-// Function ID: 11762
+// Module ID: 11892
+// Function ID: 11893
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11762, 641, 4217, 702, 4928, 2]
+// Dependencies: [11893, 641, 4218, 702, 4935, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11761 (VoiceMessageRecordingStatus)
+// Module 11892 (VoiceMessageRecordingStatus)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 702 */;
-import _mod4217 from "module_4217" /* 4217 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4928 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11762 */;
+import _mod4218 from "module_4218" /* 4218 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4935 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11893 */;
 import keys from "keys" /* 641 */;
 
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  obj = { voiceMessageAnimationState: _mod4217.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "PX_16", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flex", showVoiceMessagesTooltip: "exercise", savedVoiceMessageUploadData: "gesture", isVoiceMessageButtonMounted: "gesturing", isUsingHoldGesture: "hand" };
+  obj = { voiceMessageAnimationState: _mod4218.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "PX_16", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "flex", showVoiceMessagesTooltip: "M11 10h-1v2h1v-2ZM11 12v2H4v1h8v-3h-1Z", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: 0.75, isUsingHoldGesture: null };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
   obj[6] = [];
@@ -60,7 +60,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4928);
+    obj = waveformVersion(4935);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];

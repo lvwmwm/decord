@@ -1,14 +1,14 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7885
+// Function ID: 7886
 // Name: getForwardInfo
-// Dependencies: [7876, 1386, 1908, 4120, 4130, 1921, 1430, 1233, 4163, 4674, 6156, 2]
+// Dependencies: [7886, 1386, 1908, 4120, 4130, 1921, 1431, 1233, 4163, 4681, 7240, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7875 (getForwardInfo)
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+// Module 7885 (getForwardInfo)
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import resetCache from "resetCache" /* 4163 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6156 */;
-import closure_3 from "getGuild" /* 7876 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7240 */;
+import closure_3 from "getGuild" /* 7886 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
@@ -94,7 +94,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
         if (obj1.can(channel1.accessPermissions, channel1)) {
           obj4 = { snapshotIndex: null, footerInfo: null };
           obj4[0] = snapshotIndex;
-          const tmp3Result = tmp3(4674);
+          const tmp3Result = tmp3(4681);
           const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
           const obj5 = { originLabel: null, timestampLabel: null, accessibilityLabel: null };
           obj5[0] = channelName;

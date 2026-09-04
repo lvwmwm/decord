@@ -1,27 +1,27 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8566
+// Function ID: 8567
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4477, 1386, 4120, 8783, 8781, 673, 502, 21, 4478, 709, 5950, 4949, 4474, 4326, 4433, 586, 5077, 8784, 1498, 4916, 4925, 8778, 8776, 4701, 1350, 8786, 8790, 8791, 5562, 8794, 8795, 8796, 8797, 8802, 8803, 13003, 13004, 13005, 13006, 13007, 13008, 13009, 13011, 13013, 13014, 13015, 13016, 13017, 13018, 13019, 13022, 2]
+// Dependencies: [32, 19, 17, 4480, 1386, 4120, 8567, 8565, 673, 502, 21, 4481, 709, 5553, 4956, 4477, 4329, 4436, 586, 5084, 8568, 1498, 4923, 4932, 8562, 8560, 4708, 1350, 8570, 8574, 8575, 7063, 8578, 8579, 8580, 8581, 8586, 8587, 8965, 8966, 8967, 8968, 8969, 8970, 8971, 8982, 8985, 8986, 8991, 8992, 9005, 9006, 9007, 9010, 2]
 // Exports: default
 
-// Module 8782 (HeaderView)
+// Module 8566 (HeaderView)
 import ThemesDefault from "Themes" /* 709 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
-import Text from "Text" /* 4474 */;
-import ArrowDefault from "Arrow" /* 8784 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
+import Text from "Text" /* 4477 */;
+import ArrowDefault from "Arrow" /* 8568 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "getUserAgnosticState" /* 4477 */;
+import closure_8 from "getUserAgnosticState" /* 4480 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES" /* 8783 */;
-import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8781 */;
+import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES" /* 8567 */;
+import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8565 */;
 import ME from "ME" /* 673 */;
 import { Permissions } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function HeaderView(node) {
@@ -105,7 +105,7 @@ function ChildItem(child) {
   obj = { style: tmp.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0], children: null };
   obj = { style: tmp.childContainer, children: null };
   obj1 = { style: tmp.childContent, children: null };
-  const items1 = [callback2(child(4474).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
+  const items1 = [callback2(child(4477).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
@@ -113,14 +113,14 @@ function ChildItem(child) {
     const obj3 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
     obj3[0] = tmp.debugText;
     obj3[3] = report_type;
-    stateFromStores = tmp9(tmp5(4474).Text, obj3);
+    stateFromStores = tmp9(tmp5(4477).Text, obj3);
   }
   items1[1] = stateFromStores;
   obj1[1] = items1;
   const items2 = [closure_17(closure_6, obj1), callback2(ArrowDefault, {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
-  return callback2(child(5077).PressableHighlight, obj);
+  return callback2(child(5084).PressableHighlight, obj);
 }
 function ChildrenView(node) {
   const children = node.node.children;

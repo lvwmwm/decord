@@ -1,12 +1,12 @@
-// Module ID: 5583
-// Function ID: 5584
+// Module ID: 5518
+// Function ID: 5519
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 5583 (apexExperiment)
+// Module 5518 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enableElectronMultilangSpellcheck: true };

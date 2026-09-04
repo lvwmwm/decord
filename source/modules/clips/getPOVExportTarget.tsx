@@ -1,10 +1,10 @@
-// Module ID: 4548
-// Function ID: 4549
+// Module ID: 4551
+// Function ID: 4552
 // Name: getPOVExportTarget
 // Dependencies: [2]
 // Exports: default
 
-// Module 4548 (getPOVExportTarget)
+// Module 4551 (getPOVExportTarget)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/clips/getPOVExportTarget.tsx");

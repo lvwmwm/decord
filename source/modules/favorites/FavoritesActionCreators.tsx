@@ -1,30 +1,30 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 10152
+// Function ID: 10153
 // Name: getNextPositionFromChannels
-// Dependencies: [5, 1378, 1390, 1386, 4120, 1980, 4299, 1389, 1424, 673, 502, 1305, 1336, 12, 10333, 10336, 4858, 1233, 1369, 11, 10340, 10341, 1911, 1219, 10342, 10343, 10345, 2]
+// Dependencies: [5, 1378, 1390, 1386, 4120, 1980, 4302, 1389, 1425, 673, 502, 1305, 1336, 12, 10153, 10156, 4865, 1233, 1369, 11, 10162, 10163, 1911, 1219, 10166, 10167, 10169, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10332 (getNextPositionFromChannels)
+// Module 10152 (getNextPositionFromChannels)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import create from "create" /* 1305 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import setDefault from "set" /* 4858 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10333 */;
-import handleDCShownToUser from "handleDCShownToUser" /* 10342 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10343 */;
+import setDefault from "set" /* 4865 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 10166 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10167 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { resetFatigueCooldown } from "withContent" /* 1378 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "handleConnectionOpen" /* 4299 */;
+import closure_9 from "handleConnectionOpen" /* 4302 */;
 import closure_10 from "initializeFromUserSettings" /* 1389 */;
 import ME from "ME" /* 673 */;
 import { Permissions } from "sum" /* 502 */;
-import date from "date" /* 1424 */;
+import date from "date" /* 1425 */;
 
 require = arg1;
 function getNextPositionFromChannels(arg0) {
@@ -156,7 +156,7 @@ function getReachedLimit(arg0, arg1) {
 function showLimitReachedAlert(limit) {
   limit = limit.limit;
   if (limit.canUpsell) {
-    tmp(10336)(limit);
+    tmp(10156)(limit);
   } else {
     let obj = { title: null, body: null };
     const intl = getSystemLocale.intl;
@@ -165,8 +165,8 @@ function showLimitReachedAlert(limit) {
     obj = { count: null };
     obj[0] = limit;
     obj[1] = intl2.formatToPlainString(getSystemLocale.t.JaIyFi, obj);
-    tmp(4858).show(obj);
-    const tmpResult = tmp(4858);
+    tmp(4865).show(obj);
+    const tmpResult = tmp(4865);
   }
 }
 function onSaveFailed(status) {
@@ -429,7 +429,7 @@ function _addFavoriteChannelsToParent() {
                         flag = true;
                         let tmp47 = callback;
                         let tmp48 = dependencyMap;
-                        let obj3 = callback(10340);
+                        let obj3 = callback(10162);
                         let tmp50 = channel;
                         let type;
                         let tmp49 = dependencyMap;
@@ -457,7 +457,7 @@ function _addFavoriteChannelsToParent() {
                         favoriteChannels.guildVisible = BoolValue.create({ value: true });
                         let tmp63 = callback;
                         let tmp64 = dependencyMap;
-                        let obj4 = callback(10340);
+                        let obj4 = callback(10162);
                         let str = "auto";
                         let result1 = obj4.trackFavoritesGuildVisibilitySettingToggled("auto", true);
                       }

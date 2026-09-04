@@ -1,13 +1,13 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13605
+// Function ID: 13606
 // Name: create
-// Dependencies: [32, 1306, 1336, 1334, 13573, 2]
+// Dependencies: [32, 1306, 1336, 1334, 13606, 2]
 
-// Module 13572 (create)
+// Module 13605 (create)
 import _mod1306 from "module_1306" /* 1306 */;
 import create2 from "create" /* 1334 */;
 import defineProperty from "defineProperty" /* 1336 */;
-import create3 from "create" /* 13573 */;
+import create3 from "create" /* 13606 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType, MessageType as MessageType2, MessageType as MessageType3, MessageType as MessageType4, MessageType as MessageType5, MessageType as MessageType6, MessageType as MessageType7 } from "module_1306" /* 1306 */;
 
@@ -913,9 +913,9 @@ prototype6["internalBinaryRead"] = function internalBinaryRead(pos) {
   if (arg3 == null) {
     obj = self.create();
   }
-  if (pos.pos < pos.pos + arg1) {
-    [r10019, r10020] = callback(pos.tag(), 2);
-    const tmp3 = callback(pos.tag(), 2);
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    obj.notifyHighlights = pos.uint32();
   }
   return obj;
 };

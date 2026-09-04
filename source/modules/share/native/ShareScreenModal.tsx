@@ -1,22 +1,22 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 13909
+// Function ID: 13910
 // Name: onClose
-// Dependencies: [5, 32, 19, 1386, 13829, 21, 3, 4724, 8652, 586, 4491, 689, 13878, 2]
+// Dependencies: [5, 32, 19, 1386, 13861, 21, 3, 4731, 8292, 586, 4494, 689, 13910, 2]
 // Exports: default
 
-// Module 13877 (onClose)
+// Module 13909 (onClose)
 import timestampDefault from "timestamp" /* 3 */;
-import _modDef4724 from "module_4724" /* 4724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13829 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13861 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 let require = arg1;
 function onClose() {
-  _modDef4724.popWithKey(SHARE_SCREEN_MODAL_KEY);
+  _modDef4731.popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
 let closure_9 = new timestampDefault("ShareScreenModal");
 const tmp2 = new timestampDefault("ShareScreenModal");

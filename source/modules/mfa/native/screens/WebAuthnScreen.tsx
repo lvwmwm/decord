@@ -1,19 +1,19 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15593
+// Function ID: 15594
 // Name: AndroidAuthRadioGroup
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1233, 1296, 1234, 527, 7736, 15512, 14569, 7734, 15515, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 1233, 1296, 1234, 527, 6891, 15594, 14601, 6889, 15597, 2]
 // Exports: default
 
-// Module 15511 (AndroidAuthRadioGroup)
+// Module 15593 (AndroidAuthRadioGroup)
 import ThemesDefault from "Themes" /* 709 */;
-import _promptForRegisterCredentialDefault from "_promptForRegisterCredential" /* 7734 */;
-import MFAOptionScreenDefault from "MFAOptionScreen" /* 15512 */;
-import MFAButtonDefault from "MFAButton" /* 15515 */;
+import _promptForRegisterCredentialDefault from "_promptForRegisterCredential" /* 6889 */;
+import MFAOptionScreenDefault from "MFAOptionScreen" /* 15594 */;
+import MFAButtonDefault from "MFAButton" /* 15597 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function AndroidAuthRadioGroup(setAuthenticator) {
@@ -102,7 +102,7 @@ export default function WebAuthnScreen(arg0) {
   obj[0] = intl.string(finish(1233).t.saHocI);
   const intl2 = tmp5(1233).intl;
   obj[1] = intl2.string(finish(1233).t.YpMrqM);
-  obj[2] = challenge(finish(14569).KeyImage, {});
+  obj[2] = challenge(finish(14601).KeyImage, {});
   let shouldDisplayAndroidFidoSelector = _promptForRegisterCredentialDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj = { authenticatorSelection: null, setAuthenticator: null, inProgress: null };

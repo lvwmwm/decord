@@ -1,17 +1,17 @@
-// Module ID: 15542
-// Function ID: 15543
-// Dependencies: [19, 21, 7834, 6017, 7618, 10887, 15543, 2]
+// Module ID: 15624
+// Function ID: 15625
+// Dependencies: [19, 21, 7844, 6940, 7795, 10856, 15625, 2]
 
-// Module 15542
-import setWarningBoostsDefault from "setWarningBoosts" /* 15543 */;
+// Module 15624
+import setWarningBoostsDefault from "setWarningBoosts" /* 15625 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo(function DevToolsGuildPowerupsModal() {
-  let obj = _require(6017);
+  let obj = _require(6940);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

@@ -1,10 +1,10 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7439
+// Function ID: 7440
 // Name: PlayStationVoiceExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1469, 2]
 
-// Module 7261 (PlayStationVoiceExperiment)
-import getUnitIdDefault from "getUnitId" /* 1468 */;
+// Module 7439 (PlayStationVoiceExperiment)
+import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const obj = { 1: null };
 obj[1] = { allowPlayStationStaging: true };

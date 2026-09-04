@@ -1,12 +1,12 @@
-// Module ID: 7325
-// Function ID: 7326
+// Module ID: 7503
+// Function ID: 7504
 // Name: fromServer
-// Dependencies: [7300, 7301, 7299, 675, 673, 4523, 2]
+// Dependencies: [7478, 7479, 7477, 675, 673, 4526, 2]
 
-// Module 7325 (fromServer)
-import closure_2 from "fromServer" /* 7300 */;
-import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7301 */;
-import { CollectiblesVariantProductRecord as closure_4 } from "fromServer" /* 7299 */;
+// Module 7503 (fromServer)
+import closure_2 from "fromServer" /* 7478 */;
+import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7479 */;
+import { CollectiblesVariantProductRecord as closure_4 } from "fromServer" /* 7477 */;
 import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items" /* 675 */;
 import { PREMIUM_TYPE_NONE } from "ME" /* 673 */;
 
@@ -26,7 +26,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   }
   const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
   let mapped;
-  const tmp5 = sku_id(4523)(prices);
+  const tmp5 = sku_id(4526)(prices);
   if (bundled_products != null) {
     mapped = bundled_products.map(fromServer.fromServer);
   }

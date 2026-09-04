@@ -1,16 +1,16 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 10946
+// Function ID: 10947
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 17, 673, 21, 4478, 709, 10984, 10741, 4724, 10995, 2008, 6255, 4948, 4474, 1233, 4930, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 10947, 10672, 4731, 10958, 2008, 7320, 4955, 4477, 1233, 4937, 2]
 // Exports: default
 
-// Module 10983 (UnifiedGiftModalSuccessScreen)
+// Module 10946 (UnifiedGiftModalSuccessScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

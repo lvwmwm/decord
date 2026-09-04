@@ -1,14 +1,14 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 12056
+// Function ID: 12057
 // Name: getCollectionItemAssetUrl
-// Dependencies: [673, 1464, 1430, 2]
+// Dependencies: [673, 1465, 1431, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11925 (getCollectionItemAssetUrl)
+// Module 12056 (getCollectionItemAssetUrl)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import getAvatarURL from "getAvatarURL" /* 1430 */;
-import handleImageLoad from "handleImageLoad" /* 1464 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import handleImageLoad from "handleImageLoad" /* 1465 */;
 
 const Endpoints = ME.Endpoints;
 ({ API_ENDPOINT: c3, CDN_HOST: c4 } = window.GLOBAL_ENV);

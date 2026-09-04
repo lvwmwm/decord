@@ -1,14 +1,14 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12469
+// Function ID: 12470
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [19, 1908, 4364, 4365, 586, 4384, 1470, 2]
+// Dependencies: [19, 1908, 4367, 4368, 586, 4387, 1394, 2]
 // Exports: default
 
-// Module 12337 (useAvailableBoostCountForPowerup)
+// Module 12469 (useAvailableBoostCountForPowerup)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "calculateAppliedBoosts" /* 4364 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
+import closure_5 from "calculateAppliedBoosts" /* 4367 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
 
 const require = arg1;
 ({ GuildPowerupType: closure_6, POWERUPS_INCLUDED_IN_LEVEL: error, LEVEL_SKU_ID_TO_BOOSTING_TIER: closure_8 } = BoostedGuildTiers);

@@ -1,9 +1,9 @@
-// Module ID: 6894
-// Function ID: 6895
+// Module ID: 6275
+// Function ID: 6276
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6894 (metadata)
+// Module 6275 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/Orb3dIllustration-2x.png.js");

@@ -1,14 +1,14 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 15001
+// Function ID: 15002
 // Name: useAndroidUnsyncedFilter
-// Dependencies: [19, 4477, 6093, 586, 4152, 10969, 2]
+// Dependencies: [19, 4480, 7177, 586, 4152, 8778, 2]
 // Exports: useAndroidUnsyncedFilter
 
-// Module 14919 (useAndroidUnsyncedFilter)
+// Module 15001 (useAndroidUnsyncedFilter)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "getUserAgnosticState" /* 4477 */;
-import closure_4 from "updateProduct" /* 6093 */;
+import closure_3 from "getUserAgnosticState" /* 4480 */;
+import closure_4 from "updateProduct" /* 7177 */;
 
 noop.useCallback;
 const result = set.fileFinishedImporting("modules/collectibles/native/useAndroidUnsyncedFilter.tsx");

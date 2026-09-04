@@ -1,12 +1,12 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 14471
+// Function ID: 14472
 // Name: _initialize
-// Dependencies: [4477, 4662, 706, 7296, 7346, 2]
+// Dependencies: [4480, 4669, 706, 7474, 7524, 2]
 
-// Module 14439 (_initialize)
+// Module 14471 (_initialize)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 4662 */;
-import closure_3 from "getUserAgnosticState" /* 4477 */;
+import initializeDefault from "initialize" /* 4669 */;
+import closure_3 from "getUserAgnosticState" /* 4480 */;
 
 const require = arg1;
 initializeDefault;
@@ -15,8 +15,8 @@ class CollectiblesMarketingManager extends tmp2 {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
       const value = closure_3.get("shop_include_unpublished");
-      let obj = callback(7296);
-      const CollectiblesMarketingReleaseType = callback(7346).CollectiblesMarketingReleaseType;
+      let obj = callback(7474);
+      const CollectiblesMarketingReleaseType = callback(7524).CollectiblesMarketingReleaseType;
       obj = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
       const collectiblesMarketings = obj.fetchCollectiblesMarketings(obj);
     };

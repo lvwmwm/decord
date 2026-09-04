@@ -1,26 +1,26 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12669
+// Function ID: 12670
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 12493, 21, 4478, 709, 8376, 6013, 1425, 4474, 1233, 1627, 4929, 1296, 1498, 6247, 6245, 12506, 4376, 12501, 2]
+// Dependencies: [5, 32, 19, 17, 12651, 21, 4481, 709, 8523, 5539, 1426, 4477, 1233, 1627, 4936, 1296, 1498, 7315, 6991, 12664, 4379, 12659, 2]
 // Exports: default
 
-// Module 12511 (HubEmailConnectionGuildSelectRow)
+// Module 12669 (HubEmailConnectionGuildSelectRow)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4474 */;
-import Button2 from "Button" /* 4929 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import Form from "Form" /* 8376 */;
+import Text from "Text" /* 4477 */;
+import Button2 from "Button" /* 4936 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import Form from "Form" /* 8523 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12493 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12651 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class HubEmailConnectionGuildSelectRow {

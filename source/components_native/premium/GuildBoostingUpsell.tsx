@@ -1,40 +1,40 @@
-// Module ID: 13417
-// Function ID: 13418
+// Module ID: 13450
+// Function ID: 13451
 // Name: FEATURES_PREMIUM_GUILD_USER
-// Dependencies: [19, 17, 5390, 1923, 21, 4478, 709, 13396, 1233, 8247, 13418, 13419, 13421, 9739, 13422, 8241, 13423, 10223, 13424, 12330, 13425, 8239, 13426, 9199, 586, 13312, 13427, 4413, 13217, 1362, 13226, 13227, 4474, 8375, 13431, 13432, 13433, 2]
+// Dependencies: [19, 17, 5398, 1923, 21, 4481, 709, 13429, 1233, 9304, 13451, 13452, 13454, 9681, 13455, 8687, 13456, 10043, 13457, 12462, 13458, 9300, 13459, 10164, 586, 13345, 13460, 4416, 13250, 1362, 13259, 13260, 4477, 9320, 13464, 13465, 13466, 2]
 // Exports: default
 
-// Module 13417 (FEATURES_PREMIUM_GUILD_USER)
+// Module 13450 (FEATURES_PREMIUM_GUILD_USER)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import Text from "Text" /* 4474 */;
-import UploadIcon from "UploadIcon" /* 8239 */;
-import ReactionIcon from "ReactionIcon" /* 8241 */;
-import BoostGemIcon from "BoostGemIcon" /* 8247 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 8375 */;
-import StarIcon from "StarIcon" /* 9199 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9739 */;
-import StickerIcon from "StickerIcon" /* 10223 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12330 */;
-import getSubscriptionPlansLoaded from "getSubscriptionPlansLoaded" /* 13312 */;
-import registerAssetDefault from "registerAsset" /* 13396 */;
-import registerAssetDefault2 from "registerAsset" /* 13418 */;
-import registerAssetDefault3 from "registerAsset" /* 13421 */;
-import registerAssetDefault4 from "registerAsset" /* 13422 */;
-import registerAssetDefault5 from "registerAsset" /* 13423 */;
-import registerAssetDefault6 from "registerAsset" /* 13424 */;
-import registerAssetDefault7 from "registerAsset" /* 13425 */;
-import registerAssetDefault8 from "registerAsset" /* 13426 */;
-import getGuildSubscriptionNoGuildsSource from "getGuildSubscriptionNoGuildsSource" /* 13427 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import Text from "Text" /* 4477 */;
+import ReactionIcon from "ReactionIcon" /* 8687 */;
+import UploadIcon from "UploadIcon" /* 9300 */;
+import BoostGemIcon from "BoostGemIcon" /* 9304 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9320 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9681 */;
+import StickerIcon from "StickerIcon" /* 10043 */;
+import StarIcon from "StarIcon" /* 10164 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12462 */;
+import getSubscriptionPlansLoaded from "getSubscriptionPlansLoaded" /* 13345 */;
+import registerAssetDefault from "registerAsset" /* 13429 */;
+import registerAssetDefault2 from "registerAsset" /* 13451 */;
+import registerAssetDefault3 from "registerAsset" /* 13454 */;
+import registerAssetDefault4 from "registerAsset" /* 13455 */;
+import registerAssetDefault5 from "registerAsset" /* 13456 */;
+import registerAssetDefault6 from "registerAsset" /* 13457 */;
+import registerAssetDefault7 from "registerAsset" /* 13458 */;
+import registerAssetDefault8 from "registerAsset" /* 13459 */;
+import getGuildSubscriptionNoGuildsSource from "getGuildSubscriptionNoGuildsSource" /* 13460 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "insertUnsortedGuilds" /* 5390 */;
+import closure_5 from "insertUnsortedGuilds" /* 5398 */;
 import { FractionalPremiumStates } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -61,7 +61,7 @@ class FEATURES_PREMIUM_GUILD_USER {
       const obj = {};
       const merged = Object.assign(arg0);
       obj.color = callback2(709).unsafe_rawColors.GUILD_BOOSTING_PINK;
-      return callback3(callback(13419).BoostTier3Icon, obj);
+      return callback3(callback(13452).BoostTier3Icon, obj);
     };
     items[1] = obj;
     obj1 = { icon: require("registerAsset"), label: null, color: null, IconComponent: null };
@@ -94,15 +94,15 @@ export default function GuildBoostingUpsell(arg0) {
   }
   obj = { style: tmp.root, children: null };
   obj = { style: tmp.header, children: null };
-  obj1 = { style: tmp.imgPremiumGuild, source: tmp7(13217) };
+  obj1 = { style: tmp.imgPremiumGuild, source: tmp7(13250) };
   const items1 = [callback(closure_4, obj1), , , ];
   obj2 = { style: tmp.logoPremiumGuild, source: null };
   const tmp8 = useThemeDefault();
   const tmp9 = FractionalPremiumStates;
   if (tmp2Result.isThemeDark(tmp8)) {
-    let tmp7Result = tmp7(13226);
+    let tmp7Result = tmp7(13259);
   } else {
-    tmp7Result = tmp7(13227);
+    tmp7Result = tmp7(13260);
   }
   obj2[1] = tmp7Result;
   items1[1] = callback(closure_4, obj2);
@@ -121,7 +121,7 @@ export default function GuildBoostingUpsell(arg0) {
   obj5[4] = intl3.string(getSystemLocale.t.RvfRTB);
   items2[1] = callback(Text.Text, obj5);
   const obj6 = { style: tmp.features, features: null };
-  tmp7Result = tmp7(8375);
+  tmp7Result = tmp7(9320);
   obj6[1] = FEATURES_PREMIUM_GUILD_USER();
   items2[2] = callback(tmp7Result, obj6);
   const obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
@@ -167,7 +167,7 @@ export default function GuildBoostingUpsell(arg0) {
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(13431), {});
+      tmp13Result = tmp13(tmp7(13464), {});
     }
   }
   const items4 = [tmp13Result, , ];
@@ -178,7 +178,7 @@ export default function GuildBoostingUpsell(arg0) {
       const obj15 = { onLearnMorePremium: null, style: null };
       obj15[0] = onLearnMorePremium;
       obj15[1] = tmp.subscriptionUpsell;
-      tmp13Result = tmp13(tmp7(13433), obj15);
+      tmp13Result = tmp13(tmp7(13466), obj15);
     }
     items4[2] = tmp13Result;
     obj14[1] = items4;
@@ -192,16 +192,16 @@ export default function GuildBoostingUpsell(arg0) {
       obj17[0] = tmp.cardText;
       const intl12 = tmp2(1233).intl;
       obj17[2] = intl12.string(tmp2(1233).t.WRzob8);
-      const items5 = [tmp13(tmp2(4474).Text, obj17), , ];
+      const items5 = [tmp13(tmp2(4477).Text, obj17), , ];
       const obj18 = { style: null, variant: "text-md/bold", children: null };
       const items6 = [tmp.cardText];
       obj18[0] = items6;
       const intl13 = tmp2(1233).intl;
       obj18[2] = intl13.string(tmp2(1233).t.j4bXcm);
-      items5[1] = tmp13(tmp2(4474).Text, obj18);
+      items5[1] = tmp13(tmp2(4477).Text, obj18);
       const obj19 = { style: null };
       obj19[0] = tmp.guildList;
-      items5[2] = tmp13(tmp7(13432), obj19);
+      items5[2] = tmp13(tmp7(13465), obj19);
       obj16[0] = items5;
       let tmp19 = obj16;
     } else {
@@ -214,12 +214,12 @@ export default function GuildBoostingUpsell(arg0) {
       obj21[0] = items8;
       const intl10 = tmp2(1233).intl;
       obj21[2] = intl10.string(tmp2(1233).t.FHm4bZ);
-      items7[1] = tmp13(tmp2(4474).Text, obj21);
+      items7[1] = tmp13(tmp2(4477).Text, obj21);
       const obj22 = { style: null, variant: "text-md/medium", children: null };
       obj22[0] = tmp.cardText;
       const intl11 = tmp2(1233).intl;
       obj22[2] = intl11.string(tmp2(1233).t.PSLiiu);
-      items7[2] = tmp13(tmp2(4474).Text, obj22);
+      items7[2] = tmp13(tmp2(4477).Text, obj22);
       obj16[0] = items7;
       tmp19 = obj16;
     }

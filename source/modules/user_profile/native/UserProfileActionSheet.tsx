@@ -1,28 +1,28 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8131
+// Function ID: 8132
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8081, 6010, 673, 5632, 21, 4478, 5633, 4217, 1627, 586, 8125, 5962, 5982, 8091, 4166, 8575, 5080, 8550, 8920, 8921, 8922, 8565, 8556, 8535, 8545, 8927, 1492, 5501, 8564, 4413, 4197, 709, 8918, 8928, 8127, 1978, 8126, 695, 4333, 4445, 1498, 8915, 5631, 1296, 8929, 1233, 4204, 8934, 1234, 6255, 8936, 9071, 12727, 8527, 5946, 12855, 1305, 2]
+// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8091, 7148, 673, 7091, 21, 4481, 6567, 4218, 1627, 586, 8117, 7102, 7122, 8101, 4166, 8121, 5087, 8132, 8145, 8146, 8147, 8152, 8138, 8157, 8158, 8161, 1492, 5637, 8155, 4416, 4197, 709, 8130, 8162, 8112, 1978, 8118, 695, 4336, 4448, 1498, 8110, 7090, 1296, 8163, 1233, 4205, 8168, 1234, 7320, 8171, 12919, 12992, 8731, 7094, 13063, 1305, 2]
 
-// Module 8919 (UseAnimatedPosition)
+// Module 8131 (UseAnimatedPosition)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "handleFormOpen" /* 8081 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import closure_10 from "handleFormOpen" /* 8091 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import ME from "ME" /* 673 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(5633).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5633);
+  animatedPosition2 = animatedPosition(6567).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(6567);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -35,7 +35,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(4217).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4218).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {

@@ -1,10 +1,10 @@
-// Module ID: 13498
-// Function ID: 13499
+// Module ID: 13531
+// Function ID: 13532
 // Name: items1
-// Dependencies: [32, 19, 17, 673, 21, 4478, 7154, 709, 1233, 1994, 4474, 5077, 1296, 13499, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4481, 7334, 709, 1233, 1994, 4477, 5084, 1296, 13532, 2]
 // Exports: default
 
-// Module 13498 (items1)
+// Module 13531 (items1)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
@@ -13,7 +13,7 @@ import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -150,7 +150,7 @@ export default function GuildBoostingMarketingFaq() {
   obj = { style: tmp.heading, variant: "heading-xxl/bold", children: null };
   const intl = _require(1233).intl;
   obj[2] = intl.string(_require(1233).t.HPJ6Nj);
-  let items = [callback2(_require(4474).Heading, obj), ];
+  let items = [callback2(_require(4477).Heading, obj), ];
   const tmp2 = callback(React.useState(null), 2);
   items[1] = callback2(View, {
     style: tmp.list,

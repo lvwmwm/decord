@@ -1,12 +1,12 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8143
+// Function ID: 8144
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: useIsProfileFramesEnabled
 
-// Module 8561 (apexExperiment)
+// Module 8143 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-collectibles-profile-frames", kind: "user", defaultConfig: { enableProfileFrames: false }, variations: { 0: { enableProfileFrames: false }, 1: { enableProfileFrames: true } } });
 const result = set.fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFramesExperiment.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 17154
-// Function ID: 17155
+// Module ID: 17240
+// Function ID: 17241
 // Name: handleMessageCreate
-// Dependencies: [1215, 1921, 5495, 17155, 2]
+// Dependencies: [1215, 1921, 7058, 17241, 2]
 
-// Module 17154 (handleMessageCreate)
-import initializeDefault from "initialize" /* 5495 */;
-import _backgroundSync from "_backgroundSync" /* 17155 */;
+// Module 17240 (handleMessageCreate)
+import initializeDefault from "initialize" /* 7058 */;
+import _backgroundSync from "_backgroundSync" /* 17241 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 

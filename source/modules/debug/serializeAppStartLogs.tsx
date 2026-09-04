@@ -1,10 +1,10 @@
-// Module ID: 10302
-// Function ID: 10303
+// Module ID: 10122
+// Function ID: 10123
 // Name: getDisplayName
-// Dependencies: [10, 12, 7536, 2]
+// Dependencies: [10, 12, 7713, 2]
 // Exports: default
 
-// Module 10302 (getDisplayName)
+// Module 10122 (getDisplayName)
 import set2 from "set" /* 2 */;
 
 function getDisplayName(tag) {

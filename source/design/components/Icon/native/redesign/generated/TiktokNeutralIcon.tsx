@@ -1,14 +1,14 @@
-// Module ID: 12150
-// Function ID: 12151
+// Module ID: 12286
+// Function ID: 12287
 // Name: TiktokNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 12151, 2]
+// Dependencies: [19, 21, 709, 4196, 12287, 2]
 // Exports: TiktokNeutralIcon
 
-// Module 12150 (TiktokNeutralIcon)
+// Module 12286 (TiktokNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12151 */;
+import registerAsset from "registerAsset" /* 12287 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16601
+// Function ID: 16602
 // Name: GuildChannelMemberRow
-// Dependencies: [19, 21, 10865, 2]
+// Dependencies: [19, 21, 10799, 2]
 // Exports: default
 
-// Module 16515 (GuildChannelMemberRow)
+// Module 16601 (GuildChannelMemberRow)
 import noopAll from "noop" /* 19 */;
-import UserRowSubLabelDefault from "UserRowSubLabel" /* 10865 */;
+import UserRowSubLabelDefault from "UserRowSubLabel" /* 10799 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

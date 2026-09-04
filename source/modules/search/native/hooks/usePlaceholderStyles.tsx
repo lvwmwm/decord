@@ -1,13 +1,13 @@
-// Module ID: 16483
-// Function ID: 16484
+// Module ID: 16569
+// Function ID: 16570
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4470, 7633, 1492, 586, 4217, 4479, 1296, 2]
+// Dependencies: [4473, 7810, 1492, 586, 4218, 4482, 1296, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 16483 (useFullscreenPlaceholderCount)
+// Module 16569 (useFullscreenPlaceholderCount)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7633 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7810 */;
 
 const require = arg1;
 let closure_5 = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
@@ -78,9 +78,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4217).withRepeat, withSequence: _require(4217).withSequence, withTiming: _require(4479).withTiming, STANDARD_EASING: _require(1296).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4218).withRepeat, withSequence: _require(4218).withSequence, withTiming: _require(4482).withTiming, STANDARD_EASING: _require(1296).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(4217).useAnimatedStyle(A);
+  return _require(4218).useAnimatedStyle(A);
 };

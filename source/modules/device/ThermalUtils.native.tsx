@@ -1,10 +1,10 @@
-// Module ID: 9476
-// Function ID: 9477
+// Module ID: 9450
+// Function ID: 9451
 // Name: NativeModules
-// Dependencies: [17, 1234, 9477, 4457, 641, 702, 2]
+// Dependencies: [17, 1234, 9451, 4460, 641, 702, 2]
 
-// Module 9476 (NativeModules)
-import enforcingDefault from "enforcing" /* 9477 */;
+// Module 9450 (NativeModules)
+import enforcingDefault from "enforcing" /* 9451 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 1234 */;
 import keys from "keys" /* 641 */;
@@ -27,7 +27,7 @@ let closure_5 = keys.create((arg0) => {
     } else {
       resolved = Promise.resolve(undefined);
     }
-    tmpResult = _require(4457);
+    tmpResult = _require(4460);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState1 = DCDDeviceThermalStateManager.getThermalState();

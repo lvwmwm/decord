@@ -1,15 +1,15 @@
-// Module ID: 5487
-// Function ID: 5488
+// Module ID: 7050
+// Function ID: 7051
 // Name: ack
-// Dependencies: [5457, 1390, 1386, 5488, 1921, 673, 706, 11, 2]
+// Dependencies: [5466, 1390, 1386, 7051, 1921, 673, 706, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 5487 (ack)
+// Module 7050 (ack)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "rebuild" /* 5457 */;
+import closure_2 from "rebuild" /* 5466 */;
 import { isReadableType } from "createChannelRecord" /* 1390 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "setIndex" /* 5488 */;
+import closure_5 from "setIndex" /* 7051 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import { CURRENT_APP_CONTEXT } from "ME" /* 673 */;
 
@@ -95,7 +95,7 @@ export const ackChannel = function ackChannel(channel, arg1) {
       tmpResult.dispatch(obj);
       const fromTimestampResult = tmpResult.fromTimestamp(Date.now());
     } else {
-      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: "has", force: null, context: "\u{1F60B}", location: 6 };
+      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: "video_upload_quality", force: false, context: false, location: false };
       obj[1] = id;
       obj[3] = true;
       obj[4] = true;

@@ -1,15 +1,15 @@
-// Module ID: 1430
-// Function ID: 1431
+// Module ID: 1431
+// Function ID: 1432
 // Name: getAvatarURL
-// Dependencies: [673, 1431, 1433, 1234, 1464, 1482, 1895, 1896, 14, 1897, 1899, 1900, 11, 1487, 2]
+// Dependencies: [673, 1432, 1434, 1234, 1465, 1482, 1895, 1896, 14, 1897, 1899, 1900, 11, 1487, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
-// Module 1430 (getAvatarURL)
+// Module 1431 (getAvatarURL)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import IntegerDefault from "Integer" /* 14 */;
-import DECORATION_TO_AVATAR_RATIO from "DECORATION_TO_AVATAR_RATIO" /* 1431 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import handleImageLoad from "handleImageLoad" /* 1464 */;
+import DECORATION_TO_AVATAR_RATIO from "DECORATION_TO_AVATAR_RATIO" /* 1432 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+import handleImageLoad from "handleImageLoad" /* 1465 */;
 import parseDefault from "parse" /* 1482 */;
 import Url from "Url" /* 1487 */;
 import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1896 */;
@@ -692,9 +692,9 @@ function getAvatarDecorationURL(canAnimate) {
               str2 = new URL("" + location.protocol + GLOBAL_ENV.API_ENDPOINT + result);
             }
             const searchParams = str2.searchParams;
-            tmp13Result = tmp13(1464);
+            tmp13Result = tmp13(1465);
             const _HermesInternal3 = HermesInternal;
-            const result1 = searchParams.set("size", "" + tmp13Result.getBestMediaProxySize(size * tmp13(1464).getDevicePixelRatio(), closure_12));
+            const result1 = searchParams.set("size", "" + tmp13Result.getBestMediaProxySize(size * tmp13(1465).getDevicePixelRatio(), closure_12));
             const searchParams2 = str2.searchParams;
             const _HermesInternal4 = HermesInternal;
             const result2 = searchParams2.set("passthrough", "" + flag);

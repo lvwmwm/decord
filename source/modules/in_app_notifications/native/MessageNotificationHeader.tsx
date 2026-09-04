@@ -1,21 +1,21 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10101
+// Function ID: 10102
 // Name: LocationText
-// Dependencies: [19, 17, 4470, 4130, 1921, 21, 4478, 709, 4474, 4674, 689, 5025, 5027, 4982, 586, 2]
+// Dependencies: [19, 17, 4473, 4130, 1921, 21, 4481, 709, 4477, 4681, 689, 5032, 5034, 4989, 586, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10283 (LocationText)
+// Module 10101 (LocationText)
 import initialize from "initialize" /* 586 */;
 import set from "set" /* 689 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function LocationText(channel) {
@@ -100,7 +100,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     obj[0] = tmp5;
     const tmp6 = obj;
   }
-  let tmp2Result = tmp2(4674);
+  let tmp2Result = tmp2(4681);
   const channelName = tmp2Result.computeChannelName(channel, closure_6, closure_5);
   const type = channel.type;
   let tmp10 = channelName;
@@ -139,7 +139,7 @@ export default function MessageNotificationHeader(locationTextColor) {
                   }
                   let channelName1 = null;
                   if (null != parentChannel) {
-                    tmp2Result = tmp2(4674);
+                    tmp2Result = tmp2(4681);
                     channelName1 = tmp2Result.computeChannelName(parentChannel, closure_6, closure_5);
                   }
                   if (null != channelName1) {
@@ -175,7 +175,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const items1 = [tmp.primaryText, tmp6];
     obj2[3] = items1;
     obj2[4] = author.nick;
-    tmp17Result = tmp17(tmp2(4474).Text, obj2);
+    tmp17Result = tmp17(tmp2(4477).Text, obj2);
   }
   const items2 = [tmp17Result, ];
   tmp17Result = null != tmp10;
@@ -206,11 +206,11 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
     obj[0] = tmp.secondaryTextContainer;
     obj = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: null, children: "\u00B7" };
     obj[3] = tmp.separator;
-    const items2 = [tmp4(tmp5(4474).Text, obj), ];
+    const items2 = [tmp4(tmp5(4477).Text, obj), ];
     obj1 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: null, children: null };
     obj1[3] = tmp.secondaryText;
     obj1[4] = secondaryText;
-    items2[1] = tmp4(tmp5(4474).Text, obj1);
+    items2[1] = tmp4(tmp5(4477).Text, obj1);
     obj[1] = items2;
     tmp2Result = tmp2(tmp3, obj);
   }

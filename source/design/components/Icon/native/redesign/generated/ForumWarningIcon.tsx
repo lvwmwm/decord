@@ -1,14 +1,14 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5043
+// Function ID: 5044
 // Name: ForumWarningIcon
-// Dependencies: [19, 21, 709, 4196, 5004, 2]
+// Dependencies: [19, 21, 709, 4196, 5011, 2]
 // Exports: ForumWarningIcon
 
-// Module 5036 (ForumWarningIcon)
+// Module 5043 (ForumWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5004 */;
+import registerAsset from "registerAsset" /* 5011 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

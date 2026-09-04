@@ -1,35 +1,35 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11964
+// Function ID: 11965
 // Name: mutable
-// Dependencies: [1494, 4217, 5606, 1893, 4342, 11215, 2]
+// Dependencies: [1494, 4218, 5534, 1893, 4345, 11286, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 11833 (mutable)
-import uDefault from "u" /* 11215 */;
-import module_4217 from "module_4217" /* 4217 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5606 */;
+// Module 11964 (mutable)
+import uDefault from "u" /* 11286 */;
+import module_4218 from "module_4218" /* 4218 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5534 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1893 */;
-import useKeyboardType from "useKeyboardType" /* 4342 */;
+import useKeyboardType from "useKeyboardType" /* 4345 */;
 import importDefaultResult from "subscribeToKeyboardUIStore" /* 1494 */;
 
-module_4217 = { customKeyboardHeight: null, keyboardHeight: null, keyboardType: null };
-module_4217[0] = useCustomKeyboardHeight.getCustomKeyboardHeight();
-module_4217[1] = useSystemKeyboardHeight.getSystemKeyboardHeight();
-module_4217[2] = useKeyboardType.getKeyboardType();
-module_4217 = module_4217.makeMutable(module_4217);
+module_4218 = { customKeyboardHeight: null, keyboardHeight: null, keyboardType: null };
+module_4218[0] = useCustomKeyboardHeight.getCustomKeyboardHeight();
+module_4218[1] = useSystemKeyboardHeight.getSystemKeyboardHeight();
+module_4218[2] = useKeyboardType.getKeyboardType();
+module_4218 = module_4218.makeMutable(module_4218);
 importDefaultResult((arg0) => {
   ({ customKeyboardHeight, keyboardHeight, keyboardType } = arg0);
-  uDefault(module_4217, { customKeyboardHeight, keyboardHeight, keyboardType });
+  uDefault(module_4218, { customKeyboardHeight, keyboardHeight, keyboardType });
 });
 function getKeyboardStateWorklet() {
-  return module_4217.get();
+  return module_4218.get();
 }
-getKeyboardStateWorklet.__closure = { keyboardStateSharedValue: module_4217 };
+getKeyboardStateWorklet.__closure = { keyboardStateSharedValue: module_4218 };
 getKeyboardStateWorklet.__workletHash = 1081829024717;
 getKeyboardStateWorklet.__initData = { code: "function getKeyboardStateWorklet_useKeyboardStateSharedValueNativeTsx1(){const{keyboardStateSharedValue}=this.__closure;return keyboardStateSharedValue.get();}" };
 const result = require("set").fileFinishedImporting("modules/keyboard/native/useKeyboardStateSharedValue.native.tsx");
 
 export default function useKeyboardStateSharedValue() {
-  return module_4217;
+  return module_4218;
 };
 export { getKeyboardStateWorklet };

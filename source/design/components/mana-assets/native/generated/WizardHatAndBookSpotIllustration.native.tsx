@@ -1,14 +1,14 @@
-// Module ID: 7137
-// Function ID: 7138
+// Module ID: 6518
+// Function ID: 6519
 // Name: WizardHatAndBookSpotIllustration
-// Dependencies: [21, 5502, 7138, 2]
+// Dependencies: [21, 5542, 6519, 2]
 // Exports: WizardHatAndBookSpotIllustration
 
-// Module 7137 (WizardHatAndBookSpotIllustration)
+// Module 6518 (WizardHatAndBookSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7138 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6519 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WizardHatAndBookSpotIllustration.native.tsx");

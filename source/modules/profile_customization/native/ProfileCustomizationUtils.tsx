@@ -1,14 +1,14 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8178
+// Function ID: 8179
 // Name: useUserProfileBannerBackgroundColor
-// Dependencies: [1430, 8121, 685, 2]
+// Dependencies: [1431, 8179, 685, 2]
 // Exports: getAvatarSource, useUserProfileBannerBackgroundColor
 
-// Module 8120 (useUserProfileBannerBackgroundColor)
+// Module 8178 (useUserProfileBannerBackgroundColor)
 import set from "set" /* 2 */;
 import int2hslRaw from "int2hslRaw" /* 685 */;
-import getAvatarURL2 from "getAvatarURL" /* 1430 */;
-import useDominantRGBFromImage from "useDominantRGBFromImage" /* 8121 */;
+import getAvatarURL2 from "getAvatarURL" /* 1431 */;
+import useDominantRGBFromImage from "useDominantRGBFromImage" /* 8179 */;
 
 const result = set.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 
@@ -52,8 +52,8 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL) {
         obj = {};
         const merged = Object.assign(getAvatarURL);
         obj.avatar = null;
-        userAvatarURL = tmp3(1430).getUserAvatarURL(obj);
-        const tmp3Result = tmp3(1430);
+        userAvatarURL = tmp3(1431).getUserAvatarURL(obj);
+        const tmp3Result = tmp3(1431);
       }
       memoizedImageSourceResult = obj.memoizedImageSource(userAvatarURL);
       tmp3 = require;

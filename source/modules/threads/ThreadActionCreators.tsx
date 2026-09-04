@@ -1,23 +1,23 @@
-// Module ID: 7520
-// Function ID: 7521
+// Module ID: 7697
+// Function ID: 7698
 // Name: patchThread
-// Dependencies: [5, 1390, 1215, 1386, 4120, 7521, 4122, 7531, 673, 1393, 527, 706, 4858, 1233, 4701, 7532, 7533, 7536, 7537, 1470, 1397, 2]
+// Dependencies: [5, 1390, 1215, 1386, 4120, 7698, 4122, 7708, 673, 1393, 527, 706, 4865, 1233, 4708, 7709, 7710, 7713, 7714, 1394, 1398, 2]
 
-// Module 7520 (patchThread)
+// Module 7697 (patchThread)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
-import dispatcherDefault2 from "dispatcher" /* 7532 */;
-import setActiveCommand from "setActiveCommand" /* 7533 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import dispatcherDefault2 from "dispatcher" /* 7709 */;
+import setActiveCommand from "setActiveCommand" /* 7710 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1390 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "listKey" /* 7521 */;
-import { PAGE_SIZE } from "listKey" /* 7521 */;
+import closure_8 from "listKey" /* 7698 */;
+import { PAGE_SIZE } from "listKey" /* 7698 */;
 import closure_10 from "storeThread" /* 4122 */;
-import closure_11 from "handleSummarizeThreadFinish" /* 7531 */;
+import closure_11 from "handleSummarizeThreadFinish" /* 7708 */;
 import ME from "ME" /* 673 */;
 import { ChannelFlags } from "set" /* 1393 */;
 
@@ -1124,7 +1124,7 @@ export default {
     const callback = c3;
     let MATCH_SOME = c4;
     if (c4 === undefined) {
-      MATCH_SOME = _require(1397).ThreadSearchTagSetting.MATCH_SOME;
+      MATCH_SOME = _require(1398).ThreadSearchTagSetting.MATCH_SOME;
     }
     return callback(function*() {
       let threads = tmp3;

@@ -1,15 +1,15 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15334
+// Function ID: 15335
 // Name: useShowLinkDecorationsSettingValue
-// Dependencies: [4470, 7896, 586, 14331, 11292, 1233, 2]
+// Dependencies: [4473, 7906, 586, 14363, 11400, 1233, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 15252 (useShowLinkDecorationsSettingValue)
+// Module 15334 (useShowLinkDecorationsSettingValue)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setFontSize from "setFontSize" /* 14331 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import createToggle from "createToggle" /* 11292 */;
+import setFontSize from "setFontSize" /* 14363 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 function useShowLinkDecorationsSettingValue() {

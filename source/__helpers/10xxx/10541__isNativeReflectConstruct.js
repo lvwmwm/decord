@@ -1,18 +1,19 @@
 // Module ID: 10541
 // Function ID: 10542
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10474, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10385, 10367, 10368]
 
 // Module 10541 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
-import now from "now" /* 10474 */;
-import NLCasualDateParser from "_classCallCheck" /* 41 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import now from "now" /* 10385 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
 let self = this;
+const ITCasualDateParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -47,7 +48,7 @@ if (self2) {
       fn = self.__importStar;
     }
     if (!fn) {
-      function o(arg0) {
+      function c(arg0) {
         let fn = Object.getOwnPropertyNames;
         if (!fn) {
           fn = (obj) => {
@@ -82,7 +83,7 @@ if (self2) {
         }
         const obj = {};
         if (null != __esModule) {
-          const arr = o(__esModule);
+          const arr = c(__esModule);
           for (let num = 0; num < arr.length; num = num + 1) {
             let tmp2 = num;
             if ("default" !== arr[num]) {
@@ -96,14 +97,15 @@ if (self2) {
       };
     }
     const _Object3 = Object;
-    let closure_7 = fn(now);
-    class NLCasualDateParser {
+    let closure_9 = fn(now);
+    const re10 = /(ora|oggi|stasera|questa sera|domani|dmn|ieri\s*sera)(?=\W|$)/i;
+    class ITCasualDateParser {
       constructor() {
         self = this;
-        tmp = NLCasualDateParser(this, NLCasualDateParser);
-        tmp2 = closure_2;
-        obj = closure_2(NLCasualDateParser);
-        tmp3 = closure_1;
+        tmp = closure_2(this, ITCasualDateParser);
+        tmp2 = closure_4;
+        obj = closure_4(ITCasualDateParser);
+        tmp3 = closure_3;
         if (_isNativeReflectConstruct()) {
           tmp7 = globalThis;
           _Reflect = Reflect;
@@ -117,35 +119,51 @@ if (self2) {
         return tmp3(self, constructResult);
       }
     }
-    _inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+    _inherits(ITCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
     let obj = { key: "innerPattern", value: null };
     obj[1] = function innerPattern(arg0) {
-      return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
+      return closure_10;
     };
     let items = [obj, ];
     obj = { key: "innerExtract", value: null };
-    obj[1] = function innerExtract(reference) {
-      const formatted = arg1[0].toLowerCase();
-      if ("nu" === formatted) {
-        return closure_7.now(reference.reference);
-      } else if ("vandaag" === formatted) {
-        return closure_7.today(reference.reference);
+    obj[1] = function innerExtract(refDate) {
+      refDate = refDate.refDate;
+      const str2 = arg1[0].toLowerCase();
+      const parsingComponents = refDate.createParsingComponents();
+      if ("ora" === str2) {
+        return closure_9.now(refDate.reference);
+      } else if ("oggi" === str2) {
+        return closure_9.today(refDate.reference);
+      } else if ("ieri" === str2) {
+        return closure_9.yesterday(refDate.reference);
       } else {
-        if ("morgen" !== formatted) {
-          if ("morgend" !== formatted) {
-            if ("gisteren" === formatted) {
-              return closure_7.yesterday(reference.reference);
-            } else {
-              return tmp2;
+        if ("domani" !== str2) {
+          if ("dmn" !== str2) {
+            if ("stasera" !== str2) {
+              if ("questa sera" !== str2) {
+                if (str2.match(/ieri\s*sera/)) {
+                  let tmp = refDate;
+                  if (refDate.getHours() > 6) {
+                    const _Date = Date;
+                    const date = new Date(refDate.getTime());
+                    date.setDate(date.getDate() - 1);
+                    tmp = date;
+                  }
+                  ITCasualDateParser(10367).assignSimilarDate(parsingComponents, tmp);
+                  parsingComponents.imply("hour", 0);
+                }
+                return parsingComponents;
+              }
             }
+            return closure_9.tonight(refDate.reference);
           }
         }
-        return closure_7.tomorrow(reference.reference);
+        return closure_9.tomorrow(refDate.reference);
       }
       const str = arg1[0];
     };
     items[1] = obj;
-    exports.default = _createClass(NLCasualDateParser, items);
+    exports.default = _createClass(ITCasualDateParser, items);
   } else {
     const _Object2 = Object;
   }

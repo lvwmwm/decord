@@ -1,9 +1,9 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7488
+// Function ID: 7489
 // Name: fromServer
 // Dependencies: [2]
 
-// Module 7310 (fromServer)
+// Module 7488 (fromServer)
 import set from "set" /* 2 */;
 
 let AssetDisplayConfigRecord;

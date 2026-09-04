@@ -1,10 +1,10 @@
-// Module ID: 11474
-// Function ID: 11475
+// Module ID: 11595
+// Function ID: 11596
 // Name: usePollMessageContextItemTypes
 // Dependencies: [1215, 586, 2]
 // Exports: default
 
-// Module 11474 (usePollMessageContextItemTypes)
+// Module 11595 (usePollMessageContextItemTypes)
 import initialize from "initialize" /* 586 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
 

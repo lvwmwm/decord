@@ -1,12 +1,12 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 8997
+// Function ID: 8998
 // Name: canUseMobileServerTagSettings
-// Dependencies: [1908, 4120, 673, 9758, 8086, 2]
+// Dependencies: [1908, 4120, 673, 8998, 8096, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9757 (canUseMobileServerTagSettings)
-import guildHasTag from "guildHasTag" /* 8086 */;
-import apexExperimentDefault from "apexExperiment" /* 9758 */;
+// Module 8997 (canUseMobileServerTagSettings)
+import guildHasTag from "guildHasTag" /* 8096 */;
+import apexExperimentDefault from "apexExperiment" /* 8998 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 import { Permissions } from "ME" /* 673 */;

@@ -1,13 +1,13 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12983
+// Function ID: 12984
 // Name: UserProfileNote
-// Dependencies: [19, 21, 4478, 8575, 12719, 7831, 12721, 5077, 1233, 4445, 12723, 6009, 4474, 2]
+// Dependencies: [19, 21, 4481, 8121, 12984, 7841, 12986, 5084, 1233, 4448, 12988, 7147, 4477, 2]
 // Exports: default
 
-// Module 12718 (UserProfileNote)
+// Module 12983 (UserProfileNote)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

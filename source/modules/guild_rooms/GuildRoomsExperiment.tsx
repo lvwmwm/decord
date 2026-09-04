@@ -1,12 +1,12 @@
-// Module ID: 4721
-// Function ID: 4722
+// Module ID: 4728
+// Function ID: 4729
 // Name: GUILD_ROOMS_EXPERIMENT_ID
-// Dependencies: [1991, 4389, 586, 2]
+// Dependencies: [1991, 4392, 586, 2]
 // Exports: getGuildRoomsConfig, useGuildRoomsExperiment
 
-// Module 4721 (GUILD_ROOMS_EXPERIMENT_ID)
+// Module 4728 (GUILD_ROOMS_EXPERIMENT_ID)
 import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import createExperiment from "createExperiment" /* 4389 */;
+import createExperiment from "createExperiment" /* 4392 */;
 
 const require = arg1;
 let items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }, { id: 5, label: "Enable Guild Rooms with Room 2 Default and Selector", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }];

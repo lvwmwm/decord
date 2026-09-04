@@ -1,14 +1,14 @@
-// Module ID: 12540
-// Function ID: 12541
-// Dependencies: [19, 17, 21, 4478, 1362, 1627, 12541, 12542, 4474, 1233, 2]
+// Module ID: 12698
+// Function ID: 12699
+// Dependencies: [19, 17, 21, 4481, 1362, 1627, 12699, 12700, 4477, 1233, 2]
 
-// Module 12540
+// Module 12698
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -28,9 +28,9 @@ const memoResult = importAllResult.memo((topViewHeight) => {
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
   let obj2 = AccessibilityAnnouncer;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12541);
+    let tmp4Result = tmp4(12699);
   } else {
-    tmp4Result = tmp4(12542);
+    tmp4Result = tmp4(12700);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];

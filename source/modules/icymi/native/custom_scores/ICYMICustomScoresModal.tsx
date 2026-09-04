@@ -1,15 +1,15 @@
-// Module ID: 16293
-// Function ID: 16294
+// Module ID: 16379
+// Function ID: 16380
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 7834, 4478, 709, 6017, 7618, 1233, 10887, 16294, 16295, 2]
+// Dependencies: [19, 21, 7844, 4481, 709, 6940, 7795, 1233, 10856, 16380, 16381, 2]
 // Exports: default
 
-// Module 16293 (ICYMICustomScoresModal)
+// Module 16379 (ICYMICustomScoresModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -23,7 +23,7 @@ const result = require("set").fileFinishedImporting("modules/icymi/native/custom
 
 export default function ICYMICustomScoresModal() {
   const _require = callback3();
-  let obj = _require(6017);
+  let obj = _require(6940);
   closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
@@ -47,12 +47,12 @@ export default function ICYMICustomScoresModal() {
       const obj = { title: null, headerLeft: null };
       const intl = lib(1233).intl;
       obj[0] = intl.string(lib(1233).t.jVshKt);
-      obj[1] = lib(7618).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(10887)());
+      obj[1] = lib(7795).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(10856)());
       return obj;
     },
     getComponent() {
-      return lib(16294).default;
+      return lib(16380).default;
     }
   };
   const items = [
@@ -60,11 +60,11 @@ export default function ICYMICustomScoresModal() {
     callback(closure_5.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: lib(7618).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: lib(7795).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return lib(16295).default;
+        return lib(16381).default;
       }
     })
   ];

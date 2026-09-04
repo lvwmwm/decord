@@ -1,9 +1,9 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17787
+// Function ID: 17788
 // Name: TaskType
 // Dependencies: [1233, 2662, 2]
 
-// Module 17707 (TaskType)
+// Module 17787 (TaskType)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2662 */;
 import set from "set" /* 2 */;

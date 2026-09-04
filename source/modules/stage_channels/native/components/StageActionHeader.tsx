@@ -1,34 +1,34 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 9956
+// Function ID: 9957
 // Name: HideStageChannelCallIcon
-// Dependencies: [19, 17, 4494, 1386, 7391, 1908, 1391, 10016, 673, 21, 4478, 5501, 4326, 709, 695, 4701, 9547, 4724, 4728, 586, 10041, 10137, 1233, 4722, 1296, 4674, 5383, 5377, 4941, 4474, 8768, 8765, 10138, 10139, 8684, 9648, 10140, 10141, 9935, 10018, 10024, 10025, 10028, 10142, 10143, 2]
+// Dependencies: [19, 17, 4497, 1386, 7569, 1908, 1391, 9828, 673, 21, 4481, 5637, 4329, 709, 695, 4708, 9410, 4731, 4735, 586, 9853, 9957, 1233, 4729, 1296, 4681, 5391, 5385, 4948, 4477, 8552, 8549, 9958, 9959, 8324, 9591, 9960, 9961, 9749, 9830, 9836, 9837, 9842, 9962, 9963, 2]
 // Exports: HideChannelCallButton, closeStageModal
 
-// Module 10136 (HideStageChannelCallIcon)
+// Module 9956 (HideStageChannelCallIcon)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import openChannelCallModal from "openChannelCallModal" /* 4728 */;
-import componentDidMountDefault from "componentDidMount" /* 9547 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10041 */;
-import registerAssetDefault from "registerAsset" /* 10137 */;
-import registerAssetDefault2 from "registerAsset" /* 10139 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10142 */;
-import CameraButton from "CameraButton" /* 10143 */;
+import computeChannelNameDefault from "computeChannelName" /* 4681 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import openChannelCallModal from "openChannelCallModal" /* 4735 */;
+import componentDidMountDefault from "componentDidMount" /* 9410 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9853 */;
+import registerAssetDefault from "registerAsset" /* 9957 */;
+import registerAssetDefault2 from "registerAsset" /* 9959 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9962 */;
+import CameraButton from "CameraButton" /* 9963 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getParticipants" /* 4494 */;
+import closure_4 from "getParticipants" /* 4497 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7391 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7569 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_9 from "initialize" /* 10016 */;
+import closure_9 from "initialize" /* 9828 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -334,7 +334,7 @@ export const closeStageModal = function closeStageModal(id) {
   const obj3 = collectGuildAnalyticsMetadata;
   componentDidMountDefault.setHidden(false);
   const obj4 = componentDidMountDefault;
-  const obj5 = _modDef4724;
+  const obj5 = _modDef4731;
   obj5.popWithKey(openChannelCallModal.getVoiceChannelKey(id.id));
 };
 export { HideStageChannelCallIcon };

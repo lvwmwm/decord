@@ -1,28 +1,28 @@
-// Module ID: 7217
-// Function ID: 7218
+// Module ID: 7395
+// Function ID: 7396
 // Name: trackHeartbeat
-// Dependencies: [5, 5230, 1215, 5363, 4554, 673, 684, 3, 7218, 7219, 7220, 1205, 7221, 7224, 695, 7225, 592, 7227, 665, 706, 586, 511, 2]
+// Dependencies: [5, 5238, 1215, 5371, 4557, 673, 684, 3, 7396, 7397, 7398, 1205, 7399, 7402, 695, 7403, 592, 7405, 665, 706, 586, 511, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 7217 (trackHeartbeat)
+// Module 7395 (trackHeartbeat)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import _modDef1205 from "module_1205" /* 1205 */;
-import isForegrounded2 from "isForegrounded" /* 7218 */;
-import isActiveUserRoute2 from "isActiveUserRoute" /* 7219 */;
-import monotonicNowMs from "monotonicNowMs" /* 7220 */;
-import result2 from "result" /* 7227 */;
+import isForegrounded2 from "isForegrounded" /* 7396 */;
+import isActiveUserRoute2 from "isActiveUserRoute" /* 7397 */;
+import monotonicNowMs from "monotonicNowMs" /* 7398 */;
+import result2 from "result" /* 7405 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5230 */;
+import closure_4 from "_handleConnectionOpen" /* 5238 */;
 import importDefaultResult from "fetchFingerprint" /* 1215 */;
-import closure_6 from "checkIdleAFK" /* 5363 */;
-import importDefaultResult1 from "createRTCConnection" /* 4554 */;
+import closure_6 from "checkIdleAFK" /* 5371 */;
+import importDefaultResult1 from "createRTCConnection" /* 4557 */;
 import ME from "ME" /* 673 */;
-import isForegrounded from "isForegrounded" /* 7218 */;
-import isActiveUserRoute from "isActiveUserRoute" /* 7219 */;
+import isForegrounded from "isForegrounded" /* 7396 */;
+import isActiveUserRoute from "isActiveUserRoute" /* 7397 */;
 
 require = arg1;
 function trackHeartbeat() {
@@ -104,7 +104,7 @@ function _trackHeartbeat() {
             obj1.addBreadcrumb(obj3);
             let obj5 = { client_heartbeat_initialization_timestamp: null, client_heartbeat_version: 31 };
             obj5[0] = lib.createdAtTimestamp;
-            obj5 = num2(7224);
+            obj5 = num2(7402);
             const merged = Object.assign(obj5.getClientHeartbeatPiggybackProperties());
             const idleSince = store.getIdleSince();
             num2 = idleSince;
@@ -121,10 +121,10 @@ function _trackHeartbeat() {
             tmp40 = lib(695);
             track = tmp40.track;
             track(constants.CLIENT_HEARTBEAT, c4);
-            closure_19 = num2(7220).monotonicNowMs();
-            const obj8 = num2(7220);
-            num2 = num2(7221).drainClickstream();
-            const obj9 = num2(7221);
+            closure_19 = num2(7398).monotonicNowMs();
+            const obj8 = num2(7398);
+            num2 = num2(7399).drainClickstream();
+            const obj9 = num2(7399);
           } else {
             obj = lib(1205);
             const _Error = Error;
@@ -239,7 +239,7 @@ function validateClientSession(version) {
     let tmp4 = version;
     if (version.version !== result2.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7227).CLIENT_SESSION_STORAGE_VERSION);
+      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7405).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -619,15 +619,15 @@ export const initSessionHeartbeatScheduler = function initSessionHeartbeatSchedu
     obj[0] = setInterval(() => {
       let result = null != closure_24;
       if (result) {
-        result = callback(7225).shouldLogClientHeartbeatSkipped();
-        obj = callback(7225);
+        result = callback(7403).shouldLogClientHeartbeatSkipped();
+        obj = callback(7403);
       }
       if (result) {
         if (obj2.monotonicNowMs() - closure_19 > closure_11) {
           callback2(695).track(constants.CLIENT_HEARTBEAT_SKIPPED, { client_heartbeat_version: 31 });
           const obj3 = callback2(695);
         }
-        obj2 = callback(7220);
+        obj2 = callback(7398);
       }
     }, closure_11);
   }
@@ -642,9 +642,9 @@ export const getActiveSessionUnsafe = function getActiveSessionUnsafe() {
     let tmp7 = null;
     if (null != value) {
       let tmp8 = value;
-      if (value.version !== tmp2(7227).CLIENT_SESSION_STORAGE_VERSION) {
+      if (value.version !== tmp2(7405).CLIENT_SESSION_STORAGE_VERSION) {
         const _HermesInternal = HermesInternal;
-        logger.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(7227).CLIENT_SESSION_STORAGE_VERSION);
+        logger.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(7405).CLIENT_SESSION_STORAGE_VERSION);
         tmp8 = null;
       }
       tmp7 = tmp8;

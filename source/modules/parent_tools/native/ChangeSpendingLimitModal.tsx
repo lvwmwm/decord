@@ -1,16 +1,16 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14832
+// Function ID: 14833
 // Name: ChangeSpendingLimitScreen
-// Dependencies: [5, 19, 17, 21, 4478, 709, 8755, 4474, 1233, 2368, 14752, 4194, 4438, 4724, 4193, 6090, 8711, 8712, 4927, 7717, 11727, 5385, 4929, 5504, 11729, 2]
+// Dependencies: [5, 19, 17, 21, 4481, 709, 8518, 4477, 1233, 2368, 14833, 4194, 4441, 4731, 4193, 7174, 8351, 8352, 4934, 6547, 11858, 5393, 4936, 5579, 11860, 2]
 // Exports: default
 
-// Module 14751 (ChangeSpendingLimitScreen)
+// Module 14832 (ChangeSpendingLimitScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function ChangeSpendingLimitScreen(teenId) {
@@ -34,9 +34,9 @@ function ChangeSpendingLimitScreen(teenId) {
         const obj2 = { key: "SPENDING_CONTROLS_CHANGED", content: null, IconComponent: null, iconColor: "status-positive" };
         const intl2 = closure_1_0(1233).intl;
         obj2[1] = intl2.string(v0(2368)["2WKfG1"]);
-        obj2[2] = closure_1_0(4438).CircleCheckIcon;
+        obj2[2] = closure_1_0(4441).CircleCheckIcon;
         v0(4194).open(obj2);
-        let arr = v0(4724);
+        let arr = v0(4731);
         arr = arr.pop();
         dependencyMap = 0;
         const obj6 = v0(4194);
@@ -54,7 +54,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return applyArgumentsResult;
   }
   let formatToPlainStringResult = callback2();
-  let obj = _require(14752);
+  let obj = _require(14833);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, canSave, isSubmitting, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;
@@ -62,20 +62,20 @@ function ChangeSpendingLimitScreen(teenId) {
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      formatPriceResult = tmp2(6090).formatPrice(monthlySpend, tmp5);
-      const tmp2Result = tmp2(6090);
+      formatPriceResult = tmp2(7174).formatPrice(monthlySpend, tmp5);
+      const tmp2Result = tmp2(7174);
     }
   }
   obj = { spacing: _handleSave(709).space.PX_16, children: null };
   obj = { variant: "text-sm/normal", children: null };
   let intl = tmp2(1233).intl;
   obj[1] = intl.string(_handleSave(2368).IFguF2);
-  const items = [callback(_require(4474).Text, obj), ];
+  const items = [callback(_require(4477).Text, obj), ];
   obj1 = { spacing: _handleSave(709).space.PX_8, children: null };
   let obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
   let intl2 = tmp2(1233).intl;
   obj2[2] = intl2.string(_handleSave(2368)["1fHSu2"]);
-  const items1 = [callback(_require(4474).Text, obj2), , ];
+  const items1 = [callback(_require(4477).Text, obj2), , ];
   const obj3 = { accessibilityLabel: null, value: null, onChange: null, leadingText: null, placeholder: null, keyboardType: null, isClearable: true };
   const intl3 = tmp2(1233).intl;
   obj3[0] = intl3.string(_handleSave(2368)["1fHSu2"]);
@@ -93,7 +93,7 @@ function ChangeSpendingLimitScreen(teenId) {
     str = "decimal-pad";
   }
   obj3[5] = str;
-  const items2 = [callback(_require(7717).TextInput, obj3), ];
+  const items2 = [callback(_require(6547).TextInput, obj3), ];
   let tmp9Result = null;
   if (isOverspending) {
     const obj4 = { style: null, pointerEvents: "none" };
@@ -116,10 +116,10 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj5 = { children: null };
     items1[2] = null;
     obj1[1] = items1;
-    items[1] = tmp8(tmp2(4927).Stack, obj1);
+    items[1] = tmp8(tmp2(4934).Stack, obj1);
     obj[1] = items;
-    obj5[0] = tmp8(tmp2(4927).Stack, obj);
-    const items3 = [tmp9(tmp2(8712).ModalContent, obj5), ];
+    obj5[0] = tmp8(tmp2(4934).Stack, obj);
+    const items3 = [tmp9(tmp2(8352).ModalContent, obj5), ];
     if (isClearingCap) {
       let obj6 = { variant: "destructive", text: null, onPress: null, disabled: null, loading: null };
       const intl8 = tmp2(1233).intl;
@@ -143,23 +143,23 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj8 = { children: null };
     const obj9 = { children: null };
     const obj10 = { children: null };
-    const items4 = [tmp9(tmp2(4929).Button, obj7), ];
+    const items4 = [tmp9(tmp2(4936).Button, obj7), ];
     const obj11 = { variant: "tertiary", text: null, onPress: null };
     const intl9 = tmp2(1233).intl;
     obj11[1] = intl9.string(tmp2(1233).t["ETE/oC"]);
-    obj11[2] = tmp10(4724).pop;
-    items4[1] = tmp9(tmp2(4929).Button, obj11);
+    obj11[2] = tmp10(4731).pop;
+    items4[1] = tmp9(tmp2(4936).Button, obj11);
     obj10[0] = items4;
-    obj9[0] = tmp8(tmp2(5385).ButtonGroup, obj10);
-    items3[1] = tmp9(tmp2(11727).ModalFooter, obj9);
+    obj9[0] = tmp8(tmp2(5393).ButtonGroup, obj10);
+    items3[1] = tmp9(tmp2(11858).ModalFooter, obj9);
     obj8[0] = items3;
-    return tmp8(tmp2(8711).ModalScreen, obj8);
+    return tmp8(tmp2(8351).ModalScreen, obj8);
   } else if (isOverspending) {
     const obj12 = { style: null, children: null };
     obj12[0] = formatToPlainStringResult.warningRow;
     const obj13 = { size: "xs", color: null };
     obj13[1] = tmp10(709).colors.ICON_FEEDBACK_WARNING;
-    const items5 = [tmp9(tmp2(8755).WarningIcon, obj13), ];
+    const items5 = [tmp9(tmp2(8518).WarningIcon, obj13), ];
     const obj14 = { variant: "text-sm/normal", style: null, children: null };
     obj14[1] = formatToPlainStringResult.warningText;
     const intl6 = tmp2(1233).intl;
@@ -168,7 +168,7 @@ function ChangeSpendingLimitScreen(teenId) {
     obj15[1] = renewalDate;
     formatToPlainStringResult = intl6.formatToPlainString(tmp10(2368).Tk6x4X, obj15);
     obj14[2] = formatToPlainStringResult;
-    items5[1] = tmp9(tmp2(4474).Text, obj14);
+    items5[1] = tmp9(tmp2(4477).Text, obj14);
     obj12[1] = items5;
     tmp9Result = tmp8(tmp11, obj12);
   } else {
@@ -177,7 +177,7 @@ function ChangeSpendingLimitScreen(teenId) {
     const obj17 = { amount: null };
     obj17[0] = formatPriceResult;
     obj16[2] = intl5.formatToPlainString(tmp10(2368).pfAlRY, obj17);
-    tmp9Result = tmp9(tmp2(4474).Text, obj16);
+    tmp9Result = tmp9(tmp2(4477).Text, obj16);
   }
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
@@ -209,7 +209,7 @@ export default function ChangeSpendingLimitModal(teenId) {
         const obj = { variant: "text-md/semibold", children: null };
         const intl = callback(1233).intl;
         obj[1] = intl.string(callback2(2368).xMRO6A);
-        return callback3(callback(4474).Text, obj);
+        return callback3(callback(4477).Text, obj);
       },
       render() {
         return closure_1_6(closure_1_9, { teenId: closure_0 });
@@ -221,5 +221,5 @@ export default function ChangeSpendingLimitModal(teenId) {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: null };
   let intl = teenId(1233).intl;
   obj[2] = intl.string(teenId(1233).t["13/7kX"]);
-  return callback(teenId(11729).Modal, obj);
+  return callback(teenId(11860).Modal, obj);
 };

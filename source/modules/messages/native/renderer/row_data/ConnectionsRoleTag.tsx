@@ -1,10 +1,10 @@
-// Module ID: 8150
-// Function ID: 8151
+// Module ID: 13116
+// Function ID: 13117
 // Name: createConnectionsRoleTag
 // Dependencies: [17, 673, 709, 685, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 8150 (createConnectionsRoleTag)
+// Module 13116 (createConnectionsRoleTag)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;

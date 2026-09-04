@@ -1,11 +1,11 @@
 // Module ID: 10521
 // Function ID: 10522
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10468]
+// Dependencies: [41, 42, 93, 95, 98, 10379]
 
 // Module 10521 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10468 */;
-import JPMergeDateRangeRefiner from "_classCallCheck" /* 41 */;
+import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10379 */;
+import UKMergeDateRangeRefiner from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_1 from "_possibleConstructorReturn" /* 93 */;
 import closure_2 from "_getPrototypeOf" /* 95 */;
@@ -46,12 +46,12 @@ if (!fn) {
     return tmp;
   };
 }
-class JPMergeDateRangeRefiner {
+class UKMergeDateRangeRefiner {
   constructor() {
     self = this;
-    tmp = JPMergeDateRangeRefiner(this, JPMergeDateRangeRefiner);
+    tmp = UKMergeDateRangeRefiner(this, UKMergeDateRangeRefiner);
     tmp2 = closure_2;
-    obj = closure_2(JPMergeDateRangeRefiner);
+    obj = closure_2(UKMergeDateRangeRefiner);
     tmp3 = closure_1;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -66,14 +66,14 @@ class JPMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeDateRangeRefiner, fn(_isNativeReflectConstruct2).default);
+_inherits(UKMergeDateRangeRefiner, fn(_isNativeReflectConstruct2).default);
 const items = [
   {
     key: "patternBetween",
     value: function patternBetween() {
-      return /^\s*(から|－|ー|-|～|~)\s*$/i;
+      return /^\s*(і до|і по|до|по|-)\s*$/i;
     }
   }
 ];
 
-export default _createClass(JPMergeDateRangeRefiner, items);
+export default _createClass(UKMergeDateRangeRefiner, items);

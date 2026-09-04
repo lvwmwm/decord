@@ -1,16 +1,16 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 13981
+// Function ID: 13982
 // Name: initialize
-// Dependencies: [6135, 1386, 4398, 1921, 4497, 586, 706, 2]
+// Dependencies: [7219, 1386, 4401, 1921, 4500, 586, 706, 2]
 
-// Module 13949 (initialize)
+// Module 13981 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "getMemberListId" /* 6135 */;
+import closure_0 from "getMemberListId" /* 7219 */;
 import closure_1 from "ensureGuildLoaded" /* 1386 */;
-import closure_2 from "handleInviteData" /* 4398 */;
+import closure_2 from "handleInviteData" /* 4401 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "updateVoiceState" /* 4497 */;
+import closure_4 from "updateVoiceState" /* 4500 */;
 
 let obj = {};
 const PersistedStore = initializeDefault.PersistedStore;
@@ -58,21 +58,21 @@ obj = {
   GUILD_HEADER_MEMBER_COUNT: function handleMemberCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
     }
     obj[guildId].memberCount = guildId.count;
   },
   GUILD_HEADER_ONLINE_COUNT: function handleOnlineCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
     }
     obj[guildId].onlineCount = guildId.count;
   },
   GUILD_HEADER_ACTIVE_CHANNELS_COUNT: function handleActiveChannelsCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "HermesInternal", memberCount: "r" };
+      obj[guildId] = { activeChannelsCount: "ip", onlineCount: "isArray", memberCount: "isArray" };
     }
     obj[guildId].activeChannelsCount = guildId.count;
   }

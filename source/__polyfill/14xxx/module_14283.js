@@ -1,0 +1,31 @@
+// Module ID: 14283
+// Function ID: 14284
+// Dependencies: [14226, 14246]
+
+// Module 14283
+import call from "call" /* 14246 */;
+import getOwnPropertyDescriptor from "getOwnPropertyDescriptor" /* 14226 */;
+
+if (getOwnPropertyDescriptor) {
+  const _Object = Object;
+  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+}
+const tmp = call(prototype, "name");
+let tmp2 = tmp;
+if (tmp) {
+  tmp2 = "something" === function something() {
+
+  }.name;
+}
+let tmp3 = tmp;
+if (tmp) {
+  const _module = getOwnPropertyDescriptor;
+  let tmp5 = !_module;
+  if (_module) {
+    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
+    const tmp6 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
+  }
+  tmp3 = tmp5;
+}
+
+export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };

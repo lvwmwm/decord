@@ -1,14 +1,14 @@
-// Module ID: 8719
-// Function ID: 8720
+// Module ID: 8359
+// Function ID: 8360
 // Name: useIsExpressiveModalV2Enabled
-// Dependencies: [8720, 1467, 8708, 586, 2]
+// Dependencies: [8360, 1468, 8348, 586, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 8719 (useIsExpressiveModalV2Enabled)
+// Module 8359 (useIsExpressiveModalV2Enabled)
 import initialize from "initialize" /* 586 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8708 */;
-import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8348 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 require = arg1;
 ApexExperiment = { 1: null, 2: { enabled: true } };

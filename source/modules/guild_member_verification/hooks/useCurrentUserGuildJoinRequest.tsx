@@ -1,11 +1,11 @@
-// Module ID: 7676
-// Function ID: 7677
+// Module ID: 5500
+// Function ID: 5501
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [4300, 586, 2]
+// Dependencies: [4303, 586, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 7676 (useCurrentUserGuildJoinRequest)
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4300 */;
+// Module 5500 (useCurrentUserGuildJoinRequest)
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4303 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useCurrentUserGuildJoinRequest.tsx");

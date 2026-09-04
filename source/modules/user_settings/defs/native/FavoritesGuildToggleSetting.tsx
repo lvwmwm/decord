@@ -1,17 +1,17 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15248
+// Function ID: 15249
 // Name: toggle
-// Dependencies: [7896, 11292, 1233, 3178, 10333, 15165, 10332, 2]
+// Dependencies: [7906, 11400, 1233, 3178, 10153, 15249, 10152, 2]
 
-// Module 15164 (toggle)
+// Module 15248 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10332 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10333 */;
-import computeIsFavoritesGuildVisibleDefault from "computeIsFavoritesGuildVisible" /* 15165 */;
-import createToggle from "createToggle" /* 11292 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10152 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+import computeIsFavoritesGuildVisibleDefault from "computeIsFavoritesGuildVisible" /* 15249 */;
+import createToggle from "createToggle" /* 11400 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {

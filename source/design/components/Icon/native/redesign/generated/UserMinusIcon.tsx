@@ -1,14 +1,14 @@
-// Module ID: 4419
-// Function ID: 4420
+// Module ID: 4422
+// Function ID: 4423
 // Name: UserMinusIcon
-// Dependencies: [19, 21, 709, 4196, 4420, 2]
+// Dependencies: [19, 21, 709, 4196, 4423, 2]
 // Exports: UserMinusIcon
 
-// Module 4419 (UserMinusIcon)
+// Module 4422 (UserMinusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4420 */;
+import registerAsset from "registerAsset" /* 4423 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

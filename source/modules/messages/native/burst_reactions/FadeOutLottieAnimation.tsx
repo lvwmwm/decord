@@ -1,15 +1,15 @@
-// Module ID: 7582
-// Function ID: 7583
+// Module ID: 7759
+// Function ID: 7760
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 4470, 21, 4478, 586, 4217, 4479, 5953, 2]
+// Dependencies: [32, 19, 4473, 21, 4481, 586, 4218, 4482, 5484, 2]
 // Exports: default
 
-// Module 7582 (FadeOutLottieAnimation)
+// Module 7759 (FadeOutLottieAnimation)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ content: { width: "100%" } });
@@ -36,7 +36,7 @@ export default function FadeOutLottieAnimation(onComplete) {
   const effect = React.useEffect(() => {
     dependencyMap(false);
   }, []);
-  onComplete(4217);
+  onComplete(4218);
   class T {
     constructor() {
       if (closure_1) {
@@ -76,7 +76,7 @@ export default function FadeOutLottieAnimation(onComplete) {
       return;
     }
   }
-  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4479).withTiming, runOnJS: onComplete(4217).runOnJS, setIsFadeOut: tmp7 };
+  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4482).withTiming, runOnJS: onComplete(4218).runOnJS, setIsFadeOut: tmp7 };
   T.__closure = obj;
   T.__workletHash = 1137618554665;
   T.__initData = closure_8;
@@ -97,9 +97,9 @@ export default function FadeOutLottieAnimation(onComplete) {
       dependencyMap(true);
     };
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(first(5953), { style: null, speed: null, onAnimationFinish: null });
-    let tmp14Result = tmp14(first(4217).View, obj);
-    const tmp16 = first(5953);
+    obj[1] = jsx(first(5484), { style: null, speed: null, onAnimationFinish: null });
+    let tmp14Result = tmp14(first(4218).View, obj);
+    const tmp16 = first(5484);
   } else {
     tmp14Result = null;
   }

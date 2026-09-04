@@ -8,10 +8,10 @@
 import closure_0 from "noop" /* 19 */;
 
 
-export const useEventEmitter = function useEventEmitter(stateFromStores, onEmitEvent) {
-  const React = stateFromStores;
+export const useEventEmitter = function useEventEmitter(first, onEmitEvent) {
+  const React = first;
   closure_1 = onEmitEvent;
-  closure_2 = React.useRef(stateFromStores);
+  closure_2 = React.useRef(first);
   closure_3 = React.useRef(onEmitEvent);
   const insertionEffect = React.useInsertionEffect(() => {
     closure_2.current = closure_0;

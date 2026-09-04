@@ -1,10 +1,10 @@
-// Module ID: 6130
-// Function ID: 6131
+// Module ID: 7214
+// Function ID: 7215
 // Name: sanitizeThreadName
 // Dependencies: [2]
 // Exports: default
 
-// Module 6130 (sanitizeThreadName)
+// Module 7214 (sanitizeThreadName)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");

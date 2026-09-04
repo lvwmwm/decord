@@ -1,10 +1,10 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 16026
+// Function ID: 16027
 // Name: useIsGameCommunityServerPreview
 // Dependencies: [4121, 673, 586, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 15940 (useIsGameCommunityServerPreview)
+// Module 16026 (useIsGameCommunityServerPreview)
 import closure_2 from "initialize" /* 4121 */;
 import { JoinGuildSources } from "ME" /* 673 */;
 

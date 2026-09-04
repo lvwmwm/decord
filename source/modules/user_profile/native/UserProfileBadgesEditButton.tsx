@@ -1,15 +1,15 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14544
+// Function ID: 14545
 // Name: UserProfileBadgesEditButton
-// Dependencies: [19, 17, 21, 4478, 709, 9022, 5962, 4445, 14513, 2008, 9023, 1233, 14511, 9014, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 11130, 7102, 4448, 14545, 2008, 11131, 1233, 14543, 11122, 4477, 2]
 // Exports: default
 
-// Module 14512 (UserProfileBadgesEditButton)
+// Module 14544 (UserProfileBadgesEditButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
@@ -29,12 +29,12 @@ export default function UserProfileBadgesEditButton(arg0) {
   dependencyMap = undefined;
   const tmp = callback();
   _require = tmp;
-  let obj = _require(9022);
+  let obj = _require(11130);
   const isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "UserProfileBadgesEditButton" });
-  analyticsLocations = analyticsLocations(5962)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
   [][0] = analyticsLocations;
   if (isBadgeManagementEnabled) {
-    dependencyMap = tmp2(9023).getLegacyIconUrlByBadgeId(badges);
+    dependencyMap = tmp2(11131).getLegacyIconUrlByBadgeId(badges);
     let length;
     if (catalogBadges != null) {
       length = catalogBadges.length;
@@ -42,16 +42,16 @@ export default function UserProfileBadgesEditButton(arg0) {
     if (length == null) {
       length = badges.length;
     }
-    const substr = badges.slice(0, tmp2(9023).MAX_DISPLAYED_PROFILE_BADGES);
+    const substr = badges.slice(0, tmp2(11131).MAX_DISPLAYED_PROFILE_BADGES);
     let substr1;
     if (catalogBadges != null) {
-      substr1 = catalogBadges.slice(0, tmp2(9023).MAX_DISPLAYED_PROFILE_BADGES);
+      substr1 = catalogBadges.slice(0, tmp2(11131).MAX_DISPLAYED_PROFILE_BADGES);
     }
     if (substr1 == null) {
       substr1 = null;
     }
     const _Math = Math;
-    const diff = length - Math.min(length, tmp2(9023).MAX_DISPLAYED_PROFILE_BADGES);
+    const diff = length - Math.min(length, tmp2(11131).MAX_DISPLAYED_PROFILE_BADGES);
     let mapped;
     if (substr1 != null) {
       mapped = substr1.map((name) => name.name);
@@ -63,7 +63,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     obj = { badge_names: null, overflow_count: null };
     obj[0] = mapped.join(", ");
     obj[1] = diff;
-    const tmp2Result = tmp2(9023);
+    const tmp2Result = tmp2(11131);
     obj = { label: null, content: null, accessibilityValue: null, onPress: null };
     const intl2 = tmp2(1233).intl;
     obj[0] = intl2.string(tmp2(1233).t.l6w3Vj);
@@ -102,7 +102,7 @@ export default function UserProfileBadgesEditButton(arg0) {
       obj2[2] = tmp.overflowCount;
       const _HermesInternal = HermesInternal;
       obj2[3] = "+" + diff;
-      tmp14Result = tmp14(tmp2(4474).Text, obj2);
+      tmp14Result = tmp14(tmp2(4477).Text, obj2);
     }
     items[1] = tmp14Result;
     obj1[2] = items;
@@ -115,7 +115,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     }
     obj[2] = tmp19;
     obj[3] = tmp5;
-    return closure_6(tmp2(14511).UserProfileEditFormButton, obj);
+    return closure_6(tmp2(14543).UserProfileEditFormButton, obj);
   } else {
     return null;
   }

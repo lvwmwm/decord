@@ -1,7 +1,7 @@
 // Module ID: 4126
 // Function ID: 4127
 // Name: GuildMemberFlags
-// Dependencies: [1991, 4108, 1398, 586, 2]
+// Dependencies: [1991, 4108, 1399, 586, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
 
 // Module 4126 (GuildMemberFlags)

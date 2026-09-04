@@ -1,14 +1,14 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13278
+// Function ID: 13279
 // Name: useYouBarSettingsCustomHeaderPaddingTop
-// Dependencies: [1627, 7730, 1235, 2]
+// Dependencies: [1627, 6885, 1235, 2]
 // Exports: useYouBarSettingsCustomHeaderPaddingTop, useYouBarSettingsOutsideSafeAreaTop
 
-// Module 13245 (useYouBarSettingsCustomHeaderPaddingTop)
+// Module 13278 (useYouBarSettingsCustomHeaderPaddingTop)
 import set from "set" /* 2 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7730 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6885 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
 

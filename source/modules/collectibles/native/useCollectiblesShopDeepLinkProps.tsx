@@ -1,14 +1,14 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 15735
+// Function ID: 15736
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [19, 7297, 7314, 586, 7308, 2]
+// Dependencies: [19, 7475, 7492, 586, 7486, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 15653 (useCollectiblesShopDeepLinkProps)
+// Module 15735 (useCollectiblesShopDeepLinkProps)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "updateCategoriesAndProducts" /* 7297 */;
-import closure_4 from "items" /* 7314 */;
+import closure_3 from "updateCategoriesAndProducts" /* 7475 */;
+import closure_4 from "items" /* 7492 */;
 
 const useMemo = noop.useMemo;
 let closure_5 = {};

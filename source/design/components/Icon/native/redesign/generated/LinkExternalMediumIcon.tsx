@@ -1,14 +1,14 @@
-// Module ID: 13020
-// Function ID: 13021
+// Module ID: 9008
+// Function ID: 9009
 // Name: LinkExternalMediumIcon
-// Dependencies: [19, 21, 709, 4196, 13021, 2]
+// Dependencies: [19, 21, 709, 4196, 9009, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 13020 (LinkExternalMediumIcon)
+// Module 9008 (LinkExternalMediumIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 13021 */;
+import registerAsset from "registerAsset" /* 9009 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

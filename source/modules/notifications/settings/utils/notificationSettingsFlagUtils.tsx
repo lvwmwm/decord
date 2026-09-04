@@ -1,12 +1,12 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10079
+// Function ID: 10080
 // Name: resetGuildUnreadFlags
-// Dependencies: [682, 1398, 2]
+// Dependencies: [682, 1399, 2]
 // Exports: resetChannelUnreadFlags, resetGuildUnreadFlags, withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10259 (resetGuildUnreadFlags)
+// Module 10079 (resetGuildUnreadFlags)
 import set from "set" /* 2 */;
-import hasFlagAll from "hasFlag" /* 1398 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
 ({ GuildNotificationSettingsFlags: obj1, ChannelNotificationSettingsFlags: c3 } = MAX_FAVORITES);

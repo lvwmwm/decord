@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 11618
+// Module ID: 11748
+// Function ID: 11749
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1386, 673, 4471, 21, 4478, 709, 7211, 7437, 695, 5982, 5603, 586, 7820, 1233, 11618, 10382, 4929, 4724, 5950, 5504, 6017, 2]
+// Dependencies: [32, 5, 19, 17, 1386, 673, 4474, 21, 4481, 709, 7390, 7615, 695, 7122, 6921, 586, 7025, 1233, 11749, 10293, 4936, 4731, 5553, 5579, 6940, 2]
 // Exports: default
 
-// Module 11617 (_sendGiftIntentGif)
+// Module 11748 (_sendGiftIntentGif)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,9 +12,9 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function _sendGiftIntentGif() {

@@ -1,10 +1,10 @@
-// Module ID: 7537
-// Function ID: 7538
+// Module ID: 7714
+// Function ID: 7715
 // Name: convertServerThreadMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 7537 (convertServerThreadMember)
+// Module 7714 (convertServerThreadMember)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/threads/convertServerThreadMember.tsx");

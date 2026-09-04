@@ -1,13 +1,13 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11350
+// Function ID: 11351
 // Name: UnreadSettingNoticeImpressionTracking
-// Dependencies: [8911, 500, 2]
+// Dependencies: [8698, 500, 2]
 // Exports: default
 
-// Module 11276 (UnreadSettingNoticeImpressionTracking)
+// Module 11350 (UnreadSettingNoticeImpressionTracking)
 import set from "set" /* 2 */;
 import encodeProperties from "encodeProperties" /* 500 */;
-import trackImpressionDefault from "trackImpression" /* 8911 */;
+import trackImpressionDefault from "trackImpression" /* 8698 */;
 
 const result = set.fileFinishedImporting("modules/notifications/settings_unread_notice/UnreadSettingNoticeImpressionTracking.tsx");
 

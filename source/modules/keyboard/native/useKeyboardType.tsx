@@ -1,10 +1,10 @@
-// Module ID: 4342
-// Function ID: 4343
+// Module ID: 4345
+// Function ID: 4346
 // Name: useKeyboardType
-// Dependencies: [19, 1495, 1496, 4217, 1625, 2]
+// Dependencies: [19, 1495, 1496, 4218, 1625, 2]
 // Exports: default, getKeyboardContextForType, getKeyboardType, getKeyboardTypePrevious, useKeyboardContextForType, useKeyboardTypePrevious, useKeyboardTypeSharedValue, useKeyboardWillOpenSharedValue
 
-// Module 4342 (useKeyboardType)
+// Module 4345 (useKeyboardType)
 import context from "context" /* 1495 */;
 import computeEntryStateDefault from "computeEntryState" /* 1496 */;
 import closure_3 from "noop" /* 19 */;
@@ -54,7 +54,7 @@ export const useKeyboardTypeSharedValue = function useKeyboardTypeSharedValue() 
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1495).DEFAULT_APP_ENTRY_KEY;
   }
-  const obj2 = appEntryKey(4217);
+  const obj2 = appEntryKey(4218);
   sharedValue = obj2.useSharedValue(sharedValue(1496).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardType);
   const items = [appEntryKey, sharedValue];
   const effect = React.useEffect(() => appEntryKey(closure_1_2[2]).addKeyboardTypeChangedListener((type) => {
@@ -76,7 +76,7 @@ export const useKeyboardWillOpenSharedValue = function useKeyboardWillOpenShared
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1495).DEFAULT_APP_ENTRY_KEY;
   }
-  const obj2 = appEntryKey(4217);
+  const obj2 = appEntryKey(4218);
   sharedValue = obj2.useSharedValue(true === sharedValue(1496).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardContexts[appEntryKey(undefined, 1625).KeyboardTypes.SYSTEM].keyboardWillOpen);
   const items = [appEntryKey, sharedValue];
   const effect = React.useEffect(() => appEntryKey(closure_1_2[2]).addKeyboardWillOpenChangedListener((arg0, arg1) => {

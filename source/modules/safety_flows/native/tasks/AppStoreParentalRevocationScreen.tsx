@@ -1,25 +1,25 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17807
+// Function ID: 17808
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4478, 709, 4190, 8711, 8712, 4927, 4474, 1233, 2662, 11727, 17714, 10958, 8747, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4190, 8351, 8352, 4934, 4477, 1233, 2662, 11858, 17794, 10927, 8510, 2]
 // Exports: default
 
-// Module 17727 (AppStoreParentalRevocationScreen)
+// Module 17807 (AppStoreParentalRevocationScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2662 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import ModalScreen from "ModalScreen" /* 8711 */;
-import ModalContent from "ModalContent" /* 8712 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8747 */;
-import ModalActionButton from "ModalActionButton" /* 10958 */;
-import ModalFooter from "ModalFooter" /* 11727 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17714 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import ModalScreen from "ModalScreen" /* 8351 */;
+import ModalContent from "ModalContent" /* 8352 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8510 */;
+import ModalActionButton from "ModalActionButton" /* 10927 */;
+import ModalFooter from "ModalFooter" /* 11858 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17794 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -32,7 +32,7 @@ const result = require("set").fileFinishedImporting("modules/safety_flows/native
 export default function AppStoreParentalRevocationScreen() {
   const tmp = callback3();
   const callback = React.useCallback(() => {
-    callback(table[5]).openURL("https://support.discord.com/hc/articles/14155060633623");
+    callback(table[5]).openURL("https://support.discord.com/hc/en-us/articles/42855178312087");
   }, []);
   let obj = { children: null };
   obj = { children: null };

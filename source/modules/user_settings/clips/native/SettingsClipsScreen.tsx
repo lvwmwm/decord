@@ -1,13 +1,13 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14899
+// Function ID: 14900
 // Name: ClipsSettingsScreen
-// Dependencies: [19, 7896, 21, 11292, 14578, 2]
+// Dependencies: [19, 7906, 21, 11400, 14614, 2]
 // Exports: default
 
-// Module 14818 (ClipsSettingsScreen)
-import _modDef14578 from "module_14578" /* 14578 */;
+// Module 14899 (ClipsSettingsScreen)
+import _modDef14614 from "module_14614" /* 14614 */;
 import closure_3 from "noop" /* 19 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -19,5 +19,5 @@ export default function ClipsSettingsScreen() {
     const sections = [{ settings: items }];
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(_modDef14578, { node });
+  return jsx(_modDef14614, { node });
 };

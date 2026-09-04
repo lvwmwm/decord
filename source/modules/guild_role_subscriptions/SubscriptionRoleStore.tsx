@@ -1,12 +1,12 @@
-// Module ID: 5411
-// Function ID: 5412
+// Module ID: 5420
+// Function ID: 5421
 // Name: computeRolesForGuild
-// Dependencies: [1429, 1985, 1991, 1984, 1908, 1921, 673, 4111, 586, 706, 2]
+// Dependencies: [1430, 1985, 1991, 1984, 1908, 1921, 673, 4111, 586, 706, 2]
 
-// Module 5411 (computeRolesForGuild)
+// Module 5420 (computeRolesForGuild)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
 import isSubscriptionRole from "isSubscriptionRole" /* 4111 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;

@@ -1,24 +1,24 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17656
+// Function ID: 17657
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4478, 709, 1627, 38, 17577, 5631, 5633, 4474, 1296, 4929, 4445, 1233, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1627, 38, 17657, 7090, 6567, 4477, 1296, 4936, 4448, 1233, 2]
 // Exports: default
 
-// Module 17576 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 17656 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import noopAll from "noop" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4474 */;
-import Button2 from "Button" /* 4929 */;
-import Background from "Background" /* 5631 */;
-import BottomSheetModal from "BottomSheetModal" /* 5633 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17577 */;
+import Text from "Text" /* 4477 */;
+import Button2 from "Button" /* 4936 */;
+import BottomSheetModal from "BottomSheetModal" /* 6567 */;
+import Background from "Background" /* 7090 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17657 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

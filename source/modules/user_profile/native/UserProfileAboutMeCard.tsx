@@ -1,30 +1,30 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 11139
+// Function ID: 11140
 // Name: Heading
-// Dependencies: [19, 17, 1995, 1991, 1908, 6010, 673, 1497, 21, 4478, 4197, 709, 4474, 1233, 9055, 586, 5360, 11, 9057, 6013, 9059, 1296, 8660, 5962, 8575, 9060, 4445, 4333, 1219, 6055, 4340, 1625, 8915, 9061, 4929, 6009, 2]
+// Dependencies: [19, 17, 1995, 1991, 1908, 7148, 673, 1497, 21, 4481, 4197, 709, 4477, 1233, 11140, 586, 5368, 11, 10749, 5539, 11141, 1296, 8300, 7102, 8121, 11142, 4448, 4336, 1219, 6978, 4343, 1625, 8110, 11143, 4936, 7147, 2]
 // Exports: default
 
-// Module 9054 (Heading)
+// Module 11139 (Heading)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
-import Text from "Text" /* 4474 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6009 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import LinkButtonDefault from "LinkButton" /* 9055 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 9059 */;
+import Text from "Text" /* 4477 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7147 */;
+import LinkButtonDefault from "LinkButton" /* 11140 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11141 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import { Routes } from "ME" /* 673 */;
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function Heading(children) {
@@ -127,10 +127,10 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  let obj3 = userId(5360);
+  let obj3 = userId(5368);
   let obj4 = DISCORD_EPOCHDefault;
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(5360);
+  let obj5 = userId(5368);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
@@ -142,7 +142,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9057).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(10749).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1233).intl;
   obj1[2] = intl2.formatToPlainString(userId(1233).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -153,12 +153,12 @@ function MemberJoinDates(userId) {
     obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     obj3[0] = textVariant;
     obj3[4] = closure_8;
-    const items6 = [tmp15(tmp4(4474).Text, obj3), ];
+    const items6 = [tmp15(tmp4(4477).Text, obj3), ];
     obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
     obj4[0] = themeType;
     obj5 = { guild: null, size: null };
     obj5[0] = stateFromStores1;
-    obj5[1] = tmp4(6013).GuildIconSizes.XXSMALL;
+    obj5[1] = tmp4(5539).GuildIconSizes.XXSMALL;
     obj4[1] = tmp15(GuildIconSizesDefault, obj5);
     const intl3 = tmp4(1233).intl;
     const obj6 = { guildName: null, date: null };
@@ -200,7 +200,7 @@ function FriendsSinceDate(themeType) {
     obj1 = { variant: null, color: "text-default", children: null };
     obj1[0] = tmp.textVariant;
     obj1[2] = friendsSinceDate;
-    items[1] = callback(tmp3(4474).Text, obj1);
+    items[1] = callback(tmp3(4477).Text, obj1);
     obj[0] = items;
     tmp6 = callback2(View, obj);
   }

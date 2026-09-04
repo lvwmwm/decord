@@ -1,16 +1,16 @@
-// Module ID: 5977
-// Function ID: 5978
+// Module ID: 7117
+// Function ID: 7118
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 4438, 4929, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4477, 1233, 4441, 4936, 2]
 // Exports: default
 
-// Module 5977 (ConnectionCardView)
+// Module 7117 (ConnectionCardView)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -46,7 +46,7 @@ export default function ConnectionCardView(description) {
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
     obj2[2] = description;
-    tmp4Result = tmp4(tmp5(4474).Text, obj2);
+    tmp4Result = tmp4(tmp5(4477).Text, obj2);
   }
   items1[1] = tmp4Result;
   obj1[1] = items1;
@@ -61,7 +61,7 @@ export default function ConnectionCardView(description) {
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     const intl2 = tmp5(1233).intl;
     obj4[2] = intl2.string(tmp5(1233).t["LV+CXH"]);
-    const items3 = [tmp4(tmp5(4474).Text, obj4), tmp4(tmp5(4438).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    const items3 = [tmp4(tmp5(4477).Text, obj4), tmp4(tmp5(4441).CircleCheckIcon, { size: "sm", color: "status-positive" })];
     obj3[1] = items3;
     tmp4Result = tmp2(tmp3, obj3);
   } else {
@@ -70,7 +70,7 @@ export default function ConnectionCardView(description) {
     const intl = tmp5(1233).intl;
     obj5[3] = intl.string(tmp5(1233).t.S0W8Z5);
     obj5[4] = !canConnect;
-    tmp4Result = tmp4(tmp5(4929).Button, obj5);
+    tmp4Result = tmp4(tmp5(4936).Button, obj5);
   }
   items2[1] = tmp4Result;
   obj[1] = items2;

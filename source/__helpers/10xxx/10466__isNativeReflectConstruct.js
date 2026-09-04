@@ -1,18 +1,18 @@
 // Module ID: 10466
 // Function ID: 10467
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10449, 10453, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10455, 10364, 10368]
 
 // Module 10466 (_isNativeReflectConstruct)
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10449 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10455 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeUnitLaterFormatParser = require;
+const NLTimeUnitLaterFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,14 +32,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")\\s{0,5}(?:later|after|from now|henceforth|forward|out)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(later|after|from now)(?=\\W|$)", "i");
-class ENTimeUnitLaterFormatParser {
+const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(later|na|vanaf nu|voortaan|vooruit|uit)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(later|vanaf nu)(?=(?:\\W|$))", "i");
+class NLTimeUnitLaterFormatParser {
   constructor(arg0) {
     self = this;
-    tmp = closure_2(this, ENTimeUnitLaterFormatParser);
+    tmp = closure_2(this, NLTimeUnitLaterFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeUnitLaterFormatParser);
+    obj = closure_4(NLTimeUnitLaterFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -53,7 +53,7 @@ class ENTimeUnitLaterFormatParser {
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
@@ -64,15 +64,10 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference) {
-      const parseDurationResult = ENTimeUnitLaterFormatParser(10449).parseDuration(arg1[1]);
-      let relativeFromReference = null;
-      if (parseDurationResult) {
-        const ParsingComponents = ENTimeUnitLaterFormatParser(10453).ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
-      }
-      return relativeFromReference;
+      const ParsingComponents = NLTimeUnitLaterFormatParser(10364).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, NLTimeUnitLaterFormatParser(10455).parseDuration(arg1[1]));
     }
   }
 ];
 
-export default _createClass(ENTimeUnitLaterFormatParser, items);
+export default _createClass(NLTimeUnitLaterFormatParser, items);

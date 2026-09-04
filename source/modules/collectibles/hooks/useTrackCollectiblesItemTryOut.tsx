@@ -1,15 +1,15 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8094
+// Function ID: 8095
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 7297, 673, 1923, 1949, 644, 695, 7309, 2]
+// Dependencies: [19, 7475, 673, 1923, 1949, 644, 695, 7487, 2]
 // Exports: default
 
-// Module 8084 (useTrackCollectiblesItemTryOut)
+// Module 8094 (useTrackCollectiblesItemTryOut)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7297 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 noop.useCallback;

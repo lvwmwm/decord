@@ -1,13 +1,13 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 5645
+// Function ID: 5646
 // Name: getChangeEmailReasonDisplayText
-// Dependencies: [7703, 1233, 2]
+// Dependencies: [5639, 1233, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 7707 (getChangeEmailReasonDisplayText)
+// Module 5645 (getChangeEmailReasonDisplayText)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ChangeEmailReasons2 from "ChangeEmailReasons" /* 7703 */;
+import ChangeEmailReasons2 from "ChangeEmailReasons" /* 5639 */;
 
 const ChangeEmailReasons = ChangeEmailReasons2.ChangeEmailReasons;
 let closure_2 = {

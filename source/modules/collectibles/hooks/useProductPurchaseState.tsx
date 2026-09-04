@@ -1,12 +1,12 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 8772
+// Function ID: 8773
 // Name: getProductPurchaseState
-// Dependencies: [7313, 12776, 1949, 586, 2]
+// Dependencies: [7491, 8773, 1949, 586, 2]
 // Exports: useProductPurchaseState
 
-// Module 12775 (getProductPurchaseState)
-import compactDefault from "compact" /* 12776 */;
-import closure_3 from "map" /* 7313 */;
+// Module 8772 (getProductPurchaseState)
+import compactDefault from "compact" /* 8773 */;
+import closure_3 from "map" /* 7491 */;
 
 const require = arg1;
 function getProductPurchaseState(closure_1_5, skuId) {

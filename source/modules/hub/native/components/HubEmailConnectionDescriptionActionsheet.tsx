@@ -1,17 +1,17 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12665
+// Function ID: 12666
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4478, 5631, 5630, 1233, 4474, 2]
+// Dependencies: [19, 21, 4481, 7090, 7089, 1233, 4477, 2]
 // Exports: default
 
-// Module 12507 (HubEmailConnectionDescriptionActionsheet)
+// Module 12665 (HubEmailConnectionDescriptionActionsheet)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
+import Text from "Text" /* 4477 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

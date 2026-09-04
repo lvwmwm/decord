@@ -1,16 +1,16 @@
-// Module ID: 7152
-// Function ID: 7153
+// Module ID: 7332
+// Function ID: 7333
 // Name: addEntitlement
-// Dependencies: [4520, 4517, 4527, 673, 1923, 586, 12, 4526, 676, 706, 2]
+// Dependencies: [4523, 4520, 4530, 673, 1923, 586, 12, 4529, 676, 706, 2]
 
-// Module 7152 (addEntitlement)
+// Module 7332 (addEntitlement)
 import applyDefault from "apply" /* 12 */;
 import initializeAll from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getComboId from "getComboId" /* 4526 */;
-import closure_3 from "createFromServer" /* 4520 */;
-import closure_4 from "setLibraryApplications" /* 4517 */;
-import closure_5 from "addSku" /* 4527 */;
+import getComboId from "getComboId" /* 4529 */;
+import closure_3 from "createFromServer" /* 4523 */;
+import closure_4 from "setLibraryApplications" /* 4520 */;
+import closure_5 from "addSku" /* 4530 */;
 import ME from "ME" /* 673 */;
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_8 } from "GuildFeatures" /* 1923 */;
 import set from "set" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 9776
+// Function ID: 9777
 // Name: loadInviteSuggestions
-// Dependencies: [9948, 9965, 706, 2]
+// Dependencies: [9762, 9777, 706, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 9964 (loadInviteSuggestions)
+// Module 9776 (loadInviteSuggestions)
 import set2 from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9965 */;
-import compareRowsByMatchScore from "compareRowsByMatchScore" /* 9948 */;
+import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9777 */;
+import compareRowsByMatchScore from "compareRowsByMatchScore" /* 9762 */;
 
 const result = set2.fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
 

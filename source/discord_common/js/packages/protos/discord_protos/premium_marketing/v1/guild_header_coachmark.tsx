@@ -1,14 +1,14 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 10622
+// Function ID: 10623
 // Name: create
-// Dependencies: [32, 1306, 8476, 8468, 8467, 8466, 2]
+// Dependencies: [32, 1306, 10609, 10601, 10600, 10599, 2]
 
-// Module 8489 (create)
+// Module 10622 (create)
 import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 8466 */;
-import create2 from "create" /* 8467 */;
-import create3 from "create" /* 8468 */;
-import create4 from "create" /* 8476 */;
+import create from "create" /* 10599 */;
+import create2 from "create" /* 10600 */;
+import create3 from "create" /* 10601 */;
+import create4 from "create" /* 10609 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;
 
@@ -20,7 +20,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(8476).ThemeAwareAsset;
+            return callback(10609).ThemeAwareAsset;
           }
     };
     items = [, , , , , , ];
@@ -30,7 +30,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(8468).CTAButton;
+            return callback(10601).CTAButton;
           }
     };
     items[2] = {
@@ -38,7 +38,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8467).HelpArticle;
+            return callback(10600).HelpArticle;
           }
     };
     obj = { no: 4, name: "header_localized", kind: "message", T: null };
@@ -54,7 +54,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(8466).LocalizedString;
+            return callback(10599).LocalizedString;
           }
     };
     items[5] = { no: 6, name: "header", kind: "scalar", T: 9 };
@@ -222,7 +222,7 @@ let obj = {
   name: "asset",
   kind: "message",
   T() {
-    return callback(8476).ThemeAwareAsset;
+    return callback(10609).ThemeAwareAsset;
   }
 };
 let items = [
@@ -232,7 +232,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(8468).CTAButton;
+      return callback(10601).CTAButton;
     }
   },
   {
@@ -240,7 +240,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(8467).HelpArticle;
+      return callback(10600).HelpArticle;
     }
   },
 ,
@@ -261,7 +261,7 @@ items[4] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(8466).LocalizedString;
+    return callback(10599).LocalizedString;
   }
 };
 items[5] = { no: 6, name: "header", kind: "scalar", T: 9 };

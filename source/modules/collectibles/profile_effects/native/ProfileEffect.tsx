@@ -1,20 +1,20 @@
-// Module ID: 8527
-// Function ID: 8528
+// Module ID: 8731
+// Function ID: 8732
 // Name: StaticEffect
-// Dependencies: [32, 19, 17, 4470, 7167, 21, 4478, 1492, 8528, 8529, 8530, 8532, 586, 688, 8533, 8531, 5502, 8535, 2]
+// Dependencies: [32, 19, 17, 4473, 7347, 21, 4481, 1492, 8732, 8733, 8734, 8736, 586, 688, 8737, 8735, 5542, 8157, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 8527 (StaticEffect)
+// Module 8731 (StaticEffect)
 import initialize from "initialize" /* 586 */;
-import sortEffectLayers from "sortEffectLayers" /* 8528 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8535 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8157 */;
+import sortEffectLayers from "sortEffectLayers" /* 8732 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_8 from "getState" /* 7167 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_8 from "getState" /* 7347 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function StaticEffect(useThumbnail) {
@@ -81,8 +81,8 @@ function StaticEffect(useThumbnail) {
     obj3[2] = 0 - bannerAdjustment;
     items1[1] = obj3;
     obj1[7] = items1;
-    obj[3] = tmp10(tmp4(5502), obj1);
-    const tmp4Result = tmp4(5502);
+    obj[3] = tmp10(tmp4(5542), obj1);
+    const tmp4Result = tmp4(5542);
   }
   return <closure_5 {...obj} />;
 }
@@ -145,7 +145,7 @@ function ProfileEffect(profileEffect) {
       }
     }
   }, []);
-  jsx = React.useRef(-memo(8529).PROFILE_EFFECT_INTRO_DELAY);
+  jsx = React.useRef(-memo(8733).PROFILE_EFFECT_INTRO_DELAY);
   [c10, c11] = ref(React.useState([]), 2);
   closure_12 = React.useRef([]);
   closure_13 = React.useRef(false);
@@ -161,7 +161,7 @@ function ProfileEffect(profileEffect) {
   }, items3);
   const items4 = [ref];
   const tmp7 = ref(React.useState([]), 2);
-  const tmp9Result = memo1(8532)(React.useCallback((arg0) => {
+  const tmp9Result = memo1(8736)(React.useCallback((arg0) => {
     if (ref.current) {
       if (!ref4.current) {
         tmp.current = true;

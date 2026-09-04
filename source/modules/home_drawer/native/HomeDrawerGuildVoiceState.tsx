@@ -1,26 +1,26 @@
-// Module ID: 16157
-// Function ID: 16158
+// Module ID: 16243
+// Function ID: 16244
 // Name: VoiceUsers
-// Dependencies: [19, 17, 1981, 4130, 4702, 4555, 673, 21, 4478, 709, 9444, 1296, 4474, 1233, 10171, 5502, 4941, 16156, 586, 12, 13600, 2]
+// Dependencies: [19, 17, 1981, 4130, 4709, 4558, 673, 21, 4481, 709, 12959, 1296, 4477, 1233, 9991, 5542, 4948, 16242, 586, 12, 13633, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 16157 (VoiceUsers)
+// Module 16243 (VoiceUsers)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4474 */;
-import AvatarPile from "AvatarPile" /* 9444 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10171 */;
+import Text from "Text" /* 4477 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9991 */;
+import AvatarPile from "AvatarPile" /* 12959 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "comparator" /* 1981 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4702 */;
-import closure_9 from "getVoiceStatesForGuild" /* 4555 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
+import closure_9 from "getVoiceStatesForGuild" /* 4558 */;
 import { ChannelTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function VoiceUsers(arg0) {
@@ -108,19 +108,19 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj4 = { uri: null };
       obj4[0] = previewUrl;
       obj3[1] = obj4;
-      const items1 = [tmp7(tmp3(5502), obj3), , , , ];
+      const items1 = [tmp7(tmp3(5542), obj3), , , , ];
       const obj5 = { colors: null, start: null, end: null, style: null, pointerEvents: "none" };
       obj5[0] = ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"];
       obj5[1] = { x: 0, y: 0 };
       obj5[2] = { x: 0, y: 1 };
       obj5[3] = tmp.streamPreviewDarkGradient;
-      items1[1] = tmp7(tmp3(4941), obj5);
+      items1[1] = tmp7(tmp3(4948), obj5);
       const obj6 = { colors: null, start: null, end: null, style: null, pointerEvents: "none" };
       obj6[0] = ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"];
       obj6[1] = { x: 0, y: 0 };
       obj6[2] = { x: 1, y: 1 };
       obj6[3] = tmp.streamPreviewGradient;
-      items1[2] = tmp7(tmp3(4941), obj6);
+      items1[2] = tmp7(tmp3(4948), obj6);
       const obj7 = { style: null, pointerEvents: "none" };
       obj7[0] = tmp.streamPreviewBorder;
       items1[3] = tmp7(tmp8, obj7);

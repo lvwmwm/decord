@@ -1,10 +1,10 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10630
+// Function ID: 10631
 // Name: useGiftStyles
 // Dependencies: [1923, 2]
 // Exports: useGiftStyles
 
-// Module 10703 (useGiftStyles)
+// Module 10630 (useGiftStyles)
 import set from "set" /* 2 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 

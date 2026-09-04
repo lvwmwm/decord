@@ -1,18 +1,18 @@
-// Module ID: 12256
-// Function ID: 12257
-// Dependencies: [19, 17, 4470, 11763, 673, 21, 4478, 7676, 4302, 12257, 1233, 4701, 7665, 12258, 5560, 7658, 586, 12248, 5953, 12259, 2]
+// Module ID: 12388
+// Function ID: 12389
+// Dependencies: [19, 17, 4473, 11894, 673, 21, 4481, 5500, 4305, 12389, 1233, 4708, 5482, 12390, 5635, 5524, 586, 12380, 5484, 12391, 2]
 
-// Module 12256
-import playDefault from "play" /* 5953 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12248 */;
-import registerAssetDefault from "registerAsset" /* 12257 */;
-import registerAssetDefault2 from "registerAsset" /* 12258 */;
+// Module 12388
+import playDefault from "play" /* 5484 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12380 */;
+import registerAssetDefault from "registerAsset" /* 12389 */;
+import registerAssetDefault2 from "registerAsset" /* 12390 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { TextAreaCta } from "TextAreaCta" /* 11763 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import { TextAreaCta } from "TextAreaCta" /* 11894 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -20,13 +20,13 @@ let closure_8 = createCacheKey.createStyles({ noticeIcon: { height: 36, width: 3
 const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = callback();
-  let obj = guildId(7676);
+  let obj = guildId(5500);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (guildId(4302).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  if (guildId(4305).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     let tmp8 = registerAssetDefault;
     const intl3 = tmp2(1233).intl;
     let stringResult = intl3.string(tmp2(1233).t.lk30cY);
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerifi
       obj = { guildId, canWithdraw: false };
       const result = guildId(closure_1_2[12]).openMemberVerificationRejectedAlert(obj);
     };
-  } else if (tmp2(4302).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+  } else if (tmp2(4305).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     tmp8 = registerAssetDefault2;
     const intl2 = tmp2(1233).intl;
     stringResult = intl2.string(tmp2(1233).t["5iLvSx"]);
@@ -50,7 +50,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerifi
       obj[1] = intl.string(guildId(closure_1_2[10]).t["13tjTU"]);
       const result = guildId(closure_1_2[12]).openMemberVerificationCancelPendingAlert(obj);
     };
-    const tmp7 = jsx(tmp2(5560).XSmallIcon, {});
+    const tmp7 = jsx(tmp2(5635).XSmallIcon, {});
   } else {
     let intl = tmp2(1233).intl;
     stringResult = intl.string(tmp2(1233).t.rEBKvg);
@@ -73,7 +73,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerifi
   } else {
     obj = { style: null, source: null, autoPlay: null };
     obj[0] = tmp.lottieAnimation;
-    obj[1] = tmp2(12259);
+    obj[1] = tmp2(12391);
     obj[2] = !stateFromStores;
     tmp13Result = tmp13(playDefault, obj);
     const tmp14Result = playDefault;

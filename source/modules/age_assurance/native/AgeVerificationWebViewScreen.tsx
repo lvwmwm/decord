@@ -1,19 +1,19 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8353
+// Function ID: 8354
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8702, 8704, 21, 3, 4478, 709, 4332, 4734, 8707, 4190, 8612, 1234, 6057, 2]
+// Dependencies: [32, 19, 17, 8342, 8344, 21, 3, 4481, 709, 4335, 4741, 8347, 4190, 8228, 1234, 5532, 2]
 // Exports: default
 
-// Module 8713 (AgeVerificationWebViewScreen)
+// Module 8353 (AgeVerificationWebViewScreen)
 import timestampDefault from "timestamp" /* 3 */;
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AGE_VERIFICATION_MODAL_KEY as closure_6 } from "set" /* 8702 */;
-import AGE_VERIFICATION_INCODE_PATH from "AGE_VERIFICATION_INCODE_PATH" /* 8704 */;
+import { AGE_VERIFICATION_MODAL_KEY as closure_6 } from "set" /* 8342 */;
+import AGE_VERIFICATION_INCODE_PATH from "AGE_VERIFICATION_INCODE_PATH" /* 8344 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ AgeVerificationIncodeResultStatus: error, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: c9 } = AGE_VERIFICATION_INCODE_PATH);

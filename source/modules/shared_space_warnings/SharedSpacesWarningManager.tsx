@@ -1,20 +1,20 @@
-// Module ID: 13625
-// Function ID: 13626
+// Module ID: 13658
+// Function ID: 13659
 // Name: handleChannelSelect
-// Dependencies: [1386, 4554, 4130, 13626, 13624, 684, 13627, 688, 13631, 5495, 2]
+// Dependencies: [1386, 4557, 4130, 13659, 13657, 684, 13660, 688, 13664, 7058, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 13625 (handleChannelSelect)
+// Module 13658 (handleChannelSelect)
 import setDefault from "set" /* 684 */;
 import keys from "keys" /* 688 */;
-import initializeDefault from "initialize" /* 5495 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13627 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13631 */;
+import initializeDefault from "initialize" /* 7058 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13660 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13664 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "createRTCConnection" /* 4554 */;
+import closure_3 from "createRTCConnection" /* 4557 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
-import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13626 */;
-import closure_10 from "init" /* 13624 */;
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13659 */;
+import closure_10 from "init" /* 13657 */;
 
 require = arg1;
 function handleChannelSelect(channelId) {

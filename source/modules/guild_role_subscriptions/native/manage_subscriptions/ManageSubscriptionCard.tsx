@@ -1,19 +1,19 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 15140
+// Function ID: 15141
 // Name: HeaderStatus
-// Dependencies: [5, 32, 19, 17, 673, 1393, 21, 4478, 709, 1233, 4474, 5077, 6013, 1296, 9698, 15057, 4859, 15058, 2008, 8234, 5962, 4838, 15060, 12543, 4193, 8376, 9209, 15061, 4190, 4139, 1219, 9156, 15063, 1498, 2]
+// Dependencies: [5, 32, 19, 17, 673, 1393, 21, 4481, 709, 1233, 4477, 5084, 5539, 1296, 9640, 15141, 4866, 15142, 2008, 9295, 7102, 4845, 15144, 12701, 4193, 8523, 10275, 15145, 4190, 4139, 1219, 10230, 15147, 1498, 2]
 // Exports: default
 
-// Module 15056 (HeaderStatus)
+// Module 15140 (HeaderStatus)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import registerAssetDefault from "registerAsset" /* 9698 */;
-import FormSeparatorDefault from "FormSeparator" /* 15057 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15063 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import registerAssetDefault from "registerAsset" /* 9640 */;
+import FormSeparatorDefault from "FormSeparator" /* 15141 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15147 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
@@ -21,7 +21,7 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import { StaticChannelRoute } from "set" /* 1393 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function HeaderStatus(arg0) {
@@ -147,9 +147,9 @@ function CardBody(isTrial) {
                 obj1[0] = intl.string(closure_1_0(1233).t.NL7DFi);
                 const intl2 = closure_1_0(1233).intl;
                 obj1[1] = intl2.string(closure_1_0(1233).t["NX+WJN"]);
-                closure_1_1(4859).show(obj1);
+                closure_1_1(4866).show(obj1);
                 v02 = 3;
-                const obj6 = closure_1_1(4859);
+                const obj6 = closure_1_1(4866);
               } else {
                 dependencyMap = 1;
                 v02(true);
@@ -161,7 +161,7 @@ function CardBody(isTrial) {
                   obj2[0] = v0();
                   return obj2;
                 } else {
-                  obj2 = closure_1_2(4838);
+                  obj2 = closure_1_2(4845);
                   v0 = 2;
                   v02 = 1;
                   const obj3 = { value: null, done: false };
@@ -238,11 +238,11 @@ function CardBody(isTrial) {
   ({ isCancelled, isPastDue, memberSince, nextRenewalDate, nextRenewalLabel, onCancelSubscription, subscriptionPrice } = isTrial);
   let tmp = callback3();
   dependencyMap = tmp;
-  let obj = subscription(8234);
+  let obj = subscription(9295);
   resubscribeSubscription = obj.useResubscribeSubscription(subscription.id);
   resubscribeSubscription = resubscribeSubscription.resubscribeSubscription;
   [tmp6, c5] = callback(analyticsLocations.useState(false), 2);
-  analyticsLocations = subscription(5962)().analyticsLocations;
+  analyticsLocations = subscription(7102)().analyticsLocations;
   obj = { style: tmp.cardContent, children: null };
   let tmp7Result = null;
   if (isPastDue) {
@@ -255,7 +255,7 @@ function CardBody(isTrial) {
     let obj3 = { variant: "text-sm/medium", color: "interactive-text-active", children: null };
     let intl = isTrial(1233).intl;
     obj3[2] = intl.string(isTrial(1233).t.eaqlau);
-    items[2] = callback2(isTrial(4474).Text, obj3);
+    items[2] = callback2(isTrial(4477).Text, obj3);
     obj1[1] = items;
     const items1 = [tmp7(tmp8, obj1), callback2(isTrial(1296).Spacer, { size: 12 })];
     obj[0] = items1;
@@ -263,12 +263,12 @@ function CardBody(isTrial) {
   }
   const items2 = [tmp7Result, , , , ];
   let obj4 = { title: null, icon: null, onPressIcon: null, children: null };
-  let tmp2Result = tmp2(15060);
+  let tmp2Result = tmp2(15144);
   let intl2 = isTrial(1233).intl;
   obj4[0] = intl2.string(isTrial(1233).t.dltUMH);
   tmp2Result = undefined;
   if (isTrial) {
-    tmp2Result = tmp2(12543);
+    tmp2Result = tmp2(12701);
   }
   obj4[1] = tmp2Result;
   let prop;
@@ -280,13 +280,13 @@ function CardBody(isTrial) {
   items2[1] = callback2(tmp2Result, obj4);
   items2[2] = callback2(isTrial(1296).Spacer, { size: 16 });
   const obj5 = { style: tmp.cardRow, children: null };
-  const items3 = [callback2(subscription(15060), { title: nextRenewalLabel, children: nextRenewalDate }), callback2(isTrial(1296).Spacer, { size: 8 }), ];
+  const items3 = [callback2(subscription(15144), { title: nextRenewalLabel, children: nextRenewalDate }), callback2(isTrial(1296).Spacer, { size: 8 }), ];
   let obj6 = { title: null, children: null };
   const tmp5 = callback(analyticsLocations.useState(false), 2);
   const intl3 = tmp15(1233).intl;
   obj6[0] = intl3.string(isTrial(1233).t.AOcwWB);
   obj6[1] = memberSince;
-  items3[2] = callback2(subscription(15060), obj6);
+  items3[2] = callback2(subscription(15144), obj6);
   obj5[1] = items3;
   items2[3] = closure_12(_handleResubscribe, obj5);
   const obj7 = { inset: true, titleViewStyle: tmp.manageSection, title: null, children: null };
@@ -300,7 +300,7 @@ function CardBody(isTrial) {
     children: null
   };
   const obj10 = { text: null, onPress: null };
-  const tmp2Result1 = subscription(15060);
+  const tmp2Result1 = subscription(15144);
   const intl5 = tmp15(1233).intl;
   obj10[0] = intl5.string(isTrial(1233).t["7spYft"]);
   obj10[1] = function handleUpdatePaymentMethod() {
@@ -320,15 +320,15 @@ function CardBody(isTrial) {
       }
     }
   };
-  const items4 = [callback2(subscription(15061), obj10), , ];
+  const items4 = [callback2(subscription(15145), obj10), , ];
   const obj11 = { text: null, onPress: null };
-  const tmp2Result2 = subscription(15061);
+  const tmp2Result2 = subscription(15145);
   const intl6 = tmp15(1233).intl;
   obj11[0] = intl6.string(isTrial(1233).t.FRbWR8);
   obj11[1] = function handleChangeTier() {
     isTrial(buttonDivider[30]).transitionTo(closure_1_8.CHANNEL(guildId, closure_1_10.ROLE_SUBSCRIPTIONS));
   };
-  items4[1] = callback2(subscription(15061), obj11);
+  items4[1] = callback2(subscription(15145), obj11);
   if (isCancelled) {
     const obj12 = { style: null, children: null };
     obj12[0] = tmp.resubscribeButtonContainer;
@@ -346,22 +346,22 @@ function CardBody(isTrial) {
       return applyArgumentsResult;
     };
     obj13[2] = tmp6;
-    obj12[1] = tmp13(tmp2(9156), obj13);
+    obj12[1] = tmp13(tmp2(10230), obj13);
     let tmp13Result = tmp13(tmp8, obj12);
-    const tmp2Result4 = tmp2(9156);
+    const tmp2Result4 = tmp2(10230);
   } else {
     const obj14 = { text: null, onPress: null };
     const intl7 = tmp15(1233).intl;
     obj14[0] = intl7.string(tmp15(1233).t.Dx0lF7);
     obj14[1] = onCancelSubscription;
-    tmp13Result = tmp13(tmp2(15061), obj14);
-    const tmp2Result5 = tmp2(15061);
+    tmp13Result = tmp13(tmp2(15145), obj14);
+    const tmp2Result5 = tmp2(15145);
   }
   items4[2] = tmp13Result;
   obj9[1] = items4;
-  obj8[1] = closure_12(isTrial(9209).GappedList, obj9);
+  obj8[1] = closure_12(isTrial(10275).GappedList, obj9);
   obj7[3] = callback2(_handleResubscribe, obj8);
-  items2[4] = callback2(isTrial(8376).FormSection, obj7);
+  items2[4] = callback2(isTrial(8523).FormSection, obj7);
   obj[1] = items2;
   return closure_12(_handleResubscribe, obj);
 }

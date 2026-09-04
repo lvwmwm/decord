@@ -1,25 +1,25 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15600
+// Function ID: 15601
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 7167, 673, 21, 4478, 586, 7749, 6055, 5990, 7717, 2]
+// Dependencies: [5, 19, 17, 7347, 673, 21, 4481, 586, 6904, 6978, 7130, 6547, 2]
 // Exports: default
 
-// Module 15518 (ClipboardCopyInput)
+// Module 15600 (ClipboardCopyInput)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getState" /* 7167 */;
+import closure_6 from "getState" /* 7347 */;
 import { AppStates } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_9 = createCacheKey.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
 const result = require("set").fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
 
 export default function ClipboardCopyInput(arg0) {
-  ({ label, onChangeCode, autoFocus } = arg0);
-  ({ placeholder, isValidClipboardCode, maxLength, error, textContentType, autoComplete, keyboardType, isDisabled } = arg0);
+  ({ onChangeCode, autoFocus } = arg0);
+  ({ label, placeholder, isValidClipboardCode, maxLength, error, textContentType, autoComplete, keyboardType, isDisabled } = arg0);
   if (autoFocus === undefined) {
     autoFocus = true;
   }
@@ -160,6 +160,6 @@ export default function ClipboardCopyInput(arg0) {
       })();
     }
   }, items1);
-  obj = { style: tmp.inputContainer, children: jsx(_require(stateFromStores[11]).TextInput, { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, accessibilityLabel: label, placeholder, isClearable: true, textContentType, autoComplete, keyboardType, isDisabled }) };
-  return <View style={tmp.inputContainer}>{jsx(_require(stateFromStores[11]).TextInput, { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, accessibilityLabel: label, placeholder, isClearable: true, textContentType, autoComplete, keyboardType, isDisabled })}</View>;
+  obj = { style: tmp.inputContainer, children: jsx(_require(stateFromStores[11]).TextInput, { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, placeholder, isClearable: true, textContentType, autoComplete, keyboardType, isDisabled }) };
+  return <View style={tmp.inputContainer}>{jsx(_require(stateFromStores[11]).TextInput, { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, placeholder, isClearable: true, textContentType, autoComplete, keyboardType, isDisabled })}</View>;
 };

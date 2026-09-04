@@ -1,12 +1,12 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5098
+// Function ID: 5099
 // Name: _getAttachmentFile
-// Dependencies: [5, 3, 38, 5082, 5091, 5083, 2]
+// Dependencies: [5, 3, 38, 5089, 5099, 5090, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 5090 (_getAttachmentFile)
+// Module 5098 (_getAttachmentFile)
 import timestampDefault from "timestamp" /* 3 */;
-import openImagePickerUnhandled from "openImagePickerUnhandled" /* 5091 */;
+import openImagePickerUnhandled from "openImagePickerUnhandled" /* 5099 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -78,13 +78,13 @@ function _getAttachmentFile() {
               return obj3;
             } else {
               closure_3 = arg1;
-              logger = lib(5083).getAttachmentPayload(lib, callback, closure_3.name);
+              logger = lib(5090).getAttachmentPayload(lib, callback, closure_3.name);
               c6 = 2;
-              const obj10 = lib(5083);
+              const obj10 = lib(5090);
               c7 = 4;
               c8 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = lib(5091).getFileSize(closure_3.uri);
+              obj4[0] = lib(5099).getFileSize(closure_3.uri);
               return obj4;
             }
           } else {

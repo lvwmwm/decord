@@ -1,14 +1,14 @@
-// Module ID: 4503
-// Function ID: 4504
+// Module ID: 4506
+// Function ID: 4507
 // Name: getOfficialApplicationId
-// Dependencies: [1935, 4504, 1954, 4511, 1430, 1470, 2]
+// Dependencies: [1935, 4507, 1954, 4514, 1431, 1394, 2]
 
-// Module 4503 (getOfficialApplicationId)
-import getAvatarURL from "getAvatarURL" /* 1430 */;
+// Module 4506 (getOfficialApplicationId)
+import getAvatarURL from "getAvatarURL" /* 1431 */;
 import toJSDefault from "toJS" /* 1935 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4511 */;
-import closure_3 from "createExecutable" /* 4504 */;
-import { createExecutable } from "createExecutable" /* 4504 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4514 */;
+import closure_3 from "createExecutable" /* 4507 */;
+import { createExecutable } from "createExecutable" /* 4507 */;
 
 require = arg1;
 toJSDefault;
@@ -169,7 +169,7 @@ prototype["getArtworkURLs"] = function getArtworkURLs() {
     artwork = [];
   }
   const mapped = artwork.map((arg0) => closure_1_1(closure_1_2[3])(self.id, arg0, { keepAspectRatio: true }));
-  return mapped.filter(self(1470).isNotNullish);
+  return mapped.filter(self(1394).isNotNullish);
 };
 prototype["getCompanyByRole"] = function getCompanyByRole(DEVELOPER) {
   closure_0 = DEVELOPER;

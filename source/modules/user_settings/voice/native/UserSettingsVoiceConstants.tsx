@@ -1,9 +1,9 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 9910
+// Function ID: 9911
 // Name: combined
 // Dependencies: [673, 1994, 2]
 
-// Module 10090 (combined)
+// Module 9910 (combined)
 import importDefaultResult from "combined" /* 1994 */;
 
 const combined = "" + importDefaultResult.getArticleURL(require("ME").HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";

@@ -1,27 +1,27 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13548
+// Function ID: 13549
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [32, 19, 17, 1908, 7187, 21, 4478, 709, 13516, 13517, 586, 4413, 4948, 1233, 4859, 5386, 4941, 688, 1362, 13518, 13519, 4474, 2]
+// Dependencies: [32, 19, 17, 1908, 7366, 21, 4481, 709, 13549, 13550, 586, 4416, 4955, 1233, 4866, 5394, 4948, 688, 1362, 13551, 13552, 4477, 2]
 // Exports: default
 
-// Module 13515 (PremiumPaymentGuildAnimation)
+// Module 13548 (PremiumPaymentGuildAnimation)
 import initialize from "initialize" /* 586 */;
 import keys from "keys" /* 688 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import Text from "Text" /* 4474 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
-import componentDidMountDefault2 from "componentDidMount" /* 13516 */;
-import _mod13517 from "module_13517" /* 13517 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import Text from "Text" /* 4477 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
+import componentDidMountDefault2 from "componentDidMount" /* 13549 */;
+import _mod13550 from "module_13550" /* 13550 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import { Gradients } from "items" /* 7187 */;
+import { Gradients } from "items" /* 7366 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class PremiumPaymentGuildAnimation {
@@ -30,7 +30,7 @@ class PremiumPaymentGuildAnimation {
     tmp = closure_11();
     obj = { nextScene, onSceneComplete, loop, sceneSegments: closure_12, style: tmp.animation, source: null };
     tmp2 = require("componentDidMount");
-    obj[5] = require("module_13517");
+    obj[5] = require("module_13550");
     return jsx(tmp2, obj);
   }
 }
@@ -77,9 +77,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const intl = tmp2(1233).intl;
   obj[1] = intl.string(getSystemLocale.t.YKxJCI);
   obj[2] = function onConfirm() {
-    callback2(4859).close();
-    const obj = callback2(4859);
-    callback(5386).closeApplyBoostModal();
+    callback2(4866).close();
+    const obj = callback2(4866);
+    callback(5394).closeApplyBoostModal();
   };
   obj = {
     nextScene: tmp6[0],
@@ -103,9 +103,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13518);
+    let tmp8Result = tmp8(13551);
   } else {
-    tmp8Result = tmp8(13519);
+    tmp8Result = tmp8(13552);
   }
   obj3[1] = tmp8Result;
   obj2[1] = callback2(tmp15, obj3);

@@ -1,12 +1,12 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 9409
+// Function ID: 9410
 // Name: isAgeRestrictedClassificationReference
-// Dependencies: [5066, 2]
+// Dependencies: [5073, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 9511 (isAgeRestrictedClassificationReference)
+// Module 9409 (isAgeRestrictedClassificationReference)
 import set from "set" /* 2 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5066 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5073 */;
 
 let result = set.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
 

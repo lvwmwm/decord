@@ -1,18 +1,18 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 8025
+// Function ID: 8026
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4478, 709, 5393, 4949, 4474, 8016, 8017, 4192, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 5401, 4956, 4477, 8026, 8027, 4192, 2]
 
-// Module 8015 (ChangeLogLink)
+// Module 8025 (ChangeLogLink)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import tDefault from "t" /* 4192 */;
-import Text from "Text" /* 4474 */;
-import apexExperiment from "apexExperiment" /* 8016 */;
+import Text from "Text" /* 4477 */;
+import apexExperiment from "apexExperiment" /* 8026 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import importAllResult1 from "createRules" /* 4949 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import importAllResult1 from "createRules" /* 4956 */;
 
 require = arg1;
 function ChangeLogLink(arg0) {
@@ -97,10 +97,10 @@ function ChangeLogStrong(arg0) {
     }
     obj = { variant: "experimental/body-sm/semibold", color: null, children: null };
     obj[1] = str;
-    obj[2] = tmp(8017).smartOutput(node, output, state);
-    let reactResult = jsx(tmp(4474).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
+    obj[2] = tmp(8027).smartOutput(node, output, state);
+    let reactResult = jsx(tmp(4477).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
     const tmp5 = jsx;
-    const tmpResult = tmp(8017);
+    const tmpResult = tmp(8027);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);

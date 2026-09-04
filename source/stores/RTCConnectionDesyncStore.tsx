@@ -1,21 +1,21 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13680
+// Function ID: 13681
 // Name: retryFailedUsers
-// Dependencies: [4498, 1386, 4554, 1921, 4497, 4555, 673, 4499, 4515, 4673, 8923, 4579, 586, 706, 2]
+// Dependencies: [4501, 1386, 4557, 1921, 4500, 4558, 673, 4502, 4518, 4680, 8148, 4582, 586, 706, 2]
 
-// Module 13647 (retryFailedUsers)
+// Module 13680 (retryFailedUsers)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import keysDefault from "keys" /* 4515 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
-import closure_3 from "isVoiceMuted" /* 4498 */;
+import keysDefault from "keys" /* 4518 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
+import closure_3 from "isVoiceMuted" /* 4501 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createRTCConnection" /* 4554 */;
+import closure_5 from "createRTCConnection" /* 4557 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "updateVoiceState" /* 4497 */;
-import { makeSortedVoiceState } from "getVoiceStatesForGuild" /* 4555 */;
+import closure_7 from "updateVoiceState" /* 4500 */;
+import { makeSortedVoiceState } from "getVoiceStatesForGuild" /* 4558 */;
 import ME from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -50,12 +50,12 @@ function retryFailedUsers() {
           obj[1] = user;
           obj[2] = user.id;
           obj[4] = tmp23;
-          obj[10] = guildId(4673).getName(guildId, tmp, user);
-          const obj2 = guildId(4673);
+          obj[10] = guildId(4680).getName(guildId, tmp, user);
+          const obj2 = guildId(4680);
           const tmp24 = closure_1_8;
-          obj[11] = channelId(8923).getAvatarDecoration(user, guildId);
+          obj[11] = channelId(8148).getAvatarDecoration(user, guildId);
           const result1 = closure_1_13.set(user.id, obj);
-          const obj3 = channelId(8923);
+          const obj3 = channelId(8148);
         }
       } else {
         closure_1_14.delete(userId);

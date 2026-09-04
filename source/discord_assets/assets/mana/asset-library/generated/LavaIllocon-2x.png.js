@@ -1,9 +1,9 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6165
+// Function ID: 6166
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6784 (metadata)
+// Module 6165 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LavaIllocon-2x.png.js");

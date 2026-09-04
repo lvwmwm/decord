@@ -1,14 +1,14 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 6234
+// Function ID: 6235
 // Name: NitroRubyBadgeLargeBadge
-// Dependencies: [21, 5502, 6854, 2]
+// Dependencies: [21, 5542, 6235, 2]
 // Exports: NitroRubyBadgeLargeBadge
 
-// Module 6853 (NitroRubyBadgeLargeBadge)
+// Module 6234 (NitroRubyBadgeLargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import vanityUrlDefault from "vanityUrl" /* 6854 */;
+import preloadDefault from "preload" /* 5542 */;
+import vanityUrlDefault from "vanityUrl" /* 6235 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeLargeBadge.native.tsx");

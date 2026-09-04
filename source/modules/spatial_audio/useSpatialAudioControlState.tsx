@@ -1,14 +1,14 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13752
+// Function ID: 13753
 // Name: useSpatialAudioControlState
-// Dependencies: [19, 4529, 4542, 13720, 586, 2]
+// Dependencies: [19, 4532, 4545, 13753, 586, 2]
 // Exports: default, isSpatialAudioBlocked, isSpatialAudioEligible
 
-// Module 13719 (useSpatialAudioControlState)
-import apexExperimentDefault from "apexExperiment" /* 13720 */;
+// Module 13752 (useSpatialAudioControlState)
+import apexExperimentDefault from "apexExperiment" /* 13753 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 const require = arg1;
 ({ Features: c5, SpatialAudioStatus: closure_6 } = DesktopSources);

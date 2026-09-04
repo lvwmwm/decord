@@ -1,22 +1,22 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16658
+// Function ID: 16659
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4478, 709, 10333, 10938, 4445, 10337, 2008, 10336, 6266, 4927, 4474, 1233, 3178, 4929, 12527, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 10153, 10907, 4448, 10157, 2008, 10156, 5647, 4934, 4477, 1233, 3178, 4936, 12685, 2]
 // Exports: default
 
-// Module 16569 (FavoritesEmptyState)
+// Module 16658 (FavoritesEmptyState)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import Button from "Button" /* 4929 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6266 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10333 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import Button from "Button" /* 4936 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -54,7 +54,7 @@ export default function FavoritesEmptyState() {
     const obj3 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1233).intl;
     obj3[1] = intl4.string(tmp9(3178)["6kk0gM"]);
-    obj3[2] = tmp8(tmp2(12527).PlusMediumIcon, {});
+    obj3[2] = tmp8(tmp2(12685).PlusMediumIcon, {});
     obj3[3] = callback;
     let obj4 = obj3;
   } else {

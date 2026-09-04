@@ -1,17 +1,17 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 12104
+// Function ID: 12105
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1924, 21, 4478, 709, 9067, 1954, 9122, 11968, 8448, 1296, 11972, 1234, 11973, 1890, 9116, 2]
+// Dependencies: [32, 19, 17, 1924, 21, 4481, 709, 11147, 1954, 10207, 12101, 9338, 1296, 12105, 1234, 12106, 1890, 11053, 2]
 // Exports: default
 
-// Module 11971 (AppLauncherTextInputOption)
+// Module 12104 (AppLauncherTextInputOption)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EmojiIntention } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -51,7 +51,7 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(9067);
+  let obj = onChangeText(11147);
   closure_5 = React.useRef({ start: 0, end: 0 });
   ref = React.useRef(null);
   let tmp14Result = option.type === onChangeText(1954).ApplicationCommandOptionType.STRING;
@@ -107,17 +107,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(closure_1_2[9]);
     }
   }, items2);
-  obj1 = onChangeText(11968);
+  obj1 = onChangeText(12101);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(8448).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(9338).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1296).TextInput;
   } else {
-    TextInput = guildId(11972);
+    TextInput = guildId(12105);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -160,7 +160,7 @@ export default function AppLauncherTextInputOption(guildId) {
       obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
       const result1 = onChangeText(closure_1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp14Result = tmp14(guildId(11973), obj1);
+    tmp14Result = tmp14(guildId(12106), obj1);
   }
   items4[1] = tmp14Result;
   obj[1] = items4;

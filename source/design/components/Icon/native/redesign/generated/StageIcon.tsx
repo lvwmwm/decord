@@ -1,14 +1,14 @@
-// Module ID: 5051
-// Function ID: 5052
+// Module ID: 5058
+// Function ID: 5059
 // Name: StageIcon
-// Dependencies: [19, 21, 709, 4196, 4991, 2]
+// Dependencies: [19, 21, 709, 4196, 4998, 2]
 // Exports: StageIcon
 
-// Module 5051 (StageIcon)
+// Module 5058 (StageIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4991 */;
+import registerAsset from "registerAsset" /* 4998 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

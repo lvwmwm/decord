@@ -1,16 +1,16 @@
-// Module ID: 15196
-// Function ID: 15197
+// Module ID: 14643
+// Function ID: 14644
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7187, 21, 4478, 709, 10643, 1234, 1296, 4941, 688, 2]
+// Dependencies: [19, 7366, 21, 4481, 709, 10554, 1234, 1296, 4948, 688, 2]
 // Exports: default
 
-// Module 15196 (DismissiblePremiumNewBadge)
+// Module 14643 (DismissiblePremiumNewBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10643 */;
-import { Gradients } from "items" /* 7187 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10554 */;
+import { Gradients } from "items" /* 7366 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

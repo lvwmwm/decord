@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "91d00dd928cdd63a1c9619eb92ec080e", name: "blocked_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "6ec88800a88fc80e400c884fdc688816", name: "cs.messages.6ec88800a88fc80e400c884fdc688816.compiled.messages", type: "jsona" });

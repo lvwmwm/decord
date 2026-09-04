@@ -1,28 +1,28 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7408
+// Function ID: 7409
 // Name: getDeviceMetadata
-// Dependencies: [5, 7231, 4391, 1301, 1215, 1386, 703, 673, 7424, 1393, 21, 4457, 7425, 511, 1624, 4333, 4332, 10, 1205, 695, 7426, 4339, 7428, 9, 684, 7429, 7431, 4859, 4948, 2008, 2]
+// Dependencies: [5, 7409, 4394, 1301, 1215, 1386, 703, 673, 7602, 1393, 21, 4460, 7603, 511, 1624, 4336, 4335, 10, 1205, 695, 7604, 4342, 7606, 9, 684, 7607, 7609, 4866, 4955, 2008, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7230 (getDeviceMetadata)
+// Module 7408 (getDeviceMetadata)
 import isTracingDefault from "isTracing" /* 10 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import _modDef1205 from "module_1205" /* 1205 */;
 import getConstantsAll from "getConstants" /* 1624 */;
-import coerceMainRoute from "coerceMainRoute" /* 4332 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7425 */;
-import AppStartInfo2 from "AppStartInfo" /* 7426 */;
+import coerceMainRoute from "coerceMainRoute" /* 4335 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4460 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7603 */;
+import AppStartInfo2 from "AppStartInfo" /* 7604 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleClearCaches" /* 7231 */;
-import closure_5 from "getHash" /* 4391 */;
+import closure_4 from "handleClearCaches" /* 7409 */;
+import closure_5 from "getHash" /* 4394 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "refreshSourceMapCookie" /* 703 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7424 */;
+import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7602 */;
 import { StaticChannelRoutes } from "set" /* 1393 */;
 import { jsx } from "jsxProd" /* 21 */;
 import v1 from "v1" /* 511 */;
@@ -166,7 +166,7 @@ function _trackAppUIViewedAsync() {
               closure_5 = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = callback2(4339).getAppFirstVisibleTimestamp();
+              obj1[0] = callback2(4342).getAppFirstVisibleTimestamp();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -180,15 +180,15 @@ function _trackAppUIViewedAsync() {
           } else {
             closure_4 = arg1;
             closure_5 = closure_3 - closure_4;
-            callback2(4339).reportFullyDrawn();
-            const obj5 = callback2(4339);
+            callback2(4342).reportFullyDrawn();
+            const obj5 = callback2(4342);
             callback2(10).mark("\u2757", "Track app_ui_viewed");
             const obj6 = callback2(10);
             callback2(10).addDetail("TTI", closure_5);
             const obj7 = callback2(10);
             callback2(10).markAt("\u{1F3C3}", "app_opened", closure_4);
             const obj8 = callback2(10);
-            callback(7428).ttiRecorded(closure_5);
+            callback(7606).ttiRecorded(closure_5);
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               let str = closure_0;
@@ -210,7 +210,7 @@ function _trackAppUIViewedAsync() {
               if (null == timeout) {
                 let _setTimeout = setTimeout;
                 timeout = setTimeout(() => {
-                  callback(9).setTTICallback(/* F124975 */ function() { ... });
+                  callback(9).setTTICallback(/* F125321 */ function() { ... });
                   callback3();
                   c25 = null;
                 }, 15 * callback(684).Millis.SECOND);
@@ -320,7 +320,7 @@ function _logLegacyAppUiViewed() {
               c7 = 1;
               c8 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = callback(4339).getJSBundleTimestamps();
+              obj1[0] = callback(4342).getJSBundleTimestamps();
               return obj1;
             }
           } else if (arg0 === 1) {

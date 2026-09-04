@@ -1,10 +1,10 @@
-// Module ID: 5979
-// Function ID: 5980
+// Module ID: 7119
+// Function ID: 7120
 // Name: getDefaultProviderDescription
 // Dependencies: [673, 1233, 2]
 // Exports: default
 
-// Module 5979 (getDefaultProviderDescription)
+// Module 7119 (getDefaultProviderDescription)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

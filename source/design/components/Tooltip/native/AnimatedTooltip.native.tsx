@@ -1,13 +1,13 @@
-// Module ID: 8993
-// Function ID: 8994
+// Module ID: 11061
+// Function ID: 11062
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4217, 8994, 1355, 8996, 8997, 2]
+// Dependencies: [32, 19, 17, 21, 4218, 11062, 1355, 11064, 9898, 2]
 // Exports: AnimatedTooltip
 
-// Module 8993 (renderTooltipItem)
-import _modDef4217 from "module_4217" /* 4217 */;
-import Tooltip from "Tooltip" /* 8994 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8997 */;
+// Module 11061 (renderTooltipItem)
+import _modDef4218 from "module_4218" /* 4218 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9898 */;
+import Tooltip from "Tooltip" /* 11062 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
@@ -24,7 +24,7 @@ function renderTooltipItem(arg0, arg1) {
     tmpResult = tmp(Tooltip.Tooltip, obj);
   }
   obj[2] = tmpResult;
-  return jsx(_modDef4217.View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(_modDef4218.View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("set").fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
@@ -32,7 +32,7 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
   const merged = Object.assign(visible, Object.create(null));
   importDefault = undefined;
-  let obj = visible(8996);
+  let obj = visible(11064);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const tmp3 = callback(React.useState(false), 2);
   importDefault = tmp3[1];

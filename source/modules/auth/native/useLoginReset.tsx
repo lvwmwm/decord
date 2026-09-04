@@ -1,10 +1,10 @@
-// Module ID: 7739
-// Function ID: 7740
+// Module ID: 6894
+// Function ID: 6895
 // Name: useLoginReset
-// Dependencies: [19, 1215, 6061, 2]
+// Dependencies: [19, 1215, 6534, 2]
 // Exports: default
 
-// Module 7739 (useLoginReset)
+// Module 6894 (useLoginReset)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 

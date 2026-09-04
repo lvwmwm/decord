@@ -1,11 +1,11 @@
-// Module ID: 8630
-// Function ID: 8631
+// Module ID: 8270
+// Function ID: 8271
 // Name: SPOTIFY_APP_PROTOCOL
-// Dependencies: [673, 5236, 1234, 2]
+// Dependencies: [673, 5244, 1234, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8630 (SPOTIFY_APP_PROTOCOL)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
+// Module 8270 (SPOTIFY_APP_PROTOCOL)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
 import set from "set" /* 1234 */;
 
 const spotify = "spotify";

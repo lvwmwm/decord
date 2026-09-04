@@ -1,15 +1,15 @@
-// Module ID: 17444
-// Function ID: 17445
+// Module ID: 17524
+// Function ID: 17525
 // Name: handleGuildRoleCreateOrUpdate
-// Dependencies: [1984, 1908, 673, 12216, 1362, 1233, 503, 586, 706, 2]
+// Dependencies: [1984, 1908, 673, 12348, 1362, 1233, 503, 586, 706, 2]
 
-// Module 17444 (handleGuildRoleCreateOrUpdate)
+// Module 17524 (handleGuildRoleCreateOrUpdate)
 import fromStringAll from "fromString" /* 503 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer3 from "AccessibilityAnnouncer" /* 1362 */;
-import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 12216 */;
+import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 12348 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import { FormStates } from "ME" /* 673 */;

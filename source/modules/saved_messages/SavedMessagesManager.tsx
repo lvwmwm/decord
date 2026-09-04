@@ -1,10 +1,10 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17398
+// Function ID: 17399
 // Name: _refreshSavedMessages
-// Dependencies: [5, 7610, 11516, 17319, 5495, 2]
+// Dependencies: [5, 7787, 11637, 17399, 7058, 2]
 
-// Module 17318 (_refreshSavedMessages)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17398 (_refreshSavedMessages)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 let require = arg1;
@@ -38,12 +38,12 @@ function _refreshSavedMessages() {
             return obj;
           } else {
             const callback = tmp4;
-            let obj2 = closure_1_0(7610);
+            let obj2 = closure_1_0(7787);
             if (obj2.isForLaterExperimentOn("saved_messages_manager")) {
               dependencyMap = 1;
               c2 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(11516).fetchAndUpdateSavedMessages();
+              obj1[0] = closure_1_0(11637).fetchAndUpdateSavedMessages();
               return obj1;
             } else {
               c2 = 3;
@@ -53,7 +53,7 @@ function _refreshSavedMessages() {
           c2 = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          obj = callback(17319);
+          obj = callback(17399);
           const result = obj.showOverdueRemindersToast();
         }
         c2 = 3;

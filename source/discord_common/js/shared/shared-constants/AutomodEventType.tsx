@@ -1,9 +1,9 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11796
+// Function ID: 11797
 // Name: AutomodEventType
 // Dependencies: [2]
 
-// Module 11665 (AutomodEventType)
+// Module 11796 (AutomodEventType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodEventType.tsx");

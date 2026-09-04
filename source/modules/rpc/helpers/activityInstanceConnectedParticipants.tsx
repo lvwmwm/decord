@@ -1,13 +1,13 @@
-// Module ID: 14357
-// Function ID: 14358
+// Module ID: 14389
+// Function ID: 14390
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1385, 1921, 4380, 4110, 4673, 9526, 1470, 12, 2]
+// Dependencies: [1385, 1921, 4383, 4110, 4680, 9489, 1394, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14357 (activityInstanceConnectedParticipants)
+// Module 14389 (activityInstanceConnectedParticipants)
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
 
 const require = arg1;
 let obj = { [RPC_SCOPE_CONFIG.RPC_SCOPE_CONFIG.ANY]: items };
@@ -40,7 +40,7 @@ obj = {
             obj.nickname = nickname;
             return obj;
           }
-        }).filter(callback(1470).isNotNullish);
+        }).filter(callback(1394).isNotNullish);
         const arr = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           const user = closure_1_4.getUser(arg0);
           if (null != user) {
@@ -85,7 +85,7 @@ export const activityInstanceConnectedParticipants = function activityInstanceCo
         obj.nickname = nickname;
         return obj;
       }
-    }).filter(_require(1470).isNotNullish);
+    }).filter(_require(1394).isNotNullish);
     return obj;
   }
 };

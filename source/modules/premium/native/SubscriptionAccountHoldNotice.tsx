@@ -1,17 +1,17 @@
-// Module ID: 13240
-// Function ID: 13241
+// Module ID: 13273
+// Function ID: 13274
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 673, 21, 4478, 709, 1296, 12543, 4474, 1233, 4139, 4929, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 1296, 12701, 4477, 1233, 4139, 4936, 2]
 // Exports: default
 
-// Module 13240 (SubscriptionAccountHoldNotice)
+// Module 13273 (SubscriptionAccountHoldNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 12543 */;
+import registerAssetDefault from "registerAsset" /* 12701 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { SubscriptionStatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj2[0] = subscription.currentPeriodEnd;
     obj2[1] = subscription(4139).getDisplayName(subscription.planId);
     obj1[2] = intl.format(subscription(1233).t["7I21Iz"], obj2);
-    items[1] = callback(subscription(4474).Text, obj1);
+    items[1] = callback(subscription(4477).Text, obj1);
     obj[1] = items;
     const items1 = [callback2(closure_4, obj), ];
     const obj3 = { size: "sm", text: null, onPress: null };
@@ -56,7 +56,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj3[2] = function onPress() {
       return closure_1_3.openURL(subscription(closure_1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4929).Button, obj3);
+    items1[1] = callback(subscription(4936).Button, obj3);
     obj[1] = items1;
     tmp2 = callback2(closure_4, obj);
     const obj6 = subscription(4139);

@@ -1,10 +1,10 @@
-// Module ID: 11748
-// Function ID: 11749
+// Module ID: 11879
+// Function ID: 11880
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 4145, 673, 1923, 21, 4478, 709, 695, 11749, 4325, 5631, 5630, 1233, 2598, 4474, 8226, 4929, 586, 4139, 7177, 5982, 1296, 1346, 2]
+// Dependencies: [32, 19, 17, 4145, 673, 1923, 21, 4481, 709, 695, 11880, 4328, 7090, 7089, 1233, 2598, 4477, 9287, 4936, 586, 4139, 7356, 7122, 1296, 1346, 2]
 // Exports: default
 
-// Module 11748 (PrimaryActionButton)
+// Module 11879 (PrimaryActionButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -14,7 +14,7 @@ import closure_9 from "reset" /* 4145 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function PrimaryActionButton(onPressApply) {
@@ -29,10 +29,10 @@ function PrimaryActionButton(onPressApply) {
     obj[0] = intl2.string(tmp2(1233).t.pj0XBN);
     obj[1] = function onPressSubscribe() {
       const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: null, analyticsLocation: null };
-      const items = [callback(5982).SHARE_CUSTOM_CLIENT_THEME_EMBED];
+      const items = [callback(7122).SHARE_CUSTOM_CLIENT_THEME_EMBED];
       obj[1] = items;
       obj[2] = {};
-      callback(7177)(obj);
+      callback(7356)(obj);
     };
     obj[2] = function renderIcon() {
       const style = [lib.nitroWheelButton];
@@ -45,7 +45,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1233).intl;
     obj[0] = intl.string(tmp2(1233).t["1Qm822"]);
     obj[1] = onPressApply.onPressApply;
-    tmp6 = callback4(tmp2(4929).Button, obj);
+    tmp6 = callback4(tmp2(4936).Button, obj);
   }
   return tmp6;
 }

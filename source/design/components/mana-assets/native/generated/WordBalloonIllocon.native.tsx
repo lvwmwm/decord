@@ -1,14 +1,14 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 6520
+// Function ID: 6521
 // Name: WordBalloonIllocon
-// Dependencies: [21, 5502, 7140, 2]
+// Dependencies: [21, 5542, 6521, 2]
 // Exports: WordBalloonIllocon
 
-// Module 7139 (WordBalloonIllocon)
+// Module 6520 (WordBalloonIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7140 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6521 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");

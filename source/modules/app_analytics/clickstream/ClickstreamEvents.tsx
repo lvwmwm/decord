@@ -1,10 +1,10 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7401
+// Function ID: 7402
 // Name: getClickstreamDrainEvent
 // Dependencies: [673, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 7223 (getClickstreamDrainEvent)
+// Module 7401 (getClickstreamDrainEvent)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

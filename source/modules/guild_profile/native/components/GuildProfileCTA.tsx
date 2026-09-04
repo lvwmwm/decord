@@ -1,10 +1,10 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9133
+// Function ID: 9134
 // Name: GuildProfileCTA
-// Dependencies: [19, 673, 682, 21, 9047, 9049, 4445, 6196, 8668, 9053, 4302, 7665, 5571, 7658, 6195, 4929, 1233, 2]
+// Dependencies: [19, 673, 682, 21, 9134, 9136, 4448, 7280, 8308, 9140, 4305, 5482, 5505, 5524, 7279, 4936, 1233, 2]
 // Exports: default
 
-// Module 9046 (GuildProfileCTA)
+// Module 9133 (GuildProfileCTA)
 import closure_3 from "noop" /* 19 */;
 import { AnalyticsObjects } from "ME" /* 673 */;
 import { ProfileCustomizationScrollPositions as closure_5 } from "MAX_FAVORITES" /* 682 */;

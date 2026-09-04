@@ -1,9 +1,9 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13870
+// Function ID: 13871
 // Name: MIDJOURNEY_GUILD_ID
 // Dependencies: [2]
 
-// Module 13838 (MIDJOURNEY_GUILD_ID)
+// Module 13870 (MIDJOURNEY_GUILD_ID)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingConstants.tsx");

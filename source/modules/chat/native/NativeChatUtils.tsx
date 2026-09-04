@@ -1,14 +1,14 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11203
+// Function ID: 11204
 // Name: ChatScrollPosition
-// Dependencies: [17, 1234, 11134, 1205, 11135, 11136, 2]
+// Dependencies: [17, 1234, 11204, 1205, 11205, 11206, 2]
 
-// Module 11133 (ChatScrollPosition)
+// Module 11203 (ChatScrollPosition)
 import set from "set" /* 2 */;
 import _modDef1205 from "module_1205" /* 1205 */;
 import set2 from "set" /* 1234 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 11134 */;
-import enforcingDefault from "enforcing" /* 11136 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 11204 */;
+import enforcingDefault from "enforcing" /* 11206 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 ({ NativeModules: c3, findNodeHandle: c4 } = get_ActivityIndicator);
@@ -33,7 +33,7 @@ obj = {
           DCDChatManager.scrollTo(tmp15, arg1, tmp, tmp2, TOP);
         }
       } else {
-        const Commands = tmp5(11134).Commands;
+        const Commands = tmp5(11204).Commands;
         Commands.scrollTo(arg0, arg1, tmp, tmp2, TOP);
       }
       obj2 = set2;
@@ -49,7 +49,7 @@ obj = {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(11134).Commands;
+        const Commands = tmp2(11204).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
       obj = set2;
@@ -95,7 +95,7 @@ obj = {
           DCDChatManager.scrollIntoView(tmp13, arg1, tmp, tmp2);
         }
       } else {
-        const Commands = tmp4(11134).Commands;
+        const Commands = tmp4(11204).Commands;
         Commands.scrollIntoView(arg0, arg1, tmp, tmp2);
       }
       obj2 = set2;
@@ -105,7 +105,7 @@ obj = {
   updateRows(arg0, rows) {
     if (null != arg0) {
       if (obj6.isIOS()) {
-        let tmp31Result = tmp31(11135);
+        let tmp31Result = tmp31(11205);
         const andIncrementChangesetIdForChat = tmp31Result.getAndIncrementChangesetIdForChat(arg0);
         ({ rows, forceReload } = rows);
         if (forceReload == null) {
@@ -121,7 +121,7 @@ obj = {
         obj[3] = forceReload;
         obj[2] = obj;
         _modDef1205.addBreadcrumb(obj);
-        const Commands = tmp31(11134).Commands;
+        const Commands = tmp31(11204).Commands;
         const _JSON2 = JSON;
         const json = JSON.stringify(rows.rows);
         const isLoadingAtTop = rows.isLoadingAtTop;
@@ -156,7 +156,7 @@ obj = {
             const _JSON = JSON;
             json2 = JSON.stringify(rows.scrollData);
           }
-          tmp31Result = tmp31(11135);
+          tmp31Result = tmp31(11205);
           const andIncrementChangesetIdForChat1 = tmp31Result.getAndIncrementChangesetIdForChat(arg0);
           let flag = rows.HACK_iOSForceAnimations;
           if (flag == null) {
@@ -179,13 +179,13 @@ obj = {
   clearRows(arg0) {
     if (null != arg0) {
       if (obj4.isIOS()) {
-        const Commands = tmp6(11134).Commands;
-        let tmp6Result = tmp6(11135);
+        const Commands = tmp6(11204).Commands;
+        let tmp6Result = tmp6(11205);
         Commands.clearRows(arg0, tmp6Result.getAndIncrementChangesetIdForChat(arg0));
       } else {
         const tmp2 = callback(arg0);
         if (null != tmp2) {
-          tmp6Result = tmp6(11135);
+          tmp6Result = tmp6(11205);
           enforcingDefault.clearRows(tmp2, tmp6Result.getAndIncrementChangesetIdForChat(arg0));
           obj = enforcingDefault;
         }

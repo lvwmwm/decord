@@ -1,9 +1,9 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6287
+// Function ID: 6288
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6906 (metadata)
+// Module 6287 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PasskeysSpotIllustration-2x.png.js");

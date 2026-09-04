@@ -1,9 +1,9 @@
-// Module ID: 6450
-// Function ID: 6451
+// Module ID: 5831
+// Function ID: 5832
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6450 (metadata)
+// Module 5831 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CrownIllocon-2x.png.js");

@@ -1,21 +1,21 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 16431
+// Function ID: 16432
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 5632, 1924, 21, 1233, 4478, 709, 9116, 7518, 5077, 8241, 8051, 8641, 9120, 4328, 7627, 1492, 5998, 4474, 16342, 5079, 4296, 4204, 16338, 5502, 1430, 7717, 4322, 8018, 4423, 15055, 16291, 2]
+// Dependencies: [5, 32, 19, 17, 7091, 1924, 21, 1233, 4481, 709, 11053, 7695, 5084, 8687, 8061, 8281, 10214, 4331, 7804, 1492, 7138, 4477, 16428, 5086, 4299, 4205, 16424, 5542, 1431, 6547, 4325, 8028, 4426, 15139, 16377, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 16345 (AddEmojiButton)
+// Module 16431 (AddEmojiButton)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import context from "context" /* 16291 */;
+import context from "context" /* 16377 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
 import { EmojiIntention } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AddEmojiButton(channel) {
@@ -124,13 +124,13 @@ function ReactActionSheetBase(content) {
             } else {
               closure_0 = tmp4;
               closure_1_5(true);
-              v0(8641).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
-              const obj5 = v0(8641);
+              v0(8281).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
+              const obj5 = v0(8281);
               obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = closure_1_0.id;
               obj1[1] = closure_1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(8641).feedItemActioned(obj1);
+              v0(8281).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };

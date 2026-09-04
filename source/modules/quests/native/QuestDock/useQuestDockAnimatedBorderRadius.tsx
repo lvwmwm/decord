@@ -1,10 +1,10 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15108
+// Function ID: 15109
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 14941, 4217, 2]
+// Dependencies: [19, 15023, 4218, 2]
 // Exports: default
 
-// Module 15026 (useQuestDockAnimatedBorderRadius)
+// Module 15108 (useQuestDockAnimatedBorderRadius)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

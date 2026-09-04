@@ -1,10 +1,10 @@
-// Module ID: 5134
-// Function ID: 5135
+// Module ID: 5142
+// Function ID: 5143
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 5135, 1214, 2]
+// Dependencies: [5, 3, 5143, 1214, 2]
 // Exports: maybeConvertToWebP
 
-// Module 5134 (_shouldConvertToWebP)
+// Module 5142 (_shouldConvertToWebP)
 import timestampDefault from "timestamp" /* 3 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

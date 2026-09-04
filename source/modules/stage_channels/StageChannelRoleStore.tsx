@@ -1,21 +1,21 @@
-// Module ID: 5374
-// Function ID: 5375
+// Module ID: 5382
+// Function ID: 5383
 // Name: buildStageChannelUserRoles
-// Dependencies: [1386, 1991, 1984, 1908, 1921, 4497, 4668, 4125, 1394, 12, 586, 5375, 706, 2]
+// Dependencies: [1386, 1991, 1984, 1908, 1921, 4500, 4675, 4125, 1395, 12, 586, 5383, 706, 2]
 
-// Module 5374 (buildStageChannelUserRoles)
+// Module 5382 (buildStageChannelUserRoles)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5375 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4675 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5383 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "updateVoiceState" /* 4497 */;
+import closure_9 from "updateVoiceState" /* 4500 */;
 
 require = arg1;
 function buildStageChannelUserRoles(id, closure_0, flag) {
@@ -44,7 +44,7 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
         let canResult = null;
         if (flag) {
           obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
-          obj[0] = tmp8(1394).MODERATE_STAGE_CHANNEL_PERMISSIONS;
+          obj[0] = tmp8(1395).MODERATE_STAGE_CHANNEL_PERMISSIONS;
           obj[1] = id;
           obj[2] = guild;
           obj[3] = channel.permissionOverwrites;

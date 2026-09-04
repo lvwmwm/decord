@@ -1,9 +1,9 @@
-// Module ID: 6406
-// Function ID: 6407
+// Module ID: 5787
+// Function ID: 5788
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6406 (metadata)
+// Module 5787 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChairIllocon-2x.png.js");

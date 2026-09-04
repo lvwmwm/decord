@@ -1,10 +1,10 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7333
+// Function ID: 7334
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 673, 706, 527, 4756, 2]
+// Dependencies: [5, 673, 706, 527, 4763, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7153 (_fetchUserEntitlements)
+// Module 7333 (_fetchUserEntitlements)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;

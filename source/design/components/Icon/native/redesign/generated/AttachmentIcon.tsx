@@ -1,14 +1,14 @@
-// Module ID: 10221
-// Function ID: 10222
+// Module ID: 10041
+// Function ID: 10042
 // Name: AttachmentIcon
-// Dependencies: [19, 21, 709, 4196, 10222, 2]
+// Dependencies: [19, 21, 709, 4196, 10042, 2]
 // Exports: AttachmentIcon
 
-// Module 10221 (AttachmentIcon)
+// Module 10041 (AttachmentIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10222 */;
+import registerAsset from "registerAsset" /* 10042 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

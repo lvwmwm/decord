@@ -1,21 +1,21 @@
-// Module ID: 15853
-// Function ID: 15854
+// Module ID: 15939
+// Function ID: 15940
 // Name: LeftPanelContent
-// Dependencies: [32, 19, 17, 673, 21, 15854, 5563, 4478, 709, 4335, 1627, 15855, 15856, 15857, 15939, 16119, 4217, 15861, 16199, 4338, 11358, 2]
+// Dependencies: [32, 19, 17, 673, 21, 15940, 5541, 4481, 709, 4338, 1627, 15941, 15942, 15943, 16025, 16205, 4218, 15946, 16285, 4341, 11465, 2]
 
-// Module 15853 (LeftPanelContent)
+// Module 15939 (LeftPanelContent)
 import ThemesDefault from "Themes" /* 709 */;
-import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4338 */;
-import setLevels from "setLevels" /* 11358 */;
-import setLevelsDefault from "setLevels" /* 11358 */;
-import context from "context" /* 15861 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16199 */;
+import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4341 */;
+import setLevels from "setLevels" /* 11465 */;
+import setLevelsDefault from "setLevels" /* 11465 */;
+import context from "context" /* 15946 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16285 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function LeftPanelContent(panelStyles) {
@@ -47,11 +47,11 @@ function LeftPanelContent(panelStyles) {
   isChatBesideChannelList = tmp10(tmp3[9])().isChatBesideChannelList;
   top = tmp10(tmp3[10])().top;
   const items1 = [tmp, top];
-  const items2 = [tmp, isChatBesideChannelList];
   const memo = obj1.useMemo(() => {
     const items = [first.sideContainer, { marginTop: top }];
     return items;
   }, items1);
+  const items2 = [tmp, isChatBesideChannelList];
   const memo1 = obj1.useMemo(() => {
     const items = [first.side, ];
     let sideTablet = isChatBesideChannelList;
@@ -85,7 +85,7 @@ function LeftPanelContent(panelStyles) {
     let tmp16Result = tmp16(tmp18, obj1);
   } else {
     const obj2 = { style: null, pointerEvents: "box-none", nativeID: "messages-parent-view", children: null };
-    const items6 = [panelStyles, tmp.sideContainer];
+    const items6 = [memo, panelStyles];
     obj2[0] = items6;
     obj2[3] = tmp15Result;
     tmp16Result = tmp16(tmp10(tmp3[16]).View, obj2);

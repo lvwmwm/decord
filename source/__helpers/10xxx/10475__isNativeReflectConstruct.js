@@ -1,18 +1,17 @@
 // Module ID: 10475
 // Function ID: 10476
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10474, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10476, 10368]
 
 // Module 10475 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
-import now from "now" /* 10474 */;
-import ENCasualTimeParser from "_classCallCheck" /* 41 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let self = this;
+const ZHHantDateParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,129 +31,85 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let __setModuleDefault = self;
-  if (self) {
-    __setModuleDefault = self.__setModuleDefault;
+class ZHHantDateParser {
+  constructor() {
+    self = this;
+    tmp = closure_2(this, ZHHantDateParser);
+    tmp2 = closure_4;
+    obj = closure_4(ZHHantDateParser);
+    tmp3 = closure_3;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  if (__setModuleDefault) {
-    let fn = self;
-    if (self) {
-      fn = self.__importStar;
+}
+_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
+  {
+    key: "innerPattern",
+    value: function innerPattern() {
+      const keys = Object.keys(ZHHantDateParser(10476).NUMBER);
+      const text = `(\\d{2,4}|[${obj.join("")}`;
+      const keys1 = Object.keys(ZHHantDateParser(10476).NUMBER);
+      const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
+      const keys2 = Object.keys(ZHHantDateParser(10476).NUMBER);
+      const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
+      const keys3 = Object.keys(ZHHantDateParser(10476).NUMBER);
+      const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
+      return regExp;
     }
-    if (!fn) {
-      function c(arg0) {
-        let fn = Object.getOwnPropertyNames;
-        if (!fn) {
-          fn = (obj) => {
-            const items = [];
-            for (const key10005 in arg0) {
-              let tmp2 = key10005;
-              let _Object = Object;
-              let call = hasOwnProperty.call;
-              if (typeof call === "unknown") {
-                let hasOwnPropertyResult = hasOwnProperty(key10005);
-              } else {
-                hasOwnPropertyResult = call(arg0, key10005);
-              }
-              if (!hasOwnPropertyResult) {
-                continue;
-              } else {
-                items[items.length] = key10005;
-                continue;
-              }
-              continue;
-            }
-            return items;
-          };
-        }
-        return fn(arg0);
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const parsed = parseInt(index[2]);
+      let zhStringToNumberResult = parsed;
+      if (isNaN(parsed)) {
+        zhStringToNumberResult = ZHHantDateParser(10476).zhStringToNumber(index[2]);
       }
-      fn = (__esModule) => {
-        if (__esModule) {
-          if (__esModule.__esModule) {
-            return __esModule;
-          }
+      const start = parsingResult.start;
+      start.assign("month", zhStringToNumberResult);
+      if (index[3]) {
+        const _parseInt = parseInt;
+        const parsed1 = parseInt(index[3]);
+        const _isNaN = isNaN;
+        let zhStringToNumberResult1 = parsed1;
+        if (isNaN(parsed1)) {
+          zhStringToNumberResult1 = ZHHantDateParser(10476).zhStringToNumber(index[3]);
         }
-        const obj = {};
-        if (null != __esModule) {
-          const arr = c(__esModule);
-          for (let num = 0; num < arr.length; num = num + 1) {
-            let tmp2 = num;
-            if ("default" !== arr[num]) {
-              let tmp3 = self2;
-              let tmp4 = self2(obj, __esModule, arr[num]);
-            }
-          }
-        }
-        __setModuleDefault(obj, __esModule);
-        return obj;
-      };
-    }
-    const _Object3 = Object;
-    let closure_7 = fn(now);
-    const re8 = /(?:this)?\s{0,3}(morning|afternoon|evening|night|midnight|midday|noon)(?=\W|$)/i;
-    class ENCasualTimeParser {
-      constructor() {
-        self = this;
-        tmp = ENCasualTimeParser(this, ENCasualTimeParser);
-        tmp2 = closure_2;
-        obj = closure_2(ENCasualTimeParser);
-        tmp3 = closure_1;
-        if (_isNativeReflectConstruct()) {
-          tmp7 = globalThis;
-          _Reflect = Reflect;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-        } else {
-          tmp4 = arguments;
-          tmp5 = arguments;
-          constructResult = obj(...arguments);
-        }
-        return tmp3(self, constructResult);
-      }
-    }
-    _inherits(ENCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-    let obj = { key: "innerPattern", value: null };
-    obj[1] = function innerPattern() {
-      return closure_8;
-    };
-    let items = [obj, ];
-    obj = { key: "innerExtract", value: null };
-    obj[1] = function innerExtract(reference) {
-      const formatted = arg1[1].toLowerCase();
-      if ("afternoon" === formatted) {
-        let afternoonResult = closure_7.afternoon(reference.reference);
+        const start3 = parsingResult.start;
+        start3.assign("day", zhStringToNumberResult1);
       } else {
-        if ("evening" !== formatted) {
-          if ("night" !== formatted) {
-            if ("midnight" === formatted) {
-              afternoonResult = closure_7.midnight(reference.reference);
-            } else if ("morning" === formatted) {
-              afternoonResult = closure_7.morning(reference.reference);
-            } else if ("noon" === formatted) {
-              afternoonResult = closure_7.noon(reference.reference);
-            } else {
-              afternoonResult = null;
-            }
-          }
+        const start2 = parsingResult.start;
+        const refDate = createParsingResult.refDate;
+        start2.imply("day", refDate.getDate());
+      }
+      if (index[1]) {
+        const _parseInt2 = parseInt;
+        let parsed2 = parseInt(index[1]);
+        const _isNaN2 = isNaN;
+        if (isNaN(parsed2)) {
+          parsed2 = ZHHantDateParser(10476).zhStringToYear(index[1]);
         }
-        afternoonResult = closure_7.evening(reference.reference);
+        const start5 = parsingResult.start;
+        start5.assign("year", parsed2);
+      } else {
+        const start4 = parsingResult.start;
+        const refDate2 = createParsingResult.refDate;
+        start4.imply("year", refDate2.getFullYear());
       }
-      if (afternoonResult) {
-        afternoonResult.addTag("parser/ENCasualTimeParser");
-      }
-      return afternoonResult;
-    };
-    items[1] = obj;
-    exports.default = _createClass(ENCasualTimeParser, items);
-  } else {
-    const _Object2 = Object;
+      return parsingResult;
+    }
   }
-} else {
-  let _Object = Object;
-}
+];
+
+export default _createClass(ZHHantDateParser, items);

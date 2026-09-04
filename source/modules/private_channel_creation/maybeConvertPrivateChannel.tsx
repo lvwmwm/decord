@@ -1,12 +1,12 @@
-// Module ID: 7510
-// Function ID: 7511
+// Module ID: 7687
+// Function ID: 7688
 // Name: maybeConvertPrivateChannel
-// Dependencies: [1386, 6077, 4491, 2]
+// Dependencies: [1386, 7161, 4494, 2]
 // Exports: default
 
-// Module 7510 (maybeConvertPrivateChannel)
-import _modDef4491 from "module_4491" /* 4491 */;
-import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 6077 */;
+// Module 7687 (maybeConvertPrivateChannel)
+import _modDef4494 from "module_4494" /* 4494 */;
+import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 7161 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 
 require = arg1;
@@ -19,8 +19,8 @@ export default function maybeConvertPrivateChannel(arg0) {
     channel = channel.getChannel(arg0);
     let ensurePrivateChannelResult = null;
     if (null != channel) {
-      ensurePrivateChannelResult = _modDef4491.ensurePrivateChannel(channel.recipients);
-      const obj = _modDef4491;
+      ensurePrivateChannelResult = _modDef4494.ensurePrivateChannel(channel.recipients);
+      const obj = _modDef4494;
     }
     return ensurePrivateChannelResult;
   }

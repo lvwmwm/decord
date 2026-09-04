@@ -1,17 +1,17 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10169
+// Function ID: 10170
 // Name: items1
-// Dependencies: [32, 19, 1383, 1372, 6262, 10335, 10333, 10344, 6261, 10343, 2]
+// Dependencies: [32, 19, 1383, 1372, 7327, 10155, 10153, 10168, 7326, 10167, 2]
 // Exports: useFavoritesBetaTagDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useShouldRenderFavoritesMenuItemPopover
 
-// Module 10345 (items1)
+// Module 10169 (items1)
 import DismissibleContent from "DismissibleContent" /* 1372 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6261 */;
-import canShowTimeRecurringContent from "canShowTimeRecurringContent" /* 6262 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10333 */;
-import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10335 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10343 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10344 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7326 */;
+import useGetVisibleContent from "useGetVisibleContent" /* 7327 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10155 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10167 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10168 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
@@ -28,7 +28,7 @@ export const useFavoritesMenuItemPopoverDismissibleContent = function useFavorit
   const isFavoritesGuildSelected = useFavoritesAccess.useIsFavoritesGuildSelected();
   const obj2 = useFavoritesAccess;
   const tmp4 = useCanShowFavoritesGuildOnboardingDefault();
-  let first = callback(canShowTimeRecurringContent.useDangerouslyPeekDismissibleContents(items1), 1)[0];
+  let first = callback(useGetVisibleContent.useDangerouslyPeekDismissibleContents(items1), 1)[0];
   if (first == null) {
     first = null;
   }
@@ -52,7 +52,7 @@ export const useFavoritesMenuItemPopoverDismissibleContent = function useFavorit
   items = [];
 };
 export const useShouldRenderFavoritesMenuItemPopover = function useShouldRenderFavoritesMenuItemPopover() {
-  const tmp3 = callback(canShowTimeRecurringContent.useDangerouslyPeekDismissibleContents(items2), 1)[0] === DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+  const tmp3 = callback(useGetVisibleContent.useDangerouslyPeekDismissibleContents(items2), 1)[0] === DismissibleContent.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
   const tmp4 = callback(React.useState(tmp3), 2);
   const first = tmp4[0];
   let tmp6 = tmp3;

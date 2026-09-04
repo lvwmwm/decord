@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 244, height: 119, scales: [1, 2, 3], hash: "fef47f26495822d9e37d120cd2650e58", name: "family_center_activity_banner_image_teen", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "cb806289f81913ccee7a9e209b850638", name: "blocked_dark", type: "png" });

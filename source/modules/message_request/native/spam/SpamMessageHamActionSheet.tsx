@@ -1,25 +1,25 @@
-// Module ID: 12247
-// Function ID: 12248
+// Module ID: 12379
+// Function ID: 12380
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1921, 21, 4478, 709, 586, 12242, 4194, 1233, 7692, 4445, 5631, 5630, 5999, 8376, 4929, 2]
+// Dependencies: [32, 19, 17, 1921, 21, 4481, 709, 586, 12374, 4194, 1233, 5552, 4448, 7090, 7089, 7139, 8523, 4936, 2]
 // Exports: default
 
-// Module 12247 (SpamMessageRequestHamActionSheet)
+// Module 12379 (SpamMessageRequestHamActionSheet)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4929 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 5999 */;
-import Form from "Form" /* 8376 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 12242 */;
+import Button from "Button" /* 4936 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7139 */;
+import Form from "Form" /* 8523 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 12374 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -54,11 +54,11 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = recipientId(1233).intl;
       obj[1] = intl.string(recipientId(1233).t["EDYbS+"]);
-      obj[2] = callback(7692);
+      obj[2] = callback(5552);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
-      callback(4445).hideActionSheet();
+      callback(4448).hideActionSheet();
     }
   };
   const messageRequestActions = obj1.useMessageRequestActions(obj);

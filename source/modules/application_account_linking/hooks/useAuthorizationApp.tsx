@@ -1,14 +1,14 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 7107
+// Function ID: 7108
 // Name: getAuthorizationApp
-// Dependencies: [19, 4519, 4504, 4507, 1954, 5968, 2]
+// Dependencies: [19, 4522, 4507, 4510, 1954, 7108, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 5967 (getAuthorizationApp)
+// Module 7107 (getAuthorizationApp)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "addApplication" /* 4519 */;
-import closure_4 from "createExecutable" /* 4504 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
+import closure_3 from "addApplication" /* 4522 */;
+import closure_4 from "createExecutable" /* 4507 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4510 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");

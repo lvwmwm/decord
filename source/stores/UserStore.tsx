@@ -1,12 +1,12 @@
 // Module ID: 1921
 // Function ID: 1922
 // Name: mergeGuildAvatar
-// Dependencies: [1922, 1934, 1215, 1217, 673, 1923, 1936, 1932, 1897, 1898, 1937, 1941, 1942, 1943, 1398, 12, 1953, 1954, 1470, 2]
+// Dependencies: [1922, 1934, 1215, 1217, 673, 1923, 1936, 1932, 1897, 1898, 1937, 1941, 1942, 1943, 1399, 12, 1953, 1954, 1394, 2]
 
 // Module 1921 (mergeGuildAvatar)
 import clearAllDefault from "clearAll" /* 1217 */;
-import hasFlagAll from "hasFlag" /* 1398 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
 import validatePremiumType from "validatePremiumType" /* 1932 */;
 import isUserPrimaryGuildEqual from "isUserPrimaryGuildEqual" /* 1936 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
@@ -708,9 +708,9 @@ function handleIncomingMessage(message) {
       let flag = null != obj3;
       if (flag) {
         const id = store2.getId();
-        obj[id] = obj3.set("flags", tmp2(1398).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
+        obj[id] = obj3.set("flags", tmp2(1399).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
-        const tmp2Result = tmp2(1398);
+        const tmp2Result = tmp2(1399);
       }
       return flag;
     }

@@ -1,11 +1,11 @@
-// Module ID: 4932
-// Function ID: 4933
+// Module ID: 4939
+// Function ID: 4940
 // Name: SUBTLE_SPRING
-// Dependencies: [2, 4933]
+// Dependencies: [2, 4940]
 
-// Module 4932 (SUBTLE_SPRING)
+// Module 4939 (SUBTLE_SPRING)
 import set from "set" /* 2 */;
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4933 */;
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4940 */;
 
 const result = set.fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11463
+// Function ID: 11464
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4519, 4527, 673, 7492, 7866, 1233, 11357, 6087, 6082, 3370, 8234, 4466, 8512, 1235, 586, 1470, 5968, 2]
+// Dependencies: [32, 19, 4522, 4530, 673, 7669, 7876, 1233, 11464, 7171, 7166, 3370, 9295, 4469, 10729, 1235, 586, 1394, 7108, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11356 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11463 (createSocialLayerStorefrontProductDetailsEmbed)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getPrice from "getPrice" /* 6082 */;
-import useSKUPrice from "useSKUPrice" /* 6087 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
+import getPrice from "getPrice" /* 7166 */;
+import useSKUPrice from "useSKUPrice" /* 7171 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7876 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "addApplication" /* 4519 */;
-import closure_6 from "addSku" /* 4527 */;
+import closure_5 from "addApplication" /* 4522 */;
+import closure_6 from "addSku" /* 4530 */;
 import { PaymentGateways } from "ME" /* 673 */;
-import { InviteTypes } from "InviteSendStates" /* 7492 */;
+import { InviteTypes } from "InviteSendStates" /* 7669 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11357)(application)) {
+        if (tmp(11464)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = useSKUPrice.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = useSKUPrice;

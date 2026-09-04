@@ -1,23 +1,23 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10036
+// Function ID: 10037
 // Name: NativeMessagePreviewContent
-// Dependencies: [19, 17, 1386, 10204, 21, 4478, 1235, 709, 10217, 10218, 10203, 4474, 5502, 10238, 4747, 10246, 10247, 690, 6156, 1233, 4171, 2]
+// Dependencies: [19, 17, 1386, 10024, 21, 4481, 1235, 709, 10037, 10038, 10023, 4477, 5542, 10060, 4754, 10068, 10069, 690, 7240, 1233, 4171, 2]
 // Exports: default
 
-// Module 10216 (NativeMessagePreviewContent)
+// Module 10036 (NativeMessagePreviewContent)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5502 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6156 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10203 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10217 */;
-import PreviewIcon from "PreviewIcon" /* 10218 */;
+import Text from "Text" /* 4477 */;
+import preloadDefault from "preload" /* 5542 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7240 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10023 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10037 */;
+import PreviewIcon from "PreviewIcon" /* 10038 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import set from "set" /* 10204 */;
+import set from "set" /* 10024 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
@@ -156,7 +156,7 @@ PlatformTypes = { width: 4, marginTop: -ThemesDefault.space.PX_8, marginBottom: 
 createCacheKey[1] = PlatformTypes;
 createCacheKey = { flex: 1, gap: ThemesDefault.space.PX_4, paddingVertical: ThemesDefault.space.PX_4, paddingHorizontal: ThemesDefault.space.PX_8 };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { borderRadius: ThemesDefault.radii.xs, overflow: "hidden", height: 60, width: "HermesInternal" };
+createCacheKey[3] = { borderRadius: ThemesDefault.radii.xs, overflow: "hidden", height: 60, width: "WireType" };
 createCacheKey[4] = { width: "100%", height: "100%" };
 let closure_11 = createCacheKey.createStyles(createCacheKey);
 let result = set.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
@@ -167,18 +167,18 @@ export default function MessagePreviewText(message) {
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  let obj = message(10238);
+  let obj = message(10060);
   const previewableMedia = obj.usePreviewableMedia(message);
-  obj1 = message(4747);
+  obj1 = message(4754);
   let tmp3 = null;
   if (showMessageAuthor) {
     tmp3 = message;
   }
   const nullableMessageAuthor = obj1.useNullableMessageAuthor(tmp3);
-  let tmpResult = tmp(10246);
+  let tmpResult = tmp(10068);
   const previewableMediaText = tmpResult.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
   ({ text, secondaryText } = previewableMediaText);
-  tmpResult = tmp(10247);
+  tmpResult = tmp(10069);
   const getInitialMessagePreview = tmpResult.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
   const memo = React.useMemo(() => {
@@ -209,7 +209,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp29 = previewableMedia.length > 0;
     if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(10238).PreviewableMediaTypes.GIF;
+      tmp29 = previewableMedia[0].type === tmp(10060).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -233,7 +233,7 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       channel = channel.getChannel(message.channel_id);
-      tmp(10203);
+      tmp(10023);
       if (null != channel) {
         const obj6 = { channel: null, message: null, color: "text-default", layout: null, variant: null, muted: false, lineClamp: null };
         obj6[0] = channel;
@@ -241,7 +241,7 @@ export default function MessagePreviewText(message) {
         obj6[3] = tmp(4171).ChannelListLayoutTypes.COZY;
         obj6[4] = tmp24;
         obj6[6] = lineClamp;
-        return callback(tmp(10218).ChannelRowPreview, obj6);
+        return callback(tmp(10038).ChannelRowPreview, obj6);
       }
     }
     const obj7 = { message: null, lineClamp: null, maxHeight: null };
@@ -260,7 +260,7 @@ export default function MessagePreviewText(message) {
           const obj9 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: null, children: null };
           obj9[2] = closure_7;
           obj9[3] = secondaryText;
-          tmp17Result = callback(tmp(4474).Text, obj9);
+          tmp17Result = callback(tmp(4477).Text, obj9);
         }
         const obj10 = { children: null };
         items2[1] = tmp17Result;
@@ -285,7 +285,7 @@ export default function MessagePreviewText(message) {
       const obj14 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: null, children: null };
       obj14[2] = closure_7;
       obj14[3] = message.poll.question.text;
-      items3[1] = callback(tmp(4474).Text, obj14);
+      items3[1] = callback(tmp(4477).Text, obj14);
       obj12[0] = items3;
       return callback2(View, obj12);
     } else {

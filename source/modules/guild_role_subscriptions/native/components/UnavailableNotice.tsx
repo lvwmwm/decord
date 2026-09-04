@@ -1,18 +1,18 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16458
+// Function ID: 16459
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4478, 709, 5502, 16081, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 5542, 16167, 4477, 2]
 // Exports: default
 
-// Module 16372 (UnavailableNotice)
+// Module 16458 (UnavailableNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5502 */;
-import registerAssetDefault from "registerAsset" /* 16081 */;
+import Text from "Text" /* 4477 */;
+import preloadDefault from "preload" /* 5542 */;
+import registerAssetDefault from "registerAsset" /* 16167 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

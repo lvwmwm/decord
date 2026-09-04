@@ -1,9 +1,9 @@
-// Module ID: 6562
-// Function ID: 6563
+// Module ID: 5943
+// Function ID: 5944
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6562 (metadata)
+// Module 5943 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FireIllocon-2x.png.js");

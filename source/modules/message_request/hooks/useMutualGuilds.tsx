@@ -1,12 +1,12 @@
-// Module ID: 16715
-// Function ID: 16716
+// Module ID: 16802
+// Function ID: 16803
 // Name: useMutualGuildsForMessageRequests
-// Dependencies: [19, 7376, 1921, 586, 706, 8126, 2]
+// Dependencies: [19, 7554, 1921, 586, 706, 8118, 2]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 16715 (useMutualGuildsForMessageRequests)
+// Module 16802 (useMutualGuildsForMessageRequests)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createUserWidgetFromServer" /* 7376 */;
+import closure_4 from "createUserWidgetFromServer" /* 7554 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;

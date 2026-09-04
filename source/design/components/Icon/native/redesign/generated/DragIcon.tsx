@@ -1,14 +1,14 @@
-// Module ID: 5618
-// Function ID: 5619
+// Module ID: 5570
+// Function ID: 5571
 // Name: DragIcon
-// Dependencies: [19, 21, 709, 4196, 5619, 2]
+// Dependencies: [19, 21, 709, 4196, 5571, 2]
 // Exports: DragIcon
 
-// Module 5618 (DragIcon)
+// Module 5570 (DragIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5619 */;
+import registerAsset from "registerAsset" /* 5571 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

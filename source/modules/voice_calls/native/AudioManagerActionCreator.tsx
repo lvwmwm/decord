@@ -1,10 +1,10 @@
-// Module ID: 9832
-// Function ID: 9833
+// Module ID: 9046
+// Function ID: 9047
 // Name: setAudioOutputDevice
 // Dependencies: [706, 2]
 // Exports: setAudioOutputDevice
 
-// Module 9832 (setAudioOutputDevice)
+// Module 9046 (setAudioOutputDevice)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

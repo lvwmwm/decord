@@ -1,17 +1,17 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14722
+// Function ID: 14723
 // Name: renderContent
-// Dependencies: [19, 21, 527, 4927, 4474, 7717, 4948, 6058, 2]
+// Dependencies: [19, 21, 527, 4934, 4477, 6547, 4955, 5533, 2]
 
-// Module 14641 (renderContent)
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
-import _modDef6058 from "module_6058" /* 6058 */;
+// Module 14722 (renderContent)
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
+import _modDef5533 from "module_5533" /* 5533 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
 let require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-let closure_5 = { input: "", error: "add" };
+let closure_5 = { input: "", error: "accessible" };
 const PureComponent = importAllResult.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
@@ -79,7 +79,7 @@ prototype["renderContent"] = function renderContent() {
     if (tmp7) {
       let obj = { variant: "text-md/normal", children: null };
       obj[1] = helpText;
-      tmp7 = callback(tmp5(4474).Text, obj);
+      tmp7 = callback(tmp5(4477).Text, obj);
     }
     const items = [tmp7, ];
     obj = { label: null, placeholder: null, secureTextEntry: null, returnKeyType: "done", autoFocus: true, status: null, errorMessage: null, onSubmitEditing: null, onChange: null };
@@ -97,9 +97,9 @@ prototype["renderContent"] = function renderContent() {
     obj[8] = function onChange(input) {
       return self.setState({ input });
     };
-    items[1] = callback(self(7717).TextInput, obj);
+    items[1] = callback(self(6547).TextInput, obj);
     obj[1] = items;
-    return closure_4(self(4927).Stack, obj);
+    return closure_4(self(4934).Stack, obj);
   }
   error = self.state.error;
 };
@@ -111,7 +111,7 @@ prototype["render"] = function render() {
   if (useKeyboardAwareWrapper) {
     obj = { children: null };
     obj[0] = tmp5;
-    tmpResult = callback(_modDef6058, obj);
+    tmpResult = callback(_modDef5533, obj);
   }
   return tmpResult;
 };

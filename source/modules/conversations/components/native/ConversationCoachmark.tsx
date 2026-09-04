@@ -1,19 +1,19 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 13188
+// Function ID: 13189
 // Name: NewBadge
-// Dependencies: [32, 19, 17, 1383, 21, 1372, 4478, 709, 4474, 1233, 6261, 8991, 2]
+// Dependencies: [32, 19, 17, 1383, 21, 1372, 4481, 709, 4477, 1233, 7326, 11059, 2]
 // Exports: ConversationCoachmark
 
-// Module 13156 (NewBadge)
+// Module 13188 (NewBadge)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function NewBadge() {
@@ -39,7 +39,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   dependencyMap = undefined;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = first(6261);
+  let obj = first(7326);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -60,7 +60,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     return obj;
   }, items);
   const tmp = callback2();
-  const coachmark = first(8991).useCoachmark(ref, memo);
+  const coachmark = first(11059).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
   callback = React.useCallback(() => {

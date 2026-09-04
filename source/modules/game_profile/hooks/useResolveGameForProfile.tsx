@@ -1,14 +1,14 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 8608
+// Function ID: 8609
 // Name: useResolveGameForProfile
-// Dependencies: [5968, 4654, 8824, 4655, 6163, 2]
+// Dependencies: [7108, 4657, 8609, 4658, 7247, 2]
 // Exports: default
 
-// Module 8823 (useResolveGameForProfile)
+// Module 8608 (useResolveGameForProfile)
 import set from "set" /* 2 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 5968 */;
-import importDefaultResult1 from "importDefaultResult1" /* 6163 */;
-import useResolveGameDefault from "useResolveGame" /* 8824 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7108 */;
+import importDefaultResult1 from "importDefaultResult1" /* 7247 */;
+import useResolveGameDefault from "useResolveGame" /* 8609 */;
 
 let result = set.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 
@@ -22,30 +22,30 @@ export default function useResolveGameForProfile(arg0) {
   const getOrFetchApplication = obj.useGetOrFetchApplication(tmp3);
   let result = null != getOrFetchApplication;
   if (result) {
-    let tmpResult = tmp(4654);
+    let tmpResult = tmp(4657);
     result = tmpResult.isRobloxSubgameApplication(getOrFetchApplication);
   }
   obj = { applicationId, gameId: null };
   if (result) {
-    gameId = tmp(4655).ROBLOX_GAME_ID;
+    gameId = tmp(4658).ROBLOX_GAME_ID;
   }
   obj[1] = gameId;
   let tmp6Result = useResolveGameDefault(obj);
   let isRobloxSubgameGameResult = null != tmp6Result.gameRecord;
   if (isRobloxSubgameGameResult) {
-    tmpResult = tmp(4654);
+    tmpResult = tmp(4657);
     isRobloxSubgameGameResult = tmpResult.isRobloxSubgameGame(tmp6Result.gameRecord);
   }
   const tmp6 = useResolveGameDefault;
   let ROBLOX_GAME_ID;
   if (isRobloxSubgameGameResult) {
-    ROBLOX_GAME_ID = tmp(4655).ROBLOX_GAME_ID;
+    ROBLOX_GAME_ID = tmp(4658).ROBLOX_GAME_ID;
   }
   const game = importDefaultResult1.useGame(ROBLOX_GAME_ID);
   let data = game.data;
   if (isRobloxSubgameGameResult) {
     obj = { gameId: null, gameRecord: null, isLoading: null };
-    obj[0] = tmp(4655).ROBLOX_GAME_ID;
+    obj[0] = tmp(4658).ROBLOX_GAME_ID;
     if (data == null) {
       data = null;
     }

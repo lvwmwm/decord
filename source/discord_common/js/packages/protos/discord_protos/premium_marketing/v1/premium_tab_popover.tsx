@@ -1,14 +1,14 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 10616
+// Function ID: 10617
 // Name: create
-// Dependencies: [32, 1306, 8476, 8468, 8467, 8466, 2]
+// Dependencies: [32, 1306, 10609, 10601, 10600, 10599, 2]
 
-// Module 8483 (create)
+// Module 10616 (create)
 import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 8466 */;
-import create2 from "create" /* 8467 */;
-import create3 from "create" /* 8468 */;
-import create4 from "create" /* 8476 */;
+import create from "create" /* 10599 */;
+import create2 from "create" /* 10600 */;
+import create3 from "create" /* 10601 */;
+import create4 from "create" /* 10609 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;
 
@@ -23,7 +23,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(8476).ThemeAwareAsset;
+            return callback(10609).ThemeAwareAsset;
           }
     };
     items[3] = {
@@ -31,7 +31,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(8468).CTAButton;
+            return callback(10601).CTAButton;
           }
     };
     items[4] = { no: 5, name: "help_article_id", kind: "scalar", T: 9 };
@@ -40,7 +40,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8467).HelpArticle;
+            return callback(10600).HelpArticle;
           }
     };
     obj = { no: 7, name: "header_localized", kind: "message", T: null };
@@ -56,7 +56,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(8466).LocalizedString;
+            return callback(10599).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PremiumTabPopover", items, T);
@@ -231,7 +231,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(8476).ThemeAwareAsset;
+      return callback(10609).ThemeAwareAsset;
     }
   },
   {
@@ -239,7 +239,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(8468).CTAButton;
+      return callback(10601).CTAButton;
     }
   },
   { no: 5, name: "help_article_id", kind: "scalar", T: 9 },
@@ -248,7 +248,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(8467).HelpArticle;
+      return callback(10600).HelpArticle;
     }
   },
 ,
@@ -267,7 +267,7 @@ items[7] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(8466).LocalizedString;
+    return callback(10599).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PremiumTabPopover", items, tmp, T, PremiumTabPopover$Type, prototype, items);

@@ -1,11 +1,11 @@
-// Module ID: 17699
-// Function ID: 17700
+// Module ID: 17779
+// Function ID: 17780
 // Name: experiment
-// Dependencies: [4389, 2]
+// Dependencies: [4392, 2]
 
-// Module 17699 (experiment)
+// Module 17779 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4389 */;
+import createExperiment from "createExperiment" /* 4392 */;
 
 const items = [{ id: 1, label: "All enabled", config: { searchEnabled: true, clearEnabled: true, activityEnabled: true } }, { id: 2, label: "Clear Only", config: { searchEnabled: false, clearEnabled: true, activityEnabled: false } }, { id: 3, label: "Activities Only", config: { searchEnabled: false, clearEnabled: false, activityEnabled: true } }, { id: 4, label: "Activities and Clear", config: { searchEnabled: false, clearEnabled: true, activityEnabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "user", id: "2025-06_native_intents", label: "Native Intents", defaultConfig: { searchEnabled: false, clearEnabled: false, activityEnabled: false }, treatments: items });

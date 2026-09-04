@@ -1,17 +1,17 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12613
+// Function ID: 12614
 // Name: _requestAndSyncContacts
-// Dependencies: [5, 5234, 1921, 12453, 12452, 673, 592, 12454, 5495, 6055, 2]
+// Dependencies: [5, 5242, 1921, 12611, 12610, 673, 592, 12612, 7058, 6978, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 12455 (_requestAndSyncContacts)
+// Module 12613 (_requestAndSyncContacts)
 import Storage3 from "Storage" /* 592 */;
-import initializeDefault from "initialize" /* 5495 */;
+import initializeDefault from "initialize" /* 7058 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "set" /* 5234 */;
+import closure_3 from "set" /* 5242 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import setStoredContacts from "setStoredContacts" /* 12453 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12452 */;
+import setStoredContacts from "setStoredContacts" /* 12611 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12610 */;
 import { PlatformTypes } from "ME" /* 673 */;
 
 require = arg1;

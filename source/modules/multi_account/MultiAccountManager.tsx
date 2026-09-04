@@ -1,14 +1,14 @@
-// Module ID: 17262
-// Function ID: 17263
+// Module ID: 17348
+// Function ID: 17349
 // Name: _initialize
-// Dependencies: [1921, 13612, 5495, 706, 13523, 2]
+// Dependencies: [1921, 13645, 7058, 706, 13556, 2]
 
-// Module 17262 (_initialize)
+// Module 17348 (_initialize)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 5495 */;
-import noop from "noop" /* 13523 */;
+import initializeDefault from "initialize" /* 7058 */;
+import noop from "noop" /* 13556 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "initialize" /* 13612 */;
+import closure_4 from "initialize" /* 13645 */;
 
 require = arg1;
 initializeDefault;

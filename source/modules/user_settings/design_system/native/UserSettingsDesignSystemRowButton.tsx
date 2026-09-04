@@ -1,17 +1,17 @@
-// Module ID: 15605
-// Function ID: 15606
+// Module ID: 15687
+// Function ID: 15688
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 8376, 4927, 709, 4474, 8378, 6251, 2]
+// Dependencies: [19, 17, 21, 8523, 4934, 709, 4477, 8525, 7319, 2]
 // Exports: default
 
-// Module 15605 (UserSettingsDesignSystemRowButton)
+// Module 15687 (UserSettingsDesignSystemRowButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import registerAssetDefault from "registerAsset" /* 6251 */;
-import Form from "Form" /* 8376 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8378 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import registerAssetDefault from "registerAsset" /* 7319 */;
+import Form from "Form" /* 8523 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8525 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

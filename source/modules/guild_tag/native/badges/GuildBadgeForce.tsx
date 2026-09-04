@@ -1,12 +1,12 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13940
+// Function ID: 13941
 // Name: items
-// Dependencies: [19, 21, 511, 13895, 8254, 2]
+// Dependencies: [19, 21, 511, 13927, 8383, 2]
 // Exports: GuildBadgeForce
 
-// Module 13908 (items)
-import inlineStyles from "inlineStyles" /* 8254 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13895 */;
+// Module 13940 (items)
+import inlineStyles from "inlineStyles" /* 8383 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13927 */;
 import closure_2 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -71,13 +71,13 @@ export const GuildBadgeForce = function GuildBadgeForce(width) {
     obj15[0] = memo;
     const obj16 = { stopColor: null, offset: "30%" };
     obj16[0] = primaryColorsTransformed[1];
-    items1 = [tmp9(tmp3(8254).Stop, obj16), ];
+    items1 = [tmp9(tmp3(8383).Stop, obj16), ];
     const obj17 = { stopColor: null, offset: "70%" };
     obj17[0] = secondaryColorsTransformed[1];
-    items1[1] = tmp9(tmp3(8254).Stop, obj17);
+    items1[1] = tmp9(tmp3(8383).Stop, obj17);
     obj15[6] = items1;
-    obj14[0] = tmp7(tmp3(8254).RadialGradient, obj15);
-    tmp9Result = tmp9(tmp3(8254).Defs, obj14);
+    obj14[0] = tmp7(tmp3(8383).RadialGradient, obj15);
+    tmp9Result = tmp9(tmp3(8383).Defs, obj14);
   }
   items[20] = tmp9Result;
   obj.children = items;

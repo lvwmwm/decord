@@ -1,11 +1,11 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14377
+// Function ID: 14378
 // Name: knownExperimentConfigs
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 
-// Module 14345 (knownExperimentConfigs)
+// Module 14377 (knownExperimentConfigs)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { "2026-05-noisier-notif-settings-defaults": null };
 obj = { 1: null, 2: { variation: 1 }, 3: { variation: 2 }, 4: { variation: 3 }, 5: { variation: 4 } };

@@ -1,19 +1,19 @@
-// Module ID: 7852
-// Function ID: 7853
+// Module ID: 7862
+// Function ID: 7863
 // Name: modifyRow
-// Dependencies: [19, 17, 4470, 1991, 21, 7853, 8047, 4478, 709, 586, 4673, 7882, 4166, 4163, 1296, 4474, 8798, 2]
+// Dependencies: [19, 17, 4473, 1991, 21, 7863, 8057, 4481, 709, 586, 4680, 7892, 4166, 4163, 1296, 4477, 8582, 2]
 // Exports: default
 
-// Module 7852 (modifyRow)
+// Module 7862 (modifyRow)
 import ThemesDefault from "Themes" /* 709 */;
-import setOptionsDefault from "setOptions" /* 7853 */;
-import MediaGalleryItemType from "MediaGalleryItemType" /* 8047 */;
+import setOptionsDefault from "setOptions" /* 7863 */;
+import MediaGalleryItemType from "MediaGalleryItemType" /* 8057 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function modifyRow(arg0) {

@@ -1,15 +1,15 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12368
+// Function ID: 12369
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 4519, 5484, 586, 5970, 5963, 2]
+// Dependencies: [19, 4522, 7047, 586, 7110, 7103, 2]
 // Exports: default
 
-// Module 12236 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 12368 (useRequiredLinkedLobbyApplicationAuthorization)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import recomputeFromAppTokens from "recomputeFromAppTokens" /* 5484 */;
-import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "recomputeFromAppTokens" /* 5484 */;
+import recomputeFromAppTokens from "recomputeFromAppTokens" /* 7047 */;
+import closure_4 from "addApplication" /* 4522 */;
+import closure_5 from "recomputeFromAppTokens" /* 7047 */;
 
 const useEffect = noop.useEffect;
 const FetchState = recomputeFromAppTokens.FetchState;

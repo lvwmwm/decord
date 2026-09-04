@@ -1,9 +1,9 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14961
+// Function ID: 14962
 // Name: SOFT_CAP_PRELOAD_MAX_BITRATE
 // Dependencies: [2]
 
-// Module 14879 (SOFT_CAP_PRELOAD_MAX_BITRATE)
+// Module 14961 (SOFT_CAP_PRELOAD_MAX_BITRATE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/bountiesSoftCapPreload.tsx");

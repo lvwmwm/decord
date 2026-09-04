@@ -1,21 +1,21 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15089
+// Function ID: 15090
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 21, 4478, 709, 4413, 1363, 4197, 4326, 11307, 11154, 1233, 8107, 4474, 5077, 15008, 4941, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4416, 1363, 4197, 4329, 11415, 11225, 1233, 8592, 4477, 5084, 15090, 4948, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 15007 (QuestOrbMultiplierPerkPill)
+// Module 15089 (QuestOrbMultiplierPerkPill)
 import ThemesDefault from "Themes" /* 709 */;
 import isThemeLight from "isThemeLight" /* 1363 */;
 import map from "map" /* 4197 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
-import useTheme from "useTheme" /* 4413 */;
-import items5 from "items" /* 11154 */;
-import useQuests from "useQuests" /* 11307 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
+import useTheme from "useTheme" /* 4416 */;
+import items5 from "items" /* 11225 */;
+import useQuests from "useQuests" /* 11415 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -84,13 +84,13 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp21Result = !tmp13;
     let tmp19 = tmp21Result;
     if (!tmp13) {
-      tmp19 = questOrbRewardMultiplier(tmp2(8107).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = questOrbRewardMultiplier(tmp2(8592).NitroWheelIcon, { size: "xs", color: "white" });
     }
     obj1 = { children: null };
     const items2 = [tmp19, ];
     obj2 = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
     obj2[2] = formatToPlainStringResult;
-    items2[1] = questOrbRewardMultiplier(tmp2(4474).Text, obj2);
+    items2[1] = questOrbRewardMultiplier(tmp2(4477).Text, obj2);
     obj1[0] = items2;
     obj3 = { onPress: null, activeOpacity: 0.8, accessibilityRole: "button", accessibilityLabel: null, children: null };
     obj3[0] = function onPress() {
@@ -114,7 +114,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
       obj6[1] = items;
       obj6[2] = closure_8;
       obj6[3] = closure_9;
-      tmp21Result = tmp21(tmp6(4941), obj6);
+      tmp21Result = tmp21(tmp6(4948), obj6);
     }
     const items4 = [tmp21Result, ];
     obj7 = { style: null, children: null };
@@ -123,7 +123,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     items4[1] = questOrbRewardMultiplier(token3, obj7);
     obj4[1] = items4;
     obj3[4] = closure_7(token3, obj4);
-    return questOrbRewardMultiplier(tmp2(5077).PressableOpacity, obj3);
+    return questOrbRewardMultiplier(tmp2(5084).PressableOpacity, obj3);
   }
   const obj10 = items5;
 };

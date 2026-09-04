@@ -1,16 +1,16 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17800
+// Function ID: 17801
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1921, 673, 21, 4478, 511, 17713, 586, 8751, 17707, 1954, 8703, 17716, 6266, 1233, 2662, 2918, 8701, 1994, 14058, 6061, 4474, 8753, 2]
+// Dependencies: [19, 17, 1921, 673, 21, 4481, 511, 17793, 586, 8514, 17787, 1954, 8343, 17796, 5647, 1233, 2662, 2918, 8341, 1994, 14090, 6534, 4477, 8516, 2]
 // Exports: default
 
-// Module 17720 (AgeVerificationScreen)
+// Module 17800 (AgeVerificationScreen)
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ helpLink: { textAlign: "center" } });

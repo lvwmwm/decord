@@ -1,10 +1,10 @@
-// Module ID: 11871
-// Function ID: 11872
+// Module ID: 12002
+// Function ID: 12003
 // Name: sortGroup
 // Dependencies: [2]
 // Exports: queryData
 
-// Module 11871 (sortGroup)
+// Module 12002 (sortGroup)
 import set from "set" /* 2 */;
 
 function sortGroup(arr) {

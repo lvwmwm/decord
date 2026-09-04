@@ -1,14 +1,14 @@
-// Module ID: 7031
-// Function ID: 7032
+// Module ID: 6412
+// Function ID: 6413
 // Name: SnowIllocon
-// Dependencies: [21, 5502, 7032, 2]
+// Dependencies: [21, 5542, 6413, 2]
 // Exports: SnowIllocon
 
-// Module 7031 (SnowIllocon)
+// Module 6412 (SnowIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7032 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6413 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SnowIllocon.native.tsx");

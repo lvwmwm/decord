@@ -1,27 +1,27 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5099
+// Function ID: 5100
 // Name: openImagePickerUnhandled
-// Dependencies: [109, 5, 17, 1303, 4574, 1921, 673, 4731, 3, 5092, 5103, 5083, 5109, 1234, 4193, 1233, 4139, 5082, 1270, 5112, 5114, 5087, 4457, 5115, 5116, 5117, 1470, 5118, 5119, 5120, 4745, 5121, 2]
+// Dependencies: [109, 5, 17, 1303, 4577, 1921, 673, 4738, 3, 5100, 5111, 5090, 5117, 1234, 4193, 1233, 4139, 5089, 1270, 5120, 5122, 5095, 4460, 5123, 5124, 5125, 1394, 5126, 5127, 5128, 4752, 5129, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 5091 (openImagePickerUnhandled)
+// Module 5099 (openImagePickerUnhandled)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 1234 */;
 import enforcingDefault from "enforcing" /* 1270 */;
-import cancel from "cancel" /* 5082 */;
-import items2 from "items" /* 5083 */;
-import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5087 */;
-import toString from "toString" /* 5114 */;
-import getTimeFormat from "getTimeFormat" /* 5121 */;
+import cancel from "cancel" /* 5089 */;
+import items2 from "items" /* 5090 */;
+import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5095 */;
+import toString from "toString" /* 5122 */;
+import getTimeFormat from "getTimeFormat" /* 5129 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 import closure_10 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_11 from "handleConnectionInfoChange" /* 4574 */;
+import closure_11 from "handleConnectionInfoChange" /* 4577 */;
 import closure_12 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4731 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4738 */;
 
 require = arg1;
 function openImagePickerUnhandled() {
@@ -989,7 +989,7 @@ function convertVideo(videoMetadata) {
   if (obj6.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() > 34) {
       let _Math = Math;
-      let frameRate = Math.min(videoMetadata.frameRate, tmp(5114).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
+      let frameRate = Math.min(videoMetadata.frameRate, tmp(5122).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
     }
     obj.frameRate = frameRate;
     obj.skipVideoTranscode = result1;
@@ -2393,7 +2393,7 @@ function _tryConvertImage() {
                   if (closure_11) {
                     const obj9 = { path: null, encoderUsed: null };
                     obj9[0] = closure_11;
-                    obj9[1] = lib(4745).ImageEncoder.NATIVE;
+                    obj9[1] = lib(4752).ImageEncoder.NATIVE;
                     tmp51 = obj9;
                   }
                   c8 = 3;
@@ -2459,7 +2459,7 @@ function _tryConvertImage() {
                   return obj16;
                 } else {
                   dependencyMap.path = path;
-                  dependencyMap.encoderUsed = lib(4745).ImageEncoder.PASSTHROUGH;
+                  dependencyMap.encoderUsed = lib(4752).ImageEncoder.PASSTHROUGH;
                   c5 = 0;
                   c8 = 3;
                   let obj17 = { value: null, done: true };
@@ -2534,10 +2534,10 @@ function _tryConvertImage() {
                 obj22[0] = tmp10;
                 return obj22;
               }
-              obj16 = lib(5112);
+              obj16 = lib(5120);
               closure_13 = obj16.shouldForceConvertToJPG(closure_0, closure_1_1, closure_1_10);
               if (!closure_13) {
-                obj17 = lib(5112);
+                obj17 = lib(5120);
                 if (!obj17.shouldConvertToJPG(closure_0, closure_1_1, closure_1_2, closure_1_4, c7)) {
                   if ((function shouldConvertToGifFilepath(closure_0, closure_1_1) {
                     const isIOSResult = _undefined(1234).isIOS();
@@ -2553,7 +2553,7 @@ function _tryConvertImage() {
                       } else {
                         tmp7 = null != closure_0.match(/^assets-library:\/\/.+&ext=gif$/i);
                       }
-                      tmpResult = _undefined(5112);
+                      tmpResult = _undefined(5120);
                     }
                   })(closure_0, closure_1_1)) {
                     c7 = 9;

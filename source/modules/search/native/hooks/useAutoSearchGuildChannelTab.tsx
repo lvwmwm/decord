@@ -1,12 +1,12 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16643
+// Function ID: 16644
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 12149, 12136, 12159, 12, 12134, 2]
+// Dependencies: [19, 12285, 12272, 12293, 12, 12270, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 16554 (useAutoSearchGuildChannelTab)
+// Module 16643 (useAutoSearchGuildChannelTab)
 import closure_3 from "noop" /* 19 */;
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12149 */;
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12285 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");

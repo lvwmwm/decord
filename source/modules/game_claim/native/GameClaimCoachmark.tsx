@@ -1,24 +1,24 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16112
+// Function ID: 16113
 // Name: PX_8
-// Dependencies: [5, 19, 17, 673, 1383, 21, 709, 16027, 9106, 4934, 4478, 16028, 12896, 1233, 5610, 5077, 5560, 4474, 4929, 8747, 6170, 2]
+// Dependencies: [5, 19, 17, 673, 1383, 21, 709, 16113, 10048, 4941, 4481, 16114, 8850, 1233, 5562, 5084, 5635, 4477, 4936, 8510, 7254, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16026 (PX_8)
+// Module 16112 (PX_8)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4934 */;
-import map from "map" /* 9106 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12896 */;
-import importDefaultResult1 from "importDefaultResult1" /* 16027 */;
-import importDefaultResult1Default from "importDefaultResult1" /* 16027 */;
-import fetchUnclaimedGames from "fetchUnclaimedGames" /* 16028 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 8850 */;
+import map from "map" /* 10048 */;
+import importDefaultResult1 from "importDefaultResult1" /* 16113 */;
+import importDefaultResult1Default from "importDefaultResult1" /* 16113 */;
+import fetchUnclaimedGames from "fetchUnclaimedGames" /* 16114 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -70,8 +70,8 @@ const memoResult = importAllResult.memo((arg0) => {
       return callback(closure_1_7.USER_DISMISS);
     };
     obj[2] = tmp.closeButton;
-    obj[3] = callback2(tmp2(5560).XSmallIcon, { size: "sm", color: "text-default" });
-    const items = [callback2(tmp2(5077).PressableOpacity, obj), , , , ];
+    obj[3] = callback2(tmp2(5635).XSmallIcon, { size: "sm", color: "text-default" });
+    const items = [callback2(tmp2(5084).PressableOpacity, obj), , , , ];
     obj1 = { imageSrc: null };
     obj1[0] = coverImageUrl;
     items[1] = callback2(importDefaultResult1Default, obj1);
@@ -81,19 +81,19 @@ const memoResult = importAllResult.memo((arg0) => {
     const obj3 = { gameName: null };
     obj3[0] = tmp8;
     obj2[3] = intl2.format(tmp2(1233).t.Q11WTQ, obj3);
-    items[2] = callback2(tmp2(4474).Text, obj2);
+    items[2] = callback2(tmp2(4477).Text, obj2);
     const obj4 = { variant: "text-sm/normal", color: "text-overlay-light", style: null, children: null };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     obj4[2] = items1;
     obj4[3] = stringResult;
-    items[3] = callback2(tmp2(4474).Text, obj4);
+    items[3] = callback2(tmp2(4477).Text, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.cta;
     const obj6 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
     const intl3 = tmp2(1233).intl;
     obj6[2] = intl3.string(tmp2(1233).t["2u6ZlY"]);
-    obj6[3] = callback2(tmp2(8747).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    obj6[3] = callback2(tmp2(8510).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj6[5] = callback(function*() {
       if (v0 === 2) {
         v0 = 3;
@@ -147,10 +147,10 @@ const memoResult = importAllResult.memo((arg0) => {
         }
       }
     });
-    obj5[1] = callback2(tmp2(4929).Button, obj6);
+    obj5[1] = callback2(tmp2(4936).Button, obj6);
     items[4] = callback2(View, obj5);
     obj[2] = items;
-    return callback3(tmp2(5610).Card, obj);
+    return callback3(tmp2(5562).Card, obj);
   }
   const tmp6Result = useGameNameAndCoverImageDefault(first, intl.string(getSystemLocale.t.VQq92a));
 });

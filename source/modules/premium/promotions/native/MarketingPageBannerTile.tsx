@@ -1,17 +1,17 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13326
+// Function ID: 13327
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4478, 709, 5962, 13294, 8911, 500, 10740, 13297, 4474, 4190, 8988, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 7102, 13327, 8698, 500, 10671, 13330, 4477, 4190, 9899, 2]
 // Exports: default
 
-// Module 13293 (MarketingPageBannerTile)
+// Module 13326 (MarketingPageBannerTile)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import contextDefault from "context" /* 5962 */;
-import trackImpressionDefault from "trackImpression" /* 8911 */;
+import contextDefault from "context" /* 7102 */;
+import trackImpressionDefault from "trackImpression" /* 8698 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -34,7 +34,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   let helpArticleLinkProps;
   ({ style, cardStyle, componentId, promotionId, analyticsPage, onPaymentSuccess, onPaymentDismiss } = bannerFields);
   const tmp = callback();
-  let obj = helpArticleLinkProps(13294);
+  let obj = helpArticleLinkProps(13327);
   const button = bannerFields.button;
   let buttonAction;
   if (button != null) {
@@ -58,11 +58,11 @@ export default function MarketingPageBannerTile(bannerFields) {
   obj[0] = helpArticleLinkProps(500).ImpressionTypes.VIEW;
   obj[1] = helpArticleLinkProps(500).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
   const tmp2Result = trackImpressionDefault;
-  obj[2] = { component_type: helpArticleLinkProps(10740).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+  obj[2] = { component_type: helpArticleLinkProps(10671).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
   tmp2Result(obj);
-  let tmp4Result = tmp4(13297);
+  let tmp4Result = tmp4(13330);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  tmp4Result = tmp4(13297);
+  tmp4Result = tmp4(13330);
   helpArticleLinkProps = tmp4Result.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj2 = { style: items, children: null };
   items = [tmp.container, style];
@@ -77,7 +77,7 @@ export default function MarketingPageBannerTile(bannerFields) {
     obj4[1] = tmp.image;
     tmp12Result = tmp12(closure_3, obj4);
   }
-  const items2 = [tmp12Result, closure_5(helpArticleLinkProps(4474).Text, { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header }), , ];
+  const items2 = [tmp12Result, closure_5(helpArticleLinkProps(4477).Text, { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header }), , ];
   const obj7 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp.bodyText, children: null };
   const items3 = [formatStringWithCommonPremiumParams, " ", ];
   tmp12Result = null != helpArticleLinkProps;
@@ -87,11 +87,11 @@ export default function MarketingPageBannerTile(bannerFields) {
       return closure_1_1(closure_1_2[12]).openURL(helpArticleLinkProps.url);
     };
     obj8[4] = helpArticleLinkProps.linkText;
-    tmp12Result = tmp12(tmp4(4474).Text, obj8);
+    tmp12Result = tmp12(tmp4(4477).Text, obj8);
   }
   items3[2] = tmp12Result;
   obj7[3] = items3;
-  items2[2] = closure_6(helpArticleLinkProps(4474).Text, obj7);
+  items2[2] = closure_6(helpArticleLinkProps(4477).Text, obj7);
   let tmp12Result1 = null != bannerFields.button;
   if (tmp12Result1) {
     const obj9 = { style: null, children: null };
@@ -99,7 +99,7 @@ export default function MarketingPageBannerTile(bannerFields) {
     const obj10 = { text: null, onPress: null };
     obj10[0] = bannerFields.button.copy;
     obj10[1] = buttonActionHandler;
-    obj9[1] = tmp12(tmp2(8988), obj10);
+    obj9[1] = tmp12(tmp2(9899), obj10);
     tmp12Result1 = tmp12(tmp13, obj9);
   }
   items2[3] = tmp12Result1;

@@ -1,13 +1,13 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 8955
+// Function ID: 8956
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 13000, 4166, 586, 1470, 13001, 2]
+// Dependencies: [19, 8956, 4166, 586, 1394, 8957, 2]
 // Exports: default
 
-// Module 12999 (useApplicationWidgetConfigs)
+// Module 8955 (useApplicationWidgetConfigs)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "updateApplicationConfigs" /* 13000 */;
-import { FetchState } from "updateApplicationConfigs" /* 13000 */;
+import closure_3 from "updateApplicationConfigs" /* 8956 */;
+import { FetchState } from "updateApplicationConfigs" /* 8956 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetConfigs.tsx");

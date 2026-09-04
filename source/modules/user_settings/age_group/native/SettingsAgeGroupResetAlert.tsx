@@ -1,10 +1,10 @@
-// Module ID: 14618
-// Function ID: 14619
+// Module ID: 14686
+// Function ID: 14687
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1498, 13656, 4860, 4193, 1233, 4864, 2918, 4864, 2]
+// Dependencies: [5, 21, 1498, 13689, 4867, 4193, 1233, 4871, 2918, 4871, 2]
 // Exports: default
 
-// Module 14618 (SettingsAgeGroupResetAlert)
+// Module 14686 (SettingsAgeGroupResetAlert)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -48,7 +48,7 @@ export default function SettingsAgeGroupResetAlert() {
               c1 = 2;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(13656).resetAgeVerification();
+              obj1[0] = closure_1_0(13689).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {
@@ -69,7 +69,7 @@ export default function SettingsAgeGroupResetAlert() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = closure_1_0(4860);
+            obj = closure_1_0(4867);
             obj.dismissAlert(closure_1_6);
             navigation.goBack();
             dependencyMap = 0;
@@ -119,13 +119,13 @@ export default function SettingsAgeGroupResetAlert() {
   };
   const intl3 = _require(1233).intl;
   obj1[2] = intl3.string(_handleConfirm(2918).V822Mp);
-  const items = [callback(_require(4864).AlertActionButton, obj1, "confirm"), ];
+  const items = [callback(_require(4871).AlertActionButton, obj1, "confirm"), ];
   let obj2 = { variant: "secondary", text: null };
   const intl4 = _require(1233).intl;
   obj2[1] = intl4.string(_require(1233).t["ETE/oC"]);
-  items[1] = callback(_require(4864).AlertActionButton, obj2, "cancel");
+  items[1] = callback(_require(4871).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback2(_require(4864).AlertActions, obj);
-  return callback(_require(4864).AlertModal, obj);
+  obj[2] = callback2(_require(4871).AlertActions, obj);
+  return callback(_require(4871).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

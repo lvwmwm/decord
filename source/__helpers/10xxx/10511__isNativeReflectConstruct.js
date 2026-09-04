@@ -1,19 +1,17 @@
 // Module ID: 10511
 // Function ID: 10512
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10450, 10512, 10477, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10366, 10367, 10368]
 
 // Module 10511 (_isNativeReflectConstruct)
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10450 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10512 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FRWeekdayParser = require;
+const ESCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,13 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(?:ce)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)", "i");
-class FRWeekdayParser {
+class ESCasualTimeParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, FRWeekdayParser);
+    tmp = closure_2(this, ESCasualTimeParser);
     tmp2 = closure_4;
-    obj = closure_4(FRWeekdayParser);
+    obj = closure_4(ESCasualTimeParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -54,36 +51,45 @@ class FRWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
     value: function innerPattern() {
-      return regExp;
+      return /(?:esta\s*)?(mañana|tarde|medianoche|mediodia|mediodía|noche)(?=\W|$)/i;
     }
   },
   {
     key: "innerExtract",
-    value: function innerExtract(reference) {
+    value: function innerExtract(refDate) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
       const formatted = arg1[1].toLowerCase();
-      const tmp4 = FRWeekdayParser(10512).WEEKDAY_DICTIONARY[formatted];
-      if (undefined === tmp4) {
-        return null;
-      } else {
-        const formatted1 = arg1[2] || "".toLowerCase();
-        let str4 = "last";
-        if ("dernier" != formatted1) {
-          str4 = null;
-          if ("prochain" == formatted1) {
-            str4 = "next";
-          }
-        }
-        return tmp2(10477).createParsingComponentsAtWeekday(reference.reference, tmp4, str4);
+      if ("tarde" === formatted) {
+        parsingComponents.imply("meridiem", ESCasualTimeParser(10366).Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("noche" === formatted) {
+        parsingComponents.imply("meridiem", ESCasualTimeParser(10366).Meridiem.PM);
+        parsingComponents.imply("hour", 22);
+      } else if ("ma\u00F1ana" === formatted) {
+        parsingComponents.imply("meridiem", ESCasualTimeParser(10366).Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("medianoche" === formatted) {
+        const _Date = Date;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() + 1);
+        ESCasualTimeParser(10367).assignSimilarDate(parsingComponents, date);
+        ESCasualTimeParser(10367).implySimilarTime(parsingComponents, date);
+        parsingComponents.imply("hour", 0);
+        parsingComponents.imply("minute", 0);
+        parsingComponents.imply("second", 0);
+      } else if ("mediodia" === formatted) {
+        parsingComponents.imply("meridiem", ESCasualTimeParser(10366).Meridiem.AM);
+        parsingComponents.imply("hour", 12);
       }
-      const str = arg1[1];
-      tmp2 = FRWeekdayParser;
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(FRWeekdayParser, items);
+export default _createClass(ESCasualTimeParser, items);

@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 240, height: 130, scales: [2, 3], hash: "c5a514a204d76328abe2ecbd82735ce3", name: "no_mutual_friends_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_identity/images", width: 303, height: 198, scales: [2, 3], hash: "af6f5b1f2e3f6f41820436ec96e0f065", name: "guild_identity_education_light", type: "png" });

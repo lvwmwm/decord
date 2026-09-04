@@ -1,14 +1,14 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 8682
+// Function ID: 8683
 // Name: toAnnouncementMessages
-// Dependencies: [4131, 1954, 4745, 4671, 8898, 4738, 8141, 1233, 1485, 2]
+// Dependencies: [4131, 1954, 4752, 4678, 8683, 4745, 8684, 1233, 1485, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8897 (toAnnouncementMessages)
+// Module 8682 (toAnnouncementMessages)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import hasFlag from "hasFlag" /* 4131 */;
-import formatExpirationLabel from "formatExpirationLabel" /* 8141 */;
+import formatExpirationLabel from "formatExpirationLabel" /* 8684 */;
 
 const isMessageComponentsV2 = hasFlag.isMessageComponentsV2;
 const re4 = /^#{1,3}\s+(.+)$/;

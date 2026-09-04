@@ -1,10 +1,10 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 12074
+// Function ID: 12075
 // Name: useDelayedSwapToActivityActionLeave
-// Dependencies: [32, 19, 11858, 2]
+// Dependencies: [32, 19, 11989, 2]
 // Exports: useDelayedSwapToActivityActionLeave
 
-// Module 11942 (useDelayedSwapToActivityActionLeave)
+// Module 12074 (useDelayedSwapToActivityActionLeave)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 
@@ -17,7 +17,7 @@ export const useDelayedSwapToActivityActionLeave = function useDelayedSwapToActi
   closure_1 = tmp[1];
   const items = [activityAction];
   const layoutEffect = React.useLayoutEffect(() => {
-    if (activityAction === activityAction(11858).ActivityAction.LEAVE) {
+    if (activityAction === activityAction(11989).ActivityAction.LEAVE) {
       const _setTimeout = setTimeout;
       activityAction = setTimeout(() => callback(closure_0), 100);
       return () => clearTimeout(closure_0);

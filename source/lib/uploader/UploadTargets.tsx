@@ -1,14 +1,14 @@
-// Module ID: 5127
-// Function ID: 5128
+// Module ID: 5135
+// Function ID: 5136
 // Name: getCreateAttachmentURL
-// Dependencies: [1386, 673, 5087, 5083, 5128, 5130, 2]
+// Dependencies: [1386, 673, 5095, 5090, 5136, 5138, 2]
 // Exports: getUploadTarget
 
-// Module 5127 (getCreateAttachmentURL)
-import items from "items" /* 5083 */;
-import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5087 */;
-import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5128 */;
-import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5130 */;
+// Module 5135 (getCreateAttachmentURL)
+import items from "items" /* 5090 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5095 */;
+import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5136 */;
+import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5138 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import ME from "ME" /* 673 */;
 
@@ -35,7 +35,7 @@ prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_6;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return items.MAX_TOTAL_ATTACHMENT_SIZE;
+  return items.getMaxTotalAttachmentSize({ location: "MessageAttachmentUploadTarget" });
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {

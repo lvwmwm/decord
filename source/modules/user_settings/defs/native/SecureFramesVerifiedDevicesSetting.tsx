@@ -1,14 +1,14 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15777
+// Function ID: 15778
 // Name: route
-// Dependencies: [7896, 673, 11292, 1233, 15696, 2]
+// Dependencies: [7906, 673, 11400, 1233, 15778, 2]
 
-// Module 15695 (route)
+// Module 15777 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import createToggle from "createToggle" /* 11292 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
   getComponent() {
-    return require(15696) /* VerificationListItem */.default;
+    return require(15778) /* VerificationListItem */.default;
   }
 };
 const route = createToggle.createRoute(obj);

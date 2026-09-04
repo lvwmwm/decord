@@ -1,9 +1,9 @@
-// Module ID: 7122
-// Function ID: 7123
+// Module ID: 6503
+// Function ID: 6504
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7122 (metadata)
+// Module 6503 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VoiceFiltersSpotIllustration-2x.png.js");

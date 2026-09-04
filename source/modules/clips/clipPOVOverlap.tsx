@@ -1,15 +1,15 @@
-// Module ID: 4547
-// Function ID: 4548
+// Module ID: 4550
+// Function ID: 4551
 // Name: getClipPOVWindow
-// Dependencies: [4536, 673, 1398, 4548, 2]
+// Dependencies: [4539, 673, 1399, 4551, 2]
 // Exports: getClipAttachmentPOVWindow, getClipPOVOverlapMilliseconds, getClipPOVWindow
 
-// Module 4547 (getClipPOVWindow)
+// Module 4550 (getClipPOVWindow)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import hasFlag from "hasFlag" /* 1398 */;
-import result2 from "result" /* 4536 */;
-import getPOVExportTargetDefault from "getPOVExportTarget" /* 4548 */;
+import hasFlag from "hasFlag" /* 1399 */;
+import result2 from "result" /* 4539 */;
+import getPOVExportTargetDefault from "getPOVExportTarget" /* 4551 */;
 
 const ClipType = result2.ClipType;
 const MessageAttachmentFlags = ME.MessageAttachmentFlags;

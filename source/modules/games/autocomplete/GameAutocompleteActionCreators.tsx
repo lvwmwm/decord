@@ -1,12 +1,12 @@
-// Module ID: 9958
-// Function ID: 9959
+// Module ID: 8830
+// Function ID: 8831
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 5062, 673, 5063, 706, 527, 2]
+// Dependencies: [5, 5069, 673, 5070, 706, 527, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9958 (_fetchGameAutocomplete)
+// Module 8830 (_fetchGameAutocomplete)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5062 */;
+import closure_4 from "set" /* 5069 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;

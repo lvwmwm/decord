@@ -1,12 +1,12 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17630
+// Function ID: 17631
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 1429, 1921, 673, 6117, 644, 17551, 17552, 17553, 6109, 1233, 1994, 17554, 2]
+// Dependencies: [19, 1430, 1921, 673, 7201, 644, 17631, 17632, 17633, 7193, 1233, 1994, 17634, 2]
 // Exports: default
 
-// Module 17550 (useOnboardingMonetizationEnableFlow)
+// Module 17630 (useOnboardingMonetizationEnableFlow)
 import closure_3 from "noop" /* 19 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/creator_monetizatio
 
 export default function useOnboardingMonetizationEnableFlow(features) {
   const _require = features;
-  let obj = _require(6117);
+  let obj = _require(7201);
   let isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
   if (features != null) {
     features = features.features;
@@ -39,18 +39,18 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (features != null) {
     id = features.id;
   }
-  const tmp10 = refresh(17551);
-  ({ submittedRequest, error, loading, createEnableRequest } = refresh(17551)(id));
+  const tmp10 = refresh(17631);
+  ({ submittedRequest, error, loading, createEnableRequest } = refresh(17631)(id));
   let id1;
-  let tmp9Result = tmp9(17552);
+  let tmp9Result = tmp9(17632);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  const tmp10Result = refresh(17551)(id);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17553)(eligibility));
+  const tmp10Result = refresh(17631)(id);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17633)(eligibility));
   let hasItem2;
   if (features != null) {
     const features3 = features.features;
@@ -65,7 +65,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     }
     tmp19 = true === hasItem3;
   }
-  tmpResult = tmp(6109);
+  tmpResult = tmp(7193);
   let id2;
   if (features != null) {
     id2 = features.id;
@@ -86,7 +86,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   obj = { faqUrl: null };
   tmp9Result = tmp9(1994);
   obj[0] = tmp9Result.getArticleURL(constants2.CREATOR_FAQ);
-  const tmp16 = refresh(17553)(eligibility);
+  const tmp16 = refresh(17633)(eligibility);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (tmpResult.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
@@ -129,7 +129,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   const formatResult = intl.format(_require(1233).t.aJUdOi, obj);
   let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = _require(17554).getCreatorMonetizationAcceptTermsCheckboxText();
+  const creatorMonetizationAcceptTermsCheckboxText = _require(17634).getCreatorMonetizationAcceptTermsCheckboxText();
   if (isApplicationRejected) {
     if (tmp35) {
       if (stateFromStores) {

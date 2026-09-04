@@ -1,15 +1,15 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15771
+// Function ID: 15772
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4478, 1498, 13245, 7618, 7622, 1233, 2]
+// Dependencies: [19, 17, 21, 4481, 1498, 13278, 7795, 7799, 1233, 2]
 // Exports: default
 
-// Module 15689 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 15771 (CollectiblesShopViewAllCategoryItemsHeader)
 import noopAll from "noop" /* 19 */;
-import registerAssetDefault from "registerAsset" /* 7622 */;
+import registerAssetDefault from "registerAsset" /* 7799 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -24,7 +24,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   let obj = _require(1498);
   _require = obj.useStackNavigation();
   const tmp = callback3();
-  obj1 = _require(13245);
+  obj1 = _require(13278);
   obj = { style: null, children: null };
   obj = {};
   const youBarSettingsCustomHeaderPaddingTop = obj1.useYouBarSettingsCustomHeaderPaddingTop();
@@ -38,7 +38,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   obj2[3] = function onPress() {
     navigation.goBack();
   };
-  obj1[1] = callback(_require(7618).HeaderIconButton, obj2);
+  obj1[1] = callback(_require(7795).HeaderIconButton, obj2);
   const items = [callback(closure_4, obj1), , ];
   const obj3 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl }, accessibilityLabel: null, accessibilityRole: "header" };
   const intl2 = _require(1233).intl;

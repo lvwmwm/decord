@@ -1,9 +1,9 @@
-// Module ID: 9150
-// Function ID: 9151
+// Module ID: 10225
+// Function ID: 10226
 // Name: NsfwGateSource
 // Dependencies: [2]
 
-// Module 9150 (NsfwGateSource)
+// Module 10225 (NsfwGateSource)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/age_gate/native/components/Constants.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 12401
-// Function ID: 12402
+// Module ID: 12559
+// Function ID: 12560
 // Name: ChatProvisionalAccountExplainerCard
-// Dependencies: [19, 17, 21, 4478, 709, 12402, 12403, 5610, 4474, 1233, 7720, 6009, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 12560, 12561, 5562, 4477, 1233, 6550, 7147, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 12401 (ChatProvisionalAccountExplainerCard)
+// Module 12559 (ChatProvisionalAccountExplainerCard)
 import ThemesDefault from "Themes" /* 709 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6009 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7147 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -31,7 +31,7 @@ export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccou
   c1 = "text-sm/semibold";
   const items = [iconSize, "text-sm/semibold"];
   const callback = React.useCallback((application) => closure_1_5(textmdsemibold(closure_1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
-  let obj = iconSize(12403);
+  let obj = iconSize(12561);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainer, style];
@@ -39,11 +39,11 @@ export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccou
   obj1 = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = iconSize(1233).intl;
   obj1[2] = intl.string(iconSize(1233).t.Iyka0U);
-  const items2 = [callback(iconSize(4474).Text, obj1), callback(iconSize(7720).CircleErrorIcon, { size: "xs", color: "text-default" })];
+  const items2 = [callback(iconSize(4477).Text, obj1), callback(iconSize(6550).CircleErrorIcon, { size: "xs", color: "text-default" })];
   obj[1] = items2;
-  const items3 = [callback2(View, obj), callback(iconSize(4474).Text, { variant: "text-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
+  const items3 = [callback2(View, obj), callback(iconSize(4477).Text, { variant: "text-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
   obj[1] = items3;
-  return callback2(iconSize(5610).Card, obj);
+  return callback2(iconSize(5562).Card, obj);
 };
 export const UserProfileProvisionalAccountExplainerCard = function UserProfileProvisionalAccountExplainerCard(iconSize) {
   iconSize = iconSize.iconSize;
@@ -51,12 +51,12 @@ export const UserProfileProvisionalAccountExplainerCard = function UserProfilePr
   const items = [iconSize, "text-md/semibold"];
   ({ style, userId } = iconSize);
   const callback = React.useCallback((application) => closure_1_5(textmdsemibold(closure_1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
-  let obj = iconSize(12403);
+  let obj = iconSize(12561);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   obj = { style, title: null, titleIcon: null, children: null };
   const intl = iconSize(1233).intl;
   obj[1] = intl.string(iconSize(1233).t.Iyka0U);
-  obj[2] = callback(iconSize(7720).CircleErrorIcon, { size: "xs", color: "text-default" });
-  obj[3] = callback(iconSize(4474).Text, { variant: "text-md/normal", color: "text-default", children: provisionalAccountExplanationText });
+  obj[2] = callback(iconSize(6550).CircleErrorIcon, { size: "xs", color: "text-default" });
+  obj[3] = callback(iconSize(4477).Text, { variant: "text-md/normal", color: "text-default", children: provisionalAccountExplanationText });
   return callback(UserProfileCardDefault, obj);
 };

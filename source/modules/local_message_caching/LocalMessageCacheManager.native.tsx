@@ -1,24 +1,24 @@
-// Module ID: 14443
-// Function ID: 14444
+// Module ID: 14475
+// Function ID: 14476
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 4131, 1215, 1386, 4736, 673, 14444, 3, 684, 592, 4074, 4163, 7508, 7211, 706, 11552, 11487, 2008, 4662, 5225, 10058, 2]
+// Dependencies: [5, 32, 4131, 1215, 1386, 4743, 673, 14476, 3, 684, 592, 4074, 4163, 7685, 7390, 706, 11679, 11608, 2008, 4669, 5233, 9870, 2]
 
-// Module 14443 (_getKeyForFileId)
+// Module 14475 (_getKeyForFileId)
 import timestampDefault from "timestamp" /* 3 */;
 import Storage3 from "Storage" /* 592 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import hooksDefault from "hooks" /* 4074 */;
 import resetCache from "resetCache" /* 4163 */;
-import initializeDefault from "initialize" /* 4662 */;
+import initializeDefault from "initialize" /* 4669 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "hasFlag" /* 4131 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "reinjectEphemerals" /* 4736 */;
+import closure_8 from "reinjectEphemerals" /* 4743 */;
 import { MessageStates } from "ME" /* 673 */;
-import createLock from "createLock" /* 14444 */;
+import createLock from "createLock" /* 14476 */;
 
 require = arg1;
 function _getKeyForFileId(arg0) {
@@ -59,11 +59,11 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = file(7508)(obj);
+  const tmp3 = file(7685)(obj);
   closure_0 = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  file(7211).receiveMessage(channel_id, tmp3, true, obj);
+  file(7390).receiveMessage(channel_id, tmp3, true, obj);
   if (null != file) {
     file(706).wait(() => file(closure_1_2[16]).restoreFailedUpload(id.id, file));
     const tmpResult = file(706);

@@ -1,15 +1,15 @@
-// Module ID: 7476
-// Function ID: 7477
+// Module ID: 7653
+// Function ID: 7654
 // Name: init
-// Dependencies: [1908, 1921, 4392, 1933, 1932, 586, 706, 2]
+// Dependencies: [1908, 1921, 4395, 1933, 1932, 586, 706, 2]
 
-// Module 7476 (init)
+// Module 7653 (init)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import validatePremiumType from "validatePremiumType" /* 1932 */;
 import closure_2 from "createGuildRecordFromRust" /* 1908 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { ExperimentBuckets } from "ExperimentBuckets" /* 4392 */;
+import { ExperimentBuckets } from "ExperimentBuckets" /* 4395 */;
 import { Environments } from "Environments" /* 1933 */;
 
 require = arg1;

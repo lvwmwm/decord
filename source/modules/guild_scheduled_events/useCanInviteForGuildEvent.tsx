@@ -1,18 +1,18 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9702
+// Function ID: 9703
 // Name: canEveryoneRoleViewEvent
-// Dependencies: [1391, 1386, 1981, 1908, 4120, 7281, 1392, 673, 4125, 9769, 586, 2]
+// Dependencies: [1391, 1386, 1981, 1908, 4120, 7459, 1392, 673, 4125, 9703, 586, 2]
 // Exports: default
 
-// Module 9768 (canEveryoneRoleViewEvent)
+// Module 9702 (canEveryoneRoleViewEvent)
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import canViewInviteModal from "canViewInviteModal" /* 9769 */;
+import canViewInviteModal from "canViewInviteModal" /* 9703 */;
 import closure_3 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "comparator" /* 1981 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import { isGuildEventEnded } from "scheduledEventSort" /* 7281 */;
+import { isGuildEventEnded } from "scheduledEventSort" /* 7459 */;
 import { GuildScheduledEventEntityTypes as closure_9 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import { Permissions } from "ME" /* 673 */;
 

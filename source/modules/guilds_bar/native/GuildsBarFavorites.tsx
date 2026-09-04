@@ -1,8 +1,8 @@
-// Module ID: 16148
-// Function ID: 16149
-// Dependencies: [19, 17, 1389, 673, 1383, 21, 4478, 709, 16132, 10333, 586, 16149, 16134, 10343, 16146, 15972, 1233, 16150, 9199, 16151, 2]
+// Module ID: 16234
+// Function ID: 16235
+// Dependencies: [19, 17, 1389, 673, 1383, 21, 4481, 709, 16218, 10153, 586, 16235, 16220, 10167, 16232, 16058, 1233, 16236, 10164, 16237, 2]
 
-// Module 16148
+// Module 16234
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -10,7 +10,7 @@ import closure_5 from "initializeFromUserSettings" /* 1389 */;
 import { FAVORITES } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -21,21 +21,21 @@ obj = { position: "absolute", top: ThemesDefault.modules.mobile.GUILD_BAR_ITEM_M
 obj[0] = obj;
 let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildsBarFavorites() {
-  let obj = shouldShowPopover(16132);
-  obj1 = shouldShowPopover(10333);
+  let obj = shouldShowPopover(16218);
+  obj1 = shouldShowPopover(10153);
   const isFavoritesGuildSelected = obj1.useIsFavoritesGuildSelected();
   let obj2 = shouldShowPopover(586);
   let items = [closure_5];
   const stateFromStores = obj2.useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const tmp5 = markPopoverAsDismissed;
-  ({ badge, unread } = markPopoverAsDismissed(16149)(stateFromStores));
-  const tmp6 = markPopoverAsDismissed(16149)(stateFromStores);
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16134)({ mentionCount: badge }));
+  ({ badge, unread } = markPopoverAsDismissed(16235)(stateFromStores));
+  const tmp6 = markPopoverAsDismissed(16235)(stateFromStores);
+  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16220)({ mentionCount: badge }));
   const ref = importAllResult.useRef(null);
-  const tmp7 = markPopoverAsDismissed(16134)({ mentionCount: badge });
+  const tmp7 = markPopoverAsDismissed(16220)({ mentionCount: badge });
   const tmp9 = callback2();
-  const favoritesIntroPopover = shouldShowPopover(10343).useFavoritesIntroPopover();
+  const favoritesIntroPopover = shouldShowPopover(10167).useFavoritesIntroPopover();
   shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
   markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
   const items1 = [shouldShowPopover, markPopoverAsDismissed];
@@ -69,23 +69,23 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
   obj[6] = memo;
   obj[7] = accessibilityActions;
   obj[8] = onAccessibilityAction;
-  const obj4 = shouldShowPopover(10343);
+  const obj4 = shouldShowPopover(10167);
   const tmp13 = closure_9;
   let intl = shouldShowPopover(1233).intl;
   obj[9] = intl.string(shouldShowPopover(1233).t.wMWyci);
   obj[10] = badge2;
-  obj[11] = callback(shouldShowPopover(16150).HomeDrawerFavoritesRowExpandedChildren, {});
+  obj[11] = callback(shouldShowPopover(16236).HomeDrawerFavoritesRowExpandedChildren, {});
   const colors = markPopoverAsDismissed(709).colors;
   obj = { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[12] = callback(shouldShowPopover(9199).StarIcon, obj);
-  const children = [callback(markPopoverAsDismissed(16132), obj), , ];
+  obj[12] = callback(shouldShowPopover(10164).StarIcon, obj);
+  const children = [callback(markPopoverAsDismissed(16218), obj), , ];
   obj1 = { ref, style: tmp9.anchor, pointerEvents: "none", collapsable: false };
   children[1] = callback(View, obj1);
   if (shouldShowPopover) {
     obj2 = { targetRef: null, markAsDismissed: null };
     obj2[0] = ref;
     obj2[1] = markPopoverAsDismissed;
-    shouldShowPopover = tmp15(tmp5(16151), obj2);
+    shouldShowPopover = tmp15(tmp5(16237), obj2);
   }
   children[2] = shouldShowPopover;
   return tmp13(View, { children });

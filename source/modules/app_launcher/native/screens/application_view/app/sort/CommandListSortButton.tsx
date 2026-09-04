@@ -1,17 +1,17 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 12081
+// Function ID: 12082
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 11935, 1300, 21, 4478, 709, 1233, 5077, 4445, 11949, 2008, 4474, 8953, 2]
+// Dependencies: [19, 17, 12067, 1300, 21, 4481, 709, 1233, 5084, 4448, 12082, 2008, 4477, 11085, 2]
 // Exports: default
 
-// Module 11948 (CommandListSortButton)
+// Module 12081 (CommandListSortButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { CommandListSortOrder } from "CommandListSortOrder" /* 11935 */;
+import { CommandListSortOrder } from "CommandListSortOrder" /* 12067 */;
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1300 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -54,10 +54,10 @@ export default function CommandListSortButton(sortOrder) {
     children: null
   };
   obj = { style: tmp.button, children: null };
-  const items = [callback(sortOrder(4474).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const items = [callback(sortOrder(4477).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
   obj = { size: "xs", color: onSortOptionPress(709).colors.TEXT_DEFAULT };
-  items[1] = callback(sortOrder(8953).ChevronSmallDownIcon, obj);
+  items[1] = callback(sortOrder(11085).ChevronSmallDownIcon, obj);
   obj[1] = items;
   obj[5] = callback2(View, obj);
-  return callback(sortOrder(5077).PressableOpacity, obj);
+  return callback(sortOrder(5084).PressableOpacity, obj);
 };

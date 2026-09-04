@@ -1,13 +1,13 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9091
+// Function ID: 9092
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4554, 4568, 586, 9865, 2]
+// Dependencies: [19, 4557, 4571, 586, 9079, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 9877 (useIsSecureFramesKeyInconsistent)
+// Module 9091 (useIsSecureFramesKeyInconsistent)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "createRTCConnection" /* 4554 */;
-import closure_4 from "initialize" /* 4568 */;
+import closure_3 from "createRTCConnection" /* 4557 */;
+import closure_4 from "initialize" /* 4571 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");

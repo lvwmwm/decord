@@ -1,18 +1,18 @@
-// Module ID: 8914
-// Function ID: 8915
+// Module ID: 8701
+// Function ID: 8702
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1921, 8573, 21, 4478, 709, 586, 1949, 4445, 8915, 5982, 11004, 5631, 11005, 4474, 1233, 5385, 4929, 2]
+// Dependencies: [32, 19, 17, 1921, 8114, 21, 4481, 709, 586, 1949, 4448, 8110, 7122, 8702, 7090, 8703, 4477, 1233, 5393, 4936, 2]
 // Exports: default
 
-// Module 8914 (WishlistNUXAddedItemActionSheet)
+// Module 8701 (WishlistNUXAddedItemActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 let require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

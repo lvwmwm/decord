@@ -1,15 +1,15 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12505
+// Function ID: 12506
 // Name: useMultiPerkStatusValues
-// Dependencies: [4365, 12299, 1233, 2400, 2]
+// Dependencies: [4368, 12431, 1233, 2400, 2]
 // Exports: default
 
-// Module 12373 (useMultiPerkStatusValues)
+// Module 12505 (useMultiPerkStatusValues)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2400 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12299 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12431 */;
 
 const PowerupActiveStatusType = BoostedGuildTiers.PowerupActiveStatusType;
 const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");

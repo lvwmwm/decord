@@ -1,14 +1,14 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 5906
+// Function ID: 5907
 // Name: EmojiWumpAngyExample
-// Dependencies: [21, 5502, 6526, 2]
+// Dependencies: [21, 5542, 5907, 2]
 // Exports: EmojiWumpAngyExample
 
-// Module 6525 (EmojiWumpAngyExample)
+// Module 5906 (EmojiWumpAngyExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6526 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5907 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiWumpAngyExample.native.tsx");

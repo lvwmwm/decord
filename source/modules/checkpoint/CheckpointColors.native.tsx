@@ -1,12 +1,12 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11628
+// Function ID: 11629
 // Name: items
-// Dependencies: [4741, 709, 2]
+// Dependencies: [4748, 709, 2]
 
-// Module 11507 (items)
+// Module 11628 (items)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import CheckpointPersonas2 from "CheckpointPersonas" /* 4741 */;
+import CheckpointPersonas2 from "CheckpointPersonas" /* 4748 */;
 
 const CheckpointPersonas = CheckpointPersonas2.CheckpointPersonas;
 let obj = {};

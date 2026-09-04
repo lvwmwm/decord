@@ -1,12 +1,12 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8653
+// Function ID: 8654
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [4516, 2]
+// Dependencies: [4519, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 8868 (calculateSteamReviewScoreDescription)
+// Module 8653 (calculateSteamReviewScoreDescription)
 import set from "set" /* 2 */;
-import GameTheme from "GameTheme" /* 4516 */;
+import GameTheme from "GameTheme" /* 4519 */;
 
 const result = set.fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
 

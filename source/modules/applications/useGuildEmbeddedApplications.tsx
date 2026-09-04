@@ -1,13 +1,13 @@
-// Module ID: 9731
-// Function ID: 9732
+// Module ID: 9673
+// Function ID: 9674
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4519, 673, 586, 684, 1470, 5963, 2]
+// Dependencies: [5, 19, 4522, 673, 586, 684, 1394, 7103, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 9731 (importDefaultResult1)
+// Module 9673 (importDefaultResult1)
 import setDefault from "set" /* 684 */;
 import closure_4 from "noop" /* 19 */;
-import importDefaultResult1 from "addApplication" /* 4519 */;
+import importDefaultResult1 from "addApplication" /* 4522 */;
 import initialize from "initialize" /* 586 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
@@ -30,7 +30,7 @@ initialize = {
         }
         return tmp2;
       });
-      found = mapped.filter(require(1470) /* isDiscordFrontendDevelopment */.isNotNullish);
+      found = mapped.filter(require(1394) /* isDiscordFrontendDevelopment */.isNotNullish);
     }
     return found;
   },

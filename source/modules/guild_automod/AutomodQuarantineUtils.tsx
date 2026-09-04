@@ -1,17 +1,17 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11803
+// Function ID: 11804
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 9050, 1215, 1991, 1908, 4120, 4299, 673, 4108, 682, 644, 4126, 1233, 9051, 9052, 6255, 2]
+// Dependencies: [19, 9137, 1215, 1991, 1908, 4120, 4302, 673, 4108, 682, 644, 4126, 1233, 9138, 9139, 7320, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11672 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11803 (useCurrentUserHasAutomodQuarantinedProfile)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "zustandStore" /* 9050 */;
+import closure_3 from "zustandStore" /* 9137 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "handleConnectionOpen" /* 4299 */;
+import closure_8 from "handleConnectionOpen" /* 4302 */;
 import ME from "ME" /* 673 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 import { ProfileCustomizationSubsection as closure_12 } from "MAX_FAVORITES" /* 682 */;
@@ -42,7 +42,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (id == null) {
       guildId = closure_1_8.getGuildId();
     }
-    let obj = { nick: "Array", bio: "PX_16" };
+    let obj = { nick: "left", bio: "call" };
     let guild = closure_1_6.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

@@ -1,13 +1,13 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 9332
+// Function ID: 9333
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: [1429, 1908, 4120, 1921, 673, 4125, 586, 2]
+// Dependencies: [1430, 1908, 4120, 1921, 673, 4125, 586, 2]
 // Exports: default
 
-// Module 8441 (canToggleCommunicationDisableOnUser)
+// Module 9332 (canToggleCommunicationDisableOnUser)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;

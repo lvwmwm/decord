@@ -1,103 +1,75 @@
 // Module ID: 13780
 // Function ID: 13781
-// Dependencies: [13743, 13772, 13763, 13768, 13764, 13767, 13774, 13771]
+// Dependencies: []
 
 // Module 13780
-import Comparator from "Comparator" /* 13771 */;
+const re0 = /^[0-9]+$/;
 
-
-export default (arg0, arg1, arg2, arg3) => {
-  let obj;
-  let _require = arg3;
-  const tmp3 = new _require(13743)(arg0, arg3);
-  const tmp4 = new _require(13772)(arg1, arg3);
-  if (">" === arg2) {
-    dependencyMap = tmp(13763);
-    let tmpResult = tmp(13768);
-    tmpResult = tmp(13764);
-    closure_2 = tmpResult;
-    let str3 = ">=";
-    let str = ">";
-    let tmpResult1 = tmpResult;
-  } else {
-    str = "<";
-    if ("<" === arg2) {
-      dependencyMap = tmp(13764);
-      tmpResult = tmp(13767);
-      tmpResult1 = tmp(13763);
-      closure_2 = tmpResult1;
-      str3 = "<=";
-    } else {
-      const _TypeError = TypeError;
-      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
-      throw typeError;
+export default {
+  compareIdentifiers(major, major2) {
+    const isMatch = regex.test(major);
+    const isMatch1 = regex.test(major2);
+    let tmp3 = isMatch;
+    if (isMatch) {
+      tmp3 = isMatch1;
     }
-  }
-  if (_require(13774)(tmp3, tmp4, arg3)) {
-    return false;
-  } else {
+    let tmp4 = major2;
+    let tmp5 = major;
+    if (tmp3) {
+      tmp5 = +major;
+      tmp4 = +major2;
+    }
     let num = 0;
-    let num3 = 0;
-    if (0 < tmp4.set.length) {
-      while (true) {
-        let arr = tmp4.set[num3];
-        _require = null;
-        dependencyMap = null;
-        let item = arr.forEach((semver) => {
-          let tmp = semver;
-          if (semver.semver === Comparator.ANY) {
-            tmp = new Comparator(">=0.0.0");
+    if (tmp5 !== tmp4) {
+      if (!isMatch) {
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
           }
-          let tmp6 = _null;
-          if (!_null) {
-            tmp6 = tmp;
-          }
-          _null = tmp6;
-          let tmp7 = _null2;
-          if (!_null2) {
-            tmp7 = tmp;
-          }
-          _null2 = tmp7;
-          if (_null2(tmp.semver, _null.semver, c0)) {
-            _null = tmp;
-          } else if (callback(tmp.semver, _null2.semver, c0)) {
-            _null2 = tmp;
-          }
-        });
-        let tmp15 = _require;
-        let tmp16 = num;
-        if (_require.operator !== str) {
-          let tmp22 = _require;
-          if (_require.operator !== str3) {
-            let tmp17 = dependencyMap;
-            if (!dependencyMap.operator) {
-              let tmp19 = dependencyMap;
-              if (tmpResult(tmp3, dependencyMap.semver)) {
-                obj = { v: false };
-              }
-            } else {
-              let tmp18 = dependencyMap;
-            }
-            let tmp20 = dependencyMap;
-            obj = undefined;
-            if (dependencyMap.operator === str3) {
-              let tmp21 = dependencyMap;
-              if (tmpResult1(tmp3, dependencyMap.semver)) {
-                obj = { v: false };
-              }
-            }
-          }
-          if (obj) {
-            break;
-          } else {
-            num3 = num + 1;
-            num = num3;
-          }
+          let num3 = num4;
+        } else {
+          num3 = 1;
         }
-        obj = { v: false };
+        let num2 = num3;
+      } else {
+        num2 = -1;
       }
-      return obj.v;
+      num = num2;
     }
-    return true;
+    return num;
+  },
+  rcompareIdentifiers(arg0, arg1) {
+    const isMatch = regex.test(arg1);
+    const isMatch1 = regex.test(arg0);
+    let tmp3 = isMatch;
+    if (isMatch) {
+      tmp3 = isMatch1;
+    }
+    let tmp4 = arg0;
+    let tmp5 = arg1;
+    if (tmp3) {
+      tmp5 = +arg1;
+      tmp4 = +arg0;
+    }
+    let num = 0;
+    if (tmp5 !== tmp4) {
+      if (!isMatch) {
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
+          }
+          let num3 = num4;
+        } else {
+          num3 = 1;
+        }
+        let num2 = num3;
+      } else {
+        num2 = -1;
+      }
+      num = num2;
+    }
+    return num;
   }
 };

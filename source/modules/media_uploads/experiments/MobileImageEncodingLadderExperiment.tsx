@@ -1,12 +1,12 @@
-// Module ID: 5120
-// Function ID: 5121
+// Module ID: 5128
+// Function ID: 5129
 // Name: getMobileImageEncodingLadderConfig
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 5120 (getMobileImageEncodingLadderConfig)
+// Module 5128 (getMobileImageEncodingLadderConfig)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-01-image-optimized-encoding-ladder", kind: "user", defaultConfig: { useImageEncodingLadder: false }, variations: { 0: { useImageEncodingLadder: false }, 1: { useImageEncodingLadder: true } } });
 const result = set.fileFinishedImporting("modules/media_uploads/experiments/MobileImageEncodingLadderExperiment.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 8955
-// Function ID: 8956
+// Module ID: 11087
+// Function ID: 11088
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1921, 1923, 8579, 673, 6010, 8956, 7389, 586, 6255, 4445, 8957, 2008, 8957, 695, 2]
+// Dependencies: [19, 1921, 1923, 8125, 673, 7148, 11088, 7567, 586, 7320, 4448, 11089, 2008, 11089, 695, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 8955 (useTieredTenureBadgeClickHandler)
+// Module 11087 (useTieredTenureBadgeClickHandler)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
-import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8579 */;
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8125 */;
 import ME from "ME" /* 673 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 
 const require = arg1;
 ({ AnalyticEvents: error, UserSettingsSections: closure_8 } = ME);
@@ -20,10 +20,10 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   const _require = id;
   closure_1 = userId;
   dependencyMap = themeType;
-  let isPremiumSubscriber = _require(8956).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  let isPremiumSubscriber = _require(11088).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp4 = typeof id === "string";
   if (typeof id === "string") {
-    let tmpResult = tmp(7389);
+    let tmpResult = tmp(7567);
     tmp4 = null != tmpResult.getTieredTenureBadge(id);
   }
   tmpResult = tmp(586);

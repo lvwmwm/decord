@@ -1,17 +1,17 @@
-// Module ID: 7603
-// Function ID: 7604
+// Module ID: 7780
+// Function ID: 7781
 // Name: showScheduleMessageSuccessToast
-// Dependencies: [673, 4194, 1233, 4441, 6235, 7600, 7604, 5982, 4858, 4724, 12008, 2008, 2]
+// Dependencies: [673, 4194, 1233, 4444, 6556, 7777, 7781, 7122, 4865, 4731, 12144, 2008, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 7603 (showScheduleMessageSuccessToast)
+// Module 7780 (showScheduleMessageSuccessToast)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
-import ClockIcon from "ClockIcon" /* 4441 */;
-import CircleXIcon from "CircleXIcon" /* 6235 */;
-import ScheduledMessagesConfig from "ScheduledMessagesConfig" /* 7600 */;
+import ClockIcon from "ClockIcon" /* 4444 */;
+import CircleXIcon from "CircleXIcon" /* 6556 */;
+import ScheduledMessagesConfig from "ScheduledMessagesConfig" /* 7777 */;
 
 const AbortCodes = ME.AbortCodes;
 const result = set.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageNotifications.native.tsx");
@@ -43,11 +43,11 @@ export const handleScheduleMessageError = function handleScheduleMessageError(cl
   if (code === AbortCodes.TOO_MANY_SCHEDULED_MESSAGES) {
     const scheduledMessagesLimit = ScheduledMessagesConfig.getScheduledMessagesLimit("ScheduledMessagesCreateRoadblock");
     if (scheduledMessagesLimit.isUpgradable) {
-      let tmp11Result = tmp11(7604);
-      const items = [tmp11(5982).SCHEDULED_MESSAGES_ROADBLOCK];
+      let tmp11Result = tmp11(7781);
+      const items = [tmp11(7122).SCHEDULED_MESSAGES_ROADBLOCK];
       tmp11Result(items);
     } else {
-      tmp11Result = tmp11(4858);
+      tmp11Result = tmp11(4865);
       let obj = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null };
       const intl2 = tmp7(1233).intl;
       obj[0] = intl2.string(tmp7(1233).t.RLdUVh);

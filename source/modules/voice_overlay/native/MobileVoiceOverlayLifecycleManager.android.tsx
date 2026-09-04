@@ -1,23 +1,23 @@
-// Module ID: 14421
-// Function ID: 14422
+// Module ID: 14453
+// Function ID: 14454
 // Name: importDefaultResult1
-// Dependencies: [1386, 1981, 1908, 4529, 4120, 4554, 4130, 5372, 1921, 4497, 10089, 673, 14422, 14423, 14424, 14425, 7776, 13679, 14426, 14427, 8769, 1233, 14428, 10100, 7512, 4674, 5394, 695, 4701, 4662, 2]
+// Dependencies: [1386, 1981, 1908, 4532, 4120, 4557, 4130, 5380, 1921, 4500, 9909, 673, 14454, 14455, 14456, 14457, 6932, 13712, 14458, 14459, 8553, 1233, 14460, 9920, 7689, 4681, 5402, 695, 4708, 4669, 2]
 
-// Module 14421 (importDefaultResult1)
-import initializeDefault from "initialize" /* 4662 */;
+// Module 14453 (importDefaultResult1)
+import initializeDefault from "initialize" /* 4669 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4529 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 4532 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import importDefaultResult1 from "createRTCConnection" /* 4554 */;
+import importDefaultResult1 from "createRTCConnection" /* 4557 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5372 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5380 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import importDefaultResult2 from "updateVoiceState" /* 4497 */;
-import closure_13 from "getUserAgnosticState" /* 10089 */;
+import importDefaultResult2 from "updateVoiceState" /* 4500 */;
+import closure_13 from "getUserAgnosticState" /* 9909 */;
 import ME from "ME" /* 673 */;
-import registerAsset from "registerAsset" /* 14422 */;
+import registerAsset from "registerAsset" /* 14454 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1233 */;
 
 const require = arg1;

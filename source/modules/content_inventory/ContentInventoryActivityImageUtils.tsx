@@ -1,22 +1,22 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 12931
+// Function ID: 12932
 // Name: useComputedImagesForActivity
-// Dependencies: [19, 4519, 673, 4506, 8631, 8060, 1233, 9402, 6163, 9274, 1430, 9404, 5236, 9405, 5968, 586, 695, 8634, 2]
+// Dependencies: [19, 4522, 673, 4509, 8271, 8070, 1233, 12932, 7247, 10823, 1431, 12934, 5244, 12935, 7108, 586, 695, 8274, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 9401 (useComputedImagesForActivity)
+// Module 12931 (useComputedImagesForActivity)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import items3 from "items3" /* 4506 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 5968 */;
-import importDefaultResult1 from "importDefaultResult1" /* 6163 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8634 */;
-import unpackStageChannelParty from "unpackStageChannelParty" /* 9274 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 9402 */;
-import isOnXboxDefault from "isOnXbox" /* 9404 */;
-import closure_4 from "addApplication" /* 4519 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import items3 from "items3" /* 4509 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7108 */;
+import importDefaultResult1 from "importDefaultResult1" /* 7247 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8274 */;
+import unpackStageChannelParty from "unpackStageChannelParty" /* 10823 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 12932 */;
+import isOnXboxDefault from "isOnXbox" /* 12934 */;
+import closure_4 from "addApplication" /* 4522 */;
 import ME from "ME" /* 673 */;
 
 function useComputedImagesForActivity(activity, getIconURL) {
@@ -28,7 +28,7 @@ function useComputedImagesForActivity(activity, getIconURL) {
     let obj8 = obj;
   } else {
     if (obj17.isStageActivity(activity)) {
-      const result = tmp15(9274).unpackStageChannelParty(activity);
+      const result = tmp15(10823).unpackStageChannelParty(activity);
       let guildIconURL;
       if (null != result) {
         obj = { id: null, icon: null, size: null };
@@ -54,11 +54,11 @@ function useComputedImagesForActivity(activity, getIconURL) {
       const obj2 = { largeImage: null, smallImage: "Array" };
       obj2[0] = tmp14;
       obj8 = obj2;
-      const tmp15Result = tmp15(9274);
+      const tmp15Result = tmp15(10823);
     } else if (isOnXboxDefault(activity)) {
       const obj3 = { largeImage: null, smallImage: "Array" };
       const obj4 = { src: null, alt: null };
-      let tmp2Result = tmp2(5236);
+      let tmp2Result = tmp2(5244);
       obj4[0] = tmp2Result.get(constants.XBOX).icon.customPNG;
       const intl4 = tmp15(1233).intl;
       obj4[1] = intl4.string(tmp15(1233).t.Nfvo72);
@@ -66,10 +66,10 @@ function useComputedImagesForActivity(activity, getIconURL) {
       obj8 = obj3;
     } else {
       if (null == smallImage) {
-        if (tmp2(9405)(activity)) {
+        if (tmp2(12935)(activity)) {
           const obj5 = { largeImage: null, smallImage: "Array" };
           const obj6 = { src: null, alt: null };
-          tmp2Result = tmp2(5236);
+          tmp2Result = tmp2(5244);
           obj6[0] = tmp2Result.get(constants.PLAYSTATION).icon.lightPNG;
           const intl3 = tmp15(1233).intl;
           obj6[1] = intl3.string(tmp15(1233).t.fFl4jo);
@@ -210,7 +210,7 @@ function useRichImageForActivity(activity, activityApplication) {
     const application_id = activity.application_id;
   }
   if (null == activity) {
-    return { largeImage: "Array", smallImage: "PX_16" };
+    return { largeImage: "left", smallImage: "call" };
   } else {
     let large_image;
     if (activity != null) {
@@ -222,7 +222,7 @@ function useRichImageForActivity(activity, activityApplication) {
     let tmp5;
     if (null != large_image) {
       let obj = { src: null, text: null, url: null };
-      let tmpResult = tmp(8060);
+      let tmpResult = tmp(8070);
       const items = [, ];
       ({ LARGE: arr[0], LARGE: arr[1] } = ImageSizes);
       obj[0] = tmpResult.getAssetImage(activity.application_id, large_image, items);
@@ -256,7 +256,7 @@ function useRichImageForActivity(activity, activityApplication) {
     let tmp12;
     if (null != tmp10) {
       obj = { src: null, text: null, url: null };
-      tmpResult = tmp(8060);
+      tmpResult = tmp(8070);
       const items1 = [, ];
       ({ LARGE: arr2[0], LARGE: arr2[1] } = ImageSizes);
       obj[0] = tmpResult.getAssetImage(activity.application_id, tmp10, items1);
@@ -359,7 +359,7 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (data != null) {
     const coverURL = data.getCoverURL();
   }
-  let tmp5Result = tmp5(8631);
+  let tmp5Result = tmp5(8271);
   if (tmp5Result.isListenedSessionEntry(entry)) {
     if (entry.extra.entries.length > 0) {
       obj = { src: null };
@@ -404,20 +404,20 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
     useTrackActivityDefaultIcon(obj5);
     return obj4;
   }
-  tmp5Result = tmp5(8631);
+  tmp5Result = tmp5(8271);
   if (tmp5Result.isWatchedMediaEntry(entry)) {
     const obj6 = { src: null, alt: null };
-    obj6[0] = tmp5(8060).getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE);
+    obj6[0] = tmp5(8070).getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE);
     obj6[1] = entry.extra.media_title;
     tmp7 = obj6;
-    const tmp5Result1 = tmp5(8060);
+    const tmp5Result1 = tmp5(8070);
   } else {
     if (tmp5Result2.isTopArtistEntry(entry)) {
       const obj7 = { src: null };
       obj7[0] = entry.extra.media.image_url;
       tmp7 = obj7;
     }
-    tmp5Result2 = tmp5(8631);
+    tmp5Result2 = tmp5(8271);
   }
 };
 export const useImageForActivity = function useImageForActivity(activity, application, user_profile_activity_native) {

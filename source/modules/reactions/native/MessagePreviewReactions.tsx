@@ -1,13 +1,13 @@
-// Module ID: 11129
-// Function ID: 11130
+// Module ID: 11199
+// Function ID: 11200
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7351, 8650, 21, 586, 5962, 5982, 11118, 2]
+// Dependencies: [19, 7529, 8290, 21, 586, 7102, 7122, 11188, 2]
 // Exports: default
 
-// Module 11129 (MessagePreviewReactions)
+// Module 11199 (MessagePreviewReactions)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "removePendingListFetch" /* 7351 */;
-import closure_4 from "messages" /* 8650 */;
+import closure_3 from "removePendingListFetch" /* 7529 */;
+import closure_4 from "messages" /* 8290 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -27,17 +27,17 @@ export default function MessagePreviewReactions(emoji) {
     }
     return null != message ? message.reactions : closure_1_6;
   }, items1);
-  obj = { value: messageId(5962)(messageId(5982).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
+  obj = { value: messageId(7102)(messageId(7122).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
   if (stateFromStores.length > 0) {
     obj = { channelId: null, messageId: null, emoji: null, reactions: null };
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji.emoji;
     obj[3] = stateFromStores;
-    let tmp4Result = tmp4(tmp(11118).MessageReactionsContent, obj);
+    let tmp4Result = tmp4(tmp(11188).MessageReactionsContent, obj);
   } else {
-    tmp4Result = tmp4(tmp(11118).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(11188).MessageReactionsEmpty, {});
   }
   obj[1] = tmp4Result;
-  return jsx(channelId(5962).AnalyticsLocationProvider, { value: messageId(5962)(messageId(5982).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
+  return jsx(channelId(7102).AnalyticsLocationProvider, { value: messageId(7102)(messageId(7122).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
 };

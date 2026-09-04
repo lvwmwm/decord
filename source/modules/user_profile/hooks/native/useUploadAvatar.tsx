@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14534
+// Function ID: 14535
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1921, 673, 1923, 644, 8181, 4445, 5091, 4139, 14486, 8090, 8088, 8085, 8087, 2]
+// Dependencies: [5, 19, 1921, 673, 1923, 644, 9242, 4448, 5099, 4139, 14518, 8100, 8098, 8095, 8097, 2]
 // Exports: default
 
-// Module 14502 (useUploadAvatar)
+// Module 14534 (useUploadAvatar)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
@@ -69,14 +69,14 @@ export default function useUploadAvatar(guildId) {
             originalMd5 = undefined;
             c3 = undefined;
             closure_4 = undefined;
-            closure_1_1(4445).hideActionSheet();
-            const obj13 = closure_1_1(4445);
+            closure_1_1(4448).hideActionSheet();
+            const obj13 = closure_1_1(4448);
             obj1 = { size: null };
             obj1[0] = closure_1_7;
             originalMd5 = 1;
             c3 = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = closure_1_1(5091).openImagePicker(obj1);
+            obj2[0] = closure_1_1(5099).openImagePicker(obj1);
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -109,24 +109,24 @@ export default function useUploadAvatar(guildId) {
               }
             }
           }
-          obj1 = closure_1_0(14486);
+          obj1 = closure_1_0(14518);
           const obj4 = { imageUri: null, description: null, originalMd5: null };
           obj4[0] = base64;
-          obj3 = closure_1_0(8090);
+          obj3 = closure_1_0(8100);
           obj4[1] = obj3.generateAvatarDescription();
           obj4[2] = originalMd5;
           closure_4 = obj1.createPendingImage(obj4);
           if (closure_1_1) {
-            let tmp28Result = tmp28(8088);
+            let tmp28Result = tmp28(8098);
             tmp28Result.setTryItOutAvatar(closure_1_4);
           } else {
-            tmp28Result = tmp28(8085);
+            tmp28Result = tmp28(8095);
             const obj5 = { guildId: null, avatar: null };
             obj5[0] = closure_0;
             obj5[1] = closure_1_4;
             tmp28Result.setPendingChanges(obj5);
-            const result = closure_1_0(8087).announcePendingAvatarChange("set");
-            const obj7 = closure_1_0(8087);
+            const result = closure_1_0(8097).announcePendingAvatarChange("set");
+            const obj7 = closure_1_0(8097);
           }
         }
       } catch (tmp38) {

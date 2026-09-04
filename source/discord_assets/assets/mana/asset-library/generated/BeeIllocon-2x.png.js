@@ -1,9 +1,9 @@
-// Module ID: 6366
-// Function ID: 6367
+// Module ID: 5747
+// Function ID: 5748
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6366 (metadata)
+// Module 5747 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BeeIllocon-2x.png.js");

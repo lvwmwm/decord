@@ -1,16 +1,16 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14681
+// Function ID: 14682
 // Name: route
-// Dependencies: [7896, 673, 11292, 1233, 2918, 4734, 14614, 2]
+// Dependencies: [7906, 673, 11400, 1233, 2918, 14682, 14645, 2]
 
-// Module 14613 (route)
+// Module 14681 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2918 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import createToggle from "createToggle" /* 11292 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import AGE_GROUP_CONFIRM_ROW_PROPS from "AGE_GROUP_CONFIRM_ROW_PROPS" /* 14682 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -23,13 +23,13 @@ obj = {
     const intl2 = getSystemLocale.intl;
     return "" + intl.string(getSystemLocale.t.XxRj7f) + " \u2022 " + intl2.string(messagesProxyDefault.FTawSP);
   },
-  usePredicate: useAgeVerificationRunner.useShowAssignedAgeGroupSettings,
+  usePredicate: AGE_GROUP_CONFIRM_ROW_PROPS.useShowAssignedAdultAgeGroupRow,
   screen: obj
 };
 obj = {
   route: ME.UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(14614) /* SettingsAgeGroupHeader */.default;
+    return require(14645) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

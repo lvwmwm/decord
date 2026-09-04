@@ -1,10 +1,10 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8377
+// Function ID: 8378
 // Name: mapMethodsV2Response
 // Dependencies: [5, 1215, 673, 527, 2]
 // Exports: fetchAgeVerificationMethodsV2, fetchAgeVerificationMethodsV2SuspendedUser
 
-// Module 8735 (mapMethodsV2Response)
+// Module 8377 (mapMethodsV2Response)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import { Endpoints } from "ME" /* 673 */;

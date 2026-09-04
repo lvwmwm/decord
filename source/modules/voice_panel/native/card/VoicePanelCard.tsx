@@ -1,28 +1,28 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 17054
+// Function ID: 17055
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4500, 4554, 5372, 12069, 12067, 16924, 12072, 673, 4499, 12070, 21, 4217, 4474, 4941, 1296, 4478, 709, 4663, 4544, 6015, 1233, 4929, 12068, 586, 9580, 4579, 12705, 9583, 9579, 16969, 9593, 8521, 8124, 4479, 4928, 7808, 5502, 4197, 16970, 10955, 9227, 4204, 5962, 16928, 16940, 16923, 16971, 16972, 8915, 5661, 16973, 12071, 16974, 16975, 16976, 16977, 16978, 16988, 2]
+// Dependencies: [32, 19, 17, 4503, 4557, 5380, 12205, 12203, 17010, 12208, 673, 4502, 12206, 21, 4218, 4477, 4948, 1296, 4481, 709, 4670, 4547, 5544, 1233, 4936, 12204, 586, 9524, 4582, 12970, 9526, 9523, 17055, 9536, 8756, 8182, 4482, 4935, 7013, 5542, 4197, 17056, 10924, 9424, 4205, 7102, 17014, 17026, 17009, 17057, 17058, 8110, 6595, 17059, 12207, 17060, 17061, 17062, 17063, 17064, 17074, 2]
 
-// Module 16968 (SelfStreamCard)
+// Module 17054 (SelfStreamCard)
 import ThemesDefault from "Themes" /* 709 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4928 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4935 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "reset" /* 4500 */;
-import closure_7 from "createRTCConnection" /* 4554 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5372 */;
-import VoicePanelModes from "VoicePanelModes" /* 12069 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12067 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16924 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 12072 */;
+import closure_6 from "reset" /* 4503 */;
+import closure_7 from "createRTCConnection" /* 4557 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5380 */;
+import VoicePanelModes from "VoicePanelModes" /* 12205 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12203 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 17010 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 12208 */;
 import { ApplicationStreamStates } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 12070 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 12206 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4217" /* 4217 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import importDefaultResult from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function SelfStreamCard(sharedCoords) {
@@ -1178,13 +1178,13 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
     str2 = "animate-never";
   }
   obj = { originX: obj.withSpring(originX.targetOriginX, SUBTLE_SPRING, str2), originY: null, width: null, height: null };
-  let tmpResult = tmp(4928);
+  let tmpResult = tmp(4935);
   let str3 = str;
   if (flag) {
     str3 = "animate-never";
   }
   obj[1] = tmpResult.withSpring(originX.targetOriginY, SUBTLE_SPRING, str3);
-  tmpResult = tmp(4928);
+  tmpResult = tmp(4935);
   let str4 = str;
   if (flag) {
     str4 = "animate-never";
@@ -1450,7 +1450,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "channel", layout: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001141953147857043, layoutPhysics: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013458295484790203 };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "accessible", layout: "rm", layoutPhysics: "indexOfSingleActiveTouch" };
   obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);

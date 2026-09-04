@@ -1,18 +1,18 @@
-// Module ID: 14701
-// Function ID: 14702
+// Module ID: 14782
+// Function ID: 14783
 // Name: toggle
-// Dependencies: [6063, 7896, 673, 14668, 586, 4858, 1233, 4948, 14699, 14700, 11292, 2]
+// Dependencies: [6536, 7906, 673, 14749, 586, 4865, 1233, 4955, 14780, 14781, 11400, 2]
 
-// Module 14701 (toggle)
+// Module 14782 (toggle)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault from "set" /* 4858 */;
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14668 */;
-import handleRequestSuccess from "handleRequestSuccess" /* 14699 */;
-import closure_3 from "hasConsented" /* 6063 */;
+import setDefault from "set" /* 4865 */;
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
+import handleRequestSuccess from "handleRequestSuccess" /* 14780 */;
+import closure_3 from "hasConsented" /* 6536 */;
 import { Consents } from "ME" /* 673 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -29,7 +29,7 @@ createToggle = {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
       const obj3 = handleRequestSuccess;
-      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14700).showDataPrivacyRateLimitAlert(message.message));
+      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14781).showDataPrivacyRateLimitAlert(message.message));
       const setConsentsResult = handleRequestSuccess.setConsents(items, []);
     } else {
       let obj = setDefault;
@@ -45,7 +45,7 @@ createToggle = {
       obj[4] = componentDidMountDefault.Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.PERSONALIZATION];
-        return callback(14699).setConsents([], items);
+        return callback(14780).setConsents([], items);
       };
       obj.show(obj);
     }

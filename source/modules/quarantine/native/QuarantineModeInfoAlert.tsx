@@ -1,19 +1,19 @@
-// Module ID: 5469
-// Function ID: 5470
+// Module ID: 5478
+// Function ID: 5479
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 673, 21, 4478, 5470, 709, 4948, 1296, 1233, 4474, 2]
+// Dependencies: [19, 673, 21, 4481, 5479, 709, 4955, 1296, 1233, 4477, 2]
 // Exports: default
 
-// Module 5469 (QuarantineModeInfoAlert)
+// Module 5478 (QuarantineModeInfoAlert)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4474 */;
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
+import Text from "Text" /* 4477 */;
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5470 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import importDefaultResult from "createTextStyle" /* 5479 */;
 
 require = arg1;
 noopAll;

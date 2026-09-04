@@ -1,12 +1,12 @@
-// Module ID: 14000
-// Function ID: 14001
+// Module ID: 14032
+// Function ID: 14033
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 14001, 2]
+// Dependencies: [19, 21, 14033, 2]
 // Exports: default
 
-// Module 14000 (PassthroughTouchView)
+// Module 14032 (PassthroughTouchView)
 import noopAll from "noop" /* 19 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 14001 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 14033 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

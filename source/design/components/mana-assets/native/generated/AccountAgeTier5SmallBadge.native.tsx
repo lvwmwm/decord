@@ -1,14 +1,14 @@
-// Module ID: 6289
-// Function ID: 6290
+// Module ID: 5670
+// Function ID: 5671
 // Name: AccountAgeTier5SmallBadge
-// Dependencies: [21, 5502, 6290, 2]
+// Dependencies: [21, 5542, 5671, 2]
 // Exports: AccountAgeTier5SmallBadge
 
-// Module 6289 (AccountAgeTier5SmallBadge)
+// Module 5670 (AccountAgeTier5SmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import vanityUrlDefault from "vanityUrl" /* 6290 */;
+import preloadDefault from "preload" /* 5542 */;
+import vanityUrlDefault from "vanityUrl" /* 5671 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier5SmallBadge.native.tsx");

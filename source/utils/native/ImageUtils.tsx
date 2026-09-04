@@ -1,13 +1,13 @@
 // Module ID: 1491
 // Function ID: 1492
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 673, 1465, 1492, 1482, 1466, 1894, 12, 1433, 1430, 2]
+// Dependencies: [32, 17, 673, 1466, 1492, 1482, 1467, 1894, 12, 1434, 1431, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
 // Module 1491 (getSrcWithWidthAndHeight)
-import getAvatarURL from "getAvatarURL" /* 1430 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import items2 from "items" /* 1466 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+import items2 from "items" /* 1467 */;
 import parseDefault from "parse" /* 1482 */;
 import useWindowDimensions from "useWindowDimensions" /* 1492 */;
 import closure_3 from "_slicedToArray" /* 32 */;

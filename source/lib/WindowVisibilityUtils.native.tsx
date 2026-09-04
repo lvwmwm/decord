@@ -1,11 +1,11 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9540
+// Function ID: 9541
 // Name: isDiscordVisible
-// Dependencies: [7167, 673, 9596, 2]
+// Dependencies: [7347, 673, 9539, 2]
 // Exports: default
 
-// Module 9597 (isDiscordVisible)
-import closure_2 from "getState" /* 7167 */;
+// Module 9540 (isDiscordVisible)
+import closure_2 from "getState" /* 7347 */;
 import { AppStates } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");

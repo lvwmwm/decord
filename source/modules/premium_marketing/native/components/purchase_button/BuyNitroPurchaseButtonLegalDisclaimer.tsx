@@ -1,10 +1,10 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13317
+// Function ID: 13318
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
-// Dependencies: [19, 673, 21, 4478, 709, 1233, 1234, 4139, 1994, 4474, 2]
+// Dependencies: [19, 673, 21, 4481, 709, 1233, 1234, 4139, 1994, 4477, 2]
 // Exports: default
 
-// Module 13284 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 13317 (BuyNitroPurchaseButtonLegalDisclaimer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -14,7 +14,7 @@ import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -65,7 +65,7 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
       obj1 = { style: null, variant: "text-xxs/medium", children: null };
       obj1[0] = tmp.disclaimer;
       obj1[2] = formatResult;
-      jsx(tmp10(4474).Text, { style: null, variant: "text-xxs/medium", children: null });
+      jsx(tmp10(4477).Text, { style: null, variant: "text-xxs/medium", children: null });
     }
     const tmp3Result1 = set;
     t = tmp3(1233).t;

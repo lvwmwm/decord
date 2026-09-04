@@ -1,14 +1,14 @@
-// Module ID: 4518
-// Function ID: 4519
+// Module ID: 4521
+// Function ID: 4522
 // Name: createFromServer
-// Dependencies: [1935, 4519, 4520, 673, 4074, 1398, 2]
+// Dependencies: [1935, 4522, 4523, 673, 4074, 1399, 2]
 
-// Module 4518 (createFromServer)
-import hasFlagAll from "hasFlag" /* 1398 */;
+// Module 4521 (createFromServer)
+import hasFlagAll from "hasFlag" /* 1399 */;
 import toJSDefault from "toJS" /* 1935 */;
 import hooksDefault from "hooks" /* 4074 */;
-import closure_3 from "addApplication" /* 4519 */;
-import closure_4 from "createFromServer" /* 4520 */;
+import closure_3 from "addApplication" /* 4522 */;
+import closure_4 from "createFromServer" /* 4523 */;
 import ME from "ME" /* 673 */;
 
 toJSDefault;

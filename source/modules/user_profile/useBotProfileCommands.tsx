@@ -1,11 +1,11 @@
-// Module ID: 9060
-// Function ID: 9061
+// Module ID: 11142
+// Function ID: 11143
 // Name: useBotProfileCommands
-// Dependencies: [19, 8456, 1954, 2]
+// Dependencies: [19, 9345, 1954, 2]
 // Exports: default
 
-// Module 9060 (useBotProfileCommands)
-import findCommandInSectionAll from "findCommandInSection" /* 8456 */;
+// Module 11142 (useBotProfileCommands)
+import findCommandInSectionAll from "findCommandInSection" /* 9345 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

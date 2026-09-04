@@ -1,10 +1,10 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16108
+// Function ID: 16109
 // Name: useLiveStageChannels
-// Dependencies: [1386, 4120, 1391, 1394, 586, 1470, 11, 2]
+// Dependencies: [1386, 4120, 1391, 1395, 586, 1394, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 16022 (useLiveStageChannels)
+// Module 16108 (useLiveStageChannels)
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;

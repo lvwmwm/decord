@@ -1,15 +1,15 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14502
+// Function ID: 14503
 // Name: ThemedStatusBar
-// Dependencies: [19, 1301, 1215, 21, 586, 4332, 1362, 9665, 9547, 2]
+// Dependencies: [19, 1301, 1215, 21, 586, 4335, 1362, 9608, 9410, 2]
 // Exports: default
 
-// Module 14470 (ThemedStatusBar)
+// Module 14502 (ThemedStatusBar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
-import coerceMainRoute from "coerceMainRoute" /* 4332 */;
-import componentDidMountDefault from "componentDidMount" /* 9547 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9665 */;
+import coerceMainRoute from "coerceMainRoute" /* 4335 */;
+import componentDidMountDefault from "componentDidMount" /* 9410 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9608 */;
 import closure_3 from "handleThemeChange" /* 1301 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import { jsx } from "jsxProd" /* 21 */;

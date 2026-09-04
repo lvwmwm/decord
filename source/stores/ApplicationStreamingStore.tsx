@@ -1,28 +1,28 @@
-// Module ID: 4500
-// Function ID: 4501
+// Module ID: 4503
+// Function ID: 4504
 // Name: reset
-// Dependencies: [4495, 4501, 1215, 1386, 1908, 4529, 4120, 4554, 1980, 4497, 673, 4545, 684, 4544, 13806, 13807, 13808, 2008, 7482, 586, 13693, 706, 2]
+// Dependencies: [4498, 4504, 1215, 1386, 1908, 4532, 4120, 4557, 1980, 4500, 673, 4548, 684, 4547, 13838, 13839, 13840, 2008, 7659, 586, 13726, 706, 2]
 
-// Module 4500 (reset)
+// Module 4503 (reset)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isStreamKey from "isStreamKey" /* 4544 */;
-import canStreamInChannel from "canStreamInChannel" /* 7482 */;
-import canSpectateDefault from "canSpectate" /* 13693 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13807 */;
-import closure_8 from "set" /* 4495 */;
-import closure_9 from "initialize" /* 4501 */;
+import isStreamKey from "isStreamKey" /* 4547 */;
+import canStreamInChannel from "canStreamInChannel" /* 7659 */;
+import canSpectateDefault from "canSpectate" /* 13726 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13839 */;
+import closure_8 from "set" /* 4498 */;
+import closure_9 from "initialize" /* 4504 */;
 import closure_10 from "fetchFingerprint" /* 1215 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
 import closure_12 from "createGuildRecordFromRust" /* 1908 */;
-import closure_13 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_13 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_14 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_15 from "createRTCConnection" /* 4554 */;
+import closure_15 from "createRTCConnection" /* 4557 */;
 import closure_16 from "handleConnectionOpen" /* 1980 */;
-import closure_17 from "updateVoiceState" /* 4497 */;
+import closure_17 from "updateVoiceState" /* 4500 */;
 import ME from "ME" /* 673 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4545 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4548 */;
 
 require = arg1;
 function reset() {
@@ -716,7 +716,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(dispatcherDefaul
   STREAM_START: function handleStreamStart(arg0) {
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    let obj = sourceId(4544);
+    let obj = sourceId(4547);
     obj = { streamType, guildId, channelId, ownerId: store2.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     let startsWithResult;
@@ -808,13 +808,13 @@ const applicationStreamingStore = new ApplicationStreamingStore(dispatcherDefaul
       } else if (reason === tmp3.UNAUTHORIZED) {
         FAILED = tmp22.FAILED;
       } else if (reason === tmp3.SAFETY_GUILD_RATE_LIMITED) {
-        let obj = guildId(4544);
+        let obj = guildId(4547);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(2008)(13808, dependencyMap.paths).then((arg0) => {
+        guildId(2008)(13840, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = tmp22.ENDED;
-        const promise = guildId(2008)(13808, dependencyMap.paths);
+        const promise = guildId(2008)(13840, dependencyMap.paths);
       } else {
         if (tmp9) {
           FAILED = tmp22.FAILED;

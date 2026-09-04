@@ -1,13 +1,13 @@
-// Module ID: 13610
-// Function ID: 13611
+// Module ID: 13643
+// Function ID: 13644
 // Name: isLatest
-// Dependencies: [4131, 4493, 4738, 11, 2]
+// Dependencies: [4131, 4496, 4745, 11, 2]
 
-// Module 13610 (isLatest)
+// Module 13643 (isLatest)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4738 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
 import closure_3 from "hasFlag" /* 4131 */;
-import closure_4 from "generateOldThreadCutoff" /* 4493 */;
+import closure_4 from "generateOldThreadCutoff" /* 4496 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/message_previews/PreviewData.tsx");

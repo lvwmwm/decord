@@ -1,14 +1,14 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12447
+// Function ID: 12448
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 10339, 4929, 2]
+// Dependencies: [21, 10159, 4936, 2]
 // Exports: default
 
-// Module 12315 (GuildPowerupRollbackSheet)
+// Module 12447 (GuildPowerupRollbackSheet)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import Button from "Button" /* 4929 */;
-import PromoSheet from "PromoSheet" /* 10339 */;
+import Button from "Button" /* 4936 */;
+import PromoSheet from "PromoSheet" /* 10159 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");

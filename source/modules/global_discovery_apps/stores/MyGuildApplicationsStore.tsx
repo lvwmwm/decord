@@ -1,9 +1,9 @@
-// Module ID: 11876
-// Function ID: 11877
+// Module ID: 12007
+// Function ID: 12008
 // Name: addToApplicationIdToGuildIds
 // Dependencies: [684, 586, 706, 2]
 
-// Module 11876 (addToApplicationIdToGuildIds)
+// Module 12007 (addToApplicationIdToGuildIds)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

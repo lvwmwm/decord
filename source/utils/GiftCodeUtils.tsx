@@ -1,19 +1,19 @@
-// Module ID: 4753
-// Function ID: 4754
+// Module ID: 4760
+// Function ID: 4761
 // Name: _resolveGiftCode
-// Dependencies: [5, 32, 4754, 1921, 673, 1923, 4465, 4755, 4756, 695, 4162, 4849, 1233, 4706, 1470, 586, 4139, 2]
+// Dependencies: [5, 32, 4761, 1921, 673, 1923, 4468, 4762, 4763, 695, 4162, 4856, 1233, 4713, 1394, 586, 4139, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 4753 (_resolveGiftCode)
+// Module 4760 (_resolveGiftCode)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 4849 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 4856 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "handleSubscribeFailure" /* 4754 */;
+import closure_5 from "handleSubscribeFailure" /* 4761 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
-import importDefaultResult from "set" /* 4465 */;
+import importDefaultResult from "set" /* 4468 */;
 import ArrayResult from "module_4" /* 4 */;
 import ArrayResult1 from "module_6" /* 6 */;
 import ArrayResult2 from "module_3" /* 3 */;
@@ -222,8 +222,8 @@ const result = require("set").fileFinishedImporting("utils/GiftCodeUtils.tsx");
 
 export const GiftExperience = obj;
 export const getGiftExperience = function getGiftExperience(arg0, arg1) {
-  if (!v5(4755).isMobile) {
-    if (!v5(4755).isTablet) {
+  if (!v5(4762).isMobile) {
+    if (!v5(4762).isTablet) {
       if (null == arg0) {
         if (!arg1) {
           let DEFAULT = obj.CUSTOM_STYLE;
@@ -236,8 +236,8 @@ export const getGiftExperience = function getGiftExperience(arg0, arg1) {
   DEFAULT = obj.DEFAULT;
 };
 export const shouldShowCustomGiftExperience = function shouldShowCustomGiftExperience(arg0) {
-  if (!v5(4755).isMobile) {
-    if (!v5(4755).isTablet) {
+  if (!v5(4762).isMobile) {
+    if (!v5(4762).isTablet) {
       if (null != arg0) {
         let DEFAULT = obj.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD;
         let tmp5 = obj;
@@ -464,9 +464,9 @@ export const getButtonText = function getButtonText(arg0, giftStyle, isCustomGif
 };
 export const getSubscriptionGiftSuccessText = function getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) {
   const v5 = getOrFetchSubscriptionPlan;
-  const match = v5(4706).match(getOrFetchSubscriptionPlan);
+  const match = v5(4713).match(getOrFetchSubscriptionPlan);
   obj = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
-  const str = v5(4706);
+  const str = v5(4713);
   obj = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
   const withResult = match.with(obj, () => {
     const intl = subscriptionPlan(closure_1_2[12]).intl;
@@ -611,11 +611,11 @@ export const getBodyText = function getBodyText(arg0) {
     return formatResult;
   } else if (tmp.SUCCESS === step) {
     if (null != subscriptionPlan) {
-      const match = subscriptionPlan(4706).match(subscriptionPlan);
+      const match = subscriptionPlan(4713).match(subscriptionPlan);
       obj = { interval: null, premiumSubscriptionType: null };
       obj[0] = constants6.MONTH;
       obj[1] = closure_13.TIER_2;
-      const str = subscriptionPlan(4706);
+      const str = subscriptionPlan(4713);
       obj1 = { interval: null, premiumSubscriptionType: null };
       obj1[0] = constants6.YEAR;
       obj1[1] = closure_13.TIER_2;
@@ -732,7 +732,7 @@ export const firstLibraryApplicationForGiftCode = function firstLibraryApplicati
     arr = items;
   }
   const mapped = arr.map((arg0) => libraryApplication.getLibraryApplication(applicationId, arg0, true));
-  const found = mapped.filter(v5(1470).isNotNullish);
+  const found = mapped.filter(v5(1394).isNotNullish);
   let first = null;
   if (found.length === arr.length) {
     first = found[0];

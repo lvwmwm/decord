@@ -1,17 +1,17 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16129
+// Function ID: 16130
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 673, 1393, 10227, 21, 4478, 709, 1219, 12177, 1233, 13819, 2]
+// Dependencies: [19, 673, 1393, 10047, 21, 4481, 709, 1219, 12311, 1233, 13851, 2]
 // Exports: default
 
-// Module 16043 (GuildHomeChannelRow)
+// Module 16129 (GuildHomeChannelRow)
 import ThemesDefault from "Themes" /* 709 */;
-import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 12177 */;
+import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 12311 */;
 import closure_3 from "noop" /* 19 */;
 import { Routes } from "ME" /* 673 */;
 import { StaticChannelRoute } from "set" /* 1393 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { container: null };
@@ -28,7 +28,7 @@ export default function GuildHomeChannelRow(selected) {
   const callback = React.useCallback(() => {
     id(closure_1_2[7]).transitionTo(closure_1_4.CHANNEL(id, closure_1_5.GUILD_HOME));
   }, items);
-  const ChannelModes = id(12177).ChannelModes;
+  const ChannelModes = id(12311).ChannelModes;
   if (selected) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp5 = tmp3;
@@ -46,8 +46,8 @@ export default function GuildHomeChannelRow(selected) {
   const intl2 = tmp5(1233).intl;
   obj[0] = intl2.string(tmp5(1233).t.VbpLyU);
   obj[1] = DEFAULT;
-  obj[6] = jsx(tmp5(12177).BaseChannelName, { name: null, mode: null });
-  obj = { mode: DEFAULT, IconComponent: tmp5(13819).SignPostIcon };
-  obj[7] = jsx(tmp5(12177).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(13819).SignPostIcon });
-  return jsx(BaseChannelSubtitleDefault, { mode: DEFAULT, IconComponent: tmp5(13819).SignPostIcon });
+  obj[6] = jsx(tmp5(12311).BaseChannelName, { name: null, mode: null });
+  obj = { mode: DEFAULT, IconComponent: tmp5(13851).SignPostIcon };
+  obj[7] = jsx(tmp5(12311).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(13851).SignPostIcon });
+  return jsx(BaseChannelSubtitleDefault, { mode: DEFAULT, IconComponent: tmp5(13851).SignPostIcon });
 };

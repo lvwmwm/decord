@@ -1,20 +1,20 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16925
+// Function ID: 16926
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: [32, 19, 17, 1386, 1921, 4499, 21, 4478, 709, 9584, 4433, 4474, 1233, 586, 1296, 9591, 4197, 16840, 9602, 16841, 9596, 2]
+// Dependencies: [32, 19, 17, 1386, 1921, 4502, 21, 4481, 709, 9527, 4436, 4477, 1233, 586, 1296, 9534, 4197, 16926, 9545, 16927, 9539, 2]
 
-// Module 16839 (ExternalPipViewVideoUnavailable)
+// Module 16925 (ExternalPipViewVideoUnavailable)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 16841 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 16927 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ExternalPipViewVideoUnavailable(wasStream) {
@@ -24,11 +24,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   if (wasStream) {
     obj = { style: null };
     obj[0] = tmp.unavaiableImage;
-    let tmp4Result = tmp4(tmp5(9584).StreamEnded, obj);
+    let tmp4Result = tmp4(tmp5(9527).StreamEnded, obj);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4433).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4436).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -41,7 +41,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1233).t.Nzo5nz);
   }
   obj[3] = result;
-  items[1] = tmp8(tmp10(4474).Text, obj);
+  items[1] = tmp8(tmp10(4477).Text, obj);
   obj[1] = items;
   return closure_12(closure_6, obj);
 }
@@ -72,7 +72,7 @@ function ExternalPipViewVideoStream(streamId) {
   let first;
   dependencyMap = undefined;
   let callback;
-  let obj = streamId(9591);
+  let obj = streamId(9534);
   first = 300;
   dependencyMap = undefined;
   callback = undefined;
@@ -126,7 +126,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(tmp, obj, 1);
     }
   }, items3);
-  const children = [callback2(first(9602), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [callback2(first(9545), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;

@@ -1,14 +1,14 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15272
+// Function ID: 15273
 // Name: AnimatedStripe
-// Dependencies: [32, 19, 21, 4478, 1937, 4217, 14491, 2]
+// Dependencies: [32, 19, 21, 4481, 1937, 4218, 14523, 2]
 // Exports: default
 
-// Module 15188 (AnimatedStripe)
+// Module 15272 (AnimatedStripe)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function AnimatedStripe(hue) {

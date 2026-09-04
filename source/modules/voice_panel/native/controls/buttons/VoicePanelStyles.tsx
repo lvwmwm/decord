@@ -1,14 +1,14 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17106
+// Function ID: 17107
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4478, 709, 8588, 2]
+// Dependencies: [4481, 709, 8195, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 17020 (useVoicePanelButtonStyles)
+// Module 17106 (useVoicePanelButtonStyles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 8588 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import map from "map" /* 8195 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 let closure_3 = createCacheKey.createStyles((arg0) => {
   let obj = { iconBg: { backgroundColor: "transparent" }, iconBgSelected: null, iconBgVoiceMuted: null, iconFill: null, iconFillMuted: null, iconFillRed: null, iconFillSelected: null, iconBadgeIndicator: null };

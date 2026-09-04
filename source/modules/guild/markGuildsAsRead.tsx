@@ -1,19 +1,19 @@
-// Module ID: 13938
-// Function ID: 13939
+// Module ID: 13970
+// Function ID: 13971
 // Name: markGuildsAsRead
-// Dependencies: [5476, 5457, 1386, 1981, 4493, 673, 4703, 12, 11, 695, 5487, 2]
+// Dependencies: [7040, 5466, 1386, 1981, 4496, 673, 4710, 12, 11, 695, 7050, 2]
 // Exports: default
 
-// Module 13938 (markGuildsAsRead)
+// Module 13970 (markGuildsAsRead)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_3 from "handleUpdate" /* 5476 */;
-import closure_4 from "rebuild" /* 5457 */;
+import closure_3 from "handleUpdate" /* 7040 */;
+import closure_4 from "rebuild" /* 5466 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "comparator" /* 1981 */;
-import closure_7 from "generateOldThreadCutoff" /* 4493 */;
+import closure_7 from "generateOldThreadCutoff" /* 4496 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4710 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
@@ -91,5 +91,5 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   obj = { source, type: "guild" };
   expandEventPropertiesDefault.track(AnalyticEvents.MARK_AS_READ, obj);
   let obj2 = expandEventPropertiesDefault;
-  return mapped(5487).bulkAck(mapped, onFinished);
+  return mapped(7050).bulkAck(mapped, onFinished);
 };

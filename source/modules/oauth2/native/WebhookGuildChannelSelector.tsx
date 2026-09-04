@@ -1,10 +1,10 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 9356
+// Function ID: 9357
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1390, 4130, 1921, 21, 4478, 709, 4445, 9381, 2008, 1233, 4674, 9311, 4474, 1296, 8376, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 4130, 1921, 21, 4481, 709, 4448, 9355, 2008, 1233, 4681, 9173, 4477, 1296, 8523, 2]
 // Exports: default
 
-// Module 9382 (styles)
+// Module 9356 (styles)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -14,7 +14,7 @@ import { createChannelRecord } from "createChannelRecord" /* 1390 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -56,7 +56,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       obj[0] = intl.string(selectedGuildId(onChannelChange[13]).t["Re/64R"]);
       const channels = tmp.channels;
       obj[1] = channels.map((id) => {
-        const obj = { label: callback(4674).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
+        const obj = { label: callback(4681).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
         return obj;
       });
       obj[2] = function onItemSelect(arg0) {

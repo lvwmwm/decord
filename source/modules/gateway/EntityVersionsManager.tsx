@@ -1,20 +1,20 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17266
+// Function ID: 17267
 // Name: handleDeletedEntityIds
-// Dependencies: [5410, 5453, 1386, 1984, 1908, 5230, 3, 5495, 706, 586, 7406, 1214, 11, 2]
+// Dependencies: [5419, 5462, 1386, 1984, 1908, 5238, 3, 7058, 706, 586, 7584, 1214, 11, 2]
 
-// Module 17180 (handleDeletedEntityIds)
+// Module 17266 (handleDeletedEntityIds)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault2 from "initialize" /* 5495 */;
-import getAllDefault from "getAll" /* 7406 */;
-import closure_2 from "getEmojiToGroupId" /* 5410 */;
-import closure_3 from "loadSavedGuildStickers" /* 5453 */;
+import initializeDefault2 from "initialize" /* 7058 */;
+import getAllDefault from "getAll" /* 7584 */;
+import closure_2 from "getEmojiToGroupId" /* 5419 */;
+import closure_3 from "loadSavedGuildStickers" /* 5462 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "_handleConnectionOpen" /* 5230 */;
+import closure_7 from "_handleConnectionOpen" /* 5238 */;
 
 function handleDeletedEntityIds(guild_id) {
   importDefault = guild_id;
@@ -41,7 +41,7 @@ function handleDeletedEntityIds(guild_id) {
         if (!set1.has(arg0)) {
           let obj = set3(set1[8]);
           obj = { type: "CHANNEL_DELETE", channel: null };
-          obj = { guild_id: null, id: null, parent_id: "accessible" };
+          obj = { guild_id: null, id: null, parent_id: "Array" };
           obj[0] = set3;
           obj[1] = arg0;
           obj[1] = obj;

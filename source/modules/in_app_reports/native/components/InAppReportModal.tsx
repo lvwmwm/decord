@@ -1,16 +1,16 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8564
+// Function ID: 8565
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 8781, 21, 6247, 7776, 1233, 8782, 4946, 7348, 8779, 8777, 6017, 2]
+// Dependencies: [5, 32, 19, 8565, 21, 7315, 6932, 1233, 8566, 4953, 7526, 8563, 8561, 6940, 2]
 // Exports: default
 
-// Module 8780 (InAppReportModal)
+// Module 8564 (InAppReportModal)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import NavigationStack from "NavigationStack" /* 6017 */;
+import NavigationStack from "NavigationStack" /* 6940 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8781 */;
+import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE" /* 8565 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -62,7 +62,7 @@ export default function InAppReportModal(arg0) {
   [c12, c13] = callback(React.useState([]), 2);
   let tmp4 = callback(React.useState([]), 2);
   [c14, c15] = callback(React.useState([]), 2);
-  menu(4946)(() => {
+  menu(4953)(() => {
     const orFetchLinkedUsers = callback(table[10]).getOrFetchLinkedUsers();
   });
   let items = [closeModal, first];
@@ -206,10 +206,10 @@ export default function InAppReportModal(arg0) {
       const obj2 = {};
       const obj3 = { headerRight: null, headerTitle: null, fullscreen: true, render: null };
       obj3[0] = function headerRight() {
-        const obj = { source: callback(7776), onPress: closure_6, accessibilityLabel: null };
+        const obj = { source: callback(6932), onPress: closure_6, accessibilityLabel: null };
         const intl = _onSubmit(1233).intl;
         obj[2] = intl.string(_onSubmit(1233).t.cpT0Cq);
-        return callback2(_onSubmit(6247).HeaderActionButton, obj);
+        return callback2(_onSubmit(7315).HeaderActionButton, obj);
       };
       obj3[1] = function headerTitle() {
         return null;
@@ -232,7 +232,7 @@ export default function InAppReportModal(arg0) {
         obj.addOnCloseCallback = callback2;
         obj.reportId = closure_5;
         obj.onNavigate = onNavigate;
-        return callback2(callback(8782), obj);
+        return callback2(callback(8566), obj);
       };
       obj2[c6] = obj3;
       obj[1] = obj2;

@@ -1,11 +1,11 @@
-// Module ID: 4593
-// Function ID: 4594
+// Module ID: 4596
+// Function ID: 4597
 // Name: getMaxSinkValue
-// Dependencies: [4542, 2]
+// Dependencies: [4545, 2]
 
-// Module 4593 (getMaxSinkValue)
+// Module 4596 (getMaxSinkValue)
 import set2 from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 ({ defaultVideoQualityOptions: c0, VIDEO_QUALITY_FRAMERATE: closure_1, VIDEO_QUALITY_FRAMERATE_MUTED_2: obj1, VIDEO_QUALITY_FRAMERATE_MUTED: c3 } = DesktopSources);
 let MediaSinkWantsLadder;

@@ -1,16 +1,16 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14040
+// Function ID: 14041
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4478, 709, 1362, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1362, 4477, 2]
 // Exports: default
 
-// Module 14008 (EmptyState)
+// Module 14040 (EmptyState)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -58,7 +58,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj2[3] = items4;
     obj2[4] = title;
-    tmp14 = callback(tmp2(4474).Text, obj2);
+    tmp14 = callback(tmp2(4477).Text, obj2);
   }
   items3[1] = tmp14;
   let tmp16 = null;
@@ -67,7 +67,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj3[3] = items5;
     obj3[4] = body;
-    tmp16 = callback(tmp2(4474).Text, obj3);
+    tmp16 = callback(tmp2(4477).Text, obj3);
   }
   items3[2] = tmp16;
   items3[3] = children;

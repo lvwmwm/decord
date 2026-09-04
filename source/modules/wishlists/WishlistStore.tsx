@@ -1,16 +1,16 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 8707
+// Function ID: 8708
 // Name: get
-// Dependencies: [10684, 1205, 7376, 586, 706, 2]
+// Dependencies: [8708, 1205, 7554, 586, 706, 2]
 
-// Module 10683 (get)
+// Module 8707 (get)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import _modDef1205 from "module_1205" /* 1205 */;
-import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7376 */;
-import fromServer from "fromServer" /* 10684 */;
-import closure_5 from "fromServer" /* 10684 */;
+import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7554 */;
+import fromServer from "fromServer" /* 8708 */;
+import closure_5 from "fromServer" /* 8708 */;
 
 ({ getWishlistSkuIds: c3, wishlistHasSkuId: c4 } = fromServer);
 let closure_6 = {};

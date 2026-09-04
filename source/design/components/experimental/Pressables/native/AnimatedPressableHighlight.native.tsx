@@ -1,15 +1,15 @@
-// Module ID: 5612
-// Function ID: 5613
+// Module ID: 5564
+// Function ID: 5565
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4217, 5077, 5613, 4197, 709, 1234, 2]
+// Dependencies: [19, 17, 21, 4218, 5084, 5565, 4197, 709, 1234, 2]
 
-// Module 5612 (AnimatedPressableHighlight)
-import SPRING_CONFIG from "SPRING_CONFIG" /* 5613 */;
+// Module 5564 (AnimatedPressableHighlight)
+import SPRING_CONFIG from "SPRING_CONFIG" /* 5565 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
-import importDefaultResult from "module_4217" /* 4217 */;
+import importDefaultResult from "module_4218" /* 4218 */;
 
 require = arg1;
 let closure_6 = importDefaultResult.createAnimatedComponent(require("PressableBase").PressableHighlight);

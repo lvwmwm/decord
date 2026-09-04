@@ -1,16 +1,16 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16529
+// Function ID: 16530
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4478, 709, 16444, 4474, 1233, 3500, 5610, 4929, 14052, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 16530, 4477, 1233, 3500, 5562, 4936, 14084, 2]
 // Exports: default
 
-// Module 16443 (VibegrationsClarificationCard)
+// Module 16529 (VibegrationsClarificationCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -119,9 +119,9 @@ export default function VibegrationsClarificationCard(clarification) {
     obj1[0] = bound + 1;
     obj1[1] = length;
     obj[2] = intl.formatToPlainString(onSubmit(3500)["7bypa+"], obj1);
-    tmp14 = callback(clarification(4474).Text, obj);
+    tmp14 = callback(clarification(4477).Text, obj);
   }
-  const items4 = [tmp14, callback(clarification(4474).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
+  const items4 = [tmp14, callback(clarification(4477).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
   const options = tmp8.options;
   items4[2] = options.map((answer) => {
     closure_0 = answer;
@@ -174,7 +174,7 @@ export default function VibegrationsClarificationCard(clarification) {
       let intl2 = tmp20(1233).intl;
       obj4[2] = intl2.string(onSubmit(3500).yKdgqw);
       obj4[3] = callback1;
-      tmp19Result = tmp19(tmp20(4929).Button, obj4);
+      tmp19Result = tmp19(tmp20(4936).Button, obj4);
     }
   }
   const items5 = [tmp19Result, ];
@@ -193,7 +193,7 @@ export default function VibegrationsClarificationCard(clarification) {
     });
   };
   obj6[5] = callback2;
-  obj5[1] = callback(clarification(14052).GhostInput, obj6);
+  obj5[1] = callback(clarification(14084).GhostInput, obj6);
   items5[1] = callback(closure_5, obj5);
   obj3[1] = items5;
   items4[3] = closure_7(closure_5, obj3);

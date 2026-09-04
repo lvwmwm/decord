@@ -1,15 +1,15 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8124
+// Function ID: 8125
 // Name: items
-// Dependencies: [8579, 8573, 8580, 8574, 8581, 2]
+// Dependencies: [8125, 8114, 8126, 8115, 8127, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId, toProfileBadgeLegacyId
 
-// Module 8578 (items)
-import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
-import BadgeId from "BadgeId" /* 8574 */;
-import DEFAULT_PREMIUM_BADGE_ID from "DEFAULT_PREMIUM_BADGE_ID" /* 8579 */;
-import LEGACY_BADGE_ID_MAP from "LEGACY_BADGE_ID_MAP" /* 8580 */;
-import BalanceWidgetMode from "BalanceWidgetMode" /* 8581 */;
+// Module 8124 (items)
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
+import BadgeId from "BadgeId" /* 8115 */;
+import DEFAULT_PREMIUM_BADGE_ID from "DEFAULT_PREMIUM_BADGE_ID" /* 8125 */;
+import LEGACY_BADGE_ID_MAP from "LEGACY_BADGE_ID_MAP" /* 8126 */;
+import BalanceWidgetMode from "BalanceWidgetMode" /* 8127 */;
 import set from "set" /* 2 */;
 
 const getBadgeName = USER_PROFILE_TOOLTIP_DELAY.getBadgeName;

@@ -1,14 +1,14 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15253
+// Function ID: 15254
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4470, 4167, 7896, 673, 21, 1233, 1994, 2758, 6255, 6055, 15170, 1498, 644, 11292, 14578, 2]
+// Dependencies: [19, 4473, 4167, 7906, 673, 21, 1233, 1994, 2758, 7320, 6978, 15254, 1498, 644, 11400, 14614, 2]
 // Exports: default
 
-// Module 15169 (SettingsAccessibilityScreen)
+// Module 15253 (SettingsAccessibilityScreen)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_5 from "updateExistingSettings" /* 4167 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

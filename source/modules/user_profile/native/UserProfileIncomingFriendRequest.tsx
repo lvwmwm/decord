@@ -1,15 +1,15 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 13050
+// Function ID: 13051
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4478, 709, 8547, 8575, 5962, 12843, 4673, 5968, 4474, 1233, 1296, 1430, 12844, 4929, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 8172, 8121, 7102, 13051, 4680, 7108, 4477, 1233, 1296, 1431, 13052, 4936, 2]
 // Exports: default
 
-// Module 12842 (UserProfileIncomingFriendRequest)
+// Module 13050 (UserProfileIncomingFriendRequest)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

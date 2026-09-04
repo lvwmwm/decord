@@ -1,19 +1,19 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12321
+// Function ID: 12322
 // Name: useTimestampSearchHeaderHeight
-// Dependencies: [19, 17, 21, 9106, 4478, 709, 4441, 4474, 1233, 8376, 2]
+// Dependencies: [19, 17, 21, 10048, 4481, 709, 4444, 4477, 1233, 8523, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12189 (useTimestampSearchHeaderHeight)
+// Module 12321 (useTimestampSearchHeaderHeight)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ClockIcon from "ClockIcon" /* 4441 */;
-import Text from "Text" /* 4474 */;
-import Form from "Form" /* 8376 */;
-import map from "map" /* 9106 */;
+import ClockIcon from "ClockIcon" /* 4444 */;
+import Text from "Text" /* 4477 */;
+import Form from "Form" /* 8523 */;
+import map from "map" /* 10048 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

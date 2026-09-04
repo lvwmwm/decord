@@ -1,15 +1,15 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16160
+// Function ID: 16161
 // Name: transformParticipantToSortedVoiceState
-// Dependencies: [32, 1389, 1386, 4555, 5371, 586, 1911, 11, 1470, 5377, 5384, 2]
+// Dependencies: [32, 1389, 1386, 4558, 5379, 586, 1911, 11, 1394, 5385, 5392, 2]
 // Exports: default
 
-// Module 16074 (transformParticipantToSortedVoiceState)
+// Module 16160 (transformParticipantToSortedVoiceState)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "initializeFromUserSettings" /* 1389 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import { getComparator } from "getVoiceStatesForGuild" /* 4555 */;
-import closure_7 from "getActiveStageChannelIds" /* 5371 */;
+import { getComparator } from "getVoiceStatesForGuild" /* 4558 */;
+import closure_7 from "getActiveStageChannelIds" /* 5379 */;
 
 const require = arg1;
 function transformParticipantToSortedVoiceState(user) {
@@ -42,6 +42,6 @@ export default function useStageChannelSpeakerVoiceStates(arg0) {
       found1.reduce((arg0, id) => arg0 + store.getParticipantsVersion(id.id), 0)
     ];
     return items;
-  }, items1, _require(5384).isVersionEqual), 1)[0];
+  }, items1, _require(5392).isVersionEqual), 1)[0];
 };
 export { transformParticipantToSortedVoiceState };

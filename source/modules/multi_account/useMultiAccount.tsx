@@ -1,15 +1,15 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15875
+// Function ID: 15876
 // Name: useMultiAccountUsers
-// Dependencies: [19, 1921, 12213, 586, 706, 12217, 2]
+// Dependencies: [19, 1921, 12345, 586, 706, 12349, 2]
 // Exports: useMultiAccountUsers
 
-// Module 15789 (useMultiAccountUsers)
+// Module 15875 (useMultiAccountUsers)
 import initialize from "initialize" /* 586 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "initialize" /* 12213 */;
-import { MultiAccountTokenStatus } from "initialize" /* 12213 */;
+import closure_6 from "initialize" /* 12345 */;
+import { MultiAccountTokenStatus } from "initialize" /* 12345 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");

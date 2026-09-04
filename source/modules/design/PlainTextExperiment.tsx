@@ -1,12 +1,12 @@
-// Module ID: 14463
-// Function ID: 14464
+// Module ID: 14495
+// Function ID: 14496
 // Name: usePlainTextExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: usePlainTextExperiment
 
-// Module 14463 (usePlainTextExperiment)
+// Module 14495 (usePlainTextExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

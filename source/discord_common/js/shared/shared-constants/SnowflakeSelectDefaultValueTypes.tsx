@@ -1,9 +1,9 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8052
+// Function ID: 8053
 // Name: SnowflakeSelectDefaultValueTypes
 // Dependencies: [2]
 
-// Module 8042 (SnowflakeSelectDefaultValueTypes)
+// Module 8052 (SnowflakeSelectDefaultValueTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SnowflakeSelectDefaultValueTypes.tsx");

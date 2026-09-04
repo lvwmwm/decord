@@ -1,14 +1,14 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15821
+// Function ID: 15822
 // Name: pressable
-// Dependencies: [7292, 7896, 14668, 7355, 14672, 1233, 14665, 1305, 11292, 2]
+// Dependencies: [7470, 7906, 14749, 7533, 14753, 1233, 14746, 1305, 11400, 2]
 
-// Module 15739 (pressable)
+// Module 15821 (pressable)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7355 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14668 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7292 */;
-import createToggle from "createToggle" /* 11292 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7533 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7470 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -33,7 +33,7 @@ createToggle = {
   onPress: function onObscuredContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14672);
+      let obj = selectedTeenId(14753);
       const intl = selectedTeenId(1233).intl;
       const stringResult = intl.string(selectedTeenId(1233).t.GYpoAq);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
@@ -48,8 +48,8 @@ createToggle = {
       obj[3] = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const items = [selectedTeenId(1305).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(14665).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(14665);
+      const result = selectedTeenId(14746).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(14746);
     }
   },
   unsearchable: true

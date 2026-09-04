@@ -1,23 +1,23 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 8588
+// Function ID: 8589
 // Name: PersonalWidgetText
-// Dependencies: [32, 19, 17, 1215, 673, 21, 4478, 709, 8805, 8806, 4474, 1233, 4166, 8807, 4204, 5502, 4941, 8571, 586, 6009, 8107, 8808, 2]
+// Dependencies: [32, 19, 17, 1215, 673, 21, 4481, 709, 8589, 8590, 4477, 1233, 4166, 8591, 4205, 5542, 4948, 8185, 586, 7147, 8592, 8593, 2]
 // Exports: default
 
-// Module 8804 (PersonalWidgetText)
+// Module 8588 (PersonalWidgetText)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ManaContext from "ManaContext" /* 4204 */;
-import preloadDefault from "preload" /* 5502 */;
-import GifTagDefault from "GifTag" /* 8571 */;
-import PersonalWidgetExpandCollapseProvider from "PersonalWidgetExpandCollapseProvider" /* 8805 */;
+import ManaContext from "ManaContext" /* 4205 */;
+import preloadDefault from "preload" /* 5542 */;
+import GifTagDefault from "GifTag" /* 8185 */;
+import PersonalWidgetExpandCollapseProvider from "PersonalWidgetExpandCollapseProvider" /* 8589 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
 import { ThemeTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function PersonalWidgetText(variant) {
@@ -55,7 +55,7 @@ function PersonalWidgetShowMoreButton() {
   const intl = tmp(1233).intl;
   let t = tmp(1233).t;
   obj = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
-  t = tmp5(tmp(4474).Text, obj);
+  t = tmp5(tmp(4477).Text, obj);
   obj[4] = t;
   closure_10(closure_5, obj);
 }
@@ -178,7 +178,7 @@ function CoverSection(section) {
         obj6[0] = closure_12;
         obj6[1] = closure_13;
         obj6[2] = tmp15.absoluteFill;
-        tmp24Result = tmp24(tmp14(4941), obj6);
+        tmp24Result = tmp24(tmp14(4948), obj6);
       } else {
         tmp24Result = null;
       }
@@ -189,7 +189,7 @@ function CoverSection(section) {
     if (showGifTag) {
       const obj7 = { style: null };
       obj7[0] = tmp.gifTag;
-      tmp24Result1 = tmp24(tmp14(8571), obj7);
+      tmp24Result1 = tmp24(tmp14(8185), obj7);
     }
     items2[3] = tmp24Result1;
     obj2[1] = items2;
@@ -279,7 +279,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   obj = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   const tmp = callback3();
   const tmp5 = disableInteraction;
-  obj[1] = callback2(userId(8107).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback2(userId(8592).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -289,7 +289,7 @@ function UserProfilePersonalWidgetCardContent(style) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(8808), obj);
+    tmp4Result = tmp4(tmp5(8593), obj);
   }
   obj[3] = tmp4Result;
   obj1 = { style: tmp.sectionsContainer, children: null };
@@ -322,7 +322,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   items1[1] = tmp4Result;
   obj1[1] = items1;
   obj[4] = closure_11(closure_7, obj1);
-  return callback2(disableInteraction(6009), obj);
+  return callback2(disableInteraction(7147), obj);
 }
 ({ Pressable: c5, StyleSheet: closure_6, View: error } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

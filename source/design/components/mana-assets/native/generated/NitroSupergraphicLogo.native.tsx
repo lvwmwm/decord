@@ -1,16 +1,16 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6246
+// Function ID: 6247
 // Name: NitroSupergraphicLogo
-// Dependencies: [17, 21, 709, 4197, 6866, 2]
+// Dependencies: [17, 21, 709, 4197, 6247, 2]
 // Exports: NitroSupergraphicLogo
 
-// Module 6865 (NitroSupergraphicLogo)
+// Module 6246 (NitroSupergraphicLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6866 */;
+import metadataDefault from "metadata" /* 6247 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

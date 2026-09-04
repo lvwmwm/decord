@@ -1,14 +1,14 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6196
+// Function ID: 6197
 // Name: MushroomSpotIllustration
-// Dependencies: [21, 5502, 6816, 2]
+// Dependencies: [21, 5542, 6197, 2]
 // Exports: MushroomSpotIllustration
 
-// Module 6815 (MushroomSpotIllustration)
+// Module 6196 (MushroomSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6816 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6197 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");

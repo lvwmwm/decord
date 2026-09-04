@@ -1,12 +1,12 @@
-// Module ID: 4320
-// Function ID: 4321
+// Module ID: 4323
+// Function ID: 4324
 // Name: useNewUserDismissibleContent
-// Dependencies: [1215, 1376, 1372, 4321, 644, 11, 2]
+// Dependencies: [1215, 1376, 1372, 4324, 644, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough, useNewUserDismissibleContent
 
-// Module 4320 (useNewUserDismissibleContent)
+// Module 4323 (useNewUserDismissibleContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import useDcfNewUserCooldown from "useDcfNewUserCooldown" /* 4321 */;
+import useDcfNewUserCooldown from "useDcfNewUserCooldown" /* 4324 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "set" /* 1376 */;
 
@@ -15,8 +15,8 @@ let closure_5 = { [arg1(1372).DismissibleContent.MJ_NEW_USER_CHAT_BAR]: 0, [arg1
 const result = require("set").fileFinishedImporting("modules/dismissible_content/NewUserDismissibleContentRegistry.tsx");
 
 export const useNewUserDismissibleContent = function useNewUserDismissibleContent(arr) {
-  _require = _require(4321).useDcfNewUserCooldown();
-  let obj = _require(4321);
+  _require = _require(4324).useDcfNewUserCooldown();
+  let obj = _require(4324);
   const items = [closure_3, closure_4];
   const stateFromStoresObject = _require(644).useStateFromStoresObject(items, () => {
     obj = { userId: id.getId(), newUserMinAgeRequiredOverridden: obj.newUserMinAgeRequiredOverridden };

@@ -1,17 +1,17 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 15918
+// Function ID: 15919
 // Name: getRedirectStepForErrorKey
-// Dependencies: [15785, 673, 688, 7742, 15783, 15792, 2]
+// Dependencies: [15871, 673, 688, 6897, 15869, 15878, 2]
 // Exports: default
 
-// Module 15832 (getRedirectStepForErrorKey)
+// Module 15918 (getRedirectStepForErrorKey)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import keys from "keys" /* 688 */;
-import getErrorDefault from "getError" /* 7742 */;
-import headerTitle from "headerTitle" /* 15783 */;
-import trackRegTransition from "trackRegTransition" /* 15792 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15785 */;
+import getErrorDefault from "getError" /* 6897 */;
+import headerTitle from "headerTitle" /* 15869 */;
+import trackRegTransition from "trackRegTransition" /* 15878 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15871 */;
 
 function getRedirectStepForErrorKey(arg0) {
   if ("email" !== arg0) {

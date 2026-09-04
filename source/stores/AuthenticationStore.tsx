@@ -1,7 +1,7 @@
 // Module ID: 1215
 // Function ID: 1216
 // Name: fetchFingerprint
-// Dependencies: [1216, 1217, 673, 1218, 3, 704, 592, 1219, 695, 14072, 706, 14073, 7733, 4377, 510, 14074, 1205, 12215, 586, 11306, 14075, 1366, 1954, 2]
+// Dependencies: [1216, 1217, 673, 1218, 3, 704, 592, 1219, 695, 14104, 706, 14105, 6888, 4380, 510, 14106, 1205, 12347, 586, 11414, 14107, 1366, 1954, 2]
 
 // Module 1215 (fetchFingerprint)
 import timestampDefault from "timestamp" /* 3 */;
@@ -14,10 +14,10 @@ import _modDef1205 from "module_1205" /* 1205 */;
 import transitionTo from "transitionTo" /* 1219 */;
 import getToken from "getToken" /* 1366 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import prototypeDefault from "prototype" /* 4377 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7733 */;
-import isStaffDefault from "isStaff" /* 12215 */;
-import fetchExperiments from "fetchExperiments" /* 14072 */;
+import prototypeDefault from "prototype" /* 4380 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6888 */;
+import isStaffDefault from "isStaff" /* 12347 */;
+import fetchExperiments from "fetchExperiments" /* 14104 */;
 import closure_6 from "initialize" /* 1216 */;
 import closure_7 from "clearAll" /* 1217 */;
 import ME from "ME" /* 673 */;
@@ -73,7 +73,7 @@ function fetchFingerprint(arg0) {
           if (null != c23) {
             obj["X-Installation-ID"] = c23;
           }
-          tmpResult = tmp(14072);
+          tmpResult = tmp(14104);
           obj = { withGuildExperiments: null, headers: null, context: null };
           obj[0] = true;
           obj[1] = obj;
@@ -105,7 +105,7 @@ function fetchFingerprint(arg0) {
             callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
             c33 = null;
             const obj5 = callback2(706);
-            callback(14073).onExperimentsLoaded();
+            callback(14105).onExperimentsLoaded();
           }, () => {
             c33 = null;
             callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -249,13 +249,13 @@ prototype["initialize"] = function initialize() {
     }
     if (tmp7) {
       function fireApex() {
-        const installationExperiments = callback(11306).fetchInstallationExperiments(null);
+        const installationExperiments = callback(11414).fetchInstallationExperiments(null);
       }
       promise.then(fireApex, fireApex);
     }
     promise = fetchFingerprint();
   }
-  this.addChangeListener(() => callback(14075).setClientState(closure_17));
+  this.addChangeListener(() => callback(14107).setClientState(closure_17));
 };
 prototype["getLoginStatus"] = function getLoginStatus() {
   return NONE;
@@ -358,7 +358,7 @@ const authenticationStore = new AuthenticationStore(importDefaultResult, {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(14074);
+        let tmp6Result = tmp6(14106);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(592).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -722,7 +722,7 @@ const authenticationStore = new AuthenticationStore(importDefaultResult, {
       callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       c33 = null;
       const obj5 = callback2(706);
-      callback(14073).onExperimentsLoaded();
+      callback(14105).onExperimentsLoaded();
     }, () => {
       c33 = null;
       callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -799,7 +799,7 @@ let obj = {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(14074);
+        let tmp6Result = tmp6(14106);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(592).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -1163,7 +1163,7 @@ let obj = {
       callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       c33 = null;
       const obj5 = callback2(706);
-      callback(14073).onExperimentsLoaded();
+      callback(14105).onExperimentsLoaded();
     }, () => {
       c33 = null;
       callback2(706).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });

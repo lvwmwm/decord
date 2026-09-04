@@ -1,22 +1,22 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9571
+// Function ID: 9572
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 8515, 4506, 673, 4380, 21, 4478, 3, 1234, 9629, 511, 8612, 9630, 9631, 1624, 9633, 9634, 695, 1228, 644, 4858, 1233, 527, 9635, 1485, 9472, 9516, 8595, 4722, 9470, 2]
+// Dependencies: [5, 32, 19, 17, 8785, 4509, 673, 4383, 21, 4481, 3, 1234, 9572, 511, 8228, 9573, 9574, 1624, 9576, 9577, 695, 1228, 644, 4865, 1233, 527, 9578, 1485, 9446, 9479, 8202, 4729, 9444, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 9628 (getSafeArea)
+// Module 9571 (getSafeArea)
 import timestampDefault from "timestamp" /* 3 */;
-import usePreviousDefault from "usePrevious" /* 8595 */;
+import usePreviousDefault from "usePrevious" /* 8202 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 8515 */;
-import items3 from "items3" /* 4506 */;
+import closure_8 from "initialize" /* 8785 */;
+import items3 from "items3" /* 4509 */;
 import ME from "ME" /* 673 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 const require = arg1;

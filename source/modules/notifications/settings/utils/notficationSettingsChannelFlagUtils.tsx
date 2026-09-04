@@ -1,19 +1,19 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 10078
+// Function ID: 10079
 // Name: useChannelPresetSettings
-// Dependencies: [32, 1386, 4702, 673, 4703, 682, 644, 4705, 10256, 5496, 10259, 5491, 2]
+// Dependencies: [32, 1386, 4709, 673, 4710, 682, 644, 4712, 10076, 7059, 10079, 7054, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10258 (useChannelPresetSettings)
-import Presets from "Presets" /* 4705 */;
-import UserNotificationSettings2 from "UserNotificationSettings" /* 5491 */;
-import _modDef5496 from "module_5496" /* 5496 */;
-import resetGuildUnreadFlags from "resetGuildUnreadFlags" /* 10259 */;
+// Module 10078 (useChannelPresetSettings)
+import Presets from "Presets" /* 4712 */;
+import UserNotificationSettings2 from "UserNotificationSettings" /* 7054 */;
+import _modDef7059 from "module_7059" /* 7059 */;
+import resetGuildUnreadFlags from "resetGuildUnreadFlags" /* 10079 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4709 */;
 import { UserNotificationSettings } from "ME" /* 673 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
 import { ChannelNotificationSettingsFlags as closure_8 } from "MAX_FAVORITES" /* 682 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ export const useChannelPresetSettings = function useChannelPresetSettings(channe
   const stateFromStores1 = _require(644).useStateFromStores(items1, () => closure_1_5.resolvedMessageNotifications(closure_0));
   obj = { unread: stateFromStores, notification: stateFromStores1, preset: null };
   const obj2 = _require(644);
-  obj[2] = _require(4705).presetFromSettings(stateFromStores, stateFromStores1);
+  obj[2] = _require(4712).presetFromSettings(stateFromStores, stateFromStores1);
   return obj;
 };
 export const useChannelPresetInheritance = function useChannelPresetInheritance(channel) {
@@ -63,36 +63,36 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
 export const updateChannelPreset = function updateChannelPreset(guild_id, id, arg2) {
   const channelIdFlags = store.getChannelIdFlags(guild_id, id);
   if (arg2 === Presets.Presets.ALL_MESSAGES) {
-    const obj4 = _modDef5496;
+    const obj4 = _modDef7059;
     let obj = { message_notifications: null, flags: null };
     obj[0] = UserNotificationSettings.ALL_MESSAGES;
-    let tmp2Result = tmp2(10259);
+    let tmp2Result = tmp2(10079);
     obj[1] = tmp2Result.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES);
-    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5491).NotificationLabels.PresetAll);
-  } else if (arg2 === tmp2(4705).Presets.MENTIONS) {
-    obj = _modDef5496;
+    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj, tmp2(7054).NotificationLabels.PresetAll);
+  } else if (arg2 === tmp2(4712).Presets.MENTIONS) {
+    obj = _modDef7059;
     obj = { message_notifications: null, flags: null };
     obj[0] = UserNotificationSettings.ONLY_MENTIONS;
-    tmp2Result = tmp2(10259);
+    tmp2Result = tmp2(10079);
     obj[1] = tmp2Result.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5491).NotificationLabels.PresetMentions);
-  } else if (arg2 === tmp2(4705).Presets.NOTHING) {
-    const obj7 = _modDef5496;
+    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj, tmp2(7054).NotificationLabels.PresetMentions);
+  } else if (arg2 === tmp2(4712).Presets.NOTHING) {
+    const obj7 = _modDef7059;
     obj1 = { message_notifications: null, flags: null };
     obj1[0] = UserNotificationSettings.NO_MESSAGES;
-    obj1[1] = tmp2(10259).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj1, tmp2(5491).NotificationLabels.PresetNothing);
-    const tmp2Result1 = tmp2(10259);
+    obj1[1] = tmp2(10079).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
+    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj1, tmp2(7054).NotificationLabels.PresetNothing);
+    const tmp2Result1 = tmp2(10079);
   }
 };
 export const updateChannelToGuildDefault = function updateChannelToGuildDefault(guild_id, id) {
-  let obj = _modDef5496;
+  let obj = _modDef7059;
   obj = { message_notifications: UserNotificationSettings.NULL, flags: resetGuildUnreadFlags.resetChannelUnreadFlags(store.getChannelIdFlags(guild_id, id)) };
   const result = obj.updateChannelOverrideSettings(guild_id, id, obj, UserNotificationSettings2.NotificationLabels.PresetDefault);
 };
 export const updateChannelUnreadSetting = function updateChannelUnreadSetting(guild_id, id, ALL_MESSAGES) {
   const channelIdFlags = store.getChannelIdFlags(guild_id, id);
-  let obj = _modDef5496;
+  let obj = _modDef7059;
   if (ALL_MESSAGES === UnreadSetting.ALL_MESSAGES) {
     let UNREADS_ONLY_MENTIONS = constants.UNREADS_ALL_MESSAGES;
   } else {
@@ -103,7 +103,7 @@ export const updateChannelUnreadSetting = function updateChannelUnreadSetting(gu
   const result = obj.updateChannelOverrideSettings(guild_id, id, obj, NotificationLabel.unreads(ALL_MESSAGES));
 };
 export const updateChannelNotificationSetting = function updateChannelNotificationSetting(guildId, id, message_notifications) {
-  let obj = _modDef5496;
+  let obj = _modDef7059;
   obj = { message_notifications };
   const NotificationLabel = UserNotificationSettings2.NotificationLabel;
   const result = obj.updateChannelOverrideSettings(guildId, id, obj, NotificationLabel.notifications(message_notifications));

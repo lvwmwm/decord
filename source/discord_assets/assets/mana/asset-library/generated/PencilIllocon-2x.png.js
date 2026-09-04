@@ -1,9 +1,9 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6289
+// Function ID: 6290
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6908 (metadata)
+// Module 6289 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PencilIllocon-2x.png.js");

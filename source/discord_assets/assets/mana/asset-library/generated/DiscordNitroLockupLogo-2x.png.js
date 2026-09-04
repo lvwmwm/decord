@@ -1,9 +1,9 @@
-// Module ID: 6476
-// Function ID: 6477
+// Module ID: 5857
+// Function ID: 5858
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6476 (metadata)
+// Module 5857 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordNitroLockupLogo-2x.png.js");

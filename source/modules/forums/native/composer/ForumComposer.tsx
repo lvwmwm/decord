@@ -1,28 +1,28 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10183
+// Function ID: 10184
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4470, 1301, 4855, 1991, 4120, 1980, 7442, 4854, 1921, 673, 1393, 1383, 1337, 1232, 502, 21, 4478, 709, 5962, 586, 1362, 4342, 8172, 4674, 7639, 7437, 6131, 4322, 5603, 4217, 7532, 4489, 7211, 12, 7652, 8771, 10358, 10359, 4859, 1233, 10360, 10362, 1234, 10363, 10364, 10367, 1372, 10368, 2008, 10369, 10370, 8376, 1296, 6130, 1625, 1496, 7726, 8915, 10373, 4474, 10374, 10439, 10643, 10644, 10645, 10647, 10649, 6247, 11108, 5041, 10653, 7522, 4445, 11110, 8241, 4929, 5025, 2]
+// Dependencies: [5, 32, 19, 17, 4473, 1301, 4862, 1991, 4120, 1980, 7620, 4861, 1921, 673, 1393, 1383, 1337, 1232, 502, 21, 4481, 709, 7102, 586, 1362, 4345, 9233, 4681, 7816, 7615, 7215, 4325, 6921, 4218, 7709, 4492, 7390, 12, 7829, 8555, 10184, 10185, 4866, 1233, 10186, 10188, 1234, 10189, 10190, 10193, 1372, 10194, 2008, 10195, 10196, 8523, 1296, 7214, 1625, 1496, 6881, 8110, 10199, 4477, 10200, 10350, 10554, 10555, 8792, 10556, 10560, 7315, 11178, 5048, 10564, 7699, 4448, 11180, 8687, 4936, 5032, 2]
 // Exports: default
 
-// Module 10357 (Tags)
+// Module 10183 (Tags)
 import ThemesDefault from "Themes" /* 709 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4342 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5603 */;
-import TagIcon from "TagIcon" /* 10645 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4345 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6921 */;
+import TagIcon from "TagIcon" /* 8792 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_11 from "handleThemeChange" /* 1301 */;
-import closure_12 from "handleChanged" /* 4855 */;
-import { DraftType } from "handleChanged" /* 4855 */;
+import closure_12 from "handleChanged" /* 4862 */;
+import { DraftType } from "handleChanged" /* 4862 */;
 import closure_14 from "trackCommunicationDisabled" /* 1991 */;
 import closure_15 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_16 from "handleConnectionOpen" /* 1980 */;
-import closure_17 from "setCooldown" /* 7442 */;
-import { SlowmodeType } from "setCooldown" /* 7442 */;
-import closure_19 from "map" /* 4854 */;
+import closure_17 from "setCooldown" /* 7620 */;
+import { SlowmodeType } from "setCooldown" /* 7620 */;
+import closure_19 from "map" /* 4861 */;
 import closure_20 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import { ChannelFlags } from "set" /* 1393 */;
@@ -31,7 +31,7 @@ import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
 import { OpenThreadAnalyticsLocations as closure_27 } from "AbortCodes" /* 1232 */;
 import sum from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function Tags(tags) {
@@ -112,7 +112,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(10649), obj);
+    isMediaChannelResult = callback(tmp5(10560), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -125,7 +125,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(10645).TagIcon;
+      obj2[2] = tmp2(8792).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = closure_1_1(closure_1_2[76]);
@@ -151,18 +151,18 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(closure_1_2[52])(closure_1_2[77], closure_1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(6247).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(7315).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(10362).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(10188).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1233).intl;
       obj3[0] = intl3.string(tmp2(1233).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(8241).ReactionIcon;
+      obj3[2] = tmp2(8687).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(6247).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(7315).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
@@ -184,13 +184,13 @@ function ActionBar(channel) {
     obj5[2] = submitting;
     const obj6 = { size: "sm", color: null };
     obj6[1] = tmp5(709).colors.WHITE;
-    obj5[3] = callback(tmp2(5025).ChatIcon, obj6);
+    obj5[3] = callback(tmp2(5032).ChatIcon, obj6);
     obj5[4] = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4[1] = callback(tmp2(4929).Button, obj5);
+    obj4[1] = callback(tmp2(4936).Button, obj5);
     items4[3] = callback(tmp13, obj4);
     obj1[1] = items4;
     items3[1] = tmp12(tmp13, obj1);
@@ -204,9 +204,9 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(11108).KeyboardIcon;
+      let ImageIcon = tmp2(11178).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(5041).ImageIcon;
+      ImageIcon = tmp2(5048).ImageIcon;
     }
     obj7[2] = ImageIcon;
     obj7[3] = function onPress() {
@@ -219,7 +219,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(closure_1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(6247).HeaderActionButton, obj7);
+    callback(tmp2(7315).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }

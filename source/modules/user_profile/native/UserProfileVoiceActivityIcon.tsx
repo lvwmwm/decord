@@ -1,12 +1,12 @@
-// Module ID: 9276
-// Function ID: 9277
+// Module ID: 10825
+// Function ID: 10826
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [19, 4120, 502, 21, 586, 7634, 5016, 5050, 5051, 5053, 5052, 5055, 2]
+// Dependencies: [19, 4120, 502, 21, 586, 7811, 5023, 5057, 5058, 5060, 5059, 5062, 2]
 // Exports: default
 
-// Module 9276 (UserProfileVoiceActivityIcon)
+// Module 10825 (UserProfileVoiceActivityIcon)
 import noopAll from "noop" /* 19 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5016 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5023 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import { Permissions } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -38,23 +38,23 @@ export default function UserProfileVoiceActivityIcon(channel) {
         if (tmp6) {
           obj = {};
           const merged1 = Object.assign(merged);
-          let tmp8Result = jsx(tmp2(5050).StageLockIcon, {});
+          let tmp8Result = jsx(tmp2(5057).StageLockIcon, {});
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
         obj = {};
         const merged2 = Object.assign(merged);
-        tmp8Result = jsx(tmp2(5051).StageIcon, {});
+        tmp8Result = jsx(tmp2(5058).StageIcon, {});
       } else if (channel.isNSFW()) {
         obj1 = {};
         const merged3 = Object.assign(merged);
-        tmp8Result = tmp8(tmp2(5053).VoiceWarningIcon, obj1);
+        tmp8Result = tmp8(tmp2(5060).VoiceWarningIcon, obj1);
       } else {
         if (tmp6) {
-          let VoiceNormalIcon = tmp2(5052).VoiceLockIcon;
+          let VoiceNormalIcon = tmp2(5059).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp2(5055).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(5062).VoiceNormalIcon;
         }
         const obj2 = {};
         const merged4 = Object.assign(merged);
@@ -63,5 +63,5 @@ export default function UserProfileVoiceActivityIcon(channel) {
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(channel(7634).PhoneCallIcon, {});
+  return jsx(channel(7811).PhoneCallIcon, {});
 };

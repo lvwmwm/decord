@@ -1,9 +1,9 @@
-// Module ID: 9735
-// Function ID: 9736
+// Module ID: 9677
+// Function ID: 9678
 // Name: GuildEmbeddedApplicationUnsupportedReason
 // Dependencies: [2]
 
-// Module 9735 (GuildEmbeddedApplicationUnsupportedReason)
+// Module 9677 (GuildEmbeddedApplicationUnsupportedReason)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildEmbeddedApplicationUnsupportedReason.tsx");

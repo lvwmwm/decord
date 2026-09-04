@@ -1,23 +1,23 @@
-// Module ID: 16073
-// Function ID: 16074
-// Dependencies: [19, 17, 7282, 4120, 4493, 4702, 4555, 1391, 673, 10227, 21, 1233, 4478, 709, 586, 5370, 16074, 5383, 5377, 5011, 7658, 1890, 8683, 10876, 4674, 9541, 15952, 16063, 15957, 2]
+// Module ID: 16159
+// Function ID: 16160
+// Dependencies: [19, 17, 7460, 4120, 4496, 4709, 4558, 1391, 673, 10047, 21, 1233, 4481, 709, 586, 5378, 16160, 5391, 5385, 5018, 5524, 1890, 8323, 10844, 4681, 9400, 16038, 16149, 16043, 2]
 
-// Module 16073
+// Module 16159
 import ThemesDefault from "Themes" /* 709 */;
-import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import transformParticipantToSortedVoiceStateDefault from "transformParticipantToSortedVoiceState" /* 16074 */;
+import computeChannelNameDefault from "computeChannelName" /* 4681 */;
+import transformParticipantToSortedVoiceStateDefault from "transformParticipantToSortedVoiceState" /* 16160 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 7282 */;
+import closure_6 from "handleConnectionOpen" /* 7460 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4702 */;
-import closure_10 from "getVoiceStatesForGuild" /* 4555 */;
-import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4555 */;
+import closure_8 from "generateOldThreadCutoff" /* 4496 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
+import closure_10 from "getVoiceStatesForGuild" /* 4558 */;
+import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4558 */;
 import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -43,8 +43,8 @@ const memoResult = importAllResult.memo((channel) => {
   if (arr3 == null) {
     arr3 = NO_VOICE_STATES;
   }
-  let tmp2Result = tmp2(5383);
-  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(5377).StageChannelParticipantNamedIndex.AUDIENCE);
+  let tmp2Result = tmp2(5391);
+  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(5385).StageChannelParticipantNamedIndex.AUDIENCE);
   const sum = stageParticipantsCount + arr3.length;
   const items2 = [channel];
   const items3 = [channel.id];
@@ -65,12 +65,12 @@ const memoResult = importAllResult.memo((channel) => {
     const result = channel(closure_1_3[23]).openChannelLongPressActionSheet(channel.id);
   }, items3);
   const tmp10 = computeChannelNameDefault(channel, false);
-  tmp2Result = tmp2(9541);
+  tmp2Result = tmp2(9400);
   const isConnectedToVoiceChannel = tmp2Result.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     const topic = stageInstance.topic;
   }
-  let tmp5Result = tmp5(15952);
+  let tmp5Result = tmp5(16038);
   const intl = tmp2(1233).intl;
   if (null != channel.userLimit) {
     if (channel.userLimit > 0) {
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj2[0] = channel;
     obj2[1] = selected;
     obj2[2] = collapsed;
-    tmp5Result = tmp5(16063);
+    tmp5Result = tmp5(16149);
     if (!hasMedia) {
       let tmp20 = channel.userLimit > 0;
       if (tmp20) {
@@ -122,7 +122,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj4[1] = collapsed;
       obj4[2] = arr3;
       obj4[3] = stageParticipantsCount;
-      obj3[1] = tmp12(tmp5(15957), obj4);
+      obj3[1] = tmp12(tmp5(16043), obj4);
       tmp12Result = tmp12(View, obj3);
     }
     obj.children = tmp12Result;

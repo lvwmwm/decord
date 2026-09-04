@@ -1,21 +1,21 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15633
+// Function ID: 15634
 // Name: showAgeVerificationTestModal
-// Dependencies: [5, 19, 17, 21, 4478, 709, 8707, 8701, 4194, 8703, 1627, 6001, 5608, 7743, 5615, 2]
+// Dependencies: [5, 19, 17, 21, 4481, 709, 8347, 8341, 4194, 8343, 1627, 5642, 5560, 6898, 5567, 2]
 // Exports: default
 
-// Module 15551 (showAgeVerificationTestModal)
+// Module 15633 (showAgeVerificationTestModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import TableRowArrow from "TableRowArrow" /* 5615 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import KeyIcon from "KeyIcon" /* 7743 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import TableRowArrow from "TableRowArrow" /* 5567 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import KeyIcon from "KeyIcon" /* 6898 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function showAgeVerificationTestModal() {
@@ -53,10 +53,10 @@ function _showAgeVerificationTestModal() {
       obj2[4] = function onComplete() {
         tmp3(tmp15[8]).open({ content: "[On Complete] Successfully age verified", key: "age-verification-test-success" });
       };
-      obj2[5] = lib(8703).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
-      callback(8701).showAgeVerification(obj2);
+      obj2[5] = lib(8343).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS;
+      callback(8341).showAgeVerification(obj2);
       c3 = 0;
-      const obj7 = callback(8701);
+      const obj7 = callback(8341);
     }
     c3 = 0;
     return arg1;
@@ -93,8 +93,8 @@ export default function DevToolsAgeVerificationScreen() {
   items1[1] = callback2(TableRowInner.TableRow, {
     label: "Launch Age Verification Modal",
     onPress() {
-      let obj = callback2(8701);
-      obj = { entryPoint: callback(8703).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
+      let obj = callback2(8341);
+      obj = { entryPoint: callback(8343).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
       return obj.showAgeVerificationGetStartedModal(obj);
     },
     icon: callback2(KeyIcon.KeyIcon, {}),

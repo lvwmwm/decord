@@ -1,14 +1,14 @@
 // Module ID: 4120
 // Function ID: 4121
 // Name: getUncachedChannelPermissions
-// Dependencies: [1983, 4121, 1391, 4122, 1390, 1429, 1934, 1386, 1991, 1908, 1921, 673, 4124, 4125, 12, 4128, 1425, 586, 503, 4129, 706, 2]
+// Dependencies: [1983, 4121, 1391, 4122, 1390, 1430, 1934, 1386, 1991, 1908, 1921, 673, 4124, 4125, 12, 4128, 1426, 586, 503, 4129, 706, 2]
 
 // Module 4120 (getUncachedChannelPermissions)
 import applyDefault from "apply" /* 12 */;
 import fromStringAll from "fromString" /* 503 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
 import doesThreadMembersActionAffectMe from "doesThreadMembersActionAffectMe" /* 4128 */;
 import hasDefault from "has" /* 4129 */;
@@ -17,7 +17,7 @@ import closure_5 from "initialize" /* 4121 */;
 import closure_6 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 import closure_7 from "storeThread" /* 4122 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import closure_12 from "createdAt" /* 1934 */;
 import closure_13 from "ensureGuildLoaded" /* 1386 */;
 import closure_14 from "trackCommunicationDisabled" /* 1991 */;

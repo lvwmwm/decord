@@ -1,18 +1,18 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16106
+// Function ID: 16107
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5371, 1391, 4500, 1386, 4120, 4555, 16021, 1392, 502, 16022, 586, 9648, 16023, 5383, 5377, 2]
+// Dependencies: [19, 5379, 1391, 4503, 1386, 4120, 4558, 16107, 1392, 502, 16108, 586, 9591, 16109, 5391, 5385, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 16020 (useGuildHasLiveChannelNotice)
+// Module 16106 (useGuildHasLiveChannelNotice)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getActiveStageChannelIds" /* 5371 */;
+import closure_4 from "getActiveStageChannelIds" /* 5379 */;
 import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_6 from "reset" /* 4500 */;
+import closure_6 from "reset" /* 4503 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "getVoiceStatesForGuild" /* 4555 */;
-import closure_10 from "initialize" /* 16021 */;
+import closure_9 from "getVoiceStatesForGuild" /* 4558 */;
+import closure_10 from "initialize" /* 16107 */;
 import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import { Permissions } from "sum" /* 502 */;
 

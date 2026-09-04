@@ -1,10 +1,10 @@
-// Module ID: 13130
-// Function ID: 13131
+// Module ID: 13162
+// Function ID: 13163
 // Name: getRemoteJoinFooterLabel
 // Dependencies: [673, 1233, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 13130 (getRemoteJoinFooterLabel)
+// Module 13162 (getRemoteJoinFooterLabel)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;

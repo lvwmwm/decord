@@ -1,12 +1,12 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9519
+// Function ID: 9520
 // Name: isWatchTogetherApplication
-// Dependencies: [4506, 2]
+// Dependencies: [4509, 2]
 // Exports: default
 
-// Module 9575 (isWatchTogetherApplication)
+// Module 9519 (isWatchTogetherApplication)
 import set from "set" /* 2 */;
-import items3 from "items3" /* 4506 */;
+import items3 from "items3" /* 4509 */;
 
 ({ WATCH_YOUTUBE_DEV_APP_ID: c0, WATCH_YOUTUBE_PROD_APP_ID: closure_1, WATCH_YOUTUBE_QA_APP_ID: obj1 } = items3);
 const result = set.fileFinishedImporting("modules/activities/utils/isWatchTogetherApplication.tsx");

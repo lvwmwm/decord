@@ -1,17 +1,17 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15407
+// Function ID: 15408
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 673, 12210, 21, 4478, 709, 12211, 695, 5610, 10264, 4474, 1233, 4929, 2]
+// Dependencies: [19, 17, 673, 12342, 21, 4481, 709, 12343, 695, 5562, 8989, 4477, 1233, 4936, 2]
 // Exports: default
 
-// Module 15325 (NotificationPermissionSettingsHeader)
+// Module 15407 (NotificationPermissionSettingsHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
-import EventActionType from "EventActionType" /* 12210 */;
+import EventActionType from "EventActionType" /* 12342 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ AnalyticEvents: c5, NOOP: closure_6 } = ME);
@@ -30,7 +30,7 @@ const result = require("set").fileFinishedImporting("modules/user_settings/notif
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = callback3();
-  let obj = canSeePushNotificationNudge(12211);
+  let obj = canSeePushNotificationNudge(12343);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = React.useEffect(() => {
@@ -53,28 +53,28 @@ export default function NotificationPermissionSettingsHeader() {
     obj2[0] = tmp.iconCircle;
     const obj3 = { size: "md", color: null };
     obj3[1] = ThemesDefault.colors.ICON_STRONG;
-    obj2[1] = callback(tmp2(10264).BellSlashIcon, obj3);
+    obj2[1] = callback(tmp2(8989).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
     const obj4 = { variant: "heading-lg/bold", color: "text-default", children: null };
     const intl = tmp2(1233).intl;
     obj4[2] = intl.string(tmp2(1233).t.MUwOvc);
-    items1[1] = callback(tmp2(4474).Text, obj4);
+    items1[1] = callback(tmp2(4477).Text, obj4);
     const obj5 = { variant: "text-sm/medium", style: null, color: "text-muted", children: null };
     obj5[1] = tmp.body;
     const intl2 = tmp2(1233).intl;
     obj5[3] = intl2.string(tmp2(1233).t.G4uKoe);
-    items1[2] = callback(tmp2(4474).Text, obj5);
+    items1[2] = callback(tmp2(4477).Text, obj5);
     const obj6 = { style: null, children: null };
     obj6[0] = { alignSelf: "stretch" };
     const obj7 = { variant: "primary", text: null, onPress: null };
     const intl3 = tmp2(1233).intl;
     obj7[1] = intl3.string(tmp2(1233).t["5xWOXv"]);
     obj7[2] = tmp6;
-    obj6[1] = callback(tmp2(4929).Button, obj7);
+    obj6[1] = callback(tmp2(4936).Button, obj7);
     items1[3] = callback(View, obj6);
     obj1[1] = items1;
     obj[2] = callback2(View, obj1);
-    obj[1] = callback(tmp2(5610).Card, obj);
+    obj[1] = callback(tmp2(5562).Card, obj);
     tmp7 = callback(View, obj);
   }
   return tmp7;

@@ -1,15 +1,15 @@
-// Module ID: 9146
-// Function ID: 9147
+// Module ID: 10209
+// Function ID: 10210
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5410, 1386, 1980, 673, 1924, 1337, 9124, 9125, 4701, 4138, 2]
+// Dependencies: [19, 5419, 1386, 1980, 673, 1924, 1337, 10210, 10211, 4708, 4138, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9146 (trackOnEmojiPickerOpened)
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9124 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 9125 */;
+// Module 10209 (trackOnEmojiPickerOpened)
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 10210 */;
+import useEmojiHotrail from "useEmojiHotrail" /* 10211 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5410 */;
+import closure_4 from "getEmojiToGroupId" /* 5419 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
 import { AnalyticEvents } from "ME" /* 673 */;
@@ -122,8 +122,8 @@ function trackOnEmojiPickerOpened(arg0) {
 const result = require("set").fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 
 export default trackOnEmojiPickerOpened;
-export const useTrackOnEmojiPickerOpenedForReactions = function useTrackOnEmojiPickerOpenedForReactions(stateFromStores) {
-  closure_0 = React.useRef(stateFromStores);
+export const useTrackOnEmojiPickerOpenedForReactions = function useTrackOnEmojiPickerOpenedForReactions(first) {
+  closure_0 = React.useRef(first);
   const effect = React.useEffect(() => {
     if (ref.current.intention === closure_1_8.REACTION) {
       closure_1_10(tmp.current);

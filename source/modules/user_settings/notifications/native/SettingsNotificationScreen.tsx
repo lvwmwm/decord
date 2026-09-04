@@ -1,21 +1,21 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15403
+// Function ID: 15404
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 15322, 7896, 21, 4478, 709, 8016, 12211, 15323, 15324, 4474, 1233, 5610, 7720, 7349, 11292, 15325, 15326, 14578, 2]
+// Dependencies: [19, 17, 15404, 7906, 21, 4481, 709, 8026, 12343, 15405, 15406, 4477, 1233, 5562, 6550, 7527, 11400, 15407, 15408, 14614, 2]
 
-// Module 15321 (SystemNotificationsSubLabel)
+// Module 15403 (SystemNotificationsSubLabel)
 import ThemesDefault from "Themes" /* 709 */;
-import apexExperiment from "apexExperiment" /* 8016 */;
-import _requestPushNotificationPermission from "_requestPushNotificationPermission" /* 12211 */;
-import _modDef14578 from "module_14578" /* 14578 */;
-import apexExperimentDefault from "apexExperiment" /* 15323 */;
-import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15324 */;
+import apexExperiment from "apexExperiment" /* 8026 */;
+import _requestPushNotificationPermission from "_requestPushNotificationPermission" /* 12343 */;
+import _modDef14614 from "module_14614" /* 14614 */;
+import apexExperimentDefault from "apexExperiment" /* 15405 */;
+import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15406 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore" /* 15322 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore" /* 15404 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function SystemNotificationsSubLabel() {
@@ -36,7 +36,7 @@ function SystemNotificationsSubLabel() {
     obj[0] = str;
     const intl = tmp2(1233).intl;
     obj[2] = intl.string(tmp2(1233).t["/TZX1J"]);
-    result = callback(tmp2(4474).Text, obj);
+    result = callback(tmp2(4477).Text, obj);
     const tmp10 = callback;
   }
   const children = [result, ];
@@ -51,17 +51,17 @@ function SystemNotificationsSubLabel() {
     obj2[0] = tmp.cardContent;
     obj3 = { color: null };
     obj3[0] = ThemesDefault.unsafe_rawColors.YELLOW_300;
-    const items1 = [callback(tmp2(7720).CircleErrorIcon, obj3), ];
+    const items1 = [callback(tmp2(6550).CircleErrorIcon, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.text;
     const obj5 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1233).intl;
     obj5[2] = intl2.string(tmp2(1233).t.TAuasM);
-    obj4[1] = callback(tmp2(4474).Text, obj5);
+    obj4[1] = callback(tmp2(4477).Text, obj5);
     items1[1] = callback(View, obj4);
     obj2[1] = items1;
     obj1[2] = tmp8(View, obj2);
-    obj[1] = callback(tmp2(5610).Card, obj1);
+    obj[1] = callback(tmp2(5562).Card, obj1);
     showReactivationPrompt = callback(View, obj);
   }
   children[1] = showReactivationPrompt;
@@ -76,8 +76,8 @@ obj[1] = { flexDirection: "row", alignItems: "center", gap: 8 };
 obj[2] = { flex: 1 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7349).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
-  let obj = isFamilyCenterV3Enabled(7349);
+  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7527).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
+  let obj = isFamilyCenterV3Enabled(7527);
   let tmp2 = !apexExperimentDefault.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(() => {
   const effect1 = importAllResult.useEffect(() => {
     const result = isFamilyCenterV3Enabled(closure_1_2[18]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(_modDef14578, { node });
+  return callback(_modDef14614, { node });
 });
 let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 

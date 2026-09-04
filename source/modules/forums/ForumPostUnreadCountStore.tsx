@@ -1,15 +1,15 @@
-// Module ID: 7640
-// Function ID: 7641
+// Module ID: 7817
+// Function ID: 7818
 // Name: set
-// Dependencies: [5458, 1386, 4493, 586, 38, 706, 2]
+// Dependencies: [5467, 1386, 4496, 586, 38, 706, 2]
 
-// Module 7640 (set)
+// Module 7817 (set)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "handleThreadCreateOrUpdate" /* 5458 */;
+import closure_2 from "handleThreadCreateOrUpdate" /* 5467 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "generateOldThreadCutoff" /* 4493 */;
+import closure_4 from "generateOldThreadCutoff" /* 4496 */;
 import set from "set" /* 2 */;
 
 let closure_5 = {};

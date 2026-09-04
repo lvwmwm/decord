@@ -1,9 +1,9 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 8782
+// Function ID: 8783
 // Name: redeemError
 // Dependencies: [586, 706, 2]
 
-// Module 11060 (redeemError)
+// Module 8782 (redeemError)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

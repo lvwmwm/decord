@@ -1,15 +1,15 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 8575
+// Function ID: 8576
 // Name: useUserIdsForLinkStatus
-// Dependencies: [19, 1921, 7292, 7293, 644, 8792, 8793, 7348, 2]
+// Dependencies: [19, 1921, 7470, 7471, 644, 8576, 8577, 7526, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUserIds, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserIdsForLinkStatus, useUserQRLinkUrl, useUsersForLinkStatus
 
-// Module 8791 (useUserIdsForLinkStatus)
+// Module 8575 (useUserIdsForLinkStatus)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7292 */;
-import items from "items" /* 7293 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
+import items from "items" /* 7471 */;
 
 require = arg1;
 ({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: error, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = items);
@@ -195,7 +195,7 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
 export const useHasMaxConnections = function useHasMaxConnections() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
-  const tmp = stateFromStores(8792)();
+  const tmp = stateFromStores(8576)();
   const items = [closure_5];
   stateFromStores = ACTIVE(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
@@ -281,8 +281,8 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   const _require = activityWindowTimestampFormatter;
-  closure_1 = _require(8793).useSelectedTeenId();
-  const obj = _require(8793);
+  closure_1 = _require(8577).useSelectedTeenId();
+  const obj = _require(8577);
   const tmp = _require;
   const items = [closure_5];
   const stateFromStores = _require(644).useStateFromStores(items, () => {
@@ -296,8 +296,8 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = tmp(7348).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const tmpResult = tmp(7348);
+    result = tmp(7526).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const tmpResult = tmp(7526);
   }
   return result;
 };
@@ -309,7 +309,7 @@ export const useLinkTimestampText = function useLinkTimestampText(id, status) {
     return null;
   } else {
     const _Date = Date;
-    _require(7348).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const tmpResult = _require(7348);
+    _require(7526).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const tmpResult = _require(7526);
   }
 };

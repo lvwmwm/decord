@@ -1,16 +1,16 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 12079
+// Function ID: 12080
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 673, 21, 4478, 11930, 11947, 4701, 8448, 4474, 1233, 7278, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 12061, 12080, 4708, 9338, 4477, 1233, 7456, 2]
 // Exports: default
 
-// Module 11946 (FrecencyCommandsSection)
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11947 */;
+// Module 12079 (FrecencyCommandsSection)
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 12080 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -47,7 +47,7 @@ export default function FrecencyCommandsSection(commands) {
     obj = { variant: "text-md/medium", color: "text-default", children: null };
     const intl = context(1233).intl;
     obj[2] = intl.string(context(1233).t.acSE0h);
-    obj[1] = arr(context(4474).Heading, obj);
+    obj[1] = arr(context(4477).Heading, obj);
     const items1 = [arr(View, obj), arr.map((command) => arr(context(closure_1_2[5]).CommandRow, { command, onPressCommand: closure_1, isFirstRow: 0 === arg1, isLastRow: arg1 === arr.length - 1, context, onExecuteCommand: closure_3, installOnDemand: closure_4, section: closure_2, location: context(closure_1_2[11]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, sectionName }, command.id))];
     obj[1] = items1;
     tmp4 = callback(View, obj);

@@ -1,25 +1,25 @@
-// Module ID: 17453
-// Function ID: 17454
+// Module ID: 17533
+// Function ID: 17534
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4470, 1908, 17449, 673, 21, 4478, 709, 7730, 1492, 4916, 4217, 695, 4701, 8394, 5077, 4474, 10757, 1296, 11389, 4929, 1233, 2]
+// Dependencies: [32, 19, 17, 4473, 1908, 17529, 673, 21, 4481, 709, 6885, 1492, 4923, 4218, 695, 4708, 8208, 5084, 4477, 10688, 1296, 11496, 4936, 1233, 2]
 // Exports: default
 
-// Module 17453 (GuildSettingsRoleTemplate)
+// Module 17533 (GuildSettingsRoleTemplate)
 import ThemesDefault from "Themes" /* 709 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4916 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7730 */;
-import _modDef8394 from "module_8394" /* 8394 */;
-import PaginationDefault from "Pagination" /* 10757 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4923 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6885 */;
+import _modDef8208 from "module_8208" /* 8208 */;
+import PaginationDefault from "Pagination" /* 10688 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import title from "title" /* 17449 */;
+import title from "title" /* 17529 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ View: c5, Dimensions, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -138,7 +138,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
       return obj;
     }
   }
-  obj = { interpolate: tmp11(4217).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4217).Extrapolation, inactiveOpacity: num };
+  obj = { interpolate: tmp11(4218).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4218).Extrapolation, inactiveOpacity: num };
   V.__closure = obj;
   V.__workletHash = 1786335394860;
   V.__initData = closure_18;
@@ -148,8 +148,8 @@ export default function GuildSettingsRoleTemplate(arg0) {
   obj = { ref, style: tmp.container, children: null };
   obj1 = { style: tmp.sliderContainer, children: null };
   tmp4 = useIsWindowLargeDefault();
-  let items2 = [callback2(ref1, { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(_modDef8394, obj3) }), ];
-  let obj2 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(_modDef8394, obj3) };
+  let items2 = [callback2(ref1, { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(_modDef8208, obj3) }), ];
+  let obj2 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(_modDef8208, obj3) };
   items2[1] = callback2(ref1, {
     style: tmp.sliderLabels,
     children: values.map((title) => {

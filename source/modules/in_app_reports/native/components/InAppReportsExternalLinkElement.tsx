@@ -1,16 +1,16 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 9007
+// Function ID: 9008
 // Name: ExternalLinkItem
-// Dependencies: [17, 21, 4478, 4474, 1233, 8378, 5614, 13020, 4190, 2]
+// Dependencies: [17, 21, 4481, 4477, 1233, 8525, 5566, 9008, 4190, 2]
 // Exports: default
 
-// Module 13019 (ExternalLinkItem)
+// Module 9007 (ExternalLinkItem)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 function ExternalLinkItem(data) {
   data = data.data;
@@ -21,12 +21,12 @@ function ExternalLinkItem(data) {
     obj[0] = tmp;
     obj[1] = tmp2;
     obj = { IconComponent: null };
-    obj[0] = url(13020).LinkExternalMediumIcon;
-    obj[2] = callback(url(5614).TableRowIcon, obj);
+    obj[0] = url(9008).LinkExternalMediumIcon;
+    obj[2] = callback(url(5566).TableRowIcon, obj);
     obj[3] = function onPress() {
       closure_1_1(closure_1_2[8]).openURL(url);
     };
-    tmp3 = callback(url(8378).RowButton, obj);
+    tmp3 = callback(url(8525).RowButton, obj);
   }
   return tmp3;
 }

@@ -1,14 +1,14 @@
-// Module ID: 7825
-// Function ID: 7826
+// Module ID: 7835
+// Function ID: 7836
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7351, 7353, 7826, 689, 7827, 7828, 586, 7831, 7830, 7833, 1233, 2]
+// Dependencies: [5, 19, 7529, 7531, 7836, 689, 7837, 7838, 586, 7841, 7840, 7843, 1233, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 7825 (useConversationsHeaderButton)
+// Module 7835 (useConversationsHeaderButton)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "removePendingListFetch" /* 7351 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7353 */;
+import closure_4 from "removePendingListFetch" /* 7529 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7531 */;
 
 const require = arg1;
 ({ CONVERSATION_HAS_MORE_EXPIRATION_MS: c5, MOBILE_FETCH_LIMIT: closure_6, MOBILE_PREVIEW_MESSAGE_COUNT: error } = CONVERSATION_COLORS);

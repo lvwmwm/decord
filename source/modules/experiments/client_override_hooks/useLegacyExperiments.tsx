@@ -1,14 +1,14 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11412
+// Function ID: 11413
 // Name: parseRegisteredExperiments
-// Dependencies: [32, 19, 4391, 4392, 7647, 4399, 7645, 586, 2]
+// Dependencies: [32, 19, 4394, 4395, 7824, 4402, 7822, 586, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11304 (parseRegisteredExperiments)
+// Module 11412 (parseRegisteredExperiments)
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_5 from "getHash" /* 4391 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
+import closure_5 from "getHash" /* 4394 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4395 */;
 
 const require = arg1;
 function parseRegisteredExperiments(registeredExperiments) {

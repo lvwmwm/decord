@@ -1,14 +1,14 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11799
+// Function ID: 11800
 // Name: _transformClientActionToApiAction
-// Dependencies: [5, 1984, 1908, 4120, 673, 11669, 1470, 11, 527, 11662, 4701, 7273, 706, 2]
+// Dependencies: [5, 1984, 1908, 4120, 673, 11800, 1394, 11, 527, 11793, 4708, 7451, 706, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11668 (_transformClientActionToApiAction)
+// Module 11799 (_transformClientActionToApiAction)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import _transformMetadataToCamelCase from "_transformMetadataToCamelCase" /* 11669 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import _transformMetadataToCamelCase from "_transformMetadataToCamelCase" /* 11800 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
@@ -22,14 +22,14 @@ function _transformClientActionToApiAction(type) {
 }
 function _transformClientRuleToApiRule(id) {
   const _require = id;
-  let obj = _require(11669);
+  let obj = _require(11800);
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
     delete tmp2[tmp];
   }
   obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: null, enabled: null, creator_id: null, position: null, exempt_channels: null, exempt_roles: null };
   const actions = id.actions;
-  const found = actions.filter(_require(1470).isNotNullish);
+  const found = actions.filter(_require(1394).isNotNullish);
   obj[6] = found.map(_transformClientActionToApiAction);
   ({ enabled: obj2[7], creatorId: obj2[8], position: obj2[9] } = id);
   let exemptChannels = id.exemptChannels;
@@ -423,16 +423,16 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
     canResult = closure_6.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = _require(11662).openConfirmRemoveMentionRaid(() => {
-      let obj = callback(4701);
-      obj = { feedback_type: callback(7273).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
+    const result = _require(11793).openConfirmRemoveMentionRaid(() => {
+      let obj = callback(4708);
+      obj = { feedback_type: callback(7451).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
       obj.trackWithMetadata(closure_1_7.GUILD_AUTOMOD_FEEDBACK, obj);
       const HTTP = callback(527).HTTP;
       obj = { url: closure_1_8.GUILD_AUTOMOD_CLEAR_MENTION_RAID(callback), rejectWithError: true };
       HTTP.post(obj);
       dependencyMap();
     });
-    let obj = _require(11662);
+    let obj = _require(11793);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {

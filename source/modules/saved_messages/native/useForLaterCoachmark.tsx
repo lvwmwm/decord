@@ -1,17 +1,17 @@
-// Module ID: 16240
-// Function ID: 16241
+// Module ID: 16326
+// Function ID: 16327
 // Name: CoachmarkImg
-// Dependencies: [32, 19, 17, 1383, 21, 1372, 4478, 13187, 7610, 6261, 1233, 8991, 2]
+// Dependencies: [32, 19, 17, 1383, 21, 1372, 4481, 13220, 7787, 7326, 1233, 11059, 2]
 // Exports: default
 
-// Module 16240 (CoachmarkImg)
-import registerAssetDefault from "registerAsset" /* 13187 */;
+// Module 16326 (CoachmarkImg)
+import registerAssetDefault from "registerAsset" /* 13220 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function CoachmarkImg() {
@@ -29,7 +29,7 @@ export default function useForLaterCoachmark(targetRef) {
   } else {
     items1 = [];
   }
-  let tmpResult = tmp(6261);
+  let tmpResult = tmp(7326);
   const tmp4 = callback(tmpResult.useSelectedDismissibleContent(items1, undefined, true), 2);
   const first = tmp4[0];
   closure_1 = tmp6;
@@ -49,7 +49,7 @@ export default function useForLaterCoachmark(targetRef) {
     };
     return obj;
   }, items2);
-  tmpResult = tmp(8991);
+  tmpResult = tmp(11059);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return tmp4[1];
 };

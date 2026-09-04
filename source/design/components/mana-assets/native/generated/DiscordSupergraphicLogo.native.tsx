@@ -1,16 +1,16 @@
-// Module ID: 6481
-// Function ID: 6482
+// Module ID: 5862
+// Function ID: 5863
 // Name: DiscordSupergraphicLogo
-// Dependencies: [17, 21, 709, 4197, 6482, 2]
+// Dependencies: [17, 21, 709, 4197, 5863, 2]
 // Exports: DiscordSupergraphicLogo
 
-// Module 6481 (DiscordSupergraphicLogo)
+// Module 5862 (DiscordSupergraphicLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6482 */;
+import metadataDefault from "metadata" /* 5863 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

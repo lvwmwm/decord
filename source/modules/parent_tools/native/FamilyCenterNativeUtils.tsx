@@ -1,16 +1,16 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11845
+// Function ID: 11846
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4735, 7293, 673, 695, 7294, 4724, 11715, 2008, 2]
+// Dependencies: [4742, 7471, 673, 695, 7472, 4731, 11846, 2008, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11714 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+// Module 11845 (FAMILY_CENTER_REQUEST_MODAL_KEY)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7294 */;
-import closure_3 from "initialize" /* 4735 */;
-import items from "items" /* 7293 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7472 */;
+import closure_3 from "initialize" /* 4742 */;
+import items from "items" /* 7471 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
@@ -35,20 +35,20 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     obj = { userId: null, linkCode: null };
     obj[0] = match[1];
     obj[1] = match[2];
-    _modDef4724.pushLazy(asyncRequireImpl(11715, dependencyMap.paths), obj, c7);
+    _modDef4731.pushLazy(asyncRequireImpl(11846, dependencyMap.paths), obj, c7);
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
   pendingConnection = pendingConnection.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
-    let obj = _modDef4724;
+    let obj = _modDef4731;
     obj.popWithKey(c7);
     obj = { userId: null, linkCode: null };
     ({ teenId: obj3[0], linkCode: obj3[1] } = pendingConnection);
-    _modDef4724.pushLazy(asyncRequireImpl(11715, dependencyMap.paths), obj, c7);
+    _modDef4731.pushLazy(asyncRequireImpl(11846, dependencyMap.paths), obj, c7);
     flag = true;
-    const obj2 = _modDef4724;
+    const obj2 = _modDef4731;
   }
   return flag;
 };

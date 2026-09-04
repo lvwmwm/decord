@@ -1,18 +1,18 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15607
+// Function ID: 15608
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4478, 709, 15526, 15527, 4194, 4474, 1296, 5562, 4929, 4724, 5504, 6017, 1233, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4481, 709, 15608, 15609, 4194, 4477, 1296, 7063, 4936, 4731, 5579, 6940, 1233, 2]
 // Exports: default
 
-// Module 15525 (CaptchaTestScreen)
+// Module 15607 (CaptchaTestScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import { HCAPTCHA_DIFFICULTY_OPTIONS as prop, CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found" /* 15526 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import { HCAPTCHA_DIFFICULTY_OPTIONS as prop, CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found" /* 15608 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -231,5 +231,5 @@ export default function CaptchaTestModal() {
   let obj = { screens: memo, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: null };
   const intl = _require(1233).intl;
   obj[2] = intl.string(_require(1233).t["13/7kX"]);
-  return callback(_require(6017).Navigator, obj);
+  return callback(_require(6940).Navigator, obj);
 };

@@ -1,24 +1,24 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17530
+// Function ID: 17531
 // Name: handleSetSection
-// Dependencies: [1426, 17451, 1985, 1984, 9755, 17445, 673, 17452, 12216, 4958, 1470, 503, 4125, 685, 1987, 12, 586, 706, 2]
+// Dependencies: [1427, 17531, 1985, 1984, 8994, 17525, 673, 17532, 12348, 4965, 1394, 503, 4125, 685, 1987, 12, 586, 706, 2]
 
-// Module 17450 (handleSetSection)
+// Module 17530 (handleSetSection)
 import applyDefault from "apply" /* 12 */;
 import fromStringAll from "fromString" /* 503 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isValueEqual from "isValueEqual" /* 1426 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import isValueEqual from "isValueEqual" /* 1427 */;
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 12216 */;
-import MAX_SUBCATEGORIES from "MAX_SUBCATEGORIES" /* 17445 */;
-import closure_8 from "map" /* 17451 */;
+import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 12348 */;
+import MAX_SUBCATEGORIES from "MAX_SUBCATEGORIES" /* 17525 */;
+import closure_8 from "map" /* 17531 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_11 from "handleFormInit" /* 9755 */;
+import closure_11 from "handleFormInit" /* 8994 */;
 import ME from "ME" /* 673 */;
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17452 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17532 */;
 import set from "set" /* 2 */;
 
 function handleSetSection(arg0) {

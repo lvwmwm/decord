@@ -1,9 +1,9 @@
-// Module ID: 7430
-// Function ID: 7431
+// Module ID: 7608
+// Function ID: 7609
 // Name: ElectronProcessType
 // Dependencies: [2]
 
-// Module 7430 (ElectronProcessType)
+// Module 7608 (ElectronProcessType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/ProcessUtilsBase.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9760
-// Function ID: 9761
+// Module ID: 9000
+// Function ID: 9001
 // Name: getDefaultGuildSettingsSection
 // Dependencies: [673, 2]
 // Exports: getDefaultGuildSettingsSection
 
-// Module 9760 (getDefaultGuildSettingsSection)
+// Module 9000 (getDefaultGuildSettingsSection)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

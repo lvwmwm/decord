@@ -1,18 +1,18 @@
-// Module ID: 16186
-// Function ID: 16187
+// Module ID: 16272
+// Function ID: 16273
 // Name: GuildsBarFooterWrapper
-// Dependencies: [16123, 21, 4478, 709, 4197, 15861, 6015, 2]
+// Dependencies: [16209, 21, 4481, 709, 4197, 15946, 5544, 2]
 // Exports: default
 
-// Module 16186 (GuildsBarFooterWrapper)
+// Module 16272 (GuildsBarFooterWrapper)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import setDefault from "set" /* 6015 */;
-import context from "context" /* 15861 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16123 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import setDefault from "set" /* 5544 */;
+import context from "context" /* 15946 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const GUILD_ITEM_HIT_SLOP = GUILD_ITEM_SIZE.GUILD_ITEM_HIT_SLOP;
 const jsx = jsxProd.jsx;

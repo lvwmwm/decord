@@ -1,16 +1,16 @@
-// Module ID: 4557
-// Function ID: 4558
+// Module ID: 4560
+// Function ID: 4561
 // Name: DeviceTypes
-// Dependencies: [4529, 1921, 4542, 4558, 4566, 586, 12, 706, 2]
+// Dependencies: [4532, 1921, 4545, 4561, 4569, 586, 12, 706, 2]
 
-// Module 4557 (DeviceTypes)
+// Module 4560 (DeviceTypes)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4566 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4529 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4569 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 const DeviceTypes = DesktopSources.DeviceTypes;
 ({ MediaEngineContextTypes: c5, SpeakingFlags: closure_6 } = DesktopSources);

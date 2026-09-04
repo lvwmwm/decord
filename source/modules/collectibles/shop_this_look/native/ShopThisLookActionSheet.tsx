@@ -1,18 +1,18 @@
-// Module ID: 12835
-// Function ID: 12836
+// Module ID: 13039
+// Function ID: 13040
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8926, 5632, 6010, 21, 4478, 709, 11005, 4194, 1233, 12812, 586, 12836, 7308, 12838, 11001, 12771, 8922, 12758, 5962, 5982, 4445, 7296, 9236, 4474, 2]
+// Dependencies: [19, 17, 8151, 7091, 7148, 21, 4481, 709, 8703, 4194, 1233, 13040, 586, 13044, 7486, 13046, 10964, 8769, 8147, 13018, 7102, 7122, 4448, 7474, 11083, 4477, 2]
 // Exports: default
 
-// Module 12835 (ShopThisLookCard)
+// Module 13039 (ShopThisLookCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getFetchState" /* 8926 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import closure_6 from "getFetchState" /* 8151 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function ShopThisLookCard(skuId) {
@@ -25,7 +25,7 @@ function ShopThisLookCard(skuId) {
   closure_6 = undefined;
   let callback;
   let wishlistButton = callback3();
-  let obj = skuId(12812);
+  let obj = skuId(13040);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -108,7 +108,7 @@ function ShopThisLookCard(skuId) {
     obj[1] = function renderPreview() {
       return callback(type, {});
     };
-    let tmp23 = callback(onPress(11005), obj);
+    let tmp23 = callback(onPress(8703), obj);
   } else {
     tmp23 = null;
     if (null != stateFromStores) {
@@ -119,14 +119,14 @@ function ShopThisLookCard(skuId) {
         obj1[0] = stateFromStores;
         obj1[1] = size;
         obj1[2] = callback1;
-        const items7 = [callback(onPress(11001), obj1), ];
+        const items7 = [callback(onPress(10964), obj1), ];
         let tmp17Result = null != memo1;
         if (tmp17Result) {
           callback1 = { selectedProduct: null, style: null };
           callback1[0] = memo1;
           wishlistButton = wishlistButton.wishlistButton;
           callback1[1] = wishlistButton;
-          tmp17Result = tmp17(tmp18(12771), callback1);
+          tmp17Result = tmp17(tmp18(8769), callback1);
         }
         items7[1] = tmp17Result;
         obj[1] = items7;
@@ -139,10 +139,10 @@ function ShopThisLookCard(skuId) {
         const obj2 = { sku: null, size: null, overlay: null, onPress: null };
         obj2[0] = stateFromStores;
         obj2[1] = size;
-        obj2[2] = skuId(11005).WishlistItemCardOverlay.LOCKED;
+        obj2[2] = skuId(8703).WishlistItemCardOverlay.LOCKED;
         obj2[3] = tmp10;
-        tmp15Result = callback(onPress(11001), obj2);
-        const tmp13 = onPress(11001);
+        tmp15Result = callback(onPress(10964), obj2);
+        const tmp13 = onPress(10964);
       }
     }
   }
@@ -171,32 +171,32 @@ export default function ShopThisLookActionSheet(arg0) {
   dependencyMap = undefined;
   ({ userId, guildId } = arg0);
   const tmp = callback3();
-  let obj = _require(8922);
+  let obj = _require(8147);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12758)(obj));
-  const tmp2 = analyticsLocations(12758)(obj);
-  analyticsLocations = analyticsLocations(5962)(analyticsLocations(5982).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(13018)(obj));
+  const tmp2 = analyticsLocations(13018)(obj);
+  analyticsLocations = analyticsLocations(7102)(analyticsLocations(7122).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {
-    let obj = analyticsLocations(4445);
+    let obj = analyticsLocations(4448);
     obj.hideActionSheet();
-    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5982).USER_PROFILE_OVERFLOW_MENU };
-    const result = _undefined(7296).openCollectiblesShopMobile(obj);
+    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(7122).USER_PROFILE_OVERFLOW_MENU };
+    const result = _undefined(7474).openCollectiblesShopMobile(obj);
   }, items);
   obj = { value: null, children: null };
-  const items1 = [analyticsLocations(5982).SHOP_THIS_LOOK_ACTION_SHEET];
+  const items1 = [analyticsLocations(7122).SHOP_THIS_LOOK_ACTION_SHEET];
   obj[0] = items1;
   obj1 = { startExpanded: true, title: null, children: null };
-  const tmp3 = analyticsLocations(5962);
+  const tmp3 = analyticsLocations(7102);
   const intl = _require(1233).intl;
   obj1[1] = intl.string(_require(1233).t.xNdRDO);
   const obj2 = { style: tmp.container, children: null };
   const obj3 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: null };
   const intl2 = _require(1233).intl;
   obj3[3] = intl2.string(_require(1233).t["ws+0Lr"]);
-  const items2 = [callback(_require(4474).Text, obj3), ];
-  const tmp4 = analyticsLocations(9236);
+  const items2 = [callback(_require(4477).Text, obj3), ];
+  const tmp4 = analyticsLocations(11083);
   const items3 = [tmp.itemsContainer, { gap, width: rowWidth }];
   items2[1] = callback(closure_5, {
     style: items3,
@@ -214,5 +214,5 @@ export default function ShopThisLookActionSheet(arg0) {
   obj2[1] = items2;
   obj1[2] = callback2(closure_5, obj2);
   obj[1] = callback(tmp4, obj1);
-  return callback(_require(5962).AnalyticsLocationProvider, obj);
+  return callback(_require(7102).AnalyticsLocationProvider, obj);
 };

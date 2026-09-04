@@ -1,28 +1,28 @@
-// Module ID: 10748
-// Function ID: 10749
+// Module ID: 10679
+// Function ID: 10680
 // Name: PremiumGiftPlanSelectPromotionDetails
-// Dependencies: [32, 19, 17, 10700, 1923, 502, 21, 709, 4478, 5470, 586, 10740, 10749, 8238, 10750, 10751, 10738, 5502, 8106, 10752, 8368, 8366, 4474, 1233, 8375, 4929, 4204, 4941, 10755, 2]
+// Dependencies: [32, 19, 17, 10594, 1923, 502, 21, 709, 4481, 5479, 586, 10671, 10680, 9299, 10681, 10682, 10669, 5542, 8763, 10683, 9313, 9311, 4477, 1233, 9320, 4936, 4205, 4948, 10686, 2]
 
-// Module 10748 (PremiumGiftPlanSelectPromotionDetails)
+// Module 10679 (PremiumGiftPlanSelectPromotionDetails)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ManaContext from "ManaContext" /* 4204 */;
-import Button from "Button" /* 4929 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import createTextStyleDefault from "createTextStyle" /* 5470 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 8238 */;
-import useThemeAndReducedMotionAwareAssetUrl from "useThemeAndReducedMotionAwareAssetUrl" /* 10749 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10750 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10751 */;
-import AnimatedImageDefault from "AnimatedImage" /* 10755 */;
+import ManaContext from "ManaContext" /* 4205 */;
+import Button from "Button" /* 4936 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import createTextStyleDefault from "createTextStyle" /* 5479 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9299 */;
+import useThemeAndReducedMotionAwareAssetUrl from "useThemeAndReducedMotionAwareAssetUrl" /* 10680 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10681 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10682 */;
+import AnimatedImageDefault from "AnimatedImage" /* 10686 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createEmptyPromotionsByType" /* 10700 */;
+import closure_6 from "createEmptyPromotionsByType" /* 10594 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import { Fonts } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function PremiumGiftPlanSelectPromotionDetails(config) {
@@ -132,7 +132,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     }
     return prop;
   });
-  obj1 = _require(10749);
+  obj1 = _require(10680);
   let cardAsset;
   if (stateFromStores != null) {
     cardAsset = stateFromStores.cardAsset;
@@ -142,20 +142,20 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   if (stateFromStores != null) {
     backgroundAsset = stateFromStores.backgroundAsset;
   }
-  const themeAndReducedMotionAwareAssetUrl1 = _require(10749).useThemeAndReducedMotionAwareAssetUrl(backgroundAsset);
+  const themeAndReducedMotionAwareAssetUrl1 = _require(10680).useThemeAndReducedMotionAwareAssetUrl(backgroundAsset);
   let tmp9 = null != claimableRewards;
   if (tmp9) {
     tmp9 = 1 === claimableRewards.length;
   }
   const tmp10 = callback4(tmp9);
-  const tmp2Result = _require(10749);
+  const tmp2Result = _require(10680);
   const tmp12 = usePremiumFeaturesDefault(premiumType);
   const tmp13 = usePremiumProductPricingStringDefault(premiumType, constants.MONTH);
   let enabled = useShouldShowGiftingPromotionDecoDefault(premiumType) && null != claimableRewards;
   if (enabled) {
     enabled = claimableRewards.length > 0;
   }
-  let tmp11Result = tmp11(10738);
+  let tmp11Result = tmp11(10669);
   const config = tmp11Result.useConfig({ location: "PremiumGiftFeaturesCard" });
   let promotionalButton = enabled;
   if (enabled) {
@@ -187,12 +187,12 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     obj1 = { uri: null };
     obj1[0] = themeAndReducedMotionAwareAssetUrl;
     obj[2] = obj1;
-    tmp22 = callback2(tmp11(5502), obj);
+    tmp22 = callback2(tmp11(5542), obj);
   }
   const items2 = [tmp22, ];
   obj2 = { premiumType, opacity: null, style: null };
   let num3 = 1;
-  tmp11Result = tmp11(8106);
+  tmp11Result = tmp11(8763);
   if (tmp16) {
     num3 = 0.82;
   }
@@ -213,7 +213,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj3[1] = claimableRewards;
       obj3[2] = isSelected;
       obj3[3] = callback;
-      tmp29 = callback2(tmp11(10752), obj3);
+      tmp29 = callback2(tmp11(10683), obj3);
     }
     const items4 = [tmp29, ];
     let tmp31 = null != themeAndReducedMotionAwareAssetUrl1;
@@ -227,7 +227,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
       obj6 = { uri: null };
       obj6[0] = themeAndReducedMotionAwareAssetUrl1;
       obj4[2] = obj6;
-      tmp31 = callback2(tmp11(5502), obj4);
+      tmp31 = callback2(tmp11(5542), obj4);
     }
     const obj7 = { children: null };
     items4[1] = tmp31;
@@ -237,7 +237,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   } else {
     const obj8 = { premiumType: null };
     obj8[0] = premiumType;
-    tmp20Result = callback2(tmp11(8368), obj8);
+    tmp20Result = callback2(tmp11(9313), obj8);
   }
   const items6 = [tmp20Result, , , , , , ];
   const items7 = [tmp10.logo, , ];
@@ -263,19 +263,19 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     obj11[0] = tmp13;
     obj11[1] = tmp14;
     obj10[3] = intl.format(tmp2(1233).t.Ob6fwp, obj11);
-    items6[2] = tmp33(tmp2(4474).Text, obj10);
+    items6[2] = tmp33(tmp2(4477).Text, obj10);
     const obj12 = { style: null, variant: "heading-sm/bold", color: "text-overlay-light", children: null };
     const items9 = [tmp10.featureTitle, obj2[str]];
     obj12[0] = items9;
     const intl2 = tmp2(1233).intl;
     obj12[3] = intl2.string(tmp2(1233).t.JgsVht);
-    items6[3] = tmp33(tmp2(4474).Text, obj12);
+    items6[3] = tmp33(tmp2(4477).Text, obj12);
     const obj13 = { style: null, features: null, iconStyle: null, labelStyle: null, rowStyle: null };
     obj13[0] = tmp10.features;
     obj13[1] = tmp12;
     ({ featureIcon: obj19[2], featureText: obj19[3] } = tmp10);
     obj13[4] = obj[str];
-    items6[4] = tmp33(tmp11(8375), obj13);
+    items6[4] = tmp33(tmp11(9320), obj13);
     const obj14 = { style: null };
     obj14[0] = { flexGrow: 1 };
     items6[5] = tmp33(tmp21, obj14);
@@ -313,7 +313,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
     const obj17 = { variant: "primary-overlay", text: null, onPress: null };
     obj17[1] = stringResult;
     obj17[2] = onPress;
-    obj16[1] = tmp33(tmp2(4929).Button, obj17);
+    obj16[1] = tmp33(tmp2(4936).Button, obj17);
     tmp33Result = tmp33(tmp21, obj16);
   }
 });

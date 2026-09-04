@@ -1,24 +1,24 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 9987
+// Function ID: 9988
 // Name: StreamPreviewContainer
-// Dependencies: [19, 17, 4495, 4500, 1215, 1386, 1908, 4120, 4497, 673, 21, 4478, 4326, 709, 4666, 586, 1233, 5364, 4663, 4723, 4722, 4544, 4946, 10168, 4474, 2]
+// Dependencies: [19, 17, 4498, 4503, 1215, 1386, 1908, 4120, 4500, 673, 21, 4481, 4329, 709, 4673, 586, 1233, 5372, 4670, 4730, 4729, 4547, 4953, 9988, 4477, 2]
 // Exports: default
 
-// Module 10167 (StreamPreviewContainer)
+// Module 9987 (StreamPreviewContainer)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "set" /* 4495 */;
-import closure_6 from "reset" /* 4500 */;
+import closure_5 from "set" /* 4498 */;
+import closure_6 from "reset" /* 4503 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "updateVoiceState" /* 4497 */;
+import closure_11 from "updateVoiceState" /* 4500 */;
 import { Permissions } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 
 const require = arg1;
 function StreamPreviewContainer(disableTransition) {

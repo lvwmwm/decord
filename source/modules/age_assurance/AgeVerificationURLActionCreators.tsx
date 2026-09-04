@@ -1,14 +1,14 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8347
+// Function ID: 8348
 // Name: requestAgeVerification
-// Dependencies: [5, 1215, 8702, 673, 8708, 527, 706, 2]
+// Dependencies: [5, 1215, 8342, 673, 8348, 527, 706, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8707 (requestAgeVerification)
+// Module 8347 (requestAgeVerification)
 import sendRequest from "sendRequest" /* 527 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import { VerificationVendorName } from "set" /* 8702 */;
+import { VerificationVendorName } from "set" /* 8342 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
@@ -224,7 +224,7 @@ function _initiateAgeVerification() {
   }
   return applyArgumentsResult;
 }
-function initiateAgeVerificationV2() {
+function initiateAgeVerificationV2(Icon, arg1) {
   const self = this;
   const apply = _initiateAgeVerificationV.apply;
   if (typeof apply === "unknown") {

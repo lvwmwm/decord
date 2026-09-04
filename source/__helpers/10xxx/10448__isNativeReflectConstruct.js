@@ -1,18 +1,17 @@
 // Module ID: 10448
 // Function ID: 10449
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10449, 10453, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10366, 10367, 10368]
 
 // Module 10448 (_isNativeReflectConstruct)
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10449 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeUnitWithinFormatParser = require;
+const PTCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,58 +31,70 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp2 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + WEEKDAY_DICTIONARY.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitWithinFormatParser {
-  constructor(arg0) {
+class PTCasualTimeParser {
+  constructor() {
     self = this;
-    tmp = closure_2(this, ENTimeUnitWithinFormatParser);
+    tmp = closure_2(this, PTCasualTimeParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeUnitWithinFormatParser);
+    obj = closure_4(PTCasualTimeParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = global;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(PTCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
-    value: function innerPattern(option) {
-      if (this.strictMode) {
-        let tmp2 = regExp2;
-      } else {
-        tmp2 = option.option.forwardDate ? regExp : regExp1;
-      }
-      return tmp2;
+    value: function innerPattern() {
+      return /(?:esta\s*)?(manha|manhã|tarde|meia-noite|meio-dia|noite)(?=\W|$)/i;
     }
   },
   {
     key: "innerExtract",
-    value: function innerExtract(reference) {
-      if (str.match(/^for\s*the\s*\w+/)) {
-        return null;
+    value: function innerExtract(refDate) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
+      const formatted = arg1[1].toLowerCase();
+      if ("tarde" === formatted) {
+        parsingComponents.imply("meridiem", PTCasualTimeParser(10366).Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("noite" === formatted) {
+        parsingComponents.imply("meridiem", PTCasualTimeParser(10366).Meridiem.PM);
+        parsingComponents.imply("hour", 22);
       } else {
-        const parseDurationResult = ENTimeUnitWithinFormatParser(10449).parseDuration(arg1[1]);
-        let relativeFromReference = null;
-        if (parseDurationResult) {
-          const ParsingComponents = ENTimeUnitWithinFormatParser(10453).ParsingComponents;
-          relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+        if ("manha" !== formatted) {
+          if ("manh\u00E3" !== formatted) {
+            if ("meia-noite" === formatted) {
+              const _Date = Date;
+              const date = new Date(refDate.getTime());
+              date.setDate(date.getDate() + 1);
+              PTCasualTimeParser(10367).assignSimilarDate(parsingComponents, date);
+              PTCasualTimeParser(10367).implySimilarTime(parsingComponents, date);
+              parsingComponents.imply("hour", 0);
+              parsingComponents.imply("minute", 0);
+              parsingComponents.imply("second", 0);
+            } else if ("meio-dia" === formatted) {
+              parsingComponents.imply("meridiem", PTCasualTimeParser(10366).Meridiem.AM);
+              parsingComponents.imply("hour", 12);
+            }
+          }
         }
-        return relativeFromReference;
+        parsingComponents.imply("meridiem", PTCasualTimeParser(10366).Meridiem.AM);
+        parsingComponents.imply("hour", 6);
       }
-      str = arg1[0];
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitWithinFormatParser, items);
+export default _createClass(PTCasualTimeParser, items);

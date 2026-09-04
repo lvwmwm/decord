@@ -1,13 +1,13 @@
-// Module ID: 10658
-// Function ID: 10659
-// Dependencies: [19, 17, 1622, 21, 4478, 709, 10659, 2]
+// Module ID: 10569
+// Function ID: 10570
+// Dependencies: [19, 17, 1622, 21, 4481, 709, 10570, 2]
 
-// Module 10658
+// Module 10569
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef10659 from "module_10659" /* 10659 */;
+import _modDef10570 from "module_10570" /* 10570 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 let obj = { headerHandleOnlyWrap: null };
@@ -16,7 +16,7 @@ obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   ({ animatedIndex, onPress } = arg0);
-  return <View style={callback().headerHandleOnlyWrap}>{jsx(_modDef10659, { animatedIndex, onPress })}</View>;
+  return <View style={callback().headerHandleOnlyWrap}>{jsx(_modDef10570, { animatedIndex, onPress })}</View>;
 });
 const result = require("set").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
 

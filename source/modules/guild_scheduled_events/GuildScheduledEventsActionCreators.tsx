@@ -1,16 +1,16 @@
-// Module ID: 9690
-// Function ID: 9691
-// Dependencies: [5, 1215, 7281, 1392, 673, 527, 5364, 1219, 9691, 4756, 706, 9693, 11, 2]
+// Module ID: 9632
+// Function ID: 9633
+// Dependencies: [5, 1215, 7459, 1392, 673, 527, 5372, 1219, 9633, 4763, 706, 9635, 11, 2]
 
-// Module 9690
+// Module 9632
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import sendRequest from "sendRequest" /* 527 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import _modDef5364 from "module_5364" /* 5364 */;
-import EditGuildEventScreens from "EditGuildEventScreens" /* 9691 */;
+import _modDef5372 from "module_5372" /* 5372 */;
+import EditGuildEventScreens from "EditGuildEventScreens" /* 9633 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "scheduledEventSort" /* 7281 */;
+import closure_5 from "scheduledEventSort" /* 7459 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import ME from "ME" /* 673 */;
 
@@ -35,8 +35,8 @@ export default {
     return HTTP.patch(obj);
   },
   joinVoiceEvent(arg0, id) {
-    const voiceChannel = _modDef5364.selectVoiceChannel(id);
-    const obj = _modDef5364;
+    const voiceChannel = _modDef5372.selectVoiceChannel(id);
+    const obj = _modDef5372;
     transitionTo.transitionTo(closure_11.CHANNEL(arg0, id));
   },
   saveEvent(arg0, entityType) {
@@ -76,7 +76,7 @@ export default {
       let body = tmp5;
       obj1 = { url: null, rejectWithError: null };
       obj1[0] = closure_1_10.GUILD_EVENT(closure_1_0, closure_1_1);
-      const obj8 = closure_1_0(4756);
+      const obj8 = closure_1_0(4763);
       obj1[1] = closure_1_0(527).rejectWithMigratedError();
       yield obj8.httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
@@ -96,7 +96,7 @@ export default {
       obj1[0] = closure_1_10.GUILD_EVENTS_FOR_GUILD(closure_1_0);
       obj1[1] = closure_1_0(527).rejectWithMigratedError();
       const obj9 = closure_1_0(527);
-      yield closure_1_0(4756).httpGetWithCountryCodeQuery(obj1);
+      yield closure_1_0(4763).httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
       const obj = closure_1_1(706);
       const obj4 = { type: "FETCH_GUILD_EVENTS_FOR_GUILD", guildId: null, guildScheduledEvents: null };

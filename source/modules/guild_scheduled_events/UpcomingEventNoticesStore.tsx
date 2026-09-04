@@ -1,14 +1,14 @@
-// Module ID: 9649
-// Function ID: 9650
+// Module ID: 9592
+// Function ID: 9593
 // Name: initialize
-// Dependencies: [1215, 7281, 1392, 9650, 586, 706, 2]
+// Dependencies: [1215, 7459, 1392, 9593, 586, 706, 2]
 
-// Module 9649 (initialize)
+// Module 9592 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getNextShownUpcomingEventNoticeType from "getNextShownUpcomingEventNoticeType" /* 9650 */;
+import getNextShownUpcomingEventNoticeType from "getNextShownUpcomingEventNoticeType" /* 9593 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "scheduledEventSort" /* 7281 */;
+import closure_3 from "scheduledEventSort" /* 7459 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 
 require = arg1;

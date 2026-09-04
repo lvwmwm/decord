@@ -1,19 +1,19 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15446
+// Function ID: 15447
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 8191, 21, 4478, 709, 13258, 8192, 9057, 15365, 2]
+// Dependencies: [19, 9252, 21, 4481, 709, 13291, 9253, 10749, 15447, 2]
 // Exports: default
 
-// Module 15364 (SettingsItemAppIcon)
+// Module 15446 (SettingsItemAppIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import FreemiumAppIconIds from "FreemiumAppIconIds" /* 8192 */;
-import ClydeIcon from "ClydeIcon" /* 9057 */;
-import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13258 */;
-import AppIconDefault from "AppIcon" /* 15365 */;
-import { getIconById } from "items" /* 8191 */;
+import FreemiumAppIconIds from "FreemiumAppIconIds" /* 9253 */;
+import ClydeIcon from "ClydeIcon" /* 10749 */;
+import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13291 */;
+import AppIconDefault from "AppIcon" /* 15447 */;
+import { getIconById } from "items" /* 9252 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

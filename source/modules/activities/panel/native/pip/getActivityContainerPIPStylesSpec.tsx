@@ -1,14 +1,14 @@
-// Module ID: 16856
-// Function ID: 16857
+// Module ID: 16942
+// Function ID: 16943
 // Name: OrientationLockState
-// Dependencies: [4506, 9483, 10955, 2]
+// Dependencies: [4509, 9434, 10924, 2]
 // Exports: default
 
-// Module 16856 (OrientationLockState)
+// Module 16942 (OrientationLockState)
 import set from "set" /* 2 */;
-import items3 from "items3" /* 4506 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9483 */;
-import tDefault from "t" /* 10955 */;
+import items3 from "items3" /* 4509 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9434 */;
+import tDefault from "t" /* 10924 */;
 
 const OrientationLockState = items3.OrientationLockState;
 const LANDSCAPE_ACTIVITY_ASPECT_RATIO = ActivityPanelModes.LANDSCAPE_ACTIVITY_ASPECT_RATIO;

@@ -1,20 +1,20 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 11172
+// Function ID: 11173
 // Name: AddDescription
-// Dependencies: [32, 19, 17, 4855, 4854, 21, 4478, 709, 586, 1492, 1498, 5603, 9231, 7618, 1233, 8175, 11101, 7820, 10886, 2]
+// Dependencies: [32, 19, 17, 4862, 4861, 21, 4481, 709, 586, 1492, 1498, 6921, 11078, 7795, 1233, 9236, 11171, 7025, 10855, 2]
 // Exports: default
 
-// Module 11102 (AddDescription)
+// Module 11172 (AddDescription)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef10886 from "module_10886" /* 10886 */;
+import _modDef10855 from "module_10855" /* 10855 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { DraftType } from "handleChanged" /* 4855 */;
-import closure_9 from "map" /* 4854 */;
+import { DraftType } from "handleChanged" /* 4862 */;
+import closure_9 from "map" /* 4861 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AddDescription(id) {
@@ -127,5 +127,5 @@ export default function AddImageDescriptionModal(arg0) {
   obj[2] = function render() {
     return closure_1_10(closure_1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(_modDef10886, obj);
+  return callback(_modDef10855, obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12448
+// Function ID: 12449
 // Name: orderPowerupListings
-// Dependencies: [32, 19, 4364, 4365, 4368, 586, 2]
+// Dependencies: [32, 19, 4367, 4368, 4371, 586, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 12316 (orderPowerupListings)
+// Module 12448 (orderPowerupListings)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "calculateAppliedBoosts" /* 4364 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
+import closure_4 from "calculateAppliedBoosts" /* 4367 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
 
 const require = arg1;
 function orderPowerupListings(items) {
   const findIndexResult = items.findIndex((type) => {
     let tmp = "singlePerk" === type.type;
     if (tmp) {
-      tmp = type.powerup.skuId === callback(4368).GUILD_POWERUP_GUILD_THEME_SKU_ID;
+      tmp = type.powerup.skuId === callback(4371).GUILD_POWERUP_GUILD_THEME_SKU_ID;
     }
     return tmp;
   });
@@ -29,7 +29,7 @@ function orderPowerupListings(items) {
   const findIndexResult1 = obj.findIndex((type) => {
     let tmp = "singlePerk" === type.type;
     if (tmp) {
-      tmp = type.powerup.skuId === callback(4368).GUILD_POWERUP_TAG_SKU_ID;
+      tmp = type.powerup.skuId === callback(4371).GUILD_POWERUP_TAG_SKU_ID;
     }
     return tmp;
   });
@@ -56,7 +56,7 @@ function orderPowerupListings(items) {
         items1.splice(items1.findIndex((type) => {
           let tmp = "singlePerk" === type.type;
           if (tmp) {
-            tmp = type.powerup.skuId === callback(4368).GUILD_POWERUP_TAG_SKU_ID;
+            tmp = type.powerup.skuId === callback(4371).GUILD_POWERUP_TAG_SKU_ID;
           }
           return tmp;
         }) + 1, 0, callback(items1.splice(findIndexResult2, 1), 1)[0]);

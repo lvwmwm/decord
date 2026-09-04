@@ -1,14 +1,14 @@
-// Module ID: 9927
-// Function ID: 9928
+// Module ID: 9741
+// Function ID: 9742
 // Name: _navigateToEvent
-// Dependencies: [5, 1386, 4554, 4299, 1392, 673, 38, 8683, 8688, 5364, 1219, 2]
+// Dependencies: [5, 1386, 4557, 4302, 1392, 673, 38, 8323, 8328, 5372, 1219, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9927 (_navigateToEvent)
+// Module 9741 (_navigateToEvent)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createRTCConnection" /* 4554 */;
-import closure_7 from "handleConnectionOpen" /* 4299 */;
+import closure_6 from "createRTCConnection" /* 4557 */;
+import closure_7 from "handleConnectionOpen" /* 4302 */;
 import { GuildScheduledEventEntityTypes as closure_8 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import { Routes } from "ME" /* 673 */;
 
@@ -109,7 +109,7 @@ function _navigateToEvent() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(8688);
+              obj1 = callback(8328);
               c4 = 3;
               store = 1;
               const obj4 = { value: null, done: false };
@@ -131,7 +131,7 @@ function _navigateToEvent() {
           c4 = 2;
           store = 1;
           obj5 = { value: null, done: false };
-          obj5[0] = callback3(8683).navigateToStage(channel, null);
+          obj5[0] = callback3(8323).navigateToStage(channel, null);
           return obj5;
         } catch (tmp47) {
           store = tmp;

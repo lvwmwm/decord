@@ -1,14 +1,14 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7813
+// Function ID: 7814
 // Name: PhoneHangUpIcon
-// Dependencies: [19, 21, 709, 4196, 7637, 2]
+// Dependencies: [19, 21, 709, 4196, 7814, 2]
 // Exports: PhoneHangUpIcon
 
-// Module 7636 (PhoneHangUpIcon)
+// Module 7813 (PhoneHangUpIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7637 */;
+import registerAsset from "registerAsset" /* 7814 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

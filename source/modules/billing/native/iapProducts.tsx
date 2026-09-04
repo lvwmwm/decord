@@ -1,9 +1,9 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11002
+// Function ID: 11003
 // Name: items
 // Dependencies: [2]
 
-// Module 11041 (items)
+// Module 11002 (items)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/billing/native/iapProducts.tsx");

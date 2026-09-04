@@ -1,20 +1,20 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7696
+// Function ID: 7697
 // Name: checkReactionResponse
-// Dependencies: [5, 1215, 1386, 4736, 673, 684, 4858, 1233, 1228, 706, 7518, 527, 7520, 695, 4701, 1362, 7538, 4138, 2]
+// Dependencies: [5, 1215, 1386, 4743, 673, 684, 4865, 1233, 1228, 706, 7695, 527, 7697, 695, 4708, 1362, 7715, 4138, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7519 (checkReactionResponse)
+// Module 7696 (checkReactionResponse)
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault2 from "set" /* 4858 */;
-import ReactionTypes2 from "ReactionTypes" /* 7518 */;
+import setDefault2 from "set" /* 4865 */;
+import ReactionTypes2 from "ReactionTypes" /* 7695 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "reinjectEphemerals" /* 4736 */;
+import closure_6 from "reinjectEphemerals" /* 4743 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -161,7 +161,7 @@ function _getReactors() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              if (c5 === callback(7518).ReactionTypes.VOTE) {
+              if (c5 === callback(7695).ReactionTypes.VOTE) {
                 let tmp28 = (function makeURLForVoteReactors(c0, c1, c2) {
                   let name = c2.id;
                   if (name == null) {
@@ -202,7 +202,7 @@ function _getReactors() {
           } else {
             closure_7 = arg1;
             let tmp14;
-            if (c5 === callback(7518).ReactionTypes.VOTE) {
+            if (c5 === callback(7695).ReactionTypes.VOTE) {
               body = closure_7.body.users;
             } else {
               body = closure_7.body;
@@ -316,7 +316,7 @@ function _addReaction() {
               }
               if (!isRetry) {
                 if (callback6(callback, callback2, dependencyMap, burst)) {
-                  let obj5 = callback2(4858);
+                  let obj5 = callback2(4865);
                   let obj2 = { title: null, body: null, confirmText: null };
                   let intl = callback(1233).intl;
                   obj2[0] = intl.string(callback(1233).t["uaUU/g"]);
@@ -353,7 +353,7 @@ function _addReaction() {
               c7 = 3;
               c8 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(7520).unarchiveThreadIfNecessary(callback);
+              obj6[0] = callback2(7697).unarchiveThreadIfNecessary(callback);
               return obj6;
             }
           } else if (arg0 === 1) {
@@ -375,7 +375,7 @@ function _addReaction() {
             obj8[0] = callback4(obj9);
             obj = { location: null, type: null };
             obj[0] = MESSAGE;
-            let fn = callback(7518).ReactionTypes;
+            let fn = callback(7695).ReactionTypes;
             if (burst) {
               let NORMAL = fn.BURST;
             } else {
@@ -786,7 +786,7 @@ function _removeReaction() {
               obj2[0] = c4;
               obj2[1] = burst;
               callback3("MESSAGE_REACTION_REMOVE", callback, callback2, dependencyMap, obj2);
-              let obj5 = callback2(7520);
+              let obj5 = callback2(7697);
               c4 = 2;
               c5 = 1;
               let obj3 = { value: null, done: false };
@@ -814,7 +814,7 @@ function _removeReaction() {
               callback2 = "@me";
             }
             obj5[3] = callback2;
-            let ReactionTypes = callback(7518).ReactionTypes;
+            let ReactionTypes = callback(7695).ReactionTypes;
             if (burst) {
               let NORMAL = ReactionTypes.BURST;
             } else {
@@ -856,7 +856,7 @@ function _removeReaction() {
                 closure_0 = arg0;
                 c3 = 0;
                 c4 = 0;
-                return (/* F124985 */ function*() { ... })();
+                return (/* F125331 */ function*() { ... })();
               });
               return function() {
                 const self = this;

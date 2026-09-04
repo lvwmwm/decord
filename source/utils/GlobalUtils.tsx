@@ -1,10 +1,10 @@
-// Module ID: 1470
-// Function ID: 1471
+// Module ID: 1394
+// Function ID: 1395
 // Name: isDiscordFrontendDevelopment
 // Dependencies: [2]
 // Exports: assertNever, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
-// Module 1470 (isDiscordFrontendDevelopment)
+// Module 1394 (isDiscordFrontendDevelopment)
 import set2 from "set" /* 2 */;
 
 let closure_0 = "development" === window.GLOBAL_ENV.PROJECT_ENV;

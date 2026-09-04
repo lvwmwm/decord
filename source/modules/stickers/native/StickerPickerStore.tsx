@@ -1,9 +1,9 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10319
+// Function ID: 10320
 // Name: useStickerPickerStore
 // Dependencies: [641, 702, 2]
 
-// Module 10408 (useStickerPickerStore)
+// Module 10319 (useStickerPickerStore)
 import set from "set" /* 2 */;
 import keys from "keys" /* 641 */;
 

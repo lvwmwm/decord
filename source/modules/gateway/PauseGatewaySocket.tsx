@@ -1,10 +1,10 @@
-// Module ID: 13560
-// Function ID: 13561
+// Module ID: 13593
+// Function ID: 13594
 // Name: getIsPaused
 // Dependencies: [2]
 // Exports: getIsPaused, setIsPaused
 
-// Module 13560 (getIsPaused)
+// Module 13593 (getIsPaused)
 import set from "set" /* 2 */;
 
 let c0 = false;

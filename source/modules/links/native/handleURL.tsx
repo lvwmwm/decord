@@ -1,7 +1,7 @@
 // Module ID: 4185
 // Function ID: 4186
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 4186, 673, 3, 4187, 4189, 4190, 4191, 4192, 4193, 1233, 4443, 1234, 4445, 1487, 4458, 13828, 2]
+// Dependencies: [5, 17, 4186, 673, 3, 4187, 4189, 4190, 4191, 4192, 4193, 1233, 4446, 1234, 4448, 1487, 4461, 13860, 2]
 // Exports: default
 
 // Module 4185 (sanitizeURLPart)

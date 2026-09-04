@@ -1,11 +1,11 @@
-// Module ID: 9724
-// Function ID: 9725
-// Dependencies: [1390, 1386, 4489, 4724, 9719, 2008, 2]
+// Module ID: 9666
+// Function ID: 9667
+// Dependencies: [1390, 1386, 4492, 4731, 9661, 2008, 2]
 
-// Module 9724
+// Module 9666
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
-import _modDef4724 from "module_4724" /* 4724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 
 const isGuildReadableType = createChannelRecord.isGuildReadableType;
@@ -17,7 +17,7 @@ export default {
   open(arg0, arg1, arg2, arg3) {
     const self = this;
     if (null != arg1) {
-      const obj2 = _modDef4724;
+      const obj2 = _modDef4731;
       const tmp = arg0;
       let obj = { channelType: null, guildId: null, categoryId: null, cloneChannelId: null, onChannelCreated: null };
       obj[0] = tmp;
@@ -36,13 +36,13 @@ export default {
           const obj = self(closure_1_2[2]);
         }
       };
-      obj2.pushLazy(self(2008)(9719, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
+      obj2.pushLazy(self(2008)(9661, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
       const tmp2 = arg2;
       let tmp3 = arg3;
-      const tmp9 = self(2008)(9719, dependencyMap.paths);
+      const tmp9 = self(2008)(9661, dependencyMap.paths);
     }
   },
   close() {
-    _modDef4724.popWithKey(CREATE_CHANNEL_MODAL_KEY);
+    _modDef4731.popWithKey(CREATE_CHANNEL_MODAL_KEY);
   }
 };

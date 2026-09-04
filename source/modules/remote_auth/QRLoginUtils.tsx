@@ -1,10 +1,10 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 13858
+// Function ID: 13859
 // Name: findRemoteAuthFingerprint
 // Dependencies: [1485, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 13826 (findRemoteAuthFingerprint)
+// Module 13858 (findRemoteAuthFingerprint)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 

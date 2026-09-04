@@ -1,16 +1,16 @@
-// Module ID: 6483
-// Function ID: 6484
+// Module ID: 5864
+// Function ID: 5865
 // Name: DiscordWordmarkLogo
-// Dependencies: [17, 21, 709, 4197, 6484, 2]
+// Dependencies: [17, 21, 709, 4197, 5865, 2]
 // Exports: DiscordWordmarkLogo
 
-// Module 6483 (DiscordWordmarkLogo)
+// Module 5864 (DiscordWordmarkLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6484 */;
+import metadataDefault from "metadata" /* 5865 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

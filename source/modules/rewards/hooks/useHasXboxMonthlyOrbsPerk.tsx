@@ -1,10 +1,10 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13656
+// Function ID: 13657
 // Name: hasCrepeMonthlyOrbsPerk
 // Dependencies: [1921, 1923, 4139, 1927, 1929, 586, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 13623 (hasCrepeMonthlyOrbsPerk)
+// Module 13656 (hasCrepeMonthlyOrbsPerk)
 import initialize from "initialize" /* 586 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;

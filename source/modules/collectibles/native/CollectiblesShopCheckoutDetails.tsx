@@ -1,28 +1,28 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10941
+// Function ID: 10942
 // Name: ProfileEffectAssetPreview
-// Dependencies: [19, 17, 675, 8524, 21, 4478, 709, 8535, 5502, 10972, 8550, 10973, 8510, 8523, 1946, 8539, 1949, 676, 10975, 10976, 8536, 1233, 4474, 7308, 10969, 10977, 8910, 4139, 10980, 2]
+// Dependencies: [19, 17, 675, 8728, 21, 4481, 709, 8157, 5542, 10942, 8132, 8752, 8102, 8727, 1946, 8748, 1949, 676, 8776, 8775, 8740, 1233, 4477, 7486, 8778, 10943, 8109, 4139, 8794, 2]
 // Exports: default
 
-// Module 10971 (ProfileEffectAssetPreview)
+// Module 10941 (ProfileEffectAssetPreview)
 import set from "set" /* 676 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getNameplateData from "getNameplateData" /* 1946 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5502 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8535 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8536 */;
-import NameplateInnerDefault from "NameplateInner" /* 8539 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8550 */;
-import useCurrentUser from "useCurrentUser" /* 8910 */;
-import metadataDefault from "metadata" /* 10976 */;
+import Text from "Text" /* 4477 */;
+import preloadDefault from "preload" /* 5542 */;
+import useCurrentUser from "useCurrentUser" /* 8109 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8132 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8157 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8740 */;
+import NameplateInnerDefault from "NameplateInner" /* 8748 */;
+import metadataDefault from "metadata" /* 8775 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items" /* 675 */;
-import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8524 */;
+import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8728 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ProfileEffectAssetPreview(item) {
@@ -34,21 +34,21 @@ function ProfileEffectAssetPreview(item) {
     obj[0] = tmp.profileEffectContainer;
     obj = { source: null, alt: null, style: null, resizeMode: "cover" };
     obj = { uri: null };
-    obj[0] = tmp2(10972);
+    obj[0] = tmp2(10942);
     obj[0] = obj;
     obj[1] = tmp4.accessibilityLabel;
     obj[2] = tmp.profileEffect;
-    const items = [callback(tmp2(5502), obj), ];
+    const items = [callback(tmp2(5542), obj), ];
     obj1 = { style: null, source: null, alt: null, resizeMode: "cover" };
     obj1[0] = tmp.profileEffect;
     const obj2 = { uri: null };
     obj2[0] = tmp4.thumbnailPreviewSrc;
     obj1[1] = obj2;
     obj1[2] = tmp4.title;
-    items[1] = callback(tmp2(5502), obj1);
+    items[1] = callback(tmp2(5542), obj1);
     obj[1] = items;
     tmp5 = callback2(View, obj);
-    const tmp2Result = tmp2(5502);
+    const tmp2Result = tmp2(5542);
   }
   return tmp5;
 }
@@ -62,8 +62,8 @@ function ProfileFrameAssetPreview(arg0) {
     obj[1] = width;
     obj[2] = height;
     obj[3] = tmp(709).colors.BACKGROUND_BASE_LOW;
-    tmp4 = callback(tmp(10973), obj);
-    const tmpResult = tmp(10973);
+    tmp4 = callback(tmp(8752), obj);
+    const tmpResult = tmp(8752);
   }
   return tmp4;
 }
@@ -75,7 +75,7 @@ function BundleAssetPreview(height) {
   c4 = undefined;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = width(8510);
+  let obj = width(8102);
   const shopProductItems = obj.useShopProductItems(product);
   bundleWidth = small.small.bundleWidth;
   const result = width / bundleWidth;
@@ -99,7 +99,7 @@ function BundleAssetPreview(height) {
   obj = { style: memo, children: null };
   obj = { style: memo1, children: null };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
-  obj[1] = callback(height(8523), { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2 });
+  obj[1] = callback(height(8727), { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2 });
   obj[1] = callback(c4, obj);
   return callback(c4, obj);
 }
@@ -131,9 +131,9 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   if (ALL.has(product.skuId)) {
     let obj = { skuId: null, width: null, height: null };
     obj[0] = product.skuId;
-    obj[1] = tmp2(10975).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    obj[2] = tmp2(10975).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    return callback(tmp2(10975).FractionalNitroCoinIllustration, obj);
+    obj[1] = tmp2(8776).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    obj[2] = tmp2(8776).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    return callback(tmp2(8776).FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = { source: null, style: null };
     obj1 = { uri: null };
@@ -303,7 +303,7 @@ let closure_10 = createCacheKey.createStyles((arg0) => {
     tmp4 = tmp;
   }
   let obj = { giftProductContainer: null };
-  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(709).space.PX_16, backgroundColor: "padding" };
+  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(709).space.PX_16, backgroundColor: "accessible" };
   obj[0] = obj;
   return obj;
 });
@@ -391,7 +391,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     const obj2 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: null };
     let intl = tmp3(1233).intl;
     obj2[2] = intl.string(tmp3(1233).t["3YfczA"]);
-    obj1[1] = tmp10(tmp3(4474).Text, obj2);
+    obj1[1] = tmp10(tmp3(4477).Text, obj2);
     flag3 = tmp10(tmp9, obj1);
   }
   items3[1] = flag3;

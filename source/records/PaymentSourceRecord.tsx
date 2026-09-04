@@ -1,11 +1,11 @@
 // Module ID: 4143
 // Function ID: 4144
 // Name: createFromServer
-// Dependencies: [1935, 673, 1470, 1398, 2]
+// Dependencies: [1935, 673, 1394, 1399, 2]
 
 // Module 4143 (createFromServer)
-import hasFlag from "hasFlag" /* 1398 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import toJSDefault from "toJS" /* 1935 */;
 import ME from "ME" /* 673 */;
 

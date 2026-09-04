@@ -1,20 +1,20 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17445
+// Function ID: 17446
 // Name: HasCreatedListingsSection
-// Dependencies: [19, 1429, 1921, 673, 21, 586, 6001, 1233, 5608, 17366, 17367, 17368, 17369, 6116, 2]
+// Dependencies: [19, 1430, 1921, 673, 21, 586, 5642, 1233, 5560, 17446, 17447, 17448, 17449, 7200, 2]
 // Exports: default
 
-// Module 17365 (HasCreatedListingsSection)
+// Module 17445 (HasCreatedListingsSection)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6116 */;
-import registerAssetDefault from "registerAsset" /* 17366 */;
-import registerAssetDefault2 from "registerAsset" /* 17367 */;
-import registerAssetDefault3 from "registerAsset" /* 17369 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7200 */;
+import registerAssetDefault from "registerAsset" /* 17446 */;
+import registerAssetDefault2 from "registerAsset" /* 17447 */;
+import registerAssetDefault3 from "registerAsset" /* 17449 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -51,12 +51,12 @@ function HasCreatedListingsSection(arg0) {
     const intl4 = tmp(1233).intl;
     obj4[0] = intl4.string(tmp(1233).t.p2Rsdl);
     const obj5 = { source: null };
-    obj5[0] = tmp6(17368);
-    obj4[2] = tmp5(tmp(5608).TableRow.Icon, obj5);
+    obj5[0] = tmp6(17448);
+    obj4[2] = tmp5(tmp(5560).TableRow.Icon, obj5);
     obj4[3] = function onPress() {
       return callback(closure_1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = tmp5(tmp(5608).TableRow, obj4, "guild-role-subscriptions-payments");
+    stateFromStores = tmp5(tmp(5560).TableRow, obj4, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj6 = { label: null, arrow: true, icon: null, onPress: null };

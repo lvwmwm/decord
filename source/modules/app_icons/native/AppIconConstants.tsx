@@ -1,38 +1,38 @@
-// Module ID: 8191
-// Function ID: 8192
+// Module ID: 9252
+// Function ID: 9253
 // Name: items
-// Dependencies: [8192, 8193, 1233, 8194, 8195, 8196, 8197, 8198, 8199, 8200, 8201, 8202, 8203, 8204, 8205, 8206, 8207, 8208, 8209, 8210, 8211, 8212, 8213, 8214, 8215, 8216, 8217, 2]
+// Dependencies: [9253, 9254, 1233, 9255, 9256, 9257, 9258, 9259, 9260, 9261, 9262, 9263, 9264, 9265, 9266, 9267, 9268, 9269, 9270, 9271, 9272, 9273, 9274, 9275, 9276, 9277, 9278, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getLimitedAlternateIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 8191 (items)
+// Module 9252 (items)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import FreemiumAppIconIds from "FreemiumAppIconIds" /* 8192 */;
-import registerAssetDefault from "registerAsset" /* 8193 */;
-import registerAssetDefault2 from "registerAsset" /* 8194 */;
-import registerAssetDefault3 from "registerAsset" /* 8195 */;
-import registerAssetDefault4 from "registerAsset" /* 8196 */;
-import registerAssetDefault5 from "registerAsset" /* 8197 */;
-import registerAssetDefault6 from "registerAsset" /* 8198 */;
-import registerAssetDefault7 from "registerAsset" /* 8199 */;
-import registerAssetDefault8 from "registerAsset" /* 8200 */;
-import registerAssetDefault9 from "registerAsset" /* 8201 */;
-import registerAssetDefault10 from "registerAsset" /* 8202 */;
-import registerAssetDefault11 from "registerAsset" /* 8203 */;
-import registerAssetDefault12 from "registerAsset" /* 8204 */;
-import registerAssetDefault13 from "registerAsset" /* 8205 */;
-import registerAssetDefault14 from "registerAsset" /* 8206 */;
-import registerAssetDefault15 from "registerAsset" /* 8207 */;
-import registerAssetDefault16 from "registerAsset" /* 8208 */;
-import registerAssetDefault17 from "registerAsset" /* 8209 */;
-import registerAssetDefault18 from "registerAsset" /* 8210 */;
-import registerAssetDefault19 from "registerAsset" /* 8211 */;
-import registerAssetDefault20 from "registerAsset" /* 8212 */;
-import registerAssetDefault21 from "registerAsset" /* 8213 */;
-import registerAssetDefault22 from "registerAsset" /* 8214 */;
-import registerAssetDefault23 from "registerAsset" /* 8215 */;
-import registerAssetDefault24 from "registerAsset" /* 8216 */;
-import registerAssetDefault25 from "registerAsset" /* 8217 */;
+import FreemiumAppIconIds from "FreemiumAppIconIds" /* 9253 */;
+import registerAssetDefault from "registerAsset" /* 9254 */;
+import registerAssetDefault2 from "registerAsset" /* 9255 */;
+import registerAssetDefault3 from "registerAsset" /* 9256 */;
+import registerAssetDefault4 from "registerAsset" /* 9257 */;
+import registerAssetDefault5 from "registerAsset" /* 9258 */;
+import registerAssetDefault6 from "registerAsset" /* 9259 */;
+import registerAssetDefault7 from "registerAsset" /* 9260 */;
+import registerAssetDefault8 from "registerAsset" /* 9261 */;
+import registerAssetDefault9 from "registerAsset" /* 9262 */;
+import registerAssetDefault10 from "registerAsset" /* 9263 */;
+import registerAssetDefault11 from "registerAsset" /* 9264 */;
+import registerAssetDefault12 from "registerAsset" /* 9265 */;
+import registerAssetDefault13 from "registerAsset" /* 9266 */;
+import registerAssetDefault14 from "registerAsset" /* 9267 */;
+import registerAssetDefault15 from "registerAsset" /* 9268 */;
+import registerAssetDefault16 from "registerAsset" /* 9269 */;
+import registerAssetDefault17 from "registerAsset" /* 9270 */;
+import registerAssetDefault18 from "registerAsset" /* 9271 */;
+import registerAssetDefault19 from "registerAsset" /* 9272 */;
+import registerAssetDefault20 from "registerAsset" /* 9273 */;
+import registerAssetDefault21 from "registerAsset" /* 9274 */;
+import registerAssetDefault22 from "registerAsset" /* 9275 */;
+import registerAssetDefault23 from "registerAsset" /* 9276 */;
+import registerAssetDefault24 from "registerAsset" /* 9277 */;
+import registerAssetDefault25 from "registerAsset" /* 9278 */;
 
 let obj = { id: FreemiumAppIconIds.PremiumAppIconIds.IN_RAINBOWS, iconSource: registerAssetDefault2, isPremium: true, name: null };
 let intl = getSystemLocale.intl;
@@ -194,7 +194,7 @@ export const getIcons = function getIcons() {
 };
 export const getIconById = function getIconById(currentAppIcon) {
   const _require = currentAppIcon;
-  let obj = { id: _require(8192).FreemiumAppIconIds.DEFAULT, iconSource: registerAssetDefault, name: null, isPremium: false };
+  let obj = { id: _require(9253).FreemiumAppIconIds.DEFAULT, iconSource: registerAssetDefault, name: null, isPremium: false };
   const intl = _require(1233).intl;
   obj[2] = intl.string(_require(1233).t.ANxkLy);
   items = [
@@ -219,7 +219,7 @@ export const getIconById = function getIconById(currentAppIcon) {
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     obj = { id: null, iconSource: null, name: null, isPremium: false };
-    obj[0] = tmp(8192).FreemiumAppIconIds.DEFAULT;
+    obj[0] = tmp(9253).FreemiumAppIconIds.DEFAULT;
     obj[1] = registerAssetDefault;
     const intl2 = tmp(1233).intl;
     obj[2] = intl2.string(tmp(1233).t.ANxkLy);

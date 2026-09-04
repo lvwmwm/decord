@@ -1,9 +1,9 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16388
+// Function ID: 16389
 // Name: ICYMI_CUSTOM_SCORES_MODAL_KEY
 // Dependencies: [2]
 
-// Module 16302 (ICYMI_CUSTOM_SCORES_MODAL_KEY)
+// Module 16388 (ICYMI_CUSTOM_SCORES_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoreTypes.tsx");

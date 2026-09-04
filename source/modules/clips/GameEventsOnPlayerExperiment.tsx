@@ -1,12 +1,12 @@
-// Module ID: 5085
-// Function ID: 5086
+// Module ID: 5093
+// Function ID: 5094
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 5085 (apexExperiment)
+// Module 5093 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enableGameEventsOnPlayer: true };

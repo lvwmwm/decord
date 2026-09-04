@@ -1,15 +1,15 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 13043
+// Function ID: 13044
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1995, 12813, 7316, 673, 684, 706, 4756, 4377, 2]
+// Dependencies: [5, 1995, 13041, 7494, 673, 684, 706, 4763, 4380, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 12815 (_maybeFetchCollectionsWithProducts)
+// Module 13043 (_maybeFetchCollectionsWithProducts)
 import setDefault from "set" /* 684 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "getFetchState" /* 12813 */;
-import closure_6 from "fromServer" /* 7316 */;
+import closure_5 from "getFetchState" /* 13041 */;
+import closure_6 from "fromServer" /* 7494 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
@@ -326,7 +326,7 @@ function _maybeFetchCollectionsForApplicationPage() {
               obj1 = callback2(706);
               const obj5 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_FAILURE", pageKey: null, apiError: null };
               obj5[1] = callback2;
-              const tmp21 = new callback2(4377)(locale);
+              const tmp21 = new callback2(4380)(locale);
               obj5[2] = tmp21;
               obj1.dispatch(obj5);
             } else if (arg0 === 1) {
@@ -493,7 +493,7 @@ function _maybeFetchCollectionsAfter() {
               obj3 = lib2(706);
               obj5 = { type: "STOREFRONT_COLLECTIONS_AFTER_FETCH_FAILURE", requestKey: null, apiError: null };
               obj5[1] = lib;
-              const tmp28 = new lib2(4377)(dependencyMap);
+              const tmp28 = new lib2(4380)(dependencyMap);
               obj5[2] = tmp28;
               obj3.dispatch(obj5);
             } else if (arg0 === 1) {

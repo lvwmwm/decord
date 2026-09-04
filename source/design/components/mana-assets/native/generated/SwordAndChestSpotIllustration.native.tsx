@@ -1,14 +1,14 @@
-// Module ID: 7093
-// Function ID: 7094
+// Module ID: 6474
+// Function ID: 6475
 // Name: SwordAndChestSpotIllustration
-// Dependencies: [21, 5502, 7094, 2]
+// Dependencies: [21, 5542, 6475, 2]
 // Exports: SwordAndChestSpotIllustration
 
-// Module 7093 (SwordAndChestSpotIllustration)
+// Module 6474 (SwordAndChestSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7094 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6475 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndChestSpotIllustration.native.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 9773
+// Function ID: 9774
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1386, 4130, 1921, 5461, 673, 4674, 2]
+// Dependencies: [1386, 4130, 1921, 5470, 673, 4681, 2]
 // Exports: default
 
-// Module 9961 (createAutocompleterResultForChannelId)
-import computeChannelName from "computeChannelName" /* 4674 */;
+// Module 9773 (createAutocompleterResultForChannelId)
+import computeChannelName from "computeChannelName" /* 4681 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;

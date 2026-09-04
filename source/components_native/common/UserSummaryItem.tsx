@@ -1,18 +1,18 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 9983
+// Function ID: 9984
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 1991, 21, 4478, 709, 1296, 586, 1430, 4673, 1233, 4474, 2]
+// Dependencies: [19, 17, 1991, 21, 4481, 709, 1296, 586, 1431, 4680, 1233, 4477, 2]
 // Exports: default
 
-// Module 10163 (UserSummaryItem)
+// Module 9983 (UserSummaryItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

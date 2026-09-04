@@ -1,19 +1,19 @@
-// Module ID: 5630
-// Function ID: 5631
+// Module ID: 7089
+// Function ID: 7090
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1492, 4197, 4474, 5505, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 1492, 4197, 4477, 5580, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5630 (RedesignBottomSheetTitleHeaderBase)
+// Module 7089 (RedesignBottomSheetTitleHeaderBase)
 import ThemesDefault from "Themes" /* 709 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import Text from "Text" /* 4474 */;
-import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5505 */;
+import Text from "Text" /* 4477 */;
+import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5580 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function RedesignBottomSheetTitleHeaderBase(children) {

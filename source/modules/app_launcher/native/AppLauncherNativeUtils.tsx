@@ -1,22 +1,22 @@
-// Module ID: 11852
-// Function ID: 11853
+// Module ID: 11983
+// Function ID: 11984
 // Name: handleApplicationSelected
-// Dependencies: [19, 1386, 1921, 1497, 673, 4953, 4701, 7278, 11853, 7276, 1954, 7533, 1900, 8157, 1430, 9067, 9187, 11858, 5968, 9470, 4446, 2]
+// Dependencies: [19, 1386, 1921, 1497, 673, 4960, 4708, 7456, 11984, 7454, 1954, 7710, 1900, 9218, 1431, 11147, 9548, 11989, 7108, 9444, 4449, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11852 (handleApplicationSelected)
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+// Module 11983 (handleApplicationSelected)
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import registerAssetDefault from "registerAsset" /* 1900 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
-import setActiveCommandAll from "setActiveCommand" /* 7533 */;
-import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 8157 */;
-import Placeholder from "Placeholder" /* 11853 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import setActiveCommandAll from "setActiveCommand" /* 7710 */;
+import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 9218 */;
+import Placeholder from "Placeholder" /* 11984 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4953 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4960 */;
 
 require = arg1;
 ({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: error, AppLauncherRouteName: closure_8 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
@@ -32,9 +32,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   let obj = collectGuildAnalyticsMetadata;
   obj = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(7278).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(7456).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7278).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7456).ApplicationCommandTriggerSections.APP;
   }
   obj[1] = APP;
   let id = application.id;
@@ -69,8 +69,8 @@ export const handleApplicationCommandSelected = function handleApplicationComman
   ({ location: _location, context, command } = arg0);
   ({ section, sectionDescriptors, query, navigation, installOnDemand, sectionName, entrypoint } = arg0);
   ({ searchResultsPosition, onCommandExecuted } = arg0);
-  let obj = command(7276);
-  obj = { command, location: _location, triggerSection: command(7276).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
+  let obj = command(7454);
+  obj = { command, location: _location, triggerSection: command(7454).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
   obj.trackCommandSelected(obj);
   if (command.type === command(1954).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
     obj = { application: null, context: null, installOnDemand: null, sectionName: null, entrypoint: null };
@@ -242,7 +242,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(9067).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(11147).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

@@ -1,14 +1,14 @@
-// Module ID: 7950
-// Function ID: 7951
+// Module ID: 7960
+// Function ID: 7961
 // Name: createStageRaiseHandSystemMessage
-// Dependencies: [5371, 1386, 4120, 673, 1233, 1994, 7881, 11, 4668, 7883, 7885, 2]
+// Dependencies: [5379, 1386, 4120, 673, 1233, 1994, 7891, 11, 4675, 7893, 7895, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7950 (createStageRaiseHandSystemMessage)
+// Module 7960 (createStageRaiseHandSystemMessage)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import closure_3 from "getActiveStageChannelIds" /* 5371 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import closure_3 from "getActiveStageChannelIds" /* 5379 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
@@ -42,14 +42,14 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(4668).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(4675).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
   }
   obj = { content: null, showInviteToSpeakButton: null, buttonLabel: null, ephemeralIndication: null };
   const intl = tmp(1233).intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6(7883)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6(7893)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj[0] = intl.formatToParts(getSystemLocale.t.M87x7Y, obj);
   obj[1] = canResult;
   const intl2 = tmp(1233).intl;
@@ -72,6 +72,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     }
   }
   obj[3] = tmp10;
-  const merged = Object.assign(tmp6(7885)(roleStyle));
+  const merged = Object.assign(tmp6(7895)(roleStyle));
   return obj;
 };

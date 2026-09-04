@@ -1,12 +1,12 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9514
+// Function ID: 9515
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 4859, 9571, 2008, 2]
+// Dependencies: [19, 21, 4866, 9515, 2008, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 9570 (openIgnoreThermalStateAlert)
+// Module 9514 (openIgnoreThermalStateAlert)
 import noopAll from "noop" /* 19 */;
-import _modDef4859 from "module_4859" /* 4859 */;
+import _modDef4866 from "module_4866" /* 4866 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/activities/native/o
 
 export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(arg0) {
   closure_0 = arg0;
-  let obj = _modDef4859;
+  let obj = _modDef4866;
   obj = {
     importer() {
       return callback(closure_1_2[4])(closure_1_2[3], closure_1_2.paths).then((IgnoreThermalStateAlert) => {

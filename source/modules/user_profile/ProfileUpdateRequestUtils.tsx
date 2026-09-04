@@ -1,14 +1,14 @@
-// Module ID: 11057
-// Function ID: 11058
+// Module ID: 11018
+// Function ID: 11019
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [7773, 11058, 1949, 2]
+// Dependencies: [6929, 11019, 1949, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 11057 (getProfileChangesForUpdateRequest)
+// Module 11018 (getProfileChangesForUpdateRequest)
 import set from "set" /* 2 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 7773 */;
-import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11058 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 6929 */;
+import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11019 */;
 
 const result = set.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 

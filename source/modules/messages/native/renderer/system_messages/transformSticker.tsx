@@ -1,10 +1,10 @@
-// Module ID: 7919
-// Function ID: 7920
+// Module ID: 7929
+// Function ID: 7930
 // Name: transformSticker
-// Dependencies: [4169, 4853, 7920, 7872, 1233, 4166, 2]
+// Dependencies: [4169, 4860, 7930, 7882, 1233, 4166, 2]
 // Exports: transformSticker
 
-// Module 7919 (transformSticker)
+// Module 7929 (transformSticker)
 import set from "set" /* 2 */;
 import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
 
@@ -22,16 +22,16 @@ export const transformSticker = function transformSticker(tmp5Result1) {
     str = "";
   }
   obj.asset = str;
-  let tmpResult = tmp(4853);
+  let tmpResult = tmp(4860);
   obj = { isPreview: !tmp5 };
   let str2 = tmpResult.getStickerAssetUrl(tmp5Result1, obj);
   if (str2 == null) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp(7920).NativeLottieRenderMode;
+  const NativeLottieRenderMode = tmp(7930).NativeLottieRenderMode;
   obj.renderMode = setting === StickerAnimationSettings.ALWAYS_ANIMATE ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
-  tmpResult = tmp(7872);
+  tmpResult = tmp(7882);
   obj = {
     expensive() {
       const intl = tmp5Result1(closure_1_1[4]).intl;

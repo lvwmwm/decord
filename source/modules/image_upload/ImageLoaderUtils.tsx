@@ -1,11 +1,11 @@
-// Module ID: 1464
-// Function ID: 1465
+// Module ID: 1465
+// Function ID: 1466
 // Name: handleImageLoad
-// Dependencies: [32, 5, 673, 1465, 1400, 581, 1472, 1482, 1485, 1489, 1466, 1894, 12, 2]
+// Dependencies: [32, 5, 673, 1466, 1401, 581, 1472, 1482, 1485, 1489, 1467, 1894, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1464 (handleImageLoad)
-import privDefault from "priv" /* 1400 */;
+// Module 1465 (handleImageLoad)
+import privDefault from "priv" /* 1401 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import fit from "fit" /* 1489 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1894 */;
@@ -99,13 +99,13 @@ function getSrcWithWidthAndHeight(quality) {
         size[0] = width;
         size[1] = height;
         if (null != tmp18) {
-          let tmp15Result = tmp15(1466);
+          let tmp15Result = tmp15(1467);
           obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
           obj[0] = width;
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
-          tmp15Result = tmp15(1466);
+          tmp15Result = tmp15(1467);
           obj[4] = tmp15Result.getSnapDownMaxUpscale(tmp18, tmp2(1894)());
           size = tmp15Result.snapAttachmentDimensions(obj);
         }
@@ -289,7 +289,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = closure_1_4(/* F107855 */ function() { ... });
+                            image.onerror = closure_1_4(/* F108174 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });

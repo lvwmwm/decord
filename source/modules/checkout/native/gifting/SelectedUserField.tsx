@@ -1,18 +1,18 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 10788
+// Function ID: 10789
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4478, 709, 6239, 1233, 4322, 6245, 1296, 4474, 6235, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 6561, 1233, 4325, 6991, 1296, 4477, 6556, 2]
 // Exports: default
 
-// Module 10854 (SelectedUserField)
+// Module 10788 (SelectedUserField)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import useInputStyles from "useInputStyles" /* 6239 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6245 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import useInputStyles from "useInputStyles" /* 6561 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6991 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -65,14 +65,14 @@ export default function SelectedUserField(onPress) {
   if (null != selectedUser) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.userPill;
-    obj3 = { user: null, guildId: "Array", size: 102039555 };
+    obj3 = { user: null, guildId: "Array", size: "Array" };
     obj3[0] = selectedUser;
     obj3[2] = tmp4(1296).AvatarSizes.XSMALL_20;
     const items2 = [tmp2(tmp4(1296).Avatar, obj3), ];
     const obj4 = { variant: "text-md/medium", style: null, children: null };
     obj4[1] = tmp.userPillText;
     obj4[2] = nameFromUserDefault.getName(selectedUser);
-    items2[1] = tmp2(tmp4(4474).Text, obj4);
+    items2[1] = tmp2(tmp4(4477).Text, obj4);
     obj2[1] = items2;
     let tmp2Result = tmp6(tmp3, obj2);
     const obj10 = nameFromUserDefault;
@@ -81,7 +81,7 @@ export default function SelectedUserField(onPress) {
     obj5[2] = tmp.userPillText;
     const intl4 = tmp4(1233).intl;
     obj5[3] = intl4.string(tmp4(1233).t.R0vK0N);
-    tmp2Result = tmp2(tmp4(4474).Text, obj5);
+    tmp2Result = tmp2(tmp4(4477).Text, obj5);
   }
   items1[1] = tmp2Result;
   obj[4] = items1;
@@ -97,7 +97,7 @@ export default function SelectedUserField(onPress) {
     const obj7 = { text: null };
     obj7[0] = nameFromUserDefault.getName(selectedUser);
     obj6[3] = intl5.formatToPlainString(tmp4(1233).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(6235).CircleXIcon, { size: "xs" });
+    obj6[4] = tmp2(tmp4(6556).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
     const obj13 = nameFromUserDefault;
   }

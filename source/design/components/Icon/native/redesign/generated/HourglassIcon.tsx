@@ -1,14 +1,14 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 8960
+// Function ID: 8961
 // Name: HourglassIcon
-// Dependencies: [19, 21, 709, 4196, 9414, 2]
+// Dependencies: [19, 21, 709, 4196, 8961, 2]
 // Exports: HourglassIcon
 
-// Module 9413 (HourglassIcon)
+// Module 8960 (HourglassIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9414 */;
+import registerAsset from "registerAsset" /* 8961 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

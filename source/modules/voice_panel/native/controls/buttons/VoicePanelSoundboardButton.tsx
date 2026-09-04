@@ -1,18 +1,18 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17120
+// Function ID: 17121
 // Name: SoundboardButton
-// Dependencies: [19, 21, 4478, 709, 12068, 17020, 17035, 17021, 1233, 6015, 12328, 2]
+// Dependencies: [19, 21, 4481, 709, 12204, 17106, 17121, 17107, 1233, 5544, 12460, 2]
 // Exports: default
 
-// Module 17034 (SoundboardButton)
+// Module 17120 (SoundboardButton)
 import ThemesDefault from "Themes" /* 709 */;
-import dismissPanelDefault from "dismissPanel" /* 12068 */;
-import useVoicePanelButtonStyles from "useVoicePanelButtonStyles" /* 17020 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17035 */;
-import useSoundboardConfigDefault from "useSoundboardConfig" /* 17035 */;
+import dismissPanelDefault from "dismissPanel" /* 12204 */;
+import useVoicePanelButtonStyles from "useVoicePanelButtonStyles" /* 17106 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17121 */;
+import useSoundboardConfigDefault from "useSoundboardConfig" /* 17121 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -41,7 +41,7 @@ export default function SoundboardButton(arg0) {
     obj[0] = handlePress;
     obj[1] = disabled;
     obj[2] = props;
-    let tmpResult = tmp(17021);
+    let tmpResult = tmp(17107);
     const intl = tmp4(1233).intl;
     obj[3] = intl.string(tmp4(1233).t["6EJvHt"]);
     obj[4] = disabledAccessibilityHint;
@@ -51,13 +51,13 @@ export default function SoundboardButton(arg0) {
     obj1[0] = voicePanelButtonStyles.iconBg.backgroundColor;
     items[1] = obj1;
     obj[0] = items;
-    const items1 = [callback(tmp(6015), obj), ];
+    const items1 = [callback(tmp(5544), obj), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp3.iconContainer;
-    tmpResult = tmp(6015);
+    tmpResult = tmp(5544);
     const obj3 = { color: null };
     obj3[0] = color;
-    obj2[1] = callback(tmp4(12328).SoundboardIcon, obj3);
+    obj2[1] = callback(tmp4(12460).SoundboardIcon, obj3);
     items1[1] = callback(tmpResult, obj2);
     obj[5] = items1;
     tmp8 = callback2(tmpResult, obj);

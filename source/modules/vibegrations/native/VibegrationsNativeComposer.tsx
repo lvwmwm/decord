@@ -1,21 +1,21 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16535
+// Function ID: 16536
 // Name: tooLargeText
-// Dependencies: [5, 32, 19, 17, 16427, 673, 21, 4478, 709, 1233, 3500, 6104, 5103, 11085, 4474, 5077, 6235, 8811, 12035, 10913, 8384, 15775, 4423, 2]
+// Dependencies: [5, 32, 19, 17, 16513, 673, 21, 4481, 709, 1233, 3500, 7188, 5111, 11155, 4477, 5084, 6556, 8596, 12171, 10882, 8531, 15861, 4426, 2]
 // Exports: default
 
-// Module 16449 (tooLargeText)
+// Module 16535 (tooLargeText)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3500 */;
-import frozen from "frozen" /* 6104 */;
+import frozen from "frozen" /* 7188 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import rejectPendingPublish from "rejectPendingPublish" /* 16427 */;
+import rejectPendingPublish from "rejectPendingPublish" /* 16513 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function tooLargeText(contentType) {
@@ -371,9 +371,9 @@ export default function VibegrationsNativeComposer(projectId) {
             closure_1 = tmp5;
             closure_0 = tmp2;
             closure_0 = undefined;
-            obj1 = closure_1_1(5103);
+            obj1 = closure_1_1(5111);
             obj1 = { mediaType: "any", selectionLimit: null, skipProcessing: true };
-            obj1[1] = closure_1_0(6104).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+            obj1[1] = closure_1_0(7188).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
             dependencyMap = 1;
             c3 = 1;
             const obj2 = { value: null, done: false };

@@ -1,15 +1,15 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15094
+// Function ID: 15095
 // Name: route
-// Dependencies: [673, 11292, 1233, 11307, 14838, 15013, 2]
+// Dependencies: [673, 11400, 1233, 11415, 14919, 15095, 2]
 
-// Module 15012 (route)
+// Module 15094 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useQuests from "useQuests" /* 11307 */;
-import QuestsIcon from "QuestsIcon" /* 14838 */;
-import createToggle from "createToggle" /* 11292 */;
+import useQuests from "useQuests" /* 11415 */;
+import QuestsIcon from "QuestsIcon" /* 14919 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -26,7 +26,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.QUEST_PREVIEW_TOOL_2,
   getComponent() {
-    return require(15013) /* SettingsQuestPreviewScreen */.default;
+    return require(15095) /* SettingsQuestPreviewScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

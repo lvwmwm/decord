@@ -1,17 +1,17 @@
-// Module ID: 5611
-// Function ID: 5612
+// Module ID: 5563
+// Function ID: 5564
 // Name: createCardShadowToken
-// Dependencies: [4478, 709, 2]
+// Dependencies: [4481, 709, 2]
 // Exports: createCardShadowToken
 
-// Module 5611 (createCardShadowToken)
+// Module 5563 (createCardShadowToken)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/components/Card/native/CardTokens.native.tsx");
 
 export const createCardShadowToken = function createCardShadowToken(arg0) {
   const _require = arg0;
-  return _require(4478).experimental_createToken((gradient) => {
+  return _require(4481).experimental_createToken((gradient) => {
     if (null == gradient.gradient) {
       if ("none" !== closure_0) {
         if ("border" === tmp11) {

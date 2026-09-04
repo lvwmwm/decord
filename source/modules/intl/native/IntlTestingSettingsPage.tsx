@@ -1,18 +1,18 @@
-// Module ID: 15464
-// Function ID: 15465
+// Module ID: 15546
+// Function ID: 15547
 // Name: TestLocaleSelector
-// Dependencies: [32, 5, 19, 17, 1996, 1995, 21, 4478, 709, 7704, 1233, 8226, 7705, 586, 4074, 6001, 5608, 1273, 4927, 4474, 15465, 15497, 2]
+// Dependencies: [32, 5, 19, 17, 1996, 1995, 21, 4481, 709, 5640, 1233, 9287, 5643, 586, 4074, 5642, 5560, 1273, 4934, 4477, 15547, 15579, 2]
 // Exports: default
 
-// Module 15464 (TestLocaleSelector)
+// Module 15546 (TestLocaleSelector)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import messagesProxyDefault from "messagesProxy" /* 15465 */;
-import messagesProxyDefault2 from "messagesProxy" /* 15497 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import messagesProxyDefault from "messagesProxy" /* 15547 */;
+import messagesProxyDefault2 from "messagesProxy" /* 15579 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
@@ -20,7 +20,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { setAppLocale } from "_setAppLocale" /* 1996 */;
 import closure_9 from "_getSystemLocale" /* 1995 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TestLocaleSelector() {
@@ -96,9 +96,9 @@ function TestLocaleSelector() {
     }
     return applyArgumentsResult;
   };
-  const items = [callback3(_require(7705).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(7705).TableRadioRow, { label: "French", value: "fr" })];
+  const items = [callback3(_require(5643).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(5643).TableRadioRow, { label: "French", value: "fr" })];
   obj[4] = items;
-  return callback4(_require(7704).TableRadioGroup, obj);
+  return callback4(_require(5640).TableRadioGroup, obj);
 }
 function LocaleInfo() {
   let obj = initialize;
@@ -165,15 +165,15 @@ export default function IntlTestingSettingsPage() {
   obj = { variant: "text-md/normal", children: null };
   const intl = _require(1233).intl;
   obj[1] = intl.format(messagesProxyDefault.HMvEC5, {});
-  items[2] = callback3(_require(4474).Text, obj);
+  items[2] = callback3(_require(4477).Text, obj);
   obj1 = { variant: "text-md/normal", children: null };
   const intl2 = _require(1233).intl;
   obj1[1] = intl2.format(messagesProxyDefault2.swfLzV, {});
-  items[3] = callback3(_require(4474).Text, obj1);
+  items[3] = callback3(_require(4477).Text, obj1);
   const obj2 = { variant: "text-md/normal", children: null };
   const intl3 = _require(1233).intl;
   obj2[1] = intl3.format(messagesProxyDefault.rmps8y, {});
-  items[4] = callback3(_require(4474).Text, obj2);
+  items[4] = callback3(_require(4477).Text, obj2);
   const obj3 = { variant: "text-md/normal", children: null };
   const intl4 = _require(1233).intl;
   obj3[1] = intl4.format(messagesProxyDefault.uczI4g, {
@@ -181,23 +181,23 @@ export default function IntlTestingSettingsPage() {
 
     }
   });
-  items[5] = callback3(_require(4474).Text, obj3);
+  items[5] = callback3(_require(4477).Text, obj3);
   const obj5 = { variant: "text-md/normal", children: null };
   const intl5 = _require(1233).intl;
   obj5[1] = intl5.format(messagesProxyDefault.rdfRyh, {});
-  items[6] = callback3(_require(4474).Text, obj5);
+  items[6] = callback3(_require(4477).Text, obj5);
   const obj6 = { variant: "text-md/normal", children: null };
   const intl6 = _require(1233).intl;
   obj6[1] = intl6.format(messagesProxyDefault.XOdbAy, {
     username: "some user",
     usernameHook(children) {
-      obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4474).Text, obj) };
+      obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4477).Text, obj) };
       obj = { variant: "text-sm/normal", color: "text-overlay-light", children };
       return callback2(closure_6, obj);
     }
   });
-  items[7] = callback3(_require(4474).Text, obj6);
+  items[7] = callback3(_require(4477).Text, obj6);
   obj[2] = items;
-  obj[1] = callback4(_require(4927).Stack, obj);
+  obj[1] = callback4(_require(4934).Stack, obj);
   return callback3(closure_7, obj);
 };

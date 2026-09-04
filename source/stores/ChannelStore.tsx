@@ -1,7 +1,7 @@
 // Module ID: 1386
 // Function ID: 1387
 // Name: ensureGuildLoaded
-// Dependencies: [32, 5, 1387, 1389, 1390, 1215, 1908, 1921, 673, 3, 1470, 1955, 1975, 1976, 706, 1977, 10, 11, 1978, 12, 586, 2]
+// Dependencies: [32, 5, 1387, 1389, 1390, 1215, 1908, 1921, 673, 3, 1394, 1955, 1975, 1976, 706, 1977, 10, 11, 1978, 12, 586, 2]
 
 // Module 1386 (ensureGuildLoaded)
 import timestampDefault from "timestamp" /* 3 */;
@@ -577,7 +577,7 @@ prototype["loadGuildFromChannelId"] = function loadGuildFromChannelId(channel_id
   return guildIds;
 };
 prototype["loadGuildIds"] = function loadGuildIds(items) {
-  found = items.filter(found(1470).isNotNullish);
+  found = items.filter(found(1394).isNotNullish);
   if (0 === found.length) {
     return null;
   } else {

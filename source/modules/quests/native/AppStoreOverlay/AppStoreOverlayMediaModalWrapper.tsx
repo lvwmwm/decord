@@ -1,10 +1,10 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11442
+// Function ID: 11443
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [19, 4186, 673, 21, 11333, 4724, 8602, 8603, 2]
+// Dependencies: [19, 4186, 673, 21, 11441, 4731, 8218, 8219, 2]
 // Exports: default
 
-// Module 11334 (AppStoreOverlayMediaModalWrapper)
+// Module 11442 (AppStoreOverlayMediaModalWrapper)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "setContent" /* 4186 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 673 */;
@@ -28,13 +28,13 @@ export default function AppStoreOverlayMediaModalWrapper(onCloseCallback) {
   }, items);
   if (open.isOpen()) {
     let obj = {};
-    let tmp5Result = tmp5(8602);
+    let tmp5Result = tmp5(8218);
     const merged1 = Object.assign(merged);
     obj.onCloseCallback = onCloseCallback;
     let tmp4Result = tmp4(tmp5Result, obj);
   } else {
     obj = {};
-    tmp5Result = tmp5(8603);
+    tmp5Result = tmp5(8219);
     const merged2 = Object.assign(merged);
     obj.onClose = callback;
     tmp4Result = tmp4(tmp5Result, obj);

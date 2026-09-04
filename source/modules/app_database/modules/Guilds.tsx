@@ -1,15 +1,15 @@
-// Module ID: 7405
-// Function ID: 7406
+// Module ID: 7583
+// Function ID: 7584
 // Name: getAsync
-// Dependencies: [5, 1429, 1215, 1991, 1984, 1908, 3, 1955, 1988, 1986, 1425, 2]
+// Dependencies: [5, 1430, 1215, 1991, 1984, 1908, 3, 1955, 1988, 1986, 1426, 2]
 
-// Module 7405 (getAsync)
+// Module 7583 (getAsync)
 import timestampDefault from "timestamp" /* 3 */;
-import fromGuildPropertiesWithAdditionalFieldsAll from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import fromGuildPropertiesWithAdditionalFieldsAll from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
 import fromServerArrayAll from "fromServerArray" /* 1986 */;
 import compareGuildRolesAll from "compareGuildRoles" /* 1988 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { updateJoinedAt } from "GuildNSFWContentLevel" /* 1429 */;
+import { updateJoinedAt } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
 import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
@@ -113,8 +113,8 @@ prototype["handleBackgroundSync"] = function handleBackgroundSync(arg0, arg1) {
           filterRoleDeletesResult = obj.fromServerArray(tmp2.id, tmp2.roles);
           tmp7 = importAll;
         }
-        let tmp7Result = tmp7(1425);
-        tmp7Result = tmp7(1425);
+        let tmp7Result = tmp7(1426);
+        tmp7Result = tmp7(1426);
         let tmp13 = nextResult;
         let tmp14 = guild;
         let fromBackgroundSyncResult = tmp7Result.fromBackgroundSync(tmp2, tmp22);

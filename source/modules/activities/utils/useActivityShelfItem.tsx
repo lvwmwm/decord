@@ -1,22 +1,22 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 11989
+// Function ID: 11990
 // Name: useActivityAction
-// Dependencies: [5, 1385, 4506, 673, 9482, 8450, 1234, 9638, 11859, 11860, 1954, 8449, 9619, 9618, 5968, 4110, 5962, 9487, 9478, 4491, 9532, 9467, 2]
+// Dependencies: [5, 1385, 4509, 673, 9440, 9339, 1234, 9581, 11990, 11991, 1954, 8786, 9562, 9561, 7108, 4110, 7102, 9435, 9436, 4494, 9477, 9461, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 11858 (useActivityAction)
-import getApplicationFlags from "getApplicationFlags" /* 8449 */;
-import getPlatformDefault from "getPlatform" /* 8450 */;
-import canLaunchFrame from "canLaunchFrame" /* 9487 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 9618 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9619 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9638 */;
-import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11860 */;
+// Module 11989 (useActivityAction)
+import getApplicationFlags from "getApplicationFlags" /* 8786 */;
+import getPlatformDefault from "getPlatform" /* 9339 */;
+import canLaunchFrame from "canLaunchFrame" /* 9435 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 9561 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9562 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9581 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11991 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "participantFromServer" /* 1385 */;
-import { STAFF_RELEASE_PHASES } from "items3" /* 4506 */;
+import { STAFF_RELEASE_PHASES } from "items3" /* 4509 */;
 import { ApplicationFlags } from "ME" /* 673 */;
-import { MAIN_SURFACE } from "FrameLayoutModes" /* 9482 */;
+import { MAIN_SURFACE } from "FrameLayoutModes" /* 9440 */;
 
 require = arg1;
 function useActivityAction(applicationId) {
@@ -32,7 +32,7 @@ function useActivityAction(applicationId) {
   }
   const tmp4 = useCurrentEmbeddedActivityDefault();
   const tmp5 = useCurrentEmbeddedApplicationDefault({ fetchesApplication });
-  obj = getOrFetchApplication(5968);
+  obj = getOrFetchApplication(7108);
   getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId, fetchesApplication);
   useEmbeddedAppsDefault(channel);
   if (null == getOrFetchApplication) {
@@ -80,8 +80,8 @@ function useOnActivityItemSelected(arg0) {
     str = "";
   }
   let tmp = useActivityAction({ context, applicationId: str, fetchesApplication });
-  analyticsLocations = context(5962)().analyticsLocations;
-  closure_14 = context(9619)();
+  analyticsLocations = context(7102)().analyticsLocations;
+  closure_14 = context(9562)();
   obj = canLaunchFrame;
   closure_15 = obj.canLaunchFrame(application);
   if (null == application) {
@@ -377,10 +377,10 @@ export default function useActivityShelfItem(backgroundResolution) {
   let tmp9 = null;
   const tmp3 = getPlatformDefault;
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11859)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(11990)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
-  let tmpResult = tmp(11860);
+  let tmpResult = tmp(11991);
   if ("channel" === context.type) {
     channel = context.channel;
   }
@@ -390,9 +390,9 @@ export default function useActivityShelfItem(backgroundResolution) {
   obj1 = { application: activityItem.application, context, locationObject, embeddedActivitiesManager, onActivityItemSelectedProp: onActivityItemSelected, launchingComponentId, commandOrigin, source };
   const tmpResultResult = tmpResult(channel);
   const tmp13 = useActivityAction(obj);
-  let tmp4Result = tmp4(8449);
+  let tmp4Result = tmp4(8786);
   if (tmp4Result.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
-    tmpResult = tmp(8450);
+    tmpResult = tmp(9339);
     tmp4Result = tmp4(1234);
     const str = activityItem.activity.client_platform_config[tmpResult(undefined, tmp4Result.getOS(tmp4Result))].release_phase;
     let replaced;
@@ -402,7 +402,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     }
     const tmp16 = replaced;
   } else {
-    const tmp4Result1 = tmp4(8449);
+    const tmp4Result1 = tmp4(8786);
   }
   const obj2 = { imageBackground: tmp8, videoUrl: tmp9, joinableEmbeddedApp: found, activityAction: tmp13, onActivityItemSelected: useOnActivityItemSelected(obj1), labelType: null, staffReleasePhase: null };
   if (tmp7) {
@@ -417,7 +417,7 @@ export default function useActivityShelfItem(backgroundResolution) {
 export const ActivityAction = obj;
 export const getStaffReleasePhase = function getStaffReleasePhase(application) {
   if (!obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
-    let tmpResult = tmp(8449);
+    let tmpResult = tmp(8786);
   }
   obj = getApplicationFlags;
   const tmp3 = ApplicationFlags;

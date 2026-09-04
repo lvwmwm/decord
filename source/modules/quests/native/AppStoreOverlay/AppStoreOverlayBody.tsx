@@ -1,22 +1,22 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11434
+// Function ID: 11435
 // Name: APP_STORE_OVERLAY_HEIGHT_RATIO
-// Dependencies: [19, 17, 673, 5632, 21, 4478, 709, 5502, 4474, 11327, 1233, 11330, 11335, 1627, 4197, 686, 4941, 4929, 2]
+// Dependencies: [19, 17, 673, 7091, 21, 4481, 709, 5542, 4477, 11435, 1233, 11438, 11443, 1627, 4197, 686, 4948, 4936, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 11326 (APP_STORE_OVERLAY_HEIGHT_RATIO)
+// Module 11434 (APP_STORE_OVERLAY_HEIGHT_RATIO)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5502 */;
-import AppStoreOverlayStatCardItemDefault from "AppStoreOverlayStatCardItem" /* 11327 */;
-import getMeasurableUrlDefault from "getMeasurableUrl" /* 11330 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 11335 */;
+import Text from "Text" /* 4477 */;
+import preloadDefault from "preload" /* 5542 */;
+import AppStoreOverlayStatCardItemDefault from "AppStoreOverlayStatCardItem" /* 11435 */;
+import getMeasurableUrlDefault from "getMeasurableUrl" /* 11438 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 11443 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { VerticalGradient } from "ME" /* 673 */;
-import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_6 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
+import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_6 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
@@ -89,7 +89,7 @@ export const AppStoreOverlayBody = function AppStoreOverlayBody(metadata) {
   if (tmp16Result) {
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: null };
     obj7[2] = metadata.subtitle;
-    tmp16Result = tmp16(tmp17(4474).Text, obj7);
+    tmp16Result = tmp16(tmp17(4477).Text, obj7);
   }
   items3[1] = tmp16Result;
   obj5[1] = items3;
@@ -115,7 +115,7 @@ export const AppStoreOverlayBody = function AppStoreOverlayBody(metadata) {
     const obj10 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp17(1233).intl;
     obj10[2] = intl.string(tmp17(1233).t["EV1W/L"]);
-    const items4 = [tmp16(tmp17(4474).Text, obj10), ];
+    const items4 = [tmp16(tmp17(4477).Text, obj10), ];
     const obj11 = { media: null, onGetGamePress: null };
     obj11[0] = metadata.media;
     obj11[1] = onMediaGetGamePress;
@@ -158,13 +158,13 @@ export const AppStoreOverlayFooter = function AppStoreOverlayFooter(arg0) {
   obj = { style: tmp.footer, onLayout, children: null };
   const memo1 = React.useMemo(() => ({ paddingBottom: Math.max(bottom, closure_1_6) }), items1);
   obj = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END };
-  const items2 = [callback(token(4941), obj), ];
+  const items2 = [callback(token(4948), obj), ];
   obj1 = { style: memo1, children: null };
   const obj2 = { size: "lg", text: null, onPress: null };
   const intl = bottom(1233).intl;
   obj2[1] = intl.string(bottom(1233).t.lwQdjB);
   obj2[2] = onInstallPress;
-  obj1[1] = callback(bottom(4929).Button, obj2);
+  obj1[1] = callback(bottom(4936).Button, obj2);
   items2[1] = callback(View, obj1);
   obj[2] = items2;
   return callback2(View, obj);

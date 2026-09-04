@@ -1,10 +1,10 @@
-// Module ID: 6263
-// Function ID: 6264
+// Module ID: 7328
+// Function ID: 7329
 // Name: useOverlayTrackedGames
 // Dependencies: [2]
-// Exports: useAnyOverlayRendering, useAnyOverlayRenderingLocked, useOverlayTrackedGames
+// Exports: useAnyOverlayRendering, useAnyOverlayRenderingLocked, useOverlayLockState, useOverlayTrackedGames
 
-// Module 6263 (useOverlayTrackedGames)
+// Module 7328 (useOverlayTrackedGames)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/overlay/OverlayTrackingUtils.native.tsx");
@@ -17,4 +17,8 @@ export function useAnyOverlayRendering() {
 }
 export function useAnyOverlayRenderingLocked() {
   return false;
+}
+export function useOverlayLockState() {
+  const items = [false, null];
+  return items;
 }

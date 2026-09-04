@@ -1,14 +1,14 @@
-// Module ID: 4935
-// Function ID: 4936
+// Module ID: 4942
+// Function ID: 4943
 // Name: styleProperties
-// Dependencies: [19, 4478, 4204, 709, 1362, 4197, 4217, 4928, 4932, 4934, 4936, 4931, 4474, 1234, 2]
+// Dependencies: [19, 4481, 4205, 709, 1362, 4197, 4218, 4935, 4939, 4941, 4943, 4938, 4477, 1234, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonScaleStyles, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 4935 (styleProperties)
+// Module 4942 (styleProperties)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import closure_3 from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c4 = "rgba(0,0,0,0.001)";
@@ -506,9 +506,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ay":
     break;
-    case "guildScheduledEvent":
-    break;
-    case "guildScheduledEventId":
+    case "guildVerificationRoleEnabled":
     break;
     case "extraBottomHeight":
     break;
@@ -550,11 +548,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "Setter":
     break;
-    case "useDetectorAttachmentGuard":
-    break;
-    case "entitlementBranchId":
-    break;
-    case "NitroGem24Lottie":
+    case "useDeferredValue":
     break;
     case "MarkupParserNodeTypeError":
     break;
@@ -565,6 +559,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "ro":
     break;
     case "or":
+    break;
+    case "khr":
     break;
     case "BOT_HTTP_INTERACTIONS":
     break;
@@ -578,15 +574,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "INTERACTIONS":
     break;
-    case "NSFW_SERVER":
-    break;
-    case "NSFW_SERVER_AGE_RESTRICTION":
-    break;
-    case "AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING":
-    break;
-    case "RING_CALL_ACCEPTED":
-    break;
-    case "CALL_ACCEPT":
+    case "NSFW_SPACE_WARNING_MODAL_CLICKED":
     break;
     case "rm":
     break;
@@ -610,7 +598,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "perGuildMaxCount":
     break;
-    case "flag_sm":
+    case "closeSuspendedUser":
     break;
     case "getChannelIcon":
     break;
@@ -656,17 +644,19 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "limited":
     break;
-    case "limitedBadgeRow":
+    case "limitedTimeBadge":
     break;
     case "mi":
     break;
     case "mit":
     break;
-    case "withTouchEventBoundary":
+    case "getAppUIViewed":
     break;
-    case "TouchEventBoundary":
+    case "wedding":
     break;
-    case "createGuildReportFalseAlarmSystemMessage":
+    case "getMediaPostEmbedChannelId":
+    break;
+    case "createGuildReportRaidSystemMessage":
     break;
     case "$ZodMap":
     break;
@@ -676,23 +666,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ap":
     break;
-    case "compose":
+    case "useToolbarContext":
     break;
-    case "composed":
-    break;
-    case "composedPath":
-    break;
-    case "rules_version":
-    break;
-    case "onVideoEnd":
-    break;
-    case "AppStorePremiumProductIdsToPremiumBundledItems":
-    break;
-    case "ProductIds":
-    break;
-    case "rod":
-    break;
-    case "ItemsSortingHat":
+    case "ToolbarContext":
     break;
     case "ToIntlMathematicalValue":
     break;
@@ -726,10 +702,6 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "IT":
     break;
-    case "FadeInRight":
-    break;
-    case "PLUM_5":
-    break;
     case "MEDIA_PICKER_SEND_BUTTON_SPRING":
     break;
     case "marginHorizontal":
@@ -738,15 +710,19 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "rect":
     break;
-    case "DURATION_SECONDS":
+    case "isUnderLockdown":
     break;
-    case "SECONDS":
+    case "AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING":
+    break;
+    case "BY":
+    break;
+    case "PROCESSING":
     break;
     case "PX_80":
     break;
     case "_":
     break;
-    case "system_channel_id":
+    case "tagTextInverted":
     break;
     case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
     break;
@@ -768,9 +744,33 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "perUserFpsWindow":
     break;
-    case "woman_and_man_holding_hands_tone1_tone4":
+    case "woman_and_man_holding_hands_medium_skin_tone_medium_dark_skin_tone":
     break;
-    case "guildEmojis":
+    case "GUILD_ROLE_MEMBER_ADD":
+    break;
+    case "ADD_QUICK_REACTION":
+    break;
+    case "QUICK":
+    break;
+    case "REACT":
+    break;
+    case "REACTION":
+    break;
+    case "REACTION_ACTION_SHEET_OPENED":
+    break;
+    case "PREMIUM_STANDARD":
+    break;
+    case "APPLICATION_ONLY":
+    break;
+    case "ONLY_GUILD_EMOJIS_ALLOWED":
+    break;
+    case "LY":
+    break;
+    case "HubEmailConnectionSteps":
+    break;
+    case "DownloadIllocon":
+    break;
+    case "invalidEmojis":
     break;
     case "isAVI":
     break;
@@ -794,25 +794,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "BinaryReader":
     break;
-    case "Touchable":
+    case "stopAnimation":
     break;
-    case "TouchableHaptic":
+    case "woman_factory_worker_medium_skin_tone":
     break;
-    case "lastWarningFetchDayStart":
+    case "man_factory_worker_medium_skin_tone":
     break;
-    case "artWrapper":
-    break;
-    case "performKeyboardAwareNavigation":
-    break;
-    case "selectorOuterContainer":
-    break;
-    case "ethernet":
-    break;
-    case "Google":
-    break;
-    case "Google TV":
-    break;
-    case "TV":
+    case "factory_worker_medium_skin_tone":
     break;
     case "$ZodSet":
     break;
@@ -821,6 +809,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "S":
     break;
     case "et":
+    break;
+    case "canUseEmojisEverywhere":
     break;
     case "postformat":
     break;
@@ -848,10 +838,6 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "g":
     break;
-    case "VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE":
-    break;
-    case "MESSAGE_LONG_PRESS_MENU":
-    break;
     case "$ZodSymbol":
     break;
     case "ZodSymbol":
@@ -868,11 +854,17 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "INTERACTIVE_MUTED":
     break;
-    case "woman_kneeling_facing_right_tone4":
+    case "GiftCardWallet3dIllustration":
     break;
-    case "man_kneeling_facing_right_tone4":
+    case "orbsBalance":
     break;
-    case "fuseboxNetworkInspectionEnabled":
+    case "lastFetchTimeMs":
+    break;
+    case "head_shaking_vertically":
+    break;
+    case "verticallyInverted":
+    break;
+    case "gameSessionId":
     break;
     case "ActionSheetHeaderPressableText":
     break;
@@ -882,7 +874,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ext":
     break;
-    case "isProfileEffectRecord":
+    case "isPurchase":
+    break;
+    case "isPurchaseDisabled":
     break;
     case "AccessibilityFocusView":
     break;
@@ -897,6 +891,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "reType":
     break;
     case "pe":
+    break;
+    case "_clientPromise":
     break;
     case "maxDynamicContentSize":
     break;
@@ -1018,9 +1014,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "asset":
     break;
-    case "assetDark":
+    case "assetContainer":
     break;
     case "ss":
+    break;
+    case "person_in_bed_tone1":
     break;
     case "_w":
     break;
@@ -1037,6 +1035,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "Hash":
     break;
     case "sh":
+    break;
+    case "initialScrollToTop":
     break;
     case "flag_de":
     break;
@@ -1070,9 +1070,23 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ce":
     break;
-    case "NoResults":
+    case "ACTIVITY_SESSION_JOIN_FAILED":
     break;
-    case "NoResultsAlt":
+    case "FAIL":
+    break;
+    case "FAILED":
+    break;
+    case "FAILED_ACTIVITY_LAUNCH_CHECKS":
+    break;
+    case "CHECKS_REQUIRED":
+    break;
+    case "REQUIRED_OPTIONS_FOR_START_PAYMENT":
+    break;
+    case "PAYMENT_FLOW_STEP":
+    break;
+    case "STEP_DISPLAY":
+    break;
+    case "DISPLAY_MEDIA_UPLOADS":
     break;
     case "access":
     break;
@@ -1100,15 +1114,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "RoleFlags":
     break;
-    case "scrollToEnd":
+    case "scrollTargetPinnedRange":
     break;
-    case "addInpInstrumentationHandler":
+    case "getAvailablePlanForItems":
     break;
-    case "r_mark_suffix_with_optional_n_consonant$esjava$0":
+    case "bundlePreviewContainer":
     break;
-    case "rBIGBL":
+    case "reviewContainer":
     break;
-    case "Q8gkVL":
+    case "viewContainerStyle":
     break;
     case "accessibleDismiss":
     break;
@@ -1144,11 +1158,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "paddingVertical":
     break;
-    case "getVideoQoEMetricsConfig":
+    case "SETTINGS_CHANGELOG":
     break;
-    case "UNKNOWN_PAYMENT_SOURCE":
+    case "GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_JOINED":
     break;
-    case "PAYMENT_SOURCE_REQUIRED":
+    case "PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED":
+    break;
+    case "MISC":
     break;
     case "RED_NEW_34":
     break;
@@ -1166,7 +1182,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ms":
     break;
-    case "loadTimeCollector":
+    case "USER_SETTINGS_SEARCH_PRESS":
+    break;
+    case "PRESS_ADD_COMMENTARY":
+    break;
+    case "COMMENTARY_EDITED":
     break;
     case "GuildEntityDao":
     break;
@@ -1174,7 +1194,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "Dao":
     break;
-    case "renderLatestMessages":
+    case "unableToSyncDeletes":
+    break;
+    case "gradientOverride":
+    break;
+    case "renderOptions":
     break;
     case "app":
     break;
@@ -1192,21 +1216,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "io":
     break;
-    case "showHelp":
+    case "showGuildEventModeratorActionSheet":
     break;
-    case "HelpMessage":
-    break;
-    case "HelpMessageTypes":
-    break;
-    case "MessageTypesWithLazyLoadedReferences":
+    case "GuildEventModeratorAction":
     break;
     case "_applyCombination":
     break;
     case "ly":
-    break;
-    case "trequest":
-    break;
-    case "requestActivityItems":
     break;
     case "backoffTimeSec":
     break;
@@ -1230,11 +1246,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "gn":
     break;
-    case "map_of_japan":
-    break;
-    case "japan":
-    break;
-    case "japanese_castle":
+    case "acceptedRequestLabel":
     break;
     case "foi":
     break;
@@ -1258,13 +1270,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "Color":
     break;
-    case "ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT":
+    case "ACTIVITY_LAUNCH_UNKNOWN_CHANNEL":
     break;
-    case "EXPERIMENT":
+    case "UNKNOWN":
     break;
-    case "EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS":
+    case "UNKNOWN_CHANNEL":
     break;
-    case "SPECTATOR_MODE":
+    case "DISCORD_CONSENT":
     break;
     case "_listRef":
     break;
@@ -1276,9 +1288,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "HeaderSubmittingIndicator":
     break;
-    case "_sessionValue":
-    break;
-    case "onValueReached":
+    case "onViewAllSelected":
     break;
     case "_bodyArrayBuffer":
     break;
@@ -1297,6 +1307,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "Radius":
     break;
     case "iu":
+    break;
+    case "maxE":
     break;
     case "isCurrentUserTeen":
     break;
@@ -1340,6 +1352,16 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "nn":
     break;
+    case "isExtensionAnimated":
+    break;
+    case "addMembersContainer":
+    break;
+    case "r_mark_yUz$esjava$0":
+    break;
+    case "CRUNCHYROLL_LINK_DEST_ORIGIN":
+    break;
+    case "ORIGIN":
+    break;
     case "isSelf":
     break;
     case "isSelfDeaf":
@@ -1364,11 +1386,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ren":
     break;
-    case "_longestInteractionMap":
-    break;
-    case "applicationTopWrapperScrollView":
-    break;
-    case "onTop":
+    case "authorRow":
     break;
     case "wMWyci":
     break;
@@ -1376,15 +1394,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ix8XIj":
     break;
-    case "ClientOutdatedAcceptGiftError":
-    break;
-    case "td":
-    break;
-    case "Accept":
-    break;
     case "uni":
     break;
     case "Version":
+    break;
+    case "endTime_":
+    break;
+    case "me_burst":
+    break;
+    case "burst":
     break;
     case "burst_colors":
     break;
@@ -1394,13 +1412,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "rs":
     break;
-    case "isAutomatedPageLoadSpan":
+    case "isAudioRouteEnabled":
     break;
-    case "kiss_tone2":
-    break;
-    case "timeoutTimer":
-    break;
-    case "merman_medium_light_skin_tone":
+    case "isOGG":
     break;
     case "addUserId":
     break;
@@ -1410,15 +1424,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "concatSettings":
     break;
-    case "substreams":
-    break;
-    case "streams":
-    break;
-    case "jfif":
+    case "subscriptionRoleId":
     break;
     case "$constructor":
     break;
     case "const":
+      obj[0] = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
+      obj[1] = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE;
+      obj[2] = c4;
+      obj[3] = c4;
     break;
     case "constr":
     break;
@@ -1429,24 +1443,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "ru":
     break;
     case "tor":
-      obj[0] = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
-      obj[1] = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE;
-      obj[2] = c4;
-      obj[3] = c4;
     break;
     case "windowLength":
-    break;
-    case "LaunchApplication15":
-    break;
-    case "minutes":
-    break;
-    case "minutesAgo":
-    break;
-    case "goLiveUpsellVariant":
-    break;
-    case "trackUserProfileAction":
-    break;
-    case "useGetOrFetchSubscriptionPlan":
     break;
     case "_container":
     break;
@@ -1457,6 +1455,18 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "ai":
     break;
     case "ner":
+    break;
+    case "hasAction":
+    break;
+    case "hasActionSheetOpen":
+    break;
+    case "numFinished":
+    break;
+    case "channelContainer":
+    break;
+    case "output_text":
+    break;
+    case "MagicWandIcon":
     break;
     case "creative_content":
     break;
@@ -1474,27 +1484,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "contextBarRow":
     break;
-    case "withAlphabeticalSections":
+    case "withActiveSpan":
     break;
-    case "man_with_turban":
+    case "is_first_party":
     break;
-    case "man_with_turban_tone1":
+    case "party":
     break;
-    case "_installSetStateHooks":
-    break;
-    case "install":
-    break;
-    case "SafetyBookletSpotIllustration":
-    break;
-    case "flag_ug":
-    break;
-    case "USER_FLOW_TRANSITION":
-    break;
-    case "getConstants":
-    break;
-    case "getConstantsForViewManager":
-    break;
-    case "parseUnicodeLocaleId":
+    case "partyId":
     break;
     case "enablePanDownToClose":
     break;
@@ -1504,17 +1500,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "Badge":
     break;
-    case "getActiveTab":
+    case "trialSubText":
     break;
-    case "getActiveTabId":
+    case "trialSubTextContainer":
+    break;
+    case "getAdTrafficMetadataSealed":
     break;
     case "cr":
     break;
     case "les":
-    break;
-    case "connectionMetadata":
-    break;
-    case "connectionMetadataField":
     break;
     case "message_type":
     break;
@@ -1526,23 +1520,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "currentAppIcon":
     break;
-    case "containerForFiveButtonLayout":
+    case "containerInfo":
     break;
-    case "onLayoutChange":
+    case "foot_tone3":
     break;
-    case "getAssetDisplayConfig":
+    case "exclusions":
     break;
-    case "AssetDisplayConfigRecord":
-    break;
-    case "destination":
-    break;
-    case "destinationKey":
-    break;
-    case "onKeyCommand":
-    break;
-    case "unread_count":
-    break;
-    case "setHasInvalidUrlError":
+    case "settingsContainer":
     break;
     case "_$esjava$cursor":
     break;
@@ -1550,13 +1534,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "so":
     break;
-    case "THROUGHLINE_URL":
+    case "binding":
     break;
-    case "propList":
-    break;
-    case "strm":
-    break;
-    case "NitroRubyBadgeLargeBadge":
+    case "NitroSupergraphicLogo":
     break;
     case "_clientSdkMetadata":
     break;
@@ -1568,9 +1548,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "dddd":
     break;
-    case "RELATIONSHIP_INVALUD_USER_BOT":
+    case "columnNumber":
+    break;
+    case "nativeRow":
+    break;
+    case "withoutXY":
     break;
     case "__defaultLocale":
+    break;
+    case "_default":
     break;
     case "def":
     break;
@@ -1592,17 +1578,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "fin":
     break;
-    case "NitroWumpusFlightUpwards3dIllustration":
+    case "unwrap":
     break;
-    case "prepareStackTrace":
-    break;
-    case "nand":
-    break;
-    case "doUpload":
-    break;
-    case "UploadErrorUpload":
-    break;
-    case "UploadErrorProgress":
+    case "flag_km":
     break;
     case "undelete":
     break;
@@ -1618,11 +1596,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "startMs":
     break;
-    case "shouldUseAnimatedObjectForTransform":
+    case "shouldTrackRichPresenceInviteEmbedViews":
     break;
-    case "formText":
+    case "kiss_woman_man_tone2_tone3":
     break;
-    case "extractFeMerge":
+    case "VIBEGRATIONS_PROJECT_REMIX_TICKET":
     break;
     case "avatar_description":
     break;
@@ -1646,7 +1624,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "pt":
     break;
-    case "isParentModal":
+    case "isOnReverseTrial":
     break;
     case "aria-disabled":
     break;
@@ -1662,21 +1640,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "interestedIcon":
     break;
-    case "contentRow":
+    case "contentSelectPlan":
     break;
-    case "withAffinitySuggestions":
+    case "couple_with_heart":
     break;
-    case "AffinitySuggestions":
+    case "couple_with_heart_dark_skin_tone":
     break;
-    case "ffi":
-    break;
-    case "ug":
-    break;
-    case "lady_beetle":
-    break;
-    case "beetle":
-    break;
-    case "paymentGatewaySubscriptionId":
+    case "paypalEnabled":
     break;
     case "_dispatch":
     break;
@@ -1692,9 +1662,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "tc":
     break;
-    case "briefs":
+    case "_performanceLogger":
     break;
-    case "renderActivityInviteEmbed":
+    case "sanitizeEmbed":
     break;
     case "time_to_full_display":
     break;
@@ -1724,7 +1694,15 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "renderConfirmButton":
     break;
-    case "LhlgY9":
+    case "createStripeSetupIntent":
+    break;
+    case "createdAt":
+    break;
+    case "createdAtMs":
+    break;
+    case "swatch":
+    break;
+    case "swatchSelected":
     break;
     case "toExpPos":
     break;
@@ -1760,9 +1738,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "enable":
     break;
-    case "shouldShowAgeGateForVoiceChannel":
-    break;
-    case "SYSTEM_PANEL":
+    case "shouldRestrictUpdatingCreatorMonetizationSettings":
     break;
     case "@braintree/extended-promise":
     break;
@@ -1791,8 +1767,6 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "era":
     break;
     case "referrerPolicy":
-    break;
-    case "safetyTips":
     break;
     case "../../../lib/braintree-error":
     break;
@@ -1831,17 +1805,6 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "rtsState":
     break;
     case "ts":
-      obj = { backgroundInactive: null, backgroundPressed: null, borderInactive: null, borderPressed: null };
-      obj[0] = ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT;
-      obj[1] = ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_ACTIVE;
-      obj[2] = c4;
-      obj[3] = c4;
-      return obj;
-    case "UnauthenticatedReportNames":
-    break;
-    case "auth":
-    break;
-    case "authenticated":
     break;
     case "fil":
     break;
@@ -1855,9 +1818,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ServerIconLilQuackSPondverseExample":
     break;
-    case "_cleanupSocket":
+    case "GiftingTier6LargeBadge":
     break;
-    case "SocketEvent":
+    case "forwardRef":
     break;
     case "EntitlementTenantFulfillmentStatus":
     break;
@@ -1865,7 +1828,22 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "__findAnimatedPropsNodes":
     break;
-    case "MAX_VISIBLE_PAGES":
+    case "channel_overrides":
+    break;
+    case "overrides":
+      obj = { backgroundInactive: null, backgroundPressed: null, borderInactive: null, borderPressed: null };
+      obj[0] = ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT;
+      obj[1] = ThemesDefault.colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_ACTIVE;
+      obj[2] = c4;
+      obj[3] = c4;
+      return obj;
+    case "overridesFormatted":
+    break;
+    case "MONOCHROME":
+    break;
+    case "CHROME":
+    break;
+    case "MEMBER_LIST_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES":
     break;
     case "system_channel_flags":
     break;
@@ -1885,9 +1863,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "oldestUnreadMessageIdStale":
     break;
-    case "addPerformanceInstrumentationHandler":
-    break;
-    case "handleTapGuildEventInvite":
+    case "addPageListener":
     break;
     case "fo":
     break;
@@ -1905,23 +1881,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "phone":
     break;
-    case "pointerType":
+    case "videoStoppedReason":
     break;
-    case "MOP":
+    case "remoteAddress":
     break;
-    case "OPACITY_BLACK_1":
-    break;
-    case "OPACITY_BLACK_12":
-    break;
-    case "parentElement":
-    break;
-    case "fakeScopeIcon":
-    break;
-    case "containerSearchBar":
-    break;
-    case "touchableHandleResponderTerminationRequest":
-    break;
-    case "onRequestSend":
+    case "favoriteGuildVisibleSetting":
     break;
     case "getChannelA11yHint":
     break;
@@ -1949,11 +1913,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "current_guild_id":
     break;
-    case "getContacts":
+    case "getConsoleIconForVoicePlatform":
     break;
-    case "FAMILY_CENTER_CONNECTION":
+    case "VoicePlatforms":
     break;
-    case "FAMILY_CENTER_CONNECTION_PREREQUISITES":
+    case "selectionStates":
     break;
     case "hasDiversity":
     break;
@@ -1967,9 +1931,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "DefaultGuildsRestrictedV2":
     break;
-    case "getMentionChannelIds":
-    break;
-    case "isWishlistOwner":
+    case "getMentionGames":
     break;
     case "avatar_hash":
     break;
@@ -1979,9 +1941,11 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "bhd":
     break;
-    case "INVITE_RESOLVE_SUCCESS":
+    case "INVITE_RESOLVE":
     break;
-    case "mother_christmas_tone4":
+    case "INVITE_RESOLVED":
+    break;
+    case "connectionsList":
     break;
     case "_header":
     break;
@@ -1995,15 +1959,13 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "FAMILY_CENTER_ERROR_CODE_TO_FAILURE":
     break;
-    case "REACTIVATION_OFFER_REDEEM":
-      obj[0] = c4;
-      obj[1] = c4;
-      obj[2] = c4;
-      obj[3] = c4;
-      return obj;
-    case "REDEEM_REWARD":
+    case "REACT_COMPILER":
     break;
-    case "IMAGE_VIDEO_DATA_SETTINGS_UPDATED":
+    case "RPC_VIDEO_WRITE":
+    break;
+    case "TREATMENT_B":
+    break;
+    case "getChannelRecords":
     break;
     case "player_height":
     break;
@@ -2015,13 +1977,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "ht":
     break;
-    case "withMutualFriends":
+    case "withMonitor":
     break;
-    case "withMutualFriendsCount":
-    break;
-    case "FacebookNeutralIcon":
-    break;
-    case "advancedMode":
+    case "addNode":
     break;
     case "debugLogCs2GsiPayload":
     break;
@@ -2038,42 +1996,30 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "NonConvert":
     break;
     case "Convert":
-    break;
+      obj[0] = c4;
+      obj[1] = c4;
+      obj[2] = c4;
+      obj[3] = c4;
+      return obj;
     case "ConvertEmoticons":
     break;
     case "mot":
     break;
     case "icons":
     break;
-    case "accessPermissions":
+    case "strategy":
     break;
-    case "shovel":
+    case "getFramesToPop":
     break;
-    case "handleCallback":
+    case "starSmall":
     break;
-    case "handleCallbackErrors":
+    case "allMediaResults":
     break;
-    case "CallbackError":
-    break;
-    case "USER_SETTINGS_MODAL_OPEN":
-    break;
-    case "OPEN_APP_LAUNCHER":
-    break;
-    case "APP_LAUNCHER":
-    break;
-    case "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED":
-    break;
-    case "DCDNotificationManager":
-    break;
-    case "videoProgress":
-    break;
-    case "handleAnnouncementMessageViewTracking":
-    break;
-    case "MessageViewTrackingType":
-    break;
-    case "person_with_ball_tone5":
+    case "showConfirmModal":
     break;
     case "_include":
+    break;
+    case "_includes":
     break;
     case "inc":
     break;
@@ -2089,7 +2035,7 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "origin_pane":
     break;
-    case "related_user_id":
+    case "rejectResponderTermination":
     break;
     case "__internalInstanceHandle":
     break;
@@ -2109,8 +2055,6 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "deleteKeyFromRecyclePool":
     break;
-    case "getGuildFlags":
-    break;
     case "pronouns":
     break;
     case "pronounsAccessibilityHint":
@@ -2121,7 +2065,9 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "tl":
     break;
-    case "getAnyStreamForUser":
+    case "getAnyErrorMessage":
+    break;
+    case "getAnyErrorMessageAndField":
     break;
     case "activity_items":
     break;
@@ -2131,6 +2077,8 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     break;
     case "item":
     break;
+    case "bow_tone3":
+    break;
     case "activeUnjoinedThreads":
     break;
     case "jo":
@@ -2138,6 +2086,58 @@ const styleProperties = createCacheKey.createStyleProperties((arg0) => {
     case "js":
     break;
     case "xs":
+    break;
+    case "isRendered":
+    break;
+    case "gradientOverlay":
+    break;
+    case "yOffset":
+    break;
+    case "hasInputText":
+    break;
+    case "targetHeight":
+    break;
+    case "getHeight":
+    break;
+    case "jus":
+    break;
+    case "justify":
+    break;
+    case "if":
+    break;
+    case "Content":
+    break;
+    case "checkoutInitParameters":
+    break;
+    case "showThreadNotificationsBottomSheet":
+    break;
+    case "BottomSheetFlatList":
+    break;
+    case "FlatList":
+    break;
+    case "PasskeysSpotIllustration":
+    break;
+    case "ke":
+    break;
+    case "useStorekitResubscribe":
+    break;
+    case "subscribeFromItem":
+    break;
+    case "embedded_activity_location_kind":
+    break;
+    case "ki":
+    break;
+    case "kin":
+    break;
+    case "deleteNodeOnBackspace":
+    break;
+    case "Backspace":
+    break;
+    case "spacer":
+    break;
+    case "spacerStyle":
+    break;
+    case "aria-label":
     break;
     default:
   }
@@ -2160,10 +2160,10 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       const WHITE = memo(709).unsafe_rawColors.WHITE;
       let obj = { base: null, contrastRatio: null };
       obj[0] = WHITE;
-      obj[1] = variant(4204).WCAGContrastRatios.HighContrastText;
-      const contrastingColor = variant(4204).getContrastingColor(tmp, obj);
-      const obj8 = variant(4204);
-      const darkenColorResult = variant(4204).darkenColor(contrastingColor, 0.5);
+      obj[1] = variant(4205).WCAGContrastRatios.HighContrastText;
+      const contrastingColor = variant(4205).getContrastingColor(tmp, obj);
+      const obj8 = variant(4205);
+      const darkenColorResult = variant(4205).darkenColor(contrastingColor, 0.5);
       obj = { backgroundColor: null, borderColor: null, color: null };
       const items = [contrastingColor, darkenColorResult];
       obj[0] = items;
@@ -2175,23 +2175,23 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       const obj5 = variant(1362);
       const tmp20 = dependencyMap;
       const isThemeLightResult = variant(1362).isThemeLight(dependencyMap);
-      const setColorOpacity2 = variant(4204).setColorOpacity;
+      const setColorOpacity2 = variant(4205).setColorOpacity;
       if (isThemeLightResult) {
         let setColorOpacity2Result = setColorOpacity2("white", 0.72);
       } else {
         setColorOpacity2Result = setColorOpacity2("white", 0.24);
       }
       const items2 = [setColorOpacity2Result, ];
-      const tmp24 = variant(4204);
+      const tmp24 = variant(4205);
       const obj6 = variant(1362);
       const isThemeLightResult1 = variant(1362).isThemeLight(tmp20);
-      const setColorOpacity3 = variant(4204).setColorOpacity;
+      const setColorOpacity3 = variant(4205).setColorOpacity;
       if (isThemeLightResult1) {
         let setColorOpacity3Result = setColorOpacity3("white", 0.62);
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      obj1 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj1 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj1[0] = items2;
       const items3 = [closure_1_4, closure_1_4];
@@ -2201,7 +2201,7 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       obj = variant(1362);
       const isThemeLightResult2 = obj.isThemeLight(dependencyMap);
       const tmp4 = dependencyMap;
-      const setColorOpacity = variant(4204).setColorOpacity;
+      const setColorOpacity = variant(4205).setColorOpacity;
       if (isThemeLightResult2) {
         let setColorOpacityResult = setColorOpacity(tmp, 0.4);
       } else {
@@ -2209,14 +2209,14 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       }
       const items4 = [setColorOpacityResult, ];
       obj1 = variant(1362);
-      const tmp8 = variant(4204);
-      let obj2 = variant(4204);
+      const tmp8 = variant(4205);
+      let obj2 = variant(4205);
       if (isThemeLightResult3) {
         let darkenColorResult1 = obj2.darkenColor(setColorOpacityResult, 0.3);
       } else {
         darkenColorResult1 = obj2.setColorOpacity("white", 0.2);
       }
-      obj2 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj2 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj2[0] = items4;
       const items5 = [closure_1_4, closure_1_4];
@@ -2244,10 +2244,10 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(style)
       const WHITE = memo(709).unsafe_rawColors.WHITE;
       let obj = { base: null, contrastRatio: null };
       obj[0] = WHITE;
-      obj[1] = variant(4204).WCAGContrastRatios.HighContrastText;
-      const contrastingColor = variant(4204).getContrastingColor(tmp, obj);
-      const obj8 = variant(4204);
-      const darkenColorResult = variant(4204).darkenColor(contrastingColor, 0.5);
+      obj[1] = variant(4205).WCAGContrastRatios.HighContrastText;
+      const contrastingColor = variant(4205).getContrastingColor(tmp, obj);
+      const obj8 = variant(4205);
+      const darkenColorResult = variant(4205).darkenColor(contrastingColor, 0.5);
       obj = { backgroundColor: null, borderColor: null, color: null };
       const items = [contrastingColor, darkenColorResult];
       obj[0] = items;
@@ -2259,23 +2259,23 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(style)
       const obj5 = variant(1362);
       const tmp20 = dependencyMap;
       const isThemeLightResult = variant(1362).isThemeLight(dependencyMap);
-      const setColorOpacity2 = variant(4204).setColorOpacity;
+      const setColorOpacity2 = variant(4205).setColorOpacity;
       if (isThemeLightResult) {
         let setColorOpacity2Result = setColorOpacity2("white", 0.72);
       } else {
         setColorOpacity2Result = setColorOpacity2("white", 0.24);
       }
       const items2 = [setColorOpacity2Result, ];
-      const tmp24 = variant(4204);
+      const tmp24 = variant(4205);
       const obj6 = variant(1362);
       const isThemeLightResult1 = variant(1362).isThemeLight(tmp20);
-      const setColorOpacity3 = variant(4204).setColorOpacity;
+      const setColorOpacity3 = variant(4205).setColorOpacity;
       if (isThemeLightResult1) {
         let setColorOpacity3Result = setColorOpacity3("white", 0.62);
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      obj1 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj1 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj1[0] = items2;
       const items3 = [closure_1_4, closure_1_4];
@@ -2285,7 +2285,7 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(style)
       obj = variant(1362);
       const isThemeLightResult2 = obj.isThemeLight(dependencyMap);
       const tmp4 = dependencyMap;
-      const setColorOpacity = variant(4204).setColorOpacity;
+      const setColorOpacity = variant(4205).setColorOpacity;
       if (isThemeLightResult2) {
         let setColorOpacityResult = setColorOpacity(tmp, 0.4);
       } else {
@@ -2293,14 +2293,14 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(style)
       }
       const items4 = [setColorOpacityResult, ];
       obj1 = variant(1362);
-      const tmp8 = variant(4204);
-      let obj2 = variant(4204);
+      const tmp8 = variant(4205);
+      let obj2 = variant(4205);
       if (isThemeLightResult3) {
         let darkenColorResult1 = obj2.darkenColor(setColorOpacityResult, 0.3);
       } else {
         darkenColorResult1 = obj2.setColorOpacity("white", 0.2);
       }
-      obj2 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj2 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj2[0] = items4;
       const items5 = [closure_1_4, closure_1_4];
@@ -2334,10 +2334,10 @@ export const useIconTintStyles = function useIconTintStyles(arg0) {
       const WHITE = memo(709).unsafe_rawColors.WHITE;
       let obj = { base: null, contrastRatio: null };
       obj[0] = WHITE;
-      obj[1] = variant(4204).WCAGContrastRatios.HighContrastText;
-      const contrastingColor = variant(4204).getContrastingColor(tmp, obj);
-      const obj8 = variant(4204);
-      const darkenColorResult = variant(4204).darkenColor(contrastingColor, 0.5);
+      obj[1] = variant(4205).WCAGContrastRatios.HighContrastText;
+      const contrastingColor = variant(4205).getContrastingColor(tmp, obj);
+      const obj8 = variant(4205);
+      const darkenColorResult = variant(4205).darkenColor(contrastingColor, 0.5);
       obj = { backgroundColor: null, borderColor: null, color: null };
       const items = [contrastingColor, darkenColorResult];
       obj[0] = items;
@@ -2349,23 +2349,23 @@ export const useIconTintStyles = function useIconTintStyles(arg0) {
       const obj5 = variant(1362);
       const tmp20 = dependencyMap;
       const isThemeLightResult = variant(1362).isThemeLight(dependencyMap);
-      const setColorOpacity2 = variant(4204).setColorOpacity;
+      const setColorOpacity2 = variant(4205).setColorOpacity;
       if (isThemeLightResult) {
         let setColorOpacity2Result = setColorOpacity2("white", 0.72);
       } else {
         setColorOpacity2Result = setColorOpacity2("white", 0.24);
       }
       const items2 = [setColorOpacity2Result, ];
-      const tmp24 = variant(4204);
+      const tmp24 = variant(4205);
       const obj6 = variant(1362);
       const isThemeLightResult1 = variant(1362).isThemeLight(tmp20);
-      const setColorOpacity3 = variant(4204).setColorOpacity;
+      const setColorOpacity3 = variant(4205).setColorOpacity;
       if (isThemeLightResult1) {
         let setColorOpacity3Result = setColorOpacity3("white", 0.62);
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      obj1 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj1 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj1[0] = items2;
       const items3 = [closure_1_4, closure_1_4];
@@ -2375,7 +2375,7 @@ export const useIconTintStyles = function useIconTintStyles(arg0) {
       obj = variant(1362);
       const isThemeLightResult2 = obj.isThemeLight(dependencyMap);
       const tmp4 = dependencyMap;
-      const setColorOpacity = variant(4204).setColorOpacity;
+      const setColorOpacity = variant(4205).setColorOpacity;
       if (isThemeLightResult2) {
         let setColorOpacityResult = setColorOpacity(tmp, 0.4);
       } else {
@@ -2383,14 +2383,14 @@ export const useIconTintStyles = function useIconTintStyles(arg0) {
       }
       const items4 = [setColorOpacityResult, ];
       obj1 = variant(1362);
-      const tmp8 = variant(4204);
-      let obj2 = variant(4204);
+      const tmp8 = variant(4205);
+      let obj2 = variant(4205);
       if (isThemeLightResult3) {
         let darkenColorResult1 = obj2.darkenColor(setColorOpacityResult, 0.3);
       } else {
         darkenColorResult1 = obj2.setColorOpacity("white", 0.2);
       }
-      obj2 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj2 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj2[0] = items4;
       const items5 = [closure_1_4, closure_1_4];
@@ -2416,7 +2416,7 @@ export const useGradientPillStyles = function useGradientPillStyles(variant) {
 };
 export const useButtonPillStyles = function useButtonPillStyles(variant, pressed) {
   const _require = variant;
-  let obj = _require(4204);
+  let obj = _require(4205);
   const themeContext = obj.useThemeContext();
   const primaryColor = themeContext.primaryColor;
   let memo = primaryColor;
@@ -2430,10 +2430,10 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       const WHITE = memo(709).unsafe_rawColors.WHITE;
       let obj = { base: null, contrastRatio: null };
       obj[0] = WHITE;
-      obj[1] = variant(4204).WCAGContrastRatios.HighContrastText;
-      const contrastingColor = variant(4204).getContrastingColor(tmp, obj);
-      const obj8 = variant(4204);
-      const darkenColorResult = variant(4204).darkenColor(contrastingColor, 0.5);
+      obj[1] = variant(4205).WCAGContrastRatios.HighContrastText;
+      const contrastingColor = variant(4205).getContrastingColor(tmp, obj);
+      const obj8 = variant(4205);
+      const darkenColorResult = variant(4205).darkenColor(contrastingColor, 0.5);
       obj = { backgroundColor: null, borderColor: null, color: null };
       const items = [contrastingColor, darkenColorResult];
       obj[0] = items;
@@ -2445,23 +2445,23 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       const obj5 = variant(1362);
       const tmp20 = dependencyMap;
       const isThemeLightResult = variant(1362).isThemeLight(dependencyMap);
-      const setColorOpacity2 = variant(4204).setColorOpacity;
+      const setColorOpacity2 = variant(4205).setColorOpacity;
       if (isThemeLightResult) {
         let setColorOpacity2Result = setColorOpacity2("white", 0.72);
       } else {
         setColorOpacity2Result = setColorOpacity2("white", 0.24);
       }
       const items2 = [setColorOpacity2Result, ];
-      const tmp24 = variant(4204);
+      const tmp24 = variant(4205);
       const obj6 = variant(1362);
       const isThemeLightResult1 = variant(1362).isThemeLight(tmp20);
-      const setColorOpacity3 = variant(4204).setColorOpacity;
+      const setColorOpacity3 = variant(4205).setColorOpacity;
       if (isThemeLightResult1) {
         let setColorOpacity3Result = setColorOpacity3("white", 0.62);
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      obj1 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj1 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj1[0] = items2;
       const items3 = [closure_1_4, closure_1_4];
@@ -2471,7 +2471,7 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       obj = variant(1362);
       const isThemeLightResult2 = obj.isThemeLight(dependencyMap);
       const tmp4 = dependencyMap;
-      const setColorOpacity = variant(4204).setColorOpacity;
+      const setColorOpacity = variant(4205).setColorOpacity;
       if (isThemeLightResult2) {
         let setColorOpacityResult = setColorOpacity(tmp, 0.4);
       } else {
@@ -2479,14 +2479,14 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       }
       const items4 = [setColorOpacityResult, ];
       obj1 = variant(1362);
-      const tmp8 = variant(4204);
-      let obj2 = variant(4204);
+      const tmp8 = variant(4205);
+      let obj2 = variant(4205);
       if (isThemeLightResult3) {
         let darkenColorResult1 = obj2.darkenColor(setColorOpacityResult, 0.3);
       } else {
         darkenColorResult1 = obj2.setColorOpacity("white", 0.2);
       }
-      obj2 = { backgroundColor: null, borderColor: null, color: "accessible" };
+      obj2 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj2[0] = items4;
       const items5 = [closure_1_4, closure_1_4];
@@ -2517,22 +2517,22 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       ({ borderInactive: arr2[0], borderPressed: arr2[1] } = dependencyMap);
       borderColor = items1;
     }
-    const obj = { backgroundColor: variant(4217).interpolateColor(variant.get(), [0, 1], backgroundColor), borderColor: null };
-    const obj2 = variant(4217);
-    obj[1] = variant(4217).interpolateColor(variant.get(), [0, 1], borderColor);
+    const obj = { backgroundColor: variant(4218).interpolateColor(variant.get(), [0, 1], backgroundColor), borderColor: null };
+    const obj2 = variant(4218);
+    obj[1] = variant(4218).interpolateColor(variant.get(), [0, 1], borderColor);
     return obj;
   };
-  obj = { themedStyles: memo, colors: tmp3, interpolateColor: _require(4217).interpolateColor, pressed };
+  obj = { themedStyles: memo, colors: tmp3, interpolateColor: _require(4218).interpolateColor, pressed };
   fn.__closure = obj;
   fn.__workletHash = 2383933325137;
   fn.__initData = closure_9;
-  return _require(4217).useAnimatedStyle(fn);
+  return _require(4218).useAnimatedStyle(fn);
 };
 export const useButtonScaleStyles = function useButtonScaleStyles(pressed, width, scaleAmountInPx) {
   const _require = pressed;
   closure_1 = width;
   dependencyMap = scaleAmountInPx;
-  let obj = _require(4217);
+  let obj = _require(4218);
   const fn = function n() {
     let obj = sharedValue1;
     num = 1;
@@ -2550,7 +2550,7 @@ export const useButtonScaleStyles = function useButtonScaleStyles(pressed, width
     obj[0] = items1;
     return obj;
   };
-  obj = { width, scaleAmountInPx, withSpring: _require(4928).withSpring, interpolate: _require(4217).interpolate, pressed, ON_PRESS_SPRING: _require(4932).ON_PRESS_SPRING };
+  obj = { width, scaleAmountInPx, withSpring: _require(4935).withSpring, interpolate: _require(4218).interpolate, pressed, ON_PRESS_SPRING: _require(4939).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 17256006845494;
   fn.__initData = closure_10;
@@ -2566,9 +2566,9 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
   num = onPressOut;
   sharedValue = undefined;
   sharedValue1 = undefined;
-  let obj = sharedValue(4217);
+  let obj = sharedValue(4218);
   sharedValue = obj.useSharedValue(0);
-  let tmpResult = tmp(4217);
+  let tmpResult = tmp(4218);
   sharedValue1 = tmpResult.useSharedValue(0);
   obj = {
     onPressIn: sharedValue.useCallback((arg0) => {
@@ -2594,7 +2594,7 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
   items = [sharedValue, onPressIn];
   items1 = [sharedValue, onPressOut];
   items2 = [sharedValue1, onLayout];
-  tmpResult = tmp(4217);
+  tmpResult = tmp(4218);
   const fn = function n() {
     let obj = sharedValue1;
     num = 1;
@@ -2612,7 +2612,7 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
     obj[0] = items1;
     return obj;
   };
-  obj = { width: sharedValue1, scaleAmountInPx: num, withSpring: tmp(4928).withSpring, interpolate: tmp(4217).interpolate, pressed: sharedValue, ON_PRESS_SPRING: tmp(4932).ON_PRESS_SPRING };
+  obj = { width: sharedValue1, scaleAmountInPx: num, withSpring: tmp(4935).withSpring, interpolate: tmp(4218).interpolate, pressed: sharedValue, ON_PRESS_SPRING: tmp(4939).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 17256006845494;
   fn.__initData = closure_10;

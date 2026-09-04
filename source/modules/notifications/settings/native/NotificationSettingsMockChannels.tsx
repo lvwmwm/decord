@@ -1,16 +1,16 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10093
+// Function ID: 10094
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4703, 21, 4478, 709, 1233, 10276, 5034, 4474, 1296, 2]
+// Dependencies: [19, 17, 4710, 21, 4481, 709, 1233, 10094, 5041, 4477, 1296, 2]
 // Exports: default
 
-// Module 10275 (NotificationSettingsMockChannels)
+// Module 10093 (NotificationSettingsMockChannels)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

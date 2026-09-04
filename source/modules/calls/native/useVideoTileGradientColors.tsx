@@ -1,12 +1,12 @@
-// Module ID: 8130
-// Function ID: 8131
+// Module ID: 8183
+// Function ID: 8184
 // Name: rgbToHex
-// Dependencies: [19, 673, 8131, 685, 2]
+// Dependencies: [19, 673, 8160, 685, 2]
 // Exports: useVideoTileGradientColors
 
-// Module 8130 (rgbToHex)
+// Module 8183 (rgbToHex)
 import int2hslRaw from "int2hslRaw" /* 685 */;
-import getProfileTheme from "getProfileTheme" /* 8131 */;
+import getProfileTheme from "getProfileTheme" /* 8160 */;
 import closure_2 from "noop" /* 19 */;
 import { ThemeTypes } from "ME" /* 673 */;
 
@@ -30,7 +30,7 @@ function computeVideoTileGradientStops(modalV2BackgroundColor, modalV2Background
         DARK = ThemeTypes.DARK;
       }
       let tmp9Result = tmp9(685);
-      tmp9Result = tmp9(8131);
+      tmp9Result = tmp9(8160);
       const int2rgbArrayResult = tmp9Result.int2rgbArray(tmp9Result.calculateModalV2BackgroundColor(modalV2BackgroundColor, modalV2BackgroundColor, DARK));
       const obj7 = getProfileTheme;
       const tmp9Result1 = int2hslRaw;

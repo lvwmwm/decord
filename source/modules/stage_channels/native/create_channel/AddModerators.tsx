@@ -1,18 +1,18 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 9692
+// Function ID: 9693
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 1908, 8691, 21, 4478, 709, 1498, 38, 9722, 5368, 1954, 1233, 5504, 6247, 4474, 1296, 9751, 1394, 2]
+// Dependencies: [32, 19, 17, 1908, 8331, 21, 4481, 709, 1498, 38, 9664, 5376, 1954, 1233, 5579, 7315, 4477, 1296, 9693, 1395, 2]
 // Exports: default
 
-// Module 9750 (AddModerators)
+// Module 9692 (AddModerators)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import { RowType } from "RowType" /* 8691 */;
+import { RowType } from "RowType" /* 8331 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -50,11 +50,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = callback(5368).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.ROLE);
-        const obj2 = callback(5368);
+        let moderatorOverwrite = callback(5376).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.ROLE);
+        const obj2 = callback(5376);
       } else {
-        moderatorOverwrite = callback(5368).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.MEMBER);
-        const obj = callback(5368);
+        moderatorOverwrite = callback(5376).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.MEMBER);
+        const obj = callback(5376);
       }
       return moderatorOverwrite;
     });

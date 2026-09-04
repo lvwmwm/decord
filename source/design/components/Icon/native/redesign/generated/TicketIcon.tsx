@@ -1,14 +1,14 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15131
+// Function ID: 15132
 // Name: TicketIcon
-// Dependencies: [19, 21, 709, 4196, 15048, 2]
+// Dependencies: [19, 21, 709, 4196, 15132, 2]
 // Exports: TicketIcon
 
-// Module 15047 (TicketIcon)
+// Module 15131 (TicketIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15048 */;
+import registerAsset from "registerAsset" /* 15132 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

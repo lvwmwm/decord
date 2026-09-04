@@ -1,20 +1,20 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17702
+// Function ID: 17703
 // Name: TierTemplatesRenderer
-// Dependencies: [32, 19, 17, 15074, 17569, 673, 21, 4478, 709, 4474, 17623, 644, 15052, 15053, 11999, 17629, 1627, 1498, 695, 4701, 17579, 10353, 1233, 5504, 8911, 500, 17564, 1296, 2]
+// Dependencies: [32, 19, 17, 15158, 17649, 673, 21, 4481, 709, 4477, 17703, 644, 15136, 15137, 12135, 17709, 1627, 1498, 695, 4708, 17659, 10179, 1233, 5579, 8698, 500, 17644, 1296, 2]
 // Exports: default
 
-// Module 17622 (TierTemplatesRenderer)
+// Module 17702 (TierTemplatesRenderer)
 import ThemesDefault from "Themes" /* 709 */;
-import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15053 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15137 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "initialize" /* 15074 */;
-import { usePriceTiers } from "usePriceTiers" /* 17569 */;
+import closure_10 from "initialize" /* 15158 */;
+import { usePriceTiers } from "usePriceTiers" /* 17649 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TierTemplatesRenderer(groupListingId) {
@@ -30,7 +30,7 @@ function TierTemplatesRenderer(groupListingId) {
     obj = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const items = ["Error: ", error.message];
     obj[2] = items;
-    tmp3 = callback2(guildId(4474).Text, obj);
+    tmp3 = callback2(guildId(4477).Text, obj);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -49,7 +49,7 @@ function TierTemplatesRenderer(groupListingId) {
           const style = { height: "100%", width: closure_16 };
           return callback(closure_8, { style });
         };
-        obj[6] = guildId(17623).CARD_WIDTH + c16;
+        obj[6] = guildId(17703).CARD_WIDTH + c16;
         obj[7] = function renderItem(item) {
           return closure_1_14(groupListingId(closure_1_3[10]), { template: item.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId });
         };

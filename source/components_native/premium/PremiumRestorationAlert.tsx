@@ -1,11 +1,11 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15168
+// Function ID: 15169
 // Name: render
-// Dependencies: [19, 6093, 21, 15085, 586, 2]
+// Dependencies: [19, 7177, 21, 15169, 586, 2]
 
-// Module 15084 (render)
-import componentDidMountDefault from "componentDidMount" /* 15085 */;
-import importDefaultResult from "updateProduct" /* 6093 */;
+// Module 15168 (render)
+import componentDidMountDefault from "componentDidMount" /* 15169 */;
+import importDefaultResult from "updateProduct" /* 7177 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 import importDefaultResult1 from "initialize" /* 586 */;

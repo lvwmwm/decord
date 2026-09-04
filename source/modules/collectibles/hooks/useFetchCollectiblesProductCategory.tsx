@@ -1,13 +1,13 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 11014
+// Function ID: 11015
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [32, 7297, 8096, 644, 2]
+// Dependencies: [32, 7475, 10664, 644, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 11053 (useFetchCollectiblesProductCategory)
-import setDefault from "set" /* 8096 */;
+// Module 11014 (useFetchCollectiblesProductCategory)
+import setDefault from "set" /* 10664 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7297 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");

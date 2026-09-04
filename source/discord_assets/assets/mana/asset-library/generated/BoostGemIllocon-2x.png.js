@@ -1,9 +1,9 @@
-// Module ID: 6374
-// Function ID: 6375
+// Module ID: 5755
+// Function ID: 5756
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6374 (metadata)
+// Module 5755 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BoostGemIllocon-2x.png.js");

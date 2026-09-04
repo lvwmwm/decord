@@ -1,10 +1,10 @@
-// Module ID: 4976
-// Function ID: 4977
+// Module ID: 4983
+// Function ID: 4984
 // Name: TIMESTAMP_FORMATS
 // Dependencies: [4163, 4074, 684, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 4976 (TIMESTAMP_FORMATS)
+// Module 4983 (TIMESTAMP_FORMATS)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 684 */;
 import hooksDefault from "hooks" /* 4074 */;

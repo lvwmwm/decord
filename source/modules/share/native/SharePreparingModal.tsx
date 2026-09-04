@@ -1,16 +1,16 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8297
+// Function ID: 8298
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4478, 709, 4917, 8658, 8659, 1233, 5560, 6057, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4924, 8298, 8299, 1233, 5635, 5532, 4477, 2]
 // Exports: default
 
-// Module 8657 (SharePreparingModal)
+// Module 8297 (SharePreparingModal)
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef8659 from "module_8659" /* 8659 */;
+import _modDef8299 from "module_8299" /* 8299 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -32,22 +32,22 @@ export default function SharePreparingModal(onCancel) {
   const items = [onCancel];
   const effect = React.useEffect(() => () => callback(), items);
   let obj = { style: tmp.content, children: null };
-  const items1 = [callback(onCancel(4917).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
+  const items1 = [callback(onCancel(4924).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
   obj = { style: tmp.topBar, pointerEvents: "box-none", children: null };
   obj = { style: tmp.topBarEnd, children: null };
   obj1 = { accessibilityLabel: null, icon: null, onPress: null };
   const intl = onCancel(1233).intl;
   obj1[0] = intl.string(onCancel(1233).t.cpT0Cq);
-  obj1[1] = callback(onCancel(5560).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj1[1] = callback(onCancel(5635).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj1[2] = onCancel;
-  obj[1] = callback(_modDef8659, obj1);
-  obj[2] = callback(onCancel(8658).MediaModalOverlayHeaderWrapper, obj);
+  obj[1] = callback(_modDef8299, obj1);
+  obj[2] = callback(onCancel(8298).MediaModalOverlayHeaderWrapper, obj);
   items1[1] = callback(closure_4, obj);
-  items1[2] = callback(onCancel(6057).ActivityIndicator, {});
+  items1[2] = callback(onCancel(5532).ActivityIndicator, {});
   const obj2 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
   const intl2 = onCancel(1233).intl;
   obj2[2] = intl2.string(onCancel(1233).t.DwTQE5);
-  items1[3] = callback(onCancel(4474).Text, obj2);
+  items1[3] = callback(onCancel(4477).Text, obj2);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

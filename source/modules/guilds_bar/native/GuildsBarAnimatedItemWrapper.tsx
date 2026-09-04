@@ -1,17 +1,17 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16218
+// Function ID: 16219
 // Name: UnreadIndicator
-// Dependencies: [19, 4938, 16123, 21, 4478, 709, 4197, 4204, 4928, 4217, 7808, 16133, 15861, 1233, 1350, 6015, 8109, 2]
+// Dependencies: [19, 4945, 16209, 21, 4481, 709, 4197, 4205, 4935, 4218, 7013, 16219, 15946, 1233, 1350, 5544, 8743, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 16132 (UnreadIndicator)
+// Module 16218 (UnreadIndicator)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import closure_3 from "noop" /* 19 */;
-import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4938 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16123 */;
+import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4945 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class UnreadIndicator {
@@ -124,7 +124,7 @@ class UnreadIndicator {
     obj1[2] = MOUNTED;
     obj1[3] = require("ManaContext").TransitionStates;
     obj1[4] = cleanUp;
-    obj1[5] = require("module_4217").runOnJS;
+    obj1[5] = require("module_4218").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
     fn2.__initData = closure_15;
@@ -150,7 +150,7 @@ let closure_12 = createCacheKey.createStyles(() => {
   let obj = { draggedElement: { opacity: 0 }, selectedBackgroundOverlay: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, container: { position: "relative", overflow: "visible" }, unreadIndicator: null, expandedChildrenWrapper: null };
   obj = { position: "absolute", top: num / 2, left: -4, height: 8, width: 8, borderRadius: ThemesDefault.radii.xs, backgroundColor: ThemesDefault.colors.TEXT_STRONG };
   obj[3] = obj;
-  obj = { position: "absolute", left: num + 16, top: 0, right: 8, height: num, transformOrigin: "0% 50%", display: "flex", flexDirection: "row", alignItems: "center" };
+  obj = { position: "absolute", left: num + 16, top: 0, right: 8, height: num, display: "flex", flexDirection: "row", alignItems: "center" };
   obj[4] = obj;
   return obj;
 });
@@ -250,10 +250,8 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   X.__initData = closure_18;
   let obj4 = hint;
   const animatedStyle = obj2.useAnimatedStyle(X);
-  const context = hint.useContext(id(circle[12]).HomeDrawerStateContext);
-  ({ homeDrawerState, enableHome } = context);
+  const enableHome = hint.useContext(id(circle[12]).HomeDrawerStateContext).enableHome;
   let items = [isDragTarget, dragState, num, overState, zIndex, tmp];
-  ({ guildsBarLabelDrawerStyle, guildsBarIconDrawerStyle, guildsBarUnreadDrawerStyle } = homeDrawerState);
   const memo = hint.useMemo(() => {
     if (isDragTarget) {
       if ("dragging" === dragState) {
@@ -297,9 +295,9 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     }
     str5 = "none";
   }, items);
-  const unreadStyle = memo.unreadStyle;
   const items1 = [styles.pressableWrapper, isDragTarget, tmp6.draggedElement];
-  let tmp13 = !unread;
+  ({ style, unreadStyle } = memo);
+  let tmp12 = !unread;
   const memo1 = hint.useMemo(() => {
     const items = [styles.pressableWrapper, , ];
     let draggedElement;
@@ -311,16 +309,16 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     return items;
   }, items1);
   if (!unread) {
-    tmp13 = !selected;
+    tmp12 = !selected;
   }
-  if (!tmp13) {
-    tmp13 = isDragTarget;
+  if (!tmp12) {
+    tmp12 = isDragTarget;
   }
-  if (!tmp13) {
-    tmp13 = flag2;
+  if (!tmp12) {
+    tmp12 = flag2;
   }
-  flag2 = tmp13;
-  const items2 = [tmp13, selected, sharedId, id];
+  flag2 = tmp12;
+  const items2 = [tmp12, selected, sharedId, id];
   const memo2 = obj4.useMemo(() => {
     if (!flag2) {
       const obj = { selected: null, sharedId: null, id: null };
@@ -348,12 +346,12 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       tmp.current = expanded;
     }
   }, items3);
-  let tmp16 = null != accessibilityActions;
-  if (tmp16) {
-    tmp16 = accessibilityActions.length > 0;
+  let tmp15 = null != accessibilityActions;
+  if (tmp15) {
+    tmp15 = accessibilityActions.length > 0;
   }
-  closure_19 = tmp16;
-  const items4 = [hint, flag, tmp16];
+  closure_19 = tmp15;
+  const items4 = [hint, flag, tmp15];
   const memo3 = obj4.useMemo(() => {
     let arr = hint;
     let tmp = null != hint;
@@ -384,88 +382,63 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   obj.accessibilityRole = "button";
   obj.accessibilityState = { selected, expanded };
   obj.hitSlop = isDragTarget;
-  let tmp20;
+  let tmp19;
   if (memo3.length > 0) {
-    tmp20 = memo3;
+    tmp19 = memo3;
   }
-  obj.accessibilityHint = tmp20;
+  obj.accessibilityHint = tmp19;
   obj.collapsable = false;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
   const items5 = [externalChildren, , ];
-  if (enableHome) {
-    obj1 = { pointerEvents: "none", style: null, children: null };
-    const items6 = [unreadStyle, guildsBarUnreadDrawerStyle];
-    obj1[1] = items6;
-    tmp4Result = tmp4(tmp3[10]);
-    obj2 = { item: null, renderItem: null };
-    obj2[0] = memo2;
-    obj2[1] = flag2;
-    obj1[2] = tmp21(tmp2(tmp3[7]).TransitionItem, obj2);
-    let tmp21Result = tmp21(tmp4Result, obj1);
-    let tmp25 = tmp21;
-  } else {
-    const obj3 = { pointerEvents: "none", style: null, collapsable: false, children: null };
-    obj3[1] = unreadStyle;
-    obj4 = { item: null, renderItem: null };
-    obj4[0] = memo2;
-    obj4[1] = flag2;
-    obj3[3] = tmp21(tmp2(tmp3[7]).TransitionItem, obj4);
-    tmp21Result = tmp21(tmp4(tmp3[15]), obj3);
-    tmp25 = tmp21;
-    const tmp4Result1 = tmp4(tmp3[15]);
-  }
-  items5[1] = tmp21Result;
-  const obj5 = { style: items7, cutouts, children: null };
-  items7 = [styles.itemShape, animatedStyle];
-  const items8 = [tmp6.selectedBackgroundOverlay, ];
+  obj1 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: null };
+  tmp4Result = tmp4(tmp3[15]);
+  obj2 = { item: memo2, renderItem: flag2 };
+  obj1[3] = overState(id(circle[7]).TransitionItem, obj2);
+  items5[1] = overState(tmp4Result, obj1);
+  const obj3 = { style: items6, cutouts, children: null };
+  items6 = [styles.itemShape, animatedStyle];
+  const items7 = [tmp6.selectedBackgroundOverlay, ];
   let itemShapeSelected = null;
   if (selected) {
     itemShapeSelected = styles.itemShapeSelected;
   }
-  items8[1] = itemShapeSelected;
-  const items9 = [tmp25(selected(circle[15]), { pointerEvents: "none", style: items8 }), ];
-  let tmp30 = !isDragTarget;
+  items7[1] = itemShapeSelected;
+  const items8 = [overState(selected(circle[15]), { pointerEvents: "none", style: items7 }), ];
+  let tmp24 = !isDragTarget;
   if (!isDragTarget) {
-    tmp30 = children;
+    tmp24 = children;
   }
-  items9[1] = tmp30;
-  obj5[2] = items9;
-  items5[2] = styles(id(circle[16]).ClipViewAnimated, obj5);
+  items8[1] = tmp24;
+  obj3[2] = items8;
+  items5[2] = styles(id(circle[16]).ClipViewAnimated, obj3);
   obj.children = items5;
-  const tmp17Result = styles(tmp4Result, obj);
+  const tmp4Result1 = selected(circle[15]);
   let container = null;
-  const tmp4Result2 = selected(circle[15]);
+  const tmp16Result = styles(tmp4Result, obj);
   if (enableHome) {
     container = tmp6.container;
   }
-  const obj6 = { style: items10, layout, entering, exiting, collapsable: false, children: null };
-  items10 = [container, memo.style];
-  let tmp25Result = tmp17Result;
+  obj4 = { style: items9, layout, entering, exiting, collapsable: false, children: null };
+  items9 = [container, style];
+  const items10 = [tmp16Result, ];
+  let tmp20Result = null;
   if (enableHome) {
-    const obj7 = { style: null, children: null };
-    obj7[0] = guildsBarIconDrawerStyle;
-    obj7[1] = tmp17Result;
-    tmp25Result = tmp25(tmp4(tmp3[10]), obj7);
-  }
-  const items11 = [tmp25Result, ];
-  tmp25Result = null;
-  if (enableHome) {
-    const obj8 = {};
+    const obj5 = {};
     const merged1 = Object.assign(tmp7);
-    const items12 = [tmp6.expandedChildrenWrapper, guildsBarLabelDrawerStyle];
-    obj8.style = items12;
-    let tmp40 = !isDragTarget;
+    obj5.style = tmp6.expandedChildrenWrapper;
+    obj5.collapsable = false;
+    let tmp33 = !isDragTarget;
     if (!isDragTarget) {
-      tmp40 = expandedChildren;
+      tmp33 = expandedChildren;
     }
-    obj8.children = tmp40;
-    tmp25Result = tmp25(tmp4(tmp3[10]), obj8);
-    const tmp4Result4 = tmp4(tmp3[10]);
+    obj5.children = tmp33;
+    tmp20Result = tmp20(tmp4(tmp3[15]), obj5);
+    const tmp4Result3 = tmp4(tmp3[15]);
   }
-  items11[1] = tmp25Result;
-  obj6[5] = items11;
-  return styles(selected(circle[10]), obj6);
+  items10[1] = tmp20Result;
+  obj4[5] = items10;
+  return styles(selected(circle[10]), obj4);
 };
 export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWrapperStyles(arg0) {
   let obj = arg0;

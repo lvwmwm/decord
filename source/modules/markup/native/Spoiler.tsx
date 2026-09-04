@@ -1,15 +1,15 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10056
+// Function ID: 10057
 // Name: render
-// Dependencies: [19, 17, 673, 10227, 21, 4478, 1234, 709, 4204, 1296, 2]
+// Dependencies: [19, 17, 673, 10047, 21, 4481, 1234, 709, 4205, 1296, 2]
 
-// Module 10234 (render)
+// Module 10056 (render)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { EMOJI_CHAT_SIZE } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 let require = arg1;
@@ -92,7 +92,7 @@ Spoiler.prototype["render"] = function render() {
                 if (Array.isArray(style)) {
                   flattenResult = closure_1_4.flatten(style);
                 }
-                const obj = { children: null, style: null, onPress: "accessible" };
+                const obj = { children: null, style: null, onPress: "Array" };
                 ({ Children, cloneElement } = tmp);
                 obj[0] = Children.map(props.props.children, (props) => {
                   if (closure_1_2.isValidElement(props)) {
@@ -102,7 +102,7 @@ Spoiler.prototype["render"] = function render() {
                     if (Array.isArray(style)) {
                       flattenResult = closure_1_4.flatten(style);
                     }
-                    const obj = { children: null, style: null, onPress: "accessible" };
+                    const obj = { children: null, style: null, onPress: "Array" };
                     ({ Children, cloneElement } = tmp);
                     obj[0] = Children.map(props.props.children, (props) => {
                       if (closure_1_2.isValidElement(props)) {
@@ -112,7 +112,7 @@ Spoiler.prototype["render"] = function render() {
                         if (Array.isArray(style)) {
                           flattenResult = closure_1_4.flatten(style);
                         }
-                        const obj = { children: null, style: null, onPress: "accessible" };
+                        const obj = { children: null, style: null, onPress: "Array" };
                         ({ Children, cloneElement } = tmp);
                         obj[0] = Children.map(props.props.children, () => { ... });
                         const items = [flattenResult, spoiler.spoiler];

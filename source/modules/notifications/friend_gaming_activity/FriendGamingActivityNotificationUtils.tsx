@@ -1,10 +1,10 @@
-// Module ID: 15346
-// Function ID: 15347
+// Module ID: 15428
+// Function ID: 15429
 // Name: onFriendGamingActivityNotificationSettingsChanged
 // Dependencies: [4133, 673, 4166, 695, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 15346 (onFriendGamingActivityNotificationSettingsChanged)
+// Module 15428 (onFriendGamingActivityNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;

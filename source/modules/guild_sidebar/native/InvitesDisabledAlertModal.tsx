@@ -1,13 +1,13 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12230
+// Function ID: 12231
 // Name: InvitesDisabledAlertModal
-// Dependencies: [19, 21, 4864, 1233, 4864, 2]
+// Dependencies: [19, 21, 4871, 1233, 4871, 2]
 // Exports: default
 
-// Module 12094 (InvitesDisabledAlertModal)
+// Module 12230 (InvitesDisabledAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

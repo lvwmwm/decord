@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 240, height: 130, scales: [2, 3], hash: "ddcb188db6ac661c6c9a0057112012b2", name: "no_mutual_servers_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/InRainbowsIcon", width: 60, height: 60, scales: [2, 3], hash: "83afa6ade4bb460402841be8438f6e52", name: "InRainbowsIcon", type: "png" });

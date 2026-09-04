@@ -1,12 +1,12 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17724
+// Function ID: 17725
 // Name: handleChannelCreate
-// Dependencies: [5, 13838, 673, 5495, 13837, 6100, 2]
+// Dependencies: [5, 13870, 673, 7058, 13869, 7184, 2]
 
-// Module 17644 (handleChannelCreate)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17724 (handleChannelCreate)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID" /* 13838 */;
+import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID" /* 13870 */;
 import { Routes } from "ME" /* 673 */;
 
 const require = arg1;
@@ -52,20 +52,20 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = tmp22(13837).hasRedirectedToGuild(closure_1_4);
+              obj1[0] = tmp22(13869).hasRedirectedToGuild(closure_1_4);
               return obj1;
             } else {
               dependencyMap = 3;
             }
-            obj6 = closure_1_0(13837);
+            obj6 = closure_1_0(13869);
             tmp22 = closure_1_0;
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          v0(6100)(closure_1_5.CHANNEL(null, id.id));
-          const tmp9 = v0(6100);
+          v0(7184)(closure_1_5.CHANNEL(null, id.id));
+          const tmp9 = v0(7184);
         }
         dependencyMap = 3;
         obj = { value: null, done: true };

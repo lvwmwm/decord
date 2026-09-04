@@ -1,17 +1,17 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11007
+// Function ID: 11008
 // Name: PremiumGiftingGoGoSuccessActions
-// Dependencies: [19, 10700, 673, 675, 21, 4478, 709, 10702, 586, 10740, 10749, 1498, 10741, 4753, 10680, 8651, 7296, 5982, 10755, 1233, 2432, 4929, 2]
+// Dependencies: [19, 10594, 673, 675, 21, 4481, 709, 10628, 586, 10671, 10680, 1498, 10672, 4760, 10591, 8291, 7474, 7122, 10686, 1233, 2432, 4936, 2]
 // Exports: default
 
-// Module 11046 (PremiumGiftingGoGoSuccessActions)
+// Module 11007 (PremiumGiftingGoGoSuccessActions)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createEmptyPromotionsByType" /* 10700 */;
+import closure_4 from "createEmptyPromotionsByType" /* 10594 */;
 import { AnalyticsSections } from "ME" /* 673 */;
 import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 675 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);

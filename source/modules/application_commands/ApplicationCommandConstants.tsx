@@ -1,10 +1,10 @@
-// Module ID: 4953
-// Function ID: 4954
+// Module ID: 4960
+// Function ID: 4961
 // Name: TRUE_OPTION_NAME
 // Dependencies: [1233, 1954, 2]
 // Exports: getValidationErrorText
 
-// Module 4953 (TRUE_OPTION_NAME)
+// Module 4960 (TRUE_OPTION_NAME)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;

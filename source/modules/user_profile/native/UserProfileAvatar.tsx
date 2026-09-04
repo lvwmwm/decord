@@ -1,16 +1,16 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8186
+// Function ID: 8187
 // Name: OpenableUserProfileAvatar
-// Dependencies: [19, 17, 8573, 6010, 21, 8547, 8117, 8575, 8584, 1233, 2]
+// Dependencies: [19, 17, 8114, 7148, 21, 8172, 8187, 8121, 8190, 1233, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8572 (OpenableUserProfileAvatar)
-import _modDef8117 from "module_8117" /* 8117 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8547 */;
+// Module 8186 (OpenableUserProfileAvatar)
+import useSharedStylesDefault from "useSharedStyles" /* 8172 */;
+import _modDef8187 from "module_8187" /* 8187 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
-import { AVATAR_SIZE_VARIANT } from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
+import { AVATAR_SIZE_VARIANT } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   items2 = [, ];
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp2);
   const merged1 = Object.assign(merged);
-  items1[1] = callback(_modDef8117, obj);
+  items1[1] = callback(_modDef8187, obj);
   obj[0] = items1;
   return callback2(closure_8, obj);
 });

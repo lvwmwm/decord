@@ -1,17 +1,18 @@
-// Module ID: 14615
-// Function ID: 14616
+// Module ID: 14683
+// Function ID: 14684
 // Name: pressable
-// Dependencies: [7896, 8701, 8703, 4734, 1233, 4172, 11292, 2]
+// Dependencies: [7906, 8341, 8343, 4741, 1233, 4172, 14607, 11400, 2]
 
-// Module 14615 (pressable)
+// Module 14683 (pressable)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8701 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8703 */;
-import createToggle from "createToggle" /* 11292 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8343 */;
+import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14607 */;
+import createToggle from "createToggle" /* 11400 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
@@ -41,12 +42,17 @@ const pressable = createToggle.createPressable({
     const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
     const obj2 = useAgeVerificationRunner;
     let hasTeenDefaults = isFeatureAgeGated.useHasTeenDefaults();
+    const obj3 = isFeatureAgeGated;
+    const isTinyBroncoSettingsEnabled = useIsTinyBroncoSettingsEnabled.useIsTinyBroncoSettingsEnabled();
     if (hasTeenDefaults) {
-      let tmp4 = !isAgeVerified;
+      let tmp5 = !isAgeVerified;
       if (isAgeVerified) {
-        tmp4 = isVerifiedTeen;
+        tmp5 = isVerifiedTeen;
       }
-      hasTeenDefaults = tmp4;
+      hasTeenDefaults = tmp5;
+    }
+    if (hasTeenDefaults) {
+      hasTeenDefaults = !isTinyBroncoSettingsEnabled;
     }
     return hasTeenDefaults;
   }
@@ -79,12 +85,17 @@ let obj = {
     const isVerifiedTeen = useAgeVerificationRunner.useIsVerifiedTeen();
     const obj2 = useAgeVerificationRunner;
     let hasTeenDefaults = isFeatureAgeGated.useHasTeenDefaults();
+    const obj3 = isFeatureAgeGated;
+    const isTinyBroncoSettingsEnabled = useIsTinyBroncoSettingsEnabled.useIsTinyBroncoSettingsEnabled();
     if (hasTeenDefaults) {
-      let tmp4 = !isAgeVerified;
+      let tmp5 = !isAgeVerified;
       if (isAgeVerified) {
-        tmp4 = isVerifiedTeen;
+        tmp5 = isVerifiedTeen;
       }
-      hasTeenDefaults = tmp4;
+      hasTeenDefaults = tmp5;
+    }
+    if (hasTeenDefaults) {
+      hasTeenDefaults = !isTinyBroncoSettingsEnabled;
     }
     return hasTeenDefaults;
   }

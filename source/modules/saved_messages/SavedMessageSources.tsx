@@ -1,9 +1,9 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11641
+// Function ID: 11642
 // Name: SavedMessageSources
 // Dependencies: [2]
 
-// Module 11520 (SavedMessageSources)
+// Module 11641 (SavedMessageSources)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/saved_messages/SavedMessageSources.tsx");

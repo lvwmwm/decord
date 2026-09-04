@@ -1,11 +1,11 @@
-// Module ID: 9655
-// Function ID: 9656
+// Module ID: 9598
+// Function ID: 9599
 // Name: useEventException
-// Dependencies: [7281, 586, 2]
+// Dependencies: [7459, 586, 2]
 // Exports: default, getEventException
 
-// Module 9655 (useEventException)
-import closure_2 from "scheduledEventSort" /* 7281 */;
+// Module 9598 (useEventException)
+import closure_2 from "scheduledEventSort" /* 7459 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");

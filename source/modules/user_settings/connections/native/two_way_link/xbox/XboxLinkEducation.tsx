@@ -1,21 +1,21 @@
-// Module ID: 9338
-// Function ID: 9339
+// Module ID: 9374
+// Function ID: 9375
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 673, 21, 4478, 9323, 1994, 9339, 4474, 1233, 5562, 4929, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 9155, 1994, 9193, 4477, 1233, 7063, 4936, 2]
 // Exports: default
 
-// Module 9338 (XboxLinkEducation)
+// Module 9374 (XboxLinkEducation)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import styles from "styles" /* 9323 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import styles from "styles" /* 9155 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);

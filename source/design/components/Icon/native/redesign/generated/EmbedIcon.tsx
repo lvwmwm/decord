@@ -1,14 +1,14 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9360
+// Function ID: 9361
 // Name: EmbedIcon
-// Dependencies: [19, 21, 709, 4196, 9389, 2]
+// Dependencies: [19, 21, 709, 4196, 9361, 2]
 // Exports: EmbedIcon
 
-// Module 9388 (EmbedIcon)
+// Module 9360 (EmbedIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9389 */;
+import registerAsset from "registerAsset" /* 9361 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

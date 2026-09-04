@@ -1,9 +1,9 @@
-// Module ID: 6926
-// Function ID: 6927
+// Module ID: 6307
+// Function ID: 6308
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6926 (metadata)
+// Module 6307 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivacyShieldLaptopBannerSpotIllustration-2x.png.js");

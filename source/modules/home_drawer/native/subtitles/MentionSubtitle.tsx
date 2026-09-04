@@ -1,14 +1,14 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16247
+// Function ID: 16248
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 16162, 4982, 5034, 4474, 1233, 2]
+// Dependencies: [19, 17, 21, 16248, 4989, 5041, 4477, 1233, 2]
 // Exports: default
 
-// Module 16161 (MentionSubtitle)
+// Module 16247 (MentionSubtitle)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import styles from "styles" /* 16162 */;
+import Text from "Text" /* 4477 */;
+import styles from "styles" /* 16248 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -24,11 +24,11 @@ export default function MentionSubtitle(channel) {
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(4982).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(4982);
+    channelIconComponentWithGuild = tmp(4989).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(4989);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5034).TextIcon;
+    channelIconComponentWithGuild = tmp(5041).TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow, children: null };
   obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };

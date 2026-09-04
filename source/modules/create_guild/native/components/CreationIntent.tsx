@@ -1,24 +1,24 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12644
+// Function ID: 12645
 // Name: CreationIntent
-// Dependencies: [19, 17, 7765, 673, 21, 4478, 5501, 709, 1498, 4916, 4925, 12457, 695, 5562, 4474, 1233, 6001, 12120, 6266, 2]
+// Dependencies: [19, 17, 6920, 673, 21, 4481, 5637, 709, 1498, 4923, 4932, 12615, 695, 7063, 4477, 1233, 5642, 12256, 5647, 2]
 // Exports: default
 
-// Module 12486 (CreationIntent)
+// Module 12644 (CreationIntent)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useNavigation from "useNavigation" /* 1498 */;
-import Text from "Text" /* 4474 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4916 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6266 */;
+import Text from "Text" /* 4477 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4923 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 7765 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 6920 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
@@ -127,7 +127,7 @@ export default function CreationIntent(arg0) {
   const items3 = [callback2(ref, obj1), , ];
   const obj4 = { style: tmp.sections, children: null };
   const obj5 = { hasIcons: true, children: null };
-  const tmp13 = trigger(12120);
+  const tmp13 = trigger(12256);
   const obj6 = { Icon: null, message: null, onPress: null };
   const tmp14 = AccountAgeTier10LargeBadge;
   if (closure_14) {
@@ -139,8 +139,8 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp8(tmp13, obj6), ];
     const obj7 = { Icon: null, message: null, onPress: null };
-    let tmp12Result = tmp12(12120);
-    obj7[0] = tmp2(6266).WorldIllocon;
+    let tmp12Result = tmp12(12256);
+    obj7[0] = tmp2(5647).WorldIllocon;
     const intl6 = tmp2(1233).intl;
     obj7[1] = intl6.string(tmp2(1233).t.h9Q1lG);
     obj7[2] = function onPress() {
@@ -158,8 +158,8 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp8(tmp13, obj6), ];
     const obj8 = { Icon: null, message: null, onPress: null };
-    tmp12Result = tmp12(12120);
-    obj8[0] = tmp2(6266).ChairIllocon;
+    tmp12Result = tmp12(12256);
+    obj8[0] = tmp2(5647).ChairIllocon;
     const intl4 = tmp2(1233).intl;
     obj8[1] = intl4.string(tmp2(1233).t.uE7zcu);
     obj8[2] = function onPress() {

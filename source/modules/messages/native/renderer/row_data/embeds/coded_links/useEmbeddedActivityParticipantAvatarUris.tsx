@@ -1,11 +1,11 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13148
+// Function ID: 13149
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 1385, 1921, 1470, 644, 2]
+// Dependencies: [19, 1385, 1921, 1394, 644, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 13116 (useEmbeddedActivityParticipantAvatarUris)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+// Module 13148 (useEmbeddedActivityParticipantAvatarUris)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;

@@ -1,15 +1,15 @@
-// Module ID: 9144
-// Function ID: 9145
+// Module ID: 10220
+// Function ID: 10221
 // Name: useExpressionPickerListWidth
-// Dependencies: [1337, 5632, 1492, 1627, 2]
+// Dependencies: [1337, 7091, 1492, 1627, 2]
 // Exports: default
 
-// Module 9144 (useExpressionPickerListWidth)
+// Module 10220 (useExpressionPickerListWidth)
 import set from "set" /* 2 */;
 import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1337 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
 
 const PADDING_HORIZONTAL = ExpressionPickerViewType.PADDING_HORIZONTAL;
 const ACTION_SHEET_MAX_WIDTH = ACTION_SHEET_START_HEIGHT_RATIO.ACTION_SHEET_MAX_WIDTH;

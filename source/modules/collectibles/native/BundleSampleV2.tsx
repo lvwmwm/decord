@@ -1,23 +1,23 @@
-// Module ID: 8523
-// Function ID: 8524
+// Module ID: 8727
+// Function ID: 8728
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 8524, 21, 5502, 4478, 709, 38, 1949, 1946, 8525, 8536, 8538, 1296, 2]
+// Dependencies: [19, 17, 8728, 21, 5542, 4481, 709, 38, 1949, 1946, 8729, 8740, 8747, 1296, 2]
 // Exports: default
 
-// Module 8523 (BundleStaticPreviewContent)
+// Module 8727 (BundleStaticPreviewContent)
 import noopAll from "noop" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getNameplateData from "getNameplateData" /* 1946 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import preloadDefault from "preload" /* 5502 */;
-import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8525 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8536 */;
-import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8538 */;
+import preloadDefault from "preload" /* 5542 */;
+import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8729 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8740 */;
+import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8747 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8524 */;
+import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8728 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function BundleStaticPreviewContent(mutedBackground) {

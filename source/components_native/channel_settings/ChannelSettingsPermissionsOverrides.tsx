@@ -1,16 +1,16 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16751
+// Function ID: 16752
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 1429, 1386, 1984, 1908, 4120, 4130, 1921, 673, 21, 4478, 709, 1498, 1627, 586, 11425, 11424, 4125, 503, 9727, 4491, 1954, 4322, 4858, 1233, 4190, 1994, 1394, 16665, 7618, 4474, 4674, 10904, 5608, 1296, 6001, 16669, 1234, 16670, 2]
+// Dependencies: [32, 5, 19, 17, 1430, 1386, 1984, 1908, 4120, 4130, 1921, 673, 21, 4481, 709, 1498, 1627, 586, 11543, 11542, 4125, 503, 9669, 4494, 1954, 4325, 4865, 1233, 4190, 1994, 1395, 16752, 7795, 4477, 4681, 10873, 5560, 1296, 5642, 16756, 1234, 16757, 2]
 // Exports: default
 
-// Module 16664 (ChannelSettingsPermissionsOverrides)
+// Module 16751 (ChannelSettingsPermissionsOverrides)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_12 from "createGuildRecordFromRust" /* 1908 */;
@@ -19,7 +19,7 @@ import closure_14 from "markAllUserIdListsStale" /* 4130 */;
 import closure_15 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: error, ScrollView: closure_8 } = get_ActivityIndicator);
@@ -55,9 +55,9 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   let items = [first];
   const stateFromStores = obj1.useStateFromStores(items, () => first.getChannel(closure_0));
   callback2 = stateFromStores;
-  let obj2 = _require(11425);
+  let obj2 = _require(11543);
   const appChannelApplication = obj2.useAppChannelApplication(stateFromStores);
-  let obj3 = _require(11424);
+  let obj3 = _require(11542);
   const appChannelBotUserId = obj3.useAppChannelBotUserId(stateFromStores);
   React = appChannelBotUserId;
   let tmp9 = null;
@@ -148,7 +148,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                         c4 = 1;
                         c5 = 1;
                         const obj2 = { value: null, done: false };
-                        obj2[0] = callback(9727).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
+                        obj2[0] = callback(9669).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
                         return obj2;
                       }
                     }
@@ -161,9 +161,9 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                   throwTypeErrorResult = dependencyMap;
                   throwTypeErrorResult = c5;
                   throwTypeErrorResult = closure_1_3;
-                  throwTypeErrorResult = id(4491).updatePermissionOverwrite(c5.id, closure_1_3);
+                  throwTypeErrorResult = id(4494).updatePermissionOverwrite(c5.id, closure_1_3);
                   c5 = 3;
-                  const obj17 = id(4491);
+                  const obj17 = id(4494);
                 } else if (closure_2_13.can(callback, c5)) {
                   if (!closure_1) {
                     if (!obj11.has(closure_1_2.allow, callback)) {
@@ -179,8 +179,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                 if (callback(1954).PermissionOverwriteType.MEMBER === type) {
                   const user = closure_2_15.getUser(fromCreate.id);
                   if (null != user) {
-                    const name2 = id(4322).getName(user);
-                    const obj13 = id(4322);
+                    const name2 = id(4325).getName(user);
+                    const obj13 = id(4325);
                   }
                 } else {
                   throwTypeErrorResult = obj1;
@@ -230,8 +230,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                   const obj = _undefined(obj1[28]);
                   obj.openURL(_undefined(obj1[29]).getArticleURL(constants.PERMISSIONS_LOCKOUT));
                 };
-                throwTypeErrorResult = id(4858).show(obj4);
-                const obj14 = id(4858);
+                throwTypeErrorResult = id(4865).show(obj4);
+                const obj14 = id(4865);
               }
             } else if (guildId1 === 1) {
               c5 = 3;
@@ -354,14 +354,14 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   obj = { variant: "text-md/medium", color: "text-muted", children: null };
   let tmp10 = callback(React.useState(() => id(section[31]).generateChannelPermissionSpec(closure_5.guild_id, closure_5, id === closure_5.guild_id)), 2);
   const tmp5 = id;
-  obj[2] = _require(4674).computeChannelName(stateFromStores, closure_15, closure_14, true);
-  const tmp13 = callback3(_require(4474).Text, obj);
+  obj[2] = _require(4681).computeChannelName(stateFromStores, closure_15, closure_14, true);
+  const tmp13 = callback3(_require(4477).Text, obj);
   if (fromCreate.type === constants.MEMBER) {
     obj = { userId: null, guildId: null, start: true, end: true, trailing: null };
     obj[0] = id;
     obj[1] = stateFromStores.guild_id;
     obj[4] = tmp13;
-    let tmp12Result = tmp12(tmp5(10904), obj);
+    let tmp12Result = tmp12(tmp5(10873), obj);
   } else {
     role = role.getRole(stateFromStores.guild_id, id);
     let str;
@@ -374,7 +374,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     obj1 = { end: true, label: null, start: true, trailing: null };
     obj1[1] = str;
     obj1[3] = tmp13;
-    tmp12Result = tmp12(tmp2(5608).TableRow, obj1);
+    tmp12Result = tmp12(tmp2(5560).TableRow, obj1);
   }
   obj2 = { style: tmp.container, contentContainerStyle: items5, children: null };
   items5 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + id(1627)().bottom }];

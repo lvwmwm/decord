@@ -1,16 +1,16 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 10806
+// Function ID: 10807
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4478, 709, 4948, 1233, 4858, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4955, 1233, 4865, 4477, 2]
 // Exports: default
 
-// Module 9098 (AcceptRequestConfirmationModal)
+// Module 10806 (AcceptRequestConfirmationModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -39,11 +39,11 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   obj = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: null };
   const intl3 = onConfirm(1233).intl;
   obj[3] = intl3.string(onConfirm(1233).t.eJzSDT);
-  const items = [callback(onConfirm(4474).Text, obj), ];
+  const items = [callback(onConfirm(4477).Text, obj), ];
   obj1 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: null };
   const intl4 = onConfirm(1233).intl;
   obj1[3] = intl4.string(onConfirm(1233).t.GB4jUw);
-  items[1] = callback(onConfirm(4474).Text, obj1);
+  items[1] = callback(onConfirm(4477).Text, obj1);
   obj[1] = items;
   obj[4] = callback2(View, obj);
   return callback(componentDidMountDefault, obj);

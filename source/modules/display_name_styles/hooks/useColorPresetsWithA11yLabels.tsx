@@ -1,10 +1,10 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 15269
+// Function ID: 15270
 // Name: useColorPresetsWithA11yLabels
 // Dependencies: [19, 1938, 1233, 2758, 685, 2]
 // Exports: default
 
-// Module 15185 (useColorPresetsWithA11yLabels)
+// Module 15269 (useColorPresetsWithA11yLabels)
 import closure_3 from "noop" /* 19 */;
 import { getColorPresetsForEffect } from "items3" /* 1938 */;
 

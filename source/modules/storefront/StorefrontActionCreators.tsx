@@ -1,18 +1,18 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 8715
+// Function ID: 8716
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 4141, 6088, 8513, 10692, 10693, 673, 684, 706, 527, 6087, 2]
+// Dependencies: [5, 4141, 7172, 8716, 8717, 8718, 673, 684, 706, 527, 7171, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 10691 (shouldFetchStorefrontPromotions)
+// Module 8715 (shouldFetchStorefrontPromotions)
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import resetStoreStateDefault from "resetStoreState" /* 6088 */;
+import resetStoreStateDefault from "resetStoreState" /* 7172 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handlePaymentSourceCreateEnd" /* 4141 */;
-import closure_5 from "getPromotionIdOverride" /* 8513 */;
-import closure_6 from "handleReset" /* 10692 */;
-import closure_7 from "parseSkuIds" /* 10693 */;
+import closure_5 from "getPromotionIdOverride" /* 8716 */;
+import closure_6 from "handleReset" /* 8717 */;
+import closure_7 from "parseSkuIds" /* 8718 */;
 import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
@@ -460,7 +460,7 @@ function _fetchStorefrontPrices() {
             obj = body(706);
             let obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
             obj2[1] = callback;
-            obj2 = callback(6087);
+            obj2 = callback(7171);
             obj2[2] = obj2.transformStorefrontPricesServer(body);
             obj.dispatch(obj2);
             dependencyMap = 0;

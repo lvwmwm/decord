@@ -1,13 +1,13 @@
 // Module ID: 1209
 // Function ID: 1210
 // Name: initialize
-// Dependencies: [32, 1210, 1215, 673, 706, 695, 4393, 2]
+// Dependencies: [32, 1210, 1215, 673, 706, 695, 4396, 2]
 
 // Module 1209 (initialize)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import _toPropertyKeyDefault from "_toPropertyKey" /* 1210 */;
-import Version from "Version" /* 4393 */;
+import Version from "Version" /* 4396 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import { AnalyticEvents } from "ME" /* 673 */;

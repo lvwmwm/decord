@@ -1,12 +1,12 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17204
+// Function ID: 17205
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 17118 (apexExperiment)
+// Module 17204 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { sampleRate: 0.0001 };

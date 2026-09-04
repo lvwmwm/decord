@@ -1,13 +1,13 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8189
+// Function ID: 8190
 // Name: _isStreaming
-// Dependencies: [4506, 673, 2]
+// Dependencies: [4509, 673, 2]
 // Exports: default
 
-// Module 8119 (_isStreaming)
+// Module 8189 (_isStreaming)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import items3 from "items3" /* 4506 */;
+import items3 from "items3" /* 4509 */;
 
 function _isStreaming(type) {
   let tmp = type.type === ActivityTypes.STREAMING;

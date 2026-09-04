@@ -1,9 +1,9 @@
-// Module ID: 4276
-// Function ID: 4277
+// Module ID: 4279
+// Function ID: 4280
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4276 (metadata)
+// Module 4279 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointFriends.riv.js");

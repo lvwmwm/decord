@@ -1,14 +1,14 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 8797
+// Function ID: 8798
 // Name: PlusSmallIcon
-// Dependencies: [19, 21, 709, 4196, 9399, 2]
+// Dependencies: [19, 21, 709, 4196, 8798, 2]
 // Exports: PlusSmallIcon
 
-// Module 9398 (PlusSmallIcon)
+// Module 8797 (PlusSmallIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9399 */;
+import registerAsset from "registerAsset" /* 8798 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

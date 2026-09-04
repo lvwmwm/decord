@@ -1,20 +1,20 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15849
+// Function ID: 15850
 // Name: DraggableContainer
-// Dependencies: [19, 7475, 707, 21, 4478, 709, 4217, 11214, 11834, 5661, 4928, 4932, 5077, 14474, 15417, 15764, 15416, 2]
+// Dependencies: [19, 7652, 707, 21, 4481, 709, 4218, 11285, 11965, 6595, 4935, 4939, 5084, 14506, 15499, 15850, 15498, 2]
 // Exports: default
 
-// Module 15763 (DraggableContainer)
+// Module 15849 (DraggableContainer)
 import ThemesDefault from "Themes" /* 709 */;
-import _mod4217 from "module_4217" /* 4217 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15417 */;
-import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15764 */;
+import _mod4218 from "module_4218" /* 4218 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15499 */;
+import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15850 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "initialize" /* 7475 */;
+import closure_4 from "initialize" /* 7652 */;
 import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 707 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function DraggableContainer(children) {
@@ -157,9 +157,9 @@ let closure_16 = importAllResult.memo(() => {
 let result = require("set").fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
 
 export default function DevWidget() {
-  let obj = _mod4217;
+  let obj = _mod4218;
   const sharedValue = obj.useSharedValue(closure_4.devWidgetPosition.x);
-  const sharedValue1 = _mod4217.useSharedValue(closure_4.devWidgetPosition.y);
+  const sharedValue1 = _mod4218.useSharedValue(closure_4.devWidgetPosition.y);
   obj = { children: null };
   const items = [callback(VisualEffectViewOverrideOverlay_Default, { x: sharedValue, y: sharedValue1 }), ];
   obj = {

@@ -1,14 +1,14 @@
-// Module ID: 8460
-// Function ID: 8461
+// Module ID: 11361
+// Function ID: 11362
 // Name: updateGiftCode
-// Dependencies: [8461, 673, 4362, 4074, 4753, 706, 8494, 586, 2]
+// Dependencies: [10629, 673, 4365, 4074, 4760, 706, 11362, 586, 2]
 
-// Module 8460 (updateGiftCode)
+// Module 11361 (updateGiftCode)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import hooksDefault from "hooks" /* 4074 */;
-import _resolveGiftCode from "_resolveGiftCode" /* 4753 */;
-import closure_3 from "frozen" /* 8461 */;
+import _resolveGiftCode from "_resolveGiftCode" /* 4760 */;
+import closure_3 from "frozen" /* 10629 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
@@ -22,7 +22,7 @@ function updateGiftCode(giftCode) {
   } else {
     const result1 = set(code, fromServer);
     if (null != fromServer.expiresAt) {
-      const timeout = new code(4362).Timeout();
+      const timeout = new code(4365).Timeout();
       closure_7[code] = timeout;
       value = obj.get(code);
       if (null != value) {

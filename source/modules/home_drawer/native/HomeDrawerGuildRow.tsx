@@ -1,26 +1,26 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16240
+// Function ID: 16241
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 4122, 1390, 1386, 1981, 7391, 1908, 4493, 4130, 4702, 1921, 673, 4703, 21, 4478, 586, 4338, 4335, 13182, 10264, 4474, 16155, 16156, 4674, 11, 16157, 16158, 11780, 16159, 16160, 16161, 16163, 16164, 16143, 2]
+// Dependencies: [19, 17, 4122, 1390, 1386, 1981, 7569, 1908, 4496, 4130, 4709, 1921, 673, 4710, 21, 4481, 586, 4341, 4338, 13215, 8989, 4477, 16241, 16242, 4681, 11, 16243, 16244, 11911, 16245, 16246, 16247, 16249, 16250, 16229, 2]
 // Exports: default
 
-// Module 16154 (GuildRowWrapper)
+// Module 16240 (GuildRowWrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "storeThread" /* 4122 */;
 import { isThread } from "createChannelRecord" /* 1390 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "comparator" /* 1981 */;
-import closure_9 from "updateGuildUnreadSentinel" /* 7391 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 7569 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "generateOldThreadCutoff" /* 4493 */;
+import closure_11 from "generateOldThreadCutoff" /* 4496 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_14 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function GuildRowWrapper(guild) {
@@ -345,7 +345,7 @@ export default function HomeDrawerGuildRow(guildId) {
   obj = guildId(586);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4338).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4341).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

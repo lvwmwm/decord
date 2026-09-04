@@ -1,13 +1,13 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15714
+// Function ID: 15715
 // Name: route
-// Dependencies: [7896, 673, 11292, 15633, 2]
+// Dependencies: [7906, 673, 11400, 15715, 2]
 
-// Module 15632 (route)
+// Module 15714 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import createToggle from "createToggle" /* 11292 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -19,7 +19,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.DESIGN_SYSTEM_BACKDROP,
   getComponent() {
-    return require(15633) /* BackdropCard */.default;
+    return require(15715) /* BackdropCard */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,10 +1,10 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12567
+// Function ID: 12568
 // Name: PortalAccessibilityWorkaroundView
-// Dependencies: [19, 17, 21, 1234, 12410, 2]
+// Dependencies: [19, 17, 21, 1234, 12568, 2]
 // Exports: default
 
-// Module 12409 (PortalAccessibilityWorkaroundView)
+// Module 12567 (PortalAccessibilityWorkaroundView)
 import noopAll from "noop" /* 19 */;
 import set2 from "set" /* 1234 */;
 import { View as _default } from "get ActivityIndicator" /* 17 */;

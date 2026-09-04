@@ -1,16 +1,16 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7335
+// Function ID: 7336
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4370, 673, 5388, 1923, 21, 7156, 4724, 5386, 13468, 1498, 5962, 644, 1929, 12338, 4929, 1233, 5049, 2]
+// Dependencies: [5, 19, 17, 4373, 673, 5396, 1923, 21, 7336, 4731, 5394, 13501, 1498, 7102, 644, 1929, 12470, 4936, 1233, 5056, 2]
 // Exports: default
 
-// Module 7155 (_handleBoostPress)
+// Module 7335 (_handleBoostPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4370 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4373 */;
 import ME from "ME" /* 673 */;
-import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 5388 */;
+import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 5396 */;
 import { FractionalPremiumStates } from "GuildFeatures" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -66,7 +66,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(7156).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(7336).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -78,7 +78,7 @@ function _handleBoostPress() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(5386);
+            obj = callback(5394);
             obj.closeApplyBoostModal();
             c5 = 3;
             return { value: "HermesInternal", done: null };

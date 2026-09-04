@@ -1,12 +1,12 @@
-// Module ID: 17238
-// Function ID: 17239
+// Module ID: 17324
+// Function ID: 17325
 // Name: onPostConnectionOpen
-// Dependencies: [5, 17, 1921, 673, 5495, 1234, 17239, 527, 1205, 695, 2]
+// Dependencies: [5, 17, 1921, 673, 7058, 1234, 17325, 527, 1205, 695, 2]
 
-// Module 17238 (onPostConnectionOpen)
+// Module 17324 (onPostConnectionOpen)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import _modDef1205 from "module_1205" /* 1205 */;
-import initializeDefault from "initialize" /* 5495 */;
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;

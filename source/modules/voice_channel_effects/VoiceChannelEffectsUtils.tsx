@@ -1,43 +1,43 @@
-// Module ID: 6203
-// Function ID: 6204
+// Module ID: 7287
+// Function ID: 7288
 // Name: VoiceChannelEffectAnimationType
-// Dependencies: [1921, 6202, 6204, 6205, 6206, 6207, 6208, 6209, 6210, 6211, 6212, 6213, 6214, 6215, 6216, 6217, 6218, 6219, 6220, 6221, 6222, 6223, 6224, 6225, 12, 1464, 1430, 4134, 4138, 1233, 2]
+// Dependencies: [1921, 7286, 7288, 7289, 7290, 7291, 7292, 7293, 7294, 7295, 7296, 7297, 7298, 7299, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7309, 12, 1465, 1431, 4134, 4138, 1233, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 6203 (VoiceChannelEffectAnimationType)
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+// Module 7287 (VoiceChannelEffectAnimationType)
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import _modDef6204 from "module_6204" /* 6204 */;
-import _modDef6205 from "module_6205" /* 6205 */;
-import _modDef6206 from "module_6206" /* 6206 */;
-import _modDef6207 from "module_6207" /* 6207 */;
-import _modDef6208 from "module_6208" /* 6208 */;
-import _modDef6209 from "module_6209" /* 6209 */;
-import _modDef6210 from "module_6210" /* 6210 */;
-import _modDef6211 from "module_6211" /* 6211 */;
-import _modDef6212 from "module_6212" /* 6212 */;
-import _modDef6213 from "module_6213" /* 6213 */;
-import _modDef6214 from "module_6214" /* 6214 */;
-import _modDef6215 from "module_6215" /* 6215 */;
-import _modDef6216 from "module_6216" /* 6216 */;
-import _modDef6217 from "module_6217" /* 6217 */;
-import _modDef6218 from "module_6218" /* 6218 */;
-import _modDef6219 from "module_6219" /* 6219 */;
-import _modDef6220 from "module_6220" /* 6220 */;
-import _modDef6221 from "module_6221" /* 6221 */;
-import _modDef6222 from "module_6222" /* 6222 */;
-import _modDef6223 from "module_6223" /* 6223 */;
-import _modDef6224 from "module_6224" /* 6224 */;
-import _modDef6225 from "module_6225" /* 6225 */;
+import _modDef7288 from "module_7288" /* 7288 */;
+import _modDef7289 from "module_7289" /* 7289 */;
+import _modDef7290 from "module_7290" /* 7290 */;
+import _modDef7291 from "module_7291" /* 7291 */;
+import _modDef7292 from "module_7292" /* 7292 */;
+import _modDef7293 from "module_7293" /* 7293 */;
+import _modDef7294 from "module_7294" /* 7294 */;
+import _modDef7295 from "module_7295" /* 7295 */;
+import _modDef7296 from "module_7296" /* 7296 */;
+import _modDef7297 from "module_7297" /* 7297 */;
+import _modDef7298 from "module_7298" /* 7298 */;
+import _modDef7299 from "module_7299" /* 7299 */;
+import _modDef7300 from "module_7300" /* 7300 */;
+import _modDef7301 from "module_7301" /* 7301 */;
+import _modDef7302 from "module_7302" /* 7302 */;
+import _modDef7303 from "module_7303" /* 7303 */;
+import _modDef7304 from "module_7304" /* 7304 */;
+import _modDef7305 from "module_7305" /* 7305 */;
+import _modDef7306 from "module_7306" /* 7306 */;
+import _modDef7307 from "module_7307" /* 7307 */;
+import _modDef7308 from "module_7308" /* 7308 */;
+import _modDef7309 from "module_7309" /* 7309 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 6202 */;
+import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 7286 */;
 import importDefaultResult from "apply" /* 12 */;
 
 const require = arg1;
 ({ EMOJI_SIZE: c4, VoiceChannelEffectAnimationType } = VoiceChannelEffectAnimationType);
-const items = [_modDef6204];
-const items1 = [_modDef6205, _modDef6206, _modDef6207, _modDef6208, _modDef6209, _modDef6210, _modDef6211, _modDef6212, _modDef6213, _modDef6214, _modDef6215, _modDef6216, _modDef6217, _modDef6218, _modDef6219, _modDef6220, _modDef6221, _modDef6222, _modDef6223, _modDef6224, _modDef6225];
+const items = [_modDef7288];
+const items1 = [_modDef7289, _modDef7290, _modDef7291, _modDef7292, _modDef7293, _modDef7294, _modDef7295, _modDef7296, _modDef7297, _modDef7298, _modDef7299, _modDef7300, _modDef7301, _modDef7302, _modDef7303, _modDef7304, _modDef7305, _modDef7306, _modDef7307, _modDef7308, _modDef7309];
 let obj = { [VoiceChannelEffectAnimationType.BASIC]: items, [VoiceChannelEffectAnimationType.PREMIUM]: items1 };
 const memoizeResult = importDefaultResult.memoize((arg0) => {
   closure_0 = arg0;

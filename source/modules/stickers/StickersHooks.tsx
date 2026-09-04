@@ -1,22 +1,22 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10316
+// Function ID: 10317
 // Name: useStickerPackCategories
-// Dependencies: [5, 32, 19, 1908, 4299, 5390, 1921, 5452, 5453, 673, 586, 10406, 4166, 4853, 9657, 5221, 4369, 1233, 4125, 10389, 6191, 2]
+// Dependencies: [5, 32, 19, 1908, 4302, 5398, 1921, 5461, 5462, 673, 586, 10317, 4166, 4860, 9600, 5229, 4372, 1233, 4125, 10300, 7275, 2]
 // Exports: useFavoriteStickerIds, useFavoriteStickers, useFetchStickerPack, useFetchStickerPacks, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickerIds, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 10405 (useStickerPackCategories)
+// Module 10316 (useStickerPackCategories)
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4853 */;
-import useFrecencySettings from "useFrecencySettings" /* 10389 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4860 */;
+import useFrecencySettings from "useFrecencySettings" /* 10300 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "handleConnectionOpen" /* 4299 */;
-import closure_8 from "insertUnsortedGuilds" /* 5390 */;
+import closure_7 from "handleConnectionOpen" /* 4302 */;
+import closure_8 from "insertUnsortedGuilds" /* 5398 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "handleStickersStoreUpdate" /* 5452 */;
-import closure_11 from "loadSavedGuildStickers" /* 5453 */;
+import closure_10 from "handleStickersStoreUpdate" /* 5461 */;
+import closure_11 from "loadSavedGuildStickers" /* 5462 */;
 import { Permissions } from "ME" /* 673 */;
 
 require = arg1;
@@ -268,7 +268,7 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
         let tmpResult = tmp(tmp2[14]);
         const guildId = closure_2_7.getGuildId();
         let canCreateExpressions = null != guild;
-        const findIndexResult = c6.findIndex((type) => type.type === SEARCH_RESULTS(5221).StickerCategoryTypes.FAVORITE);
+        const findIndexResult = c6.findIndex((type) => type.type === SEARCH_RESULTS(5229).StickerCategoryTypes.FAVORITE);
         if (canCreateExpressions) {
           canCreateExpressions = guildId === guild.id;
         }
@@ -414,7 +414,7 @@ export const useFavoriteStickerIds = function useFavoriteStickerIds() {
   return stickerIds;
 };
 export const useFavoriteStickers = function useFavoriteStickers() {
-  const favoriteStickers = stickerIds(10389).useFrecencySettings().favoriteStickers;
+  const favoriteStickers = stickerIds(10300).useFrecencySettings().favoriteStickers;
   stickerIds = undefined;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -422,7 +422,7 @@ export const useFavoriteStickers = function useFavoriteStickers() {
   if (stickerIds == null) {
     stickerIds = closure_13;
   }
-  const obj = stickerIds(10389);
+  const obj = stickerIds(10300);
   const tmp = stickerIds;
   const items = [closure_11];
   const items1 = [stickerIds];
@@ -469,7 +469,7 @@ export const useLatestFrecentStickerIds = function useLatestFrecentStickerIds() 
   return keys;
 };
 export const useLatestFrecentStickers = function useLatestFrecentStickers() {
-  const frecencySettings = keys(10389).useFrecencySettings();
+  const frecencySettings = keys(10300).useFrecencySettings();
   keys = closure_13;
   let stickers;
   if (frecencySettings != null) {
@@ -488,7 +488,7 @@ export const useLatestFrecentStickers = function useLatestFrecentStickers() {
     }
     keys = Object.keys(stickers1);
   }
-  const obj = keys(10389);
+  const obj = keys(10300);
   const tmp = keys;
   const items = [closure_11];
   const items1 = [keys];
@@ -516,10 +516,10 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
   [tmp6, c3] = obj(React.useState(false), 2);
   const tmp = _require;
   const tmp5 = obj(React.useState(false), 2);
-  let isGuildStickerResult = _require(4853).isGuildSticker(renderableSticker);
+  let isGuildStickerResult = _require(4860).isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    isGuildStickerResult = tmp(4853).isStandardSticker(renderableSticker);
-    const tmpResult = tmp(4853);
+    isGuildStickerResult = tmp(4860).isStandardSticker(renderableSticker);
+    const tmpResult = tmp(4860);
   }
   obj = { hasFetched: tmp6, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: tmp4[0], stickersStoreDefinition: stateFromStores };
   React = obj2.useRef(obj);
@@ -564,7 +564,7 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
                       if (!current.hasFetched) {
                         dependencyMap(false);
                         dependencyMap = 1;
-                        obj1 = closure_1_0(10406);
+                        obj1 = closure_1_0(10317);
                         c1 = 2;
                         v0 = 1;
                         obj1 = { value: null, done: false };

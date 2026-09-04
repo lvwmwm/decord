@@ -1,17 +1,17 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11300
+// Function ID: 11301
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10878, 11230, 673, 682, 21, 4478, 709, 11231, 11232, 4724, 10252, 8694, 4190, 11233, 1233, 11236, 2008, 4474, 11241, 2]
+// Dependencies: [19, 10846, 11301, 673, 682, 21, 4481, 709, 11302, 11303, 4731, 8987, 8334, 4190, 11304, 1233, 11307, 2008, 4477, 11312, 2]
 
-// Module 11229 (LikelyAtoWarningBanner)
+// Module 11300 (LikelyAtoWarningBanner)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 10878 */;
-import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY" /* 11230 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10846 */;
+import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY" /* 11301 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { MuteUntilSeconds } from "MAX_FAVORITES" /* 682 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 class LikelyAtoWarningBanner {
@@ -82,9 +82,9 @@ class LikelyAtoWarningBanner {
       obj[6] = callback().map((children) => {
         let obj = { children: null };
         obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title };
-        const items = [callback3(callback(4474).Text, obj, arg1), ];
+        const items = [callback3(callback(4477).Text, obj, arg1), ];
         obj = { variant: "text-xs/medium", color: "text-subtle", children: children.description };
-        items[1] = callback3(callback(4474).Text, obj, arg1);
+        items[1] = callback3(callback(4477).Text, obj, arg1);
         obj[0] = items;
         return callback4(closure_11, obj);
       });

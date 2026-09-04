@@ -1,9 +1,9 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16301
+// Function ID: 16302
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 5605, 2]
+// Dependencies: [19, 17, 21, 5536, 2]
 
-// Module 16215 (componentDidMount)
+// Module 16301 (componentDidMount)
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -14,10 +14,10 @@ const require = arg1;
 let height = Dimensions.get("window").height;
 let c10 = -5;
 let closure_11 = { x: 0, y: 0 };
-let closure_12 = importAllResult.memo((stateFromStores) => {
-  closure_0 = stateFromStores;
-  ({ hovering, rowData, active, renderActiveDivider, hideContent, renderRow, onPressOut } = stateFromStores);
-  closure_1 = ref.useRef(stateFromStores);
+let closure_12 = importAllResult.memo((first) => {
+  closure_0 = first;
+  ({ hovering, rowData, active, renderActiveDivider, hideContent, renderRow, onPressOut } = first);
+  closure_1 = ref.useRef(first);
   ref = ref.useRef(null);
   closure_3 = ref.useRef(null);
   const effect = ref.useEffect(() => {
@@ -267,11 +267,11 @@ class SortableListView extends Component {
         sum = bound + 1;
       }
       if (sum !== obj.state.hoverIndex) {
-        const result = lib(5605).DeprecatedLayoutAnimation();
+        const result = lib(5536).DeprecatedLayoutAnimation();
         obj = { hovering: true, hoverIndex: null };
         obj[1] = sum;
         obj.setState(obj);
-        const obj2 = lib(5605);
+        const obj2 = lib(5536);
       }
     };
     tmp2.cancel = function cancel() {
@@ -434,7 +434,7 @@ class SortableListView extends Component {
                 if (hoverIndex > index) {
                   diff = hoverIndex - 1;
                 }
-                obj1 = lib(5605);
+                obj1 = lib(5536);
                 const result = obj1.DeprecatedLayoutAnimation({ duration: 0 });
                 const props2 = obj.props;
                 const onRowMoved = props2.onRowMoved;

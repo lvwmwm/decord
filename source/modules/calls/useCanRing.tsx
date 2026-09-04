@@ -1,21 +1,21 @@
-// Module ID: 9891
-// Function ID: 9892
+// Module ID: 9103
+// Function ID: 9104
 // Name: useCanRingToGuildVoiceChannel
-// Dependencies: [1215, 5231, 1386, 1991, 5366, 4120, 4569, 4130, 4497, 673, 586, 9892, 5369, 4961, 2]
+// Dependencies: [1215, 5239, 1386, 1991, 5374, 4120, 4572, 4130, 4500, 673, 586, 9104, 5377, 4968, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 9891 (useCanRingToGuildVoiceChannel)
-import getChannelRoleSubscriptionStatusDefault from "getChannelRoleSubscriptionStatus" /* 4961 */;
-import experimentDefault from "experiment" /* 9892 */;
+// Module 9103 (useCanRingToGuildVoiceChannel)
+import getChannelRoleSubscriptionStatusDefault from "getChannelRoleSubscriptionStatus" /* 4968 */;
+import experimentDefault from "experiment" /* 9104 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "callConnect" /* 5231 */;
+import closure_4 from "callConnect" /* 5239 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "recomputeGuild" /* 5366 */;
+import closure_7 from "recomputeGuild" /* 5374 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "sortActivity" /* 4569 */;
+import closure_9 from "sortActivity" /* 4572 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "updateVoiceState" /* 4497 */;
+import closure_11 from "updateVoiceState" /* 4500 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;

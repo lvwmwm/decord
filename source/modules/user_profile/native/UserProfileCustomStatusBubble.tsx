@@ -1,24 +1,24 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 11044
+// Function ID: 11045
 // Name: StatusBubbleConnector
-// Dependencies: [32, 19, 17, 6010, 1924, 21, 4478, 709, 8254, 4166, 5502, 1430, 1234, 4474, 5594, 4197, 8575, 9105, 9106, 4445, 9108, 5982, 1233, 5077, 9242, 2]
+// Dependencies: [32, 19, 17, 7148, 1924, 21, 4481, 709, 8383, 4166, 5542, 1431, 1234, 4477, 7070, 4197, 8121, 10811, 10048, 4448, 11045, 7122, 1233, 5084, 11136, 2]
 
-// Module 9104 (StatusBubbleConnector)
+// Module 11044 (StatusBubbleConnector)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5502 */;
-import EmojiDefault from "Emoji" /* 5594 */;
-import inlineStyles from "inlineStyles" /* 8254 */;
-import inlineStylesDefault from "inlineStyles" /* 8254 */;
+import Text from "Text" /* 4477 */;
+import preloadDefault from "preload" /* 5542 */;
+import EmojiDefault from "Emoji" /* 7070 */;
+import inlineStyles from "inlineStyles" /* 8383 */;
+import inlineStylesDefault from "inlineStyles" /* 8383 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function StatusBubbleConnector(arg0) {
@@ -177,7 +177,7 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 let closure_13 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_14 = { [arg1(6010).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_14 = { [arg1(7148).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_17 = createCacheKey.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus, ref) => {
   ({ customStatusActivity, themeType, hasCustomProfileTheme, editEnabled } = showFullStatus);

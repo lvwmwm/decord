@@ -1,22 +1,22 @@
-// Module ID: 16080
-// Function ID: 16081
+// Module ID: 16166
+// Function ID: 16167
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 673, 1383, 21, 4478, 5631, 5502, 16081, 4474, 1233, 4929, 9754, 2]
+// Dependencies: [19, 17, 673, 1383, 21, 4481, 7090, 5542, 16167, 4477, 1233, 4936, 8993, 2]
 // Exports: default
 
-// Module 16080 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 16166 (GuildRoleSubscriptionsUpsellActionSheet)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import preloadDefault from "preload" /* 5502 */;
-import Background from "Background" /* 5631 */;
-import registerAssetDefault from "registerAsset" /* 16081 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import preloadDefault from "preload" /* 5542 */;
+import Background from "Background" /* 7090 */;
+import registerAssetDefault from "registerAsset" /* 16167 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { GuildSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

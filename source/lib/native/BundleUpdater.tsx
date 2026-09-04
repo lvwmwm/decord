@@ -1,11 +1,11 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11723
+// Function ID: 11724
 // Name: BundleUpdaterManager
-// Dependencies: [5, 17, 673, 3, 1234, 81, 2008, 4706, 695, 7357, 2]
+// Dependencies: [5, 17, 673, 3, 1234, 81, 2008, 4713, 695, 7535, 2]
 
-// Module 11590 (BundleUpdaterManager)
+// Module 11723 (BundleUpdaterManager)
 import timestampDefault from "timestamp" /* 3 */;
-import t from "t" /* 4706 */;
+import t from "t" /* 4713 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
@@ -134,20 +134,20 @@ prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
     let obj = callback(695);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(7357).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(7535).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   });
   match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_5.verbose("OTA check attempt", result);
     let obj = callback(695);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(7357).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(7535).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
     closure_5.verbose("OTA asset download attempt", result);
     let obj = callback(695);
     obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
     obj.track(constants.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
-    return callback(7357).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
+    return callback(7535).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
   }).exhaustive();
 };
 prototype["prepareOtaMetricForDatadog"] = function prepareOtaMetricForDatadog(name, arg1) {

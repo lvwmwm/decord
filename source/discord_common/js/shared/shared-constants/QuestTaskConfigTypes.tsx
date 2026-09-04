@@ -1,9 +1,9 @@
-// Module ID: 7469
-// Function ID: 7470
+// Module ID: 7646
+// Function ID: 7647
 // Name: QuestTaskConfigTypes
 // Dependencies: [2]
 
-// Module 7469 (QuestTaskConfigTypes)
+// Module 7646 (QuestTaskConfigTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestTaskConfigTypes.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 6001
-// Function ID: 6002
+// Module ID: 5642
+// Function ID: 5643
 // Name: TableRowGroupTitle
-// Dependencies: [19, 17, 21, 4478, 709, 4474, 4197, 5566, 5609, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4477, 4197, 5557, 5561, 2]
 // Exports: TableRowGroup
 
-// Module 6001 (TableRowGroupTitle)
+// Module 5642 (TableRowGroupTitle)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import Text from "Text" /* 4474 */;
-import context from "context" /* 5609 */;
+import Text from "Text" /* 4477 */;
+import context from "context" /* 5561 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class TableRowGroupTitle {
@@ -81,7 +81,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
     obj1 = { variant: "text-sm/normal", color: "text-subtle", style: null, children: null };
     obj1[2] = tmp.description;
     obj1[3] = description;
-    tmp6Result = tmp6(tmp2(4474).Text, obj1);
+    tmp6Result = tmp6(tmp2(4477).Text, obj1);
   }
   items[1] = tmp6Result;
   const items1 = [tmp.content, ];
@@ -97,7 +97,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
     obj2[0] = token;
     obj2[2] = tmp.helperText;
     obj2[3] = helperText;
-    tmp6Result1 = tmp6(tmp2(4474).Text, obj2);
+    tmp6Result1 = tmp6(tmp2(4477).Text, obj2);
   }
   items[3] = tmp6Result1;
   obj[1] = items;

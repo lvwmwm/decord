@@ -1,17 +1,17 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16080
+// Function ID: 16081
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: [4365, 12313, 4407, 4406, 15995, 4384, 2]
+// Dependencies: [4368, 12445, 4410, 4409, 16081, 4387, 2]
 // Exports: default
 
-// Module 15994 (useShouldShowGuildThemeMemberCoachmark)
+// Module 16080 (useShouldShowGuildThemeMemberCoachmark)
 import set from "set" /* 2 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4384 */;
-import apexExperiment from "apexExperiment" /* 4406 */;
-import experiment from "experiment" /* 4407 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12313 */;
-import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 15995 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
+import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4387 */;
+import apexExperiment from "apexExperiment" /* 4409 */;
+import experiment from "experiment" /* 4410 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12445 */;
+import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 16081 */;
 
 let closure_3 = BoostedGuildTiers.GUILD_THEME_POWERUP_BOOST_PRICE;
 const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx");

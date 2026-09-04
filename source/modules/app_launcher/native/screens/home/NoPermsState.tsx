@@ -1,20 +1,20 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 12045
+// Function ID: 12046
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4478, 709, 1362, 4413, 11915, 11916, 11852, 8448, 4474, 1233, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1362, 4416, 12046, 12047, 11983, 9338, 4477, 1233, 2]
 // Exports: default
 
-// Module 11914 (EmptyState)
+// Module 12045 (EmptyState)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import Text from "Text" /* 4474 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11852 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import Text from "Text" /* 4477 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11983 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -32,8 +32,8 @@ export default function EmptyState() {
   const tmp = callback3();
   let obj = AccessibilityAnnouncer;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11915 : 11916);
-  const logAppLauncherEmptyStateView = handleApplicationSelected.useLogAppLauncherEmptyStateView(tmp2(8448).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12046 : 12047);
+  const logAppLauncherEmptyStateView = handleApplicationSelected.useLogAppLauncherEmptyStateView(tmp2(9338).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   const items = [callback(closure_4, obj), ];

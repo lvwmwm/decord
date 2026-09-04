@@ -1,9 +1,9 @@
-// Module ID: 6356
-// Function ID: 6357
+// Module ID: 5737
+// Function ID: 5738
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6356 (metadata)
+// Module 5737 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BadgeCustomizeAbstractUI-2x.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 5129
-// Function ID: 5130
+// Module ID: 5137
+// Function ID: 5138
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
 // Dependencies: [2]
 
-// Module 5129 (GUILD_PRODUCT_EDIT_MODAL_KEY)
+// Module 5137 (GUILD_PRODUCT_EDIT_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");

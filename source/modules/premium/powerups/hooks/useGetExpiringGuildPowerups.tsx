@@ -1,12 +1,12 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12490
+// Function ID: 12491
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [19, 4364, 586, 12293, 1470, 2]
+// Dependencies: [19, 4367, 586, 12425, 1394, 2]
 // Exports: default
 
-// Module 12358 (useGetExpiringGuildPowerups)
+// Module 12490 (useGetExpiringGuildPowerups)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "calculateAppliedBoosts" /* 4364 */;
+import closure_3 from "calculateAppliedBoosts" /* 4367 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");

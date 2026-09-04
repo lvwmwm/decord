@@ -1,30 +1,30 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11727
+// Function ID: 11728
 // Name: GuildTemplateResolving
-// Dependencies: [19, 17, 1390, 1985, 673, 6180, 21, 4478, 709, 5470, 6057, 1296, 11595, 1233, 38, 1627, 1986, 4474, 11599, 7716, 4929, 8382, 12, 9700, 11604, 11605, 10909, 685, 2]
+// Dependencies: [19, 17, 1390, 1985, 673, 7264, 21, 4481, 709, 5479, 5532, 1296, 11728, 1233, 38, 1627, 1986, 4477, 11730, 6546, 4936, 8529, 12, 9642, 11735, 11736, 10878, 685, 2]
 // Exports: default
 
-// Module 11594 (GuildTemplateResolving)
+// Module 11727 (GuildTemplateResolving)
 import applyDefault from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActivityIndicator from "ActivityIndicator" /* 6057 */;
-import _modDef7716 from "module_7716" /* 7716 */;
-import DividerDefault from "Divider" /* 8382 */;
-import getInvalidLinkSource from "getInvalidLinkSource" /* 11595 */;
-import renderIconDefault from "renderIcon" /* 11599 */;
+import ActivityIndicator from "ActivityIndicator" /* 5532 */;
+import _modDef6546 from "module_6546" /* 6546 */;
+import DividerDefault from "Divider" /* 8529 */;
+import getInvalidLinkSource from "getInvalidLinkSource" /* 11728 */;
+import renderIconDefault from "renderIcon" /* 11730 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { isGuildVocalChannelType } from "createChannelRecord" /* 1390 */;
 import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1985 */;
 import ME from "ME" /* 673 */;
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6180 */;
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7264 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
-import importDefaultResult from "createTextStyle" /* 5470 */;
+import importDefaultResult from "createTextStyle" /* 5479 */;
 
 require = arg1;
 function GuildTemplateResolving() {
@@ -45,9 +45,9 @@ function GuildTemplateResolved(guildTemplate) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guildTemplate(1233).intl;
   obj[3] = intl.string(guildTemplate(1233).t.QzUORX);
-  const items1 = [callback(guildTemplate(4474).Text, obj), , , , , , , , , , ];
+  const items1 = [callback(guildTemplate(4477).Text, obj), , , , , , , , , , ];
   obj = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
-  items1[1] = callback(guildTemplate(4474).Text, obj);
+  items1[1] = callback(guildTemplate(4477).Text, obj);
   items1[2] = callback(renderIconDefault, { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = { label: null, error: null, hint: null, value: null, onChangeText: null, autoFocus: true, autoCorrect: false, returnKeyType: "done" };
   const intl2 = guildTemplate(1233).intl;
@@ -61,7 +61,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj2[2] = intl3.format(guildTemplate(1233).t["2bprXx"], { guidelinesURL: constants.GUIDELINES });
   obj2[3] = name;
   obj2[4] = setName;
-  items1[3] = callback(_modDef7716, obj2);
+  items1[3] = callback(_modDef6546, obj2);
   const obj4 = { style: tmp.createButtonWrapper, children: null };
   const obj5 = { size: "md", text: null, onPress: null, loading: null, disabled: null, grow: true };
   const intl4 = tmp10(1233).intl;
@@ -69,17 +69,17 @@ function GuildTemplateResolved(guildTemplate) {
   obj5[2] = createServer;
   obj5[3] = guildTemplate.state === GuildTemplateStates.ACCEPTING;
   obj5[4] = guildTemplate.state === GuildTemplateStates.ACCEPTING;
-  obj4[1] = callback(guildTemplate(4929).Button, obj5);
+  obj4[1] = callback(guildTemplate(4936).Button, obj5);
   items1[4] = callback(closure_4, obj4);
   items1[5] = callback(DividerDefault, { style: tmp.divider, outer: true });
   const obj7 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp10(1233).intl;
   obj7[3] = intl5.string(guildTemplate(1233).t.OGiMXJ);
-  items1[6] = callback(guildTemplate(4474).Text, obj7);
+  items1[6] = callback(guildTemplate(4477).Text, obj7);
   const obj8 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl6 = tmp10(1233).intl;
   obj8[2] = intl6.string(guildTemplate(1233).t.Ztwyoz);
-  items1[7] = callback(guildTemplate(4474).Text, obj8);
+  items1[7] = callback(guildTemplate(4477).Text, obj8);
   items1[8] = callback(Channels, { channels: guildTemplate.serializedSourceGuild.channels });
   const obj10 = { style: tmp.sectionTip, variant: "text-xs/medium", color: "interactive-text-default", children: null };
   const obj11 = { style: tmp.protip, children: null };
@@ -90,7 +90,7 @@ function GuildTemplateResolved(guildTemplate) {
   const intl8 = tmp10(1233).intl;
   items3[1] = intl8.string(guildTemplate(1233).t.de7DpI);
   obj10[3] = items3;
-  items1[9] = closure_12(guildTemplate(4474).Text, obj10);
+  items1[9] = closure_12(guildTemplate(4477).Text, obj10);
   let tmp7Result = null;
   if (found.length > 0) {
     const obj12 = { children: null };
@@ -98,11 +98,11 @@ function GuildTemplateResolved(guildTemplate) {
     obj13[0] = tmp.sectionHeader;
     const intl9 = tmp10(1233).intl;
     obj13[3] = intl9.string(tmp10(1233).t.mQ0H1p);
-    const items4 = [tmp9(tmp10(4474).Text, obj13), , ];
+    const items4 = [tmp9(tmp10(4477).Text, obj13), , ];
     const obj14 = { variant: "text-xs/medium", color: "text-default", children: null };
     const intl10 = tmp10(1233).intl;
     obj14[2] = intl10.string(tmp10(1233).t.jOPEYC);
-    items4[1] = tmp9(tmp10(4474).Text, obj14);
+    items4[1] = tmp9(tmp10(4477).Text, obj14);
     const obj15 = { roles: null };
     obj15[0] = found;
     items4[2] = tmp9(Roles, obj15);

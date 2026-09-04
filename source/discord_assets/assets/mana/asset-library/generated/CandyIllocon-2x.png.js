@@ -1,9 +1,9 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 5781
+// Function ID: 5782
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6400 (metadata)
+// Module 5781 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CandyIllocon-2x.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15260
+// Function ID: 15261
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 673, 1939, 8088, 8085, 695, 1940, 2]
+// Dependencies: [19, 673, 1939, 8098, 8095, 695, 1940, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15176 (useDisplayNameStylesHandleApply)
+// Module 15260 (useDisplayNameStylesHandleApply)
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 

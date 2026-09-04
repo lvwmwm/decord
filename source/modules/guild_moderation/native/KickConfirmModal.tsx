@@ -1,10 +1,10 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11788
+// Function ID: 11789
 // Name: KickConfirmModal
-// Dependencies: [19, 21, 10885, 10886, 1233, 11650, 2]
+// Dependencies: [19, 21, 10853, 10855, 1233, 11781, 2]
 // Exports: default
 
-// Module 11657 (KickConfirmModal)
+// Module 11788 (KickConfirmModal)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

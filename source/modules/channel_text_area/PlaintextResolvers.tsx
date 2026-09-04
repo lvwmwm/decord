@@ -1,16 +1,16 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 9344
+// Function ID: 9345
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5410, 5457, 1386, 1981, 1991, 1984, 1908, 4120, 4130, 1921, 673, 1924, 7441, 4674, 11, 5394, 4134, 4138, 2]
+// Dependencies: [32, 5419, 5466, 1386, 1981, 1991, 1984, 1908, 4120, 4130, 1921, 673, 1924, 7619, 4681, 11, 5402, 4134, 4138, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8455 (resolvePlaintextInlineVoid)
+// Module 9344 (resolvePlaintextInlineVoid)
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import createEmptyState from "createEmptyState" /* 7441 */;
+import createEmptyState from "createEmptyState" /* 7619 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getEmojiToGroupId" /* 5410 */;
-import closure_5 from "rebuild" /* 5457 */;
+import closure_4 from "getEmojiToGroupId" /* 5419 */;
+import closure_5 from "rebuild" /* 5466 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "comparator" /* 1981 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator" /* 1981 */;
@@ -169,8 +169,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, forceInclude
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4674).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4674);
+          callback(4681).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4681);
         }
         const substr = arr.slice(1);
       }

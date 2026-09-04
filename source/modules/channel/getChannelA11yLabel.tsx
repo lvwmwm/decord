@@ -1,15 +1,15 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9699
+// Function ID: 9700
 // Name: getChannelA11yLabel
-// Dependencies: [4130, 1921, 673, 1233, 4674, 5016, 4322, 8056, 2]
+// Dependencies: [4130, 1921, 673, 1233, 4681, 5023, 4325, 8066, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9442 (getChannelA11yLabel)
+// Module 9699 (getChannelA11yLabel)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import nameFromUser from "nameFromUser" /* 4322 */;
-import computeChannelName from "computeChannelName" /* 4674 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5016 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8056 */;
+import nameFromUser from "nameFromUser" /* 4325 */;
+import computeChannelName from "computeChannelName" /* 4681 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5023 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8066 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;

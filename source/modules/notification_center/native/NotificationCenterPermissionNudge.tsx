@@ -1,20 +1,20 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16334
+// Function ID: 16335
 // Name: NotificationCenterBannerImpl
-// Dependencies: [32, 19, 17, 673, 1383, 12210, 21, 4478, 709, 695, 10264, 4474, 1233, 4929, 12211, 5077, 5560, 15323, 6261, 1372, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 12342, 21, 4481, 709, 695, 8989, 4477, 1233, 4936, 12343, 5084, 5635, 15405, 7326, 1372, 2]
 // Exports: default
 
-// Module 16248 (NotificationCenterBannerImpl)
+// Module 16334 (NotificationCenterBannerImpl)
 import ThemesDefault from "Themes" /* 709 */;
-import apexExperimentDefault from "apexExperiment" /* 15323 */;
+import apexExperimentDefault from "apexExperiment" /* 15405 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
-import EventActionType from "EventActionType" /* 12210 */;
+import EventActionType from "EventActionType" /* 12342 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function NotificationCenterBannerImpl(onDismiss) {
@@ -28,28 +28,28 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.iconContainer, children: null };
   obj = { size: "md", color: ThemesDefault.colors.ICON_STRONG };
-  obj[1] = callback4(onDismiss(10264).BellSlashIcon, obj);
+  obj[1] = callback4(onDismiss(8989).BellSlashIcon, obj);
   const items = [callback4(View, obj), , ];
   obj1 = { style: tmp.contentContainer, children: null };
   const obj2 = { variant: "text-md/semibold", color: "text-default", children: null };
   const intl = onDismiss(1233).intl;
   obj2[2] = intl.string(onDismiss(1233).t.G6YBna);
-  const items1 = [callback4(onDismiss(4474).Text, obj2), , ];
+  const items1 = [callback4(onDismiss(4477).Text, obj2), , ];
   const obj3 = { variant: "text-md/medium", color: "text-muted", style: { marginTop: ThemesDefault.space.PX_4 }, children: null };
   const intl2 = onDismiss(1233).intl;
   obj3[3] = intl2.string(onDismiss(1233).t["9CoPDE"]);
-  items1[1] = callback4(onDismiss(4474).Text, obj3);
+  items1[1] = callback4(onDismiss(4477).Text, obj3);
   const obj5 = { style: tmp.ctaButton, children: null };
   const obj6 = { variant: "primary", size: "md", text: null, onPress: null };
   const intl3 = onDismiss(1233).intl;
   obj6[2] = intl3.string(onDismiss(1233).t.a4bgO0);
   obj6[3] = function onPress() {
-    let obj = onDismiss(12211);
+    let obj = onDismiss(12343);
     const pushNotificationPermission = obj.requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_8);
     obj = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_CENTER_BANNER };
     callback(695).track(constants.CONTEXTUAL_REMINDER_ACTION, obj);
   };
-  obj5[1] = callback4(onDismiss(4929).Button, obj6);
+  obj5[1] = callback4(onDismiss(4936).Button, obj6);
   items1[2] = callback4(View, obj5);
   obj1[1] = items1;
   items[1] = callback5(View, obj1);
@@ -67,8 +67,8 @@ function NotificationCenterBannerImpl(onDismiss) {
   };
   const intl4 = onDismiss(1233).intl;
   obj7[3] = intl4.string(onDismiss(1233).t.WAI6xu);
-  obj7[4] = callback4(onDismiss(5560).XSmallIcon, { size: "sm", color: "icon-strong" });
-  items[2] = callback4(onDismiss(5077).PressableHighlight, obj7);
+  obj7[4] = callback4(onDismiss(5635).XSmallIcon, { size: "sm", color: "icon-strong" });
+  items[2] = callback4(onDismiss(5084).PressableHighlight, obj7);
   obj[1] = items;
   return callback5(View, obj);
 }
@@ -89,8 +89,8 @@ const result = require("set").fileFinishedImporting("modules/notification_center
 
 export default function NotificationCenterPermissionNudge() {
   let obj = apexExperimentDefault;
-  const canSeePushNotificationNudge = _require(12211).useCanSeePushNotificationNudge();
-  const obj2 = _require(12211);
+  const canSeePushNotificationNudge = _require(12343).useCanSeePushNotificationNudge();
+  const obj2 = _require(12343);
   let prop = null;
   if (!obj.useConfig({ location: "NotificationCenterPermissionNudge" }).inHoldout) {
     prop = null;
@@ -98,10 +98,10 @@ export default function NotificationCenterPermissionNudge() {
       prop = tmp2(1372).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
-  const tmp5 = callback(_require(6261).useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);
+  const tmp5 = callback(_require(7326).useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);
   _require = tmp6;
   const items = [tmp5[1]];
-  const obj3 = _require(6261);
+  const obj3 = _require(7326);
   let tmp8 = null;
   if (tmp5[0] === _require(1372).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER) {
     obj = { onDismiss: null };

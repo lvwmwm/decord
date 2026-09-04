@@ -1,20 +1,20 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12274
+// Function ID: 12275
 // Name: handleUserSearchResults
-// Dependencies: [1386, 1991, 1908, 1980, 4323, 1921, 673, 5461, 12136, 9954, 4322, 4643, 5465, 5394, 12137, 586, 706, 2]
+// Dependencies: [1386, 1991, 1908, 1980, 4326, 1921, 673, 5470, 12272, 9768, 4325, 4646, 5474, 5402, 12273, 586, 706, 2]
 
-// Module 12138 (handleUserSearchResults)
+// Module 12274 (handleUserSearchResults)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import isEqualDefault from "isEqual" /* 4643 */;
-import getTransformedUserDefault from "getTransformedUser" /* 9954 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 12136 */;
-import getShortcutsDefault from "getShortcuts" /* 12137 */;
+import isEqualDefault from "isEqual" /* 4646 */;
+import getTransformedUserDefault from "getTransformedUser" /* 9768 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 12272 */;
+import getShortcutsDefault from "getShortcuts" /* 12273 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
-import closure_7 from "initialize" /* 4323 */;
+import closure_7 from "initialize" /* 4326 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
@@ -128,7 +128,7 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
       if (str == null) {
         str = "";
       }
-      let obj = currentUser(12136);
+      let obj = currentUser(12272);
       if (obj.isGuildLikeSearchContext(searchContext)) {
         let tmp8 = null != filter;
         if (tmp8) {
@@ -137,7 +137,7 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
         }
         if (tmp8) {
           if (0 !== str.length) {
-            let tmp6Result = tmp6(12136);
+            let tmp6Result = tmp6(12272);
             const searchContextId = tmp6Result.getSearchContextId(searchContext);
             let value = map1.get(searchContextId);
             if (value == null) {
@@ -158,7 +158,7 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
               }
               arr3 = results;
               if (tmp20) {
-                tmp6Result = tmp6(12137);
+                tmp6Result = tmp6(12273);
                 arr3 = results;
                 if (tmp6Result.isMeAutcompleteAnswer(str)) {
                   currentUser = currentUser.getCurrentUser();
@@ -322,13 +322,13 @@ const searchAutocompleteStoreClass = new SearchAutocompleteStoreClass(dispatcher
         let autocompletes = value.autocompletes;
         let flag = false;
       }
-      let tmp5Result = tmp5(12136);
+      let tmp5Result = tmp5(12272);
       const searchContextId1 = tmp5Result.getSearchContextId(searchContext);
       value = map1.get(searchContextId1);
       if (value == null) {
         obj = { results: null, context: null };
         obj[0] = [];
-        let tmpResult = tmp(9954);
+        let tmpResult = tmp(9768);
         obj[1] = tmpResult.getUserSearchContext(handleUserSearchResults.bind(null, searchContext));
         value = obj;
       }
@@ -354,13 +354,13 @@ const searchAutocompleteStoreClass = new SearchAutocompleteStoreClass(dispatcher
       tmp9 = tmp10;
     }
     if (tmp9) {
-      tmp5Result = tmp5(12136);
+      tmp5Result = tmp5(12272);
       const searchContextId2 = tmp5Result.getSearchContextId(searchContext);
       let value1 = map1.get(searchContextId2);
       if (value1 == null) {
         obj1 = { results: null, context: null };
         obj1[0] = [];
-        tmpResult = tmp(9954);
+        tmpResult = tmp(9768);
         obj1[1] = tmpResult.getUserSearchContext(handleUserSearchResults.bind(null, searchContext));
         value1 = obj1;
       }
@@ -375,10 +375,10 @@ const searchAutocompleteStoreClass = new SearchAutocompleteStoreClass(dispatcher
       }
       if (null != trimmed) {
         if (trimmed.length > 0) {
-          const guildIdFromSearchContext = tmp5(12136).getGuildIdFromSearchContext(searchContext);
+          const guildIdFromSearchContext = tmp5(12272).getGuildIdFromSearchContext(searchContext);
           if (null != guildIdFromSearchContext) {
-            const members = tmp(5465).requestMembers(guildIdFromSearchContext, trimmed, c17);
-            const tmpResult1 = tmp(5465);
+            const members = tmp(5474).requestMembers(guildIdFromSearchContext, trimmed, c17);
+            const tmpResult1 = tmp(5474);
           }
           const context3 = value1.context;
           obj2 = { query: null, filters: null, boosters: null };
@@ -387,8 +387,8 @@ const searchAutocompleteStoreClass = new SearchAutocompleteStoreClass(dispatcher
           obj3[0] = guildIdFromSearchContext;
           obj2[1] = obj3;
           const tmp26 = guildIdFromSearchContext;
-          const tmp5Result1 = tmp5(12136);
-          obj2[2] = tmp5(5394).getBoosterMap(AutocompleterResultTypes.USER);
+          const tmp5Result1 = tmp5(12272);
+          obj2[2] = tmp5(5402).getBoosterMap(AutocompleterResultTypes.USER);
           context3.setQuery(obj2);
           autocompletes = undefined;
           if (value != null) {
@@ -398,7 +398,7 @@ const searchAutocompleteStoreClass = new SearchAutocompleteStoreClass(dispatcher
             autocompletes = [];
           }
           flag = false;
-          const tmp5Result2 = tmp5(5394);
+          const tmp5Result2 = tmp5(5402);
         }
       }
       const context2 = value1.context;

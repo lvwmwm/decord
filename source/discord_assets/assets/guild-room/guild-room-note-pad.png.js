@@ -1,9 +1,9 @@
-// Module ID: 4693
-// Function ID: 4694
+// Module ID: 4700
+// Function ID: 4701
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4693 (metadata)
+// Module 4700 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-note-pad.png.js");

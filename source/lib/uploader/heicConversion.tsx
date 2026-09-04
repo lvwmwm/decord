@@ -1,10 +1,10 @@
-// Module ID: 5219
-// Function ID: 5220
+// Module ID: 5227
+// Function ID: 5228
 // Name: _preConvertHeicForUpload
-// Dependencies: [5, 3, 5124, 4103, 2]
+// Dependencies: [5, 3, 5132, 4103, 2]
 // Exports: preConvertHeicForUpload
 
-// Module 5219 (_preConvertHeicForUpload)
+// Module 5227 (_preConvertHeicForUpload)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -59,7 +59,7 @@ function _preConvertHeicForUpload() {
                 obj2[0] = tmp35;
                 return obj2;
               }
-              obj8 = lib(5124);
+              obj8 = lib(5132);
               tmp36 = closure_1;
               tmp37 = dependencyMap;
             }
@@ -79,7 +79,7 @@ function _preConvertHeicForUpload() {
               }
               const _File = File;
               const items = [closure_1.convertedBlob];
-              obj = lib(5124);
+              obj = lib(5132);
               const obj4 = { type: "image/jpeg", lastModified: null };
               obj4[1] = lib.lastModified;
               const file = new File(items, obj.renameToJpegExtension(lib.name), obj4);
@@ -206,7 +206,7 @@ function _maybeConvertHeicToJpeg() {
                 c8 = 3;
                 return { value: null, done: true };
               }
-              obj17 = lib(5124);
+              obj17 = lib(5132);
             }
           } else if (2 === tmp7) {
             if (arg0 === 1) {

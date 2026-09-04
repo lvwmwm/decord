@@ -1,13 +1,13 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15109
+// Function ID: 15110
 // Name: useQuestDockSwipeGesture
-// Dependencies: [19, 5396, 14937, 21, 14944, 14934, 14938, 11214, 14941, 15024, 4217, 14942, 14939, 5661, 14936, 4446, 2]
+// Dependencies: [19, 5404, 15019, 21, 15026, 15016, 15020, 11285, 15023, 15106, 4218, 15024, 15021, 6595, 15018, 4449, 2]
 
-// Module 15027 (useQuestDockSwipeGesture)
-import LegacyBaseButton from "LegacyBaseButton" /* 5661 */;
+// Module 15109 (useQuestDockSwipeGesture)
+import LegacyBaseButton from "LegacyBaseButton" /* 6595 */;
 import importAllResult from "noop" /* 19 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5396 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5404 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

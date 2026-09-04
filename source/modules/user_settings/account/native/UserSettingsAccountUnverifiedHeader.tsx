@@ -1,22 +1,22 @@
-// Module ID: 7778
-// Function ID: 7779
+// Module ID: 6938
+// Function ID: 6939
 // Name: handleOpenEmailVerification
-// Dependencies: [19, 1921, 21, 4478, 709, 7699, 1233, 586, 5077, 4474, 2]
+// Dependencies: [19, 1921, 21, 4481, 709, 5576, 1233, 586, 5084, 4477, 2]
 // Exports: default
 
-// Module 7778 (handleOpenEmailVerification)
+// Module 6938 (handleOpenEmailVerification)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef7699 from "module_7699" /* 7699 */;
+import _modDef5576 from "module_5576" /* 5576 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function handleOpenEmailVerification() {
-  _modDef7699.open();
+  _modDef5576.open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {
@@ -64,13 +64,13 @@ export default function UserSettingsAccountUnverifiedHeader() {
     obj = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
     obj[0] = tmp.accountWarningText;
     obj[3] = tmp4.title;
-    const items1 = [callback(tmp2(4474).Text, obj), ];
+    const items1 = [callback(tmp2(4477).Text, obj), ];
     obj1 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
     obj1[0] = tmp.accountWarningButton;
     obj1[3] = tmp4.button;
-    items1[1] = callback(tmp2(4474).Text, obj1);
+    items1[1] = callback(tmp2(4477).Text, obj1);
     obj[3] = items1;
-    tmp5 = callback2(tmp2(5077).PressableOpacity, obj);
+    tmp5 = callback2(tmp2(5084).PressableOpacity, obj);
   }
   return tmp5;
 };

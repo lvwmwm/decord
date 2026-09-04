@@ -1,13 +1,13 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11721
+// Function ID: 11722
 // Name: setBuildOverrideForBranch
-// Dependencies: [5, 11283, 1234, 11589, 11590, 4859, 4393, 2]
+// Dependencies: [5, 11357, 1234, 11722, 11723, 4866, 4396, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 11588 (setBuildOverrideForBranch)
-import BundleUpdaterManagerDefault from "BundleUpdaterManager" /* 11590 */;
+// Module 11721 (setBuildOverrideForBranch)
+import BundleUpdaterManagerDefault from "BundleUpdaterManager" /* 11723 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getCurrentBuildOverride" /* 11283 */;
+import closure_4 from "getCurrentBuildOverride" /* 11357 */;
 import set from "set" /* 1234 */;
 
 const require = arg1;
@@ -80,10 +80,10 @@ function _setBuildOverride() {
           } else {
             lib = arg1;
             if (400 !== lib.status) {
-              obj2 = callback(11590);
+              obj2 = callback(11723);
               const result = obj2.checkForUpdateAndReload();
             } else {
-              obj = callback(4859);
+              obj = callback(4866);
               obj4 = { title: "Override Error", body: null, isDismissable: true };
               obj4[1] = lib.body[closure_5];
               obj.show(obj4);
@@ -151,7 +151,7 @@ function _clearBuildOverride() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = closure_1_0(11589).clearBuildOverride();
+            obj1[0] = closure_1_0(11722).clearBuildOverride();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -165,10 +165,10 @@ function _clearBuildOverride() {
         } else {
           closure_0 = arg1;
           if (400 !== closure_0.status) {
-            obj2 = callback(11590);
+            obj2 = callback(11723);
             const result = obj2.checkForUpdateAndReload();
           } else {
-            obj = callback(4859);
+            obj = callback(4866);
             const obj3 = { title: "Clear Override Error", body: null, isDismissable: true };
             obj3[1] = closure_0.body;
             obj.show(obj3);
@@ -276,13 +276,13 @@ function _toggleOverride() {
           } else {
             lib = arg1;
             if (400 === lib.status) {
-              obj = callback(4859);
+              obj = callback(4866);
               const obj3 = { title: "Override Error", body: null, isDismissable: true };
               obj3[1] = lib.body[closure_5];
               obj.show(obj3);
             }
           }
-          obj2 = callback(11590);
+          obj2 = callback(11723);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp29) {
           currentBuildOverride = tmp;
@@ -378,13 +378,13 @@ function _setBuildOverrideFromLink() {
           } else {
             lib = arg1;
             if (400 === lib.status) {
-              obj = callback(4859);
+              obj = callback(4866);
               const obj3 = { title: "Override Error", body: null, isDismissable: true };
               obj3[1] = lib.body[closure_5];
               obj.show(obj3);
             }
           }
-          obj2 = callback(11590);
+          obj2 = callback(11723);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp26) {
           currentBuildOverride = tmp;

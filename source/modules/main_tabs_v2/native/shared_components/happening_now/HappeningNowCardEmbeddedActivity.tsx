@@ -1,19 +1,19 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 16007
+// Function ID: 16008
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1921, 15134, 673, 21, 4478, 709, 644, 15922, 5968, 695, 5982, 12701, 2008, 15894, 4217, 8911, 500, 15905, 15135, 5060, 5502, 15918, 2]
+// Dependencies: [32, 19, 17, 1921, 15218, 673, 21, 4481, 709, 644, 16008, 7108, 695, 7122, 9464, 2008, 15980, 4218, 8698, 500, 15991, 15219, 5067, 5542, 16004, 2]
 // Exports: default
 
-// Module 15921 (HappeningNowCardEmbeddedActivity)
+// Module 16007 (HappeningNowCardEmbeddedActivity)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15218 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: error } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);

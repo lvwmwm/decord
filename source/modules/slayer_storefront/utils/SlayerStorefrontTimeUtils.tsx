@@ -1,14 +1,14 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16850
+// Function ID: 16851
 // Name: getLimitedOfferTimeLeft
-// Dependencies: [32, 19, 4074, 684, 1233, 3370, 7200, 2]
+// Dependencies: [32, 19, 4074, 684, 1233, 3370, 7379, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 16763 (getLimitedOfferTimeLeft)
+// Module 16850 (getLimitedOfferTimeLeft)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3370 */;
 import hooksDefault from "hooks" /* 4074 */;
-import useIntervalDefault from "useInterval" /* 7200 */;
+import useIntervalDefault from "useInterval" /* 7379 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 

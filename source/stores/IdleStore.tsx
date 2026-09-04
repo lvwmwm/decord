@@ -1,9 +1,9 @@
-// Module ID: 5363
-// Function ID: 5364
+// Module ID: 5371
+// Function ID: 5372
 // Name: checkIdleAFK
-// Dependencies: [1215, 673, 4542, 1234, 4166, 684, 706, 4103, 5364, 633, 586, 2]
+// Dependencies: [1215, 673, 4545, 1234, 4166, 684, 706, 4103, 5372, 633, 586, 2]
 
-// Module 5363 (checkIdleAFK)
+// Module 5371 (checkIdleAFK)
 import initializeDefault from "initialize" /* 586 */;
 import debounceDefault from "debounce" /* 633 */;
 import setDefault from "set" /* 684 */;
@@ -11,10 +11,10 @@ import dispatcherDefault from "dispatcher" /* 706 */;
 import set from "set" /* 1234 */;
 import setDefault2 from "set" /* 4103 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import _modDef5364 from "module_5364" /* 5364 */;
+import _modDef5372 from "module_5372" /* 5372 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import ME from "ME" /* 673 */;
-import { SpeakingFlags } from "DesktopSources" /* 4542 */;
+import { SpeakingFlags } from "DesktopSources" /* 4545 */;
 
 require = arg1;
 function checkIdleAFK() {
@@ -144,7 +144,7 @@ if (require("set").isPlatformEmbedded) {
       c11 = true;
       closure_3 = Date.now();
       checkIdleAFK();
-      _modDef5364.disconnect();
+      _modDef5372.disconnect();
     });
     const powerMonitor3 = setDefault2.powerMonitor;
     class IdleStore extends r10079 {

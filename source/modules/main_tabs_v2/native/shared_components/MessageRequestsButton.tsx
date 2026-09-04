@@ -1,19 +1,19 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15952
+// Function ID: 15953
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 6075, 6076, 21, 4478, 586, 15867, 4929, 1233, 8018, 13153, 10000, 2]
+// Dependencies: [19, 17, 7159, 7160, 21, 4481, 586, 15953, 4936, 1233, 8028, 13185, 9812, 2]
 // Exports: default
 
-// Module 15866 (MessageRequestAnimation)
+// Module 15952 (MessageRequestAnimation)
 import initialize from "initialize" /* 586 */;
-import registerAssetDefault from "registerAsset" /* 10000 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 13153 */;
+import registerAssetDefault from "registerAsset" /* 9812 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 13185 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "processChannel" /* 6075 */;
-import closure_6 from "processChannel" /* 6076 */;
+import closure_5 from "processChannel" /* 7159 */;
+import closure_6 from "processChannel" /* 7160 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function MessageRequestAnimation(color) {
@@ -36,7 +36,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15867).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15953).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -72,7 +72,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1233).intl;
       obj[4] = intl3.string(tmp3(1233).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4929).Button, obj);
+      let tmp21 = callback(tmp3(4936).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
@@ -81,9 +81,9 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1233).intl;
       obj1[3] = intl2.string(tmp3(1233).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(8018).IconButton, obj1);
+      tmp21 = callback(tmp3(8028).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(13153).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(13185).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {

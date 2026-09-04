@@ -1,24 +1,24 @@
 // Module ID: 1385
 // Function ID: 1386
 // Name: participantFromServer
-// Dependencies: [32, 1215, 1386, 1980, 1921, 4506, 9483, 673, 9510, 9511, 4110, 9484, 13963, 1228, 9468, 706, 9505, 8450, 1234, 1954, 7278, 586, 2]
+// Dependencies: [32, 1215, 1386, 1980, 1921, 4509, 9434, 673, 9408, 9409, 4110, 9441, 13995, 1228, 9462, 706, 9454, 9339, 1234, 1954, 7456, 586, 2]
 
 // Module 1385 (participantFromServer)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4110 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7278 */;
-import getPlatformDefault from "getPlatform" /* 8450 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9484 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9505 */;
-import apexExperiment from "apexExperiment" /* 9510 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7456 */;
+import getPlatformDefault from "getPlatform" /* 9339 */;
+import apexExperiment from "apexExperiment" /* 9408 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9441 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9454 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9483 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9434 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
@@ -252,7 +252,7 @@ function updateEmbeddedActivities(content_classification) {
                 obj5[5] = obj4;
                 obj5[6] = inviterUserId;
                 ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj5);
-                tmp79(9468);
+                tmp79(9462);
                 if (true === renderInFramePool) {
                   let ACTIVITY_POPOUT_WINDOW = ActivityPanelModes.DISCONNECTED;
                   const _HermesInternal2 = HermesInternal;
@@ -288,7 +288,7 @@ function updateEmbeddedActivities(content_classification) {
       const _HermesInternal3 = HermesInternal;
       obj5.delete("" + application_id + ":" + tmp59);
     }
-    const someResult1 = mapped.some((userId) => application_id(13963).isActivityParticipantCurrentUserCurrentSession(userId));
+    const someResult1 = mapped.some((userId) => application_id(13995).isActivityParticipantCurrentUserCurrentSession(userId));
   }
 }
 ActivityPanelModes = ActivityPanelModes.ActivityPanelModes;
@@ -343,7 +343,7 @@ prototype["getItems"] = function getItems(arg0) {
         let cachedVisible = self.cachedVisible;
         if (cachedVisible == null) {
           items = self.items;
-          const found = items.filter((contentClassification) => !callback(9511).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+          const found = items.filter((contentClassification) => !callback(9409).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
           self.cachedVisible = found;
           cachedVisible = found;
         }
@@ -352,7 +352,7 @@ prototype["getItems"] = function getItems(arg0) {
         let cachedHidden = self.cachedHidden;
         if (cachedHidden == null) {
           items1 = self.items;
-          const found1 = items1.filter((contentClassification) => callback(9511).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+          const found1 = items1.filter((contentClassification) => callback(9409).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
           self.cachedHidden = found1;
           cachedHidden = found1;
         }

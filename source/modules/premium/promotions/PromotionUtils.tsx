@@ -1,21 +1,21 @@
-// Module ID: 13250
-// Function ID: 13251
+// Module ID: 13283
+// Function ID: 13284
 // Name: claimedOutboundPromotionCodeFromServer
-// Dependencies: [5, 1339, 8462, 10700, 1923, 673, 4506, 1362, 527, 1234, 695, 1398, 1372, 11, 1374, 8493, 2]
+// Dependencies: [5, 1339, 10595, 10594, 1923, 673, 4509, 1362, 527, 1234, 695, 1399, 1372, 11, 1374, 10626, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13250 (claimedOutboundPromotionCodeFromServer)
+// Module 13283 (claimedOutboundPromotionCodeFromServer)
 import set2 from "set" /* 1234 */;
 import DismissibleContent from "DismissibleContent" /* 1372 */;
 import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1374 */;
-import CountryListMode from "CountryListMode" /* 8493 */;
+import CountryListMode from "CountryListMode" /* 10626 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_5 from "createFromServer" /* 8462 */;
-import closure_6 from "createEmptyPromotionsByType" /* 10700 */;
+import closure_5 from "createFromServer" /* 10595 */;
+import closure_6 from "createEmptyPromotionsByType" /* 10594 */;
 import { PromotionFlags } from "GuildFeatures" /* 1923 */;
 import ME from "ME" /* 673 */;
-import { ActivityPlatform } from "items3" /* 4506 */;
+import { ActivityPlatform } from "items3" /* 4509 */;
 
 require = arg1;
 function claimedOutboundPromotionCodeFromServer(code) {

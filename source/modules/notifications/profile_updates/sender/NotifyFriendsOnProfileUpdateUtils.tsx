@@ -1,10 +1,10 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15836
+// Function ID: 15837
 // Name: onNotifyFriendsOnProfileUpdateSettingsChanged
 // Dependencies: [4133, 673, 4166, 695, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 15754 (onNotifyFriendsOnProfileUpdateSettingsChanged)
+// Module 15836 (onNotifyFriendsOnProfileUpdateSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;

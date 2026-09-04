@@ -1,11 +1,11 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 8012
+// Function ID: 8013
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 
-// Module 8002 (apexExperiment)
+// Module 8012 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

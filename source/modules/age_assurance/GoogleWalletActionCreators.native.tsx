@@ -1,10 +1,10 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 8378
+// Function ID: 8379
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 1215, 673, 8708, 527, 8737, 2]
+// Dependencies: [5, 1215, 673, 8348, 527, 8379, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 8736 (_requestGoogleWalletVerification)
+// Module 8378 (_requestGoogleWalletVerification)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import { Endpoints } from "ME" /* 673 */;
@@ -137,7 +137,7 @@ function _verifyGoogleWalletCredential() {
               obj[0] = arg1;
               return obj;
             } else {
-              const result = callback(8708).isCurrentUserSuspended();
+              const result = callback(8348).isCurrentUserSuspended();
               const HTTP = callback(527).HTTP;
               const post = HTTP.post;
               obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
@@ -163,7 +163,7 @@ function _verifyGoogleWalletCredential() {
                 obj5[0] = post(obj1);
                 return obj5;
               }
-              const obj9 = callback(8708);
+              const obj9 = callback(8348);
             }
           } else {
             if (1 === tmp4) {

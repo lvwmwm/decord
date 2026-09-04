@@ -1,14 +1,14 @@
-// Module ID: 5052
-// Function ID: 5053
+// Module ID: 5059
+// Function ID: 5060
 // Name: VoiceLockIcon
-// Dependencies: [19, 21, 709, 4196, 4994, 2]
+// Dependencies: [19, 21, 709, 4196, 5001, 2]
 // Exports: VoiceLockIcon
 
-// Module 5052 (VoiceLockIcon)
+// Module 5059 (VoiceLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4994 */;
+import registerAsset from "registerAsset" /* 5001 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

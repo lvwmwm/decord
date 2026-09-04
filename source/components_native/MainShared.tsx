@@ -1,27 +1,27 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16830
+// Function ID: 16831
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1386, 4554, 21, 586, 9556, 4332, 9668, 16744, 1234, 14473, 1233, 16746, 14468, 14328, 2, 16747, 16748, 16749, 16750, 16758, 16759, 16789]
+// Dependencies: [19, 17, 1386, 4557, 21, 586, 9419, 4335, 9610, 16831, 1234, 14505, 1233, 16833, 14500, 14360, 2, 16834, 16835, 16836, 16837, 16845, 16846, 16876]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 16743 (BurstReactionAnimationContainer)
+// Module 16830 (BurstReactionAnimationContainer)
 import initialize from "initialize" /* 586 */;
-import coerceMainRoute from "coerceMainRoute" /* 4332 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 9556 */;
-import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9668 */;
-import KeyCommandsView from "KeyCommandsView" /* 14468 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16744 */;
-import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16747 */;
-import MenuContainerDefault from "MenuContainer" /* 16748 */;
-import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16749 */;
-import StyleSheetDefault from "StyleSheet" /* 16750 */;
-import MuteDeafenDefault from "MuteDeafen" /* 16758 */;
-import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16759 */;
-import AnimatedToastDefault from "AnimatedToast" /* 16789 */;
+import coerceMainRoute from "coerceMainRoute" /* 4335 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 9419 */;
+import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9610 */;
+import KeyCommandsView from "KeyCommandsView" /* 14500 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16831 */;
+import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16834 */;
+import MenuContainerDefault from "MenuContainer" /* 16835 */;
+import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16836 */;
+import StyleSheetDefault from "StyleSheet" /* 16837 */;
+import MuteDeafenDefault from "MuteDeafen" /* 16845 */;
+import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16846 */;
+import AnimatedToastDefault from "AnimatedToast" /* 16876 */;
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createRTCConnection" /* 4554 */;
+import closure_6 from "createRTCConnection" /* 4557 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

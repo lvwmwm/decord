@@ -1,15 +1,15 @@
-// Module ID: 13076
-// Function ID: 13077
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1234, 4197, 13061, 4217, 4919, 5035, 4474, 1233, 2]
+// Module ID: 12911
+// Function ID: 12912
+// Dependencies: [32, 19, 17, 21, 4481, 709, 1234, 4197, 12896, 4218, 4926, 5042, 4477, 1233, 2]
 
-// Module 13076
+// Module 12911
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13061 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12896 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -51,18 +51,18 @@ export default importAllResult.memo(function MediaModalSpoilerOverlay(source) {
     obj[0] = str;
     obj[1] = token;
     obj[2] = absoluteFill.absoluteFill;
-    const items1 = [closure_6(tmp3(4919), obj), ];
+    const items1 = [closure_6(tmp3(4926), obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = items2.spoilerOverlayContainer;
     const obj2 = { style: null, children: null };
     if (source.obscure) {
       obj2[0] = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5035).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5042).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj3 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1233).intl;
       stringResult = intl2.string(tmp(1233).t.SpxcUR);
       obj3[3] = stringResult;
-      items2[1] = tmp9(tmp(4474).Text, obj3);
+      items2[1] = tmp9(tmp(4477).Text, obj3);
       obj2[1] = items2;
       let tmp9Result = tmp7(tmp11, obj2);
     } else {
@@ -70,7 +70,7 @@ export default importAllResult.memo(function MediaModalSpoilerOverlay(source) {
       const obj4 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl = tmp(1233).intl;
       obj4[3] = intl.string(tmp(1233).t["F+x38C"]).toUpperCase();
-      obj2[1] = tmp9(tmp(4474).Text, obj4);
+      obj2[1] = tmp9(tmp(4477).Text, obj4);
       tmp9Result = tmp9(tmp11, obj2);
       const str2 = intl.string(tmp(1233).t["F+x38C"]);
     }
@@ -78,8 +78,8 @@ export default importAllResult.memo(function MediaModalSpoilerOverlay(source) {
     obj1 = tmp9(tmp11, obj1);
     items1[1] = obj1;
     obj[1] = items1;
-    closure_7(tmp3(4217).View, obj);
-    const tmp3Result = tmp3(4919);
+    closure_7(tmp3(4218).View, obj);
+    const tmp3Result = tmp3(4926);
     const tmp8 = absoluteFill;
   }
 });

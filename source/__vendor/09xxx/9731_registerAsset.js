@@ -1,0 +1,10 @@
+// Module ID: 9731
+// Function ID: 9732
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 9731 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 16, height: 16, scales: [1, 2, 3], hash: "084857b96e411731cfaceba379b8db2a", name: "ic_group", type: "png" });

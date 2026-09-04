@@ -1,9 +1,9 @@
-// Module ID: 6942
-// Function ID: 6943
+// Module ID: 6323
+// Function ID: 6324
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6942 (metadata)
+// Module 6323 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QrSuccessSpotIllustration-2x.png.js");

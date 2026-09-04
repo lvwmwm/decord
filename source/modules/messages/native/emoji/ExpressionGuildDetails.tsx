@@ -1,19 +1,19 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 10271
+// Function ID: 10272
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 6014, 21, 4478, 709, 6013, 1430, 5502, 4474, 1233, 5077, 9204, 7685, 1296, 2]
+// Dependencies: [19, 17, 5540, 21, 4481, 709, 5539, 1431, 5542, 4477, 1233, 5084, 10270, 5545, 1296, 2]
 
-// Module 9205 (ExpressionGuildDetails)
+// Module 10271 (ExpressionGuildDetails)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import preloadDefault from "preload" /* 5502 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import getGuildBadgeSourceDefault from "getGuildBadgeSource" /* 7685 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import preloadDefault from "preload" /* 5542 */;
+import getGuildBadgeSourceDefault from "getGuildBadgeSource" /* 5545 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ExpressionSourceGuildRecord as closure_4 } from "getEmojiSourceData" /* 6014 */;
+import { ExpressionSourceGuildRecord as closure_4 } from "getEmojiSourceData" /* 5540 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

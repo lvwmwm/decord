@@ -1,23 +1,23 @@
-// Module ID: 15574
-// Function ID: 15575
+// Module ID: 15656
+// Function ID: 15657
 // Name: useFrameMonitor
-// Dependencies: [32, 19, 15572, 2]
+// Dependencies: [32, 19, 15654, 2]
 // Exports: default
 
-// Module 15574 (useFrameMonitor)
+// Module 15656 (useFrameMonitor)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/useFrameMonitor.tsx");
 
-export default function useFrameMonitor(stateFromStores) {
-  closure_0 = stateFromStores;
+export default function useFrameMonitor(first) {
+  closure_0 = first;
   const monitoring = callback(React.useState(false), 2);
   closure_1 = monitoring[1];
   callback = React.useRef(null);
-  React = React.useRef(stateFromStores);
-  const items = [stateFromStores];
+  React = React.useRef(first);
+  const items = [first];
   const effect = React.useEffect(() => {
     closure_3.current = closure_0;
   }, items);
@@ -26,7 +26,7 @@ export default function useFrameMonitor(stateFromStores) {
     if (current != null) {
       current.stop();
     }
-    ref.current = stateFromStores(15572).startFrameMonitor();
+    ref.current = callback(15654).startFrameMonitor();
     dependencyMap(true);
   }, []);
   const stop = React.useCallback(() => {

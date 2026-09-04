@@ -1,9 +1,9 @@
-// Module ID: 4492
-// Function ID: 4493
+// Module ID: 4495
+// Function ID: 4496
 // Name: handleUserSettingsProtoStoreChange
 // Dependencies: [1995, 1339, 1979, 592, 4166, 586, 706, 2]
 
-// Module 4492 (handleUserSettingsProtoStoreChange)
+// Module 4495 (handleUserSettingsProtoStoreChange)
 import initializeDefault from "initialize" /* 586 */;
 import Storage3 from "Storage" /* 592 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

@@ -1,14 +1,14 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 8790
+// Function ID: 8791
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4460, 4161, 4154, 6099, 2]
+// Dependencies: [5, 32, 19, 4463, 4161, 4154, 7183, 2]
 // Exports: useOrderSigning
 
-// Module 11583 (useOrderSigning)
+// Module 8790 (useOrderSigning)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4460 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4463 */;
 
 const require = arg1;
 ({ useCallback: c5, useState: closure_6 } = noop);

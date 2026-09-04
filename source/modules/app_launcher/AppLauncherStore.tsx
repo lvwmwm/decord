@@ -1,18 +1,18 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 9337
+// Function ID: 9338
 // Name: handleDismissWithDismissed
-// Dependencies: [8448, 586, 706, 2]
+// Dependencies: [9338, 586, 706, 2]
 
-// Module 8447 (handleDismissWithDismissed)
+// Module 9337 (handleDismissWithDismissed)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8448 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9338 */;
 
 require = arg1;
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherEntrypoint.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8448).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(9338).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherEntrypoint.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherEntrypoint.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8448).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(9338).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherEntrypoint.AppLauncherEntrypoint.NONE;
@@ -31,7 +31,7 @@ function handleSetActiveCommand() {
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
-let obj = { show: false, entrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, lastShownEntrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: require("AppLauncherEntrypoint").AppLauncherCloseReason.DISMISSED, initialState: "accessible" };
+let obj = { show: false, entrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, lastShownEntrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: require("AppLauncherEntrypoint").AppLauncherCloseReason.DISMISSED, initialState: "add" };
 const Store = initializeDefault.Store;
 class AppLauncherStore extends Store {
 }

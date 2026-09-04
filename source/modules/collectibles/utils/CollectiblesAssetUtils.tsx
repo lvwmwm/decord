@@ -1,12 +1,12 @@
 // Module ID: 1899
 // Function ID: 1900
 // Name: parseSkuIdFromServerData
-// Dependencies: [1470, 2, 1898]
+// Dependencies: [1394, 2, 1898]
 // Exports: getCollectiblesItemAssetUrl
 
 // Module 1899 (parseSkuIdFromServerData)
 import set from "set" /* 2 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
 import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1898 */;
 
 let c2 = "media/v1/collectibles-shop";

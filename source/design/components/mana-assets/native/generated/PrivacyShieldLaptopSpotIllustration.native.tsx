@@ -1,14 +1,14 @@
-// Module ID: 6927
-// Function ID: 6928
+// Module ID: 6308
+// Function ID: 6309
 // Name: PrivacyShieldLaptopSpotIllustration
-// Dependencies: [21, 5502, 6928, 2]
+// Dependencies: [21, 5542, 6309, 2]
 // Exports: PrivacyShieldLaptopSpotIllustration
 
-// Module 6927 (PrivacyShieldLaptopSpotIllustration)
+// Module 6308 (PrivacyShieldLaptopSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6928 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6309 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldLaptopSpotIllustration.native.tsx");

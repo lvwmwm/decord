@@ -1,12 +1,12 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7623
+// Function ID: 7624
 // Name: set
-// Dependencies: [4466, 1470, 7446, 7447, 2]
+// Dependencies: [4469, 1394, 7624, 7625, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7445 (set)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import CodedLinkType from "CodedLinkType" /* 4466 */;
+// Module 7623 (set)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import CodedLinkType from "CodedLinkType" /* 4469 */;
 import set from "set" /* 2 */;
 
 const items = [CodedLinkType.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLinkType.CodedLinkType.ACTIVITY_BOOKMARK, CodedLinkType.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLinkType.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLinkType.CodedLinkType.APP_OAUTH2_LINK];
@@ -25,10 +25,10 @@ export const isApplicationCodedLinkMobileSupported = function isApplicationCoded
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
   if (CodedLinkType.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (tmp(4466).CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (tmp(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (tmp(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(7446);
+    if (tmp(4469).CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (tmp(4469).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (tmp(4469).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          let tmpResult = tmp(7624);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -38,11 +38,11 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp5 = obj;
           }
           return tmp5;
-        } else if (tmp(4466).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        } else if (tmp(4469).CodedLinkType.ACTIVITY_BOOKMARK === type) {
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(7447);
+          tmpResult = tmp(7625);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

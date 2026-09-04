@@ -1,15 +1,15 @@
-// Module ID: 5368
-// Function ID: 5369
+// Module ID: 5376
+// Function ID: 5377
 // Name: createModeratorOverwrite
-// Dependencies: [4121, 1429, 1215, 1386, 1908, 4120, 1391, 673, 503, 4125, 1394, 586, 2]
+// Dependencies: [4121, 1430, 1215, 1386, 1908, 4120, 1391, 673, 503, 4125, 1395, 586, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5368 (createModeratorOverwrite)
+// Module 5376 (createModeratorOverwrite)
 import fromStringAll from "fromString" /* 503 */;
-import Permissions from "Permissions" /* 1394 */;
+import Permissions from "Permissions" /* 1395 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
 import closure_3 from "initialize" /* 4121 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;

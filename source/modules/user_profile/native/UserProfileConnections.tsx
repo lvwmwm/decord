@@ -1,26 +1,26 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 13011
+// Function ID: 13012
 // Name: VerifiedIcon
-// Dependencies: [19, 17, 1995, 4323, 6010, 673, 5361, 21, 1296, 4478, 709, 11400, 4197, 1362, 11405, 11406, 8575, 5360, 5236, 1430, 8660, 4701, 4190, 4446, 5990, 4193, 1233, 4474, 5608, 4196, 8747, 4204, 586, 12750, 6009, 6001, 12755, 2]
+// Dependencies: [19, 17, 1995, 4326, 7148, 673, 5369, 21, 1296, 4481, 709, 11507, 4197, 1362, 11512, 11513, 8121, 5368, 5244, 1431, 8300, 4708, 4190, 4449, 7130, 4193, 1233, 4477, 5560, 4196, 8510, 4205, 586, 13012, 7147, 5642, 13015, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12749 (VerifiedIcon)
+// Module 13011 (VerifiedIcon)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import map from "map" /* 4197 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6009 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12755 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7147 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 13015 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "initialize" /* 4323 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import closure_6 from "initialize" /* 4326 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import ME from "ME" /* 673 */;
-import { MetadataFields } from "OperatorTypes" /* 5361 */;
+import { MetadataFields } from "OperatorTypes" /* 5369 */;
 import jsxProd from "jsxProd" /* 21 */;
 import Button from "Button" /* 1296 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function VerifiedIcon(arg0) {
@@ -42,12 +42,12 @@ function VerifiedIcon(arg0) {
     obj = { style: null, children: null };
     obj[0] = tmp.verifiedIconContainer;
     obj = { source: null, color: null };
-    obj[0] = tmp4(11405);
+    obj[0] = tmp4(11512);
     obj[1] = PLATFORM_TWITTER;
     const merged = Object.assign(obj);
     const items = [callback(tmp2(1296).Icon, obj), ];
     obj1 = { source: null, color: null };
-    obj1[0] = tmp4(11406);
+    obj1[0] = tmp4(11513);
     obj1[1] = WHITE;
     const merged1 = Object.assign(obj);
     items[1] = callback(tmp2(1296).Icon, obj1);
@@ -361,7 +361,7 @@ let closure_19 = importAllResult.memo((application) => {
 const memoResult = importAllResult.memo((applicationRoleConnection) => {
   applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
   const tmp = callback3();
-  let obj = applicationRoleConnection(11400);
+  let obj = applicationRoleConnection(11507);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   obj1 = getAvatarURLDefault;
   obj = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
@@ -372,7 +372,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     if (null != applicationRoleConnection.platform_username) {
       obj = { variant: "text-xs/medium", color: "text-subtle", children: null };
       obj[2] = applicationRoleConnection.platform_username;
-      tmp7 = callback(tmp2(4474).Text, obj);
+      tmp7 = callback(tmp2(4477).Text, obj);
     }
   }
   const items = [tmp7, , ];
@@ -396,7 +396,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
       return applicationRoleConnection.application.name;
     }
   });
-  obj3[1] = callback(applicationRoleConnection(4474).Text, obj4);
+  obj3[1] = callback(applicationRoleConnection(4477).Text, obj4);
   items[2] = callback(View, obj3);
   obj2[0] = items;
   let name = applicationRoleConnection.platform_name;
@@ -416,7 +416,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
   const tmp5Result = closure_13(closure_14, obj2);
   const tmp6 = closure_14;
   obj6[2] = callback(applicationRoleConnection(1296).Icon, { size: applicationRoleConnection(1296).Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true });
-  return callback(applicationRoleConnection(5608).TableRow, obj6);
+  return callback(applicationRoleConnection(5560).TableRow, obj6);
 });
 let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
 
@@ -426,7 +426,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   let theme;
   dependencyMap = undefined;
   const tmp = callback3();
-  let obj = userId(4204);
+  let obj = userId(4205);
   theme = obj.useThemeContext().theme;
   const items = [closure_5];
   dependencyMap = userId(586).useStateFromStores(items, () => locale.locale);
@@ -435,7 +435,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const stateFromStores = userId(586).useStateFromStores(items1, () => obj.hidePersonalInformation);
   const obj3 = userId(586);
   const tmp5 = theme;
-  ({ connections, appIdentities } = theme(12750)(userId));
+  ({ connections, appIdentities } = theme(13012)(userId));
   if (!stateFromStores) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(connections.map((account) => closure_1_12(closure_1_18, { account, theme, locale: closure_2, userId }, account.id)), 0);
@@ -451,8 +451,8 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
     obj[2] = tmp.refreshCardTitle;
     obj = { hasIcons: true, children: null };
     obj[1] = items2;
-    obj[3] = callback(tmp2(6001).TableRowGroup, obj);
-    return callback(tmp5(6009), obj);
+    obj[3] = callback(tmp2(5642).TableRowGroup, obj);
+    return callback(tmp5(7147), obj);
   }
   return null;
 };
@@ -473,7 +473,7 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
       obj[2] = tmp.refreshCardTitle;
       obj = { hasIcons: true, children: null };
       obj[1] = mapped;
-      obj[3] = callback(tmp4(6001).TableRowGroup, obj);
+      obj[3] = callback(tmp4(5642).TableRowGroup, obj);
       return callback(UserProfileCardDefault, obj);
     }
   }

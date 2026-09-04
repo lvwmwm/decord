@@ -1,17 +1,17 @@
-// Module ID: 16083
-// Function ID: 16084
+// Module ID: 16169
+// Function ID: 16170
 // Name: GenericUpsellActionSheet
-// Dependencies: [19, 17, 1383, 21, 4478, 709, 8091, 5631, 5502, 5946, 4474, 1296, 4929, 2]
+// Dependencies: [19, 17, 1383, 21, 4481, 709, 8101, 7090, 5542, 7094, 4477, 1296, 4936, 2]
 // Exports: default
 
-// Module 16083 (GenericUpsellActionSheet)
+// Module 16169 (GenericUpsellActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5502 */;
+import preloadDefault from "preload" /* 5542 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -28,7 +28,7 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = callback3();
-  let obj = markAsDismissed(8091);
+  let obj = markAsDismissed(8101);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = {
@@ -42,12 +42,12 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
     children: null
   };
   obj = { children: null };
-  const items = [callback(preloadDefault, { source: imageSource, style: tmp.image }), callback(markAsDismissed(5946).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
+  const items = [callback(preloadDefault, { source: imageSource, style: tmp.image }), callback(markAsDismissed(7094).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
   obj[0] = items;
   obj[4] = callback2(View, obj);
   const obj2 = { style: tmp.content, children: null };
-  const items1 = [callback(markAsDismissed(4474).Text, { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header }), callback(markAsDismissed(1296).Spacer, { size: 12 }), callback(markAsDismissed(4474).Text, { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body }), callback(markAsDismissed(4929).Button, { variant: "primary", grow: true, onPress: onCTAPress, text: cta })];
+  const items1 = [callback(markAsDismissed(4477).Text, { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header }), callback(markAsDismissed(1296).Spacer, { size: 12 }), callback(markAsDismissed(4477).Text, { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body }), callback(markAsDismissed(4936).Button, { variant: "primary", grow: true, onPress: onCTAPress, text: cta })];
   obj2[1] = items1;
   obj[5] = callback2(View, obj2);
-  return callback(markAsDismissed(5631).BottomSheet, obj);
+  return callback(markAsDismissed(7090).BottomSheet, obj);
 };

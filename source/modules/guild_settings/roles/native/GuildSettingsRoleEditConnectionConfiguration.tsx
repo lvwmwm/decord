@@ -1,24 +1,24 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17556
+// Function ID: 17557
 // Name: Header
-// Dependencies: [32, 19, 17, 673, 5361, 21, 4478, 709, 4413, 11388, 1296, 1430, 1362, 5608, 1233, 5077, 5560, 6002, 17477, 1234, 4474, 5236, 6001, 2]
+// Dependencies: [32, 19, 17, 673, 5369, 21, 4481, 709, 4416, 11495, 1296, 1431, 1362, 5560, 1233, 5084, 5635, 7141, 17557, 1234, 4477, 5244, 5642, 2]
 // Exports: default
 
-// Module 17476 (Header)
+// Module 17556 (Header)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
-import XSmallIcon from "XSmallIcon" /* 5560 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import request from "request" /* 11388 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import XSmallIcon from "XSmallIcon" /* 5635 */;
+import request from "request" /* 11495 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PlatformTypes } from "ME" /* 673 */;
-import OperatorTypes from "OperatorTypes" /* 5361 */;
+import OperatorTypes from "OperatorTypes" /* 5369 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function Header(arg0) {
@@ -39,7 +39,7 @@ function Header(arg0) {
     application1 = integration.application;
   }
   if (null != application1) {
-    obj = { size: null, user: null, guildId: "accessible" };
+    obj = { size: null, user: null, guildId: "Array" };
     obj[0] = tmp3(1296).AvatarSizes.XSMALL;
     let bot;
     if (integration != null) {
@@ -62,7 +62,7 @@ function Header(arg0) {
       }
       let tmp11;
       if (null != bot1) {
-        obj = { size: null, user: null, guildId: "accessible" };
+        obj = { size: null, user: null, guildId: "Array" };
         obj[0] = tmp3(1296).AvatarSizes.XSMALL;
         obj[1] = getOrFetchApplicationBatched.bot;
         tmp11 = callback2(tmp3(1296).Avatar, obj);
@@ -74,7 +74,7 @@ function Header(arg0) {
       tmp8Result = tmp11;
     }
   } else if (null != platform) {
-    let tmp3Result = tmp3(1430);
+    let tmp3Result = tmp3(1431);
     tmp3Result = tmp3(1362);
     const icon = platform.icon;
     obj1 = { source: null, disableColor: true };
@@ -143,7 +143,7 @@ function BooleanConfigRule(metadataField) {
     }
     closure_3(tmp, num);
   };
-  return closure_12(metadataField(6002).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(7141).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   ({ fieldText, fieldTextHook, metadataField } = existingPendingConfiguration);
@@ -195,7 +195,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(17477);
+  let obj = metadataField(17557);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -204,7 +204,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(17477);
+  let tmpResult = tmp(17557);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -288,7 +288,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       const obj4 = { variant: "text-md/semibold", style: null, children: null };
       obj4[1] = map.appNumericalInputText;
       obj4[2] = fieldText;
-      items1[1] = onInputValueChange(tmp(4474).Text, obj4);
+      items1[1] = onInputValueChange(tmp(4477).Text, obj4);
       obj1[1] = items1;
       tmp21Result = closure_13(tmp22, obj1);
       const tmp21 = closure_13;
@@ -330,7 +330,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       }
       closure_3(tmp3, num);
     };
-    return onInputValueChange(tmp(6002).TableSwitchRow, obj5, metadataField);
+    return onInputValueChange(tmp(7141).TableSwitchRow, obj5, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {
@@ -599,7 +599,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: "a", onRemove: "isArray", locked: "icon" };
+      obj = { platform: null, integration: "a", applicationId: "engel", onRemove: "fjes", locked: "glorie" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

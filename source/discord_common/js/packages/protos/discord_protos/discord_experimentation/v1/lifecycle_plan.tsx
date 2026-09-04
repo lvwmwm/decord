@@ -1,12 +1,12 @@
-// Module ID: 7649
-// Function ID: 7650
+// Module ID: 7826
+// Function ID: 7827
 // Name: create
-// Dependencies: [32, 1306, 7650, 1335, 2]
+// Dependencies: [32, 1306, 7827, 1335, 2]
 
-// Module 7649 (create)
+// Module 7826 (create)
 import _mod1306 from "module_1306" /* 1306 */;
 import now from "now" /* 1335 */;
-import internalJsonWrite from "internalJsonWrite" /* 7650 */;
+import internalJsonWrite from "internalJsonWrite" /* 7827 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType, MessageType as MessageType2, MessageType as MessageType3, MessageType as MessageType4 } from "module_1306" /* 1306 */;
 
@@ -454,7 +454,7 @@ class RampStep$Type extends MessageType4 {
       name: "hold_duration",
       kind: "message",
       T() {
-            return callback(7650).Duration;
+            return callback(7827).Duration;
           }
     };
     items[2] = { no: 3, name: "require_manual_approval", kind: "scalar", T: 8 };
@@ -604,7 +604,7 @@ const items3 = [
     name: "hold_duration",
     kind: "message",
     T() {
-      return callback(7650).Duration;
+      return callback(7827).Duration;
     }
   },
   { no: 3, name: "require_manual_approval", kind: "scalar", T: 8 },

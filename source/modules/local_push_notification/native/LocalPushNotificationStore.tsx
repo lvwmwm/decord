@@ -1,17 +1,17 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13639
+// Function ID: 13640
 // Name: set
-// Dependencies: [1908, 5366, 13607, 673, 9674, 4074, 1233, 586, 706, 2]
+// Dependencies: [1908, 5374, 13640, 673, 9616, 4074, 1233, 586, 706, 2]
 
-// Module 13606 (set)
+// Module 13639 (set)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;
-import NativeModulesDefault from "NativeModules" /* 9674 */;
+import NativeModulesDefault from "NativeModules" /* 9616 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "recomputeGuild" /* 5366 */;
-import LocalNotificationTypes from "LocalNotificationTypes" /* 13607 */;
+import closure_4 from "recomputeGuild" /* 5374 */;
+import LocalNotificationTypes from "LocalNotificationTypes" /* 13640 */;
 import { VerificationLevels } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
@@ -47,9 +47,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(dispatcherDefa
             set.add(userInfo);
           }
         }
-        const result = callback(9674).cancelLocalNotifications(userInfo);
-        const obj = callback(9674);
-        const result1 = callback(9674).cancelLocalNotifications(userInfo);
+        const result = callback(9616).cancelLocalNotifications(userInfo);
+        const obj = callback(9616);
+        const result1 = callback(9616).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -81,8 +81,8 @@ const localPushNotificationStore = new LocalPushNotificationStore(dispatcherDefa
               obj[2] = guild.name;
               const intl = getSystemLocale.intl;
               obj[3] = intl.string(getSystemLocale.t["hrDBa+"]);
-              const result = tmp15(9674).scheduleLocalNotification(obj);
-              const tmp15Result = tmp15(9674);
+              const result = tmp15(9616).scheduleLocalNotification(obj);
+              const tmp15Result = tmp15(9616);
             }
             tmp15 = importDefault;
           }

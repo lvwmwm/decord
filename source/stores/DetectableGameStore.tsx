@@ -1,9 +1,9 @@
-// Module ID: 4514
-// Function ID: 4515
+// Module ID: 4517
+// Function ID: 4518
 // Name: gameFromServer
-// Dependencies: [4504, 673, 4507, 684, 4515, 592, 1234, 4516, 586, 11, 1470, 1954, 695, 4166, 706, 2]
+// Dependencies: [4507, 673, 4510, 684, 4518, 592, 1234, 4519, 586, 11, 1394, 1954, 695, 4166, 706, 2]
 
-// Module 4514 (gameFromServer)
+// Module 4517 (gameFromServer)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
@@ -12,10 +12,10 @@ import setDefault from "set" /* 684 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import createExecutable2 from "createExecutable" /* 4504 */;
-import ApplicationTypes2 from "ApplicationTypes" /* 4507 */;
-import keysDefault from "keys" /* 4515 */;
-import GameTheme from "GameTheme" /* 4516 */;
+import createExecutable2 from "createExecutable" /* 4507 */;
+import ApplicationTypes2 from "ApplicationTypes" /* 4510 */;
+import keysDefault from "keys" /* 4518 */;
+import GameTheme from "GameTheme" /* 4519 */;
 import set from "set" /* 1234 */;
 
 function gameFromServer(id) {
@@ -258,13 +258,13 @@ prototype["findGame"] = function findGame(nextResult) {
     }
     if (null != nextResult.exePath) {
       let parts = nextResult.exePath.split("/");
-      let found = parts.filter(_require(1470).isNotNullish);
+      let found = parts.filter(_require(1394).isNotNullish);
       const gameByExecutable = self.getGameByExecutable(found.pop());
       if (null != gameByExecutable) {
         return gameByExecutable;
       } else {
         const parts1 = nextResult.exePath.split("/");
-        const found1 = parts1.filter(tmp15(1470).isNotNullish);
+        const found1 = parts1.filter(tmp15(1394).isNotNullish);
         const substr = found1.slice(-2);
         const gameByExecutable1 = self.getGameByExecutable(substr.join("/"));
         if (null != gameByExecutable1) {

@@ -1,20 +1,20 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17067
+// Function ID: 17068
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4478, 4326, 709, 9534, 1627, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 4329, 709, 9494, 1627, 4477, 2]
 // Exports: default
 
-// Module 16981 (ActivitiesDebugOverlay)
+// Module 17067 (ActivitiesDebugOverlay)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4474 */;
-import useThermalState from "useThermalState" /* 9534 */;
-import useThermalStateDefault from "useThermalState" /* 9534 */;
+import Text from "Text" /* 4477 */;
+import useThermalState from "useThermalState" /* 9494 */;
+import useThermalStateDefault from "useThermalState" /* 9494 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 
 require = arg1;
 noopAll;
@@ -35,14 +35,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(9534).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(9494).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(9534).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(9494).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(9534).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(9534).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(9494).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(9494).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

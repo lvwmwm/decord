@@ -1,16 +1,16 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14769
+// Function ID: 14770
 // Name: syncContacts
-// Dependencies: [5, 19, 1921, 12453, 673, 21, 12454, 4194, 1233, 7692, 12458, 695, 12450, 586, 4166, 1398, 8376, 4724, 14689, 2008, 2]
+// Dependencies: [5, 19, 1921, 12611, 673, 21, 12612, 4194, 1233, 5552, 12616, 695, 12608, 586, 4166, 1399, 8523, 4731, 14770, 2008, 2]
 // Exports: default, handleSyncContacts
 
-// Module 14688 (syncContacts)
+// Module 14769 (syncContacts)
 import noopAll from "noop" /* 19 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 12450 */;
+import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 12608 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import setStoredContacts from "setStoredContacts" /* 12453 */;
+import setStoredContacts from "setStoredContacts" /* 12611 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -199,7 +199,7 @@ function _updateFriendSync() {
               closure_3 = tmp5;
               if (null != callback) {
                 c6 = 1;
-                let obj5 = callback2(12458);
+                let obj5 = callback2(12616);
                 obj1 = { enabled: null };
                 obj1[0] = tmp38;
                 c7 = 2;
@@ -216,7 +216,7 @@ function _updateFriendSync() {
               obj3 = { key: "CONTACT_SYNC_FAILED_ALERT_TITLE", content: null, icon: null };
               const intl = callback(1233).intl;
               obj3[1] = intl.string(callback(1233).t.GCwBtE);
-              obj3[2] = callback2(7692);
+              obj3[2] = callback2(5552);
               obj3.open(obj3);
             } else if (2 === tmp8) {
               if (arg0 === 1) {
@@ -276,7 +276,7 @@ noopAll;
 let result = require("set").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettings.tsx");
 
 export default function ContactSyncSettings() {
-  let obj = contactSyncAccount(12454);
+  let obj = contactSyncAccount(12612);
   contactSyncAccount = obj.useContactSyncAccount();
   obj1 = contactSyncAccount(586);
   const items = [closure_4];
@@ -289,14 +289,14 @@ export default function ContactSyncSettings() {
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  let tmpResult = tmp(12454);
+  let tmpResult = tmp(12612);
   const FriendDiscoverySettings = tmp(4166).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
-  tmpResult = tmp(1398);
+  tmpResult = tmp(1399);
   const hasFlagResult = tmpResult.hasFlag(setting, constants2.FIND_BY_PHONE);
   dependencyMap = hasFlagResult;
   const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
-  const hasFlagResult1 = contactSyncAccount(1398).hasFlag(setting, constants2.FIND_BY_EMAIL);
+  const hasFlagResult1 = contactSyncAccount(1399).hasFlag(setting, constants2.FIND_BY_EMAIL);
   obj = { title: null, children: null };
   const intl = tmp(1233).intl;
   obj[0] = intl.string(contactSyncAccount(1233).t.bGSsnc);
@@ -304,8 +304,8 @@ export default function ContactSyncSettings() {
   if (isStaffResult) {
     obj = { children: null };
     obj1 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: null };
-    obj1[2] = tmp(12454).adminDeleteContactSync;
-    const items1 = [callback2(tmp(8376).FormSwitchRow, obj1), callback2(tmp(8376).FormDivider, {})];
+    obj1[2] = tmp(12612).adminDeleteContactSync;
+    const items1 = [callback2(tmp(8523).FormSwitchRow, obj1), callback2(tmp(8523).FormDivider, {})];
     obj[0] = items1;
     tmp10Result = tmp10(tmp11, obj);
   }
@@ -327,39 +327,39 @@ export default function ContactSyncSettings() {
       closure_1_15(tmp, tmp2, arg0);
     }
   };
-  items2[1] = callback2(contactSyncAccount(8376).FormSwitchRow, obj2);
+  items2[1] = callback2(contactSyncAccount(8523).FormSwitchRow, obj2);
   tmp10Result = null;
   if (null != contactSyncAccount) {
     let obj3 = { children: null };
-    const items3 = [tmp14(tmp(8376).FormDivider, {}), ];
+    const items3 = [tmp14(tmp(8523).FormDivider, {}), ];
     const obj4 = { label: null, trailing: null, onPress: null };
     const intl3 = tmp(1233).intl;
     obj4[0] = intl3.string(tmp(1233).t.nAsWKy);
     const obj5 = { label: null };
     obj5[0] = contactSyncAccount.name;
-    obj4[1] = tmp14(tmp(8376).FormRow.Arrow, obj5);
+    obj4[1] = tmp14(tmp(8523).FormRow.Arrow, obj5);
     obj4[2] = function onPress() {
       phone(hasFlagResult[11]).track(constants.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
       const obj = phone(hasFlagResult[11]);
       phone(hasFlagResult[17]).pushLazy(contactSyncAccount(hasFlagResult[19])(hasFlagResult[18], hasFlagResult.paths), "Contact Sync Name Update Modal");
     };
-    items3[1] = tmp14(tmp(8376).FormRow, obj4);
+    items3[1] = tmp14(tmp(8523).FormRow, obj4);
     obj3[0] = items3;
     tmp10Result = tmp10(tmp11, obj3);
   }
   const obj6 = { children: null };
   items2[2] = tmp10Result;
   obj[1] = items2;
-  const items4 = [closure_12(contactSyncAccount(8376).FormSection, obj), , , ];
+  const items4 = [closure_12(contactSyncAccount(8523).FormSection, obj), , , ];
   const obj7 = { children: null };
   const intl4 = tmp(1233).intl;
-  const tmpResult1 = contactSyncAccount(1398);
-  obj7[0] = intl4.format(contactSyncAccount(1233).t.BoR0dO, { onClick: contactSyncAccount(12454).handleOpenLearnMoreLink });
-  items4[1] = callback2(contactSyncAccount(8376).FormHint, obj7);
+  const tmpResult1 = contactSyncAccount(1399);
+  obj7[0] = intl4.format(contactSyncAccount(1233).t.BoR0dO, { onClick: contactSyncAccount(12612).handleOpenLearnMoreLink });
+  items4[1] = callback2(contactSyncAccount(8523).FormHint, obj7);
   const obj9 = { children: null };
   const intl5 = tmp(1233).intl;
   obj9[0] = intl5.string(contactSyncAccount(1233).t.cW1nr9);
-  items4[2] = callback2(contactSyncAccount(8376).FormHint, obj9);
+  items4[2] = callback2(contactSyncAccount(8523).FormHint, obj9);
   const obj10 = { title: null, children: null };
   const intl6 = tmp(1233).intl;
   obj10[0] = intl6.string(contactSyncAccount(1233).t["0t2wRW"]);
@@ -374,7 +374,7 @@ export default function ContactSyncSettings() {
     obj = { phone, email: hasFlagResult1 };
     const result = obj.updateDiscoverability(obj);
   };
-  const items5 = [callback2(contactSyncAccount(8376).FormSwitchRow, obj11), callback2(contactSyncAccount(8376).FormDivider, {}), ];
+  const items5 = [callback2(contactSyncAccount(8523).FormSwitchRow, obj11), callback2(contactSyncAccount(8523).FormDivider, {}), ];
   const obj12 = { label: null, subLabel: null, value: null, onValueChange: null };
   const intl9 = tmp(1233).intl;
   obj12[0] = intl9.string(contactSyncAccount(1233).t.dI4d4S);
@@ -386,9 +386,9 @@ export default function ContactSyncSettings() {
     obj = { phone: closure_2, email };
     const result = obj.updateDiscoverability(obj);
   };
-  items5[2] = callback2(contactSyncAccount(8376).FormSwitchRow, obj12);
+  items5[2] = callback2(contactSyncAccount(8523).FormSwitchRow, obj12);
   obj10[1] = items5;
-  items4[3] = closure_12(contactSyncAccount(8376).FormSection, obj10);
+  items4[3] = closure_12(contactSyncAccount(8523).FormSection, obj10);
   obj6[0] = items4;
   return closure_12(closure_11, obj6);
 };

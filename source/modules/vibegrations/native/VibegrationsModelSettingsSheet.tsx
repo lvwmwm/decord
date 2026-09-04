@@ -1,15 +1,15 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16521
+// Function ID: 16522
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 16427, 21, 586, 16436, 1233, 3500, 5998, 5630, 5633, 4927, 709, 7704, 7705, 16437, 4474, 2]
+// Dependencies: [19, 16513, 21, 586, 16522, 1233, 3500, 7138, 7089, 6567, 4934, 709, 5640, 5643, 16523, 4477, 2]
 // Exports: default
 
-// Module 16435 (VibegrationsModelSettingsSheet)
+// Module 16521 (VibegrationsModelSettingsSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 3500 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "rejectPendingPublish" /* 16427 */;
-import { sendModelSettings } from "rejectPendingPublish" /* 16427 */;
+import closure_4 from "rejectPendingPublish" /* 16513 */;
+import { sendModelSettings } from "rejectPendingPublish" /* 16513 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -50,7 +50,7 @@ export default function VibegrationsModelSettingsSheet(projectId) {
     obj = { title: null };
     const intl3 = tmp(1233).intl;
     obj[0] = intl3.string(messagesProxyDefault["2NWMqY"]);
-    obj[1] = callback(tmp(5630).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp(7089).BottomSheetTitleHeader, obj);
     obj1 = { children: null };
     const obj2 = { direction: "vertical", spacing: null, children: null };
     obj2[1] = ThemesDefault.space.PX_16;
@@ -68,8 +68,8 @@ export default function VibegrationsModelSettingsSheet(projectId) {
     obj3[3] = stringResult;
     obj3[4] = stringResult;
     const main = choices.main;
-    obj3[5] = main.map((label) => callback2(projectId(7705).TableRadioRow, { label: label.label, subLabel: projectId(16437).PROVIDER_LABELS[label.provider], value: label.id }, label.id));
-    const items3 = [callback(tmp(7704).TableRadioGroup, obj3), , ];
+    obj3[5] = main.map((label) => callback2(projectId(5643).TableRadioRow, { label: label.label, subLabel: projectId(16523).PROVIDER_LABELS[label.provider], value: label.id }, label.id));
+    const items3 = [callback(tmp(5640).TableRadioGroup, obj3), , ];
     const obj4 = { hasIcons: false, defaultValue: null, onChange: null, title: null, accessibilityLabel: null, children: null };
     obj4[1] = settings.main.thinking;
     obj4[2] = function onChange(arg0) {
@@ -85,21 +85,21 @@ export default function VibegrationsModelSettingsSheet(projectId) {
     obj4[4] = stringResult1;
     const thinking = choices.thinking;
     obj4[5] = thinking.map((value) => {
-      let tmp2 = projectId(16437).THINKING_LABELS[value];
+      let tmp2 = projectId(16523).THINKING_LABELS[value];
       if (tmp2 == null) {
         tmp2 = value;
       }
-      return closure_6(projectId(7705).TableRadioRow, { label: tmp2, value }, value);
+      return closure_6(projectId(5643).TableRadioRow, { label: tmp2, value }, value);
     });
-    items3[1] = callback(tmp(7704).TableRadioGroup, obj4);
+    items3[1] = callback(tmp(5640).TableRadioGroup, obj4);
     const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl4 = tmp(1233).intl;
     obj5[2] = intl4.string(messagesProxyDefault.ICU5aW);
-    items3[2] = callback(tmp(4474).Text, obj5);
+    items3[2] = callback(tmp(4477).Text, obj5);
     obj2[2] = items3;
-    obj1[0] = callback2(tmp(4927).Stack, obj2);
-    obj[2] = callback(tmp(5633).BottomSheetScrollView, obj1);
-    return callback(tmp(5998).ActionSheet, obj);
+    obj1[0] = callback2(tmp(4934).Stack, obj2);
+    obj[2] = callback(tmp(6567).BottomSheetScrollView, obj1);
+    return callback(tmp(7138).ActionSheet, obj);
   }
 };
 export const VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY = "VibegrationsModelSettingsSheet";

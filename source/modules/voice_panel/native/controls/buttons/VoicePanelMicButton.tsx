@@ -1,23 +1,23 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17105
+// Function ID: 17106
 // Name: PTTButton
-// Dependencies: [32, 19, 4495, 1983, 1215, 1386, 4529, 4120, 1921, 4497, 21, 3, 4478, 586, 6199, 10112, 10127, 12068, 4217, 16931, 4446, 9683, 5661, 17020, 17021, 1233, 10114, 4474, 9840, 10113, 2]
+// Dependencies: [32, 19, 4498, 1983, 1215, 1386, 4532, 4120, 1921, 4500, 21, 3, 4481, 586, 7283, 9932, 9947, 12204, 4218, 17017, 4449, 9625, 6595, 17106, 17107, 1233, 9934, 4477, 9054, 9933, 2]
 // Exports: MicButton, PTTButton
 
-// Module 17019 (PTTButton)
+// Module 17105 (PTTButton)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 4495 */;
+import closure_5 from "set" /* 4498 */;
 import closure_6 from "initialize" /* 1983 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "updateVoiceState" /* 4497 */;
+import closure_12 from "updateVoiceState" /* 4500 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);

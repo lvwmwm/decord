@@ -1,25 +1,25 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 12980
+// Function ID: 12981
 // Name: ModeratorActionRow
-// Dependencies: [19, 5374, 1386, 1981, 1991, 1908, 4120, 4497, 673, 4108, 21, 4478, 709, 5608, 8575, 4445, 9260, 586, 6125, 11636, 1394, 8441, 4674, 4668, 4666, 4125, 1233, 10034, 8688, 10036, 8376, 5055, 11191, 2008, 5466, 6250, 4724, 11637, 1398, 11545, 4109, 11654, 11640, 9842, 10114, 9838, 12330, 7636, 4419, 11656, 9390, 11658, 12716, 9089, 7520, 6009, 6001, 2]
+// Dependencies: [19, 5382, 1386, 1981, 1991, 1908, 4120, 4500, 673, 4108, 21, 4481, 709, 5560, 8121, 4448, 10810, 586, 7209, 11767, 1395, 9332, 4681, 4675, 4673, 4125, 1233, 9846, 8328, 9848, 8523, 5062, 11262, 2008, 5475, 7318, 4731, 11768, 1399, 11672, 4109, 11785, 11771, 9056, 9934, 9052, 12462, 7813, 4422, 11787, 9362, 11789, 12981, 12552, 7697, 7147, 5642, 2]
 // Exports: default
 
-// Module 12715 (ModeratorActionRow)
+// Module 12980 (ModeratorActionRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5374 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5382 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "comparator" /* 1981 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "updateVoiceState" /* 4497 */;
+import closure_11 from "updateVoiceState" /* 4500 */;
 import ME from "ME" /* 673 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ModeratorActionRow(isDestructive) {
@@ -352,7 +352,7 @@ export default function UserProfileModeratorActions(user) {
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(4724);
+              let arr = callback(4731);
               arr = arr.pop();
             }
           };

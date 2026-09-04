@@ -1,25 +1,25 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16426
+// Function ID: 16427
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1386, 4855, 4854, 673, 10857, 4471, 21, 4478, 709, 9770, 1233, 16341, 4194, 1492, 4328, 7627, 16342, 5079, 4296, 4204, 5603, 11503, 11512, 4929, 4724, 10943, 1470, 7437, 8175, 511, 5082, 7211, 8177, 1627, 1234, 5511, 7618, 5504, 10946, 2]
+// Dependencies: [32, 5, 19, 17, 1386, 4862, 4861, 673, 10791, 4474, 21, 4481, 709, 9704, 1233, 16427, 4194, 1492, 4331, 7804, 16428, 5086, 4299, 4205, 6921, 11624, 11633, 4936, 4731, 10912, 1394, 7615, 9236, 511, 5089, 7390, 9238, 1627, 1234, 5586, 7795, 5579, 10915, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16340 (Screenshot)
+// Module 16426 (Screenshot)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9770 */;
+import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9704 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import { DraftType } from "handleChanged" /* 4855 */;
-import closure_9 from "map" /* 4854 */;
+import { DraftType } from "handleChanged" /* 4862 */;
+import closure_9 from "map" /* 4861 */;
 import { AbortCodes } from "ME" /* 673 */;
-import { UserRowModes } from "UserRowModes" /* 10857 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { UserRowModes } from "UserRowModes" /* 10791 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function Screenshot(setUri) {
@@ -44,26 +44,26 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(7627);
+  let obj = setUri(7804);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.preview, { width: ref(1492)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
-  const tmp4 = ref(4328)();
+  const tmp4 = ref(4331)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(16342);
-  obj4[0] = setUri(4296).OverlayOpacity.LEVEL_7;
-  obj4[1] = setUri(4296).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(16428);
+  obj4[0] = setUri(4299).OverlayOpacity.LEVEL_7;
+  obj4[1] = setUri(4299).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(5079), obj3), ];
+  const items2 = [callback3(ref(5086), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
-  const tmp7 = ref(5079);
+  const tmp7 = ref(5086);
   const items3 = [tmp.contentContainer, clientThemesOverride];
   obj5[1] = callback3(View, { style: items3, children: setUri.render() });
-  items2[1] = callback3(setUri(4204).ThemeContextProvider, obj5);
+  items2[1] = callback3(setUri(4205).ThemeContextProvider, obj5);
   obj2[1] = items2;
   obj1[2] = callback4(View, obj2);
   obj[1] = callback3(tmp6, obj1);
@@ -201,7 +201,7 @@ class ICYMIShareModal {
                     closure_0 = arg0;
                     c2 = 0;
                     c1 = 0;
-                    return (/* F125291 */ function*() { ... })();
+                    return (/* F125637 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;

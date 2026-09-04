@@ -1,27 +1,27 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11491
+// Function ID: 11492
 // Name: setIndex
-// Dependencies: [19, 1386, 5488, 4493, 4130, 1921, 673, 1393, 7289, 4703, 6078, 5463, 4674, 5489, 7283, 11385, 5487, 1219, 4298, 1372, 586, 1233, 4074, 11, 2]
+// Dependencies: [19, 1386, 7051, 4496, 4130, 1921, 673, 1393, 7467, 4710, 7162, 5472, 4681, 7052, 7461, 11492, 7050, 1219, 4301, 1372, 586, 1233, 4074, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 11384 (setIndex)
+// Module 11491 (setIndex)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import transitionTo from "transitionTo" /* 1219 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;
-import ack from "ack" /* 5487 */;
-import computeSubtitle from "computeSubtitle" /* 7283 */;
-import _bulkClearRecents from "_bulkClearRecents" /* 11385 */;
+import ack from "ack" /* 7050 */;
+import computeSubtitle from "computeSubtitle" /* 7461 */;
+import _bulkClearRecents from "_bulkClearRecents" /* 11492 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "setIndex" /* 5488 */;
-import closure_6 from "generateOldThreadCutoff" /* 4493 */;
+import closure_5 from "setIndex" /* 7051 */;
+import closure_6 from "generateOldThreadCutoff" /* 4496 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import set from "set" /* 1393 */;
-import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7289 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7467 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4710 */;
 
 require = arg1;
 function setIndex(arg0, index) {
@@ -144,7 +144,7 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   const _require = guildId;
   closure_1 = filterCategoriesByQuery;
   dependencyMap = arg2;
-  let obj = _require(4298);
+  let obj = _require(4301);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1372).DismissibleContent.CHANNEL_BROWSER_NUX);
   const items = [closure_4];
   const items1 = [guildId];

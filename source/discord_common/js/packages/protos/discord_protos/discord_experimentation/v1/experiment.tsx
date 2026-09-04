@@ -1,14 +1,14 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7824
+// Function ID: 7825
 // Name: create
-// Dependencies: [32, 1306, 1335, 1336, 7648, 7649, 2]
+// Dependencies: [32, 1306, 1335, 1336, 7825, 7826, 2]
 
-// Module 7647 (create)
+// Module 7824 (create)
 import _mod1306 from "module_1306" /* 1306 */;
 import now from "now" /* 1335 */;
 import defineProperty from "defineProperty" /* 1336 */;
-import defineProperty2 from "defineProperty" /* 7648 */;
-import create2 from "create" /* 7649 */;
+import defineProperty2 from "defineProperty" /* 7825 */;
+import create2 from "create" /* 7826 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType, MessageType as MessageType2, MessageType as MessageType3, MessageType as MessageType4, MessageType as MessageType5 } from "module_1306" /* 1306 */;
 
@@ -20,7 +20,7 @@ const obj1 = { ENABLED: 0, [0]: "ENABLED", DISABLED: 1, [1]: "DISABLED" };
 const obj2 = { FULL: 0, [0]: "FULL", FORCE_CONTROL: 3, [3]: "FORCE_CONTROL", OVERRIDES_ONLY: 4, [4]: "OVERRIDES_ONLY", OFF: 5, [5]: "OFF" };
 const obj3 = { DEFAULT: 0, [0]: "DEFAULT", HOLDOUT: 1, [1]: "HOLDOUT", NUMBERLINE: 2, [2]: "NUMBERLINE" };
 const obj4 = { CUSTOM_UNIT_PREFIX_UNSPECIFIED: 0, [0]: "CUSTOM_UNIT_PREFIX_UNSPECIFIED", SEO_URL_SLUG: 1, [1]: "SEO_URL_SLUG" };
-const obj5 = { EXPOSURE_POINT_ID_UNSPECIFIED: 0, [0]: "EXPOSURE_POINT_ID_UNSPECIFIED", SEO_INSTALLATION_PAGE_LOAD: 1, [1]: "SEO_INSTALLATION_PAGE_LOAD", MARKETING_INSTALLATION_PAGE_LOAD: 2, [2]: "MARKETING_INSTALLATION_PAGE_LOAD" };
+const obj5 = { EXPOSURE_POINT_ID_UNSPECIFIED: 0, [0]: "EXPOSURE_POINT_ID_UNSPECIFIED", SEO_INSTALLATION_PAGE_LOAD: 1, [1]: "SEO_INSTALLATION_PAGE_LOAD", MARKETING_INSTALLATION_PAGE_LOAD: 2, [2]: "MARKETING_INSTALLATION_PAGE_LOAD", INVITE_GUILD_RESOLVE: 3, [3]: "INVITE_GUILD_RESOLVE" };
 const obj6 = { DEFAULT: 0, [0]: "DEFAULT", OFF: 1, [1]: "OFF", OVERRIDES_ONLY: 2, [2]: "OVERRIDES_ONLY" };
 const obj7 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", CONTROL: 1, [1]: "CONTROL", TREATMENT: 2, [2]: "TREATMENT", OVERRIDE: 3, [3]: "OVERRIDE" };
 const obj8 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ACTIVE: 1, [1]: "ACTIVE", UNUSED: 2, [2]: "UNUSED", BURNED: 3, [3]: "BURNED", PRESERVED: 4, [4]: "PRESERVED" };
@@ -93,7 +93,7 @@ class Experiment$Type extends MessageType {
       kind: "message",
       repeat: 1,
       T() {
-            return callback(7648).Rule;
+            return callback(7825).Rule;
           }
     };
     items[16] = {
@@ -239,7 +239,7 @@ class Experiment$Type extends MessageType {
       name: "lifecycle_plan",
       kind: "message",
       T() {
-            return callback(7649).LifecyclePlan;
+            return callback(7826).LifecyclePlan;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.Experiment", items, T);
@@ -265,10 +265,9 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos) {
   if (arg3 == null) {
     obj = self.create();
   }
-  const sum = pos.pos + arg1;
-  if (pos.pos < sum) {
-    const LifecyclePlan = create2.LifecyclePlan;
-    obj.lifecyclePlan = LifecyclePlan.internalBinaryRead(pos, pos.uint32(), arg2, obj.lifecyclePlan);
+  if (pos.pos < pos.pos + arg1) {
+    [r10019, r10020] = callback(pos.tag(), 2);
+    const tmp3 = callback(pos.tag(), 2);
   }
   return obj;
 };

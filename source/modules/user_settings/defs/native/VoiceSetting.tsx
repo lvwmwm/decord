@@ -1,13 +1,13 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15170
+// Function ID: 15171
 // Name: route
-// Dependencies: [4529, 673, 586, 1233, 11292, 10114, 15087, 2]
+// Dependencies: [4532, 673, 586, 1233, 11400, 9934, 15171, 2]
 
-// Module 15086 (route)
+// Module 15170 (route)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4532 */;
 import ME from "ME" /* 673 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 ({ InputModes: c3, UserSettingsSections } = ME);
@@ -39,7 +39,7 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.VOICE,
   getComponent() {
-    return require(15087) /* KrispLogo */.default;
+    return require(15171) /* KrispLogo */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

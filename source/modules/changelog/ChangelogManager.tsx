@@ -1,14 +1,14 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17245
+// Function ID: 17246
 // Name: prototype
-// Dependencies: [5, 32, 1995, 4492, 5495, 8013, 17160, 706, 11, 17162, 2]
+// Dependencies: [5, 32, 1995, 4495, 7058, 8023, 17246, 706, 11, 17248, 2]
 
-// Module 17159 (prototype)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17245 (prototype)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "handleUserSettingsProtoStoreChange" /* 4492 */;
+import closure_6 from "handleUserSettingsProtoStoreChange" /* 4495 */;
 
 const require = arg1;
 initializeDefault;
@@ -60,7 +60,7 @@ let prototype = function ChangelogManager() {
             dispatchResult2 = 2;
             c5 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = body(8013).fetchChangelogConfig();
+            obj1[0] = body(8023).fetchChangelogConfig();
             return obj1;
           }
         } else if (1 === tmp7) {
@@ -108,10 +108,10 @@ let prototype = function ChangelogManager() {
                 continue;
               }
               return first;
-            })(body, lib(17160).getClientVersionForChangelog());
+            })(body, lib(17246).getClientVersionForChangelog());
             dispatchResult2 = body;
             dispatchResult2 = dependencyMap;
-            const obj23 = lib(17160);
+            const obj23 = lib(17246);
             let obj3 = { type: "CHANGE_LOG_SET_CONFIG", config: null, latestChangelogId: null };
             dispatchResult2 = lib;
             obj3[1] = lib.body;
@@ -153,7 +153,7 @@ let prototype = function ChangelogManager() {
                 dispatchResult2 = 3;
                 c5 = 1;
                 let obj4 = { value: null, done: false };
-                obj4[0] = body(8013).fetchChangelog(dependencyMap, c5.locale);
+                obj4[0] = body(8023).fetchChangelog(dependencyMap, c5.locale);
                 return obj4;
               }
             }
@@ -196,7 +196,7 @@ let prototype = function ChangelogManager() {
                   const _Date2 = Date;
                   const date1 = new Date(dispatchResult2);
                   if (date > date1) {
-                    obj = lib(17162);
+                    obj = lib(17248);
                     obj.openChangelog();
                   }
                   c3 = 0;
@@ -207,7 +207,7 @@ let prototype = function ChangelogManager() {
                 }
               }
             }
-            obj3 = body(8013);
+            obj3 = body(8023);
             obj3.markChangelogAsSeen(dependencyMap, c5.date);
             c3 = 0;
             obj4 = body(706);

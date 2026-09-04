@@ -1,9 +1,9 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7347
+// Function ID: 7348
 // Name: getState
 // Dependencies: [17, 673, 586, 695, 2008, 706, 2]
 
-// Module 7167 (getState)
+// Module 7347 (getState)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initializeDefault from "initialize" /* 586 */;

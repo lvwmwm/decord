@@ -1,15 +1,15 @@
-// Module ID: 14657
-// Function ID: 14658
+// Module ID: 14738
+// Function ID: 14739
 // Name: route
-// Dependencies: [7896, 673, 11292, 1233, 5035, 14658, 2]
+// Dependencies: [7906, 673, 11400, 1233, 5042, 14739, 2]
 
-// Module 14657 (route)
+// Module 14738 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5035 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import createToggle from "createToggle" /* 11292 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5042 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -38,7 +38,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SENSITIVE_MEDIA_FILTERS,
   getComponent() {
-    return require(14658) /* UserSettingsSensitiveContentFilters */.default;
+    return require(14739) /* UserSettingsSensitiveContentFilters */.default;
   }
 };
 const route = createToggle.createRoute(obj);

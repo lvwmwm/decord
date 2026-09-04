@@ -1,13 +1,13 @@
 // Module ID: 1932
 // Function ID: 1933
 // Name: validatePremiumType
-// Dependencies: [1933, 673, 38, 1398, 2]
+// Dependencies: [1933, 673, 38, 1399, 2]
 // Exports: getEnv, getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
 // Module 1932 (validatePremiumType)
 import set from "set" /* 2 */;
 import _modDef38 from "module_38" /* 38 */;
-import hasFlag from "hasFlag" /* 1398 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import Environments2 from "Environments" /* 1933 */;
 import ME from "ME" /* 673 */;
 

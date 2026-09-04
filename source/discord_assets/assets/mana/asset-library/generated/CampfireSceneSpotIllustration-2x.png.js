@@ -1,9 +1,9 @@
-// Module ID: 6396
-// Function ID: 6397
+// Module ID: 5777
+// Function ID: 5778
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6396 (metadata)
+// Module 5777 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CampfireSceneSpotIllustration-2x.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6189
+// Function ID: 6190
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6808 (metadata)
+// Module 6189 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MissionScrollSpotIllustration-2x.png.js");

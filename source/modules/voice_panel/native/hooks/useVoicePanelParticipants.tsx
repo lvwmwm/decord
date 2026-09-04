@@ -1,19 +1,19 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 17005
+// Function ID: 17006
 // Name: getMemoizedParticipant
-// Dependencies: [32, 19, 4494, 1215, 1386, 4554, 4497, 4555, 12069, 673, 16873, 586, 16072, 12068, 12071, 2]
+// Dependencies: [32, 19, 4497, 1215, 1386, 4557, 4500, 4558, 12205, 673, 16959, 586, 16158, 12204, 12207, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 16919 (getMemoizedParticipant)
+// Module 17005 (getMemoizedParticipant)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getParticipants" /* 4494 */;
+import closure_5 from "getParticipants" /* 4497 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "createRTCConnection" /* 4554 */;
-import closure_9 from "updateVoiceState" /* 4497 */;
-import closure_10 from "getVoiceStatesForGuild" /* 4555 */;
-import VoicePanelModes from "VoicePanelModes" /* 12069 */;
+import closure_8 from "createRTCConnection" /* 4557 */;
+import closure_9 from "updateVoiceState" /* 4500 */;
+import closure_10 from "getVoiceStatesForGuild" /* 4558 */;
+import VoicePanelModes from "VoicePanelModes" /* 12205 */;
 import { RTCConnectionStates } from "ME" /* 673 */;
 
 const require = arg1;

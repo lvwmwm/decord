@@ -1,13 +1,13 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11742
+// Function ID: 11743
 // Name: useExperimentAssignment
-// Dependencies: [32, 4391, 1209, 586, 4399, 2]
+// Dependencies: [32, 4394, 1209, 586, 4402, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 11611 (useExperimentAssignment)
-import trackExposureToExperiment from "trackExposureToExperiment" /* 4399 */;
+// Module 11742 (useExperimentAssignment)
+import trackExposureToExperiment from "trackExposureToExperiment" /* 4402 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getHash" /* 4391 */;
+import closure_3 from "getHash" /* 4394 */;
 import closure_4 from "initialize" /* 1209 */;
 
 require = arg1;

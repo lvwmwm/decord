@@ -1,14 +1,14 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12465
+// Function ID: 12466
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1908, 4365, 673, 12299, 586, 4368, 12296, 2]
+// Dependencies: [1908, 4368, 673, 12431, 586, 4371, 12428, 2]
 // Exports: default
 
-// Module 12333 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12296 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12299 */;
+// Module 12465 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12428 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12431 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
 import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
@@ -32,8 +32,8 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   }, items1);
   let tmp6 = tmp3.type !== constants.INACTIVE;
   if (!tmp6) {
-    tmp6 = skuId.skuId === _require(4368).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
-    const tmp7 = skuId.skuId === _require(4368).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    tmp6 = skuId.skuId === _require(4371).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    const tmp7 = skuId.skuId === _require(4371).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
   }
   let tmp8 = tmp6;
   if (!tmp6) {

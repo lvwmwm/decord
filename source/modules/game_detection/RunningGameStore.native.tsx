@@ -1,16 +1,16 @@
-// Module ID: 4501
-// Function ID: 4502
+// Module ID: 4504
+// Function ID: 4505
 // Name: initialize
-// Dependencies: [4502, 4514, 4517, 4528, 586, 706, 2]
+// Dependencies: [4505, 4517, 4520, 4531, 586, 706, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 4501 (initialize)
+// Module 4504 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import DevToolsFocusedPidsTrackMode from "DevToolsFocusedPidsTrackMode" /* 4528 */;
-import closure_2 from "handleLoadMessages" /* 4502 */;
-import closure_3 from "gameFromServer" /* 4514 */;
-import closure_4 from "setLibraryApplications" /* 4517 */;
+import DevToolsFocusedPidsTrackMode from "DevToolsFocusedPidsTrackMode" /* 4531 */;
+import closure_2 from "handleLoadMessages" /* 4505 */;
+import closure_3 from "gameFromServer" /* 4517 */;
+import closure_4 from "setLibraryApplications" /* 4520 */;
 
 require = arg1;
 const Store = initializeDefault.Store;

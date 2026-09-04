@@ -1,22 +1,22 @@
-// Module ID: 5483
-// Function ID: 5484
+// Module ID: 7046
+// Function ID: 7047
 // Name: isChattableChannel
-// Dependencies: [1386, 5234, 1981, 1908, 4120, 5477, 673, 4108, 586, 1398, 5016, 5478, 4125, 1470, 640, 1901, 5484, 2]
+// Dependencies: [1386, 5242, 1981, 1908, 4120, 7041, 673, 4108, 586, 1399, 5023, 7042, 4125, 1394, 640, 1901, 7047, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5483 (isChattableChannel)
+// Module 7046 (isChattableChannel)
 import shallowEqualDefault from "shallowEqual" /* 640 */;
-import hasFlagAll from "hasFlag" /* 1398 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import useCanChannelBeDefault from "useCanChannelBeDefault" /* 5478 */;
+import useCanChannelBeDefault from "useCanChannelBeDefault" /* 7042 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "set" /* 5234 */;
+import closure_5 from "set" /* 5242 */;
 import closure_6 from "comparator" /* 1981 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1981 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4120 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5477 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 7041 */;
 import ME from "ME" /* 673 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 

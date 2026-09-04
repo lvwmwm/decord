@@ -1,12 +1,12 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13726
+// Function ID: 13727
 // Name: canSpectate
-// Dependencies: [4542, 2]
+// Dependencies: [4545, 2]
 // Exports: default
 
-// Module 13693 (canSpectate)
+// Module 13726 (canSpectate)
 import set from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 const Features = DesktopSources.Features;
 const result = set.fileFinishedImporting("modules/go_live/utils/canSpectate.tsx");

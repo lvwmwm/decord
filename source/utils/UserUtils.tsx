@@ -1,13 +1,13 @@
-// Module ID: 4322
-// Function ID: 4323
+// Module ID: 4325
+// Function ID: 4326
 // Name: nameFromUser
-// Dependencies: [4323, 1921, 673, 586, 1233, 2]
+// Dependencies: [4326, 1921, 673, 586, 1233, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4322 (nameFromUser)
+// Module 4325 (nameFromUser)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "initialize" /* 4323 */;
+import closure_2 from "initialize" /* 4326 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 

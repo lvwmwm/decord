@@ -1,10 +1,10 @@
-// Module ID: 6100
-// Function ID: 6101
+// Module ID: 7184
+// Function ID: 7185
 // Name: _safeTransitionTo
-// Dependencies: [5, 1908, 673, 4675, 6101, 1219, 6102, 4859, 1233, 6132, 2500, 6169, 2]
+// Dependencies: [5, 1908, 673, 4682, 7185, 1219, 7186, 4866, 1233, 7216, 2500, 7253, 2]
 // Exports: default
 
-// Module 6100 (_safeTransitionTo)
+// Module 7184 (_safeTransitionTo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import { Routes } from "ME" /* 673 */;

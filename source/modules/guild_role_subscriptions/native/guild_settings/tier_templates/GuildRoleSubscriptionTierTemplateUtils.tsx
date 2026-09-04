@@ -1,10 +1,10 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17707
+// Function ID: 17708
 // Name: getPrivateChannelIconComponent
-// Dependencies: [689, 5032, 5052, 5050, 5040, 5039, 5047, 2]
+// Dependencies: [689, 5039, 5059, 5057, 5047, 5046, 5054, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 17627 (getPrivateChannelIconComponent)
+// Module 17707 (getPrivateChannelIconComponent)
 import set from "set" /* 2 */;
 import set2 from "set" /* 689 */;
 
@@ -12,18 +12,18 @@ const result = set.fileFinishedImporting("modules/guild_role_subscriptions/nativ
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
   if (set2.ChannelTypes.GUILD_TEXT === type) {
-    return tmp(5032).TextLockIcon;
+    return tmp(5039).TextLockIcon;
   } else if (tmp(689).ChannelTypes.GUILD_VOICE === type) {
-    return tmp(5052).VoiceLockIcon;
+    return tmp(5059).VoiceLockIcon;
   } else if (tmp(689).ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return tmp(5050).StageLockIcon;
+    return tmp(5057).StageLockIcon;
   } else if (tmp(689).ChannelTypes.GUILD_FORUM === type) {
-    return tmp(5040).ForumLockIcon;
+    return tmp(5047).ForumLockIcon;
   } else if (tmp(689).ChannelTypes.GUILD_MEDIA === type) {
-    return tmp(5039).ImageLockIcon;
+    return tmp(5046).ImageLockIcon;
   } else if (tmp(689).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return tmp(5047).AnnouncementsLockIcon;
+    return tmp(5054).AnnouncementsLockIcon;
   } else {
-    return tmp(5032).TextLockIcon;
+    return tmp(5039).TextLockIcon;
   }
 };

@@ -1,20 +1,20 @@
-// Module ID: 9754
-// Function ID: 9755
-// Dependencies: [5, 1983, 4121, 1215, 1991, 1908, 9755, 673, 3, 706, 527, 6177, 9762, 5122, 7769, 4714, 500, 1349, 1233, 1219, 5482, 2]
+// Module ID: 8993
+// Function ID: 8994
+// Dependencies: [5, 1983, 4121, 1215, 1991, 1908, 8994, 673, 3, 706, 527, 7261, 9002, 5130, 6925, 4721, 500, 1349, 1233, 1219, 5507, 2]
 
-// Module 9754
+// Module 8993
 import timestampDefault from "timestamp" /* 3 */;
 import encodeProperties from "encodeProperties" /* 500 */;
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef4714 from "module_4714" /* 4714 */;
+import _modDef4721 from "module_4721" /* 4721 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "initialize" /* 1983 */;
 import closure_5 from "initialize" /* 4121 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "trackCommunicationDisabled" /* 1991 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "handleFormInit" /* 9755 */;
+import closure_9 from "handleFormInit" /* 8994 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -236,7 +236,7 @@ let obj = {
     const merged = Object.assign(tmp);
     let toServerGuildProfileResult = profile;
     if (null != profile) {
-      let obj3 = _require(9762);
+      let obj3 = _require(9002);
       toServerGuildProfileResult = obj3.toServerGuildProfile(profile);
     }
     obj.profile = toServerGuildProfileResult;
@@ -246,7 +246,7 @@ let obj = {
     obj(706).dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = store.getPendingOriginalMd5s();
     const obj5 = obj(706);
-    const obj6 = obj(5122);
+    const obj6 = obj(5130);
     const headersForMd5 = obj6.buildHeadersForMd5({ [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash });
     const HTTP = _require(527).HTTP;
     const obj2 = { url: closure_10.GUILD(id), query: obj3, body: obj, headers: headersForMd5, oldFormErrors: true, rejectWithError: null };
@@ -291,7 +291,7 @@ let obj = {
     if (closure_0 === undefined) {
       tmp2 = null;
     }
-    obj = _modDef4714;
+    obj = _modDef4721;
     obj = { url: closure_10.GUILD(id), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { owner_id: id2, code: tmp2 };
     obj[3] = { event: encodeProperties.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP, properties: obj2 };
@@ -304,7 +304,7 @@ let obj = {
     if (arg1 === undefined) {
       flag = false;
     }
-    obj = _modDef4714;
+    obj = _modDef4721;
     obj = { url: closure_10.GUILD_PINCODE(id), oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: encodeProperties.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP_SEND_CODE, properties: obj1 };
     obj[2] = obj;
@@ -444,9 +444,9 @@ let obj = {
               c0 = 0;
               if (closure_1_4.isFullServerPreview(closure_1_0)) {
                 if (closure_1_1 === closure_1_6.getId()) {
-                  const result = closure_1_0(5482).updateImpersonatedRoles(tmp29, dependencyMap);
+                  const result = closure_1_0(5507).updateImpersonatedRoles(tmp29, dependencyMap);
                   c3 = 3;
-                  const obj6 = closure_1_0(5482);
+                  const obj6 = closure_1_0(5507);
                 }
               }
               const HTTP = closure_1_0(527).HTTP;

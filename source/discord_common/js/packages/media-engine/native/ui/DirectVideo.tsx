@@ -1,10 +1,10 @@
-// Module ID: 4584
-// Function ID: 4585
+// Module ID: 4587
+// Function ID: 4588
 // Name: logger
-// Dependencies: [19, 21, 4, 4585, 4586, 2]
+// Dependencies: [19, 21, 4, 4588, 4589, 2]
 // Exports: default
 
-// Module 4584 (logger)
+// Module 4587 (logger)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

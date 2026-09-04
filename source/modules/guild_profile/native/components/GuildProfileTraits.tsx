@@ -1,18 +1,18 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9131
+// Function ID: 9132
 // Name: TraitEmoji
-// Dependencies: [19, 17, 21, 4478, 709, 1430, 4138, 5594, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1431, 4138, 7070, 4477, 2]
 // Exports: default
 
-// Module 9044 (TraitEmoji)
+// Module 9131 (TraitEmoji)
 import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TraitEmoji(emoji) {
@@ -33,7 +33,7 @@ function TraitEmoji(emoji) {
     obj[0] = emojiURL;
     obj[1] = getEmojiUnavailableReasonDefault.isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
     obj[2] = tmp.emojiImage;
-    return callback(tmp5(5594), obj);
+    return callback(tmp5(7070), obj);
   }
 }
 function GuildProfileTraitView(trait) {

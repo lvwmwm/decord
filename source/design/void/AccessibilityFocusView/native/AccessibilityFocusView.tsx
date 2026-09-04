@@ -1,12 +1,12 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14030
+// Function ID: 14031
 // Name: AccessibilityFocusView
-// Dependencies: [19, 21, 13999, 2]
+// Dependencies: [19, 21, 14031, 2]
 // Exports: default
 
-// Module 13998 (AccessibilityFocusView)
+// Module 14030 (AccessibilityFocusView)
 import noopAll from "noop" /* 19 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13999 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 14031 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

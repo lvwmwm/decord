@@ -1,17 +1,17 @@
-// Module ID: 4555
-// Function ID: 4556
+// Module ID: 4558
+// Function ID: 4559
 // Name: getVoiceStatesForGuild
-// Dependencies: [32, 1389, 1934, 1215, 1386, 1991, 1921, 4497, 673, 4322, 4116, 11, 1305, 12, 586, 1911, 706, 2]
+// Dependencies: [32, 1389, 1934, 1215, 1386, 1991, 1921, 4500, 673, 4325, 4116, 11, 1305, 12, 586, 1911, 706, 2]
 // Exports: getComparator, makeMemberAndComparator
 
-// Module 4555 (getVoiceStatesForGuild)
+// Module 4558 (getVoiceStatesForGuild)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
 import version2 from "version" /* 4116 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "initializeFromUserSettings" /* 1389 */;
 import closure_5 from "createdAt" /* 1934 */;
@@ -19,7 +19,7 @@ import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "updateVoiceState" /* 4497 */;
+import closure_10 from "updateVoiceState" /* 4500 */;
 import { ME } from "ME" /* 673 */;
 
 require = arg1;

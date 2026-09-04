@@ -1,13 +1,13 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 9922
+// Function ID: 9923
 // Name: handleAutomaticGainControlChange
-// Dependencies: [4529, 673, 9807, 10103, 586, 2]
+// Dependencies: [4532, 673, 9019, 9923, 586, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10102 (handleAutomaticGainControlChange)
+// Module 9922 (handleAutomaticGainControlChange)
 import initialize from "initialize" /* 586 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9807 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9019 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

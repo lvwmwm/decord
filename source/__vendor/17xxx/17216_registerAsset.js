@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/holidays/assets", scales: [1], hash: "7209f284854b7ea1e5642c91fd2e43d4", name: "snowsgiving_loading_dark", type: "webm" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 1080, height: 2400, scales: [1], hash: "98ba52ca11c0740336b7f6cfc50c1516", name: "sunbeam_gradient_mobile", type: "png" });

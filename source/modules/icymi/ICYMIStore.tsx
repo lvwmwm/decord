@@ -1,32 +1,32 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8265
+// Function ID: 8266
 // Name: filterStaffGuild
-// Dependencies: [32, 8626, 4391, 7281, 1215, 1386, 8635, 1908, 4736, 4120, 4493, 4130, 4702, 8637, 8639, 673, 8648, 684, 8640, 8638, 8051, 8056, 8631, 8649, 6195, 4738, 586, 706, 2]
+// Dependencies: [32, 8266, 4394, 7459, 1215, 1386, 8275, 1908, 4743, 4120, 4496, 4130, 4709, 8277, 8279, 673, 8288, 684, 8280, 8278, 8061, 8066, 8271, 8289, 7279, 4745, 586, 706, 2]
 
-// Module 8625 (filterStaffGuild)
+// Module 8265 (filterStaffGuild)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8638 */;
-import generateHydrationId from "generateHydrationId" /* 8640 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8278 */;
+import generateHydrationId from "generateHydrationId" /* 8280 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "map" /* 8626 */;
-import closure_5 from "getHash" /* 4391 */;
-import scheduledEventSort from "scheduledEventSort" /* 7281 */;
-import closure_9 from "scheduledEventSort" /* 7281 */;
+import closure_4 from "map" /* 8266 */;
+import closure_5 from "getHash" /* 4394 */;
+import scheduledEventSort from "scheduledEventSort" /* 7459 */;
+import closure_9 from "scheduledEventSort" /* 7459 */;
 import closure_10 from "fetchFingerprint" /* 1215 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "initialize" /* 8635 */;
+import closure_12 from "initialize" /* 8275 */;
 import closure_13 from "createGuildRecordFromRust" /* 1908 */;
-import closure_14 from "reinjectEphemerals" /* 4736 */;
+import closure_14 from "reinjectEphemerals" /* 4743 */;
 import closure_15 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_16 from "generateOldThreadCutoff" /* 4493 */;
+import closure_16 from "generateOldThreadCutoff" /* 4496 */;
 import closure_17 from "markAllUserIdListsStale" /* 4130 */;
-import closure_18 from "updateUserGuildSettingsInternal" /* 4702 */;
-import closure_19 from "initialize" /* 8637 */;
-import closure_20 from "initialize" /* 8639 */;
+import closure_18 from "updateUserGuildSettingsInternal" /* 4709 */;
+import closure_19 from "initialize" /* 8277 */;
+import closure_20 from "initialize" /* 8279 */;
 import ME from "ME" /* 673 */;
-import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8648 */;
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8288 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -63,8 +63,8 @@ function injectItemsIntoList(arr, arr2) {
   return found;
 }
 function injectRecommendedGuildsRow() {
-  items1 = items1.filter((type) => type.type !== callback(8638).ICYMIItemTypes.RECOMMENDED_GUILDS);
-  items = items.filter((type) => type.type !== callback(8638).ICYMIItemTypes.RECOMMENDED_GUILDS);
+  items1 = items1.filter((type) => type.type !== callback(8278).ICYMIItemTypes.RECOMMENDED_GUILDS);
+  items = items.filter((type) => type.type !== callback(8278).ICYMIItemTypes.RECOMMENDED_GUILDS);
   if (0 !== length.length) {
     const guildsArray = store2.getGuildsArray();
     const tmp24 = guildsArray.filter((features) => {
@@ -432,9 +432,9 @@ function getNewUnreadItems(arr9, channelId) {
         let tmp7 = null == store3.getReadTimestamp(tmp2.id);
         if (tmp7) {
           let tmp8 = nextResult;
-          let tmp9 = tmp2.type !== tmp3(8638).ICYMIItemTypes.MESSAGE;
+          let tmp9 = tmp2.type !== tmp3(8278).ICYMIItemTypes.MESSAGE;
           if (!tmp9) {
-            let tmp3Result = tmp3(8640);
+            let tmp3Result = tmp3(8280);
             let tmp10 = nextResult;
             let result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
             if (result) {
@@ -456,8 +456,8 @@ function getNewUnreadItems(arr9, channelId) {
   return items;
 }
 function maybeFilterChannelItems(arg0, stateFromStores1) {
-  const obj = _require(8640);
-  if (numberToCustomScoreResult === _require(8640).ICYMICustomScore.MUTED) {
+  const obj = _require(8280);
+  if (numberToCustomScoreResult === _require(8280).ICYMICustomScore.MUTED) {
     _require = arg0;
     closure_27 = closure_27.filter((data) => {
       const isGuildItemResult = callback(closure_1_2[18]).isGuildItem(data);
@@ -506,8 +506,8 @@ function maybeFilterChannelItems(arg0, stateFromStores1) {
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
-  const obj = _require(8640);
-  if (numberToCustomScoreResult === _require(8640).ICYMICustomScore.MUTED) {
+  const obj = _require(8280);
+  if (numberToCustomScoreResult === _require(8280).ICYMICustomScore.MUTED) {
     _require = guildId;
     closure_27 = closure_27.filter((data) => {
       const isGuildItemResult = guildId(closure_1_2[18]).isGuildItem(data);
@@ -1210,7 +1210,7 @@ const iCYMIStore = new ICYMIStore(dispatcherDefault, {
         closure_1_35[content_id.content_id] = true;
       }
     });
-    set.delete(_require(8640).generateHydrationId(startingIndex, endingIndex));
+    set.delete(_require(8280).generateHydrationId(startingIndex, endingIndex));
   },
   LOAD_ICYMI_CUSTOM_SCORES: function handleLoadCustomScores(arg0) {
     const iter = arg0.scores[Symbol.iterator]();

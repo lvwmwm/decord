@@ -1,14 +1,14 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8647
+// Function ID: 8648
 // Name: TrophyIcon
-// Dependencies: [19, 21, 709, 4196, 8058, 2]
+// Dependencies: [19, 21, 709, 4196, 8068, 2]
 // Exports: TrophyIcon
 
-// Module 8862 (TrophyIcon)
+// Module 8647 (TrophyIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8058 */;
+import registerAsset from "registerAsset" /* 8068 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

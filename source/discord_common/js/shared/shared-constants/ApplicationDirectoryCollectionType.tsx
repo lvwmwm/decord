@@ -1,9 +1,9 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 12055
+// Function ID: 12056
 // Name: set
 // Dependencies: [2]
 
-// Module 11924 (set)
+// Module 12055 (set)
 import set from "set" /* 2 */;
 
 const obj = { ALL: null, APPLICATION_DIRECTORY: null, APP_LAUNCHER_IN_TEXT: null, APP_LAUNCHER_IN_VOICE_BANNER: null };

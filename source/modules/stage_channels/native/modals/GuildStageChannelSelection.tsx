@@ -1,15 +1,15 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9746
+// Function ID: 9747
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4130, 1921, 21, 4478, 9699, 4674, 1890, 4445, 9381, 2008, 1233, 4474, 2]
+// Dependencies: [19, 4130, 1921, 21, 4481, 9641, 4681, 1890, 4448, 9355, 2008, 1233, 4477, 2]
 // Exports: default
 
-// Module 9932 (GuildStageChannelSelection)
+// Module 9746 (GuildStageChannelSelection)
 import noopAll from "noop" /* 19 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

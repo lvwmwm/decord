@@ -1,18 +1,18 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 16005
+// Function ID: 16006
 // Name: TypingIndicator
-// Dependencies: [19, 17, 21, 4478, 709, 4413, 1362, 1296, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4416, 1362, 1296, 2]
 // Exports: TypingIndicator
 
-// Module 15919 (TypingIndicator)
+// Module 16005 (TypingIndicator)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4413 */;
+import useThemeDefault from "useTheme" /* 4416 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

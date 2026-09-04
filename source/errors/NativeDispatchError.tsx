@@ -1,11 +1,11 @@
-// Module ID: 4379
-// Function ID: 4380
+// Module ID: 4382
+// Function ID: 4383
 // Name: displayMessage
-// Dependencies: [4380, 1233, 4372, 2]
+// Dependencies: [4383, 1233, 4375, 2]
 
-// Module 4379 (displayMessage)
+// Module 4382 (displayMessage)
 import set from "set" /* 2 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
 
 const DispatchErrorCodes = RPC_SCOPE_CONFIG.DispatchErrorCodes;
 const result = set.fileFinishedImporting("errors/NativeDispatchError.tsx");
@@ -44,12 +44,12 @@ Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
       const code = self.code;
       if (DispatchErrorCodes.DISK_LOW === code) {
         ({ available, required } = self.context);
-        const obj5 = require(4372) /* formatSize */;
-        const formatSizeResult = require(4372) /* formatSize */.formatSize(available, { useKibibytes: true });
-        const obj6 = require(4372) /* formatSize */;
+        const obj5 = require(4375) /* formatSize */;
+        const formatSizeResult = require(4375) /* formatSize */.formatSize(available, { useKibibytes: true });
+        const obj6 = require(4375) /* formatSize */;
         const intl13 = require(1233) /* getSystemLocale */.intl;
         let obj = { required: null, available: null };
-        obj[0] = require(4372) /* formatSize */.formatSize(required, { useKibibytes: true });
+        obj[0] = require(4375) /* formatSize */.formatSize(required, { useKibibytes: true });
         obj[1] = formatSizeResult;
         return intl13.formatToPlainString(require(1233) /* getSystemLocale */.t["2DR5dl"], obj);
       } else if (tmp32.POST_INSTALL_FAILED === code) {

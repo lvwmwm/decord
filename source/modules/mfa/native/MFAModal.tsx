@@ -1,12 +1,12 @@
-// Module ID: 15508
-// Function ID: 15509
+// Module ID: 15590
+// Function ID: 15591
 // Name: MFAModal
-// Dependencies: [5, 19, 17, 21, 7736, 4724, 1233, 15509, 6247, 7776, 5504, 15510, 15511, 15516, 15519, 15520, 15521, 6017, 4859, 2]
+// Dependencies: [5, 19, 17, 21, 6891, 4731, 1233, 15591, 7315, 6932, 5579, 15592, 15593, 15598, 15601, 15602, 15603, 6940, 4866, 2]
 // Exports: openMFAModal
 
-// Module 15508 (MFAModal)
-import _modDef4724 from "module_4724" /* 4724 */;
-import _modDef4859 from "module_4859" /* 4859 */;
+// Module 15590 (MFAModal)
+import _modDef4731 from "module_4731" /* 4731 */;
+import _modDef4866 from "module_4866" /* 4866 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -206,7 +206,7 @@ class MFAModal {
       obj.headerRight = headerRight;
       obj.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15510), {});
+        return callback2(callback(15592), {});
       };
       obj[callback(cancel[7]).MfaScreens.SELECT] = obj;
       obj1 = {};
@@ -236,7 +236,7 @@ class MFAModal {
       obj1.headerRight = tmp12;
       obj1.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15511), {});
+        return callback2(callback(15593), {});
       };
       obj[callback(cancel[7]).MfaScreens.WEBAUTHN] = obj1;
       const obj2 = {};
@@ -266,7 +266,7 @@ class MFAModal {
       obj2.headerRight = tmp20;
       obj2.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15516), {});
+        return callback2(callback(15598), {});
       };
       obj[callback(cancel[7]).MfaScreens.TOTP] = obj2;
       obj3 = {};
@@ -296,7 +296,7 @@ class MFAModal {
       obj3.headerRight = tmp28;
       obj3.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15519), {});
+        return callback2(callback(15601), {});
       };
       obj[callback(cancel[7]).MfaScreens.BACKUP] = obj3;
       const obj4 = {};
@@ -326,7 +326,7 @@ class MFAModal {
       obj4.headerRight = tmp36;
       obj4.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15520), {});
+        return callback2(callback(15602), {});
       };
       obj[callback(cancel[7]).MfaScreens.SMS] = obj4;
       const obj5 = {};
@@ -356,7 +356,7 @@ class MFAModal {
       obj5.headerRight = tmp44;
       obj5.render = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(15521), {});
+        return callback2(callback(15603), {});
       };
       obj[callback(cancel[7]).MfaScreens.PASSWORD] = obj5;
       return obj;
@@ -373,7 +373,7 @@ const result = require("set").fileFinishedImporting("modules/mfa/native/MFAModal
 
 export { MFAModal };
 export const openMFAModal = function openMFAModal(mfaChallenge, finish, cancel) {
-  let arr = _modDef4724;
+  let arr = _modDef4731;
   arr = arr.push(MFAModal, { mfaChallenge, finish, cancel }, MFA_MODAL_KEY);
-  _modDef4859.close();
+  _modDef4866.close();
 };

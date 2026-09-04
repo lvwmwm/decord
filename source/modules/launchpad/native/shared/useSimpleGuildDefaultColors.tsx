@@ -1,12 +1,12 @@
-// Module ID: 16807
-// Function ID: 16808
+// Module ID: 16893
+// Function ID: 16894
 // Name: styles
-// Dependencies: [4478, 709, 2]
+// Dependencies: [4481, 709, 2]
 
-// Module 16807 (styles)
+// Module 16893 (styles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 let obj = { iconBackground: null, iconBackgroundBrand: null, iconStroke: null };
 obj = { color: ThemesDefault.colors.BACKGROUND_MOD_STRONG };

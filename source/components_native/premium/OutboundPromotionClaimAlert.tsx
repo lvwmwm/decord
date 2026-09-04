@@ -1,16 +1,16 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 13485
+// Function ID: 13486
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4478, 709, 13453, 5962, 5982, 13250, 13454, 4474, 1233, 4929, 5990, 13455, 4948, 4190, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 13486, 7102, 7122, 13283, 13487, 4477, 1233, 4936, 7130, 13488, 4955, 4190, 2]
 // Exports: default
 
-// Module 13452 (OutboundPromotionClaimAlert)
+// Module 13485 (OutboundPromotionClaimAlert)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, View: closure_6, Image: error, ScrollView: closure_8 } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 8162
-// Function ID: 8163
+// Module ID: 9223
+// Function ID: 9224
 // Name: _fetchApplicationCommandIndex
-// Dependencies: [5, 673, 706, 527, 684, 695, 1470, 2]
+// Dependencies: [5, 673, 706, 527, 684, 695, 1394, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8162 (_fetchApplicationCommandIndex)
+// Module 9223 (_fetchApplicationCommandIndex)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 673 */;
@@ -60,7 +60,7 @@ function _fetchApplicationCommandIndex() {
                   closure_0 = arg0;
                   c2 = 0;
                   c3 = 0;
-                  return (/* F124991 */ function*() { ... })();
+                  return (/* F125356 */ function*() { ... })();
                 });
                 closure_7 = tmp;
                 const apply = tmp.apply;
@@ -86,8 +86,8 @@ function _fetchApplicationCommandIndex() {
                     if ("application" === type) {
                       channelId = tmp3.applicationId;
                     } else {
-                      lib(1470).assertNever(tmp3);
-                      const obj3 = lib(1470);
+                      lib(1394).assertNever(tmp3);
+                      const obj3 = lib(1394);
                     }
                   }
                 }

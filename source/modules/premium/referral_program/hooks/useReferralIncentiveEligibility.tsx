@@ -1,13 +1,13 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13375
+// Function ID: 13376
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4145, 7977, 13340, 586, 2]
+// Dependencies: [4145, 7987, 13373, 586, 2]
 // Exports: useReferralIncentiveEligibility
 
-// Module 13342 (useReferralIncentiveEligibility)
+// Module 13375 (useReferralIncentiveEligibility)
 import initialize from "initialize" /* 586 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7977 */;
-import apexExperiment from "apexExperiment" /* 13340 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7987 */;
+import apexExperiment from "apexExperiment" /* 13373 */;
 import closure_2 from "reset" /* 4145 */;
 
 require = arg1;
@@ -24,10 +24,10 @@ export const useReferralIncentiveEligibility = function useReferralIncentiveElig
   let tmp8 = true === isEligibleSenderForReferralProgram;
   let isEligibleForIncentive = tmp8;
   if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(13340).ReferralRewardType.ORBS;
+    isEligibleForIncentive = referralRewardType === tmp(13373).ReferralRewardType.ORBS;
   }
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(13340).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(13373).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;

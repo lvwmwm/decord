@@ -1,14 +1,14 @@
-// Module ID: 14400
-// Function ID: 14401
+// Module ID: 14432
+// Function ID: 14433
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4966, 1921, 4380, 502, 8629, 6192, 4974, 9523, 6227, 6198, 9520, 6229, 5982, 2]
+// Dependencies: [5, 4973, 1921, 4383, 502, 8269, 7276, 4981, 9486, 7311, 7282, 9483, 7313, 7122, 2]
 
-// Module 14400 (RPC_LOCAL_SCOPE)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9523 */;
+// Module 14432 (RPC_LOCAL_SCOPE)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9486 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4966 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4973 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
 import sum from "sum" /* 502 */;
 
 const require = arg1;

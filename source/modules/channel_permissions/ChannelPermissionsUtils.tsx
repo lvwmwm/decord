@@ -1,22 +1,22 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9667
+// Function ID: 9668
 // Name: getRoleRowData
-// Dependencies: [1390, 1429, 1985, 1991, 1921, 8691, 673, 1988, 1233, 503, 11, 4322, 1470, 4125, 9726, 1954, 4666, 2]
+// Dependencies: [1390, 1430, 1985, 1991, 1921, 8331, 673, 1988, 1233, 503, 11, 4325, 1394, 4125, 9668, 1954, 4673, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9725 (getRoleRowData)
+// Module 9667 (getRoleRowData)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 503 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import compareGuildRoles from "compareGuildRoles" /* 1988 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import RowType2 from "RowType" /* 8691 */;
-import _updatePermission from "_updatePermission" /* 9726 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import RowType2 from "RowType" /* 8331 */;
+import _updatePermission from "_updatePermission" /* 9668 */;
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
@@ -473,7 +473,7 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
   closure_2 = accessPermissions;
   dependencyMap = arg4;
   const mapped = memberIds.map(currentUser.getUser);
-  const found = mapped.filter(_require(1470).isNotNullish);
+  const found = mapped.filter(_require(1394).isNotNullish);
   return found.filter((id) => {
     id = id.id;
     const currentUser = closure_1_9.getCurrentUser();

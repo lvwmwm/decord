@@ -1,19 +1,19 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16130
+// Function ID: 16131
 // Name: GuildRolesAndChannelsRow
-// Dependencies: [19, 17, 7287, 4493, 10227, 5473, 4703, 21, 4478, 709, 6189, 4298, 1372, 644, 7283, 4724, 11374, 2008, 12177, 12087, 1233, 13821, 2]
+// Dependencies: [19, 17, 7465, 4496, 10047, 7037, 4710, 21, 4481, 709, 7273, 4301, 1372, 644, 7461, 4731, 11481, 2008, 12311, 12223, 1233, 13853, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 16044 (GuildRolesAndChannelsRow)
+// Module 16130 (GuildRolesAndChannelsRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "guildHasCommunity" /* 7287 */;
-import closure_6 from "generateOldThreadCutoff" /* 4493 */;
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5473 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
+import closure_5 from "guildHasCommunity" /* 7465 */;
+import closure_6 from "generateOldThreadCutoff" /* 4496 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7037 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4710 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { container: null, channelInfoContainer: null };
@@ -28,9 +28,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   const selected = guild.selected;
   let id;
   const tmp = callback();
-  const tmp4 = id(6189)(guild);
+  const tmp4 = id(7273)(guild);
   id = guild.id;
-  let obj = guild(4298);
+  let obj = guild(4301);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1372).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   obj1 = guild(644);
   const items = [closure_6];
@@ -43,9 +43,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
     obj = { guildId: id };
     obj.pushLazy(guild(closure_1_2[17])(closure_1_2[16], closure_1_2.paths), obj, closure_1_7);
   }, items2);
-  let SELECTED = guild(12177).ChannelModes.DEFAULT;
+  let SELECTED = guild(12311).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(12177).ChannelModes.SELECTED;
+    SELECTED = tmp5(12311).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -58,7 +58,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   if (tmp10) {
     obj = { style: null, children: null };
     obj[0] = tmp.channelInfoContainer;
-    obj[1] = jsx(tmp5(12087).NewBadge, {});
+    obj[1] = jsx(tmp5(12223).NewBadge, {});
     tmp11 = <View style={null}>{null}</View>;
   }
   obj = { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null };
@@ -83,9 +83,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   } else {
     string2Result = string2(t2.et6wav);
   }
-  obj[6] = jsx(guild(12177).BaseChannelName, { name: string2Result, mode: SELECTED });
-  obj1 = { mode: SELECTED, IconComponent: tmp5(13821).ChannelListMagnifyingGlassIcon };
-  obj[7] = jsx(guild(12177).BaseChannelIcon, { mode: SELECTED, IconComponent: tmp5(13821).ChannelListMagnifyingGlassIcon });
+  obj[6] = jsx(guild(12311).BaseChannelName, { name: string2Result, mode: SELECTED });
+  obj1 = { mode: SELECTED, IconComponent: tmp5(13853).ChannelListMagnifyingGlassIcon };
+  obj[7] = jsx(guild(12311).BaseChannelIcon, { mode: SELECTED, IconComponent: tmp5(13853).ChannelListMagnifyingGlassIcon });
   obj[8] = tmp11;
-  return jsx(id(12177), { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null });
+  return jsx(id(12311), { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9458
-// Function ID: 9459
+// Module ID: 11693
+// Function ID: 11694
 // Name: getCurrentUserPresenceActivity
 // Dependencies: [2]
 // Exports: default
 
-// Module 9458 (getCurrentUserPresenceActivity)
+// Module 11693 (getCurrentUserPresenceActivity)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getCurrentUserPresenceActivity.tsx");

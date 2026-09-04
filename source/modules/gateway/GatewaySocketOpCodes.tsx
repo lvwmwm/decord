@@ -1,12 +1,12 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 13560
+// Function ID: 13561
 // Name: presenceUpdate
-// Dependencies: [4575, 649, 13528, 11, 2]
+// Dependencies: [4578, 649, 13561, 11, 2]
 
-// Module 13527 (presenceUpdate)
+// Module 13560 (presenceUpdate)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import Opcode from "Opcode" /* 13528 */;
-import closure_3 from "initialize" /* 4575 */;
+import Opcode from "Opcode" /* 13561 */;
+import closure_3 from "initialize" /* 4578 */;
 import { EventEmitter } from "EventEmitter" /* 649 */;
 
 require = arg1;
@@ -115,7 +115,7 @@ prototype["updateGuildSubscriptions"] = function updateGuildSubscriptions(subscr
   if (_require > 0) {
     obj = { subscriptions: null };
     obj[0] = dependencyMap;
-    self.send(_require(13528).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
+    self.send(_require(13561).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
   }
 };
 prototype["callConnect"] = function callConnect(channel_id) {

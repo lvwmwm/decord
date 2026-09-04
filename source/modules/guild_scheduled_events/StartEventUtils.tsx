@@ -1,10 +1,10 @@
-// Module ID: 9926
-// Function ID: 9927
+// Module ID: 9740
+// Function ID: 9741
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1390, 1386, 1908, 1392, 673, 9723, 38, 8696, 9690, 2]
+// Dependencies: [5, 1390, 1386, 1908, 1392, 673, 9665, 38, 8336, 9632, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9926 (createStageChannelForEvent)
+// Module 9740 (createStageChannelForEvent)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1390 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;

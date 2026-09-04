@@ -1,14 +1,14 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13477
+// Function ID: 13478
 // Name: getViewerProductId
-// Dependencies: [19, 7179, 6093, 1923, 7162, 6096, 1234, 6090, 4154, 586, 2]
+// Dependencies: [19, 7358, 7177, 1923, 7342, 7180, 1234, 7174, 4154, 586, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 13444 (getViewerProductId)
-import getPremiumBundledItemsFromProductId from "getPremiumBundledItemsFromProductId" /* 7162 */;
+// Module 13477 (getViewerProductId)
+import getPremiumBundledItemsFromProductId from "getPremiumBundledItemsFromProductId" /* 7342 */;
 import closure_2 from "noop" /* 19 */;
-import { useNativeCheckoutStore } from "context" /* 7179 */;
-import closure_4 from "updateProduct" /* 6093 */;
+import { useNativeCheckoutStore } from "context" /* 7358 */;
+import closure_4 from "updateProduct" /* 7177 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
@@ -19,9 +19,9 @@ function getViewerProductId(subscription) {
     try {
       const productIdFromSubscription = getPremiumBundledItemsFromProductId.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(7162).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(6096).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(6096).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(7342).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(7180).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(7180).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -31,7 +31,7 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(7162);
+        const tmp3Result = tmp3(7342);
       } catch (err) {
         return tmp2;
       }

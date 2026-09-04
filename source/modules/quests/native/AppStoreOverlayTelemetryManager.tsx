@@ -1,14 +1,14 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11429
+// Function ID: 11430
 // Name: handleAppStateUpdate
-// Dependencies: [673, 5495, 1234, 688, 2]
+// Dependencies: [673, 7058, 1234, 688, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 11321 (handleAppStateUpdate)
+// Module 11429 (handleAppStateUpdate)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import set2 from "set" /* 1234 */;
-import initializeDefault from "initialize" /* 5495 */;
+import initializeDefault from "initialize" /* 7058 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c3 = null;

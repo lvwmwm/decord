@@ -1,10 +1,10 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 9664
+// Function ID: 9665
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 673, 1954, 503, 9723, 1362, 1233, 2]
+// Dependencies: [5, 32, 19, 673, 1954, 503, 9665, 1362, 1233, 2]
 // Exports: default
 
-// Module 9722 (useCreateChannelSubmit)
+// Module 9664 (useCreateChannelSubmit)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;

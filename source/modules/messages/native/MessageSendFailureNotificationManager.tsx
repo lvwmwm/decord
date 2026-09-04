@@ -1,20 +1,20 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17736
+// Function ID: 17737
 // Name: handleMessageSendFailure
-// Dependencies: [1980, 4299, 1921, 7167, 673, 13607, 10203, 10205, 9674, 1233, 5495, 2]
+// Dependencies: [1980, 4302, 1921, 7347, 673, 13640, 10023, 10025, 9616, 1233, 7058, 2]
 
-// Module 17656 (handleMessageSendFailure)
+// Module 17736 (handleMessageSendFailure)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import initializeDefault from "initialize" /* 5495 */;
-import NativeModulesDefault from "NativeModules" /* 9674 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10203 */;
-import dispatcherDefault from "dispatcher" /* 10205 */;
+import initializeDefault from "initialize" /* 7058 */;
+import NativeModulesDefault from "NativeModules" /* 9616 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10023 */;
+import dispatcherDefault from "dispatcher" /* 10025 */;
 import closure_3 from "handleConnectionOpen" /* 1980 */;
-import closure_4 from "handleConnectionOpen" /* 4299 */;
+import closure_4 from "handleConnectionOpen" /* 4302 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "getState" /* 7167 */;
+import closure_6 from "getState" /* 7347 */;
 import ME from "ME" /* 673 */;
-import { LocalNotificationTypes } from "LocalNotificationTypes" /* 13607 */;
+import { LocalNotificationTypes } from "LocalNotificationTypes" /* 13640 */;
 
 require = arg1;
 function handleMessageSendFailure(shouldNotify) {

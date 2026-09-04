@@ -1,12 +1,12 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17720
+// Function ID: 17721
 // Name: prototype
-// Dependencies: [4554, 4729, 5495, 2]
+// Dependencies: [4557, 4736, 7058, 2]
 
-// Module 17640 (prototype)
-import initializeDefault from "initialize" /* 5495 */;
-import closure_0 from "createRTCConnection" /* 4554 */;
-import closure_1 from "withEqualityFn" /* 4729 */;
+// Module 17720 (prototype)
+import initializeDefault from "initialize" /* 7058 */;
+import closure_0 from "createRTCConnection" /* 4557 */;
+import closure_1 from "withEqualityFn" /* 4736 */;
 
 initializeDefault;
 let prototype = function VoicePanelManager() {

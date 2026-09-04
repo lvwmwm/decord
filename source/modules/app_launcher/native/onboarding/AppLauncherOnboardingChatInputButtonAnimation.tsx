@@ -1,26 +1,26 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 12174
+// Function ID: 12175
 // Name: EnteringAnimation
-// Dependencies: [19, 17, 4470, 21, 4478, 4934, 709, 4479, 4482, 586, 7627, 11838, 4217, 5953, 12039, 11863, 2]
+// Dependencies: [19, 17, 4473, 21, 4481, 4941, 709, 4482, 4485, 586, 7804, 11969, 4218, 5484, 12175, 11994, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 12038 (EnteringAnimation)
+// Module 12174 (EnteringAnimation)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4479 */;
-import timingNone from "timingNone" /* 4482 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4934 */;
-import playDefault from "play" /* 5953 */;
-import useGradientBottom from "useGradientBottom" /* 7627 */;
-import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 11838 */;
-import _mod11863 from "module_11863" /* 11863 */;
-import _mod12039 from "module_12039" /* 12039 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4482 */;
+import timingNone from "timingNone" /* 4485 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
+import playDefault from "play" /* 5484 */;
+import useGradientBottom from "useGradientBottom" /* 7804 */;
+import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 11969 */;
+import _mod11994 from "module_11994" /* 11994 */;
+import _mod12175 from "module_12175" /* 12175 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -80,17 +80,17 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   obj = { children: null };
   obj = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: null };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
-  obj1 = { collapsable: false, style: tmp.glowLottie, source: _mod12039, autoPlay: !stateFromStores };
+  obj1 = { collapsable: false, style: tmp.glowLottie, source: _mod12175, autoPlay: !stateFromStores };
   const items2 = [callback(playDefault, obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
   items2[1] = callback(closure_3, { collapsable: false, style: items3 });
   items2[2] = callback(closure_3, { collapsable: false, style: tmp.fakeButton });
   obj[4] = items2;
-  const items4 = [callback2(_modDef4217.View, obj), ];
+  const items4 = [callback2(_modDef4218.View, obj), ];
   const obj3 = { collapsable: false, style: tmp.trinketsLottie, source: null, autoPlay: null };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
   const tmp5 = playDefault;
-  obj3[2] = _mod11863;
+  obj3[2] = _mod11994;
   obj3[3] = !stateFromStores;
   items4[1] = callback(playDefault, obj3);
   obj[0] = items4;

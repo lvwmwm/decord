@@ -1,14 +1,14 @@
-// Module ID: 11685
-// Function ID: 11686
-// Dependencies: [5, 8709, 8702, 21, 11683, 706, 4445, 11686, 2008, 8708, 8719, 8703, 4724, 8725, 8743, 2]
+// Module ID: 11815
+// Function ID: 11816
+// Dependencies: [5, 8349, 8342, 21, 11813, 706, 4448, 11816, 2008, 8348, 8359, 8343, 4731, 8365, 8506, 2]
 
-// Module 11685
+// Module 11815
 import dispatcherDefault from "dispatcher" /* 706 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import SafetyHubView from "SafetyHubView" /* 8709 */;
-import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set" /* 8702 */;
+import SafetyHubView from "SafetyHubView" /* 8349 */;
+import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set" /* 8342 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -18,7 +18,7 @@ let obj = {
     obj = dispatcherDefault;
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(11686, dependencyMap.paths), closure_4, obj);
+    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(11816, dependencyMap.paths), closure_4, obj);
   },
   openV2(arg0, onClose) {
     const _require = arg0;
@@ -26,11 +26,11 @@ let obj = {
     obj = dispatcherDefault;
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     if (obj2.isCurrentUserSuspended()) {
-      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(8703).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
+      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(8343).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         const _Math = Math;
         const _Date = Date;
         dependencyMap = Math.floor(Date.now() / 1000);
-        let tmpResult = tmp(4724);
+        let tmpResult = tmp(4731);
         obj = { onClose: null };
         obj[0] = onClose;
         tmpResult.pushLazy(callback(function*() {
@@ -59,7 +59,7 @@ let obj = {
         }), obj, closure_6);
       }
     }
-    tmpResult = tmp(4724);
+    tmpResult = tmp(4731);
     obj = { onClose };
     tmpResult.pushLazy(callback(function*() {
       closure_0 = tmp2;

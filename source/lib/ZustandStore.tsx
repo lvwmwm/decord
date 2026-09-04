@@ -1,10 +1,10 @@
-// Module ID: 4344
-// Function ID: 4345
+// Module ID: 4347
+// Function ID: 4348
 // Name: defaultStatesAreEqual
-// Dependencies: [697, 4345, 702, 2]
+// Dependencies: [697, 4348, 702, 2]
 // Exports: createZustandStore
 
-// Module 4344 (defaultStatesAreEqual)
+// Module 4347 (defaultStatesAreEqual)
 import set from "set" /* 2 */;
 
 function defaultStatesAreEqual(arg0, arg1) {
@@ -15,7 +15,7 @@ const result = set.fileFinishedImporting("lib/ZustandStore.tsx");
 export const createZustandStore = function createZustandStore(arg0) {
   const _require = arg0;
   let obj = _require(697);
-  dependencyMap = obj.createWithEqualityFn(_require(4345).subscribeWithSelector((arg0, arg1, arg2) => {
+  dependencyMap = obj.createWithEqualityFn(_require(4348).subscribeWithSelector((arg0, arg1, arg2) => {
     let callback = arg0;
     return callback((arg0) => {
       const callback = arg0;

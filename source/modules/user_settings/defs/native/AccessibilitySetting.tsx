@@ -1,16 +1,16 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15250
+// Function ID: 15251
 // Name: items
-// Dependencies: [32, 19, 673, 1383, 21, 1372, 6261, 1296, 1233, 11292, 15167, 15169, 2]
+// Dependencies: [32, 19, 673, 1383, 21, 1372, 7326, 1296, 1233, 11400, 15251, 15253, 2]
 
-// Module 15166 (items)
+// Module 15250 (items)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6261 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7326 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 let items = [require("DismissibleContent").DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
@@ -41,7 +41,7 @@ createToggle = {
     return tmp5;
   },
   usePreNavigationAction() {
-    const tmp = callback(first(6261).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(7326).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;
     items = [tmp[1], first];
@@ -66,7 +66,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return require(15169) /* SettingsAccessibilityScreen */.default;
+    return require(15253) /* SettingsAccessibilityScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

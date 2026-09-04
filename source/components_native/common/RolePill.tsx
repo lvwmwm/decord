@@ -1,16 +1,16 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10878
+// Function ID: 10879
 // Name: RolePill
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4166, 5986, 5990, 4193, 5077, 6006, 4474, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 4166, 7126, 7130, 4193, 5084, 7144, 4477, 2]
 // Exports: default
 
-// Module 10909 (RolePill)
+// Module 10878 (RolePill)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -35,7 +35,7 @@ export default function RolePill(role) {
   let combined;
   const DeveloperMode = role(4166).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(5986);
+  let obj = role(7126);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
@@ -80,8 +80,8 @@ export default function RolePill(role) {
     }
     obj2[2] = guildId;
     obj2[3] = color;
-    let tmp10Result = tmp10(combined(6006), obj2);
-    const tmp15 = combined(6006);
+    let tmp10Result = tmp10(combined(7144), obj2);
+    const tmp15 = combined(7144);
   } else {
     const items = [tmp9.bubble, ];
     if (null != color) {
@@ -105,8 +105,8 @@ export default function RolePill(role) {
     tmp10Result = tmp10(tmp12, obj6);
   }
   items1[1] = tmp10Result;
-  items1[2] = closure_6(role(4474).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(4477).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   obj1[1] = items1;
   obj[4] = closure_7(View, obj1);
-  return closure_6(role(5077).PressableHighlight, obj);
+  return closure_6(role(5084).PressableHighlight, obj);
 };

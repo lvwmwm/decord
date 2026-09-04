@@ -1,24 +1,24 @@
-// Module ID: 10865
-// Function ID: 10866
+// Module ID: 10799
+// Function ID: 10800
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4470, 4519, 7417, 1386, 4569, 4130, 10857, 673, 21, 4478, 709, 4491, 38, 10866, 9093, 4193, 9094, 9077, 7418, 586, 1296, 4474, 4322, 9257, 5962, 8923, 1233, 10867, 4431, 4429, 4929, 1902, 7634, 5025, 8915, 2008, 8924, 10868, 8247, 4958, 7882, 4748, 8944, 8941, 8951, 10870, 9025, 7695, 10871, 5608, 2]
+// Dependencies: [19, 17, 4473, 4522, 7595, 1386, 4572, 4130, 10791, 673, 21, 4481, 709, 4494, 38, 10800, 10801, 4193, 10802, 8972, 7596, 586, 1296, 4477, 4325, 10807, 7102, 8148, 1233, 10827, 4434, 4432, 4936, 1902, 7811, 5032, 8110, 2008, 8149, 10828, 9304, 4965, 7892, 4755, 9105, 10830, 9367, 10838, 9113, 5559, 10839, 5560, 2]
 
-// Module 10865 (UserRowSubLabel)
+// Module 10799 (UserRowSubLabel)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9257 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10807 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "addApplication" /* 4519 */;
-import closure_7 from "initialize" /* 7417 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_6 from "addApplication" /* 4522 */;
+import closure_7 from "initialize" /* 7595 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "sortActivity" /* 4569 */;
+import closure_9 from "sortActivity" /* 4572 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import { UserRowModes } from "UserRowModes" /* 10857 */;
+import { UserRowModes } from "UserRowModes" /* 10791 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function UserRowSubLabel(arg0) {
@@ -42,9 +42,9 @@ function UserRowSubLabel(arg0) {
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4322).getUserTag(user);
-    callback(tmp(4474).Text, obj);
-    const tmpResult = tmp(4322);
+    obj[3] = tmp(4325).getUserTag(user);
+    callback(tmp(4477).Text, obj);
+    const tmpResult = tmp(4325);
   }
   if (null == stateFromStores) {
     obj1 = { style: null };
@@ -66,7 +66,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1296).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4474).Text, obj5);
+    items1[1] = callback(tmp(4477).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;

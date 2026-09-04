@@ -1,17 +1,17 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10760
+// Function ID: 10761
 // Name: GiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4217, 4478, 709, 1492, 4479, 1296, 10827, 10702, 2]
+// Dependencies: [32, 19, 17, 21, 4218, 4481, 709, 1492, 4482, 1296, 10761, 10628, 2]
 // Exports: default
 
-// Module 10826 (GiftBackgroundSelect)
+// Module 10760 (GiftBackgroundSelect)
 import ThemesDefault from "Themes" /* 709 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10702 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10628 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "module_4217" /* 4217 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import importDefaultResult from "module_4218" /* 4218 */;
 
 require = arg1;
 class GiftBackgroundSelect {
@@ -28,7 +28,7 @@ class GiftBackgroundSelect {
     first = tmp2[0];
     closure_0 = first;
     closure_1 = tmp2[1];
-    obj = require("module_4217");
+    obj = require("module_4218");
     sharedValue = obj.useSharedValue(false);
     closure_2 = sharedValue;
     items = [, ];
@@ -37,7 +37,7 @@ class GiftBackgroundSelect {
     effect = closure_4.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
-    obj2 = require("module_4217");
+    obj2 = require("module_4218");
     class N {
       constructor() {
         tmp = closure_0;

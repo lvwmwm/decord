@@ -1,18 +1,18 @@
 // Module ID: 10465
 // Function ID: 10466
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10449, 10453, 10452, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10455, 10363, 10364, 10368]
 
 // Module 10465 (_isNativeReflectConstruct)
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10449 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10455 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeUnitAgoFormatParser = require;
+const NLTimeUnitAgoFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,14 +32,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
-const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
-class ENTimeUnitAgoFormatParser {
+const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
+class NLTimeUnitAgoFormatParser {
   constructor(arg0) {
     self = this;
-    tmp = closure_2(this, ENTimeUnitAgoFormatParser);
+    tmp = closure_2(this, NLTimeUnitAgoFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeUnitAgoFormatParser);
+    obj = closure_4(NLTimeUnitAgoFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -53,7 +53,7 @@ class ENTimeUnitAgoFormatParser {
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
@@ -64,15 +64,11 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference) {
-      const parseDurationResult = ENTimeUnitAgoFormatParser(10449).parseDuration(arg1[1]);
-      let relativeFromReference = null;
-      if (parseDurationResult) {
-        const ParsingComponents = tmp(10453).ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(10452).reverseDuration(parseDurationResult));
-      }
-      return relativeFromReference;
+      const parseDurationResult = NLTimeUnitAgoFormatParser(10455).parseDuration(arg1[1]);
+      const ParsingComponents = NLTimeUnitAgoFormatParser(10364).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, NLTimeUnitAgoFormatParser(10363).reverseDuration(NLTimeUnitAgoFormatParser(10455).parseDuration(arg1[1])));
     }
   }
 ];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(NLTimeUnitAgoFormatParser, items);

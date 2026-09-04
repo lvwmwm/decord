@@ -1,21 +1,21 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 15157
+// Function ID: 15158
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1386, 4114, 15068, 15074, 673, 1393, 4757, 644, 1398, 706, 9723, 6116, 13871, 2]
+// Dependencies: [5, 19, 1386, 4114, 15152, 15158, 673, 1393, 4764, 644, 1399, 706, 9665, 7200, 13903, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 15073 (getUsedTemplateChannelsForGuild)
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6116 */;
-import GuildFeatures2 from "GuildFeatures" /* 13871 */;
+// Module 15157 (getUsedTemplateChannelsForGuild)
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7200 */;
+import GuildFeatures2 from "GuildFeatures" /* 13903 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { useMemo } from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
-import { useEditStateStore } from "AllChannelAccessOptions" /* 15068 */;
-import closure_9 from "initialize" /* 15074 */;
+import { useEditStateStore } from "AllChannelAccessOptions" /* 15152 */;
+import closure_9 from "initialize" /* 15158 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import { ChannelFlags } from "set" /* 1393 */;
-import importDefaultResult from "allSettled" /* 4757 */;
+import importDefaultResult from "allSettled" /* 4764 */;
 
 require = arg1;
 function getUsedTemplateChannelsForGuild(arg0) {

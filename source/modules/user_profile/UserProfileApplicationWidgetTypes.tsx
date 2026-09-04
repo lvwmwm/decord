@@ -1,12 +1,12 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7566
+// Function ID: 7567
 // Name: toSubmission
-// Dependencies: [7377, 2]
+// Dependencies: [7555, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 7388 (toSubmission)
+// Module 7566 (toSubmission)
 import set from "set" /* 2 */;
-import WidgetType from "WidgetType" /* 7377 */;
+import WidgetType from "WidgetType" /* 7555 */;
 
 let ApplicationWidget;
 class ApplicationWidget {

@@ -1,14 +1,14 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5060
+// Function ID: 5061
 // Name: VoiceWarningIcon
-// Dependencies: [19, 21, 709, 4196, 4995, 2]
+// Dependencies: [19, 21, 709, 4196, 5002, 2]
 // Exports: VoiceWarningIcon
 
-// Module 5053 (VoiceWarningIcon)
+// Module 5060 (VoiceWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4995 */;
+import registerAsset from "registerAsset" /* 5002 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

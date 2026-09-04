@@ -1,15 +1,15 @@
-// Module ID: 7926
-// Function ID: 7927
+// Module ID: 7936
+// Function ID: 7937
 // Name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [1386, 1908, 7924, 7925, 7881, 7883, 1233, 4369, 7885, 2]
+// Dependencies: [1386, 1908, 7934, 7935, 7891, 7893, 1233, 4372, 7895, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 7926 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
-import createUserPremiumGuildSubscriptionSystemMessage from "createUserPremiumGuildSubscriptionSystemMessage" /* 7924 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 7925 */;
+// Module 7936 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
+import createUserPremiumGuildSubscriptionSystemMessage from "createUserPremiumGuildSubscriptionSystemMessage" /* 7934 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 7935 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 
@@ -39,7 +39,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         obj[0] = messageAuthorWithProcessedColor.nick;
         obj[1] = tmp16;
         obj[2] = guild.name;
-        let tmp14Result = tmp14(4369);
+        let tmp14Result = tmp14(4372);
         obj[3] = tmp14Result.getTierName(TIER_1);
         obj[4] = tmp13;
         let formatToPartsResult = intl2.formatToParts(tmp14(1233).t.GjNvr7, obj);
@@ -49,7 +49,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         obj1[0] = messageAuthorWithProcessedColor.nick;
         obj1[1] = tmp16;
         obj1[2] = guild.name;
-        tmp14Result = tmp14(4369);
+        tmp14Result = tmp14(4372);
         obj1[3] = tmp14Result.getTierName(TIER_1);
         formatToPartsResult = intl.formatToParts(tmp14(1233).t.oAYAP7, obj1);
       }

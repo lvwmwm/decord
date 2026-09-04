@@ -1,20 +1,20 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17214
+// Function ID: 17215
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [32, 19, 17, 1921, 21, 4478, 709, 6057, 1627, 17129, 586, 4217, 4479, 1233, 2368, 8711, 17130, 4204, 4474, 6017, 17131, 6061, 17127, 4926, 11729, 2]
+// Dependencies: [32, 19, 17, 1921, 21, 4481, 709, 5532, 1627, 17215, 586, 4218, 4482, 1233, 2368, 8351, 17216, 4205, 4477, 6940, 17217, 6534, 17213, 4933, 11860, 2]
 // Exports: default
 
-// Module 17128 (RestrictedHoursLogoutBlockingLayer)
+// Module 17214 (RestrictedHoursLogoutBlockingLayer)
 import ThemesDefault from "Themes" /* 709 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 4926 */;
-import ActivityIndicator from "ActivityIndicator" /* 6057 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17131 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 4933 */;
+import ActivityIndicator from "ActivityIndicator" /* 5532 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17217 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function RestrictedHoursLogoutBlockingLayer(visible) {
@@ -213,18 +213,18 @@ export default function RestrictedHoursModal() {
     if (!tmp4.current) {
       tmp.current = true;
       callback(true);
-      const obj = tmp4(6061);
-      tmp4(6061).logout("restricted_hours").finally(() => {
+      const obj = tmp4(6534);
+      tmp4(6534).logout("restricted_hours").finally(() => {
         if (ref.current) {
           closure_1.current = false;
           callback(false);
         }
       });
-      const logoutResult = tmp4(6061).logout("restricted_hours");
+      const logoutResult = tmp4(6534).logout("restricted_hours");
     }
   }, []);
   importDefault = tmp4;
-  let obj = callback(6017);
+  let obj = callback(6940);
   const items = [callback, tmp4];
   const items1 = [tmp];
   const navigatorScreens = obj.useNavigatorScreens(() => ({
@@ -242,11 +242,11 @@ export default function RestrictedHoursModal() {
       current = tmp4.current;
     }
     if (!current) {
-      const result = callback(17127).closeRestrictedHoursModal();
-      const obj = callback(17127);
+      const result = callback(17213).closeRestrictedHoursModal();
+      const obj = callback(17213);
     }
   }, items1);
   useBackPressHandlerDefault(() => true);
   obj = { screens: navigatorScreens, initialRouteName: constants.MAIN };
-  return callback2(callback(11729).Modal, obj);
+  return callback2(callback(11860).Modal, obj);
 };

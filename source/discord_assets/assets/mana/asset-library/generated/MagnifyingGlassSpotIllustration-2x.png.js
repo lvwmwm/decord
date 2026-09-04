@@ -1,9 +1,9 @@
-// Module ID: 6794
-// Function ID: 6795
+// Module ID: 6175
+// Function ID: 6176
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6794 (metadata)
+// Module 6175 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MagnifyingGlassSpotIllustration-2x.png.js");

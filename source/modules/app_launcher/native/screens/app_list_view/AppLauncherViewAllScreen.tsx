@@ -1,16 +1,16 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 12127
+// Function ID: 12128
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1497, 21, 4478, 709, 11932, 1627, 9067, 11852, 7278, 5077, 1233, 5508, 4474, 1296, 11894, 11857, 11930, 11899, 11902, 11903, 11853, 8448, 2]
+// Dependencies: [19, 17, 1497, 21, 4481, 709, 12063, 1627, 11147, 11983, 7456, 5084, 1233, 5583, 4477, 1296, 12025, 11988, 12061, 12030, 12033, 12034, 11984, 9338, 2]
 // Exports: default
 
-// Module 11991 (DEFAULT_CONTENT_PADDING)
+// Module 12127 (DEFAULT_CONTENT_PADDING)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 const DEFAULT_CONTENT_PADDING = APP_LAUNCHER_BUILT_IN_SECTION_ICON.DEFAULT_CONTENT_PADDING;

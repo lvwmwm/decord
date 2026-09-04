@@ -1,12 +1,12 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 12006
+// Function ID: 12007
 // Name: getSimilarApplications
-// Dependencies: [1400, 586, 706, 2]
+// Dependencies: [1401, 586, 706, 2]
 
-// Module 11875 (getSimilarApplications)
+// Module 12006 (getSimilarApplications)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1400 */;
+import privDefault from "priv" /* 1401 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
 let closure_1 = new privDefault({ max: 20 });

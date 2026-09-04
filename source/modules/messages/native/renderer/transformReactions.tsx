@@ -1,10 +1,10 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 7887
+// Function ID: 7888
 // Name: transformReactions
-// Dependencies: [4138, 1430, 7872, 4132, 7878, 1234, 1205, 2]
+// Dependencies: [4138, 1431, 7882, 4132, 7888, 1234, 1205, 2]
 // Exports: default
 
-// Module 7877 (transformReactions)
+// Module 7887 (transformReactions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/transformReactions.tsx");

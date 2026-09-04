@@ -1,18 +1,18 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9377
+// Function ID: 9378
 // Name: disconnectRemote
-// Dependencies: [5, 4554, 4496, 4495, 673, 695, 706, 4858, 1233, 9809, 9905, 527, 1205, 9906, 9907, 9910, 2]
+// Dependencies: [5, 4557, 4499, 4498, 673, 695, 706, 4865, 1233, 9021, 9378, 527, 1205, 9379, 9380, 9383, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9904 (disconnectRemote)
+// Module 9377 (disconnectRemote)
 import sendRequest from "sendRequest" /* 527 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import snapVolumeToDefault from "snapVolumeToDefault" /* 9809 */;
+import snapVolumeToDefault from "snapVolumeToDefault" /* 9021 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createRTCConnection" /* 4554 */;
-import closure_5 from "handleUpdate" /* 4496 */;
-import closure_6 from "set" /* 4495 */;
+import closure_4 from "createRTCConnection" /* 4557 */;
+import closure_5 from "handleUpdate" /* 4499 */;
+import closure_6 from "set" /* 4498 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -71,7 +71,7 @@ function _disconnectRemote() {
     yield Promise.all(items);
     if (1 === tmp7) {
       c3 = 0;
-      obj1 = v0(4858);
+      obj1 = v0(4865);
       const obj2 = { title: null, body: null };
       const intl = callback(1233).intl;
       obj2[0] = intl.string(callback(1233).t.LNhXcL);

@@ -1,20 +1,20 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16744
+// Function ID: 16745
 // Name: init
-// Dependencies: [4519, 8772, 1386, 673, 8691, 592, 4125, 11424, 12, 586, 706, 2]
+// Dependencies: [4522, 8556, 1386, 673, 8331, 592, 4125, 11542, 12, 586, 706, 2]
 
-// Module 16657 (init)
+// Module 16744 (init)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import Storage2 from "Storage" /* 592 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11424 */;
-import closure_6 from "addApplication" /* 4519 */;
-import closure_7 from "normalizeChannelPropertyForCompare" /* 8772 */;
+import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11542 */;
+import closure_6 from "addApplication" /* 4522 */;
+import closure_7 from "normalizeChannelPropertyForCompare" /* 8556 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import ME from "ME" /* 673 */;
-import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8691 */;
+import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8331 */;
 import { Storage } from "Storage" /* 592 */;
 import set from "set" /* 2 */;
 
@@ -93,7 +93,7 @@ function syncChannelUpdates(id) {
           }
           const obj5 = applyOverwritesAll;
           tmp = null != guildId1 && null == obj[guildId1];
-          closure_4 = obj5.areChannelsLocked(channel, category, obj(11424).getAppChannelBotUserId(channel));
+          closure_4 = obj5.areChannelsLocked(channel, category, obj(11542).getAppChannelBotUserId(channel));
           return true;
         }
       }

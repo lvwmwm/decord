@@ -1,15 +1,15 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 9951
+// Function ID: 9952
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4500, 1215, 673, 4499, 21, 695, 4701, 586, 10132, 10134, 10135, 2]
+// Dependencies: [19, 4503, 1215, 673, 4502, 21, 695, 4708, 586, 9952, 9954, 9955, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10131 (ChannelCallSingleController)
+// Module 9951 (ChannelCallSingleController)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "reset" /* 4500 */;
+import closure_4 from "reset" /* 4503 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -33,7 +33,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10132 : 10134);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 9952 : 9954);
       let obj = { participant: null, channel: null };
       obj[0] = selectedParticipant;
       obj[1] = channel;
@@ -44,7 +44,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     obj = { participant: null, channel: null };
     obj[0] = selectedParticipant;
     obj[1] = channel;
-    return jsx(channel(10135), { participant: null, channel: null });
+    return jsx(channel(9955), { participant: null, channel: null });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

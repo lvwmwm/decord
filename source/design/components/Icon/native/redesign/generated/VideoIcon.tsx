@@ -1,14 +1,14 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10039
+// Function ID: 10040
 // Name: VideoIcon
-// Dependencies: [19, 21, 709, 4196, 10220, 2]
+// Dependencies: [19, 21, 709, 4196, 10040, 2]
 // Exports: VideoIcon
 
-// Module 10219 (VideoIcon)
+// Module 10039 (VideoIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10220 */;
+import registerAsset from "registerAsset" /* 10040 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

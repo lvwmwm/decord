@@ -1,14 +1,14 @@
-// Module ID: 16829
-// Function ID: 16830
-// Dependencies: [19, 17, 21, 4478, 709, 16813, 4474, 1296, 16495, 2]
+// Module ID: 16915
+// Function ID: 16916
+// Dependencies: [19, 17, 21, 4481, 709, 16899, 4477, 1296, 16581, 2]
 
-// Module 16829
+// Module 16915
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 16495 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16813 */;
+import registerAssetDefault from "registerAsset" /* 16581 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16899 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function VoiceOrStageSummaryRow(arg0) {
     let obj3 = { variant: "text-sm/bold", style: null, children: null };
     obj3[1] = { marginLeft: 4 };
     obj3[2] = audienceCount;
-    items4[1] = closure_4(max(4474).Text, obj3);
+    items4[1] = closure_4(max(4477).Text, obj3);
     obj1[1] = items4;
     obj[1] = tmp5(tmp6, obj1);
     tmp8Result = tmp8(tmp6, obj);

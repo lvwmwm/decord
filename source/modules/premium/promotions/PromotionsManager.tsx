@@ -1,16 +1,16 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17389
+// Function ID: 17390
 // Name: _terminate
-// Dependencies: [5, 1995, 1921, 4145, 10700, 1923, 673, 502, 5495, 13248, 4139, 13361, 2]
+// Dependencies: [5, 1995, 1921, 4145, 10594, 1923, 673, 502, 7058, 13281, 4139, 13394, 2]
 
-// Module 17309 (_terminate)
-import initializeDefault from "initialize" /* 5495 */;
-import fetchActivePromotions from "fetchActivePromotions" /* 13248 */;
+// Module 17389 (_terminate)
+import initializeDefault from "initialize" /* 7058 */;
+import fetchActivePromotions from "fetchActivePromotions" /* 13281 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import closure_6 from "reset" /* 4145 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10700 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10594 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import { EntitlementTypes } from "ME" /* 673 */;
 import { SubscriptionTypes } from "sum" /* 502 */;

@@ -1,27 +1,27 @@
-// Module ID: 17448
-// Function ID: 17449
+// Module ID: 17528
+// Function ID: 17529
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1429, 1984, 1921, 9755, 17449, 673, 21, 4478, 5501, 709, 695, 4701, 4474, 1233, 17447, 586, 38, 4125, 1498, 6243, 5504, 5466, 4193, 17446, 4445, 16129, 2008, 4927, 7717, 6001, 5608, 14490, 685, 4929, 17453, 17454, 9754, 17455, 5603, 4916, 4925, 6056, 4946, 6017, 2]
+// Dependencies: [5, 32, 19, 17, 1430, 1984, 1921, 8994, 17529, 673, 21, 4481, 5637, 709, 695, 4708, 4477, 1233, 17527, 586, 38, 4125, 1498, 6565, 5579, 5475, 4193, 17526, 4448, 16215, 2008, 4934, 6547, 5642, 5560, 14522, 685, 4936, 17533, 17534, 8993, 17535, 6921, 4923, 4932, 6979, 4953, 6940, 2]
 // Exports: default
 
-// Module 17448 (RoleCreateScene)
+// Module 17528 (RoleCreateScene)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4946 */;
+import Text from "Text" /* 4477 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "handleFormInit" /* 9755 */;
-import title from "title" /* 17449 */;
+import closure_12 from "handleFormInit" /* 8994 */;
+import title from "title" /* 17529 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function RoleCreateScene() {
@@ -70,7 +70,7 @@ function RoleCreateScene() {
     if (dependencyMap === closure_1_17) {
       const num5 = 0;
     }
-    yield closure_1_1(5466).createRole(closure_1_1.id, c2, num5);
+    yield closure_1_1(5475).createRole(closure_1_1.id, c2, num5);
     if (1 === tmp7) {
       c2 = 0;
       callback(false);
@@ -96,13 +96,13 @@ function RoleCreateScene() {
               tmp3(4193).roleCreatedToast();
               const obj5 = tmp3(4193);
               const tmp13 = tmp3;
-              tmp3(17446).setRoleJustCreated(true);
+              tmp3(17526).setRoleJustCreated(true);
               let STEP_MEMBERS = closure_1_25.STEP_PERMISSIONS;
               const guild2 = obj.getProps().guild;
               tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               const currentUser = closure_1_11.getCurrentUser();
               const tmp23 = closure_1_9(guild2, currentUser);
-              const obj6 = tmp3(17446);
+              const obj6 = tmp3(17526);
               const tmp18 = tmp32;
               obj = { permission: null, user: null, context: null };
               obj[0] = closure_1_20.ADMINISTRATOR;
@@ -122,7 +122,7 @@ function RoleCreateScene() {
               obj[1] = closure_1_26[closure_1_25.STEP_DISPLAY];
               obj[2] = closure_1_26[STEP_MEMBERS];
               const tmp18Result = tmp18(695);
-              const merged = Object.assign(tmp13(4701).collectGuildAnalyticsMetadata(guild.id));
+              const merged = Object.assign(tmp13(4708).collectGuildAnalyticsMetadata(guild.id));
               tmp18Result.track(closure_1_18.USER_FLOW_TRANSITION, obj);
               return false;
             }
@@ -520,5 +520,5 @@ export default function GuildSettingsRoleCreateModal() {
     obj.track(closure_1_18.USER_FLOW_TRANSITION, obj);
   });
   obj = { screens: closure_32, initialRouteName: obj4.STEP_DISPLAY };
-  return callback3(stateFromStores(6017).Navigator, obj);
+  return callback3(stateFromStores(6940).Navigator, obj);
 };

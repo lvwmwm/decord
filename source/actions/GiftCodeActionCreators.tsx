@@ -1,16 +1,16 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 11362
+// Function ID: 11363
 // Name: resolveGiftCode
-// Dependencies: [5, 4519, 7297, 7305, 673, 1923, 706, 4753, 5963, 7296, 4376, 4162, 1205, 527, 8495, 8496, 2]
+// Dependencies: [5, 4522, 7475, 7483, 673, 1923, 706, 4760, 7103, 7474, 4379, 4162, 1205, 527, 11363, 11364, 2]
 // Exports: reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 8494 (resolveGiftCode)
+// Module 11362 (resolveGiftCode)
 import prototypeDefault from "prototype" /* 4162 */;
-import _modDef8495 from "module_8495" /* 8495 */;
+import _modDef11363 from "module_11363" /* 11363 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7297 */;
-import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7305 */;
+import closure_4 from "addApplication" /* 4522 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7475 */;
+import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7483 */;
 import ME from "ME" /* 673 */;
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1923 */;
 
@@ -370,7 +370,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    _modDef8495.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    _modDef11363.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

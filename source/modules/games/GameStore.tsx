@@ -1,13 +1,13 @@
-// Module ID: 4502
-// Function ID: 4503
+// Module ID: 4505
+// Function ID: 4506
 // Name: handleLoadMessages
-// Dependencies: [4503, 586, 1485, 706, 2]
+// Dependencies: [4506, 586, 1485, 706, 2]
 
-// Module 4502 (handleLoadMessages)
+// Module 4505 (handleLoadMessages)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import closure_2 from "getOfficialApplicationId" /* 4503 */;
+import closure_2 from "getOfficialApplicationId" /* 4506 */;
 import set from "set" /* 2 */;
 
 function handleLoadMessages(messages) {

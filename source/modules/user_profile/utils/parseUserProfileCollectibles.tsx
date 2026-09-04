@@ -1,10 +1,10 @@
-// Module ID: 7390
-// Function ID: 7391
+// Module ID: 7568
+// Function ID: 7569
 // Name: parseUserProfileCollectibles
 // Dependencies: [1949, 2]
 // Exports: default
 
-// Module 7390 (parseUserProfileCollectibles)
+// Module 7568 (parseUserProfileCollectibles)
 import set from "set" /* 2 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 
@@ -18,7 +18,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles = collectibles.collectibles;
   }
   if (null == collectibles) {
-    return { collectibles: "Array", profileEffect: "HermesInternal", profileFrame: "r" };
+    return { collectibles: "ip", profileEffect: "isArray", profileFrame: "isArray" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

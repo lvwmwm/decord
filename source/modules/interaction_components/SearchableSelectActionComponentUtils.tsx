@@ -1,18 +1,18 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8051
+// Function ID: 8052
 // Name: MIN_REREQUEST_TIME
-// Dependencies: [1386, 1991, 1984, 1908, 4130, 1921, 8034, 1954, 5394, 4673, 4746, 4674, 8042, 1470, 2]
+// Dependencies: [1386, 1991, 1984, 1908, 4130, 1921, 8044, 1954, 5402, 4680, 4753, 4681, 8052, 1394, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8041 (MIN_REREQUEST_TIME)
-import NOOPDefault from "NOOP" /* 5394 */;
+// Module 8051 (MIN_REREQUEST_TIME)
+import NOOPDefault from "NOOP" /* 5402 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "getInteractionComponentStates" /* 8034 */;
+import closure_9 from "getInteractionComponentStates" /* 8044 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/interaction_components/SearchableSelectActionComponentUtils.tsx");
@@ -25,7 +25,7 @@ export const queryMentionables = function queryMentionables(type, arg1, channelI
     return [];
   } else {
     const tmp2 = type === _require(1954).ComponentType.USER_SELECT || type === _require(1954).ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(5394);
+    let obj = channel(5402);
     obj = { query: null, channel: null, canMentionEveryone: false, canMentionHere: false, canMentionUsers: null, canMentionRoles: null, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     obj[0] = arg1;
     obj[1] = channel;
@@ -63,7 +63,7 @@ export const queryChannels = function queryChannels(arg0, arg1, arg2) {
     obj[2] = arg2;
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {
-      const obj = { type: callback(4746).SelectOptionType.CHANNEL, value: id.id, label: callback(4674).computeChannelName(id, closure_8, closure_7) };
+      const obj = { type: callback(4753).SelectOptionType.CHANNEL, value: id.id, label: callback(4681).computeChannelName(id, closure_8, closure_7) };
       return obj;
     });
   }
@@ -145,7 +145,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
         }
       }
     });
-    let found = mapped.filter(tmp2(1470).isNotNullish);
+    let found = mapped.filter(tmp2(1394).isNotNullish);
   }
   let type;
   if (interactionComponentState != null) {
@@ -246,6 +246,6 @@ export const getSnowflakeSelectDefaultValues = function getSnowflakeSelectDefaul
         }
       }
     });
-    return mapped.filter(items(1470).isNotNullish);
+    return mapped.filter(items(1394).isNotNullish);
   }
 };

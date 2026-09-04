@@ -1,11 +1,11 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16248
+// Function ID: 16249
 // Name: styles
-// Dependencies: [4478, 2]
+// Dependencies: [4481, 2]
 
-// Module 16162 (styles)
+// Module 16248 (styles)
 import set from "set" /* 2 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const styles = createCacheKey.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });
 const result = set.fileFinishedImporting("modules/home_drawer/native/subtitles/useSubtitleStyles.tsx");

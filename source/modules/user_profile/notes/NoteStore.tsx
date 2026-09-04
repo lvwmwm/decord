@@ -1,13 +1,13 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12985
+// Function ID: 12986
 // Name: getNote
-// Dependencies: [1426, 1909, 1912, 2]
+// Dependencies: [1427, 1909, 1912, 2]
 
-// Module 12720 (getNote)
+// Module 12985 (getNote)
 import set2 from "set" /* 2 */;
 import identity from "identity" /* 1909 */;
 import items from "items" /* 1912 */;
-import isValueEqual from "isValueEqual" /* 1426 */;
+import isValueEqual from "isValueEqual" /* 1427 */;
 
 ({ TypeTag, constructInPlace: c0 } = isValueEqual);
 const LibdiscoreStore = identity.LibdiscoreStore;

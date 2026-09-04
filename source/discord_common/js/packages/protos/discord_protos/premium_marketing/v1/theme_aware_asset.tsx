@@ -1,9 +1,9 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 10609
+// Function ID: 10610
 // Name: create
 // Dependencies: [32, 1306, 2]
 
-// Module 8476 (create)
+// Module 10609 (create)
 import _mod1306 from "module_1306" /* 1306 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;

@@ -1,17 +1,17 @@
-// Module ID: 5615
-// Function ID: 5616
+// Module ID: 5567
+// Function ID: 5568
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4478, 709, 4931, 5616, 2]
+// Dependencies: [19, 21, 4481, 709, 4938, 5568, 2]
 // Exports: TableRowArrow
 
-// Module 5615 (TableRowArrow)
+// Module 5567 (TableRowArrow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import IconSizes from "IconSizes" /* 4931 */;
-import IconSizesDefault from "IconSizes" /* 4931 */;
-import registerAssetDefault from "registerAsset" /* 5616 */;
+import IconSizes from "IconSizes" /* 4938 */;
+import IconSizesDefault from "IconSizes" /* 4938 */;
+import registerAssetDefault from "registerAsset" /* 5568 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

@@ -1,9 +1,9 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12384
+// Function ID: 12385
 // Name: QUARANTINE_APPEAL_LINK
 // Dependencies: [2]
 
-// Module 12252 (QUARANTINE_APPEAL_LINK)
+// Module 12384 (QUARANTINE_APPEAL_LINK)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quarantine/QuarantineConstants.tsx");

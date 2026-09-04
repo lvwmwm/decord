@@ -1,10 +1,10 @@
-// Module ID: 6155
-// Function ID: 6156
+// Module ID: 7239
+// Function ID: 7240
 // Name: resolveGoreSettingWithDefaults
 // Dependencies: [19, 1921, 673, 1305, 4172, 4179, 4166, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 6155 (resolveGoreSettingWithDefaults)
+// Module 7239 (resolveGoreSettingWithDefaults)
 import create from "create" /* 1305 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;

@@ -1,26 +1,26 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17548
+// Function ID: 17549
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 17450, 17452, 17449, 502, 21, 4478, 709, 4413, 4958, 17469, 1233, 7853, 5631, 5630, 4445, 8798, 1987, 7882, 13188, 4474, 2400, 2]
+// Dependencies: [17, 17530, 17532, 17529, 502, 21, 4481, 709, 4416, 4965, 17549, 1233, 7863, 7090, 7089, 4448, 8582, 1987, 7892, 13221, 4477, 2400, 2]
 // Exports: default
 
-// Module 17468 (EnhancedRoleColorsSelectStyleModal)
+// Module 17548 (EnhancedRoleColorsSelectStyleModal)
 import set from "set" /* 2 */;
 import sum from "sum" /* 502 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4958 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
-import setOptionsDefault from "setOptions" /* 7853 */;
-import title from "title" /* 17449 */;
-import handleSetSection from "handleSetSection" /* 17450 */;
-import HOLOGRAPHIC_ROLE_COLORS2 from "HOLOGRAPHIC_ROLE_COLORS" /* 17452 */;
-import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 17469 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4965 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
+import setOptionsDefault from "setOptions" /* 7863 */;
+import title from "title" /* 17529 */;
+import handleSetSection from "handleSetSection" /* 17530 */;
+import HOLOGRAPHIC_ROLE_COLORS2 from "HOLOGRAPHIC_ROLE_COLORS" /* 17532 */;
+import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 17549 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 ({ Pressable: c3, View: c4 } = get_ActivityIndicator);
 const RoleColorsStyle = handleSetSection.RoleColorsStyle;
@@ -106,7 +106,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
           disabled: tmp,
           onPress() {
             closure_1_1(id.id);
-            closure_2_1(4445).hideActionSheet();
+            closure_2_1(4448).hideActionSheet();
           },
           children: null
         };
@@ -120,9 +120,9 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             message.message.roleColor = undefined;
             const result = closure_2_0(1987).extractColorStringsFromServerColors(id.colors);
             const obj = closure_2_0(1987);
-            message.message.roleColors = closure_2_0(7882).processColorStrings(result);
+            message.message.roleColors = closure_2_0(7892).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = closure_2_1(13188);
+            message.message.avatarURL = closure_2_1(13221);
           }
         };
         const items1 = [closure_1_9(closure_1_1(button[16]), obj), ];
@@ -150,14 +150,14 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
     obj6[0] = items1;
     const intl4 = tmp4(1233).intl;
     obj6[2] = intl4.string(tmp(2400)["+/IHLl"]);
-    obj5[0] = tmp7(tmp4(4474).Text, obj6);
+    obj5[0] = tmp7(tmp4(4477).Text, obj6);
     obj4[2] = intl3.format(tmp(2400).VpEDJc, obj5);
-    const items2 = [tmp7(tmp4(4474).Text, obj4), ];
+    const items2 = [tmp7(tmp4(4477).Text, obj4), ];
     const obj7 = { style: null, variant: "text-sm/normal", children: null };
     obj7[0] = tmp3.upsellText;
     const intl5 = tmp4(1233).intl;
     obj7[2] = intl5.string(tmp(2400).FJZeZF);
-    items2[1] = tmp7(tmp4(4474).Text, obj7);
+    items2[1] = tmp7(tmp4(4477).Text, obj7);
     obj3[1] = items2;
     tmp8Result = tmp8(tmp9, obj3);
   }

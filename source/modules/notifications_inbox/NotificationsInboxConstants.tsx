@@ -1,10 +1,10 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8092
+// Function ID: 8093
 // Name: ANALYTICS_NAME
-// Dependencies: [673, 684, 1233, 1425, 2]
+// Dependencies: [673, 684, 1233, 1426, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8082 (ANALYTICS_NAME)
+// Module 8092 (ANALYTICS_NAME)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import setDefault from "set" /* 684 */;
@@ -41,9 +41,9 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     const intl = getSystemLocale.intl;
     stringResult = intl.string(getSystemLocale.t.HcoRu0);
   }
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "patch" };
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "none" };
   obj[4] = [];
-  return tmp2(1425).fromGuildBasic(obj);
+  return tmp2(1426).fromGuildBasic(obj);
 };
 export const MessageCategory = obj;
 export const InboxFilters = obj;

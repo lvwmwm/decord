@@ -1,12 +1,12 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 16693
+// Function ID: 16694
 // Name: ContactSuggestionRow
-// Dependencies: [19, 4470, 673, 21, 4322, 4217, 1233, 644, 15882, 15881, 10865, 16280, 16281, 695, 2]
+// Dependencies: [19, 4473, 673, 21, 4325, 4218, 1233, 644, 15968, 15967, 10799, 16366, 16367, 695, 2]
 // Exports: ContactSuggestionRow
 
-// Module 16606 (ContactSuggestionRow)
+// Module 16693 (ContactSuggestionRow)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

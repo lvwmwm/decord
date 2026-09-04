@@ -1,12 +1,12 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9621
+// Function ID: 9622
 // Name: useCanShowTooltip
-// Dependencies: [19, 9680, 586, 9681, 2]
+// Dependencies: [19, 9622, 586, 9623, 2]
 // Exports: useCanShowTooltip
 
-// Module 9679 (useCanShowTooltip)
+// Module 9621 (useCanShowTooltip)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "set" /* 9680 */;
+import closure_4 from "set" /* 9622 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/tooltip/useCanShowTooltip.tsx");

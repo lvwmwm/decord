@@ -1,16 +1,16 @@
-// Module ID: 14643
-// Function ID: 14644
+// Module ID: 14724
+// Function ID: 14725
 // Name: route
-// Dependencies: [19, 14549, 1921, 7896, 673, 4858, 1233, 6065, 586, 11292, 14552, 2]
+// Dependencies: [19, 14581, 1921, 7906, 673, 4865, 1233, 6538, 586, 11400, 14584, 2]
 
-// Module 14643 (route)
+// Module 14724 (route)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6065 */;
+import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6538 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "hasFetchedCredentials" /* 14549 */;
+import closure_4 from "hasFetchedCredentials" /* 14581 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -30,7 +30,7 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4858);
+        let obj = callback2(4865);
         obj = { title: null, body: null };
         const intl = callback(1233).intl;
         obj[0] = intl.string(callback(1233).t.v740sh);
@@ -58,7 +58,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(14552) /* UserSettingsWebAuthn */.default;
+    return require(14584) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

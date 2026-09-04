@@ -1,30 +1,30 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 8774
+// Function ID: 8775
 // Name: PurchasedAssetOverlay
-// Dependencies: [32, 19, 17, 675, 21, 8906, 709, 4478, 9886, 5049, 7308, 1949, 8510, 8523, 5502, 10976, 676, 10975, 8536, 8525, 10973, 11006, 4326, 4197, 8907, 2]
+// Dependencies: [32, 19, 17, 675, 21, 8694, 709, 4481, 8725, 5056, 7486, 1949, 8102, 8727, 5542, 8775, 676, 8776, 8740, 8729, 8752, 8754, 4329, 4197, 8695, 2]
 
-// Module 12858 (PurchasedAssetOverlay)
+// Module 8774 (PurchasedAssetOverlay)
 import ThemesDefault from "Themes" /* 709 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 import map from "map" /* 4197 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
-import LockIcon from "LockIcon" /* 5049 */;
-import preloadDefault from "preload" /* 5502 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7308 */;
-import BundleStaticPreviewContentDefault from "BundleStaticPreviewContent" /* 8523 */;
-import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8525 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8536 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8907 */;
-import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9886 */;
-import filterLayerDefault from "filterLayer" /* 10973 */;
-import metadataDefault from "metadata" /* 10976 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 11006 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
+import LockIcon from "LockIcon" /* 5056 */;
+import preloadDefault from "preload" /* 5542 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7486 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8695 */;
+import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 8725 */;
+import BundleStaticPreviewContentDefault from "BundleStaticPreviewContent" /* 8727 */;
+import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8729 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8740 */;
+import filterLayerDefault from "filterLayer" /* 8752 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8754 */;
+import metadataDefault from "metadata" /* 8775 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items" /* 675 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function PurchasedAssetOverlay() {
@@ -76,7 +76,7 @@ function ProductPreviewInner(arg0) {
   ({ product, cardWidth } = arg0);
   ({ disableBundleStaticBackground, muteBundleStaticBackground } = arg0);
   const tmp = callback3();
-  let obj = cardWidth(8510);
+  let obj = cardWidth(8102);
   const shopProductItems = obj.useShopProductItems(product);
   const items = [cardWidth];
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
@@ -109,9 +109,9 @@ function ProductPreviewInner(arg0) {
     if (ALL.has(product.skuId)) {
       const obj2 = { skuId: null, width: null, height: null };
       obj2[0] = product.skuId;
-      obj2[1] = tmp2(10975).FRACTIONAL_NITRO_COIN_SIZE.CARD;
-      obj2[2] = tmp2(10975).FRACTIONAL_NITRO_COIN_SIZE.CARD;
-      return callback2(tmp2(10975).FractionalNitroCoinIllustration, obj2);
+      obj2[1] = tmp2(8776).FRACTIONAL_NITRO_COIN_SIZE.CARD;
+      obj2[2] = tmp2(8776).FRACTIONAL_NITRO_COIN_SIZE.CARD;
+      return callback2(tmp2(8776).FractionalNitroCoinIllustration, obj2);
     } else {
       const first = callback(product.items, 1)[0];
       let type;
@@ -134,7 +134,7 @@ function ProductPreviewInner(arg0) {
         obj6[0] = tmp.profileFrameContainer;
         const obj7 = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
         obj7[0] = first;
-        obj7[1] = tmp2(8906).COLLECTIBLES_SHOP_CARD_WIDTH - ThemesDefault.space.PX_32;
+        obj7[1] = tmp2(8694).COLLECTIBLES_SHOP_CARD_WIDTH - ThemesDefault.space.PX_32;
         obj7[2] = closure_9;
         obj7[3] = ThemesDefault.colors.BACKGROUND_BASE_LOW;
         obj6[1] = callback2(filterLayerDefault, obj7);

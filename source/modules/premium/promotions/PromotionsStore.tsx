@@ -1,15 +1,15 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 10594
+// Function ID: 10595
 // Name: createEmptyPromotionsByType
-// Dependencies: [1339, 8462, 1921, 8463, 8493, 586, 10701, 706, 2]
+// Dependencies: [1339, 10595, 1921, 10596, 10626, 586, 10627, 706, 2]
 
-// Module 10700 (createEmptyPromotionsByType)
+// Module 10594 (createEmptyPromotionsByType)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "createFromServer" /* 8462 */;
+import closure_4 from "createFromServer" /* 10595 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "createFromServer" /* 8463 */;
+import closure_6 from "createFromServer" /* 10596 */;
 
 const require = arg1;
 function createEmptyPromotionsByType() {
@@ -17,7 +17,7 @@ function createEmptyPromotionsByType() {
 }
 function getLatestActiveOutboundPromotionStartDate() {
   let startDate = null;
-  const values = Object.values(dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  const values = Object.values(dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
   for (const item10019 of values) {
     let tmp3 = item10019;
     let tmp4 = startDate;
@@ -82,13 +82,13 @@ prototype["initialize"] = function initialize(arg0) {
 };
 Object.defineProperty(prototype, "outboundPromotions", {
   get: function outboundPromotions() {
-    return Object.values(dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    return Object.values(dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "outboundRecurringPromotions", {
   get: function outboundRecurringPromotions() {
-    return Object.values(dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    return Object.values(dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   },
   set: undefined
 });
@@ -188,7 +188,7 @@ prototype["getMarketingComponentByType"] = function getMarketingComponentByType(
     if (items == null) {
       items = [];
     }
-    return date(10701)(items, date, (isIncludedInRollout) => {
+    return date(10627)(items, date, (isIncludedInRollout) => {
       let isIncludedInRolloutResult = null != closure_0;
       if (isIncludedInRolloutResult) {
         isIncludedInRolloutResult = isIncludedInRollout.isIncludedInRollout(tmp.id, date);
@@ -207,14 +207,14 @@ prototype["hasPromotion"] = function hasPromotion(closure_0) {
 prototype["getPromotionsByPartner"] = function getPromotionsByPartner(arg0) {
   const _require = arg0;
   const obj = { oneTime: null, recurring: null };
-  let values = Object.values(dependencyMap[_require(undefined, 8493).PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  let values = Object.values(dependencyMap[_require(undefined, 10626).PromotionTypes.THIRD_PARTY_OUTBOUND]);
   obj[0] = values.filter((partnerId) => partnerId.partnerId === closure_0);
-  values = Object.values(dependencyMap[_require(undefined, 8493).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+  values = Object.values(dependencyMap[_require(undefined, 10626).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   obj[1] = values.filter((partnerId) => partnerId.partnerId === closure_0);
   return obj;
 };
 prototype["getGiftPromotion"] = function getGiftPromotion() {
-  const tmp = dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.GIFT_PROMOTION];
+  const tmp = dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.GIFT_PROMOTION];
   const keys = Object.keys(tmp);
   let tmp2 = null;
   if (0 !== keys.length) {
@@ -234,7 +234,7 @@ prototype["getGiftPromotionRewardSkuIds"] = function getGiftPromotionRewardSkuId
   return rewardSkuIds;
 };
 prototype["getMarketingMomentPromotion"] = function getMarketingMomentPromotion() {
-  const tmp = dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT];
+  const tmp = dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT];
   const keys = Object.keys(tmp);
   if (0 === keys.length) {
     return null;
@@ -261,7 +261,7 @@ prototype["getMarketingMomentRewardSkuIds"] = function getMarketingMomentRewardS
 };
 prototype["getActiveBogoRewardPromotion"] = function getActiveBogoRewardPromotion() {
   const date = new Date();
-  const values = Object.values(dependencyMap[date(undefined, 8493).PromotionTypes.MARKETING_MOMENT]);
+  const values = Object.values(dependencyMap[date(undefined, 10626).PromotionTypes.MARKETING_MOMENT]);
   let found = values.find((hasBogoReward) => {
     hasBogoReward = hasBogoReward.hasBogoReward;
     if (hasBogoReward) {
@@ -359,7 +359,7 @@ const promotionsStore = new PromotionsStore(dispatcherDefault, {
     c10 = false;
   },
   OUTBOUND_PROMOTION_NOTICE_DISMISS: function handleDismissOutboundPromotionNotice() {
-    if (0 === Object.values(dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
@@ -369,7 +369,7 @@ const promotionsStore = new PromotionsStore(dispatcherDefault, {
     }
   },
   OUTBOUND_PROMOTIONS_SEEN: function handleOutboundPromotionsSeen() {
-    if (0 === Object.values(dependencyMap[require(undefined, 8493) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 10626) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();

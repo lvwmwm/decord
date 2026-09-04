@@ -1,17 +1,17 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 17519
+// Function ID: 17520
 // Name: getDerivedStateFromProps
-// Dependencies: [19, 17, 9755, 673, 21, 4478, 709, 17400, 17440, 5236, 1430, 1362, 6001, 5608, 6002, 1233, 9754, 4859, 4948, 4197, 1498, 586, 4413, 5504, 6247, 6255, 1994, 8376, 4927, 4474, 5948, 2]
+// Dependencies: [19, 17, 8994, 673, 21, 4481, 709, 17480, 17520, 5244, 1431, 1362, 5642, 5560, 7141, 1233, 8993, 4866, 4955, 4197, 1498, 586, 4416, 5579, 7315, 7320, 1994, 8523, 4934, 4477, 6980, 2]
 // Exports: default
 
-// Module 17439 (getDerivedStateFromProps)
+// Module 17519 (getDerivedStateFromProps)
 import ThemesDefault from "Themes" /* 709 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 9755 */;
+import closure_6 from "handleFormInit" /* 8994 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 let require = arg1;
@@ -94,17 +94,17 @@ IntegrationItem.prototype["render"] = function render() {
   const props = this.props;
   const integration = props.integration;
   ({ onPress: importDefault, styles } = props);
-  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(17400).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
+  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(17480).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(17440).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(17520).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(17440).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(17520).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       let str = "twitch.tv/";
       combined = "twitch.tv/" + integration.name;
@@ -143,7 +143,7 @@ IntegrationItem.prototype["render"] = function render() {
         }
         return enabled;
       };
-      const items = [closure_11(tmp(5608).TableRow, obj), ];
+      const items = [closure_11(tmp(5560).TableRow, obj), ];
       const obj2 = { value: null, disabled: null, onValueChange: null, label: null };
       const _Boolean = Boolean;
       obj2[0] = Boolean(self.state.enabled);
@@ -151,11 +151,11 @@ IntegrationItem.prototype["render"] = function render() {
       obj2[2] = self.handleToggleEnabled;
       const intl = tmp(1233).intl;
       obj2[3] = intl.string(tmp(1233).t.vQC6vR);
-      items[1] = closure_11(tmp(6002).TableSwitchRow, obj2);
+      items[1] = closure_11(tmp(7141).TableSwitchRow, obj2);
       obj1[1] = items;
-      return closure_12(tmp(6001).TableRowGroup, obj1);
+      return closure_12(tmp(5642).TableRowGroup, obj1);
     } else {
-      let tmpResult = tmp(1430);
+      let tmpResult = tmp(1431);
       tmpResult = tmp(1362);
       let icon = value.icon;
       icon = { source: null, style: null };
@@ -183,7 +183,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   closure_7 = undefined;
   function onSave() {
     if (null != guild) {
-      let obj = closeGuildSettings(9754);
+      let obj = closeGuildSettings(8993);
       obj = { features: null };
       obj[0] = tmp.features;
       obj.saveGuild(tmp.id, obj);
@@ -200,7 +200,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ guild: guild.getGuild(), submitting: guild.isSubmitting(), hasChanges: guild.hasChanges() }));
   submitting = stateFromStoresObject.submitting;
   ({ hasChanges: c5, guild } = stateFromStoresObject);
-  closure_7 = closeGuildSettings(4413)();
+  closure_7 = closeGuildSettings(4416)();
   let obj4 = platformType(586);
   const items1 = [guild];
   const stateFromStores = obj4.useStateFromStores(items1, () => guild.getProps().integrations);
@@ -216,7 +216,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     obj = { headerLeft: null, title: null, headerRight: null };
     obj[0] = fn;
-    let tmp3Result = tmp3(5236);
+    let tmp3Result = tmp3(5244);
     const value = tmp3Result.get(platformType);
     let name;
     if (value != null) {
@@ -224,14 +224,14 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     function onConectTap() {
       closeGuildSettings();
-      let obj = platformType(6255);
+      let obj = platformType(7320);
       obj = { screen: closure_1_10.CONNECTIONS, isRootScreen: true };
       obj.openUserSettings(obj);
     }
     obj[1] = name;
     obj[2] = function headerRight() {
       if (submitting) {
-        let tmp2 = closure_1_11(platformType(5504).HeaderSubmittingIndicator, {});
+        let tmp2 = closure_1_11(platformType(5579).HeaderSubmittingIndicator, {});
       } else {
         tmp2 = null;
         if (c5) {
@@ -239,7 +239,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
           const intl = platformType(1233).intl;
           obj[0] = intl.string(platformType(1233).t["R3BPH+"]);
           obj[1] = onSave;
-          tmp2 = closure_1_11(platformType(6247).HeaderActionButton, obj);
+          tmp2 = closure_1_11(platformType(7315).HeaderActionButton, obj);
         }
       }
       return tmp2;
@@ -287,10 +287,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     const items2 = [mapped, ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj6[2] = formatResult;
-    items2[1] = closure_11(tmp(4474).Text, obj6);
+    items2[1] = closure_11(tmp(4477).Text, obj6);
     obj3[2] = items2;
-    obj2[2] = closure_12(tmp(4927).Stack, obj3);
-    const items3 = [closure_11(tmp(8376).Form, obj2), closure_11(tmp(5948).NavScrim, {})];
+    obj2[2] = closure_12(tmp(4934).Stack, obj3);
+    const items3 = [closure_11(tmp(8523).Form, obj2), closure_11(tmp(6980).NavScrim, {})];
     obj5[0] = items3;
     return closure_12(closure_13, obj5);
   }

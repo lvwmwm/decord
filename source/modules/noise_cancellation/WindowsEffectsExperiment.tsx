@@ -1,12 +1,12 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 9925
+// Function ID: 9926
 // Name: getWindowsAudioEffectsExperimentConfig
-// Dependencies: [1209, 1467, 586, 2]
+// Dependencies: [1209, 1468, 586, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 10105 (getWindowsAudioEffectsExperimentConfig)
+// Module 9925 (getWindowsAudioEffectsExperimentConfig)
 import closure_2 from "initialize" /* 1209 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const require = arg1;
 let obj = { preferSystemEffects: false };

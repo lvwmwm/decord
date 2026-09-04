@@ -1,15 +1,15 @@
-// Module ID: 5364
-// Function ID: 5365
-// Dependencies: [4495, 1386, 4529, 673, 5365, 706, 1219, 9904, 2]
+// Module ID: 5372
+// Function ID: 5373
+// Dependencies: [4498, 1386, 4532, 673, 5373, 706, 1219, 9377, 2]
 
-// Module 5364
+// Module 5372
 import dispatcherDefault from "dispatcher" /* 706 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import getChannelSelectionOrigin from "getChannelSelectionOrigin" /* 5365 */;
-import disconnectRemoteAll from "disconnectRemote" /* 9904 */;
-import closure_4 from "set" /* 4495 */;
+import getChannelSelectionOrigin from "getChannelSelectionOrigin" /* 5373 */;
+import disconnectRemoteAll from "disconnectRemote" /* 9377 */;
+import closure_4 from "set" /* 4498 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

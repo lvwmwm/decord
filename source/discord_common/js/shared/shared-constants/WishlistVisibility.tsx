@@ -1,9 +1,9 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 13019
+// Function ID: 13020
 // Name: WishlistVisibility
 // Dependencies: [2]
 
-// Module 12759 (WishlistVisibility)
+// Module 13019 (WishlistVisibility)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/WishlistVisibility.tsx");

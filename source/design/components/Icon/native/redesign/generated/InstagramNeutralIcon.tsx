@@ -1,14 +1,14 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8034
+// Function ID: 8035
 // Name: InstagramNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 8025, 2]
+// Dependencies: [19, 21, 709, 4196, 8035, 2]
 // Exports: InstagramNeutralIcon
 
-// Module 8024 (InstagramNeutralIcon)
+// Module 8034 (InstagramNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8025 */;
+import registerAsset from "registerAsset" /* 8035 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

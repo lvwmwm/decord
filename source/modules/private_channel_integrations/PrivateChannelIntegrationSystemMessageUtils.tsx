@@ -1,10 +1,10 @@
-// Module ID: 7917
-// Function ID: 7918
+// Module ID: 7927
+// Function ID: 7928
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
 // Dependencies: [673, 1233, 1994, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 7917 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 7927 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import combinedDefault from "combined" /* 1994 */;

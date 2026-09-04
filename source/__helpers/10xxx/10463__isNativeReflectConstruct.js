@@ -1,18 +1,18 @@
 // Module ID: 10463
 // Function ID: 10464
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 96, 98, 10455, 10464]
+// Dependencies: [41, 42, 93, 95, 98, 10455, 10363, 10364, 10368]
 
 // Module 10463 (_isNativeReflectConstruct)
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10464 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10455 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
-import closure_5 from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeExpressionParser = require;
+const NLTimeUnitCasualRelativeFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,112 +32,50 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENTimeExpressionParser {
-  constructor(arg0) {
+const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class NLTimeUnitCasualRelativeFormatParser {
+  constructor() {
     self = this;
-    tmp = closure_2(this, ENTimeExpressionParser);
-    items = [];
-    items[0] = global;
+    tmp = closure_2(this, NLTimeUnitCasualRelativeFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeExpressionParser);
+    obj = closure_4(NLTimeUnitCasualRelativeFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
-let items = [
+_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|until|through|till|\\?)\\s*";
+    key: "innerPattern",
+    value: function innerPattern() {
+      return regExp;
     }
   },
   {
-    key: "primaryPrefix",
-    value: function primaryPrefix() {
-      return "(?:(?:at|from)\\s*)??";
-    }
-  },
-  {
-    key: "primarySuffix",
-    value: function primarySuffix() {
-      return "(?:\\s*(?:o\\W*clock|at\\s*night|in\\s*the\\s*(?:morning|afternoon)))?(?!/)(?=\\W|$)";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      const self = this;
-      const tmp = callback3(callback2(self.prototype), "extractPrimaryTimeComponents", this);
-      closure_1 = tmp;
-      let fn = tmp;
-      if (typeof tmp === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1];
-      const fnResult = fn(items);
-      if (fnResult) {
-        const first = arg1[0];
-        if (first.endsWith("night")) {
-          let value = fnResult.get("hour");
-          if (value >= 6) {
-            if (value < 12) {
-              fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", ENTimeExpressionParser(10455).Meridiem.PM);
-            }
-          }
-          if (value < 6) {
-            fnResult.assign("meridiem", ENTimeExpressionParser(10455).Meridiem.AM);
-          }
+    key: "innerExtract",
+    value: function innerExtract(reference) {
+      const formatted = arg1[1].toLowerCase();
+      const parseDurationResult = NLTimeUnitCasualRelativeFormatParser(10455).parseDuration(arg1[2]);
+      if ("vorig" !== formatted) {
+        if ("afgelopen" !== formatted) {
+          let reverseDurationResult = parseDurationResult;
         }
-        const first1 = arg1[0];
-        if (first1.endsWith("afternoon")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(10455).Meridiem.PM);
-          value = fnResult.get("hour");
-          let tmp14 = value >= 0;
-          if (tmp14) {
-            tmp14 = value <= 6;
-          }
-          if (tmp14) {
-            fnResult.assign("hour", fnResult.get("hour") + 12);
-          }
-        }
-        const first2 = arg1[0];
-        if (first2.endsWith("morning")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(10455).Meridiem.AM);
-          if (fnResult.get("hour") < 12) {
-            fnResult.assign("hour", fnResult.get("hour"));
-          }
-        }
-        return fnResult.addTag("parser/ENTimeExpressionParser");
-      } else {
-        return fnResult;
+        const ParsingComponents = tmp2(10364).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-    }
-  },
-  {
-    key: "extractFollowingTimeComponents",
-    value: function extractFollowingTimeComponents(arg0, arg1, arg2) {
-      const self = this;
-      let fn = callback3(callback2(self.prototype), "extractFollowingTimeComponents", this);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1, arg2];
-      const fnResult = fn(items);
-      if (fnResult) {
-        fnResult.addTag("parser/ENTimeExpressionParser");
-      }
-      return fnResult;
+      reverseDurationResult = tmp2(10363).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENTimeExpressionParser, items);
+export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);

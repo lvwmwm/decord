@@ -1,15 +1,15 @@
-// Module ID: 7491
-// Function ID: 7492
+// Module ID: 7668
+// Function ID: 7669
 // Name: InviteTypes
-// Dependencies: [7281, 1390, 7492, 7493, 2]
+// Dependencies: [7459, 1390, 7669, 7670, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 7491 (InviteTypes)
+// Module 7668 (InviteTypes)
 import set from "set" /* 2 */;
-import scheduledEventSort from "scheduledEventSort" /* 7281 */;
-import getEstablishedDate from "getEstablishedDate" /* 7493 */;
+import scheduledEventSort from "scheduledEventSort" /* 7459 */;
+import getEstablishedDate from "getEstablishedDate" /* 7670 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
-import InviteSendStates from "InviteSendStates" /* 7492 */;
+import InviteSendStates from "InviteSendStates" /* 7669 */;
 
 const isEventUpcoming = scheduledEventSort.isEventUpcoming;
 ({ isGuildVocalChannelType: c3, isMultiUserDM: c4 } = createChannelRecord);

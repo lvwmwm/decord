@@ -1,10 +1,10 @@
 // Module ID: 5160
 // Function ID: 5161
-// Dependencies: [5161, 5162]
+// Dependencies: [5161, 5163]
 
 // Module 5160
 import _mod5161 from "module_5161" /* 5161 */;
-import _mod5162 from "module_5162" /* 5162 */;
+import _mod5163 from "module_5163" /* 5163 */;
 
 const self = this;
 let self2 = this;
@@ -45,7 +45,7 @@ if (self2) {
   }
   const _Object2 = Object;
   fn(_mod5161, exports);
-  fn(_mod5162, exports);
+  fn(_mod5163, exports);
 } else {
   let _Object = Object;
 }

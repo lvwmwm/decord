@@ -1,15 +1,15 @@
-// Module ID: 6241
-// Function ID: 6242
+// Module ID: 6563
+// Function ID: 6564
 // Name: BaseTextField
-// Dependencies: [19, 21, 1234, 6239, 4202, 6242, 4201, 2]
+// Dependencies: [19, 21, 1234, 6561, 4203, 6564, 4202, 2]
 
-// Module 6241 (BaseTextField)
+// Module 6563 (BaseTextField)
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
+const forwardRefResult = importAllResult.forwardRef((size, closure_1) => {
   let obj = ref(onChangeText[3]);
   obj = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon };
   const inputStyles = obj.useInputStyles(obj);
@@ -85,7 +85,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   const tmp11 = closure_3;
   const tmp9 = closure_4;
   const tmpResult2 = ref(onChangeText[6]);
-  obj2.ref = ref(onChangeText[6]).mergeRefs(ref, ref2);
+  obj2.ref = ref(onChangeText[6]).mergeRefs(ref, closure_1);
   const items2 = [, , ];
   ({ padding: arr3[0], text: arr3[1] } = inputStyles);
   items2[2] = size.inputStyle;

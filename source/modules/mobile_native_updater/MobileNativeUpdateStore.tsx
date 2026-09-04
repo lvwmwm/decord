@@ -1,15 +1,15 @@
-// Module ID: 14288
-// Function ID: 14289
+// Module ID: 14320
+// Function ID: 14321
 // Name: checkForNewerBuild
-// Dependencies: [4459, 3, 586, 706, 13884, 2]
+// Dependencies: [4462, 3, 586, 706, 13916, 2]
 
-// Module 14288 (checkForNewerBuild)
+// Module 14320 (checkForNewerBuild)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _checkForNewerBuild from "_checkForNewerBuild" /* 13884 */;
-import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL" /* 4459 */;
+import _checkForNewerBuild from "_checkForNewerBuild" /* 13916 */;
+import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL" /* 4462 */;
 
 ({ UPDATE_CONFIG: c3, UPDATE_CHECK_INTERVAL: c4 } = UPDATE_CHECK_INTERVAL);
 let closure_5 = new timestampDefault("MobileNativeUpdateStore");

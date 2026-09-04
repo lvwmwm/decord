@@ -1,16 +1,16 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8580
+// Function ID: 8581
 // Name: TextElement
-// Dependencies: [19, 17, 21, 4478, 4949, 4474, 2]
+// Dependencies: [19, 17, 21, 4481, 4956, 4477, 2]
 // Exports: default
 
-// Module 8796 (TextElement)
-import Text from "Text" /* 4474 */;
-import createRulesAll from "createRules" /* 4949 */;
+// Module 8580 (TextElement)
+import Text from "Text" /* 4477 */;
+import createRulesAll from "createRules" /* 4956 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

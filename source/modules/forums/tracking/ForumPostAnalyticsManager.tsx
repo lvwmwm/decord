@@ -1,11 +1,11 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7705
+// Function ID: 7706
 // Name: handleThreadCreate
-// Dependencies: [5458, 1215, 1386, 5495, 11, 6161, 2]
+// Dependencies: [5467, 1215, 1386, 7058, 11, 7245, 2]
 
-// Module 7528 (handleThreadCreate)
-import initializeDefault from "initialize" /* 5495 */;
-import closure_3 from "handleThreadCreateOrUpdate" /* 5458 */;
+// Module 7705 (handleThreadCreate)
+import initializeDefault from "initialize" /* 7058 */;
+import closure_3 from "handleThreadCreateOrUpdate" /* 5467 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 

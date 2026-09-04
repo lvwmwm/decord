@@ -1,16 +1,16 @@
-// Module ID: 16709
-// Function ID: 16710
-// Dependencies: [32, 19, 17, 21, 4478, 709, 9277, 1233, 16710, 16726, 9788, 9285, 11698, 2]
+// Module ID: 16796
+// Function ID: 16797
+// Dependencies: [32, 19, 17, 21, 4481, 709, 9721, 1233, 16797, 16813, 9722, 12548, 11828, 2]
 
-// Module 16709
+// Module 16796
 import ThemesDefault from "Themes" /* 709 */;
-import PendingMessageRequestRowDefault from "PendingMessageRequestRow" /* 16710 */;
-import PendingSpamMessageRequestRowDefault from "PendingSpamMessageRequestRow" /* 16726 */;
+import PendingMessageRequestRowDefault from "PendingMessageRequestRow" /* 16797 */;
+import PendingSpamMessageRequestRowDefault from "PendingSpamMessageRequestRow" /* 16813 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo((navigation) => {
   const callback1 = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = navigation(9277);
+  let obj = navigation(9721);
   obj = { items: null, pageWidth: null, defaultIndex: 0 };
   obj = { label: null, id: null, page: null };
   const intl = navigation(1233).intl;
@@ -52,10 +52,10 @@ const memoResult = importAllResult.memo((navigation) => {
   obj[1] = tmp2[0];
   const segmentedControlState = obj.useSegmentedControlState(obj);
   const obj2 = { style: tmp.container, children: null };
-  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9788).SegmentedControl, { state: segmentedControlState }) }), , ];
-  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9788).SegmentedControl, { state: segmentedControlState }) };
-  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(9285).SegmentedControlPages, { state: segmentedControlState }) });
-  items2[2] = callback2(navigation(11698).TTIFirstContentfulPaint, { label: "message_requests" });
+  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9722).SegmentedControl, { state: segmentedControlState }) }), , ];
+  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9722).SegmentedControl, { state: segmentedControlState }) };
+  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(12548).SegmentedControlPages, { state: segmentedControlState }) });
+  items2[2] = callback2(navigation(11828).TTIFirstContentfulPaint, { label: "message_requests" });
   obj2[1] = items2;
   return callback3(View, obj2);
 });

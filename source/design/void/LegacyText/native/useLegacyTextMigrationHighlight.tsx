@@ -1,13 +1,13 @@
-// Module ID: 8405
-// Function ID: 8406
+// Module ID: 8543
+// Function ID: 8544
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4477, 4478, 709, 586, 2]
+// Dependencies: [4480, 4481, 709, 586, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 8405 (useLegacyTextMigrationHighlight)
+// Module 8543 (useLegacyTextMigrationHighlight)
 import ThemesDefault from "Themes" /* 709 */;
-import closure_2 from "getUserAgnosticState" /* 4477 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import closure_2 from "getUserAgnosticState" /* 4480 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { highlight: null };

@@ -1,18 +1,18 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 8710
+// Function ID: 8711
 // Name: createCollectiblesItemFromServerResponse
-// Dependencies: [7302, 7301, 1947, 7303, 7304, 4521, 10685, 673, 1949, 2]
+// Dependencies: [7480, 7479, 1947, 7481, 7482, 4524, 8709, 673, 1949, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 10686 (createCollectiblesItemFromServerResponse)
+// Module 8710 (createCollectiblesItemFromServerResponse)
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import fromServerDefault from "fromServer" /* 10685 */;
-import closure_2 from "fromServer" /* 7302 */;
-import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7301 */;
+import fromServerDefault from "fromServer" /* 8709 */;
+import closure_2 from "fromServer" /* 7480 */;
+import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7479 */;
 import closure_4 from "fromServer" /* 1947 */;
-import closure_5 from "fromServer" /* 7303 */;
-import closure_6 from "fromServer" /* 7304 */;
-import closure_7 from "createFromServer" /* 4521 */;
+import closure_5 from "fromServer" /* 7481 */;
+import closure_6 from "fromServer" /* 7482 */;
+import closure_7 from "createFromServer" /* 4524 */;
 import { SKUProductLines } from "ME" /* 673 */;
 
 require = arg1;

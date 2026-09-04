@@ -1,9 +1,9 @@
-// Module ID: 6256
-// Function ID: 6257
+// Module ID: 7321
+// Function ID: 7322
 // Name: handleFormClose
 // Dependencies: [1921, 673, 586, 706, 2]
 
-// Module 6256 (handleFormClose)
+// Module 7321 (handleFormClose)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "mergeGuildAvatar" /* 1921 */;

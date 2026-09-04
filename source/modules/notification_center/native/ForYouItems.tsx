@@ -1,28 +1,28 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16342
+// Function ID: 16343
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4470, 4519, 1386, 1908, 1921, 16250, 673, 6064, 21, 4478, 4474, 709, 4949, 16255, 1233, 1398, 7963, 7516, 11107, 10438, 8765, 586, 7642, 1296, 12402, 16257, 1498, 4458, 13828, 7395, 695, 8153, 16258, 11436, 4194, 11459, 2008, 4445, 16260, 4436, 16252, 5995, 16261, 16262, 11, 5077, 16263, 7396, 12844, 1499, 4166, 4171, 16273, 16274, 16275, 16276, 16277, 16283, 807, 16284, 16285, 1470, 16254, 8116, 16286, 2]
+// Dependencies: [5, 32, 19, 17, 4473, 4522, 1386, 1908, 1921, 16336, 673, 6537, 21, 4481, 4477, 709, 4956, 16341, 1233, 1399, 7973, 7693, 11177, 10349, 8549, 586, 7819, 1296, 12560, 16343, 1498, 4461, 13860, 7573, 695, 13119, 16344, 11555, 4194, 11578, 2008, 4448, 16346, 4439, 16338, 7135, 16347, 16348, 11, 5084, 16349, 7574, 13052, 1499, 4166, 4171, 16359, 16360, 16361, 16362, 16363, 16369, 807, 16370, 16371, 1394, 16340, 8804, 16372, 2]
 
-// Module 16256 (ForYouFooter)
+// Module 16342 (ForYouFooter)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import createRulesAll from "createRules" /* 4949 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12402 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 16255 */;
+import Text from "Text" /* 4477 */;
+import createRulesAll from "createRules" /* 4956 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12560 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 16341 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_10 from "addApplication" /* 4519 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_10 from "addApplication" /* 4522 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
 import closure_12 from "createGuildRecordFromRust" /* 1908 */;
 import closure_13 from "mergeGuildAvatar" /* 1921 */;
-import closure_14 from "handleLoadFinished" /* 16250 */;
+import closure_14 from "handleLoadFinished" /* 16336 */;
 import ME from "ME" /* 673 */;
-import { NotificationTypes } from "str2" /* 6064 */;
+import { NotificationTypes } from "str2" /* 6537 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ForYouFooter(loading) {
@@ -60,11 +60,11 @@ function ForYouMessagePreviewV2(item) {
   ({ compactMode, roleStyle } = item);
   let messagePreviewIconV2 = callback6();
   let SMALL = dependencyMap;
-  let obj = message_channel_id(4949);
+  let obj = message_channel_id(4956);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback5(), closure_28, roleStyle);
   const intl = item(1233).intl;
   const stringResult = intl.string(item(1233).t.BOi07B);
-  obj1 = item(1398);
+  obj1 = item(1399);
   let message = item.message;
   let num;
   if (message != null) {
@@ -115,10 +115,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(7963)(first);
+    const tmp15 = guild_id(7973)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(7516);
+      let tmp2Result = tmp2(7693);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -133,7 +133,7 @@ function ForYouMessagePreviewV2(item) {
     result = intl4.string(tmp2(1233).t["6bhHrc"]);
     ATTACHMENT = constants3.VOICE_MESSAGE;
   } else {
-    tmp2Result = tmp2(1398);
+    tmp2Result = tmp2(1399);
     const message7 = item.message;
     let num2;
     if (message7 != null) {
@@ -226,18 +226,18 @@ function ForYouMessagePreviewV2(item) {
   if (acked) {
     str2 = "text-muted";
   }
-  const items5 = [item(7642).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
+  const items5 = [item(7819).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
-    items3[1] = tmp21(tmp2(4474).Text, obj1);
+    items3[1] = tmp21(tmp2(4477).Text, obj1);
     obj[2] = items3;
     return tmp21(tmp22, obj);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(11107);
+      let tmp29 = guild_id(11177);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1296).IconSizes.SMALL;
@@ -249,10 +249,10 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(8765);
+        tmp29 = guild_id(8549);
       }
     }
-    tmp29 = guild_id(10438);
+    tmp29 = guild_id(10349);
   }
 }
 function ApplicationName(applicationId) {

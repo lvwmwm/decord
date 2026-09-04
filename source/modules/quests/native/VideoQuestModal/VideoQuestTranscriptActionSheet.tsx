@@ -1,17 +1,17 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15078
+// Function ID: 15079
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 7461, 21, 4478, 709, 1627, 11146, 11137, 5998, 5630, 1233, 5633, 4927, 4474, 2]
+// Dependencies: [19, 17, 7638, 21, 4481, 709, 1627, 11217, 11208, 7138, 7089, 1233, 6567, 4934, 4477, 2]
 // Exports: default
 
-// Module 14996 (VideoQuestTranscriptActionSheet)
+// Module 15078 (VideoQuestTranscriptActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import _toPropertyKey from "_toPropertyKey" /* 7461 */;
+import _toPropertyKey from "_toPropertyKey" /* 7638 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ FetchStatus: c5, useVideoQuestUIStore: closure_6 } = _toPropertyKey);
@@ -76,7 +76,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   obj = { title: null };
   const intl = quest(1233).intl;
   obj[0] = intl.string(quest(1233).t["1YS80z"]);
-  obj[1] = callback2(quest(5630).BottomSheetTitleHeader, obj);
+  obj[1] = callback2(quest(7089).BottomSheetTitleHeader, obj);
   obj = { contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
   obj1 = { spacing: 16, style: tmp.content, children: null };
   let fetchStatus;
@@ -91,7 +91,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   }
   const items2 = [tmp7Result, memo.length > 0 && memo.map((children) => callback(quest(table[14]).Text, { variant: "heading-md/normal", color: "text-muted", children }, arg1))];
   obj1[2] = items2;
-  obj[1] = closure_8(quest(4927).Stack, obj1);
-  obj[2] = callback2(quest(5633).BottomSheetScrollView, obj);
-  return callback2(quest(5998).ActionSheet, obj);
+  obj[1] = closure_8(quest(4934).Stack, obj1);
+  obj[2] = callback2(quest(6567).BottomSheetScrollView, obj);
+  return callback2(quest(7138).ActionSheet, obj);
 };

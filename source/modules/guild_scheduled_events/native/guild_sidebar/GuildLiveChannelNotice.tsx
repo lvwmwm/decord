@@ -1,30 +1,30 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16110
+// Function ID: 16111
 // Name: UserSummaryRow
-// Dependencies: [19, 17, 5371, 1391, 4500, 4120, 4555, 1392, 502, 21, 709, 1296, 4468, 10235, 8017, 9106, 1234, 4934, 4478, 4474, 12330, 10228, 1890, 4728, 8683, 4413, 7628, 4929, 1362, 4674, 586, 1233, 4982, 9781, 9692, 9702, 9785, 5383, 5377, 5370, 9648, 5051, 16023, 10876, 5610, 2]
+// Dependencies: [19, 17, 5379, 1391, 4503, 4120, 4558, 1392, 502, 21, 709, 1296, 4471, 10057, 8027, 10048, 1234, 4941, 4481, 4477, 12462, 10050, 1890, 4735, 8323, 4416, 7805, 4936, 1362, 4681, 586, 1233, 4989, 9714, 9634, 9644, 9718, 5391, 5385, 5378, 9591, 5058, 16109, 10844, 5562, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 16024 (UserSummaryRow)
+// Module 16110 (UserSummaryRow)
 import ThemesDefault from "Themes" /* 709 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import Text from "Text" /* 4474 */;
-import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7628 */;
-import smartOutput from "smartOutput" /* 8017 */;
-import map from "map" /* 9106 */;
-import getChannelFromEvent from "getChannelFromEvent" /* 9692 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import Text from "Text" /* 4477 */;
+import computeChannelNameDefault from "computeChannelName" /* 4681 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7805 */;
+import smartOutput from "smartOutput" /* 8027 */;
+import getChannelFromEvent from "getChannelFromEvent" /* 9634 */;
+import map from "map" /* 10048 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getActiveStageChannelIds" /* 5371 */;
+import closure_6 from "getActiveStageChannelIds" /* 5379 */;
 import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_8 from "reset" /* 4500 */;
+import closure_8 from "reset" /* 4503 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_10 from "getVoiceStatesForGuild" /* 4555 */;
+import closure_10 from "getVoiceStatesForGuild" /* 4558 */;
 import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import { Permissions } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "get defaultRules" /* 4468 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import importDefaultResult from "get defaultRules" /* 4471 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 require = arg1;
@@ -101,16 +101,16 @@ function UserSummaryRow(arg0) {
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       obj[0] = items2;
       obj1 = { size: "custom", style: null };
-      obj1[1] = max(10228).makeSizeStyle(14);
-      const items3 = [callback(max(12330).HeadphonesIcon, obj1), ];
+      obj1[1] = max(10050).makeSizeStyle(14);
+      const items3 = [callback(max(12462).HeadphonesIcon, obj1), ];
       let obj2 = { variant: "text-xs/semibold", style: null, maxFontSizeMultiplier: 1, children: null };
       obj2[1] = { marginLeft: 4 };
       obj2[3] = audienceCount;
-      items3[1] = callback(max(4474).Text, obj2);
+      items3[1] = callback(max(4477).Text, obj2);
       obj[1] = items3;
       obj[1] = tmp4(tmp5, obj);
       tmp8Result = tmp8(tmp5, obj);
-      const obj5 = max(10228);
+      const obj5 = max(10050);
       const tmp9 = users.length > 0 && { marginLeft: 4 };
     }
     items[1] = tmp8Result;
@@ -162,7 +162,7 @@ function JoinChannelButton(label) {
   obj[1] = str;
   obj[3] = disabled;
   obj[4] = label.label;
-  obj[1] = closure_13(channel(4929).Button, obj);
+  obj[1] = closure_13(channel(4936).Button, obj);
   return closure_13(tmp6, obj);
 }
 function GuildVoiceEventNotice(channel) {
@@ -186,8 +186,8 @@ function GuildVoiceEventNotice(channel) {
   obj[2] = tmp2;
   const obj3 = channel(586);
   const tmp8 = closure_31;
-  obj[3] = channel(4982).getChannelIconComponent(channel);
-  obj[4] = channel(9781).CalendarIcon;
+  obj[3] = channel(4989).getChannelIconComponent(channel);
+  obj[4] = channel(9714).CalendarIcon;
   obj = { guildId: channel.guild_id, users: stateFromStoresArray, isLiveStreaming: stateFromStores1 };
   obj[5] = callback(UserSummaryRow, obj);
   let tmp7Result;
@@ -212,8 +212,8 @@ function GuildExternalEventNotice(guildEvent) {
     obj[0] = intl.string(tmp(1233).t.TxqPQR);
     obj[1] = guildEvent.name;
     obj[2] = callback2(locationFromEvent, true);
-    obj[3] = tmp(9702).LocationIcon;
-    obj[4] = tmp(9781).CalendarIcon;
+    obj[3] = tmp(9644).LocationIcon;
+    obj[4] = tmp(9714).CalendarIcon;
     obj = { guildEvent: null };
     obj[0] = guildEvent;
     obj[5] = callback(SeeDetailButton, obj);
@@ -233,13 +233,13 @@ function SeeDetailButton(guildEvent) {
   obj = { onPress: callback, variant: "active", size: "sm", text: null };
   const intl = guildEvent(1233).intl;
   obj[3] = intl.string(guildEvent(1233).t.z4FcDs);
-  obj[1] = callback(guildEvent(4929).Button, obj);
+  obj[1] = callback(guildEvent(4936).Button, obj);
   return callback(View, obj);
 }
 function GuildLiveStageNotice(channel) {
   channel = channel.channel;
-  let obj = channel(5383);
-  const stageParticipants = obj.useStageParticipants(channel.id, channel(5377).StageChannelParticipantNamedIndex.SPEAKER);
+  let obj = channel(5391);
+  const stageParticipants = obj.useStageParticipants(channel.id, channel(5385).StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === channel(table[38]).StageChannelParticipantTypes.VOICE);
   const mapped = found.map((user) => user.user);
   obj1 = channel(586);
@@ -250,23 +250,23 @@ function GuildLiveStageNotice(channel) {
   const items2 = [closure_9];
   const stateFromStores1 = channel(586).useStateFromStores(items2, () => closure_1_9.can(closure_1_12.CONNECT, channel));
   const obj3 = channel(586);
-  const stageHasStream = channel(5370).useStageHasStream(channel.id);
-  const obj4 = channel(5370);
-  const guildActiveEvent = channel(9648).useGuildActiveEvent(channel.guild_id);
+  const stageHasStream = channel(5378).useStageHasStream(channel.id);
+  const obj4 = channel(5378);
+  const guildActiveEvent = channel(9591).useGuildActiveEvent(channel.guild_id);
   obj = { heading: null, location: null, LocationIcon: null, LiveIcon: null, topic: null, voiceUsers: null, joinButton: null };
   const intl = channel(1233).intl;
   obj[0] = intl.string(channel(1233).t["X2K3/4"]);
   obj[1] = tmp2;
   let channelIconComponent;
   if (null != guildActiveEvent) {
-    channelIconComponent = tmp3(4982).getChannelIconComponent(channel);
-    const tmp3Result = tmp3(4982);
+    channelIconComponent = tmp3(4989).getChannelIconComponent(channel);
+    const tmp3Result = tmp3(4989);
   }
   obj[2] = channelIconComponent;
   if (null != guildActiveEvent) {
-    let StageIcon = tmp3(9781).CalendarIcon;
+    let StageIcon = tmp3(9714).CalendarIcon;
   } else {
-    StageIcon = tmp3(5051).StageIcon;
+    StageIcon = tmp3(5058).StageIcon;
   }
   obj[3] = StageIcon;
   obj[4] = channel.stageInstance.topic;
@@ -394,7 +394,7 @@ let closure_31 = importAllResult.memo((arg0) => {
     obj7[0] = num;
     obj5[3] = obj7;
     obj5[4] = _location;
-    items4[1] = tmp4(tmp7(4474).Text, obj5);
+    items4[1] = tmp4(tmp7(4477).Text, obj5);
     obj6[0] = items4;
     tmp2Result = tmp2(closure_15, obj6);
     const tmp10 = closure_15;
@@ -414,9 +414,9 @@ export default importAllResult.memo((guild) => {
   guild = guild.guild;
   let activeEventOrStageInstanceChannel;
   let guildActiveEvent;
-  let obj = activeEventOrStageInstanceChannel(16023);
+  let obj = activeEventOrStageInstanceChannel(16109);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
-  obj1 = activeEventOrStageInstanceChannel(9648);
+  obj1 = activeEventOrStageInstanceChannel(9591);
   guildActiveEvent = obj1.useGuildActiveEvent(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(586);
   const items = [closure_7];
@@ -499,7 +499,7 @@ export default importAllResult.memo((guild) => {
     obj2[2] = callback;
     obj2[3] = callback1;
     obj2[4] = tmp13;
-    tmp20 = callback(activeEventOrStageInstanceChannel(5610).Card, obj2);
+    tmp20 = callback(activeEventOrStageInstanceChannel(5562).Card, obj2);
   }
   return tmp20;
 });
@@ -512,7 +512,7 @@ export const getScaledLiveChannelNoticeHeight = function getScaledLiveChannelNot
     if (!hasAudience) {
       let num = 0;
     }
-    let tmpResult = tmp(9106);
+    let tmpResult = tmp(10048);
     const sum = PX_82 + tmpResult.scaleTextLineHeight(c22, fontScale);
     tmpResult = tmp(1234);
     let num2 = 0;
@@ -521,9 +521,9 @@ export const getScaledLiveChannelNoticeHeight = function getScaledLiveChannelNot
     }
     const sum1 = PX_4 + num2;
     let num3 = 0;
-    const sum2 = sum1 + tmp(9106).scaleTextLineHeight(c23, fontScale);
+    const sum2 = sum1 + tmp(10048).scaleTextLineHeight(c23, fontScale);
     if (hasButton) {
-      num3 = PX_82 + tmp(4934).SMALL_BUTTON_HEIGHT;
+      num3 = PX_82 + tmp(4941).SMALL_BUTTON_HEIGHT;
     }
     return PX_8 + PX_122 + tmp4 + num + sum + sum2 + num3 + PX_122 + PX_12;
   }

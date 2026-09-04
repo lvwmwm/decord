@@ -1,20 +1,20 @@
-// Module ID: 7999
-// Function ID: 8000
+// Module ID: 8009
+// Function ID: 8010
 // Name: getCurrentTime
-// Dependencies: [4391, 1209, 7414, 1339, 6063, 4130, 673, 8000, 4166, 8001, 12, 586, 706, 2]
+// Dependencies: [4394, 1209, 7592, 1339, 6536, 4130, 673, 8010, 4166, 8011, 12, 586, 706, 2]
 
-// Module 7999 (getCurrentTime)
+// Module 8009 (getCurrentTime)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS from "FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS" /* 8000 */;
-import getFriendAnniversaryGateConfig from "getFriendAnniversaryGateConfig" /* 8001 */;
-import closure_3 from "getHash" /* 4391 */;
+import FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS from "FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS" /* 8010 */;
+import getFriendAnniversaryGateConfig from "getFriendAnniversaryGateConfig" /* 8011 */;
+import closure_3 from "getHash" /* 4394 */;
 import closure_4 from "initialize" /* 1209 */;
-import closure_5 from "recomputeAffinities" /* 7414 */;
+import closure_5 from "recomputeAffinities" /* 7592 */;
 import closure_6 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_7 from "hasConsented" /* 6063 */;
+import closure_7 from "hasConsented" /* 6536 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import { Consents } from "ME" /* 673 */;
 import set from "set" /* 2 */;
@@ -145,7 +145,7 @@ function generateFriendAnniversaries(c15) {
             }
           });
           const sorted = obj.sort((arg0, arg1) => closure_5.compareByDmProbability(arg0, arg1));
-          const result = highestAffinity(8000).categorizeFriendAnniversariesByAffinity(obj, (userId) => {
+          const result = highestAffinity(8010).categorizeFriendAnniversariesByAffinity(obj, (userId) => {
             const userAffinity = closure_5.getUserAffinity(userId);
             let dmProbability;
             if (userAffinity != null) {
@@ -154,7 +154,7 @@ function generateFriendAnniversaries(c15) {
             return dmProbability;
           }, true);
           ({ highestAffinity, highAffinity } = result);
-          const highestAffinityResult = highestAffinity(8000);
+          const highestAffinityResult = highestAffinity(8010);
         }
         sampleSizeResult = _null;
       }

@@ -1,11 +1,11 @@
-// Module ID: 4859
-// Function ID: 4860
-// Dependencies: [19, 21, 4445, 706, 4860, 1233, 4864, 4948, 4948, 2008, 2]
+// Module ID: 4866
+// Function ID: 4867
+// Dependencies: [19, 21, 4448, 706, 4867, 1233, 4871, 4955, 4955, 2008, 2]
 
-// Module 4859
+// Module 4866
 import noopAll from "noop" /* 19 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import useAlertStore from "useAlertStore" /* 4860 */;
+import useAlertStore from "useAlertStore" /* 4867 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -122,11 +122,11 @@ export default {
     }
     if (!tmp7) {
       if (flag) {
-        let obj3 = merged(4445);
+        let obj3 = merged(4448);
         obj3.hideActionSheet();
       }
       if (null != c6) {
-        let obj4 = confirmText(4860);
+        let obj4 = confirmText(4867);
         obj4.dismissAlert(c6);
       }
       merged(706).dispatch({ type: "ALERT_CLOSE" });
@@ -137,7 +137,7 @@ export default {
       ({ cancelText, onConfirm: c3, onCancel: c4 } = merged);
       c5 = false;
       ({ title, body: body2, children, confirmColor } = merged);
-      const obj7 = confirmText(4860);
+      const obj7 = confirmText(4867);
       obj = { title: null, content: null, extraContent: null, actions: null };
       obj[0] = title;
       obj[1] = body2;
@@ -147,7 +147,7 @@ export default {
       const tmp29 = confirmText;
       const tmp31 = c5;
       const tmp32 = c4;
-      obj[0] = confirmText(4948).getAlertButtonVariant(confirmColor);
+      obj[0] = confirmText(4955).getAlertButtonVariant(confirmColor);
       obj[1] = confirmText;
       obj[2] = function onPress() {
         c5 = true;
@@ -155,7 +155,7 @@ export default {
           tmp();
         }
       };
-      const items = [callback(confirmText(4864).AlertActionButton, obj), ];
+      const items = [callback(confirmText(4871).AlertActionButton, obj), ];
       let tmp30Result = null;
       if (null != cancelText) {
         obj1 = { variant: "secondary", text: null, onPress: null };
@@ -166,7 +166,7 @@ export default {
             tmp();
           }
         };
-        tmp30Result = tmp30(tmp29(4864).AlertActionButton, obj1);
+        tmp30Result = tmp30(tmp29(4871).AlertActionButton, obj1);
       }
       const obj2 = { children: null };
       items[1] = tmp30Result;
@@ -174,7 +174,7 @@ export default {
       obj[3] = tmp31(tmp32, obj2);
       obj3 = { dismissable: null };
       obj3[0] = true === isDismissable;
-      obj7.openAlert(text, callback(confirmText(4864).AlertModal, obj), () => {
+      obj7.openAlert(text, callback(confirmText(4871).AlertModal, obj), () => {
         if (!c5) {
           if (c4 != null) {
             tmp();
@@ -184,10 +184,10 @@ export default {
           c6 = null;
         }
       }, obj3);
-      const obj10 = confirmText(4948);
+      const obj10 = confirmText(4955);
     } else {
       if (null != c6) {
-        obj1 = confirmText(4860);
+        obj1 = confirmText(4867);
         obj1.dismissAlert(c6);
         c6 = null;
       }

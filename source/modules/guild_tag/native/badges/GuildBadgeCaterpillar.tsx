@@ -1,13 +1,13 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 13966
+// Function ID: 13967
 // Name: items
-// Dependencies: [19, 21, 13895, 8254, 2]
+// Dependencies: [19, 21, 13927, 8383, 2]
 // Exports: GuildBadgeCaterpillar
 
-// Module 13934 (items)
+// Module 13966 (items)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8254 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13895 */;
+import inlineStyles from "inlineStyles" /* 8383 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13927 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 7170
-// Function ID: 7171
+// Module ID: 7349
+// Function ID: 7350
 // Name: SubscriptionPlans
-// Dependencies: [1923, 7171, 2]
+// Dependencies: [1923, 7350, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7170 (SubscriptionPlans)
+// Module 7349 (SubscriptionPlans)
 import set from "set" /* 2 */;
-import AppleProductIds from "AppleProductIds" /* 7171 */;
+import AppleProductIds from "AppleProductIds" /* 7350 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 ({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = GuildFeatures);

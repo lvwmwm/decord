@@ -1,14 +1,14 @@
-// Module ID: 7780
-// Function ID: 7781
+// Module ID: 6982
+// Function ID: 6983
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 673, 7781, 21, 5504, 7782, 7783, 4724, 500, 7813, 7777, 6017, 1233, 2]
+// Dependencies: [5, 19, 673, 6983, 21, 5579, 6984, 6985, 4731, 500, 7018, 6933, 6940, 1233, 2]
 // Exports: default
 
-// Module 7780 (PhoneVerificationModal)
+// Module 6982 (PhoneVerificationModal)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { VerificationModalScenes } from "ME" /* 673 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7781 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 6983 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -19,9 +19,9 @@ export default function PhoneVerificationModal(onClose) {
   let obj = { screens: null, initialRouteName: null, headerBackTitle: null };
   const _require = onClose;
   obj = {};
-  obj = { headerTitle: _require(5504).getHeaderNoTitle(), headerLeft: null, render: null };
-  const obj4 = _require(5504);
-  obj[1] = _require(5504).getHeaderCloseButton(onClose.onClose);
+  obj = { headerTitle: _require(5579).getHeaderNoTitle(), headerLeft: null, render: null };
+  const obj4 = _require(5579);
+  obj[1] = _require(5579).getHeaderCloseButton(onClose.onClose);
   obj[2] = function render(reason) {
     onClose = reason;
     closure_1 = arg1;
@@ -54,8 +54,8 @@ export default function PhoneVerificationModal(onClose) {
   };
   obj[VerificationModalScenes.ADD_PHONE] = obj;
   obj1 = { headerTitle: null, impressionName: null, render: null };
-  const obj5 = _require(5504);
-  obj1[0] = _require(5504).getHeaderNoTitle();
+  const obj5 = _require(5579);
+  obj1[0] = _require(5579).getHeaderNoTitle();
   obj1[1] = _require(500).ImpressionNames.USER_VERIFY_PHONE;
   obj1[2] = function render(arg0, arg1) {
     closure_0 = arg1;
@@ -158,8 +158,8 @@ export default function PhoneVerificationModal(onClose) {
   };
   obj[VerificationModalScenes.VERIFY_PHONE] = obj1;
   let obj2 = { headerTitle: null, render: null };
-  const obj7 = _require(5504);
-  obj2[0] = _require(5504).getHeaderNoTitle();
+  const obj7 = _require(5579);
+  obj2[0] = _require(5579).getHeaderNoTitle();
   obj2[1] = function render(arg0) {
     const merged = Object.assign(arg0);
     return callback2(callback(table[11]), {});
@@ -169,5 +169,5 @@ export default function PhoneVerificationModal(onClose) {
   obj[1] = VerificationModalScenes.ADD_PHONE;
   const intl = _require(1233).intl;
   obj[2] = intl.string(_require(1233).t["13/7kX"]);
-  return jsx(_require(6017).Navigator, { headerTitle: _require(5504).getHeaderNoTitle(), headerLeft: null, render: null });
+  return jsx(_require(6940).Navigator, { headerTitle: _require(5579).getHeaderNoTitle(), headerLeft: null, render: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14381
+// Function ID: 14382
 // Name: readFavoriteGIFs
 // Dependencies: [682, 673, 586, 1340, 12, 1341, 592, 11, 2]
 
-// Module 14349 (readFavoriteGIFs)
+// Module 14381 (readFavoriteGIFs)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;

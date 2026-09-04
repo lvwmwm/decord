@@ -1,10 +1,10 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8128
+// Function ID: 8129
 // Name: urlUserId
-// Dependencies: [5, 1921, 673, 706, 527, 7357, 7362, 1205, 2]
+// Dependencies: [5, 1921, 673, 706, 527, 7535, 7540, 1205, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8582 (urlUserId)
+// Module 8128 (urlUserId)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
@@ -135,9 +135,9 @@ function _fetchBadgeDirectory() {
               if (2 === tmp7) {
                 c6 = 0;
                 closure_9 = closure_5;
-                obj5 = obj1(7357);
+                obj5 = obj1(7535);
                 const obj6 = { name: null, tags: null };
-                obj6[0] = callback(7362).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
+                obj6[0] = callback(7540).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
                 const items = [authStore, "result:failure", "catalog_state:unknown", closure_5];
                 obj6[1] = items;
                 const _Date2 = Date;
@@ -161,9 +161,9 @@ function _fetchBadgeDirectory() {
                 items1[2] = "catalog_state:" + str;
                 items1[3] = closure_5;
                 c8 = items1;
-                obj = obj1(7357);
+                obj = obj1(7535);
                 const obj8 = { name: null, tags: null };
-                obj8[0] = callback(7362).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
+                obj8[0] = callback(7540).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
                 obj8[1] = c8;
                 const _Date = Date;
                 obj.distribution(obj8, Date.now() - c6);

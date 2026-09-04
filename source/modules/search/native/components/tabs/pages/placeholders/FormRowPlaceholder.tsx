@@ -1,17 +1,17 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16596
+// Function ID: 16597
 // Name: FormRowPlaceholderItem
-// Dependencies: [19, 17, 7633, 21, 4478, 709, 16483, 4217, 2]
+// Dependencies: [19, 17, 7810, 21, 4481, 709, 16569, 4218, 2]
 // Exports: default
 
-// Module 16510 (FormRowPlaceholderItem)
+// Module 16596 (FormRowPlaceholderItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 16483 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 16569 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -40,5 +40,5 @@ export default function FormRowPlaceholderItem(style) {
   obj1[1] = items2;
   items1[1] = callback2(View, obj1);
   obj[2] = items1;
-  return callback2(_modDef4217.View, obj);
+  return callback2(_modDef4218.View, obj);
 };

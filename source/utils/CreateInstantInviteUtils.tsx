@@ -1,10 +1,10 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17714
+// Function ID: 17715
 // Name: getInvitableChannelForGuild
 // Dependencies: [1981, 4120, 673, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 17634 (getInvitableChannelForGuild)
+// Module 17714 (getInvitableChannelForGuild)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import comparator from "comparator" /* 1981 */;

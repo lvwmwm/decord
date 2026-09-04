@@ -1,14 +1,14 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 13042
+// Function ID: 13043
 // Name: chunk
-// Dependencies: [12813, 8926, 8925, 12815, 706, 2]
+// Dependencies: [13041, 8151, 8150, 13043, 706, 2]
 
-// Module 12814 (chunk)
+// Module 13042 (chunk)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import _maybeFetchProductsWithSkus from "_maybeFetchProductsWithSkus" /* 8925 */;
-import _maybeFetchCollectionsWithProducts from "_maybeFetchCollectionsWithProducts" /* 12815 */;
-import closure_2 from "getFetchState" /* 12813 */;
-import closure_3 from "getFetchState" /* 8926 */;
+import _maybeFetchProductsWithSkus from "_maybeFetchProductsWithSkus" /* 8150 */;
+import _maybeFetchCollectionsWithProducts from "_maybeFetchCollectionsWithProducts" /* 13043 */;
+import closure_2 from "getFetchState" /* 13041 */;
+import closure_3 from "getFetchState" /* 8151 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -45,12 +45,15 @@ function flushCollections() {
   c7 = null;
   const items = [...set1];
   set1.clear();
-  for (const item10016 of tmp2) {
-    let tmp3 = require;
-    let tmp4 = dependencyMap;
+  c8 = false;
+  for (const item10018 of tmp3) {
+    let tmp4 = require;
+    let tmp5 = dependencyMap;
     let obj = _maybeFetchCollectionsWithProducts;
-    obj = { collectionIds: null };
-    obj[0] = item10016;
+    obj = { collectionIds: null, includeUnpublishedCollections: null, includeUnpublishedProducts: null };
+    obj[0] = item10018;
+    obj[1] = tmp;
+    obj[2] = tmp;
     let result = obj.maybeFetchCollectionsWithProducts(obj);
     continue;
   }
@@ -59,6 +62,7 @@ let set = new Set();
 const set1 = new Set();
 let c6 = null;
 let c7 = null;
+let c8 = false;
 let obj = {
   requestProducts(items) {
     const iter = items[Symbol.iterator]();
@@ -87,7 +91,15 @@ let obj = {
       timeout = setTimeout(flushProducts, 32);
     }
   },
-  requestCollections(items) {
+  requestCollections(items, arg1) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    let flag = obj.includeUnpublished;
+    if (flag === undefined) {
+      flag = false;
+    }
     const iter = items[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -105,6 +117,9 @@ let obj = {
       }
       continue;
     }
+    if (flag) {
+      c8 = true;
+    }
     let tmp9 = set1.size > 0;
     if (tmp9) {
       tmp9 = null == timeout;
@@ -117,6 +132,7 @@ let obj = {
   reset() {
     set.clear();
     set1.clear();
+    c8 = false;
     if (null != c6) {
       const _clearTimeout = clearTimeout;
       clearTimeout(c6);

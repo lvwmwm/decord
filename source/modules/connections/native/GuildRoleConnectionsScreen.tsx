@@ -1,10 +1,10 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11503
+// Function ID: 11504
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 673, 21, 4478, 709, 1296, 4413, 586, 695, 4701, 5466, 4445, 11397, 2008, 11387, 11394, 5236, 1430, 1362, 4474, 1233, 1994, 11393, 6006, 10163, 2]
+// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 673, 21, 4481, 709, 1296, 4416, 586, 695, 4708, 5475, 4448, 11504, 2008, 11494, 11501, 5244, 1431, 1362, 4477, 1233, 1994, 11500, 7144, 9983, 2]
 // Exports: default
 
-// Module 11396 (GuildRoleConnectionsScreen)
+// Module 11503 (GuildRoleConnectionsScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -15,7 +15,7 @@ import closure_10 from "trackCommunicationDisabled" /* 1991 */;
 import closure_11 from "createGuildRoleRecordFromRust" /* 1984 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c5, Pressable: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -54,7 +54,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   closure_7 = undefined;
   let tmp = callback4();
   dependencyMap = tmp;
-  callback = onCloseModal(4413)();
+  callback = onCloseModal(4416)();
   let obj = guildId(586);
   let items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_11.getSortedRoles(guildId));
@@ -73,14 +73,14 @@ export default function GuildRoleConnectionsScreen(guildId) {
       let obj = onCloseModal(695);
       obj = { role_ids: null };
       obj[0] = first.map((role_id) => role_id.role_id);
-      const merged = Object.assign(guildId(4701).collectGuildAnalyticsMetadata(guildId));
+      const merged = Object.assign(guildId(4708).collectGuildAnalyticsMetadata(guildId));
       obj.track(closure_1_12.PASSPORT_ENTRY_VIEWED, obj);
-      const obj3 = guildId(4701);
+      const obj3 = guildId(4708);
     }
   }, items3);
   const items4 = [guildId];
   const effect1 = React.useEffect(() => {
-    const guildRoleConnectionsConfigurations = onCloseModal(5466).getGuildRoleConnectionsConfigurations(guildId);
+    const guildRoleConnectionsConfigurations = onCloseModal(5475).getGuildRoleConnectionsConfigurations(guildId);
     guildRoleConnectionsConfigurations.then((arg0) => callback(arg0));
   }, items4);
   if (null == stateFromStores1) {
@@ -97,7 +97,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     obj2 = { helpdeskArticleUrl: null };
     obj2[0] = tmp2(1994).getArticleURL(constants.CONNECTION_DETAILS);
     obj1[3] = intl.format(tmp4(1233).t["Y+TsEV"], obj2);
-    const items5 = [callback2(tmp4(4474).Text, obj1), ];
+    const items5 = [callback2(tmp4(4477).Text, obj1), ];
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.verifiedRoles;
     obj3[1] = found.map((children) => {
@@ -220,14 +220,14 @@ export default function GuildRoleConnectionsScreen(guildId) {
         obj[0] = found.roleCheckmark;
         obj = { size: null, source: null, color: null };
         obj[0] = guildId(1296).Icon.Sizes.SMALL_20;
-        obj[1] = onCloseModal(11393);
+        obj[1] = onCloseModal(11500);
         obj[2] = onCloseModal(709).unsafe_rawColors.WHITE;
         obj[1] = closure_1_14(guildId(1296).Icon, obj);
         tmp12 = closure_1_14(stateFromStores1, obj);
       }
-      const items1 = [tmp12, closure_1_14(onCloseModal(6006), { style: found.verifiedRoleIcon, guildId: id, role: children, size: 24 }), closure_1_14(guildId(4474).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: found.verifiedRoleName, children: children.name }), ];
+      const items1 = [tmp12, closure_1_14(onCloseModal(7144), { style: found.verifiedRoleIcon, guildId: id, role: children, size: 24 }), closure_1_14(guildId(4477).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: found.verifiedRoleName, children: children.name }), ];
       const obj3 = { style: found.platformIconContainer, users: [], renderedUsers: items, max: 3, withNames: false, avatarSize: guildId(1296).AvatarSizes.XSMALL, withPlusCount: true };
-      items1[3] = closure_1_14(onCloseModal(10163), obj3);
+      items1[3] = closure_1_14(onCloseModal(9983), obj3);
       obj[3] = items1;
       return closure_1_15(first, obj, children.id);
     });

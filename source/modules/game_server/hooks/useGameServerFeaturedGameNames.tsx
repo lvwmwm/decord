@@ -1,13 +1,13 @@
-// Module ID: 12377
-// Function ID: 12378
+// Module ID: 12509
+// Function ID: 12510
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [4366, 6163, 2]
+// Dependencies: [4369, 7247, 2]
 // Exports: default
 
-// Module 12377 (useGameServerFeaturedGameNames)
+// Module 12509 (useGameServerFeaturedGameNames)
 import set from "set" /* 2 */;
-import importDefaultResult1 from "importDefaultResult1" /* 6163 */;
-import str11 from "str11" /* 4366 */;
+import importDefaultResult1 from "importDefaultResult1" /* 7247 */;
+import str11 from "str11" /* 4369 */;
 
 ({ MINECRAFT_GAME_ID: obj1, HYTALE_GAME_ID: c3 } = str11);
 const result = set.fileFinishedImporting("modules/game_server/hooks/useGameServerFeaturedGameNames.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 17686
-// Function ID: 17687
+// Module ID: 17766
+// Function ID: 17767
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: [4567, 4529, 4554, 684, 9582, 17674, 2]
+// Dependencies: [4570, 4532, 4557, 684, 9039, 17754, 2]
 
-// Module 17686 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+// Module 17766 (AVErrorAudioCaptureSampleRateMismatchDefinition)
 import setDefault from "set" /* 684 */;
-import mapped from "mapped" /* 9582 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17674 */;
-import closure_2 from "updateAveragedStatsHelper" /* 4567 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_4 from "createRTCConnection" /* 4554 */;
+import mapped from "mapped" /* 9039 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17754 */;
+import closure_2 from "updateAveragedStatsHelper" /* 4570 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_4 from "createRTCConnection" /* 4557 */;
 
 require = arg1;
 let closure_5 = 10 * setDefault.Millis.SECOND;

@@ -1,13 +1,13 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7942
+// Function ID: 7943
 // Name: createNewThreadSystemMessage
-// Dependencies: [1386, 4130, 1921, 7881, 1233, 7883, 4674, 7885, 2]
+// Dependencies: [1386, 4130, 1921, 7891, 1233, 7893, 4681, 7895, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7932 (createNewThreadSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
+// Module 7942 (createNewThreadSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
@@ -28,8 +28,8 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   const intl = tmp(1233).intl;
   obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), threadName: null, threadOnClick: null };
   if (null != channel) {
-    let content = tmp(4674).computeChannelName(channel, closure_5, closure_4);
-    const tmpResult = tmp(4674);
+    let content = tmp(4681).computeChannelName(channel, closure_5, closure_4);
+    const tmpResult = tmp(4681);
   } else {
     content = message.content;
   }

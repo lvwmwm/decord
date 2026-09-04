@@ -1,16 +1,16 @@
-// Module ID: 15594
-// Function ID: 15595
+// Module ID: 15676
+// Function ID: 15677
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 4197, 709, 4927, 6001, 4475, 5608, 4474, 2]
+// Dependencies: [19, 17, 21, 4197, 709, 4934, 5642, 4478, 5560, 4477, 2]
 // Exports: default
 
-// Module 15594 (UserSettingsDesignSystemText)
+// Module 15676 (UserSettingsDesignSystemText)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import TEXT_VARIANT2 from "TEXT_VARIANT" /* 4475 */;
-import Stack from "Stack" /* 4927 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6001 */;
+import TEXT_VARIANT2 from "TEXT_VARIANT" /* 4478 */;
+import Stack from "Stack" /* 4934 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -32,8 +32,8 @@ export default function UserSettingsDesignSystemText() {
       obj = { variant: null, children: null };
       obj[0] = arg0;
       obj[1] = arg0;
-      obj[0] = callback2(callback(4474).Text, obj, arg0);
-      tmp = callback2(callback(5608).TableRow, obj, arg0);
+      obj[0] = callback2(callback(4477).Text, obj, arg0);
+      tmp = callback2(callback(5560).TableRow, obj, arg0);
     }
     return tmp;
   });

@@ -1,16 +1,16 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8530
+// Function ID: 8531
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4478, 709, 5607, 4474, 1296, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 5641, 4477, 1296, 2]
 // Exports: default
 
-// Module 8383 (FormHint)
+// Module 8530 (FormHint)
 import ThemesDefault from "Themes" /* 709 */;
-import context from "context" /* 5607 */;
+import context from "context" /* 5641 */;
 import closure_2 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 createCacheKey = { formHintText: null, redesignHorizontalPadding: null, horizonatalPadding: null };
@@ -37,7 +37,7 @@ export default function FormHint(inset) {
     const items = [redesignHorizontalPadding, style];
     obj[2] = items;
     obj[3] = children;
-    let tmp4Result = tmp4(tmp2(4474).Text, obj);
+    let tmp4Result = tmp4(tmp2(4477).Text, obj);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;

@@ -1,23 +1,23 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17099
+// Function ID: 17100
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1386, 12069, 12072, 502, 21, 15860, 709, 4478, 4927, 8378, 4204, 12068, 16894, 6262, 644, 16890, 17014, 4217, 12075, 10955, 4928, 7808, 10643, 2]
+// Dependencies: [32, 19, 1386, 12205, 12208, 502, 21, 12119, 709, 4481, 4934, 8525, 4205, 12204, 16980, 7327, 644, 16976, 17100, 4218, 12211, 10924, 4935, 7013, 10554, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17013 (FloatingCTA)
+// Module 17099 (FloatingCTA)
 import ThemesDefault from "Themes" /* 709 */;
-import ManaContext from "ManaContext" /* 4204 */;
-import Stack from "Stack" /* 4927 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8378 */;
-import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 15860 */;
+import ManaContext from "ManaContext" /* 4205 */;
+import Stack from "Stack" /* 4934 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8525 */;
+import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 12119 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import { UI_SHOW_HIDE_PHYSICS } from "VoicePanelModes" /* 12069 */;
-import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 12072 */;
+import { UI_SHOW_HIDE_PHYSICS } from "VoicePanelModes" /* 12205 */;
+import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 12208 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function FloatingCTA(trailing) {
@@ -50,7 +50,7 @@ class VoicePanelFloatingCTAContainer {
     channelId = context.channelId;
     safeArea = context.safeArea;
     tmp5 = require("useChannelFloatingCTAContent")(channelId);
-    obj = require("canShowTimeRecurringContent");
+    obj = require("useGetVisibleContent");
     first = gestureState(obj.useGetDismissibleContent(tmp5), 1)[0];
     closure_7 = first;
     obj2 = require("defaultAreStatesEqual");
@@ -71,7 +71,7 @@ class VoicePanelFloatingCTAContainer {
     floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
     tmp10 = require("useControlsHiddenPresentation")(context.mode, wrapperSpecs, { state, cleanUp });
     ({ hiddenProps, hiddenStyles } = tmp10);
-    obj4 = require("module_4217");
+    obj4 = require("module_4218");
     fn = function f() {
       let obj = wrapperSpecs(controlsSpecs[20]);
       const controlsDefaultWidth = obj.getControlsDefaultWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right);

@@ -1,13 +1,13 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8017
+// Function ID: 8018
 // Name: getEphemeralReasonMessage
-// Dependencies: [8008, 1233, 2]
+// Dependencies: [8018, 1233, 2]
 // Exports: getEphemeralReasonMessage
 
-// Module 8007 (getEphemeralReasonMessage)
+// Module 8017 (getEphemeralReasonMessage)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import EphemeralMessageReason from "EphemeralMessageReason" /* 8008 */;
+import EphemeralMessageReason from "EphemeralMessageReason" /* 8018 */;
 
 const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandUserAppUtils.tsx");
 

@@ -1,27 +1,27 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 9881
+// Function ID: 9882
 // Name: ApplicationStreamPresets
-// Dependencies: [32, 19, 4572, 4500, 1386, 1908, 1980, 1921, 4537, 673, 4542, 21, 4478, 709, 1235, 4445, 10069, 2008, 500, 586, 10070, 10075, 5962, 5982, 4217, 4663, 9807, 7745, 1233, 2206, 10076, 10078, 6015, 4474, 4196, 9186, 5631, 5633, 5562, 6001, 7704, 8181, 688, 7705, 9184, 7608, 8988, 6002, 4929, 10068, 2]
+// Dependencies: [32, 19, 4575, 4503, 1386, 1908, 1980, 1921, 4540, 673, 4545, 21, 4481, 709, 1235, 4448, 9881, 2008, 500, 586, 9882, 9887, 7102, 7122, 4218, 4670, 9019, 6900, 1233, 2206, 9888, 9890, 5544, 4477, 4196, 9892, 7090, 6567, 7063, 5642, 5640, 9242, 688, 5643, 9893, 7785, 9899, 7141, 4936, 9880, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10069 (ApplicationStreamPresets)
+// Module 9881 (ApplicationStreamPresets)
 import encodeProperties from "encodeProperties" /* 500 */;
 import ThemesDefault from "Themes" /* 709 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "ApplicationStreamPresets" /* 4572 */;
-import closure_6 from "reset" /* 4500 */;
+import closure_5 from "ApplicationStreamPresets" /* 4575 */;
+import closure_6 from "reset" /* 4503 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import closure_9 from "handleConnectionOpen" /* 1980 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4537 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4540 */;
 import { ApplicationStreamStates } from "ME" /* 673 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
@@ -327,5 +327,5 @@ export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(
   obj = { impressionName: encodeProperties.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: null };
   obj = { location_stack: closure_1 };
   obj[1] = obj;
-  obj.openLazy(asyncRequireImpl(10069, dependencyMap.paths), MobileGoLiveActionSheet, obj);
+  obj.openLazy(asyncRequireImpl(9881, dependencyMap.paths), MobileGoLiveActionSheet, obj);
 };

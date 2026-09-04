@@ -1,18 +1,18 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 14963
+// Function ID: 14964
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4478, 4197, 709, 4204, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 4197, 709, 4205, 2]
 // Exports: default
 
-// Module 14881 (BountiesScrollIndicatorAnimation)
+// Module 14963 (BountiesScrollIndicatorAnimation)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import ManaContext from "ManaContext" /* 4204 */;
+import ManaContext from "ManaContext" /* 4205 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let closure_7 = createCacheKey.createStyles(() => ({ container: { width: 80, height: 80 } }));

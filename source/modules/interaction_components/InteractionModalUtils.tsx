@@ -1,24 +1,24 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17310
+// Function ID: 17311
 // Name: getData
-// Dependencies: [5, 32, 19, 1215, 1386, 4855, 1991, 4299, 4854, 14291, 8034, 673, 8033, 1954, 1430, 9484, 6110, 586, 5950, 11, 706, 8175, 1233, 38, 4740, 7597, 8038, 5083, 527, 684, 2]
+// Dependencies: [5, 32, 19, 1215, 1386, 4862, 1991, 4302, 4861, 14323, 8044, 673, 8043, 1954, 1431, 9441, 7194, 586, 5553, 11, 706, 9236, 1233, 38, 4747, 7774, 8048, 5090, 527, 684, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 17224 (getData)
+// Module 17310 (getData)
 import _modDef38 from "module_38" /* 38 */;
-import isInteractionComponent from "isInteractionComponent" /* 8033 */;
+import isInteractionComponent from "isInteractionComponent" /* 8043 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import { DraftType } from "handleChanged" /* 4855 */;
+import { DraftType } from "handleChanged" /* 4862 */;
 import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "handleConnectionOpen" /* 4299 */;
-import closure_11 from "map" /* 4854 */;
-import closure_12 from "getModalState" /* 14291 */;
-import { InteractionModalState } from "getModalState" /* 14291 */;
-import closure_14 from "getInteractionComponentStates" /* 8034 */;
+import closure_10 from "handleConnectionOpen" /* 4302 */;
+import closure_11 from "map" /* 4861 */;
+import closure_12 from "getModalState" /* 14323 */;
+import { InteractionModalState } from "getModalState" /* 14323 */;
+import closure_14 from "getInteractionComponentStates" /* 8044 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
@@ -2129,7 +2129,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            closure_5 = arr.map((closure_0, closure_1) => lib(5083).getAttachmentPayload(closure_0, closure_1));
+            closure_5 = arr.map((closure_0, closure_1) => lib(5090).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);

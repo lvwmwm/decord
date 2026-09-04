@@ -1,23 +1,23 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 10239
+// Function ID: 10240
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1301, 9119, 1337, 21, 4478, 709, 1234, 686, 1430, 5049, 5077, 5502, 1362, 5595, 5596, 1296, 9166, 2]
+// Dependencies: [19, 17, 1301, 10219, 1337, 21, 4481, 709, 1234, 686, 1431, 5056, 5084, 5542, 1362, 7071, 7072, 1296, 10240, 2]
 
-// Module 9165 (EmojiItemLockedOverlay)
+// Module 10239 (EmojiItemLockedOverlay)
 import nDefault from "n" /* 686 */;
 import ThemesDefault from "Themes" /* 709 */;
 import set2 from "set" /* 1234 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import LockIcon from "LockIcon" /* 5049 */;
-import preloadDefault from "preload" /* 5502 */;
-import ViewDefault from "View" /* 9166 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import LockIcon from "LockIcon" /* 5056 */;
+import preloadDefault from "preload" /* 5542 */;
+import ViewDefault from "View" /* 10240 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_4 from "handleThemeChange" /* 1301 */;
-import IMAGE_SIZE from "IMAGE_SIZE" /* 9119 */;
+import IMAGE_SIZE from "IMAGE_SIZE" /* 10219 */;
 import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1337 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 require = arg1;

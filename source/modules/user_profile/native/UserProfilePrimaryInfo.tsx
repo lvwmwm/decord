@@ -1,24 +1,24 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 11084
+// Function ID: 11085
 // Name: DisplayName
-// Dependencies: [19, 17, 8573, 6010, 673, 7865, 8579, 21, 4478, 709, 8941, 8942, 8951, 5077, 8953, 4474, 8955, 7485, 4333, 8989, 1233, 9013, 8574, 9014, 6255, 1901, 4194, 8563, 9016, 9017, 9021, 5399, 695, 7484, 1234, 9022, 9023, 9024, 1492, 8086, 9025, 4322, 2]
+// Dependencies: [19, 17, 8114, 7148, 673, 7875, 8125, 21, 4481, 709, 10830, 10831, 9367, 5084, 11085, 4477, 11087, 7662, 4336, 11119, 1233, 11121, 8115, 11122, 7320, 1901, 4194, 8173, 11124, 11125, 11129, 5407, 695, 7661, 1234, 11130, 11131, 11132, 1492, 8096, 9113, 4325, 2]
 // Exports: default
 
-// Module 8940 (DisplayName)
+// Module 11084 (DisplayName)
 import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import guildHasTag from "guildHasTag" /* 8086 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8941 */;
-import memoResult1Default from "memoResult1" /* 9025 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import guildHasTag from "guildHasTag" /* 8096 */;
+import memoResult1Default from "memoResult1" /* 9113 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10830 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8573 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6010 */;
+import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
 import ME from "ME" /* 673 */;
-import { GuildTagBadgeSize } from "items" /* 7865 */;
-import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8579 */;
+import { GuildTagBadgeSize } from "items" /* 7875 */;
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8125 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class DisplayName {

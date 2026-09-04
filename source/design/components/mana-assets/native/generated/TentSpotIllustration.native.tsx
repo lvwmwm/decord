@@ -1,14 +1,14 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 6484
+// Function ID: 6485
 // Name: TentSpotIllustration
-// Dependencies: [21, 5502, 7104, 2]
+// Dependencies: [21, 5542, 6485, 2]
 // Exports: TentSpotIllustration
 
-// Module 7103 (TentSpotIllustration)
+// Module 6484 (TentSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7104 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6485 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TentSpotIllustration.native.tsx");

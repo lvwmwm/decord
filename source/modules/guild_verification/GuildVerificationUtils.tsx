@@ -1,31 +1,30 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 12867
+// Function ID: 12868
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: [4300, 673, 4302, 1219, 7658, 2]
+// Dependencies: [4303, 673, 4305, 5480, 5524, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 13032 (inviteGuildHasPendingMemberDisabledVerification)
-import transitionTo from "transitionTo" /* 1219 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
-import openMemberVerificationModal from "openMemberVerificationModal" /* 7658 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4300 */;
-import ME from "ME" /* 673 */;
+// Module 12867 (inviteGuildHasPendingMemberDisabledVerification)
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
+import transitionToMemberVerification from "transitionToMemberVerification" /* 5480 */;
+import openMemberVerificationModal from "openMemberVerificationModal" /* 5524 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4303 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 require = arg1;
-({ GuildFeatures: c3, Routes: c4 } = ME);
 let result = require("set").fileFinishedImporting("modules/guild_verification/GuildVerificationUtils.tsx");
 
 export const inviteGuildHasPendingMemberDisabledVerification = function inviteGuildHasPendingMemberDisabledVerification(guild) {
   const features = guild.features;
   let hasItem;
   if (features != null) {
-    hasItem = features.includes(constants.MEMBER_VERIFICATION_GATE_ENABLED);
+    hasItem = features.includes(GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED);
   }
   if (hasItem) {
     const features2 = guild.features;
     let hasItem1;
     if (features2 != null) {
-      hasItem1 = features2.includes(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+      hasItem1 = features2.includes(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
     }
     hasItem = hasItem1;
   }
@@ -35,9 +34,9 @@ export const openVerificationModalOrTransitionToApplication = function openVerif
   request = request.getRequest(id);
   if (null != request) {
     if (request.applicationStatus !== MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.STARTED) {
-      transitionTo.transitionTo(closure_4.GUILD_MEMBER_VERIFICATION(id));
-      const tmp2Result = transitionTo;
+      const result = transitionToMemberVerification.transitionToMemberVerification(id);
+      const tmp2Result = transitionToMemberVerification;
     }
   }
-  const result = openMemberVerificationModal.openMemberVerificationModal(id);
+  const result1 = openMemberVerificationModal.openMemberVerificationModal(id);
 };

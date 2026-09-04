@@ -1,12 +1,12 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 9106
+// Function ID: 9107
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: useIsDisplayNameStylesFlywheelSettersEnabled, useIsDisplayNameStylesFlywheelViewersEnabled
 
-// Module 8943 (apexExperiment)
+// Module 9106 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { 1: null };
 obj[1] = { enabled: true };

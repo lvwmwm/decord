@@ -1,14 +1,14 @@
-// Module ID: 6867
-// Function ID: 6868
+// Module ID: 6248
+// Function ID: 6249
 // Name: NitroTicketSpotIllustration
-// Dependencies: [21, 5502, 6868, 2]
+// Dependencies: [21, 5542, 6249, 2]
 // Exports: NitroTicketSpotIllustration
 
-// Module 6867 (NitroTicketSpotIllustration)
+// Module 6248 (NitroTicketSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6868 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6249 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroTicketSpotIllustration.native.tsx");

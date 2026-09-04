@@ -1,14 +1,14 @@
 // Module ID: 1985
 // Function ID: 1986
 // Name: GuildRoleRecordTypeTag
-// Dependencies: [1426, 503, 12, 2]
+// Dependencies: [1427, 503, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
 // Module 1985 (GuildRoleRecordTypeTag)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import fromString from "fromString" /* 503 */;
-import isValueEqual from "isValueEqual" /* 1426 */;
+import isValueEqual from "isValueEqual" /* 1427 */;
 
 const TypeTag = isValueEqual.TypeTag;
 const result = set.fileFinishedImporting("records/GuildRoleRecord.tsx");

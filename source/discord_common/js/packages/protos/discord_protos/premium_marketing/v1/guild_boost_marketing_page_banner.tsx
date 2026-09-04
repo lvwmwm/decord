@@ -1,13 +1,13 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 10624
+// Function ID: 10625
 // Name: create
-// Dependencies: [32, 1306, 8476, 8466, 8467, 2]
+// Dependencies: [32, 1306, 10609, 10599, 10600, 2]
 
-// Module 8491 (create)
+// Module 10624 (create)
 import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 8466 */;
-import create2 from "create" /* 8467 */;
-import create3 from "create" /* 8476 */;
+import create from "create" /* 10599 */;
+import create2 from "create" /* 10600 */;
+import create3 from "create" /* 10609 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;
 
@@ -19,7 +19,7 @@ class GuildBoostMarketingPageBanner$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(8476).ThemeAwareAsset;
+            return callback(10609).ThemeAwareAsset;
           }
     };
     items = [, , , , , ];
@@ -29,7 +29,7 @@ class GuildBoostMarketingPageBanner$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(8466).LocalizedString;
+            return callback(10599).LocalizedString;
           }
     };
     obj = { no: 3, name: "body_localized", kind: "message", T: null };
@@ -45,7 +45,7 @@ class GuildBoostMarketingPageBanner$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8467).HelpArticle;
+            return callback(10600).HelpArticle;
           }
     };
     items[4] = { no: 5, name: "header", kind: "scalar", T: 9 };
@@ -199,7 +199,7 @@ let obj = {
   name: "asset",
   kind: "message",
   T() {
-    return callback(8476).ThemeAwareAsset;
+    return callback(10609).ThemeAwareAsset;
   }
 };
 let items = [
@@ -209,7 +209,7 @@ let items = [
     name: "header_localized",
     kind: "message",
     T() {
-      return callback(8466).LocalizedString;
+      return callback(10599).LocalizedString;
     }
   },
 ,
@@ -230,7 +230,7 @@ items[3] = {
   name: "help_article",
   kind: "message",
   T() {
-    return callback(8467).HelpArticle;
+    return callback(10600).HelpArticle;
   }
 };
 items[4] = { no: 5, name: "header", kind: "scalar", T: 9 };

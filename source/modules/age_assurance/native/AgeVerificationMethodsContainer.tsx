@@ -1,16 +1,16 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8516
+// Function ID: 8517
 // Name: AgeVerificationMethodsContainer
-// Dependencies: [19, 8702, 8709, 21, 4478, 709, 8708, 7357, 7362, 4927, 1296, 1233, 6001, 4474, 2918, 5385, 4929, 8707, 5608, 8701, 2]
+// Dependencies: [19, 8342, 8349, 21, 4481, 709, 8348, 7535, 7540, 4934, 1296, 1233, 5642, 4477, 2918, 5393, 4936, 8347, 5560, 8341, 2]
 // Exports: AgeVerificationMethodsContainer
 
-// Module 8753 (AgeVerificationMethodsContainer)
+// Module 8516 (AgeVerificationMethodsContainer)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import { VerificationMethod } from "set" /* 8702 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8709 */;
+import { VerificationMethod } from "set" /* 8342 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8349 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -29,7 +29,7 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
   const prop = ageVerificationMethods.ageVerificationMethods;
   const modalSessionId = ageVerificationMethods.modalSessionId;
   const tmp = callback2();
-  let obj = prop(8708);
+  let obj = prop(8348);
   const isSuspendedUser = obj.useIsSuspendedUser();
   const items = [prop];
   const effect = React.useEffect(() => {
@@ -68,7 +68,7 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
     obj1[1] = mapped;
     items1[1] = tmp7(tmp8, obj1);
     obj[2] = items1;
-    const items2 = [tmp6(prop(4927).Stack, obj), ];
+    const items2 = [tmp6(prop(4934).Stack, obj), ];
     let tmp7Result = isSuspendedUser;
     if (isSuspendedUser) {
       let obj2 = { variant: "text-xs/medium", children: null };
@@ -78,25 +78,25 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
         modalSessionId(table[19]).openUrl(constants.LEARN_MORE_UU_APPEAL_LINK);
       };
       obj2[1] = intl4.format(modalSessionId(2918).htWh1G, obj3);
-      tmp7Result = tmp7(tmp2(4474).Text, obj2);
+      tmp7Result = tmp7(tmp2(4477).Text, obj2);
     }
     const obj4 = { spacing: 8, align: "center", children: null };
     items2[1] = tmp7Result;
     obj4[2] = items2;
-    return tmp6(prop(4927).Stack, obj4);
+    return tmp6(prop(4934).Stack, obj4);
   }
   const obj5 = { direction: "vertical", align: "center", spacing: 16, style: tmp.errorContainer, children: null };
   const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.noMethodsText, children: null };
   const intl2 = tmp2(1233).intl;
   obj6[3] = intl2.string(modalSessionId(2918).cR6336);
-  const items3 = [callback(prop(4474).Text, obj6), ];
+  const items3 = [callback(prop(4477).Text, obj6), ];
   const obj7 = { style: tmp.buttonGroup, children: null };
   const obj8 = { variant: "primary", size: "lg", text: null, onPress: null };
   const intl3 = tmp2(1233).intl;
   obj8[2] = intl3.string(modalSessionId(2918).hDvmYP);
-  obj8[3] = prop(8707).getAgeVerificationMethods;
-  obj7[1] = callback(prop(4929).Button, obj8);
-  items3[1] = callback(prop(5385).ButtonGroup, obj7);
+  obj8[3] = prop(8347).getAgeVerificationMethods;
+  obj7[1] = callback(prop(4936).Button, obj8);
+  items3[1] = callback(prop(5393).ButtonGroup, obj7);
   obj5[4] = items3;
-  mapped = tmp6(tmp2(4927).Stack, obj5);
+  mapped = tmp6(tmp2(4934).Stack, obj5);
 };

@@ -1,20 +1,20 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11435
+// Function ID: 11436
 // Name: AppStoreOverlayStatCardItem
-// Dependencies: [19, 17, 21, 4478, 709, 11328, 1233, 11329, 4474, 1234, 5661, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 11436, 1233, 11437, 4477, 1234, 6595, 2]
 // Exports: default
 
-// Module 11327 (AppStoreOverlayStatCardItem)
+// Module 11435 (AppStoreOverlayStatCardItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5661 */;
-import formatAppStoreRatingValue from "formatAppStoreRatingValue" /* 11328 */;
-import FractionalStarDefault from "FractionalStar" /* 11329 */;
+import Text from "Text" /* 4477 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6595 */;
+import formatAppStoreRatingValue from "formatAppStoreRatingValue" /* 11436 */;
+import FractionalStarDefault from "FractionalStar" /* 11437 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AppStoreOverlayStatCardItem(onRatingPress) {
@@ -34,10 +34,10 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const result = obj2.formatAppStoreRatingValue(stat.rating, getSystemLocale.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      let tmp9Result = tmp9(11328);
+      let tmp9Result = tmp9(11436);
       result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1233).intl.currentLocale);
     }
-    tmp9Result = tmp9(11328);
+    tmp9Result = tmp9(11436);
     const appStoreStarFillAmounts = tmp9Result.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1233).intl;
     let obj = { label: null, rating: null, maxRating: null, ratingCount: null };
@@ -104,7 +104,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     if (null == secondaryContent) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
       obj4[3] = secondaryText;
-      secondaryContent = tmp23(tmp20(4474).Text, obj4);
+      secondaryContent = tmp23(tmp20(4477).Text, obj4);
     }
     obj3[1] = secondaryContent;
     tmp23Result = tmp23(closure_5, obj3);

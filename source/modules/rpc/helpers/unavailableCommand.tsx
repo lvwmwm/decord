@@ -1,12 +1,12 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14443
+// Function ID: 14444
 // Name: unsupportedCommand
-// Dependencies: [673, 9520, 2]
+// Dependencies: [673, 9483, 2]
 
-// Module 14411 (unsupportedCommand)
+// Module 14443 (unsupportedCommand)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import prototypeDefault from "prototype" /* 9520 */;
+import prototypeDefault from "prototype" /* 9483 */;
 
 const RPCErrors = ME.RPCErrors;
 let obj = {

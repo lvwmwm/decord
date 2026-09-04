@@ -1,13 +1,13 @@
-// Module ID: 9279
-// Function ID: 9280
+// Module ID: 12542
+// Function ID: 12543
 // Name: getNoMutualFriendsSource
-// Dependencies: [19, 17, 21, 8930, 9280, 9281, 9282, 1362, 2]
+// Dependencies: [19, 17, 21, 8164, 12543, 12544, 12545, 1362, 2]
 // Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 9279 (getNoMutualFriendsSource)
+// Module 12542 (getNoMutualFriendsSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getIllustrationSource from "getIllustrationSource" /* 8930 */;
+import getIllustrationSource from "getIllustrationSource" /* 8164 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getNoMutualFriendsSource = function getNoMutualFriendsSource(theme)
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9280);
+      return callback(12543);
     },
     darker() {
-      return callback(9281);
+      return callback(12544);
     },
     light() {
-      return callback(9282);
+      return callback(12545);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useNoMutualFriendsSource = function useNoMutualFriendsSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9280);
+      return callback(12543);
     },
     darker() {
-      return callback(9281);
+      return callback(12544);
     },
     light() {
-      return callback(9282);
+      return callback(12545);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const NoMutualFriends = function NoMutualFriends(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9280);
+      return callback(12543);
     },
     darker() {
-      return callback(9281);
+      return callback(12544);
     },
     light() {
-      return callback(9282);
+      return callback(12545);
     }
   };
   obj = {};

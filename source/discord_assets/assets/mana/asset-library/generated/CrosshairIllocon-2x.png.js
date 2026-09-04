@@ -1,9 +1,9 @@
-// Module ID: 6448
-// Function ID: 6449
+// Module ID: 5829
+// Function ID: 5830
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6448 (metadata)
+// Module 5829 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CrosshairIllocon-2x.png.js");

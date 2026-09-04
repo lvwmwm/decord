@@ -1,0 +1,10 @@
+// Module ID: 11268
+// Function ID: 11269
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 11268 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "634e3e2f609abec6ee1af702b841050e", name: "channel_following_success_3", type: "png" });

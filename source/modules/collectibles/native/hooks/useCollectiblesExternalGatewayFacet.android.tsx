@@ -1,10 +1,10 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 10940
+// Function ID: 10941
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [19, 1921, 586, 10969, 2]
+// Dependencies: [19, 1921, 586, 8778, 2]
 // Exports: default
 
-// Module 10968 (useCollectiblesExternalGatewayFacet)
+// Module 10940 (useCollectiblesExternalGatewayFacet)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;

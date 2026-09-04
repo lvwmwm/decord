@@ -1,10 +1,10 @@
-// Module ID: 9506
-// Function ID: 9507
+// Module ID: 9474
+// Function ID: 9475
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1980, 5364, 2]
+// Dependencies: [5, 1980, 5372, 2]
 // Exports: default
 
-// Module 9506 (_selectAndWaitForVoiceChannelJoin)
+// Module 9474 (_selectAndWaitForVoiceChannelJoin)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "handleConnectionOpen" /* 1980 */;
 

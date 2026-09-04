@@ -1,14 +1,14 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14862
+// Function ID: 14863
 // Name: route
-// Dependencies: [673, 11292, 1233, 7743, 14782, 2]
+// Dependencies: [673, 11400, 1233, 6898, 14863, 2]
 
-// Module 14781 (route)
+// Module 14862 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import KeyIcon from "KeyIcon" /* 7743 */;
-import createToggle from "createToggle" /* 11292 */;
+import KeyIcon from "KeyIcon" /* 6898 */;
+import createToggle from "createToggle" /* 11400 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.AUTHORIZED_APPS,
   getComponent() {
-    return require(14782) /* UserSettingsAuthedApps */.default;
+    return require(14863) /* UserSettingsAuthedApps */.default;
   }
 };
 const route = createToggle.createRoute(obj);

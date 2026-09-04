@@ -1,15 +1,15 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12436
+// Function ID: 12437
 // Name: items
-// Dependencies: [32, 19, 1908, 4364, 4365, 673, 4368, 586, 4384, 2]
+// Dependencies: [32, 19, 1908, 4367, 4368, 673, 4371, 586, 4387, 2]
 // Exports: default
 
-// Module 12304 (items)
+// Module 12436 (items)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "calculateAppliedBoosts" /* 4364 */;
-import { GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS as closure_7 } from "BoostedGuildTiers" /* 4365 */;
+import closure_6 from "calculateAppliedBoosts" /* 4367 */;
+import { GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS as closure_7 } from "BoostedGuildTiers" /* 4368 */;
 import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;

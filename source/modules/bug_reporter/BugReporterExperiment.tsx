@@ -1,11 +1,11 @@
-// Module ID: 10324
-// Function ID: 10325
+// Module ID: 10144
+// Function ID: 10145
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 
-// Module 10324 (apexExperiment)
+// Module 10144 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { hasBugReporterAccess: true };

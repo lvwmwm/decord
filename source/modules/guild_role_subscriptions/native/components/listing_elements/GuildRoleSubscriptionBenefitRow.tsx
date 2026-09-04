@@ -1,19 +1,19 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15166
+// Function ID: 15167
 // Name: BenefitRow
-// Dependencies: [19, 17, 1386, 21, 4478, 4134, 15080, 1296, 4474, 586, 4674, 1233, 4982, 2]
+// Dependencies: [19, 17, 1386, 21, 4481, 4134, 15164, 1296, 4477, 586, 4681, 1233, 4989, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 15082 (BenefitRow)
+// Module 15166 (BenefitRow)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1296 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import Text from "Text" /* 4474 */;
-import EmojiIconDefault from "EmojiIcon" /* 15080 */;
+import Text from "Text" /* 4477 */;
+import EmojiIconDefault from "EmojiIcon" /* 15164 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function BenefitRow(description) {
@@ -52,21 +52,21 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = benefit(1233).intl;
   obj[2] = "[" + intl.string(benefit(1233).t.bz1PZX) + "]";
-  let tmp8 = callback(benefit(4474).Text, obj);
+  let tmp8 = callback(benefit(4477).Text, obj);
   if (null != stateFromStores) {
     obj = { style: null, children: null };
     obj[0] = tmp.channelTitle;
     obj1 = { style: null, size: null, source: null };
     obj1[0] = tmp.channelIcon;
     obj1[1] = tmp2(1296).Icon.Sizes.CUSTOM;
-    obj1[2] = tmp2(4982).getChannelIcon(stateFromStores);
+    obj1[2] = tmp2(4989).getChannelIcon(stateFromStores);
     const items2 = [tmp7(tmp2(1296).Icon, obj1), ];
     const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     obj2[2] = tmp6;
-    items2[1] = tmp7(tmp2(4474).Text, obj2);
+    items2[1] = tmp7(tmp2(4477).Text, obj2);
     obj[1] = items2;
     tmp8 = callback2(View, obj);
-    const tmp2Result = tmp2(4982);
+    const tmp2Result = tmp2(4989);
   }
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;

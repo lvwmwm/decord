@@ -1,23 +1,23 @@
-// Module ID: 13243
-// Function ID: 13244
+// Module ID: 13276
+// Function ID: 13277
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 7152, 673, 21, 4478, 709, 4139, 1233, 3016, 5972, 4474, 586, 12, 2]
+// Dependencies: [19, 17, 7332, 673, 21, 4481, 709, 4139, 1233, 3016, 7112, 4477, 586, 12, 2]
 // Exports: default
 
-// Module 13243 (AccountCreditTier)
+// Module 13276 (AccountCreditTier)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import Text from "Text" /* 4474 */;
-import GameIcon from "GameIcon" /* 5972 */;
-import GameIconDefault from "GameIcon" /* 5972 */;
+import Text from "Text" /* 4477 */;
+import GameIcon from "GameIcon" /* 7112 */;
+import GameIconDefault from "GameIcon" /* 7112 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "addEntitlement" /* 7152 */;
+import closure_4 from "addEntitlement" /* 7332 */;
 import { SubscriptionStatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AccountCreditTier(arg0) {
@@ -78,7 +78,7 @@ function AccountCreditTier(arg0) {
     const obj5 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
     obj5[0] = tmp.subText;
     obj5[3] = stringResult;
-    tmp21Result = tmp21(tmp2(4474).Text, obj5);
+    tmp21Result = tmp21(tmp2(4477).Text, obj5);
   }
   items2[1] = tmp21Result;
   obj3[1] = items2;
@@ -139,7 +139,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj[0] = tmp.title;
       const intl = tmp2(1233).intl;
       obj[4] = intl.string(tmp2(1233).t.YugZY0);
-      const items1 = [callback(tmp2(4474).Text, obj), , , ];
+      const items1 = [callback(tmp2(4477).Text, obj), , , ];
       obj1 = { style: null, children: null };
       const items2 = [tmp.creditList, creditListContainerStyle];
       obj1[0] = items2;
@@ -154,7 +154,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj2[0] = tmp.creditDescription;
       const intl2 = tmp2(1233).intl;
       obj2[2] = intl2.string(tmp2(1233).t.kNEjGm);
-      items1[2] = callback(tmp2(4474).Text, obj2);
+      items1[2] = callback(tmp2(4477).Text, obj2);
       let tmp9Result = null;
       if (null != currentSubscription) {
         tmp9Result = null;
@@ -163,7 +163,7 @@ export default function PremiumAccountCredit(currentSubscription) {
           obj3[0] = tmp.creditDescription;
           const intl3 = tmp2(1233).intl;
           obj3[2] = intl3.string(tmp2(1233).t.azRP0E);
-          tmp9Result = callback(tmp2(4474).Text, obj3);
+          tmp9Result = callback(tmp2(4477).Text, obj3);
         }
       }
       items1[3] = tmp9Result;

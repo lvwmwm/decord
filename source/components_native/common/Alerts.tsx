@@ -1,23 +1,23 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 16837
+// Function ID: 16838
 // Name: StyleSheet
-// Dependencies: [19, 17, 4470, 13643, 14290, 4712, 11370, 21, 16751, 16752, 16756, 16757, 4478, 709, 4204, 4859, 4912, 6058, 586, 640, 4926, 12223, 1296, 2]
+// Dependencies: [19, 17, 4473, 13676, 14322, 4719, 11477, 21, 16838, 16839, 16843, 16844, 4481, 709, 4205, 4866, 4919, 5533, 586, 640, 4933, 12355, 1296, 2]
 
-// Module 16750 (StyleSheet)
+// Module 16837 (StyleSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4859 from "module_4859" /* 4859 */;
-import Dialog from "Dialog" /* 4912 */;
-import _modDef6058 from "module_6058" /* 6058 */;
-import getStoresDefault from "getStores" /* 16751 */;
+import _modDef4866 from "module_4866" /* 4866 */;
+import Dialog from "Dialog" /* 4919 */;
+import _modDef5533 from "module_5533" /* 5533 */;
+import getStoresDefault from "getStores" /* 16838 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import importDefaultResult from "initialize" /* 13643 */;
-import importDefaultResult1 from "handleUpdateVADPermission" /* 14290 */;
-import importDefaultResult2 from "fetchSurveyIfNeeded" /* 4712 */;
-import closure_12 from "getAlert" /* 11370 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import importDefaultResult from "initialize" /* 13676 */;
+import importDefaultResult1 from "handleUpdateVADPermission" /* 14322 */;
+import importDefaultResult2 from "fetchSurveyIfNeeded" /* 4719 */;
+import closure_12 from "getAlert" /* 11477 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -32,7 +32,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(16752) /* render */.default;
+    return require(16839) /* render */.default;
   }
 };
 items = [importDefaultResult];
@@ -44,7 +44,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(16756) /* render */.default;
+    return require(16843) /* render */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -57,7 +57,7 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(16757) /* MobileSurvey */.default;
+    return require(16844) /* MobileSurvey */.default;
   }
 };
 let closure_15 = new getStoresDefault(items1);
@@ -128,7 +128,7 @@ AlertWrapper.prototype["render"] = function render() {
     str = "alerts-component";
   }
   const props = self.props;
-  let obj = { onClose: _modDef4859.close };
+  let obj = { onClose: _modDef4866.close };
   ({ opacity, scale } = self.state);
   obj = { dialogKey: str, onDismiss: self.handleRequestClose, children: null };
   obj = { style: items, children: null };
@@ -141,11 +141,11 @@ AlertWrapper.prototype["render"] = function render() {
   const items3 = [{ scale }];
   items2[1] = callback(RN.View, { style: { transform: items3 }, children: renderAlertResult });
   obj[1] = items2;
-  obj[2] = callback2(_modDef6058, obj);
+  obj[2] = callback2(_modDef5533, obj);
   return callback(Dialog.Dialog, obj);
 };
 AlertWrapper.contextType = require("ManaContext").ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "HermesInternal", props: "r" });
+let closure_18 = Object.freeze({ renderAlert: "ip", renderKey: "isArray", props: "isArray" });
 let obj1 = {
   stores: items3,
   center: true,
@@ -153,7 +153,7 @@ let obj1 = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(16757) /* MobileSurvey */.default;
+    return require(16844) /* MobileSurvey */.default;
   }
 };
 const tmp7 = new getStoresDefault(items1);
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "HermesInternal", props: "r" };
+        return { renderAlert: "ip", renderKey: "isArray", props: "isArray" };
       }
     }
   });

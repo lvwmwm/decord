@@ -1,11 +1,11 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10030
+// Function ID: 10031
 // Name: experiment
-// Dependencies: [4389, 2]
+// Dependencies: [4392, 2]
 
-// Module 10210 (experiment)
+// Module 10030 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4389 */;
+import createExperiment from "createExperiment" /* 4392 */;
 
 const items = [{ id: 1, label: "Automod Mention Raid Limit", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2022-12_mention_raid_limit", label: "Automod Mention Raid Limit", defaultConfig: { enabled: false }, treatments: items });

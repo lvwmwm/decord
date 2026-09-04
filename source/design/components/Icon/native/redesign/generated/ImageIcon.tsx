@@ -1,14 +1,14 @@
-// Module ID: 5041
-// Function ID: 5042
+// Module ID: 5048
+// Function ID: 5049
 // Name: ImageIcon
-// Dependencies: [19, 21, 709, 4196, 5006, 2]
+// Dependencies: [19, 21, 709, 4196, 5013, 2]
 // Exports: ImageIcon
 
-// Module 5041 (ImageIcon)
+// Module 5048 (ImageIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5006 */;
+import registerAsset from "registerAsset" /* 5013 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

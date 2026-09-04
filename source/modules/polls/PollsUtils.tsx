@@ -1,26 +1,26 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 7693
+// Function ID: 7694
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1386, 7517, 4736, 4120, 4130, 7584, 673, 511, 586, 6077, 684, 1902, 4747, 1233, 7518, 12, 4673, 2]
+// Dependencies: [1386, 7694, 4743, 4120, 4130, 7761, 673, 511, 586, 7161, 684, 1902, 4754, 1233, 7695, 12, 4680, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7516 (getSampleOfVoterUsernamesForAnswer)
+// Module 7693 (getSampleOfVoterUsernamesForAnswer)
 import v1 from "v1" /* 511 */;
 import setDefault from "set" /* 684 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4747 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4754 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reactionKey" /* 7517 */;
-import closure_5 from "reinjectEphemerals" /* 4736 */;
+import closure_4 from "reactionKey" /* 7694 */;
+import closure_5 from "reinjectEphemerals" /* 4743 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7584 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7761 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7518).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7695).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -102,7 +102,7 @@ function formatVoterTooltipText(arr, arg1) {
 const result = require("set").fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
-  const obj = { text: "Array", image: "PX_16", localCreationAnswerId: v1.v4() };
+  const obj = { text: "Array", image: "context", localCreationAnswerId: v1.v4() };
   return obj;
 };
 export const generateLocalCreationAnswerId = function generateLocalCreationAnswerId() {

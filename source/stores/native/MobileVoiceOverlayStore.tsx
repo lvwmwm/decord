@@ -1,10 +1,10 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 9909
+// Function ID: 9910
 // Name: getUserAgnosticState
 // Dependencies: [673, 695, 1234, 1623, 586, 706, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 10089 (getUserAgnosticState)
+// Module 9909 (getUserAgnosticState)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import ME from "ME" /* 673 */;

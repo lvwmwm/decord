@@ -1,13 +1,13 @@
-// Module ID: 13602
-// Function ID: 13603
+// Module ID: 13635
+// Function ID: 13636
 // Name: initialize
-// Dependencies: [32, 6063, 673, 586, 706, 13603, 13604, 2]
+// Dependencies: [32, 6536, 673, 586, 706, 13636, 13637, 2]
 
-// Module 13602 (initialize)
+// Module 13635 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "hasConsented" /* 6063 */;
+import closure_4 from "hasConsented" /* 6536 */;
 import { Consents } from "ME" /* 673 */;
 
 let object = arg1;
@@ -61,7 +61,7 @@ prototype["isAppInstalled"] = function isAppInstalled(nextResult) {
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   const self = this;
   const items = [];
-  const iter = object(13603).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
+  const iter = object(13636).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -79,8 +79,8 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
     continue;
   }
   if (items.length > 0) {
-    object(13604).detectLocalApps(items);
-    const obj = object(13604);
+    object(13637).detectLocalApps(items);
+    const obj = object(13637);
   }
 };
 prototype["handleLocalAppDetectionComplete"] = function handleLocalAppDetectionComplete(result) {

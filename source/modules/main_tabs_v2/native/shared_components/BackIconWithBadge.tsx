@@ -1,19 +1,19 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 16327
+// Function ID: 16328
 // Name: IconWithBadge
-// Dependencies: [19, 17, 7391, 21, 4478, 709, 586, 16232, 1296, 8109, 1235, 5508, 5560, 4431, 2]
+// Dependencies: [19, 17, 7569, 21, 4481, 709, 586, 16318, 1296, 8743, 1235, 5583, 5635, 4434, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 16241 (IconWithBadge)
+// Module 16327 (IconWithBadge)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import XLargeIcon from "XLargeIcon" /* 4431 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5508 */;
+import XLargeIcon from "XLargeIcon" /* 4434 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5583 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 7391 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7569 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function IconWithBadge(includeNotificationsCount) {
@@ -33,7 +33,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(16232)().value;
+    num2 = memo(16318)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -75,7 +75,7 @@ function IconWithBadge(includeNotificationsCount) {
   } else {
     items4 = [];
   }
-  const tmp5Result = memo(8109);
+  const tmp5Result = memo(8743);
   const items5 = [closure_6(tmp5Result, { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, obj3) }), ];
   let tmp9Result = null;
   if (sum > 0) {
@@ -108,10 +108,10 @@ export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navi
   const items = [navigation];
   const obj = { includeNotificationsCount: flag, Icon: null };
   if (React.useMemo(() => navigation.getState().index > 0, items)) {
-    obj[1] = tmp3(5508).ArrowLargeLeftIcon;
+    obj[1] = tmp3(5583).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj[1] = tmp3(5560).XSmallIcon;
+    obj[1] = tmp3(5635).XSmallIcon;
     tmp5 = obj;
   }
   return closure_6(IconWithBadge, tmp5);

@@ -1,14 +1,14 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8356
+// Function ID: 8357
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 4864, 1233, 2918, 4864, 2]
+// Dependencies: [19, 21, 4871, 1233, 2918, 4871, 2]
 // Exports: default
 
-// Module 8716 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8356 (AgeVerificationQuestUnsupportedAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2918 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

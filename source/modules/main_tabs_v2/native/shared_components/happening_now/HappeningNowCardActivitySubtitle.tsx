@@ -1,21 +1,21 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 16001
+// Function ID: 16002
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: [19, 17, 1386, 673, 21, 4478, 586, 4674, 15135, 9442, 1233, 8119, 9273, 2]
+// Dependencies: [19, 17, 1386, 673, 21, 4481, 586, 4681, 15219, 9699, 1233, 8189, 10822, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 15915 (HappeningNowVoiceCardSubtitle)
+// Module 16001 (HappeningNowVoiceCardSubtitle)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import computeChannelNameDefault from "computeChannelName" /* 4674 */;
-import _isStreamingDefault from "_isStreaming" /* 8119 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9442 */;
-import HAPPENING_NOW_CARD_MARGIN_RIGHT from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 15135 */;
+import computeChannelNameDefault from "computeChannelName" /* 4681 */;
+import _isStreamingDefault from "_isStreaming" /* 8189 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9699 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHT from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 15219 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { ActivityTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -36,7 +36,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     obj[0] = stateFromStores;
     tmp8 = getChannelA11yLabelDefault(obj);
   }
-  obj[1] = jsx(voiceState(15135).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: computeChannelNameDefault(stateFromStores) });
+  obj[1] = jsx(voiceState(15219).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: computeChannelNameDefault(stateFromStores) });
   return <View style={callback().cardDetails}>{null}</View>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
@@ -70,7 +70,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     tmp3 = null;
     if (null != name) {
       if (!_isStreamingDefault(activity)) {
-        if (tmp4(9273)(activity)) {
+        if (tmp4(10822)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

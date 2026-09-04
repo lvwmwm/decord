@@ -1,20 +1,20 @@
-// Module ID: 4470
-// Function ID: 4471
+// Module ID: 4473
+// Function ID: 4474
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1302, 1301, 1339, 673, 4471, 4472, 4166, 586, 592, 1362, 706, 2]
+// Dependencies: [109, 1302, 1301, 1339, 673, 4474, 4475, 4166, 586, 592, 1362, 706, 2]
 
-// Module 4470 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4473 (maybeApplyNoTextColorForLightCustomTheme)
 import initializeDefault from "initialize" /* 586 */;
 import Storage7 from "Storage" /* 592 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import setDefault from "set" /* 4472 */;
+import setDefault from "set" /* 4475 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "initialize" /* 1302 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
 import closure_7 from "handleConnectionClosedOrResumed" /* 1339 */;
 import ME from "ME" /* 673 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4474 */;
 
 require = arg1;
 function maybeApplyNoTextColorForLightCustomTheme() {

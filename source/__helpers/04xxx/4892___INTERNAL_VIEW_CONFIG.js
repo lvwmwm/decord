@@ -1,18 +1,14 @@
 // Module ID: 4892
 // Function ID: 4893
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [17, 106, 65]
+// Dependencies: [17, 65]
 
 // Module 4892 (__INTERNAL_VIEW_CONFIG)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 const codegenNativeComponent = get_ActivityIndicator.codegenNativeComponent;
-let obj = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } }, validAttributes: null };
-obj = { iosPreventReattachmentOfDismissedScreens: true };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
-obj[2] = obj;
+const obj = { uiViewClassName: "RNSScreenStackHeaderSubview", validAttributes: { type: true, hidesSharedBackground: true, synchronousShadowStateUpdatesEnabled: true } };
 
-export default setRuntimeConfigProvider.get("RNSScreenStack", () => obj);
+export default setRuntimeConfigProvider.get("RNSScreenStackHeaderSubview", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

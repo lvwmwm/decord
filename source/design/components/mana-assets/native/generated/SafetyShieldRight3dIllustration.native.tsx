@@ -1,14 +1,14 @@
-// Module ID: 6969
-// Function ID: 6970
+// Module ID: 6350
+// Function ID: 6351
 // Name: SafetyShieldRight3dIllustration
-// Dependencies: [21, 5502, 6970, 2]
+// Dependencies: [21, 5542, 6351, 2]
 // Exports: SafetyShieldRight3dIllustration
 
-// Module 6969 (SafetyShieldRight3dIllustration)
+// Module 6350 (SafetyShieldRight3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6970 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6351 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldRight3dIllustration.native.tsx");

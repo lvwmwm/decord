@@ -1,26 +1,26 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15201
+// Function ID: 15202
 // Name: items1
-// Dependencies: [673, 1233, 15118, 15119, 15120, 15121, 15122, 15123, 15124, 15125, 15126, 15127, 13937, 10270, 15128, 2]
+// Dependencies: [673, 1233, 15202, 15203, 15204, 15205, 15206, 15207, 15208, 15209, 15210, 15211, 13969, 10088, 15212, 2]
 // Exports: default
 
-// Module 15117 (items1)
+// Module 15201 (items1)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 10270 */;
-import registerAssetDefault2 from "registerAsset" /* 13937 */;
-import registerAssetDefault3 from "registerAsset" /* 15118 */;
-import registerAssetDefault4 from "registerAsset" /* 15119 */;
-import registerAssetDefault5 from "registerAsset" /* 15120 */;
-import registerAssetDefault6 from "registerAsset" /* 15121 */;
-import registerAssetDefault7 from "registerAsset" /* 15122 */;
-import registerAssetDefault8 from "registerAsset" /* 15123 */;
-import registerAssetDefault9 from "registerAsset" /* 15124 */;
-import registerAssetDefault10 from "registerAsset" /* 15125 */;
-import registerAssetDefault11 from "registerAsset" /* 15126 */;
-import registerAssetDefault12 from "registerAsset" /* 15127 */;
-import registerAssetDefault13 from "registerAsset" /* 15128 */;
+import registerAssetDefault from "registerAsset" /* 10088 */;
+import registerAssetDefault2 from "registerAsset" /* 13969 */;
+import registerAssetDefault3 from "registerAsset" /* 15202 */;
+import registerAssetDefault4 from "registerAsset" /* 15203 */;
+import registerAssetDefault5 from "registerAsset" /* 15204 */;
+import registerAssetDefault6 from "registerAsset" /* 15205 */;
+import registerAssetDefault7 from "registerAsset" /* 15206 */;
+import registerAssetDefault8 from "registerAsset" /* 15207 */;
+import registerAssetDefault9 from "registerAsset" /* 15208 */;
+import registerAssetDefault10 from "registerAsset" /* 15209 */;
+import registerAssetDefault11 from "registerAsset" /* 15210 */;
+import registerAssetDefault12 from "registerAsset" /* 15211 */;
+import registerAssetDefault13 from "registerAsset" /* 15212 */;
 
 const StatusTypes = ME.StatusTypes;
 const result = set.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceDummyData.tsx");

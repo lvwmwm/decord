@@ -1,13 +1,13 @@
-// Module ID: 8167
-// Function ID: 8168
+// Module ID: 9228
+// Function ID: 9229
 // Name: useTopCommands
-// Dependencies: [19, 8160, 682, 1369, 586, 2]
+// Dependencies: [19, 9221, 682, 1369, 586, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 8167 (useTopCommands)
+// Module 9228 (useTopCommands)
 import closure_2 from "noop" /* 19 */;
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8160 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8160 */;
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 9221 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 9221 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 
 const require = arg1;

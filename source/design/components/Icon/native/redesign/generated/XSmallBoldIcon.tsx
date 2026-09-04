@@ -1,14 +1,14 @@
-// Module ID: 7894
-// Function ID: 7895
+// Module ID: 7904
+// Function ID: 7905
 // Name: XSmallBoldIcon
-// Dependencies: [19, 21, 709, 4196, 6005, 2]
+// Dependencies: [19, 21, 709, 4196, 7143, 2]
 // Exports: XSmallBoldIcon
 
-// Module 7894 (XSmallBoldIcon)
+// Module 7904 (XSmallBoldIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 6005 */;
+import registerAsset from "registerAsset" /* 7143 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

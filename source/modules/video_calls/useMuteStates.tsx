@@ -1,15 +1,15 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 7283
+// Function ID: 7284
 // Name: getMuteStates
-// Dependencies: [1983, 1215, 4529, 4120, 4497, 673, 586, 2]
+// Dependencies: [1983, 1215, 4532, 4120, 4500, 673, 586, 2]
 // Exports: default
 
-// Module 6199 (getMuteStates)
+// Module 7283 (getMuteStates)
 import closure_2 from "initialize" /* 1983 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "updateVoiceState" /* 4497 */;
+import closure_6 from "updateVoiceState" /* 4500 */;
 import { Permissions } from "ME" /* 673 */;
 
 const require = arg1;

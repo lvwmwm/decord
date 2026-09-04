@@ -1,14 +1,14 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7391
+// Function ID: 7392
 // Name: handleGuildTemplateResolveSuccess
-// Dependencies: [6180, 6179, 586, 706, 2]
+// Dependencies: [7264, 7263, 586, 706, 2]
 
-// Module 7213 (handleGuildTemplateResolveSuccess)
+// Module 7391 (handleGuildTemplateResolveSuccess)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 6179 */;
-import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6180 */;
+import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7263 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7264 */;
 
 function handleGuildTemplateResolveSuccess(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;

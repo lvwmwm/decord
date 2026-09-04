@@ -1,13 +1,13 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14725
+// Function ID: 14726
 // Name: route
-// Dependencies: [4130, 7896, 673, 586, 1233, 11292, 7850, 14645, 2]
+// Dependencies: [4130, 7906, 673, 586, 1233, 11400, 7860, 14726, 2]
 
-// Module 14644 (route)
+// Module 14725 (route)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_2 from "markAllUserIdListsStale" /* 4130 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return require(14645) /* BlockedUsersList */.default;
+    return require(14726) /* BlockedUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

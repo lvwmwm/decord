@@ -1,19 +1,19 @@
-// Module ID: 17719
-// Function ID: 17720
+// Module ID: 17799
+// Function ID: 17800
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4478, 709, 4474, 1233, 2662, 4929, 2]
+// Dependencies: [17, 21, 4481, 709, 4477, 1233, 2662, 4936, 2]
 // Exports: default
 
-// Module 17719 (UpdateAppScreen)
+// Module 17799 (UpdateAppScreen)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2662 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 ({ NativeModules: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

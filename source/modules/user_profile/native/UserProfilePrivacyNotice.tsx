@@ -1,10 +1,10 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 13006
+// Function ID: 13007
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 673, 1383, 21, 4478, 709, 1305, 1233, 12745, 8790, 4166, 1372, 6261, 4474, 6255, 4433, 5077, 5560, 2]
+// Dependencies: [32, 19, 17, 673, 1383, 21, 4481, 709, 1305, 1233, 13007, 8574, 4166, 1372, 7326, 4477, 7320, 4436, 5084, 5635, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12744 (UserProfilePrivacyNotice)
+// Module 13006 (UserProfilePrivacyNotice)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
@@ -12,7 +12,7 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

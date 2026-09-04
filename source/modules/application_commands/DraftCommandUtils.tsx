@@ -1,14 +1,14 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11926
+// Function ID: 11927
 // Name: toDraftCommand
-// Dependencies: [4954, 4857, 8456, 2]
+// Dependencies: [4961, 4864, 9345, 2]
 // Exports: resolveDraftCommand, toDraftCommand
 
-// Module 11795 (toDraftCommand)
+// Module 11926 (toDraftCommand)
 import set from "set" /* 2 */;
-import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4857 */;
-import regExp from "regExp" /* 4954 */;
-import findCommandInSectionAll from "findCommandInSection" /* 8456 */;
+import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4864 */;
+import regExp from "regExp" /* 4961 */;
+import findCommandInSectionAll from "findCommandInSection" /* 9345 */;
 
 const COMMAND_SENTINEL = regExp.COMMAND_SENTINEL;
 const result = set.fileFinishedImporting("modules/application_commands/DraftCommandUtils.tsx");

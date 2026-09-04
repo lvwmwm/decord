@@ -1,15 +1,15 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12336
+// Function ID: 12337
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 4478, 709, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 2]
 // Exports: default
 
-// Module 12204 (DescriptionEllipsis)
+// Module 12336 (DescriptionEllipsis)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 noopAll;
 ({ jsx: closure_1, jsxs: obj1 } = jsxProd);

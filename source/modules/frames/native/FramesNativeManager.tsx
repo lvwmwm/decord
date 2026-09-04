@@ -1,24 +1,24 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 9497
+// Function ID: 9498
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 9481, 9482, 673, 4506, 4380, 8612, 1235, 9471, 9472, 1205, 9515, 9516, 4859, 1233, 1470, 706, 1228, 511, 2]
+// Dependencies: [5, 17, 9439, 9440, 673, 4509, 4383, 8228, 1235, 9445, 9446, 1205, 9498, 9479, 4866, 1233, 1394, 706, 1228, 511, 2]
 
-// Module 9514 (postMessageToWebView)
+// Module 9497 (postMessageToWebView)
 import v1 from "v1" /* 511 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import _modDef4859 from "module_4859" /* 4859 */;
-import enforcingDefault from "enforcing" /* 9471 */;
-import leaveFrameDefault from "leaveFrame" /* 9515 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import _modDef4866 from "module_4866" /* 4866 */;
+import enforcingDefault from "enforcing" /* 9445 */;
+import leaveFrameDefault from "leaveFrame" /* 9498 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9481 */;
-import { isLaunched } from "FrameLayoutModes" /* 9482 */;
+import closure_4 from "map" /* 9439 */;
+import { isLaunched } from "FrameLayoutModes" /* 9440 */;
 import { ComponentActions } from "ME" /* 673 */;
-import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4506 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
-import WebView from "WebView" /* 8612 */;
+import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4509 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
+import WebView from "WebView" /* 8228 */;
 import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ class FramesNativeManager extends tmp5 {
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   ({ code, message } = reason);
-  let obj = _modDef4859;
+  let obj = _modDef4866;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });

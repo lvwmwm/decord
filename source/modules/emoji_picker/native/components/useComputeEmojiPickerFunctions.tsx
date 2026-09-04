@@ -1,17 +1,17 @@
-// Module ID: 9147
-// Function ID: 9148
+// Module ID: 10222
+// Function ID: 10223
 // Name: _computeCategories
-// Dependencies: [32, 19, 5414, 9119, 9148, 4134, 12, 9120, 1990, 2]
+// Dependencies: [32, 19, 5423, 10219, 10223, 4134, 12, 10214, 1990, 2]
 // Exports: default
 
-// Module 9147 (_computeCategories)
+// Module 10222 (_computeCategories)
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import initializeSearch from "initializeSearch" /* 9120 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 9148 */;
+import initializeSearch from "initializeSearch" /* 10214 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 10223 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5414 */;
-import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 9119 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5423 */;
+import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 10219 */;
 
 require = arg1;
 function _computeCategories(arg0) {

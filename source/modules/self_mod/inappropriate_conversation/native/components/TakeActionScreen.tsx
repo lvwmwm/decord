@@ -1,10 +1,10 @@
-// Module ID: 15565
-// Function ID: 15566
+// Module ID: 15647
+// Function ID: 15648
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 4130, 1921, 11224, 21, 4478, 709, 586, 11248, 11251, 1498, 9077, 8694, 11231, 8775, 4194, 1233, 4438, 4193, 4929, 11259, 8810, 5002, 8748, 4190, 4474, 2]
+// Dependencies: [5, 32, 19, 17, 4130, 1921, 11295, 21, 4481, 709, 586, 11322, 11325, 1498, 8972, 8334, 11302, 8559, 4194, 1233, 4441, 4193, 4936, 11333, 8595, 5009, 8511, 4190, 4477, 2]
 // Exports: default
 
-// Module 15565 (TakeActionButtons)
+// Module 15647 (TakeActionButtons)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,9 +13,9 @@ import { useState } from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11224 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11295 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ MODAL_LOCATION_CONTEXT_MOBILE: c10, NOFILTR_URL: unpackModuleId, THROUGHLINE_URL: closure_12, REPORTED_USER_CONFIRMATION_TOAST_KEY: map1, TOAST_CHECKMARK_ICON_COLOR: closure_14 } = LOCATION_CONTEXT_MOBILE);
@@ -104,7 +104,7 @@ export default function TakeActionButtons(senderId) {
             closure_0 = tmp4;
             if (null != closure_1_9.getUser(closure_1_0)) {
               closure_1_6(true);
-              let obj2 = closure_1_0(8775);
+              let obj2 = closure_1_0(8559);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -114,7 +114,7 @@ export default function TakeActionButtons(senderId) {
                 obj = { key: closure_1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1233).intl;
                 obj[1] = intl.string(tmp4(1233).t.gn2c6X);
-                obj[2] = tmp4(4438).CircleCheckIcon;
+                obj[2] = tmp4(4441).CircleCheckIcon;
                 obj[3] = closure_1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
@@ -132,9 +132,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(8694);
+          obj = v0(8334);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(closure_1_0(11231).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(closure_1_0(11302).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

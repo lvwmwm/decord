@@ -1,14 +1,14 @@
-// Module ID: 4436
-// Function ID: 4437
+// Module ID: 4439
+// Function ID: 4440
 // Name: TrashIcon
-// Dependencies: [19, 21, 709, 4196, 4437, 2]
+// Dependencies: [19, 21, 709, 4196, 4440, 2]
 // Exports: TrashIcon
 
-// Module 4436 (TrashIcon)
+// Module 4439 (TrashIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4437 */;
+import registerAsset from "registerAsset" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

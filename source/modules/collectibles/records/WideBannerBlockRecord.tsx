@@ -1,11 +1,11 @@
-// Module ID: 7339
-// Function ID: 7340
+// Module ID: 7517
+// Function ID: 7518
 // Name: fromServer
-// Dependencies: [7328, 2]
+// Dependencies: [7506, 2]
 
-// Module 7339 (fromServer)
+// Module 7517 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7328 */;
+import ShopBlockType from "ShopBlockType" /* 7506 */;
 
 let prototype;
 prototype = function WideBannerBlockRecord(arg0) {

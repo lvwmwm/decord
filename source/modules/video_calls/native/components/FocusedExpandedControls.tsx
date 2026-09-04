@@ -1,30 +1,30 @@
-// Module ID: 10123
-// Function ID: 10124
+// Module ID: 9943
+// Function ID: 9944
 // Name: ExpandedControlItemIcon
-// Dependencies: [19, 17, 4500, 1215, 4542, 21, 4478, 709, 1296, 10124, 10125, 8376, 586, 10126, 1233, 10095, 1234, 9800, 9829, 10068, 10127, 10112, 10128, 10129, 2]
+// Dependencies: [19, 17, 4503, 1215, 4545, 21, 4481, 709, 1296, 9944, 9945, 8523, 586, 9946, 1233, 9915, 1234, 9012, 9043, 9880, 9947, 9932, 9948, 9949, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10123 (ExpandedControlItemIcon)
+// Module 9943 (ExpandedControlItemIcon)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import Form from "Form" /* 8376 */;
-import _handleToggleVideo from "_handleToggleVideo" /* 9800 */;
-import stopScreenshareDefault from "stopScreenshare" /* 10068 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10095 */;
-import NOOP from "NOOP" /* 10112 */;
-import registerAssetDefault from "registerAsset" /* 10124 */;
-import registerAssetDefault2 from "registerAsset" /* 10125 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10126 */;
-import useDeafStatesDefault from "useDeafStates" /* 10127 */;
+import Form from "Form" /* 8523 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9012 */;
+import stopScreenshareDefault from "stopScreenshare" /* 9880 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9915 */;
+import NOOP from "NOOP" /* 9932 */;
+import registerAssetDefault from "registerAsset" /* 9944 */;
+import registerAssetDefault2 from "registerAsset" /* 9945 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9946 */;
+import useDeafStatesDefault from "useDeafStates" /* 9947 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reset" /* 4500 */;
+import closure_5 from "reset" /* 4503 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ExpandedControlItemIcon(iconSource) {
@@ -134,7 +134,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (null != stateFromStores) {
     obj1 = { label: null };
     obj1[0] = tmp11;
-    tmp9Result = tmp9(tmp2(8376).FormRow, obj1);
+    tmp9Result = tmp9(tmp2(8523).FormRow, obj1);
   }
   return tmp9Result;
 };
@@ -167,7 +167,7 @@ export const DeafenButton = function DeafenButton(disabled) {
   }
   let obj = NOOP;
   const deafHandler = obj.createDeafHandler(useDeafStatesDefault(disabled.channel));
-  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10128 : 10129), label: null };
+  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 9948 : 9949), label: null };
   const intl = tmp4(1233).intl;
   obj[3] = intl.string(getSystemLocale.t.wjcRFX);
   return callback(ExpandedControlItem, obj);

@@ -1,20 +1,20 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13900
+// Function ID: 13901
 // Name: useGuildSettingsPickerFeature
-// Dependencies: [32, 19, 4120, 13869, 13870, 1233, 586, 2]
+// Dependencies: [32, 19, 4120, 13901, 13902, 1233, 586, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 13868 (useGuildSettingsPickerFeature)
+// Module 13900 (useGuildSettingsPickerFeature)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef13869 from "module_13869" /* 13869 */;
-import _modDef13870 from "module_13870" /* 13870 */;
+import _modDef13901 from "module_13901" /* 13901 */;
+import _modDef13902 from "module_13902" /* 13902 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 
 require = arg1;
-let obj = { "server-subscriptions-onboarding": _modDef13869, "server-subscriptions-create-tier-from-template": _modDef13870 };
+let obj = { "server-subscriptions-onboarding": _modDef13901, "server-subscriptions-create-tier-from-template": _modDef13902 };
 let closure_6 = {
   title() {
     const intl = getSystemLocale.intl;

@@ -1,13 +1,13 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15857
+// Function ID: 15858
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15770, 4858, 15772, 15773, 4445, 15774, 2008, 10296, 5082, 8554, 10295, 1492, 2]
+// Dependencies: [5, 17, 15856, 4865, 15858, 15859, 4448, 15860, 2008, 10116, 5089, 8136, 10115, 1492, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15771 (_getLatestVideo)
+// Module 15857 (_getLatestVideo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15770 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15856 */;
 
 const require = arg1;
 function _getLatestVideo() {
@@ -150,7 +150,7 @@ function _checkAndRequestPermissions() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(4858);
+          let obj3 = callback(4865);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to check permissions, error: " + callback;
@@ -171,12 +171,12 @@ function _checkAndRequestPermissions() {
           if (closure_0.photosGranted) {
             let flag2 = closure_0.microphoneGranted;
             if (!flag2) {
-              obj1 = callback(4858);
+              obj1 = callback(4865);
               obj1.show({ title: "Error", body: "Microphone permission is required to record audio" });
               flag2 = false;
             }
           } else {
-            obj = callback(4858);
+            obj = callback(4865);
             obj.show({ title: "Error", body: "Photos permission is required to save recordings" });
           }
           c3 = 0;
@@ -361,7 +361,7 @@ function _stopRecordingProcess() {
         } else if (1 === tmp7) {
           c3 = 0;
           closure_0 = dependencyMap;
-          let obj3 = callback(4858);
+          let obj3 = callback(4865);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to stop screen recording, error: " + closure_0;
@@ -382,7 +382,7 @@ function _stopRecordingProcess() {
         } else {
           let flag = arg1.success;
           if (!flag) {
-            obj = callback(4858);
+            obj = callback(4865);
             obj.show({ title: "Error", body: "Failed to stop screen recording, but not error" });
             flag = false;
           }
@@ -728,7 +728,7 @@ function _submitBugReportWithScreenRecording() {
                       throwTypeErrorResult = closure_3;
                       obj14 = closure_3;
                       if (closure_3 == null) {
-                        obj14 = { name: null, squad: null, asana_inbox_id: "accessible" };
+                        obj14 = { name: null, squad: null, asana_inbox_id: "Array" };
                         obj14[0] = uri.uploadConfig.featureName;
                         obj14[1] = uri.uploadConfig.squadName;
                       }

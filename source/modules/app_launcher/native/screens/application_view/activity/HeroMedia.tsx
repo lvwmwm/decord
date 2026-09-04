@@ -1,18 +1,18 @@
-// Module ID: 11885
-// Function ID: 11886
+// Module ID: 12016
+// Function ID: 12017
 // Name: HeroMedia
-// Dependencies: [19, 4470, 1497, 21, 4478, 9068, 9638, 586, 5968, 11859, 8621, 1233, 2]
+// Dependencies: [19, 4473, 1497, 21, 4481, 11148, 9581, 586, 7108, 11990, 8237, 1233, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 11885 (HeroMedia)
+// Module 12016 (HeroMedia)
 import noopAll from "noop" /* 19 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 9068 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9638 */;
-import getPreviewVideoAssetUrlDefault from "getPreviewVideoAssetUrl" /* 11859 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9581 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11148 */;
+import getPreviewVideoAssetUrlDefault from "getPreviewVideoAssetUrl" /* 11990 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -36,7 +36,7 @@ export default function HeroMedia(arg0) {
   let tmp2Result = tmp2(586);
   const items = [closure_3];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  tmp2Result = tmp2(5968);
+  tmp2Result = tmp2(7108);
   const getOrFetchApplication = tmp2Result.useGetOrFetchApplication(applicationId);
   let prop;
   if (getOrFetchApplication != null) {

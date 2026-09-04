@@ -1,18 +1,18 @@
-// Module ID: 14690
-// Function ID: 14691
+// Module ID: 14771
+// Function ID: 14772
 // Name: pressable
-// Dependencies: [7896, 673, 695, 4724, 14689, 2008, 12454, 11292, 1233, 2]
+// Dependencies: [7906, 673, 695, 4731, 14770, 2008, 12612, 11400, 1233, 2]
 
-// Module 14690 (pressable)
+// Module 14771 (pressable)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import MobileUserSettings from "MobileUserSettings" /* 7896 */;
-import _uploadContacts from "_uploadContacts" /* 12454 */;
-import createToggle from "createToggle" /* 11292 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import MobileUserSettings from "MobileUserSettings" /* 7906 */;
+import _uploadContacts from "_uploadContacts" /* 12612 */;
+import createToggle from "createToggle" /* 11400 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const pressable = createToggle.createPressable({
@@ -24,7 +24,7 @@ const pressable = createToggle.createPressable({
   onPress: function onContactSyncNamePress() {
     expandEventPropertiesDefault.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj = expandEventPropertiesDefault;
-    _modDef4724.pushLazy(asyncRequireImpl(14689, dependencyMap.paths), "Contact Sync Name Update Modal");
+    _modDef4731.pushLazy(asyncRequireImpl(14770, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {
@@ -40,7 +40,7 @@ let obj = {
   onPress: function onContactSyncNamePress() {
     expandEventPropertiesDefault.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj = expandEventPropertiesDefault;
-    _modDef4724.pushLazy(asyncRequireImpl(14689, dependencyMap.paths), "Contact Sync Name Update Modal");
+    _modDef4731.pushLazy(asyncRequireImpl(14770, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {

@@ -1,14 +1,14 @@
-// Module ID: 6363
-// Function ID: 6364
+// Module ID: 5744
+// Function ID: 5745
 // Name: BeakerIllocon
-// Dependencies: [21, 5502, 6364, 2]
+// Dependencies: [21, 5542, 5745, 2]
 // Exports: BeakerIllocon
 
-// Module 6363 (BeakerIllocon)
+// Module 5744 (BeakerIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6364 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5745 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BeakerIllocon.native.tsx");

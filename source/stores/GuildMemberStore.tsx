@@ -1,7 +1,7 @@
 // Module ID: 1991
 // Function ID: 1992
 // Name: trackCommunicationDisabled
-// Dependencies: [1992, 1983, 1215, 1386, 1984, 1908, 4108, 3, 4109, 1988, 1398, 11, 1897, 1898, 1937, 1470, 1953, 12, 4110, 586, 706, 2]
+// Dependencies: [1992, 1983, 1215, 1386, 1984, 1908, 4108, 3, 4109, 1988, 1399, 11, 1897, 1898, 1937, 1394, 1953, 12, 4110, 586, 706, 2]
 // Exports: getCommunicationDisabledUserKey, getGuildIdFromCommunicationDisabledUserKey, getUserCommunicationDisabledVersion, getUserIdFromCommunicationDisabledUserKey
 
 // Module 1991 (trackCommunicationDisabled)
@@ -11,7 +11,7 @@ import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import hasFlag from "hasFlag" /* 1398 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1897 */;
 import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1898 */;
 import set2 from "set" /* 1937 */;
@@ -100,7 +100,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "call", hoistRoleId: "messageId", iconRoleId: "fill", highestRoleId: "accessible" };
+    return { colorString: null, colorStrings: null, colorRoleId: "accessible", hoistRoleId: "forEach", iconRoleId: "ao", highestRoleId: "Array" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {

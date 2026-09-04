@@ -1,14 +1,14 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15776
+// Function ID: 15777
 // Name: toggle
-// Dependencies: [9866, 7896, 586, 9868, 11292, 1233, 2]
+// Dependencies: [9080, 7906, 586, 9082, 11400, 1233, 2]
 
-// Module 15694 (toggle)
+// Module 15776 (toggle)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import savePersistentCodesEnabledDefault from "savePersistentCodesEnabled" /* 9868 */;
-import closure_3 from "items" /* 9866 */;
-import createToggle from "createToggle" /* 11292 */;
+import savePersistentCodesEnabledDefault from "savePersistentCodesEnabled" /* 9082 */;
+import closure_3 from "items" /* 9080 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {

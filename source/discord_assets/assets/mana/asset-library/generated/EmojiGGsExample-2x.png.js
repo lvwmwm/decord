@@ -1,9 +1,9 @@
-// Module ID: 6518
-// Function ID: 6519
+// Module ID: 5899
+// Function ID: 5900
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6518 (metadata)
+// Module 5899 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiGGsExample-2x.png.js");

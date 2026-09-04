@@ -1,14 +1,14 @@
-// Module ID: 10395
-// Function ID: 10396
-// Dependencies: [19, 17, 673, 21, 4478, 709, 10380, 9173, 1233, 9177, 5633, 1296, 2]
+// Module ID: 10306
+// Function ID: 10307
+// Dependencies: [19, 17, 673, 21, 4481, 709, 10212, 10246, 1233, 10250, 6567, 1296, 2]
 
-// Module 10395
+// Module 10306
 import ThemesDefault from "Themes" /* 709 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10380 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10212 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
   const memo = importAllResult.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  let obj = safeAreaBottomKeyboardAware(9173);
+  let obj = safeAreaBottomKeyboardAware(10246);
   const searchEmptySource = obj.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
     const intl2 = tmp4(1233).intl;
@@ -35,9 +35,9 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
     const intl = tmp4(1233).intl;
     stringResult = intl.string(tmp4(1233).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9177).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(10250).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5633).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6567).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

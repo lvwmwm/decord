@@ -1,15 +1,15 @@
-// Module ID: 10908
-// Function ID: 10909
+// Module ID: 10877
+// Function ID: 10878
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 1984, 21, 4478, 586, 4474, 1233, 10909, 2]
+// Dependencies: [19, 17, 1984, 21, 4481, 586, 4477, 1233, 10878, 2]
 // Exports: default
 
-// Module 10908 (InviteRolesDisplay)
+// Module 10877 (InviteRolesDisplay)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -36,7 +36,7 @@ export default function InviteRolesDisplay(roleIds) {
     obj[2] = tmp.label;
     const intl = tmp2(1233).intl;
     obj[3] = intl.string(tmp2(1233).t.stcSfI);
-    const items2 = [callback(tmp2(4474).Text, obj), ];
+    const items2 = [callback(tmp2(4477).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.rolesRow;
     obj1[1] = stateFromStoresArray.map((id) => closure_1_5(guildId(closure_1_2[8]), { role: id, guildId }, id.id));

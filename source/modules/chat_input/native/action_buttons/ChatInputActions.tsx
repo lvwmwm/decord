@@ -1,16 +1,16 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12167
+// Function ID: 12168
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11763, 673, 21, 4478, 709, 4934, 7627, 4197, 6243, 4342, 1625, 12032, 7600, 4925, 5104, 1233, 10671, 5041, 10656, 12033, 5060, 10221, 12005, 12007, 7602, 695, 4217, 8811, 12035, 4201, 12036, 12037, 12041, 2]
+// Dependencies: [32, 19, 11894, 673, 21, 4481, 709, 4941, 7804, 4197, 6565, 4345, 1625, 12168, 7777, 4932, 5112, 1233, 10582, 5048, 10567, 12169, 5067, 10041, 12141, 12143, 7779, 695, 4218, 8596, 12171, 4202, 12172, 12173, 12177, 2]
 
-// Module 12031 (ChatInputActions)
+// Module 12167 (ChatInputActions)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import TextAreaCta from "TextAreaCta" /* 11763 */;
+import TextAreaCta from "TextAreaCta" /* 11894 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c4 = importAllResult;

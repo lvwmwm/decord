@@ -1,15 +1,15 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12359
+// Function ID: 12360
 // Name: findWordSpan
-// Dependencies: [32, 19, 5410, 4954, 1924, 586, 5394, 2]
+// Dependencies: [32, 19, 5419, 4961, 1924, 586, 5402, 2]
 // Exports: default
 
-// Module 12227 (findWordSpan)
+// Module 12359 (findWordSpan)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getEmojiToGroupId" /* 5410 */;
-import { LoadState } from "getEmojiToGroupId" /* 5410 */;
-import { EMOJI_SENTINEL } from "regExp" /* 4954 */;
+import closure_5 from "getEmojiToGroupId" /* 5419 */;
+import { LoadState } from "getEmojiToGroupId" /* 5419 */;
+import { EMOJI_SENTINEL } from "regExp" /* 4961 */;
 import { EmojiIntention } from "set" /* 1924 */;
 
 const require = arg1;

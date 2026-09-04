@@ -1,19 +1,19 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15715
+// Function ID: 15716
 // Name: BackdropCard
-// Dependencies: [32, 19, 17, 21, 4478, 5610, 4927, 4474, 4929, 4217, 4928, 4932, 4912, 4917, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 5562, 4934, 4477, 4936, 4218, 4935, 4939, 4919, 4924, 2]
 // Exports: default
 
-// Module 15633 (BackdropCard)
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import Button from "Button" /* 4929 */;
-import PressableCard from "PressableCard" /* 5610 */;
+// Module 15715 (BackdropCard)
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import Button from "Button" /* 4936 */;
+import PressableCard from "PressableCard" /* 5562 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function BackdropCard(arg0) {
@@ -53,17 +53,17 @@ export default function UserSettingsDesignSystemBackdrop() {
   let first = tmp2[0];
   dependencyMap = tmp4;
   [tmp6, tmp7] = callback(React.useState("none"), 2);
-  let obj = first(4217);
+  let obj = first(4218);
   const fn = function n() {
-    let obj = first(4928);
+    let obj = first(4935);
     let num = 0;
     if (first) {
       num = 1;
     }
-    obj = { opacity: obj.withSpring(num, first(4932).SUBTLE_SPRING, "animate-always") };
+    obj = { opacity: obj.withSpring(num, first(4939).SUBTLE_SPRING, "animate-always") };
     return obj;
   };
-  obj = { withSpring: first(4928).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4932).SUBTLE_SPRING };
+  obj = { withSpring: first(4935).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4939).SUBTLE_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 1929832617927;
   fn.__initData = closure_10;
@@ -72,7 +72,7 @@ export default function UserSettingsDesignSystemBackdrop() {
   obj1 = { spacing: 24, children: null };
   const items = [callback2(BackdropCard, { title: "Backdrop", description: "A backdrop is an overlay that appears behind a component to provide separation between the component and the rest of the interface. By default it is a semi-transparent overlay.", buttonLabel: "Show Backdrop", blur: "none", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), callback2(BackdropCard, { title: "Subtle Blur", description: "Backdrop also supports blur. You can use a subtle blur for a lite-touch obfuscation, like for Context Menus that help create seperation but don't completly lift you out of the context", buttonLabel: "Show Subtle Blur Backdrop", blur: "subtle", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), callback2(BackdropCard, { title: "Strong Blur", description: "You can use a strong blur for places where you want to completly lift the user out of the context, like for modals", buttonLabel: "Show Strong Blur Backdrop", blur: "strong", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 })];
   obj1[1] = items;
-  const items1 = [callback3(first(4927).Stack, obj1), ];
+  const items1 = [callback3(first(4934).Stack, obj1), ];
   if (first) {
     function handleClose() {
       dependencyMap(false);
@@ -83,18 +83,18 @@ export default function UserSettingsDesignSystemBackdrop() {
     obj3[0] = animatedStyle;
     obj3[1] = tmp6;
     obj3[2] = handleClose;
-    const items2 = [tmp13(tmp8(4917).Backdrop, obj3), ];
+    const items2 = [tmp13(tmp8(4924).Backdrop, obj3), ];
     const obj4 = { style: null, pointerEvents: "box-none", children: null };
     obj4[0] = tmp.backdropContent;
     const obj5 = { children: null };
     const obj6 = { variant: "text-md/normal", children: null };
     const items3 = ["blur style: ", tmp6];
     obj6[1] = items3;
-    obj5[0] = tmp11(tmp8(4474).Text, obj6);
-    obj4[2] = tmp13(tmp8(5610).Card, obj5);
+    obj5[0] = tmp11(tmp8(4477).Text, obj6);
+    obj4[2] = tmp13(tmp8(5562).Card, obj5);
     items2[1] = tmp13(closure_5, obj4);
     obj2[1] = items2;
-    first = tmp11(tmp8(4912).Dialog, obj2);
+    first = tmp11(tmp8(4919).Dialog, obj2);
   }
   items1[1] = first;
   obj[1] = items1;

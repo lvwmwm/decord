@@ -1,20 +1,20 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15162
+// Function ID: 15163
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 1233, 586, 4673, 1430, 5987, 5502, 4474, 685, 1296, 5988, 2]
+// Dependencies: [19, 17, 1921, 21, 4481, 709, 1233, 586, 4680, 1431, 7127, 5542, 4477, 685, 1296, 7128, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 15078 (GuildRoleSubscriptionMemberPreview)
+// Module 15162 (GuildRoleSubscriptionMemberPreview)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import int2hslRawAll from "int2hslRaw" /* 685 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getNicknameDefault from "getNickname" /* 4673 */;
+import getNicknameDefault from "getNickname" /* 4680 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -44,35 +44,35 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
   if (null == role) {
     return null;
   } else {
-    let tmp6Result = tmp6(1430);
+    let tmp6Result = tmp6(1431);
     let avatarURL;
     if (stateFromStores != null) {
       avatarURL = stateFromStores.getAvatarURL(guildId, 40);
     }
     if (avatarURL == null) {
-      tmp6Result = tmp6(1430);
+      tmp6Result = tmp6(1431);
       avatarURL = tmp6Result.getDefaultAvatarURL(undefined, undefined);
     }
     const source = tmp6Result.makeSource(avatarURL);
-    const roleIconData = tmp4(5987).getRoleIconData(role, 16);
+    const roleIconData = tmp4(7127).getRoleIconData(role, 16);
     obj = { style: null, children: null };
     const items1 = [tmp3.container, style];
     obj[0] = items1;
     obj = { style: null, source: null };
     obj[0] = tmp3.avatar;
     obj[1] = source;
-    const items2 = [callback(tmp6(5502), obj), ];
+    const items2 = [callback(tmp6(5542), obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp3.content;
     const obj2 = { style: null, children: null };
     obj2[0] = tmp3.contextRow;
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", style: null, children: null };
     const obj4 = { color: null };
-    const tmp4Result = tmp4(5987);
+    const tmp4Result = tmp4(7127);
     obj4[0] = int2hslRawAll.int2hex(role.color);
     obj3[2] = obj4;
     obj3[3] = tmp8;
-    const items3 = [callback(tmp4(4474).Text, obj3), , , ];
+    const items3 = [callback(tmp4(4477).Text, obj3), , , ];
     let tmp12Result = null;
     if (null != roleIconData) {
       const items4 = [tmp14(tmp4(1296).Spacer, { size: 4 }), ];
@@ -87,21 +87,21 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       const obj7 = { children: null };
       obj5[1] = tmp19;
       obj5[2] = roleIconData.unicodeEmoji;
-      items4[1] = tmp14(tmp6(5988), obj5);
+      items4[1] = tmp14(tmp6(7128), obj5);
       obj7[0] = items4;
       tmp12Result = tmp12(closure_7, obj7);
       const tmp17 = closure_7;
-      const tmp6Result1 = tmp6(5988);
+      const tmp6Result1 = tmp6(7128);
     }
     items3[1] = tmp12Result;
     items3[2] = callback(tmp4(1296).Spacer, { size: 8 });
-    items3[3] = callback(tmp4(4474).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items3[3] = callback(tmp4(4477).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
     obj2[1] = items3;
     const items5 = [closure_8(View, obj2), ];
     const obj8 = { variant: "text-md/normal", color: "text-default", style: null, children: null };
     obj8[2] = textStyle;
     obj8[3] = content;
-    items5[1] = callback(tmp4(4474).Text, obj8);
+    items5[1] = callback(tmp4(4477).Text, obj8);
     obj1[1] = items5;
     items2[1] = closure_8(View, obj1);
     obj[1] = items2;

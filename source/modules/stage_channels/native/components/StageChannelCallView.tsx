@@ -1,20 +1,20 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 9970
+// Function ID: 9971
 // Name: StageChannelCallBackground
-// Dependencies: [19, 21, 9663, 4478, 1627, 10151, 10152, 4217, 9547, 10153, 2]
+// Dependencies: [19, 21, 9606, 4481, 1627, 9971, 9972, 4218, 9410, 9973, 2]
 // Exports: default
 
-// Module 10150 (StageChannelCallBackground)
+// Module 9970 (StageChannelCallBackground)
 import noopAll from "noop" /* 19 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import componentDidMountDefault from "componentDidMount" /* 9547 */;
-import FocusedControlsHeader from "FocusedControlsHeader" /* 9663 */;
-import useStageActionBarAnimation from "useStageActionBarAnimation" /* 10151 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 10152 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 10153 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import componentDidMountDefault from "componentDidMount" /* 9410 */;
+import FocusedControlsHeader from "FocusedControlsHeader" /* 9606 */;
+import useStageActionBarAnimation from "useStageActionBarAnimation" /* 9971 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 9972 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 9973 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function StageChannelCallBackground(arg0) {
@@ -24,7 +24,7 @@ function StageChannelCallBackground(arg0) {
   obj = { children: null };
   const tmp = callback3();
   const items = [tmp.container, stageActionBarAnimation];
-  obj[0] = callback(_modDef4217.View, { style: items, children });
+  obj[0] = callback(_modDef4218.View, { style: items, children });
   return callback(StageChannelBackgroundDefault, obj);
 }
 noopAll;

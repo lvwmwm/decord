@@ -1,7 +1,7 @@
 // Module ID: 1983
 // Function ID: 1984
 // Name: initialize
-// Dependencies: [1984, 1908, 673, 682, 11, 1989, 1398, 586, 1990, 706, 2]
+// Dependencies: [1984, 1908, 673, 682, 11, 1989, 1399, 586, 1990, 706, 2]
 
 // Module 1983 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;

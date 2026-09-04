@@ -1,19 +1,19 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16440
+// Function ID: 16441
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 7281, 1386, 1908, 21, 16290, 709, 9654, 1233, 9651, 4674, 9692, 9765, 8641, 9785, 6196, 9776, 16331, 11, 4474, 9766, 5043, 1296, 586, 2]
+// Dependencies: [19, 17, 7459, 1386, 1908, 21, 16376, 709, 9597, 1233, 9594, 4681, 9634, 9698, 8281, 9718, 7280, 9709, 16417, 11, 4477, 9700, 5050, 1296, 586, 2]
 // Exports: default
 
-// Module 16354 (ICYMIGuildEventRow)
+// Module 16440 (ICYMIGuildEventRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import scheduledEventSort from "scheduledEventSort" /* 7281 */;
-import closure_8 from "scheduledEventSort" /* 7281 */;
+import scheduledEventSort from "scheduledEventSort" /* 7459 */;
+import closure_8 from "scheduledEventSort" /* 7459 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16290 */;
+import createICYMIStyles from "createICYMIStyles" /* 16376 */;
 
 const require = arg1;
 function ICYMIGuildEventRow(event) {
@@ -22,7 +22,7 @@ function ICYMIGuildEventRow(event) {
   dependencyMap = undefined;
   let React;
   const tmp = callback4();
-  const tmp4 = guild(9654)(event, null);
+  const tmp4 = guild(9597)(event, null);
   const tmp5 = callback2(event);
   dependencyMap = tmp5;
   let toISOStringResult;
@@ -32,40 +32,40 @@ function ICYMIGuildEventRow(event) {
   }
   React = toISOStringResult;
   const items = [toISOStringResult, tmp5];
-  const tmp7 = guild(4674)(channel);
-  let obj = event(9692);
+  const tmp7 = guild(4681)(channel);
+  let obj = event(9634);
   const locationFromEvent = obj.getLocationFromEvent(event);
-  obj1 = event(9765);
+  obj1 = event(9698);
   const eventLocationIconSource = obj1.getEventLocationIconSource(event, channel, true);
-  let obj2 = event(9765);
+  let obj2 = event(9698);
   const eventLocationIconComponent = obj2.getEventLocationIconComponent(event, channel, true);
-  let obj3 = event(9651);
+  let obj3 = event(9594);
   const items1 = [event];
   const nextRecurrenceIdInEvent = obj3.getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
   const callback = React.useCallback(() => {
-    let obj = guild(8641);
+    let obj = guild(8281);
     obj.itemInteracted(event.id, "guild_event", "press_event");
     obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_body", actionIntentType: "navigate", actionDestinationType: "event" } };
-    guild(8641).feedItemActioned(obj);
-    const obj2 = guild(8641);
+    guild(8281).feedItemActioned(obj);
+    const obj2 = guild(8281);
     obj = { eventId: event.id, event };
-    const result = event(9785).openGuildEventDetails(obj);
+    const result = event(9718).openGuildEventDetails(obj);
   }, items1);
   const callback1 = React.useCallback(() => {
-    let obj = guild(8641);
+    let obj = guild(8281);
     obj.itemInteracted(event.id, "guild_event", "press_event");
     obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "navigate", actionDestinationType: "guild" } };
-    guild(8641).feedItemActioned(obj);
-    const obj2 = guild(8641);
-    event(6196).transitionToGuild(guild.id);
+    guild(8281).feedItemActioned(obj);
+    const obj2 = guild(8281);
+    event(7280).transitionToGuild(guild.id);
   }, items2);
   let title = null != event.description;
   if (title) {
     title = event.description.length > 0;
   }
   let guild_id;
-  let tmp2Result = tmp2(9776);
+  let tmp2Result = tmp2(9709);
   if (event != null) {
     guild_id = event.guild_id;
   }
@@ -74,7 +74,7 @@ function ICYMIGuildEventRow(event) {
     id = event.id;
   }
   obj = { actionLabel: null, id: null, interactionType: "guild_event", channelId: null, guildId: null, timestamp: null, onHeaderPress: null, onHeaderLongPress: null, children: null };
-  tmp2Result = tmp2(16331);
+  tmp2Result = tmp2(16417);
   let intl = tmp8(1233).intl;
   obj[0] = intl.string(event(1233).t["6pFsLQ"]);
   obj[1] = event.id;
@@ -94,7 +94,7 @@ function ICYMIGuildEventRow(event) {
   if (tmp5) {
     str = "status-positive";
   }
-  obj1[1] = closure_11(event(4474).Text, {
+  obj1[1] = closure_11(event(4477).Text, {
     variant: "text-sm/semibold",
     color: str,
     children: React.useMemo(() => {
@@ -104,8 +104,8 @@ function ICYMIGuildEventRow(event) {
         obj[0] = intl.string(event(1233).t.TxqPQR);
         let eventTimeData = obj;
       } else {
-        eventTimeData = tmp(9651).getEventTimeData(c3);
-        const tmpResult = tmp(9651);
+        eventTimeData = tmp(9594).getEventTimeData(c3);
+        const tmpResult = tmp(9594);
       }
       return eventTimeData;
     }, items).startDateTimeString
@@ -115,28 +115,28 @@ function ICYMIGuildEventRow(event) {
     title = tmp.title;
   }
   obj2 = { style: title, variant: "text-lg/semibold", children: event.name };
-  items3[1] = closure_11(event(4474).Text, obj2);
+  items3[1] = closure_11(event(4477).Text, obj2);
   let tmp19Result = null != event.description;
   if (tmp19Result) {
     tmp19Result = event.description.length > 0;
   }
   if (tmp19Result) {
     obj3 = { variant: "text-md/normal", color: "text-subtle", lineClamp: 5, children: null };
-    let tmp8Result = tmp8(9766);
+    let tmp8Result = tmp8(9700);
     const obj4 = { guildId: null };
     obj4[0] = guild.id;
     obj3[3] = tmp8Result.guildEventDetailsParser(event.description, true, obj4);
-    tmp19Result = tmp19(tmp8(4474).Text, obj3);
+    tmp19Result = tmp19(tmp8(4477).Text, obj3);
   }
   items3[2] = tmp19Result;
   items3[3] = closure_11(closure_5, { style: tmp.separator });
   const obj6 = { style: tmp.infoContainer, children: null };
   const obj7 = { style: tmp.locationContainer, children: null };
-  const items4 = [closure_11(event(5043).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
+  const items4 = [closure_11(event(5050).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
   const obj9 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: null };
   const intl2 = tmp8(1233).intl;
   obj9[3] = intl2.format(event(1233).t["+DLsD8"], { count: tmp2ResultResult });
-  items4[1] = closure_11(event(4474).Text, obj9);
+  items4[1] = closure_11(event(4477).Text, obj9);
   obj7[1] = items4;
   const items5 = [closure_12(closure_5, obj7), ];
   const obj10 = { style: tmp.locationContainer, children: null };
@@ -159,12 +159,12 @@ function ICYMIGuildEventRow(event) {
   if (tmp7 == null) {
     let result = null;
     if (null != locationFromEvent) {
-      tmp8Result = tmp8(9766);
+      tmp8Result = tmp8(9700);
       result = tmp8Result.guildEventLocationParser(locationFromEvent, true);
     }
     tmp27 = result;
   }
-  items6[1] = closure_11(event(4474).Text, { lineClamp: 2, variant: "text-xs/normal", color: "text-muted", children: tmp27 });
+  items6[1] = closure_11(event(4477).Text, { lineClamp: 2, variant: "text-xs/normal", color: "text-muted", children: tmp27 });
   obj10[1] = items6;
   items5[1] = closure_12(closure_5, obj10);
   obj6[1] = items5;

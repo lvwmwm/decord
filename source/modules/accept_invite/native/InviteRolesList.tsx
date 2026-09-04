@@ -1,14 +1,14 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12652
+// Function ID: 12653
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4478, 1988, 4927, 4474, 1233, 10909, 2]
+// Dependencies: [19, 17, 21, 4481, 1988, 4934, 4477, 1233, 10878, 2]
 // Exports: default
 
-// Module 12494 (InviteRolesList)
+// Module 12652 (InviteRolesList)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -44,13 +44,13 @@ export default function InviteRolesList(invite) {
       obj = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = guild(1233).intl;
       obj[2] = intl.string(guild(1233).t.stcSfI);
-      const items1 = [callback(guild(4474).Text, obj), ];
+      const items1 = [callback(guild(4477).Text, obj), ];
       obj = { style: null, children: null };
       obj[0] = tmp.rolesRow;
       obj[1] = memo.map((id) => closure_1_5(roles(closure_1_2[8]), { role: id, guildId: guild.id }, id.id));
       items1[1] = callback(View, obj);
       obj[2] = items1;
-      tmp2 = callback2(guild(4927).Stack, obj);
+      tmp2 = callback2(guild(4934).Stack, obj);
     }
   }
   return tmp2;

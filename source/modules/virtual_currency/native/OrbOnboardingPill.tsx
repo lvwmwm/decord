@@ -1,17 +1,17 @@
-// Module ID: 15538
-// Function ID: 15539
+// Module ID: 15620
+// Function ID: 15621
 // Name: OrbOnboardingPill
-// Dependencies: [19, 21, 5077, 10978, 4474, 1233, 4478, 709, 2]
+// Dependencies: [19, 21, 5084, 8767, 4477, 1233, 4481, 709, 2]
 
-// Module 15538 (OrbOnboardingPill)
+// Module 15620 (OrbOnboardingPill)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import OrbsIcon from "OrbsIcon" /* 10978 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import OrbsIcon from "OrbsIcon" /* 8767 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class OrbOnboardingPill {

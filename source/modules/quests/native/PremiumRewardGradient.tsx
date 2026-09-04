@@ -1,16 +1,16 @@
-// Module ID: 15006
-// Function ID: 15007
+// Module ID: 15088
+// Function ID: 15089
 // Name: PremiumRewardFillGradient
-// Dependencies: [19, 17, 21, 4478, 4326, 709, 4197, 4413, 1349, 4941, 5544, 2]
+// Dependencies: [19, 17, 21, 4481, 4329, 709, 4197, 4416, 1349, 4948, 5619, 2]
 // Exports: default
 
-// Module 15006 (PremiumRewardFillGradient)
+// Module 15088 (PremiumRewardFillGradient)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 
 const require = arg1;
 function PremiumRewardFillGradient(arg0) {
@@ -77,22 +77,22 @@ function PremiumRewardGlowGradient(arg0) {
     return items;
   }, items);
   let obj2 = token(1349);
-  const isThemeDarkResult = obj2.isThemeDark(token1(4413)());
+  const isThemeDarkResult = obj2.isThemeDark(token1(4416)());
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, style];
   const items2 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
   const tmp10 = closure_5;
-  const tmp7 = token1(4413)();
+  const tmp7 = token1(4416)();
   const tmp9 = closure_7;
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  obj = { style: items2, maskElement: tmp11(tmp3(4941), obj1), children: tmp11(tmp3(4941), obj2) };
+  obj = { style: items2, maskElement: tmp11(tmp3(4948), obj1), children: tmp11(tmp3(4948), obj2) };
   items2[1] = glowLight;
   obj1 = { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 };
   obj2 = { style: closure_4.absoluteFill, colors: memo, start: closure_9, end: closure_10 };
-  const items3 = [closure_6(token1(5544), obj), children];
+  const items3 = [closure_6(token1(5619), obj), children];
   obj[1] = items3;
   return tmp9(tmp10, obj);
 }

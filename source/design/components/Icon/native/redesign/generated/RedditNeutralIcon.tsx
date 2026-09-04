@@ -1,14 +1,14 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 8822
+// Function ID: 8823
 // Name: RedditNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 12881, 2]
+// Dependencies: [19, 21, 709, 4196, 8823, 2]
 // Exports: RedditNeutralIcon
 
-// Module 12880 (RedditNeutralIcon)
+// Module 8822 (RedditNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12881 */;
+import registerAsset from "registerAsset" /* 8823 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

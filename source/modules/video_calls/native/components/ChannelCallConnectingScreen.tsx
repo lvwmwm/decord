@@ -1,28 +1,28 @@
-// Module ID: 10087
-// Function ID: 10088
+// Module ID: 9907
+// Function ID: 9908
 // Name: VoiceSettingsActionSheet
-// Dependencies: [19, 17, 4495, 4529, 4120, 4496, 9537, 673, 502, 21, 4478, 9561, 4445, 5631, 1623, 5633, 10088, 4674, 10054, 9935, 10109, 10110, 1233, 9807, 5364, 4413, 10111, 9667, 586, 9901, 6199, 10118, 9903, 10119, 709, 9613, 10120, 2]
+// Dependencies: [19, 17, 4498, 4532, 4120, 4499, 9396, 673, 502, 21, 4481, 9425, 4448, 7090, 1623, 6567, 9908, 4681, 9866, 9749, 9929, 9930, 1233, 9019, 5372, 4416, 9931, 9144, 586, 9143, 7283, 9938, 9376, 9939, 709, 9556, 9940, 2]
 // Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
 
-// Module 10087 (VoiceSettingsActionSheet)
+// Module 9907 (VoiceSettingsActionSheet)
 import isMetaQuest from "isMetaQuest" /* 1623 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import Background from "Background" /* 5631 */;
-import BottomSheetModal from "BottomSheetModal" /* 5633 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10088 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 10111 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import BottomSheetModal from "BottomSheetModal" /* 6567 */;
+import Background from "Background" /* 7090 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 9908 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 9931 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "set" /* 4495 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_5 from "set" /* 4498 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "handleUpdate" /* 4496 */;
-import { resetFocus } from "VoiceChatDrawerState" /* 9537 */;
+import closure_8 from "handleUpdate" /* 4499 */;
+import { resetFocus } from "VoiceChatDrawerState" /* 9396 */;
 import { InstantInviteSources } from "ME" /* 673 */;
 import { Permissions } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function VoiceSettingsActionSheet() {
@@ -144,7 +144,7 @@ export const showVoiceSettingsActionSheet = function showVoiceSettingsActionShee
 export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(channel) {
   channel = channel.channel;
   const tmp = callback3();
-  let obj = channel(10054);
+  let obj = channel(9866);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (closure_7.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
@@ -161,14 +161,14 @@ export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(
   let tmp9Result = null;
   if (null != fn) {
     obj = { source: null, onPress: null, accessibilityLabel: null };
-    obj[0] = tmp2(10110);
+    obj[0] = tmp2(9930);
     obj[1] = fn;
     const intl = tmp5(1233).intl;
     obj = { channelName: null };
     obj[0] = tmp4;
     obj[2] = intl.formatToPlainString(tmp5(1233).t["dHHb/2"], obj);
-    tmp9Result = tmp9(tmp2(10109), obj);
-    const tmp2Result = tmp2(10109);
+    tmp9Result = tmp9(tmp2(9929), obj);
+    const tmp2Result = tmp2(9929);
   }
   obj1 = { children: null };
   items[1] = tmp9Result;

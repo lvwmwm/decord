@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 232, height: 126, scales: [2, 3], hash: "4a0bc494eeca38c1cab5c56f66dbf1f3", name: "no_mutual_friends_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 247.5, height: 194, scales: [2, 3], hash: "ea30e86096b674f657e18d24dc0df08d", name: "img_profile_upsell", type: "png" });

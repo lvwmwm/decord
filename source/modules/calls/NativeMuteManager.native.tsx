@@ -1,13 +1,13 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13742
+// Function ID: 13743
 // Name: nativeMuteChanged
-// Dependencies: [9801, 4529, 3, 4362, 706, 9807, 4531, 2]
+// Dependencies: [9013, 4532, 3, 4365, 706, 9019, 4534, 2]
 
-// Module 13709 (nativeMuteChanged)
+// Module 13742 (nativeMuteChanged)
 import timestampDefault from "timestamp" /* 3 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9807 */;
-import importDefaultResult from "handleAudioRouteChanged" /* 9801 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9019 */;
+import importDefaultResult from "handleAudioRouteChanged" /* 9013 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
 import importDefaultResult1 from "dispatcher" /* 706 */;
 
 let obj = arg1;
@@ -63,7 +63,7 @@ prototype["updateNativeMute"] = function updateNativeMute() {
       self.needToUnmuteNative = false;
       self.ignoreForNativeUnmute = true;
       obj2.log("Update native mute > unmuting native");
-      obj = obj(4531);
+      obj = obj(4534);
       const voiceEngine = obj.getVoiceEngine();
       const setNativeMuteState = voiceEngine.setNativeMuteState;
       if (setNativeMuteState != null) {
@@ -75,7 +75,7 @@ prototype["updateNativeMute"] = function updateNativeMute() {
 prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channelId) {
   if (null == channelId.channelId) {
     obj2.log("Leaving voice channel > unmuting native");
-    obj = obj(4531);
+    obj = obj(4534);
     const voiceEngine = obj.getVoiceEngine();
     const setNativeMuteState = voiceEngine.setNativeMuteState;
     if (setNativeMuteState != null) {

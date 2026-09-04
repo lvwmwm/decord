@@ -1,16 +1,16 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16695
+// Function ID: 16696
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 673, 21, 4478, 709, 695, 5603, 4916, 7627, 1234, 6058, 5079, 13833, 1233, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 695, 6921, 4923, 7804, 1234, 5533, 5086, 13865, 1233, 2]
 // Exports: default
 
-// Module 16608 (UsernameSearchScreen)
+// Module 16695 (UsernameSearchScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
@@ -40,7 +40,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5603)().insets;
+  const insets = ref(6921)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -56,7 +56,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(7627);
+  let obj = navigation(7804);
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = navigation(1234);
   let prop = null;
@@ -72,13 +72,13 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  let tmp3Result = tmp3(6058);
-  const items2 = [callback(ref(5079), { absolute: true }), ];
+  let tmp3Result = tmp3(5533);
+  const items2 = [callback(ref(5086), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(709).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13833);
+  tmp3Result = tmp3(13865);
   const intl = tmp7(1233).intl;
   obj3[2] = intl.string(navigation(1233).t.YEOwDM);
   obj3[3] = tmp.headerText;

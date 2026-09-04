@@ -1,15 +1,15 @@
-// Module ID: 10735
-// Function ID: 10736
+// Module ID: 10662
+// Function ID: 10663
 // Name: useFetchClaimableGiftingPromotionRewardSkuIds
-// Dependencies: [32, 19, 10700, 1923, 586, 8095, 10736, 10737, 10738, 10739, 10740, 4298, 1372, 2]
+// Dependencies: [32, 19, 10594, 1923, 586, 10663, 10667, 10668, 10669, 10670, 10671, 4301, 1372, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10735 (useFetchClaimableGiftingPromotionRewardSkuIds)
-import apexExperiment from "apexExperiment" /* 10738 */;
-import apexExperiment2 from "apexExperiment" /* 10739 */;
+// Module 10662 (useFetchClaimableGiftingPromotionRewardSkuIds)
+import apexExperiment from "apexExperiment" /* 10669 */;
+import apexExperiment2 from "apexExperiment" /* 10670 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createEmptyPromotionsByType" /* 10700 */;
+import closure_4 from "createEmptyPromotionsByType" /* 10594 */;
 import { SubscriptionPlans } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
@@ -22,7 +22,7 @@ export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchCl
   let items = [hasPreviouslyFetched];
   stateFromStoresArray = first(586).useStateFromStoresArray(items, () => hasPreviouslyFetched.getGiftPromotionRewardSkuIds());
   const obj = first(586);
-  const fetchPurchases = first(8095).useFetchPurchases();
+  const fetchPurchases = first(10663).useFetchPurchases();
   purchases = fetchPurchases.purchases;
   hasPreviouslyFetched = fetchPurchases.hasPreviouslyFetched;
   const fetchPurchasesError = fetchPurchases.fetchPurchasesError;
@@ -44,10 +44,10 @@ export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchCl
       }
     }
   }, items1);
-  const someResult = stateFromStoresArray.some((arg0) => arg0 === first(10736).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID);
+  const someResult = stateFromStoresArray.some((arg0) => arg0 === first(10667).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID);
   closure_7 = someResult;
-  const obj3 = first(8095);
-  const fetchSummer2026GogoPromoEligibility = first(10737).useFetchSummer2026GogoPromoEligibility(someResult);
+  const obj3 = first(10663);
+  const fetchSummer2026GogoPromoEligibility = first(10668).useFetchSummer2026GogoPromoEligibility(someResult);
   const isEligible = fetchSummer2026GogoPromoEligibility.isEligible;
   const hasFetched = fetchSummer2026GogoPromoEligibility.hasFetched;
   const items2 = [first, isEligible, hasFetched, someResult];
@@ -198,7 +198,7 @@ export const combinePromotionStyles = function combinePromotionStyles(background
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
   const GiftPromotionReminderExperiment = apexExperiment2.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == marketingComponentByType.getMarketingComponentByType(tmp(10740).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == marketingComponentByType.getMarketingComponentByType(tmp(10671).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();
@@ -208,10 +208,10 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       }
       let tmp5 = null != id;
       if (tmp5) {
-        let tmpResult = tmp(4298);
+        let tmpResult = tmp(4301);
         let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1372).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
-          tmpResult = tmp(4298);
+          tmpResult = tmp(4301);
           isDismissed = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1372).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;

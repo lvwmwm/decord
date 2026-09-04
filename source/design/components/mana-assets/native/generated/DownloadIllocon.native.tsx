@@ -1,14 +1,14 @@
-// Module ID: 6505
-// Function ID: 6506
+// Module ID: 5886
+// Function ID: 5887
 // Name: DownloadIllocon
-// Dependencies: [21, 5502, 6506, 2]
+// Dependencies: [21, 5542, 5887, 2]
 // Exports: DownloadIllocon
 
-// Module 6505 (DownloadIllocon)
+// Module 5886 (DownloadIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6506 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5887 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DownloadIllocon.native.tsx");

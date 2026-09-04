@@ -1,10 +1,10 @@
-// Module ID: 4914
-// Function ID: 4915
+// Module ID: 4921
+// Function ID: 4922
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: [19, 4915, 2]
+// Dependencies: [19, 4922, 2]
 // Exports: default
 
-// Module 4914 (useAccessibilityViewIsModalToggle)
+// Module 4921 (useAccessibilityViewIsModalToggle)
 import closure_2 from "noop" /* 19 */;
 
 let result = require("set").fileFinishedImporting("design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx");

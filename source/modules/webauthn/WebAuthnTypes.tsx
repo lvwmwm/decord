@@ -1,9 +1,9 @@
-// Module ID: 7735
-// Function ID: 7736
+// Module ID: 6890
+// Function ID: 6891
 // Name: prototype
 // Dependencies: [2]
 
-// Module 7735 (prototype)
+// Module 6890 (prototype)
 import set from "set" /* 2 */;
 
 const prototype = function IgnorableWebAuthnError() {

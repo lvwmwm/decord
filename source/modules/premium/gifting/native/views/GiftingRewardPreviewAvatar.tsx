@@ -1,14 +1,14 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 10978
+// Function ID: 10979
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4470, 1921, 21, 586, 1296, 2]
+// Dependencies: [19, 4473, 1921, 21, 586, 1296, 2]
 // Exports: default
 
-// Module 11017 (GiftingRewardPreviewAvatar)
+// Module 10978 (GiftingRewardPreviewAvatar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import Button from "Button" /* 1296 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
 

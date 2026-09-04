@@ -1,8 +1,8 @@
-// Module ID: 7383
-// Function ID: 7384
-// Dependencies: [5, 1921, 673, 706, 527, 7384, 1205, 2]
+// Module ID: 7561
+// Function ID: 7562
+// Dependencies: [5, 1921, 673, 706, 527, 7562, 1205, 2]
 
-// Module 7383
+// Module 7561
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
@@ -246,7 +246,7 @@ export default {
       obj5[0] = upload_url;
       obj5[1] = body;
       const obj6 = { "Content-Type": null };
-      obj6[0] = closure_1_0(7384).WIDGET_CLIP_CONTENT_TYPE;
+      obj6[0] = closure_1_0(7562).WIDGET_CLIP_CONTENT_TYPE;
       obj5[2] = obj6;
       obj5[3] = function onRequestProgress(direction) {
         let tmp = "upload" === direction.direction;

@@ -1,20 +1,20 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16799
+// Function ID: 16800
 // Name: useMessageRequestTimestampText
-// Dependencies: [4493, 11, 12394, 586, 4074, 7536, 2]
+// Dependencies: [4496, 11, 12526, 586, 4074, 7713, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 16712 (useMessageRequestTimestampText)
+// Module 16799 (useMessageRequestTimestampText)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import hooksDefault from "hooks" /* 4074 */;
-import closure_3 from "generateOldThreadCutoff" /* 4493 */;
+import closure_3 from "generateOldThreadCutoff" /* 4496 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12394);
+  let obj = _require(12526);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(586).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -40,7 +40,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12394);
+  let obj = _require(12526);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(586).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -53,8 +53,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _require(7536).getTimestampString(extractTimestampResult);
-      const tmpResult = _require(7536);
+      str = _require(7713).getTimestampString(extractTimestampResult);
+      const tmpResult = _require(7713);
     }
     return str;
   }

@@ -1,32 +1,32 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14556
+// Function ID: 14557
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 7313, 7304, 673, 21, 4478, 709, 8125, 8091, 5962, 5982, 695, 8085, 5631, 4474, 1233, 8092, 8095, 586, 14525, 8087, 8126, 14526, 8114, 8115, 8093, 11081, 4941, 2]
+// Dependencies: [32, 19, 17, 7491, 7482, 673, 21, 4481, 709, 8117, 8101, 7102, 7122, 695, 8095, 8102, 7090, 4477, 1233, 8103, 10663, 586, 14557, 8097, 8118, 14558, 13106, 13107, 8104, 11151, 4948, 2]
 // Exports: default
 
-// Module 14524 (EditProfileFrameInner)
+// Module 14556 (EditProfileFrameInner)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7313 */;
-import { isProfileFrameRecord } from "fromServer" /* 7304 */;
+import closure_6 from "map" /* 7491 */;
+import { isProfileFrameRecord } from "fromServer" /* 7482 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function EditProfileFrameInner(user) {
   user = user.user;
   ({ selectedProfileFrame, setSelectedProfileFrame } = user);
   const guildId = user.guildId;
-  let obj = user(guildId[19]);
+  let obj = user(guildId[20]);
   const getOrFetchCollectiblesCategoriesAndPurchases = obj.useGetOrFetchCollectiblesCategoriesAndPurchases();
-  obj1 = user(guildId[20]);
+  obj1 = user(guildId[21]);
   const items = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => isFetching.isFetching);
   const tmp7 = setSelectedProfileFrame(guildId[9])(user.id, guildId);
-  let obj2 = user(guildId[22]);
+  let obj2 = user(guildId[23]);
   obj = { pendingValue: selectedProfileFrame, userValue: null, guildValue: null, guildId: null };
   let profileFrame;
   if (tmp7 != null) {
@@ -49,15 +49,15 @@ function EditProfileFrameInner(user) {
   const items1 = [user];
   const effect = React.useEffect(() => {
     if (!tmp) {
-      setSelectedProfileFrame(guildId[23])(obj.id, obj.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
-      const tmp4 = setSelectedProfileFrame(guildId[23]);
+      setSelectedProfileFrame(guildId[24])(obj.id, obj.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+      const tmp4 = setSelectedProfileFrame(guildId[24]);
     }
   }, items1);
   const items2 = [setSelectedProfileFrame, guildId];
   let skuId;
   const callback = React.useCallback((arg0) => {
     ({ items, size, selectedSkuId } = arg0);
-    return closure_1_9(user(guildId[24]).EditProfileFrameRow, { items, size, selectedSkuId, setSelectedProfileFrame, guildId });
+    return closure_1_9(user(guildId[25]).EditProfileFrameRow, { items, size, selectedSkuId, setSelectedProfileFrame, guildId });
   }, items2);
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
@@ -69,16 +69,16 @@ function EditProfileFrameInner(user) {
   const tmp14 = closure_11;
   const tmp16 = ProfileFrameSectionPreview;
   const tmp5 = setSelectedProfileFrame;
-  const tmp6 = setSelectedProfileFrame(guildId[21])();
+  const tmp6 = setSelectedProfileFrame(guildId[22])();
   if (profilePreviewValue != null) {
     skuId1 = profilePreviewValue.skuId;
   }
   obj[1] = skuId1;
-  const intl = tmp(tmp2[17]).intl;
-  obj[2] = intl.string(user(guildId[17]).t["JvNv+a"]);
-  const intl2 = tmp(tmp2[17]).intl;
-  obj[3] = intl2.string(user(guildId[17]).t.hR2psy);
-  items3[1] = closure_9(setSelectedProfileFrame(guildId[25]), obj);
+  const intl = tmp(tmp2[18]).intl;
+  obj[2] = intl.string(user(guildId[18]).t["JvNv+a"]);
+  const intl2 = tmp(tmp2[18]).intl;
+  obj[3] = intl2.string(user(guildId[18]).t.hR2psy);
+  items3[1] = closure_9(setSelectedProfileFrame(guildId[26]), obj);
   obj1 = { sections: tmp6, selectedSkuId: null, renderRow: null, isFetching: null };
   let skuId2;
   if (selectedProfileFrame != null) {
@@ -88,7 +88,7 @@ function EditProfileFrameInner(user) {
   obj1[1] = skuId2;
   obj1[2] = callback;
   obj1[3] = stateFromStores;
-  items3[2] = closure_9(user(guildId[26]).EditCollectiblesPickerList, obj1);
+  items3[2] = closure_9(user(guildId[27]).EditCollectiblesPickerList, obj1);
   obj2[0] = items3;
   return tmp13(tmp14, obj2);
 }
@@ -97,7 +97,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = callback3();
-  const tmp2 = purchase(8093)(previewSkuId);
+  const tmp2 = purchase(8104)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -121,11 +121,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(11081), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(11151), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4941), obj);
+  items1[1] = callback(purchase(4948), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
@@ -186,14 +186,17 @@ export default function EditProfileFrameActionSheet(arg0) {
     obj.is_fullscreen = true;
     obj.track(closure_1_8.OPEN_POPOUT, obj);
   }, items1);
-  const callback1 = React.useCallback(() => {
+  const callback1 = React.useCallback((items) => {
     let obj = guildId(first[14]);
     obj = { guildId, profileFrame: null };
-    let tmp = first;
-    if (first == null) {
-      tmp = null;
+    let purchasedItem = guildId(first[15]).getPurchasedItem(items, "firstProfileFrame");
+    if (purchasedItem == null) {
+      purchasedItem = first;
     }
-    obj[1] = tmp;
+    if (purchasedItem == null) {
+      purchasedItem = null;
+    }
+    obj[1] = purchasedItem;
     obj.setPendingChanges(obj);
   }, items2);
   obj = { value: analyticsLocations, children: null };
@@ -201,15 +204,15 @@ export default function EditProfileFrameActionSheet(arg0) {
   obj1 = { style: tmp.container, children: null };
   const items3 = [callback(closure_5, { style: tmp.bounceOffset }), , ];
   const obj3 = { variant: "redesign/heading-18/bold", style: tmp.title, children: null };
-  const intl = guildId(tmp3[17]).intl;
-  obj3[2] = intl.string(guildId(first[17]).t["oTSa/q"]);
-  items3[1] = callback(guildId(first[16]).Heading, obj3);
+  const intl = guildId(tmp3[18]).intl;
+  obj3[2] = intl.string(guildId(first[18]).t["oTSa/q"]);
+  items3[1] = callback(guildId(first[17]).Heading, obj3);
   items3[2] = callback(EditProfileFrameInner, { user, selectedProfileFrame: first, setSelectedProfileFrame: tmp6[1], guildId });
   obj1[1] = items3;
   const items4 = [callback2(closure_5, obj1), ];
   const obj4 = { user, currentSkuId: null, selectedSkuId: null, onApply: null, analyticsLocations: null, analyticsSource: null };
   let skuId;
-  tmp2Result = tmp2(tmp3[18]);
+  tmp2Result = tmp2(tmp3[19]);
   if (currentProfileFrame != null) {
     skuId = currentProfileFrame.skuId;
   }
@@ -224,6 +227,6 @@ export default function EditProfileFrameActionSheet(arg0) {
   obj4[5] = importDefault(first[12]).EDIT_PROFILE_FRAME_SHEET;
   items4[1] = callback(tmp2Result, obj4);
   obj[4] = items4;
-  obj[1] = callback2(guildId(first[15]).BottomSheet, obj);
+  obj[1] = callback2(guildId(first[16]).BottomSheet, obj);
   return callback(guildId(first[11]).AnalyticsLocationProvider, obj);
 };

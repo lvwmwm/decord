@@ -1,14 +1,14 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 11585
+// Function ID: 11586
 // Name: TopicsIcon
-// Dependencies: [19, 21, 709, 4196, 9428, 2]
+// Dependencies: [19, 21, 709, 4196, 11586, 2]
 // Exports: TopicsIcon
 
-// Module 9427 (TopicsIcon)
+// Module 11585 (TopicsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9428 */;
+import registerAsset from "registerAsset" /* 11586 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

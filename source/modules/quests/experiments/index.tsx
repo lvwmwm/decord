@@ -1,14 +1,14 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11421
+// Function ID: 11422
 // Name: apexExperiment
-// Dependencies: [1467, 11153, 11154, 11314, 2]
+// Dependencies: [1468, 11224, 11225, 11422, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 11313 (apexExperiment)
+// Module 11421 (apexExperiment)
 import set from "set" /* 2 */;
-import getQuestOrbMultiplierEligibilityForUser from "getQuestOrbMultiplierEligibilityForUser" /* 11153 */;
-import items from "items" /* 11154 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import getQuestOrbMultiplierEligibilityForUser from "getQuestOrbMultiplierEligibilityForUser" /* 11224 */;
+import items from "items" /* 11225 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { 1: null };
 obj[1] = { enabled: true };
@@ -50,7 +50,7 @@ export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMa
   let obj = { location };
   const questOrbMultiplierEligibility = getQuestOrbMultiplierEligibilityForUser.useQuestOrbMultiplierEligibility();
   const obj2 = getQuestOrbMultiplierEligibilityForUser;
-  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(11314).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
+  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== items.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(11422).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
   return obj;
 };
 export const ComposedQuestPlayerExperiment = apexExperiment6;

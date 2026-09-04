@@ -1,13 +1,13 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11418
+// Function ID: 11419
 // Name: useAdContentImpressionTrackerProps
-// Dependencies: [19, 7459, 7457, 586, 7484, 8595, 11311, 2]
+// Dependencies: [19, 7636, 5411, 586, 7661, 8202, 11419, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 11310 (useAdContentImpressionTrackerProps)
-import set from "set" /* 11311 */;
+// Module 11418 (useAdContentImpressionTrackerProps)
+import set from "set" /* 11419 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initializeState" /* 7459 */;
+import closure_4 from "initializeState" /* 7636 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerHooks.tsx");
@@ -103,7 +103,7 @@ export const useQuestImpressionId = function useQuestImpressionId() {
   return id;
 };
 export const useGetQuestImpressionId = function useGetQuestImpressionId() {
-  context = React.useContext(context(11311).QuestImpressionContext);
+  context = React.useContext(context(11419).QuestImpressionContext);
   const items = [context];
   return React.useCallback(() => {
     let id;

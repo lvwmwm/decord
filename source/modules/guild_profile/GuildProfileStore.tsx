@@ -1,15 +1,15 @@
-// Module ID: 9027
-// Function ID: 9028
+// Module ID: 8995
+// Function ID: 8996
 // Name: handleUpdateStart
-// Dependencies: [673, 581, 5569, 586, 706, 2]
+// Dependencies: [673, 581, 5503, 586, 706, 2]
 
-// Module 9027 (handleUpdateStart)
+// Module 8995 (handleUpdateStart)
 import set from "set" /* 2 */;
 import failsDefault from "fails" /* 581 */;
 import initializeDefault from "initialize" /* 586 */;
 import ME from "ME" /* 673 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getEmoji from "getEmoji" /* 5569 */;
+import getEmoji from "getEmoji" /* 5503 */;
 
 function handleUpdateStart(guildId) {
   guildId = guildId.guildId;

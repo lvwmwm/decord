@@ -1,17 +1,17 @@
-// Module ID: 15851
-// Function ID: 15852
-// Dependencies: [19, 11055, 21, 15852, 4328, 11308, 4204, 14941, 15853, 16200, 15025, 2]
+// Module ID: 15937
+// Function ID: 15938
+// Dependencies: [19, 11016, 21, 15938, 4331, 11416, 4205, 15023, 15939, 16286, 15107, 2]
 
-// Module 15851
-import ManaContext from "ManaContext" /* 4204 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4328 */;
-import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11308 */;
-import QuestDockMode from "QuestDockMode" /* 14941 */;
-import QuestDockWithGestureAnimationDefault from "QuestDockWithGestureAnimation" /* 15025 */;
-import trackTabPressed from "trackTabPressed" /* 15852 */;
-import LeftPanelContentDefault from "LeftPanelContent" /* 15853 */;
-import _modDef16200 from "module_16200" /* 16200 */;
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 11055 */;
+// Module 15937
+import ManaContext from "ManaContext" /* 4205 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4331 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11416 */;
+import QuestDockMode from "QuestDockMode" /* 15023 */;
+import QuestDockWithGestureAnimationDefault from "QuestDockWithGestureAnimation" /* 15107 */;
+import trackTabPressed from "trackTabPressed" /* 15938 */;
+import LeftPanelContentDefault from "LeftPanelContent" /* 15939 */;
+import _modDef16286 from "module_16286" /* 16286 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 11016 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -24,7 +24,7 @@ const memoResult = importAllResult.memo(function GuildsOnly() {
   const tmp4 = getGuildThemeNameDefault();
   let isEligibleForQuests = getIsEligibleForQuests.getIsEligibleForQuests();
   obj = { gradient: tmp4, children: null };
-  const items = [callback(LeftPanelContentDefault, {}), callback(_modDef16200, {}), ];
+  const items = [callback(LeftPanelContentDefault, {}), callback(_modDef16286, {}), ];
   if (isEligibleForQuests) {
     isEligibleForQuests = tmp6(QuestDockWithGestureAnimationDefault, {});
   }

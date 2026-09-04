@@ -1,16 +1,16 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10329
+// Function ID: 10330
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4478, 709, 4853, 1233, 4474, 5077, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4860, 1233, 4477, 5084, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10418 (StickerPackInformationPopout)
+// Module 10329 (StickerPackInformationPopout)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4853 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4860 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -34,7 +34,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   const tmp = callback3();
   _require = tmp;
   let items = [];
-  let obj = _require(4853);
+  let obj = _require(4860);
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
     const intl = tmp2(1233).intl;
@@ -47,15 +47,15 @@ export default function StickerPackInformationPopout(stickerPack) {
   const obj2 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1233).intl;
   obj2[3] = intl2.format(_require(1233).t.XDm6yN, { stickerPackName: stickerPack.name });
-  const items2 = [callback(_require(4474).Text, obj2), ];
+  const items2 = [callback(_require(4477).Text, obj2), ];
   const obj4 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl3 = tmp2(1233).intl;
   obj4[2] = intl3.string(_require(1233).t.cpT0Cq);
   const obj5 = { variant: "text-md/bold", color: "text-brand", children: null };
   const intl4 = tmp2(1233).intl;
   obj5[2] = intl4.string(_require(1233).t.cpT0Cq);
-  obj4[3] = callback(_require(4474).Text, obj5);
-  items2[1] = callback(_require(5077).PressableOpacity, obj4);
+  obj4[3] = callback(_require(4477).Text, obj5);
+  items2[1] = callback(_require(5084).PressableOpacity, obj4);
   obj1[1] = items2;
   const items3 = [
     callback2(closure_2, obj1),

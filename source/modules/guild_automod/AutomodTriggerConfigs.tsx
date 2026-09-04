@@ -1,14 +1,14 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17463
+// Function ID: 17464
 // Name: AutomodTriggerType
-// Dependencies: [19, 11663, 1233, 16668, 10209, 2]
+// Dependencies: [19, 11794, 1233, 16755, 10029, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 17383 (AutomodTriggerType)
+// Module 17463 (AutomodTriggerType)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isInMentionRaidExperiment from "isInMentionRaidExperiment" /* 10209 */;
+import isInMentionRaidExperiment from "isInMentionRaidExperiment" /* 10029 */;
 import closure_2 from "noop" /* 19 */;
-import AutomodEventType from "AutomodEventType" /* 11663 */;
+import AutomodEventType from "AutomodEventType" /* 11794 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -212,7 +212,7 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }
 };
 export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16668).useIsUserProfileRuleEnabled(arg0);
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16755).useIsUserProfileRuleEnabled(arg0);
   const items = [isUserProfileRuleEnabled];
   return React.useMemo(() => {
     const keys = Object.keys(closure_1_7);

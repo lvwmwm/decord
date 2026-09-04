@@ -1,9 +1,9 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7522
+// Function ID: 7523
 // Name: ShopVariantsReturnStyle
 // Dependencies: [2]
 
-// Module 7344 (ShopVariantsReturnStyle)
+// Module 7522 (ShopVariantsReturnStyle)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopVariantsReturnStyle.tsx");

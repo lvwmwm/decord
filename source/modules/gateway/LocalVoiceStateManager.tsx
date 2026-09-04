@@ -1,16 +1,16 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13600
+// Function ID: 13601
 // Name: guildId
-// Dependencies: [1386, 4529, 4575, 673, 13565, 4166, 1398, 4539, 2]
+// Dependencies: [1386, 4532, 4578, 673, 13598, 4166, 1399, 4542, 2]
 
-// Module 13567 (guildId)
-import hasFlag from "hasFlag" /* 1398 */;
+// Module 13600 (guildId)
+import hasFlag from "hasFlag" /* 1399 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import isClipsEnabled from "isClipsEnabled" /* 4539 */;
-import shouldCommitDefault from "shouldCommit" /* 13565 */;
+import isClipsEnabled from "isClipsEnabled" /* 4542 */;
+import shouldCommitDefault from "shouldCommit" /* 13598 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_4 from "initialize" /* 4575 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_4 from "initialize" /* 4578 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

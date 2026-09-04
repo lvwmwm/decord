@@ -1,16 +1,16 @@
-// Module ID: 9380
-// Function ID: 9381
+// Module ID: 9354
+// Function ID: 9355
 // Name: styles
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4445, 9381, 2008, 1233, 503, 4474, 1296, 8376, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 4448, 9355, 2008, 1233, 503, 4477, 1296, 8523, 2]
 // Exports: default
 
-// Module 9380 (styles)
+// Module 9354 (styles)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Permissions } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -50,7 +50,7 @@ export default function GuildSelector(disabled) {
   obj = { variant: "eyebrow", color: "text-default", children: null };
   let intl = selectedGuildId(1233).intl;
   obj[2] = intl.string(selectedGuildId(1233).t["1DXFFd"]);
-  const items1 = [callback(selectedGuildId(4474).Text, obj), , , ];
+  const items1 = [callback(selectedGuildId(4477).Text, obj), , , ];
   let tmp6Result = null;
   if (null != error) {
     tmp6Result = null;
@@ -70,7 +70,7 @@ export default function GuildSelector(disabled) {
     const intl2 = tmp7(1233).intl;
     name = intl2.string(tmp7(1233).t.oM4E1A);
   }
-  items1[2] = callback(selectedGuildId(8376).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(8376).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = callback(selectedGuildId(8523).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(8523).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj2 = { style: tmp.label, children: null };
   const intl3 = tmp7(1233).intl;
   obj2[1] = intl3.format(selectedGuildId(1233).t.t9Jm9o, {});

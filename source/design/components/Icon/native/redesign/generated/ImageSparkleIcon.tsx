@@ -1,14 +1,14 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 9890
+// Function ID: 9891
 // Name: ImageSparkleIcon
-// Dependencies: [19, 21, 709, 4196, 10079, 2]
+// Dependencies: [19, 21, 709, 4196, 9891, 2]
 // Exports: ImageSparkleIcon
 
-// Module 10078 (ImageSparkleIcon)
+// Module 9890 (ImageSparkleIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10079 */;
+import registerAsset from "registerAsset" /* 9891 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

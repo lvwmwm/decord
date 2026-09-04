@@ -1,21 +1,21 @@
-// Module ID: 6125
-// Function ID: 6126
+// Module ID: 7209
+// Function ID: 7210
 // Name: useCanStartPrivateThread
-// Dependencies: [32, 4390, 1390, 1215, 1386, 4120, 5457, 673, 586, 503, 6126, 11, 12, 6127, 6128, 4732, 2]
+// Dependencies: [32, 4393, 1390, 1215, 1386, 4120, 5466, 673, 586, 503, 7210, 11, 12, 7211, 7212, 4739, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadModerator
 
-// Module 6125 (useCanStartPrivateThread)
+// Module 7209 (useCanStartPrivateThread)
 import fromStringAll from "fromString" /* 503 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6126 */;
-import useIsRemoteDefault from "useIsRemote" /* 6127 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7210 */;
+import useIsRemoteDefault from "useIsRemote" /* 7211 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { THREADED_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "rebuild" /* 5457 */;
+import closure_9 from "rebuild" /* 5466 */;
 import ME from "ME" /* 673 */;
-import importDefaultResult from "createExperiment" /* 4390 */;
+import importDefaultResult from "createExperiment" /* 4393 */;
 
 const require = arg1;
 function useCanStartPrivateThread(type) {
@@ -515,13 +515,13 @@ export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
   }
   obj = { guildId: channel.guild_id, location: "e791ea_1" };
   let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
-  let tmp3Result = tmp3(6128);
+  let tmp3Result = tmp3(7212);
   const isGameInvitesPost = tmp3Result.useIsGameInvitesPost(channel);
-  tmp3Result = tmp3(4732);
+  tmp3Result = tmp3(4739);
   let shouldAgeVerifyForAgeGate = tmp3Result.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = tmp3(4732).shouldShowAgeGateForChannelId(channel.id);
-    const tmp3Result1 = tmp3(4732);
+    shouldAgeVerifyForAgeGate = tmp3(4739).shouldShowAgeGateForChannelId(channel.id);
+    const tmp3Result1 = tmp3(4739);
   }
   let isVocalThreadResult = !tmp2;
   if (!tmp2) {

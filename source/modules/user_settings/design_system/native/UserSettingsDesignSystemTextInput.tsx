@@ -1,33 +1,33 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15707
+// Function ID: 15708
 // Name: Sample
-// Dependencies: [32, 19, 17, 21, 4478, 709, 5610, 4927, 7717, 5044, 14052, 5631, 5630, 7820, 4474, 5034, 7718, 6231, 8018, 6250, 6232, 4929, 4445, 7751, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 5562, 4934, 6547, 5051, 14084, 7090, 7089, 7025, 4477, 5041, 6548, 6990, 8028, 7318, 6553, 4936, 4448, 6906, 2]
 // Exports: default
 
-// Module 15625 (Sample)
+// Module 15707 (Sample)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import Button from "Button" /* 4929 */;
-import TextIcon from "TextIcon" /* 5034 */;
-import AtIcon from "AtIcon" /* 5044 */;
-import PressableCard from "PressableCard" /* 5610 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5630 */;
-import Background from "Background" /* 5631 */;
-import SearchField from "SearchField" /* 6231 */;
-import TextField from "TextField" /* 6232 */;
-import SettingsIcon from "SettingsIcon" /* 6250 */;
-import TextInput from "TextInput" /* 7717 */;
-import Input from "Input" /* 7718 */;
-import SplitTextInput from "SplitTextInput" /* 7751 */;
-import TextArea from "TextArea" /* 7820 */;
-import IconButton from "IconButton" /* 8018 */;
-import GhostInput from "GhostInput" /* 14052 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import Button from "Button" /* 4936 */;
+import TextIcon from "TextIcon" /* 5041 */;
+import AtIcon from "AtIcon" /* 5051 */;
+import PressableCard from "PressableCard" /* 5562 */;
+import TextInput from "TextInput" /* 6547 */;
+import Input from "Input" /* 6548 */;
+import TextField from "TextField" /* 6553 */;
+import SplitTextInput from "SplitTextInput" /* 6906 */;
+import SearchField from "SearchField" /* 6990 */;
+import TextArea from "TextArea" /* 7025 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
+import Background from "Background" /* 7090 */;
+import SettingsIcon from "SettingsIcon" /* 7318 */;
+import IconButton from "IconButton" /* 8028 */;
+import GhostInput from "GhostInput" /* 14084 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function Sample(children) {

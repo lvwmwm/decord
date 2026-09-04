@@ -1,14 +1,14 @@
-// Module ID: 10749
-// Function ID: 10750
+// Module ID: 10680
+// Function ID: 10681
 // Name: useThemeAndReducedMotionAwareAssetUrl
-// Dependencies: [4470, 4413, 586, 1363, 2]
+// Dependencies: [4473, 4416, 586, 1363, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10749 (useThemeAndReducedMotionAwareAssetUrl)
+// Module 10680 (useThemeAndReducedMotionAwareAssetUrl)
 import initialize from "initialize" /* 586 */;
 import isThemeLight from "isThemeLight" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");

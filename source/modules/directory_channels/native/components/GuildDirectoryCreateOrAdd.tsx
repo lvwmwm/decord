@@ -1,24 +1,24 @@
-// Module ID: 12107
-// Function ID: 12108
+// Module ID: 12243
+// Function ID: 12244
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 12108, 12106, 21, 4478, 709, 586, 5608, 6013, 12109, 9277, 1233, 4474, 9788, 1627, 4929, 1498, 5563, 12114, 12105, 2]
+// Dependencies: [32, 19, 17, 12244, 12242, 21, 4481, 709, 586, 5560, 5539, 12245, 9721, 1233, 4477, 9722, 1627, 4936, 1498, 5541, 12250, 12241, 2]
 // Exports: default
 
-// Module 12107 (GuildDirectoryCreateOrAddHeader)
+// Module 12243 (GuildDirectoryCreateOrAddHeader)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import useSegmentedControlState from "useSegmentedControlState" /* 9277 */;
-import SegmentedControl from "SegmentedControl" /* 9788 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import useSegmentedControlState from "useSegmentedControlState" /* 9721 */;
+import SegmentedControl from "SegmentedControl" /* 9722 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "isFetching" /* 12108 */;
-import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 12106 */;
+import closure_8 from "isFetching" /* 12244 */;
+import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 12242 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function GuildDirectoryCreateOrAddHeader(arg0) {
@@ -88,9 +88,9 @@ let closure_13 = importAllResult.memo((guild) => {
   let obj = guild(586);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getDirectoryEntry(directoryChannelId, guild.id));
-  obj = { label: guild.name, icon: callback(directoryChannelId(6013), obj), trailing: callback(directoryChannelId(12109), { entry: stateFromStores }), start, end };
+  obj = { label: guild.name, icon: callback(directoryChannelId(5539), obj), trailing: callback(directoryChannelId(12245), { entry: stateFromStores }), start, end };
   obj = { style: callback3().guildIcon, guild };
-  return callback(guild(5608).TableRow, obj);
+  return callback(guild(5560).TableRow, obj);
 });
 let closure_14 = importAllResult.memo((guild) => {
   guild = guild.guild;
@@ -107,21 +107,21 @@ let closure_14 = importAllResult.memo((guild) => {
     end: null
   };
   obj = { style: callback3().guildIcon, guild };
-  obj[2] = callback(handleItemPress(6013), obj);
-  obj[3] = callback(guild(5608).TableRow.Arrow, {});
+  obj[2] = callback(handleItemPress(5539), obj);
+  obj[3] = callback(guild(5560).TableRow.Arrow, {});
   obj[4] = start;
   obj[5] = end;
-  return callback(guild(5608).TableRow, obj);
+  return callback(guild(5560).TableRow, obj);
 });
 let obj2 = { paddingHorizontal: ThemesDefault.space.PX_12, width: "100%", marginTop: 18 };
 const result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");
 
-export default function GuildDirectoryCreateOrAdd(stateFromStores) {
-  const _require = stateFromStores;
+export default function GuildDirectoryCreateOrAdd(first) {
+  const _require = first;
   const tmp = callback3();
   let obj = _require(ref[18]);
   const navigation = obj.useNavigation();
-  ref = addedGuilds.useRef(stateFromStores);
+  ref = addedGuilds.useRef(first);
   let tmp6 = navigation(ref[19])(ref);
   const effect = addedGuilds.useEffect(() => {
     ref.current = closure_0;
@@ -131,7 +131,7 @@ export default function GuildDirectoryCreateOrAdd(stateFromStores) {
   addedGuilds = tmp8.addedGuilds;
   const bottom = navigation(ref[16])().bottom;
   const tmp9 = availableGuilds(addedGuilds.useState(0), 2);
-  const first = tmp9[0];
+  first = tmp9[0];
   closure_7 = tmp9[1];
   const items = [addedGuilds, availableGuilds, first];
   const memo = addedGuilds.useMemo(() => 0 === first ? availableGuilds : addedGuilds, items);

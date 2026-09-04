@@ -1,18 +1,18 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16655
+// Function ID: 16656
 // Name: GuildChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1921, 10879, 673, 21, 1234, 4478, 16567, 4217, 4928, 4468, 5077, 4474, 4941, 586, 4322, 4666, 2]
+// Dependencies: [32, 19, 17, 1921, 10847, 673, 21, 1234, 4481, 16656, 4218, 4935, 4471, 5084, 4477, 4948, 586, 4325, 4673, 2]
 
-// Module 16566 (GuildChannelDetailsTopic)
+// Module 16655 (GuildChannelDetailsTopic)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10879 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10847 */;
 import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function GuildChannelDetailsTopic(channel) {
@@ -202,7 +202,7 @@ function PrivateChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback2(channel(4474).Text, obj);
+    tmp4 = callback2(channel(4477).Text, obj);
   }
   return tmp4;
 }
@@ -218,7 +218,7 @@ function GroupDMChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback2(channel(4474).Text, obj);
+    tmp4 = callback2(channel(4477).Text, obj);
   }
   return tmp4;
 }

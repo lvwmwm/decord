@@ -1,12 +1,12 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8786
+// Function ID: 8787
 // Name: getApplicationFlags
-// Dependencies: [4504, 503, 2]
+// Dependencies: [4507, 503, 2]
 // Exports: hasApplicationFlag
 
-// Module 8449 (getApplicationFlags)
+// Module 8786 (getApplicationFlags)
 import fromStringAll from "fromString" /* 503 */;
-import closure_2 from "createExecutable" /* 4504 */;
+import closure_2 from "createExecutable" /* 4507 */;
 
 function getApplicationFlags(application) {
   if (null == application) {

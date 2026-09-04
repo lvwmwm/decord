@@ -1,18 +1,18 @@
-// Module ID: 10122
-// Function ID: 10123
-// Dependencies: [19, 17, 4500, 1215, 1908, 21, 4478, 4326, 709, 9568, 9541, 586, 5370, 9806, 10123, 2]
+// Module ID: 9942
+// Function ID: 9943
+// Dependencies: [19, 17, 4503, 1215, 1908, 21, 4481, 4329, 709, 9512, 9400, 586, 5378, 9018, 9943, 2]
 
-// Module 10122
+// Module 9942
 import ThemesDefault from "Themes" /* 709 */;
-import useCanCurrentUserSpeakInChannelDefault from "useCanCurrentUserSpeakInChannel" /* 9568 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9806 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9018 */;
+import useCanCurrentUserSpeakInChannelDefault from "useCanCurrentUserSpeakInChannel" /* 9512 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "reset" /* 4500 */;
+import closure_4 from "reset" /* 4503 */;
 import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo((channel) => {
   importDefault = undefined;
   const tmp = callback();
   const tmp2 = importDefault;
-  let obj = channel(9541);
+  let obj = channel(9400);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   obj1 = channel(586);
   const items = [closure_6];
@@ -48,9 +48,9 @@ const memoResult = importAllResult.memo((channel) => {
     num = 0;
   }
   const obj4 = channel(586);
-  const stageHasMedia = channel(5370).useStageHasMedia(channel.id);
+  const stageHasMedia = channel(5378).useStageHasMedia(channel.id);
   const items5 = [];
-  items5.push(jsx(channel(10123).StreamVolumeItem, {}));
+  items5.push(jsx(channel(9943).StreamVolumeItem, {}));
   if (tmp11) {
     obj = { channel: null, disabled: null };
     obj[0] = channel;
@@ -66,11 +66,11 @@ const memoResult = importAllResult.memo((channel) => {
       tmp12 = reachedLimit;
     }
     obj[1] = tmp12;
-    items5.push(tmp9(tmp5(10123).ScreenshareButton, obj));
+    items5.push(tmp9(tmp5(9943).ScreenshareButton, obj));
   }
   obj = { channelId: channel.id, isConnectedToVoiceChannel };
-  items5.push(jsx(channel(10123).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(10123).DeafenButton, { channel }));
+  items5.push(jsx(channel(9943).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(9943).DeafenButton, { channel }));
   obj1 = { style: tmp.container, children: items5.map((children) => callback(closure_3, { children }, arg1)) };
   return <View style={tmp.container}>{items5.map((children) => callback(closure_3, { children }, arg1))}</View>;
 });

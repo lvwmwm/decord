@@ -1,10 +1,10 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12476
+// Function ID: 12477
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [19, 673, 4445, 12317, 4368, 9754, 9757, 38, 2]
+// Dependencies: [19, 673, 4448, 12449, 4371, 8993, 8997, 38, 2]
 // Exports: default
 
-// Module 12344 (useGuildPowerupConfigureCallback)
+// Module 12476 (useGuildPowerupConfigureCallback)
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
 

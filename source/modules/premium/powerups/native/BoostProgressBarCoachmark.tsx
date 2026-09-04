@@ -1,15 +1,15 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 16090
+// Function ID: 16091
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 1383, 21, 4478, 9754, 1233, 2400, 4204, 8991, 2]
+// Dependencies: [19, 17, 1383, 21, 4481, 8993, 1233, 2400, 4205, 11059, 2]
 // Exports: default
 
-// Module 16004 (BoostProgressBarCoachmark)
+// Module 16090 (BoostProgressBarCoachmark)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
@@ -30,7 +30,7 @@ export default function BoostProgressBarCoachmark(guild) {
   const items1 = [guild.id, markAsDismissed];
   callback1 = callback.useCallback(() => {
     markAsDismissed(closure_1_5.TAKE_ACTION);
-    markAsDismissed(9754).saveGuild(guild.id, { premiumProgressBarEnabled: true });
+    markAsDismissed(8993).saveGuild(guild.id, { premiumProgressBarEnabled: true });
   }, items1);
   const items2 = [callback, callback1, tmp.riveContainer];
   const memo = callback.useMemo(() => {
@@ -48,6 +48,6 @@ export default function BoostProgressBarCoachmark(guild) {
     obj[9] = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(8991).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(11059).useCoachmark(guild.targetRef, memo);
   return null;
 };

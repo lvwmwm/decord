@@ -1,19 +1,19 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 13733
+// Function ID: 13734
 // Name: noop
-// Dependencies: [703, 4529, 4542, 684, 4582, 581, 3, 4558, 13701, 1234, 38, 2]
+// Dependencies: [703, 4532, 4545, 684, 4585, 581, 3, 4561, 13734, 1234, 38, 2]
 
-// Module 13700 (noop)
+// Module 13733 (noop)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import failsDefault from "fails" /* 581 */;
 import setDefault from "set" /* 684 */;
 import set from "set" /* 1234 */;
-import sleep from "sleep" /* 4558 */;
-import onDefault from "on" /* 4582 */;
+import sleep from "sleep" /* 4561 */;
+import onDefault from "on" /* 4585 */;
 import closure_3 from "refreshSourceMapCookie" /* 703 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 require = arg1;
 function noop() {
@@ -76,13 +76,13 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  obj = self(4558);
+  obj = self(4561);
   self.connectionStartTime = obj.now();
   self.helloTimeout = setTimeout(() => {
     self.handleClose(false, 0, "The connection timed out after " + self(closure_1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: closure_4.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(13701).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(13734).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
@@ -379,7 +379,7 @@ prototype["handleHello"] = function handleHello(d) {
     tmp = require;
     const tmp2 = dependencyMap;
   }
-  const diff = tmp4(4558).now() - self.connectionStartTime;
+  const diff = tmp4(4561).now() - self.connectionStartTime;
   ({ logger, heartbeatInterval } = self);
   if (heartbeatInterval == null) {
     heartbeatInterval = "??";

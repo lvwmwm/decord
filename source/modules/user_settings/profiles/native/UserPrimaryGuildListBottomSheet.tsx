@@ -1,16 +1,16 @@
-// Module ID: 14535
-// Function ID: 14536
+// Module ID: 14567
+// Function ID: 14568
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [19, 17, 7865, 21, 4478, 1234, 709, 8086, 5608, 4445, 1233, 6013, 9025, 7706, 12, 5631, 4474, 8116, 8376, 2]
+// Dependencies: [19, 17, 7875, 21, 4481, 1234, 709, 8096, 5560, 4448, 1233, 5539, 9113, 5644, 12, 7090, 4477, 8804, 8523, 2]
 // Exports: default
 
-// Module 14535 (UserPrimaryGuildListBottomSheet)
+// Module 14567 (UserPrimaryGuildListBottomSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { GuildTagBadgeSize } from "items" /* 7865 */;
+import { GuildTagBadgeSize } from "items" /* 7875 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 const require = arg1;
@@ -122,9 +122,9 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = availableGuilds(1233).intl;
   obj[3] = intl.string(availableGuilds(1233).t.Fo0g9x);
-  obj[1] = callback(availableGuilds(4474).Text, obj);
+  obj[1] = callback(availableGuilds(4477).Text, obj);
   obj[2] = callback(memo, obj);
-  obj[3] = callback(availableGuilds(8116).BottomSheetFlashList, {
+  obj[3] = callback(availableGuilds(8804).BottomSheetFlashList, {
     ItemSeparatorComponent() {
       return closure_1_6(availableGuilds(closure_1_2[18]).FormDivider, { iconPush: true, style: divider.divider });
     },
@@ -156,5 +156,5 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return closure_1_6(closure_1_9, obj);
     }
   });
-  return callback(availableGuilds(5631).BottomSheet, obj);
+  return callback(availableGuilds(7090).BottomSheet, obj);
 };

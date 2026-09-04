@@ -1,14 +1,14 @@
-// Module ID: 8092
-// Function ID: 8093
-// Dependencies: [19, 4470, 675, 1622, 21, 4478, 1627, 586, 8093, 4217, 4928, 4139, 7309, 1233, 4446, 8094, 7296, 4445, 4929, 2]
+// Module ID: 8103
+// Function ID: 8104
+// Dependencies: [19, 4473, 675, 1622, 21, 4481, 1627, 586, 8104, 4218, 4935, 4139, 7487, 8105, 1233, 4449, 8106, 8107, 7474, 4448, 4936, 2]
 
-// Module 8092
+// Module 8103
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 675 */;
 import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_6 } from "DRAG_HANDLE" /* 1622 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -27,6 +27,7 @@ const memoResult = importAllResult.memo((user) => {
   let sharedValue;
   isTryItOut = undefined;
   c9 = undefined;
+  let isShopStandalonePdpMobileEnabled;
   const tmp = isTryItOut();
   let obj = user(selectedSkuId[7]);
   const items = [analyticsLocations];
@@ -79,7 +80,7 @@ const memoResult = importAllResult.memo((user) => {
   O.__workletHash = 15594859424201;
   O.__initData = c9;
   const animatedStyle = user(selectedSkuId[9]).useAnimatedStyle(O);
-  let obj4 = user(selectedSkuId[9]);
+  const obj4 = user(selectedSkuId[9]);
   class M {
     constructor() {
       pointerEvents = "none";
@@ -91,9 +92,9 @@ const memoResult = importAllResult.memo((user) => {
   }
   M.__closure = { shouldShowButton: sharedValue };
   M.__workletHash = 16151141699021;
-  M.__initData = closure_10;
+  M.__initData = isShopStandalonePdpMobileEnabled;
   const animatedProps = user(selectedSkuId[9]).useAnimatedProps(M);
-  const obj6 = user(selectedSkuId[9]);
+  let obj6 = user(selectedSkuId[9]);
   class R {
     constructor() {
       num = 0;
@@ -154,17 +155,19 @@ const memoResult = importAllResult.memo((user) => {
     result = !isTryItOut;
   }
   c9 = result;
+  const obj10 = user(selectedSkuId[12]);
+  isShopStandalonePdpMobileEnabled = user(selectedSkuId[13]).useIsShopStandalonePdpMobileEnabled("edit_collectibles_cta_button");
   const items2 = [tmp15, result, user];
-  const items3 = [tmp15, onApply, result, analyticsLocations, analyticsSource, selectedSkuId];
+  const items3 = [tmp15, onApply, result, isShopStandalonePdpMobileEnabled, analyticsLocations, analyticsSource, selectedSkuId];
   const memo = obj2.useMemo(() => {
     if (isTryItOut) {
-      const intl3 = user(selectedSkuId[13]).intl;
-      let stringResult = intl3.string(user(selectedSkuId[13]).t.Jh8fJz);
+      const intl3 = user(selectedSkuId[14]).intl;
+      let stringResult = intl3.string(user(selectedSkuId[14]).t.Jh8fJz);
     } else if (c9) {
       const obj = currentSkuId(selectedSkuId[11]);
-      const intl2 = user(selectedSkuId[13]).intl;
+      const intl2 = user(selectedSkuId[14]).intl;
       const string = intl2.string;
-      let KXLX7l = user(selectedSkuId[13]).t;
+      let KXLX7l = user(selectedSkuId[14]).t;
       if (isPremiumResult) {
         KXLX7l = KXLX7l.KXLX7l;
         let stringResult1 = string(KXLX7l);
@@ -173,29 +176,38 @@ const memoResult = importAllResult.memo((user) => {
       }
       isPremiumResult = currentSkuId(selectedSkuId[11]).isPremium(user);
     } else {
-      const intl = user(selectedSkuId[13]).intl;
-      stringResult = intl.string(user(selectedSkuId[13]).t.fYfGgK);
+      const intl = user(selectedSkuId[14]).intl;
+      stringResult = intl.string(user(selectedSkuId[14]).t.fYfGgK);
     }
     return stringResult;
   }, items2);
   const callback = obj2.useCallback(() => {
     if (isTryItOut) {
-      const result = user(selectedSkuId[14]).triggerHapticFeedback(user(selectedSkuId[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
+      const result = user(selectedSkuId[15]).triggerHapticFeedback(user(selectedSkuId[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
       onApply();
-      const obj4 = user(selectedSkuId[14]);
+      const obj6 = user(selectedSkuId[15]);
     } else if (c9) {
-      let tmp2Result = tmp2(tmp3[15]);
-      const result1 = tmp2Result.navigateToNitroManagement();
+      const result1 = user(selectedSkuId[16]).navigateToNitroManagement();
+      const obj5 = user(selectedSkuId[16]);
     } else {
-      tmp2Result = tmp2(tmp3[16]);
-      const obj = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null, screen: null };
+      if (isShopStandalonePdpMobileEnabled) {
+        if (null != selectedSkuId) {
+          let obj = { skuId: null, analyticsLocations: null, stageCollectibleChangeForEditProfile: null };
+          obj[0] = tmp3;
+          obj[1] = analyticsLocations;
+          obj[2] = onApply;
+          const result2 = user(selectedSkuId[17]).openProductDetailsActionSheetForSku(obj, "stack");
+        }
+      }
+      obj = user(selectedSkuId[18]);
+      obj = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null, screen: null };
       obj[0] = analyticsLocations;
       obj[1] = analyticsSource;
       obj[2] = selectedSkuId;
       obj[3] = analyticsSource.SHOP_ALL;
-      const result2 = tmp2Result.openCollectiblesShopMobile(obj);
+      const result3 = obj.openCollectiblesShopMobile(obj);
     }
-    currentSkuId(selectedSkuId[17]).hideActionSheet();
+    currentSkuId(selectedSkuId[19]).hideActionSheet();
   }, items3);
   obj1 = { style: items4, animatedProps, children: null };
   items4 = [tmp.buttonContainer, animatedStyle1];
@@ -205,7 +217,7 @@ const memoResult = importAllResult.memo((user) => {
   if (result) {
     str = "active";
   }
-  obj2[2] = sharedValue(user(selectedSkuId[18]).Button, { variant: str, onPress: callback, size: "md", text: memo, grow: true });
+  obj2[2] = sharedValue(user(selectedSkuId[20]).Button, { variant: str, onPress: callback, size: "md", text: memo, grow: true });
   obj1[2] = sharedValue(currentSkuId(selectedSkuId[9]).View, obj2);
   return sharedValue(currentSkuId(selectedSkuId[9]).View, obj1);
 });

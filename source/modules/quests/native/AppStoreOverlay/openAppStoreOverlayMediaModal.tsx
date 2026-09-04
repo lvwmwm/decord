@@ -1,10 +1,10 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11440
+// Function ID: 11441
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4186, 673, 1492, 8586, 2008, 8589, 8593, 11333, 1233, 4445, 4724, 11334, 2]
+// Dependencies: [32, 5, 4186, 673, 1492, 8192, 2008, 8196, 8200, 11441, 1233, 4448, 4731, 11442, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11332 (_openAppStoreOverlayMediaModal)
+// Module 11440 (_openAppStoreOverlayMediaModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "setContent" /* 4186 */;
@@ -149,6 +149,8 @@ function _openAppStoreOverlayMediaModal() {
               obj.onCloseCallback = c6;
               obj.disableHapticOnOpen = true;
               obj.disableMediaOverlayFooter = true;
+              obj.disableMediaOverlayButton = true;
+              obj.shareable = false;
               if (_undefined3.isOpen()) {
                 let tmp3Result = tmp3(tmp4[11]);
                 tmp3Result.openLazy(_undefined(tmp4[6])(tmp4[13], tmp4.paths), c6, obj, "stack");

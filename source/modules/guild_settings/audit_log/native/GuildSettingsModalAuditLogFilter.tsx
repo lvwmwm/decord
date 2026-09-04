@@ -1,19 +1,19 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17465
+// Function ID: 17466
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1921, 17376, 673, 21, 4478, 709, 1233, 4322, 17378, 1627, 1498, 5463, 17386, 10904, 7706, 5608, 1296, 10138, 17387, 6231, 8929, 8116, 5948, 2]
+// Dependencies: [32, 19, 17, 1921, 17456, 673, 21, 4481, 709, 1233, 4325, 17458, 1627, 1498, 5472, 17466, 10873, 5644, 5560, 1296, 9958, 17467, 6990, 8163, 8804, 6980, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17385 (GuildSettingsModalAuditLogFilter)
+// Module 17465 (GuildSettingsModalAuditLogFilter)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "AuditLogActions" /* 17376 */;
+import closure_7 from "AuditLogActions" /* 17456 */;
 import { AuditLogFilterTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
@@ -235,8 +235,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
   const _require = closure_4;
-  const obj = _require(17378);
-  const mapped = _require(17378).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(17458);
+  const mapped = _require(17458).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

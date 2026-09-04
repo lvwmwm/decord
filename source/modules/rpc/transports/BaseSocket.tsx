@@ -1,12 +1,12 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9493
+// Function ID: 9494
 // Name: checkRpcVersion
-// Dependencies: [673, 12, 9520, 2]
+// Dependencies: [673, 12, 9483, 2]
 
-// Module 9530 (checkRpcVersion)
+// Module 9493 (checkRpcVersion)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import prototypeDefault from "prototype" /* 9520 */;
+import prototypeDefault from "prototype" /* 9483 */;
 import ME from "ME" /* 673 */;
 
 ({ RPC_VERSION: obj1, RPCCloseCodes: c3 } = ME);

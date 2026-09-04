@@ -1,19 +1,19 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11975
+// Function ID: 11976
 // Name: result
-// Dependencies: [32, 1386, 4398, 1921, 11845, 11846, 4953, 684, 586, 11, 1372, 6261, 4298, 2]
+// Dependencies: [32, 1386, 4401, 1921, 11976, 11977, 4960, 684, 586, 11, 1372, 7326, 4301, 2]
 // Exports: default
 
-// Module 11844 (result)
+// Module 11975 (result)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 684 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleInviteData" /* 4398 */;
+import closure_5 from "handleInviteData" /* 4401 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "initialize" /* 11845 */;
-import closure_8 from "initialize" /* 11846 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4953 */;
+import closure_7 from "initialize" /* 11976 */;
+import closure_8 from "initialize" /* 11977 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4960 */;
 
 const require = arg1;
 let result = 5 * setDefault.Millis.SECOND;
@@ -68,7 +68,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const tmp14 = closure_7;
   const tmp2Result1 = guild_id(586);
-  const tmp2Result2 = guild_id(6261);
+  const tmp2Result2 = guild_id(7326);
   const items5 = [closure_8];
   const stateFromStoresObject = guild_id(586).useStateFromStoresObject(items5, () => ({ recentMessageMetadata: store2.getRecentMessageMetadata(), recentApplicationCommandMetadata: store2.getRecentApplicationCommandMetadata() }));
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);
@@ -101,12 +101,12 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     const applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const tmp2Result4 = guild_id(586);
-  result = guild_id(4298).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result5 = guild_id(4298);
-  let result1 = guild_id(4298).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-  const tmp2Result6 = guild_id(4298);
+  result = guild_id(4301).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const tmp2Result5 = guild_id(4301);
+  let result1 = guild_id(4301).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const tmp2Result6 = guild_id(4301);
   let tmp30 = null != stateFromStores4;
-  const result2 = guild_id(4298).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const result2 = guild_id(4301).useIsDismissibleContentDismissed_UNSAFE(tmp2(1372).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp30) {
     tmp30 = stateFromStores4.channelId === channelId;
   }

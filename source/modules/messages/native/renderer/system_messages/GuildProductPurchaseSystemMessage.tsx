@@ -1,15 +1,15 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7955
+// Function ID: 7956
 // Name: createGuildProductPurchaseSystemMessage
-// Dependencies: [4131, 1386, 673, 4747, 7881, 1433, 1430, 7915, 7883, 1233, 7885, 2]
+// Dependencies: [4131, 1386, 673, 4754, 7891, 1434, 1431, 7925, 7893, 1233, 7895, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 7945 (createGuildProductPurchaseSystemMessage)
-import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4747 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
+// Module 7955 (createGuildProductPurchaseSystemMessage)
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4754 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
 import closure_3 from "hasFlag" /* 4131 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { MessageTypes } from "ME" /* 673 */;
@@ -46,7 +46,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
     ensureAvatarSource;
     if (null != guildMemberAvatar) {
       if (null != guildId) {
-        let tmp5Result = tmp5(1430);
+        let tmp5Result = tmp5(1431);
         obj = { userId: null, avatar: null, guildId: null };
         obj[0] = author.id;
         obj[1] = guildMemberAvatar;
@@ -54,7 +54,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
         let guildMemberAvatarSource = tmp5Result.getGuildMemberAvatarSource(obj, author);
       }
       obj = { content: null, totalMonthsSubscribed: 0, username: null, avatarURL: null, welcomeLabel: null };
-      tmp5Result = tmp5(7915);
+      tmp5Result = tmp5(7925);
       obj1 = { username: null, usernameOnClickHandler: null, productName: null };
       obj1[0] = messageAuthorWithProcessedColor.nick;
       obj2 = { message: null, author: null, roleStyle: null };

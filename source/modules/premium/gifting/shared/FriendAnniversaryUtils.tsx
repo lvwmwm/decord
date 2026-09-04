@@ -1,10 +1,10 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8010
+// Function ID: 8011
 // Name: FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS
 // Dependencies: [3717, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8000 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
+// Module 8010 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
 import set from "set" /* 2 */;
 import _mod3717 from "module_3717" /* 3717 */;
 

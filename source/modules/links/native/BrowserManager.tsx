@@ -1,15 +1,15 @@
-// Module ID: 4443
-// Function ID: 4444
+// Module ID: 4446
+// Function ID: 4447
 // Name: NativeModules
-// Dependencies: [17, 641, 1234, 4444, 688, 4190, 1470, 2]
+// Dependencies: [17, 641, 1234, 4447, 688, 4190, 1394, 2]
 // Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 4443 (NativeModules)
+// Module 4446 (NativeModules)
 import set from "set" /* 2 */;
 import keys2 from "keys" /* 688 */;
 import set2 from "set" /* 1234 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import enforcingDefault from "enforcing" /* 4444 */;
+import enforcingDefault from "enforcing" /* 4447 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import keys from "keys" /* 641 */;
 
@@ -142,7 +142,7 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(closure_0, C
         }
         return openInChromeURLResult;
       } else {
-        return tmp2(1470).assertNever(selectedBrowser);
+        return tmp2(1394).assertNever(selectedBrowser);
       }
     }
   }
@@ -153,13 +153,13 @@ export const browserManagerSelectBrowser = function browserManagerSelectBrowser(
   let obj = set2;
   if (obj.isAndroid()) {
     if (tmp(688).WebBrowserType.SAFARI === selectedBrowser) {
-      const browser = enforcingDefault.selectBrowser(tmp(4444).BrowserType.SAFARI);
+      const browser = enforcingDefault.selectBrowser(tmp(4447).BrowserType.SAFARI);
       const obj3 = enforcingDefault;
     } else if (tmp(688).WebBrowserType.IN_APP === selectedBrowser) {
-      const browser1 = enforcingDefault.selectBrowser(tmp(4444).BrowserType.IN_APP);
+      const browser1 = enforcingDefault.selectBrowser(tmp(4447).BrowserType.IN_APP);
       const obj2 = enforcingDefault;
     } else if (tmp(688).WebBrowserType.CHROME === selectedBrowser) {
-      const browser2 = enforcingDefault.selectBrowser(tmp(4444).BrowserType.CHROME);
+      const browser2 = enforcingDefault.selectBrowser(tmp(4447).BrowserType.CHROME);
       const obj5 = enforcingDefault;
     }
   } else {

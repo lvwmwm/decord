@@ -1,9 +1,9 @@
-// Module ID: 6086
-// Function ID: 6087
+// Module ID: 7170
+// Function ID: 7171
 // Name: RewardRequirementType
 // Dependencies: [2]
 
-// Module 6086 (RewardRequirementType)
+// Module 7170 (RewardRequirementType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontTypes.tsx");

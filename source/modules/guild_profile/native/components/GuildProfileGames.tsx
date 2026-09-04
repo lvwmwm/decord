@@ -1,16 +1,16 @@
-// Module ID: 9037
-// Function ID: 9038
+// Module ID: 9124
+// Function ID: 9125
 // Name: ClickableGameIcon
-// Dependencies: [19, 17, 21, 4478, 709, 8820, 8831, 9038, 4474, 9042, 4194, 4445, 9043, 2008, 5077, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 8605, 8616, 9125, 4477, 9129, 4194, 4448, 9130, 2008, 5084, 2]
 // Exports: default
 
-// Module 9037 (ClickableGameIcon)
+// Module 9124 (ClickableGameIcon)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ClickableGameIcon(game) {
@@ -19,8 +19,8 @@ function ClickableGameIcon(game) {
   dependencyMap = undefined;
   let React;
   ({ style, activityLevel } = game);
-  const obj = { gameId: game.id, source: game(8831).GameProfileSources.GuildProfileGames, trackEntryPointImpression: true };
-  const tmp3Result = onPressFallback(8820)(obj);
+  const obj = { gameId: game.id, source: game(8616).GameProfileSources.GuildProfileGames, trackEntryPointImpression: true };
+  const tmp3Result = onPressFallback(8605)(obj);
   dependencyMap = tmp3Result;
   React = tmp5;
   const items = [null != tmp3Result, tmp3Result, onPressFallback, game];
@@ -33,7 +33,7 @@ function ClickableGameIcon(game) {
       }
     }, items);
   }
-  return callback(onPressFallback(9038), { style, game, activityLevel, onPress });
+  return callback(onPressFallback(9125), { style, game, activityLevel, onPress });
 }
 function FavoriteGame(activityLevel) {
   const game = activityLevel.game;

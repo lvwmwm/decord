@@ -1,13 +1,13 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7682
+// Function ID: 7683
 // Name: DeviceState
-// Dependencies: [7506, 2, 7507]
+// Dependencies: [7683, 2, 7684]
 // Exports: logDeviceState
 
-// Module 7505 (DeviceState)
+// Module 7682 (DeviceState)
 import set from "set" /* 2 */;
-import _getDeviceState from "_getDeviceState" /* 7506 */;
-import ThermalState from "ThermalState" /* 7507 */;
+import _getDeviceState from "_getDeviceState" /* 7683 */;
+import ThermalState from "ThermalState" /* 7684 */;
 
 const result = set.fileFinishedImporting("modules/device/DeviceState.tsx");
 

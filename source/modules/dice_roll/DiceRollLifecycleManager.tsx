@@ -1,19 +1,19 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17259
+// Function ID: 17260
 // Name: finishRoll
-// Dependencies: [1386, 1980, 11760, 8169, 4471, 5495, 1233, 7211, 7437, 2]
+// Dependencies: [1386, 1980, 11891, 9230, 4474, 7058, 1233, 7390, 7615, 2]
 
-// Module 17173 (finishRoll)
+// Module 17259 (finishRoll)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import initializeDefault from "initialize" /* 5495 */;
-import trackInviteDefault from "trackInvite" /* 7211 */;
-import rebuildDefault from "rebuild" /* 7437 */;
+import initializeDefault from "initialize" /* 7058 */;
+import trackInviteDefault from "trackInvite" /* 7390 */;
+import rebuildDefault from "rebuild" /* 7615 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "handleConnectionOpen" /* 1980 */;
-import closure_5 from "INITIAL_STATE" /* 11760 */;
-import { INITIAL_STATE } from "INITIAL_STATE" /* 11760 */;
-import ROLL_DURATION_MS from "ROLL_DURATION_MS" /* 8169 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import closure_5 from "INITIAL_STATE" /* 11891 */;
+import { INITIAL_STATE } from "INITIAL_STATE" /* 11891 */;
+import ROLL_DURATION_MS from "ROLL_DURATION_MS" /* 9230 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 
 require = arg1;
 ({ AFTER_ROLL_DELAY_MS: error, ALLOWED_DICE_SIDES_SET: closure_8, DEFAULT_DICE_SIDES: c9, DISMISS_DELAY_MS: c10, MAX_DICE_COUNT: unpackModuleId, ROLL_DURATION_MS: closure_12 } = ROLL_DURATION_MS);

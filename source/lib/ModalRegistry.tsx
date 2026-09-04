@@ -1,9 +1,9 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 16838
+// Function ID: 16839
 // Name: getStores
 // Dependencies: [2]
 
-// Module 16751 (getStores)
+// Module 16838 (getStores)
 import set2 from "set" /* 2 */;
 
 class ModalRegistry {

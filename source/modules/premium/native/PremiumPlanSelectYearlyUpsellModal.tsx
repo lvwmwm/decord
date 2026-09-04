@@ -1,22 +1,22 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13479
+// Function ID: 13480
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1995, 6093, 13437, 1923, 502, 21, 4478, 5470, 5393, 7162, 586, 1896, 4948, 13447, 1296, 1233, 4139, 4929, 2]
+// Dependencies: [32, 19, 17, 1995, 7177, 13470, 1923, 502, 21, 4481, 5479, 5401, 7342, 586, 1896, 4955, 13480, 1296, 1233, 4139, 4936, 2]
 // Exports: default
 
-// Module 13446 (PremiumPlanSelectYearlyUpsellModal)
-import componentDidMountDefault from "componentDidMount" /* 4948 */;
-import createTextStyleDefault from "createTextStyle" /* 5470 */;
-import registerAssetDefault from "registerAsset" /* 13447 */;
+// Module 13479 (PremiumPlanSelectYearlyUpsellModal)
+import componentDidMountDefault from "componentDidMount" /* 4955 */;
+import createTextStyleDefault from "createTextStyle" /* 5479 */;
+import registerAssetDefault from "registerAsset" /* 13480 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "_getSystemLocale" /* 1995 */;
-import closure_8 from "updateProduct" /* 6093 */;
-import { usePremiumPlanSelectStore } from "usePremiumPlanSelectStore" /* 13437 */;
+import closure_8 from "updateProduct" /* 7177 */;
+import { usePremiumPlanSelectStore } from "usePremiumPlanSelectStore" /* 13470 */;
 import { PREMIUM_YEARLY_DISCOUNT_PERCENT as closure_10 } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ Image: c5, View: closure_6 } = get_ActivityIndicator);
@@ -46,7 +46,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   let obj = React;
   [tmp4, c3] = callback(React.useState(null), 2);
-  obj1 = productId(7162);
+  obj1 = productId(7342);
   const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
   let obj2 = productId(586);
   let items = [closure_7];
@@ -118,7 +118,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj7[3] = tmp11;
     obj7[4] = "upsell" === tmp4 && tmp2;
-    obj6[1] = callback2(tmp5(4929).Button, obj7);
+    obj6[1] = callback2(tmp5(4936).Button, obj7);
     items2[3] = callback2(closure_6, obj6);
     const obj9 = { style: null, children: null };
     obj9[0] = tmp.continueButton;
@@ -131,7 +131,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj10[3] = tmp11;
     obj10[4] = "default" === tmp4 && tmp2;
-    obj9[1] = callback2(tmp5(4929).Button, obj10);
+    obj9[1] = callback2(tmp5(4936).Button, obj10);
     items2[4] = callback2(closure_6, obj9);
     const obj11 = { style: null, children: null };
     obj11[0] = tmp.cancelButton;
@@ -139,7 +139,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     const intl5 = tmp5(1233).intl;
     obj12[1] = intl5.string(tmp5(1233).t.cpT0Cq);
     obj12[2] = onClose;
-    obj11[1] = callback2(tmp5(4929).Button, obj12);
+    obj11[1] = callback2(tmp5(4936).Button, obj12);
     items2[5] = callback2(closure_6, obj11);
     obj[1] = items2;
     obj[2] = closure_12(closure_6, obj);

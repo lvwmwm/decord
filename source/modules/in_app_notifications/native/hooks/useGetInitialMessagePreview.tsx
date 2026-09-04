@@ -1,10 +1,10 @@
-// Module ID: 10247
-// Function ID: 10248
+// Module ID: 10069
+// Function ID: 10070
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4131, 6156, 2]
+// Dependencies: [19, 4131, 7240, 2]
 // Exports: useGetInitialMessagePreview
 
-// Module 10247 (useGetInitialMessagePreview)
+// Module 10069 (useGetInitialMessagePreview)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "hasFlag" /* 4131 */;
 import { MessageSnapshotRecord } from "hasFlag" /* 4131 */;

@@ -1,15 +1,15 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17436
+// Function ID: 17437
 // Name: handleTouch
-// Dependencies: [5, 32, 19, 17, 1380, 673, 21, 4478, 709, 5995, 1233, 6061, 1627, 5510, 4926, 8127, 8911, 500, 4474, 4929, 9085, 9794, 2]
+// Dependencies: [5, 32, 19, 17, 1380, 673, 21, 4481, 709, 7135, 1233, 6534, 1627, 5585, 4933, 8112, 8698, 500, 4477, 4936, 8980, 9729, 2]
 // Exports: default
 
-// Module 17356 (handleTouch)
+// Module 17436 (handleTouch)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 5995 */;
-import trackImpressionDefault from "trackImpression" /* 8911 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7135 */;
+import trackImpressionDefault from "trackImpression" /* 8698 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -17,7 +17,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "handleRequiredAction" /* 1380 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function handleTouch() {
@@ -63,8 +63,8 @@ export default function NewTermsModal() {
   const memo = React.useMemo(() => action.getAction(), []);
   const tmp5 = callback2(React.useState(false), 2);
   importDefault = tmp5[1];
-  let obj = memo(5510);
-  obj.useNavigatorBackPressHandler(memo(4926).BackPressHandler.minimize);
+  let obj = memo(5585);
+  obj.useNavigatorBackPressHandler(memo(4933).BackPressHandler.minimize);
   dependencyMap = React.useCallback(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
@@ -142,43 +142,43 @@ export default function NewTermsModal() {
     const obj3 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold", children: null };
     const intl = tmp6(1233).intl;
     obj3[2] = intl.string(tmp6(1233).t["7glvXu"]);
-    const items2 = [callback3(tmp6(4474).Text, obj3), , , , , , ];
+    const items2 = [callback3(tmp6(4477).Text, obj3), , , , , , ];
     const obj4 = { variant: "text-md/normal", style: null, children: null };
     obj4[1] = tmp.description;
     const intl2 = tmp6(1233).intl;
     const obj5 = { url: null };
     obj5[0] = constants.TERMS_SUMMARY;
     obj4[2] = intl2.format(tmp6(1233).t.CN0Hvb, obj5);
-    items2[1] = callback3(tmp6(4474).Text, obj4);
+    items2[1] = callback3(tmp6(4477).Text, obj4);
     const obj6 = { variant: "text-md/normal", children: null };
     const intl3 = tmp6(1233).intl;
     const obj7 = { url: null };
     obj7[0] = constants.TERMS;
     obj6[1] = intl3.format(tmp6(1233).t.iw0hFi, obj7);
-    items2[2] = callback3(tmp6(4474).Text, obj6);
+    items2[2] = callback3(tmp6(4477).Text, obj6);
     const obj8 = { variant: "text-md/normal", children: null };
     const intl4 = tmp6(1233).intl;
     const obj9 = { url: null };
     obj9[0] = constants.PAID_TERMS;
     obj8[1] = intl4.format(tmp6(1233).t["36klnD"], obj9);
-    items2[3] = callback3(tmp6(4474).Text, obj8);
+    items2[3] = callback3(tmp6(4477).Text, obj8);
     const obj10 = { variant: "text-md/normal", children: null };
     const intl5 = tmp6(1233).intl;
     const obj11 = { url: null };
     obj11[0] = constants.PRIVACY;
     obj10[1] = intl5.format(tmp6(1233).t.TquFBF, obj11);
-    items2[4] = callback3(tmp6(4474).Text, obj10);
+    items2[4] = callback3(tmp6(4477).Text, obj10);
     const obj12 = { variant: "text-md/normal", children: null };
     const intl6 = tmp6(1233).intl;
     const obj13 = { url: null };
     obj13[0] = constants.GUIDELINES;
     obj12[1] = intl6.format(tmp6(1233).t.ia96Tb, obj13);
-    items2[5] = callback3(tmp6(4474).Text, obj12);
+    items2[5] = callback3(tmp6(4477).Text, obj12);
     const obj14 = { variant: "text-md/normal", style: null, children: null };
     obj14[1] = tmp.agreementDescription;
     const intl7 = tmp6(1233).intl;
     obj14[2] = intl7.string(tmp6(1233).t["+USXQE"]);
-    items2[6] = callback3(tmp6(4474).Text, obj14);
+    items2[6] = callback3(tmp6(4477).Text, obj14);
     obj2[3] = items2;
     const items3 = [callback4(closure_8, obj2), , ];
     const obj15 = { style: null, children: null };
@@ -192,7 +192,7 @@ export default function NewTermsModal() {
     };
     const intl8 = tmp6(1233).intl;
     obj16[2] = intl8.string(tmp6(1233).t["+TBKL1"]);
-    obj15[1] = callback3(tmp6(4929).Button, obj16);
+    obj15[1] = callback3(tmp6(4936).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = { style: null, source: null, color: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null };
     const items4 = [tmp.navbarRight, ];
@@ -200,15 +200,15 @@ export default function NewTermsModal() {
     obj18[0] = top;
     items4[1] = obj18;
     obj17[0] = items4;
-    obj17[1] = tmp2(9794);
+    obj17[1] = tmp2(9729);
     obj17[2] = tmp.navbarRight.tintColor;
     obj17[3] = handleMoreActions;
     const intl9 = tmp6(1233).intl;
     obj17[5] = intl9.string(tmp6(1233).t["UKOtz+"]);
-    items3[2] = callback3(tmp2(9085), obj17);
+    items3[2] = callback3(tmp2(8980), obj17);
     obj[1] = items3;
     tmp10 = callback4(closure_6, obj);
-    const tmp2Result = tmp2(9085);
+    const tmp2Result = tmp2(8980);
   }
   return tmp10;
 };

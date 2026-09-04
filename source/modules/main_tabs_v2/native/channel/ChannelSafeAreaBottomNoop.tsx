@@ -1,8 +1,8 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12575
+// Function ID: 12576
 // Dependencies: [19, 17, 21, 2]
 
-// Module 12417
+// Module 12575
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

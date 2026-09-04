@@ -1,14 +1,14 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15669
+// Function ID: 15670
 // Name: ArrowSmallDownIcon
-// Dependencies: [19, 21, 709, 4196, 15588, 2]
+// Dependencies: [19, 21, 709, 4196, 15670, 2]
 // Exports: ArrowSmallDownIcon
 
-// Module 15587 (ArrowSmallDownIcon)
+// Module 15669 (ArrowSmallDownIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15588 */;
+import registerAsset from "registerAsset" /* 15670 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

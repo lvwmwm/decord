@@ -1,11 +1,11 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 10937
+// Function ID: 10938
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [6084, 586, 2]
+// Dependencies: [7168, 586, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 8511 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
-import closure_2 from "handleUserSettingsStoreUpdate" /* 6084 */;
+// Module 10937 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+import closure_2 from "handleUserSettingsStoreUpdate" /* 7168 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/hooks/useSocialLayerStorefrontMobileAccountLinkingDisabled.tsx");

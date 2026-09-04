@@ -1,15 +1,15 @@
-// Module ID: 4931
-// Function ID: 4932
+// Module ID: 4938
+// Function ID: 4939
 // Name: IconSizes
-// Dependencies: [19, 17, 21, 4478, 709, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 4931 (IconSizes)
+// Module 4938 (IconSizes)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 let obj = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
 let closure_5 = createCacheKey.createStyles(() => {

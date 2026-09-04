@@ -1,10 +1,10 @@
-// Module ID: 8910
-// Function ID: 8911
+// Module ID: 8109
+// Function ID: 8110
 // Name: useCurrentUser
 // Dependencies: [1921, 586, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8910 (useCurrentUser)
+// Module 8109 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 586 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;

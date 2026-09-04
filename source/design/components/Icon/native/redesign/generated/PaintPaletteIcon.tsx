@@ -1,14 +1,14 @@
-// Module ID: 13273
-// Function ID: 13274
+// Module ID: 13306
+// Function ID: 13307
 // Name: PaintPaletteIcon
-// Dependencies: [19, 21, 709, 4196, 13274, 2]
+// Dependencies: [19, 21, 709, 4196, 13307, 2]
 // Exports: PaintPaletteIcon
 
-// Module 13273 (PaintPaletteIcon)
+// Module 13306 (PaintPaletteIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 13274 */;
+import registerAsset from "registerAsset" /* 13307 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

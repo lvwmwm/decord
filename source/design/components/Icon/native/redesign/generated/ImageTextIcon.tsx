@@ -1,14 +1,14 @@
-// Module ID: 15299
-// Function ID: 15300
+// Module ID: 15381
+// Function ID: 15382
 // Name: ImageTextIcon
-// Dependencies: [19, 21, 709, 4196, 15300, 2]
+// Dependencies: [19, 21, 709, 4196, 15382, 2]
 // Exports: ImageTextIcon
 
-// Module 15299 (ImageTextIcon)
+// Module 15381 (ImageTextIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15300 */;
+import registerAsset from "registerAsset" /* 15382 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

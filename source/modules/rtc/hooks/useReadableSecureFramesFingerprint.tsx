@@ -1,10 +1,10 @@
-// Module ID: 9873
-// Function ID: 9874
+// Module ID: 9087
+// Function ID: 9088
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 206, 9850, 2]
+// Dependencies: [19, 206, 9064, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 9873 (useReadableSecureFramesFingerprint)
+// Module 9087 (useReadableSecureFramesFingerprint)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

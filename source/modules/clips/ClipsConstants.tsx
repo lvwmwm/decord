@@ -1,10 +1,10 @@
-// Module ID: 4536
-// Function ID: 4537
+// Module ID: 4539
+// Function ID: 4540
 // Name: result
 // Dependencies: [684, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds
 
-// Module 4536 (result)
+// Module 4539 (result)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
 

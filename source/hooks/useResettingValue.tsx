@@ -1,11 +1,11 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13486
+// Function ID: 13487
 // Name: useResettingValue
-// Dependencies: [32, 19, 5950, 4362, 2]
+// Dependencies: [32, 19, 5553, 4365, 2]
 // Exports: default
 
-// Module 13453 (useResettingValue)
-import useInitialValueDefault from "useInitialValue" /* 5950 */;
+// Module 13486 (useResettingValue)
+import useInitialValueDefault from "useInitialValue" /* 5553 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 
@@ -19,7 +19,7 @@ export default function useResettingValue(arg0, arg1) {
   const tmp = callback(callback2(arg0), 2);
   dependencyMap = tmp[1];
   const tmp2 = useInitialValueDefault(() => {
-    const timeout = new callback(4362).Timeout();
+    const timeout = new callback(4365).Timeout();
     return timeout;
   });
   callback = tmp2;

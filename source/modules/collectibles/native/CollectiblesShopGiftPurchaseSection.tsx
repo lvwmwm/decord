@@ -1,21 +1,21 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 10944
+// Function ID: 10945
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8577, 7179, 673, 1923, 21, 4478, 709, 5603, 10741, 586, 8574, 5962, 10964, 695, 10982, 706, 4724, 4859, 10983, 2008, 1234, 10756, 4474, 1233, 4929, 2]
+// Dependencies: [5, 32, 19, 17, 8123, 7358, 673, 1923, 21, 4481, 709, 6921, 10672, 586, 8115, 7102, 10935, 695, 10945, 706, 4731, 4866, 10946, 2008, 1234, 10687, 4477, 1233, 4936, 2]
 // Exports: default
 
-// Module 10981 (CollectiblesShopGiftPurchaseSection)
+// Module 10944 (CollectiblesShopGiftPurchaseSection)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "initialize" /* 8577 */;
-import { useNativeCheckoutStore } from "context" /* 7179 */;
+import closure_7 from "initialize" /* 8123 */;
+import { useNativeCheckoutStore } from "context" /* 7358 */;
 import ME from "ME" /* 673 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 let require = arg1;
 ({ AnalyticEvents: c9, MarketingURLs: c10 } = ME);

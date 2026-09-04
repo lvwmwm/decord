@@ -1,23 +1,23 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 13154
+// Function ID: 13155
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1429, 1386, 1908, 4120, 4130, 1921, 673, 7492, 7866, 1430, 1234, 1233, 4982, 4674, 2]
+// Dependencies: [32, 17, 1430, 1386, 1908, 4120, 4130, 1921, 673, 7669, 7876, 1431, 1234, 1233, 4989, 4681, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 13122 (createVoiceChannelLinkEmbed)
+// Module 13154 (createVoiceChannelLinkEmbed)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import set from "set" /* 1234 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7876 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
-import { getGuildAcronym } from "GuildNSFWContentLevel" /* 1429 */;
+import { getGuildAcronym } from "GuildNSFWContentLevel" /* 1430 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
 import { Permissions } from "ME" /* 673 */;
-import { InviteTypes } from "InviteSendStates" /* 7492 */;
+import { InviteTypes } from "InviteSendStates" /* 7669 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
@@ -48,8 +48,8 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
                 icon1 = guild.icon;
               }
               obj[1] = icon1;
-              const guildIconURL = tmp4(1430).getGuildIconURL(obj);
-              const tmp4Result = tmp4(1430);
+              const guildIconURL = tmp4(1431).getGuildIconURL(obj);
+              const tmp4Result = tmp4(1431);
             } else if (null != guild) {
               const tmp8 = getGuildAcronym(guild);
             }
@@ -75,14 +75,14 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj.acceptLabelText = stringResult;
             obj.onlineText = undefined;
             obj.memberText = undefined;
-            let tmp16Result = tmp16(4982);
+            let tmp16Result = tmp16(4989);
             const assetSource = Image.resolveAssetSource(tmp16Result.getChannelIcon(channel));
             let uri;
             if (assetSource != null) {
               uri = assetSource.uri;
             }
             obj.channelIcon = uri;
-            tmp16Result = tmp16(4674);
+            tmp16Result = tmp16(4681);
             obj.titleText = tmp16Result.computeChannelName(channel, closure_10, closure_9);
             obj.titleColor = colors.titleColor;
             let tmp24;

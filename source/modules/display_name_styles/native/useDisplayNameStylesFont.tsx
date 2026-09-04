@@ -1,15 +1,15 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 9105
+// Function ID: 9106
 // Name: DISPLAY_NAME_STYLES_FONT_FAMILY_MAP
-// Dependencies: [1938, 1940, 4749, 8943, 2]
+// Dependencies: [1938, 1940, 4756, 9106, 2]
 // Exports: useDisplayNameStylesFont
 
-// Module 8944 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
+// Module 9105 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
 import set from "set" /* 2 */;
 import items3 from "items3" /* 1938 */;
 import DisplayNameFont from "DisplayNameFont" /* 1940 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 4749 */;
-import apexExperiment from "apexExperiment" /* 8943 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 4756 */;
+import apexExperiment from "apexExperiment" /* 9106 */;
 
 const FLYWHEEL_FONTS = items3.FLYWHEEL_FONTS;
 let obj = { [DisplayNameFont.DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [DisplayNameFont.DisplayNameFont.CHICLE]: "Jellybean-Normal", [DisplayNameFont.DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [DisplayNameFont.DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [DisplayNameFont.DisplayNameFont.PIXELIFY]: "8Bit-Normal", [DisplayNameFont.DisplayNameFont.SINISTRE]: "Vampyre-Normal", [DisplayNameFont.DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [DisplayNameFont.DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [DisplayNameFont.DisplayNameFont.ORBITRON]: "Mainframe-Bold", [DisplayNameFont.DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [DisplayNameFont.DisplayNameFont.KALAM]: "Journal-Bold" };

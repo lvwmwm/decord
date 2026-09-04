@@ -1,15 +1,15 @@
-// Module ID: 12443
-// Function ID: 12444
+// Module ID: 12601
+// Function ID: 12602
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1339, 5234, 9946, 673, 586, 1305, 1233, 1470, 1398, 2]
+// Dependencies: [19, 1339, 5242, 9760, 673, 586, 1305, 1233, 1394, 1399, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 12443 (getHubProgressTitleForStep)
+// Module 12601 (getHubProgressTitleForStep)
 import create from "create" /* 1305 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "set" /* 5234 */;
-import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9946 */;
+import closure_4 from "set" /* 5242 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9760 */;
 import { PlatformTypes } from "ME" /* 673 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ export const getHubProgressTitleForStep = function getHubProgressTitleForStep(ne
   } else if (tmp(1305).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;
   } else {
-    tmp(1470).assertNever(nextHubProgressStep);
+    tmp(1394).assertNever(nextHubProgressStep);
   }
 };
 export const useHubProgressBarCompletedSteps = function useHubProgressBarCompletedSteps(guild) {

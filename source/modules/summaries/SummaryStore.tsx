@@ -1,24 +1,24 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11277
+// Function ID: 11278
 // Name: handleQuickSwitcherUpdate
-// Dependencies: [32, 4391, 9949, 1386, 1908, 4493, 1980, 4702, 1921, 11207, 9950, 586, 11, 684, 11208, 706, 11209, 12, 2]
+// Dependencies: [32, 4394, 9763, 1386, 1908, 4496, 1980, 4709, 1921, 11278, 9764, 586, 11, 684, 11279, 706, 11280, 12, 2]
 
-// Module 11206 (handleQuickSwitcherUpdate)
+// Module 11277 (handleQuickSwitcherUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import canSeeChannelSummaries from "canSeeChannelSummaries" /* 11208 */;
+import canSeeChannelSummaries from "canSeeChannelSummaries" /* 11279 */;
 import closure_7 from "_slicedToArray" /* 32 */;
-import closure_8 from "getHash" /* 4391 */;
-import closure_9 from "handleConnectionOpen" /* 9949 */;
+import closure_8 from "getHash" /* 4394 */;
+import closure_9 from "handleConnectionOpen" /* 9763 */;
 import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "generateOldThreadCutoff" /* 4493 */;
+import closure_12 from "generateOldThreadCutoff" /* 4496 */;
 import closure_13 from "handleConnectionOpen" /* 1980 */;
-import closure_14 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_14 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_15 from "mergeGuildAvatar" /* 1921 */;
-import { SUMMARY_POLL_INTERVAL } from "result" /* 11207 */;
+import { SUMMARY_POLL_INTERVAL } from "result" /* 11278 */;
 
 require = arg1;
 function handleQuickSwitcherUpdate() {
@@ -275,7 +275,7 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        obj = summaryFromServer(11209);
+        obj = summaryFromServer(11280);
         summaryFromServer = obj.createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
         if (items == null) {

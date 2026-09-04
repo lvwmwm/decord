@@ -1,10 +1,10 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13466
+// Function ID: 13467
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 1995, 1921, 673, 7187, 1923, 21, 4478, 709, 4429, 1233, 1896, 586, 4139, 4941, 688, 4474, 13434, 13435, 8375, 4929, 2]
+// Dependencies: [19, 17, 1995, 1921, 673, 7366, 1923, 21, 4481, 709, 4432, 1233, 1896, 586, 4139, 4948, 688, 4477, 13467, 13468, 9320, 4936, 2]
 // Exports: default
 
-// Module 13433 (PremiumSubscriptionUpsell)
+// Module 13466 (PremiumSubscriptionUpsell)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
@@ -12,10 +12,10 @@ import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "_getSystemLocale" /* 1995 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { Gradients } from "items" /* 7187 */;
+import { Gradients } from "items" /* 7366 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -56,7 +56,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj[0] = items1;
     obj = { style: null, start: null, end: null, colors: null, children: null };
     obj[0] = tmp.upsellCard;
-    let tmp5Result = tmp5(4941);
+    let tmp5Result = tmp5(4948);
     obj[1] = tmp2(688).HorizontalGradient.START;
     obj[2] = tmp2(688).HorizontalGradient.END;
     obj[3] = Gradients.PREMIUM_GUILD;
@@ -67,14 +67,14 @@ export default function PremiumSubscriptionUpsell(arg0) {
       obj2[0] = tmp.title;
       const intl2 = tmp2(1233).intl;
       obj2[4] = intl2.string(tmp2(1233).t.YYfHlx);
-      const items2 = [tmp6(tmp2(4474).Text, obj2), ];
+      const items2 = [tmp6(tmp2(4477).Text, obj2), ];
       const obj3 = { style: null, variant: "text-md/semibold", color: "text-overlay-light", children: null };
       obj3[0] = tmp.subtitle;
       const intl3 = tmp2(1233).intl;
       const obj4 = { numFreeGuildSubscriptions: null };
       obj4[0] = closure_8;
       obj3[3] = intl3.format(tmp2(1233).t.Af0zEZ, obj4);
-      items2[1] = tmp6(tmp2(4474).Text, obj3);
+      items2[1] = tmp6(tmp2(4477).Text, obj3);
       obj1[0] = items2;
       let tmp6Result = tmp8(closure_11, obj1);
     } else {
@@ -82,32 +82,32 @@ export default function PremiumSubscriptionUpsell(arg0) {
       obj5[0] = tmp.title;
       const intl = tmp2(1233).intl;
       obj5[4] = intl.string(tmp2(1233).t["qUl+K4"]);
-      tmp6Result = tmp6(tmp2(4474).Text, obj5);
+      tmp6Result = tmp6(tmp2(4477).Text, obj5);
     }
     const items3 = [tmp6Result, , ];
     const obj6 = { style: null, children: null };
     obj6[0] = tmp.upsellFeatures;
     const obj7 = { style: null, source: null };
     obj7[0] = tmp.upsellFeatureSubLogo;
-    obj7[1] = tmp5(13434);
+    obj7[1] = tmp5(13467);
     const items4 = [closure_10(closure_4, obj7), , ];
     const obj8 = { style: null, source: null };
     obj8[0] = tmp.upsellFeatureLogoTier2;
-    obj8[1] = tmp5(13435);
+    obj8[1] = tmp5(13468);
     items4[1] = closure_10(closure_4, obj8);
     const obj9 = { style: null, features: null, labelStyle: null, rowStyle: null };
     obj9[0] = tmp.upsellFeatureList;
     const obj10 = { IconComponent: null, label: null, color: null };
-    obj10[0] = tmp2(4429).CheckmarkLargeIcon;
+    obj10[0] = tmp2(4432).CheckmarkLargeIcon;
     const intl4 = tmp2(1233).intl;
     const obj11 = { discountPercentage: null };
-    const tmp5Result1 = tmp5(8375);
+    const tmp5Result1 = tmp5(9320);
     obj11[0] = tmp2(1896).formatPercent(locale.locale, closure_9 / 100);
     obj10[1] = intl4.formatToPlainString(tmp2(1233).t.P3aEj6, obj11);
     obj10[2] = tmp5(709).unsafe_rawColors.WHITE;
     const items5 = [obj10, ];
     const obj12 = { IconComponent: null, label: null, color: null };
-    obj12[0] = tmp2(4429).CheckmarkLargeIcon;
+    obj12[0] = tmp2(4432).CheckmarkLargeIcon;
     const intl5 = tmp2(1233).intl;
     const obj13 = { numFreeGuildSubscriptions: null };
     obj13[0] = closure_8;
@@ -126,7 +126,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     stringResult = intl6.string(tmp2(1233).t.fJOECn);
     obj15[1] = stringResult;
     obj15[2] = onLearnMorePremium;
-    tmp = tmp6(tmp2(4929).Button, obj15);
+    tmp = tmp6(tmp2(4936).Button, obj15);
     obj14[1] = tmp;
     items3[2] = closure_10(closure_3, obj14);
     obj[4] = items3;

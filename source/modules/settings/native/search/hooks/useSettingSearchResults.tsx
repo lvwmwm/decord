@@ -1,14 +1,14 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14623
+// Function ID: 14624
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14580, 14476, 14583, 14477, 14588, 14582, 633, 2]
+// Dependencies: [32, 19, 14616, 14508, 14619, 14509, 14624, 14618, 633, 2]
 // Exports: useSettingSearchResults
 
-// Module 14587 (useSettingSearchResults)
+// Module 14623 (useSettingSearchResults)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "zustandStore" /* 14580 */;
-import closure_6 from "zustandStore" /* 14476 */;
+import closure_5 from "zustandStore" /* 14616 */;
+import closure_6 from "zustandStore" /* 14508 */;
 
 const require = arg1;
 let closure_7 = [];
@@ -16,8 +16,8 @@ const result = require("set").fileFinishedImporting("modules/settings/native/sea
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    let tmp = callback(14588);
-    tmp = new tmp(memo(14582).getSettingSearchableTitles());
+    let tmp = callback(14624);
+    tmp = new tmp(memo(14618).getSettingSearchableTitles());
     return tmp;
   }, []);
   const settings = callback(memo1.useState(closure_7), 2);

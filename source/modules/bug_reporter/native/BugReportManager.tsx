@@ -1,15 +1,15 @@
-// Module ID: 10323
-// Function ID: 10324
+// Module ID: 10143
+// Function ID: 10144
 // Name: showNotification
-// Dependencies: [5, 17, 703, 673, 4731, 1234, 10203, 10205, 511, 5495, 10324, 2]
+// Dependencies: [5, 17, 703, 673, 4738, 1234, 10023, 10025, 511, 7058, 10144, 2]
 
-// Module 10323 (showNotification)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 10143 (showNotification)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "refreshSourceMapCookie" /* 703 */;
 import { InAppNotificationTypes } from "ME" /* 673 */;
-import { NativePermissionStatus } from "NativePermissionStatus" /* 4731 */;
+import { NativePermissionStatus } from "NativePermissionStatus" /* 4738 */;
 
 const require = arg1;
 function showNotification(uri) {
@@ -152,12 +152,12 @@ function showNotification(uri) {
             }
             obj1 = tmp7;
             BUG_REPORTER = closure_1_7.BUG_REPORTER;
-            dependencyMap = obj1(10203).getNotificationDuration(BUG_REPORTER);
-            const obj5 = obj1(10203);
+            dependencyMap = obj1(10023).getNotificationDuration(BUG_REPORTER);
+            const obj5 = obj1(10023);
             const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
             obj3[0] = BUG_REPORTER;
             obj3[1] = dependencyMap;
-            const obj6 = BUG_REPORTER(10205);
+            const obj6 = BUG_REPORTER(10025);
             obj3[2] = obj1(511).v4();
             obj3[3] = obj1;
             uri = undefined;

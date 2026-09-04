@@ -1,9 +1,9 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11752
+// Function ID: 11753
 // Name: map
 // Dependencies: [586, 706, 2]
 
-// Module 11621 (map)
+// Module 11752 (map)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

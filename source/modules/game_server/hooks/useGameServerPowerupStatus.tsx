@@ -1,12 +1,12 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12507
+// Function ID: 12508
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 4385, 586, 12359, 1233, 2400, 2]
+// Dependencies: [19, 4388, 586, 12491, 1233, 2400, 2]
 // Exports: default
 
-// Module 12375 (useGameServerPowerupStatus)
+// Module 12507 (useGameServerPowerupStatus)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleGameServerInstanceCreated" /* 4385 */;
+import closure_4 from "handleGameServerInstanceCreated" /* 4388 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
@@ -23,7 +23,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(12359)(arg0);
+  const tmp2 = stateFromStores(12491)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return React.useMemo(() => {

@@ -1,13 +1,13 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8742
+// Function ID: 8743
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4470, 21, 644, 1430, 1234, 8109, 8113, 5502, 2]
+// Dependencies: [19, 17, 4473, 21, 644, 1431, 1234, 8743, 8739, 5542, 2]
 // Exports: default
 
-// Module 8108 (CutoutableAvatarDecoration)
+// Module 8742 (CutoutableAvatarDecoration)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

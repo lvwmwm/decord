@@ -1,10 +1,10 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 17208
+// Function ID: 17209
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 673, 4946, 11138, 695, 2]
+// Dependencies: [19, 673, 4953, 11209, 695, 2]
 // Exports: default
 
-// Module 17122 (useCaptchaModalEffects)
+// Module 17208 (useCaptchaModalEffects)
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
@@ -18,7 +18,7 @@ export default function useCaptchaModalEffects(arg0) {
   }
   dependencyMap = undefined;
   dependencyMap = React.useRef(true);
-  analyticsType(4946)(() => () => {
+  analyticsType(4953)(() => () => {
     if (ref.current) {
       if (closure_0 != null) {
         tmp(closure_1_0(closure_1_2[3]).CaptchaError.CANCEL);

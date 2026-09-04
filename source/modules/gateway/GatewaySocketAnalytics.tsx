@@ -1,10 +1,10 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13570
+// Function ID: 13571
 // Name: prettyPrintTrace_
 // Dependencies: [109, 1921, 673, 10, 9, 695, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13537 (prettyPrintTrace_)
+// Module 13570 (prettyPrintTrace_)
 import isTracingDefault from "isTracing" /* 10 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;

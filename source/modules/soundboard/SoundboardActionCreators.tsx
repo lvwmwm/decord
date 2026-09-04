@@ -1,14 +1,14 @@
-// Module ID: 6192
-// Function ID: 6193
+// Module ID: 7276
+// Function ID: 7277
 // Name: _fetchDefaultSoundsFromApi2
-// Dependencies: [5, 4966, 4968, 673, 682, 527, 4974, 706, 6193, 4377, 6194, 695, 1369, 12, 4858, 1233, 6195, 2]
+// Dependencies: [5, 4973, 4975, 673, 682, 527, 4981, 706, 7277, 4380, 7278, 695, 1369, 12, 4865, 1233, 7279, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 6192 (_fetchDefaultSoundsFromApi2)
+// Module 7276 (_fetchDefaultSoundsFromApi2)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4966 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4968 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4973 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
 import ME from "ME" /* 673 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
@@ -28,8 +28,8 @@ function _fetchDefaultSoundsFromApi2() {
       callback2 = dependencyMap;
       let obj3 = callback2(706);
       obj3.dispatch({ type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE" });
-      const obj4 = callback(6193);
-      const tmp28 = new callback2(4377)(callback2);
+      const obj4 = callback(7277);
+      const tmp28 = new callback2(4380)(callback2);
       const result = obj4.captureOrIgnoreApiError(tmp28);
       c5 = 3;
     } else if (arg0 === 1) {
@@ -84,7 +84,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  let obj = SOUNDBOARD_SOUNDS_RECEIVED(6194);
+  let obj = SOUNDBOARD_SOUNDS_RECEIVED(7278);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -239,7 +239,7 @@ function _uploadSound() {
             return obj5;
           } else {
             closure_6 = arg1;
-            obj = callback(4974);
+            obj = callback(4981);
             c4 = 3;
             const obj6 = { value: null, done: true };
             obj6[0] = obj.soundboardSoundFromAPI(closure_6.body, callback);
@@ -346,7 +346,7 @@ function _updateSound() {
             return obj5;
           } else {
             closure_6 = arg1;
-            obj = callback(4974);
+            obj = callback(4981);
             c4 = 3;
             const obj6 = { value: null, done: true };
             obj6[0] = obj.soundboardSoundFromAPI(closure_6.body, callback);
@@ -494,7 +494,7 @@ function _fetchSoundGuildData() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const tmp25 = new callback(4377)(callback);
+            const tmp25 = new callback(4380)(callback);
             throw tmp25;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -509,7 +509,7 @@ function _fetchSoundGuildData() {
             lib = arg1;
             let discoverableGuild = null;
             if (null != lib.body) {
-              obj = lib(6195);
+              obj = lib(7279);
               discoverableGuild = obj.makeDiscoverableGuild(lib.body);
             }
             c5 = 0;

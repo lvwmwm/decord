@@ -1,14 +1,14 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6224
+// Function ID: 6225
 // Name: NitroOpalBadgeSmallBadge
-// Dependencies: [21, 5502, 6844, 2]
+// Dependencies: [21, 5542, 6225, 2]
 // Exports: NitroOpalBadgeSmallBadge
 
-// Module 6843 (NitroOpalBadgeSmallBadge)
+// Module 6224 (NitroOpalBadgeSmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import vanityUrlDefault from "vanityUrl" /* 6844 */;
+import preloadDefault from "preload" /* 5542 */;
+import vanityUrlDefault from "vanityUrl" /* 6225 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroOpalBadgeSmallBadge.native.tsx");

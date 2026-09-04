@@ -1,15 +1,15 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 13144
+// Function ID: 13145
 // Name: createFriendInvite
-// Dependencies: [17, 4130, 7492, 7866, 1233, 4322, 1430, 2]
+// Dependencies: [17, 4130, 7669, 7876, 1233, 4325, 1431, 2]
 // Exports: createFriendInvite
 
-// Module 13112 (createFriendInvite)
+// Module 13144 (createFriendInvite)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import InviteSendStates from "InviteSendStates" /* 7492 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7866 */;
+import InviteSendStates from "InviteSendStates" /* 7669 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7876 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 
 const Image = get_ActivityIndicator.Image;
@@ -34,7 +34,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let tmpResult = tmp(4322);
+    let tmpResult = tmp(4325);
     str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;
@@ -48,7 +48,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str4 = "";
   if (null != inviter.inviter) {
-    tmpResult = tmp(1430);
+    tmpResult = tmp(1431);
     str4 = Image.resolveAssetSource(tmpResult.getUserAvatarSource(inviter.inviter)).uri;
   }
   const inviter2 = inviter.inviter;

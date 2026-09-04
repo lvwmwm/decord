@@ -1,16 +1,16 @@
-// Module ID: 11335
-// Function ID: 11336
+// Module ID: 11443
+// Function ID: 11444
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 709, 4478, 1233, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 709, 4481, 1233, 4477, 2]
 // Exports: default
 
-// Module 11335 (AppStoreOverlayAboutSection)
+// Module 11443 (AppStoreOverlayAboutSection)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);

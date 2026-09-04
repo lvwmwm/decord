@@ -1,14 +1,14 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 11115
+// Function ID: 11116
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1923, 8984, 7389, 1233, 2]
+// Dependencies: [1923, 11116, 7567, 1233, 2]
 // Exports: getTenureBadgeRequirementString, useTenureBadgeRequirementString
 
-// Module 8983 (useTenureBadgeRequirementString)
+// Module 11115 (useTenureBadgeRequirementString)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
-import usePremiumSince from "usePremiumSince" /* 8984 */;
+import usePremiumSince from "usePremiumSince" /* 11116 */;
 
 const TieredTenureBadge = GuildFeatures.TieredTenureBadge;
 const result = set.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTenureBadgeRequirementString.tsx");
@@ -19,7 +19,7 @@ export const useTenureBadgeRequirementString = function useTenureBadgeRequiremen
   if (null == tieredTenureBadge) {
     return null;
   } else {
-    const tieredTenureBadgeData = tmp(7389).getTieredTenureBadgeData(tieredTenureBadge);
+    const tieredTenureBadgeData = tmp(7567).getTieredTenureBadgeData(tieredTenureBadge);
     ({ id, tenureReqNumMonths } = tieredTenureBadgeData);
     if (TieredTenureBadge.PREMIUM_TENURE_1_MONTH !== id) {
       if (tmp6.PREMIUM_TENURE_3_MONTH !== id) {
@@ -45,7 +45,7 @@ export const useTenureBadgeRequirementString = function useTenureBadgeRequiremen
     obj = { months: null };
     obj[0] = tenureReqNumMonths;
     formatToPlainStringResult = intl2.formatToPlainString(tmp(1233).t.erUSmA, obj);
-    const tmpResult = tmp(7389);
+    const tmpResult = tmp(7567);
   }
 };
 export const getTenureBadgeRequirementString = function getTenureBadgeRequirementString(id, tenureReqNumMonths) {

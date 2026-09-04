@@ -1,11 +1,11 @@
-// Module ID: 12169
-// Function ID: 12170
+// Module ID: 12303
+// Function ID: 12304
 // Name: useInvitesDisabledPermission
-// Dependencies: [10189, 4120, 673, 586, 2]
+// Dependencies: [10009, 4120, 673, 586, 2]
 // Exports: useInvitesDisabled, useInvitesDisabledPermission, useShouldShowInvitesDisabledNotif
 
-// Module 12169 (useInvitesDisabledPermission)
-import closure_2 from "computeAlertSettings" /* 10189 */;
+// Module 12303 (useInvitesDisabledPermission)
+import closure_2 from "computeAlertSettings" /* 10009 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
 

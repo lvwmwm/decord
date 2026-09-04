@@ -1,10 +1,10 @@
-// Module ID: 13335
-// Function ID: 13336
+// Module ID: 13368
+// Function ID: 13369
 // Name: computeDaysUntilNextBadgeDate
-// Dependencies: [19, 4074, 13336, 8984, 2]
+// Dependencies: [19, 4074, 13369, 11116, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
-// Module 13335 (computeDaysUntilNextBadgeDate)
+// Module 13368 (computeDaysUntilNextBadgeDate)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import hooksDefault from "hooks" /* 4074 */;
@@ -18,9 +18,9 @@ export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeD
   return Math.max(0, hooksDefault(arg0).add(arg1, "months").add(1, "day").diff(hooksDefault(), "days"));
 };
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
-  nextTenureBadge = nextTenureBadge(13336).useNextTenureBadge();
-  let obj = nextTenureBadge(13336);
-  const premiumSince = nextTenureBadge(8984).usePremiumSince();
+  nextTenureBadge = nextTenureBadge(13369).useNextTenureBadge();
+  let obj = nextTenureBadge(13369);
+  const premiumSince = nextTenureBadge(11116).usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {
     if (null != nextTenureBadge) {

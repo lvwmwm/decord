@@ -1,18 +1,18 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10686
+// Function ID: 10687
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4470, 21, 4478, 709, 586, 8534, 1235, 10754, 5502, 4474, 2]
+// Dependencies: [32, 19, 17, 4473, 21, 4481, 709, 586, 8738, 1235, 10685, 5542, 4477, 2]
 // Exports: default
 
-// Module 10755 (AnimatedImage)
+// Module 10686 (AnimatedImage)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AnimatedImage(arg0) {

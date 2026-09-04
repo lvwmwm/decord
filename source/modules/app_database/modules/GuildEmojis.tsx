@@ -1,9 +1,9 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5425
+// Function ID: 5426
 // Name: getAsync
 // Dependencies: [5, 3, 1955, 2]
 
-// Module 5416 (getAsync)
+// Module 5425 (getAsync)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;

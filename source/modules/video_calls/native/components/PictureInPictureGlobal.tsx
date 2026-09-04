@@ -1,24 +1,24 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16831
+// Function ID: 16832
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1385, 4494, 9551, 1215, 4529, 673, 4499, 21, 4478, 1296, 709, 9556, 586, 9507, 9546, 4728, 9555, 5080, 9558, 8622, 9575, 9579, 9590, 9609, 9617, 9536, 9576, 9554, 10198, 4217, 4479, 5501, 16745, 1627, 2]
+// Dependencies: [32, 19, 17, 1385, 4497, 9414, 1215, 4532, 673, 4502, 21, 4481, 1296, 709, 9419, 586, 9405, 9404, 4735, 9418, 5087, 9421, 8262, 9519, 9523, 9533, 9552, 9560, 9463, 9520, 9417, 10018, 4218, 4482, 5637, 16832, 1627, 2]
 // Exports: default
 
-// Module 16744 (PictureInPictureGlobal)
+// Module 16831 (PictureInPictureGlobal)
 import ThemesDefault from "Themes" /* 709 */;
-import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9554 */;
+import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9417 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "participantFromServer" /* 1385 */;
-import closure_9 from "getParticipants" /* 4494 */;
-import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9551 */;
+import closure_9 from "getParticipants" /* 4497 */;
+import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9414 */;
 import closure_11 from "fetchFingerprint" /* 1215 */;
-import closure_12 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_12 from "_detectH265HardwareDecode" /* 4532 */;
 import { PictureInPicturePositions } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import Button from "Button" /* 1296 */;
 
 const require = arg1;

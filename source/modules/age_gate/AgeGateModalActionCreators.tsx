@@ -1,16 +1,16 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 7151
+// Function ID: 7152
 // Name: openAgeGateModal
-// Dependencies: [1218, 673, 695, 706, 6061, 1219, 2]
+// Dependencies: [1218, 673, 695, 706, 6534, 1219, 2]
 // Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
 
-// Module 6060 (openAgeGateModal)
+// Module 7151 (openAgeGateModal)
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import result2 from "result" /* 1218 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import handleLogoutDefault from "handleLogout" /* 6061 */;
+import handleLogoutDefault from "handleLogout" /* 6534 */;
 import ME from "ME" /* 673 */;
 
 const AgeGateAnalyticAction = result2.AgeGateAnalyticAction;

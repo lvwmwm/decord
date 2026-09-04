@@ -1,10 +1,10 @@
-// Module ID: 4325
-// Function ID: 4326
+// Module ID: 4328
+// Function ID: 4329
 // Name: setSystemTheme
 // Dependencies: [1303, 1304, 706, 1338, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemTheme, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 4325 (setSystemTheme)
+// Module 4328 (setSystemTheme)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1338 */;
 import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;

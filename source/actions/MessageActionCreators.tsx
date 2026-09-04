@@ -1,53 +1,53 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7390
+// Function ID: 7391
 // Name: trackInvite
-// Dependencies: [32, 5, 5230, 7212, 7213, 7214, 7433, 7435, 7350, 5453, 4500, 1215, 1386, 7436, 1908, 4462, 4736, 4120, 4569, 4493, 7442, 1921, 673, 7444, 6180, 4471, 17, 3, 4461, 7445, 4466, 7448, 7449, 4701, 7454, 5401, 7474, 695, 4463, 7491, 7494, 4753, 7496, 1233, 1994, 5083, 706, 7508, 4706, 7509, 7355, 527, 4738, 6077, 9, 7243, 5225, 11, 1955, 1975, 7232, 5228, 7510, 7511, 7514, 7515, 4139, 7439, 1398, 6123, 7516, 7585, 7589, 7592, 7598, 7599, 7603, 11498, 7674, 684, 7860, 1954, 7520, 1362, 10742, 4858, 2]
+// Dependencies: [32, 5, 5238, 5497, 7391, 7392, 7611, 7613, 7528, 5462, 4503, 1215, 1386, 7614, 1908, 4465, 4743, 4120, 4572, 4496, 7620, 1921, 673, 7622, 7264, 4474, 17, 3, 4464, 7623, 4469, 7626, 7627, 4708, 7632, 5409, 7651, 695, 4466, 7668, 7671, 4760, 7673, 1233, 1994, 5090, 706, 7685, 4713, 7686, 7533, 527, 4745, 7161, 9, 7421, 5233, 11, 1955, 1975, 7410, 5236, 7687, 7688, 7691, 7692, 4139, 7617, 1399, 7207, 7693, 7762, 7766, 7769, 7775, 7776, 7780, 11619, 5498, 684, 7870, 1954, 7697, 1362, 10673, 4865, 2]
 
-// Module 7211 (trackInvite)
+// Module 7390 (trackInvite)
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hasFlag from "hasFlag" /* 1398 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import combinedDefault from "combined" /* 1994 */;
 import getUncachedChannelPermissionsDefault from "getUncachedChannelPermissions" /* 4120 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import readSnowflake from "readSnowflake" /* 4463 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
-import t2 from "t" /* 4706 */;
-import items2 from "items" /* 5083 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7355 */;
-import createMessage from "createMessage" /* 7508 */;
-import createMessageDefault from "createMessage" /* 7508 */;
-import snowflakeSequence from "snowflakeSequence" /* 7509 */;
-import getInviteURLDefault from "getInviteURL" /* 7514 */;
-import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10742 */;
+import readSnowflake from "readSnowflake" /* 4466 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
+import t2 from "t" /* 4713 */;
+import items2 from "items" /* 5090 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7533 */;
+import createMessage from "createMessage" /* 7685 */;
+import createMessageDefault from "createMessage" /* 7685 */;
+import snowflakeSequence from "snowflakeSequence" /* 7686 */;
+import getInviteURLDefault from "getInviteURL" /* 7691 */;
+import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10673 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "_handleConnectionOpen" /* 5230 */;
-import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 7212 */;
-import closure_8 from "handleGuildTemplateResolveSuccess" /* 7213 */;
-import closure_9 from "trackRoundtrip" /* 7214 */;
-import closure_10 from "initialize" /* 7433 */;
-import closure_11 from "getState" /* 7435 */;
-import closure_12 from "processMessage" /* 7350 */;
-import { ReferencedMessageState } from "processMessage" /* 7350 */;
-import closure_14 from "loadSavedGuildStickers" /* 5453 */;
-import closure_15 from "reset" /* 4500 */;
+import closure_6 from "_handleConnectionOpen" /* 5238 */;
+import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 5497 */;
+import closure_8 from "handleGuildTemplateResolveSuccess" /* 7391 */;
+import closure_9 from "trackRoundtrip" /* 7392 */;
+import closure_10 from "initialize" /* 7611 */;
+import closure_11 from "getState" /* 7613 */;
+import closure_12 from "processMessage" /* 7528 */;
+import { ReferencedMessageState } from "processMessage" /* 7528 */;
+import closure_14 from "loadSavedGuildStickers" /* 5462 */;
+import closure_15 from "reset" /* 4503 */;
 import closure_16 from "fetchFingerprint" /* 1215 */;
 import closure_17 from "ensureGuildLoaded" /* 1386 */;
-import closure_18 from "initialize" /* 7436 */;
+import closure_18 from "initialize" /* 7614 */;
 import closure_19 from "createGuildRecordFromRust" /* 1908 */;
-import closure_20 from "updateInvite" /* 4462 */;
-import closure_21 from "reinjectEphemerals" /* 4736 */;
-import closure_22 from "sortActivity" /* 4569 */;
-import closure_23 from "generateOldThreadCutoff" /* 4493 */;
-import { SlowmodeType } from "setCooldown" /* 7442 */;
+import closure_20 from "updateInvite" /* 4465 */;
+import closure_21 from "reinjectEphemerals" /* 4743 */;
+import closure_22 from "sortActivity" /* 4572 */;
+import closure_23 from "generateOldThreadCutoff" /* 4496 */;
+import { SlowmodeType } from "setCooldown" /* 7620 */;
 import closure_25 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
-import { LinkType } from "LinkType" /* 7444 */;
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6180 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { LinkType } from "LinkType" /* 7622 */;
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7264 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4474 */;
 
 require = arg1;
 function trackInvite(channelId) {
@@ -61,7 +61,7 @@ function trackInvite(channelId) {
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let tmp3Result = tmp3(7491);
+    let tmp3Result = tmp3(7668);
     result1 = tmp3Result.isEmbeddedApplicationInvite(invite);
   }
   let id1;
@@ -72,7 +72,7 @@ function trackInvite(channelId) {
     }
   }
   if (tmp8) {
-    tmp3Result = tmp3(7449);
+    tmp3Result = tmp3(7627);
     const result2 = tmp3Result.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
@@ -113,14 +113,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = tmp3(7494).getStreamerApplication(lastActiveStream, closure_22);
+              const streamerApplication = tmp3(7671).getStreamerApplication(lastActiveStream, closure_22);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const tmp3Result1 = tmp3(7494);
+              const tmp3Result1 = tmp3(7671);
             }
           }
         }
@@ -146,13 +146,13 @@ function trackInvite(channelId) {
     obj.message_id = messageId;
     obj.send_type = constants4.DIRECT_MESSAGE;
     obj.invite_guild_scheduled_event_id = result.guildScheduledEventId;
-    let inviteInstanceId = tmp3(4463).getInviteInstanceId(result.baseCode, messageId);
+    let inviteInstanceId = tmp3(4466).getInviteInstanceId(result.baseCode, messageId);
     if (inviteInstanceId == null) {
       inviteInstanceId = null;
     }
     obj.invite_instance_id = inviteInstanceId;
     const merged1 = Object.assign(overrideProperties);
-    const tmp3Result2 = tmp3(4463);
+    const tmp3Result2 = tmp3(4466);
     collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.INVITE_SENT, obj);
     const obj13 = collectGuildAnalyticsMetadataDefault;
   } else {
@@ -176,13 +176,13 @@ function trackInvite(channelId) {
       obj2.message_id = messageId;
       obj2.send_type = constants4.DIRECT_MESSAGE;
       obj2.invite_guild_scheduled_event_id = result.guildScheduledEventId;
-      let inviteInstanceId1 = tmp3(4463).getInviteInstanceId(result.baseCode, messageId);
+      let inviteInstanceId1 = tmp3(4466).getInviteInstanceId(result.baseCode, messageId);
       if (inviteInstanceId1 == null) {
         inviteInstanceId1 = null;
       }
       obj2.invite_instance_id = inviteInstanceId1;
       const merged3 = Object.assign(overrideProperties);
-      const tmp3Result3 = tmp3(4463);
+      const tmp3Result3 = tmp3(4466);
       collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.INVITE_SENT, obj2);
       const obj8 = collectGuildAnalyticsMetadataDefault;
     }
@@ -611,7 +611,7 @@ let obj14 = {
           } else {
             closure_0 = arg1;
             if (closure_0.body.length > 0) {
-              obj = closure_1_0(4738);
+              obj = closure_1_0(4745);
               dependencyMap = 3;
               const obj5 = { value: null, done: true };
               obj5[0] = obj.createMessageRecord(closure_0.body[0]);
@@ -841,8 +841,8 @@ let obj14 = {
               closure_2 = undefined;
               dependencyMap = undefined;
               basicChannel = closure_1_17.getBasicChannel(closure_1_0);
-              const orCreate = closure_1_1(5225).getOrCreate(closure_1_0);
-              const obj13 = closure_1_1(5225);
+              const orCreate = closure_1_1(5233).getOrCreate(closure_1_0);
+              const obj13 = closure_1_1(5233);
               const databaseResult = closure_1_1(1955).database();
               c1 = databaseResult;
               if (null != databaseResult) {
@@ -895,7 +895,7 @@ let obj14 = {
                 tmp30 = closure_2.connectionId === closure_1_6.lastTimeConnectedChanged();
               }
               dependencyMap = tmp30;
-              obj2 = closure_1_1(7243);
+              obj2 = closure_1_1(7421);
               const result = obj2.recordChannelFetchedLocal(basicChannel, c1, closure_2, dependencyMap, closure_4, closure_2.messages);
               let obj3 = closure_1_1(706);
               obj3 = { type: "LOCAL_MESSAGES_LOADED", guildId: null, channelId: null, users: null, members: null, messages: null, stale: null };
@@ -965,7 +965,7 @@ let obj14 = {
                     orCreate = 1;
                     c3 = 1;
                     obj1 = { value: null, done: false };
-                    obj1[0] = obj2.tryLoadAsync(() => closure_2_1(7232).load(c1, basicChannel, c1));
+                    obj1[0] = obj2.tryLoadAsync(() => closure_2_1(7410).load(c1, basicChannel, c1));
                     return obj1;
                   }
                 }
@@ -2622,7 +2622,7 @@ let obj14 = {
                   obj.track(constants2.MESSAGE_SWIPE_ACTION_SENT, obj);
                 }
               })(closure_1_1, closure_1_0);
-              obj1 = closure_1_1(7520);
+              obj1 = closure_1_1(7697);
               obj2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2671,18 +2671,18 @@ let obj14 = {
             obj2[4] = closure_0;
             obj2[5] = dependencyMap;
             const obj3 = { type: null, message: null };
-            obj3[0] = closure_1_0(7589).MessageDataType.EDIT;
+            obj3[0] = closure_1_0(7766).MessageDataType.EDIT;
             obj3[1] = obj2;
-            closure_1_1(7589).enqueue(obj3, (hasErr) => {
+            closure_1_1(7766).enqueue(obj3, (hasErr) => {
               hasErr = hasErr.hasErr;
               let hasItem = !hasErr;
               if (!hasErr) {
-                const AUTOMOD_ERROR_CODES = closure_2_0(7860).AUTOMOD_ERROR_CODES;
+                const AUTOMOD_ERROR_CODES = closure_2_0(7870).AUTOMOD_ERROR_CODES;
                 hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
               }
               if (hasItem) {
                 let obj = { type: null, message: null };
-                obj[0] = closure_2_0(7589).MessageDataType.EDIT;
+                obj[0] = closure_2_0(7766).MessageDataType.EDIT;
                 obj[1] = obj2;
                 obj1 = closure_2_1(706);
                 obj = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: null, errorResponseBody: null };
@@ -2756,7 +2756,7 @@ let obj14 = {
               closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              obj1 = closure_1_1(7520);
+              obj1 = closure_1_1(7697);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2778,9 +2778,9 @@ let obj14 = {
               const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
               obj2[0] = closure_1_28.MESSAGE(flags, closure_1);
               const obj3 = { flags: null };
-              obj3[0] = closure_1_0(1398).setFlag(flags.flags, closure_1_33.SUPPRESS_EMBEDS, true);
+              obj3[0] = closure_1_0(1399).setFlag(flags.flags, closure_1_33.SUPPRESS_EMBEDS, true);
               obj2[1] = obj3;
-              const obj8 = closure_1_0(1398);
+              const obj8 = closure_1_0(1399);
               obj2[3] = closure_1_0(527).rejectWithMigratedError();
               HTTP.patch(obj2);
               const obj9 = closure_1_0(527);
@@ -2829,7 +2829,7 @@ let obj14 = {
               closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              obj1 = closure_1_1(7520);
+              obj1 = closure_1_1(7697);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2851,9 +2851,9 @@ let obj14 = {
               const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
               obj2[0] = closure_1_28.MESSAGE(flags, closure_1);
               const obj3 = { flags: null };
-              obj3[0] = closure_1_0(1398).setFlag(flags.flags, closure_1_33.IS_GUILD_OFFICIAL, c2);
+              obj3[0] = closure_1_0(1399).setFlag(flags.flags, closure_1_33.IS_GUILD_OFFICIAL, c2);
               obj2[1] = obj3;
-              const obj8 = closure_1_0(1398);
+              const obj8 = closure_1_0(1399);
               obj2[3] = closure_1_0(527).rejectWithMigratedError();
               HTTP.patch(obj2);
               const obj9 = closure_1_0(527);
@@ -2982,7 +2982,7 @@ let obj14 = {
                 })();
                 dependencyMap = 3;
               } else {
-                obj1 = closure_1_1(7520);
+                obj1 = closure_1_1(7697);
                 c2 = 1;
                 dependencyMap = 1;
                 obj1 = { value: null, done: false };
@@ -3095,7 +3095,7 @@ let obj14 = {
               formatToPlainStringResult = intl.string(closure_1_0(1233).t.z2gyNF);
             }
             c0 = formatToPlainStringResult;
-            obj3 = closure_1_1(4858);
+            obj3 = closure_1_1(4865);
             const obj4 = { title: null, body: null, confirmText: null };
             const intl3 = closure_1_0(1233).intl;
             obj4[0] = intl3.string(closure_1_0(1233).t.Vd1hs6);

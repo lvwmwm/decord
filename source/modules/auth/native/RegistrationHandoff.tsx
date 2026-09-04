@@ -1,10 +1,10 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 15868
+// Function ID: 15869
 // Name: setRegistrationHandoff
 // Dependencies: [2]
 // Exports: clearRegistrationHandoff, hasRegistrationHandoff, setRegistrationHandoff
 
-// Module 15782 (setRegistrationHandoff)
+// Module 15868 (setRegistrationHandoff)
 import set from "set" /* 2 */;
 
 let c0 = false;

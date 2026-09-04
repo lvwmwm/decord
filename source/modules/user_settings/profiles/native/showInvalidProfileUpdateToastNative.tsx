@@ -1,14 +1,14 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14530
+// Function ID: 14531
 // Name: showGenericProfileUpdateFailureToast
-// Dependencies: [4194, 7776, 709, 2]
+// Dependencies: [4194, 6932, 709, 2]
 // Exports: showGenericGuildProfileUpdateFailureToast, showGenericProfileUpdateFailureToast
 
-// Module 14498 (showGenericProfileUpdateFailureToast)
+// Module 14530 (showGenericProfileUpdateFailureToast)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 709 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
-import registerAssetDefault from "registerAsset" /* 7776 */;
+import registerAssetDefault from "registerAsset" /* 6932 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
 

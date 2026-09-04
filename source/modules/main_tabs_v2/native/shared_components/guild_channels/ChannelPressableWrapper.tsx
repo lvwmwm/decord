@@ -1,12 +1,12 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16364
+// Function ID: 16365
 // Name: renderChannelPressableWrapper
-// Dependencies: [19, 17, 21, 10228, 2]
+// Dependencies: [19, 17, 21, 10050, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 16278 (renderChannelPressableWrapper)
+// Module 16364 (renderChannelPressableWrapper)
 import noopAll from "noop" /* 19 */;
-import getLayoutStyles from "getLayoutStyles" /* 10228 */;
+import getLayoutStyles from "getLayoutStyles" /* 10050 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

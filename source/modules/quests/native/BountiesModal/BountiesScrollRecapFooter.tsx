@@ -1,21 +1,21 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14972
+// Function ID: 14973
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4470, 21, 4478, 709, 1234, 1233, 4474, 10978, 586, 4204, 2]
+// Dependencies: [19, 17, 4473, 21, 4481, 709, 1234, 1233, 4477, 8767, 586, 4205, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14890 (BountiesScrollRecapFooter)
+// Module 14972 (BountiesScrollRecapFooter)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ManaContext from "ManaContext" /* 4204 */;
-import Text from "Text" /* 4474 */;
-import OrbsIcon from "OrbsIcon" /* 10978 */;
+import ManaContext from "ManaContext" /* 4205 */;
+import Text from "Text" /* 4477 */;
+import OrbsIcon from "OrbsIcon" /* 8767 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

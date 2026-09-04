@@ -1,12 +1,12 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9138
+// Function ID: 9139
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9051 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 9138 (useIsEligibleForUserProfileWYSIWYGEditing)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,19 +1,19 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 8008
+// Function ID: 8009
 // Name: createGiftIntentEmbed
-// Dependencies: [7999, 1921, 1923, 4478, 709, 1233, 8003, 4322, 7867, 4414, 8004, 8005, 2]
+// Dependencies: [8009, 1921, 1923, 4481, 709, 1233, 8013, 4325, 7877, 4417, 8014, 8015, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7998 (createGiftIntentEmbed)
+// Module 8008 (createGiftIntentEmbed)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import frozen from "frozen" /* 7867 */;
-import _sendGiftMessage from "_sendGiftMessage" /* 8003 */;
-import closure_3 from "getCurrentTime" /* 7999 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
+import frozen from "frozen" /* 7877 */;
+import _sendGiftMessage from "_sendGiftMessage" /* 8013 */;
+import closure_3 from "getCurrentTime" /* 8009 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { GiftIntentType } from "GuildFeatures" /* 1923 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 createCacheKey = { headerTextColor: ThemesDefault.colors.TEXT_STRONG, subHeaderTextColor: ThemesDefault.colors.TEXT_SUBTLE, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: ThemesDefault.colors.BORDER_MUTED };
@@ -71,13 +71,13 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         obj1[6] = giftIntentType;
         ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = callback(theme));
         const tmp6 = callback(theme);
-        obj1[11] = frozen.getAssetUriForEmbed(tmp8(4414));
+        obj1[11] = frozen.getAssetUriForEmbed(tmp8(4417));
         const intl3 = getSystemLocale.intl;
         obj1[12] = intl3.string(getSystemLocale.t.ilhtIa);
         const obj5 = frozen;
-        obj1[13] = frozen.getAssetUriForEmbed(tmp8(8004));
+        obj1[13] = frozen.getAssetUriForEmbed(tmp8(8014));
         const obj6 = frozen;
-        obj1[14] = frozen.getAssetUriForEmbed(tmp8(8005));
+        obj1[14] = frozen.getAssetUriForEmbed(tmp8(8015));
         const intl4 = getSystemLocale.intl;
         obj1[15] = intl4.string(getSystemLocale.t.I5gL2H);
         return obj1;

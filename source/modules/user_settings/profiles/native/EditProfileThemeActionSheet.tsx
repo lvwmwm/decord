@@ -1,14 +1,14 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14549
+// Function ID: 14550
 // Name: EditProfileThemeActionSheet
-// Dependencies: [19, 21, 4478, 709, 5998, 5630, 1233, 1296, 6001, 5608, 4445, 2]
+// Dependencies: [19, 21, 4481, 709, 7138, 7089, 1233, 1296, 5642, 5560, 4448, 2]
 // Exports: default
 
-// Module 14517 (EditProfileThemeActionSheet)
+// Module 14549 (EditProfileThemeActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -31,7 +31,7 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   obj = { style: tmp.nitroWheel };
   obj[1] = callback(onResetTheme(1296).NitroWheel, obj);
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
-  const items = [callback(onResetTheme(5630).BottomSheetTitleHeader, obj), ];
+  const items = [callback(onResetTheme(7089).BottomSheetTitleHeader, obj), ];
   obj1 = { hasIcons: false, children: null };
   const obj2 = { label: null, subLabel: null, onPress: null };
   const intl2 = onResetTheme(1233).intl;
@@ -42,8 +42,8 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
     onResetTheme();
     closure_1_1(closure_1_2[10]).hideActionSheet();
   };
-  obj1[1] = callback(onResetTheme(5608).TableRow, obj2);
-  items[1] = callback(onResetTheme(6001).TableRowGroup, obj1);
+  obj1[1] = callback(onResetTheme(5560).TableRow, obj2);
+  items[1] = callback(onResetTheme(5642).TableRowGroup, obj1);
   obj[0] = items;
-  return callback2(onResetTheme(5998).ActionSheet, obj);
+  return callback2(onResetTheme(7138).ActionSheet, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11992
+// Function ID: 11993
 // Name: SubmittingOverlay
-// Dependencies: [21, 4478, 709, 4217, 4928, 4932, 4945, 2]
+// Dependencies: [21, 4481, 709, 4218, 4935, 4939, 4952, 2]
 // Exports: SubmittingOverlay
 
-// Module 11861 (SubmittingOverlay)
+// Module 11992 (SubmittingOverlay)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const jsx = jsxProd.jsx;
 let obj = { ellipsis: null };
@@ -21,7 +21,7 @@ const result = set.fileFinishedImporting("modules/app_launcher/native/screens/ho
 
 export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   submitting = submitting.submitting;
-  let obj = submitting(4217);
+  let obj = submitting(4218);
   class S {
     constructor() {
       tmp = submitting;
@@ -35,7 +35,7 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
       return obj;
     }
   }
-  obj = { withSpring: submitting(4928).withSpring, submitting, SUBTLE_SPRING: submitting(4932).SUBTLE_SPRING };
+  obj = { withSpring: submitting(4935).withSpring, submitting, SUBTLE_SPRING: submitting(4939).SUBTLE_SPRING };
   S.__closure = obj;
   S.__workletHash = 492443733468;
   S.__initData = closure_5;
@@ -43,8 +43,8 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   obj = { style: items, children: null };
   items = [submitting.style, callback().ellipsis, animatedStyle];
   if (submitting) {
-    submitting = tmp5(submitting(4945).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(submitting(4952).Ellipsis, { variant: "active", size: "md" });
   }
   obj[1] = submitting;
-  return jsx(_modDef4217.View, { style: items, children: null });
+  return jsx(_modDef4218.View, { style: items, children: null });
 };

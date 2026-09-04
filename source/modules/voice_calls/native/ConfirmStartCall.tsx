@@ -1,14 +1,14 @@
-// Module ID: 12852
-// Function ID: 12853
+// Module ID: 13060
+// Function ID: 13061
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 4864, 1233, 4864, 4860, 2]
+// Dependencies: [19, 21, 4871, 1233, 4871, 4867, 2]
 // Exports: confirmStartCall
 
-// Module 12852 (ConfirmStartCall)
+// Module 13060 (ConfirmStartCall)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useAlertStore from "useAlertStore" /* 4860 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
+import useAlertStore from "useAlertStore" /* 4867 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

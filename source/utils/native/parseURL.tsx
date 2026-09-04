@@ -1,23 +1,23 @@
-// Module ID: 4458
-// Function ID: 4459
+// Module ID: 4461
+// Function ID: 4462
 // Name: parseQuery
-// Dependencies: [32, 673, 675, 4459, 4460, 1482, 4192, 1487, 4461, 4466, 13042, 4753, 13826, 1485, 4675, 9304, 7159, 1623, 1234, 9875, 695, 510, 13827, 2]
+// Dependencies: [32, 673, 675, 4462, 4463, 1482, 4192, 1487, 4464, 4469, 12877, 4760, 13858, 1485, 4682, 9166, 7339, 1623, 1234, 9089, 695, 510, 13859, 2]
 // Exports: default
 
-// Module 4458 (parseQuery)
+// Module 4461 (parseQuery)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import parseDefault from "parse" /* 1482 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import UrlDefault from "Url" /* 1487 */;
 import tDefault from "t" /* 4192 */;
-import getPathsFromURL from "getPathsFromURL" /* 4461 */;
-import _resolveGiftCode from "_resolveGiftCode" /* 4753 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13827 */;
+import getPathsFromURL from "getPathsFromURL" /* 4464 */;
+import _resolveGiftCode from "_resolveGiftCode" /* 4760 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13859 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import ME from "ME" /* 673 */;
 import items from "items" /* 675 */;
-import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4459 */;
-import CustomCheckoutFlow from "CustomCheckoutFlow" /* 4460 */;
+import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4462 */;
+import CustomCheckoutFlow from "CustomCheckoutFlow" /* 4463 */;
 
 require = arg1;
 function parseQuery(arg0) {
@@ -89,7 +89,7 @@ export default function parseURL(arg0) {
     const findCodedLinkResult = obj1.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
       const type = findCodedLinkResult.type;
-      if (tmp5(4466).CodedLinkType.INVITE === type) {
+      if (tmp5(4469).CodedLinkType.INVITE === type) {
         obj1 = { fingerprint: null, attemptId: null, installationId: null, didRegister: null, payload: null };
         obj1[0] = fingerprint;
         obj1[1] = attemptId;
@@ -102,7 +102,7 @@ export default function parseURL(arg0) {
         obj2[3] = attemptId;
         obj1[4] = obj2;
         return obj1;
-      } else if (tmp5(4466).CodedLinkType.TEMPLATE === type) {
+      } else if (tmp5(4469).CodedLinkType.TEMPLATE === type) {
         const obj3 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
         obj3[0] = fingerprint;
         obj3[1] = attemptId;
@@ -113,13 +113,13 @@ export default function parseURL(arg0) {
         obj3[3] = obj4;
         return obj3;
       } else {
-        if (tmp5(4466).CodedLinkType.BUILD_OVERRIDE !== type) {
-          if (tmp5(4466).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-            if (tmp5(4466).CodedLinkType.EXPERIMENT !== type) {
-              if (tmp5(4466).CodedLinkType.EVENT !== type) {
-                if (tmp5(4466).CodedLinkType.CHANNEL_LINK !== type) {
-                  if (tmp5(4466).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-                    if (tmp5(4466).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        if (tmp5(4469).CodedLinkType.BUILD_OVERRIDE !== type) {
+          if (tmp5(4469).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+            if (tmp5(4469).CodedLinkType.EXPERIMENT !== type) {
+              if (tmp5(4469).CodedLinkType.EVENT !== type) {
+                if (tmp5(4469).CodedLinkType.CHANNEL_LINK !== type) {
+                  if (tmp5(4469).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+                    if (tmp5(4469).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                       const obj5 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                       obj5[0] = fingerprint;
                       obj5[1] = attemptId;
@@ -133,13 +133,13 @@ export default function parseURL(arg0) {
                       obj6[5] = flag;
                       obj5[3] = obj6;
                       return obj5;
-                    } else if (tmp5(4466).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                      if (tmp5(4466).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp5(4466).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp5(4466).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp5(4466).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp5(4466).CodedLinkType.QUESTS_EMBED !== type) {
-                                if (tmp5(4466).CodedLinkType.GAME_PROFILE === type) {
+                    } else if (tmp5(4469).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                      if (tmp5(4469).CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (tmp5(4469).CodedLinkType.SERVER_SHOP !== type) {
+                          if (tmp5(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                            if (tmp5(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                              if (tmp5(4469).CodedLinkType.QUESTS_EMBED !== type) {
+                                if (tmp5(4469).CodedLinkType.GAME_PROFILE === type) {
                                   const obj7 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                                   obj7[0] = fingerprint;
                                   obj7[1] = attemptId;
@@ -149,11 +149,11 @@ export default function parseURL(arg0) {
                                   obj8[1] = findCodedLinkResult.code;
                                   obj7[3] = obj8;
                                   return obj7;
-                                } else if (tmp5(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp5(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp5(4466).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                      if (tmp5(4466).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                        let tmp5Result = tmp5(13042);
+                                } else if (tmp5(4469).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                  if (tmp5(4469).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                    if (tmp5(4469).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                      if (tmp5(4469).CodedLinkType.COLLECTIBLES_SHOP === type) {
+                                        let tmp5Result = tmp5(12877);
                                         const tmp10 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                         if (tmp5Result.isVirtualCurrencyEnabled().enabled) {
                                           if (tmp9 === constants2.ORBS) {
@@ -177,8 +177,8 @@ export default function parseURL(arg0) {
                                         FEATURED_PAGE = constants3.FEATURED_PAGE;
                                         const str2 = findCodedLinkResult.code;
                                         const tmp8 = callback(findCodedLinkResult.code.split("-"), 2);
-                                      } else if (tmp5(4466).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                        if (tmp5(4466).CodedLinkType.USER_PROFILE !== type) {
+                                      } else if (tmp5(4469).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                        if (tmp5(4469).CodedLinkType.USER_PROFILE !== type) {
                                           const _Error2 = Error;
                                           const _HermesInternal = HermesInternal;
                                           throw Error("Unknown coded link type: " + findCodedLinkResult.type);
@@ -222,7 +222,7 @@ export default function parseURL(arg0) {
       obj13[3] = obj14;
       return obj13;
     } else {
-      tmp5Result = tmp5(13826);
+      tmp5Result = tmp5(13858);
       const result = tmp5Result.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -283,7 +283,7 @@ export default function parseURL(arg0) {
         return obj21;
       }
       if (null != pathname) {
-        const tryParseDiceRollLinkResult = tmp5(4675).tryParseDiceRollLink(pathname);
+        const tryParseDiceRollLinkResult = tmp5(4682).tryParseDiceRollLink(pathname);
         if (null != tryParseDiceRollLinkResult) {
           const obj23 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
           obj23[0] = fingerprint;
@@ -295,7 +295,7 @@ export default function parseURL(arg0) {
           obj23[3] = obj24;
           return obj23;
         } else {
-          const tryParseChannelPathResult = tmp5(4675).tryParseChannelPath(pathname);
+          const tryParseChannelPathResult = tmp5(4682).tryParseChannelPath(pathname);
           if (null != tryParseChannelPathResult) {
             if (query == null) {
               query = "";
@@ -410,7 +410,7 @@ export default function parseURL(arg0) {
                 if (query == null) {
                   str5 = "";
                 }
-                const result1 = tmp5(9304).parseOAuth2AuthorizeProps(str5);
+                const result1 = tmp5(9166).parseOAuth2AuthorizeProps(str5);
                 if (null != result1) {
                   const obj39 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                   obj39[0] = fingerprint;
@@ -425,7 +425,7 @@ export default function parseURL(arg0) {
                   obj39[3] = obj40;
                   return obj39;
                 }
-                const tmp5Result3 = tmp5(9304);
+                const tmp5Result3 = tmp5(9166);
               }
               if (null != pathname.match(closure_17)) {
                 let str12 = query;
@@ -480,7 +480,7 @@ export default function parseURL(arg0) {
                   obj47[3] = obj48;
                   return obj47;
                 }
-                const result2 = tmp5(4675).tryParseEventDetailsPath(pathname);
+                const result2 = tmp5(4682).tryParseEventDetailsPath(pathname);
                 if (null != result2) {
                   const obj49 = { fingerprint: null, attemptId: null, installationId: null, payload: null };
                   obj49[0] = fingerprint;
@@ -611,13 +611,13 @@ export default function parseURL(arg0) {
                     }
                   }
                 }
-                const tmp5Result4 = tmp5(4675);
+                const tmp5Result4 = tmp5(4682);
               }
             }
           }
-          const tmp5Result2 = tmp5(4675);
+          const tmp5Result2 = tmp5(4682);
         }
-        const tmp5Result1 = tmp5(4675);
+        const tmp5Result1 = tmp5(4682);
       }
       uRLResult1 = isDiscordProxiedAssetUrlDefault;
     }

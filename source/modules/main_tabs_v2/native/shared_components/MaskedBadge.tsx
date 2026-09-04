@@ -1,15 +1,15 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7800
+// Function ID: 7801
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4478, 709, 1296, 7624, 2]
+// Dependencies: [19, 21, 4481, 709, 1296, 7801, 2]
 // Exports: default
 
-// Module 7623 (MaskedBadge)
+// Module 7800 (MaskedBadge)
 import ThemesDefault from "Themes" /* 709 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7624 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };

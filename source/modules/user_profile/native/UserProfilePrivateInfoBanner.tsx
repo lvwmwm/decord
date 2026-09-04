@@ -1,17 +1,17 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 13004
+// Function ID: 13005
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4478, 709, 4474, 1233, 2]
+// Dependencies: [17, 21, 4481, 709, 4477, 1233, 2]
 // Exports: default
 
-// Module 12742 (UserProfilePrivateInfoBanner)
+// Module 13004 (UserProfilePrivateInfoBanner)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import Text from "Text" /* 4477 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;

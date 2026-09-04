@@ -1,14 +1,14 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7387
+// Function ID: 7388
 // Name: _fetchReferralEligibleUsers
-// Dependencies: [5, 7209, 1934, 1980, 673, 527, 706, 1205, 7211, 2]
+// Dependencies: [5, 7388, 1934, 1980, 673, 527, 706, 1205, 7390, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7208 (_fetchReferralEligibleUsers)
+// Module 7387 (_fetchReferralEligibleUsers)
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7209 */;
+import closure_4 from "createFromServer" /* 7388 */;
 import closure_5 from "createdAt" /* 1934 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
 import ME from "ME" /* 673 */;
@@ -317,7 +317,7 @@ function _createReferralTrial() {
       if (closure_3.body.code === constants.INVALID_MESSAGE_SEND_USER) {
         dependencyMap = currentlySelectedChannelId.getCurrentlySelectedChannelId();
         if (null != dependencyMap) {
-          const obj6 = fromServer(7211);
+          const obj6 = fromServer(7390);
           obj6.sendClydeError(dependencyMap, closure_3.body.code);
         }
       }

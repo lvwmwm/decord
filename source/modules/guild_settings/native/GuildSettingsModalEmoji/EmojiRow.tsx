@@ -1,17 +1,17 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17484
+// Function ID: 17485
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 1908, 21, 4478, 709, 1234, 586, 9657, 9195, 4138, 17405, 4916, 4474, 1296, 5608, 4194, 1233, 1430, 4673, 4322, 5077, 17407, 2]
+// Dependencies: [32, 19, 17, 1908, 21, 4481, 709, 1234, 586, 9600, 10265, 4138, 17485, 4923, 4477, 1296, 5560, 4194, 1233, 1431, 4680, 4325, 5084, 17487, 2]
 // Exports: EmojiRow
 
-// Module 17404 (EmojiRow)
+// Module 17484 (EmojiRow)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 const require = arg1;

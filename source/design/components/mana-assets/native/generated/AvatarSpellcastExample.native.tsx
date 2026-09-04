@@ -1,14 +1,14 @@
-// Module ID: 6349
-// Function ID: 6350
+// Module ID: 5730
+// Function ID: 5731
 // Name: AvatarSpellcastExample
-// Dependencies: [21, 5502, 6350, 2]
+// Dependencies: [21, 5542, 5731, 2]
 // Exports: AvatarSpellcastExample
 
-// Module 6349 (AvatarSpellcastExample)
+// Module 5730 (AvatarSpellcastExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6350 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5731 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarSpellcastExample.native.tsx");

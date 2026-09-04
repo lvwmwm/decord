@@ -1,13 +1,13 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9027
+// Function ID: 9028
 // Name: _fetchVideoFilterAssets
-// Dependencies: [5, 4529, 1921, 673, 527, 706, 9816, 9817, 9814, 1369, 2]
+// Dependencies: [5, 4532, 1921, 673, 527, 706, 9028, 9029, 9026, 1369, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 9815 (_fetchVideoFilterAssets)
+// Module 9027 (_fetchVideoFilterAssets)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -164,7 +164,7 @@ function _uploadVideoFilterAsset() {
           } else if (1 === tmp7) {
             constants = 0;
             callback = closure_5;
-            const tmp24 = new callback(9816)(callback);
+            const tmp24 = new callback(9028)(callback);
             throw tmp24;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -262,9 +262,9 @@ function _deleteVideoFilterAsset() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            lib2 = lib(9817).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
-            const obj7 = lib(9817);
-            let result = lib(9814).isCustomBackgroundOption(lib2);
+            lib2 = lib(9029).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+            const obj7 = lib(9029);
+            let result = lib(9026).isCustomBackgroundOption(lib2);
             if (result) {
               result = lib2.id === lib.id;
             }
@@ -342,7 +342,7 @@ function _saveLastUsedBackgroundOption() {
             obj3.dispatch(obj5);
             c4 = 3;
           }
-          obj12 = lib(9814);
+          obj12 = lib(9026);
         }
       } else if (arg0 === 1) {
         c4 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 11042
+// Function ID: 11043
 // Name: _activityFromSetting
-// Dependencies: [19, 5410, 673, 4134, 4166, 586, 2]
+// Dependencies: [19, 5419, 673, 4134, 4166, 586, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8548 (_activityFromSetting)
+// Module 11042 (_activityFromSetting)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import closure_4 from "getEmojiToGroupId" /* 5410 */;
+import closure_4 from "getEmojiToGroupId" /* 5419 */;
 
 function _activityFromSetting(emojiName) {
   if (null != arg1) {

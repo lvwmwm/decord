@@ -1,20 +1,20 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16728
+// Function ID: 16729
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7414, 4130, 1921, 673, 21, 1296, 4478, 709, 586, 12730, 9965, 12, 1470, 5077, 1233, 4474, 6012, 2]
+// Dependencies: [32, 19, 17, 7592, 4130, 1921, 673, 21, 1296, 4481, 709, 586, 12995, 9777, 12, 1394, 5084, 1233, 4477, 7149, 2]
 // Exports: default
 
-// Module 16641 (UserProfileYourFriendsCard)
+// Module 16728 (UserProfileYourFriendsCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "recomputeAffinities" /* 7414 */;
+import closure_6 from "recomputeAffinities" /* 7592 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import { RelationshipTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -51,9 +51,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [closure_7];
   stateFromStoresArray1 = _require(586).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(586);
-  gameRelationshipsByType = _require(12730).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12995).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = lib(9965).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = lib(9777).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -65,7 +65,7 @@ export default function UserProfileYourFriendsCard(arg0) {
     const takeResult = found.take(5);
     const tmp3 = closure_1_8;
     const tmp4 = lib;
-    let valueResult = mapped.filter(lib(1470).isNotNullish).value();
+    let valueResult = mapped.filter(lib(1394).isNotNullish).value();
     if (valueResult.length >= 5) {
       dependencyMap(valueResult);
     } else {
@@ -75,11 +75,11 @@ export default function UserProfileYourFriendsCard(arg0) {
       const uniqResult = mapped1.uniq();
       const mapped2 = mapped1.uniq().take(5 - valueResult.length).map(tmp3.getUser);
       const takeResult1 = mapped1.uniq().take(5 - valueResult.length);
-      valueResult = mapped2.filter(tmp4(1470).isNotNullish).value();
+      valueResult = mapped2.filter(tmp4(1394).isNotNullish).value();
       const items = [];
       HermesBuiltin.arraySpread(valueResult, HermesBuiltin.arraySpread(valueResult, 0));
       dependencyMap(items);
-      const iter2 = mapped2.filter(tmp4(1470).isNotNullish);
+      const iter2 = mapped2.filter(tmp4(1394).isNotNullish);
     }
   }, items2);
   const items3 = [first, , ];
@@ -115,7 +115,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl2 = _require(1233).intl;
   obj[4] = intl2.string(_require(1233).t.TdEu5X);
-  const items5 = [callback(_require(4474).Text, obj), memo, callback(_require(6012).ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(_require(4477).Text, obj), memo, callback(_require(7149).ChevronSmallRightIcon, { size: "sm" })];
   obj[5] = items5;
-  return callback2(_require(5077).PressableOpacity, obj);
+  return callback2(_require(5084).PressableOpacity, obj);
 };

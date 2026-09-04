@@ -1,16 +1,19 @@
 // Module ID: 10533
 // Function ID: 10534
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10471]
+// Dependencies: [41, 42, 93, 95, 98, 10361, 10530, 10362, 10368]
 
 // Module 10533 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10471 */;
-import PTMergeDateTimeRefiner from "_classCallCheck" /* 41 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10530 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const ENMonthNameParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,29 +33,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: null };
-      obj[0] = __esModule;
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class PTMergeDateTimeRefiner {
+const regExp = new RegExp("((?:in)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")\\s*(?:[,-]?\\s*(" + WEEKDAY_DICTIONARY.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class ENMonthNameParser {
   constructor() {
     self = this;
-    tmp = PTMergeDateTimeRefiner(this, PTMergeDateTimeRefiner);
-    tmp2 = closure_2;
-    obj = closure_2(PTMergeDateTimeRefiner);
-    tmp3 = closure_1;
+    tmp = closure_2(this, ENMonthNameParser);
+    tmp2 = closure_4;
+    obj = closure_4(ENMonthNameParser);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -66,15 +54,43 @@ class PTMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTMergeDateTimeRefiner, fn(_isNativeReflectConstruct2).default);
+_inherits(ENMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
-    key: "patternBetween",
-    value: function patternBetween() {
-      const regExp = new RegExp("^\\s*(?:,|\u00E0)?\\s*$");
+    key: "innerPattern",
+    value: function innerPattern() {
       return regExp;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const formatted = index[2].toLowerCase();
+      if (index[0].length <= 3) {
+        if (!ENMonthNameParser(10530).FULL_MONTH_NAME_DICTIONARY[formatted]) {
+          return null;
+        }
+      }
+      let str2 = index[1];
+      if (!str2) {
+        str2 = "";
+      }
+      const parsingResult = createParsingResult.createParsingResult(index.index + str2.length, index.index + index[0].length);
+      const start = parsingResult.start;
+      start.imply("day", 1);
+      const tmp9 = ENMonthNameParser(10530).MONTH_DICTIONARY[formatted];
+      const start2 = parsingResult.start;
+      start2.assign("month", tmp9);
+      if (index[3]) {
+        const start4 = parsingResult.start;
+        start4.assign("year", tmp7(10530).parseYear(index[3]));
+      } else {
+        const start3 = parsingResult.start;
+        start3.imply("year", tmp7(10362).findYearClosestToRef(createParsingResult.refDate, 1, tmp9));
+      }
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(PTMergeDateTimeRefiner, items);
+export default _createClass(ENMonthNameParser, items);

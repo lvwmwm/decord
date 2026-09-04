@@ -1,23 +1,23 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 10968
+// Function ID: 10969
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 4519, 11003, 21, 4478, 709, 586, 8520, 5502, 11005, 2]
+// Dependencies: [19, 4522, 10966, 21, 4481, 709, 586, 8755, 5542, 8703, 2]
 // Exports: default
 
-// Module 11008 (SocialLayerStorefrontWishlistItemCard)
+// Module 10968 (SocialLayerStorefrontWishlistItemCard)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "initialize" /* 11003 */;
+import closure_4 from "addApplication" /* 4522 */;
+import closure_5 from "initialize" /* 10966 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { applicationIcon: null, nestedCard: null };
 createCacheKey = { position: "absolute", top: ThemesDefault.space.PX_8, left: ThemesDefault.space.PX_8, width: 24, height: 24, borderRadius: ThemesDefault.radii.sm, zIndex: 1 };
 createCacheKey[0] = createCacheKey;
-const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9DA}\u{1F3FD}" };
+const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1FAC3}\u{1F3FB}" };
 obj1[1] = { width: 0, height: 0 };
 obj1[6] = ThemesDefault.radii.none;
 createCacheKey[1] = obj1;

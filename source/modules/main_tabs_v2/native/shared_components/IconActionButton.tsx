@@ -1,19 +1,19 @@
-// Module ID: 13153
-// Function ID: 13154
+// Module ID: 13185
+// Function ID: 13186
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4478, 709, 1234, 1296, 4936, 5077, 4474, 7624, 2]
+// Dependencies: [19, 21, 4481, 709, 1234, 1296, 4943, 5084, 4477, 7801, 2]
 // Exports: default
 
-// Module 13153 (ButtonBadge)
+// Module 13185 (ButtonBadge)
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
-import getFontScale from "getFontScale" /* 4936 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7624 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7624 */;
+import getFontScale from "getFontScale" /* 4943 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7801 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class ButtonBadge {
@@ -114,7 +114,7 @@ export default function IconActionButton(variant) {
     obj[1] = buttonTextColor;
     obj[2] = tmp.actionText;
     obj[3] = buttonText;
-    tmp10Result = tmp10(tmp2(4474).Text, obj);
+    tmp10Result = tmp10(tmp2(4477).Text, obj);
   }
   items1[1] = tmp10Result;
   tmp10Result = null;

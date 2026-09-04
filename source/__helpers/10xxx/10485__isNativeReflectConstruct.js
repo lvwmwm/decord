@@ -1,11 +1,11 @@
 // Module ID: 10485
 // Function ID: 10486
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10469]
+// Dependencies: [41, 42, 93, 95, 98, 10368]
 
 // Module 10485 (_isNativeReflectConstruct)
-import Filter from "Filter" /* 10469 */;
-import ENUnlikelyFormatFilter from "_classCallCheck" /* 41 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import ZHHansCasualDateParser from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_1 from "_possibleConstructorReturn" /* 93 */;
 import closure_2 from "_getPrototypeOf" /* 95 */;
@@ -30,64 +30,166 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENUnlikelyFormatFilter {
+class ZHHansCasualDateParser {
   constructor() {
     self = this;
-    tmp = ENUnlikelyFormatFilter(this, ENUnlikelyFormatFilter);
+    tmp = ZHHansCasualDateParser(this, ZHHansCasualDateParser);
     tmp2 = closure_2;
-    obj = closure_2(ENUnlikelyFormatFilter);
+    obj = closure_2(ZHHansCasualDateParser);
     tmp3 = closure_1;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENUnlikelyFormatFilter, Filter.Filter);
+_inherits(ZHHansCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
-    key: "isValid",
-    value: function isValid(text, text2) {
-      closure_0 = text2;
-      const str2 = text2.text.trim();
-      if (str2 === str3.trim()) {
-        return true;
-      } else {
-        if ("may" === str2.toLowerCase()) {
-          const str4 = text.text;
-          const str5 = text.text.substring(0, text2.index);
-          if (!str6.match(/\b(in)$/i)) {
-            text.debug(() => {
-              console.log("Removing unlikely result: " + closure_0);
-            });
-            return false;
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const regExp = new RegExp("(\u73B0\u5728|\u7ACB(?:\u523B|\u5373)|\u5373\u523B)|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u540E|\u5927\u540E|\u6628)(\u65E9|\u665A)|(\u4E0A(?:\u5348)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668))|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u540E|\u5927\u540E|\u6628)(?:\u65E5|\u5929)(?:[\\s|,|\uFF0C]*)(?:(\u4E0A(?:\u5348)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668)))?", "i");
+      return regExp;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const refDate = createParsingResult.refDate;
+      const date = new Date(refDate.getTime());
+      if (index[1]) {
+        const start16 = parsingResult.start;
+        start16.imply("hour", refDate.getHours());
+        const start17 = parsingResult.start;
+        start17.imply("minute", refDate.getMinutes());
+        const start18 = parsingResult.start;
+        start18.imply("second", refDate.getSeconds());
+        const start19 = parsingResult.start;
+        start19.imply("millisecond", refDate.getMilliseconds());
+      } else if (index[2]) {
+        if ("\u660E" == index[2]) {
+          if (refDate.getHours() > 1) {
+            date.setDate(date.getDate() + 1);
           }
-          str6 = text.text.substring(0, text2.index).trim();
+        } else if ("\u6628" == tmp25) {
+          date.setDate(date.getDate() - 1);
+        } else if ("\u524D" == tmp25) {
+          date.setDate(date.getDate() - 2);
+        } else if ("\u5927\u524D" == tmp25) {
+          date.setDate(date.getDate() - 3);
+        } else if ("\u540E" == tmp25) {
+          date.setDate(date.getDate() + 2);
+        } else if ("\u5927\u540E" == tmp25) {
+          date.setDate(date.getDate() + 3);
         }
-        const formatted = str2.toLowerCase();
-        const endsWithResult = formatted.endsWith("the second");
-        let flag2 = !endsWithResult;
-        if (endsWithResult) {
-          flag2 = false;
-          if (str9.trim().length > 0) {
-            text.debug(() => {
-              console.log("Removing unlikely result: " + closure_0);
-            });
-            flag2 = false;
+        if ("\u65E9" == index[3]) {
+          const start15 = parsingResult.start;
+          start15.imply("hour", 6);
+        } else if ("\u665A" == tmp26) {
+          const start25 = parsingResult.start;
+          start25.imply("hour", 22);
+          const start26 = parsingResult.start;
+          start26.imply("meridiem", 1);
+        }
+      } else if (index[4]) {
+        const first = index[4][0];
+        if ("\u65E9" != first) {
+          if ("\u4E0A" != first) {
+            if ("\u4E0B" == first) {
+              const start12 = parsingResult.start;
+              start12.imply("hour", 15);
+              const start13 = parsingResult.start;
+              start13.imply("meridiem", 1);
+            } else if ("\u4E2D" == first) {
+              const start10 = parsingResult.start;
+              start10.imply("hour", 12);
+              const start11 = parsingResult.start;
+              start11.imply("meridiem", 1);
+            } else {
+              if ("\u591C" != first) {
+                if ("\u665A" != first) {
+                  if ("\u51CC" == first) {
+                    const start24 = parsingResult.start;
+                    start24.imply("hour", 0);
+                  }
+                }
+              }
+              const start8 = parsingResult.start;
+              start8.imply("hour", 22);
+              const start9 = parsingResult.start;
+              start9.imply("meridiem", 1);
+            }
           }
-          const str8 = text.text;
-          str9 = text.text.substring(text2.index + text2.text.length);
         }
-        return flag2;
+        const start14 = parsingResult.start;
+        start14.imply("hour", 6);
+      } else if (index[5]) {
+        if ("\u660E" == index[5]) {
+          if (refDate.getHours() > 1) {
+            date.setDate(date.getDate() + 1);
+          }
+        } else if ("\u6628" == tmp2) {
+          date.setDate(date.getDate() - 1);
+        } else if ("\u524D" == tmp2) {
+          date.setDate(date.getDate() - 2);
+        } else if ("\u5927\u524D" == tmp2) {
+          date.setDate(date.getDate() - 3);
+        } else if ("\u540E" == tmp2) {
+          date.setDate(date.getDate() + 2);
+        } else if ("\u5927\u540E" == tmp2) {
+          date.setDate(date.getDate() + 3);
+        }
+        if (index[6]) {
+          const first1 = tmp8[0];
+          if ("\u65E9" != first1) {
+            if ("\u4E0A" != first1) {
+              if ("\u4E0B" == first1) {
+                const start5 = parsingResult.start;
+                start5.imply("hour", 15);
+                const start6 = parsingResult.start;
+                start6.imply("meridiem", 1);
+              } else if ("\u4E2D" == first1) {
+                const start3 = parsingResult.start;
+                start3.imply("hour", 12);
+                const start4 = parsingResult.start;
+                start4.imply("meridiem", 1);
+              } else {
+                if ("\u591C" != first1) {
+                  if ("\u665A" != first1) {
+                    if ("\u51CC" == first1) {
+                      const start23 = parsingResult.start;
+                      start23.imply("hour", 0);
+                    }
+                  }
+                }
+                const start = parsingResult.start;
+                start.imply("hour", 22);
+                const start2 = parsingResult.start;
+                start2.imply("meridiem", 1);
+              }
+            }
+          }
+          const start7 = parsingResult.start;
+          start7.imply("hour", 6);
+        }
       }
-      const str = text2.text;
-      str3 = text.text;
+      const start20 = parsingResult.start;
+      start20.assign("day", date.getDate());
+      const start21 = parsingResult.start;
+      start21.assign("month", date.getMonth() + 1);
+      const start22 = parsingResult.start;
+      start22.assign("year", date.getFullYear());
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(ENUnlikelyFormatFilter, items);
+export default _createClass(ZHHansCasualDateParser, items);

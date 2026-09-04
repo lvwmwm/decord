@@ -1,13 +1,13 @@
-// Module ID: 6115
-// Function ID: 6116
+// Module ID: 7199
+// Function ID: 7200
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1921, 6116, 6117, 4113, 2]
+// Dependencies: [1921, 7200, 7201, 4113, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 6115 (canUserSeeMonetizationOnboarding)
+// Module 7199 (canUserSeeMonetizationOnboarding)
 import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4113 */;
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6116 */;
-import set from "set" /* 6117 */;
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7200 */;
+import set from "set" /* 7201 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;

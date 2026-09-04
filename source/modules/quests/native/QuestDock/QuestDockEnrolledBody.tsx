@@ -1,24 +1,24 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15122
+// Function ID: 15123
 // Name: EnrolledBodyWatchTask
-// Dependencies: [5, 19, 17, 7459, 14935, 5396, 14937, 21, 4478, 709, 14941, 14938, 8588, 14933, 14966, 5399, 14963, 14962, 14964, 14944, 1627, 7480, 2]
+// Dependencies: [5, 19, 17, 7636, 15017, 5404, 15019, 21, 4481, 709, 15023, 15020, 8195, 15015, 15048, 5407, 15045, 15044, 15046, 15026, 1627, 7657, 2]
 
-// Module 15040 (EnrolledBodyWatchTask)
+// Module 15122 (EnrolledBodyWatchTask)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5399 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 14962 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14963 */;
-import useQuestRewardClaimHandlerDefault from "useQuestRewardClaimHandler" /* 14964 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5407 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 15044 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 15045 */;
+import useQuestRewardClaimHandlerDefault from "useQuestRewardClaimHandler" /* 15046 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initializeState" /* 7459 */;
-import closure_7 from "QuestDockMode" /* 14935 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5396 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
+import closure_6 from "initializeState" /* 7636 */;
+import closure_7 from "QuestDockMode" /* 15017 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5404 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function EnrolledBodyWatchTask(quest) {
@@ -200,9 +200,9 @@ let closure_15 = createCacheKey.createStyles(obj);
 let obj2 = { marginTop: ThemesDefault.space.PX_16 };
 let obj3 = { marginLeft: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, marginRight: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 const memoResult = importAllResult.memo(function QuestDockEnrolledBody() {
-  let obj = minExpandedContentHeight(14944);
+  let obj = minExpandedContentHeight(15026);
   const questDockQuest = obj.useQuestDockQuest();
-  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14938).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(15020).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const items1 = [minExpandedContentHeight];
   const callback = importAllResult.useCallback((nativeEvent) => {

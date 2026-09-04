@@ -1,13 +1,13 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 11524
+// Function ID: 11525
 // Name: getGroupDMRecipientLimit
-// Dependencies: [1921, 16589, 673, 1923, 1945, 16590, 2]
+// Dependencies: [1921, 11525, 673, 1923, 1945, 11526, 2]
 // Exports: default
 
-// Module 16588 (getGroupDMRecipientLimit)
+// Module 11524 (getGroupDMRecipientLimit)
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_3 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 16589 */;
+import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_3 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 11525 */;
 import ME from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
@@ -37,7 +37,7 @@ export default function getGroupDMRecipientLimit() {
         if (tmp2Result.getGroupDMNitroCapConfig("getGroupDMRecipientLimit").enabled) {
           tmp5 = closure_3;
         }
-        tmp2Result = tmp2(16590);
+        tmp2Result = tmp2(11526);
       }
       obj3 = isPremiumAtLeast;
       tmp2 = require;

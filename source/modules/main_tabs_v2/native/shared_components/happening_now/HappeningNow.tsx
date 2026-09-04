@@ -1,22 +1,22 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 15980
+// Function ID: 15981
 // Name: renderCard
-// Dependencies: [32, 19, 17, 15134, 673, 21, 7809, 4478, 709, 5661, 7749, 15895, 695, 4946, 1499, 15896, 5962, 5982, 15903, 15904, 4217, 11215, 12, 8116, 1233, 15905, 15906, 15923, 15925, 15926, 15909, 15922, 15927, 15921, 15908, 1470, 2]
+// Dependencies: [32, 19, 17, 15218, 673, 21, 7014, 4481, 709, 6595, 6904, 15981, 695, 4953, 1499, 15982, 7102, 7122, 15989, 15990, 4218, 11286, 12, 8804, 1233, 15991, 15992, 16009, 16011, 16012, 15995, 16008, 16013, 16007, 15994, 1394, 2]
 
-// Module 15894 (renderCard)
+// Module 15980 (renderCard)
 import ThemesDefault from "Themes" /* 709 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5661 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15905 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 15908 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6595 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15991 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 15994 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15134 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15218 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7809 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import { Gesture } from "LegacyBaseButton" /* 5661 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7014 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import { Gesture } from "LegacyBaseButton" /* 6595 */;
 
 require = arg1;
 function renderCard(kind, fullWidth) {
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: 1224737317, isFocused: 111864 };
+  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "Array", isFocused: "isArray" };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

@@ -1,18 +1,18 @@
-// Module ID: 15656
-// Function ID: 15657
-// Dependencies: [19, 17, 675, 21, 4478, 1296, 8929, 1233, 15657, 2]
+// Module ID: 15738
+// Function ID: 15739
+// Dependencies: [19, 17, 675, 21, 4481, 1296, 8163, 1233, 15739, 2]
 // Exports: default
 
-// Module 15656
+// Module 15738
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import getNoResultsSource from "getNoResultsSource" /* 8929 */;
-import blockDefault from "block" /* 15657 */;
+import getNoResultsSource from "getNoResultsSource" /* 8163 */;
+import blockDefault from "block" /* 15739 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { CollectiblesMobileShopScreen as closure_4 } from "items" /* 675 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "86ab59c715f76d7aec2c8e734978dc00", name: "ChatDotsIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16.5, scales: [2, 3], hash: "5854380fa0e0fd8bc925e2e46e9e8246", name: "ic_lock_short_16px", type: "png" });

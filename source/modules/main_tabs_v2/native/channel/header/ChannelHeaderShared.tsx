@@ -1,28 +1,28 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13199
+// Function ID: 13200
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 4130, 1921, 21, 4478, 709, 5077, 1234, 8941, 4474, 1296, 13168, 10873, 4197, 4982, 13169, 1233, 4674, 2]
+// Dependencies: [32, 19, 17, 4130, 1921, 21, 4481, 709, 5084, 1234, 10830, 4477, 1296, 13200, 10841, 4197, 4989, 13201, 1233, 4681, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13167 (TitleWrapper)
+// Module 13199 (TitleWrapper)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
-import Text from "Text" /* 4474 */;
-import computeChannelName from "computeChannelName" /* 4674 */;
-import getChannelIcon from "getChannelIcon" /* 4982 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8941 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10873 */;
-import registerAssetDefault from "registerAsset" /* 13168 */;
-import _modDef13169 from "module_13169" /* 13169 */;
+import Text from "Text" /* 4477 */;
+import computeChannelName from "computeChannelName" /* 4681 */;
+import getChannelIcon from "getChannelIcon" /* 4989 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10830 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10841 */;
+import registerAssetDefault from "registerAsset" /* 13200 */;
+import _modDef13201 from "module_13201" /* 13201 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function TitleWrapper(headerAccessibilityLabel) {
@@ -53,7 +53,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[5] = tmp5;
     obj[6] = tmp.wrapper;
     obj[7] = children;
-    tmp6Result = callback2(titleContentHeight(5077).PressableOpacity, obj);
+    tmp6Result = callback2(titleContentHeight(5084).PressableOpacity, obj);
     const tmp6 = callback2;
   }
   return tmp6Result;
@@ -123,7 +123,7 @@ function GroupDMIcon(channel) {
 function UserAvatar(user) {
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", style: "hourglass", autoStatusCutout: "hours" };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: false, isMobileOnline: null, isVROnline: true, style: null, autoStatusCutout: false };
   obj[3] = Button.AvatarSizes.REFRESH_MEDIUM_32;
   let tmp3 = null;
   if (!user.isSystemUser()) {
@@ -169,7 +169,7 @@ function MemberCountText(arg0) {
   }
   obj[1] = memberCount;
   obj[3] = leadingAccessoryWidth;
-  const children = [closure_8(_modDef13169, obj), ];
+  const children = [closure_8(_modDef13201, obj), ];
   let tmp4Result = null;
   if (withSeparator) {
     tmp4Result = tmp4(Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "\u2022" });

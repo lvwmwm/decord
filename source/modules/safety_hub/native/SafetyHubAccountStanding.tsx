@@ -1,23 +1,23 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14696
+// Function ID: 14697
 // Name: items
-// Dependencies: [32, 19, 17, 1921, 8720, 8709, 21, 8710, 14598, 4478, 709, 1233, 4438, 7720, 9611, 6235, 7725, 586, 1430, 8537, 1296, 4474, 2]
+// Dependencies: [32, 19, 17, 1921, 8360, 8349, 21, 8350, 14697, 4481, 709, 1233, 14691, 4441, 6550, 9554, 6556, 6880, 586, 1431, 8741, 1296, 4477, 2]
 // Exports: default
 
-// Module 14597 (items)
+// Module 14696 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8709 */;
+import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8349 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let obj = { [arg1(8710).AccountStandingState.ALL_GOOD]: { left: "0%" } };
+let obj = { [arg1(8350).AccountStandingState.ALL_GOOD]: { left: "0%" } };
 obj = { left: "25%", transform: null };
 obj = { translateX: -0.5 * require("SafetyHubAccountStandingSubwayMarker").SUBWAY_MARKER_WIDTH };
 let items = [obj];
@@ -78,42 +78,42 @@ export default function SafetyHubAccountStanding() {
     const intl = accountStanding(1233).intl;
     obj = { termsOfService: closure_1_8.TOS_LINK, communityGuidelines: closure_1_8.COMMUNITY_GUIDELINES };
     obj[1] = intl.format(accountStanding(1233).t.pEdBD4, obj);
-    obj[2] = accountStanding(1233).t["/Idfao"];
+    obj[2] = accountStanding(14691).ACCOUNT_STANDING_SHORT_STATUS[accountStanding(undefined, 8350).AccountStandingState.ALL_GOOD];
     obj[3] = closure_3.good;
-    obj[4] = accountStanding(4438).CircleCheckIcon;
-    obj[accountStanding(8710).AccountStandingState.ALL_GOOD] = obj;
+    obj[4] = accountStanding(4441).CircleCheckIcon;
+    obj[accountStanding(8350).AccountStandingState.ALL_GOOD] = obj;
     obj1 = { title: accountStanding(1233).t.epkcmS, description: null, status: null, style: null, CustomIcon: null, iconSource: null };
     const intl2 = accountStanding(1233).intl;
     obj1[1] = intl2.string(accountStanding(1233).t["774juc"]);
-    obj1[2] = accountStanding(1233).t.umleq4;
+    obj1[2] = accountStanding(14691).ACCOUNT_STANDING_SHORT_STATUS[accountStanding(undefined, 8350).AccountStandingState.LIMITED];
     obj1[3] = closure_3.limited;
-    obj1[4] = accountStanding(7720).CircleErrorIcon;
-    obj1[5] = first(9611);
-    obj[accountStanding(8710).AccountStandingState.LIMITED] = obj1;
+    obj1[4] = accountStanding(6550).CircleErrorIcon;
+    obj1[5] = first(9554);
+    obj[accountStanding(8350).AccountStandingState.LIMITED] = obj1;
     const obj2 = { title: accountStanding(1233).t.crzE2X, description: null, status: null, style: null, CustomIcon: null, iconSource: null };
     const intl3 = accountStanding(1233).intl;
     obj2[1] = intl3.string(accountStanding(1233).t["T/Ufh9"]);
-    obj2[2] = accountStanding(1233).t.WBtMHf;
+    obj2[2] = accountStanding(14691).ACCOUNT_STANDING_SHORT_STATUS[accountStanding(undefined, 8350).AccountStandingState.VERY_LIMITED];
     obj2[3] = closure_3.veryLimited;
-    obj2[4] = accountStanding(7720).CircleErrorIcon;
-    obj2[5] = first(9611);
-    obj[accountStanding(8710).AccountStandingState.VERY_LIMITED] = obj2;
+    obj2[4] = accountStanding(6550).CircleErrorIcon;
+    obj2[5] = first(9554);
+    obj[accountStanding(8350).AccountStandingState.VERY_LIMITED] = obj2;
     const obj3 = { title: accountStanding(1233).t.XRNVzO, description: null, status: null, style: null, CustomIcon: null, iconSource: null };
     const intl4 = accountStanding(1233).intl;
     obj3[1] = intl4.string(accountStanding(1233).t["hbH+9S"]);
-    obj3[2] = accountStanding(1233).t["7f+4Lg"];
+    obj3[2] = accountStanding(14691).ACCOUNT_STANDING_SHORT_STATUS[accountStanding(undefined, 8350).AccountStandingState.AT_RISK];
     obj3[3] = closure_3.atRisk;
-    obj3[4] = accountStanding(7720).CircleErrorIcon;
-    obj3[5] = first(9611);
-    obj[accountStanding(8710).AccountStandingState.AT_RISK] = obj3;
+    obj3[4] = accountStanding(6550).CircleErrorIcon;
+    obj3[5] = first(9554);
+    obj[accountStanding(8350).AccountStandingState.AT_RISK] = obj3;
     const obj4 = { title: accountStanding(1233).t.MExFkz, description: null, status: null, style: null, CustomIcon: null, iconSource: null };
     const intl5 = accountStanding(1233).intl;
     obj4[1] = intl5.string(accountStanding(1233).t["2liUvt"]);
-    obj4[2] = accountStanding(1233).t["0OONGB"];
+    obj4[2] = accountStanding(14691).ACCOUNT_STANDING_SHORT_STATUS[accountStanding(undefined, 8350).AccountStandingState.SUSPENDED];
     obj4[3] = closure_3.suspended;
-    obj4[4] = accountStanding(6235).CircleXIcon;
-    obj4[5] = first(7725);
-    obj[accountStanding(8710).AccountStandingState.SUSPENDED] = obj4;
+    obj4[4] = accountStanding(6556).CircleXIcon;
+    obj4[5] = first(6880);
+    obj[accountStanding(8350).AccountStandingState.SUSPENDED] = obj4;
     return obj;
   }, items);
   const items1 = [accountStanding, memo, first, tmp4];
@@ -150,10 +150,10 @@ export default function SafetyHubAccountStanding() {
   const items2 = [closure_6];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
   if (null != stateFromStores) {
-    obj1 = first(1430);
+    obj1 = first(1431);
     let userAvatarSource = obj1.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = first(8537);
+    userAvatarSource = first(8741);
   }
   const style = tmp13.style;
   obj = { style: items3, children: null };
@@ -177,10 +177,10 @@ export default function SafetyHubAccountStanding() {
   let intl = tmp7(1233).intl;
   obj4[3] = intl.format(title, {
     hook(children) {
-      return closure_1_9(accountStanding(4474).Text, { style, variant: "heading-lg/bold", children }, arg1);
+      return closure_1_9(accountStanding(4477).Text, { style, variant: "heading-lg/bold", children }, arg1);
     }
   });
-  const items5 = [closure_9(accountStanding(4474).Text, obj4), closure_9(accountStanding(4474).Text, { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
+  const items5 = [closure_9(accountStanding(4477).Text, obj4), closure_9(accountStanding(4477).Text, { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
   obj3[1] = items5;
   const items6 = [closure_10(style, obj3), ];
   const obj6 = { style: items7, children: null };

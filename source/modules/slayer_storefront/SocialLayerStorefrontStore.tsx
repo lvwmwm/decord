@@ -1,9 +1,9 @@
-// Module ID: 6084
-// Function ID: 6085
+// Module ID: 7168
+// Function ID: 7169
 // Name: handleUserSettingsStoreUpdate
 // Dependencies: [1995, 1215, 586, 706, 2]
 
-// Module 6084 (handleUserSettingsStoreUpdate)
+// Module 7168 (handleUserSettingsStoreUpdate)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_1 from "_getSystemLocale" /* 1995 */;
@@ -144,6 +144,13 @@ prototype["getConfigFetchState"] = function getConfigFetchState() {
 };
 prototype["getStorefrontApplicationIds"] = function getStorefrontApplicationIds() {
   return set1;
+};
+prototype["hasStorefrontForApplicationId"] = function hasStorefrontForApplicationId(applicationIdFromGuildId) {
+  let hasItem = null != applicationIdFromGuildId;
+  if (hasItem) {
+    hasItem = set1.has(applicationIdFromGuildId);
+  }
+  return hasItem;
 };
 prototype["getStorefrontGuildIds"] = function getStorefrontGuildIds() {
   return set2;

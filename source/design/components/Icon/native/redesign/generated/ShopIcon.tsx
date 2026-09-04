@@ -1,14 +1,14 @@
-// Module ID: 11938
-// Function ID: 11939
+// Module ID: 12070
+// Function ID: 12071
 // Name: ShopIcon
-// Dependencies: [19, 21, 709, 4196, 11939, 2]
+// Dependencies: [19, 21, 709, 4196, 12071, 2]
 // Exports: ShopIcon
 
-// Module 11938 (ShopIcon)
+// Module 12070 (ShopIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11939 */;
+import registerAsset from "registerAsset" /* 12071 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

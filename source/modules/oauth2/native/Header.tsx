@@ -1,19 +1,19 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9366
+// Function ID: 9367
 // Name: Header
-// Dependencies: [19, 17, 673, 21, 4478, 709, 1430, 1296, 4474, 8951, 1398, 1233, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 1431, 1296, 4477, 9367, 1399, 1233, 2]
 // Exports: default
 
-// Module 9394 (Header)
+// Module 9366 (Header)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
-import Text from "Text" /* 4474 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import Text from "Text" /* 4477 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UserFlags } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -38,7 +38,7 @@ export default function Header(accountScopes) {
   let userAvatarSource;
   const applicationIconSource = obj.getApplicationIconSource(obj);
   if (null != user) {
-    let tmp2Result = tmp2(1430);
+    let tmp2Result = tmp2(1431);
     userAvatarSource = tmp2Result.getUserAvatarSource(user);
   }
   obj = { style: tmp.header, children: null };
@@ -62,10 +62,10 @@ export default function Header(accountScopes) {
     const obj10 = { style: null, verified: null };
     obj10[0] = tmp.botTag;
     let hasFlagResult = null != bot.public_flags;
-    tmp2Result = tmp2(8951);
+    tmp2Result = tmp2(9367);
     if (hasFlagResult) {
-      hasFlagResult = tmp9(1398).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
-      const tmp9Result = tmp9(1398);
+      hasFlagResult = tmp9(1399).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
+      const tmp9Result = tmp9(1399);
     }
     obj10[1] = hasFlagResult;
     tmp8Result = tmp8(tmp2Result, obj10);

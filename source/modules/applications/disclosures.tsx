@@ -1,11 +1,11 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9169
+// Function ID: 9170
 // Name: _getDisclosures
-// Dependencies: [5, 673, 527, 9308, 1233, 2]
+// Dependencies: [5, 673, 527, 9170, 1233, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9307 (_getDisclosures)
-import create from "create" /* 9308 */;
+// Module 9169 (_getDisclosures)
+import create from "create" /* 9170 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -143,7 +143,7 @@ export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
   if (create.ApplicationDisclosureType.IP_LOCATION === toFixed) {
     const intl2 = tmp(1233).intl;
     return intl2.string(tmp(1233).t["6wPmjo"]);
-  } else if (tmp(9308).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+  } else if (tmp(9170).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
     const intl = tmp(1233).intl;
     return intl.string(tmp(1233).t["/uOMKZ"]);
   } else {

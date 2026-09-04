@@ -1,16 +1,16 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 7998
+// Function ID: 7999
 // Name: createReferralTrialEmbedRedeemable
-// Dependencies: [1386, 1921, 4145, 7205, 6093, 673, 1923, 4478, 709, 6096, 7867, 7989, 1233, 7990, 4322, 4139, 7204, 7976, 1994, 1623, 7972, 2]
+// Dependencies: [1386, 1921, 4145, 7384, 7177, 673, 1923, 4481, 709, 7180, 7877, 7999, 1233, 8000, 4325, 4139, 7383, 7986, 1994, 1623, 7982, 2]
 // Exports: createReferralTrialEmbedRedeemable
 
-// Module 7988 (createReferralTrialEmbedRedeemable)
+// Module 7998 (createReferralTrialEmbedRedeemable)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "reset" /* 4145 */;
-import closure_6 from "emitChanges" /* 7205 */;
-import closure_7 from "updateProduct" /* 6093 */;
+import closure_6 from "emitChanges" /* 7384 */;
+import closure_7 from "updateProduct" /* 7177 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1923 */;
 
@@ -27,7 +27,7 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
     obj[4] = ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT;
     obj[5] = ThemesDefault.colors.BACKGROUND_MOD_NORMAL;
     obj[6] = ThemesDefault.colors.WHITE;
-    const tmp47 = _require(4478).createNativeStyleProperties(obj)(theme);
+    const tmp47 = _require(4481).createNativeStyleProperties(obj)(theme);
     ({ titleColor, bodyTextColor, backgroundColor } = tmp47);
     ({ headerTextColor, footerTextColor, subTextColor, acceptLabelColor } = tmp47);
     channel = channel.getChannel(message.getChannelId());
@@ -36,13 +36,13 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
         obj = { backgroundColor: null, borderColor: null, thumbnailCornerRadius: 3, headerLogoUrl: null, headerText: null, headerColor: null, thumbnailUrl: null };
         obj[0] = backgroundColor;
         obj[1] = backgroundColor;
-        let tmp44Result = tmp44(7867);
-        obj[3] = tmp44Result.getAssetUriForEmbed(tmp46(7989));
+        let tmp44Result = tmp44(7877);
+        obj[3] = tmp44Result.getAssetUriForEmbed(tmp46(7999));
         const intl = tmp44(1233).intl;
         obj[4] = intl.string(tmp44(1233).t.gtNqJQ).toLocaleLowerCase();
         obj[5] = headerTextColor;
-        tmp44Result = tmp44(7867);
-        obj[6] = tmp44Result.getAssetUriForEmbed(tmp46(7990));
+        tmp44Result = tmp44(7877);
+        obj[6] = tmp44Result.getAssetUriForEmbed(tmp46(8000));
         let obj4 = user;
         let userId;
         if (relevantUserTrialOffer != null) {
@@ -56,9 +56,9 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
         const user1 = obj4.getUser(referrerId);
         if (null != user) {
           if (null != user1) {
-            let tmp46Result = tmp46(4322);
+            let tmp46Result = tmp46(4325);
             const name = tmp46Result.getName(user1);
-            tmp46Result = tmp46(4322);
+            tmp46Result = tmp46(4325);
             const name1 = tmp46Result.getName(user);
             const intl11 = tmp44(1233).intl;
             obj = { senderUserName: null, recipientUserName: null };
@@ -80,7 +80,7 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
               _require = undefined;
               _require = offerIds.getOfferIds();
               const _Object = Object;
-              const values = Object.values(tmp44(6096).TrialIdToProductOfferId[closure_9]);
+              const values = Object.values(tmp44(7180).TrialIdToProductOfferId[closure_9]);
               id = undefined;
               if (userTrialOffer != null) {
                 id = userTrialOffer.id;
@@ -96,12 +96,12 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
                 }
               }
               const tmp46Result1 = tmp46(4139);
-              const result = tmp44(7204).hasUserTrialOfferExpired(relevantUserTrialOffer);
+              const result = tmp44(7383).hasUserTrialOfferExpired(relevantUserTrialOffer);
               if (!tmp14) {
                 const expiresAt = relevantUserTrialOffer.expiresAt;
-                const referralTrialOfferExpirationCopy = tmp44(7976).getReferralTrialOfferExpirationCopy(expiresAt.getTime());
+                const referralTrialOfferExpirationCopy = tmp44(7986).getReferralTrialOfferExpirationCopy(expiresAt.getTime());
                 const intl2 = tmp44(1233).intl;
-                const tmp44Result2 = tmp44(7976);
+                const tmp44Result2 = tmp44(7986);
                 const subscriptionTrial = relevantUserTrialOffer.subscriptionTrial;
                 let interval;
                 if (subscriptionTrial != null) {
@@ -163,9 +163,9 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
                     const intl8 = tmp44(1233).intl;
                     obj7.acceptLabelText = intl8.string(tmp44(1233).t.bXTClc);
                     obj7.acceptLabelColor = acceptLabelColor;
-                    obj7.acceptLabelIconUrl = tmp44(7867).getAssetUriForEmbed(tmp46(7972));
+                    obj7.acceptLabelIconUrl = tmp44(7877).getAssetUriForEmbed(tmp46(7982));
                     tmp33 = obj7;
-                    const tmp44Result4 = tmp44(7867);
+                    const tmp44Result4 = tmp44(7877);
                   }
                   return tmp33;
                 }
@@ -210,7 +210,7 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
                 const tmp46Result4 = tmp46(1994);
               }
               tmp14 = null == relevantUserTrialOffer.expiresAt || result || tmp10 || null != relevantUserTrialOffer.redeemedAt;
-              const tmp44Result1 = tmp44(7204);
+              const tmp44Result1 = tmp44(7383);
             }
           }
         }
@@ -223,6 +223,6 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
         return obj13;
       }
     }
-    const obj28 = _require(4478);
+    const obj28 = _require(4481);
   }
 };

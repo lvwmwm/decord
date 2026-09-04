@@ -1,17 +1,17 @@
-// Module ID: 14695
-// Function ID: 14696
+// Module ID: 14776
+// Function ID: 14777
 // Name: computeAffectedGuilds
-// Dependencies: [5460, 4398, 1908, 5390, 1305, 6252, 1233, 4166, 2]
+// Dependencies: [5469, 4401, 1908, 5398, 1305, 6935, 1233, 4166, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 14695 (computeAffectedGuilds)
+// Module 14776 (computeAffectedGuilds)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import create from "create" /* 1305 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import closure_2 from "handleChannelSelect" /* 5460 */;
-import closure_3 from "handleInviteData" /* 4398 */;
+import closure_2 from "handleChannelSelect" /* 5469 */;
+import closure_3 from "handleInviteData" /* 4401 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "insertUnsortedGuilds" /* 5390 */;
+import closure_5 from "insertUnsortedGuilds" /* 5398 */;
 
 require = arg1;
 function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
@@ -45,7 +45,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
         } else {
           EXPANDING = obj.EXPANDING;
         }
-        dependencyMap = tmp8(6252).getSanitizedActivityRestrictedGuilds();
+        dependencyMap = tmp8(6935).getSanitizedActivityRestrictedGuilds();
         flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
         if (setting !== tmp8(1305).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
           if (setting !== tmp8(1305).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
@@ -315,7 +315,7 @@ export const sortGuildIdsByFrecency = function sortGuildIdsByFrecency(guildIds) 
   });
 };
 export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
-  obj = set(6252);
+  obj = set(6935);
   const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
   set = new Set(affectedGuildIds);
   if (direction === obj.RESTRICTING) {

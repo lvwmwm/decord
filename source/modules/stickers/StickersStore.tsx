@@ -1,16 +1,16 @@
-// Module ID: 5453
-// Function ID: 5454
+// Module ID: 5462
+// Function ID: 5463
 // Name: loadSavedGuildStickers
-// Dependencies: [5, 1388, 1908, 5454, 5455, 1955, 1975, 10, 5456, 706, 586, 2]
+// Dependencies: [5, 1388, 1908, 5463, 5464, 1955, 1975, 10, 5465, 706, 586, 2]
 
-// Module 5453 (loadSavedGuildStickers)
+// Module 5462 (loadSavedGuildStickers)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "allGuildIds" /* 1388 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "parseServerGuildSticker" /* 5454 */;
-import closure_7 from "parseServerPackSticker" /* 5455 */;
+import closure_6 from "parseServerGuildSticker" /* 5463 */;
+import closure_7 from "parseServerPackSticker" /* 5464 */;
 
 const require = arg1;
 function loadSavedGuildStickers() {

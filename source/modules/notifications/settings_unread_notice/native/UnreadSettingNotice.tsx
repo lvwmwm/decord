@@ -1,17 +1,17 @@
-// Module ID: 11275
-// Function ID: 11276
+// Module ID: 11349
+// Function ID: 11350
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [19, 17, 682, 21, 4478, 709, 11276, 4474, 1233, 5077, 11277, 2]
+// Dependencies: [19, 17, 682, 21, 4481, 709, 11350, 4477, 1233, 5084, 11351, 2]
 // Exports: default
 
-// Module 11275 (UnreadSettingNoticeConnected)
+// Module 11349 (UnreadSettingNoticeConnected)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11276 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11350 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES" /* 682 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -36,7 +36,7 @@ export default function UnreadSettingNoticeConnected(channel) {
   obj1 = { variant: "text-md/semibold", children: null };
   const intl = _require(1233).intl;
   obj1[1] = intl.string(_require(1233).t.i4xQ5o);
-  obj[1] = callback(_require(4474).Text, obj1);
+  obj[1] = callback(_require(4477).Text, obj1);
   items[1] = callback(View, obj);
   const obj2 = { style: tmp.actions, children: null };
   const obj3 = {
@@ -51,8 +51,8 @@ export default function UnreadSettingNoticeConnected(channel) {
   const obj4 = { variant: "text-xs/medium", color: "text-link", children: null };
   const intl2 = _require(1233).intl;
   obj4[2] = intl2.string(_require(1233).t.KyUKhT);
-  obj3[3] = callback(_require(4474).Text, obj4);
-  obj2[1] = callback(_require(5077).PressableOpacity, obj3);
+  obj3[3] = callback(_require(4477).Text, obj4);
+  obj2[1] = callback(_require(5084).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   return callback2(View, obj);

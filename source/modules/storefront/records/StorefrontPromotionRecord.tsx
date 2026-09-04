@@ -1,9 +1,9 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 8718
+// Function ID: 8719
 // Name: parseSkuIds
 // Dependencies: [32, 1935, 2]
 
-// Module 10693 (parseSkuIds)
+// Module 8718 (parseSkuIds)
 import toJSDefault from "toJS" /* 1935 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 

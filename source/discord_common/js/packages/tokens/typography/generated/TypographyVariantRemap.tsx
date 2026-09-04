@@ -1,9 +1,9 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4489
+// Function ID: 4490
 // Name: map
 // Dependencies: [2]
 
-// Module 4486 (map)
+// Module 4489 (map)
 import set from "set" /* 2 */;
 
 const obj = { text: new Map(items), heading: null };

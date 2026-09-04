@@ -1,12 +1,12 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 16624
+// Function ID: 16625
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 7633, 2]
+// Dependencies: [19, 7810, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 16535 (useFileOrLinkImageDimensions)
+// Module 16624 (useFileOrLinkImageDimensions)
 import closure_0 from "noop" /* 19 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7633 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
 
 ({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: obj1, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: c4 } = MessageEmbedTypes);
 let result = require("set").fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");

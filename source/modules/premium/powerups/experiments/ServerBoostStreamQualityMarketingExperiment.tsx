@@ -1,11 +1,11 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13515
+// Function ID: 13516
 // Name: CONTROL_RESOLUTION
-// Dependencies: [1468, 2]
+// Dependencies: [1469, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 13482 (CONTROL_RESOLUTION)
-import getUnitIdDefault from "getUnitId" /* 1468 */;
+// Module 13515 (CONTROL_RESOLUTION)
+import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const obj = { 1: null };
 obj[1] = { streamQualityMarketingResolution: "1440p" };

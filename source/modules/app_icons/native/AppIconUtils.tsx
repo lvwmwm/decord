@@ -1,18 +1,18 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13291
+// Function ID: 13292
 // Name: fetchCurrentAppIcon
-// Dependencies: [32, 5, 19, 17, 8191, 673, 1923, 3, 1234, 13259, 8192, 4946, 706, 695, 4194, 1233, 6255, 1623, 2]
+// Dependencies: [32, 5, 19, 17, 9252, 673, 1923, 3, 1234, 13292, 9253, 4953, 706, 695, 4194, 1233, 7320, 1623, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 13258 (fetchCurrentAppIcon)
+// Module 13291 (fetchCurrentAppIcon)
 import timestampDefault from "timestamp" /* 3 */;
 import isMetaQuest from "isMetaQuest" /* 1623 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4946 */;
-import openUserSettings from "openUserSettings" /* 6255 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
+import openUserSettings from "openUserSettings" /* 7320 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import items from "items" /* 8191 */;
+import items from "items" /* 9252 */;
 import ME from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import set from "set" /* 1234 */;
@@ -154,7 +154,7 @@ function _setAppIcon() {
         obj3[0] = callback;
         obj3[1] = callback2;
         let TIER_2 = null;
-        if (callback !== callback(8192).FreemiumAppIconIds.DEFAULT) {
+        if (callback !== callback(9253).FreemiumAppIconIds.DEFAULT) {
           TIER_2 = TIER_2.TIER_2;
         }
         obj3[2] = TIER_2;
@@ -184,7 +184,7 @@ if (set.isAndroid()) {
   DCDIconManager = require("get ActivityIndicator").NativeModules.DCDIconManager;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(8192).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(9253).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
   importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -266,7 +266,7 @@ export const setAppIcon = function setAppIcon(DEFAULT, premiumType) {
   return applyArgumentsResult;
 };
 export const useAppIcons = function useAppIcons() {
-  const currentAppIcon = callback(React.useState(_require(8192).FreemiumAppIconIds.DEFAULT), 2);
+  const currentAppIcon = callback(React.useState(_require(9253).FreemiumAppIconIds.DEFAULT), 2);
   _require = currentAppIcon[1];
   importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {

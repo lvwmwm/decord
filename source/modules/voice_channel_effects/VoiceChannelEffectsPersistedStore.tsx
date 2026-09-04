@@ -1,13 +1,13 @@
-// Module ID: 6201
-// Function ID: 6202
+// Module ID: 7285
+// Function ID: 7286
 // Name: initialize
-// Dependencies: [6202, 586, 706, 2]
+// Dependencies: [7286, 586, 706, 2]
 
-// Module 6201 (initialize)
+// Module 7285 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 6202 */;
+import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 7286 */;
 
 let closure_1 = VoiceChannelEffectAnimationType.VoiceChannelEffectAnimationType;
 const PersistedStore = initializeDefault.PersistedStore;

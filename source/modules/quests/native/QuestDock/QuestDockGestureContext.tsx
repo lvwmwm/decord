@@ -1,15 +1,15 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 15020
+// Function ID: 15021
 // Name: QuestDockMode
-// Dependencies: [19, 14935, 5396, 14937, 21, 7809, 1492, 4217, 14939, 14936, 11835, 2]
+// Dependencies: [19, 15017, 5404, 15019, 21, 7014, 1492, 4218, 15021, 15018, 11966, 2]
 
-// Module 14938 (QuestDockMode)
+// Module 15020 (QuestDockMode)
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "QuestDockMode" /* 14935 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5396 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14937 */;
+import closure_4 from "QuestDockMode" /* 15017 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5404 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7809 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7014 */;
 
 const require = arg1;
 let c3 = importAllResult;

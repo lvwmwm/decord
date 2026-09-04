@@ -1,10 +1,10 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11987
+// Function ID: 11988
 // Name: setFrecencySectionSelection
 // Dependencies: [706, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11856 (setFrecencySectionSelection)
+// Module 11987 (setFrecencySectionSelection)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

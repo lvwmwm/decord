@@ -1,9 +1,9 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8716
+// Function ID: 8717
 // Name: getPromotionIdOverride
 // Dependencies: [586, 706, 2]
 
-// Module 8513 (getPromotionIdOverride)
+// Module 8716 (getPromotionIdOverride)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

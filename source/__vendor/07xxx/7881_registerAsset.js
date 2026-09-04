@@ -1,0 +1,10 @@
+// Module ID: 7881
+// Function ID: 7882
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 7881 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_channel/native/images", width: 49, height: 50, scales: [2, 3], hash: "83d9ad6473cb40e1d6825c7dbdb7f70f", name: "ic_media_post_share_prompt", type: "png" });

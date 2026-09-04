@@ -1,12 +1,12 @@
-// Module ID: 13655
-// Function ID: 13656
+// Module ID: 13688
+// Function ID: 13689
 // Name: isManualAgeAssuranceFallbackEnabled
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 13655 (isManualAgeAssuranceFallbackEnabled)
+// Module 13688 (isManualAgeAssuranceFallbackEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

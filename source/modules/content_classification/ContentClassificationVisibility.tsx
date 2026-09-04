@@ -1,13 +1,13 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11873
+// Function ID: 11874
 // Name: ContentClassificationVisibility
-// Dependencies: [1921, 5067, 5069, 586, 2]
+// Dependencies: [1921, 5074, 5076, 586, 2]
 // Exports: getContentClassificationVisibility, useContentClassificationVisibility
 
-// Module 11742 (ContentClassificationVisibility)
+// Module 11873 (ContentClassificationVisibility)
 import initialize from "initialize" /* 586 */;
-import contentClassificationToAgeRestrictionConclusion from "contentClassificationToAgeRestrictionConclusion" /* 5067 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5069 */;
+import contentClassificationToAgeRestrictionConclusion from "contentClassificationToAgeRestrictionConclusion" /* 5074 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5076 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
@@ -43,10 +43,10 @@ export const useContentClassificationVisibility = function useContentClassificat
   [][0] = closure_2;
   if (null != arg0) {
     obj = { type: null, data: null };
-    obj[0] = tmp(5067).ContentClassificationVariant.MINIMAL;
+    obj[0] = tmp(5074).ContentClassificationVariant.MINIMAL;
     obj[1] = arg0;
-    const result = tmp(5067).contentClassificationToAgeRestriction(obj);
-    if (result === tmp(5069).AgeRestrictionStatus.ADULT) {
+    const result = tmp(5074).contentClassificationToAgeRestriction(obj);
+    if (result === tmp(5076).AgeRestrictionStatus.ADULT) {
       if (true !== tmp4) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {

@@ -1,9 +1,9 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11769
+// Function ID: 11770
 // Name: handleStopEditingRoles
 // Dependencies: [1991, 673, 586, 706, 2]
 
-// Module 11638 (handleStopEditingRoles)
+// Module 11769 (handleStopEditingRoles)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "trackCommunicationDisabled" /* 1991 */;

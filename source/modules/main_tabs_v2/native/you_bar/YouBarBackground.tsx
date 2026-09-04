@@ -1,20 +1,20 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16307
+// Function ID: 16308
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 14940, 21, 4478, 709, 5544, 4941, 686, 4197, 15026, 4217, 4928, 2]
+// Dependencies: [19, 17, 15022, 21, 4481, 709, 5619, 4948, 686, 4197, 15108, 4218, 4935, 2]
 
-// Module 16221 (YouBarMaskedBackground)
+// Module 16307 (YouBarMaskedBackground)
 import nDefault from "n" /* 686 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5544 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15026 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5619 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15108 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14940 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -65,13 +65,13 @@ function YouBarAnimatedBackground(arg0) {
     obj[2] = store(closure_1_2[12]).withSpring(closure_1.get(), closure_1_5);
     return obj;
   };
-  obj = { withSpring: _require(4928).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
+  obj = { withSpring: _require(4935).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_10;
-  const animatedStyle = _require(4217).useAnimatedStyle(fn);
+  const animatedStyle = _require(4218).useAnimatedStyle(fn);
   const style = [{ position: "absolute" }, tmp.youRowFloating, { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor }, { borderTopRightRadius: 0, borderTopLeftRadius: 0 }, animatedStyle];
-  return callback(_modDef4217.View, { style });
+  return callback(_modDef4218.View, { style });
 }
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = CONNECTION_BANNER_HEIGHT.YOU_BAR_SPRING_CONFIG;

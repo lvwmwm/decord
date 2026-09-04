@@ -1,12 +1,12 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5094
+// Function ID: 5095
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getClipsRuntime, isClipsV3Enabled, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
 
-// Module 5086 (apexExperiment)
+// Module 5094 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { 1: null, 2: { enableClipsV3: true, enableClipsV3ML: false } };
 obj[2] = { enableClipsV3: true, enableClipsV3ML: true };

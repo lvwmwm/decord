@@ -1,10 +1,10 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11548
+// Function ID: 11549
 // Name: handleMessagesTapURLLink
-// Dependencies: [8158, 4519, 7859, 11206, 1934, 1386, 4462, 4736, 1921, 673, 1497, 1393, 6064, 1232, 11428, 4458, 7491, 11429, 8831, 8825, 8660, 11369, 8915, 4445, 9026, 2008, 5364, 4663, 11431, 10882, 11432, 7211, 5982, 8155, 1625, 11433, 4747, 1219, 7913, 11436, 11459, 2]
+// Dependencies: [9219, 4522, 7869, 11277, 1934, 1386, 4465, 4743, 1921, 673, 1497, 1393, 6537, 1232, 11546, 4461, 7668, 11547, 8616, 8610, 8300, 11476, 8110, 4448, 9114, 2008, 5372, 4670, 11549, 10850, 11550, 7390, 7122, 11551, 1625, 11552, 4754, 1219, 7923, 11555, 11578, 2]
 // Exports: handleMessagesTapLink
 
-// Module 11430 (handleMessagesTapURLLink)
+// Module 11548 (handleMessagesTapURLLink)
 import set from "set" /* 2 */;
 import transitionTo from "transitionTo" /* 1219 */;
 import AbortCodes from "AbortCodes" /* 1232 */;
@@ -12,34 +12,34 @@ import set2 from "set" /* 1393 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import parseQueryDefault from "parseQuery" /* 4458 */;
-import watchStream from "watchStream" /* 4663 */;
-import _modDef5364 from "module_5364" /* 5364 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
-import str22 from "str2" /* 6064 */;
-import trackInviteDefault from "trackInvite" /* 7211 */;
-import identityHook from "identityHook" /* 7913 */;
-import canViewInteractionInfo from "canViewInteractionInfo" /* 8155 */;
-import getIndexKey from "getIndexKey" /* 8158 */;
-import isLinkTrusted from "isLinkTrusted" /* 8660 */;
-import _mod8825 from "module_8825" /* 8825 */;
-import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8831 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8915 */;
-import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 10882 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11369 */;
-import isLinkTrusted2 from "isLinkTrusted" /* 11428 */;
-import openPinnedMessagesDefault from "openPinnedMessages" /* 11431 */;
-import removeAutomodMessageNotice from "removeAutomodMessageNotice" /* 11432 */;
-import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 11433 */;
-import openGuildHighlightNotificationForPush from "openGuildHighlightNotificationForPush" /* 11436 */;
-import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 7859 */;
-import closure_6 from "handleQuickSwitcherUpdate" /* 11206 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import parseQueryDefault from "parseQuery" /* 4461 */;
+import watchStream from "watchStream" /* 4670 */;
+import _modDef5372 from "module_5372" /* 5372 */;
+import str22 from "str2" /* 6537 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
+import trackInviteDefault from "trackInvite" /* 7390 */;
+import identityHook from "identityHook" /* 7923 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8110 */;
+import isLinkTrusted from "isLinkTrusted" /* 8300 */;
+import _mod8610 from "module_8610" /* 8610 */;
+import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8616 */;
+import getIndexKey from "getIndexKey" /* 9219 */;
+import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 10850 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11476 */;
+import isLinkTrusted2 from "isLinkTrusted" /* 11546 */;
+import openPinnedMessagesDefault from "openPinnedMessages" /* 11549 */;
+import removeAutomodMessageNotice from "removeAutomodMessageNotice" /* 11550 */;
+import canViewInteractionInfo from "canViewInteractionInfo" /* 11551 */;
+import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 11552 */;
+import openGuildHighlightNotificationForPush from "openGuildHighlightNotificationForPush" /* 11555 */;
+import closure_4 from "addApplication" /* 4522 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7869 */;
+import closure_6 from "handleQuickSwitcherUpdate" /* 11277 */;
 import closure_7 from "createdAt" /* 1934 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "updateInvite" /* 4462 */;
-import closure_10 from "reinjectEphemerals" /* 4736 */;
+import closure_9 from "updateInvite" /* 4465 */;
+import closure_10 from "reinjectEphemerals" /* 4743 */;
 import closure_11 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 
@@ -63,11 +63,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num = null == invite;
             if (!num) {
-              num = !tmp2(7491).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(7491);
+              num = !tmp2(7668).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(7668);
             }
             if (!num) {
-              tmp4(11429)(invite);
+              tmp4(11547)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -100,9 +100,9 @@ function handleMessagesTapURLLink(data, channelId) {
         obj = { shouldOpenGameProfile: true, gameId: null };
         obj[1] = gameId;
         obj[3] = obj;
-        _mod8825.default.openGameProfileModal(obj);
+        _mod8610.default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = _mod8825.default;
+        const _default = _mod8610.default;
       }
       flag2 = flag3;
     }
@@ -112,8 +112,8 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(11428).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(11428);
+        isLinkTrustedResult = tmp19(11546).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(11546);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;
@@ -136,18 +136,18 @@ let result = set.fileFinishedImporting("modules/messages/native/handlers/handleM
 
 export { handleMessagesTapURLLink };
 export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData) {
-  ({ chatInputRef, message, messageChannel, selectedChannelId: notificationType } = tapLinkData);
+  ({ chatInputRef, message, messageChannel, selectedChannelId } = tapLinkData);
   const data = tapLinkData.tapLinkData.data;
   if (true === tapLinkData.allowWithinModal) {
-    let MESSAGE_EMBED = handleMessagesTapURLLink;
+    let tmp4 = handleMessagesTapURLLink;
     let id;
     if (messageChannel != null) {
       id = messageChannel.id;
     }
-    if (!MESSAGE_EMBED(data, id)) {
+    if (!tmp4(data, id)) {
       if (null != data.action) {
-        let action = data.action;
-        switch (action) {
+        let getMessage = data.action;
+        switch (getMessage) {
           case "Error":
           break;
           case "HTTP":
@@ -369,22 +369,22 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "end":
           break;
           case "enumerable":
-            const actionResult = action(notificationType.id);
+            message = getMessage(selectedChannelId.id);
             let isBlockedEdit;
-            if (actionResult != null) {
-              isBlockedEdit = actionResult.isBlockedEdit;
+            if (message != null) {
+              isBlockedEdit = message.isBlockedEdit;
             }
             if (isBlockedEdit) {
+              let obj14 = removeAutomodMessageNotice;
               const message3 = data.message;
               let id1;
               if (message3 != null) {
                 id1 = message3.id;
               }
-              const result = removeAutomodMessageNotice.removeAutomodMessageNotice(id1);
-              const obj16 = removeAutomodMessageNotice;
+              const result = obj14.removeAutomodMessageNotice(id1);
             } else {
-              const result1 = trackInviteDefault.dismissAutomatedMessage(data.message);
-              const obj15 = trackInviteDefault;
+              let obj13 = trackInviteDefault;
+              const result1 = obj13.dismissAutomatedMessage(data.message);
             }
           break;
           case "error":
@@ -655,9 +655,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ay":
           break;
-          case "guildScheduledEvent":
-          break;
-          case "guildScheduledEventId":
+          case "guildVerificationRoleEnabled":
           break;
           case "extraBottomHeight":
           break;
@@ -699,11 +697,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Setter":
           break;
-          case "useDetectorAttachmentGuard":
-          break;
-          case "entitlementBranchId":
-          break;
-          case "NitroGem24Lottie":
+          case "useDeferredValue":
           break;
           case "MarkupParserNodeTypeError":
           break;
@@ -714,6 +708,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "ro":
           break;
           case "or":
+          break;
+          case "khr":
           break;
           case "BOT_HTTP_INTERACTIONS":
           break;
@@ -727,15 +723,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "INTERACTIONS":
           break;
-          case "NSFW_SERVER":
-          break;
-          case "NSFW_SERVER_AGE_RESTRICTION":
-          break;
-          case "AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING":
-          break;
-          case "RING_CALL_ACCEPTED":
-          break;
-          case "CALL_ACCEPT":
+          case "NSFW_SPACE_WARNING_MODAL_CLICKED":
           break;
           case "rm":
           break;
@@ -759,7 +747,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "perGuildMaxCount":
           break;
-          case "flag_sm":
+          case "closeSuspendedUser":
           break;
           case "getChannelIcon":
           break;
@@ -805,17 +793,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "limited":
           break;
-          case "limitedBadgeRow":
+          case "limitedTimeBadge":
           break;
           case "mi":
           break;
           case "mit":
           break;
-          case "withTouchEventBoundary":
+          case "getAppUIViewed":
           break;
-          case "TouchEventBoundary":
+          case "wedding":
           break;
-          case "createGuildReportFalseAlarmSystemMessage":
+          case "getMediaPostEmbedChannelId":
+          break;
+          case "createGuildReportRaidSystemMessage":
           break;
           case "$ZodMap":
           break;
@@ -825,23 +815,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ap":
           break;
-          case "compose":
+          case "useToolbarContext":
           break;
-          case "composed":
-          break;
-          case "composedPath":
-          break;
-          case "rules_version":
-          break;
-          case "onVideoEnd":
-          break;
-          case "AppStorePremiumProductIdsToPremiumBundledItems":
-          break;
-          case "ProductIds":
-          break;
-          case "rod":
-          break;
-          case "ItemsSortingHat":
+          case "ToolbarContext":
           break;
           case "ToIntlMathematicalValue":
           break;
@@ -875,10 +851,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "IT":
           break;
-          case "FadeInRight":
-          break;
-          case "PLUM_5":
-          break;
           case "MEDIA_PICKER_SEND_BUTTON_SPRING":
           break;
           case "marginHorizontal":
@@ -887,15 +859,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "rect":
           break;
-          case "DURATION_SECONDS":
+          case "isUnderLockdown":
           break;
-          case "SECONDS":
+          case "AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING":
+          break;
+          case "BY":
+          break;
+          case "PROCESSING":
           break;
           case "PX_80":
           break;
           case "_":
           break;
-          case "system_channel_id":
+          case "tagTextInverted":
           break;
           case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
           break;
@@ -917,9 +893,33 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "perUserFpsWindow":
           break;
-          case "woman_and_man_holding_hands_tone1_tone4":
+          case "woman_and_man_holding_hands_medium_skin_tone_medium_dark_skin_tone":
           break;
-          case "guildEmojis":
+          case "GUILD_ROLE_MEMBER_ADD":
+          break;
+          case "ADD_QUICK_REACTION":
+          break;
+          case "QUICK":
+          break;
+          case "REACT":
+          break;
+          case "REACTION":
+          break;
+          case "REACTION_ACTION_SHEET_OPENED":
+          break;
+          case "PREMIUM_STANDARD":
+          break;
+          case "APPLICATION_ONLY":
+          break;
+          case "ONLY_GUILD_EMOJIS_ALLOWED":
+          break;
+          case "LY":
+          break;
+          case "HubEmailConnectionSteps":
+          break;
+          case "DownloadIllocon":
+          break;
+          case "invalidEmojis":
           break;
           case "isAVI":
           break;
@@ -943,25 +943,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "BinaryReader":
           break;
-          case "Touchable":
+          case "stopAnimation":
           break;
-          case "TouchableHaptic":
+          case "woman_factory_worker_medium_skin_tone":
           break;
-          case "lastWarningFetchDayStart":
+          case "man_factory_worker_medium_skin_tone":
           break;
-          case "artWrapper":
-          break;
-          case "performKeyboardAwareNavigation":
-          break;
-          case "selectorOuterContainer":
-          break;
-          case "ethernet":
-          break;
-          case "Google":
-          break;
-          case "Google TV":
-          break;
-          case "TV":
+          case "factory_worker_medium_skin_tone":
           break;
           case "$ZodSet":
           break;
@@ -970,6 +958,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "S":
           break;
           case "et":
+          break;
+          case "canUseEmojisEverywhere":
           break;
           case "postformat":
           break;
@@ -997,10 +987,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "g":
           break;
-          case "VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE":
-          break;
-          case "MESSAGE_LONG_PRESS_MENU":
-          break;
           case "$ZodSymbol":
           break;
           case "ZodSymbol":
@@ -1017,11 +1003,17 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "INTERACTIVE_MUTED":
           break;
-          case "woman_kneeling_facing_right_tone4":
+          case "GiftCardWallet3dIllustration":
           break;
-          case "man_kneeling_facing_right_tone4":
+          case "orbsBalance":
           break;
-          case "fuseboxNetworkInspectionEnabled":
+          case "lastFetchTimeMs":
+          break;
+          case "head_shaking_vertically":
+          break;
+          case "verticallyInverted":
+          break;
+          case "gameSessionId":
           break;
           case "ActionSheetHeaderPressableText":
           break;
@@ -1031,7 +1023,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ext":
           break;
-          case "isProfileEffectRecord":
+          case "isPurchase":
+          break;
+          case "isPurchaseDisabled":
           break;
           case "AccessibilityFocusView":
           break;
@@ -1046,6 +1040,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "reType":
           break;
           case "pe":
+          break;
+          case "_clientPromise":
           break;
           case "maxDynamicContentSize":
           break;
@@ -1167,9 +1163,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "asset":
           break;
-          case "assetDark":
+          case "assetContainer":
           break;
           case "ss":
+          break;
+          case "person_in_bed_tone1":
           break;
           case "_w":
           break;
@@ -1186,6 +1184,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "Hash":
           break;
           case "sh":
+          break;
+          case "initialScrollToTop":
           break;
           case "flag_de":
           break;
@@ -1219,76 +1219,76 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ce":
           break;
-          case "NoResults":
+          case "ACTIVITY_SESSION_JOIN_FAILED":
           break;
-          case "NoResultsAlt":
+          case "FAIL":
           break;
-          case "access":
+          case "FAILED":
           break;
-          case "accessibilityLabelCalendarFormat":
+          case "FAILED_ACTIVITY_LAUNCH_CHECKS":
           break;
-          case "cc":
+          case "CHECKS_REQUIRED":
             let obj = { userId: null, channelId: null, messageId: null };
-            ({ userId: obj22[0], messageChannelId: obj22[1], messageId: obj22[2] } = data);
+            ({ userId: obj21[0], messageChannelId: obj21[1], messageId: obj21[2] } = data);
             showUserProfileActionSheetDefault(obj);
           break;
-          case "bi":
+          case "REQUIRED_OPTIONS_FOR_START_PAYMENT":
           break;
-          case "bil":
+          case "PAYMENT_FLOW_STEP":
             if (null != data.messageReference) {
               let guild_id = data.messageReference.guild_id;
               if (null != guild_id) {
                 const _HermesInternal = HermesInternal;
-                const obj20 = ACTION_SHEET_HEIGHT_HALFDefault;
+                const obj19 = ACTION_SHEET_HEIGHT_HALFDefault;
                 obj = { guildId: null };
                 obj[0] = guild_id;
-                obj20.openLazy(asyncRequireImpl(9026, dependencyMap.paths), "GuildProfileActionSheet:" + guild_id, obj);
-                const tmp93 = asyncRequireImpl(9026, dependencyMap.paths);
+                obj19.openLazy(asyncRequireImpl(9114, dependencyMap.paths), "GuildProfileActionSheet:" + guild_id, obj);
+                const tmp94 = asyncRequireImpl(9114, dependencyMap.paths);
               }
             }
           break;
-          case "lit":
+          case "STEP_DISPLAY":
           break;
-          case "Label":
+          case "DISPLAY_MEDIA_UPLOADS":
             const stream = data.stream;
             if (null != stream) {
-              const voiceChannel = _modDef5364.selectVoiceChannel(stream.channelId);
-              const obj18 = _modDef5364;
+              const voiceChannel = _modDef5372.selectVoiceChannel(stream.channelId);
+              const obj17 = _modDef5372;
               const result2 = watchStream.watchStreamAndTransitionToStream(stream);
-              const obj19 = watchStream;
+              const obj18 = watchStream;
             }
           break;
-          case "ab":
+          case "access":
           break;
-          case "abe":
+          case "accessibilityLabelCalendarFormat":
             openPinnedMessagesDefault(data.messageChannelId, "pinned-message-system-message");
           break;
-          case "bel":
+          case "cc":
           break;
-          case "PREMIUM_TIER_0_HEADER_GRADIENT_2":
+          case "bi":
             obj1 = { channelId: null };
             obj1[0] = data.messageChannelId;
             showChatGDMCustomizeActionSheetDefault(obj1);
           break;
-          case "Role":
+          case "bil":
           break;
-          case "RoleFlags":
-            MESSAGE_EMBED = getMessage;
-            action = getMessage.getMessage;
+          case "lit":
+            tmp4 = getMessage;
+            getMessage = getMessage.getMessage;
           break;
-          case "scrollToEnd":
+          case "Label":
           break;
-          case "addInpInstrumentationHandler":
+          case "ab":
             let obj2 = { userId: null, channelId: null, messageId: null, sourceAnalyticsLocations: null };
-            ({ userId: obj14[0], messageChannelId: obj14[1], messageId: obj14[2] } = data);
+            ({ userId: obj13[0], messageChannelId: obj13[1], messageId: obj13[2] } = data);
             const items = [QUICK_SWITCHERDefault.USERNAME];
             obj2[3] = items;
             showUserProfileActionSheetDefault(obj2);
-            const tmp68 = showUserProfileActionSheetDefault;
+            const tmp69 = showUserProfileActionSheetDefault;
           break;
-          case "r_mark_suffix_with_optional_n_consonant$esjava$0":
+          case "abe":
           break;
-          case "rBIGBL":
+          case "bel":
             let interaction;
             if (message != null) {
               interaction = message.interaction;
@@ -1305,7 +1305,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                       user = store.getChannel(data.messageChannelId);
                       if (null != user) {
                         user = getSection;
-                        let obj3 = { channel: null, type: "channel" };
+                        const obj3 = { channel: null, type: "channel" };
                         obj3[0] = user;
                         user = getSection(obj3, message.applicationId);
                         const descriptor = user.descriptor;
@@ -1317,18 +1317,18 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                           if (chatInputRef != null) {
                             const current4 = chatInputRef.current;
                             if (current4 != null) {
-                              const obj4 = { type: null, context: null };
+                              let obj4 = { type: null, context: null };
                               obj4[0] = user(1625).KeyboardTypes.APP_LAUNCHER;
                               let obj5 = { initialRouteName: null, initiallyExpanded: true, application: null, installOnDemand: null };
                               user = AppLauncherRouteName;
                               obj5[0] = AppLauncherRouteName.APPLICATION_VIEW;
                               obj5[2] = user.descriptor.application;
                               const isGuildInstalled = user.isGuildInstalled;
-                              let tmp64 = !isGuildInstalled;
+                              let tmp65 = !isGuildInstalled;
                               if (!isGuildInstalled) {
-                                tmp64 = !user.isUserInstalled;
+                                tmp65 = !user.isUserInstalled;
                               }
-                              obj5[3] = tmp64;
+                              obj5[3] = tmp65;
                               obj4[1] = obj5;
                               current4.openCustomKeyboard(obj4);
                             }
@@ -1338,7 +1338,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                           if (current3 != null) {
                             let obj6 = { type: null, context: null };
                             obj6[0] = user(1625).KeyboardTypes.APP_LAUNCHER;
-                            let obj7 = { initialRouteName: null, initiallyExpanded: true, applicationId: null, installOnDemand: true };
+                            const obj7 = { initialRouteName: null, initiallyExpanded: true, applicationId: null, installOnDemand: true };
                             user = AppLauncherRouteName;
                             obj7[0] = AppLauncherRouteName.APPLICATION_VIEW;
                             obj7[2] = message.applicationId;
@@ -1357,7 +1357,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                       user = importDefault;
                       const obj8 = { author: null, channelId: null, chatInputRef: null, messageId: null, user: null, applicationUser: null, guildId: null, messageType: null };
                       user = showExecutedApplicationCommandPopoutDefault;
-                      obj8[0] = user(4747).getUserAuthor(message.interaction.user, messageChannel);
+                      obj8[0] = user(4754).getUserAuthor(message.interaction.user, messageChannel);
                       obj8[1] = data.messageChannelId;
                       obj8[2] = chatInputRef;
                       obj8[3] = data.messageId;
@@ -1373,7 +1373,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                       obj8[6] = guildId;
                       obj8[7] = data.messageType;
                       user(obj8);
-                      const userResult = user(4747);
+                      const userResult = user(4754);
                     }
                   }
                   obj24 = canViewInteractionInfo;
@@ -1381,9 +1381,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               }
             }
           break;
-          case "Q8gkVL":
+          case "PREMIUM_TIER_0_HEADER_GRADIENT_2":
           break;
-          case "accessibleDismiss":
+          case "Role":
             const application1 = application.getApplication(data.applicationUserId);
             if (chatInputRef != null) {
               const current2 = chatInputRef.current;
@@ -1408,9 +1408,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               }
             }
           break;
-          case "accessibleDismissStyle":
+          case "RoleFlags":
           break;
-          case "ble":
+          case "scrollTargetPinnedRange":
             const channel = store.getChannel(data.threadId);
             if (null != channel) {
               guild_id = undefined;
@@ -1420,25 +1420,25 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               user(guild_id, channel.id, constants3.EMBED);
             }
           break;
-          case "leg_tone3":
+          case "getAvailablePlanForItems":
           break;
-          case "FAB_BUTTON_SIZE":
-            obj7 = trackInviteDefault;
-            ({ targetChannelId: obj9[0], targetMessageId: obj9[1], messageId: obj9[3] } = data);
-            obj7.jumpToMessage({ channelId: null, messageId: null, flash: true, returnMessageId: null });
-            const obj13 = { channelId: null, messageId: null, flash: true, returnMessageId: null };
+          case "bundlePreviewContainer":
+            obj6 = trackInviteDefault;
+            obj13 = { channelId: null, messageId: null, flash: true, returnMessageId: null };
+            ({ targetChannelId: obj8[0], targetMessageId: obj8[1], messageId: obj8[3] } = data);
+            obj6.jumpToMessage(obj13);
           break;
-          case "minWidth":
+          case "reviewContainer":
           break;
-          case "pad":
-            obj5 = transitionTo;
-            obj5.transitionTo(closure_14.CHANNEL(data.guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
-            obj6 = identityHook;
-            const result3 = obj6.trackRoleSubscriptionPurchaseMessageTierClick(data.guildId, data.channelId, data.messageId, data.roleSubscriptionListingId);
+          case "viewContainerStyle":
+            obj4 = transitionTo;
+            obj4.transitionTo(closure_14.CHANNEL(data.guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
+            obj5 = identityHook;
+            const result3 = obj5.trackRoleSubscriptionPurchaseMessageTierClick(data.guildId, data.channelId, data.messageId, data.roleSubscriptionListingId);
           break;
-          case "ad":
+          case "accessibleDismiss":
           break;
-          case "adding":
+          case "accessibleDismissStyle":
             const channel1 = store.getChannel(data.message.channel_id);
             let guild_id1;
             if (channel1 != null) {
@@ -1446,10 +1446,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
             }
             if (null != guild_id1) {
               const notificationType2 = data.notificationType;
+              user = NotificationTypes;
               if (NotificationTypes.TRENDING_CONTENT_PUSH === notificationType2) {
-                obj3 = openGuildHighlightNotificationForPush;
+                obj2 = openGuildHighlightNotificationForPush;
                 ({ message: message2, notificationType } = data);
-                MESSAGE_EMBED = constants.MESSAGE_EMBED;
+                const MESSAGE_EMBED = constants.MESSAGE_EMBED;
                 const selectedSummaryResult = closure_6.selectedSummary(data.message.channel_id);
                 let str2;
                 if (selectedSummaryResult != null) {
@@ -1458,34 +1459,34 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                 if (str2 == null) {
                   str2 = "unknown";
                 }
-                action = { summary_id: null };
-                action[0] = str2;
-                const result4 = obj3.openGuildHighlightNotificationForPush(guild_id1, message2, notificationType, MESSAGE_EMBED, action);
-              } else if (tmp99.TOP_MESSAGE_PUSH === notificationType2) {
-                obj2 = openGuildHighlightNotificationForPush;
-                const result5 = obj2.openGuildHighlightNotificationForPush(guild_id1, data.message, data.notificationType, constants.MESSAGE_EMBED);
+                obj14 = { summary_id: null };
+                obj14[0] = str2;
+                const result4 = obj2.openGuildHighlightNotificationForPush(guild_id1, message2, notificationType, MESSAGE_EMBED, obj14);
+              } else if (user.TOP_MESSAGE_PUSH === notificationType2) {
+                obj1 = openGuildHighlightNotificationForPush;
+                const result5 = obj1.openGuildHighlightNotificationForPush(guild_id1, data.message, data.notificationType, constants.MESSAGE_EMBED);
               } else {
                 user = require;
                 user = dependencyMap;
                 user = importDefault;
-                user = asyncRequireImpl(11459, dependencyMap.paths);
-                MESSAGE_EMBED = { location: null, messageId: null, notificationType: null };
-                action = constants;
-                MESSAGE_EMBED[0] = action.MESSAGE_EMBED;
-                MESSAGE_EMBED[1] = data.message.id;
+                user = asyncRequireImpl(11578, dependencyMap.paths);
+                const obj15 = { location: null, messageId: null, notificationType: null };
+                user = constants;
+                obj15[0] = constants.MESSAGE_EMBED;
+                obj15[1] = data.message.id;
                 let TOP_MESSAGE_PUSH = data.notificationType;
                 if (TOP_MESSAGE_PUSH == null) {
-                  TOP_MESSAGE_PUSH = tmp99.TOP_MESSAGE_PUSH;
+                  TOP_MESSAGE_PUSH = user.TOP_MESSAGE_PUSH;
                 }
-                MESSAGE_EMBED[2] = TOP_MESSAGE_PUSH;
-                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(user, "NotificationSurvey", MESSAGE_EMBED);
-                const obj23 = ACTION_SHEET_HEIGHT_HALFDefault;
+                obj15[2] = TOP_MESSAGE_PUSH;
+                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(user, "NotificationSurvey", obj15);
+                const obj22 = ACTION_SHEET_HEIGHT_HALFDefault;
               }
             }
           break;
-          case "dd":
+          case "ble":
           break;
-          case "din":
+          case "leg_tone3":
             if (chatInputRef != null) {
               const current = chatInputRef.current;
               if (current != null) {
@@ -1496,6 +1497,20 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                 current.insertText(data.text, null, flag);
               }
             }
+          break;
+          case "FAB_BUTTON_SIZE":
+          break;
+          case "minWidth":
+          break;
+          case "pad":
+          break;
+          case "ad":
+          break;
+          case "adding":
+          break;
+          case "dd":
+          break;
+          case "din":
           break;
           case "z":
           break;
@@ -1509,11 +1524,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "paddingVertical":
           break;
-          case "getVideoQoEMetricsConfig":
+          case "SETTINGS_CHANGELOG":
           break;
-          case "UNKNOWN_PAYMENT_SOURCE":
+          case "GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_JOINED":
           break;
-          case "PAYMENT_SOURCE_REQUIRED":
+          case "PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED":
+          break;
+          case "MISC":
           break;
           case "RED_NEW_34":
           break;
@@ -1531,7 +1548,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ms":
           break;
-          case "loadTimeCollector":
+          case "USER_SETTINGS_SEARCH_PRESS":
+          break;
+          case "PRESS_ADD_COMMENTARY":
+          break;
+          case "COMMENTARY_EDITED":
           break;
           case "GuildEntityDao":
           break;
@@ -1539,7 +1560,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Dao":
           break;
-          case "renderLatestMessages":
+          case "unableToSyncDeletes":
+          break;
+          case "gradientOverride":
+          break;
+          case "renderOptions":
           break;
           case "app":
           break;
@@ -1557,21 +1582,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "io":
           break;
-          case "showHelp":
+          case "showGuildEventModeratorActionSheet":
           break;
-          case "HelpMessage":
-          break;
-          case "HelpMessageTypes":
-          break;
-          case "MessageTypesWithLazyLoadedReferences":
+          case "GuildEventModeratorAction":
           break;
           case "_applyCombination":
           break;
           case "ly":
-          break;
-          case "trequest":
-          break;
-          case "requestActivityItems":
           break;
           case "backoffTimeSec":
           break;
@@ -1595,11 +1612,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "gn":
           break;
-          case "map_of_japan":
-          break;
-          case "japan":
-          break;
-          case "japanese_castle":
+          case "acceptedRequestLabel":
           break;
           case "foi":
           break;
@@ -1623,13 +1636,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Color":
           break;
-          case "ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT":
+          case "ACTIVITY_LAUNCH_UNKNOWN_CHANNEL":
           break;
-          case "EXPERIMENT":
+          case "UNKNOWN":
           break;
-          case "EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS":
+          case "UNKNOWN_CHANNEL":
           break;
-          case "SPECTATOR_MODE":
+          case "DISCORD_CONSENT":
           break;
           case "_listRef":
           break;
@@ -1641,9 +1654,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "HeaderSubmittingIndicator":
           break;
-          case "_sessionValue":
-          break;
-          case "onValueReached":
+          case "onViewAllSelected":
           break;
           case "_bodyArrayBuffer":
           break;
@@ -1662,6 +1673,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "Radius":
           break;
           case "iu":
+          break;
+          case "maxE":
           break;
           case "isCurrentUserTeen":
           break;
@@ -1705,6 +1718,16 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "nn":
           break;
+          case "isExtensionAnimated":
+          break;
+          case "addMembersContainer":
+          break;
+          case "r_mark_yUz$esjava$0":
+          break;
+          case "CRUNCHYROLL_LINK_DEST_ORIGIN":
+          break;
+          case "ORIGIN":
+          break;
           case "isSelf":
           break;
           case "isSelfDeaf":
@@ -1729,11 +1752,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ren":
           break;
-          case "_longestInteractionMap":
-          break;
-          case "applicationTopWrapperScrollView":
-          break;
-          case "onTop":
+          case "authorRow":
           break;
           case "wMWyci":
           break;
@@ -1741,15 +1760,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ix8XIj":
           break;
-          case "ClientOutdatedAcceptGiftError":
-          break;
-          case "td":
-          break;
-          case "Accept":
-          break;
           case "uni":
           break;
           case "Version":
+          break;
+          case "endTime_":
+          break;
+          case "me_burst":
+          break;
+          case "burst":
           break;
           case "burst_colors":
           break;
@@ -1759,13 +1778,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "rs":
           break;
-          case "isAutomatedPageLoadSpan":
+          case "isAudioRouteEnabled":
           break;
-          case "kiss_tone2":
-          break;
-          case "timeoutTimer":
-          break;
-          case "merman_medium_light_skin_tone":
+          case "isOGG":
           break;
           case "addUserId":
           break;
@@ -1775,11 +1790,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "concatSettings":
           break;
-          case "substreams":
-          break;
-          case "streams":
-          break;
-          case "jfif":
+          case "subscriptionRoleId":
           break;
           case "$constructor":
           break;
@@ -1797,18 +1808,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "windowLength":
           break;
-          case "LaunchApplication15":
-          break;
-          case "minutes":
-          break;
-          case "minutesAgo":
-          break;
-          case "goLiveUpsellVariant":
-          break;
-          case "trackUserProfileAction":
-          break;
-          case "useGetOrFetchSubscriptionPlan":
-          break;
           case "_container":
           break;
           case "contain":
@@ -1818,6 +1817,18 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "ai":
           break;
           case "ner":
+          break;
+          case "hasAction":
+          break;
+          case "hasActionSheetOpen":
+          break;
+          case "numFinished":
+          break;
+          case "channelContainer":
+          break;
+          case "output_text":
+          break;
+          case "MagicWandIcon":
           break;
           case "creative_content":
           break;
@@ -1835,27 +1846,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "contextBarRow":
           break;
-          case "withAlphabeticalSections":
+          case "withActiveSpan":
           break;
-          case "man_with_turban":
+          case "is_first_party":
           break;
-          case "man_with_turban_tone1":
+          case "party":
           break;
-          case "_installSetStateHooks":
-          break;
-          case "install":
-          break;
-          case "SafetyBookletSpotIllustration":
-          break;
-          case "flag_ug":
-          break;
-          case "USER_FLOW_TRANSITION":
-          break;
-          case "getConstants":
-          break;
-          case "getConstantsForViewManager":
-          break;
-          case "parseUnicodeLocaleId":
+          case "partyId":
           break;
           case "enablePanDownToClose":
           break;
@@ -1865,17 +1862,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Badge":
           break;
-          case "getActiveTab":
+          case "trialSubText":
           break;
-          case "getActiveTabId":
+          case "trialSubTextContainer":
+          break;
+          case "getAdTrafficMetadataSealed":
           break;
           case "cr":
           break;
           case "les":
-          break;
-          case "connectionMetadata":
-          break;
-          case "connectionMetadataField":
           break;
           case "message_type":
           break;
@@ -1887,23 +1882,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "currentAppIcon":
           break;
-          case "containerForFiveButtonLayout":
+          case "containerInfo":
           break;
-          case "onLayoutChange":
+          case "foot_tone3":
           break;
-          case "getAssetDisplayConfig":
+          case "exclusions":
           break;
-          case "AssetDisplayConfigRecord":
-          break;
-          case "destination":
-          break;
-          case "destinationKey":
-          break;
-          case "onKeyCommand":
-          break;
-          case "unread_count":
-          break;
-          case "setHasInvalidUrlError":
+          case "settingsContainer":
           break;
           case "_$esjava$cursor":
           break;
@@ -1911,13 +1896,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "so":
           break;
-          case "THROUGHLINE_URL":
+          case "binding":
           break;
-          case "propList":
-          break;
-          case "strm":
-          break;
-          case "NitroRubyBadgeLargeBadge":
+          case "NitroSupergraphicLogo":
           break;
           case "_clientSdkMetadata":
           break;
@@ -1929,9 +1910,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "dddd":
           break;
-          case "RELATIONSHIP_INVALUD_USER_BOT":
+          case "columnNumber":
+          break;
+          case "nativeRow":
+          break;
+          case "withoutXY":
           break;
           case "__defaultLocale":
+          break;
+          case "_default":
           break;
           case "def":
           break;
@@ -1953,17 +1940,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "fin":
           break;
-          case "NitroWumpusFlightUpwards3dIllustration":
+          case "unwrap":
           break;
-          case "prepareStackTrace":
-          break;
-          case "nand":
-          break;
-          case "doUpload":
-          break;
-          case "UploadErrorUpload":
-          break;
-          case "UploadErrorProgress":
+          case "flag_km":
           break;
           case "undelete":
           break;
@@ -1979,11 +1958,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "startMs":
           break;
-          case "shouldUseAnimatedObjectForTransform":
+          case "shouldTrackRichPresenceInviteEmbedViews":
           break;
-          case "formText":
+          case "kiss_woman_man_tone2_tone3":
           break;
-          case "extractFeMerge":
+          case "VIBEGRATIONS_PROJECT_REMIX_TICKET":
           break;
           case "avatar_description":
           break;
@@ -2007,7 +1986,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "pt":
           break;
-          case "isParentModal":
+          case "isOnReverseTrial":
           break;
           case "aria-disabled":
           break;
@@ -2023,21 +2002,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "interestedIcon":
           break;
-          case "contentRow":
+          case "contentSelectPlan":
           break;
-          case "withAffinitySuggestions":
+          case "couple_with_heart":
           break;
-          case "AffinitySuggestions":
+          case "couple_with_heart_dark_skin_tone":
           break;
-          case "ffi":
-          break;
-          case "ug":
-          break;
-          case "lady_beetle":
-          break;
-          case "beetle":
-          break;
-          case "paymentGatewaySubscriptionId":
+          case "paypalEnabled":
           break;
           case "_dispatch":
           break;
@@ -2053,9 +2024,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "tc":
           break;
-          case "briefs":
+          case "_performanceLogger":
           break;
-          case "renderActivityInviteEmbed":
+          case "sanitizeEmbed":
           break;
           case "time_to_full_display":
           break;
@@ -2085,7 +2056,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "renderConfirmButton":
           break;
-          case "LhlgY9":
+          case "createStripeSetupIntent":
+          break;
+          case "createdAt":
+          break;
+          case "createdAtMs":
+          break;
+          case "swatch":
+          break;
+          case "swatchSelected":
           break;
           case "toExpPos":
           break;
@@ -2121,9 +2100,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "enable":
           break;
-          case "shouldShowAgeGateForVoiceChannel":
-          break;
-          case "SYSTEM_PANEL":
+          case "shouldRestrictUpdatingCreatorMonetizationSettings":
           break;
           case "@braintree/extended-promise":
           break;
@@ -2152,8 +2129,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "era":
           break;
           case "referrerPolicy":
-          break;
-          case "safetyTips":
           break;
           case "../../../lib/braintree-error":
           break;
@@ -2193,12 +2168,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ts":
           break;
-          case "UnauthenticatedReportNames":
-          break;
-          case "auth":
-          break;
-          case "authenticated":
-          break;
           case "fil":
           break;
           case "file":
@@ -2211,9 +2180,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ServerIconLilQuackSPondverseExample":
           break;
-          case "_cleanupSocket":
+          case "GiftingTier6LargeBadge":
           break;
-          case "SocketEvent":
+          case "forwardRef":
           break;
           case "EntitlementTenantFulfillmentStatus":
           break;
@@ -2221,7 +2190,17 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "__findAnimatedPropsNodes":
           break;
-          case "MAX_VISIBLE_PAGES":
+          case "channel_overrides":
+          break;
+          case "overrides":
+          break;
+          case "overridesFormatted":
+          break;
+          case "MONOCHROME":
+          break;
+          case "CHROME":
+          break;
+          case "MEMBER_LIST_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES":
           break;
           case "system_channel_flags":
           break;
@@ -2241,9 +2220,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "oldestUnreadMessageIdStale":
           break;
-          case "addPerformanceInstrumentationHandler":
-          break;
-          case "handleTapGuildEventInvite":
+          case "addPageListener":
           break;
           case "fo":
           break;
@@ -2261,23 +2238,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "phone":
           break;
-          case "pointerType":
+          case "videoStoppedReason":
           break;
-          case "MOP":
+          case "remoteAddress":
           break;
-          case "OPACITY_BLACK_1":
-          break;
-          case "OPACITY_BLACK_12":
-          break;
-          case "parentElement":
-          break;
-          case "fakeScopeIcon":
-          break;
-          case "containerSearchBar":
-          break;
-          case "touchableHandleResponderTerminationRequest":
-          break;
-          case "onRequestSend":
+          case "favoriteGuildVisibleSetting":
           break;
           case "getChannelA11yHint":
           break;
@@ -2305,11 +2270,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "current_guild_id":
           break;
-          case "getContacts":
+          case "getConsoleIconForVoicePlatform":
           break;
-          case "FAMILY_CENTER_CONNECTION":
+          case "VoicePlatforms":
           break;
-          case "FAMILY_CENTER_CONNECTION_PREREQUISITES":
+          case "selectionStates":
           break;
           case "hasDiversity":
           break;
@@ -2323,9 +2288,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "DefaultGuildsRestrictedV2":
           break;
-          case "getMentionChannelIds":
-          break;
-          case "isWishlistOwner":
+          case "getMentionGames":
           break;
           case "avatar_hash":
           break;
@@ -2335,9 +2298,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "bhd":
           break;
-          case "INVITE_RESOLVE_SUCCESS":
+          case "INVITE_RESOLVE":
           break;
-          case "mother_christmas_tone4":
+          case "INVITE_RESOLVED":
+          break;
+          case "connectionsList":
           break;
           case "_header":
           break;
@@ -2351,11 +2316,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "FAMILY_CENTER_ERROR_CODE_TO_FAILURE":
           break;
-          case "REACTIVATION_OFFER_REDEEM":
+          case "REACT_COMPILER":
           break;
-          case "REDEEM_REWARD":
+          case "RPC_VIDEO_WRITE":
           break;
-          case "IMAGE_VIDEO_DATA_SETTINGS_UPDATED":
+          case "TREATMENT_B":
+          break;
+          case "getChannelRecords":
           break;
           case "player_height":
           break;
@@ -2367,13 +2334,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ht":
           break;
-          case "withMutualFriends":
+          case "withMonitor":
           break;
-          case "withMutualFriendsCount":
-          break;
-          case "FacebookNeutralIcon":
-          break;
-          case "advancedMode":
+          case "addNode":
           break;
           case "debugLogCs2GsiPayload":
           break;
@@ -2397,35 +2360,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "icons":
           break;
-          case "accessPermissions":
+          case "strategy":
           break;
-          case "shovel":
+          case "getFramesToPop":
           break;
-          case "handleCallback":
+          case "starSmall":
           break;
-          case "handleCallbackErrors":
+          case "allMediaResults":
           break;
-          case "CallbackError":
-          break;
-          case "USER_SETTINGS_MODAL_OPEN":
-          break;
-          case "OPEN_APP_LAUNCHER":
-          break;
-          case "APP_LAUNCHER":
-          break;
-          case "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED":
-          break;
-          case "DCDNotificationManager":
-          break;
-          case "videoProgress":
-          break;
-          case "handleAnnouncementMessageViewTracking":
-          break;
-          case "MessageViewTrackingType":
-          break;
-          case "person_with_ball_tone5":
+          case "showConfirmModal":
           break;
           case "_include":
+          break;
+          case "_includes":
           break;
           case "inc":
           break;
@@ -2441,7 +2388,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "origin_pane":
           break;
-          case "related_user_id":
+          case "rejectResponderTermination":
           break;
           case "__internalInstanceHandle":
           break;
@@ -2461,8 +2408,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "deleteKeyFromRecyclePool":
           break;
-          case "getGuildFlags":
-          break;
           case "pronouns":
           break;
           case "pronounsAccessibilityHint":
@@ -2473,7 +2418,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "tl":
           break;
-          case "getAnyStreamForUser":
+          case "getAnyErrorMessage":
+          break;
+          case "getAnyErrorMessageAndField":
           break;
           case "activity_items":
           break;
@@ -2482,6 +2429,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "_itemsForType":
           break;
           case "item":
+          break;
+          case "bow_tone3":
           break;
           case "activeUnjoinedThreads":
           break;
@@ -2511,9 +2460,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Content":
           break;
-          case "checkContactPermissions":
-          break;
-          case "ContactPermissions":
+          case "checkoutInitParameters":
           break;
           case "showThreadNotificationsBottomSheet":
           break;
@@ -2525,21 +2472,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ke":
           break;
-          case "templatePair":
+          case "useStorekitResubscribe":
           break;
-          case "isLurking":
-          break;
-          case "getInternalState":
-          break;
-          case "confettiColors":
-          break;
-          case "subtitleTrailing":
-          break;
-          case "getLengthableOrigin":
-          break;
-          case "inExperiment":
-          break;
-          case "trailingItem":
+          case "subscribeFromItem":
           break;
           case "embedded_activity_location_kind":
           break;
@@ -2547,13 +2482,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "kin":
           break;
-          case "hasTrackedDisabledAndroidNotifChannels":
+          case "deleteNodeOnBackspace":
           break;
           case "Backspace":
           break;
-          case "BackspaceIcon":
+          case "spacer":
           break;
-          case "cardHeight":
+          case "spacerStyle":
           break;
           case "aria-label":
           break;
@@ -2563,19 +2498,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "byAppEntry":
           break;
-          case "tryItOutAvatarDecoration":
-          break;
-          case "GDM_JOIN":
-          break;
-          case "JOIN_STUDENT_HUB":
-          break;
-          case "CHANNEL_DRAWER_SPACING":
-          break;
-          case "CONTROLLER":
-          break;
-          case "CONTROLLER_SUPPORT":
-          break;
-          case "SUPPORTS_JOIN_URL":
+          case "tryItOutBanner":
           break;
           case "Buf8":
           break;
@@ -2585,11 +2508,31 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "lcq":
           break;
+          case "HYPESQUAD":
+          break;
+          case "HYPESQUAD_HOUSE_1":
+          break;
+          case "HOUSE_1":
+          break;
+          case "analyticsLocationStack":
+          break;
+          case "location_page":
+          break;
+          case "page up":
+          break;
+          case "up_left_arrow":
+          break;
+          case "left_arrow":
+          break;
           case "arrow_left":
           break;
           case "leftBoundary":
           break;
-          case "marginPanels":
+          case "garlic":
+          break;
+          case "selectedColor":
+          break;
+          case "selectedColors":
           break;
           case "_$esjava$I_length":
           break;
@@ -2607,23 +2550,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "disableImageViewPreallocationAndroid":
           break;
-          case "stopCleanup":
+          case "cheese":
           break;
-          case "updateChannel":
+          case "cheese_wedge":
           break;
-          case "updateChannelDimensions":
+          case "edgeMode":
+          break;
+          case "defaultMessageNotifications":
           break;
           case "load":
           break;
           case "J":
           break;
-          case "setDate":
-          break;
-          case "openMemberVerificationSuccessAlert":
-          break;
-          case "userGuildSettings":
-          break;
-          case "userGuildSettingsTransaction":
+          case "setDebugTrackedData":
           break;
           case "action_location":
           break;
@@ -2651,57 +2590,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "matchAnyPattern":
           break;
-          case "MOBILE_SEGMENTED_CONTROL_BACKGROUND":
-          break;
-          case "BACKGROUND_SAVED":
-          break;
-          case "SAVED":
-          break;
-          case "SAVED_BOOKMARKS_MAX":
-          break;
-          case "BOOKMARKS":
-          break;
-          case "MAX_ATTACHMENT_UPLOAD_COUNT":
-          break;
-          case "TOO_MANY_ANNOUNCEMENT_THREADS":
-          break;
-          case "ANNOUNCEMENT_THREAD":
-          break;
-          case "identifyWebSocket":
-          break;
-          case "CONVERSATION_HAS_MORE_EXPIRATION_MS":
-          break;
-          case "SHOP_THIS_LOOK_WEB_MARKETING":
-          break;
-          case "LOAD_MORE_AFTER":
-          break;
-          case "RN_GLOBAL_OBJ":
-          break;
-          case "GLOBAL_OBJ":
-          break;
-          case "OBJECTS":
-          break;
-          case "BJ":
-          break;
-          case "micros":
-          break;
-          case "microscope":
-          break;
-          case "scopeContainer":
-          break;
           case "heap_max":
           break;
           case "_max":
           break;
-          case "_maxListeners":
+          case "_maxLength":
           break;
-          case "maxListeners":
+          case "maxLength":
           break;
-          case "shouldShowRoleDot":
-          break;
-          case "bvu":
-          break;
-          case "vu":
+          case "maxLengthIndicator":
           break;
           case "__memo":
           break;
@@ -2739,10 +2636,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "lineHeight":
           break;
-          case "VibingWumpusSpotIllustration":
-          break;
-          case "bin":
-          break;
           case "Omnibutton":
           break;
           case "OmnibuttonCoachmarkRive":
@@ -2752,6 +2645,14 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "nib":
           break;
           case "button":
+          break;
+          case "footerPortrait":
+          break;
+          case "trait":
+          break;
+          case "voicePanelsFullscreen":
+          break;
+          case "screenIsLandscape":
           break;
           case "Ambient":
           break;
@@ -2769,21 +2670,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "nam":
           break;
-          case "namesLegacy":
+          case "LegacyRawButton":
           break;
-          case "LegacyBaseButton":
+          case "RawButton":
           break;
-          case "BaseButton":
-          break;
-          case "getEmbedColor":
-          break;
-          case "hasVariant":
+          case "hasNewContent":
           break;
           case "track_next":
           break;
           case "_nextChannelId":
           break;
           case "didRetrySilentInitialScroll":
+          break;
+          case "BounceOutLeft":
           break;
           case "snapToAlignment":
           break;
@@ -2796,8 +2695,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "Unknown":
           break;
           case "kn":
-          break;
-          case "$i":
           break;
           case "$input":
           break;
@@ -2823,7 +2720,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "res":
           break;
-          case "relativeReceptionDelay":
+          case "relationship_type":
           break;
           case "_opacityActive":
           break;
@@ -2831,39 +2728,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "city":
           break;
-          case "emitPlayerReady":
+          case "emitTimeout":
           break;
-          case "FORUM_THREAD_CREATED":
-          break;
-          case "THREAD_CREATE":
-          break;
-          case "THREAD_CREATED":
-          break;
-          case "MESSAGE_REACTION_REMOVE_EMOJI":
-          break;
-          case "REMOVE_EMOJI_REACTIONS":
-          break;
-          case "EMOJI_RE":
-          break;
-          case "EMOJI_REACTION":
-          break;
-          case "EMOJI_REACTIONS_ON_MESSAGES":
-          break;
-          case "MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END":
-          break;
-          case "pfxLeft":
-          break;
-          case "CHAT_INPUT_PILL_BORDER_WIDTH":
-          break;
-          case "THUMBHASH":
-          break;
-          case "SHAKE_STEP_DIVIDER":
-          break;
-          case "DIVIDER_COLORS":
-          break;
-          case "SPACE_XL":
-          break;
-          case "XLink":
+          case "claimed_at":
           break;
           case "gift_info_options":
           break;
@@ -2887,7 +2754,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "hashes":
           break;
-          case "isChannelOwner":
+          case "_observationTargets":
           break;
           case "preview_asset_paths":
           break;
@@ -2923,9 +2790,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "outerRow":
           break;
-          case "woman_and_man_holding_hands_medium_skin_tone_medium_light_skin_tone":
+          case "woman_and_man_holding_hands_medium_light_skin_tone_medium_skin_tone":
           break;
-          case "isBrowserOpen":
+          case "isAnyVoicePanelOpen":
           break;
           case "FePointLight":
           break;
@@ -2937,7 +2804,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "prototypeInitialized":
           break;
-          case "openMFAModal":
+          case "lastCursorTimestamp":
+          break;
+          case "parseEnvelope":
+          break;
+          case "openGuildVoiceModal":
           break;
           case "_pushCells":
           break;
@@ -2981,19 +2852,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "isCamera":
           break;
-          case "numOfAttachments":
-          break;
-          case "numOfAttachmentsPendingScan":
-          break;
-          case "canAcceptInvite":
-          break;
-          case "setFrecencySectionSelection":
-          break;
-          case "onSelectionOrTextChange":
-          break;
-          case "getAttachmentUploadAbortAlertContent":
-          break;
-          case "trackImpression":
+          case "couple_with_heart_mm":
           break;
           case "kiss_person_person_medium_dark_skin_tone_dark_skin_tone":
           break;
@@ -3011,25 +2870,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "sul":
           break;
-          case "hideIcon":
-          break;
-          case "containsVideo":
-          break;
-          case "VideoSpinnerContext":
-          break;
-          case "inner":
-          break;
-          case "textMedium":
-          break;
-          case "maybeConfirmFriendRequestAccept":
-          break;
           case "getBrightness":
           break;
           case "BrightnessDown":
           break;
           case "ownerId":
           break;
-          case "addFrame":
+          case "removeFrame":
           break;
           case "run":
           break;
@@ -3038,10 +2885,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "scale":
           break;
           case "ale":
-          break;
-          case "streamEmptyImage":
-          break;
-          case "getBadgeTooltip":
           break;
           case "shape":
           break;
@@ -3061,12 +2904,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "skuIds":
           break;
-          case "woman_farmer_tone3":
-          break;
-          case "man_farmer_tone3":
-          break;
-          case "farmer_tone3":
-          break;
           case "fromByteArray":
           break;
           case "sl":
@@ -3077,13 +2914,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "minPressDuration":
           break;
-          case "getGameRelationships":
+          case "getGenreText":
           break;
-          case "getGameRelationshipsByType":
-          break;
-          case "CheckmarkLargeBoldIcon":
-          break;
-          case "old":
+          case "extractMediaSourcesFromEmbed":
           break;
           case "isPerformanceResourceTiming":
           break;
@@ -3105,9 +2938,21 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "centroidDimension":
           break;
-          case "onLoadEnd":
+          case "onJumpToMedia":
+          break;
+          case "MediaSkipBackward":
+          break;
+          case "Skip":
+          break;
+          case "kip":
+          break;
+          case "AUDIO_TOGGLE_SELF_DEAF":
+          break;
+          case "DEAF":
           break;
           case "_splitColorsIntoChannels":
+          break;
+          case "purchase_token":
           break;
           case "MMlhsr":
           break;
@@ -3121,13 +2966,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "INPUT_FIELD_TEXT_STYLE_MD":
           break;
+          case "hasTakenDecoupledClip":
+          break;
           case "ClipsRecordingRestartNeeded":
           break;
           case "star":
           break;
           case "art":
-          break;
-          case "clearFormData":
           break;
           case "client_app_state":
           break;
@@ -3139,15 +2984,17 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "stateActionComplete":
           break;
-          case "woman_climbing_medium_light_skin_tone":
+          case "woman_cartwheeling_tone5":
           break;
-          case "man_climbing_medium_light_skin_tone":
+          case "man_cartwheeling_tone5":
           break;
           case "appeal_status":
           break;
           case "_status":
           break;
           case "statusAllowsPerks":
+          break;
+          case "HOIST":
           break;
           case "_$esjava$s":
           break;
@@ -3165,6 +3012,10 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "string_id":
           break;
+          case "CUSTOM_GIFT":
+          break;
+          case "CUSTOM_GIFT_MESSAGE_MAX_LENGTH":
+          break;
           case "DEPRECATED_style":
           break;
           case "_style":
@@ -3173,9 +3024,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "styleAttr":
           break;
-          case "surrogate":
+          case "embedId":
           break;
-          case "surrogatesFrame":
+          case "embedIds":
+          break;
+          case "surrogate":
           break;
           case "rog":
           break;
@@ -3191,6 +3044,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "Prompt":
           break;
+          case "_createExtraStyles":
+          break;
           case "canSend":
           break;
           case "canSendGuildOfficialMessages":
@@ -3201,11 +3056,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "person_walking_facing_right_tone2":
           break;
-          case "client-id":
+          case "flag_ae":
           break;
-          case "discounted":
+          case "IRRELEVANT_USER":
           break;
-          case "discountedPlan":
+          case "USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE":
+          break;
+          case "DEoVWZ":
+          break;
+          case "XAkOo2":
+          break;
+          case "Soft2":
+          break;
+          case "t2":
           break;
           case "epochAuthenticator":
           break;
@@ -3217,23 +3080,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "priceId":
           break;
-          case "storeToken":
-          break;
-          case "enableIntegrityCheck":
-          break;
-          case "SceneView":
-          break;
           case "EntitlementFeatureNames":
           break;
-          case "EMOJI_UPLOAD_STARTED":
-          break;
-          case "INCIDENT_TIMESTAMP":
-          break;
-          case "TIMESTAMPS":
-          break;
-          case "willReconnect":
-          break;
-          case "setPreventRemove":
+          case "useOnPreventRemove":
           break;
           case "moveInto":
           break;
@@ -3245,15 +3094,25 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "$":
           break;
-          case "nextIndex":
+          case "flag_to":
+          break;
+          case "_toLowerCase":
           break;
           case "ase":
           break;
-          case "transformOrigin":
+          case "deleteVerification":
           break;
-          case "isTouchWithinInset":
+          case "VerificationVendorName":
           break;
-          case "setBigUint64":
+          case "implySimilarTime":
+          break;
+          case "flying_saucer":
+          break;
+          case "sau":
+          break;
+          case "_uint64":
+          break;
+          case "uint64":
           break;
           case "int64toString":
           break;
@@ -3279,9 +3138,29 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "rac":
           break;
-          case "shouldUseMobileWebRedirectCheckout":
+          case "shouldTriggerResponderTransferOnScrollAndroid":
           break;
-          case "MobileWebRedirectCheckoutDeepLinkQueryKeys":
+          case "shareURI":
+          break;
+          case "RIOT":
+          break;
+          case "RIOT_CONNECTION_DEPRECATION":
+          break;
+          case "RIOT_CONNECTION_DEPRECATION_ADMIN":
+          break;
+          case "IOT":
+          break;
+          case "ACTIVITY_LAUNCH_INVALID_USER_NO_ACCESS_TO_ACTIVITY":
+          break;
+          case "ACTIVITY_APPLICATION_HOST":
+          break;
+          case "APPLICATION":
+          break;
+          case "HOSTED_FIELDS_ATTRIBUTE_NOT_SUPPORTED":
+          break;
+          case "SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES":
+          break;
+          case "TEXT_CHANNEL_TYPES":
           break;
           case "_transformMetadataToCamelCase":
           break;
@@ -3289,17 +3168,33 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "mel":
           break;
-          case "APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED":
+          case "searchTokenType":
+          break;
+          case "sim":
+          break;
+          case "similarGames":
+          break;
+          case "handleChannelUpdates":
+          break;
+          case "USER_SETTINGS_MODAL_OPEN":
+          break;
+          case "OPEN_APP_LAUNCHER":
+          break;
+          case "APP_LAUNCHER":
+          break;
+          case "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED":
           break;
           case "DCDSecurityKeyManager":
           break;
-          case "getSpamChannelIds":
+          case "guildOnboardingProgress":
           break;
           case "../lib/create-assets-url":
           break;
-          case "applicationCommands":
+          case "IN_APP_GUILD_TEMPLATES_MODAL_KEY":
           break;
-          case "INTERNAL_EMPLOYEE_ONLY":
+          case "GUILD_TEMPLATE":
+          break;
+          case "GUILD_TEMPLATES":
           break;
           case "useFocus":
           break;
@@ -3319,8 +3214,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "star2":
           break;
-          case "upsellContainer":
-          break;
           case "useEffectEvent":
           break;
           case "ff":
@@ -3329,19 +3222,21 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "CloudKeypadSpotIllustration":
           break;
-          case "scrollAnchor":
-          break;
-          case "flag_tv":
-          break;
-          case "tv":
-          break;
-          case "timeZoneOffsetInMinutes":
-          break;
           case "useMemoArray":
           break;
           case "Memo":
           break;
-          case "updatePersistentCodesEnabled":
+          case "ReactNative":
+          break;
+          case "ReactNativeBridgeEventPlugin":
+          break;
+          case "Plugin":
+          break;
+          case "lug":
+          break;
+          case "plugins":
+          break;
+          case "encodeDotInKeys":
           break;
           case "useStateFromStoresArray":
           break;
@@ -3351,7 +3246,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ore":
           break;
-          case "isLowPowerMode":
+          case "isFetchingRewardCode":
           break;
           case "default_thread_rate_limit_per_user":
           break;
@@ -3383,28 +3278,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "wait":
           break;
-          case "getClampedPIPPosition":
-          break;
-          case "PIP_WINDOW_OFFSET":
-          break;
-          case "pipY":
-          break;
-          case "pipState":
-          break;
-          case "ACTIVITY_PIP_SIZE":
-          break;
-          case "bottomAvoidanceRegion":
-          break;
-          case "dan":
-          break;
-          case "topAvoidanceRegion":
-          break;
-          case "pipAvoidanceSpecs":
-          break;
-          case "disableHorizontalSafeAreas":
-          break;
-          case "translateX":
-          break;
           case "base_variant_name":
           break;
           case "ia":
@@ -3427,8 +3300,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "tim":
           break;
-          case "FriendsIcon":
-          break;
           case "selected_time_window":
           break;
           case "win":
@@ -3437,7 +3308,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "dow":
           break;
-          case "getter":
+          case "soundPromise":
+          break;
+          case "setNotificationSettings":
+          break;
+          case "exit_description":
           break;
           case "transitionCleanUp":
           break;
@@ -3471,6 +3346,14 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "topBorderRadius":
           break;
+          case "flattenIssue":
+          break;
+          case "flattenIssuePath":
+          break;
+          case "thunder_cloud_rain":
+          break;
+          case "cloud_rain":
+          break;
           case "handleChannelRecipientAdd":
           break;
           case "\r":
@@ -3501,15 +3384,23 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "peers":
           break;
-          case "isTiffFile":
-          break;
-          case "channelCategoryName":
+          case "baseVariantName":
           break;
           case "#":
           break;
           case "#000000":
           break;
           case "00":
+          break;
+          case "$ZodIPv4":
+          break;
+          case "ZodIPv4":
+          break;
+          case "IPv4address":
+          break;
+          case "address":
+          break;
+          case "dress":
           break;
           case "#11806a":
           break;
@@ -3529,9 +3420,17 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "06":
           break;
-          case "trialSubText":
+          case "handshake_tone5_tone2":
           break;
-          case "trialSubTextContainer":
+          case "banner":
+          break;
+          case "bannerAdjustment":
+          break;
+          case "mentionBadge":
+          break;
+          case "imageBanner":
+          break;
+          case "unsafe_getResolvedRawColor":
           break;
           case "#2ecc71":
           break;
@@ -3539,11 +3438,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "GUILD_TOGGLE_COLLAPSE_MUTED":
           break;
-          case "merchant_account_id":
+          case "client_version":
+          break;
+          case "messageLoaded":
           break;
           case "#3498db":
           break;
-          case "packToScrollTo":
+          case "freezeCount":
+          break;
+          case "trackGuildRoomUpdated":
           break;
           case "#546e7a":
           break;
@@ -3555,33 +3458,43 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "#607d8b":
           break;
-          case "GUILD_ROOM_OBJECT_CREATE":
+          case "GUILD_ROOM_NOTE_OUTCOME":
           break;
-          case "CREATE_GUILD_VIEWED":
+          case "MEDIA_VIEWER_LINK_COPIED":
           break;
-          case "GUILD_VIEWED":
+          case "BeakerIllocon":
           break;
-          case "GUILD_VIEWED_CLICKSTREAM":
+          case "_forceFlush":
           break;
-          case "STREAM_BAD_NETWORK_QUALITY":
+          case "force":
           break;
-          case "IPC":
+          case "forceFlush":
           break;
-          case "IPCEvents":
+          case "../../lib/frame-service/external":
           break;
-          case "cardText":
+          case "fr":
           break;
-          case "extent":
+          case "frame":
           break;
-          case "extentCount":
+          case "ram":
           break;
-          case "trackForumSortOrderUpdated":
+          case "vi":
+          break;
+          case "external":
+          break;
+          case "woman_kneeling_facing_right_tone2":
+          break;
+          case "man_kneeling_facing_right_tone2":
+          break;
+          case "useCurrentUserCommunicationDisabled":
           break;
           case "#71368a":
           break;
-          case "useAllActionsCompleted":
-          break;
           case "#95a5a6":
+          break;
+          case "useComponentState":
+          break;
+          case "useComponentStateContext":
           break;
           case "#979c9f":
           break;
@@ -3595,10 +3508,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "aa":
           break;
-          case "onlineCount":
-          break;
-          case "HoldingGemSpotIllustration":
-          break;
           case "#9b59b6":
           break;
           case "b64ToDeclarativeSettingsProto":
@@ -3609,13 +3518,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "#a84300":
           break;
-          case "getMobileFinePrintMessageForApplication":
+          case "xyz":
+          break;
+          case "label_from":
+          break;
+          case "_fromValue":
+          break;
+          case "from":
           break;
           case "beforeSpanEnd":
           break;
           case "#ad1457":
           break;
-          case "fetchScheduledMessages":
+          case "getSystemVersionMinor":
           break;
           case "blockEnd":
           break;
@@ -3635,6 +3550,26 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "#e91e63":
           break;
+          case "isPremiumAtMost":
+          break;
+          case "MostCommonForumPostReaction":
+          break;
+          case "ReactionLocations":
+          break;
+          case "actionLocation":
+          break;
+          case "scrollPerfTag":
+          break;
+          case "CLIENT_SCRIPT_FAILED_TO_LOAD":
+          break;
+          case "LOAD_ARCHIVED_THREADS_SUCCESS":
+          break;
+          case "USER_PROFILE_CUSTOM_STATUS_BUBBLE":
+          break;
+          case "CUSTOM_STATUS_BUBBLE_BG":
+          break;
+          case "BUBBLE":
+          break;
           case "blockStart":
           break;
           case "#f1c40f":
@@ -3648,8 +3583,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "typeofJsonValue":
           break;
           case "onValueUpdated":
-          break;
-          case "categoryStyles":
           break;
           case "$ZodAny":
           break;
@@ -3665,6 +3598,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "onItemSizeChanged":
           break;
+          case "ProfileFrameLayerType":
+          break;
           case "formats":
           break;
           case "baa":
@@ -3678,10 +3613,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "$ZodArray":
           break;
           case "ZodArray":
-          break;
-          case "nativePhoneIntegrationEnabled":
-          break;
-          case "logoUrl":
           break;
           case "|":
           break;
@@ -3721,29 +3652,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "MRO":
           break;
-          case "RTC_PANEL":
-          break;
-          case "RTC_PANEL_HEIGHT":
-          break;
-          case "getNoiseSuppression":
-          break;
-          case "onVideoLoad":
-          break;
-          case "onVideoLoadStart":
-          break;
-          case "rtx_ssrc":
-          break;
-          case "ssrc":
-          break;
-          case "srcUnfurledMediaItem":
-          break;
-          case "UnfurledMediaItemFlags":
-          break;
-          case "fur":
-          break;
-          case "shouldPerformLatencyTest":
-          break;
-          case "showCreator":
+          case "RTC_PANEL_VIEWED":
           break;
           case "handleStoreChange":
           break;
@@ -3777,13 +3686,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "v4":
           break;
-          case "returnKeyLabel":
-          break;
-          case "boostCount":
-          break;
-          case "trackExposureToExperiment":
-          break;
-          case "setExperimentFlag":
+          case "setInPassiveListenerFlag":
           break;
           case "$ZodCIDRv6":
           break;
@@ -3835,6 +3738,10 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "SvgAst":
           break;
+          case "onFocusMessage":
+          break;
+          case "getAppliedGuildBoostsForGuild":
+          break;
           case "encrypted":
           break;
           case "sandbox":
@@ -3845,23 +3752,17 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "G":
           break;
-          case "cY+Oob":
-          break;
-          case "objCreate":
-          break;
-          case "isAtStart":
-          break;
           case "$ZodCheckIncludes":
           break;
           case "deserialize":
           break;
           case "deserializeCache":
           break;
-          case "useFontScale":
+          case "_sentVideo":
           break;
-          case "useFontScaleStore":
+          case "VideoEmptyTypes":
           break;
-          case "recordMediaSize":
+          case "harvestType":
           break;
           case "iii":
           break;
@@ -3882,12 +3783,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "$ZodCheckLessThan":
           break;
           case "hand_with_index_finger_and_thumb_crossed_tone3":
-          break;
-          case "homepage":
-          break;
-          case "page":
-          break;
-          case "page down":
           break;
           case "$ZodCheckLowerCase":
           break;
@@ -3937,13 +3832,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "FETCHING":
           break;
-          case "GUILD_BOOST_TAB_BANNER":
+          case "GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS":
           break;
-          case "RNSVGSvgAndroid":
-          break;
-          case "assertFloat32":
-          break;
-          case "handleMediaEngineStateChange":
+          case "SlideOutDown":
           break;
           case "string2buf":
           break;
@@ -3969,7 +3860,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "HEADERS_RECEIVED":
           break;
-          case "claimCode":
+          case "callbackCode":
           break;
           case "debuglog":
           break;
@@ -3995,33 +3886,27 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "currencyIsoCode":
           break;
-          case "deeplink_uri":
+          case "deepseek":
+          break;
+          case "see":
+          break;
+          case "seek":
+          break;
+          case "seekTimeout":
           break;
           case "$ZodCheckUpperCase":
           break;
           case "seis":
           break;
-          case "cardImage":
+          case "startSampling":
           break;
-          case "cardImageApplication":
+          case "getLayoutMap":
           break;
-          case "ApplicationLauncherCommand":
+          case "applyRelationProp":
           break;
-          case "CommandListSortOrder":
+          case "getNewestTokens":
           break;
-          case "OrderedPermissions":
-          break;
-          case "scrollDown":
-          break;
-          case "rS8FA+":
-          break;
-          case "+1_tone4":
-          break;
-          case "GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR":
-          break;
-          case "getSelectedProduct":
-          break;
-          case "getNewMemberActions":
+          case "getNewestTokensForNonChildrenApplications":
           break;
           case "$ZodCodec":
           break;
@@ -4073,8 +3958,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "nio":
           break;
-          case "xdays":
-          break;
           case "$ZodE164":
           break;
           case "ZodE164":
@@ -4087,13 +3970,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ail":
           break;
-          case "doesEffectImpactLayout":
+          case "keyedListeners":
           break;
-          case "openMemberVerificationRejectedAlert":
+          case "resetContextMenuState":
           break;
-          case "onRejected":
-          break;
-          case "userFilters":
+          case "setContext":
           break;
           case "$ZodEmoji":
           break;
@@ -4123,27 +4004,21 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "sessionTimingIntegration":
           break;
-          case "JOIN_GUILD_VIEWED":
-          break;
           case "$ZodEnum":
           break;
           case "ZodEnum":
           break;
           case "num lock":
           break;
-          case "lockToLandscape":
-          break;
-          case "lockToLandscapeLeft":
-          break;
-          case "trinketAnimationUrl":
-          break;
-          case "blurTextInput":
-          break;
-          case "sah":
+          case "lockState":
           break;
           case "$ZodError":
           break;
-          case "handleMuteSettingPress":
+          case "ZodError":
+          break;
+          case "woman_kneeling_facing_right_tone4":
+          break;
+          case "man_kneeling_facing_right_tone4":
           break;
           case "$ZodExactOptional":
           break;
@@ -4151,11 +4026,25 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "act":
           break;
+          case "REQUIRED_OPTIONS_FOR_BLIK_SEAMLESS_PAYMENT_TYPE":
+          break;
+          case "UNKNOWN_MESSAGE":
+          break;
+          case "MESSAGE_LOG_PRIVATE_CHANNELS":
+          break;
+          case "PRIVATE_CHANNELS_LIST":
+          break;
+          case "STAGE_MUSIC_MUTE":
+          break;
+          case "virtualOffset0Based":
+          break;
           case "$ZodFile":
           break;
           case "ZodFile":
           break;
           case "File":
+          break;
+          case "handleRelationshipRemove":
           break;
           case "$ZodFunction":
           break;
@@ -4165,17 +4054,23 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "getViewProp":
           break;
-          case "commandText":
+          case "commandType":
           break;
-          case "externalPurchaseUrl":
+          case "commandTypes":
           break;
-          case "setDisableRecycling":
+          case "spanToTraceparentHeader":
           break;
-          case "mantlepiece_clock":
+          case "woman_construction_worker_tone3":
           break;
-          case "clock3":
+          case "man_construction_worker_tone3":
           break;
-          case "clock330":
+          case "construction_worker_tone3":
+          break;
+          case "four_oclock":
+          break;
+          case "clock2":
+          break;
+          case "clock230":
           break;
           case "$ZodGUID":
           break;
@@ -4185,47 +4080,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ID_REGEX":
           break;
-          case "EXISTING_USER_AGE_GATE_SUCCESS":
+          case "EXPERIMENT_FETCH_IGNORED":
           break;
-          case "AGE_GATE_SUCCESS":
+          case "IGNORED_GROUP":
           break;
-          case "SUCCESS":
+          case "createInteractionHandle":
           break;
-          case "OPEN_EMBEDDED_ACTIVITY":
-          break;
-          case "EMBEDDED_ACTIVITY_CLOSE":
-          break;
-          case "ACTIVITY_CLOSED_RPC_ERROR":
-          break;
-          case "CLOSE":
-          break;
-          case "CLOSED":
-          break;
-          case "RPC":
-          break;
-          case "PC":
-          break;
-          case "ERROR":
-          break;
-          case "ERROR_CHANNEL_NOT_FOUND":
-          break;
-          case "UNDELETABLE":
-          break;
-          case "TABLE_ROW_CONTENT_HEIGHT":
-          break;
-          case "herb":
-          break;
-          case "$ZodIPv4":
-          break;
-          case "ZodIPv4":
-          break;
-          case "IPv4address":
-          break;
-          case "address":
-          break;
-          case "dress":
-          break;
-          case "reversed_hand_with_middle_finger_extended_tone2":
+          case "right_fist_tone2":
           break;
           case "$ZodIPv6":
           break;
@@ -4233,7 +4094,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "IPv6address":
           break;
-          case "headerStatusBarHeight":
+          case "imageHeight":
           break;
           case "$ZodISODate":
           break;
@@ -4281,6 +4142,10 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "rootCommand":
           break;
+          case "NotifyFriendsOnProfileUpdate":
+          break;
+          case "showUnread":
+          break;
           case "$ZodJWT":
           break;
           case "ZodJWT":
@@ -4301,7 +4166,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ID_VERIFICATION":
           break;
-          case "VERIFICATION_FAQ":
+          case "VERIFICATION_INFO":
+          break;
+          case "FORUM_CHANNEL_MORE_POSTS_LOADED":
+          break;
+          case "UNREAD_LESS_IMPORTANT":
+          break;
+          case "fonts":
           break;
           case "$ZodLazy":
           break;
@@ -4329,15 +4200,47 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "getHours":
           break;
-          case "removeModeratorOverwrite":
+          case "removeMany":
           break;
-          case "writeExistingEventStorage":
+          case "anyChannelRecordsObfuscated":
           break;
-          case "adjustingFromInitialMount":
+          case "fKYRlM":
           break;
-          case "includeNotificationsCount":
+          case "lMrv96":
           break;
-          case "trailingSection":
+          case "activityPreview":
+          break;
+          case "OCEAN":
+          break;
+          case "ANDROID_NO_BORDER":
+          break;
+          case "NO_BORDER_OR_MARGIN":
+          break;
+          case "INPUT_PLACEHOLDER_TEXT_DEFAULT":
+          break;
+          case "DEFAULT_FLUSH_INTERVAL":
+          break;
+          case "VALIDATING":
+          break;
+          case "GUILD_HUB_HEADER_OPTIONS":
+          break;
+          case "StretchOutX":
+          break;
+          case "tXXD6v":
+          break;
+          case "6vrfgt":
+          break;
+          case "gt":
+          break;
+          case "smiling_face_with_tear":
+          break;
+          case "_teardown":
+          break;
+          case "_teardownRegistry":
+          break;
+          case "teardown":
+          break;
+          case "tryItOutAvatarDecoration":
           break;
           case "$ZodMAC":
           break;
@@ -4357,6 +4260,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "maxBufferMs":
           break;
+          case "stickySession":
+          break;
           case "$ZodNanoID":
           break;
           case "ZodNanoID":
@@ -4370,6 +4275,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "Never":
           break;
           case "ev":
+          break;
+          case "getEventTypePropName":
           break;
           case "$ZodNonOptional":
           break;
@@ -4387,9 +4294,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "trackColorForFalse":
           break;
-          case "setOffset":
-          break;
-          case "setOffsetProjectionEnabled":
+          case "setOpenH264Enabled":
           break;
           case "$ZodNumber":
           break;
@@ -4401,11 +4306,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "getQuestContentName":
           break;
-          case "subheader":
-          break;
-          case "subheaderLocalized":
-          break;
-          case "headerLocalized":
+          case "forwardedRef":
           break;
           case "$ZodOptional":
           break;
@@ -4417,11 +4318,9 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ZodPipe":
           break;
-          case "customProcessor":
+          case "customProfile":
           break;
-          case "sortIndex":
-          break;
-          case "tldWhitelist":
+          case "customProfileUpsellImage":
           break;
           case "$ZodReadonly":
           break;
@@ -4433,7 +4332,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "nl":
           break;
-          case "zhStringToNumber":
+          case "unstable_DiscreteEventPriority":
           break;
           case "$ZodRealError":
           break;
@@ -4441,15 +4340,29 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "GiftingTier6SmallBadge":
           break;
-          case "isBypassInvite":
-          break;
-          case "benefitType":
+          case "baseType":
           break;
           case "$ZodRecord":
           break;
           case "ZodRecord":
           break;
           case "RecordSpeedNext":
+          break;
+          case "Google":
+          break;
+          case "Google TV":
+          break;
+          case "TV":
+          break;
+          case "$ZodRegistry":
+          break;
+          case "try":
+          break;
+          case "tryActivateLayoutTransition":
+          break;
+          case "ry":
+          break;
+          case "USE_MPF":
           break;
           case "$ZodString":
           break;
@@ -4463,11 +4376,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "ZodSuccess":
           break;
-          case "blocklistPatterns":
+          case "docx":
           break;
-          case "Patterns":
+          case "pages":
           break;
-          case "palm_up_hand_tone3":
+          case "ppt":
+          break;
+          case "pptx":
           break;
           case "$ZodTemplateLiteral":
           break;
@@ -4477,41 +4392,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "allowedPaymentMethods":
           break;
-          case "showFeedback":
+          case "showDoubleTapEmojiUpdatedToast":
           break;
-          case "showFeedbackButton":
+          case "stuffed_pita":
           break;
-          case "backButtonInCustomView":
-          break;
-          case "whenIdleOrHidden":
-          break;
-          case "enableMainQueueCoordinatorOnIOS":
-          break;
-          case "IOS_TWO_FA_SCAN":
-          break;
-          case "SCAN_QR_CODE":
-          break;
-          case "docx":
-          break;
-          case "pages":
-          break;
-          case "ppt":
-          break;
-          case "pptx":
-          break;
-          case "$ZodTransform":
-          break;
-          case "ZodTransform":
-          break;
-          case "flag_gm":
-          break;
-          case "gm":
-          break;
-          case "gm1Vej":
-          break;
-          case "woman_getting_face_massage_medium_light_skin_tone":
-          break;
-          case "man_getting_face_massage_medium_light_skin_tone":
+          case "updated_setting":
           break;
           case "xls":
           break;
@@ -4520,6 +4405,16 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "csv":
           break;
           case "sv":
+          break;
+          case "$ZodTransform":
+          break;
+          case "ZodTransform":
+          break;
+          case "flag_gs":
+          break;
+          case "contentId":
+          break;
+          case "contentIdentifier":
           break;
           case "$ZodTuple":
           break;
@@ -4537,13 +4432,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "peerDependencies":
           break;
+          case "section_name":
+          break;
           case "$ZodULID":
           break;
           case "ZodULID":
           break;
           case "appDmSettings":
           break;
-          case "deleteRecurrence":
+          case "drawableIconResourceName":
+          break;
+          case "sourceName":
+          break;
+          case "viewerData":
           break;
           case "$ZodURL":
           break;
@@ -4561,11 +4462,15 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "maxCount":
           break;
+          case "CONTROL_CRITICAL_PRIMARY_BORDER_ACTIVE":
+          break;
+          case "mostReadable":
+          break;
           case "$ZodUnion":
           break;
           case "ZodUnion":
           break;
-          case "queryResults":
+          case "getPreviewStorefrontId":
           break;
           case "$ZodVoid":
           break;
@@ -4579,7 +4484,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "X":
           break;
-          case "totalListeners":
+          case "totalParticipants":
           break;
           case "$ZodXor":
           break;
@@ -4587,7 +4492,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "safelyMakeUrlHumanReadable":
           break;
-          case "queryItems":
+          case "_handleClose":
+          break;
+          case "handleClose":
+          break;
+          case "handleCloseModal":
+          break;
+          case "queryInAppNavigations":
           break;
           case "_$esjava$b":
           break;
@@ -4607,17 +4518,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "and":
           break;
-          case "limitedTimeBadge":
+          case "woman_in_motorized_wheelchair_light_skin_tone":
           break;
-          case "getAppVersion":
+          case "man_in_motorized_wheelchair_light_skin_tone":
           break;
-          case "onTapGiftIntentPrimaryCta":
-          break;
-          case "returnMessageId":
-          break;
-          case "GiftReminderNagbar":
-          break;
-          case "Nagbar":
+          case "jfif":
           break;
           case "$code":
           break;
@@ -4626,8 +4531,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           case "purchases":
           break;
           case "countryData":
-          break;
-          case "middle_finger_tone3":
           break;
           case "$defs":
           break;
@@ -4641,27 +4544,125 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           break;
           case "pray_tone3":
           break;
+          case "$i":
+          break;
+          case "$id":
+          break;
+          case "idx":
+          break;
           case "$link":
           break;
           case "link":
           break;
           case "linkAccountIcon":
           break;
-          case "contentStyle":
+          case "contentType":
           break;
-          case "contentStyles":
+          case "contentTypeToText":
           break;
-          case "supportsFeature":
-          break;
-          case "reconcilePromise":
-          break;
-          case "setNativeValue":
+          case "extraButtonProps":
           break;
           case "verticalInset":
           break;
           case "$modal":
           break;
           case "modal":
+          break;
+          case "dal":
+          break;
+          case "$output":
+          break;
+          case "out":
+          break;
+          case "output":
+          break;
+          case "outputDeviceId":
+          break;
+          case "rowWidth":
+          break;
+          case "$p":
+          break;
+          case "$ref":
+          break;
+          case "baseMaxSize":
+          break;
+          case "$schema":
+          break;
+          case "sch":
+          break;
+          case "schema":
+          break;
+          case "schemaPath":
+          break;
+          case "che":
+          break;
+          case "associatedEventId":
+          break;
+          case "disableMountItemReorderingAndroid":
+          break;
+          case "ordering":
+          break;
+          case "getAckedEndOffsetStorageKey":
+          break;
+          case "StorageKeys":
+          break;
+          case "scrollToTopTimeout":
+          break;
+          case "&":
+          break;
+          case "&#39;":
+          break;
+          case ";":
+          break;
+          case ";)":
+          break;
+          case "Apple":
+          break;
+          case "AppleIllocon":
+          break;
+          case "&amp;":
+          break;
+          case ";-)":
+          break;
+          case "&gt;":
+          break;
+          case "&lt;":
+          break;
+          case "&quot;":
+          break;
+          case "hour24h":
+          break;
+          case "FlingNativeProperties":
+          break;
+          case "mediaIndex":
+          break;
+          case "expressiveRiveRef":
+          break;
+          case "effectiveEndDate":
+          break;
+          case ">":
+          break;
+          case "'":
+          break;
+          case "https":
+          break;
+          case "[":
+          break;
+          case "[[Configurable]]":
+          break;
+          case "]":
+          break;
+          case "(":
+          break;
+          case "numpad *":
+          break;
+          case "*":
+          break;
+          case "AvatarCapExample":
+          break;
+          case "BURGUNDY":
+          break;
+          case "+1":
           break;
         }
       }

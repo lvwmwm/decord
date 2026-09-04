@@ -1,15 +1,15 @@
-// Module ID: 4332
-// Function ID: 4333
+// Module ID: 4335
+// Function ID: 4336
 // Name: coerceMainRoute
-// Dependencies: [32, 19, 4333, 1499, 511, 4334, 4339, 4340, 4357, 2]
+// Dependencies: [32, 19, 4336, 1499, 511, 4337, 4342, 4343, 4360, 2]
 // Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
 
-// Module 4332 (coerceMainRoute)
+// Module 4335 (coerceMainRoute)
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import enforcingDefault from "enforcing" /* 4339 */;
-import getBestActiveInput from "getBestActiveInput" /* 4340 */;
-import CREATE_THREAD_SCREEN_KEY from "CREATE_THREAD_SCREEN_KEY" /* 4357 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
+import enforcingDefault from "enforcing" /* 4342 */;
+import getBestActiveInput from "getBestActiveInput" /* 4343 */;
+import CREATE_THREAD_SCREEN_KEY from "CREATE_THREAD_SCREEN_KEY" /* 4360 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import set from "set" /* 2 */;
@@ -88,7 +88,7 @@ const result = set.fileFinishedImporting("modules/main_tabs_v2/helpers/Navigatio
 function popModal(c3, onExited) {
   const _require = c3;
   closure_1 = onExited;
-  let obj = _require(4333);
+  let obj = _require(4336);
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -300,7 +300,7 @@ export const navigateToMemberVerification = function navigateToMemberVerificatio
   return flag;
 };
 export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
-  let obj = icymiScreen(4333);
+  let obj = icymiScreen(4336);
   const rootNavigationRef = obj.getRootNavigationRef();
   ({ screen, forceNavigate } = drawerOpen);
   if (null != rootNavigationRef) {
@@ -324,7 +324,7 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
             obj[1] = channelId;
             obj[2] = drawerOpen.drawerOpen;
             obj[1] = obj;
-            let tmpResult = tmp(4333);
+            let tmpResult = tmp(4336);
             const rootNavigationRef1 = tmpResult.getRootNavigationRef();
             if (null != rootNavigationRef1) {
               if (rootNavigationRef1.isReady()) {
@@ -332,7 +332,7 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
                   const rootState = rootNavigationRef1.getRootState();
                   const routes = rootState.routes;
                   const found = routes.filter((name) => "modal" === name.name);
-                  tmpResult = tmp(4334);
+                  tmpResult = tmp(4337);
                   obj1 = { name: "tabs", key: null, params: null };
                   const _HermesInternal = HermesInternal;
                   obj1[1] = "tabs-" + tmp(511).v4();
@@ -393,7 +393,7 @@ export const resetToAuthRoute = function resetToAuthRoute() {
   if (!tmp) {
     rootNavigationRef.dispatch(() => {
       const CommonActions = callback(1499).CommonActions;
-      return CommonActions.reset(callback(4334).getInitialAuthState());
+      return CommonActions.reset(callback(4337).getInitialAuthState());
     });
     flag = true;
   }
@@ -638,7 +638,7 @@ export const getSelectedChannelFromRoute = function getSelectedChannelFromRoute(
   }
   const obj = getRootNavigationRef;
 };
-export const navigateToNewGroupDM = function navigateToNewGroupDM(id, CHANNEL_CALL) {
+export const navigateToNewGroupDM = function navigateToNewGroupDM(id, CHANNEL_TEXT_AREA) {
   let obj = getRootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   let flag = null != rootNavigationRef;
@@ -646,7 +646,7 @@ export const navigateToNewGroupDM = function navigateToNewGroupDM(id, CHANNEL_CA
     obj = { screen: "gdm", params: null };
     obj = { channelId: null, locationPage: null };
     obj[0] = id;
-    obj[1] = CHANNEL_CALL;
+    obj[1] = CHANNEL_TEXT_AREA;
     obj[1] = obj;
     rootNavigationRef.navigate("friends", obj);
     flag = true;
@@ -684,7 +684,7 @@ export const navigateToContextMenuCommands = function navigateToContextMenuComma
 };
 export const popScreens = function popScreens(arg0) {
   const _require = arg0;
-  const rootNavigationRef = _require(4333).getRootNavigationRef();
+  const rootNavigationRef = _require(4336).getRootNavigationRef();
   let flag = null != rootNavigationRef;
   if (flag) {
     rootNavigationRef.dispatch(() => {

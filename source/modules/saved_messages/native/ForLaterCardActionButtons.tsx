@@ -1,14 +1,14 @@
-// Module ID: 13181
-// Function ID: 13182
+// Module ID: 13214
+// Function ID: 13215
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4478, 4445, 11521, 2008, 11515, 11520, 1233, 11541, 5560, 13182, 10353, 8811, 8018, 8818, 2]
+// Dependencies: [19, 17, 21, 4481, 4448, 11642, 2008, 11636, 11641, 1233, 11668, 5635, 13215, 10179, 8596, 8028, 8603, 2]
 // Exports: default
 
-// Module 13181 (ForLaterCardActionButtons)
+// Module 13214 (ForLaterCardActionButtons)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ actionGroup: { flexDirection: "row", gap: 8 } });
@@ -42,7 +42,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1233).intl;
   obj[0] = intl.string(savedMessage(1233).t["+TSRGD"]);
-  obj[1] = savedMessage(11541).ChatArrowRightIcon;
+  obj[1] = savedMessage(11668).ChatArrowRightIcon;
   obj[2] = function action() {
     return jumpToMessage();
   };
@@ -55,7 +55,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }
   obj = {
     label: intl2.string(SvXS1Z),
-    IconComponent: tmp3(5560).XSmallIcon,
+    IconComponent: tmp3(5635).XSmallIcon,
     action() {
       return savedMessage(closure_1_2[7]).removeSavedMessage(savedMessage.saveData);
     },
@@ -75,10 +75,10 @@ export default function ForLaterCardActionButtons(savedMessage) {
       const intl = savedMessage(1233).intl;
       obj.accessibilityLabel = intl.string(savedMessage(1233).t.e1heBD);
       obj.size = "sm";
-      obj.icon = jumpToMessage(8818);
-      return callback(savedMessage(8018).IconButton, obj);
+      obj.icon = jumpToMessage(8603);
+      return callback(savedMessage(8028).IconButton, obj);
     };
-    obj[1] = jsx(tmp3(8811).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
+    obj[1] = jsx(tmp3(8596).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
     return <View style={null}>{null}</View>;
   } else {
     const intl3 = tmp3(1233).intl;
@@ -86,9 +86,9 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj2 = { label: null, IconComponent: null, action: null };
     obj2[0] = intl3.string(savedMessage.throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1);
     if (savedMessage.throttledNow > savedMessage.saveData.dueAt) {
-      let PencilIcon = tmp3(13182).BellZIcon;
+      let PencilIcon = tmp3(13215).BellZIcon;
     } else {
-      PencilIcon = tmp3(10353).PencilIcon;
+      PencilIcon = tmp3(10179).PencilIcon;
     }
     obj2[1] = PencilIcon;
     obj2[2] = callback;

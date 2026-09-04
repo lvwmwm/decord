@@ -1,13 +1,13 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 17292
+// Function ID: 17293
 // Name: prototype
-// Dependencies: [1991, 1908, 4299, 673, 4108, 5495, 5471, 1398, 2]
+// Dependencies: [1991, 1908, 4302, 673, 4108, 7058, 7035, 1399, 2]
 
-// Module 17206 (prototype)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17292 (prototype)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "trackCommunicationDisabled" /* 1991 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "handleConnectionOpen" /* 4299 */;
+import closure_5 from "handleConnectionOpen" /* 4302 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 
@@ -59,7 +59,7 @@ let prototype = function GuildOnboardingManager() {
     }
   };
   applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
-    const result = applyArgumentsResult(5471).discardOnboardingPromise(guild.guild.id);
+    const result = applyArgumentsResult(7035).discardOnboardingPromise(guild.guild.id);
   };
   applyArgumentsResult._openOnboardingIfIncomplete = function _openOnboardingIfIncomplete(guildId) {
     guild = guild.getGuild(guildId);
@@ -69,7 +69,7 @@ let prototype = function GuildOnboardingManager() {
         selfMember = selfMember.getSelfMember(guildId);
         let hasFlagResult = null != selfMember;
         if (hasFlagResult) {
-          let obj = applyArgumentsResult(1398);
+          let obj = applyArgumentsResult(1399);
           let num = selfMember.flags;
           if (num == null) {
             num = 0;
@@ -81,13 +81,13 @@ let prototype = function GuildOnboardingManager() {
           if (num2 == null) {
             num2 = 0;
           }
-          hasFlagResult = applyArgumentsResult(1398).hasFlag(num2, constants2.STARTED_ONBOARDING);
-          const obj2 = applyArgumentsResult(1398);
+          hasFlagResult = applyArgumentsResult(1399).hasFlag(num2, constants2.STARTED_ONBOARDING);
+          const obj2 = applyArgumentsResult(1399);
         }
         if (hasFlagResult) {
           obj = { guildId: null };
           obj[0] = guildId;
-          callback(5471)(obj);
+          callback(7035)(obj);
         }
       }
     }

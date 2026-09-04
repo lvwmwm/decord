@@ -1,24 +1,24 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12577
+// Function ID: 12578
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4470, 1386, 11761, 11762, 673, 11763, 21, 4217, 1296, 4474, 12, 8254, 4478, 709, 5393, 586, 4197, 5563, 1233, 4479, 5022, 10352, 12420, 5603, 12207, 4916, 4925, 1228, 11674, 9625, 12057, 12421, 8018, 4437, 12052, 12035, 4423, 10114, 2]
+// Dependencies: [32, 19, 17, 4473, 1386, 11892, 11893, 673, 11894, 21, 4218, 1296, 4477, 12, 8383, 4481, 709, 5401, 586, 4197, 5541, 1233, 4482, 5029, 10178, 12578, 6921, 12339, 4923, 4932, 1228, 11805, 9568, 12193, 12579, 8028, 4440, 12188, 12171, 4426, 9934, 2]
 
-// Module 12419 (LockPill)
+// Module 12577 (LockPill)
 import ThemesDefault from "Themes" /* 709 */;
-import result2 from "result" /* 5393 */;
-import inlineStyles from "inlineStyles" /* 8254 */;
+import result2 from "result" /* 5401 */;
+import inlineStyles from "inlineStyles" /* 8383 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11761 */;
-import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11762 */;
+import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11892 */;
+import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11893 */;
 import { ComponentActionsKeyed } from "ME" /* 673 */;
-import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11763 */;
+import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11894 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4217" /* 4217 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import importDefaultResult from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importDefaultResult2 from "apply" /* 12 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 6137
-// Function ID: 6138
+// Module ID: 7221
+// Function ID: 7222
 // Name: handleReaction
-// Dependencies: [1215, 1386, 4130, 673, 4376, 4738, 4132, 586, 706, 2]
+// Dependencies: [1215, 1386, 4130, 673, 4379, 4745, 4132, 586, 706, 2]
 
-// Module 6137 (handleReaction)
+// Module 7221 (handleReaction)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4376 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4738 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4379 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
@@ -281,8 +281,8 @@ prototype2["getAnalyticsId"] = function getAnalyticsId(arg0) {
   }
   return value.analyticsId;
 };
-prototype2["hasSearchState"] = function hasSearchState(c23) {
-  return map.has(c23);
+prototype2["hasSearchState"] = function hasSearchState(c24) {
+  return map.has(c24);
 };
 SearchMessageStore.displayName = "SearchMessageStore";
 const searchMessageStore = new SearchMessageStore(dispatcherDefault, {

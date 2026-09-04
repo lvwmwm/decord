@@ -1,11 +1,11 @@
-// Module ID: 13642
-// Function ID: 13643
+// Module ID: 13675
+// Function ID: 13676
 // Name: getIconURL
-// Dependencies: [4504, 5236, 2]
+// Dependencies: [4507, 5244, 2]
 
-// Module 13642 (getIconURL)
-import createExecutableDefault from "createExecutable" /* 4504 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5236 */;
+// Module 13675 (getIconURL)
+import createExecutableDefault from "createExecutable" /* 4507 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
 
 createExecutableDefault;
 let c2 = "xbox:";

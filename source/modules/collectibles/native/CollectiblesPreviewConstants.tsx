@@ -1,9 +1,9 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8728
+// Function ID: 8729
 // Name: SAMPLE_PROFILE_ASPECT_RATIO
 // Dependencies: [2]
 
-// Module 8524 (SAMPLE_PROFILE_ASPECT_RATIO)
+// Module 8728 (SAMPLE_PROFILE_ASPECT_RATIO)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");

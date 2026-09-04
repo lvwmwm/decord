@@ -1,13 +1,13 @@
-// Module ID: 5103
-// Function ID: 5104
-// Dependencies: [1301, 502, 1234, 5104, 5105, 709, 5107, 1233, 2]
+// Module ID: 5111
+// Function ID: 5112
+// Dependencies: [1301, 502, 1234, 5112, 5113, 709, 5115, 1233, 2]
 
-// Module 5103
+// Module 5111
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import set from "set" /* 1234 */;
-import launchCamera from "launchCamera" /* 5105 */;
-import openPickerDefault from "openPicker" /* 5107 */;
+import launchCamera from "launchCamera" /* 5113 */;
+import openPickerDefault from "openPicker" /* 5115 */;
 import closure_3 from "handleThemeChange" /* 1301 */;
 import { ThemeTypes } from "sum" /* 502 */;
 
@@ -30,10 +30,10 @@ export default {
     if (obj2.isIOS()) {
       str2 = "pageSheet";
     }
-    let tmp4Result = tmp4(5104);
+    let tmp4Result = tmp4(5112);
     obj2 = set;
     const tmp3 = !mediaType.disableNewIOSPicker;
-    tmp4Result = tmp4(5105);
+    tmp4Result = tmp4(5113);
     obj = {};
     const merged = Object.assign(mediaType);
     obj.mediaType = str;

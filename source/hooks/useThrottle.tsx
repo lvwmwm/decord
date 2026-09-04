@@ -1,10 +1,10 @@
-// Module ID: 10181
-// Function ID: 10182
+// Module ID: 10001
+// Function ID: 10002
 // Name: throttleStateFn
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10181 (throttleStateFn)
+// Module 10001 (throttleStateFn)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
@@ -35,9 +35,9 @@ function useThrottledFunction(callback4, arg1, items4, sharedValue) {
 }
 const result = require("set").fileFinishedImporting("hooks/useThrottle.tsx");
 
-export const useThrottledState = (stateFromStores) => {
-  let current = stateFromStores;
-  let _require = stateFromStores;
+export const useThrottledState = (first) => {
+  let current = first;
+  let _require = first;
   let items = arg2;
   if (arg2 === undefined) {
     items = [];

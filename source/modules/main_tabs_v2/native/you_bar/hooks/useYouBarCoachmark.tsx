@@ -1,13 +1,13 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16287
+// Function ID: 16288
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4299, 1383, 1233, 1372, 4217, 12745, 16202, 1499, 586, 13590, 4558, 6261, 16203, 8991, 2]
+// Dependencies: [32, 19, 4302, 1383, 1233, 1372, 4218, 13007, 16288, 1499, 586, 13623, 4561, 7326, 16289, 11059, 2]
 // Exports: useYouBarCoachmark
 
-// Module 16201 (useYouBarCoachmark)
+// Module 16287 (useYouBarCoachmark)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleConnectionOpen" /* 4299 */;
+import closure_4 from "handleConnectionOpen" /* 4302 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 
 const require = arg1;

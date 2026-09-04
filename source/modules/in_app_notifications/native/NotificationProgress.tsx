@@ -1,16 +1,16 @@
-// Module ID: 10284
-// Function ID: 10285
+// Module ID: 10102
+// Function ID: 10103
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 4478, 709, 4217, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 4218, 2]
 // Exports: default
 
-// Module 10284 (NotificationProgress)
+// Module 10102 (NotificationProgress)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 createCacheKey = { progress: null, progressContainerBottom: null };
@@ -30,7 +30,7 @@ export default function NotificationProgress(percent) {
   first = tmp2[0];
   dependencyMap = tmp2[1];
   callback = React.useCallback((nativeEvent) => callback(nativeEvent.nativeEvent.layout.width), []);
-  let obj = percent(4217);
+  let obj = percent(4218);
   const fn = function s() {
     let obj = percent;
     let value = percent;
@@ -47,6 +47,6 @@ export default function NotificationProgress(percent) {
   obj = { onLayout: callback, style: tmp.progressContainerBottom, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [tmp.progress, animatedStyle];
-  obj[2] = jsx(first(4217).View, { style: items });
+  obj[2] = jsx(first(4218).View, { style: items });
   return <View onLayout={callback} style={tmp.progressContainerBottom}>{null}</View>;
 };

@@ -1,17 +1,17 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13157
+// Function ID: 13158
 // Name: createActivityInstanceEmbed
-// Dependencies: [1385, 4519, 1215, 1386, 4569, 1921, 11170, 11742, 1233, 11743, 13116, 13126, 11744, 11745, 5963, 9102, 2]
+// Dependencies: [1385, 4522, 1215, 1386, 4572, 1921, 11241, 11873, 1233, 11874, 13148, 13158, 11875, 11876, 7103, 12064, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 13125 (createActivityInstanceEmbed)
+// Module 13157 (createActivityInstanceEmbed)
 import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "addApplication" /* 4519 */;
+import closure_3 from "addApplication" /* 4522 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "sortActivity" /* 4569 */;
+import closure_6 from "sortActivity" /* 4572 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { CodedLinkExtendedType } from "CodedLinkExtendedType" /* 11170 */;
+import { CodedLinkExtendedType } from "CodedLinkExtendedType" /* 11241 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/EmbeddedActivityInstanceEmbed.tsx");
@@ -31,9 +31,9 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        obj1 = id(11742);
+        obj1 = id(11873);
         const contentClassificationVisibility = obj1.getContentClassificationVisibility(application.content_classification, channel, nsfwAllowed);
-        if (id(11742).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
+        if (id(11873).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
           id = application;
           const channel_id = message.channel_id;
           let str = channel_id;
@@ -47,7 +47,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           embeddedActivitiesForChannelIncludingHidden = embeddedActivitiesForChannelIncludingHidden.getEmbeddedActivitiesForChannelIncludingHidden(str);
           const found = embeddedActivitiesForChannelIncludingHidden.find((applicationId) => applicationId.applicationId === id.id);
           const currentEmbeddedActivity = obj4.getCurrentEmbeddedActivity();
-          let tmp5Result = tmp5(13116);
+          let tmp5Result = tmp5(13148);
           let obj = { activity: null, applicationId: null, guildId: null, channelId: null };
           obj[0] = found;
           obj[1] = application.id;
@@ -70,7 +70,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             stringResult = details;
           }
-          tmp5Result = tmp5(13126);
+          tmp5Result = tmp5(13158);
           obj = { embeddedActivity: null, currentEmbeddedActivity: null, channel: null };
           obj[0] = found;
           obj[1] = currentEmbeddedActivity;
@@ -99,13 +99,13 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             combined = null;
           }
-          const playInContext = tmp5(11744).getPlayInContext(application.id, channel_id);
+          const playInContext = tmp5(11875).getPlayInContext(application.id, channel_id);
           let isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
           let appIconSrc = null;
           ({ instanceId, canLaunchInChannel } = playInContext);
           if (null != application.icon) {
-            appIconSrc = tmp5(11745).getAppIconSrc(application.id, application.icon, application.bot);
-            const tmp5Result2 = tmp5(11745);
+            appIconSrc = tmp5(11876).getAppIconSrc(application.id, application.icon, application.bot);
+            const tmp5Result2 = tmp5(11876);
           }
           if (null == instanceId) {
             const intl8 = tmp5(1233).intl;
@@ -126,11 +126,11 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             tmp24 = false === obj13.isFetchingApplication(application.id);
           }
           if (tmp24) {
-            application = tmp5(5963).fetchApplication(application.id);
-            const tmp5Result3 = tmp5(5963);
+            application = tmp5(7103).fetchApplication(application.id);
+            const tmp5Result3 = tmp5(7103);
           }
           const obj2 = { displayType: null, appId: null, messageId: null, title: null, header: null, info: null, tagline: null, staticBannerSrc: null, iconSrc: null, embedUrl: null, bannerRatio: "bot", actions: null, extendedType: null, gradientColors: null, backgroundColor: 0, borderColor: 0, headerColor: 0, headerText: null, type: null };
-          obj2[0] = tmp5(11743).AppMessageEmbedDisplayType.DISPLAY;
+          obj2[0] = tmp5(11874).AppMessageEmbedDisplayType.DISPLAY;
           obj2[1] = application.id;
           obj2[2] = message.id;
           const intl9 = tmp5(1233).intl;
@@ -142,15 +142,15 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           obj2[8] = appIconSrc;
           obj13 = application;
           obj8 = closure_6;
-          const tmp5Result1 = tmp5(11744);
+          const tmp5Result1 = tmp5(11875);
           const obj3 = { applicationId: null, referrerId: null };
           obj3[0] = application.id;
           obj3[1] = id.getId();
-          obj2[9] = tmp5(9102).getActivityLaunchURL(obj3);
+          obj2[9] = tmp5(12064).getActivityLaunchURL(obj3);
           obj2[11] = items;
           obj2[12] = CodedLinkExtendedType.APP_MESSAGE_EMBED;
-          const tmp5Result4 = tmp5(9102);
-          obj2[13] = tmp5(11745).getAppGradientColors(appIconSrc);
+          const tmp5Result4 = tmp5(12064);
+          obj2[13] = tmp5(11876).getAppGradientColors(appIconSrc);
           obj4 = { applicationId: null, instanceId: null, appMessageEmbedModel: null, participantAvatarUris: null, participantsDescription: null };
           obj4[0] = application.id;
           obj4[1] = activityInstance.id;
@@ -160,7 +160,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           return obj4;
         } else {
           id = application.id;
-          if (contentClassificationVisibility === tmp5(11742).ContentClassificationVisibility.BLOCK_UNDERAGE) {
+          if (contentClassificationVisibility === tmp5(11873).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl2 = tmp5(1233).intl;
             let stringResult3 = intl2.string(tmp5(1233).t.LPOzxB);
           } else {
@@ -172,7 +172,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           obj5[1] = activityInstance.id;
           obj5[2] = [];
           const obj6 = { displayType: null, appId: null, messageId: null, title: null, header: null, info: null, tagline: null, iconSrc: null, staticBannerSrc: null, bannerRatio: "bot", actions: null, embedUrl: null, extendedType: null, gradientColors: null, backgroundColor: 0, borderColor: 0, headerColor: 0, headerText: null, type: null };
-          obj6[0] = tmp5(11743).AppMessageEmbedDisplayType.BLOCKED;
+          obj6[0] = tmp5(11874).AppMessageEmbedDisplayType.BLOCKED;
           obj6[1] = id;
           obj6[2] = message.id;
           const intl3 = tmp5(1233).intl;

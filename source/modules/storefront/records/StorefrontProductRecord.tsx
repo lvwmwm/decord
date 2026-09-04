@@ -1,11 +1,11 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7496
+// Function ID: 7497
 // Name: fromServer
-// Dependencies: [7317, 4521, 2]
+// Dependencies: [7495, 4524, 2]
 
-// Module 7318 (fromServer)
-import closure_0 from "fromServer" /* 7317 */;
-import closure_1 from "createFromServer" /* 4521 */;
+// Module 7496 (fromServer)
+import closure_0 from "fromServer" /* 7495 */;
+import closure_1 from "createFromServer" /* 4524 */;
 
 let prototype;
 prototype = function StorefrontProductRecord(arg0) {

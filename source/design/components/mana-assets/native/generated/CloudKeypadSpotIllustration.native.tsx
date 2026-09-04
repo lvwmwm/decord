@@ -1,14 +1,14 @@
-// Module ID: 6415
-// Function ID: 6416
+// Module ID: 5796
+// Function ID: 5797
 // Name: CloudKeypadSpotIllustration
-// Dependencies: [21, 5502, 6416, 2]
+// Dependencies: [21, 5542, 5797, 2]
 // Exports: CloudKeypadSpotIllustration
 
-// Module 6415 (CloudKeypadSpotIllustration)
+// Module 5796 (CloudKeypadSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6416 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5797 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CloudKeypadSpotIllustration.native.tsx");

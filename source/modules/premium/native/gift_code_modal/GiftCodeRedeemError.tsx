@@ -1,20 +1,20 @@
-// Module ID: 13089
-// Function ID: 13090
+// Module ID: 11385
+// Function ID: 11386
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4478, 709, 1499, 5562, 11596, 11598, 4474, 1233, 4929, 4724, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 1499, 7063, 11386, 11387, 4477, 1233, 4936, 4731, 2]
 // Exports: default
 
-// Module 13089 (GiftCodeRedeemError)
+// Module 11385 (GiftCodeRedeemError)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -37,9 +37,9 @@ export default function GiftCodeRedeemError(children) {
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(11596);
+    let tmp9Result = tmp9(11386);
   } else {
-    tmp9Result = tmp9(11598);
+    tmp9Result = tmp9(11387);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };

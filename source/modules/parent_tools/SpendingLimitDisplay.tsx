@@ -1,16 +1,16 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14834
+// Function ID: 14835
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1339, 7292, 1923, 586, 14671, 6090, 6091, 1233, 2368, 2]
+// Dependencies: [1339, 7470, 1923, 586, 14752, 7174, 7175, 1233, 2368, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 14753 (getSpendingLimitDisplayState)
+// Module 14834 (getSpendingLimitDisplayState)
 import initialize from "initialize" /* 586 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6090 */;
-import spendingLimitEqual from "spendingLimitEqual" /* 14671 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
+import spendingLimitEqual from "spendingLimitEqual" /* 14752 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "freshTeenActivityWithMap" /* 7292 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7470 */;
 import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ function getSpendingLimitDisplayState(amount) {
       obj[1] = formatRateResult;
       return obj;
     } else {
-      let num = tmp5(6091).CurrencyExponents[amount.currency];
+      let num = tmp5(7175).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
@@ -38,9 +38,9 @@ function getSpendingLimitDisplayState(amount) {
         obj[1] = formatRateResult;
         const intl = tmp5(1233).intl;
         obj1 = { amount: null };
-        obj1[0] = tmp5(6090).formatPrice(diff, currency);
+        obj1[0] = tmp5(7174).formatPrice(diff, currency);
         obj[2] = intl.formatToPlainString(messagesProxyDefault["+Q+bU1"], obj1);
-        const tmp5Result = tmp5(6090);
+        const tmp5Result = tmp5(7174);
       } else {
         obj = { kind: "on", monthlyText: null };
         obj[1] = formatRateResult;

@@ -1,12 +1,12 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 16065
+// Function ID: 16066
 // Name: sortCategoryList
-// Dependencies: [109, 1390, 1981, 4120, 673, 5489, 1911, 12, 586, 706, 2]
+// Dependencies: [109, 1390, 1981, 4120, 673, 7052, 1911, 12, 586, 706, 2]
 
-// Module 15979 (sortCategoryList)
+// Module 16065 (sortCategoryList)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 5489 */;
+import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 7052 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import createChannelRecord from "createChannelRecord" /* 1390 */;
 import comparator from "comparator" /* 1981 */;

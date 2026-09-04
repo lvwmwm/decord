@@ -1,14 +1,14 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10675
+// Function ID: 10676
 // Name: useCreateOrReuseGiftOrder
-// Dependencies: [5, 19, 4460, 1923, 502, 3, 7184, 1234, 4074, 4154, 2]
+// Dependencies: [5, 19, 4463, 1923, 502, 3, 7363, 1234, 4074, 4154, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10744 (useCreateOrReuseGiftOrder)
+// Module 10675 (useCreateOrReuseGiftOrder)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4460 */;
+import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4463 */;
 import { SubscriptionPlanInfo } from "GuildFeatures" /* 1923 */;
 import { PaymentGateways } from "sum" /* 502 */;
 

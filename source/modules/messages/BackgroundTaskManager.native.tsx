@@ -1,12 +1,12 @@
-// Module ID: 7511
-// Function ID: 7512
+// Module ID: 7688
+// Function ID: 7689
 // Name: startBackgroundTask
-// Dependencies: [5, 17, 1234, 7512, 7513, 2]
+// Dependencies: [5, 17, 1234, 7689, 7690, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7511 (startBackgroundTask)
+// Module 7688 (startBackgroundTask)
 import set2 from "set" /* 1234 */;
-import initializeDefault from "initialize" /* 7512 */;
+import initializeDefault from "initialize" /* 7689 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 1234 */;
@@ -23,8 +23,8 @@ function startBackgroundTask(arg0) {
       obj = { title: null, content: null, priority: null, type: null, usesGateway: false };
       obj[0] = title;
       obj[1] = content;
-      obj[2] = tmp(7513).ServiceNotificationPriority.MEDIUM;
-      obj[3] = tmp(7513).ServiceNotificationType.FILE_UPLOAD;
+      obj[2] = tmp(7690).ServiceNotificationPriority.MEDIUM;
+      obj[3] = tmp(7690).ServiceNotificationType.FILE_UPLOAD;
       return initializeDefault.addServiceHandler(obj);
     }
   } else {

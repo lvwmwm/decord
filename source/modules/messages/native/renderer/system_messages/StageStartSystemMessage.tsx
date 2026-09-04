@@ -1,15 +1,15 @@
-// Module ID: 7946
-// Function ID: 7947
+// Module ID: 7956
+// Function ID: 7957
 // Name: createStageStartSystemMessage
-// Dependencies: [7881, 1233, 7883, 7885, 2]
+// Dependencies: [7891, 1233, 7893, 7895, 2]
 // Exports: createStageStartSystemMessage
 
-// Module 7946 (createStageStartSystemMessage)
+// Module 7956 (createStageStartSystemMessage)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageStartSystemMessage.tsx");
 

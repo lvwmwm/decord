@@ -1,9 +1,9 @@
-// Module ID: 5233
-// Function ID: 5234
+// Module ID: 5241
+// Function ID: 5242
 // Name: upsertAccount
-// Dependencies: [4501, 1215, 5234, 5363, 4569, 5372, 4497, 8630, 673, 5236, 684, 3, 4362, 706, 581, 9409, 12, 695, 640, 13521, 9509, 1470, 586, 8060, 2]
+// Dependencies: [4504, 1215, 5242, 5371, 4572, 5380, 4500, 8270, 673, 5244, 684, 3, 4365, 706, 581, 11683, 12, 695, 640, 13554, 9407, 1394, 586, 8070, 2]
 
-// Module 5233 (upsertAccount)
+// Module 5241 (upsertAccount)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import failsDefault from "fails" /* 581 */;
@@ -11,20 +11,20 @@ import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import start2 from "start" /* 4362 */;
-import updateAssets from "updateAssets" /* 8060 */;
-import apiRequest from "apiRequest" /* 9409 */;
-import useIsSpeaking from "useIsSpeaking" /* 9509 */;
-import closure_6 from "initialize" /* 4501 */;
+import start2 from "start" /* 4365 */;
+import updateAssets from "updateAssets" /* 8070 */;
+import useIsSpeaking from "useIsSpeaking" /* 9407 */;
+import apiRequest from "apiRequest" /* 11683 */;
+import closure_6 from "initialize" /* 4504 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "set" /* 5234 */;
-import closure_9 from "checkIdleAFK" /* 5363 */;
-import closure_10 from "sortActivity" /* 4569 */;
-import closure_11 from "anyoneHasFlagInContext" /* 5372 */;
-import closure_12 from "updateVoiceState" /* 4497 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8630 */;
+import closure_8 from "set" /* 5242 */;
+import closure_9 from "checkIdleAFK" /* 5371 */;
+import closure_10 from "sortActivity" /* 4572 */;
+import closure_11 from "anyoneHasFlagInContext" /* 5380 */;
+import closure_12 from "updateVoiceState" /* 4500 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8270 */;
 import ME from "ME" /* 673 */;
-import importDefaultResult from "getPlatformUserUrl" /* 5236 */;
+import importDefaultResult from "getPlatformUserUrl" /* 5244 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -69,7 +69,7 @@ function upsertAccount(accountId, accessToken) {
     }, closure_29);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
-    const interval = new obj(4362).Interval();
+    const interval = new obj(4365).Interval();
     obj.pingInterval = interval;
     const tmp15 = new failsDefault(undefined, MINUTE);
     obj.backoff = tmp15;
@@ -455,7 +455,7 @@ function updatePlayerState(arg0, arg1, device) {
         if (context.type === tmp12.ALBUM) {
           resolved = Promise.resolve(context);
         } else {
-          const SpotifyAPI = _require(9409).SpotifyAPI;
+          const SpotifyAPI = _require(11683).SpotifyAPI;
           const obj2 = { url: null };
           obj2[0] = context.href;
           const value = SpotifyAPI.get(arg0, arg1, obj2);
@@ -636,7 +636,7 @@ prototype["connect"] = function connect() {
     self._requestedDisconnect = false;
     self._requestedConnect = true;
     ({ accountId, accessToken } = self);
-    const SpotifyAPI = accountId(9409).SpotifyAPI;
+    const SpotifyAPI = accountId(11683).SpotifyAPI;
     let obj = { url: null, query: null, onlyRetryOnAuthorizationErrors: true };
     obj[0] = constants.PLAYER;
     obj = { additional_types: null };
@@ -768,9 +768,9 @@ prototype["handleOpen"] = function handleOpen() {
   backoff.succeed();
   const pingInterval = this.pingInterval;
   pingInterval.start(closure_23, () => self.ping());
-  const profile = self(9409).getProfile(this.accountId, this.accessToken);
-  const obj = self(9409);
-  const devices = self(9409).getDevices(this.accountId, this.accessToken);
+  const profile = self(11683).getProfile(this.accountId, this.accessToken);
+  const obj = self(11683);
+  const devices = self(11683).getDevices(this.accountId, this.accessToken);
 };
 prototype["handleMessage"] = function handleMessage(data) {
   data = data.data;
@@ -1289,7 +1289,7 @@ const spotifyStore = new SpotifyStore(dispatcherDefault, {
           }
         }
         timeout1.start(100, () => closure_35.stop(), false);
-        obj9 = device(9509);
+        obj9 = device(9407);
       }
       if (null != tmp10) {
         if (!tmp22) {

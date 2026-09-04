@@ -1,13 +1,13 @@
-// Module ID: 11382
-// Function ID: 11383
+// Module ID: 11489
+// Function ID: 11490
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 5494, 4702, 673, 706, 586, 5490, 11383, 11380, 2]
+// Dependencies: [19, 7057, 4709, 673, 706, 586, 7053, 11490, 11487, 2]
 // Exports: default
 
-// Module 11382 (useBatchUpdateChannelSettings)
+// Module 11489 (useBatchUpdateChannelSettings)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "incrementVersion" /* 5494 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_4 from "incrementVersion" /* 7057 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4709 */;
 import { AnalyticsSections } from "ME" /* 673 */;
 
 const require = arg1;
@@ -47,13 +47,13 @@ export default function useBatchUpdateChannelSettings(arg0) {
         isCollapsedResult = null != id;
       }
       if (isCollapsedResult) {
-        let obj = callback(11383);
+        let obj = callback(11490);
         obj.categoryExpand(id);
       }
-      obj1 = callback(11380);
+      obj1 = callback(11487);
       if (obj1.hasNotSetUpChannelOptIn(closure_0)) {
         if (id === id) {
-          let tmp8Result = tmp8(11380);
+          let tmp8Result = tmp8(11487);
           obj = { include: null };
           const _Set2 = Set;
           const items = [id];
@@ -61,7 +61,7 @@ export default function useBatchUpdateChannelSettings(arg0) {
           obj[0] = set;
           const result = tmp8Result.optIntoAllChannelsForExistingMember(closure_0, obj);
         } else {
-          tmp8Result = tmp8(11380);
+          tmp8Result = tmp8(11487);
           obj = { exclude: null };
           const _Set = Set;
           const items1 = [id];
@@ -70,7 +70,7 @@ export default function useBatchUpdateChannelSettings(arg0) {
           const result1 = tmp8Result.optIntoAllChannelsForExistingMember(closure_0, obj);
         }
       } else {
-        const tmp8Result1 = tmp8(5490);
+        const tmp8Result1 = tmp8(7053);
         obj1 = { section: null };
         obj1[0] = constants.CHANNEL_BROWSER;
         const result2 = tmp8Result1.updateOptInChannelsImmediate(closure_0, id, !isChannelOptedInResult, obj1);

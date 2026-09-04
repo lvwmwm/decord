@@ -1,12 +1,12 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11842
+// Function ID: 11843
 // Name: useSafetyHubInitialized
-// Dependencies: [8720, 586, 2]
+// Dependencies: [8360, 586, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 11711 (useSafetyHubInitialized)
+// Module 11842 (useSafetyHubInitialized)
 import initialize from "initialize" /* 586 */;
-import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");

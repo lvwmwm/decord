@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1fa18e452308090b708bccf68d32d023", name: "QuestsIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 343, height: 149, scales: [1, 2, 3], hash: "486816aa941617e34b6723be8f7303c9", name: "family_center_linking_banner_image", type: "png" });

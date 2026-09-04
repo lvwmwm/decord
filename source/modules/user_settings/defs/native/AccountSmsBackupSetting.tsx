@@ -1,23 +1,23 @@
-// Module ID: 14642
-// Function ID: 14643
+// Module ID: 14723
+// Function ID: 14724
 // Name: toggle
-// Dependencies: [1921, 7896, 673, 7781, 586, 14638, 1233, 14573, 14640, 4859, 4724, 7780, 2008, 7783, 12, 11292, 14574, 2]
+// Dependencies: [1921, 7906, 673, 6983, 586, 14719, 1233, 14605, 14721, 4866, 4731, 6982, 2008, 6985, 12, 11400, 14606, 2]
 
-// Module 14642 (toggle)
+// Module 14723 (toggle)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
-import _modDef4859 from "module_4859" /* 4859 */;
-import ChangePhoneReason from "ChangePhoneReason" /* 7783 */;
-import _modDef14573 from "module_14573" /* 14573 */;
-import getSMSBackupDisabledMessage from "getSMSBackupDisabledMessage" /* 14638 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14640 */;
+import _modDef4731 from "module_4731" /* 4731 */;
+import _modDef4866 from "module_4866" /* 4866 */;
+import ChangePhoneReason from "ChangePhoneReason" /* 6985 */;
+import _modDef14605 from "module_14605" /* 14605 */;
+import getSMSBackupDisabledMessage from "getSMSBackupDisabledMessage" /* 14719 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14721 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import { UserFlags } from "ME" /* 673 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7781 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 6983 */;
 import apply from "apply" /* 12 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 let closure_6 = apply.debounce(function toggleSMS(user) {
@@ -29,7 +29,7 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
     const str2 = intl2.string(getSystemLocale.t["CIGa+7"]);
     let obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     const formatted1 = intl3.string(getSystemLocale.t.wlfmlR).toUpperCase();
-    obj[0] = _modDef14573.disableSMS;
+    obj[0] = _modDef14605.disableSMS;
     obj[1] = formatted1;
     obj[2] = formatted;
     showUserSettingsInputAlertDefault(obj);
@@ -42,21 +42,21 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
         const str = intl.string(getSystemLocale.t.DZQe23);
         obj = { title: null };
         obj[0] = formatted2;
-        const obj3 = _modDef4859;
-        _modDef4859.confirm(obj).then((arg0) => {
+        const obj3 = _modDef4866;
+        _modDef4866.confirm(obj).then((arg0) => {
           if (arg0) {
             callback(table[7]).enableSMS();
             const obj = callback(table[7]);
           }
         });
-        const confirmResult = _modDef4859.confirm(obj);
+        const confirmResult = _modDef4866.confirm(obj);
       }
     }
-    obj = _modDef4724;
+    obj = _modDef4731;
     obj1 = { reason: null };
     obj1[0] = ChangePhoneReason.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(7780, dependencyMap.paths), obj1, closure_5);
-    const tmp5 = asyncRequireImpl(7780, dependencyMap.paths);
+    obj.pushLazy(asyncRequireImpl(6982, dependencyMap.paths), obj1, closure_5);
+    const tmp5 = asyncRequireImpl(6982, dependencyMap.paths);
   }
 }, 200);
 apply = {

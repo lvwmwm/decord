@@ -1,13 +1,13 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9558
+// Function ID: 9559
 // Name: mediaEngineContextFromParticipantType
-// Dependencies: [4499, 4542, 2]
+// Dependencies: [4502, 4545, 2]
 // Exports: default
 
-// Module 9615 (mediaEngineContextFromParticipantType)
+// Module 9558 (mediaEngineContextFromParticipantType)
 import set from "set" /* 2 */;
-import ParticipantTypes2 from "ParticipantTypes" /* 4499 */;
-import DesktopSources from "DesktopSources" /* 4542 */;
+import ParticipantTypes2 from "ParticipantTypes" /* 4502 */;
+import DesktopSources from "DesktopSources" /* 4545 */;
 
 const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
 const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;

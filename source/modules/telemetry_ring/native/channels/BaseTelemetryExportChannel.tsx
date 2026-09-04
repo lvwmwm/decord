@@ -1,12 +1,12 @@
-// Module ID: 14078
-// Function ID: 14079
+// Module ID: 14110
+// Function ID: 14111
 // Name: getIntervalMs
-// Dependencies: [5, 14079, 3, 592, 2]
+// Dependencies: [5, 14111, 3, 592, 2]
 
-// Module 14078 (getIntervalMs)
+// Module 14110 (getIntervalMs)
 import timestampDefault from "timestamp" /* 3 */;
 import Storage2 from "Storage" /* 592 */;
-import appendDefault from "append" /* 14079 */;
+import appendDefault from "append" /* 14111 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;

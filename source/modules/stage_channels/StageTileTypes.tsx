@@ -1,9 +1,9 @@
-// Module ID: 10156
-// Function ID: 10157
+// Module ID: 9976
+// Function ID: 9977
 // Name: StageTileSize
 // Dependencies: [2]
 
-// Module 10156 (StageTileSize)
+// Module 9976 (StageTileSize)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/stage_channels/StageTileTypes.tsx");

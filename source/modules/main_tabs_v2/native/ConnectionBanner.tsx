@@ -1,25 +1,25 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16320
+// Function ID: 16321
 // Name: ConnectionBannerIcon
-// Dependencies: [32, 19, 17, 13577, 14940, 673, 21, 4478, 709, 1233, 4197, 16235, 16237, 4474, 686, 4217, 5544, 4941, 586, 695, 14939, 4928, 13578, 2]
+// Dependencies: [32, 19, 17, 13610, 15022, 673, 21, 4481, 709, 1233, 4197, 16321, 16323, 4477, 686, 4218, 5619, 4948, 586, 695, 15021, 4935, 13611, 2]
 // Exports: default
 
-// Module 16234 (ConnectionBannerIcon)
+// Module 16320 (ConnectionBannerIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import Text from "Text" /* 4474 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5544 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import Text from "Text" /* 4477 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5619 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "updateState" /* 13577 */;
-import { ConnectivityIndicatorState as closure_8 } from "updateState" /* 13577 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14940 */;
+import closure_7 from "updateState" /* 13610 */;
+import { ConnectivityIndicatorState as closure_8 } from "updateState" /* 13610 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ConnectionBannerIcon(state) {
@@ -39,14 +39,14 @@ function ConnectionBannerIcon(state) {
     obj1[0] = tmp.leadingSlot;
     const obj2 = { size: "xs", color: null };
     obj2[1] = tmp5(709).colors.INTERACTIVE_ICON_DEFAULT;
-    obj1[1] = callback2(tmp2(16235).ConnectionUnknownIcon, obj2);
+    obj1[1] = callback2(tmp2(16321).ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (tmp7.BACK_ONLINE === state) {
     obj = { style: null, children: null };
     obj[0] = tmp.leadingSlot;
     const obj3 = { size: "xs", color: null };
     obj3[1] = tmp5(709).colors.ICON_FEEDBACK_POSITIVE;
-    obj[1] = callback2(tmp2(16237).ConnectionFineIcon, obj3);
+    obj[1] = callback2(tmp2(16323).ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -95,7 +95,7 @@ function BackOnlineGlow(opacity) {
   items1 = [tmp.glow, { opacity: opacity.progress }];
   obj = { style: tmp.glow, maskElement: callback2(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 }), children: callback2(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 }) };
   obj[2] = callback2(_isNativeReflectConstructDefault, obj);
-  return callback2(_modDef4217.View, obj);
+  return callback2(_modDef4218.View, obj);
 }
 function ConnectionBannerInner() {
   let obj = _require(sharedValue[20]);
@@ -207,11 +207,11 @@ let closure_26 = { code: "function ConnectionBannerTsx2(){const{progress,CONNECT
 let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(13578).useConfig({ location: "ConnectionBanner" });
+  const config = stateFromStores(13611).useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   stateFromStores = undefined;
   dependencyMap = undefined;
-  let obj = stateFromStores(13578);
+  let obj = stateFromStores(13611);
   const items = [closure_7];
   stateFromStores = hidden(586).useStateFromStores(items, () => state.getState());
   dependencyMap = React.useRef(null);

@@ -1,10 +1,10 @@
-// Module ID: 4956
-// Function ID: 4957
+// Module ID: 4963
+// Function ID: 4964
 // Name: safelyPartiallyDecodeURIComponent
 // Dependencies: [1485, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4956 (safelyPartiallyDecodeURIComponent)
+// Module 4963 (safelyPartiallyDecodeURIComponent)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 

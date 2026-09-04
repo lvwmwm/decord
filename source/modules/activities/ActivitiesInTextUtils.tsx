@@ -1,10 +1,10 @@
-// Module ID: 8156
-// Function ID: 8157
+// Module ID: 9475
+// Function ID: 9476
 // Name: isActivityInTextSupportedForChannel
 // Dependencies: [1386, 4120, 502, 689, 586, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 8156 (isActivityInTextSupportedForChannel)
+// Module 9475 (isActivityInTextSupportedForChannel)
 import set from "set" /* 689 */;
 import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;

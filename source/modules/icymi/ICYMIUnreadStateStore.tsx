@@ -1,13 +1,13 @@
-// Module ID: 8639
-// Function ID: 8640
+// Module ID: 8279
+// Function ID: 8280
 // Name: initialize
-// Dependencies: [684, 8638, 8640, 586, 706, 2]
+// Dependencies: [684, 8278, 8280, 586, 706, 2]
 
-// Module 8639 (initialize)
+// Module 8279 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8638 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8278 */;
 
 require = arg1;
 let closure_2 = 7 * setDefault.Millis.DAY;
@@ -76,7 +76,7 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(dispatcherDefault, {
           result = null != prop;
         }
         if (!result) {
-          let tmp3Result = tmp3(8640);
+          let tmp3Result = tmp3(8280);
           let tmp8 = nextResult;
           result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
         }

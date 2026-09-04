@@ -1,9 +1,9 @@
-// Module ID: 6746
-// Function ID: 6747
+// Module ID: 6127
+// Function ID: 6128
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6746 (metadata)
+// Module 6127 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GuidelinesIllocon-2x.png.js");

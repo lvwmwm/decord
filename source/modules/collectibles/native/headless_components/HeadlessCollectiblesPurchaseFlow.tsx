@@ -1,18 +1,18 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 13096
+// Function ID: 13097
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 673, 502, 21, 8233, 12775, 10968, 1234, 4152, 10819, 10803, 4445, 12763, 12810, 2]
+// Dependencies: [19, 673, 502, 21, 9294, 8772, 10940, 1234, 4152, 10753, 10735, 4448, 8107, 13097, 2]
 // Exports: default
 
-// Module 12809 (HeadlessCollectiblesPurchaseFlow)
+// Module 13096 (HeadlessCollectiblesPurchaseFlow)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 1234 */;
-import apexExperiment from "apexExperiment" /* 8233 */;
-import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10803 */;
-import NativePaymentContextProvider from "NativePaymentContextProvider" /* 10819 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10968 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 12775 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12810 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 8772 */;
+import apexExperiment from "apexExperiment" /* 9294 */;
+import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10735 */;
+import NativePaymentContextProvider from "NativePaymentContextProvider" /* 10753 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10940 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13097 */;
 import { COLLECTIBLES_APPLICATION_ID as closure_3 } from "ME" /* 673 */;
 import { PaymentGateways } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -23,7 +23,7 @@ let result = require("set").fileFinishedImporting("modules/collectibles/native/h
 
 export default function HeadlessCollectiblesPurchaseFlow(arg0) {
   ({ product, analyticsLocations } = arg0);
-  ({ attempt, onBuy, onBuySettled } = arg0);
+  ({ attempt, onBuy, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
   const OTPACOMOrderExperiment = apexExperiment.OTPACOMOrderExperiment;
   let obj = getProductPurchaseState;
   const isPurchased = obj.useProductPurchaseState(product).isPurchased;
@@ -58,7 +58,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     activeSubscription: null,
     initialExternalGatewayFacet: useCollectiblesExternalGatewayFacetDefault(product),
     onOrderRetryCancellation() {
-      return callback2(4445).hideActionSheet(callback(12763).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+      return callback2(4448).hideActionSheet(callback(8107).PRODUCT_DETAILS_ACTION_SHEET_KEY);
     },
     checkoutAnalyticsFields: obj1,
     children: null
@@ -67,7 +67,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
   obj1 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id: closure_3 };
   const tmp3 = importDefault;
   const tmp4 = useCollectiblesExternalGatewayFacetDefault(product);
-  obj[9] = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuy, onBuySettled });
+  obj[9] = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile });
   obj[2] = jsx(NativeCheckoutStoreProviderDefault, {
     headless: true,
     paymentGateway: GOOGLE,
@@ -77,7 +77,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     activeSubscription: null,
     initialExternalGatewayFacet: useCollectiblesExternalGatewayFacetDefault(product),
     onOrderRetryCancellation() {
-      return callback2(4445).hideActionSheet(callback(12763).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+      return callback2(4448).hideActionSheet(callback(8107).PRODUCT_DETAILS_ACTION_SHEET_KEY);
     },
     checkoutAnalyticsFields: obj1,
     children: null
@@ -91,7 +91,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     activeSubscription: null,
     initialExternalGatewayFacet: useCollectiblesExternalGatewayFacetDefault(product),
     onOrderRetryCancellation() {
-      return callback2(4445).hideActionSheet(callback(12763).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+      return callback2(4448).hideActionSheet(callback(8107).PRODUCT_DETAILS_ACTION_SHEET_KEY);
     },
     checkoutAnalyticsFields: obj1,
     children: null

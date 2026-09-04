@@ -1,11 +1,11 @@
-// Module ID: 7209
-// Function ID: 7210
+// Module ID: 7388
+// Function ID: 7389
 // Name: createFromServer
-// Dependencies: [1935, 7210, 1923, 2]
+// Dependencies: [1935, 7389, 1923, 2]
 
-// Module 7209 (createFromServer)
+// Module 7388 (createFromServer)
 import toJSDefault from "toJS" /* 1935 */;
-import closure_0 from "createFromServer" /* 7210 */;
+import closure_0 from "createFromServer" /* 7389 */;
 import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_1 } from "GuildFeatures" /* 1923 */;
 
 toJSDefault;

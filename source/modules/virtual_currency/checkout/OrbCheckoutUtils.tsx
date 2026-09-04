@@ -1,15 +1,15 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 7181
+// Function ID: 7182
 // Name: getOrbPriceFromPrices
-// Dependencies: [673, 675, 6098, 1233, 6099, 4161, 2]
+// Dependencies: [673, 675, 7182, 1233, 7183, 4161, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 6097 (getOrbPriceFromPrices)
+// Module 7181 (getOrbPriceFromPrices)
 import set from "set" /* 2 */;
 import items2 from "items" /* 675 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ConstraintReasonCode2 from "ConstraintReasonCode" /* 6098 */;
-import _signOrder from "_signOrder" /* 6099 */;
+import ConstraintReasonCode2 from "ConstraintReasonCode" /* 7182 */;
+import _signOrder from "_signOrder" /* 7183 */;
 import ME from "ME" /* 673 */;
 
 ({ CurrencyCodes: obj1, MarketingURLs: c3, PriceSetAssignmentPurchaseTypes: c4 } = ME);
@@ -68,7 +68,7 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     let keFvXM = dependencyMap;
     let OrderSigningFailedWithConstraintsError = _signOrder.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(6099).OrderProcessingPendingError) {
+      if (code instanceof tmp(7183).OrderProcessingPendingError) {
         const intl5 = tmp(1233).intl;
         let stringResult = intl5.string(tmp(1233).t["2BmwgV"]);
       } else if (code.code === tmp(4161).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {

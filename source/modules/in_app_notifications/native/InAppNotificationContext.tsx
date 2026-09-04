@@ -1,10 +1,10 @@
-// Module ID: 10248
-// Function ID: 10249
+// Module ID: 10070
+// Function ID: 10071
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useInAppNotificationContext
 
-// Module 10248 (context)
+// Module 10070 (context)
 import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;

@@ -1,19 +1,19 @@
-// Module ID: 7828
-// Function ID: 7829
+// Module ID: 7838
+// Function ID: 7839
 // Name: _fetchChannelConversations
-// Dependencies: [5, 7351, 7829, 7353, 673, 7826, 706, 527, 7211, 7830, 4711, 4719, 2]
+// Dependencies: [5, 7529, 7839, 7531, 673, 7836, 706, 527, 7390, 7840, 4718, 4726, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 7828 (_fetchChannelConversations)
+// Module 7838 (_fetchChannelConversations)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import fetchSurveyDetailsDefault from "fetchSurveyDetails" /* 4711 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 4719 */;
-import trackInviteDefault from "trackInvite" /* 7211 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7830 */;
+import fetchSurveyDetailsDefault from "fetchSurveyDetails" /* 4718 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 4726 */;
+import trackInviteDefault from "trackInvite" /* 7390 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7840 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "removePendingListFetch" /* 7351 */;
-import closure_5 from "initialize" /* 7829 */;
-import { FETCH_LIMIT } from "CONVERSATION_COLORS" /* 7353 */;
+import closure_4 from "removePendingListFetch" /* 7529 */;
+import closure_5 from "initialize" /* 7839 */;
+import { FETCH_LIMIT } from "CONVERSATION_COLORS" /* 7531 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
@@ -137,7 +137,7 @@ function _fetchChannelConversations() {
                     return obj5;
                   }
                 }
-                obj15 = callback(7826);
+                obj15 = callback(7836);
               }
             } else if (2 === tmp7) {
               c6 = 0;
@@ -310,7 +310,7 @@ function _fetchConversationMessages() {
                   }
                 }
               }
-              obj14 = callback(7826);
+              obj14 = callback(7836);
               tmp52 = callback;
             }
           } else {

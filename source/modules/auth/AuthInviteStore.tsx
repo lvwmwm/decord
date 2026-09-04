@@ -1,12 +1,12 @@
-// Module ID: 4397
-// Function ID: 4398
+// Module ID: 4400
+// Function ID: 4401
 // Name: getGuild
-// Dependencies: [1425, 586, 706, 2]
+// Dependencies: [1426, 586, 706, 2]
 
-// Module 4397 (getGuild)
+// Module 4400 (getGuild)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
 
 require = arg1;
 let closure_2 = {};

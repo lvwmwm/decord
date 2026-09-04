@@ -1,15 +1,15 @@
-// Module ID: 7922
-// Function ID: 7923
+// Module ID: 7932
+// Function ID: 7933
 // Name: pickHelloSticker
-// Dependencies: [1921, 7923, 673, 11, 7211, 695, 2]
+// Dependencies: [1921, 7933, 673, 11, 7390, 695, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7922 (pickHelloSticker)
+// Module 7932 (pickHelloSticker)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import trackInviteDefault from "trackInvite" /* 7211 */;
+import trackInviteDefault from "trackInvite" /* 7390 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { WELCOME_STICKERS } from "items" /* 7923 */;
+import { WELCOME_STICKERS } from "items" /* 7933 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/welcome_cta/WelcomeCTAUtils.tsx");

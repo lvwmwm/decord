@@ -1,15 +1,15 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10145
+// Function ID: 10146
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 6013, 8109, 709, 4478, 10207, 1233, 4489, 10281, 8755, 10216, 2]
+// Dependencies: [19, 17, 21, 5539, 8743, 709, 4481, 10027, 1233, 4492, 10099, 8518, 10036, 2]
 // Exports: default
 
-// Module 10325 (AlertNotification)
+// Module 10145 (AlertNotification)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
@@ -24,7 +24,7 @@ export default function AlertNotification(notification) {
   channel = notification.channel;
   guild = notification.guild;
   const tmp = callback3();
-  obj = channel(10207);
+  obj = channel(10027);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -55,18 +55,18 @@ export default function AlertNotification(notification) {
   }, items1);
   obj = { icon: null, header: null, children: null, onPress: null, notification: null };
   obj = { children: null };
-  obj1 = { cutouts: items2, children: callback(guild(6013), { guild, selected: false }) };
+  obj1 = { cutouts: items2, children: callback(guild(5539), { guild, selected: false }) };
   items2 = [obj];
-  const items3 = [callback(guild(8109), obj1), ];
+  const items3 = [callback(guild(8743), obj1), ];
   const obj2 = { style: tmp.warningBadge, children: null };
-  const tmp8 = guild(8109);
-  obj2[1] = callback(channel(8755).WarningIcon, { style: tmp.warningIcon, color: guild(709).colors.ICON_FEEDBACK_WARNING });
+  const tmp8 = guild(8743);
+  obj2[1] = callback(channel(8518).WarningIcon, { style: tmp.warningIcon, color: guild(709).colors.ICON_FEEDBACK_WARNING });
   items3[1] = callback(View, obj2);
   obj[0] = items3;
   obj[0] = callback2(closure_6, obj);
   obj[1] = memo;
-  obj[2] = callback(channel(10216).SystemMessageText, { text: stringResult });
+  obj[2] = callback(channel(10036).SystemMessageText, { text: stringResult });
   obj[3] = callback;
   obj[4] = notification;
-  return callback(channel(10281).NotificationPressable, obj);
+  return callback(channel(10099).NotificationPressable, obj);
 };

@@ -1,14 +1,14 @@
-// Module ID: 9068
-// Function ID: 9069
+// Module ID: 11148
+// Function ID: 11149
 // Name: useDefaultAppLauncherWidth
-// Dependencies: [5632, 1492, 8448, 2]
+// Dependencies: [7091, 1492, 9338, 2]
 // Exports: useDefaultAppLauncherWidth
 
-// Module 9068 (useDefaultAppLauncherWidth)
+// Module 11148 (useDefaultAppLauncherWidth)
 import set from "set" /* 2 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5632 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8448 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9338 */;
 
 const ACTION_SHEET_MAX_WIDTH = ACTION_SHEET_START_HEIGHT_RATIO.ACTION_SHEET_MAX_WIDTH;
 const result = set.fileFinishedImporting("modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx");

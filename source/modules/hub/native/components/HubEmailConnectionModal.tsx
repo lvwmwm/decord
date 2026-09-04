@@ -1,19 +1,19 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12659
+// Function ID: 12660
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 12493, 21, 4478, 5501, 5504, 12502, 500, 12505, 12508, 12510, 12511, 12512, 12515, 5562, 1498, 5950, 12517, 6017, 1233, 2]
+// Dependencies: [19, 12651, 21, 4481, 5637, 5579, 12660, 500, 12663, 12666, 12668, 12669, 12670, 12673, 7063, 1498, 5553, 12675, 6940, 1233, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 12501 (HubEmailConnectionModal)
+// Module 12659 (HubEmailConnectionModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useNavigation from "useNavigation" /* 1498 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import useInitialValueDefault from "useInitialValue" /* 5950 */;
-import NavigationStack from "NavigationStack" /* 6017 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12493 */;
+import useInitialValueDefault from "useInitialValue" /* 5553 */;
+import NavigationStack from "NavigationStack" /* 6940 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12651 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -81,7 +81,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12502), {});
+        return navigation(callback(12660), {});
       }
     };
     obj2[closure_1_3.VERIFY_EMAIL] = {
@@ -96,7 +96,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12505), {});
+        return navigation(callback(12663), {});
       }
     };
     obj2[closure_1_3.EMAIL_WAITLIST] = {
@@ -106,7 +106,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12508), {});
+        return navigation(callback(12666), {});
       }
     };
     obj2[closure_1_3.SUBMIT_SCHOOL] = {
@@ -116,7 +116,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12510), {});
+        return navigation(callback(12668), {});
       }
     };
     obj2[closure_1_3.SELECT_SCHOOL] = {
@@ -126,7 +126,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12511), {});
+        return navigation(callback(12669), {});
       }
     };
     obj2[closure_1_3.VERIFY_PIN] = {
@@ -136,7 +136,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12512), {});
+        return navigation(callback(12670), {});
       }
     };
     obj2[closure_1_3.SELECT_SCHOOL_SEARCH] = {
@@ -144,7 +144,7 @@ export default function HubEmailConnectionModal(arg0) {
       headerShown: false,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12515), {});
+        return navigation(callback(12673), {});
       }
     };
     obj1[0] = obj2;

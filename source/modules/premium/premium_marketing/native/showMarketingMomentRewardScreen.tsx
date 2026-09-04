@@ -1,12 +1,12 @@
-// Module ID: 13296
-// Function ID: 13297
+// Module ID: 13329
+// Function ID: 13330
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: [5, 7297, 7296, 11048, 2]
+// Dependencies: [5, 7475, 7474, 11009, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 13296 (_showMarketingMomentRewardScreen)
+// Module 13329 (_showMarketingMomentRewardScreen)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7297 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
 
 const require = arg1;
 function _showMarketingMomentRewardScreen() {

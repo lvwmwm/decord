@@ -1,10 +1,10 @@
-// Module ID: 16436
-// Function ID: 16437
+// Module ID: 16522
+// Function ID: 16523
 // Name: items
-// Dependencies: [1233, 3500, 16437, 2]
+// Dependencies: [1233, 3500, 16523, 2]
 // Exports: describeVibegrationsModelSettings, matchVibegrationsEffortPreset, vibegrationsSettingsForTier
 
-// Module 16436 (items)
+// Module 16522 (items)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3500 */;
@@ -77,7 +77,7 @@ export const describeVibegrationsModelSettings = function describeVibegrationsMo
   if (label == null) {
     label = model;
   }
-  let tmp3 = model(16437).THINKING_LABELS[thinking];
+  let tmp3 = model(16523).THINKING_LABELS[thinking];
   if (tmp3 == null) {
     tmp3 = thinking;
   }

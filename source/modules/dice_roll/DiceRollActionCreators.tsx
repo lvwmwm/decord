@@ -1,10 +1,10 @@
-// Module ID: 6101
-// Function ID: 6102
+// Module ID: 7185
+// Function ID: 7186
 // Name: startDiceRoll
 // Dependencies: [706, 2]
 // Exports: startDiceRoll
 
-// Module 6101 (startDiceRoll)
+// Module 7185 (startDiceRoll)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

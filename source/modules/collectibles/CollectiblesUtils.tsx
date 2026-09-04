@@ -1,10 +1,10 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7487
+// Function ID: 7488
 // Name: getItemRecordsFromPurchases
-// Dependencies: [7302, 1947, 7303, 7304, 7310, 675, 673, 502, 4139, 1927, 1929, 7311, 6090, 1234, 1949, 12, 1233, 7308, 2]
+// Dependencies: [7480, 1947, 7481, 7482, 7488, 675, 673, 502, 4139, 1927, 1929, 7489, 7174, 1234, 1949, 12, 1233, 7486, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7309 (getItemRecordsFromPurchases)
+// Module 7487 (getItemRecordsFromPurchases)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 import sum from "sum" /* 502 */;
@@ -13,11 +13,11 @@ import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1927 */;
 import fromServer from "fromServer" /* 1947 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6090 */;
-import fromServer2 from "fromServer" /* 7302 */;
-import fromServer3 from "fromServer" /* 7303 */;
-import fromServer4 from "fromServer" /* 7304 */;
-import fromServer5 from "fromServer" /* 7310 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
+import fromServer2 from "fromServer" /* 7480 */;
+import fromServer3 from "fromServer" /* 7481 */;
+import fromServer4 from "fromServer" /* 7482 */;
+import fromServer5 from "fromServer" /* 7488 */;
 import items from "items" /* 675 */;
 import ME from "ME" /* 673 */;
 
@@ -157,7 +157,7 @@ export const getShopDiscountSource = function getShopDiscountSource(currentUser)
             NITRO = obj.THIRDPARTY;
           }
         }
-        tmp4Result = tmp4(7311);
+        tmp4Result = tmp4(7489);
       }
       return NITRO;
     }

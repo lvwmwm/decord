@@ -1,17 +1,17 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11834
+// Function ID: 11835
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 8720, 21, 4478, 709, 586, 1233, 5631, 4927, 5077, 5560, 11688, 7820, 4474, 4929, 2]
+// Dependencies: [32, 19, 17, 8360, 21, 4481, 709, 586, 1233, 7090, 4934, 5084, 5635, 11818, 7025, 4477, 4936, 2]
 // Exports: default
 
-// Module 11704 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11834 (AppealIngestionFreeTextAppealReasonActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8720 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

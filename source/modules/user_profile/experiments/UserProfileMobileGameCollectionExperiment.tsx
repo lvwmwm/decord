@@ -1,12 +1,12 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 8963
+// Function ID: 8964
 // Name: useIsMobileGameCollectionExperimentEnabled
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 12737 (useIsMobileGameCollectionExperimentEnabled)
+// Module 8963 (useIsMobileGameCollectionExperimentEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

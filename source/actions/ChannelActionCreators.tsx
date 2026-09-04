@@ -1,21 +1,21 @@
-// Module ID: 4491
-// Function ID: 4492
-// Dependencies: [32, 5, 4492, 1390, 1386, 4493, 673, 9897, 527, 5468, 4333, 4489, 5364, 706, 8664, 695, 1219, 1362, 1233, 6177, 4756, 2]
+// Module ID: 4494
+// Function ID: 4495
+// Dependencies: [32, 5, 4495, 1390, 1386, 4496, 673, 9111, 527, 5477, 4336, 4492, 5372, 706, 8304, 695, 1219, 1362, 1233, 7261, 4763, 2]
 
-// Module 4491
+// Module 4494
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import transitionTo from "transitionTo" /* 1219 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import transitionToChannel from "transitionToChannel" /* 4489 */;
-import _modDef5364 from "module_5364" /* 5364 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 8664 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
+import transitionToChannel from "transitionToChannel" /* 4492 */;
+import _modDef5372 from "module_5372" /* 5372 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 8304 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 4492 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 4495 */;
 import { createChannelRecordFromServer as closure_6 } from "createChannelRecord" /* 1390 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "generateOldThreadCutoff" /* 4493 */;
+import closure_8 from "generateOldThreadCutoff" /* 4496 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -280,13 +280,13 @@ export default {
           c4();
         }
         if (null != obj2.getRootNavigationRef()) {
-          tmp6(4489).transitionToChannel(channel.id, { navigationReplace: true });
+          tmp6(4492).transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
-          const tmp6Result = tmp6(4489);
+          const tmp6Result = tmp6(4492);
         } else {
-          const privateChannel = _modDef5364.selectPrivateChannel(channel.id);
+          const privateChannel = _modDef5372.selectPrivateChannel(channel.id);
           tmp3 = channel;
-          const obj3 = _modDef5364;
+          const obj3 = _modDef5372;
         }
         obj2 = getRootNavigationRef;
         tmp6 = require;
@@ -419,8 +419,8 @@ export default {
       transitionToChannel.transitionToChannel(tmp.id, { navigationReplace: true });
       const tmp5Result = transitionToChannel;
     } else {
-      const privateChannel = _modDef5364.selectPrivateChannel(tmp.id);
-      const tmp2Result = _modDef5364;
+      const privateChannel = _modDef5372.selectPrivateChannel(tmp.id);
+      const tmp2Result = _modDef5372;
     }
     return tmp;
   },
@@ -441,7 +441,7 @@ export default {
       tmpResult.track(constants.CHANGE_LOG_DM_REMOVED, obj);
     }
     tmpResult = tmp(706);
-    obj = { id, guild_id: "Array", parent_id: "isArray" };
+    obj = { id, guild_id: "Array", parent_id: "context" };
     tmpResult.dispatch({ type: "CHANNEL_DELETE", channel: obj, silent: flag2 });
     if (flag) {
       transitionTo.transitionTo(constants2.FRIENDS);
@@ -580,7 +580,7 @@ export default {
         tmp10 = isThreadResult;
       }
       if (!tmp10) {
-        obj1 = closure_1_1(6177);
+        obj1 = closure_1_1(7261);
         const result = obj1.checkGuildTemplateDirty(guildId);
       }
       return closure_1;
@@ -907,7 +907,7 @@ export default {
     } else {
       result = closure_11.CHANNEL_STORE_LISTING(arg0);
     }
-    const result1 = _require(4756).httpGetWithCountryCodeQuery(result);
+    const result1 = _require(4763).httpGetWithCountryCodeQuery(result);
     return result1.then((body) => {
       let obj = closure_1_1(closure_1_2[13]);
       obj = { type: "STORE_LISTING_FETCH_SUCCESS", channelId: closure_0, storeListing: body.body };
@@ -939,7 +939,7 @@ export default {
       const obj4 = closure_1_0(527);
       obj2[3] = obj4.rejectWithMigratedError();
       closure_0 = yield HTTP.post(obj2);
-      const obj = closure_1_1(6177);
+      const obj = closure_1_1(7261);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();

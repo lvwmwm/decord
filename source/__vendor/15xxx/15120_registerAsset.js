@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "539778d237b9fff9f8baff59e260a9fa", name: "breaddog_1", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 48, height: 45, scales: [1, 2, 3], hash: "c5d12ec01d5a82b43884ceb5bc673c98", name: "wreath_dark", type: "png" });

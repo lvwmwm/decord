@@ -1,9 +1,9 @@
-// Module ID: 13999
-// Function ID: 14000
+// Module ID: 14031
+// Function ID: 14032
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 2]
 
-// Module 13999 (__INTERNAL_VIEW_CONFIG)
+// Module 14031 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;

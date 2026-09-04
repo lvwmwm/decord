@@ -1,26 +1,26 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 13086
+// Function ID: 13087
 // Name: OrbCheckoutErrorCard
-// Dependencies: [19, 17, 21, 4478, 709, 4927, 7720, 4474, 10971, 1233, 10977, 12798, 6097, 4413, 12800, 4929, 1362, 10978, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4934, 6550, 4477, 10941, 1233, 10943, 13085, 7181, 4416, 13087, 4936, 1362, 8767, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 12799 (OrbCheckoutErrorCard)
+// Module 13086 (OrbCheckoutErrorCard)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4413 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import Button from "Button" /* 4929 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7720 */;
-import ProfileEffectAssetPreviewDefault from "ProfileEffectAssetPreview" /* 10971 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 10977 */;
-import OrbsIcon from "OrbsIcon" /* 10978 */;
-import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 12798 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 12800 */;
+import useThemeDefault from "useTheme" /* 4416 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import Button from "Button" /* 4936 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6550 */;
+import OrbsIcon from "OrbsIcon" /* 8767 */;
+import ProfileEffectAssetPreviewDefault from "ProfileEffectAssetPreview" /* 10941 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 10943 */;
+import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 13085 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 13087 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
@@ -92,12 +92,12 @@ export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSource
   return callback2(closure_4, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
-  let obj = skuId(12798);
+  let obj = skuId(13085);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = React.useMemo(() => skuId(closure_1_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
   obj = { style: callback3().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
-  return callback(skuId(4474).Text, obj);
+  return callback(skuId(4477).Text, obj);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {
   const tmp2 = useThemeDefault();

@@ -1,20 +1,20 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9657
+// Function ID: 9658
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 4120, 4130, 1921, 7281, 673, 21, 4478, 709, 6239, 9713, 9699, 4674, 586, 4982, 9701, 9702, 1233, 4474, 5077, 1890, 9716, 9685, 4445, 9381, 2008, 1296, 9698, 2]
+// Dependencies: [19, 17, 4120, 4130, 1921, 7459, 673, 21, 4481, 709, 6561, 9655, 9641, 4681, 586, 4989, 9643, 9644, 1233, 4477, 5084, 1890, 9658, 9627, 4448, 9355, 2008, 1296, 9640, 2]
 // Exports: default
 
-// Module 9715 (EditGuildEventChannelSelection)
+// Module 9657 (EditGuildEventChannelSelection)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "scheduledEventSort" /* 7281 */;
+import closure_8 from "scheduledEventSort" /* 7459 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -40,14 +40,14 @@ export default function EditGuildEventChannelSelection(guild) {
   closure_8 = undefined;
   let constants;
   const tmp = callback2();
-  let obj = guild(6239);
+  let obj = guild(6561);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   closure_5 = tmp5;
-  obj1 = guild(9713);
+  obj1 = guild(9655);
   closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(9699);
+  let obj2 = guild(9641);
   closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp7 = channel(4674)(channel);
+  const tmp7 = channel(4681)(channel);
   let obj3 = guild(586);
   const items = [closure_5];
   closure_8 = obj3.useStateFromStores(items, () => closure_5.can(closure_1_10.MANAGE_CHANNELS, guild));
@@ -56,16 +56,16 @@ export default function EditGuildEventChannelSelection(guild) {
   const items2 = [guildEventId];
   constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    let tmp2Result = tmp2(4982);
+    let tmp2Result = tmp2(4989);
     let channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(9701);
+    channelIcon = tmp6(9643);
   }
   if (null != channel) {
-    tmp2Result = tmp2(4982);
+    tmp2Result = tmp2(4989);
     let LocationIcon = tmp2Result.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(9702).LocationIcon;
+    LocationIcon = tmp2(9644).LocationIcon;
   }
   let intl = tmp2(1233).intl;
   let string = intl.string;
@@ -78,7 +78,7 @@ export default function EditGuildEventChannelSelection(guild) {
   obj = { style: items3, children: null };
   items3 = [tmp.container, guild.style];
   obj = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
-  const items4 = [callback(guild(4474).Text, obj), ];
+  const items4 = [callback(guild(4477).Text, obj), ];
   obj1 = { accessibilityLabel: stringResult, accessibilityHint: null, accessibilityValue: null, accessibilityRole: "button", style: null, onPress: null, children: null };
   const intl2 = tmp2(1233).intl;
   obj1[1] = intl2.string(guild(1233).t.AaXbMD);
@@ -151,10 +151,10 @@ export default function EditGuildEventChannelSelection(guild) {
   }
   const items6 = [tmp12Result, , ];
   obj4 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
-  items6[1] = callback(guild(4474).Text, obj4);
-  items6[2] = callback(guild(1296).Icon, { source: channel(9698) });
+  items6[1] = callback(guild(4477).Text, obj4);
+  items6[2] = callback(guild(1296).Icon, { source: channel(9640) });
   obj1[6] = items6;
-  items4[1] = closure_12(guild(5077).PressableOpacity, obj1);
+  items4[1] = closure_12(guild(5084).PressableOpacity, obj1);
   obj[1] = items4;
   return closure_12(View, obj);
 };

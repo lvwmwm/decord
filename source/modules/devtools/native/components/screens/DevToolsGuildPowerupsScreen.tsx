@@ -1,24 +1,24 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15625
+// Function ID: 15626
 // Name: setWarningBoosts
-// Dependencies: [5, 19, 17, 1339, 12362, 1908, 4299, 15544, 673, 21, 4478, 709, 527, 4074, 4373, 12288, 15458, 6002, 12294, 1369, 1372, 1627, 586, 4474, 6001, 5608, 2]
+// Dependencies: [5, 19, 17, 1339, 12494, 1908, 4302, 15626, 673, 21, 4481, 709, 527, 4074, 4376, 12420, 15540, 7141, 12426, 1369, 1372, 1627, 586, 4477, 5642, 5560, 2]
 // Exports: default
 
-// Module 15543 (setWarningBoosts)
+// Module 15625 (setWarningBoosts)
 import ThemesDefault from "Themes" /* 709 */;
-import TableSwitchRow from "TableSwitchRow" /* 6002 */;
-import useToggleDismissibleContentDismissStateDefault from "useToggleDismissibleContentDismissState" /* 15458 */;
+import TableSwitchRow from "TableSwitchRow" /* 7141 */;
+import useToggleDismissibleContentDismissStateDefault from "useToggleDismissibleContentDismissState" /* 15540 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_8 from "handleModifyingAppliedBoostStart" /* 12362 */;
+import closure_8 from "handleModifyingAppliedBoostStart" /* 12494 */;
 import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "handleConnectionOpen" /* 4299 */;
-import items from "items" /* 15544 */;
+import closure_10 from "handleConnectionOpen" /* 4302 */;
+import items from "items" /* 15626 */;
 import { Endpoints } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function setWarningBoosts() {
@@ -95,9 +95,9 @@ function _setWarningBoosts() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(4373);
+            obj = callback(4376);
             const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(callback);
-            obj1 = callback(12288);
+            obj1 = callback(12420);
             const guildBoostEntitlements = obj1.fetchGuildBoostEntitlements(callback, true);
             c6 = 3;
             return { value: "HermesInternal", done: null };
@@ -209,7 +209,7 @@ function GuildDCSwitchRow(dc) {
       const obj2 = dc(closure_1_2[18]);
     }
   }, items);
-  return callback4(dc(6002).TableSwitchRow, { label: callback2(dc), value: dc.isDismissed, onValueChange: callback });
+  return callback4(dc(7141).TableSwitchRow, { label: callback2(dc), value: dc.isDismissed, onValueChange: callback });
 }
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
 ({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = items);
@@ -275,7 +275,7 @@ export default function DevToolsGuildPowerupsScreen() {
     const items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     obj[0] = items4;
-    obj[1] = callback4(tmp5(4474).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" });
+    obj[1] = callback4(tmp5(4477).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" });
     let tmp16Result = callback4(closure_6, obj);
   } else {
     obj = { style: null, contentContainerStyle: null, children: null };
@@ -296,33 +296,33 @@ export default function DevToolsGuildPowerupsScreen() {
     obj3[1] = function onPress() {
       return stateFromStores(arr[15]).guildPowerupsResetNotifications();
     };
-    obj2[2] = callback4(tmp5(5608).TableRow, obj3);
-    const items6 = [callback4(tmp5(6001).TableRowGroup, obj2), , , , , , ];
+    obj2[2] = callback4(tmp5(5560).TableRow, obj3);
+    const items6 = [callback4(tmp5(5642).TableRowGroup, obj2), , , , , , ];
     const obj4 = { title: "Warning State", hasIcons: false, children: null };
     const obj5 = { label: "Set Half Boosts expiring in 1 day", onPress: null };
     obj5[1] = function onPress() {
       return closure_1_21(stateFromStores, arr.slice(Math.floor(arr.length / 2)), false);
     };
-    const items7 = [callback4(tmp5(5608).TableRow, obj5), ];
+    const items7 = [callback4(tmp5(5560).TableRow, obj5), ];
     const obj6 = { label: "Reset End Date", onPress: null };
     obj6[1] = function onPress() {
       return closure_1_21(stateFromStores, closure_2, true);
     };
-    items7[1] = callback4(tmp5(5608).TableRow, obj6);
+    items7[1] = callback4(tmp5(5560).TableRow, obj6);
     obj4[2] = items7;
-    items6[1] = closure_19(tmp5(6001).TableRowGroup, obj4);
+    items6[1] = closure_19(tmp5(5642).TableRowGroup, obj4);
     const obj7 = { title: "User Level DCs", hasIcons: false, children: null };
     obj7[2] = closure_13.map((dc) => callback(closure_24, { dc }, dc));
-    items6[2] = callback4(tmp5(6001).TableRowGroup, obj7);
+    items6[2] = callback4(tmp5(5642).TableRowGroup, obj7);
     const obj8 = { title: "Guild Level DCs", hasIcons: false, children: null };
     obj8[2] = closure_11.map((dc) => closure_1_18(closure_1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc));
-    items6[3] = callback4(tmp5(6001).TableRowGroup, obj8);
+    items6[3] = callback4(tmp5(5642).TableRowGroup, obj8);
     const obj9 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: null };
     obj9[2] = closure_12.map((dc) => closure_1_18(closure_1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc));
-    items6[4] = callback4(tmp5(6001).TableRowGroup, obj9);
+    items6[4] = callback4(tmp5(5642).TableRowGroup, obj9);
     const obj10 = { title: "Powerup Rollback DCs", hasIcons: false, children: null };
     obj10[2] = closure_14.map((dc) => callback(closure_24, { dc }, dc));
-    items6[5] = callback4(tmp5(6001).TableRowGroup, obj10);
+    items6[5] = callback4(tmp5(5642).TableRowGroup, obj10);
     const obj11 = { title: "System Messages", hasIcons: false, children: null };
     const obj12 = { label: "Send Powerups System Message", onPress: null };
     obj12[1] = function onPress() {
@@ -337,8 +337,8 @@ export default function DevToolsGuildPowerupsScreen() {
         return applyArgumentsResult;
       })(stateFromStores);
     };
-    obj11[2] = callback4(tmp5(5608).TableRow, obj12);
-    items6[6] = callback4(tmp5(6001).TableRowGroup, obj11);
+    obj11[2] = callback4(tmp5(5560).TableRow, obj12);
+    items6[6] = callback4(tmp5(5642).TableRowGroup, obj11);
     obj[2] = items6;
     tmp16Result = tmp16(closure_5, obj);
     const tmp17 = closure_5;

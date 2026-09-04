@@ -1,10 +1,10 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9704
+// Function ID: 9705
 // Name: SHARE_EVENT_DETAILS_LINK
 // Dependencies: [2]
 // Exports: SHARE_EVENT_DETAILS_LINK, canUseInviteModal
 
-// Module 9770 (SHARE_EVENT_DETAILS_LINK)
+// Module 9704 (SHARE_EVENT_DETAILS_LINK)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/utils/ShareEventUtils.tsx");

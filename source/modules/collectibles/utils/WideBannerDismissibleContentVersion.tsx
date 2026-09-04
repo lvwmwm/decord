@@ -1,11 +1,11 @@
-// Module ID: 13966
-// Function ID: 13967
+// Module ID: 13998
+// Function ID: 13999
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: [7341, 675, 7328, 2]
+// Dependencies: [7519, 675, 7506, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13966 (getWideBannerDismissibleContentVersion)
-import closure_2 from "map" /* 7341 */;
+// Module 13998 (getWideBannerDismissibleContentVersion)
+import closure_2 from "map" /* 7519 */;
 import { CollectibleShopTab } from "items" /* 675 */;
 
 const require = arg1;

@@ -1,21 +1,21 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 14740
+// Function ID: 14741
 // Name: items
-// Dependencies: [19, 17, 1921, 21, 4478, 709, 7348, 14660, 14661, 4172, 5376, 4734, 14662, 2]
+// Dependencies: [19, 17, 1921, 21, 4481, 709, 7526, 14741, 14742, 4172, 5384, 4741, 14743, 2]
 // Exports: default
 
-// Module 14659 (items)
+// Module 14740 (items)
 import ThemesDefault from "Themes" /* 709 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5376 */;
-import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14660 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14662 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5384 */;
+import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14741 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14743 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 createCacheKey = { noticeContainer: null };

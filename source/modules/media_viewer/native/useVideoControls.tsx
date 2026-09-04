@@ -1,17 +1,17 @@
-// Module ID: 8593
-// Function ID: 8594
+// Module ID: 8200
+// Function ID: 8201
 // Name: useVideoControls
-// Dependencies: [32, 19, 4470, 21, 641, 702, 8594, 4478, 586, 8586, 8595, 8587, 8596, 2]
+// Dependencies: [32, 19, 4473, 21, 641, 702, 8201, 4481, 586, 8192, 8202, 8193, 8203, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8593 (useVideoControls)
+// Module 8200 (useVideoControls)
 import batchUpdates from "batchUpdates" /* 702 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { jsx } from "jsxProd" /* 21 */;
 import keys from "keys" /* 641 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 keys = keys.create(() => ({ controls: "PX_16", paused: true }));

@@ -1,21 +1,21 @@
-// Module ID: 11399
-// Function ID: 11400
+// Module ID: 11506
+// Function ID: 11507
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1995, 1934, 4323, 7376, 673, 1300, 5361, 21, 4478, 709, 5360, 11400, 5236, 1430, 1362, 1296, 11403, 11404, 4197, 11405, 11406, 4446, 5990, 4193, 1233, 8660, 4701, 4190, 5077, 4474, 4204, 586, 7258, 11407, 2]
+// Dependencies: [19, 17, 1995, 1934, 4326, 7554, 673, 1300, 5369, 21, 4481, 709, 5368, 11507, 5244, 1431, 1362, 1296, 11510, 11511, 4197, 11512, 11513, 4449, 7130, 4193, 1233, 8300, 4708, 4190, 5084, 4477, 4205, 586, 7436, 11514, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11399 (LegacyUserProfileConnections)
+// Module 11506 (LegacyUserProfileConnections)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "_getSystemLocale" /* 1995 */;
 import closure_7 from "createdAt" /* 1934 */;
-import closure_8 from "initialize" /* 4323 */;
-import closure_9 from "createUserWidgetFromServer" /* 7376 */;
+import closure_8 from "initialize" /* 4326 */;
+import closure_9 from "createUserWidgetFromServer" /* 7554 */;
 import ME from "ME" /* 673 */;
-import { MetadataFields } from "OperatorTypes" /* 5361 */;
+import { MetadataFields } from "OperatorTypes" /* 5369 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 class ConnectedUserAccount {
@@ -358,7 +358,7 @@ class ConnectedApplicationUserRoleAccount {
             obj = { style: obj.connectedAccountPoweredByText, children: null };
             let tmp5 = null;
             if (null != applicationRoleConnection.application.bot) {
-              obj = { style: null, user: null, size: null, guildId: "PX_16" };
+              obj = { style: null, user: null, size: null, guildId: "Array" };
               obj[0] = tmp3.connectedAccountPoweredByAvatar;
               const tmp12 = new closure_1_7(tmp4.application.bot);
               obj[1] = tmp12;
@@ -525,8 +525,8 @@ export { ConnectedUserAccount };
 export { ConnectedApplicationUserRoleAccount };
 export const useAppplicationRoleConnectionItems = function useAppplicationRoleConnectionItems(arr) {
   const _require = arg1;
-  const theme = _require(4204).useThemeContext().theme;
-  const obj = _require(4204);
+  const theme = _require(4205).useThemeContext().theme;
+  const obj = _require(4205);
   const items = [closure_6];
   dependencyMap = _require(586).useStateFromStores(items, () => closure_6.locale);
   return arr.map((applicationRoleConnection) => {

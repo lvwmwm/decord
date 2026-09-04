@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MushroomIcon", width: 60, height: 60, scales: [2, 3], hash: "d0258153ad64bd0da42bc5243da496aa", name: "MushroomIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 16, height: 16, scales: [2, 3], hash: "4d6296c901620eb3ce6d9e0093bbc96e", name: "scrubber", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12712
+// Function ID: 12713
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4470, 4506, 21, 4478, 586, 4217, 4479, 1296, 1233, 4929, 2]
+// Dependencies: [19, 17, 4473, 4509, 21, 4481, 586, 4218, 4482, 1296, 1233, 4936, 2]
 // Exports: default
 
-// Module 12554 (ActivitiesPrivateChannelCallTooltip)
+// Module 12712 (ActivitiesPrivateChannelCallTooltip)
 import noopAll from "noop" /* 19 */;
-import _modDef4217 from "module_4217" /* 4217 */;
+import _modDef4218 from "module_4218" /* 4218 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { EMBEDDED_ACTIVITIES_BLOG_POST_URL as closure_5 } from "items3" /* 4506 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import { EMBEDDED_ACTIVITIES_BLOG_POST_URL as closure_5 } from "items3" /* 4509 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -48,11 +48,11 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  obj = { withRepeat: tmp2(4217).withRepeat, withSequence: tmp2(4217).withSequence, withTiming: tmp2(4479).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: tmp2(4218).withRepeat, withSequence: tmp2(4218).withSequence, withTiming: tmp2(4482).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
-  const animatedStyle = num(4217).useAnimatedStyle(T);
+  const animatedStyle = num(4218).useAnimatedStyle(T);
   obj = { style: items1, children: null };
   items1 = [tmp.tooltipContainer, animatedStyle];
   obj1 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null };
@@ -66,8 +66,8 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = tmp2(1233).intl;
   obj4[0] = intl3.string(num(1233).t["NX+WJN"]);
   obj4[1] = onClosePress.onClosePress;
-  obj3[1] = jsx(num(4929).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj3[1] = jsx(num(4936).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj[1] = jsx(num(1296).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
-  return jsx(_modDef4217.View, { style: items1, children: null });
+  return jsx(_modDef4218.View, { style: items1, children: null });
 };

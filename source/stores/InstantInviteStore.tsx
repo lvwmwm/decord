@@ -1,16 +1,16 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8309
+// Function ID: 8310
 // Name: map
-// Dependencies: [8670, 7492, 8671, 8673, 8674, 586, 706, 2]
+// Dependencies: [8310, 7669, 8311, 8313, 8314, 586, 706, 2]
 
-// Module 8669 (map)
+// Module 8309 (map)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import headDefault from "head" /* 8671 */;
-import reverseDefault from "reverse" /* 8673 */;
-import _modDef8674 from "module_8674" /* 8674 */;
-import closure_3 from "createFromServer" /* 8670 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7492 */;
+import headDefault from "head" /* 8311 */;
+import reverseDefault from "reverse" /* 8313 */;
+import _modDef8314 from "module_8314" /* 8314 */;
+import closure_3 from "createFromServer" /* 8310 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7669 */;
 
 let closure_5 = {};
 let closure_6 = {};
@@ -92,7 +92,7 @@ const instantInviteStore = new InstantInviteStore(dispatcherDefault, {
     closure_8[invite.invite.code] = closure_3.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    let tmpResult = tmp(tmp2(_modDef8674(Object.values(closure_8), "createdAt")));
+    let tmpResult = tmp(tmp2(_modDef8314(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
     }
@@ -114,7 +114,7 @@ const instantInviteStore = new InstantInviteStore(dispatcherDefault, {
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8674(Object.values(closure_8), "createdAt")));
+    let tmp2Result = tmp2(tmp3(_modDef8314(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
@@ -166,7 +166,7 @@ const instantInviteStore = new InstantInviteStore(dispatcherDefault, {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8674(Object.values(closure_8), "createdAt")));
+    let tmp2Result = tmp2(tmp3(_modDef8314(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }

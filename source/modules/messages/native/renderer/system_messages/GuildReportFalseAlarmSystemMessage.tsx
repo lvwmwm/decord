@@ -1,18 +1,18 @@
-// Module ID: 7961
-// Function ID: 7962
+// Module ID: 7971
+// Function ID: 7972
 // Name: createGuildReportFalseAlarmSystemMessage
-// Dependencies: [1386, 7874, 7881, 7953, 7883, 7954, 7885, 1233, 1433, 1430, 2]
+// Dependencies: [1386, 7884, 7891, 7963, 7893, 7964, 7895, 1233, 1434, 1431, 2]
 // Exports: createGuildReportFalseAlarmSystemMessage
 
-// Module 7961 (createGuildReportFalseAlarmSystemMessage)
+// Module 7971 (createGuildReportFalseAlarmSystemMessage)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
-import resultDefault from "result" /* 7874 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7881 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
-import nativeStyleProperties from "nativeStyleProperties" /* 7953 */;
-import getTagPropertiesDefault from "getTagProperties" /* 7954 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+import resultDefault from "result" /* 7884 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
+import nativeStyleProperties from "nativeStyleProperties" /* 7963 */;
+import getTagPropertiesDefault from "getTagProperties" /* 7964 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 
 require = arg1;
@@ -37,8 +37,8 @@ export const createGuildReportFalseAlarmSystemMessage = function createGuildRepo
     automodUsernameColor = null;
   }
   obj.usernameColor = automodUsernameColor;
-  let tmp4Result = tmp4(1433);
-  tmp4Result = tmp4(1430);
+  let tmp4Result = tmp4(1434);
+  tmp4Result = tmp4(1431);
   const tmp7 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp2 });
   obj.avatarURL = tmp4Result.ensureAvatarSource(tmp4Result.makeSource(ensureAvatarSource.getAutomodAvatarURL())).uri;
   const merged1 = Object.assign(tmp7);

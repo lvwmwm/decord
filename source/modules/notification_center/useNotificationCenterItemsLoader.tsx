@@ -1,17 +1,17 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16337
+// Function ID: 16338
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 32, 19, 7392, 7394, 16250, 4703, 586, 16252, 5487, 8122, 2]
+// Dependencies: [5, 32, 19, 7570, 7572, 16336, 4710, 586, 16338, 7050, 8180, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 16251 (PAGE_SIZE_WITH_MENTIONS)
+// Module 16337 (PAGE_SIZE_WITH_MENTIONS)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "findOrCreateMessageRecord" /* 7392 */;
-import closure_7 from "_validate" /* 7394 */;
-import closure_8 from "handleLoadFinished" /* 16250 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4703 */;
+import closure_6 from "findOrCreateMessageRecord" /* 7570 */;
+import closure_7 from "_validate" /* 7572 */;
+import closure_8 from "handleLoadFinished" /* 16336 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4710 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/notification_center/useNotificationCenterItemsLoader.tsx");

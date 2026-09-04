@@ -1,12 +1,12 @@
-// Module ID: 12030
-// Function ID: 12031
-// Dependencies: [19, 7535, 4855, 4854, 9551, 21, 586, 10649, 2]
+// Module ID: 12166
+// Function ID: 12167
+// Dependencies: [19, 7712, 4862, 4861, 9414, 21, 586, 10560, 2]
 
-// Module 12030
-import closure_3 from "handleInit" /* 7535 */;
-import { DraftType } from "handleChanged" /* 4855 */;
-import closure_5 from "map" /* 4854 */;
-import { useChatShowingAutoComplete as closure_6 } from "updateChatInputContainerHeight" /* 9551 */;
+// Module 12166
+import closure_3 from "handleInit" /* 7712 */;
+import { DraftType } from "handleChanged" /* 4862 */;
+import closure_5 from "map" /* 4861 */;
+import { useChatShowingAutoComplete as closure_6 } from "updateChatInputContainerHeight" /* 9414 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function ChatInputImageCarousel(canUploa
     obj = { attachments: null, channelId: null };
     obj[0] = stateFromStores;
     obj[1] = channelId;
-    tmp4 = jsx(channelId(10649), { attachments: null, channelId: null });
+    tmp4 = jsx(channelId(10560), { attachments: null, channelId: null });
   }
   return tmp4;
 });

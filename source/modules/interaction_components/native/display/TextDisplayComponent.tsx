@@ -1,15 +1,15 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15639
+// Function ID: 15640
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4470, 1980, 8032, 21, 8033, 38, 4468, 7642, 586, 4166, 15558, 11430, 11411, 2]
+// Dependencies: [32, 19, 4473, 1980, 8042, 21, 8043, 38, 4471, 7819, 586, 4166, 15640, 11548, 11518, 2]
 // Exports: default
 
-// Module 15557 (TextDisplayComponent)
+// Module 15639 (TextDisplayComponent)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_6 from "handleConnectionOpen" /* 1980 */;
-import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 8032 */;
+import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 8042 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

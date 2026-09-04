@@ -1,20 +1,20 @@
-// Module ID: 5983
-// Function ID: 5984
+// Module ID: 7123
+// Function ID: 7124
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4470, 1984, 1908, 1921, 5476, 21, 4478, 709, 1498, 586, 5591, 4204, 5984, 1430, 1894, 1470, 4916, 4217, 4479, 5502, 5562, 4474, 1233, 1296, 5985, 6013, 4074, 6016, 4929, 2]
+// Dependencies: [19, 17, 4473, 1984, 1908, 1921, 7040, 21, 4481, 709, 1498, 586, 7067, 4205, 7124, 1431, 1894, 1394, 4923, 4218, 4482, 5542, 7063, 4477, 1233, 1296, 7125, 5539, 4074, 7150, 4936, 2]
 // Exports: default
 
-// Module 5983 (GuildOnboardingCompleted)
+// Module 7123 (GuildOnboardingCompleted)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
 import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "handleUpdate" /* 5476 */;
+import closure_9 from "handleUpdate" /* 7040 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);

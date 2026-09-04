@@ -1,16 +1,16 @@
-// Module ID: 9240
-// Function ID: 9241
+// Module ID: 11134
+// Function ID: 11135
 // Name: formatClearAfterOption
-// Dependencies: [9110, 4163, 1233, 684, 1470, 2]
+// Dependencies: [11047, 4163, 1233, 684, 1394, 2]
 // Exports: default
 
-// Module 9240 (formatClearAfterOption)
+// Module 11134 (formatClearAfterOption)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 684 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
 import resetCache from "resetCache" /* 4163 */;
-import StatusTypes from "StatusTypes" /* 9110 */;
+import StatusTypes from "StatusTypes" /* 11047 */;
 
 const ClearAfterValues = StatusTypes.ClearAfterValues;
 let result = set.fileFinishedImporting("modules/custom_status/utils/formatClearAfterOption.tsx");

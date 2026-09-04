@@ -1,13 +1,13 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15796
+// Function ID: 15797
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 5484, 586, 11357, 5970, 2]
+// Dependencies: [19, 7047, 586, 11464, 7110, 2]
 // Exports: default
 
-// Module 15714 (useAuthorizedSlayerApplications)
+// Module 15796 (useAuthorizedSlayerApplications)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "recomputeFromAppTokens" /* 5484 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5484 */;
+import closure_4 from "recomputeFromAppTokens" /* 7047 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");

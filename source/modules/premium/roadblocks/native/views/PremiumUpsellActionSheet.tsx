@@ -1,31 +1,31 @@
-// Module ID: 7606
-// Function ID: 7607
+// Module ID: 7783
+// Function ID: 7784
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4470, 1301, 1303, 4299, 1921, 1923, 673, 4537, 7607, 7601, 21, 4478, 709, 4197, 4139, 7608, 5132, 5087, 7609, 7610, 1233, 6266, 4190, 1994, 7612, 7613, 4445, 7605, 7614, 7615, 13186, 13187, 12007, 12016, 13190, 688, 586, 8226, 6002, 4474, 1234, 8534, 5502, 4941, 5962, 8181, 9152, 9169, 8189, 695, 8987, 4340, 5998, 13191, 4929, 7972, 2]
+// Dependencies: [32, 19, 17, 4473, 1301, 1303, 4302, 1921, 1923, 673, 4540, 7784, 7778, 21, 4481, 709, 4197, 4139, 7785, 5140, 5095, 7786, 7787, 1233, 5647, 4190, 1994, 7789, 7790, 4448, 7782, 7791, 7792, 13219, 13220, 12143, 12152, 13223, 688, 586, 9287, 7141, 4477, 1234, 8738, 5542, 4948, 7102, 9242, 9894, 9895, 9250, 695, 9896, 4343, 7138, 13224, 4936, 7982, 2]
 // Exports: default
 
-// Module 7606 (AlwaysCompressImagesSwitch)
+// Module 7783 (AlwaysCompressImagesSwitch)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import set from "set" /* 1234 */;
-import LinearGradientDefault from "LinearGradient" /* 4941 */;
-import preloadDefault from "preload" /* 5502 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8534 */;
+import LinearGradientDefault from "LinearGradient" /* 4948 */;
+import preloadDefault from "preload" /* 5542 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8738 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import closure_7 from "handleThemeChange" /* 1301 */;
 import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_9 from "handleConnectionOpen" /* 4299 */;
+import closure_9 from "handleConnectionOpen" /* 4302 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
 import ME from "ME" /* 673 */;
-import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4537 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7607 */;
-import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7601 */;
+import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4540 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7784 */;
+import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7778 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AlwaysCompressImagesSwitch(isKestrelTreatment) {
@@ -53,8 +53,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1233).intl;
       obj1[2] = intl2.string(tmp2(1233).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4474).Text, obj1);
-      obj[1] = callback2(tmp2(6002).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4477).Text, obj1);
+      obj[1] = callback2(tmp2(7141).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }

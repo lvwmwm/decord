@@ -1,19 +1,19 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17603
+// Function ID: 17604
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4478, 709, 5502, 7692, 4474, 4929, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 5542, 5552, 4477, 4936, 2]
 // Exports: default
 
-// Module 17523 (WarningNotice)
+// Module 17603 (WarningNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import Button from "Button" /* 4929 */;
-import preloadDefault from "preload" /* 5502 */;
-import registerAssetDefault from "registerAsset" /* 7692 */;
+import Text from "Text" /* 4477 */;
+import Button from "Button" /* 4936 */;
+import preloadDefault from "preload" /* 5542 */;
+import registerAssetDefault from "registerAsset" /* 5552 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

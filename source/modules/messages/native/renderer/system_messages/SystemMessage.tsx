@@ -1,48 +1,48 @@
-// Module ID: 7879
-// Function ID: 7880
+// Module ID: 7889
+// Function ID: 7890
 // Name: createSystemMessageContent
-// Dependencies: [673, 7880, 7899, 7900, 7903, 7904, 7905, 7906, 7924, 7926, 7927, 7928, 7929, 7930, 7932, 7933, 7934, 7943, 7944, 7946, 7947, 7948, 7949, 7950, 7951, 7952, 7953, 7960, 7961, 7962, 7964, 7965, 7966, 7967, 7973, 7991, 7995, 7997, 2]
+// Dependencies: [673, 7890, 7909, 7910, 7913, 7914, 7915, 7916, 7934, 7936, 7937, 7938, 7939, 7940, 7942, 7943, 7944, 7953, 7954, 7956, 7957, 7958, 7959, 7960, 7961, 7962, 7963, 7970, 7971, 7972, 7974, 7975, 7976, 7977, 7983, 8001, 8005, 8007, 2]
 // Exports: createSystemMessageContent
 
-// Module 7879 (createSystemMessageContent)
+// Module 7889 (createSystemMessageContent)
 import set from "set" /* 2 */;
-import createAddRecipientSystemMessage from "createAddRecipientSystemMessage" /* 7880 */;
-import createRemoveRecipientSystemMessage from "createRemoveRecipientSystemMessage" /* 7899 */;
-import createCallSystemMessage from "createCallSystemMessage" /* 7900 */;
-import createChangeChannelNameSystemMessage from "createChangeChannelNameSystemMessage" /* 7903 */;
-import createChangeChannelIconSystemMessage from "createChangeChannelIconSystemMessage" /* 7904 */;
-import createChannelPinnedMessageSystemMessage from "createChannelPinnedMessageSystemMessage" /* 7905 */;
-import createUserJoinSystemMessage from "createUserJoinSystemMessage" /* 7906 */;
-import createUserPremiumGuildSubscriptionSystemMessage from "createUserPremiumGuildSubscriptionSystemMessage" /* 7924 */;
-import createUserPremiumGuildSubscriptionTierAchievedSystemMessage from "createUserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 7926 */;
-import createChannelFollowAddSystemMessage from "createChannelFollowAddSystemMessage" /* 7927 */;
-import createGuildStreamSystemMessage from "createGuildStreamSystemMessage" /* 7928 */;
-import createGuildDiscoveryDisqualifiedSystemMessage from "createGuildDiscoveryDisqualifiedSystemMessage" /* 7929 */;
-import createApplicationCommandSourceSystemMessage from "createApplicationCommandSourceSystemMessage" /* 7930 */;
-import createNewThreadSystemMessage from "createNewThreadSystemMessage" /* 7932 */;
-import createThreadStarterSystemMessage from "createThreadStarterSystemMessage" /* 7933 */;
-import createAutoModerationActionSystemMessage from "createAutoModerationActionSystemMessage" /* 7934 */;
-import createRoleSubscriptionPurchaseSystemMessage from "createRoleSubscriptionPurchaseSystemMessage" /* 7943 */;
-import createPurchaseNotificationSystemMessage from "createPurchaseNotificationSystemMessage" /* 7944 */;
-import createStageStartSystemMessage from "createStageStartSystemMessage" /* 7946 */;
-import createStageEndSystemMessage from "createStageEndSystemMessage" /* 7947 */;
-import createStageTopicSystemMessage from "createStageTopicSystemMessage" /* 7948 */;
-import createStageSpeakerSystemMessage from "createStageSpeakerSystemMessage" /* 7949 */;
-import createStageRaiseHandSystemMessage from "createStageRaiseHandSystemMessage" /* 7950 */;
-import createApplicationSubscriptionPurchaseSystemMessage from "createApplicationSubscriptionPurchaseSystemMessage" /* 7951 */;
-import createPrivateChannelIntegrationSystemMessage from "createPrivateChannelIntegrationSystemMessage" /* 7952 */;
-import nativeStyleProperties from "nativeStyleProperties" /* 7953 */;
-import createGuildReportRaidSystemMessage from "createGuildReportRaidSystemMessage" /* 7960 */;
-import createGuildReportFalseAlarmSystemMessage from "createGuildReportFalseAlarmSystemMessage" /* 7961 */;
-import createPollResultSystemMessage from "createPollResultSystemMessage" /* 7962 */;
-import createChannelLinkedToLobbySystemMessage from "createChannelLinkedToLobbySystemMessage" /* 7964 */;
-import createInGameMessageNuxSystemMessage from "createInGameMessageNuxSystemMessage" /* 7965 */;
-import createJoinRequestNotificationSystemMessage from "createJoinRequestNotificationSystemMessage" /* 7966 */;
-import createPremiumGroupInviteSystemMessage from "createPremiumGroupInviteSystemMessage" /* 7967 */;
-import createReferralSystemMessage from "createReferralSystemMessage" /* 7973 */;
-import createVoiceSessionSystemMessage from "createVoiceSessionSystemMessage" /* 7991 */;
-import createFriendRequestAcceptedSystemMessage from "createFriendRequestAcceptedSystemMessage" /* 7995 */;
-import createGiftIntentSystemMessage from "createGiftIntentSystemMessage" /* 7997 */;
+import createAddRecipientSystemMessage from "createAddRecipientSystemMessage" /* 7890 */;
+import createRemoveRecipientSystemMessage from "createRemoveRecipientSystemMessage" /* 7909 */;
+import createCallSystemMessage from "createCallSystemMessage" /* 7910 */;
+import createChangeChannelNameSystemMessage from "createChangeChannelNameSystemMessage" /* 7913 */;
+import createChangeChannelIconSystemMessage from "createChangeChannelIconSystemMessage" /* 7914 */;
+import createChannelPinnedMessageSystemMessage from "createChannelPinnedMessageSystemMessage" /* 7915 */;
+import createUserJoinSystemMessage from "createUserJoinSystemMessage" /* 7916 */;
+import createUserPremiumGuildSubscriptionSystemMessage from "createUserPremiumGuildSubscriptionSystemMessage" /* 7934 */;
+import createUserPremiumGuildSubscriptionTierAchievedSystemMessage from "createUserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 7936 */;
+import createChannelFollowAddSystemMessage from "createChannelFollowAddSystemMessage" /* 7937 */;
+import createGuildStreamSystemMessage from "createGuildStreamSystemMessage" /* 7938 */;
+import createGuildDiscoveryDisqualifiedSystemMessage from "createGuildDiscoveryDisqualifiedSystemMessage" /* 7939 */;
+import createApplicationCommandSourceSystemMessage from "createApplicationCommandSourceSystemMessage" /* 7940 */;
+import createNewThreadSystemMessage from "createNewThreadSystemMessage" /* 7942 */;
+import createThreadStarterSystemMessage from "createThreadStarterSystemMessage" /* 7943 */;
+import createAutoModerationActionSystemMessage from "createAutoModerationActionSystemMessage" /* 7944 */;
+import createRoleSubscriptionPurchaseSystemMessage from "createRoleSubscriptionPurchaseSystemMessage" /* 7953 */;
+import createPurchaseNotificationSystemMessage from "createPurchaseNotificationSystemMessage" /* 7954 */;
+import createStageStartSystemMessage from "createStageStartSystemMessage" /* 7956 */;
+import createStageEndSystemMessage from "createStageEndSystemMessage" /* 7957 */;
+import createStageTopicSystemMessage from "createStageTopicSystemMessage" /* 7958 */;
+import createStageSpeakerSystemMessage from "createStageSpeakerSystemMessage" /* 7959 */;
+import createStageRaiseHandSystemMessage from "createStageRaiseHandSystemMessage" /* 7960 */;
+import createApplicationSubscriptionPurchaseSystemMessage from "createApplicationSubscriptionPurchaseSystemMessage" /* 7961 */;
+import createPrivateChannelIntegrationSystemMessage from "createPrivateChannelIntegrationSystemMessage" /* 7962 */;
+import nativeStyleProperties from "nativeStyleProperties" /* 7963 */;
+import createGuildReportRaidSystemMessage from "createGuildReportRaidSystemMessage" /* 7970 */;
+import createGuildReportFalseAlarmSystemMessage from "createGuildReportFalseAlarmSystemMessage" /* 7971 */;
+import createPollResultSystemMessage from "createPollResultSystemMessage" /* 7972 */;
+import createChannelLinkedToLobbySystemMessage from "createChannelLinkedToLobbySystemMessage" /* 7974 */;
+import createInGameMessageNuxSystemMessage from "createInGameMessageNuxSystemMessage" /* 7975 */;
+import createJoinRequestNotificationSystemMessage from "createJoinRequestNotificationSystemMessage" /* 7976 */;
+import createPremiumGroupInviteSystemMessage from "createPremiumGroupInviteSystemMessage" /* 7977 */;
+import createReferralSystemMessage from "createReferralSystemMessage" /* 7983 */;
+import createVoiceSessionSystemMessage from "createVoiceSessionSystemMessage" /* 8001 */;
+import createFriendRequestAcceptedSystemMessage from "createFriendRequestAcceptedSystemMessage" /* 8005 */;
+import createGiftIntentSystemMessage from "createGiftIntentSystemMessage" /* 8007 */;
 import ME from "ME" /* 673 */;
 
 ({ MessageTypes: obj1, BoostedGuildTiers: c3 } = ME);

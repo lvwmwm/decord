@@ -1,11 +1,11 @@
-// Module ID: 4549
-// Function ID: 4550
+// Module ID: 4552
+// Function ID: 4553
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 
-// Module 4549 (apexExperiment)
+// Module 4552 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enableDistributedClips: true };

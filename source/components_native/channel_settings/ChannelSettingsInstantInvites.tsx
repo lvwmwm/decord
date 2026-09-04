@@ -1,24 +1,24 @@
-// Module ID: 16654
-// Function ID: 16655
+// Module ID: 16741
+// Function ID: 16742
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8772, 1386, 673, 21, 4478, 709, 1627, 586, 8771, 10894, 1296, 10911, 10912, 1233, 6056, 16655, 7790, 2]
+// Dependencies: [32, 19, 17, 8556, 1386, 673, 21, 4481, 709, 1627, 586, 8555, 10863, 1296, 10880, 10881, 1233, 6979, 16742, 6995, 2]
 // Exports: default
 
-// Module 16654 (ConnectedChannelSettingsInstantInvites)
+// Module 16741 (ConnectedChannelSettingsInstantInvites)
 import ThemesDefault from "Themes" /* 709 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef7790 from "module_7790" /* 7790 */;
-import registerAssetDefault from "registerAsset" /* 10911 */;
-import registerAssetDefault2 from "registerAsset" /* 10912 */;
-import _modDef16655 from "module_16655" /* 16655 */;
+import _modDef6995 from "module_6995" /* 6995 */;
+import registerAssetDefault from "registerAsset" /* 10880 */;
+import registerAssetDefault2 from "registerAsset" /* 10881 */;
+import _modDef16742 from "module_16742" /* 16742 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "normalizeChannelPropertyForCompare" /* 8772 */;
+import closure_6 from "normalizeChannelPropertyForCompare" /* 8556 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import { ChannelSettingsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -91,18 +91,18 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items5);
   const items6 = [memo1.length];
   const effect = memo.useEffect(() => {
-    callback(8771).setSection(constants.INSTANT_INVITES);
+    callback(8555).setSection(constants.INSTANT_INVITES);
   }, []);
   const items7 = [memo1];
   const callback1 = memo.useCallback((arg0, arg1) => {
     if ("invite" === memo1[arg1].type) {
       let obj = { invite: null };
       obj[0] = tmp.data;
-      let tmp5 = closure_1_9(closure_1_1(10894), obj);
+      let tmp5 = closure_1_9(closure_1_1(10863), obj);
     } else {
       obj = { channel: null };
       obj[0] = tmp.data;
-      tmp5 = closure_1_9(lib(10894).LinkedChannelInvite, obj);
+      tmp5 = closure_1_9(lib(10863).LinkedChannelInvite, obj);
     }
     return tmp5;
   }, items7);
@@ -128,16 +128,16 @@ export default function ConnectedChannelSettingsInstantInvites() {
       obj1[3] = callback1;
       obj1[4] = tmp.gap.height;
       obj1[5] = useSafeAreaInsetsDefault().bottom;
-      obj[1] = callback(_modDef7790, obj1);
+      obj[1] = callback(_modDef6995, obj1);
       let tmp16Result = callback(stateFromStoresArray, obj);
     }
   }
   obj2 = { style: tmp.content, children: null };
   tmp = callback;
-  const items8 = [callback(tmpResult(6056).SceneLoadingIndicator, {}), ];
+  const items8 = [callback(tmpResult(6979).SceneLoadingIndicator, {}), ];
   tmpResult = null;
   if (memo1.length > 0) {
-    tmp2 = _modDef16655;
+    tmp2 = _modDef16742;
     obj = { item: null, onMeasured: null };
     memo1 = memo1[0];
     obj[0] = memo1;

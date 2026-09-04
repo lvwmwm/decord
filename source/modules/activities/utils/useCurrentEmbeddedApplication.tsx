@@ -1,12 +1,12 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9561
+// Function ID: 9562
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 9619, 5968, 2]
+// Dependencies: [32, 9562, 7108, 2]
 // Exports: default
 
-// Module 9618 (useCurrentEmbeddedApplication)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5968 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9619 */;
+// Module 9561 (useCurrentEmbeddedApplication)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7108 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9562 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedApplication.tsx");

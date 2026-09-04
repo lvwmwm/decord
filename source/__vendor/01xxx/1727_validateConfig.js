@@ -81,8 +81,8 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "disabled",
       lastTimestamp: null,
-      startTimestamp: "text-xs/semibold",
-      reduceMotion: "mobile-text-heading-primary"
+      startTimestamp: "enable",
+      reduceMotion: null
     };
     let num = obj.velocity;
     if (num == null) {

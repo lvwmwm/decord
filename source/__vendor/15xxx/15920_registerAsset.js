@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1, 2, 3], hash: "2d232c4ffc7aee7f8419734bdb63af83", name: "screenshare", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 192.33333333333334, height: 416, scales: [3], hash: "38957e8b938c7ee2a40f1e8c893feb71", name: "welcome-bg", type: "png" });

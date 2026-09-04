@@ -1,9 +1,9 @@
-// Module ID: 17413
-// Function ID: 17414
+// Module ID: 17493
+// Function ID: 17494
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1908, 4120, 1921, 673, 4169, 21, 1233, 17414, 8247, 13419, 4478, 709, 1627, 586, 9657, 17416, 6056, 4369, 4474, 4372, 4929, 17417, 8376, 4927, 6001, 5608, 5049, 10287, 1296, 4322, 5615, 17423, 2]
+// Dependencies: [19, 17, 1908, 4120, 1921, 673, 4169, 21, 1233, 17494, 9304, 13452, 4481, 709, 1627, 586, 9600, 17496, 6979, 4372, 4477, 4375, 4936, 17497, 8523, 4934, 5642, 5560, 5056, 10105, 1296, 4325, 5567, 17503, 2]
 
-// Module 17413 (BoostedGuildTiers)
+// Module 17493 (BoostedGuildTiers)
 import ThemesDefault from "Themes" /* 709 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
@@ -13,7 +13,7 @@ import ME from "ME" /* 673 */;
 import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
 import jsxProd from "jsxProd" /* 21 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4 } from "getSystemLocale" /* 1233 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ const require = arg1;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_8, BoostedGuildTiers } = ME);
 const GuildFeatures = ME.GuildFeatures;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "accessible" };
+let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "Array" };
 obj[1] = intl.string(require("getSystemLocale").t.tfVXhP);
 let items = [obj, , , ];
 obj = { tier: BoostedGuildTiers.TIER_1, title: null, IconComponent: null };

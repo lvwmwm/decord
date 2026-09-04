@@ -1,17 +1,17 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 17850
+// Function ID: 17851
 // Name: sendReply
-// Dependencies: [5, 17062, 4391, 5578, 1215, 1386, 1908, 3, 4339, 10303, 17245, 706, 7429, 1624, 695, 6061, 8668, 4489, 15412, 1306, 2]
+// Dependencies: [5, 17148, 4394, 5513, 1215, 1386, 1908, 3, 4342, 10123, 17331, 706, 7607, 1624, 695, 6534, 8308, 4492, 15494, 1306, 2]
 
-// Module 17770 (sendReply)
+// Module 17850 (sendReply)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import enforcingDefault from "enforcing" /* 4339 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7429 */;
-import enforcingDefault2 from "enforcing" /* 17245 */;
+import enforcingDefault from "enforcing" /* 4342 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7607 */;
+import enforcingDefault2 from "enforcing" /* 17331 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import { applicationReady } from "linkFromAppsFlyer" /* 17062 */;
-import closure_6 from "getHash" /* 4391 */;
+import { applicationReady } from "linkFromAppsFlyer" /* 17148 */;
+import closure_6 from "getHash" /* 4394 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
@@ -197,7 +197,7 @@ function _apiLogin() {
                 }
               }
               if (null != closure_1_8.getId()) {
-                let obj16 = callback(6061);
+                let obj16 = callback(6534);
                 c6 = 3;
                 c7 = 1;
                 const obj3 = { value: null, done: false };
@@ -244,7 +244,7 @@ function _apiLogin() {
               obj9[0] = ok;
               return obj9;
             } else if (ok.ok) {
-              obj7 = callback(6061);
+              obj7 = callback(6534);
               c6 = 4;
               c7 = 1;
               const obj10 = { value: null, done: false };
@@ -323,7 +323,7 @@ function _apiLogin() {
               obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f125209 = () => { ... };
+              const f125555 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -333,7 +333,7 @@ function _apiLogin() {
               continue;
             }
             closure_1_20(callback(706), "LOGIN_SUCCESS", (token) => callback(token.token));
-            obj = callback(6061);
+            obj = callback(6534);
             obj = { login: closure_0, password: callback };
             obj.login(obj);
           });
@@ -364,7 +364,7 @@ function subscribeOnce(subscribe) {
   closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f125209(arg0);
+    return f125555(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -378,7 +378,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10303);
+    obj = callback(10123);
     const result = obj.resetComponentProfiler();
     obj = { type: "response", status: "success", message: "reset-component-profiler" };
     const merged = Object.assign(undefined);
@@ -386,7 +386,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10303);
+    obj = callback(10123);
     const result = obj.pauseComponentProfiler();
     obj = { type: "response", status: "success", message: "pause-component-profiler" };
     const merged = Object.assign(undefined);
@@ -394,7 +394,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10303);
+    obj = callback(10123);
     const result = obj.resumeComponentProfiler();
     obj = { type: "response", status: "success", message: "resume-component-profiler" };
     const merged = Object.assign(undefined);
@@ -402,11 +402,11 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = { stats: callback(10303).dumpStats() };
+    obj = { stats: callback(10123).dumpStats() };
     obj = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj2 = callback(10303);
+    const obj2 = callback(10123);
     enforcingDefault.logToDevice(json);
   },
   () => {

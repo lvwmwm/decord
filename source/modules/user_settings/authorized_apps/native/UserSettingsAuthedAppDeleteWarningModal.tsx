@@ -1,15 +1,15 @@
-// Module ID: 12397
-// Function ID: 12398
+// Module ID: 12529
+// Function ID: 12530
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 11357, 1233, 12398, 8522, 4864, 2]
+// Dependencies: [21, 11464, 1233, 12530, 9388, 4871, 2]
 // Exports: default
 
-// Module 12397 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 12529 (UserSettingsAuthedAppDeleteWarningModal)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 11357 */;
-import isAuthorizedAppTwoWayDefault from "isAuthorizedAppTwoWay" /* 12398 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11464 */;
+import isAuthorizedAppTwoWayDefault from "isAuthorizedAppTwoWay" /* 12530 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
@@ -43,7 +43,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let tmp9 = isAuthorizedAppTwoWayDefault(application.id);
   if (tmp9) {
     const obj2 = { children: null };
-    let tmp8Result = tmp8(8522);
+    let tmp8Result = tmp8(9388);
     const intl3 = tmp(1233).intl;
     const obj3 = { applicationName: null };
     obj3[0] = application.name;
@@ -54,8 +54,8 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let tmp12 = result;
   if (result) {
     const obj4 = { look: null, children: null };
-    tmp8Result = tmp8(8522);
-    obj4[0] = tmp(8522).InfoBoxLooks.WARNING;
+    tmp8Result = tmp8(9388);
+    obj4[0] = tmp(9388).InfoBoxLooks.WARNING;
     const intl4 = tmp(1233).intl;
     obj4[1] = intl4.string(tmp(1233).t.LY35Zy);
     tmp12 = callback(tmp8Result, obj4);

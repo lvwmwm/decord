@@ -1,17 +1,17 @@
-// Module ID: 8571
-// Function ID: 8572
+// Module ID: 8185
+// Function ID: 8186
 // Name: GifTag
-// Dependencies: [17, 21, 4478, 709, 686, 4474, 1233, 2]
+// Dependencies: [17, 21, 4481, 709, 686, 4477, 1233, 2]
 // Exports: default
 
-// Module 8571 (GifTag)
+// Module 8185 (GifTag)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import Text from "Text" /* 4477 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importDefaultResult from "n" /* 686 */;
 
 const View = get_ActivityIndicator.View;

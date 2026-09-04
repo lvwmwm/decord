@@ -1,17 +1,17 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 13095
+// Function ID: 13096
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 6093, 7313, 675, 21, 586, 6096, 12790, 1233, 4930, 4474, 8107, 2]
+// Dependencies: [19, 7177, 7491, 675, 21, 586, 7180, 13080, 1233, 4937, 4477, 8592, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 12808 (UnlockWithNitroButton)
+// Module 13095 (UnlockWithNitroButton)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
-import CollapsingText from "CollapsingText" /* 4930 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8107 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12790 */;
-import closure_3 from "updateProduct" /* 6093 */;
-import closure_4 from "map" /* 7313 */;
+import CollapsingText from "CollapsingText" /* 4937 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8592 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13080 */;
+import closure_3 from "updateProduct" /* 7177 */;
+import closure_4 from "map" /* 7491 */;
 import { ShopCtaEnum } from "items" /* 675 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -44,7 +44,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   if (flag) {
     obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: null };
     obj[3] = text;
-    tmp4Result = tmp4(tmp(4474).Text, obj);
+    tmp4Result = tmp4(tmp(4477).Text, obj);
   }
   obj = { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null };
   let tmp6;

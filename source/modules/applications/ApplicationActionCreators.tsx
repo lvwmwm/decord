@@ -1,14 +1,14 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 7103
+// Function ID: 7104
 // Name: fetchApplication
-// Dependencies: [5, 5964, 4504, 4519, 673, 706, 527, 586, 2]
+// Dependencies: [5, 7104, 4507, 4522, 673, 706, 527, 586, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5963 (fetchApplication)
+// Module 7103 (fetchApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5964 */;
-import closure_5 from "createExecutable" /* 4504 */;
-import importDefaultResult from "addApplication" /* 4519 */;
+import closure_4 from "set" /* 7104 */;
+import closure_5 from "createExecutable" /* 4507 */;
+import importDefaultResult from "addApplication" /* 4522 */;
 import ME from "ME" /* 673 */;
 import initialize from "initialize" /* 586 */;
 

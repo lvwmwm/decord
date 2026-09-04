@@ -1,16 +1,16 @@
-// Module ID: 1426
-// Function ID: 1427
+// Module ID: 1427
+// Function ID: 1428
 // Name: isValueEqual
-// Dependencies: [1427, 38, 1428, 640, 2]
+// Dependencies: [1428, 38, 1429, 640, 2]
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
-// Module 1426 (isValueEqual)
+// Module 1427 (isValueEqual)
 import _modDef38 from "module_38" /* 38 */;
 import shallowEqual from "shallowEqual" /* 640 */;
 import shallowEqualDefault from "shallowEqual" /* 640 */;
-import areSetsEqual from "areSetsEqual" /* 1428 */;
-import { TypeTag } from "TypeTag" /* 1427 */;
-import importDefaultResult from "TypeTag" /* 1427 */;
+import areSetsEqual from "areSetsEqual" /* 1429 */;
+import { TypeTag } from "TypeTag" /* 1428 */;
+import importDefaultResult from "TypeTag" /* 1428 */;
 
 require = arg1;
 function isValueEqual(items, current) {

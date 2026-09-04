@@ -1,21 +1,21 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 15876
+// Function ID: 15877
 // Name: AccountStatusIcon
-// Dependencies: [19, 17, 1934, 4323, 1921, 12213, 21, 4478, 586, 4438, 709, 4433, 4474, 1233, 5077, 4205, 1296, 4322, 2]
+// Dependencies: [19, 17, 1934, 4326, 1921, 12345, 21, 4481, 586, 4441, 709, 4436, 4477, 1233, 5084, 4206, 1296, 4325, 2]
 // Exports: default
 
-// Module 15790 (AccountStatusIcon)
+// Module 15876 (AccountStatusIcon)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createdAt" /* 1934 */;
-import closure_6 from "initialize" /* 4323 */;
+import closure_6 from "initialize" /* 4326 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { MultiAccountTokenStatus } from "initialize" /* 12213 */;
+import { MultiAccountTokenStatus } from "initialize" /* 12345 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class AccountStatusIcon {
@@ -81,16 +81,16 @@ export default function AccountSwitcherListItem(arg0) {
       obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
       const intl = tmp2(1233).intl;
       obj[2] = intl.string(tmp2(1233).t.seV8yt);
-      let tmp8 = callback(tmp2(4474).Text, obj);
+      let tmp8 = callback(tmp2(4477).Text, obj);
     }
     if (null == onPressUser) {
       let PressableOpacity = closure_3;
     } else {
-      PressableOpacity = tmp2(5077).PressableOpacity;
+      PressableOpacity = tmp2(5084).PressableOpacity;
     }
     obj = { selected: null };
     obj[0] = tmp7;
-    const radioA11yNative = tmp2(4205).useRadioA11yNative(obj);
+    const radioA11yNative = tmp2(4206).useRadioA11yNative(obj);
     obj1 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
     ({ accessibilityRole: obj7[0], accessibilityState: obj7[1] } = radioA11yNative);
     let stringResult;
@@ -115,7 +115,7 @@ export default function AccountSwitcherListItem(arg0) {
     obj5[0] = tmp.tagContainer;
     const obj6 = { variant: "text-md/semibold", color: "text-default", style: null, lineClamp: 1, children: null };
     obj6[2] = tmp.username;
-    const tmp2Result = tmp2(4205);
+    const tmp2Result = tmp2(4206);
     let str = "always";
     if (stateFromStores) {
       str = "never";
@@ -123,7 +123,7 @@ export default function AccountSwitcherListItem(arg0) {
     const obj7 = { mode: "username", identifiable: null };
     obj7[1] = str;
     obj6[4] = nameFromUserDefault.getUserTag(obj2, obj7);
-    const items4 = [callback(tmp2(4474).Text, obj6), ];
+    const items4 = [callback(tmp2(4477).Text, obj6), ];
     let tmp18Result = !stateFromStores;
     if (!stateFromStores) {
       tmp18Result = !obj2.hasUniqueUsername();
@@ -132,7 +132,7 @@ export default function AccountSwitcherListItem(arg0) {
       const obj8 = { variant: "text-md/normal", color: "text-muted", children: null };
       const _HermesInternal = HermesInternal;
       obj8[2] = "#" + obj2.discriminator;
-      tmp18Result = tmp18(tmp2(4474).Text, obj8);
+      tmp18Result = tmp18(tmp2(4477).Text, obj8);
     }
     items4[1] = tmp18Result;
     obj5[1] = items4;
@@ -155,7 +155,7 @@ export default function AccountSwitcherListItem(arg0) {
     const obj10 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: null };
     const intl3 = tmp2(1233).intl;
     obj10[2] = intl3.string(tmp2(1233).t.tYX2ps);
-    tmp8 = callback(tmp2(4474).Text, obj10);
+    tmp8 = callback(tmp2(4477).Text, obj10);
   }
 };
 export { AccountStatusIcon };

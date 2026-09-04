@@ -1,20 +1,20 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11590
+// Function ID: 11591
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7859, 11470, 11471, 4131, 1215, 1908, 4120, 4471, 673, 21, 5962, 5982, 4701, 11468, 7897, 11472, 7610, 586, 6125, 11473, 11474, 4166, 6123, 11475, 4740, 1398, 11476, 8037, 11477, 6000, 11478, 5998, 1623, 11534, 11535, 1233, 9425, 4425, 4436, 4421, 10353, 11539, 11499, 5027, 11541, 10347, 11543, 8241, 5048, 10915, 11545, 11547, 8107, 11549, 11518, 4441, 9392, 5025, 5044, 4427, 9065, 7894, 8809, 9057, 2500, 5035, 6132, 6144, 11551, 4671, 6147, 7516, 8155, 2]
+// Dependencies: [32, 19, 7869, 11591, 11592, 4131, 1215, 1908, 4120, 4474, 673, 21, 7102, 7122, 4708, 11589, 7907, 11593, 7787, 586, 7209, 11594, 11595, 4166, 7207, 11596, 4747, 1399, 11597, 8047, 11598, 7140, 11599, 7138, 1623, 11661, 11662, 1233, 10109, 4428, 4439, 4424, 10179, 11666, 11620, 5034, 11668, 10173, 11670, 8687, 5055, 10884, 11672, 11674, 8592, 11676, 11639, 4444, 9364, 5032, 5051, 4430, 10558, 7904, 8594, 10749, 2500, 5042, 7216, 7228, 11678, 4678, 7231, 7693, 11551, 2]
 // Exports: default
 
-// Module 11469 (LongPressMessageActionSheet)
+// Module 11590 (LongPressMessageActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 7859 */;
-import closure_6 from "handleSelectedGuildChange" /* 11470 */;
-import closure_7 from "getTimeSafe" /* 11471 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7869 */;
+import closure_6 from "handleSelectedGuildChange" /* 11591 */;
+import closure_7 from "getTimeSafe" /* 11592 */;
 import { isMessageComponentsV2 } from "hasFlag" /* 4131 */;
 import closure_9 from "fetchFingerprint" /* 1215 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
 import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4471 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4474 */;
 import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

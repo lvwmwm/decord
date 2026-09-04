@@ -1,16 +1,16 @@
-// Module ID: 15406
-// Function ID: 15407
+// Module ID: 15488
+// Function ID: 15489
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 6240, 1627, 4194, 592, 7, 4474, 6231, 14843, 1233, 15407, 4445, 15408, 8116, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4481, 709, 6562, 1627, 4194, 592, 7, 4477, 6990, 14924, 1233, 15489, 4448, 15490, 8804, 2]
 // Exports: default
 
-// Module 15406 (UserSettingsDebugLogs)
+// Module 15488 (UserSettingsDebugLogs)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ RefreshControl: c5, View: closure_6 } = get_ActivityIndicator);

@@ -1,15 +1,15 @@
-// Module ID: 12763
-// Function ID: 12764
+// Module ID: 8107
+// Function ID: 8108
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: [7308, 7296, 4445, 12764, 2008, 2]
+// Dependencies: [7486, 7474, 4448, 8108, 2008, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 12763 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+// Module 8107 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import openCollectiblesShop from "openCollectiblesShop" /* 7296 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7308 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import openCollectiblesShop from "openCollectiblesShop" /* 7474 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7486 */;
 
 let c3 = "Shop Product Preview";
 const result = set.fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
@@ -39,13 +39,13 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   const tmp2 = dependencyMap;
   const tmpResult = openCollectiblesShop;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12764, tmp2.paths), c3, obj, stack);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8108, tmp2.paths), c3, obj, stack);
 };
 export const openProductDetailsActionSheetForSku = function openProductDetailsActionSheetForSku(skuId, stack) {
   skuId = skuId.skuId;
-  ({ initialVariantIndex, analyticsLocations, shopAnalyticsContext } = skuId);
+  ({ initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile } = skuId);
   let obj = openCollectiblesShop;
   obj.productDetailsOpened(skuId);
-  obj = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext };
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12764, dependencyMap.paths), c3, obj, stack);
+  obj = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile };
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8108, dependencyMap.paths), c3, obj, stack);
 };

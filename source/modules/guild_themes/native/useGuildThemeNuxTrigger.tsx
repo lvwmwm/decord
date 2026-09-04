@@ -1,12 +1,12 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16082
+// Function ID: 16083
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 4186, 586, 15997, 15997, 2008, 4445, 16002, 2]
+// Dependencies: [19, 4186, 586, 16083, 16083, 2008, 4448, 16088, 2]
 // Exports: default
 
-// Module 15996 (useGuildThemeNuxTrigger)
+// Module 16082 (useGuildThemeNuxTrigger)
 import initialize from "initialize" /* 586 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16002 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16088 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "setContent" /* 4186 */;
 

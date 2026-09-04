@@ -1,14 +1,14 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 6502
+// Function ID: 6503
 // Name: VoiceFiltersSpotIllustration
-// Dependencies: [21, 5502, 7122, 2]
+// Dependencies: [21, 5542, 6503, 2]
 // Exports: VoiceFiltersSpotIllustration
 
-// Module 7121 (VoiceFiltersSpotIllustration)
+// Module 6502 (VoiceFiltersSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7122 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6503 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VoiceFiltersSpotIllustration.native.tsx");

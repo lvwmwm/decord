@@ -1,16 +1,16 @@
-// Module ID: 11011
-// Function ID: 11012
+// Module ID: 10971
+// Function ID: 10972
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4478, 709, 1627, 4474, 1233, 11012, 4929, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 1627, 4477, 1233, 10972, 4936, 2]
 // Exports: default
 
-// Module 11011 (GiftingSKUSelectScreen)
+// Module 10971 (GiftingSKUSelectScreen)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);

@@ -1,19 +1,19 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 9914
+// Function ID: 9915
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4500, 1215, 4529, 4542, 21, 4478, 586, 38, 9807, 10088, 1233, 5608, 10095, 2]
+// Dependencies: [19, 17, 4503, 1215, 4532, 4545, 21, 4481, 586, 38, 9019, 9908, 1233, 5560, 9915, 2]
 // Exports: default
 
-// Module 10094 (UserSettingsVoiceOutputOptions)
-import VolumeSliderDefault from "VolumeSlider" /* 10095 */;
+// Module 9914 (UserSettingsVoiceOutputOptions)
+import VolumeSliderDefault from "VolumeSlider" /* 9915 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reset" /* 4500 */;
+import closure_5 from "reset" /* 4503 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4529 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4532 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -71,7 +71,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj2[3] = intl3.string(stateFromStores1(1233).t.xPHVBs);
   obj1[1] = callback(VolumeSliderDefault, obj2);
   obj[1] = callback(View, obj1);
-  const items4 = [callback(stateFromStores1(5608).TableRow, obj), ];
+  const items4 = [callback(stateFromStores1(5560).TableRow, obj), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj3 = { label: null, subLabel: null };
@@ -86,10 +86,10 @@ export default function UserSettingsVoiceOutputOptions() {
     obj5[2] = intl5.string(tmp2(1233).t.pEAl4b);
     obj4[1] = tmp9(VolumeSliderDefault, obj5);
     obj3[1] = tmp9(View, obj4);
-    tmp9Result = tmp9(tmp2(5608).TableRow, obj3);
+    tmp9Result = tmp9(tmp2(5560).TableRow, obj3);
     const tmp11Result = VolumeSliderDefault;
   }
   items4[1] = tmp9Result;
   obj[2] = items4;
-  return closure_10(stateFromStores1(10088).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(9908).UserSettingsTableRowGroup, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14596
+// Function ID: 14597
 // Name: useAuthSessions
-// Dependencies: [19, 1215, 14565, 586, 1233, 4074, 2]
+// Dependencies: [19, 1215, 14597, 586, 1233, 4074, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14564 (useAuthSessions)
+// Module 14596 (useAuthSessions)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import hooksDefault from "hooks" /* 4074 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "handleInit" /* 14565 */;
+import closure_5 from "handleInit" /* 14597 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");

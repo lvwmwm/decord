@@ -1,13 +1,13 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 9954
+// Function ID: 9955
 // Name: SingleStream
-// Dependencies: [19, 9537, 21, 9579, 9590, 4722, 2]
+// Dependencies: [19, 9396, 21, 9523, 9533, 4729, 2]
 // Exports: default
 
-// Module 10134 (SingleStream)
+// Module 9954 (SingleStream)
 import noopAll from "noop" /* 19 */;
-import StreamTextOverlayDefault from "StreamTextOverlay" /* 9579 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9537 */;
+import StreamTextOverlayDefault from "StreamTextOverlay" /* 9523 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9396 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -19,7 +19,7 @@ export default function SingleStream(channel) {
   channel = channel.channel;
   const obj = {
     gestureEnabled: true,
-    resizeMode: channel(9590).ResizeMode.CONTAIN,
+    resizeMode: channel(9533).ResizeMode.CONTAIN,
     onSingleTap() {
       callback();
     },
@@ -32,7 +32,7 @@ export default function SingleStream(channel) {
   };
   return jsx(StreamTextOverlayDefault, {
     gestureEnabled: true,
-    resizeMode: channel(9590).ResizeMode.CONTAIN,
+    resizeMode: channel(9533).ResizeMode.CONTAIN,
     onSingleTap() {
       callback();
     },

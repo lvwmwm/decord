@@ -1,11 +1,11 @@
-// Module ID: 6142
-// Function ID: 6143
+// Module ID: 7226
+// Function ID: 7227
 // Name: reset
-// Dependencies: [1400, 2]
+// Dependencies: [1401, 2]
 
-// Module 6142 (reset)
+// Module 7226 (reset)
 import set2 from "set" /* 2 */;
-import privDefault from "priv" /* 1400 */;
+import privDefault from "priv" /* 1401 */;
 
 let result = set2.fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
 class GuildThreadSubscriptions {

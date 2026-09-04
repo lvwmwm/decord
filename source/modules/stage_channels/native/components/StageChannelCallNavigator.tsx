@@ -1,21 +1,21 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9588
+// Function ID: 9589
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 502, 21, 9646, 4217, 4928, 709, 9647, 10057, 9660, 9541, 9540, 10058, 9608, 4722, 10061, 10122, 4204, 9545, 10130, 10131, 9663, 10136, 10146, 10150, 10182, 10183, 4478, 10184, 10015, 2]
+// Dependencies: [32, 19, 17, 502, 21, 9589, 4218, 4935, 709, 9590, 9869, 9603, 9400, 9399, 9870, 9551, 4729, 9873, 9942, 4205, 9403, 9950, 9951, 9606, 9956, 9966, 9970, 10002, 10003, 4481, 10004, 9827, 2]
 // Exports: default
 
-// Module 9645 (ModeratorViewOverlay)
+// Module 9588 (ModeratorViewOverlay)
 import ThemesDefault from "Themes" /* 709 */;
-import _modDef4217 from "module_4217" /* 4217 */;
-import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 10015 */;
-import JoinStageViewDefault from "JoinStageView" /* 10057 */;
-import RootThemeContextProvider from "RootThemeContextProvider" /* 10184 */;
+import _modDef4218 from "module_4218" /* 4218 */;
+import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 9827 */;
+import JoinStageViewDefault from "JoinStageView" /* 9869 */;
+import RootThemeContextProvider from "RootThemeContextProvider" /* 10004 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { ThemeTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ModeratorViewOverlay(channel) {
@@ -81,7 +81,7 @@ function JoinStageOverlay(channel) {
   const tmp = callback(React.useState(false), 2);
   first = tmp[0];
   importDefault = tmp[1];
-  let obj = first(4217);
+  let obj = first(4218);
   const fn = function s() {
     let obj = first(closure_1_2[7]);
     let num = 0;
@@ -91,7 +91,7 @@ function JoinStageOverlay(channel) {
     obj = { opacity: obj.withSpring(num, closure_1_11) };
     return obj;
   };
-  obj = { withSpring: first(4928).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4935).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
   fn.__initData = closure_15;
@@ -108,7 +108,7 @@ function JoinStageOverlay(channel) {
   const items = [closure_5.absoluteFill, { backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_800 }, animatedStyle];
   obj[0] = items;
   obj[1] = callback2(JoinStageViewDefault, { channel: channel.channel });
-  return callback2(_modDef4217.View, obj);
+  return callback2(_modDef4218.View, obj);
 }
 function StagePromptWrapper(channel) {
   return callback2(RootThemeContextProvider.DisableCustomTheme, { children: callback2(StagePromptInner, { channel: channel.channel }) });

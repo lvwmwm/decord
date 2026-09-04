@@ -1,9 +1,9 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 8669
+// Function ID: 8670
 // Name: getDisplayedInviteCode
 // Dependencies: [586, 706, 2]
 
-// Module 8884 (getDisplayedInviteCode)
+// Module 8669 (getDisplayedInviteCode)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12996
+// Function ID: 12997
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 1383, 21, 4478, 709, 8547, 10643, 1372, 4433, 4474, 1233, 5077, 5560, 2]
+// Dependencies: [19, 17, 1383, 21, 4481, 709, 8172, 10554, 1372, 4436, 4477, 1233, 5084, 5635, 2]
 // Exports: default
 
-// Module 12731 (UserProfileWidgetsBoardEditNotice)
+// Module 12996 (UserProfileWidgetsBoardEditNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8547 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10643 */;
+import useSharedStylesDefault from "useSharedStyles" /* 8172 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10554 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

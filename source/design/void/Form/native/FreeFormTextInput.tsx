@@ -1,19 +1,19 @@
-// Module ID: 7724
-// Function ID: 7725
+// Module ID: 6879
+// Function ID: 6880
 // Name: ClearButton
-// Dependencies: [19, 17, 21, 4478, 709, 5077, 1233, 1296, 7725, 38, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 5084, 1233, 1296, 6880, 38, 2]
 
-// Module 7724 (ClearButton)
+// Module 6879 (ClearButton)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import registerAssetDefault from "registerAsset" /* 7725 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import registerAssetDefault from "registerAsset" /* 6880 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ClearButton(onPress) {

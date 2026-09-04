@@ -1,9 +1,9 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 6495
+// Function ID: 6496
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7114 (metadata)
+// Module 6495 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrophyIllocon-2x.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 8714
+// Function ID: 8715
 // Name: useGetOrFetchStorefrontPricesForApplicationId
-// Dependencies: [19, 10691, 2]
+// Dependencies: [19, 8715, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 10690 (useGetOrFetchStorefrontPricesForApplicationId)
+// Module 8714 (useGetOrFetchStorefrontPricesForApplicationId)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

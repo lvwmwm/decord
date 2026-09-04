@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "e955954d3b070442dffa061da0dc1d1a", name: "ic_clock", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 254, height: 154, scales: [2, 3], hash: "82ae7189682c36bee3dc3a129ab02a11", name: "img_app_crash_darker", type: "png" });

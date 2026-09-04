@@ -1,22 +1,22 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 11057
+// Function ID: 11058
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4470, 1383, 21, 4217, 586, 4197, 709, 4479, 4928, 4478, 9131, 1233, 8243, 2]
+// Dependencies: [19, 17, 4473, 1383, 21, 4218, 586, 4197, 709, 4482, 4935, 4481, 11058, 1233, 9302, 2]
 // Exports: default
 
-// Module 9130 (BurstReactionToggle)
+// Module 11057 (BurstReactionToggle)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
-import { Easing } from "module_4217" /* 4217 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import { Easing } from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let obj = { duration: 100, easing: null };
-obj[1] = Easing.out(require("module_4217").Easing.quad);
+obj[1] = Easing.out(require("module_4218").Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 obj = { container: null };

@@ -1,20 +1,20 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12343
+// Function ID: 12344
 // Name: _requestPushNotificationPermission
-// Dependencies: [32, 5, 19, 17, 12209, 12210, 673, 4731, 9677, 695, 12212, 12218, 12219, 586, 2]
+// Dependencies: [32, 5, 19, 17, 12341, 12342, 673, 4738, 9619, 695, 12344, 12350, 12351, 586, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 12211 (_requestPushNotificationPermission)
+// Module 12343 (_requestPushNotificationPermission)
 import initialize from "initialize" /* 586 */;
-import set from "set" /* 12219 */;
+import set from "set" /* 12351 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "set" /* 12209 */;
-import { EventActionType } from "EventActionType" /* 12210 */;
+import closure_7 from "set" /* 12341 */;
+import { EventActionType } from "EventActionType" /* 12342 */;
 import { AnalyticEvents } from "ME" /* 673 */;
-import { NotificationAuthorizationStatus as closure_10 } from "NativePermissionStatus" /* 4731 */;
+import { NotificationAuthorizationStatus as closure_10 } from "NativePermissionStatus" /* 4738 */;
 
 require = arg1;
 function _requestPushNotificationPermission() {
@@ -73,7 +73,7 @@ function _requestPushNotificationPermission() {
           } else {
             closure_3 = arg1;
             if (closure_3 === constants3.DENIED) {
-              callback2(9677)();
+              callback2(9619)();
               obj2 = callback2(695);
               const obj3 = { action_type: null, action_location: null };
               obj3[0] = constants.TO_SETTINGS;
@@ -82,7 +82,7 @@ function _requestPushNotificationPermission() {
               dependencyMap();
               obj = 3;
             } else if (closure_3 !== constants3.AUTHORIZED) {
-              obj = callback2(12218);
+              obj = callback2(12350);
               const permission = obj.requestPermission((permission_granted) => {
                 let obj = callback(695);
                 obj = { action_type: closure_0, action_location: callback, permission_granted };
@@ -90,7 +90,7 @@ function _requestPushNotificationPermission() {
                 dependencyMap();
               });
             }
-            obj1 = callback(12212);
+            obj1 = callback(12344);
             const result = obj1.updateNotificationAuthorizationStatus(closure_3);
             dependencyMap();
           }

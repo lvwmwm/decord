@@ -1,13 +1,13 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 12934
+// Function ID: 12935
 // Name: isOnXbox
-// Dependencies: [4506, 673, 2]
+// Dependencies: [4509, 673, 2]
 // Exports: default
 
-// Module 9404 (isOnXbox)
+// Module 12934 (isOnXbox)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import items3 from "items3" /* 4506 */;
+import items3 from "items3" /* 4509 */;
 
 let closure_0 = items3.XBOX_ACTIVITY_APPLICATION_ID;
 const ActivityGamePlatforms = ME.ActivityGamePlatforms;

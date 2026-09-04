@@ -1,17 +1,17 @@
-// Module ID: 10373
-// Function ID: 10374
+// Module ID: 10199
+// Function ID: 10200
 // Name: RoleLabel
-// Dependencies: [19, 17, 4470, 21, 4478, 586, 1296, 8376, 2]
+// Dependencies: [19, 17, 4473, 21, 4481, 586, 1296, 8523, 2]
 // Exports: RoleLabel
 
-// Module 10373 (RoleLabel)
+// Module 10199 (RoleLabel)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
-import Form from "Form" /* 8376 */;
+import Form from "Form" /* 8523 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

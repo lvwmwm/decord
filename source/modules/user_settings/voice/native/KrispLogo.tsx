@@ -1,10 +1,10 @@
-// Module ID: 10106
-// Function ID: 10107
+// Module ID: 9926
+// Function ID: 9927
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1301, 673, 21, 1994, 695, 1233, 4190, 586, 1362, 10107, 10108, 4474, 2]
+// Dependencies: [19, 17, 1301, 673, 21, 1994, 695, 1233, 4190, 586, 1362, 9927, 9928, 4477, 2]
 // Exports: default
 
-// Module 10106 (handleKrispLinkPressed)
+// Module 9926 (handleKrispLinkPressed)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
@@ -12,7 +12,7 @@ import getSystemLocale from "getSystemLocale" /* 1233 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import combinedDefault from "combined" /* 1994 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "handleThemeChange" /* 1301 */;
 import ME from "ME" /* 673 */;
@@ -45,9 +45,9 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   obj1 = AccessibilityAnnouncer;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10107);
+    let tmp4Result = tmp4(9927);
   } else {
-    tmp4Result = tmp4(10108);
+    tmp4Result = tmp4(9928);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

@@ -1,14 +1,14 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8305
+// Function ID: 8306
 // Name: SERVER_INVITE
-// Dependencies: [673, 8666, 1485, 4675, 695, 2]
+// Dependencies: [673, 8306, 1485, 4682, 695, 2]
 
-// Module 8665 (SERVER_INVITE)
+// Module 8305 (SERVER_INVITE)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import ME2 from "ME" /* 4675 */;
+import ME2 from "ME" /* 4682 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };

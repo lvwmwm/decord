@@ -1,21 +1,21 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 9979
+// Function ID: 9980
 // Name: VoiceStatus
-// Dependencies: [19, 17, 4529, 4497, 5374, 21, 4478, 709, 586, 10116, 9612, 9613, 1296, 10160, 10161, 7754, 2]
+// Dependencies: [19, 17, 4532, 4500, 5382, 21, 4481, 709, 586, 9936, 9555, 9556, 1296, 9980, 9981, 6909, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10159 (VoiceStatus)
+// Module 9979 (VoiceStatus)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
-import registerAssetDefault from "registerAsset" /* 7754 */;
-import registerAssetDefault2 from "registerAsset" /* 10161 */;
+import registerAssetDefault from "registerAsset" /* 6909 */;
+import registerAssetDefault2 from "registerAsset" /* 9981 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_5 from "updateVoiceState" /* 4497 */;
-import closure_6 from "buildStageChannelUserRoles" /* 5374 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_5 from "updateVoiceState" /* 4500 */;
+import closure_6 from "buildStageChannelUserRoles" /* 5382 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let obj = { voiceStatusWrapper: null, moderatorStatusWrapper: null, restricted: null };
@@ -52,15 +52,15 @@ const memoResult = importAllResult.memo((userId) => {
     flag2 = false;
   }
   if (stateFromStores) {
-    let tmp5 = channelId(10116);
+    let tmp5 = channelId(9936);
     let flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(9612);
+    tmp5 = channelId(9555);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(9613);
+      tmp5 = channelId(9556);
       flag3 = false;
     }
   }
@@ -87,7 +87,7 @@ const memoResult1 = importAllResult.memo((userId) => {
   const items1 = [channelId, userId];
   let tmp4;
   if (obj.useStateFromStores(items, () => closure_1_6.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(10160);
+    tmp4 = channelId(9980);
   }
   let tmp6 = null;
   if (null != tmp4) {

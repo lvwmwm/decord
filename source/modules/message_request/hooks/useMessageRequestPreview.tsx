@@ -1,14 +1,14 @@
-// Module ID: 12394
-// Function ID: 12395
+// Module ID: 12526
+// Function ID: 12527
 // Name: loadMessageRequestData
-// Dependencies: [5, 4736, 4493, 12395, 673, 586, 12, 527, 706, 2]
+// Dependencies: [5, 4743, 4496, 12527, 673, 586, 12, 527, 706, 2]
 // Exports: useMessageRequestPreview
 
-// Module 12394 (loadMessageRequestData)
+// Module 12526 (loadMessageRequestData)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "reinjectEphemerals" /* 4736 */;
-import closure_5 from "generateOldThreadCutoff" /* 4493 */;
-import closure_6 from "isMessagePreviewEnabledForChannel" /* 12395 */;
+import closure_4 from "reinjectEphemerals" /* 4743 */;
+import closure_5 from "generateOldThreadCutoff" /* 4496 */;
+import closure_6 from "isMessagePreviewEnabledForChannel" /* 12527 */;
 import { Endpoints } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 

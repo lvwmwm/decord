@@ -1,14 +1,14 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8022
+// Function ID: 8023
 // Name: useChangelog
-// Dependencies: [19, 1995, 4492, 1979, 644, 8013, 2]
+// Dependencies: [19, 1995, 4495, 1979, 644, 8023, 2]
 // Exports: useCurrentChangelog
 
-// Module 8012 (useChangelog)
+// Module 8022 (useChangelog)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 4492 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 4495 */;
 import { ChangelogLoadState } from "CHANGELOG_MODAL_KEY" /* 1979 */;
 
 require = arg1;

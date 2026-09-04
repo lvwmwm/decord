@@ -1,14 +1,14 @@
-// Module ID: 6943
-// Function ID: 6944
+// Module ID: 6324
+// Function ID: 6325
 // Name: QuestsIllocon
-// Dependencies: [21, 5502, 6944, 2]
+// Dependencies: [21, 5542, 6325, 2]
 // Exports: QuestsIllocon
 
-// Module 6943 (QuestsIllocon)
+// Module 6324 (QuestsIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6944 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6325 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");

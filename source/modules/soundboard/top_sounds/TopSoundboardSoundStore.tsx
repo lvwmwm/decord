@@ -1,9 +1,9 @@
-// Module ID: 4967
-// Function ID: 4968
+// Module ID: 4974
+// Function ID: 4975
 // Name: initialize
 // Dependencies: [586, 706, 2]
 
-// Module 4967 (initialize)
+// Module 4974 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 
@@ -43,6 +43,9 @@ obj = {
     ({ guildId, topSoundsMetadata } = arg0);
     obj.topSoundboardSoundsByGuildId[guildId] = topSoundsMetadata.map((soundId) => soundId.soundId);
     closure_2[guildId] = false;
+  },
+  TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE: function handleTopSoundboardSoundsFetchFailure(guildId) {
+    closure_2[guildId.guildId] = false;
   }
 };
 const topSoundboardSoundStore = new TopSoundboardSoundStore(dispatcherDefault, obj);

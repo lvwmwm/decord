@@ -1,14 +1,14 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 10279
+// Function ID: 10280
 // Name: NatureIcon
-// Dependencies: [19, 21, 709, 4196, 9214, 2]
+// Dependencies: [19, 21, 709, 4196, 10280, 2]
 // Exports: NatureIcon
 
-// Module 9213 (NatureIcon)
+// Module 10279 (NatureIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9214 */;
+import registerAsset from "registerAsset" /* 10280 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

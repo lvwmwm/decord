@@ -1,11 +1,11 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16464
+// Function ID: 16465
 // Name: getCoverImageURI
-// Dependencies: [4114, 4756, 2]
+// Dependencies: [4114, 4763, 2]
 // Exports: getCoverImageURI
 
-// Module 16378 (getCoverImageURI)
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4756 */;
+// Module 16464 (getCoverImageURI)
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4763 */;
 import closure_2 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
 
 require = arg1;

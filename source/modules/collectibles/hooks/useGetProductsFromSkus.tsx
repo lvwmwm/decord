@@ -1,13 +1,13 @@
-// Module ID: 14915
-// Function ID: 14916
+// Module ID: 14997
+// Function ID: 14998
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7297, 586, 14916, 2]
+// Dependencies: [19, 7475, 586, 14998, 2]
 // Exports: default
 
-// Module 14915 (useGetProductsFromSkus)
+// Module 14997 (useGetProductsFromSkus)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7297 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
 
 noop.useCallback;
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");

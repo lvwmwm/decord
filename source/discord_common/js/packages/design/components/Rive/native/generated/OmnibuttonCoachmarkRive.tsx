@@ -1,11 +1,11 @@
-// Module ID: 4289
-// Function ID: 4290
+// Module ID: 4292
+// Function ID: 4293
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 4211, 4290, 4266, 2]
+// Dependencies: [109, 19, 21, 4212, 4293, 4267, 2]
 
-// Module 4289 (OmnibuttonCoachmarkRive)
-import BaseRive from "BaseRive" /* 4211 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4266 */;
+// Module 4292 (OmnibuttonCoachmarkRive)
+import BaseRive from "BaseRive" /* 4212 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4267 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

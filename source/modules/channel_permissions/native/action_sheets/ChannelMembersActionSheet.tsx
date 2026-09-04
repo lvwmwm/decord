@@ -1,16 +1,16 @@
-// Module ID: 11423
-// Function ID: 11424
+// Module ID: 11541
+// Function ID: 11542
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1386, 1991, 1984, 1908, 4120, 673, 21, 4478, 709, 1627, 586, 1498, 4674, 11424, 9725, 1233, 5631, 5630, 5077, 4445, 8771, 11426, 6250, 8378, 11422, 10141, 1296, 5633, 9738, 4474, 2]
+// Dependencies: [19, 17, 1386, 1991, 1984, 1908, 4120, 673, 21, 4481, 709, 1627, 586, 1498, 4681, 11542, 9667, 1233, 7090, 7089, 5084, 4448, 8555, 11544, 7318, 8525, 11540, 9961, 1296, 6567, 9680, 4477, 2]
 // Exports: default
 
-// Module 11423 (ChannelMembersActionSheet)
+// Module 11541 (ChannelMembersActionSheet)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import useNavigation from "useNavigation" /* 1498 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11424 */;
+import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11542 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
@@ -19,7 +19,7 @@ import closure_7 from "createGuildRecordFromRust" /* 1908 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -82,9 +82,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(9725);
+        let tmp5Result = tmp5(9667);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(9725);
+        tmp5Result = tmp5(9667);
         obj = { appChannelBotUserId: null };
         obj[0] = tmp11;
         const items5 = [];
@@ -116,12 +116,12 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1233).intl;
           obj3[2] = intl.string(tmp5(1233).t.XPDhcc);
-          obj3[3] = tmp32(tmp5(6250).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5077).PressableOpacity, obj3);
+          obj3[3] = tmp32(tmp5(7318).SettingsIcon, {});
+          tmp32Result = tmp32(tmp5(5084).PressableOpacity, obj3);
         }
         const obj4 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj2[2] = tmp32Result;
-        obj4[1] = closure_11(tmp5(5630).BottomSheetTitleHeader, obj2);
+        obj4[1] = closure_11(tmp5(7089).BottomSheetTitleHeader, obj2);
         const obj5 = { style: null, children: null };
         obj5[0] = tmp.container;
         if (canResult) {
@@ -131,8 +131,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj6[1] = function onPress() {
             return closure_1_0(sectionRowWrapper[26]).openAddMembersActionSheet(stateFromStores);
           };
-          obj6[2] = tmp32(tmp5(10141).GroupPlusIcon, {});
-          tmp32Result = tmp32(tmp5(8378).RowButton, obj6);
+          obj6[2] = tmp32(tmp5(9961).GroupPlusIcon, {});
+          tmp32Result = tmp32(tmp5(8525).RowButton, obj6);
         } else {
           const obj7 = { style: null, children: null };
           obj7[0] = tmp.warning;
@@ -162,10 +162,10 @@ export default function ChannelMembersActionSheet(arg0) {
           return closure_1_11(closure_1_0(sectionRowWrapper[31]).Text, obj);
         };
         obj9[3] = items5;
-        items6[1] = closure_11(tmp5(5633).BottomSheetSectionList, obj9);
+        items6[1] = closure_11(tmp5(6567).BottomSheetSectionList, obj9);
         obj5[1] = items6;
         obj4[3] = closure_12(stateFromStores, obj5);
-        return closure_11(tmp5(5631).BottomSheet, obj4);
+        return closure_11(tmp5(7090).BottomSheet, obj4);
       }
     }
   }

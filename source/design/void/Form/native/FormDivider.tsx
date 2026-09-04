@@ -1,18 +1,18 @@
-// Module ID: 8382
-// Function ID: 8383
+// Module ID: 8529
+// Function ID: 8530
 // Name: Divider
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4204, 5984, 4326, 5607, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 4205, 7124, 4329, 5641, 2]
 // Exports: default
 
-// Module 8382 (Divider)
+// Module 8529 (Divider)
 import ThemesDefault from "Themes" /* 709 */;
-import ManaContext from "ManaContext" /* 4204 */;
-import context from "context" /* 5607 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 5984 */;
+import ManaContext from "ManaContext" /* 4205 */;
+import context from "context" /* 5641 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7124 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ View: c4, StyleSheet: c5, Platform } = get_ActivityIndicator);
@@ -44,9 +44,9 @@ export default function Divider(outer) {
   let tmp7 = null;
   if (tmp6) {
     obj = { backgroundColor: null };
-    obj[0] = tmp2(4326).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
+    obj[0] = tmp2(4329).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
     tmp7 = obj;
-    const tmp2Result = tmp2(4326);
+    const tmp2Result = tmp2(4329);
   }
   let tmp10Result = null;
   if (!React.useContext(context.RedesignCompatContext)) {

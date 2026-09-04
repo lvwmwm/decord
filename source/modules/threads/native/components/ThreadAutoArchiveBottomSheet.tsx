@@ -1,9 +1,9 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16737
+// Function ID: 16738
 // Name: AutoArchiveDurationOptions
-// Dependencies: [19, 1393, 21, 8174, 7704, 1233, 7705, 2]
+// Dependencies: [19, 1393, 21, 9235, 5640, 1233, 5643, 2]
 
-// Module 16650 (AutoArchiveDurationOptions)
+// Module 16737 (AutoArchiveDurationOptions)
 import { ChannelFlags } from "set" /* 1393 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
@@ -13,7 +13,7 @@ const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   let _require;
   ({ title, description, selected, onSelectDuration } = channel);
-  let obj = _require(8174);
+  let obj = _require(9235);
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   let hasFlagResult = null != channel && channel.isForumPost();
   if (hasFlagResult) {
@@ -25,7 +25,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj[3] = intl.string(_require(1233).t.H4mGfI);
   obj[4] = onSelectDuration;
   obj[6] = autoArchiveOptions.map((value) => closure_1_3(_undefined(closure_1_1[6]).TableRadioRow, { value: value.value, disabled: _undefined, label: value.label }, value.value));
-  return jsx(_require(7704).TableRadioGroup, { value: selected, title, description, accessibilityLabel: null, onChange: null, hasIcons: false, children: null });
+  return jsx(_require(5640).TableRadioGroup, { value: selected, title, description, accessibilityLabel: null, onChange: null, hasIcons: false, children: null });
 });
 const result = require("set").fileFinishedImporting("modules/threads/native/components/ThreadAutoArchiveBottomSheet.tsx");
 

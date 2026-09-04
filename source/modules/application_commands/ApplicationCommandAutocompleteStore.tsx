@@ -1,13 +1,13 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 7711
+// Function ID: 7712
 // Name: handleInit
-// Dependencies: [7535, 673, 1234, 1954, 4701, 586, 706, 2]
+// Dependencies: [7712, 673, 1234, 1954, 4708, 586, 706, 2]
 
-// Module 7534 (handleInit)
+// Module 7711 (handleInit)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4701 */;
-import closure_2 from "handleInit" /* 7535 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import closure_2 from "handleInit" /* 7712 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import set from "set" /* 1234 */;
 
@@ -332,7 +332,7 @@ set = {
       obj = { duration_ms: null, error: false, num_options: null };
       obj[0] = num;
       obj[2] = mapped.length;
-      _require(4701).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      _require(4708).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries3 = value.optionNameToAutocompleteQueries;
       const value2 = optionNameToAutocompleteQueries3.get(value.name);

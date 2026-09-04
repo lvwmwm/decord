@@ -1,12 +1,12 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9775
+// Function ID: 9776
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 9963 (apexExperiment)
+// Module 9775 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,25 +1,25 @@
-// Module ID: 16835
-// Function ID: 16836
+// Module ID: 16921
+// Function ID: 16922
 // Name: jsx
-// Dependencies: [21, 16591, 1234, 4332, 16360, 16743, 4346, 16759, 10187, 14049, 4864, 1351, 16836, 16842, 16875, 16884, 17055, 2]
+// Dependencies: [21, 16678, 1234, 4335, 16446, 16830, 4349, 16846, 10007, 14081, 4871, 1351, 16922, 16928, 16961, 16970, 17141, 2]
 
-// Module 16835 (jsx)
+// Module 16921 (jsx)
 import updateAccessibilityAnnouncerLiveRegionMessage from "updateAccessibilityAnnouncerLiveRegionMessage" /* 1351 */;
-import PortalKeyboardState from "PortalKeyboardState" /* 4346 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4864 */;
-import NotificationsDefault from "Notifications" /* 10187 */;
-import getItemKey from "getItemKey" /* 14049 */;
-import transitionGroupGetItemKey from "transitionGroupGetItemKey" /* 16591 */;
-import BurstReactionAnimationContainer from "BurstReactionAnimationContainer" /* 16743 */;
-import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16759 */;
-import FreezeAfterLayoutPipViewDefault from "FreezeAfterLayoutPipView" /* 16836 */;
-import _modDef16842 from "module_16842" /* 16842 */;
-import _modDef16875 from "module_16875" /* 16875 */;
-import VoicePanelDefault from "VoicePanel" /* 16884 */;
-import _modDef17055 from "module_17055" /* 17055 */;
+import PortalKeyboardState from "PortalKeyboardState" /* 4349 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
+import NotificationsDefault from "Notifications" /* 10007 */;
+import getItemKey from "getItemKey" /* 14081 */;
+import transitionGroupGetItemKey from "transitionGroupGetItemKey" /* 16678 */;
+import BurstReactionAnimationContainer from "BurstReactionAnimationContainer" /* 16830 */;
+import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16846 */;
+import FreezeAfterLayoutPipViewDefault from "FreezeAfterLayoutPipView" /* 16922 */;
+import _modDef16928 from "module_16928" /* 16928 */;
+import _modDef16961 from "module_16961" /* 16961 */;
+import VoicePanelDefault from "VoicePanel" /* 16970 */;
+import _modDef17141 from "module_17141" /* 17141 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 1234 */;
-import importDefaultResult from "jsx" /* 16360 */;
+import importDefaultResult from "jsx" /* 16446 */;
 
 ({ jsx, jsxs } = jsxProd);
 let closure_2 = jsx(transitionGroupGetItemKey.PortalKeyboardRenderer, {});
@@ -40,7 +40,7 @@ if (set.isAndroid()) {
 const jsxsResult = jsxs(importDefaultResult, { lockKeys: ["external-pip"], children: null });
 obj = { lockKeys: ["external-pip"], children: null };
 const jsxResult1 = jsx(FreezeAfterLayoutPipViewDefault, {});
-const items1 = [jsx(_modDef16842, {}), jsx(_modDef16875, {}), jsx(VoicePanelDefault, {}), jsx(_modDef17055, {})];
+const items1 = [jsx(_modDef16928, {}), jsx(_modDef16961, {}), jsx(VoicePanelDefault, {}), jsx(_modDef17141, {})];
 obj[1] = items1;
 const importDefaultResult1 = importDefaultResult;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/AppComponents.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14638
+// Function ID: 14639
 // Name: pressable
-// Dependencies: [1921, 7896, 586, 7699, 11292, 1233, 2]
+// Dependencies: [1921, 7906, 586, 5576, 11400, 1233, 2]
 
-// Module 14610 (pressable)
+// Module 14638 (pressable)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef7699 from "module_7699" /* 7699 */;
+import _modDef5576 from "module_5576" /* 5576 */;
 import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {
@@ -29,7 +29,7 @@ createToggle = {
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    _modDef7699.open(true);
+    _modDef5576.open(true);
   },
   withArrow: true
 };

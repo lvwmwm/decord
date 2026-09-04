@@ -1,14 +1,14 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 15842
+// Function ID: 15843
 // Name: buildOverviewCategoriesSection
-// Dependencies: [1233, 2694, 15756, 2]
+// Dependencies: [1233, 2694, 15838, 2]
 // Exports: buildCategoryOtherSettingsSection, buildCategoryServerSettingsSection, buildCategorySocialSettingsSection, buildOverviewCategoriesSection, buildRealtimeSettingsSection
 
-// Module 15760 (buildOverviewCategoriesSection)
+// Module 15842 (buildOverviewCategoriesSection)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 2694 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15756 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15838 */;
 
 const result = set.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRouteBuilders.tsx");
 

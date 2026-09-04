@@ -1,22 +1,22 @@
-// Module ID: 16742
-// Function ID: 16743
+// Module ID: 16829
+// Function ID: 16830
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 8709, 21, 4478, 709, 5562, 8018, 1233, 6061, 7776, 4474, 4190, 14593, 2]
+// Dependencies: [19, 17, 8349, 21, 4481, 709, 7063, 8028, 1233, 6534, 6932, 4477, 4190, 14693, 2]
 // Exports: default
 
-// Module 16742 (SuspendedUserSafetyHubPage)
+// Module 16829 (SuspendedUserSafetyHubPage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import registerAssetDefault from "registerAsset" /* 7776 */;
-import IconButton from "IconButton" /* 8018 */;
-import handleLogInClickDefault from "handleLogInClick" /* 14593 */;
+import Text from "Text" /* 4477 */;
+import registerAssetDefault from "registerAsset" /* 6932 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import IconButton from "IconButton" /* 8028 */;
+import handleLogInClickDefault from "handleLogInClick" /* 14693 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8709 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8349 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -41,7 +41,7 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(6061).closeSuspendedUser();
+    callback(6534).closeSuspendedUser();
   };
   obj1[3] = registerAssetDefault;
   const items = [callback(IconButton.IconButton, obj1), ];

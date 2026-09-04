@@ -1,15 +1,15 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15389
+// Function ID: 15390
 // Name: toggle
-// Dependencies: [1303, 7896, 586, 15305, 4166, 11292, 1233, 2]
+// Dependencies: [1303, 7906, 586, 15387, 4166, 11400, 1233, 2]
 
-// Module 15307 (toggle)
+// Module 15389 (toggle)
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import UserSettingsText from "UserSettingsText" /* 15305 */;
+import UserSettingsText from "UserSettingsText" /* 15387 */;
 import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import createToggle from "createToggle" /* 11292 */;
+import createToggle from "createToggle" /* 11400 */;
 
 require = arg1;
 createToggle = {

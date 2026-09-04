@@ -1,11 +1,11 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 5130
+// Function ID: 5131
 // Name: fromBlob
-// Dependencies: [5, 5110, 5123, 2]
+// Dependencies: [5, 5118, 5131, 2]
 
-// Module 5122 (fromBlob)
-import fromBlobDefault from "fromBlob" /* 5110 */;
-import ORIGINAL_MD5_HEADER from "ORIGINAL_MD5_HEADER" /* 5123 */;
+// Module 5130 (fromBlob)
+import fromBlobDefault from "fromBlob" /* 5118 */;
+import ORIGINAL_MD5_HEADER from "ORIGINAL_MD5_HEADER" /* 5131 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;

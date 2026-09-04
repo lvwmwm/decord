@@ -1,10 +1,10 @@
-// Module ID: 4506
-// Function ID: 4507
+// Module ID: 4509
+// Function ID: 4510
 // Name: items3
 // Dependencies: [673, 1954, 2]
 // Exports: getAppIntentScheme
 
-// Module 4506 (items3)
+// Module 4509 (items3)
 import ME from "ME" /* 673 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import set from "set" /* 2 */;

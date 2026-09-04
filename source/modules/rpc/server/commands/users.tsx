@@ -1,14 +1,14 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 14429
+// Function ID: 14430
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: [1921, 4380, 673, 14369, 9526, 2]
+// Dependencies: [1921, 4383, 673, 14401, 9489, 2]
 
-// Module 14397 (RPC_EMBEDDED_APP_SCOPE)
-import transformUserDefault from "transformUser" /* 9526 */;
+// Module 14429 (RPC_EMBEDDED_APP_SCOPE)
+import transformUserDefault from "transformUser" /* 9489 */;
 import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
 import { RPCCommands } from "ME" /* 673 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14369 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14401 */;
 
 ({ RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
 let obj = {};

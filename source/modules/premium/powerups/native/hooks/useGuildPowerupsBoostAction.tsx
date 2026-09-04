@@ -1,16 +1,16 @@
-// Module ID: 16009
-// Function ID: 16010
+// Module ID: 16095
+// Function ID: 16096
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4370, 4365, 673, 12338, 5962, 7174, 4373, 4369, 5386, 7156, 2]
+// Dependencies: [5, 19, 4373, 4368, 673, 12470, 7102, 7353, 4376, 4372, 5394, 7336, 2]
 // Exports: default
 
-// Module 16009 (useGuildPowerupsBoostAction)
-import contextDefault from "context" /* 5962 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12338 */;
+// Module 16095 (useGuildPowerupsBoostAction)
+import contextDefault from "context" /* 7102 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12470 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleGuildBoostsUpdate" /* 4370 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
+import closure_5 from "handleGuildBoostsUpdate" /* 4373 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;
@@ -64,9 +64,9 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               tmp15 = dependencyMap;
               if (dependencyMap > 0) {
                 if (!closure_1_5.hasFetched) {
-                  obj1 = arr(7174);
+                  obj1 = arr(7353);
                   const items = [obj1.init(), ];
-                  let obj2 = PERK(4373);
+                  let obj2 = PERK(4376);
                   items[1] = obj2.fetchGuildBoostSlots();
                   dependencyMap = 1;
                   c3 = 1;
@@ -93,10 +93,10 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         if (arr.type === closure_1_7.PERK) {
           PERK = closure_1_6.PERK;
         }
-        let obj4 = PERK(4369);
+        let obj4 = PERK(4372);
         arr = obj4.getAvailableGuildBoostSlots(closure_1_5.boostSlots);
         if (arr.length >= dependencyMap) {
-          tmp15 = PERK(5386);
+          tmp15 = PERK(5394);
           obj2 = { guildBoostSlots: null, guildId: null, intent: null };
           obj2[0] = arr.slice(0, dependencyMap);
           obj2[1] = PERK;
@@ -123,8 +123,8 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               const tmpResult = PERK(table[10]);
             }
           };
-          const result = PERK(7156).launchGuildBoostFlowOrAlert(obj3);
-          const obj6 = PERK(7156);
+          const result = PERK(7336).launchGuildBoostFlowOrAlert(obj3);
+          const obj6 = PERK(7336);
         }
       } catch (tmp50) {
         c3 = tmp;

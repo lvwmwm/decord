@@ -1,28 +1,28 @@
-// Module ID: 6134
-// Function ID: 6135
+// Module ID: 7218
+// Function ID: 7219
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4391, 4121, 5233, 1215, 6135, 6136, 1386, 4856, 1991, 1908, 4554, 4130, 1980, 4299, 673, 6139, 706, 12, 1911, 586, 2]
+// Dependencies: [32, 4394, 4121, 5241, 1215, 7219, 7220, 1386, 4863, 1991, 1908, 4557, 4130, 1980, 4302, 673, 7223, 706, 12, 1911, 586, 2]
 
-// Module 6134 (handleConnectionOpenOrResumed)
+// Module 7218 (handleConnectionOpenOrResumed)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import _enqueueDefault from "_enqueue" /* 6139 */;
+import _enqueueDefault from "_enqueue" /* 7223 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "getHash" /* 4391 */;
+import closure_5 from "getHash" /* 4394 */;
 import closure_6 from "initialize" /* 4121 */;
-import closure_7 from "upsertAccount" /* 5233 */;
+import closure_7 from "upsertAccount" /* 5241 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
-import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 6135 */;
-import closure_10 from "handlePermissionsChange" /* 6136 */;
+import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 7219 */;
+import closure_10 from "handlePermissionsChange" /* 7220 */;
 import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "handleConnectionOpen" /* 4856 */;
+import closure_12 from "handleConnectionOpen" /* 4863 */;
 import closure_13 from "trackCommunicationDisabled" /* 1991 */;
 import closure_14 from "createGuildRecordFromRust" /* 1908 */;
-import closure_15 from "createRTCConnection" /* 4554 */;
+import closure_15 from "createRTCConnection" /* 4557 */;
 import closure_16 from "markAllUserIdListsStale" /* 4130 */;
 import closure_17 from "handleConnectionOpen" /* 1980 */;
-import closure_18 from "handleConnectionOpen" /* 4299 */;
+import closure_18 from "handleConnectionOpen" /* 4302 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;

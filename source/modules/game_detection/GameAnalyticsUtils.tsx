@@ -1,12 +1,12 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4656
+// Function ID: 4657
 // Name: removeExecutablePathPrefix
-// Dependencies: [4514, 4654, 1234, 2]
+// Dependencies: [4517, 4657, 1234, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4653 (removeExecutablePathPrefix)
-import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4654 */;
-import closure_2 from "gameFromServer" /* 4514 */;
+// Module 4656 (removeExecutablePathPrefix)
+import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4657 */;
+import closure_2 from "gameFromServer" /* 4517 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
@@ -23,7 +23,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "call", exe: "getCurrentUser", distributor: "window", sku: "HermesInternal", gameMetadata: "w", rawExePath: "__closure" };
+    return { gameName: "channel", gameId: "slice", exe: "h", distributor: "k", sku: "padding", gameMetadata: "i", rawExePath: "raw" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     let id = streamApplication.id;

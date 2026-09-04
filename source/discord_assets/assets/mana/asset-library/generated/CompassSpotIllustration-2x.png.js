@@ -1,9 +1,9 @@
-// Module ID: 6438
-// Function ID: 6439
+// Module ID: 5819
+// Function ID: 5820
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6438 (metadata)
+// Module 5819 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassSpotIllustration-2x.png.js");

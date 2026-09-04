@@ -1,15 +1,15 @@
-// Module ID: 13715
-// Function ID: 13716
+// Module ID: 13748
+// Function ID: 13749
 // Name: calculateFps
-// Dependencies: [673, 3, 4755, 13716, 4558, 684, 2]
+// Dependencies: [673, 3, 4762, 13749, 4561, 684, 2]
 
-// Module 13715 (calculateFps)
+// Module 13748 (calculateFps)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import ME from "ME" /* 673 */;
-import sleep from "sleep" /* 4558 */;
-import isTablet from "isTablet" /* 4755 */;
-import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13716 */;
+import sleep from "sleep" /* 4561 */;
+import isTablet from "isTablet" /* 4762 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13749 */;
 
 const VideoToggleState = ME.VideoToggleState;
 class VideoHealthManager {
@@ -117,7 +117,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     if (null !== lastBackoffTime) {
       num2 = 1;
       if (expBackoffFactor <= 16) {
-        let obj = _require(4558);
+        let obj = _require(4561);
         num2 = 1;
         if (self.elapsedSeconds(obj.now(), lastBackoffTime) <= 600) {
           num2 = expBackoffFactor * 2;
@@ -125,7 +125,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
       }
     }
     obj = { lastBackoffTime: null, expBackoffFactor: null };
-    obj[0] = _require(4558).now();
+    obj[0] = _require(4561).now();
     obj[1] = num2;
     self.retryBackoffCache[arg0] = obj;
     const result = num2 * self.backoffTimeSec;
@@ -137,7 +137,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     self.timeoutIdCache[arg0] = setTimeout(() => {
       self.queueReenable(closure_0);
     }, result1);
-    const obj3 = _require(4558);
+    const obj3 = _require(4561);
   }
 };
 prototype["queueReenable"] = function queueReenable(closure_0) {

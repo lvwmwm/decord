@@ -1,14 +1,14 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11856
+// Function ID: 11857
 // Name: PiggyBankIcon
-// Dependencies: [19, 21, 709, 4196, 11726, 2]
+// Dependencies: [19, 21, 709, 4196, 11857, 2]
 // Exports: PiggyBankIcon
 
-// Module 11725 (PiggyBankIcon)
+// Module 11856 (PiggyBankIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11726 */;
+import registerAsset from "registerAsset" /* 11857 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

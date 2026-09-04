@@ -1,10 +1,10 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8098
+// Function ID: 8099
 // Name: _saveProfileChanges
-// Dependencies: [5, 1921, 673, 1923, 1228, 1362, 1233, 695, 8089, 7437, 706, 7769, 527, 5122, 4376, 2]
+// Dependencies: [5, 1921, 673, 1923, 1228, 1362, 1233, 695, 8099, 7615, 706, 6925, 527, 5130, 4379, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8088 (_saveProfileChanges)
+// Module 8098 (_saveProfileChanges)
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
@@ -241,9 +241,9 @@ export const setTryItOutAvatarDecoration = function setTryItOutAvatarDecoration(
   obj = { feature_name: constants4.AVATAR_DECORATION, feature_tier: constants3.PREMIUM_STANDARD };
   expandEventPropertiesDefault.track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
-export const setTryItOutProfileEffect = function setTryItOutProfileEffect(profileEffect) {
+export const setTryItOutProfileEffect = function setTryItOutProfileEffect(purchasedItem) {
   let obj = dispatcherDefault;
-  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PROFILE_EFFECT", profileEffect };
+  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PROFILE_EFFECT", profileEffect: purchasedItem };
   obj.dispatch(obj);
   obj = { feature_name: constants4.PROFILE_EFFECT, feature_tier: constants3.PREMIUM_STANDARD };
   expandEventPropertiesDefault.track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);

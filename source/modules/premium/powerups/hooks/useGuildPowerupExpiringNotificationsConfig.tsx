@@ -1,14 +1,14 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12489
+// Function ID: 12490
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [12358, 12359, 1233, 2822, 4368, 2400, 2]
+// Dependencies: [12490, 12491, 1233, 2822, 4371, 2400, 2]
 // Exports: default
 
-// Module 12357 (useGuildPowerupExpiringNotificationsConfig)
+// Module 12489 (useGuildPowerupExpiringNotificationsConfig)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12358 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12359 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12490 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12491 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
 

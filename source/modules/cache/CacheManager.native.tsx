@@ -1,18 +1,18 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17244
+// Function ID: 17245
 // Name: handleConnectionOpen
-// Dependencies: [5230, 7231, 3, 684, 5495, 7409, 15412, 1234, 688, 2]
+// Dependencies: [5238, 7409, 3, 684, 7058, 7587, 15494, 1234, 688, 2]
 
-// Module 17158 (handleConnectionOpen)
+// Module 17244 (handleConnectionOpen)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 684 */;
 import keys from "keys" /* 688 */;
 import set from "set" /* 1234 */;
-import initializeDefault from "initialize" /* 5495 */;
-import okAsyncDefault from "okAsync" /* 7409 */;
-import _writeCaches from "_writeCaches" /* 15412 */;
-import closure_3 from "_handleConnectionOpen" /* 5230 */;
-import closure_4 from "handleClearCaches" /* 7231 */;
+import initializeDefault from "initialize" /* 7058 */;
+import okAsyncDefault from "okAsync" /* 7587 */;
+import _writeCaches from "_writeCaches" /* 15494 */;
+import closure_3 from "_handleConnectionOpen" /* 5238 */;
+import closure_4 from "handleClearCaches" /* 7409 */;
 
 require = arg1;
 let closure_5 = new timestampDefault("CacheStore");

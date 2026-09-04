@@ -1,9 +1,9 @@
-// Module ID: 7046
-// Function ID: 7047
+// Module ID: 6427
+// Function ID: 6428
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7046 (metadata)
+// Module 6427 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpinningGem3dIllustration-2x.png.js");

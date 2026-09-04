@@ -1,18 +1,18 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14805
+// Function ID: 14806
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7292, 8791, 586, 4946, 7294, 2]
+// Dependencies: [19, 7470, 8575, 586, 4953, 7472, 2]
 // Exports: default
 
-// Module 14724 (useOnNewPendingRequest)
+// Module 14805 (useOnNewPendingRequest)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "freshTeenActivityWithMap" /* 7292 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7470 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
-export default function useOnNewPendingRequest(stateFromStores) {
-  const _require = stateFromStores;
+export default function useOnNewPendingRequest(first) {
+  const _require = first;
   const pendingRequestCount = _require(stateFromStores[2]).usePendingRequestCount();
   let obj = _require(stateFromStores[2]);
   const items = [closure_4];
@@ -26,8 +26,8 @@ export default function useOnNewPendingRequest(stateFromStores) {
       const obj = pendingRequestCount(stateFromStores[5]);
     }
   });
-  React = React.useRef(stateFromStores);
-  const items1 = [stateFromStores];
+  React = React.useRef(first);
+  const items1 = [first];
   const effect = React.useEffect(() => {
     closure_3.current = closure_0;
   }, items1);

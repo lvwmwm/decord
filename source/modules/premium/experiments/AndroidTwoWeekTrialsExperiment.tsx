@@ -1,12 +1,12 @@
-// Module ID: 13193
-// Function ID: 13194
+// Module ID: 13226
+// Function ID: 13227
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 13193 (apexExperiment)
+// Module 13226 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null, 2: { enabled: true, trialCTAEnabled: true } };
 obj[2] = { enabled: true, trialCTAEnabled: false };

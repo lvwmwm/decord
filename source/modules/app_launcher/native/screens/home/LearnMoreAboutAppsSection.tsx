@@ -1,21 +1,21 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 12027
+// Function ID: 12028
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 673, 21, 4478, 709, 4190, 1994, 1233, 11897, 8448, 4474, 5077, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 709, 4190, 1994, 1233, 12028, 9338, 4477, 5084, 2]
 // Exports: default
 
-// Module 11896 (LearnMoreAboutAppsSection)
+// Module 12027 (LearnMoreAboutAppsSection)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8448 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11897 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9338 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12028 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

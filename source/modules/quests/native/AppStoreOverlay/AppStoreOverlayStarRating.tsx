@@ -1,17 +1,17 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11437
+// Function ID: 11438
 // Name: FractionalStar
-// Dependencies: [19, 17, 21, 4478, 709, 9201, 9199, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 10170, 10164, 2]
 // Exports: default
 
-// Module 11329 (FractionalStar)
+// Module 11437 (FractionalStar)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import StarIcon from "StarIcon" /* 9199 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9201 */;
+import StarIcon from "StarIcon" /* 10164 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10170 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function FractionalStar(fillAmount) {

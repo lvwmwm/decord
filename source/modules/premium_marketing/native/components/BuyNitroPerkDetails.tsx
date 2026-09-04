@@ -1,18 +1,18 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13313
+// Function ID: 13314
 // Name: openBuyNitroPerkDetails
-// Dependencies: [19, 17, 21, 4478, 13253, 10339, 1233, 4927, 709, 13281, 13282, 5982, 4445, 2]
+// Dependencies: [19, 17, 21, 4481, 13286, 10159, 1233, 4934, 709, 13314, 13315, 7122, 4448, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 13280 (openBuyNitroPerkDetails)
+// Module 13313 (openBuyNitroPerkDetails)
 import ThemesDefault from "Themes" /* 709 */;
-import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5982 */;
-import PremiumTypes from "PremiumTypes" /* 13253 */;
-import BuyNitroPurchaseButtonDefault from "BuyNitroPurchaseButton" /* 13282 */;
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
+import PremiumTypes from "PremiumTypes" /* 13286 */;
+import BuyNitroPurchaseButtonDefault from "BuyNitroPurchaseButton" /* 13315 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -42,7 +42,7 @@ let closure_8 = importAllResult.memo((perk) => {
       const obj2 = { planSelection: null, item: null, centered: true };
       obj2[0] = buyNitroPlanSelection;
       obj2[1] = buyNitroPlanSelection.selection.item;
-      tmp6Result = tmp6(tmp9(13281), obj2);
+      tmp6Result = tmp6(tmp9(13314), obj2);
     }
     const items = [tmp6Result, ];
     const obj3 = { planSelection: null, location: null, sourceAnalyticsLocations: null, applicationId: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
@@ -57,8 +57,8 @@ let closure_8 = importAllResult.memo((perk) => {
     obj3[6] = onPaymentDismiss;
     items[1] = callback(BuyNitroPurchaseButtonDefault, obj3);
     obj1[1] = items;
-    obj[3] = closure_5(tmp2(4927).Stack, obj1);
-    tmp6Result = tmp6(tmp2(10339).PromoSheet, obj);
+    obj[3] = closure_5(tmp2(4934).Stack, obj1);
+    tmp6Result = tmp6(tmp2(10159).PromoSheet, obj);
     const tmp8 = closure_5;
     const tmp9Result = BuyNitroPurchaseButtonDefault;
   }

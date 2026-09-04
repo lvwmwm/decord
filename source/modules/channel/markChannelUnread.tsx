@@ -1,13 +1,13 @@
-// Module ID: 10349
-// Function ID: 10350
+// Module ID: 10175
+// Function ID: 10176
 // Name: markChannelUnread
-// Dependencies: [4493, 10350, 586, 2]
+// Dependencies: [4496, 10176, 586, 2]
 // Exports: default, useCanMarkChannelUnread
 
-// Module 10349 (markChannelUnread)
-import _markUnreadDefault from "_markUnread" /* 10350 */;
-import closure_3 from "generateOldThreadCutoff" /* 4493 */;
-import { ReadState } from "generateOldThreadCutoff" /* 4493 */;
+// Module 10175 (markChannelUnread)
+import _markUnreadDefault from "_markUnread" /* 10176 */;
+import closure_3 from "generateOldThreadCutoff" /* 4496 */;
+import { ReadState } from "generateOldThreadCutoff" /* 4496 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/channel/markChannelUnread.tsx");

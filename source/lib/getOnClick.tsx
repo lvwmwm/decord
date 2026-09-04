@@ -1,27 +1,27 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8307
+// Function ID: 8308
 // Name: openInviteModal
-// Dependencies: [32, 5, 4519, 7281, 6084, 1215, 1991, 1908, 4462, 4736, 1980, 4299, 5390, 673, 675, 6085, 706, 4463, 8668, 9690, 2008, 5466, 6100, 9785, 4461, 4466, 7446, 4184, 695, 9469, 11744, 13037, 9486, 4491, 9532, 13041, 10797, 11308, 1485, 11562, 5401, 13042, 7296, 4701, 4675, 8048, 13043, 2]
+// Dependencies: [32, 5, 4522, 7459, 7168, 1215, 1991, 1908, 4465, 4743, 1980, 4302, 5398, 673, 675, 7169, 706, 4466, 8308, 9632, 2008, 5475, 7184, 9718, 4464, 4469, 7624, 4184, 695, 9443, 11875, 12872, 9433, 4494, 9477, 12876, 10728, 11416, 1485, 11699, 5409, 12877, 7474, 4708, 4682, 8058, 12878, 2]
 // Exports: default
 
-// Module 8667 (openInviteModal)
+// Module 8307 (openInviteModal)
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import createGuildRecordFromRustDefault from "createGuildRecordFromRust" /* 1908 */;
-import reinjectEphemeralsDefault from "reinjectEphemerals" /* 4736 */;
-import handleUserSettingsStoreUpdateDefault from "handleUserSettingsStoreUpdate" /* 6084 */;
-import scheduledEventSortDefault from "scheduledEventSort" /* 7281 */;
+import reinjectEphemeralsDefault from "reinjectEphemerals" /* 4743 */;
+import handleUserSettingsStoreUpdateDefault from "handleUserSettingsStoreUpdate" /* 7168 */;
+import scheduledEventSortDefault from "scheduledEventSort" /* 7459 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "addApplication" /* 4519 */;
+import closure_5 from "addApplication" /* 4522 */;
 import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "trackCommunicationDisabled" /* 1991 */;
-import closure_8 from "updateInvite" /* 4462 */;
+import closure_8 from "updateInvite" /* 4465 */;
 import closure_9 from "handleConnectionOpen" /* 1980 */;
-import closure_10 from "handleConnectionOpen" /* 4299 */;
-import closure_11 from "insertUnsortedGuilds" /* 5390 */;
+import closure_10 from "handleConnectionOpen" /* 4302 */;
+import closure_11 from "insertUnsortedGuilds" /* 5398 */;
 import ME from "ME" /* 673 */;
 import items from "items" /* 675 */;
-import { isGameShopPath } from "STOREFRONT_MARKETING_GUILD_ID" /* 6085 */;
+import { isGameShopPath } from "STOREFRONT_MARKETING_GUILD_ID" /* 7169 */;
 
 const require = arg1;
 function openInviteModal() {
@@ -69,7 +69,7 @@ function _openInviteModal() {
               return obj;
             } else {
               obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: "y" };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: "woman_and_man_holding_hands_medium_light_skin_tone_medium_skin_tone" };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -301,7 +301,7 @@ export default function getOnClick(url) {
   c3 = undefined;
   pathname = undefined;
   obj = undefined;
-  obj = _require(4461);
+  obj = _require(4464);
   const findCodedLinkResult = obj.findCodedLink(url);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
@@ -332,7 +332,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "PX_16" };
+            result = { applicationId: "left", skuId: "call" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -353,7 +353,7 @@ export default function getOnClick(url) {
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -608,7 +608,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -624,7 +624,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -637,7 +637,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -650,8 +650,8 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(11308);
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.QUESTS_EMBED) {
+      let tmp2Result = tmp2(11416);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {
@@ -690,7 +690,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -777,7 +777,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4466).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -791,7 +791,7 @@ export default function getOnClick(url) {
     }
     return fn;
   }
-  tmp2Result = tmp2(4675);
+  tmp2Result = tmp2(4682);
   let result = tmp2Result.tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
     if (null != tmp2Result1.isSuspiciousDownload(url)) {
@@ -803,6 +803,6 @@ export default function getOnClick(url) {
         return true;
       };
     }
-    tmp2Result1 = tmp2(8048);
+    tmp2Result1 = tmp2(8058);
   }
 };

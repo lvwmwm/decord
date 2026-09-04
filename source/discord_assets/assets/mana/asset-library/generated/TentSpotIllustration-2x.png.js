@@ -1,9 +1,9 @@
-// Module ID: 7104
-// Function ID: 7105
+// Module ID: 6485
+// Function ID: 6486
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7104 (metadata)
+// Module 6485 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TentSpotIllustration-2x.png.js");

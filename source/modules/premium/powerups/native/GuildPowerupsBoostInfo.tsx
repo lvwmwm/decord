@@ -1,20 +1,20 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12485
+// Function ID: 12486
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4365, 21, 4478, 709, 8016, 12354, 8247, 4474, 2]
+// Dependencies: [17, 4368, 21, 4481, 709, 8026, 12486, 9304, 4477, 2]
 // Exports: default
 
-// Module 12353 (GuildPowerupsBoostInfo)
+// Module 12485 (GuildPowerupsBoostInfo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import Text from "Text" /* 4474 */;
-import apexExperiment from "apexExperiment" /* 8016 */;
-import BoostGemIcon from "BoostGemIcon" /* 8247 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12354 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
+import Text from "Text" /* 4477 */;
+import apexExperiment from "apexExperiment" /* 8026 */;
+import BoostGemIcon from "BoostGemIcon" /* 9304 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12486 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const View = get_ActivityIndicator.View;
 const BoostInfoType = BoostedGuildTiers.BoostInfoType;

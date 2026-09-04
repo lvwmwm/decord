@@ -1,17 +1,17 @@
-// Module ID: 4298
-// Function ID: 4299
+// Module ID: 4301
+// Function ID: 4302
 // Name: UNSAFE_isDismissibleContentDismissed
-// Dependencies: [5, 1339, 4299, 684, 4320, 1373, 1374, 11, 1371, 586, 1369, 2]
+// Dependencies: [5, 1339, 4302, 684, 4323, 1373, 1374, 11, 1371, 586, 1369, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 4298 (UNSAFE_isDismissibleContentDismissed)
+// Module 4301 (UNSAFE_isDismissibleContentDismissed)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 684 */;
 import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1373 */;
-import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4320 */;
+import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4323 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_5 from "handleConnectionOpen" /* 4299 */;
+import closure_5 from "handleConnectionOpen" /* 4302 */;
 
 require = arg1;
 class UNSAFE_isDismissibleContentDismissed {
@@ -520,7 +520,7 @@ export const UNSAFE_isSnowflakeBoundDismissibleContentDismissed = function UNSAF
     return obj;
   }
 };
-export const UNSAFE_markSingleUseGuildDismissibleContentAsDismissed = function UNSAFE_markSingleUseGuildDismissibleContentAsDismissed(MOBILE_ACCOUNT_LINKING_BANNER, found1, arg2) {
+export const UNSAFE_markSingleUseGuildDismissibleContentAsDismissed = function UNSAFE_markSingleUseGuildDismissibleContentAsDismissed(MOBILE_ACCOUNT_LINKING_BANNER, closure_0, arg2) {
   const self = this;
   const apply = _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed.apply;
   if (typeof apply === "unknown") {

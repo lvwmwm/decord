@@ -1,17 +1,17 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 9820
+// Function ID: 9821
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 9936, 21, 4478, 8016, 586, 4474, 9937, 5077, 9935, 1233, 2]
+// Dependencies: [19, 17, 9750, 21, 4481, 8026, 586, 4477, 9751, 5084, 9749, 1233, 2]
 // Exports: default
 
-// Module 10008 (InstantInviteAgeText)
+// Module 9820 (InstantInviteAgeText)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
-import apexExperiment from "apexExperiment" /* 8016 */;
+import apexExperiment from "apexExperiment" /* 8026 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_3 from "updateWithLatestInvite" /* 9936 */;
+import closure_3 from "updateWithLatestInvite" /* 9750 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -42,9 +42,9 @@ export default function InstantInviteAgeText(style) {
     }
     obj = { variant: null, children: null };
     obj[0] = str2;
-    const items2 = [tmp2(9937).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(9751).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj[1] = items2;
-    const items3 = [closure_4(tmp2(4474).Text, obj), ];
+    const items3 = [closure_4(tmp2(4477).Text, obj), ];
     if (canEditInvite) {
       obj1 = { onPress: null, accessibilityRole: "link", accessibilityLabel: null, hitSlop: null, children: null };
       obj1[0] = function onPress() {
@@ -63,13 +63,13 @@ export default function InstantInviteAgeText(style) {
       obj2[0] = str;
       const intl2 = tmp2(1233).intl;
       obj2[2] = intl2.string(tmp2(1233).t["VNe8P/"]);
-      obj1[4] = closure_5(tmp2(4474).Text, obj2);
-      canEditInvite = tmp9(tmp2(5077).PressableOpacity, obj1);
+      obj1[4] = closure_5(tmp2(4477).Text, obj2);
+      canEditInvite = tmp9(tmp2(5084).PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
     obj[1] = items3;
     tmp7Result = tmp7(View, obj);
-    const tmp2Result = tmp2(9937);
+    const tmp2Result = tmp2(9751);
     const tmp8 = View;
   }
   return tmp7Result;

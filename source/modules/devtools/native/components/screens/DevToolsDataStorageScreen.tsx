@@ -1,21 +1,21 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15537
+// Function ID: 15538
 // Name: DevToolsPersistedStoresActionSheet
-// Dependencies: [32, 19, 17, 587, 1215, 21, 4478, 709, 5608, 1955, 4194, 586, 1972, 1499, 5603, 7787, 10321, 10864, 6231, 4445, 4474, 7790, 5998, 5630, 6000, 2]
+// Dependencies: [32, 19, 17, 587, 1215, 21, 4481, 709, 5560, 1955, 4194, 586, 1972, 1499, 6921, 6989, 10141, 10798, 6990, 4448, 4477, 6995, 7138, 7089, 7140, 2]
 // Exports: default
 
-// Module 15455 (DevToolsPersistedStoresActionSheet)
+// Module 15537 (DevToolsPersistedStoresActionSheet)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import databaseNameDefault from "databaseName" /* 1972 */;
-import TableRowInner from "TableRowInner" /* 5608 */;
+import TableRowInner from "TableRowInner" /* 5560 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PersistedStore } from "getClass" /* 587 */;
 import closure_7 from "fetchFingerprint" /* 1215 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function DevToolsPersistedStoresActionSheet(store) {
@@ -23,10 +23,10 @@ function DevToolsPersistedStoresActionSheet(store) {
   const close = store.close;
   let obj = { header: null, children: null };
   obj = { title: store.getName() };
-  obj[0] = jsx(store(5630).BottomSheetTitleHeader, { title: store.getName() });
-  obj = { hasIcons: false, children: jsx(store(6000).ActionSheetRow, obj1) };
-  obj[1] = jsx(store(6000).ActionSheetRow.Group, { hasIcons: false, children: jsx(store(6000).ActionSheetRow, obj1) });
-  return jsx(store(5998).ActionSheet, { hasIcons: false, children: jsx(store(6000).ActionSheetRow, obj1) });
+  obj[0] = jsx(store(7089).BottomSheetTitleHeader, { title: store.getName() });
+  obj = { hasIcons: false, children: jsx(store(7140).ActionSheetRow, obj1) };
+  obj[1] = jsx(store(7140).ActionSheetRow.Group, { hasIcons: false, children: jsx(store(7140).ActionSheetRow, obj1) });
+  return jsx(store(7138).ActionSheet, { hasIcons: false, children: jsx(store(7140).ActionSheetRow, obj1) });
 }
 let c4 = importAllResult;
 let obj = { container: null, sectionHeader: null };
@@ -82,7 +82,7 @@ let closure_13 = importAllResult.memo(() => {
       navigation.navigate("cacheStats");
     }
   };
-  return jsx(_require(5608).TableRow, {
+  return jsx(_require(5560).TableRow, {
     label: "View Cache Stats",
     end: true,
     onPress() {

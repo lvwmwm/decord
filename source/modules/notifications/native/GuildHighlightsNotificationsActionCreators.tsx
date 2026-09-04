@@ -1,25 +1,25 @@
-// Module ID: 11436
-// Function ID: 11437
+// Module ID: 11555
+// Function ID: 11556
 // Name: openGuildHighlightNotificationForPush
-// Dependencies: [11437, 673, 4445, 11438, 2008, 1233, 695, 2]
+// Dependencies: [11556, 673, 4448, 11557, 2008, 1233, 695, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 11436 (openGuildHighlightNotificationForPush)
+// Module 11555 (openGuildHighlightNotificationForPush)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import NotificationUserFeedbackReasons from "NotificationUserFeedbackReasons" /* 11437 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import NotificationUserFeedbackReasons from "NotificationUserFeedbackReasons" /* 11556 */;
 
 let closure_3 = NotificationUserFeedbackReasons.NotificationUserFeedbackReasons;
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionCreators.tsx");
 
-export const openGuildHighlightNotificationForPush = function openGuildHighlightNotificationForPush(guild_id1, message, notificationType, MESSAGE_EMBED, action) {
+export const openGuildHighlightNotificationForPush = function openGuildHighlightNotificationForPush(guild_id1, message, notificationType, MESSAGE_EMBED, arg4) {
   const _require = guild_id1;
   importDefault = message;
   dependencyMap = notificationType;
   const constants = MESSAGE_EMBED;
-  closure_4 = action;
+  closure_4 = arg4;
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { guildId: guild_id1, feedbackSettings: null };
   obj = { reasons: null, onFeedbackShown: null, onFeedbackCompleted: null };
@@ -47,8 +47,8 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
   obj[1] = function onFeedbackShown() {
     let obj = message(notificationType[6]);
     obj = { type: notificationType, location: closure_3, guild_id: closure_0, channel_id: message.channel_id, message_id: message.id };
-    const merged = Object.assign(action);
-    obj.track(action.FEEDBACK_FORM_VIEWED, obj);
+    const merged = Object.assign(constants);
+    obj.track(constants.FEEDBACK_FORM_VIEWED, obj);
   };
   obj[2] = function onFeedbackCompleted(rating) {
     let obj = message(notificationType[6]);
@@ -60,9 +60,9 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     obj[3] = value;
     obj[4] = closure_0;
     ({ channel_id: obj2[5], id: obj2[6] } = message);
-    const merged = Object.assign(action);
-    obj.track(action.FEEDBACK_FORM_SUBMITTED, obj);
+    const merged = Object.assign(constants);
+    obj.track(constants.FEEDBACK_FORM_SUBMITTED, obj);
   };
   obj[1] = obj;
-  obj.openLazy(_require(2008)(11438, dependencyMap.paths), "GuildHighlightsNotifications", obj);
+  obj.openLazy(_require(2008)(11557, dependencyMap.paths), "GuildHighlightsNotifications", obj);
 };

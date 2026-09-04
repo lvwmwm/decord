@@ -1,10 +1,10 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 13080
+// Function ID: 13081
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 673, 1923, 5962, 7177, 2]
+// Dependencies: [19, 673, 1923, 7102, 7356, 2]
 // Exports: default
 
-// Module 12790 (useOpenNitroSubscribeActionSheet)
+// Module 13080 (useOpenNitroSubscribeActionSheet)
 import closure_2 from "noop" /* 19 */;
 import ME from "ME" /* 673 */;
 import { PremiumTypes } from "GuildFeatures" /* 1923 */;

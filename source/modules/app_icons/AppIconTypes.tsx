@@ -1,9 +1,9 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 9253
+// Function ID: 9254
 // Name: FreemiumAppIconIds
 // Dependencies: [2]
 
-// Module 8192 (FreemiumAppIconIds)
+// Module 9253 (FreemiumAppIconIds)
 import set from "set" /* 2 */;
 
 let obj = { DEFAULT: "AppIcon" };

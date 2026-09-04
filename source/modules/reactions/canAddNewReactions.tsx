@@ -1,10 +1,10 @@
-// Module ID: 7892
-// Function ID: 7893
-// Dependencies: [5366, 4120, 673, 2]
+// Module ID: 7902
+// Function ID: 7903
+// Dependencies: [5374, 4120, 673, 2]
 // Exports: default
 
-// Module 7892
-import closure_0 from "recomputeGuild" /* 5366 */;
+// Module 7902
+import closure_0 from "recomputeGuild" /* 5374 */;
 import closure_1 from "getUncachedChannelPermissions" /* 4120 */;
 import { Permissions } from "ME" /* 673 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 4673
-// Function ID: 4674
+// Module ID: 4680
+// Function ID: 4681
 // Name: getNickname
-// Dependencies: [1386, 1991, 4130, 1233, 4322, 586, 2]
+// Dependencies: [1386, 1991, 4130, 1233, 4325, 586, 2]
 // Exports: getNickname, useName
 
-// Module 4673 (getNickname)
+// Module 4680 (getNickname)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import nameFromUserDefault from "nameFromUser" /* 4322 */;
+import nameFromUserDefault from "nameFromUser" /* 4325 */;
 import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;

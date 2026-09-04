@@ -1,19 +1,19 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 10267
+// Function ID: 10268
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5411, 4299, 1921, 673, 21, 4478, 709, 4139, 695, 8406, 4445, 9191, 586, 5962, 5415, 4137, 4113, 9120, 5989, 4166, 9198, 6255, 9192, 9199, 9201, 4474, 1233, 9195, 4194, 9203, 2008, 8817, 1296, 4929, 5502, 9204, 8376, 9205, 9206, 2]
+// Dependencies: [19, 17, 5420, 4302, 1921, 673, 21, 4481, 709, 4139, 695, 9321, 4448, 10260, 586, 7102, 5424, 4137, 4113, 10214, 7129, 4166, 10268, 7320, 10261, 10164, 10170, 4477, 1233, 10265, 4194, 10269, 2008, 8602, 1296, 4936, 5542, 10270, 8523, 10271, 10272, 2]
 // Exports: default
 
-// Module 9197 (CustomEmojiContent)
+// Module 10267 (CustomEmojiContent)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "computeRolesForGuild" /* 5411 */;
-import closure_8 from "handleConnectionOpen" /* 4299 */;
+import closure_7 from "computeRolesForGuild" /* 5420 */;
+import closure_8 from "handleConnectionOpen" /* 4302 */;
 import closure_9 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ Pressable: c5, View: closure_6 } = get_ActivityIndicator);

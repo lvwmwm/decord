@@ -1,23 +1,23 @@
-// Module ID: 17201
-// Function ID: 17202
+// Module ID: 17287
+// Function ID: 17288
 // Name: handleConnectionOpen
-// Dependencies: [5, 8160, 8159, 5410, 4966, 5452, 5460, 1339, 682, 4507, 684, 5495, 1369, 1340, 1341, 12, 2]
+// Dependencies: [5, 9221, 9220, 5419, 4973, 5461, 5469, 1339, 682, 4510, 684, 7058, 1369, 1340, 1341, 12, 2]
 
-// Module 17201 (handleConnectionOpen)
+// Module 17287 (handleConnectionOpen)
 import setDefault from "set" /* 684 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import initializeDefault from "initialize" /* 5495 */;
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 8160 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8159 */;
-import closure_6 from "getEmojiToGroupId" /* 5410 */;
-import closure_7 from "handleSoundCreateOrUpdate" /* 4966 */;
-import closure_8 from "handleStickersStoreUpdate" /* 5452 */;
-import closure_9 from "handleChannelSelect" /* 5460 */;
-import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5460 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 9221 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 9220 */;
+import closure_6 from "getEmojiToGroupId" /* 5419 */;
+import closure_7 from "handleSoundCreateOrUpdate" /* 4973 */;
+import closure_8 from "handleStickersStoreUpdate" /* 5461 */;
+import closure_9 from "handleChannelSelect" /* 5469 */;
+import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5469 */;
 import closure_11 from "handleConnectionClosedOrResumed" /* 1339 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
-import { FREQUENCY_ITEM_LIMIT } from "ApplicationTypes" /* 4507 */;
+import { FREQUENCY_ITEM_LIMIT } from "ApplicationTypes" /* 4510 */;
 
 require = arg1;
 function handleConnectionOpen() {

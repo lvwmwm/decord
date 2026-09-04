@@ -1,19 +1,19 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8611
+// Function ID: 8612
 // Name: GetButton
-// Dependencies: [32, 19, 17, 8827, 21, 4478, 709, 4929, 1233, 8091, 8828, 4190, 8831, 6163, 5065, 4217, 8832, 4479, 8833, 8838, 4445, 8855, 5631, 5633, 8856, 8858, 12887, 5946, 2]
+// Dependencies: [32, 19, 17, 8612, 21, 4481, 709, 4936, 1233, 8101, 8613, 4190, 8616, 7247, 5072, 4218, 8617, 4482, 8618, 8623, 4448, 8640, 7090, 6567, 8641, 8643, 8831, 7094, 2]
 // Exports: default
 
-// Module 8826 (GetButton)
+// Module 8611 (GetButton)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4929 */;
+import Button from "Button" /* 4936 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getSimilarGames" /* 8827 */;
+import closure_7 from "getSimilarGames" /* 8612 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function GetButton(onPress) {

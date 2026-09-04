@@ -1,19 +1,19 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17425
+// Function ID: 17426
 // Name: handlePushedModal
-// Dependencies: [9755, 1215, 9936, 17346, 1380, 673, 4333, 4332, 4726, 7710, 17347, 17348, 17356, 5495, 17357, 17631, 17633, 2]
+// Dependencies: [8994, 1215, 9750, 17426, 1380, 673, 4336, 4335, 4733, 6533, 17427, 17428, 17436, 7058, 17437, 17711, 17713, 2]
 
-// Module 17345 (handlePushedModal)
-import coerceMainRoute from "coerceMainRoute" /* 4332 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4726 */;
-import initializeDefault from "initialize" /* 5495 */;
-import UserRequiredActionsDefault from "UserRequiredActions" /* 7710 */;
-import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment" /* 17347 */;
-import closure_3 from "handleFormInit" /* 9755 */;
+// Module 17425 (handlePushedModal)
+import coerceMainRoute from "coerceMainRoute" /* 4335 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4733 */;
+import UserRequiredActionsDefault from "UserRequiredActions" /* 6533 */;
+import initializeDefault from "initialize" /* 7058 */;
+import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment" /* 17427 */;
+import closure_3 from "handleFormInit" /* 8994 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "updateWithLatestInvite" /* 9936 */;
-import closure_6 from "FormStates" /* 17346 */;
+import closure_5 from "updateWithLatestInvite" /* 9750 */;
+import closure_6 from "FormStates" /* 17426 */;
 import importDefaultResult from "handleRequiredAction" /* 1380 */;
 import ME from "ME" /* 673 */;
 
@@ -98,7 +98,7 @@ let closure_15 = {
     return result;
   },
   getComponent() {
-    return require(17348) /* PhoneThenEmailInterstitial */.default;
+    return require(17428) /* PhoneThenEmailInterstitial */.default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
@@ -114,7 +114,7 @@ let closure_17 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(17356) /* handleTouch */.default;
+    return require(17436) /* handleTouch */.default;
   }
 };
 initializeDefault;
@@ -126,15 +126,15 @@ let prototype = function DeprecatedModalManager() {
     USER_REQUIRED_ACTION_UPDATE(requiredAction) {
       if (null == requiredAction.requiredAction) {
         if (obj.isModalOpen(closure_16)) {
-          let tmp5Result = tmp5(4332);
+          let tmp5Result = tmp5(4335);
           tmp5Result.popModal(tmp7);
         }
-        tmp5Result = tmp5(4332);
+        tmp5Result = tmp5(4335);
         if (tmp5Result.isModalOpen(closure_14)) {
-          tmp5(4332).popModal(tmp9);
-          const tmp5Result1 = tmp5(4332);
+          tmp5(4335).popModal(tmp9);
+          const tmp5Result1 = tmp5(4335);
         }
-        obj = callback(4332);
+        obj = callback(4335);
         tmp7 = closure_16;
         tmp9 = closure_14;
       } else {
@@ -158,7 +158,7 @@ let prototype = function DeprecatedModalManager() {
     store: closure_3,
     closable: false,
     getComponent() {
-      return callback(17357).default;
+      return callback(17437).default;
     }
   };
   obj = {
@@ -166,7 +166,7 @@ let prototype = function DeprecatedModalManager() {
     store: closure_6,
     closable: false,
     getComponent() {
-      return callback(17631).default;
+      return callback(17711).default;
     }
   };
   applyArgumentsResult.actions = obj;

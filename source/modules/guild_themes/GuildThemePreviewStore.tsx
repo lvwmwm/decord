@@ -1,15 +1,15 @@
-// Module ID: 4360
-// Function ID: 4361
+// Module ID: 4363
+// Function ID: 4364
 // Name: handleEnd
-// Dependencies: [1215, 4361, 4362, 706, 1907, 12, 586, 2]
+// Dependencies: [1215, 4364, 4365, 706, 1907, 12, 586, 2]
 
-// Module 4360 (handleEnd)
+// Module 4363 (handleEnd)
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1907 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
-import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4361 */;
+import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4364 */;
 
 require = arg1;
 function handleEnd() {
@@ -66,7 +66,7 @@ Object.defineProperty(prototype, "originalEnabled", {
   set: undefined
 });
 Object.defineProperty(prototype, "origin", {
-  get: function origin(arg0) {
+  get: function origin(keys, arg1) {
     return closure_5.origin;
   },
   set: undefined

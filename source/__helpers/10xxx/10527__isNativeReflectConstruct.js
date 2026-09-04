@@ -1,16 +1,17 @@
 // Module ID: 10527
 // Function ID: 10528
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10469]
+// Dependencies: [41, 42, 93, 95, 98, 10515, 10363, 10364, 10517]
 
 // Module 10527 (_isNativeReflectConstruct)
-import Filter from "Filter" /* 10469 */;
-import JPMergeWeekdayComponentRefiner from "_classCallCheck" /* 41 */;
+import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10517 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const UKTimeUnitCasualRelativeFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,13 +31,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class JPMergeWeekdayComponentRefiner {
+class UKTimeUnitCasualRelativeFormatParser {
   constructor() {
     self = this;
-    tmp = JPMergeWeekdayComponentRefiner(this, JPMergeWeekdayComponentRefiner);
-    tmp2 = closure_2;
-    obj = closure_2(JPMergeWeekdayComponentRefiner);
-    tmp3 = closure_1;
+    tmp = closure_2(this, UKTimeUnitCasualRelativeFormatParser);
+    tmp2 = closure_4;
+    obj = closure_4(UKTimeUnitCasualRelativeFormatParser);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -50,43 +51,29 @@ class JPMergeWeekdayComponentRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeWeekdayComponentRefiner, Filter.MergingRefiner);
+_inherits(UKTimeUnitCasualRelativeFormatParser, _isNativeReflectConstruct2.AbstractParserWithLeftRightBoundaryChecking);
 const items = [
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, clone, text) {
-      const cloneResult = clone.clone();
-      cloneResult.text = clone.text + arg0 + text.text;
-      const start = cloneResult.start;
-      const start2 = text.start;
-      start.assign("weekday", start2.get("weekday"));
-      if (cloneResult.end) {
-        const end = cloneResult.end;
-        const start3 = text.start;
-        end.assign("weekday", start3.get("weekday"));
-      }
-      return cloneResult;
+    key: "innerPatternString",
+    value: function innerPatternString(arg0) {
+      return "(\u0446\u0456|\u043E\u0441\u0442\u0430\u043D\u043D\u0456|\u043C\u0438\u043D\u0443\u043B\u0456|\u043C\u0430\u0439\u0431\u0443\u0442\u043D\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0456|\u043F\u0456\u0441\u043B\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + UKTimeUnitCasualRelativeFormatParser(10515).TIME_UNITS_PATTERN + ")";
     }
   },
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
-      start = start.start;
-      let isCertainResult = start.isCertain("day");
-      if (isCertainResult) {
-        start2 = start2.start;
-        isCertainResult = start2.isOnlyWeekdayComponent();
+    key: "innerExtract",
+    value: function innerExtract(reference) {
+      const formatted = arg1[1].toLowerCase();
+      const parseDurationResult = UKTimeUnitCasualRelativeFormatParser(10515).parseDuration(arg1[3]);
+      if ("\u043E\u0441\u0442\u0430\u043D\u043D\u0456" !== formatted) {
+        if ("\u043C\u0438\u043D\u0443\u043B\u0456" !== formatted) {
+          let reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10364).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      if (isCertainResult) {
-        const start3 = start2.start;
-        isCertainResult = !start3.isCertain("hour");
-      }
-      if (isCertainResult) {
-        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
-      }
-      return isCertainResult;
+      reverseDurationResult = tmp2(10363).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(JPMergeWeekdayComponentRefiner, items);
+export default _createClass(UKTimeUnitCasualRelativeFormatParser, items);

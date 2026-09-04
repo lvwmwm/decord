@@ -1,13 +1,13 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 9325
+// Function ID: 9326
 // Name: handleSenderFalsePositiveFlow
-// Dependencies: [6148, 7356, 7355, 4859, 1233, 8411, 4445, 8412, 2008, 2]
+// Dependencies: [7232, 7534, 7533, 4866, 1233, 9326, 4448, 9327, 2008, 2]
 // Exports: handleSenderFalsePositiveFlow
 
-// Module 8410 (handleSenderFalsePositiveFlow)
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7355 */;
-import closure_3 from "getFpMessageInfo" /* 6148 */;
-import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7356 */;
+// Module 9325 (handleSenderFalsePositiveFlow)
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7533 */;
+import closure_3 from "getFpMessageInfo" /* 7232 */;
+import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7534 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaActionCreators.native.tsx");
@@ -17,13 +17,13 @@ export const handleSenderFalsePositiveFlow = function handleSenderFalsePositiveF
   obj = { action: redactionSettingToRenderedString.TrackMediaRedactionActionType.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED, messageId: closure_1, channelId };
   const result = obj.trackMediaRedactionAction(obj);
   if (closure_3.canSubmitFpReport(closure_1)) {
-    let tmp4Result = tmp4(4445);
+    let tmp4Result = tmp4(4448);
     obj = { channelId: null, messageId: null };
     obj[0] = channelId;
     obj[1] = closure_1;
-    tmp4Result.openLazy(tmp(2008)(8412, tmp2.paths), closure_4, obj);
+    tmp4Result.openLazy(tmp(2008)(9327, tmp2.paths), closure_4, obj);
   } else {
-    tmp4Result = tmp4(4859);
+    tmp4Result = tmp4(4866);
     obj1 = { title: null, body: null, confirmText: null };
     const intl = tmp(1233).intl;
     obj1[0] = intl.string(tmp(1233).t["iS/eFN"]);
@@ -32,7 +32,7 @@ export const handleSenderFalsePositiveFlow = function handleSenderFalsePositiveF
     const intl3 = tmp(1233).intl;
     obj1[2] = intl3.string(tmp(1233).t.BddRzS);
     tmp4Result.show(obj1);
-    const result1 = tmp4(8411).disableFalsePositiveButton(channelId, closure_1);
+    const result1 = tmp4(9326).disableFalsePositiveButton(channelId, closure_1);
   }
   tmp2 = dependencyMap;
 };

@@ -1,9 +1,9 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5076
+// Function ID: 5077
 // Name: AgeRestrictionStatus
 // Dependencies: [2]
 
-// Module 5069 (AgeRestrictionStatus)
+// Module 5076 (AgeRestrictionStatus)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionStatus.tsx");

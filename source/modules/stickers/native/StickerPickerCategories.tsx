@@ -1,20 +1,20 @@
-// Module ID: 10437
-// Function ID: 10438
+// Module ID: 10348
+// Function ID: 10349
 // Name: CATEGORY_ICON_SIZE
-// Dependencies: [32, 19, 17, 1908, 10408, 673, 1337, 21, 4478, 709, 4166, 4853, 5221, 695, 5077, 1296, 1430, 6013, 10287, 4446, 4447, 9224, 9225, 7790, 1233, 10438, 2]
+// Dependencies: [32, 19, 17, 1908, 10319, 673, 1337, 21, 4481, 709, 4166, 4860, 5229, 695, 5084, 1296, 1431, 5539, 10105, 4449, 4450, 10287, 10288, 6995, 1233, 10349, 2]
 // Exports: default
 
-// Module 10437 (CATEGORY_ICON_SIZE)
+// Module 10348 (CATEGORY_ICON_SIZE)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10408 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10319 */;
 import ME from "ME" /* 673 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -219,10 +219,10 @@ export default function _default(categories) {
   const callback5 = first.useCallback((arg0, index) => closure_1_14(closure_1_17, { category: categories[index], index, isActive: index === categoryIndex, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style, children: null };
   const tmp17 = categoryIndex;
-  const tmp19 = categoryIndex(9224)();
+  const tmp19 = categoryIndex(10287)();
   const tmp20 = closure_15;
   obj = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const items9 = [callback(categoryIndex(7790), obj), ];
+  const items9 = [callback(categoryIndex(6995), obj), ];
   let tmp22Result = null != first && first1;
   if (tmp22Result) {
     obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
@@ -235,12 +235,12 @@ export default function _default(categories) {
     obj1[0] = items10;
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.guildIcon;
-    obj2[1] = tmp17(10438);
+    obj2[1] = tmp17(10349);
     obj1[1] = tmp22(categories(1296).Icon, obj2);
     obj[3] = tmp22(closure_5, obj1);
-    tmp22Result = tmp22(categories(5077).PressableOpacity, obj);
+    tmp22Result = tmp22(categories(5084).PressableOpacity, obj);
   }
   items9[1] = tmp22Result;
   obj[2] = items9;
-  return tmp20(categoryIndex(9225), obj);
+  return tmp20(categoryIndex(10288), obj);
 };

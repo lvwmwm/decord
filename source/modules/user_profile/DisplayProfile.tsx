@@ -1,13 +1,13 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8120
+// Function ID: 8121
 // Name: premiumSince
-// Dependencies: [1923, 7378, 4139, 1430, 8087, 2]
+// Dependencies: [1923, 7556, 4139, 1431, 8097, 2]
 
-// Module 8129 (premiumSince)
+// Module 8120 (premiumSince)
 import set from "set" /* 2 */;
-import getAvatarURL from "getAvatarURL" /* 1430 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
 import GuildFeatures from "GuildFeatures" /* 1923 */;
-import useAvatarsWithGuilds from "useAvatarsWithGuilds" /* 8087 */;
+import useAvatarsWithGuilds from "useAvatarsWithGuilds" /* 8097 */;
 
 const PremiumTypes = GuildFeatures.PremiumTypes;
 const result = set.fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
@@ -123,7 +123,7 @@ Object.defineProperty(prototype, "gameWidgets", {
     const widgets = this._userProfile.widgets;
     let found;
     if (widgets != null) {
-      found = widgets.filter(require(7378) /* items */.isGameWidget);
+      found = widgets.filter(require(7556) /* items */.isGameWidget);
     }
     return found;
   },

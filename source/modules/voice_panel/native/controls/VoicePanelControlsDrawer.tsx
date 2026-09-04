@@ -1,17 +1,17 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17128
+// Function ID: 17129
 // Name: renderChat
-// Dependencies: [32, 19, 17, 12069, 21, 4478, 709, 5563, 4877, 12066, 12068, 4217, 12075, 4928, 9227, 17043, 17054, 2]
+// Dependencies: [32, 19, 17, 12205, 21, 4481, 709, 5541, 4884, 12202, 12204, 4218, 12211, 4935, 9424, 17129, 17140, 2]
 
-// Module 17042 (renderChat)
+// Module 17128 (renderChat)
 import ThemesDefault from "Themes" /* 709 */;
-import memoResult1Default from "memoResult1" /* 12066 */;
+import memoResult1Default from "memoResult1" /* 12202 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import VoicePanelModes from "VoicePanelModes" /* 12069 */;
+import VoicePanelModes from "VoicePanelModes" /* 12205 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function renderChat(shown) {
@@ -58,11 +58,11 @@ const memoResult = importAllResult.memo((shown) => {
   }, items);
   const items1 = [renderContent, shown];
   const memo = obj.useMemo(() => renderContent(shown), items1);
-  if (renderContent(5563)(ref)) {
+  if (renderContent(5541)(ref)) {
     obj = { freeze: null, children: null };
     obj[0] = tmp2;
     obj[1] = memo;
-    let tmp11 = callback(shown(4877).Freeze, obj);
+    let tmp11 = callback(shown(4884).Freeze, obj);
   } else {
     tmp11 = null;
   }

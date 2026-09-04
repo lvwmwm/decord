@@ -1,14 +1,14 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15313
+// Function ID: 15314
 // Name: EmojiSmilingFaceWithHornsIcon
-// Dependencies: [19, 21, 709, 4196, 15232, 2]
+// Dependencies: [19, 21, 709, 4196, 15314, 2]
 // Exports: EmojiSmilingFaceWithHornsIcon
 
-// Module 15231 (EmojiSmilingFaceWithHornsIcon)
+// Module 15313 (EmojiSmilingFaceWithHornsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15232 */;
+import registerAsset from "registerAsset" /* 15314 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,27 +1,27 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 14837
+// Function ID: 14838
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [19, 17, 7293, 11224, 21, 4478, 709, 8791, 8792, 11720, 1233, 2368, 4474, 11251, 5562, 14717, 14757, 14759, 14768, 2]
+// Dependencies: [19, 17, 7471, 11295, 21, 4481, 709, 8575, 8576, 11851, 1233, 2368, 4477, 11325, 7063, 14798, 14838, 14840, 14849, 2]
 // Exports: default
 
-// Module 14756 (FamilyCenterMaxConnectionsBlurb)
+// Module 14837 (FamilyCenterMaxConnectionsBlurb)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5562 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8791 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8792 */;
-import set from "set" /* 11251 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11720 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14717 */;
-import FamilyCenterLinkingBannerParentContentDefault from "FamilyCenterLinkingBannerParentContent" /* 14757 */;
-import FamilyCenterAcceptedLinkRowDefault from "FamilyCenterAcceptedLinkRow" /* 14759 */;
-import FamilyCenterPendingLinkRowDefault from "FamilyCenterPendingLinkRow" /* 14768 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8575 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8576 */;
+import set from "set" /* 11325 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11851 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14798 */;
+import FamilyCenterLinkingBannerParentContentDefault from "FamilyCenterLinkingBannerParentContent" /* 14838 */;
+import FamilyCenterAcceptedLinkRowDefault from "FamilyCenterAcceptedLinkRow" /* 14840 */;
+import FamilyCenterPendingLinkRowDefault from "FamilyCenterPendingLinkRow" /* 14849 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 7293 */;
-import { THROUGHLINE_URL } from "LOCATION_CONTEXT_MOBILE" /* 11224 */;
+import items from "items" /* 7471 */;
+import { THROUGHLINE_URL } from "LOCATION_CONTEXT_MOBILE" /* 11295 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function FamilyCenterMaxConnectionsBlurb() {
@@ -39,7 +39,7 @@ function FamilyCenterMaxConnectionsBlurb() {
     obj[0] = tmp.container;
     obj = { variant: "text-xxs/medium", color: "text-muted", children: null };
     obj[2] = tmp9;
-    obj[1] = callback(tmp2(4474).Text, obj);
+    obj[1] = callback(tmp2(4477).Text, obj);
     tmp10 = callback(closure_3, obj);
   }
   return tmp10;
@@ -69,10 +69,10 @@ function FamilyCenterHelpLineInfo() {
     obj1[0] = tmp.supportHeader;
     const intl3 = tmp2(1233).intl;
     obj1[2] = intl3.string(messagesProxyDefault["7/tVhv"]);
-    const items = [callback(tmp2(4474).Text, obj1), ];
+    const items = [callback(tmp2(4477).Text, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj2[2] = formatResult;
-    items[1] = callback(tmp2(4474).Text, obj2);
+    items[1] = callback(tmp2(4477).Text, obj2);
     obj[1] = items;
     tmp11 = callback2(closure_3, obj);
   }

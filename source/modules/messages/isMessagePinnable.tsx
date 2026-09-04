@@ -1,12 +1,12 @@
-// Module ID: 11475
-// Function ID: 11476
+// Module ID: 11596
+// Function ID: 11597
 // Name: isMessagePinnable
-// Dependencies: [4120, 673, 6126, 6125, 2]
+// Dependencies: [4120, 673, 7210, 7209, 2]
 // Exports: default
 
-// Module 11475 (isMessagePinnable)
-import useCanStartPrivateThread from "useCanStartPrivateThread" /* 6125 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6126 */;
+// Module 11596 (isMessagePinnable)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7209 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7210 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
 

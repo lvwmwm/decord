@@ -1,13 +1,13 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14957
+// Function ID: 14958
 // Name: SkipBackwardIcon
-// Dependencies: [19, 21, 8254, 2]
+// Dependencies: [19, 21, 8383, 2]
 // Exports: SkipBackwardIcon
 
-// Module 14875 (SkipBackwardIcon)
+// Module 14957 (SkipBackwardIcon)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8254 */;
-import inlineStylesDefault from "inlineStyles" /* 8254 */;
+import inlineStyles from "inlineStyles" /* 8383 */;
+import inlineStylesDefault from "inlineStyles" /* 8383 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

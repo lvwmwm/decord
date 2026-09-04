@@ -1,15 +1,15 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16474
+// Function ID: 16475
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4391, 4708, 4709, 673, 21, 4217, 586, 6079, 12080, 695, 4701, 5466, 16389, 16390, 16395, 16399, 16400, 16403, 6078, 2]
+// Dependencies: [19, 4394, 4715, 4716, 673, 21, 4218, 586, 7163, 12216, 695, 4708, 5475, 16475, 16476, 16481, 16485, 16486, 16489, 7162, 2]
 // Exports: default
 
-// Module 16388 (GuildOnboardingHomePage)
+// Module 16474 (GuildOnboardingHomePage)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getHash" /* 4391 */;
-import closure_5 from "handleSettingsLoadSuccess" /* 4708 */;
-import { NO_SETTINGS } from "handleSettingsLoadSuccess" /* 4708 */;
-import closure_7 from "set" /* 4709 */;
+import closure_4 from "getHash" /* 4394 */;
+import closure_5 from "handleSettingsLoadSuccess" /* 4715 */;
+import { NO_SETTINGS } from "handleSettingsLoadSuccess" /* 4715 */;
+import closure_7 from "set" /* 4716 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ function GuildOnboardingHomePage(guildId) {
   let stateFromStores;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  let obj = guildId(4217);
+  let obj = guildId(4218);
   const sharedValue = obj.useSharedValue(-999);
   obj1 = guildId(586);
   const items = [closure_5];
   stateFromStores = obj1.useStateFromStores(items, () => closure_1_5.getSettings(guildId));
   let tmp4 = stateFromStores;
-  const tmp5 = stateFromStores(6079)(guildId);
+  const tmp5 = stateFromStores(7163)(guildId);
   let tmp6 = !tmp5;
   if (!tmp5) {
     let num;
@@ -44,12 +44,12 @@ function GuildOnboardingHomePage(guildId) {
   const items1 = [guildId, stateFromStores, tmp6];
   const effect = React.useEffect(() => {
     if (stateFromStores === closure_1_6) {
-      const guildHomeSettings = guildId(12080).fetchGuildHomeSettings(guildId);
-      const obj2 = guildId(12080);
+      const guildHomeSettings = guildId(12216).fetchGuildHomeSettings(guildId);
+      const obj2 = guildId(12216);
     } else if (null != tmp) {
       const obj = {};
       const obj3 = stateFromStores(695);
-      const merged = Object.assign(guildId(4701).collectGuildAnalyticsMetadata(guildId));
+      const merged = Object.assign(guildId(4708).collectGuildAnalyticsMetadata(guildId));
       const newMemberActions = tmp.newMemberActions;
       let num;
       if (newMemberActions != null) {
@@ -74,7 +74,7 @@ function GuildOnboardingHomePage(guildId) {
       }
       obj.num_resource_channels = num2;
       obj3.track(closure_1_8.SERVER_GUIDE_VIEWED, obj);
-      const obj5 = guildId(4701);
+      const obj5 = guildId(4708);
       const tmp14 = guildId;
     }
   }, items1);
@@ -85,8 +85,8 @@ function GuildOnboardingHomePage(guildId) {
       tmp = stateFromStores !== closure_1_6;
     }
     if (tmp) {
-      const result = stateFromStores(5466).escapeToDefaultChannel(guildId);
-      const obj = stateFromStores(5466);
+      const result = stateFromStores(5475).escapeToDefaultChannel(guildId);
+      const obj = stateFromStores(5475);
     }
   }, items2);
   if (tmp6) {
@@ -98,16 +98,16 @@ function GuildOnboardingHomePage(guildId) {
     obj = { guildId: null, hideDescription: null };
     obj[0] = guildId;
     obj[1] = tmp5;
-    const items3 = [callback(tmp4(16390), obj), ];
+    const items3 = [callback(tmp4(16476), obj), ];
     if (tmp5) {
       obj1 = { children: null };
       let obj2 = { guildId: null };
       obj2[0] = guildId;
-      const items4 = [tmp12(tmp4(16395), obj2), , ];
+      const items4 = [tmp12(tmp4(16481), obj2), , ];
       let obj3 = { guildId: null };
       obj3[0] = guildId;
-      items4[1] = tmp12(tmp4(16399), obj3);
-      tmp4 = tmp4(16400);
+      items4[1] = tmp12(tmp4(16485), obj3);
+      tmp4 = tmp4(16486);
       const obj4 = { guildId: null };
       obj4[0] = guildId;
       tmp = tmp12(tmp4, obj4);
@@ -117,12 +117,12 @@ function GuildOnboardingHomePage(guildId) {
     } else {
       let obj5 = { guildId: null };
       obj5[0] = guildId;
-      tmp12Result = tmp12(tmp4(16403), obj5);
+      tmp12Result = tmp12(tmp4(16489), obj5);
     }
     items3[1] = tmp12Result;
     obj[2] = items3;
-    closure_11(tmp4(16389), obj);
-    const tmp4Result = tmp4(16389);
+    closure_11(tmp4(16475), obj);
+    const tmp4Result = tmp4(16475);
   }
 }
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);

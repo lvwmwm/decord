@@ -1,12 +1,12 @@
-// Module ID: 4670
-// Function ID: 4671
+// Module ID: 4677
+// Function ID: 4678
 // Name: MAX_THUMBNAIL_COUNT
-// Dependencies: [4671, 2]
+// Dependencies: [4678, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 4670 (MAX_THUMBNAIL_COUNT)
+// Module 4677 (MAX_THUMBNAIL_COUNT)
 import set from "set" /* 2 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4671 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4678 */;
 
 const result = set.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
 

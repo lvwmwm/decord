@@ -1,12 +1,12 @@
-// Module ID: 6175
-// Function ID: 6176
+// Module ID: 7259
+// Function ID: 7260
 // Name: stopLurkingAll
-// Dependencies: [5, 4554, 4121, 673, 706, 527, 1470, 2]
+// Dependencies: [5, 4557, 4121, 673, 706, 527, 1394, 2]
 // Exports: stopLurking
 
-// Module 6175 (stopLurkingAll)
+// Module 7259 (stopLurkingAll)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createRTCConnection" /* 4554 */;
+import closure_4 from "createRTCConnection" /* 4557 */;
 import closure_5 from "initialize" /* 4121 */;
 import { Endpoints } from "ME" /* 673 */;
 
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     c6 = 0;
                     c7 = 0;
                     c5 = 0;
-                    return (/* F124966 */ function*() { ... })();
+                    return (/* F125312 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;

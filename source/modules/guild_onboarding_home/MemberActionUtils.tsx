@@ -1,14 +1,14 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12220
+// Function ID: 12221
 // Name: useMemberActionsForChannel
-// Dependencies: [1991, 4708, 4709, 4108, 6079, 644, 1398, 2]
+// Dependencies: [1991, 4715, 4716, 4108, 7163, 644, 1399, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 12084 (useMemberActionsForChannel)
-import useIsNewMemberDefault from "useIsNewMember" /* 6079 */;
+// Module 12220 (useMemberActionsForChannel)
+import useIsNewMemberDefault from "useIsNewMember" /* 7163 */;
 import closure_3 from "trackCommunicationDisabled" /* 1991 */;
-import closure_4 from "handleSettingsLoadSuccess" /* 4708 */;
-import closure_5 from "set" /* 4709 */;
+import closure_4 from "handleSettingsLoadSuccess" /* 4715 */;
+import closure_5 from "set" /* 4716 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 
 const require = arg1;
@@ -92,5 +92,5 @@ export const useAllActionsCompleted = function useAllActionsCompleted(guild_id) 
   if (num == null) {
     num = 0;
   }
-  return _require(1398).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+  return _require(1399).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
 };

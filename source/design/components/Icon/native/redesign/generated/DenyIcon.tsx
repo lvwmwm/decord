@@ -1,14 +1,14 @@
-// Module ID: 7850
-// Function ID: 7851
+// Module ID: 7860
+// Function ID: 7861
 // Name: DenyIcon
-// Dependencies: [19, 21, 709, 4196, 7851, 2]
+// Dependencies: [19, 21, 709, 4196, 7861, 2]
 // Exports: DenyIcon
 
-// Module 7850 (DenyIcon)
+// Module 7860 (DenyIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7851 */;
+import registerAsset from "registerAsset" /* 7861 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

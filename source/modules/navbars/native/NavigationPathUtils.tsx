@@ -1,13 +1,13 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12707
+// Function ID: 12708
 // Name: SpecialNavigationPath
-// Dependencies: [673, 4310, 2]
+// Dependencies: [673, 4313, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 12549 (SpecialNavigationPath)
+// Module 12707 (SpecialNavigationPath)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import _extends from "_extends" /* 4310 */;
+import _extends from "_extends" /* 4313 */;
 
 const Routes = ME.Routes;
 let obj = { FRIENDS: 0, [0]: "FRIENDS" };

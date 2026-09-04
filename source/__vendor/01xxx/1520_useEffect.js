@@ -16,9 +16,9 @@ if (typeof document !== "undefined") {
   useEffect = noop.useEffect;
 }
 
-export default function useLatestCallback(stateFromStores) {
-  noop = stateFromStores;
-  useEffect = noop.useRef(stateFromStores);
+export default function useLatestCallback(first) {
+  noop = first;
+  useEffect = noop.useRef(first);
   useEffect(() => {
     closure_1.current = closure_0;
   });

@@ -1,14 +1,14 @@
-// Module ID: 6685
-// Function ID: 6686
+// Module ID: 6066
+// Function ID: 6067
 // Name: GemRightUpwards3dIllustration
-// Dependencies: [21, 5502, 6686, 2]
+// Dependencies: [21, 5542, 6067, 2]
 // Exports: GemRightUpwards3dIllustration
 
-// Module 6685 (GemRightUpwards3dIllustration)
+// Module 6066 (GemRightUpwards3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6686 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6067 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemRightUpwards3dIllustration.native.tsx");

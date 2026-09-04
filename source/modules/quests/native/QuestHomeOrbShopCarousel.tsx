@@ -1,20 +1,20 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 15009
+// Function ID: 15010
 // Name: ListEdgeSpacer
-// Dependencies: [32, 19, 17, 7458, 5396, 21, 709, 14912, 4478, 11346, 586, 4474, 1233, 14928, 8116, 14929, 8906, 7474, 7484, 8909, 2]
+// Dependencies: [32, 19, 17, 7635, 5404, 21, 709, 14994, 4481, 11454, 586, 4477, 1233, 15010, 8804, 15011, 8694, 7651, 7661, 8697, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 14927 (ListEdgeSpacer)
+// Module 15009 (ListEdgeSpacer)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4474 */;
+import Text from "Text" /* 4477 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "set" /* 7458 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5396 */;
+import closure_6 from "set" /* 7635 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ListEdgeSpacer(width) {
@@ -263,7 +263,7 @@ export default function QuestHomeOrbShopCarousel(showOrbShopPlaceholderCarousel)
 export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarouselData(arg0) {
   let orbAmount;
   ({ enabled, sortType } = arg0);
-  const BountiesStage1Experiment = orbAmount(11346).BountiesStage1Experiment;
+  const BountiesStage1Experiment = orbAmount(11454).BountiesStage1Experiment;
   let obj = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
   orbAmount = BountiesStage1Experiment.useConfig(obj).orbAmount;
   const items = [closure_6];
@@ -281,7 +281,7 @@ export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarou
     return num;
   });
   const obj2 = orbAmount(586);
-  const popularOrbShopProducts = orbAmount(14912).usePopularOrbShopProducts({ enabled, sortType });
+  const popularOrbShopProducts = orbAmount(14994).usePopularOrbShopProducts({ enabled, sortType });
   obj = { products: popularOrbShopProducts.products, obtainableOrbRewards: stateFromStores, showPlaceholderCarousel: popularOrbShopProducts.showPlaceholderCarousel };
   return obj;
 };

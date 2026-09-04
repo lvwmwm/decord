@@ -1,20 +1,20 @@
-// Module ID: 16224
-// Function ID: 16225
+// Module ID: 16310
+// Function ID: 16311
 // Name: AvatarDefault
-// Dependencies: [19, 17, 14940, 673, 21, 4478, 709, 4197, 1296, 8109, 8241, 2]
+// Dependencies: [19, 17, 15022, 673, 21, 4481, 709, 4197, 1296, 8743, 8687, 2]
 
-// Module 16224 (AvatarDefault)
+// Module 16310 (AvatarDefault)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
-import SolidCutout from "SolidCutout" /* 8109 */;
-import SolidCutoutDefault from "SolidCutout" /* 8109 */;
-import ReactionIcon from "ReactionIcon" /* 8241 */;
+import ReactionIcon from "ReactionIcon" /* 8687 */;
+import SolidCutout from "SolidCutout" /* 8743 */;
+import SolidCutoutDefault from "SolidCutout" /* 8743 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14940 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
 import { StatusTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -31,7 +31,7 @@ function AvatarDefault() {
   const result = num / 2;
   const sum = result + tmp2(1296).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  obj = { shape: tmp2(8109).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  obj = { shape: tmp2(8743).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   obj = { style: null, children: null };
   obj1 = { height: tmp2(1296).AVATAR_SIZE_MAP[tmp6], width: tmp2(1296).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   obj[0] = obj1;

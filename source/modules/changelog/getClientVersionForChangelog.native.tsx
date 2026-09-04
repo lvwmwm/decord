@@ -1,12 +1,12 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17246
+// Function ID: 17247
 // Name: getClientVersionForChangelog
-// Dependencies: [17161, 2]
+// Dependencies: [17247, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 17160 (getClientVersionForChangelog)
+// Module 17246 (getClientVersionForChangelog)
 import set from "set" /* 2 */;
-import getAppMajorVersion from "getAppMajorVersion" /* 17161 */;
+import getAppMajorVersion from "getAppMajorVersion" /* 17247 */;
 
 const result = set.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");
 

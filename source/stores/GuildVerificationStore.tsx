@@ -1,13 +1,13 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5374
+// Function ID: 5375
 // Name: recomputeGuild
-// Dependencies: [1429, 1991, 1984, 1908, 1921, 673, 4108, 1398, 706, 11, 586, 2]
+// Dependencies: [1430, 1991, 1984, 1908, 1921, 673, 4108, 1399, 706, 11, 586, 2]
 
-// Module 5366 (recomputeGuild)
+// Module 5374 (recomputeGuild)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import GuildMemberFlags2 from "GuildMemberFlags" /* 4108 */;
 import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
@@ -208,7 +208,7 @@ function recomputeGuild(guildId) {
             if (num == null) {
               num = 0;
             }
-            const obj2 = _require(1398);
+            const obj2 = _require(1399);
           }
         }
       }

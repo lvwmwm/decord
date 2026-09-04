@@ -1,14 +1,14 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6136
+// Function ID: 6137
 // Name: HeadsetSpotIllustration
-// Dependencies: [21, 5502, 6756, 2]
+// Dependencies: [21, 5542, 6137, 2]
 // Exports: HeadsetSpotIllustration
 
-// Module 6755 (HeadsetSpotIllustration)
+// Module 6136 (HeadsetSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6756 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6137 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeadsetSpotIllustration.native.tsx");

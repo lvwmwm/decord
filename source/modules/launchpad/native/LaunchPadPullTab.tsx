@@ -1,15 +1,15 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 16888
+// Function ID: 16889
 // Name: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS
-// Dependencies: [19, 17, 11288, 11763, 21, 4478, 709, 16801, 4217, 11834, 16803, 4928, 1233, 16746, 13821, 2]
+// Dependencies: [19, 17, 11396, 11894, 21, 4481, 709, 16612, 4218, 11965, 16889, 4935, 1233, 16833, 13853, 2]
 
-// Module 16802 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
+// Module 16888 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
 import ThemesDefault from "Themes" /* 709 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11288 */;
-import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11763 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11396 */;
+import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11894 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;

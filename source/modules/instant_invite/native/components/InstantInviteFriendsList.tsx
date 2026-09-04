@@ -1,20 +1,20 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 9821
+// Function ID: 9822
 // Name: keyExtractor
-// Dependencies: [19, 673, 21, 4478, 5470, 709, 1296, 1233, 5077, 4445, 4333, 4474, 10010, 5603, 5633, 2]
+// Dependencies: [19, 673, 21, 4481, 5479, 709, 1296, 1233, 5084, 4448, 4336, 4477, 9822, 6921, 6567, 2]
 // Exports: default
 
-// Module 10009 (keyExtractor)
+// Module 9821 (keyExtractor)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
 import closure_3 from "noop" /* 19 */;
 import { Fonts } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5470 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import importDefaultResult from "createTextStyle" /* 5479 */;
 
 require = arg1;
 function keyExtractor(item) {
@@ -32,9 +32,9 @@ function FriendsEmptyComponent() {
   const items = [callback(Button.RefreshEmptyState, obj), ];
   obj = {
     onPress() {
-      let obj = callback2(4445);
+      let obj = callback2(4448);
       obj.hideActionSheet();
-      const rootNavigationRef = callback(4333).getRootNavigationRef();
+      const rootNavigationRef = callback(4336).getRootNavigationRef();
       if (null != rootNavigationRef) {
         obj = { screen: "add-friends", params: null };
         obj[1] = { sourcePage: "Instant Invite Empty State" };

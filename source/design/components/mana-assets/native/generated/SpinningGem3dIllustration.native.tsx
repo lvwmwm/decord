@@ -1,14 +1,14 @@
-// Module ID: 7045
-// Function ID: 7046
+// Module ID: 6426
+// Function ID: 6427
 // Name: SpinningGem3dIllustration
-// Dependencies: [21, 5502, 7046, 2]
+// Dependencies: [21, 5542, 6427, 2]
 // Exports: SpinningGem3dIllustration
 
-// Module 7045 (SpinningGem3dIllustration)
+// Module 6426 (SpinningGem3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 7046 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6427 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SpinningGem3dIllustration.native.tsx");

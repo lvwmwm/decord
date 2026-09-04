@@ -1,25 +1,25 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16510
+// Function ID: 16511
 // Name: newMessage
-// Dependencies: [32, 109, 7292, 10190, 1980, 4299, 5232, 16425, 673, 1393, 1233, 3500, 16426, 4166, 10019, 586, 706, 2]
+// Dependencies: [32, 109, 7470, 10010, 1980, 4302, 5240, 16511, 673, 1393, 1233, 3500, 16512, 4166, 9831, 586, 706, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 16424 (newMessage)
+// Module 16510 (newMessage)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import messagesProxyDefault from "messagesProxy" /* 3500 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import createSoundForPack from "createSoundForPack" /* 10019 */;
-import _modDef16426 from "module_16426" /* 16426 */;
+import createSoundForPack from "createSoundForPack" /* 9831 */;
+import _modDef16512 from "module_16512" /* 16512 */;
 import closure_6 from "_slicedToArray" /* 32 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
-import closure_8 from "freshTeenActivityWithMap" /* 7292 */;
-import closure_9 from "DesktopNotificationTypes" /* 10190 */;
+import closure_8 from "freshTeenActivityWithMap" /* 7470 */;
+import closure_9 from "DesktopNotificationTypes" /* 10010 */;
 import closure_10 from "handleConnectionOpen" /* 1980 */;
-import closure_11 from "handleConnectionOpen" /* 4299 */;
-import closure_12 from "filterPlayingActivities" /* 5232 */;
-import closure_13 from "isProjectOwner" /* 16425 */;
+import closure_11 from "handleConnectionOpen" /* 4302 */;
+import closure_12 from "filterPlayingActivities" /* 5240 */;
+import closure_13 from "isProjectOwner" /* 16511 */;
 import ME from "ME" /* 673 */;
 import { StaticChannelRoute } from "set" /* 1393 */;
 import set from "set" /* 2 */;
@@ -333,7 +333,7 @@ function recordThinkingTransition(projectId) {
       }
       const project = store.getProject(projectId);
       if (null != project) {
-        result = _modDef16426.areTurnNotificationsDisabled();
+        result = _modDef16512.areTurnNotificationsDisabled();
         if (!result) {
           result = status.getStatus() === constants.DND;
         }
@@ -359,8 +359,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = channelId.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(16426).isWindowFocused();
-            const tmp68Result = tmp68(16426);
+            isWindowFocusedResult = tmp68(16512).isWindowFocused();
+            const tmp68Result = tmp68(16512);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -450,12 +450,12 @@ function recordThinkingTransition(projectId) {
                 tmp58 = bit_message1;
               }
               obj[5] = tmp58;
-              const result3 = _modDef16426.presentTurnNotification(obj);
-              const obj7 = _modDef16426;
+              const result3 = _modDef16512.presentTurnNotification(obj);
+              const obj7 = _modDef16512;
             }
           }
         }
-        const obj10 = _modDef16426;
+        const obj10 = _modDef16512;
         tmp68 = importDefault;
       }
       obj5 = store;

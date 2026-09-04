@@ -1,9 +1,9 @@
-// Module ID: 4265
-// Function ID: 4266
+// Module ID: 4269
+// Function ID: 4270
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4265 (metadata)
+// Module 4269 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BoostThisServer.riv.js");

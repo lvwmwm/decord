@@ -1,23 +1,23 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14511
+// Function ID: 14512
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 9050, 8081, 682, 673, 21, 4478, 1233, 14480, 14538, 4197, 709, 1498, 7169, 9277, 9233, 7768, 4340, 14497, 14539, 644, 4701, 9052, 5504, 7618, 1499, 9283, 9285, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9137, 8091, 682, 673, 21, 4481, 1233, 14512, 14570, 4197, 709, 1498, 6934, 9721, 10854, 6924, 4343, 14529, 14571, 644, 4708, 9139, 5579, 7795, 1499, 12546, 12548, 2]
 
-// Module 14479 (ProfileCustomizationSubsection)
+// Module 14511 (ProfileCustomizationSubsection)
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14480 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14538 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14512 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14570 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import closure_7 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_10 from "zustandStore" /* 9050 */;
-import closure_11 from "handleFormOpen" /* 8081 */;
+import closure_10 from "zustandStore" /* 9137 */;
+import closure_11 from "handleFormOpen" /* 8091 */;
 import { ProfileCustomizationSubsection } from "MAX_FAVORITES" /* 682 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let closure_3 = ["handleSubmit"];

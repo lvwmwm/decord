@@ -1,26 +1,26 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 9921
+// Function ID: 9922
 // Name: VoiceProcessingOptions
-// Dependencies: [19, 17, 4529, 21, 4478, 709, 586, 10102, 10103, 9807, 7704, 1233, 7705, 4474, 10106, 10088, 6002, 2]
+// Dependencies: [19, 17, 4532, 21, 4481, 709, 586, 9922, 9923, 9019, 5640, 1233, 5643, 4477, 9926, 9908, 7141, 2]
 // Exports: default
 
-// Module 10101 (VoiceProcessingOptions)
+// Module 9921 (VoiceProcessingOptions)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text2 from "Text" /* 4474 */;
-import TableSwitchRow from "TableSwitchRow" /* 6002 */;
-import context from "context" /* 7704 */;
-import TableRadioRow from "TableRadioRow" /* 7705 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10088 */;
-import handleAutomaticGainControlChange from "handleAutomaticGainControlChange" /* 10102 */;
-import getNoiseCancellationDeferredToSystem from "getNoiseCancellationDeferredToSystem" /* 10103 */;
-import handleKrispLinkPressedDefault from "handleKrispLinkPressed" /* 10106 */;
+import Text2 from "Text" /* 4477 */;
+import context from "context" /* 5640 */;
+import TableRadioRow from "TableRadioRow" /* 5643 */;
+import TableSwitchRow from "TableSwitchRow" /* 7141 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 9908 */;
+import handleAutomaticGainControlChange from "handleAutomaticGainControlChange" /* 9922 */;
+import getNoiseCancellationDeferredToSystem from "getNoiseCancellationDeferredToSystem" /* 9923 */;
+import handleKrispLinkPressedDefault from "handleKrispLinkPressed" /* 9926 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class VoiceProcessingOptions {
@@ -44,9 +44,9 @@ class VoiceProcessingOptions {
       obj1 = { value: null, onChange: null, title: null, hasIcons: false, children: null };
       obj1[0] = selectedNoiseSuppressionOption;
       obj1[1] = function noiseCancellationChanged(arg0) {
-        callback2(9807).setNoiseCancellation(arg0 === callback(10102).NoiseSuppressionOpt.KRISP);
-        const obj = callback2(9807);
-        callback2(9807).setNoiseSuppression(arg0 === callback(10102).NoiseSuppressionOpt.STANDARD);
+        callback2(9019).setNoiseCancellation(arg0 === callback(9922).NoiseSuppressionOpt.KRISP);
+        const obj = callback2(9019);
+        callback2(9019).setNoiseSuppression(arg0 === callback(9922).NoiseSuppressionOpt.STANDARD);
       };
       intl3 = require("getSystemLocale").intl;
       obj1[2] = intl3.string(require("getSystemLocale").t.t8Qhib);
@@ -115,8 +115,8 @@ class VoiceProcessingOptions {
       obj10[1] = intl2.string(require("getSystemLocale").t.najZCV);
       obj10[2] = selectedNoiseSuppressionOption === require("handleAutomaticGainControlChange").NoiseSuppressionOpt.STANDARD;
       obj10[3] = function onValueChange(arg0) {
-        const NoiseSuppressionOpt = callback(10102).NoiseSuppressionOpt;
-        return callback(10102).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+        const NoiseSuppressionOpt = callback(9922).NoiseSuppressionOpt;
+        return callback(9922).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
       };
       obj9[1] = jsx(require("TableSwitchRow").TableSwitchRow, obj10);
       return jsx(require("UserSettingsVoice").UserSettingsTableRowGroup, obj9);
@@ -169,7 +169,7 @@ export default function UserSettingsVoiceProcessing() {
       obj = { vadUseKrisp };
       return obj.setMode(closure_0, obj);
     };
-    advancedVoiceActivitySupported = callback(tmp(6002).TableSwitchRow, obj2);
+    advancedVoiceActivitySupported = callback(tmp(7141).TableSwitchRow, obj2);
   }
   const obj3 = { children: null };
   items2[1] = advancedVoiceActivitySupported;

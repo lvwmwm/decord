@@ -1,23 +1,23 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14825
+// Function ID: 14826
 // Name: memoResult1
-// Dependencies: [19, 17, 1921, 7292, 7293, 673, 21, 4478, 709, 1296, 38, 644, 11, 4474, 4322, 7348, 6013, 7685, 1233, 2368, 14745, 14748, 14749, 2]
+// Dependencies: [19, 17, 1921, 7470, 7471, 673, 21, 4481, 709, 1296, 38, 644, 11, 4477, 4325, 7526, 5539, 5545, 1233, 2368, 14826, 14829, 14830, 2]
 // Exports: default
 
-// Module 14744 (memoResult1)
+// Module 14825 (memoResult1)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 709 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7348 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 14745 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 14749 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7526 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 14826 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 14830 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7292 */;
-import { ACTION_TO_TEXT } from "items" /* 7293 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
+import { ACTION_TO_TEXT } from "items" /* 7471 */;
 import { GuildFeatures } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -47,7 +47,7 @@ const memoResult = importAllResult.memo((action) => {
     obj[0] = tmp.container;
     obj = { style: null, children: null };
     obj[0] = tmp.avatarContainer;
-    obj1 = { avatarStyle: null, user: null, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "celebraci\u00F3n" };
+    obj1 = { avatarStyle: null, user: null, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
     obj1[0] = tmp.avatar;
     obj1[1] = stateFromStores;
     obj1[4] = stateFromStores.avatarDecoration;
@@ -57,14 +57,14 @@ const memoResult = importAllResult.memo((action) => {
     obj2[0] = tmp.textContainer;
     const obj3 = { style: null, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj3[0] = tmp.text;
-    tmp3Result = tmp3(4322);
+    tmp3Result = tmp3(4325);
     obj3[5] = tmp3Result.getName(stateFromStores);
-    const items2 = [callback(tmp6(4474).Text, obj3), ];
+    const items2 = [callback(tmp6(4477).Text, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "channels-default", children: null };
     const _Date = Date;
     const date = new Date(extractTimestampResult);
-    obj4[2] = tmp6(7348).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
-    items2[1] = callback(tmp6(4474).Text, obj4);
+    obj4[2] = tmp6(7526).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+    items2[1] = callback(tmp6(4477).Text, obj4);
     obj2[1] = items2;
     items1[1] = callback2(View, obj2);
     obj[1] = items1;
@@ -106,8 +106,8 @@ const memoResult1 = importAllResult.memo((action) => {
     obj = { style: null, textStyle: null, guild: null, size: null, animate: true };
     ({ avatar: obj3[0], avatarText: obj3[1] } = tmp);
     obj[2] = stateFromStores;
-    let tmp6Result = tmp6(6013);
-    obj[3] = tmp2(6013).GuildIconSizes.NORMAL;
+    let tmp6Result = tmp6(5539);
+    obj[3] = tmp2(5539).GuildIconSizes.NORMAL;
     const items1 = [callback(tmp6Result, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.text;
@@ -120,15 +120,15 @@ const memoResult1 = importAllResult.memo((action) => {
       const obj4 = { style: null, guild: null, size: null, disableColor: true };
       obj4[0] = tmp.badge;
       obj4[1] = stateFromStores;
-      tmp6Result = tmp6(7685);
-      obj4[2] = tmp6(7685).Sizes.SMALL;
+      tmp6Result = tmp6(5545);
+      obj4[2] = tmp6(5545).Sizes.SMALL;
       tmp11Result = tmp11(tmp6Result, obj4);
     }
     const items2 = [tmp11Result, ];
     const obj5 = { style: null, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj5[0] = tmp.header;
     obj5[5] = stateFromStores.name;
-    items2[1] = callback(tmp2(4474).Text, obj5);
+    items2[1] = callback(tmp2(4477).Text, obj5);
     obj3[1] = items2;
     obj2[1] = closure_9(View, obj3);
     const items3 = [callback(View, obj2), ];
@@ -139,7 +139,7 @@ const memoResult1 = importAllResult.memo((action) => {
       const obj7 = { members: null };
       obj7[0] = stateFromStores.approximateMemberCount;
       obj6[2] = intl.format(tmp6(2368)["5JmNgg"], obj7);
-      tmp11Result = tmp11(tmp2(4474).Text, obj6);
+      tmp11Result = tmp11(tmp2(4477).Text, obj6);
     }
     items3[1] = tmp11Result;
     obj1[1] = items3;
@@ -156,14 +156,14 @@ export default function FamilyCenterActivityRow(action) {
   action = action.action;
   let obj = getEmptyActivityFormatter;
   if (!obj.isUserAction(action)) {
-    let tmpResult = tmp(7348);
+    let tmpResult = tmp(7526);
     if (!tmpResult.isGuildAction(action)) {
-      tmpResult = tmp(7348);
+      tmpResult = tmp(7526);
       if (!tmpResult.isPurchase(action)) {
         if (!tmpResult1.isGift(action)) {
           return null;
         }
-        tmpResult1 = tmp(7348);
+        tmpResult1 = tmp(7526);
       }
     }
   }
@@ -182,7 +182,7 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = tmp(14748).getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = tmp(14829).getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         obj = { skuId: null, subscriptionPlanId: null, price: null, gifterUserId: null, claimed: null, offeredAt: null, claimedAt: null };
         obj[0] = skuId;
@@ -208,7 +208,7 @@ export default function FamilyCenterActivityRow(action) {
       obj3[0] = tmp4Result;
       return callback(View, obj3);
     }
-    tmpResult3 = tmp(7348);
+    tmpResult3 = tmp(7526);
   }
   tmpResult2 = getEmptyActivityFormatter;
 };

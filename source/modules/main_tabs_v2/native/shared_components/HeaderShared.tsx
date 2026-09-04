@@ -1,23 +1,23 @@
-// Module ID: 7618
-// Function ID: 7619
+// Module ID: 7795
+// Function ID: 7796
 // Name: GenericHeaderTitle
-// Dependencies: [19, 17, 7619, 21, 4478, 709, 4474, 4197, 5505, 5511, 7620, 1234, 7625, 1627, 1499, 7627, 5605, 640, 7630, 13161, 5077, 1296, 2]
+// Dependencies: [19, 17, 7796, 21, 4481, 709, 4477, 4197, 5580, 5586, 7797, 1234, 7802, 1627, 1499, 7804, 5536, 640, 7807, 13193, 5084, 1296, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 7618 (GenericHeaderTitle)
+// Module 7795 (GenericHeaderTitle)
 import shallowEqualDefault from "shallowEqual" /* 640 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
-import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5077 */;
-import Background from "Background" /* 5511 */;
-import JoinCallIconDefault from "JoinCallIcon" /* 7630 */;
+import Text from "Text" /* 4477 */;
+import PressableBase from "PressableBase" /* 5084 */;
+import Background from "Background" /* 5586 */;
+import JoinCallIconDefault from "JoinCallIcon" /* 7807 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT" /* 7619 */;
+import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT" /* 7796 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 class GenericHeaderTitle {

@@ -1,14 +1,14 @@
-// Module ID: 5056
-// Function ID: 5057
+// Module ID: 5063
+// Function ID: 5064
 // Name: HubIcon
-// Dependencies: [19, 21, 709, 4196, 4993, 2]
+// Dependencies: [19, 21, 709, 4196, 5000, 2]
 // Exports: HubIcon
 
-// Module 5056 (HubIcon)
+// Module 5063 (HubIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4993 */;
+import registerAsset from "registerAsset" /* 5000 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

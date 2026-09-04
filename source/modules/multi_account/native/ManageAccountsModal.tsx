@@ -1,24 +1,24 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16299
+// Function ID: 16300
 // Name: RemoveMultiAccountUserButton
-// Dependencies: [32, 5, 19, 17, 1215, 4323, 1921, 12213, 12214, 16214, 673, 21, 7834, 4478, 709, 586, 1296, 4859, 1233, 12217, 5077, 15152, 15789, 4217, 4479, 8595, 695, 5562, 16215, 15790, 12223, 16216, 5618, 8376, 9242, 6017, 7618, 10887, 15815, 6061, 7727, 15814, 2]
+// Dependencies: [32, 5, 19, 17, 1215, 4326, 1921, 12345, 12346, 16300, 673, 21, 7844, 4481, 709, 586, 1296, 4866, 1233, 12349, 5084, 15236, 15875, 4218, 4482, 8202, 695, 7063, 16301, 15876, 12355, 16302, 5570, 8523, 11136, 6940, 7795, 10856, 15901, 6534, 6882, 15900, 2]
 
-// Module 16213 (RemoveMultiAccountUserButton)
+// Module 16299 (RemoveMultiAccountUserButton)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "initialize" /* 4323 */;
+import closure_9 from "initialize" /* 4326 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { MultiAccountTokenStatus } from "initialize" /* 12213 */;
-import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12214 */;
-import { ManageAccountsScreens } from "ManageAccountsScreens" /* 16214 */;
+import { MultiAccountTokenStatus } from "initialize" /* 12345 */;
+import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12346 */;
+import { ManageAccountsScreens } from "ManageAccountsScreens" /* 16300 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7834 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function RemoveMultiAccountUserButton(user) {
@@ -139,8 +139,8 @@ function RemoveMultiAccountUserButton(user) {
     };
     obj = { color: null };
     obj[0] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
-    obj[3] = callback2(tmp(15152).CircleMinusIcon, obj);
-    return callback2(tmp(5077).PressableOpacity, obj);
+    obj[3] = callback2(tmp(15236).CircleMinusIcon, obj);
+    return callback2(tmp(5084).PressableOpacity, obj);
   }
   let obj2 = user(586);
 }
@@ -320,7 +320,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
   let _require;
   c1 = undefined;
   c2 = undefined;
-  let obj = _require(6017);
+  let obj = _require(6940);
   _require = obj.useAccessibilityNativeStackOptions();
   [c1, c2] = callback(importAllResult.useState(false), 2);
   obj = {
@@ -380,14 +380,14 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return obj;
       },
       children() {
-        return callback2(_undefined(15815), {
+        return callback2(_undefined(15901), {
           handleLogin(login, password, undelete) {
-            let obj = callback(6061);
+            let obj = callback(6534);
             obj = { login, password, undelete };
             obj.login(obj);
           },
           onReset(arg0, arg1, arg2) {
-            callback(6061).loginReset(true);
+            callback(6534).loginReset(true);
           }
         });
       }
@@ -398,7 +398,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return callback2(_undefined(7727), { isMultiAccount: true });
+        return callback2(_undefined(6882), { isMultiAccount: true });
       }
     }),
     callback2(closure_20.Screen, {
@@ -407,7 +407,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return callback2(_undefined(15814), { isMultiAccount: true });
+        return callback2(_undefined(15900), { isMultiAccount: true });
       }
     })
   ];

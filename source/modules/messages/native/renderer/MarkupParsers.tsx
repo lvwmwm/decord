@@ -1,17 +1,17 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8020
+// Function ID: 8021
 // Name: parseEmbedTitleMarkup
-// Dependencies: [673, 684, 1400, 4468, 8011, 7642, 2]
+// Dependencies: [673, 684, 1401, 4471, 8021, 7819, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8010 (parseEmbedTitleMarkup)
+// Module 8020 (parseEmbedTitleMarkup)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import setDefault from "set" /* 684 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
-import getInitialParserState from "getInitialParserState" /* 7642 */;
-import LHeading from "LHeading" /* 8011 */;
-import importDefaultResult from "priv" /* 1400 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4471 */;
+import getInitialParserState from "getInitialParserState" /* 7819 */;
+import LHeading from "LHeading" /* 8021 */;
+import importDefaultResult from "priv" /* 1401 */;
 
 const MessageTypes = ME.MessageTypes;
 let obj = { max: Infinity, maxAge: 15 * setDefault.Millis.MINUTE, updateAgeOnGet: true };

@@ -1,10 +1,10 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 9322
+// Function ID: 9323
 // Name: getAttachmentUploadAbortAlertContent
-// Dependencies: [673, 1233, 5083, 2]
+// Dependencies: [673, 1233, 5090, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 8407 (getAttachmentUploadAbortAlertContent)
+// Module 9322 (getAttachmentUploadAbortAlertContent)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
@@ -20,7 +20,7 @@ export const getAttachmentUploadAbortAlertContent = function getAttachmentUpload
     obj[0] = stringResult;
     const intl4 = tmp(1233).intl;
     obj = { maxSizeMb: null };
-    obj[0] = tmp(5083).MAX_TOTAL_ATTACHMENT_SIZE_MB;
+    obj[0] = tmp(5090).MAX_TOTAL_ATTACHMENT_SIZE_MB;
     obj[1] = intl4.formatToPlainString(tmp(1233).t.DYFPg2, obj);
     return obj;
   } else if (tmp4.CLOUD_UPLOAD_NOT_FOUND === code) {

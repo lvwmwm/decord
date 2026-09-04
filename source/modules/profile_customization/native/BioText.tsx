@@ -1,17 +1,17 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 11140
+// Function ID: 11141
 // Name: LinkButton
-// Dependencies: [19, 17, 673, 1979, 21, 4478, 4190, 695, 4474, 9056, 1234, 1978, 1233, 2]
+// Dependencies: [19, 17, 673, 1979, 21, 4481, 4190, 695, 4477, 9348, 1234, 1978, 1233, 2]
 // Exports: default
 
-// Module 9055 (LinkButton)
-import Text from "Text" /* 4474 */;
+// Module 11140 (LinkButton)
+import Text from "Text" /* 4477 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { CHANGELOG_URL } from "CHANGELOG_MODAL_KEY" /* 1979 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function LinkButton(arg0) {

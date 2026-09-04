@@ -1,10 +1,10 @@
-// Module ID: 1399
-// Function ID: 1400
+// Module ID: 1400
+// Function ID: 1401
 // Name: exact
 // Dependencies: [2]
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
-// Module 1399 (exact)
+// Module 1400 (exact)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");

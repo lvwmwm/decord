@@ -1,13 +1,13 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 10665
+// Function ID: 10666
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4477, 586, 8098, 2]
+// Dependencies: [4480, 586, 10666, 2]
 // Exports: default
 
-// Module 8097 (useMaybeFetchCollectiblesCategories)
+// Module 10665 (useMaybeFetchCollectiblesCategories)
 import initialize from "initialize" /* 586 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 8098 */;
-import closure_2 from "getUserAgnosticState" /* 4477 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 10666 */;
+import closure_2 from "getUserAgnosticState" /* 4480 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");

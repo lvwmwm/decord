@@ -1,17 +1,17 @@
-// Module ID: 16817
-// Function ID: 16818
-// Dependencies: [19, 17, 10227, 4703, 21, 4478, 16813, 4936, 7624, 2]
+// Module ID: 16903
+// Function ID: 16904
+// Dependencies: [19, 17, 10047, 4710, 21, 4481, 16899, 4943, 7801, 2]
 
-// Module 16817
-import getFontScale from "getFontScale" /* 4936 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7624 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7624 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16813 */;
+// Module 16903
+import getFontScale from "getFontScale" /* 4943 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7801 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16899 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10227 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4703 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10047 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

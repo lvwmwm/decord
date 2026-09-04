@@ -1,23 +1,23 @@
-// Module ID: 11049
-// Function ID: 11050
+// Module ID: 11010
+// Function ID: 11011
 // Name: CancelButton
-// Dependencies: [32, 850, 19, 17, 4470, 673, 21, 4478, 709, 1949, 11048, 5511, 5560, 1233, 4217, 4928, 4479, 4446, 7307, 11050, 4197, 4941, 8910, 11052, 586, 11053, 11054, 11059, 8622, 11062, 8510, 5562, 11063, 8523, 8536, 8543, 11081, 11082, 4474, 7309, 4929, 2]
+// Dependencies: [32, 850, 19, 17, 4473, 673, 21, 4481, 709, 1949, 11009, 5586, 5635, 1233, 4218, 4935, 4482, 4449, 7485, 11011, 4197, 4948, 8109, 11013, 586, 11014, 11015, 8781, 8262, 11021, 8102, 7063, 11022, 8727, 8740, 11040, 11151, 11152, 4477, 7487, 4936, 2]
 // Exports: default
 
-// Module 11049 (CancelButton)
+// Module 11010 (CancelButton)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import Background from "Background" /* 5511 */;
-import tinycolorDefault from "tinycolor" /* 7307 */;
+import Background from "Background" /* 5586 */;
+import tinycolorDefault from "tinycolor" /* 7485 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "_toArray" /* 850 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function CancelButton(arg0) {
@@ -171,16 +171,16 @@ let closure_22 = tinycolorDefault("black").toHexString();
 let obj5 = tinycolorDefault("black");
 let result = require("set").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
 
-export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
-  ({ product, useCategoryImage } = orbBalancePriorToPurchase);
+export default function ProductPurchaseSuccessModal(stageCollectibleChangeForEditProfile) {
+  ({ product, useCategoryImage } = stageCollectibleChangeForEditProfile);
   if (useCategoryImage === undefined) {
     useCategoryImage = false;
   }
-  ({ renderMessages, showOrbBalancePill, onSuccess, onCancel } = orbBalancePriorToPurchase);
+  ({ renderMessages, showOrbBalancePill, onSuccess, onCancel } = stageCollectibleChangeForEditProfile);
   if (showOrbBalancePill === undefined) {
     showOrbBalancePill = false;
   }
-  let prop = orbBalancePriorToPurchase.orbBalancePriorToPurchase;
+  let prop = stageCollectibleChangeForEditProfile.orbBalancePriorToPurchase;
   if (prop === undefined) {
     prop = null;
   }
@@ -312,7 +312,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const mobileBgUrl = category.mobileBgUrl;
   }
   const tmp2Result7 = stateFromStores(sharedValue[25]);
-  handleUseNow = stateFromStores(sharedValue[26]).useHandleUseNow({ product, onSuccess });
+  handleUseNow = stateFromStores(sharedValue[26]).useHandleUseNow({ product, onSuccess, stageCollectibleChangeForEditProfile: stageCollectibleChangeForEditProfile.stageCollectibleChangeForEditProfile });
   const isApplying = handleUseNow.isApplying;
   ({ handleUseNow, canUseNow, handleEditProfile } = handleUseNow);
   const avatarSource = currentUser.getAvatarSource(undefined, false, avatarSize);

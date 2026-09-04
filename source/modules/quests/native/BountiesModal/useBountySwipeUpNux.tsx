@@ -1,12 +1,12 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 14935
+// Function ID: 14936
 // Name: useBountySwipeUpNux
-// Dependencies: [32, 11345, 14855, 1372, 6261, 2]
+// Dependencies: [32, 11453, 14936, 1372, 7326, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14854 (useBountySwipeUpNux)
-import apexExperiment from "apexExperiment" /* 11345 */;
-import FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY from "FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY" /* 14855 */;
+// Module 14935 (useBountySwipeUpNux)
+import apexExperiment from "apexExperiment" /* 11453 */;
+import FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY from "FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY" /* 14936 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -29,7 +29,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
         prop = tmp(1372).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    let tmpResult = tmp(6261);
+    let tmpResult = tmp(7326);
     let tmp4Result = tmp4(tmpResult.useSelectedDismissibleContent([]), 2);
     if (first) {
       let tmp11 = isEligible;
@@ -40,7 +40,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
     } else {
       tmp10 = tmp9 === tmp(1372).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    tmpResult = tmp(6261);
+    tmpResult = tmp(7326);
     tmp4Result = tmp4(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
     obj = { hasSingleUseSwipeUpNux: null, dismissSingleUseSwipeUpNux: null, hasRecurringSwipeUpNux: null, dismissRecurringSwipeUpNux: null };
     obj[0] = tmp10;

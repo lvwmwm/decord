@@ -1,9 +1,9 @@
-// Module ID: 4381
-// Function ID: 4382
+// Module ID: 4384
+// Function ID: 4385
 // Name: _getMessageFromRateLimit
 // Dependencies: [4162, 4163, 684, 1233, 2]
 
-// Module 4381 (_getMessageFromRateLimit)
+// Module 4384 (_getMessageFromRateLimit)
 import setDefault from "set" /* 684 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import prototypeDefault from "prototype" /* 4162 */;

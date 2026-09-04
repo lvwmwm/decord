@@ -1,9 +1,9 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6193
+// Function ID: 6194
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6812 (metadata)
+// Module 6193 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MoonIllocon-2x.png.js");

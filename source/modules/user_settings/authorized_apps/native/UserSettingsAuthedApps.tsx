@@ -1,18 +1,18 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14863
+// Function ID: 14864
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 5484, 673, 21, 709, 4478, 9308, 9386, 9388, 4433, 1627, 586, 1498, 1499, 5970, 4474, 1233, 6001, 1430, 5608, 11857, 7774, 6252, 2]
+// Dependencies: [19, 17, 7047, 673, 21, 709, 4481, 9170, 8816, 9360, 4436, 1627, 586, 1498, 1499, 7110, 4477, 1233, 5642, 1431, 5560, 11988, 6930, 6935, 2]
 // Exports: DisclosureIcon, default
 
-// Module 14782 (UserSettingsAuthedApps)
+// Module 14863 (UserSettingsAuthedApps)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "recomputeFromAppTokens" /* 5484 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5484 */;
+import closure_7 from "recomputeFromAppTokens" /* 7047 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c4, ActivityIndicator: c5, FlatList: closure_6 } = get_ActivityIndicator);

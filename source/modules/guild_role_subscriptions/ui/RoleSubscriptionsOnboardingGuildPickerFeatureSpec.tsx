@@ -1,12 +1,12 @@
-// Module ID: 13869
-// Function ID: 13870
-// Dependencies: [4391, 1429, 1233, 586, 6116, 6117, 4113, 2]
+// Module ID: 13901
+// Function ID: 13902
+// Dependencies: [4394, 1430, 1233, 586, 7200, 7201, 4113, 2]
 
-// Module 13869
+// Module 13901
 import initialize from "initialize" /* 586 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "getHash" /* 4391 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1429 */;
+import closure_2 from "getHash" /* 4394 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsOnboardingGuildPickerFeatureSpec.tsx");
@@ -26,11 +26,11 @@ export default {
     return initialize.useStateFromStores(items, () => (id) => {
       let result = callback2(id, arg1);
       if (result) {
-        let obj = callback(6116);
+        let obj = callback(7200);
         obj = { guild: null, isOwner: true, canManageGuildRoleSubscriptions: true, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
         obj[0] = id;
-        obj[3] = callback(6117).isUserInCreatorMonetizationEligibleCountry();
-        const obj3 = callback(6117);
+        obj[3] = callback(7201).isUserInCreatorMonetizationEligibleCountry();
+        const obj3 = callback(7201);
         obj[4] = callback(4113).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);
         const obj4 = callback(4113);

@@ -1,18 +1,18 @@
-// Module ID: 17716
-// Function ID: 17717
+// Module ID: 17796
+// Function ID: 17797
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4478, 8711, 8712, 4927, 4474, 11727, 17714, 10958, 2]
+// Dependencies: [19, 21, 4481, 8351, 8352, 4934, 4477, 11858, 17794, 10927, 2]
 // Exports: default
 
-// Module 17716 (SafetyFlowTaskScreen)
+// Module 17796 (SafetyFlowTaskScreen)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4474 */;
-import Stack from "Stack" /* 4927 */;
-import ModalScreen from "ModalScreen" /* 8711 */;
-import ModalContent from "ModalContent" /* 8712 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17714 */;
+import Text from "Text" /* 4477 */;
+import Stack from "Stack" /* 4934 */;
+import ModalScreen from "ModalScreen" /* 8351 */;
+import ModalContent from "ModalContent" /* 8352 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17794 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function SafetyFlowTaskScreen(action) {
     obj[1] = subtitleColor;
     obj[2] = tmp2.header;
     obj[3] = subtitle;
-    tmp7Result = tmp7(tmp4(4474).Text, obj);
+    tmp7Result = tmp7(tmp4(4477).Text, obj);
   }
   obj = { children: null };
   items[2] = tmp7Result;
@@ -65,12 +65,12 @@ export default function SafetyFlowTaskScreen(action) {
       obj1[1] = action;
       obj1[2] = onAction;
       obj1[3] = submitting;
-      tmp7Result = tmp7(tmp4(10958).ModalActionButton, obj1);
+      tmp7Result = tmp7(tmp4(10927).ModalActionButton, obj1);
     }
     const obj2 = { children: null };
     items3[1] = tmp7Result;
     obj2[0] = items3;
-    footer = tmp3(tmp4(11727).ModalFooter, obj2);
+    footer = tmp3(tmp4(11858).ModalFooter, obj2);
   }
   children[1] = footer;
   return closure_4(ModalScreen.ModalScreen, { children });

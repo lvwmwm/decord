@@ -1,15 +1,15 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 9885
+// Function ID: 9886
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1209, 4572, 4537, 1468, 586, 592, 4663, 2]
+// Dependencies: [1209, 4575, 4540, 1469, 586, 592, 4670, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10073 (getGoLiveAutoQualityExperimentConfig)
+// Module 9885 (getGoLiveAutoQualityExperimentConfig)
 import Storage3 from "Storage" /* 592 */;
 import closure_2 from "initialize" /* 1209 */;
-import closure_3 from "ApplicationStreamPresets" /* 4572 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4537 */;
-import importDefaultResult from "getUnitId" /* 1468 */;
+import closure_3 from "ApplicationStreamPresets" /* 4575 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4540 */;
+import importDefaultResult from "getUnitId" /* 1469 */;
 
 require = arg1;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
@@ -51,10 +51,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         const obj = { preset: null, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
-        tmp(4663).updateStreamSettings(obj);
+        tmp(4670).updateStreamSettings(obj);
         const Storage2 = tmp(592).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4663);
+        const tmpResult = tmp(4670);
       }
     }
   }

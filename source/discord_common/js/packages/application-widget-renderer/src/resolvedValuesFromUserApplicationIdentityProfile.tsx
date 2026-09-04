@@ -1,12 +1,12 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 8941
+// Function ID: 8942
 // Name: isVisualUnfurledMedia
-// Dependencies: [32, 12905, 12988, 2]
+// Dependencies: [32, 8859, 8942, 2]
 // Exports: default
 
-// Module 12987 (isVisualUnfurledMedia)
-import resolveFieldValue from "resolveFieldValue" /* 12905 */;
-import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12988 */;
+// Module 8941 (isVisualUnfurledMedia)
+import resolveFieldValue from "resolveFieldValue" /* 8859 */;
+import ProfileDataDynamicType from "ProfileDataDynamicType" /* 8942 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -115,26 +115,26 @@ function resolvedValuesFromDynamic(data) {
       if (nextResult.type === ProfileDataDynamicType.ProfileDataDynamicType.STRING) {
         let tmp9 = nextResult;
         obj = { type: null, value: null };
-        obj[0] = tmp5(12905).ResolvedValueType.STRING;
+        obj[0] = tmp5(8859).ResolvedValueType.STRING;
         obj[1] = iter.value;
         obj[iter.name] = obj;
       } else {
         let tmp11 = nextResult;
-        if (iter.type === tmp5(12988).ProfileDataDynamicType.NUMBER) {
+        if (iter.type === tmp5(8942).ProfileDataDynamicType.NUMBER) {
           let tmp8 = nextResult;
           obj = { type: null, value: null };
-          obj[0] = tmp5(12905).ResolvedValueType.NUMBER;
+          obj[0] = tmp5(8859).ResolvedValueType.NUMBER;
           obj[1] = iter.value;
           obj[iter.name] = obj;
         } else {
           let tmp12 = nextResult;
-          if (iter.type === tmp5(12988).ProfileDataDynamicType.MEDIA) {
+          if (iter.type === tmp5(8942).ProfileDataDynamicType.MEDIA) {
             let tmp13 = isVisualUnfurledMedia;
             let tmp14 = nextResult;
             if (isVisualUnfurledMedia(iter.value)) {
               let tmp7 = nextResult;
               obj1 = { type: null, media: null };
-              obj1[0] = tmp5(12905).ResolvedValueType.MEDIA;
+              obj1[0] = tmp5(8859).ResolvedValueType.MEDIA;
               let obj2 = { url: null, width: null, height: null };
               obj2[0] = iter.value.proxy_url;
               obj2[1] = iter.value.width;

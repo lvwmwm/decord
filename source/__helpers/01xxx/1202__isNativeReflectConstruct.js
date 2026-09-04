@@ -252,7 +252,7 @@ class FeedbackWidget {
                 fileName = undefined;
                 uri = undefined;
                 if (uri._hasScreenshot()) {
-                  debug.setState({ filename: "Array", attachment: "HermesInternal", attachmentUri: "r" });
+                  debug.setState({ filename: "ip", attachment: "isArray", attachmentUri: "isArray" });
                 } else {
                   num2 = debug.props.imagePicker;
                   if (num2) {
@@ -489,7 +489,7 @@ class FeedbackWidget {
       lib._savedState = Object.assign({}, lib.state);
     };
     tmp4Result._clearFormState = () => {
-      closure_0._savedState = { name: "", email: "", description: "", filename: "ip", attachment: "isArray", attachmentUri: "isArray" };
+      closure_0._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "ip", attachmentUri: "isArray" };
     };
     tmp4Result._hasScreenshot = () => undefined !== lib.state.filename && undefined !== lib.state.attachment && undefined !== lib.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -822,12 +822,12 @@ let items = [
 obj = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "ip", attachment: "isArray", attachmentUri: "isArray" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "ip", attachmentUri: "isArray" };
   }
 };
 const items1 = [obj];
 const importDefaultResultResult = importDefaultResult(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = require("module_1198").defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "ip", attachment: "isArray", attachmentUri: "isArray" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "ip", attachmentUri: "isArray" };
 
 export const FeedbackWidget = importDefaultResultResult;

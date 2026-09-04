@@ -1,9 +1,9 @@
-// Module ID: 6178
-// Function ID: 6179
+// Module ID: 7262
+// Function ID: 7263
 // Name: map
-// Dependencies: [673, 706, 527, 695, 6179, 2]
+// Dependencies: [673, 706, 527, 695, 7263, 2]
 
-// Module 6178 (map)
+// Module 7262 (map)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 527 */;
 import dispatcherDefault from "dispatcher" /* 706 */;

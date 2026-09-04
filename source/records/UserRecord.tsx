@@ -1,12 +1,12 @@
 // Module ID: 1934
 // Function ID: 1935
 // Name: createdAt
-// Dependencies: [1935, 673, 1923, 1936, 1937, 1941, 1942, 1927, 1943, 1944, 503, 11, 1430, 1398, 1945, 1929, 1897, 1946, 2]
+// Dependencies: [1935, 673, 1923, 1936, 1937, 1941, 1942, 1927, 1943, 1944, 503, 11, 1431, 1399, 1945, 1929, 1897, 1946, 2]
 
 // Module 1934 (createdAt)
-import hasFlag from "hasFlag" /* 1398 */;
-import getAvatarURL from "getAvatarURL" /* 1430 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import hasFlag from "hasFlag" /* 1399 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
 import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1897 */;
 import toJSDefault from "toJS" /* 1935 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;

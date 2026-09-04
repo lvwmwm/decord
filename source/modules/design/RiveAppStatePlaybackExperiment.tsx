@@ -1,12 +1,12 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15863
+// Function ID: 15864
 // Name: apexExperiment
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 15777 (apexExperiment)
+// Module 15863 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,14 +1,14 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11419
+// Function ID: 11420
 // Name: set
-// Dependencies: [5, 19, 7459, 9020, 673, 21, 511, 9016, 7454, 7457, 11312, 11315, 11316, 11317, 7485, 7484, 1234, 7432, 9018, 11137, 9021, 9017, 7465, 7474, 7490, 7357, 7362, 11310, 586, 4946, 2]
+// Dependencies: [5, 19, 7636, 11128, 673, 21, 511, 11124, 7632, 5411, 11420, 11423, 11424, 11425, 7662, 7661, 1234, 7610, 11126, 11208, 11129, 11125, 7642, 7651, 7667, 7535, 7540, 11418, 586, 4953, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 11311 (set)
+// Module 11419 (set)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "initializeState" /* 7459 */;
-import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9020 */;
+import closure_5 from "initializeState" /* 7636 */;
+import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 11128 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 2 */;
@@ -29,7 +29,7 @@ class QuestContentImpression {
       const questPlacementFromQuestContent = obj.getQuestPlacementFromQuestContent(obj.questContent);
       let result = null != questPlacementFromQuestContent;
       if (result) {
-        result = obj(closure_1_2[8]).isBillableQuestContent(obj.questContent);
+        result = obj(closure_1_2[8]).isBillableQuestContent(tmp3.questContent, tmp3.entity.adCreativeType);
         const tmpResult = obj(closure_1_2[8]);
       }
       if (result) {
@@ -46,7 +46,7 @@ class QuestContentImpression {
         result = !closure_1_11.has("" + adCreativeId + "_" + questPlacementFromQuestContent);
       }
       if (result) {
-        result = obj(closure_1_2[8]).isBillableQuestContent(obj.questContent);
+        result = obj(closure_1_2[8]).isBillableQuestContent(tmp3.questContent, tmp3.entity.adCreativeType);
         const tmpResult = obj(closure_1_2[8]);
       }
       return result;
@@ -116,11 +116,11 @@ class QuestContentImpression {
               closure_0 = undefined;
               obj3 = undefined;
               obj4 = undefined;
-              const obj10 = closure_1_0(7485);
+              const obj10 = closure_1_0(7662);
               obj4 = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = obj10.getAdUser(closure_1_0(7484).getQuestContentName(closure_1_0.questContent));
+              obj1[0] = obj10.getAdUser(closure_1_0(7661).getQuestContentName(closure_1_0.questContent));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -158,8 +158,8 @@ class QuestContentImpression {
               }
             }
             obj4[4] = advertisingId1;
-            let merged = Object.assign(closure_1_1(7432)());
-            obj2 = closure_1_0(9018);
+            let merged = Object.assign(closure_1_1(7610)());
+            obj2 = closure_1_0(11126);
             let merged1 = Object.assign(obj2.getBrandSafetyContext(closure_1_0.questContent));
             const adContentIds = closure_1_0.entity.adContentIds;
             const item = adContentIds.forEach((adCreativeId) => {
@@ -184,7 +184,7 @@ class QuestContentImpression {
                     tmpResult.markAdContentSeen(tmp(tmp2[9]).AdCreativeType.QUEST, items);
                   }
                 }
-                const result = tmp(tmp2[8]).isBillableQuestContent(obj1.questContent);
+                const result = tmp(tmp2[8]).isBillableQuestContent(obj1.questContent, obj1.entity.adCreativeType);
                 const AdUserActionType = tmp(tmp2[20]).AdUserActionType;
                 obj = { type: null, surfaceId: null, sourceQuestContent: null, impressionId: null, triggeredByStatusChange: null, minViewTimeSeconds: null, minViewportPercentage: null, isQuestEnrollmentBlocked: null, shouldExtendSession: null, adUser: null, questContentPosition: null, questContentRowIndex: null, trackGuildAndChannelMetadata: null };
                 obj[0] = result ? AdUserActionType.VIEW_EXTERNAL_PAID_AD_PLACEMENT_IMPRESSION : AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION;
@@ -552,7 +552,7 @@ class QuestContentImpression {
     obj.migrateQuestContentLoadedToCaptureAdUserAction = obj2.shouldMigrateToAdAnalyticsInterface(require("apexExperiment").AdAnalyticsInterfaceExperimentStep.STEP_1_LOADED, "quest_content_impression");
     obj3 = require("apexExperiment");
     obj4 = require("getQuestDeliveryDataForPlacement");
-    result = obj4.isBillableQuestContent(questContent);
+    result = obj4.isBillableQuestContent(questContent, adCreativeType);
     AdAnalyticsInterfaceExperimentStep = require("apexExperiment").AdAnalyticsInterfaceExperimentStep;
     obj.migrateQuestContentViewedToCaptureAdUserAction = obj3.shouldMigrateToAdAnalyticsInterface(result ? AdAnalyticsInterfaceExperimentStep.STEP_5_VIEWED_IMPRESSION : AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_content_impression");
     if (adCreativeType === require("AdCreativeType").AdCreativeType.QUEST) {

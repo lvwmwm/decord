@@ -1,9 +1,9 @@
-// Module ID: 5391
-// Function ID: 5392
+// Module ID: 5399
+// Function ID: 5400
 // Name: set
 // Dependencies: [1339, 586, 706, 2]
 
-// Module 5391 (set)
+// Module 5399 (set)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "handleConnectionClosedOrResumed" /* 1339 */;

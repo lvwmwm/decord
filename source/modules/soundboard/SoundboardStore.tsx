@@ -1,9 +1,9 @@
-// Module ID: 4966
-// Function ID: 4967
+// Module ID: 4973
+// Function ID: 4974
 // Name: handleSoundCreateOrUpdate
-// Dependencies: [32, 1339, 1921, 4967, 4968, 673, 682, 4566, 4074, 12, 695, 4969, 4166, 11, 586, 706, 2]
+// Dependencies: [32, 1339, 1921, 4974, 4975, 673, 682, 4569, 4074, 12, 695, 4976, 4166, 11, 586, 706, 2]
 
-// Module 4966 (handleSoundCreateOrUpdate)
+// Module 4973 (handleSoundCreateOrUpdate)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 586 */;
@@ -11,13 +11,13 @@ import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import hooksDefault from "hooks" /* 4074 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4566 */;
-import perceptualToAmplitude from "perceptualToAmplitude" /* 4969 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4569 */;
+import perceptualToAmplitude from "perceptualToAmplitude" /* 4976 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "initialize" /* 4967 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4968 */;
+import closure_6 from "initialize" /* 4974 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 import closure_20 from "module_2026" /* 2026 */;

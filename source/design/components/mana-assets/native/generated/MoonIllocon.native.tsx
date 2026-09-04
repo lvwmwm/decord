@@ -1,14 +1,14 @@
-// Module ID: 6811
-// Function ID: 6812
+// Module ID: 6192
+// Function ID: 6193
 // Name: MoonIllocon
-// Dependencies: [21, 5502, 6812, 2]
+// Dependencies: [21, 5542, 6193, 2]
 // Exports: MoonIllocon
 
-// Module 6811 (MoonIllocon)
+// Module 6192 (MoonIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6812 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6193 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");

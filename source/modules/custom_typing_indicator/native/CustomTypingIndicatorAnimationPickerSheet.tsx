@@ -1,18 +1,18 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15283
+// Function ID: 15284
 // Name: MotionOptionButton
-// Dependencies: [32, 19, 17, 21, 4478, 709, 5610, 4474, 1929, 1233, 3502, 5998, 11782, 4927, 2]
+// Dependencies: [32, 19, 17, 21, 4481, 709, 5562, 4477, 1929, 1233, 3502, 7138, 11913, 4934, 2]
 // Exports: default
 
-// Module 15201 (MotionOptionButton)
+// Module 15283 (MotionOptionButton)
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import PressableCard from "PressableCard" /* 5610 */;
+import Text from "Text" /* 4477 */;
+import PressableCard from "PressableCard" /* 5562 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function MotionOptionButton(isSelected) {
@@ -79,7 +79,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   const obj4 = { config: null, size: 54 };
   const obj5 = { emojis, animation: first, typingSuggestion: onChange(1929).TypingSuggestion.UNSPECIFIED };
   obj4[0] = obj5;
-  obj3[1] = callback2(first(11782), obj4);
+  obj3[1] = callback2(first(11913), obj4);
   const items1 = [callback2(View, obj3), ];
   const obj6 = { spacing: 8, children: null };
   const items2 = [items.slice(0, 2), items.slice(2, 4)];
@@ -99,7 +99,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
       }, label.label);
     })
   }, arg1));
-  items1[1] = callback2(onChange(4927).Stack, obj6);
+  items1[1] = callback2(onChange(4934).Stack, obj6);
   obj2[2] = items1;
-  return callback3(onChange(5998).ActionSheet, obj2);
+  return callback3(onChange(7138).ActionSheet, obj2);
 };

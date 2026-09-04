@@ -1,21 +1,21 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15383
+// Function ID: 15384
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1921, 4145, 7896, 673, 21, 4478, 709, 1498, 644, 4139, 4474, 1233, 5610, 1296, 10416, 7774, 11292, 14578, 2]
+// Dependencies: [19, 17, 1921, 4145, 7906, 673, 21, 4481, 709, 1498, 644, 4139, 4477, 1233, 5562, 1296, 10327, 6930, 11400, 14614, 2]
 // Exports: default
 
-// Module 15301 (VideoUploadQualityNitroUpsell)
+// Module 15383 (VideoUploadQualityNitroUpsell)
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 10416 */;
-import _modDef14578 from "module_14578" /* 14578 */;
+import registerAssetDefault from "registerAsset" /* 10327 */;
+import _modDef14614 from "module_14614" /* 14614 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import closure_6 from "reset" /* 4145 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7896 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
 import { UserSettingsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 function VideoUploadQualityNitroUpsell() {
@@ -32,7 +32,7 @@ function VideoUploadQualityNitroUpsell() {
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = _require(1233).intl;
   obj[2] = intl.format(_require(1233).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-  const children = [callback(_require(4474).Text, obj), ];
+  const children = [callback(_require(4477).Text, obj), ];
   let tmp7Result = !stateFromStores;
   if (!stateFromStores) {
     obj = { style: null, children: null };
@@ -54,10 +54,10 @@ function VideoUploadQualityNitroUpsell() {
       const obj = closure_1_1(closure_1_2[17]);
     };
     obj4[2] = intl2.format(tmp(1233).t.uW1zul, obj5);
-    items2[1] = tmp7(tmp(4474).Text, obj4);
+    items2[1] = tmp7(tmp(4477).Text, obj4);
     obj2[1] = items2;
     obj1[2] = tmp5(tmp6, obj2);
-    obj[1] = tmp7(tmp(5610).Card, obj1);
+    obj[1] = tmp7(tmp(5562).Card, obj1);
     tmp7Result = tmp7(tmp6, obj);
   }
   children[1] = tmp7Result;
@@ -165,5 +165,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(_modDef14578, { node });
+  return callback(_modDef14614, { node });
 };

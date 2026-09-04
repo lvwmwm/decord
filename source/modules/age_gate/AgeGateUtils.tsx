@@ -1,21 +1,21 @@
-// Module ID: 4732
-// Function ID: 4733
+// Module ID: 4739
+// Function ID: 4740
 // Name: shouldShowAgeGateForVoiceChannel
-// Dependencies: [1429, 1386, 4733, 1908, 1921, 1218, 673, 1233, 11, 4734, 4172, 5376, 586, 8703, 1994, 6060, 6183, 2]
+// Dependencies: [1430, 1386, 4740, 1908, 1921, 1218, 673, 1233, 11, 4741, 4172, 5384, 586, 8343, 1994, 7151, 7267, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, isChannelOrGuildNSFW, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForAgeGate, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate
 
-// Module 4732 (shouldShowAgeGateForVoiceChannel)
+// Module 4739 (shouldShowAgeGateForVoiceChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 586 */;
 import result2 from "result" /* 1218 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
 import combinedDefault from "combined" /* 1994 */;
 import isFeatureAgeGated2 from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4734 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5376 */;
-import openAgeGateModal from "openAgeGateModal" /* 6060 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5384 */;
+import openAgeGateModal from "openAgeGateModal" /* 7151 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "initialize" /* 4733 */;
+import closure_5 from "initialize" /* 4740 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
@@ -29,12 +29,12 @@ function shouldShowAgeGateForVoiceChannel(channelId) {
     const currentUser = authStore.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
-      let tmpResult = tmp(4734);
+      let tmpResult = tmp(4741);
       const result1 = tmpResult.shouldShowTiggerPawtect();
       tmpResult = tmp(4172);
-      const tmp9 = tmpResult.isFeatureAgeGated(tmp(5376).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      flag = true !== currentUser.nsfwAllowed || tmpResult.isFeatureAgeGated(tmp(5376).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      const tmp10 = true !== currentUser.nsfwAllowed || tmpResult.isFeatureAgeGated(tmp(5376).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const tmp9 = tmpResult.isFeatureAgeGated(tmp(5384).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      flag = true !== currentUser.nsfwAllowed || tmpResult.isFeatureAgeGated(tmp(5384).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const tmp10 = true !== currentUser.nsfwAllowed || tmpResult.isFeatureAgeGated(tmp(5384).AgeGatedFeature.AGE_GATED_SPACES) && result1;
     }
     let tmp12 = !flag;
     if (flag) {
@@ -86,8 +86,8 @@ function isChannelContentGated(channel, arg1) {
 }
 function useIsChannelContentGated(channel) {
   const _require = channel;
-  const shouldShowTiggerPawtect = _require(4734).useShouldShowTiggerPawtect();
-  const obj = _require(4734);
+  const shouldShowTiggerPawtect = _require(4741).useShouldShowTiggerPawtect();
+  const obj = _require(4741);
   items = [closure_5];
   let stateFromStores = _require(586).useStateFromStores(items, () => {
     let guild_id;
@@ -107,7 +107,7 @@ function useIsChannelContentGated(channel) {
     return false === nsfwAllowed;
   });
   const obj3 = _require(586);
-  let isFeatureAgeGated = _require(4172).useIsFeatureAgeGated(_require(5376).AgeGatedFeature.AGE_GATED_SPACES);
+  let isFeatureAgeGated = _require(4172).useIsFeatureAgeGated(_require(5384).AgeGatedFeature.AGE_GATED_SPACES);
   const obj4 = _require(4172);
   const items2 = [closure_6];
   const stateFromStores2 = _require(586).useStateFromStores(items2, () => {
@@ -232,7 +232,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
       obj[1] = stringResult1;
       const intl7 = tmp(1233).intl;
       obj[2] = intl7.string(tmp(1233).t.FDSSia);
-      obj[3] = tmp(8703).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+      obj[3] = tmp(8343).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     }
     const format = intl6.format;
     let string2 = tmp(1233).t;
@@ -245,7 +245,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     const intl8 = tmp(1233).intl;
     string2 = intl8.string;
     obj[2] = string2(tmp(1233).t.Zt4Mf4);
-    NSFW_CHANNEL_AGE_VERIFY = tmp(8703).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+    NSFW_CHANNEL_AGE_VERIFY = tmp(8343).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     obj[3] = NSFW_CHANNEL_AGE_VERIFY;
   } else if (stateFromStores) {
     const intl4 = tmp(1233).intl;
@@ -256,7 +256,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     obj = { helpURL: null };
     obj[0] = combinedDefault.getArticleURL(constants.NSFW_AGE_GATING);
     obj[1] = intl5.format(tmp3 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"], obj);
-    NSFW_CHANNEL_UNDERAGE = tmp(8703).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
+    NSFW_CHANNEL_UNDERAGE = tmp(8343).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
     obj[3] = NSFW_CHANNEL_UNDERAGE;
     const obj7 = combinedDefault;
     const tmp9 = tmp3 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"];
@@ -267,7 +267,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     obj[1] = intl2.string(tmp3 ? t2.ZtuRts : t2.E4Cd5I);
     const intl3 = tmp(1233).intl;
     obj[2] = intl3.string(tmp(1233).t.wVq7uo);
-    obj[3] = tmp(8703).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
+    obj[3] = tmp(8343).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
     return obj;
   }
 };

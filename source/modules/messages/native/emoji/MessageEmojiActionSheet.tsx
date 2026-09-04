@@ -1,17 +1,17 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 10258
+// Function ID: 10259
 // Name: MessageStandardEmojiActionSheet
-// Dependencies: [19, 17, 673, 21, 4478, 1234, 511, 5631, 695, 9190, 9196, 9197, 2]
+// Dependencies: [19, 17, 673, 21, 4481, 1234, 511, 7090, 695, 10259, 10266, 10267, 2]
 // Exports: default
 
-// Module 9189 (MessageStandardEmojiActionSheet)
+// Module 10258 (MessageStandardEmojiActionSheet)
 import noopAll from "noop" /* 19 */;
-import EmojiDefault from "Emoji" /* 9190 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 9197 */;
+import EmojiDefault from "Emoji" /* 10259 */;
+import CustomEmojiContentDefault from "CustomEmojiContent" /* 10267 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 const require = arg1;
@@ -31,12 +31,12 @@ function MessageStandardEmojiActionSheet(emojiNode) {
   };
   obj = { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) };
   obj[2] = <View style={callback().contentWrapper}>{jsx(EmojiDefault, { emojiNode: arg0.emojiNode, nonce: v4Result })}</View>;
-  return jsx(_require(5631).BottomSheet, { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) });
+  return jsx(_require(7090).BottomSheet, { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) });
 }
 function MessageCustomEmojiActionSheet(emojiNode) {
   emojiNode = emojiNode.emojiNode;
   let _require;
-  let obj = _require(9196);
+  let obj = _require(10266);
   obj = { emojiId: emojiNode.id };
   const emojiAndSource = obj.useEmojiAndSource(obj);
   if (emojiAndSource.isFetching) {
@@ -62,7 +62,7 @@ function MessageCustomEmojiActionSheet(emojiNode) {
     obj2[6] = v4Result;
     obj1[1] = jsx(CustomEmojiContentDefault, { emojiNode: null, sourceType: null, expressionSourceApplication: null, expressionSourceGuild: null, customEmojiFromJoinedGuild: null, hasJoinedEmojiSourceGuild: null, nonce: null });
     obj[2] = <View style={null}>{null}</View>;
-    return jsx(tmp2(5631).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
+    return jsx(tmp2(7090).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
   }
   tmp = callback();
 }

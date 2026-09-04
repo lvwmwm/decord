@@ -1,14 +1,14 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7930
+// Function ID: 7931
 // Name: NativeLottieView
-// Dependencies: [19, 17, 21, 1234, 7921, 113, 2]
+// Dependencies: [19, 17, 21, 1234, 7931, 113, 2]
 // Exports: default
 
-// Module 7920 (NativeLottieView)
+// Module 7930 (NativeLottieView)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 7921 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 7931 */;
 import noop from "noop" /* 19 */;
 import closure_2 from "noop" /* 19 */;
 import set from "set" /* 1234 */;

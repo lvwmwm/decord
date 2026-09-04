@@ -1,10 +1,10 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16174
+// Function ID: 16175
 // Name: useCanSeeNUFChannelsForGuild
-// Dependencies: [1991, 1908, 1921, 673, 4108, 586, 4322, 1398, 2]
+// Dependencies: [1991, 1908, 1921, 673, 4108, 586, 4325, 1399, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 16088 (useCanSeeNUFChannelsForGuild)
+// Module 16174 (useCanSeeNUFChannelsForGuild)
 import closure_2 from "trackCommunicationDisabled" /* 1991 */;
 import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "mergeGuildAvatar" /* 1921 */;

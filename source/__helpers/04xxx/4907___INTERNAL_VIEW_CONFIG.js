@@ -1,18 +1,14 @@
 // Module ID: 4907
 // Function ID: 4908
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [17, 106, 65]
+// Dependencies: [17, 65]
 
 // Module 4907 (__INTERNAL_VIEW_CONFIG)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
 const codegenNativeComponent = get_ActivityIndicator.codegenNativeComponent;
-let obj = { uiViewClassName: "RNSTabsBottomAccessory", directEventTypes: { topEnvironmentChange: { registrationName: "onEnvironmentChange" } }, validAttributes: null };
-obj = {};
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onEnvironmentChange: true }));
-obj[2] = obj;
+const obj = { uiViewClassName: "RNSFullWindowOverlay", validAttributes: { accessibilityContainerViewIsModal: true } };
 
-export default setRuntimeConfigProvider.get("RNSTabsBottomAccessory", () => obj);
+export default setRuntimeConfigProvider.get("RNSFullWindowOverlay", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

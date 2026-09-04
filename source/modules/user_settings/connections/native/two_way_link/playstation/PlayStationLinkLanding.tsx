@@ -1,16 +1,16 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9185
+// Function ID: 9186
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 9347, 673, 21, 4478, 1233, 5055, 9217, 1498, 1994, 9349, 9322, 2]
+// Dependencies: [19, 9184, 673, 21, 4481, 1233, 5062, 9152, 1498, 1994, 9186, 9154, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 9348 (PlayStationLinkLanding)
+// Module 9185 (PlayStationLinkLanding)
 import combinedDefault from "combined" /* 1994 */;
 import closure_3 from "noop" /* 19 */;
-import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9347 */;
+import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9184 */;
 import { HelpdeskArticles } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ image: { width: 230, height: 160 } });
@@ -31,19 +31,19 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
     obj[0] = intl.string(navigation(1233).t["+eJP7o"]);
     const intl2 = navigation(1233).intl;
     obj[1] = intl2.string(navigation(1233).t["+0VIUh"]);
-    obj[2] = navigation(5055).VoiceNormalIcon;
+    obj[2] = navigation(5062).VoiceNormalIcon;
     const items = [obj, ];
     obj = { label: null, icon: null };
     const intl3 = navigation(1233).intl;
     obj[0] = intl3.string(navigation(1233).t.ZH4QFa);
-    obj[1] = navigation(9217).GameControllerIcon;
+    obj[1] = navigation(9152).GameControllerIcon;
     items[1] = obj;
     return items;
   }, []);
   callback = React.useCallback(() => {
     navigation.push(closure_1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(9349) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(9186) }), []);
   obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1233).intl;
   obj[3] = intl2.string(navigation(1233).t.xAWHOy);
@@ -52,5 +52,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj[5] = intl.format(navigation(1233).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(9322).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(9154).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

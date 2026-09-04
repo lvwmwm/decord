@@ -1,20 +1,20 @@
-// Module ID: 9980
-// Function ID: 9981
+// Module ID: 9792
+// Function ID: 9793
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 1908, 1921, 673, 21, 4478, 709, 6013, 586, 1233, 706, 4193, 5998, 5630, 9981, 4474, 2]
+// Dependencies: [19, 17, 1908, 1921, 673, 21, 4481, 709, 5539, 586, 1233, 706, 4193, 7138, 7089, 9793, 4477, 2]
 // Exports: default
 
-// Module 9980 (InstantInviteQRCodeActionSheet)
+// Module 9792 (InstantInviteQRCodeActionSheet)
 import ThemesDefault from "Themes" /* 709 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
-import frozenDefault from "frozen" /* 9981 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import frozenDefault from "frozen" /* 9793 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ InstantInviteSources: error, RelationshipTypes: closure_8 } = ME);
@@ -65,7 +65,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
       if (null != store.getGuild(channel2.guild_id)) {
         const obj2 = { guild: null, size: null };
         obj2[0] = obj7.getGuild(channel2.guild_id);
-        obj2[1] = tmp6(6013).GuildIconSizes.LARGE;
+        obj2[1] = tmp6(5539).GuildIconSizes.LARGE;
         tmp13 = callback(GuildIconSizesDefault, obj2);
         const tmp16 = GuildIconSizesDefault;
       }
@@ -87,7 +87,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     const obj3 = { header: null, children: null };
     const obj4 = { title: null };
     obj4[0] = stringResult;
-    obj3[0] = callback(tmp6(5630).BottomSheetTitleHeader, obj4);
+    obj3[0] = callback(tmp6(7089).BottomSheetTitleHeader, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.container;
     const obj6 = { text: null, size: 240, style: null, accessibilityLabel: null };
@@ -117,12 +117,12 @@ export default function InstantInviteQRCodeActionSheet(location) {
     if (tmp19Result) {
       const obj10 = { variant: "text-md/normal", children: null };
       obj10[1] = tmp12.visible;
-      tmp19Result = tmp19(tmp6(4474).Text, obj10);
+      tmp19Result = tmp19(tmp6(4477).Text, obj10);
     }
     items3[1] = tmp19Result;
     obj5[1] = items3;
     obj3[1] = closure_10(View, obj5);
-    return callback(tmp6(5998).ActionSheet, obj3);
+    return callback(tmp6(7138).ActionSheet, obj3);
   }
   tmp12 = null;
   if (_location === constants.ADD_FRIENDS_MODAL) {

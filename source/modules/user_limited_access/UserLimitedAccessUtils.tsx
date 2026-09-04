@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 8975
+// Function ID: 8976
 // Name: isLimitedAccessErrorCode
 // Dependencies: [673, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 9080 (isLimitedAccessErrorCode)
+// Module 8975 (isLimitedAccessErrorCode)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

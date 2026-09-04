@@ -1,21 +1,21 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15955
+// Function ID: 15956
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4569, 4493, 4130, 1980, 4702, 1921, 673, 21, 4478, 709, 586, 15870, 8924, 1234, 4491, 4489, 10876, 5077, 9442, 8539, 15871, 4171, 8110, 15872, 8119, 15873, 2]
+// Dependencies: [19, 17, 4572, 4496, 4130, 1980, 4709, 1921, 673, 21, 4481, 709, 586, 15956, 8149, 1234, 4494, 4492, 10844, 5084, 9699, 8748, 15957, 4171, 8744, 15958, 8189, 15959, 2]
 
-// Module 15869 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15955 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4569 */;
-import closure_6 from "generateOldThreadCutoff" /* 4493 */;
+import closure_5 from "sortActivity" /* 4572 */;
+import closure_6 from "generateOldThreadCutoff" /* 4496 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4702 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
 import { ActivityTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -78,7 +78,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = store.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "Array", activities: "PX_16" };
+      obj = { status: "left", activities: "call" };
     }
     return obj;
   });

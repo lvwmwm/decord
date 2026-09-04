@@ -1,16 +1,16 @@
-// Module ID: 4476
-// Function ID: 4477
+// Module ID: 4479
+// Function ID: 4480
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 4477, 1301, 4478, 709, 586, 1362, 2]
+// Dependencies: [17, 4480, 1301, 4481, 709, 586, 1362, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 4476 (useManaTextMigrationHighlight)
+// Module 4479 (useManaTextMigrationHighlight)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
-import importDefaultResult from "getUserAgnosticState" /* 4477 */;
+import importDefaultResult from "getUserAgnosticState" /* 4480 */;
 import closure_4 from "handleThemeChange" /* 1301 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 let c3 = importDefaultResult;

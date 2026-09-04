@@ -1,9 +1,9 @@
-// Module ID: 6428
-// Function ID: 6429
+// Module ID: 5809
+// Function ID: 5810
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6428 (metadata)
+// Module 5809 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeHologramSpotIllustration-2x.png.js");

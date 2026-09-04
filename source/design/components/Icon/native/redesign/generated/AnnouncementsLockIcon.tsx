@@ -1,14 +1,14 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5054
+// Function ID: 5055
 // Name: AnnouncementsLockIcon
-// Dependencies: [19, 21, 709, 4196, 5021, 2]
+// Dependencies: [19, 21, 709, 4196, 5028, 2]
 // Exports: AnnouncementsLockIcon
 
-// Module 5047 (AnnouncementsLockIcon)
+// Module 5054 (AnnouncementsLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5021 */;
+import registerAsset from "registerAsset" /* 5028 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

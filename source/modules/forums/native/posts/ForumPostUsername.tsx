@@ -1,19 +1,19 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11937
+// Function ID: 11938
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4470, 11802, 21, 4478, 7639, 1396, 11351, 11807, 586, 7882, 1296, 4474, 2]
+// Dependencies: [19, 17, 4473, 11933, 21, 4481, 7816, 1397, 11459, 11938, 586, 7892, 1296, 4477, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11806 (ForumPostUsername)
+// Module 11937 (ForumPostUsername)
 import noopAll from "noop" /* 19 */;
-import set from "set" /* 1396 */;
-import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7639 */;
-import useChatWidthDefault from "useChatWidth" /* 11351 */;
+import set from "set" /* 1397 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7816 */;
+import useChatWidthDefault from "useChatWidth" /* 11459 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { useForumChannelStore } from "set" /* 11802 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import { useForumChannelStore } from "set" /* 11933 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function ForumPostUsername(arg0) {
@@ -24,7 +24,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === set.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = useChatWidthDefault() - tmp2(11807).GRID_HORIZONTAL_PADDING - num;
+  const diff = useChatWidthDefault() - tmp2(11938).GRID_HORIZONTAL_PADDING - num;
   let tmp2Result = tmp2(586);
   const items = [closure_4];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -33,9 +33,9 @@ function ForumPostUsername(arg0) {
       let obj = { color: null };
       obj[0] = authorColor;
     }
-    tmp2Result = tmp2(7882);
+    tmp2Result = tmp2(7892);
     const processColorStringsArray = tmp2Result.useProcessColorStringsArray(authorColors);
-    const tmp2Result1 = tmp2(7882);
+    const tmp2Result1 = tmp2(7892);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result1.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp19Result = null;
@@ -68,7 +68,7 @@ function ForumPostUsername(arg0) {
       obj4[4] = items4;
       const items5 = [authorName, suffix];
       obj4[5] = items5;
-      items3[1] = closure_7(tmp2(4474).Text, obj4);
+      items3[1] = closure_7(tmp2(4477).Text, obj4);
       obj[2] = items3;
       tmp19Result = tmp19(tmp20, obj);
     }

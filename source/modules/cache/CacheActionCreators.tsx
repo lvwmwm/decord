@@ -1,14 +1,14 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15494
+// Function ID: 15495
 // Name: _writeCaches
-// Dependencies: [5, 1386, 7231, 706, 2]
+// Dependencies: [5, 1386, 7409, 706, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 15412 (_writeCaches)
+// Module 15494 (_writeCaches)
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { ChannelLoader } from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "handleClearCaches" /* 7231 */;
+import closure_4 from "handleClearCaches" /* 7409 */;
 
 function _writeCaches() {
   const self = this;

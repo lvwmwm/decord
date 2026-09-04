@@ -1,13 +1,13 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8744
+// Function ID: 8745
 // Name: useCutoutBackgroundColor
-// Dependencies: [19, 21, 686, 8111, 709, 4197, 2]
+// Dependencies: [19, 21, 686, 8745, 709, 4197, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 8110 (useCutoutBackgroundColor)
+// Module 8744 (useCutoutBackgroundColor)
 import nDefault from "n" /* 686 */;
 import ThemesDefault from "Themes" /* 709 */;
-import flattenColorOverOpaqueBackground from "flattenColorOverOpaqueBackground" /* 8111 */;
+import flattenColorOverOpaqueBackground from "flattenColorOverOpaqueBackground" /* 8745 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

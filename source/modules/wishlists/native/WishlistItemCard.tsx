@@ -1,14 +1,14 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 10964
+// Function ID: 10965
 // Name: WishlistItemCard
-// Dependencies: [19, 673, 21, 11002, 11007, 11008, 2]
+// Dependencies: [19, 673, 21, 10965, 10967, 10968, 2]
 // Exports: default
 
-// Module 11001 (WishlistItemCard)
+// Module 10964 (WishlistItemCard)
 import noopAll from "noop" /* 19 */;
-import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 11002 */;
-import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 11007 */;
-import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 11008 */;
+import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 10965 */;
+import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 10967 */;
+import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 10968 */;
 import { SKUProductLines } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 

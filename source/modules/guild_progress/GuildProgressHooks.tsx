@@ -1,19 +1,19 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12404
+// Function ID: 12405
 // Name: usePermissions
-// Dependencies: [19, 1215, 1386, 1981, 4398, 1908, 12273, 4736, 4120, 673, 586, 9769, 11, 12, 6126, 2]
+// Dependencies: [19, 1215, 1386, 1981, 4401, 1908, 12405, 4743, 4120, 673, 586, 9703, 11, 12, 7210, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 12272 (usePermissions)
+// Module 12404 (usePermissions)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import comparator from "comparator" /* 1981 */;
 import closure_8 from "comparator" /* 1981 */;
-import closure_9 from "handleInviteData" /* 4398 */;
+import closure_9 from "handleInviteData" /* 4401 */;
 import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "handlePopAllLayers" /* 12273 */;
-import closure_12 from "reinjectEphemerals" /* 4736 */;
+import closure_11 from "handlePopAllLayers" /* 12405 */;
+import closure_12 from "reinjectEphemerals" /* 4743 */;
 import closure_13 from "getUncachedChannelPermissions" /* 4120 */;
 import ME from "ME" /* 673 */;
 

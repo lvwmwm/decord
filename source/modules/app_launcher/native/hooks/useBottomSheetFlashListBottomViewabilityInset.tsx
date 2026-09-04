@@ -1,10 +1,10 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 12030
+// Function ID: 12031
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1492, 9067, 11217, 12, 4217, 2]
+// Dependencies: [19, 1492, 11147, 11288, 12, 4218, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11899 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 12030 (useBottomSheetFlashListBottomViewabilityInset)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -14,13 +14,13 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
   let obj = bottomVisibilityInsetRef;
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(9067).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(11147).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = obj.useRef(null);
-  const diff = flashListRef(1492)().height - flashListRef(11217)().maximum;
+  const diff = flashListRef(1492)().height - flashListRef(11288)().maximum;
   dependencyMap = diff;
   bottomVisibilityInsetRef = obj.useRef(9999);
   const memo = obj.useMemo(() => flashListRef(diff[4]).debounce((current) => {
@@ -48,10 +48,10 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
   const fn2 = function s(arg0) {
     bottomSheetPosition(diff[5]).runOnJS(memo)(arg0 - closure_2);
   };
-  obj = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: tmp4(4217).runOnJS, handleBottomViewabilityInsetDebounced: memo };
+  obj = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: tmp4(4218).runOnJS, handleBottomViewabilityInsetDebounced: memo };
   fn2.__closure = obj;
   fn2.__workletHash = 6025307858098;
   fn2.__initData = closure_5;
-  const animatedReaction = bottomSheetPosition(4217).useAnimatedReaction(fn, fn2);
+  const animatedReaction = bottomSheetPosition(4218).useAnimatedReaction(fn, fn2);
   return { flashListRef, bottomVisibilityInsetRef };
 };

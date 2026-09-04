@@ -1,18 +1,18 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 9061
+// Function ID: 9062
 // Name: computeCallVerification
-// Dependencies: [1215, 4554, 4568, 9848, 9849, 673, 9865, 4544, 4579, 586, 706, 2]
+// Dependencies: [1215, 4557, 4571, 9062, 9063, 673, 9079, 4547, 4582, 586, 706, 2]
 
-// Module 9847 (computeCallVerification)
+// Module 9061 (computeCallVerification)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
-import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9865 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
+import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9079 */;
 import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "createRTCConnection" /* 4554 */;
-import closure_4 from "initialize" /* 4568 */;
-import closure_5 from "map" /* 9848 */;
-import closure_6 from "initialize" /* 9849 */;
+import closure_3 from "createRTCConnection" /* 4557 */;
+import closure_4 from "initialize" /* 4571 */;
+import closure_5 from "map" /* 9062 */;
+import closure_6 from "initialize" /* 9063 */;
 import { RTCConnectionStates } from "ME" /* 673 */;
 
 require = arg1;
@@ -127,7 +127,7 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(dispatcherDefaul
           tmp6 = computeCallVerification();
         }
         return tmp6;
-      } else if (tmp10(4579).MediaEngineContextTypes.DEFAULT === context) {
+      } else if (tmp10(4582).MediaEngineContextTypes.DEFAULT === context) {
         map.clear();
         map1.clear();
         c10 = false;

@@ -1,14 +1,14 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 16052
+// Function ID: 16053
 // Name: VOICE_USER_SUMMARY_HEIGHT
-// Dependencies: [19, 17, 21, 1296, 4478, 7628, 7627, 5051, 5055, 2]
+// Dependencies: [19, 17, 21, 1296, 4481, 7805, 7804, 5058, 5062, 2]
 
-// Module 15966 (VOICE_USER_SUMMARY_HEIGHT)
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7628 */;
+// Module 16052 (VOICE_USER_SUMMARY_HEIGHT)
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7805 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -23,13 +23,13 @@ const memoResult = importAllResult.memo((guildId) => {
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(7627);
+  let obj = guildId(7804);
   obj = { style: null, children: null };
   const items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   obj[0] = items;
   if (renderIcon) {
     if (stageIcon) {
-      let VoiceNormalIcon = tmp4(5051).StageIcon;
+      let VoiceNormalIcon = tmp4(5058).StageIcon;
     }
     obj = { size: "sm", color: "channel-icon", style: null };
     obj[2] = tmp.redesignChannelIcon;
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo((guildId) => {
     obj[1] = items1;
     return tmp5(tmp6, obj);
   }
-  VoiceNormalIcon = tmp4(5055).VoiceNormalIcon;
+  VoiceNormalIcon = tmp4(5062).VoiceNormalIcon;
 });
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
 

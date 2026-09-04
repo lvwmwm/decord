@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 9739
+// Function ID: 9740
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 9926, 9927, 4376, 2]
+// Dependencies: [5, 32, 19, 9740, 9741, 4379, 2]
 // Exports: default
 
-// Module 9925 (useStartEvent)
+// Module 9739 (useStartEvent)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -91,13 +91,13 @@ export default function useStartEvent() {
                 c7 = 3;
                 c8 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback2(9926).preStartEventActions(callback, permissionOverwrites);
+                obj2[0] = callback2(9740).preStartEventActions(callback, permissionOverwrites);
                 return obj2;
               }
             } else {
               if (2 === tmp7) {
                 c6 = 0;
-                aPIError = new callback(4376).APIError(closure_5);
+                aPIError = new callback(4379).APIError(closure_5);
                 callback2(aPIError);
                 callback(false);
                 callback(false);
@@ -113,7 +113,7 @@ export default function useStartEvent() {
                   obj3[0] = arg1;
                   return obj3;
                 } else {
-                  let obj7 = callback2(9926);
+                  let obj7 = callback2(9740);
                   c7 = 4;
                   c8 = 1;
                   let obj4 = { value: null, done: false };
@@ -131,7 +131,7 @@ export default function useStartEvent() {
                   obj5[0] = arg1;
                   return obj5;
                 } else {
-                  obj4 = callback(9927);
+                  obj4 = callback(9741);
                   c7 = 5;
                   c8 = 1;
                   const obj6 = { value: null, done: false };
@@ -149,7 +149,7 @@ export default function useStartEvent() {
                   obj7[0] = arg1;
                   return obj7;
                 } else {
-                  obj1 = callback(9927);
+                  obj1 = callback(9741);
                   c7 = 6;
                   c8 = 1;
                   const obj8 = { value: null, done: false };

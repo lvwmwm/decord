@@ -1,11 +1,11 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 11117
+// Function ID: 11118
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7376, 586, 7389, 2]
+// Dependencies: [7554, 586, 7567, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 8985 (useTieredTenureBadgeForUser)
-import closure_2 from "createUserWidgetFromServer" /* 7376 */;
+// Module 11117 (useTieredTenureBadgeForUser)
+import closure_2 from "createUserWidgetFromServer" /* 7554 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 11364
+// Function ID: 11365
 // Name: redeemGiftCode
-// Dependencies: [5, 673, 7172, 8497, 706, 527, 695, 4376, 4724, 8502, 2008, 2]
+// Dependencies: [5, 673, 7351, 11365, 706, 527, 695, 4379, 4731, 11370, 2008, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 8496 (redeemGiftCode)
+// Module 11364 (redeemGiftCode)
 import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4724 from "module_4724" /* 4724 */;
+import _modDef4731 from "module_4731" /* 4731 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 673 */;
 
@@ -87,7 +87,7 @@ function _redeemGiftCode() {
               return obj1;
             } else {
               if (obj18.getIsPaymentsBlocked()) {
-                options(8497)();
+                options(11365)();
                 paymentSource = 3;
                 return { value: "HermesInternal", done: null };
               } else {
@@ -125,12 +125,12 @@ function _redeemGiftCode() {
                 obj5[0] = HTTP.post(obj3);
                 return obj5;
               }
-              obj18 = callback(7172);
+              obj18 = callback(7351);
             }
           } else if (2 === tmp7) {
             channelId = 0;
             closure_10 = c3;
-            billingError = new callback(4376).BillingError(closure_10);
+            billingError = new callback(4379).BillingError(closure_10);
             obj3 = options(706);
             obj6 = { type: "GIFT_CODE_REDEEM_FAILURE", code: null, error: null };
             obj6[1] = callback;
@@ -194,9 +194,9 @@ function _redeemGiftCode() {
   return applyArgumentsResult;
 }
 function openGiftCodeRedeemModal(code) {
-  let obj = _modDef4724;
+  let obj = _modDef4731;
   obj = { code };
-  obj.pushLazy(asyncRequireImpl(8502, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(asyncRequireImpl(11370, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: c4, AnalyticEvents: c5 } = ME);
 let closure_6 = Object.freeze({});

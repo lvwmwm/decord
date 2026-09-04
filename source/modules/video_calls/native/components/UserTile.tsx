@@ -1,29 +1,29 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9552
+// Function ID: 9553
 // Name: UserTile
-// Dependencies: [32, 19, 17, 9610, 1215, 1386, 4529, 673, 4499, 4542, 21, 4478, 709, 4326, 586, 8121, 1296, 9611, 4474, 1233, 9590, 9593, 8760, 9612, 9613, 9614, 9509, 9608, 9615, 9574, 9577, 5661, 9616, 2]
+// Dependencies: [32, 19, 17, 9553, 1215, 1386, 4532, 673, 4502, 4545, 21, 4481, 709, 4329, 586, 8179, 1296, 9554, 4477, 1233, 9533, 9536, 8544, 9555, 9556, 9557, 9407, 9551, 9558, 9518, 9521, 6595, 9559, 2]
 // Exports: default
 
-// Module 9609 (UserTile)
+// Module 9552 (UserTile)
 import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 8760 */;
-import registerAssetDefault2 from "registerAsset" /* 9612 */;
-import registerAssetDefault3 from "registerAsset" /* 9613 */;
-import registerAssetDefault4 from "registerAsset" /* 9614 */;
+import registerAssetDefault from "registerAsset" /* 8544 */;
+import registerAssetDefault2 from "registerAsset" /* 9555 */;
+import registerAssetDefault3 from "registerAsset" /* 9556 */;
+import registerAssetDefault4 from "registerAsset" /* 9557 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "recentlyUsedEmojis" /* 9610 */;
-import { clearVoiceChannelEffectForUser as closure_7 } from "recentlyUsedEmojis" /* 9610 */;
+import closure_6 from "recentlyUsedEmojis" /* 9553 */;
+import { clearVoiceChannelEffectForUser as closure_7 } from "recentlyUsedEmojis" /* 9553 */;
 import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import closure_10 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_10 from "_detectH265HardwareDecode" /* 4532 */;
 import { VideoToggleState } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 
 const require = arg1;
 let c4 = importAllResult;

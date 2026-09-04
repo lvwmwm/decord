@@ -1,10 +1,10 @@
-// Module ID: 4857
-// Function ID: 4858
+// Module ID: 4864
+// Function ID: 4865
 // Name: isDraftCommandValidForText
 // Dependencies: [2]
 // Exports: isDraftCommandValidForText
 
-// Module 4857 (isDraftCommandValidForText)
+// Module 4864 (isDraftCommandValidForText)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/application_commands/DraftCommand.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13452
+// Function ID: 13453
 // Name: BoostTier3Icon
-// Dependencies: [19, 21, 709, 4196, 13420, 2]
+// Dependencies: [19, 21, 709, 4196, 13453, 2]
 // Exports: BoostTier3Icon
 
-// Module 13419 (BoostTier3Icon)
+// Module 13452 (BoostTier3Icon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 13420 */;
+import registerAsset from "registerAsset" /* 13453 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

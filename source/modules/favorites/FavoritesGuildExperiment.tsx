@@ -1,12 +1,12 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10155
+// Function ID: 10156
 // Name: useFavoritesGuildConfig
-// Dependencies: [1467, 2]
+// Dependencies: [1468, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10335 (useFavoritesGuildConfig)
+// Module 10155 (useFavoritesGuildConfig)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { 1: null, 2: { enabled: true } };
 obj[2] = { enabled: true };

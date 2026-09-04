@@ -1,22 +1,22 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 15014
+// Function ID: 15015
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1921, 7459, 5396, 502, 21, 709, 4478, 1349, 4326, 5399, 7465, 11569, 11307, 1492, 11146, 14933, 8116, 7357, 7362, 7484, 586, 11151, 7480, 7454, 11156, 4413, 8509, 4197, 14960, 11310, 9016, 9017, 9021, 7457, 11320, 4445, 14962, 2008, 11570, 7307, 1233, 11562, 11337, 14966, 11137, 11153, 11154, 4936, 9106, 8831, 1234, 10978, 4474, 14967, 5610, 15006, 5502, 4941, 688, 14992, 4927, 7686, 14973, 11565, 15007, 4929, 15010, 8018, 9426, 14993, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 7636, 5404, 502, 21, 709, 4481, 1349, 4329, 5407, 7642, 11706, 11415, 1492, 11217, 15015, 8804, 7535, 7540, 7661, 586, 11222, 7657, 7632, 11227, 4416, 10973, 4197, 15042, 11418, 11124, 11125, 11129, 5411, 11428, 4448, 15044, 2008, 11707, 7485, 1233, 11699, 11445, 15048, 11208, 11224, 11225, 4943, 10048, 8616, 1234, 8767, 4477, 15049, 5562, 15088, 5542, 4948, 688, 15074, 4934, 5546, 15055, 11702, 15089, 4936, 15092, 8028, 10110, 15075, 2]
 
-// Module 14932 (ESTIMATED_CARD_HEIGHT)
+// Module 15014 (ESTIMATED_CARD_HEIGHT)
 import ThemesDefault from "Themes" /* 709 */;
 import _mod1349 from "module_1349" /* 1349 */;
-import hexToRgba from "hexToRgba" /* 4326 */;
+import hexToRgba from "hexToRgba" /* 4329 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "initializeState" /* 7459 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5396 */;
+import closure_9 from "initializeState" /* 7636 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
 import { NOOP } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c5 = importAllResult;
@@ -506,12 +506,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 closure_0 = tmp2;
                 closure_1_5.log("Enrolling in quest");
-                closure_1_0(11137);
+                closure_1_0(11208);
                 obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!closure_1_20) {
                   if (!closure_1_14) {
-                    let START_QUEST = tmp31(7484).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7661).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = closure_1_4;
@@ -519,7 +519,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7484).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7661).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -535,7 +535,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = closure_4;
-                  v0(14966)(obj);
+                  v0(15048)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

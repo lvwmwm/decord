@@ -1,16 +1,16 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12156
+// Function ID: 12157
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 709, 4478, 1296, 2]
+// Dependencies: [19, 17, 21, 709, 4481, 1296, 2]
 // Exports: default
 
-// Module 12020 (MessageBlock)
+// Module 12156 (MessageBlock)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 noopAll;

@@ -1,22 +1,22 @@
-// Module ID: 6082
-// Function ID: 6083
+// Module ID: 7166
+// Function ID: 7167
 // Name: getPrice
-// Dependencies: [4519, 6083, 4504, 1908, 6084, 6085, 673, 675, 502, 4756, 6086, 12, 6087, 1485, 5407, 586, 5968, 2]
+// Dependencies: [4522, 7167, 4507, 1908, 7168, 7169, 673, 675, 502, 4763, 7170, 12, 7171, 1485, 5416, 586, 7108, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 6082 (getPrice)
+// Module 7166 (getPrice)
 import applyDefault from "apply" /* 12 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4756 */;
-import keysSorter from "keysSorter" /* 5407 */;
-import RewardRequirementType from "RewardRequirementType" /* 6086 */;
-import useSKUPrice from "useSKUPrice" /* 6087 */;
-import closure_3 from "addApplication" /* 4519 */;
-import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 6083 */;
-import closure_5 from "createExecutable" /* 4504 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4763 */;
+import keysSorter from "keysSorter" /* 5416 */;
+import RewardRequirementType from "RewardRequirementType" /* 7170 */;
+import useSKUPrice from "useSKUPrice" /* 7171 */;
+import closure_3 from "addApplication" /* 4522 */;
+import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 7167 */;
+import closure_5 from "createExecutable" /* 4507 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "handleUserSettingsStoreUpdate" /* 6084 */;
-import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 6085 */;
+import closure_7 from "handleUserSettingsStoreUpdate" /* 7168 */;
+import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 7169 */;
 import ME from "ME" /* 673 */;
 import { CollectibleShopTab } from "items" /* 675 */;
 import { CurrencyCodes } from "sum" /* 502 */;
@@ -67,10 +67,8 @@ function hasSocialLayerStorefront(guild) {
       }
       applicationIdFromGuildId = first;
     }
-    const storefrontApplicationIds = obj.getStorefrontApplicationIds();
-    const tmp5 = null == applicationIdFromGuildId || !storefrontApplicationIds.has(applicationIdFromGuildId);
-    let tmp6 = !tmp5;
-    if (tmp5) {
+    let result = obj.hasStorefrontForApplicationId(applicationIdFromGuildId);
+    if (!result) {
       const features = guild.features;
       let flag;
       if (features != null) {
@@ -79,9 +77,9 @@ function hasSocialLayerStorefront(guild) {
       if (flag == null) {
         flag = false;
       }
-      tmp6 = flag;
+      result = flag;
     }
-    return tmp6;
+    return result;
   }
 }
 function transformRewardRequirementServer(type) {
@@ -454,7 +452,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj = { primaryIconAsset: "Array", primaryIconLabel: "PX_16" };
+          obj = { primaryIconAsset: "left", primaryIconLabel: "call" };
         } else {
           const obj3 = _httpGetWithCountryCodeQuery;
           const toURLSafeResult = isDiscordProxiedAssetUrlDefault.toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
@@ -467,7 +465,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "PX_16" };
+  return { primaryIconAsset: "left", primaryIconLabel: "call" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   let obj = arg1;
@@ -665,7 +663,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   const items = [closure_7];
   const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_7.getGuildIdFromApplicationId(closure_0));
   const obj = _require(586);
-  const application = _require(5968).useGetOrFetchApplication(applicationId);
+  const application = _require(7108).useGetOrFetchApplication(applicationId);
   let guildId = stateFromStores;
   if (stateFromStores == null) {
     guildId = undefined;

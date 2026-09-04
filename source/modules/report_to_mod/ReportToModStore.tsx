@@ -1,12 +1,12 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11591
+// Function ID: 11592
 // Name: handleSelectedGuildChange
-// Dependencies: [4299, 586, 706, 2]
+// Dependencies: [4302, 586, 706, 2]
 
-// Module 11470 (handleSelectedGuildChange)
+// Module 11591 (handleSelectedGuildChange)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "handleConnectionOpen" /* 4299 */;
+import closure_0 from "handleConnectionOpen" /* 4302 */;
 
 function handleSelectedGuildChange() {
   lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();

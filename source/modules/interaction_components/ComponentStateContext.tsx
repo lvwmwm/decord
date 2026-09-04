@@ -1,21 +1,21 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8043
+// Function ID: 8044
 // Name: isInteractionComponent
-// Dependencies: [32, 19, 7862, 4121, 1386, 1991, 5366, 1921, 8034, 21, 1954, 4746, 4744, 586, 7898, 6125, 8036, 8037, 706, 4946, 4740, 2]
+// Dependencies: [32, 19, 7872, 4121, 1386, 1991, 5374, 1921, 8044, 21, 1954, 4753, 4751, 586, 7908, 7209, 8046, 8047, 706, 4953, 4747, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 8033 (isInteractionComponent)
+// Module 8043 (isInteractionComponent)
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import ActionComponentState from "ActionComponentState" /* 4746 */;
+import ActionComponentState from "ActionComponentState" /* 4753 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "deleteNonce" /* 7862 */;
+import closure_5 from "deleteNonce" /* 7872 */;
 import closure_6 from "initialize" /* 4121 */;
 import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "recomputeGuild" /* 5366 */;
+import closure_9 from "recomputeGuild" /* 5374 */;
 import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "getInteractionComponentStates" /* 8034 */;
+import closure_11 from "getInteractionComponentStates" /* 8044 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -49,7 +49,7 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   let LOADING = ActionComponentState.ActionComponentState.NORMAL;
   let tmp3 = null != interaction;
   if (tmp3) {
-    tmp3 = interaction.state !== tmp(4744).InteractionState.FAILED;
+    tmp3 = interaction.state !== tmp(4751).InteractionState.FAILED;
   }
   let DISABLED = LOADING;
   if (!tmp3) {
@@ -57,16 +57,16 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = tmp(4746).ActionComponentState.DISABLED;
+      DISABLED = tmp(4753).ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
     if (interaction.data.interactionType !== tmp(1954).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = tmp(4746).ActionComponentState.DISABLED;
+        LOADING = tmp(4753).ActionComponentState.DISABLED;
       }
     }
-    LOADING = tmp(4746).ActionComponentState.LOADING;
+    LOADING = tmp(4753).ActionComponentState.LOADING;
   }
 }
 function useShouldDisableInteractiveComponents(channel_id) {
@@ -132,9 +132,9 @@ function useShouldDisableInteractiveComponents(channel_id) {
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmpResult = tmp(6125);
+  let tmpResult = tmp(7209);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
-  tmpResult = tmp(6125);
+  tmpResult = tmp(7209);
   let tmp9 = !stateFromStores;
   const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
   if (stateFromStores) {

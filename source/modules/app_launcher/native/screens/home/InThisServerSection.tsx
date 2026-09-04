@@ -1,18 +1,18 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 12042
+// Function ID: 12043
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4478, 709, 11889, 1470, 4474, 1233, 5077, 11852, 9002, 8448, 11857, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 12020, 1394, 4477, 1233, 5084, 11983, 8832, 9338, 11988, 2]
 // Exports: default
 
-// Module 11911 (AppInThisServer)
+// Module 12042 (AppInThisServer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
-import Text from "Text" /* 4474 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+import Text from "Text" /* 4477 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function AppInThisServer(onAppSelected) {
@@ -20,7 +20,7 @@ function AppInThisServer(onAppSelected) {
   let application;
   const tmp = callback2();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11852);
+  let obj = onAppSelected(11983);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -46,11 +46,11 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp.iconContainer;
-    tmp6 = callback(application(11857), obj);
+    tmp6 = callback(application(11988), obj);
   }
-  const items = [tmp6, callback(onAppSelected(4474).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
+  const items = [tmp6, callback(onAppSelected(4477).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items;
-  return closure_6(onAppSelected(9002).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8832).PressableScale, obj, application.id);
 }
 noopAll;
 ({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
@@ -110,8 +110,8 @@ export default function InThisServerSection(arg0) {
       const obj2 = { variant: "text-sm/medium", color: "text-brand", children: null };
       const intl2 = tmp11(1233).intl;
       obj2[2] = intl2.string(tmp11(1233).t["/qG8v7"]);
-      obj1[3] = tmp5(tmp11(4474).Text, obj2);
-      tmp5Result = tmp5(tmp11(5077).PressableOpacity, obj1);
+      obj1[3] = tmp5(tmp11(4477).Text, obj2);
+      tmp5Result = tmp5(tmp11(5084).PressableOpacity, obj1);
     }
     items1[1] = tmp5Result;
     obj[1] = items1;

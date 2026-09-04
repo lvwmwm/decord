@@ -1,19 +1,19 @@
 // Module ID: 10461
 // Function ID: 10462
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10450, 10449, 10457]
+// Dependencies: [41, 42, 93, 95, 98, 10361, 10455, 10368]
 
 // Module 10461 (_isNativeReflectConstruct)
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10449 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10450 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10457 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10455 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENYearMonthDayParser = require;
+const NLCasualYearMonthDayParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,28 +33,29 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})[-\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
-class ENYearMonthDayParser {
-  constructor(arg0) {
+const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class NLCasualYearMonthDayParser {
+  constructor() {
     self = this;
-    tmp = closure_2(this, ENYearMonthDayParser);
+    tmp = closure_2(this, NLCasualYearMonthDayParser);
     tmp2 = closure_4;
-    obj = closure_4(ENYearMonthDayParser);
+    obj = closure_4(NLCasualYearMonthDayParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMonthDateOrder = global;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-let items = [
+_inherits(NLCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
   {
     key: "innerPattern",
     value: function innerPattern() {
@@ -64,48 +65,27 @@ let items = [
   {
     key: "innerExtract",
     value: function innerExtract(arg0, arg1) {
-      const parsed = parseInt(arg1[1]);
-      const parsed1 = parseInt(arg1[4]);
       if (arg1[3]) {
         const _parseInt = parseInt;
-        let parsed2 = parseInt(arg1[3]);
+        let parsed = parseInt(arg1[3]);
       } else {
-        parsed2 = ENYearMonthDayParser(10449).MONTH_DICTIONARY[str.toLowerCase(str)];
+        parsed = NLCasualYearMonthDayParser(10455).MONTH_DICTIONARY[str.toLowerCase(str)];
       }
-      if (parsed2 < 1) {
-        const self = this;
-        if (this.strictMonthDateOrder) {
-          return null;
-        } else {
-          tmp6 = parsed2;
-          tmp7 = parsed1;
-          if (parsed1 >= 1) {
-            tmp6 = parsed2;
-            tmp7 = parsed1;
-            if (parsed1 <= 12) {
-              const items = [parsed1, parsed2];
-              [tmp6, tmp7] = items;
-            }
-          }
-        }
-      } else {
-        tmp6 = parsed2;
-        tmp7 = parsed1;
-      }
-      let tmp8 = null;
-      if (tmp7 >= 1) {
-        tmp8 = null;
-        if (tmp7 <= 31) {
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          const _parseInt2 = parseInt;
           const obj = { day: null, month: null, year: null };
-          obj[0] = tmp7;
-          obj[1] = tmp6;
-          obj[2] = parsed;
-          tmp8 = obj;
+          const _parseInt3 = parseInt;
+          const parsed1 = parseInt(arg1[1]);
+          obj[0] = parseInt(arg1[4]);
+          obj[1] = parsed;
+          obj[2] = parsed1;
+          return obj;
         }
       }
-      return tmp8;
+      return null;
     }
   }
 ];
 
-export default _createClass(ENYearMonthDayParser, items);
+export default _createClass(NLCasualYearMonthDayParser, items);

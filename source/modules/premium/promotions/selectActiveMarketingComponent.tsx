@@ -1,10 +1,10 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10627
+// Function ID: 10628
 // Name: comparePriorityDescending
 // Dependencies: [2]
 // Exports: default
 
-// Module 10701 (comparePriorityDescending)
+// Module 10627 (comparePriorityDescending)
 import set from "set" /* 2 */;
 
 function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {

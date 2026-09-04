@@ -1,16 +1,16 @@
-// Module ID: 7930
-// Function ID: 7931
+// Module ID: 7940
+// Function ID: 7941
 // Name: createApplicationCommandSourceSystemMessage
-// Dependencies: [673, 4954, 7931, 7881, 1233, 7883, 7885, 2]
+// Dependencies: [673, 4961, 7941, 7891, 1233, 7893, 7895, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 7930 (createApplicationCommandSourceSystemMessage)
+// Module 7940 (createApplicationCommandSourceSystemMessage)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import regExp from "regExp" /* 4954 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7883 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7885 */;
-import getApplicationCommand from "getApplicationCommand" /* 7931 */;
+import regExp from "regExp" /* 4961 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
+import getApplicationCommand from "getApplicationCommand" /* 7941 */;
 
 const MessageTypes = ME.MessageTypes;
 const COMMAND_SENTINEL = regExp.COMMAND_SENTINEL;
@@ -26,7 +26,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(7881).getMessageAuthorWithProcessedColor(message);
+      const messageAuthorWithProcessedColor = tmp(7891).getMessageAuthorWithProcessedColor(message);
       const intl = tmp(1233).intl;
       obj = { username: null, usernameOnClick: null, commandName: null, applicationName: null };
       obj[0] = messageAuthorWithProcessedColor.nick;

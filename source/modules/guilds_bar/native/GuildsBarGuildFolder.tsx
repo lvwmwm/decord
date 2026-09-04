@@ -1,27 +1,27 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16217
+// Function ID: 16218
 // Name: MiniGuildIcon
-// Dependencies: [19, 7391, 1908, 4299, 5390, 16122, 16128, 16123, 21, 4478, 709, 4197, 586, 6013, 4928, 4326, 685, 7808, 4217, 4204, 5502, 4985, 16132, 16134, 9290, 16141, 4446, 5466, 6015, 16125, 16142, 2]
+// Dependencies: [19, 7569, 1908, 4302, 5398, 16208, 16214, 16209, 21, 4481, 709, 4197, 586, 5539, 4935, 4329, 685, 7013, 4218, 4205, 5542, 4992, 16218, 16220, 12551, 16227, 4449, 5475, 5544, 16211, 16228, 2]
 
-// Module 16131 (MiniGuildIcon)
+// Module 16217 (MiniGuildIcon)
 import initialize from "initialize" /* 586 */;
 import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import registerAssetDefault from "registerAsset" /* 4985 */;
-import preloadDefault from "preload" /* 5502 */;
-import GuildIconSizes from "GuildIconSizes" /* 6013 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6013 */;
+import registerAssetDefault from "registerAsset" /* 4992 */;
+import GuildIconSizes from "GuildIconSizes" /* 5539 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
+import preloadDefault from "preload" /* 5542 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "updateGuildUnreadSentinel" /* 7391 */;
+import closure_4 from "updateGuildUnreadSentinel" /* 7569 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleConnectionOpen" /* 4299 */;
-import closure_7 from "insertUnsortedGuilds" /* 5390 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5390 */;
-import withEqualityFn from "withEqualityFn" /* 16122 */;
-import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 16128 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16123 */;
+import closure_6 from "handleConnectionOpen" /* 4302 */;
+import closure_7 from "insertUnsortedGuilds" /* 5398 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5398 */;
+import withEqualityFn from "withEqualityFn" /* 16208 */;
+import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 16214 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function MiniGuildIcon(arg0) {
@@ -231,7 +231,7 @@ const memoResult = importAllResult.memo(function FolderBGInner(color) {
   };
   obj = { withSpring: null, TRANSITION_PHYSICS: null };
   const tmp3 = callback3(token, color(4197).useToken(token2(709).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
-  obj[0] = color(4928).withSpring;
+  obj[0] = color(4935).withSpring;
   obj[1] = closure_12;
   fn.__closure = obj;
   fn.__workletHash = 2519256682742;
@@ -253,7 +253,7 @@ const memoResult = importAllResult.memo(function FolderBGInner(color) {
   const style = [tmp3.folderBackground, memo, ];
   obj = { height: token + token1 + (token + 2 * token1) * totalItems + tmp4 };
   style[2] = obj;
-  return callback2(token2(7808), { pointerEvents: "none", collapsable: false, layout, style });
+  return callback2(token2(7013), { pointerEvents: "none", collapsable: false, layout, style });
 });
 let closure_20 = { code: "function GuildsBarGuildFolderTsx2(){const{withSpring,visible,FOLDER_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,fromTop,guildItemSize}=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function(finished){if(finished&&state===TransitionStates.YEETED)runOnJS(cleanUp)();}),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};}" };
 let closure_21 = { code: "function GuildsBarGuildFolderTsx3(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED)runOnJS(cleanUp)();}" };

@@ -1,10 +1,10 @@
-// Module ID: 10301
-// Function ID: 10302
+// Module ID: 10121
+// Function ID: 10122
 // Name: serializePushNotificationLogs
 // Dependencies: [673, 592, 2]
 // Exports: default
 
-// Module 10301 (serializePushNotificationLogs)
+// Module 10121 (serializePushNotificationLogs)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
 

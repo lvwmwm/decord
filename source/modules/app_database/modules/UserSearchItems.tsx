@@ -1,14 +1,14 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7590
+// Function ID: 7591
 // Name: getAll
-// Dependencies: [5, 7413, 7414, 4130, 1921, 673, 3, 1955, 7416, 2]
+// Dependencies: [5, 7591, 7592, 4130, 1921, 673, 3, 1955, 7594, 2]
 
-// Module 7412 (getAll)
+// Module 7590 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
 import itemsDefault from "items" /* 1955 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "recountRelationshipTypes" /* 7413 */;
-import closure_5 from "recomputeAffinities" /* 7414 */;
+import closure_4 from "recountRelationshipTypes" /* 7591 */;
+import closure_5 from "recomputeAffinities" /* 7592 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import { RelationshipTypes } from "ME" /* 673 */;
@@ -132,7 +132,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user) {
       let tmp14 = set;
       let tmp15 = dependencyMap;
-      let obj5 = set(7416);
+      let obj5 = set(7594);
       let tmp16 = user;
       let names = obj5.getNames(tmp6);
       let tmp18 = nextResult;
@@ -167,7 +167,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user1) {
       let tmp22 = set;
       let tmp23 = dependencyMap;
-      let obj7 = set(7416);
+      let obj7 = set(7594);
       let tmp24 = user1;
       let names1 = obj7.getNames(tmp11);
       let tmp26 = item10033;

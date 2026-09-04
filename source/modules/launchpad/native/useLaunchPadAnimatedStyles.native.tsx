@@ -1,13 +1,13 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16887
+// Function ID: 16888
 // Name: useLaunchpadAnimatedStyles
-// Dependencies: [11288, 1234, 4478, 16801, 11834, 1627, 4217, 4928, 2]
+// Dependencies: [11396, 1234, 4481, 16612, 11965, 1627, 4218, 4935, 2]
 // Exports: default
 
-// Module 16800 (useLaunchpadAnimatedStyles)
-import LAUNCH_PAD_SPRING_CONFIG2 from "LAUNCH_PAD_SPRING_CONFIG" /* 11288 */;
+// Module 16887 (useLaunchpadAnimatedStyles)
+import LAUNCH_PAD_SPRING_CONFIG2 from "LAUNCH_PAD_SPRING_CONFIG" /* 11396 */;
 import set from "set" /* 1234 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const LAUNCH_PAD_SPRING_CONFIG = LAUNCH_PAD_SPRING_CONFIG2.LAUNCH_PAD_SPRING_CONFIG;
 let closure_4 = set.isAndroid();

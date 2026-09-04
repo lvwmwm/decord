@@ -1,9 +1,9 @@
-// Module ID: 17403
-// Function ID: 17404
+// Module ID: 17483
+// Function ID: 17484
 // Name: prototype
 // Dependencies: [1935, 1934, 2]
 
-// Module 17403 (prototype)
+// Module 17483 (prototype)
 import toJSDefault from "toJS" /* 1935 */;
 import closure_0 from "createdAt" /* 1934 */;
 

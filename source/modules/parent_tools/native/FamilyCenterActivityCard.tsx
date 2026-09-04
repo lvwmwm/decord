@@ -1,31 +1,31 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14814
+// Function ID: 14815
 // Name: FamilyCenterActivityCardPrefaceText
-// Dependencies: [19, 17, 7293, 673, 21, 4478, 709, 8792, 8791, 7348, 11720, 1233, 2368, 1296, 14734, 4474, 9085, 4724, 14735, 2008, 12543, 14736, 14737, 11717, 4445, 4193, 4322, 9381, 695, 10056, 14738, 14739, 14740, 14743, 14750, 2]
+// Dependencies: [19, 17, 7471, 673, 21, 4481, 709, 8576, 8575, 7526, 11851, 1233, 2368, 1296, 14815, 4477, 8980, 4731, 14816, 2008, 12701, 14817, 14818, 11848, 4448, 4193, 4325, 9355, 695, 9868, 14819, 14820, 14821, 14824, 14831, 2]
 // Exports: default
 
-// Module 14733 (FamilyCenterActivityCardPrefaceText)
+// Module 14814 (FamilyCenterActivityCardPrefaceText)
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Button from "Button" /* 1296 */;
 import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import Text from "Text" /* 4474 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7348 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8791 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8792 */;
-import renderDefault from "render" /* 9085 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11720 */;
-import registerAssetDefault from "registerAsset" /* 12543 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14736 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14737 */;
-import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 14740 */;
-import SpendingLimitRowDefault from "SpendingLimitRow" /* 14750 */;
+import Text from "Text" /* 4477 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7526 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8575 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8576 */;
+import renderDefault from "render" /* 8980 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11851 */;
+import registerAssetDefault from "registerAsset" /* 12701 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14817 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14818 */;
+import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 14821 */;
+import SpendingLimitRowDefault from "SpendingLimitRow" /* 14831 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 7293 */;
+import items from "items" /* 7471 */;
 import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 function FamilyCenterActivityCardPrefaceText() {
@@ -47,7 +47,7 @@ function FamilyCenterActivityCardPrefaceText() {
   if (!tmp4) {
     obj1 = { color: null, source: null, style: null };
     obj1[0] = tmp.icon.color;
-    obj1[1] = tmp2(14734);
+    obj1[1] = tmp2(14815);
     obj1[2] = tmp.icon;
     tmp12 = callback(tmp5(1296).Icon, obj1);
   }
@@ -148,9 +148,9 @@ class FamilyCenterActivityCardAccountSelect {
     items[0] = activeLinkUsers;
     closure_3 = closure_3.useMemo(() => activeLinkUsers.map((id) => {
       const obj = { label: null, value: null };
-      const name = callback(4322).getName(id);
-      const obj2 = callback(4322);
-      obj[0] = "" + name + " (" + callback(4322).getUserTag(id) + ")";
+      const name = callback(4325).getName(id);
+      const obj2 = callback(4325);
+      obj[0] = "" + name + " (" + callback(4325).getUserTag(id) + ")";
       obj[1] = id.id;
       return obj;
     }), items);
@@ -242,7 +242,7 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   let obj = { style: tmp.header, children: null };
   obj = { style: tmp.avatarContainer, children: callback(tmp4(1296).Avatar, obj) };
-  obj = { avatarStyle: tmp.avatar, user, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: user.avatarDecoration, size: 391 };
+  obj = { avatarStyle: tmp.avatar, user, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: user.avatarDecoration, size: 596.1 };
   obj[5] = NORMAL;
   const items = [callback(View, obj), ];
   const items1 = [tmp.userHeader, ];
@@ -291,13 +291,13 @@ const result = require("set").fileFinishedImporting("modules/parent_tools/native
 export default function FamilyCenterActivityCard() {
   const tmp = callback6();
   const _require = tmp;
-  let obj = _require(14737);
+  let obj = _require(14818);
   const selectedTeenUser = obj.useSelectedTeenUser();
-  _require(14738);
+  _require(14819);
   if (undefined === selectedTeenUser) {
     return null;
   } else {
-    const sortedActivityTypeConfigs = tmp2(7348).getSortedActivityTypeConfigs();
+    const sortedActivityTypeConfigs = tmp2(7526).getSortedActivityTypeConfigs();
     obj = { style: null, children: null };
     obj[0] = tmp.card;
     obj = { style: null, children: null };

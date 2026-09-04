@@ -1,14 +1,14 @@
-// Module ID: 9199
-// Function ID: 9200
+// Module ID: 10164
+// Function ID: 10165
 // Name: StarIcon
-// Dependencies: [19, 21, 709, 4196, 9200, 2]
+// Dependencies: [19, 21, 709, 4196, 10165, 2]
 // Exports: StarIcon
 
-// Module 9199 (StarIcon)
+// Module 10164 (StarIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9200 */;
+import registerAsset from "registerAsset" /* 10165 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

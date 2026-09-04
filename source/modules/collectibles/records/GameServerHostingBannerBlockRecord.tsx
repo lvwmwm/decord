@@ -1,11 +1,11 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7511
+// Function ID: 7512
 // Name: fromServer
-// Dependencies: [7328, 2]
+// Dependencies: [7506, 2]
 
-// Module 7333 (fromServer)
+// Module 7511 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7328 */;
+import ShopBlockType from "ShopBlockType" /* 7506 */;
 
 let prototype;
 prototype = function GameServerHostingBannerBlockRecord(is_dismissible) {

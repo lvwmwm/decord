@@ -1,17 +1,17 @@
-// Module ID: 6103
-// Function ID: 6104
+// Module ID: 7187
+// Function ID: 7188
 // Name: vibegrationsAppIdFromTopic
-// Dependencies: [1981, 1908, 4120, 4299, 673, 6104, 6105, 586, 2]
+// Dependencies: [1981, 1908, 4120, 4302, 673, 7188, 7189, 586, 2]
 // Exports: canAccessVibegrations, canStartVibegrationsProject, eligibleVibegrationsGuilds, findVibegrationChannelId, getVibegrationsProjectAccessSettings, isVibegrationsChannelCandidate, isVibegrationsGuildEligible, isVibegrationsProjectInGuild, resolveVibegrationsWorkspaceGuildId, useCanAccessVibegrations, useIsVibegrationsChannelCandidate, vibegrationsTopicForApp
 
-// Module 6103 (vibegrationsAppIdFromTopic)
-import frozen from "frozen" /* 6104 */;
-import isVibegrationsGuildEnabled2 from "isVibegrationsGuildEnabled" /* 6105 */;
+// Module 7187 (vibegrationsAppIdFromTopic)
+import frozen from "frozen" /* 7188 */;
+import isVibegrationsGuildEnabled2 from "isVibegrationsGuildEnabled" /* 7189 */;
 import closure_2 from "comparator" /* 1981 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1981 */;
 import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "handleConnectionOpen" /* 4299 */;
+import closure_6 from "handleConnectionOpen" /* 4302 */;
 import ME from "ME" /* 673 */;
 
 require = arg1;
@@ -110,7 +110,7 @@ export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsW
     guild = store.getGuild(guildId);
   }
   if (null != guild) {
-    let obj = _require(6105);
+    let obj = _require(7189);
     obj = { guildId: null, location: null };
     obj[0] = guild.id;
     obj[1] = arg0;
@@ -258,7 +258,7 @@ export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChann
   }
   obj = { guildId: guild_id, location: ChannelActions };
   let tmp4 = null != channel;
-  const isVibegrationsGuildEnabled = _require(6105).useIsVibegrationsGuildEnabled(obj);
+  const isVibegrationsGuildEnabled = _require(7189).useIsVibegrationsGuildEnabled(obj);
   if (tmp4) {
     tmp4 = channel.type === constants2.GUILD_TEXT;
   }

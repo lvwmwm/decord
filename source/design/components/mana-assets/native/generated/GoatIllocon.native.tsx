@@ -1,14 +1,14 @@
-// Module ID: 6741
-// Function ID: 6742
+// Module ID: 6122
+// Function ID: 6123
 // Name: GoatIllocon
-// Dependencies: [21, 5502, 6742, 2]
+// Dependencies: [21, 5542, 6123, 2]
 // Exports: GoatIllocon
 
-// Module 6741 (GoatIllocon)
+// Module 6122 (GoatIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6742 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6123 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GoatIllocon.native.tsx");

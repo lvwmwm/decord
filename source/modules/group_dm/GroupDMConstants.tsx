@@ -1,9 +1,9 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 11525
+// Function ID: 11526
 // Name: MAX_GROUP_DM_NITRO_PARTICIPANTS
 // Dependencies: [2]
 
-// Module 16589 (MAX_GROUP_DM_NITRO_PARTICIPANTS)
+// Module 11525 (MAX_GROUP_DM_NITRO_PARTICIPANTS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/group_dm/GroupDMConstants.tsx");

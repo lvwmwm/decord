@@ -1,11 +1,11 @@
-// Module ID: 7984
-// Function ID: 7985
+// Module ID: 7994
+// Function ID: 7995
 // Name: createFromServer
-// Dependencies: [1935, 7206, 2]
+// Dependencies: [1935, 7385, 2]
 
-// Module 7984 (createFromServer)
+// Module 7994 (createFromServer)
 import toJSDefault from "toJS" /* 1935 */;
-import closure_0 from "createFromServer" /* 7206 */;
+import closure_0 from "createFromServer" /* 7385 */;
 
 toJSDefault;
 let UserDiscountOfferRecord;

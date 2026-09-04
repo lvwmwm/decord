@@ -1,15 +1,15 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 8787
+// Function ID: 8788
 // Name: reset
-// Dependencies: [1302, 1339, 4517, 586, 4166, 706, 2]
+// Dependencies: [1302, 1339, 4520, 586, 4166, 706, 2]
 
-// Module 8516 (reset)
+// Module 8787 (reset)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import closure_5 from "initialize" /* 1302 */;
 import closure_6 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_7 from "setLibraryApplications" /* 4517 */;
+import closure_7 from "setLibraryApplications" /* 4520 */;
 import set from "set" /* 2 */;
 
 require = arg1;

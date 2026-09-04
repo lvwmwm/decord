@@ -1,9 +1,9 @@
-// Module ID: 7650
-// Function ID: 7651
+// Module ID: 7827
+// Function ID: 7828
 // Name: internalJsonWrite
 // Dependencies: [32, 1306, 2]
 
-// Module 7650 (internalJsonWrite)
+// Module 7827 (internalJsonWrite)
 import _mod1306 from "module_1306" /* 1306 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1306" /* 1306 */;

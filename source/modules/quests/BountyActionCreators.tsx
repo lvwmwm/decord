@@ -1,16 +1,16 @@
-// Module ID: 11348
-// Function ID: 11349
+// Module ID: 11456
+// Function ID: 11457
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4574, 7458, 7459, 673, 706, 7457, 11145, 7456, 4377, 7217, 7477, 527, 7454, 2]
+// Dependencies: [5, 4577, 7635, 7636, 673, 706, 5411, 11216, 7634, 4380, 7395, 7654, 527, 7632, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 11348 (fetchBountiesAndDispatch)
+// Module 11456 (fetchBountiesAndDispatch)
 import dispatcherDefault from "dispatcher" /* 706 */;
-import getOrRefreshAdSession from "getOrRefreshAdSession" /* 7477 */;
+import getOrRefreshAdSession from "getOrRefreshAdSession" /* 7654 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleConnectionInfoChange" /* 4574 */;
-import closure_5 from "set" /* 7458 */;
-import closure_6 from "initializeState" /* 7459 */;
+import closure_4 from "handleConnectionInfoChange" /* 4577 */;
+import closure_5 from "set" /* 7635 */;
+import closure_6 from "initializeState" /* 7636 */;
 import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
@@ -138,9 +138,9 @@ function _fetchQuestHomeBounties() {
               obj1 = { value: null, done: false };
               obj1[0] = closure_1_8(tmp5, closure_1_3(function*() {
                 let uuid = tmp2;
-                let obj5 = closure_1_0(7217);
+                let obj5 = closure_1_0(7395);
                 uuid = yield obj5.getSession();
-                const uuid2 = closure_1_0(7477).getOrRefreshAdSession();
+                const uuid2 = closure_1_0(7654).getOrRefreshAdSession();
                 const HTTP = closure_1_0(527).HTTP;
                 const obj3 = { url: null, query: null, rejectWithError: false, context: null };
                 obj3[0] = closure_1_7.QUESTS_GET_DECISIONS;
@@ -506,7 +506,7 @@ function _dismissAdContent() {
               obj3 = callback2(706);
               obj5 = { type: "AD_CONTENT_DISMISS_FAILURE", adCreativeId: null, error: null };
               obj5[1] = adCreativeId;
-              const tmp27 = new callback2(4377)(callback2);
+              const tmp27 = new callback2(4380)(callback2);
               obj5[2] = tmp27;
               obj3.dispatch(obj5);
             } else if (arg0 === 1) {

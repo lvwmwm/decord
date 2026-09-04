@@ -1,14 +1,14 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9350
+// Function ID: 9351
 // Name: ChatSmileIcon
-// Dependencies: [19, 21, 709, 4196, 9377, 2]
+// Dependencies: [19, 21, 709, 4196, 9351, 2]
 // Exports: ChatSmileIcon
 
-// Module 9376 (ChatSmileIcon)
+// Module 9350 (ChatSmileIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9377 */;
+import registerAsset from "registerAsset" /* 9351 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

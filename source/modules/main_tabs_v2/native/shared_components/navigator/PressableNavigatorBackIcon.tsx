@@ -1,18 +1,18 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7797
+// Function ID: 7798
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 1386, 7391, 1980, 21, 4478, 1296, 709, 586, 4296, 7621, 5077, 1233, 7622, 7623, 2]
+// Dependencies: [19, 17, 1386, 7569, 1980, 21, 4481, 1296, 709, 586, 4299, 7798, 5084, 1233, 7799, 7800, 2]
 
-// Module 7620 (PressableNavigatorBackIcon)
+// Module 7797 (PressableNavigatorBackIcon)
 import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 1296 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "updateGuildUnreadSentinel" /* 7391 */;
+import closure_7 from "updateGuildUnreadSentinel" /* 7569 */;
 import closure_8 from "handleConnectionOpen" /* 1980 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 require = arg1;
 let c3 = importAllResult;

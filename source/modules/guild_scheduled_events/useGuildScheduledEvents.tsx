@@ -1,19 +1,19 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 9591
+// Function ID: 9592
 // Name: useGuildEvents
-// Dependencies: [32, 19, 1386, 1908, 4120, 7281, 9649, 1392, 673, 684, 586, 9651, 9650, 9654, 2]
+// Dependencies: [32, 19, 1386, 1908, 4120, 7459, 9592, 1392, 673, 684, 586, 9594, 9593, 9597, 2]
 // Exports: default, getGuildActiveEvent, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 9648 (useGuildEvents)
+// Module 9591 (useGuildEvents)
 import setDefault from "set" /* 684 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import scheduledEventSort from "scheduledEventSort" /* 7281 */;
-import closure_9 from "scheduledEventSort" /* 7281 */;
-import closure_10 from "initialize" /* 9649 */;
+import scheduledEventSort from "scheduledEventSort" /* 7459 */;
+import closure_9 from "scheduledEventSort" /* 7459 */;
+import closure_10 from "initialize" /* 9592 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 import ME from "ME" /* 673 */;
 
@@ -335,11 +335,11 @@ export const useImminentUpcomingGuildEvents = function useImminentUpcomingGuildE
   }, items1);
   const items2 = [stateFromStores];
   return React.useMemo(() => stateFromStores.filter((status) => {
-    const eventSchedule = callback(9654).getEventSchedule(status);
+    const eventSchedule = callback(9597).getEventSchedule(status);
     ({ startTime, endTime } = eventSchedule);
-    const obj = callback(9654);
+    const obj = callback(9597);
     let toISOStringResult1;
-    const obj2 = callback(9651);
+    const obj2 = callback(9594);
     if (endTime != null) {
       toISOStringResult1 = endTime.toISOString();
     }

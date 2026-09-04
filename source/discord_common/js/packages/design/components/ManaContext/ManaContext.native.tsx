@@ -1,10 +1,10 @@
-// Module ID: 4262
-// Function ID: 4263
+// Module ID: 4263
+// Function ID: 4264
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 4262 (context)
+// Module 4263 (context)
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

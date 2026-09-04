@@ -1,15 +1,15 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9722
+// Function ID: 9723
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4478, 709, 4197, 4217, 4928, 9789, 5661, 1234, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4197, 4218, 4935, 9723, 6595, 1234, 2]
 // Exports: SegmentedControl
 
-// Module 9788 (SegmentedControl)
+// Module 9722 (SegmentedControl)
 import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);

@@ -1,16 +1,12 @@
 // Module ID: 14221
 // Function ID: 14222
-// Dependencies: [14202, 14222]
+// Dependencies: [14222, 14287]
 
 // Module 14221
-import _mod14202 from "module_14202" /* 14202 */;
-import all from "all" /* 14222 */;
+import assign from "assign" /* 14287 */;
+import module_14222 from "module_14222" /* 14222 */;
 
-
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod14202(arg0[arg1])) {
-    tmp4 = all(tmp);
-  }
-  return tmp4;
-};
+let obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj[3] = Object.assign !== assign;
+obj = { assign };
+module_14222(obj, obj);

@@ -1,12 +1,12 @@
-// Module ID: 11485
-// Function ID: 11486
-// Dependencies: [5, 11486, 673, 7520, 527, 4376, 1233, 4858, 706, 2]
+// Module ID: 11606
+// Function ID: 11607
+// Dependencies: [5, 11607, 673, 7697, 527, 4379, 1233, 4865, 706, 2]
 
-// Module 11485
+// Module 11606
 import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleChannelDelete" /* 11486 */;
-import { FetchState } from "handleChannelDelete" /* 11486 */;
+import closure_4 from "handleChannelDelete" /* 11607 */;
+import { FetchState } from "handleChannelDelete" /* 11607 */;
 import ME from "ME" /* 673 */;
 
 const require = arg1;
@@ -47,7 +47,7 @@ let obj = {
               c0 = undefined;
               c1 = undefined;
               ({ id: c0, name: c1 } = closure_1_0);
-              obj1 = closure_1_1(7520);
+              obj1 = closure_1_1(7697);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -67,7 +67,7 @@ let obj = {
             const obj2 = { url: null, rejectWithError: true };
             obj2[0] = closure_1_7.PIN(c0, c1);
             HTTP.put(obj2).catch((arg0) => {
-              const aPIError = new closure_2_0(4376).APIError(arg0);
+              const aPIError = new closure_2_0(4379).APIError(arg0);
               const code = aPIError.code;
               const intl = closure_2_0(1233).intl;
               const intl2 = closure_2_0(1233).intl;
@@ -132,7 +132,7 @@ let obj = {
               obj = { title: stringResult3, body: stringResult1, confirmText: null };
               const intl17 = tmp(1233).intl;
               obj[2] = intl17.string(closure_2_0(1233).t.BddRzS);
-              closure_2_1(4858).show(obj);
+              closure_2_1(4865).show(obj);
             });
             c3 = 3;
             return { value: "HermesInternal", done: null };
@@ -176,7 +176,7 @@ let obj = {
             } else {
               closure_1 = tmp4;
               id = tmp4;
-              obj1 = closure_1_1(7520);
+              obj1 = closure_1_1(7697);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -196,7 +196,7 @@ let obj = {
             const obj2 = { url: null, oldFormErrors: true, rejectWithError: true };
             obj2[0] = closure_1_7.PIN(id.id, closure_1);
             HTTP.del(obj2).catch(() => {
-              obj = callback2(4858);
+              obj = callback2(4865);
               obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
               const intl = callback(1233).intl;
               obj[0] = intl.string(callback(1233).t.xFjByk);

@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11775
+// Function ID: 11776
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1921, 1993, 673, 21, 4478, 7898, 4946, 695, 11643, 4194, 1233, 9535, 4948, 4474, 4673, 10892, 2]
+// Dependencies: [5, 32, 19, 17, 1921, 1993, 673, 21, 4481, 7908, 4953, 695, 11774, 4194, 1233, 9495, 4955, 4477, 4680, 10861, 2]
 // Exports: default
 
-// Module 11644 (GuildEnableCommunicationAlert)
+// Module 11775 (GuildEnableCommunicationAlert)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import getFriendlyDurationString from "getFriendlyDurationString" /* 1993 */;
 import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -60,7 +60,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
               return obj;
             } else {
               closure_0 = tmp4;
-              obj1 = v0(11643);
+              obj1 = v0(11774);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -79,7 +79,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             const obj2 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
             const intl = closure_1_0(1233).intl;
             obj2[1] = intl.string(closure_1_0(1233).t["/Mmbfv"]);
-            obj2[2] = v0(9535);
+            obj2[2] = v0(9495);
             v0(4194).open(obj2);
             dependencyMap = 3;
             return { value: "HermesInternal", done: null };
@@ -101,8 +101,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   }
   const tmp2 = callback();
   dependencyMap = tmp2;
-  closure_3 = _handleConfirmRemoveTimeout(userId(7898)(userId, guildId), 1)[0];
-  userId(4946)(() => {
+  closure_3 = _handleConfirmRemoveTimeout(userId(7908)(userId, guildId), 1)[0];
+  userId(4953)(() => {
     let obj = userId(countdown[11]);
     obj = { type: closure_1_7, guild_id: guildId, other_user_id: userId };
     obj.track(closure_1_9.OPEN_MODAL, obj);
@@ -139,8 +139,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp11 = closure_11;
   const tmp12 = View;
   const tmp3 = userId;
-  const tmp7 = userId(4948);
-  let str = userId(4673).getName(guildId, null, user);
+  const tmp7 = userId(4955);
+  let str = userId(4680).getName(guildId, null, user);
   if (str == null) {
     str = "";
   }
@@ -155,13 +155,13 @@ export default function GuildEnableCommunicationAlert(guildId) {
       return closure_1_10(userId(countdown[19]), { style: countdown.countdown, deadline: num, withUnits: true });
     }
   });
-  const items = [closure_10(guildId(4474).Text, obj), ];
+  const items = [closure_10(guildId(4477).Text, obj), ];
   let obj2 = { style: items1, variant: "text-sm/medium", children: null };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
   const intl5 = tmp9(1233).intl;
   obj2[2] = intl5.format(guildId(1233).t.KtENkK, { link: closure_8 });
-  items[1] = closure_10(guildId(4474).Text, obj2);
+  items[1] = closure_10(guildId(4477).Text, obj2);
   obj[1] = items;
   obj.children = tmp11(tmp12, obj);
   return closure_10(tmp7, obj);

@@ -1,16 +1,16 @@
-// Module ID: 8739
-// Function ID: 8740
+// Module ID: 8382
+// Function ID: 8383
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4478, 709, 4197, 8254, 2]
+// Dependencies: [19, 17, 21, 4481, 709, 4197, 8383, 2]
 // Exports: default
 
-// Module 8739 (MethodPathIcon)
+// Module 8382 (MethodPathIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
-import inlineStylesDefault from "inlineStyles" /* 8254 */;
+import inlineStylesDefault from "inlineStyles" /* 8383 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;

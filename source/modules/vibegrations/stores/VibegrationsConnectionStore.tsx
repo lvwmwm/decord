@@ -1,24 +1,24 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16513
+// Function ID: 16514
 // Name: rejectPendingPublish
-// Dependencies: [32, 5, 1921, 16424, 16425, 706, 16428, 16426, 16429, 1233, 3500, 16430, 16431, 16433, 581, 7509, 16434, 586, 2]
+// Dependencies: [32, 5, 1921, 16510, 16511, 706, 16514, 16512, 16515, 1233, 3500, 16516, 16517, 16519, 581, 7686, 16520, 586, 2]
 // Exports: closeConnection, deleteStagedAttachment, ensureConnection, exportProjectArchive, fetchProjectMcpConnection, fetchSourceHistory, getPreviewScreenshotUrl, interruptTurn, isAttachmentAvailable, publishProject, remixProjectWorkspace, requestDebugStatus, requestExternalAuthorizeUrl, requestProjectRebuild, resetHistoryPaging, restoreSourceHistoryEntry, sendModelSettings, sendUserMessage, stageModelSettings, submitProjectSecrets, submitProjectSettings, uploadAttachment
 
-// Module 16427 (rejectPendingPublish)
+// Module 16513 (rejectPendingPublish)
 import failsDefault from "fails" /* 581 */;
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import snowflakeSequence from "snowflakeSequence" /* 7509 */;
-import _modDef16426 from "module_16426" /* 16426 */;
-import vibegrationLocation from "vibegrationLocation" /* 16428 */;
-import map10 from "map" /* 16429 */;
-import open2 from "open" /* 16433 */;
+import snowflakeSequence from "snowflakeSequence" /* 7686 */;
+import _modDef16512 from "module_16512" /* 16512 */;
+import vibegrationLocation from "vibegrationLocation" /* 16514 */;
+import map10 from "map" /* 16515 */;
+import open2 from "open" /* 16519 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "newMessage" /* 16424 */;
-import { getOlderHistoryCursor } from "newMessage" /* 16424 */;
-import closure_8 from "isProjectOwner" /* 16425 */;
+import closure_6 from "newMessage" /* 16510 */;
+import { getOlderHistoryCursor } from "newMessage" /* 16510 */;
+import closure_8 from "isProjectOwner" /* 16511 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -749,7 +749,7 @@ function handleEvent(projectId, pendingEvents, type) {
         tmp70 = "" !== name;
       }
       if (tmp70) {
-        obj28 = _require(16430);
+        obj28 = _require(16516);
         obj28.renameProject(projectId, name).catch(() => {
 
         });
@@ -770,8 +770,8 @@ function handleEvent(projectId, pendingEvents, type) {
         if (str21 == null) {
           str21 = "publish_result not ok";
         }
-        _require(16430).trackPublishFailed(projectId, str21, false);
-        const obj81 = _require(16430);
+        _require(16516).trackPublishFailed(projectId, str21, false);
+        const obj81 = _require(16516);
       }
     } else if ("app_icon_set" === type.kind) {
       const icon = type.icon;
@@ -780,9 +780,9 @@ function handleEvent(projectId, pendingEvents, type) {
           attachment_id = type.attachment_id;
           deleteResult = _require;
           deleteResult = dependencyMap;
-          const obj80 = _require(16430);
-          const setProjectIconResult = _require(16430).setProjectIcon(projectId, icon);
-          deleteResult = _require(16430).setProjectIcon(projectId, icon).then((ok) => {
+          const obj80 = _require(16516);
+          const setProjectIconResult = _require(16516).setProjectIcon(projectId, icon);
+          deleteResult = _require(16516).setProjectIcon(projectId, icon).then((ok) => {
             let str = "failed";
             if (ok.ok) {
               str = "applied";
@@ -805,7 +805,7 @@ function handleEvent(projectId, pendingEvents, type) {
               ws.sendAppIconAck(tmp, "failed");
             }
           });
-          const nextPromise = _require(16430).setProjectIcon(projectId, icon).then((ok) => {
+          const nextPromise = _require(16516).setProjectIcon(projectId, icon).then((ok) => {
             let str = "failed";
             if (ok.ok) {
               str = "applied";
@@ -822,7 +822,7 @@ function handleEvent(projectId, pendingEvents, type) {
         }
       }
     } else if ("turn_result" === type.kind) {
-      obj21 = _require(16428);
+      obj21 = _require(16514);
       let result = obj21.trackVibegrationTurnResulted(projectId, type);
       if ("deployed" === type.result) {
         obj22 = attachment_id(706);
@@ -864,7 +864,7 @@ function handleEvent(projectId, pendingEvents, type) {
         tmp46 = "error" !== type.kind;
       }
       if (!tmp46) {
-        obj19 = _require(16428);
+        obj19 = _require(16514);
         const obj37 = {};
         let merged = Object.assign(obj[type.kind]);
         obj37.message = type.message;
@@ -877,11 +877,11 @@ function handleEvent(projectId, pendingEvents, type) {
       }
       if ("preview_ready" === type.kind) {
         deleteResult = _require;
-        const result2 = _require(16430).refreshPublishedProject(projectId, { isPreview: true });
+        const result2 = _require(16516).refreshPublishedProject(projectId, { isPreview: true });
         deleteResult = result2.catch(() => {
 
         });
-        const obj79 = _require(16430);
+        const obj79 = _require(16516);
       }
       const obj77 = attachment_id(706);
     }
@@ -936,10 +936,10 @@ function handleEvent(projectId, pendingEvents, type) {
       if ("capture_claim" !== type.type) {
         if ("preview_operation" === type.type) {
           if ("begin" === type.phase) {
-            obj17 = attachment_id(16426);
+            obj17 = attachment_id(16512);
             const result3 = obj17.beginPreviewOperation(projectId);
           } else {
-            obj16 = attachment_id(16426);
+            obj16 = attachment_id(16512);
             obj16.endPreviewOperation(projectId);
           }
         } else if ("model_settings" === type.type) {
@@ -1069,9 +1069,9 @@ function handleEvent(projectId, pendingEvents, type) {
                     value.add(combined);
                     ({ location: obj3[0], code: obj3[1] } = tmp2);
                     ({ message: obj3[2], source: obj3[3] } = historical);
-                    const result1 = pendingEvents(16428).trackVibegrationErrored(project_id, { location: null, code: null, message: null, details: null });
+                    const result1 = pendingEvents(16514).trackVibegrationErrored(project_id, { location: null, code: null, message: null, details: null });
                     obj = { location: null, code: null, message: null, details: null };
-                    const obj2 = pendingEvents(16428);
+                    const obj2 = pendingEvents(16514);
                   }
                   obj4 = closure_28;
                   const str = historical.message;
@@ -1083,7 +1083,7 @@ function handleEvent(projectId, pendingEvents, type) {
       }
     }
     let upload_token;
-    obj18 = _require(16429);
+    obj18 = _require(16515);
     if ("capture_claim" === type.type) {
       upload_token = type.upload_token;
     }
@@ -1316,8 +1316,8 @@ function teardown(closure_0) {
     ws.close();
     obj.delete(closure_0);
     map7.delete(closure_0);
-    const result = _modDef16426.releasePreviewControl(closure_0);
-    const obj2 = _modDef16426;
+    const result = _modDef16512.releasePreviewControl(closure_0);
+    const obj2 = _modDef16512;
     const result1 = map10.clearVibegrationsPreviewClaims(closure_0);
     const obj3 = map10;
     obj = { type: "VIBEGRATIONS_CHAT_CONN_STATE", projectId: null, connState: "closed" };
@@ -1362,9 +1362,9 @@ function getMediaTicket(closure_0) {
   if (null != value) {
     return value;
   } else {
-    const obj2 = _require(16431);
-    const mintWorkerTicketResult = _require(16431).mintWorkerTicket(closure_0);
-    const cleanupPromise = _require(16431).mintWorkerTicket(closure_0).then((ticket) => {
+    const obj2 = _require(16517);
+    const mintWorkerTicketResult = _require(16517).mintWorkerTicket(closure_0);
+    const cleanupPromise = _require(16517).mintWorkerTicket(closure_0).then((ticket) => {
       const tmp = (function ticketExpiryMs(ticket) {
         try {
           const _atob = atob;

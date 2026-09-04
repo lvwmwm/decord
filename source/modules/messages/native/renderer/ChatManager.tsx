@@ -1,13 +1,13 @@
-// Module ID: 11363
-// Function ID: 11364
+// Module ID: 11470
+// Function ID: 11471
 // Name: getPreviousMessages
-// Dependencies: [7854, 11364, 656, 2]
+// Dependencies: [7864, 11471, 656, 2]
 
-// Module 11363 (getPreviousMessages)
+// Module 11470 (getPreviousMessages)
 import set from "set" /* 2 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
-import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11364 */;
-import Changeset from "Changeset" /* 7854 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11471 */;
+import Changeset from "Changeset" /* 7864 */;
 
 ({ Changeset: obj1, RowType: c3 } = Changeset);
 const result = set.fileFinishedImporting("modules/messages/native/renderer/ChatManager.tsx");

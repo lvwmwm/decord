@@ -1,9 +1,9 @@
-// Module ID: 4367
-// Function ID: 4368
+// Module ID: 4370
+// Function ID: 4371
 // Name: GameServerProviderType
 // Dependencies: [2]
 
-// Module 4367 (GameServerProviderType)
+// Module 4370 (GameServerProviderType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerProviderType.tsx");

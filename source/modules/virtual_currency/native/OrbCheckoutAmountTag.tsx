@@ -1,17 +1,17 @@
-// Module ID: 10977
-// Function ID: 10978
+// Module ID: 10943
+// Function ID: 10944
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4478, 709, 10978, 4474, 1233, 2]
+// Dependencies: [17, 21, 4481, 709, 8767, 4477, 1233, 2]
 // Exports: default
 
-// Module 10977 (OrbCheckoutAmountTag)
+// Module 10943 (OrbCheckoutAmountTag)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import OrbsIcon from "OrbsIcon" /* 10978 */;
+import Text from "Text" /* 4477 */;
+import OrbsIcon from "OrbsIcon" /* 8767 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);

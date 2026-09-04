@@ -1,14 +1,14 @@
-// Module ID: 5012
-// Function ID: 5013
+// Module ID: 5019
+// Function ID: 5020
 // Name: isValidFormResponse
-// Dependencies: [5013, 673, 4302, 1470, 2]
+// Dependencies: [5020, 673, 4305, 1394, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5012 (isValidFormResponse)
+// Module 5019 (isValidFormResponse)
 import set from "set" /* 2 */;
 import ME from "ME" /* 673 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
-import items from "items" /* 5013 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
+import items from "items" /* 5020 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: obj1, MANUAL_APPROVAL_FORM_FIELDS: c3 } = items);
 const GuildFeatures = ME.GuildFeatures;
@@ -21,13 +21,13 @@ export const isValidFormResponse = function isValidFormResponse(required) {
       return false;
     } else {
       if (MAX_RESULTS_PER_PAGE.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4302).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4302).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4302).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4302).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+        if (tmp4(4305).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4305).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4305).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4305).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
-                return tmp4(1470).assertNever(field_type);
+                return tmp4(1394).assertNever(field_type);
               }
             }
           }

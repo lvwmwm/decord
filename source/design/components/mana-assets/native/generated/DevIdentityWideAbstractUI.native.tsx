@@ -1,14 +1,14 @@
-// Module ID: 6461
-// Function ID: 6462
+// Module ID: 5842
+// Function ID: 5843
 // Name: DevIdentityWideAbstractUI
-// Dependencies: [21, 5502, 6462, 2]
+// Dependencies: [21, 5542, 5843, 2]
 // Exports: DevIdentityWideAbstractUI
 
-// Module 6461 (DevIdentityWideAbstractUI)
+// Module 5842 (DevIdentityWideAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6462 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 5843 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityWideAbstractUI.native.tsx");

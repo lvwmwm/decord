@@ -1,12 +1,12 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7770
+// Function ID: 7771
 // Name: initialize
-// Dependencies: [4736, 586, 706, 2]
+// Dependencies: [4743, 586, 706, 2]
 
-// Module 7593 (initialize)
+// Module 7770 (initialize)
 import initializeDefault from "initialize" /* 586 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "reinjectEphemerals" /* 4736 */;
+import closure_0 from "reinjectEphemerals" /* 4743 */;
 
 const re1 = /^(assets-library|ph|file):\/\//;
 const re2 = /^content:\/\//;

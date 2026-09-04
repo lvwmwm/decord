@@ -1,16 +1,16 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 12251
+// Function ID: 12252
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4478, 12116, 1425, 12117, 12104, 12105, 4474, 1233, 12113, 2]
+// Dependencies: [5, 19, 17, 21, 4481, 12252, 1426, 12253, 12240, 12241, 4477, 1233, 12249, 2]
 // Exports: default
 
-// Module 12115 (GuildDirectoryCreateOrAddDescription)
+// Module 12251 (GuildDirectoryCreateOrAddDescription)
 import noopAll from "noop" /* 19 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12113 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12249 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 const require = arg1;
 noopAll;
@@ -136,11 +136,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = directoryChannelId(1233).intl;
   obj1[4] = intl.string(directoryChannelId(1233).t["5bQcoa"]);
-  const items = [callback(directoryChannelId(4474).Text, obj1), ];
+  const items = [callback(directoryChannelId(4477).Text, obj1), ];
   let obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = directoryChannelId(1233).intl;
   obj2[3] = intl2.string(directoryChannelId(1233).t.Ie60Wc);
-  items[1] = callback(directoryChannelId(4474).Text, obj2);
+  items[1] = callback(directoryChannelId(4477).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(_onSubmit, obj), ];
   let obj3 = {
@@ -163,5 +163,5 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   items1[1] = callback(GuildDirectoryEditDescriptionTemplateDefault, obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(12105).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(12241).GuildDirectoryAddModalScreen, obj);
 };

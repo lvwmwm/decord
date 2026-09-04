@@ -1,10 +1,10 @@
-// Module ID: 1469
-// Function ID: 1470
+// Module ID: 1470
+// Function ID: 1471
 // Name: logger
 // Dependencies: [32, 19, 4, 586, 2]
 // Exports: default
 
-// Module 1469 (logger)
+// Module 1470 (logger)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useEffect } from "noop" /* 19 */;
 

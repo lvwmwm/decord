@@ -1,14 +1,14 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 6290
+// Function ID: 6291
 // Name: PingPongPaddleIllocon
-// Dependencies: [21, 5502, 6910, 2]
+// Dependencies: [21, 5542, 6291, 2]
 // Exports: PingPongPaddleIllocon
 
-// Module 6909 (PingPongPaddleIllocon)
+// Module 6290 (PingPongPaddleIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5502 */;
-import metadataDefault from "metadata" /* 6910 */;
+import preloadDefault from "preload" /* 5542 */;
+import metadataDefault from "metadata" /* 6291 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PingPongPaddleIllocon.native.tsx");

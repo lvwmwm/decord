@@ -1,10 +1,10 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15102
+// Function ID: 15103
 // Name: updateBackgroundGradientPreset
 // Dependencies: [706, 2]
 // Exports: resetBackgroundGradientPreset, resetPreviewClientTheme, updateBackgroundGradientPreset, updateMobilePendingThemeIndex
 
-// Module 15020 (updateBackgroundGradientPreset)
+// Module 15102 (updateBackgroundGradientPreset)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 

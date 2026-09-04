@@ -1,9 +1,9 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 6405
+// Function ID: 6406
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7024 (metadata)
+// Module 6405 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SkullIllocon-2x.png.js");

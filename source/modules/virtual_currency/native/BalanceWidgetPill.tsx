@@ -1,19 +1,19 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 11023
+// Function ID: 11024
 // Name: BalanceWidgetPill
-// Dependencies: [19, 17, 21, 4478, 4934, 709, 1234, 11065, 1233, 11066, 11071, 11072, 2]
+// Dependencies: [19, 17, 21, 4481, 4941, 709, 1234, 11024, 1233, 11025, 11030, 11031, 2]
 
-// Module 11064 (BalanceWidgetPill)
+// Module 11023 (BalanceWidgetPill)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 11065 */;
-import forwardRef from "forwardRef" /* 11066 */;
-import BalanceCounter from "BalanceCounter" /* 11071 */;
-import EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS from "EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS" /* 11072 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 11024 */;
+import forwardRef from "forwardRef" /* 11025 */;
+import BalanceCounter from "BalanceCounter" /* 11030 */;
+import EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS from "EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS" /* 11031 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 import set from "set" /* 1234 */;
 
 require = arg1;

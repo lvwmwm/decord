@@ -1,10 +1,10 @@
-// Module ID: 10299
-// Function ID: 10300
+// Module ID: 10119
+// Function ID: 10120
 // Name: _uploadRtcLogFiles
-// Dependencies: [5, 673, 3, 8554, 4376, 527, 2]
+// Dependencies: [5, 673, 3, 8136, 4379, 527, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 10299 (_uploadRtcLogFiles)
+// Module 10119 (_uploadRtcLogFiles)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 673 */;

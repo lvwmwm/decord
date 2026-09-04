@@ -1,17 +1,17 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17221
+// Function ID: 17222
 // Name: prototype
-// Dependencies: [1215, 1386, 1991, 1908, 4462, 4120, 7424, 673, 7491, 1219, 4445, 4724, 17136, 2008, 5495, 17137, 706, 8883, 2]
+// Dependencies: [1215, 1386, 1991, 1908, 4465, 4120, 7602, 673, 7668, 1219, 4448, 4731, 17222, 2008, 7058, 17223, 706, 8668, 2]
 
-// Module 17135 (prototype)
-import initializeDefault from "initialize" /* 5495 */;
+// Module 17221 (prototype)
+import initializeDefault from "initialize" /* 7058 */;
 import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "updateInvite" /* 4462 */;
+import closure_7 from "updateInvite" /* 4465 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7424 */;
+import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7602 */;
 import ME from "ME" /* 673 */;
 
 let require = arg1;
@@ -79,7 +79,7 @@ let prototype = function AcceptInviteManager() {
               applyArgumentsResult(closure_2_2[15]).acceptFriendInvite(invite, obj);
               const obj6 = applyArgumentsResult(closure_2_2[15]);
               const tmp34 = closure_2_2;
-              closure_2_1(closure_2_2[16]).wait(() => set(8883).clearDisplayedInvite());
+              closure_2_1(closure_2_2[16]).wait(() => set(8668).clearDisplayedInvite());
               flag = false;
               const obj8 = closure_2_1(closure_2_2[16]);
             }
@@ -133,7 +133,7 @@ let prototype = function AcceptInviteManager() {
           tmp40 = closure_2_2;
         }
         if (flag2) {
-          closure_2_1(closure_2_2[16]).wait(() => set(8883).clearDisplayedInvite());
+          closure_2_1(closure_2_2[16]).wait(() => set(8668).clearDisplayedInvite());
           flag = false;
           const obj5 = closure_2_1(closure_2_2[16]);
         } else {

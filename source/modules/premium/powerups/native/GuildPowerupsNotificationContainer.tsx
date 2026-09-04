@@ -1,19 +1,19 @@
-// Module ID: 12355
-// Function ID: 12356
+// Module ID: 12487
+// Function ID: 12488
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4478, 709, 8016, 4474, 12356, 12357, 1233, 2400, 12360, 2]
+// Dependencies: [17, 21, 4481, 709, 8026, 4477, 12488, 12489, 1233, 2400, 12492, 2]
 // Exports: default
 
-// Module 12355 (Tier3OverrideNotice)
+// Module 12487 (Tier3OverrideNotice)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4474 */;
-import apexExperiment from "apexExperiment" /* 8016 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12356 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12357 */;
+import Text from "Text" /* 4477 */;
+import apexExperiment from "apexExperiment" /* 8026 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12488 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12489 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4478 */;
+import createCacheKey from "createCacheKey" /* 4481 */;
 
 function Tier3OverrideNotice(children) {
   let obj = apexExperiment;
@@ -58,7 +58,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     obj[1] = str2;
     const intl = tmp6(1233).intl;
     obj[2] = intl.string(tmp2(2400)["3FRirU"]);
-    const items = [closure_4(tmp6(4474).Text, obj), , ];
+    const items = [closure_4(tmp6(4477).Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       obj1 = { text: null };
@@ -71,7 +71,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj2 = { guildId: null, powerupNames: null, warnings: null };
       obj2[0] = guildId;
       ({ expiringPowerupNames: obj5[1], warnings: obj5[2] } = tmp5);
-      shouldShow2 = tmp11(tmp2(12360), obj2);
+      shouldShow2 = tmp11(tmp2(12492), obj2);
     }
     items[2] = shouldShow2;
     obj[1] = items;

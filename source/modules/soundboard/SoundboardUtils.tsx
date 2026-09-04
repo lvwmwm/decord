@@ -1,26 +1,26 @@
-// Module ID: 6198
-// Function ID: 6199
+// Module ID: 7282
+// Function ID: 7283
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1339, 1390, 4120, 1921, 4966, 4968, 673, 1337, 4166, 4139, 6199, 6192, 6200, 706, 6227, 6228, 6229, 644, 4322, 1372, 1369, 4974, 695, 4701, 2]
+// Dependencies: [5, 1339, 1390, 4120, 1921, 4973, 4975, 673, 1337, 4166, 4139, 7283, 7276, 7284, 706, 7311, 7312, 7313, 644, 4325, 1372, 1369, 4981, 695, 4708, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 6198 (hasPermissionToPlaySound)
+// Module 7282 (hasPermissionToPlaySound)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import dispatcherDefault from "dispatcher" /* 706 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4701 */;
-import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 6192 */;
-import getMuteStates from "getMuteStates" /* 6199 */;
-import VoiceChannelEffectSentLocation from "VoiceChannelEffectSentLocation" /* 6200 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
+import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 7276 */;
+import getMuteStates from "getMuteStates" /* 7283 */;
+import VoiceChannelEffectSentLocation from "VoiceChannelEffectSentLocation" /* 7284 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord" /* 1390 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "handleSoundCreateOrUpdate" /* 4966 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4968 */;
+import closure_8 from "handleSoundCreateOrUpdate" /* 4973 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
 import ME from "ME" /* 673 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
 
@@ -291,8 +291,8 @@ export const useSoundBoardDismissContentTypes = function useSoundBoardDismissCon
     const _Object = Object;
     const values = Object.values(guilds);
     if (!values.some((joinSound) => null != joinSound.joinSound)) {
-      const result = tmp(4322).ageEligibleForPremiumUpsell(stateFromStores);
-      const tmpResult = tmp(4322);
+      const result = tmp(4325).ageEligibleForPremiumUpsell(stateFromStores);
+      const tmpResult = tmp(4325);
       const obj5 = getPremiumPlanItemDefault;
       if (tmp9) {
         items1.push(tmp(1372).DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL);
