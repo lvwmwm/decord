@@ -6,7 +6,11 @@ export const gitChanged = new Set<string>();
 export async function fetchGitChanged() {
 	for (const cwd of ["../data", "../canvas"] as const) {
 		try {
-			const out = await Bun.$`git status -z`.cwd(cwd).quiet().nothrow().then((r) => r.text());
+			const out = await Bun.$`git status -z`
+				.cwd(cwd)
+				.quiet()
+				.nothrow()
+				.then((r) => r.text());
 			for (const changed of out
 				.split("\x00")
 				.filter((x) => x !== "")
@@ -16,35 +20,26 @@ export async function fetchGitChanged() {
 	}
 }
 
-const gitQueue: Promise<void>[] = [];
+let lastCommit: Promise<void> = Promise.resolve();
 
 export async function commit(files: string[], message: string, cwd = "../data") {
-	while (gitQueue[0]) {
-		await gitQueue[0];
-	}
-
-	const { promise, resolve } = Promise.withResolvers<void>();
-	gitQueue.push(promise);
-
-	if (process.env.NODE_ENV === "test" && !commitAnyway) {
-		await fetchGitChanged();
-	} else {
-		await Bun.$`git restore --staged .`.cwd(cwd).nothrow().quiet().then(handleShellErr);
-		if (cwd === "../data") await fetchGitChanged();
-		await Bun.$`git add ${{ raw: files.map((x) => Bun.$.escape(x)).join(" ") }}`
-			.cwd(cwd)
-			.nothrow()
-			.quiet()
-			.then(handleShellErr);
-		await Bun.$`git commit -m ${message}`
-			.cwd(cwd)
-			.nothrow()
-			.quiet()
-			.then((e) => void e);
-	}
-
-	resolve();
-
-	const promInd = gitQueue.indexOf(promise);
-	if (promInd !== -1) gitQueue.splice(promInd, 1);
+	lastCommit = lastCommit.then(async () => {
+		if (process.env.NODE_ENV === "test" && !commitAnyway) {
+			await fetchGitChanged();
+		} else {
+			await Bun.$`git restore --staged .`.cwd(cwd).nothrow().quiet().then(handleShellErr);
+			if (cwd === "../data") await fetchGitChanged();
+			await Bun.$`git add ${{ raw: files.map((x) => Bun.$.escape(x)).join(" ") }}`
+				.cwd(cwd)
+				.nothrow()
+				.quiet()
+				.then(handleShellErr);
+			await Bun.$`git commit -m ${message}`
+				.cwd(cwd)
+				.nothrow()
+				.quiet()
+				.then((e) => void e);
+		}
+	});
+	return lastCommit;
 }

@@ -1,4 +1,3 @@
-import { exists, rm } from "node:fs/promises";
 import mock from "../mock";
 import type { Differs } from "../types";
 import { commit } from "./git";
@@ -8,7 +7,6 @@ import codeTask from "./tasks/code";
 import colorsTask from "./tasks/colors";
 import decompile from "./tasks/decompile";
 import diffs from "./tasks/diffs";
-import iconsTask from "./tasks/icons";
 import { formatError, handleShellErr, join } from "./utils";
 
 export async function runTasks() {
@@ -40,7 +38,9 @@ export async function runTasks() {
 		},
 		true,
 	);
-	let differs: Differs | undefined;
+	let differs: Differs = { raw: new Map(), semantic: new Map(), icons: new Map(), code: new Map() };
+
+	let gzipDone: Promise<void> | undefined;
 
 	if (!isMock) {
 		try {
@@ -50,11 +50,19 @@ export async function runTasks() {
 			await Bun.$`git reset --hard`.cwd("../data").nothrow().quiet().then(handleShellErr);
 			await Bun.write("../data/version.txt", version);
 			// canvas branch may not exist in test
-			await Bun.$`git reset --hard`.cwd("../canvas").nothrow().quiet().then(() => {});
+			await Bun.$`git reset --hard`
+				.cwd("../canvas")
+				.nothrow()
+				.quiet()
+				.then(() => {});
 			await Bun.write("../canvas/version.txt", version).catch(() => {});
 
 			await Bun.$`git restore --staged .`.cwd("../data").nothrow().quiet().then(handleShellErr);
-			await Bun.$`git restore --staged .`.cwd("../canvas").nothrow().quiet().then(() => {});
+			await Bun.$`git restore --staged .`
+				.cwd("../canvas")
+				.nothrow()
+				.quiet()
+				.then(() => {});
 
 			progress.update("preinit_discard", true);
 
@@ -76,11 +84,11 @@ export async function runTasks() {
 		}
 
 		try {
-			await wrapPromise(
+			gzipDone = (await wrapPromise(
 				decompile(progress, join(apksFolder, "base", "assets", "index.android.bundle")),
 				progress,
 				"decompile",
-			);
+			)) as Promise<void> | undefined;
 		} catch (e) {
 			throw new Error(`Failed to decompile!\n${e}`);
 		}
@@ -88,8 +96,7 @@ export async function runTasks() {
 		const code = (await Bun.file(codePath).text()).replace(/\r/g, "").split("\n");
 
 		await wrapPromise(codeTask(progress, code), progress, "code");
-		if (progress.someFailed("code"))
-			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
+		if (progress.someFailed("code")) throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
 		// colors is non-critical, run in background
 		wrapPromise(colorsTask(code), progress, "colors").catch((e) => {
 			progress.update("colors", false, String(e));
@@ -103,22 +110,25 @@ export async function runTasks() {
 		progress.update("icons", null);
 		progress.update("diff_icons", null);
 
-		let waits = 0;
-		while (!progress.isFinished("decompile_gzip") && waits < 120) {
-			await Bun.sleep(1000);
-			waits++;
-		}
-		if (!progress.isFinished("decompile_gzip")) {
-			console.warn("decompile_gzip still not finished after 120s, continuing anyway");
-			progress.update("decompile_gzip", true);
+		if (gzipDone) {
+			try {
+				await gzipDone;
+			} catch (e) {
+				if (progress.someFailed("decompile_gzip"))
+					throw new Error(`Failed at the decompile gzip task!\n${progress.prettyErrors("decompile_gzip")}`);
+				throw e;
+			}
 		}
 
 		if (progress.someFailed("decompile_gzip"))
 			throw new Error(`Failed at the decompile gzip task!\n${progress.prettyErrors("decompile_gzip")}`);
 
 		try {
-			differs = await diffs(progress);
-			progress.update("diff", true);
+			const result = await diffs(progress);
+			if (result) {
+				differs = result;
+				progress.update("diff", true);
+			}
 		} catch (e: any) {
 			progress.update("diff", false, formatError(e));
 			throw new Error(`Failed to generate diffs!\n${formatError(e)}`);
@@ -127,7 +137,7 @@ export async function runTasks() {
 		differs = mock;
 	}
 
-	if (differs && !isQuiet) {
+	if (!isQuiet) {
 		try {
 			const { webhook } = await import("./tasks/webhook");
 			await wrapPromise(webhook(differs), progress, "webhook");

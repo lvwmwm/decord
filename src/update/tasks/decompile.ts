@@ -26,18 +26,11 @@ export default async function decompile(progress: Progress, pathToBundle: string
 	progress.start("decompile_decompiling");
 	const decompilerBin = join(pathToDecompiler, "target/release/hermes-decomp");
 	if (!(await Bun.file(decompilerBin).exists())) {
-		await Bun.$`cargo build --release -p hbc-decomp-cli`
-			.cwd(pathToDecompiler)
-			.quiet()
-			.nothrow()
-			.then(handleShellErr);
+		await Bun.$`cargo build --release -p hbc-decomp-cli`.cwd(pathToDecompiler).quiet().nothrow().then(handleShellErr);
 	}
 
 	if (!(await Bun.file(codePath).exists())) {
-		await Bun.$`${decompilerBin} decompile ${pathToBundle} --output ${codePath}`
-			.quiet()
-			.nothrow()
-			.then(handleShellErr);
+		await Bun.$`${decompilerBin} decompile ${pathToBundle} --output ${codePath}`.quiet().nothrow().then(handleShellErr);
 	}
 
 	if (!(await exists(modulesPath))) {
@@ -70,15 +63,20 @@ export default async function decompile(progress: Progress, pathToBundle: string
 
 		const gzipper = new Worker(gzipWorkerURL);
 		progress.start("decompile_gzip");
+		const { promise: gzipDone, resolve: resolveGzip } = Promise.withResolvers<void>();
 		gzipper.addEventListener("message", async ({ data }) => {
 			if (data === true) {
-				await commit([gzFile, "module-paths.json", "index.android.bundle"], `chore: update decompiled code for ${cuteVersion}`);
+				await commit(
+					[gzFile, "module-paths.json", "index.android.bundle"],
+					`chore: update decompiled code for ${cuteVersion}`,
+				);
 				progress.update("decompile_gzip", true);
 			}
 			gzipper.terminate();
+			resolveGzip();
 		});
 		gzipper.postMessage({ path: codePath, target: join("../data", gzFile) });
-	} else {
-		progress.update("decompile_gzip", null);
+		return gzipDone;
 	}
+	progress.update("decompile_gzip", null);
 }

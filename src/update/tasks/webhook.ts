@@ -12,7 +12,7 @@ import { drawSections } from "../../canvas";
 import { makeSections } from "../../canvas/factory";
 import { type CodeDiff, type Diff, type Differs, DiffType } from "../../types";
 import { cuteVersion, maxDiffChanges, version } from "../shared";
-import { assert, formatBytes, sortEntries } from "../utils";
+import { formatBytes, sortEntries } from "../utils";
 
 function fileBase(path: string, other?: string) {
 	if (!other) return `... ${basename(path)}`;
@@ -49,43 +49,39 @@ interface FormattedDiff {
 }
 
 function formatDiff(diffs: Map<string, Diff | CodeDiff>): FormattedDiff {
-	const entries = [...diffs.entries()];
+	const entries = sortEntries([...diffs.entries()]);
 
 	const sections = {
-		Added: sortEntries(entries)
-			.map(
-				([name, diff]) =>
-					diff.type === DiffType.Added &&
-					("size" in diff
-						? `+ ${fileBase(name)} (${formatBytes(diff.size)})`
-						: `+ ${name}: ${diff.label || diff.source}`),
-			)
-			.filter((x) => typeof x === "string"),
-		Changed: sortEntries(entries)
-			.map(
-				([name, diff]) =>
-					diff.type === DiffType.Changed &&
-					`- ${name}: ${diff.oldLabel || diff.oldSource}\n+ ${name}: ${diff.label || diff.source}`,
-			)
-			.filter((x) => typeof x === "string"),
-		Renamed: sortEntries(entries)
-			.map(
-				([name, diff]) =>
-					diff.type === DiffType.Renamed &&
-					("size" in diff
-						? `- ${fileBase(diff.oldName, name)}\n+ ${fileBase(name, diff.oldName)}`
-						: `- ${diff.oldName}\n+ ${name}`),
-			)
-			.filter((x) => typeof x === "string"),
-		Removed: sortEntries(entries)
-			.map(
-				([name, diff]) =>
-					diff.type === DiffType.Removed &&
-					("size" in diff
-						? `- ${fileBase(name)} (${formatBytes(diff.size)})`
-						: `- ${name}: ${diff.label || diff.source}`),
-			)
-			.filter((x) => typeof x === "string"),
+		Added: entries
+			.filter(([, diff]) => diff.type === DiffType.Added)
+			.map(([name, diff]) => {
+				if ("size" in diff) return `+ ${fileBase(name)} (${formatBytes(diff.size)})`;
+				const d = diff as Extract<Diff, { type: DiffType.Added | DiffType.Removed }>;
+				return `+ ${name}: ${d.label || d.source}`;
+			}),
+		Changed: entries
+			.filter(([, diff]) => diff.type === DiffType.Changed)
+			.map(([name, diff]) => {
+				const d = diff as Extract<Diff, { type: DiffType.Changed }>;
+				return `- ${name}: ${d.oldLabel || d.oldSource}\n+ ${name}: ${d.label || d.source}`;
+			}),
+		Renamed: entries
+			.filter(([, diff]) => diff.type === DiffType.Renamed)
+			.map(([name, diff]) => {
+				if ("size" in diff) {
+					const cd = diff as Extract<CodeDiff, { type: DiffType.Renamed }>;
+					return `- ${fileBase(cd.oldName, name)}\n+ ${fileBase(name, cd.oldName)}`;
+				}
+				const d = diff as Extract<Diff, { type: DiffType.Renamed }>;
+				return `- ${d.oldName}\n+ ${name}`;
+			}),
+		Removed: entries
+			.filter(([, diff]) => diff.type === DiffType.Removed)
+			.map(([name, diff]) => {
+				if ("size" in diff) return `- ${fileBase(name)} (${formatBytes(diff.size)})`;
+				const d = diff as Extract<Diff, { type: DiffType.Added | DiffType.Removed }>;
+				return `- ${name}: ${d.label || d.source}`;
+			}),
 	};
 
 	const text = Object.entries(sections).filter(([, lines]) => lines.length);
@@ -214,7 +210,7 @@ async function sendWebhook(webhook: string, role: string, embeds: WebhookEmbed[]
 }
 
 export async function webhook(diffs: Differs) {
-	if (diffs.raw?.size || diffs.semantic?.size) {
+	if (diffs.raw.size || diffs.semantic.size) {
 		const wh = process.env.color_webhook;
 		if (!wh) {
 			console.warn("Missing color_webhook, skipping color webhook");
@@ -223,14 +219,14 @@ export async function webhook(diffs: Differs) {
 				wh,
 				"1227327297795657850",
 				[
-					diffs.raw?.size && {
+					diffs.raw.size && {
 						title: "Raw colors",
 						body: formatDiff(diffs.raw),
 						image: drawSections(await makeSections(diffs.raw)),
 						footer: makeFooter(diffs.raw.size, "raw color"),
 						key: "raw-colors",
 					},
-					diffs.semantic?.size && {
+					diffs.semantic.size && {
 						title: "Semantic colors",
 						body: formatDiff(diffs.semantic),
 						image: drawSections(await makeSections(diffs.semantic)),
@@ -243,7 +239,7 @@ export async function webhook(diffs: Differs) {
 		}
 	}
 
-	if (diffs.icons?.size) {
+	if (diffs.icons.size) {
 		const wh = process.env.icons_webhook;
 		if (!wh) {
 			console.warn("Missing icons_webhook, skipping");
@@ -265,7 +261,7 @@ export async function webhook(diffs: Differs) {
 		}
 	}
 
-	if (diffs.code?.size) {
+	if (diffs.code.size) {
 		const wh = process.env.code_webhook;
 		if (!wh) {
 			console.warn("Missing code_webhook, skipping");

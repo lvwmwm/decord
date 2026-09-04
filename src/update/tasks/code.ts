@@ -1,4 +1,4 @@
-import { mkdir, rm, readdir, stat } from "node:fs/promises";
+import { mkdir, readdir, rm, stat } from "node:fs/promises";
 import { join as pathJoin } from "node:path";
 import { commit } from "../git";
 import type { Progress } from "../progress";
@@ -13,7 +13,10 @@ function extractModuleId(filename: string): number | undefined {
 }
 
 function sanitizePath(p: string): string {
-	return p.replace(/\\/g, "/").replace(/^\.\.\//, "").replace(/[<>:"|?*]/g, "_");
+	return p
+		.replace(/\\/g, "/")
+		.replace(/^\.\.\//, "")
+		.replace(/[<>:"|?*]/g, "_");
 }
 
 export default async function code(progress: Progress, _code: string[]) {

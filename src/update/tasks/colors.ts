@@ -28,19 +28,34 @@ function evalRawModule(snippet: string): any {
 	code = code.replace(/set\.fileFinishedImporting/g, "__importSet.fileFinishedImporting");
 	code = code.replace(/export\s+const\s+_private/, "const _private");
 	code = code + "\n; _private;";
-	return runInNewContext(code, {});
+	const result = runInNewContext(code, {});
+	if (!result || typeof result !== "object" || !result.RawColors || typeof result.RawColors !== "object") {
+		throw new Error(
+			"VM evaluation failed: RawColors not found or invalid shape. The regex transforms may not match the current decompiler output.",
+		);
+	}
+	return result;
 }
 
 function evalSemanticModule(snippet: string): any {
 	let code = snippet;
 	code = code.replace(/^import set from "set".*$/m, "const __importSet = { fileFinishedImporting: () => {} };");
-	code = code.replace(/^import items from "items".*$/m, "const items = { _private: { Themes: new Proxy({}, { get(_, k){ return k.toString().toLowerCase(); } }) } };");
+	code = code.replace(
+		/^import items from "items".*$/m,
+		"const items = { _private: { Themes: new Proxy({}, { get(_, k){ return k.toString().toLowerCase(); } }) } };",
+	);
 	code = code.replace(/^import.*$/gm, "");
 	code = code.replace(/set\.fileFinishedImporting/g, "__importSet.fileFinishedImporting");
 	code = code.replace(/export\s+const\s+_private/, "const _private");
 	code = code + "\n; _private;";
 	code = fixHermesDecIndex(code);
-	return runInNewContext(code, {});
+	const result = runInNewContext(code, {});
+	if (!result || typeof result !== "object" || !result.SemanticColors || typeof result.SemanticColors !== "object") {
+		throw new Error(
+			"VM evaluation failed: SemanticColors not found or invalid shape. The regex transforms may not match the current decompiler output.",
+		);
+	}
+	return result;
 }
 
 export function getInternalRawColors(code: string[]) {
@@ -59,7 +74,9 @@ export function getInternalSemanticColors(code: string[], raw: Record<string, st
 	if (!snippet) throw new Error("Cannot find semantic definitions module");
 	const mod = evalSemanticModule(snippet);
 	const semantic: SemanticColors = {};
-	for (const [key, colors] of Object.entries(mod.SemanticColors as Record<string, Record<string, { raw: string; opacity: number }>>)) {
+	for (const [key, colors] of Object.entries(
+		mod.SemanticColors as Record<string, Record<string, { raw: string; opacity: number }>>,
+	)) {
 		const color: SemanticColors[string] = {};
 		for (const [theme, val] of Object.entries(colors)) {
 			if (typeof val !== "object" || !("raw" in val)) continue;
@@ -88,5 +105,9 @@ export default async function colors(code: string[]) {
 	await Bun.write("../canvas/semantic.json", JSON.stringify(sortObj(semantic), null, 4));
 	await Bun.write("../canvas/semantic_simple.json", JSON.stringify(sortObj(convertSimpleSemantic(semantic)), null, 4));
 
-	await commit(["raw.json", "semantic.json", "semantic_simple.json"], `chore: update colors for ${cuteVersion}`, "../canvas");
+	await commit(
+		["raw.json", "semantic.json", "semantic_simple.json"],
+		`chore: update colors for ${cuteVersion}`,
+		"../canvas",
+	);
 }

@@ -35,8 +35,11 @@ export type CodeDiff =
 			size: number;
 	  };
 
-export type Differs = Record<"semantic" | "raw" | "icons", Map<string, Diff> | undefined> & {
-	code: Map<string, CodeDiff> | undefined;
+export type Differs = {
+	semantic: Map<string, Diff>;
+	raw: Map<string, Diff>;
+	icons: Map<string, Diff>;
+	code: Map<string, CodeDiff>;
 };
 
 export type RawColors = Record<string, string>;
