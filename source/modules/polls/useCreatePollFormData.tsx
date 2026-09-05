@@ -1,21 +1,21 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12202
+// Function ID: 12203
 // Name: createPollCreationImageForMedia
-// Dependencies: [5, 32, 19, 7761, 7693, 12135, 11646, 12136, 12137, 12138, 1233, 11652, 2]
+// Dependencies: [5, 32, 19, 7829, 7761, 12203, 11714, 12204, 12205, 12206, 1114, 11720, 2]
 // Exports: default
 
-// Module 12134 (createPollCreationImageForMedia)
-import getPollVoteEventPropertiesDefault from "getPollVoteEventProperties" /* 11646 */;
-import useRequestDefault from "useRequest" /* 12135 */;
+// Module 12202 (createPollCreationImageForMedia)
+import getPollVoteEventPropertiesDefault from "getPollVoteEventProperties" /* 11714 */;
+import useRequestDefault from "useRequest" /* 12203 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7761 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7829 */;
 
 const require = arg1;
 function createPollCreationImageForMedia(mediaURL, status) {
   const mediaAttachmentState = { status, mediaURL };
-  return { mediaAttachmentState, emoji: "Array", stickerId: "context" };
+  return { mediaAttachmentState, emoji: "Array", stickerId: "isArray" };
 }
 ({ MAX_NUMBER_OF_ANSWERS_PER_POLL: error, MIN_NUMBER_OF_ANSWERS_PER_POLL: closure_8, PollDurations: c9 } = POLL_ATTACHMENT_FOLDER);
 let result = require("set").fileFinishedImporting("modules/polls/useCreatePollFormData.tsx");
@@ -184,11 +184,11 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
               const callback = closure_1;
               closure_1 = callback2;
               closure_1_20(callback, closure_1);
-              closure_1_19(first3(callback2, callback(12138).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
+              closure_1_19(first3(callback2, callback(12206).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
               table = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = callback2(12136).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
+              obj1[0] = callback2(12204).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -201,9 +201,9 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             return obj;
           } else {
             if (null != arg1) {
-              closure_1_19(first3(closure_1, callback(12138).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
+              closure_1_19(first3(closure_1, callback(12206).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
             } else {
-              closure_1_19(first3(closure_1, callback(12138).PollMediaUploadAttachmentStatus.ERROR), callback);
+              closure_1_19(first3(closure_1, callback(12206).PollMediaUploadAttachmentStatus.ERROR), callback);
             }
             c6 = 3;
           }
@@ -230,19 +230,19 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
   const callback5 = obj.useCallback((arg0, arg1, arg2) => {
     const objectURL = URL.createObjectURL(arg2);
     callback3(arg0, arg1);
-    let obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "context" };
+    let obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "isArray" };
     obj = { status: callback(initialQuestion[9]).PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL };
     obj[0] = obj;
     callback2(obj, arg1);
     const result = callback2(initialQuestion[7]).handlePollMediaAttachmentAdd(arg0, first[arg1].localCreationAnswerId, arg2);
-    obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "context" };
+    obj = { mediaAttachmentState: null, emoji: "Array", stickerId: "isArray" };
     const obj3 = callback2(initialQuestion[7]);
     obj[0] = { status: callback(initialQuestion[9]).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL };
     callback2(obj, arg1);
   }, items2);
   const callback6 = obj.useCallback((emoji) => {
     callback3(id, arg1);
-    callback2({ emoji, stickerId: "Array", mediaAttachmentState: "context" }, arg1);
+    callback2({ emoji, stickerId: "Array", mediaAttachmentState: "isArray" }, arg1);
   }, items3);
   const items4 = [first.length < first1];
   const callback7 = obj.useCallback((arg0) => {

@@ -1,17 +1,17 @@
-// Module ID: 17509
-// Function ID: 17510
+// Module ID: 17589
+// Function ID: 17590
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7875, 21, 709, 4481, 17510, 12411, 4934, 4477, 1233, 17511, 17512, 13925, 7149, 2]
+// Dependencies: [19, 17, 7944, 21, 576, 4560, 17590, 12479, 4973, 4556, 1114, 17591, 17592, 13915, 7209, 2]
 // Exports: default
 
-// Module 17509 (GuildSettingsServerTagBadgeGrid)
-import ThemesDefault from "Themes" /* 709 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17510 */;
+// Module 17589 (GuildSettingsServerTagBadgeGrid)
+import ThemesDefault from "Themes" /* 576 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17590 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { GuildTagBadgeSize } from "items" /* 7875 */;
+import { GuildTagBadgeSize } from "items" /* 7944 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
@@ -36,9 +36,9 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   }, items);
   let obj = { spacing: ThemesDefault.space.PX_8, children: null };
   obj = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: null };
-  const intl = guildId(1233).intl;
-  obj[3] = intl.string(guildId(1233).t.wRnfnY);
-  const items1 = [callback(guildId(4477).Text, obj), , ];
+  const intl = guildId(1114).intl;
+  obj[3] = intl.string(guildId(1114).t.wRnfnY);
+  const items1 = [callback(guildId(4556).Text, obj), , ];
   obj = {
     accessibilityRole: "radiogroup",
     style: tmp.grid,
@@ -62,8 +62,8 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   let tmp6Result = lockedBadges.length > 0;
   if (tmp6Result) {
     obj1 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    const intl2 = tmp7(1233).intl;
-    obj1[1] = intl2.string(tmp7(1233).t.U5p3GZ);
+    const intl2 = tmp7(1114).intl;
+    obj1[1] = intl2.string(tmp7(1114).t.U5p3GZ);
     obj1[2] = callback;
     obj1[3] = tmp.upsellCard;
     const obj2 = { style: null, children: null };
@@ -73,16 +73,16 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     const items2 = [tmp8(closure_5, obj2), , ];
     const obj3 = { variant: "text-md/medium", color: "text-subtle", style: null, children: null };
     obj3[2] = tmp.upsellText;
-    const intl3 = tmp7(1233).intl;
-    obj3[3] = intl3.string(tmp7(1233).t.U5p3GZ);
-    items2[1] = tmp8(tmp7(4477).Text, obj3);
+    const intl3 = tmp7(1114).intl;
+    obj3[3] = intl3.string(tmp7(1114).t.U5p3GZ);
+    items2[1] = tmp8(tmp7(4556).Text, obj3);
     const obj4 = { size: "md", color: null };
     obj4[1] = ThemesDefault.colors.ICON_SUBTLE;
-    items2[2] = tmp8(tmp7(7149).ChevronSmallRightIcon, obj4);
+    items2[2] = tmp8(tmp7(7209).ChevronSmallRightIcon, obj4);
     obj1[4] = items2;
     tmp6Result = tmp6(closure_4, obj1);
   }
   items1[2] = tmp6Result;
   obj[1] = items1;
-  return closure_8(guildId(4934).Stack, obj);
+  return closure_8(guildId(4973).Stack, obj);
 };

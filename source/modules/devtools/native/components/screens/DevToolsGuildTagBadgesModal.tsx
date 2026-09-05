@@ -1,17 +1,17 @@
-// Module ID: 15627
-// Function ID: 15628
-// Dependencies: [19, 21, 7844, 6940, 7795, 10856, 15628, 2]
+// Module ID: 15703
+// Function ID: 15704
+// Dependencies: [19, 21, 7913, 7000, 7863, 10925, 15704, 2]
 
-// Module 15627
-import itemsDefault from "items" /* 15628 */;
+// Module 15703
+import itemsDefault from "items" /* 15704 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7913 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
 let closure_4 = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo(function DevToolsGuildTagBadgesModal() {
-  let obj = _require(6940);
+  let obj = _require(7000);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

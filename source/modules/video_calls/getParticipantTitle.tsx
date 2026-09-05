@@ -1,14 +1,14 @@
-// Module ID: 9977
-// Function ID: 9978
+// Module ID: 10048
+// Function ID: 10049
 // Name: getParticipantTitle
-// Dependencies: [4502, 9978, 4680, 1233, 2]
+// Dependencies: [4581, 10049, 4712, 1114, 2]
 // Exports: default
 
-// Module 9977 (getParticipantTitle)
+// Module 10048 (getParticipantTitle)
 import set from "set" /* 2 */;
-import ParticipantTypes2 from "ParticipantTypes" /* 4502 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import useIsGuestOrLurker from "useIsGuestOrLurker" /* 9978 */;
+import ParticipantTypes2 from "ParticipantTypes" /* 4581 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 10049 */;
 
 const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
 let result = set.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
@@ -34,9 +34,9 @@ export default function getParticipantTitle(guild_id, type, name) {
     let str = "";
     const name1 = getNicknameDefault.getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
-      const intl = tmp10(1233).intl;
+      const intl = tmp10(1114).intl;
       const _HermesInternal = HermesInternal;
-      str = " " + intl.string(tmp10(1233).t["pFO/Ph"]);
+      str = " " + intl.string(tmp10(1114).t["pFO/Ph"]);
     }
     return name1 + str;
   }

@@ -1,11 +1,11 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 13834
+// Function ID: 13835
 // Name: IS_OVERLAY_DEV_ENV
-// Dependencies: [1234, 2]
+// Dependencies: [1115, 2]
 
-// Module 13844 (IS_OVERLAY_DEV_ENV)
+// Module 13834 (IS_OVERLAY_DEV_ENV)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
+import set2 from "set" /* 1115 */;
 
 let flag = set2.isPlatformEmbedded;
 if (flag) {

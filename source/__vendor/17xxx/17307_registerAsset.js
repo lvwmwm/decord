@@ -1,0 +1,10 @@
+// Module ID: 17307
+// Function ID: 17308
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 17307 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_gate/native/images", width: 24, height: 24, scales: [2, 3], hash: "d591eaa154611b58ebc00af8c514af58", name: "check", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 7162
-// Function ID: 7163
+// Module ID: 7222
+// Function ID: 7223
 // Name: useCanSeeOnboardingHome
-// Dependencies: [1983, 1386, 1908, 4715, 673, 1393, 7163, 644, 1911, 7046, 4717, 2]
+// Dependencies: [2014, 1957, 1979, 4747, 1074, 1964, 7223, 563, 1982, 7106, 4749, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 7162 (useCanSeeOnboardingHome)
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7163 */;
-import closure_3 from "initialize" /* 1983 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleSettingsLoadSuccess" /* 4715 */;
-import ME from "ME" /* 673 */;
-import { ChannelFlags } from "set" /* 1393 */;
+// Module 7222 (useCanSeeOnboardingHome)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7223 */;
+import closure_3 from "initialize" /* 2014 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 4747 */;
+import ME from "ME" /* 1074 */;
+import { ChannelFlags } from "set" /* 1964 */;
 
 require = arg1;
 ({ GuildFeatures: error, ME: closure_8 } = ME);
@@ -24,7 +24,7 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
   importDefault = tmp;
   const items = [closure_4, closure_5, closure_3];
   const items1 = [guild_id, tmp];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     if (guild_id !== closure_1_8) {
       if (!obj3.isFavoritesGuildId(tmp2)) {
         let has = closure_1_5.getGuild(tmp2);
@@ -117,7 +117,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          let result = tmp14(7046).isGuildOnboardingSettingsAvailable(id);
+          let result = tmp14(7106).isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

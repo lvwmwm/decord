@@ -1,12 +1,12 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12301
+// Function ID: 12302
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 12234, 6940, 5553, 2]
+// Dependencies: [19, 21, 12302, 7000, 5598, 2]
 // Exports: default
 
-// Module 12233 (GuildDirectorySearchModal)
+// Module 12301 (GuildDirectorySearchModal)
 import noopAll from "noop" /* 19 */;
-import useInitialValueDefault from "useInitialValue" /* 5553 */;
+import useInitialValueDefault from "useInitialValue" /* 5598 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/directory_channels/
 
 export default function GuildDirectorySearchModal(arg0) {
   const _require = arg0;
-  return jsx(_require(6940).Navigator, {
+  return jsx(_require(7000).Navigator, {
     screens: useInitialValueDefault(() => ({
       [closure_1_4]: {
         fullscreen: true,

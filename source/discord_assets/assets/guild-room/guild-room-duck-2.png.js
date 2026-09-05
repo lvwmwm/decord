@@ -1,9 +1,9 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4738
+// Function ID: 4739
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4706 (metadata)
+// Module 4738 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-duck-2.png.js");

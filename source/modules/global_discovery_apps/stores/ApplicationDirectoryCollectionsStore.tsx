@@ -1,12 +1,12 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12073
+// Function ID: 12074
 // Name: getLastFetchTimeMs
-// Dependencies: [12, 586, 706, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 12005 (getLastFetchTimeMs)
+// Module 12073 (getLastFetchTimeMs)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
 let closure_3 = [];

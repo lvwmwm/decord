@@ -1,10 +1,10 @@
-// Module ID: 5237
-// Function ID: 5238
+// Module ID: 5276
+// Function ID: 5277
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 5237 (requireSortedDescending)
+// Module 5276 (requireSortedDescending)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;

@@ -1,15 +1,15 @@
-// Module ID: 10834
-// Function ID: 10835
+// Module ID: 10903
+// Function ID: 10904
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: [19, 1938, 685, 4197, 709, 1939, 2]
+// Dependencies: [19, 1389, 1091, 4262, 576, 1390, 2]
 // Exports: default
 
-// Module 10834 (useDisplayNameStylesEffectDefaultColors)
-import int2hslRaw from "int2hslRaw" /* 685 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
+// Module 10903 (useDisplayNameStylesEffectDefaultColors)
+import ThemesDefault from "Themes" /* 576 */;
+import int2hslRaw from "int2hslRaw" /* 1091 */;
+import map from "map" /* 4262 */;
 import closure_3 from "noop" /* 19 */;
-import items3 from "items3" /* 1938 */;
+import items3 from "items3" /* 1389 */;
 
 require = arg1;
 ({ DISPLAY_NAME_STYLES_GRADIENT_PRESETS: c4, DISPLAY_NAME_STYLES_GUMMY_PRESETS: c5, DISPLAY_NAME_STYLES_PRISM_PRESETS: closure_6 } = items3);

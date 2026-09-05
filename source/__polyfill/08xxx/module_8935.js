@@ -1,10 +1,24 @@
 // Module ID: 8935
 // Function ID: 8936
-// Dependencies: [8865, 8869]
+// Dependencies: [8936, 8937, 8938, 8940, 8941, 8943, 8939, 8942, 8945, 8995, 8944, 8996, 8997, 8998, 8999, 9000]
 
 // Module 8935
-import _mod8865 from "module_8865" /* 8865 */;
-import mergeDefs from "mergeDefs" /* 8869 */;
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 8936 */;
+import _mod8937 from "module_8937" /* 8937 */;
+import toDotPath from "toDotPath" /* 8938 */;
+import mergeDefs from "mergeDefs" /* 8939 */;
+import isValidBase64 from "isValidBase64" /* 8940 */;
+import _mod8941 from "module_8941" /* 8941 */;
+import mergeDefs2 from "mergeDefs" /* 8942 */;
+import _mod8943 from "module_8943" /* 8943 */;
+import Doc from "Doc" /* 8944 */;
+import _mod8945 from "module_8945" /* 8945 */;
+import $output from "$output" /* 8995 */;
+import _mod8996 from "module_8996" /* 8996 */;
+import initializeContext from "initializeContext" /* 8997 */;
+import stringProcessor from "stringProcessor" /* 8998 */;
+import JSONSchemaGenerator from "JSONSchemaGenerator" /* 8999 */;
+import _mod9000 from "module_9000" /* 9000 */;
 
 const self = this;
 let self2 = this;
@@ -19,10 +33,41 @@ if (self2) {
   if (__setModuleDefault) {
     let fn = self;
     if (self) {
-      fn = self.__importStar;
+      fn = self.__exportStar;
     }
     if (!fn) {
-      fn = (__esModule) => {
+      fn = (obj, exports) => {
+        for (const key10007 in arg0) {
+          let tmp5 = key10007;
+          let tmp6 = "default" === key10007;
+          if (tmp6) {
+            if (tmp6) {
+              continue;
+            } else {
+              let tmp3 = self2;
+              let tmp4 = self2(arg1, arg0, key10007);
+              continue;
+            }
+            continue;
+          } else {
+            let _Object = Object;
+            let call = hasOwnProperty.call;
+            if (typeof call === "unknown") {
+              let hasOwnPropertyResult = hasOwnProperty(key10007);
+            } else {
+              hasOwnPropertyResult = call(arg1, key10007);
+            }
+            let tmp2 = hasOwnPropertyResult;
+          }
+        }
+      };
+    }
+    let fn2 = self;
+    if (self) {
+      fn2 = self.__importStar;
+    }
+    if (!fn2) {
+      fn2 = (__esModule) => {
         if (__esModule) {
           if (__esModule.__esModule) {
             return __esModule;
@@ -59,57 +104,38 @@ if (self2) {
       };
     }
     const _Object3 = Object;
-    exports.ZodError = undefined;
-    exports.ZodRealError = undefined;
-    const fnResult = fn(_mod8865);
-    let c4 = fnResult;
-    let closure_5 = fn(mergeDefs);
-    function initializer(prototype) {
-      const _require = prototype;
-      const $ZodError = _require(8865).$ZodError;
-      $ZodError.init(prototype, arg1);
-      prototype.name = "ZodError";
-      let obj = {
-        value(arg0) {
-          return closure_1_4.formatError(closure_0, arg0);
-        }
-      };
-      obj = {
-        value(arg0) {
-          return closure_1_4.flattenError(closure_0, arg0);
-        }
-      };
-      obj = {
-        value(arg0) {
-          const issues = prototype.issues;
-          issues.push(arg0);
-          prototype.message = JSON.stringify(prototype.issues, closure_1_5.jsonStringifyReplacer, 2);
-        }
-      };
-      Object.defineProperties(prototype, {
-        format: obj,
-        flatten: obj,
-        addIssue: obj,
-        addIssues: {
-          value(arg0) {
-            const issues = prototype.issues;
-            const items = [...arg0];
-            issues.push.apply(items);
-            prototype.message = JSON.stringify(prototype.issues, closure_1_5.jsonStringifyReplacer, 2);
-          }
-        },
-        isEmpty: {
-          get() {
-            return 0 === prototype.issues.length;
-          }
-        }
-      });
-    }
-    exports.ZodError = fnResult.$constructor("ZodError", initializer);
-    let obj = { Parent: null };
-    const _Error = Error;
-    obj[0] = Error;
-    exports.ZodRealError = fnResult.$constructor("ZodError", initializer, obj);
+    exports.util = undefined;
+    exports.regexes = undefined;
+    exports.locales = undefined;
+    exports.toJSONSchema = undefined;
+    exports.JSONSchemaGenerator = undefined;
+    exports.JSONSchema = undefined;
+    fn(_isNativeReflectConstruct, exports);
+    fn(_mod8937, exports);
+    fn(toDotPath, exports);
+    fn(isValidBase64, exports);
+    fn(_mod8941, exports);
+    fn(_mod8943, exports);
+    exports.util = fn2(mergeDefs);
+    exports.regexes = fn2(mergeDefs2);
+    exports.locales = fn2(_mod8945);
+    fn($output, exports);
+    fn(Doc, exports);
+    fn(_mod8996, exports);
+    fn(initializeContext, exports);
+    const _Object4 = Object;
+    let obj = { enumerable: true, get: null };
+    obj[1] = function get() {
+      return stringProcessor.toJSONSchema;
+    };
+    Object.defineProperty(exports, "toJSONSchema", obj);
+    const _Object5 = Object;
+    obj = { enumerable: true, get: null };
+    obj[1] = function get() {
+      return JSONSchemaGenerator.JSONSchemaGenerator;
+    };
+    Object.defineProperty(exports, "JSONSchemaGenerator", obj);
+    exports.JSONSchema = fn2(_mod9000);
   } else {
     const _Object2 = Object;
   }

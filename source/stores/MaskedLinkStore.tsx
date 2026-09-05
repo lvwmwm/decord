@@ -1,15 +1,15 @@
-// Module ID: 8302
-// Function ID: 8303
+// Module ID: 8372
+// Function ID: 8373
 // Name: set
-// Dependencies: [8270, 8303, 1485, 592, 586, 706, 2]
+// Dependencies: [8340, 8373, 1365, 510, 504, 573, 2]
 
-// Module 8302 (set)
-import initializeDefault from "initialize" /* 586 */;
-import Storage2 from "Storage" /* 592 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8270 */;
-import getHostname from "getHostname" /* 8303 */;
+// Module 8372 (set)
+import initializeDefault from "initialize" /* 504 */;
+import Storage2 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8340 */;
+import getHostname from "getHostname" /* 8373 */;
 import set from "set" /* 2 */;
 
 const SPOTIFY_HOSTNAMES = SPOTIFY_APP_PROTOCOL.SPOTIFY_HOSTNAMES;
@@ -127,8 +127,8 @@ const maskedLinkStore = new MaskedLinkStore(dispatcherDefault, {
     if (flag) {
       return false;
     } else {
-      set.add(tmp(8303).getHostname(url));
-      const Storage = tmp(592).Storage;
+      set.add(tmp(8373).getHostname(url));
+      const Storage = tmp(510).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;
       obj[1] = set1;
@@ -141,8 +141,8 @@ const maskedLinkStore = new MaskedLinkStore(dispatcherDefault, {
     if (set1.has(obj.getProtocol(url))) {
       return false;
     } else {
-      set1.add(tmp(8303).getProtocol(url));
-      const Storage = tmp(592).Storage;
+      set1.add(tmp(8373).getProtocol(url));
+      const Storage = tmp(510).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;
       obj[1] = set1;

@@ -1,12 +1,12 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11723
+// Function ID: 11724
 // Name: useVoteReactors
-// Dependencies: [7694, 673, 586, 7695, 656, 2]
+// Dependencies: [7762, 1074, 504, 7763, 1332, 2]
 // Exports: default
 
-// Module 11655 (useVoteReactors)
-import closure_3 from "reactionKey" /* 7694 */;
-import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME" /* 673 */;
+// Module 11723 (useVoteReactors)
+import closure_3 from "reactionKey" /* 7762 */;
+import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/polls/useVoteReactors.tsx");

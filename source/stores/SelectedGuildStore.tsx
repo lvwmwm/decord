@@ -1,19 +1,19 @@
-// Module ID: 4302
-// Function ID: 4303
+// Module ID: 4381
+// Function ID: 4382
 // Name: handleConnectionOpen
-// Dependencies: [4303, 1215, 4306, 1908, 673, 1219, 586, 4307, 4320, 706, 2]
+// Dependencies: [4382, 502, 4385, 1979, 1074, 1100, 504, 4386, 4399, 573, 2]
 
-// Module 4302 (handleConnectionOpen)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import matchPath from "matchPath" /* 4307 */;
-import RouteParam2 from "RouteParam" /* 4320 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "initialize" /* 4306 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
+// Module 4381 (handleConnectionOpen)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import matchPath from "matchPath" /* 4386 */;
+import RouteParam2 from "RouteParam" /* 4399 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "initialize" /* 4385 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function handleConnectionOpen() {

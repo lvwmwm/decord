@@ -1,15 +1,15 @@
-// Module ID: 1995
-// Function ID: 1996
+// Module ID: 2025
+// Function ID: 2026
 // Name: _getSystemLocale
-// Dependencies: [5, 1996, 1339, 4103, 1233, 586, 706, 2]
+// Dependencies: [5, 2026, 1221, 4182, 1114, 504, 573, 2]
 
-// Module 1995 (_getSystemLocale)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 2025 (_getSystemLocale)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { setAppLocale } from "_setAppLocale" /* 1996 */;
-import closure_5 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { systemLocale } from "getSystemLocale" /* 1233 */;
+import { setAppLocale } from "_setAppLocale" /* 2026 */;
+import closure_5 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { systemLocale } from "getSystemLocale" /* 1114 */;
 
 const require = arg1;
 function _getSystemLocale() {
@@ -44,7 +44,7 @@ function _getSystemLocale() {
             closure_1 = tmp2;
             let callback = tmp3;
             callback = undefined;
-            const tmp25 = closure_1_1(4103);
+            const tmp25 = closure_1_1(4182);
             let prop;
             if (tmp25 != null) {
               const app = tmp25.app;
@@ -53,7 +53,7 @@ function _getSystemLocale() {
               }
             }
             if (null != prop) {
-              const app2 = tmp23(4103).app;
+              const app2 = tmp23(4182).app;
               const preferredSystemLanguages = app2.getPreferredSystemLanguages();
               dependencyMap = 1;
               c3 = 1;
@@ -84,7 +84,7 @@ function _getSystemLocale() {
         }
         c3 = 3;
         const obj3 = { value: null, done: true };
-        obj3[0] = callback(1233).systemLocale;
+        obj3[0] = callback(1114).systemLocale;
         return obj3;
       } catch (tmp15) {
         c3 = tmp;

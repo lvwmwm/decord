@@ -1,28 +1,28 @@
-// Module ID: 15646
-// Function ID: 15647
+// Module ID: 15722
+// Function ID: 15723
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1921, 11295, 21, 4481, 709, 586, 4325, 1498, 5647, 4477, 1233, 4936, 11302, 15647, 11308, 5579, 11326, 4731, 11303, 6940, 2]
+// Dependencies: [32, 19, 17, 1371, 11363, 21, 4560, 576, 504, 4404, 1483, 5692, 4556, 1114, 4975, 11370, 15723, 11376, 5624, 11394, 4763, 11371, 7000, 2]
 // Exports: default
 
-// Module 15646 (IntroScreen)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11308 */;
-import TakeActionButtonsDefault from "TakeActionButtons" /* 15647 */;
+// Module 15722 (IntroScreen)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11376 */;
+import TakeActionButtonsDefault from "TakeActionButtons" /* 15723 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { useState } from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11295 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11363 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function IntroScreen(arg0) {
@@ -104,35 +104,35 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = callback4();
   let obj = { style: tmp.container, children: null };
-  const items = [callback2(trackAnalyticsEvent(5647).SafetyChatSpotIllustration, {}), , ];
+  const items = [callback2(trackAnalyticsEvent(5692).SafetyChatSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
-  const intl = trackAnalyticsEvent(1233).intl;
-  obj[3] = intl.string(trackAnalyticsEvent(1233).t.NUMAsF);
-  const items1 = [callback2(trackAnalyticsEvent(4477).Text, obj), ];
+  const intl = trackAnalyticsEvent(1114).intl;
+  obj[3] = intl.string(trackAnalyticsEvent(1114).t.NUMAsF);
+  const items1 = [callback2(trackAnalyticsEvent(4556).Text, obj), ];
   obj1 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: null };
-  const intl2 = trackAnalyticsEvent(1233).intl;
-  obj1[2] = intl2.string(trackAnalyticsEvent(1233).t.uicS5l);
-  items1[1] = callback2(trackAnalyticsEvent(4477).Text, obj1);
+  const intl2 = trackAnalyticsEvent(1114).intl;
+  obj1[2] = intl2.string(trackAnalyticsEvent(1114).t.uicS5l);
+  items1[1] = callback2(trackAnalyticsEvent(4556).Text, obj1);
   obj[1] = items1;
   items[1] = callback3(closure_7, obj);
   const obj2 = { style: tmp.ctaContainer, children: null };
   const obj3 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
-  const intl3 = trackAnalyticsEvent(1233).intl;
-  obj3[2] = intl3.string(trackAnalyticsEvent(1233).t.lkUb4S);
+  const intl3 = trackAnalyticsEvent(1114).intl;
+  obj3[2] = intl3.string(trackAnalyticsEvent(1114).t.lkUb4S);
   obj3[4] = function onPress() {
     closure_1_6.openURL(closure_1_9);
     trackAnalyticsEvent(trackAnalyticsEvent(closure_1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
-  const items2 = [callback2(trackAnalyticsEvent(4936).Button, obj3), ];
+  const items2 = [callback2(trackAnalyticsEvent(4975).Button, obj3), ];
   const obj4 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
-  const intl4 = trackAnalyticsEvent(1233).intl;
-  obj4[2] = intl4.string(trackAnalyticsEvent(1233).t.ogLlvy);
+  const intl4 = trackAnalyticsEvent(1114).intl;
+  obj4[2] = intl4.string(trackAnalyticsEvent(1114).t.ogLlvy);
   obj4[4] = function onPress() {
     closure_1_6.openURL(closure_1_10);
     trackAnalyticsEvent(trackAnalyticsEvent(closure_1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_WEB);
   };
-  items2[1] = callback2(trackAnalyticsEvent(4936).Button, obj4);
+  items2[1] = callback2(trackAnalyticsEvent(4975).Button, obj4);
   obj2[1] = items2;
   items[2] = callback3(closure_7, obj2);
   obj[1] = items;

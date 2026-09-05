@@ -1,14 +1,14 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 12542
+// Function ID: 12543
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4401, 1984, 1908, 586, 7067, 4371, 1233, 2400, 2]
+// Dependencies: [19, 4480, 2015, 1979, 504, 7127, 4453, 1114, 2428, 2]
 // Exports: default
 
-// Module 12474 (useDeactivateWarningText)
+// Module 12542 (useDeactivateWarningText)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleInviteData" /* 4401 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_4 from "handleInviteData" /* 4480 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useDeactivateWarningText.tsx");

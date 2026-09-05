@@ -1,13 +1,13 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16186
+// Function ID: 16187
 // Name: useLiveStageChannels
-// Dependencies: [1386, 4120, 1391, 1395, 586, 1394, 11, 2]
+// Dependencies: [1957, 4199, 1962, 1965, 504, 1369, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 16108 (useLiveStageChannels)
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
+// Module 16186 (useLiveStageChannels)
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useLiveStageChannels.tsx");
@@ -16,19 +16,19 @@ export default function useLiveStageChannels(arg0) {
   let stateFromStoresArray = arg0;
   const items = [closure_5];
   const items1 = [arg0];
-  stateFromStoresArray = stateFromStoresArray(586).useStateFromStoresArray(items, () => stateFromStoresArray1(closure_1_2[6]).keys(closure_1_5.getStageInstancesByGuild(stateFromStoresArray)), items1);
+  stateFromStoresArray = stateFromStoresArray(504).useStateFromStoresArray(items, () => stateFromStoresArray1(closure_1_2[6]).keys(closure_1_5.getStageInstancesByGuild(stateFromStoresArray)), items1);
   let stateFromStoresArray1;
-  const obj = stateFromStoresArray(586);
+  const obj = stateFromStoresArray(504);
   const items2 = [closure_3];
   const items3 = [stateFromStoresArray];
-  stateFromStoresArray1 = stateFromStoresArray(586).useStateFromStoresArray(items2, () => {
+  stateFromStoresArray1 = stateFromStoresArray(504).useStateFromStoresArray(items2, () => {
     const mapped = stateFromStores.map((arg0) => channel.getChannel(arg0));
     return mapped.filter(stateFromStores(closure_1_2[5]).isNotNullish);
   }, items3);
-  const obj2 = stateFromStoresArray(586);
+  const obj2 = stateFromStoresArray(504);
   const items4 = [closure_4];
   const items5 = [stateFromStoresArray1];
-  return stateFromStoresArray(586).useStateFromStoresArray(items4, () => stateFromStoresArray.filter((arg0) => closure_4.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items5);
+  return stateFromStoresArray(504).useStateFromStoresArray(items4, () => stateFromStoresArray.filter((arg0) => closure_4.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items5);
 };
 export const getAllLiveStageChannels = function getAllLiveStageChannels() {
   allStageInstances = allStageInstances.getAllStageInstances();
@@ -46,20 +46,20 @@ export const getAllLiveStageChannels = function getAllLiveStageChannels() {
 };
 export const useAllLiveStageChannels = function useAllLiveStageChannels() {
   const items = [closure_5];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => {
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => {
     allStageInstances = allStageInstances.getAllStageInstances();
     return allStageInstances.map((channel_id) => channel_id.channel_id);
   }, []);
   let stateFromStoresArray;
-  const obj = stateFromStores(586);
+  const obj = stateFromStores(504);
   const items1 = [closure_3];
   const items2 = [stateFromStores];
-  stateFromStoresArray = stateFromStores(586).useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = stateFromStores(504).useStateFromStoresArray(items1, () => {
     const mapped = stateFromStores.map((arg0) => channel.getChannel(arg0));
     return mapped.filter(stateFromStores(closure_1_2[5]).isNotNullish);
   }, items2);
-  const obj2 = stateFromStores(586);
+  const obj2 = stateFromStores(504);
   const items3 = [closure_4];
   const items4 = [stateFromStoresArray];
-  return stateFromStores(586).useStateFromStoresArray(items3, () => stateFromStoresArray.filter((arg0) => closure_4.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items4);
+  return stateFromStores(504).useStateFromStoresArray(items3, () => stateFromStoresArray.filter((arg0) => closure_4.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items4);
 };

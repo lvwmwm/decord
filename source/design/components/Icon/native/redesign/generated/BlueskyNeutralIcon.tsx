@@ -1,14 +1,14 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8890
+// Function ID: 8891
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 8821, 2]
+// Dependencies: [19, 21, 576, 4261, 8891, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 8820 (BlueskyNeutralIcon)
+// Module 8890 (BlueskyNeutralIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8821 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8891 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

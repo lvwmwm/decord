@@ -1,21 +1,21 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 9986
+// Function ID: 9987
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4545, 21, 1234, 4481, 709, 4197, 9916, 8208, 4976, 1233, 5062, 2]
+// Dependencies: [19, 17, 4585, 21, 1115, 4560, 576, 4262, 9987, 8278, 5015, 1114, 5101, 2]
 // Exports: default
 
-// Module 9915 (VolumeSlider)
+// Module 9986 (VolumeSlider)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5062 */;
-import _modDef8208 from "module_8208" /* 8208 */;
-import VoiceXIcon from "VoiceXIcon" /* 9916 */;
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5101 */;
+import _modDef8278 from "module_8278" /* 8278 */;
+import VoiceXIcon from "VoiceXIcon" /* 9987 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4545 */;
+import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4585 */;
 import jsxProd from "jsxProd" /* 21 */;
-import set from "set" /* 1234 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import set from "set" /* 1115 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -49,21 +49,21 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: tmp4.leftIcon };
   const items1 = [callback(VoiceXIcon.VoiceXIcon, obj), , ];
   obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
-  let tmp5Result = tmp5(4976);
+  let tmp5Result = tmp5(5015);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);
   obj1[3] = maxVolume;
   obj1[4] = minTrackColor;
   obj1[5] = PRIMARY_400;
   if (accessibilityLabel == null) {
-    const intl = tmp5(1233).intl;
-    accessibilityLabel = intl.string(tmp5(1233).t.xPHVBs);
+    const intl = tmp5(1114).intl;
+    accessibilityLabel = intl.string(tmp5(1114).t.xPHVBs);
   }
   obj1[6] = accessibilityLabel;
   obj1[7] = function onValueChange(arg0) {
     return callback(closure_1_0(closure_1_2[10]).perceptualToAmplitude(arg0));
   };
   if (onResponderGrant == null) {
-    tmp5Result = tmp5(1234);
+    tmp5Result = tmp5(1115);
     let fn;
     if (tmp5Result.isAndroid()) {
       fn = () => true;
@@ -71,7 +71,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     onResponderGrant = fn;
   }
   obj1[8] = onResponderGrant;
-  items1[1] = callback(_modDef8208, obj1);
+  items1[1] = callback(_modDef8278, obj1);
   items1[2] = callback(VoiceNormalIcon.VoiceNormalIcon, { style: tmp4.rightIcon });
   obj[1] = items1;
   return closure_6(View, obj);

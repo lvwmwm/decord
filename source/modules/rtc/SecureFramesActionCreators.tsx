@@ -1,16 +1,16 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 9153
+// Function ID: 9154
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1215, 1386, 4500, 9081, 673, 706, 9079, 4379, 4865, 1233, 9083, 5372, 2]
+// Dependencies: [5, 502, 1957, 4579, 9152, 1074, 573, 9150, 4461, 4904, 1114, 9154, 5411, 2]
 
-// Module 9082 (savePersistentCodesEnabled)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 9153 (savePersistentCodesEnabled)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "updateVoiceState" /* 4500 */;
-import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
-import { ChannelTypes } from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "updateVoiceState" /* 4579 */;
+import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 
 const require = arg1;
 function savePersistentCodesEnabled() {
@@ -81,18 +81,18 @@ function _savePersistentCodesEnabled() {
             if (1 === tmp8) {
               c6 = 0;
               dependencyMap = closure_5;
-              aPIError = new callback(4379).APIError(dependencyMap);
-              obj1 = aPIError(706);
+              aPIError = new callback(4461).APIError(dependencyMap);
+              obj1 = aPIError(573);
               obj1.dispatch({ type: "SECURE_FRAMES_SETTINGS_UPDATE", persistentCodesEnabled: false });
-              obj2 = aPIError(4865);
+              obj2 = aPIError(4904);
               const obj3 = { title: null, body: null };
-              const intl = callback(1233).intl;
-              obj3[0] = intl.string(callback(1233).t.R0RpRX);
+              const intl = callback(1114).intl;
+              obj3[0] = intl.string(callback(1114).t.R0RpRX);
               const anyErrorMessage = aPIError.getAnyErrorMessage();
               dependencyMap = anyErrorMessage;
               if (anyErrorMessage == null) {
-                const intl2 = callback(1233).intl;
-                dependencyMap = intl2.string(callback(1233).t.eAn6z2);
+                const intl2 = callback(1114).intl;
+                dependencyMap = intl2.string(callback(1114).t.eAn6z2);
               }
               obj3[1] = dependencyMap;
               obj2.show(obj3);
@@ -192,10 +192,10 @@ function _updatePersistentCodesEnabled() {
               })();
               dependencyMap = tmp19;
               if (null != tmp19) {
-                let obj2 = v0(9083);
-                const intl = callback(1233).intl;
+                let obj2 = v0(9154);
+                const intl = callback(1114).intl;
                 const string = intl.string;
-                const t = callback(1233).t;
+                const t = callback(1114).t;
                 if (tmp18) {
                   let stringResult = string(t.DRFN1B);
                   let tmp10 = tmp8;
@@ -205,17 +205,17 @@ function _updatePersistentCodesEnabled() {
                 }
                 obj1 = { title: null, subtitle: null, confirmText: null, onConfirm: null };
                 obj1[0] = stringResult;
-                const intl2 = tmp10(1233).intl;
+                const intl2 = tmp10(1114).intl;
                 const string2 = intl2.string;
-                let intl3 = tmp10(1233).t;
+                let intl3 = tmp10(1114).t;
                 if (tmp18) {
                   let string2Result = string2(intl3.y015ZY);
                 } else {
                   string2Result = string2(intl3.E66FQn);
                 }
                 obj1[1] = string2Result;
-                intl3 = tmp10(1233).intl;
-                obj1[2] = intl3.string(tmp10(1233).t.aTuFYT);
+                intl3 = tmp10(1114).intl;
+                obj1[2] = intl3.string(tmp10(1114).t.aTuFYT);
                 v0 = closure_1_3(function*() {
                   if (c0 === 2) {
                     c0 = 3;

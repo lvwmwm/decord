@@ -1,16 +1,16 @@
-// Module ID: 7965
-// Function ID: 7966
+// Module ID: 8034
+// Function ID: 8035
 // Name: isPublicSystemMessage
-// Dependencies: [7966, 673, 7967, 7968, 695, 4708, 2]
+// Dependencies: [8035, 1074, 8036, 8037, 1242, 4740, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 7965 (isPublicSystemMessage)
+// Module 8034 (isPublicSystemMessage)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import isCrosspostDefault from "isCrosspost" /* 7967 */;
-import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7966 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import isCrosspostDefault from "isCrosspost" /* 8036 */;
+import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 8035 */;
 
 ({ PUBLIC_GUILD_ANNOUNCEMENTS_GUILD_ID: c3, PUBLIC_GUILD_UPDATES_WEBHOOK_USER_ID: c4, ENABLE_COMMUNITY_FLOW_MODAL_KEY: c5 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
 const AnalyticEvents = ME.AnalyticEvents;
@@ -31,7 +31,7 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return importDefault(7968);
+  return importDefault(8037);
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
   let obj = expandEventPropertiesDefault;

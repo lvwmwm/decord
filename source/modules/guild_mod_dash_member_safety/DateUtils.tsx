@@ -1,13 +1,13 @@
-// Module ID: 7431
-// Function ID: 7432
+// Module ID: 7498
+// Function ID: 7499
 // Name: getJoinedAtDateFormatter
-// Dependencies: [1233, 7432, 2]
+// Dependencies: [1114, 7499, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp, getMembersTableTimestampFormatter
 
-// Module 7431 (getJoinedAtDateFormatter)
+// Module 7498 (getJoinedAtDateFormatter)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getTimestampStringDefault from "getTimestampString" /* 7432 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getTimestampStringDefault from "getTimestampString" /* 7499 */;
 
 function getJoinedAtDateFormatter() {
   return { seconds: getSystemLocale.t["FsBhl/"], minutes: getSystemLocale.t["4d1mgT"], hours: getSystemLocale.t["2wkczD"], days: getSystemLocale.t["ocdS+f"], months: getSystemLocale.t["az14+h"], years: getSystemLocale.t["5Gk1ns"] };

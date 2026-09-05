@@ -1,14 +1,14 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 14979
+// Function ID: 14980
 // Name: pressable
-// Dependencies: [5, 4738, 12, 1623, 5100, 4731, 13878, 2008, 11400, 1233, 14807, 2]
+// Dependencies: [5, 4770, 12, 1608, 5139, 4763, 13868, 1896, 11468, 1114, 14882, 2]
 
-// Module 14904 (pressable)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4738 */;
+// Module 14979 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4770 */;
 import apply from "apply" /* 12 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 apply = {

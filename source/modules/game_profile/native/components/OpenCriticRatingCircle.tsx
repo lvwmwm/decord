@@ -1,14 +1,14 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8731
+// Function ID: 8732
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 8383, 2]
+// Dependencies: [21, 8453, 2]
 // Exports: default
 
-// Module 8661 (OpenCriticRatingCircle)
+// Module 8731 (OpenCriticRatingCircle)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import inlineStyles from "inlineStyles" /* 8383 */;
-import inlineStylesDefault from "inlineStyles" /* 8383 */;
+import inlineStyles from "inlineStyles" /* 8453 */;
+import inlineStylesDefault from "inlineStyles" /* 8453 */;
 
 const jsx = jsxProd.jsx;
 let result = set.fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");

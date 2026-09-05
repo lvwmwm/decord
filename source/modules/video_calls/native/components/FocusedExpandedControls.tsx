@@ -1,30 +1,30 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 10014
+// Function ID: 10015
 // Name: ExpandedControlItemIcon
-// Dependencies: [19, 17, 4503, 1215, 4545, 21, 4481, 709, 1296, 9944, 9945, 8523, 586, 9946, 1233, 9915, 1234, 9012, 9043, 9880, 9947, 9932, 9948, 9949, 2]
+// Dependencies: [19, 17, 4582, 502, 4585, 21, 4560, 576, 1178, 10015, 10016, 8593, 504, 10017, 1114, 9986, 1115, 9082, 9114, 9951, 10018, 10003, 10019, 10020, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 9943 (ExpandedControlItemIcon)
+// Module 10014 (ExpandedControlItemIcon)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Form from "Form" /* 8523 */;
-import _handleToggleVideo from "_handleToggleVideo" /* 9012 */;
-import stopScreenshareDefault from "stopScreenshare" /* 9880 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9915 */;
-import NOOP from "NOOP" /* 9932 */;
-import registerAssetDefault from "registerAsset" /* 9944 */;
-import registerAssetDefault2 from "registerAsset" /* 9945 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9946 */;
-import useDeafStatesDefault from "useDeafStates" /* 9947 */;
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Form from "Form" /* 8593 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9082 */;
+import stopScreenshareDefault from "stopScreenshare" /* 9951 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9986 */;
+import NOOP from "NOOP" /* 10003 */;
+import registerAssetDefault from "registerAsset" /* 10015 */;
+import registerAssetDefault2 from "registerAsset" /* 10016 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10017 */;
+import useDeafStatesDefault from "useDeafStates" /* 10018 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reset" /* 4503 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
+import closure_5 from "reset" /* 4582 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4585 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ExpandedControlItemIcon(iconSource) {
@@ -114,7 +114,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   const tmp6 = useMuteAwareLocalVolumeDefault;
   ({ effectiveVolume, handleVolumeChange } = useMuteAwareLocalVolumeDefault(ownerId, MediaEngineContextTypes.STREAM));
   obj = { text: null, style: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj[0] = intl.string(getSystemLocale.t.pEAl4b);
   const items1 = [tmp.formColor, { marginBottom: 16 }];
   obj[1] = items1;
@@ -125,8 +125,8 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (tmp2Result.isAndroid()) {
     fn = () => true;
   }
-  obj = { onResponderGrant: fn, value: effectiveVolume, onValueChange: handleVolumeChange, color: tmp5(709).unsafe_rawColors.WHITE, maxTrackTintColor: tmp5(709).unsafe_rawColors.PRIMARY_300, accessibilityLabel: null };
-  const intl2 = tmp2(1233).intl;
+  obj = { onResponderGrant: fn, value: effectiveVolume, onValueChange: handleVolumeChange, color: tmp5(576).unsafe_rawColors.WHITE, maxTrackTintColor: tmp5(576).unsafe_rawColors.PRIMARY_300, accessibilityLabel: null };
+  const intl2 = tmp2(1114).intl;
   obj[5] = intl2.string(getSystemLocale.t.pEAl4b);
   items2[1] = callback(tmp5Result, obj);
   { children: null }[0] = items2;
@@ -134,7 +134,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (null != stateFromStores) {
     obj1 = { label: null };
     obj1[0] = tmp11;
-    tmp9Result = tmp9(tmp2(8523).FormRow, obj1);
+    tmp9Result = tmp9(tmp2(8593).FormRow, obj1);
   }
   return tmp9Result;
 };
@@ -167,8 +167,8 @@ export const DeafenButton = function DeafenButton(disabled) {
   }
   let obj = NOOP;
   const deafHandler = obj.createDeafHandler(useDeafStatesDefault(disabled.channel));
-  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 9948 : 9949), label: null };
-  const intl = tmp4(1233).intl;
+  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10019 : 10020), label: null };
+  const intl = tmp4(1114).intl;
   obj[3] = intl.string(getSystemLocale.t.wjcRFX);
   return callback(ExpandedControlItem, obj);
 };

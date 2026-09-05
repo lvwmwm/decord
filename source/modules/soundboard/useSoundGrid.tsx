@@ -1,21 +1,21 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 17063
+// Function ID: 17064
 // Name: createSoundItems
-// Dependencies: [32, 19, 1386, 1908, 4120, 1980, 1921, 4973, 4975, 1923, 4981, 4372, 16986, 586, 4139, 16987, 9600, 16988, 4953, 16989, 2]
+// Dependencies: [32, 19, 1957, 1979, 4199, 2011, 1371, 5012, 5014, 1373, 5020, 4454, 17064, 504, 4218, 17065, 9671, 17066, 4992, 17067, 2]
 // Exports: default, useSearchCategories
 
-// Module 16985 (createSoundItems)
-import SoundButtonOverlay from "SoundButtonOverlay" /* 4981 */;
+// Module 17063 (createSoundItems)
+import SoundButtonOverlay from "SoundButtonOverlay" /* 5020 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "handleSoundCreateOrUpdate" /* 4973 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import closure_10 from "handleSoundCreateOrUpdate" /* 5012 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 5014 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 function createSoundItems(items) {

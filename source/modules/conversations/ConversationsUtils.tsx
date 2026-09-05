@@ -1,10 +1,10 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7599
+// Function ID: 7600
 // Name: mapConversation
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 7532 (mapConversation)
+// Module 7599 (mapConversation)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");

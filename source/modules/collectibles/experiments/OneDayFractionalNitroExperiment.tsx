@@ -1,13 +1,13 @@
-// Module ID: 8800
-// Function ID: 8801
+// Module ID: 8870
+// Function ID: 8871
 // Name: apexExperiment
-// Dependencies: [1468, 8801, 2]
+// Dependencies: [1433, 8871, 2]
 // Exports: useOneDayFractionalNitroEnabled
 
-// Module 8800 (apexExperiment)
+// Module 8870 (apexExperiment)
 import set from "set" /* 2 */;
-import usePremiumGroupExperimentDefault from "usePremiumGroupExperiment" /* 8801 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import usePremiumGroupExperimentDefault from "usePremiumGroupExperiment" /* 8871 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-one-day-fractional-nitro", kind: "user", defaultConfig: false, variations: { 1: true } });
 const result = set.fileFinishedImporting("modules/collectibles/experiments/OneDayFractionalNitroExperiment.tsx");

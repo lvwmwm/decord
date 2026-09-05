@@ -1,13 +1,13 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14545
+// Function ID: 14546
 // Name: _initialize
-// Dependencies: [7591, 673, 4669, 706, 7103, 2]
+// Dependencies: [7658, 1074, 1898, 573, 7163, 2]
 
-// Module 14470 (_initialize)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 4669 */;
-import closure_2 from "recountRelationshipTypes" /* 7591 */;
-import { RelationshipTypes } from "ME" /* 673 */;
+// Module 14545 (_initialize)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import initializeDefault from "initialize" /* 1898 */;
+import closure_2 from "recountRelationshipTypes" /* 7658 */;
+import { RelationshipTypes } from "ME" /* 1074 */;
 
 initializeDefault;
 class GameRelationshipManager extends tmp2 {

@@ -1,16 +1,16 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 8367
+// Function ID: 8368
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4481, 709, 4924, 8298, 8299, 1233, 5635, 5532, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4963, 8368, 8369, 1114, 5680, 5577, 4556, 2]
 // Exports: default
 
-// Module 8297 (SharePreparingModal)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef8299 from "module_8299" /* 8299 */;
+// Module 8367 (SharePreparingModal)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef8369 from "module_8369" /* 8369 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -32,22 +32,22 @@ export default function SharePreparingModal(onCancel) {
   const items = [onCancel];
   const effect = React.useEffect(() => () => callback(), items);
   let obj = { style: tmp.content, children: null };
-  const items1 = [callback(onCancel(4924).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
+  const items1 = [callback(onCancel(4963).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
   obj = { style: tmp.topBar, pointerEvents: "box-none", children: null };
   obj = { style: tmp.topBarEnd, children: null };
   obj1 = { accessibilityLabel: null, icon: null, onPress: null };
-  const intl = onCancel(1233).intl;
-  obj1[0] = intl.string(onCancel(1233).t.cpT0Cq);
-  obj1[1] = callback(onCancel(5635).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  const intl = onCancel(1114).intl;
+  obj1[0] = intl.string(onCancel(1114).t.cpT0Cq);
+  obj1[1] = callback(onCancel(5680).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj1[2] = onCancel;
-  obj[1] = callback(_modDef8299, obj1);
-  obj[2] = callback(onCancel(8298).MediaModalOverlayHeaderWrapper, obj);
+  obj[1] = callback(_modDef8369, obj1);
+  obj[2] = callback(onCancel(8368).MediaModalOverlayHeaderWrapper, obj);
   items1[1] = callback(closure_4, obj);
-  items1[2] = callback(onCancel(5532).ActivityIndicator, {});
+  items1[2] = callback(onCancel(5577).ActivityIndicator, {});
   const obj2 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
-  const intl2 = onCancel(1233).intl;
-  obj2[2] = intl2.string(onCancel(1233).t.DwTQE5);
-  items1[3] = callback(onCancel(4477).Text, obj2);
+  const intl2 = onCancel(1114).intl;
+  obj2[2] = intl2.string(onCancel(1114).t.DwTQE5);
+  items1[3] = callback(onCancel(4556).Text, obj2);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

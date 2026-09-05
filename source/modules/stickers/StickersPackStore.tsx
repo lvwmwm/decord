@@ -1,14 +1,14 @@
-// Module ID: 5464
-// Function ID: 5465
+// Module ID: 5504
+// Function ID: 5505
 // Name: parseServerPackSticker
-// Dependencies: [32, 1428, 1909, 684, 5229, 2]
+// Dependencies: [32, 1973, 1980, 1090, 5268, 2]
 
-// Module 5464 (parseServerPackSticker)
-import setDefault from "set" /* 684 */;
-import StickerFormat from "StickerFormat" /* 5229 */;
+// Module 5504 (parseServerPackSticker)
+import setDefault from "set" /* 1090 */;
+import StickerFormat from "StickerFormat" /* 5268 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { TypeTag } from "TypeTag" /* 1428 */;
-import { LibdiscoreStore } from "identity" /* 1909 */;
+import { TypeTag } from "TypeTag" /* 1973 */;
+import { LibdiscoreStore } from "identity" /* 1980 */;
 
 require = arg1;
 function parseServerPackSticker(id) {

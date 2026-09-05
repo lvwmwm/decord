@@ -1,14 +1,14 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13895
+// Function ID: 13896
 // Name: useFilteredGuilds
-// Dependencies: [19, 1908, 5398, 1921, 586, 38, 2]
+// Dependencies: [19, 1979, 5438, 1371, 504, 38, 2]
 // Exports: default
 
-// Module 13905 (useFilteredGuilds)
+// Module 13895 (useFilteredGuilds)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "insertUnsortedGuilds" /* 5398 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "insertUnsortedGuilds" /* 5438 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_settings_picker/useFilteredGuilds.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 13714
+// Function ID: 13715
 // Name: GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 
-// Module 13638 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
+// Module 13714 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null, 2: { enabled: true, cardAction: "join" } };
 obj[2] = { enabled: true, cardAction: "preview" };

@@ -1,16 +1,16 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8165
+// Function ID: 8166
 // Name: guildHasTag
-// Dependencies: [1991, 1908, 1921, 7875, 673, 586, 4126, 2]
+// Dependencies: [2021, 1979, 1371, 7944, 1074, 504, 4205, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8096 (guildHasTag)
-import GuildMemberFlags from "GuildMemberFlags" /* 4126 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import items from "items" /* 7875 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 8165 (guildHasTag)
+import GuildMemberFlags from "GuildMemberFlags" /* 4205 */;
+import closure_2 from "trackCommunicationDisabled" /* 2021 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import items from "items" /* 7944 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 require = arg1;
 ({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: c5, GuildTagBadgeSize: closure_6 } = items);
@@ -54,7 +54,7 @@ export const getUserPrimaryGuild = function getUserPrimaryGuild(primaryGuild) {
 export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
   let tmp = arg0;
   const _require = arg0;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_3];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getGuild(closure_0), items1);
@@ -84,13 +84,13 @@ export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, 
   const _require = arg0;
   dependencyMap = arg1;
   let tmp = arg2;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_4];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getUser(closure_0), items1);
   const items2 = [closure_2];
   const items3 = [arg1, arg0];
-  const stateFromStores1 = _require(586).useStateFromStores(items2, () => {
+  const stateFromStores1 = _require(504).useStateFromStores(items2, () => {
     if (null != table) {
       if (null != callback) {
         const member = closure_1_2.getMember(tmp, tmp2);

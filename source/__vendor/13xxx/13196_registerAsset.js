@@ -1,0 +1,10 @@
+// Module ID: 13196
+// Function ID: 13197
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 13196 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "8ea6c899915dc4dfb91fde69307aaf42", name: "chest_idle", type: "png" });

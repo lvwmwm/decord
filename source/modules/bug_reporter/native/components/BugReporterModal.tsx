@@ -1,27 +1,27 @@
-// Module ID: 10114
-// Function ID: 10115
+// Module ID: 10185
+// Function ID: 10186
 // Name: handleClose
-// Dependencies: [5, 32, 19, 17, 1921, 10113, 21, 4481, 709, 686, 684, 4731, 1498, 586, 1233, 5579, 5089, 4194, 6932, 10115, 581, 10116, 9495, 7315, 5643, 5542, 1431, 5111, 4934, 4477, 5562, 10125, 5084, 1296, 4936, 6547, 5642, 5560, 4448, 10140, 2008, 5640, 7025, 705, 10143, 10105, 6940, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 10184, 21, 4560, 576, 672, 1090, 4763, 1483, 504, 1114, 5624, 5128, 4259, 6992, 10186, 559, 10187, 9566, 7377, 5688, 5587, 1396, 5150, 4973, 4556, 5607, 10196, 5123, 1178, 4975, 6606, 5687, 5605, 4527, 10211, 1896, 5685, 7085, 1348, 10214, 10176, 7000, 2]
 // Exports: default
 
-// Module 10114 (handleClose)
-import setDefault from "set" /* 684 */;
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4731 from "module_4731" /* 4731 */;
+// Module 10185 (handleClose)
+import ThemesDefault from "Themes" /* 576 */;
+import setDefault from "set" /* 1090 */;
+import _modDef4763 from "module_4763" /* 4763 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "zustandStore" /* 10113 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "zustandStore" /* 10184 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "n" /* 686 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "n" /* 672 */;
 
 const require = arg1;
 function handleClose() {
   state.setState({ isReportOpen: false });
-  let arr = _modDef4731;
+  let arr = _modDef4763;
   arr = arr.pop();
 }
 class BugCreateScreen {
@@ -86,7 +86,7 @@ class BugCreateScreen {
                 closure_1 = undefined;
                 obj2 = undefined;
                 c3 = undefined;
-                obj1 = closure_1_1(5111);
+                obj1 = closure_1_1(5150);
                 obj2 = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
@@ -110,9 +110,9 @@ class BugCreateScreen {
                 const merged = Object.assign(closure_1);
                 obj2.uri = closure_1.uri;
                 obj2.originalUri = closure_1.uri;
-                obj2.platform = closure_1_0(5089).UploadPlatform.REACT_NATIVE;
+                obj2.platform = closure_1_0(5128).UploadPlatform.REACT_NATIVE;
                 obj2.filename = closure_1.fileName;
-                const tmp35 = new closure_1_1(5089)(obj2);
+                const tmp35 = new closure_1_1(5128)(obj2);
                 c3 = tmp35;
                 closure_23.current = closure_7.length;
                 callback((arg0) => {
@@ -303,7 +303,7 @@ class BugCreateScreen {
                       closure_2 = arg2;
                       c5 = 0;
                       c6 = 0;
-                      return (/* F125670 */ function*() { ... })();
+                      return (/* F125956 */ function*() { ... })();
                     });
                     closure_3 = tmp;
                     const apply = tmp.apply;
@@ -784,6 +784,6 @@ export default function BugReportModal(screenshotUri) {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(screenshotUri(6940).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return callback(screenshotUri(7000).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 };
 export { BugCreateScreen };

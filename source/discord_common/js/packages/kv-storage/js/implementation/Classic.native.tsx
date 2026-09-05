@@ -1,9 +1,9 @@
-// Module ID: 1958
-// Function ID: 1959
+// Module ID: 1989
+// Function ID: 1990
 // Name: __KvStorage
 // Dependencies: [17, 2]
 
-// Module 1958 (__KvStorage)
+// Module 1989 (__KvStorage)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

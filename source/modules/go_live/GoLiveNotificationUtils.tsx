@@ -1,15 +1,15 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15497
+// Function ID: 15498
 // Name: onGoLiveNotificationSettingsChanged
-// Dependencies: [673, 4133, 4166, 695, 2]
+// Dependencies: [1074, 4212, 1935, 1242, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 15421 (onGoLiveNotificationSettingsChanged)
+// Module 15497 (onGoLiveNotificationSettingsChanged)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4133 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4212 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = AccountNotificationFlags.NotificationSettingsUpdateType;

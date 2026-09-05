@@ -1,14 +1,14 @@
-// Module ID: 8682
-// Function ID: 8683
+// Module ID: 8752
+// Function ID: 8753
 // Name: toAnnouncementMessages
-// Dependencies: [4131, 1954, 4752, 4678, 8683, 4745, 8684, 1233, 1485, 2]
+// Dependencies: [4210, 1894, 4791, 4710, 8753, 4783, 8754, 1114, 1365, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8682 (toAnnouncementMessages)
+// Module 8752 (toAnnouncementMessages)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import hasFlag from "hasFlag" /* 4131 */;
-import formatExpirationLabel from "formatExpirationLabel" /* 8684 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import hasFlag from "hasFlag" /* 4210 */;
+import formatExpirationLabel from "formatExpirationLabel" /* 8754 */;
 
 const isMessageComponentsV2 = hasFlag.isMessageComponentsV2;
 const re4 = /^#{1,3}\s+(.+)$/;
@@ -249,8 +249,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   let result = formatExpirationLabel.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1233).intl;
-    result = intl.string(tmp(1233).t["e+J3JZ"]);
+    const intl = tmp(1114).intl;
+    result = intl.string(tmp(1114).t["e+J3JZ"]);
   }
   return result;
 };

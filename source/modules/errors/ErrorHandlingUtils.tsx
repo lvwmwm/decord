@@ -1,12 +1,12 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7339
+// Function ID: 7340
 // Name: items
-// Dependencies: [673, 1205, 2]
+// Dependencies: [1074, 1232, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 7277 (items)
-import ME from "ME" /* 673 */;
-import _modDef1205 from "module_1205" /* 1205 */;
+// Module 7339 (items)
+import ME from "ME" /* 1074 */;
+import _modDef1232 from "module_1232" /* 1232 */;
 import set from "set" /* 2 */;
 
 const items = [, , ];
@@ -72,7 +72,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
     tmp = flag;
   }
   if (!tmp) {
-    _modDef1205.captureException(aPIError);
-    const obj = _modDef1205;
+    _modDef1232.captureException(aPIError);
+    const obj = _modDef1232;
   }
 };

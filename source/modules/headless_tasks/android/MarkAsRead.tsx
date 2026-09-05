@@ -1,11 +1,11 @@
-// Module ID: 17853
-// Function ID: 17854
+// Module ID: 17933
+// Function ID: 17934
 // Name: promise
-// Dependencies: [673, 7050, 2]
+// Dependencies: [1074, 7110, 2]
 
-// Module 17853 (promise)
+// Module 17933 (promise)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 ({ AnalyticsObjectTypes: obj1, AnalyticsObjects: c3 } = ME);
 const result = set.fileFinishedImporting("modules/headless_tasks/android/MarkAsRead.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8159
+// Function ID: 8160
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8091, 8094, 644, 8095, 8097, 8098, 2]
+// Dependencies: [19, 8160, 8163, 563, 8164, 8166, 8167, 2]
 // Exports: default
 
-// Module 8090 (usePendingAvatarSettings)
+// Module 8159 (usePendingAvatarSettings)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "handleFormOpen" /* 8091 */;
+import closure_4 from "handleFormOpen" /* 8160 */;
 
 noop.useCallback;
 let result = set.fileFinishedImporting("modules/user_profile/hooks/usePendingAvatarSettings.tsx");
@@ -16,9 +16,9 @@ export default function usePendingAvatarSettings(isTryItOut) {
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
   dependencyMap = undefined;
-  const tmp2 = guildId(8094)(isTryItOut.analyticsLocations);
+  const tmp2 = guildId(8163)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
-  let obj = isTryItOut(644);
+  let obj = isTryItOut(563);
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let obj = closure_1_4;
@@ -39,18 +39,18 @@ export default function usePendingAvatarSettings(isTryItOut) {
   const items1 = [guildId];
   ({ pendingAvatar, pendingAvatarDecoration, pendingErrors } = stateFromStoresObject);
   let setTryItOutAvatar = useCallback((avatar) => {
-    let obj = isTryItOut(8095);
+    let obj = isTryItOut(8164);
     obj = { guildId, avatar };
     obj.setPendingChanges(obj);
     let str = "set";
     if (null == avatar) {
       str = "remove";
     }
-    const result = isTryItOut(8097).announcePendingAvatarChange(str);
+    const result = isTryItOut(8166).announcePendingAvatarChange(str);
   }, items1);
   const items2 = [tmp2, guildId];
   let setTryItOutAvatarDecoration = useCallback((avatarDecoration) => {
-    let obj = isTryItOut(8095);
+    let obj = isTryItOut(8164);
     obj = { guildId, avatarDecoration };
     obj.setPendingChanges(obj);
     if (null != avatarDecoration) {
@@ -59,11 +59,11 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   obj = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: null, setPendingAvatarDecoration: null };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(8098).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(8167).setTryItOutAvatar;
   }
   obj[3] = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(8098).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(8167).setTryItOutAvatarDecoration;
   }
   obj[4] = setTryItOutAvatarDecoration;
   return obj;

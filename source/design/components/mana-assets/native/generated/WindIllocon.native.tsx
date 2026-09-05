@@ -1,14 +1,14 @@
-// Module ID: 6516
-// Function ID: 6517
+// Module ID: 6575
+// Function ID: 6576
 // Name: WindIllocon
-// Dependencies: [21, 5542, 6517, 2]
+// Dependencies: [21, 5587, 6576, 2]
 // Exports: WindIllocon
 
-// Module 6516 (WindIllocon)
+// Module 6575 (WindIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6517 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6576 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WindIllocon.native.tsx");

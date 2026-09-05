@@ -1,20 +1,20 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 9169
+// Function ID: 9170
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 4557, 1921, 9081, 673, 21, 4481, 709, 9085, 9099, 9060, 9088, 586, 9091, 8112, 4680, 9079, 9090, 8725, 9100, 4448, 4194, 4441, 1233, 7090, 7089, 7139, 4477, 9092, 4934, 4936, 2]
+// Dependencies: [32, 19, 17, 4583, 1371, 9152, 1074, 21, 4560, 576, 9156, 9170, 9131, 9159, 504, 9162, 8181, 4712, 9150, 9161, 8795, 9171, 4527, 4259, 4520, 1114, 7150, 7149, 7199, 4556, 9163, 4973, 4975, 2]
 // Exports: default
 
-// Module 9098 (SecureFramesUserVerificationBottomSheet)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 9169 (SecureFramesUserVerificationBottomSheet)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createRTCConnection" /* 4557 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
-import { AnalyticsLocations } from "ME" /* 673 */;
+import closure_7 from "createRTCConnection" /* 4583 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
+import { AnalyticsLocations } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);

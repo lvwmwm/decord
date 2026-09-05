@@ -1,10 +1,10 @@
 // Module ID: 9927
 // Function ID: 9928
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9927 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "a075205f01081abc73c7a94b31634a53", name: "krisp_logo_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "bb061f50f0c26bcf1817896eee7a9443", name: "ic_raised_hand_list", type: "png" });

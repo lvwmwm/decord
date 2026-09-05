@@ -1,12 +1,12 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11498
+// Function ID: 11499
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 4190, 4184, 1233, 11431, 2]
+// Dependencies: [5, 4255, 4249, 1114, 11499, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 11430 (_getAppStoreOverlayContent)
-import _openURL from "_openURL" /* 4184 */;
-import _modDef4190 from "module_4190" /* 4190 */;
+// Module 11498 (_getAppStoreOverlayContent)
+import _openURL from "_openURL" /* 4249 */;
+import _modDef4255 from "module_4255" /* 4255 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -80,8 +80,8 @@ function _getAppStoreOverlayContent() {
                 const items = [];
                 if (tmp) {
                   let obj = { type: "rating", label: null, rating: null, ratingCount: null };
-                  const intl = callback(1233).intl;
-                  obj[1] = intl.string(callback(1233).t["9bEWZJ"]);
+                  const intl = callback(1114).intl;
+                  obj[1] = intl.string(callback(1114).t["9bEWZJ"]);
                   ({ rating: obj[2], rating_count } = closure_2);
                   obj[3] = rating_count;
                   items.push(obj);
@@ -92,17 +92,17 @@ function _getAppStoreOverlayContent() {
                 }
                 if (tmp5) {
                   obj = { type: "age", label: null, ageRating: null, ageRatingLabel: null };
-                  const intl2 = callback(1233).intl;
-                  obj[1] = intl2.string(callback(1233).t.ncrlHJ);
+                  const intl2 = callback(1114).intl;
+                  obj[1] = intl2.string(callback(1114).t.ncrlHJ);
                   obj[2] = closure_2.age_rating;
-                  const intl3 = callback(1233).intl;
-                  obj[3] = intl3.string(callback(1233).t.wK1svU);
+                  const intl3 = callback(1114).intl;
+                  obj[3] = intl3.string(callback(1114).t.wK1svU);
                   items.push(obj);
                 }
                 if (null != closure_2.chart_rank) {
                   obj = { type: "chart", label: null, rank: null, category: null };
-                  const intl4 = callback(1233).intl;
-                  obj[1] = intl4.string(callback(1233).t["x/ERbV"]);
+                  const intl4 = callback(1114).intl;
+                  obj[1] = intl4.string(callback(1114).t["x/ERbV"]);
                   ({ chart_rank: obj3[2], category } = closure_2);
                   obj[3] = category;
                   items.push(obj);
@@ -170,8 +170,8 @@ export const openAppStoreReviews = function openAppStoreReviews(storeUrl, platfo
     if (null != appId) {
       if ("" !== appId) {
         const _HermesInternal = HermesInternal;
-        _modDef4190.performURLNavigation("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + appId + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software");
-        const obj = _modDef4190;
+        _modDef4255.performURLNavigation("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + appId + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software");
+        const obj = _modDef4255;
       }
     }
   }

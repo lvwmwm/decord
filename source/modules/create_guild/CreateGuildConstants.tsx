@@ -1,15 +1,15 @@
-// Module ID: 12639
-// Function ID: 12640
+// Module ID: 12707
+// Function ID: 12708
 // Name: GuildTemplateId
-// Dependencies: [673, 1233, 4125, 503, 2]
+// Dependencies: [1074, 1114, 4204, 1086, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 12639 (GuildTemplateId)
+// Module 12707 (GuildTemplateId)
 import set from "set" /* 2 */;
-import fromStringAll from "fromString" /* 503 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import ME from "ME" /* 673 */;
+import fromStringAll from "fromString" /* 1086 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import ME from "ME" /* 1074 */;
 
 ({ ChannelTypes: c3, Permissions: c4 } = ME);
 let obj = { CREATE: "CREATE", GAMING: "GAMING", FRIENDS: "FRIENDS", STUDY: "STUDY", CLUBS: "CLUBS", CREATORS: "CREATORS", LOCAL_COMMUNITY: "LOCAL_COMMUNITY", SCHOOL_CLUB: "SCHOOL_CLUB" };

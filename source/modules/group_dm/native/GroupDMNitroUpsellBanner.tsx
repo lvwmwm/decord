@@ -1,27 +1,27 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16688
+// Function ID: 16689
 // Name: FloatingBanner
-// Dependencies: [32, 19, 17, 4473, 11525, 21, 709, 4481, 1627, 16612, 4197, 4218, 686, 4935, 4948, 586, 11526, 11523, 11530, 16613, 4936, 1233, 7982, 4477, 2]
+// Dependencies: [32, 19, 17, 4552, 11593, 21, 576, 4560, 1611, 16689, 4262, 4296, 672, 4974, 4987, 504, 11594, 11591, 11598, 16690, 4975, 1114, 8051, 4556, 2]
 // Exports: default
 
-// Module 16611 (FloatingBanner)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import registerAssetDefault from "registerAsset" /* 7982 */;
-import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11523 */;
-import getGroupDMNitroCapConfigDefault from "getGroupDMNitroCapConfig" /* 11526 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11530 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16613 */;
+// Module 16688 (FloatingBanner)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import registerAssetDefault from "registerAsset" /* 8051 */;
+import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11591 */;
+import getGroupDMNitroCapConfigDefault from "getGroupDMNitroCapConfig" /* 11594 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11598 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16690 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_8 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 11525 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_8 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 11593 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function FloatingBanner(children) {
@@ -212,7 +212,7 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
   }
   obj = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: null, children: null };
   obj1 = { text: null, size: "sm", variant: "experimental_premium-primary", shiny: null, icon: null, onPress: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   const tmp5Result = GroupDMNitroCapBannerDefault;
   obj1[0] = intl.string(GroupDMNitroAcquisitionStrategy.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
   let tmp15 = tmp9;
@@ -224,16 +224,14 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
   obj1[5] = tmp7Result;
   obj[2] = closure_9(Button.Button, obj1);
   obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = tmp2(1233).intl;
+  const intl2 = tmp2(1114).intl;
   obj2[2] = intl2.string(getSystemLocale.t.KCD0Hp);
   const items2 = [closure_9(Text.Text, obj2), ];
-  const intl3 = tmp2(1233).intl;
-  if ("upgrade" === groupDMNitroAudience) {
-  } else {
-  }
-  const tmp2Result = GroupDMNitroAcquisitionStrategy;
+  const obj3 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
+  const intl3 = tmp2(1114).intl;
   obj4 = { number: closure_8 };
-  items2[1] = closure_9(Text.Text, { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(_8o8Zk5, obj4) });
+  obj3[2] = intl3.formatToPlainString(getSystemLocale.t["8o8Zk5"], obj4);
+  items2[1] = closure_9(Text.Text, obj3);
   obj[3] = items2;
   const tmp11Result = tmp11(tmp5Result, obj);
   let tmp14Result = tmp11Result;

@@ -1,22 +1,22 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16355
+// Function ID: 16356
 // Name: componentWillEnter
-// Dependencies: [19, 17, 4473, 673, 21, 4481, 5479, 709, 4329, 4205, 4449, 4450, 1296, 1233, 586, 12355, 2]
+// Dependencies: [19, 17, 4552, 1074, 21, 4560, 5524, 576, 4409, 4271, 4528, 4529, 1178, 1114, 504, 12423, 2]
 // Exports: default
 
-// Module 16279 (componentWillEnter)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import _toPropertyKey from "_toPropertyKey" /* 12355 */;
+// Module 16355 (componentWillEnter)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import _toPropertyKey from "_toPropertyKey" /* 12423 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 require = arg1;
 let c3 = importAllResult;

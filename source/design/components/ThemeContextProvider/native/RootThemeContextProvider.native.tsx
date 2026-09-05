@@ -1,12 +1,12 @@
-// Module ID: 10004
-// Function ID: 10005
+// Module ID: 10075
+// Function ID: 10076
 // Name: RootThemeContextProvider
-// Dependencies: [19, 502, 21, 4205, 2]
+// Dependencies: [19, 1085, 21, 4271, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10004 (RootThemeContextProvider)
+// Module 10075 (RootThemeContextProvider)
 import closure_2 from "noop" /* 19 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -63,7 +63,7 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   return num(DARK(primaryColor[3]).ThemeContext.Provider, { value, children: children.children });
 };
 export const DisableCustomTheme = function DisableCustomTheme(children) {
-  let obj = themeContext(4205);
+  let obj = themeContext(4271);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = React.useMemo(() => {
@@ -76,5 +76,5 @@ export const DisableCustomTheme = function DisableCustomTheme(children) {
     return obj.createThemedContext(obj);
   }, items);
   obj = { value: memo, children: children.children };
-  return jsx(themeContext(4205).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(4271).ThemeContext.Provider, { value: memo, children: children.children });
 };

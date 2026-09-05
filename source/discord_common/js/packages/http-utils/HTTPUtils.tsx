@@ -1,17 +1,17 @@
-// Module ID: 527
-// Function ID: 528
+// Module ID: 1272
+// Function ID: 1273
 // Name: sendRequest
-// Dependencies: [4, 528, 581, 582, 583, 2, 584, 585]
+// Dependencies: [4, 1273, 559, 1326, 1327, 2, 1328, 1329]
 // Exports: getAPIBaseURL, getRateLimitFloorMs, isRateLimitedStatus, makeRateLimitedResponse, parseRetryAfter, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
-// Module 527 (sendRequest)
+// Module 1272 (sendRequest)
 import log from "log" /* 4 */;
-import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 528 */;
-import failsDefault from "fails" /* 581 */;
-import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 582 */;
-import convertSkemaError from "convertSkemaError" /* 583 */;
-import stringifyErrors from "stringifyErrors" /* 584 */;
-import getFieldMessage from "getFieldMessage" /* 585 */;
+import failsDefault from "fails" /* 559 */;
+import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 1273 */;
+import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 1326 */;
+import convertSkemaError from "convertSkemaError" /* 1327 */;
+import stringifyErrors from "stringifyErrors" /* 1328 */;
+import getFieldMessage from "getFieldMessage" /* 1329 */;
 import set from "set" /* 2 */;
 
 function sendRequest(arg0, signal) {
@@ -142,7 +142,7 @@ function sendRequest(arg0, signal) {
             if (null != tmp.backoff) {
               let backoff = tmp.backoff;
             } else {
-              backoff = new signal(581)();
+              backoff = new signal(559)();
             }
             tmp.backoff = backoff;
             let num5 = 0;
@@ -221,11 +221,11 @@ function sendRequest(arg0, signal) {
                 if (body2 != null) {
                   code = body2.code;
                 }
-                if (code === callback(582).INVALID_FORM_BODY_ERROR_CODE) {
+                if (code === callback(1326).INVALID_FORM_BODY_ERROR_CODE) {
                   const errors = obj.body.errors;
                   if (null != errors) {
-                    obj.body = tmp17(583).convertSkemaError(errors);
-                    const tmp17Result = tmp17(583);
+                    obj.body = tmp17(1327).convertSkemaError(errors);
+                    const tmp17Result = tmp17(1327);
                   }
                 }
                 tmp17 = callback;
@@ -276,7 +276,7 @@ function sendRequest(arg0, signal) {
             if (null != tmp.backoff) {
               let backoff = tmp.backoff;
             } else {
-              backoff = new signal(581)();
+              backoff = new signal(559)();
             }
             tmp.backoff = backoff;
             let num2 = 0;

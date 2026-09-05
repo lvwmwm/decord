@@ -1,19 +1,19 @@
-// Module ID: 13185
-// Function ID: 13186
+// Module ID: 13253
+// Function ID: 13254
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4481, 709, 1234, 1296, 4943, 5084, 4477, 7801, 2]
+// Dependencies: [19, 21, 4560, 576, 1115, 1178, 4982, 5123, 4556, 7869, 2]
 // Exports: default
 
-// Module 13185 (ButtonBadge)
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import getFontScale from "getFontScale" /* 4943 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7801 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
+// Module 13253 (ButtonBadge)
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import getFontScale from "getFontScale" /* 4982 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7869 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7869 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class ButtonBadge {
@@ -64,7 +64,7 @@ let closure_7 = importAllResult.memo((color) => {
   const items = [tmp, color, source];
   if (null != IconComponent) {
     let obj = { size: "sm", color: null };
-    obj[1] = color(709).colors.ICON_SUBTLE;
+    obj[1] = color(576).colors.ICON_SUBTLE;
     let tmp2Result = callback(IconComponent, obj);
   } else {
     tmp2Result = tmp2();
@@ -114,7 +114,7 @@ export default function IconActionButton(variant) {
     obj[1] = buttonTextColor;
     obj[2] = tmp.actionText;
     obj[3] = buttonText;
-    tmp10Result = tmp10(tmp2(4477).Text, obj);
+    tmp10Result = tmp10(tmp2(4556).Text, obj);
   }
   items1[1] = tmp10Result;
   tmp10Result = null;
@@ -122,7 +122,7 @@ export default function IconActionButton(variant) {
     obj = { style: null, value: null };
     obj[0] = tmp.countStyle;
     obj[1] = num;
-    tmp10Result = tmp10(tmp2(1296).Badge, obj);
+    tmp10Result = tmp10(tmp2(1178).Badge, obj);
   }
   items1[2] = tmp10Result;
   if (badge) {

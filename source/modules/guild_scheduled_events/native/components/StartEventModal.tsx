@@ -1,39 +1,39 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 9809
+// Function ID: 9810
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1386, 1908, 1392, 9628, 21, 4481, 709, 4731, 5084, 1233, 1296, 7029, 4477, 9737, 586, 9600, 9739, 7063, 8340, 9742, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 1957, 1979, 1963, 9699, 21, 4560, 576, 4763, 5123, 1114, 1178, 7089, 4556, 9808, 504, 9671, 9810, 7123, 8410, 9813, 4975, 2]
 // Exports: default
 
-// Module 9738 (NavigationBar)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import registerAssetDefault from "registerAsset" /* 7029 */;
-import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9737 */;
+// Module 9809 (NavigationBar)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import registerAssetDefault from "registerAsset" /* 7089 */;
+import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9808 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9628 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9699 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function NavigationBar(onClose) {
   onClose = onClose.onClose;
   let obj = { children: null };
   obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-  const intl = onClose(1233).intl;
-  obj[1] = intl.string(onClose(1233).t.cpT0Cq);
+  const intl = onClose(1114).intl;
+  obj[1] = intl.string(onClose(1114).t.cpT0Cq);
   obj[2] = function onPress() {
     return onClose();
   };
   obj = { source: registerAssetDefault };
-  obj[3] = callback(onClose(1296).Icon, obj);
-  obj[0] = callback(onClose(5084).PressableOpacity, obj);
+  obj[3] = callback(onClose(1178).Icon, obj);
+  obj[0] = callback(onClose(5123).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(children) {

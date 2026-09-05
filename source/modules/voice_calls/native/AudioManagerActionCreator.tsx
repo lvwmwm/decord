@@ -1,12 +1,12 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9117
+// Function ID: 9118
 // Name: setAudioOutputDevice
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: setAudioOutputDevice
 
-// Module 9046 (setAudioOutputDevice)
+// Module 9117 (setAudioOutputDevice)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/voice_calls/native/AudioManagerActionCreator.tsx");
 

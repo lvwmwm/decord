@@ -1,17 +1,17 @@
-// Module ID: 16493
-// Function ID: 16494
-// Dependencies: [32, 19, 17, 1908, 4120, 1921, 21, 4481, 709, 16137, 586, 7205, 1233, 16494, 16495, 16501, 4305, 1498, 8596, 16496, 7315, 9729, 9721, 12546, 12546, 12548, 2]
+// Module ID: 16569
+// Function ID: 16570
+// Dependencies: [32, 19, 17, 1979, 4199, 1371, 21, 4560, 576, 16215, 504, 7265, 1114, 16570, 16571, 16577, 4384, 1483, 8666, 16572, 7377, 9800, 9792, 12614, 12614, 12616, 2]
 
-// Module 16493
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16569
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -113,12 +113,12 @@ const memoResult = importAllResult.memo((guildId) => {
       items: membersManagementActions,
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
-        const obj = { source: callback2(9729), accessibilityLabel: null, ref: null };
-        const intl = callback(1233).intl;
-        obj[1] = intl.string(callback(1233).t.ogxXGq);
+        const obj = { source: callback2(9800), accessibilityLabel: null, ref: null };
+        const intl = callback(1114).intl;
+        obj[1] = intl.string(callback(1114).t.ogxXGq);
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback3(callback(7315).HeaderActionButton, obj);
+        return callback3(callback(7377).HeaderActionButton, obj);
       }
     };
     return closure_1_9(guildId(num[18]).ContextMenu, obj);

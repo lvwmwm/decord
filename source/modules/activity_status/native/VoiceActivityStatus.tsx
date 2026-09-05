@@ -1,16 +1,16 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 10893
+// Function ID: 10894
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4481, 10825, 10816, 1233, 2]
+// Dependencies: [19, 21, 4560, 10894, 10885, 1114, 2]
 // Exports: default
 
-// Module 10824 (VoiceActivityStatus)
+// Module 10893 (VoiceActivityStatus)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10816 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10825 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10885 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10894 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

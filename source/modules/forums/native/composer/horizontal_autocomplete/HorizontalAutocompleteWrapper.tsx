@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10421
+// Function ID: 10422
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 17, 673, 21, 10351, 10553, 4218, 4482, 2]
+// Dependencies: [19, 17, 1074, 21, 10422, 10624, 4296, 4561, 2]
 // Exports: default
 
-// Module 10350 (HorizontalAutocompleteWrapper)
+// Module 10421 (HorizontalAutocompleteWrapper)
 import closure_3 from "noop" /* 19 */;
 import { FlatList } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

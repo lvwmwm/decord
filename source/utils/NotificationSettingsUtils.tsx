@@ -1,21 +1,21 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7114
+// Function ID: 7115
 // Name: UserNotificationSettings
-// Dependencies: [7055, 1386, 4743, 4709, 673, 4133, 4710, 682, 1399, 4708, 695, 2]
+// Dependencies: [7115, 1957, 4781, 4741, 1074, 4212, 4742, 1084, 1384, 4740, 1242, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 7054 (UserNotificationSettings)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
-import closure_3 from "initialize" /* 7055 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "reinjectEphemerals" /* 4743 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 4709 */;
-import ME from "ME" /* 673 */;
-import { NotificationSettingsUpdateType as closure_9 } from "AccountNotificationFlags" /* 4133 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
+// Module 7114 (UserNotificationSettings)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4740 */;
+import closure_3 from "initialize" /* 7115 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "reinjectEphemerals" /* 4781 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4741 */;
+import ME from "ME" /* 1074 */;
+import { NotificationSettingsUpdateType as closure_9 } from "AccountNotificationFlags" /* 4212 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
 
 require = arg1;
 ({ AnalyticEvents: error, UserNotificationSettings } = ME);
@@ -320,7 +320,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   }
   const isChannelMutedResult = store2.isChannelMuted(guildId, channelId);
   const tmp12 = num2 ^ num;
-  const obj4 = guildId(1399);
+  const obj4 = guildId(1384);
   lastMessage = lastMessage.getLastMessage(channelId);
   let type;
   if (lastMessage != null) {
@@ -329,7 +329,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   if (type == null) {
     type = null;
   }
-  const removeFlagsResult = guildId(1399).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
+  const removeFlagsResult = guildId(1384).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
   obj = {};
   const merged = Object.assign(computeResult1);
   const merged1 = Object.assign(store.getStats(guildId));

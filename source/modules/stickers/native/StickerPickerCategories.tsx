@@ -1,20 +1,20 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10419
+// Function ID: 10420
 // Name: CATEGORY_ICON_SIZE
-// Dependencies: [32, 19, 17, 1908, 10319, 673, 1337, 21, 4481, 709, 4166, 4860, 5229, 695, 5084, 1296, 1431, 5539, 10105, 4449, 4450, 10287, 10288, 6995, 1233, 10349, 2]
+// Dependencies: [32, 19, 17, 1979, 10390, 1074, 1219, 21, 4560, 576, 1935, 4899, 5268, 1242, 5123, 1178, 1396, 5584, 10176, 4528, 4529, 10358, 10359, 7055, 1114, 10420, 2]
 // Exports: default
 
-// Module 10348 (CATEGORY_ICON_SIZE)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 10419 (CATEGORY_ICON_SIZE)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10319 */;
-import ME from "ME" /* 673 */;
-import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10390 */;
+import ME from "ME" /* 1074 */;
+import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1219 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -219,28 +219,28 @@ export default function _default(categories) {
   const callback5 = first.useCallback((arg0, index) => closure_1_14(closure_1_17, { category: categories[index], index, isActive: index === categoryIndex, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style, children: null };
   const tmp17 = categoryIndex;
-  const tmp19 = categoryIndex(10287)();
+  const tmp19 = categoryIndex(10358)();
   const tmp20 = closure_15;
   obj = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const items9 = [callback(categoryIndex(6995), obj), ];
+  const items9 = [callback(categoryIndex(7055), obj), ];
   let tmp22Result = null != first && first1;
   if (tmp22Result) {
     obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
     obj[0] = callback3;
-    const intl = categories(1233).intl;
-    obj[2] = intl.string(categories(1233).t.rzCcjK);
+    const intl = categories(1114).intl;
+    obj[2] = intl.string(categories(1114).t.rzCcjK);
     obj1 = { style: null, children: null };
     const items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
     obj1[0] = items10;
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.guildIcon;
-    obj2[1] = tmp17(10349);
-    obj1[1] = tmp22(categories(1296).Icon, obj2);
+    obj2[1] = tmp17(10420);
+    obj1[1] = tmp22(categories(1178).Icon, obj2);
     obj[3] = tmp22(closure_5, obj1);
-    tmp22Result = tmp22(categories(5084).PressableOpacity, obj);
+    tmp22Result = tmp22(categories(5123).PressableOpacity, obj);
   }
   items9[1] = tmp22Result;
   obj[2] = items9;
-  return tmp20(categoryIndex(10288), obj);
+  return tmp20(categoryIndex(10359), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16380
+// Function ID: 16381
 // Name: YouSwitchClientsRadioGroup
-// Dependencies: [32, 19, 21, 16305, 16306, 4448, 5640, 5643, 10749, 2]
+// Dependencies: [32, 19, 21, 16381, 16382, 4527, 5685, 5688, 10818, 2]
 // Exports: default
 
-// Module 16304 (YouSwitchClientsRadioGroup)
+// Module 16380 (YouSwitchClientsRadioGroup)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSwitchClientsRadioGroup.tsx");
 
 export default function YouSwitchClientsRadioGroup() {
-  const memo = React.useMemo(() => memo(16305).getCurrentVariant(), []);
+  const memo = React.useMemo(() => memo(16381).getCurrentVariant(), []);
   [arr, importDefault] = callback(React.useState(null), 2);
   const items = [memo];
   const effect = React.useEffect(() => {
@@ -48,12 +48,12 @@ export default function YouSwitchClientsRadioGroup() {
         obj[1] = memo;
         obj[2] = tmp4;
         obj[4] = arr.map((value) => {
-          let obj = { value, label: memo(16306).DISCORD_VARIANTS[value].label, icon: null };
-          obj = { color: memo(16306).DISCORD_VARIANTS[value].color };
-          obj[2] = callback(memo(10749).ClydeIcon, obj);
-          return callback(memo(5643).TableRadioRow, obj, value);
+          let obj = { value, label: memo(16382).DISCORD_VARIANTS[value].label, icon: null };
+          obj = { color: memo(16382).DISCORD_VARIANTS[value].color };
+          obj[2] = callback(memo(10818).ClydeIcon, obj);
+          return callback(memo(5688).TableRadioRow, obj, value);
         });
-        tmp5 = jsx(memo(5640).TableRadioGroup, { title: "Switch Clients", value: null, onChange: null, hasIcons: true, children: null });
+        tmp5 = jsx(memo(5685).TableRadioGroup, { title: "Switch Clients", value: null, onChange: null, hasIcons: true, children: null });
       }
     }
   }

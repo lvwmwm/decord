@@ -1,12 +1,12 @@
-// Module ID: 7606
-// Function ID: 7607
+// Module ID: 7675
+// Function ID: 7676
 // Name: ttiRecorded
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: ttiRecorded
 
-// Module 7606 (ttiRecorded)
+// Module 7675 (ttiRecorded)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/tti_analytics/native/PerformanceAnalyticsActionCreators.tsx");
 

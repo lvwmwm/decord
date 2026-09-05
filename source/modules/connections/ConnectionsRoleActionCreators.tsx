@@ -1,12 +1,12 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11573
+// Function ID: 11574
 // Name: _putRoleConnectionsConfigurations
-// Dependencies: [5, 673, 527, 706, 7069, 2]
+// Dependencies: [5, 1074, 1272, 573, 7129, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11505 (_putRoleConnectionsConfigurations)
+// Module 11573 (_putRoleConnectionsConfigurations)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _putRoleConnectionsConfigurations() {
@@ -150,7 +150,7 @@ const result = require("set").fileFinishedImporting("modules/connections/Connect
 
 export const fetchRoleConnectionsConfiguration = function fetchRoleConnectionsConfiguration(guildId, id) {
   const _require = id;
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   const value = HTTP.get({ url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, id), rejectWithError: true });
   let obj = { url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, id), rejectWithError: true };
   value.then((body) => {

@@ -1,25 +1,25 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 12447
+// Function ID: 12448
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1921, 21, 4481, 709, 586, 12374, 4194, 1233, 5552, 4448, 7090, 7089, 7139, 8523, 4936, 2]
+// Dependencies: [32, 19, 17, 1371, 21, 4560, 576, 504, 12442, 4259, 1114, 5597, 4527, 7150, 7149, 7199, 8593, 4975, 2]
 // Exports: default
 
-// Module 12379 (SpamMessageRequestHamActionSheet)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4936 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import Background from "Background" /* 7090 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7139 */;
-import Form from "Form" /* 8523 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 12374 */;
+// Module 12447 (SpamMessageRequestHamActionSheet)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 4975 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import Background from "Background" /* 7150 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7199 */;
+import Form from "Form" /* 8593 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 12442 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -50,15 +50,15 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = callback(4194);
+      let obj = callback(4259);
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-      const intl = recipientId(1233).intl;
-      obj[1] = intl.string(recipientId(1233).t["EDYbS+"]);
-      obj[2] = callback(5552);
+      const intl = recipientId(1114).intl;
+      obj[1] = intl.string(recipientId(1114).t["EDYbS+"]);
+      obj[2] = callback(5597);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
-      callback(4448).hideActionSheet();
+      callback(4527).hideActionSheet();
     }
   };
   const messageRequestActions = obj1.useMessageRequestActions(obj);

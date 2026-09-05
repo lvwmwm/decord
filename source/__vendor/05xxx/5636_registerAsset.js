@@ -1,10 +1,10 @@
 // Module ID: 5636
 // Function ID: 5637
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5636 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1998c882c99c2bfa1f4c01d3c0fdc31d", name: "XSmallIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_542eyc77l7xc6yrt372p7kkeyi/node_modules/@react-navigation/elements/lib/module/assets", width: 64, height: 64, scales: [1, 1, 2, 3, 4], hash: "61378328a719f21f093de82dd89ecfb0", name: "clear-icon", type: "png" });

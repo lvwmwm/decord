@@ -1,10 +1,10 @@
 // Module ID: 9960
 // Function ID: 9961
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9960 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "97b88511d0fe85beb9ea20d66572b94a", name: "GroupPlusIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "623eff85d27fd4ffd7a4c28c327682e8", name: "SpeedometerIcon", type: "png" });

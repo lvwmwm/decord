@@ -1,13 +1,13 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9094
+// Function ID: 9095
 // Name: trackVoiceAndVideoDebuggingSettingsUpdated
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: default
 
-// Module 9023 (trackVoiceAndVideoDebuggingSettingsUpdated)
+// Module 9094 (trackVoiceAndVideoDebuggingSettingsUpdated)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");

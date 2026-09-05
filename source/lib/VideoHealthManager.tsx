@@ -1,15 +1,15 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 13821
+// Function ID: 13822
 // Name: calculateFps
-// Dependencies: [673, 3, 4762, 13749, 4561, 684, 2]
+// Dependencies: [1074, 3, 4801, 13822, 4589, 1090, 2]
 
-// Module 13748 (calculateFps)
+// Module 13821 (calculateFps)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import ME from "ME" /* 673 */;
-import sleep from "sleep" /* 4561 */;
-import isTablet from "isTablet" /* 4762 */;
-import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13749 */;
+import ME from "ME" /* 1074 */;
+import sleep from "sleep" /* 4589 */;
+import isTablet from "isTablet" /* 4801 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13822 */;
 
 const VideoToggleState = ME.VideoToggleState;
 class VideoHealthManager {
@@ -117,7 +117,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     if (null !== lastBackoffTime) {
       num2 = 1;
       if (expBackoffFactor <= 16) {
-        let obj = _require(4561);
+        let obj = _require(4589);
         num2 = 1;
         if (self.elapsedSeconds(obj.now(), lastBackoffTime) <= 600) {
           num2 = expBackoffFactor * 2;
@@ -125,11 +125,11 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
       }
     }
     obj = { lastBackoffTime: null, expBackoffFactor: null };
-    obj[0] = _require(4561).now();
+    obj[0] = _require(4589).now();
     obj[1] = num2;
     self.retryBackoffCache[arg0] = obj;
     const result = num2 * self.backoffTimeSec;
-    const result1 = result * self(684).Millis.SECOND;
+    const result1 = result * self(1090).Millis.SECOND;
     const logger2 = self.logger;
     const _HermesInternal2 = HermesInternal;
     logger2.info("starting backoff timer with time = " + result1 + " milliseconds");
@@ -137,7 +137,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     self.timeoutIdCache[arg0] = setTimeout(() => {
       self.queueReenable(closure_0);
     }, result1);
-    const obj3 = _require(4561);
+    const obj3 = _require(4589);
   }
 };
 prototype["queueReenable"] = function queueReenable(closure_0) {

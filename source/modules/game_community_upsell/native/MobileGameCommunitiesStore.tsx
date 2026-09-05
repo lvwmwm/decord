@@ -1,11 +1,11 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15620
+// Function ID: 15621
 // Name: set
-// Dependencies: [7279, 586, 706, 2]
+// Dependencies: [7341, 504, 573, 2]
 
-// Module 15544 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 15620 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

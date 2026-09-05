@@ -1,18 +1,18 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14396
+// Function ID: 14397
 // Name: handleUpdateVADPermission
-// Dependencies: [1215, 1386, 4532, 4120, 4557, 4500, 673, 706, 586, 2]
+// Dependencies: [502, 1957, 1908, 4199, 4583, 4579, 1074, 573, 504, 2]
 
-// Module 14322 (handleUpdateVADPermission)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "createRTCConnection" /* 4557 */;
-import closure_7 from "updateVoiceState" /* 4500 */;
-import ME from "ME" /* 673 */;
+// Module 14396 (handleUpdateVADPermission)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_6 from "createRTCConnection" /* 4583 */;
+import closure_7 from "updateVoiceState" /* 4579 */;
+import ME from "ME" /* 1074 */;
 
 function handleUpdateVADPermission() {
   channelId = channelId.getChannelId();

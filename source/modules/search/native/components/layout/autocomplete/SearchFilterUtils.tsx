@@ -1,23 +1,23 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16631
+// Function ID: 16632
 // Name: getSearchTokenLabel
-// Dependencies: [7810, 7809, 673, 1233, 11757, 10041, 13853, 5051, 9714, 16555, 12141, 9364, 12273, 12293, 12270, 4448, 9646, 2008, 12290, 2]
+// Dependencies: [7878, 7877, 1074, 1114, 11825, 10112, 13843, 5090, 9785, 16632, 12209, 9435, 12341, 12361, 12338, 4527, 9717, 1896, 12358, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 16554 (getSearchTokenLabel)
+// Module 16631 (getSearchTokenLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import AtIcon from "AtIcon" /* 5051 */;
-import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7809 */;
-import RobotIcon from "RobotIcon" /* 9364 */;
-import CalendarIcon from "CalendarIcon" /* 9714 */;
-import AttachmentIcon from "AttachmentIcon" /* 10041 */;
-import UserIcon from "UserIcon" /* 11757 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12141 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13853 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 16555 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import AtIcon from "AtIcon" /* 5090 */;
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7877 */;
+import RobotIcon from "RobotIcon" /* 9435 */;
+import CalendarIcon from "CalendarIcon" /* 9785 */;
+import AttachmentIcon from "AttachmentIcon" /* 10112 */;
+import UserIcon from "UserIcon" /* 11825 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12209 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13843 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 16632 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
+import ME from "ME" /* 1074 */;
 
 ({ EMPTY_SEARCH_QUERY_STRING: c3, SearchQueryTagTypes: c4 } = MessageEmbedTypes);
 const SearchFilterAddLocations = SearchEntrypointAnalyticsLocations.SearchFilterAddLocations;
@@ -213,7 +213,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(cl
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(12273));
+  const keys = Object.keys(items(12341));
   const item = keys.forEach((type) => {
     let obj = textInputValue(closure_1_2[12]);
     if (obj.isSearchFilterTokenType(type)) {

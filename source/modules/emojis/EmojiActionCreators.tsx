@@ -1,12 +1,12 @@
-// Module ID: 10262
-// Function ID: 10263
+// Module ID: 10333
+// Function ID: 10334
 // Name: toggleGuildExpandedState
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 10262 (toggleGuildExpandedState)
+// Module 10333 (toggleGuildExpandedState)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
 

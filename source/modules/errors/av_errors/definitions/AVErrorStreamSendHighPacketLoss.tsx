@@ -1,12 +1,12 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17839
+// Function ID: 17840
 // Name: AVErrorStreamSendHighPacketLossDefinition
-// Dependencies: [4503, 4571, 4547, 17757, 9039, 17754, 2]
+// Dependencies: [4582, 4599, 4612, 17837, 9110, 17834, 2]
 
-// Module 17759 (AVErrorStreamSendHighPacketLossDefinition)
-import isStreamKey from "isStreamKey" /* 4547 */;
-import closure_2 from "reset" /* 4503 */;
-import closure_3 from "initialize" /* 4571 */;
+// Module 17839 (AVErrorStreamSendHighPacketLossDefinition)
+import isStreamKey from "isStreamKey" /* 4612 */;
+import closure_2 from "reset" /* 4582 */;
+import closure_3 from "initialize" /* 4599 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSendHighPacketLoss.tsx");
@@ -28,18 +28,18 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else {
-        let tmp8Result = tmp8(17757);
+        let tmp8Result = tmp8(17837);
         const accumulatedStatsWithMinDatapoints = tmp8Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
         let tmp6 = null;
         if (null != accumulatedStatsWithMinDatapoints) {
           if (10 < 100 * accumulatedStatsWithMinDatapoints.short.packetLossRate) {
             obj = { type: null };
-            obj[0] = tmp8(9039).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
-            tmp8Result = tmp8(17754);
-            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4547).encodeStreamKey(currentUserActiveStream)));
+            obj[0] = tmp8(9110).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
+            tmp8Result = tmp8(17834);
+            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4612).encodeStreamKey(currentUserActiveStream)));
             const items = [obj];
             const tmp3 = items;
-            const tmp8Result1 = tmp8(4547);
+            const tmp8Result1 = tmp8(4612);
           }
           tmp6 = tmp3;
         }

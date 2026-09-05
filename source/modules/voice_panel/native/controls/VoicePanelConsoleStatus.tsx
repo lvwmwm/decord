@@ -1,16 +1,16 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17179
+// Function ID: 17180
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 12205, 12208, 12203, 21, 4481, 709, 12204, 17095, 4218, 4205, 17102, 17100, 4935, 5544, 1296, 4477, 5084, 9377, 1233, 17103, 2]
+// Dependencies: [19, 12273, 12276, 12271, 21, 4560, 576, 12272, 17173, 4296, 4271, 17180, 17178, 4974, 5589, 1178, 4556, 5123, 9448, 1114, 17181, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 17101 (VoicePanelConsoleStatus)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17179 (VoicePanelConsoleStatus)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 12208 */;
-import { CONTROLS_HEIGHT } from "VoicePanelControlsModes" /* 12203 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 12276 */;
+import { CONTROLS_HEIGHT } from "VoicePanelControlsModes" /* 12271 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class VoicePanelConsoleStatus {
@@ -30,7 +30,7 @@ class VoicePanelConsoleStatus {
     color = tmp5.color;
     tmp6 = state;
     ({ icon, text, displayCancel } = tmp5);
-    obj = require("module_4218");
+    obj = require("module_4296");
     sharedValue = obj.useSharedValue(false);
     closure_4 = sharedValue;
     items = [, ];
@@ -42,7 +42,7 @@ class VoicePanelConsoleStatus {
     tmp9 = require("useControlsTranslation")(mode, wrapperSpecs, global.accessoryHeights);
     tmp10 = require("useControlsHiddenPresentation")(mode, wrapperSpecs);
     ({ hiddenProps, hiddenStyles } = tmp10);
-    obj2 = require("module_4218");
+    obj2 = require("module_4296");
     fn = function v() {
       let obj = { backgroundColor: color, width: windowDimensions.get().width - 2 * sharedValue, height: closure_1_5 + 36, borderRadius: 32, transform: null };
       let num = 100;
@@ -69,12 +69,12 @@ class VoicePanelConsoleStatus {
       obj[4] = items;
       return obj;
     };
-    obj = { color, windowDimensions, EDGE_GUTTER: closure_4, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: closure_9, runOnJS: require("module_4218").runOnJS, cleanUp };
+    obj = { color, windowDimensions, EDGE_GUTTER: closure_4, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: closure_9, runOnJS: require("module_4296").runOnJS, cleanUp };
     fn.__closure = obj;
     fn.__workletHash = 14156265059426;
     fn.__initData = closure_10;
     animatedStyle = obj2.useAnimatedStyle(fn);
-    obj4 = require("module_4218");
+    obj4 = require("module_4296");
     class V {
       constructor() {
         obj = { width: windowDimensions.get().width - 2 * closure_4 };
@@ -117,16 +117,16 @@ class VoicePanelConsoleStatus {
     items3[2] = tmp14Result;
     obj4[1] = items3;
     obj3[1] = tmp13(tmp16, obj4);
-    obj2[1] = tmp14(require("module_4218").View, obj3);
+    obj2[1] = tmp14(require("module_4296").View, obj3);
     items4 = [, ];
     items4[0] = tmp14(tmp15, obj2);
     obj9 = { style: items5, children: tmp14(require("VoicePanelVisualEffectView").VoicePanelVisualEffectView, {}) };
     items5 = [, ];
     items5[0] = tmp.blockingControlCover;
     items5[1] = animatedStyle1;
-    items4[1] = tmp14(require("module_4218").View, obj9);
+    items4[1] = tmp14(require("module_4296").View, obj9);
     obj1[2] = items4;
-    return tmp13(require("module_4218").View, obj1);
+    return tmp13(require("module_4296").View, obj1);
   }
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);

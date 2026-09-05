@@ -1,14 +1,14 @@
-// Module ID: 14642
-// Function ID: 14643
+// Module ID: 14717
+// Function ID: 14718
 // Name: isTinyBroncoAnnouncementCountry
-// Dependencies: [19, 4173, 14608, 14609, 4172, 4741, 586, 10890, 2]
+// Dependencies: [19, 4775, 14683, 14684, 5423, 4773, 504, 10959, 2]
 // Exports: isTinyBroncoAnnouncementCountry, shouldShowTinyBroncoAccountStatus, useShouldShowTinyBroncoAccountStatus
 
-// Module 14642 (isTinyBroncoAnnouncementCountry)
-import useIsTinyBroncoEnabled from "useIsTinyBroncoEnabled" /* 14609 */;
+// Module 14717 (isTinyBroncoAnnouncementCountry)
+import useIsTinyBroncoEnabled from "useIsTinyBroncoEnabled" /* 14684 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "getRegionalFeatureConfig" /* 4173 */;
-import TINY_BRONCO_BLOG_URL from "TINY_BRONCO_BLOG_URL" /* 14608 */;
+import closure_3 from "getRegionalFeatureConfig" /* 4775 */;
+import TINY_BRONCO_BLOG_URL from "TINY_BRONCO_BLOG_URL" /* 14683 */;
 
 require = arg1;
 ({ TINY_BRONCO_ANNOUNCEMENT_EXCLUDED_COUNTRIES: c4, TINY_BRONCO_SETTINGS_LOCATION: c5 } = TINY_BRONCO_BLOG_URL);
@@ -30,15 +30,15 @@ export const shouldShowTinyBroncoAccountStatus = function shouldShowTinyBroncoAc
       hasAgeGatedFeaturesResult = !set.has(userCountryCode.alpha2);
     }
     if (hasAgeGatedFeaturesResult) {
-      let tmpResult = tmp(4172);
+      let tmpResult = tmp(5423);
       hasAgeGatedFeaturesResult = tmpResult.hasAgeGatedFeatures();
     }
     if (hasAgeGatedFeaturesResult) {
-      tmpResult = tmp(4741);
+      tmpResult = tmp(4773);
       let isAssignedByDiscordResult = tmpResult.isAssignedByDiscord();
       if (!isAssignedByDiscordResult) {
-        isAssignedByDiscordResult = !tmp(4741).isAgeVerified();
-        const tmpResult1 = tmp(4741);
+        isAssignedByDiscordResult = !tmp(4773).isAgeVerified();
+        const tmpResult1 = tmp(4773);
       }
       hasAgeGatedFeaturesResult = isAssignedByDiscordResult;
     }

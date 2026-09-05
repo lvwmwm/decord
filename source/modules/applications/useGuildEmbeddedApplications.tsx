@@ -1,14 +1,14 @@
-// Module ID: 9673
-// Function ID: 9674
+// Module ID: 9744
+// Function ID: 9745
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4522, 673, 586, 684, 1394, 7103, 2]
+// Dependencies: [5, 19, 4788, 1074, 504, 1090, 1369, 7163, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 9673 (importDefaultResult1)
-import setDefault from "set" /* 684 */;
+// Module 9744 (importDefaultResult1)
+import setDefault from "set" /* 1090 */;
 import closure_4 from "noop" /* 19 */;
-import importDefaultResult1 from "addApplication" /* 4522 */;
-import initialize from "initialize" /* 586 */;
+import importDefaultResult1 from "addApplication" /* 4788 */;
+import initialize from "initialize" /* 504 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ initialize = {
         }
         return tmp2;
       });
-      found = mapped.filter(require(1394) /* isDiscordFrontendDevelopment */.isNotNullish);
+      found = mapped.filter(require(1369) /* isDiscordFrontendDevelopment */.isNotNullish);
     }
     return found;
   },

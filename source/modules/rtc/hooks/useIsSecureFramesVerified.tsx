@@ -1,15 +1,15 @@
-// Module ID: 9060
-// Function ID: 9061
+// Module ID: 9131
+// Function ID: 9132
 // Name: useIsUserSecureFramesVerified
-// Dependencies: [1215, 4557, 9061, 9062, 9063, 9099, 586, 9102, 4547, 2]
+// Dependencies: [502, 4583, 9132, 9133, 9134, 9170, 504, 9173, 4612, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 9060 (useIsUserSecureFramesVerified)
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "createRTCConnection" /* 4557 */;
-import closure_4 from "computeCallVerification" /* 9061 */;
-import closure_5 from "map" /* 9062 */;
-import closure_6 from "initialize" /* 9063 */;
+// Module 9131 (useIsUserSecureFramesVerified)
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "createRTCConnection" /* 4583 */;
+import closure_4 from "computeCallVerification" /* 9132 */;
+import closure_5 from "map" /* 9133 */;
+import closure_6 from "initialize" /* 9134 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");

@@ -1,27 +1,27 @@
-// Module ID: 8307
-// Function ID: 8308
+// Module ID: 8377
+// Function ID: 8378
 // Name: openInviteModal
-// Dependencies: [32, 5, 4522, 7459, 7168, 1215, 1991, 1908, 4465, 4743, 1980, 4302, 5398, 673, 675, 7169, 706, 4466, 8308, 9632, 2008, 5475, 7184, 9718, 4464, 4469, 7624, 4184, 695, 9443, 11875, 12872, 9433, 4494, 9477, 12876, 10728, 11416, 1485, 11699, 5409, 12877, 7474, 4708, 4682, 8058, 12878, 2]
+// Dependencies: [32, 5, 4788, 7526, 7228, 502, 2021, 1979, 4544, 4781, 2011, 4381, 5438, 1074, 1076, 7229, 573, 4545, 8378, 9703, 1896, 5520, 7244, 9789, 4543, 4548, 7691, 4249, 1242, 9514, 11943, 12940, 9504, 4573, 9548, 12944, 10797, 11484, 1365, 11767, 5449, 12945, 7541, 4740, 4714, 8127, 12946, 2]
 // Exports: default
 
-// Module 8307 (openInviteModal)
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import createGuildRecordFromRustDefault from "createGuildRecordFromRust" /* 1908 */;
-import reinjectEphemeralsDefault from "reinjectEphemerals" /* 4743 */;
-import handleUserSettingsStoreUpdateDefault from "handleUserSettingsStoreUpdate" /* 7168 */;
-import scheduledEventSortDefault from "scheduledEventSort" /* 7459 */;
+// Module 8377 (openInviteModal)
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import createGuildRecordFromRustDefault from "createGuildRecordFromRust" /* 1979 */;
+import reinjectEphemeralsDefault from "reinjectEphemerals" /* 4781 */;
+import handleUserSettingsStoreUpdateDefault from "handleUserSettingsStoreUpdate" /* 7228 */;
+import scheduledEventSortDefault from "scheduledEventSort" /* 7526 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "addApplication" /* 4522 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "trackCommunicationDisabled" /* 1991 */;
-import closure_8 from "updateInvite" /* 4465 */;
-import closure_9 from "handleConnectionOpen" /* 1980 */;
-import closure_10 from "handleConnectionOpen" /* 4302 */;
-import closure_11 from "insertUnsortedGuilds" /* 5398 */;
-import ME from "ME" /* 673 */;
-import items from "items" /* 675 */;
-import { isGameShopPath } from "STOREFRONT_MARKETING_GUILD_ID" /* 7169 */;
+import closure_5 from "addApplication" /* 4788 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "trackCommunicationDisabled" /* 2021 */;
+import closure_8 from "updateInvite" /* 4544 */;
+import closure_9 from "handleConnectionOpen" /* 2011 */;
+import closure_10 from "handleConnectionOpen" /* 4381 */;
+import closure_11 from "insertUnsortedGuilds" /* 5438 */;
+import ME from "ME" /* 1074 */;
+import items from "items" /* 1076 */;
+import { isGameShopPath } from "STOREFRONT_MARKETING_GUILD_ID" /* 7229 */;
 
 const require = arg1;
 function openInviteModal() {
@@ -69,7 +69,7 @@ function _openInviteModal() {
               return obj;
             } else {
               obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: "woman_and_man_holding_hands_medium_light_skin_tone_medium_skin_tone" };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: true };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -301,7 +301,7 @@ export default function getOnClick(url) {
   c3 = undefined;
   pathname = undefined;
   obj = undefined;
-  obj = _require(4464);
+  obj = _require(4543);
   const findCodedLinkResult = obj.findCodedLink(url);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
@@ -332,7 +332,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "left", skuId: "call" };
+            result = { applicationId: "hash", skuId: "call" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -349,11 +349,11 @@ export default function getOnClick(url) {
         closure_1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: "Array" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -608,7 +608,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -624,7 +624,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -637,7 +637,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -650,8 +650,8 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(11416);
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.QUESTS_EMBED) {
+      let tmp2Result = tmp2(11484);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {
@@ -690,7 +690,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -726,14 +726,14 @@ export default function getOnClick(url) {
   }
   ({ host, hostname, pathname } = toURLSafeResult);
   ({ search, hash } = toURLSafeResult);
-  let tmp5Result = tmp5(1485);
+  let tmp5Result = tmp5(1365);
   let tmp6 = hostname;
   if (hostname == null) {
     tmp6 = null;
   }
   let isDiscordHostnameResult = tmp5Result.isDiscordHostname(tmp6);
   if (!isDiscordHostnameResult) {
-    tmp5Result = tmp5(1485);
+    tmp5Result = tmp5(1365);
     if (host == null) {
       host = null;
     }
@@ -773,11 +773,11 @@ export default function getOnClick(url) {
           return true;
         };
       }
-      tmp5Result1 = tmp5(1485);
+      tmp5Result1 = tmp5(1365);
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4469).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4548).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -791,7 +791,7 @@ export default function getOnClick(url) {
     }
     return fn;
   }
-  tmp2Result = tmp2(4682);
+  tmp2Result = tmp2(4714);
   let result = tmp2Result.tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
     if (null != tmp2Result1.isSuspiciousDownload(url)) {
@@ -803,6 +803,6 @@ export default function getOnClick(url) {
         return true;
       };
     }
-    tmp2Result1 = tmp2(8058);
+    tmp2Result1 = tmp2(8127);
   }
 };

@@ -1,20 +1,20 @@
-// Module ID: 17426
-// Function ID: 17427
+// Module ID: 17506
+// Function ID: 17507
 // Name: FormStates
-// Dependencies: [1390, 7051, 1981, 4401, 1908, 4709, 673, 586, 7052, 706, 2]
+// Dependencies: [1961, 7111, 2012, 4480, 1979, 4741, 1074, 504, 7112, 573, 2]
 
-// Module 17426 (FormStates)
+// Module 17506 (FormStates)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 7052 */;
-import closure_4 from "setIndex" /* 7051 */;
-import closure_5 from "comparator" /* 1981 */;
-import closure_6 from "handleInviteData" /* 4401 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 7112 */;
+import closure_4 from "setIndex" /* 7111 */;
+import closure_5 from "comparator" /* 2012 */;
+import closure_6 from "handleInviteData" /* 4480 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4741 */;
+import ME from "ME" /* 1074 */;
 
 let closure_3 = createChannelRecord.isGuildSelectableChannelType;
 const FormStates = ME.FormStates;

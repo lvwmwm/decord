@@ -1,9 +1,9 @@
-// Module ID: 7173
-// Function ID: 7174
+// Module ID: 7233
+// Function ID: 7234
 // Name: StorefrontPromotionRewardType
 // Dependencies: [2]
 
-// Module 7173 (StorefrontPromotionRewardType)
+// Module 7233 (StorefrontPromotionRewardType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");

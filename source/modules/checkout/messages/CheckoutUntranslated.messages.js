@@ -1,21 +1,21 @@
-// Module ID: 2138
-// Function ID: 2139
+// Module ID: 2166
+// Function ID: 2167
 // Name: messagesProxy
-// Dependencies: [1238, 2139, 1273, 2]
+// Dependencies: [1120, 2167, 1155, 2]
 
-// Module 2138 (messagesProxy)
+// Module 2166 (messagesProxy)
 import set from "set" /* 2 */;
-import loadJsonAsset from "loadJsonAsset" /* 1238 */;
-import registerAsset from "registerAsset" /* 2139 */;
-import module_1273 from "module_1273" /* 1273 */;
+import loadJsonAsset from "loadJsonAsset" /* 1120 */;
+import registerAsset from "registerAsset" /* 2167 */;
+import module_1155 from "module_1155" /* 1155 */;
 
-const loader = module_1273.createLoader({
+const loader = module_1155.createLoader({
   () => {
     const jsonAsset = loadJsonAsset.loadJsonAsset(registerAsset);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1273.makeMessagesProxy(loader);
+const messagesProxy = module_1155.makeMessagesProxy(loader);
 const result = set.fileFinishedImporting("modules/checkout/messages/CheckoutUntranslated.messages.js");
 
 export default messagesProxy;

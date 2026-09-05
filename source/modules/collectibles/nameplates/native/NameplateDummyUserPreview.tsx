@@ -1,19 +1,19 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8817
+// Function ID: 8818
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
-// Dependencies: [19, 17, 1301, 21, 1296, 709, 4481, 586, 1363, 8748, 8750, 8751, 2]
+// Dependencies: [19, 17, 1183, 21, 1178, 576, 4560, 504, 4269, 8818, 8820, 8821, 2]
 // Exports: NameplateDummyUserPreview
 
-// Module 8747 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+// Module 8817 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import NameplateInnerDefault from "NameplateInner" /* 8748 */;
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import NameplateInnerDefault from "NameplateInner" /* 8818 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleThemeChange" /* 1301 */;
+import closure_4 from "handleThemeChange" /* 1183 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -31,7 +31,7 @@ let closure_8 = createCacheKey.createStyles((arg0, arg1) => {
   obj = { borderRadius: ThemesDefault.radii.round, marginRight: tmp.avatarMarginRight, backgroundColor: null };
   let str = "transparent";
   if (arg1) {
-    str = tmp2(709).colors.BORDER_STRONG;
+    str = tmp2(576).colors.BORDER_STRONG;
   }
   obj[2] = str;
   obj[1] = obj;
@@ -69,7 +69,7 @@ export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hide
   const stateFromStores = obj.useStateFromStores(items, () => callback(table[8]).isThemeDark(theme.theme));
   obj = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   const items2 = [callback(NameplateInnerDefault, obj), , ];
-  obj1 = { style: tmp3.avatarContainer, children: callback(Button.Avatar, { source: importDefault(stateFromStores ? 8750 : 8751), size: NORMAL, "aria-hidden": true, style: tmp3.avatar }) };
+  obj1 = { style: tmp3.avatarContainer, children: callback(Button.Avatar, { source: importDefault(stateFromStores ? 8820 : 8821), size: NORMAL, "aria-hidden": true, style: tmp3.avatar }) };
   items2[1] = callback(View, obj1);
   const items3 = [tmp3.placeholderBar, { width: hideAvatar.width }];
   items2[2] = callback(View, { style: items3 });

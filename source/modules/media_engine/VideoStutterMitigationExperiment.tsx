@@ -1,11 +1,11 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17819
+// Function ID: 17820
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 
-// Module 17739 (apexExperiment)
+// Module 17819 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-video-stutter-mitigation", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/media_engine/VideoStutterMitigationExperiment.tsx");

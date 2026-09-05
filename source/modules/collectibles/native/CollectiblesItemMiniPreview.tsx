@@ -1,22 +1,22 @@
-// Module ID: 13069
-// Function ID: 13070
+// Module ID: 13137
+// Function ID: 13138
 // Name: PX_8
-// Dependencies: [19, 17, 7480, 1947, 7481, 7482, 8153, 8728, 21, 709, 4481, 8740, 8752, 5542, 8753, 8731, 1946, 8748, 2]
+// Dependencies: [19, 17, 7547, 1887, 7548, 7549, 8222, 8798, 21, 576, 4560, 8810, 8822, 5587, 8823, 8801, 1886, 8818, 2]
 
-// Module 13069 (PX_8)
-import ThemesDefault from "Themes" /* 709 */;
-import getNameplateData from "getNameplateData" /* 1946 */;
-import preloadDefault from "preload" /* 5542 */;
-import StaticEffectDefault from "StaticEffect" /* 8731 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8740 */;
-import NameplateInnerDefault from "NameplateInner" /* 8748 */;
-import filterLayerDefault from "filterLayer" /* 8752 */;
-import metadataDefault from "metadata" /* 8753 */;
+// Module 13137 (PX_8)
+import ThemesDefault from "Themes" /* 576 */;
+import getNameplateData from "getNameplateData" /* 1886 */;
+import preloadDefault from "preload" /* 5587 */;
+import StaticEffectDefault from "StaticEffect" /* 8801 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8810 */;
+import NameplateInnerDefault from "NameplateInner" /* 8818 */;
+import filterLayerDefault from "filterLayer" /* 8822 */;
+import metadataDefault from "metadata" /* 8823 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7480 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8153 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7547 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8222 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

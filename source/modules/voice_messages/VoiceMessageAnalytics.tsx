@@ -1,13 +1,13 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11873
+// Function ID: 11874
 // Name: logVoiceMessagePlaybackStarted
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 11805 (logVoiceMessagePlaybackStarted)
+// Module 11873 (logVoiceMessagePlaybackStarted)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/voice_messages/VoiceMessageAnalytics.tsx");

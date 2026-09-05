@@ -1,37 +1,37 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15578
+// Function ID: 15579
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 5493, 15503, 15082, 15504, 15507, 11744, 7841, 15509, 15510, 11757, 15511, 15462, 15537, 13306, 15538, 15539, 15543, 15345, 15546, 4430, 15581, 11537, 15584, 10082, 15587, 11856, 15610, 10179, 15629, 15274, 15630, 9331, 15633, 9364, 15634, 12070, 15641, 15642, 15644, 15517, 15645, 4424, 15648, 9888, 15649, 15650, 15651, 2]
+// Dependencies: [19, 21, 5538, 15579, 15158, 15580, 15583, 11812, 7910, 15585, 15586, 11825, 15587, 15538, 15613, 13378, 15614, 15615, 15619, 15421, 15622, 4509, 15657, 11605, 15660, 10153, 15663, 11924, 15686, 10250, 15705, 15350, 15706, 9402, 15709, 9435, 15710, 12138, 15717, 15718, 15720, 15593, 15721, 4503, 15724, 9959, 15725, 15726, 15727, 2]
 
-// Module 15502 (DevToolsScreens)
+// Module 15578 (DevToolsScreens)
 import noopAll from "noop" /* 19 */;
-import UserExperimentDebugView from "UserExperimentDebugView" /* 11744 */;
-import CommonProperty from "CommonProperty" /* 15503 */;
-import jsx2 from "jsx" /* 15504 */;
-import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 15509 */;
-import CacheLogEntry from "CacheLogEntry" /* 15510 */;
-import PoolIdInput from "PoolIdInput" /* 15511 */;
-import DevToolsPersistedStoresActionSheet from "DevToolsPersistedStoresActionSheet" /* 15537 */;
-import SettingsDesignSystemsScreen from "SettingsDesignSystemsScreen" /* 15538 */;
-import DismissableContentsEmpty from "DismissableContentsEmpty" /* 15539 */;
-import MultiGuildDevTools from "MultiGuildDevTools" /* 15543 */;
-import TestLocaleSelector from "TestLocaleSelector" /* 15546 */;
-import OtaVerificationActionSheet from "OtaVerificationActionSheet" /* 15581 */;
-import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 15584 */;
-import handleNewUserOnboarding from "handleNewUserOnboarding" /* 15587 */;
-import describeServerError from "describeServerError" /* 15610 */;
-import SurveyOverrideInfoActionSheet from "SurveyOverrideInfoActionSheet" /* 15629 */;
-import fuzzySearchToggle from "fuzzySearchToggle" /* 15630 */;
-import showAgeVerificationTestModal from "showAgeVerificationTestModal" /* 15633 */;
-import Select from "Select" /* 15634 */;
-import DevToolsShopScreen from "DevToolsShopScreen" /* 15641 */;
-import FramePreviewOverrideSection from "FramePreviewOverrideSection" /* 15642 */;
-import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 15644 */;
-import ActionSheetSelector from "ActionSheetSelector" /* 15645 */;
-import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 15648 */;
-import _mod15649 from "module_15649" /* 15649 */;
-import getSelectedGuildChannel from "getSelectedGuildChannel" /* 15650 */;
-import effectName from "effectName" /* 15651 */;
+import UserExperimentDebugView from "UserExperimentDebugView" /* 11812 */;
+import CommonProperty from "CommonProperty" /* 15579 */;
+import jsx2 from "jsx" /* 15580 */;
+import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 15585 */;
+import CacheLogEntry from "CacheLogEntry" /* 15586 */;
+import PoolIdInput from "PoolIdInput" /* 15587 */;
+import DevToolsPersistedStoresActionSheet from "DevToolsPersistedStoresActionSheet" /* 15613 */;
+import SettingsDesignSystemsScreen from "SettingsDesignSystemsScreen" /* 15614 */;
+import DismissableContentsEmpty from "DismissableContentsEmpty" /* 15615 */;
+import MultiGuildDevTools from "MultiGuildDevTools" /* 15619 */;
+import TestLocaleSelector from "TestLocaleSelector" /* 15622 */;
+import OtaVerificationActionSheet from "OtaVerificationActionSheet" /* 15657 */;
+import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 15660 */;
+import handleNewUserOnboarding from "handleNewUserOnboarding" /* 15663 */;
+import describeServerError from "describeServerError" /* 15686 */;
+import SurveyOverrideInfoActionSheet from "SurveyOverrideInfoActionSheet" /* 15705 */;
+import fuzzySearchToggle from "fuzzySearchToggle" /* 15706 */;
+import showAgeVerificationTestModal from "showAgeVerificationTestModal" /* 15709 */;
+import Select from "Select" /* 15710 */;
+import DevToolsShopScreen from "DevToolsShopScreen" /* 15717 */;
+import FramePreviewOverrideSection from "FramePreviewOverrideSection" /* 15718 */;
+import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 15720 */;
+import ActionSheetSelector from "ActionSheetSelector" /* 15721 */;
+import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 15724 */;
+import _mod15725 from "module_15725" /* 15725 */;
+import getSelectedGuildChannel from "getSelectedGuildChannel" /* 15726 */;
+import effectName from "effectName" /* 15727 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -371,14 +371,14 @@ obj[24] = {
   headerTitle: "Performance Testing",
   Icon: require("SpeedometerIcon").SpeedometerIcon,
   render() {
-    return jsx(_mod15649.default, {});
+    return jsx(_mod15725.default, {});
   }
 };
 const obj23 = {
   headerTitle: "Performance Testing",
   Icon: require("SpeedometerIcon").SpeedometerIcon,
   render() {
-    return jsx(_mod15649.default, {});
+    return jsx(_mod15725.default, {});
   }
 };
 obj[25] = {

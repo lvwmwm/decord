@@ -1,12 +1,12 @@
-// Module ID: 12007
-// Function ID: 12008
+// Module ID: 12075
+// Function ID: 12076
 // Name: addToApplicationIdToGuildIds
-// Dependencies: [684, 586, 706, 2]
+// Dependencies: [1090, 504, 573, 2]
 
-// Module 12007 (addToApplicationIdToGuildIds)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12075 (addToApplicationIdToGuildIds)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
 
 function addToApplicationIdToGuildIds(applicationId) {
   applicationId = applicationId.applicationId;

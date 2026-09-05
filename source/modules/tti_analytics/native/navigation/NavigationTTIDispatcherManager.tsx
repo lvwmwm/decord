@@ -1,16 +1,16 @@
-// Module ID: 17781
-// Function ID: 17782
+// Module ID: 17861
+// Function ID: 17862
 // Name: handleChannelSelect
-// Dependencies: [1386, 4743, 1980, 17782, 17783, 500, 7058, 2]
+// Dependencies: [1957, 4781, 2011, 17862, 17863, 1250, 7118, 2]
 
-// Module 17781 (handleChannelSelect)
-import encodeProperties from "encodeProperties" /* 500 */;
-import initializeDefault from "initialize" /* 7058 */;
-import isNavigationTTIEnabled from "isNavigationTTIEnabled" /* 17782 */;
-import getLastBundleDefault from "getLastBundle" /* 17783 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "reinjectEphemerals" /* 4743 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
+// Module 17861 (handleChannelSelect)
+import encodeProperties from "encodeProperties" /* 1250 */;
+import initializeDefault from "initialize" /* 7118 */;
+import isNavigationTTIEnabled from "isNavigationTTIEnabled" /* 17862 */;
+import getLastBundleDefault from "getLastBundle" /* 17863 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "reinjectEphemerals" /* 4781 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
 
 require = arg1;
 function handleChannelSelect(opensChannel) {

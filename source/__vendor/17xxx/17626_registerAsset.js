@@ -1,10 +1,10 @@
 // Module ID: 17626
 // Function ID: 17627
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 17626 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 88.5, height: 72.5, scales: [2, 3], hash: "676cd159b1913e0ab2a481c3bd4a0b5c", name: "role_subscription_earning_illo", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "cbab82e40d604a026003b3db68edd6bb", name: "ic_icon_upload", type: "png" });

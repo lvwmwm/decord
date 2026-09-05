@@ -1,14 +1,14 @@
-// Module ID: 16928
-// Function ID: 16929
-// Dependencies: [19, 1386, 1980, 1385, 21, 586, 4110, 689, 16929, 16938, 2]
+// Module ID: 17006
+// Function ID: 17007
+// Dependencies: [19, 1957, 2011, 1956, 21, 504, 4189, 1094, 17007, 17016, 2]
 
-// Module 16928
-import initialize from "initialize" /* 586 */;
-import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16929 */;
-import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16938 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "handleConnectionOpen" /* 1980 */;
-import closure_5 from "participantFromServer" /* 1385 */;
+// Module 17006
+import initialize from "initialize" /* 504 */;
+import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 17007 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 17016 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "handleConnectionOpen" /* 2011 */;
+import closure_5 from "participantFromServer" /* 1956 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

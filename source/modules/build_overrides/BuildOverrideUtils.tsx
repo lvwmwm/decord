@@ -1,18 +1,18 @@
-// Module ID: 4396
-// Function ID: 4397
+// Module ID: 1362
+// Function ID: 1363
 // Name: Version
-// Dependencies: [4397, 673, 1624, 1234, 1485, 527, 1487, 4398, 2]
+// Dependencies: [1363, 1074, 1364, 1115, 1365, 1272, 1367, 1370, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 4396 (Version)
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import UrlAll from "Url" /* 1487 */;
-import BUILD_OVERRIDE_TARGET_NAMES from "BUILD_OVERRIDE_TARGET_NAMES" /* 4397 */;
-import parseDefault from "parse" /* 4398 */;
-import getConstants from "getConstants" /* 1624 */;
-import set from "set" /* 1234 */;
+// Module 1362 (Version)
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import BUILD_OVERRIDE_TARGET_NAMES from "BUILD_OVERRIDE_TARGET_NAMES" /* 1363 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import UrlAll from "Url" /* 1367 */;
+import parseDefault from "parse" /* 1370 */;
+import getConstants from "getConstants" /* 1364 */;
+import set from "set" /* 1115 */;
 
 let closure_4 = BUILD_OVERRIDE_TARGET_NAMES.BUILD_OVERRIDE_COOKIE_NAME;
 const PRIMARY_DOMAIN = ME.PRIMARY_DOMAIN;

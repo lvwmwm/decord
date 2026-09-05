@@ -1,9 +1,9 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 17299
+// Function ID: 17300
 // Name: timestamp
 // Dependencies: [3, 2]
 
-// Module 17219 (timestamp)
+// Module 17299 (timestamp)
 import timestampDefault from "timestamp" /* 3 */;
 
 new timestampDefault("app").log("Finished loading third party imports");

@@ -1,14 +1,14 @@
-// Module ID: 10020
-// Function ID: 10021
+// Module ID: 10091
+// Function ID: 10092
 // Name: _setUserStatus
-// Dependencies: [5, 7055, 5240, 673, 4325, 1233, 10021, 1369, 1336, 1349, 695, 2]
+// Dependencies: [5, 7115, 5279, 1074, 4404, 1114, 10092, 1940, 1218, 4412, 1242, 2]
 // Exports: default
 
-// Module 10020 (_setUserStatus)
+// Module 10091 (_setUserStatus)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 7055 */;
-import closure_5 from "filterPlayingActivities" /* 5240 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_4 from "initialize" /* 7115 */;
+import closure_5 from "filterPlayingActivities" /* 5279 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 function _setUserStatus() {
@@ -82,7 +82,7 @@ function _setUserStatus() {
                 const _HermesInternal = HermesInternal;
                 str = "" + Date.now() + c3;
               }
-              const PreloadedUserSettingsActionCreators = callback(1369).PreloadedUserSettingsActionCreators;
+              const PreloadedUserSettingsActionCreators = callback(1940).PreloadedUserSettingsActionCreators;
               c3 = 2;
               globalStats = 1;
               const obj2 = { value: null, done: false };
@@ -100,7 +100,7 @@ function _setUserStatus() {
                 const UInt64Value = _undefined(_undefined2[8]).UInt64Value;
                 obj = { value: "" + Date.now() };
                 statusCreatedAtMs = UInt64Value.create(obj);
-              }, callback(1369).UserSettingsDelay.INFREQUENT_USER_ACTION);
+              }, callback(1940).UserSettingsDelay.INFREQUENT_USER_ACTION);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -140,7 +140,7 @@ function _setUserStatus() {
                 return formatToPlainStringResult;
               }
             })(callback, str);
-            const AccessibilityAnnouncer = callback(1349).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = callback(4412).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(constants);
             if (!globalStats) {
               obj = { next_status: null, prev_status: null };
@@ -163,7 +163,7 @@ function _setUserStatus() {
                 const merged2 = Object.assign(obj5);
                 const merged3 = Object.assign(dependencyMap);
               }
-              obj3 = callback2(695);
+              obj3 = callback2(1242);
               obj3.track(constants.USER_STATUS_UPDATED, obj5);
             }
             globalStats = 3;

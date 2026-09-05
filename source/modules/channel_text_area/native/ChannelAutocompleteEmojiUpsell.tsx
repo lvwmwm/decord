@@ -1,16 +1,16 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12387
+// Function ID: 12388
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1924, 21, 4481, 709, 5542, 1431, 4477, 1233, 2]
+// Dependencies: [19, 17, 1374, 21, 4560, 576, 5587, 1396, 4556, 1114, 2]
 // Exports: default
 
-// Module 12319 (ChannelAutocompleteEmojiUpsell)
+// Module 12387 (ChannelAutocompleteEmojiUpsell)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -50,10 +50,10 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
   });
   const result = 24 * substr.length;
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", children: null };
-  const intl = _require(1233).intl;
+  const intl = _require(1114).intl;
   obj = { count: results.length };
-  obj[3] = intl.format(_require(1233).t.uEky42, obj);
-  let items = [callback(_require(4477).Text, obj), ];
+  obj[3] = intl.format(_require(1114).t.uEky42, obj);
+  let items = [callback(_require(4556).Text, obj), ];
   const items1 = [tmp.emojis, { width: result + 16 }];
   items[1] = callback(View, { style: items1, children: mapped });
   obj[1] = items;

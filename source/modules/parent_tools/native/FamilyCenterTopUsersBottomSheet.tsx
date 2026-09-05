@@ -1,23 +1,23 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14897
+// Function ID: 14898
 // Name: UserRow
-// Dependencies: [19, 1921, 21, 4481, 7526, 5560, 4325, 1296, 7138, 4477, 1233, 2368, 5642, 2]
+// Dependencies: [19, 1371, 21, 4560, 7593, 5605, 4404, 1178, 7198, 4556, 1114, 2396, 5687, 2]
 // Exports: default
 
-// Module 14822 (UserRow)
+// Module 14897 (UserRow)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import Text from "Text" /* 4477 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import ActionSheet from "ActionSheet" /* 7138 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7526 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import Text from "Text" /* 4556 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import ActionSheet from "ActionSheet" /* 7198 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7593 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function UserRow(userActivity) {

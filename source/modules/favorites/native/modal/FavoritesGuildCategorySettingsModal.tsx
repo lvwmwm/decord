@@ -1,18 +1,18 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16112
+// Function ID: 16113
 // Name: FavoritesGuildCategorySettings
-// Dependencies: [32, 19, 17, 1389, 1425, 21, 4481, 709, 1498, 586, 1911, 10152, 7795, 1233, 4865, 1296, 4934, 6547, 5642, 5560, 4439, 10853, 10855, 2]
+// Dependencies: [32, 19, 17, 1960, 1970, 21, 4560, 576, 1483, 504, 1982, 10223, 7863, 1114, 4904, 1178, 4973, 6606, 5687, 5605, 4518, 10922, 10924, 2]
 // Exports: default
 
-// Module 16034 (FavoritesGuildCategorySettings)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16112 (FavoritesGuildCategorySettings)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initializeFromUserSettings" /* 1389 */;
-import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_7 } from "date" /* 1425 */;
+import closure_6 from "initializeFromUserSettings" /* 1960 */;
+import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_7 } from "date" /* 1970 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function FavoritesGuildCategorySettings(categoryId) {
@@ -143,12 +143,12 @@ let result = require("set").fileFinishedImporting("modules/favorites/native/moda
 export default function FavoritesGuildCategorySettingsModal(categoryId) {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10853)().onGoBack;
+  onGoBack = onGoBack(10922)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
-  const intl = categoryId(1233).intl;
-  obj[1] = intl.string(categoryId(1233).t["/uELTj"]);
+  const intl = categoryId(1114).intl;
+  obj[1] = intl.string(categoryId(1114).t["/uELTj"]);
   obj[2] = function render() {
     return closure_1_8(closure_1_11, { categoryId, onGoBack });
   };
-  return callback(onGoBack(10855), obj);
+  return callback(onGoBack(10924), obj);
 };

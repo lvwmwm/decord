@@ -1,10 +1,10 @@
 // Module ID: 5316
 // Function ID: 5317
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5316 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "a7079fa45817ad0281dfe779b5383d9a", name: "img_account_sync_playstation_light", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "98be8451aca35f74c79e6384bee97580", name: "img_account_sync_steam_light", type: "svg" });

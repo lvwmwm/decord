@@ -1,13 +1,13 @@
-// Module ID: 5531
-// Function ID: 5532
+// Module ID: 5576
+// Function ID: 5577
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 1908, 5527, 586, 5502, 1426, 2]
+// Dependencies: [19, 1979, 5572, 504, 5547, 1971, 2]
 // Exports: default
 
-// Module 5531 (usePreviewDisabledGuild)
+// Module 5576 (usePreviewDisabledGuild)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "get" /* 5527 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "get" /* 5572 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/usePreviewDisabledGuild.tsx");
@@ -15,11 +15,11 @@ let result = require("set").fileFinishedImporting("modules/guild_member_verifica
 export default function usePreviewDisabledGuild(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  let stateFromStores = _require(586).useStateFromStores(items, () => closure_1_4.getGuild(closure_0));
-  let obj = _require(586);
+  let stateFromStores = _require(504).useStateFromStores(items, () => closure_1_4.getGuild(closure_0));
+  let obj = _require(504);
   const tmp = _require;
   const items1 = [closure_5];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => {
     const value = closure_1_5.get(closure_0);
     let guild;
     if (value != null) {
@@ -37,8 +37,8 @@ export default function usePreviewDisabledGuild(arg0) {
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      result = tmp(1426).fromVerificationGateGuild(stateFromStores1);
-      const tmpResult = tmp(1426);
+      result = tmp(1971).fromVerificationGateGuild(stateFromStores1);
+      const tmpResult = tmp(1971);
     }
     stateFromStores = result;
   }

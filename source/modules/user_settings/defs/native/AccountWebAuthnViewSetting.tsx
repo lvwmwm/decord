@@ -1,16 +1,16 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14799
+// Function ID: 14800
 // Name: route
-// Dependencies: [19, 14581, 1921, 7906, 673, 4865, 1233, 6538, 586, 11400, 14584, 2]
+// Dependencies: [19, 14656, 1371, 7975, 1074, 4904, 1114, 6597, 504, 11468, 14659, 2]
 
-// Module 14724 (route)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6538 */;
+// Module 14799 (route)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6597 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "hasFetchedCredentials" /* 14581 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import createToggle from "createToggle" /* 11400 */;
+import closure_4 from "hasFetchedCredentials" /* 14656 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -30,12 +30,12 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4865);
+        let obj = callback2(4904);
         obj = { title: null, body: null };
-        const intl = callback(1233).intl;
-        obj[0] = intl.string(callback(1233).t.v740sh);
-        const intl2 = callback(1233).intl;
-        obj[1] = intl2.string(callback(1233).t.uggF7o);
+        const intl = callback(1114).intl;
+        obj[0] = intl.string(callback(1114).t.v740sh);
+        const intl2 = callback(1114).intl;
+        obj[1] = intl2.string(callback(1114).t.uggF7o);
         obj.show(obj);
       }
       return flag;
@@ -48,8 +48,8 @@ createToggle = {
     }
     const items = [closure_4];
     return initialize.useStateFromStores(items, () => {
-      const intl = callback(1233).intl;
-      return intl.formatToPlainString(callback(1233).t.n8mZ0X, { count: credentials.getCredentials().length });
+      const intl = callback(1114).intl;
+      return intl.formatToPlainString(callback(1114).t.n8mZ0X, { count: credentials.getCredentials().length });
     });
   },
   unsearchable: true,
@@ -58,7 +58,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(14584) /* UserSettingsWebAuthn */.default;
+    return require(14659) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

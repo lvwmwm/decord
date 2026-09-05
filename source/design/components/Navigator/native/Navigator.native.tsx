@@ -1,18 +1,18 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 7000
+// Function ID: 7001
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4481, 709, 6941, 5579, 4197, 6942, 1627, 1233, 12, 6975, 1499, 4416, 6981, 1206, 2]
+// Dependencies: [32, 19, 17, 21, 4560, 576, 7001, 5624, 4262, 7002, 1611, 1114, 12, 7035, 1484, 4495, 7041, 1233, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 6940 (NavigationStack)
-import ThemesDefault from "Themes" /* 709 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import useNavigationTheme from "useNavigationTheme" /* 6981 */;
+// Module 7000 (NavigationStack)
+import ThemesDefault from "Themes" /* 576 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1484 */;
+import useNavigationTheme from "useNavigationTheme" /* 7041 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function NavigationStack(screens) {
@@ -225,7 +225,7 @@ function WrappedNavigationStack(arg0) {
     return tmp2;
   }), 1)[0];
   obj1 = useNavigationTheme;
-  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4416)());
+  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4495)());
   obj = { ref: navigationContainerRef, theme: navigationTheme, initialState: null, onReady: null, onStateChange: null, children: null };
   if (null == initialRouteState) {
     let tmp7;
@@ -264,7 +264,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(6941).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(7001).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

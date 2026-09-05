@@ -1,13 +1,13 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7328
+// Function ID: 7329
 // Name: getIdFromHistoryItem
-// Dependencies: [1386, 586, 706, 4336, 4335, 4338, 2]
+// Dependencies: [1957, 504, 573, 4418, 4417, 4420, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 7266 (getIdFromHistoryItem)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
+// Module 7328 (getIdFromHistoryItem)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
 
 const require = arg1;
 function getIdFromHistoryItem(str) {
@@ -124,15 +124,15 @@ export const CHANNEL_PREFIX = "channel-";
 export const GUILD_PREFIX = "guild-";
 export { getIdFromHistoryItem };
 export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const rootNavigationRef = combined2(4336).getRootNavigationRef();
+  const rootNavigationRef = combined2(4418).getRootNavigationRef();
   if (null != rootNavigationRef) {
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        let tmpResult = tmp(4335);
+        let tmpResult = tmp(4417);
         const coerceChannelRouteResult = tmpResult.coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          tmpResult = tmp(4335);
+          tmpResult = tmp(4417);
           const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (tmpResult1.getChatLayout().isChatLockedOpen) {
@@ -183,7 +183,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               }
               navigationHistoryStore.emitChange();
             }
-            tmpResult1 = tmp(4338);
+            tmpResult1 = tmp(4420);
           }
         } else {
           const _HermesInternal2 = HermesInternal;

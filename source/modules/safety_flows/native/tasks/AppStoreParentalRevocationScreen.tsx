@@ -1,25 +1,25 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 17887
+// Function ID: 17888
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4481, 709, 4190, 8351, 8352, 4934, 4477, 1233, 2662, 11858, 17794, 10927, 8510, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4255, 8421, 8422, 4973, 4556, 1114, 2690, 11926, 17874, 10996, 8580, 2]
 // Exports: default
 
-// Module 17807 (AppStoreParentalRevocationScreen)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2662 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import ModalScreen from "ModalScreen" /* 8351 */;
-import ModalContent from "ModalContent" /* 8352 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8510 */;
-import ModalActionButton from "ModalActionButton" /* 10927 */;
-import ModalFooter from "ModalFooter" /* 11858 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17794 */;
+// Module 17887 (AppStoreParentalRevocationScreen)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2690 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import ModalScreen from "ModalScreen" /* 8421 */;
+import ModalContent from "ModalContent" /* 8422 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8580 */;
+import ModalActionButton from "ModalActionButton" /* 10996 */;
+import ModalFooter from "ModalFooter" /* 11926 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17874 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

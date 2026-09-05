@@ -1,15 +1,15 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15476
+// Function ID: 15477
 // Name: useWebBrowserSettingOptions
-// Dependencies: [7906, 4446, 1233, 688, 1234, 11400, 2]
+// Dependencies: [7975, 4525, 1114, 1093, 1115, 11468, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 15400 (useWebBrowserSettingOptions)
+// Module 15476 (useWebBrowserSettingOptions)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import NativeModules from "NativeModules" /* 4446 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import createToggle from "createToggle" /* 11400 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import NativeModules from "NativeModules" /* 4525 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import createToggle from "createToggle" /* 11468 */;
 
 function useWebBrowserSettingOptions() {
   let CHROME = dependencyMap;
@@ -19,26 +19,26 @@ function useWebBrowserSettingOptions() {
   obj1 = NativeModules;
   if (obj1.useBrowserManagerSupportsInAppBrowser()) {
     obj = { label: null, value: null };
-    const intl = tmp(1233).intl;
-    obj[0] = intl.string(tmp(1233).t.YayR6P);
-    obj[1] = tmp(688).WebBrowserType.IN_APP;
+    const intl = tmp(1114).intl;
+    obj[0] = intl.string(tmp(1114).t.YayR6P);
+    obj[1] = tmp(1093).WebBrowserType.IN_APP;
     items.push(obj);
   }
-  let tmpResult = tmp(1234);
+  let tmpResult = tmp(1115);
   if (!tmpResult.isAndroid()) {
     obj = { label: null, value: null };
-    const intl2 = tmp(1233).intl;
-    obj[0] = intl2.string(tmp(1233).t.kEfv89);
-    obj[1] = tmp(688).WebBrowserType.SAFARI;
+    const intl2 = tmp(1114).intl;
+    obj[0] = intl2.string(tmp(1114).t.kEfv89);
+    obj[1] = tmp(1093).WebBrowserType.SAFARI;
     items.push(obj);
   }
   if (!browserManagerIsChromeInstalled) {
     return items;
   } else {
-    tmpResult = tmp(1234);
-    const intl3 = tmp(1233).intl;
+    tmpResult = tmp(1115);
+    const intl3 = tmp(1114).intl;
     const string = intl3.string;
-    let t = tmp(1233).t;
+    let t = tmp(1114).t;
     if (isAndroidResult) {
       let stringResult = string(t.kEfv89);
     } else {
@@ -46,7 +46,7 @@ function useWebBrowserSettingOptions() {
     }
     obj1 = { label: null, value: null };
     obj1[0] = stringResult;
-    CHROME = tmp(688).WebBrowserType.CHROME;
+    CHROME = tmp(1093).WebBrowserType.CHROME;
     obj1[1] = CHROME;
     t = items.push(obj1);
     isAndroidResult = tmpResult.isAndroid();

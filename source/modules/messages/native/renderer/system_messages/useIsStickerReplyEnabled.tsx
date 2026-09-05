@@ -1,15 +1,15 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7997
+// Function ID: 7998
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1991, 4120, 1921, 673, 7209, 2]
+// Dependencies: [2021, 4199, 1371, 1074, 7269, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7928 (computeIsStickerReplyEnabled)
-import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7209 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 7997 (computeIsStickerReplyEnabled)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7269 */;
+import closure_2 from "trackCommunicationDisabled" /* 2021 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { Permissions } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");

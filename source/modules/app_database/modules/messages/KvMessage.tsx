@@ -1,13 +1,13 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7487
+// Function ID: 7488
 // Name: fromMessage
-// Dependencies: [32, 1991, 1921, 673, 2]
+// Dependencies: [32, 2021, 1371, 1074, 2]
 
-// Module 7420 (fromMessage)
+// Module 7487 (fromMessage)
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "trackCommunicationDisabled" /* 1991 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
+import closure_1 from "trackCommunicationDisabled" /* 2021 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 1074 */;
 
 let prototype;
 prototype = function KvMessage() {

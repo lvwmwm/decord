@@ -1,12 +1,12 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 4889
+// Function ID: 4890
 // Name: _createStripeSetupIntent
-// Dependencies: [5, 673, 527, 2]
+// Dependencies: [5, 1074, 1272, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4850 (_createStripeSetupIntent)
+// Module 4889 (_createStripeSetupIntent)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _createStripeSetupIntent() {

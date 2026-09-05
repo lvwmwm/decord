@@ -1,10 +1,10 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10704
+// Function ID: 10705
 // Name: prototype
-// Dependencies: [4161, 2]
+// Dependencies: [4240, 2]
 
-// Module 10633 (prototype)
-import setDefault from "set" /* 4161 */;
+// Module 10704 (prototype)
+import setDefault from "set" /* 4240 */;
 
 setDefault;
 const prototype = function InvalidGooglePlayPurchase() {

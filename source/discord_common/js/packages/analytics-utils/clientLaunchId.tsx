@@ -1,11 +1,11 @@
-// Module ID: 665
-// Function ID: 666
+// Module ID: 1340
+// Function ID: 1341
 // Name: clientLaunchId
-// Dependencies: [511, 2]
+// Dependencies: [1256, 2]
 
-// Module 665 (clientLaunchId)
+// Module 1340 (clientLaunchId)
 import set from "set" /* 2 */;
-import v1 from "v1" /* 511 */;
+import v1 from "v1" /* 1256 */;
 
 v1 = v1.v4();
 const result = set.fileFinishedImporting("../discord_common/js/packages/analytics-utils/clientLaunchId.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 14797
-// Function ID: 14798
+// Module ID: 14872
+// Function ID: 14873
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4481, 709, 8575, 7063, 14798, 14800, 14810, 11850, 14814, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8645, 7123, 14873, 14875, 14885, 11918, 14889, 2]
 // Exports: default
 
-// Module 14797 (FamilyCenterActivityPage)
+// Module 14872 (FamilyCenterActivityPage)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8575 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14798 */;
+import ThemesDefault from "Themes" /* 576 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8645 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14873 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -35,15 +35,15 @@ export default function FamilyCenterActivityPage() {
   const items = [callback(FamilyCenterParentalConsentNoticeDefault, {}), ];
   if (0 === activeLinkUserIds.length) {
     obj1 = { children: null };
-    const items1 = [tmp3(tmp7(14800), {}), tmp3(tmp7(14810), {}), ];
+    const items1 = [tmp3(tmp7(14875), {}), tmp3(tmp7(14885), {}), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.dataConfirmation;
-    obj2[1] = tmp3(tmp7(11850), {});
+    obj2[1] = tmp3(tmp7(11918), {});
     items1[2] = tmp3(tmp6, obj2);
     obj1[0] = items1;
     let tmp3Result = tmp5(closure_6, obj1);
   } else {
-    tmp3Result = tmp3(tmp7(14814), {});
+    tmp3Result = tmp3(tmp7(14889), {});
   }
   items[1] = tmp3Result;
   obj[1] = items;

@@ -1,12 +1,12 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8819
+// Function ID: 8820
 // Name: getNameplateAssets
-// Dependencies: [1899, 2]
+// Dependencies: [1883, 2]
 // Exports: getNameplateAssets
 
-// Module 8749 (getNameplateAssets)
+// Module 8819 (getNameplateAssets)
 import set from "set" /* 2 */;
-import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1899 */;
+import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1883 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9499
+// Function ID: 9500
 // Name: CircleWithCutout
-// Dependencies: [19, 21, 8383, 2]
+// Dependencies: [19, 21, 8453, 2]
 // Exports: default, getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 9428 (CircleWithCutout)
+// Module 9499 (CircleWithCutout)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8383 */;
-import inlineStylesDefault from "inlineStyles" /* 8383 */;
+import inlineStyles from "inlineStyles" /* 8453 */;
+import inlineStylesDefault from "inlineStyles" /* 8453 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

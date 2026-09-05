@@ -1,16 +1,16 @@
-// Module ID: 17742
-// Function ID: 17743
+// Module ID: 17822
+// Function ID: 17823
 // Name: updateApiRequestConfig
-// Dependencies: [17, 1215, 527, 695, 7058, 1234, 2]
+// Dependencies: [17, 502, 1272, 1242, 7118, 1115, 2]
 
-// Module 17742 (updateApiRequestConfig)
+// Module 17822 (updateApiRequestConfig)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import sendRequest from "sendRequest" /* 527 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import set2 from "set" /* 1234 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
+import set2 from "set" /* 1115 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
 
 function updateApiRequestConfig() {
   const NativeCacheModule = NativeModules.NativeCacheModule;

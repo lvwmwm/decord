@@ -1,16 +1,16 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13108
+// Function ID: 13109
 // Name: computeEntryState
-// Dependencies: [32, 19, 13041, 8151, 7476, 7477, 13042, 586, 7474, 8150, 13043, 2]
+// Dependencies: [32, 19, 13109, 8220, 7543, 7544, 13110, 504, 7541, 8219, 13111, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 13040 (computeEntryState)
+// Module 13108 (computeEntryState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getFetchState" /* 13041 */;
-import closure_5 from "getFetchState" /* 8151 */;
-import closure_6 from "fromServer" /* 7476 */;
-import closure_7 from "fromServer" /* 7477 */;
+import closure_4 from "getFetchState" /* 13109 */;
+import closure_5 from "getFetchState" /* 8220 */;
+import closure_6 from "fromServer" /* 7543 */;
+import closure_7 from "fromServer" /* 7544 */;
 
 const require = arg1;
 function computeEntryState(arg0) {
@@ -49,7 +49,7 @@ function computeEntryState(arg0) {
   return str;
 }
 function useAbsentIds(arg0) {
-  const tmp = callback(React.useState(() => new Set()), 2);
+  const tmp = joined(React.useState(() => new Set()), 2);
   const first = tmp[0];
   const entries = Object.entries(arg0);
   const found = entries.filter((arg0) => {
@@ -68,37 +68,39 @@ function useAbsentIds(arg0) {
   let set = first;
   if (someResult) {
     const _Set = Set;
-    const items = [];
+    let items = [];
     HermesBuiltin.arraySpread(mapped, HermesBuiltin.arraySpread(first, 0));
     set = new Set(items);
   }
   if (someResult) {
     tmp[1](set);
   }
-  const set1 = new Set();
   const entries1 = Object.entries(arg0);
-  while (tmp14 !== undefined) {
-    let tmp16 = callback;
-    let tmp17 = callback(tmp15, 2);
-    let first1 = tmp17[0];
-    let tmp19 = first1;
-    let tmp20 = tmp17[1];
-    let hasItem = "" !== first1;
+  const found1 = entries1.filter((arg0) => {
+    [tmp, tmp2] = arg0;
+    let hasItem = "" !== tmp;
     if (hasItem) {
-      let tmp22 = tmp20;
-      hasItem = null == tmp20;
+      hasItem = null == tmp2;
     }
     if (hasItem) {
-      let tmp23 = first1;
-      hasItem = set.has(tmp19);
+      hasItem = set.has(tmp);
     }
-    if (hasItem) {
-      let tmp24 = first1;
-      let addResult = set1.add(tmp19);
+    return hasItem;
+  });
+  const mapped1 = found1.map((arg0) => {
+    [tmp] = arg0;
+    return tmp;
+  });
+  joined = mapped1.join(",");
+  const items1 = [joined];
+  return React.useMemo(() => {
+    if ("" === joined) {
+      let items = [];
+    } else {
+      items = joined.split(",");
     }
-    continue;
-  }
-  return set1;
+    return new Set(items);
+  }, items1);
 }
 let result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCollectiblesShopProducts.tsx");
 

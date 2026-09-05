@@ -1,14 +1,14 @@
-// Module ID: 13311
-// Function ID: 13312
+// Module ID: 13383
+// Function ID: 13384
 // Name: SparklesIcon
-// Dependencies: [19, 21, 709, 4196, 13312, 2]
+// Dependencies: [19, 21, 576, 4261, 13384, 2]
 // Exports: SparklesIcon
 
-// Module 13311 (SparklesIcon)
+// Module 13383 (SparklesIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 13312 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 13384 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

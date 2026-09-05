@@ -1,15 +1,15 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11608
+// Function ID: 11609
 // Name: openAddMembersActionSheet
-// Dependencies: [673, 695, 4448, 9679, 2008, 11541, 2]
+// Dependencies: [1074, 1242, 4527, 9750, 1896, 11609, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
-// Module 11540 (openAddMembersActionSheet)
+// Module 11608 (openAddMembersActionSheet)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/channel_permissions/native/ChannelPermissionsUtils.tsx");
@@ -23,12 +23,12 @@ export const openAddMembersActionSheet = function openAddMembersActionSheet(clos
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel: closure_0, canSkip: flag };
-  obj2.openLazy(asyncRequireImpl(9679, dependencyMap.paths), "channel-add-members-" + closure_0.id, obj);
+  obj2.openLazy(asyncRequireImpl(9750, dependencyMap.paths), "channel-add-members-" + closure_0.id, obj);
 };
 export const openChannelMembersActionSheet = function openChannelMembersActionSheet(id, guild_id) {
   let obj = expandEventPropertiesDefault;
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Manage Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channelId: id, guildId: guild_id };
-  obj2.openLazy(asyncRequireImpl(11541, dependencyMap.paths), "channel-members-" + id, obj);
+  obj2.openLazy(asyncRequireImpl(11609, dependencyMap.paths), "channel-members-" + id, obj);
 };

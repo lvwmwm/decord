@@ -1,14 +1,14 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 11407
+// Function ID: 11408
 // Name: EducationIcon
-// Dependencies: [19, 21, 709, 4196, 11338, 2]
+// Dependencies: [19, 21, 576, 4261, 11406, 2]
 // Exports: EducationIcon
 
-// Module 11339 (EducationIcon)
+// Module 11407 (EducationIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11338 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 11406 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

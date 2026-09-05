@@ -1,9 +1,9 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10800
+// Function ID: 10801
 // Name: SlayerShopCardCTAType
 // Dependencies: [2]
 
-// Module 10731 (SlayerShopCardCTAType)
+// Module 10800 (SlayerShopCardCTAType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontAnalyticsConstants.tsx");

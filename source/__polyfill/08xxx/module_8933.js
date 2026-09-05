@@ -1,10 +1,9 @@
 // Module ID: 8933
 // Function ID: 8934
-// Dependencies: [8865, 8931]
+// Dependencies: [8934]
 
 // Module 8933
-import _mod8865 from "module_8865" /* 8865 */;
-import _mod8931 from "module_8931" /* 8931 */;
+import _mod8934 from "module_8934" /* 8934 */;
 
 const self = this;
 let self2 = this;
@@ -58,50 +57,43 @@ if (self2) {
         return obj;
       };
     }
+    let fn2 = self;
+    if (self) {
+      fn2 = self.__exportStar;
+    }
+    if (!fn2) {
+      fn2 = (obj, exports) => {
+        for (const key10007 in arg0) {
+          let tmp5 = key10007;
+          let tmp6 = "default" === key10007;
+          if (tmp6) {
+            if (tmp6) {
+              continue;
+            } else {
+              let tmp3 = self2;
+              let tmp4 = self2(arg1, arg0, key10007);
+              continue;
+            }
+            continue;
+          } else {
+            let _Object = Object;
+            let call = hasOwnProperty.call;
+            if (typeof call === "unknown") {
+              let hasOwnPropertyResult = hasOwnProperty(key10007);
+            } else {
+              hasOwnPropertyResult = call(arg1, key10007);
+            }
+            let tmp2 = hasOwnPropertyResult;
+          }
+        }
+      };
+    }
     const _Object3 = Object;
-    exports.ZodISODateTime = undefined;
-    exports.ZodISODate = undefined;
-    exports.ZodISOTime = undefined;
-    exports.ZodISODuration = undefined;
-    exports.datetime = function datetime(enc) {
-      return closure_3._isoDateTime(exports.ZodISODateTime, enc);
-    };
-    exports.date = function date(enc) {
-      return closure_3._isoDate(exports.ZodISODate, enc);
-    };
-    exports.time = function time(enc) {
-      return closure_3._isoTime(exports.ZodISOTime, enc);
-    };
-    exports.duration = function duration(enc) {
-      return closure_3._isoDuration(exports.ZodISODuration, enc);
-    };
-    const fnResult = fn(_mod8865);
-    let c3 = fnResult;
-    let closure_4 = fn(_mod8931);
-    exports.ZodISODateTime = fnResult.$constructor("ZodISODateTime", (arg0, arg1) => {
-      const $ZodISODateTime = closure_3.$ZodISODateTime;
-      $ZodISODateTime.init(arg0, arg1);
-      const ZodStringFormat = closure_4.ZodStringFormat;
-      ZodStringFormat.init(arg0, arg1);
-    });
-    exports.ZodISODate = fnResult.$constructor("ZodISODate", (arg0, arg1) => {
-      const $ZodISODate = closure_3.$ZodISODate;
-      $ZodISODate.init(arg0, arg1);
-      const ZodStringFormat = closure_4.ZodStringFormat;
-      ZodStringFormat.init(arg0, arg1);
-    });
-    exports.ZodISOTime = fnResult.$constructor("ZodISOTime", (arg0, arg1) => {
-      const $ZodISOTime = closure_3.$ZodISOTime;
-      $ZodISOTime.init(arg0, arg1);
-      const ZodStringFormat = closure_4.ZodStringFormat;
-      ZodStringFormat.init(arg0, arg1);
-    });
-    exports.ZodISODuration = fnResult.$constructor("ZodISODuration", (arg0, arg1) => {
-      const $ZodISODuration = closure_3.$ZodISODuration;
-      $ZodISODuration.init(arg0, arg1);
-      const ZodStringFormat = closure_4.ZodStringFormat;
-      ZodStringFormat.init(arg0, arg1);
-    });
+    exports.z = undefined;
+    const fnResult = fn(_mod8934);
+    exports.z = fnResult;
+    fn2(_mod8934, exports);
+    exports.default = fnResult;
   } else {
     const _Object2 = Object;
   }

@@ -1,13 +1,13 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9240
+// Function ID: 9241
 // Name: _getDisclosures
-// Dependencies: [5, 673, 527, 9170, 1233, 2]
+// Dependencies: [5, 1074, 1272, 9241, 1114, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9169 (_getDisclosures)
-import create from "create" /* 9170 */;
+// Module 9240 (_getDisclosures)
+import create from "create" /* 9241 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function _getDisclosures() {
@@ -75,13 +75,13 @@ function _ackDisclosures() {
               return obj;
             } else {
               const result = c3.APPLICATION_DISCLOSURES(callback);
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               obj1 = { url: null, body: null, rejectWithError: null };
               obj1[0] = result;
               const obj2 = { disclosures: null };
               obj2[0] = dependencyMap;
               obj1[1] = obj2;
-              obj1[2] = callback(527).rejectWithMigratedError();
+              obj1[2] = callback(1272).rejectWithMigratedError();
               c3 = 1;
               c2 = 1;
               const obj3 = { value: null, done: false };
@@ -141,11 +141,11 @@ export const ackDisclosures = function ackDisclosures(closure_0, closure_1_50) {
 };
 export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
   if (create.ApplicationDisclosureType.IP_LOCATION === toFixed) {
-    const intl2 = tmp(1233).intl;
-    return intl2.string(tmp(1233).t["6wPmjo"]);
-  } else if (tmp(9170).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
-    const intl = tmp(1233).intl;
-    return intl.string(tmp(1233).t["/uOMKZ"]);
+    const intl2 = tmp(1114).intl;
+    return intl2.string(tmp(1114).t["6wPmjo"]);
+  } else if (tmp(9241).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+    const intl = tmp(1114).intl;
+    return intl.string(tmp(1114).t["/uOMKZ"]);
   } else {
     return null;
   }

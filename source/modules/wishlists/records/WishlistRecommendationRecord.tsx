@@ -1,12 +1,12 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7227
+// Function ID: 7228
 // Name: fromServer
-// Dependencies: [1935, 4524, 4507, 2]
+// Dependencies: [1386, 5511, 1918, 2]
 
-// Module 7167 (fromServer)
-import toJSDefault from "toJS" /* 1935 */;
-import closure_0 from "createFromServer" /* 4524 */;
-import closure_1 from "createExecutable" /* 4507 */;
+// Module 7227 (fromServer)
+import toJSDefault from "toJS" /* 1386 */;
+import closure_0 from "createFromServer" /* 5511 */;
+import closure_1 from "createExecutable" /* 1918 */;
 
 toJSDefault;
 let prototype;

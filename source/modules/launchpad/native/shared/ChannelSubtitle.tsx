@@ -1,15 +1,15 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16988
+// Function ID: 16989
 // Name: ChannelSubtitle
-// Dependencies: [19, 10047, 21, 16899, 4477, 16148, 10045, 2]
+// Dependencies: [19, 10118, 21, 16977, 4556, 16226, 10116, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16910 (ChannelSubtitle)
+// Module 16988 (ChannelSubtitle)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4477 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16148 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16899 */;
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10047 */;
+import Text from "Text" /* 4556 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16226 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16977 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10118 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -38,8 +38,8 @@ function ChannelSubtitle(arg0) {
       str = "text-muted";
     }
     obj[5] = str;
-    obj.children = tmp(10045).renderMessagePreviewMarkup(obj);
-    return jsx(tmp(4477).Text, { content: null, muted: null, channelId: null, guildId: null, disableAnimatedEmoji: null, color: null });
+    obj.children = tmp(10116).renderMessagePreviewMarkup(obj);
+    return jsx(tmp(4556).Text, { content: null, muted: null, channelId: null, guildId: null, disableAnimatedEmoji: null, color: null });
   }
 }
 noopAll;

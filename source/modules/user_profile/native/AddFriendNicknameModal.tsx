@@ -1,23 +1,23 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13115
+// Function ID: 13116
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4130, 1921, 21, 4481, 709, 10858, 586, 1233, 4731, 8972, 5533, 4955, 4477, 6553, 4325, 2]
+// Dependencies: [5, 32, 19, 17, 4209, 1371, 21, 4560, 576, 10927, 504, 1114, 4763, 9042, 5578, 4994, 4556, 6613, 4404, 2]
 // Exports: default
 
-// Module 13047 (AddFriendNicknameModal)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import TextField from "TextField" /* 6553 */;
+// Module 13115 (AddFriendNicknameModal)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import TextField from "TextField" /* 6613 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -153,7 +153,7 @@ export default function AddFriendNicknameModal(arg0) {
   let tmp = callback4();
   let obj = React;
   [c2, c3] = callback(React.useState(false), 2);
-  callback = showUserProfile(10858)();
+  callback = showUserProfile(10927)();
   obj1 = initialize;
   const items = [_handleSubmit];
   const stateFromStores = obj1.useStateFromStores(items, () => _handleSubmit.getNickname(closure_0));
@@ -169,11 +169,11 @@ export default function AddFriendNicknameModal(arg0) {
   const items1 = [closure_8];
   const stateFromStores1 = initialize.useStateFromStores(items1, () => closure_1_8.getUser(closure_0));
   if (null == stateFromStores) {
-    let intl2 = tmp5(1233).intl;
-    let stringResult = intl2.string(tmp5(1233).t.BGYkaH);
+    let intl2 = tmp5(1114).intl;
+    let stringResult = intl2.string(tmp5(1114).t.BGYkaH);
   } else {
-    let intl = tmp5(1233).intl;
-    stringResult = intl.string(tmp5(1233).t["8pOYUE"]);
+    let intl = tmp5(1114).intl;
+    stringResult = intl.string(tmp5(1114).t["8pOYUE"]);
   }
   const items2 = [showUserProfile];
   callback1 = obj.useCallback(() => {
@@ -185,10 +185,10 @@ export default function AddFriendNicknameModal(arg0) {
   }, items2);
   obj = { style: tmp.container, children: null };
   obj = { children: null };
-  let tmp3Result = tmp3(5533);
+  let tmp3Result = tmp3(5578);
   obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  tmp3Result = tmp3(4955);
-  const intl3 = tmp5(1233).intl;
+  tmp3Result = tmp3(4994);
+  const intl3 = tmp5(1114).intl;
   obj1[0] = intl3.string(getSystemLocale.t["R3BPH+"]);
   obj1[1] = function handleSubmit() {
     const self = this;
@@ -200,20 +200,20 @@ export default function AddFriendNicknameModal(arg0) {
     }
     return applyArgumentsResult;
   };
-  const intl4 = tmp5(1233).intl;
+  const intl4 = tmp5(1114).intl;
   obj1[2] = intl4.string(getSystemLocale.t["ETE/oC"]);
   obj1[3] = callback1;
   const items3 = [callback2(Text.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
   let obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl5 = tmp5(1233).intl;
+  const intl5 = tmp5(1114).intl;
   obj3[3] = intl5.string(getSystemLocale.t["NdQ+lP"]);
   items3[1] = callback2(Text.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, accessibilityLabel: null, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
-  const intl6 = tmp5(1233).intl;
+  const intl6 = tmp5(1114).intl;
   obj4[2] = intl6.string(getSystemLocale.t.pqG6GS);
   let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   const tmp5Result = initialize;
-  obj4[3] = showUserProfile(4325).getName(stateFromStores1);
+  obj4[3] = showUserProfile(4404).getName(stateFromStores1);
   obj4[4] = stateFromStores;
   items3[2] = callback2(TextField.TextField, obj4);
   obj1[4] = items3;

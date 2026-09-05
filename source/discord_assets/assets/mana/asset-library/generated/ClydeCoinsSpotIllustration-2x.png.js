@@ -1,9 +1,9 @@
-// Module ID: 5805
-// Function ID: 5806
+// Module ID: 5856
+// Function ID: 5857
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5805 (metadata)
+// Module 5856 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeCoinsSpotIllustration-2x.png.js");

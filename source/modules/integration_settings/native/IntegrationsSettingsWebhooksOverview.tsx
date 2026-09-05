@@ -1,29 +1,29 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16841
+// Function ID: 16842
 // Name: WebhookItem
-// Dependencies: [5, 19, 1386, 1981, 1908, 4120, 1921, 16764, 673, 21, 4481, 709, 1498, 1431, 5560, 1296, 1233, 11, 4325, 586, 16765, 8525, 16766, 4205, 1994, 4477, 16768, 5642, 8523, 4934, 6980, 2]
+// Dependencies: [5, 19, 1957, 2012, 1979, 4199, 1371, 16842, 1074, 21, 4560, 576, 1483, 1396, 5605, 1178, 1114, 11, 4404, 504, 16843, 8595, 16844, 4271, 2024, 4556, 16846, 5687, 8593, 4973, 7040, 2]
 // Exports: default
 
-// Module 16763 (WebhookItem)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import combinedDefault from "combined" /* 1994 */;
-import Stack from "Stack" /* 4934 */;
-import NavScrim from "NavScrim" /* 6980 */;
-import Form from "Form" /* 8523 */;
+// Module 16841 (WebhookItem)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import combinedDefault from "combined" /* 2024 */;
+import Stack from "Stack" /* 4973 */;
+import NavScrim from "NavScrim" /* 7040 */;
+import Form from "Form" /* 8593 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import comparator from "comparator" /* 1981 */;
-import closure_8 from "comparator" /* 1981 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "handleWebhookCreateUpdate" /* 16764 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import comparator from "comparator" /* 2012 */;
+import closure_8 from "comparator" /* 2012 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import closure_12 from "handleWebhookCreateUpdate" /* 16842 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function WebhookItem(avatar) {
@@ -233,7 +233,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [callback(webhookType(4477).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [callback(webhookType(4556).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants2.INCOMING;
   if (tmp4Result) {
     let obj = { guild: null, channel: null };
@@ -244,17 +244,17 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(16768).WebhookEmpty;
+    obj[0] = tmp5(16846).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
-      const intl2 = tmp5(1233).intl;
-      dkHRkE = tmp5(1233).t.dkHRkE;
+      const intl2 = tmp5(1114).intl;
+      dkHRkE = tmp5(1114).t.dkHRkE;
       let stringResult = intl2.string(dkHRkE);
     } else {
-      const intl = tmp5(1233).intl;
-      stringResult = intl.string(tmp5(1233).t["4JAVI+"]);
+      const intl = tmp5(1114).intl;
+      stringResult = intl.string(tmp5(1114).t["4JAVI+"]);
     }
     obj[1] = stringResult;
-    tmp4Result = tmp4(tmp5(1296).EmptyState, obj);
+    tmp4Result = tmp4(tmp5(1178).EmptyState, obj);
   } else {
     obj = { hasIcons: true, children: null };
     obj[1] = found.map((type) => {
@@ -264,7 +264,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     obj1 = { children: null };
-    items[2] = tmp4(tmp5(5642).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5687).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }

@@ -1,13 +1,13 @@
-// Module ID: 9938
-// Function ID: 9939
+// Module ID: 10009
+// Function ID: 10010
 // Name: coercePlatformTypeToConsoleType
-// Dependencies: [9162, 673, 2]
+// Dependencies: [9233, 1074, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 9938 (coercePlatformTypeToConsoleType)
+// Module 10009 (coercePlatformTypeToConsoleType)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9162 */;
+import ME from "ME" /* 1074 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9233 */;
 
 const GameConsoleTypes = XBOX_URL_BASE.GameConsoleTypes;
 const PlatformTypes = ME.PlatformTypes;

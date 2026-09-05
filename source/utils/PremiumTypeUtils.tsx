@@ -1,12 +1,12 @@
-// Module ID: 1945
-// Function ID: 1946
+// Module ID: 1885
+// Function ID: 1886
 // Name: isPremiumAtLeast
-// Dependencies: [1923, 2]
+// Dependencies: [1373, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1945 (isPremiumAtLeast)
+// Module 1885 (isPremiumAtLeast)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 function isPremiumAtLeast(premiumType, TIER_2) {
   let tmp = null == TIER_2;

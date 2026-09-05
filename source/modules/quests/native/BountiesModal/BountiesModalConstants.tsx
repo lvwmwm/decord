@@ -1,12 +1,12 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 15005
+// Function ID: 15006
 // Name: BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS
-// Dependencies: [11434, 2]
+// Dependencies: [11502, 2]
 // Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekTargetScale
 
-// Module 14930 (BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS)
+// Module 15005 (BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS)
 import set from "set" /* 2 */;
-import APP_STORE_OVERLAY_HEIGHT_RATIO from "APP_STORE_OVERLAY_HEIGHT_RATIO" /* 11434 */;
+import APP_STORE_OVERLAY_HEIGHT_RATIO from "APP_STORE_OVERLAY_HEIGHT_RATIO" /* 11502 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");
 

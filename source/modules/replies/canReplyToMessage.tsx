@@ -1,17 +1,17 @@
-// Module ID: 7907
-// Function ID: 7908
+// Module ID: 7976
+// Function ID: 7977
 // Name: useCanReplyToMessage
-// Dependencies: [32, 4120, 1921, 673, 502, 683, 7209, 7908, 586, 2]
+// Dependencies: [32, 4199, 1371, 1074, 1085, 1089, 7269, 7977, 504, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 7907 (useCanReplyToMessage)
-import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7209 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 7908 */;
+// Module 7976 (useCanReplyToMessage)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7269 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 7977 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { Permissions } from "sum" /* 502 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { Permissions } from "sum" /* 1085 */;
 
 require = arg1;
 ({ MessageFlags: c5, MessageStates: closure_6 } = ME);
@@ -20,16 +20,16 @@ const result = require("set").fileFinishedImporting("modules/replies/canReplyToM
 export const useCanReplyToMessage = function useCanReplyToMessage(channel, message) {
   const _require = channel;
   dependencyMap = message;
-  const canUnarchiveThread = _require(7209).useCanUnarchiveThread(channel);
-  const obj = _require(7209);
+  const canUnarchiveThread = _require(7269).useCanUnarchiveThread(channel);
+  const obj = _require(7269);
   let tmp = _require;
   let guildId;
   if (channel != null) {
     guildId = channel.getGuildId();
   }
-  const obj2 = _require(7908);
+  const obj2 = _require(7977);
   const items = [closure_3];
-  let stateFromStores = tmp(586).useStateFromStores(items, () => {
+  let stateFromStores = tmp(504).useStateFromStores(items, () => {
     let tmp = null != channel;
     if (tmp) {
       tmp = null != message;
@@ -83,7 +83,7 @@ export const canReplyToMessage = function canReplyToMessage(isPrivate, type) {
     const tmp4 = Permissions;
   }
   if (hasItem) {
-    const REPLYABLE = tmp(683).MessageTypesSets.REPLYABLE;
+    const REPLYABLE = tmp(1089).MessageTypesSets.REPLYABLE;
     hasItem = REPLYABLE.has(type.type);
   }
   currentUser = currentUser.getCurrentUser();

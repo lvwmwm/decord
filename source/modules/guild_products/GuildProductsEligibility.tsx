@@ -1,12 +1,12 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7258
+// Function ID: 7259
 // Name: useGuildEligibleForGuildProducts
-// Dependencies: [1908, 673, 586, 2]
+// Dependencies: [1979, 1074, 504, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 7198 (useGuildEligibleForGuildProducts)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 7258 (useGuildEligibleForGuildProducts)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
@@ -15,7 +15,7 @@ export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuil
   const _require = id;
   const items = [closure_2];
   const items1 = [id];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {

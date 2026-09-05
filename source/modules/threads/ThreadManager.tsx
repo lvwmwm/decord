@@ -1,13 +1,13 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17494
+// Function ID: 17495
 // Name: handleChannelDelete
-// Dependencies: [1215, 1386, 7058, 586, 706, 7829, 2]
+// Dependencies: [502, 1957, 7118, 504, 573, 7898, 2]
 
-// Module 17414 (handleChannelDelete)
-import initializeDefault from "initialize" /* 7058 */;
-import withErrorHandlingDefault from "withErrorHandling" /* 7829 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
+// Module 17494 (handleChannelDelete)
+import initializeDefault from "initialize" /* 7118 */;
+import withErrorHandlingDefault from "withErrorHandling" /* 7898 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
 
 initializeDefault;
 class ThreadManager extends tmp2 {
@@ -24,7 +24,7 @@ prototype["handleChannelDelete"] = function handleChannelDelete(channel) {
   if (null != channel.guild_id) {
     allThreadsForParent = store.getAllThreadsForParent(channel.id);
     if (allThreadsForParent.length > 0) {
-      const Emitter = allThreadsForParent(586).Emitter;
+      const Emitter = allThreadsForParent(504).Emitter;
       Emitter.batched(() => {
         for (const item10005 of allThreadsForParent) {
           let tmp = allThreadsForParent;
@@ -76,7 +76,7 @@ prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
   if (!guild.unavailable) {
     allThreadsForGuild = store.getAllThreadsForGuild(guild.id);
     if (0 !== allThreadsForGuild.length) {
-      const Emitter = allThreadsForGuild(586).Emitter;
+      const Emitter = allThreadsForGuild(504).Emitter;
       Emitter.batched(() => {
         for (const item10005 of allThreadsForGuild) {
           let tmp = allThreadsForGuild;

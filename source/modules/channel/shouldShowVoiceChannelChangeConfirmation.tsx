@@ -1,15 +1,15 @@
-// Module ID: 12862
-// Function ID: 12863
+// Module ID: 12930
+// Function ID: 12931
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4498, 1303, 1215, 1908, 4500, 2]
+// Dependencies: [4577, 1185, 502, 1979, 4579, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12862 (shouldShowVoiceChannelChangeConfirmation)
-import closure_0 from "set" /* 4498 */;
-import closure_1 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "updateVoiceState" /* 4500 */;
+// Module 12930 (shouldShowVoiceChannelChangeConfirmation)
+import closure_0 from "set" /* 4577 */;
+import closure_1 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "updateVoiceState" /* 4579 */;
 
 const result = require("set").fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
 

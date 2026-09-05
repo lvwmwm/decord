@@ -1,23 +1,23 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16651
+// Function ID: 16652
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4473, 4572, 4130, 673, 21, 4481, 709, 4477, 4325, 10807, 586, 9367, 1296, 9682, 13429, 16575, 2]
+// Dependencies: [5, 32, 19, 17, 4552, 4600, 4209, 1074, 21, 4560, 576, 4556, 4404, 10876, 504, 9438, 1178, 9753, 13502, 16652, 2]
 
-// Module 16574 (FriendPresence)
-import ThemesDefault from "Themes" /* 709 */;
-import nameFromUser from "nameFromUser" /* 4325 */;
-import Text from "Text" /* 4477 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10807 */;
+// Module 16651 (FriendPresence)
+import ThemesDefault from "Themes" /* 576 */;
+import nameFromUser from "nameFromUser" /* 4404 */;
+import Text from "Text" /* 4556 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10876 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_9 from "sortActivity" /* 4572 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_9 from "sortActivity" /* 4600 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function FriendPresence(user) {

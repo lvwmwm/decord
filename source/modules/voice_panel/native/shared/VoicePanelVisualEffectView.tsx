@@ -1,15 +1,15 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17181
+// Function ID: 17182
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4481, 709, 4197, 8832, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4262, 8902, 2]
 
-// Module 17103 (VoicePanelVisualEffectView)
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import TwinButtons from "TwinButtons" /* 8832 */;
+// Module 17181 (VoicePanelVisualEffectView)
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import TwinButtons from "TwinButtons" /* 8902 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 17223
-// Function ID: 17224
+// Module ID: 17303
+// Function ID: 17304
 // Name: DEFAULT_EXPIRATION_DAYS
-// Dependencies: [1386, 4130, 8308, 4194, 1233, 9495, 706, 11149, 2]
+// Dependencies: [1957, 4209, 8378, 4259, 1114, 9566, 573, 11217, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 17223 (DEFAULT_EXPIRATION_DAYS)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import generateAcceptInviteOptionsDefault from "generateAcceptInviteOptions" /* 8308 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "markAllUserIdListsStale" /* 4130 */;
+// Module 17303 (DEFAULT_EXPIRATION_DAYS)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import generateAcceptInviteOptionsDefault from "generateAcceptInviteOptions" /* 8378 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "markAllUserIdListsStale" /* 4209 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
@@ -18,11 +18,11 @@ export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
   let obj = generateAcceptInviteOptionsDefault;
   generateAcceptInviteOptionsDefault.revokeFriendInvites().then(() => {
-    let obj = callback2(4194);
+    let obj = callback2(4259);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
-    const intl = callback(1233).intl;
-    obj[1] = intl.string(callback(1233).t.jSHEOQ);
-    obj[2] = callback2(9495);
+    const intl = callback(1114).intl;
+    obj[1] = intl.string(callback(1114).t.jSHEOQ);
+    obj[2] = callback2(9566);
     obj.open(obj);
   });
 };

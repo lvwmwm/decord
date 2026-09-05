@@ -1,18 +1,18 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16169
+// Function ID: 16170
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 4473, 4367, 4368, 1383, 21, 4481, 709, 586, 4371, 12452, 16092, 4387, 5394, 1233, 2400, 12455, 11059, 2]
+// Dependencies: [19, 4552, 4449, 4450, 1954, 21, 4560, 576, 504, 4453, 12520, 16170, 4469, 5434, 1114, 2428, 12523, 11127, 2]
 // Exports: default
 
-// Module 16091 (GuildThemeMemberCoachmark)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16169 (GuildThemeMemberCoachmark)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_5 from "calculateAppliedBoosts" /* 4367 */;
-import { GUILD_THEME_POWERUP_BOOST_PRICE as closure_6 } from "BoostedGuildTiers" /* 4368 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_5 from "calculateAppliedBoosts" /* 4449 */;
+import { GUILD_THEME_POWERUP_BOOST_PRICE as closure_6 } from "BoostedGuildTiers" /* 4450 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { coachmarkImage: null };
@@ -34,24 +34,24 @@ export default function GuildThemeMemberCoachmark(guildId) {
   dependencyMap = tmp;
   const items = [c5];
   const items1 = [guildId];
-  const stateFromStores = guildId(586).useStateFromStores(items, () => {
+  const stateFromStores = guildId(504).useStateFromStores(items, () => {
     const stateForGuild = _undefined.getStateForGuild(guildId);
     let tmp2;
     if (stateForGuild != null) {
-      tmp2 = stateForGuild.allPowerups[guildId(undefined, 4371).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+      tmp2 = stateForGuild.allPowerups[guildId(undefined, 4453).GUILD_POWERUP_GUILD_THEME_SKU_ID];
     }
     return tmp2;
   }, items1);
-  let obj = guildId(586);
+  let obj = guildId(504);
   let tmp2 = guildId;
   const items2 = [guildPowerupBannerImage];
-  stateFromStores1 = guildId(586).useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
-  const obj2 = guildId(586);
-  guildPowerupBannerImage = guildId(12452).getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
+  stateFromStores1 = guildId(504).useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
+  const obj2 = guildId(504);
+  guildPowerupBannerImage = guildId(12520).getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(16092);
+    guildPowerupBannerImage = markAsDismissed(16170);
   }
-  const diff = callback - markAsDismissed(4387)(guildId).available;
+  const diff = callback - markAsDismissed(4469)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   callback = stateFromStores1.useCallback(() => {
@@ -61,27 +61,27 @@ export default function GuildThemeMemberCoachmark(guildId) {
   callback1 = stateFromStores1.useCallback(() => {
     markAsDismissed(callback1.TAKE_ACTION);
     if (c5 > 0) {
-      guildId(5394).openApplyBoostModal(guildId);
-      const obj = guildId(5394);
+      guildId(5434).openApplyBoostModal(guildId);
+      const obj = guildId(5434);
     }
   }, items4);
   const items5 = [callback, callback1, guildPowerupBannerImage, tmp.coachmarkImage, stateFromStores1];
   const memo = stateFromStores1.useMemo(() => {
     const obj = { title: null, description: null, visible: true, position: "bottom", offsetY: 8, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = guildId(1233).intl;
-    obj[0] = intl.string(markAsDismissed(2400).RK6NbY);
-    const intl2 = guildId(1233).intl;
-    obj[1] = intl2.string(markAsDismissed(2400).xlAqGk);
+    const intl = guildId(1114).intl;
+    obj[0] = intl.string(markAsDismissed(2428).RK6NbY);
+    const intl2 = guildId(1114).intl;
+    obj[1] = intl2.string(markAsDismissed(2428).xlAqGk);
     obj[5] = callback;
     obj[6] = function renderImgComponent() {
       return closure_1_8(closure_1_1(closure_1_2[16]), { imageUrl: closure_4, isAnimated: !closure_3, style: coachmarkImage.coachmarkImage });
     };
-    const intl3 = guildId(1233).intl;
-    obj[7] = intl3.string(guildId(1233).t.oPAx73);
+    const intl3 = guildId(1114).intl;
+    obj[7] = intl3.string(guildId(1114).t.oPAx73);
     obj[9] = callback1;
     return obj;
   }, items5);
-  const obj3 = guildId(12452);
-  const coachmark = tmp2(11059).useCoachmark(guildId.targetRef, memo);
+  const obj3 = guildId(12520);
+  const coachmark = tmp2(11127).useCoachmark(guildId.targetRef, memo);
   return null;
 };

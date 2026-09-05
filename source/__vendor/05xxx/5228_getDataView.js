@@ -1,0 +1,27 @@
+// Module ID: 5228
+// Function ID: 5229
+// Name: getDataView
+// Dependencies: [5213]
+
+// Module 5228 (getDataView)
+import getDataView from "getDataView" /* 5213 */;
+
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 0;
+let c3 = "<?xpacket begin";
+arg5.default = {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      tmp = getDataView.getStringFromDataView(dataView, c2, length.length) === length;
+      const obj = getDataView;
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    xmpChunks.push({ dataOffset: c2, length: byteLength.byteLength });
+    return { xmpChunks };
+  }
+};

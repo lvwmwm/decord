@@ -1,24 +1,24 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17636
+// Function ID: 17637
 // Name: Header
-// Dependencies: [32, 19, 17, 673, 5369, 21, 4481, 709, 4416, 11495, 1296, 1431, 1362, 5560, 1233, 5084, 5635, 7141, 17557, 1234, 4477, 5244, 5642, 2]
+// Dependencies: [32, 19, 17, 1074, 5408, 21, 4560, 576, 4495, 11563, 1178, 1396, 4411, 5605, 1114, 5123, 5680, 7201, 17637, 1115, 4556, 5283, 5687, 2]
 // Exports: default
 
-// Module 17556 (Header)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import XSmallIcon from "XSmallIcon" /* 5635 */;
-import request from "request" /* 11495 */;
+// Module 17636 (Header)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5283 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import XSmallIcon from "XSmallIcon" /* 5680 */;
+import request from "request" /* 11563 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { PlatformTypes } from "ME" /* 673 */;
-import OperatorTypes from "OperatorTypes" /* 5369 */;
+import { PlatformTypes } from "ME" /* 1074 */;
+import OperatorTypes from "OperatorTypes" /* 5408 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Header(arg0) {
@@ -40,7 +40,7 @@ function Header(arg0) {
   }
   if (null != application1) {
     obj = { size: null, user: null, guildId: "Array" };
-    obj[0] = tmp3(1296).AvatarSizes.XSMALL;
+    obj[0] = tmp3(1178).AvatarSizes.XSMALL;
     let bot;
     if (integration != null) {
       application = integration.application;
@@ -49,7 +49,7 @@ function Header(arg0) {
       }
     }
     obj[1] = bot;
-    let tmp8Result = callback2(tmp3(1296).Avatar, obj);
+    let tmp8Result = callback2(tmp3(1178).Avatar, obj);
     let name = integration.application.name;
     const tmp14 = callback2;
   } else if (null != applicationId) {
@@ -63,9 +63,9 @@ function Header(arg0) {
       let tmp11;
       if (null != bot1) {
         obj = { size: null, user: null, guildId: "Array" };
-        obj[0] = tmp3(1296).AvatarSizes.XSMALL;
+        obj[0] = tmp3(1178).AvatarSizes.XSMALL;
         obj[1] = getOrFetchApplicationBatched.bot;
-        tmp11 = callback2(tmp3(1296).Avatar, obj);
+        tmp11 = callback2(tmp3(1178).Avatar, obj);
       }
       name = undefined;
       if (getOrFetchApplicationBatched != null) {
@@ -74,16 +74,16 @@ function Header(arg0) {
       tmp8Result = tmp11;
     }
   } else if (null != platform) {
-    let tmp3Result = tmp3(1431);
-    tmp3Result = tmp3(1362);
+    let tmp3Result = tmp3(1396);
+    tmp3Result = tmp3(4411);
     const icon = platform.icon;
     obj1 = { source: null, disableColor: true };
     obj1[0] = tmp3Result.makeSource(tmp3Result.isThemeDark(tmp2) ? icon.darkPNG : icon.lightPNG);
-    tmp8Result = callback2(tmp3(1296).Icon, obj1);
+    tmp8Result = callback2(tmp3(1178).Icon, obj1);
     const tmp8 = callback2;
   }
   const obj2 = { icon: tmp8Result, label: null, trailing: null };
-  const intl = tmp3(1233).intl;
+  const intl = tmp3(1114).intl;
   let name1;
   if (platform != null) {
     name1 = platform.name;
@@ -93,7 +93,7 @@ function Header(arg0) {
   }
   obj2[1] = intl.format(getSystemLocale.t.Nj0a3j, { platformName: name1 });
   const obj3 = { "aria-label": null, onPress: null, disabled: null, children: null };
-  const intl2 = tmp3(1233).intl;
+  const intl2 = tmp3(1114).intl;
   obj3[0] = intl2.string(getSystemLocale.t.N86XcP);
   obj3[1] = onRemove;
   obj3[2] = locked;
@@ -143,7 +143,7 @@ function BooleanConfigRule(metadataField) {
     }
     closure_3(tmp, num);
   };
-  return closure_12(metadataField(7141).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(7201).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   ({ fieldText, fieldTextHook, metadataField } = existingPendingConfiguration);
@@ -195,7 +195,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(17557);
+  let obj = metadataField(17637);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -204,7 +204,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(17557);
+  let tmpResult = tmp(17637);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -231,9 +231,9 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   closure_11 = tmp14;
   if (undefined !== fieldTextHook) {
-    tmpResult = tmp(1234);
+    tmpResult = tmp(1115);
     closure_13 = tmpResult.isIOS() ? map.numericalInputContainerIOSInline : map.numericalInputContainerAndroidInline;
-    const intl = tmp(1233).intl;
+    const intl = tmp(1114).intl;
     obj = { metadataHook: null };
     obj[0] = function metadataHook() {
       let obj = { style: items, children: null };
@@ -283,12 +283,12 @@ function NumericalConfigRule(existingPendingConfiguration) {
       obj3[2] = !tmp14;
       obj3[3] = first;
       obj3[4] = onInputValueChange;
-      obj2[0] = onInputValueChange(tmp(1296).TextInput, obj3, metadataField);
+      obj2[0] = onInputValueChange(tmp(1178).TextInput, obj3, metadataField);
       let items1 = [onInputValueChange(map, obj2, "_numericalInputContainer"), ];
       const obj4 = { variant: "text-md/semibold", style: null, children: null };
       obj4[1] = map.appNumericalInputText;
       obj4[2] = fieldText;
-      items1[1] = onInputValueChange(tmp(4477).Text, obj4);
+      items1[1] = onInputValueChange(tmp(4556).Text, obj4);
       obj1[1] = items1;
       tmp21Result = closure_13(tmp22, obj1);
       const tmp21 = closure_13;
@@ -330,7 +330,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       }
       closure_3(tmp3, num);
     };
-    return onInputValueChange(tmp(7141).TableSwitchRow, obj5, metadataField);
+    return onInputValueChange(tmp(7201).TableSwitchRow, obj5, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {
@@ -599,7 +599,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: "engel", onRemove: "fjes", locked: "glorie" };
+      obj = { platform: null, integration: "a", applicationId: "<string:3444637699>", onRemove: "<string:1365331342>", locked: "<string:659423233>" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

@@ -1,10 +1,10 @@
 // Module ID: 13432
 // Function ID: 13433
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13432 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 420, height: 112, scales: [2, 3], hash: "e2e6d0edbd6c916cde4ea4f22a6f794c", name: "subscription_placeholder_pattern_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "7d09a15a2a5682035199dcfee2a26d08", name: "badge", type: "png" });

@@ -1,27 +1,27 @@
-// Module ID: 14810
-// Function ID: 14811
+// Module ID: 14885
+// Function ID: 14886
 // Name: FamilyCenterFeatureRows
-// Dependencies: [19, 17, 21, 4481, 709, 11851, 1233, 2368, 14811, 14812, 12308, 6910, 9790, 14807, 4934, 4477, 5642, 5560, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 11919, 1114, 2396, 14886, 14887, 12376, 6970, 9861, 14882, 4973, 4556, 5687, 5605, 2]
 // Exports: default
 
-// Module 14810 (FamilyCenterFeatureRows)
+// Module 14885 (FamilyCenterFeatureRows)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import EyeIcon from "EyeIcon" /* 6910 */;
-import registerAssetDefault from "registerAsset" /* 9790 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11851 */;
-import registerAssetDefault2 from "registerAsset" /* 12308 */;
-import QrCodeIcon from "QrCodeIcon" /* 14807 */;
-import registerAssetDefault3 from "registerAsset" /* 14811 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 14812 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import EyeIcon from "EyeIcon" /* 6970 */;
+import registerAssetDefault from "registerAsset" /* 9861 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11919 */;
+import registerAssetDefault2 from "registerAsset" /* 12376 */;
+import QrCodeIcon from "QrCodeIcon" /* 14882 */;
+import registerAssetDefault3 from "registerAsset" /* 14886 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 14887 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -77,7 +77,7 @@ export default function FamilyCenterFeatureRows() {
     children: items.map((header) => {
       header = header.header;
       ({ description, icon, IconComponent } = header);
-      return callback2(callback(5560).TableRow, { label: header, subLabel: description, icon: callback2(callback(5560).TableRow.Icon, { source: icon, IconComponent }) }, header);
+      return callback2(callback(5605).TableRow, { label: header, subLabel: description, icon: callback2(callback(5605).TableRow.Icon, { source: icon, IconComponent }) }, header);
     })
   });
   obj3[1] = items1;

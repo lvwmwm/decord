@@ -1,13 +1,13 @@
-// Module ID: 15605
-// Function ID: 15606
+// Module ID: 15681
+// Function ID: 15682
 // Name: updateClientPremiumTypeOverride
-// Dependencies: [1921, 706, 7685, 2]
+// Dependencies: [1371, 573, 7752, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15605 (updateClientPremiumTypeOverride)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import createMessage from "createMessage" /* 7685 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 15681 (updateClientPremiumTypeOverride)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import createMessage from "createMessage" /* 7752 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
@@ -21,11 +21,11 @@ export const updateClientPremiumTypeOverride = function updateClientPremiumTypeO
     currentUser = currentUser.getCurrentUser();
   }
   if (null != currentUser) {
-    let tmp2Result = tmp2(706);
+    let tmp2Result = tmp2(573);
     obj = { type: "UPDATE_CLIENT_PREMIUM_TYPE", user: null };
     obj[1] = currentUser;
     tmp2Result.dispatch(obj);
-    tmp2Result = tmp2(706);
+    tmp2Result = tmp2(573);
     obj1 = { type: "CURRENT_USER_UPDATE", user: null };
     obj1[1] = createMessage.userRecordToServer(currentUser);
     tmp2Result.dispatch(obj1);

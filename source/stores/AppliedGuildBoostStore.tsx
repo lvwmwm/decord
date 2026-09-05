@@ -1,11 +1,11 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12562
+// Function ID: 12563
 // Name: handleModifyingAppliedBoostStart
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 12494 (handleModifyingAppliedBoostStart)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12562 (handleModifyingAppliedBoostStart)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleModifyingAppliedBoostStart() {
   c4 = true;

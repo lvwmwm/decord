@@ -1,19 +1,19 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13583
+// Function ID: 13584
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [19, 17, 673, 21, 13511, 13512, 13513, 4481, 709, 4416, 4218, 4329, 1362, 4935, 12516, 11496, 4477, 4372, 2]
+// Dependencies: [19, 17, 1074, 21, 13584, 13585, 13586, 4560, 576, 4495, 4296, 4409, 4411, 4974, 12584, 11564, 4556, 4454, 2]
 // Exports: default
 
-// Module 13510 (ProgressBarMarkerInnerContent)
-import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 13511 */;
-import registerAssetDefault2 from "registerAsset" /* 13512 */;
-import registerAssetDefault3 from "registerAsset" /* 13513 */;
+// Module 13583 (ProgressBarMarkerInnerContent)
+import ThemesDefault from "Themes" /* 576 */;
+import registerAssetDefault from "registerAsset" /* 13584 */;
+import registerAssetDefault2 from "registerAsset" /* 13585 */;
+import registerAssetDefault3 from "registerAsset" /* 13586 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { BoostedGuildTiers } from "ME" /* 673 */;
+import { BoostedGuildTiers } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ProgressBarMarkerInnerContent(arg0) {
@@ -127,7 +127,7 @@ export default function ProgressBarMarker(arg0) {
   let PREMIUM_PERK_PINK;
   ({ revealedTier, isDisabled } = arg0);
   let tmp = callback4();
-  obj = useReducedMotion(4218);
+  obj = useReducedMotion(4296);
   sharedValue = obj.useSharedValue(1);
   dependencyMap = tmp7;
   let tmp20Result = tmp9;
@@ -137,7 +137,7 @@ export default function ProgressBarMarker(arg0) {
   React = tmp20Result;
   if (tier === guild.premiumTier) {
     if (tmp20Result) {
-      PREMIUM_PERK_PINK = tmp2(709).unsafe_rawColors.PREMIUM_PERK_PINK;
+      PREMIUM_PERK_PINK = tmp2(576).unsafe_rawColors.PREMIUM_PERK_PINK;
     }
     let items = [tmp20Result, sharedValue, tmp7];
     const effect = React.useEffect(() => {
@@ -151,7 +151,7 @@ export default function ProgressBarMarker(arg0) {
         obj = useReducedMotion(table[13]);
       }
     }, items);
-    let tmp5Result = tmp5(4218);
+    let tmp5Result = tmp5(4296);
     class P {
       constructor() {
         obj = { backgroundColor: PREMIUM_PERK_PINK, transform: null };
@@ -183,7 +183,7 @@ export default function ProgressBarMarker(arg0) {
     const obj2 = { style: null };
     const items2 = [tmp.progressBarMarkerBackground, animatedStyle];
     obj2[0] = items2;
-    const items3 = [callback(tmp2(4218).View, obj2), , ];
+    const items3 = [callback(tmp2(4296).View, obj2), , ];
     const obj3 = { tier: null, isDisabled: null, isTierUnlocked: null, isTierAnimated: null, isCurrentTier: null, useReducedMotion: null };
     obj3[0] = tier;
     obj3[1] = isDisabled;
@@ -213,25 +213,25 @@ export default function ProgressBarMarker(arg0) {
     }
     if (tmp20Result) {
       const obj5 = { source: null, style: null };
-      obj5[0] = tmp2(11496);
+      obj5[0] = tmp2(11564);
       obj5[1] = tmp.progressBarMarkerUnlockedIcon;
       tmp20Result = tmp20(closure_5, obj5);
     }
     const items5 = [tmp20Result, ];
     const obj6 = { variant: "text-xs/medium", children: null };
-    tmp5Result = tmp5(4372);
+    tmp5Result = tmp5(4454);
     obj6[1] = tmp5Result.getTierName(tier, { useLevels: false });
-    items5[1] = callback(tmp5(4477).Text, obj6);
+    items5[1] = callback(tmp5(4556).Text, obj6);
     obj4[1] = items5;
     items3[2] = closure_8(PREMIUM_PERK_PINK, obj4);
     obj[1] = items3;
     return closure_8(PREMIUM_PERK_PINK, obj);
   }
-  const tmp4 = sharedValue(4416)();
-  const tmp5Result1 = useReducedMotion(1362);
-  const isThemeDarkResult = useReducedMotion(1362).isThemeDark(tmp4);
-  const hexWithOpacity = useReducedMotion(4329).hexWithOpacity;
-  const unsafe_rawColors = tmp2(709).unsafe_rawColors;
+  const tmp4 = sharedValue(4495)();
+  const tmp5Result1 = useReducedMotion(4411);
+  const isThemeDarkResult = useReducedMotion(4411).isThemeDark(tmp4);
+  const hexWithOpacity = useReducedMotion(4409).hexWithOpacity;
+  const unsafe_rawColors = tmp2(576).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
   } else {

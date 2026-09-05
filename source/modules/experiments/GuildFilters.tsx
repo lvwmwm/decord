@@ -1,15 +1,15 @@
-// Module ID: 4399
-// Function ID: 4400
+// Module ID: 4478
+// Function ID: 4479
 // Name: isInRange
-// Dependencies: [32, 4400, 4401, 1908, 14, 1214, 11, 684, 2]
+// Dependencies: [32, 4479, 4480, 1979, 14, 1241, 11, 1090, 2]
 
-// Module 4399 (isInRange)
+// Module 4478 (isInRange)
 import IntegerDefault from "Integer" /* 14 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getGuild" /* 4400 */;
-import closure_4 from "handleInviteData" /* 4401 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import importDefaultResult from "MurmurHashV3" /* 1214 */;
+import closure_3 from "getGuild" /* 4479 */;
+import closure_4 from "handleInviteData" /* 4480 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import importDefaultResult from "MurmurHashV3" /* 1241 */;
 
 function isInRange(arg0, arg1, arg2) {
   try {
@@ -51,7 +51,7 @@ function getRangeData(arg0) {
     if (obj.v3("min_id") === tmp7) {
       min = tmp8;
     } else {
-      let tmp9Result = tmp9(1214);
+      let tmp9Result = tmp9(1241);
       if (tmp9Result.v3("max_id") === tmp7) {
         max = tmp8;
       }

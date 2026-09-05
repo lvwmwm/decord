@@ -1,11 +1,11 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7213
+// Function ID: 7214
 // Name: HotspotStore
-// Dependencies: [7154, 2, 7155, 7156]
+// Dependencies: [7214, 2, 7215, 7216]
 
-// Module 7153 (HotspotStore)
-import importDefaultResult from "set" /* 7154 */;
-import HotspotLocations from "HotspotLocations" /* 7155 */;
+// Module 7213 (HotspotStore)
+import importDefaultResult from "set" /* 7214 */;
+import HotspotLocations from "HotspotLocations" /* 7215 */;
 
 const result = require("set").fileFinishedImporting("modules/hotspot/index.tsx");
 for (const key10022 in tmp4) {

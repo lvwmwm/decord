@@ -1,21 +1,21 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16822
+// Function ID: 16823
 // Name: init
-// Dependencies: [4522, 8556, 1386, 673, 8331, 592, 4125, 11542, 12, 586, 706, 2]
+// Dependencies: [4788, 8626, 1957, 1074, 8401, 510, 4204, 11610, 12, 504, 573, 2]
 
-// Module 16744 (init)
+// Module 16822 (init)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import Storage2 from "Storage" /* 592 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11542 */;
-import closure_6 from "addApplication" /* 4522 */;
-import closure_7 from "normalizeChannelPropertyForCompare" /* 8556 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
-import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8331 */;
-import { Storage } from "Storage" /* 592 */;
+import initializeDefault from "initialize" /* 504 */;
+import Storage2 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11610 */;
+import closure_6 from "addApplication" /* 4788 */;
+import closure_7 from "normalizeChannelPropertyForCompare" /* 8626 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
+import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8401 */;
+import { Storage } from "Storage" /* 510 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -93,7 +93,7 @@ function syncChannelUpdates(id) {
           }
           const obj5 = applyOverwritesAll;
           tmp = null != guildId1 && null == obj[guildId1];
-          closure_4 = obj5.areChannelsLocked(channel, category, obj(11542).getAppChannelBotUserId(channel));
+          closure_4 = obj5.areChannelsLocked(channel, category, obj(11610).getAppChannelBotUserId(channel));
           return true;
         }
       }

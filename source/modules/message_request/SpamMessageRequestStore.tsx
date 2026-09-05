@@ -1,11 +1,11 @@
-// Module ID: 7160
-// Function ID: 7161
+// Module ID: 7220
+// Function ID: 7221
 // Name: processChannel
-// Dependencies: [1386, 1217, 2]
+// Dependencies: [1957, 1073, 2]
 
-// Module 7160 (processChannel)
-import clearAllDefault from "clearAll" /* 1217 */;
-import prototype from "ensureGuildLoaded" /* 1386 */;
+// Module 7220 (processChannel)
+import clearAllDefault from "clearAll" /* 1073 */;
+import prototype from "ensureGuildLoaded" /* 1957 */;
 import set from "set" /* 2 */;
 
 function processChannel(isSpam) {

@@ -1,16 +1,16 @@
-// Module ID: 15256
-// Function ID: 15257
+// Module ID: 15332
+// Function ID: 15333
 // Name: useOfficialMessageStyleSettingValue
-// Dependencies: [19, 4473, 7906, 586, 14363, 1233, 11400, 2]
+// Dependencies: [19, 4552, 7975, 504, 14437, 1114, 11468, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 15256 (useOfficialMessageStyleSettingValue)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setFontSize from "setFontSize" /* 14363 */;
+// Module 15332 (useOfficialMessageStyleSettingValue)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import setFontSize from "setFontSize" /* 14437 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import createToggle from "createToggle" /* 11400 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function useOfficialMessageStyleSettingValue() {
@@ -23,20 +23,20 @@ function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
 function useOfficialMessageStyleSettingOptions() {
   return React.useMemo(() => {
     let obj = { label: null, value: "default" };
-    const intl = callback(1233).intl;
-    obj[0] = intl.string(callback(1233).t.ERaS6f);
+    const intl = callback(1114).intl;
+    obj[0] = intl.string(callback(1114).t.ERaS6f);
     const items = [obj, , , ];
     obj = { label: null, value: "no_text_color" };
-    const intl2 = callback(1233).intl;
-    obj[0] = intl2.string(callback(1233).t.JKfipk);
+    const intl2 = callback(1114).intl;
+    obj[0] = intl2.string(callback(1114).t.JKfipk);
     items[1] = obj;
     obj = { label: null, value: "no_gradient" };
-    const intl3 = callback(1233).intl;
-    obj[0] = intl3.string(callback(1233).t.O2vBoY);
+    const intl3 = callback(1114).intl;
+    obj[0] = intl3.string(callback(1114).t.O2vBoY);
     items[2] = obj;
     obj1 = { label: null, value: "hidden" };
-    const intl4 = callback(1233).intl;
-    obj1[0] = intl4.string(callback(1233).t["+loyQl"]);
+    const intl4 = callback(1114).intl;
+    obj1[0] = intl4.string(callback(1114).t["+loyQl"]);
     items[3] = obj1;
     return items;
   }, []);

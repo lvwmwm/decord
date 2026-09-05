@@ -1,10 +1,10 @@
 // Module ID: 15563
 // Function ID: 15564
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 15563 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "bb6f6fad57d57253ba0ce7ed1f4a2209", name: "ko.messages.bb6f6fad57d57253ba0ce7ed1f4a2209.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45e29ff493e27168e5d63eb6f088968a", name: "WrenchIcon", type: "png" });

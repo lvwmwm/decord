@@ -1,17 +1,17 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9283
+// Function ID: 9284
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 673, 21, 4481, 5244, 1233, 5367, 4190, 9213, 7063, 4477, 6546, 1296, 4936, 5579, 6940, 2]
+// Dependencies: [5, 32, 19, 1074, 21, 4560, 5283, 1114, 5406, 4255, 9284, 7123, 4556, 6605, 1178, 4975, 5624, 7000, 2]
 // Exports: default
 
-// Module 9212 (FederatedSocialModal)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
+// Module 9283 (FederatedSocialModal)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5283 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { WebBrowserType } from "ME" /* 673 */;
+import { WebBrowserType } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -27,14 +27,14 @@ export default function FederatedSocialModal(platformType) {
     name = value.name;
   }
   if (name == null) {
-    let intl = _require(1233).intl;
-    name = intl.string(_require(1233).t["bU/GZm"]);
+    let intl = _require(1114).intl;
+    name = intl.string(_require(1114).t["bU/GZm"]);
   }
   screens = { root: null };
   let obj = { headerTitle: null, headerLeft: null, render: null };
-  let intl2 = _require(1233).intl;
-  obj[0] = intl2.formatToPlainString(_require(1233).t["ImMhq+"], { serviceName: name });
-  obj[1] = _require(5579).getHeaderBackButton(platformType.onClose);
+  let intl2 = _require(1114).intl;
+  obj[0] = intl2.formatToPlainString(_require(1114).t["ImMhq+"], { serviceName: name });
+  obj[1] = _require(5624).getHeaderBackButton(platformType.onClose);
   obj[2] = function render() {
     ({ location: closure_0, successRedirect: closure_1, platformType } = platformType);
     const onClose = platformType.onClose;
@@ -194,5 +194,5 @@ export default function FederatedSocialModal(platformType) {
     return closure_1_8(platformType(closure_1_2[11]).SafeAreaPaddingView, obj);
   };
   screens[0] = obj;
-  return callback(_require(6940).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(7000).Navigator, { initialRouteName: "root", screens });
 };

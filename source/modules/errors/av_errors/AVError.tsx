@@ -1,9 +1,9 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9110
+// Function ID: 9111
 // Name: mapped
-// Dependencies: [109, 3, 706, 2]
+// Dependencies: [109, 3, 573, 2]
 
-// Module 9039 (mapped)
+// Module 9110 (mapped)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 

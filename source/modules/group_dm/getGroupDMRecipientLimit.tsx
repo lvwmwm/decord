@@ -1,15 +1,15 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 11592
+// Function ID: 11593
 // Name: getGroupDMRecipientLimit
-// Dependencies: [1921, 11525, 673, 1923, 1945, 11526, 2]
+// Dependencies: [1371, 11593, 1074, 1373, 1885, 11594, 2]
 // Exports: default
 
-// Module 11524 (getGroupDMRecipientLimit)
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_3 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 11525 */;
-import ME from "ME" /* 673 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+// Module 11592 (getGroupDMRecipientLimit)
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1885 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import { MAX_GROUP_DM_NITRO_PARTICIPANTS as closure_3 } from "MAX_GROUP_DM_NITRO_PARTICIPANTS" /* 11593 */;
+import ME from "ME" /* 1074 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 ({ MAX_GROUP_DM_PARTICIPANTS: c4, MAX_GROUP_DM_STAFF_PARTICIPANTS: c5 } = ME);
@@ -37,7 +37,7 @@ export default function getGroupDMRecipientLimit() {
         if (tmp2Result.getGroupDMNitroCapConfig("getGroupDMRecipientLimit").enabled) {
           tmp5 = closure_3;
         }
-        tmp2Result = tmp2(11526);
+        tmp2Result = tmp2(11594);
       }
       obj3 = isPremiumAtLeast;
       tmp2 = require;

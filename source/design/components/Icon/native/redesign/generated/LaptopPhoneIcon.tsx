@@ -1,14 +1,14 @@
-// Module ID: 14871
-// Function ID: 14872
+// Module ID: 14946
+// Function ID: 14947
 // Name: LaptopPhoneIcon
-// Dependencies: [19, 21, 709, 4196, 14872, 2]
+// Dependencies: [19, 21, 576, 4261, 14947, 2]
 // Exports: LaptopPhoneIcon
 
-// Module 14871 (LaptopPhoneIcon)
+// Module 14946 (LaptopPhoneIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14872 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 14947 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

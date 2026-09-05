@@ -1,11 +1,11 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 12044
+// Function ID: 12045
 // Name: initialize
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 11976 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12044 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let obj = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };
 let closure_1 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata: obj };

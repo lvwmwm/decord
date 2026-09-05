@@ -1,14 +1,14 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14516
+// Function ID: 14517
 // Name: items
-// Dependencies: [4383, 673, 8269, 9487, 2]
+// Dependencies: [4465, 1074, 8339, 9558, 2]
 
-// Module 14441 (items)
+// Module 14516 (items)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
-import set2 from "set" /* 8269 */;
-import validateSocketClient from "validateSocketClient" /* 9487 */;
+import ME from "ME" /* 1074 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4465 */;
+import set2 from "set" /* 8339 */;
+import validateSocketClient from "validateSocketClient" /* 9558 */;
 
 let obj = {};
 obj = { scope: null, handler: null };

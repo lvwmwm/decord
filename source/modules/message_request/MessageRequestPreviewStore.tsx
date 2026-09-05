@@ -1,15 +1,15 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12595
+// Function ID: 12596
 // Name: isMessagePreviewEnabledForChannel
-// Dependencies: [1921, 7159, 7160, 4745, 586, 706, 2]
+// Dependencies: [1371, 7219, 7220, 4783, 504, 573, 2]
 
-// Module 12527 (isMessagePreviewEnabledForChannel)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import closure_3 from "processChannel" /* 7159 */;
-import closure_4 from "processChannel" /* 7160 */;
+// Module 12595 (isMessagePreviewEnabledForChannel)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4783 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import closure_3 from "processChannel" /* 7219 */;
+import closure_4 from "processChannel" /* 7220 */;
 import set from "set" /* 2 */;
 
 require = arg1;

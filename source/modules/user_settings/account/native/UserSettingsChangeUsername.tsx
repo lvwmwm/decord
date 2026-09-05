@@ -1,33 +1,33 @@
-// Module ID: 14630
-// Function ID: 14631
+// Module ID: 14705
+// Function ID: 14706
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1921, 673, 21, 4481, 709, 4713, 14631, 4477, 1233, 1498, 586, 4139, 14632, 6930, 6924, 527, 1499, 7795, 6547, 6938, 6878, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 1074, 21, 4560, 576, 4745, 14706, 4556, 1114, 1483, 504, 4218, 14707, 6990, 6984, 1272, 1484, 7863, 6606, 6998, 6938, 2]
 // Exports: default
 
-// Module 14630 (UsernameStatusMessage)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14705 (UsernameStatusMessage)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { UserSettingsSections } from "ME" /* 673 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { UserSettingsSections } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(4713).match(showHint.usernameStatus);
-  let obj = { type: showHint(14631).NameValidationState.ERROR, message: null };
-  const P = showHint(4713).P;
+  const match = showHint(4745).match(showHint.usernameStatus);
+  let obj = { type: showHint(14706).NameValidationState.ERROR, message: null };
+  const P = showHint(4745).P;
   obj[1] = P.select();
-  const str = showHint(4713);
-  obj = { type: showHint(14631).NameValidationState.AVAILABLE, message: null };
-  const P2 = showHint(4713).P;
+  const str = showHint(4745);
+  obj = { type: showHint(14706).NameValidationState.AVAILABLE, message: null };
+  const P2 = showHint(4745).P;
   obj[1] = P2.select();
-  const withResult = match.with(obj, (children) => callback(showHint(4477).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
-  return match.with(obj, (children) => callback(showHint(4477).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4477).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
+  const withResult = match.with(obj, (children) => callback(showHint(4556).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
+  return match.with(obj, (children) => callback(showHint(4556).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4556).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
     let tmp = null;
     if (showHint) {
       const obj = { variant: "text-xs/medium", color: "text-default", children: null };

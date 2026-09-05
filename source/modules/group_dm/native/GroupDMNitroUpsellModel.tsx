@@ -1,16 +1,16 @@
-// Module ID: 11523
-// Function ID: 11524
+// Module ID: 11591
+// Function ID: 11592
 // Name: GroupDMNitroAcquisitionStrategy
-// Dependencies: [1921, 673, 1923, 1945, 586, 1233, 2]
+// Dependencies: [1371, 1074, 1373, 1885, 504, 1114, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI, useGroupDMNitroAudience
 
-// Module 11523 (GroupDMNitroAcquisitionStrategy)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { MAX_GROUP_DM_PARTICIPANTS } from "ME" /* 673 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+// Module 11591 (GroupDMNitroAcquisitionStrategy)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1885 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import { MAX_GROUP_DM_PARTICIPANTS } from "ME" /* 1074 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 let obj = { MARKETING: "marketing", CHECKOUT: "checkout" };

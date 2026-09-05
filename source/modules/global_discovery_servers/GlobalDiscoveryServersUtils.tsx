@@ -1,19 +1,19 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17828
+// Function ID: 17829
 // Name: _navigateToGuild
-// Dependencies: [5, 1995, 13628, 8996, 673, 1233, 1394, 7279, 695, 17747, 511, 2]
+// Dependencies: [5, 2025, 13704, 9066, 1074, 1114, 1369, 7341, 1242, 17827, 1256, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 17748 (_navigateToGuild)
-import v1 from "v1" /* 511 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import prototypeDefault from "prototype" /* 17747 */;
+// Module 17828 (_navigateToGuild)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import v1 from "v1" /* 1256 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import prototypeDefault from "prototype" /* 17827 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "map" /* 13628 */;
-import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 8996 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
+import closure_6 from "map" /* 13704 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9066 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 function _navigateToGuild() {
@@ -76,7 +76,7 @@ function _navigateToGuild() {
               obj2 = {};
               const merged = Object.assign(c5);
               obj2.loadId = c0;
-              let obj4 = callback2(7279);
+              let obj4 = callback2(7341);
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -92,7 +92,7 @@ function _navigateToGuild() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(695);
+            obj = callback(1242);
             const obj5 = { guild_id: null, load_id: null, card_index: null, category_id: null, location: null };
             obj5[0] = callback;
             obj5[1] = c0;
@@ -262,7 +262,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "w", discoverySplash: -766651663, emojis: 1359167573 };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "accessible", discoverySplash: "kMaxLength", emojis: "isArrayBuffer" };
   ({ approximate_presence_count: obj[7], approximate_member_count: obj[8], discovery_splash: obj[11] } = id);
   obj[12] = [];
   return obj;

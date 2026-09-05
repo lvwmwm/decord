@@ -1,13 +1,13 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12065
+// Function ID: 12066
 // Name: BotsBanner
-// Dependencies: [19, 21, 11998, 11982, 11993, 1233, 2]
+// Dependencies: [19, 21, 12066, 12050, 12061, 1114, 2]
 // Exports: default
 
-// Module 11997 (BotsBanner)
+// Module 12065 (BotsBanner)
 import noopAll from "noop" /* 19 */;
-import BannerBaseDefault from "BannerBase" /* 11993 */;
-import useBannerBots from "useBannerBots" /* 11998 */;
+import BannerBaseDefault from "BannerBase" /* 12061 */;
+import useBannerBots from "useBannerBots" /* 12066 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -24,11 +24,11 @@ export default function BotsBanner(context) {
     if (null != secondBotApplication) {
       obj = { image: null, text: null };
       obj[0] = tmp6;
-      const intl = tmp(1233).intl;
+      const intl = tmp(1114).intl;
       obj = { firstApplicationName: null, secondApplicationName: null };
       obj[0] = firstBotApplication.name;
       obj[1] = secondBotApplication.name;
-      obj[1] = intl.formatToPlainString(tmp(1233).t["9SN0xw"], obj);
+      obj[1] = intl.formatToPlainString(tmp(1114).t["9SN0xw"], obj);
       tmp4Result = jsx(BannerBaseDefault, { firstApplicationName: null, secondApplicationName: null });
       const tmp5Result = BannerBaseDefault;
     }

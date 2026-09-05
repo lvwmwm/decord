@@ -1,21 +1,21 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 9523
+// Function ID: 9524
 // Name: tryLaunchAsFrame
-// Dependencies: [4522, 9440, 9435, 9436, 2]
+// Dependencies: [4788, 9511, 9506, 9507, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 9452 (tryLaunchAsFrame)
-import canLaunchFrame from "canLaunchFrame" /* 9435 */;
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9436 */;
-import closure_3 from "addApplication" /* 4522 */;
-import { MAIN_SURFACE } from "FrameLayoutModes" /* 9440 */;
+// Module 9523 (tryLaunchAsFrame)
+import canLaunchFrame from "canLaunchFrame" /* 9506 */;
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9507 */;
+import closure_3 from "addApplication" /* 4788 */;
+import { MAIN_SURFACE } from "FrameLayoutModes" /* 9511 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
 
 export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   applicationId = applicationId.applicationId;
-  ({ customId, referrerId } = applicationId);
+  ({ customId, referrerId, analyticsContext } = applicationId);
   application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
@@ -24,11 +24,12 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   }
   let flag = !tmp2;
   if (!tmp2) {
-    obj = { applicationId: null, surface: null, customId: null, referrerId: null };
+    obj = { applicationId: null, surface: null, customId: null, referrerId: null, analyticsContext: null };
     obj[0] = applicationId;
     obj[1] = MAIN_SURFACE;
     obj[2] = customId;
     obj[3] = referrerId;
+    obj[4] = analyticsContext;
     _launchFrameOnNativeDefault.launchFrame(obj);
     flag = true;
     const obj2 = _launchFrameOnNativeDefault;

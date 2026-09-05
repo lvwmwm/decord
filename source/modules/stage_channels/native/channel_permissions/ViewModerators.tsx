@@ -1,20 +1,20 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16823
+// Function ID: 16824
 // Name: ViewModerators
-// Dependencies: [5, 19, 1991, 1984, 1908, 673, 8331, 21, 695, 4448, 16746, 2008, 1498, 586, 5376, 9667, 1395, 1954, 4866, 1233, 4494, 9668, 4193, 1296, 9680, 4934, 5642, 5560, 11136, 2]
+// Dependencies: [5, 19, 2021, 2015, 1979, 1074, 8401, 21, 1242, 4527, 16824, 1896, 1483, 504, 5415, 9738, 1965, 1894, 4905, 1114, 4573, 9739, 4258, 1178, 9751, 4973, 5687, 5605, 11204, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 16745 (ViewModerators)
+// Module 16823 (ViewModerators)
 import noopAll from "noop" /* 19 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { RowType } from "RowType" /* 8331 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { RowType } from "RowType" /* 8401 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -224,5 +224,5 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel, canSkip: flag };
-  obj2.openLazy(asyncRequireImpl(16746, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(asyncRequireImpl(16824, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

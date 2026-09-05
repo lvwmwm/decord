@@ -1,11 +1,11 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8171
+// Function ID: 8172
 // Name: firstAvatarDecoration
-// Dependencies: [19, 1949, 1233, 2]
+// Dependencies: [19, 1889, 1114, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem, useShopProductItems
 
-// Module 8102 (firstAvatarDecoration)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 8171 (firstAvatarDecoration)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_2 from "noop" /* 19 */;
 
 require = arg1;
@@ -19,25 +19,25 @@ class ItemsSortingHat {
 const prototype = ItemsSortingHat.prototype;
 Object.defineProperty(prototype, "firstAvatarDecoration", {
   get: function firstAvatarDecoration() {
-    return this.getFirstItemByType(require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
+    return this.getFirstItemByType(require(1889) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstProfileEffect", {
   get: function firstProfileEffect() {
-    return this.getFirstItemByType(require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
+    return this.getFirstItemByType(require(1889) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstNameplate", {
   get: function firstNameplate(first) {
-    return this.getFirstItemByType(require(1949) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
+    return this.getFirstItemByType(require(1889) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstProfileFrame", {
   get: function firstProfileFrame(first) {
-    return this.getFirstItemByType(require(1949) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
+    return this.getFirstItemByType(require(1889) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
   },
   set: undefined
 });

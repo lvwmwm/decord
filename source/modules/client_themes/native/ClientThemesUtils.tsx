@@ -1,30 +1,30 @@
-// Module ID: 4299
-// Function ID: 4300
+// Module ID: 4378
+// Function ID: 4379
 // Name: getGradientColorByPercentage
-// Dependencies: [32, 19, 1301, 4300, 1345, 709, 686, 4329, 4330, 1348, 1362, 4331, 4416, 4413, 2]
+// Dependencies: [32, 19, 1183, 4379, 1228, 576, 672, 4409, 4410, 1231, 4411, 4413, 4495, 4492, 2]
 // Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue, useGradientValue
 
-// Module 4299 (getGradientColorByPercentage)
-import nDefault from "n" /* 686 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ClientThemeType from "ClientThemeType" /* 1348 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import hslToRgbDefault from "hslToRgb" /* 4330 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4331 */;
-import getCustomThemesName from "getCustomThemesName" /* 4413 */;
-import useThemeDefault from "useTheme" /* 4416 */;
+// Module 4378 (getGradientColorByPercentage)
+import ThemesDefault from "Themes" /* 576 */;
+import nDefault from "n" /* 672 */;
+import ClientThemeType from "ClientThemeType" /* 1231 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import hslToRgbDefault from "hslToRgb" /* 4410 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4413 */;
+import getCustomThemesName from "getCustomThemesName" /* 4492 */;
+import useThemeDefault from "useTheme" /* 4495 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleThemeChange" /* 1301 */;
-import closure_6 from "reset" /* 4300 */;
-import closure_7 from "reset" /* 1345 */;
+import closure_5 from "handleThemeChange" /* 1183 */;
+import closure_6 from "reset" /* 4379 */;
+import closure_7 from "reset" /* 1228 */;
 
 require = arg1;
 function getGradientColorByPercentage(type, END) {
-  if (type.type === colors(1348).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
+  if (type.type === colors(1231).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     ({ colors, colors: colors2 } = type);
-    const mapped = colors.map((arg0) => callback(709).unsafe_rawColors[arg0.token]);
+    const mapped = colors.map((arg0) => callback(576).unsafe_rawColors[arg0.token]);
     const mapped1 = colors2.map((stop) => stop.stop);
     const obj6 = nDefault;
     const scaleResult = nDefault.scale(mapped);
@@ -35,7 +35,7 @@ function getGradientColorByPercentage(type, END) {
   } else {
     colors = type.customThemeSettings.colors;
     if (1 === colors.length) {
-      return tmp(4329).hexToRgb(colors[0]);
+      return tmp(4409).hexToRgb(colors[0]);
     } else {
       const mapped2 = colors.map((arg0, arg1) => arg1 / (colors.length - 1) * 100);
       obj = nDefault;
@@ -116,7 +116,7 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme)
     if (arg3 != null) {
       let tmp11 = arg3;
     } else {
-      let tmpResult = tmp(1362);
+      let tmpResult = tmp(4411);
       const result = 0.2 * tmp14;
       if (tmpResult.isThemeDark(theme)) {
         let sum = 0.12 + result;
@@ -127,7 +127,7 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme)
   } else {
     tmp11 = arg3;
     if (arg3 == null) {
-      tmpResult = tmp(1362);
+      tmpResult = tmp(4411);
       tmpResult.isThemeDark(theme) ? obj.LEVEL_2 : obj.LEVEL_4;
     }
   }
@@ -152,8 +152,8 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme)
     const tmp30 = getGradientColorByPercentage(customBackgroundGradient, tmp10);
     const tmp35 = new hslToRgbDefault(tmp30.r, tmp30.g, tmp30.b, tmp11);
     const tmp38 = new hslToRgbDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp11);
-    const mixColorsResult = tmp(4329).mixColors(tmp35, tmp38);
-    const tmpResult1 = tmp(4329);
+    const mixColorsResult = tmp(4409).mixColors(tmp35, tmp38);
+    const tmpResult1 = tmp(4409);
     const obj5 = nDefault;
     return nDefault.rgb(mixColorsResult.red, mixColorsResult.green, mixColorsResult.blue).hex("rgb");
   }
@@ -174,7 +174,7 @@ export const colorToHex = function colorToHex(red) {
 };
 export const getClientThemesGradientColorByPercentage = function getClientThemesGradientColorByPercentage(arg0, arg1) {
   ({ colors, colors: colors2 } = arg0);
-  const mapped = colors.map((arg0) => callback(709).unsafe_rawColors[arg0.token]);
+  const mapped = colors.map((arg0) => callback(576).unsafe_rawColors[arg0.token]);
   const mapped1 = colors2.map((stop) => stop.stop);
   obj = nDefault;
   const scaleResult = obj.scale(mapped);
@@ -184,7 +184,7 @@ export const getClientThemesGradientColorByPercentage = function getClientThemes
 };
 export const getClientThemesGradientHexColors = function getClientThemesGradientHexColors(colors) {
   colors = colors.colors;
-  return colors.map((arg0) => callback(709).unsafe_rawColors[arg0.token]);
+  return colors.map((arg0) => callback(576).unsafe_rawColors[arg0.token]);
 };
 export const getGradientThemeMetadata = function getGradientThemeMetadata(gradientThemeFromFlags, gradient) {
   if (null != gradientThemeFromFlags) {
@@ -206,7 +206,7 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
       }
       if (gradient.type === ClientThemeType.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
         const colors = gradient.colors;
-        let mapped = colors.map((arg0) => callback(709).unsafe_rawColors[arg0.token]);
+        let mapped = colors.map((arg0) => callback(576).unsafe_rawColors[arg0.token]);
       } else {
         mapped = gradient.customThemeSettings.colors;
       }
@@ -214,7 +214,7 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
       let tmp5 = mapped[mapped.length - 1];
       if (gradient.type === ClientThemeType.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
         const colors1 = gradient.customThemeSettings.colors;
-        const mapped1 = colors1.map((arg0) => callback(686)(arg0).luminance());
+        const mapped1 = colors1.map((arg0) => callback(672)(arg0).luminance());
         const _Math = Math;
         const items = [];
         HermesBuiltin.arraySpread(mapped1, 0);

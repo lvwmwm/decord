@@ -1,21 +1,21 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12571
+// Function ID: 12572
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4481, 709, 4416, 1362, 8026, 12500, 12455, 4948, 4477, 12456, 1296, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4495, 4411, 8095, 12568, 12523, 4987, 4556, 12524, 1178, 1114, 2]
 // Exports: default
 
-// Module 12503 (GuildPowerupsPerkCard)
+// Module 12571 (GuildPowerupsPerkCard)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import apexExperiment from "apexExperiment" /* 8026 */;
-import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12456 */;
+import ThemesDefault from "Themes" /* 576 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import apexExperiment from "apexExperiment" /* 8095 */;
+import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12524 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -53,9 +53,9 @@ export default function GuildPowerupsPerkCard(arg0) {
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(12500);
+  let tmp3Result = tmp3(12568);
   if (riveComponent == null) {
-    tmp3Result = tmp3(12455);
+    tmp3Result = tmp3(12523);
     if (imageUrl == null) {
       imageUrl = "";
     }
@@ -100,20 +100,20 @@ export default function GuildPowerupsPerkCard(arg0) {
   let tmp15Result = "new" === badge;
   if (tmp15Result) {
     const obj7 = { text: null, style: null };
-    const intl = tmp6(1233).intl;
-    obj7[0] = intl.string(tmp6(1233).t.y2b7CA);
+    const intl = tmp6(1114).intl;
+    obj7[0] = intl.string(tmp6(1114).t.y2b7CA);
     obj7[1] = tmp2.badge;
-    tmp15Result = tmp15(tmp6(1296).TextBadge, obj7);
+    tmp15Result = tmp15(tmp6(1178).TextBadge, obj7);
   }
   items2[2] = tmp15Result;
   tmp15Result = "beta" === badge;
   if (tmp15Result) {
     const obj8 = { text: null, color: null, style: null };
-    const intl2 = tmp6(1233).intl;
-    obj8[0] = intl2.string(tmp6(1233).t.oW0eUd);
-    obj8[1] = tmp6(1296).BadgeColors.BRAND;
+    const intl2 = tmp6(1114).intl;
+    obj8[0] = intl2.string(tmp6(1114).t.oW0eUd);
+    obj8[1] = tmp6(1178).BadgeColors.BRAND;
     obj8[2] = tmp2.badge;
-    tmp15Result = tmp15(tmp6(1296).TextBadge, obj8);
+    tmp15Result = tmp15(tmp6(1178).TextBadge, obj8);
   }
   items2[3] = tmp15Result;
   obj[4] = items2;

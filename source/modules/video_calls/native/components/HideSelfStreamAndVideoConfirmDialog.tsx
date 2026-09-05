@@ -1,16 +1,16 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17212
+// Function ID: 17213
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 17131, 21, 4481, 1233, 4955, 4477, 9287, 2]
+// Dependencies: [19, 17, 17211, 21, 4560, 1114, 4994, 4556, 9358, 2]
 // Exports: default
 
-// Module 17132 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17212 (HideSelfStreamAndVideoConfirmDialog)
 import noopAll from "noop" /* 19 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType" /* 17131 */;
+import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType" /* 17211 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -23,38 +23,38 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
   if (type === constants.STREAM) {
-    const intl2 = onConfirm(1233).intl;
-    let stringResult = intl2.string(onConfirm(1233).t["/lFMWr"]);
+    const intl2 = onConfirm(1114).intl;
+    let stringResult = intl2.string(onConfirm(1114).t["/lFMWr"]);
     let tmp6 = onConfirm;
   } else {
-    const intl = onConfirm(1233).intl;
+    const intl = onConfirm(1114).intl;
     tmp6 = onConfirm;
-    stringResult = intl.string(onConfirm(1233).t.xzxhZS);
+    stringResult = intl.string(onConfirm(1114).t.xzxhZS);
   }
   if (type === constants.STREAM) {
-    const intl4 = tmp6(1233).intl;
-    let stringResult1 = intl4.string(tmp6(1233).t.xaOX7d);
+    const intl4 = tmp6(1114).intl;
+    let stringResult1 = intl4.string(tmp6(1114).t.xaOX7d);
   } else {
-    const intl3 = tmp6(1233).intl;
-    stringResult1 = intl3.string(tmp6(1233).t.oU1p9O);
+    const intl3 = tmp6(1114).intl;
+    stringResult1 = intl3.string(tmp6(1114).t.oU1p9O);
   }
   let obj = {};
   const merged1 = Object.assign(merged);
   obj.title = stringResult;
   obj.style = tmp2.wrapper;
-  const intl5 = tmp6(1233).intl;
-  obj.cancelText = intl5.string(tmp6(1233).t["ETE/oC"]);
+  const intl5 = tmp6(1114).intl;
+  obj.cancelText = intl5.string(tmp6(1114).t["ETE/oC"]);
   let onClose;
   if (merged != null) {
     onClose = merged.onClose;
   }
   obj.onCancel = onClose;
-  const intl6 = tmp6(1233).intl;
-  obj.confirmText = intl6.string(tmp6(1233).t["cY+Oob"]);
+  const intl6 = tmp6(1114).intl;
+  obj.confirmText = intl6.string(tmp6(1114).t["cY+Oob"]);
   obj.onConfirm = onConfirm;
   obj = { style: tmp2.body, children: null };
   obj = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  const items = [closure_5(tmp6(4477).Text, obj), ];
+  const items = [closure_5(tmp6(4556).Text, obj), ];
   obj1 = {
     accessibilityRole: "link",
     style: items1,
@@ -67,9 +67,9 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const intl7 = tmp6(1233).intl;
-  obj1[4] = intl7.string(tmp6(1233).t["JdIQ/Y"]);
-  items[1] = closure_5(tmp6(4477).Text, obj1);
+  const intl7 = tmp6(1114).intl;
+  obj1[4] = intl7.string(tmp6(1114).t["JdIQ/Y"]);
+  items[1] = closure_5(tmp6(4556).Text, obj1);
   obj[1] = items;
   obj.children = callback(View, obj);
   return closure_5(componentDidMountDefault, obj);

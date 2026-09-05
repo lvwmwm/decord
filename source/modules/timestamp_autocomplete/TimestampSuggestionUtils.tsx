@@ -1,15 +1,15 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10425
+// Function ID: 10426
 // Name: items
-// Dependencies: [32, 1995, 4074, 10355, 1233, 2]
+// Dependencies: [32, 2025, 4153, 10426, 1114, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 10354 (items)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
-import _mod10355 from "module_10355" /* 10355 */;
+// Module 10425 (items)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hooksDefault from "hooks" /* 4153 */;
+import _mod10426 from "module_10426" /* 10426 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "_getSystemLocale" /* 2025 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -21,7 +21,7 @@ HermesBuiltin.arraySpread(set, 1);
 let result = set.fileFinishedImporting("modules/timestamp_autocomplete/TimestampSuggestionUtils.tsx");
 
 export const preloadTimestampParser = function preloadTimestampParser() {
-  _mod10355;
+  _mod10426;
 };
 export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0, cloneResult1) {
   let obj = cloneResult1;
@@ -81,7 +81,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
           if (!start2.isCertain("hour")) {
             const _Math = Math;
             const result = Math.round(cloneResult.valueOf() / 900000) * 900000;
-            obj4 = tmp20(4074)(result);
+            obj4 = tmp20(4153)(result);
           }
         }
         if (tmp14) {
@@ -154,7 +154,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
               const stringResult = intl4.string(obj1.currentName);
               let stringResult2 = stringResult;
               if (obj4.isSameOrBefore(obj)) {
-                const intl5 = tmp39(1233).intl;
+                const intl5 = tmp39(1114).intl;
                 let stringResult1 = intl5.string(obj1.nextName);
                 stringResult2 = stringResult;
               }
@@ -245,7 +245,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
     }
     return items1;
   } else {
-    const tmp6 = _mod10355;
+    const tmp6 = _mod10426;
     locale = locale.locale;
     str = "en-US";
     if ("en-US" === locale) {

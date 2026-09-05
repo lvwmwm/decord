@@ -1,18 +1,18 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12119
+// Function ID: 12120
 // Name: useFrecentApps
-// Dependencies: [19, 7047, 1921, 12052, 4509, 4960, 1954, 9345, 586, 7110, 8269, 12053, 9335, 9218, 9500, 2]
+// Dependencies: [19, 7107, 1371, 12120, 1920, 4999, 1894, 9416, 504, 7170, 8339, 12121, 9406, 9289, 9571, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 12051 (useFrecentApps)
-import findCommandInSectionAll from "findCommandInSection" /* 9345 */;
+// Module 12119 (useFrecentApps)
+import findCommandInSectionAll from "findCommandInSection" /* 9416 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "recomputeFromAppTokens" /* 7047 */;
-import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "initialize" /* 12052 */;
-import { WATCH_YOUTUBE_PROD_APP_ID } from "items3" /* 4509 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4960 */;
+import closure_5 from "recomputeFromAppTokens" /* 7107 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7107 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "initialize" /* 12120 */;
+import { WATCH_YOUTUBE_PROD_APP_ID } from "items3" /* 1920 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4999 */;
 
 const require = arg1;
 function useFrecentApps(onlyActivityApps) {

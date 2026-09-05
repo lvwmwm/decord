@@ -1,10 +1,10 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8096
+// Function ID: 8097
 // Name: smartOutput
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput
 
-// Module 8027 (smartOutput)
+// Module 8096 (smartOutput)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/markup/MarkupRulesUtils.tsx");

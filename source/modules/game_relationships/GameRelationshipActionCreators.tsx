@@ -1,14 +1,14 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10871
+// Function ID: 10872
 // Name: showRequestFailedAlert
-// Dependencies: [5, 673, 4379, 4865, 1233, 527, 1362, 2]
+// Dependencies: [5, 1074, 4461, 4904, 1114, 1272, 4411, 2]
 
-// Module 10802 (showRequestFailedAlert)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4379 */;
-import setDefault from "set" /* 4865 */;
+// Module 10871 (showRequestFailedAlert)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4461 */;
+import setDefault from "set" /* 4904 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function showRequestFailedAlert(arg0) {
@@ -18,8 +18,8 @@ function showRequestFailedAlert(arg0) {
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t["328j/I"]);
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1233).intl;
-    anyErrorMessage = intl2.string(tmp(1233).t.fEptJP);
+    const intl2 = tmp(1114).intl;
+    anyErrorMessage = intl2.string(tmp(1114).t.fEptJP);
   }
   obj[1] = anyErrorMessage;
   setDefault.show(obj);
@@ -89,7 +89,7 @@ function _deleteGameRelationship() {
               return obj1;
             } else {
               c4 = 1;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj2 = { url: null, oldFormErrors: true, rejectWithError: false };
               obj2[0] = c4.USER_GAME_RELATIONSHIP(callback, c1);
               c5 = 3;
@@ -195,9 +195,9 @@ function _removeGameFriend() {
               obj2[0] = c0;
               obj2[1] = c1;
               obj2[2] = function onSuccess() {
-                const AccessibilityAnnouncer = _undefined(1362).AccessibilityAnnouncer;
-                const intl = _undefined(1233).intl;
-                AccessibilityAnnouncer.announce(intl.string(_undefined(1233).t.zRf8cO));
+                const AccessibilityAnnouncer = _undefined(4411).AccessibilityAnnouncer;
+                const intl = _undefined(1114).intl;
+                AccessibilityAnnouncer.announce(intl.string(_undefined(1114).t.zRf8cO));
               };
               c3 = 2;
               c4 = 1;
@@ -291,9 +291,9 @@ function _cancelGameFriendRequest() {
               obj2[0] = c0;
               obj2[1] = c1;
               obj2[2] = function onSuccess() {
-                const AccessibilityAnnouncer = _undefined(1362).AccessibilityAnnouncer;
-                const intl = _undefined(1233).intl;
-                AccessibilityAnnouncer.announce(intl.string(_undefined(1233).t.XMf21q));
+                const AccessibilityAnnouncer = _undefined(4411).AccessibilityAnnouncer;
+                const intl = _undefined(1114).intl;
+                AccessibilityAnnouncer.announce(intl.string(_undefined(1114).t.XMf21q));
               };
               c3 = 2;
               c4 = 1;
@@ -350,7 +350,7 @@ export default {
 
     }
     ({ userId, applicationId } = arg0);
-    const HTTP = onSuccess(527).HTTP;
+    const HTTP = onSuccess(1272).HTTP;
     let obj = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false });
     return HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false }).then(() => {
@@ -358,17 +358,17 @@ export default {
       const intl = onSuccess(closure_1_2[4]).intl;
       AccessibilityAnnouncer.announce(intl.string(onSuccess(closure_1_2[4]).t.taJiuc));
     }).catch((arg0) => {
-      const aPIError = new onSuccess(4379).APIError(arg0);
+      const aPIError = new onSuccess(4461).APIError(arg0);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
-      const intl = onSuccess(1233).intl;
-      obj[0] = intl.string(onSuccess(1233).t["328j/I"]);
+      const intl = onSuccess(1114).intl;
+      obj[0] = intl.string(onSuccess(1114).t["328j/I"]);
       if (null == anyErrorMessage) {
-        const intl2 = tmp(1233).intl;
-        anyErrorMessage = intl2.string(tmp(1233).t.fEptJP);
+        const intl2 = tmp(1114).intl;
+        anyErrorMessage = intl2.string(tmp(1114).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4865).show(obj);
+      callback(4904).show(obj);
       return Promise.reject(arg0);
     });
   },

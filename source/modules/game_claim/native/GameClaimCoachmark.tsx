@@ -1,24 +1,24 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16190
+// Function ID: 16191
 // Name: PX_8
-// Dependencies: [5, 19, 17, 673, 1383, 21, 709, 16113, 10048, 4941, 4481, 16114, 8850, 1233, 5562, 5084, 5635, 4477, 4936, 8510, 7254, 2]
+// Dependencies: [5, 19, 17, 1074, 1954, 21, 576, 16191, 10119, 4980, 4560, 16192, 8920, 1114, 5607, 5123, 5680, 4556, 4975, 8580, 7316, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16112 (PX_8)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 8850 */;
-import map from "map" /* 10048 */;
-import importDefaultResult1 from "importDefaultResult1" /* 16113 */;
-import importDefaultResult1Default from "importDefaultResult1" /* 16113 */;
-import fetchUnclaimedGames from "fetchUnclaimedGames" /* 16114 */;
+// Module 16190 (PX_8)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4980 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 8920 */;
+import map from "map" /* 10119 */;
+import importDefaultResult1 from "importDefaultResult1" /* 16191 */;
+import importDefaultResult1Default from "importDefaultResult1" /* 16191 */;
+import fetchUnclaimedGames from "fetchUnclaimedGames" /* 16192 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import ME from "ME" /* 1074 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo((arg0) => {
   if (first == null) {
     first = null;
   }
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   const tmp5 = importDefault;
   const tmp6 = useGameNameAndCoverImageDefault;
   const coverImageUrl = useGameNameAndCoverImageDefault(first, intl.string(getSystemLocale.t.VQq92a)).coverImageUrl;
@@ -55,9 +55,9 @@ const memoResult = importAllResult.memo((arg0) => {
   } else {
     const features = guild.features;
     const hasItem = features.has(constants.VERIFIED);
-    const intl4 = tmp2(1233).intl;
+    const intl4 = tmp2(1114).intl;
     const string = intl4.string;
-    const t = tmp2(1233).t;
+    const t = tmp2(1114).t;
     if (hasItem) {
       let stringResult = string(t.uUARXe);
     } else {
@@ -70,30 +70,30 @@ const memoResult = importAllResult.memo((arg0) => {
       return callback(closure_1_7.USER_DISMISS);
     };
     obj[2] = tmp.closeButton;
-    obj[3] = callback2(tmp2(5635).XSmallIcon, { size: "sm", color: "text-default" });
-    const items = [callback2(tmp2(5084).PressableOpacity, obj), , , , ];
+    obj[3] = callback2(tmp2(5680).XSmallIcon, { size: "sm", color: "text-default" });
+    const items = [callback2(tmp2(5123).PressableOpacity, obj), , , , ];
     obj1 = { imageSrc: null };
     obj1[0] = coverImageUrl;
     items[1] = callback2(importDefaultResult1Default, obj1);
     const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: null, children: null };
     obj2[2] = tmp.centeredText;
-    const intl2 = tmp2(1233).intl;
+    const intl2 = tmp2(1114).intl;
     const obj3 = { gameName: null };
     obj3[0] = tmp8;
-    obj2[3] = intl2.format(tmp2(1233).t.Q11WTQ, obj3);
-    items[2] = callback2(tmp2(4477).Text, obj2);
+    obj2[3] = intl2.format(tmp2(1114).t.Q11WTQ, obj3);
+    items[2] = callback2(tmp2(4556).Text, obj2);
     const obj4 = { variant: "text-sm/normal", color: "text-overlay-light", style: null, children: null };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     obj4[2] = items1;
     obj4[3] = stringResult;
-    items[3] = callback2(tmp2(4477).Text, obj4);
+    items[3] = callback2(tmp2(4556).Text, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.cta;
     const obj6 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
-    const intl3 = tmp2(1233).intl;
-    obj6[2] = intl3.string(tmp2(1233).t["2u6ZlY"]);
-    obj6[3] = callback2(tmp2(8510).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    const intl3 = tmp2(1114).intl;
+    obj6[2] = intl3.string(tmp2(1114).t["2u6ZlY"]);
+    obj6[3] = callback2(tmp2(8580).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj6[5] = callback(function*() {
       if (v0 === 2) {
         v0 = 3;
@@ -147,10 +147,10 @@ const memoResult = importAllResult.memo((arg0) => {
         }
       }
     });
-    obj5[1] = callback2(tmp2(4936).Button, obj6);
+    obj5[1] = callback2(tmp2(4975).Button, obj6);
     items[4] = callback2(View, obj5);
     obj[2] = items;
-    return callback3(tmp2(5562).Card, obj);
+    return callback3(tmp2(5607).Card, obj);
   }
   const tmp6Result = useGameNameAndCoverImageDefault(first, intl.string(getSystemLocale.t.VQq92a));
 });

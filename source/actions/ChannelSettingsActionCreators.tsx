@@ -1,17 +1,17 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8625
+// Function ID: 8626
 // Name: init
-// Dependencies: [5, 8556, 1386, 673, 706, 4336, 7697, 527, 7261, 2]
+// Dependencies: [5, 8626, 1957, 1074, 573, 4418, 7765, 1272, 7323, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8555 (init)
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
+// Module 8625 (init)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4418 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "normalizeChannelPropertyForCompare" /* 8556 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "normalizeChannelPropertyForCompare" /* 8626 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function init(channelId, location, subsection) {
@@ -164,7 +164,7 @@ function _saveChannel() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            let HTTP = callback(527).HTTP;
+            let HTTP = callback(1272).HTTP;
             let then = HTTP.patch;
             let obj4 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
             obj4[0] = c6.CHANNEL(callback);
@@ -224,7 +224,7 @@ function _saveChannel() {
             obj5[24] = c25;
             obj5[25] = c26;
             obj4[1] = obj5;
-            obj5 = callback(527);
+            obj5 = callback(1272);
             obj4[3] = obj5.rejectWithMigratedError();
             HTTP = then(obj4);
             then = HTTP.then;

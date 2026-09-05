@@ -1,15 +1,15 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15900
+// Function ID: 15901
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [7470, 7906, 14749, 7533, 14753, 14746, 1233, 1305, 11400, 2]
+// Dependencies: [7537, 7975, 14824, 7600, 14828, 14821, 1114, 1187, 11468, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 15824 (useGoreContentNonFriendsDmSettingValue)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7533 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7470 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15900 (useGoreContentNonFriendsDmSettingValue)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7600 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14824 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7537 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function useGoreContentNonFriendsDmSettingValue() {
@@ -28,22 +28,22 @@ function useGoreContentNonFriendsDmSettingValue() {
 function onGoreContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(14753);
+    let obj = selectedTeenId(14828);
     obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
-    const intl = selectedTeenId(1233).intl;
-    obj[0] = intl.string(selectedTeenId(1233).t["16/3Bi"]);
-    const intl2 = selectedTeenId(1233).intl;
-    obj[1] = intl2.string(selectedTeenId(1233).t["Yh+HX1"]);
+    const intl = selectedTeenId(1114).intl;
+    obj[0] = intl.string(selectedTeenId(1114).t["16/3Bi"]);
+    const intl2 = selectedTeenId(1114).intl;
+    obj[1] = intl2.string(selectedTeenId(1114).t["Yh+HX1"]);
     obj[2] = function handlePress(goreContentNonFriendDm) {
       let obj = selectedTeenId(closure_1_1[4]);
       obj = { goreContentNonFriendDm };
       return obj.updateGoreContentSetting(selectedTeenId, obj);
     };
     obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
-    const items = [selectedTeenId(1305).ExplicitContentRedaction.SHOW];
+    const items = [selectedTeenId(1187).ExplicitContentRedaction.SHOW];
     obj[4] = items;
-    const result = selectedTeenId(14746).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(14746);
+    const result = selectedTeenId(14821).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(14821);
   }
 }
 createToggle = {

@@ -1,27 +1,27 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13621
+// Function ID: 13622
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [32, 19, 17, 1908, 7366, 21, 4481, 709, 13549, 13550, 586, 4416, 4955, 1233, 4866, 5394, 4948, 688, 1362, 13551, 13552, 4477, 2]
+// Dependencies: [32, 19, 17, 1979, 7432, 21, 4560, 576, 13622, 13623, 504, 4495, 4994, 1114, 4905, 5434, 4987, 1093, 4411, 13624, 13625, 4556, 2]
 // Exports: default
 
-// Module 13548 (PremiumPaymentGuildAnimation)
-import initialize from "initialize" /* 586 */;
-import keys from "keys" /* 688 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import componentDidMountDefault2 from "componentDidMount" /* 13549 */;
-import _mod13550 from "module_13550" /* 13550 */;
+// Module 13621 (PremiumPaymentGuildAnimation)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import keys from "keys" /* 1093 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import componentDidMountDefault2 from "componentDidMount" /* 13622 */;
+import _mod13623 from "module_13623" /* 13623 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import { Gradients } from "items" /* 7366 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import { Gradients } from "items" /* 7432 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class PremiumPaymentGuildAnimation {
@@ -30,7 +30,7 @@ class PremiumPaymentGuildAnimation {
     tmp = closure_11();
     obj = { nextScene, onSceneComplete, loop, sceneSegments: closure_12, style: tmp.animation, source: null };
     tmp2 = require("componentDidMount");
-    obj[5] = require("module_13550");
+    obj[5] = require("module_13623");
     return jsx(tmp2, obj);
   }
 }
@@ -74,12 +74,12 @@ export default function SubscribeModalSuccessAlert(arg0) {
   dependencyMap = tmp7[1];
   obj = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
   const tmp9 = useThemeDefault();
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj[1] = intl.string(getSystemLocale.t.YKxJCI);
   obj[2] = function onConfirm() {
-    callback2(4866).close();
-    const obj = callback2(4866);
-    callback(5394).closeApplyBoostModal();
+    callback2(4905).close();
+    const obj = callback2(4905);
+    callback(5434).closeApplyBoostModal();
   };
   obj = {
     nextScene: tmp6[0],
@@ -103,9 +103,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13551);
+    let tmp8Result = tmp8(13624);
   } else {
-    tmp8Result = tmp8(13552);
+    tmp8Result = tmp8(13625);
   }
   obj3[1] = tmp8Result;
   obj2[1] = callback2(tmp15, obj3);
@@ -113,9 +113,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const items2 = [callback2(tmp14, obj1), ];
   const obj4 = { style: tmp.successInfo, children: null };
   const obj5 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl2 = tmp2(1233).intl;
+  const intl2 = tmp2(1114).intl;
   const string = intl2.string;
-  const t = tmp2(1233).t;
+  const t = tmp2(1114).t;
   if (someResult) {
     let stringResult = string(t.RMmWY3);
   } else {
@@ -125,7 +125,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   obj5[2] = stringResult;
   const items3 = [callback2(Text.Text, obj5), ];
   const obj7 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl3 = tmp2(1233).intl;
+  const intl3 = tmp2(1114).intl;
   obj7[2] = intl3.format(getSystemLocale.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
   items3[1] = callback2(Text.Text, obj7);
   obj4[1] = items3;

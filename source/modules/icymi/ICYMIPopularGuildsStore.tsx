@@ -1,12 +1,12 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16483
+// Function ID: 16484
 // Name: initialize
-// Dependencies: [1908, 1426, 7279, 586, 706, 2]
+// Dependencies: [1979, 1971, 7341, 504, 573, 2]
 
-// Module 16407 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+// Module 16483 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
 
 const require = arg1;
 let closure_3 = [];

@@ -1,19 +1,19 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9118
+// Function ID: 9119
 // Name: VoiceBadges
-// Dependencies: [19, 4572, 21, 4481, 709, 5544, 5642, 9048, 1296, 7102, 9049, 9060, 9103, 4755, 9105, 8110, 586, 7671, 9107, 9108, 9110, 4477, 1233, 5560, 4936, 9111, 9112, 4325, 9113, 9141, 2]
+// Dependencies: [19, 4600, 21, 4560, 576, 5589, 5687, 9119, 1178, 7162, 9120, 9131, 9174, 4794, 9176, 8179, 504, 7738, 9178, 9179, 9181, 4556, 1114, 5605, 4975, 9182, 9183, 4404, 9184, 9212, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9047 (VoiceBadges)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import setDefault from "set" /* 5544 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9048 */;
+// Module 9118 (VoiceBadges)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import setDefault from "set" /* 5589 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9119 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "sortActivity" /* 4572 */;
+import closure_4 from "sortActivity" /* 4600 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function VoiceBadges(arg0) {
@@ -24,7 +24,7 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: null, children: null };
     obj[0] = tmp.iconWrapper;
-    let tmp3Result = tmp3(5544);
+    let tmp3Result = tmp3(5589);
     obj = { state: null, size: null, style: null };
     obj[0] = muteDeafenIconState;
     obj[1] = Button.IconSizes.SMALL;
@@ -37,7 +37,7 @@ function VoiceBadges(arg0) {
   if (null != videoIconState) {
     obj1 = { style: null, children: null };
     obj1[0] = tmp.iconWrapper;
-    tmp3Result = tmp3(5544);
+    tmp3Result = tmp3(5589);
     const obj2 = { state: null, size: null, style: null };
     obj2[0] = videoIconState;
     obj2[1] = Button.IconSizes.SMALL;

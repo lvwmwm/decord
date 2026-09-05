@@ -1,14 +1,14 @@
-// Module ID: 8764
-// Function ID: 8765
+// Module ID: 8834
+// Function ID: 8835
 // Name: DiceIcon
-// Dependencies: [19, 21, 709, 4196, 8765, 2]
+// Dependencies: [19, 21, 576, 4261, 8835, 2]
 // Exports: DiceIcon
 
-// Module 8764 (DiceIcon)
+// Module 8834 (DiceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8765 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8835 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 696
-// Function ID: 697
+// Module ID: 1243
+// Function ID: 1244
 // Name: withEqualityFn
-// Dependencies: [697, 702, 500, 2]
+// Dependencies: [1244, 1249, 1250, 2]
 // Exports: cleanupImpression, getImpressionStack, getLocation, setCurrentImpression, setDebugTrackedData
 
-// Module 696 (withEqualityFn)
+// Module 1243 (withEqualityFn)
 import set from "set" /* 2 */;
-import identity from "identity" /* 697 */;
+import identity from "identity" /* 1244 */;
 
 let closure_2 = Object.freeze({ debugTrackedData: null, impressions: [] });
 const withEqualityFn = identity.createWithEqualityFn(() => closure_2);
@@ -14,7 +14,7 @@ const result = set.fileFinishedImporting("modules/app_analytics/ImpressionStore.
 
 export const setCurrentImpression = function setCurrentImpression(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState((impressions) => {
       impressions = [];
       impressions[HermesBuiltin.arraySpread(impressions.impressions, 0)] = closure_0;
@@ -24,7 +24,7 @@ export const setCurrentImpression = function setCurrentImpression(arg0) {
 };
 export const cleanupImpression = function cleanupImpression(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState((impressions) => {
       impressions = impressions.impressions;
       return { impressions: impressions.filter((sequenceId) => sequenceId.sequenceId !== sequenceId.sequenceId) };
@@ -34,7 +34,7 @@ export const cleanupImpression = function cleanupImpression(arg0) {
 export const setDebugTrackedData = function setDebugTrackedData(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState(() => {
       let obj = { debugTrackedData: null };
       obj = { name: closure_0 };

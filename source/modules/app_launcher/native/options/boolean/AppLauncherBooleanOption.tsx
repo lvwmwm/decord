@@ -1,16 +1,16 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12177
+// Function ID: 12178
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4481, 709, 8523, 2]
+// Dependencies: [32, 19, 21, 4560, 576, 8593, 2]
 // Exports: default
 
-// Module 12109 (AppLauncherBooleanOption)
-import ThemesDefault from "Themes" /* 709 */;
-import Form from "Form" /* 8523 */;
+// Module 12177 (AppLauncherBooleanOption)
+import ThemesDefault from "Themes" /* 576 */;
+import Form from "Form" /* 8593 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { container: null };

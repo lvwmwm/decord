@@ -1,10 +1,10 @@
 // Module ID: 13864
 // Function ID: 13865
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13864 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "928ec3b0cfa6ddcb7b852c71960488c7", name: "Share", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/oauth2", width: 375, height: 812, scales: [2, 3], hash: "9f0466452ea774e0a27ad50f4f806303", name: "background", type: "png" });

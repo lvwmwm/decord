@@ -1,14 +1,14 @@
-// Module ID: 6068
-// Function ID: 6069
+// Module ID: 6123
+// Function ID: 6124
 // Name: GemSpotIllustration
-// Dependencies: [21, 5542, 6069, 2]
+// Dependencies: [21, 5587, 6124, 2]
 // Exports: GemSpotIllustration
 
-// Module 6068 (GemSpotIllustration)
+// Module 6123 (GemSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6069 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6124 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemSpotIllustration.native.tsx");

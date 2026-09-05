@@ -1,10 +1,10 @@
 // Module ID: 9128
 // Function ID: 9129
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9128 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "aa1ab8f7d6e2b1c9438f72fdbfc69c0c", name: "FireIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9c9eaf9e089e1e9ddafb13abb59b28d7", name: "MicrophoneSlashIcon", type: "png" });

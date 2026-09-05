@@ -1,12 +1,12 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10902
+// Function ID: 10903
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: [19, 1939, 2758, 10834, 1233, 1940, 2]
+// Dependencies: [19, 1390, 2786, 10903, 1114, 1391, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 10833 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
-import messagesProxyDefault from "messagesProxy" /* 2758 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10834 */;
+// Module 10902 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+import messagesProxyDefault from "messagesProxy" /* 2786 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10903 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ obj[require("DisplayNameEffect").DisplayNameEffect.TOON] = messagesProxyDefault.
 obj[require("DisplayNameEffect").DisplayNameEffect.POP] = messagesProxyDefault.cjQOKb;
 obj[require("DisplayNameEffect").DisplayNameEffect.GUMMY] = messagesProxyDefault.x9Gtie;
 obj[require("DisplayNameEffect").DisplayNameEffect.PRISM] = messagesProxyDefault["/M7psm"];
-let closure_5 = { [arg1(1939).DisplayNameEffect.SOLID]: 3, [arg1(1939).DisplayNameEffect.GRADIENT]: 2.5, [arg1(1939).DisplayNameEffect.GLOW]: 2.5, [arg1(1939).DisplayNameEffect.PRISM]: 2.5, [arg1(1939).DisplayNameEffect.NEON]: 3, [arg1(1939).DisplayNameEffect.TOON]: 3, [arg1(1939).DisplayNameEffect.POP]: 3, [arg1(1939).DisplayNameEffect.GUMMY]: 3 };
+let closure_5 = { [arg1(1390).DisplayNameEffect.SOLID]: 3, [arg1(1390).DisplayNameEffect.GRADIENT]: 2.5, [arg1(1390).DisplayNameEffect.GLOW]: 2.5, [arg1(1390).DisplayNameEffect.PRISM]: 2.5, [arg1(1390).DisplayNameEffect.NEON]: 3, [arg1(1390).DisplayNameEffect.TOON]: 3, [arg1(1390).DisplayNameEffect.POP]: 3, [arg1(1390).DisplayNameEffect.GUMMY]: 3 };
 const result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
 
 export const DISPLAY_NAME_STYLES_EFFECT_NAMES = obj;

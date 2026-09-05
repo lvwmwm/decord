@@ -1,39 +1,39 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 16990
+// Function ID: 16991
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1908, 4130, 1921, 4710, 21, 9699, 4481, 709, 16899, 586, 5539, 12123, 7574, 16901, 10841, 16904, 4681, 2]
+// Dependencies: [19, 17, 1979, 4209, 1371, 4742, 21, 9770, 4560, 576, 16977, 504, 5584, 12191, 7641, 16979, 10910, 16982, 4713, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 16912 (LaunchpadChannelIcon)
+// Module 16990 (LaunchpadChannelIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import getRelativeTimestamp from "getRelativeTimestamp" /* 7574 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9699 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16899 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 16901 */;
-import ChannelContentDefault from "ChannelContent" /* 16904 */;
+import ThemesDefault from "Themes" /* 576 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import getRelativeTimestamp from "getRelativeTimestamp" /* 7641 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9770 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16977 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 16979 */;
+import ChannelContentDefault from "ChannelContent" /* 16982 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const tmp = callback3();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_4];
   obj = { children: null };
   obj = { style: tmp.guildBadgeIcon, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getGuild(channel.guild_id));
   const tmp2 = getLayoutStyleDefault();
   obj[1] = callback(GuildIconSizesDefault, { guild: stateFromStores, size: getLayoutStyleDefault().icon.guildBadgeIconSize });
-  const items1 = [callback(View, obj), callback(channel(12123).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  const items1 = [callback(View, obj), callback(channel(12191).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   obj[0] = items1;
   return callback2(closure_9, obj);
 }
@@ -95,7 +95,7 @@ export default function renderChannelItem(unread) {
     obj1 = { channel: null, size: null };
     obj1[0] = channel;
     obj1[1] = tmp7.icon.avatarSize;
-    let tmp11Result = tmp11(tmp5(10841), obj1);
+    let tmp11Result = tmp11(tmp5(10910), obj1);
   } else {
     const obj2 = { channel: null };
     obj2[0] = channel;

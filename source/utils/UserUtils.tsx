@@ -1,15 +1,15 @@
-// Module ID: 4325
-// Function ID: 4326
+// Module ID: 4404
+// Function ID: 4405
 // Name: nameFromUser
-// Dependencies: [4326, 1921, 673, 586, 1233, 2]
+// Dependencies: [4405, 1371, 1074, 504, 1114, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4325 (nameFromUser)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "initialize" /* 4326 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 4404 (nameFromUser)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_2 from "initialize" /* 4405 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function nameFromUser(primary1) {
@@ -273,7 +273,7 @@ function useUserTag(user) {
 function useDirectMessageRecipient(arg0) {
   const _require = arg0;
   const items = [closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null != closure_0) {
       let user = null;
       if (obj.isPrivate()) {

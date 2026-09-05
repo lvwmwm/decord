@@ -1,11 +1,11 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7451
+// Function ID: 7452
 // Name: createFromServer
-// Dependencies: [1935, 1923, 2]
+// Dependencies: [1386, 1373, 2]
 
-// Module 7385 (createFromServer)
-import toJSDefault from "toJS" /* 1935 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+// Module 7451 (createFromServer)
+import toJSDefault from "toJS" /* 1386 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 toJSDefault;
 ({ SubscriptionIntervalTypes, DiscountUserUsageLimitIntervalTypes } = GuildFeatures);

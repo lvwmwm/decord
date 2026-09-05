@@ -1,12 +1,12 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16213
+// Function ID: 16214
 // Name: HubSidebarProgressOverview
-// Dependencies: [19, 9760, 21, 12601, 1233, 12406, 13985, 4448, 12605, 2008, 2]
+// Dependencies: [19, 9831, 21, 12669, 1114, 12474, 13975, 4527, 12673, 1896, 2]
 // Exports: default
 
-// Module 16135 (HubSidebarProgressOverview)
+// Module 16213 (HubSidebarProgressOverview)
 import noopAll from "noop" /* 19 */;
-import items from "items" /* 9760 */;
+import items from "items" /* 9831 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,27 +16,27 @@ const result = require("set").fileFinishedImporting("modules/hub/native/componen
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(12601);
+  let obj = guild(12669);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  const nextHubProgressStep = guild(12601).getNextHubProgressStep(hubProgressBarCompletedSteps);
+  const nextHubProgressStep = guild(12669).getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     const size = hubProgressBarCompletedSteps.size;
-    const hubProgressTitleForStep = tmp(12601).getHubProgressTitleForStep(nextHubProgressStep);
+    const hubProgressTitleForStep = tmp(12669).getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_4) {
-      const intl2 = tmp(1233).intl;
+      const intl2 = tmp(1114).intl;
       obj = { number: null, total: null };
       const _HermesInternal = HermesInternal;
       obj[0] = "" + size;
       obj[1] = tmp11;
-      let formatToPlainStringResult = intl2.formatToPlainString(tmp(1233).t["9j7xDu"], obj);
+      let formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t["9j7xDu"], obj);
     } else {
-      const intl = tmp(1233).intl;
-      formatToPlainStringResult = intl.string(tmp(1233).t["+Gyklt"]);
+      const intl = tmp(1114).intl;
+      formatToPlainStringResult = intl.string(tmp(1114).t["+Gyklt"]);
     }
     const _Math = Math;
-    const bound = Math.max(tmp(12406).MIN_PROGRESS_PERCENT, 100 * size / tmp11);
+    const bound = Math.max(tmp(12474).MIN_PROGRESS_PERCENT, 100 * size / tmp11);
     obj = { onPress: null, title: null, subtitle: null, percentComplete: null };
     obj[0] = function onPress() {
       let obj = closure_1_1(closure_1_2[7]);
@@ -46,7 +46,7 @@ export default function HubSidebarProgressOverview(guild) {
     obj[1] = hubProgressTitleForStep;
     obj[2] = formatToPlainStringResult;
     obj[3] = bound;
-    return jsx(tmp(13985).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
+    return jsx(tmp(13975).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
   }
-  const obj2 = guild(12601);
+  const obj2 = guild(12669);
 };

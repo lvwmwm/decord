@@ -1,22 +1,22 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 11027
+// Function ID: 11028
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4481, 709, 1627, 4731, 7474, 7122, 8351, 1233, 5635, 4477, 2464, 10959, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1611, 4763, 7541, 7182, 8421, 1114, 5680, 4556, 2492, 11028, 2]
 // Exports: default
 
-// Module 10958 (CollectiblesShopGiftBadgePostPurchaseModal)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import messagesProxyDefault from "messagesProxy" /* 2464 */;
-import Text from "Text" /* 4477 */;
-import XSmallIcon from "XSmallIcon" /* 5635 */;
-import ModalScreen from "ModalScreen" /* 8351 */;
-import PostPurchaseFooterDefault from "PostPurchaseFooter" /* 10959 */;
+// Module 11027 (CollectiblesShopGiftBadgePostPurchaseModal)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import messagesProxyDefault from "messagesProxy" /* 2492 */;
+import Text from "Text" /* 4556 */;
+import XSmallIcon from "XSmallIcon" /* 5680 */;
+import ModalScreen from "ModalScreen" /* 8421 */;
+import PostPurchaseFooterDefault from "PostPurchaseFooter" /* 11028 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
@@ -34,15 +34,15 @@ let result = require("set").fileFinishedImporting("modules/collectibles/native/C
 export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgress) {
   const tmp = callback3(useSafeAreaInsetsDefault().top);
   const callback = React.useCallback(() => {
-    let arr = callback2(4731);
+    let arr = callback2(4763);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(7474);
+    let obj = callback(7541);
     obj = { analyticsLocations: null, analyticsSource: null };
-    const items = [callback2(7122).GIFTING_BADGE_POST_PURCHASE];
+    const items = [callback2(7182).GIFTING_BADGE_POST_PURCHASE];
     obj[0] = items;
-    obj[1] = callback2(7122).GIFTING_BADGE_POST_PURCHASE;
+    obj[1] = callback2(7182).GIFTING_BADGE_POST_PURCHASE;
     const result = obj.openCollectiblesShopMobile(obj);
   }, []);
   let obj = { children: null };

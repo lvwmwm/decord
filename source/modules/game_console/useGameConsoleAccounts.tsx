@@ -1,13 +1,13 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9214
+// Function ID: 9215
 // Name: useGameConsoleAccounts
-// Dependencies: [5242, 673, 586, 1394, 2]
+// Dependencies: [5281, 1074, 504, 1369, 2]
 // Exports: default
 
-// Module 9143 (useGameConsoleAccounts)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "set" /* 5242 */;
-import { PlatformTypes } from "ME" /* 673 */;
+// Module 9214 (useGameConsoleAccounts)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "set" /* 5281 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");

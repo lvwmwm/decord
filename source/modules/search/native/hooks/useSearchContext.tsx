@@ -1,14 +1,14 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12299
+// Function ID: 12300
 // Name: useGuildSearchContext
-// Dependencies: [19, 1386, 673, 38, 644, 2]
+// Dependencies: [19, 1957, 1074, 38, 563, 2]
 // Exports: getChannelDetailsSearchContext, useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 12231 (useGuildSearchContext)
+// Module 12299 (useGuildSearchContext)
 import _modDef38 from "module_38" /* 38 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { SearchTypes } from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import { SearchTypes } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/native/hooks/useSearchContext.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13627
+// Function ID: 13628
 // Name: stopSyncingUserActivity
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: default
 
-// Module 13554 (stopSyncingUserActivity)
+// Module 13627 (stopSyncingUserActivity)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/stopSyncingUserActivity.tsx");
 

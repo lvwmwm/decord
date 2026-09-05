@@ -1,12 +1,12 @@
-// Module ID: 10240
-// Function ID: 10241
+// Module ID: 10311
+// Function ID: 10312
 // Name: View
-// Dependencies: [17, 1234, 10241, 2]
+// Dependencies: [17, 1115, 10312, 2]
 
-// Module 10240 (View)
+// Module 10311 (View)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10241 */;
-import set from "set" /* 1234 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10312 */;
+import set from "set" /* 1115 */;
 
 let View = get_ActivityIndicator.View;
 if (set.isAndroid()) {

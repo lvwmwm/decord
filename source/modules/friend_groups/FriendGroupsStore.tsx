@@ -1,15 +1,15 @@
-// Module ID: 13625
-// Function ID: 13626
+// Module ID: 13701
+// Function ID: 13702
 // Name: initialize
-// Dependencies: [7592, 6536, 4130, 1921, 586, 706, 2]
+// Dependencies: [7659, 6595, 4209, 1371, 504, 573, 2]
 
-// Module 13625 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "recomputeAffinities" /* 7592 */;
-import closure_1 from "hasConsented" /* 6536 */;
-import closure_2 from "markAllUserIdListsStale" /* 4130 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 13701 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "recomputeAffinities" /* 7659 */;
+import closure_1 from "hasConsented" /* 6595 */;
+import closure_2 from "markAllUserIdListsStale" /* 4209 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 let closure_4 = [];
 let c5 = false;

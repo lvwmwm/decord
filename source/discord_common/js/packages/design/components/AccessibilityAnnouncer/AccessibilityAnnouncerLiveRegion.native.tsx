@@ -1,13 +1,13 @@
-// Module ID: 1351
-// Function ID: 1352
+// Module ID: 4273
+// Function ID: 4274
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
-// Dependencies: [19, 17, 21, 1352, 2]
+// Dependencies: [19, 17, 21, 4274, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 1351 (updateAccessibilityAnnouncerLiveRegionMessage)
+// Module 4273 (updateAccessibilityAnnouncerLiveRegionMessage)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import keys from "keys" /* 1352 */;
+import keys from "keys" /* 4274 */;
 import importAllResult from "noop" /* 19 */;
 
 ({ StyleSheet, Text: c0 } = get_ActivityIndicator);

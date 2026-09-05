@@ -1,10 +1,10 @@
 // Module ID: 13431
 // Function ID: 13432
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13431 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 420, height: 112, scales: [1, 2, 3], hash: "ac80f7b470e8847053e22e988a30fa87", name: "subscription_placeholder_pattern_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "cb2a2e3b1b856419d08252c8139a8321", name: "entrace_sounds", type: "png" });

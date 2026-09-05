@@ -1,13 +1,13 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14524
+// Function ID: 14525
 // Name: createVoiceSettingsEventHandlers
-// Dependencies: [4383, 673, 8269, 12, 2]
+// Dependencies: [4465, 1074, 8339, 12, 2]
 // Exports: default
 
-// Module 14449 (createVoiceSettingsEventHandlers)
+// Module 14524 (createVoiceSettingsEventHandlers)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
+import ME from "ME" /* 1074 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4465 */;
 
 ({ RPC_SCOPE_CONFIG: c3, RPC_LOCAL_SCOPE: c4 } = RPC_SCOPE_CONFIG);
 const RPCEvents = ME.RPCEvents;
@@ -19,7 +19,7 @@ export default function createVoiceSettingsEventHandlers(arg0, arg1) {
   let obj = {};
   obj = { scope: null, handler: null };
   obj = {};
-  const items = [_require(8269).OAuth2Scopes.RPC, _require(8269).OAuth2Scopes.RPC_VOICE_READ];
+  const items = [_require(8339).OAuth2Scopes.RPC, _require(8339).OAuth2Scopes.RPC_VOICE_READ];
   obj[constants.ANY] = items;
   obj[0] = obj;
   obj[1] = function handler() {

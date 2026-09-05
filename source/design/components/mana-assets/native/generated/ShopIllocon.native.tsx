@@ -1,14 +1,14 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6457
+// Function ID: 6458
 // Name: ShopIllocon
-// Dependencies: [21, 5542, 6401, 2]
+// Dependencies: [21, 5587, 6458, 2]
 // Exports: ShopIllocon
 
-// Module 6400 (ShopIllocon)
+// Module 6457 (ShopIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6401 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6458 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ShopIllocon.native.tsx");

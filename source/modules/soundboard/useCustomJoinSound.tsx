@@ -1,12 +1,12 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7374
+// Function ID: 7375
 // Name: CustomSoundType
-// Dependencies: [1339, 4975, 586, 2]
+// Dependencies: [1221, 5014, 504, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 7312 (CustomSoundType)
-import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
+// Module 7374 (CustomSoundType)
+import closure_2 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME" /* 5014 */;
 
 const require = arg1;
 let obj = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
@@ -16,7 +16,7 @@ export const CustomSoundType = obj;
 export const useCustomJoinSound = function useCustomJoinSound(arg0) {
   const _require = arg0;
   const items = [closure_2];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let guilds = closure_1_2.settings.guilds;
     guilds = undefined;
     if (guilds != null) {

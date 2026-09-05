@@ -1,18 +1,18 @@
-// Module ID: 7057
-// Function ID: 7058
+// Module ID: 7117
+// Function ID: 7118
 // Name: incrementVersion
-// Dependencies: [1339, 1386, 4863, 1981, 673, 1305, 1394, 1911, 586, 706, 2]
+// Dependencies: [1221, 1957, 4902, 2012, 1074, 1187, 1369, 1982, 504, 573, 2]
 
-// Module 7057 (incrementVersion)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import create from "create" /* 1305 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "handleConnectionOpen" /* 4863 */;
-import closure_5 from "comparator" /* 1981 */;
-import { ChannelTypes } from "ME" /* 673 */;
+// Module 7117 (incrementVersion)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import create from "create" /* 1187 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "handleConnectionOpen" /* 4902 */;
+import closure_5 from "comparator" /* 2012 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 
 require = arg1;
 function incrementVersion() {

@@ -1,11 +1,11 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 14069
+// Function ID: 14070
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 
-// Module 13828 (apexExperiment)
+// Module 14069 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 let obj = { probeAudioEffects: false };
 obj = { name: "2026-03-audio-effects-probe", kind: "user", defaultConfig: obj, variations: null };

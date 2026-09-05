@@ -1,31 +1,31 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9476
+// Function ID: 9477
 // Name: sortKey
-// Dependencies: [1385, 4503, 1215, 5239, 1386, 4532, 5380, 1921, 9406, 4500, 4502, 673, 4545, 5388, 4116, 9407, 12, 9408, 9409, 4680, 8148, 4547, 2]
+// Dependencies: [1956, 4582, 502, 5278, 1957, 1908, 5419, 1371, 9477, 4579, 4581, 1074, 4585, 5428, 4195, 9478, 12, 9479, 9480, 4712, 8217, 4612, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId
 
-// Module 9405 (sortKey)
+// Module 9476 (sortKey)
 import apply from "apply" /* 12 */;
-import version from "version" /* 4116 */;
-import isStreamKey from "isStreamKey" /* 4547 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5388 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8148 */;
-import useIsSpeaking from "useIsSpeaking" /* 9407 */;
-import apexExperiment from "apexExperiment" /* 9408 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "callConnect" /* 5239 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_9 from "anyoneHasFlagInContext" /* 5380 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "makeTimeoutKey" /* 9406 */;
-import closure_12 from "updateVoiceState" /* 4500 */;
-import ParticipantTypes from "ParticipantTypes" /* 4502 */;
-import ME from "ME" /* 673 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
+import version from "version" /* 4195 */;
+import isStreamKey from "isStreamKey" /* 4612 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5428 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8217 */;
+import useIsSpeaking from "useIsSpeaking" /* 9478 */;
+import apexExperiment from "apexExperiment" /* 9479 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "callConnect" /* 5278 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_9 from "anyoneHasFlagInContext" /* 5419 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import closure_11 from "makeTimeoutKey" /* 9477 */;
+import closure_12 from "updateVoiceState" /* 4579 */;
+import ParticipantTypes from "ParticipantTypes" /* 4581 */;
+import ME from "ME" /* 1074 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
 
 require = arg1;
 function sortKey(type) {
@@ -225,11 +225,11 @@ prototype["updateParticipant"] = function updateParticipant(arg0) {
   }
   return flag;
 };
-prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f77808) {
+prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f78247) {
   const self = this;
-  closure_0 = f77808;
+  closure_0 = f78247;
   let flag;
-  if (this.participants[f77808] != null) {
+  if (this.participants[f78247] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === closure_1_14.USER) {
@@ -269,11 +269,11 @@ prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f778
   }
   return flag;
 };
-prototype["updateParticipantQuality"] = function updateParticipantQuality(f77815, closure_1, closure_2) {
+prototype["updateParticipantQuality"] = function updateParticipantQuality(f78254, closure_1, closure_2) {
   const self = this;
   closure_0 = closure_2;
   let flag;
-  if (this.participants[f77815] != null) {
+  if (this.participants[f78254] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === closure_1_14.STREAM) {

@@ -1,12 +1,12 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9070
+// Function ID: 9071
 // Name: getDefaultGuildSettingsSection
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: getDefaultGuildSettingsSection
 
-// Module 9000 (getDefaultGuildSettingsSection)
+// Module 9070 (getDefaultGuildSettingsSection)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const GuildSettingsSections = ME.GuildSettingsSections;
 const result = set.fileFinishedImporting("modules/guild_settings/utils/getDefaultGuildSettingsSection.tsx");

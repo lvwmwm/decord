@@ -1,15 +1,15 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16551
+// Function ID: 16552
 // Name: OnboardingHomeScrollView
-// Dependencies: [19, 17, 21, 4481, 709, 1627, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1611, 2]
 // Exports: default
 
-// Module 16475 (OnboardingHomeScrollView)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16551 (OnboardingHomeScrollView)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_2 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 createCacheKey = { guildFeedBackground: null };
 createCacheKey = { backgroundColor: ThemesDefault.colors.BACKGROUND_SURFACE_HIGH };

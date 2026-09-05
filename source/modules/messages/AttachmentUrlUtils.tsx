@@ -1,16 +1,16 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9942
+// Function ID: 9943
 // Name: isRefreshableAttachmentUrl
-// Dependencies: [5, 4971, 673, 684, 4516, 4515, 1485, 527, 2]
+// Dependencies: [5, 5010, 1074, 1090, 1930, 1929, 1365, 1272, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9871 (isRefreshableAttachmentUrl)
-import setDefault from "set" /* 684 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4515 */;
+// Module 9942 (isRefreshableAttachmentUrl)
+import setDefault from "set" /* 1090 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import getSizedImageProxyURL from "getSizedImageProxyURL" /* 1929 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4971 */;
-import { Endpoints } from "ME" /* 673 */;
+import { ATTACHMENT_PATH_PREFIXES } from "set" /* 5010 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function isRefreshableAttachmentUrl(result) {
@@ -224,14 +224,14 @@ function _refreshAttachmentUrl() {
     c2 = 0;
     c1 = 0;
     return (function*(arg0) {
-      const HTTP = callback(527).HTTP;
+      const HTTP = callback(1272).HTTP;
       obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = closure_1_5.ATTACHMENTS_REFRESH_URLS;
       const obj2 = { attachment_urls: null };
       const items = [callback];
       obj2[0] = items;
       obj1[1] = obj2;
-      obj1[2] = callback(527).rejectWithMigratedError();
+      obj1[2] = callback(1272).rejectWithMigratedError();
       yield HTTP.post(obj1);
       return arg1.body.refreshed_urls[0].refreshed;
     })();

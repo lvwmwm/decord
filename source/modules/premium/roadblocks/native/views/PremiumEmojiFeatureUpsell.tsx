@@ -1,15 +1,15 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10327
+// Function ID: 10328
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [19, 17, 21, 4481, 709, 1627, 6565, 688, 4218, 9893, 7785, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1611, 6625, 1093, 4296, 9964, 7853, 2]
 // Exports: default
 
-// Module 10256 (PremiumEmojiFeatureUpsell)
+// Module 10327 (PremiumEmojiFeatureUpsell)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;

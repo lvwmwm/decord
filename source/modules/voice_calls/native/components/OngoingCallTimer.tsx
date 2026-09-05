@@ -1,14 +1,14 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13797
+// Function ID: 13798
 // Name: OnGoingCallTimer
-// Dependencies: [19, 5239, 21, 586, 11, 13723, 2]
+// Dependencies: [19, 5278, 21, 504, 11, 13798, 2]
 // Exports: default
 
-// Module 13722 (OnGoingCallTimer)
+// Module 13797 (OnGoingCallTimer)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
-import componentDidMountDefault from "componentDidMount" /* 13723 */;
-import closure_3 from "callConnect" /* 5239 */;
+import componentDidMountDefault from "componentDidMount" /* 13798 */;
+import closure_3 from "callConnect" /* 5278 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -19,7 +19,7 @@ export default function OnGoingCallTimer(style) {
   const channelId = style.channelId;
   const items = [closure_3];
   const items1 = [channelId];
-  const stateFromStores = channelId(586).useStateFromStores(items, () => {
+  const stateFromStores = channelId(504).useStateFromStores(items, () => {
     const call = closure_1_3.getCall(channelId);
     let messageId;
     if (call != null) {

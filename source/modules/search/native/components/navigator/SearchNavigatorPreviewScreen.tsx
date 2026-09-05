@@ -1,15 +1,15 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16861
+// Function ID: 16862
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 673, 21, 4481, 1498, 1501, 12290, 16740, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 1483, 1486, 12358, 16818, 2]
 // Exports: default
 
-// Module 16783 (SearchNavigatorPreviewScreen)
+// Module 16861 (SearchNavigatorPreviewScreen)
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { SearchTypes } from "ME" /* 673 */;
+import { SearchTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ container: { flex: 1 } });

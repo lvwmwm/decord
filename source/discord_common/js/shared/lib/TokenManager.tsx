@@ -1,13 +1,13 @@
-// Module ID: 704
-// Function ID: 705
+// Module ID: 1099
+// Function ID: 1100
 // Name: setSecondaryToken
-// Dependencies: [502, 592, 2]
+// Dependencies: [1085, 510, 2]
 // Exports: getAnalyticsToken, getToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
-// Module 704 (setSecondaryToken)
+// Module 1099 (setSecondaryToken)
 import set from "set" /* 2 */;
-import Storage6 from "Storage" /* 592 */;
-import sum from "sum" /* 502 */;
+import Storage6 from "Storage" /* 510 */;
+import sum from "sum" /* 1085 */;
 
 function setSecondaryToken(token, __analytics__) {
   if (null != __analytics__) {
@@ -33,7 +33,7 @@ function setSecondaryToken(token, __analytics__) {
         const Storage = Storage6.Storage;
         Storage.remove(closure_3);
       }
-      const Storage3 = tmp6(592).Storage;
+      const Storage3 = tmp6(510).Storage;
       const result1 = Storage3.set(closure_2, closure_11);
     }
   }
@@ -64,7 +64,7 @@ function removeToken(__analytics__) {
       const Storage = Storage6.Storage;
       Storage.remove(closure_3);
     }
-    const Storage3 = tmp8(592).Storage;
+    const Storage3 = tmp8(510).Storage;
     const result1 = Storage3.set(closure_2, closure_11);
   }
   return null != tmp3;
@@ -138,7 +138,7 @@ function encryptAndStoreTokens() {
       const Storage = Storage6.Storage;
       Storage.remove(closure_3);
     }
-    const Storage3 = tmp13(592).Storage;
+    const Storage3 = tmp13(510).Storage;
     const result3 = Storage3.set(closure_2, closure_11);
   }
 }
@@ -274,7 +274,7 @@ export const showToken = function showToken() {
       const Storage = Storage6.Storage;
       Storage.remove(closure_3);
     }
-    const Storage3 = tmp3(592).Storage;
+    const Storage3 = tmp3(510).Storage;
     const result1 = Storage3.set(closure_2, closure_11);
   }
 };

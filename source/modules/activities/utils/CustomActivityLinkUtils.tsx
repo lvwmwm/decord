@@ -1,13 +1,13 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12940
+// Function ID: 12941
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12873, 673, 12875, 527, 706, 2]
+// Dependencies: [5, 12941, 1074, 12943, 1272, 573, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12872 (fetchCustomActivityLink)
+// Module 12940 (fetchCustomActivityLink)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getOne" /* 12873 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "getOne" /* 12941 */;
+import { Endpoints } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

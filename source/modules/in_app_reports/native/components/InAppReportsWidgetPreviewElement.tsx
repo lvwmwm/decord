@@ -1,18 +1,18 @@
-// Module ID: 8587
-// Function ID: 8588
+// Module ID: 8657
+// Function ID: 8658
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4481, 709, 8172, 7563, 8588, 7556, 8604, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8241, 7630, 8658, 7623, 8674, 4556, 1114, 2]
 // Exports: default
 
-// Module 8587 (WidgetPreview)
+// Module 8657 (WidgetPreview)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7563 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8172 */;
-import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8588 */;
+import ThemesDefault from "Themes" /* 576 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7630 */;
+import useSharedStylesDefault from "useSharedStyles" /* 8241 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8658 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -44,10 +44,10 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(8604).WidgetSection, obj);
+        tmp6 = callback(tmp5(8674).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7556);
+    tmp5Result = tmp5(7623);
   }
   let tmp9 = null;
   if (null !== tmp6) {
@@ -55,12 +55,12 @@ export default function WidgetPreview(arg0) {
     obj1[0] = tmp.container;
     const obj2 = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj2[0] = tmp.title;
-    const intl = tmp5(1233).intl;
-    obj2[3] = intl.string(tmp5(1233).t.SpsnDY).toUpperCase();
-    const items2 = [callback(tmp5(4477).Text, obj2), tmp6];
+    const intl = tmp5(1114).intl;
+    obj2[3] = intl.string(tmp5(1114).t.SpsnDY).toUpperCase();
+    const items2 = [callback(tmp5(4556).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
-    const str = intl.string(tmp5(1233).t.SpsnDY);
+    const str = intl.string(tmp5(1114).t.SpsnDY);
   }
   return tmp9;
 };

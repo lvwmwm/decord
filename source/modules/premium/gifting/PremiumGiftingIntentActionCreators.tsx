@@ -1,18 +1,18 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10744
+// Function ID: 10745
 // Name: fetchAndReconcileGiftIntentDismissals
-// Dependencies: [7592, 1215, 4743, 1923, 673, 527, 706, 1205, 695, 2]
+// Dependencies: [7659, 502, 4781, 1373, 1074, 1272, 573, 1232, 1242, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 10673 (fetchAndReconcileGiftIntentDismissals)
-import sendRequest from "sendRequest" /* 527 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "recomputeAffinities" /* 7592 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "reinjectEphemerals" /* 4743 */;
-import { GiftIntentType } from "GuildFeatures" /* 1923 */;
-import ME from "ME" /* 673 */;
+// Module 10744 (fetchAndReconcileGiftIntentDismissals)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import closure_3 from "recomputeAffinities" /* 7659 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "reinjectEphemerals" /* 4781 */;
+import { GiftIntentType } from "GuildFeatures" /* 1373 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ AnalyticEvents: error, Endpoints: closure_8 } = ME);
@@ -21,7 +21,7 @@ const result = require("set").fileFinishedImporting("modules/premium/gifting/Pre
 export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs) {
   const _require = serverDismissalTimestampMs;
   const id2 = id.getId();
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   const value = HTTP.get({ url: constants2.GIFT_INTENT_DISMISSALS, oldFormErrors: true, rejectWithError: true });
   return value.then((body) => {
     if (closure_1_4.getId() === callback) {
@@ -39,9 +39,9 @@ export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileG
       obj.dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
     }
   }, (arg0) => {
-    callback(1205).captureException(arg0, { tags: { feature: "gift_intent" } });
-    const obj = callback(1205);
-    callback(706).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
+    callback(1232).captureException(arg0, { tags: { feature: "gift_intent" } });
+    const obj = callback(1232);
+    callback(573).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
   });
 };
 export const logFriendsListGiftIntentsShown = function logFriendsListGiftIntentsShown() {

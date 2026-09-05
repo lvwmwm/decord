@@ -1,14 +1,14 @@
-// Module ID: 11131
-// Function ID: 11132
+// Module ID: 11199
+// Function ID: 11200
 // Name: isPinnedBadge
-// Dependencies: [8114, 8115, 8124, 2]
+// Dependencies: [8183, 8184, 8193, 2]
 // Exports: getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 11131 (isPinnedBadge)
+// Module 11199 (isPinnedBadge)
 import set from "set" /* 2 */;
-import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import BadgeId from "BadgeId" /* 8115 */;
-import items2 from "items" /* 8124 */;
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import BadgeId from "BadgeId" /* 8184 */;
+import items2 from "items" /* 8193 */;
 
 function isPinnedBadge(badge_id) {
   return badge_id === BadgeId.BadgeId.STAFF;

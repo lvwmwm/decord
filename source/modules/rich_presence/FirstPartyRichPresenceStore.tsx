@@ -1,13 +1,13 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11458
+// Function ID: 11459
 // Name: updateActivities
-// Dependencies: [11391, 656, 586, 706, 2]
+// Dependencies: [11459, 1332, 504, 573, 2]
 
-// Module 11390 (updateActivities)
-import initializeDefault from "initialize" /* 586 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import handleUpdateActivityDefault from "handleUpdateActivity" /* 11391 */;
+// Module 11458 (updateActivities)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 1332 */;
+import handleUpdateActivityDefault from "handleUpdateActivity" /* 11459 */;
 
 function updateActivities() {
   items = [];

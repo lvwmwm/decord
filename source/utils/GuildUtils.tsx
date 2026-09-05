@@ -1,16 +1,16 @@
-// Module ID: 5474
-// Function ID: 5475
+// Module ID: 5519
+// Function ID: 5520
 // Name: getGuildNameSuggestion
-// Dependencies: [1908, 1921, 1401, 684, 5475, 4325, 1233, 2]
+// Dependencies: [1979, 1371, 1437, 1090, 5520, 4404, 1114, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5474 (getGuildNameSuggestion)
-import setDefault from "set" /* 684 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import nameFromUserAll from "nameFromUser" /* 4325 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import importDefaultResult from "priv" /* 1401 */;
+// Module 5519 (getGuildNameSuggestion)
+import setDefault from "set" /* 1090 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import nameFromUserAll from "nameFromUser" /* 4404 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import importDefaultResult from "priv" /* 1437 */;
 
 require = arg1;
 function getGuildNameSuggestion(truncateUsername) {

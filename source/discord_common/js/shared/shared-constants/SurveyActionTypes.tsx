@@ -1,9 +1,9 @@
-// Module ID: 4726
-// Function ID: 4727
+// Module ID: 4758
+// Function ID: 4759
 // Name: SurveyActionTypes
 // Dependencies: [2]
 
-// Module 4726 (SurveyActionTypes)
+// Module 4758 (SurveyActionTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionTypes.tsx");

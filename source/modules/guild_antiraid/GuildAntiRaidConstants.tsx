@@ -1,14 +1,14 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 8016
+// Function ID: 8017
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
-// Dependencies: [502, 1233, 503, 2]
+// Dependencies: [1085, 1114, 1086, 2]
 // Exports: getTimeframes
 
-// Module 7947 (GUILD_REPORT_RAID_MOBILE_KEY)
+// Module 8016 (GUILD_REPORT_RAID_MOBILE_KEY)
 import set from "set" /* 2 */;
-import sum from "sum" /* 502 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import importAllResult from "fromString" /* 503 */;
+import sum from "sum" /* 1085 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import importAllResult from "fromString" /* 1086 */;
 
 const Permissions = sum.Permissions;
 const combineResult = importAllResult.combine(Permissions.ADMINISTRATOR, Permissions.MANAGE_GUILD, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);

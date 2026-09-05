@@ -1,16 +1,16 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10080
+// Function ID: 10081
 // Name: computeAlertSettings
-// Dependencies: [4394, 1339, 1908, 4120, 7946, 586, 706, 2]
+// Dependencies: [4476, 1221, 1979, 4199, 8015, 504, 573, 2]
 
-// Module 10009 (computeAlertSettings)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import DATE_CONFIG from "DATE_CONFIG" /* 7946 */;
-import closure_2 from "getHash" /* 4394 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
+// Module 10080 (computeAlertSettings)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 8015 */;
+import closure_2 from "getHash" /* 4476 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
 
 require = arg1;
 function computeAlertSettings() {
@@ -40,8 +40,8 @@ function updateGuildIncident(id) {
   if (null != incidentsData) {
     let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
     if (!hasDetectedActivityResult) {
-      hasDetectedActivityResult = tmp6(7946).isUnderLockdown(incidentsData);
-      const tmp6Result = tmp6(7946);
+      hasDetectedActivityResult = tmp6(8015).isUnderLockdown(incidentsData);
+      const tmp6Result = tmp6(8015);
     }
     if (hasDetectedActivityResult) {
       tmp5 = incidentsData;
@@ -102,8 +102,8 @@ const guildIncidentsStore = new GuildIncidentsStore(dispatcherDefault, {
     if (null != incidentsData) {
       let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = tmp6(7946).isUnderLockdown(incidentsData);
-        const tmp6Result = tmp6(7946);
+        hasDetectedActivityResult = tmp6(8015).isUnderLockdown(incidentsData);
+        const tmp6Result = tmp6(8015);
       }
       if (hasDetectedActivityResult) {
         tmp5 = incidentsData;
@@ -134,8 +134,8 @@ const guildIncidentsStore = new GuildIncidentsStore(dispatcherDefault, {
     if (null != incidentsData) {
       let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = tmp6(7946).isUnderLockdown(incidentsData);
-        const tmp6Result = tmp6(7946);
+        hasDetectedActivityResult = tmp6(8015).isUnderLockdown(incidentsData);
+        const tmp6Result = tmp6(8015);
       }
       if (hasDetectedActivityResult) {
         tmp5 = incidentsData;

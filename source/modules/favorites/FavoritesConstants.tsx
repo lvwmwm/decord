@@ -1,11 +1,11 @@
-// Module ID: 1425
-// Function ID: 1426
+// Module ID: 1970
+// Function ID: 1971
 // Name: date
-// Dependencies: [1426, 2]
+// Dependencies: [1971, 2]
 
-// Module 1425 (date)
+// Module 1970 (date)
 import set from "set" /* 2 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
 
 const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: new Date(), maxMembers: 500000 };
 const result = fromGuildPropertiesWithAdditionalFields.constructFromPartialGuildRecord(obj);

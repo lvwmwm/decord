@@ -1,21 +1,21 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 13034
+// Function ID: 13035
 // Name: getActivityJoinability
-// Dependencies: [673, 11693, 11690, 9459, 9431, 7251, 12967, 1234, 11687, 11688, 11689, 2]
+// Dependencies: [1074, 11761, 11758, 9531, 9502, 7313, 13035, 1115, 11755, 11756, 11757, 2]
 // Exports: default
 
-// Module 12966 (getActivityJoinability)
+// Module 13034 (getActivityJoinability)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import hasFlagDefault from "hasFlag" /* 7251 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9431 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9459 */;
-import getEmbeddedActivityJoinabilityDefault from "getEmbeddedActivityJoinability" /* 9459 */;
-import getPartySize from "getPartySize" /* 11687 */;
-import getIsInParty from "getIsInParty" /* 11690 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11693 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 12967 */;
-import ME from "ME" /* 673 */;
+import set2 from "set" /* 1115 */;
+import hasFlagDefault from "hasFlag" /* 7313 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9502 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9531 */;
+import getEmbeddedActivityJoinabilityDefault from "getEmbeddedActivityJoinability" /* 9531 */;
+import getPartySize from "getPartySize" /* 11755 */;
+import getIsInParty from "getIsInParty" /* 11758 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11761 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 13035 */;
+import ME from "ME" /* 1074 */;
 
 ({ ActivityFlags: c3, ChannelTypes: c4, GuildFeatures: c5 } = ME);
 let obj = { CAN_JOIN: "can_join", CANNOT_JOIN: "cannot_join", JOINED: "joined" };
@@ -84,7 +84,7 @@ export default function getActivityJoinability(arg0) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp30(7251)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp30(7313)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {
@@ -118,7 +118,7 @@ export default function getActivityJoinability(arg0) {
           tmp30 = importDefault;
           tmp31 = constants;
         }
-        tmp27Result = tmp27(11689);
+        tmp27Result = tmp27(11757);
       }
       return obj.CANNOT_JOIN;
     }

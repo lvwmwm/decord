@@ -1,12 +1,12 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17472
+// Function ID: 17473
 // Name: prototype
-// Dependencies: [12345, 1921, 4325, 7058, 9616, 2]
+// Dependencies: [12413, 1371, 4404, 7118, 9687, 2]
 
-// Module 17392 (prototype)
-import initializeDefault from "initialize" /* 7058 */;
-import closure_2 from "initialize" /* 12345 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 17472 (prototype)
+import initializeDefault from "initialize" /* 7118 */;
+import closure_2 from "initialize" /* 12413 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 initializeDefault;
 let prototype = function PushNotificationCacheManager() {
@@ -29,15 +29,15 @@ let prototype = function PushNotificationCacheManager() {
   applyArgumentsResult.handleUserUpdate = function handleUserUpdate() {
     currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
-      applyArgumentsResult(9616).setCurrentUser(currentUser.username, currentUser.id);
-      const obj2 = applyArgumentsResult(9616);
+      applyArgumentsResult(9687).setCurrentUser(currentUser.username, currentUser.id);
+      const obj2 = applyArgumentsResult(9687);
     } else {
-      applyArgumentsResult(9616).setCurrentUser(null, null);
-      const obj = applyArgumentsResult(9616);
+      applyArgumentsResult(9687).setCurrentUser(null, null);
+      const obj = applyArgumentsResult(9687);
     }
   };
   applyArgumentsResult.syncMultiAccountUsers = function syncMultiAccountUsers() {
-    obj = obj(9616);
+    obj = obj(9687);
     obj = undefined;
     if (obj.canUseMultiAccountNotifications) {
       const validUsers = obj.getValidUsers();

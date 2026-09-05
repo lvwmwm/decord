@@ -1,12 +1,12 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 13003
+// Function ID: 13004
 // Name: isOnPlayStation
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 12935 (isOnPlayStation)
+// Module 13003 (isOnPlayStation)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const ActivityGamePlatforms = ME.ActivityGamePlatforms;
 const result = set.fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");

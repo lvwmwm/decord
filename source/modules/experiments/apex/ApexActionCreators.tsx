@@ -1,14 +1,14 @@
-// Module ID: 11414
-// Function ID: 11415
+// Module ID: 11482
+// Function ID: 11483
 // Name: _fetchApexExperimentsMetadata
-// Dependencies: [109, 5, 1209, 673, 527, 706, 7824, 1471, 586, 2]
+// Dependencies: [109, 5, 1236, 1074, 1272, 573, 7893, 1436, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11414 (_fetchApexExperimentsMetadata)
+// Module 11482 (_fetchApexExperimentsMetadata)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "initialize" /* 1209 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_6 from "initialize" /* 1236 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchApexExperimentsMetadata() {
@@ -30,7 +30,7 @@ function _fetchApexExperimentsMetadata() {
       yield HTTP.get(obj1);
       if (1 === tmp7) {
         c4 = 0;
-        const obj3 = callback2(706);
+        const obj3 = callback2(573);
         obj3.dispatch({ type: "APEX_EXPERIMENTS_METADATA_FETCH_FAILURE" });
         c6 = 3;
       } else if (arg0 === 1) {
@@ -42,7 +42,7 @@ function _fetchApexExperimentsMetadata() {
           const variants = id.variants;
           return { id: id.id, name: id.name, title: id.title, revision: id.revision, unitType: id.unit_type, variants: variants.map((id) => ({ id: id.id, label: id.label, type: id.type })) };
         });
-        const obj = callback2(706);
+        const obj = callback2(573);
         const obj4 = { type: "APEX_EXPERIMENTS_METADATA_FETCH_SUCCESS", experiments: null };
         obj4[1] = callback;
         obj.dispatch(obj4);
@@ -123,7 +123,7 @@ function _fetchUserExperimentAssignments() {
           } else {
             if (1 === tmp7) {
               c4 = 0;
-              let obj5 = lib(706);
+              let obj5 = lib(573);
               obj5 = { type: "APEX_EXPERIMENTS_FETCH_FAILURE", unitId: null };
               obj5[1] = callback;
               obj5.dispatch(obj5);
@@ -134,7 +134,7 @@ function _fetchUserExperimentAssignments() {
               lib = arg1;
               if (null != lib) {
                 if (null != lib.body) {
-                  obj = lib(706);
+                  obj = lib(573);
                   const obj6 = { type: "APEX_EXPERIMENTS_FETCH_SUCCESS", unitId: null, experiments: null };
                   obj6[1] = callback;
                   obj6[2] = lib.body;
@@ -142,7 +142,7 @@ function _fetchUserExperimentAssignments() {
                 }
                 c4 = 0;
               }
-              obj2 = lib(706);
+              obj2 = lib(573);
               obj7 = { type: "APEX_EXPERIMENTS_FETCH_FAILURE", unitId: null };
               obj7[1] = callback;
               obj2.dispatch(obj7);

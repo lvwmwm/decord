@@ -1,19 +1,19 @@
-// Module ID: 7171
-// Function ID: 7172
+// Module ID: 7231
+// Function ID: 7232
 // Name: useSKUPrice
-// Dependencies: [19, 1995, 1921, 7172, 673, 1923, 12, 7173, 1235, 1399, 586, 7166, 7174, 4139, 7181, 2]
+// Dependencies: [19, 2025, 1371, 7232, 1074, 1373, 12, 7233, 1116, 1384, 504, 7226, 7234, 4218, 7241, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 7171 (useSKUPrice)
+// Module 7231 (useSKUPrice)
 import applyDefault from "apply" /* 12 */;
-import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 7173 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
+import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 7233 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7234 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "resetStoreState" /* 7172 */;
-import ME from "ME" /* 673 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+import closure_4 from "_getSystemLocale" /* 2025 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import closure_6 from "resetStoreState" /* 7232 */;
+import ME from "ME" /* 1074 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 function useSKUPrice(sku) {
@@ -85,7 +85,7 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: -766651663, storeHasPrice: 1359167573 };
+    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: 307090161, storeHasPrice: 1359167559 };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;
@@ -275,15 +275,15 @@ export const isSlayerSkuAvailableOnThisPlatform = function isSlayerSkuAvailableO
         num = 0;
       }
       if (obj.isIOS()) {
-        let tmpResult = tmp(1399);
+        let tmpResult = tmp(1384);
         let hasFlagResult = tmpResult.hasFlag(num, constants2.AVAILABLE_ON_IOS);
       } else {
-        tmpResult = tmp(1235);
+        tmpResult = tmp(1116);
         const isAndroidResult = tmpResult.isAndroid();
         hasFlagResult = !isAndroidResult;
         if (isAndroidResult) {
-          hasFlagResult = tmp(1399).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
-          const tmpResult1 = tmp(1399);
+          hasFlagResult = tmp(1384).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
+          const tmpResult1 = tmp(1384);
         }
       }
       return hasFlagResult;
@@ -301,14 +301,14 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   const _require = tmp2;
   let stateFromStores;
   const items = [closure_4];
-  stateFromStores = _require(586).useStateFromStores(items, () => locale.locale);
+  stateFromStores = _require(504).useStateFromStores(items, () => locale.locale);
   const items1 = [tmp2, stateFromStores];
   return React.useMemo(() => closure_1_14(closure_0, stateFromStores), items1);
 };
 export const useFormatSKUPrice = function useFormatSKUPrice(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  const stateFromStores = _require(586).useStateFromStores(items, () => locale.locale);
+  const stateFromStores = _require(504).useStateFromStores(items, () => locale.locale);
   const items1 = [arg0, stateFromStores];
   return React.useMemo(() => closure_1_14(closure_0, stateFromStores), items1);
 };
@@ -381,7 +381,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: -766651663, storeHasPrice: 1359167573 };
+    obj = { userPrice: "r", pricesForPurchaseType: "w", purchaseType: 307090161, storeHasPrice: 1359167559 };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;

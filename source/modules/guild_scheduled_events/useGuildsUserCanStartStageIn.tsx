@@ -1,13 +1,13 @@
-// Module ID: 9641
-// Function ID: 9642
+// Module ID: 9712
+// Function ID: 9713
 // Name: useChannelsUserCanStartStageIn
-// Dependencies: [1981, 4120, 1395, 586, 2]
+// Dependencies: [2012, 4199, 1965, 504, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 9641 (useChannelsUserCanStartStageIn)
-import closure_2 from "comparator" /* 1981 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
+// Module 9712 (useChannelsUserCanStartStageIn)
+import closure_2 from "comparator" /* 2012 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 2012 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
@@ -22,7 +22,7 @@ export const useChannelsUserCanStartStageIn = function useChannelsUserCanStartSt
   }
   const items = [closure_2, closure_4];
   const items1 = [id];
-  return id(586).useStateFromStoresArray(items, () => closure_1_2.getChannels(id)[closure_1_3].reduce((arr, channel) => {
+  return id(504).useStateFromStoresArray(items, () => closure_1_2.getChannels(id)[closure_1_3].reduce((arr, channel) => {
     channel = channel.channel;
     if (channel.isGuildStageVoice()) {
       const channel2 = channel.channel;

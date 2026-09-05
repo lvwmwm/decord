@@ -1,11 +1,11 @@
-// Module ID: 17427
-// Function ID: 17428
+// Module ID: 17507
+// Function ID: 17508
 // Name: isEligibleForSafetyFlowsExperiment
-// Dependencies: [1469, 2]
+// Dependencies: [1434, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 17427 (isEligibleForSafetyFlowsExperiment)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
+// Module 17507 (isEligibleForSafetyFlowsExperiment)
+import getUnitIdDefault from "getUnitId" /* 1434 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let closure_0 = tmp2;

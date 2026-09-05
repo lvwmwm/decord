@@ -1,9 +1,9 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16471
+// Function ID: 16472
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16395 (metadata)
+// Module 16471 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/icymi/bg-fade-3x.png.js");

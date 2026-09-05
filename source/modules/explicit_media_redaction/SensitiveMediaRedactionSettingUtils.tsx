@@ -1,13 +1,13 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7300
+// Function ID: 7301
 // Name: getShouldObscureForSetting
-// Dependencies: [1305, 12, 2]
+// Dependencies: [1187, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 7238 (getShouldObscureForSetting)
+// Module 7300 (getShouldObscureForSetting)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
-import create from "create" /* 1305 */;
+import create from "create" /* 1187 */;
 
 const result = set.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 17026
-// Function ID: 17027
+// Module ID: 17104
+// Function ID: 17105
 // Name: areStableParticipantsEqual
-// Dependencies: [4497, 1215, 4532, 1921, 4502, 640, 586, 4680, 8148, 9551, 2]
+// Dependencies: [4576, 502, 1908, 1371, 4581, 558, 504, 4712, 8217, 9622, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17026 (areStableParticipantsEqual)
-import shallowEqualDefault from "shallowEqual" /* 640 */;
-import closure_3 from "getParticipants" /* 4497 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+// Module 17104 (areStableParticipantsEqual)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import closure_3 from "getParticipants" /* 4576 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
 
 const require = arg1;
 function areStableParticipantsEqual(arg0, arg1) {
@@ -32,7 +32,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
   dependencyMap = arg2;
   const items = [closure_3, closure_6, closure_4, closure_5];
   const items1 = [arg0, arg1, arg2];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null != callback) {
       const participant = closure_1_3.getParticipant(callback2, tmp);
       if (null == participant) {
@@ -43,14 +43,14 @@ export default function useStableParticipant(arg0, arg1, arg2) {
           obj[1] = tmp;
           obj[2] = user;
           const id = closure_1_4.getId();
-          obj[5] = callback(4680).getName(dependencyMap, tmp3, user);
-          const obj5 = callback(4680);
-          obj[6] = callback(8148).getAvatarDecoration(user, dependencyMap);
+          obj[5] = callback(4712).getName(dependencyMap, tmp3, user);
+          const obj5 = callback(4712);
+          obj[6] = callback(8217).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(9551)(participant);
+        const tmp15 = callback2(9622)(participant);
         const type = participant.type;
         if (closure_1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

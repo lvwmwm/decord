@@ -1,24 +1,24 @@
-// Module ID: 11084
-// Function ID: 11085
+// Module ID: 11152
+// Function ID: 11153
 // Name: DisplayName
-// Dependencies: [19, 17, 8114, 7148, 673, 7875, 8125, 21, 4481, 709, 10830, 10831, 9367, 5084, 11085, 4477, 11087, 7662, 4336, 11119, 1233, 11121, 8115, 11122, 7320, 1901, 4194, 8173, 11124, 11125, 11129, 5407, 695, 7661, 1234, 11130, 11131, 11132, 1492, 8096, 9113, 4325, 2]
+// Dependencies: [19, 17, 8183, 7208, 1074, 7944, 8194, 21, 4560, 576, 10899, 10900, 9438, 5123, 11153, 4556, 11155, 7729, 4418, 11187, 1114, 11189, 8184, 11190, 7382, 1925, 4259, 8242, 11192, 11193, 11197, 5447, 1242, 7728, 1115, 11198, 11199, 11200, 1477, 8165, 9184, 4404, 2]
 // Exports: default
 
-// Module 11084 (DisplayName)
-import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import guildHasTag from "guildHasTag" /* 8096 */;
-import memoResult1Default from "memoResult1" /* 9113 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10830 */;
+// Module 11152 (DisplayName)
+import ThemesDefault from "Themes" /* 576 */;
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import guildHasTag from "guildHasTag" /* 8165 */;
+import memoResult1Default from "memoResult1" /* 9184 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10899 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
-import ME from "ME" /* 673 */;
-import { GuildTagBadgeSize } from "items" /* 7875 */;
-import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8125 */;
+import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
+import ME from "ME" /* 1074 */;
+import { GuildTagBadgeSize } from "items" /* 7944 */;
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8194 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class DisplayName {

@@ -1,13 +1,13 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9672
+// Function ID: 9673
 // Name: VIEW_CHANNEL
-// Dependencies: [673, 503, 1395, 2]
+// Dependencies: [1074, 1086, 1965, 2]
 
-// Module 9601 (VIEW_CHANNEL)
+// Module 9672 (VIEW_CHANNEL)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import Permissions2 from "Permissions" /* 1395 */;
-import importAllResult from "fromString" /* 503 */;
+import ME from "ME" /* 1074 */;
+import Permissions2 from "Permissions" /* 1965 */;
+import importAllResult from "fromString" /* 1086 */;
 
 const Permissions = ME.Permissions;
 const VIEW_CHANNEL = Permissions.VIEW_CHANNEL;

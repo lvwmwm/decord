@@ -1,10 +1,10 @@
-// Module ID: 17629
-// Function ID: 17630
+// Module ID: 17709
+// Function ID: 17710
 // Name: useFetchHighlightedCreatorGuildDetails
-// Dependencies: [5, 32, 19, 7196, 2]
+// Dependencies: [5, 32, 19, 7256, 2]
 // Exports: default
 
-// Module 17629 (useFetchHighlightedCreatorGuildDetails)
+// Module 17709 (useFetchHighlightedCreatorGuildDetails)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

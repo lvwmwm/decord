@@ -1,11 +1,11 @@
-// Module ID: 715
-// Function ID: 716
+// Module ID: 582
+// Function ID: 583
 // Name: _private
-// Dependencies: [710, 2]
+// Dependencies: [577, 2]
 
-// Module 715 (_private)
+// Module 582 (_private)
 import set from "set" /* 2 */;
-import items from "items" /* 710 */;
+import items from "items" /* 577 */;
 
 const Themes = items._private.Themes;
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/shadows/generated/shared/generated-definitions.tsx");

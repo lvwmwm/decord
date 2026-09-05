@@ -1,10 +1,10 @@
 // Module ID: 10136
 // Function ID: 10137
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10136 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "d51dcd36c49102cc28f65e2bcdf9f203", name: "ic_file_small_spreadsheet", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "07392a850e043822a5c8062588fbfbb4", name: "WaveformIcon", type: "png" });

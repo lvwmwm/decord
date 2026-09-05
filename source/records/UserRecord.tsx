@@ -1,17 +1,17 @@
-// Module ID: 1934
-// Function ID: 1935
+// Module ID: 1385
+// Function ID: 1386
 // Name: createdAt
-// Dependencies: [1935, 673, 1923, 1936, 1937, 1941, 1942, 1927, 1943, 1944, 503, 11, 1431, 1399, 1945, 1929, 1897, 1946, 2]
+// Dependencies: [1386, 1074, 1373, 1387, 1388, 1392, 1393, 1377, 1394, 1395, 1086, 11, 1396, 1384, 1885, 1379, 1881, 1886, 2]
 
-// Module 1934 (createdAt)
-import hasFlag from "hasFlag" /* 1399 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1897 */;
-import toJSDefault from "toJS" /* 1935 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import ME from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+// Module 1385 (createdAt)
+import hasFlag from "hasFlag" /* 1384 */;
+import toJSDefault from "toJS" /* 1386 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1881 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1885 */;
+import ME from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 toJSDefault;
@@ -481,7 +481,7 @@ prototype["isOnReverseTrial"] = function isOnReverseTrial() {
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1929) /* create */.PremiumSource.REVERSE_TRIAL;
+    isPremiumResult = premiumSource === require(1379) /* create */.PremiumSource.REVERSE_TRIAL;
   }
   return isPremiumResult;
 };
@@ -493,7 +493,7 @@ prototype["isPremiumWithPremiumGroup"] = function isPremiumWithPremiumGroup() {
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1929) /* create */.PremiumSource.SUBSCRIPTION_GROUP;
+    isPremiumResult = premiumSource === require(1379) /* create */.PremiumSource.SUBSCRIPTION_GROUP;
   }
   return isPremiumResult;
 };
@@ -505,7 +505,7 @@ prototype["hasPaidTier2Subscription"] = function hasPaidTier2Subscription() {
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    isPremiumResult = prop === require(1929) /* create */.PremiumSubscriptionType.TIER_2;
+    isPremiumResult = prop === require(1379) /* create */.PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };
@@ -518,14 +518,14 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    let tmp6 = prop === tmp(1929).PremiumSubscriptionType.NONE_UNSPECIFIED;
+    let tmp6 = prop === tmp(1379).PremiumSubscriptionType.NONE_UNSPECIFIED;
     if (!tmp6) {
       const premiumState2 = self.premiumState;
       let prop1;
       if (premiumState2 != null) {
         prop1 = premiumState2.premiumSubscriptionType;
       }
-      tmp6 = prop1 === tmp(1929).PremiumSubscriptionType.BOOST_ONLY;
+      tmp6 = prop1 === tmp(1379).PremiumSubscriptionType.BOOST_ONLY;
     }
     isPremiumResult = tmp6;
   }
@@ -535,7 +535,7 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState3 != null) {
       premiumSource = premiumState3.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1929).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1379).PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
@@ -548,10 +548,10 @@ prototype["isFractionalPremiumWithNoStandardSub"] = function isFractionalPremium
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1929).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1379).PremiumSource.FRACTIONAL_NITRO;
   }
   if (isPremiumResult) {
-    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1929).PremiumSubscriptionType.TIER_2;
+    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1379).PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };
@@ -563,7 +563,7 @@ prototype["isFractionalPremium"] = function isFractionalPremium() {
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1929) /* create */.PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === require(1379) /* create */.PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
@@ -614,14 +614,14 @@ prototype["hasUniqueUsername"] = function hasUniqueUsername() {
 prototype["isPremiumGroupMember"] = function isPremiumGroupMember() {
   let result = this.isPremiumWithPremiumGroup();
   if (result) {
-    result = this.premiumGroupRole === require(1929) /* create */.PremiumSubscriptionGroupRole.MEMBER;
+    result = this.premiumGroupRole === require(1379) /* create */.PremiumSubscriptionGroupRole.MEMBER;
   }
   return result;
 };
 prototype["isPremiumGroupPrimary"] = function isPremiumGroupPrimary() {
   let result = this.isPremiumWithPremiumGroup();
   if (result) {
-    result = this.premiumGroupRole === require(1929) /* create */.PremiumSubscriptionGroupRole.PRIMARY;
+    result = this.premiumGroupRole === require(1379) /* create */.PremiumSubscriptionGroupRole.PRIMARY;
   }
   return result;
 };
@@ -650,7 +650,7 @@ Object.defineProperty(prototype, "nameplate", {
     if (collectibles != null) {
       nameplate = collectibles.nameplate;
     }
-    return require(1946) /* getNameplateData */.getNameplateData(nameplate);
+    return require(1886) /* getNameplateData */.getNameplateData(nameplate);
   },
   set: undefined
 });
@@ -662,7 +662,7 @@ Object.defineProperty(prototype, "premiumGroupRole", {
       prop = premiumState.premiumSubscriptionGroupRole;
     }
     if (prop == null) {
-      prop = require(1929) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED;
+      prop = require(1379) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED;
     }
     return prop;
   },

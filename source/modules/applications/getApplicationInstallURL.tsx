@@ -1,12 +1,12 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12132
+// Function ID: 12133
 // Name: getActivityLaunchURL
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 12064 (getActivityLaunchURL)
+// Module 12132 (getActivityLaunchURL)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const Routes = ME.Routes;
 let result = set.fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");

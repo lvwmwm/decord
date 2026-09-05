@@ -1,12 +1,12 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7842
+// Function ID: 7843
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 673, 5088, 2]
+// Dependencies: [5, 1074, 5127, 2]
 // Exports: default
 
-// Module 7774 (_stageAttachmentFiles)
+// Module 7842 (_stageAttachmentFiles)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { AbortCodes } from "ME" /* 673 */;
+import { AbortCodes } from "ME" /* 1074 */;
 
 const require = arg1;
 function _stageAttachmentFiles() {

@@ -1,14 +1,14 @@
-// Module ID: 5512
-// Function ID: 5513
+// Module ID: 5557
+// Function ID: 5558
 // Name: _setEnabled
-// Dependencies: [5, 5513, 4103, 1234, 5515, 2]
+// Dependencies: [5, 5558, 4182, 1115, 5560, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5512 (_setEnabled)
-import set2 from "set" /* 1234 */;
-import setDefault from "set" /* 4103 */;
+// Module 5557 (_setEnabled)
+import set2 from "set" /* 1115 */;
+import setDefault from "set" /* 4182 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import set from "set" /* 1234 */;
+import set from "set" /* 1115 */;
 
 require = arg1;
 function _setEnabled() {

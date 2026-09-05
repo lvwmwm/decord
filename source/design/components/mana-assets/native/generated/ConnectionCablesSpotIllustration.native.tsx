@@ -1,14 +1,14 @@
-// Module ID: 5820
-// Function ID: 5821
+// Module ID: 5871
+// Function ID: 5872
 // Name: ConnectionCablesSpotIllustration
-// Dependencies: [21, 5542, 5821, 2]
+// Dependencies: [21, 5587, 5872, 2]
 // Exports: ConnectionCablesSpotIllustration
 
-// Module 5820 (ConnectionCablesSpotIllustration)
+// Module 5871 (ConnectionCablesSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5821 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5872 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");

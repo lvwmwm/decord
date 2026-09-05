@@ -1,9 +1,9 @@
-// Module ID: 5558
-// Function ID: 5559
+// Module ID: 5603
+// Function ID: 5604
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: [2]
 
-// Module 5558 (TABLE_ROW_HEIGHT)
+// Module 5603 (TABLE_ROW_HEIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/components/TableRow/native/TableRowConstants.tsx");

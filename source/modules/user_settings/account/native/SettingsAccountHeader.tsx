@@ -1,22 +1,22 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14686
+// Function ID: 14687
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4130, 1921, 673, 8329, 21, 4481, 709, 14612, 1233, 7320, 586, 6938, 5576, 5560, 4936, 2]
+// Dependencies: [19, 17, 4209, 1371, 1074, 8399, 21, 4560, 576, 14687, 1114, 7382, 504, 6998, 5621, 5605, 4975, 2]
 
-// Module 14611 (RestrictedAccountRedirect)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import handleOpenEmailVerification from "handleOpenEmailVerification" /* 6938 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14612 */;
+// Module 14686 (RestrictedAccountRedirect)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 6998 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14687 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { AnalyticsSections } from "ME" /* 673 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8329 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { AnalyticsSections } from "ME" /* 1074 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8399 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function RestrictedAccountRedirect() {
@@ -65,8 +65,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4936).Button, obj1);
-      tmp14 = callback(tmp2(5560).TableRow, obj);
+      obj[4] = callback(tmp2(4975).Button, obj1);
+      tmp14 = callback(tmp2(5605).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

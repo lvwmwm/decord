@@ -1,15 +1,15 @@
-// Module ID: 16436
-// Function ID: 16437
+// Module ID: 16512
+// Function ID: 16513
 // Name: SeparatorDot
-// Dependencies: [19, 17, 21, 4481, 709, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 2]
 // Exports: default
 
-// Module 16436 (SeparatorDot)
+// Module 16512 (SeparatorDot)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 noopAll;
 createCacheKey = { separatorDot: null };

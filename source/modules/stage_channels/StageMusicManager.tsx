@@ -1,20 +1,20 @@
-// Module ID: 9830
-// Function ID: 9831
+// Module ID: 9901
+// Function ID: 9902
 // Name: checkVoiceStates
-// Dependencies: [1386, 4532, 1980, 4500, 5379, 1391, 9828, 9831, 586, 5391, 5385, 7058, 2]
+// Dependencies: [1957, 1908, 2011, 4579, 5418, 1962, 9899, 9902, 504, 5431, 5425, 7118, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 9830 (checkVoiceStates)
-import sortKey from "sortKey" /* 5385 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4532 */;
-import closure_4 from "handleConnectionOpen" /* 1980 */;
-import closure_5 from "updateVoiceState" /* 4500 */;
-import closure_6 from "getActiveStageChannelIds" /* 5379 */;
-import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_8 from "initialize" /* 9828 */;
-import createSoundForPack from "createSoundForPack" /* 9831 */;
+// Module 9901 (checkVoiceStates)
+import sortKey from "sortKey" /* 5425 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 1908 */;
+import closure_4 from "handleConnectionOpen" /* 2011 */;
+import closure_5 from "updateVoiceState" /* 4579 */;
+import closure_6 from "getActiveStageChannelIds" /* 5418 */;
+import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_8 from "initialize" /* 9899 */;
+import createSoundForPack from "createSoundForPack" /* 9902 */;
 
 require = arg1;
 function checkVoiceStates() {
@@ -141,10 +141,10 @@ export default stageMusicManager;
 export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(channelId) {
   const _require = channelId;
   const items = [closure_4];
-  let stateFromStores = _require(586).useStateFromStores(items, () => closure_1_4.getVoiceChannelId() === closure_0);
-  const obj = _require(586);
-  const stageParticipants = _require(5391).useStageParticipants(channelId, _require(5385).StageChannelParticipantNamedIndex.SPEAKER);
-  const obj2 = _require(5391);
+  let stateFromStores = _require(504).useStateFromStores(items, () => closure_1_4.getVoiceChannelId() === closure_0);
+  const obj = _require(504);
+  const stageParticipants = _require(5431).useStageParticipants(channelId, _require(5425).StageChannelParticipantNamedIndex.SPEAKER);
+  const obj2 = _require(5431);
   const tmp2 = null != stageParticipants.find((voiceState) => {
     voiceState = voiceState.voiceState;
     return !voiceState.isVoiceMuted();

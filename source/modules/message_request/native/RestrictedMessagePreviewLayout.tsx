@@ -1,11 +1,11 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16899
+// Function ID: 16900
 // Name: RESTRICTED_AVATAR_SIZE
-// Dependencies: [1296, 2]
+// Dependencies: [1178, 2]
 
-// Module 16821 (RESTRICTED_AVATAR_SIZE)
+// Module 16899 (RESTRICTED_AVATAR_SIZE)
 import set from "set" /* 2 */;
-import Button from "Button" /* 1296 */;
+import Button from "Button" /* 1178 */;
 
 const tmp2 = Button.AVATAR_SIZE_MAP[Button.AvatarSizes.NORMAL];
 const sum = tmp2 + 18;

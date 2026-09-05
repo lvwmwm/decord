@@ -1,16 +1,16 @@
-// Module ID: 5372
-// Function ID: 5373
-// Dependencies: [4498, 1386, 4532, 673, 5373, 706, 1219, 9377, 2]
+// Module ID: 5411
+// Function ID: 5412
+// Dependencies: [4577, 1957, 1908, 1074, 5412, 573, 1100, 9448, 2]
 
-// Module 5372
-import dispatcherDefault from "dispatcher" /* 706 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import getChannelSelectionOrigin from "getChannelSelectionOrigin" /* 5373 */;
-import disconnectRemoteAll from "disconnectRemote" /* 9377 */;
-import closure_4 from "set" /* 4498 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
-import ME from "ME" /* 673 */;
+// Module 5411
+import dispatcherDefault from "dispatcher" /* 573 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import getChannelSelectionOrigin from "getChannelSelectionOrigin" /* 5412 */;
+import disconnectRemoteAll from "disconnectRemote" /* 9448 */;
+import closure_4 from "set" /* 4577 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "_detectH265HardwareDecode" /* 1908 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ ME: error, PopoutWindowKeys, Routes: closure_8 } = ME);

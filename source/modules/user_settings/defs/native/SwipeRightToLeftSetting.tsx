@@ -1,16 +1,16 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15473
+// Function ID: 15474
 // Name: route
-// Dependencies: [7906, 673, 4166, 1305, 1233, 11400, 15398, 2]
+// Dependencies: [7975, 1074, 1935, 1187, 1114, 11468, 15474, 2]
 
-// Module 15397 (route)
+// Module 15473 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import create from "create" /* 1305 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import create from "create" /* 1187 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -22,13 +22,13 @@ obj = {
     const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;
     const setting = SwipeRightToLeftModeSetting.useSetting();
     if (setting === create.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
-      const intl2 = tmp(1233).intl;
-      let stringResult = intl2.string(tmp(1233).t["3tYNDS"]);
+      const intl2 = tmp(1114).intl;
+      let stringResult = intl2.string(tmp(1114).t["3tYNDS"]);
     } else {
       stringResult = null;
-      if (setting === tmp(1305).SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
-        const intl = tmp(1233).intl;
-        stringResult = intl.string(tmp(1233).t["6eXLcJ"]);
+      if (setting === tmp(1187).SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
+        const intl = tmp(1114).intl;
+        stringResult = intl.string(tmp(1114).t["6eXLcJ"]);
       }
     }
     return stringResult;
@@ -38,7 +38,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(15398) /* UserSettingsSwipeRightToLeft */.default;
+    return require(15474) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);

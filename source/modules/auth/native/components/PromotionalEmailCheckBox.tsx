@@ -1,15 +1,15 @@
-// Module ID: 15909
-// Function ID: 15910
+// Module ID: 15985
+// Function ID: 15986
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6535, 21, 4481, 4206, 1233, 5572, 4477, 2]
+// Dependencies: [19, 17, 6594, 21, 4560, 4277, 1114, 5617, 4556, 2]
 // Exports: default
 
-// Module 15909 (PromotionalEmailCheckBox)
+// Module 15985 (PromotionalEmailCheckBox)
 import noopAll from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import setPromoEmailConsentState from "setPromoEmailConsentState" /* 6535 */;
+import setPromoEmailConsentState from "setPromoEmailConsentState" /* 6594 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -24,7 +24,7 @@ export default function PromotionalEmailCheckBox(style) {
   const tmp = callback4();
   const tmp3 = callback((checked) => checked.checked);
   _require = tmp3;
-  let obj = _require(4206);
+  let obj = _require(4277);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: tmp3 });
   let tmp9 = null;
   if (tmp2) {
@@ -32,8 +32,8 @@ export default function PromotionalEmailCheckBox(style) {
     obj[0] = style.style;
     obj = { accessibilityRole: null, accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
     obj[0] = tmp7;
-    const intl = tmp4(1233).intl;
-    obj[1] = intl.string(tmp4(1233).t.ylFCLt);
+    const intl = tmp4(1114).intl;
+    obj[1] = intl.string(tmp4(1114).t.ylFCLt);
     obj[2] = tmp8;
     obj[3] = function onPress() {
       return closure_1_5(!closure_0);
@@ -41,12 +41,12 @@ export default function PromotionalEmailCheckBox(style) {
     obj[4] = tmp.checkboxRow;
     obj1 = { checked: null };
     obj1[0] = tmp3;
-    const items = [callback2(tmp4(5572).FormCheckbox, obj1), ];
+    const items = [callback2(tmp4(5617).FormCheckbox, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj2[2] = tmp.checkboxLabel;
-    const intl2 = tmp4(1233).intl;
-    obj2[3] = intl2.string(tmp4(1233).t.ylFCLt);
-    items[1] = callback2(tmp4(4477).Text, obj2);
+    const intl2 = tmp4(1114).intl;
+    obj2[3] = intl2.string(tmp4(1114).t.ylFCLt);
+    items[1] = callback2(tmp4(4556).Text, obj2);
     obj[5] = items;
     obj[1] = callback3(closure_3, obj);
     tmp9 = callback2(closure_2, obj);

@@ -1,13 +1,13 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12131
+// Function ID: 12132
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 1499, 8028, 5584, 5636, 1233, 2]
+// Dependencies: [19, 21, 1484, 8097, 5629, 5681, 1114, 2]
 // Exports: default
 
-// Module 12063 (AppLauncherBackButton)
+// Module 12131 (AppLauncherBackButton)
 import noopAll from "noop" /* 19 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import IconButton from "IconButton" /* 8028 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1484 */;
+import IconButton from "IconButton" /* 8097 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -18,10 +18,10 @@ export default function AppLauncherBackButton(onPress) {
   let obj = createStandardNavigationFactories;
   const navigation = obj.useNavigation();
   const canGoBackResult = navigation.canGoBack();
-  obj = { size: "sm", variant: "secondary-overlay", icon: importDefault(canGoBackResult ? 5584 : 5636), onPress: onPress.onPress, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
-  const intl = tmp(1233).intl;
-  const t = tmp(1233).t;
+  obj = { size: "sm", variant: "secondary-overlay", icon: importDefault(canGoBackResult ? 5629 : 5681), onPress: onPress.onPress, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
+  const intl = tmp(1114).intl;
+  const t = tmp(1114).t;
   obj[4] = intl.string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq);
-  return jsx(IconButton.IconButton, { size: "sm", variant: "secondary-overlay", icon: importDefault(canGoBackResult ? 5584 : 5636), onPress: onPress.onPress, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 });
+  return jsx(IconButton.IconButton, { size: "sm", variant: "secondary-overlay", icon: importDefault(canGoBackResult ? 5629 : 5681), onPress: onPress.onPress, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 });
 };
 export const BACK_BUTTON_SIZE = 32;

@@ -1,25 +1,25 @@
-// Module ID: 4538
-// Function ID: 4539
+// Module ID: 1914
+// Function ID: 1915
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4504, 1215, 4539, 673, 4540, 4103, 4541, 38, 4542, 4547, 1399, 4550, 4552, 4553, 586, 4532, 706, 2]
+// Dependencies: [5, 1915, 502, 5132, 1074, 4607, 4182, 13990, 38, 13674, 4612, 1384, 13991, 13993, 13994, 504, 1908, 573, 2]
 
-// Module 4538 (_migrateDefaultStorage)
+// Module 1914 (_migrateDefaultStorage)
 import _modDef38 from "module_38" /* 38 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import _detectH265HardwareDecode from "_detectH265HardwareDecode" /* 4532 */;
-import isClipsEnabled from "isClipsEnabled" /* 4542 */;
-import isStreamKey from "isStreamKey" /* 4547 */;
-import getClipPOVWindow from "getClipPOVWindow" /* 4550 */;
-import apexExperimentDefault from "apexExperiment" /* 4552 */;
-import apexExperiment from "apexExperiment" /* 4553 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import _detectH265HardwareDecode from "_detectH265HardwareDecode" /* 1908 */;
+import isStreamKey from "isStreamKey" /* 4612 */;
+import isClipsEnabled from "isClipsEnabled" /* 13674 */;
+import getClipPOVWindow from "getClipPOVWindow" /* 13991 */;
+import apexExperimentDefault from "apexExperiment" /* 13993 */;
+import apexExperiment from "apexExperiment" /* 13994 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4504 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import result from "result" /* 4539 */;
-import ME from "ME" /* 673 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4540 */;
+import closure_4 from "initialize" /* 1915 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import result from "result" /* 5132 */;
+import ME from "ME" /* 1074 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4607 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -74,7 +74,7 @@ function _migrateDefaultStorage() {
         } else if (1 === tmp7) {
           c3 = 0;
           logger.error("Failed to resolve videos path for default storage migration", dependencyMap);
-          const app = callback2(4103).app;
+          const app = callback2(4182).app;
           c4 = 2;
           c5 = 1;
           const obj2 = { value: null, done: false };
@@ -99,7 +99,7 @@ function _migrateDefaultStorage() {
             return obj3;
           } else {
             callback2 = arg1;
-            obj = callback(4541);
+            obj = callback(13990);
             callback = obj.pathJoin(callback2, closure_17);
             c3 = 0;
           }
@@ -159,7 +159,7 @@ function recordPOVMatches(arg0, arg1) {
         if (null != clipAttachmentPOVWindow1) {
           let tmp19 = tmp13;
           let tmp20 = tmp15;
-          let tmp14Result = tmp14(4550);
+          let tmp14Result = tmp14(13991);
           let tmp21 = clipAttachmentPOVWindow;
           let tmp22 = clipAttachmentPOVWindow1;
           if (null != tmp14Result.getClipPOVOverlapMilliseconds(tmp8, tmp18)) {
@@ -263,7 +263,7 @@ function trackClipMessage(message) {
   }
   obj = apexExperimentDefault;
 }
-({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_6, ClipSaveTypes: error, ClipsUserEducationType: closure_8, ClipsLogger: c9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: unpackModuleId, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, ClipsViewerConnectivitySettings, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
+({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_6, ClipSaveTypes: error, ClipsUserEducationType: closure_8, ClipsLogger: c9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: unpackModuleId, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = ME);
 let c16 = "default";
 let c17 = "Discord Clips";
@@ -287,7 +287,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_36 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: obj, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, viewerClipsEnabled: true, viewerConnectivity: ClipsViewerConnectivitySettings.ALL, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "PX_16", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: obj, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "PX_16", showPovClipsInGallery: true };
 obj = { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT };
 let closure_38 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
@@ -392,16 +392,6 @@ prototype["isVoiceRecordingAllowedForUser"] = function isVoiceRecordingAllowedFo
   let flag;
   if (dependencyMap2[id] != null) {
     flag = tmp.allowVoiceRecording;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["isViewerClippingAllowedForUser"] = function isViewerClippingAllowedForUser(arg0) {
-  let flag;
-  if (dependencyMap2[arg0] != null) {
-    flag = tmp.allowAnyViewerClips;
   }
   if (flag == null) {
     flag = false;
@@ -899,11 +889,9 @@ obj = {
     }
   },
   RTC_CONNECTION_FLAGS: function handleRTCConnectionFlagsUpdate(flags) {
-    obj = { clipsEnabled: hasFlag.hasFlag(flags.flags, constants5.CLIPS_ENABLED), allowVoiceRecording: null, allowAnyViewerClips: null };
+    obj = { clipsEnabled: hasFlag.hasFlag(flags.flags, constants5.CLIPS_ENABLED), allowVoiceRecording: null };
     const obj2 = hasFlag;
     obj[1] = hasFlag.hasFlag(flags.flags, constants5.ALLOW_VOICE_RECORDING);
-    const obj3 = hasFlag;
-    obj[2] = hasFlag.hasFlag(flags.flags, constants5.ALLOW_ANY_VIEWER_CLIPS);
     closure_28[flags.userId] = obj;
   },
   CLIPS_SHOW_CALL_WARNING: function handleShowCallWarning(channelId) {

@@ -1,13 +1,13 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8082
+// Function ID: 8083
 // Name: _sendGiftMessage
-// Dependencies: [5, 1386, 4474, 4494, 38, 4760, 7390, 7615, 2]
+// Dependencies: [5, 1957, 4553, 4573, 38, 4799, 7456, 7682, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8013 (_sendGiftMessage)
+// Module 8082 (_sendGiftMessage)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 
 const require = arg1;
 function _sendGiftMessage() {
@@ -45,13 +45,13 @@ function _sendGiftMessage() {
           return channel;
         }
       });
-      dependencyMap = callback(4760).getGiftCodeURL(callback);
-      const obj9 = lib(7390);
+      dependencyMap = callback(4799).getGiftCodeURL(callback);
+      const obj9 = lib(7456);
       const id = lib.id;
-      const obj8 = callback(4760);
+      const obj8 = callback(4799);
       const obj4 = { isGiftLinkSentOnBehalfOfUser: true, location: null };
       obj4[1] = constants.GIFTING;
-      return obj9.sendMessage(id, lib(7615).parse(lib, dependencyMap), undefined, obj4);
+      return obj9.sendMessage(id, lib(7682).parse(lib, dependencyMap), undefined, obj4);
     })();
   });
   closure_6 = tmp;

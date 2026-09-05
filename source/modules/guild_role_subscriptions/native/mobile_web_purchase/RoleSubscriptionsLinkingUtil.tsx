@@ -1,12 +1,12 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7315
+// Function ID: 7316
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 673, 1393, 7254, 2008, 3, 2]
+// Dependencies: [5, 1074, 1964, 7316, 1896, 3, 2]
 
-// Module 7253 (performRoleSubscriptionUpsellRedirect)
+// Module 7315 (performRoleSubscriptionUpsellRedirect)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
+import ME from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
 
 const require = arg1;
 function performRoleSubscriptionUpsellRedirect(guildId) {

@@ -1,9 +1,9 @@
-// Module ID: 4579
-// Function ID: 4580
+// Module ID: 4611
+// Function ID: 4612
 // Name: traceEvent
 // Dependencies: [2]
 
-// Module 4579 (traceEvent)
+// Module 4611 (traceEvent)
 import set2 from "set" /* 2 */;
 
 const result = set2.fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");

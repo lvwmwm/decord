@@ -1,16 +1,16 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8179
+// Function ID: 8180
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5513, 4130, 3, 1921, 2008, 8111, 8112, 4166, 8113, 4448, 8131, 2]
+// Dependencies: [5, 5558, 4209, 3, 1371, 1896, 8180, 8181, 1935, 8182, 4527, 8200, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8110 (showUserProfileActionSheet)
+// Module 8179 (showUserProfileActionSheet)
 import timestampDefault from "timestamp" /* 3 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
 
 require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
@@ -21,7 +21,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = closure_5.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = closure_5.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      const tmp8 = tmp2(2008)(8113, tmp3.paths);
+      const tmp8 = tmp2(1896)(8182, tmp3.paths);
       let obj = ACTION_SHEET_HEIGHT_HALFDefault;
       const _HermesInternal = HermesInternal;
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -36,7 +36,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       obj.openLazy(tmp8, combined, obj, str);
     }
   }
-  const tmp20 = asyncRequireImpl(8131, dependencyMap.paths);
+  const tmp20 = asyncRequireImpl(8200, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);

@@ -1,11 +1,11 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15228
+// Function ID: 15229
 // Name: AllChannelAccessOptions
-// Dependencies: [641, 702, 2]
+// Dependencies: [560, 1249, 2]
 
-// Module 15152 (AllChannelAccessOptions)
+// Module 15228 (AllChannelAccessOptions)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let obj = keys.create((arg0) => {
   closure_0 = arg0;

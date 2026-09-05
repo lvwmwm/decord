@@ -1,13 +1,13 @@
-// Module ID: 4466
-// Function ID: 4467
+// Module ID: 4545
+// Function ID: 4546
 // Name: readSnowflake
-// Dependencies: [32, 11, 1482, 4467, 2]
+// Dependencies: [32, 11, 1471, 4546, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
-// Module 4466 (readSnowflake)
+// Module 4545 (readSnowflake)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import parseDefault from "parse" /* 1482 */;
-import getFirstQueryStringValue from "getFirstQueryStringValue" /* 4467 */;
+import parseDefault from "parse" /* 1471 */;
+import getFirstQueryStringValue from "getFirstQueryStringValue" /* 4546 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -69,8 +69,8 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       obj[2] = tmp12;
       let tmp10Result;
       if (null != tmp12) {
-        tmp10Result = tmp10(tmp6(4467).getFirstQueryStringValue(parsed[message]));
-        const tmp6Result = tmp6(4467);
+        tmp10Result = tmp10(tmp6(4546).getFirstQueryStringValue(parsed[message]));
+        const tmp6Result = tmp6(4546);
       }
       obj[3] = tmp10Result;
       return generateInviteKeyFromExtraData(obj);
@@ -106,7 +106,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     obj[2] = tmp4;
     let tmp5;
     if (null != tmp4) {
-      const firstQueryStringValue2 = tmp12(4467).getFirstQueryStringValue(parsed[message]);
+      const firstQueryStringValue2 = tmp12(4546).getFirstQueryStringValue(parsed[message]);
       let tmp8;
       if (typeof firstQueryStringValue2 === "string") {
         tmp9Result = tmp9(11);
@@ -115,7 +115,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
         }
       }
       tmp5 = tmp8;
-      const tmp12Result = tmp12(4467);
+      const tmp12Result = tmp12(4546);
     }
     obj[3] = tmp5;
     return obj;

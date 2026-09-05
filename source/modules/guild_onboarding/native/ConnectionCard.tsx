@@ -1,14 +1,14 @@
-// Module ID: 7100
-// Function ID: 7101
+// Module ID: 7160
+// Function ID: 7161
 // Name: ConnectionCard
-// Dependencies: [19, 7041, 21, 7101, 7118, 2]
+// Dependencies: [19, 7101, 21, 7161, 7178, 2]
 // Exports: default
 
-// Module 7100 (ConnectionCard)
+// Module 7160 (ConnectionCard)
 import noopAll from "noop" /* 19 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7101 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7118 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 7041 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7161 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7178 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 7101 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

@@ -1,20 +1,20 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7389
+// Function ID: 7390
 // Name: useGetVisibleContent
-// Dependencies: [32, 19, 1339, 4302, 1376, 1378, 673, 682, 695, 1372, 7328, 1374, 586, 4323, 1371, 4301, 11, 2]
+// Dependencies: [32, 19, 1221, 4381, 1947, 1949, 1074, 1084, 1242, 1943, 7390, 1945, 504, 4402, 1942, 4380, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 7327 (useGetVisibleContent)
+// Module 7389 (useGetVisibleContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_6 from "handleConnectionOpen" /* 4302 */;
-import closure_7 from "set" /* 1376 */;
-import closure_8 from "withContent" /* 1378 */;
-import { removeCandidateContent } from "withContent" /* 1378 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
+import closure_5 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_6 from "handleConnectionOpen" /* 4381 */;
+import closure_7 from "set" /* 1947 */;
+import closure_8 from "withContent" /* 1949 */;
+import { removeCandidateContent } from "withContent" /* 1949 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 1084 */;
 
 const require = arg1;
 function useGetVisibleContent(contentType, stateFromStores, GUILD_HEADER_TOOLTIPS, latestVersion, newSnowflakeId) {
@@ -31,15 +31,15 @@ function useGetVisibleContent(contentType, stateFromStores, GUILD_HEADER_TOOLTIP
     }
     return hasItem;
   });
-  const tmp4 = callback(_require(7328).useOverlayLockState(), 2);
+  const tmp4 = callback(_require(7390).useOverlayLockState(), 2);
   const first = tmp4[0];
   closure_6 = tmp6;
   let result = null != contentType;
   if (result) {
-    let tmp2Result = tmp2(1374);
+    let tmp2Result = tmp2(1945);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(contentType, first, tmp6);
   }
-  tmp2Result = tmp2(586);
+  tmp2Result = tmp2(504);
   const items = [ref];
   stateFromStores = tmp2Result.useStateFromStores(items, () => {
     let hasUserHitDCCapResult = null != closure_0;
@@ -293,7 +293,7 @@ export const useGetVersionedDismissibleContent = function useGetVersionedDismiss
 export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurringDismissibleContent(prop, closure_12, groupName) {
   const _require = prop;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => {
+  const stateFromStores = _require(504).useStateFromStores(items, () => {
     let tmp2 = null;
     if (null !== closure_0) {
       const userContent = closure_1_5.settings.userContent;
@@ -312,10 +312,10 @@ export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurrin
     return tmp2;
   });
   ({ lastDismissedAtMs, numTimesDismissed } = stateFromStores);
-  let obj = _require(586);
+  let obj = _require(504);
   const tmp = _require;
   const items1 = [closure_6];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => guildId.getGuildId());
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => guildId.getGuildId());
   dependencyMap = null;
   let tmp5 = null;
   if (null != prop) {
@@ -325,7 +325,7 @@ export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurrin
     }
     dependencyMap = tmp10;
     tmp5 = tmp10;
-    tmpResult = tmp(4323);
+    tmpResult = tmp(4402);
   }
   const items2 = [useGetVisibleContent(tmp5, stateFromStores1, groupName), ];
   const items3 = [tmp5, groupName, stateFromStores1];
@@ -423,7 +423,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
   importDefault = stateFromStores;
   dependencyMap = GUILD_HEADER_TOOLTIPS;
   const items = [closure_5];
-  stateFromStores = _require(586).useStateFromStores(items, () => closure_1_5.getGuildDismissedContentState(closure_1));
+  stateFromStores = _require(504).useStateFromStores(items, () => closure_1_5.getGuildDismissedContentState(closure_1));
   let tmp4 = null;
   if (null != prop) {
     let tmp5 = null;
@@ -442,7 +442,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
   closure_3 = null;
   let tmp7 = null;
   if (null != prop) {
-    let result = _require(4323).disableNewUserDismissibleContent(prop);
+    let result = _require(4402).disableNewUserDismissibleContent(prop);
     if (closure_5.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp13 = null;
       if (!result) {
@@ -470,7 +470,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
         tmp7 = tmp11;
       }
     }
-    const tmpResult = _require(4323);
+    const tmpResult = _require(4402);
   }
   const items1 = [useGetVisibleContent(tmp7, stateFromStores, GUILD_HEADER_TOOLTIPS, undefined, newSnowflakeId), ];
   const items2 = [tmp7, GUILD_HEADER_TOOLTIPS, stateFromStores, newSnowflakeId];
@@ -568,7 +568,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
   const _require = id;
   closure_1 = GUILD_HEADER_TOOLTIPS;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_5.getGuildDismissedContentState(closure_0));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_1_5.getGuildDismissedContentState(closure_0));
   let tmp4 = null;
   if (null != prop) {
     let tmp5 = null;
@@ -587,7 +587,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
   dependencyMap = null;
   let tmp7 = null;
   if (null != prop) {
-    const tmp8 = !_require(4323).disableNewUserDismissibleContent(prop);
+    const tmp8 = !_require(4402).disableNewUserDismissibleContent(prop);
     let lastDismissedAtMs;
     if (tmp4 != null) {
       lastDismissedAtMs = tmp4.lastDismissedAtMs;
@@ -598,7 +598,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
     }
     dependencyMap = tmp15;
     tmp7 = tmp15;
-    const tmpResult = _require(4323);
+    const tmpResult = _require(4402);
   }
   const items1 = [useGetVisibleContent(tmp7, id, GUILD_HEADER_TOOLTIPS), ];
   const items2 = [tmp7, GUILD_HEADER_TOOLTIPS, id];
@@ -617,7 +617,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
 };
 export const useDangerouslyPeekDismissibleContents = function useDangerouslyPeekDismissibleContents(items1) {
   const items = [closure_5];
-  _require = _require(586).useStateFromStores(items, () => {
+  _require = _require(504).useStateFromStores(items, () => {
     const userContent = settings.settings.userContent;
     let dismissedContents;
     if (userContent != null) {

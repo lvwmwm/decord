@@ -1,9 +1,9 @@
-// Module ID: 680
-// Function ID: 681
+// Module ID: 1081
+// Function ID: 1082
 // Name: CONFERENCE_MODE_ENABLED
 // Dependencies: [2]
 
-// Module 680 (CONFERENCE_MODE_ENABLED)
+// Module 1081 (CONFERENCE_MODE_ENABLED)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/conference_mode/ConferenceModeConstants.tsx");

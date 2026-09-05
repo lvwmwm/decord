@@ -1,16 +1,16 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9271
+// Function ID: 9272
 // Name: CloseButton
-// Dependencies: [19, 9201, 673, 21, 7315, 6932, 9199, 1233, 9202, 9156, 9204, 9206, 9207, 9209, 9155, 9198, 6940, 2]
+// Dependencies: [19, 9272, 1074, 21, 7377, 6992, 9270, 1114, 9273, 9227, 9275, 9277, 9278, 9280, 9226, 9269, 7000, 2]
 // Exports: default
 
-// Module 9200 (CloseButton)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 6932 */;
-import HeaderActionButton from "HeaderActionButton" /* 7315 */;
+// Module 9271 (CloseButton)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import registerAssetDefault from "registerAsset" /* 6992 */;
+import HeaderActionButton from "HeaderActionButton" /* 7377 */;
 import closure_3 from "noop" /* 19 */;
-import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 9201 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 9272 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -36,12 +36,12 @@ const result = require("set").fileFinishedImporting("modules/user_settings/conne
 
 export default function CrunchyrollLinkModal(locationStack) {
   let twoWayLinkStyles;
-  let obj = twoWayLinkStyles(9155);
+  let obj = twoWayLinkStyles(9226);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = React.useMemo(() => {
     function onClose() {
-      return callback(9199).hideModal();
+      return callback(9270).hideModal();
     }
     function blank() {
       return null;
@@ -52,7 +52,7 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerTitle: blank,
       headerStyle: onClose.navHeader,
       render() {
-        return callback2(callback(9202), {});
+        return callback2(callback(9273), {});
       }
     };
     obj = {
@@ -60,10 +60,10 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerRight: closure_1_7,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(onClose(9156).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+        return callback2(onClose(9227).TwoWayLinkStepHeader, { idx: 1, total: 2 });
       },
       render() {
-        return callback2(callback(9204), {});
+        return callback2(callback(9275), {});
       }
     };
     obj = {
@@ -71,11 +71,11 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerRight: closure_1_7,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(onClose(9156).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+        return callback2(onClose(9227).TwoWayLinkStepHeader, { idx: 2, total: 2 });
       },
       render(arg0) {
         ({ callbackCode, callbackState } = arg0);
-        return callback2(callback(9206), { callbackCode, callbackState });
+        return callback2(callback(9277), { callbackCode, callbackState });
       }
     };
     return {
@@ -102,9 +102,9 @@ export default function CrunchyrollLinkModal(locationStack) {
       }
     };
   }, items);
-  const accountLinkStepTracking = twoWayLinkStyles(9198).useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack.locationStack);
+  const accountLinkStepTracking = twoWayLinkStyles(9269).useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null };
-  const intl = twoWayLinkStyles(1233).intl;
-  obj[3] = intl.string(twoWayLinkStyles(1233).t["13/7kX"]);
-  return jsx(twoWayLinkStyles(6940).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null });
+  const intl = twoWayLinkStyles(1114).intl;
+  obj[3] = intl.string(twoWayLinkStyles(1114).t["13/7kX"]);
+  return jsx(twoWayLinkStyles(7000).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null });
 };

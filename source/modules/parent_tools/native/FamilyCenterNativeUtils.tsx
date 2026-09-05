@@ -1,17 +1,17 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11913
+// Function ID: 11914
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4742, 7471, 673, 695, 7472, 4731, 11846, 2008, 2]
+// Dependencies: [4774, 7538, 1074, 1242, 7539, 4763, 11914, 1896, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11845 (FAMILY_CENTER_REQUEST_MODAL_KEY)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7472 */;
-import closure_3 from "initialize" /* 4742 */;
-import items from "items" /* 7471 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+// Module 11913 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7539 */;
+import closure_3 from "initialize" /* 4774 */;
+import items from "items" /* 7538 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 ({ FAMILY_CENTER_LINK_REQUEST_REGEX: c4, FamilyCenterAction: c5 } = items);
@@ -35,20 +35,20 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     obj = { userId: null, linkCode: null };
     obj[0] = match[1];
     obj[1] = match[2];
-    _modDef4731.pushLazy(asyncRequireImpl(11846, dependencyMap.paths), obj, c7);
+    _modDef4763.pushLazy(asyncRequireImpl(11914, dependencyMap.paths), obj, c7);
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
   pendingConnection = pendingConnection.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
-    let obj = _modDef4731;
+    let obj = _modDef4763;
     obj.popWithKey(c7);
     obj = { userId: null, linkCode: null };
     ({ teenId: obj3[0], linkCode: obj3[1] } = pendingConnection);
-    _modDef4731.pushLazy(asyncRequireImpl(11846, dependencyMap.paths), obj, c7);
+    _modDef4763.pushLazy(asyncRequireImpl(11914, dependencyMap.paths), obj, c7);
     flag = true;
-    const obj2 = _modDef4731;
+    const obj2 = _modDef4763;
   }
   return flag;
 };

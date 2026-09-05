@@ -1,20 +1,20 @@
-// Module ID: 7659
-// Function ID: 7660
+// Module ID: 7726
+// Function ID: 7727
 // Name: canStreamInChannel
-// Dependencies: [4498, 1390, 1981, 1908, 4120, 4500, 673, 5377, 4673, 4739, 586, 2]
+// Dependencies: [4577, 1961, 2012, 1979, 4199, 4579, 1074, 5416, 4705, 4771, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 7659 (canStreamInChannel)
-import allowChannelAccess from "allowChannelAccess" /* 4673 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4739 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5377 */;
-import closure_3 from "set" /* 4498 */;
-import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "updateVoiceState" /* 4500 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 7726 (canStreamInChannel)
+import allowChannelAccess from "allowChannelAccess" /* 4705 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4771 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5416 */;
+import closure_3 from "set" /* 4577 */;
+import { ChannelRecordBase } from "createChannelRecord" /* 1961 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 2012 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "updateVoiceState" /* 4579 */;
+import { Permissions } from "ME" /* 1074 */;
 
 require = arg1;
 function canStreamInChannel(channel, closure_1_2, closure_1_3, arg3) {
@@ -118,7 +118,7 @@ export { canWatchStream };
 export const useCanWatchStream = function useCanWatchStream(stateFromStores) {
   const _require = stateFromStores;
   const items = [closure_8, closure_6, closure_7, closure_3];
-  return _require(586).useStateFromStoresArray(items, () => closure_1_12(closure_0, closure_1_8, closure_1_6, closure_1_7, closure_1_3));
+  return _require(504).useStateFromStoresArray(items, () => closure_1_12(closure_0, closure_1_8, closure_1_6, closure_1_7, closure_1_3));
 };
 export const getStreamEligibleChannels = function getStreamEligibleChannels(arg0, closure_1_2, closure_1_3) {
   const items = [];

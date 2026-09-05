@@ -1,11 +1,11 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12053
+// Function ID: 12054
 // Name: initialize
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 11985 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12053 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let obj = { APPS: "apps", COMMANDS: "commands" };
 let closure_1 = { selection: null };

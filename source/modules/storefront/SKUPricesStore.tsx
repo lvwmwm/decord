@@ -1,13 +1,13 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7232
+// Function ID: 7233
 // Name: resetStoreState
-// Dependencies: [1995, 586, 1394, 706, 2]
+// Dependencies: [2025, 504, 1369, 573, 2]
 
-// Module 7172 (resetStoreState)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import closure_2 from "_getSystemLocale" /* 1995 */;
+// Module 7232 (resetStoreState)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import closure_2 from "_getSystemLocale" /* 2025 */;
 
 require = arg1;
 function resetStoreState() {

@@ -1,12 +1,12 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15336
+// Function ID: 15337
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 673, 1939, 8098, 8095, 695, 1940, 2]
+// Dependencies: [19, 1074, 1390, 8167, 8164, 1242, 1391, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15260 (useDisplayNameStylesHandleApply)
+// Module 15336 (useDisplayNameStylesHandleApply)
 import closure_3 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");

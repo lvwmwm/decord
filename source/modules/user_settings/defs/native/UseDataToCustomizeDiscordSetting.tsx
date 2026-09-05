@@ -1,18 +1,18 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14857
+// Function ID: 14858
 // Name: toggle
-// Dependencies: [6536, 7906, 673, 14749, 586, 4865, 1233, 4955, 14780, 14781, 11400, 2]
+// Dependencies: [6595, 7975, 1074, 14824, 504, 4904, 1114, 4994, 14855, 14856, 11468, 2]
 
-// Module 14782 (toggle)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault from "set" /* 4865 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
-import handleRequestSuccess from "handleRequestSuccess" /* 14780 */;
-import closure_3 from "hasConsented" /* 6536 */;
-import { Consents } from "ME" /* 673 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 14857 (toggle)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import setDefault from "set" /* 4904 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14824 */;
+import handleRequestSuccess from "handleRequestSuccess" /* 14855 */;
+import closure_3 from "hasConsented" /* 6595 */;
+import { Consents } from "ME" /* 1074 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -29,7 +29,7 @@ createToggle = {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
       const obj3 = handleRequestSuccess;
-      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14781).showDataPrivacyRateLimitAlert(message.message));
+      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14856).showDataPrivacyRateLimitAlert(message.message));
       const setConsentsResult = handleRequestSuccess.setConsents(items, []);
     } else {
       let obj = setDefault;
@@ -45,7 +45,7 @@ createToggle = {
       obj[4] = componentDidMountDefault.Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.PERSONALIZATION];
-        return callback(14780).setConsents([], items);
+        return callback(14855).setConsents([], items);
       };
       obj.show(obj);
     }

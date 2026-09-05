@@ -1,18 +1,18 @@
 // Module ID: 10447
 // Function ID: 10448
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10385, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10431, 10435, 10434, 10439]
 
 // Module 10447 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import now from "now" /* 10385 */;
-import PTCasualDateParser from "_classCallCheck" /* 41 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10431 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let self = this;
+const ENTimeUnitAgoFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,123 +32,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let __setModuleDefault = self;
-  if (self) {
-    __setModuleDefault = self.__setModuleDefault;
+const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+class ENTimeUnitAgoFormatParser {
+  constructor(arg0) {
+    self = this;
+    tmp = closure_2(this, ENTimeUnitAgoFormatParser);
+    tmp2 = closure_4;
+    obj = closure_4(ENTimeUnitAgoFormatParser);
+    tmp3 = closure_3;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = global;
+    return tmp3Result;
   }
-  if (__setModuleDefault) {
-    let fn = self;
-    if (self) {
-      fn = self.__importStar;
-    }
-    if (!fn) {
-      function u(arg0) {
-        let fn = Object.getOwnPropertyNames;
-        if (!fn) {
-          fn = (obj) => {
-            const items = [];
-            for (const key10005 in arg0) {
-              let tmp2 = key10005;
-              let _Object = Object;
-              let call = hasOwnProperty.call;
-              if (typeof call === "unknown") {
-                let hasOwnPropertyResult = hasOwnProperty(key10005);
-              } else {
-                hasOwnPropertyResult = call(arg0, key10005);
-              }
-              if (!hasOwnPropertyResult) {
-                continue;
-              } else {
-                items[items.length] = key10005;
-                continue;
-              }
-              continue;
-            }
-            return items;
-          };
-        }
-        return fn(arg0);
-      }
-      fn = (__esModule) => {
-        if (__esModule) {
-          if (__esModule.__esModule) {
-            return __esModule;
-          }
-        }
-        const obj = {};
-        if (null != __esModule) {
-          const arr = u(__esModule);
-          for (let num = 0; num < arr.length; num = num + 1) {
-            let tmp2 = num;
-            if ("default" !== arr[num]) {
-              let tmp3 = self2;
-              let tmp4 = self2(obj, __esModule, arr[num]);
-            }
-          }
-        }
-        __setModuleDefault(obj, __esModule);
-        return obj;
-      };
-    }
-    const _Object3 = Object;
-    let closure_7 = fn(now);
-    class PTCasualDateParser {
-      constructor() {
-        self = this;
-        tmp = PTCasualDateParser(this, PTCasualDateParser);
-        tmp2 = closure_2;
-        obj = closure_2(PTCasualDateParser);
-        tmp3 = closure_1;
-        if (_isNativeReflectConstruct()) {
-          tmp7 = globalThis;
-          _Reflect = Reflect;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-        } else {
-          tmp4 = arguments;
-          tmp5 = arguments;
-          constructResult = obj(...arguments);
-        }
-        return tmp3(self, constructResult);
-      }
-    }
-    _inherits(PTCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-    let obj = { key: "innerPattern", value: null };
-    obj[1] = function innerPattern(arg0) {
-      return /(agora|hoje|amanha|amanhã|ontem)(?=\W|$)/i;
-    };
-    let items = [obj, ];
-    obj = { key: "innerExtract", value: null };
-    obj[1] = function innerExtract(reference) {
-      const formatted = arg1[0].toLowerCase();
-      if ("agora" === formatted) {
-        return closure_7.now(reference.reference);
-      } else if ("hoje" === formatted) {
-        return closure_7.today(reference.reference);
-      } else {
-        if ("amanha" !== formatted) {
-          if ("amanh\u00E3" !== formatted) {
-            if ("ontem" === formatted) {
-              return closure_7.yesterday(reference.reference);
-            } else {
-              return tmp2;
-            }
-          }
-        }
-        return closure_7.tomorrow(reference.reference);
-      }
-      const str = arg1[0];
-    };
-    items[1] = obj;
-    exports.default = _createClass(PTCasualDateParser, items);
-  } else {
-    const _Object2 = Object;
-  }
-} else {
-  let _Object = Object;
 }
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
+  {
+    key: "innerPattern",
+    value: function innerPattern() {
+      return this.strictMode ? regExp1 : regExp;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference) {
+      const parseDurationResult = ENTimeUnitAgoFormatParser(10431).parseDuration(arg1[1]);
+      let relativeFromReference = null;
+      if (parseDurationResult) {
+        const ParsingComponents = tmp(10435).ParsingComponents;
+        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(10434).reverseDuration(parseDurationResult));
+      }
+      return relativeFromReference;
+    }
+  }
+];
+
+export default _createClass(ENTimeUnitAgoFormatParser, items);

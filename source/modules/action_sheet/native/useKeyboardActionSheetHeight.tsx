@@ -1,18 +1,18 @@
-// Module ID: 11288
-// Function ID: 11289
+// Module ID: 11356
+// Function ID: 11357
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [5637, 1627, 1492, 5534, 2]
+// Dependencies: [5682, 1611, 1477, 5579, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11288 (useKeyboardActionSheetHeight)
+// Module 11356 (useKeyboardActionSheetHeight)
 import set from "set" /* 2 */;
-import useWindowDimensions from "useWindowDimensions" /* 1492 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1627 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5534 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5534 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5637 */;
+import useWindowDimensions from "useWindowDimensions" /* 1477 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1611 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5579 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5579 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5682 */;
 
 const result = set.fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 

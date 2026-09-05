@@ -1,18 +1,18 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 9853
+// Function ID: 9854
 // Name: stateFromStores
-// Dependencies: [19, 17, 9750, 21, 4481, 709, 586, 1296, 9783, 1233, 6879, 5084, 7318, 4477, 9751, 4936, 2]
+// Dependencies: [19, 17, 9821, 21, 4560, 576, 504, 1178, 9854, 1114, 6939, 5123, 7380, 4556, 9822, 4975, 2]
 // Exports: default
 
-// Module 9782 (stateFromStores)
+// Module 9853 (stateFromStores)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ClearButtonDefault from "ClearButton" /* 6879 */;
-import registerAssetDefault from "registerAsset" /* 9783 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ClearButtonDefault from "ClearButton" /* 6939 */;
+import registerAssetDefault from "registerAsset" /* 9854 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "updateWithLatestInvite" /* 9750 */;
+import closure_4 from "updateWithLatestInvite" /* 9821 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -28,16 +28,16 @@ export default function _default(link) {
   let stateFromStores;
   ({ onCopy, onShare, onPressSettings } = link);
   const tmp = callback2();
-  let obj = stateFromStores(586);
+  let obj = stateFromStores(504);
   const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   obj = { style: tmp.container, children: null };
   obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: registerAssetDefault, title: null, body: null };
-  const intl = stateFromStores(1233).intl;
-  obj[4] = intl.string(stateFromStores(1233).t.tQc0l8);
-  const intl2 = stateFromStores(1233).intl;
-  obj[5] = intl2.string(stateFromStores(1233).t.DXgdcD);
-  const items1 = [callback(stateFromStores(1296).RefreshEmptyState, obj), , , ];
+  const intl = stateFromStores(1114).intl;
+  obj[4] = intl.string(stateFromStores(1114).t.tQc0l8);
+  const intl2 = stateFromStores(1114).intl;
+  obj[5] = intl2.string(stateFromStores(1114).t.DXgdcD);
+  const items1 = [callback(stateFromStores(1178).RefreshEmptyState, obj), , , ];
   obj1 = { style: tmp.linkContainer, children: null };
   const obj2 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: null, style: null, forceAccessibleContainer: true, clearButtonVisibility: null };
   if (str == null) {
@@ -45,15 +45,15 @@ export default function _default(link) {
   }
   obj2[3] = str;
   obj2[4] = tmp.inviteInput;
-  obj2[6] = stateFromStores(1296).ClearButtonVisibility.NEVER;
+  obj2[6] = stateFromStores(1178).ClearButtonVisibility.NEVER;
   const items2 = [callback(ClearButtonDefault, obj2), ];
   const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
-  const intl3 = tmp2(1233).intl;
-  obj3[0] = intl3.string(stateFromStores(1233).t["3D5yo/"]);
+  const intl3 = tmp2(1114).intl;
+  obj3[0] = intl3.string(stateFromStores(1114).t["3D5yo/"]);
   obj3[2] = onPressSettings;
   obj3[3] = tmp.settingsButton;
-  obj3[4] = callback(stateFromStores(7318).SettingsIcon, {});
-  items2[1] = callback(stateFromStores(5084).PressableOpacity, obj3);
+  obj3[4] = callback(stateFromStores(7380).SettingsIcon, {});
+  items2[1] = callback(stateFromStores(5123).PressableOpacity, obj3);
   obj1[1] = items2;
   items1[1] = closure_6(View, obj1);
   const obj4 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -61,14 +61,14 @@ export default function _default(link) {
     obj4[3] = null;
     items1[2] = tmp7(tmp10, obj4);
     const obj5 = { text: null, onPress: null };
-    const intl5 = tmp2(1233).intl;
-    obj5[0] = intl5.string(tmp2(1233).t.Ej3B3Y);
+    const intl5 = tmp2(1114).intl;
+    obj5[0] = intl5.string(tmp2(1114).t.Ej3B3Y);
     obj5[1] = onShare;
-    items1[3] = tmp7(tmp2(4936).Button, obj5);
+    items1[3] = tmp7(tmp2(4975).Button, obj5);
     obj[1] = items1;
     return tmp5(tmp6, obj);
   } else {
-    const maxAgeOptionByValue = tmp8(9751).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    const maxAgeOptionByValue = tmp8(9822).getMaxAgeOptionByValue(stateFromStores.maxAge);
     let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
@@ -78,21 +78,21 @@ export default function _default(link) {
       }
       str3 = descriptiveLabel;
     }
-    const getMaxUsesOptions = tmp8(9751).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(9822).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     if (null != found) {
       str2 = found.descriptiveLabel;
     }
     if (0 === stateFromStores.maxAge) {
-      let dqPWMN = tmp2(1233).t["99ISmn"];
+      let dqPWMN = tmp2(1114).t["99ISmn"];
     } else {
-      dqPWMN = tmp2(1233).t.dqPWMN;
+      dqPWMN = tmp2(1114).t.dqPWMN;
     }
-    const intl4 = tmp2(1233).intl;
+    const intl4 = tmp2(1114).intl;
     const obj6 = { maxAge: null, maxUses: null };
     obj6[0] = str3;
     obj6[1] = str2;
     intl4.format(dqPWMN, obj6);
-    const tmp8Result = tmp8(9751);
+    const tmp8Result = tmp8(9822);
   }
 };

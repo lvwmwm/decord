@@ -1,18 +1,18 @@
-// Module ID: 9882
-// Function ID: 9883
+// Module ID: 9953
+// Function ID: 9954
 // Name: getApplicationStreamPresetValues
-// Dependencies: [4540, 9883, 9884, 1234, 4665, 2]
+// Dependencies: [4607, 9954, 9955, 1115, 4698, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 9882 (getApplicationStreamPresetValues)
+// Module 9953 (getApplicationStreamPresetValues)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import _modDef9883 from "module_9883" /* 9883 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 9884 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4540 */;
+import set2 from "set" /* 1115 */;
+import _modDef9954 from "module_9954" /* 9954 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 9955 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4607 */;
 
 function getApplicationStreamPresetValues() {
-  let obj = _modDef9883;
+  let obj = _modDef9954;
   obj = { [closure_4.PRESET_DOCUMENTS]: items };
   obj = { resolution: closure_5.RESOLUTION_SOURCE, fps: closure_3.FPS_15 };
   items = [obj, { resolution: closure_5.RESOLUTION_SOURCE, fps: closure_3.FPS_5 }];
@@ -45,11 +45,11 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
         if (arg0 === constants.PRESET_VIDEO) {
           let tmp26 = require;
           if (set2.isPlatformEmbedded) {
-            let tmp26Result = tmp26(1234);
+            let tmp26Result = tmp26(1115);
             if (tmp26Result.isDesktop()) {
               let tmp10 = arg3;
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(4665)("getStreamSettingsForPreset", arg1, arg3);
+              let tmp11 = tmp4(4698)("getStreamSettingsForPreset", arg1, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {

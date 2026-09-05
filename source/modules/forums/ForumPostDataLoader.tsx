@@ -1,18 +1,18 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7304
+// Function ID: 7305
 // Name: loadForumPostData
-// Dependencies: [5, 1386, 7243, 7217, 7246, 673, 12, 11, 586, 527, 706, 2]
+// Dependencies: [5, 1957, 7305, 7277, 7308, 1074, 12, 11, 504, 1272, 573, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 7242 (loadForumPostData)
+// Module 7304 (loadForumPostData)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { computeThreadIdsSnapshot } from "maybeRebuildState" /* 7243 */;
-import closure_6 from "handleLoadThreadsSuccess" /* 7217 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 7246 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import { computeThreadIdsSnapshot } from "maybeRebuildState" /* 7305 */;
+import closure_6 from "handleLoadThreadsSuccess" /* 7277 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 7308 */;
+import { Endpoints } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -341,11 +341,11 @@ export const useFirstForumPostMessage = function useFirstForumPostMessage(stateF
     flag2 = false;
   }
   const items = [closure_6];
-  const stateFromStoresObject = stateFromStores(586).useStateFromStoresObject(items, () => closure_1_6.getMessage(stateFromStores.id));
+  const stateFromStoresObject = stateFromStores(504).useStateFromStoresObject(items, () => closure_1_6.getMessage(stateFromStores.id));
   ({ loaded, firstMessage } = stateFromStoresObject);
-  const obj2 = stateFromStores(586);
+  const obj2 = stateFromStores(504);
   const items1 = [closure_4];
-  stateFromStores = stateFromStores(586).useStateFromStores(items1, () => closure_1_4.getChannel(stateFromStores.parent_id));
+  stateFromStores = stateFromStores(504).useStateFromStores(items1, () => closure_1_4.getChannel(stateFromStores.parent_id));
   let tmp3 = flag;
   if (flag) {
     tmp3 = null != stateFromStores;
@@ -423,7 +423,7 @@ export const useFirstForumPostMessage = function useFirstForumPostMessage(stateF
 };
 export const useMostRecentForumMessage = function useMostRecentForumMessage(arg0, arg1) {
   const _require = arg1;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_7];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => closure_1_7.getMessageState(id.id));
   obj = { loaded: stateFromStoresObject.loaded, mostRecentMessage: stateFromStoresObject.message };

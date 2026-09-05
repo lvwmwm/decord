@@ -1,12 +1,12 @@
 // Module ID: 8487
 // Function ID: 8488
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8399, 8488, 8398, 8407]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8468, 8488, 8477]
 
 // Module 8487 (_isNativeReflectConstruct)
 import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8407 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8477 */;
 import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8488 */;
 import closure_3 from "_classCallCheck" /* 41 */;
 import closure_4 from "_possibleConstructorReturn" /* 93 */;
@@ -14,7 +14,7 @@ import closure_5 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
 import { jsx } from "jsxProd" /* 21 */;
 
-const Use = arg1;
+const Ellipse = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -35,12 +35,12 @@ function _isNativeReflectConstruct() {
   }
 }
 noopAll;
-class Use {
+class Ellipse {
   constructor() {
     self = this;
-    tmp = closure_3(this, Use);
+    tmp = closure_3(this, Ellipse);
     tmp2 = closure_5;
-    obj = closure_5(Use);
+    obj = closure_5(Ellipse);
     tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -55,48 +55,37 @@ class Use {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(Use, _isNativeReflectConstructDefault);
+_inheritsDefault(Ellipse, _isNativeReflectConstructDefault);
 const items = [
   {
     key: "render",
     value: function render() {
       const self = this;
       const props = this.props;
-      let str = props.href;
-      ({ children, x, y, width, height } = props);
-      if (undefined === str) {
-        str = props.xlinkHref;
-      }
-      let match = str;
-      if (str) {
-        match = str.match(self(8399).idPattern);
-      }
-      let tmp4 = match;
-      if (match) {
-        tmp4 = match[1];
-      }
-      if (!tmp4) {
-        const _console = console;
-        console.warn(`Invalid \`href\` prop for \`Use\` element, expected a href like "#id", but got: "${str}"`);
-      }
-      let obj = { href: tmp4, x, y, width, height };
+      let obj = {};
+      ({ cx, cy, rx, ry } = props);
+      const merged = Object.assign(self(8468).extract(this, props));
+      obj.cx = cx;
+      obj.cy = cy;
+      obj.rx = rx;
+      obj.ry = ry;
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const tmp7 = __INTERNAL_VIEW_CONFIGDefault;
-      const merged = Object.assign(self(8398).withoutXY(this, props));
+      const obj2 = self(8468);
       const merged1 = Object.assign(obj);
-      obj.children = children;
-      return <tmp7 ref={function ref(arg0) {
-        return self.refMethod(arg0);
-      }} />;
+      return jsx(__INTERNAL_VIEW_CONFIGDefault, {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Use, items);
-importDefaultResultResult.displayName = "Use";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+const importDefaultResultResult = importDefaultResult(Ellipse, items);
+importDefaultResultResult.displayName = "Ellipse";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, rx: 0, ry: 0 };
 
 export default importDefaultResultResult;

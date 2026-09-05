@@ -1,12 +1,12 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16719
+// Function ID: 16720
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 4197, 709, 4329, 12691, 2]
+// Dependencies: [19, 21, 4262, 576, 4409, 12759, 2]
 // Exports: default
 
-// Module 16642 (SearchTabsGradient)
-import ThemesDefault from "Themes" /* 709 */;
-import TabsGradientDefault from "TabsGradient" /* 12691 */;
+// Module 16719 (SearchTabsGradient)
+import ThemesDefault from "Themes" /* 576 */;
+import TabsGradientDefault from "TabsGradient" /* 12759 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/search/native/compo
 
 export default function SearchTabsGradient(state) {
   let token;
-  token = token(4197).useToken(ThemesDefault.colors.BACKGROUND_BASE_LOW);
+  token = token(4262).useToken(ThemesDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   const colors = React.useMemo(() => {
     const items = [token, token(closure_1_2[4]).hexWithOpacity(token, 0)];

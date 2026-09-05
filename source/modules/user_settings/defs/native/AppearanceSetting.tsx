@@ -1,19 +1,19 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 15261
+// Function ID: 15262
 // Name: useAppearanceSettingTrailing
-// Dependencies: [4300, 1304, 673, 4416, 586, 1346, 7806, 1233, 2598, 11400, 13306, 15186, 2]
+// Dependencies: [4379, 1186, 1074, 4495, 504, 1229, 7874, 1114, 2626, 11468, 13378, 15262, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 15185 (useAppearanceSettingTrailing)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getThemeForColor from "getThemeForColor" /* 1346 */;
-import messagesProxyDefault from "messagesProxy" /* 2598 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import useActiveThemeType from "useActiveThemeType" /* 7806 */;
-import closure_3 from "reset" /* 4300 */;
-import { ActiveThemeType } from "SystemThemeState" /* 1304 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15261 (useAppearanceSettingTrailing)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getThemeForColor from "getThemeForColor" /* 1229 */;
+import messagesProxyDefault from "messagesProxy" /* 2626 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import useActiveThemeType from "useActiveThemeType" /* 7874 */;
+import closure_3 from "reset" /* 4379 */;
+import { ActiveThemeType } from "SystemThemeState" /* 1186 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function useAppearanceSettingTrailing() {
@@ -26,7 +26,7 @@ function useAppearanceSettingTrailing() {
   const obj2 = getThemeForColor;
   const activeThemeType = useActiveThemeType.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
-    const intl2 = tmp4(1233).intl;
+    const intl2 = tmp4(1114).intl;
     return intl2.string(messagesProxyDefault.KSBBpC);
   } else if (tmp8.CLIENT === activeThemeType) {
     let name;
@@ -41,8 +41,8 @@ function useAppearanceSettingTrailing() {
     }
     return name;
   } else if (tmp8.SYSTEM === activeThemeType) {
-    const intl = tmp4(1233).intl;
-    return intl.string(tmp4(1233).t.wFpwSk);
+    const intl = tmp4(1114).intl;
+    return intl.string(tmp4(1114).t.wFpwSk);
   } else {
     return tmp8.DEFAULT === activeThemeType ? themeName : undefined;
   }
@@ -61,7 +61,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(15186).default;
+    return require(15262).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

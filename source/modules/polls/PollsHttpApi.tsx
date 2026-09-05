@@ -1,12 +1,12 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11726
+// Function ID: 11727
 // Name: _submitPollVote
-// Dependencies: [5, 673, 527, 4379, 2]
+// Dependencies: [5, 1074, 1272, 4461, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 11658 (_submitPollVote)
+// Module 11726 (_submitPollVote)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _submitPollVote() {
@@ -64,7 +64,7 @@ function _submitPollVote() {
               return obj1;
             } else {
               c4 = 1;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj2 = { url: null, body: null, rejectWithError: false };
               obj2[0] = closure_3.POLL_ANSWERS(callback, dependencyMap);
               const obj3 = { answer_ids: null };
@@ -78,7 +78,7 @@ function _submitPollVote() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            const aPIError = new callback(4379).APIError(closure_3);
+            const aPIError = new callback(4461).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -171,7 +171,7 @@ function _endPollEarly() {
               return obj1;
             } else {
               c4 = 1;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj2 = { url: null, rejectWithError: false };
               obj2[0] = closure_3.POLL_EXPIRE(callback, dependencyMap);
               c5 = 3;
@@ -183,7 +183,7 @@ function _endPollEarly() {
           } else if (2 === tmp8) {
             c4 = 0;
             closure_2 = closure_3;
-            const aPIError = new callback(4379).APIError(closure_2);
+            const aPIError = new callback(4461).APIError(closure_2);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;

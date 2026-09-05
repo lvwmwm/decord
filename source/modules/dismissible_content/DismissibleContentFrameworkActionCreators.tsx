@@ -1,12 +1,12 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10237
+// Function ID: 10238
 // Name: handleDCShownToUser
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 10166 (handleDCShownToUser)
+// Module 10237 (handleDCShownToUser)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");
 

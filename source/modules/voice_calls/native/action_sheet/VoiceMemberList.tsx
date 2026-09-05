@@ -1,29 +1,29 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13784
+// Function ID: 13785
 // Name: ItemSeparator
-// Dependencies: [32, 5, 19, 17, 1385, 1934, 4503, 4120, 1921, 4558, 673, 1300, 7091, 502, 21, 4481, 13705, 9866, 586, 8523, 13393, 1233, 9960, 11522, 9749, 4477, 9548, 7102, 1890, 5372, 9461, 4735, 13710, 13711, 1492, 13718, 4335, 12, 4448, 8110, 4205, 13719, 7012, 2]
+// Dependencies: [32, 5, 19, 17, 1956, 1385, 4582, 4199, 1371, 4584, 1074, 1182, 7151, 1085, 21, 4560, 13780, 9937, 504, 8593, 13466, 1114, 10031, 11590, 9820, 4556, 9619, 7162, 1874, 5411, 9533, 4767, 13785, 13786, 1477, 13793, 4417, 12, 4527, 8179, 4271, 13794, 7072, 2]
 
-// Module 13709 (ItemSeparator)
-import Text from "Text" /* 4477 */;
-import Form from "Form" /* 8523 */;
-import registerAssetDefault from "registerAsset" /* 9960 */;
-import _modDef13705 from "module_13705" /* 13705 */;
+// Module 13784 (ItemSeparator)
+import Text from "Text" /* 4556 */;
+import Form from "Form" /* 8593 */;
+import registerAssetDefault from "registerAsset" /* 10031 */;
+import _modDef13780 from "module_13780" /* 13780 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "participantFromServer" /* 1385 */;
-import closure_10 from "createdAt" /* 1934 */;
-import closure_11 from "reset" /* 4503 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_13 from "mergeGuildAvatar" /* 1921 */;
-import closure_14 from "getVoiceStatesForGuild" /* 4558 */;
-import ME from "ME" /* 673 */;
-import { FORM_ROW_VERTICAL_PADDING } from "semanticColor" /* 1300 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import closure_9 from "participantFromServer" /* 1956 */;
+import closure_10 from "createdAt" /* 1385 */;
+import closure_11 from "reset" /* 4582 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_13 from "mergeGuildAvatar" /* 1371 */;
+import closure_14 from "getVoiceStatesForGuild" /* 4584 */;
+import ME from "ME" /* 1074 */;
+import { FORM_ROW_VERTICAL_PADDING } from "semanticColor" /* 1182 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ItemSeparator() {
@@ -189,10 +189,10 @@ function VoiceSectionRow(arg0) {
 ({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 let closure_24 = createCacheKey.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(_modDef13705, { channel: channel.channel }));
+let closure_25 = importAllResult.memo((channel) => callback2(_modDef13780, { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
-  channel(586);
+  channel(504);
   [][0] = channel;
   let tmp7 = null;
   if (!tmp3) {
@@ -202,13 +202,13 @@ let closure_26 = importAllResult.memo((channel) => {
       const items = [callback2(ItemSeparator, {}), ];
       obj = { leading: null, label: null, onPress: null };
       obj = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
-      const intl = tmp4(1233).intl;
-      obj[0] = intl.string(tmp4(1233).t["6Qgrev"]);
+      const intl = tmp4(1114).intl;
+      obj[0] = intl.string(tmp4(1114).t["6Qgrev"]);
       obj[2] = registerAssetDefault;
-      obj[3] = tmp4(13393).CircularIconButton.Sizes.MEDIUM_32;
-      obj[0] = callback2(tmp4(13393).CircularIconButton, obj);
-      const intl2 = tmp4(1233).intl;
-      obj[1] = intl2.string(tmp4(1233).t["6Qgrev"]);
+      obj[3] = tmp4(13466).CircularIconButton.Sizes.MEDIUM_32;
+      obj[0] = callback2(tmp4(13466).CircularIconButton, obj);
+      const intl2 = tmp4(1114).intl;
+      obj[1] = intl2.string(tmp4(1114).t["6Qgrev"]);
       obj[2] = function onPress() {
         if (channel.isPrivate()) {
           closure_1_1(closure_1_3[23])(tmp.id, closure_1_15.CHANNEL_CALL);
@@ -219,7 +219,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = obj.showInstantInviteActionSheet(tmp, obj);
         }
       };
-      items[1] = callback2(tmp4(8523).FormRow, obj);
+      items[1] = callback2(tmp4(8593).FormRow, obj);
       obj[0] = items;
       tmp7 = callback3(importAllResult.Fragment, obj);
     }

@@ -1,15 +1,15 @@
-// Module ID: 12529
-// Function ID: 12530
+// Module ID: 12597
+// Function ID: 12598
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 11464, 1233, 12530, 9388, 4871, 2]
+// Dependencies: [21, 11532, 1114, 12598, 9459, 4910, 2]
 // Exports: default
 
-// Module 12529 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 12597 (UserSettingsAuthedAppDeleteWarningModal)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 11464 */;
-import isAuthorizedAppTwoWayDefault from "isAuthorizedAppTwoWay" /* 12530 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11532 */;
+import isAuthorizedAppTwoWayDefault from "isAuthorizedAppTwoWay" /* 12598 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
@@ -24,13 +24,13 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   if (result) {
     obj = { applicationName: null };
     obj[0] = application.name;
-    let formatToPlainStringResult = intl.formatToPlainString(tmp(1233).t["paC+US"], obj);
+    let formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t["paC+US"], obj);
   } else {
-    formatToPlainStringResult = intl.string(tmp(1233).t["DT39A+"]);
+    formatToPlainStringResult = intl.string(tmp(1114).t["DT39A+"]);
   }
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = tmp(1233).t;
+  const t = tmp(1114).t;
   if (result) {
     obj = { applicationName: null };
     obj[0] = application.name;
@@ -43,33 +43,33 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let tmp9 = isAuthorizedAppTwoWayDefault(application.id);
   if (tmp9) {
     const obj2 = { children: null };
-    let tmp8Result = tmp8(9388);
-    const intl3 = tmp(1233).intl;
+    let tmp8Result = tmp8(9459);
+    const intl3 = tmp(1114).intl;
     const obj3 = { applicationName: null };
     obj3[0] = application.name;
-    obj2[0] = intl3.format(tmp(1233).t.KRnERi, obj3);
+    obj2[0] = intl3.format(tmp(1114).t.KRnERi, obj3);
     tmp9 = callback(tmp8Result, obj2);
   }
   const items = [tmp9, ];
   let tmp12 = result;
   if (result) {
     const obj4 = { look: null, children: null };
-    tmp8Result = tmp8(9388);
-    obj4[0] = tmp(9388).InfoBoxLooks.WARNING;
-    const intl4 = tmp(1233).intl;
-    obj4[1] = intl4.string(tmp(1233).t.LY35Zy);
+    tmp8Result = tmp8(9459);
+    obj4[0] = tmp(9459).InfoBoxLooks.WARNING;
+    const intl4 = tmp(1114).intl;
+    obj4[1] = intl4.string(tmp(1114).t.LY35Zy);
     tmp12 = callback(tmp8Result, obj4);
   }
   items[1] = tmp12;
   const obj5 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: closure_5(closure_4, { children: items }), actions: null };
   const obj6 = { children: null };
   const obj7 = { variant: "destructive", text: null, onPress: null };
-  const intl5 = tmp(1233).intl;
+  const intl5 = tmp(1114).intl;
   obj7[1] = intl5.string(getSystemLocale.t.xUqheM);
   obj7[2] = onDelete;
   const items1 = [callback(getAlertModalItemKey.AlertActionButton, obj7, "confirm"), ];
   const obj8 = { variant: "secondary", text: null };
-  const intl6 = tmp(1233).intl;
+  const intl6 = tmp(1114).intl;
   obj8[1] = intl6.string(getSystemLocale.t["ETE/oC"]);
   items1[1] = callback(getAlertModalItemKey.AlertActionButton, obj8, "cancel");
   obj6[0] = items1;

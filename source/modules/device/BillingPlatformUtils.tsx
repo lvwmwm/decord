@@ -1,13 +1,13 @@
-// Module ID: 4152
-// Function ID: 4153
+// Module ID: 4231
+// Function ID: 4232
 // Name: isPremiumGiftingSupported
-// Dependencies: [1623, 1234, 2]
+// Dependencies: [1608, 1115, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 4152 (isPremiumGiftingSupported)
+// Module 4231 (isPremiumGiftingSupported)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
+import set2 from "set" /* 1115 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
 
 const result = set.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 

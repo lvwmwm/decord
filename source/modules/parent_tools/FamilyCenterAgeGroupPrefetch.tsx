@@ -1,12 +1,12 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15484
+// Function ID: 15485
 // Name: prefetchFamilyCenterAgeGroupWhen
-// Dependencies: [7470, 7472, 2]
+// Dependencies: [7537, 7539, 2]
 // Exports: prefetchFamilyCenterAgeGroupWhen
 
-// Module 15408 (prefetchFamilyCenterAgeGroupWhen)
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7472 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7470 */;
+// Module 15484 (prefetchFamilyCenterAgeGroupWhen)
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7539 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7537 */;
 
 const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");
 

@@ -1,32 +1,32 @@
-// Module ID: 9251
-// Function ID: 9252
+// Module ID: 9322
+// Function ID: 9323
 // Name: PremiumUpsellItem
-// Dependencies: [32, 19, 17, 1303, 1921, 673, 9252, 1923, 21, 4481, 709, 4205, 4477, 7381, 1233, 4139, 9243, 9244, 4416, 1362, 9279, 9280, 9281, 9282, 9233, 9283, 9284, 9285, 9286, 586, 7141, 9287, 9242, 1492, 7102, 7122, 4953, 695, 9288, 4375, 4955, 1296, 5542, 9289, 9290, 9246, 2]
+// Dependencies: [32, 19, 17, 1185, 1371, 1074, 9323, 1373, 21, 4560, 576, 4271, 4556, 7447, 1114, 4218, 9314, 9315, 4495, 4411, 9350, 9351, 9352, 9353, 9304, 9354, 9355, 9356, 9357, 504, 7201, 9358, 9313, 1477, 7162, 7182, 4992, 1242, 9359, 4457, 4994, 1178, 5587, 9360, 9361, 9317, 2]
 
-// Module 9251 (PremiumUpsellItem)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import createCacheKey2 from "createCacheKey" /* 4481 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7381 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9233 */;
-import registerAssetDefault from "registerAsset" /* 9243 */;
-import registerAssetDefault2 from "registerAsset" /* 9244 */;
-import registerAssetDefault3 from "registerAsset" /* 9281 */;
-import registerAssetDefault4 from "registerAsset" /* 9282 */;
+// Module 9322 (PremiumUpsellItem)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4218 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import createCacheKey2 from "createCacheKey" /* 4560 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7447 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9304 */;
+import registerAssetDefault from "registerAsset" /* 9314 */;
+import registerAssetDefault2 from "registerAsset" /* 9315 */;
+import registerAssetDefault3 from "registerAsset" /* 9352 */;
+import registerAssetDefault4 from "registerAsset" /* 9353 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { getIcons } from "items" /* 9252 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { getIcons } from "items" /* 9323 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class PremiumUpsellItem {
@@ -66,38 +66,38 @@ function GlobalEmojiUpsell(arg0) {
       skuId = subscriptionTrial.skuId;
     }
   }
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   const formatResult = intl.format(getSystemLocale.t["KEn+LY"], {});
   if (null != skuId) {
     if (TIER_0.TIER_0 === skuId) {
-      const intl3 = tmp(1233).intl;
+      const intl3 = tmp(1114).intl;
       obj = { planName: null };
-      let tmpResult = tmp(4139);
+      let tmpResult = tmp(4218);
       obj[0] = tmpResult.getPremiumTypeDisplayName(closure_13.TIER_0);
-      let formatResult1 = intl3.format(tmp(1233).t["1P7x8p"], obj);
+      let formatResult1 = intl3.format(tmp(1114).t["1P7x8p"], obj);
     } else {
       formatResult1 = formatResult;
       if (tmp8.TIER_2 === skuId) {
-        const intl5 = tmp(1233).intl;
+        const intl5 = tmp(1114).intl;
         obj = { planName: null };
-        tmpResult = tmp(4139);
+        tmpResult = tmp(4218);
         obj[0] = tmpResult.getPremiumTypeDisplayName(closure_13.TIER_2);
-        formatResult1 = intl5.format(tmp(1233).t["1P7x8p"], obj);
+        formatResult1 = intl5.format(tmp(1114).t["1P7x8p"], obj);
       }
     }
   } else {
     formatResult1 = formatResult;
     if (useTier0Description) {
-      const intl2 = tmp(1233).intl;
+      const intl2 = tmp(1114).intl;
       obj1 = { planName: null };
-      obj1[0] = tmp(4139).getPremiumTypeDisplayName(closure_13.TIER_0);
-      formatResult1 = intl2.format(tmp(1233).t.kWBwlJ, obj1);
-      const tmpResult1 = tmp(4139);
+      obj1[0] = tmp(4218).getPremiumTypeDisplayName(closure_13.TIER_0);
+      formatResult1 = intl2.format(tmp(1114).t.kWBwlJ, obj1);
+      const tmpResult1 = tmp(4218);
     }
   }
   const obj2 = { alertWidth, upsellItem: null };
   const obj3 = { image: registerAssetDefault, title: null, description: null };
-  const intl4 = tmp(1233).intl;
+  const intl4 = tmp(1114).intl;
   obj3[1] = intl4.string(getSystemLocale.t.UNtcBV);
   obj3[2] = formatResult1;
   obj2[1] = obj3;
@@ -131,14 +131,14 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(9279);
+    let tmp4Result = tmp4(9350);
   } else {
-    tmp4Result = tmp4(9280);
+    tmp4Result = tmp4(9351);
   }
   obj = { image: tmp4Result, title: null, description: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj[1] = intl.string(getSystemLocale.t.OVN9la);
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   obj[2] = intl2.string(getSystemLocale.t.j0dyAG);
   obj[2] = obj;
   return tmp6(tmp7, obj);
@@ -172,9 +172,9 @@ function CustomAppIconsUpsell(alertWidth) {
     iconSource = arr.filter((isPremium) => isPremium.isPremium)[0].iconSource;
   }
   obj = { image: iconSource, title: null, description: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj[1] = intl.string(getSystemLocale.t["1B1Cyn"]);
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   obj[2] = intl2.string(getSystemLocale.t.VL5TYT);
   obj[2] = obj;
   return closure_14(PremiumUpsellItem, obj);
@@ -208,14 +208,14 @@ function LongerMessageUpsell(alertWidth) {
   const tmp7 = closure_14;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(9283);
+    let tmp4Result = tmp4(9354);
   } else {
-    tmp4Result = tmp4(9284);
+    tmp4Result = tmp4(9355);
   }
   obj = { image: tmp4Result, title: null, description: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj[1] = intl.string(getSystemLocale.t["8cjmTj"]);
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   obj[2] = intl2.formatToPlainString(getSystemLocale.t.moN9wh, { maxLength: tmp6 });
   obj[2] = obj;
   return tmp7(tmp8, obj);
@@ -228,14 +228,14 @@ function GuildCapUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(9285);
+    let tmp4Result = tmp4(9356);
   } else {
-    tmp4Result = tmp4(9286);
+    tmp4Result = tmp4(9357);
   }
   obj = { image: tmp4Result, title: null, description: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj[1] = intl.string(getSystemLocale.t["CoNXB+"]);
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   obj[2] = intl2.format(getSystemLocale.t.mkXb2F, {});
   obj[2] = obj;
   return tmp6(tmp7, obj);
@@ -249,17 +249,17 @@ function UploadUpsell(arg0) {
   let tmp6Result = null;
   if (callback(importAllResult.useState(!stateFromStores), 1)[0]) {
     obj = { start: true, end: true, label: null, subLabel: null, value: null, onValueChange: null };
-    const intl = tmp(1233).intl;
-    obj[2] = intl.string(tmp(1233).t.ix8XIj);
-    const intl2 = tmp(1233).intl;
-    obj[3] = intl2.string(tmp(1233).t["wC0+Ph"]);
+    const intl = tmp(1114).intl;
+    obj[2] = intl.string(tmp(1114).t.ix8XIj);
+    const intl2 = tmp(1114).intl;
+    obj[3] = intl2.string(tmp(1114).t["wC0+Ph"]);
     obj[4] = stateFromStores;
     obj[5] = function onValueChange(dataSavingMode) {
       let obj = callback(table[31]);
       obj = { dataSavingMode };
       const result = obj.updatedUnsyncedSettings(obj);
     };
-    tmp6Result = callback2(tmp(7141).TableSwitchRow, obj);
+    tmp6Result = callback2(tmp(7201).TableSwitchRow, obj);
   }
   children[1] = tmp6Result;
   return closure_15(closure_16, { children });

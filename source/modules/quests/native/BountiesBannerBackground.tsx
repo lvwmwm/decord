@@ -1,13 +1,13 @@
-// Module ID: 15007
-// Function ID: 15008
-// Dependencies: [19, 17, 4473, 21, 586, 8237, 4948, 2]
+// Module ID: 15082
+// Function ID: 15083
+// Dependencies: [19, 17, 4552, 21, 504, 8307, 4987, 2]
 
-// Module 15007
-import initialize from "initialize" /* 586 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import VideoComponent from "VideoComponent" /* 8237 */;
+// Module 15082
+import initialize from "initialize" /* 504 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import VideoComponent from "VideoComponent" /* 8307 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

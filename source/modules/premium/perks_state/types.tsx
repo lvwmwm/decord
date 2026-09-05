@@ -1,9 +1,9 @@
-// Module ID: 1928
-// Function ID: 1929
+// Module ID: 1378
+// Function ID: 1379
 // Name: PerkConfigType
 // Dependencies: [2]
 
-// Module 1928 (PerkConfigType)
+// Module 1378 (PerkConfigType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/perks_state/types.tsx");

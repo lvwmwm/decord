@@ -1,14 +1,14 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 8057
+// Function ID: 8058
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1921, 7386, 1923, 586, 7989, 7990, 7331, 1945, 2]
+// Dependencies: [19, 1371, 7452, 1373, 504, 8058, 8059, 7393, 1885, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7988 (useMaybeFetchReferralsRemaining)
+// Module 8057 (useMaybeFetchReferralsRemaining)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "emitChanges" /* 7386 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "emitChanges" /* 7452 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 const require = arg1;
 ({ PremiumTypes: closure_6, FractionalPremiumStates: error } = GuildFeatures);
@@ -20,21 +20,21 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   }
   let fetched;
   const items = [closure_4];
-  const stateFromStores = flag(586).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = flag(586);
+  const stateFromStores = flag(504).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = flag(504);
   let tmp = flag;
-  const hasDiscountApplied = flag(7989).useHasDiscountApplied();
-  const obj2 = flag(7989);
-  const hasActiveTrial = flag(7990).useHasActiveTrial();
-  const tmp6 = fetched(7331)();
+  const hasDiscountApplied = flag(8058).useHasDiscountApplied();
+  const obj2 = flag(8058);
+  const hasActiveTrial = flag(8059).useHasActiveTrial();
+  const tmp6 = fetched(7393)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = tmp(1945).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const tmpResult = tmp(1945);
+    fetched = tmp(1885).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const tmpResult = tmp(1885);
   }
   if (fetched) {
     fetched = tmp6.fetched;

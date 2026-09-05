@@ -1,12 +1,12 @@
-// Module ID: 4509
-// Function ID: 4510
+// Module ID: 1920
+// Function ID: 1921
 // Name: items3
-// Dependencies: [673, 1954, 2]
+// Dependencies: [1074, 1894, 2]
 // Exports: getAppIntentScheme
 
-// Module 4509 (items3)
-import ME from "ME" /* 673 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+// Module 1920 (items3)
+import ME from "ME" /* 1074 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
 import set from "set" /* 2 */;
 
 const ChannelTypes = ME.ChannelTypes;

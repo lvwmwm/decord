@@ -1,14 +1,14 @@
-// Module ID: 11182
-// Function ID: 11183
+// Module ID: 11250
+// Function ID: 11251
 // Name: TagsIcon
-// Dependencies: [19, 21, 709, 4196, 11183, 2]
+// Dependencies: [19, 21, 576, 4261, 11251, 2]
 // Exports: TagsIcon
 
-// Module 11182 (TagsIcon)
+// Module 11250 (TagsIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11183 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 11251 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

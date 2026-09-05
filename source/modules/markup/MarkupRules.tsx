@@ -1,39 +1,39 @@
-// Module ID: 4959
-// Function ID: 4960
+// Module ID: 4998
+// Function ID: 4999
 // Name: parseLink
-// Dependencies: [32, 850, 1386, 1984, 1908, 1921, 673, 4960, 4961, 4962, 1233, 4965, 1987, 4680, 4325, 4192, 4966, 4967, 4970, 4134, 4972, 4983, 4984, 4985, 4986, 4987, 4958, 4988, 12, 2]
+// Dependencies: [32, 718, 1957, 2015, 1979, 1371, 1074, 4999, 5000, 5001, 1114, 5004, 2018, 4712, 4404, 4257, 5005, 5006, 5009, 4213, 5011, 5022, 5023, 5024, 5025, 5026, 4997, 5027, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 4959 (parseLink)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1987 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import validateContentTypes from "validateContentTypes" /* 4962 */;
-import validateContentTypesDefault from "validateContentTypes" /* 4962 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4965 */;
-import textRegexpDefault from "textRegexp" /* 4966 */;
-import getChannelDefault from "getChannel" /* 4967 */;
-import regExpDefault from "regExp" /* 4970 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 4972 */;
-import getSoundmojiASTFromStringDefault from "getSoundmojiASTFromString" /* 4972 */;
-import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 4983 */;
-import staticRouteToTranslation from "staticRouteToTranslation" /* 4984 */;
-import matchDefault from "match" /* 4985 */;
-import regExpDefault2 from "regExp" /* 4986 */;
-import _modDef4987 from "module_4987" /* 4987 */;
-import matchDefault2 from "match" /* 4988 */;
+// Module 4998 (parseLink)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 2018 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import validateContentTypes from "validateContentTypes" /* 5001 */;
+import validateContentTypesDefault from "validateContentTypes" /* 5001 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5004 */;
+import textRegexpDefault from "textRegexp" /* 5005 */;
+import getChannelDefault from "getChannel" /* 5006 */;
+import regExpDefault from "regExp" /* 5009 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5011 */;
+import getSoundmojiASTFromStringDefault from "getSoundmojiASTFromString" /* 5011 */;
+import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 5022 */;
+import staticRouteToTranslation from "staticRouteToTranslation" /* 5023 */;
+import matchDefault from "match" /* 5024 */;
+import regExpDefault2 from "regExp" /* 5025 */;
+import _modDef5026 from "module_5026" /* 5026 */;
+import matchDefault2 from "match" /* 5027 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "_toArray" /* 850 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4960 */;
-import { GAME_MENTION_RAW_RE } from "regExp" /* 4961 */;
-import importDefaultResult from "t" /* 4192 */;
-import importDefaultResult3 from "combineMarkupRules" /* 4958 */;
+import closure_4 from "_toArray" /* 718 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4999 */;
+import { GAME_MENTION_RAW_RE } from "regExp" /* 5000 */;
+import importDefaultResult from "t" /* 4257 */;
+import importDefaultResult3 from "combineMarkupRules" /* 4997 */;
 import importDefaultResult4 from "apply" /* 12 */;
 
 require = arg1;
@@ -142,8 +142,8 @@ function hydrateUserMention(everyoneOrHere, channelId) {
     if (null != channel) {
       let nickname = getNicknameDefault.getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4325).getName(str);
-        const tmp4Result = tmp4(4325);
+        nickname = tmp4(4404).getName(str);
+        const tmp4Result = tmp4(4404);
       }
       str = nickname;
       const obj2 = getNicknameDefault;
@@ -879,7 +879,7 @@ obj[33] = {
 };
 obj[34] = matchDefault;
 obj[35] = regExpDefault2;
-obj[36] = _modDef4987;
+obj[36] = _modDef5026;
 let items = [obj, ];
 const obj20 = {
   order: textRegexpDefault.order,

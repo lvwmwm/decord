@@ -1,11 +1,11 @@
-// Module ID: 4584
-// Function ID: 4585
+// Module ID: 4617
+// Function ID: 4618
 // Name: AudioSubsystems
-// Dependencies: [4545, 2]
+// Dependencies: [4585, 2]
 
-// Module 4584 (AudioSubsystems)
+// Module 4617 (AudioSubsystems)
 import set from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
 
 const InputModes = DesktopSources.InputModes;
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Constants.tsx");

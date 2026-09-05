@@ -1,13 +1,13 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 14540
+// Function ID: 14541
 // Name: getVolumeForSound
-// Dependencies: [4532, 4976, 4166, 2]
+// Dependencies: [1908, 5015, 1935, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 14465 (getVolumeForSound)
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import perceptualToAmplitude from "perceptualToAmplitude" /* 4976 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4532 */;
+// Module 14540 (getVolumeForSound)
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import perceptualToAmplitude from "perceptualToAmplitude" /* 5015 */;
+import closure_2 from "_detectH265HardwareDecode" /* 1908 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/soundboard/getVolumeForSound.tsx");

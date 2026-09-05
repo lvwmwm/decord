@@ -1,11 +1,11 @@
-// Module ID: 7536
-// Function ID: 7537
+// Module ID: 7603
+// Function ID: 7604
 // Name: isStable
-// Dependencies: [1624, 1234, 2]
+// Dependencies: [1364, 1115, 2]
 
-// Module 7536 (isStable)
-import getConstantsAll from "getConstants" /* 1624 */;
-import set from "set" /* 1234 */;
+// Module 7603 (isStable)
+import getConstantsAll from "getConstants" /* 1364 */;
+import set from "set" /* 1115 */;
 
 const ReleaseChannel = getConstantsAll.getConstants().ReleaseChannel;
 set = set.isAndroid();

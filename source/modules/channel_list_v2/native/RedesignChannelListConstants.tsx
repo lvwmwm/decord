@@ -1,14 +1,14 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10118
+// Function ID: 10119
 // Name: hairlineWidth
-// Dependencies: [17, 1235, 10048, 2]
+// Dependencies: [17, 1116, 10119, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10047 (hairlineWidth)
+// Module 10118 (hairlineWidth)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import map from "map" /* 10048 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
+import map from "map" /* 10119 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
 
 let c2 = "text-xs/medium";
 let num = 20;

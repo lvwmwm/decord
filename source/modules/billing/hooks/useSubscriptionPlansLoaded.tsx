@@ -1,15 +1,15 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13417
+// Function ID: 13418
 // Name: getSubscriptionPlansLoaded
-// Dependencies: [4142, 4144, 4145, 1923, 3, 586, 2]
+// Dependencies: [4221, 4223, 4224, 1373, 3, 504, 2]
 // Exports: useSubscriptionPlansLoaded
 
-// Module 13345 (getSubscriptionPlansLoaded)
+// Module 13417 (getSubscriptionPlansLoaded)
 import timestampDefault from "timestamp" /* 3 */;
-import closure_2 from "handlePaymentSourceUpdate" /* 4142 */;
-import closure_3 from "addSubscriptionPlan" /* 4144 */;
-import closure_4 from "reset" /* 4145 */;
-import { ACTIVE_PREMIUM_SKUS } from "GuildFeatures" /* 1923 */;
+import closure_2 from "handlePaymentSourceUpdate" /* 4221 */;
+import closure_3 from "addSubscriptionPlan" /* 4223 */;
+import closure_4 from "reset" /* 4224 */;
+import { ACTIVE_PREMIUM_SKUS } from "GuildFeatures" /* 1373 */;
 
 const require = arg1;
 function getSubscriptionPlansLoaded(items) {
@@ -66,7 +66,7 @@ export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() 
   items = tmp;
   const items1 = [closure_2, closure_3, closure_4];
   const items2 = [tmp];
-  return items(586).useStateFromStores(items1, () => {
+  return items(504).useStateFromStores(items1, () => {
     items = [closure_1_2, closure_1_3, closure_1_4];
     return closure_1_6(items, items);
   }, items2);

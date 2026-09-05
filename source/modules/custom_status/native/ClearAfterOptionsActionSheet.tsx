@@ -1,22 +1,22 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11201
+// Function ID: 11202
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 11047, 21, 4481, 709, 7090, 7089, 1233, 5640, 5643, 11134, 4936, 4448, 2]
+// Dependencies: [32, 19, 17, 11115, 21, 4560, 576, 7150, 7149, 1114, 5685, 5688, 11202, 4975, 4527, 2]
 // Exports: default
 
-// Module 11133 (ClearAfterOptionsActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4936 */;
-import context from "context" /* 5640 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import Background from "Background" /* 7090 */;
+// Module 11201 (ClearAfterOptionsActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 4975 */;
+import context from "context" /* 5685 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import Background from "Background" /* 7150 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ClearAfterOptions } from "StatusTypes" /* 11047 */;
+import { ClearAfterOptions } from "StatusTypes" /* 11115 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -43,7 +43,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   const intl2 = getSystemLocale.intl;
   obj[1] = intl2.string(getSystemLocale.t.E45wvP);
   obj[2] = initialValue;
-  obj[4] = ClearAfterOptions.map((value) => callback3(callback(5643).TableRadioRow, { value, label: callback2(11134)(value) }, value));
+  obj[4] = ClearAfterOptions.map((value) => callback3(callback(5688).TableRadioRow, { value, label: callback2(11202)(value) }, value));
   const items = [callback2(context.TableRadioGroup, obj), ];
   obj1 = { style: tmp.buttonWrapper, children: null };
   const obj2 = {

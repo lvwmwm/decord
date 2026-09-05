@@ -1,10 +1,10 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 7601
+// Function ID: 7602
 // Name: USER_SETTING_ACTION_SHEET_KEY
-// Dependencies: [690, 2]
+// Dependencies: [1095, 2]
 
-// Module 7534 (USER_SETTING_ACTION_SHEET_KEY)
-import MessageEmbedTypes from "MessageEmbedTypes" /* 690 */;
+// Module 7601 (USER_SETTING_ACTION_SHEET_KEY)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1095 */;
 import set from "set" /* 2 */;
 
 const items = [MessageEmbedTypes.MessageEmbedTypes.IMAGE, MessageEmbedTypes.MessageEmbedTypes.VIDEO, MessageEmbedTypes.MessageEmbedTypes.GIFV];

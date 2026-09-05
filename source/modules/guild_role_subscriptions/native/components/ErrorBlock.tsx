@@ -1,13 +1,13 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12223
+// Function ID: 12224
 // Name: ErrorBlock
-// Dependencies: [19, 21, 12156, 2]
+// Dependencies: [19, 21, 12224, 2]
 // Exports: default
 
-// Module 12155 (ErrorBlock)
+// Module 12223 (ErrorBlock)
 import noopAll from "noop" /* 19 */;
-import MessageBlock from "MessageBlock" /* 12156 */;
-import MessageBlockDefault from "MessageBlock" /* 12156 */;
+import MessageBlock from "MessageBlock" /* 12224 */;
+import MessageBlockDefault from "MessageBlock" /* 12224 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

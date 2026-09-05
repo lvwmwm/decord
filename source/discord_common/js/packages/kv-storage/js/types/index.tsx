@@ -1,9 +1,9 @@
-// Module ID: 1962
-// Function ID: 1963
+// Module ID: 1993
+// Function ID: 1994
 // Name: TableId
 // Dependencies: [2]
 
-// Module 1962 (TableId)
+// Module 1993 (TableId)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/types/index.tsx");

@@ -1,40 +1,40 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15663
+// Function ID: 15664
 // Name: handleNewUserOnboarding
-// Dependencies: [32, 5, 19, 17, 4473, 5238, 1922, 1995, 1301, 1303, 1921, 7652, 673, 12637, 1923, 11295, 1304, 21, 4481, 709, 12678, 706, 12636, 9287, 14363, 1369, 1372, 4301, 4731, 15588, 2008, 11334, 14706, 14708, 13621, 4194, 15486, 1627, 586, 4166, 15604, 5642, 7141, 15498, 1296, 15191, 1362, 15251, 15605, 10179, 1233, 5560, 15345, 5567, 6898, 15606, 6908, 1205, 1915, 1234, 2]
+// Dependencies: [32, 5, 19, 17, 4552, 5277, 1372, 2025, 1183, 1185, 1371, 7719, 1074, 12705, 1373, 11363, 1186, 21, 4560, 576, 12746, 573, 12704, 9358, 14437, 1940, 1943, 4380, 4763, 15664, 1896, 11402, 14781, 14783, 13697, 4259, 15562, 1611, 504, 1935, 15680, 5687, 7201, 15574, 1178, 15267, 4411, 15327, 15681, 10250, 1114, 5605, 15421, 5612, 6958, 15682, 6968, 1232, 1351, 1115, 2]
 // Exports: default
 
-// Module 15587 (handleNewUserOnboarding)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ThemesDefault from "Themes" /* 709 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 9287 */;
-import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12636 */;
-import setNewUser from "setNewUser" /* 12678 */;
-import setFontSize from "setFontSize" /* 14363 */;
+// Module 15663 (handleNewUserOnboarding)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ThemesDefault from "Themes" /* 576 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1940 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4380 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9358 */;
+import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12704 */;
+import setNewUser from "setNewUser" /* 12746 */;
+import setFontSize from "setFontSize" /* 14437 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_8 from "_handleConnectionOpen" /* 5238 */;
-import closure_9 from "setActualFromUser" /* 1922 */;
-import closure_10 from "_getSystemLocale" /* 1995 */;
-import closure_11 from "handleThemeChange" /* 1301 */;
-import closure_12 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_13 from "mergeGuildAvatar" /* 1921 */;
-import closure_14 from "initialize" /* 7652 */;
-import { ThemeTypes } from "ME" /* 673 */;
-import { NewUserTypes } from "NewUserTypes" /* 12637 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE" /* 11295 */;
-import { SystemThemeState } from "SystemThemeState" /* 1304 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_8 from "_handleConnectionOpen" /* 5277 */;
+import closure_9 from "setActualFromUser" /* 1372 */;
+import closure_10 from "_getSystemLocale" /* 2025 */;
+import closure_11 from "handleThemeChange" /* 1183 */;
+import closure_12 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import closure_13 from "mergeGuildAvatar" /* 1371 */;
+import closure_14 from "initialize" /* 7719 */;
+import { ThemeTypes } from "ME" /* 1074 */;
+import { NewUserTypes } from "NewUserTypes" /* 12705 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE" /* 11363 */;
+import { SystemThemeState } from "SystemThemeState" /* 1186 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handleNewUserOnboarding() {
@@ -58,13 +58,13 @@ function handleLaunchWelcomeReset() {
   const result1 = UNSAFE_isDismissibleContentDismissed.UNSAFE_markDismissibleContentAsDismissed(DismissibleContent.DismissibleContent.SEEN_OLD_DESIGN);
 }
 function showVibingWumpus() {
-  let obj = _modDef4731;
+  let obj = _modDef4763;
   obj = {
     onClose() {
 
     }
   };
-  obj.pushLazy(asyncRequireImpl(11334, dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
+  obj.pushLazy(asyncRequireImpl(11402, dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
 }
 function handleResetDoubleTapState() {
   const result = updateUserGuildSettings.removeDismissedContent(DismissibleContent.DismissibleContent.DOUBLE_TAP_TO_REACT_UPSELL);
@@ -78,9 +78,9 @@ function handleResetDoubleTapState() {
   }, updateUserGuildSettings.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }
 function launchTotpSetupSuccess() {
-  let arr = _modDef4731;
+  let arr = _modDef4763;
   arr = arr.pop();
-  const items = [asyncRequireImpl(14706, dependencyMap.paths), asyncRequireImpl(14708, dependencyMap.paths)];
+  const items = [asyncRequireImpl(14781, dependencyMap.paths), asyncRequireImpl(14783, dependencyMap.paths)];
   Promise.all(items).then((arg0) => {
     const iter = arg0[Symbol.iterator]();
     let nextResult;
@@ -147,7 +147,7 @@ function _handleShowAppRatingModal() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = closure_1_1(13621)();
+            obj1[0] = closure_1_1(13697)();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -170,7 +170,7 @@ function _handleShowAppRatingModal() {
             str2 = "Review request failed: " + closure_1_0.error;
           }
           obj2[2] = str2;
-          callback(4194).open(obj2);
+          callback(4259).open(obj2);
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -197,9 +197,9 @@ createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { padding: ThemesDefault.space.PX_16 };
 let closure_24 = createCacheKey.createStyles(createCacheKey);
 function launchMFA() {
-  let arr = _modDef4731;
+  let arr = _modDef4763;
   arr = arr.pop();
-  asyncRequireImpl(15588, dependencyMap.paths).then((openMFAModal) => {
+  asyncRequireImpl(15664, dependencyMap.paths).then((openMFAModal) => {
     const items = [{ type: "webauthn", challenge: "{}" }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
     openMFAModal.openMFAModal({ ticket: "ticket", methods: items }, () => {
 
@@ -214,27 +214,27 @@ let result = require("set").fileFinishedImporting("modules/devtools/native/compo
 export default function DevToolsQuickActionsScreen() {
   const tmp = callback4();
   const tmp5 = locale;
-  let obj = locale(586);
+  let obj = locale(504);
   const items = [closure_11, closure_10, closure_12, closure_14];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ theme: theme.theme, usingSystemTheme: useSystemTheme.useSystemTheme === constants.ON, locale: locale.locale, showDevWidget: showDevWidget.showDevWidget }));
   ({ usingSystemTheme, locale } = stateFromStoresObject);
   const showDevWidget = stateFromStoresObject.showDevWidget;
-  obj1 = locale(586);
+  obj1 = locale(504);
   const items1 = [closure_13];
   dependencyMap = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  let obj2 = locale(586);
+  let obj2 = locale(504);
   const items2 = [closure_9];
   const callback = obj2.useStateFromStores(items2, () => premiumTypeOverride.getPremiumTypeOverride());
-  const tmp4 = showDevWidget(1627)();
+  const tmp4 = showDevWidget(1611)();
   [tmp8, closure_4] = callback(setting.useState(false), 2);
-  let IgnoreProfileSpeedbumpDisabled = locale(4166).IgnoreProfileSpeedbumpDisabled;
+  let IgnoreProfileSpeedbumpDisabled = locale(1935).IgnoreProfileSpeedbumpDisabled;
   setting = IgnoreProfileSpeedbumpDisabled.useSetting();
-  let obj3 = locale(586);
+  let obj3 = locale(504);
   const items3 = [closure_7];
   [][0] = locale;
   const stateFromStores = obj3.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   if (tmp8) {
-    return callback3(tmp5(15604).default, {});
+    return callback3(tmp5(15680).default, {});
   } else {
     obj = { style: null, contentContainerStyle: null, children: null };
     obj[0] = tmp.container;
@@ -248,15 +248,15 @@ export default function DevToolsQuickActionsScreen() {
     obj2 = { label: "Show Dev Widget", value: null, onValueChange: null };
     obj2[1] = showDevWidget;
     obj2[2] = function onValueChange() {
-      let obj = locale(15498);
+      let obj = locale(15574);
       obj = { showDevWidget: !showDevWidget };
       return obj.updateDevToolsSettings(obj);
     };
-    obj1[2] = callback3(tmp5(7141).TableSwitchRow, obj2);
-    const items5 = [callback3(tmp5(5642).TableRowGroup, obj1), , , , , , , , , ];
+    obj1[2] = callback3(tmp5(7201).TableSwitchRow, obj2);
+    const items5 = [callback3(tmp5(5687).TableRowGroup, obj1), , , , , , , , , ];
     obj3 = { size: null };
-    obj3[0] = tmp2(709).space.PX_16;
-    items5[1] = callback3(tmp5(1296).Spacer, obj3);
+    obj3[0] = tmp2(576).space.PX_16;
+    items5[1] = callback3(tmp5(1178).Spacer, obj3);
     let str = "Light Theme";
     if (usingSystemTheme) {
       str = "(using system theme)";
@@ -265,41 +265,41 @@ export default function DevToolsQuickActionsScreen() {
     const obj5 = { label: null, disabled: null, icon: null, value: null, onValueChange: null };
     obj5[0] = str;
     obj5[1] = usingSystemTheme;
-    obj5[2] = tmp14(tmp5(15191).ThemeLightIcon, {});
-    let tmp5Result = tmp5(1362);
+    obj5[2] = tmp14(tmp5(15267).ThemeLightIcon, {});
+    let tmp5Result = tmp5(4411);
     obj5[3] = tmp5Result.isThemeLight(stateFromStoresObject.theme);
     obj5[4] = handleThemeChange;
-    const items6 = [tmp14(tmp5(7141).TableSwitchRow, obj5), ];
+    const items6 = [tmp14(tmp5(7201).TableSwitchRow, obj5), ];
     const obj6 = { label: "Reduced Motion", icon: null, value: null, onValueChange: null };
-    obj6[1] = tmp14(tmp5(15251).AccessibilityIcon, {});
+    obj6[1] = tmp14(tmp5(15327).AccessibilityIcon, {});
     obj6[2] = stateFromStores;
     obj6[3] = handleReducedMotionChange;
-    items6[1] = tmp14(tmp5(7141).TableSwitchRow, obj6);
+    items6[1] = tmp14(tmp5(7201).TableSwitchRow, obj6);
     obj4[2] = items6;
-    items5[2] = closure_22(tmp5(5642).TableRowGroup, obj4);
+    items5[2] = closure_22(tmp5(5687).TableRowGroup, obj4);
     const obj7 = { size: null };
-    obj7[0] = tmp2(709).space.PX_16;
-    items5[3] = tmp14(tmp5(1296).Spacer, obj7);
+    obj7[0] = tmp2(576).space.PX_16;
+    items5[3] = tmp14(tmp5(1178).Spacer, obj7);
     const obj8 = { title: "Override Client-Side Premium Type", hasIcons: true, children: null };
     obj8[2] = closure_17.map((arg0) => {
       ({ label, value } = arg0);
       locale = value;
-      return closure_1_21(locale(7141).TableSwitchRow, {
+      return closure_1_21(locale(7201).TableSwitchRow, {
         onValueChange(arg0) {
           const result = locale(table[48]).updateClientPremiumTypeOverride(arg0 ? closure_0 : closure_2_18, closure_1_2);
         },
         label,
-        icon: closure_1_21(locale(10179).PencilIcon, {}),
+        icon: closure_1_21(locale(10250).PencilIcon, {}),
         value: value === closure_3
       }, label);
     });
-    items5[4] = tmp14(tmp5(5642).TableRowGroup, obj8);
+    items5[4] = tmp14(tmp5(5687).TableRowGroup, obj8);
     const obj9 = { size: null };
-    obj9[0] = tmp2(709).space.PX_16;
-    items5[5] = tmp14(tmp5(1296).Spacer, obj9);
+    obj9[0] = tmp2(576).space.PX_16;
+    items5[5] = tmp14(tmp5(1178).Spacer, obj9);
     const obj10 = { title: null, hasIcons: true, children: null };
-    const intl = tmp5(1233).intl;
-    obj10[0] = intl.string(tmp5(1233).t["Aojq+L"]);
+    const intl = tmp5(1114).intl;
+    obj10[0] = intl.string(tmp5(1114).t["Aojq+L"]);
     let str2 = "Change to en-US";
     if ("en-US" === locale) {
       str2 = "Change to pt-BR";
@@ -307,122 +307,122 @@ export default function DevToolsQuickActionsScreen() {
     const obj11 = { label: null, subLabel: "Toggle to a non-english locale for change log testing, etc.", onPress: null, icon: null, trailing: null };
     obj11[0] = str2;
     obj11[2] = tmp11;
-    obj11[3] = tmp14(tmp5(15345).LanguageIcon, {});
-    obj11[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    const items7 = [tmp14(tmp5(5560).TableRow, obj11), , , , , , , , , ];
+    obj11[3] = tmp14(tmp5(15421).LanguageIcon, {});
+    obj11[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    const items7 = [tmp14(tmp5(5605).TableRow, obj11), , , , , , , , , ];
     const obj12 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: null, icon: null, trailing: null };
     obj12[2] = handleResetDoubleTapState;
-    obj12[3] = tmp14(tmp5(6898).KeyIcon, {});
-    obj12[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[1] = tmp14(tmp5(5560).TableRow, obj12);
+    obj12[3] = tmp14(tmp5(6958).KeyIcon, {});
+    obj12[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[1] = tmp14(tmp5(5605).TableRow, obj12);
     const obj13 = { label: null, subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
-    const intl2 = tmp5(1233).intl;
-    obj13[0] = intl2.string(tmp5(1233).t.yoWDXU);
+    const intl2 = tmp5(1114).intl;
+    obj13[0] = intl2.string(tmp5(1114).t.yoWDXU);
     obj13[2] = handleNewUserOnboarding;
-    obj13[3] = tmp14(tmp5(15486).WrenchIcon, {});
-    obj13[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[2] = tmp14(tmp5(5560).TableRow, obj13);
+    obj13[3] = tmp14(tmp5(15562).WrenchIcon, {});
+    obj13[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[2] = tmp14(tmp5(5605).TableRow, obj13);
     const obj14 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
     obj14[2] = launchMFA;
-    obj14[3] = tmp14(tmp5(6898).KeyIcon, {});
-    obj14[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[3] = tmp14(tmp5(5560).TableRow, obj14);
+    obj14[3] = tmp14(tmp5(6958).KeyIcon, {});
+    obj14[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[3] = tmp14(tmp5(5605).TableRow, obj14);
     const obj15 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
     obj15[2] = launchTotpSetupSuccess;
-    obj15[3] = tmp14(tmp5(6898).KeyIcon, {});
-    obj15[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[4] = tmp14(tmp5(5560).TableRow, obj15);
+    obj15[3] = tmp14(tmp5(6958).KeyIcon, {});
+    obj15[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[4] = tmp14(tmp5(5605).TableRow, obj15);
     const obj16 = { label: "Reset Launch Welcome", subLabel: "Resets launch welcome NUX flag, requires an app restart to take effect.", onPress: null, icon: null, trailing: null };
     obj16[2] = handleLaunchWelcomeReset;
-    obj16[3] = tmp14(tmp5(6898).KeyIcon, {});
-    obj16[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[5] = tmp14(tmp5(5560).TableRow, obj16);
+    obj16[3] = tmp14(tmp5(6958).KeyIcon, {});
+    obj16[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[5] = tmp14(tmp5(5605).TableRow, obj16);
     const obj17 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: null, icon: null, trailing: null };
     obj17[2] = showVibingWumpus;
-    obj17[3] = tmp14(tmp5(6898).KeyIcon, {});
-    obj17[4] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[6] = tmp14(tmp5(5560).TableRow, obj17);
+    obj17[3] = tmp14(tmp5(6958).KeyIcon, {});
+    obj17[4] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[6] = tmp14(tmp5(5605).TableRow, obj17);
     const obj18 = { label: "Test captcha", onPress: null, icon: null, trailing: null };
-    obj18[1] = tmp5(15606).showCaptchaTestModal;
-    obj18[2] = tmp14(tmp5(6898).KeyIcon, {});
-    obj18[3] = tmp14(tmp5(5567).TableRowArrow, {});
-    items7[7] = tmp14(tmp5(5560).TableRow, obj18);
+    obj18[1] = tmp5(15682).showCaptchaTestModal;
+    obj18[2] = tmp14(tmp5(6958).KeyIcon, {});
+    obj18[3] = tmp14(tmp5(5612).TableRowArrow, {});
+    items7[7] = tmp14(tmp5(5605).TableRow, obj18);
     const obj19 = { label: "Ignored Profile Speedbump Suppression", subLabel: "Suppresses the speedbump for ignored profiles.", icon: null, value: null, onValueChange: null };
-    obj19[2] = tmp14(tmp5(6908).EyeSlashIcon, {});
+    obj19[2] = tmp14(tmp5(6968).EyeSlashIcon, {});
     obj19[3] = setting;
     obj19[4] = function onValueChange() {
-      const IgnoreProfileSpeedbumpDisabled = locale(4166).IgnoreProfileSpeedbumpDisabled;
+      const IgnoreProfileSpeedbumpDisabled = locale(1935).IgnoreProfileSpeedbumpDisabled;
       return IgnoreProfileSpeedbumpDisabled.updateSetting(!setting);
     };
-    items7[8] = tmp14(tmp5(7141).TableSwitchRow, obj19);
+    items7[8] = tmp14(tmp5(7201).TableSwitchRow, obj19);
     const obj20 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: null, icon: null };
     obj20[2] = handleShowAppRatingModal;
-    obj20[3] = tmp14(tmp5(15486).WrenchIcon, {});
-    items7[9] = tmp14(tmp5(5560).TableRow, obj20);
+    obj20[3] = tmp14(tmp5(15562).WrenchIcon, {});
+    items7[9] = tmp14(tmp5(5605).TableRow, obj20);
     obj10[2] = items7;
-    items5[6] = closure_22(tmp5(5642).TableRowGroup, obj10);
+    items5[6] = closure_22(tmp5(5687).TableRowGroup, obj10);
     const obj21 = { size: null };
-    obj21[0] = tmp2(709).space.PX_16;
-    items5[7] = tmp14(tmp5(1296).Spacer, obj21);
+    obj21[0] = tmp2(576).space.PX_16;
+    items5[7] = tmp14(tmp5(1178).Spacer, obj21);
     const obj22 = { title: "Crash Actions", hasIcons: true, children: null };
     const obj23 = { icon: null, label: "Force Native Crash", onPress: null };
-    obj23[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj23[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj23[2] = function onPress() {
-      return showDevWidget(1205).crash();
+      return showDevWidget(1232).crash();
     };
-    const items8 = [tmp14(tmp5(5560).TableRow, obj23), , , , , ];
+    const items8 = [tmp14(tmp5(5605).TableRow, obj23), , , , , ];
     const obj24 = { icon: null, label: "Force JS Crash", onPress: null };
-    obj24[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj24[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj24[2] = function onPress() {
       error = new Error("Force JS Crash");
       throw error;
     };
-    items8[1] = tmp14(tmp5(5560).TableRow, obj24);
+    items8[1] = tmp14(tmp5(5605).TableRow, obj24);
     const obj25 = { icon: null, label: "Force JS Boundary Crash", onPress: null };
-    obj25[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj25[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj25[2] = function onPress() {
       callback(true);
     };
-    items8[2] = tmp14(tmp5(5560).TableRow, obj25);
+    items8[2] = tmp14(tmp5(5605).TableRow, obj25);
     const obj26 = { icon: null, label: "Force libdiscore Crash", onPress: null };
-    obj26[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj26[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj26[2] = function onPress() {
-      locale(1915).crash();
+      locale(1351).crash();
     };
-    items8[3] = tmp14(tmp5(5560).TableRow, obj26);
+    items8[3] = tmp14(tmp5(5605).TableRow, obj26);
     const obj27 = { icon: null, label: "Force libdiscore Store Crash", subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore", onPress: null };
-    obj27[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj27[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj27[3] = function onPress() {
-      showDevWidget(706).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
+      showDevWidget(573).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
     };
-    items8[4] = tmp14(tmp5(5560).TableRow, obj27);
+    items8[4] = tmp14(tmp5(5605).TableRow, obj27);
     const obj28 = { icon: null, label: "Force libdiscore Store Error", subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset", onPress: null };
-    obj28[0] = tmp14(tmp5(15486).WrenchIcon, {});
+    obj28[0] = tmp14(tmp5(15562).WrenchIcon, {});
     obj28[3] = function onPress() {
       const socket2 = socket.getSocket();
-      const obj = showDevWidget(706);
-      showDevWidget(706).dispatch({ type: "LIBDISCORE_SIMULATE_STORE_ERROR" }).catch((error) => {
+      const obj = showDevWidget(573);
+      showDevWidget(573).dispatch({ type: "LIBDISCORE_SIMULATE_STORE_ERROR" }).catch((error) => {
         const result = closure_0.resetSocketOnDispatchError({ error, action: "LIBDISCORE_SIMULATE_STORE_ERROR" });
       });
     };
-    items8[5] = tmp14(tmp5(5560).TableRow, obj28);
+    items8[5] = tmp14(tmp5(5605).TableRow, obj28);
     obj22[2] = items8;
-    items5[8] = closure_22(tmp5(5642).TableRowGroup, obj22);
-    tmp5Result = tmp5(1234);
+    items5[8] = closure_22(tmp5(5687).TableRowGroup, obj22);
+    tmp5Result = tmp5(1115);
     let isIOSResult = tmp5Result.isIOS();
     if (isIOSResult) {
       const obj29 = { children: null };
       const obj30 = { size: null };
-      obj30[0] = tmp2(709).space.PX_16;
-      const items9 = [tmp14(tmp5(1296).Spacer, obj30), ];
+      obj30[0] = tmp2(576).space.PX_16;
+      const items9 = [tmp14(tmp5(1178).Spacer, obj30), ];
       const obj31 = { title: "Memory Actions", hasIcons: true, children: null };
       const obj32 = { icon: null, label: "Trigger Memory Warning", subLabel: "Simulates a memory warning to test cache-eviction behavior (e.g. SDWebImage).", onPress: null };
-      obj32[0] = tmp14(tmp5(15486).WrenchIcon, {});
+      obj32[0] = tmp14(tmp5(15562).WrenchIcon, {});
       obj32[3] = function onPress() {
-        return showDevWidget(1205).triggerMemoryWarning();
+        return showDevWidget(1232).triggerMemoryWarning();
       };
-      obj31[2] = tmp14(tmp5(5560).TableRow, obj32);
-      items9[1] = tmp14(tmp5(5642).TableRowGroup, obj31);
+      obj31[2] = tmp14(tmp5(5605).TableRow, obj32);
+      items9[1] = tmp14(tmp5(5687).TableRowGroup, obj31);
       obj29[0] = items9;
       isIOSResult = tmp12(closure_23, obj29);
     }

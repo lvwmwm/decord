@@ -1,9 +1,9 @@
-// Module ID: 14430
-// Function ID: 14431
-// Dependencies: [1995, 673, 8269, 2]
+// Module ID: 14505
+// Function ID: 14506
+// Dependencies: [2025, 1074, 8339, 2]
 
-// Module 14430
-import closure_0 from "_getSystemLocale" /* 1995 */;
+// Module 14505
+import closure_0 from "_getSystemLocale" /* 2025 */;
 
 let obj = {};
 obj = {

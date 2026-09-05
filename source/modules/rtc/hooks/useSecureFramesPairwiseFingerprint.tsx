@@ -1,18 +1,18 @@
-// Module ID: 9085
-// Function ID: 9086
+// Module ID: 9156
+// Function ID: 9157
 // Name: _computeNativeDisplayPair
-// Dependencies: [32, 5, 19, 1215, 4532, 4557, 9081, 4545, 206, 586, 38, 9086, 2]
+// Dependencies: [32, 5, 19, 502, 1908, 4583, 9152, 4585, 206, 504, 38, 9157, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9085 (_computeNativeDisplayPair)
+// Module 9156 (_computeNativeDisplayPair)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_8 from "createRTCConnection" /* 4557 */;
-import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_9 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
-import { Features } from "DesktopSources" /* 4545 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_8 from "createRTCConnection" /* 4583 */;
+import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_9 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
+import { Features } from "DesktopSources" /* 4585 */;
 
 const require = arg1;
 function _computeNativeDisplayPair() {

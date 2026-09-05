@@ -1,19 +1,19 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7595
+// Function ID: 7596
 // Name: processMessage
-// Dependencies: [32, 7529, 1386, 4743, 673, 1401, 4745, 7533, 586, 706, 2]
+// Dependencies: [32, 7596, 1957, 4781, 1074, 1437, 4783, 7600, 504, 573, 2]
 
-// Module 7528 (processMessage)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1401 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7533 */;
+// Module 7595 (processMessage)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import privDefault from "priv" /* 1437 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4783 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7600 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "removePendingListFetch" /* 7529 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "reinjectEphemerals" /* 4743 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "removePendingListFetch" /* 7596 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "reinjectEphemerals" /* 4781 */;
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;

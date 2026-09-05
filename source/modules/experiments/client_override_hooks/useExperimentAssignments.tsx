@@ -1,14 +1,14 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11810
+// Function ID: 11811
 // Name: useExperimentAssignment
-// Dependencies: [32, 4394, 1209, 586, 4402, 2]
+// Dependencies: [32, 4476, 1236, 504, 4481, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 11742 (useExperimentAssignment)
-import trackExposureToExperiment from "trackExposureToExperiment" /* 4402 */;
+// Module 11810 (useExperimentAssignment)
+import trackExposureToExperiment from "trackExposureToExperiment" /* 4481 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getHash" /* 4394 */;
-import closure_4 from "initialize" /* 1209 */;
+import closure_3 from "getHash" /* 4476 */;
+import closure_4 from "initialize" /* 1236 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/experiments/client_override_hooks/useExperimentAssignments.tsx");
@@ -17,7 +17,7 @@ export const useExperimentAssignment = function useExperimentAssignment(experime
   const _require = experiment;
   dependencyMap = arg1;
   const items = [closure_3, closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (experiment.system === experiment(table[4]).ExperimentSystem.LEGACY) {
       const userExperimentDescriptor = closure_1_3.getUserExperimentDescriptor(tmp.name);
       let bucket;
@@ -54,7 +54,7 @@ export const useExperimentServerAssignment = function useExperimentServerAssignm
   const _require = experiment;
   dependencyMap = arg1;
   let items = [closure_3, closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let name = experiment;
     const items = [closure_1_3, closure_1_4];
     [obj, obj2] = closure_1_2(items, 2);

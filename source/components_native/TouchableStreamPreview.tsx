@@ -1,24 +1,24 @@
-// Module ID: 9987
-// Function ID: 9988
+// Module ID: 10058
+// Function ID: 10059
 // Name: StreamPreviewContainer
-// Dependencies: [19, 17, 4498, 4503, 1215, 1386, 1908, 4120, 4500, 673, 21, 4481, 4329, 709, 4673, 586, 1233, 5372, 4670, 4730, 4729, 4547, 4953, 9988, 4477, 2]
+// Dependencies: [19, 17, 4577, 4582, 502, 1957, 1979, 4199, 4579, 1074, 21, 4560, 4409, 576, 4705, 504, 1114, 5411, 4702, 4762, 4761, 4612, 4992, 10059, 4556, 2]
 // Exports: default
 
-// Module 9987 (StreamPreviewContainer)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 10058 (StreamPreviewContainer)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "set" /* 4498 */;
-import closure_6 from "reset" /* 4503 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "updateVoiceState" /* 4500 */;
-import { Permissions } from "ME" /* 673 */;
+import closure_5 from "set" /* 4577 */;
+import closure_6 from "reset" /* 4582 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "updateVoiceState" /* 4579 */;
+import { Permissions } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
 
 const require = arg1;
 function StreamPreviewContainer(disableTransition) {
@@ -128,11 +128,11 @@ let result = require("set").fileFinishedImporting("components_native/TouchableSt
 
 export default function VoiceChannelSettingsStreamPreview(arg0) {
   const _require = arg0;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getStreamForUser(closure_0.userId, closure_0.guildId));
   const items1 = [closure_8];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => {
     let channel = null;
     if (null != stateFromStores) {
       channel = closure_1_8.getChannel(tmp.channelId);

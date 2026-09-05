@@ -1,9 +1,9 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9115
+// Function ID: 9116
 // Name: VOICE_PANEL_SETTINGS_KEY
 // Dependencies: [2]
 
-// Module 9044 (VOICE_PANEL_SETTINGS_KEY)
+// Module 9115 (VOICE_PANEL_SETTINGS_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx");

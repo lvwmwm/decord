@@ -1,15 +1,15 @@
-// Module ID: 10294
-// Function ID: 10295
+// Module ID: 10365
+// Function ID: 10366
 // Name: getFormatFromUrl
-// Dependencies: [673, 1340, 1233, 586, 706, 2]
+// Dependencies: [1074, 1222, 1114, 504, 573, 2]
 
-// Module 10294 (getFormatFromUrl)
+// Module 10365 (getFormatFromUrl)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import create from "create" /* 1340 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import create from "create" /* 1222 */;
 
 function getFormatFromUrl(src) {
   try {

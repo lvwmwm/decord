@@ -1,19 +1,19 @@
-// Module ID: 10224
-// Function ID: 10225
+// Module ID: 10295
+// Function ID: 10296
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 1991, 1921, 10225, 673, 21, 4481, 709, 1233, 1994, 695, 9225, 6915, 10226, 4477, 4936, 2]
+// Dependencies: [19, 17, 2021, 1371, 10296, 1074, 21, 4560, 576, 1114, 2024, 1242, 9296, 6975, 10297, 4556, 4975, 2]
 // Exports: default
 
-// Module 10224 (NsfwGateGuild)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 10295 (NsfwGateGuild)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { NsfwGateSource } from "NsfwGateSource" /* 10225 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { NsfwGateSource } from "NsfwGateSource" /* 10296 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
@@ -32,14 +32,14 @@ export default function NsfwGateGuild(guildId) {
   guildId = guildId.guildId;
   let currentUser;
   const tmp = callback3();
-  const intl = guildId(1233).intl;
-  const intl2 = guildId(1233).intl;
-  const stringResult = intl.string(guildId(1233).t.vAymlG);
-  const intl3 = guildId(1233).intl;
+  const intl = guildId(1114).intl;
+  const intl2 = guildId(1114).intl;
+  const stringResult = intl.string(guildId(1114).t.vAymlG);
+  const intl3 = guildId(1114).intl;
   let obj = { helpURL: null };
-  obj1 = currentUser(1994);
+  obj1 = currentUser(2024);
   obj[0] = obj1.getArticleURL(constants.NSFW_GUILD_GUIDELINES);
-  const stringResult1 = intl2.string(guildId(1233).t.Crj6eC);
+  const stringResult1 = intl2.string(guildId(1114).t.Crj6eC);
   currentUser = currentUser.getCurrentUser();
   const items = [guildId, currentUser];
   const effect = React.useEffect(() => {
@@ -68,19 +68,19 @@ export default function NsfwGateGuild(guildId) {
     obj.track(closure_1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(currentUser(6915), {}), , , , , ];
-  obj = { source: currentUser(10226), style: tmp.image };
+  const items1 = [callback(currentUser(6975), {}), , , , , ];
+  obj = { source: currentUser(10297), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = callback(guildId(4477).Text, obj1);
-  items1[3] = callback(guildId(4477).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
-  const formatResult = intl3.format(guildId(1233).t.Z12LNW, obj);
+  items1[2] = callback(guildId(4556).Text, obj1);
+  items1[3] = callback(guildId(4556).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
+  const formatResult = intl3.format(guildId(1114).t.Z12LNW, obj);
   const obj2 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[4] = callback(guildId(4477).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1233).t.Z12LNW, obj) });
+  items1[4] = callback(guildId(4556).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1114).t.Z12LNW, obj) });
   const obj4 = { onPress: guildId.onClose, size: "md", text: null };
-  const intl4 = guildId(1233).intl;
-  obj4[2] = intl4.string(guildId(1233).t.gRqiWV);
-  items1[5] = callback(guildId(4936).Button, obj4);
+  const intl4 = guildId(1114).intl;
+  obj4[2] = intl4.string(guildId(1114).t.gRqiWV);
+  items1[5] = callback(guildId(4975).Button, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

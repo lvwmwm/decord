@@ -1,14 +1,14 @@
-// Module ID: 14924
-// Function ID: 14925
+// Module ID: 14999
+// Function ID: 15000
 // Name: FiltersHorizontalIcon
-// Dependencies: [19, 21, 709, 4196, 14925, 2]
+// Dependencies: [19, 21, 576, 4261, 15000, 2]
 // Exports: FiltersHorizontalIcon
 
-// Module 14924 (FiltersHorizontalIcon)
+// Module 14999 (FiltersHorizontalIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14925 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15000 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

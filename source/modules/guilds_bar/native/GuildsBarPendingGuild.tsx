@@ -1,16 +1,16 @@
-// Module ID: 16269
-// Function ID: 16270
-// Dependencies: [19, 4303, 1430, 4302, 5398, 21, 4481, 709, 16218, 4197, 586, 5539, 16251, 16220, 4305, 5482, 16232, 16261, 16210, 4218, 16240, 5542, 2]
+// Module ID: 16345
+// Function ID: 16346
+// Dependencies: [19, 4382, 1975, 4381, 5438, 21, 4560, 576, 16294, 4262, 504, 5584, 16327, 16296, 4384, 5527, 16308, 16337, 16286, 4296, 16316, 5587, 2]
 
-// Module 16269
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16345
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import closure_7 from "handleConnectionOpen" /* 4302 */;
-import closure_8 from "insertUnsortedGuilds" /* 5398 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1975 */;
+import closure_7 from "handleConnectionOpen" /* 4381 */;
+import closure_8 from "insertUnsortedGuilds" /* 5438 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -119,7 +119,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuild(guildId) 
   ({ accessibilityActions, onAccessibilityAction } = memo1);
   tmp2Result = tmp2(tmp3[19]);
   const sharedValue = tmp2Result.useSharedValue(guildId);
-  obj = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "function runOnUI_Pnpm_threadsTs3(worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,IS_JEST,ReanimatedModule,makeShareableCloneRecursive,callMicrotasks}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&_WORKLET){throw new ReanimatedError('`runOnUI` cannot be called on the UI runtime. Please call the function synchronously or use `queueMicrotask` or `requestAnimationFrame` instead.');}if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('`runOnUI` can only be used with worklets.');}return function(...args){if(IS_JEST){ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));return;}if(__DEV__){makeShareableCloneRecursive(worklet);makeShareableCloneRecursive(args);}_runOnUIQueue.push([worklet,args]);if(_runOnUIQueue.length===1){queueMicrotask(function(){const queue=_runOnUIQueue;_runOnUIQueue=[];ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';queue.forEach(function([worklet,args]){worklet(...args);});callMicrotasks();}));});}};}" };
+  obj = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "nl-CW" };
   let str = guildName;
   let tmp5Result = tmp5(tmp3[8]);
   if (guildName == null) {
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuild(guildId) 
     tmp19Result = tmp19(tmp5Result, obj1);
   }
   obj[14] = tmp19Result;
-  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="PX_16" unread={null} label={null} config={null} styles={null} externalChildren={null} expandedChildren={null}>{"function runOnUI_Pnpm_threadsTs3(worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,IS_JEST,ReanimatedModule,makeShareableCloneRecursive,callMicrotasks}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&_WORKLET){throw new ReanimatedError('`runOnUI` cannot be called on the UI runtime. Please call the function synchronously or use `queueMicrotask` or `requestAnimationFrame` instead.');}if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('`runOnUI` can only be used with worklets.');}return function(...args){if(IS_JEST){ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));return;}if(__DEV__){makeShareableCloneRecursive(worklet);makeShareableCloneRecursive(args);}_runOnUIQueue.push([worklet,args]);if(_runOnUIQueue.length===1){queueMicrotask(function(){const queue=_runOnUIQueue;_runOnUIQueue=[];ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';queue.forEach(function([worklet,args]){worklet(...args);});callMicrotasks();}));});}};}"}</tmp5Result>;
+  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="PX_16" unread={null} label={null} config={null} styles={null} externalChildren={null} expandedChildren={null}>{"nl-CW"}</tmp5Result>;
 });
 let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuild.tsx");
 

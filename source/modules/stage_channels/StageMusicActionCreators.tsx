@@ -1,12 +1,12 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 9913
+// Function ID: 9914
 // Name: updateStageMusicMuted
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 9842 (updateStageMusicMuted)
+// Module 9913 (updateStageMusicMuted)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/stage_channels/StageMusicActionCreators.tsx");
 

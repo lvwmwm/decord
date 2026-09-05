@@ -1,12 +1,12 @@
-// Module ID: 11048
-// Function ID: 11049
+// Module ID: 11116
+// Function ID: 11117
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [11047, 1233, 2]
+// Dependencies: [11115, 1114, 2]
 // Exports: default
 
-// Module 11048 (getRandomCustomStatusPrompt)
+// Module 11116 (getRandomCustomStatusPrompt)
 import set from "set" /* 2 */;
-import StatusTypes from "StatusTypes" /* 11047 */;
+import StatusTypes from "StatusTypes" /* 11115 */;
 
 ({ CustomStatusPrompts: obj1, CustomStatusPromptValues: c3 } = StatusTypes);
 const result = set.fileFinishedImporting("modules/custom_status/utils/getRandomCustomStatusPrompt.tsx");
@@ -21,8 +21,8 @@ export default function getRandomCustomStatusPrompt(size) {
       const obj = { value: null, label: null };
       obj[0] = constants.ADD_STATUS;
       obj[1] = function label() {
-        const intl = size(1233).intl;
-        return intl.string(size(1233).t.Vq4UmS);
+        const intl = size(1114).intl;
+        return intl.string(size(1114).t.Vq4UmS);
       };
       let tmp3 = obj;
     } else {

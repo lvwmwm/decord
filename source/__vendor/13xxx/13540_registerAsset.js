@@ -1,10 +1,10 @@
 // Module ID: 13540
 // Function ID: 13541
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13540 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 23, scales: [2, 3], hash: "28792e38fe66a9bcb0dec80f42dff8d4", name: "tier_2_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 45.5, height: 8.5, scales: [2, 3], hash: "8d16389f341b45c184ca21d1deb5fd2e", name: "img_logo_discord", type: "png" });

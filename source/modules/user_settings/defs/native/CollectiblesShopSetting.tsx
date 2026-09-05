@@ -1,14 +1,14 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15804
+// Function ID: 15805
 // Name: route
-// Dependencies: [673, 11400, 1233, 12070, 15729, 7474, 7122, 2]
+// Dependencies: [1074, 11468, 1114, 12138, 15805, 7541, 7182, 2]
 
-// Module 15728 (route)
+// Module 15804 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ShopIcon from "ShopIcon" /* 12070 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ShopIcon from "ShopIcon" /* 12138 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -20,11 +20,11 @@ obj = {
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(7474);
+      let obj = callback(7541);
       obj = { analyticsLocations: null, analyticsSource: null };
-      const items = [callback2(7122).USER_SETTINGS];
+      const items = [callback2(7182).USER_SETTINGS];
       obj[0] = items;
-      obj[1] = callback2(7122).USER_SETTINGS;
+      obj[1] = callback2(7182).USER_SETTINGS;
       const result = obj.openCollectiblesShopMobile(obj);
       return false;
     };
@@ -33,7 +33,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.COLLECTIBLES_SHOP,
   getComponent() {
-    return require(15729) /* CollectiblesShopScreen */.default;
+    return require(15805) /* CollectiblesShopScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

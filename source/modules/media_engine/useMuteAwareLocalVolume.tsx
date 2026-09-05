@@ -1,12 +1,12 @@
-// Module ID: 9946
-// Function ID: 9947
+// Module ID: 10017
+// Function ID: 10018
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 4532, 586, 9019, 2]
+// Dependencies: [19, 1908, 504, 9089, 2]
 // Exports: default
 
-// Module 9946 (useMuteAwareLocalVolume)
+// Module 10017 (useMuteAwareLocalVolume)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_engine/useMuteAwareLocalVolume.tsx");
@@ -15,7 +15,7 @@ export default function useMuteAwareLocalVolume(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
   let obj = {
-    effectiveVolume: _require(586).useStateFromStores(items, () => {
+    effectiveVolume: _require(504).useStateFromStores(items, () => {
       let num = 0;
       if (null != closure_0) {
         num = 0;

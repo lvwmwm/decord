@@ -1,9 +1,9 @@
-// Module ID: 4371
-// Function ID: 4372
+// Module ID: 4453
+// Function ID: 4454
 // Name: VANITY_URL_POWERUP_SKU_ID
 // Dependencies: [2]
 
-// Module 4371 (VANITY_URL_POWERUP_SKU_ID)
+// Module 4453 (VANITY_URL_POWERUP_SKU_ID)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/Powerups.tsx");

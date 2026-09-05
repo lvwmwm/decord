@@ -1,13 +1,13 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5130
+// Function ID: 5131
 // Name: getNitroFileUploadLimitBytes
-// Dependencies: [1923, 1468, 2]
+// Dependencies: [1373, 1433, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNonNitroFileUploadMarketingConfig, useNitroFileUploadRolloutEnabled, useNonNitroFileUploadMarketingEnabled
 
-// Module 5091 (getNitroFileUploadLimitBytes)
+// Module 5130 (getNitroFileUploadLimitBytes)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 ({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: c0, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: closure_1 } = GuildFeatures);
 const obj = { 1: null };

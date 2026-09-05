@@ -1,11 +1,11 @@
-// Module ID: 1364
-// Function ID: 1365
+// Module ID: 4376
+// Function ID: 4377
 // Name: WCAGContrastRatios
-// Dependencies: [32, 686, 2]
+// Dependencies: [32, 672, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 1364 (WCAGContrastRatios)
-import nDefault from "n" /* 686 */;
+// Module 4376 (WCAGContrastRatios)
+import nDefault from "n" /* 672 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 let obj = { NonText: 3, Text: 4.5, HighContrastText: 7 };
@@ -30,7 +30,7 @@ export const getContrastingColor = function getContrastingColor(arg0, arg1) {
     base = arg0;
   }
   const tmp4Result = nDefault(base);
-  let obj3 = tmp2(686)(arg0);
+  let obj3 = tmp2(672)(arg0);
   const tmp4 = nDefault;
   const luminanceResult = tmp4Result.luminance();
   let contrastResult = nDefault.contrast(tmp4Result, obj3);

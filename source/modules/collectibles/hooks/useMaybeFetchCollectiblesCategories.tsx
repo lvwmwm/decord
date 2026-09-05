@@ -1,11 +1,11 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10735
+// Function ID: 10736
 // Name: set
-// Dependencies: [2, 10665]
+// Dependencies: [2, 10736]
 
-// Module 10664 (set)
+// Module 10735 (set)
 import set from "set" /* 2 */;
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10665 */;
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10736 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
 

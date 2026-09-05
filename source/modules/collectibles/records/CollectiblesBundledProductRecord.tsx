@@ -1,11 +1,11 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7545
+// Function ID: 7546
 // Name: fromServer
-// Dependencies: [4526, 2]
+// Dependencies: [5513, 2]
 
-// Module 7478 (fromServer)
+// Module 7545 (fromServer)
 import set from "set" /* 2 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 4526 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 5513 */;
 
 let prototype;
 prototype = function CollectiblesBundledProductRecord(arg0) {

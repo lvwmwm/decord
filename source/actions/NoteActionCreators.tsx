@@ -1,11 +1,11 @@
-// Module ID: 12991
-// Function ID: 12992
-// Dependencies: [673, 527, 2]
+// Module ID: 13059
+// Function ID: 13060
+// Dependencies: [1074, 1272, 2]
 
-// Module 12991
+// Module 13059
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("actions/NoteActionCreators.tsx");

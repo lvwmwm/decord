@@ -1,16 +1,16 @@
-// Module ID: 1430
-// Function ID: 1431
+// Module ID: 1975
+// Function ID: 1976
 // Name: GuildNSFWContentLevel
-// Dependencies: [1427, 673, 1431, 1901, 11, 1905, 2]
+// Dependencies: [1972, 1074, 1396, 1925, 11, 1976, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
-// Module 1430 (GuildNSFWContentLevel)
+// Module 1975 (GuildNSFWContentLevel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import isNullOrEmpty from "isNullOrEmpty" /* 1901 */;
-import apexExperiment from "apexExperiment" /* 1905 */;
-import isValueEqual from "isValueEqual" /* 1427 */;
-import ME from "ME" /* 673 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1925 */;
+import apexExperiment from "apexExperiment" /* 1976 */;
+import isValueEqual from "isValueEqual" /* 1972 */;
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 ({ set: c3, TypeTag } = isValueEqual);

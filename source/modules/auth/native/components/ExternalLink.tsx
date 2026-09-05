@@ -1,15 +1,15 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15981
+// Function ID: 15982
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4481, 709, 6884, 1498, 6914, 1233, 4477, 5393, 4936, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 6944, 1483, 6974, 1114, 4556, 5433, 4975, 2]
 // Exports: default
 
-// Module 15905 (ExternalLink)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15981 (ExternalLink)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ Linking: c4, ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
@@ -21,9 +21,9 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
     str = "space-between";
   }
   container[3] = str;
-  const space = tmp(709).space;
+  const space = tmp(576).space;
   container[4] = arg0 ? space.PX_24 : space.PX_16;
-  const space2 = tmp(709).space;
+  const space2 = tmp(576).space;
   container[5] = arg0 ? space2.PX_24 : space2.PX_16;
   return { container, description: { textAlign: "center", marginTop: 8 } };
 });

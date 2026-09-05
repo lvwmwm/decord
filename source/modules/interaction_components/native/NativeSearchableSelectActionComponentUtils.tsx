@@ -1,17 +1,17 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8122
+// Function ID: 8123
 // Name: transformSearchableSelectOptions
-// Dependencies: [1386, 1984, 1908, 1921, 673, 4753, 1394, 1434, 7127, 8054, 685, 709, 8055, 4989, 2]
+// Dependencies: [1957, 2015, 1979, 1371, 1074, 4792, 1369, 1399, 7187, 8123, 1091, 576, 8124, 5028, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8053 (transformSearchableSelectOptions)
-import getChannelIcon from "getChannelIcon" /* 4989 */;
-import registerAssetDefault from "registerAsset" /* 8055 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 8122 (transformSearchableSelectOptions)
+import getChannelIcon from "getChannelIcon" /* 5028 */;
+import registerAssetDefault from "registerAsset" /* 8124 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ ChannelTypes: error, DEFAULT_ROLE_COLOR: closure_8 } = ME);
@@ -105,7 +105,7 @@ export const transformSearchableSelectOptions = function transformSearchableSele
       return null;
     }
   });
-  return mapped.filter(_require(1394).isNotNullish);
+  return mapped.filter(_require(1369).isNotNullish);
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {

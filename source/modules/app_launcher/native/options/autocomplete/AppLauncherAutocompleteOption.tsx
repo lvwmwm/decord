@@ -1,18 +1,18 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12170
+// Function ID: 12171
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 673, 21, 4481, 709, 1890, 4448, 12103, 2008, 12101, 5084, 4477, 2]
+// Dependencies: [32, 19, 1074, 21, 4560, 576, 1874, 4527, 12171, 1896, 12169, 5123, 4556, 2]
 // Exports: default
 
-// Module 12102 (AppLauncherAutocompleteOption)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12101 */;
+// Module 12170 (AppLauncherAutocompleteOption)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12169 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { container: null, hasError: null, inputText: null };

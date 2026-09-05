@@ -1,16 +1,16 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 13040
+// Function ID: 13041
 // Name: useUserProfileActivity
-// Dependencies: [19, 8721, 4532, 4572, 4545, 586, 10809, 12973, 8066, 8271, 8267, 2]
+// Dependencies: [19, 8791, 1908, 4600, 4585, 504, 10878, 13041, 8135, 8341, 8337, 2]
 // Exports: default
 
-// Module 12972 (useUserProfileActivity)
+// Module 13040 (useUserProfileActivity)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
-import closure_4 from "map" /* 8721 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_6 from "sortActivity" /* 4572 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
+import closure_4 from "map" /* 8791 */;
+import closure_5 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_6 from "sortActivity" /* 4600 */;
 
 const useMemo = noop.useMemo;
 const Features = DesktopSources.Features;

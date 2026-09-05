@@ -1,27 +1,27 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17436
+// Function ID: 17437
 // Name: DefaultAvatarButton
-// Dependencies: [19, 17, 21, 17357, 17358, 17359, 17360, 17361, 17362, 17363, 17364, 1233, 4481, 709, 4477, 5084, 5542, 2]
+// Dependencies: [19, 17, 21, 17437, 17438, 17439, 17440, 17441, 17442, 17443, 17444, 1114, 4560, 576, 4556, 5123, 5587, 2]
 // Exports: default
 
-// Module 17356 (DefaultAvatarButton)
+// Module 17436 (DefaultAvatarButton)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import preloadDefault from "preload" /* 5542 */;
-import setDefault from "set" /* 17357 */;
-import setDefault2 from "set" /* 17358 */;
-import setDefault3 from "set" /* 17359 */;
-import setDefault4 from "set" /* 17360 */;
-import setDefault5 from "set" /* 17361 */;
-import setDefault6 from "set" /* 17362 */;
-import setDefault7 from "set" /* 17363 */;
-import setDefault8 from "set" /* 17364 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import preloadDefault from "preload" /* 5587 */;
+import setDefault from "set" /* 17437 */;
+import setDefault2 from "set" /* 17438 */;
+import setDefault3 from "set" /* 17439 */;
+import setDefault4 from "set" /* 17440 */;
+import setDefault5 from "set" /* 17441 */;
+import setDefault6 from "set" /* 17442 */;
+import setDefault7 from "set" /* 17443 */;
+import setDefault8 from "set" /* 17444 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function DefaultAvatarButton(selected) {
@@ -35,7 +35,7 @@ function DefaultAvatarButton(selected) {
   }
   let obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: null, onPress: null, children: null };
   items[1] = prop;
-  const intl = tmp3(1233).intl;
+  const intl = tmp3(1114).intl;
   obj[4] = intl.string(getSystemLocale.t.vw2RsD);
   obj[5] = onSelect;
   obj = { style: tmp.defaultAvatarButton, source: { uri: source } };

@@ -1,11 +1,11 @@
-// Module ID: 7635
-// Function ID: 7636
+// Module ID: 7702
+// Function ID: 7703
 // Name: set
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7635 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7702 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import set from "set" /* 2 */;
 
 let c0 = false;

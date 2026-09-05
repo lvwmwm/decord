@@ -1,14 +1,14 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6117
+// Function ID: 6118
 // Name: GemLevel3SpotIllustration
-// Dependencies: [21, 5542, 6063, 2]
+// Dependencies: [21, 5587, 6118, 2]
 // Exports: GemLevel3SpotIllustration
 
-// Module 6062 (GemLevel3SpotIllustration)
+// Module 6117 (GemLevel3SpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6063 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6118 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel3SpotIllustration.native.tsx");

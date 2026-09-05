@@ -1,22 +1,22 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17694
+// Function ID: 17695
 // Name: HowItWorksCard
-// Dependencies: [19, 17, 21, 4481, 709, 4477, 5542, 1233, 17615, 1296, 17616, 17617, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4556, 5587, 1114, 17695, 1178, 17696, 17697, 2]
 // Exports: default
 
-// Module 17614 (HowItWorksCard)
+// Module 17694 (HowItWorksCard)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import preloadDefault from "preload" /* 5542 */;
-import registerAssetDefault from "registerAsset" /* 17615 */;
-import registerAssetDefault2 from "registerAsset" /* 17616 */;
-import registerAssetDefault3 from "registerAsset" /* 17617 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import preloadDefault from "preload" /* 5587 */;
+import registerAssetDefault from "registerAsset" /* 17695 */;
+import registerAssetDefault2 from "registerAsset" /* 17696 */;
+import registerAssetDefault3 from "registerAsset" /* 17697 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function HowItWorksCard(iconSource) {

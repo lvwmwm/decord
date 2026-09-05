@@ -1,12 +1,12 @@
-// Module ID: 7700
-// Function ID: 7701
+// Module ID: 7768
+// Function ID: 7769
 // Name: initialize
-// Dependencies: [1386, 586, 706, 2]
+// Dependencies: [1957, 504, 573, 2]
 
-// Module 7700 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "ensureGuildLoaded" /* 1386 */;
+// Module 7768 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "ensureGuildLoaded" /* 1957 */;
 
 let closure_1 = {};
 const Store = initializeDefault.Store;

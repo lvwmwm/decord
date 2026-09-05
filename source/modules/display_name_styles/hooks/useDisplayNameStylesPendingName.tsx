@@ -1,13 +1,13 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15335
+// Function ID: 15336
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8091, 1991, 4325, 586, 2]
+// Dependencies: [8160, 2021, 4404, 504, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 15259 (useDisplayNameStylesPendingName)
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import closure_3 from "handleFormOpen" /* 8091 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+// Module 15335 (useDisplayNameStylesPendingName)
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import closure_3 from "handleFormOpen" /* 8160 */;
+import closure_4 from "trackCommunicationDisabled" /* 2021 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
@@ -19,7 +19,7 @@ export const useDisplayNameStylesPendingName = function useDisplayNameStylesPend
   const obj = nameFromUserDefault;
   const items = [closure_3, closure_4];
   const items1 = [guildId, stateFromStores];
-  let str = _require(586).useStateFromStores(items, () => {
+  let str = _require(504).useStateFromStores(items, () => {
     const pendingChanges = closure_1_3.getPendingChanges(closure_1);
     if (null != closure_1) {
       let pendingNickname = pendingChanges.pendingNickname;

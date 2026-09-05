@@ -1,16 +1,16 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9789
+// Function ID: 9790
 // Name: openGuildEventDetails
-// Dependencies: [5, 1392, 9628, 4448, 9719, 2008, 9594, 9734, 2]
+// Dependencies: [5, 1963, 9699, 4527, 9790, 1896, 9665, 9805, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9718 (openGuildEventDetails)
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import getRRule from "getRRule" /* 9594 */;
+// Module 9789 (openGuildEventDetails)
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import getRRule from "getRRule" /* 9665 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9628 */;
+import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9699 */;
 
 require = arg1;
 function openGuildEventDetails(arg0) {
@@ -23,7 +23,7 @@ function openGuildEventDetails(arg0) {
     const tmp2Result = getRRule;
   }
   obj[3] = recurrenceId;
-  obj.openLazy(asyncRequireImpl(9719, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(asyncRequireImpl(9790, dependencyMap.paths), closure_5, obj, "stack");
 }
 function _transitionToEventDetailsFromInvite() {
   const self = this;
@@ -120,5 +120,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel };
-  obj.openLazy(asyncRequireImpl(9734, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(asyncRequireImpl(9805, dependencyMap.paths), closure_4, obj);
 };

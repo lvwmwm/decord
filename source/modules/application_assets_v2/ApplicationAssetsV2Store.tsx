@@ -1,11 +1,11 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 9022
+// Function ID: 9023
 // Name: handleFeaturedOrDeveloperFetchSuccess
-// Dependencies: [12, 586, 706, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 8952 (handleFeaturedOrDeveloperFetchSuccess)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 9022 (handleFeaturedOrDeveloperFetchSuccess)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const require = arg1;
 function handleFeaturedOrDeveloperFetchSuccess(configs) {

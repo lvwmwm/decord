@@ -1,12 +1,12 @@
-// Module ID: 5476
-// Function ID: 5477
+// Module ID: 5521
+// Function ID: 5522
 // Name: set
-// Dependencies: [1215, 586, 706, 2]
+// Dependencies: [502, 504, 573, 2]
 
-// Module 5476 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "fetchFingerprint" /* 1215 */;
+// Module 5521 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "fetchFingerprint" /* 502 */;
 import set from "set" /* 2 */;
 
 let set = new Set();

@@ -1,16 +1,16 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15092
+// Function ID: 15093
 // Name: useIsQuestDockExpanded
-// Dependencies: [32, 19, 15017, 5404, 15019, 586, 15020, 15023, 11285, 15021, 15024, 4218, 9424, 15018, 684, 11418, 15026, 11124, 11125, 11129, 7661, 5407, 5411, 7651, 4448, 15027, 2008, 2]
+// Dependencies: [32, 19, 15093, 5444, 15095, 504, 15096, 15099, 11353, 15097, 15100, 4296, 9495, 15094, 1090, 11486, 15102, 11192, 11193, 11197, 7728, 5447, 5451, 7718, 4527, 15103, 1896, 2]
 // Exports: useActionSheetPressHandler, useIsQuestDockExpanded, useQuestDockDismissalReset, useQuestDockExpandHandler, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 15016 (useIsQuestDockExpanded)
-import initialize from "initialize" /* 586 */;
+// Module 15092 (useIsQuestDockExpanded)
+import initialize from "initialize" /* 504 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "QuestDockMode" /* 15017 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5404 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
+import closure_5 from "QuestDockMode" /* 15093 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5444 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15095 */;
 
 require = arg1;
 ({ QUEST_DOCK_CLOSED_HEIGHT: error, QUEST_DOCK_COLLAPSED_HEIGHT: closure_8, QUEST_DOCK_EXTERNAL_OFFSET_CLOSED: c9, QUEST_DOCK_EXTERNAL_OFFSET_COLLAPSED_WITH_YOU_BAR: c10, QUEST_DOCK_EXTERNAL_OFFSET_EXPANDED_WITH_YOU_BAR: unpackModuleId, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: closure_12 } = QUEST_DOCK_COLLAPSED_HEIGHT);
@@ -122,7 +122,7 @@ export const useQuestDockModeAnimatedReaction = function useQuestDockModeAnimate
 };
 export const useQuestDockExternalOffset = function useQuestDockExternalOffset() {
   let items = [closure_5];
-  const tmp = callback(first(586).useStateFromStoresArray(items, () => {
+  const tmp = callback(first(504).useStateFromStoresArray(items, () => {
     const items = [, ];
     ({ prevRestingQuestDockMode: arr[0], isEligibleToBeVisible: arr[1] } = closure_5);
     return items;
@@ -150,8 +150,8 @@ export const useQuestDockExternalOffset = function useQuestDockExternalOffset() 
   }, items1);
 };
 export const useQuestDockDismissalReset = function useQuestDockDismissalReset() {
-  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(15023).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(15020).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(15099).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(15096).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = React.useEffect(() => {
     let isSoftDismissedResult = activeQuestDockMode.get() !== closure_1_6.SOFT_DISMISSED;
@@ -180,7 +180,7 @@ export const useQuestDockDismissalReset = function useQuestDockDismissalReset() 
 };
 export const useActionSheetPressHandler = function useActionSheetPressHandler(questCreative) {
   const _require = questCreative;
-  const questImpressionId = _require(11418).useQuestImpressionId();
+  const questImpressionId = _require(11486).useQuestImpressionId();
   const items = [questCreative, questImpressionId];
   return React.useCallback(() => {
     let obj = questCreative(closure_1_2[16]);
@@ -223,7 +223,7 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(qu
 };
 export const useQuestDockExpandHandler = function useQuestDockExpandHandler(questDockCreative) {
   const _require = questDockCreative;
-  const getQuestImpressionId = _require(11418).useGetQuestImpressionId();
+  const getQuestImpressionId = _require(11486).useGetQuestImpressionId();
   const items = [questDockCreative, getQuestImpressionId];
   return React.useCallback(() => {
     let obj = questDockCreative(closure_1_2[18]);

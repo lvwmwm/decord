@@ -1,18 +1,18 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16851
+// Function ID: 16852
 // Name: renderLabel
-// Dependencies: [109, 19, 17, 21, 4481, 709, 4205, 1296, 4477, 10859, 1362, 2]
+// Dependencies: [109, 19, 17, 21, 4560, 576, 4271, 1178, 4556, 10928, 4411, 2]
 
-// Module 16773 (renderLabel)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import Text from "Text" /* 4477 */;
-import IconUploaderDefault from "IconUploader" /* 10859 */;
+// Module 16851 (renderLabel)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import Text from "Text" /* 4556 */;
+import IconUploaderDefault from "IconUploader" /* 10928 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

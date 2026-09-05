@@ -1,16 +1,12 @@
 // Module ID: 1633
 // Function ID: 1634
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [106, 65]
+// Dependencies: [65]
 
 // Module 1633 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-let obj = { uiViewClassName: "RNCSafeAreaProvider", directEventTypes: { topInsetsChange: { registrationName: "onInsetsChange" } }, validAttributes: null };
-obj = {};
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onInsetsChange: true }));
-obj[2] = obj;
+const obj = { uiViewClassName: "KeyboardToolbarGroupView", validAttributes: {} };
 
-export default setRuntimeConfigProvider.get("RNCSafeAreaProvider", () => obj);
+export default setRuntimeConfigProvider.get("KeyboardToolbarGroupView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

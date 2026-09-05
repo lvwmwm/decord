@@ -1,17 +1,17 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15936
+// Function ID: 15937
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 15856, 21, 4481, 709, 4477, 4936, 4448, 5084, 5635, 4471, 7138, 2]
+// Dependencies: [19, 17, 15932, 21, 4560, 576, 4556, 4975, 4527, 5123, 5680, 4550, 7198, 2]
 // Exports: default
 
-// Module 15860 (ScreenRecordingActionSheet)
+// Module 15936 (ScreenRecordingActionSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4471 */;
+import ThemesDefault from "Themes" /* 576 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4550 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15856 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15932 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -72,7 +72,7 @@ export default function ScreenRecordingActionSheet() {
     }
   }
   obj = { style: tmp.container, children: null };
-  const items = [callback(_require(4477).Text, { variant: "heading-xl/bold", children: str }), callback(_require(4477).Text, { variant: "text-md/normal", children: str2 }), ];
+  const items = [callback(_require(4556).Text, { variant: "heading-xl/bold", children: str }), callback(_require(4556).Text, { variant: "text-md/normal", children: str2 }), ];
   obj = {
     disabled: tmp2,
     text: "Done",
@@ -82,22 +82,22 @@ export default function ScreenRecordingActionSheet() {
       callback2(closure_1_2[8]).hideActionSheet();
     }
   };
-  items[2] = callback(_require(4936).Button, obj);
+  items[2] = callback(_require(4975).Button, obj);
   obj[1] = items;
   obj1 = { style: tmp.container, children: null };
   const tmp11 = callback2(View, obj);
   const tmp6 = callback2;
   const tmp9 = _require;
   const items1 = [
-    callback(_require(5084).PressableOpacity, {
+    callback(_require(5123).PressableOpacity, {
       style: tmp.closeButton,
       onPress() {
         return callback2(table[8]).hideActionSheet();
       },
       accessibilityLabel: "close",
-      children: callback(_require(5635).XSmallIcon, { size: "md", color: "text-default" })
+      children: callback(_require(5680).XSmallIcon, { size: "md", color: "text-default" })
     }),
-    callback(_require(4477).Text, { variant: "heading-xl/bold", children: tmp5.title }),
+    callback(_require(4556).Text, { variant: "heading-xl/bold", children: tmp5.title }),
   ,
 
   ];
@@ -108,17 +108,17 @@ export default function ScreenRecordingActionSheet() {
       return callback2(table[8]).hideActionSheet();
     },
     accessibilityLabel: "close",
-    children: callback(_require(5635).XSmallIcon, { size: "md", color: "text-default" })
+    children: callback(_require(5680).XSmallIcon, { size: "md", color: "text-default" })
   };
   const obj3 = { variant: "heading-xl/bold", children: tmp5.title };
   obj4[1] = get_defaultRulesDefault.parse(tmp5.instructions);
-  items1[2] = callback(_require(4477).Text, obj4);
+  items1[2] = callback(_require(4556).Text, obj4);
   const obj5 = { style: tmp.buttonContainer, children: null };
   let tmp12 = !flag;
   if (flag) {
     tmp12 = tmp2;
   }
-  obj5[1] = callback(_require(4936).Button, {
+  obj5[1] = callback(_require(4975).Button, {
     disabled: tmp12,
     text: "Next",
     loading: tmp2,
@@ -132,5 +132,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return callback(tmp9(7138).ActionSheet, { children });
+  return callback(tmp9(7198).ActionSheet, { children });
 };

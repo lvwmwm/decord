@@ -1,14 +1,14 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6101
+// Function ID: 6102
 // Name: GemInHandSpotIllustration
-// Dependencies: [21, 5542, 6047, 2]
+// Dependencies: [21, 5587, 6102, 2]
 // Exports: GemInHandSpotIllustration
 
-// Module 6046 (GemInHandSpotIllustration)
+// Module 6101 (GemInHandSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6047 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6102 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemInHandSpotIllustration.native.tsx");

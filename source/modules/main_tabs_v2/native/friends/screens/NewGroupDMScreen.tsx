@@ -1,23 +1,23 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16765
+// Function ID: 16766
 // Name: handleOneRecipientInDM
-// Dependencies: [32, 5, 19, 17, 1386, 13679, 4557, 1921, 10791, 673, 21, 4481, 709, 4494, 4735, 9111, 9464, 4448, 586, 11524, 11526, 11523, 695, 4194, 1233, 16677, 7795, 11527, 4193, 7805, 9784, 8308, 7691, 1296, 10792, 16611, 2]
+// Dependencies: [32, 5, 19, 17, 1957, 13754, 4583, 1371, 10860, 1074, 21, 4560, 576, 4573, 4767, 9182, 9536, 4527, 504, 11592, 11594, 11591, 1242, 4259, 1114, 16755, 7863, 11595, 4258, 7873, 9855, 8378, 7759, 1178, 10861, 16688, 2]
 // Exports: default
 
-// Module 16687 (handleOneRecipientInDM)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16765 (handleOneRecipientInDM)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "performQuery" /* 13679 */;
-import closure_10 from "createRTCConnection" /* 4557 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import { UserRowModes } from "UserRowModes" /* 10791 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "performQuery" /* 13754 */;
+import closure_10 from "createRTCConnection" /* 4583 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import { UserRowModes } from "UserRowModes" /* 10860 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function handleOneRecipientInDM() {
@@ -128,7 +128,7 @@ function _handleInviteUsers() {
                         return obj2;
                       }
                     }
-                    const obj13 = arr(4494);
+                    const obj13 = arr(4573);
                     c5 = 2;
                     c6 = 1;
                     let obj3 = { value: null, done: false };
@@ -139,7 +139,7 @@ function _handleInviteUsers() {
                 if (null != lib) {
                   if (store.getChannelId() === lib.id) {
                     if (lib.isDM()) {
-                      let obj10 = lib(4735);
+                      let obj10 = lib(4767);
                       obj10.showGuardCallAlert(callback(function*() {
                         if (dependencyMap === 2) {
                           dependencyMap = 3;
@@ -175,7 +175,7 @@ function _handleInviteUsers() {
                                   obj1[0] = closure_1_20(tmp33, dependencyMap);
                                   return obj1;
                                 } else {
-                                  let obj5 = v0(4494);
+                                  let obj5 = v0(4573);
                                   v0 = 1;
                                   dependencyMap = 1;
                                   let obj2 = { value: null, done: false };
@@ -213,19 +213,19 @@ function _handleInviteUsers() {
                                 obj[0] = arg1;
                                 return obj;
                               } else {
-                                const tmp8 = v0(9111);
+                                const tmp8 = v0(9182);
                                 const call = tmp8.call;
                                 if (typeof call === "unknown") {
                                   tmp8(false, true);
                                 } else {
                                   call(tmp9, false, true);
                                 }
-                                v0(9464)(closure_3);
+                                v0(9536)(closure_3);
                                 dependencyMap = 3;
                                 tmp9 = closure_3;
                               }
                               closure_3 = arg1;
-                              obj2 = closure_1_0(4735);
+                              obj2 = closure_1_0(4767);
                               v0 = 3;
                               dependencyMap = 1;
                               obj5 = { value: null, done: false };
@@ -239,7 +239,7 @@ function _handleInviteUsers() {
                         }
                       }));
                     } else if (lib.isGroupDM()) {
-                      let obj8 = arr(4494);
+                      let obj8 = arr(4573);
                       c5 = 5;
                       c6 = 1;
                       let obj4 = { value: null, done: false };
@@ -248,7 +248,7 @@ function _handleInviteUsers() {
                     }
                   }
                 }
-                let obj5 = arr(4494);
+                let obj5 = arr(4573);
                 obj5 = { recipientIds: null, location: "New Group DM", onBeforeTransition: null };
                 obj5[0] = arr;
                 obj5[2] = dependencyMap;
@@ -297,7 +297,7 @@ function _handleInviteUsers() {
                   throw arg1;
                 } else if (arg0 !== 2) {
                   closure_3 = arg1;
-                  obj = arr(9111);
+                  obj = arr(9182);
                   obj.ring(closure_3, arr, "gdm_invite");
                 }
                 c6 = 3;
@@ -307,9 +307,9 @@ function _handleInviteUsers() {
               }
               closure_3 = arg1;
             }
-            arr(4448).hideActionSheet(closure_16);
+            arr(4527).hideActionSheet(closure_16);
             c6 = 3;
-            const obj12 = arr(4448);
+            const obj12 = arr(4527);
           }
         } catch (tmp77) {
           c6 = tmp;

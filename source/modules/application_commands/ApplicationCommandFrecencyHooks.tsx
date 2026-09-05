@@ -1,14 +1,14 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9299
+// Function ID: 9300
 // Name: useTopCommands
-// Dependencies: [19, 9221, 682, 1369, 586, 2]
+// Dependencies: [19, 9292, 1084, 1940, 504, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 9228 (useTopCommands)
+// Module 9299 (useTopCommands)
 import closure_2 from "noop" /* 19 */;
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 9221 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 9221 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 9292 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 9292 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 1084 */;
 
 const require = arg1;
 ({ getFilteredTopCommands: c3, getTopRealCommands: c4 } = handleUserSettingsProtoStoreChange);

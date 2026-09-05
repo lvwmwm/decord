@@ -1,14 +1,14 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10103
+// Function ID: 10104
 // Name: playInAppMessageSound
-// Dependencies: [10010, 10033, 673, 1623, 9831, 2]
+// Dependencies: [10081, 10104, 1074, 1608, 9902, 2]
 // Exports: playInAppMessageSound
 
-// Module 10032 (playInAppMessageSound)
-import isMetaQuest from "isMetaQuest" /* 1623 */;
-import closure_2 from "DesktopNotificationTypes" /* 10010 */;
-import { isInAppMessageSoundsEnabled as closure_3 } from "isInAppMessageSoundsEnabled" /* 10033 */;
-import { InAppNotificationTypes } from "ME" /* 673 */;
+// Module 10103 (playInAppMessageSound)
+import isMetaQuest from "isMetaQuest" /* 1608 */;
+import closure_2 from "DesktopNotificationTypes" /* 10081 */;
+import { isInAppMessageSoundsEnabled as closure_3 } from "isInAppMessageSoundsEnabled" /* 10104 */;
+import { InAppNotificationTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const message1 = "message1";
@@ -23,8 +23,8 @@ export const playInAppMessageSound = function playInAppMessageSound(notification
           const _Date = Date;
           const timestamp = Date.now();
           if (timestamp - timestamp >= 1000) {
-            tmp8(9831).playSound(tmp3, 0.4);
-            const tmp8Result = tmp8(9831);
+            tmp8(9902).playSound(tmp3, 0.4);
+            const tmp8Result = tmp8(9902);
           }
         }
         tmp3 = message1;

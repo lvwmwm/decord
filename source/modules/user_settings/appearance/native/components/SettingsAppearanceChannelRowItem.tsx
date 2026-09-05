@@ -1,19 +1,19 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15290
+// Function ID: 15291
 // Name: ChannelRowItem
-// Dependencies: [19, 17, 673, 21, 4481, 709, 1296, 10841, 4477, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1178, 10910, 4556, 2]
 // Exports: default
 
-// Module 15214 (ChannelRowItem)
+// Module 15290 (ChannelRowItem)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button2 from "Button" /* 1296 */;
-import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10841 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button2 from "Button" /* 1178 */;
+import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10910 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { StatusTypes } from "ME" /* 673 */;
+import { StatusTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import Button from "Button" /* 1296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import Button from "Button" /* 1178 */;
 
 require = arg1;
 noopAll;
@@ -81,7 +81,7 @@ export default function ChannelRowItem(isUnread) {
   items1[1] = closure_4(View, obj);
   const obj3 = { style: tmp2.channelItemContent, children: null };
   obj4 = { style: tmp2.channelItemTop, children: null };
-  const items3 = [closure_4(tmp6(4477).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), closure_4(tmp6(4477).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
+  const items3 = [closure_4(tmp6(4556).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), closure_4(tmp6(4556).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
   obj4[1] = items3;
   const items4 = [closure_5(View, obj4), ];
   if (null == preview) {
@@ -94,7 +94,7 @@ export default function ChannelRowItem(isUnread) {
     animatedStyles = { animated: true, style: null, variant: "redesign/message-preview/medium", lineClamp: 1, children: null };
     animatedStyles[1] = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
     animatedStyles[4] = preview;
-    tmp5Result = tmp5(tmp6(4477).Text, animatedStyles);
+    tmp5Result = tmp5(tmp6(4556).Text, animatedStyles);
     const tmp12 = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
   }
 };

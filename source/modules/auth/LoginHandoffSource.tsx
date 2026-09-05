@@ -1,14 +1,14 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7320
+// Function ID: 7321
 // Name: LoginHandoffSource
-// Dependencies: [1393, 682, 4682, 5414, 2]
+// Dependencies: [1964, 1084, 4714, 5454, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 7258 (LoginHandoffSource)
+// Module 7320 (LoginHandoffSource)
 import set from "set" /* 2 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
-import set2 from "set" /* 1393 */;
-import ME from "ME" /* 4682 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
+import set2 from "set" /* 1964 */;
+import ME from "ME" /* 4714 */;
 
 const StaticChannelRoute = set2.StaticChannelRoute;
 const UserSettingsPath = MAX_FAVORITES.UserSettingsPath;

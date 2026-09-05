@@ -1,11 +1,11 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16415
+// Function ID: 16416
 // Name: set
-// Dependencies: [19, 7573, 7108, 2]
+// Dependencies: [19, 7640, 7168, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 16339 (set)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7108 */;
+// Module 16415 (set)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7168 */;
 import closure_2 from "noop" /* 19 */;
 import set from "set" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7592
-// Function ID: 7593
+// Module ID: 7659
+// Function ID: 7660
 // Name: recomputeAffinities
-// Dependencies: [4130, 7593, 586, 706, 2]
+// Dependencies: [4209, 7660, 504, 573, 2]
 
-// Module 7592 (recomputeAffinities)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "markAllUserIdListsStale" /* 4130 */;
-import { USER_AFFINITY_TTL } from "result" /* 7593 */;
+// Module 7659 (recomputeAffinities)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "markAllUserIdListsStale" /* 4209 */;
+import { USER_AFFINITY_TTL } from "result" /* 7660 */;
 
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;

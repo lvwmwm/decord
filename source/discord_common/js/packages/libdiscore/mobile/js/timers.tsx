@@ -1,12 +1,12 @@
-// Module ID: 1920
-// Function ID: 1921
+// Module ID: 1356
+// Function ID: 1357
 // Name: setTimeout
-// Dependencies: [1917, 2]
+// Dependencies: [1353, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 1920 (setTimeout)
+// Module 1356 (setTimeout)
 import set from "set" /* 2 */;
-import typedGlobal from "typedGlobal" /* 1917 */;
+import typedGlobal from "typedGlobal" /* 1353 */;
 
 function setTimeout(arg0, arg1) {
   let num = arg1;

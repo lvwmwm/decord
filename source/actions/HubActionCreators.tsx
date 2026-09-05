@@ -1,20 +1,20 @@
-// Module ID: 12664
-// Function ID: 12665
-// Dependencies: [5, 673, 4721, 500, 1400, 527, 706, 2]
+// Module ID: 12732
+// Function ID: 12733
+// Dependencies: [5, 1074, 4753, 1250, 1969, 1272, 573, 2]
 
-// Module 12664
-import encodeProperties from "encodeProperties" /* 500 */;
-import sendRequest from "sendRequest" /* 527 */;
-import _modDef4721 from "module_4721" /* 4721 */;
+// Module 12732
+import encodeProperties from "encodeProperties" /* 1250 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import _modDef4753 from "module_4753" /* 4753 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("actions/HubActionCreators.tsx");
 
 export default {
   signup(email, school) {
-    let obj = _modDef4721;
+    let obj = _modDef4753;
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj, trackedActionData: null, rejectWithError: null };
     obj = { email, school };
     obj[2] = {

@@ -1,16 +1,16 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11835
+// Function ID: 11836
 // Name: getGuildMemberAgeInRange
-// Dependencies: [1991, 1908, 4120, 1921, 4108, 673, 586, 11, 1399, 2]
+// Dependencies: [2021, 1979, 4199, 1371, 4187, 1074, 504, 11, 1384, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 11767 (getGuildMemberAgeInRange)
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 11835 (getGuildMemberAgeInRange)
+import closure_3 from "trackCommunicationDisabled" /* 2021 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 function getGuildMemberAgeInRange(arg0, arg1, arg2) {
@@ -114,15 +114,15 @@ export const useGuildMemberAgeInRange = function useGuildMemberAgeInRange(arg0, 
   closure_1 = arg1;
   dependencyMap = arg2;
   const items = [arg1, arg0, arg2];
-  return _require(586).useStateFromStores([], () => closure_1_10(closure_0, obj, closure_2), items);
+  return _require(504).useStateFromStores([], () => closure_1_10(closure_0, obj, closure_2), items);
 };
 export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
   let _require = arg0;
   let obj = arg1;
-  obj = _require(586);
+  obj = _require(504);
   const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    obj = callback(1399);
+    obj = callback(1384);
     const member = closure_1_3.getMember(callback, obj);
     let num;
     if (member != null) {
@@ -134,7 +134,7 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     return obj.hasFlag(num, closure_1_7.DID_REJOIN);
   });
   const items1 = [closure_4];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => {
     const guild = closure_1_4.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
@@ -145,12 +145,12 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     }
     return tmp2;
   });
-  const obj2 = _require(586);
+  const obj2 = _require(504);
   const items2 = [closure_6];
   obj = { maxDaysOld: 7 };
   _require = arg0;
   dependencyMap = arg1;
-  const stateFromStores2 = _require(586).useStateFromStores(items2, () => {
+  const stateFromStores2 = _require(504).useStateFromStores(items2, () => {
     const user = closure_1_6.getUser(obj);
     let bot;
     if (user != null) {
@@ -158,16 +158,16 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     }
     return bot;
   });
-  const obj3 = _require(586);
+  const obj3 = _require(504);
   const items3 = [obj, arg0, arg1];
-  const obj5 = _require(586);
-  return _require(586).useStateFromStores([], () => closure_1_10(closure_0, obj, closure_2), items3) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
+  const obj5 = _require(504);
+  return _require(504).useStateFromStores([], () => closure_1_10(closure_0, obj, closure_2), items3) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
 };
 export const useCanKickMember = function useCanKickMember(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
   let items = [closure_5];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const items = [closure_1_5];
     return closure_1_11(closure_0, closure_1, items);
   });
@@ -192,7 +192,7 @@ export const hasKickMemberPerms = function hasKickMemberPerms(isNonUserBot, guil
 export const useCanBanMember = function useCanBanMember(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
-  return _require(586).useStateFromStores([], () => closure_1_12(closure_0, closure_1));
+  return _require(504).useStateFromStores([], () => closure_1_12(closure_0, closure_1));
 };
 export { canBanMember };
 export const hasBanMemberPerms = function hasBanMemberPerms(isNonUserBot, guild) {
@@ -218,7 +218,7 @@ export const useCanManageMessages = function useCanManageMessages(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
   let items = [closure_5];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const items = [closure_1_5];
     [obj2] = items;
     let canManageUserResult = null != obj && null != tmp;

@@ -1,16 +1,16 @@
-// Module ID: 11394
-// Function ID: 11395
+// Module ID: 11462
+// Function ID: 11463
 // Name: computeActivityFlags
-// Dependencies: [673, 4166, 592, 1399, 7672, 2]
+// Dependencies: [1074, 1935, 510, 1384, 7739, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11394 (computeActivityFlags)
+// Module 11462 (computeActivityFlags)
 import set from "set" /* 2 */;
-import Storage2 from "Storage" /* 592 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7672 */;
-import ME from "ME" /* 673 */;
+import Storage2 from "Storage" /* 510 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7739 */;
+import ME from "ME" /* 1074 */;
 
 ({ ActivityFlags: c3, ActivityPartyPrivacy: c4 } = ME);
 const result = set.fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");

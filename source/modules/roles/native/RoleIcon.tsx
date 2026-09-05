@@ -1,12 +1,12 @@
-// Module ID: 7128
-// Function ID: 7129
+// Module ID: 7188
+// Function ID: 7189
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1296, 2]
+// Dependencies: [19, 17, 21, 1178, 2]
 // Exports: default
 
-// Module 7128 (RoleIcon)
+// Module 7188 (RoleIcon)
 import noopAll from "noop" /* 19 */;
-import Button from "Button" /* 1296 */;
+import Button from "Button" /* 1178 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

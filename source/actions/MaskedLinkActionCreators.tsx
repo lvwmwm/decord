@@ -1,12 +1,12 @@
-// Module ID: 12887
-// Function ID: 12888
+// Module ID: 12955
+// Function ID: 12956
 // Name: trustDomain
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: trustDomain, trustProtocol
 
-// Module 12887 (trustDomain)
+// Module 12955 (trustDomain)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("actions/MaskedLinkActionCreators.tsx");
 

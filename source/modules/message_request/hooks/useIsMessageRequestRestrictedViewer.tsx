@@ -1,14 +1,14 @@
-// Module ID: 12372
-// Function ID: 12373
+// Module ID: 12440
+// Function ID: 12441
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [4741, 4172, 4179, 12373, 2]
+// Dependencies: [4773, 5423, 7299, 12441, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 12372 (useIsMessageRequestRestrictedViewer)
+// Module 12440 (useIsMessageRequestRestrictedViewer)
 import set from "set" /* 2 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 5423 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7299 */;
 
 const result = set.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 8127
-// Function ID: 8128
+// Module ID: 8196
+// Function ID: 8197
 // Name: BalanceWidgetMode
 // Dependencies: [2]
 
-// Module 8127 (BalanceWidgetMode)
+// Module 8196 (BalanceWidgetMode)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/virtual_currency/types.tsx");

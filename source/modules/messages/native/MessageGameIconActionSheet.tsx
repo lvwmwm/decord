@@ -1,19 +1,19 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11818
+// Function ID: 11819
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 4522, 673, 21, 4481, 1234, 709, 586, 7090, 1296, 4477, 1233, 1994, 2]
+// Dependencies: [19, 17, 4788, 1074, 21, 4560, 1115, 576, 504, 7150, 1178, 4556, 1114, 2024, 2]
 // Exports: default
 
-// Module 11750 (MessageGameIconActionSheet)
+// Module 11818 (MessageGameIconActionSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import combinedDefault from "combined" /* 1994 */;
+import ThemesDefault from "Themes" /* 576 */;
+import combinedDefault from "combined" /* 2024 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "addApplication" /* 4522 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import closure_4 from "addApplication" /* 4788 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 noopAll;
@@ -33,7 +33,7 @@ const result = set.fileFinishedImporting("modules/messages/native/MessageGameIco
 export default function MessageGameIconActionSheet(applicationId) {
   applicationId = applicationId.applicationId;
   const tmp = callback();
-  let obj = applicationId(586);
+  let obj = applicationId(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getApplication(applicationId));
   let tmp5Result = null;
@@ -55,30 +55,30 @@ export default function MessageGameIconActionSheet(applicationId) {
     const obj3 = { uri: null };
     obj3[0] = str;
     obj1[2] = obj3;
-    const items1 = [closure_6(tmp2(1296).Icon, obj1), ];
+    const items1 = [closure_6(tmp2(1178).Icon, obj1), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.gameDescriptionWrapper;
     const obj5 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj5[0] = tmp.timestamp;
     obj5[3] = applicationId.messageTimestamp;
-    const items2 = [closure_6(tmp2(4477).Text, obj5), ];
+    const items2 = [closure_6(tmp2(4556).Text, obj5), ];
     const obj6 = { variant: "text-sm/medium", children: null };
-    const intl = tmp2(1233).intl;
+    const intl = tmp2(1114).intl;
     const obj7 = { applicationName: null };
     obj7[0] = stateFromStores.name;
-    const items3 = [intl.format(tmp2(1233).t.J3s8JP, obj7), " ", ];
-    const intl2 = tmp2(1233).intl;
+    const items3 = [intl.format(tmp2(1114).t.J3s8JP, obj7), " ", ];
+    const intl2 = tmp2(1114).intl;
     const obj8 = { helpdeskArticle: null };
     obj8[0] = combinedDefault.getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
-    items3[2] = intl2.format(tmp2(1233).t.BPDKoA, obj8);
+    items3[2] = intl2.format(tmp2(1114).t.BPDKoA, obj8);
     obj6[1] = items3;
-    items2[1] = closure_7(tmp2(4477).Text, obj6);
+    items2[1] = closure_7(tmp2(4556).Text, obj6);
     obj4[1] = items2;
     items1[1] = closure_7(View, obj4);
     obj[1] = items1;
     obj[1] = closure_7(View, obj);
     obj2[1] = closure_6(View, obj);
-    tmp5Result = tmp5(tmp2(7090).BottomSheet, obj2);
+    tmp5Result = tmp5(tmp2(7150).BottomSheet, obj2);
     const obj13 = combinedDefault;
   }
   return tmp5Result;

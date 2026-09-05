@@ -1,19 +1,18 @@
 // Module ID: 10544
 // Function ID: 10545
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10361, 10530, 10364, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10540, 10439]
 
 // Module 10544 (_isNativeReflectConstruct)
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10530 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import zhStringToNumber from "zhStringToNumber" /* 10540 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ITRelativeDateFormatParser = require;
+const ZHHansWeekdayParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,13 +32,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(questo|ultimo|scorso|prossimo|dopo\\s*questo|questa|ultima|scorsa|prossima\\s*questa)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
-class ITRelativeDateFormatParser {
+const keys = Object.keys(zhStringToNumber.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?:\u661F\u671F|\u793C\u62DC|\u5468)(?<weekday>" + keys.join("|") + ")");
+class ZHHansWeekdayParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, ITRelativeDateFormatParser);
+    tmp = closure_2(this, ZHHansWeekdayParser);
     tmp2 = closure_4;
-    obj = closure_4(ITRelativeDateFormatParser);
+    obj = closure_4(ZHHansWeekdayParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -54,7 +54,7 @@ class ITRelativeDateFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ITRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
@@ -64,49 +64,43 @@ const items = [
   },
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents) {
-      const formatted = arg1[1].toLowerCase();
-      const str3 = arg1[2].toLowerCase();
-      const tmp3 = ITRelativeDateFormatParser(10530).TIME_UNIT_DICTIONARY[str3];
-      if ("prossimo" != formatted) {
-        if (!formatted.startsWith("dopo")) {
-          if ("prima" != formatted) {
-            if ("precedente" != formatted) {
-              const parsingComponents = createParsingComponents.createParsingComponents();
-              const _Date = Date;
-              const instant = createParsingComponents.reference.instant;
-              const date = new Date(instant.getTime());
-              if (str3.match(/settimana/i)) {
-                date.setDate(date.getDate() - date.getDay());
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.imply("year", date.getFullYear());
-                const date1 = date.getDate();
-              } else if (str3.match(/mese/i)) {
-                date.setDate(1);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.assign("year", date.getFullYear());
-                parsingComponents.assign("month", date.getMonth() + 1);
-              } else if (str3.match(/anno/i)) {
-                date.setDate(1);
-                date.setMonth(0);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.assign("year", date.getFullYear());
-              }
-              return parsingComponents;
-            }
-          }
-          const obj2 = {};
-          obj2[tmp3] = -1;
-          const ParsingComponents = tmp(10364).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj2);
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp2 = ZHHansWeekdayParser(10540).WEEKDAY_OFFSET[index.groups.weekday];
+      if (undefined === tmp2) {
+        return null;
+      } else {
+        const _Date = Date;
+        const refDate = createParsingResult.refDate;
+        const date = new Date(refDate.getTime());
+        const diff = tmp2 - date.getDay();
+        const _Math3 = Math;
+        const _Math4 = Math;
+        const absolute = Math.abs(diff - 7);
+        let diff1 = diff;
+        if (absolute < Math.abs(diff)) {
+          diff1 = diff - 7;
         }
+        const _Math = Math;
+        const _Math2 = Math;
+        const absolute1 = Math.abs(diff1 + 7);
+        let sum = diff1;
+        if (absolute1 < Math.abs(diff1)) {
+          sum = diff1 + 7;
+        }
+        date.setDate(date.getDate() + sum);
+        const start = parsingResult.start;
+        start.assign("weekday", tmp2);
+        const start2 = parsingResult.start;
+        start2.imply("day", date.getDate());
+        const start3 = parsingResult.start;
+        start3.imply("month", date.getMonth() + 1);
+        const start4 = parsingResult.start;
+        start4.imply("year", date.getFullYear());
+        return parsingResult;
       }
-      const ParsingComponents2 = tmp(10364).ParsingComponents;
-      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp3]: 1 });
     }
   }
 ];
 
-export default _createClass(ITRelativeDateFormatParser, items);
+export default _createClass(ZHHansWeekdayParser, items);

@@ -1,11 +1,11 @@
-// Module ID: 9397
-// Function ID: 9398
+// Module ID: 9468
+// Function ID: 9469
 // Name: BOX_MODE_ACTIONSHEET_WIDTH
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 9397 (BOX_MODE_ACTIONSHEET_WIDTH)
+// Module 9468 (BOX_MODE_ACTIONSHEET_WIDTH)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const items = [, , , ];
 ({ TOP_LEFT: arr[0], TOP_RIGHT: arr[1], BOTTOM_LEFT: arr[2], BOTTOM_RIGHT: arr[3] } = ME.PictureInPicturePositions);

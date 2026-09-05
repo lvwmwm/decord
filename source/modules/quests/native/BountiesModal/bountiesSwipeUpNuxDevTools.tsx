@@ -1,12 +1,12 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 15011
+// Function ID: 15012
 // Name: FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY
-// Dependencies: [9860, 2]
+// Dependencies: [9931, 2]
 // Exports: useForceBountiesSwipeUpNux
 
-// Module 14936 (FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY)
+// Module 15011 (FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY)
 import set from "set" /* 2 */;
-import useLocalStorageState from "useLocalStorageState" /* 9860 */;
+import useLocalStorageState from "useLocalStorageState" /* 9931 */;
 
 let c2 = "devtools-force-bounties-swipe-up-nux";
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/bountiesSwipeUpNuxDevTools.tsx");

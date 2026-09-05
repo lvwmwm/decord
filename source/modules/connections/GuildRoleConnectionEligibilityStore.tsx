@@ -1,11 +1,11 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11820
+// Function ID: 11821
 // Name: map
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 11752 (map)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 11820 (map)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const map = new Map();
 const Store = initializeDefault.Store;

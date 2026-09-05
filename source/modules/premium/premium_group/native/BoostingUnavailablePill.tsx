@@ -1,21 +1,21 @@
-// Module ID: 13442
-// Function ID: 13443
+// Module ID: 13515
+// Function ID: 13516
 // Name: handlePress
-// Dependencies: [17, 4153, 21, 4481, 709, 4448, 13443, 2008, 1233, 3016, 4477, 2]
+// Dependencies: [17, 4232, 21, 4560, 576, 4527, 13516, 1896, 1114, 3063, 4556, 2]
 // Exports: default
 
-// Module 13442 (handlePress)
+// Module 13515 (handlePress)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import messagesProxyDefault from "messagesProxy" /* 3016 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import Text from "Text" /* 4477 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import messagesProxyDefault from "messagesProxy" /* 3063 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4232 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import Text from "Text" /* 4556 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function handlePress() {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
@@ -23,7 +23,7 @@ function handlePress() {
   const intl = getSystemLocale.intl;
   obj = { premiumGroupProductName: callback() };
   obj[0] = intl.formatToPlainString(messagesProxyDefault["5xN/C1"], obj);
-  obj.openLazy(asyncRequireImpl(13443, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(asyncRequireImpl(13516, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 let closure_5 = SubscriptionStatusTypes.getPremiumGroupProductName;

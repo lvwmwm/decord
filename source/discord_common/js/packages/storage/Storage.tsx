@@ -1,11 +1,11 @@
-// Module ID: 592
-// Function ID: 593
+// Module ID: 510
+// Function ID: 511
 // Name: Storage
-// Dependencies: [2, 593]
+// Dependencies: [2, 511]
 
-// Module 592 (Storage)
+// Module 510 (Storage)
 import set from "set" /* 2 */;
-import parseValue from "parseValue" /* 593 */;
+import parseValue from "parseValue" /* 511 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/storage/Storage.tsx");
 

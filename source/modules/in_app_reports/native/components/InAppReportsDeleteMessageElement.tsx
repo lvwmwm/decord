@@ -1,14 +1,14 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9061
+// Function ID: 9062
 // Name: DeleteMessageElement
-// Dependencies: [32, 19, 4743, 673, 21, 586, 4708, 7390, 8981, 1233, 4439, 2]
+// Dependencies: [32, 19, 4781, 1074, 21, 504, 4740, 7456, 9051, 1114, 4518, 2]
 // Exports: default
 
-// Module 8991 (DeleteMessageElement)
+// Module 9061 (DeleteMessageElement)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "reinjectEphemerals" /* 4743 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_5 from "reinjectEphemerals" /* 4781 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ export default function DeleteMessageElement(message) {
   let stateFromStores;
   const tmp = stateFromStores(React.useState(false), 2);
   dependencyMap = tmp[1];
-  let obj = message(586);
+  let obj = message(504);
   const items = [closure_5];
   const items1 = [message];
   stateFromStores = obj.useStateFromStores(items, () => null == closure_1_5.getMessage(message.getChannelId(), message.id), items1);
@@ -32,20 +32,20 @@ export default function DeleteMessageElement(message) {
   const items3 = [message, reportId];
   const callback = React.useCallback(() => {
     dependencyMap(true);
-    let obj = reportId(4708);
+    let obj = reportId(4740);
     obj = { report_id: reportId };
     obj.trackWithMetadata(closure_1_6.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj);
-    reportId(7390).deleteMessage(message.getChannelId(), message.id);
+    reportId(7456).deleteMessage(message.getChannelId(), message.id);
   }, items3);
   obj = { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null };
-  const intl = message(1233).intl;
-  obj[0] = intl.string(message(1233).t.c9BHL9);
-  const intl2 = message(1233).intl;
-  obj[1] = intl2.string(message(1233).t.AT2KSd);
-  const intl3 = message(1233).intl;
-  obj[2] = intl3.string(message(1233).t.dK8S0w);
+  const intl = message(1114).intl;
+  obj[0] = intl.string(message(1114).t.c9BHL9);
+  const intl2 = message(1114).intl;
+  obj[1] = intl2.string(message(1114).t.AT2KSd);
+  const intl3 = message(1114).intl;
+  obj[2] = intl3.string(message(1114).t.dK8S0w);
   obj[3] = tmp[0];
   obj[5] = callback;
-  obj[6] = jsx(message(4439).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(8981), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  obj[6] = jsx(message(4518).TrashIcon, { color: "text-feedback-critical" });
+  return jsx(reportId(9051), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 };

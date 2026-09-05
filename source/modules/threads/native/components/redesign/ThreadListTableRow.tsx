@@ -1,14 +1,14 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16705
+// Function ID: 16706
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 1386, 21, 4481, 5560, 16629, 586, 2]
+// Dependencies: [19, 17, 1957, 21, 4560, 5605, 16706, 504, 2]
 
-// Module 16628 (ThreadListTableRow)
+// Module 16705 (ThreadListTableRow)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ThreadListTableRow(thread) {
@@ -29,7 +29,7 @@ let closure_6 = createCacheKey.createStyles({ subLabel: { maxWidth: "100%", marg
 const memoResult = importAllResult.memo((threadId) => {
   threadId = threadId.threadId;
   ({ onPress, start, end } = threadId);
-  let obj = threadId(586);
+  let obj = threadId(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getChannel(threadId));
   let tmp2 = null;

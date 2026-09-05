@@ -1,13 +1,13 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8769
+// Function ID: 8770
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1949, 1233, 7487, 2]
+// Dependencies: [1889, 1114, 7554, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8699 (getProductNameAndTypeFromSku)
+// Module 8769 (getProductNameAndTypeFromSku)
 import set from "set" /* 2 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7487 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7554 */;
 
 let result = set.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
@@ -21,22 +21,22 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
     }
   }
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl2 = tmp2(1233).intl;
+    const intl2 = tmp2(1114).intl;
     let obj = { product: null };
     obj[0] = name;
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1233).t.lvBzLi, obj);
-  } else if (tmp2(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl = tmp2(1233).intl;
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1114).t.lvBzLi, obj);
+  } else if (tmp2(1889).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl = tmp2(1114).intl;
     obj = { product: null };
     obj[0] = name;
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1233).t.eR7moP, obj);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1114).t.eR7moP, obj);
   } else {
     formatToPlainStringResult = name;
-    if (tmp2(1949).CollectiblesItemType.NAMEPLATE === type) {
-      const intl3 = tmp2(1233).intl;
+    if (tmp2(1889).CollectiblesItemType.NAMEPLATE === type) {
+      const intl3 = tmp2(1114).intl;
       obj = { product: null };
       obj[0] = name;
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1233).t.YFOwHj, obj);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1114).t.YFOwHj, obj);
     }
   }
   return formatToPlainStringResult;

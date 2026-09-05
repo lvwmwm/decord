@@ -1,24 +1,24 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14934
+// Function ID: 14935
 // Name: OverlappingSchedulesWarning
-// Dependencies: [5, 32, 19, 17, 1921, 673, 21, 4448, 9646, 2008, 4481, 709, 1296, 4934, 4477, 1233, 2368, 1498, 6934, 10012, 644, 14860, 14861, 4439, 5642, 7141, 5560, 7063, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 1074, 21, 4527, 9717, 1896, 4560, 576, 1178, 4973, 4556, 1114, 2396, 1483, 6994, 10083, 563, 14935, 14936, 4518, 5687, 7201, 5605, 7123, 4975, 2]
 // Exports: default
 
-// Module 14859 (OverlappingSchedulesWarning)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button2 from "Button" /* 1296 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
+// Module 14934 (OverlappingSchedulesWarning)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button2 from "Button" /* 1178 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { UserSettingsSections } from "ME" /* 673 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { UserSettingsSections } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function OverlappingSchedulesWarning(conflictingEntries) {
@@ -567,9 +567,9 @@ export default function ScheduleDowntimeScreen() {
     obj10[1] = callback2(tmp2(stringResult[14]).Text, obj11);
     obj10[3] = function handleStartTimePress() {
       const intl = lib(rule[15]).intl;
-      const f115846 = (first1) => {
+      const f116116 = (first1) => {
         callback(first1);
-        let obj = f115846(closure_1_2[19]);
+        let obj = f116116(closure_1_2[19]);
         const result = (obj.timeToMinutes(first1) + 540) % 1440;
         obj = { hours: Math.floor(result / 60), minutes: result % 60 };
         callback2(obj);

@@ -1,13 +1,13 @@
-// Module ID: 7764
-// Function ID: 7765
+// Module ID: 7832
+// Function ID: 7833
 // Name: getComboShakeIntensity
-// Dependencies: [7612, 708, 2]
+// Dependencies: [7679, 575, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 7764 (getComboShakeIntensity)
+// Module 7832 (getComboShakeIntensity)
 import set from "set" /* 2 */;
-import unsafe_getRawColor from "unsafe_getRawColor" /* 708 */;
-import ConfettiLocation from "ConfettiLocation" /* 7612 */;
+import unsafe_getRawColor from "unsafe_getRawColor" /* 575 */;
+import ConfettiLocation from "ConfettiLocation" /* 7679 */;
 
 ({ ShakeLevel: obj1, SHAKE_STEPS: c3, SHAKE_STEP_DIVIDER: c4 } = ConfettiLocation);
 let items = [[1, 0.001], [25, 0.3], [100, 0.5], [250, 0.8], [500, 0.9], [2500, 0.95], [9001, 1]];

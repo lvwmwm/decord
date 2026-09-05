@@ -1,11 +1,11 @@
-// Module ID: 4194
-// Function ID: 4195
+// Module ID: 4259
+// Function ID: 4260
 // Name: dispatcher
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 
-// Module 4194 (dispatcher)
+// Module 4259 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/toast/native/ToastActionCreators.tsx");
 

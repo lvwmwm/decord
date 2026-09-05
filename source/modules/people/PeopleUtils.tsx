@@ -1,13 +1,13 @@
-// Module ID: 10801
-// Function ID: 10802
-// Dependencies: [4130, 673, 10802, 8972, 4172, 4179, 10803, 10804, 706, 4325, 2]
+// Module ID: 10870
+// Function ID: 10871
+// Dependencies: [4209, 1074, 10871, 9042, 5423, 7299, 10872, 10873, 573, 4404, 2]
 
-// Module 10801
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 8972 */;
-import showRequestFailedAlertDefault from "showRequestFailedAlert" /* 10802 */;
-import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import { AbortCodes } from "ME" /* 673 */;
+// Module 10870
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 9042 */;
+import showRequestFailedAlertDefault from "showRequestFailedAlert" /* 10871 */;
+import closure_3 from "markAllUserIdListsStale" /* 4209 */;
+import { AbortCodes } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/people/PeopleUtils.tsx");

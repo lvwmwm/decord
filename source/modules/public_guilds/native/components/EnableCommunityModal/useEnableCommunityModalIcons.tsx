@@ -1,14 +1,14 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17666
+// Function ID: 17667
 // Name: safetyCheck
-// Dependencies: [32, 19, 502, 1362, 17587, 17588, 17589, 17593, 17594, 6932, 4416, 2]
+// Dependencies: [32, 19, 1085, 4411, 17667, 17668, 17669, 17673, 17674, 6992, 4495, 2]
 // Exports: default
 
-// Module 17586 (safetyCheck)
-import useThemeDefault from "useTheme" /* 4416 */;
+// Module 17666 (safetyCheck)
+import useThemeDefault from "useTheme" /* 4495 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 
 const require = arg1;
 class EnableCommunityModalIcons {
@@ -23,9 +23,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(17587);
+      let tmpResult = tmp(17667);
     } else {
-      tmpResult = tmp(17588);
+      tmpResult = tmp(17668);
     }
     return tmpResult;
   },
@@ -33,16 +33,16 @@ Object.defineProperty(prototype, "safetyCheck", {
 });
 Object.defineProperty(prototype, "channelSetup", {
   get: function channelSetup() {
-    return require(17589) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
+    return require(17669) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(17593);
+      let tmpResult = tmp(17673);
     } else {
-      tmpResult = tmp(17594);
+      tmpResult = tmp(17674);
     }
     return tmpResult;
   },
@@ -50,7 +50,7 @@ Object.defineProperty(prototype, "finishingTouches", {
 });
 Object.defineProperty(prototype, "close", {
   get: function close() {
-    return require(6932) /* registerAsset */;
+    return require(6992) /* registerAsset */;
   },
   set: undefined
 });

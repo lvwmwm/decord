@@ -1,10 +1,10 @@
 // Module ID: 13425
 // Function ID: 13426
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13425 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 351, height: 100, scales: [2, 3], hash: "7e6a8bbab7f30fd349a76227a78736a2", name: "img_subheader_error_mobile_v2_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "fac2e3b3b87c5c331642c571eab831c9", name: "sticker", type: "png" });

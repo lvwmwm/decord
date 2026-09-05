@@ -1,19 +1,19 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 16871
+// Function ID: 16872
 // Name: Modal
-// Dependencies: [109, 19, 17, 673, 21, 4481, 709, 4731, 8698, 500, 7408, 1627, 16794, 1234, 16678, 2]
+// Dependencies: [109, 19, 17, 1074, 21, 4560, 576, 4763, 8768, 1250, 7475, 1611, 16872, 1115, 16756, 2]
 // Exports: default
 
-// Module 16793 (Modal)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import trackImpressionDefault from "trackImpression" /* 8698 */;
+// Module 16871 (Modal)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import trackImpressionDefault from "trackImpression" /* 8768 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NOOP } from "ME" /* 673 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_3 = ["impressionName", "impressionProperties"];
@@ -36,12 +36,12 @@ export default function Modal(route) {
   const tmp = callback3();
   obj1 = React;
   const callback = React.useCallback(() => {
-    let arr = callback(4731);
+    let arr = callback(4763);
     arr = arr.pop();
   }, []);
   let obj = { type: null, name: null, properties: null };
   const tmp2 = callback(props, closure_3);
-  obj[0] = modal(500).ImpressionTypes.MODAL;
+  obj[0] = modal(1250).ImpressionTypes.MODAL;
   obj[1] = impressionName;
   obj[2] = impressionProperties;
   trackImpressionDefault(obj);
@@ -67,10 +67,10 @@ export default function Modal(route) {
     }
     return currentResult;
   }, []);
-  const layoutEffect = obj1.useLayoutEffect(() => modal(7408).trackAppUIViewed("ModalScreen"), []);
+  const layoutEffect = obj1.useLayoutEffect(() => modal(7475).trackAppUIViewed("ModalScreen"), []);
   const tmp6 = trackImpressionDefault;
   ({ left, right } = useSafeAreaInsetsDefault());
-  let tmp7Result = tmp7(16794);
+  let tmp7Result = tmp7(16872);
   const items = [absoluteFillObject.absoluteFillObject, ];
   let tmp16;
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
@@ -84,7 +84,7 @@ export default function Modal(route) {
   obj1 = { style: items, onAccessibilityEscape: null, children: null };
   items[1] = tmp16;
   if (modal.closable) {
-    let pop = tmp4(4731).pop;
+    let pop = tmp4(4763).pop;
   } else {
     pop = NOOP;
   }
@@ -95,10 +95,10 @@ export default function Modal(route) {
   obj2.transitionState = null;
   obj2.onClose = callback;
   const items2 = [<modal.modal />, ];
-  tmp7Result = tmp7(1234);
+  tmp7Result = tmp7(1115);
   let isIOSResult = tmp7Result.isIOS();
   if (isIOSResult) {
-    isIOSResult = callback2(tmp7(16678).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = callback2(tmp7(16756).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj1[2] = items2;

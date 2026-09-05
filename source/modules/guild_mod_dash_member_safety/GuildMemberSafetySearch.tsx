@@ -1,12 +1,12 @@
-// Module ID: 7452
-// Function ID: 7453
+// Module ID: 7519
+// Function ID: 7520
 // Name: hasStringMatch
-// Dependencies: [32, 7453, 4646, 11, 4109, 4126, 2]
+// Dependencies: [32, 7520, 4679, 11, 4188, 4205, 2]
 // Exports: getDefaultSearchState
 
-// Module 7452 (hasStringMatch)
+// Module 7519 (hasStringMatch)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import isEqualDefault from "isEqual" /* 4646 */;
+import isEqualDefault from "isEqual" /* 4679 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import set from "set" /* 2 */;
 
@@ -191,8 +191,8 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
                     if (tmp24) {
                       let tmp26 = !requireCommunicationDisabled;
                       if (requireCommunicationDisabled) {
-                        tmp26 = !_require(4109).isMemberCommunicationDisabled(joinedAtTimestamp);
-                        const obj4 = _require(4109);
+                        tmp26 = !_require(4188).isMemberCommunicationDisabled(joinedAtTimestamp);
+                        const obj4 = _require(4188);
                       }
                       let tmp29 = !tmp26;
                       if (tmp26) {
@@ -204,8 +204,8 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
                         if (tmp30) {
                           let tmp32 = !requireUsernameQuarantined;
                           if (requireUsernameQuarantined) {
-                            tmp32 = !_require(4126).hasAutomodQuarantinedProfile(joinedAtTimestamp);
-                            const obj5 = _require(4126);
+                            tmp32 = !_require(4205).hasAutomodQuarantinedProfile(joinedAtTimestamp);
+                            const obj5 = _require(4205);
                           }
                           tmp31 = !tmp32;
                         }

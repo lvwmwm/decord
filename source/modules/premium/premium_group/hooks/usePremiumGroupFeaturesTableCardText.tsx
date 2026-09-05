@@ -1,15 +1,15 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13486
+// Function ID: 13487
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4145, 4153, 1233, 3016, 1929, 7980, 13414, 586, 2]
+// Dependencies: [4224, 4232, 1114, 3063, 1379, 8049, 13487, 504, 2]
 // Exports: default
 
-// Module 13413 (usePremiumGroupFeaturesTableCardText)
-import initialize from "initialize" /* 586 */;
-import create from "create" /* 1929 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13414 */;
-import closure_3 from "reset" /* 4145 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;
+// Module 13486 (usePremiumGroupFeaturesTableCardText)
+import initialize from "initialize" /* 504 */;
+import create from "create" /* 1379 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13487 */;
+import closure_3 from "reset" /* 4224 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4232 */;
 
 require = arg1;
 ({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
@@ -24,32 +24,32 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
   if (arg0 === create.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     return null;
   } else {
-    if (arg0 === tmp(1929).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(7980).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(7980);
+    if (arg0 === tmp(1379).PremiumSubscriptionGroupRole.PRIMARY) {
+      let priceString = tmp(8049).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8049);
     } else {
       priceString = null;
       if (null != tmp4) {
-        const intl = tmp(1233).intl;
+        const intl = tmp(1114).intl;
         obj = { primaryName: null, premiumGroupProductName: null };
         obj[0] = tmp4;
         obj[1] = callback();
-        priceString = intl.format(tmp3(3016).Nu9LNm, obj);
+        priceString = intl.format(tmp3(3063).Nu9LNm, obj);
       }
     }
     let str = "...";
     if (null != priceString) {
       str = priceString;
     }
-    if (arg0 === tmp(1929).PremiumSubscriptionGroupRole.PRIMARY) {
-      const intl3 = tmp(1233).intl;
+    if (arg0 === tmp(1379).PremiumSubscriptionGroupRole.PRIMARY) {
+      const intl3 = tmp(1114).intl;
       obj = { helpCenterLink: null, premiumGroupProductName: null };
       obj[0] = closure_5;
       obj[1] = callback();
-      let formatResult = intl3.format(tmp3(3016)["+R/K74"], obj);
+      let formatResult = intl3.format(tmp3(3063)["+R/K74"], obj);
     } else {
-      const intl2 = tmp(1233).intl;
-      const tmp3Result = tmp3(3016);
+      const intl2 = tmp(1114).intl;
+      const tmp3Result = tmp3(3063);
       obj1 = { helpCenterLink: null };
       obj1[0] = closure_5;
       formatResult = intl2.format(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj1);

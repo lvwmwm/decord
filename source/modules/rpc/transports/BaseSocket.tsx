@@ -1,13 +1,13 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9564
+// Function ID: 9565
 // Name: checkRpcVersion
-// Dependencies: [673, 12, 9483, 2]
+// Dependencies: [1074, 12, 9554, 2]
 
-// Module 9493 (checkRpcVersion)
+// Module 9564 (checkRpcVersion)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import prototypeDefault from "prototype" /* 9483 */;
-import ME from "ME" /* 673 */;
+import prototypeDefault from "prototype" /* 9554 */;
+import ME from "ME" /* 1074 */;
 
 ({ RPC_VERSION: obj1, RPCCloseCodes: c3 } = ME);
 const result = set.fileFinishedImporting("modules/rpc/transports/BaseSocket.tsx");

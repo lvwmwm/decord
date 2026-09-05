@@ -1,16 +1,16 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12245
+// Function ID: 12246
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [19, 17, 11894, 21, 4481, 12178, 12171, 1233, 12169, 12180, 4197, 709, 4205, 2]
+// Dependencies: [19, 17, 11962, 21, 4560, 12246, 12239, 1114, 12237, 12248, 4262, 576, 4271, 2]
 
-// Module 12177 (renderChatInputActionButtonGiftAndThread)
-import ThemesDefault from "Themes" /* 709 */;
-import FadeTransitionItemDefault from "FadeTransitionItem" /* 12178 */;
+// Module 12245 (renderChatInputActionButtonGiftAndThread)
+import ThemesDefault from "Themes" /* 576 */;
+import FadeTransitionItemDefault from "FadeTransitionItem" /* 12246 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ChatInputActionType } from "TextAreaCta" /* 11894 */;
+import { ChatInputActionType } from "TextAreaCta" /* 11962 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
@@ -21,16 +21,16 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
   if (shouldShowThread) {
     obj = { accessible: null, accessibilityLabel: null, disabled: null, IconComponent: null, onPress: null, style: null };
     obj[0] = accessible;
-    const intl = onPress(1233).intl;
-    obj[1] = intl.string(onPress(1233).t["4WNcpu"]);
+    const intl = onPress(1114).intl;
+    obj[1] = intl.string(onPress(1114).t["4WNcpu"]);
     obj[2] = !canStartThreads;
-    obj[3] = onPress(12169).ThreadPlusIcon;
+    obj[3] = onPress(12237).ThreadPlusIcon;
     obj[4] = function onPress(arg0) {
       return onPress(arg0, closure_1_5.THREAD);
     };
     obj[5] = styleButton;
-    let tmpResult = tmp(tmp2(12171), obj);
-    const tmp2Result = tmp2(12171);
+    let tmpResult = tmp(tmp2(12239), obj);
+    const tmp2Result = tmp2(12239);
   } else {
     obj = { accessible: null, channel: null, onPress: null, style: null, styleButton: null };
     obj[0] = accessible;
@@ -38,7 +38,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     obj[2] = onPress;
     obj[3] = styleButtonWrapper;
     obj[4] = styleButton;
-    tmpResult = tmp(tmp2(12180), obj);
+    tmpResult = tmp(tmp2(12248), obj);
   }
   obj[2] = tmpResult;
   return jsx(FadeTransitionItemDefault, { cleanup, state, children: null }, arg0);
@@ -57,17 +57,17 @@ let closure_7 = createCacheKey.createStyles((height) => {
 });
 const memoResult = importAllResult.memo(function ChatInputActionButtonGiftOrThread(arg0) {
   const _require = arg0;
-  let obj = _require(4197);
+  let obj = _require(4262);
   const token = obj.useToken(ThemesDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   let items = [arg0];
-  const obj2 = _require(4197);
-  obj = { style: callback(token, _require(4197).useToken(ThemesDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN)).container, children: null };
+  const obj2 = _require(4262);
+  obj = { style: callback(token, _require(4262).useToken(ThemesDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN)).container, children: null };
   const memo = importAllResult.useMemo(() => {
     const items = [closure_0];
     return items;
   }, items);
   obj = { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey };
-  obj[1] = jsx(_require(4205).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
+  obj[1] = jsx(_require(4271).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
   return <View items={memo} renderItem={renderChatInputActionButtonGiftAndThread} getItemKey={getChatInputActionButtonGiftAndThreadKey} />;
 });
 const result = require("set").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonGiftOrThread.tsx");

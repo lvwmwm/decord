@@ -1,11 +1,11 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11695
+// Function ID: 11696
 // Name: useForwardPreviewContent
-// Dependencies: [4120, 586, 4858, 2]
+// Dependencies: [4199, 504, 4897, 2]
 // Exports: useForwardPreviewContent
 
-// Module 11627 (useForwardPreviewContent)
-import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
+// Module 11695 (useForwardPreviewContent)
+import closure_2 from "getUncachedChannelPermissions" /* 4199 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
@@ -36,7 +36,7 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
     attachments = [];
   }
   const items = [];
-  let obj = message(586);
+  let obj = message(504);
   const items1 = [onlyAttachmentIds];
   if (obj.useStateFromStores(items1, () => {
     let shouldStripEmbedsResult = null != closure_1;

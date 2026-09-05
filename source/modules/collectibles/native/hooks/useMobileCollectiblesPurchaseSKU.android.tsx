@@ -1,14 +1,14 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 11014
+// Function ID: 11015
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1921, 586, 8778, 10746, 2]
+// Dependencies: [1371, 504, 8848, 10815, 2]
 // Exports: default
 
-// Module 10945 (useMobileCollectiblesPurchaseSKU)
-import initialize from "initialize" /* 586 */;
-import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 8778 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10746 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 11014 (useMobileCollectiblesPurchaseSKU)
+import initialize from "initialize" /* 504 */;
+import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 8848 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10815 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");

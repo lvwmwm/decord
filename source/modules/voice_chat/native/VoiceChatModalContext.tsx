@@ -1,10 +1,10 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9589
+// Function ID: 9590
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 9518 (context)
+// Module 9589 (context)
 import importAllResult from "noop" /* 19 */;
 
 let c0 = importAllResult;

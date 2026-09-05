@@ -1,13 +1,13 @@
-// Module ID: 10726
-// Function ID: 10727
+// Module ID: 10795
+// Function ID: 10796
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 7167, 673, 8724, 7171, 2]
+// Dependencies: [19, 7227, 1074, 8794, 7231, 2]
 // Exports: useWishlistSkuFilter
 
-// Module 10726 (useWishlistSkuFilter)
+// Module 10795 (useWishlistSkuFilter)
 import closure_2 from "noop" /* 19 */;
-import { WishlistRecommendationReason as closure_3 } from "fromServer" /* 7167 */;
-import { SKUProductLines } from "ME" /* 673 */;
+import { WishlistRecommendationReason as closure_3 } from "fromServer" /* 7227 */;
+import { SKUProductLines } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/wishlists/hooks/useWishlistSkuFilter.native.tsx");

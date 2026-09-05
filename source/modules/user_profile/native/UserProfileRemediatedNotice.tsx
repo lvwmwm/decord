@@ -1,17 +1,17 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13123
+// Function ID: 13124
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 4130, 673, 21, 4481, 709, 8172, 644, 4477, 1233, 8972, 2]
+// Dependencies: [19, 17, 4209, 1074, 21, 4560, 576, 8241, 563, 4556, 1114, 9042, 2]
 // Exports: default
 
-// Module 13055 (RemediatedUserNotice)
+// Module 13123 (RemediatedUserNotice)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "markAllUserIdListsStale" /* 4130 */;
-import { RelationshipTypes } from "ME" /* 673 */;
+import closure_4 from "markAllUserIdListsStale" /* 4209 */;
+import { RelationshipTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -25,7 +25,7 @@ const result = require("set").fileFinishedImporting("modules/user_profile/native
 export default function RemediatedUserNotice(user) {
   user = user.user;
   const tmp = callback2();
-  let obj = user(644);
+  let obj = user(563);
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isPendingIncoming: closure_1_4.getRelationshipType(user.id) === closure_1_5.PENDING_INCOMING, isBlocked: closure_1_4.isBlocked(user.id), isIgnored: closure_1_4.isIgnored(user.id) }));
   ({ isBlocked, isIgnored } = stateFromStoresObject);
@@ -35,18 +35,18 @@ export default function RemediatedUserNotice(user) {
     obj[0] = items1;
     if (isBlocked) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
-      const intl = tmp4(1233).intl;
-      obj[3] = intl.string(tmp4(1233).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4477).Text, obj);
+      const intl = tmp4(1114).intl;
+      obj[3] = intl.string(tmp4(1114).t["oC/fU6"]);
+      isBlocked = callback(tmp4(4556).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
       obj1 = { children: null };
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
-      const intl2 = tmp4(1233).intl;
-      obj2[3] = intl2.string(tmp4(1233).t.HXz5An);
-      const items3 = [callback(tmp4(4477).Text, obj2), callback(tmp4(4477).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
-      const intl3 = tmp4(1233).intl;
+      const intl2 = tmp4(1114).intl;
+      obj2[3] = intl2.string(tmp4(1114).t.HXz5An);
+      const items3 = [callback(tmp4(4556).Text, obj2), callback(tmp4(4556).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const intl3 = tmp4(1114).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {
         return closure_1_6(user(closure_1_2[9]).Text, {
@@ -59,7 +59,7 @@ export default function RemediatedUserNotice(user) {
           children
         });
       };
-      items3[2] = intl3.format(tmp4(1233).t.PrtAqy, obj3);
+      items3[2] = intl3.format(tmp4(1114).t.PrtAqy, obj3);
       obj1[0] = items3;
       isIgnored = tmp8(closure_7, obj1);
     }

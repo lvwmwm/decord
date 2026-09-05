@@ -1,11 +1,11 @@
-// Module ID: 4168
-// Function ID: 4169
+// Module ID: 1937
+// Function ID: 1938
 // Name: items
-// Dependencies: [1305, 2]
+// Dependencies: [1187, 2]
 
-// Module 4168 (items)
+// Module 1937 (items)
 import set from "set" /* 2 */;
-import create from "create" /* 1305 */;
+import create from "create" /* 1187 */;
 
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
 const items = [obj.DISABLED, create.DmSpamFilterV2.DISABLED];

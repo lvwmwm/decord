@@ -1,15 +1,15 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17340
+// Function ID: 17341
 // Name: handleDmSettingsUpsellShow
-// Dependencies: [673, 7058, 17261, 527, 2]
+// Dependencies: [1074, 7118, 17341, 1272, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 17260 (handleDmSettingsUpsellShow)
+// Module 17340 (handleDmSettingsUpsellShow)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import initializeDefault from "initialize" /* 7058 */;
-import _modDef17261 from "module_17261" /* 17261 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import initializeDefault from "initialize" /* 7118 */;
+import _modDef17341 from "module_17341" /* 17341 */;
 
 const Endpoints = ME.Endpoints;
 initializeDefault;
@@ -21,7 +21,7 @@ class DmSettingsUpsellManager extends tmp2 {
   }
 }
 DmSettingsUpsellManager.prototype["handleDmSettingsUpsellShow"] = function handleDmSettingsUpsellShow(guildId) {
-  const result = _modDef17261.openDmSettingsUpsellModal(guildId.guildId);
+  const result = _modDef17341.openDmSettingsUpsellModal(guildId.guildId);
 };
 const dmSettingsUpsellManager = new DmSettingsUpsellManager();
 let result = set.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");

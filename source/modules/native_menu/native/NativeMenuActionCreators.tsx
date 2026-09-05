@@ -1,10 +1,10 @@
-// Module ID: 10579
-// Function ID: 10580
-// Dependencies: [706, 4449, 4450, 2]
+// Module ID: 10650
+// Function ID: 10651
+// Dependencies: [573, 4528, 4529, 2]
 
-// Module 10579
+// Module 10650
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let result = set.fileFinishedImporting("modules/native_menu/native/NativeMenuActionCreators.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 639
-// Function ID: 640
+// Module ID: 557
+// Function ID: 558
 // Name: areStatesEqual
-// Dependencies: [5, 32, 19, 640, 581, 641, 644, 2]
+// Dependencies: [5, 32, 19, 558, 559, 560, 563, 2]
 // Exports: createFetchStore
 
-// Module 639 (areStatesEqual)
-import failsDefault from "fails" /* 581 */;
-import shallowEqual from "shallowEqual" /* 640 */;
+// Module 557 (areStatesEqual)
+import shallowEqual from "shallowEqual" /* 558 */;
+import failsDefault from "fails" /* 559 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 require = arg1;
 function areStatesEqual(items, current) {

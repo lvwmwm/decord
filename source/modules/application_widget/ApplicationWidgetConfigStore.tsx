@@ -1,11 +1,11 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 9026
+// Function ID: 9027
 // Name: updateApplicationConfigs
-// Dependencies: [32, 586, 706, 2]
+// Dependencies: [32, 504, 573, 2]
 
-// Module 8956 (updateApplicationConfigs)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 9026 (updateApplicationConfigs)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 
 function updateApplicationConfigs(configs) {

@@ -1,12 +1,12 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11516
+// Function ID: 11517
 // Name: getApplicationIdsForGame
-// Dependencies: [4522, 4505, 2]
+// Dependencies: [4788, 1916, 2]
 // Exports: default
 
-// Module 11448 (getApplicationIdsForGame)
-import closure_0 from "addApplication" /* 4522 */;
-import closure_1 from "handleLoadMessages" /* 4505 */;
+// Module 11516 (getApplicationIdsForGame)
+import closure_0 from "addApplication" /* 4788 */;
+import closure_1 from "createGamesFromMessage" /* 1916 */;
 
 const result = require("set").fileFinishedImporting("modules/games/utils/getApplicationIdsForGame.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16323
+// Function ID: 16324
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 16248, 4989, 5041, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 16324, 5028, 5080, 4556, 1114, 2]
 // Exports: default
 
-// Module 16247 (MentionSubtitle)
+// Module 16323 (MentionSubtitle)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import styles from "styles" /* 16248 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import styles from "styles" /* 16324 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -24,17 +24,17 @@ export default function MentionSubtitle(channel) {
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(4989).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(4989);
+    channelIconComponentWithGuild = tmp(5028).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(5028);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5041).TextIcon;
+    channelIconComponentWithGuild = tmp(5080).TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow, children: null };
   obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   const items = [callback(channelIconComponentWithGuild, obj), ];
   obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj1[4] = intl.format(getSystemLocale.t.L9YdGH, {
     channelName,
     count: count - 1,

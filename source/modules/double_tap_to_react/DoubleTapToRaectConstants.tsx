@@ -1,9 +1,9 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7969
+// Function ID: 7970
 // Name: NITRO_UPSELL_ALERT_KEY
 // Dependencies: [2]
 
-// Module 7900 (NITRO_UPSELL_ALERT_KEY)
+// Module 7969 (NITRO_UPSELL_ALERT_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/double_tap_to_react/DoubleTapToRaectConstants.tsx");

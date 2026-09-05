@@ -1,10 +1,10 @@
 // Module ID: 11200
 // Function ID: 11201
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11200 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "36e39be8b33ba48e0db05b6e6fe9d9e1", name: "ic_add_reaction_v2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/badge", width: 30, height: 30, scales: [2, 3], hash: "581374036ac67fb316291b50b3effd2f", name: "ic_badge_nitro", type: "png" });

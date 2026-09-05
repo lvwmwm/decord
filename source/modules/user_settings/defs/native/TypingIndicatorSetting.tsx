@@ -1,19 +1,19 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15354
+// Function ID: 15355
 // Name: dismissibleBadgeRouteProps
-// Dependencies: [673, 14644, 1372, 11400, 1233, 3502, 15279, 11899, 15281, 15330, 2]
+// Dependencies: [1074, 14719, 1943, 11468, 1114, 3549, 15355, 11967, 15357, 15406, 2]
 
-// Module 15278 (dismissibleBadgeRouteProps)
+// Module 15354 (dismissibleBadgeRouteProps)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import messagesProxyDefault from "messagesProxy" /* 3502 */;
-import apexExperiment from "apexExperiment" /* 11899 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 15279 */;
-import SettingsBadgeType from "SettingsBadgeType" /* 15330 */;
-import useAlwaysShow from "useAlwaysShow" /* 14644 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import messagesProxyDefault from "messagesProxy" /* 3549 */;
+import apexExperiment from "apexExperiment" /* 11967 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 15355 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 15406 */;
+import useAlwaysShow from "useAlwaysShow" /* 14719 */;
+import createToggle from "createToggle" /* 11468 */;
 
 const dismissibleBadgeRouteProps = useAlwaysShow.createDismissibleBadgeRouteProps(DismissibleContent.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
 ({ useTrailing, usePreNavigationAction } = dismissibleBadgeRouteProps);
@@ -34,7 +34,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(15281) /* CustomTypingIndicatorEditScreen */.default;
+    return require(15357) /* CustomTypingIndicatorEditScreen */.default;
   },
   usePersistentBadge() {
     return { badgeType: SettingsBadgeType.SettingsBadgeType.BETA };

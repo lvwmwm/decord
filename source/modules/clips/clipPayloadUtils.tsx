@@ -1,17 +1,17 @@
-// Module ID: 5092
-// Function ID: 5093
+// Module ID: 5131
+// Function ID: 5132
 // Name: getClipCreatedAt
-// Dependencies: [32, 4539, 673, 4545, 5093, 695, 5094, 2]
+// Dependencies: [32, 5132, 1074, 4585, 5133, 1242, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 5092 (getClipCreatedAt)
+// Module 5131 (getClipCreatedAt)
 import closure_3 from "_slicedToArray" /* 32 */;
-import result from "result" /* 4539 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { SpeakingFlags } from "DesktopSources" /* 4545 */;
+import result from "result" /* 5132 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { SpeakingFlags } from "DesktopSources" /* 4585 */;
 
 const require = arg1;
-({ CLIPS_MAX_PARTICIPANTS: c4, CLIPS_MAX_TIMELINE_EVENTS: c5, ClipSignalTypes: closure_6, GameEventType: error } = result);
+({ CLIPS_MAX_PARTICIPANTS: c4, CLIPS_MAX_TIMELINE_EVENTS: c5, ClipSignalTypes: closure_6, GameEventType: error, CLIP_RUNTIME: closure_8 } = result);
 let obj = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
 result = require("set").fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");
 
@@ -65,7 +65,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.end;
       const sum1 = diff + 1000 * editMetadata.start;
-      closure_1 = _require(5093).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
+      closure_1 = _require(5133).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
         editMetadata = editMetadata.editMetadata;
@@ -120,7 +120,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         }
         const tmp10 = map;
       }
-      const obj2 = _require(5093);
+      const obj2 = _require(5133);
     }
   }
 };

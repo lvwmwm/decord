@@ -1,10 +1,10 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15733
+// Function ID: 15734
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 15657 (useBenchmarkResults)
+// Module 15733 (useBenchmarkResults)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 

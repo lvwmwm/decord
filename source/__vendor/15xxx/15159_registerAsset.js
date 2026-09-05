@@ -1,10 +1,10 @@
 // Module ID: 15159
 // Function ID: 15160
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 15159 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 99, height: 70, scales: [2, 3], hash: "67e9bc8b12cbc0fed84dfc34cd178623", name: "cactus", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "17f53f43d68e8a19fbcd8776cb4d1537", name: "RefreshIcon", type: "png" });

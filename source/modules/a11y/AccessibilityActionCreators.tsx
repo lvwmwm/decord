@@ -1,16 +1,16 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14437
+// Function ID: 14438
 // Name: setFontSize
-// Dependencies: [4473, 673, 4169, 682, 706, 695, 9287, 2]
+// Dependencies: [4552, 1074, 1938, 1084, 573, 1242, 9358, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14363 (setFontSize)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
-import { SettingsOverrideReasonKeys as closure_5 } from "MAX_FAVORITES" /* 682 */;
+// Module 14437 (setFontSize)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 1938 */;
+import { SettingsOverrideReasonKeys as closure_5 } from "MAX_FAVORITES" /* 1084 */;
 
 let result = require("set").fileFinishedImporting("modules/a11y/AccessibilityActionCreators.tsx");
 
@@ -84,7 +84,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
   const useReducedMotion2 = closure_2.useReducedMotion;
   if (!useReducedMotion) {
     if (useReducedMotion2) {
-      let tmpResult = tmp(9287);
+      let tmpResult = tmp(9358);
       obj = { gifAutoPlay: null, animateEmoji: null, animateStickers: null };
       obj1 = { value: false, reasonKey: null };
       obj1[1] = constants.REDUCED_MOTION;
@@ -103,7 +103,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    tmpResult = tmp(9287);
+    tmpResult = tmp(9358);
     const result1 = tmpResult.clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
   }
 };

@@ -1,15 +1,15 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8186
+// Function ID: 8187
 // Name: useDisplayProfile
-// Dependencies: [19, 1921, 7554, 586, 8118, 1990, 8120, 2]
+// Dependencies: [19, 1371, 7621, 504, 8187, 1933, 8189, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8117 (useDisplayProfile)
-import premiumSinceDefault from "premiumSince" /* 8120 */;
+// Module 8186 (useDisplayProfile)
+import premiumSinceDefault from "premiumSince" /* 8189 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "createUserWidgetFromServer" /* 7554 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "createUserWidgetFromServer" /* 7621 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1933 */;
 
 const require = arg1;
 let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => new premiumSinceDefault(arg0, arg1));
@@ -19,7 +19,7 @@ export default function useDisplayProfile(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
   const items = [closure_4, closure_5];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let tmp2 = null;
     if (null != closure_0) {
       const items = [closure_1_4, closure_1_5];
@@ -52,7 +52,7 @@ export const useDisplayProfileWithFetchEffect = function useDisplayProfileWithFe
   _require = arg0;
   closure_1 = arg1;
   const items1 = [closure_4, closure_5];
-  return _require(586).useStateFromStores(items1, () => {
+  return _require(504).useStateFromStores(items1, () => {
     let tmp2 = null;
     if (null != closure_0) {
       const items = [closure_1_4, closure_1_5];

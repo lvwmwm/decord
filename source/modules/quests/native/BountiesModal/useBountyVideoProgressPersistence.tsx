@@ -1,14 +1,14 @@
-// Module ID: 14945
-// Function ID: 14946
+// Module ID: 15020
+// Function ID: 15021
 // Name: useBountyVideoProgressPersistence
-// Dependencies: [32, 19, 7635, 5404, 11452, 14941, 11456, 2]
+// Dependencies: [32, 19, 7702, 5444, 11520, 15016, 11524, 2]
 // Exports: useBountyVideoProgressPersistence
 
-// Module 14945 (useBountyVideoProgressPersistence)
+// Module 15020 (useBountyVideoProgressPersistence)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "set" /* 7635 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
+import closure_4 from "set" /* 7702 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5444 */;
 
 const require = arg1;
 let closure_6 = { timestampSec: 0, maxTimestampSec: 0, duration: 0 };

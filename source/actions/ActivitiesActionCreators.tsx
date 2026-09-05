@@ -1,13 +1,13 @@
-// Module ID: 11404
-// Function ID: 11405
-// Dependencies: [5, 1386, 673, 4474, 706, 527, 7615, 7390, 4708, 11405, 11406, 4494, 2]
+// Module ID: 11472
+// Function ID: 11473
+// Dependencies: [5, 1957, 1074, 4553, 573, 1272, 7682, 7456, 4740, 11473, 11474, 4573, 2]
 
-// Module 11404
-import _modDef4494 from "module_4494" /* 4494 */;
+// Module 11472
+import _modDef4573 from "module_4573" /* 4573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 
 const require = arg1;
 ({ Endpoints: c5, ActivityTypes: closure_6, AnalyticEvents: error, LoggingInviteTypes: closure_8 } = ME);
@@ -118,8 +118,8 @@ export default {
   sendActivityInviteUser(userId) {
     const self = this;
     ({ type: importDefault, activity: dependencyMap, content: closure_3, location: require } = userId);
-    const obj = _modDef4494;
-    return _modDef4494.ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: closure_3, location: closure_0 }));
+    const obj = _modDef4573;
+    return _modDef4573.ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: closure_3, location: closure_0 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
     closure_0 = arg0;
@@ -136,11 +136,11 @@ export default {
       if (null != closure_1_4) {
         obj1.message_id = closure_1_4;
       }
-      const HTTP = closure_1_0(527).HTTP;
+      const HTTP = closure_1_0(1272).HTTP;
       const obj2 = { url: null, retries: 3, query: null, rejectWithError: null };
       obj2[0] = closure_1_5.USER_ACTIVITY_JOIN(closure_1_0, c1, dependencyMap);
       obj2[2] = obj1;
-      const obj4 = closure_1_0(527);
+      const obj4 = closure_1_0(1272);
       obj2[3] = obj4.rejectWithMigratedError();
       closure_0 = yield HTTP.get(obj2);
       const obj = { secret: null, joinUrl: null };

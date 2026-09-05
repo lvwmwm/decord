@@ -1,11 +1,11 @@
-// Module ID: 5124
-// Function ID: 5125
+// Module ID: 5163
+// Function ID: 5164
 // Name: getAdaptiveImageCompressionQuality
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 5124 (getAdaptiveImageCompressionQuality)
+// Module 5163 (getAdaptiveImageCompressionQuality)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 function getAdaptiveImageCompressionQuality(width, ADAPTIVE_COMPRESSION_CONFIG) {
   if (ADAPTIVE_COMPRESSION_CONFIG.useAdaptiveCompression) {

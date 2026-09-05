@@ -1,9 +1,9 @@
-// Module ID: 690
-// Function ID: 691
+// Module ID: 1095
+// Function ID: 1096
 // Name: MessageEmbedTypes
 // Dependencies: [2]
 
-// Module 690 (MessageEmbedTypes)
+// Module 1095 (MessageEmbedTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/MessageEmbedTypes.tsx");

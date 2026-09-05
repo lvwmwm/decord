@@ -1,13 +1,13 @@
-// Module ID: 13671
-// Function ID: 13672
+// Module ID: 13746
+// Function ID: 13747
 // Name: getVerificationKey
-// Dependencies: [704, 12, 586, 706, 2]
+// Dependencies: [1099, 12, 504, 573, 2]
 
-// Module 13671 (getVerificationKey)
+// Module 13746 (getVerificationKey)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import setSecondaryTokenAll from "setSecondaryToken" /* 704 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 1099 */;
 
 let c3 = false;
 let closure_4 = [];

@@ -1,21 +1,21 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14481
+// Function ID: 14482
 // Name: set
-// Dependencies: [5, 1385, 4522, 4383, 673, 4509, 9486, 9488, 14387, 14407, 1234, 4475, 695, 9462, 4110, 14408, 4184, 8300, 14409, 9483, 7320, 14401, 8786, 14410, 2]
+// Dependencies: [5, 1956, 4788, 4465, 1074, 1920, 9557, 9559, 14462, 14482, 1115, 4554, 1242, 9534, 4189, 14483, 4249, 8370, 14484, 9554, 7382, 14476, 8856, 14485, 2]
 
-// Module 14406 (set)
-import openUserSettings from "openUserSettings" /* 7320 */;
-import getApplicationFlags from "getApplicationFlags" /* 8786 */;
-import prototypeDefault from "prototype" /* 9483 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9486 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9488 */;
+// Module 14481 (set)
+import openUserSettings from "openUserSettings" /* 7382 */;
+import getApplicationFlags from "getApplicationFlags" /* 8856 */;
+import prototypeDefault from "prototype" /* 9554 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9557 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9559 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import closure_5 from "addApplication" /* 4522 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
-import ME from "ME" /* 673 */;
-import items3 from "items3" /* 4509 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14401 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import closure_5 from "addApplication" /* 4788 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4465 */;
+import ME from "ME" /* 1074 */;
+import items3 from "items3" /* 1920 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14476 */;
 import set from "set" /* 2 */;
 
 require = arg1;

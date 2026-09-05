@@ -1,14 +1,14 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16879
+// Function ID: 16880
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4481, 5539, 16802, 1233, 12550, 4477, 5084, 2]
+// Dependencies: [19, 17, 21, 4560, 5584, 16880, 1114, 12618, 4556, 5123, 2]
 // Exports: default
 
-// Module 16801 (MessageRequestMutualServers)
+// Module 16879 (MessageRequestMutualServers)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -20,7 +20,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5539).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5584).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -28,17 +28,17 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = callback2();
-  let obj = iconSize(16802);
+  let obj = iconSize(16880);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
-    const intl2 = tmp4(1233).intl;
+    const intl2 = tmp4(1114).intl;
     obj = { count: null };
     obj[0] = length;
-    let formatResult = intl2.format(tmp4(1233).t.eE3oep, obj);
+    let formatResult = intl2.format(tmp4(1114).t.eE3oep, obj);
   } else {
-    const intl = tmp4(1233).intl;
-    formatResult = intl.string(tmp4(1233).t.jpY0X5);
+    const intl = tmp4(1114).intl;
+    formatResult = intl.string(tmp4(1114).t.jpY0X5);
   }
   obj = { style: items, children: null };
   items = [tmp3.container, style];
@@ -48,7 +48,7 @@ export default function MessageRequestMutualServers(textVariant) {
     obj1[0] = iconSize;
     obj1[1] = substr.map((name) => name.name);
     obj1[2] = substr.map((guild) => closure_1_4(closure_1_1(closure_1_2[4]), { guild, size: iconSize }, guild.id));
-    tmp9 = callback(tmp4(12550).GuildIconPile, obj1);
+    tmp9 = callback(tmp4(12618).GuildIconPile, obj1);
   }
   const items1 = [tmp9, ];
   const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: null };
@@ -58,7 +58,7 @@ export default function MessageRequestMutualServers(textVariant) {
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
   obj2[4] = combined;
-  items1[1] = callback(iconSize(4477).Text, obj2);
+  items1[1] = callback(iconSize(4556).Text, obj2);
   obj[1] = items1;
   const tmp7Result = closure_5(View, obj);
   let tmp11Result = tmp7Result;
@@ -68,7 +68,7 @@ export default function MessageRequestMutualServers(textVariant) {
       const obj3 = { accessibilityRole: "button", onPress: null, children: null };
       obj3[1] = onPress;
       obj3[2] = tmp7Result;
-      tmp11Result = tmp11(tmp4(5084).PressableOpacity, obj3);
+      tmp11Result = tmp11(tmp4(5123).PressableOpacity, obj3);
     }
   }
   return tmp11Result;

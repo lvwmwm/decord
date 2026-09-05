@@ -1,18 +1,18 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16856
+// Function ID: 16857
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 1386, 21, 4481, 709, 8555, 5640, 1233, 1397, 5643, 16739, 7033, 4477, 5642, 5542, 16779, 16780, 586, 2]
+// Dependencies: [32, 19, 17, 1957, 21, 4560, 576, 8625, 5685, 1114, 1967, 5688, 16817, 7093, 4556, 5687, 5587, 16857, 16858, 504, 2]
 // Exports: default
 
-// Module 16778 (ChannelSettingsChangeDefaultForumLayout)
-import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5542 */;
+// Module 16856 (ChannelSettingsChangeDefaultForumLayout)
+import ThemesDefault from "Themes" /* 576 */;
+import preloadDefault from "preload" /* 5587 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class ChannelSettingsChangeDefaultForumLayout {
@@ -95,7 +95,7 @@ const result = require("set").fileFinishedImporting("components_native/channel_s
 
 export default function ConnectedChannelSettingsChangeDefaultForumLayout(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(586);
+  let obj = channelId(504);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getChannel(channelId));
   let tmp2 = null;

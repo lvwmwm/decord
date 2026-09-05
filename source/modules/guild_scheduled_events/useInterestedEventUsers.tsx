@@ -1,14 +1,14 @@
-// Module ID: 9720
-// Function ID: 9721
+// Module ID: 9791
+// Function ID: 9792
 // Name: useInterestedEventUsers
-// Dependencies: [19, 7459, 1392, 586, 2]
+// Dependencies: [19, 7526, 1963, 504, 2]
 // Exports: default
 
-// Module 9720 (useInterestedEventUsers)
+// Module 9791 (useInterestedEventUsers)
 import set2 from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import closure_3 from "scheduledEventSort" /* 7459 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import closure_3 from "scheduledEventSort" /* 7526 */;
 
 const useMemo = noop.useMemo;
 let closure_4 = GUILD_EVENT_MAX_NAME_LENGTH.GuildScheduledEventUserResponses;
@@ -19,11 +19,11 @@ export default function useInterestedEventUsers(arg0, arg1) {
   dependencyMap = arg1;
   let items = [stateFromStoresArray1];
   const items1 = [arg0];
-  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, null)), items1);
-  const obj = _require(586);
+  const stateFromStoresArray = _require(504).useStateFromStoresArray(items, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, null)), items1);
+  const obj = _require(504);
   const items2 = [stateFromStoresArray1];
   const items3 = [arg0, arg1];
-  stateFromStoresArray1 = _require(586).useStateFromStoresArray(items2, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, closure_1)), items3);
+  stateFromStoresArray1 = _require(504).useStateFromStoresArray(items2, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, closure_1)), items3);
   const items4 = [stateFromStoresArray, stateFromStoresArray1];
   return stateFromStoresArray(() => {
     function addUserToAllInterested(user_id) {

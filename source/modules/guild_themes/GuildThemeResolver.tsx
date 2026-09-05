@@ -1,20 +1,20 @@
-// Module ID: 4362
-// Function ID: 4363
+// Module ID: 4444
+// Function ID: 4445
 // Name: resolveSavedActiveGuildTheme
-// Dependencies: [19, 1339, 1908, 4302, 4363, 4366, 673, 4332, 586, 4409, 4412, 2]
+// Dependencies: [19, 1221, 1979, 4381, 4445, 4448, 1074, 4414, 504, 4488, 4491, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 4362 (resolveSavedActiveGuildTheme)
-import initialize from "initialize" /* 586 */;
-import set from "set" /* 4332 */;
-import apexExperiment from "apexExperiment" /* 4409 */;
+// Module 4444 (resolveSavedActiveGuildTheme)
+import initialize from "initialize" /* 504 */;
+import set from "set" /* 4414 */;
+import apexExperiment from "apexExperiment" /* 4488 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "handleConnectionOpen" /* 4302 */;
-import closure_6 from "handleEnd" /* 4363 */;
-import closure_7 from "snapshotSelectedGuildId" /* 4366 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "handleConnectionOpen" /* 4381 */;
+import closure_6 from "handleEnd" /* 4445 */;
+import closure_7 from "snapshotSelectedGuildId" /* 4448 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 require = arg1;
 function resolveSavedActiveGuildTheme(enabled) {
@@ -284,7 +284,7 @@ export const getActiveGuildThemeForGuildId = function getActiveGuildThemeForGuil
         const features = guild.features;
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = closure_3.resolveGuildThemeSourcePreference(guildId);
-          if (guildThemeSourcePreference === tmp8(4412).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference === tmp8(4491).GuildThemeSourcePreference.PERSONAL) {
             return null;
           } else {
             let guildTheme = store2.getGuildThemeSnapshot(guildId);
@@ -316,7 +316,7 @@ export const getActiveGuildTheme = function getActiveGuildTheme() {
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = closure_3.resolveGuildThemeSourcePreference(guildId);
           tmp11Result = null;
-          if (guildThemeSourcePreference !== tmp3(4412).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference !== tmp3(4491).GuildThemeSourcePreference.PERSONAL) {
             let guildTheme = store2.getGuildThemeSnapshot(guildId);
             if (undefined === guildTheme) {
               guildTheme = guild.guildTheme;

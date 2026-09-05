@@ -1,19 +1,19 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16352
+// Function ID: 16353
 // Name: _handleCreateJoinGuildPress
-// Dependencies: [5, 19, 17, 4302, 673, 1923, 21, 4481, 9623, 2008, 12640, 7152, 9242, 7122, 16218, 13638, 586, 16232, 1233, 16277, 11136, 709, 2]
+// Dependencies: [5, 19, 17, 4381, 1074, 1373, 21, 4560, 9694, 1896, 12708, 7212, 9313, 7182, 16294, 13714, 504, 16308, 1114, 16353, 11204, 576, 2]
 
-// Module 16276 (_handleCreateJoinGuildPress)
-import ThemesDefault from "Themes" /* 709 */;
-import UnreadIndicatorDefault from "UnreadIndicator" /* 16218 */;
+// Module 16352 (_handleCreateJoinGuildPress)
+import ThemesDefault from "Themes" /* 576 */;
+import UnreadIndicatorDefault from "UnreadIndicator" /* 16294 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 4302 */;
-import ME from "ME" /* 673 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
+import closure_6 from "handleConnectionOpen" /* 4381 */;
+import ME from "ME" /* 1074 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1373 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function _handleCreateJoinGuildPress() {
@@ -121,11 +121,11 @@ let c4 = importAllResult;
 ({ AnalyticsPages: error, MOBILE_GUILD_UPSELL_LIST: closure_8, TooltipNames: c9, UpsellTypes: c10 } = ME);
 let closure_13 = createCacheKey.createStyles({ stretch: { alignSelf: "stretch" } });
 const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
-  let obj = enabled(16218);
+  let obj = enabled(16294);
   const tmp = callback2();
-  const GameCommunityAddServerEntryExperiment = enabled(13638).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = enabled(13714).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig({ location: "GuildsBarCreateJoinButton" }).enabled;
-  obj1 = enabled(586);
+  obj1 = enabled(504);
   const items = [closure_6];
   let stateFromStores = enabled;
   if (enabled) {
@@ -152,18 +152,18 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
       })();
     }
   }), items1);
-  obj = { selected: stateFromStores, circle: false, unread: false, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: "y", config: "absolute", label: "50%", expandedChildren: "50%", children: -12 };
+  obj = { selected: stateFromStores, circle: false, unread: false, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: "y", config: "CATEGORY_EXPAND_ALL", label: null, expandedChildren: "guilds-bar-drag-preview", children: null };
   obj[5] = memo;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const tmp8 = View;
-  const intl = tmp2(1233).intl;
-  obj[6] = intl.string(enabled(1233).t.l5WIbf);
-  obj[7] = jsx(enabled(16277).HomeDrawerAddServerRowExpandedChildren, {});
+  const intl = tmp2(1114).intl;
+  obj[6] = intl.string(enabled(1114).t.l5WIbf);
+  obj[7] = jsx(enabled(16353).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = ThemesDefault.colors;
   obj1 = { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[8] = jsx(enabled(11136).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj[1] = jsx(UnreadIndicatorDefault, { selected: stateFromStores, circle: false, unread: false, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: "y", config: "absolute", label: "50%", expandedChildren: "50%", children: -12 });
-  return <tmp8 selected={stateFromStores} circle={false} unread={false} styles={obj.useGuildsBarAnimatedWrapperStyles()} overState="y" config="absolute" label="50%" expandedChildren="50%">{-12}</tmp8>;
+  obj[8] = jsx(enabled(11204).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  obj[1] = jsx(UnreadIndicatorDefault, { selected: stateFromStores, circle: false, unread: false, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: "y", config: "CATEGORY_EXPAND_ALL", label: null, expandedChildren: "guilds-bar-drag-preview", children: null });
+  return <tmp8 selected={stateFromStores} circle={false} unread={false} styles={obj.useGuildsBarAnimatedWrapperStyles()} overState="y" config="CATEGORY_EXPAND_ALL" label={null} expandedChildren="guilds-bar-drag-preview">{null}</tmp8>;
 });
 let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
 

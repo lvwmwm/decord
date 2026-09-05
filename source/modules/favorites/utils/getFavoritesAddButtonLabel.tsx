@@ -1,13 +1,13 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 10997
+// Function ID: 10998
 // Name: getFavoritesAddButtonLabel
-// Dependencies: [1233, 3178, 2]
+// Dependencies: [1114, 3225, 2]
 // Exports: getFavoritesAddButtonLabel
 
-// Module 10928 (getFavoritesAddButtonLabel)
+// Module 10997 (getFavoritesAddButtonLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
 
 const result = set.fileFinishedImporting("modules/favorites/utils/getFavoritesAddButtonLabel.tsx");
 

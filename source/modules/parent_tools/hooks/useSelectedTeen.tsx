@@ -1,23 +1,23 @@
-// Module ID: 8577
-// Function ID: 8578
+// Module ID: 8647
+// Function ID: 8648
 // Name: useSelectedTeen
-// Dependencies: [1921, 7470, 644, 2]
+// Dependencies: [1371, 7537, 563, 2]
 // Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 8577 (useSelectedTeen)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7470 */;
+// Module 8647 (useSelectedTeen)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7537 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");
 
 export const useSelectedTeen = function useSelectedTeen() {
   const items = [closure_3];
-  _require = _require(644).useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
-  const obj = _require(644);
+  _require = _require(563).useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
+  const obj = _require(563);
   const items1 = [closure_2];
-  return _require(644).useStateFromStores(items1, () => {
+  return _require(563).useStateFromStores(items1, () => {
     let user;
     if (null !== closure_0) {
       user = closure_1_2.getUser(tmp);

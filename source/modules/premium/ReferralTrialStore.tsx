@@ -1,14 +1,14 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7452
+// Function ID: 7453
 // Name: emitChanges
-// Dependencies: [1921, 673, 7387, 706, 683, 586, 2]
+// Dependencies: [1371, 1074, 7453, 573, 1089, 504, 2]
 
-// Module 7386 (emitChanges)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _fetchReferralEligibleUsers from "_fetchReferralEligibleUsers" /* 7387 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { NOOP_NULL } from "ME" /* 673 */;
+// Module 7452 (emitChanges)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _fetchReferralEligibleUsers from "_fetchReferralEligibleUsers" /* 7453 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { NOOP_NULL } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -145,8 +145,8 @@ const referralTrialStore = new ReferralTrialStore(dispatcherDefault, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     if (!c8) {
-      const referralsRemaining = userTrialOfferId(7387).fetchReferralsRemaining();
-      const obj = userTrialOfferId(7387);
+      const referralsRemaining = userTrialOfferId(7453).fetchReferralsRemaining();
+      const obj = userTrialOfferId(7453);
     }
     if (!set1.has(userTrialOfferId)) {
       set1.add(userTrialOfferId);
@@ -242,7 +242,7 @@ const referralTrialStore = new ReferralTrialStore(dispatcherDefault, {
     message = message.message;
     let content;
     content = null;
-    if (message.type === content(683).MessageTypes.PREMIUM_REFERRAL) {
+    if (message.type === content(1089).MessageTypes.PREMIUM_REFERRAL) {
       content = message.content;
     }
     if (null != content) {

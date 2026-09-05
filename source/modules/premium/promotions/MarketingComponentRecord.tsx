@@ -1,14 +1,16 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10667
+// Function ID: 10668
 // Name: createFromServer
-// Dependencies: [1935, 10597, 1306, 684, 1214, 2]
+// Dependencies: [1386, 1224, 10668, 1090, 1241, 2]
 
-// Module 10596 (createFromServer)
-import setDefault from "set" /* 684 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
-import toJSDefault from "toJS" /* 1935 */;
+// Module 10667 (createFromServer)
+import setDefault from "set" /* 1090 */;
+import BINARY_READ_OPTIONS from "BINARY_READ_OPTIONS" /* 1224 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1241 */;
+import toJSDefault from "toJS" /* 1386 */;
+import create from "create" /* 10668 */;
 
-const require = arg1;
+require = arg1;
 toJSDefault;
 let MarketingComponentRecord;
 class MarketingComponentRecord extends tmp2 {
@@ -21,9 +23,6 @@ class MarketingComponentRecord extends tmp2 {
 }
 const prototype = MarketingComponentRecord.prototype;
 MarketingComponentRecord["createFromServer"] = function createFromServer(start_date, startDate) {
-  let str = "utf-8";
-  const obj = { ignoreBOM: true };
-  const textDecoder = new TextDecoder("utf-8", obj);
   let date = null;
   if (null != start_date.start_date) {
     const _Date = Date;
@@ -49,38 +48,32 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
     endDate = null;
   }
   ({ id, component_type } = start_date);
-  const PremiumMarketingComponentProperties = textDecoder(10597).PremiumMarketingComponentProperties;
-  const fromBinary = PremiumMarketingComponentProperties.fromBinary;
-  const obj2 = textDecoder(1306);
-  function readerFactory(buf) {
-    const binaryReader = new textDecoder(closure_1_2[2]).BinaryReader(buf, textDecoder);
-    return binaryReader;
-  }
-  const fromBinaryResult = fromBinary(obj2.base64decode(start_date.properties), { readUnknownField: true, readerFactory });
+  const tmp13 = BINARY_READ_OPTIONS;
+  const b64ToProto = tmp13.b64ToProto;
+  const b64ToProtoResult = b64ToProto(create.PremiumMarketingComponentProperties, start_date.properties);
   const promotion_id = start_date.promotion_id;
-  let tmp12 = date;
+  let tmp15 = date;
   if (date == null) {
-    tmp12 = startDate;
+    tmp15 = startDate;
   }
-  let tmp13 = date1;
+  let tmp16 = date1;
   if (date1 == null) {
-    tmp13 = endDate;
+    tmp16 = endDate;
   }
   if (typeof MarketingComponentRecord !== "function") {
-    str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }
-  const tmp14 = new MarketingComponentRecord(str, obj, obj2, readerFactory, PremiumMarketingComponentProperties, fromBinary, MarketingComponentRecord, new.target, id, component_type, fromBinaryResult, promotion_id);
+  const tmp17 = new MarketingComponentRecord(str, tmp, tmp13, b64ToProto, MarketingComponentRecord, new.target, id, component_type, b64ToProtoResult, promotion_id, date, date1);
   // ThrowIfThisInitialized (0x7c)
-  tmp14.id = id;
-  tmp14.componentType = component_type;
-  tmp14.properties = fromBinaryResult;
-  tmp14.promotionId = promotion_id;
-  tmp14.startDate = date;
-  tmp14.endDate = date1;
-  tmp14.effectiveStartDate = tmp12;
-  tmp14.effectiveEndDate = tmp13;
-  return tmp14;
+  tmp17.id = id;
+  tmp17.componentType = component_type;
+  tmp17.properties = b64ToProtoResult;
+  tmp17.promotionId = promotion_id;
+  tmp17.startDate = date;
+  tmp17.endDate = date1;
+  tmp17.effectiveStartDate = tmp15;
+  tmp17.effectiveEndDate = tmp16;
+  return tmp17;
 };
 Object.defineProperty(prototype, "isTimed", {
   get: function isTimed() {

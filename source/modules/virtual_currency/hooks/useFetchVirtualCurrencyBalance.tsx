@@ -1,13 +1,13 @@
-// Module ID: 8781
-// Function ID: 8782
+// Module ID: 8851
+// Function ID: 8852
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [19, 8782, 586, 8783, 2]
+// Dependencies: [19, 8852, 504, 8853, 2]
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 8781 (useFetchVirtualCurrencyBalance)
+// Module 8851 (useFetchVirtualCurrencyBalance)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "redeemError" /* 8782 */;
+import closure_3 from "redeemError" /* 8852 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/virtual_currency/hooks/useFetchVirtualCurrencyBalance.tsx");

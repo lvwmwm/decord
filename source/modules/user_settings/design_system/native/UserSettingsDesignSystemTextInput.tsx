@@ -1,33 +1,33 @@
-// Module ID: 15707
-// Function ID: 15708
+// Module ID: 15783
+// Function ID: 15784
 // Name: Sample
-// Dependencies: [32, 19, 17, 21, 4481, 709, 5562, 4934, 6547, 5051, 14084, 7090, 7089, 7025, 4477, 5041, 6548, 6990, 8028, 7318, 6553, 4936, 4448, 6906, 2]
+// Dependencies: [32, 19, 17, 21, 4560, 576, 5607, 4973, 6606, 5090, 14170, 7150, 7149, 7085, 4556, 5080, 6607, 7050, 8097, 7380, 6613, 4975, 4527, 6966, 2]
 // Exports: default
 
-// Module 15707 (Sample)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import TextIcon from "TextIcon" /* 5041 */;
-import AtIcon from "AtIcon" /* 5051 */;
-import PressableCard from "PressableCard" /* 5562 */;
-import TextInput from "TextInput" /* 6547 */;
-import Input from "Input" /* 6548 */;
-import TextField from "TextField" /* 6553 */;
-import SplitTextInput from "SplitTextInput" /* 6906 */;
-import SearchField from "SearchField" /* 6990 */;
-import TextArea from "TextArea" /* 7025 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import Background from "Background" /* 7090 */;
-import SettingsIcon from "SettingsIcon" /* 7318 */;
-import IconButton from "IconButton" /* 8028 */;
-import GhostInput from "GhostInput" /* 14084 */;
+// Module 15783 (Sample)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import TextIcon from "TextIcon" /* 5080 */;
+import AtIcon from "AtIcon" /* 5090 */;
+import PressableCard from "PressableCard" /* 5607 */;
+import TextInput from "TextInput" /* 6606 */;
+import Input from "Input" /* 6607 */;
+import TextField from "TextField" /* 6613 */;
+import SplitTextInput from "SplitTextInput" /* 6966 */;
+import SearchField from "SearchField" /* 7050 */;
+import TextArea from "TextArea" /* 7085 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import Background from "Background" /* 7150 */;
+import SettingsIcon from "SettingsIcon" /* 7380 */;
+import IconButton from "IconButton" /* 8097 */;
+import GhostInput from "GhostInput" /* 14170 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Sample(children) {

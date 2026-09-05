@@ -1,20 +1,20 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16138
+// Function ID: 16139
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4302, 673, 10153, 10152, 1911, 1219, 1233, 3178, 2]
+// Dependencies: [19, 4381, 1074, 10224, 10223, 1982, 1100, 1114, 3225, 2]
 // Exports: default
 
-// Module 16060 (useFavoritesGuildHideAction)
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
+// Module 16138 (useFavoritesGuildHideAction)
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleConnectionOpen" /* 4302 */;
-import { Routes } from "ME" /* 673 */;
+import closure_4 from "handleConnectionOpen" /* 4381 */;
+import { Routes } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
 
 export default function useFavoritesGuildHideAction() {
-  let obj = hasAccess(10153);
+  let obj = hasAccess(10224);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   obj = { isPreview: !hasAccess, label: null, subLabel: null, perform: null };
@@ -28,16 +28,16 @@ export default function useFavoritesGuildHideAction() {
       const obj3 = hasAccess(closure_1_2[6]);
     }
   }, items);
-  const intl = hasAccess(1233).intl;
+  const intl = hasAccess(1114).intl;
   if (hasAccess) {
     let ojM1xJ = messagesProxyDefault["8FO0y9"];
   } else {
-    ojM1xJ = tmp(1233).t.ojM1xJ;
+    ojM1xJ = tmp(1114).t.ojM1xJ;
   }
   obj[1] = intl.string(ojM1xJ);
   let stringResult;
   if (hasAccess) {
-    const intl2 = tmp(1233).intl;
+    const intl2 = tmp(1114).intl;
     stringResult = intl2.string(messagesProxyDefault.FaHxWl);
   }
   obj[2] = stringResult;

@@ -1,20 +1,20 @@
-// Module ID: 12624
-// Function ID: 12625
+// Module ID: 12692
+// Function ID: 12693
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 4738, 21, 4481, 709, 5637, 5100, 12625, 4477, 1233, 4936, 12626, 12618, 2]
+// Dependencies: [5, 19, 17, 4770, 21, 4560, 576, 5682, 5139, 12693, 4556, 1114, 4975, 12694, 12686, 2]
 // Exports: default
 
-// Module 12624 (ContactSyncLandingOnboardingRedesign)
-import ThemesDefault from "Themes" /* 709 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12618 */;
-import registerAssetDefault from "registerAsset" /* 12625 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12626 */;
+// Module 12692 (ContactSyncLandingOnboardingRedesign)
+import ThemesDefault from "Themes" /* 576 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12686 */;
+import registerAssetDefault from "registerAsset" /* 12693 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12694 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4738 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4770 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);
@@ -103,20 +103,20 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj[2] = registerAssetDefault;
   const items1 = [callback2(closure_6, obj), , , , ];
   obj1 = { style: tmp.title, variant: "heading-xl/bold", children: null };
-  const intl = onNext(1233).intl;
-  obj1[2] = intl.string(onNext(1233).t["/G+nci"]);
-  items1[1] = callback2(onNext(4477).Text, obj1);
+  const intl = onNext(1114).intl;
+  obj1[2] = intl.string(onNext(1114).t["/G+nci"]);
+  items1[1] = callback2(onNext(4556).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/medium", children: null };
-  const intl2 = onNext(1233).intl;
-  obj2[2] = intl2.string(onNext(1233).t.G8zcHt);
-  items1[2] = callback2(onNext(4477).Text, obj2);
+  const intl2 = onNext(1114).intl;
+  obj2[2] = intl2.string(onNext(1114).t.G8zcHt);
+  items1[2] = callback2(onNext(4556).Text, obj2);
   const obj3 = { style: tmp.buttonContainer, children: null };
   const obj4 = { variant: "primary", size: "lg", text: null, onPress: null, loading: null };
-  const intl3 = onNext(1233).intl;
-  obj4[2] = intl3.string(onNext(1233).t.LhlgY9);
+  const intl3 = onNext(1114).intl;
+  obj4[2] = intl3.string(onNext(1114).t.LhlgY9);
   obj4[3] = callback;
   obj4[4] = loading;
-  obj3[1] = callback2(onNext(4936).Button, obj4);
+  obj3[1] = callback2(onNext(4975).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
   items1[4] = callback2(ContactSyncErrorDefault, { error });
   obj[1] = items1;

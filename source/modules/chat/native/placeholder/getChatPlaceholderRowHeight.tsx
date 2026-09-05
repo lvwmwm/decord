@@ -1,11 +1,11 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12640
+// Function ID: 12641
 // Name: PX_24
-// Dependencies: [709, 1296, 2]
+// Dependencies: [576, 1178, 2]
 // Exports: default
 
-// Module 12572 (PX_24)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 12640 (PX_24)
+import ThemesDefault from "Themes" /* 576 */;
 
 const PX_24 = ThemesDefault.space.PX_24;
 const tmp2 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];

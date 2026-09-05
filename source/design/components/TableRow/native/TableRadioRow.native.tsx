@@ -1,14 +1,14 @@
-// Module ID: 5643
-// Function ID: 5644
+// Module ID: 5688
+// Function ID: 5689
 // Name: TableRadioRow
-// Dependencies: [19, 21, 5640, 4199, 4206, 5560, 5644, 2]
+// Dependencies: [19, 21, 5685, 4264, 4277, 5605, 5689, 2]
 // Exports: TableRadioRow
 
-// Module 5643 (TableRadioRow)
-import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4206 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import context2 from "context" /* 5640 */;
-import FormRadio from "FormRadio" /* 5644 */;
+// Module 5688 (TableRadioRow)
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4277 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import context2 from "context" /* 5685 */;
+import FormRadio from "FormRadio" /* 5689 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -30,9 +30,9 @@ export const TableRadioRow = function TableRadioRow(value) {
   if (legacyCompat_selected == null) {
     legacyCompat_selected = context.selectedValue === value;
   }
-  let tmp2Result = tmp2(4199);
+  let tmp2Result = tmp2(4264);
   const nodeText = tmp2Result.getNodeText(label);
-  tmp2Result = tmp2(4199);
+  tmp2Result = tmp2(4264);
   const nodeText1 = tmp2Result.getNodeText(subLabel);
   const radioA11yNative = useCheckboxA11yNative.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);

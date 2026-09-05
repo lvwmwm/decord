@@ -1,12 +1,12 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16329
+// Function ID: 16330
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [19, 13631, 586, 16254, 16255, 16256, 2]
+// Dependencies: [19, 13707, 504, 16330, 16331, 16332, 2]
 // Exports: default
 
-// Module 16253 (useGuildsBarGuildMediaState)
+// Module 16329 (useGuildsBarGuildMediaState)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "markAllStale" /* 13631 */;
+import closure_4 from "markAllStale" /* 13707 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guilds_bar/useGuildsBarGuildMediaState.tsx");

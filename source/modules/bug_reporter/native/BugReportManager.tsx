@@ -1,15 +1,15 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10214
+// Function ID: 10215
 // Name: showNotification
-// Dependencies: [5, 17, 703, 673, 4738, 1234, 10023, 10025, 511, 7058, 10144, 2]
+// Dependencies: [5, 17, 1347, 1074, 4770, 1115, 10094, 10096, 1256, 7118, 10215, 2]
 
-// Module 10143 (showNotification)
-import initializeDefault from "initialize" /* 7058 */;
+// Module 10214 (showNotification)
+import initializeDefault from "initialize" /* 7118 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "refreshSourceMapCookie" /* 703 */;
-import { InAppNotificationTypes } from "ME" /* 673 */;
-import { NativePermissionStatus } from "NativePermissionStatus" /* 4738 */;
+import closure_6 from "refreshSourceMapCookie" /* 1347 */;
+import { InAppNotificationTypes } from "ME" /* 1074 */;
+import { NativePermissionStatus } from "NativePermissionStatus" /* 4770 */;
 
 const require = arg1;
 function showNotification(uri) {
@@ -132,7 +132,7 @@ function showNotification(uri) {
               obj1[0] = tmp36;
               let tmp7 = obj1;
             } else {
-              obj1 = obj1(1234);
+              obj1 = obj1(1115);
               if (!obj1.isIOS()) {
                 c2 = 1;
                 c3 = 1;
@@ -152,13 +152,13 @@ function showNotification(uri) {
             }
             obj1 = tmp7;
             BUG_REPORTER = closure_1_7.BUG_REPORTER;
-            dependencyMap = obj1(10023).getNotificationDuration(BUG_REPORTER);
-            const obj5 = obj1(10023);
+            dependencyMap = obj1(10094).getNotificationDuration(BUG_REPORTER);
+            const obj5 = obj1(10094);
             const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
             obj3[0] = BUG_REPORTER;
             obj3[1] = dependencyMap;
-            const obj6 = BUG_REPORTER(10025);
-            obj3[2] = obj1(511).v4();
+            const obj6 = BUG_REPORTER(10096);
+            obj3[2] = obj1(1256).v4();
             obj3[3] = obj1;
             uri = undefined;
             if (obj1 != null) {
@@ -168,8 +168,8 @@ function showNotification(uri) {
             obj3[5] = function onDismiss() {
               _undefined(table[7]).clearNotification();
             };
-            const obj8 = obj1(511);
-            obj3[6] = obj1(511).v4();
+            const obj8 = obj1(1256);
+            obj3[6] = obj1(1256).v4();
             obj6.enqueueNotification(obj3);
             c3 = 3;
             return { value: "HermesInternal", done: null };

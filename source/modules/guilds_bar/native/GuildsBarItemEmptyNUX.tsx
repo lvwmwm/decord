@@ -1,19 +1,19 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16350
+// Function ID: 16351
 // Name: handlePress
-// Dependencies: [19, 17, 4302, 16209, 673, 11016, 21, 4481, 709, 7280, 4197, 586, 4218, 4935, 15946, 16219, 1233, 16275, 16218, 5544, 16229, 4477, 2]
+// Dependencies: [19, 17, 4381, 16285, 1074, 11084, 21, 4560, 576, 7342, 4262, 504, 4296, 4974, 16022, 16295, 1114, 16351, 16294, 5589, 16305, 4556, 2]
 
-// Module 16274 (handlePress)
-import ThemesDefault from "Themes" /* 709 */;
-import transitionToGuild from "transitionToGuild" /* 7280 */;
+// Module 16350 (handlePress)
+import ThemesDefault from "Themes" /* 576 */;
+import transitionToGuild from "transitionToGuild" /* 7342 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleConnectionOpen" /* 4302 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
-import { EMPTY_NUX_SERVER } from "ME" /* 673 */;
-import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS" /* 11016 */;
+import closure_7 from "handleConnectionOpen" /* 4381 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16285 */;
+import { EMPTY_NUX_SERVER } from "ME" /* 1074 */;
+import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS" /* 11084 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handlePress() {

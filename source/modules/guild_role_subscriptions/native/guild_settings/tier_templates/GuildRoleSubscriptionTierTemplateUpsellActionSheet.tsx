@@ -1,25 +1,25 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16249
+// Function ID: 16250
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4473, 673, 1383, 21, 4481, 709, 5087, 644, 7090, 1233, 8237, 4477, 4936, 8993, 4448, 2]
+// Dependencies: [32, 19, 17, 4552, 1074, 1954, 21, 4560, 576, 5126, 563, 7150, 1114, 8307, 4556, 4975, 9063, 4527, 2]
 // Exports: default
 
-// Module 16173 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import getIsScreenLandscape from "getIsScreenLandscape" /* 5087 */;
-import Background from "Background" /* 7090 */;
+// Module 16249 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import getIsScreenLandscape from "getIsScreenLandscape" /* 5126 */;
+import Background from "Background" /* 7150 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import ME from "ME" /* 673 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import ME from "ME" /* 1074 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ GuildSettingsSections: error, GuildSettingsSubsections: closure_8 } = ME);
@@ -67,7 +67,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1 = { accessibilityRole: "image", accessibilityLabel: null, children: null };
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.gCgirr);
-  obj1[2] = callback2(markAsDismissed(8237), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
+  obj1[2] = callback2(markAsDismissed(8307), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info, children: null };
   const obj4 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary", children: null };

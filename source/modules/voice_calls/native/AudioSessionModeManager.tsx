@@ -1,22 +1,22 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17316
+// Function ID: 17317
 // Name: handleAVAudioSessionMode
-// Dependencies: [17, 1385, 5382, 4503, 1215, 1386, 4532, 1980, 4500, 7347, 673, 1234, 17237, 7058, 2]
+// Dependencies: [17, 1956, 5421, 4582, 502, 1957, 1908, 2011, 4579, 1895, 1074, 1115, 17317, 7118, 2]
 
-// Module 17236 (handleAVAudioSessionMode)
-import initializeDefault from "initialize" /* 7058 */;
-import handleVoiceChannelSelect from "handleVoiceChannelSelect" /* 17237 */;
-import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "buildStageChannelUserRoles" /* 5382 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateVoiceState" /* 4500 */;
-import closure_10 from "getState" /* 7347 */;
-import { AppStates } from "ME" /* 673 */;
-import set from "set" /* 1234 */;
+// Module 17316 (handleAVAudioSessionMode)
+import initializeDefault from "initialize" /* 7118 */;
+import handleVoiceChannelSelect from "handleVoiceChannelSelect" /* 17317 */;
+import closure_2 from "participantFromServer" /* 1956 */;
+import closure_3 from "buildStageChannelUserRoles" /* 5421 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "updateVoiceState" /* 4579 */;
+import closure_10 from "getState" /* 1895 */;
+import { AppStates } from "ME" /* 1074 */;
+import set from "set" /* 1115 */;
 
 require = arg1;
 function handleAVAudioSessionMode() {

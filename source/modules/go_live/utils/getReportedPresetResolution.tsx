@@ -1,13 +1,13 @@
-// Module ID: 4664
-// Function ID: 4665
+// Module ID: 4697
+// Function ID: 4698
 // Name: getReportedPresetResolution
-// Dependencies: [1921, 4540, 4665, 2]
+// Dependencies: [1371, 4607, 4698, 2]
 // Exports: default
 
-// Module 4664 (getReportedPresetResolution)
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4665 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4540 */;
+// Module 4697 (getReportedPresetResolution)
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4698 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4607 */;
 
 ({ ApplicationStreamFPS: c3, ApplicationStreamResolutions: c4 } = RESOLUTION_720);
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getReportedPresetResolution.tsx");

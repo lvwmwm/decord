@@ -1,18 +1,18 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10222
+// Function ID: 10223
 // Name: _addChannelToFavorites
-// Dependencies: [5, 21, 10152, 2008, 4448, 10157, 10156, 1233, 3178, 8592, 10164, 10170, 1296, 2]
+// Dependencies: [5, 21, 10223, 1896, 4527, 10228, 10227, 1114, 3225, 8662, 10235, 10241, 1178, 2]
 // Exports: default
 
-// Module 10151 (_addChannelToFavorites)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8592 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10156 */;
-import StarIcon from "StarIcon" /* 10164 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10170 */;
+// Module 10222 (_addChannelToFavorites)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8662 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10227 */;
+import StarIcon from "StarIcon" /* 10235 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10241 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -160,7 +160,7 @@ function _removeChannelFromFavorites() {
 }
 function openNoAccessUpsell() {
   const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-  obj.openLazy(asyncRequireImpl(10157, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
+  obj.openLazy(asyncRequireImpl(10228, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 let result = require("set").fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 
@@ -205,8 +205,8 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
           let tmp15;
           if (tmp5) {
             obj1 = { size: null };
-            obj1[0] = tmp12(1296).BetaSizes.SMALL;
-            tmp15 = jsx(tmp12(1296).BetaTag, { size: null });
+            obj1[0] = tmp12(1178).BetaSizes.SMALL;
+            tmp15 = jsx(tmp12(1178).BetaTag, { size: null });
           }
           obj[2] = tmp15;
           obj[3] = function onPress() {

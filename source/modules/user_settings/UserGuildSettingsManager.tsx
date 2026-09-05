@@ -1,15 +1,15 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7116
+// Function ID: 7117
 // Name: handleConnectionOpen
-// Dependencies: [5, 7057, 1386, 673, 684, 527, 7058, 2]
+// Dependencies: [5, 7117, 1957, 1074, 1090, 1272, 7118, 2]
 
-// Module 7056 (handleConnectionOpen)
-import setDefault from "set" /* 684 */;
-import initializeDefault from "initialize" /* 7058 */;
+// Module 7116 (handleConnectionOpen)
+import setDefault from "set" /* 1090 */;
+import initializeDefault from "initialize" /* 7118 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "incrementVersion" /* 7057 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
+import closure_3 from "incrementVersion" /* 7117 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function handleConnectionOpen() {

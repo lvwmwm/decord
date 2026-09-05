@@ -1,22 +1,22 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 8058
+// Function ID: 8059
 // Name: useHasDiscountApplied
-// Dependencies: [32, 19, 4145, 1923, 7381, 7990, 7991, 586, 4074, 7992, 7993, 1954, 7996, 2]
+// Dependencies: [32, 19, 4224, 1373, 7447, 8059, 8060, 504, 4153, 8061, 8062, 1894, 8065, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 7989 (useHasDiscountApplied)
-import initialize from "initialize" /* 586 */;
-import hooksDefault from "hooks" /* 4074 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7381 */;
-import useHasActiveTrial from "useHasActiveTrial" /* 7990 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7991 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 7992 */;
-import getPaymentGateway from "getPaymentGateway" /* 7993 */;
-import useIsInReverseTrial from "useIsInReverseTrial" /* 7996 */;
+// Module 8058 (useHasDiscountApplied)
+import initialize from "initialize" /* 504 */;
+import hooksDefault from "hooks" /* 4153 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7447 */;
+import useHasActiveTrial from "useHasActiveTrial" /* 8059 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8060 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8061 */;
+import getPaymentGateway from "getPaymentGateway" /* 8062 */;
+import useIsInReverseTrial from "useIsInReverseTrial" /* 8065 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "reset" /* 4145 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_5 from "reset" /* 4224 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 ({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: error, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: closure_8, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: unpackModuleId, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18 } = GuildFeatures);

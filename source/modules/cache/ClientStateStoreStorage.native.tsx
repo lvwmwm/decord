@@ -1,12 +1,12 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14193
+// Function ID: 14194
 // Name: setClientState
-// Dependencies: [13564, 2]
+// Dependencies: [13637, 2]
 // Exports: setClientState
 
-// Module 14107 (setClientState)
+// Module 14193 (setClientState)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 13564 */;
+import enforcingDefault from "enforcing" /* 13637 */;
 
 const result = set.fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");
 

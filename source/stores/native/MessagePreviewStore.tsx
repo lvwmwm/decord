@@ -1,12 +1,12 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 8360
+// Function ID: 8361
 // Name: messages
-// Dependencies: [4745, 586, 12, 706, 2]
+// Dependencies: [4783, 504, 12, 573, 2]
 
-// Module 8290 (messages)
+// Module 8360 (messages)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const require = arg1;
 let c3 = null;

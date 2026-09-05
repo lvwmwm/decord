@@ -1,12 +1,12 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17338
+// Function ID: 17339
 // Name: timeout
-// Dependencies: [5240, 673, 4365, 7058, 4166, 10020, 1369, 1336, 10019, 2]
+// Dependencies: [5279, 1074, 4447, 7118, 1935, 10091, 1940, 1218, 10090, 2]
 
-// Module 17258 (timeout)
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "filterPlayingActivities" /* 5240 */;
-import ME from "ME" /* 673 */;
+// Module 17338 (timeout)
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "filterPlayingActivities" /* 5279 */;
+import ME from "ME" /* 1074 */;
 
 let require = arg1;
 ({ AnalyticsObjects: c4, StatusTypes: c5 } = ME);
@@ -38,7 +38,7 @@ let prototype = function CustomStatusManager() {
     const result2 = applyArgumentsResult.manageExpiringFocusMode();
   };
   applyArgumentsResult.manageExpiringCustomStatus = function manageExpiringCustomStatus() {
-    let CustomStatusSetting = applyArgumentsResult(4166).CustomStatusSetting;
+    let CustomStatusSetting = applyArgumentsResult(1935).CustomStatusSetting;
     const setting = CustomStatusSetting.getSetting();
     if (null == setting) {
       closure_8.stop();
@@ -58,7 +58,7 @@ let prototype = function CustomStatusManager() {
               CustomStatusSetting.updateSetting(undefined);
             }, true);
           } else {
-            const CustomStatusSetting2 = applyArgumentsResult(4166).CustomStatusSetting;
+            const CustomStatusSetting2 = applyArgumentsResult(1935).CustomStatusSetting;
             CustomStatusSetting2.updateSetting(undefined);
             closure_8.stop();
           }
@@ -71,7 +71,7 @@ let prototype = function CustomStatusManager() {
     }
   };
   applyArgumentsResult.manageExpiringStatus = function manageExpiringStatus() {
-    const StatusExpiresAtSetting = applyArgumentsResult(4166).StatusExpiresAtSetting;
+    const StatusExpiresAtSetting = applyArgumentsResult(1935).StatusExpiresAtSetting;
     const setting = StatusExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -97,7 +97,7 @@ let prototype = function CustomStatusManager() {
             obj1[0] = constants.CUSTOM_STATUS_MANAGER;
             obj[0] = obj1;
             obj[1] = obj;
-            callback(10020)(obj);
+            callback(10091)(obj);
             closure_6.stop();
           }
         }
@@ -111,19 +111,19 @@ let prototype = function CustomStatusManager() {
   applyArgumentsResult.lazilyMigrateStatusCreatedAt = function lazilyMigrateStatusCreatedAt() {
     let tmp = store.getStatus() !== constants2.ONLINE;
     if (tmp) {
-      const StatusCreatedAtSetting = applyArgumentsResult(4166).StatusCreatedAtSetting;
+      const StatusCreatedAtSetting = applyArgumentsResult(1935).StatusCreatedAtSetting;
       tmp = null == StatusCreatedAtSetting.getSetting();
     }
     if (tmp) {
-      const PreloadedUserSettingsActionCreators = applyArgumentsResult(1369).PreloadedUserSettingsActionCreators;
+      const PreloadedUserSettingsActionCreators = applyArgumentsResult(1940).PreloadedUserSettingsActionCreators;
       PreloadedUserSettingsActionCreators.updateAsync("status", (arg0) => {
         const UInt64Value = callback(table[7]).UInt64Value;
         arg0.statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
-      }, applyArgumentsResult(1369).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      }, applyArgumentsResult(1940).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   };
   applyArgumentsResult.manageExpiringFocusMode = function manageExpiringFocusMode() {
-    const FocusModeExpiresAtSetting = applyArgumentsResult(4166).FocusModeExpiresAtSetting;
+    const FocusModeExpiresAtSetting = applyArgumentsResult(1935).FocusModeExpiresAtSetting;
     const setting = FocusModeExpiresAtSetting.getSetting();
     if (null != setting) {
       if ("0" !== setting) {
@@ -139,9 +139,9 @@ let prototype = function CustomStatusManager() {
             callback(table[8]).setFocusMode(false);
           }, true);
         } else {
-          applyArgumentsResult(10019).setFocusMode(false);
+          applyArgumentsResult(10090).setFocusMode(false);
           closure_7.stop();
-          const tmpResult = applyArgumentsResult(10019);
+          const tmpResult = applyArgumentsResult(10090);
         }
       }
     }

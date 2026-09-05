@@ -1,16 +1,16 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7345
+// Function ID: 7346
 // Name: getMuteStates
-// Dependencies: [1983, 1215, 4532, 4120, 4500, 673, 586, 2]
+// Dependencies: [2014, 502, 1908, 4199, 4579, 1074, 504, 2]
 // Exports: default
 
-// Module 7283 (getMuteStates)
-import closure_2 from "initialize" /* 1983 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "updateVoiceState" /* 4500 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 7345 (getMuteStates)
+import closure_2 from "initialize" /* 2014 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_6 from "updateVoiceState" /* 4579 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 function getMuteStates(voiceStateStore) {
@@ -71,6 +71,6 @@ const result = require("set").fileFinishedImporting("modules/video_calls/useMute
 export default function useMuteStates(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_6, closure_4, closure_5, closure_2];
-  return _require(586).useStateFromStoresObject(items, () => closure_1_8({ channel: closure_0, authenticationStore: closure_1_3, voiceStateStore: closure_1_6, mediaEngineStore: closure_1_4, permissionStore: closure_1_5, impersonateStore: closure_1_2 }));
+  return _require(504).useStateFromStoresObject(items, () => closure_1_8({ channel: closure_0, authenticationStore: closure_1_3, voiceStateStore: closure_1_6, mediaEngineStore: closure_1_4, permissionStore: closure_1_5, impersonateStore: closure_1_2 }));
 };
 export { getMuteStates };

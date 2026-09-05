@@ -1,17 +1,17 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16801
+// Function ID: 16802
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1921, 1383, 21, 4481, 586, 4139, 1233, 2758, 11059, 5647, 2]
+// Dependencies: [19, 17, 1371, 1954, 21, 4560, 504, 4218, 1114, 2786, 11127, 5692, 2]
 // Exports: default
 
-// Module 16723 (CoachmarkImage)
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
+// Module 16801 (CoachmarkImage)
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function CoachmarkImage() {
@@ -27,22 +27,22 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   let React;
   let callback;
   const items = [closure_5];
-  const stateFromStores = visible(586).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = visible(586);
+  const stateFromStores = visible(504).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = visible(504);
   const tmp4 = markAsDismissed;
-  const result = markAsDismissed(4139).canUsePremiumProfileCustomization(stateFromStores);
-  const intl = visible(1233).intl;
+  const result = markAsDismissed(4218).canUsePremiumProfileCustomization(stateFromStores);
+  const intl = visible(1114).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(2758);
+  const tmp6 = markAsDismissed(2786);
   if (result) {
     let stringResult = string(tmp6.h6sykk);
   } else {
     stringResult = string(tmp6.M5amXH);
   }
   dependencyMap = stringResult;
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(2758);
+  const tmp4Result = tmp4(2786);
   if (result) {
     let string2Result = string2(tmp4Result.TyUdka);
   } else {
@@ -64,7 +64,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return callback(closure_9, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(4139);
-  const coachmark = visible(11059).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(4218);
+  const coachmark = visible(11127).useCoachmark(visible.targetRef, memo);
   return null;
 };

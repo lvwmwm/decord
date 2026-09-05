@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 8221
-// Dependencies: [641, 702, 2]
+// Module ID: 8290
+// Function ID: 8291
+// Dependencies: [560, 1249, 2]
 
-// Module 8220
+// Module 8290
 import set2 from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let obj = keys.create((arg0) => {
   closure_0 = arg0;

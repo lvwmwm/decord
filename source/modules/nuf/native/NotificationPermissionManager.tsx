@@ -1,23 +1,23 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17456
+// Function ID: 17457
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 4122, 1215, 1386, 4709, 12341, 12342, 673, 4738, 4448, 17377, 2008, 500, 4074, 12344, 10014, 695, 1234, 7058, 15405, 688, 2]
+// Dependencies: [5, 17, 4201, 502, 1957, 4741, 12409, 12410, 1074, 4770, 4527, 17457, 1896, 1250, 4153, 12412, 10085, 1242, 1115, 7118, 15481, 1093, 2]
 
-// Module 17376 (haveNotSeenPromptSince)
-import hooksDefault from "hooks" /* 4074 */;
-import initializeDefault from "initialize" /* 7058 */;
-import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 12344 */;
+// Module 17456 (haveNotSeenPromptSince)
+import hooksDefault from "hooks" /* 4153 */;
+import initializeDefault from "initialize" /* 7118 */;
+import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 12412 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4122 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_9 from "set" /* 12341 */;
-import { PermissionPromptType } from "set" /* 12341 */;
-import EventActionType from "EventActionType" /* 12342 */;
-import ME from "ME" /* 673 */;
-import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4738 */;
+import closure_5 from "storeThread" /* 4201 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_9 from "set" /* 12409 */;
+import { PermissionPromptType } from "set" /* 12409 */;
+import EventActionType from "EventActionType" /* 12410 */;
+import ME from "ME" /* 1074 */;
+import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4770 */;
 
 require = arg1;
 function haveNotSeenPromptSince(arg0, arg1) {
@@ -188,13 +188,13 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(10014).allowInAppNotifications();
-          const obj5 = callback(10014);
+          callback2 = callback(10085).allowInAppNotifications();
+          const obj5 = callback(10085);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;
           obj2[2] = callback2;
-          const obj6 = callback2(695);
+          const obj6 = callback2(1242);
           let tmp7 = null;
           if (obj8.isIOS()) {
             tmp7 = callback;

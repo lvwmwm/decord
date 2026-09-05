@@ -1,18 +1,18 @@
-// Module ID: 4572
-// Function ID: 4573
+// Module ID: 4600
+// Function ID: 4601
 // Name: sortActivity
-// Dependencies: [1215, 1921, 673, 4573, 12, 656, 11, 586, 706, 2]
+// Dependencies: [502, 1371, 1074, 4601, 12, 1332, 11, 504, 573, 2]
 
-// Module 4572 (sortActivity)
+// Module 4600 (sortActivity)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4573 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 1332 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4601 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 function sortActivity(type, type2) {
   type = type2.type;
@@ -50,7 +50,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4573)(type)) {
+    if (tmp3(4601)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;

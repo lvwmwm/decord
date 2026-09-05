@@ -1,19 +1,18 @@
 // Module ID: 10548
 // Function ID: 10549
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10361, 10549, 10388, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10547, 10434, 10439]
 
 // Module 10548 (_isNativeReflectConstruct)
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10549 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import zhStringToNumber from "zhStringToNumber" /* 10547 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const SVWeekdayParser = require;
+const ZHHantDeadlineFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,13 +32,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:p\u00E5\\s*?)?(?:(f\u00F6rra|senaste|n\u00E4sta|kommande)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(f\u00F6rra|senaste|n\u00E4sta|kommande)\\s*vecka)?(?=\\W|$)", "i");
-class SVWeekdayParser {
+const keys = Object.keys(zhStringToNumber.NUMBER);
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
+class ZHHantDeadlineFormatParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, SVWeekdayParser);
+    tmp = closure_2(this, ZHHantDeadlineFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(SVWeekdayParser);
+    obj = closure_4(ZHHantDeadlineFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -54,7 +54,7 @@ class SVWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(SVWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
@@ -64,26 +64,77 @@ const items = [
   },
   {
     key: "innerExtract",
-    value: function innerExtract(reference) {
-      const formatted = arg1[2].toLowerCase();
-      let str2 = arg1[1];
-      if (!str2) {
-        str2 = arg1[3];
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      let num = parseInt(index[1]);
+      if (isNaN(num)) {
+        num = ZHHantDeadlineFormatParser(10547).zhStringToNumber(index[1]);
       }
-      if (!str2) {
-        str2 = "";
-      }
-      const str3 = str2.toLowerCase();
-      let str4 = "last";
-      if (!str3.match(/förra|senaste/)) {
-        str4 = null;
-        if (str3.match(/nästa|kommande/)) {
-          str4 = "next";
+      if (isNaN(num)) {
+        num = 3;
+        if ("\u5E7E" !== index[1]) {
+          num = 0.5;
+          if ("\u534A" !== tmp4) {
+            return null;
+          }
         }
       }
-      return SVWeekdayParser(10388).createParsingComponentsAtWeekday(reference.reference, SVWeekdayParser(10549).WEEKDAY_DICTIONARY[formatted], str4);
+      let obj = {};
+      if (index[2][0].match(/[日天星禮月年]/)) {
+        if ("\u65E5" != str3) {
+          if ("\u5929" != str3) {
+            if ("\u661F" != str3) {
+              if ("\u79AE" != str3) {
+                if ("\u6708" == str3) {
+                  obj.month = num;
+                } else if ("\u5E74" == str3) {
+                  obj.year = num;
+                }
+              }
+            }
+            obj.week = num;
+          }
+          const addDurationResult = ZHHantDeadlineFormatParser(10434).addDuration(createParsingResult.refDate, obj);
+          const start7 = parsingResult.start;
+          obj = start7.assign("year", addDurationResult.getFullYear());
+          const start8 = parsingResult.start;
+          obj = start8.assign("month", addDurationResult.getMonth() + 1);
+          const start9 = parsingResult.start;
+          start9.assign("day", addDurationResult.getDate());
+          return parsingResult;
+        }
+        obj.day = num;
+      } else {
+        if ("\u79D2" == str3) {
+          obj.second = num;
+        } else if ("\u5206" == str3) {
+          obj.minute = num;
+        } else {
+          let tmp6 = "\u5C0F" != str3;
+          if (tmp6) {
+            tmp6 = "\u9418" != str3;
+          }
+          if (!tmp6) {
+            obj.hour = num;
+          }
+        }
+        const addDurationResult1 = ZHHantDeadlineFormatParser(10434).addDuration(createParsingResult.refDate, obj);
+        const start = parsingResult.start;
+        start.imply("year", addDurationResult1.getFullYear());
+        const start2 = parsingResult.start;
+        start2.imply("month", addDurationResult1.getMonth() + 1);
+        const start3 = parsingResult.start;
+        start3.imply("day", addDurationResult1.getDate());
+        const start4 = parsingResult.start;
+        start4.assign("hour", addDurationResult1.getHours());
+        const start5 = parsingResult.start;
+        start5.assign("minute", addDurationResult1.getMinutes());
+        const start6 = parsingResult.start;
+        start6.assign("second", addDurationResult1.getSeconds());
+        return parsingResult;
+      }
     }
   }
 ];
 
-export default _createClass(SVWeekdayParser, items);
+export default _createClass(ZHHantDeadlineFormatParser, items);

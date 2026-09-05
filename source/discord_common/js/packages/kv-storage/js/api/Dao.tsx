@@ -1,12 +1,12 @@
-// Module ID: 1959
-// Function ID: 1960
+// Module ID: 1990
+// Function ID: 1991
 // Name: prefix
-// Dependencies: [1960, 1962, 2]
+// Dependencies: [1991, 1993, 2]
 
-// Module 1959 (prefix)
+// Module 1990 (prefix)
 import set from "set" /* 2 */;
-import fromDatabaseTransaction from "fromDatabaseTransaction" /* 1960 */;
-import TableId from "TableId" /* 1962 */;
+import fromDatabaseTransaction from "fromDatabaseTransaction" /* 1991 */;
+import TableId from "TableId" /* 1993 */;
 
 let Dao;
 class Dao {

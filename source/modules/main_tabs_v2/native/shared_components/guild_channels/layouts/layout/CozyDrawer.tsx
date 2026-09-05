@@ -1,11 +1,11 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10122
+// Function ID: 10123
 // Name: importDefaultResult1
-// Dependencies: [10052, 10053, 709, 1296, 5539, 7112, 2]
+// Dependencies: [10123, 10124, 576, 1178, 5584, 7172, 2]
 
-// Module 10051 (importDefaultResult1)
-import ThemesDefault from "Themes" /* 709 */;
-import importDefaultResult from "merge" /* 10052 */;
+// Module 10122 (importDefaultResult1)
+import ThemesDefault from "Themes" /* 576 */;
+import importDefaultResult from "merge" /* 10123 */;
 
 let obj = { container: null, channelName: null, messagePreview: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, typing: null, separator: null };
 obj = { borderRadius: ThemesDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };

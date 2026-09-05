@@ -1,11 +1,11 @@
-// Module ID: 9760
-// Function ID: 9761
+// Module ID: 9831
+// Function ID: 9832
 // Name: items
-// Dependencies: [1305, 2]
+// Dependencies: [1187, 2]
 
-// Module 9760 (items)
+// Module 9831 (items)
 import set from "set" /* 2 */;
-import create from "create" /* 1305 */;
+import create from "create" /* 1187 */;
 
 const items = [create.HubProgressStep.JOIN_GUILD, create.HubProgressStep.INVITE_USER, create.HubProgressStep.CONTACT_SYNC];
 const result = set.fileFinishedImporting("modules/hub/HubProgressBarConstants.tsx");

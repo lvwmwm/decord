@@ -1,15 +1,15 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 12935
+// Function ID: 12936
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: [4303, 673, 4305, 5480, 5524, 2]
+// Dependencies: [4382, 1074, 4384, 5525, 5569, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12867 (inviteGuildHasPendingMemberDisabledVerification)
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
-import transitionToMemberVerification from "transitionToMemberVerification" /* 5480 */;
-import openMemberVerificationModal from "openMemberVerificationModal" /* 5524 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 12935 (inviteGuildHasPendingMemberDisabledVerification)
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4384 */;
+import transitionToMemberVerification from "transitionToMemberVerification" /* 5525 */;
+import openMemberVerificationModal from "openMemberVerificationModal" /* 5569 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_verification/GuildVerificationUtils.tsx");

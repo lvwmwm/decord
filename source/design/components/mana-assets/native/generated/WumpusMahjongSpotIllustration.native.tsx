@@ -1,14 +1,14 @@
-// Module ID: 6528
-// Function ID: 6529
+// Module ID: 6587
+// Function ID: 6588
 // Name: WumpusMahjongSpotIllustration
-// Dependencies: [21, 5542, 6529, 2]
+// Dependencies: [21, 5587, 6588, 2]
 // Exports: WumpusMahjongSpotIllustration
 
-// Module 6528 (WumpusMahjongSpotIllustration)
+// Module 6587 (WumpusMahjongSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6529 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6588 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusMahjongSpotIllustration.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4686
+// Function ID: 4687
 // Name: sanitizeDevices
-// Dependencies: [4584, 666, 4534, 2]
+// Dependencies: [4617, 1341, 1910, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 4653 (sanitizeDevices)
+// Module 4686 (sanitizeDevices)
 import set from "set" /* 2 */;
-import formatDefault from "format" /* 666 */;
-import AudioSubsystems from "AudioSubsystems" /* 4584 */;
+import formatDefault from "format" /* 1341 */;
+import AudioSubsystems from "AudioSubsystems" /* 4617 */;
 
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: c4 } = AudioSubsystems);
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Devices.tsx");

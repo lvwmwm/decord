@@ -1,13 +1,13 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11134
+// Function ID: 11135
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4218, 11067, 1355, 11064, 9898, 2]
+// Dependencies: [32, 19, 17, 21, 4296, 11135, 4279, 11132, 9969, 2]
 // Exports: AnimatedCoachmark
 
-// Module 11066 (renderTooltipItem)
-import _modDef4218 from "module_4218" /* 4218 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9898 */;
-import Coachmark from "Coachmark" /* 11067 */;
+// Module 11134 (renderTooltipItem)
+import _modDef4296 from "module_4296" /* 4296 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9969 */;
+import Coachmark from "Coachmark" /* 11135 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
@@ -25,7 +25,7 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
     tmpResult = tmp(Coachmark.CoachmarkContainer, obj);
   }
   obj[2] = tmpResult;
-  return jsx(_modDef4218.View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(_modDef4296.View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("set").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
@@ -34,13 +34,13 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, Object.create(null));
   importDefault = undefined;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(11064);
+  let obj = visible(11132);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
     _undefined(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(visible(1355).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
+  obj = { useReducedMotion: React.useContext(visible(4279).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
   let tmp8;
   const tmp2 = callback(React.useState(visible), 2);
   const tmp6 = jsx;

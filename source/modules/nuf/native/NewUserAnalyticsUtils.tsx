@@ -1,13 +1,13 @@
-// Module ID: 12615
-// Function ID: 12616
+// Module ID: 12683
+// Function ID: 12684
 // Name: trackNUFStep
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: trackNUFStep
 
-// Module 12615 (trackNUFStep)
+// Module 12683 (trackNUFStep)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c3 = 0;

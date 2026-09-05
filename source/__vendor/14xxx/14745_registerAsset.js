@@ -1,0 +1,10 @@
+// Module ID: 14745
+// Function ID: 14746
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 14745 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "45c48fef25c4265d61128128423fdeb6", name: "ru.messages.45c48fef25c4265d61128128423fdeb6.compiled.messages", type: "jsona" });

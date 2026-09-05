@@ -1,17 +1,17 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 17609
+// Function ID: 17610
 // Name: title
-// Dependencies: [17530, 673, 17532, 503, 4125, 708, 1233, 2]
+// Dependencies: [17610, 1074, 17612, 1086, 4204, 575, 1114, 2]
 
-// Module 17529 (title)
+// Module 17609 (title)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import handleSetSection from "handleSetSection" /* 17530 */;
-import ME from "ME" /* 673 */;
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17532 */;
-import importAllResult from "fromString" /* 503 */;
-import unsafe_getRawColor from "unsafe_getRawColor" /* 708 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import handleSetSection from "handleSetSection" /* 17610 */;
+import ME from "ME" /* 1074 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17612 */;
+import importAllResult from "fromString" /* 1086 */;
+import unsafe_getRawColor from "unsafe_getRawColor" /* 575 */;
 
 const RoleColorsStyle = handleSetSection.RoleColorsStyle;
 ({ Permissions, DEFAULT_ROLE_COLOR } = ME);

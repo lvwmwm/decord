@@ -1,33 +1,33 @@
-// Module ID: 9695
-// Function ID: 9696
+// Module ID: 9766
+// Function ID: 9767
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 673, 21, 4481, 709, 4741, 1233, 4477, 4184, 1994, 8341, 8343, 4436, 8518, 1296, 5383, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 4773, 1114, 4556, 4249, 2024, 8411, 8413, 4515, 8588, 1178, 5422, 2]
 // Exports: default
 
-// Module 9695 (StageChannelAgeVerificationNoticeContent)
+// Module 9766 (StageChannelAgeVerificationNoticeContent)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
-import Text2 from "Text" /* 4477 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5383 */;
-import WarningIcon2 from "WarningIcon" /* 8518 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4515 */;
+import Text2 from "Text" /* 4556 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5422 */;
+import WarningIcon2 from "WarningIcon" /* 8588 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   closure_1 = undefined;
   closure_1 = callback2();
-  let obj = onConfirmPress(4741);
+  let obj = onConfirmPress(4773);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  const intl = onConfirmPress(1233).intl;
+  const intl = onConfirmPress(1114).intl;
   const format = intl.format;
-  const t = onConfirmPress(1233).t;
+  const t = onConfirmPress(1114).t;
   if (isVerifiedTeen) {
     obj = { hook: null };
     obj[0] = function hook(children) {

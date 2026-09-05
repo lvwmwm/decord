@@ -1,17 +1,17 @@
-// Module ID: 13114
-// Function ID: 13115
+// Module ID: 13182
+// Function ID: 13183
 // Name: createVoiceChannelBadge
-// Dependencies: [17, 1386, 4120, 4500, 673, 13115, 4989, 4739, 2]
+// Dependencies: [17, 1957, 4199, 4579, 1074, 13183, 5028, 4771, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 13114 (createVoiceChannelBadge)
+// Module 13182 (createVoiceChannelBadge)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
-import experiment from "experiment" /* 13115 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_5 from "updateVoiceState" /* 4500 */;
+import ME from "ME" /* 1074 */;
+import experiment from "experiment" /* 13183 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_5 from "updateVoiceState" /* 4579 */;
 
 const Image = get_ActivityIndicator.Image;
 const Permissions = ME.Permissions;
@@ -29,18 +29,18 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
         }
         channel = channel.getChannel(channelId);
         if (null != channel) {
-          let tmpResult = tmp(4989);
+          let tmpResult = tmp(5028);
           const assetSource = Image.resolveAssetSource(tmpResult.getChannelIcon(channel));
           let uri;
           if (assetSource != null) {
             uri = assetSource.uri;
           }
           if (null != uri) {
-            tmpResult = tmp(4739);
+            tmpResult = tmp(4771);
             let result = tmpResult.shouldAgeVerifyForAgeGate();
             if (result) {
-              result = tmp(4739).shouldShowAgeGateForChannelId(channel.id);
-              const tmpResult1 = tmp(4739);
+              result = tmp(4771).shouldShowAgeGateForChannelId(channel.id);
+              const tmpResult1 = tmp(4771);
             }
             let isPrivateResult = channel.isPrivate();
             if (!isPrivateResult) {

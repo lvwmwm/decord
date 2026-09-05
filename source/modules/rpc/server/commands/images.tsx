@@ -1,13 +1,13 @@
-// Module ID: 14399
-// Function ID: 14400
-// Dependencies: [1921, 4383, 673, 9486, 1431, 9483, 1489, 2]
+// Module ID: 14474
+// Function ID: 14475
+// Dependencies: [1371, 4465, 1074, 9557, 1396, 9554, 1474, 2]
 
-// Module 14399
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import prototypeDefault from "prototype" /* 9483 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9486 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 14474
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import prototypeDefault from "prototype" /* 9554 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9557 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 const RPCErrors = ME.RPCErrors;

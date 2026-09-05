@@ -1,18 +1,18 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13163
+// Function ID: 13164
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7177, 7491, 675, 21, 586, 7180, 13080, 1233, 4937, 4477, 8592, 2]
+// Dependencies: [19, 7237, 7558, 1076, 21, 504, 7240, 13148, 1114, 4976, 4556, 8662, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 13095 (UnlockWithNitroButton)
+// Module 13163 (UnlockWithNitroButton)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import CollapsingText from "CollapsingText" /* 4937 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8592 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13080 */;
-import closure_3 from "updateProduct" /* 7177 */;
-import closure_4 from "map" /* 7491 */;
-import { ShopCtaEnum } from "items" /* 675 */;
+import initialize from "initialize" /* 504 */;
+import CollapsingText from "CollapsingText" /* 4976 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8662 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13148 */;
+import closure_3 from "updateProduct" /* 7237 */;
+import closure_4 from "map" /* 7558 */;
+import { ShopCtaEnum } from "items" /* 1076 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -37,14 +37,14 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   });
   importDefault = useOpenNitroSubscribeActionSheetDefault();
   if (text == null) {
-    const intl = tmp(1233).intl;
-    text = intl.string(tmp(1233).t.sEAnVH);
+    const intl = tmp(1114).intl;
+    text = intl.string(tmp(1114).t.sEAnVH);
   }
   let tmp4Result;
   if (flag) {
     obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: null };
     obj[3] = text;
-    tmp4Result = tmp4(tmp(4477).Text, obj);
+    tmp4Result = tmp4(tmp(4556).Text, obj);
   }
   obj = { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null };
   let tmp6;

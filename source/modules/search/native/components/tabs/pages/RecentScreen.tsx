@@ -1,22 +1,22 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16640
+// Function ID: 16641
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 7221, 12295, 16564, 12271, 7810, 12285, 673, 21, 5084, 12293, 1233, 4477, 10793, 16565, 4494, 12290, 12272, 586, 1499, 16568, 12270, 14746, 8341, 8343, 16569, 16570, 16573, 2]
+// Dependencies: [32, 5, 19, 7281, 12363, 16641, 12339, 7878, 12353, 1074, 21, 5123, 12361, 1114, 4556, 10862, 16642, 4573, 12358, 12340, 504, 1484, 16645, 12338, 14821, 8411, 8413, 16646, 16647, 16650, 2]
 
-// Module 16563 (ClearAllHistory)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
+// Module 16640 (ClearAllHistory)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_6 from "handleReaction" /* 7221 */;
-import closure_7 from "search" /* 12295 */;
-import closure_8 from "deserialize" /* 16564 */;
-import closure_9 from "prototype" /* 12271 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
-import { EMPTY_MEDIA_RESULTS } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12285 */;
-import { SearchTypes } from "ME" /* 673 */;
+import closure_6 from "handleReaction" /* 7281 */;
+import closure_7 from "search" /* 12363 */;
+import closure_8 from "deserialize" /* 16641 */;
+import closure_9 from "prototype" /* 12339 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
+import { EMPTY_MEDIA_RESULTS } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12353 */;
+import { SearchTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -31,13 +31,13 @@ function ClearAllHistory(searchContext) {
     accessibilityLabel: null,
     children: null
   };
-  const intl = searchContext(1233).intl;
-  obj[3] = intl.string(searchContext(1233).t.LFTAUp);
+  const intl = searchContext(1114).intl;
+  obj[3] = intl.string(searchContext(1114).t.LFTAUp);
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
-  const intl2 = searchContext(1233).intl;
-  obj[2] = intl2.string(searchContext(1233).t.LFTAUp);
-  obj[4] = jsx(searchContext(4477).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(5084).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  const intl2 = searchContext(1114).intl;
+  obj[2] = intl2.string(searchContext(1114).t.LFTAUp);
+  obj[4] = jsx(searchContext(4556).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(5123).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };

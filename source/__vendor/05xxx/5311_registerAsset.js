@@ -1,10 +1,10 @@
 // Module ID: 5311
 // Function ID: 5312
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5311 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "576340e1ed4deb81baadbae498cf3ba0", name: "img_account_sync_github_white", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "25ba997e1d3e8344c193637ad6eeccd3", name: "img_account_sync_league_of_legends_white", type: "png" });

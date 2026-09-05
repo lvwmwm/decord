@@ -1,9 +1,9 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7640
+// Function ID: 7641
 // Name: NotificationCenterScenes
 // Dependencies: [2]
 
-// Module 7573 (NotificationCenterScenes)
+// Module 7640 (NotificationCenterScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");

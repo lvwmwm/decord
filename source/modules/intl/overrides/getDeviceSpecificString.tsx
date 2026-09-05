@@ -1,12 +1,12 @@
-// Module ID: 7756
-// Function ID: 7757
+// Module ID: 7824
+// Function ID: 7825
 // Name: getDeviceSpecificString
-// Dependencies: [1233, 1623, 2]
+// Dependencies: [1114, 1608, 2]
 // Exports: getDeviceSpecificString
 
-// Module 7756 (getDeviceSpecificString)
+// Module 7824 (getDeviceSpecificString)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 17484
-// Function ID: 17485
+// Module ID: 17564
+// Function ID: 17565
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 1908, 21, 4481, 709, 1234, 586, 9600, 10265, 4138, 17485, 4923, 4477, 1296, 5560, 4194, 1233, 1431, 4680, 4325, 5084, 17487, 2]
+// Dependencies: [32, 19, 17, 1979, 21, 4560, 576, 1115, 504, 9671, 10336, 4217, 17565, 4962, 4556, 1178, 5605, 4259, 1114, 1396, 4712, 4404, 5123, 17567, 2]
 // Exports: EmojiRow
 
-// Module 17484 (EmojiRow)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17564 (EmojiRow)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 ({ View: c5, Image: closure_6, Pressable: error } = get_ActivityIndicator);

@@ -1,17 +1,17 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11590
+// Function ID: 11591
 // Name: getGroupDMAddMembersAction
-// Dependencies: [1386, 1921, 11523, 11524, 11526, 11527, 4193, 4335, 2]
+// Dependencies: [1957, 1371, 11591, 11592, 11594, 11595, 4258, 4417, 2]
 // Exports: default, showGroupDMAddMembersRoadblock
 
-// Module 11522 (getGroupDMAddMembersAction)
-import presentAddedFriendToast from "presentAddedFriendToast" /* 4193 */;
-import coerceMainRoute from "coerceMainRoute" /* 4335 */;
-import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11523 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11524 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11527 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+// Module 11590 (getGroupDMAddMembersAction)
+import presentAddedFriendToast from "presentAddedFriendToast" /* 4258 */;
+import coerceMainRoute from "coerceMainRoute" /* 4417 */;
+import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11591 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11592 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11595 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
@@ -48,7 +48,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
       const tmp2Result = GroupDMNitroAcquisitionStrategy;
       obj = { location: null };
       obj[0] = CHANNEL_TEXT_AREA;
-      obj[3] = tmp4(11526).getConfig(obj).enabled;
+      obj[3] = tmp4(11594).getConfig(obj).enabled;
       return obj3.getGroupDMAddMembersEntryAction(obj);
     }
   }

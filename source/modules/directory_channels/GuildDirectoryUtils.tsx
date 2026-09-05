@@ -1,14 +1,14 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12304
+// Function ID: 12305
 // Name: guildDirectoryEntryFromServer
-// Dependencies: [12237, 38, 12, 2]
+// Dependencies: [12305, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 12236 (guildDirectoryEntryFromServer)
+// Module 12304 (guildDirectoryEntryFromServer)
 import set2 from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import DirectoryEntryTypes2 from "DirectoryEntryTypes" /* 12237 */;
+import DirectoryEntryTypes2 from "DirectoryEntryTypes" /* 12305 */;
 
 const DirectoryEntryTypes = DirectoryEntryTypes2.DirectoryEntryTypes;
 const result = set2.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6170
-// Function ID: 6171
+// Module ID: 6225
+// Function ID: 6226
 // Name: LogoHandSpotIllustration
-// Dependencies: [21, 5542, 6171, 2]
+// Dependencies: [21, 5587, 6226, 2]
 // Exports: LogoHandSpotIllustration
 
-// Module 6170 (LogoHandSpotIllustration)
+// Module 6225 (LogoHandSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6171 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6226 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LogoHandSpotIllustration.native.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12973
+// Function ID: 12974
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 7217, 7221, 1386, 4743, 8290, 673, 21, 7863, 8057, 4481, 8223, 8582, 709, 586, 11246, 1233, 11, 12906, 11479, 11184, 7696, 11516, 6595, 11826, 11548, 4492, 2]
+// Dependencies: [32, 19, 17, 7277, 7281, 1957, 4781, 8360, 1074, 21, 7932, 8126, 4560, 8293, 8652, 576, 504, 11314, 1114, 11, 12974, 11547, 11252, 7764, 11584, 6655, 11894, 11616, 4571, 2]
 // Exports: default
 
-// Module 12905 (MeasureMessage)
-import ThemesDefault from "Themes" /* 709 */;
-import setOptionsDefault from "setOptions" /* 7863 */;
+// Module 12973 (MeasureMessage)
+import ThemesDefault from "Themes" /* 576 */;
+import setOptionsDefault from "setOptions" /* 7932 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 7217 */;
-import closure_8 from "handleReaction" /* 7221 */;
-import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import closure_10 from "reinjectEphemerals" /* 4743 */;
-import closure_11 from "messages" /* 8290 */;
-import { ThemeTypes } from "ME" /* 673 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 7277 */;
+import closure_8 from "handleReaction" /* 7281 */;
+import closure_9 from "ensureGuildLoaded" /* 1957 */;
+import closure_10 from "reinjectEphemerals" /* 4781 */;
+import closure_11 from "messages" /* 8360 */;
+import { ThemeTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function MeasureMessage(message) {
@@ -308,7 +308,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "BuyNitroPurchaseFlow", message: "absolute", messageChannel: null, selectedChannelId: "call", tapLinkData: "header" };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "sm", message: "icon-muted", messageChannel: true, selectedChannelId: "image", tapLinkData: null };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

@@ -1,13 +1,13 @@
-// Module ID: 9584
-// Function ID: 9585
+// Module ID: 9655
+// Function ID: 9656
 // Name: useTrackActivityPip
-// Dependencies: [19, 9415, 673, 644, 8202, 9562, 695, 2]
+// Dependencies: [19, 9486, 1074, 563, 8272, 9633, 1242, 2]
 // Exports: default
 
-// Module 9584 (useTrackActivityPip)
+// Module 9655 (useTrackActivityPip)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 9415 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_4 from "initialize" /* 9486 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useTrackActivityVideoPip.tsx");
@@ -15,10 +15,10 @@ const result = require("set").fileFinishedImporting("modules/video_calls/native/
 export default function useTrackActivityPip(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  const stateFromStores = _require(644).useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  let tmp2 = stateFromStores(8202)(stateFromStores);
+  const stateFromStores = _require(563).useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
+  let tmp2 = stateFromStores(8272)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(9562)();
+  const tmp3 = stateFromStores(9633)();
   const React = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = React.useEffect(() => {

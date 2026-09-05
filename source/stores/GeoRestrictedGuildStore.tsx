@@ -1,11 +1,11 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13745
+// Function ID: 13746
 // Name: getGeoRestrictedGuilds
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 13670 (getGeoRestrictedGuilds)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 13745 (getGeoRestrictedGuilds)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = [];
 const Store = initializeDefault.Store;

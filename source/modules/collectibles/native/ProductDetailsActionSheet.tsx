@@ -1,25 +1,25 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8177
+// Function ID: 8178
 // Name: PreviewProfileTrigger
-// Dependencies: [32, 19, 17, 7475, 675, 673, 502, 21, 3, 4481, 709, 4941, 4205, 1362, 1233, 6910, 1949, 8109, 8110, 8107, 7486, 9294, 7102, 7122, 13064, 11021, 8697, 8698, 500, 695, 8760, 586, 13065, 13066, 8762, 8764, 7487, 8766, 8767, 6567, 8769, 13067, 13077, 13082, 1296, 13083, 13096, 7090, 13040, 10663, 8163, 4936, 13099, 8105, 2]
+// Dependencies: [32, 19, 17, 7542, 1076, 1074, 1085, 21, 3, 4560, 576, 4980, 4271, 4411, 1114, 6970, 1889, 8178, 8179, 8176, 7553, 9365, 7162, 7182, 13132, 11089, 8767, 8768, 1250, 1242, 8830, 504, 13133, 13134, 8832, 8834, 7554, 8836, 8837, 6627, 8839, 13135, 13145, 13150, 1178, 13151, 13164, 7150, 13108, 10734, 8232, 4975, 13167, 8174, 2]
 // Exports: default
 
-// Module 8108 (PreviewProfileTrigger)
+// Module 8177 (PreviewProfileTrigger)
 import timestampDefault from "timestamp" /* 3 */;
-import ThemesDefault from "Themes" /* 709 */;
-import apexExperiment from "apexExperiment" /* 8105 */;
-import context from "context" /* 8697 */;
+import ThemesDefault from "Themes" /* 576 */;
+import apexExperiment from "apexExperiment" /* 8174 */;
+import context from "context" /* 8767 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import noop from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "updateCategoriesAndProducts" /* 7475 */;
-import { ShopCtaEnum } from "items" /* 675 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import closure_9 from "updateCategoriesAndProducts" /* 7542 */;
+import { ShopCtaEnum } from "items" /* 1076 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import ManaContext from "ManaContext" /* 4205 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import ManaContext from "ManaContext" /* 4271 */;
 
 require = arg1;
 function PreviewProfileTrigger(handlePreviewPress) {
@@ -31,9 +31,9 @@ function PreviewProfileTrigger(handlePreviewPress) {
   closure_5 = undefined;
   const tmp = callback2();
   dependencyMap = tmp;
-  let obj = handlePreviewPress(4205);
+  let obj = handlePreviewPress(4271);
   const theme = obj.useThemeContext().theme;
-  const isThemeLightResult = handlePreviewPress(1362).isThemeLight(theme);
+  const isThemeLightResult = handlePreviewPress(4411).isThemeLight(theme);
   closure_3 = theme === ThemeTypes.MIDNIGHT;
   importAllResult = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
@@ -61,10 +61,10 @@ function PreviewProfileTrigger(handlePreviewPress) {
     accessibilityLabel: null,
     children: null
   };
-  const intl = tmp2(1233).intl;
-  obj[3] = intl.string(handlePreviewPress(1233).t["3Qcx6K"]);
-  obj = { size: "md", color: onTrackPress(709).colors.INTERACTIVE_ICON_DEFAULT };
-  obj[4] = callback(handlePreviewPress(6910).EyeIcon, obj);
+  const intl = tmp2(1114).intl;
+  obj[3] = intl.string(handlePreviewPress(1114).t["3Qcx6K"]);
+  obj = { size: "md", color: onTrackPress(576).colors.INTERACTIVE_ICON_DEFAULT };
+  obj[4] = callback(handlePreviewPress(6970).EyeIcon, obj);
   return callback(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(arg0) {
@@ -72,7 +72,7 @@ function ProductDetailsActionSheetInner(arg0) {
   ({ product, initialVariantIndex, analyticsLocations, stageCollectibleChangeForEditProfile } = arg0);
   ref1 = importAllResult.useRef(null);
   const ref = importAllResult.useRef(null);
-  return callback(ref1(7090).BottomSheet, {
+  return callback(ref1(7150).BottomSheet, {
     scrollable: true,
     startExpanded: true,
     onExpand() {
@@ -101,12 +101,12 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   dependencyMap = undefined;
   let ref1;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(13040);
+  let obj = skuId(13108);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  obj1 = skuId(10663);
+  obj1 = skuId(10734);
   const getOrFetchPurchases = obj1.useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
   ref1 = importAllResult.useRef(null);
@@ -139,23 +139,23 @@ function ManagedProductDetailsActionSheetInner(skuId) {
         };
         obj[4] = ref;
         obj[5] = callback(closure_19, obj);
-        return callback(tmp(7090).BottomSheet, obj);
+        return callback(tmp(7150).BottomSheet, obj);
       }
     }
   }
   if ("error" === state) {
     obj1 = { Illustration: null, body: null, children: null };
-    obj1[0] = tmp(8163).NoResults;
-    const intl = tmp(1233).intl;
-    obj1[1] = intl.string(tmp(1233).t.eAn6z2);
+    obj1[0] = tmp(8232).NoResults;
+    const intl = tmp(1114).intl;
+    obj1[1] = intl.string(tmp(1114).t.eAn6z2);
     const obj2 = { text: null, onPress: null };
-    const intl2 = tmp(1233).intl;
-    obj2[0] = intl2.string(tmp(1233).t["+hivLW"]);
+    const intl2 = tmp(1114).intl;
+    obj2[0] = intl2.string(tmp(1114).t["+hivLW"]);
     obj2[1] = retry;
-    obj1[2] = callback(tmp(4936).Button, obj2);
-    callback(tmp(1296).EmptyState, obj1);
+    obj1[2] = callback(tmp(4975).Button, obj2);
+    callback(tmp(1178).EmptyState, obj1);
   } else {
-    callback(initialVariantIndex(13099), {});
+    callback(initialVariantIndex(13167), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(arg0) {

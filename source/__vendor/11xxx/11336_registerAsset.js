@@ -1,10 +1,10 @@
 // Module ID: 11336
 // Function ID: 11337
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11336 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/self_mod/inappropriate_conversation/images", width: 1125, height: 1320, scales: [1, 2, 3], hash: "b033af5495ac778a49adec13082b9f99", name: "vibing_wumpus_rings", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "634e3e2f609abec6ee1af702b841050e", name: "channel_following_success_3", type: "png" });

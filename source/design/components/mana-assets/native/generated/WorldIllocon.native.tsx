@@ -1,14 +1,14 @@
-// Module ID: 6522
-// Function ID: 6523
+// Module ID: 6581
+// Function ID: 6582
 // Name: WorldIllocon
-// Dependencies: [21, 5542, 6523, 2]
+// Dependencies: [21, 5587, 6582, 2]
 // Exports: WorldIllocon
 
-// Module 6522 (WorldIllocon)
+// Module 6581 (WorldIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6523 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6582 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");

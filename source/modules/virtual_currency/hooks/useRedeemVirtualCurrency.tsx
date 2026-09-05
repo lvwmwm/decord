@@ -1,10 +1,10 @@
-// Module ID: 8788
-// Function ID: 8789
+// Module ID: 8858
+// Function ID: 8859
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 8789, 8790, 7183, 8783, 1233, 2]
+// Dependencies: [5, 32, 19, 8859, 8860, 7243, 8853, 1114, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 8788 (useRedeemVirtualCurrency)
+// Module 8858 (useRedeemVirtualCurrency)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
@@ -23,7 +23,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = callback2(enabled(false), 2);
   callback2 = isSubmitting[1];
   const tmp5 = callback2(enabled(null), 2);
-  enabled = entitlements(8789).useConfig({ location: "orb_checkout_modal" }).enabled;
+  enabled = entitlements(8859).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
     order = order.order;
@@ -35,8 +35,8 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   if (order != null) {
     onSignFailure = order.onSignFailure;
   }
-  let obj = entitlements(8789);
-  const orderSigning = _require(8790).useOrderSigning({ order, errorSource: "orb_redeem_orders_api", onSignFailure });
+  let obj = entitlements(8859);
+  const orderSigning = _require(8860).useOrderSigning({ order, errorSource: "orb_redeem_orders_api", onSignFailure });
   const signOrder = orderSigning.signOrder;
   const _reportError = orderSigning.reportError;
   if (enabled) {
@@ -108,7 +108,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                 closure_3 = arg1;
                 if ("signed" === closure_3.type) {
                   v0 = 2;
-                  obj2 = callback(7183);
+                  obj2 = callback(7243);
                   v02 = 4;
                   c8 = 1;
                   const obj5 = { value: null, done: false };
@@ -140,7 +140,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               } else {
                 length = arg1;
                 if (0 === length.length) {
-                  const orderProcessingPendingError = new callback(7183).OrderProcessingPendingError();
+                  const orderProcessingPendingError = new callback(7243).OrderProcessingPendingError();
                   throw orderProcessingPendingError;
                 } else {
                   dependencyMap(length);
@@ -185,7 +185,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   closure_9 = tmp11;
   const tmp12 = _reportError((skuId, loadId) => {
     const callback = arg2;
-    let obj = callback(8783);
+    let obj = callback(8853);
     obj = {
       skuId,
       loadId,
@@ -229,7 +229,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
             }
             return name;
           });
-          const intl2 = callback(1233).intl;
+          const intl2 = callback(1114).intl;
           let str2 = "SKUs";
           if (1 === mapped.length) {
             str2 = "SKU";
@@ -243,15 +243,15 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
           const mapped1 = arr.map((id) => id.id);
           const _HermesInternal = HermesInternal;
           obj[1] = "" + str2 + ": " + joined + ". Entitlement " + str4 + ": " + mapped1.join(", ");
-          callback(intl2.format(callback(1233).t.JxNFav, obj));
+          callback(intl2.format(callback(1114).t.JxNFav, obj));
         }
       }
       callback("");
     } else {
-      const intl = callback(1233).intl;
+      const intl = callback(1114).intl;
       obj = { amount: "1 orb", errorMessage: null };
       obj[1] = tmp.message;
-      callback(intl.format(callback(1233).t["7gHWrd"], obj));
+      callback(intl.format(callback(1114).t["7gHWrd"], obj));
     }
   }, items2);
   return { entitlements, error, isSubmitting: isSubmitting[0], responseMessage, redeemVirtualCurrency };

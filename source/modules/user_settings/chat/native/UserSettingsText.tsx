@@ -1,24 +1,24 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 15463
+// Function ID: 15464
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1921, 4145, 1302, 1303, 673, 21, 4481, 709, 695, 4166, 9287, 4197, 586, 4139, 1498, 6930, 1296, 10327, 4477, 1233, 8523, 4934, 5642, 7141, 5640, 5643, 2]
+// Dependencies: [19, 17, 1371, 4224, 1184, 1185, 1074, 21, 4560, 576, 1242, 1935, 9358, 4262, 504, 4218, 1483, 6990, 1178, 10398, 4556, 1114, 8593, 4973, 5687, 7201, 5685, 5688, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15387 (UserSettingsText)
+// Module 15463 (UserSettingsText)
 import noopAll from "noop" /* 19 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import ThemesDefault from "Themes" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 9287 */;
+import ThemesDefault from "Themes" /* 576 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9358 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "reset" /* 4145 */;
-import closure_6 from "initialize" /* 1302 */;
-import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "reset" /* 4224 */;
+import closure_6 from "initialize" /* 1184 */;
+import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

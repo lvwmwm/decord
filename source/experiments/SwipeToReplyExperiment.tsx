@@ -1,13 +1,13 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11463
+// Function ID: 11464
 // Name: useIsMessageSwipeActionsEnabled
-// Dependencies: [11396, 11397, 11398, 2]
+// Dependencies: [11464, 11465, 11466, 2]
 // Exports: useIsMessageSwipeActionsEnabled
 
-// Module 11395 (useIsMessageSwipeActionsEnabled)
+// Module 11463 (useIsMessageSwipeActionsEnabled)
 import set from "set" /* 2 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11396 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11397 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11464 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11465 */;
 
 const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
 const result = set.fileFinishedImporting("experiments/SwipeToReplyExperiment.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17465
+// Function ID: 17466
 // Name: isParentalConsentWarningFetchEnabled
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 17385 (isParentalConsentWarningFetchEnabled)
+// Module 17465 (isParentalConsentWarningFetchEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

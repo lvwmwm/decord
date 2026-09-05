@@ -1,13 +1,13 @@
-// Module ID: 4663
-// Function ID: 4664
+// Module ID: 4696
+// Function ID: 4697
 // Name: getReportedStreamResolution
-// Dependencies: [4545, 4664, 2]
+// Dependencies: [4585, 4697, 2]
 // Exports: default
 
-// Module 4663 (getReportedStreamResolution)
+// Module 4696 (getReportedStreamResolution)
 import set from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
-import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 4664 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
+import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 4697 */;
 
 const ResolutionTypes = DesktopSources.ResolutionTypes;
 const result = set.fileFinishedImporting("modules/go_live/utils/getReportedStreamResolution.tsx");

@@ -1,27 +1,27 @@
-// Module ID: 10214
-// Function ID: 10215
+// Module ID: 10285
+// Function ID: 10286
 // Name: initializeSearch
-// Dependencies: [19, 5419, 1908, 5398, 1921, 5423, 673, 1924, 1337, 1923, 511, 10215, 4708, 10207, 10210, 10211, 586, 1945, 10216, 1233, 4138, 4134, 695, 12, 684, 1369, 2]
+// Dependencies: [19, 5459, 1979, 5438, 1371, 5463, 1074, 1374, 1219, 1373, 1256, 10286, 4740, 10278, 10281, 10282, 504, 1885, 10287, 1114, 4217, 4213, 1242, 12, 1090, 1940, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 10214 (initializeSearch)
-import v1 from "v1" /* 511 */;
-import setDefault from "set" /* 684 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
-import withEqualityFn from "withEqualityFn" /* 10215 */;
+// Module 10285 (initializeSearch)
+import setDefault from "set" /* 1090 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import v1 from "v1" /* 1256 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4740 */;
+import withEqualityFn from "withEqualityFn" /* 10286 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5419 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "insertUnsortedGuilds" /* 5398 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5423 */;
-import ME from "ME" /* 673 */;
-import set from "set" /* 1924 */;
-import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
+import closure_4 from "getEmojiToGroupId" /* 5459 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "insertUnsortedGuilds" /* 5438 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5463 */;
+import ME from "ME" /* 1074 */;
+import set from "set" /* 1374 */;
+import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1219 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1373 */;
 import apply from "apply" /* 12 */;
 
 require = arg1;
@@ -623,7 +623,7 @@ export const useEmojiSearchResults = function useEmojiSearchResults(arg0, arg1, 
   closure_4 = tmp2;
   const items = [closure_4];
   const items1 = [arg0, arg1, arg2, tmp2, arg3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const replaced = lib.replace(/^:/, "").replace(/:$/, "");
     let result = null;
     if ("" !== replaced) {
@@ -636,7 +636,7 @@ export const useEmojiSearchResults = function useEmojiSearchResults(arg0, arg1, 
       result = closure_4.searchWithoutFetchingLatest(obj);
     }
     return result;
-  }, items1, _require(586).statesWillNeverBeEqual);
+  }, items1, _require(504).statesWillNeverBeEqual);
 };
 export const useFrequentlyUsedEmojis = function useFrequentlyUsedEmojis(arg0) {
   const _require = arg0;
@@ -645,7 +645,7 @@ export const useFrequentlyUsedEmojis = function useFrequentlyUsedEmojis(arg0) {
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_4];
-  return _require(586).useStateFromStoresArray(items, () => {
+  return _require(504).useStateFromStoresArray(items, () => {
     const disambiguatedEmojiContext = flag2.getDisambiguatedEmojiContext(guildId);
     return disambiguatedEmojiContext.getFrequentlyUsedEmojisWithoutFetchingLatest();
   });
@@ -657,7 +657,7 @@ export const useFrequentlyUsedReactionEmojis = function useFrequentlyUsedReactio
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_4];
-  return _require(586).useStateFromStoresArray(items, () => {
+  return _require(504).useStateFromStoresArray(items, () => {
     const disambiguatedEmojiContext = flag2.getDisambiguatedEmojiContext(guildId);
     return disambiguatedEmojiContext.getFrequentlyUsedReactionEmojisWithoutFetchingLatest();
   });
@@ -669,7 +669,7 @@ export const useFavoriteEmojis = function useFavoriteEmojis(arg0) {
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_4];
-  return _require(586).useStateFromStoresArray(items, () => flag2.getDisambiguatedEmojiContext(guildId).favoriteEmojisWithoutFetchingLatest);
+  return _require(504).useStateFromStoresArray(items, () => flag2.getDisambiguatedEmojiContext(guildId).favoriteEmojisWithoutFetchingLatest);
 };
 export const useIsFavoriteEmoji = function useIsFavoriteEmoji(guildId, customEmojiFromJoinedGuild) {
   const _require = guildId;
@@ -679,7 +679,7 @@ export const useIsFavoriteEmoji = function useIsFavoriteEmoji(guildId, customEmo
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let result = null != closure_1;
     if (result) {
       const disambiguatedEmojiContext = closure_1_4.getDisambiguatedEmojiContext(closure_0);
@@ -695,7 +695,7 @@ export const useEmojiInPriorityOrder = function useEmojiInPriorityOrder(arg0) {
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_4];
-  return _require(586).useStateFromStoresArray(items, () => {
+  return _require(504).useStateFromStoresArray(items, () => {
     const disambiguatedEmojiContext = closure_1_4.getDisambiguatedEmojiContext(closure_0);
     return disambiguatedEmojiContext.getEmojiInPriorityOrderWithoutFetchingLatest();
   });

@@ -1,19 +1,19 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15066
+// Function ID: 15067
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4481, 709, 4448, 14990, 10159, 1233, 5760, 4936, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4527, 15065, 10230, 1114, 5807, 4975, 2]
 // Exports: default
 
-// Module 14991 (BountiesNuxPromoSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4936 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 5760 */;
-import PromoSheet from "PromoSheet" /* 10159 */;
+// Module 15066 (BountiesNuxPromoSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 4975 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 5807 */;
+import PromoSheet from "PromoSheet" /* 10230 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { illustrationContainer: null };
@@ -24,7 +24,7 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Bount
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    callback2(4448).hideActionSheet(callback(14990).PROMO_SHEET_KEY);
+    callback2(4527).hideActionSheet(callback(15065).PROMO_SHEET_KEY);
   }, []);
   let obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
   const intl = getSystemLocale.intl;

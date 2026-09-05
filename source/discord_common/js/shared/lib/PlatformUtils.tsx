@@ -1,10 +1,10 @@
-// Module ID: 4762
-// Function ID: 4763
+// Module ID: 4801
+// Function ID: 4802
 // Name: isTablet
-// Dependencies: [666, 2]
+// Dependencies: [1341, 2]
 
-// Module 4762 (isTablet)
-import importDefaultResult1 from "format" /* 666 */;
+// Module 4801 (isTablet)
+import importDefaultResult1 from "format" /* 1341 */;
 import set from "set" /* 2 */;
 
 let set = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]);

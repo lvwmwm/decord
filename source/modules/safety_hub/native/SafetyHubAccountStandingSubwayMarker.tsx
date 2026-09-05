@@ -1,16 +1,16 @@
-// Module ID: 14697
-// Function ID: 14698
+// Module ID: 14772
+// Function ID: 14773
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 4481, 709, 1233, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1114, 4556, 2]
 // Exports: default
 
-// Module 14697 (SafetyHubAccountStandingSubwayMarker)
+// Module 14772 (SafetyHubAccountStandingSubwayMarker)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -44,12 +44,12 @@ export default function SafetyHubAccountStandingSubwayMarker(arg0) {
     obj.height = size;
     let num = 0;
     if (tmp3) {
-      num = -isSelected(709).space.PX_4;
+      num = -isSelected(576).space.PX_4;
     }
     obj.marginLeft = num;
     let num2 = 0;
     if (index === numOptions - 1) {
-      num2 = -isSelected(709).space.PX_4;
+      num2 = -isSelected(576).space.PX_4;
     }
     obj1 = { style: null, children: null };
     obj.marginRight = num2;

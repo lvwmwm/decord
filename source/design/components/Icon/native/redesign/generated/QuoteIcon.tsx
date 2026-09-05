@@ -1,14 +1,14 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 8921
+// Function ID: 8922
 // Name: QuoteIcon
-// Dependencies: [19, 21, 709, 4196, 8852, 2]
+// Dependencies: [19, 21, 576, 4261, 8922, 2]
 // Exports: QuoteIcon
 
-// Module 8851 (QuoteIcon)
+// Module 8921 (QuoteIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8852 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8922 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

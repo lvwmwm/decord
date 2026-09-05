@@ -1,13 +1,13 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 9475
+// Function ID: 9476
 // Name: useIsActivityFocused
-// Dependencies: [4497, 1385, 9405, 586, 2]
+// Dependencies: [4576, 1956, 9476, 504, 2]
 // Exports: default, isActivityFocused
 
-// Module 9404 (useIsActivityFocused)
-import sortKey from "sortKey" /* 9405 */;
-import closure_2 from "getParticipants" /* 4497 */;
-import closure_3 from "participantFromServer" /* 1385 */;
+// Module 9475 (useIsActivityFocused)
+import sortKey from "sortKey" /* 9476 */;
+import closure_2 from "getParticipants" /* 4576 */;
+import closure_3 from "participantFromServer" /* 1956 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/activities/useIsAct
 export default function useIsActivityFocused(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const selectedParticipant = closure_1_2.getSelectedParticipant(callback);
     const currentEmbeddedActivity = closure_1_3.getCurrentEmbeddedActivity();
     let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;

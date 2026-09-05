@@ -1,14 +1,14 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11760
+// Function ID: 11761
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7048, 4499, 673, 1235, 1399, 11394, 2]
+// Dependencies: [7108, 4578, 1074, 1116, 1384, 11462, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11692 (getRemoteJoinableActivityPlatform)
-import hasFlag from "hasFlag" /* 1399 */;
-import closure_2 from "isConnected" /* 7048 */;
-import closure_3 from "handleUpdate" /* 4499 */;
-import ME from "ME" /* 673 */;
+// Module 11760 (getRemoteJoinableActivityPlatform)
+import hasFlag from "hasFlag" /* 1384 */;
+import closure_2 from "isConnected" /* 7108 */;
+import closure_3 from "handleUpdate" /* 4578 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ ActivityFlags: c4, ActivityGamePlatforms: c5 } = ME);
@@ -28,11 +28,11 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
         remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
-          let tmp11Result = tmp11(11394);
+          let tmp11Result = tmp11(11462);
           tmp4 = null;
           if (!tmp11Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
             if (null == remoteApplicationActivity.application_id) {
-              tmp11Result = tmp11(1399);
+              tmp11Result = tmp11(1384);
               let num2 = remoteApplicationActivity.flags;
               if (num2 == null) {
                 num2 = 0;
@@ -53,14 +53,14 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 if (tmp11Result1.isAndroid()) {
                   let isIOSResult = platform === constants2.ANDROID;
                 } else {
-                  isIOSResult = tmp11(1235).isIOS();
+                  isIOSResult = tmp11(1116).isIOS();
                   if (isIOSResult) {
                     isIOSResult = platform === constants2.IOS;
                   }
-                  const tmp11Result2 = tmp11(1235);
+                  const tmp11Result2 = tmp11(1116);
                 }
                 tmp4 = null;
-                tmp11Result1 = tmp11(1235);
+                tmp11Result1 = tmp11(1116);
               }
             }
           }

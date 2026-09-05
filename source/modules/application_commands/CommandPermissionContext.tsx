@@ -1,24 +1,24 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9295
+// Function ID: 9296
 // Name: computePermissions
-// Dependencies: [19, 1983, 1390, 1430, 1215, 1386, 1991, 1908, 4120, 1921, 673, 9225, 586, 503, 1954, 2]
+// Dependencies: [19, 2014, 1961, 1975, 502, 1957, 2021, 1979, 4199, 1371, 1074, 9296, 504, 1086, 1894, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9224 (computePermissions)
-import fromStringAll from "fromString" /* 503 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 9225 */;
+// Module 9295 (computePermissions)
+import fromStringAll from "fromString" /* 1086 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 9296 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 1983 */;
-import { ChannelRecordBase } from "createChannelRecord" /* 1390 */;
-import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_12 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "initialize" /* 2014 */;
+import { ChannelRecordBase } from "createChannelRecord" /* 1961 */;
+import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1975 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "trackCommunicationDisabled" /* 2021 */;
+import closure_10 from "createGuildRecordFromRust" /* 1979 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_12 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function computePermissions(isPrivate) {
@@ -29,22 +29,22 @@ function computePermissions(isPrivate) {
       let flag = true;
       let flag2 = true;
       if (!obj6.has(permissions, constants2.ADMINISTRATOR)) {
-        let tmp13Result = tmp13(503);
+        let tmp13Result = tmp13(1086);
         const hasItem = tmp13Result.has(permissions, SEND_MESSAGES_IN_THREADS.VIEW_CHANNEL);
         if (tmp3) {
           let hasItem1 = hasItem;
           if (hasItem) {
-            tmp13Result = tmp13(503);
+            tmp13Result = tmp13(1086);
             hasItem1 = tmp13Result.has(permissions, SEND_MESSAGES_IN_THREADS.USE_APPLICATION_COMMANDS);
           }
-          const has = tmp13(503).has;
+          const has = tmp13(1086).has;
           if (arg1) {
             SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
             let hasItem2 = has(permissions, SEND_MESSAGES_IN_THREADS);
           } else {
             hasItem2 = has(permissions, SEND_MESSAGES_IN_THREADS.SEND_MESSAGES);
           }
-          const tmp13Result1 = tmp13(503);
+          const tmp13Result1 = tmp13(1086);
         } else {
           flag = true;
           flag2 = hasItem;

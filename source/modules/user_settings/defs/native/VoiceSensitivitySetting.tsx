@@ -1,17 +1,17 @@
-// Module ID: 15174
-// Function ID: 15175
-// Dependencies: [17, 4532, 7906, 21, 4481, 586, 9913, 9019, 11400, 1233, 2]
+// Module ID: 15250
+// Function ID: 15251
+// Dependencies: [17, 1908, 7975, 21, 4560, 504, 9984, 9089, 11468, 1114, 2]
 
-// Module 15174
+// Module 15250
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 9913 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import createToggle from "createToggle" /* 11400 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 9984 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import createToggle from "createToggle" /* 11468 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;
@@ -23,7 +23,7 @@ let obj = {
   },
   parent: MobileUserSettings.MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
-    let obj = inputMode(586);
+    let obj = inputMode(504);
     const items = [closure_4];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
@@ -57,7 +57,7 @@ const createStaticResult = createToggle.createStatic({
   },
   parent: MobileUserSettings.MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
-    let obj = inputMode(586);
+    let obj = inputMode(504);
     const items = [closure_4];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;

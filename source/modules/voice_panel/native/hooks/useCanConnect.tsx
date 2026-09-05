@@ -1,15 +1,15 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17126
+// Function ID: 17127
 // Name: useCanConnect
-// Dependencies: [1386, 1908, 4120, 4500, 502, 586, 4673, 2]
+// Dependencies: [1957, 1979, 4199, 4579, 1085, 504, 4705, 2]
 // Exports: default
 
-// Module 17048 (useCanConnect)
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_5 from "updateVoiceState" /* 4500 */;
-import { Permissions } from "sum" /* 502 */;
+// Module 17126 (useCanConnect)
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_5 from "updateVoiceState" /* 4579 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
@@ -18,7 +18,7 @@ export default function useCanConnect(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_4, closure_3, closure_5];
   const items1 = [arg0];
-  return _require(586).useStateFromStoresObject(items, () => {
+  return _require(504).useStateFromStoresObject(items, () => {
     const channel = closure_1_2.getChannel(callback);
     let tmp = null != channel;
     if (tmp) {

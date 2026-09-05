@@ -1,25 +1,25 @@
-// Module ID: 4300
-// Function ID: 4301
+// Module ID: 4379
+// Function ID: 4380
 // Name: reset
-// Dependencies: [1302, 1301, 1303, 1339, 1390, 1386, 1921, 1347, 1304, 4301, 1372, 4325, 4139, 4166, 1365, 4328, 586, 1346, 706, 2]
+// Dependencies: [1184, 1183, 1185, 1221, 1961, 1957, 1371, 1230, 1186, 4380, 1943, 4404, 4218, 1935, 4407, 4408, 504, 1229, 573, 2]
 
-// Module 4300 (reset)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getThemeForColor from "getThemeForColor" /* 1346 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
-import closure_5 from "initialize" /* 1302 */;
-import closure_6 from "handleThemeChange" /* 1301 */;
-import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_8 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { isGuildTextChannelType } from "createChannelRecord" /* 1390 */;
-import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_12 } from "ThemeTypes" /* 1347 */;
-import { SystemThemeState } from "SystemThemeState" /* 1304 */;
+// Module 4379 (reset)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getThemeForColor from "getThemeForColor" /* 1229 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4218 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4380 */;
+import closure_5 from "initialize" /* 1184 */;
+import closure_6 from "handleThemeChange" /* 1183 */;
+import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import closure_8 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { isGuildTextChannelType } from "createChannelRecord" /* 1961 */;
+import closure_10 from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_12 } from "ThemeTypes" /* 1230 */;
+import { SystemThemeState } from "SystemThemeState" /* 1186 */;
 
 require = arg1;
 function reset() {
@@ -55,7 +55,7 @@ function handleSelectivelySyncedStoreChange() {
   }
 }
 function handleSyncedModeChange() {
-  return require(1365) /* isPerModeThemingActive */.isPerModeThemingActive();
+  return require(4407) /* isPerModeThemingActive */.isPerModeThemingActive();
 }
 function handleSameAsDeviceThemeToggle() {
   return true;
@@ -68,11 +68,11 @@ function handleUserSettingsProtoStoreUpdate() {
     result = null == backgroundGradientPresetId;
   }
   if (!result) {
-    let tmpResult = tmp(1365);
+    let tmpResult = tmp(4407);
     result = tmpResult.isPerModeThemingActive();
   }
   if (!result) {
-    tmpResult = tmp(4328);
+    tmpResult = tmp(4408);
     tmpResult.setUseSystemTheme(SystemThemeState.OFF);
   }
   if (null != backgroundGradientPresetId) {
@@ -171,7 +171,7 @@ Object.defineProperty(prototype, "gradientPreset", {
     } else {
       return closure_3;
     }
-    obj = require(1365) /* isPerModeThemingActive */;
+    obj = require(4407) /* isPerModeThemingActive */;
   },
   set: undefined
 });
@@ -241,7 +241,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(dispatcherDe
               c15 = true;
             }
           }
-          tmp6Result = tmp6(4325);
+          tmp6Result = tmp6(4404);
         }
         obj2 = UNSAFE_isDismissibleContentDismissed;
         tmp6 = require;

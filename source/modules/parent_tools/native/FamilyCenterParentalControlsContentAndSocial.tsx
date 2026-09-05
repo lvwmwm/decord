@@ -1,18 +1,18 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 14930
+// Function ID: 14931
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 673, 7906, 21, 11400, 1233, 1994, 14614, 2]
+// Dependencies: [19, 17, 1074, 7975, 21, 11468, 1114, 2024, 14689, 2]
 // Exports: default
 
-// Module 14855 (FamilyCenterParentalControlsContentAndSocial)
+// Module 14930 (FamilyCenterParentalControlsContentAndSocial)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import combinedDefault from "combined" /* 1994 */;
-import createToggle from "createToggle" /* 11400 */;
-import _modDef14614 from "module_14614" /* 14614 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import combinedDefault from "combined" /* 2024 */;
+import createToggle from "createToggle" /* 11468 */;
+import _modDef14689 from "module_14689" /* 14689 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7975 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -47,6 +47,6 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   obj[0] = items1;
   obj4 = { children: null };
   const list = obj.createList(obj);
-  obj4[0] = jsx(_modDef14614, { node: list });
+  obj4[0] = jsx(_modDef14689, { node: list });
   return <View>{null}</View>;
 };

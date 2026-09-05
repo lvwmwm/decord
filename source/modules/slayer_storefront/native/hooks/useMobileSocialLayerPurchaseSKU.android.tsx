@@ -1,13 +1,13 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10814
+// Function ID: 10815
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 673, 9296, 10746, 2]
+// Dependencies: [19, 1074, 9367, 10815, 2]
 // Exports: default
 
-// Module 10745 (useMobileSocialLayerPurchaseSKU)
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10746 */;
+// Module 10814 (useMobileSocialLayerPurchaseSKU)
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10815 */;
 import closure_3 from "noop" /* 19 */;
-import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME" /* 673 */;
+import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");

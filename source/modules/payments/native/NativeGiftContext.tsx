@@ -1,23 +1,23 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10699
+// Function ID: 10700
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8123, 10594, 10629, 1921, 673, 7178, 1923, 502, 21, 3, 7362, 7363, 4154, 10630, 1233, 10631, 4139, 7180, 10632, 586, 10662, 10672, 8128, 8115, 4866, 695, 7122, 10673, 706, 1234, 10592, 2]
+// Dependencies: [5, 32, 19, 8192, 10665, 10700, 1371, 1074, 7238, 1373, 1085, 21, 3, 7428, 7429, 4233, 10701, 1114, 10702, 4218, 7240, 10703, 504, 10733, 10743, 8197, 8184, 4905, 1242, 7182, 10744, 573, 1115, 10663, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10628 (NativeGiftContextProvider)
+// Module 10699 (NativeGiftContextProvider)
 import timestampDefault from "timestamp" /* 3 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7362 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7428 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8123 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10594 */;
-import closure_8 from "frozen" /* 10629 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 7178 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import { PaymentGateways } from "sum" /* 502 */;
+import closure_6 from "initialize" /* 8192 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10665 */;
+import closure_8 from "frozen" /* 10700 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 7238 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import { PaymentGateways } from "sum" /* 1085 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -273,7 +273,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     closure_15 = undefined;
-    obj = { orderId: "a", planId: "button", planSelection: null, giftInfo: null };
+    obj = { orderId: "a", planId: 150, planSelection: "center", giftInfo: "center" };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;

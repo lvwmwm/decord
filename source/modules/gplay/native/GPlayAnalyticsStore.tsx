@@ -1,12 +1,12 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9368
+// Function ID: 9369
 // Name: setGPlayAnalytics
-// Dependencies: [641, 702, 2]
+// Dependencies: [560, 1249, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 9297 (setGPlayAnalytics)
+// Module 9368 (setGPlayAnalytics)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let closure_2 = Object.freeze({ analyticsByProductId: {} });
 let obj = keys.create(() => closure_2);
@@ -15,7 +15,7 @@ const result = set.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsSto
 export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState((analyticsByProductId) => {
       obj = { analyticsByProductId: null };
       obj = {};
@@ -28,7 +28,7 @@ export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
 };
 export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState((analyticsByProductId) => {
       analyticsByProductId = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);

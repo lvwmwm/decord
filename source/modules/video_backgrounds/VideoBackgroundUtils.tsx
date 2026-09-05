@@ -1,17 +1,17 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 9097
+// Function ID: 9098
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1386, 4557, 6927, 673, 1431, 4708, 695, 2]
+// Dependencies: [1957, 4583, 6987, 1074, 1396, 4740, 1242, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9026 (isAnimatedBackgroundOption)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import VideoFilterType from "VideoFilterType" /* 6927 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+// Module 9097 (isAnimatedBackgroundOption)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import VideoFilterType from "VideoFilterType" /* 6987 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 function isAnimatedBackgroundOption(closure_0) {
@@ -38,8 +38,8 @@ function isAnimatedBackgroundOption(closure_0) {
     if (hasItem) {
       let isAnimatedIconHashResult = getAvatarURL.isAnimatedIconHash(closure_0.asset);
       if (!isAnimatedIconHashResult) {
-        isAnimatedIconHashResult = tmp6(1431).isVideoAssetHash(closure_0.asset);
-        const tmp6Result = tmp6(1431);
+        isAnimatedIconHashResult = tmp6(1396).isVideoAssetHash(closure_0.asset);
+        const tmp6Result = tmp6(1396);
       }
       hasItem = isAnimatedIconHashResult;
       const obj = getAvatarURL;

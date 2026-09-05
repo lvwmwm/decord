@@ -1,14 +1,14 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7890
+// Function ID: 7891
 // Name: regExp
-// Dependencies: [4402, 7822, 7823, 2]
+// Dependencies: [4481, 7891, 7892, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7821 (regExp)
+// Module 7890 (regExp)
 import set from "set" /* 2 */;
-import trackExposureToExperiment from "trackExposureToExperiment" /* 4402 */;
-import getFirstEligibleUserExperimentDefault from "getFirstEligibleUserExperiment" /* 7822 */;
-import getExperimentVariantsForDevTools from "getExperimentVariantsForDevTools" /* 7823 */;
+import trackExposureToExperiment from "trackExposureToExperiment" /* 4481 */;
+import getFirstEligibleUserExperimentDefault from "getFirstEligibleUserExperiment" /* 7891 */;
+import getExperimentVariantsForDevTools from "getExperimentVariantsForDevTools" /* 7892 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = set.fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
@@ -56,7 +56,7 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
       const system2 = system.system;
       if (trackExposureToExperiment.ExperimentSystem.LEGACY === system2) {
         return getFirstEligibleUserExperimentDefault.getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (tmp4(4402).ExperimentSystem.APEX === system2) {
+      } else if (tmp4(4481).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {

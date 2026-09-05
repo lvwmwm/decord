@@ -1,17 +1,17 @@
-// Module ID: 4520
-// Function ID: 4521
+// Module ID: 7397
+// Function ID: 7398
 // Name: setLibraryApplications
-// Dependencies: [4521, 1215, 673, 592, 4529, 1399, 586, 12, 706, 2]
+// Dependencies: [7398, 502, 1074, 510, 7399, 1384, 504, 12, 573, 2]
 
-// Module 4520 (setLibraryApplications)
-import initializeDefault from "initialize" /* 586 */;
-import Storage6 from "Storage" /* 592 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hasFlagAll from "hasFlag" /* 1399 */;
-import getComboId from "getComboId" /* 4529 */;
-import closure_4 from "createFromServer" /* 4521 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import { LibraryApplicationFlags } from "ME" /* 673 */;
+// Module 7397 (setLibraryApplications)
+import initializeDefault from "initialize" /* 504 */;
+import Storage6 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import hasFlagAll from "hasFlag" /* 1384 */;
+import getComboId from "getComboId" /* 7399 */;
+import closure_4 from "createFromServer" /* 7398 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import { LibraryApplicationFlags } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -51,8 +51,8 @@ prototype["initialize"] = function initialize() {
   let value = Storage.get(LibraryApplicationStore);
   if (null != value) {
     if (null == value.activeLaunchOptionIds) {
-      const Storage2 = tmp2(592).Storage;
-      const Storage3 = tmp2(592).Storage;
+      const Storage2 = tmp2(510).Storage;
+      const Storage3 = tmp2(510).Storage;
       value = Storage3.get(tmp4);
       if (value == null) {
         value = {};
@@ -65,8 +65,8 @@ prototype["initialize"] = function initialize() {
       activeLaunchOptionIds = value.activeLaunchOptionIds;
     }
     if (null == value.activeLibraryApplicationBranchIds) {
-      const Storage4 = tmp2(592).Storage;
-      const Storage5 = tmp2(592).Storage;
+      const Storage4 = tmp2(510).Storage;
+      const Storage5 = tmp2(510).Storage;
       let value1 = Storage5.get(tmp4);
       if (value1 == null) {
         value1 = {};
@@ -170,7 +170,7 @@ prototype["getActiveLibraryApplication"] = function getActiveLibraryApplication(
       if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
         return obj2;
       }
-      tmp2Result = tmp2(4529);
+      tmp2Result = tmp2(7399);
     }
     tmp2 = require;
   }

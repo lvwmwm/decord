@@ -1,14 +1,14 @@
-// Module ID: 6256
-// Function ID: 6257
+// Module ID: 6311
+// Function ID: 6312
 // Name: NitroWumpusFlightLeft3dIllustration
-// Dependencies: [21, 5542, 6257, 2]
+// Dependencies: [21, 5587, 6312, 2]
 // Exports: NitroWumpusFlightLeft3dIllustration
 
-// Module 6256 (NitroWumpusFlightLeft3dIllustration)
+// Module 6311 (NitroWumpusFlightLeft3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6257 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6312 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightLeft3dIllustration.native.tsx");

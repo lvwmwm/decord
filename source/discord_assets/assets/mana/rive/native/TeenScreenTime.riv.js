@@ -1,9 +1,9 @@
-// Module ID: 4295
-// Function ID: 4296
+// Module ID: 4373
+// Function ID: 4374
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4295 (metadata)
+// Module 4373 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/TeenScreenTime.riv.js");

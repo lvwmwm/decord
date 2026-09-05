@@ -1,9 +1,9 @@
-// Module ID: 6179
-// Function ID: 6180
+// Module ID: 6234
+// Function ID: 6235
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6179 (metadata)
+// Module 6234 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxSpotIllustration-2x.png.js");

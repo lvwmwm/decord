@@ -1,14 +1,14 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6113
+// Function ID: 6114
 // Name: GemLevel2SpotIllustration
-// Dependencies: [21, 5542, 6059, 2]
+// Dependencies: [21, 5587, 6114, 2]
 // Exports: GemLevel2SpotIllustration
 
-// Module 6058 (GemLevel2SpotIllustration)
+// Module 6113 (GemLevel2SpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6059 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6114 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel2SpotIllustration.native.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 10025
-// Function ID: 10026
+// Module ID: 10096
+// Function ID: 10097
 // Name: dispatcher
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 
-// Module 10025 (dispatcher)
+// Module 10096 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17541
+// Function ID: 17542
 // Name: withEqualityFn
-// Dependencies: [32, 5, 19, 11794, 673, 697, 17462, 702, 11799, 4379, 4105, 2]
+// Dependencies: [32, 5, 19, 11862, 1074, 1244, 17542, 1249, 11867, 4461, 4184, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 17461 (withEqualityFn)
+// Module 17541 (withEqualityFn)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { AutomodTriggerType } from "AutomodEventType" /* 11794 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
-import identity from "identity" /* 697 */;
+import { AutomodTriggerType } from "AutomodEventType" /* 11862 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 1074 */;
+import identity from "identity" /* 1244 */;
 
 const require = arg1;
 let closure_7 = {};
@@ -55,7 +55,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
         mapped[HermesBuiltin.arraySpread(found, 0)] = guildId;
       }
       someResult = items.some((id) => id.id === closure_2);
-      callback(702).batchUpdates(() => {
+      callback(1249).batchUpdates(() => {
         obj = { rules: null, error: null };
         obj = {};
         const merged = Object.assign(rules);
@@ -82,7 +82,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
         arg0[NumberResult] = items.filter((id) => id.id !== closure_0);
         return arg0;
       }, {});
-      callback(702).batchUpdates(() => {
+      callback(1249).batchUpdates(() => {
         let obj = { rules: null, error: null };
         obj = {};
         const merged = Object.assign(rules);
@@ -237,7 +237,7 @@ export const useSyncAutomodRules = function useSyncAutomodRules(arg0) {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _require(4105).shallow), 2);
+  }, _require(4184).shallow), 2);
   first = tmp2[0];
   const callback = tmp4;
   const items = [tmp[0], ];
@@ -321,7 +321,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _require(4105).shallow), 2);
+  }, _require(4184).shallow), 2);
   first = tmp2[0];
   const callback = tmp4;
   let items = [tmp[0], ];
@@ -467,5 +467,5 @@ export const useAutomodRulesList = function useAutomodRulesList(arg0) {
     }
     obj = { rulesByTriggerType: obj, updateRule: updateRule.updateRule, removeRule: updateRule.removeRule };
     return obj;
-  }, _require(4105).shallow);
+  }, _require(4184).shallow);
 };

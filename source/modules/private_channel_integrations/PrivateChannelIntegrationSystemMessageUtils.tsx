@@ -1,14 +1,14 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 7996
+// Function ID: 7997
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
-// Dependencies: [673, 1233, 1994, 2]
+// Dependencies: [1074, 1114, 2024, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 7927 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 7996 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import combinedDefault from "combined" /* 1994 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import combinedDefault from "combined" /* 2024 */;
+import ME from "ME" /* 1074 */;
 
 ({ HelpdeskArticles: c3, NOOP: c4 } = ME);
 const result = set.fileFinishedImporting("modules/private_channel_integrations/PrivateChannelIntegrationSystemMessageUtils.tsx");

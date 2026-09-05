@@ -1,27 +1,27 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9415
+// Function ID: 9416
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5419, 5466, 1386, 1981, 1991, 1984, 1908, 4120, 4130, 1921, 673, 1924, 7619, 4681, 11, 5402, 4134, 4138, 2]
+// Dependencies: [32, 5459, 5506, 1957, 2012, 2021, 2015, 1979, 4199, 4209, 1371, 1074, 1374, 7686, 4713, 11, 5442, 4213, 4217, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9344 (resolvePlaintextInlineVoid)
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import createEmptyState from "createEmptyState" /* 7619 */;
+// Module 9415 (resolvePlaintextInlineVoid)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4217 */;
+import createEmptyState from "createEmptyState" /* 7686 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getEmojiToGroupId" /* 5419 */;
-import closure_5 from "rebuild" /* 5466 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator" /* 1981 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_13 from "markAllUserIdListsStale" /* 4130 */;
-import closure_14 from "mergeGuildAvatar" /* 1921 */;
-import { Permissions } from "ME" /* 673 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import closure_4 from "getEmojiToGroupId" /* 5459 */;
+import closure_5 from "rebuild" /* 5506 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "comparator" /* 2012 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator" /* 2012 */;
+import closure_9 from "trackCommunicationDisabled" /* 2021 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_11 from "createGuildRecordFromRust" /* 1979 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_13 from "markAllUserIdListsStale" /* 4209 */;
+import closure_14 from "mergeGuildAvatar" /* 1371 */;
+import { Permissions } from "ME" /* 1074 */;
+import { EmojiIntention } from "set" /* 1374 */;
 
 require = arg1;
 function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, forceIncludeExternalGuilds) {
@@ -169,8 +169,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, forceInclude
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4681).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4681);
+          callback(4713).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4713);
         }
         const substr = arr.slice(1);
       }

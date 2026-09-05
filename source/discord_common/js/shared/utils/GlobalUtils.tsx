@@ -1,10 +1,10 @@
-// Module ID: 694
-// Function ID: 695
+// Module ID: 1357
+// Function ID: 1358
 // Name: getGlobalObject
 // Dependencies: [2]
 // Exports: getGlobalObject
 
-// Module 694 (getGlobalObject)
+// Module 1357 (getGlobalObject)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");

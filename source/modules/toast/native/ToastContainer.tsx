@@ -1,15 +1,15 @@
-// Module ID: 16876
-// Function ID: 16877
+// Module ID: 16954
+// Function ID: 16955
 // Name: AnimatedToast
-// Dependencies: [19, 4473, 16877, 21, 4481, 5401, 4218, 1492, 15015, 1627, 586, 4923, 15024, 4935, 4205, 1350, 16878, 1296, 4194, 2]
+// Dependencies: [19, 4552, 16955, 21, 4560, 5441, 4296, 1477, 15091, 1611, 504, 4962, 15100, 4974, 4271, 4272, 16956, 1178, 4259, 2]
 
-// Module 16876 (AnimatedToast)
-import Button from "Button" /* 1296 */;
+// Module 16954 (AnimatedToast)
+import Button from "Button" /* 1178 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_5 from "ToastStore" /* 16877 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_5 from "ToastStore" /* 16955 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function AnimatedToast(toast) {
@@ -178,7 +178,7 @@ let closure_11 = { mass: 0.35, damping: 15, stiffness: 350, restDisplacementThre
 let closure_12 = { code: "function ToastContainerTsx1(){const{position,safeAreaTop,CONTAINER_DISTANCE_VERTICAL,screenHeight,toastHeight,bottomTabsHeight,youBarHeight,interpolate,animationState,ANIMATION_STATE_INPUT,CONTAINER_TOP_POSITION_START,isReducedMotion,withSpring,OPACITY_SPRING_PHYSICS,TOAST_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,screenWidth,CONTAINER_DISTANCE_SIDES}=this.__closure;const verticalPositionEnd=position==='top'?safeAreaTop+CONTAINER_DISTANCE_VERTICAL:screenHeight-toastHeight.get()-bottomTabsHeight-CONTAINER_DISTANCE_VERTICAL-youBarHeight;const translateY=interpolate(animationState.get(),ANIMATION_STATE_INPUT,[position==='top'?CONTAINER_TOP_POSITION_START:screenHeight-bottomTabsHeight-toastHeight.get()-youBarHeight,verticalPositionEnd]);return{opacity:!isReducedMotion?withSpring(animationState.get(),OPACITY_SPRING_PHYSICS):animationState.get(),transform:[{translateY:!isReducedMotion?withSpring(translateY,TOAST_SPRING_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}):translateY}],maxWidth:screenWidth-CONTAINER_DISTANCE_SIDES*2};}" };
 let closure_13 = { code: "function ToastContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 const memoResult = importAllResult.memo(() => {
-  let obj = stateFromStoresArray(586);
+  let obj = stateFromStoresArray(504);
   items = [closure_5];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     content = content.getContent();
@@ -201,7 +201,7 @@ const memoResult = importAllResult.memo(() => {
     }
   }, items1);
   obj = { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren };
-  return jsx(stateFromStoresArray(4205).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
+  return jsx(stateFromStoresArray(4271).TransitionGroup, { items: stateFromStoresArray, renderItem, getItemKey, wrapChildren });
 });
 let result = require("set").fileFinishedImporting("modules/toast/native/ToastContainer.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 4198
-// Function ID: 4199
+// Module ID: 4263
+// Function ID: 4264
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [685, 686, 4199, 4204, 4299, 2]
+// Dependencies: [1091, 672, 4264, 4270, 4378, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 4198 (getSemanticColorContextFromThemeContext)
+// Module 4263 (getSemanticColorContextFromThemeContext)
 import set from "set" /* 2 */;
-import nDefault from "n" /* 686 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4204 */;
-import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4299 */;
+import nDefault from "n" /* 672 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4270 */;
+import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4378 */;
 
 const result = set.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
@@ -23,9 +23,9 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
     let tmp9 = null;
     if (null != primaryColor2) {
-      let tmpResult = tmp(685);
+      let tmpResult = tmp(1091);
       const int2hexResult = tmpResult.int2hex(primaryColor2);
-      tmpResult = tmp(685);
+      tmpResult = tmp(1091);
       if (secondaryColor == null) {
         secondaryColor = primaryColor2;
       }
@@ -49,7 +49,7 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
       obj[6] = int2hexResult1;
       obj[1] = obj;
       tmp9 = obj;
-      tmpResult1 = tmp(4199);
+      tmpResult1 = tmp(4264);
     }
     gradientThemeMetadata = tmp9;
   }

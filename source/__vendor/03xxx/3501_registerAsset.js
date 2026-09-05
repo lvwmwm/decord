@@ -1,10 +1,10 @@
 // Module ID: 3501
 // Function ID: 3502
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 3501 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/vibegrations/intl", scales: [1], hash: "871e009b04d6f77869382d88845ca067", name: "VibegrationsUntranslated.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "5957296fe33d5b697fe57d23e39b4060", name: "nl.messages.5957296fe33d5b697fe57d23e39b4060.compiled.messages", type: "jsona" });

@@ -1,20 +1,20 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17633
+// Function ID: 17634
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 673, 21, 4481, 709, 695, 4448, 4193, 7089, 1233, 7138, 17533, 4865, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1242, 4527, 4258, 7149, 1114, 7198, 17613, 4904, 2]
 // Exports: default
 
-// Module 17553 (RolePermissionTemplatesActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import ActionSheet from "ActionSheet" /* 7138 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17533 */;
+// Module 17633 (RolePermissionTemplatesActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import ActionSheet from "ActionSheet" /* 7198 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17613 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ AnalyticEvents: c5, AnalyticsSections: closure_6 } = ME);

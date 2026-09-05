@@ -1,12 +1,12 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9670
+// Function ID: 9671
 // Name: useCurrentUserStageRoles
-// Dependencies: [1215, 5382, 586, 2]
+// Dependencies: [502, 5421, 504, 2]
 // Exports: default
 
-// Module 9599 (useCurrentUserStageRoles)
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "buildStageChannelUserRoles" /* 5382 */;
+// Module 9670 (useCurrentUserStageRoles)
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "buildStageChannelUserRoles" /* 5421 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");

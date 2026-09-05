@@ -1,15 +1,15 @@
-// Module ID: 5529
-// Function ID: 5530
+// Module ID: 5574
+// Function ID: 5575
 // Name: useSetInitialVerificationEffect
-// Dependencies: [19, 1921, 5530, 586, 4305, 2]
+// Dependencies: [19, 1371, 5575, 504, 4384, 2]
 // Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
 
-// Module 5529 (useSetInitialVerificationEffect)
-import initialize from "initialize" /* 586 */;
+// Module 5574 (useSetInitialVerificationEffect)
+import initialize from "initialize" /* 504 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "map" /* 5530 */;
-import { setInitialVerification } from "map" /* 5530 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "map" /* 5575 */;
+import { setInitialVerification } from "map" /* 5575 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
@@ -83,5 +83,5 @@ export const useInitialVerification = function useInitialVerification(id) {
   const _require = id;
   const items = [closure_4];
   const items1 = [id];
-  return _require(586).useStateFromStores(items, () => closure_1_4.getInitialVerificationState(closure_0), items1);
+  return _require(504).useStateFromStores(items, () => closure_1_4.getInitialVerificationState(closure_0), items1);
 };

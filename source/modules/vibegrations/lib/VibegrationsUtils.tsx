@@ -1,18 +1,18 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7247
+// Function ID: 7248
 // Name: vibegrationsAppIdFromTopic
-// Dependencies: [1981, 1908, 4120, 4302, 673, 7188, 7189, 586, 2]
+// Dependencies: [2012, 1979, 4199, 4381, 1074, 7248, 7249, 504, 2]
 // Exports: canAccessVibegrations, canStartVibegrationsProject, eligibleVibegrationsGuilds, findVibegrationChannelId, getVibegrationsProjectAccessSettings, isVibegrationsChannelCandidate, isVibegrationsGuildEligible, isVibegrationsProjectInGuild, resolveVibegrationsWorkspaceGuildId, useCanAccessVibegrations, useIsVibegrationsChannelCandidate, vibegrationsTopicForApp
 
-// Module 7187 (vibegrationsAppIdFromTopic)
-import frozen from "frozen" /* 7188 */;
-import isVibegrationsGuildEnabled2 from "isVibegrationsGuildEnabled" /* 7189 */;
-import closure_2 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1981 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "handleConnectionOpen" /* 4302 */;
-import ME from "ME" /* 673 */;
+// Module 7247 (vibegrationsAppIdFromTopic)
+import frozen from "frozen" /* 7248 */;
+import isVibegrationsGuildEnabled2 from "isVibegrationsGuildEnabled" /* 7249 */;
+import closure_2 from "comparator" /* 2012 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 2012 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_6 from "handleConnectionOpen" /* 4381 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function vibegrationsAppIdFromTopic(topic) {
@@ -28,8 +28,8 @@ function vibegrationsAppIdFromTopic(topic) {
   }
   return null;
 }
-function vibegrationsTextChannelsIn(guild_id) {
-  return channels.getChannels(guild_id)[closure_3].filter((channel) => channel.channel.type === constants.GUILD_TEXT);
+function vibegrationsTextChannelsIn(guildId) {
+  return channels.getChannels(guildId)[closure_3].filter((channel) => channel.channel.type === constants.GUILD_TEXT);
 }
 ({ Permissions: error, ChannelTypes: closure_8, GuildFeatures: c9 } = ME);
 let c10 = "vibegrations_application_id=";
@@ -56,7 +56,7 @@ export const isVibegrationsProjectInGuild = function isVibegrationsProjectInGuil
   return tmp;
 };
 export { vibegrationsTextChannelsIn };
-export const findVibegrationChannelId = function findVibegrationChannelId(guild_id, application_id) {
+export const findVibegrationChannelId = function findVibegrationChannelId(guildId, applicationId) {
   for (const item10009 of tmp) {
     let channel = item10009.channel;
     let tmp2 = channel;
@@ -110,7 +110,7 @@ export const resolveVibegrationsWorkspaceGuildId = function resolveVibegrationsW
     guild = store.getGuild(guildId);
   }
   if (null != guild) {
-    let obj = _require(7189);
+    let obj = _require(7249);
     obj = { guildId: null, location: null };
     obj[0] = guild.id;
     obj[1] = arg0;
@@ -243,7 +243,7 @@ export const isVibegrationsChannelCandidate = function isVibegrationsChannelCand
 };
 export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChannelCandidate(channel, ChannelActions) {
   const _require = channel;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guild_id;
@@ -258,7 +258,7 @@ export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChann
   }
   obj = { guildId: guild_id, location: ChannelActions };
   let tmp4 = null != channel;
-  const isVibegrationsGuildEnabled = _require(7189).useIsVibegrationsGuildEnabled(obj);
+  const isVibegrationsGuildEnabled = _require(7249).useIsVibegrationsGuildEnabled(obj);
   if (tmp4) {
     tmp4 = channel.type === constants2.GUILD_TEXT;
   }

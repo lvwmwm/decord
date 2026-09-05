@@ -1,25 +1,25 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17642
+// Function ID: 17643
 // Name: componentDidMount
-// Dependencies: [19, 17, 17563, 1908, 8994, 673, 21, 4481, 709, 5579, 7315, 1233, 17564, 7691, 4477, 17443, 6547, 17565, 1498, 586, 6980, 2]
+// Dependencies: [19, 17, 17643, 1979, 9064, 1074, 21, 4560, 576, 5624, 7377, 1114, 17644, 7759, 4556, 17523, 6606, 17645, 1483, 504, 7040, 2]
 // Exports: default
 
-// Module 17562 (componentDidMount)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import TextInput from "TextInput" /* 6547 */;
-import getInviteURLDefault from "getInviteURL" /* 7691 */;
-import getErrorMessageFromErrorCode from "getErrorMessageFromErrorCode" /* 17443 */;
-import _modDef17564 from "module_17564" /* 17564 */;
-import registerAssetDefault from "registerAsset" /* 17565 */;
+// Module 17642 (componentDidMount)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import TextInput from "TextInput" /* 6606 */;
+import getInviteURLDefault from "getInviteURL" /* 7759 */;
+import getErrorMessageFromErrorCode from "getErrorMessageFromErrorCode" /* 17523 */;
+import _modDef17644 from "module_17644" /* 17644 */;
+import registerAssetDefault from "registerAsset" /* 17645 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "FormStates" /* 17563 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "handleFormInit" /* 8994 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_5 from "FormStates" /* 17643 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "handleFormInit" /* 9064 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -97,7 +97,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
     if (submitting) {
       let fn = () => null;
     } else if (isEditing) {
-      let setOptionsResult = self(5579);
+      let setOptionsResult = self(5624);
       fn = setOptionsResult.getHeaderConditionalBackButton(this.handleCancel);
     }
     setOptionsResult = { headerLeft: null, headerRight: null };
@@ -122,7 +122,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
   }
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  _modDef17564.closeModal();
+  _modDef17644.closeModal();
 };
 prototype["render"] = function render() {
   const self = this;
@@ -187,9 +187,9 @@ prototype["render"] = function render() {
     items2[2] = callback(Text.Text, obj7);
     if (tmp17Result) {
       const obj8 = { variant: "text-sm/medium", color: "text-muted", children: null };
-      const intl5 = tmp18(1233).intl;
-      obj8[2] = intl5.string(tmp18(1233).t.o3kmm3);
-      tmp17Result = tmp17(tmp18(4477).Text, obj8);
+      const intl5 = tmp18(1114).intl;
+      obj8[2] = intl5.string(tmp18(1114).t.o3kmm3);
+      tmp17Result = tmp17(tmp18(4556).Text, obj8);
     }
     items2[3] = tmp17Result;
     items2[4] = tmp;
@@ -219,18 +219,18 @@ const result = require("set").fileFinishedImporting("modules/guild_settings/serv
 
 export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(1498);
+  let obj = guildId(1483);
   const navigation = obj.useNavigation();
   const tmp = callback3();
   const tmp2 = guildId;
   const items = [closure_6];
-  const stateFromStores = guildId(586).useStateFromStores(items, () => closure_1_6.getGuild(guildId));
-  const obj2 = guildId(586);
+  const stateFromStores = guildId(504).useStateFromStores(items, () => closure_1_6.getGuild(guildId));
+  const obj2 = guildId(504);
   const items1 = [closure_7];
-  const stateFromStores1 = guildId(586).useStateFromStores(items1, () => props2.getProps().vanityURLCode);
-  const obj3 = guildId(586);
+  const stateFromStores1 = guildId(504).useStateFromStores(items1, () => props2.getProps().vanityURLCode);
+  const obj3 = guildId(504);
   const items2 = [closure_5];
-  const stateFromStoresObject = guildId(586).useStateFromStoresObject(items2, () => {
+  const stateFromStoresObject = guildId(504).useStateFromStoresObject(items2, () => {
     props = props.getProps();
     return { submitting: props.submitting, errorDetails: props.errorDetails };
   });
@@ -245,7 +245,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
     obj[4] = navigation;
     obj[5] = tmp;
     obj[6] = guildId.contentContainerStyle;
-    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(6980).NavScrim, {})];
+    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(7040).NavScrim, {})];
     obj[0] = items3;
     tmp10 = callback2(closure_11, obj);
   }

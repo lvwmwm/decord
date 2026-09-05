@@ -1,28 +1,28 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16491
+// Function ID: 16492
 // Name: Separator
-// Dependencies: [19, 17, 7244, 1386, 1991, 4120, 1921, 673, 21, 8278, 9127, 5048, 10061, 16344, 7050, 7184, 6978, 7390, 4412, 16376, 1234, 709, 1296, 8743, 5539, 4943, 5084, 4477, 7574, 16416, 8602, 586, 4680, 8281, 8110, 5055, 8280, 16010, 9714, 1233, 16377, 4416, 4197, 4329, 4218, 4482, 4494, 5032, 7149, 4471, 2]
+// Dependencies: [19, 17, 7306, 1957, 2021, 4199, 1371, 1074, 21, 8348, 9198, 5087, 10132, 16420, 7110, 7244, 7038, 7456, 4491, 16452, 1115, 576, 1178, 8813, 5584, 4982, 5123, 4556, 7641, 16492, 8672, 504, 4712, 8351, 8179, 5094, 8350, 16088, 9785, 1114, 16453, 4495, 4262, 4409, 4296, 4561, 4573, 5071, 7209, 4550, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 16415 (Separator)
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import Button from "Button" /* 1296 */;
-import GuildIconSizes from "GuildIconSizes" /* 5539 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import _safeTransitionToDefault from "_safeTransitionTo" /* 7184 */;
-import SolidCutout from "SolidCutout" /* 8743 */;
-import SolidCutoutDefault from "SolidCutout" /* 8743 */;
+// Module 16491 (Separator)
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import Button from "Button" /* 1178 */;
+import GuildIconSizes from "GuildIconSizes" /* 5584 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import _safeTransitionToDefault from "_safeTransitionTo" /* 7244 */;
+import SolidCutout from "SolidCutout" /* 8813 */;
+import SolidCutoutDefault from "SolidCutout" /* 8813 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateState" /* 7244 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "trackCommunicationDisabled" /* 1991 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "updateState" /* 7306 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "trackCommunicationDisabled" /* 2021 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16376 */;
+import createICYMIStyles from "createICYMIStyles" /* 16452 */;
 
 require = arg1;
 class Separator {
@@ -199,14 +199,14 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
   }, 1500);
   _safeTransitionToDefault(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(6978).runAfterInteractions(() => {
+    _require(7038).runAfterInteractions(() => {
       let obj = id3(closure_1_2[17]);
       obj = { channelId: id, limit: closure_1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(closure_1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(6978);
+    let obj = _require(7038);
   }
 };
 export { Separator };
@@ -485,26 +485,26 @@ export const SimplePost = function SimplePost(arg0) {
   dependencyMap = undefined;
   let sharedValue;
   const tmp = callback3();
-  let obj = highlight(4197);
-  token = obj.useToken(token(709).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4416)());
-  obj1 = highlight(4329);
-  const hexWithOpacityResult = obj1.hexWithOpacity(token(709).unsafe_rawColors.BRAND_360, 0.25);
+  let obj = highlight(4262);
+  token = obj.useToken(token(576).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4495)());
+  obj1 = highlight(4409);
+  const hexWithOpacityResult = obj1.hexWithOpacity(token(576).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  let obj2 = highlight(4218);
+  let obj2 = highlight(4296);
   sharedValue = obj2.useSharedValue(0);
   const tmp2 = token;
-  const tmp4 = token(4416)();
+  const tmp4 = token(4495)();
   const fn = function c() {
     const obj = { backgroundColor: highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items) };
     items = [token, _undefined];
     return obj;
   };
-  obj = { interpolateColor: highlight(4218).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  obj = { interpolateColor: highlight(4296).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__closure = obj;
   fn.__workletHash = 11116019021445;
   fn.__initData = closure_26;
   let items = [highlight, sharedValue];
-  const animatedStyle = highlight(4218).useAnimatedStyle(fn);
+  const animatedStyle = highlight(4296).useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     if (highlight) {
       const obj = highlight(_undefined[44]);
@@ -521,7 +521,7 @@ export const SimplePost = function SimplePost(arg0) {
     const items1 = [tmp.simplePostContent, animatedStyle];
     obj1[0] = items1;
     obj1[1] = children;
-    const items2 = [tmp12(tmp2(4218).View, obj1), ];
+    const items2 = [tmp12(tmp2(4296).View, obj1), ];
     let tmp12Result = null;
     if (!hideDivider) {
       tmp12Result = tmp12(Separator, {});

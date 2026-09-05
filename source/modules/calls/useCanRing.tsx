@@ -1,22 +1,22 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9174
+// Function ID: 9175
 // Name: useCanRingToGuildVoiceChannel
-// Dependencies: [1215, 5239, 1386, 1991, 5374, 4120, 4572, 4130, 4500, 673, 586, 9104, 5377, 4968, 2]
+// Dependencies: [502, 5278, 1957, 2021, 5413, 4199, 4600, 4209, 4579, 1074, 504, 9175, 5416, 5007, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 9103 (useCanRingToGuildVoiceChannel)
-import getChannelRoleSubscriptionStatusDefault from "getChannelRoleSubscriptionStatus" /* 4968 */;
-import experimentDefault from "experiment" /* 9104 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "callConnect" /* 5239 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "recomputeGuild" /* 5374 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "sortActivity" /* 4572 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "updateVoiceState" /* 4500 */;
-import ME from "ME" /* 673 */;
+// Module 9174 (useCanRingToGuildVoiceChannel)
+import getChannelRoleSubscriptionStatusDefault from "getChannelRoleSubscriptionStatus" /* 5007 */;
+import experimentDefault from "experiment" /* 9175 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "callConnect" /* 5278 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "recomputeGuild" /* 5413 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_9 from "sortActivity" /* 4600 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import closure_11 from "updateVoiceState" /* 4579 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStores) {
@@ -27,16 +27,16 @@ function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStore
   }
   importDefault = stateFromStores;
   const items = [closure_8];
-  stateFromStores = _require(586).useStateFromStores(items, () => {
+  stateFromStores = _require(504).useStateFromStores(items, () => {
     let tmp2 = null != stateFromStores;
     if (tmp2) {
       tmp2 = stateFromStores(closure_1_2[12])(tmp, closure_1_8);
     }
     return tmp2;
   });
-  const obj = _require(586);
+  const obj = _require(504);
   const items1 = [closure_6, closure_7];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => {
     let guild_id;
     if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
@@ -52,7 +52,7 @@ function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStore
     }
   });
   let id;
-  const obj2 = _require(586);
+  const obj2 = _require(504);
   const tmp4 = importDefault;
   if (stateFromStores != null) {
     id = stateFromStores.id;

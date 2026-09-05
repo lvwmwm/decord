@@ -1,15 +1,15 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14993
+// Function ID: 14994
 // Name: route
-// Dependencies: [673, 11400, 1233, 11416, 14919, 14921, 7655, 5409, 2]
+// Dependencies: [1074, 11468, 1114, 11484, 14994, 14996, 7722, 5449, 2]
 
-// Module 14918 (route)
+// Module 14993 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11416 */;
-import QuestsIcon from "QuestsIcon" /* 14919 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11484 */;
+import QuestsIcon from "QuestsIcon" /* 14994 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -24,8 +24,8 @@ obj = {
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(7655);
-      obj = { fromContent: callback(5409).QuestContent.USER_SETTINGS };
+      let obj = callback(7722);
+      obj = { fromContent: callback(5449).QuestContent.USER_SETTINGS };
       const result = obj.setQuestHomeUtmContext(obj);
       return true;
     };
@@ -34,7 +34,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.QUESTS,
   getComponent() {
-    return require(14921) /* QuestHomeSetting */.default;
+    return require(14996) /* QuestHomeSetting */.default;
   }
 };
 const route = createToggle.createRoute(obj);

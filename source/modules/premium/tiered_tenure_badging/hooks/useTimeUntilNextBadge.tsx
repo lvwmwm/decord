@@ -1,13 +1,13 @@
-// Module ID: 13368
-// Function ID: 13369
+// Module ID: 13440
+// Function ID: 13441
 // Name: computeDaysUntilNextBadgeDate
-// Dependencies: [19, 4074, 13369, 11116, 2]
+// Dependencies: [19, 4153, 13441, 11184, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
-// Module 13368 (computeDaysUntilNextBadgeDate)
+// Module 13440 (computeDaysUntilNextBadgeDate)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import hooksDefault from "hooks" /* 4074 */;
+import hooksDefault from "hooks" /* 4153 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTimeUntilNextBadge.tsx");
@@ -18,9 +18,9 @@ export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeD
   return Math.max(0, hooksDefault(arg0).add(arg1, "months").add(1, "day").diff(hooksDefault(), "days"));
 };
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
-  nextTenureBadge = nextTenureBadge(13369).useNextTenureBadge();
-  let obj = nextTenureBadge(13369);
-  const premiumSince = nextTenureBadge(11116).usePremiumSince();
+  nextTenureBadge = nextTenureBadge(13441).useNextTenureBadge();
+  let obj = nextTenureBadge(13441);
+  const premiumSince = nextTenureBadge(11184).usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {
     if (null != nextTenureBadge) {

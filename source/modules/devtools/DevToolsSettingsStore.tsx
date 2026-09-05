@@ -1,12 +1,12 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7719
+// Function ID: 7720
 // Name: initialize
-// Dependencies: [7653, 586, 706, 2]
+// Dependencies: [7720, 504, 573, 2]
 
-// Module 7652 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "init" /* 7653 */;
+// Module 7719 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "init" /* 7720 */;
 
 let closure_3 = { sidebarWidth: 460, lastOpenTabId: null, lastOpenSubTabId: null, displayTools: false, showDevWidget: false, devWidgetPosition: { x: 0, y: 0 }, sortedScreenKeys: [] };
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;

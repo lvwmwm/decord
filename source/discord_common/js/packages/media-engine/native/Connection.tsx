@@ -1,17 +1,17 @@
-// Module ID: 4593
-// Function ID: 4594
+// Module ID: 4626
+// Function ID: 4627
 // Name: create
-// Dependencies: [32, 4545, 4584, 4594, 4534, 4, 4582, 4642, 4643, 4644, 4592, 4646, 4595, 4647, 4599, 4648, 4651, 2]
+// Dependencies: [32, 4585, 4617, 4627, 1910, 4, 4615, 4675, 4676, 4677, 4625, 4679, 4628, 4680, 4632, 4681, 4684, 2]
 
-// Module 4593 (create)
-import inject from "inject" /* 4534 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
-import destroyDefault from "destroy" /* 4594 */;
-import WantsVideoQuality from "WantsVideoQuality" /* 4595 */;
-import VADAggressiveness2 from "VADAggressiveness" /* 4647 */;
+// Module 4626 (create)
+import inject from "inject" /* 1910 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4615 */;
+import destroyDefault from "destroy" /* 4627 */;
+import WantsVideoQuality from "WantsVideoQuality" /* 4628 */;
+import VADAggressiveness2 from "VADAggressiveness" /* 4680 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
-import AudioSubsystems from "AudioSubsystems" /* 4584 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
+import AudioSubsystems from "AudioSubsystems" /* 4617 */;
 
 require = arg1;
 ({ StatsFilter: c4, ExperimentFlags: c5, DESKTOP_BITRATE_ENHANCED: closure_6, DESKTOP_BITRATE: error, MEDIA_SINK_WANTS_PROPERTIES: closure_8, MediaTypes: c9, SIMULCAST_HQ_QUALITY: c10 } = DesktopSources);
@@ -72,7 +72,6 @@ class Connection extends tmp4 {
     tmp.postponeDecodeLevel = 100;
     tmp.reconnectInterval = 60000;
     tmp.keyframeInterval = 0;
-    tmp.clipsKeyFrameInterval = 0;
     tmp.videoQualityMeasurement = "";
     tmp.videoEncoderExperiments = "";
     tmp.numFastUdpReconnects = 0;
@@ -518,7 +517,7 @@ prototype["initialize"] = function initialize(address) {
   let items = [{ type: constants2.AUDIO, ssrc: this.audioSSRC, rid: "", maxBitrate: 64000, soundshare: this.context === constants5.STREAM }, ...this.videoStreamParameters];
   address.streamParameters = items;
   address.context = this.context;
-  const voiceEngine = createVoiceConnection(4534).getVoiceEngine();
+  const voiceEngine = createVoiceConnection(1910).getVoiceEngine();
   if (null != voiceEngine.createOwnStreamConnectionWithOptions) {
     if (self.context !== tmp3.STREAM) {
       const createVoiceConnectionWithOptions = voiceEngine.createVoiceConnectionWithOptions;
@@ -794,13 +793,13 @@ prototype["getStats"] = function getStats() {
         const obj = self(closure_1_2[4]);
       }
     });
-    let obj = self(4643);
-    resolved = self(4643).timeout(promise, self(4592).STATS_INTERVAL).catch((arg0) => {
+    let obj = self(4676);
+    resolved = self(4676).timeout(promise, self(4625).STATS_INTERVAL).catch((arg0) => {
       if (!(arg0 instanceof self(table[8]).TimeoutError)) {
         throw arg0;
       }
     });
-    const timeoutResult = self(4643).timeout(promise, self(4592).STATS_INTERVAL);
+    const timeoutResult = self(4676).timeout(promise, self(4625).STATS_INTERVAL);
   }
   return resolved;
 };
@@ -1024,25 +1023,6 @@ prototype["setClipRecordUser"] = function setClipRecordUser(arg0, arg1, arg2) {
     }
   }
 };
-prototype["setClipsKeyFrameInterval"] = function setClipsKeyFrameInterval(clipsKeyFrameInterval) {
-  const self = this;
-  if (this.context === constants5.STREAM) {
-    self.clipsKeyFrameInterval = clipsKeyFrameInterval;
-    const conn = self.conn;
-    const obj = { keyframeInterval: null, alwaysSendVideo: null };
-    obj[0] = self.getKeyFrameInterval();
-    obj[1] = self.keyframeInterval > 0;
-    conn.setTransportOptions(obj);
-  }
-};
-prototype["setViewerSideClip"] = function setViewerSideClip(arg0) {
-  if (this.context === constants5.STREAM) {
-    const conn = tmp.conn;
-    const obj = { enableViewerSideClip: null };
-    obj[0] = arg0;
-    conn.setTransportOptions(obj);
-  }
-};
 prototype["setRemoteAudioHistory"] = function setRemoteAudioHistory(remoteAudioHistoryMs) {
   const conn = this.conn;
   conn.setTransportOptions({ remoteAudioHistoryMs });
@@ -1186,6 +1166,12 @@ prototype["setNoiseCancellationCpuDisablement"] = function setNoiseCancellationC
   obj = { noiseCancellationConsecutiveFailures: this.noiseCancellationConsecutiveFailures };
   voiceEngine.setTransportOptions(obj);
 };
+prototype["setSkipNoiseCancellationIfMuted"] = function setSkipNoiseCancellationIfMuted(enabled) {
+  let obj = inject;
+  const voiceEngine = obj.getVoiceEngine();
+  obj = { skipNoiseCancellationIfMuted: enabled };
+  voiceEngine.setTransportOptions(obj);
+};
 prototype["setEchoReferenceMode"] = function setEchoReferenceMode(echoReferenceMode) {
   this.echoReferenceMode = echoReferenceMode;
   let obj = inject;
@@ -1264,7 +1250,7 @@ prototype["setReconnectInterval"] = function setReconnectInterval(reconnectInter
 prototype["setKeyframeInterval"] = function setKeyframeInterval(keyframeInterval) {
   this.keyframeInterval = keyframeInterval;
   const conn = this.conn;
-  conn.setTransportOptions({ keyframeInterval: this.getKeyFrameInterval(), alwaysSendVideo: this.keyframeInterval > 0 });
+  conn.setTransportOptions({ keyframeInterval: this.keyframeInterval, alwaysSendVideo: this.keyframeInterval > 0 });
 };
 prototype["setVideoQualityMeasurement"] = function setVideoQualityMeasurement(videoQualityMeasurement) {
   this.videoQualityMeasurement = videoQualityMeasurement;
@@ -1365,7 +1351,7 @@ prototype["setAudioVideoOverridesTransport"] = function setAudioVideoOverridesTr
         const _performance = performance;
         self.overrideCodecResetAt = performance.now();
       }
-      self.emit(set(4582).BaseConnectionEvent.VideoEncoderFallback, self.codecs);
+      self.emit(set(4615).BaseConnectionEvent.VideoEncoderFallback, self.codecs);
     }
   }
 };
@@ -1548,7 +1534,7 @@ prototype["setDesktopEncodingOptions"] = function setDesktopEncodingOptions(resu
         obj1[2] = calcMaxBitrateFuncResult;
         videoQualityManager2.setGoliveQuality(obj1);
         if (self.videoStreamParameters.length <= num5) {
-          const Video = tmp9(4582).BaseConnectionEvent.Video;
+          const Video = tmp9(4615).BaseConnectionEvent.Video;
           ({ userId, audioSSRC } = self);
           const ssrc = self.videoStreamParameters[num5].ssrc;
           const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -1900,7 +1886,7 @@ prototype["getCodecOptions"] = function getCodecOptions(name, H264, closure_0) {
       let obj = { name: null, type: null, rtxType: null, params: null };
       let tmp25 = _require;
       let tmp26 = dependencyMap;
-      let obj5 = _require(4642);
+      let obj5 = _require(4675);
       let tmp27 = nextResult;
       obj[0] = obj5.codecNameToPayloadName(tmp4.name);
       let num3;
@@ -1949,7 +1935,7 @@ prototype["getCodecOptions"] = function getCodecOptions(name, H264, closure_0) {
       tmp7.params["hardware-h264"] = "1";
       let experimentFlags5 = self.experimentFlags;
       if (experimentFlags5.has(tmp8.USE_LIBOPENH264_DECODER)) {
-        let tmp25Result = tmp25(4534);
+        let tmp25Result = tmp25(1910);
         let openH264LibraryPath = tmp25Result.getOpenH264LibraryPath();
         if (null != openH264LibraryPath) {
           let tmp16 = obj;
@@ -1994,17 +1980,6 @@ prototype["getCodecOptions"] = function getCodecOptions(name, H264, closure_0) {
     continue;
   }
   return { videoEncoder, videoDecoders, audioEncoder, audioDecoders };
-};
-prototype["getKeyFrameInterval"] = function getKeyFrameInterval() {
-  const self = this;
-  if (this.keyframeInterval > 0) {
-    if (self.clipsKeyFrameInterval > 0) {
-      const _Math = Math;
-      let bound = Math.min(self.keyframeInterval, self.clipsKeyFrameInterval);
-    }
-    return bound;
-  }
-  bound = Math.max(self.keyframeInterval, self.clipsKeyFrameInterval);
 };
 prototype["getConnectionTransportOptions"] = function getConnectionTransportOptions() {
   const obj = { selfMute: this.selfMute, inputMode: dependencyMap[this.inputMode], inputModeOptions: this.createInputModeOptions(), minimumJitterBufferLevel: this.minimumJitterBufferLevel, postponeDecodeLevel: this.postponeDecodeLevel };

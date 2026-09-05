@@ -1,10 +1,10 @@
 // Module ID: 2404
 // Function ID: 2405
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 2404 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "b4d0699cd1e5cf3ed026bd7010715358", name: "de.messages.b4d0699cd1e5cf3ed026bd7010715358.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "27e9de4169ba7fb46c72b3766a90cf7b", name: "es-ES.messages.27e9de4169ba7fb46c72b3766a90cf7b.compiled.messages", type: "jsona" });

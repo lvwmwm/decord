@@ -1,13 +1,13 @@
-// Module ID: 12192
-// Function ID: 12193
+// Module ID: 12260
+// Function ID: 12261
 // Name: getChatInputPositionStyle
-// Dependencies: [17, 1234, 2]
+// Dependencies: [17, 1115, 2]
 // Exports: default
 
-// Module 12192 (getChatInputPositionStyle)
+// Module 12260 (getChatInputPositionStyle)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set2 from "set" /* 1234 */;
+import set2 from "set" /* 1115 */;
 
 let obj = {};
 const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);

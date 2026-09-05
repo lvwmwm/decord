@@ -1,9 +1,9 @@
-// Module ID: 5543
-// Function ID: 5544
+// Module ID: 5588
+// Function ID: 5589
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 2]
 
-// Module 5543 (__INTERNAL_VIEW_CONFIG)
+// Module 5588 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;

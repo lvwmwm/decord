@@ -1,14 +1,14 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9537
+// Function ID: 9538
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4522, 4507, 1386, 9433, 9449, 9466, 2]
+// Dependencies: [5, 4788, 1918, 1957, 9504, 9520, 9538, 2]
 // Exports: default
 
-// Module 9465 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 9537 (_getCachedOrFetchActivityApplicationForLaunch)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4522 */;
-import closure_5 from "createExecutable" /* 4507 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "addApplication" /* 4788 */;
+import closure_5 from "createExecutable" /* 1918 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
 
 const require = arg1;
 function _getCachedOrFetchActivityApplicationForLaunch() {

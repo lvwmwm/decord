@@ -1,20 +1,20 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12113
+// Function ID: 12114
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4481, 709, 1362, 4416, 12046, 12047, 11983, 9338, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4411, 4495, 12114, 12115, 12051, 9409, 4556, 1114, 2]
 // Exports: default
 
-// Module 12045 (EmptyState)
+// Module 12113 (EmptyState)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11983 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 12051 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -32,13 +32,13 @@ export default function EmptyState() {
   const tmp = callback3();
   let obj = AccessibilityAnnouncer;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12046 : 12047);
-  const logAppLauncherEmptyStateView = handleApplicationSelected.useLogAppLauncherEmptyStateView(tmp2(9338).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12114 : 12115);
+  const logAppLauncherEmptyStateView = handleApplicationSelected.useLogAppLauncherEmptyStateView(tmp2(9409).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   const items = [callback(closure_4, obj), ];
   obj1 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj1[3] = intl.string(getSystemLocale.t.uDnXXj);
   items[1] = callback(Text.Text, obj1);
   obj[1] = items;

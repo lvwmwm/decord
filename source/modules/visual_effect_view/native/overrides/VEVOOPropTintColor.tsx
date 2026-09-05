@@ -1,17 +1,17 @@
-// Module ID: 15853
-// Function ID: 15854
-// Dependencies: [32, 19, 17, 4927, 21, 4481, 709, 15850, 4329, 8523, 7142, 15852, 14520, 685, 2]
+// Module ID: 15929
+// Function ID: 15930
+// Dependencies: [32, 19, 17, 4966, 21, 4560, 576, 15926, 4409, 8593, 7202, 15928, 14595, 1091, 2]
 
-// Module 15853
-import ThemesDefault from "Themes" /* 709 */;
-import Form from "Form" /* 8523 */;
-import VisualEffectViewOverrideOverlay_ from "VisualEffectViewOverrideOverlay_" /* 15850 */;
+// Module 15929
+import ThemesDefault from "Themes" /* 576 */;
+import Form from "Form" /* 8593 */;
+import VisualEffectViewOverrideOverlay_ from "VisualEffectViewOverrideOverlay_" /* 15926 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import useVisualEffectViewOverrides from "useVisualEffectViewOverrides" /* 4927 */;
+import useVisualEffectViewOverrides from "useVisualEffectViewOverrides" /* 4966 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
     let hexToRgbaStringResult;
     if (null != tintColorOverrideHex) {
       if (null != tintColorOverrideOpacity) {
-        let obj = closure_1_0(4329);
+        let obj = closure_1_0(4409);
         hexToRgbaStringResult = obj.hexToRgbaString(tintColorOverrideHex, tintColorOverrideOpacity);
       }
     }
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
       closure_1_7(obj);
     }
   }, []);
-  obj = { style: items, labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: callback2(tmp2(7142).FormSwitch, obj), subLabel: null, disabled: null, onPress: null };
+  obj = { style: items, labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: callback2(tmp2(7202).FormSwitch, obj), subLabel: null, disabled: null, onPress: null };
   items = [visualEffectViewOverrideSharedStyles.zeroPaddingVertical];
   obj = {
     value: tmp7,
@@ -99,7 +99,7 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
   const ref = obj1.useRef(first1);
   const tmp14 = closure_10;
   const tmp15 = closure_9;
-  obj2[3] = callback2(first(15852), {
+  obj2[3] = callback2(first(15928), {
     disabled: !tmp7,
     initialValue: obj1.useRef(first1),
     onValueChange(arg0) {
@@ -112,8 +112,8 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
   obj[5] = !tmp7;
   obj[6] = function onPress() {
     const obj = { color: null, onSelect: null };
-    const tmp = first(14520);
-    obj[0] = closure_1_0(685).hex2int(first);
+    const tmp = first(14595);
+    obj[0] = closure_1_0(1091).hex2int(first);
     obj[1] = function onSelect(color) {
       callback(closure_1_0(closure_1_2[13]).int2hex(color), closure_3);
     };

@@ -1,20 +1,20 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16533
+// Function ID: 16534
 // Name: serverNameHook
-// Dependencies: [19, 5238, 4306, 1908, 21, 4477, 16458, 1233, 9295, 15137, 16459, 644, 7191, 5459, 4866, 1219, 2]
+// Dependencies: [19, 5277, 4385, 1979, 21, 4556, 16534, 1114, 9366, 15213, 16535, 563, 7251, 5499, 4905, 1100, 2]
 // Exports: default
 
-// Module 16457 (serverNameHook)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import notSupportedDefault from "notSupported" /* 9295 */;
-import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15137 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16458 */;
-import SeparatorDefault from "Separator" /* 16459 */;
+// Module 16533 (serverNameHook)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import notSupportedDefault from "notSupported" /* 9366 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15213 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16534 */;
+import SeparatorDefault from "Separator" /* 16535 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5238 */;
-import closure_5 from "initialize" /* 4306 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_4 from "_handleConnectionOpen" /* 5277 */;
+import closure_5 from "initialize" /* 4385 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

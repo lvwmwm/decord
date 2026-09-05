@@ -1,14 +1,14 @@
-// Module ID: 1973
-// Function ID: 1974
+// Module ID: 2004
+// Function ID: 2005
 // Name: getUserId
-// Dependencies: [17, 1234, 1974, 2]
+// Dependencies: [17, 1115, 2005, 2]
 // Exports: getUserId, setUserId
 
-// Module 1973 (getUserId)
+// Module 2004 (getUserId)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set2 from "set" /* 1234 */;
-import enforcingDefault from "enforcing" /* 1974 */;
+import set2 from "set" /* 1115 */;
+import enforcingDefault from "enforcing" /* 2005 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");

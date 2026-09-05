@@ -1,29 +1,29 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10109
+// Function ID: 10110
 // Name: PreviewIcon
-// Dependencies: [19, 17, 4130, 21, 5048, 10039, 9840, 10041, 4424, 10043, 7811, 7813, 4943, 10045, 10022, 10050, 10048, 4477, 4416, 4481, 709, 4197, 4166, 7863, 8582, 8057, 7867, 586, 2]
+// Dependencies: [19, 17, 4209, 21, 5087, 10110, 9911, 10112, 4503, 10114, 7880, 7882, 4982, 10116, 10093, 10121, 10119, 4556, 4495, 4560, 576, 4262, 1935, 7932, 8652, 8126, 7936, 504, 2]
 
-// Module 10038 (PreviewIcon)
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import map from "map" /* 4197 */;
-import LinkIcon from "LinkIcon" /* 4424 */;
-import Text from "Text" /* 4477 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import getFontScale from "getFontScale" /* 4943 */;
-import ImageIcon from "ImageIcon" /* 5048 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7811 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7813 */;
-import MusicIcon from "MusicIcon" /* 9840 */;
-import formatMessagePreview from "formatMessagePreview" /* 10022 */;
-import VideoIcon from "VideoIcon" /* 10039 */;
-import AttachmentIcon from "AttachmentIcon" /* 10041 */;
-import StickerIcon from "StickerIcon" /* 10043 */;
-import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10045 */;
-import map2 from "map" /* 10048 */;
-import getLayoutStyles from "getLayoutStyles" /* 10050 */;
+// Module 10109 (PreviewIcon)
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import map from "map" /* 4262 */;
+import LinkIcon from "LinkIcon" /* 4503 */;
+import Text from "Text" /* 4556 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import getFontScale from "getFontScale" /* 4982 */;
+import ImageIcon from "ImageIcon" /* 5087 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7880 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7882 */;
+import MusicIcon from "MusicIcon" /* 9911 */;
+import formatMessagePreview from "formatMessagePreview" /* 10093 */;
+import VideoIcon from "VideoIcon" /* 10110 */;
+import AttachmentIcon from "AttachmentIcon" /* 10112 */;
+import StickerIcon from "StickerIcon" /* 10114 */;
+import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10116 */;
+import map2 from "map" /* 10119 */;
+import getLayoutStyles from "getLayoutStyles" /* 10121 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -244,7 +244,7 @@ let closure_9 = importAllResult.memo((arg0) => {
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_5];
   const items1 = [message.message.author.id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.isBlockedOrIgnored(message.message.author.id), items1);

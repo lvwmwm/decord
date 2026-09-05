@@ -1,10 +1,10 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13667
+// Function ID: 13668
 // Name: getClientCapabilities
 // Dependencies: [2]
 // Exports: getClientCapabilities
 
-// Module 13594 (getClientCapabilities)
+// Module 13667 (getClientCapabilities)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gateway/GatewayCapabilities.tsx");

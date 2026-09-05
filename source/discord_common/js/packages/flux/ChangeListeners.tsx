@@ -1,9 +1,9 @@
-// Module ID: 589
-// Function ID: 590
+// Module ID: 507
+// Function ID: 508
 // Name: has
 // Dependencies: [2]
 
-// Module 589 (has)
+// Module 507 (has)
 import set2 from "set" /* 2 */;
 
 const result = set2.fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");

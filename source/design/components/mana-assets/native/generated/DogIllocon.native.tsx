@@ -1,14 +1,14 @@
-// Module ID: 5878
-// Function ID: 5879
+// Module ID: 5929
+// Function ID: 5930
 // Name: DogIllocon
-// Dependencies: [21, 5542, 5879, 2]
+// Dependencies: [21, 5587, 5930, 2]
 // Exports: DogIllocon
 
-// Module 5878 (DogIllocon)
+// Module 5929 (DogIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5879 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5930 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DogIllocon.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 16268
-// Function ID: 16269
+// Module ID: 16344
+// Function ID: 16345
 // Name: GuildsBarHomeDrawerSeparator
-// Dependencies: [19, 21, 4481, 709, 15946, 4218, 7013, 4197, 5544, 2]
+// Dependencies: [19, 21, 4560, 576, 16022, 4296, 7073, 4262, 5589, 2]
 
-// Module 16268 (GuildsBarHomeDrawerSeparator)
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import setDefault from "set" /* 5544 */;
+// Module 16344 (GuildsBarHomeDrawerSeparator)
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import setDefault from "set" /* 5589 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -16,8 +16,8 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   let panelTranslateX;
   const tmp = callback(guildItemSize);
-  panelTranslateX = guildItemSize(15946).useHomeDrawerState().panelTranslateX;
-  let obj = guildItemSize(15946);
+  panelTranslateX = guildItemSize(16022).useHomeDrawerState().panelTranslateX;
+  let obj = guildItemSize(16022);
   const fn = function n() {
     let obj = { transform: null };
     obj = { scaleX: Math.max(1, (panelTranslateX.get() + guildItemSize) / guildItemSize) };
@@ -28,9 +28,9 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
   fn.__closure = { panelTranslateX, guildItemSize };
   fn.__workletHash = 7666765056610;
   fn.__initData = closure_5;
-  const animatedStyle = guildItemSize(4218).useAnimatedStyle(fn);
+  const animatedStyle = guildItemSize(4296).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelTranslateX(7013), { style });
+  return jsx(panelTranslateX(7073), { style });
 }
 let closure_4 = createCacheKey.createStyles((width) => {
   let obj = { separator: null };

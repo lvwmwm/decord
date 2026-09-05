@@ -1,8 +1,8 @@
-// Module ID: 4721
-// Function ID: 4722
-// Dependencies: [109, 695, 527, 2]
+// Module ID: 4753
+// Function ID: 4754
+// Dependencies: [109, 1242, 1272, 2]
 
-// Module 4721
+// Module 4753
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 
 const require = arg1;

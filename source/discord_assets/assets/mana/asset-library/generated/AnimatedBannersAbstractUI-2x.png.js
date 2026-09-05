@@ -1,9 +1,9 @@
-// Module ID: 5697
-// Function ID: 5698
+// Module ID: 5744
+// Function ID: 5745
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5697 (metadata)
+// Module 5744 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnimatedBannersAbstractUI-2x.png.js");

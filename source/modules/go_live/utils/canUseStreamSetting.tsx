@@ -1,14 +1,14 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9957
+// Function ID: 9958
 // Name: canUseStreamSetting
-// Dependencies: [1923, 4139, 4372, 2]
+// Dependencies: [1373, 4218, 4454, 2]
 // Exports: default
 
-// Module 9886 (canUseStreamSetting)
+// Module 9957 (canUseStreamSetting)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4372 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4218 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4454 */;
 
 const StreamQualities = GuildFeatures.StreamQualities;
 let result = set.fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");

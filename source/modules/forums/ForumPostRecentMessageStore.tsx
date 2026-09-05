@@ -1,16 +1,16 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7308
+// Function ID: 7309
 // Name: handleLoadThreadsSuccess
-// Dependencies: [1386, 1921, 11, 4745, 1394, 586, 706, 2]
+// Dependencies: [1957, 1371, 11, 4783, 1369, 504, 573, 2]
 
-// Module 7246 (handleLoadThreadsSuccess)
+// Module 7308 (handleLoadThreadsSuccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4783 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 function handleLoadThreadsSuccess(arg0) {

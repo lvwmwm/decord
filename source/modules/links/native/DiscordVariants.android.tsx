@@ -1,18 +1,18 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16381
+// Function ID: 16382
 // Name: getCurrentVariant
-// Dependencies: [4661, 16306, 2]
+// Dependencies: [4694, 16382, 2]
 // Exports: getCurrentVariant, isVariantInstalled, launchVariant
 
-// Module 16305 (getCurrentVariant)
+// Module 16381 (getCurrentVariant)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4661 */;
+import enforcingDefault from "enforcing" /* 4694 */;
 
 const result = set.fileFinishedImporting("modules/links/native/DiscordVariants.android.tsx");
 
 export const getCurrentVariant = function getCurrentVariant() {
   const _require = enforcingDefault.getCurrentDiscordVariant();
-  const DISCORD_VARIANT_LIST = _require(16306).DISCORD_VARIANT_LIST;
+  const DISCORD_VARIANT_LIST = _require(16382).DISCORD_VARIANT_LIST;
   let found = DISCORD_VARIANT_LIST.find((arg0) => arg0 === closure_0);
   if (found == null) {
     found = null;
@@ -21,7 +21,7 @@ export const getCurrentVariant = function getCurrentVariant() {
 };
 export const isVariantInstalled = function isVariantInstalled(arg0) {
   const _require = enforcingDefault.getCurrentDiscordVariant();
-  const DISCORD_VARIANT_LIST = _require(16306).DISCORD_VARIANT_LIST;
+  const DISCORD_VARIANT_LIST = _require(16382).DISCORD_VARIANT_LIST;
   let found = DISCORD_VARIANT_LIST.find((arg0) => arg0 === closure_0);
   if (found == null) {
     found = null;
@@ -36,7 +36,7 @@ export const isVariantInstalled = function isVariantInstalled(arg0) {
 };
 export const launchVariant = function launchVariant(arg0) {
   const _require = enforcingDefault.getCurrentDiscordVariant();
-  const DISCORD_VARIANT_LIST = _require(16306).DISCORD_VARIANT_LIST;
+  const DISCORD_VARIANT_LIST = _require(16382).DISCORD_VARIANT_LIST;
   let found = DISCORD_VARIANT_LIST.find((arg0) => arg0 === closure_0);
   if (found == null) {
     found = null;

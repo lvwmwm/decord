@@ -1,10 +1,10 @@
 // Module ID: 3130
 // Function ID: 3131
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 3130 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9oYW5nb3V0X3dpbmRvdw==", scales: [1], hash: "2f1d6068c8bdd084e7396f373d147b6d", name: "ko.messages.2f1d6068c8bdd084e7396f373d147b6d.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3RlbnVyZV9yZXdhcmQ=", scales: [1], hash: "2c86973a41ac0f749b2e963e12bc3add", name: "bg.messages.2c86973a41ac0f749b2e963e12bc3add.compiled.messages", type: "jsona" });

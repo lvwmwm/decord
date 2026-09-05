@@ -1,13 +1,13 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8869
+// Function ID: 8870
 // Name: useProductDisableState
-// Dependencies: [4145, 586, 676, 1233, 2]
+// Dependencies: [4224, 504, 1077, 1114, 2]
 // Exports: useProductDisableState
 
-// Module 8799 (useProductDisableState)
-import initialize from "initialize" /* 586 */;
-import set from "set" /* 676 */;
-import closure_2 from "reset" /* 4145 */;
+// Module 8869 (useProductDisableState)
+import initialize from "initialize" /* 504 */;
+import set from "set" /* 1077 */;
+import closure_2 from "reset" /* 4224 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
@@ -29,8 +29,8 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     obj[0] = stateFromStores;
     let stringResult = null;
     if (stateFromStores) {
-      const intl = tmp(1233).intl;
-      stringResult = intl.string(tmp(1233).t.NbveHD);
+      const intl = tmp(1114).intl;
+      stringResult = intl.string(tmp(1114).t.NbveHD);
     }
     obj[1] = stringResult;
   } else {

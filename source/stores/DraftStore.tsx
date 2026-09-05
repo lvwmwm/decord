@@ -1,18 +1,18 @@
-// Module ID: 4862
-// Function ID: 4863
+// Module ID: 4901
+// Function ID: 4902
 // Name: handleChanged
-// Dependencies: [32, 1215, 1386, 4863, 673, 4864, 12, 11, 586, 1394, 706, 2]
+// Dependencies: [32, 502, 1957, 4902, 1074, 4903, 12, 11, 504, 1369, 573, 2]
 
-// Module 4862 (handleChanged)
+// Module 4901 (handleChanged)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4864 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isDraftCommandValidForText from "isDraftCommandValidForText" /* 4903 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "handleConnectionOpen" /* 4863 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "handleConnectionOpen" /* 4902 */;
 
 require = arg1;
 function handleChanged(type) {
@@ -249,14 +249,14 @@ prototype["getRecentlyEditedDrafts"] = function getRecentlyEditedDrafts(ChannelM
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1394).isNotNullish);
+    }).pickBy(_require(1369).isNotNullish);
     const mapped = applyDefault(tmp3).mapValues((arg0) => {
       let tmp;
       if (arg0 != null) {
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1394).isNotNullish).toPairs().map((arg0) => {
+    }).pickBy(_require(1369).isNotNullish).toPairs().map((arg0) => {
       [tmp, ] = arg0;
       return { channelId, timestamp, draft };
     });
@@ -266,7 +266,7 @@ prototype["getRecentlyEditedDrafts"] = function getRecentlyEditedDrafts(ChannelM
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1394).isNotNullish).toPairs();
+    }).pickBy(_require(1369).isNotNullish).toPairs();
     return mapped.sortBy((timestamp) => -timestamp.timestamp).value();
   }
 };

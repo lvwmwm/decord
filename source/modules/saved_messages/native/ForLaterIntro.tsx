@@ -1,23 +1,23 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13290
+// Function ID: 13291
 // Name: IntroDemo
-// Dependencies: [17, 7091, 21, 4481, 709, 7792, 13219, 13220, 4477, 1233, 13221, 11639, 4444, 7149, 2]
+// Dependencies: [17, 7151, 21, 4560, 576, 7860, 13291, 13292, 4556, 1114, 13293, 11707, 4523, 7209, 2]
 // Exports: default
 
-// Module 13218 (IntroDemo)
+// Module 13290 (IntroDemo)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ClockIcon from "ClockIcon" /* 4444 */;
-import Text from "Text" /* 4477 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7149 */;
-import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7792 */;
-import BookmarkIcon from "BookmarkIcon" /* 11639 */;
-import setDefault from "set" /* 13221 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ClockIcon from "ClockIcon" /* 4523 */;
+import Text from "Text" /* 4556 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7209 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7860 */;
+import BookmarkIcon from "BookmarkIcon" /* 11707 */;
+import setDefault from "set" /* 13293 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function IntroDemo(isReminder) {
   isReminder = isReminder.isReminder;
@@ -129,19 +129,19 @@ export default function ForLaterIntro(type) {
   const tmp4 = type.type === SavedMessageSortTypes.SavedMessageSortTypes.REMINDER;
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(tmp4 ? 13219 : 13220), style: tmp.upsellImage };
+  obj = { source: importDefault(tmp4 ? 13291 : 13292), style: tmp.upsellImage };
   const items = [closure_6(closure_3, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
-  const intl = tmp2(1233).intl;
-  const t = tmp2(1233).t;
+  const intl = tmp2(1114).intl;
+  const t = tmp2(1114).t;
   obj2[3] = intl.string(tmp4 ? t["5Iw19e"] : t["93WOd1"]);
   const items1 = [closure_6(Text.Heading, obj2), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: null };
-  const intl2 = tmp2(1233).intl;
-  const t2 = tmp2(1233).t;
-  const intl3 = tmp2(1233).intl;
-  const t3 = tmp2(1233).t;
+  const intl2 = tmp2(1114).intl;
+  const t2 = tmp2(1114).t;
+  const intl3 = tmp2(1114).intl;
+  const t3 = tmp2(1114).t;
   obj3[4] = intl2.format(tmp4 ? t2.YI4UjI : t2["5TSj/g"], { itemName: intl3.string(tmp4 ? t3.mJ3P0N : t3.tpxJto) });
   items1[1] = closure_6(Text.Text, obj3);
   obj1[1] = items1;

@@ -1,23 +1,23 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16790
+// Function ID: 16791
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1921, 1383, 1923, 21, 4481, 1235, 709, 13395, 7383, 4301, 1372, 586, 8117, 8158, 8169, 1362, 686, 4139, 16713, 11416, 16714, 16715, 11699, 5407, 16716, 14919, 1233, 16717, 16719, 8592, 7318, 4948, 2]
+// Dependencies: [19, 17, 1371, 1954, 1373, 21, 4560, 1116, 576, 13468, 7449, 4380, 1943, 504, 8186, 8227, 8238, 4411, 672, 4218, 16791, 11484, 16792, 16793, 11767, 5447, 16794, 14994, 1114, 16795, 16797, 8662, 7380, 4987, 2]
 // Exports: useHasSettingsBadge
 
-// Module 16712 (useHasSettingsBadge)
-import ThemesDefault from "Themes" /* 709 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
-import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7383 */;
-import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13395 */;
+// Module 16790 (useHasSettingsBadge)
+import ThemesDefault from "Themes" /* 576 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4380 */;
+import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7449 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13468 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
-import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1923 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
+import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -44,16 +44,16 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
     tmp7 = tmp5;
   }
   let BACKGROUND_SURFACE_HIGH = arg1;
-  obj1 = { marginBottom: PX_24, paddingVertical: tmp7(709).space.PX_8, paddingHorizontal: tmp7(709).space.PX_24, borderRadius: tmp7(709).radii.lg, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
+  obj1 = { marginBottom: PX_24, paddingVertical: tmp7(576).space.PX_8, paddingHorizontal: tmp7(576).space.PX_24, borderRadius: tmp7(576).radii.lg, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
   if (arg1 == null) {
-    BACKGROUND_SURFACE_HIGH = tmp7(709).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp7(576).colors.BACKGROUND_SURFACE_HIGH;
   }
   obj1[4] = BACKGROUND_SURFACE_HIGH;
   obj1[6] = arg3;
-  const merged2 = Object.assign(tmp7(709).shadows.SHADOW_HIGH);
+  const merged2 = Object.assign(tmp7(576).shadows.SHADOW_HIGH);
   obj[2] = obj1;
   isIOSResult = PlatformTypes.isIOS();
-  obj[3] = { flexDirection: "row", alignItems: "center", gap: tmp7(709).space.PX_16 };
+  obj[3] = { flexDirection: "row", alignItems: "center", gap: tmp7(576).space.PX_16 };
   obj[4] = { height: "100%", alignItems: "center", justifyContent: "center" };
   return obj;
 });

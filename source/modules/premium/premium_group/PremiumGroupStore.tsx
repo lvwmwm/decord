@@ -1,14 +1,14 @@
-// Module ID: 13416
-// Function ID: 13417
+// Module ID: 13489
+// Function ID: 13490
 // Name: handleMutationStart
-// Dependencies: [4145, 4153, 673, 706, 13417, 586, 2]
+// Dependencies: [4224, 4232, 1074, 573, 13490, 504, 2]
 
-// Module 13416 (handleMutationStart)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "reset" /* 4145 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;
-import { NOOP_NULL } from "ME" /* 673 */;
+// Module 13489 (handleMutationStart)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_3 from "reset" /* 4224 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4232 */;
+import { NOOP_NULL } from "ME" /* 1074 */;
 
 const require = arg1;
 function handleMutationStart() {

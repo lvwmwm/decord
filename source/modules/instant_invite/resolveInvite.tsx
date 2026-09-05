@@ -1,16 +1,16 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8737
+// Function ID: 8738
 // Name: map
-// Dependencies: [1215, 1908, 7669, 673, 7668, 4466, 695, 4721, 500, 1400, 2]
+// Dependencies: [502, 1979, 7736, 1074, 7735, 4545, 1242, 4753, 1250, 1969, 2]
 // Exports: default
 
-// Module 8667 (map)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import _modDef4721 from "module_4721" /* 4721 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import InviteSendStates from "InviteSendStates" /* 7669 */;
-import ME from "ME" /* 673 */;
+// Module 8737 (map)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import _modDef4753 from "module_4753" /* 4753 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import InviteSendStates from "InviteSendStates" /* 7736 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ InviteTargetTypes: c5, InviteTypes: closure_6 } = InviteSendStates);
@@ -22,7 +22,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
   const _require = inviteKey;
   importDefault = arg1;
   dependencyMap = inviteInstanceId;
-  let obj = _require(4466);
+  let obj = _require(4545);
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   const baseCode = result.baseCode;
   ({ targetChannelId, targetMessageId, guildScheduledEventId } = result);
@@ -60,7 +60,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
     obj1[0] = closure_7.INVITE(baseCode);
     obj1[1] = obj;
     let obj2 = { event: null, properties: null };
-    obj2[0] = tmp(500).NetworkActionNames.INVITE_RESOLVE;
+    obj2[0] = tmp(1250).NetworkActionNames.INVITE_RESOLVE;
     obj2[1] = function properties(ok) {
       let body = null;
       if (ok.ok) {
@@ -165,8 +165,8 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
       return obj.exact(obj);
     };
     obj1[3] = obj2;
-    const value = _modDef4721.get(obj1);
-    const tmp4Result = _modDef4721;
+    const value = _modDef4753.get(obj1);
+    const tmp4Result = _modDef4753;
     const cleanupPromise = value.then((body) => {
       body = body.body;
       if (null != callback) {

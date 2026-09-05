@@ -1,14 +1,14 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11984
+// Function ID: 11985
 // Name: useTextareaPlaceholderAndLabels
-// Dependencies: [673, 4681, 1233, 2]
+// Dependencies: [1074, 4713, 1114, 2]
 // Exports: default
 
-// Module 11916 (useTextareaPlaceholderAndLabels)
+// Module 11984 (useTextareaPlaceholderAndLabels)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import ME from "ME" /* 1074 */;
 
 ({ ChannelTypes: c3, ChannelTypesSets: c4 } = ME);
 const result = set.fileFinishedImporting("modules/channel/useTextareaPlaceholderAndLabels.tsx");

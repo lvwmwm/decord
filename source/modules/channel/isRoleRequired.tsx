@@ -1,15 +1,15 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 5062
+// Function ID: 5063
 // Name: isRoleRequired
-// Dependencies: [1390, 502, 4125, 503, 2]
+// Dependencies: [1961, 1085, 4204, 1086, 2]
 // Exports: default
 
-// Module 5023 (isRoleRequired)
+// Module 5062 (isRoleRequired)
 import set from "set" /* 2 */;
-import sum from "sum" /* 502 */;
-import fromStringAll from "fromString" /* 503 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
+import sum from "sum" /* 1085 */;
+import fromStringAll from "fromString" /* 1086 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
 
 let closure_2 = createChannelRecord.GUILD_NON_CATEGORY_CHANNEL_TYPES;
 const Permissions = sum.Permissions;

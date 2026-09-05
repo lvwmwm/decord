@@ -1,14 +1,14 @@
-// Module ID: 5724
-// Function ID: 5725
+// Module ID: 5771
+// Function ID: 5772
 // Name: AvatarMoatmonsturrExample
-// Dependencies: [21, 5542, 5725, 2]
+// Dependencies: [21, 5587, 5772, 2]
 // Exports: AvatarMoatmonsturrExample
 
-// Module 5724 (AvatarMoatmonsturrExample)
+// Module 5771 (AvatarMoatmonsturrExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5725 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5772 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");

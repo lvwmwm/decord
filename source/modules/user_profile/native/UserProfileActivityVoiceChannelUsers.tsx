@@ -1,16 +1,16 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 13026
+// Function ID: 13027
 // Name: UserRow
-// Dependencies: [19, 4572, 21, 8148, 586, 5560, 4680, 1296, 11083, 1233, 2]
+// Dependencies: [19, 4600, 21, 8217, 504, 5605, 4712, 1178, 11151, 1114, 2]
 // Exports: default
 
-// Module 12958 (UserRow)
+// Module 13026 (UserRow)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 11083 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11083 */;
-import closure_3 from "sortActivity" /* 4572 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 11151 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11151 */;
+import closure_3 from "sortActivity" /* 4600 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -18,19 +18,19 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(8148);
+  let obj = user(8217);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [closure_3];
-  const stateFromStoresObject = user(586).useStateFromStoresObject(items, () => ({ status: closure_1_3.getStatus(user.id), isMobileOnline: closure_1_3.isMobileOnline(user.id), isVROnline: closure_1_3.isVROnline(user.id) }));
+  const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ status: closure_1_3.getStatus(user.id), isMobileOnline: closure_1_3.isMobileOnline(user.id), isVROnline: closure_1_3.isVROnline(user.id) }));
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   obj = { onPress, label: null, icon: null, start: null, end: null };
-  const obj2 = user(586);
+  const obj2 = user(504);
   obj[1] = getNicknameDefault.getName(channel.guild_id, channel.id, user);
-  obj = { user, avatarDecoration, size: user(1296).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true };
-  obj[2] = jsx(user(1296).Avatar, { user, avatarDecoration, size: user(1296).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  obj = { user, avatarDecoration, size: user(1178).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true };
+  obj[2] = jsx(user(1178).Avatar, { user, avatarDecoration, size: user(1178).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
   obj[3] = start;
   obj[4] = end;
-  return jsx(user(5560).TableRow, { user, avatarDecoration, size: user(1296).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  return jsx(user(5605).TableRow, { user, avatarDecoration, size: user(1178).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
 }
 noopAll;
 const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");

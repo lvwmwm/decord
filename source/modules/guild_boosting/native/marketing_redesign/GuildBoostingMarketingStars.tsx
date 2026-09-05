@@ -1,13 +1,13 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13579
+// Function ID: 13580
 // Name: StarsBackgroundSvg
-// Dependencies: [19, 21, 8383, 2]
+// Dependencies: [19, 21, 8453, 2]
 // Exports: default
 
-// Module 13506 (StarsBackgroundSvg)
+// Module 13579 (StarsBackgroundSvg)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8383 */;
-import inlineStylesDefault from "inlineStyles" /* 8383 */;
+import inlineStyles from "inlineStyles" /* 8453 */;
+import inlineStylesDefault from "inlineStyles" /* 8453 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

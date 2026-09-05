@@ -1,15 +1,15 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16151
+// Function ID: 16152
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 673, 10153, 1219, 1233, 3178, 2]
+// Dependencies: [19, 1074, 10224, 1100, 1114, 3225, 2]
 // Exports: default
 
-// Module 16073 (useFavoritesGuildHeaderAction)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+// Module 16151 (useFavoritesGuildHeaderAction)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10224 */;
 import closure_3 from "noop" /* 19 */;
-import { Routes } from "ME" /* 673 */;
+import { Routes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");

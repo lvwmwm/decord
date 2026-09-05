@@ -1,36 +1,36 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8112
+// Function ID: 8113
 // Name: isInteractionComponent
-// Dependencies: [32, 19, 7872, 4121, 1386, 1991, 5374, 1921, 8044, 21, 1954, 4753, 4751, 586, 7908, 7209, 8046, 8047, 706, 4953, 4747, 2]
+// Dependencies: [32, 19, 7941, 4200, 1957, 2021, 5413, 1371, 8113, 21, 1894, 4792, 4790, 504, 7977, 7269, 8115, 8116, 573, 4992, 4785, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 8043 (isInteractionComponent)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import ActionComponentState from "ActionComponentState" /* 4753 */;
+// Module 8112 (isInteractionComponent)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import ActionComponentState from "ActionComponentState" /* 4792 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "deleteNonce" /* 7872 */;
-import closure_6 from "initialize" /* 4121 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "recomputeGuild" /* 5374 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "getInteractionComponentStates" /* 8044 */;
+import closure_5 from "deleteNonce" /* 7941 */;
+import closure_6 from "initialize" /* 4200 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "recomputeGuild" /* 5413 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import closure_11 from "getInteractionComponentStates" /* 8113 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function isInteractionComponent(type) {
   type = type.type;
   if (PermissionOverwriteType.ComponentType.BUTTON === type) {
-    return type.style !== tmp(1954).ButtonStyle.LINK;
+    return type.style !== tmp(1894).ButtonStyle.LINK;
   } else {
-    if (tmp(1954).ComponentType.STRING_SELECT !== type) {
-      if (tmp(1954).ComponentType.USER_SELECT !== type) {
-        if (tmp(1954).ComponentType.ROLE_SELECT !== type) {
-          if (tmp(1954).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (tmp(1954).ComponentType.CHANNEL_SELECT !== type) {
-              if (tmp(1954).ComponentType.ACTION_ROW !== type) {
-                const TEXT_INPUT = tmp(1954).ComponentType.TEXT_INPUT;
+    if (tmp(1894).ComponentType.STRING_SELECT !== type) {
+      if (tmp(1894).ComponentType.USER_SELECT !== type) {
+        if (tmp(1894).ComponentType.ROLE_SELECT !== type) {
+          if (tmp(1894).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp(1894).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp(1894).ComponentType.ACTION_ROW !== type) {
+                const TEXT_INPUT = tmp(1894).ComponentType.TEXT_INPUT;
               }
               return false;
             }
@@ -49,7 +49,7 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   let LOADING = ActionComponentState.ActionComponentState.NORMAL;
   let tmp3 = null != interaction;
   if (tmp3) {
-    tmp3 = interaction.state !== tmp(4751).InteractionState.FAILED;
+    tmp3 = interaction.state !== tmp(4790).InteractionState.FAILED;
   }
   let DISABLED = LOADING;
   if (!tmp3) {
@@ -57,23 +57,23 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = tmp(4753).ActionComponentState.DISABLED;
+      DISABLED = tmp(4792).ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
-    if (interaction.data.interactionType !== tmp(1954).InteractionTypes.MESSAGE_COMPONENT) {
+    if (interaction.data.interactionType !== tmp(1894).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = tmp(4753).ActionComponentState.DISABLED;
+        LOADING = tmp(4792).ActionComponentState.DISABLED;
       }
     }
-    LOADING = tmp(4753).ActionComponentState.LOADING;
+    LOADING = tmp(4792).ActionComponentState.LOADING;
   }
 }
 function useShouldDisableInteractiveComponents(channel_id) {
   channel = channel.getChannel(channel_id);
   const items = [closure_9];
   const items1 = [channel];
-  const stateFromStores = channel(586).useStateFromStores(items, () => {
+  const stateFromStores = channel(504).useStateFromStores(items, () => {
     let guild_id;
     if (channel != null) {
       guild_id = tmp.guild_id;
@@ -84,10 +84,10 @@ function useShouldDisableInteractiveComponents(channel_id) {
     }
     return canChatInGuildResult;
   }, items1);
-  const obj2 = channel(586);
+  const obj2 = channel(504);
   const items2 = [closure_6];
   const items3 = [channel];
-  const stateFromStores1 = channel(586).useStateFromStores(items2, () => {
+  const stateFromStores1 = channel(504).useStateFromStores(items2, () => {
     let guild_id;
     if (channel != null) {
       guild_id = tmp.guild_id;
@@ -98,9 +98,9 @@ function useShouldDisableInteractiveComponents(channel_id) {
     }
     return isLurkingResult;
   }, items3);
-  const obj3 = channel(586);
+  const obj3 = channel(504);
   const items4 = [closure_8, closure_10];
-  const stateFromStores2 = channel(586).useStateFromStores(items4, () => {
+  const stateFromStores2 = channel(504).useStateFromStores(items4, () => {
     const currentUser = closure_1_10.getCurrentUser();
     let guild_id;
     if (channel != null) {
@@ -127,14 +127,14 @@ function useShouldDisableInteractiveComponents(channel_id) {
     }
     return flag;
   });
-  const obj4 = channel(586);
+  const obj4 = channel(504);
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmpResult = tmp(7209);
+  let tmpResult = tmp(7269);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
-  tmpResult = tmp(7209);
+  tmpResult = tmp(7269);
   let tmp9 = !stateFromStores;
   const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
   if (stateFromStores) {

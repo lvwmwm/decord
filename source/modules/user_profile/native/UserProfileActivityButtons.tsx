@@ -1,35 +1,35 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 13032
+// Function ID: 13033
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1385, 1386, 5242, 4401, 1908, 11389, 4120, 4130, 1980, 5240, 4500, 673, 8270, 21, 4481, 709, 7102, 4110, 644, 12965, 12966, 7672, 4936, 1233, 5067, 9461, 4448, 11697, 10822, 1296, 8073, 11680, 4190, 12968, 8189, 4731, 4336, 8323, 4735, 5244, 1431, 9181, 7320, 8274, 11684, 1485, 8300, 2]
+// Dependencies: [5, 19, 1956, 1957, 5281, 4480, 1979, 11457, 4199, 4209, 2011, 5279, 4579, 1074, 8340, 21, 4560, 576, 7162, 4189, 563, 13033, 13034, 7739, 4975, 1114, 5106, 9533, 4527, 11765, 10891, 1178, 8142, 11748, 4255, 13036, 8259, 4763, 4418, 8393, 4767, 5283, 1396, 9252, 7382, 8344, 11752, 1365, 8370, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 12964 (JoinActivityButton)
+// Module 13032 (JoinActivityButton)
 import noopAll from "noop" /* 19 */;
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Button2 from "Button" /* 4936 */;
-import contextDefault from "context" /* 7102 */;
-import _isStreamingDefault from "_isStreaming" /* 8189 */;
-import getStreamURLDefault from "getStreamURL" /* 12968 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Button2 from "Button" /* 4975 */;
+import contextDefault from "context" /* 7162 */;
+import _isStreamingDefault from "_isStreaming" /* 8259 */;
+import getStreamURLDefault from "getStreamURL" /* 13036 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "set" /* 5242 */;
-import closure_7 from "handleInviteData" /* 4401 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "updateActivities" /* 11389 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "markAllUserIdListsStale" /* 4130 */;
-import closure_12 from "handleConnectionOpen" /* 1980 */;
-import closure_13 from "filterPlayingActivities" /* 5240 */;
-import closure_14 from "updateVoiceState" /* 4500 */;
-import ME from "ME" /* 673 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8270 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "set" /* 5281 */;
+import closure_7 from "handleInviteData" /* 4480 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import closure_9 from "updateActivities" /* 11457 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "markAllUserIdListsStale" /* 4209 */;
+import closure_12 from "handleConnectionOpen" /* 2011 */;
+import closure_13 from "filterPlayingActivities" /* 5279 */;
+import closure_14 from "updateVoiceState" /* 4579 */;
+import ME from "ME" /* 1074 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8340 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -110,17 +110,17 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let tmp3 = null;
   if (null != application) {
     tmp3 = null;
-    if (stateFromStores !== tmp(12966).ActivityJoinability.CANNOT_JOIN) {
-      if (stateFromStores === tmp(12966).ActivityJoinability.JOINED) {
-        const intl2 = tmp(1233).intl;
-        let stringResult = intl2.string(tmp(1233).t.DPfdsq);
+    if (stateFromStores !== tmp(13034).ActivityJoinability.CANNOT_JOIN) {
+      if (stateFromStores === tmp(13034).ActivityJoinability.JOINED) {
+        const intl2 = tmp(1114).intl;
+        let stringResult = intl2.string(tmp(1114).t.DPfdsq);
       } else {
-        const intl = tmp(1233).intl;
-        stringResult = intl.string(tmp(1233).t.VJlc0S);
+        const intl = tmp(1114).intl;
+        stringResult = intl.string(tmp(1114).t.VJlc0S);
       }
       obj = { text: null, variant: "active", disabled: null, onPress: null };
       obj[0] = stringResult;
-      JOINED = tmp(12966).ActivityJoinability.JOINED;
+      JOINED = tmp(13034).ActivityJoinability.JOINED;
       obj[2] = stateFromStores === JOINED;
       obj[3] = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
@@ -129,7 +129,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
         const joined = obj.join(obj);
         closure_1_1(closure_1_2[28]).hideAllActionSheets();
       };
-      jsx(tmp(4936).Button, { text: null, variant: "active", disabled: null, onPress: null });
+      jsx(tmp(4975).Button, { text: null, variant: "active", disabled: null, onPress: null });
       const tmp6 = jsx;
     }
   }
@@ -140,7 +140,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
   let sync_id;
   sync_id = activity.sync_id;
   let tmp4 = null;
-  if (sync_id(10822)(activity)) {
+  if (sync_id(10891)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       let obj = { text: null, icon: null, variant: "secondary", onPress: null };
@@ -150,7 +150,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
       obj[0] = intl.formatToPlainString(getSystemLocale.t.LEgD7t, obj);
       obj = { size: null, source: null, disableColor: true, style: null };
       obj[0] = Button.Icon.Sizes.SMALL;
-      obj[1] = sync_id(8073);
+      obj[1] = sync_id(8142);
       obj[3] = tmp.icon;
       obj[1] = jsx(Button.Icon, { size: null, source: null, disableColor: true, style: null });
       obj[3] = callback(function*() {

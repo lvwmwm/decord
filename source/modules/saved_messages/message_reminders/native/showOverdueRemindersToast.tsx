@@ -1,13 +1,13 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17479
+// Function ID: 17480
 // Name: showOverdueRemindersToast
-// Dependencies: [11592, 7787, 7793, 4194, 4444, 1233, 2]
+// Dependencies: [11660, 7855, 7861, 4259, 4523, 1114, 2]
 // Exports: showOverdueRemindersToast
 
-// Module 17399 (showOverdueRemindersToast)
-import dispatcherDefault from "dispatcher" /* 4194 */;
-import ForLaterFreemiumConfig from "ForLaterFreemiumConfig" /* 7787 */;
-import closure_3 from "getTimeSafe" /* 11592 */;
+// Module 17479 (showOverdueRemindersToast)
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import ForLaterFreemiumConfig from "ForLaterFreemiumConfig" /* 7855 */;
+import closure_3 from "getTimeSafe" /* 11660 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/saved_messages/message_reminders/native/showOverdueRemindersToast.tsx");
@@ -18,16 +18,16 @@ export const showOverdueRemindersToast = function showOverdueRemindersToast() {
     overdueMessageReminderCount = overdueMessageReminderCount.getOverdueMessageReminderCount();
     if (0 !== overdueMessageReminderCount) {
       const mostRecentOverdueDueAt = obj2.getMostRecentOverdueDueAt();
-      let tmpResult = tmp(7793);
+      let tmpResult = tmp(7861);
       if (mostRecentOverdueDueAt > tmpResult.getRemindersLastSeenAt()) {
-        tmpResult = tmp(7793);
+        tmpResult = tmp(7861);
         tmpResult.markRemindersSeen();
         obj = { key: "overdue-message-reminders", IconComponent: null, content: null, position: "bottom", toastDurationMs: 5000 };
-        obj[1] = tmp(4444).ClockIcon;
-        const intl = tmp(1233).intl;
+        obj[1] = tmp(4523).ClockIcon;
+        const intl = tmp(1114).intl;
         obj = { count: null };
         obj[0] = overdueMessageReminderCount;
-        obj[2] = intl.formatToPlainString(tmp(1233).t.yBmFPA, obj);
+        obj[2] = intl.formatToPlainString(tmp(1114).t.yBmFPA, obj);
         dispatcherDefault.open(obj);
         const obj5 = dispatcherDefault;
       }

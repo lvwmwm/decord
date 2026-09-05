@@ -1,15 +1,15 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13166
+// Function ID: 13167
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 673, 3, 10945, 7474, 4448, 11009, 1623, 7254, 4154, 4194, 1233, 2]
+// Dependencies: [5, 32, 19, 1074, 3, 11014, 7541, 4527, 11077, 1608, 7316, 4233, 4259, 1114, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 13098 (useHandleBuyNow)
+// Module 13166 (useHandleBuyNow)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { Routes } from "ME" /* 673 */;
+import { Routes } from "ME" /* 1074 */;
 
 let require = arg1;
 function useHandleBuyNow(product) {
@@ -54,7 +54,7 @@ function useHandleBuyNow(product) {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(7474).fetchCollectiblesPurchases();
+              obj1[0] = closure_1_0(7541).fetchCollectiblesPurchases();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -67,9 +67,9 @@ function useHandleBuyNow(product) {
             return obj2;
           } else {
             callback(false);
-            obj = v0(4448);
+            obj = v0(4527);
             obj.hideAllActionSheets();
-            obj1 = v0(11009);
+            obj1 = v0(11077);
             const obj3 = { product: null, useCategoryImage: true, stageCollectibleChangeForEditProfile: null };
             obj3[0] = closure_0;
             obj3[2] = closure_3;

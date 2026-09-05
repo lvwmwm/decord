@@ -1,11 +1,11 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7586
+// Function ID: 7587
 // Name: map
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7519 (map)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7586 (map)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = [];
 const map = new Map();

@@ -1,15 +1,15 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 8043
+// Function ID: 8044
 // Name: createChannelLinkedToLobbySystemMessage
-// Dependencies: [4522, 673, 7884, 7891, 7893, 1994, 1233, 7895, 2]
+// Dependencies: [4788, 1074, 7953, 7960, 7962, 2024, 1114, 7964, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 7974 (createChannelLinkedToLobbySystemMessage)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import resultDefault from "result" /* 7884 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
-import closure_3 from "addApplication" /* 4522 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+// Module 8043 (createChannelLinkedToLobbySystemMessage)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import resultDefault from "result" /* 7953 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7960 */;
+import closure_3 from "addApplication" /* 4788 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx");
@@ -34,19 +34,19 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(7893)(obj);
+    obj[1] = tmp(7962)(obj);
     obj[2] = application.name;
     obj1 = { linkColor: null, medium: true };
     obj1[0] = tmp3.defaultUsernameColor;
     obj[3] = obj1;
     const obj2 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj2[1] = tmp(1994).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
+    obj2[1] = tmp(2024).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     obj2[2] = tmp3.linkColor;
     obj[4] = obj2;
     const obj3 = { content: null };
     const intl = getSystemLocale.intl;
     obj3[0] = intl.formatToParts(getSystemLocale.t.gZfhOw, obj);
-    const merged = Object.assign(tmp(7895)(message));
+    const merged = Object.assign(tmp(7964)(message));
     return obj3;
   }
 };

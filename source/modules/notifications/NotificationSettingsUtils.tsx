@@ -1,14 +1,15 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14450
+// Function ID: 14451
 // Name: getNamedExperiment
-// Dependencies: [32, 19, 14370, 14377, 586, 1468, 2]
+// Dependencies: [32, 19, 14444, 14451, 14452, 504, 1433, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 14376 (getNamedExperiment)
-import knownExperimentConfigs from "knownExperimentConfigs" /* 14377 */;
+// Module 14450 (getNamedExperiment)
+import knownExperimentConfigs from "knownExperimentConfigs" /* 14451 */;
+import useIsDeclarativeNotificationSettingsRedesignEnabled from "useIsDeclarativeNotificationSettingsRedesignEnabled" /* 14452 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import items2 from "items2" /* 14370 */;
+import items2 from "items2" /* 14444 */;
 
 require = arg1;
 function getNamedExperiment(experiment) {
@@ -73,12 +74,12 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
   }
   return { settings, mappings };
 };
-export function useIsDeclarativeSettingsUIAvailable() {
-  return false;
-}
-export function useNotifCategoryVisibility() {
-  return false;
-}
+export const useIsDeclarativeSettingsUIAvailable = function useIsDeclarativeSettingsUIAvailable(LegacyNotificationsSetting) {
+  return useIsDeclarativeNotificationSettingsRedesignEnabled.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + LegacyNotificationsSetting);
+};
+export const useNotifCategoryVisibility = function useNotifCategoryVisibility(CATEGORY_OTHER) {
+  return useIsDeclarativeNotificationSettingsRedesignEnabled.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_OTHER);
+};
 export const useNotifSettingVisibility = function useNotifSettingVisibility(GAMING_DEFAULT) {
   const _require = GAMING_DEFAULT;
   const items = [GAMING_DEFAULT];
@@ -104,14 +105,21 @@ export const useNotifSettingVisibility = function useNotifSettingVisibility(GAMI
     return {};
   })(closure_0), items);
   const experiment = memo.experiment;
-  const items1 = [_require(experiment[5]).ApexExperimentStore];
+  const variations = memo.variations;
+  const items1 = [_require(experiment[6]).ApexExperimentStore];
   const items2 = [experiment];
-  const stateFromStores = _require(experiment[4]).useStateFromStores(items1, () => {
+  const stateFromStores = _require(experiment[5]).useStateFromStores(items1, () => {
     let config;
     if (experiment != null) {
       config = experiment.getConfig({ location: "useNotifSettingVisibility" });
     }
     return config;
   }, items2);
-  return false;
+  let obj = _require(experiment[5]);
+  let isDeclarativeNotificationSettingsRedesignEnabled = _require(experiment[4]).useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + "useNotifSettingVisibility");
+  if (isDeclarativeNotificationSettingsRedesignEnabled) {
+    isDeclarativeNotificationSettingsRedesignEnabled = null == stateFromStores || null == variations || variations.includes(stateFromStores.variation);
+    let tmp5 = null == stateFromStores || null == variations || variations.includes(stateFromStores.variation);
+  }
+  return isDeclarativeNotificationSettingsRedesignEnabled;
 };

@@ -1,26 +1,26 @@
-// Module ID: 6939
-// Function ID: 6940
+// Module ID: 6999
+// Function ID: 7000
 // Name: handlePress
-// Dependencies: [19, 17, 5578, 21, 4481, 709, 5576, 6543, 4477, 1233, 4936, 2]
+// Dependencies: [19, 17, 5623, 21, 4560, 576, 5621, 6602, 4556, 1114, 4975, 2]
 // Exports: default
 
-// Module 6939 (handlePress)
+// Module 6999 (handlePress)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import _modDef5576 from "module_5576" /* 5576 */;
-import registerAssetDefault from "registerAsset" /* 6543 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import _modDef5621 from "module_5621" /* 5621 */;
+import registerAssetDefault from "registerAsset" /* 6602 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { resetChangeEmailStore } from "ChangeEmailFields" /* 5578 */;
+import { resetChangeEmailStore } from "ChangeEmailFields" /* 5623 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  _modDef5576.close();
+  _modDef5621.close();
 }
 noopAll;
 ({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);

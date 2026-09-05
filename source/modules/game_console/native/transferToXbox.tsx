@@ -1,14 +1,14 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 9460
+// Function ID: 9461
 // Name: _transferToXbox
-// Dependencies: [5, 19, 17, 673, 21, 9380, 9377, 9390, 4866, 9391, 2008, 9383, 4670, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 9451, 9448, 9461, 4905, 9462, 1896, 9454, 4702, 2]
 // Exports: default
 
-// Module 9389 (_transferToXbox)
+// Module 9460 (_transferToXbox)
 import noopAll from "noop" /* 19 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -52,7 +52,7 @@ function _transferToXbox() {
               dependencyMap = 1;
               c4 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_1(9380).maybeShowPTTAlert(closure_1_6.XBOX);
+              obj1[0] = closure_1_1(9451).maybeShowPTTAlert(closure_1_6.XBOX);
               return obj1;
             }
           } else if (1 === tmp5) {
@@ -68,7 +68,7 @@ function _transferToXbox() {
               dependencyMap = 2;
               c4 = 1;
               let obj3 = { value: null, done: false };
-              obj3[0] = callback2(9377).disconnectRemote();
+              obj3[0] = callback2(9448).disconnectRemote();
               return obj3;
             }
           } else if (2 === tmp5) {
@@ -81,7 +81,7 @@ function _transferToXbox() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              let obj9 = callback2(9377);
+              let obj9 = callback2(9448);
               dependencyMap = 3;
               c4 = 1;
               const obj5 = { value: null, done: false };
@@ -101,7 +101,7 @@ function _transferToXbox() {
               callback = arg1;
               const obj7 = { nonce: null, forQRCode: false };
               obj7[0] = callback;
-              callback2 = callback(9390)(user, obj7);
+              callback2 = callback(9461)(user, obj7);
               dependencyMap = 4;
               c4 = 1;
               const obj8 = { value: null, done: false };
@@ -117,10 +117,10 @@ function _transferToXbox() {
             obj9[0] = arg1;
             return obj9;
           } else if (arg1) {
-            tmp47(9383)(user.id, constants.XBOX);
-            obj3 = callback2(9377);
+            tmp47(9454)(user.id, constants.XBOX);
+            obj3 = callback2(9448);
             obj3.waitForSession(constants.XBOX, user.id, callback);
-            obj4 = callback2(4670);
+            obj4 = callback2(4702);
             obj4.stopOwnStream(false);
             closure_5.openURL(callback2);
             c4 = 3;
@@ -135,7 +135,7 @@ function _transferToXbox() {
             };
             c4 = 3;
             const obj11 = { value: null, done: true };
-            obj11[0] = tmp47(4866).openLazy(obj10);
+            obj11[0] = tmp47(4905).openLazy(obj10);
             return obj11;
           }
         } catch (tmp39) {

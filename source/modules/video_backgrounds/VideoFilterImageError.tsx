@@ -1,12 +1,12 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 9099
+// Function ID: 9100
 // Name: prototype
-// Dependencies: [527, 1233, 2]
+// Dependencies: [1272, 1114, 2]
 
-// Module 9028 (prototype)
+// Module 9099 (prototype)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 let closure_2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };
 let closure_3 = { ASSET: "asset" };
@@ -26,8 +26,8 @@ const prototype = function VideoFilterImageError(arg0, arg1) {
     tmp7 = code === constants.ASSET_SIZE;
   }
   if (tmp7) {
-    const intl2 = tmp4(1233).intl;
-    tmp3.message = intl2.string(tmp4(1233).t.mrlScX);
+    const intl2 = tmp4(1114).intl;
+    tmp3.message = intl2.string(tmp4(1114).t.mrlScX);
   }
   return tmp3;
 }.prototype;

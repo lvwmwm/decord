@@ -1,9 +1,9 @@
-// Module ID: 5893
-// Function ID: 5894
+// Module ID: 5946
+// Function ID: 5947
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5893 (metadata)
+// Module 5946 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiDistrustExample-2x.png.js");

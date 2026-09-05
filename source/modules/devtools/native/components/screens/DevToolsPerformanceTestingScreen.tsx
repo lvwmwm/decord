@@ -1,13 +1,13 @@
-// Module ID: 15649
-// Function ID: 15650
-// Dependencies: [19, 17, 21, 4481, 709, 1498, 1627, 5642, 15502, 5560, 14506, 2]
+// Module ID: 15725
+// Function ID: 15726
+// Dependencies: [19, 17, 21, 4560, 576, 1483, 1611, 5687, 15578, 5605, 14581, 2]
 
-// Module 15649
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+// Module 15725
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -16,13 +16,13 @@ obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: Them
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1498);
+  let obj = _require(1483);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[1] = obj;
   obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(15502).PerformanceTestingScreens);
+  const entries = Object.entries(_require(15578).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     [tmp, ] = arg0;
     return closure_1_4(callback(closure_1_2[9]).TableRow, {
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScree
       }
     }, tmp);
   });
-  obj[2] = jsx(_require(5642).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(5687).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16} />;
 });
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

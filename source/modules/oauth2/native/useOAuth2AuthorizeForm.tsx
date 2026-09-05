@@ -1,23 +1,23 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9235
+// Function ID: 9236
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4135, 4473, 4507, 5242, 1921, 9165, 673, 21, 4481, 4125, 586, 4923, 4218, 4482, 7103, 9166, 9167, 503, 9168, 527, 511, 9169, 9171, 9173, 9174, 7110, 1205, 9175, 9176, 4708, 9177, 4933, 9178, 4936, 1233, 5532, 5244, 9180, 9214, 8269, 9172, 9349, 9353, 9352, 9354, 9356, 9357, 9359, 9366, 7070, 2]
+// Dependencies: [5, 32, 19, 17, 4214, 4552, 1918, 5281, 1371, 9236, 1074, 21, 4560, 4204, 504, 4962, 4296, 4561, 7163, 9237, 9238, 1086, 9239, 1272, 1256, 9240, 9242, 9244, 9245, 7170, 1232, 9246, 9247, 4740, 9248, 4972, 9249, 4975, 1114, 5577, 5283, 9251, 9285, 8339, 9243, 9420, 9424, 9423, 9425, 9427, 9428, 9430, 9437, 7130, 2]
 // Exports: default
 
-// Module 9164 (useOAuth2AuthorizeForm)
+// Module 9235 (useOAuth2AuthorizeForm)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "defaultImageSrcGenerator" /* 4135 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_10 from "createExecutable" /* 4507 */;
-import closure_11 from "set" /* 5242 */;
-import closure_12 from "mergeGuildAvatar" /* 1921 */;
-import OAuth2Steps from "OAuth2Steps" /* 9165 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "defaultImageSrcGenerator" /* 4214 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_10 from "createExecutable" /* 1918 */;
+import closure_11 from "set" /* 5281 */;
+import closure_12 from "mergeGuildAvatar" /* 1371 */;
+import OAuth2Steps from "OAuth2Steps" /* 9236 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = OAuth2Steps);
@@ -826,13 +826,13 @@ export default function useOAuth2AuthorizeForm(clientId) {
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => callback2(9168).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => callback2(9168).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => callback2(9239).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => callback2(9239).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => callback2(9168).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => callback2(9239).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -841,7 +841,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const items = [tmp, closure_1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => callback2(9168).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => callback2(9239).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -853,7 +853,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         [tmp, tmp2] = arg0;
         return closure_1_1(closure_1_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
       });
-      result.then(() => callback2(9168).getAccountUrlAndAuthCode()).then((arg0) => {
+      result.then(() => callback2(9239).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -871,9 +871,9 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         return tmp;
       }).catch((arg0) => {
-        callback2(1205).captureException(arg0);
+        callback2(1232).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => callback2(9168).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => callback2(9239).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);

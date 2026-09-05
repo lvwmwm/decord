@@ -1,15 +1,15 @@
-// Module ID: 14090
-// Function ID: 14091
+// Module ID: 14176
+// Function ID: 14177
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4481, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 4556, 2]
 // Exports: ModalDisclaimer
 
-// Module 14090 (ModalDisclaimer)
+// Module 14176 (ModalDisclaimer)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4477 */;
+import Text from "Text" /* 4556 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

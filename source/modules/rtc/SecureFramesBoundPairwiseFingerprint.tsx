@@ -1,14 +1,14 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9157
+// Function ID: 9158
 // Name: _computeBoundPairwiseFingerprint
-// Dependencies: [5, 1215, 4557, 9081, 206, 9064, 2]
+// Dependencies: [5, 502, 4583, 9152, 206, 9135, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 9086 (_computeBoundPairwiseFingerprint)
+// Module 9157 (_computeBoundPairwiseFingerprint)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "createRTCConnection" /* 4557 */;
-import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_6 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "createRTCConnection" /* 4583 */;
+import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_6 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
 
 const require = arg1;
 function _computeBoundPairwiseFingerprint() {
@@ -68,7 +68,7 @@ function _computeBoundPairwiseFingerprint() {
                     if (null != value) {
                       return value;
                     } else {
-                      const obj4 = joined(9064);
+                      const obj4 = joined(9135);
                       const _Uint8Array = Uint8Array;
                       const uint8Array2 = new Uint8Array(secureFramesRosterMapEntry1);
                       const _Uint8Array2 = Uint8Array;

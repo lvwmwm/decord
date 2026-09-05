@@ -1,10 +1,10 @@
-// Module ID: 4378
-// Function ID: 4379
+// Module ID: 4460
+// Function ID: 4461
 // Name: createFromServer
-// Dependencies: [1935, 2]
+// Dependencies: [1386, 2]
 
-// Module 4378 (createFromServer)
-import toJSDefault from "toJS" /* 1935 */;
+// Module 4460 (createFromServer)
+import toJSDefault from "toJS" /* 1386 */;
 
 toJSDefault;
 let GuildBoostSlotRecord;

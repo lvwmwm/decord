@@ -1,14 +1,14 @@
-// Module ID: 6288
-// Function ID: 6289
+// Module ID: 6343
+// Function ID: 6344
 // Name: PencilIllocon
-// Dependencies: [21, 5542, 6289, 2]
+// Dependencies: [21, 5587, 6344, 2]
 // Exports: PencilIllocon
 
-// Module 6288 (PencilIllocon)
+// Module 6343 (PencilIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6289 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6344 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PencilIllocon.native.tsx");

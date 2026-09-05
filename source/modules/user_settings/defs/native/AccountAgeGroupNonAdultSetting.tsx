@@ -1,18 +1,18 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14758
+// Function ID: 14759
 // Name: pressable
-// Dependencies: [7906, 8341, 8343, 4741, 1233, 4172, 14607, 11400, 2]
+// Dependencies: [7975, 8411, 8413, 4773, 1114, 5423, 14682, 11468, 2]
 
-// Module 14683 (pressable)
+// Module 14758 (pressable)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8343 */;
-import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14607 */;
-import createToggle from "createToggle" /* 11400 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 5423 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8411 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8413 */;
+import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14682 */;
+import createToggle from "createToggle" /* 11468 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
@@ -25,8 +25,8 @@ const pressable = createToggle.createPressable({
     const intl = getSystemLocale.intl;
     let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1233).intl;
-      stringResult = intl2.string(tmp(1233).t.sK0dmH);
+      const intl2 = tmp(1114).intl;
+      stringResult = intl2.string(tmp(1114).t.sK0dmH);
     }
     return stringResult;
   },
@@ -68,8 +68,8 @@ let obj = {
     const intl = getSystemLocale.intl;
     let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1233).intl;
-      stringResult = intl2.string(tmp(1233).t.sK0dmH);
+      const intl2 = tmp(1114).intl;
+      stringResult = intl2.string(tmp(1114).t.sK0dmH);
     }
     return stringResult;
   },

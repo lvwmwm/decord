@@ -1,16 +1,16 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15486
+// Function ID: 15487
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 17, 7906, 673, 4738, 12342, 12350, 695, 9616, 11400, 1233, 2]
+// Dependencies: [5, 17, 7975, 1074, 4770, 12410, 12418, 1242, 9687, 11468, 1114, 2]
 
-// Module 15410 (_handleEnableSystemNotification)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 15486 (_handleEnableSystemNotification)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4738 */;
-import EventActionType from "EventActionType" /* 12342 */;
-import createToggle from "createToggle" /* 11400 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4770 */;
+import EventActionType from "EventActionType" /* 12410 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function _handleEnableSystemNotification() {
@@ -63,7 +63,7 @@ function _handleEnableSystemNotification() {
         } else {
           closure_0 = arg1;
           if (closure_0 === constants2.UNDETERMINED) {
-            let obj3 = callback(12350);
+            let obj3 = callback(12418);
             const permission = obj3.requestPermission((permission_granted) => {
               let obj = tmp2(table[7]);
               obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
@@ -74,7 +74,7 @@ function _handleEnableSystemNotification() {
               }
             });
           } else {
-            obj = callback(695);
+            obj = callback(1242);
             let num3 = 0;
             if (closure_0 === constants2.AUTHORIZED) {
               num3 = 1;
@@ -82,7 +82,7 @@ function _handleEnableSystemNotification() {
             obj3 = { setting_type: "os", current_status: null };
             obj3[1] = num3;
             obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
-            obj2 = callback(9616);
+            obj2 = callback(9687);
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;

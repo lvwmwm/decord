@@ -1,31 +1,31 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12307
+// Function ID: 12308
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [1386, 1908, 4120, 673, 586, 2]
+// Dependencies: [1957, 1979, 4199, 1074, 504, 2]
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
-// Module 12239 (useCanManageGuildDirectoryEntry)
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 12307 (useCanManageGuildDirectoryEntry)
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/directory_channels/useCanManageGuildDirectoryEntry.tsx");
 
 export default function useCanManageGuildDirectoryEntry(arg0) {
   const _require = arg0;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_3];
   dependencyMap = obj.useStateFromStores(items, () => closure_1_3.getGuild(closure_0.guildId));
   const items1 = [closure_2];
-  closure_2 = _require(586).useStateFromStores(items1, () => channel.getChannel(closure_0.channelId));
-  const obj2 = _require(586);
+  closure_2 = _require(504).useStateFromStores(items1, () => channel.getChannel(closure_0.channelId));
+  const obj2 = _require(504);
   const items2 = [closure_4];
-  let stateFromStores = _require(586).useStateFromStores(items2, () => closure_1_4.can(closure_1_5.ADMINISTRATOR, closure_1));
-  const obj3 = _require(586);
+  let stateFromStores = _require(504).useStateFromStores(items2, () => closure_1_4.can(closure_1_5.ADMINISTRATOR, closure_1));
+  const obj3 = _require(504);
   const items3 = [closure_4];
-  const stateFromStores1 = _require(586).useStateFromStores(items3, () => closure_1_4.can(closure_1_5.MANAGE_MESSAGES, closure_2));
+  const stateFromStores1 = _require(504).useStateFromStores(items3, () => closure_1_4.can(closure_1_5.MANAGE_MESSAGES, closure_2));
   obj = { isEntryAdmin: stateFromStores, canEdit: null, canRemove: null };
   let tmp3 = stateFromStores;
   if (!stateFromStores) {
@@ -41,5 +41,5 @@ export default function useCanManageGuildDirectoryEntry(arg0) {
 export const useCanCreateOrAddGuildInDirectory = function useCanCreateOrAddGuildInDirectory(channel) {
   const _require = channel;
   const items = [closure_4];
-  return _require(586).useStateFromStores(items, () => closure_1_4.can(closure_1_5.SEND_MESSAGES, closure_0));
+  return _require(504).useStateFromStores(items, () => closure_1_4.can(closure_1_5.SEND_MESSAGES, closure_0));
 };

@@ -1,19 +1,19 @@
-// Module ID: 7348
-// Function ID: 7349
+// Module ID: 7414
+// Function ID: 7415
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 7177, 586, 4865, 1233, 2]
+// Dependencies: [19, 7237, 504, 4904, 1114, 2]
 // Exports: default
 
-// Module 7348 (useStoreConnectionErrorAlert)
+// Module 7414 (useStoreConnectionErrorAlert)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateProduct" /* 7177 */;
+import closure_4 from "updateProduct" /* 7237 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");
 
 export default function useStoreConnectionErrorAlert() {
   const items = [closure_4];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => closure_4.hasConnectionError());
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => closure_4.hasConnectionError());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (stateFromStores) {

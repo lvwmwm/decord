@@ -1,12 +1,12 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 13961
+// Function ID: 13962
 // Name: useGuildActionSheetPermissions
-// Dependencies: [4120, 673, 586, 2]
+// Dependencies: [4199, 1074, 504, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 13971 (useGuildActionSheetPermissions)
-import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 13961 (useGuildActionSheetPermissions)
+import closure_2 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
@@ -15,7 +15,7 @@ export const useGuildActionSheetPermissions = function useGuildActionSheetPermis
   const _require = guild;
   const items = [closure_2];
   const items1 = [guild];
-  return _require(586).useStateFromStoresObject(items, () => {
+  return _require(504).useStateFromStoresObject(items, () => {
     if (null == closure_0) {
       let obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
     } else {

@@ -1,12 +1,12 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14397
+// Function ID: 14398
 // Name: getModalState
-// Dependencies: [1954, 38, 8048, 684, 7390, 586, 706, 2]
+// Dependencies: [1894, 38, 8117, 1090, 7456, 504, 573, 2]
 
-// Module 14323 (getModalState)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import trackInviteDefault from "trackInvite" /* 7390 */;
+// Module 14397 (getModalState)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import trackInviteDefault from "trackInvite" /* 7456 */;
 
 const require = arg1;
 let obj = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
@@ -55,11 +55,11 @@ obj = {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1954).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1894).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1954).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1894).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;
@@ -83,7 +83,7 @@ obj = {
             closure_1_0(closure_1_2[2]).setFailed(closure_0);
             obj = closure_1_0(closure_1_2[2]);
           }
-        }, 2 * tmp3(684).Millis.MINUTE);
+        }, 2 * tmp3(1090).Millis.MINUTE);
         preflight.then(() => {
           const result = 10 * startTimeout(closure_1_2[3]).Millis.SECOND;
           if (typeof startTimeout !== "function") {
@@ -127,7 +127,7 @@ obj = {
             closure_1_0(closure_1_2[2]).setFailed(closure_0);
             obj = closure_1_0(closure_1_2[2]);
           }
-        }, 10 * tmp3(684).Millis.SECOND);
+        }, 10 * tmp3(1090).Millis.SECOND);
       }
       return true;
     } else {

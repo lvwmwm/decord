@@ -1,14 +1,14 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9359
+// Function ID: 9360
 // Name: getUserMaxFileSize
-// Dependencies: [1922, 673, 1923, 1945, 5091, 2]
+// Dependencies: [1372, 1074, 1373, 1885, 5130, 2]
 // Exports: getUserMaxFileSize
 
-// Module 9288 (getUserMaxFileSize)
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import closure_2 from "setActualFromUser" /* 1922 */;
-import ME from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+// Module 9359 (getUserMaxFileSize)
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1885 */;
+import closure_2 from "setActualFromUser" /* 1372 */;
+import ME from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 function getUserMaxFileSize(currentUser) {
@@ -27,7 +27,7 @@ function getUserMaxFileSize(currentUser) {
       let obj = dependencyMap;
       if (obj2.isPremium(currentUser)) {
         if (currentUser.premiumType === TIER_2.TIER_2) {
-          const nitroFileUploadLimitBytes = getNitroFileUploadLimitBytes(5091);
+          const nitroFileUploadLimitBytes = getNitroFileUploadLimitBytes(5130);
           getNitroFileUploadLimitBytes = nitroFileUploadLimitBytes.getNitroFileUploadLimitBytes;
           obj = { location: "getUserMaxFileSize" };
           let fileSize = getNitroFileUploadLimitBytes(obj);

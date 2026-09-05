@@ -1,12 +1,12 @@
-// Module ID: 1623
-// Function ID: 1624
+// Module ID: 1608
+// Function ID: 1609
 // Name: isMetaQuest
-// Dependencies: [667, 1624, 2]
+// Dependencies: [1342, 1364, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1623 (isMetaQuest)
-import getConstantsAll from "getConstants" /* 1624 */;
-import importDefaultResult from "enforcing" /* 667 */;
+// Module 1608 (isMetaQuest)
+import getConstantsAll from "getConstants" /* 1364 */;
+import importDefaultResult from "enforcing" /* 1342 */;
 
 const isMetaQuestResult = importDefaultResult.isMetaQuest();
 const result = require("set").fileFinishedImporting("modules/device/MetaQuestUtils.android.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 5392
-// Function ID: 5393
+// Module ID: 5432
+// Function ID: 5433
 // Name: isVersionEqual
-// Dependencies: [656, 2]
+// Dependencies: [1332, 2]
 // Exports: isVersionEqual
 
-// Module 5392 (isVersionEqual)
+// Module 5432 (isVersionEqual)
 import set from "set" /* 2 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 1332 */;
 
 const result = set.fileFinishedImporting("utils/SecondaryIndexMapUtils.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17377
+// Function ID: 17378
 // Name: handleInviteData
-// Dependencies: [673, 12866, 1399, 8322, 12867, 7058, 2]
+// Dependencies: [1074, 12934, 1384, 8392, 12935, 7118, 2]
 
-// Module 17297 (handleInviteData)
+// Module 17377 (handleInviteData)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import initializeDefault from "initialize" /* 7058 */;
-import set2 from "set" /* 8322 */;
-import _modDef12866 from "module_12866" /* 12866 */;
-import inviteGuildHasPendingMemberDisabledVerification from "inviteGuildHasPendingMemberDisabledVerification" /* 12867 */;
+import ME from "ME" /* 1074 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import initializeDefault from "initialize" /* 7118 */;
+import set2 from "set" /* 8392 */;
+import _modDef12934 from "module_12934" /* 12934 */;
+import inviteGuildHasPendingMemberDisabledVerification from "inviteGuildHasPendingMemberDisabledVerification" /* 12935 */;
 
 function handleInviteData(invite) {
   const guild = invite.invite.guild;
@@ -27,16 +27,16 @@ function handleInviteData(invite) {
       }
     }
     if (hasItem) {
-      _modDef12866.onOpenHubInvite(invite.invite);
-      const obj5 = _modDef12866;
+      _modDef12934.onOpenHubInvite(invite.invite);
+      const obj5 = _modDef12934;
     }
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
     let hasFlagResult = hasFlag.hasFlag(num, set2.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp3(1399).hasFlag(num, tmp3(8322).GuildInviteFlags.IS_APPLICATION_BYPASS);
-      const tmp3Result = tmp3(1399);
+      hasFlagResult = tmp3(1384).hasFlag(num, tmp3(8392).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      const tmp3Result = tmp3(1384);
     }
     new_member = !hasFlagResult;
     const obj = hasFlag;

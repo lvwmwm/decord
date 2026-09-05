@@ -1,13 +1,13 @@
-// Module ID: 4499
-// Function ID: 4500
+// Module ID: 4578
+// Function ID: 4579
 // Name: handleUpdate
-// Dependencies: [1215, 586, 12, 706, 2]
+// Dependencies: [502, 504, 12, 573, 2]
 
-// Module 4499 (handleUpdate)
+// Module 4578 (handleUpdate)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
 
 function handleUpdate(sessions) {
   closure_4 = {};

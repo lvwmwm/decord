@@ -1,16 +1,16 @@
-// Module ID: 14626
-// Function ID: 14627
-// Dependencies: [19, 17, 21, 4481, 1350, 1233, 9689, 4934, 4477, 2]
+// Module ID: 14701
+// Function ID: 14702
+// Dependencies: [19, 17, 21, 4560, 4272, 1114, 9760, 4973, 4556, 2]
 
-// Module 14626
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import getNoResultsAltSource from "getNoResultsAltSource" /* 9689 */;
+// Module 14701
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import getNoResultsAltSource from "getNoResultsAltSource" /* 9760 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -18,9 +18,9 @@ let closure_6 = createCacheKey.createStyles({ container: { paddingTop: 24, justi
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
-    const AccessibilityAnnouncer = callback(1350).AccessibilityAnnouncer;
-    const intl = callback(1233).intl;
-    AccessibilityAnnouncer.announce(intl.string(callback(1233).t.zihbmv), "polite");
+    const AccessibilityAnnouncer = callback(4272).AccessibilityAnnouncer;
+    const intl = callback(1114).intl;
+    AccessibilityAnnouncer.announce(intl.string(callback(1114).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
   const items = [callback(getNoResultsAltSource.NoResultsAlt, { resizeMode: "contain" }), ];

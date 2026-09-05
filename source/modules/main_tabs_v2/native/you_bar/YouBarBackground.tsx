@@ -1,20 +1,20 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16383
+// Function ID: 16384
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 15022, 21, 4481, 709, 5619, 4948, 686, 4197, 15108, 4218, 4935, 2]
+// Dependencies: [19, 17, 15098, 21, 4560, 576, 5664, 4987, 672, 4262, 15184, 4296, 4974, 2]
 
-// Module 16307 (YouBarMaskedBackground)
-import nDefault from "n" /* 686 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5619 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15108 */;
+// Module 16383 (YouBarMaskedBackground)
+import ThemesDefault from "Themes" /* 576 */;
+import nDefault from "n" /* 672 */;
+import map from "map" /* 4262 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5664 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15184 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15098 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -50,7 +50,7 @@ function YouBarAnimatedBackground(arg0) {
   let _require;
   importDefault = undefined;
   ({ barWidth, backgroundColor } = arg0);
-  let obj = _require(4197);
+  let obj = _require(4262);
   const token = obj.useToken(ThemesDefault.modules.mobile.YOU_BAR_BORDER_RADIUS);
   const tmp3 = useQuestDockAnimatedBorderRadiusDefault(token);
   _require = tmp3;
@@ -65,13 +65,13 @@ function YouBarAnimatedBackground(arg0) {
     obj[2] = store(closure_1_2[12]).withSpring(closure_1.get(), closure_1_5);
     return obj;
   };
-  obj = { withSpring: _require(4935).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
+  obj = { withSpring: _require(4974).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_10;
-  const animatedStyle = _require(4218).useAnimatedStyle(fn);
+  const animatedStyle = _require(4296).useAnimatedStyle(fn);
   const style = [{ position: "absolute" }, tmp.youRowFloating, { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor }, { borderTopRightRadius: 0, borderTopLeftRadius: 0 }, animatedStyle];
-  return callback(_modDef4218.View, { style });
+  return callback(_modDef4296.View, { style });
 }
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = CONNECTION_BANNER_HEIGHT.YOU_BAR_SPRING_CONFIG;

@@ -1,14 +1,14 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17414
+// Function ID: 17415
 // Name: handleConnectionOpen
-// Dependencies: [1921, 1379, 673, 7058, 7320, 6534, 2]
+// Dependencies: [1371, 1950, 1074, 7118, 7382, 6593, 2]
 
-// Module 17334 (handleConnectionOpen)
-import handleLogoutDefault from "handleLogout" /* 6534 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "handleUpdateUser" /* 1379 */;
-import ME from "ME" /* 673 */;
+// Module 17414 (handleConnectionOpen)
+import handleLogoutDefault from "handleLogout" /* 6593 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "handleUpdateUser" /* 1950 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ LoginRequiredActions: c5, Routes: closure_6, UserSettingsSections: error } = ME);
@@ -38,8 +38,8 @@ LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleCo
             const obj = closure_1_1(closure_1_2[5]);
           }
         };
-        currentUser(7320).openUserSettings(obj);
-        const obj2 = currentUser(7320);
+        currentUser(7382).openUserSettings(obj);
+        const obj2 = currentUser(7382);
       }
     }
     if (result1) {

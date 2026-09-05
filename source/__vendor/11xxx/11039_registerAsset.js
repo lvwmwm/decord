@@ -1,10 +1,10 @@
 // Module ID: 11039
 // Function ID: 11040
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11039 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "367021fc812df044b1b4d5405a1e12c2", name: "CircleQuestionIcon-primary", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 460, scales: [1], hash: "c8d53ba30e41e7296c825f2501df590c", name: "premium_gift_plan_selection_header", type: "png" });

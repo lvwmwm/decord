@@ -1,14 +1,14 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6489
+// Function ID: 6490
 // Name: StreamingTier10LargeBadge
-// Dependencies: [21, 5542, 6433, 2]
+// Dependencies: [21, 5587, 6490, 2]
 // Exports: StreamingTier10LargeBadge
 
-// Module 6432 (StreamingTier10LargeBadge)
+// Module 6489 (StreamingTier10LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import vanityUrlDefault from "vanityUrl" /* 6433 */;
+import preloadDefault from "preload" /* 5587 */;
+import vanityUrlDefault from "vanityUrl" /* 6490 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier10LargeBadge.native.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7302
+// Function ID: 7303
 // Name: isForwardMessage
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 7240 (isForwardMessage)
+// Module 7302 (isForwardMessage)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const MessageReferenceTypes = ME.MessageReferenceTypes;
 const result = set.fileFinishedImporting("modules/forwarding/isForwardMessage.tsx");

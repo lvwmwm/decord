@@ -1,19 +1,17 @@
 // Module ID: 10524
 // Function ID: 10525
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10385, 10367, 10517]
+// Dependencies: [41, 42, 93, 95, 98, 10437, 10438, 10439]
 
 // Module 10524 (_isNativeReflectConstruct)
-import now from "now" /* 10385 */;
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10517 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let self = this;
-const UKCasualTimeParser = require;
+const NLCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,148 +31,84 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let __setModuleDefault = self;
-  if (self) {
-    __setModuleDefault = self.__setModuleDefault;
+class NLCasualTimeParser {
+  constructor() {
+    self = this;
+    tmp = closure_2(this, NLCasualTimeParser);
+    tmp2 = closure_4;
+    obj = closure_4(NLCasualTimeParser);
+    tmp3 = closure_3;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  if (__setModuleDefault) {
-    let fn = self;
-    if (self) {
-      fn = self.__importStar;
+}
+_inherits(NLCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
+  {
+    key: "innerPattern",
+    value: function innerPattern() {
+      return /(deze)?\s*(namiddag|avond|middernacht|ochtend|middag|'s middags|'s avonds|'s ochtends)(?=\W|$)/i;
     }
-    if (!fn) {
-      function c(arg0) {
-        let fn = Object.getOwnPropertyNames;
-        if (!fn) {
-          fn = (obj) => {
-            const items = [];
-            for (const key10005 in arg0) {
-              let tmp2 = key10005;
-              let _Object = Object;
-              let call = hasOwnProperty.call;
-              if (typeof call === "unknown") {
-                let hasOwnPropertyResult = hasOwnProperty(key10005);
-              } else {
-                hasOwnPropertyResult = call(arg0, key10005);
-              }
-              if (!hasOwnPropertyResult) {
-                continue;
-              } else {
-                items[items.length] = key10005;
-                continue;
-              }
-              continue;
-            }
-            return items;
-          };
-        }
-        return fn(arg0);
-      }
-      fn = (__esModule) => {
-        if (__esModule) {
-          if (__esModule.__esModule) {
-            return __esModule;
-          }
-        }
-        const obj = {};
-        if (null != __esModule) {
-          const arr = c(__esModule);
-          for (let num = 0; num < arr.length; num = num + 1) {
-            let tmp2 = num;
-            if ("default" !== arr[num]) {
-              let tmp3 = self2;
-              let tmp4 = self2(obj, __esModule, arr[num]);
-            }
-          }
-        }
-        __setModuleDefault(obj, __esModule);
-        return obj;
-      };
-    }
-    const _Object3 = Object;
-    let closure_9 = fn(now);
-    class UKCasualTimeParser {
-      constructor() {
-        self = this;
-        tmp = closure_2(this, UKCasualTimeParser);
-        tmp2 = closure_4;
-        obj = closure_4(UKCasualTimeParser);
-        tmp3 = closure_3;
-        if (_isNativeReflectConstruct()) {
-          tmp7 = globalThis;
-          _Reflect = Reflect;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-        } else {
-          tmp4 = arguments;
-          tmp5 = arguments;
-          constructResult = obj(...arguments);
-        }
-        return tmp3(self, constructResult);
-      }
-    }
-    _inherits(UKCasualTimeParser, _isNativeReflectConstruct2.AbstractParserWithLeftRightBoundaryChecking);
-    let obj = { key: "innerPatternString", value: null };
-    obj[1] = function innerPatternString(arg0) {
-      return "(\u0437\u0430\u0440\u0430\u0437|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E\\s*\u0432\u0435\u0447\u043E\u0440\u0430|\u043C\u0438\u043D\u0443\u043B\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456\\s*\u0432\u043D\u043E\u0447\u0456|\u0446\u0456\u0454\u0457\\s*\u043D\u043E\u0447\u0456|\u0446\u044C\u043E\u0433\u043E \u0440\u0430\u043D\u043A\u0443|\u0432\u0440\u0430\u043D\u0446\u0456|\u0440\u0430\u043D\u043A\u0443|\u0437\u0440\u0430\u043D\u043A\u0443|\u043E\u043F\u0456\u0432\u0434\u043D\u0456|\u0432\u0432\u0435\u0447\u0435\u0440\u0456|\u0432\u0435\u0447\u043E\u0440\u0430|\u043E\u043F\u0456\u0432\u043D\u043E\u0447\u0456|\u0432\u043D\u043E\u0447\u0456)";
-    };
-    let items = [obj, ];
-    obj = { key: "innerExtract", value: null };
-    obj[1] = function innerExtract(refDate) {
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(refDate) {
       refDate = refDate.refDate;
-      const str2 = arg1[0].toLowerCase();
-      let parsingComponents = refDate.createParsingComponents();
-      if ("\u0437\u0430\u0440\u0430\u0437" === str2) {
-        return closure_9.now(refDate.reference);
-      } else {
-        if ("\u0432\u0432\u0435\u0447\u0435\u0440\u0456" !== str2) {
-          if ("\u0432\u0435\u0447\u043E\u0440\u0430" !== str2) {
-            if (!str2.endsWith("\u0432\u0440\u0430\u043D\u0446\u0456")) {
-              if (!str2.endsWith("\u0440\u0430\u043D\u043A\u0443")) {
-                if (!str2.endsWith("\u0437\u0440\u0430\u043D\u043A\u0443")) {
-                  if (str2.endsWith("\u043E\u043F\u0456\u0432\u0434\u043D\u0456")) {
-                    return closure_9.noon(refDate.reference);
-                  } else if (str2.match(/минулої\s*ночі/)) {
-                    return closure_9.lastNight(refDate.reference);
-                  } else if (str2.match(/минулого\s*вечора/)) {
-                    return closure_9.yesterdayEvening(refDate.reference);
-                  } else {
-                    if (str2.match(/наступної\s*ночі/)) {
-                      let num2 = 2;
-                      if (refDate.getHours() < 22) {
-                        num2 = 1;
-                      }
-                      const _Date = Date;
-                      const date = new Date(refDate.getTime());
-                      date.setDate(date.getDate() + num2);
-                      UKCasualTimeParser(10367).assignSimilarDate(parsingComponents, date);
-                      parsingComponents.imply("hour", 1);
+      const parsingComponents = refDate.createParsingComponents();
+      if ("deze" === arg1[1]) {
+        const refDate2 = refDate.refDate;
+        parsingComponents.assign("day", refDate2.getDate());
+        const refDate3 = refDate.refDate;
+        parsingComponents.assign("month", refDate3.getMonth() + 1);
+        const refDate4 = refDate.refDate;
+        parsingComponents.assign("year", refDate4.getFullYear());
+      }
+      const formatted = arg1[2].toLowerCase();
+      if ("namiddag" !== formatted) {
+        if ("'s namiddags" !== formatted) {
+          if ("avond" !== formatted) {
+            if ("'s avonds'" !== formatted) {
+              if ("middernacht" === formatted) {
+                const _Date = Date;
+                const date = new Date(refDate.getTime());
+                date.setDate(date.getDate() + 1);
+                NLCasualTimeParser(10438).assignSimilarDate(parsingComponents, date);
+                NLCasualTimeParser(10438).implySimilarTime(parsingComponents, date);
+                parsingComponents.imply("hour", 0);
+                parsingComponents.imply("minute", 0);
+                parsingComponents.imply("second", 0);
+              } else {
+                if ("ochtend" !== formatted) {
+                  if ("'s ochtends" !== formatted) {
+                    if ("middag" === formatted) {
+                      parsingComponents.imply("meridiem", NLCasualTimeParser(10437).Meridiem.AM);
+                      parsingComponents.imply("hour", 12);
                     }
-                    if (!str2.match(/цієї\s*ночі/)) {
-                      return parsingComponents;
-                    }
-                    parsingComponents = closure_9.midnight(refDate.reference);
                   }
                 }
+                parsingComponents.imply("meridiem", NLCasualTimeParser(10437).Meridiem.AM);
+                parsingComponents.imply("hour", 6);
               }
             }
-            return closure_9.morning(refDate.reference);
           }
+          parsingComponents.imply("meridiem", NLCasualTimeParser(10437).Meridiem.PM);
+          parsingComponents.imply("hour", 20);
         }
-        return closure_9.evening(refDate.reference);
+        return parsingComponents;
       }
-      const str = arg1[0];
-    };
-    items[1] = obj;
-    exports.default = _createClass(UKCasualTimeParser, items);
-  } else {
-    const _Object2 = Object;
+      parsingComponents.imply("meridiem", NLCasualTimeParser(10437).Meridiem.PM);
+      parsingComponents.imply("hour", 15);
+    }
   }
-} else {
-  let _Object = Object;
-}
+];
+
+export default _createClass(NLCasualTimeParser, items);

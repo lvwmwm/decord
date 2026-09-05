@@ -1,16 +1,16 @@
-// Module ID: 1300
-// Function ID: 1301
+// Module ID: 1182
+// Function ID: 1183
 // Name: semanticColor
-// Dependencies: [1301, 1234, 709, 4460, 1362, 2]
+// Dependencies: [1183, 1115, 576, 4539, 4411, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1300 (semanticColor)
-import ThemesDefault from "Themes" /* 709 */;
-import set2 from "set" /* 1234 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import closure_2 from "handleThemeChange" /* 1301 */;
-import set from "set" /* 1234 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4460 */;
+// Module 1182 (semanticColor)
+import ThemesDefault from "Themes" /* 576 */;
+import set2 from "set" /* 1115 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import closure_2 from "handleThemeChange" /* 1183 */;
+import set from "set" /* 1115 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4539 */;
 
 require = arg1;
 let num = 24;

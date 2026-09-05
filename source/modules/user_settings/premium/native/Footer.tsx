@@ -1,21 +1,21 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13493
+// Function ID: 13494
 // Name: Footer
-// Dependencies: [19, 17, 21, 4481, 13421, 7122, 4477, 1233, 4936, 5542, 13422, 2]
+// Dependencies: [19, 17, 21, 4560, 13494, 7182, 4556, 1114, 4975, 5587, 13495, 2]
 // Exports: default
 
-// Module 13420 (Footer)
+// Module 13493 (Footer)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import preloadDefault from "preload" /* 5542 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13421 */;
-import registerAssetDefault from "registerAsset" /* 13422 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import preloadDefault from "preload" /* 5587 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7182 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13494 */;
+import registerAssetDefault from "registerAsset" /* 13495 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

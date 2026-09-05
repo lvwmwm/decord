@@ -1,18 +1,18 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12425
+// Function ID: 12426
 // Name: EmojiSuggestionBarLargeAnimated
-// Dependencies: [32, 19, 17, 10219, 21, 4481, 709, 12358, 4218, 10239, 10257, 4205, 2]
+// Dependencies: [32, 19, 17, 10290, 21, 4560, 576, 12426, 4296, 10310, 10328, 4271, 2]
 
-// Module 12357 (EmojiSuggestionBarLargeAnimated)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import MAX_SUGGESTIONS_LARGE from "MAX_SUGGESTIONS_LARGE" /* 12358 */;
+// Module 12425 (EmojiSuggestionBarLargeAnimated)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import MAX_SUGGESTIONS_LARGE from "MAX_SUGGESTIONS_LARGE" /* 12426 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { IMAGE_SIZE } from "IMAGE_SIZE" /* 10219 */;
+import { IMAGE_SIZE } from "IMAGE_SIZE" /* 10290 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function EmojiSuggestionBarLargeAnimated(arg0) {
@@ -36,9 +36,9 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
   if (truncResult > 11) {
     length = sortEmojisForDisplayResult.length;
   }
-  let tmp9Result = tmp9(12358);
+  let tmp9Result = tmp9(12426);
   suggestionBarHeight = tmp9Result.useSuggestionBarHeight(transitionState, cleanUp, 52);
-  tmp9Result = tmp9(4218);
+  tmp9Result = tmp9(4296);
   const fn = function f() {
     return { height: suggestionBarHeight.get() };
   };
@@ -104,7 +104,7 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
       return closure_1_7(closure_1_0(closure_1_2[7]).EmojiEntranceAnimation, obj, closure_1_0(closure_1_2[7]).getEmojiEntranceKey(tmp, index));
     }
   })}</c5>;
-  return jsx(_modDef4218.View, {
+  return jsx(_modDef4296.View, {
     style: tmp8.containerLarge,
     onLayout: callback,
     children: Array.from({ length }, (arg0, index) => {

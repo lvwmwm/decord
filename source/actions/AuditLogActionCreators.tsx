@@ -1,14 +1,14 @@
-// Module ID: 17466
-// Function ID: 17467
+// Module ID: 17546
+// Function ID: 17547
 // Name: makeRequest
-// Dependencies: [17456, 673, 527, 706, 2]
+// Dependencies: [17536, 1074, 1272, 573, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17466 (makeRequest)
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "AuditLogActions" /* 17456 */;
-import ME from "ME" /* 673 */;
+// Module 17546 (makeRequest)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import closure_3 from "AuditLogActions" /* 17536 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function makeRequest(arg0, arg1) {
@@ -53,8 +53,8 @@ export const fetchLogs = function fetchLogs(guildId) {
       obj[2] = arg2;
       return makeRequest(guildId, obj).then((body) => {
         ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);
-        callback(706).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
-      }, () => callback(706).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
+        callback(573).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
+      }, () => callback(573).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
     }
   }
 };
@@ -80,8 +80,8 @@ export const fetchNextLogPage = function fetchNextLogPage(guildId) {
         obj[0] = id;
         return makeRequest(guildId, obj).then((body) => {
           ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);
-          callback(706).dispatch({ type: "AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
-        }, () => callback(706).dispatch({ type: "AUDIT_LOG_FETCH_NEXT_PAGE_FAIL" }));
+          callback(573).dispatch({ type: "AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
+        }, () => callback(573).dispatch({ type: "AUDIT_LOG_FETCH_NEXT_PAGE_FAIL" }));
       }
     }
     tmp2 = tmp.isLoading || tmp.isLoadingNextPage;
@@ -102,8 +102,8 @@ export const filterByAction = function filterByAction(arg0, guildId) {
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(guildId, obj).then((body) => {
             ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);
-            callback(706).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
-          }, () => callback(706).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
+            callback(573).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
+          }, () => callback(573).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
           const promise = makeRequest(guildId, obj);
         }
       }
@@ -121,13 +121,13 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       if (!tmp5) {
         if (null != guildId) {
           dispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: "context" };
+          obj = { userId: null, action: "Array", targetId: "isArray" };
           obj[0] = id;
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(guildId, obj).then((body) => {
             ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);
-            callback(706).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
-          }, () => callback(706).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
+            callback(573).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
+          }, () => callback(573).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
           const promise = makeRequest(guildId, obj);
         }
       }
@@ -145,13 +145,13 @@ export const filterByTargetId = function filterByTargetId(arg0, arg1) {
       if (!tmp5) {
         if (null != arg1) {
           dispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: "Array" };
+          obj = { userId: null, action: "Array", targetId: -1 };
           obj[2] = arg0;
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(arg1, obj).then((body) => {
             ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);
-            callback(706).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
-          }, () => callback(706).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
+            callback(573).dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
+          }, () => callback(573).dispatch({ type: "AUDIT_LOG_FETCH_FAIL" }));
           const promise = makeRequest(arg1, obj);
         }
       }

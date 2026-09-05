@@ -1,13 +1,13 @@
-// Module ID: 15073
-// Function ID: 15074
-// Dependencies: [19, 21, 4481, 15050, 11415, 11699, 4934, 709, 15055, 4477, 1233, 2]
+// Module ID: 15149
+// Function ID: 15150
+// Dependencies: [19, 21, 4560, 15126, 11483, 11767, 4973, 576, 15131, 4556, 1114, 2]
 
-// Module 15073
-import ThemesDefault from "Themes" /* 709 */;
-import COMPLETION_GLOW_SHADOW_RADIUSDefault from "COMPLETION_GLOW_SHADOW_RADIUS" /* 15055 */;
+// Module 15149
+import ThemesDefault from "Themes" /* 576 */;
+import COMPLETION_GLOW_SHADOW_RADIUSDefault from "COMPLETION_GLOW_SHADOW_RADIUS" /* 15131 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -27,9 +27,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(style) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  let obj = quest(15050);
+  let obj = quest(15126);
   quest = obj.useVideoQuestModalContext().quest;
-  obj1 = quest(11415);
+  obj1 = quest(11483);
   const items = [quest.id];
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const callback = importAllResult.useCallback(() => {
@@ -44,24 +44,24 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(style) {
   if (tmp) {
     const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: null, children: null };
     obj2[2] = tmp7.questName;
-    const intl = tmp3(1233).intl;
+    const intl = tmp3(1114).intl;
     const obj3 = { questName: null };
     obj3[0] = quest.config.messages.questName;
-    obj2[3] = intl.formatToPlainString(tmp3(1233).t.EAYZAr, obj3);
-    tmp = tmp9(tmp3(4477).Text, obj2);
+    obj2[3] = intl.formatToPlainString(tmp3(1114).t.EAYZAr, obj3);
+    tmp = tmp9(tmp3(4556).Text, obj2);
   }
   const items2 = [tmp, ];
   if (tmp9Result) {
     const obj4 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
-    const intl2 = tmp3(1233).intl;
-    obj4[2] = intl2.string(tmp3(1233).t["1Wvve2"]);
-    tmp9Result = tmp9(tmp3(4477).Text, obj4);
+    const intl2 = tmp3(1114).intl;
+    obj4[2] = intl2.string(tmp3(1114).t["1Wvve2"]);
+    tmp9Result = tmp9(tmp3(4556).Text, obj4);
   }
   items2[1] = tmp9Result;
   obj1[3] = items2;
-  items1[1] = closure_5(quest(4934).Stack, obj1);
+  items1[1] = closure_5(quest(4973).Stack, obj1);
   obj[4] = items1;
-  return closure_5(quest(4934).Stack, obj);
+  return closure_5(quest(4973).Stack, obj);
 });
 let result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
 

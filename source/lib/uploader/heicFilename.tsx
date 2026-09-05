@@ -1,10 +1,10 @@
-// Module ID: 5132
-// Function ID: 5133
+// Module ID: 5171
+// Function ID: 5172
 // Name: set
 // Dependencies: [2]
 // Exports: heicMimeType, isHeicFile, renameToJpegExtension
 
-// Module 5132 (set)
+// Module 5171 (set)
 import set from "set" /* 2 */;
 
 let set = new Set(["image/heic", "image/heif", "image/heic-sequence", "image/heif-sequence"]);

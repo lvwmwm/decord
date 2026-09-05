@@ -1,16 +1,16 @@
-// Module ID: 4144
-// Function ID: 4145
+// Module ID: 4223
+// Function ID: 4224
 // Name: addSubscriptionPlan
-// Dependencies: [4140, 673, 1923, 1990, 586, 11, 706, 2]
+// Dependencies: [4219, 1074, 1373, 1933, 504, 11, 573, 2]
 
-// Module 4144 (addSubscriptionPlan)
+// Module 4223 (addSubscriptionPlan)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
-import closure_3 from "createFromServer" /* 4140 */;
-import ME from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1933 */;
+import closure_3 from "createFromServer" /* 4219 */;
+import ME from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 import set from "set" /* 2 */;
 
 require = arg1;

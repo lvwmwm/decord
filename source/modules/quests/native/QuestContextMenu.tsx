@@ -1,16 +1,16 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15151
+// Function ID: 15152
 // Name: renderDefaultButton
-// Dependencies: [109, 19, 7636, 673, 21, 8028, 8603, 1233, 11415, 586, 5407, 11706, 11418, 11227, 7655, 1234, 4461, 11699, 11428, 7661, 1350, 15037, 5411, 11208, 8510, 15076, 4428, 7657, 7130, 4432, 11124, 11125, 11129, 8596, 2]
+// Dependencies: [109, 19, 7703, 1074, 21, 8097, 8673, 1114, 11483, 504, 5447, 11774, 11486, 11295, 7722, 1115, 4540, 11767, 11496, 7728, 4272, 15113, 5451, 11276, 8580, 15152, 4507, 7724, 7190, 4511, 11192, 11193, 11197, 8666, 2]
 
-// Module 15075 (renderDefaultButton)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import IconButton from "IconButton" /* 8028 */;
-import registerAssetDefault from "registerAsset" /* 8603 */;
+// Module 15151 (renderDefaultButton)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import IconButton from "IconButton" /* 8097 */;
+import registerAssetDefault from "registerAsset" /* 8673 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
-import closure_6 from "initializeState" /* 7636 */;
-import { LinkingTypes } from "ME" /* 673 */;
+import closure_6 from "initializeState" /* 7703 */;
+import { LinkingTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

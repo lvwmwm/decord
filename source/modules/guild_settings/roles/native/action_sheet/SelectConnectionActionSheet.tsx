@@ -1,18 +1,18 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17638
+// Function ID: 17639
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 11495, 5560, 1296, 4416, 7089, 1233, 7436, 1431, 1362, 4448, 9721, 7138, 9722, 6567, 7063, 5642, 2]
+// Dependencies: [32, 19, 17, 21, 11563, 5605, 1178, 4495, 7149, 1114, 7503, 1396, 4411, 4527, 9792, 7198, 9793, 6627, 7123, 5687, 2]
 // Exports: default
 
-// Module 17558 (IdentityApplicationRow)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import BottomSheetModal from "BottomSheetModal" /* 6567 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import ActionSheet from "ActionSheet" /* 7138 */;
-import request from "request" /* 11495 */;
+// Module 17638 (IdentityApplicationRow)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import BottomSheetModal from "BottomSheetModal" /* 6627 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import ActionSheet from "ActionSheet" /* 7198 */;
+import request from "request" /* 11563 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -31,8 +31,8 @@ function IdentityApplicationRow(arg0) {
     if (null != bot) {
       obj = { user: null, size: null, guildId: "Array" };
       obj[0] = bot;
-      obj[1] = tmp(1296).AvatarSizes.XSMALL;
-      tmp6Result = tmp6(tmp(1296).Avatar, obj);
+      obj[1] = tmp(1178).AvatarSizes.XSMALL;
+      tmp6Result = tmp6(tmp(1178).Avatar, obj);
     }
     obj = { icon: null, label: null, subLabel: null, onPress: null };
     obj[0] = tmp6Result;
@@ -43,7 +43,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj[2] = description;
     obj[3] = onPress;
-    return closure_6(tmp(5560).TableRow, obj);
+    return closure_6(tmp(5605).TableRow, obj);
   }
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -78,7 +78,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let tmp3Result = tmp3(7436);
+  let tmp3Result = tmp3(7503);
   const platforms = tmp3Result.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -149,17 +149,17 @@ export default function SelectConnectionActionSheet(arg0) {
   if (num == null) {
     num = 0;
   }
-  const intl2 = tmp3(1233).intl;
+  const intl2 = tmp3(1114).intl;
   const items = [intl2.string(getSystemLocale.t["3fe7U5"])];
   if (num > 0) {
-    const intl3 = tmp3(1233).intl;
-    items.push(intl3.string(tmp3(1233).t.PHjkRE));
+    const intl3 = tmp3(1114).intl;
+    items.push(intl3.string(tmp3(1114).t.PHjkRE));
   }
   if (mapped2.length > 0) {
-    const intl4 = tmp3(1233).intl;
-    items.push(intl4.string(tmp3(1233).t.y3ZnnU));
+    const intl4 = tmp3(1114).intl;
+    items.push(intl4.string(tmp3(1114).t.y3ZnnU));
   }
-  tmp3Result = tmp3(9721);
+  tmp3Result = tmp3(9792);
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp5[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = tmp3Result.useSegmentedControlState(obj);
   if (1 === first) {
@@ -178,7 +178,7 @@ export default function SelectConnectionActionSheet(arg0) {
     obj1 = { children: null };
     const obj2 = { state: null };
     obj2[0] = segmentedControlState;
-    obj1[0] = tmp2(tmp3(9722).SegmentedControl, obj2);
+    obj1[0] = tmp2(tmp3(9793).SegmentedControl, obj2);
     let tmp2Result = tmp2(closure_5, obj1);
   } else {
     tmp2Result = null;

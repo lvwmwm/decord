@@ -1,16 +1,16 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16773
+// Function ID: 16774
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 673, 21, 4481, 709, 695, 6921, 4923, 7804, 1234, 5533, 5086, 13865, 1233, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1242, 6981, 4962, 7872, 1115, 5578, 5125, 13855, 1114, 2]
 // Exports: default
 
-// Module 16695 (UsernameSearchScreen)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16773 (UsernameSearchScreen)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
@@ -40,7 +40,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(6921)().insets;
+  const insets = ref(6981)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -56,9 +56,9 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(7804);
+  let obj = navigation(7872);
   const clientThemesOverride = obj.useClientThemesOverride();
-  obj1 = navigation(1234);
+  obj1 = navigation(1115);
   let prop = null;
   if (obj1.isIOS()) {
     prop = null;
@@ -72,15 +72,15 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  let tmp3Result = tmp3(5533);
-  const items2 = [callback(ref(5086), { absolute: true }), ];
+  let tmp3Result = tmp3(5578);
+  const items2 = [callback(ref(5125), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
-  const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(709).space.PX_16 }];
+  const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(576).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13865);
-  const intl = tmp7(1233).intl;
-  obj3[2] = intl.string(navigation(1233).t.YEOwDM);
+  tmp3Result = tmp3(13855);
+  const intl = tmp7(1114).intl;
+  obj3[2] = intl.string(navigation(1114).t.YEOwDM);
   obj3[3] = tmp.headerText;
   obj3[4] = ref;
   obj1[3] = callback(tmp3Result, obj3);

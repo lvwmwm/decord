@@ -1,0 +1,10 @@
+// Module ID: 17383
+// Function ID: 17384
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 17383 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/holidays/assets", scales: [1], hash: "69a0ecf46982cea47de18b3e75dfe8f5", name: "snowsgiving_loading_light", type: "webm" });

@@ -1,13 +1,13 @@
-// Module ID: 1919
-// Function ID: 1920
+// Module ID: 1355
+// Function ID: 1356
 // Name: _initLibdiscore
-// Dependencies: [5, 17, 1920, 2]
+// Dependencies: [5, 17, 1356, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1919 (_initLibdiscore)
+// Module 1355 (_initLibdiscore)
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import importAllResult from "setTimeout" /* 1920 */;
+import importAllResult from "setTimeout" /* 1356 */;
 
 function _initLibdiscore() {
   const self = this;

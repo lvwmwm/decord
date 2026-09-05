@@ -1,17 +1,17 @@
-// Module ID: 7857
-// Function ID: 7858
+// Module ID: 7926
+// Function ID: 7927
 // Name: ConversationListItemBase
-// Dependencies: [19, 17, 7529, 7531, 673, 21, 4481, 709, 1498, 4197, 686, 586, 7838, 7854, 7840, 5562, 4477, 1233, 7858, 7859, 7862, 4948, 2]
+// Dependencies: [19, 17, 7596, 7598, 1074, 21, 4560, 576, 1483, 4262, 672, 504, 7907, 7923, 7909, 5607, 4556, 1114, 7927, 7928, 7931, 4987, 2]
 
-// Module 7857 (ConversationListItemBase)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 7926 (ConversationListItemBase)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "removePendingListFetch" /* 7529 */;
-import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_6 } from "CONVERSATION_COLORS" /* 7531 */;
-import { VerticalGradient } from "ME" /* 673 */;
+import closure_5 from "removePendingListFetch" /* 7596 */;
+import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_6 } from "CONVERSATION_COLORS" /* 7598 */;
+import { VerticalGradient } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ConversationListItemBase(conversation) {
@@ -112,7 +112,7 @@ const obj3 = { position: "absolute", left: 0, right: 0, bottom: -ThemesDefault.s
 const memoResult = importAllResult.memo(function ConversationListItem(channelId) {
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
-  let obj = channelId(586);
+  let obj = channelId(504);
   const items = [closure_5];
   const items1 = [channelId, conversationId];
   const stateFromStores = obj.useStateFromStores(items, () => {

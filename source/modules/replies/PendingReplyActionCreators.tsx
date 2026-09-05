@@ -1,12 +1,12 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11669
+// Function ID: 11670
 // Name: createPendingReply
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: createPendingReply, createShallowPendingReply, deletePendingReply, setPendingReplyShouldMention
 
-// Module 11601 (createPendingReply)
+// Module 11669 (createPendingReply)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/replies/PendingReplyActionCreators.tsx");
 

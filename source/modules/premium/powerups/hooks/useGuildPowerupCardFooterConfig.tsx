@@ -1,15 +1,15 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12533
+// Function ID: 12534
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1908, 4368, 673, 12431, 586, 4371, 12428, 2]
+// Dependencies: [1979, 4450, 1074, 12499, 504, 4453, 12496, 2]
 // Exports: default
 
-// Module 12465 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12428 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12431 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 12533 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12496 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12499 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4450 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: c4, PowerupActiveStatusType: c5 } = BoostedGuildTiers);
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("modules/premium/powerups/ho
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
   const tmp3 = usePowerupActiveStatusDefault(arg0, skuId);
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_3];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -32,8 +32,8 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   }, items1);
   let tmp6 = tmp3.type !== constants.INACTIVE;
   if (!tmp6) {
-    tmp6 = skuId.skuId === _require(4371).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
-    const tmp7 = skuId.skuId === _require(4371).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    tmp6 = skuId.skuId === _require(4453).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    const tmp7 = skuId.skuId === _require(4453).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
   }
   let tmp8 = tmp6;
   if (!tmp6) {

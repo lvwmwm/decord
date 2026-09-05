@@ -1,15 +1,15 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16455
+// Function ID: 16456
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 7844, 4481, 709, 6940, 7795, 1233, 10856, 16380, 16381, 2]
+// Dependencies: [19, 21, 7913, 4560, 576, 7000, 7863, 1114, 10925, 16456, 16457, 2]
 // Exports: default
 
-// Module 16379 (ICYMICustomScoresModal)
+// Module 16455 (ICYMICustomScoresModal)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7913 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -23,7 +23,7 @@ const result = require("set").fileFinishedImporting("modules/icymi/native/custom
 
 export default function ICYMICustomScoresModal() {
   const _require = callback3();
-  let obj = _require(6940);
+  let obj = _require(7000);
   closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
@@ -45,14 +45,14 @@ export default function ICYMICustomScoresModal() {
     name: "default",
     options(navigation) {
       const obj = { title: null, headerLeft: null };
-      const intl = lib(1233).intl;
-      obj[0] = intl.string(lib(1233).t.jVshKt);
-      obj[1] = lib(7795).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(10856)());
+      const intl = lib(1114).intl;
+      obj[0] = intl.string(lib(1114).t.jVshKt);
+      obj[1] = lib(7863).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(10925)());
       return obj;
     },
     getComponent() {
-      return lib(16380).default;
+      return lib(16456).default;
     }
   };
   const items = [
@@ -60,11 +60,11 @@ export default function ICYMICustomScoresModal() {
     callback(closure_5.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: lib(7795).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: lib(7863).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return lib(16381).default;
+        return lib(16457).default;
       }
     })
   ];

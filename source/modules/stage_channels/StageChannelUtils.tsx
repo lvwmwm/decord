@@ -1,18 +1,18 @@
-// Module ID: 8330
-// Function ID: 8331
+// Module ID: 8400
+// Function ID: 8401
 // Name: fillChunk
-// Dependencies: [4557, 1391, 5375, 673, 8331, 12, 4680, 1233, 4125, 2]
+// Dependencies: [4583, 1962, 5414, 1074, 8401, 12, 4712, 1114, 4204, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 8330 (fillChunk)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH" /* 5375 */;
-import { Permissions } from "ME" /* 673 */;
-import { RowType } from "RowType" /* 8331 */;
+// Module 8400 (fillChunk)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH" /* 5414 */;
+import { Permissions } from "ME" /* 1074 */;
+import { RowType } from "RowType" /* 8401 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
@@ -148,30 +148,30 @@ export const getParticipantNamesText = function getParticipantNamesText(channel,
     return flag;
   });
   if (0 === found.length) {
-    const intl3 = set(1233).intl;
-    let stringResult = intl3.string(set(1233).t.FUVhyC);
+    const intl3 = set(1114).intl;
+    let stringResult = intl3.string(set(1114).t.FUVhyC);
   } else if (1 === found.length) {
-    const intl2 = set(1233).intl;
+    const intl2 = set(1114).intl;
     let obj = { a: null };
     obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
-    stringResult = intl2.formatToPlainString(set(1233).t.EQwZlN, obj);
+    stringResult = intl2.formatToPlainString(set(1114).t.EQwZlN, obj);
     const obj5 = getNicknameDefault;
   } else if (2 === found.length) {
-    const intl = set(1233).intl;
+    const intl = set(1114).intl;
     obj = { a: null, b: null };
     obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
     const obj2 = getNicknameDefault;
     obj[1] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[1].user);
-    stringResult = intl.formatToPlainString(set(1233).t.zBcKoA, obj);
+    stringResult = intl.formatToPlainString(set(1114).t.zBcKoA, obj);
     const obj3 = getNicknameDefault;
   } else {
-    const intl4 = set(1233).intl;
+    const intl4 = set(1114).intl;
     obj = { a: null, b: null, n: null };
     obj[0] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[0].user);
     const obj7 = getNicknameDefault;
     obj[1] = getNicknameDefault.getName(channel.getGuildId(), channel.id, found[1].user);
     obj[2] = found.length - 2;
-    stringResult = intl4.formatToPlainString(set(1233).t["3AqFaG"], obj);
+    stringResult = intl4.formatToPlainString(set(1114).t["3AqFaG"], obj);
     const obj8 = getNicknameDefault;
   }
   return stringResult;

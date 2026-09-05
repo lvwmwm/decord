@@ -1,20 +1,20 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11124
+// Function ID: 11125
 // Name: ToastEmoji
-// Dependencies: [19, 4473, 1924, 21, 4481, 709, 1234, 586, 1431, 7070, 4477, 1233, 4923, 1350, 4194, 2]
+// Dependencies: [19, 4552, 1374, 21, 4560, 576, 1115, 504, 1396, 7130, 4556, 1114, 4962, 4272, 4259, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 11056 (ToastEmoji)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import dispatcherDefault from "dispatcher" /* 4194 */;
-import Text from "Text" /* 4477 */;
+// Module 11124 (ToastEmoji)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import Text from "Text" /* 4556 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1374 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 require = arg1;
 class ToastEmoji {
@@ -89,13 +89,13 @@ const result = set.fileFinishedImporting("modules/double_tap_to_react/native/Dou
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4923);
+  let obj = emoji(4962);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(1350).AccessibilityAnnouncer;
-    const intl = tmp(1233).intl;
+    const AccessibilityAnnouncer = tmp(4272).AccessibilityAnnouncer;
+    const intl = tmp(1114).intl;
     obj = { emojiName: null };
     obj[0] = emoji.name;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1233).t.nKY0Fl, obj));
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1114).t.nKY0Fl, obj));
   } else {
     obj = { key: "DEFAULT_REACTION_EMOJI_UPDATED", icon: null, content: null, toastDurationMs: 3000 };
     obj[1] = function icon() {

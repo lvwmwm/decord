@@ -1,12 +1,12 @@
-// Module ID: 5138
-// Function ID: 5139
+// Module ID: 5177
+// Function ID: 5178
 // Name: getCreateAttachmentURL
-// Dependencies: [673, 5090, 2]
+// Dependencies: [1074, 5129, 2]
 
-// Module 5138 (getCreateAttachmentURL)
+// Module 5177 (getCreateAttachmentURL)
 import set from "set" /* 2 */;
-import items from "items" /* 5090 */;
-import ME from "ME" /* 673 */;
+import items from "items" /* 5129 */;
+import ME from "ME" /* 1074 */;
 
 ({ Endpoints: obj1, MAX_ATTACHMENT_SIZE: c3, MAX_UPLOAD_COUNT: c4 } = ME);
 const result = set.fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 12022
+// Function ID: 12023
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 7213, 21, 4481, 7212, 11947, 11937, 11946, 11948, 11955, 11941, 2]
+// Dependencies: [19, 17, 7273, 21, 4560, 7272, 12015, 12005, 12014, 12016, 12023, 12009, 2]
 // Exports: default
 
-// Module 11954 (ForumPostListBody)
+// Module 12022 (ForumPostListBody)
 import noopAll from "noop" /* 19 */;
-import GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME from "GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME" /* 7212 */;
-import ForumPostUsername from "ForumPostUsername" /* 11937 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11946 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 11947 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 11955 */;
+import GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME from "GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME" /* 7272 */;
+import ForumPostUsername from "ForumPostUsername" /* 12005 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12014 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 12015 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 12023 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7213 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7273 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -45,7 +45,7 @@ export default function ForumPostListBody(arg0) {
     const obj4 = { title: null, lineClamp: 2, ellipsizeMode: "tail", hasUnreads: null };
     obj4[0] = thread.name;
     obj4[3] = hasUnreads;
-    tmp9Result = tmp9(tmp10(11948), obj4);
+    tmp9Result = tmp9(tmp10(12016), obj4);
   }
   items2[1] = tmp9Result;
   items2[2] = callback(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -70,7 +70,7 @@ export default function ForumPostListBody(arg0) {
       }
       obj5[4] = id;
       obj5[5] = tmp.thumbnailContainer;
-      tmp9Result = tmp9(tmp2(11941).ForumPostMediaThumbnail, obj5);
+      tmp9Result = tmp9(tmp2(12009).ForumPostMediaThumbnail, obj5);
     }
   }
   items3[1] = tmp9Result;

@@ -1,18 +1,18 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7959
+// Function ID: 7960
 // Name: createAddRecipientSystemMessage
-// Dependencies: [1390, 1386, 1921, 7891, 7893, 1233, 7895, 2]
+// Dependencies: [1961, 1957, 1371, 7960, 7962, 1114, 7964, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 7890 (createAddRecipientSystemMessage)
+// Module 7959 (createAddRecipientSystemMessage)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7960 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
 
 const THREAD_CHANNEL_TYPES = createChannelRecord.THREAD_CHANNEL_TYPES;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");

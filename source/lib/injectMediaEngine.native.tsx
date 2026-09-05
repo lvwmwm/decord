@@ -1,10 +1,10 @@
-// Module ID: 4533
-// Function ID: 4534
-// Dependencies: [4534, 4535, 2]
+// Module ID: 1909
+// Function ID: 1910
+// Dependencies: [1910, 1911, 2]
 
-// Module 4533
+// Module 1909
 import set from "set" /* 2 */;
-import inject from "inject" /* 4534 */;
+import inject from "inject" /* 1910 */;
 
 inject.inject({
   supported() {
@@ -18,7 +18,7 @@ inject.inject({
 
   },
   getVoiceEngine() {
-    return require(4535) /* logger */.default;
+    return require(1911) /* logger */.default;
   },
   getOpenH264LibraryPath() {
 

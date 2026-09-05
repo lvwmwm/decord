@@ -1,10 +1,10 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8296
+// Function ID: 8297
 // Name: createTiktokVideoControls
-// Dependencies: [32, 19, 21, 8227, 8202, 8196, 8200, 8201, 2]
+// Dependencies: [32, 19, 21, 8297, 8272, 8266, 8270, 8271, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8226 (createTiktokVideoControls)
+// Module 8296 (createTiktokVideoControls)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

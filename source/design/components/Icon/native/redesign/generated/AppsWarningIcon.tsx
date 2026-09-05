@@ -1,14 +1,14 @@
-// Module ID: 5064
-// Function ID: 5065
+// Module ID: 5103
+// Function ID: 5104
 // Name: AppsWarningIcon
-// Dependencies: [19, 21, 709, 4196, 5016, 2]
+// Dependencies: [19, 21, 576, 4261, 5055, 2]
 // Exports: AppsWarningIcon
 
-// Module 5064 (AppsWarningIcon)
+// Module 5103 (AppsWarningIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5016 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 5055 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

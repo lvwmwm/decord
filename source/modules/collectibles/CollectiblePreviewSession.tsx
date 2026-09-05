@@ -1,10 +1,10 @@
-// Module ID: 11020
-// Function ID: 11021
+// Module ID: 11088
+// Function ID: 11089
 // Name: currentPreviewGeneration
 // Dependencies: [2]
 // Exports: commitCollectiblePreview, currentPreviewGeneration
 
-// Module 11020 (currentPreviewGeneration)
+// Module 11088 (currentPreviewGeneration)
 import set from "set" /* 2 */;
 
 let c0 = 0;

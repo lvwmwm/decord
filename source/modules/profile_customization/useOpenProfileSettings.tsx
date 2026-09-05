@@ -1,17 +1,17 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9207
+// Function ID: 9208
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1921, 9137, 673, 682, 8091, 9138, 9139, 7320, 2]
+// Dependencies: [19, 1371, 9208, 1074, 1084, 8160, 9209, 9210, 7382, 2]
 // Exports: default
 
-// Module 9136 (useOpenProfileSettings)
+// Module 9207 (useOpenProfileSettings)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
-import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1921 */;
-import closure_3 from "zustandStore" /* 9137 */;
-import handleFormOpen from "handleFormOpen" /* 8091 */;
+import ME from "ME" /* 1074 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
+import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1371 */;
+import closure_3 from "zustandStore" /* 9208 */;
+import handleFormOpen from "handleFormOpen" /* 8160 */;
 
 noop.useCallback;
 mergeGuildAvatarDefault;

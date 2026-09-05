@@ -1,45 +1,45 @@
-// Module ID: 2270
-// Function ID: 2271
+// Module ID: 2298
+// Function ID: 2299
 // Name: messagesProxy
-// Dependencies: [1238, 2271, 2272, 2273, 2274, 2275, 2276, 2277, 2278, 2279, 2280, 2281, 2282, 2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293, 2294, 2295, 2296, 2297, 2298, 2299, 2300, 2301, 1273, 2]
+// Dependencies: [1120, 2299, 2300, 2301, 2302, 2303, 2304, 2305, 2306, 2307, 2308, 2309, 2310, 2311, 2312, 2313, 2314, 2315, 2316, 2317, 2318, 2319, 2320, 2321, 2322, 2323, 2324, 2325, 2326, 2327, 2328, 2329, 1155, 2]
 
-// Module 2270 (messagesProxy)
+// Module 2298 (messagesProxy)
 import set from "set" /* 2 */;
-import loadJsonAsset from "loadJsonAsset" /* 1238 */;
-import registerAsset from "registerAsset" /* 2271 */;
-import registerAsset2 from "registerAsset" /* 2272 */;
-import registerAsset3 from "registerAsset" /* 2273 */;
-import registerAsset4 from "registerAsset" /* 2274 */;
-import registerAsset5 from "registerAsset" /* 2275 */;
-import registerAsset6 from "registerAsset" /* 2276 */;
-import registerAsset7 from "registerAsset" /* 2277 */;
-import registerAsset8 from "registerAsset" /* 2278 */;
-import registerAsset9 from "registerAsset" /* 2279 */;
-import registerAsset10 from "registerAsset" /* 2280 */;
-import registerAsset11 from "registerAsset" /* 2281 */;
-import registerAsset12 from "registerAsset" /* 2282 */;
-import registerAsset13 from "registerAsset" /* 2283 */;
-import registerAsset14 from "registerAsset" /* 2284 */;
-import registerAsset15 from "registerAsset" /* 2285 */;
-import registerAsset16 from "registerAsset" /* 2286 */;
-import registerAsset17 from "registerAsset" /* 2287 */;
-import registerAsset18 from "registerAsset" /* 2288 */;
-import registerAsset19 from "registerAsset" /* 2289 */;
-import registerAsset20 from "registerAsset" /* 2290 */;
-import registerAsset21 from "registerAsset" /* 2291 */;
-import registerAsset22 from "registerAsset" /* 2292 */;
-import registerAsset23 from "registerAsset" /* 2293 */;
-import registerAsset24 from "registerAsset" /* 2294 */;
-import registerAsset25 from "registerAsset" /* 2295 */;
-import registerAsset26 from "registerAsset" /* 2296 */;
-import registerAsset27 from "registerAsset" /* 2297 */;
-import registerAsset28 from "registerAsset" /* 2298 */;
-import registerAsset29 from "registerAsset" /* 2299 */;
-import registerAsset30 from "registerAsset" /* 2300 */;
-import registerAsset31 from "registerAsset" /* 2301 */;
-import module_1273 from "module_1273" /* 1273 */;
+import loadJsonAsset from "loadJsonAsset" /* 1120 */;
+import registerAsset from "registerAsset" /* 2299 */;
+import registerAsset2 from "registerAsset" /* 2300 */;
+import registerAsset3 from "registerAsset" /* 2301 */;
+import registerAsset4 from "registerAsset" /* 2302 */;
+import registerAsset5 from "registerAsset" /* 2303 */;
+import registerAsset6 from "registerAsset" /* 2304 */;
+import registerAsset7 from "registerAsset" /* 2305 */;
+import registerAsset8 from "registerAsset" /* 2306 */;
+import registerAsset9 from "registerAsset" /* 2307 */;
+import registerAsset10 from "registerAsset" /* 2308 */;
+import registerAsset11 from "registerAsset" /* 2309 */;
+import registerAsset12 from "registerAsset" /* 2310 */;
+import registerAsset13 from "registerAsset" /* 2311 */;
+import registerAsset14 from "registerAsset" /* 2312 */;
+import registerAsset15 from "registerAsset" /* 2313 */;
+import registerAsset16 from "registerAsset" /* 2314 */;
+import registerAsset17 from "registerAsset" /* 2315 */;
+import registerAsset18 from "registerAsset" /* 2316 */;
+import registerAsset19 from "registerAsset" /* 2317 */;
+import registerAsset20 from "registerAsset" /* 2318 */;
+import registerAsset21 from "registerAsset" /* 2319 */;
+import registerAsset22 from "registerAsset" /* 2320 */;
+import registerAsset23 from "registerAsset" /* 2321 */;
+import registerAsset24 from "registerAsset" /* 2322 */;
+import registerAsset25 from "registerAsset" /* 2323 */;
+import registerAsset26 from "registerAsset" /* 2324 */;
+import registerAsset27 from "registerAsset" /* 2325 */;
+import registerAsset28 from "registerAsset" /* 2326 */;
+import registerAsset29 from "registerAsset" /* 2327 */;
+import registerAsset30 from "registerAsset" /* 2328 */;
+import registerAsset31 from "registerAsset" /* 2329 */;
+import module_1155 from "module_1155" /* 1155 */;
 
-const loader = module_1273.createLoader({
+const loader = module_1155.createLoader({
   bg() {
     const jsonAsset = loadJsonAsset.loadJsonAsset(registerAsset);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
@@ -165,7 +165,7 @@ const loader = module_1273.createLoader({
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1273.makeMessagesProxy(loader);
+const messagesProxy = module_1155.makeMessagesProxy(loader);
 const result = set.fileFinishedImporting("modules/guild_rooms/GuildRooms.messages.js");
 
 export default messagesProxy;

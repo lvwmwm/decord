@@ -1,12 +1,12 @@
-// Module ID: 705
-// Function ID: 706
+// Module ID: 1348
+// Function ID: 1349
 // Name: setDeveloperOptionSettings
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: setDeveloperOptionSettings, setRoutingKeyTags
 
-// Module 705 (setDeveloperOptionSettings)
+// Module 1348 (setDeveloperOptionSettings)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("actions/DeveloperOptionsActionCreators.tsx");
 

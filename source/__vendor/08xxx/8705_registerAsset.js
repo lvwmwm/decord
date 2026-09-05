@@ -1,10 +1,10 @@
 // Module ID: 8705
 // Function ID: 8706
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 8705 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ab7bfd0490af9a9d0729fca1ff2529c0", name: "HeartIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "eaee56f86ca7905c61b8b9a3d1c990d4", name: "MinecraftNeutralIcon-primary", type: "png" });

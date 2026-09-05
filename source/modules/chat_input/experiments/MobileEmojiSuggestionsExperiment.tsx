@@ -1,12 +1,12 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11963
+// Function ID: 11964
 // Name: useMobileEmojiSuggestionsConfig
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: getIsMobileEmojiSuggestionsConfig, useMobileEmojiSuggestionsConfig
 
-// Module 11895 (useMobileEmojiSuggestionsConfig)
+// Module 11963 (useMobileEmojiSuggestionsConfig)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-07-mobile-emoji-suggestions", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, style: "large" }, 2: { enabled: true, style: "small" } } });
 const result = set.fileFinishedImporting("modules/chat_input/experiments/MobileEmojiSuggestionsExperiment.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 4506
-// Function ID: 4507
+// Module ID: 1917
+// Function ID: 1918
 // Name: getOfficialApplicationId
-// Dependencies: [1935, 4507, 1954, 4514, 1431, 1394, 2]
+// Dependencies: [1386, 1918, 1894, 1924, 1396, 1369, 2]
 
-// Module 4506 (getOfficialApplicationId)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import toJSDefault from "toJS" /* 1935 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4514 */;
-import closure_3 from "createExecutable" /* 4507 */;
-import { createExecutable } from "createExecutable" /* 4507 */;
+// Module 1917 (getOfficialApplicationId)
+import toJSDefault from "toJS" /* 1386 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 1924 */;
+import closure_3 from "createExecutable" /* 1918 */;
+import { createExecutable } from "createExecutable" /* 1918 */;
 
 require = arg1;
 toJSDefault;
@@ -169,7 +169,7 @@ prototype["getArtworkURLs"] = function getArtworkURLs() {
     artwork = [];
   }
   const mapped = artwork.map((arg0) => closure_1_1(closure_1_2[3])(self.id, arg0, { keepAspectRatio: true }));
-  return mapped.filter(self(1394).isNotNullish);
+  return mapped.filter(self(1369).isNotNullish);
 };
 prototype["getCompanyByRole"] = function getCompanyByRole(DEVELOPER) {
   closure_0 = DEVELOPER;

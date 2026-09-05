@@ -1,18 +1,18 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16232
+// Function ID: 16233
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4481, 709, 7112, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 7172, 4556, 2]
 // Exports: default
 
-// Module 16154 (ChannelItemEmbeddedActivities)
+// Module 16232 (ChannelItemEmbeddedActivities)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import GameIcon from "GameIcon" /* 7112 */;
-import GameIconDefault from "GameIcon" /* 7112 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import GameIcon from "GameIcon" /* 7172 */;
+import GameIconDefault from "GameIcon" /* 7172 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

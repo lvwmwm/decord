@@ -1,19 +1,19 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11074
+// Function ID: 11075
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4481, 709, 10628, 1498, 10672, 10591, 4936, 1233, 2432, 10761, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 10699, 1483, 10743, 10662, 4975, 1114, 2460, 10830, 4556, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 11006 (PremiumGiftDMSuccessBody)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10628 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10761 */;
+// Module 11074 (PremiumGiftDMSuccessBody)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10699 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10830 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);

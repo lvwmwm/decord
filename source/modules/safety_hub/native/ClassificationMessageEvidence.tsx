@@ -1,21 +1,21 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11891
+// Function ID: 11892
 // Name: ClassificationEvidence
-// Dependencies: [32, 19, 17, 1301, 1921, 8360, 8349, 673, 21, 7863, 4481, 586, 1362, 11824, 11825, 8348, 4678, 8191, 8238, 11826, 8582, 4745, 11, 2]
+// Dependencies: [32, 19, 17, 1183, 1371, 8430, 8419, 1074, 21, 7932, 4560, 504, 4411, 11892, 11893, 8418, 4710, 8261, 8308, 11894, 8652, 4783, 11, 2]
 // Exports: default
 
-// Module 11823 (ClassificationEvidence)
-import setOptionsDefault from "setOptions" /* 7863 */;
+// Module 11891 (ClassificationEvidence)
+import setOptionsDefault from "setOptions" /* 7932 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "handleThemeChange" /* 1301 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
-import SafetyHubView from "SafetyHubView" /* 8349 */;
-import { MessageTypes } from "ME" /* 673 */;
+import closure_9 from "handleThemeChange" /* 1183 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import closure_11 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8430 */;
+import SafetyHubView from "SafetyHubView" /* 8419 */;
+import { MessageTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c5, findNodeHandle: closure_6, Image: error, ActivityIndicator: closure_8 } = get_ActivityIndicator);
@@ -28,7 +28,7 @@ const result = require("set").fileFinishedImporting("modules/safety_hub/native/C
 
 export default function ClassificationEvidence(arg0) {
   let attachments = callback2();
-  let obj = ref(586);
+  let obj = ref(504);
   const items = [memo];
   const stateFromStores = obj.useStateFromStores(items, () => memo.getCurrentUser());
   obj1 = React;
@@ -39,21 +39,21 @@ export default function ClassificationEvidence(arg0) {
   const tmp8 = first1(React.useState({}), 2);
   first1 = tmp8[0];
   React = tmp8[1];
-  let obj2 = ref(586);
+  let obj2 = ref(504);
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
-  if (obj2.useStateFromStores(items1, () => ref(1362).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(11824));
+  if (obj2.useStateFromStores(items1, () => ref(4411).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp11(11892));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(11825));
+    assetSource = resolveAssetSource(tmp11(11893));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
   const tmp5Result = first1(obj1.useState(first2.attachments.length), 2);
   first3 = tmp5Result[0];
   closure_8 = tmp5Result[1];
-  let tmpResult = tmp(586);
+  let tmpResult = tmp(504);
   const items2 = [closure_11];
   id = first2.id;
   const items3 = [first2.attachments, first1, assetSource];
@@ -156,7 +156,7 @@ export default function ClassificationEvidence(arg0) {
       obj[9] = uri.id;
       return obj;
     });
-    ref(8191).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
+    ref(8261).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
   }, items4);
   const items6 = [first2.attachments];
   const callback1 = obj1.useCallback((arg0) => {
@@ -202,7 +202,7 @@ export default function ClassificationEvidence(arg0) {
     obj = { style: null, children: null };
     obj[0] = attachments.dummyVideoAttachments;
     attachments = first2.attachments;
-    first2 = attachments.filter((filename) => ref(4678).isVideoFile(filename.filename));
+    first2 = attachments.filter((filename) => ref(4710).isVideoFile(filename.filename));
     obj[1] = first2.map((uri) => {
       closure_0 = uri;
       obj = {
@@ -223,7 +223,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return closure_1_18(first(8238), obj, arg1);
+      return closure_1_18(first(8308), obj, arg1);
     });
     items8[1] = callback(tmp24, obj);
     obj[0] = items8;
@@ -232,11 +232,11 @@ export default function ClassificationEvidence(arg0) {
     obj1 = { ref: null, onTapImage: null, inverted: false };
     obj1[0] = ref;
     obj1[1] = callback;
-    const items9 = [callback(tmp13(11826), obj1), ];
+    const items9 = [callback(tmp13(11894), obj1), ];
     obj2 = { rowGenerator: null, message: null, modifyRow: null, pointerEvents: "none" };
     obj2[0] = closure_20;
-    let tmp13Result = tmp13(8582);
-    tmpResult = tmp(4745);
+    let tmp13Result = tmp13(8652);
+    tmpResult = tmp(4783);
     const obj3 = { id: null, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
     obj3[0] = first2.id;
     const _Date = Date;

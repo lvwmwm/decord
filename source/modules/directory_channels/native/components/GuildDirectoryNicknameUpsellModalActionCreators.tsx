@@ -1,20 +1,20 @@
-// Module ID: 12593
-// Function ID: 12594
-// Dependencies: [4731, 12594, 2008, 2]
+// Module ID: 12661
+// Function ID: 12662
+// Dependencies: [4763, 12662, 1896, 2]
 
-// Module 12593
+// Module 12661
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
 
 let c3 = "GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryNicknameUpsellModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
-    _modDef4731.pushLazy(asyncRequireImpl(12594, dependencyMap.paths), closure_0, c3);
+    _modDef4763.pushLazy(asyncRequireImpl(12662, dependencyMap.paths), closure_0, c3);
   },
   close() {
-    _modDef4731.popWithKey(c3);
+    _modDef4763.popWithKey(c3);
   }
 };

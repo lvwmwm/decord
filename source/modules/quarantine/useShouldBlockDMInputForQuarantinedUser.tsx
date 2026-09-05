@@ -1,20 +1,20 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 12434
+// Function ID: 12435
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [4743, 673, 12198, 586, 2]
+// Dependencies: [4781, 1074, 12266, 504, 2]
 // Exports: default
 
-// Module 12366 (useShouldBlockDMInputForQuarantinedUser)
-import closure_2 from "reinjectEphemerals" /* 4743 */;
-import { UserFlags } from "ME" /* 673 */;
+// Module 12434 (useShouldBlockDMInputForQuarantinedUser)
+import closure_2 from "reinjectEphemerals" /* 4781 */;
+import { UserFlags } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/quarantine/useShouldBlockDMInputForQuarantinedUser.tsx");
 
 export default function useShouldBlockDMInputForQuarantinedUser(hasFlag, channel) {
   const _require = channel;
-  const showConvoStarterInDM = _require(12198).useShowConvoStarterInDM(channel);
-  _require(586);
+  const showConvoStarterInDM = _require(12266).useShowConvoStarterInDM(channel);
+  _require(504);
   [][0] = channel;
   let tmp4 = null != hasFlag;
   if (tmp4) {

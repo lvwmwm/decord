@@ -1,13 +1,13 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9120
+// Function ID: 9121
 // Name: isStableVoiceStateEqual
-// Dependencies: [4532, 4500, 640, 586, 2]
+// Dependencies: [1908, 4579, 558, 504, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9049 (isStableVoiceStateEqual)
-import shallowEqualDefault from "shallowEqual" /* 640 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_4 from "updateVoiceState" /* 4500 */;
+// Module 9120 (isStableVoiceStateEqual)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import closure_3 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_4 from "updateVoiceState" /* 4579 */;
 
 const require = arg1;
 function isStableVoiceStateEqual(arg0, arg1) {
@@ -32,7 +32,7 @@ export const useStableVoiceParticipant = function useStableVoiceParticipant(arg0
   closure_1 = arg1;
   const items = [closure_3, closure_4];
   const items1 = [arg0, arg1];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null != closure_0) {
       const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
       if (null != voiceState) {
@@ -48,7 +48,7 @@ export const useStableVoiceParticipant = function useStableVoiceParticipant(arg0
 export const useMuteDeafenIconState = function useMuteDeafenIconState(id, guildId) {
   const _require = id;
   closure_1 = guildId;
-  obj = _require(586);
+  obj = _require(504);
   const items = [closure_3, closure_4];
   const items1 = [id, guildId];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -85,7 +85,7 @@ export const useStableVideoState = function useStableVideoState(arg0, arg1) {
   closure_1 = arg1;
   const items = [closure_3, closure_4];
   const items1 = [arg1, arg0];
-  return _require(586).useStateFromStoresObject(items, () => {
+  return _require(504).useStateFromStoresObject(items, () => {
     if (null != closure_0) {
       const voiceState = closure_1_4.getVoiceState(closure_1, tmp);
     }
@@ -112,7 +112,7 @@ export const useStableVideoState = function useStableVideoState(arg0, arg1) {
 export const useVideoIconState = function useVideoIconState(id, guildId) {
   const _require = id;
   closure_1 = guildId;
-  obj = _require(586);
+  obj = _require(504);
   const items = [closure_3, closure_4];
   const items1 = [guildId, id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {

@@ -1,12 +1,12 @@
-// Module ID: 4375
-// Function ID: 4376
+// Module ID: 4457
+// Function ID: 4458
 // Name: formatSize
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: formatKbSize
 
-// Module 4375 (formatSize)
+// Module 4457 (formatSize)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 function formatSize(result, arg1) {
   let tmp = arg1;

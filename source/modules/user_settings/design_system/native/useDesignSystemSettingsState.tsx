@@ -1,11 +1,11 @@
-// Module ID: 15679
-// Function ID: 15680
+// Module ID: 15755
+// Function ID: 15756
 // Name: keys
-// Dependencies: [641, 2]
+// Dependencies: [560, 2]
 
-// Module 15679 (keys)
+// Module 15755 (keys)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 const obj = keys.create(() => ({ buttonSize: "md", buttonScale: 8, enableLoadingState: false, iconPosition: "start", showIcon: false, showDisabled: false }));
 const result = set.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemSettingsState.tsx");

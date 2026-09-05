@@ -1,9 +1,9 @@
-// Module ID: 5783
-// Function ID: 5784
+// Module ID: 5830
+// Function ID: 5831
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5783 (metadata)
+// Module 5830 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CatIllocon-2x.png.js");

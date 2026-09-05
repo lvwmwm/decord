@@ -1,15 +1,15 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13078
+// Function ID: 13079
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4481, 7108, 1233, 12560, 7147, 4477, 2]
+// Dependencies: [19, 21, 4560, 7168, 1114, 12628, 7207, 4556, 2]
 // Exports: default
 
-// Module 13010 (UserProfileGameFriendsCard)
+// Module 13078 (UserProfileGameFriendsCard)
 import noopAll from "noop" /* 19 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7108 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7147 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7168 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7207 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -30,46 +30,46 @@ export default function UserProfileGameFriendsCard(arg0) {
   } else {
     importDefault = "text-md/normal";
     if (1 === found.length) {
-      const intl2 = found(1233).intl;
+      const intl2 = found(1114).intl;
       let obj = { applicationName: null };
       obj[0] = function applicationName() {
-        return lib(textmdnormal(12560), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+        return lib(textmdnormal(12628), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
       };
-      let formatResult = intl2.format(found(1233).t.wQ6urw, obj);
+      let formatResult = intl2.format(found(1114).t.wQ6urw, obj);
       let tmp6 = found;
     } else if (2 === found.length) {
-      const intl = found(1233).intl;
+      const intl = found(1114).intl;
       obj = { applicationName: null, applicationName2: null };
       obj[0] = function applicationName() {
-        return lib(textmdnormal(12560), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+        return lib(textmdnormal(12628), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
       };
       obj[1] = function applicationName2() {
-        return lib(textmdnormal(12560), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
+        return lib(textmdnormal(12628), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
       };
-      formatResult = intl.format(found(1233).t.C98CSN, obj);
+      formatResult = intl.format(found(1114).t.C98CSN, obj);
       tmp6 = found;
     } else {
       dependencyMap = found[found.length - 1];
       jsx = found.slice(0, -1);
-      const intl4 = found(1233).intl;
+      const intl4 = found(1114).intl;
       obj = { applications: null, applicationNameLast: null };
       obj[0] = function applications(arg0) {
         return lib.map((application) => closure_1_3(closure_1_1(closure_1_2[5]), { application, useComma: true, textVariant: closure_1, iconSize: 16 }, application.id));
       };
       obj[1] = function applicationNameLast() {
-        return lib(textmdnormal(12560), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
+        return lib(textmdnormal(12628), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
       };
-      formatResult = intl4.format(found(1233).t.UxpwAh, obj);
+      formatResult = intl4.format(found(1114).t.UxpwAh, obj);
       tmp6 = found;
     }
     obj1 = { style: null, title: null, children: null };
     const items = [tmp.card, style];
     obj1[0] = items;
-    const intl3 = tmp6(1233).intl;
-    obj1[1] = intl3.string(tmp6(1233).t["Uv/eTx"]);
+    const intl3 = tmp6(1114).intl;
+    obj1[1] = intl3.string(tmp6(1114).t["Uv/eTx"]);
     const obj2 = { variant: "text-md/normal", color: "text-default", children: null };
     obj2[2] = formatResult;
-    obj1[2] = jsx(tmp6(4477).Text, { variant: "text-md/normal", color: "text-default", children: null });
+    obj1[2] = jsx(tmp6(4556).Text, { variant: "text-md/normal", color: "text-default", children: null });
     return jsx(UserProfileCardDefault, { style: null, title: null, children: null });
   }
   const arr = useGetOrFetchApplicationsDefault(applicationIds);

@@ -1,12 +1,12 @@
-// Module ID: 17212
-// Function ID: 17213
+// Module ID: 17292
+// Function ID: 17293
 // Name: isLimitedAccessErrorCode
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 17212 (isLimitedAccessErrorCode)
+// Module 17292 (isLimitedAccessErrorCode)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const AbortCodes = ME.AbortCodes;
 const result = set.fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessUtils.tsx");

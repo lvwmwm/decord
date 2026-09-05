@@ -1,10 +1,10 @@
-// Module ID: 10227
-// Function ID: 10228
-// Dependencies: [19, 21, 4866, 10228, 2008, 2]
+// Module ID: 10298
+// Function ID: 10299
+// Dependencies: [19, 21, 4905, 10299, 1896, 2]
 
-// Module 10227
+// Module 10298
 import noopAll from "noop" /* 19 */;
-import _modDef4866 from "module_4866" /* 4866 */;
+import _modDef4905 from "module_4905" /* 4905 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 export default {
   handleShowEmojiUpsellAlert(guildId) {
     guildId = guildId.guildId;
-    let obj = _modDef4866;
+    let obj = _modDef4905;
     obj = {
       importer() {
         return guildId(closure_1_2[4])(closure_1_2[3], closure_1_2.paths).then((arg0) => {

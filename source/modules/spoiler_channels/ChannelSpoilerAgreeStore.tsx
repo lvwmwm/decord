@@ -1,12 +1,12 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7330
+// Function ID: 7331
 // Name: initialize
-// Dependencies: [1215, 586, 706, 2]
+// Dependencies: [502, 504, 573, 2]
 
-// Module 7268 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "fetchFingerprint" /* 1215 */;
+// Module 7330 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "fetchFingerprint" /* 502 */;
 
 let closure_1 = { users: {} };
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;

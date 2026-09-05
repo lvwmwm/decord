@@ -1,9 +1,9 @@
-// Module ID: 4705
-// Function ID: 4706
+// Module ID: 4737
+// Function ID: 4738
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4705 (metadata)
+// Module 4737 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/plant-vase-2.png.js");

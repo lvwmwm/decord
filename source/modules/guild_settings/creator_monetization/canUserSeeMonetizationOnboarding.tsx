@@ -1,14 +1,14 @@
-// Module ID: 7199
-// Function ID: 7200
+// Module ID: 7259
+// Function ID: 7260
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1921, 7200, 7201, 4113, 2]
+// Dependencies: [1371, 7260, 7261, 4192, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 7199 (canUserSeeMonetizationOnboarding)
-import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4113 */;
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7200 */;
-import set from "set" /* 7201 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
+// Module 7259 (canUserSeeMonetizationOnboarding)
+import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4192 */;
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 7260 */;
+import set from "set" /* 7261 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");

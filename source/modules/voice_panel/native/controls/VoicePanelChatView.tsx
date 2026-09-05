@@ -1,21 +1,21 @@
-// Module ID: 12202
-// Function ID: 12203
+// Module ID: 12270
+// Function ID: 12271
 // Name: memoResult1
-// Dependencies: [19, 17, 12203, 673, 21, 4481, 4729, 1228, 12200, 1233, 4435, 12204, 4218, 7013, 5086, 7804, 1492, 1627, 12211, 4494, 4331, 11461, 4205, 4920, 12212, 11272, 2]
+// Dependencies: [19, 17, 12271, 1074, 21, 4560, 4761, 1109, 12268, 1114, 4514, 12272, 4296, 7073, 5125, 7872, 1477, 1611, 12279, 4573, 4413, 11529, 4271, 4959, 12280, 11340, 2]
 
-// Module 12202 (memoResult1)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 4435 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5086 */;
-import setDefault from "set" /* 7013 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12200 */;
-import dismissPanelDefault from "dismissPanel" /* 12204 */;
+// Module 12270 (memoResult1)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import registerAssetDefault from "registerAsset" /* 4514 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5125 */;
+import setDefault from "set" /* 7073 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12268 */;
+import dismissPanelDefault from "dismissPanel" /* 12272 */;
 import importAllResult from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
-import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 12203 */;
-import ME from "ME" /* 673 */;
+import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 12271 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -25,7 +25,7 @@ let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "h
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
   const windowDimensions = importAllResult.useContext(dismissPanelDefault).windowDimensions;
-  let obj = windowDimensions(4218);
+  let obj = windowDimensions(4296);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };

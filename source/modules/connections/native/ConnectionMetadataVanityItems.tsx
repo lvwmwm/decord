@@ -1,24 +1,24 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11575
+// Function ID: 11576
 // Name: PaypalVanityTag
-// Dependencies: [19, 17, 5369, 21, 4481, 709, 1233, 11508, 11509, 12, 1896, 4477, 1296, 5368, 2]
+// Dependencies: [19, 17, 5408, 21, 4560, 576, 1114, 11576, 11577, 12, 1880, 4556, 1178, 5407, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11507 (PaypalVanityTag)
+// Module 11575 (PaypalVanityTag)
 import applyDefault from "apply" /* 12 */;
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1896 */;
-import Text from "Text" /* 4477 */;
-import officialApplicationIds from "officialApplicationIds" /* 5368 */;
-import registerAssetDefault from "registerAsset" /* 11508 */;
-import registerAssetDefault2 from "registerAsset" /* 11509 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1880 */;
+import Text from "Text" /* 4556 */;
+import officialApplicationIds from "officialApplicationIds" /* 5407 */;
+import registerAssetDefault from "registerAsset" /* 11576 */;
+import registerAssetDefault2 from "registerAsset" /* 11577 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import OperatorTypes from "OperatorTypes" /* 5369 */;
+import OperatorTypes from "OperatorTypes" /* 5408 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PaypalVanityTag(style) {
@@ -41,13 +41,13 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1233).intl;
+    const intl = tmp2(1114).intl;
     obj = { name: null, value: null };
     obj[0] = label;
     obj[1] = sum;
-    let children = intl.format(tmp2(1233).t.HLoinF, obj);
+    let children = intl.format(tmp2(1114).t.HLoinF, obj);
   } else {
-    const intl2 = tmp2(1233).intl;
+    const intl2 = tmp2(1114).intl;
     obj = { value: null };
     obj[0] = sum;
     children = intl2.format(label, obj);

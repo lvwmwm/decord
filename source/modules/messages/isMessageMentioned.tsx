@@ -1,13 +1,13 @@
-// Module ID: 4759
-// Function ID: 4760
+// Module ID: 4798
+// Function ID: 4799
 // Name: isMentioned
-// Dependencies: [1386, 1991, 1908, 2]
+// Dependencies: [1957, 2021, 1979, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4759 (isMentioned)
-import closure_0 from "ensureGuildLoaded" /* 1386 */;
-import closure_1 from "trackCommunicationDisabled" /* 1991 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+// Module 4798 (isMentioned)
+import closure_0 from "ensureGuildLoaded" /* 1957 */;
+import closure_1 from "trackCommunicationDisabled" /* 2021 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
 
 function isMentioned(suppressRoles) {
   ({ userId, mentionUsers, mentionRoles, suppressEveryone } = suppressRoles);

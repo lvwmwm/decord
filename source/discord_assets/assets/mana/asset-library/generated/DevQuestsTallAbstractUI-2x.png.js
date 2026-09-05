@@ -1,9 +1,9 @@
-// Module ID: 5845
-// Function ID: 5846
+// Module ID: 5896
+// Function ID: 5897
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5845 (metadata)
+// Module 5896 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DevQuestsTallAbstractUI-2x.png.js");

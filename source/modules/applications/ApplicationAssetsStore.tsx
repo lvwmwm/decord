@@ -1,12 +1,12 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8140
+// Function ID: 8141
 // Name: handleFetchEmbeddedActivityShelfSuccess
-// Dependencies: [12, 586, 706, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 8071 (handleFetchEmbeddedActivityShelfSuccess)
+// Module 8140 (handleFetchEmbeddedActivityShelfSuccess)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleFetchEmbeddedActivityShelfSuccess(assets) {
   assets = assets.assets;

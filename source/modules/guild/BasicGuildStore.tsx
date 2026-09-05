@@ -1,11 +1,11 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 7955
+// Function ID: 7956
 // Name: getGuild
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7886 (getGuild)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7955 (getGuild)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let c0 = 0;
 let closure_1 = {};

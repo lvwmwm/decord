@@ -1,11 +1,11 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15340
+// Function ID: 15341
 // Name: set
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 15264 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 15340 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import set from "set" /* 2 */;
 
 let obj = { seenFontIds: null, seenEffectIds: null, newFontsBadgeDismissed: false, newEffectsBadgeDismissed: false };

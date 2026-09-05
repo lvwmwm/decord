@@ -1,10 +1,10 @@
 // Module ID: 12289
 // Function ID: 12290
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 12289 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ae39bece93fb2e7db2a552f53a1d8fa1", name: "TwitterNeutralIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "6b37e553071b3a1f760426253196e13f", name: "ic_radio_circle_checked_green", type: "png" });

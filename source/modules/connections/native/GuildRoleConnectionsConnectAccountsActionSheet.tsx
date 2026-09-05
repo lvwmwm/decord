@@ -1,37 +1,37 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11562
+// Function ID: 11563
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 7047, 1995, 1934, 1215, 1386, 5242, 1991, 4120, 5369, 673, 21, 4481, 709, 4416, 5244, 1431, 1362, 1296, 4989, 4681, 4477, 1233, 5368, 11495, 7105, 9367, 11496, 11497, 12, 4197, 11498, 38, 4194, 11185, 4953, 8523, 5367, 586, 5370, 5475, 695, 4708, 4448, 7320, 11501, 9181, 706, 4731, 9507, 2008, 9174, 11505, 7090, 11506, 7144, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 7107, 2025, 1385, 502, 1957, 5281, 2021, 4199, 5408, 1074, 21, 4560, 576, 4495, 5283, 1396, 4411, 1178, 5028, 4713, 4556, 1114, 5407, 11563, 7165, 9438, 11564, 11565, 12, 4262, 11566, 38, 4259, 11253, 4992, 8593, 5406, 504, 5409, 5520, 1242, 4740, 4527, 7382, 11569, 9252, 573, 4763, 9578, 1896, 9245, 11573, 7150, 11574, 7204, 4975, 2]
 
-// Module 11494 (PlatformIcon)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
-import getChannelIcon from "getChannelIcon" /* 4989 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5368 */;
+// Module 11562 (PlatformIcon)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4992 */;
+import getChannelIcon from "getChannelIcon" /* 5028 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5283 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5407 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "recomputeFromAppTokens" /* 7047 */;
-import closure_10 from "_getSystemLocale" /* 1995 */;
-import closure_11 from "createdAt" /* 1934 */;
-import closure_12 from "fetchFingerprint" /* 1215 */;
-import closure_13 from "ensureGuildLoaded" /* 1386 */;
-import closure_14 from "set" /* 5242 */;
-import closure_15 from "trackCommunicationDisabled" /* 1991 */;
-import closure_16 from "getUncachedChannelPermissions" /* 4120 */;
-import OperatorTypes from "OperatorTypes" /* 5369 */;
-import ME from "ME" /* 673 */;
+import closure_9 from "recomputeFromAppTokens" /* 7107 */;
+import closure_10 from "_getSystemLocale" /* 2025 */;
+import closure_11 from "createdAt" /* 1385 */;
+import closure_12 from "fetchFingerprint" /* 502 */;
+import closure_13 from "ensureGuildLoaded" /* 1957 */;
+import closure_14 from "set" /* 5281 */;
+import closure_15 from "trackCommunicationDisabled" /* 2021 */;
+import closure_16 from "getUncachedChannelPermissions" /* 4199 */;
+import OperatorTypes from "OperatorTypes" /* 5408 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PlatformIcon(platformType) {
@@ -58,7 +58,7 @@ function ChannelName(channel) {
     obj = { source: null, style: null };
     obj[0] = channelIcon;
     obj[1] = tmp.channelNameIcon;
-    tmp8 = callback2(tmp2(1296).Icon, obj);
+    tmp8 = callback2(tmp2(1178).Icon, obj);
   }
   const items1 = [tmp8, ];
   const tmp5 = computeChannelNameDefault(channel);
@@ -412,7 +412,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     }
   }, items3);
   let tmp3 = callback(React.useState(0), 2);
-  closure_16 = eligibilityStatesGroups(4197).useToken(ThemesDefault.unsafe_rawColors.GREEN_330);
+  closure_16 = eligibilityStatesGroups(4262).useToken(ThemesDefault.unsafe_rawColors.GREEN_330);
   obj = { children: null };
   const keys = Object.keys(memo1);
   const sorted = keys.sort((arg0, arg1) => {
@@ -693,34 +693,34 @@ function ConnectedUserAccountOptions(account) {
   let tmp12;
   if (set.has(account.type)) {
     obj = { label: null, value: null, onValueChange: null };
-    const intl = account(1233).intl;
-    obj[0] = intl.string(account(1233).t["+KCMSi"]);
+    const intl = account(1114).intl;
+    obj[0] = intl.string(account(1114).t["+KCMSi"]);
     obj[1] = tmp3;
     obj[2] = function onValueChange(closure_0) {
       _undefined(closure_0);
       closure_1_1(closure_1_2[40]).setFriendSync(account.type, account.id, closure_0);
     };
-    tmp12 = callback2(account(8523).FormSwitchRow, obj);
+    tmp12 = callback2(account(8593).FormSwitchRow, obj);
   }
   let tmp15;
   if (set2.has(account.type)) {
     obj = { label: null, value: null, onValueChange: null };
-    const intl2 = account(1233).intl;
+    const intl2 = account(1114).intl;
     obj1 = { platform: null };
     obj1[0] = value.name;
-    obj[0] = intl2.formatToPlainString(account(1233).t["6u6J0q"], obj1);
+    obj[0] = intl2.formatToPlainString(account(1114).t["6u6J0q"], obj1);
     obj[1] = tmp4[0];
     obj[2] = function onValueChange(closure_0) {
       callback3(closure_0);
       closure_1_1(closure_1_2[40]).setShowActivity(account.type, account.id, closure_0);
     };
-    tmp15 = callback2(account(8523).FormSwitchRow, obj);
+    tmp15 = callback2(account(8593).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
     const obj2 = { label: null, value: null, disabled: null, onValueChange: null };
-    const intl3 = account(1233).intl;
-    obj2[0] = intl3.string(account(1233).t.FYKGsL);
+    const intl3 = account(1114).intl;
+    obj2[0] = intl3.string(account(1114).t.FYKGsL);
     obj2[1] = first;
     obj2[2] = !first1;
     obj2[3] = function onValueChange(arg0) {
@@ -733,12 +733,12 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = closure_1_1(closure_1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(8523).FormSwitchRow, obj2);
+    tmp18 = callback2(account(8593).FormSwitchRow, obj2);
   }
   const obj3 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj4 = { label: null, value: null, onValueChange: null };
-  const intl4 = account(1233).intl;
-  obj4[0] = intl4.string(account(1233).t.f7yOAX);
+  const intl4 = account(1114).intl;
+  obj4[0] = intl4.string(account(1114).t.f7yOAX);
   obj4[1] = first1;
   obj4[2] = function onValueChange(arg0) {
     callback(!arg0);
@@ -750,7 +750,7 @@ function ConnectedUserAccountOptions(account) {
     }
     closure_1_1(closure_1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(8523).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
+  const items = [callback2(account(8593).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
   obj3[1] = items;
   return callback3(closure_8, obj3);
 }

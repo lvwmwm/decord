@@ -1,17 +1,17 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11414
+// Function ID: 11415
 // Name: MaxForumPostReactions
-// Dependencies: [19, 17, 21, 4481, 11246, 7816, 10147, 2]
+// Dependencies: [19, 17, 21, 4560, 11314, 7885, 10218, 2]
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 11346 (MaxForumPostReactions)
+// Module 11414 (MaxForumPostReactions)
 import noopAll from "noop" /* 19 */;
-import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7816 */;
-import BurstReactionButton from "BurstReactionButton" /* 10147 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 11246 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7885 */;
+import BurstReactionButton from "BurstReactionButton" /* 10218 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 11314 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -26,12 +26,12 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
   ({ parentChannel, firstMessage, containerWidth, containerStyle } = thread);
   const tmp = callback2();
   dependencyMap = tmp;
-  const disableReactionCreates = reactionContainerStyle(11246)(thread).disableReactionCreates;
+  const disableReactionCreates = reactionContainerStyle(11314)(thread).disableReactionCreates;
   let num = 28;
   if (disableReactionCreates) {
     num = 0;
   }
-  let obj = thread(7816);
+  let obj = thread(7885);
   obj = { containerWidth: containerWidth - num, reactionEmojiWidth: 46, digitWidth: 7.5, message: firstMessage, parentChannel };
   const maxPossibleForumPostReactions = obj.useMaxPossibleForumPostReactions(obj);
   ({ reactions, additionalReactionCount } = maxPossibleForumPostReactions);
@@ -58,7 +58,7 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
       obj1[0] = additionalReactionCount;
       obj1[1] = reactionContainerStyle;
       obj1[2] = thread.id;
-      tmp8 = callback(tmp3(10147).AdditionalReactionCount, obj1);
+      tmp8 = callback(tmp3(10218).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp8;
     let tmp10 = !disableReactionCreates;
@@ -66,7 +66,7 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
       const obj2 = { containerStyle: null, threadId: null };
       obj2[0] = reactionContainerStyle;
       obj2[1] = thread.id;
-      tmp10 = callback(tmp3(10147).AddReactionButton, obj2);
+      tmp10 = callback(tmp3(10218).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj[1] = items1;
@@ -85,8 +85,8 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
   ({ parentChannel, firstMessage, containerStyle } = thread);
   const tmp = callback2();
   dependencyMap = tmp;
-  const disableReactionCreates = reactionContainerStyle(11246)(thread).disableReactionCreates;
-  let obj = thread(7816);
+  const disableReactionCreates = reactionContainerStyle(11314)(thread).disableReactionCreates;
+  let obj = thread(7885);
   obj = { message: firstMessage, parentChannel, sorted: false, count: null };
   let num = 2;
   if (disableReactionCreates) {
@@ -118,7 +118,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items2 = [tmp.actionBarReaction, reactionContainerStyle];
       obj1[1] = items2;
       obj1[2] = thread.id;
-      tmp8 = callback(tmp3(10147).AdditionalReactionCount, obj1);
+      tmp8 = callback(tmp3(10218).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp8;
     let tmp10 = !disableReactionCreates;
@@ -127,7 +127,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items3 = [tmp.actionBarReaction, reactionContainerStyle];
       obj2[0] = items3;
       obj2[1] = thread.id;
-      tmp10 = callback(tmp3(10147).AddReactionButton, obj2);
+      tmp10 = callback(tmp3(10218).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj[1] = items1;

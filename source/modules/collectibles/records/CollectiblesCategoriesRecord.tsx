@@ -1,11 +1,11 @@
-// Module ID: 7493
-// Function ID: 7494
+// Module ID: 7560
+// Function ID: 7561
 // Name: fromServer
-// Dependencies: [7494, 7476, 2]
+// Dependencies: [7561, 7543, 2]
 
-// Module 7493 (fromServer)
-import closure_0 from "fromServer" /* 7494 */;
-import closure_1 from "fromServer" /* 7476 */;
+// Module 7560 (fromServer)
+import closure_0 from "fromServer" /* 7561 */;
+import closure_1 from "fromServer" /* 7543 */;
 
 let prototype;
 prototype = function CollectiblesCategoriesRecord(categories) {

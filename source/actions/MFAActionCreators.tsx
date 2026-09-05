@@ -1,12 +1,12 @@
-// Module ID: 14605
-// Function ID: 14606
-// Dependencies: [13671, 673, 527, 706, 2]
+// Module ID: 14680
+// Function ID: 14681
+// Dependencies: [13746, 1074, 1272, 573, 2]
 
-// Module 14605
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "getVerificationKey" /* 13671 */;
-import { Endpoints } from "ME" /* 673 */;
+// Module 14680
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import closure_3 from "getVerificationKey" /* 13746 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("actions/MFAActionCreators.tsx");
@@ -36,10 +36,10 @@ export default {
     obj = { url: Endpoints.MFA_SMS_ENABLE, oldFormErrors: true, rejectWithError: sendRequest.rejectWithMigratedError() };
     const obj3 = sendRequest;
     return HTTP.post(obj).then((arg0) => {
-      callback(706).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
+      callback(573).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
       return arg0;
     }, (arg0) => {
-      callback(706).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
+      callback(573).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
       throw arg0;
     });
   },
@@ -52,10 +52,10 @@ export default {
     obj[3] = sendRequest.rejectWithMigratedError();
     const obj4 = sendRequest;
     return HTTP.post(obj).then((arg0) => {
-      callback(706).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
+      callback(573).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
       return arg0;
     }, (arg0) => {
-      callback(706).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
+      callback(573).dispatch({ type: "MFA_SMS_TOGGLE_COMPLETE" });
       throw arg0;
     });
   },
@@ -80,11 +80,11 @@ export default {
     if (regenerate) {
       regenerateNonce = nonces.regenerateNonce;
     }
-    const HTTP = _require(527).HTTP;
+    const HTTP = _require(1272).HTTP;
     obj = { url: Endpoints.MFA_CODES_VERIFICATION, body: obj, oldFormErrors: true, rejectWithError: null };
     obj = { key: verificationKey, nonce: regenerateNonce, regenerate };
-    obj[3] = _require(527).rejectWithMigratedError();
-    const obj3 = _require(527);
+    obj[3] = _require(1272).rejectWithMigratedError();
+    const obj3 = _require(1272);
     return HTTP.post(obj).then((body) => {
       let obj = closure_1_1(closure_1_2[3]);
       obj = { type: "MFA_VIEW_BACKUP_CODES", codes: body.body.backup_codes, key: closure_0 };

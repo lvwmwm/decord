@@ -1,21 +1,21 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14815
+// Function ID: 14816
 // Name: items
-// Dependencies: [19, 17, 1921, 21, 4481, 709, 7526, 14741, 14742, 4172, 5384, 4741, 14743, 2]
+// Dependencies: [19, 17, 1371, 21, 4560, 576, 7593, 14816, 14817, 5423, 5424, 4773, 14818, 2]
 // Exports: default
 
-// Module 14740 (items)
-import ThemesDefault from "Themes" /* 709 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5384 */;
-import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14741 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14743 */;
+// Module 14815 (items)
+import ThemesDefault from "Themes" /* 576 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 5423 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5424 */;
+import FamilyCenterSettingsParentalControlsNoticeDefault from "FamilyCenterSettingsParentalControlsNotice" /* 14816 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14818 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { noticeContainer: null };

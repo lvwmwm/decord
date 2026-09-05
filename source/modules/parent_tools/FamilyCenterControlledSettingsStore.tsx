@@ -1,13 +1,13 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7540
+// Function ID: 7541
 // Name: getSettings
-// Dependencies: [1341, 1305, 586, 706, 2]
+// Dependencies: [1223, 1187, 504, 573, 2]
 
-// Module 7473 (getSettings)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import create from "create" /* 1305 */;
-import b64ToProto from "b64ToProto" /* 1341 */;
+// Module 7540 (getSettings)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import create from "create" /* 1187 */;
+import b64ToProto from "b64ToProto" /* 1223 */;
 
 require = arg1;
 let c2 = false;

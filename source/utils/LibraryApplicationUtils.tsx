@@ -1,15 +1,15 @@
-// Module ID: 4529
-// Function ID: 4530
+// Module ID: 7399
+// Function ID: 7400
 // Name: getComboId
-// Dependencies: [32, 1921, 4530, 673, 4166, 2]
+// Dependencies: [32, 1371, 5510, 1074, 1935, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4529 (getComboId)
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+// Module 7399 (getComboId)
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "addSku" /* 4530 */;
-import ME from "ME" /* 673 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "addSku" /* 5510 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ LibraryApplicationFlags: c5, LocalDispatchApplicationStates: closure_6, StatusTypes: error } = ME);

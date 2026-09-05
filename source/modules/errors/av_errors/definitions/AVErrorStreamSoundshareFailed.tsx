@@ -1,15 +1,15 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17842
+// Function ID: 17843
 // Name: AVErrorStreamSoundshareFailedDefinition
-// Dependencies: [4503, 4576, 673, 9039, 17754, 4547, 2]
+// Dependencies: [4582, 4608, 1074, 9110, 17834, 4612, 2]
 
-// Module 17762 (AVErrorStreamSoundshareFailedDefinition)
-import isStreamKey from "isStreamKey" /* 4547 */;
-import mapped from "mapped" /* 9039 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17754 */;
-import closure_2 from "reset" /* 4503 */;
-import closure_3 from "getHookError" /* 4576 */;
-import { MediaEngineHookTypes } from "ME" /* 673 */;
+// Module 17842 (AVErrorStreamSoundshareFailedDefinition)
+import isStreamKey from "isStreamKey" /* 4612 */;
+import mapped from "mapped" /* 9110 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17834 */;
+import closure_2 from "reset" /* 4582 */;
+import closure_3 from "getHookError" /* 4608 */;
+import { MediaEngineHookTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");

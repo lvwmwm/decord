@@ -1,15 +1,15 @@
-// Module ID: 8783
-// Function ID: 8784
+// Module ID: 8853
+// Function ID: 8854
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4530, 673, 3, 706, 527, 4379, 8784, 1205, 2]
+// Dependencies: [5, 5510, 1074, 3, 573, 1272, 4461, 8854, 1232, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8783 (fetchVirtualCurrencyBalance)
+// Module 8853 (fetchVirtualCurrencyBalance)
 import timestampDefault from "timestamp" /* 3 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addSku" /* 4530 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "addSku" /* 5510 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function fetchVirtualCurrencyBalance() {
@@ -204,7 +204,7 @@ function _redeemVirtualCurrencyForSKU() {
                 throwTypeErrorResult = dependencyMap;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                throwTypeErrorResult = callback2(706).wait(() => {
+                throwTypeErrorResult = callback2(573).wait(() => {
                   let obj = _undefined(_undefined2[4]);
                   obj = { type: "VIRTUAL_CURRENCY_REDEEM_START", skuId: c0 };
                   obj.dispatch(obj);
@@ -220,7 +220,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(8784);
+                  let obj8 = callback(8854);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;
@@ -229,7 +229,7 @@ function _redeemVirtualCurrencyForSKU() {
                 if (c8) {
                   obj2.test_mode = true;
                 }
-                const HTTP = callback(527).HTTP;
+                const HTTP = callback(1272).HTTP;
                 let obj3 = { url: null, body: null, rejectWithError: false };
                 obj3[0] = c5.VIRTUAL_CURRENCY_SKU_REDEEM(callback);
                 obj3[1] = obj2;
@@ -242,12 +242,12 @@ function _redeemVirtualCurrencyForSKU() {
             } else if (2 === tmp7) {
               c4 = 0;
               closure_14 = c3;
-              if (closure_14 instanceof callback(4379).BillingError) {
+              if (closure_14 instanceof callback(4461).BillingError) {
                 billingError = closure_14;
               } else {
-                billingError = new callback(4379).BillingError(closure_14);
+                billingError = new callback(4461).BillingError(closure_14);
               }
-              let obj6 = callback2(706);
+              let obj6 = callback2(573);
               const obj5 = { type: "VIRTUAL_CURRENCY_REDEEM_FAIL", skuId: null, error: null };
               obj5[1] = callback;
               obj5[2] = billingError;
@@ -278,7 +278,7 @@ function _redeemVirtualCurrencyForSKU() {
                 const _Array = Array;
                 throwTypeErrorResult = body;
                 if (Array.isArray(body)) {
-                  obj = callback2(706);
+                  obj = callback2(573);
                   const obj7 = { type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS", skuId: null, entitlements: null };
                   obj7[1] = callback;
                   obj7[2] = body;
@@ -300,7 +300,7 @@ function _redeemVirtualCurrencyForSKU() {
               const _Error = Error;
               error = new Error(c11, body);
               logger.error(c11, body);
-              obj3 = callback2(1205);
+              obj3 = callback2(1232);
               const obj9 = { tags: null };
               obj9[0] = { app_context: "virtual_currency" };
               obj3.captureException(error, obj9);

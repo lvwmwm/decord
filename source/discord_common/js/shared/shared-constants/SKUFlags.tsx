@@ -1,9 +1,9 @@
-// Module ID: 692
-// Function ID: 693
+// Module ID: 1097
+// Function ID: 1098
 // Name: SKUFlags
 // Dependencies: [2]
 
-// Module 692 (SKUFlags)
+// Module 1097 (SKUFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SKUFlags.tsx");

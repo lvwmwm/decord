@@ -1,12 +1,12 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15876
+// Function ID: 15877
 // Name: useDefaultGuildsRestricted
-// Dependencies: [4166, 2]
+// Dependencies: [1935, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 15800 (useDefaultGuildsRestricted)
+// Module 15876 (useDefaultGuildsRestricted)
 import set from "set" /* 2 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/privacy_and_safety/DefultGuildsRestrictedSetting.tsx");
 

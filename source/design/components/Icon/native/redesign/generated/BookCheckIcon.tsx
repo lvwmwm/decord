@@ -1,14 +1,14 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5075
+// Function ID: 5076
 // Name: BookCheckIcon
-// Dependencies: [19, 21, 709, 4196, 5022, 2]
+// Dependencies: [19, 21, 576, 4261, 5061, 2]
 // Exports: BookCheckIcon
 
-// Module 5036 (BookCheckIcon)
+// Module 5075 (BookCheckIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5022 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 5061 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

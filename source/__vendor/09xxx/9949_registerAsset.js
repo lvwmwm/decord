@@ -1,10 +1,10 @@
 // Module ID: 9949
 // Function ID: 9950
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9949 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/light_theme", width: 24, height: 24, scales: [2, 3], hash: "b58afbfc4faaabe5f94fadb0443cc8ee", name: "voice_bar_deafen_off", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "a421bef75ae00154373ea36b10c7c903", name: "Camera", type: "lottie" });

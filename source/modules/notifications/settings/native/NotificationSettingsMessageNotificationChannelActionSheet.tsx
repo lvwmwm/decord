@@ -1,15 +1,15 @@
-// Module ID: 10091
-// Function ID: 10092
+// Module ID: 10162
+// Function ID: 10163
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 4709, 673, 4710, 682, 21, 10078, 10090, 1233, 10079, 7059, 7054, 2]
+// Dependencies: [19, 4741, 1074, 4742, 1084, 21, 10149, 10161, 1114, 10150, 7119, 7114, 2]
 // Exports: default
 
-// Module 10091 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 10162 (NotificationSettingsMessageNotificationChannelActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { UserNotificationSettings } from "ME" /* 673 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
-import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 682 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { UserNotificationSettings } from "ME" /* 1074 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
+import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 1084 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10078);
+  let obj = _require(10149);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
@@ -26,8 +26,8 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
   let stringResult;
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = tmp(1233).intl;
-      stringResult = intl.string(tmp(1233).t.eP8yWU);
+      const intl = tmp(1114).intl;
+      stringResult = intl.string(tmp(1114).t.eP8yWU);
     }
   }
   obj[2] = stringResult;
@@ -44,5 +44,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(closure_1_2[11]).NotificationLabel;
     const result = unread(closure_1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10090), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
+  return jsx(unread(10161), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
 };

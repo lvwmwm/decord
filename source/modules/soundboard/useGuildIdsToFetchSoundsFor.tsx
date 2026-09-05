@@ -1,14 +1,14 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 7340
+// Function ID: 7341
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 1908, 4973, 644, 2]
+// Dependencies: [19, 1979, 5012, 563, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 7278 (useGuildIdsToFetchSoundsFor)
+// Module 7340 (useGuildIdsToFetchSoundsFor)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4973 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 5012 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/soundboard/useGuildIdsToFetchSoundsFor.tsx");

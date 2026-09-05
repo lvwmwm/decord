@@ -1,24 +1,24 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11114
+// Function ID: 11115
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1921, 11047, 673, 1924, 21, 4481, 709, 5084, 1233, 1296, 6880, 11048, 695, 11042, 586, 11049, 11050, 1362, 11052, 4932, 11053, 6921, 11078, 10854, 4343, 11080, 7795, 5579, 4477, 10826, 8531, 5642, 5560, 4448, 11133, 2008, 11135, 4439, 1235, 1641, 4731, 6940, 2]
+// Dependencies: [32, 19, 17, 1371, 11115, 1074, 1374, 21, 4560, 576, 5123, 1114, 1178, 6940, 11116, 1242, 11110, 504, 11117, 11118, 4411, 11120, 4971, 11121, 6981, 11146, 10923, 4425, 11148, 7863, 5624, 4556, 10895, 8601, 5687, 5605, 4527, 11201, 1896, 11203, 4518, 1116, 1625, 4763, 7000, 2]
 // Exports: default
 
-// Module 11046 (ClearInputButton)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import registerAssetDefault from "registerAsset" /* 6880 */;
+// Module 11114 (ClearInputButton)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import registerAssetDefault from "registerAsset" /* 6940 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { STATUS_MAX_LENGTH } from "StatusTypes" /* 11047 */;
-import ME from "ME" /* 673 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { STATUS_MAX_LENGTH } from "StatusTypes" /* 11115 */;
+import ME from "ME" /* 1074 */;
+import { EmojiIntention } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ClearInputButton(onPress) {
@@ -115,9 +115,9 @@ function EditCustomStatusWithPreview(navigation) {
   const callback1 = obj.useCallback(() => {
     onClose(analyticsLocations[21])();
     const timerId = setTimeout(() => {
-      const AccessibilityAnnouncer = callback(1362).AccessibilityAnnouncer;
-      const intl = callback(1233).intl;
-      AccessibilityAnnouncer.announce(intl.string(callback(1233).t.YdUwBS));
+      const AccessibilityAnnouncer = callback(4411).AccessibilityAnnouncer;
+      const intl = callback(1114).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1114).t.YdUwBS));
     }, 300);
     onClose();
   }, items3);
@@ -363,9 +363,9 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj[0] = intl.string(analyticsLocations(closure_1_2[11]).t.Iuzg8R);
     obj[1] = function headerTitle() {
       const obj = { title: null };
-      const intl = callback(1233).intl;
-      obj[0] = intl.string(callback(1233).t.Iuzg8R);
-      return callback3(callback(7795).GenericHeaderTitle, obj);
+      const intl = callback(1114).intl;
+      obj[0] = intl.string(callback(1114).t.Iuzg8R);
+      return callback3(callback(7863).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(closure_1_2[30]).getHeaderCloseButton(_prompt(closure_1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {
@@ -375,7 +375,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: null };
-  const obj2 = analyticsLocations(1235);
+  const obj2 = analyticsLocations(1116);
   const tmp2 = closure_13;
   const tmp3 = analyticsLocations;
   obj = undefined;
@@ -383,5 +383,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj = { height: 56 };
   }
   obj[3] = obj;
-  return tmp2(analyticsLocations(6940).Navigator, obj);
+  return tmp2(analyticsLocations(7000).Navigator, obj);
 };

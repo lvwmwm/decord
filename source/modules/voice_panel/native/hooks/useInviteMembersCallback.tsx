@@ -1,13 +1,13 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 17057
+// Function ID: 17058
 // Name: useInviteMembersCallback
-// Dependencies: [19, 1386, 673, 11522, 9749, 2]
+// Dependencies: [19, 1957, 1074, 11590, 9820, 2]
 // Exports: useInviteMembersCallback
 
-// Module 16979 (useInviteMembersCallback)
+// Module 17057 (useInviteMembersCallback)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ AnalyticsPages: c5, InstantInviteSources: closure_6 } = ME);

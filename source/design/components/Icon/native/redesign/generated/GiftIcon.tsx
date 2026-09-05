@@ -1,14 +1,14 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 11030
+// Function ID: 11031
 // Name: GiftIcon
-// Dependencies: [19, 21, 709, 4196, 8014, 2]
+// Dependencies: [19, 21, 576, 4261, 8083, 2]
 // Exports: GiftIcon
 
-// Module 10961 (GiftIcon)
+// Module 11030 (GiftIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8014 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8083 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,11 +1,11 @@
-// Module ID: 9786
-// Function ID: 9787
-// Dependencies: [1234, 9787, 9788, 2]
+// Module ID: 9857
+// Function ID: 9858
+// Dependencies: [1115, 9858, 9859, 2]
 
-// Module 9786
-import registerAssetDefault from "registerAsset" /* 9787 */;
-import registerAssetDefault2 from "registerAsset" /* 9788 */;
-import set from "set" /* 1234 */;
+// Module 9857
+import registerAssetDefault from "registerAsset" /* 9858 */;
+import registerAssetDefault2 from "registerAsset" /* 9859 */;
+import set from "set" /* 1115 */;
 
 if (set.isIOS()) {
   let importDefaultResult = registerAssetDefault;

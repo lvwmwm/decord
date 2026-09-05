@@ -1,14 +1,14 @@
-// Module ID: 6100
-// Function ID: 6101
+// Module ID: 6155
+// Function ID: 6156
 // Name: GiftingTier1SmallBadge
-// Dependencies: [21, 5542, 6101, 2]
+// Dependencies: [21, 5587, 6156, 2]
 // Exports: GiftingTier1SmallBadge
 
-// Module 6100 (GiftingTier1SmallBadge)
+// Module 6155 (GiftingTier1SmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import vanityUrlDefault from "vanityUrl" /* 6101 */;
+import preloadDefault from "preload" /* 5587 */;
+import vanityUrlDefault from "vanityUrl" /* 6156 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier1SmallBadge.native.tsx");

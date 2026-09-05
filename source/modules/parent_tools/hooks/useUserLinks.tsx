@@ -1,15 +1,15 @@
-// Module ID: 8575
-// Function ID: 8576
+// Module ID: 8645
+// Function ID: 8646
 // Name: useUserIdsForLinkStatus
-// Dependencies: [19, 1921, 7470, 7471, 644, 8576, 8577, 7526, 2]
+// Dependencies: [19, 1371, 7537, 7538, 563, 8646, 8647, 7593, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUserIds, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserIdsForLinkStatus, useUserQRLinkUrl, useUsersForLinkStatus
 
-// Module 8575 (useUserIdsForLinkStatus)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
+// Module 8645 (useUserIdsForLinkStatus)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
-import items from "items" /* 7471 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7537 */;
+import items from "items" /* 7538 */;
 
 require = arg1;
 ({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: error, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = items);
@@ -18,7 +18,7 @@ let result = require("set").fileFinishedImporting("modules/parent_tools/hooks/us
 export const useUserIdsForLinkStatus = function useUserIdsForLinkStatus(arg0) {
   const _require = arg0;
   const items = [closure_5];
-  const stateFromStores = _require(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const stateFromStores = _require(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, arg0];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -41,7 +41,7 @@ export const useUserIdsForLinkStatus = function useUserIdsForLinkStatus(arg0) {
 export const useUsersForLinkStatus = function useUsersForLinkStatus(PENDING) {
   let _require = PENDING;
   const items = [closure_5];
-  const stateFromStores = _require(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const stateFromStores = _require(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, PENDING];
   _require = React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -60,16 +60,16 @@ export const useUsersForLinkStatus = function useUsersForLinkStatus(PENDING) {
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((arg0) => null != arg0);
   }, items1);
-  const obj = _require(644);
+  const obj = _require(563);
   const items2 = [closure_4];
-  const stateFromStoresArray = _require(644).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
+  const stateFromStoresArray = _require(563).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
   return stateFromStoresArray.filter((arg0) => null != arg0);
 };
 export const useActiveLinkUserIds = function useActiveLinkUserIds() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
   const items = [closure_5];
-  stateFromStores = ACTIVE(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -111,7 +111,7 @@ export const useActiveLinkUsers = function useActiveLinkUsers() {
   let _require = ACTIVE;
   let stateFromStores;
   const items = [closure_5];
-  stateFromStores = _require(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = _require(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   _require = React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -130,16 +130,16 @@ export const useActiveLinkUsers = function useActiveLinkUsers() {
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((arg0) => null != arg0);
   }, items1);
-  const obj = _require(644);
+  const obj = _require(563);
   const items2 = [closure_4];
-  const stateFromStoresArray = _require(644).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
+  const stateFromStoresArray = _require(563).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
   return stateFromStoresArray.filter((arg0) => null != arg0);
 };
 export const useHasActiveLinks = function useHasActiveLinks() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
   const items = [closure_5];
-  stateFromStores = ACTIVE(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -161,7 +161,7 @@ export const useHasActiveLinks = function useHasActiveLinks() {
 };
 export const useHasActiveParentLinks = function useHasActiveParentLinks() {
   const items = [closure_5];
-  stateFromStores = stateFromStores(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = stateFromStores(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -195,9 +195,9 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
 export const useHasMaxConnections = function useHasMaxConnections() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
-  const tmp = stateFromStores(8576)();
+  const tmp = stateFromStores(8646)();
   const items = [closure_5];
-  stateFromStores = ACTIVE(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -219,8 +219,8 @@ export const useHasMaxConnections = function useHasMaxConnections() {
 };
 export const usePendingRequestCount = function usePendingRequestCount() {
   const items = [closure_4];
-  stateFromStores = stateFromStores(644).useStateFromStores(items, () => currentUser.getCurrentUser());
-  stateFromStores(644);
+  stateFromStores = stateFromStores(563).useStateFromStores(items, () => currentUser.getCurrentUser());
+  stateFromStores(563);
   [][0] = closure_5;
   let num = 0;
   if (null != stateFromStores) {
@@ -259,7 +259,7 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
   const items = [closure_5];
-  stateFromStores = ACTIVE(644).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  stateFromStores = ACTIVE(563).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
@@ -281,11 +281,11 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   const _require = activityWindowTimestampFormatter;
-  closure_1 = _require(8577).useSelectedTeenId();
-  const obj = _require(8577);
+  closure_1 = _require(8647).useSelectedTeenId();
+  const obj = _require(8647);
   const tmp = _require;
   const items = [closure_5];
-  const stateFromStores = _require(644).useStateFromStores(items, () => {
+  const stateFromStores = _require(563).useStateFromStores(items, () => {
     let rangeStartTimestamp = null;
     if (null != closure_1) {
       rangeStartTimestamp = closure_1_5.getRangeStartTimestamp();
@@ -296,20 +296,20 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = tmp(7526).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const tmpResult = tmp(7526);
+    result = tmp(7593).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const tmpResult = tmp(7593);
   }
   return result;
 };
 export const useLinkTimestampText = function useLinkTimestampText(id, status) {
   const _require = id;
   const items = [closure_5];
-  const stateFromStores = _require(644).useStateFromStores(items, () => closure_1_5.getLinkTimestamp(closure_0));
+  const stateFromStores = _require(563).useStateFromStores(items, () => closure_1_5.getLinkTimestamp(closure_0));
   if (null == stateFromStores) {
     return null;
   } else {
     const _Date = Date;
-    _require(7526).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const tmpResult = _require(7526);
+    _require(7593).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const tmpResult = _require(7593);
   }
 };

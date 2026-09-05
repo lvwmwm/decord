@@ -1,20 +1,20 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13736
+// Function ID: 13737
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1386, 1921, 13662, 673, 21, 4481, 709, 4477, 4680, 1233, 586, 1394, 1296, 11757, 10841, 4441, 4436, 695, 7138, 11306, 5642, 5560, 4936, 4448, 13663, 4494, 2]
+// Dependencies: [19, 17, 1957, 1371, 13737, 1074, 21, 4560, 576, 4556, 4712, 1114, 504, 1369, 1178, 11825, 10910, 4520, 4515, 1242, 7198, 11374, 5687, 5605, 4975, 4527, 13738, 4573, 2]
 // Exports: default
 
-// Module 13661 (getUserCalloutRowText)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 13736 (getUserCalloutRowText)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import GdmWarningMedium from "GdmWarningMedium" /* 13662 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import GdmWarningMedium from "GdmWarningMedium" /* 13737 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function getUserCalloutRowText(arg0) {
@@ -26,12 +26,12 @@ function getUserCalloutRowText(arg0) {
     const intl4 = getSystemLocale.intl;
     let obj = { usernameHook1: null, usernameHook2: null, numberOfOtherUsers: null };
     obj[0] = function usernameHook1() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 19) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 19) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     obj[1] = function usernameHook2() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 17) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 17) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     obj[2] = totalUsers - calledOutUserIds.length;
     let formatResult = intl4.format(getSystemLocale.t.qfo6KR, obj);
@@ -39,32 +39,32 @@ function getUserCalloutRowText(arg0) {
     const intl3 = getSystemLocale.intl;
     obj = { usernameHook1: null, usernameHook2: null };
     obj[0] = function usernameHook1() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 19) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 19) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     obj[1] = function usernameHook2() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 17) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 17) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     formatResult = intl3.format(getSystemLocale.t["67ZE+9"], obj);
   } else if (2 === totalUsers) {
     const intl2 = getSystemLocale.intl;
     obj1 = { usernameHook1: null, usernameHook2: null };
     obj1[0] = function usernameHook1() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 19) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 19) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     obj1[1] = function usernameHook2() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 17) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 17) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     formatResult = intl2.format(getSystemLocale.t.veV4IN, obj1);
   } else {
     const intl = getSystemLocale.intl;
     obj = { usernameHook: null };
     obj[0] = function usernameHook() {
-      const obj = { variant: "text-md/semibold", children: closure_1_1(4680).getName(closure_0, closure_1, 19) };
-      return closure_1_11(closure_1_0(4477).Text, obj);
+      const obj = { variant: "text-md/semibold", children: closure_1_1(4712).getName(closure_0, closure_1, 19) };
+      return closure_1_11(closure_1_0(4556).Text, obj);
     };
     formatResult = intl.format(getSystemLocale.t["4WHCtq"], obj);
   }
@@ -73,28 +73,28 @@ function getUserCalloutRowText(arg0) {
 function UserCalloutAvatars(userIds) {
   userIds = userIds.userIds;
   let REFRESH_MEDIUM_32 = dependencyMap;
-  let obj = userIds(586);
+  let obj = userIds(504);
   const items = [closure_7];
   const items1 = [userIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => userIds.map((arg0) => user.getUser(arg0)), items1);
-  let found = stateFromStoresArray.filter(userIds(1394).isNotNullish);
+  let found = stateFromStoresArray.filter(userIds(1369).isNotNullish);
   if (1 === userIds.length) {
     if (null != closure_7.getUser(userIds[0])) {
       obj = { user: null, guildId: null, size: null, "aria-hidden": true };
       found = found[0];
       obj[0] = found;
       obj[1] = userIds.guildId;
-      REFRESH_MEDIUM_32 = tmp(1296).AvatarSizes.REFRESH_MEDIUM_32;
+      REFRESH_MEDIUM_32 = tmp(1178).AvatarSizes.REFRESH_MEDIUM_32;
       obj[2] = REFRESH_MEDIUM_32;
-      let tmp6 = callback(tmp(1296).Avatar, obj);
+      let tmp6 = callback(tmp(1178).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11757).UserIcon, {});
+      tmp6 = callback(tmp(11825).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };
     obj[0] = found;
-    obj[1] = tmp(1296).AvatarSizes.REFRESH_MEDIUM_32;
-    return callback(tmp(10841).FacepileGroupDMAvatar, obj);
+    obj[1] = tmp(1178).AvatarSizes.REFRESH_MEDIUM_32;
+    return callback(tmp(10910).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

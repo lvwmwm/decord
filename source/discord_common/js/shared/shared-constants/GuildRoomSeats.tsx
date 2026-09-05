@@ -1,9 +1,9 @@
-// Module ID: 4688
-// Function ID: 4689
+// Module ID: 4720
+// Function ID: 4721
 // Name: GuildRoomSeats
 // Dependencies: [2]
 
-// Module 4688 (GuildRoomSeats)
+// Module 4720 (GuildRoomSeats)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildRoomSeats.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 11080
-// Function ID: 11081
+// Module ID: 11148
+// Function ID: 11149
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7148, 21, 4481, 709, 8117, 8173, 8158, 8172, 8169, 4343, 4448, 11081, 2008, 4205, 8177, 8186, 11043, 11044, 11084, 8731, 2]
+// Dependencies: [19, 17, 7208, 21, 4560, 576, 8186, 8242, 8227, 8241, 8238, 4425, 4527, 11149, 1896, 4271, 8246, 8256, 11111, 11112, 11152, 8801, 2]
 // Exports: default
 
-// Module 11080 (CustomStatusPreview)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11148 (CustomStatusPreview)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: c5, UserProfileThemeTypes: closure_6 } = ARBITRARY_LARGE_OFFSET);
@@ -27,8 +27,8 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
   }
   obj = { profileContainer: null, profileEffect: null };
   obj[6] = BACKGROUND_SURFACE_HIGH;
-  obj[7] = tmp4(709).radii.lg;
-  const merged = Object.assign(tmp4(709).shadows.SHADOW_HIGH);
+  obj[7] = tmp4(576).radii.lg;
+  const merged = Object.assign(tmp4(576).shadows.SHADOW_HIGH);
   obj[0] = obj;
   obj[1] = { zIndex: 1 };
   return obj;

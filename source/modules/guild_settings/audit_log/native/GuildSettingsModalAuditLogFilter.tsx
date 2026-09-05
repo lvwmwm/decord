@@ -1,19 +1,19 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 17545
+// Function ID: 17546
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1921, 17456, 673, 21, 4481, 709, 1233, 4325, 17458, 1627, 1498, 5472, 17466, 10873, 5644, 5560, 1296, 9958, 17467, 6990, 8163, 8804, 6980, 2]
+// Dependencies: [32, 19, 17, 1371, 17536, 1074, 21, 4560, 576, 1114, 4404, 17538, 1611, 1483, 5517, 17546, 10942, 5689, 5605, 1178, 10029, 17547, 7050, 8232, 8874, 7040, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17465 (GuildSettingsModalAuditLogFilter)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17545 (GuildSettingsModalAuditLogFilter)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import closure_7 from "AuditLogActions" /* 17456 */;
-import { AuditLogFilterTypes } from "ME" /* 673 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import closure_7 from "AuditLogActions" /* 17536 */;
+import { AuditLogFilterTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
@@ -235,8 +235,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
   const _require = closure_4;
-  const obj = _require(17458);
-  const mapped = _require(17458).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(17538);
+  const mapped = _require(17538).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

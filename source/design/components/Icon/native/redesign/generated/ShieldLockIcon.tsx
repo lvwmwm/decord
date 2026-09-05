@@ -1,14 +1,14 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9212
+// Function ID: 9213
 // Name: ShieldLockIcon
-// Dependencies: [19, 21, 709, 4196, 9142, 2]
+// Dependencies: [19, 21, 576, 4261, 9213, 2]
 // Exports: ShieldLockIcon
 
-// Module 9141 (ShieldLockIcon)
+// Module 9212 (ShieldLockIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9142 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 9213 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

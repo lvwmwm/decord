@@ -1,31 +1,31 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14768
+// Function ID: 14769
 // Name: handleLogInClick
-// Dependencies: [19, 17, 8360, 8349, 673, 21, 6534, 11815, 586, 1296, 1233, 4477, 4936, 4481, 709, 14694, 11842, 11814, 14690, 4953, 11813, 695, 7535, 7540, 4448, 14695, 2008, 14696, 14698, 2]
+// Dependencies: [19, 17, 8430, 8419, 1074, 21, 6593, 11883, 504, 1178, 1114, 4556, 4975, 4560, 576, 14769, 11910, 11882, 14765, 4992, 11881, 1242, 7602, 7607, 4527, 14770, 1896, 14771, 14773, 2]
 // Exports: default
 
-// Module 14693 (handleLogInClick)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Button2 from "Button" /* 4936 */;
-import handleLogoutDefault from "handleLogout" /* 6534 */;
-import _modDef11815 from "module_11815" /* 11815 */;
+// Module 14768 (handleLogInClick)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Button2 from "Button" /* 4975 */;
+import handleLogoutDefault from "handleLogout" /* 6593 */;
+import _modDef11883 from "module_11883" /* 11883 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
-import { AgeCheckStatus } from "SafetyHubView" /* 8349 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8430 */;
+import { AgeCheckStatus } from "SafetyHubView" /* 8419 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handleLogInClick() {
   handleLogoutDefault.closeSuspendedUser();
 }
 function handleRetryClick() {
-  _modDef11815.openV2("");
+  _modDef11883.openV2("");
 }
 function AutomatedUnderageAppealStatus() {
   let hyh4ls = require;
@@ -59,7 +59,7 @@ function AutomatedUnderageAppealStatus() {
   } else if (stateFromStores === tmp5.VERIFIED) {
     obj1 = { messageType: null, button: null, children: null };
     obj1[0] = Button.HelpMessageTypes.SUCCESS;
-    const obj2 = { variant: "secondary-overlay", size: "sm", text: null, onPress: null };
+    const obj2 = { variant: "secondary", size: "sm", text: null, onPress: null };
     const intl8 = getSystemLocale.intl;
     obj2[2] = intl8.string(getSystemLocale.t["2jvQ6K"]);
     obj2[3] = handleLogInClick;
@@ -88,7 +88,7 @@ function AutomatedUnderageAppealStatus() {
   } else if (stateFromStores === tmp5.UNDERAGE) {
     const obj6 = { messageType: null, button: null, children: null };
     obj6[0] = Button.HelpMessageTypes.ERROR;
-    const obj7 = { variant: "secondary-overlay", size: "sm", text: null, onPress: null };
+    const obj7 = { variant: "secondary", size: "sm", text: null, onPress: null };
     const intl3 = getSystemLocale.intl;
     obj7[2] = intl3.string(getSystemLocale.t.IcA9iD);
     obj7[3] = handleRetryClick;
@@ -99,7 +99,7 @@ function AutomatedUnderageAppealStatus() {
   } else if (stateFromStores === tmp5.UNDERAGE_MANUAL_REVIEW) {
     const obj8 = { messageType: null, button: null, children: null };
     obj8[0] = Button.HelpMessageTypes.ERROR;
-    const obj9 = { variant: "secondary-overlay", size: "sm", text: null, onPress: null };
+    const obj9 = { variant: "secondary", size: "sm", text: null, onPress: null };
     const intl = getSystemLocale.intl;
     obj9[2] = intl.string(getSystemLocale.t.NkTGsC);
     obj9[3] = handleRetryClick;

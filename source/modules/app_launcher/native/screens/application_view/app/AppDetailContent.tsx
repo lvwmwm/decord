@@ -1,23 +1,23 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12129
+// Function ID: 12130
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 19, 17, 9219, 1497, 673, 4960, 21, 4481, 12062, 709, 11986, 5560, 11147, 12037, 7454, 9501, 1233, 1627, 9345, 1954, 12066, 9218, 7456, 11983, 1234, 12068, 4477, 12070, 12034, 12072, 9217, 1296, 12079, 12081, 4448, 4708, 9502, 2]
+// Dependencies: [5, 19, 17, 9290, 1482, 1074, 4999, 21, 4560, 12130, 576, 12054, 5605, 11215, 12105, 7521, 9572, 1114, 1611, 9416, 1894, 12134, 9289, 7523, 12051, 1115, 12136, 4556, 12138, 12102, 12140, 9288, 1178, 12147, 12149, 4527, 4740, 9573, 2]
 // Exports: default
 
-// Module 12061 (PlaceholderCommandRow)
-import ThemesDefault from "Themes" /* 709 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import usePlaceholderWidth from "usePlaceholderWidth" /* 11986 */;
-import CommandRowIconDefault from "CommandRowIcon" /* 12037 */;
+// Module 12129 (PlaceholderCommandRow)
+import ThemesDefault from "Themes" /* 576 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import usePlaceholderWidth from "usePlaceholderWidth" /* 12054 */;
+import CommandRowIconDefault from "CommandRowIcon" /* 12105 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import getIndexKey from "getIndexKey" /* 9219 */;
-import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "TRUE_OPTION_NAME" /* 4960 */;
+import getIndexKey from "getIndexKey" /* 9290 */;
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1482 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "TRUE_OPTION_NAME" /* 4999 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PlaceholderCommandRow(isFirstRow) {

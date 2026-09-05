@@ -1,18 +1,18 @@
-// Module ID: 6935
-// Function ID: 6936
+// Module ID: 6995
+// Function ID: 6996
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4863, 1908, 673, 4166, 4708, 6936, 1233, 1228, 2]
+// Dependencies: [4902, 1979, 1074, 1935, 4740, 6996, 1114, 1109, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6935 (getSanitizedRestrictedGuilds)
-import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
-import getSearchSessionIdDefault from "getSearchSessionId" /* 6936 */;
-import closure_3 from "handleConnectionOpen" /* 4863 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
+// Module 6995 (getSanitizedRestrictedGuilds)
+import ComponentDispatcher from "ComponentDispatcher" /* 1109 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4740 */;
+import getSearchSessionIdDefault from "getSearchSessionId" /* 6996 */;
+import closure_3 from "handleConnectionOpen" /* 4902 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ AnalyticEvents: c5, FriendSourceFlags: closure_6, AllFriendSourceFlags: error, ComponentActions: closure_8 } = ME);

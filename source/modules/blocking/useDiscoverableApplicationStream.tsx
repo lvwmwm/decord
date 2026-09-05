@@ -1,13 +1,13 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 10878
+// Function ID: 10879
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4503, 4130, 673, 586, 2]
+// Dependencies: [4582, 4209, 1074, 504, 2]
 // Exports: default
 
-// Module 10809 (getDiscoverableApplicationStream)
-import closure_2 from "reset" /* 4503 */;
-import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import { RelationshipTypes } from "ME" /* 673 */;
+// Module 10878 (getDiscoverableApplicationStream)
+import closure_2 from "reset" /* 4582 */;
+import closure_3 from "markAllUserIdListsStale" /* 4209 */;
+import { RelationshipTypes } from "ME" /* 1074 */;
 
 const require = arg1;
 function getDiscoverableApplicationStream(id, items) {
@@ -41,7 +41,7 @@ export default function useDiscoverableApplicationStream(arg0) {
   const _require = arg0;
   let items = [closure_2, closure_3];
   const items1 = [arg0];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const items = [closure_1_2, closure_1_3];
     return closure_1_5(closure_0, items);
   }, items1);

@@ -242,7 +242,7 @@ const items = [
       };
       let obj2 = self(27);
       if (obj2.shouldPressibilityUseW3CPointerEventsForHover()) {
-        obj = { onPointerEnter: "left", onPointerLeave: "call" };
+        obj = { onPointerEnter: "hash", onPointerLeave: "call" };
         const _config = this._config;
         const onHoverIn = _config.onHoverIn;
         const onHoverOut = _config.onHoverOut;

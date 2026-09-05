@@ -1,12 +1,12 @@
-// Module ID: 1304
-// Function ID: 1305
+// Module ID: 1186
+// Function ID: 1187
 // Name: SystemThemeState
-// Dependencies: [673, 1305, 2]
+// Dependencies: [1074, 1187, 2]
 
-// Module 1304 (SystemThemeState)
+// Module 1186 (SystemThemeState)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import create from "create" /* 1305 */;
+import ME from "ME" /* 1074 */;
+import create from "create" /* 1187 */;
 
 const ThemeTypes = ME.ThemeTypes;
 let obj = { DARK: "dark", LIGHT: "light", NO_PREFERENCE: "unknown" };

@@ -1,12 +1,12 @@
-// Module ID: 7261
-// Function ID: 7262
-// Dependencies: [5, 4120, 673, 7262, 706, 2]
+// Module ID: 7323
+// Function ID: 7324
+// Dependencies: [5, 4199, 1074, 7324, 573, 2]
 
-// Module 7261
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7323
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
 

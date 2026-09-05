@@ -1,14 +1,14 @@
-// Module ID: 5370
-// Function ID: 5371
+// Module ID: 5409
+// Function ID: 5410
 // Name: ChannelTypes
-// Dependencies: [1984, 1908, 673, 503, 2]
+// Dependencies: [2015, 1979, 1074, 1086, 2]
 // Exports: default
 
-// Module 5370 (ChannelTypes)
-import closure_2 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
-import importAllResult from "fromString" /* 503 */;
+// Module 5409 (ChannelTypes)
+import closure_2 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
+import importAllResult from "fromString" /* 1086 */;
 
 ({ ChannelTypes, Permissions } = ME);
 let items = [, , , , , , ];

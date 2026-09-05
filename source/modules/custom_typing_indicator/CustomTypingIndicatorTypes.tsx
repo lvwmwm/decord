@@ -1,12 +1,12 @@
-// Module ID: 1941
-// Function ID: 1942
+// Module ID: 1392
+// Function ID: 1393
 // Name: CUSTOM_TYPING_INDICATOR_EMOJI_COUNT
-// Dependencies: [1929, 2]
+// Dependencies: [1379, 2]
 // Exports: getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
 
-// Module 1941 (CUSTOM_TYPING_INDICATOR_EMOJI_COUNT)
+// Module 1392 (CUSTOM_TYPING_INDICATOR_EMOJI_COUNT)
 import set from "set" /* 2 */;
-import create from "create" /* 1929 */;
+import create from "create" /* 1379 */;
 
 let obj = { emojis: [], typingSuggestion: create.TypingSuggestion.UNSPECIFIED, animation: create.TypingIndicatorAnimation.UNSPECIFIED };
 const result = set.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorTypes.tsx");

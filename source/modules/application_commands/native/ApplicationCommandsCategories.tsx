@@ -1,18 +1,18 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12398
+// Function ID: 12399
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 1991, 12327, 21, 4481, 709, 586, 12163, 5542, 5084, 1233, 4449, 4450, 2]
+// Dependencies: [19, 17, 2021, 12395, 21, 4560, 576, 504, 12231, 5587, 5123, 1114, 4528, 4529, 2]
 // Exports: default
 
-// Module 12330 (ApplicationCommandsCategories)
-import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5542 */;
+// Module 12398 (ApplicationCommandsCategories)
+import ThemesDefault from "Themes" /* 576 */;
+import preloadDefault from "preload" /* 5587 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import ICON_SIZE from "ICON_SIZE" /* 12327 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import ICON_SIZE from "ICON_SIZE" /* 12395 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -32,7 +32,7 @@ let closure_10 = importAllResult.memo((section) => {
   ({ handlePressCategory: importDefault, active, index: dependencyMap, guildId: closure_3 } = section);
   let stateFromStores;
   const tmp = callback();
-  let obj = section(586);
+  let obj = section(504);
   const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => {
     if (null != closure_3) {
@@ -62,9 +62,9 @@ let closure_10 = importAllResult.memo((section) => {
     accessibilityLabel: null,
     children: null
   };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = tmp2(1233).t;
+  const t = tmp2(1114).t;
   if (active) {
     obj1 = { applicationName: null };
     obj1[0] = section.name;
@@ -77,7 +77,7 @@ let closure_10 = importAllResult.memo((section) => {
   obj[2] = formatToPlainStringResult;
   const items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
   obj[3] = <stateFromStores style={items2}>{tmp6}</stateFromStores>;
-  return jsx(section(5084).PressableOpacity, {
+  return jsx(section(5123).PressableOpacity, {
     onPress() {
       return callback(closure_2);
     },

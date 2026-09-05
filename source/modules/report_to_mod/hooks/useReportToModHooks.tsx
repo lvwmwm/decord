@@ -1,16 +1,16 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11666
+// Function ID: 11667
 // Name: useIsReportToModEnabled
-// Dependencies: [19, 1908, 4743, 586, 7206, 7229, 7216, 7390, 8112, 2]
+// Dependencies: [19, 1979, 4781, 504, 7266, 7290, 7276, 7456, 8181, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 11598 (useIsReportToModEnabled)
+// Module 11666 (useIsReportToModEnabled)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import canReportMessageToMods from "canReportMessageToMods" /* 7216 */;
-import _fetchProfile from "_fetchProfile" /* 8112 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "reinjectEphemerals" /* 4743 */;
+import canReportMessageToMods from "canReportMessageToMods" /* 7276 */;
+import _fetchProfile from "_fetchProfile" /* 8181 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "reinjectEphemerals" /* 4781 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
@@ -18,7 +18,7 @@ const result = set.fileFinishedImporting("modules/report_to_mod/hooks/useReportT
 export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {
@@ -37,7 +37,7 @@ export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
 export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let guild = null;
     if (null != closure_0) {
       guild = closure_1_4.getGuild(tmp);
@@ -62,7 +62,7 @@ export const useIsModeratorReportPostChannel = function useIsModeratorReportPost
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
   const items = [closure_5];
-  const stateFromStores = messageReference(586).useStateFromStores(items, () => {
+  const stateFromStores = messageReference(504).useStateFromStores(items, () => {
     let message = null;
     if (null != messageReference) {
       message = closure_1_5.getMessage(tmp.channel_id, tmp.message_id);

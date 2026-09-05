@@ -1,23 +1,23 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9828
+// Function ID: 9829
 // Name: Loading
-// Dependencies: [32, 19, 17, 1391, 9750, 1908, 4120, 7669, 673, 21, 4481, 709, 9758, 1627, 7102, 7122, 7108, 586, 4466, 7691, 9749, 4448, 8110, 9759, 1305, 9761, 7090, 7089, 1233, 1296, 9778, 9782, 9784, 6990, 9776, 9820, 9821, 2]
+// Dependencies: [32, 19, 17, 1962, 9821, 1979, 4199, 7736, 1074, 21, 4560, 576, 9829, 1611, 7162, 7182, 7168, 504, 4545, 7759, 9820, 4527, 8179, 9830, 1187, 9832, 7150, 7149, 1114, 1178, 9849, 9853, 9855, 7050, 9847, 9891, 9892, 2]
 // Exports: default
 
-// Module 9757 (Loading)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef9758 from "module_9758" /* 9758 */;
+// Module 9828 (Loading)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef9829 from "module_9829" /* 9829 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_8 from "updateWithLatestInvite" /* 9750 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7669 */;
-import { Permissions } from "ME" /* 673 */;
+import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_8 from "updateWithLatestInvite" /* 9821 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7736 */;
+import { Permissions } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function Loading() {
@@ -31,7 +31,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback2(_modDef9758, obj, num));
+    let arr = items.push(callback2(_modDef9829, obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };

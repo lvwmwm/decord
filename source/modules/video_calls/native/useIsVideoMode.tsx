@@ -1,16 +1,16 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9465
+// Function ID: 9466
 // Name: useIsVideoMode
-// Dependencies: [4503, 1386, 4532, 1980, 4500, 586, 2]
+// Dependencies: [4582, 1957, 1908, 2011, 4579, 504, 2]
 // Exports: default, isVideoMode
 
-// Module 9394 (useIsVideoMode)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "reset" /* 4503 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "updateVoiceState" /* 4500 */;
+// Module 9465 (useIsVideoMode)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "reset" /* 4582 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import closure_6 from "updateVoiceState" /* 4579 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");

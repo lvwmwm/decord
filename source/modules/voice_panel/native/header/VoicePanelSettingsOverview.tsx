@@ -1,36 +1,36 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17111
+// Function ID: 17112
 // Name: VoicePanelSettingsOverviewHeader
-// Dependencies: [19, 1385, 4497, 9415, 1215, 1386, 4532, 4120, 1921, 4558, 673, 4502, 9081, 21, 4481, 709, 586, 17034, 4681, 9099, 9060, 5544, 4477, 9141, 1233, 5056, 7, 4194, 17031, 8291, 5560, 5566, 15486, 8557, 5567, 706, 7141, 4166, 9019, 4729, 8555, 9907, 4448, 17035, 2008, 9083, 9102, 17036, 17024, 16979, 11354, 9047, 17037, 7318, 17038, 9052, 17039, 10039, 9879, 9961, 9960, 2]
+// Dependencies: [19, 1956, 4576, 9486, 502, 1957, 1908, 4199, 1371, 4584, 1074, 4581, 9152, 21, 4560, 576, 504, 17112, 4713, 9170, 9131, 5589, 4556, 9212, 1114, 5095, 7, 4259, 17109, 8361, 5605, 5611, 15562, 8627, 5612, 573, 7201, 1935, 9089, 4761, 8625, 9978, 4527, 17113, 1896, 9154, 9173, 17114, 17102, 17057, 11422, 9118, 17115, 7380, 17116, 9123, 17117, 10110, 9950, 10032, 10031, 2]
 
-// Module 17033 (VoicePanelSettingsOverviewHeader)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import TableRowIcon from "TableRowIcon" /* 5566 */;
-import TableRowArrow from "TableRowArrow" /* 5567 */;
-import TableSwitchRow from "TableSwitchRow" /* 7141 */;
-import registerAssetDefault from "registerAsset" /* 8557 */;
-import useIsUserSecureFramesVerified from "useIsUserSecureFramesVerified" /* 9060 */;
-import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9099 */;
-import WrenchIcon from "WrenchIcon" /* 15486 */;
+// Module 17111 (VoicePanelSettingsOverviewHeader)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import TableRowIcon from "TableRowIcon" /* 5611 */;
+import TableRowArrow from "TableRowArrow" /* 5612 */;
+import TableSwitchRow from "TableSwitchRow" /* 7201 */;
+import registerAssetDefault from "registerAsset" /* 8627 */;
+import useIsUserSecureFramesVerified from "useIsUserSecureFramesVerified" /* 9131 */;
+import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9170 */;
+import WrenchIcon from "WrenchIcon" /* 15562 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import closure_5 from "getParticipants" /* 4497 */;
-import closure_6 from "initialize" /* 9415 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "getVoiceStatesForGuild" /* 4558 */;
-import ME from "ME" /* 673 */;
-import { isStreamParticipant } from "ParticipantTypes" /* 4502 */;
-import { SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY as closure_17 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import closure_5 from "getParticipants" /* 4576 */;
+import closure_6 from "initialize" /* 9486 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import closure_12 from "getVoiceStatesForGuild" /* 4584 */;
+import ME from "ME" /* 1074 */;
+import { isStreamParticipant } from "ParticipantTypes" /* 4581 */;
+import { SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY as closure_17 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class VoicePanelSettingsOverviewHeader {

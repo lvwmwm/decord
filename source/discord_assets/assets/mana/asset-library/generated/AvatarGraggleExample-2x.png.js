@@ -1,9 +1,9 @@
-// Module ID: 5717
-// Function ID: 5718
+// Module ID: 5764
+// Function ID: 5765
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5717 (metadata)
+// Module 5764 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarGraggleExample-2x.png.js");

@@ -1,25 +1,25 @@
-// Module ID: 16426
-// Function ID: 16427
+// Module ID: 16502
+// Function ID: 16503
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1386, 4862, 4861, 673, 10791, 4474, 21, 4481, 709, 9704, 1233, 16427, 4194, 1492, 4331, 7804, 16428, 5086, 4299, 4205, 6921, 11624, 11633, 4936, 4731, 10912, 1394, 7615, 9236, 511, 5089, 7390, 9238, 1627, 1234, 5586, 7795, 5579, 10915, 2]
+// Dependencies: [32, 5, 19, 17, 1957, 4901, 4900, 1074, 10860, 4553, 21, 4560, 576, 9775, 1114, 16503, 4259, 1477, 4413, 7872, 16504, 5125, 4378, 4271, 6981, 11692, 11701, 4975, 4763, 10981, 1369, 7682, 9307, 1256, 5128, 7456, 9309, 1611, 1115, 5631, 7863, 5624, 10984, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16426 (Screenshot)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9704 */;
+// Module 16502 (Screenshot)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9775 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_9 from "map" /* 4861 */;
-import { AbortCodes } from "ME" /* 673 */;
-import { UserRowModes } from "UserRowModes" /* 10791 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_9 from "map" /* 4900 */;
+import { AbortCodes } from "ME" /* 1074 */;
+import { UserRowModes } from "UserRowModes" /* 10860 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Screenshot(setUri) {
@@ -44,26 +44,26 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(7804);
+  let obj = setUri(7872);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
-  items1 = [tmp.preview, { width: ref(1492)().width }];
+  items1 = [tmp.preview, { width: ref(1477)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
-  const tmp4 = ref(4331)();
+  const tmp4 = ref(4413)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(16428);
-  obj4[0] = setUri(4299).OverlayOpacity.LEVEL_7;
-  obj4[1] = setUri(4299).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(16504);
+  obj4[0] = setUri(4378).OverlayOpacity.LEVEL_7;
+  obj4[1] = setUri(4378).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(5086), obj3), ];
+  const items2 = [callback3(ref(5125), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
-  const tmp7 = ref(5086);
+  const tmp7 = ref(5125);
   const items3 = [tmp.contentContainer, clientThemesOverride];
   obj5[1] = callback3(View, { style: items3, children: setUri.render() });
-  items2[1] = callback3(setUri(4205).ThemeContextProvider, obj5);
+  items2[1] = callback3(setUri(4271).ThemeContextProvider, obj5);
   obj2[1] = items2;
   obj1[2] = callback4(View, obj2);
   obj[1] = callback3(tmp6, obj1);
@@ -201,7 +201,7 @@ class ICYMIShareModal {
                     closure_0 = arg0;
                     c2 = 0;
                     c1 = 0;
-                    return (/* F125637 */ function*() { ... })();
+                    return (/* F125923 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -367,8 +367,8 @@ export const GuildEventShareModal = function GuildEventShareModal(event) {
 export const GameShareModal = function GameShareModal(content) {
   let _require = content.content;
   let obj = { title: null, linkText: "", forwardToChannel: null };
-  let intl = _require(1233).intl;
-  obj[0] = intl.string(_require(1233).t["59CWHK"]);
+  let intl = _require(1114).intl;
+  obj[0] = intl.string(_require(1114).t["59CWHK"]);
   _require = undefined;
   _require = callback2((arg0) => {
     closure_0 = arg0;

@@ -1,9 +1,9 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7864
+// Function ID: 7865
 // Name: MIN_HEADER_HEIGHT
 // Dependencies: [17, 2]
 
-// Module 7796 (MIN_HEADER_HEIGHT)
+// Module 7864 (MIN_HEADER_HEIGHT)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

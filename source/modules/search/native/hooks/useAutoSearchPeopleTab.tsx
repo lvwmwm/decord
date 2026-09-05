@@ -1,13 +1,13 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16722
+// Function ID: 16723
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 12271, 12285, 9777, 12293, 12, 12270, 2]
+// Dependencies: [19, 12339, 12353, 9848, 12361, 12, 12338, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 16645 (useAutoSearchPeopleTab)
+// Module 16722 (useAutoSearchPeopleTab)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "prototype" /* 12271 */;
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12285 */;
+import closure_4 from "prototype" /* 12339 */;
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12353 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");

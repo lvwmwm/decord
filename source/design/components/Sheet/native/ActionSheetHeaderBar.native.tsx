@@ -1,19 +1,19 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 7154
+// Function ID: 7155
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4481, 709, 1233, 1492, 4197, 4923, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1114, 1477, 4262, 4962, 2]
 // Exports: ActionSheetHeaderBar
 
-// Module 7094 (ActionSheetHeaderBar)
+// Module 7154 (ActionSheetHeaderBar)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import map from "map" /* 4197 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4923 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import map from "map" /* 4262 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4962 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -29,16 +29,16 @@ let closure_10 = createCacheKey.createStyles((arg0, height, marginBottom) => {
   obj[0] = obj;
   if ("default" === arg0) {
     const obj2 = { backgroundColor: null };
-    obj2[0] = tmp2(709).colors.BACKGROUND_MOD_STRONG;
+    obj2[0] = tmp2(576).colors.BACKGROUND_MOD_STRONG;
     let tmp4 = obj2;
   } else if ("floating" === arg0) {
     const obj3 = { backgroundColor: null };
-    obj3[0] = tmp2(709).colors.BACKGROUND_MOD_MUTED;
+    obj3[0] = tmp2(576).colors.BACKGROUND_MOD_MUTED;
     tmp4 = obj3;
   } else if ("overlay" === arg0) {
     const obj4 = { backgroundColor: null };
-    obj4[0] = tmp2(709).unsafe_rawColors.WHITE;
-    const merged1 = Object.assign(tmp2(709).shadows.SHADOW_LOW);
+    obj4[0] = tmp2(576).unsafe_rawColors.WHITE;
+    const merged1 = Object.assign(tmp2(576).shadows.SHADOW_LOW);
     tmp4 = obj4;
   }
   const merged2 = Object.assign(tmp4);

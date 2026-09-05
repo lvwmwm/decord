@@ -1,11 +1,11 @@
-// Module ID: 13612
-// Function ID: 13613
+// Module ID: 13688
+// Function ID: 13689
 // Name: map
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 13612 (map)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 13688 (map)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let map = new Map();
 let map1 = new Map();

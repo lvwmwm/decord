@@ -1,14 +1,14 @@
-// Module ID: 6242
-// Function ID: 6243
+// Module ID: 6297
+// Function ID: 6298
 // Name: NitroStarterBadgeLargeBadge
-// Dependencies: [21, 5542, 6243, 2]
+// Dependencies: [21, 5587, 6298, 2]
 // Exports: NitroStarterBadgeLargeBadge
 
-// Module 6242 (NitroStarterBadgeLargeBadge)
+// Module 6297 (NitroStarterBadgeLargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import vanityUrlDefault from "vanityUrl" /* 6243 */;
+import preloadDefault from "preload" /* 5587 */;
+import vanityUrlDefault from "vanityUrl" /* 6298 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroStarterBadgeLargeBadge.native.tsx");

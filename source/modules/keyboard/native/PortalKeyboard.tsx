@@ -1,13 +1,13 @@
-// Module ID: 4349
-// Function ID: 4350
+// Module ID: 4431
+// Function ID: 4432
 // Name: PortalKeyboardState
-// Dependencies: [19, 21, 4335, 1234, 4350, 2]
+// Dependencies: [19, 21, 4417, 1115, 4432, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 4349 (PortalKeyboardState)
+// Module 4431 (PortalKeyboardState)
 import noopAll from "noop" /* 19 */;
-import coerceMainRoute from "coerceMainRoute" /* 4335 */;
-import Portal from "Portal" /* 4350 */;
+import coerceMainRoute from "coerceMainRoute" /* 4417 */;
+import Portal from "Portal" /* 4432 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ export const PortalKeyboard = function PortalKeyboard(children) {
     obj = { hostName: null, children: null };
     obj[0] = tmp3;
     obj[1] = children.children;
-    return jsx(tmp(4350).Portal, { hostName: null, children: null });
+    return jsx(tmp(4432).Portal, { hostName: null, children: null });
   }
   tmp3 = c3;
 };

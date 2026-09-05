@@ -1,17 +1,17 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16072
+// Function ID: 16073
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1385, 4503, 4130, 21, 15995, 16007, 16008, 644, 15985, 2]
+// Dependencies: [19, 1956, 4582, 4209, 21, 16073, 16085, 16086, 563, 16063, 2]
 // Exports: default, useCallActivityData
 
-// Module 15994 (HappeningNowCardUnifiedVC)
+// Module 16072 (HappeningNowCardUnifiedVC)
 import noopAll from "noop" /* 19 */;
-import IconOrPreviewDefault from "IconOrPreview" /* 15995 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16007 */;
-import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 16008 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
+import IconOrPreviewDefault from "IconOrPreview" /* 16073 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16085 */;
+import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 16086 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -25,7 +25,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     panelVariant = false;
   }
   const channelId = voiceState.channelId;
-  let obj = channelId(644);
+  let obj = channelId(563);
   const items = [closure_3, closure_4, closure_5];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -92,7 +92,7 @@ export const useCallActivityData = function useCallActivityData(channel_id) {
   const _require = channel_id;
   const items = [closure_3, closure_4, closure_5];
   const items1 = [channel_id];
-  return _require(644).useStateFromStoresObject(items, () => {
+  return _require(563).useStateFromStoresObject(items, () => {
     if (null == channelId) {
       return {};
     } else {

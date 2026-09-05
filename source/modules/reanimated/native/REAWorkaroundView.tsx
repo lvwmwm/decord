@@ -1,14 +1,14 @@
-// Module ID: 4219
-// Function ID: 4220
+// Module ID: 4297
+// Function ID: 4298
 // Name: REAWorkaroundView
-// Dependencies: [19, 21, 1652, 4220, 2]
+// Dependencies: [19, 21, 1636, 4298, 2]
 
-// Module 4219 (REAWorkaroundView)
+// Module 4297 (REAWorkaroundView)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4220 */;
-import importDefaultResult from "cancelAnimation" /* 1652 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4298 */;
+import importDefaultResult from "cancelAnimation" /* 1636 */;
 
 const jsx = jsxProd.jsx;
 let closure_1 = importDefaultResult.createAnimatedComponent(__INTERNAL_VIEW_CONFIGDefault);

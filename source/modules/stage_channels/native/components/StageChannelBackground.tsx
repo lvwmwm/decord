@@ -1,15 +1,15 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 10043
+// Function ID: 10044
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4481, 709, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 2]
 // Exports: default
 
-// Module 9972 (StageChannelBackground)
+// Module 10043 (StageChannelBackground)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 noopAll;
 createCacheKey = { container: null };

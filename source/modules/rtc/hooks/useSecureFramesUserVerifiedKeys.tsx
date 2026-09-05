@@ -1,11 +1,11 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15851
+// Function ID: 15852
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [9063, 586, 12, 2]
+// Dependencies: [9134, 504, 12, 2]
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 15775 (useSecureFramesUserVerifiedKeys)
-import closure_3 from "initialize" /* 9063 */;
+// Module 15851 (useSecureFramesUserVerifiedKeys)
+import closure_3 from "initialize" /* 9134 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecure
 export const useSecureFramesUserVerifiedKeys = function useSecureFramesUserVerifiedKeys(userId) {
   const _require = userId;
   const items = [closure_3];
-  return _require(586).useStateFromStoresArray(items, () => {
+  return _require(504).useStateFromStoresArray(items, () => {
     const tmp = closure_1_1(closure_1_2[2]);
     const entries = closure_1_1(closure_1_2[2])(closure_1_3.getUserVerifiedKeys(closure_0)).entries();
     const mapped = entries.map((arg0) => {

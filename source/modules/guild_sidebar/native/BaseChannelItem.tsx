@@ -1,20 +1,20 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12379
+// Function ID: 12380
 // Name: BaseChannelSubtitle
-// Dependencies: [19, 17, 10047, 4710, 21, 4481, 709, 4477, 1235, 1296, 10094, 8832, 12312, 2]
+// Dependencies: [19, 17, 10118, 4742, 21, 4560, 576, 4556, 1116, 1178, 10165, 8902, 12380, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 12311 (BaseChannelSubtitle)
-import ThemesDefault from "Themes" /* 709 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
+// Module 12379 (BaseChannelSubtitle)
+import ThemesDefault from "Themes" /* 576 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import hairlineWidth from "hairlineWidth" /* 10047 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import hairlineWidth from "hairlineWidth" /* 10118 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class BaseChannelSubtitle {
@@ -134,9 +134,9 @@ export default function BaseChannelItem(mode) {
     items1[3] = channelInfo;
     obj[1] = items1;
     if (flag) {
-      let AnimatedPressableHighlight = hideIcon(12312);
+      let AnimatedPressableHighlight = hideIcon(12380);
     } else {
-      AnimatedPressableHighlight = mode(8832).AnimatedPressableHighlight;
+      AnimatedPressableHighlight = mode(8902).AnimatedPressableHighlight;
     }
     obj = {};
     const merged1 = Object.assign(merged);
@@ -153,9 +153,9 @@ export default function BaseChannelItem(mode) {
       ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     }
     obj[2] = ALL_MESSAGES;
-    closure_8(hideIcon(10094), obj);
+    closure_8(hideIcon(10165), obj);
     const tmp6 = closure_8;
-    const tmp9 = hideIcon(10094);
+    const tmp9 = hideIcon(10165);
   }
 };
 export const ChannelModes = createCacheKey;

@@ -1,29 +1,29 @@
-// Module ID: 4372
-// Function ID: 4373
+// Module ID: 4454
+// Function ID: 4455
 // Name: getGuildTierFromGuild
-// Dependencies: [1908, 1921, 4373, 4145, 673, 1924, 1923, 4153, 4374, 1233, 1394, 4375, 1994, 12, 4074, 4376, 3016, 4139, 1205, 4387, 4406, 2]
+// Dependencies: [1979, 1371, 4455, 4224, 1074, 1374, 1373, 4232, 4456, 1114, 1369, 4457, 2024, 12, 4153, 4458, 3063, 4218, 1232, 4469, 4485, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
-// Module 4372 (getGuildTierFromGuild)
-import _modDef1205 from "module_1205" /* 1205 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import combinedDefault from "combined" /* 1994 */;
-import messagesProxyDefault from "messagesProxy" /* 3016 */;
-import hooksDefault from "hooks" /* 4074 */;
-import getPremiumPlanItemAll from "getPremiumPlanItem" /* 4139 */;
-import PremiumGuildOverrides from "PremiumGuildOverrides" /* 4374 */;
-import formatSize from "formatSize" /* 4375 */;
-import _fetchAppliedGuildBoostsForGuild from "_fetchAppliedGuildBoostsForGuild" /* 4376 */;
-import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4387 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4373 */;
-import closure_7 from "reset" /* 4145 */;
-import ME from "ME" /* 673 */;
-import set from "set" /* 1924 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import { getPremiumGroupProductName as closure_25 } from "SubscriptionStatusTypes" /* 4153 */;
+// Module 4454 (getGuildTierFromGuild)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import _modDef1232 from "module_1232" /* 1232 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import combinedDefault from "combined" /* 2024 */;
+import messagesProxyDefault from "messagesProxy" /* 3063 */;
+import hooksDefault from "hooks" /* 4153 */;
+import getPremiumPlanItemAll from "getPremiumPlanItem" /* 4218 */;
+import PremiumGuildOverrides from "PremiumGuildOverrides" /* 4456 */;
+import formatSize from "formatSize" /* 4457 */;
+import _fetchAppliedGuildBoostsForGuild from "_fetchAppliedGuildBoostsForGuild" /* 4458 */;
+import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4469 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4455 */;
+import closure_7 from "reset" /* 4224 */;
+import ME from "ME" /* 1074 */;
+import set from "set" /* 1374 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import { getPremiumGroupProductName as closure_25 } from "SubscriptionStatusTypes" /* 4232 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -658,8 +658,8 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr) {
       obj[1] = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier1];
       obj[2] = found.length;
       obj[2] = obj;
-      _modDef1205.addBreadcrumb(obj);
-      const obj3 = _modDef1205;
+      _modDef1232.addBreadcrumb(obj);
+      const obj3 = _modDef1232;
       const tmp17 = AppliedGuildBoostsRequiredForBoostedGuildTier;
     }
     const _Math = Math;
@@ -772,7 +772,7 @@ export const getNextPremiumTierForSubscriberCount = function getNextPremiumTierF
 };
 export const TierMarkerPositions = obj1;
 export const getGuildBoostingProgressBarFillFactor = function getGuildBoostingProgressBarFillFactor(guild) {
-  totalAvailableBoostsCount = totalAvailableBoostsCount(4406).getGuildPowerupBoostLevelProgress(guild.id);
+  totalAvailableBoostsCount = totalAvailableBoostsCount(4485).getGuildPowerupBoostLevelProgress(guild.id);
   let NONE = reversed.find((arg0) => totalAvailableBoostsCount >= closure_1_9[arg0]);
   if (NONE == null) {
     NONE = BoostedGuildTiers.NONE;

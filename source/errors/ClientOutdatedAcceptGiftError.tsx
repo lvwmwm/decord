@@ -1,11 +1,11 @@
-// Module ID: 4385
-// Function ID: 4386
+// Module ID: 4467
+// Function ID: 4468
 // Name: prototype
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 4385 (prototype)
+// Module 4467 (prototype)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const AbortCodes = ME.AbortCodes;
 const prototype = function ClientOutdatedAcceptGiftError(arg0) {

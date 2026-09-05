@@ -1,14 +1,14 @@
-// Module ID: 9665
-// Function ID: 9666
-// Dependencies: [4709, 673, 682, 706, 4721, 500, 1400, 527, 7059, 7054, 7261, 2]
+// Module ID: 9736
+// Function ID: 9737
+// Dependencies: [4741, 1074, 1084, 573, 4753, 1250, 1969, 1272, 7119, 7114, 7323, 2]
 
-// Module 9665
-import encodeProperties from "encodeProperties" /* 500 */;
-import sendRequest from "sendRequest" /* 527 */;
-import _modDef4721 from "module_4721" /* 4721 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4709 */;
-import ME from "ME" /* 673 */;
-import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 682 */;
+// Module 9736
+import encodeProperties from "encodeProperties" /* 1250 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import _modDef4753 from "module_4753" /* 4753 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4741 */;
+import ME from "ME" /* 1074 */;
+import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 1084 */;
 
 require = arg1;
 ({ BITRATE_DEFAULT: c4, ChannelTypes: c5, Endpoints: closure_6 } = ME);
@@ -22,7 +22,7 @@ export default {
       permissionOverwrites = [];
     }
     ({ bitrate, userLimit, parentId, skuId, applicationId, flags, availableTags, gameId } = guildId);
-    let obj = permissionOverwrites(706);
+    let obj = permissionOverwrites(573);
     obj.dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
     obj = { type, name: guildId.name, permission_overwrites: permissionOverwrites };
     let tmp4 = null != bitrate;
@@ -77,9 +77,9 @@ export default {
     obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     const tmp = permissionOverwrites;
     tmp8 = constants;
-    const tmpResult = permissionOverwrites(4721);
+    const tmpResult = permissionOverwrites(4753);
     obj[3] = {
-      event: guildId(500).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1250).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(closure_1_2[6]);
         obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
@@ -103,7 +103,7 @@ export default {
       }
     };
     obj1 = {
-      event: guildId(500).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1250).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(closure_1_2[6]);
         obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
@@ -126,8 +126,8 @@ export default {
         return obj.exact(obj);
       }
     };
-    obj[4] = guildId(527).rejectWithMigratedError();
-    const obj6 = guildId(527);
+    obj[4] = guildId(1272).rejectWithMigratedError();
+    const obj6 = guildId(1272);
     return tmpResult.post(obj).then((body) => {
       if (closure_1_3.isOptInEnabled(guildId)) {
         let obj = permissionOverwrites(closure_1_2[8]);
@@ -145,7 +145,7 @@ export default {
     });
   },
   createRoleSubscriptionTemplateChannel(closure_0, name, type, topic) {
-    let obj = _modDef4721;
+    let obj = _modDef4753;
     obj = { url: closure_6.GUILD_CHANNELS(closure_0), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { name, type, topic };
     obj[3] = {

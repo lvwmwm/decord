@@ -1,13 +1,13 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15949
+// Function ID: 15950
 // Name: isUnderageAnonymous
-// Dependencies: [1218, 586, 706, 2]
+// Dependencies: [1098, 504, 573, 2]
 
-// Module 15873 (isUnderageAnonymous)
+// Module 15949 (isUnderageAnonymous)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import result2 from "result" /* 1218 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import result2 from "result" /* 1098 */;
 
 const AGE_GATE_REGISTER_TIMEOUT_MS = result2.AGE_GATE_REGISTER_TIMEOUT_MS;
 let c0 = false;

@@ -1,10 +1,10 @@
 // Module ID: 3433
 // Function ID: 3434
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 3433 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conversations", scales: [1], hash: "8e7c46ba423edaf69778fd849d9ff2b9", name: "Conversations.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "08e5ed3d61a2954e539e829941bbc5ad", name: "ko.messages.08e5ed3d61a2954e539e829941bbc5ad.compiled.messages", type: "jsona" });

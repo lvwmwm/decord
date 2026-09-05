@@ -1,18 +1,18 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16732
+// Function ID: 16733
 // Name: GuildChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1921, 10847, 673, 21, 1234, 4481, 16656, 4218, 4935, 4471, 5084, 4477, 4948, 586, 4325, 4673, 2]
+// Dependencies: [32, 19, 17, 1371, 10916, 1074, 21, 1115, 4560, 16733, 4296, 4974, 4550, 5123, 4556, 4987, 504, 4404, 4705, 2]
 
-// Module 16655 (GuildChannelDetailsTopic)
+// Module 16732 (GuildChannelDetailsTopic)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10847 */;
-import { VerticalGradient } from "ME" /* 673 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10916 */;
+import { VerticalGradient } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import set from "set" /* 1234 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import set from "set" /* 1115 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function GuildChannelDetailsTopic(channel) {
@@ -180,7 +180,7 @@ function GuildChannelDetailsTopic(channel) {
 }
 function PrivateChannelDetailsTopic(channel) {
   channel = channel.channel;
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const user = closure_1_7.getUser(channel.getRecipientId());
@@ -202,13 +202,13 @@ function PrivateChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback2(channel(4477).Text, obj);
+    tmp4 = callback2(channel(4556).Text, obj);
   }
   return tmp4;
 }
 function GroupDMChannelDetailsTopic(channel) {
   channel = channel.channel;
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => channel(closure_1_2[18]).getPrivateChannelUserTagsString(channel.recipients, closure_1_7));
   let tmp4 = null;
@@ -218,7 +218,7 @@ function GroupDMChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback2(channel(4477).Text, obj);
+    tmp4 = callback2(channel(4556).Text, obj);
   }
   return tmp4;
 }

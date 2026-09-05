@@ -1,15 +1,15 @@
-// Module ID: 4521
-// Function ID: 4522
+// Module ID: 7398
+// Function ID: 7399
 // Name: createFromServer
-// Dependencies: [1935, 4522, 4523, 673, 4074, 1399, 2]
+// Dependencies: [1386, 4788, 7395, 1074, 4153, 1384, 2]
 
-// Module 4521 (createFromServer)
-import hasFlagAll from "hasFlag" /* 1399 */;
-import toJSDefault from "toJS" /* 1935 */;
-import hooksDefault from "hooks" /* 4074 */;
-import closure_3 from "addApplication" /* 4522 */;
-import closure_4 from "createFromServer" /* 4523 */;
-import ME from "ME" /* 673 */;
+// Module 7398 (createFromServer)
+import hasFlagAll from "hasFlag" /* 1384 */;
+import toJSDefault from "toJS" /* 1386 */;
+import hooksDefault from "hooks" /* 4153 */;
+import closure_3 from "addApplication" /* 4788 */;
+import closure_4 from "createFromServer" /* 7395 */;
+import ME from "ME" /* 1074 */;
 
 toJSDefault;
 ({ LibraryApplicationFlags: c5, Distributors: closure_6, SKUTypes: error } = ME);

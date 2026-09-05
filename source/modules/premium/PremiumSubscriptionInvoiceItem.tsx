@@ -1,10 +1,10 @@
-// Module ID: 4149
-// Function ID: 4150
+// Module ID: 4228
+// Function ID: 4229
 // Name: coalesceInvoiceItems
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 4149 (coalesceInvoiceItems)
+// Module 4228 (coalesceInvoiceItems)
 import set2 from "set" /* 2 */;
 
 const result = set2.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");

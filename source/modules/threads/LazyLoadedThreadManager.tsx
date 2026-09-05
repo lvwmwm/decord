@@ -1,16 +1,16 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7314
+// Function ID: 7315
 // Name: initialize
-// Dependencies: [5238, 1390, 1386, 1980, 673, 1393, 706, 7161, 4307, 4320, 527, 2]
+// Dependencies: [5277, 1961, 1957, 2011, 1074, 1964, 573, 7221, 4386, 4399, 1272, 2]
 
-// Module 7252 (initialize)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "_handleConnectionOpen" /* 5238 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "handleConnectionOpen" /* 1980 */;
-import ME from "ME" /* 673 */;
-import { isStaticChannelRoute } from "set" /* 1393 */;
+// Module 7314 (initialize)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_3 from "_handleConnectionOpen" /* 5277 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "handleConnectionOpen" /* 2011 */;
+import ME from "ME" /* 1074 */;
+import { isStaticChannelRoute } from "set" /* 1964 */;
 
 const require = arg1;
 function initialize() {
@@ -34,7 +34,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(7161).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(7221).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -61,17 +61,17 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4307);
+        let tmp13Result = tmp13(4386);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4320).RouteParam;
-        const RouteParam2 = tmp13(4320).RouteParam;
+        const RouteParam = tmp13(4399).RouteParam;
+        const RouteParam2 = tmp13(4399).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
-        const HTTP = tmp13(527).HTTP;
+        const HTTP = tmp13(1272).HTTP;
         obj = { url: null, rejectWithError: null };
         obj[0] = closure_8.CHANNEL(channelId);
-        tmp13Result = tmp13(527);
+        tmp13Result = tmp13(1272);
         obj[1] = tmp13Result.rejectWithMigratedError();
         const value = HTTP.get(obj);
         const guildIdResult = RouteParam.guildId();
@@ -143,7 +143,7 @@ export default {
         let tmp9 = nextResult;
         let tmp10 = items1;
         let tmp11 = dependencyMap;
-        if (nextResult !== items1(7161).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7221).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp12 = isStaticChannelRoute;
           let tmp13 = nextResult;
           if (!isStaticChannelRoute(tmp9)) {
@@ -174,14 +174,14 @@ export default {
 
         });
       } else {
-        const HTTP = items1(527).HTTP;
+        const HTTP = items1(1272).HTTP;
         let obj = { url: null, body: null, rejectWithError: null };
         obj[0] = closure_8.THREADS_BULK;
         obj = { thread_ids: null };
         obj[0] = items1;
         obj[1] = obj;
-        obj[2] = items1(527).rejectWithMigratedError();
-        const obj4 = items1(527);
+        obj[2] = items1(1272).rejectWithMigratedError();
+        const obj4 = items1(1272);
         const postResult = HTTP.post(obj);
         const catchPromise = HTTP.post(obj).then((arg0) => {
           const set = new Set();

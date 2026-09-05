@@ -1,13 +1,13 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17197
+// Function ID: 17198
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 4871, 4871, 1233, 2]
+// Dependencies: [19, 21, 4910, 4910, 1114, 2]
 // Exports: default
 
-// Module 17119 (VoicePanelNoVideoPermissionsAlert)
+// Module 17197 (VoicePanelNoVideoPermissionsAlert)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

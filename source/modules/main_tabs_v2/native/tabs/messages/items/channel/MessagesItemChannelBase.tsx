@@ -1,21 +1,21 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 16031
+// Function ID: 16032
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4572, 4496, 4130, 1980, 4709, 1921, 673, 21, 4481, 709, 586, 15956, 8149, 1234, 4494, 4492, 10844, 5084, 9699, 8748, 15957, 4171, 8744, 15958, 8189, 15959, 2]
+// Dependencies: [19, 17, 4600, 4575, 4209, 2011, 4741, 1371, 1074, 21, 4560, 576, 504, 16032, 8218, 1115, 4573, 4571, 10913, 5123, 9770, 8818, 16033, 7879, 8814, 16034, 8259, 16035, 2]
 
-// Module 15955 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16031 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4572 */;
-import closure_6 from "generateOldThreadCutoff" /* 4496 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { ActivityTypes } from "ME" /* 673 */;
+import closure_5 from "sortActivity" /* 4600 */;
+import closure_6 from "generateOldThreadCutoff" /* 4575 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import { ActivityTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -78,7 +78,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = store.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "left", activities: "call" };
+      obj = { status: "hash", activities: "call" };
     }
     return obj;
   });

@@ -1,14 +1,14 @@
-// Module ID: 4320
-// Function ID: 4321
+// Module ID: 4399
+// Function ID: 4400
 // Name: RouteParam
-// Dependencies: [674, 1393, 2, 4321]
+// Dependencies: [1075, 1964, 2, 4400]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4320 (RouteParam)
+// Module 4399 (RouteParam)
 import set from "set" /* 2 */;
-import INVITE from "INVITE" /* 674 */;
-import set2 from "set" /* 1393 */;
-import RouteParam from "RouteParam" /* 4321 */;
+import INVITE from "INVITE" /* 1075 */;
+import set2 from "set" /* 1964 */;
+import RouteParam from "RouteParam" /* 4400 */;
 
 const PSEUDO_GUILD_IDS = INVITE.PSEUDO_GUILD_IDS;
 const isStaticChannelRoute = set2.isStaticChannelRoute;
@@ -16,8 +16,8 @@ const re2 = /^\d+$/;
 const result = set.fileFinishedImporting("modules/routing/RouteUtils.tsx");
 
 export const RouteParam = RouteParam.RouteParam;
-export const isPseudoGuildId = function isPseudoGuildId(stateFromStores) {
-  return PSEUDO_GUILD_IDS.includes(stateFromStores);
+export const isPseudoGuildId = function isPseudoGuildId(guildId) {
+  return PSEUDO_GUILD_IDS.includes(guildId);
 };
 export const isValidGuildId = function isValidGuildId(guildId) {
   let tmp = null != guildId;

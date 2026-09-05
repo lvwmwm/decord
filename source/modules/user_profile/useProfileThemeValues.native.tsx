@@ -1,13 +1,13 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7184
+// Function ID: 7185
 // Name: useProfileThemeValues
-// Dependencies: [19, 4473, 644, 709, 708, 2]
+// Dependencies: [19, 4552, 563, 576, 575, 2]
 // Exports: useProfileThemeValues
 
-// Module 7124 (useProfileThemeValues)
+// Module 7184 (useProfileThemeValues)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/user_profile/useProfileThemeValues.native.tsx");
@@ -15,7 +15,7 @@ const result = set.fileFinishedImporting("modules/user_profile/useProfileThemeVa
 export const useProfileThemeValues = function useProfileThemeValues(theme) {
   const _require = theme;
   const items = [closure_4];
-  const stateFromStores = _require(644).useStateFromStores(items, () => saturation.saturation);
+  const stateFromStores = _require(563).useStateFromStores(items, () => saturation.saturation);
   const items1 = [theme, stateFromStores];
   return useMemo(() => {
     if (null == theme) {

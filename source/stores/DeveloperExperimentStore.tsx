@@ -1,16 +1,16 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7720
+// Function ID: 7721
 // Name: init
-// Dependencies: [1908, 1921, 4395, 1933, 1932, 586, 706, 2]
+// Dependencies: [1979, 1371, 4477, 1383, 1382, 504, 573, 2]
 
-// Module 7653 (init)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import validatePremiumType from "validatePremiumType" /* 1932 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { ExperimentBuckets } from "ExperimentBuckets" /* 4395 */;
-import { Environments } from "Environments" /* 1933 */;
+// Module 7720 (init)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import validatePremiumType from "validatePremiumType" /* 1382 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { ExperimentBuckets } from "ExperimentBuckets" /* 4477 */;
+import { Environments } from "Environments" /* 1383 */;
 
 require = arg1;
 let tmp2 = "production" === Environments.DEVELOPMENT;
@@ -40,7 +40,7 @@ prototype["initialize"] = function initialize() {
       }
     }
   });
-  closure_5 = self(1932).isStaffEnv(authStore.getCurrentUser());
+  closure_5 = self(1382).isStaffEnv(authStore.getCurrentUser());
   const timerId = setTimeout(() => Object.freeze(self));
 };
 prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {

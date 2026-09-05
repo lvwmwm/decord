@@ -1,28 +1,28 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 16445
+// Function ID: 16446
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 673, 12631, 21, 4481, 10050, 709, 1234, 1498, 695, 1296, 4943, 16364, 5084, 16365, 14091, 4477, 1233, 7082, 2]
+// Dependencies: [19, 17, 1074, 12699, 21, 4560, 10121, 576, 1115, 1483, 1242, 1178, 4982, 16440, 5123, 16441, 14177, 4556, 1114, 7142, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 16369 (ForYouShowAllRow)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set from "set" /* 1234 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import getFontScale from "getFontScale" /* 4943 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import registerAssetDefault from "registerAsset" /* 7082 */;
-import getLayoutStyles from "getLayoutStyles" /* 10050 */;
-import AvatarDuoPile from "AvatarDuoPile" /* 14091 */;
-import renderChannelPressableWrapper from "renderChannelPressableWrapper" /* 16364 */;
-import renderChannelWrapper from "renderChannelWrapper" /* 16365 */;
+// Module 16445 (ForYouShowAllRow)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set from "set" /* 1115 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import getFontScale from "getFontScale" /* 4982 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import registerAssetDefault from "registerAsset" /* 7142 */;
+import getLayoutStyles from "getLayoutStyles" /* 10121 */;
+import AvatarDuoPile from "AvatarDuoPile" /* 14177 */;
+import renderChannelPressableWrapper from "renderChannelPressableWrapper" /* 16440 */;
+import renderChannelWrapper from "renderChannelWrapper" /* 16441 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { Sections } from "SuggestedFriendSource" /* 12631 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { Sections } from "SuggestedFriendSource" /* 12699 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ForYouShowAllRow(panelVariant) {
@@ -53,11 +53,11 @@ function ForYouShowAllRow(panelVariant) {
   const items1 = [closure_7(View, obj), , ];
   obj3 = { style: tmp4.textContainer, children: null };
   const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj4[4] = intl.format(getSystemLocale.t.NrzztX, { count });
   obj3[1] = closure_7(Text.Text, obj4);
   items1[1] = closure_7(View, obj3);
-  obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: registerAssetDefault, size: tmp(1296).IconSizes.CUSTOM };
+  obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: registerAssetDefault, size: tmp(1178).IconSizes.CUSTOM };
   items1[2] = closure_7(Button.Icon, obj5);
   obj1[0] = items1;
   obj[4] = obj5.renderChannelWrapper(tmp8(tmp9, obj1), { layout, fontScale, panelVariant });
@@ -115,7 +115,7 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: "Array" };
+        const obj = { user: user.user, guildId: "Array", size: -1 };
         const obj2 = closure_1_0(closure_1_2[6]);
         const tmp = closure_1_7;
         const AvatarSizes = closure_1_0(closure_1_2[11]).AvatarSizes;

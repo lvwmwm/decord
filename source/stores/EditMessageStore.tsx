@@ -1,15 +1,15 @@
-// Module ID: 7614
-// Function ID: 7615
+// Module ID: 7681
+// Function ID: 7682
 // Name: initialize
-// Dependencies: [4743, 4166, 7615, 7619, 586, 706, 2]
+// Dependencies: [4781, 1935, 7682, 7686, 504, 573, 2]
 
-// Module 7614 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import rebuildDefault from "rebuild" /* 7615 */;
-import createEmptyState from "createEmptyState" /* 7619 */;
-import closure_3 from "reinjectEphemerals" /* 4743 */;
+// Module 7681 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import rebuildDefault from "rebuild" /* 7682 */;
+import createEmptyState from "createEmptyState" /* 7686 */;
+import closure_3 from "reinjectEphemerals" /* 4781 */;
 
 require = arg1;
 let closure_4 = {};

@@ -1,15 +1,15 @@
-// Module ID: 8685
-// Function ID: 8686
+// Module ID: 8755
+// Function ID: 8756
 // Name: ImagePlaceholderVersions
-// Dependencies: [17, 21, 1234, 8686, 5542, 2]
+// Dependencies: [17, 21, 1115, 8756, 5587, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 8685 (ImagePlaceholderVersions)
+// Module 8755 (ImagePlaceholderVersions)
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8686 */;
+import preloadDefault from "preload" /* 5587 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8756 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set from "set" /* 1234 */;
+import set from "set" /* 1115 */;
 
 ({ View: obj1, requireNativeComponent } = get_ActivityIndicator);
 const jsx = jsxProd.jsx;

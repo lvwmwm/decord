@@ -1,31 +1,31 @@
-// Module ID: 4860
-// Function ID: 4861
+// Module ID: 4899
+// Function ID: 4900
 // Name: getStickerExtensionFromFormatType
-// Dependencies: [1339, 1908, 4861, 5228, 4169, 673, 5229, 1431, 1895, 1234, 1465, 5231, 2]
+// Dependencies: [1221, 1979, 4900, 5267, 1938, 1074, 5268, 1396, 1879, 1115, 1430, 5270, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker, shouldAttachSticker
 
-// Module 4860 (getStickerExtensionFromFormatType)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import handleImageLoad from "handleImageLoad" /* 1465 */;
-import StickerFormat from "StickerFormat" /* 5229 */;
-import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "map" /* 4861 */;
-import closure_5 from "getStickerPreview" /* 5228 */;
-import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
-import { Endpoints } from "ME" /* 673 */;
+// Module 4899 (getStickerExtensionFromFormatType)
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import handleImageLoad from "handleImageLoad" /* 1430 */;
+import StickerFormat from "StickerFormat" /* 5268 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "map" /* 4900 */;
+import closure_5 from "getStickerPreview" /* 5267 */;
+import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 1938 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickerFormat.StickerFormat.PNG === format_type) {
-    const StickerExtensions = tmp(5229).StickerExtensions;
-    return tmp(1431).SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
-  } else if (tmp(5229).StickerFormat.APNG === format_type) {
-    return tmp(5229).StickerExtensions.APNG;
-  } else if (tmp(5229).StickerFormat.LOTTIE === format_type) {
-    return tmp(5229).StickerExtensions.LOTTIE;
-  } else if (tmp(5229).StickerFormat.GIF === format_type) {
-    return tmp(5229).StickerExtensions.GIF;
+    const StickerExtensions = tmp(5268).StickerExtensions;
+    return tmp(1396).SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
+  } else if (tmp(5268).StickerFormat.APNG === format_type) {
+    return tmp(5268).StickerExtensions.APNG;
+  } else if (tmp(5268).StickerFormat.LOTTIE === format_type) {
+    return tmp(5268).StickerExtensions.LOTTIE;
+  } else if (tmp(5268).StickerFormat.GIF === format_type) {
+    return tmp(5268).StickerExtensions.GIF;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -107,31 +107,31 @@ export const getStickerAssetUrl = (format_type) => {
   } else {
     let PNG = format_type.format_type;
     if (tmp) {
-      PNG = tmp23(5229).StickerFormat.PNG;
+      PNG = tmp23(5268).StickerFormat.PNG;
     }
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
     try {
-      const enabled = tmp23(1895).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
+      const enabled = tmp23(1879).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
       let str2 = "";
       if (enabled) {
         str2 = "&force_sdr=true";
       }
       let str3 = "";
-      if (tmp3 === tmp23(5229).StickerExtensions.WEBP) {
+      if (tmp3 === tmp23(5268).StickerExtensions.WEBP) {
         str3 = "&quality=lossless";
       }
       if ("development" !== closure_12) {
-        if (format_type.format_type === tmp23(5229).StickerFormat.LOTTIE) {
+        if (format_type.format_type === tmp23(5268).StickerFormat.LOTTIE) {
           const _location3 = location;
           const _HermesInternal4 = HermesInternal;
           return "" + location.protocol + ASSET_ENDPOINT + STICKER_ASSETResult;
         } else {
           let str6 = "";
-          if (format_type.format_type === tmp23(5229).StickerFormat.APNG) {
+          if (format_type.format_type === tmp23(5268).StickerFormat.APNG) {
             str6 = "";
             if (flag) {
-              let tmp23Result = tmp23(1234);
+              let tmp23Result = tmp23(1115);
               str6 = "";
               if (!tmp23Result.isAndroid()) {
                 str6 = "&passthrough=false";
@@ -139,18 +139,18 @@ export const getStickerAssetUrl = (format_type) => {
             }
           }
           const _Math = Math;
-          tmp23Result = tmp23(1465);
+          tmp23Result = tmp23(1430);
           const _location2 = location;
           const bound = Math.min(2, tmp23Result.getDevicePixelRatio());
           const _HermesInternal3 = HermesInternal;
-          return "" + protocol + MEDIA_PROXY_ENDPOINT + STICKER_ASSETResult + "?size=" + tmp23(1465).getBestMediaProxySize(size * bound) + str6 + str3 + str2;
+          return "" + protocol + MEDIA_PROXY_ENDPOINT + STICKER_ASSETResult + "?size=" + tmp23(1430).getBestMediaProxySize(size * bound) + str6 + str3 + str2;
         }
       } else {
-        if (format_type.format_type === tmp23(5229).StickerFormat.LOTTIE) {
+        if (format_type.format_type === tmp23(5268).StickerFormat.LOTTIE) {
           if (tmp23Result2.isWeb()) {
             return STICKER_ASSETResult;
           }
-          tmp23Result2 = tmp23(1234);
+          tmp23Result2 = tmp23(1115);
         }
         const _location = location;
         const _HermesInternal = HermesInternal;
@@ -204,7 +204,7 @@ export const isStickerPackAnimated = function isStickerPackAnimated(stickerPack)
   });
 };
 export const createStickerPackCategory = function createStickerPackCategory(id) {
-  const obj = { type: _require(5229).StickerCategoryTypes.PACK, id: id.id, name: id.name, stickers: id.stickers, previewSticker: null };
+  const obj = { type: _require(5268).StickerCategoryTypes.PACK, id: id.id, name: id.name, stickers: id.stickers, previewSticker: null };
   _require = id;
   if (null == id.cover_sticker_id) {
     let first = id.stickers[0];
@@ -234,10 +234,10 @@ export const shouldAttachSticker = function shouldAttachSticker(arg0, str, chann
     }
     if (StickerFormat.StickerSelectLocation.STICKER_PICKER === arg0) {
       return "" !== str.trim();
-    } else if (tmp3(5229).StickerSelectLocation.AUTOCOMPLETE === arg0) {
-      return tmp3(5231).getQueriesFromUserInput(str).length > 1;
+    } else if (tmp3(5268).StickerSelectLocation.AUTOCOMPLETE === arg0) {
+      return tmp3(5270).getQueriesFromUserInput(str).length > 1;
     } else {
-      const BUILT_IN_INTEGRATION = tmp3(5229).StickerSelectLocation.BUILT_IN_INTEGRATION;
+      const BUILT_IN_INTEGRATION = tmp3(5268).StickerSelectLocation.BUILT_IN_INTEGRATION;
       return false;
     }
   }

@@ -1,11 +1,11 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7205
+// Function ID: 7206
 // Name: getHigherContrastColor
-// Dependencies: [32, 685, 2]
+// Dependencies: [32, 1091, 2]
 // Exports: getHigherContrastColor
 
-// Module 7145 (getHigherContrastColor)
-import int2hslRaw from "int2hslRaw" /* 685 */;
+// Module 7205 (getHigherContrastColor)
+import int2hslRaw from "int2hslRaw" /* 1091 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;

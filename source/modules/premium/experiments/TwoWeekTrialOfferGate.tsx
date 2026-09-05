@@ -1,10 +1,10 @@
-// Module ID: 7995
-// Function ID: 7996
+// Module ID: 8064
+// Function ID: 8065
 // Name: isTwoWeekTrialOfferIngestAllowed
 // Dependencies: [2]
 // Exports: isTwoWeekTrialOfferIngestAllowed
 
-// Module 7995 (isTwoWeekTrialOfferIngestAllowed)
+// Module 8064 (isTwoWeekTrialOfferIngestAllowed)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/experiments/TwoWeekTrialOfferGate.tsx");

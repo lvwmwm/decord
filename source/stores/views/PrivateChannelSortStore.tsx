@@ -1,22 +1,22 @@
-// Module ID: 7158
-// Function ID: 7159
+// Module ID: 7218
+// Function ID: 7219
 // Name: makeSortedChannel
-// Dependencies: [7159, 7160, 1390, 1386, 1908, 4496, 4709, 1921, 11, 4116, 4074, 7161, 586, 706, 2]
+// Dependencies: [7219, 7220, 1961, 1957, 1979, 4575, 4741, 1371, 11, 4195, 4153, 7221, 504, 573, 2]
 
-// Module 7158 (makeSortedChannel)
+// Module 7218 (makeSortedChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hooksDefault from "hooks" /* 4074 */;
-import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 7161 */;
-import closure_3 from "processChannel" /* 7159 */;
-import closure_4 from "processChannel" /* 7160 */;
-import { isPrivate } from "createChannelRecord" /* 1390 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "generateOldThreadCutoff" /* 4496 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import hooksDefault from "hooks" /* 4153 */;
+import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 7221 */;
+import closure_3 from "processChannel" /* 7219 */;
+import closure_4 from "processChannel" /* 7220 */;
+import { isPrivate } from "createChannelRecord" /* 1961 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "generateOldThreadCutoff" /* 4575 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 function makeSortedChannel(channel, id) {
@@ -83,7 +83,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f38448 = () => {
+const f38615 = () => {
 
 };
 const Store = initializeDefault.Store;
@@ -96,7 +96,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f38448 !== "function") {
+  if (typeof f38615 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);

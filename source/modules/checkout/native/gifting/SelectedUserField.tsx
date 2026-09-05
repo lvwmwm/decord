@@ -1,18 +1,18 @@
-// Module ID: 10788
-// Function ID: 10789
+// Module ID: 10857
+// Function ID: 10858
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4481, 709, 6561, 1233, 4325, 6991, 1296, 4477, 6556, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 6621, 1114, 4404, 7051, 1178, 4556, 6616, 2]
 // Exports: default
 
-// Module 10788 (SelectedUserField)
+// Module 10857 (SelectedUserField)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import useInputStyles from "useInputStyles" /* 6561 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6991 */;
+import ThemesDefault from "Themes" /* 576 */;
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import useInputStyles from "useInputStyles" /* 6621 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7051 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -48,40 +48,40 @@ export default function SelectedUserField(onPress) {
   obj = { style: items, onPress: onPress.onPress, accessibilityRole: "button", accessibilityLabel: null, children: null };
   items[1] = openerWithClearButton;
   if (null != selectedUser) {
-    const intl3 = tmp4(1233).intl;
+    const intl3 = tmp4(1114).intl;
     let obj3 = nameFromUserDefault;
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + intl3.string(tmp4(1233).t.xFn72s) + ", " + obj3.getName(selectedUser);
-    const stringResult = intl3.string(tmp4(1233).t.xFn72s);
+    let combined = "" + intl3.string(tmp4(1114).t.xFn72s) + ", " + obj3.getName(selectedUser);
+    const stringResult = intl3.string(tmp4(1114).t.xFn72s);
   } else {
-    const intl = tmp4(1233).intl;
-    const intl2 = tmp4(1233).intl;
+    const intl = tmp4(1114).intl;
+    const intl2 = tmp4(1114).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + intl.string(tmp4(1233).t.xFn72s) + ", " + intl2.string(tmp4(1233).t.R0vK0N);
-    const stringResult1 = intl.string(tmp4(1233).t.xFn72s);
+    combined = "" + intl.string(tmp4(1114).t.xFn72s) + ", " + intl2.string(tmp4(1114).t.R0vK0N);
+    const stringResult1 = intl.string(tmp4(1114).t.xFn72s);
   }
   obj[3] = combined;
   const items1 = [closure_5(MagnifyingGlassIcon.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
   if (null != selectedUser) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.userPill;
-    obj3 = { user: null, guildId: "Array", size: "Array" };
+    obj3 = { user: null, guildId: "Array", size: -1 };
     obj3[0] = selectedUser;
-    obj3[2] = tmp4(1296).AvatarSizes.XSMALL_20;
-    const items2 = [tmp2(tmp4(1296).Avatar, obj3), ];
+    obj3[2] = tmp4(1178).AvatarSizes.XSMALL_20;
+    const items2 = [tmp2(tmp4(1178).Avatar, obj3), ];
     const obj4 = { variant: "text-md/medium", style: null, children: null };
     obj4[1] = tmp.userPillText;
     obj4[2] = nameFromUserDefault.getName(selectedUser);
-    items2[1] = tmp2(tmp4(4477).Text, obj4);
+    items2[1] = tmp2(tmp4(4556).Text, obj4);
     obj2[1] = items2;
     let tmp2Result = tmp6(tmp3, obj2);
     const obj10 = nameFromUserDefault;
   } else {
     const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
     obj5[2] = tmp.userPillText;
-    const intl4 = tmp4(1233).intl;
-    obj5[3] = intl4.string(tmp4(1233).t.R0vK0N);
-    tmp2Result = tmp2(tmp4(4477).Text, obj5);
+    const intl4 = tmp4(1114).intl;
+    obj5[3] = intl4.string(tmp4(1114).t.R0vK0N);
+    tmp2Result = tmp2(tmp4(4556).Text, obj5);
   }
   items1[1] = tmp2Result;
   obj[4] = items1;
@@ -93,11 +93,11 @@ export default function SelectedUserField(onPress) {
     obj6[1] = function onPress() {
       return callback(undefined);
     };
-    const intl5 = tmp4(1233).intl;
+    const intl5 = tmp4(1114).intl;
     const obj7 = { text: null };
     obj7[0] = nameFromUserDefault.getName(selectedUser);
-    obj6[3] = intl5.formatToPlainString(tmp4(1233).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(6556).CircleXIcon, { size: "xs" });
+    obj6[3] = intl5.formatToPlainString(tmp4(1114).t["0Vb9FQ"], obj7);
+    obj6[4] = tmp2(tmp4(6616).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
     const obj13 = nameFromUserDefault;
   }

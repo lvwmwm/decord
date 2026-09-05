@@ -1,15 +1,15 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11278
+// Function ID: 11279
 // Name: useCaptchaStore
-// Dependencies: [32, 641, 702, 7535, 7540, 2]
+// Dependencies: [32, 560, 1249, 7602, 7607, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 11210 (useCaptchaStore)
-import batchUpdates from "batchUpdates" /* 702 */;
-import setDefault from "set" /* 7535 */;
-import set from "set" /* 7540 */;
+// Module 11278 (useCaptchaStore)
+import batchUpdates from "batchUpdates" /* 1249 */;
+import setDefault from "set" /* 7602 */;
+import set from "set" /* 7607 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 require = arg1;
 keys = keys.create(() => ({ captchaServeVolume: {} }));
@@ -21,7 +21,7 @@ export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
 };
 export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_4.setState((arg0) => {
       let sum = arg0;
       if (null == closure_0) {

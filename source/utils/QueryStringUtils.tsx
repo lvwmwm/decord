@@ -1,10 +1,10 @@
-// Module ID: 4467
-// Function ID: 4468
+// Module ID: 4546
+// Function ID: 4547
 // Name: getFirstQueryStringValue
 // Dependencies: [2]
 // Exports: getFirstQueryStringValue
 
-// Module 4467 (getFirstQueryStringValue)
+// Module 4546 (getFirstQueryStringValue)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/QueryStringUtils.tsx");

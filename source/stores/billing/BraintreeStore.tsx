@@ -1,14 +1,14 @@
-// Module ID: 4156
-// Function ID: 4157
+// Module ID: 4235
+// Function ID: 4236
 // Name: getClient
-// Dependencies: [673, 1234, 527, 586, 706, 2]
+// Dependencies: [1074, 1115, 1272, 504, 573, 2]
 
-// Module 4156 (getClient)
-import sendRequest from "sendRequest" /* 527 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ME from "ME" /* 673 */;
-import set from "set" /* 1234 */;
+// Module 4235 (getClient)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import ME from "ME" /* 1074 */;
+import set from "set" /* 1115 */;
 
 ({ Endpoints: c4, PaymentGateways: c5, PaymentSourceTypes: closure_6 } = ME);
 let c7 = null;

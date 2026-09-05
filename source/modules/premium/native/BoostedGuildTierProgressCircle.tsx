@@ -1,19 +1,19 @@
-// Module ID: 13434
-// Function ID: 13435
+// Module ID: 13507
+// Function ID: 13508
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 673, 21, 4481, 709, 13435, 13439, 13440, 13441, 4387, 4372, 12523, 4477, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 13508, 13512, 13513, 13514, 4469, 4454, 12591, 4556, 2]
 // Exports: default
 
-// Module 13434 (BoostedGuildTierProgressCircle)
+// Module 13507 (BoostedGuildTierProgressCircle)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4372 */;
-import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4387 */;
-import getTier048PxSource from "getTier048PxSource" /* 13435 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4454 */;
+import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4469 */;
+import getTier048PxSource from "getTier048PxSource" /* 13508 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -66,11 +66,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(13439);
+          let tier048PxSource = tmp2(13512);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13440);
+          tier048PxSource = tmp2(13513);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(13441);
+          tier048PxSource = tmp2(13514);
         }
       }
       const obj2 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no" };
@@ -79,14 +79,14 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       const items = [tmp8(tmp12, obj2), ];
       const obj3 = { style: null, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
       obj3[0] = tmp.guildTierName;
-      let tmp19Result = tmp19(4372);
+      let tmp19Result = tmp19(4454);
       obj3[3] = tmp19Result.getTierName(guild.premiumTier);
-      items[1] = tmp8(tmp19(4477).Text, obj3);
+      items[1] = tmp8(tmp19(4556).Text, obj3);
       obj1[1] = items;
       obj[2] = tmp10(tmp11, obj1);
       return tmp8(tmp9, obj);
     }
-    tmp19Result = tmp19(13435);
+    tmp19Result = tmp19(13508);
     tier048PxSource = tmp19Result.getTier048PxSource(theme);
     const obj10 = getGuildTierFromGuild;
   }

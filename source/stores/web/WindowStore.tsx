@@ -1,13 +1,13 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13833
+// Function ID: 13834
 // Name: map
-// Dependencies: [38, 586, 5510, 706, 695, 2008, 2]
+// Dependencies: [38, 504, 5555, 573, 1242, 1896, 2]
 
-// Module 13843 (map)
+// Module 13833 (map)
 import _modDef38 from "module_38" /* 38 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getWindowId from "getWindowId" /* 5510 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getWindowId from "getWindowId" /* 5555 */;
 import set from "set" /* 2 */;
 
 require = arg1;

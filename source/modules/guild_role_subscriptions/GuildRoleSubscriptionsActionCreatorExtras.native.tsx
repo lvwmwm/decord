@@ -1,15 +1,15 @@
-// Module ID: 17659
-// Function ID: 17660
+// Module ID: 17739
+// Function ID: 17740
 // Name: NEW_LISTING_EDIT_STATE_ID
-// Dependencies: [17649, 15129, 15151, 4731, 17660, 2008, 17692, 2]
+// Dependencies: [17729, 15205, 15227, 4763, 17740, 1896, 17772, 2]
 // Exports: openGroupSetupModal, openTierCreationModal
 
-// Module 17659 (NEW_LISTING_EDIT_STATE_ID)
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 15151 */;
-import closure_4 from "usePriceTiers" /* 17649 */;
-import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 15129 */;
+// Module 17739 (NEW_LISTING_EDIT_STATE_ID)
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 15227 */;
+import closure_4 from "usePriceTiers" /* 17729 */;
+import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 15205 */;
 
 require = arg1;
 ({ GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY: c5, GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY: closure_6 } = MAX_SUBSCRIPTION_TIERS);
@@ -22,15 +22,15 @@ export const openTierCreationModal = function openTierCreationModal(arg0) {
   let obj = getRoleEmojisAll;
   obj.clearEditState(NEW_LISTING_EDIT_STATE_ID);
   obj = {};
-  const obj2 = _modDef4731;
+  const obj2 = _modDef4763;
   const merged = Object.assign(arg0);
   obj.editStateId = NEW_LISTING_EDIT_STATE_ID;
-  obj2.pushLazy(asyncRequireImpl(17660, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(asyncRequireImpl(17740, dependencyMap.paths), obj, closure_5);
 };
 export const openGroupSetupModal = function openGroupSetupModal(guildId) {
   closure_4.resetImperatively();
   let obj = getRoleEmojisAll;
   obj.clearEditState(NEW_LISTING_EDIT_STATE_ID);
   obj = { guildId, editStateId: NEW_LISTING_EDIT_STATE_ID };
-  _modDef4731.pushLazy(asyncRequireImpl(17692, dependencyMap.paths), obj, closure_6);
+  _modDef4763.pushLazy(asyncRequireImpl(17772, dependencyMap.paths), obj, closure_6);
 };

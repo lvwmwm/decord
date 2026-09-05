@@ -1,20 +1,20 @@
-// Module ID: 9396
-// Function ID: 9397
+// Module ID: 9467
+// Function ID: 9468
 // Name: VoiceChatDrawerState
-// Dependencies: [19, 1385, 9397, 4509, 4502, 4365, 8262, 641, 702, 706, 4729, 12, 9398, 9399, 9400, 586, 9401, 2]
+// Dependencies: [19, 1956, 9468, 1920, 4581, 4447, 8332, 560, 1249, 573, 4761, 12, 9469, 9470, 9471, 504, 9472, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 9396 (VoiceChatDrawerState)
-import batchUpdates from "batchUpdates" /* 702 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9398 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9399 */;
+// Module 9467 (VoiceChatDrawerState)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import batchUpdates from "batchUpdates" /* 1249 */;
+import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9469 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9470 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9397 */;
-import { OrientationLockState } from "items3" /* 4509 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
-import keys from "keys" /* 641 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9468 */;
+import { OrientationLockState } from "items3" /* 1920 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
+import keys from "keys" /* 560 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -31,18 +31,18 @@ let obj2 = keys.create(() => closure_9);
 const obj1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 const throttleResult = importDefaultResult.throttle(() => {
   const pipFocus = obj2.getState().pipFocus;
-  pipFocus(702).batchUpdates(() => closure_1_10.setState({ pipFocus: !pipFocus }));
+  pipFocus(1249).batchUpdates(() => closure_1_10.setState({ pipFocus: !pipFocus }));
 }, 300);
 let result = require("set").fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
 
 export const focusTimeout = timeout;
 export const setFocus = function setFocus(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_10.setState({ focus: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_10.setState({ focus: closure_0 }));
 };
 export const toggleFocus = function toggleFocus() {
   const focus = obj2.getState().focus;
-  focus(702).batchUpdates(() => closure_1_10.setState({ focus: !focus, pipFocus: false }));
+  focus(1249).batchUpdates(() => closure_1_10.setState({ focus: !focus, pipFocus: false }));
 };
 export const resetFocusTimer = function resetFocusTimer() {
   timeout.stop();
@@ -71,7 +71,7 @@ export const setVoiceChatDrawerState = function setVoiceChatDrawerState(embedded
     dispatcherDefault.wait(() => CLOSED(closure_1_2[10]).updateChatOpen(closure_0, CLOSED === closure_1_5.OPEN));
     const obj = dispatcherDefault;
   }
-  _require(702).batchUpdates(() => closure_1_10.setState({ voiceChatDrawerState: closure_1 }));
+  _require(1249).batchUpdates(() => closure_1_10.setState({ voiceChatDrawerState: closure_1 }));
 };
 export const togglePipFocus = throttleResult;
 export const useIsVoiceChatFocused = function useIsVoiceChatFocused() {
@@ -99,12 +99,12 @@ export const useChannelCallOrientationHandlers = function useChannelCallOrientat
   if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = _require(9400);
+  obj = _require(9471);
   const tmp7 = _require;
   const tmp8 = applicationId;
   const items = [tmp8];
   const items1 = [applicationId];
-  stateFromStores = _require(586).useStateFromStores(items, () => {
+  stateFromStores = _require(504).useStateFromStores(items, () => {
     if (null != applicationId) {
       let UNLOCKED2 = applicationId.getOrientationLockStateForApp(tmp);
       if (UNLOCKED2 == null) {

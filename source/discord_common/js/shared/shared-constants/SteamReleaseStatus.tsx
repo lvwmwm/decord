@@ -1,9 +1,9 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8691
+// Function ID: 8692
 // Name: SteamReleaseStatus
 // Dependencies: [2]
 
-// Module 8621 (SteamReleaseStatus)
+// Module 8691 (SteamReleaseStatus)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SteamReleaseStatus.tsx");

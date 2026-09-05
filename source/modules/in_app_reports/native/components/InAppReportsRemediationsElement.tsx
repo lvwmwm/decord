@@ -1,17 +1,17 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 9040
+// Function ID: 9041
 // Name: RemediationsElement
-// Dependencies: [19, 17, 21, 4481, 709, 5642, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 5687, 1114, 2]
 // Exports: default
 
-// Module 8970 (RemediationsElement)
+// Module 9040 (RemediationsElement)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

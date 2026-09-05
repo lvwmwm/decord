@@ -1,22 +1,22 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15807
+// Function ID: 15808
 // Name: CollectiblesShopInternal
-// Dependencies: [32, 19, 17, 4480, 1301, 1921, 7475, 675, 673, 21, 4481, 7122, 13338, 15732, 586, 5553, 511, 10663, 15733, 1234, 7486, 9295, 8109, 8706, 1362, 7102, 1498, 8778, 4152, 15735, 695, 7523, 8118, 15736, 15738, 15761, 1205, 8697, 10753, 15764, 15765, 15741, 15766, 7536, 2]
+// Dependencies: [32, 19, 17, 4559, 1183, 1371, 7542, 1076, 1074, 21, 4560, 7182, 13410, 15808, 504, 5598, 1256, 10734, 15809, 1115, 7553, 9366, 8178, 8776, 4411, 7162, 1483, 8848, 4231, 15811, 1242, 7590, 8187, 15812, 15814, 15837, 1232, 8767, 10822, 15840, 15841, 15817, 15842, 7603, 2]
 
-// Module 15731 (CollectiblesShopInternal)
-import _modDef1205 from "module_1205" /* 1205 */;
-import notSupportedDefault from "notSupported" /* 9295 */;
+// Module 15807 (CollectiblesShopInternal)
+import _modDef1232 from "module_1232" /* 1232 */;
+import notSupportedDefault from "notSupported" /* 9366 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getUserAgnosticState" /* 4480 */;
-import closure_8 from "handleThemeChange" /* 1301 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "updateCategoriesAndProducts" /* 7475 */;
-import items from "items" /* 675 */;
-import ME from "ME" /* 673 */;
+import closure_7 from "getUserAgnosticState" /* 4559 */;
+import closure_8 from "handleThemeChange" /* 1183 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import closure_10 from "updateCategoriesAndProducts" /* 7542 */;
+import items from "items" /* 1076 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class CollectiblesShopV2 {
@@ -74,7 +74,7 @@ class CollectiblesShopV2 {
       tmp9 = !nativePaymentsConnected;
     }
     if (tmp9) {
-      tmpResult = require("module_1205");
+      tmpResult = require("module_1232");
       tmp5Result1 = require("set");
       str = "collectibles mobile shop failed to connect to native payments isIOS: ";
       text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj7.isIOS()}`;

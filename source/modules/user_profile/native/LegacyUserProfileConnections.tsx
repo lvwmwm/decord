@@ -1,21 +1,21 @@
-// Module ID: 11506
-// Function ID: 11507
+// Module ID: 11574
+// Function ID: 11575
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1995, 1934, 4326, 7554, 673, 1300, 5369, 21, 4481, 709, 5368, 11507, 5244, 1431, 1362, 1296, 11510, 11511, 4197, 11512, 11513, 4449, 7130, 4193, 1233, 8300, 4708, 4190, 5084, 4477, 4205, 586, 7436, 11514, 2]
+// Dependencies: [19, 17, 2025, 1385, 4405, 7621, 1074, 1182, 5408, 21, 4560, 576, 5407, 11575, 5283, 1396, 4411, 1178, 11578, 11579, 4262, 11580, 11581, 4528, 7190, 4258, 1114, 8370, 4740, 4255, 5123, 4556, 4271, 504, 7503, 11582, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11506 (LegacyUserProfileConnections)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11574 (LegacyUserProfileConnections)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1995 */;
-import closure_7 from "createdAt" /* 1934 */;
-import closure_8 from "initialize" /* 4326 */;
-import closure_9 from "createUserWidgetFromServer" /* 7554 */;
-import ME from "ME" /* 673 */;
-import { MetadataFields } from "OperatorTypes" /* 5369 */;
+import closure_6 from "_getSystemLocale" /* 2025 */;
+import closure_7 from "createdAt" /* 1385 */;
+import closure_8 from "initialize" /* 4405 */;
+import closure_9 from "createUserWidgetFromServer" /* 7621 */;
+import ME from "ME" /* 1074 */;
+import { MetadataFields } from "OperatorTypes" /* 5408 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class ConnectedUserAccount {
@@ -525,10 +525,10 @@ export { ConnectedUserAccount };
 export { ConnectedApplicationUserRoleAccount };
 export const useAppplicationRoleConnectionItems = function useAppplicationRoleConnectionItems(arr) {
   const _require = arg1;
-  const theme = _require(4205).useThemeContext().theme;
-  const obj = _require(4205);
+  const theme = _require(4271).useThemeContext().theme;
+  const obj = _require(4271);
   const items = [closure_6];
-  dependencyMap = _require(586).useStateFromStores(items, () => closure_6.locale);
+  dependencyMap = _require(504).useStateFromStores(items, () => closure_6.locale);
   return arr.map((applicationRoleConnection) => {
     obj = { children: closure_1_14(closure_1_19, obj) };
     obj = { applicationRoleConnection, theme: c1, locale: theme, style: id };

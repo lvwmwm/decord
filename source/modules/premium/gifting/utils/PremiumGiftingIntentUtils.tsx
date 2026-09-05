@@ -1,13 +1,13 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11815
+// Function ID: 11816
 // Name: GiftIntentType
-// Dependencies: [1923, 673, 2]
+// Dependencies: [1373, 1074, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 11747 (GiftIntentType)
+// Module 11815 (GiftIntentType)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import ME from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 const GiftIntentType = GuildFeatures.GiftIntentType;
 const AnalyticsLocations = ME.AnalyticsLocations;

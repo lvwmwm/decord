@@ -1,16 +1,16 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15986
+// Function ID: 15987
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 673, 21, 4481, 709, 6884, 1498, 5579, 5585, 1233, 6915, 6918, 5647, 6914, 4477, 1994, 4936, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 6944, 1483, 5624, 5630, 1114, 6975, 6978, 5692, 6974, 4556, 2024, 4975, 2]
 // Exports: default
 
-// Module 15910 (AgeGateUnderage)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15986 (AgeGateUnderage)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);

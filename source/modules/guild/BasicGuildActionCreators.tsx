@@ -1,14 +1,14 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17825
+// Function ID: 17826
 // Name: _fetchBasicGuild
-// Dependencies: [5, 1908, 7886, 673, 706, 527, 2]
+// Dependencies: [5, 1979, 7955, 1074, 573, 1272, 2]
 // Exports: fetchBasicGuild
 
-// Module 17745 (_fetchBasicGuild)
+// Module 17825 (_fetchBasicGuild)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "getGuild" /* 7886 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "getGuild" /* 7955 */;
+import { Endpoints } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -74,7 +74,7 @@ function _fetchBasicGuild() {
           } else if (1 !== tmp8) {
             if (2 === tmp8) {
               guild = 1;
-              obj3 = body(706);
+              obj3 = body(573);
               const obj4 = { type: "BASIC_GUILD_FETCH_FAILURE", guildId: null };
               obj4[1] = callback;
               obj3.dispatch(obj4);
@@ -90,7 +90,7 @@ function _fetchBasicGuild() {
               return obj5;
             } else {
               body = body.body;
-              obj = body(706);
+              obj = body(573);
               const obj6 = { type: "BASIC_GUILD_FETCH_SUCCESS", guildId: null, guildInfo: null };
               obj6[1] = callback;
               obj6[2] = body;

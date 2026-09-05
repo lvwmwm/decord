@@ -1,15 +1,15 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 12045
+// Function ID: 12046
 // Name: initialize
-// Dependencies: [1921, 11, 11975, 7456, 586, 706, 2]
+// Dependencies: [1371, 11, 12043, 7523, 504, 573, 2]
 
-// Module 11977 (initialize)
+// Module 12045 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7456 */;
-import result2 from "result" /* 11975 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7523 */;
+import result2 from "result" /* 12043 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const Store = initializeDefault.Store;

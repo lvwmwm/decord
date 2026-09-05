@@ -1,23 +1,23 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 13861
+// Function ID: 13862
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 1215, 1921, 673, 1347, 21, 4481, 709, 1627, 1492, 1235, 695, 4731, 4335, 1219, 4867, 4871, 6550, 1233, 4871, 6534, 5086, 4299, 13872, 4477, 6882, 2]
+// Dependencies: [5, 19, 17, 502, 1371, 1074, 1230, 21, 4560, 576, 1611, 1477, 1116, 1242, 4763, 4417, 1100, 4906, 4910, 6610, 1114, 4910, 6593, 5125, 4378, 13862, 4556, 6942, 2]
 // Exports: default
 
-// Module 13871 (OneTimeLoginModal)
-import ThemesDefault from "Themes" /* 709 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5086 */;
+// Module 13861 (OneTimeLoginModal)
+import ThemesDefault from "Themes" /* 576 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5125 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { BACKGROUND_GRADIENT_PRESETS_MOBILE as closure_12 } from "ThemeTypes" /* 1347 */;
+import closure_8 from "fetchFingerprint" /* 502 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { BACKGROUND_GRADIENT_PRESETS_MOBILE as closure_12 } from "ThemeTypes" /* 1230 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c5, ActivityIndicator: closure_6, Image: error } = get_ActivityIndicator);
@@ -179,34 +179,34 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: null };
   obj = { absolute: true, wide: true, tall: true, gradientOverride: table[5], mix: true, angleOverride: 0, mixAmount: null };
-  obj = { dark: token(4299).OverlayOpacity.LEVEL_1 };
+  obj = { dark: token(4378).OverlayOpacity.LEVEL_1 };
   obj[6] = obj;
   const items6 = [callback(getMixedGradientColorDefault, obj), ];
   obj1 = { style: tmp.container, children: null };
   let obj2 = { style: tmp.centerContent, children: null };
   const tmp11 = getMixedGradientColorDefault;
-  const items7 = [callback(callback3, { source: token(13872), style: tmp.logo }), ];
+  const items7 = [callback(callback3, { source: token(13862), style: tmp.logo }), ];
   let obj4 = { style: tmp.loadingContainer, children: null };
   const items8 = [callback(callback2, {}), ];
   let obj5 = { variant: "text-lg/semibold", children: null };
-  let intl = token(1233).intl;
-  obj5[1] = intl.string(token(1233).t.W9uNdG);
-  items8[1] = callback(token(4477).Text, obj5);
+  let intl = token(1114).intl;
+  obj5[1] = intl.string(token(1114).t.W9uNdG);
+  items8[1] = callback(token(4556).Text, obj5);
   obj4[1] = items8;
   items7[1] = callback2(callback1, obj4);
   obj2[1] = items7;
   const items9 = [callback2(callback1, obj2), ];
   const obj6 = { style: tmp.bottomContent, children: null };
   const obj7 = { variant: "text-sm/normal", children: null };
-  let intl2 = token(1233).intl;
-  obj7[1] = intl2.string(token(1233).t["ZXe5/Y"]);
-  const items10 = [callback(token(4477).Text, obj7), ];
+  let intl2 = token(1114).intl;
+  obj7[1] = intl2.string(token(1114).t["ZXe5/Y"]);
+  const items10 = [callback(token(4556).Text, obj7), ];
   const obj8 = { textColor: "text-default", text: null, variant: "text-sm/medium", onPress: null, textStyle: null };
-  let intl3 = token(1233).intl;
-  obj8[1] = intl3.string(token(1233).t.FIEwfG);
+  let intl3 = token(1114).intl;
+  obj8[1] = intl3.string(token(1114).t.FIEwfG);
   obj8[3] = callback;
   obj8[4] = tmp.link;
-  items10[1] = callback(token(6882).LinkButton, obj8);
+  items10[1] = callback(token(6942).LinkButton, obj8);
   obj6[1] = items10;
   items9[1] = callback2(callback1, obj6);
   obj1[1] = items9;

@@ -1,15 +1,15 @@
-// Module ID: 7228
-// Function ID: 7229
+// Module ID: 7289
+// Function ID: 7290
 // Name: canReportUser
-// Dependencies: [1386, 4401, 4120, 1921, 673, 2]
+// Dependencies: [1957, 4480, 4199, 1371, 1074, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 7228 (canReportUser)
-import closure_0 from "ensureGuildLoaded" /* 1386 */;
-import closure_1 from "handleInviteData" /* 4401 */;
-import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 7289 (canReportUser)
+import closure_0 from "ensureGuildLoaded" /* 1957 */;
+import closure_1 from "handleInviteData" /* 4480 */;
+import closure_2 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 ({ ChannelTypes: c4, Permissions: c5, MessageTypesSets: closure_6 } = ME);
 const result = require("set").fileFinishedImporting("utils/ReportUtils.tsx");

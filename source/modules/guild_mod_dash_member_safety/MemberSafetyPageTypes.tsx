@@ -1,11 +1,11 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16570
+// Function ID: 16571
 // Name: SUBMITTED
-// Dependencies: [4305, 2]
+// Dependencies: [4384, 2]
 
-// Module 16494 (SUBMITTED)
+// Module 16570 (SUBMITTED)
 import set from "set" /* 2 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4384 */;
 
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
 const SUBMITTED = MAX_RESULTS_PER_PAGE.GuildJoinRequestApplicationStatuses.SUBMITTED;

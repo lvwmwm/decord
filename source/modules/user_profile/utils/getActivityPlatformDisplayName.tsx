@@ -1,13 +1,13 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 13019
+// Function ID: 13020
 // Name: getActivityPlatformDisplayName
-// Dependencies: [673, 1233, 12950, 2]
+// Dependencies: [1074, 1114, 13018, 2]
 // Exports: default
 
-// Module 12951 (getActivityPlatformDisplayName)
+// Module 13019 (getActivityPlatformDisplayName)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const PlatformTypes = ME.PlatformTypes;
 const result = set.fileFinishedImporting("modules/user_profile/utils/getActivityPlatformDisplayName.tsx");

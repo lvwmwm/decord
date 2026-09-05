@@ -1,13 +1,13 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7383
+// Function ID: 7384
 // Name: handleFormClose
-// Dependencies: [1921, 673, 586, 706, 2]
+// Dependencies: [1371, 1074, 504, 573, 2]
 
-// Module 7321 (handleFormClose)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "mergeGuildAvatar" /* 1921 */;
-import { FormStates } from "ME" /* 673 */;
+// Module 7383 (handleFormClose)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "mergeGuildAvatar" /* 1371 */;
+import { FormStates } from "ME" /* 1074 */;
 
 function handleFormClose() {
   CLOSED = FormStates.CLOSED;

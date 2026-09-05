@@ -1,16 +1,16 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17663
+// Function ID: 17664
 // Name: EnableCommunityModalSteps
-// Dependencies: [19, 17, 8994, 673, 21, 4481, 586, 1498, 4923, 4932, 706, 17581, 6979, 7063, 4936, 1233, 2]
+// Dependencies: [19, 17, 9064, 1074, 21, 4560, 504, 1483, 4962, 4971, 573, 17661, 7039, 7123, 4975, 1114, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 17583 (EnableCommunityModalSteps)
+// Module 17663 (EnableCommunityModalSteps)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 8994 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_6 from "handleFormInit" /* 9064 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);

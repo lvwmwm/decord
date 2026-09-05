@@ -1,15 +1,15 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12679
+// Function ID: 12680
 // Name: setStoredContacts
-// Dependencies: [592, 702, 706, 641, 2]
+// Dependencies: [510, 1249, 573, 560, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 12611 (setStoredContacts)
+// Module 12679 (setStoredContacts)
 import set from "set" /* 2 */;
-import Storage4 from "Storage" /* 592 */;
-import batchUpdates from "batchUpdates" /* 702 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import keys from "keys" /* 641 */;
+import Storage4 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import batchUpdates from "batchUpdates" /* 1249 */;
+import keys from "keys" /* 560 */;
 
 const V2_DCD_CONTACTS_STORAGE_KEY = "V2_DCD_CONTACTS_STORAGE_KEY";
 const ContactSyncUpsellCTADismissed = "ContactSyncUpsellCTADismissed";
@@ -18,9 +18,9 @@ const contact_sync_dm_list_cta_first_seen_date = "contact_sync_dm_list_cta_first
 let Storage = Storage4.Storage;
 Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", (arg0) => {
   const _require = arg0;
-  const Storage = _require(592).Storage;
+  const Storage = _require(510).Storage;
   const result = Storage.set(V2_DCD_CONTACTS_STORAGE_KEY, arg0);
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -28,7 +28,7 @@ Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", (arg0) => {
       return obj;
     });
   });
-  obj = _require(702);
+  obj = _require(1249);
   dispatcherDefault.wait(() => {
     obj = closure_1_1(closure_1_2[2]);
     obj = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
@@ -39,7 +39,7 @@ let obj = keys.create(() => ({ loadedPolicyNotice: false, storedContacts: "", up
 let Storage2 = Storage4.Storage;
 Storage2.asyncGet("ContactSyncDMListCTADismissed", (arg0) => {
   let _require = Boolean(arg0);
-  const Storage = _require(592).Storage;
+  const Storage = _require(510).Storage;
   let timestamp = Storage.get(contact_sync_dm_list_cta_first_seen_date);
   if (timestamp == null) {
     const _Date = Date;
@@ -48,20 +48,20 @@ Storage2.asyncGet("ContactSyncDMListCTADismissed", (arg0) => {
   if (Date.now() - timestamp > 5184000000) {
     _require = true;
   }
-  _require(702).batchUpdates(() => closure_1_7.setState({ dmListCTADismissed: c0 }));
+  _require(1249).batchUpdates(() => closure_1_7.setState({ dmListCTADismissed: c0 }));
 });
 const Storage3 = Storage4.Storage;
 Storage3.asyncGet("ContactSyncUpsellCTADismissed", (arg0) => {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_7.setState({ upsellCTADismissed: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_7.setState({ upsellCTADismissed: closure_0 }));
 });
 let result = set.fileFinishedImporting("modules/contact_sync/native/ContactSyncPersistedStore.tsx");
 
 export const setStoredContacts = function setStoredContacts(arg0) {
   const _require = arg0;
-  const Storage = _require(592).Storage;
+  const Storage = _require(510).Storage;
   const result = Storage.set(V2_DCD_CONTACTS_STORAGE_KEY, arg0);
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -69,7 +69,7 @@ export const setStoredContacts = function setStoredContacts(arg0) {
       return obj;
     });
   });
-  obj = _require(702);
+  obj = _require(1249);
   dispatcherDefault.wait(() => {
     obj = closure_1_1(closure_1_2[2]);
     obj = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
@@ -82,7 +82,7 @@ export const deleteStoredContacts = function deleteStoredContacts() {
   if (str == null) {
     str = "";
   }
-  const Storage2 = tmp(592).Storage;
+  const Storage2 = tmp(510).Storage;
   Storage2.remove(V2_DCD_CONTACTS_STORAGE_KEY);
   batchUpdates.batchUpdates(() => {
     state.setState((arg0) => {

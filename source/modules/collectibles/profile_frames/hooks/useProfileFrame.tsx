@@ -1,13 +1,13 @@
-// Module ID: 8144
-// Function ID: 8145
+// Module ID: 8213
+// Function ID: 8214
 // Name: useProfileFrame
-// Dependencies: [7475, 7491, 7482, 586, 2]
+// Dependencies: [7542, 7558, 7549, 504, 2]
 // Exports: default
 
-// Module 8144 (useProfileFrame)
-import closure_2 from "updateCategoriesAndProducts" /* 7475 */;
-import closure_3 from "map" /* 7491 */;
-import { isProfileFrameRecord } from "fromServer" /* 7482 */;
+// Module 8213 (useProfileFrame)
+import closure_2 from "updateCategoriesAndProducts" /* 7542 */;
+import closure_3 from "map" /* 7558 */;
+import { isProfileFrameRecord } from "fromServer" /* 7549 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/collectibles/profil
 export default function useProfileFrame(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null != closure_0) {
       const product = closure_1_2.getProduct(tmp);
       let first;

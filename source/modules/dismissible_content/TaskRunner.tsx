@@ -1,9 +1,9 @@
-// Module ID: 1381
-// Function ID: 1382
+// Module ID: 1952
+// Function ID: 1953
 // Name: schedule
 // Dependencies: [2]
 
-// Module 1381 (schedule)
+// Module 1952 (schedule)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/dismissible_content/TaskRunner.tsx");

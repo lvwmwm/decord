@@ -1,13 +1,13 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9088
+// Function ID: 9089
 // Name: useChannelVideoLimit
-// Dependencies: [1908, 4558, 673, 586, 2]
+// Dependencies: [1979, 4584, 1074, 504, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 9018 (useChannelVideoLimit)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "getVoiceStatesForGuild" /* 4558 */;
-import { ChannelTypes } from "ME" /* 673 */;
+// Module 9088 (useChannelVideoLimit)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "getVoiceStatesForGuild" /* 4584 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/video_calls/useChannelVideoLimit.tsx");
@@ -16,7 +16,7 @@ export default function useChannelVideoLimit(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_2];
   const items1 = [arg0];
-  return _require(586).useStateFromStoresObject(items, () => {
+  return _require(504).useStateFromStoresObject(items, () => {
     const result = closure_1_3.countVoiceStatesForChannel(guildId.id);
     const guild = closure_1_2.getGuild(guildId.getGuildId());
     if (null == guild) {

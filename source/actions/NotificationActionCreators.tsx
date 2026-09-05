@@ -1,12 +1,12 @@
-// Module ID: 15439
-// Function ID: 15440
-// Dependencies: [673, 695, 706, 2]
+// Module ID: 15515
+// Function ID: 15516
+// Dependencies: [1074, 1242, 573, 2]
 
-// Module 15439
+// Module 15515
 import set from "set" /* 2 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import ME from "ME" /* 1074 */;
 
 ({ DesktopNotificationTypes: obj1, NotificationPermissionTypes: c3, AnalyticEvents: c4 } = ME);
 const result = set.fileFinishedImporting("actions/NotificationActionCreators.tsx");

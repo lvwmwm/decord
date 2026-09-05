@@ -1,14 +1,14 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8438
+// Function ID: 8439
 // Name: IdCardIcon
-// Dependencies: [19, 21, 709, 4196, 8369, 2]
+// Dependencies: [19, 21, 576, 4261, 8439, 2]
 // Exports: IdCardIcon
 
-// Module 8368 (IdCardIcon)
+// Module 8438 (IdCardIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8369 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8439 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

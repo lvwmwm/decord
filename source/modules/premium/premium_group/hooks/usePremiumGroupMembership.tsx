@@ -1,13 +1,13 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 13488
+// Function ID: 13489
 // Name: usePremiumGroupMembership
-// Dependencies: [19, 13416, 586, 706, 2]
+// Dependencies: [19, 13489, 504, 573, 2]
 // Exports: default
 
-// Module 13415 (usePremiumGroupMembership)
+// Module 13488 (usePremiumGroupMembership)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "handleMutationStart" /* 13416 */;
+import closure_4 from "handleMutationStart" /* 13489 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembership.tsx");
@@ -26,7 +26,7 @@ export default function usePremiumGroupMembership() {
     flag2 = true;
   }
   const items = [closure_4];
-  const stateFromStoresObject = flag(586).useStateFromStoresObject(items, () => ({ premiumGroupMembership: closure_4.getMembership(), isFetchingMembership: closure_4.isFetchingMembership() }));
+  const stateFromStoresObject = flag(504).useStateFromStoresObject(items, () => ({ premiumGroupMembership: closure_4.getMembership(), isFetchingMembership: closure_4.isFetchingMembership() }));
   const items1 = [flag2, flag];
   ({ premiumGroupMembership, isFetchingMembership } = stateFromStoresObject);
   useEffect(() => {

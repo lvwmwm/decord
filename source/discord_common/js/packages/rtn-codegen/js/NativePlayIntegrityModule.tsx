@@ -1,9 +1,9 @@
-// Module ID: 8499
-// Function ID: 8500
+// Module ID: 8569
+// Function ID: 8570
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 8499 (NativePlayIntegrityModule)
+// Module 8569 (NativePlayIntegrityModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

@@ -1,29 +1,29 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15555
+// Function ID: 15556
 // Name: handleLogout
-// Dependencies: [21, 592, 688, 5372, 9616, 6930, 6534, 4867, 4871, 1233, 11400, 9003, 2]
+// Dependencies: [21, 510, 1093, 5411, 9687, 6990, 6593, 4906, 4910, 1114, 11468, 9073, 2]
 
-// Module 15479 (handleLogout)
+// Module 15555 (handleLogout)
 import set from "set" /* 2 */;
-import Storage2 from "Storage" /* 592 */;
-import keys from "keys" /* 688 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useAlertStore from "useAlertStore" /* 4867 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
-import _modDef5372 from "module_5372" /* 5372 */;
-import handleLogoutDefault from "handleLogout" /* 6534 */;
-import dispatcherDefault from "dispatcher" /* 6930 */;
-import DoorExitIcon from "DoorExitIcon" /* 9003 */;
-import NativeModulesDefault from "NativeModules" /* 9616 */;
+import Storage2 from "Storage" /* 510 */;
+import keys from "keys" /* 1093 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useAlertStore from "useAlertStore" /* 4906 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
+import _modDef5411 from "module_5411" /* 5411 */;
+import handleLogoutDefault from "handleLogout" /* 6593 */;
+import dispatcherDefault from "dispatcher" /* 6990 */;
+import DoorExitIcon from "DoorExitIcon" /* 9073 */;
+import NativeModulesDefault from "NativeModules" /* 9687 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 function handleLogout() {
   const Storage = Storage2.Storage;
   const result = Storage.set(keys.StorageKeys.LOGOUT_TIMESTAMP_KEY, new Date().getTime());
   const date = new Date();
-  _modDef5372.disconnect();
-  const obj2 = _modDef5372;
+  _modDef5411.disconnect();
+  const obj2 = _modDef5411;
   const result1 = NativeModulesDefault.clearAllNotifications();
   const obj3 = NativeModulesDefault;
   dispatcherDefault.close();

@@ -1,14 +1,14 @@
-// Module ID: 6094
-// Function ID: 6095
+// Module ID: 6149
+// Function ID: 6150
 // Name: GiftCardWallet3dIllustration
-// Dependencies: [21, 5542, 6095, 2]
+// Dependencies: [21, 5587, 6150, 2]
 // Exports: GiftCardWallet3dIllustration
 
-// Module 6094 (GiftCardWallet3dIllustration)
+// Module 6149 (GiftCardWallet3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6095 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6150 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardWallet3dIllustration.native.tsx");

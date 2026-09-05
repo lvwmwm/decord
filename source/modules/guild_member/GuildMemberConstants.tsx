@@ -1,9 +1,9 @@
-// Module ID: 4108
-// Function ID: 4109
+// Module ID: 4187
+// Function ID: 4188
 // Name: GuildMemberFlags
 // Dependencies: [2]
 
-// Module 4108 (GuildMemberFlags)
+// Module 4187 (GuildMemberFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_member/GuildMemberConstants.tsx");

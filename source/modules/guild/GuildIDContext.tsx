@@ -1,9 +1,9 @@
-// Module ID: 4758
-// Function ID: 4759
+// Module ID: 4797
+// Function ID: 4798
 // Name: context
 // Dependencies: [19, 2]
 
-// Module 4758 (context)
+// Module 4797 (context)
 import importAllResult from "noop" /* 19 */;
 
 const context = importAllResult.createContext(undefined);

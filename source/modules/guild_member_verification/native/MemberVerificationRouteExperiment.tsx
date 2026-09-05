@@ -1,11 +1,11 @@
-// Module ID: 5481
-// Function ID: 5482
+// Module ID: 5526
+// Function ID: 5527
 // Name: RemoveMemberVerificationRouteExperiment
-// Dependencies: [1469, 2]
+// Dependencies: [1434, 2]
 // Exports: getIsMemberVerificationRouteDeprecated, useIsMemberVerificationRouteDeprecated
 
-// Module 5481 (RemoveMemberVerificationRouteExperiment)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
+// Module 5526 (RemoveMemberVerificationRouteExperiment)
+import getUnitIdDefault from "getUnitId" /* 1434 */;
 
 const obj = { 1: null };
 obj[1] = { isDeprecated: true };

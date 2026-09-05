@@ -1,21 +1,21 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16354
+// Function ID: 16355
 // Name: checkNodeAndIterate
-// Dependencies: [32, 19, 17, 7569, 4302, 5398, 16209, 15022, 21, 4481, 7012, 1627, 15015, 15024, 633, 640, 586, 4218, 16279, 2]
+// Dependencies: [32, 19, 17, 7636, 4381, 5438, 16285, 15098, 21, 4560, 7072, 1611, 15091, 15100, 551, 558, 504, 4296, 16355, 2]
 
-// Module 16278 (checkNodeAndIterate)
-import renderDefaultEmpty from "renderDefaultEmpty" /* 7012 */;
+// Module 16354 (checkNodeAndIterate)
+import renderDefaultEmpty from "renderDefaultEmpty" /* 7072 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7569 */;
-import closure_7 from "handleConnectionOpen" /* 4302 */;
-import closure_8 from "insertUnsortedGuilds" /* 5398 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5398 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7636 */;
+import closure_7 from "handleConnectionOpen" /* 4381 */;
+import closure_8 from "insertUnsortedGuilds" /* 5438 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5438 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16285 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15098 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function checkNodeAndIterate(arg0) {
@@ -146,7 +146,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               let tmp8 = nextResult;
               let type = tmp4.type;
-              if (tmp41(7012).FastListItemTypes.SECTION === type) {
+              if (tmp41(7072).FastListItemTypes.SECTION === type) {
                 let tmp18 = nextResult;
                 let node = guildsTree.getNode(tmp4.recyclerKey);
                 let element = node;
@@ -181,7 +181,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
                 }
                 continue;
               } else {
-                if (tmp41(7012).FastListItemTypes.ITEM === type) {
+                if (tmp41(7072).FastListItemTypes.ITEM === type) {
                   let tmp10 = nextResult;
                   let node1 = guildsTree.getNode(tmp4.recyclerKey);
                   let tmp12 = node1;
@@ -263,7 +263,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               return tmp37;
             }
-            let obj3 = { beforeItem: null, afterItem: "Array" };
+            let obj3 = { beforeItem: null, afterItem: "a" };
             let obj4 = { section: null, row: null, mention: true };
             obj4[0] = sum;
             obj4[1] = tmp32.item;
@@ -282,8 +282,8 @@ let c4 = importAllResult;
 ({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId, GUILD_LIST_WIDTH } = GUILD_ITEM_SIZE);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = CONNECTION_BANNER_HEIGHT);
 let closure_15 = createCacheKey.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
-let closure_17 = { beforeItem: "left", afterItem: "call" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
+let closure_17 = { beforeItem: "hash", afterItem: "call" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
 let closure_20 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 let closure_21 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
 const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {

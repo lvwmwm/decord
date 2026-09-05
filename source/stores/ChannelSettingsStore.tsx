@@ -1,25 +1,25 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 8626
+// Function ID: 8627
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1390, 8310, 1934, 1386, 673, 1232, 4132, 4134, 1396, 1397, 527, 706, 12, 1426, 4074, 586, 2]
+// Dependencies: [1961, 8380, 1385, 1957, 1074, 1113, 4211, 4213, 1966, 1967, 1272, 573, 12, 1971, 4153, 504, 2]
 
-// Module 8556 (normalizeChannelPropertyForCompare)
+// Module 8626 (normalizeChannelPropertyForCompare)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import AbortCodes from "AbortCodes" /* 1232 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import set2 from "set" /* 1396 */;
-import set3 from "set" /* 1397 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import hooksDefault from "hooks" /* 4074 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import closure_10 from "createFromServer" /* 8310 */;
-import closure_11 from "createdAt" /* 1934 */;
-import closure_12 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import AbortCodes from "AbortCodes" /* 1113 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import set2 from "set" /* 1966 */;
+import set3 from "set" /* 1967 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
+import hooksDefault from "hooks" /* 4153 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4211 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
+import closure_10 from "createFromServer" /* 8380 */;
+import closure_11 from "createdAt" /* 1385 */;
+import closure_12 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
 import importDefaultResult from "apply" /* 12 */;
 
 function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {

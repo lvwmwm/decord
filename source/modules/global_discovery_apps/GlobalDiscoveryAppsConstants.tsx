@@ -1,9 +1,9 @@
-// Module ID: 681
-// Function ID: 682
+// Module ID: 1082
+// Function ID: 1083
 // Name: GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
 // Dependencies: [2]
 
-// Module 681 (GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID)
+// Module 1082 (GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8567
+// Function ID: 8568
 // Name: trackFailure
-// Dependencies: [5, 32, 19, 17, 21, 7535, 7540, 1498, 4741, 8498, 8501, 8380, 8500, 8351, 8352, 4934, 4477, 1233, 2918, 5393, 4936, 8343, 2]
+// Dependencies: [5, 32, 19, 17, 21, 7602, 7607, 1483, 4773, 8568, 8571, 8450, 8570, 8421, 8422, 4973, 4556, 1114, 2946, 5433, 4975, 8413, 2]
 // Exports: default
 
-// Module 8497 (trackFailure)
-import setDefault from "set" /* 7535 */;
-import set from "set" /* 7540 */;
+// Module 8567 (trackFailure)
+import setDefault from "set" /* 7602 */;
+import set from "set" /* 7607 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -31,10 +31,10 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   let callback;
   let callback1;
   let React;
-  let obj = modalSessionId(1498);
+  let obj = modalSessionId(1483);
   navigation = obj.useNavigation();
   [tmp5, c2] = callback1(React.useState({ type: "loading" }), 2);
-  obj1 = modalSessionId(4741);
+  obj1 = modalSessionId(4773);
   const watchAgeVerificationStatusChange = obj1.useWatchAgeVerificationStatusChange(modalSessionId.onClose);
   let items = [navigation];
   callback = React.useCallback(() => {
@@ -229,32 +229,32 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
     obj = { children: null };
     const items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
     obj = { variant: "text-md/medium", color: "text-strong", children: null };
-    const intl = tmp(1233).intl;
-    obj[2] = intl.string(navigation(2918).MN6I4Y);
-    items3[1] = tmp10(tmp(4477).Text, obj);
+    const intl = tmp(1114).intl;
+    obj[2] = intl.string(navigation(2946).MN6I4Y);
+    items3[1] = tmp10(tmp(4556).Text, obj);
     obj[0] = items3;
     let tmp15 = callback(closure_8, obj);
   } else {
     obj1 = { children: null };
     let obj2 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: null };
-    const intl2 = tmp(1233).intl;
-    obj2[3] = intl2.string(navigation(2918).tBwanH);
-    const items4 = [tmp10(tmp(4477).Text, obj2), ];
+    const intl2 = tmp(1114).intl;
+    obj2[3] = intl2.string(navigation(2946).tBwanH);
+    const items4 = [tmp10(tmp(4556).Text, obj2), ];
     let obj3 = { children: null };
     let obj4 = { variant: "primary", size: "lg", text: null, onPress: null };
-    const intl3 = tmp(1233).intl;
-    obj4[2] = intl3.string(navigation(2918)["Jx33+I"]);
+    const intl3 = tmp(1114).intl;
+    obj4[2] = intl3.string(navigation(2946)["Jx33+I"]);
     obj4[3] = function onPress() {
       const result = modalSessionId(_undefined[21]).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(_undefined[21]).AgeVerificationModalVersion.EXPRESSIVE_V2, modalSessionId(_undefined[21]).AgeVerificationModalCta.METHOD_SELECT);
       callback();
     };
-    obj3[0] = tmp10(tmp(4936).Button, obj4);
-    items4[1] = tmp10(tmp(5393).ButtonGroup, obj3);
+    obj3[0] = tmp10(tmp(4975).Button, obj4);
+    items4[1] = tmp10(tmp(5433).ButtonGroup, obj3);
     obj1[0] = items4;
     tmp15 = callback(closure_8, obj1);
   }
   let obj5 = { children: null };
   const tmp4 = callback1(React.useState({ type: "loading" }), 2);
-  obj5[0] = closure_7(modalSessionId(8352).ModalContent, { children: closure_7(modalSessionId(4934).Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) });
-  return closure_7(modalSessionId(8351).ModalScreen, obj5);
+  obj5[0] = closure_7(modalSessionId(8422).ModalContent, { children: closure_7(modalSessionId(4973).Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) });
+  return closure_7(modalSessionId(8421).ModalScreen, obj5);
 };

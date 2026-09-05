@@ -1,21 +1,21 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17445
+// Function ID: 17446
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4481, 709, 13872, 5084, 1233, 5542, 1296, 12705, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 13862, 5123, 1114, 5587, 1178, 12773, 2]
 // Exports: default
 
-// Module 17365 (TouchableUploadAvatar)
+// Module 17445 (TouchableUploadAvatar)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import preloadDefault from "preload" /* 5542 */;
-import registerAssetDefault from "registerAsset" /* 12705 */;
-import registerAssetDefault2 from "registerAsset" /* 13872 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import preloadDefault from "preload" /* 5587 */;
+import registerAssetDefault from "registerAsset" /* 12773 */;
+import registerAssetDefault2 from "registerAsset" /* 13862 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

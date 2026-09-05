@@ -1,13 +1,13 @@
-// Module ID: 7224
-// Function ID: 7225
+// Module ID: 7285
+// Function ID: 7286
 // Name: reset
-// Dependencies: [684, 4365, 11, 3, 12, 2]
+// Dependencies: [1090, 4447, 11, 3, 12, 2]
 
-// Module 7224 (reset)
+// Module 7285 (reset)
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import setDefault from "set" /* 684 */;
+import setDefault from "set" /* 1090 */;
 
 const require = arg1;
 const MINUTE = setDefault.Millis.MINUTE;

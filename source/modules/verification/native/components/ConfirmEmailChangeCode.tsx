@@ -1,13 +1,13 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6603
+// Function ID: 6604
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5578, 21, 1498, 688, 6545, 6542, 1233, 2]
+// Dependencies: [5, 19, 5623, 21, 1483, 1093, 6604, 6601, 1114, 2]
 // Exports: default
 
-// Module 6544 (ConfirmEmailChangeCode)
+// Module 6603 (ConfirmEmailChangeCode)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { setEmailToken } from "ChangeEmailFields" /* 5578 */;
+import { setEmailToken } from "ChangeEmailFields" /* 5623 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
   let _require = isChangeEmail;
   let navigation;
-  let obj = _require(1498);
+  let obj = _require(1483);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = React.useCallback((arg0) => {
@@ -109,9 +109,9 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       }
     }
   });
-  const intl = _require(1233).intl;
-  obj[3] = intl.string(_require(1233).t["2x/2Uo"]);
-  const intl2 = _require(1233).intl;
-  obj[4] = intl2.string(_require(1233).t.PDTjLN);
-  return jsx(navigation(6545), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  const intl = _require(1114).intl;
+  obj[3] = intl.string(_require(1114).t["2x/2Uo"]);
+  const intl2 = _require(1114).intl;
+  obj[4] = intl2.string(_require(1114).t.PDTjLN);
+  return jsx(navigation(6604), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

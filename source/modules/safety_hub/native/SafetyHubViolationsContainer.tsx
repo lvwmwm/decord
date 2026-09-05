@@ -1,25 +1,25 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14773
+// Function ID: 14774
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 8360, 8349, 673, 21, 4481, 709, 8980, 8518, 4477, 1233, 13500, 11085, 8348, 11, 14699, 8350, 4731, 11810, 2008, 11814, 586, 695, 11812, 2]
+// Dependencies: [32, 19, 17, 8430, 8419, 1074, 21, 4560, 576, 9050, 8588, 4556, 1114, 13573, 11153, 8418, 11, 14774, 8420, 4763, 11878, 1896, 11882, 504, 1242, 11880, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14698 (SafetyHubViolationsHeader)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8348 */;
-import WarningIcon from "WarningIcon" /* 8518 */;
-import renderDefault from "render" /* 8980 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11812 */;
+// Module 14773 (SafetyHubViolationsHeader)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8418 */;
+import WarningIcon from "WarningIcon" /* 8588 */;
+import renderDefault from "render" /* 9050 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11880 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
-import SafetyHubView from "SafetyHubView" /* 8349 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8430 */;
+import SafetyHubView from "SafetyHubView" /* 8419 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function SafetyHubViolationsHeader(count) {
@@ -35,9 +35,9 @@ function SafetyHubViolationsHeader(count) {
   const items2 = [closure_11(closure_6, obj), , ];
   obj1 = { style: items3, children: null };
   items3 = [tmp.headerTextContainer];
-  const intl = tmp7(1233).intl;
+  const intl = tmp7(1114).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = tmp7(1233).t;
+  const t = tmp7(1114).t;
   if ("active" === status) {
     const obj2 = { count: null };
     obj2[0] = str.toString();
@@ -48,9 +48,9 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(t.fZAHBT, obj3);
   }
   const items4 = [closure_11(Text.Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
-  const intl2 = tmp7(1233).intl;
+  const intl2 = tmp7(1114).intl;
   const string = intl2.string;
-  const t2 = tmp7(1233).t;
+  const t2 = tmp7(1114).t;
   if ("active" === status) {
     let stringResult = string(t2.XJ2YVR);
   } else {
@@ -60,9 +60,9 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(13500).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(13573).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(11085).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(11153).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
@@ -241,7 +241,7 @@ class SafetyHubViolationsContainer {
     items2[3] = stateFromStores;
     effect = closure_4.useEffect(() => {
       if (first) {
-        let obj = first(695);
+        let obj = first(1242);
         obj = { action: null, account_standing: null, classification_ids: null, source: null, is_violative_content_shown: false, is_dsa_eligible: null };
         obj[0] = closure_1_9.ViewViolationsDropdown;
         obj[1] = safetyHubAccountStanding.state;

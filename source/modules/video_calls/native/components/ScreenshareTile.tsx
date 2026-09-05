@@ -1,22 +1,22 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9591
+// Function ID: 9592
 // Name: ScreenShareTile
-// Dependencies: [19, 17, 673, 21, 4481, 709, 9521, 6595, 1296, 9522, 4477, 1233, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 9592, 6655, 1178, 9593, 4556, 1114, 2]
 // Exports: default
 
-// Module 9520 (ScreenShareTile)
+// Module 9591 (ScreenShareTile)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6595 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9521 */;
-import registerAssetDefault from "registerAsset" /* 9522 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6655 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9592 */;
+import registerAssetDefault from "registerAsset" /* 9593 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NOOP } from "ME" /* 673 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

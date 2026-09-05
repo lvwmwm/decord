@@ -1,13 +1,13 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7710
+// Function ID: 7711
 // Name: progressFromServer
-// Dependencies: [32, 4713, 7644, 7641, 2]
+// Dependencies: [32, 4745, 7711, 7708, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
-// Module 7643 (progressFromServer)
-import t from "t" /* 4713 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7641 */;
-import questFromServerV2 from "questFromServerV2" /* 7644 */;
+// Module 7710 (progressFromServer)
+import t from "t" /* 4745 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7708 */;
+import questFromServerV2 from "questFromServerV2" /* 7711 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -62,7 +62,7 @@ function _questsEntitlementFromServer(skuId) {
       obj[0] = obj1;
       obj[0] = obj;
       tmp2 = obj;
-    } else if (tmp3(7641).QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (tmp3(7708).QuestRewardTypes.REWARD_CODE === tag) {
       const obj2 = { tag: null, rewardCode: null };
       obj2[0] = quest_rewards.reward.tag;
       const obj3 = { userId: null, questId: null, code: null, platform: null, claimedAt: null, tier: null };

@@ -1,13 +1,13 @@
-// Module ID: 5229
-// Function ID: 5230
+// Module ID: 5268
+// Function ID: 5269
 // Name: StickerFormat
-// Dependencies: [1428, 5230, 2]
+// Dependencies: [1973, 5269, 2]
 // Exports: isAnimatedSticker, isCustomSticker
 
-// Module 5229 (StickerFormat)
+// Module 5268 (StickerFormat)
 import set from "set" /* 2 */;
-import TypeTag2 from "TypeTag" /* 1428 */;
-import MetaStickerType from "MetaStickerType" /* 5230 */;
+import TypeTag2 from "TypeTag" /* 1973 */;
+import MetaStickerType from "MetaStickerType" /* 5269 */;
 
 const TypeTag = TypeTag2.TypeTag;
 const result = set.fileFinishedImporting("modules/stickers/StickersTypes.tsx");

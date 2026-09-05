@@ -1,15 +1,15 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11610
+// Function ID: 11611
 // Name: getAppChannelBotUserIdFromApplication
-// Dependencies: [4522, 673, 11543, 503, 4127, 2]
+// Dependencies: [4788, 1074, 11611, 1086, 4206, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
-// Module 11542 (getAppChannelBotUserIdFromApplication)
-import fromStringAll from "fromString" /* 503 */;
-import Permissions from "Permissions" /* 4127 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11543 */;
-import closure_3 from "addApplication" /* 4522 */;
-import { ChannelTypes } from "ME" /* 673 */;
+// Module 11610 (getAppChannelBotUserIdFromApplication)
+import fromStringAll from "fromString" /* 1086 */;
+import Permissions from "Permissions" /* 4206 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 11611 */;
+import closure_3 from "addApplication" /* 4788 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_channels/AppChannelPermissionUtils.tsx");

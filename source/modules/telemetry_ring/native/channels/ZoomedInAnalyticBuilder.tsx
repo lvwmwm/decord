@@ -1,15 +1,15 @@
-// Module ID: 14114
-// Function ID: 14115
+// Module ID: 1905
+// Function ID: 1906
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [673, 7607, 13561, 13733, 2]
+// Dependencies: [1074, 1359, 1906, 1907, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 14114 (buildZoomedInAnalyticsEvent)
+// Module 1905 (buildZoomedInAnalyticsEvent)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7607 */;
-import Opcode from "Opcode" /* 13561 */;
-import noop from "noop" /* 13733 */;
+import ME from "ME" /* 1074 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 1359 */;
+import Opcode from "Opcode" /* 1906 */;
+import noop from "noop" /* 1907 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };

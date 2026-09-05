@@ -1,23 +1,23 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 10899
+// Function ID: 10900
 // Name: AVERAGE_FONT_WIDTH_RATIO
-// Dependencies: [19, 17, 1938, 21, 1939, 4481, 709, 1235, 10831, 4755, 9106, 1937, 4756, 9105, 4197, 10832, 4477, 4487, 4200, 10835, 1394, 2]
+// Dependencies: [19, 17, 1389, 21, 1390, 4560, 576, 1116, 10900, 4794, 9177, 1388, 4795, 9176, 4262, 10901, 4556, 4566, 4265, 10904, 1369, 2]
 
-// Module 10830 (AVERAGE_FONT_WIDTH_RATIO)
-import ThemesDefault from "Themes" /* 709 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1939 */;
+// Module 10899 (AVERAGE_FONT_WIDTH_RATIO)
+import ThemesDefault from "Themes" /* 576 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1390 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MIN_PRISM_GRADIENT_WIDTH } from "items3" /* 1938 */;
+import { MIN_PRISM_GRADIENT_WIDTH } from "items3" /* 1389 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c3 = importAllResult;
 ({ View: c4, processColor: c5, PixelRatio: closure_6, StyleSheet: error } = get_ActivityIndicator);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let closure_11 = { [arg1(1939).DisplayNameEffect.NEON]: 1, [arg1(1939).DisplayNameEffect.TOON]: 1.6, [arg1(1939).DisplayNameEffect.POP]: 1.2 };
+let closure_11 = { [arg1(1390).DisplayNameEffect.NEON]: 1, [arg1(1390).DisplayNameEffect.TOON]: 1.6, [arg1(1390).DisplayNameEffect.POP]: 1.2 };
 let closure_12 = createCacheKey.createStyles((color) => {
   const result = 0.04 * arg1;
   const sum = 4 + 0.12 * arg1;
@@ -46,13 +46,13 @@ let closure_12 = createCacheKey.createStyles((color) => {
   obj1 = { neon: null, popContainer: null, popBackLayer: null, popFrontLayer: null, toon: null, layoutImpact: null };
   const merged = Object.assign(obj);
   obj1[0] = obj;
-  let tmp4Result = tmp4(1235);
+  let tmp4Result = tmp4(1116);
   let num = 0;
   if (tmp4Result.isIOS()) {
     num = -sum3 / 2;
   }
   const obj2 = { position: "relative", top: num, left: null, marginRight: null };
-  tmp4Result = tmp4(1235);
+  tmp4Result = tmp4(1116);
   let num2 = 0;
   if (tmp4Result.isIOS()) {
     num2 = -sum3 / 2;
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo((userName) => {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(10831).EffectDisplayType.STATIC;
+    STATIC = userName(10900).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -114,18 +114,18 @@ const memoResult = importAllResult.memo((userName) => {
   }
   const merged = Object.assign(userName, Object.create(null));
   let num2;
-  const tmp6 = num2(4755)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
-  let obj = userName(9106);
+  const tmp6 = num2(4794)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
+  let obj = userName(9177);
   const isDisplayNameStylesFlywheelViewersEnabled = obj.useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
-  obj1 = userName(1937);
+  obj1 = userName(1388);
   const result = obj1.applyFlywheelViewingFallback(tmp6, isDisplayNameStylesFlywheelViewersEnabled);
-  let obj2 = userName(4756);
+  let obj2 = userName(4795);
   const displayNameStylesEnabled = obj2.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  let obj3 = userName(9105);
+  let obj3 = userName(9176);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
   let tmp12;
   if (null != displayNameStylesFont) {
-    obj = { fontFamily: null, lineHeight: "Array" };
+    obj = { fontFamily: null, lineHeight: "a" };
     obj[0] = displayNameStylesFont;
     tmp12 = obj;
   }
@@ -143,11 +143,11 @@ const memoResult = importAllResult.memo((userName) => {
     }
     tmp13 = tmp14;
   }
-  let tmp7Result = tmp7(4197);
-  const token = tmp7Result.useToken(tmp4(709).colors.BACKGROUND_BASE_LOW);
-  tmp7Result = tmp7(4197);
-  const token1 = tmp7Result.useToken(tmp4(709).colors.WHITE);
-  const displayNameStylesAccessibleColors = userName(10832).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
+  let tmp7Result = tmp7(4262);
+  const token = tmp7Result.useToken(tmp4(576).colors.BACKGROUND_BASE_LOW);
+  tmp7Result = tmp7(4262);
+  const token1 = tmp7Result.useToken(tmp4(576).colors.WHITE);
+  const displayNameStylesAccessibleColors = userName(10901).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
     first = displayNameStylesAccessibleColors[0];
@@ -157,15 +157,15 @@ const memoResult = importAllResult.memo((userName) => {
     effectId = result.effectId;
   }
   if (effectId == null) {
-    effectId = tmp7(1939).DisplayNameEffect.SOLID;
+    effectId = tmp7(1390).DisplayNameEffect.SOLID;
   }
   let colorVariants = null;
   if (null != first) {
-    colorVariants = tmp7(1937).generateColorVariants(first);
-    const tmp7Result2 = tmp7(1937);
+    colorVariants = tmp7(1388).generateColorVariants(first);
+    const tmp7Result2 = tmp7(1388);
   }
-  const tmp7Result3 = userName(4487);
-  const tmp20 = userName(4477).TextStyleSheet[tmp7Result3.useTypographyVariantRemap(tmp7Result3, merged.variant, false)];
+  const tmp7Result3 = userName(4566);
+  const tmp20 = userName(4556).TextStyleSheet[tmp7Result3.useTypographyVariantRemap(tmp7Result3, merged.variant, false)];
   const flattenResult = closure_7.flatten(merged.style);
   num2 = undefined;
   if (flattenResult != null) {
@@ -220,16 +220,16 @@ const memoResult = importAllResult.memo((userName) => {
   const tmp28Result = closure_12(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp6) {
-      if (STATIC !== tmp7(10831).EffectDisplayType.PLAIN) {
+      if (STATIC !== tmp7(10900).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           const items1 = [merged.style, tmp13];
           if (tmp7Result4.doesEffectImpactLayout(effectId)) {
             const layoutImpact = tmp28Result.layoutImpact;
           }
-          if (effectId === tmp7(1939).DisplayNameEffect.GUMMY) {
-            const tmp4Result = tmp4(10835);
+          if (effectId === tmp7(1390).DisplayNameEffect.GUMMY) {
+            const tmp4Result = tmp4(10904);
             const tmp66 = callback2;
-            let str3 = tmp7(4200).getNodeText(userName);
+            let str3 = tmp7(4265).getNodeText(userName);
             if (str3 == null) {
               str3 = "";
             }
@@ -250,9 +250,9 @@ const memoResult = importAllResult.memo((userName) => {
             obj1[4] = displayNameStylesAccessibleColors;
             return tmp66(tmp4Result, obj1);
           } else {
-            if (tmp7(1939).DisplayNameEffect.GRADIENT !== effectId) {
-              if (tmp7(1939).DisplayNameEffect.PRISM !== effectId) {
-                if (tmp7(1939).DisplayNameEffect.NEON === effectId) {
+            if (tmp7(1390).DisplayNameEffect.GRADIENT !== effectId) {
+              if (tmp7(1390).DisplayNameEffect.PRISM !== effectId) {
+                if (tmp7(1390).DisplayNameEffect.NEON === effectId) {
                   let neonStroke;
                   if (colorVariants != null) {
                     neonStroke = colorVariants.neonStroke;
@@ -268,7 +268,7 @@ const memoResult = importAllResult.memo((userName) => {
                   let items10 = items3;
                   let tmp32 = sum;
                   const tmp53 = callback;
-                } else if (tmp7(1939).DisplayNameEffect.POP === effectId) {
+                } else if (tmp7(1390).DisplayNameEffect.POP === effectId) {
                   let dark2;
                   if (colorVariants != null) {
                     dark2 = colorVariants.dark2;
@@ -296,7 +296,7 @@ const memoResult = importAllResult.memo((userName) => {
                     const items5 = [items1, tmp28Result.popBackLayer];
                     obj4.style = items5;
                     obj4.children = userName;
-                    const items6 = [callback2(tmp7(4477).Text, obj4), ];
+                    const items6 = [callback2(tmp7(4556).Text, obj4), ];
                     const obj5 = {};
                     const merged3 = Object.assign(merged);
                     obj5.textStrokeWidth = sum;
@@ -308,11 +308,11 @@ const memoResult = importAllResult.memo((userName) => {
                     const items7 = [items1, tmp28Result.popFrontLayer];
                     obj5.style = items7;
                     obj5.children = userName;
-                    items6[1] = callback2(tmp7(4477).Text, obj5);
+                    items6[1] = callback2(tmp7(4556).Text, obj5);
                     obj3[1] = items6;
                     return closure_10(closure_4, obj3);
                   }
-                } else if (tmp7(1939).DisplayNameEffect.TOON === effectId) {
+                } else if (tmp7(1390).DisplayNameEffect.TOON === effectId) {
                   const items8 = [items1, tmp28Result.toon, layoutImpact];
                   const items9 = [callback(token1), callback(colorVariants.light2), callback(colorVariants.light1), callback(colorVariants.main)];
                   const tmp35 = callback(colorVariants.toonStroke);
@@ -327,7 +327,7 @@ const memoResult = importAllResult.memo((userName) => {
                   tmp32 = sum;
                   let tmp33 = items9;
                 } else {
-                  const SOLID = tmp7(1939).DisplayNameEffect.SOLID;
+                  const SOLID = tmp7(1390).DisplayNameEffect.SOLID;
                   items10 = [items1, ];
                   const obj6 = { color: null };
                   obj6[0] = first;
@@ -346,19 +346,19 @@ const memoResult = importAllResult.memo((userName) => {
               obj7.textStrokeWidth = tmp32;
               obj7.textStrokeColor = tmp31;
               obj7.children = userName;
-              return callback2(tmp7(4477).Text, obj7);
+              return callback2(tmp7(4556).Text, obj7);
             }
             const mapped = displayNameStylesAccessibleColors.map((arg0) => callback(arg0));
-            const found = mapped.filter(tmp7(1394).isNotNullish);
+            const found = mapped.filter(tmp7(1369).isNotNullish);
             let num6 = 45;
-            if (effectId === tmp7(1939).DisplayNameEffect.PRISM) {
+            if (effectId === tmp7(1390).DisplayNameEffect.PRISM) {
               num6 = 0;
             }
             bound = memo;
             items10 = items1;
             num5 = num6;
             tmp33 = found;
-            if (effectId === tmp7(1939).DisplayNameEffect.PRISM) {
+            if (effectId === tmp7(1390).DisplayNameEffect.PRISM) {
               let tmp57 = found;
               if (found.length > 0) {
                 const items12 = [];
@@ -372,7 +372,7 @@ const memoResult = importAllResult.memo((userName) => {
               num5 = num6;
             }
           }
-          tmp7Result4 = tmp7(1937);
+          tmp7Result4 = tmp7(1388);
         }
       }
       const obj8 = {};
@@ -381,14 +381,14 @@ const memoResult = importAllResult.memo((userName) => {
       obj8.style = items13;
       obj8.color = defaultColor;
       obj8.children = userName;
-      return callback2(tmp7(4477).Text, obj8);
+      return callback2(tmp7(4556).Text, obj8);
     }
   }
   const obj9 = {};
   const merged6 = Object.assign(merged);
   obj9.color = defaultColor;
   obj9.children = userName;
-  return callback2(userName(4477).Text, obj9);
+  return callback2(userName(4556).Text, obj9);
 });
 let result = require("set").fileFinishedImporting("modules/display_name_styles/native/UsernameWithEffects.tsx");
 

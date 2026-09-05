@@ -1,27 +1,27 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10218
+// Function ID: 10219
 // Name: BurstReactionButton
-// Dependencies: [19, 17, 21, 4481, 709, 10148, 5084, 1233, 4477, 7695, 11186, 11246, 4166, 11191, 685, 1431, 4132, 7070, 11248, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 10219, 5123, 1114, 4556, 7763, 11254, 11314, 1935, 11259, 1091, 1396, 4211, 7130, 11316, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10147 (BurstReactionButton)
-import int2hslRaw from "int2hslRaw" /* 685 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import EmojiDefault from "Emoji" /* 7070 */;
-import ReactionTypes from "ReactionTypes" /* 7695 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10148 */;
-import handleOutOfSuperReactions from "handleOutOfSuperReactions" /* 11186 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 11191 */;
-import AnimatedCountDefault from "AnimatedCount" /* 11248 */;
+// Module 10218 (BurstReactionButton)
+import ThemesDefault from "Themes" /* 576 */;
+import int2hslRaw from "int2hslRaw" /* 1091 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4211 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import EmojiDefault from "Emoji" /* 7130 */;
+import ReactionTypes from "ReactionTypes" /* 7763 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10219 */;
+import handleOutOfSuperReactions from "handleOutOfSuperReactions" /* 11254 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 11259 */;
+import AnimatedCountDefault from "AnimatedCount" /* 11316 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class BurstReactionButton {

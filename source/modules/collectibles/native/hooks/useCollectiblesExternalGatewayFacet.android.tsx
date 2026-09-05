@@ -1,13 +1,13 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 11009
+// Function ID: 11010
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [19, 1921, 586, 8778, 2]
+// Dependencies: [19, 1371, 504, 8848, 2]
 // Exports: default
 
-// Module 10940 (useCollectiblesExternalGatewayFacet)
+// Module 11009 (useCollectiblesExternalGatewayFacet)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/collectibles/native/hooks/useCollectiblesExternalGatewayFacet.android.tsx");

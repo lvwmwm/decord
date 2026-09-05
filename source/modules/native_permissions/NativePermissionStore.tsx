@@ -1,15 +1,15 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5144
+// Function ID: 5145
 // Name: initialize
-// Dependencies: [4738, 673, 586, 706, 695, 2]
+// Dependencies: [4770, 1074, 504, 573, 1242, 2]
 
-// Module 5105 (initialize)
+// Module 5144 (initialize)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4738 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4770 */;
 
 const NativePermissionStates = NativePermissionStatus.NativePermissionStates;
 const AnalyticEvents = ME.AnalyticEvents;

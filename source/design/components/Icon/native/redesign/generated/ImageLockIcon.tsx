@@ -1,14 +1,14 @@
-// Module ID: 5046
-// Function ID: 5047
+// Module ID: 5085
+// Function ID: 5086
 // Name: ImageLockIcon
-// Dependencies: [19, 21, 709, 4196, 5026, 2]
+// Dependencies: [19, 21, 576, 4261, 5065, 2]
 // Exports: ImageLockIcon
 
-// Module 5046 (ImageLockIcon)
+// Module 5085 (ImageLockIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5026 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 5065 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

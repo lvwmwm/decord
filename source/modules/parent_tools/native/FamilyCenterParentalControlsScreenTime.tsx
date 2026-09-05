@@ -1,17 +1,17 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14932
+// Function ID: 14933
 // Name: ScheduleRuleRow
-// Dependencies: [17, 673, 21, 4481, 709, 10012, 5560, 4477, 1233, 2368, 14818, 1498, 5642, 2]
+// Dependencies: [17, 1074, 21, 4560, 576, 10083, 5605, 4556, 1114, 2396, 14893, 1483, 5687, 2]
 // Exports: default
 
-// Module 14857 (ScheduleRuleRow)
+// Module 14932 (ScheduleRuleRow)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
-import ThemesDefault from "Themes" /* 709 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ME from "ME" /* 1074 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function ScheduleRuleRow(rule) {
   rule = rule.rule;
@@ -19,11 +19,11 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10012);
+  let obj = rule(10083);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  const obj2 = rule(10012);
-  obj = { label: scheduleRuleDateRange, subLabel: rule(10012).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
-  const intl = rule(1233).intl;
+  const obj2 = rule(10083);
+  obj = { label: scheduleRuleDateRange, subLabel: rule(10083).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const intl = rule(1114).intl;
   const string = intl.string;
   const tmp4 = messagesProxyDefault;
   if (rule.enabled) {
@@ -31,7 +31,7 @@ function ScheduleRuleRow(rule) {
   } else {
     stringResult = string(tmp4["4z9fN+"]);
   }
-  obj[2] = closure_5(rule(4477).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
+  obj[2] = closure_5(rule(4556).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
   obj[3] = !readOnly;
   let fn;
   if (!readOnly) {
@@ -44,7 +44,7 @@ function ScheduleRuleRow(rule) {
     };
   }
   obj[4] = fn;
-  return closure_5(rule(5560).TableRow, obj);
+  return closure_5(rule(5605).TableRow, obj);
 }
 const View = get_ActivityIndicator.View;
 const UserSettingsSections = ME.UserSettingsSections;

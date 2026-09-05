@@ -1,15 +1,15 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8417
+// Function ID: 8418
 // Name: requestAgeVerification
-// Dependencies: [5, 1215, 8342, 673, 8348, 527, 706, 2]
+// Dependencies: [5, 502, 8412, 1074, 8418, 1272, 573, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8347 (requestAgeVerification)
-import sendRequest from "sendRequest" /* 527 */;
+// Module 8417 (requestAgeVerification)
+import sendRequest from "sendRequest" /* 1272 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import { VerificationVendorName } from "set" /* 8342 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import { VerificationVendorName } from "set" /* 8412 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function requestAgeVerification(arg0) {
@@ -688,14 +688,14 @@ function _getAgeVerificationMethods() {
     }
     if (promise != null) {
       const catchPromise = promise.then((body) => {
-        let obj = v1(706);
+        let obj = v1(573);
         obj = { type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS", methods: body.body.methods };
         obj.dispatch(obj);
       }).catch(() => {
-        v1(706).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_FAILURE" });
+        v1(573).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_FAILURE" });
       });
       const nextPromise = promise.then((body) => {
-        let obj = v1(706);
+        let obj = v1(573);
         obj = { type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS", methods: body.body.methods };
         obj.dispatch(obj);
       });

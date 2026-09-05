@@ -1,21 +1,21 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15973
+// Function ID: 15974
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 6883, 15870, 21, 4481, 709, 4218, 15894, 1233, 4477, 15888, 6897, 586, 4176, 6547, 4202, 6908, 6910, 2]
+// Dependencies: [109, 32, 19, 6943, 15946, 21, 4560, 576, 4296, 15970, 1114, 4556, 15964, 6957, 504, 4778, 6606, 4267, 6968, 6970, 2]
 
-// Module 15897 (PasswordStrength)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import PasswordScore from "PasswordScore" /* 15894 */;
+// Module 15973 (PasswordStrength)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import PasswordScore from "PasswordScore" /* 15970 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_7 from "handleSetLocationMetadata" /* 6883 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15870 */;
+import closure_7 from "handleSetLocationMetadata" /* 6943 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15946 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import { FadeIn, FadeOut, LinearTransition, Easing } from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import { FadeIn, FadeOut, LinearTransition, Easing } from "module_4296" /* 4296 */;
 
 require = arg1;
 function PasswordStrength(passwordScore) {
@@ -27,18 +27,18 @@ function PasswordStrength(passwordScore) {
       if (0 !== password.length) {
         if (null == passwordError) {
           if (passwordScore <= PasswordScore.PasswordScore.WEAK) {
-            const intl2 = tmp9(1233).intl;
-            let str = intl2.string(tmp9(1233).t["w/8TuV"]);
+            const intl2 = tmp9(1114).intl;
+            let str = intl2.string(tmp9(1114).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15894).PasswordScore.MEDIUM) {
-            const intl = tmp9(1233).intl;
-            str = intl.string(tmp9(1233).t["2fmTpT"]);
+          } else if (passwordScore === tmp9(15970).PasswordScore.MEDIUM) {
+            const intl = tmp9(1114).intl;
+            str = intl.string(tmp9(1114).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15894).PasswordScore.STRONG) {
-              const intl4 = tmp9(1233).intl;
-              str = intl4.string(tmp9(1233).t.Xraqqc);
+            if (passwordScore === tmp9(15970).PasswordScore.STRONG) {
+              const intl4 = tmp9(1114).intl;
+              str = intl4.string(tmp9(1114).t.Xraqqc);
               strong = tmp.strong;
             }
           }
@@ -49,7 +49,7 @@ function PasswordStrength(passwordScore) {
           const items = [tmp.passwordStrength, strong];
           obj.style = items;
           obj.animated = true;
-          const intl3 = tmp9(1233).intl;
+          const intl3 = tmp9(1114).intl;
           const items1 = [intl3.string(getSystemLocale.t["5gbdUX"]), ": ", str];
           obj.children = items1;
           return callback2(Text.Text, obj);
@@ -77,7 +77,7 @@ obj3[1] = require("module_300");
 const obj4 = { layout: null };
 const obj2 = { color: ThemesDefault.colors.TEXT_FEEDBACK_POSITIVE };
 obj4[0] = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_4218").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_4296").Easing.quad));
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   ({ password, onPasswordChange } = arg0);
   ({ returnKeyType, autoFocus } = arg0);

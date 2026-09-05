@@ -1,14 +1,14 @@
-// Module ID: 4328
-// Function ID: 4329
+// Module ID: 4408
+// Function ID: 4409
 // Name: setSystemTheme
-// Dependencies: [1303, 1304, 706, 1338, 2]
+// Dependencies: [1185, 1186, 573, 1220, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemTheme, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 4328 (setSystemTheme)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1338 */;
-import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import { SystemThemeState } from "SystemThemeState" /* 1304 */;
+// Module 4408 (setSystemTheme)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1220 */;
+import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import { SystemThemeState } from "SystemThemeState" /* 1186 */;
 
 const result = require("set").fileFinishedImporting("modules/user_settings/ThemeActionCreators.tsx");
 

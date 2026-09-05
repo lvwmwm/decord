@@ -1,16 +1,16 @@
-// Module ID: 6252
-// Function ID: 6253
+// Module ID: 6307
+// Function ID: 6308
 // Name: NitroWordmarkLogo
-// Dependencies: [17, 21, 709, 4197, 6253, 2]
+// Dependencies: [17, 21, 576, 4262, 6308, 2]
 // Exports: NitroWordmarkLogo
 
-// Module 6252 (NitroWordmarkLogo)
+// Module 6307 (NitroWordmarkLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6253 */;
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import metadataDefault from "metadata" /* 6308 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

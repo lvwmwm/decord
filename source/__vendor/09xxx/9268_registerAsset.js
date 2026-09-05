@@ -1,10 +1,10 @@
 // Module ID: 9268
 // Function ID: 9269
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9268 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/Y2KIcon", width: 60, height: 60, scales: [2, 3], hash: "0e26d39cd35df5b70db021fff662c44e", name: "Y2KIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 254, height: 127, scales: [2, 3], hash: "4d6a15fbe9eb4d6c66e3d9151f9a0183", name: "link_failure", type: "png" });

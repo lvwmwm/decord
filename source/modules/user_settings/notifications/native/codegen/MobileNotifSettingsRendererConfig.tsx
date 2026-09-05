@@ -1,11 +1,11 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15913
+// Function ID: 15914
 // Name: MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG
-// Dependencies: [15838, 15839, 15847, 2]
+// Dependencies: [15914, 15915, 15923, 2]
 
-// Module 15837 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
-import routeAll from "route" /* 15839 */;
-import toggleAll from "toggle" /* 15847 */;
+// Module 15913 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
+import routeAll from "route" /* 15915 */;
+import toggleAll from "toggle" /* 15923 */;
 
 const obj = {};
 obj[require("MobileNotifSettings").MobileNotifSettings.NOTIFICATIONS_REDESIGN] = routeAll.RootRoute;

@@ -1,10 +1,10 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14551
+// Function ID: 14552
 // Name: createLock
 // Dependencies: [2]
 // Exports: createLock, createObservableLock
 
-// Module 14476 (createLock)
+// Module 14551 (createLock)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/utils/MutexUtils.tsx");

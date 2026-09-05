@@ -1,16 +1,16 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15326
+// Function ID: 15327
 // Name: items
-// Dependencies: [32, 19, 673, 1383, 21, 1372, 7326, 1296, 1233, 11400, 15251, 15253, 2]
+// Dependencies: [32, 19, 1074, 1954, 21, 1943, 7388, 1178, 1114, 11468, 15327, 15329, 2]
 
-// Module 15250 (items)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7326 */;
+// Module 15326 (items)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7388 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 let items = [require("DismissibleContent").DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
@@ -33,15 +33,15 @@ createToggle = {
       tmp5 = null;
       if (hasItem) {
         obj = { text: null };
-        const intl = tmp(1233).intl;
-        obj[0] = intl.string(tmp(1233).t.y2b7CA);
-        tmp5 = jsx(tmp(1296).TextBadge, { text: null });
+        const intl = tmp(1114).intl;
+        obj[0] = intl.string(tmp(1114).t.y2b7CA);
+        tmp5 = jsx(tmp(1178).TextBadge, { text: null });
       }
     }
     return tmp5;
   },
   usePreNavigationAction() {
-    const tmp = callback(first(7326).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(7388).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;
     items = [tmp[1], first];
@@ -66,7 +66,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return require(15253) /* SettingsAccessibilityScreen */.default;
+    return require(15329) /* SettingsAccessibilityScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

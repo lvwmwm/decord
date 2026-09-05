@@ -1,27 +1,27 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11559
+// Function ID: 11560
 // Name: setIndex
-// Dependencies: [19, 1386, 7051, 4496, 4130, 1921, 673, 1393, 7467, 4710, 7162, 5472, 4681, 7052, 7461, 11492, 7050, 1219, 4301, 1372, 586, 1233, 4074, 11, 2]
+// Dependencies: [19, 1957, 7111, 4575, 4209, 1371, 1074, 1964, 7534, 4742, 7222, 5517, 4713, 7112, 7528, 11560, 7110, 1100, 4380, 1943, 504, 1114, 4153, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 11491 (setIndex)
+// Module 11559 (setIndex)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
-import ack from "ack" /* 7050 */;
-import computeSubtitle from "computeSubtitle" /* 7461 */;
-import _bulkClearRecents from "_bulkClearRecents" /* 11492 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hooksDefault from "hooks" /* 4153 */;
+import ack from "ack" /* 7110 */;
+import computeSubtitle from "computeSubtitle" /* 7528 */;
+import _bulkClearRecents from "_bulkClearRecents" /* 11560 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "setIndex" /* 7051 */;
-import closure_6 from "generateOldThreadCutoff" /* 4496 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import set from "set" /* 1393 */;
-import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7467 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4710 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "setIndex" /* 7111 */;
+import closure_6 from "generateOldThreadCutoff" /* 4575 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import set from "set" /* 1964 */;
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7534 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4742 */;
 
 require = arg1;
 function setIndex(arg0, index) {
@@ -144,11 +144,11 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   const _require = guildId;
   closure_1 = filterCategoriesByQuery;
   dependencyMap = arg2;
-  let obj = _require(4301);
-  let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1372).DismissibleContent.CHANNEL_BROWSER_NUX);
+  let obj = _require(4380);
+  let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1943).DismissibleContent.CHANNEL_BROWSER_NUX);
   const items = [closure_4];
   const items1 = [guildId];
-  closure_3 = _require(586).useStateFromStoresObject(items, () => {
+  closure_3 = _require(504).useStateFromStoresObject(items, () => {
     const obj = {};
     const mutableGuildChannelsForGuild = closure_1_4.getMutableGuildChannelsForGuild(closure_0);
     for (const key10009 in mutableGuildChannelsForGuild) {
@@ -196,7 +196,7 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
 export const useChannelBrowserChannelCount = function useChannelBrowserChannelCount(arg0) {
   const _require = arg0;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_5.getCategories(closure_0));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_1_5.getCategories(closure_0));
   let sum = stateFromStores._categories[stateFromStores._categories.length - 1];
   if (null == sum) {
     return 0;

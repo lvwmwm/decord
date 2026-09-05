@@ -1,14 +1,14 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14893
+// Function ID: 14894
 // Name: useSelectedTeenUser
-// Dependencies: [1921, 7473, 7470, 8576, 644, 2]
+// Dependencies: [1371, 7540, 7537, 8646, 563, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 14818 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8576 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "getSettings" /* 7473 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
+// Module 14893 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8646 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "getSettings" /* 7540 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7537 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/
 export const useSelectedTeenUser = function useSelectedTeenUser() {
   const _require = useIsInAdultAgeGroupDefault();
   const items = [closure_5, closure_3];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     if (true !== closure_0) {
       return closure_1_3.getCurrentUser();
     } else {
@@ -32,7 +32,7 @@ export const useSelectedTeenUser = function useSelectedTeenUser() {
 export const useTeenUserForId = function useTeenUserForId(gifterUserId) {
   const _require = gifterUserId;
   const items = [closure_3];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     const user = closure_1_3.getUser(closure_0);
     return null != user ? user : undefined;
   });
@@ -40,7 +40,7 @@ export const useTeenUserForId = function useTeenUserForId(gifterUserId) {
 export const useShouldLoadSettingsForSelectedTeenUser = function useShouldLoadSettingsForSelectedTeenUser() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   const items = [closure_4];
-  const stateFromStoresObject = selectedTeenId(644).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = selectedTeenId(563).useStateFromStoresObject(items, () => {
     let hasSettingsForUserResult = null != selectedTeenId;
     if (hasSettingsForUserResult) {
       hasSettingsForUserResult = closure_1_4.hasSettingsForUser(tmp);

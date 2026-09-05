@@ -1,14 +1,14 @@
-// Module ID: 1916
-// Function ID: 1917
+// Module ID: 1352
+// Function ID: 1353
 // Name: LIBDISCORE_JSI
-// Dependencies: [17, 1917, 2, 1918]
+// Dependencies: [17, 1353, 2, 1354]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1916 (LIBDISCORE_JSI)
+// Module 1352 (LIBDISCORE_JSI)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import typedGlobal from "typedGlobal" /* 1917 */;
-import monotonicNowMs from "monotonicNowMs" /* 1918 */;
+import typedGlobal from "typedGlobal" /* 1353 */;
+import monotonicNowMs from "monotonicNowMs" /* 1354 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 if (NativeModules.LibDiscoreModule) {

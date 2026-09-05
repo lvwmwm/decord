@@ -1,12 +1,12 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 9507
+// Function ID: 9508
 // Name: _launchFrameOnNative
-// Dependencies: [5, 4500, 9437, 9438, 2]
+// Dependencies: [5, 4579, 9508, 9509, 2]
 
-// Module 9436 (_launchFrameOnNative)
-import _launchFrameAll from "_launchFrame" /* 9438 */;
+// Module 9507 (_launchFrameOnNative)
+import _launchFrameAll from "_launchFrame" /* 9509 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "updateVoiceState" /* 4500 */;
+import closure_4 from "updateVoiceState" /* 4579 */;
 
 function _launchFrameOnNative() {
   const self = this;

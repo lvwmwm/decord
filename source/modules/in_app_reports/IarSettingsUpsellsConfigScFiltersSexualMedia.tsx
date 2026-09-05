@@ -1,14 +1,14 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8642
+// Function ID: 8643
 // Name: items
-// Dependencies: [7237, 1305, 1233, 8560, 2]
+// Dependencies: [7298, 1187, 1114, 8630, 2]
 
-// Module 8572 (items)
+// Module 8642 (items)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import create from "create" /* 1305 */;
-import resolveExplicitContentSettingWithDefaults from "resolveExplicitContentSettingWithDefaults" /* 7237 */;
-import ReportNames from "ReportNames" /* 8560 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import create from "create" /* 1187 */;
+import resolveExplicitContentSettingWithDefaults from "resolveExplicitContentSettingWithDefaults" /* 7298 */;
+import ReportNames from "ReportNames" /* 8630 */;
 
 let obj = {
   getTitle() {
@@ -35,13 +35,13 @@ obj[4] = function onApply() {
   obj = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
   if (explicitContentGuilds === create.ExplicitContentRedaction.SHOW) {
-    obj.explicitContentGuilds = tmp(1305).ExplicitContentRedaction.BLUR;
+    obj.explicitContentGuilds = tmp(1187).ExplicitContentRedaction.BLUR;
   }
   if (explicitContentFriendDm === create.ExplicitContentRedaction.SHOW) {
-    obj.explicitContentFriendDm = tmp(1305).ExplicitContentRedaction.BLUR;
+    obj.explicitContentFriendDm = tmp(1187).ExplicitContentRedaction.BLUR;
   }
   if (explicitContentNonFriendDm === create.ExplicitContentRedaction.SHOW) {
-    obj.explicitContentNonFriendDm = tmp(1305).ExplicitContentRedaction.BLUR;
+    obj.explicitContentNonFriendDm = tmp(1187).ExplicitContentRedaction.BLUR;
   }
   return obj.updateExplicitContentSetting(obj);
 };

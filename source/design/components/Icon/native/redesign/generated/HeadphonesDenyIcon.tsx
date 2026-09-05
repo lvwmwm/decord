@@ -1,14 +1,14 @@
-// Module ID: 9050
-// Function ID: 9051
+// Module ID: 9121
+// Function ID: 9122
 // Name: HeadphonesDenyIcon
-// Dependencies: [19, 21, 709, 4196, 9051, 2]
+// Dependencies: [19, 21, 576, 4261, 9122, 2]
 // Exports: HeadphonesDenyIcon
 
-// Module 9050 (HeadphonesDenyIcon)
+// Module 9121 (HeadphonesDenyIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9051 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 9122 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

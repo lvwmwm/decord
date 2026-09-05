@@ -1,21 +1,21 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15586
+// Function ID: 15587
 // Name: CacheLogEntry
-// Dependencies: [17, 1386, 21, 4481, 709, 5560, 4934, 5642, 7421, 4477, 2]
+// Dependencies: [17, 1957, 21, 4560, 576, 5605, 4973, 5687, 7488, 4556, 2]
 // Exports: default
 
-// Module 15510 (CacheLogEntry)
+// Module 15586 (CacheLogEntry)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import recordChannelFetchStartDefault from "recordChannelFetchStart" /* 7421 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import recordChannelFetchStartDefault from "recordChannelFetchStart" /* 7488 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function CacheLogEntry(entry) {
   entry = entry.entry;

@@ -1,19 +1,19 @@
-// Module ID: 12902
-// Function ID: 12903
+// Module ID: 12970
+// Function ID: 12971
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4481, 709, 7063, 1234, 4926, 12895, 4936, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 7123, 1115, 4965, 12963, 4975, 2]
 // Exports: MediaModalOverlayFooterAction
 
-// Module 12902 (MediaModalOverlayFooterAction)
+// Module 12970 (MediaModalOverlayFooterAction)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import isBlurDisabledDefault from "isBlurDisabled" /* 4926 */;
-import Button from "Button" /* 4936 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import ObscuredViewDefault from "ObscuredView" /* 12895 */;
+import ThemesDefault from "Themes" /* 576 */;
+import isBlurDisabledDefault from "isBlurDisabled" /* 4965 */;
+import Button from "Button" /* 4975 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import ObscuredViewDefault from "ObscuredView" /* 12963 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -32,7 +32,7 @@ export const MediaModalOverlayFooterAction = function MediaModalOverlayFooterAct
   const tmp = callback2();
   let obj = { bottom: true, left: true, right: true, style: tmp.container, children: null };
   if (null != sliderElement) {
-    let isIOSResult = tmp4(1234).isIOS();
+    let isIOSResult = tmp4(1115).isIOS();
     if (isIOSResult) {
       obj = { blurTheme: "dark", style: null };
       obj[1] = absoluteFill.absoluteFill;
@@ -49,7 +49,7 @@ export const MediaModalOverlayFooterAction = function MediaModalOverlayFooterAct
     items[2] = tmp12;
     obj1[0] = items;
     let tmp3Result = tmp3(closure_6, obj1);
-    const tmp4Result = tmp4(1234);
+    const tmp4Result = tmp4(1115);
     const tmp7 = closure_6;
   } else {
     tmp3Result = null;

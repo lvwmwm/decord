@@ -1,17 +1,17 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9292
+// Function ID: 9293
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1339, 4960, 4510, 682, 4569, 12, 586, 706, 2]
+// Dependencies: [1221, 4999, 1350, 1084, 4597, 12, 504, 573, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 9221 (handleUserSettingsProtoStoreChange)
+// Module 9292 (handleUserSettingsProtoStoreChange)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4569 */;
-import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4960 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4597 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1221 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4999 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 1084 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationCommandFrecency = obj.frecencyWithoutFetchingLatest.applicationCommandFrecency;

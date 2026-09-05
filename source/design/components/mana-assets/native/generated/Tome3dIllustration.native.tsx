@@ -1,14 +1,14 @@
-// Module ID: 6486
-// Function ID: 6487
+// Module ID: 6543
+// Function ID: 6544
 // Name: Tome3dIllustration
-// Dependencies: [21, 5542, 6487, 2]
+// Dependencies: [21, 5587, 6544, 2]
 // Exports: Tome3dIllustration
 
-// Module 6486 (Tome3dIllustration)
+// Module 6543 (Tome3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6487 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6544 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/Tome3dIllustration.native.tsx");

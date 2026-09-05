@@ -1,13 +1,13 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 13180
+// Function ID: 13181
 // Name: transformMessageAttachments
-// Dependencies: [7864, 673, 1399, 11207, 4678, 8039, 1234, 8038, 1233, 8058, 8194, 5096, 8056, 2]
+// Dependencies: [7933, 1074, 1384, 11275, 4710, 8108, 1115, 8107, 1114, 8127, 8264, 5135, 8125, 2]
 // Exports: default
 
-// Module 13112 (transformMessageAttachments)
+// Module 13180 (transformMessageAttachments)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import Changeset from "Changeset" /* 7864 */;
+import ME from "ME" /* 1074 */;
+import Changeset from "Changeset" /* 7933 */;
 
 const AttachmentType = Changeset.AttachmentType;
 const MessageAttachmentFlags = ME.MessageAttachmentFlags;

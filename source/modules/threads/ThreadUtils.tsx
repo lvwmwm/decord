@@ -1,23 +1,23 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7781
+// Function ID: 7782
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [109, 4496, 4709, 4122, 1232, 673, 1233, 7432, 4708, 695, 7706, 7054, 1399, 586, 11, 4074, 2]
+// Dependencies: [109, 4575, 4741, 4201, 1113, 1074, 1114, 7499, 4740, 1242, 7774, 7114, 1384, 504, 11, 4153, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7713 (getAccessibilityLabelFormatter)
+// Module 7781 (getAccessibilityLabelFormatter)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import getTimestampStringDefault from "getTimestampString" /* 7432 */;
-import collectThreadMetadata from "collectThreadMetadata" /* 7706 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import hooksDefault from "hooks" /* 4153 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import getTimestampStringDefault from "getTimestampString" /* 7499 */;
+import collectThreadMetadata from "collectThreadMetadata" /* 7774 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
-import closure_5 from "generateOldThreadCutoff" /* 4496 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_7 from "storeThread" /* 4122 */;
-import { ThreadMemberFlags } from "AbortCodes" /* 1232 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "generateOldThreadCutoff" /* 4575 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_7 from "storeThread" /* 4201 */;
+import { ThreadMemberFlags } from "AbortCodes" /* 1113 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function getAccessibilityLabelFormatter() {
@@ -53,7 +53,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = closure_1_0.getGuildId();
     const parent_id = closure_1_0.parent_id;
-    let tmpResult = tmp(7054);
+    let tmpResult = tmp(7114);
     const currentChannelSettings = tmpResult.getCurrentChannelSettings(guildId, parent_id);
     let num = closure_7.flags(closure_1_0.id);
     if (num == null) {
@@ -81,7 +81,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = closure_7.isMuted(closure_1_0.id);
-    tmpResult = tmp(7054);
+    tmpResult = tmp(7114);
     let result1 = tmpResult.muteConfigToTimestamp(obj7.getMuteConfig(closure_1_0.id));
     ({ can_send_message, parent_channel_type } = result);
     obj = {};
@@ -106,8 +106,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj.new_thread_is_muted = muted;
     obj.old_thread_muted_until = result1;
     if (null != c1.mute_config) {
-      result1 = tmp(7054).muteConfigToTimestamp(c1.mute_config);
-      const tmpResult1 = tmp(7054);
+      result1 = tmp(7114).muteConfigToTimestamp(c1.mute_config);
+      const tmpResult1 = tmp(7114);
     }
     obj.new_thread_muted_until = result1;
     expandEventPropertiesDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj);
@@ -117,7 +117,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
 export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) {
   const _require = thread;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_5.lastMessageId(thread.id));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_1_5.lastMessageId(thread.id));
   let extractTimestampResult = null;
   if (null != stateFromStores) {
     extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(stateFromStores);

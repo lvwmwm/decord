@@ -1,18 +1,18 @@
-// Module ID: 17847
-// Function ID: 17848
+// Module ID: 17927
+// Function ID: 17928
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7394, 14321, 1215, 673, 12346, 21, 586, 6534, 1234, 14360, 12349, 7408, 695, 4953, 14479, 13910, 1623, 8292, 6979, 16830, 16876, 4871, 2]
+// Dependencies: [32, 19, 17, 7460, 14395, 502, 1074, 12414, 21, 504, 6593, 1115, 14434, 12417, 7475, 1242, 4992, 14554, 13900, 1608, 8362, 7039, 16908, 16954, 4910, 2]
 // Exports: default
 
-// Module 17847 (AppShare)
+// Module 17927 (AppShare)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import result from "result" /* 7394 */;
-import handleTokenUpdated from "handleTokenUpdated" /* 14321 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { MultiAccountSwitchLocation as closure_9 } from "MAX_ACCOUNTS" /* 12346 */;
+import result from "result" /* 7460 */;
+import handleTokenUpdated from "handleTokenUpdated" /* 14395 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { MultiAccountSwitchLocation as closure_9 } from "MAX_ACCOUNTS" /* 12414 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -41,9 +41,9 @@ export default function AppShare(targetUserId) {
   const items = [first];
   const effect = obj.useEffect(() => {
     if (!first) {
-      first(14360).init();
+      first(14434).init();
       dependencyMap(true);
-      const obj = first(14360);
+      const obj = first(14434);
     }
   }, items);
   const items1 = [targetUserId];
@@ -65,24 +65,24 @@ export default function AppShare(targetUserId) {
   if (first) {
     first = tmpResult[0];
   }
-  obj1 = stateFromStores(586);
+  obj1 = stateFromStores(504);
   const items2 = [id];
   stateFromStores = obj1.useStateFromStores(items2, () => authenticated.isAuthenticated());
   const items3 = [stateFromStores];
   const effect2 = obj.useEffect(() => {
     if (stateFromStores) {
-      first(6534).startSession(closure_1_7.getToken());
-      const obj = first(6534);
+      first(6593).startSession(closure_1_7.getToken());
+      const obj = first(6593);
       if (obj2.isAndroid()) {
         const NativePermissionManager = closure_1_6.NativePermissionManager;
         const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
       }
-      obj2 = stateFromStores(1234);
+      obj2 = stateFromStores(1115);
     }
   }, items3);
   const items4 = [targetUserId.attachments.length, targetUserId.text];
   const effect3 = obj.useEffect(() => {
-    let obj = first(695);
+    let obj = first(1242);
     let tmp2 = null != stateFromStores.text;
     if (tmp2) {
       tmp2 = tmp.text.length > 0;
@@ -90,7 +90,7 @@ export default function AppShare(targetUserId) {
     obj = { has_content: tmp2, has_attachment: tmp.attachments.length > 0 };
     obj.track(closure_1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items4);
-  first(4953)(() => {
+  first(4992)(() => {
     const attachments = stateFromStores.attachments;
     const mapped = attachments.map((mimeType) => {
       let str = mimeType.mimeType;
@@ -99,29 +99,29 @@ export default function AppShare(targetUserId) {
       }
       return str;
     });
-    stateFromStores(7408).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
+    stateFromStores(7475).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
   });
   obj = { appEntryKey: share, children: null };
   if (first) {
     obj = { appEntryKey: null, sharedContent: null, onClose: null };
     obj[0] = tmp18;
     obj[1] = targetUserId;
-    const tmp14Result = tmp14(13910);
+    const tmp14Result = tmp14(13900);
     if (tmp9Result.isMetaQuest()) {
-      let exitApp = tmp14(8292).close;
+      let exitApp = tmp14(8362).close;
     } else {
       exitApp = exitApp.exitApp;
     }
     obj[2] = exitApp;
     tmp19(tmp14Result, obj);
-    tmp9Result = tmp9(1623);
+    tmp9Result = tmp9(1608);
   } else {
-    const items5 = [tmp19(tmp9(6979).SceneLoadingIndicator, {}), , , ];
+    const items5 = [tmp19(tmp9(7039).SceneLoadingIndicator, {}), , , ];
     obj1 = { appEntryKey: null };
     obj1[0] = tmp18;
-    items5[1] = tmp19(tmp9(16830).ActionSheetContainer, obj1);
-    items5[2] = tmp19(tmp14(16876), {});
-    items5[3] = tmp19(tmp9(4871).AlertModalContainer, {});
+    items5[1] = tmp19(tmp9(16908).ActionSheetContainer, obj1);
+    items5[2] = tmp19(tmp14(16954), {});
+    items5[3] = tmp19(tmp9(4910).AlertModalContainer, {});
     obj[1] = items5;
     return closure_11(tmp17, obj);
   }

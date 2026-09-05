@@ -1,17 +1,17 @@
-// Module ID: 8606
-// Function ID: 8607
+// Module ID: 8676
+// Function ID: 8677
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4505, 673, 695, 1399, 8607, 5073, 8608, 38, 2]
+// Dependencies: [19, 1916, 1074, 1242, 1384, 8677, 5112, 8678, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 8606 (useShouldOpenGameProfileModal)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import hasFlagAll from "hasFlag" /* 1399 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5073 */;
-import GameFlags from "GameFlags" /* 8607 */;
+// Module 8676 (useShouldOpenGameProfileModal)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import hasFlagAll from "hasFlag" /* 1384 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5112 */;
+import GameFlags from "GameFlags" /* 8677 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleLoadMessages" /* 4505 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_5 from "createGamesFromMessage" /* 1916 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 let obj = { NoMatch: "no match", NSFW: "nsfw", Disabled: "profile disabled", Obscured: "obscured" };

@@ -1,20 +1,20 @@
-// Module ID: 11367
-// Function ID: 11368
+// Module ID: 11435
+// Function ID: 11436
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 673, 21, 4481, 709, 4416, 1296, 1233, 1994, 1362, 11368, 11369, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 4495, 1178, 1114, 2024, 4411, 11436, 11437, 2]
 // Exports: default
 
-// Module 11367 (BlockedPaymentsCountryDisplay)
+// Module 11435 (BlockedPaymentsCountryDisplay)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import combinedDefault from "combined" /* 1994 */;
-import useThemeDefault from "useTheme" /* 4416 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import combinedDefault from "combined" /* 2024 */;
+import useThemeDefault from "useTheme" /* 4495 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -48,9 +48,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const obj5 = combinedDefault;
   const tmp8 = closure_4;
   if (obj7.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11368);
+    let tmp2Result = tmp2(11436);
   } else {
-    tmp2Result = tmp2(11369);
+    tmp2Result = tmp2(11437);
   }
   obj2[1] = tmp2Result;
   items[2] = tmp7(tmp8, obj2);

@@ -1,10 +1,10 @@
-// Module ID: 1231
-// Function ID: 1232
+// Module ID: 1112
+// Function ID: 1113
 // Name: set
-// Dependencies: [1232, 2]
+// Dependencies: [1113, 2]
 
-// Module 1231 (set)
-import AbortCodes from "AbortCodes" /* 1232 */;
+// Module 1112 (set)
+import AbortCodes from "AbortCodes" /* 1113 */;
 import set from "set" /* 2 */;
 
 const items = [, ];

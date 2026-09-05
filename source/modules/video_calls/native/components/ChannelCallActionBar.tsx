@@ -1,34 +1,34 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9945
+// Function ID: 9946
 // Name: VideoButton
-// Dependencies: [19, 17, 1385, 4497, 4498, 4503, 1215, 4532, 9415, 4502, 4545, 21, 4481, 9425, 9875, 586, 9018, 5378, 9876, 9012, 9514, 9426, 1233, 9879, 9880, 9400, 9904, 9905, 4729, 4670, 4547, 9444, 9906, 7211, 9394, 7102, 7122, 9429, 9907, 9931, 9941, 2]
+// Dependencies: [19, 17, 1956, 4576, 4577, 4582, 502, 1908, 9486, 4581, 4585, 21, 4560, 9496, 9946, 504, 9088, 5417, 9947, 9082, 9585, 9497, 1114, 9950, 9951, 9471, 9975, 9976, 4761, 4702, 4612, 9515, 9977, 7271, 9465, 7162, 7182, 9500, 9978, 10002, 10012, 2]
 // Exports: default, useActionBarPrimaryButton, useActionBarSecondButtons
 
-// Module 9874 (VideoButton)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import context from "context" /* 7102 */;
-import contextDefault from "context" /* 7102 */;
-import useIsRemoteDefault from "useIsRemote" /* 7211 */;
-import useIsConnectedToVoiceChannel from "useIsConnectedToVoiceChannel" /* 9400 */;
-import ActionButtonAll from "ActionButton" /* 9426 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9429 */;
-import stopScreenshareDefault from "stopScreenshare" /* 9880 */;
-import registerAssetDefault from "registerAsset" /* 9904 */;
-import registerAssetDefault2 from "registerAsset" /* 9905 */;
-import registerAssetDefault3 from "registerAsset" /* 9906 */;
+// Module 9945 (VideoButton)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import context from "context" /* 7162 */;
+import contextDefault from "context" /* 7162 */;
+import useIsRemoteDefault from "useIsRemote" /* 7271 */;
+import useIsConnectedToVoiceChannel from "useIsConnectedToVoiceChannel" /* 9471 */;
+import ActionButtonAll from "ActionButton" /* 9497 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9500 */;
+import stopScreenshareDefault from "stopScreenshare" /* 9951 */;
+import registerAssetDefault from "registerAsset" /* 9975 */;
+import registerAssetDefault2 from "registerAsset" /* 9976 */;
+import registerAssetDefault3 from "registerAsset" /* 9977 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1385 */;
-import closure_7 from "getParticipants" /* 4497 */;
-import closure_8 from "set" /* 4498 */;
-import closure_9 from "reset" /* 4503 */;
-import closure_10 from "fetchFingerprint" /* 1215 */;
-import closure_11 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_12 from "initialize" /* 9415 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
-import { Features } from "DesktopSources" /* 4545 */;
+import closure_6 from "participantFromServer" /* 1956 */;
+import closure_7 from "getParticipants" /* 4576 */;
+import closure_8 from "set" /* 4577 */;
+import closure_9 from "reset" /* 4582 */;
+import closure_10 from "fetchFingerprint" /* 502 */;
+import closure_11 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_12 from "initialize" /* 9486 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
+import { Features } from "DesktopSources" /* 4585 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class VideoButton {
@@ -300,10 +300,10 @@ function useActionBarSecondButton(channel) {
 function useActionBarPrimaryButtons(channel) {
   channel = channel.channel;
   closure_1 = undefined;
-  let obj = channel(9400);
+  let obj = channel(9471);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [closure_7, closure_10];
-  closure_1 = channel(586).useStateFromStores(items, () => {
+  closure_1 = channel(504).useStateFromStores(items, () => {
     const selectedParticipant = closure_1_7.getSelectedParticipant(channel.id);
     if (null != selectedParticipant) {
       if (selectedParticipant.type !== closure_1_13.ACTIVITY) {
@@ -317,7 +317,7 @@ function useActionBarPrimaryButtons(channel) {
     }
     tmp4 = id;
   });
-  obj3 = channel(586);
+  obj3 = channel(504);
   const items1 = [closure_9];
   const stateFromStores = obj3.useStateFromStores(items1, () => {
     let activeStreamForStreamKey = null;
@@ -326,12 +326,12 @@ function useActionBarPrimaryButtons(channel) {
     }
     return activeStreamForStreamKey;
   });
-  obj2 = channel(586);
+  obj2 = channel(504);
   const items2 = [closure_6];
-  const stateFromStores1 = channel(586).useStateFromStores(items2, () => null != currentEmbeddedActivity.getCurrentEmbeddedActivity());
-  const obj4 = channel(586);
+  const stateFromStores1 = channel(504).useStateFromStores(items2, () => null != currentEmbeddedActivity.getCurrentEmbeddedActivity());
+  const obj4 = channel(504);
   const items3 = [closure_8];
-  const stateFromStoresObject = channel(586).useStateFromStoresObject(items3, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
+  const stateFromStoresObject = channel(504).useStateFromStoresObject(items3, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
   let awaitingRemote = stateFromStoresObject.awaitingRemote;
   obj = { [closure_27.END_ACTIVITY]: stateFromStores1, [closure_27.END_CALL]: isConnectedToVoiceChannel };
   if (!awaitingRemote) {
@@ -370,12 +370,12 @@ export default function ChannelCallActionBar(arg0) {
   const tmp4 = useIsRemoteDefault();
   let obj = useIsFiveButtonLayout;
   const isFiveButtonLayout = obj.useIsFiveButtonLayout(channel.id);
-  obj = { value: contextDefault(tmp2(7122).CHANNEL_CALL_ACTION_BAR).analyticsLocations, children: null };
+  obj = { value: contextDefault(tmp2(7182).CHANNEL_CALL_ACTION_BAR).analyticsLocations, children: null };
   obj = { pointerEvents: "box-none", style: isFiveButtonLayout ? tmp.containerForFiveButtonLayout : tmp.container, children: null };
   if (shouldShowConnectingScreen) {
     obj1 = { channel: null };
     obj1[0] = channel;
-    let tmp13Result = tmp11(tmp9(9907).CallConnectingActionBar, obj1);
+    let tmp13Result = tmp11(tmp9(9978).CallConnectingActionBar, obj1);
   } else {
     let tmp11Result = null;
     if (!tmp4) {
@@ -406,12 +406,12 @@ export default function ChannelCallActionBar(arg0) {
     const obj5 = { channel: null, isSmallSize: null };
     obj5[0] = channel;
     obj5[1] = isFiveButtonLayout;
-    items[2] = tmp11(tmp9(9931).ChannelCallMicButton, obj5);
+    items[2] = tmp11(tmp9(10002).ChannelCallMicButton, obj5);
     if (tmp7.END_REMOTE === END_REMOTE) {
       const obj6 = { channel: null, isSmallSize: null };
       obj6[0] = channel;
       obj6[1] = isFiveButtonLayout;
-      let tmp11Result2 = tmp11(tmp9(9941).DisconnectRemoteButton, obj6);
+      let tmp11Result2 = tmp11(tmp9(10012).DisconnectRemoteButton, obj6);
     } else if (tmp7.END_STREAM === END_REMOTE) {
       const obj7 = { channel: null, isSmallSize: null };
       obj7[0] = channel;

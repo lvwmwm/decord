@@ -1,10 +1,10 @@
-// Module ID: 4859
-// Function ID: 4860
+// Module ID: 4898
+// Function ID: 4899
 // Name: MessageEmbedTypes
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 4859 (MessageEmbedTypes)
-import ME from "ME" /* 673 */;
+// Module 4898 (MessageEmbedTypes)
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const MessageEmbedTypes = ME.MessageEmbedTypes;

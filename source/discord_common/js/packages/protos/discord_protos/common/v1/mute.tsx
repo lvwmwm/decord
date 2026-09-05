@@ -1,14 +1,14 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13682
+// Function ID: 13683
 // Name: create
-// Dependencies: [32, 1306, 1335, 1336, 2]
+// Dependencies: [32, 1188, 1217, 1218, 2]
 
-// Module 13606 (create)
-import _mod1306 from "module_1306" /* 1306 */;
-import now from "now" /* 1335 */;
-import defineProperty from "defineProperty" /* 1336 */;
+// Module 13682 (create)
+import _mod1188 from "module_1188" /* 1188 */;
+import now from "now" /* 1217 */;
+import defineProperty from "defineProperty" /* 1218 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { MessageType } from "module_1306" /* 1306 */;
+import { MessageType } from "module_1188" /* 1188 */;
 
 require = arg1;
 class MuteNotificationSettings$Type extends MessageType {
@@ -18,7 +18,7 @@ class MuteNotificationSettings$Type extends MessageType {
       name: "end_time",
       kind: "message",
       T() {
-            return callback(1335).Timestamp;
+            return callback(1217).Timestamp;
           }
     };
     items = [, ];
@@ -28,7 +28,7 @@ class MuteNotificationSettings$Type extends MessageType {
       name: "selected_time_window",
       kind: "message",
       T() {
-            return callback(1336).Int32Value;
+            return callback(1218).Int32Value;
           }
     };
     tmp = new tmp("discord_protos.common.v1.MuteNotificationSettings", items, new.target);
@@ -41,10 +41,10 @@ prototype["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, _mod1306.MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1188.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = _mod1306.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1306;
+    const result = _mod1188.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1188;
   }
   return obj;
 };
@@ -98,7 +98,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = _mod1306.UnknownFieldHandler.onRead;
+              onRead = _mod1188.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -115,20 +115,20 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 prototype["internalBinaryWrite"] = function internalBinaryWrite(endTime, tag, writeUnknownFields) {
   if (endTime.endTime) {
     const Timestamp = now.Timestamp;
-    const tagResult = tag.tag(1, _mod1306.WireType.LengthDelimited);
-    const joined = Timestamp.internalBinaryWrite(endTime.endTime, tag.tag(1, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = Timestamp.internalBinaryWrite(endTime.endTime, tag.tag(1, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult = tag.tag(1, _mod1188.WireType.LengthDelimited);
+    const joined = Timestamp.internalBinaryWrite(endTime.endTime, tag.tag(1, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = Timestamp.internalBinaryWrite(endTime.endTime, tag.tag(1, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (endTime.selectedTimeWindow) {
     const Int32Value = defineProperty.Int32Value;
-    const tagResult1 = tag.tag(2, _mod1306.WireType.LengthDelimited);
-    const joined1 = Int32Value.internalBinaryWrite(endTime.selectedTimeWindow, tag.tag(2, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = Int32Value.internalBinaryWrite(endTime.selectedTimeWindow, tag.tag(2, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult1 = tag.tag(2, _mod1188.WireType.LengthDelimited);
+    const joined1 = Int32Value.internalBinaryWrite(endTime.selectedTimeWindow, tag.tag(2, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = Int32Value.internalBinaryWrite(endTime.selectedTimeWindow, tag.tag(2, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1306.UnknownFieldHandler.onWrite;
+      onWrite = _mod1188.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, endTime, tag);
@@ -141,7 +141,7 @@ let items = [
     name: "end_time",
     kind: "message",
     T() {
-      return callback(1335).Timestamp;
+      return callback(1217).Timestamp;
     }
   },
   {
@@ -149,7 +149,7 @@ let items = [
     name: "selected_time_window",
     kind: "message",
     T() {
-      return callback(1336).Int32Value;
+      return callback(1218).Int32Value;
     }
   }
 ];

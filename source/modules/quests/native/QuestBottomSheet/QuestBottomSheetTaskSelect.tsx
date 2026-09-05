@@ -1,12 +1,12 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15162
+// Function ID: 15163
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5404, 21, 5642, 5560, 8809, 1233, 9152, 2]
+// Dependencies: [19, 5444, 21, 5687, 5605, 8879, 1114, 9223, 2]
 // Exports: default
 
-// Module 15086 (QuestBottomSheetTaskSelect)
+// Module 15162 (QuestBottomSheetTaskSelect)
 import noopAll from "noop" /* 19 */;
-import { QuestTaskPlatform } from "QuestsExperimentLocations" /* 5404 */;
+import { QuestTaskPlatform } from "QuestsExperimentLocations" /* 5444 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,9 +17,9 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Quest
 export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
   let obj = { hasIcons: true, children: null };
-  obj = { arrow: true, icon: callback(onTaskSelect(8809).ScreenIcon, {}), label: null, onPress: null };
-  const intl = onTaskSelect(1233).intl;
-  obj[2] = intl.string(onTaskSelect(1233).t["QXc01+"]);
+  obj = { arrow: true, icon: callback(onTaskSelect(8879).ScreenIcon, {}), label: null, onPress: null };
+  const intl = onTaskSelect(1114).intl;
+  obj[2] = intl.string(onTaskSelect(1114).t["QXc01+"]);
   obj[3] = function onPress() {
     let tmpResult;
     if (onTaskSelect != null) {
@@ -27,10 +27,10 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  const items = [callback(onTaskSelect(5560).TableRow, obj), ];
-  obj = { arrow: true, icon: callback(onTaskSelect(9152).GameControllerIcon, {}), label: null, onPress: null };
-  const intl2 = onTaskSelect(1233).intl;
-  obj[2] = intl2.string(onTaskSelect(1233).t["8lAfuB"]);
+  const items = [callback(onTaskSelect(5605).TableRow, obj), ];
+  obj = { arrow: true, icon: callback(onTaskSelect(9223).GameControllerIcon, {}), label: null, onPress: null };
+  const intl2 = onTaskSelect(1114).intl;
+  obj[2] = intl2.string(onTaskSelect(1114).t["8lAfuB"]);
   obj[3] = function onPress() {
     let tmpResult;
     if (onTaskSelect != null) {
@@ -38,7 +38,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  items[1] = callback(onTaskSelect(5560).TableRow, obj);
+  items[1] = callback(onTaskSelect(5605).TableRow, obj);
   obj[1] = items;
-  return callback2(onTaskSelect(5642).TableRowGroup, obj);
+  return callback2(onTaskSelect(5687).TableRowGroup, obj);
 };

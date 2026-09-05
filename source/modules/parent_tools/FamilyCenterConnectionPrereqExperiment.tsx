@@ -1,11 +1,11 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11927
+// Function ID: 11928
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 
-// Module 11859 (apexExperiment)
+// Module 11927 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

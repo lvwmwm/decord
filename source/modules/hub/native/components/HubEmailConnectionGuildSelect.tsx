@@ -1,26 +1,26 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12737
+// Function ID: 12738
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 12651, 21, 4481, 709, 8523, 5539, 1426, 4477, 1233, 1627, 4936, 1296, 1498, 7315, 6991, 12664, 4379, 12659, 2]
+// Dependencies: [5, 32, 19, 17, 12719, 21, 4560, 576, 8593, 5584, 1971, 4556, 1114, 1611, 4975, 1178, 1483, 7377, 7051, 12732, 4461, 12727, 2]
 // Exports: default
 
-// Module 12669 (HubEmailConnectionGuildSelectRow)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4477 */;
-import Button2 from "Button" /* 4936 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import Form from "Form" /* 8523 */;
+// Module 12737 (HubEmailConnectionGuildSelectRow)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
+import Text from "Text" /* 4556 */;
+import Button2 from "Button" /* 4975 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import Form from "Form" /* 8593 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12651 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12719 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class HubEmailConnectionGuildSelectRow {

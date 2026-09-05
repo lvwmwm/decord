@@ -1,9 +1,9 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 11068
+// Function ID: 11069
 // Name: GeneratedPaymentCurrencies
 // Dependencies: [2]
 
-// Module 11000 (GeneratedPaymentCurrencies)
+// Module 11068 (GeneratedPaymentCurrencies)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GeneratedPaymentCurrencies.tsx");

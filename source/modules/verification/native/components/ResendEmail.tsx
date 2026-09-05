@@ -1,18 +1,18 @@
-// Module ID: 6532
-// Function ID: 6533
+// Module ID: 6591
+// Function ID: 6592
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1380, 1921, 673, 21, 4481, 1498, 586, 38, 6533, 5576, 5647, 4477, 1233, 4936, 6534, 4194, 2]
+// Dependencies: [32, 19, 17, 1951, 1371, 1074, 21, 4560, 1483, 504, 38, 6592, 5621, 5692, 4556, 1114, 4975, 6593, 4259, 2]
 // Exports: default
 
-// Module 6532 (ResendEmail)
+// Module 6591 (ResendEmail)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleRequiredAction" /* 1380 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { VerificationModalScenes } from "ME" /* 673 */;
+import closure_6 from "handleRequiredAction" /* 1951 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { VerificationModalScenes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -21,9 +21,9 @@ let result = require("set").fileFinishedImporting("modules/verification/native/c
 
 export default function ResendEmail() {
   let tmp = callback3();
-  let obj = navigation(1498);
+  let obj = navigation(1483);
   navigation = obj.useNavigation();
-  obj1 = navigation(586);
+  obj1 = navigation(504);
   const items = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -31,10 +31,10 @@ export default function ResendEmail() {
     return currentUser;
   });
   const verified = stateFromStores.verified;
-  let obj2 = navigation(586);
+  let obj2 = navigation(504);
   const items1 = [closure_6];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(6533);
+  let obj3 = verified(6592);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -58,26 +58,26 @@ export default function ResendEmail() {
   callback = React.useCallback(() => {
     navigation.push(closure_1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(5647).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(5692).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  let intl = navigation(1233).intl;
-  obj[4] = intl.string(navigation(1233).t.fUtddV);
-  items4[1] = callback2(navigation(4477).Text, obj);
+  let intl = navigation(1114).intl;
+  obj[4] = intl.string(navigation(1114).t.fUtddV);
+  items4[1] = callback2(navigation(4556).Text, obj);
   obj1 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = navigation(1233).intl;
+  const intl2 = navigation(1114).intl;
   if (tmp10) {
     obj2 = { email: null };
     obj2[0] = stateFromStores.email;
-    let formatResult = intl2.format(tmp2(1233).t.JqLgQL, obj2);
+    let formatResult = intl2.format(tmp2(1114).t.JqLgQL, obj2);
   } else {
-    formatResult = intl2.string(tmp2(1233).t.tSXg8O);
+    formatResult = intl2.string(tmp2(1114).t.tSXg8O);
   }
   obj1[3] = formatResult;
-  items4[2] = callback2(navigation(4477).Text, obj1);
+  items4[2] = callback2(navigation(4556).Text, obj1);
   obj3 = { style: tmp.resend, children: null };
   const obj4 = { text: null, variant: "primary", onPress: null, grow: true };
-  const intl3 = tmp2(1233).intl;
-  obj4[0] = intl3.string(navigation(1233).t.WnX4J2);
+  const intl3 = tmp2(1114).intl;
+  obj4[0] = intl3.string(navigation(1114).t.WnX4J2);
   obj4[2] = function onPress() {
     dependencyMap(true);
     let obj = verified(closure_1_2[17]);
@@ -87,16 +87,16 @@ export default function ResendEmail() {
     obj[1] = intl.string(navigation(closure_1_2[15]).t["84yeoz"]);
     verified(closure_1_2[18]).open(obj);
   };
-  obj3[1] = callback2(navigation(4936).Button, obj4);
+  obj3[1] = callback2(navigation(4975).Button, obj4);
   items4[3] = callback2(View, obj3);
   if (!result) {
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.change;
     const obj6 = { text: null, variant: "secondary", onPress: null, grow: true };
-    const intl4 = tmp2(1233).intl;
-    obj6[0] = intl4.string(tmp2(1233).t.Vm8akB);
+    const intl4 = tmp2(1114).intl;
+    obj6[0] = intl4.string(tmp2(1114).t.Vm8akB);
     obj6[2] = callback;
-    obj5[1] = tmp16(tmp2(4936).Button, obj6);
+    obj5[1] = tmp16(tmp2(4975).Button, obj6);
     tmp16Result = tmp16(tmp15, obj5);
   }
   items4[4] = tmp16Result;

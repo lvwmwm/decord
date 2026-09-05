@@ -1,16 +1,16 @@
-// Module ID: 10303
-// Function ID: 10304
+// Module ID: 10374
+// Function ID: 10375
 // Name: FavoritesSearch
-// Dependencies: [32, 19, 17, 673, 21, 4481, 709, 10298, 6562, 4218, 4482, 4485, 8028, 6992, 1233, 6990, 10296, 5084, 10304, 4477, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4560, 576, 10369, 6622, 4296, 4561, 4564, 8097, 7052, 1114, 7050, 10367, 5123, 10375, 4556, 2]
 
-// Module 10303 (FavoritesSearch)
-import ThemesDefault from "Themes" /* 709 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10296 */;
+// Module 10374 (FavoritesSearch)
+import ThemesDefault from "Themes" /* 576 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10367 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function FavoritesSearch(columnWidth) {
@@ -145,36 +145,36 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj[2] = tmp5;
     obj[3] = onQueryClear;
     obj[4] = searchInputRef;
-    let tmp13Result = tmp6(tmp2(6990).SearchField, obj);
+    let tmp13Result = tmp6(tmp2(7050).SearchField, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
     obj1 = { style: null, accessibilityRole: "button", onPress: null, accessibilityLabel: null, children: null };
     obj1[0] = tmp.header;
     obj1[2] = onQueryClear;
-    const intl4 = tmp2(1233).intl;
+    const intl4 = tmp2(1114).intl;
     const obj2 = { destination: null };
-    const intl5 = tmp2(1233).intl;
-    obj2[0] = intl5.string(tmp2(1233).t.ffgJrs);
-    obj1[3] = intl4.formatToPlainString(tmp2(1233).t.UTypEu, obj2);
+    const intl5 = tmp2(1114).intl;
+    obj2[0] = intl5.string(tmp2(1114).t.ffgJrs);
+    obj1[3] = intl4.formatToPlainString(tmp2(1114).t.UTypEu, obj2);
     const obj3 = { color: null, size: "sm" };
     obj3[0] = ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE;
-    const items = [tmp6(tmp2(10304).ChevronLargeLeftIcon, obj3), ];
+    const items = [tmp6(tmp2(10375).ChevronLargeLeftIcon, obj3), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
-      const intl3 = tmp2(1233).intl;
-      let stringResult = intl3.string(tmp2(1233).t.TsWCdW);
+      const intl3 = tmp2(1114).intl;
+      let stringResult = intl3.string(tmp2(1114).t.TsWCdW);
     } else if (categoryType === tmp8.FAVORITES) {
-      const intl2 = tmp2(1233).intl;
-      stringResult = intl2.string(tmp2(1233).t.k8fFjp);
+      const intl2 = tmp2(1114).intl;
+      stringResult = intl2.string(tmp2(1114).t.k8fFjp);
     } else {
-      const intl = tmp2(1233).intl;
-      stringResult = intl.string(tmp2(1233).t["5h0QOP"]);
+      const intl = tmp2(1114).intl;
+      stringResult = intl.string(tmp2(1114).t["5h0QOP"]);
     }
     const obj4 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: null };
     obj4[3] = stringResult;
-    items[1] = tmp6(tmp2(4477).Text, obj4);
+    items[1] = tmp6(tmp2(4556).Text, obj4);
     obj1[4] = items;
-    const items1 = [closure_9(tmp2(5084).PressableOpacity, obj1), ];
+    const items1 = [closure_9(tmp2(5123).PressableOpacity, obj1), ];
     let tmp6Result = categoryType === tmp8.FAVORITES;
     if (tmp6Result) {
       const obj5 = { columnWidth: null, onQueryChange: null };

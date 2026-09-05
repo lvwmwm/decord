@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15300
+// Function ID: 15301
 // Name: getHorizontalOrVerticalStartPoint
 // Dependencies: [2]
 // Exports: default
 
-// Module 15224 (getHorizontalOrVerticalStartPoint)
+// Module 15300 (getHorizontalOrVerticalStartPoint)
 import set from "set" /* 2 */;
 
 function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {

@@ -1,14 +1,14 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17890
+// Function ID: 17891
 // Name: makeLogLine
-// Dependencies: [673, 7421, 695, 7058, 2]
+// Dependencies: [1074, 7488, 1242, 7118, 2]
 
-// Module 17810 (makeLogLine)
+// Module 17890 (makeLogLine)
 import set from "set" /* 2 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import initializeDefault from "initialize" /* 7058 */;
-import recordChannelFetchStartDefault from "recordChannelFetchStart" /* 7421 */;
-import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import initializeDefault from "initialize" /* 7118 */;
+import recordChannelFetchStartDefault from "recordChannelFetchStart" /* 7488 */;
+import ME from "ME" /* 1074 */;
 
 function makeLogLine(channelId) {
   const items = [channelId.channelId, , , ];

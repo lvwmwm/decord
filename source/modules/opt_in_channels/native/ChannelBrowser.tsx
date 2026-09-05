@@ -1,22 +1,22 @@
-// Module ID: 11488
-// Function ID: 11489
+// Module ID: 11556
+// Function ID: 11557
 // Name: keyExtractor
-// Dependencies: [32, 19, 17, 7465, 7051, 1981, 1908, 4709, 673, 1383, 21, 4481, 709, 6921, 11489, 586, 11491, 4301, 1372, 11487, 6990, 8804, 5562, 5084, 1233, 6556, 5542, 11493, 4477, 4681, 4206, 5642, 5572, 4197, 4989, 5559, 5566, 1296, 4471, 2]
+// Dependencies: [32, 19, 17, 7532, 7111, 2012, 1979, 4741, 1074, 1954, 21, 4560, 576, 6981, 11557, 504, 11559, 4380, 1943, 11555, 7050, 8874, 5607, 5123, 1114, 6616, 5587, 11561, 4556, 4713, 4277, 5687, 5617, 4262, 5028, 5604, 5611, 1178, 4550, 2]
 // Exports: default
 
-// Module 11488 (keyExtractor)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11556 (keyExtractor)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "guildHasCommunity" /* 7465 */;
-import closure_7 from "setIndex" /* 7051 */;
-import closure_8 from "comparator" /* 1981 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_6 from "guildHasCommunity" /* 7532 */;
+import closure_7 from "setIndex" /* 7111 */;
+import closure_8 from "comparator" /* 2012 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function keyExtractor(section) {
@@ -48,10 +48,10 @@ let closure_17 = importAllResult.memo((channel) => {
   channel = channel.channel;
   const onChannelClick = channel.onChannelClick;
   const tmp = callback3();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.isChannelOptedIn(channel.guild_id, channel.id));
-  obj1 = channel(4206);
+  obj1 = channel(4277);
   const checkboxA11yNative = obj1.useCheckboxA11yNative({ checked: stateFromStores });
   obj = {
     style: tmp.categoryContainer,
@@ -72,8 +72,8 @@ let closure_17 = importAllResult.memo((channel) => {
     accessibilityState = checkboxA11yNative.accessibilityState;
   }
   obj[3] = accessibilityState;
-  obj = { style: tmp.categoryTitle, title: onChannelClick(4681)(channel), lineClamp: 1 };
-  const items1 = [closure_12(channel(5642).TableRowGroupTitle, obj), ];
+  obj = { style: tmp.categoryTitle, title: onChannelClick(4713)(channel), lineClamp: 1 };
+  const items1 = [closure_12(channel(5687).TableRowGroupTitle, obj), ];
   let tmp10Result = null;
   if ("null" !== channel.id) {
     obj1 = { style: null, accessibilityRole: null, accessibilityState: null, children: null };
@@ -83,18 +83,18 @@ let closure_17 = importAllResult.memo((channel) => {
     obj2[0] = tmp.selectAllCheckbox;
     const obj3 = { checked: null };
     obj3[0] = stateFromStores;
-    obj2[1] = tmp8(tmp4(5572).FormCheckbox, obj3);
+    obj2[1] = tmp8(tmp4(5617).FormCheckbox, obj3);
     const items2 = [tmp8(View, obj2), ];
     const obj4 = { variant: "text-xs/semibold", color: "interactive-text-default", children: null };
-    const intl = tmp4(1233).intl;
-    obj4[2] = intl.string(tmp4(1233).t.mSQwnW);
-    items2[1] = tmp8(tmp4(4477).Text, obj4);
+    const intl = tmp4(1114).intl;
+    obj4[2] = intl.string(tmp4(1114).t.mSQwnW);
+    items2[1] = tmp8(tmp4(4556).Text, obj4);
     obj1[3] = items2;
     tmp10Result = tmp10(View, obj1);
   }
   items1[1] = tmp10Result;
   obj[4] = closure_13(closure_14, { children: items1 });
-  return closure_12(channel(5084).PressableOpacity, obj);
+  return closure_12(channel(5123).PressableOpacity, obj);
 });
 let closure_18 = importAllResult.memo((channel) => {
   channel = channel.channel;

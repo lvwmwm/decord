@@ -1,14 +1,14 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15377
+// Function ID: 15378
 // Name: EmojiMeltingFaceIcon
-// Dependencies: [19, 21, 709, 4196, 15302, 2]
+// Dependencies: [19, 21, 576, 4261, 15378, 2]
 // Exports: EmojiMeltingFaceIcon
 
-// Module 15301 (EmojiMeltingFaceIcon)
+// Module 15377 (EmojiMeltingFaceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15302 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15378 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

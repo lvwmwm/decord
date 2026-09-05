@@ -1,24 +1,24 @@
-// Module ID: 11258
-// Function ID: 11259
+// Module ID: 11326
+// Function ID: 11327
 // Name: canFollowIntoChannel
-// Dependencies: [32, 19, 17, 1390, 1386, 1981, 1908, 4120, 5398, 673, 21, 4481, 709, 8101, 4416, 586, 4681, 4953, 1362, 11259, 11260, 7090, 6567, 5539, 1296, 4989, 4477, 1233, 4934, 5642, 5560, 4448, 9355, 2008, 11261, 8523, 5393, 4936, 11264, 7094, 2]
+// Dependencies: [32, 19, 17, 1961, 1957, 2012, 1979, 4199, 5438, 1074, 21, 4560, 576, 8170, 4495, 504, 4713, 4992, 4411, 11327, 11328, 7150, 6627, 5584, 1178, 5028, 4556, 1114, 4973, 5687, 5605, 4527, 9426, 1896, 11329, 8593, 5433, 4975, 11332, 7154, 2]
 // Exports: default
 
-// Module 11258 (canFollowIntoChannel)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11326 (canFollowIntoChannel)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES as closure_7 } from "createChannelRecord" /* 1390 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_10 } from "comparator" /* 1981 */;
-import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_13 from "insertUnsortedGuilds" /* 5398 */;
-import ME from "ME" /* 673 */;
+import { GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES as closure_7 } from "createChannelRecord" /* 1961 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "comparator" /* 2012 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_10 } from "comparator" /* 2012 */;
+import closure_11 from "createGuildRecordFromRust" /* 1979 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_13 from "insertUnsortedGuilds" /* 5438 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function canFollowIntoChannel(channel) {

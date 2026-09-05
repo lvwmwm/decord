@@ -1,10 +1,10 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16653
+// Function ID: 16654
 // Name: GroupDMRow
-// Dependencies: [19, 21, 4681, 10841, 1296, 10842, 4477, 16575, 2]
+// Dependencies: [19, 21, 4713, 10910, 1178, 10911, 4556, 16652, 2]
 // Exports: default
 
-// Module 16576 (GroupDMRow)
+// Module 16653 (GroupDMRow)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -15,20 +15,20 @@ export default function GroupDMRow(channel) {
   channel = channel.channel;
   const onPress = channel.onPress;
   ({ trailing, onAccessibilityAction, accessibilityActions } = channel);
-  let str = onPress(4681)(channel);
+  let str = onPress(4713)(channel);
   const items = [channel.id, onPress];
   const callback = React.useCallback(() => {
     onPress(channel.id);
   }, items);
-  let obj = { size: channel(1296).AvatarSizes.LARGE_48, channel };
-  const tmp4 = onPress(10841);
-  const tmp6 = jsx(onPress(10841), { size: channel(1296).AvatarSizes.LARGE_48, channel });
-  const recipientsLabel = channel(10842).useRecipientsLabel(channel);
+  let obj = { size: channel(1178).AvatarSizes.LARGE_48, channel };
+  const tmp4 = onPress(10910);
+  const tmp6 = jsx(onPress(10910), { size: channel(1178).AvatarSizes.LARGE_48, channel });
+  const recipientsLabel = channel(10911).useRecipientsLabel(channel);
   let tmp3Result;
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
     obj[3] = recipientsLabel;
-    tmp3Result = tmp3(tmp5(4477).Text, obj);
+    tmp3Result = tmp3(tmp5(4556).Text, obj);
   }
   let str2 = str;
   if (str == null) {
@@ -43,5 +43,5 @@ export default function GroupDMRow(channel) {
   obj[5] = trailing;
   obj[6] = accessibilityActions;
   obj[7] = onAccessibilityAction;
-  return jsx(channel(16575).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
+  return jsx(channel(16652).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
 };

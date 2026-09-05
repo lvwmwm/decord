@@ -1,21 +1,21 @@
-// Module ID: 13483
-// Function ID: 13484
+// Module ID: 13556
+// Function ID: 13557
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [32, 19, 17, 673, 21, 4481, 709, 5401, 7090, 7089, 1233, 4477, 4471, 4416, 13283, 13484, 4866, 13485, 2008, 13281, 4936, 4448, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4560, 576, 5441, 7150, 7149, 1114, 4556, 4550, 4495, 13355, 13557, 4905, 13558, 1896, 13353, 4975, 4527, 2]
 // Exports: default
 
-// Module 13483 (TermsAndConditionsActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4471 */;
-import Text from "Text" /* 4477 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import Background from "Background" /* 7090 */;
+// Module 13556 (TermsAndConditionsActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4550 */;
+import Text from "Text" /* 4556 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import Background from "Background" /* 7150 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function TermsAndConditionsActionSheet(termsAndConditions) {

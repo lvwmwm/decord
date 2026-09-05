@@ -1,12 +1,12 @@
-// Module ID: 12351
-// Function ID: 12352
+// Module ID: 12419
+// Function ID: 12420
 // Name: set
-// Dependencies: [19, 4173, 4176, 586, 10890, 8574, 2]
+// Dependencies: [19, 4775, 4778, 504, 10959, 8644, 2]
 // Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 12351 (set)
+// Module 12419 (set)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "getRegionalFeatureConfig" /* 4173 */;
+import closure_3 from "getRegionalFeatureConfig" /* 4775 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ const result = set.fileFinishedImporting("modules/regional_feature_config/Region
 
 export const useUserCountryCode = function useUserCountryCode() {
   const items = [closure_3];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
@@ -29,7 +29,7 @@ export const useUserCountryCode = function useUserCountryCode() {
 };
 export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
   const items = [closure_3];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
@@ -37,8 +37,8 @@ export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
       const obj = stateFromStores(closure_1_1[4]);
     }
   }, items1);
-  const obj = stateFromStores(586);
-  let userIsTeen = stateFromStores(8574).useUserIsTeen();
+  const obj = stateFromStores(504);
+  let userIsTeen = stateFromStores(8644).useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != stateFromStores;
   }
@@ -49,7 +49,7 @@ export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
 };
 export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
   const items = [closure_3];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
@@ -58,8 +58,8 @@ export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
     }
   }, items1);
   let obj = set;
-  const obj2 = stateFromStores(586);
-  let userIsTeen = stateFromStores(8574).useUserIsTeen();
+  const obj2 = stateFromStores(504);
+  let userIsTeen = stateFromStores(8644).useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != stateFromStores;
   }

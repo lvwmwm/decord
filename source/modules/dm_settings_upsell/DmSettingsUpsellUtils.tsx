@@ -1,13 +1,13 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17344
+// Function ID: 17345
 // Name: trackEvent
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: trackEvent
 
-// Module 17264 (trackEvent)
+// Module 17344 (trackEvent)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx");

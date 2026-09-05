@@ -1,12 +1,12 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7221
+// Function ID: 7222
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
-// Dependencies: [1390, 673, 2]
+// Dependencies: [1961, 1074, 2]
 
-// Module 7161 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
+// Module 7221 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
+import ME from "ME" /* 1074 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
 
 const channelRecord = createChannelRecord.createChannelRecord({ id: "131", type: ME.ChannelTypes.DM, name: "Placeholder Channel" });
 const obj = { id: "131", type: ME.ChannelTypes.DM, name: "Placeholder Channel" };

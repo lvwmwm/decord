@@ -1,9 +1,9 @@
-// Module ID: 584
-// Function ID: 585
+// Module ID: 1328
+// Function ID: 1329
 // Name: stringifyErrors
 // Dependencies: [2]
 
-// Module 584 (stringifyErrors)
+// Module 1328 (stringifyErrors)
 import set from "set" /* 2 */;
 
 function stringifyErrors(str) {

@@ -1,18 +1,18 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7372
+// Function ID: 7373
 // Name: trackSoundPlayed
-// Dependencies: [4504, 1386, 4557, 1980, 4975, 673, 1923, 695, 2]
+// Dependencies: [1915, 1957, 4583, 2011, 5014, 1074, 1373, 1242, 2]
 // Exports: default
 
-// Module 7310 (trackSoundPlayed)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_2 from "initialize" /* 4504 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+// Module 7372 (trackSoundPlayed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import closure_2 from "initialize" /* 1915 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 5014 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 ({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: c9 } = GuildFeatures);
 const result = require("set").fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");

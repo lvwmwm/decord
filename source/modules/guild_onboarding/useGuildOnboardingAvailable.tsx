@@ -1,12 +1,12 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7335
+// Function ID: 7336
 // Name: useGuildOnboardingAvailable
-// Dependencies: [1983, 673, 586, 2]
+// Dependencies: [2014, 1074, 504, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 7273 (useGuildOnboardingAvailable)
-import closure_2 from "initialize" /* 1983 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 7335 (useGuildOnboardingAvailable)
+import closure_2 from "initialize" /* 2014 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/guild_onboarding/us
 export default function useGuildOnboardingAvailable(features) {
   const _require = features;
   const items = [closure_2];
-  let stateFromStores = _require(586).useStateFromStores(items, () => {
+  let stateFromStores = _require(504).useStateFromStores(items, () => {
     let id;
     if (closure_0 != null) {
       id = tmp.id;

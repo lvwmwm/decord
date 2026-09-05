@@ -1,10 +1,10 @@
 // Module ID: 3448
 // Function ID: 3449
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 3448 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "bf9484ceaff7b5fcbf6b4501951b05a3", name: "hr.messages.bf9484ceaff7b5fcbf6b4501951b05a3.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/slayer_storefront/intl", scales: [1], hash: "cb0c07073c6e43447fa7ac54aa478138", name: "SlayerStorefront.compiled.messages", type: "jsona" });

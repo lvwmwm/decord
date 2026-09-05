@@ -1,14 +1,14 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17710
+// Function ID: 17711
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 1430, 1921, 673, 7201, 644, 17631, 17632, 17633, 7193, 1233, 1994, 17634, 2]
+// Dependencies: [19, 1975, 1371, 1074, 7261, 563, 17711, 17712, 17713, 7253, 1114, 2024, 17714, 2]
 // Exports: default
 
-// Module 17630 (useOnboardingMonetizationEnableFlow)
+// Module 17710 (useOnboardingMonetizationEnableFlow)
 import closure_3 from "noop" /* 19 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1975 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ GuildFeatures: closure_6, HelpdeskArticles: error, MarketingURLs: closure_8 } = ME);
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/creator_monetizatio
 
 export default function useOnboardingMonetizationEnableFlow(features) {
   const _require = features;
-  let obj = _require(7201);
+  let obj = _require(7261);
   let isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
   if (features != null) {
     features = features.features;
@@ -26,7 +26,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     const features2 = features.features;
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
-  let tmpResult = tmp(644);
+  let tmpResult = tmp(563);
   const items = [closure_5];
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     let tmp3 = null != closure_0;
@@ -39,18 +39,18 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (features != null) {
     id = features.id;
   }
-  const tmp10 = refresh(17631);
-  ({ submittedRequest, error, loading, createEnableRequest } = refresh(17631)(id));
+  const tmp10 = refresh(17711);
+  ({ submittedRequest, error, loading, createEnableRequest } = refresh(17711)(id));
   let id1;
-  let tmp9Result = tmp9(17632);
+  let tmp9Result = tmp9(17712);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  const tmp10Result = refresh(17631)(id);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17633)(eligibility));
+  const tmp10Result = refresh(17711)(id);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17713)(eligibility));
   let hasItem2;
   if (features != null) {
     const features3 = features.features;
@@ -65,7 +65,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     }
     tmp19 = true === hasItem3;
   }
-  tmpResult = tmp(7193);
+  tmpResult = tmp(7253);
   let id2;
   if (features != null) {
     id2 = features.id;
@@ -82,24 +82,24 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (eligibility != null) {
     canApply = eligibility.canApply;
   }
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj = { faqUrl: null };
-  tmp9Result = tmp9(1994);
+  tmp9Result = tmp9(2024);
   obj[0] = tmp9Result.getArticleURL(constants2.CREATOR_FAQ);
-  const tmp16 = refresh(17633)(eligibility);
+  const tmp16 = refresh(17713)(eligibility);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (tmpResult.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
       if (true === hasItem) {
-        const intl4 = tmp(1233).intl;
+        const intl4 = tmp(1114).intl;
         obj = { communityGuidelineUrl: null };
         obj[0] = constants3.GUIDELINES;
-        let formatResult1 = intl4.format(tmp(1233).t["0o1Q+t"], obj);
+        let formatResult1 = intl4.format(tmp(1114).t["0o1Q+t"], obj);
       } else {
-        const intl3 = tmp(1233).intl;
+        const intl3 = tmp(1114).intl;
         obj1 = { communityGuidelineUrl: null };
         obj1[0] = constants3.GUIDELINES;
-        formatResult1 = intl3.format(tmp(1233).t.b6h59n, obj1);
+        formatResult1 = intl3.format(tmp(1114).t.b6h59n, obj1);
       }
     }
   }
@@ -109,12 +109,12 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   let formatResult2;
   if (tmp28) {
-    const intl2 = tmp(1233).intl;
+    const intl2 = tmp(1114).intl;
     const obj2 = { requestCooldownDuration: null, creatorRevenuePolicyUrl: null };
     obj2[0] = requestCooldownDuration;
-    obj2[1] = tmp9(1994).getArticleURL(tmp26.CREATOR_POLICY);
-    formatResult2 = intl2.format(tmp(1233).t.TvX207, obj2);
-    const tmp9Result1 = tmp9(1994);
+    obj2[1] = tmp9(2024).getArticleURL(tmp26.CREATOR_POLICY);
+    formatResult2 = intl2.format(tmp(1114).t.TvX207, obj2);
+    const tmp9Result1 = tmp9(2024);
   }
   let tmp34 = isExpeditedOnboardingGuild;
   if (isExpeditedOnboardingGuild) {
@@ -127,14 +127,14 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (isExpeditedOnboardingGuild) {
     isExpeditedOnboardingGuild = false === hasItem;
   }
-  const formatResult = intl.format(_require(1233).t.aJUdOi, obj);
+  const formatResult = intl.format(_require(1114).t.aJUdOi, obj);
   let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = _require(17634).getCreatorMonetizationAcceptTermsCheckboxText();
+  const creatorMonetizationAcceptTermsCheckboxText = _require(17714).getCreatorMonetizationAcceptTermsCheckboxText();
   if (isApplicationRejected) {
     if (tmp35) {
       if (stateFromStores) {
-        const intl5 = tmp(1233).intl;
-        formatResult3 = intl5.format(tmp(1233).t.wbVIUB, {});
+        const intl5 = tmp(1114).intl;
+        formatResult3 = intl5.format(tmp(1114).t.wbVIUB, {});
       }
     }
   }

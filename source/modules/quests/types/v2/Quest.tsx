@@ -1,14 +1,14 @@
-// Module ID: 7644
-// Function ID: 7645
+// Module ID: 7711
+// Function ID: 7712
 // Name: questFromServerV2
-// Dependencies: [7645, 7649, 7650, 2]
+// Dependencies: [7712, 7716, 7717, 2]
 // Exports: questCosponsorMetadataFromServer, questFromServerV2
 
-// Module 7644 (questFromServerV2)
+// Module 7711 (questFromServerV2)
 import set from "set" /* 2 */;
-import _firstPartyTasksFromServer from "_firstPartyTasksFromServer" /* 7645 */;
-import _rewardRedemptionInstructionsFromServer from "_rewardRedemptionInstructionsFromServer" /* 7649 */;
-import questCtaConfigFromServer from "questCtaConfigFromServer" /* 7650 */;
+import _firstPartyTasksFromServer from "_firstPartyTasksFromServer" /* 7712 */;
+import _rewardRedemptionInstructionsFromServer from "_rewardRedemptionInstructionsFromServer" /* 7716 */;
+import questCtaConfigFromServer from "questCtaConfigFromServer" /* 7717 */;
 
 const result = set.fileFinishedImporting("modules/quests/types/v2/Quest.tsx");
 

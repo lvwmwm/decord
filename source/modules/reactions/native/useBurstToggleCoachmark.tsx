@@ -1,19 +1,19 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11126
+// Function ID: 11127
 // Name: EducationCoachmarkImg
-// Dependencies: [32, 19, 17, 1921, 1383, 21, 1372, 4481, 709, 9302, 586, 4139, 7326, 1233, 11059, 2]
+// Dependencies: [32, 19, 17, 1371, 1954, 21, 1943, 4560, 576, 9373, 504, 4218, 7388, 1114, 11127, 2]
 // Exports: default
 
-// Module 11058 (EducationCoachmarkImg)
-import ThemesDefault from "Themes" /* 709 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9302 */;
+// Module 11126 (EducationCoachmarkImg)
+import ThemesDefault from "Themes" /* 576 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9373 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function EducationCoachmarkImg() {
@@ -31,15 +31,15 @@ const result = require("set").fileFinishedImporting("modules/reactions/native/us
 
 export default function useBurstToggleCoachmark(targetRef) {
   const items = [closure_6];
-  const stateFromStores = first(586).useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj = first(586);
+  const stateFromStores = first(504).useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = first(504);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     let items2 = items1;
   } else {
     items2 = [];
   }
-  let tmpResult = tmp(7326);
+  let tmpResult = tmp(7388);
   const tmp5 = callback(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   closure_1 = tmp7;
@@ -59,7 +59,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     obj[5] = first === closure_1_9;
     return obj;
   }, items3);
-  tmpResult = tmp(11059);
+  tmpResult = tmp(11127);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return tmp5[1];
 };

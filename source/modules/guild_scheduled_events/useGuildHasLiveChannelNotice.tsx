@@ -1,20 +1,20 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16184
+// Function ID: 16185
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5379, 1391, 4503, 1386, 4120, 4558, 16107, 1392, 502, 16108, 586, 9591, 16109, 5391, 5385, 2]
+// Dependencies: [19, 5418, 1962, 4582, 1957, 4199, 4584, 16185, 1963, 1085, 16186, 504, 9662, 16187, 5431, 5425, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 16106 (useGuildHasLiveChannelNotice)
+// Module 16184 (useGuildHasLiveChannelNotice)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getActiveStageChannelIds" /* 5379 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_6 from "reset" /* 4503 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "getVoiceStatesForGuild" /* 4558 */;
-import closure_10 from "initialize" /* 16107 */;
-import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import { Permissions } from "sum" /* 502 */;
+import closure_4 from "getActiveStageChannelIds" /* 5418 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_6 from "reset" /* 4582 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_9 from "getVoiceStatesForGuild" /* 4584 */;
+import closure_10 from "initialize" /* 16185 */;
+import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildHasLiveChannelNotice.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12120
+// Function ID: 12121
 // Name: initialize
-// Dependencies: [684, 586, 706, 2]
+// Dependencies: [1090, 504, 573, 2]
 
-// Module 12052 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12120 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
 
 let closure_0 = 10 * setDefault.Millis.MINUTE;
 let closure_1 = { lastUsedCommandId: null, lastUsedTimeMs: null };

@@ -1,14 +1,14 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 12040
+// Function ID: 12041
 // Name: useActivityShelfData
-// Dependencies: [19, 1921, 8787, 1385, 586, 7108, 1394, 9339, 1234, 9335, 2]
+// Dependencies: [19, 1371, 8857, 1956, 504, 7168, 1369, 9410, 1115, 9406, 2]
 // Exports: useActivityShelfData
 
-// Module 11972 (useActivityShelfData)
+// Module 12040 (useActivityShelfData)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "reset" /* 8787 */;
-import closure_6 from "participantFromServer" /* 1385 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "reset" /* 8857 */;
+import closure_6 from "participantFromServer" /* 1956 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfData.tsx");
@@ -79,8 +79,8 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = lib(9339);
-      return supported_platforms.includes(tmp(callback(1234).getOS()));
+      const tmp = lib(9410);
+      return supported_platforms.includes(tmp(callback(1115).getOS()));
     });
     const found1 = found.filter((activity) => {
       const requires_age_gate = activity.activity.requires_age_gate;

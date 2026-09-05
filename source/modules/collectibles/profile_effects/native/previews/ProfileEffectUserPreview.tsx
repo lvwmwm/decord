@@ -1,13 +1,13 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11108
+// Function ID: 11109
 // Name: ProfileEffectUserPreview
-// Dependencies: [19, 21, 11041, 1233, 2]
+// Dependencies: [19, 21, 11109, 1114, 2]
 // Exports: default
 
-// Module 11040 (ProfileEffectUserPreview)
+// Module 11108 (ProfileEffectUserPreview)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import filterLayerDefault from "filterLayer" /* 11041 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import filterLayerDefault from "filterLayer" /* 11109 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

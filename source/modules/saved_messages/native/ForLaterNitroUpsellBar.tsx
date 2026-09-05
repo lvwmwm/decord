@@ -1,13 +1,13 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13294
+// Function ID: 13295
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 1923, 7784, 21, 7102, 11638, 12153, 4139, 1233, 2]
+// Dependencies: [19, 1373, 7852, 21, 7162, 11706, 12221, 4218, 1114, 2]
 // Exports: default
 
-// Module 13222 (ForLaterNitroUpsellBar)
+// Module 13294 (ForLaterNitroUpsellBar)
 import closure_3 from "noop" /* 19 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7784 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7852 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,14 +18,14 @@ export default function ForLaterNitroUpsellBar(isReminder) {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7162)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   const callback = React.useCallback(() => analyticsLocations(closure_1_2[5])(isReminder, analyticsLocations), items);
-  let obj = isReminder(4139);
+  let obj = isReminder(4218);
   const premiumTypeDisplayName = obj.getPremiumTypeDisplayName(PremiumTypes.TIER_2);
-  const intl = isReminder(1233).intl;
+  const intl = isReminder(1114).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = isReminder(1233).t;
+  const t = isReminder(1114).t;
   if (isAtLimit) {
     obj = { nitroTierName: null, premiumMax: null };
     obj[0] = premiumTypeDisplayName;

@@ -1,16 +1,16 @@
-// Module ID: 7526
-// Function ID: 7527
+// Module ID: 7593
+// Function ID: 7594
 // Name: getEmptyActivityFormatter
-// Dependencies: [7470, 7471, 1233, 2368, 4074, 7472, 2]
+// Dependencies: [7537, 7538, 1114, 2396, 4153, 7539, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 7526 (getEmptyActivityFormatter)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import hooksDefault from "hooks" /* 4074 */;
-import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7472 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7470 */;
-import items from "items" /* 7471 */;
+// Module 7593 (getEmptyActivityFormatter)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import hooksDefault from "hooks" /* 4153 */;
+import maybeFetchCollectiblesForInvoicesDefault from "maybeFetchCollectiblesForInvoices" /* 7539 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7537 */;
+import items from "items" /* 7538 */;
 
 require = arg1;
 ({ ACTION_TO_TEXT: c4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: c5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: error, UserLinkStatus: closure_8, UserLinkType: c9 } = items);
@@ -34,15 +34,15 @@ export const getActivityWindowTimestampFormatter = function getActivityWindowTim
   const tmp4 = messagesProxyDefault;
   if (arg0) {
     obj[0] = string(tmp4["2AtcIs"]);
-    const intl3 = tmp(1233).intl;
-    obj[1] = intl3.string(tmp3(2368).stOECr);
-    obj[2] = tmp3(2368).n8n5Ba;
+    const intl3 = tmp(1114).intl;
+    obj[1] = intl3.string(tmp3(2396).stOECr);
+    obj[2] = tmp3(2396).n8n5Ba;
     let tmp5 = obj;
   } else {
     obj[0] = string(tmp4.g1ZX6m);
-    const intl2 = tmp(1233).intl;
-    obj[1] = intl2.string(tmp3(2368).s3qSVt);
-    obj[2] = tmp3(2368).f1UJiC;
+    const intl2 = tmp(1114).intl;
+    obj[1] = intl2.string(tmp3(2396).s3qSVt);
+    obj[2] = tmp3(2396).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;

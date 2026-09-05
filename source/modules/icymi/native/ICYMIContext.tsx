@@ -1,15 +1,15 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16453
+// Function ID: 16454
 // Name: context
-// Dependencies: [19, 21, 1492, 709, 2]
+// Dependencies: [19, 21, 1477, 576, 2]
 // Exports: ICYMIContextProvider, useICYMIContextConstructor
 
-// Module 16377 (context)
+// Module 16453 (context)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 
 const jsx = jsxProd.jsx;
 const context = noop.createContext({ width: 0, margin: 0, inset: 0 });

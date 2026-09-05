@@ -1,16 +1,16 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 15960
+// Function ID: 15961
 // Name: submitDateOfBirth
-// Dependencies: [1218, 673, 15883, 695, 527, 706, 2]
+// Dependencies: [1098, 1074, 15959, 1242, 1272, 573, 2]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 15884 (submitDateOfBirth)
+// Module 15960 (submitDateOfBirth)
 import set from "set" /* 2 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import result2 from "result" /* 1218 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 15883 */;
-import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import result2 from "result" /* 1098 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 15959 */;
+import ME from "ME" /* 1074 */;
 
 const AgeGateAnalyticAction = result2.AgeGateAnalyticAction;
 ({ AnalyticEvents: c4, Endpoints: c5 } = ME);
@@ -22,7 +22,7 @@ export const submitDateOfBirth = function submitDateOfBirth(c0, closure_1_2) {
   let obj = expandEventPropertiesDefault;
   obj = { source: closure_1_2, action: AgeGateAnalyticAction.AGE_GATE_SUBMITTED };
   obj.track(constants.AGE_GATE_ACTION, obj);
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   obj = { url: constants2.ME, oldFormErrors: true, body: { date_of_birth: c0.format("YYYY-MM-DD") }, rejectWithError: false };
   obj1 = { date_of_birth: c0.format("YYYY-MM-DD") };
   return HTTP.patch(obj).then((user) => {

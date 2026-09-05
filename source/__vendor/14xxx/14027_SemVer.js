@@ -1,0 +1,10 @@
+// Module ID: 14027
+// Function ID: 14028
+// Name: SemVer
+// Dependencies: [14016]
+
+// Module 14027 (SemVer)
+import SemVer from "SemVer" /* 14016 */;
+
+
+export default (arg0, arg1) => new SemVer(arg0, arg1).minor;

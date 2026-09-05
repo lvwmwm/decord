@@ -1,16 +1,16 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 9014
+// Function ID: 9015
 // Name: ImageSkeleton
-// Dependencies: [19, 17, 21, 4481, 709, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4556, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 8944 (ImageSkeleton)
+// Module 9014 (ImageSkeleton)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

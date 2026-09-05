@@ -1,10 +1,10 @@
 // Module ID: 8069
 // Function ID: 8070
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 8069 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f675dc68337355a0cf14fc6856097557", name: "GameControllerIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 195, height: 95, scales: [2, 3], hash: "6767aee50457385555e7e15b59dff5c6", name: "img_nitro_ticket_bg", type: "png" });

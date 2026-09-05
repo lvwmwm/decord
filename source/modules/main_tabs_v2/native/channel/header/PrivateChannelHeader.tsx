@@ -1,25 +1,25 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13266
+// Function ID: 13267
 // Name: GroupDmMemberCount
-// Dependencies: [19, 17, 1386, 4572, 4130, 1921, 673, 21, 1296, 4481, 709, 586, 13193, 4681, 1233, 10807, 13197, 4325, 13199, 13202, 2]
+// Dependencies: [19, 17, 1957, 4600, 4209, 1371, 1074, 21, 1178, 4560, 576, 504, 13263, 4713, 1114, 10876, 13267, 4404, 13269, 13272, 2]
 
-// Module 13196 (GroupDmMemberCount)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 13266 (GroupDmMemberCount)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "sortActivity" /* 4572 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "sortActivity" /* 4600 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function GroupDmMemberCount(channel) {
   channel = channel.channel;
   let items = [closure_8, closure_6];
-  const stateFromStores = channel(586).useStateFromStores(items, () => {
+  const stateFromStores = channel(504).useStateFromStores(items, () => {
     const items = [...channel.recipients];
     const currentUser = closure_1_8.getCurrentUser();
     let str;
@@ -45,8 +45,8 @@ function GroupDmMemberCount(channel) {
       return arg0 + num;
     }, 0);
   });
-  const obj = channel(586);
-  return channel(13199).renderMemberCountText(stateFromStores, channel.recipients.length);
+  const obj = channel(504);
+  return channel(13269).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: c9, StatusTypes: c10 } = ME);

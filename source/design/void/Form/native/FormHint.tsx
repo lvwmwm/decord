@@ -1,16 +1,16 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8600
+// Function ID: 8601
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4481, 709, 5641, 4477, 1296, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 5686, 4556, 1178, 2]
 // Exports: default
 
-// Module 8530 (FormHint)
-import ThemesDefault from "Themes" /* 709 */;
-import context from "context" /* 5641 */;
+// Module 8600 (FormHint)
+import ThemesDefault from "Themes" /* 576 */;
+import context from "context" /* 5686 */;
 import closure_2 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { formHintText: null, redesignHorizontalPadding: null, horizonatalPadding: null };
@@ -37,7 +37,7 @@ export default function FormHint(inset) {
     const items = [redesignHorizontalPadding, style];
     obj[2] = items;
     obj[3] = children;
-    let tmp4Result = tmp4(tmp2(4477).Text, obj);
+    let tmp4Result = tmp4(tmp2(4556).Text, obj);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
@@ -49,7 +49,7 @@ export default function FormHint(inset) {
     items1[2] = style;
     obj[0] = items1;
     obj[1] = children;
-    tmp4Result = tmp4(tmp2(1296).LegacyText, obj);
+    tmp4Result = tmp4(tmp2(1178).LegacyText, obj);
   }
   return tmp4Result;
 };

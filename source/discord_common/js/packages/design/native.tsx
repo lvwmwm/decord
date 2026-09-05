@@ -1,13 +1,13 @@
-// Module ID: 4205
-// Function ID: 4206
+// Module ID: 4271
+// Function ID: 4272
 // Name: ManaContext
-// Dependencies: [2, 1350, 4206, 4207, 1355, 1356, 1351, 1357, 4208, 4209, 1358, 1359, 1360, 1361, 4210, 1364, 4263, 4298]
+// Dependencies: [2, 4272, 4277, 4278, 4279, 4280, 4273, 4281, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4376, 4341, 4377]
 
-// Module 4205 (ManaContext)
+// Module 4271 (ManaContext)
 import set from "set" /* 2 */;
-import context from "context" /* 4263 */;
-import isImage from "isImage" /* 4298 */;
-import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1356 */;
+import context from "context" /* 4341 */;
+import isImage from "isImage" /* 4377 */;
+import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 4280 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
 for (const key10018 in require("AccessibilityAnnouncer")) {
@@ -75,9 +75,9 @@ for (const key10067 in require("ThemeContextFlags")) {
   arg5[key10067] = require("ThemeContextFlags")[key10067];
   continue;
 }
-for (const key10071 in require("module_4210")) {
+for (const key10071 in require("module_4288")) {
   let tmp17 = key10071;
-  arg5[key10071] = require("module_4210")[key10071];
+  arg5[key10071] = require("module_4288")[key10071];
   continue;
 }
 for (const key10075 in require("WCAGContrastRatios")) {

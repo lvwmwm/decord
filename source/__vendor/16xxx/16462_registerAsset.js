@@ -1,10 +1,10 @@
 // Module ID: 16462
 // Function ID: 16463
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 16462 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 84.5, height: 90.5, scales: [2, 3], hash: "89e957c2ca19c43cdc74008a47a75acc", name: "money_birb_placeholder_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/icymi/native/images", width: 24.5, height: 24, scales: [2, 3], hash: "17237a5c49ea745b655cbec7c093406d", name: "emoji-positive", type: "png" });

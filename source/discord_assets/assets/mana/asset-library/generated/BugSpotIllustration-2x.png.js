@@ -1,9 +1,9 @@
-// Module ID: 5767
-// Function ID: 5768
+// Module ID: 5814
+// Function ID: 5815
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5767 (metadata)
+// Module 5814 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BugSpotIllustration-2x.png.js");

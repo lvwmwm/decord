@@ -1,14 +1,14 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10879
+// Function ID: 10880
 // Name: getVisibleUserVoiceActivity
-// Dependencies: [1386, 4120, 4500, 502, 586, 2]
+// Dependencies: [1957, 4199, 4579, 1085, 504, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 10810 (getVisibleUserVoiceActivity)
-import importDefaultResult from "ensureGuildLoaded" /* 1386 */;
-import importDefaultResult1 from "getUncachedChannelPermissions" /* 4120 */;
-import importDefaultResult2 from "updateVoiceState" /* 4500 */;
-import { Permissions } from "sum" /* 502 */;
+// Module 10879 (getVisibleUserVoiceActivity)
+import importDefaultResult from "ensureGuildLoaded" /* 1957 */;
+import importDefaultResult1 from "getUncachedChannelPermissions" /* 4199 */;
+import importDefaultResult2 from "updateVoiceState" /* 4579 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 function getVisibleUserVoiceActivity(arg0, arg1) {
@@ -69,7 +69,7 @@ function getVisibleUserVoiceActivity(arg0, arg1) {
   }
 }
 let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
-let closure_7 = Object.freeze({ voiceState: "left", voiceChannel: "call" });
+let closure_7 = Object.freeze({ voiceState: "hash", voiceChannel: "call" });
 const result = require("set").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 
 export default function useUserVoiceActivity(userId) {

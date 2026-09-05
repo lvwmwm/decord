@@ -1,16 +1,16 @@
-// Module ID: 1207
-// Function ID: 1208
+// Module ID: 1234
+// Function ID: 1235
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1208, 14108, 14115, 14116, 14109, 14112]
+// Dependencies: [2, 1235, 1899, 14080, 14081, 1900, 1903]
 
-// Module 1207 (TelemetryRingLifecycle)
+// Module 1234 (TelemetryRingLifecycle)
 import set from "set" /* 2 */;
-import _updateZoomedInExportDefault from "_updateZoomedInExport" /* 1208 */;
-import shouldRunDefault from "shouldRun" /* 14108 */;
-import apexExperiment from "apexExperiment" /* 14109 */;
-import TelemetryChannel from "TelemetryChannel" /* 14112 */;
-import snapshotForBreadcrumbsDefault from "snapshotForBreadcrumbs" /* 14115 */;
-import NormalTelemetryImplDefault from "NormalTelemetryImpl" /* 14116 */;
+import _updateZoomedInExportDefault from "_updateZoomedInExport" /* 1235 */;
+import shouldRunDefault from "shouldRun" /* 1899 */;
+import apexExperiment from "apexExperiment" /* 1900 */;
+import TelemetryChannel from "TelemetryChannel" /* 1903 */;
+import snapshotForBreadcrumbsDefault from "snapshotForBreadcrumbs" /* 14080 */;
+import NormalTelemetryImplDefault from "NormalTelemetryImpl" /* 14081 */;
 
 const result = set.fileFinishedImporting("modules/telemetry_ring/native/index.tsx");
 

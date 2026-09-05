@@ -1,11 +1,11 @@
-// Module ID: 4207
-// Function ID: 4208
+// Module ID: 4278
+// Function ID: 4279
 // Name: useFieldLabelA11yNative
-// Dependencies: [19, 17, 4201, 2]
+// Dependencies: [19, 17, 4266, 2]
 // Exports: useFieldLabelA11yNative
 
-// Module 4207 (useFieldLabelA11yNative)
-import getNodeText from "getNodeText" /* 4201 */;
+// Module 4278 (useFieldLabelA11yNative)
+import getNodeText from "getNodeText" /* 4266 */;
 import closure_2 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 

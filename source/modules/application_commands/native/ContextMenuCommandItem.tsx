@@ -1,20 +1,20 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16869
+// Function ID: 16870
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4481, 709, 5560, 12, 1233, 12163, 5542, 1954, 4426, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 5605, 12, 1114, 12231, 5587, 1894, 4505, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 16791 (ContextMenuCommandItem)
+// Module 16869 (ContextMenuCommandItem)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import preloadDefault from "preload" /* 5542 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import getApplicationCommandsIconSource from "getApplicationCommandsIconSource" /* 12163 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import preloadDefault from "preload" /* 5587 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import getApplicationCommandsIconSource from "getApplicationCommandsIconSource" /* 12231 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { commandIcon: null, loadingIcon: null, loadingName: null };
@@ -46,7 +46,7 @@ export default function ContextMenuCommandItem(item) {
     }
     return intl.formatToPlainString(item(closure_1_2[7]).t.Pk4Mz3, { applicationName: name, commandName: item.displayName });
   }, items);
-  let obj = item(12163);
+  let obj = item(12231);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
   let tmp8Result = null != applicationCommandsIconSource;
@@ -54,13 +54,13 @@ export default function ContextMenuCommandItem(item) {
     obj = { style: null, source: null };
     obj[0] = tmp.commandIcon;
     obj[1] = applicationCommandsIconSource;
-    tmp8Result = tmp8(section(5542), obj);
+    tmp8Result = tmp8(section(5587), obj);
   }
   obj[3] = tmp8Result;
-  obj[4] = jsx(item(4426).SendMessageIcon, {});
+  obj[4] = jsx(item(4505).SendMessageIcon, {});
   obj[5] = start;
   obj[6] = end;
-  return jsx(item(5560).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
+  return jsx(item(5605).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
 };
 export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingItem(arg0) {
   ({ start, end } = arg0);

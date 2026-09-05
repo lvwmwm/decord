@@ -1,18 +1,18 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12160
+// Function ID: 12161
 // Name: set
-// Dependencies: [19, 17, 4473, 21, 1954, 4481, 709, 586, 4218, 12093, 12094, 4477, 12095, 1296, 10344, 2]
+// Dependencies: [19, 17, 4552, 21, 1894, 4560, 576, 504, 4296, 12161, 12162, 4556, 12163, 1178, 10415, 2]
 // Exports: default
 
-// Module 12092 (set)
+// Module 12160 (set)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12095 */;
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12163 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -33,19 +33,19 @@ export default function CommandOptionView(option) {
   ({ editedOptions, onOptionViewLayout: importDefault, onPressOption: dependencyMap, onPressAttachmentOption: View, optionValidationResults, setFocusedOption: closure_4 } = option);
   ({ style, autoFocusType, onDismiss, onStartEditing, onEndEditing, onOptionValueChange, channel, command, optionValues, isPreSelectedOption } = option);
   const tmp = callback();
-  let obj = option(586);
+  let obj = option(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
-  const ReduceMotion = option(4218).ReduceMotion;
+  const ReduceMotion = option(4296).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const optionEnteringAnimation = option(12093).useOptionEnteringAnimation();
+  const optionEnteringAnimation = option(12161).useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
       fn = (arg0) => arg0();
     }
-    const FadeOut = tmp2(4218).FadeOut;
-    const FadeInUp = tmp2(4218).FadeInUp;
+    const FadeOut = tmp2(4296).FadeOut;
+    const FadeInUp = tmp2(4296).FadeInUp;
     obj = { transform: null };
     items1 = [{ translateY: -10 }];
     obj[0] = items1;
@@ -66,8 +66,8 @@ export default function CommandOptionView(option) {
     obj1[0] = fn;
     const obj2 = { collapsable: false, entering: null, exiting: null, layout: null, onLayout: null, children: null };
     obj2[1] = optionEnteringAnimation.EnteringAnimation;
-    obj2[2] = tmp2(12093).ExitingAnimation;
-    obj2[3] = tmp2(12093).LayoutAnimation;
+    obj2[2] = tmp2(12161).ExitingAnimation;
+    obj2[3] = tmp2(12161).LayoutAnimation;
     obj2[4] = function onLayout(arg0) {
       callback(arg0, option);
     };
@@ -78,7 +78,7 @@ export default function CommandOptionView(option) {
       const obj4 = { style: null, variant: "text-sm/semibold", color: "text-subtle", children: null };
       obj4[0] = tmp.labelText;
       obj4[3] = option.displayName;
-      tmp17Result = tmp17(tmp2(4477).Text, obj4);
+      tmp17Result = tmp17(tmp2(4556).Text, obj4);
     }
     const items2 = [tmp17Result, , , ];
     const obj5 = { option: null, onStartEditing: null, onEndEditing: null, onDismiss: null, onOptionValueChange: null, onFocus: null, onPress: null, onPressAttachmentOption: null, channel: null, autoFocusType: null, command: null, optionValues: null, hasError: null };
@@ -105,7 +105,7 @@ export default function CommandOptionView(option) {
     const obj6 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj6[0] = tmp.optionDescription;
     obj6[3] = option.displayDescription;
-    items2[2] = closure_5(tmp2(4477).Text, obj6);
+    items2[2] = closure_5(tmp2(4556).Text, obj6);
     if (hasItem) {
       const obj7 = { collapsable: false, entering: null, exiting: null, style: null, children: null };
       obj7[1] = reduceMotionResult1;
@@ -113,23 +113,23 @@ export default function CommandOptionView(option) {
       obj7[3] = tmp.optionErrorContainer;
       const obj8 = { style: null, source: null, size: null };
       obj8[0] = tmp.optionErrorIcon;
-      obj8[1] = tmp18(10344);
-      obj8[2] = tmp2(1296).IconSizes.REFRESH_SMALL_16;
-      const items3 = [tmp17(tmp2(1296).Icon, obj8), ];
+      obj8[1] = tmp18(10415);
+      obj8[2] = tmp2(1178).IconSizes.REFRESH_SMALL_16;
+      const items3 = [tmp17(tmp2(1178).Icon, obj8), ];
       const obj9 = { variant: "text-xs/medium", color: "text-feedback-critical", children: null };
       obj9[2] = optionValidationResults[option.name].error;
-      items3[1] = tmp17(tmp2(4477).Text, obj9);
+      items3[1] = tmp17(tmp2(4556).Text, obj9);
       obj7[4] = items3;
-      hasItem = tmp19(tmp18(4218).View, obj7);
+      hasItem = tmp19(tmp18(4296).View, obj7);
     }
     items2[3] = hasItem;
     obj3[2] = items2;
     obj2[5] = closure_6(View, obj3);
-    obj1[1] = closure_5(_modDef4218.View, obj2);
-    obj[1] = closure_5(tmp2(12094).AwaitAnimationContext, obj1);
-    return closure_5(tmp2(4218).LayoutAnimationConfig, obj);
+    obj1[1] = closure_5(_modDef4296.View, obj2);
+    obj[1] = closure_5(tmp2(12162).AwaitAnimationContext, obj1);
+    return closure_5(tmp2(4296).LayoutAnimationConfig, obj);
   } else {
     return null;
   }
-  const tmp2Result = option(12093);
+  const tmp2Result = option(12161);
 };

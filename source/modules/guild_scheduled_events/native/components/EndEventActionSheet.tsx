@@ -1,16 +1,16 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 9805
+// Function ID: 9806
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 1392, 673, 21, 4481, 709, 9591, 4448, 9012, 8521, 1296, 1233, 4477, 4936, 9632, 2]
+// Dependencies: [19, 17, 1963, 1074, 21, 4560, 576, 9662, 4527, 9082, 8591, 1178, 1114, 4556, 4975, 9703, 2]
 // Exports: default
 
-// Module 9734 (EndEventActionSheet)
+// Module 9805 (EndEventActionSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
+import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -28,7 +28,7 @@ export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   let activeEvent;
   const tmp = callback3();
-  let obj = channel(9591);
+  let obj = channel(9662);
   activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -43,27 +43,27 @@ export default function EndEventActionSheet(channel) {
     obj[0] = tmp.container;
     obj1 = { style: null, accessibilityRole: "header", children: null };
     obj1[0] = tmp.title;
-    const intl = tmp2(1233).intl;
-    obj1[2] = intl.string(tmp2(1233).t["4Ao8LC"]);
-    const items = [callback(tmp2(1296).LegacyText, obj1), , , ];
+    const intl = tmp2(1114).intl;
+    obj1[2] = intl.string(tmp2(1114).t["4Ao8LC"]);
+    const items = [callback(tmp2(1178).LegacyText, obj1), , , ];
     let obj2 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj2[0] = tmp.subtitle;
-    const intl2 = tmp2(1233).intl;
-    obj2[3] = intl2.string(tmp2(1233).t["0I0B8f"]);
-    items[1] = callback(tmp2(4477).Text, obj2);
+    const intl2 = tmp2(1114).intl;
+    obj2[3] = intl2.string(tmp2(1114).t["0I0B8f"]);
+    items[1] = callback(tmp2(4556).Text, obj2);
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.cancelButtonContainer;
     const obj4 = { text: null, grow: true, onPress: null };
-    const intl3 = tmp2(1233).intl;
-    obj4[0] = intl3.string(tmp2(1233).t.P60OAX);
+    const intl3 = tmp2(1114).intl;
+    obj4[0] = intl3.string(tmp2(1114).t.P60OAX);
     obj4[2] = handleClose;
-    obj3[1] = callback(tmp2(4936).Button, obj4);
+    obj3[1] = callback(tmp2(4975).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.confirmButtonContainer;
     const obj6 = { text: null, variant: "destructive", grow: true, onPress: null };
-    const intl4 = tmp2(1233).intl;
-    obj6[0] = intl4.string(tmp2(1233).t.mjB9pd);
+    const intl4 = tmp2(1114).intl;
+    obj6[0] = intl4.string(tmp2(1114).t.mjB9pd);
     obj6[3] = function onPress() {
       if (null != activeEvent) {
         activeEvent(closure_1_2[15]).endEvent(tmp.id, tmp.guild_id);
@@ -74,10 +74,10 @@ export default function EndEventActionSheet(channel) {
         const obj3 = channel(closure_1_2[9]);
       }
     };
-    obj5[1] = callback(tmp2(4936).Button, obj6);
+    obj5[1] = callback(tmp2(4975).Button, obj6);
     items[3] = callback(View, obj5);
     obj[1] = items;
     obj[0] = callback2(View, obj);
-    return callback(activeEvent(8521), obj);
+    return callback(activeEvent(8591), obj);
   }
 };

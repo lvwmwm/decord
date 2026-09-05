@@ -1,18 +1,18 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9770
+// Function ID: 9771
 // Name: getChannelA11yLabel
-// Dependencies: [4130, 1921, 673, 1233, 4681, 5023, 4325, 8066, 2]
+// Dependencies: [4209, 1371, 1074, 1114, 4713, 5062, 4404, 8135, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9699 (getChannelA11yLabel)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import nameFromUser from "nameFromUser" /* 4325 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5023 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8066 */;
-import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 9770 (getChannelA11yLabel)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import nameFromUser from "nameFromUser" /* 4404 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5062 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8135 */;
+import closure_3 from "markAllUserIdListsStale" /* 4209 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ ChannelTypes: c5, StatusTypes: closure_6 } = ME);

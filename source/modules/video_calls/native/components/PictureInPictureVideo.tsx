@@ -1,30 +1,30 @@
-// Module ID: 9517
-// Function ID: 9518
+// Module ID: 9588
+// Function ID: 9589
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1385, 4497, 1215, 4532, 1980, 5380, 9415, 9396, 4502, 21, 4481, 1296, 709, 9518, 12, 9404, 9519, 586, 4729, 9520, 9523, 9533, 9551, 9552, 9560, 9463, 9582, 4197, 8063, 9554, 9422, 9418, 9421, 1492, 1234, 8262, 2]
+// Dependencies: [32, 19, 17, 1956, 4576, 502, 1908, 2011, 5419, 9486, 9467, 4581, 21, 4560, 1178, 576, 9589, 12, 9475, 9590, 504, 4761, 9591, 9594, 9604, 9622, 9623, 9631, 9535, 9653, 4262, 8132, 9625, 9493, 9489, 9492, 1477, 1115, 8332, 2]
 
-// Module 9517 (areParticipantsEqual)
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9418 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 9421 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9422 */;
+// Module 9588 (areParticipantsEqual)
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9489 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 9492 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9493 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1385 */;
-import closure_7 from "getParticipants" /* 4497 */;
-import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_10 from "handleConnectionOpen" /* 1980 */;
-import closure_11 from "anyoneHasFlagInContext" /* 5380 */;
-import closure_12 from "initialize" /* 9415 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9396 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+import closure_6 from "participantFromServer" /* 1956 */;
+import closure_7 from "getParticipants" /* 4576 */;
+import closure_8 from "fetchFingerprint" /* 502 */;
+import closure_9 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_10 from "handleConnectionOpen" /* 2011 */;
+import closure_11 from "anyoneHasFlagInContext" /* 5419 */;
+import closure_12 from "initialize" /* 9486 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9467 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import Button from "Button" /* 1296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import Button from "Button" /* 1178 */;
 
 require = arg1;
 function areParticipantsEqual(arg0, arg1) {

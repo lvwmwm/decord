@@ -1,29 +1,29 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13084
+// Function ID: 13085
 // Name: WishlistEmptyState
-// Dependencies: [5, 19, 17, 7475, 10966, 8707, 8710, 8708, 1921, 4530, 7554, 8114, 673, 675, 1923, 21, 3, 4481, 709, 13017, 4205, 1362, 8121, 4448, 7474, 7122, 4477, 1233, 4936, 12685, 13018, 7102, 9295, 10675, 586, 13019, 8105, 13000, 13020, 4336, 4194, 11529, 4139, 7180, 4866, 10590, 1235, 10729, 7171, 10728, 8110, 4152, 10938, 7254, 4154, 8107, 13021, 2008, 4436, 8028, 10179, 10964, 2]
+// Dependencies: [5, 19, 17, 7542, 11035, 8777, 8780, 8778, 1371, 5510, 7621, 8183, 1074, 1076, 1373, 21, 3, 4560, 576, 13085, 4271, 4411, 8190, 4527, 7541, 7182, 4556, 1114, 4975, 12753, 13086, 7162, 9366, 10746, 504, 13087, 8174, 13068, 13088, 4418, 4259, 11597, 4218, 7240, 4905, 10661, 1116, 10798, 7231, 10797, 8179, 4231, 11007, 7316, 4233, 8176, 13089, 1896, 4515, 8097, 10250, 11033, 2]
 // Exports: default
 
-// Module 13016 (WishlistEmptyState)
+// Module 13084 (WishlistEmptyState)
 import timestampDefault from "timestamp" /* 3 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7475 */;
-import closure_7 from "initialize" /* 10966 */;
-import closure_8 from "get" /* 8707 */;
-import { isCollectiblesWishlistItemRecord as closure_9 } from "createCollectiblesItemFromServerResponse" /* 8710 */;
-import { getWishlistProductLines } from "fromServer" /* 8708 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "addSku" /* 4530 */;
-import closure_13 from "createUserWidgetFromServer" /* 7554 */;
-import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import ME from "ME" /* 673 */;
-import { CollectiblesMobileShopScreen as closure_18 } from "items" /* 675 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7542 */;
+import closure_7 from "initialize" /* 11035 */;
+import closure_8 from "get" /* 8777 */;
+import { isCollectiblesWishlistItemRecord as closure_9 } from "createCollectiblesItemFromServerResponse" /* 8780 */;
+import { getWishlistProductLines } from "fromServer" /* 8778 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import closure_12 from "addSku" /* 5510 */;
+import closure_13 from "createUserWidgetFromServer" /* 7621 */;
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import ME from "ME" /* 1074 */;
+import { CollectiblesMobileShopScreen as closure_18 } from "items" /* 1076 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class WishlistEmptyState {
@@ -106,7 +106,7 @@ let closure_26 = createCacheKey.createStyles(() => {
   obj[3] = { flexDirection: "row", flexWrap: "wrap", gap: ThemesDefault.space.PX_16, justifyContent: "flex-start" };
   const space = ThemesDefault.space;
   const obj2 = { alignItems: "center", paddingTop: flag ? space.PX_24 : space.PX_48, paddingBottom: null, paddingHorizontal: null, gap: null };
-  const space2 = tmp(709).space;
+  const space2 = tmp(576).space;
   obj2[2] = flag ? space2.PX_12 : space2.PX_48;
   obj2[3] = ThemesDefault.space.PX_32;
   obj2[4] = ThemesDefault.space.PX_8;
@@ -352,7 +352,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
                                   throwTypeErrorResult = closure_2_18;
                                   obj2[2] = closure_2_18.FEATURED_PAGE;
                                   obj2[3] = function onNavigateAway(arg0) {
-                                    callback(8110)({ userId: user.id, initialSection: closure_1_15.WISHLIST });
+                                    callback(8179)({ userId: user.id, initialSection: closure_1_15.WISHLIST });
                                   };
                                   throwTypeErrorResult = lib(context[24]).openCollectiblesShopMobile(obj2);
                                   throwTypeErrorResult = lib;
@@ -503,7 +503,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
                               throwTypeErrorResult = closure_2_19;
                               obj11[3] = closure_2_19.USER_PROFILE_WISHLIST;
                               obj11[4] = function onGiftModalDismiss(arg0) {
-                                callback(8110)({ userId: user.id, initialSection: closure_1_15.WISHLIST });
+                                callback(8179)({ userId: user.id, initialSection: closure_1_15.WISHLIST });
                               };
                               throwTypeErrorResult = lib(context[49]).openSocialLayerStorefrontGiftModal(obj11);
                               const obj55 = lib(context[49]);

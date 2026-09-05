@@ -1,18 +1,18 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12084
+// Function ID: 12085
 // Name: HeroMedia
-// Dependencies: [19, 4473, 1497, 21, 4481, 11148, 9581, 586, 7108, 11990, 8237, 1233, 2]
+// Dependencies: [19, 4552, 1482, 21, 4560, 11216, 9652, 504, 7168, 12058, 8307, 1114, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12016 (HeroMedia)
+// Module 12084 (HeroMedia)
 import noopAll from "noop" /* 19 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9581 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11148 */;
-import getPreviewVideoAssetUrlDefault from "getPreviewVideoAssetUrl" /* 11990 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9652 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11216 */;
+import getPreviewVideoAssetUrlDefault from "getPreviewVideoAssetUrl" /* 12058 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1482 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -33,10 +33,10 @@ export default function HeroMedia(arg0) {
   }
   const rounded = Math.floor(9 * contentWidth2 / 16);
   const tmp7 = useEmbeddedActivityBackgroundDefault({ applicationId, size: contentWidth2, names: ["embedded_cover"] });
-  let tmp2Result = tmp2(586);
+  let tmp2Result = tmp2(504);
   const items = [closure_3];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  tmp2Result = tmp2(7108);
+  tmp2Result = tmp2(7168);
   const getOrFetchApplication = tmp2Result.useGetOrFetchApplication(applicationId);
   let prop;
   if (getOrFetchApplication != null) {
@@ -66,7 +66,7 @@ export default function HeroMedia(arg0) {
         obj[3] = rounded;
         obj[4] = contentWidth2;
         obj[5] = tmp7.url;
-        const intl = tmp2(1233).intl;
+        const intl = tmp2(1114).intl;
         let str3;
         if (getOrFetchApplication != null) {
           str3 = getOrFetchApplication.name;
@@ -76,7 +76,7 @@ export default function HeroMedia(arg0) {
         }
         obj1 = { applicationName: null };
         obj1[0] = str3;
-        obj[7] = intl.formatToPlainString(tmp2(1233).t["Af+EQD"], obj1);
+        obj[7] = intl.formatToPlainString(tmp2(1114).t["Af+EQD"], obj1);
         const items1 = [tmp.mediaBackground, , ];
         const obj2 = { maxHeight: null };
         obj2[0] = rounded;

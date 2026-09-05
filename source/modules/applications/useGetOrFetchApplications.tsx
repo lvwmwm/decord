@@ -1,12 +1,12 @@
-// Module ID: 7108
-// Function ID: 7109
+// Module ID: 7168
+// Function ID: 7169
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4522, 640, 7103, 12, 1394, 586, 2]
+// Dependencies: [19, 4788, 558, 7163, 12, 1369, 504, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 7108 (useGetOrFetchApplications)
+// Module 7168 (useGetOrFetchApplications)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "addApplication" /* 4522 */;
+import closure_4 from "addApplication" /* 4788 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
@@ -36,7 +36,7 @@ export default function useGetOrFetchApplications(arg0) {
     }
   }, items);
   const items1 = [closure_4];
-  return _require(586).useStateFromStoresArray(items1, () => items1.map((arg0) => {
+  return _require(504).useStateFromStoresArray(items1, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {
       application = application.getApplication(arg0);
@@ -77,7 +77,7 @@ export const useGetOrFetchApplication = function useGetOrFetchApplication(applic
     }
   }, items2);
   const items3 = [closure_4];
-  return items1(586).useStateFromStoresArray(items3, () => items1.map((arg0) => {
+  return items1(504).useStateFromStoresArray(items3, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {
       application = application.getApplication(arg0);

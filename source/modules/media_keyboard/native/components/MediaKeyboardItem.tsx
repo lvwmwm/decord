@@ -1,27 +1,27 @@
-// Module ID: 10577
-// Function ID: 10578
+// Module ID: 10648
+// Function ID: 10649
 // Name: NewCaption
-// Dependencies: [19, 17, 4861, 10578, 21, 4218, 4481, 709, 4329, 1296, 10326, 4477, 586, 5097, 10579, 1233, 5129, 5099, 10580, 10581, 4482, 1492, 10582, 5048, 10041, 2]
+// Dependencies: [19, 17, 4900, 10649, 21, 4296, 4560, 576, 4409, 1178, 10397, 4556, 504, 5136, 10650, 1114, 5168, 5138, 10651, 10652, 4561, 1477, 10653, 5087, 10112, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10577 (NewCaption)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import Text from "Text" /* 4477 */;
-import ImageIcon from "ImageIcon" /* 5048 */;
-import AttachmentIcon from "AttachmentIcon" /* 10041 */;
-import registerAssetDefault from "registerAsset" /* 10326 */;
-import CameraIcon from "CameraIcon" /* 10582 */;
+// Module 10648 (NewCaption)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import Text from "Text" /* 4556 */;
+import ImageIcon from "ImageIcon" /* 5087 */;
+import AttachmentIcon from "AttachmentIcon" /* 10112 */;
+import registerAssetDefault from "registerAsset" /* 10397 */;
+import CameraIcon from "CameraIcon" /* 10653 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 4861 */;
-import frozen from "frozen" /* 10578 */;
+import closure_6 from "map" /* 4900 */;
+import frozen from "frozen" /* 10649 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "module_4218" /* 4218 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "module_4296" /* 4296 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
 
 require = arg1;
 function NewCaption(arg0) {

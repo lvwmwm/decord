@@ -1,19 +1,19 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15308
+// Function ID: 15309
 // Name: toggle
-// Dependencies: [4300, 1302, 1301, 1339, 7906, 673, 586, 1233, 15233, 9287, 11400, 2]
+// Dependencies: [4379, 1184, 1183, 1221, 7975, 1074, 504, 1114, 15309, 9358, 11468, 2]
 
-// Module 15232 (toggle)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 9287 */;
-import track from "track" /* 15233 */;
-import closure_3 from "reset" /* 4300 */;
-import closure_4 from "initialize" /* 1302 */;
-import closure_5 from "handleThemeChange" /* 1301 */;
-import closure_6 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15308 (toggle)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 9358 */;
+import track from "track" /* 15309 */;
+import closure_3 from "reset" /* 4379 */;
+import closure_4 from "initialize" /* 1184 */;
+import closure_5 from "handleThemeChange" /* 1183 */;
+import closure_6 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {

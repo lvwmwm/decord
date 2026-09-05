@@ -1,10 +1,10 @@
 // Module ID: 5336
 // Function ID: 5337
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5336 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "6cc805e0c42759b2e2dd9cbde8874a15", name: "img_account_sync_paypal_white", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "412b00e0557a8edbc2c8786ed6908d87", name: "img_account_sync_spotify_light_and_dark", type: "png" });

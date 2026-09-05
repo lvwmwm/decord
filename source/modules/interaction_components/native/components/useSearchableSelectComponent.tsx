@@ -1,10 +1,10 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11824
+// Function ID: 11825
 // Name: useSearchableSelectComponent
-// Dependencies: [32, 19, 8051, 4448, 2]
+// Dependencies: [32, 19, 8120, 4527, 2]
 // Exports: default
 
-// Module 11756 (useSearchableSelectComponent)
+// Module 11824 (useSearchableSelectComponent)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 

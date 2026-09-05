@@ -1,21 +1,21 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12219
+// Function ID: 12220
 // Name: MenuRow
-// Dependencies: [17, 21, 4481, 709, 12152, 4477, 1233, 10041, 12141, 10882, 2]
+// Dependencies: [17, 21, 4560, 576, 12220, 4556, 1114, 10112, 12209, 10951, 2]
 // Exports: default
 
-// Module 12151 (MenuRow)
+// Module 12219 (MenuRow)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import AttachmentIcon from "AttachmentIcon" /* 10041 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10882 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12141 */;
-import registerAssetDefault from "registerAsset" /* 12152 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import AttachmentIcon from "AttachmentIcon" /* 10112 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10951 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12209 */;
+import registerAssetDefault from "registerAsset" /* 12220 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function MenuRow(arg0) {
   ({ icon, label, highlighted } = arg0);

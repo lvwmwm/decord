@@ -1,14 +1,14 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 6133
+// Function ID: 6134
 // Name: GiftCardFan3dIllustration
-// Dependencies: [21, 5542, 6079, 2]
+// Dependencies: [21, 5587, 6134, 2]
 // Exports: GiftCardFan3dIllustration
 
-// Module 6078 (GiftCardFan3dIllustration)
+// Module 6133 (GiftCardFan3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6079 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6134 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardFan3dIllustration.native.tsx");

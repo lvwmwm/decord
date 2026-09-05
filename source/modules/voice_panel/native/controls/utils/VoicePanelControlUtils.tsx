@@ -1,12 +1,12 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17172
+// Function ID: 17173
 // Name: getDrawerSpec
-// Dependencies: [10924, 2]
+// Dependencies: [10993, 2]
 // Exports: getDrawerSpec
 
-// Module 17094 (getDrawerSpec)
+// Module 17172 (getDrawerSpec)
 import set from "set" /* 2 */;
-import tDefault from "t" /* 10924 */;
+import tDefault from "t" /* 10993 */;
 
 function getDrawerSpec(height, top) {
   const diff = height - top;

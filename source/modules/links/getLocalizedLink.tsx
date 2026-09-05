@@ -1,12 +1,12 @@
-// Module ID: 4104
-// Function ID: 4105
+// Module ID: 4183
+// Function ID: 4184
 // Name: getLocalizedLink
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: default
 
-// Module 4104 (getLocalizedLink)
+// Module 4183 (getLocalizedLink)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/links/getLocalizedLink.tsx");
 

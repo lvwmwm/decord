@@ -1,16 +1,16 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15956
+// Function ID: 15957
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15870, 15871, 673, 1498, 15867, 1233, 15881, 11209, 6888, 15878, 688, 15869, 1499, 6903, 6897, 8306, 2]
+// Dependencies: [5, 32, 19, 15946, 15947, 1074, 1483, 15943, 1114, 15957, 11277, 6948, 15954, 1093, 15945, 1484, 6963, 6957, 8376, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15880 (useIdentityRegistrationStep)
+// Module 15956 (useIdentityRegistrationStep)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15870 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15871 */;
-import { AbortCodes } from "ME" /* 673 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15946 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15947 */;
+import { AbortCodes } from "ME" /* 1074 */;
 
 const require = arg1;
 ({ setRegistrationErrors: closure_6, updateRegistrationOptions: error, useRegistrationUIStore: closure_8 } = useRegistrationUIStore);
@@ -165,8 +165,10 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             obj7[1] = intl2.formatToPlainString(callback(navigation[8]).t.e5WzVa, obj8);
             obj7[2] = closure_1;
             obj7[3] = callback;
-            obj7[4] = function onPhoneTokenReceived(phoneToken) {
-              let obj = { email: "r", phone: closure_1, phoneToken };
+            obj7[4] = function onPhoneTokenReceived(arg0) {
+              let obj = { email: "r", phone: "flexDirection", phoneToken: null };
+              obj[1] = closure_1;
+              obj[2] = arg0;
               v3(obj);
               obj = { step: closure_2_10.PHONE_VERIFICATION, toStep: callback(closure_2_2[14]).getNextRegistrationTransitionStep(callback), actionType: closure_2_11.SUCCESS };
               _undefined(obj);

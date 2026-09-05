@@ -1,17 +1,17 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7298
+// Function ID: 7299
 // Name: resolveExplicitContentSettingWithDefaults
-// Dependencies: [1921, 4168, 1305, 4172, 4179, 4166, 7238, 2]
+// Dependencies: [1371, 1937, 1187, 5423, 7299, 1935, 7300, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 7237 (resolveExplicitContentSettingWithDefaults)
-import create from "create" /* 1305 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;
-import getShouldObscureForSetting from "getShouldObscureForSetting" /* 7238 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import { ExplicitContentFilterTypes } from "items" /* 4168 */;
+// Module 7298 (resolveExplicitContentSettingWithDefaults)
+import create from "create" /* 1187 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 5423 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7299 */;
+import getShouldObscureForSetting from "getShouldObscureForSetting" /* 7300 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import { ExplicitContentFilterTypes } from "items" /* 1937 */;
 
 require = arg1;
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -40,10 +40,10 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       if (!flag) {
-        let BLUR2 = tmp4(1305).ExplicitContentRedaction.BLOCK;
+        let BLUR2 = tmp4(1187).ExplicitContentRedaction.BLOCK;
       }
     }
-    ExplicitContentRedaction = tmp4(1305).ExplicitContentRedaction;
+    ExplicitContentRedaction = tmp4(1187).ExplicitContentRedaction;
     BLUR2 = ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
@@ -60,9 +60,9 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag6 = false;
       }
       if (!flag5) {
-        const BLUR = tmp4(1305).ExplicitContentRedaction.BLUR;
+        const BLUR = tmp4(1187).ExplicitContentRedaction.BLUR;
       }
-      const ExplicitContentFilter2 = tmp4(4166).ExplicitContentFilter;
+      const ExplicitContentFilter2 = tmp4(1935).ExplicitContentFilter;
       setting = ExplicitContentFilter2.getSetting();
       if (flag6) {
         let tmp11 = obj[setting];
@@ -79,7 +79,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(4166).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(1935).ExplicitContentFilter;
         const setting1 = ExplicitContentFilter.getSetting();
         if (flag4) {
           let SHOW = obj[setting1];
@@ -87,7 +87,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
           SHOW = obj[setting1];
         }
       } else {
-        SHOW = tmp4(1305).ExplicitContentRedaction.SHOW;
+        SHOW = tmp4(1187).ExplicitContentRedaction.SHOW;
       }
       return SHOW;
     }
@@ -148,7 +148,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     flag2 = false;
   }
   if (flag) {
-    const ExplicitContentFilter = tmp(4166).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(1935).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       let tmp5 = obj[setting];
@@ -157,7 +157,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     }
     return tmp5;
   } else {
-    return tmp(1305).ExplicitContentRedaction.BLUR;
+    return tmp(1187).ExplicitContentRedaction.BLUR;
   }
 };
 export const getExplicitContentSettingOrDefault = function getExplicitContentSettingOrDefault(arg0) {

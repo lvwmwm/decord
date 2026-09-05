@@ -1,18 +1,18 @@
-// Module ID: 7040
-// Function ID: 7041
+// Module ID: 7100
+// Function ID: 7101
 // Name: handleUpdate
-// Dependencies: [1983, 1386, 7036, 7041, 7042, 12, 586, 684, 11, 706, 2]
+// Dependencies: [2014, 1957, 7096, 7101, 7102, 12, 504, 1090, 11, 573, 2]
 
-// Module 7040 (handleUpdate)
+// Module 7100 (handleUpdate)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "initialize" /* 1983 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "shouldShowOnboarding" /* 7036 */;
-import { GuildOnboardingStatus } from "shouldShowOnboarding" /* 7036 */;
-import { GuildOnboardingMode } from "serverPromptToClientPrompt" /* 7041 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import closure_3 from "initialize" /* 2014 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "shouldShowOnboarding" /* 7096 */;
+import { GuildOnboardingStatus } from "shouldShowOnboarding" /* 7096 */;
+import { GuildOnboardingMode } from "serverPromptToClientPrompt" /* 7101 */;
 
 const require = arg1;
 function handleUpdate(arg0) {

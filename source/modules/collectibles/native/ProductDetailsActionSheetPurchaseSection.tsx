@@ -1,24 +1,24 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 13151
+// Function ID: 13152
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 7491, 675, 673, 11016, 1923, 21, 4481, 709, 8028, 10961, 4448, 10938, 1233, 13081, 8799, 8772, 1498, 7102, 4731, 13084, 2008, 7474, 13088, 676, 13089, 11009, 8767, 4477, 4937, 1949, 4416, 1362, 4197, 8109, 586, 11088, 4139, 7487, 7486, 8780, 11015, 13091, 13092, 10636, 13094, 1627, 4948, 8383, 4936, 1235, 7122, 1994, 13095, 2]
+// Dependencies: [32, 19, 17, 7558, 1076, 1074, 11084, 1373, 21, 4560, 576, 8097, 11030, 4527, 11007, 1114, 13149, 8869, 8842, 1483, 7162, 4763, 13152, 1896, 7541, 13156, 1077, 13157, 11077, 8837, 4556, 4976, 1889, 4495, 4411, 4262, 8178, 504, 11156, 4218, 7554, 7553, 8850, 11083, 13159, 13160, 10707, 13162, 1611, 4987, 8453, 4975, 1116, 7182, 2024, 13163, 2]
 // Exports: default
 
-// Module 13083 (GiftButton)
-import ThemesDefault from "Themes" /* 709 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import Text from "Text" /* 4477 */;
-import contextDefault from "context" /* 7102 */;
+// Module 13151 (GiftButton)
+import ThemesDefault from "Themes" /* 576 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
+import Text from "Text" /* 4556 */;
+import contextDefault from "context" /* 7162 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7491 */;
-import items from "items" /* 675 */;
-import ME from "ME" /* 673 */;
-import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11016 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_6 from "map" /* 7558 */;
+import items from "items" /* 1076 */;
+import ME from "ME" /* 1074 */;
+import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11084 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function GiftButton(onTrackPress) {
@@ -64,19 +64,19 @@ function VCButton(balance) {
   let str;
   const tmp = callback3();
   React = tmp;
-  let obj = balance(13081);
+  let obj = balance(13149);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  obj1 = balance(8799);
+  obj1 = balance(8869);
   let isPartiallyOwnedBundle = obj1.useProductDisableState(product.skuId).isDisabled;
-  let obj2 = balance(8772);
+  let obj2 = balance(8842);
   if (!isPartiallyOwnedBundle) {
     isPartiallyOwnedBundle = !canAfford;
   }
   if (!isPartiallyOwnedBundle) {
     isPartiallyOwnedBundle = obj2.useProductPurchaseState(product).isPartiallyOwnedBundle;
   }
-  navigation = balance(1498).useNavigation();
+  navigation = balance(1483).useNavigation();
   analyticsLocations = contextDefault().analyticsLocations;
   const items = [navigation, product, balance, analyticsLocations, stageCollectibleChangeForEditProfile];
   closure_7 = React.useCallback(() => {
@@ -146,13 +146,13 @@ function VCButton(balance) {
     if (isPartiallyOwnedBundle) {
       str = "interactive-text-active";
     }
-    const intl = tmp2(1233).intl;
+    const intl = tmp2(1114).intl;
     obj = { orbPrice: null, orbIconHook: null };
     obj[0] = price.amount;
     obj[1] = function orbIconHook() {
       return closure_1_15(balance(closure_1_2[29]).OrbsIcon, { size: "sm", color: closure_8 }, "orbs-icon");
     };
-    const formatResult = intl.format(tmp2(1233).t.JC15qj, obj);
+    const formatResult = intl.format(tmp2(1114).t.JC15qj, obj);
     const _Array = Array;
     let arr2 = formatResult;
     if (!Array.isArray(formatResult)) {
@@ -161,10 +161,10 @@ function VCButton(balance) {
     }
     obj = { style: null, accessibilityLabel: null, children: null };
     obj[0] = tmp.orbsButtonLabel;
-    const intl2 = tmp2(1233).intl;
+    const intl2 = tmp2(1114).intl;
     obj1 = { orbPrice: null };
     obj1[0] = price.amount;
-    obj[1] = intl2.formatToPlainString(tmp2(1233).t.yi41qQ, obj1);
+    obj[1] = intl2.formatToPlainString(tmp2(1114).t.yi41qQ, obj1);
     obj[2] = arr2.map((str) => {
       if (typeof str === "string") {
         const obj = { style: null, variant: "text-md/semibold", color: null, children: null };
@@ -193,10 +193,10 @@ function VCButton(balance) {
       str2 = "secondary";
     }
     obj3[5] = str2;
-    obj2[1] = callback2(tmp2(4937).BaseTextButton, obj3);
+    obj2[1] = callback2(tmp2(4976).BaseTextButton, obj3);
     return callback2(navigation, obj2);
   }
-  const tmp2Result = balance(1498);
+  const tmp2Result = balance(1483);
   const tmp6 = importDefault;
 }
 function PurchaseDisclaimer(arg0) {
@@ -204,11 +204,11 @@ function PurchaseDisclaimer(arg0) {
   let obj = { style: callback3().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: null };
   let formatResult = product.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   if (formatResult) {
-    const intl = tmp3(1233).intl;
+    const intl = tmp3(1114).intl;
     obj = { buyButtonLabel: null, paidServiceTermURL: null };
     obj[0] = buyButtonLabel;
     obj[1] = constants2.PAID_TERMS;
-    formatResult = intl.format(tmp3(1233).t.iIglwJ, obj);
+    formatResult = intl.format(tmp3(1114).t.iIglwJ, obj);
   }
   obj[3] = formatResult;
   return closure_15(Text.Text, obj);

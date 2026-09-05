@@ -1,20 +1,20 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15525
+// Function ID: 15526
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1921, 21, 4481, 9253, 5642, 1233, 15450, 13291, 586, 1945, 2]
+// Dependencies: [32, 19, 17, 1371, 21, 4560, 9324, 5687, 1114, 15526, 13363, 504, 1885, 2]
 // Exports: default
 
-// Module 15449 (BackwardsCompatibleAppIconRows)
-import initialize from "initialize" /* 586 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13291 */;
+// Module 15525 (BackwardsCompatibleAppIconRows)
+import initialize from "initialize" /* 504 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1885 */;
+import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13363 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
 import { createElement } from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function BackwardsCompatibleAppIconRows(arg0) {
@@ -38,8 +38,8 @@ function BackwardsCompatibleAppIconRows(arg0) {
     obj[0] = tmp5.container;
     obj = { title: null, accessibilityRole: "radiogroup", accessibilityLabel: null, hasIcons: true, children: null };
     obj[0] = merged.title;
-    const intl = merged(1233).intl;
-    obj[2] = intl.string(merged(1233).t.N4YDao);
+    const intl = merged(1114).intl;
+    obj[2] = intl.string(merged(1114).t.N4YDao);
     obj[4] = icons.map((id) => {
       const obj = {};
       merged = Object.assign(merged);
@@ -49,7 +49,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return closure_1_7(_undefined(_undefined2[9]), obj);
     });
-    obj[1] = callback(merged(5642).TableRowGroup, obj);
+    obj[1] = callback(merged(5687).TableRowGroup, obj);
     return callback(View, obj);
   }
 }
@@ -74,8 +74,8 @@ export default function AppIconRows(onSelect) {
     obj[0] = isPremiumResult;
     obj[1] = limitedTimeAppIcons;
     obj[2] = currentAppIcon;
-    const intl = tmp2(1233).intl;
-    obj[3] = intl.string(tmp2(1233).t.anqaFd);
+    const intl = tmp2(1114).intl;
+    obj[3] = intl.string(tmp2(1114).t.anqaFd);
     obj[4] = onSelect;
     tmp10 = callback(BackwardsCompatibleAppIconRows, obj);
   }
@@ -88,8 +88,8 @@ export default function AppIconRows(onSelect) {
   obj1 = { hasNitro: isPremiumResult, icons: officialAppIcons, currentAppIcon, title: null, onSelect: null };
   let stringResult;
   if (tmp7) {
-    const intl2 = tmp2(1233).intl;
-    stringResult = intl2.string(tmp2(1233).t.Ipxkog);
+    const intl2 = tmp2(1114).intl;
+    stringResult = intl2.string(tmp2(1114).t.Ipxkog);
   }
   obj2 = { children: null };
   obj1[3] = stringResult;

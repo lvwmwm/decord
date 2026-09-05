@@ -1,23 +1,23 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12676
+// Function ID: 12677
 // Name: handleNameInputScreenOrSuggestions
-// Dependencies: [5, 5242, 1921, 12609, 12611, 12610, 673, 4738, 12612, 12614, 695, 12616, 1233, 4866, 4194, 9495, 6985, 4379, 4731, 12617, 2008, 9749, 688, 12636, 2]
+// Dependencies: [5, 5281, 1371, 12677, 12679, 12678, 1074, 4770, 12680, 12682, 1242, 12684, 1114, 4905, 4259, 9566, 7045, 4461, 4763, 12685, 1896, 9820, 1093, 12704, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModal, openContactSyncModalDeeplink, openContactSyncModalOnboarding, refreshContactSyncPermissionStatus, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 12608 (handleNameInputScreenOrSuggestions)
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9749 */;
-import _uploadContacts from "_uploadContacts" /* 12612 */;
-import Steps from "Steps" /* 12614 */;
+// Module 12676 (handleNameInputScreenOrSuggestions)
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9820 */;
+import _uploadContacts from "_uploadContacts" /* 12680 */;
+import Steps from "Steps" /* 12682 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5242 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import ContactSyncModes from "ContactSyncModes" /* 12609 */;
-import setStoredContacts from "setStoredContacts" /* 12611 */;
-import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12610 */;
-import ME from "ME" /* 673 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4738 */;
+import closure_4 from "set" /* 5281 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import ContactSyncModes from "ContactSyncModes" /* 12677 */;
+import setStoredContacts from "setStoredContacts" /* 12679 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12678 */;
+import ME from "ME" /* 1074 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4770 */;
 
 require = arg1;
 function handleNameInputScreenOrSuggestions() {
@@ -111,32 +111,32 @@ function _handleNameInputScreenOrSuggestions() {
               trackResult1 = closure_4;
               trackResult1 = constants;
               if (closure_4 === constants.NOT_DETERMINED) {
-                callback(12614).trackFlowStep(callback(12614).Steps.PERMISSION_REQUESTED, false, false);
-                const obj16 = callback(12614);
+                callback(12682).trackFlowStep(callback(12682).Steps.PERMISSION_REQUESTED, false, false);
+                const obj16 = callback(12682);
               }
               v0 = 1;
               trackResult1 = 3;
               v02 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(12612).getContacts(callback);
+              obj3[0] = callback(12680).getContacts(callback);
               return obj3;
             }
           } else {
             if (2 === tmp8) {
               v0 = 0;
               closure_13 = closure_5;
-              let obj12 = navigation(695);
+              let obj12 = navigation(1242);
               const obj4 = { type: null, action: null };
               obj4[0] = constants5.CONTACTS;
               obj4[1] = constants4.DENIED;
               obj12.track(constants3.PERMISSIONS_ACKED, obj4);
-              if (closure_13 === callback(12612).ContactSyncPermissionDenied) {
-                const obj15 = callback(12614);
-                obj15.trackFlowStep(callback(12614).Steps.LANDING, true, false, { mobile_contacts_permission: "denied" });
+              if (closure_13 === callback(12680).ContactSyncPermissionDenied) {
+                const obj15 = callback(12682);
+                obj15.trackFlowStep(callback(12682).Steps.LANDING, true, false, { mobile_contacts_permission: "denied" });
                 trackResult1(constants.UNAUTHORIZED);
               } else {
-                const intl = callback(1233).intl;
-                v0(intl.string(callback(1233).t.fGrbRX));
+                const intl = callback(1114).intl;
+                v0(intl.string(callback(1114).t.fGrbRX));
                 callback2();
               }
               v02 = 3;
@@ -172,15 +172,15 @@ function _handleNameInputScreenOrSuggestions() {
                   obj6[0] = constants5.CONTACTS;
                   trackResult1 = constants4;
                   obj6[1] = constants4.ACCEPTED;
-                  trackResult1 = navigation(695).track(constants3.PERMISSIONS_ACKED, obj6);
+                  trackResult1 = navigation(1242).track(constants3.PERMISSIONS_ACKED, obj6);
                   trackResult1 = name;
                   if (null == name) {
-                    obj5 = callback(12614);
-                    obj5.trackFlowStep(callback(12614).Steps.NAME_INPUT, false, false);
+                    obj5 = callback(12682);
+                    obj5.trackFlowStep(callback(12682).Steps.NAME_INPUT, false, false);
                     SUGGESTIONS_RESULTS(trackResult1, true);
                     navigation.navigate(constants2.NAME_INPUT);
                   }
-                  const obj25 = navigation(695);
+                  const obj25 = navigation(1242);
                 }
               } else {
                 if (4 === tmp8) {
@@ -211,7 +211,7 @@ function _handleNameInputScreenOrSuggestions() {
                     length = closure_12.friend_suggestions.length;
                     trackResult1 = callback;
                     trackResult1 = dependencyMap;
-                    const obj23 = callback(12614);
+                    const obj23 = callback(12682);
                     trackResult1 = SUGGESTIONS_RESULTS;
                     const obj9 = { num_contacts_found: null };
                     trackResult1 = length;
@@ -234,8 +234,8 @@ function _handleNameInputScreenOrSuggestions() {
                   return obj;
                 }
                 SUGGESTIONS = constants2.SUGGESTIONS;
-                SUGGESTIONS_RESULTS = callback(12614).Steps.SUGGESTIONS_RESULTS;
-                obj2 = callback(12612);
+                SUGGESTIONS_RESULTS = callback(12682).Steps.SUGGESTIONS_RESULTS;
+                obj2 = callback(12680);
                 trackResult1 = 5;
                 v02 = 1;
                 const obj10 = { value: null, done: false };
@@ -244,8 +244,8 @@ function _handleNameInputScreenOrSuggestions() {
               }
               v0 = 0;
             }
-            obj6 = callback(12612);
-            obj7 = navigation(12616);
+            obj6 = callback(12680);
+            obj7 = navigation(12684);
             if (isContactSyncEnabledResult) {
               trackResult1 = 4;
               v02 = 1;
@@ -393,8 +393,8 @@ function _startContactSync() {
                 phone = currentUser.phone;
               }
               if (null == phone) {
-                let obj2 = callback(12614);
-                obj2.trackFlowStep(callback(12614).Steps.ADD_PHONE_NUMBER, false, false);
+                let obj2 = callback(12682);
+                obj2.trackFlowStep(callback(12682).Steps.ADD_PHONE_NUMBER, false, false);
                 closure_1_9(null);
                 obj7.navigate(closure_1_19.ADD_PHONE);
                 c1 = 3;
@@ -628,12 +628,12 @@ function _verifyPhone() {
             lib = closure_4;
             if (301 !== lib.status) {
               if (404 !== lib.status) {
-                const aPIError = new lib(4379).APIError(lib);
+                const aPIError = new lib(4461).APIError(lib);
                 const anyErrorMessage = aPIError.getAnyErrorMessage();
                 closure_1 = anyErrorMessage;
                 if (anyErrorMessage == null) {
-                  const intl = lib(1233).intl;
-                  closure_1 = intl.string(lib(1233).t.cCVXOe);
+                  const intl = lib(1114).intl;
+                  closure_1 = intl.string(lib(1114).t.cCVXOe);
                 }
                 { codeIntercepted: true, addedPhone: false, error: null }[2] = closure_1;
               }
@@ -694,16 +694,16 @@ function closeContactSyncModal(skip) {
     let obj = { num_contacts_found: null, num_contacts_added: null };
     obj[0] = friendsFound;
     obj[1] = friendsAdded;
-    flag2(12614).trackFlowEnd(flag, obj);
+    flag2(12682).trackFlowEnd(flag, obj);
     if (tmp16) {
       onComplete(flag);
     } else {
       const _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {
-        back(4731).popWithKey(closure_20);
+        back(4763).popWithKey(closure_20);
       }, 0);
     }
-    const obj3 = flag2(12614);
+    const obj3 = flag2(12682);
   } else {
     flag2 = flag;
     if (flag === undefined) {
@@ -716,41 +716,41 @@ function closeContactSyncModal(skip) {
     const tmp2 = callback5();
     dependencyMap = tmp2;
     if (!back) {
-      obj = flag2(12614);
+      obj = flag2(12682);
       obj = { num_contacts_found: null, num_contacts_added: null };
       obj[0] = friendsFound;
       obj[1] = friendsAdded;
       obj.trackFlowEnd(flag2, obj);
     }
     if (tmp2) {
-      let updateAnimation = back(4731).updateAnimation;
-      let ModalAnimation = flag2(688).ModalAnimation;
+      let updateAnimation = back(4763).updateAnimation;
+      let ModalAnimation = flag2(1093).ModalAnimation;
       if (back) {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT_REVERSE);
       } else {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT);
       }
-      const tmp8 = back(4731);
+      const tmp8 = back(4763);
     }
     const _setTimeout = setTimeout;
     const timerId1 = setTimeout(() => {
-      let obj = back(4731);
+      let obj = back(4763);
       obj.popWithKey(closure_1_20);
       if (dependencyMap) {
-        const updateAnimation = back(4731).updateAnimation;
-        const ModalAnimation = flag2(688).ModalAnimation;
+        const updateAnimation = back(4763).updateAnimation;
+        const ModalAnimation = flag2(1093).ModalAnimation;
         if (back) {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT_REVERSE);
-          let tmp7Result = tmp7(12636);
+          let tmp7Result = tmp7(12704);
           const result = tmp7Result.previousOnboardingStep();
         } else {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT);
-          tmp7Result = tmp7(12636);
+          tmp7Result = tmp7(12704);
           obj = { skip: null };
           obj[0] = flag2;
           tmp7Result.nextOnboardingStep(obj);
         }
-        const tmpResult = back(4731);
+        const tmpResult = back(4763);
       }
     }, 0);
   }
@@ -831,13 +831,13 @@ export const openContactSyncModal = function openContactSyncModal(initialRoutes,
   if (FRIENDS_ADD_FRIENDS_MODAL) {
     obj = { location: null };
     obj[0] = FRIENDS_ADD_FRIENDS_MODAL;
-    tmp(12614).trackFlowStart(obj);
-    const tmpResult = tmp(12614);
+    tmp(12682).trackFlowStart(obj);
+    const tmpResult = tmp(12682);
   }
   obj = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
-  const obj4 = _modDef4731;
+  const obj4 = _modDef4763;
   const tmp2 = dependencyMap;
-  _modDef4731.pushLazy(asyncRequireImpl(12617, dependencyMap.paths), obj, closure_20).then(arg2);
+  _modDef4763.pushLazy(asyncRequireImpl(12685, dependencyMap.paths), obj, closure_20).then(arg2);
 };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
   let flag = arg0;
@@ -851,7 +851,7 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
     obj[0] = obj;
     Steps.trackFlowStart(obj);
     const obj2 = Steps;
-    _modDef4731.pushLazy(callback(function*() {
+    _modDef4763.pushLazy(callback(function*() {
       closure_1 = tmp5;
       let callback = tmp2;
       yield closure_1_0(paths[20])(paths[19], paths.paths);
@@ -881,8 +881,8 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   Steps.trackFlowStart({ location: { page: "Deep Link" } });
   const tmpResult = Steps;
   obj = { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage };
-  const obj4 = _modDef4731;
-  _modDef4731.pushLazy(asyncRequireImpl(12617, tmp2.paths), obj, closure_20).then(undefined);
+  const obj4 = _modDef4763;
+  _modDef4763.pushLazy(asyncRequireImpl(12685, tmp2.paths), obj, closure_20).then(undefined);
 };
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
   const result = _uploadContacts.checkContactPermissions();

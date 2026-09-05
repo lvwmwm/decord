@@ -1,10 +1,10 @@
 // Module ID: 5361
 // Function ID: 5362
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5361 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "85e85e0480cc3ad94f292bfe35b1a958", name: "img_amazon_music", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "eb232cce91e81121373a2c7b4cc58581", name: "img_account_sync_riot_light_and_dark", type: "png" });

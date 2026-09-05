@@ -1,12 +1,12 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9638
+// Function ID: 9639
 // Name: RESPONSIVE_DENSITY_MEDIA_QUERY
-// Dependencies: [1305, 2]
+// Dependencies: [1187, 2]
 // Exports: resolveUIDensity
 
-// Module 9567 (RESPONSIVE_DENSITY_MEDIA_QUERY)
+// Module 9638 (RESPONSIVE_DENSITY_MEDIA_QUERY)
 import set from "set" /* 2 */;
-import create from "create" /* 1305 */;
+import create from "create" /* 1187 */;
 
 const result = set.fileFinishedImporting("modules/themes/UIDensityConstants.tsx");
 
@@ -15,11 +15,11 @@ export const RESPONSIVE_DENSITY_FALLBACK = "cozy";
 export const resolveUIDensity = function resolveUIDensity(arg0, arg1) {
   if (create.UIDensity.RESPONSIVE === arg0) {
     return arg1;
-  } else if (tmp(1305).UIDensity.COZY === arg0) {
+  } else if (tmp(1187).UIDensity.COZY === arg0) {
     return "cozy";
-  } else if (tmp(1305).UIDensity.DEFAULT === arg0) {
+  } else if (tmp(1187).UIDensity.DEFAULT === arg0) {
     return "default";
-  } else if (tmp(1305).UIDensity.COMPACT === arg0) {
+  } else if (tmp(1187).UIDensity.COMPACT === arg0) {
     return "compact";
   } else {
     return "default";

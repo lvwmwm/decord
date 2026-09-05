@@ -1,14 +1,14 @@
-// Module ID: 13867
-// Function ID: 13868
-// Dependencies: [19, 12611, 673, 21, 4481, 709, 8523, 695, 12608, 7135, 1233, 13868, 2]
+// Module ID: 13857
+// Function ID: 13858
+// Dependencies: [19, 12679, 1074, 21, 4560, 576, 8593, 1242, 12676, 7195, 1114, 13858, 2]
 
-// Module 13867
-import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 13868 */;
-import { dismissUpsellCTA } from "setStoredContacts" /* 12611 */;
-import ME from "ME" /* 673 */;
+// Module 13857
+import ThemesDefault from "Themes" /* 576 */;
+import registerAssetDefault from "registerAsset" /* 13858 */;
+import { dismissUpsellCTA } from "setStoredContacts" /* 12679 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -36,11 +36,11 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(7135);
+      let obj = location(7195);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
-      const intl = location(1233).intl;
-      obj[0] = intl.string(location(1233).t.WAI6xu);
+      const intl = location(1114).intl;
+      obj[0] = intl.string(location(1114).t.WAI6xu);
       obj[1] = function onPress() {
         callback();
       };
@@ -54,11 +54,11 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
     subtitle: null
   };
   items = [callback().container, location.style];
-  let intl = location(1233).intl;
-  obj[4] = intl.string(location(1233).t.T6Rfd9);
-  const intl2 = location(1233).intl;
-  obj[5] = intl2.string(location(1233).t.c6KIpg);
-  return jsx(location(8523).FormCTA, {
+  let intl = location(1114).intl;
+  obj[4] = intl.string(location(1114).t.T6Rfd9);
+  const intl2 = location(1114).intl;
+  obj[5] = intl2.string(location(1114).t.c6KIpg);
+  return jsx(location(8593).FormCTA, {
     onPress() {
       let obj = closure_1_1(closure_1_2[7]);
       obj = { type: closure_1_5.CONTACT_SYNC_MODAL, location: null };
@@ -75,11 +75,11 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(7135);
+      let obj = location(7195);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
-      const intl = location(1233).intl;
-      obj[0] = intl.string(location(1233).t.WAI6xu);
+      const intl = location(1114).intl;
+      obj[0] = intl.string(location(1114).t.WAI6xu);
       obj[1] = function onPress() {
         callback();
       };

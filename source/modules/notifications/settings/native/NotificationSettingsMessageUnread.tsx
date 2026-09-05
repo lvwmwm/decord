@@ -1,34 +1,34 @@
-// Module ID: 10092
-// Function ID: 10093
+// Module ID: 10163
+// Function ID: 10164
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4481, 709, 10086, 4477, 1233, 5084, 10093, 10084, 4448, 10095, 2008, 10078, 10097, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 10157, 4556, 1114, 5123, 10164, 10155, 4527, 10166, 1896, 10149, 10168, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10092 (NotificationSettingsMessageUnread)
+// Module 10163 (NotificationSettingsMessageUnread)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10093 */;
+import ThemesDefault from "Themes" /* 576 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10164 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function NotificationSettingsMessageUnread(onPress) {
   const _require = onPress;
   const tmp = callback3();
-  let obj = _require(10086);
+  let obj = _require(10157);
   const unreadSelectOptions = obj.getUnreadSelectOptions();
   const found = unreadSelectOptions.find((value) => value.value === onPress.setting);
   obj = { style: onPress.style, children: null };
   obj = { style: tmp.header, children: null };
   obj1 = { variant: "text-sm/semibold", color: "text-default", style: tmp.headerTitle, children: null };
-  const intl = _require(1233).intl;
-  obj1[3] = intl.string(_require(1233).t.Tqd1Af);
-  const items = [callback(_require(4477).Text, obj1), ];
+  const intl = _require(1114).intl;
+  obj1[3] = intl.string(_require(1114).t.Tqd1Af);
+  const items = [callback(_require(4556).Text, obj1), ];
   const obj2 = { variant: "text-xs/semibold", color: "text-default", children: null };
-  const intl2 = _require(1233).intl;
-  obj2[2] = intl2.string(_require(1233).t.RpQgm5);
-  items[1] = callback(_require(4477).Text, obj2);
+  const intl2 = _require(1114).intl;
+  obj2[2] = intl2.string(_require(1114).t.RpQgm5);
+  items[1] = callback(_require(4556).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { onPress: onPress.onCustomize, activeOpacity: 0.6, children: null };
@@ -43,17 +43,17 @@ function NotificationSettingsMessageUnread(onPress) {
     str = "unset";
   }
   obj6[2] = str;
-  items2[1] = callback(_require(4477).Text, obj6);
+  items2[1] = callback(_require(4556).Text, obj6);
   const obj7 = { onPress: onPress.onCustomize, children: null };
   const obj8 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: null };
-  const intl3 = tmp2(1233).intl;
-  const items3 = [intl3.string(_require(1233).t.yxiV9W), " "];
+  const intl3 = tmp2(1114).intl;
+  const items3 = [intl3.string(_require(1114).t.yxiV9W), " "];
   obj8[3] = items3;
-  obj7[1] = callback2(_require(4477).Text, obj8);
-  items2[2] = callback(_require(5084).PressableOpacity, obj7);
+  obj7[1] = callback2(_require(4556).Text, obj8);
+  items2[2] = callback(_require(5123).PressableOpacity, obj7);
   obj4[1] = items2;
   obj3[2] = callback2(View, obj4);
-  items1[1] = callback(_require(5084).PressableOpacity, obj3);
+  items1[1] = callback(_require(5123).PressableOpacity, obj3);
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -73,7 +73,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10084).useGuildPresetSettings(style.guildId).unread,
+    setting: _require(10155).useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { guildId: style.guildId };
@@ -86,7 +86,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10078).useChannelPresetSettings(style.channel).unread,
+    setting: _require(10149).useChannelPresetSettings(style.channel).unread,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { channel: style.channel };

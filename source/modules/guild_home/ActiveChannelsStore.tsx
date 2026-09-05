@@ -1,16 +1,16 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13705
+// Function ID: 13706
 // Name: truncateOldMessageData
-// Dependencies: [1386, 4302, 1393, 11, 12, 586, 706, 2]
+// Dependencies: [1957, 4381, 1964, 11, 12, 504, 573, 2]
 
-// Module 13629 (truncateOldMessageData)
+// Module 13705 (truncateOldMessageData)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "handleConnectionOpen" /* 4302 */;
-import { isGuildHomeChannel } from "set" /* 1393 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import closure_3 from "handleConnectionOpen" /* 4381 */;
+import { isGuildHomeChannel } from "set" /* 1964 */;
 
 function truncateOldMessageData(channelId) {
   if (null != dependencyMap2[channelId]) {

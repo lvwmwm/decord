@@ -1,24 +1,24 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14550
+// Function ID: 14551
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 4131, 1215, 1386, 4743, 673, 14476, 3, 684, 592, 4074, 4163, 7685, 7390, 706, 11679, 11608, 2008, 4669, 5233, 9870, 2]
+// Dependencies: [5, 32, 4210, 502, 1957, 4781, 1074, 14551, 3, 1090, 510, 4153, 4242, 7752, 7456, 573, 11747, 11676, 1896, 1898, 5272, 9941, 2]
 
-// Module 14475 (_getKeyForFileId)
+// Module 14550 (_getKeyForFileId)
 import timestampDefault from "timestamp" /* 3 */;
-import Storage3 from "Storage" /* 592 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hooksDefault from "hooks" /* 4074 */;
-import resetCache from "resetCache" /* 4163 */;
-import initializeDefault from "initialize" /* 4669 */;
+import Storage3 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import initializeDefault from "initialize" /* 1898 */;
+import hooksDefault from "hooks" /* 4153 */;
+import resetCache from "resetCache" /* 4242 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "hasFlag" /* 4131 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "reinjectEphemerals" /* 4743 */;
-import { MessageStates } from "ME" /* 673 */;
-import createLock from "createLock" /* 14476 */;
+import closure_5 from "hasFlag" /* 4210 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "reinjectEphemerals" /* 4781 */;
+import { MessageStates } from "ME" /* 1074 */;
+import createLock from "createLock" /* 14551 */;
 
 require = arg1;
 function _getKeyForFileId(arg0) {
@@ -59,14 +59,14 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = file(7685)(obj);
+  const tmp3 = file(7752)(obj);
   closure_0 = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  file(7390).receiveMessage(channel_id, tmp3, true, obj);
+  file(7456).receiveMessage(channel_id, tmp3, true, obj);
   if (null != file) {
-    file(706).wait(() => file(closure_1_2[16]).restoreFailedUpload(id.id, file));
-    const tmpResult = file(706);
+    file(573).wait(() => file(closure_1_2[16]).restoreFailedUpload(id.id, file));
+    const tmpResult = file(573);
   }
 }
 function resumeSendingMessage() {

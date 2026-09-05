@@ -1,12 +1,12 @@
-// Module ID: 1909
-// Function ID: 1910
+// Module ID: 1980
+// Function ID: 1981
 // Name: identity
-// Dependencies: [3, 586, 706, 1910, 2]
+// Dependencies: [3, 504, 573, 1981, 2]
 
-// Module 1909 (identity)
+// Module 1980 (identity)
 import timestampDefault from "timestamp" /* 3 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import { Store } from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import { Store } from "initialize" /* 504 */;
 
 const require = arg1;
 function identity(arg0) {

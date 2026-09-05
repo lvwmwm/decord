@@ -1,9 +1,9 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13986
+// Function ID: 13987
 // Name: CollectiblesMarketingSurface
 // Dependencies: [2]
 
-// Module 13996 (CollectiblesMarketingSurface)
+// Module 13986 (CollectiblesMarketingSurface)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingSurface.tsx");

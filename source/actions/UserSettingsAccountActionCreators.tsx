@@ -1,15 +1,15 @@
-// Module ID: 6924
-// Function ID: 6925
+// Module ID: 6984
+// Function ID: 6985
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 673, 6537, 706, 527, 6534, 1219, 1941, 592, 5130, 6925, 6928, 6930, 2]
+// Dependencies: [5, 1074, 6596, 573, 1272, 6593, 1100, 1392, 510, 5169, 6985, 6988, 6990, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6924 (saveProfileAndAccountRequest)
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 6984 (saveProfileAndAccountRequest)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 673 */;
-import str2 from "str2" /* 6537 */;
+import ME from "ME" /* 1074 */;
+import str2 from "str2" /* 6596 */;
 
 require = arg1;
 function saveProfileAndAccountRequest(arg0, arg1) {
@@ -174,9 +174,9 @@ export const disableAccount = function disableAccount(password, arg1) {
   const obj3 = sendRequest;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(6534).logoutInternal();
-    const obj = callback2(6534);
-    callback(1219).transitionTo(constants.DEFAULT_LOGGED_OUT);
+    callback2(6593).logoutInternal();
+    const obj = callback2(6593);
+    callback(1100).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
 export { saveProfileAndAccountRequest };
@@ -185,7 +185,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   const avatarId = c0.avatarId;
   ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, typingIndicatorStyle } = c0);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = c0);
-  let obj = avatarId(706);
+  let obj = avatarId(573);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   obj = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
   if (undefined !== avatarDecoration) {
@@ -221,19 +221,19 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
-      result = avatar(1941).serializeTypingIndicatorStyle(typingIndicatorStyle);
-      const obj3 = avatar(1941);
+      result = avatar(1392).serializeTypingIndicatorStyle(typingIndicatorStyle);
+      const obj3 = avatar(1392);
     }
     obj.typing_indicator_style = result;
   }
-  const Storage = avatar(592).Storage;
+  const Storage = avatar(510).Storage;
   let value = Storage.get(closure_6);
   const tmp12 = callback2();
   if (tmp13) {
     obj.push_provider = tmp12;
     obj.push_token = value;
   }
-  const Storage2 = tmp10(592).Storage;
+  const Storage2 = tmp10(510).Storage;
   value = Storage2.get(closure_7);
   let tmp16 = null != closure_8;
   if (tmp16) {
@@ -243,11 +243,11 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_provider = tmp15;
     obj.push_voip_token = value;
   }
-  obj = { headers: avatarId(5130).buildHeadersForMd5({ [avatar(6925).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  obj = { headers: avatarId(5169).buildHeadersForMd5({ [avatar(6985).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
   const tmp = avatarId;
   tmp13 = null != tmp12 && null != value;
   tmp15 = closure_8;
-  let tmpResult = avatarId(5130);
+  let tmpResult = avatarId(5169);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
     avatarId(closure_1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;

@@ -1,12 +1,12 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17119
+// Function ID: 17120
 // Name: useConsoleVoiceUpsellStore
-// Dependencies: [641, 702, 2]
+// Dependencies: [560, 1249, 2]
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 17041 (useConsoleVoiceUpsellStore)
+// Module 17119 (useConsoleVoiceUpsellStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let closure_2 = Object.freeze({ voiceUpsellDismissed: false, showSparkles: false });
 const obj = keys.create(() => closure_2);
@@ -15,13 +15,13 @@ const result = set.fileFinishedImporting("modules/game_console/ConsoleVoiceUpsel
 export const useConsoleVoiceUpsellStore = obj;
 export const setShowConsoleVoiceSparkles = function setShowConsoleVoiceSparkles(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState({ showSparkles: closure_0 });
   });
 };
 export const setVoiceUpsellDismissed = function setVoiceUpsellDismissed(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_3.setState({ voiceUpsellDismissed: closure_0 });
   });
 };

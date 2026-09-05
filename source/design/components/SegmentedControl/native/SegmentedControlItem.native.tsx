@@ -1,15 +1,15 @@
-// Module ID: 9723
-// Function ID: 9724
+// Module ID: 9794
+// Function ID: 9795
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4481, 709, 8195, 4218, 4935, 1234, 1233, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8265, 4296, 4974, 1115, 1114, 4556, 2]
 // Exports: SegmentedControlItem
 
-// Module 9723 (SegmentedControlItem)
+// Module 9794 (SegmentedControlItem)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;

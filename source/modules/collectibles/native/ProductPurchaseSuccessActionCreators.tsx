@@ -1,10 +1,10 @@
-// Module ID: 11009
-// Function ID: 11010
+// Module ID: 11077
+// Function ID: 11078
 // Name: MODAL_KEY
-// Dependencies: [5, 4731, 11010, 2008, 2]
+// Dependencies: [5, 4763, 11078, 1896, 2]
 
-// Module 11009 (MODAL_KEY)
-import _modDef4731 from "module_4731" /* 4731 */;
+// Module 11077 (MODAL_KEY)
+import _modDef4763 from "module_4763" /* 4763 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -13,13 +13,13 @@ const result = require("set").fileFinishedImporting("modules/collectibles/native
 
 export default {
   open(closure_0) {
-    _modDef4731.pushLazy(callback(function*() {
+    _modDef4763.pushLazy(callback(function*() {
       yield v0(closure_1_2[3])(closure_1_2[2], closure_1_2.paths);
       return arg1.default;
     }), closure_0, ShopProductPurchaseSuccessModal);
   },
   close() {
-    _modDef4731.popWithKey(ShopProductPurchaseSuccessModal);
+    _modDef4763.popWithKey(ShopProductPurchaseSuccessModal);
   }
 };
 export const MODAL_KEY = "ShopProductPurchaseSuccessModal";

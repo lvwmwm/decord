@@ -1,13 +1,13 @@
-// Module ID: 10221
-// Function ID: 10222
+// Module ID: 10292
+// Function ID: 10293
 // Name: useNativeAndroidEmojiPickerEnabled
-// Dependencies: [1215, 1234, 1972, 2]
+// Dependencies: [502, 1115, 2003, 2]
 // Exports: default
 
-// Module 10221 (useNativeAndroidEmojiPickerEnabled)
-import set from "set" /* 1234 */;
-import databaseNameDefault from "databaseName" /* 1972 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
+// Module 10292 (useNativeAndroidEmojiPickerEnabled)
+import set from "set" /* 1115 */;
+import databaseNameDefault from "databaseName" /* 2003 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx");

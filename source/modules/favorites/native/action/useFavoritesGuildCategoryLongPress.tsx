@@ -1,13 +1,13 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16108
+// Function ID: 16109
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 673, 1911, 1233, 16031, 2]
+// Dependencies: [19, 1074, 1982, 1114, 16109, 2]
 // Exports: default
 
-// Module 16030 (useFavoritesGuildCategoryLongPress)
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
+// Module 16108 (useFavoritesGuildCategoryLongPress)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
 import closure_3 from "noop" /* 19 */;
-import { ChannelTypes } from "ME" /* 673 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryLongPress.tsx");

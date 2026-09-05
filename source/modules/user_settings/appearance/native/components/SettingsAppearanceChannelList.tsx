@@ -1,17 +1,17 @@
-// Module ID: 15213
-// Function ID: 15214
+// Module ID: 15289
+// Function ID: 15290
 // Name: ChannelListPreview
-// Dependencies: [19, 17, 21, 4481, 709, 15214, 15215, 15216, 4218, 1233, 15222, 8804, 15225, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 15290, 15291, 15292, 4296, 1114, 15298, 8874, 15301, 2]
 // Exports: default
 
-// Module 15213 (ChannelListPreview)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault from "SettingsAppearanceChannelListPreviewNitroUpsellComponent" /* 15225 */;
+// Module 15289 (ChannelListPreview)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault from "SettingsAppearanceChannelListPreviewNitroUpsellComponent" /* 15301 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -64,8 +64,8 @@ export default function ChannelListPreview(useGradientBackground) {
   }
   let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: null, children: null };
   items1[2] = bgSurfaceHigh;
-  const intl = animatedStyles(1233).intl;
-  obj[3] = intl.string(animatedStyles(1233).t.iGxm3x);
+  const intl = animatedStyles(1114).intl;
+  obj[3] = intl.string(animatedStyles(1114).t.iGxm3x);
   let tmp7 = null;
   if (useGradientBackground) {
     obj = { style: null, children: null };
@@ -73,10 +73,10 @@ export default function ChannelListPreview(useGradientBackground) {
     obj = { themes: null, themeIndex: null, isDimmed: false, backgroundToken: null };
     obj[0] = themes;
     obj[1] = themeIndex;
-    obj[3] = tmp4(709).colors.BACKGROUND_BASE_LOW;
-    obj[1] = callback(tmp4(15222), obj);
+    obj[3] = tmp4(576).colors.BACKGROUND_BASE_LOW;
+    obj[1] = callback(tmp4(15298), obj);
     tmp7 = callback(closure_4, obj);
-    const tmp4Result = tmp4(15222);
+    const tmp4Result = tmp4(15298);
   }
   const items2 = [tmp7, , ];
   obj1 = {
@@ -89,8 +89,8 @@ export default function ChannelListPreview(useGradientBackground) {
     showsVerticalScrollIndicator: false,
     importantForAccessibility: "no-hide-descendants"
   };
-  items2[1] = callback(animatedStyles(8804).FlashList, obj1);
+  items2[1] = callback(animatedStyles(8874).FlashList, obj1);
   items2[2] = callback(SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault, { visible: isNitroLocked, theme: themes[themeIndex] });
   obj[4] = items2;
-  return closure_6(_modDef4218.View, obj);
+  return closure_6(_modDef4296.View, obj);
 };

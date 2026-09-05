@@ -1,0 +1,22 @@
+// Module ID: 545
+// Function ID: 546
+// Name: isPrototype
+// Dependencies: []
+
+// Module 545 (isPrototype)
+let closure_0 = Object.prototype;
+
+export default function isPrototype(arg0) {
+  let constructor = arg0;
+  if (arg0) {
+    constructor = arg0.constructor;
+  }
+  let prototype = typeof constructor === "function";
+  if (typeof constructor === "function") {
+    prototype = constructor.prototype;
+  }
+  if (!prototype) {
+    prototype = closure_0;
+  }
+  return arg0 === prototype;
+};

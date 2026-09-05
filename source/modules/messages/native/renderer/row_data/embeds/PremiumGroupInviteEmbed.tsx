@@ -1,17 +1,17 @@
-// Module ID: 7978
-// Function ID: 7979
+// Module ID: 8047
+// Function ID: 8048
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [4153, 4481, 709, 7877, 7979, 7980, 1233, 3016, 2]
+// Dependencies: [4232, 4560, 576, 7946, 8048, 8049, 1114, 3063, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 7978 (createPremiumGroupInviteEmbed)
+// Module 8047 (createPremiumGroupInviteEmbed)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import frozen from "frozen" /* 7877 */;
-import registerAssetDefault from "registerAsset" /* 7979 */;
-import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 7980 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;
+import ThemesDefault from "Themes" /* 576 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import frozen from "frozen" /* 7946 */;
+import registerAssetDefault from "registerAsset" /* 8048 */;
+import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 8049 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4232 */;
 
 ({ HELP_CENTER_LINK: c3, PremiumGroupInviteState: c4 } = SubscriptionStatusTypes);
 const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx");
@@ -40,7 +40,7 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     const premiumGroupInviteEmbedText = getPremiumGroupInviteEmbedText.getPremiumGroupInviteEmbedText(obj);
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
-      const intl = tmp6(1233).intl;
+      const intl = tmp6(1114).intl;
       obj = { learnMoreLinkOnClick: null };
       obj1 = { action: "bindOpenUrl", url: null, linkColor: null };
       obj1[1] = closure_3;
@@ -52,9 +52,9 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2[2] = backgroundColor;
       obj2[3] = backgroundColor;
       obj2[4] = assetUriForEmbed;
-      const intl2 = tmp6(1233).intl;
-      const formatToPartsResult = intl.formatToParts(tmp8(3016)["9VTnfI"], obj);
-      obj2[5] = intl2.string(tmp6(1233).t.oW0eUd).toUpperCase();
+      const intl2 = tmp6(1114).intl;
+      const formatToPartsResult = intl.formatToParts(tmp8(3063)["9VTnfI"], obj);
+      obj2[5] = intl2.string(tmp6(1114).t.oW0eUd).toUpperCase();
       obj2[6] = betaPillTextColor;
       obj2[7] = betaPillBackgroundColor;
       obj2[8] = body;

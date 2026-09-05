@@ -1,10 +1,10 @@
-// Module ID: 11920
-// Function ID: 11921
-// Dependencies: [11921, 7686, 2]
+// Module ID: 11988
+// Function ID: 11989
+// Dependencies: [11989, 7753, 2]
 
-// Module 11920
+// Module 11988
 import set2 from "set" /* 2 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 11921 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 11989 */;
 
 let result = set2.fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
 
@@ -39,12 +39,12 @@ export default {
     if (null == arg0) {
       return null;
     } else {
-      const nonce = _require(7686).createNonce();
+      const nonce = _require(7753).createNonce();
       const result = set.set(nonce, (arg0) => {
         set.delete(nonce);
         callback(arg0);
       });
-      const Commands = _require(11921).Commands;
+      const Commands = _require(11989).Commands;
       Commands.flushText(arg0, nonce);
     }
   },

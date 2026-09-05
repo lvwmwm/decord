@@ -1,13 +1,13 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17430
+// Function ID: 17431
 // Name: prototype
-// Dependencies: [4532, 7347, 673, 7058, 17351, 9019, 2]
+// Dependencies: [1908, 1895, 1074, 7118, 17431, 9089, 2]
 
-// Module 17350 (prototype)
-import initializeDefault from "initialize" /* 7058 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_3 from "getState" /* 7347 */;
-import { AppStates } from "ME" /* 673 */;
+// Module 17430 (prototype)
+import initializeDefault from "initialize" /* 7118 */;
+import closure_2 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_3 from "getState" /* 1895 */;
+import { AppStates } from "ME" /* 1074 */;
 
 initializeDefault;
 let prototype = function NativeOnDemandResourceManager() {

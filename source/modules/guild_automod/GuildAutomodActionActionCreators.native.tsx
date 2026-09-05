@@ -1,15 +1,15 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11861
+// Function ID: 11862
 // Name: getPromiseableActionHandlers
-// Dependencies: [19, 11794, 21, 4731, 11798, 2008, 4866, 11801, 2]
+// Dependencies: [19, 11862, 21, 4763, 11866, 1896, 4905, 11869, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 11793 (getPromiseableActionHandlers)
+// Module 11861 (getPromiseableActionHandlers)
 import noopAll from "noop" /* 19 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import _modDef4866 from "module_4866" /* 4866 */;
-import AutomodEventType from "AutomodEventType" /* 11794 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import _modDef4905 from "module_4905" /* 4905 */;
+import AutomodEventType from "AutomodEventType" /* 11862 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -21,7 +21,7 @@ export const getPromiseableActionHandlers = function getPromiseableActionHandler
   return { [closure_3.BLOCK_MESSAGE]: null, [closure_3.FLAG_TO_CHANNEL]: null, [closure_3.USER_COMMUNICATION_DISABLED]: null };
 };
 export const openSubmitFeedback = function openSubmitFeedback(messageId, content, decisionId, channel) {
-  let obj = _modDef4731;
+  let obj = _modDef4763;
   obj = {
     onCloseModal() {
       callback(table[3]).popWithKey(closure_4);
@@ -29,7 +29,7 @@ export const openSubmitFeedback = function openSubmitFeedback(messageId, content
     automodDecision: obj
   };
   obj = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(asyncRequireImpl(11798, dependencyMap.paths), obj, closure_4);
+  obj.pushLazy(asyncRequireImpl(11866, dependencyMap.paths), obj, closure_4);
 };
 export function openRaidResolveModal() {
 
@@ -39,7 +39,7 @@ export function openConfirmRemoveMentionRaid(arg0) {
 }
 export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuarantineAlert(guildId) {
   closure_0 = guildId;
-  let obj = _modDef4866;
+  let obj = _modDef4905;
   obj = {
     importer() {
       return guildId(closure_1_2[5])(closure_1_2[7], closure_1_2.paths).then((arg0) => {

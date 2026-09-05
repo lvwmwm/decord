@@ -1,14 +1,14 @@
-// Module ID: 11913
-// Function ID: 11914
+// Module ID: 11981
+// Function ID: 11982
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4481, 1941, 1296, 709, 11914, 2]
+// Dependencies: [19, 17, 21, 4560, 1392, 1178, 576, 11982, 2]
 // Exports: default
 
-// Module 11913 (CustomTypingIndicatorGlyph)
+// Module 11981 (CustomTypingIndicatorGlyph)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -22,12 +22,12 @@ export default function CustomTypingIndicatorGlyph(config) {
   let obj = dependencyMap;
   const tmp = callback();
   const tmp2 = map;
-  dependencyMap = map(1941).getEffectiveCustomTypingIndicatorAnimation(map);
-  const obj2 = map(1941);
+  dependencyMap = map(1392).getEffectiveCustomTypingIndicatorAnimation(map);
+  const obj2 = map(1392);
   if (obj3.hasCustomTypingIndicatorEmojis(map.emojis)) {
     let items = [tmp.emojiRow, ];
     if (null == size) {
-      let PX_4 = size(709).space.PX_4;
+      let PX_4 = size(576).space.PX_4;
     } else {
       PX_4 = size / 4;
     }
@@ -42,6 +42,6 @@ export default function CustomTypingIndicatorGlyph(config) {
     tmp3(View, obj);
     const tmp4 = View;
   } else {
-    return tmp3(tmp2(1296).Ellipsis, {});
+    return tmp3(tmp2(1178).Ellipsis, {});
   }
 };

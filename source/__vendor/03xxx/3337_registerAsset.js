@@ -1,10 +1,10 @@
 // Module ID: 3337
 // Function ID: 3338
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 3337 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/game_pass_perks", scales: [1], hash: "0ed18d802f39ad8ae58ce024ccbaa690", name: "XboxGamePassPerks.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJ0bmVyX3BlcmtzL3hib3gvcGFydG5lcl9wYXNz", scales: [1], hash: "e9cf477a155345422608dbb70e462aaf", name: "ko.messages.e9cf477a155345422608dbb70e462aaf.compiled.messages", type: "jsona" });

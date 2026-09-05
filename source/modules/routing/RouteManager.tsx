@@ -1,12 +1,12 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12789
+// Function ID: 12790
 // Name: initialize
-// Dependencies: [5238, 12722, 673, 1219, 12723, 12724, 2]
+// Dependencies: [5277, 12790, 1074, 1100, 12791, 12792, 2]
 
-// Module 12721 (initialize)
-import closure_2 from "_handleConnectionOpen" /* 5238 */;
-import closure_3 from "getMatchData" /* 12722 */;
-import { Routes } from "ME" /* 673 */;
+// Module 12789 (initialize)
+import closure_2 from "_handleConnectionOpen" /* 5277 */;
+import closure_3 from "getMatchData" /* 12790 */;
+import { Routes } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 let set = arg1;
@@ -83,11 +83,11 @@ class RouteManager {
 const prototype = RouteManager.prototype;
 prototype["initialize"] = function initialize() {
   this.cleanup();
-  const history = set(1219).getHistory();
+  const history = set(1100).getHistory();
   this.unlistenHistory = history.listen(this.handleRouteChange);
-  const obj = set(1219);
+  const obj = set(1100);
   const state = closure_3.getState();
-  state.resetPath(set(1219).getHistory().location.pathname);
+  state.resetPath(set(1100).getHistory().location.pathname);
   this.unlistenKeyboardChange = closure_3.subscribe(this.handleKeybindRouteChange);
   closure_2.addChangeListener(this.handleConnectionChange);
 };
@@ -99,18 +99,18 @@ prototype["executeRouteRewrites"] = function executeRouteRewrites(location, REPL
     while (obj !== undefined) {
       let tmp11 = set;
       let tmp12 = dependencyMap;
-      let obj2 = set(1219);
+      let obj2 = set(1100);
       let tmp9Result = tmp9(location, REPLACE);
       let tmp14 = tmp9Result;
       if (null != tmp9Result) {
-        let tmp11Result = tmp11(12724);
+        let tmp11Result = tmp11(12792);
         obj = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: null };
         obj = { replacePath: null, previousPath: null };
         obj[0] = tmp9Result.path;
         obj[1] = obj2.getHistory().location.pathname;
         obj[1] = obj;
         let addBreadcrumbResult = tmp11Result.addBreadcrumb(obj);
-        tmp11Result = tmp11(1219);
+        tmp11Result = tmp11(1100);
         let replaceWithResult = tmp11Result.replaceWith(tmp9Result.path, tmp9Result.state);
         let tmp17 = obj;
         obj.return();
@@ -175,7 +175,7 @@ prototype["removeRouteRewriter"] = function removeRouteRewriter(closure_0) {
   rewrites.delete(closure_0);
 };
 prototype["getHistory"] = function getHistory() {
-  return set(1219).getHistory();
+  return set(1100).getHistory();
 };
 set = Object.create(RouteManager.prototype);
 set = new Set();

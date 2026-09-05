@@ -1,21 +1,21 @@
-// Module ID: 4583
-// Function ID: 4584
+// Module ID: 4616
+// Function ID: 4617
 // Name: destroy
-// Dependencies: [32, 5, 4545, 4584, 4585, 4586, 4590, 4, 4534, 4582, 4591, 666, 1235, 4593, 4653, 2]
+// Dependencies: [32, 5, 4585, 4617, 4618, 4619, 4623, 4, 1910, 4615, 4624, 1341, 1116, 4626, 4686, 2]
 
-// Module 4583 (destroy)
-import formatDefault from "format" /* 666 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import inject from "inject" /* 4534 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
-import onDefault from "on" /* 4585 */;
-import VideoDefault from "Video" /* 4586 */;
-import createDefault from "create" /* 4593 */;
-import sanitizeDevices from "sanitizeDevices" /* 4653 */;
+// Module 4616 (destroy)
+import PlatformTypes from "PlatformTypes" /* 1116 */;
+import formatDefault from "format" /* 1341 */;
+import inject from "inject" /* 1910 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4615 */;
+import onDefault from "on" /* 4618 */;
+import VideoDefault from "Video" /* 4619 */;
+import createDefault from "create" /* 4626 */;
+import sanitizeDevices from "sanitizeDevices" /* 4686 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
-import AudioSubsystems from "AudioSubsystems" /* 4584 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
+import AudioSubsystems from "AudioSubsystems" /* 4617 */;
 
 require = arg1;
 ({ QUEUE_METRICS_INTERVAL_MS: c5, SIDECHAIN_COMPRESSION_MAX_RATIO: closure_6, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: error, SIDECHAIN_COMPRESSION_MIN_RATIO: closure_8, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: c9, ProcessPriority: c10 } = DesktopSources);
@@ -232,6 +232,10 @@ class MediaEngineNative extends tmp4 {
     if (null != voiceEngine.setActiveSinksChangeCallback) {
       result11 = voiceEngine.setActiveSinksChangeCallback(obj.handleActiveSinksChange);
     }
+    setClipsV3Enabled = voiceEngine.setClipsV3Enabled;
+    if (setClipsV3Enabled != null) {
+      setClipsV3EnabledResult = setClipsV3Enabled(true);
+    }
     setOnClipsMlDetection = voiceEngine.setOnClipsMlDetection;
     if (setOnClipsMlDetection != null) {
       result12 = setOnClipsMlDetection((arg0) => {
@@ -241,7 +245,7 @@ class MediaEngineNative extends tmp4 {
         }
       });
     }
-    tmp36 = require("pollConnectionStats")(obj);
+    tmp37 = require("pollConnectionStats")(obj);
     closure_0 = obj;
     pollMetrics = function pollMetrics() {
       const self = this;
@@ -289,7 +293,7 @@ class MediaEngineNative extends tmp4 {
                 if (closure_1_1) {
                   c3 = 3;
                 } else {
-                  obj1 = closure_1_0(4534);
+                  obj1 = closure_1_0(1910);
                   voiceEngine = obj1.getVoiceEngine();
                   const promise = new Promise((arg0) => {
                     let pollQueueMetrics = arg0;
@@ -313,7 +317,7 @@ class MediaEngineNative extends tmp4 {
             } else if (arg0 !== 2) {
               closure_1 = arg1;
               closure_1.periodMs = closure_1_5;
-              voiceEngine.emit(closure_1_0(4582).MediaEngineEvent.VoiceQueueMetrics, closure_1);
+              voiceEngine.emit(closure_1_0(4615).MediaEngineEvent.VoiceQueueMetrics, closure_1);
               const _setTimeout = setTimeout;
               const timerId = setTimeout(dependencyMap, closure_1_5);
             }
@@ -455,11 +459,11 @@ prototype["supports"] = function supports(arg0) {
         } else if (tmp.VIDEO_BACKGROUND_FILTER === arg0) {
           let isDesktopResult = PlatformTypes.isDesktop();
           if (isDesktopResult) {
-            let tmp50Result = tmp50(4534);
+            let tmp50Result = tmp50(1910);
             isDesktopResult = tmp50Result.supportsFeature(constants6.MEDIAPIPE);
           }
           if (!isDesktopResult) {
-            tmp50Result = tmp50(4534);
+            tmp50Result = tmp50(1910);
             isDesktopResult = tmp50Result.supportsFeature(constants6.VIDEO_BACKGROUND_FILTER);
           }
           return isDesktopResult;
@@ -558,7 +562,7 @@ prototype["supports"] = function supports(arg0) {
 prototype["connect"] = function connect(arg0, arg1, videoSupported) {
   let self = this;
   self = this;
-  obj = obj(4534);
+  obj = obj(1910);
   if (!obj.supportsFeature(constants6.EXPERIMENT_CONFIG)) {
     videoSupported.experiments = undefined;
   }
@@ -569,8 +573,8 @@ prototype["connect"] = function connect(arg0, arg1, videoSupported) {
   if (flag) {
     flag = self.supports(constants4.VIDEO);
   }
-  obj = self(4593).create(arg0, arg1, videoSupported, flag);
-  obj.on(obj(4582).BaseConnectionEvent.Destroy, (arg0) => {
+  obj = self(4626).create(arg0, arg1, videoSupported, flag);
+  obj.on(obj(4615).BaseConnectionEvent.Destroy, (arg0) => {
     const connections = self.connections;
     connections.delete(arg0);
     if (self.connectionsEmpty()) {
@@ -584,29 +588,29 @@ prototype["connect"] = function connect(arg0, arg1, videoSupported) {
       const obj2 = obj(closure_1_2[8]);
     }
   });
-  obj.on(obj(4582).BaseConnectionEvent.Connected, () => {
+  obj.on(obj(4615).BaseConnectionEvent.Connected, () => {
     obj.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj));
   });
-  obj.on(obj(4582).BaseConnectionEvent.Silence, (arg0) => {
+  obj.on(obj(4615).BaseConnectionEvent.Silence, (arg0) => {
     self.emit(obj(closure_1_2[9]).MediaEngineEvent.Silence, arg0);
   });
   let connections = self.connections;
   connections.add(obj);
-  let tmpResult = tmp(4534);
+  let tmpResult = tmp(1910);
   let HIGH = videoSupported.processPriority;
   if (HIGH == null) {
     HIGH = constants.HIGH;
   }
   tmpResult.setProcessPriority(HIGH);
   if (null != videoSupported.threadPriorityConfiguration) {
-    tmpResult = tmp(4534);
+    tmpResult = tmp(1910);
     let voiceEngine = tmpResult.getVoiceEngine();
     let setNativeThreadsPriority = voiceEngine.setNativeThreadsPriority;
     if (setNativeThreadsPriority != null) {
       let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
     }
   }
-  self.emit(obj(4582).MediaEngineEvent.Connection, obj);
+  self.emit(obj(4615).MediaEngineEvent.Connection, obj);
   return obj;
 };
 prototype["shouldConnectionBroadcastVideo"] = function shouldConnectionBroadcastVideo(context) {
@@ -691,11 +695,11 @@ prototype["setAudioInputDevice"] = function setAudioInputDevice(audioInputDevice
   const _require = audioInputDeviceId;
   this.audioInputDeviceId = audioInputDeviceId;
   if (obj.supportsFeature(constants6.SET_AUDIO_DEVICE_BY_ID)) {
-    let tmpResult = tmp(4534);
+    let tmpResult = tmp(1910);
     let voiceEngine = tmpResult.getVoiceEngine();
     voiceEngine.setInputDevice(audioInputDeviceId);
   } else {
-    tmpResult = tmp(4653);
+    tmpResult = tmp(4686);
     const audioInputDevices = tmpResult.getAudioInputDevices();
     audioInputDevices.then((arr) => {
       let found = arr.find((id) => id.id === closure_0);
@@ -709,7 +713,7 @@ prototype["setAudioInputDevice"] = function setAudioInputDevice(audioInputDevice
       }
     });
   }
-  self.emit(_require(4582).MediaEngineEvent.SelectedDeviceChange, constants3.AUDIO_INPUT, this.audioInputDeviceId, audioInputDeviceId);
+  self.emit(_require(4615).MediaEngineEvent.SelectedDeviceChange, constants3.AUDIO_INPUT, this.audioInputDeviceId, audioInputDeviceId);
 };
 prototype["getAudioOutputDevices"] = function getAudioOutputDevices() {
   return sanitizeDevices.getAudioOutputDevices();
@@ -719,11 +723,11 @@ prototype["setAudioOutputDevice"] = function setAudioOutputDevice(audioOutputDev
   const _require = audioOutputDeviceId;
   this.audioOutputDeviceId = audioOutputDeviceId;
   if (obj.supportsFeature(constants6.SET_AUDIO_DEVICE_BY_ID)) {
-    let tmpResult = tmp(4534);
+    let tmpResult = tmp(1910);
     let voiceEngine = tmpResult.getVoiceEngine();
     voiceEngine.setOutputDevice(audioOutputDeviceId);
   } else {
-    tmpResult = tmp(4653);
+    tmpResult = tmp(4686);
     const audioOutputDevices = tmpResult.getAudioOutputDevices();
     audioOutputDevices.then((arr) => {
       let found = arr.find((id) => id.id === closure_0);
@@ -737,7 +741,7 @@ prototype["setAudioOutputDevice"] = function setAudioOutputDevice(audioOutputDev
       }
     });
   }
-  self.emit(_require(4582).MediaEngineEvent.SelectedDeviceChange, constants3.AUDIO_OUTPUT, this.audioOutputDeviceId, audioOutputDeviceId);
+  self.emit(_require(4615).MediaEngineEvent.SelectedDeviceChange, constants3.AUDIO_OUTPUT, this.audioOutputDeviceId, audioOutputDeviceId);
 };
 prototype["getVideoInputDevices"] = function getVideoInputDevices() {
   return sanitizeDevices.getVideoInputDevices();
@@ -805,7 +809,7 @@ prototype["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
           } else {
             closure_1_1.videoInputDeviceId = id;
             if (!obj9.supportsFeature(closure_1_18.SET_VIDEO_DEVICE_BY_ID)) {
-              obj = closure_1_0(4534);
+              obj = closure_1_0(1910);
               const voiceEngine = obj.getVoiceEngine();
               let num3 = -1;
               if (forEach != closure_1_0) {
@@ -818,7 +822,7 @@ prototype["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
             }
             if (forEach == closure_1_0) {
               dependencyMap = closure_1_15;
-              obj2 = closure_1_0(4534);
+              obj2 = closure_1_0(1910);
               const voiceEngine1 = obj2.getVoiceEngine();
               voiceEngine1.setVideoInputDevice(dependencyMap);
             }
@@ -826,7 +830,7 @@ prototype["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
               const id2 = closure_1_0.id;
             }
             const originalId = closure_1_0.originalId;
-            obj9 = closure_1_0(4534);
+            obj9 = closure_1_0(1910);
           }
         }
       } catch (tmp42) {
@@ -991,11 +995,11 @@ prototype["getDesktopSource"] = function getDesktopSource() {
 prototype["getScreenPreviews"] = function getScreenPreviews(arg0, arg1, arg2) {
   const _require = arg0;
   closure_1 = arg1;
-  let voiceEngine = _require(4534).getVoiceEngine();
+  let voiceEngine = _require(1910).getVoiceEngine();
   if (null != voiceEngine.setPreviewsUseWgc) {
     voiceEngine.setPreviewsUseWgc(arg2);
   }
-  let obj = _require(4534);
+  let obj = _require(1910);
   return new Promise((arg0) => {
     const callback = arg0;
     if (null != obj.getVoiceEngine().getScreenPreviews) {
@@ -1015,6 +1019,7 @@ prototype["getScreenPreviews"] = function getScreenPreviews(arg0, arg1, arg2) {
   });
 };
 prototype["setClipsModulePath"] = function setClipsModulePath(arg0) {
+  const result = this.registerClipsRecordingEventHandler();
   const voiceEngine = inject.getVoiceEngine();
   const setClipsModulePath = voiceEngine.setClipsModulePath;
   if (setClipsModulePath != null) {
@@ -1035,21 +1040,14 @@ prototype["setClipsSentryConfig"] = function setClipsSentryConfig(arg0, arg1, ar
     setClipsSentryConfig(arg0, arg1, arg2);
   }
 };
-prototype["setClipsV3Enabled"] = function setClipsV3Enabled(arg0) {
-  if (arg0) {
-    const self = this;
-    const result = this.registerClipsRecordingEventHandler();
-  }
+prototype["hasClipsV3Support"] = function hasClipsV3Support() {
   const voiceEngine = inject.getVoiceEngine();
-  const setClipsV3Enabled = voiceEngine.setClipsV3Enabled;
-  if (setClipsV3Enabled != null) {
-    setClipsV3Enabled(arg0);
-  }
+  return null != voiceEngine.setClipsModulePath && null != voiceEngine.setClipsRecordingEnabled && null != voiceEngine.exportClipToFile;
 };
 prototype["registerClipsRecordingEventHandler"] = function registerClipsRecordingEventHandler() {
   let self = this;
   self = this;
-  const voiceEngine = self(4534).getVoiceEngine();
+  const voiceEngine = self(1910).getVoiceEngine();
   if (!tmp) {
     self.clipsRecordingEventHandlerRegistered = true;
     const result = voiceEngine.setOnClipsRecordingEvent((arg0, arg1) => {
@@ -1106,9 +1104,6 @@ prototype["setClipsRecordingEnabled"] = function setClipsRecordingEnabled(arg0) 
     const result = setClipsRecordingEnabled(arg0);
   }
 };
-prototype["hasSetClipsRecordingEnabled"] = function hasSetClipsRecordingEnabled() {
-  return null != inject.getVoiceEngine().setClipsRecordingEnabled;
-};
 prototype["setClipBufferLength"] = function setClipBufferLength(arg0) {
   const voiceEngine = inject.getVoiceEngine();
   const setClipBufferLength = voiceEngine.setClipBufferLength;
@@ -1130,8 +1125,8 @@ prototype["getSystemSteadyClockNowMs"] = function getSystemSteadyClockNowMs() {
 };
 prototype["saveClipEx"] = function saveClipEx(arg0) {
   const _require = arg0;
-  const voiceEngine = _require(4534).getVoiceEngine();
-  let obj = _require(4534);
+  const voiceEngine = _require(1910).getVoiceEngine();
+  let obj = _require(1910);
   return new Promise((arg0, arg1) => {
     const callback = arg0;
     const saveClipEx = arg1;
@@ -1276,7 +1271,7 @@ prototype["saveScreenshot"] = function saveScreenshot(arg0, arg1, arg2, arg3, ar
   dependencyMap = arg2;
   closure_3 = arg3;
   closure_4 = arg4;
-  const voiceEngine = _require(4534).getVoiceEngine();
+  const voiceEngine = _require(1910).getVoiceEngine();
   if (null == voiceEngine.saveScreenshot) {
     let rejectResult = Promise.reject("unsupported");
   } else {
@@ -1297,27 +1292,6 @@ prototype["saveScreenshot"] = function saveScreenshot(arg0, arg1, arg2, arg3, ar
   }
   return rejectResult;
 };
-prototype["exportClip"] = function exportClip(arg0, arg1) {
-  const _require = arg0;
-  closure_1 = arg1;
-  voiceEngine = _require(voiceEngine[8]).getVoiceEngine();
-  if (null == voiceEngine.exportClip) {
-    let rejectResult = Promise.reject("unsupported");
-  } else {
-    rejectResult = new Promise((arg0, arg1) => {
-      closure_0 = arg0;
-      voiceEngine.exportClip(closure_0, closure_1, (arg0) => {
-        const items = [arg0];
-        const blob = new Blob(items);
-        return callback(blob);
-      }, arg1);
-    });
-  }
-  return rejectResult;
-};
-prototype["hasExportClipToFile"] = function hasExportClipToFile() {
-  return null != inject.getVoiceEngine().exportClipToFile;
-};
 prototype["setClipsPerfMonitoring"] = function setClipsPerfMonitoring(arg0, arg1, arg2) {
   const setClipsPerfMonitoring = inject.getVoiceEngine().setClipsPerfMonitoring;
   if (null == setClipsPerfMonitoring) {
@@ -1331,7 +1305,7 @@ prototype["exportClipToFile"] = function exportClipToFile(arg0, arg1, arg2) {
   const _require = arg0;
   closure_1 = arg1;
   dependencyMap = arg2;
-  const exportClipToFile = _require(4534).getVoiceEngine().exportClipToFile;
+  const exportClipToFile = _require(1910).getVoiceEngine().exportClipToFile;
   if (null == exportClipToFile) {
     let rejectResult = Promise.reject("unsupported");
   } else {
@@ -1355,11 +1329,11 @@ prototype["exportClipToFile"] = function exportClipToFile(arg0, arg1, arg2) {
 prototype["getWindowPreviews"] = function getWindowPreviews(arg0, arg1, arg2) {
   const _require = arg0;
   closure_1 = arg1;
-  let voiceEngine = _require(4534).getVoiceEngine();
+  let voiceEngine = _require(1910).getVoiceEngine();
   if (null != voiceEngine.setPreviewsUseWgc) {
     voiceEngine.setPreviewsUseWgc(arg2);
   }
-  const obj = _require(4534);
+  const obj = _require(1910);
   return new Promise((arg0) => {
     const callback = arg0;
     if (null != obj.getVoiceEngine().getWindowPreviews) {
@@ -1454,11 +1428,11 @@ prototype["getSingleWindowPreview"] = function getSingleWindowPreview(arg0, arg1
 };
 prototype["setAudioSubsystem"] = function setAudioSubsystem(arg0) {
   if (null != obj.getVoiceEngine().setAudioSubsystem) {
-    let tmpResult = tmp(4534);
+    let tmpResult = tmp(1910);
     const voiceEngine = tmpResult.getVoiceEngine();
     voiceEngine.setAudioSubsystem(arg0);
   } else {
-    tmpResult = tmp(4534);
+    tmpResult = tmp(1910);
     const voiceEngine1 = tmpResult.getVoiceEngine();
     const result = voiceEngine1.setUseLegacyAudioDevice(arg0 === constants2.LEGACY);
   }
@@ -1511,7 +1485,7 @@ prototype["setLoopback"] = function setLoopback(arg0, arg1) {
   let tmp = arg0;
   let obj = inject;
   if (null != obj.getVoiceEngine().setLoopback) {
-    let tmp2Result = tmp2(4534);
+    let tmp2Result = tmp2(1910);
     const voiceEngine = tmp2Result.getVoiceEngine();
     obj = { echoCancellation: null, noiseSuppression: null, automaticGainControl: null, automaticGainControlConfig: null, noiseCancellation: null, noiseCancellationDuringProcessing: null };
     ({ echoCancellation: obj4[0], noiseSuppression: obj4[1], automaticGainControlConfig } = arg1);
@@ -1524,19 +1498,19 @@ prototype["setLoopback"] = function setLoopback(arg0, arg1) {
     voiceEngine.setLoopback(tmp, obj);
   }
   const self = this;
-  tmp2Result = tmp2(4534);
+  tmp2Result = tmp2(1910);
   if (null != tmp2Result.getVoiceEngine().setEmitVADLevel2) {
-    const voiceEngine1 = tmp2(4534).getVoiceEngine();
+    const voiceEngine1 = tmp2(1910).getVoiceEngine();
     if (!tmp) {
-      tmp = self.listenerCount(tmp2(4582).MediaEngineEvent.VoiceActivity) > 0;
+      tmp = self.listenerCount(tmp2(4615).MediaEngineEvent.VoiceActivity) > 0;
     }
     voiceEngine1.setEmitVADLevel2(tmp);
-    const tmp2Result1 = tmp2(4534);
+    const tmp2Result1 = tmp2(1910);
   } else {
-    const voiceEngine2 = tmp2(4534).getVoiceEngine();
+    const voiceEngine2 = tmp2(1910).getVoiceEngine();
     let tmp6 = tmp;
     if (!tmp) {
-      tmp6 = self.listenerCount(tmp2(4582).MediaEngineEvent.VoiceActivity) > 0;
+      tmp6 = self.listenerCount(tmp2(4615).MediaEngineEvent.VoiceActivity) > 0;
     }
     obj = { echoCancellation: null, noiseSuppression: null, automaticGainControl: null, noiseCancellation: null, noiseCancellationDuringProcessing: null };
     ({ echoCancellation: obj6[0], noiseSuppression: obj6[1], automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -1547,7 +1521,7 @@ prototype["setLoopback"] = function setLoopback(arg0, arg1) {
     obj[2] = enabled1;
     ({ noiseCancellation: obj6[3], noiseCancellationDuringProcessing: obj6[4] } = arg1);
     voiceEngine2.setEmitVADLevel(tmp6, tmp, obj);
-    const tmp2Result2 = tmp2(4534);
+    const tmp2Result2 = tmp2(1910);
   }
 };
 prototype["getLoopback"] = function getLoopback() {
@@ -1649,7 +1623,7 @@ prototype["createReplayConnection"] = function createReplayConnection(arg0, arg1
   const replay = createDefault.createReplay(arg0, arg1);
   let tmp2 = null;
   if (null != replay) {
-    replay.on(self(4582).BaseConnectionEvent.Destroy, (arg0) => {
+    replay.on(self(4615).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -1659,10 +1633,10 @@ prototype["createReplayConnection"] = function createReplayConnection(arg0, arg1
     });
     let connections = self.connections;
     connections.add(replay);
-    self(4534).setProcessPriority(constants.HIGH);
-    self.emit(self(4582).MediaEngineEvent.Connection, replay);
+    self(1910).setProcessPriority(constants.HIGH);
+    self.emit(self(4615).MediaEngineEvent.Connection, replay);
     tmp2 = replay;
-    const obj3 = self(4534);
+    const obj3 = self(1910);
   }
   return tmp2;
 };
@@ -1677,7 +1651,7 @@ prototype["setMaxSyncDelayOverride"] = function setMaxSyncDelayOverride(arg0) {
 };
 prototype["applyMediaFilterSettings"] = function applyMediaFilterSettings(arg0) {
   const _require = arg0;
-  const voiceEngine = _require(4534).getVoiceEngine();
+  const voiceEngine = _require(1910).getVoiceEngine();
   ({ applyMediaFilterSettings, applyMediaFilterSettingsWithCallback } = voiceEngine);
   if (null != applyMediaFilterSettingsWithCallback) {
     let resolved = new Promise((arg0) => {
@@ -1716,20 +1690,20 @@ prototype["startLocalAudioRecording"] = function startLocalAudioRecording(arg0) 
 };
 prototype["stopLocalAudioRecording"] = function stopLocalAudioRecording(arg0) {
   const _require = arg0;
-  const voiceEngine = _require(4534).getVoiceEngine();
+  const voiceEngine = _require(1910).getVoiceEngine();
   const stopLocalAudioRecording = voiceEngine.stopLocalAudioRecording;
   if (stopLocalAudioRecording != null) {
     const result = stopLocalAudioRecording((arg0, arg1) => {
       callback(arg0, arg1);
     });
   }
-  let tmp5 = this.listenerCount(tmp(4582).MediaEngineEvent.VoiceActivity) > 0;
+  let tmp5 = this.listenerCount(tmp(4615).MediaEngineEvent.VoiceActivity) > 0;
   if (tmp5) {
-    let tmpResult = tmp(4534);
+    let tmpResult = tmp(1910);
     tmp5 = null != tmpResult.getVoiceEngine().setEmitVADLevel2;
   }
   if (tmp5) {
-    tmpResult = tmp(4534);
+    tmpResult = tmp(1910);
     const voiceEngine1 = tmpResult.getVoiceEngine();
     voiceEngine1.setEmitVADLevel2(true);
   }
@@ -1902,7 +1876,7 @@ prototype["getDeviceAudioEffects"] = function getDeviceAudioEffects(arg0) {
 prototype["watchdogTick"] = function watchdogTick() {
   const self = this;
   const _require = false;
-  const voiceEngine = _require(4534).getVoiceEngine();
+  const voiceEngine = _require(1910).getVoiceEngine();
   voiceEngine.pingVoiceThread(() => {
     c0 = true;
     self.consecutiveWatchdogFailures = 0;

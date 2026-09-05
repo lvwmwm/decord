@@ -1,55 +1,55 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12287
+// Function ID: 12288
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4473, 5419, 1386, 1991, 673, 1924, 21, 4481, 709, 644, 4681, 4477, 1233, 1296, 11736, 5542, 1431, 4134, 12220, 12217, 4218, 4482, 12221, 5084, 1219, 12218, 7162, 2]
+// Dependencies: [32, 19, 17, 4552, 5459, 1957, 2021, 1074, 1374, 21, 4560, 576, 563, 4713, 4556, 1114, 1178, 11804, 5587, 1396, 4213, 12288, 12285, 4296, 4561, 12289, 5123, 1100, 12286, 7222, 2]
 
-// Module 12219 (ActionChannelInfo)
-import ThemesDefault from "Themes" /* 709 */;
-import registerAssetDefault from "registerAsset" /* 11736 */;
-import newMemberActionFromServer from "newMemberActionFromServer" /* 12217 */;
-import useMemberActionsForChannel from "useMemberActionsForChannel" /* 12220 */;
+// Module 12287 (ActionChannelInfo)
+import ThemesDefault from "Themes" /* 576 */;
+import registerAssetDefault from "registerAsset" /* 11804 */;
+import newMemberActionFromServer from "newMemberActionFromServer" /* 12285 */;
+import useMemberActionsForChannel from "useMemberActionsForChannel" /* 12288 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_7 from "getEmojiToGroupId" /* 5419 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import { Routes } from "ME" /* 673 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_7 from "getEmojiToGroupId" /* 5459 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "trackCommunicationDisabled" /* 2021 */;
+import { Routes } from "ME" /* 1074 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ActionChannelInfo(action) {
   action = action.action;
-  let obj = action(644);
+  let obj = action(563);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getChannel(action.channelId));
   if (null == stateFromStores) {
     obj = { variant: "text-xxs/normal", color: "text-default", children: null };
-    const intl2 = tmp(1233).intl;
+    const intl2 = tmp(1114).intl;
     obj = { channelName: null };
-    const intl3 = tmp(1233).intl;
-    obj[0] = intl3.string(tmp(1233).t.J90oLW);
-    obj[2] = intl2.format(tmp(1233).t.MkzlDL, obj);
+    const intl3 = tmp(1114).intl;
+    obj[0] = intl3.string(tmp(1114).t.J90oLW);
+    obj[2] = intl2.format(tmp(1114).t.MkzlDL, obj);
     obj1 = obj;
   } else {
     obj1 = { variant: "text-xxs/normal", color: "text-default", children: null };
-    const intl = tmp(1233).intl;
+    const intl = tmp(1114).intl;
     const obj2 = { channelName: null };
     obj2[0] = tmp4;
-    obj1[2] = intl.format(tmp(1233).t.MkzlDL, obj2);
+    obj1[2] = intl.format(tmp(1114).t.MkzlDL, obj2);
   }
-  return closure_12(action(4477).Text, obj1);
+  return closure_12(action(4556).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
   let id;
   const tmp = callback2();
   let obj = { style: tmp.emojiPlaceholder, children: null };
-  obj = { size: id(1296).Icon.Sizes.REFRESH_SMALL_16, source: registerAssetDefault };
-  obj[1] = callback(id(1296).Icon, obj);
+  obj = { size: id(1178).Icon.Sizes.REFRESH_SMALL_16, source: registerAssetDefault };
+  obj[1] = callback(id(1178).Icon, obj);
   const tmp6 = callback(View, obj);
   id = undefined;
   if (emoji != null) {
@@ -60,7 +60,7 @@ function ChannelActionEmoji(emoji) {
   }
   const items = [closure_7];
   const items1 = [id];
-  const stateFromStores = id(644).useStateFromStores(items, () => {
+  const stateFromStores = id(563).useStateFromStores(items, () => {
     let customEmojiById = null;
     if (null != id) {
       customEmojiById = closure_1_7.getCustomEmojiById(tmp);
@@ -71,8 +71,8 @@ function ChannelActionEmoji(emoji) {
     obj = { style: null, source: null, resizeMode: "contain" };
     obj[0] = tmp.emoji;
     obj1 = { uri: null };
-    let tmp5Result = tmp5(5542);
-    tmp5Result = tmp5(1431);
+    let tmp5Result = tmp5(5587);
+    tmp5Result = tmp5(1396);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
     obj2[2] = EMOJI_URL_BASE_SIZE;
@@ -82,15 +82,15 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result1 = tmp5(4134);
+      const tmp5Result1 = tmp5(4213);
       tmp2Result = tmp6;
       if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
         obj3[0] = tmp.textEmoji;
         obj3[2] = name;
-        tmp2Result = tmp2(tmp3(4477).Text, obj3);
+        tmp2Result = tmp2(tmp3(4556).Text, obj3);
       }
-      tmp5Result2 = tmp5(4134);
+      tmp5Result2 = tmp5(4213);
     }
   }
   return tmp2Result;
@@ -375,10 +375,10 @@ let closure_18 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_19 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(7162);
+  let obj = channel(7222);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [closure_9];
-  const stateFromStores = channel(644).useStateFromStores(items, () => {
+  const stateFromStores = channel(563).useStateFromStores(items, () => {
     const selfMember = closure_1_9.getSelfMember(channel.guild_id);
     let isPending;
     if (selfMember != null) {
@@ -386,7 +386,7 @@ const memoResult = importAllResult.memo((channel) => {
     }
     return true === isPending;
   });
-  const obj2 = channel(644);
+  const obj2 = channel(563);
   let tmp3 = null;
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;

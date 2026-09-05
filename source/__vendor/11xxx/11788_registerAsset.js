@@ -1,0 +1,10 @@
+// Module ID: 11788
+// Function ID: 11789
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 11788 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "01cd25a11a733a16463d72c98cca83b7", name: "CloudIcon", type: "png" });

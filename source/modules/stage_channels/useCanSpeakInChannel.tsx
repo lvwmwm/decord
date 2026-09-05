@@ -1,14 +1,14 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9583
+// Function ID: 9584
 // Name: useCanCurrentUserSpeakInChannel
-// Dependencies: [1215, 586, 4675, 2]
+// Dependencies: [502, 504, 4707, 2]
 // Exports: default
 
-// Module 9512 (useCanCurrentUserSpeakInChannel)
-import initialize from "initialize" /* 586 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4675 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4675 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
+// Module 9583 (useCanCurrentUserSpeakInChannel)
+import initialize from "initialize" /* 504 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4707 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4707 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");

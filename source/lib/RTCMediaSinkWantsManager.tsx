@@ -1,20 +1,20 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13805
+// Function ID: 13806
 // Name: getDefaultWants
-// Dependencies: [32, 1215, 673, 4545, 684, 4843, 13731, 4585, 4596, 4365, 9538, 11, 12, 1234, 640, 4582, 2]
+// Dependencies: [32, 502, 1074, 4585, 1090, 4882, 13806, 4618, 4629, 4447, 9609, 11, 12, 1115, 558, 4615, 2]
 
-// Module 13730 (getDefaultWants)
+// Module 13805 (getDefaultWants)
 import applyDefault from "apply" /* 12 */;
-import setDefault from "set" /* 684 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
-import onDefault from "on" /* 4585 */;
-import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 9538 */;
-import getBrowserInvertedWantsConfig from "getBrowserInvertedWantsConfig" /* 13731 */;
+import setDefault from "set" /* 1090 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4615 */;
+import onDefault from "on" /* 4618 */;
+import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 9609 */;
+import getBrowserInvertedWantsConfig from "getBrowserInvertedWantsConfig" /* 13806 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import { VideoToggleState } from "ME" /* 673 */;
-import { SimulcastOverrideQuality } from "DesktopSources" /* 4545 */;
-import num2 from "num2" /* 4843 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import { VideoToggleState } from "ME" /* 1074 */;
+import { SimulcastOverrideQuality } from "DesktopSources" /* 4585 */;
+import num2 from "num2" /* 4882 */;
 
 require = arg1;
 function getDefaultWants(arg0) {
@@ -706,7 +706,7 @@ prototype["reset"] = function reset() {
     obj[0] = c7;
   }
   self.latestWants = obj;
-  const WindowVisibilityVideoManager = tmp3(9538).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp3(9609).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(isIncomingVideoEnabled.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {

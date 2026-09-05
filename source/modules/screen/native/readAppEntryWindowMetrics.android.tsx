@@ -1,12 +1,12 @@
-// Module ID: 1892
-// Function ID: 1893
+// Module ID: 1876
+// Function ID: 1877
 // Name: readWindowSizeForAppEntry
-// Dependencies: [668, 2]
+// Dependencies: [1343, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry
 
-// Module 1892 (readWindowSizeForAppEntry)
+// Module 1876 (readWindowSizeForAppEntry)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 668 */;
+import enforcingDefault from "enforcing" /* 1343 */;
 
 const result = set.fileFinishedImporting("modules/screen/native/readAppEntryWindowMetrics.android.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12316
+// Function ID: 12317
 // Name: _addDirectoryGuildEntry
-// Dependencies: [5, 12235, 12237, 673, 633, 706, 527, 4721, 500, 2]
+// Dependencies: [5, 12303, 12305, 1074, 551, 573, 1272, 4753, 1250, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 12248 (_addDirectoryGuildEntry)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef4721 from "module_4721" /* 4721 */;
+// Module 12316 (_addDirectoryGuildEntry)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _modDef4753 from "module_4753" /* 4753 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getSearchState" /* 12235 */;
-import { DirectoryEntryCategories } from "DirectoryEntryTypes" /* 12237 */;
-import { Endpoints } from "ME" /* 673 */;
-import importDefaultResult1 from "debounce" /* 633 */;
+import closure_4 from "getSearchState" /* 12303 */;
+import { DirectoryEntryCategories } from "DirectoryEntryTypes" /* 12305 */;
+import { Endpoints } from "ME" /* 1074 */;
+import importDefaultResult1 from "debounce" /* 551 */;
 
 let closure_0 = arg1;
 function _addDirectoryGuildEntry() {
@@ -71,7 +71,7 @@ function _addDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback2(4721);
+              let obj7 = callback2(4753);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
               obj2[0] = c6.DIRECTORY_CHANNEL_ENTRY(callback, callback2);
               const obj3 = { description: null, primary_category_id: null };
@@ -79,14 +79,14 @@ function _addDirectoryGuildEntry() {
               obj3[1] = UNCATEGORIZED;
               obj2[1] = obj3;
               const obj4 = { event: null, properties: null };
-              obj4[0] = callback(500).NetworkActionNames.DIRECTORY_GUILD_ENTRY_CREATE;
+              obj4[0] = callback(1250).NetworkActionNames.DIRECTORY_GUILD_ENTRY_CREATE;
               const obj5 = { directory_channel_id: null, guild_id: null, primary_category_id: null };
               obj5[0] = callback;
               obj5[1] = callback2;
               obj5[2] = UNCATEGORIZED;
               obj4[1] = obj5;
               obj2[2] = obj4;
-              obj2[3] = callback(527).rejectWithMigratedError();
+              obj2[3] = callback(1272).rejectWithMigratedError();
               c6 = 2;
               c7 = 1;
               const obj6 = { value: null, done: false };
@@ -103,7 +103,7 @@ function _addDirectoryGuildEntry() {
             return obj7;
           } else {
             body = arg1;
-            obj = callback2(706);
+            obj = callback2(573);
             const obj8 = { type: "GUILD_DIRECTORY_ENTRY_CREATE", channelId: null, entry: null };
             obj8[1] = callback;
             obj8[2] = body.body;
@@ -186,14 +186,14 @@ function _updateDirectoryEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj2 = { url: null, body: null, rejectWithError: null };
               obj2[0] = c6.DIRECTORY_CHANNEL_ENTRY(callback, callback2);
               const obj3 = { description: null, primary_category_id: null };
               obj3[0] = dependencyMap;
               obj3[1] = UNCATEGORIZED;
               obj2[1] = obj3;
-              obj2[2] = callback(527).rejectWithMigratedError();
+              obj2[2] = callback(1272).rejectWithMigratedError();
               c6 = 2;
               c7 = 1;
               const obj4 = { value: null, done: false };
@@ -210,7 +210,7 @@ function _updateDirectoryEntry() {
             return obj5;
           } else {
             body = arg1;
-            obj = callback2(706);
+            obj = callback2(573);
             const obj6 = { type: "GUILD_DIRECTORY_ENTRY_UPDATE", channelId: null, entry: null };
             obj6[1] = callback;
             obj6[2] = body.body;
@@ -501,9 +501,9 @@ export const addDirectoryGuildEntry = function addDirectoryGuildEntry(c0, id, c3
   return applyArgumentsResult;
 };
 export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
-  let obj = _modDef4721;
+  let obj = _modDef4753;
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId), trackedActionData: null, rejectWithError: true };
-  obj = { event: callback(500).NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
+  obj = { event: callback(1250).NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
   obj[1] = obj;
   obj.delete(obj);
   dispatcherDefault.dispatch({ type: "GUILD_DIRECTORY_ENTRY_DELETE", channelId, guildId });

@@ -1,12 +1,12 @@
-// Module ID: 7067
-// Function ID: 7068
+// Module ID: 7127
+// Function ID: 7128
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 7068, 586, 7069, 2]
+// Dependencies: [19, 7128, 504, 7129, 2]
 // Exports: default
 
-// Module 7067 (useGuildRoleMemberCounts)
+// Module 7127 (useGuildRoleMemberCounts)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getRoleMemberCount" /* 7068 */;
+import closure_4 from "getRoleMemberCount" /* 7128 */;
 
 const require = arg1;
 let closure_5 = {};
@@ -20,7 +20,7 @@ export default function useGuildRoleMemberCounts(arg0) {
   }
   const items = [closure_4];
   const items1 = [arg0, num];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_4.getRoleMemberCount(closure_0));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_1_4.getRoleMemberCount(closure_0));
   const effect = React.useEffect(() => {
     if (null != closure_0) {
       let tmp4 = null != tmp3;

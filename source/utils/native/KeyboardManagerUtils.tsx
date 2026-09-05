@@ -1,13 +1,13 @@
-// Module ID: 1890
-// Function ID: 1891
+// Module ID: 1874
+// Function ID: 1875
 // Name: dismissGlobalKeyboard
-// Dependencies: [17, 1234, 1891, 2]
+// Dependencies: [17, 1115, 1875, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1890 (dismissGlobalKeyboard)
+// Module 1874 (dismissGlobalKeyboard)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 1891 */;
+import enforcingDefault from "enforcing" /* 1875 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let result = set.fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");

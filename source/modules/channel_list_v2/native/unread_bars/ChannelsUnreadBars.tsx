@@ -1,25 +1,25 @@
-// Module ID: 16103
-// Function ID: 16104
+// Module ID: 16181
+// Function ID: 16182
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4473, 4122, 1386, 7569, 4496, 4709, 10047, 4710, 21, 4481, 7461, 4943, 7012, 15024, 633, 640, 586, 4218, 16054, 6885, 4449, 4450, 16104, 2]
+// Dependencies: [32, 19, 17, 4552, 4201, 1957, 7636, 4575, 4741, 10118, 4742, 21, 4560, 7528, 4982, 7072, 15100, 551, 558, 504, 4296, 16132, 6945, 4528, 4529, 16182, 2]
 
-// Module 16103 (shouldSkipSection)
-import getFontScale from "getFontScale" /* 4943 */;
-import renderDefaultEmpty from "renderDefaultEmpty" /* 7012 */;
-import computeSubtitle from "computeSubtitle" /* 7461 */;
+// Module 16181 (shouldSkipSection)
+import getFontScale from "getFontScale" /* 4982 */;
+import renderDefaultEmpty from "renderDefaultEmpty" /* 7072 */;
+import computeSubtitle from "computeSubtitle" /* 7528 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_7 from "storeThread" /* 4122 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "updateGuildUnreadSentinel" /* 7569 */;
-import closure_10 from "generateOldThreadCutoff" /* 4496 */;
-import closure_11 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { getScaledChannelRowHeight } from "hairlineWidth" /* 10047 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_7 from "storeThread" /* 4201 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 7636 */;
+import closure_10 from "generateOldThreadCutoff" /* 4575 */;
+import closure_11 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { getScaledChannelRowHeight } from "hairlineWidth" /* 10118 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function shouldSkipSection(diff1) {
@@ -148,7 +148,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(7012).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(7072).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;

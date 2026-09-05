@@ -1,12 +1,12 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6216
+// Function ID: 6217
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6161 (metadata)
+// Module 6216 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LanternSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/9c801bb664e808d65b723ef8794514613e9ca9cd105d25605de5c62a5c739dcd.png";
-export const metadata = { fileBytes: 33318 };
+export default "https://cdn.discordapp.com/assets/content/78dce9609354d4b56d6c8c765b91178eb0b2a1ff2f531cb2ea3a0d6802cf7383.png";
+export const metadata = { fileBytes: 33218 };

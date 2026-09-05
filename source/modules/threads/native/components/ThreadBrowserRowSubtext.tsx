@@ -1,23 +1,23 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16706
+// Function ID: 16707
 // Name: MessageContent
-// Dependencies: [19, 17, 4473, 1991, 1921, 7244, 673, 502, 21, 4481, 709, 586, 7713, 4965, 5475, 4477, 1233, 4325, 7249, 4754, 11, 1296, 7819, 7892, 2]
+// Dependencies: [19, 17, 4552, 2021, 1371, 7306, 1074, 1085, 21, 4560, 576, 504, 7781, 5004, 5520, 4556, 1114, 4404, 7311, 4793, 11, 1178, 7888, 7961, 2]
 // Exports: ThreadSubtext
 
-// Module 16629 (MessageContent)
+// Module 16706 (MessageContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4754 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4965 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4793 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5004 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "updateState" /* 7244 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "updateState" /* 7306 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function MessageContent(arg0) {
@@ -27,10 +27,10 @@ function MessageContent(arg0) {
   c3 = undefined;
   c4 = undefined;
   closure_5 = undefined;
-  let obj = message(7249);
+  let obj = message(7311);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
-  obj1 = message(586);
+  obj1 = message(504);
   const items1 = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items1, () => {
     let author = closure_1_7.getUser(message.author.id);
@@ -41,19 +41,19 @@ function MessageContent(arg0) {
   });
   const tmp = callback3();
   const items2 = [closure_5];
-  importDefault = message(586).useStateFromStores(items2, () => roleStyle.roleStyle);
-  const obj3 = message(586);
+  importDefault = message(504).useStateFromStores(items2, () => roleStyle.roleStyle);
+  const obj3 = message(504);
   ({ nick: c2, colorString: c3, colorStrings: c4 } = useNullableMessageAuthorDefault(message));
   let tmp4 = useNullableMessageAuthorDefault(message);
   const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(message.id);
   const obj4 = DISCORD_EPOCHDefault;
-  const timestampString = message(7713).getTimestampString(extractTimestampResult);
-  const obj5 = message(7713);
-  const timestampAccessibilityLabel = message(7713).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(7781).getTimestampString(extractTimestampResult);
+  const obj5 = message(7781);
+  const timestampAccessibilityLabel = message(7781).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl = message(1233).intl;
+  const intl = message(1114).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
       let str = c2;
@@ -79,8 +79,8 @@ function MessageContent(arg0) {
       return closure_1_9(message(_undefined[21]).LegacyText, { children: callback(_undefined[22])(message, { formatInline: true, allowGameMentions: true }).content }, arg1);
     }
   };
-  obj[6] = intl.format(message(1233).t.M79KAH, obj1);
-  obj[3] = callback(message(4477).Text, obj);
+  obj[6] = intl.format(message(1114).t.M79KAH, obj1);
+  obj[3] = callback(message(4556).Text, obj);
   return callback(SubstringRow, obj);
 }
 function SubstringRow(arg0) {
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(7892);
+  let obj = usernameColor(7961);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp5 = !shouldShowRoleDot;
   if (!shouldShowRoleDot) {
@@ -144,7 +144,7 @@ function Username(usernameColor) {
     obj = { color: null, colors: null, size: "small" };
     obj[0] = roleColor;
     obj[1] = roleColors;
-    shouldShowRoleDot = callback(tmp3(1296).RoleDot, obj);
+    shouldShowRoleDot = callback(tmp3(1178).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
   let tmp10;
@@ -152,7 +152,7 @@ function Username(usernameColor) {
     tmp10 = processColorStringsArray;
   }
   obj = { children: null };
-  items1[1] = callback(usernameColor(4477).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp10, style: memo, children: nickname });
+  items1[1] = callback(usernameColor(4556).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp10, style: memo, children: nickname });
   obj[0] = items1;
   return closure_10(closure_11, obj);
 }
@@ -260,11 +260,11 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   thread = thread.thread;
   let id;
   id = thread.id;
-  let obj = id(586);
+  let obj = id(504);
   items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(7713).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(7781).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -275,9 +275,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  let tmpResult = tmp(7713);
+  let tmpResult = tmp(7781);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  tmpResult = tmp(7713);
+  tmpResult = tmp(7781);
   obj = { thread, timestamp: timestampString, accessibilityLabel: tmpResult.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

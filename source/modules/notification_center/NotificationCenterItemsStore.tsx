@@ -1,18 +1,18 @@
-// Module ID: 7572
-// Function ID: 7573
+// Module ID: 7639
+// Function ID: 7640
 // Name: _validate
-// Dependencies: [4394, 7459, 4131, 4130, 1921, 673, 7573, 4745, 7574, 11, 586, 706, 2]
+// Dependencies: [4476, 7526, 4210, 4209, 1371, 1074, 7640, 4783, 7641, 11, 504, 573, 2]
 
-// Module 7572 (_validate)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import NotificationCenterScenes from "NotificationCenterScenes" /* 7573 */;
-import closure_3 from "getHash" /* 4394 */;
-import { isGuildEventEnded } from "scheduledEventSort" /* 7459 */;
-import closure_5 from "hasFlag" /* 4131 */;
-import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { RelationshipTypes } from "ME" /* 673 */;
+// Module 7639 (_validate)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import NotificationCenterScenes from "NotificationCenterScenes" /* 7640 */;
+import closure_3 from "getHash" /* 4476 */;
+import { isGuildEventEnded } from "scheduledEventSort" /* 7526 */;
+import closure_5 from "hasFlag" /* 4210 */;
+import closure_6 from "markAllUserIdListsStale" /* 4209 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { RelationshipTypes } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -22,7 +22,7 @@ function _validate(id) {
 function toNotificationCenterItem(item_enum) {
   let tmp3 = item_enum.item_enum === NotificationCenterScenes.ItemEnum.FIRST_MESSAGE;
   if (tmp3) {
-    tmp3 = item_enum.type === tmp(7573).NotificationCenterItems.LIFECYCLE_ITEM;
+    tmp3 = item_enum.type === tmp(7640).NotificationCenterItems.LIFECYCLE_ITEM;
   }
   if (tmp3) {
     item_enum.deeplink = "https://discord.com/feature/composeMessage";
@@ -32,8 +32,8 @@ function toNotificationCenterItem(item_enum) {
   obj.kind = "notification-center-item";
   let messageRecord;
   if (null != item_enum.message) {
-    messageRecord = tmp(4745).createMessageRecord(item_enum.message);
-    const tmpResult = tmp(4745);
+    messageRecord = tmp(4783).createMessageRecord(item_enum.message);
+    const tmpResult = tmp(4783);
   }
   obj.message = messageRecord;
   let id;
@@ -48,7 +48,7 @@ function handleAddItem(type) {
     const item2 = type.item;
     let tmp3 = item2.item_enum === NotificationCenterScenes.ItemEnum.FIRST_MESSAGE;
     if (tmp3) {
-      tmp3 = item2.type === tmp(7573).NotificationCenterItems.LIFECYCLE_ITEM;
+      tmp3 = item2.type === tmp(7640).NotificationCenterItems.LIFECYCLE_ITEM;
     }
     if (tmp3) {
       item2.deeplink = "https://discord.com/feature/composeMessage";
@@ -58,8 +58,8 @@ function handleAddItem(type) {
     obj.kind = "notification-center-item";
     let messageRecord;
     if (null != item2.message) {
-      messageRecord = tmp(4745).createMessageRecord(item2.message);
-      const tmpResult = tmp(4745);
+      messageRecord = tmp(4783).createMessageRecord(item2.message);
+      const tmpResult = tmp(4783);
     }
     obj.message = messageRecord;
     let id;
@@ -197,7 +197,7 @@ function handleRelationshipAddOrUpdate(relationship) {
     });
   }
 }
-let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: null, notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "CONNECTION_OPEN", notifCenterTabFocused: "WRITE_CACHES" };
+let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: null, notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "processingStart", notifCenterTabFocused: null };
 let set = new Set();
 obj[6] = set;
 obj[7] = [];
@@ -374,7 +374,7 @@ obj = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "CONNECTION_OPEN", notifCenterTabFocused: "WRITE_CACHES" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "processingStart", notifCenterTabFocused: null };
     if (flag) {
       let prop = obj.notifCenterLocalItems;
     } else {
@@ -502,7 +502,7 @@ obj = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "CONNECTION_OPEN", notifCenterTabFocused: "WRITE_CACHES" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "processingStart", notifCenterTabFocused: null };
     if (flag) {
       let prop = obj.notifCenterLocalItems;
     } else {
@@ -559,7 +559,7 @@ obj = {
       const user = authStore.getUser(id);
       if (tmp6) {
         const items = [];
-        obj = id(7574);
+        obj = id(7641);
         items[HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0)] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         obj.notifCenterLocalItems = items;
         const arraySpreadResult = HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0);
@@ -653,7 +653,7 @@ obj = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "CONNECTION_OPEN", notifCenterTabFocused: "WRITE_CACHES" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: null, paginationHasMore: true, paginationCursor: "flex", notifCenterActive: "processingStart", notifCenterTabFocused: null };
     if (flag) {
       let prop = obj.notifCenterLocalItems;
     } else {
@@ -665,7 +665,7 @@ obj = {
     newBuild = newBuild.newBuild;
     let _require;
     if (null !== newBuild) {
-      obj = _require(7574);
+      obj = _require(7641);
       const result = obj.mobileNativeUpdateAvailableLocalItem(newBuild);
       _require = result;
       const prop = obj.notifCenterLocalItems;

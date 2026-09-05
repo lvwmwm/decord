@@ -1,13 +1,13 @@
-// Module ID: 10217
-// Function ID: 10218
+// Module ID: 10288
+// Function ID: 10289
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5419, 702, 1369, 2]
+// Dependencies: [32, 19, 5459, 1249, 1940, 2]
 // Exports: default
 
-// Module 10217 (useEmojiPickerSearchState)
+// Module 10288 (useEmojiPickerSearchState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5419 */;
+import closure_4 from "getEmojiToGroupId" /* 5459 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
@@ -29,7 +29,7 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2, arg3) {
         if (":" === arr[0]) {
           substr = arr.slice(1);
         }
-        const FrecencyUserSettingsActionCreators = callback(1369).FrecencyUserSettingsActionCreators;
+        const FrecencyUserSettingsActionCreators = callback(1940).FrecencyUserSettingsActionCreators;
         const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
         let obj = { channel: null, query: null, count: 0, intention: null, bypassPremiumEmojiEntitlement: null };
         obj[0] = callback;
@@ -37,13 +37,13 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2, arg3) {
         obj[3] = closure_2;
         obj[4] = closure_3;
         dependencyMap = ref.searchWithoutFetchingLatest(obj);
-        callback(702).batchUpdates(() => {
+        callback(1249).batchUpdates(() => {
           closure_1_4.current = closure_0;
           closure_1_5(closure_1);
         });
-        const obj3 = callback(702);
+        const obj3 = callback(1249);
       } else {
-        obj = callback(702);
+        obj = callback(1249);
         obj.batchUpdates(() => {
           closure_4.current = "";
           callback(null);

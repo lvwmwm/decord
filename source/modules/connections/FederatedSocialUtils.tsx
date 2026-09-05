@@ -1,12 +1,12 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9284
+// Function ID: 9285
 // Name: validateHandle
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 9213 (validateHandle)
+// Module 9284 (validateHandle)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const PlatformTypes = ME.PlatformTypes;
 const result = set.fileFinishedImporting("modules/connections/FederatedSocialUtils.tsx");

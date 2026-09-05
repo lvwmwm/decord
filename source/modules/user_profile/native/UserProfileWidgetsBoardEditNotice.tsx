@@ -1,18 +1,18 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13064
+// Function ID: 13065
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 1383, 21, 4481, 709, 8172, 10554, 1372, 4436, 4477, 1233, 5084, 5635, 2]
+// Dependencies: [19, 17, 1954, 21, 4560, 576, 8241, 10625, 1943, 4515, 4556, 1114, 5123, 5680, 2]
 // Exports: default
 
-// Module 12996 (UserProfileWidgetsBoardEditNotice)
+// Module 13064 (UserProfileWidgetsBoardEditNotice)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8172 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10554 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useSharedStylesDefault from "useSharedStyles" /* 8241 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10625 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -30,7 +30,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
   const _require = callback2();
   importDefault = useSharedStylesDefault();
   let obj = { contentTypes: null, bypassAutoDismiss: true, children: null };
-  let items = [_require(1372).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
+  let items = [_require(1943).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
   obj[0] = items;
   obj[2] = function children(markAsDismissed) {
     markAsDismissed = markAsDismissed.markAsDismissed;

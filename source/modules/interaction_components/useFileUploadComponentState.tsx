@@ -1,13 +1,13 @@
-// Module ID: 17316
-// Function ID: 17317
+// Module ID: 17396
+// Function ID: 17397
 // Name: useFileUploadComponentState
-// Dependencies: [19, 4862, 4861, 8043, 38, 1954, 2]
+// Dependencies: [19, 4901, 4900, 8112, 38, 1894, 2]
 // Exports: useFileUploadComponentState
 
-// Module 17316 (useFileUploadComponentState)
+// Module 17396 (useFileUploadComponentState)
 import closure_3 from "noop" /* 19 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_5 from "map" /* 4861 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_5 from "map" /* 4900 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");

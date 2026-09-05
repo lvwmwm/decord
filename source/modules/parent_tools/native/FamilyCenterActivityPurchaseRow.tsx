@@ -1,18 +1,18 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14901
+// Function ID: 14902
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4481, 709, 8104, 14827, 7174, 14828, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8173, 14902, 7234, 14903, 4556, 2]
 // Exports: default
 
-// Module 14826 (FamilyCenterActivityPurchaseRow)
+// Module 14901 (FamilyCenterActivityPurchaseRow)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8104 */;
-import getCollectibleTypeName from "getCollectibleTypeName" /* 14827 */;
-import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14828 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8173 */;
+import getCollectibleTypeName from "getCollectibleTypeName" /* 14902 */;
+import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14903 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(7174);
+    const tmp5Result = tmp5(7234);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[0] = tmp.container;
     obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj[0] = displayName;
-    const formatPriceResult = tmp5(7174).formatPrice(total, currency);
+    const formatPriceResult = tmp5(7234).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }
@@ -68,10 +68,10 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj1[0] = tmp.textContainer;
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj2[4] = combined;
-    const items1 = [closure_4(tmp5(4477).Text, obj2), ];
+    const items1 = [closure_4(tmp5(4556).Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj3[2] = formatPriceResult;
-    items1[1] = closure_4(tmp5(4477).Text, obj3);
+    items1[1] = closure_4(tmp5(4556).Text, obj3);
     obj1[1] = items1;
     items[1] = closure_5(View, obj1);
     obj[1] = items;

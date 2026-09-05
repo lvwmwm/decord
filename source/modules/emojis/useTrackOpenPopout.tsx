@@ -1,17 +1,17 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10332
+// Function ID: 10333
 // Name: useTrackOpenPopout
-// Dependencies: [19, 1386, 1980, 1924, 673, 4708, 4953, 10262, 695, 2]
+// Dependencies: [19, 1957, 2011, 1374, 1074, 4740, 4992, 10333, 1242, 2]
 // Exports: useTrackOpenPopout
 
-// Module 10261 (useTrackOpenPopout)
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
+// Module 10332 (useTrackOpenPopout)
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4992 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import { EmojiInteractionPoint } from "set" /* 1924 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import { EmojiInteractionPoint } from "set" /* 1374 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/emojis/useTrackOpenPopout.tsx");

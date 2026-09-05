@@ -1,19 +1,19 @@
-// Module ID: 11607
-// Function ID: 11608
+// Module ID: 11675
+// Function ID: 11676
 // Name: handleChannelDelete
-// Dependencies: [1995, 1386, 1991, 1908, 4743, 4130, 1921, 4745, 12, 7533, 586, 706, 2]
+// Dependencies: [2025, 1957, 2021, 1979, 4781, 4209, 1371, 4783, 12, 7600, 504, 573, 2]
 
-// Module 11607 (handleChannelDelete)
+// Module 11675 (handleChannelDelete)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "reinjectEphemerals" /* 4743 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_3 from "_getSystemLocale" /* 2025 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "reinjectEphemerals" /* 4781 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 function handleChannelDelete(arg0) {
@@ -134,15 +134,15 @@ obj = {
         if (-1 === findIndexResult) {
           const items1 = tmp20.items;
           obj = { message: null, pinnedAt: null };
-          obj[0] = id(4745).createMessageRecord(message.message);
+          obj[0] = id(4783).createMessageRecord(message.message);
           const _Date = Date;
           const date = new Date();
           obj[1] = date;
           items1.unshift(obj);
-          const obj6 = id(4745);
+          const obj6 = id(4783);
         } else {
-          tmp20.items[findIndexResult].message = id(4745).updateMessageRecord(tmp20.items[findIndexResult].message, message.message);
-          const obj4 = id(4745);
+          tmp20.items[findIndexResult].message = id(4783).updateMessageRecord(tmp20.items[findIndexResult].message, message.message);
+          const obj4 = id(4783);
         }
         const obj3 = applyDefault;
       } else {
@@ -161,7 +161,7 @@ obj = {
       const findIndexResult2 = applyDefault.findIndex(tmp20.items, (message) => message.message.id === id);
       if (-1 !== findIndexResult2) {
         message = tmp.message;
-        obj = id(4745);
+        obj = id(4783);
         const updateMessageRecordResult = obj.updateMessageRecord(message, message.message);
         if (updateMessageRecordResult !== message) {
           const items4 = tmp20.items;
@@ -190,7 +190,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(7533).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(7600).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = applyDefault;
     }

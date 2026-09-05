@@ -1,19 +1,19 @@
-// Module ID: 13610
-// Function ID: 13611
+// Module ID: 13686
+// Function ID: 13687
 // Name: updateState
-// Dependencies: [7409, 1215, 4743, 1980, 7347, 673, 3, 13611, 586, 1472, 706, 2]
+// Dependencies: [7476, 502, 4781, 2011, 1895, 1074, 3, 13687, 504, 1461, 573, 2]
 
-// Module 13610 (updateState)
+// Module 13686 (updateState)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import awaitOnlineDefault from "awaitOnline" /* 1472 */;
-import closure_2 from "handleClearCaches" /* 7409 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "reinjectEphemerals" /* 4743 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "getState" /* 7347 */;
-import { AppStates } from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import awaitOnlineDefault from "awaitOnline" /* 1461 */;
+import closure_2 from "handleClearCaches" /* 7476 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "reinjectEphemerals" /* 4781 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import closure_6 from "getState" /* 1895 */;
+import { AppStates } from "ME" /* 1074 */;
 
 function updateState() {
   if (!c19) {
@@ -42,7 +42,7 @@ function updateState() {
             obj1 = { state: null, delayMs: null };
             obj1[0] = tmp13.WAITING_FOR_NETWORK;
             if (closure_2.hasCache()) {
-              let obj15 = state(13611);
+              let obj15 = state(13687);
               let num2 = obj15.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -73,7 +73,7 @@ function updateState() {
             const obj5 = { state: null, delayMs: null };
             obj5[0] = tmp13.WAITING_FOR_NETWORK;
             if (closure_2.hasCache()) {
-              let obj10 = state(13611);
+              let obj10 = state(13687);
               let num = obj10.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

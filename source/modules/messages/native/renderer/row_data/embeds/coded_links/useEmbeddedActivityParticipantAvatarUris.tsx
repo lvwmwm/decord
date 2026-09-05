@@ -1,14 +1,14 @@
-// Module ID: 13148
-// Function ID: 13149
+// Module ID: 13216
+// Function ID: 13217
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 1385, 1921, 1394, 644, 2]
+// Dependencies: [19, 1956, 1371, 1369, 563, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 13148 (useEmbeddedActivityParticipantAvatarUris)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
+// Module 13216 (useEmbeddedActivityParticipantAvatarUris)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");

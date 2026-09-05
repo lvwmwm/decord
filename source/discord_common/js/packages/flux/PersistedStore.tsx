@@ -1,19 +1,19 @@
-// Module ID: 587
-// Function ID: 588
+// Module ID: 505
+// Function ID: 506
 // Name: getClass
-// Dependencies: [109, 588, 592, 10, 632, 2]
+// Dependencies: [109, 506, 510, 10, 550, 2]
 
-// Module 587 (getClass)
+// Module 505 (getClass)
 import isTracingDefault from "isTracing" /* 10 */;
-import Storage3 from "Storage" /* 592 */;
-import throttleDefault from "throttle" /* 632 */;
+import Storage3 from "Storage" /* 510 */;
+import throttleDefault from "throttle" /* 550 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
-import { Store } from "initialize" /* 588 */;
+import { Store } from "initialize" /* 506 */;
 import set from "set" /* 2 */;
 
 require = arg1;
 let closure_3 = ["_state", "_version"];
-let closure_6 = { _state: "left", _version: "call" };
+let closure_6 = { _state: "hash", _version: "call" };
 let c7 = null;
 let PersistedStore;
 class PersistedStore extends r10016 {

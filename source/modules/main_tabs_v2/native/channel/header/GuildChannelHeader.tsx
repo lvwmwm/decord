@@ -1,24 +1,24 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13275
+// Function ID: 13276
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 13206, 5238, 1390, 7219, 1386, 4401, 1908, 4130, 1921, 673, 1383, 21, 4197, 709, 586, 13199, 6560, 10223, 1233, 4681, 13197, 7326, 1372, 1994, 4989, 11059, 10182, 13193, 2]
+// Dependencies: [32, 19, 17, 13276, 5277, 1961, 7279, 1957, 4480, 1979, 4209, 1371, 1074, 1954, 21, 4262, 576, 504, 13269, 6620, 10294, 1114, 4713, 13267, 7388, 1943, 2024, 5028, 11127, 10253, 13263, 2]
 
-// Module 13205 (GuildChannelMemberCount)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 13275 (GuildChannelMemberCount)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 13206 */;
-import closure_7 from "_handleConnectionOpen" /* 5238 */;
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
-import closure_9 from "getMemberListId" /* 7219 */;
-import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "handleInviteData" /* 4401 */;
-import closure_12 from "createGuildRecordFromRust" /* 1908 */;
-import closure_13 from "markAllUserIdListsStale" /* 4130 */;
-import closure_14 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_6 from "initialize" /* 13276 */;
+import closure_7 from "_handleConnectionOpen" /* 5277 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1961 */;
+import closure_9 from "getMemberListId" /* 7279 */;
+import closure_10 from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "handleInviteData" /* 4480 */;
+import closure_12 from "createGuildRecordFromRust" /* 1979 */;
+import closure_13 from "markAllUserIdListsStale" /* 4209 */;
+import closure_14 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -28,10 +28,10 @@ function GuildChannelMemberCount(channel) {
   if (flag === undefined) {
     flag = false;
   }
-  const token = channel(4197).useToken(ThemesDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
-  let obj = channel(4197);
+  const token = channel(4262).useToken(ThemesDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
+  let obj = channel(4262);
   const items = [closure_9, closure_6];
-  const stateFromStoresObject = channel(586).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
     let flag = false;
     let flag2 = false;
     let num = 0;
@@ -81,23 +81,23 @@ function GuildChannelMemberCount(channel) {
     const count = closure_1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const tmpResult = tmp(13199);
-    return tmpResult.renderMemberCountText(online, total, flag, tmp(6560).ICON_SIZE[token]);
+    const tmpResult = tmp(13269);
+    return tmpResult.renderMemberCountText(online, total, flag, tmp(6620).ICON_SIZE[token]);
   }
 }
 function computeVisibleChannelName(channel) {
   channel = channel.channel;
   ({ guildId, showCreateThread, isConnected } = channel);
   if (obj.shouldNSFWGateGuild(guildId)) {
-    const intl3 = tmp(1233).intl;
-    let stringResult = intl3.string(tmp(1233).t.HbPHt1);
+    const intl3 = tmp(1114).intl;
+    let stringResult = intl3.string(tmp(1114).t.HbPHt1);
   } else if (showCreateThread) {
-    const intl2 = tmp(1233).intl;
-    stringResult = intl2.string(tmp(1233).t["4WNcpu"]);
+    const intl2 = tmp(1114).intl;
+    stringResult = intl2.string(tmp(1114).t["4WNcpu"]);
   } else if (null == channel) {
-    const intl = tmp(1233).intl;
+    const intl = tmp(1114).intl;
     const string = intl.string;
-    let ai6Lbr = tmp(1233).t;
+    let ai6Lbr = tmp(1114).t;
     if (isConnected) {
       ai6Lbr = ai6Lbr.ai6Lbr;
       let stringResult1 = string(ai6Lbr);
@@ -105,8 +105,8 @@ function computeVisibleChannelName(channel) {
       stringResult1 = string(ai6Lbr.ZTNur7);
     }
   } else {
-    stringResult = tmp(4681).computeChannelName(channel, closure_14, closure_13);
-    const tmpResult = tmp(4681);
+    stringResult = tmp(4713).computeChannelName(channel, closure_14, closure_13);
+    const tmpResult = tmp(4713);
   }
   return stringResult;
 }
@@ -115,19 +115,19 @@ function ChannelLinkedLobbyCoachmark(guild) {
   const channel = guild.channel;
   dependencyMap = undefined;
   let callback;
-  const items = [guild(1372).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
-  const tmp = callback(guild(7326).useSelectedDismissibleContent(items, undefined, true), 2);
+  const items = [guild(1943).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
+  const tmp = callback(guild(7388).useSelectedDismissibleContent(items, undefined, true), 2);
   dependencyMap = tmp2;
-  const tmp3 = tmp[0] === guild(1372).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
+  const tmp3 = tmp[0] === guild(1943).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   callback = tmp3;
   const items1 = [channel, guild, tmp[1], tmp3];
   const memo = importAllResult.useMemo(() => {
     let obj = { title: null, description: null, visible: null, position: "bottom", offsetY: 15, onDismiss: null, imgSource: null };
-    const intl = guild(1233).intl;
-    obj[0] = intl.string(guild(1233).t.YIVr4B);
-    const intl2 = guild(1233).intl;
-    obj = { helpdeskArticle: channel(1994).getArticleURL(closure_1_16.LINKED_LOBBIES) };
-    obj[1] = intl2.format(guild(1233).t.w8VWRT, obj);
+    const intl = guild(1114).intl;
+    obj[0] = intl.string(guild(1114).t.YIVr4B);
+    const intl2 = guild(1114).intl;
+    obj = { helpdeskArticle: channel(2024).getArticleURL(closure_1_16.LINKED_LOBBIES) };
+    obj[1] = intl2.format(guild(1114).t.w8VWRT, obj);
     let linkedLobby;
     if (channel != null) {
       linkedLobby = tmp3.linkedLobby;
@@ -138,14 +138,14 @@ function ChannelLinkedLobbyCoachmark(guild) {
     };
     let channelIconWithGuild;
     if (null != channel) {
-      channelIconWithGuild = guild(4989).getChannelIconWithGuild(tmp3, guild);
-      const tmpResult = guild(4989);
+      channelIconWithGuild = guild(5028).getChannelIconWithGuild(tmp3, guild);
+      const tmpResult = guild(5028);
     }
     obj[6] = channelIconWithGuild;
     return obj;
   }, items1);
-  let obj = guild(7326);
-  const coachmark = guild(11059).useCoachmark(guild.iconRef, memo);
+  let obj = guild(7388);
+  const coachmark = guild(11127).useCoachmark(guild.iconRef, memo);
   return null;
 }
 let c4 = importAllResult;

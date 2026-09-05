@@ -1,16 +1,16 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11314
+// Function ID: 11315
 // Name: useReactionPermissions
-// Dependencies: [32, 4121, 1991, 5374, 4120, 673, 586, 4126, 7908, 7209, 11247, 2]
+// Dependencies: [32, 4200, 2021, 5413, 4199, 1074, 504, 4205, 7977, 7269, 11315, 2]
 // Exports: default
 
-// Module 11246 (useReactionPermissions)
+// Module 11314 (useReactionPermissions)
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "initialize" /* 4121 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "recomputeGuild" /* 5374 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+import closure_4 from "initialize" /* 4200 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "recomputeGuild" /* 5413 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/useReactionPermissions.tsx");

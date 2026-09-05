@@ -1,11 +1,11 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7771
+// Function ID: 7772
 // Name: getForumChannelSessionId
-// Dependencies: [511, 2]
+// Dependencies: [1256, 2]
 
-// Module 7703 (getForumChannelSessionId)
+// Module 7771 (getForumChannelSessionId)
 import set from "set" /* 2 */;
-import v1 from "v1" /* 511 */;
+import v1 from "v1" /* 1256 */;
 
 class ForumSessionAnalyticsManager {
 }

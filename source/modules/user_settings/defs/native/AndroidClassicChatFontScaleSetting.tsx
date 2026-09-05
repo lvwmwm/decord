@@ -1,16 +1,16 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 15315
+// Function ID: 15316
 // Name: toggle
-// Dependencies: [15187, 7906, 4105, 702, 1233, 11400, 1234, 2]
+// Dependencies: [15263, 7975, 4184, 1249, 1114, 11468, 1115, 2]
 
-// Module 15239 (toggle)
+// Module 15315 (toggle)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set2 from "set" /* 1234 */;
-import isIterable from "isIterable" /* 4105 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15187 */;
-import createToggle from "createToggle" /* 11400 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set2 from "set" /* 1115 */;
+import isIterable from "isIterable" /* 4184 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15263 */;
+import createToggle from "createToggle" /* 11468 */;
 
 const useFontScaleStore = DEFAULT_FONT_SCALE_STORE_STATE.useFontScaleStore;
 const toggle = createToggle.createToggle({
@@ -24,7 +24,7 @@ const toggle = createToggle.createToggle({
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(702).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(1249).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
     const intl = getSystemLocale.intl;
@@ -43,7 +43,7 @@ const obj = {
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(702).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(1249).batchUpdates(() => closure_1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
     const intl = getSystemLocale.intl;

@@ -1,15 +1,15 @@
-// Module ID: 7914
-// Function ID: 7915
+// Module ID: 7983
+// Function ID: 7984
 // Name: createChangeChannelIconSystemMessage
-// Dependencies: [1386, 7884, 7891, 7893, 7895, 1233, 7898, 2]
+// Dependencies: [1957, 7953, 7960, 7962, 7964, 1114, 7967, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 7914 (createChangeChannelIconSystemMessage)
-import resultDefault from "result" /* 7884 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
+// Module 7983 (createChangeChannelIconSystemMessage)
+import resultDefault from "result" /* 7953 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7960 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
@@ -33,9 +33,9 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     flag = false;
   }
   const tmp8 = createCommonMessageDefault(message);
-  const intl = tmp4(1233).intl;
+  const intl = tmp4(1114).intl;
   const formatToParts = intl.formatToParts;
-  const t = tmp4(1233).t;
+  const t = tmp4(1114).t;
   if (flag) {
     obj = { username: null, usernameOnClick: null, onEditGroup: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
@@ -65,9 +65,9 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     const obj3 = { accessibilityActions: null };
     const items = [];
     const obj4 = { label: null, name: null };
-    const intl2 = tmp4(1233).intl;
-    obj4[0] = intl2.string(tmp4(1233).t["5Q9+/L"]);
-    obj4[1] = tmp4(7898).MessageAccessibilityAction.EDIT_GDM;
+    const intl2 = tmp4(1114).intl;
+    obj4[0] = intl2.string(tmp4(1114).t["5Q9+/L"]);
+    obj4[1] = tmp4(7967).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj4;
     obj3[0] = items;
     tmp12 = obj3;

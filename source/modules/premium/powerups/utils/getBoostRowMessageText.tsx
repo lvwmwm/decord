@@ -1,14 +1,14 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12586
+// Function ID: 12587
 // Name: getBoostRowMessageText
-// Dependencies: [1233, 2400, 12513, 2]
+// Dependencies: [1114, 2428, 12581, 2]
 // Exports: default
 
-// Module 12518 (getBoostRowMessageText)
+// Module 12586 (getBoostRowMessageText)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2400 */;
-import BOOST_EXPIRING_DISPLAY_WINDOW_DAYS from "BOOST_EXPIRING_DISPLAY_WINDOW_DAYS" /* 12513 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2428 */;
+import BOOST_EXPIRING_DISPLAY_WINDOW_DAYS from "BOOST_EXPIRING_DISPLAY_WINDOW_DAYS" /* 12581 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/utils/getBoostRowMessageText.tsx");
 

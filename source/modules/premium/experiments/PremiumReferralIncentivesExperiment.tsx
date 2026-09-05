@@ -1,12 +1,12 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13446
+// Function ID: 13447
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: usePremiumReferralIncentivesVariant
 
-// Module 13373 (apexExperiment)
+// Module 13446 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 let obj = { ORBS: "orbs", DISCOUNT: "discount" };
 obj = { referralRewardType: obj.ORBS, useAltReferralCardArt: false };

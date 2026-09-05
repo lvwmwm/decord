@@ -1,10 +1,10 @@
 // Module ID: 11656
 // Function ID: 11657
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11656 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 138, height: 130, scales: [2, 3], hash: "2b9e354438218d1560976bef68047eb2", name: "load-issue-dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "4ed2ea2d3d7e303d25c3ac6998e6054c", name: "ic_thread_normal_24px", type: "png" });

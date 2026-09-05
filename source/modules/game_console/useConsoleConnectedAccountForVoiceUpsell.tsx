@@ -1,22 +1,22 @@
-// Module ID: 17045
-// Function ID: 17046
+// Module ID: 17123
+// Function ID: 17124
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5242, 5240, 4498, 9162, 673, 586, 17046, 2]
+// Dependencies: [5281, 5279, 4577, 9233, 1074, 504, 17124, 2]
 // Exports: default
 
-// Module 17045 (useConsoleConnectedAccountForVoiceUpsell)
-import closure_3 from "set" /* 5242 */;
-import closure_4 from "filterPlayingActivities" /* 5240 */;
-import closure_5 from "set" /* 4498 */;
-import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE" /* 9162 */;
-import { ActivityTypes } from "ME" /* 673 */;
+// Module 17123 (useConsoleConnectedAccountForVoiceUpsell)
+import closure_3 from "set" /* 5281 */;
+import closure_4 from "filterPlayingActivities" /* 5279 */;
+import closure_5 from "set" /* 4577 */;
+import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE" /* 9233 */;
+import { ActivityTypes } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
 
 export default function useConsoleConnectedAccountForVoiceUpsell() {
   const items = [closure_4];
-  const stateFromStores = found(586).useStateFromStores(items, () => activities.getActivities(true));
+  const stateFromStores = found(504).useStateFromStores(items, () => activities.getActivities(true));
   found = stateFromStores.filter((platform) => {
     platform = platform.platform;
     let hasItem = platform.type === constants.PLAYING;
@@ -28,12 +28,12 @@ export default function useConsoleConnectedAccountForVoiceUpsell() {
     }
     return hasItem;
   });
-  const obj = found(586);
+  const obj = found(504);
   const items1 = [closure_5];
-  const stateFromStores1 = found(586).useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId());
-  const obj2 = found(586);
+  const stateFromStores1 = found(504).useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId());
+  const obj2 = found(504);
   const items2 = [closure_3];
-  const stateFromStores2 = found(586).useStateFromStores(items2, () => {
+  const stateFromStores2 = found(504).useStateFromStores(items2, () => {
     const mapped = found.map((platform) => {
       platform = platform.platform;
       if (null == platform) {

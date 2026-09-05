@@ -1,10 +1,10 @@
 // Module ID: 11177
 // Function ID: 11178
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11177 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "e71bfb9b43d4bbd3706e078113315f40", name: "ic_image", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 93.33333333333333, height: 65, scales: [3], hash: "c4946770ab3c50ce3672b0e2087496ae", name: "asset_ruby_badge_small", type: "png" });

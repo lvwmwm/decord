@@ -1,16 +1,16 @@
-// Module ID: 16538
-// Function ID: 16539
+// Module ID: 16615
+// Function ID: 16616
 // Name: FrameViewInner
-// Dependencies: [32, 19, 9439, 9440, 4509, 21, 7103, 706, 9497, 16539, 9564, 16540, 16541, 9579, 586, 2]
+// Dependencies: [32, 19, 9510, 9511, 1920, 21, 7163, 573, 9568, 16616, 9635, 16617, 16618, 9650, 504, 2]
 // Exports: InlineFrameView
 
-// Module 16538 (FrameViewInner)
-import initialize from "initialize" /* 586 */;
+// Module 16615 (FrameViewInner)
+import initialize from "initialize" /* 504 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "map" /* 9439 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9440 */;
-import { ActivityPlatform } from "items3" /* 4509 */;
+import closure_5 from "map" /* 9510 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9511 */;
+import { ActivityPlatform } from "items3" /* 1920 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -111,7 +111,7 @@ export const InlineFrameView = function InlineFrameView(frameId) {
   frameId = frameId.frameId;
   let tmp = null;
   const merged = Object.assign(frameId, Object.create(null));
-  let obj = frameId(586);
+  let obj = frameId(504);
   const items = [closure_5];
   const items1 = [frameId];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6(closure_1_5.getFrame(frameId)), items1);

@@ -1,16 +1,16 @@
-// Module ID: 8141
-// Function ID: 8142
+// Module ID: 8210
+// Function ID: 8211
 // Name: computeProfileFrameDimensions
-// Dependencies: [8142, 8139, 8140, 2]
+// Dependencies: [8211, 8208, 8209, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 8141 (computeProfileFrameDimensions)
+// Module 8210 (computeProfileFrameDimensions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx");
 
 export const computeProfileFrameDimensions = function computeProfileFrameDimensions(closure_4) {
-  innerWidth = innerWidth(8142).DefaultProfileFrameDimensions.INNER_WIDTH;
+  innerWidth = innerWidth(8211).DefaultProfileFrameDimensions.INNER_WIDTH;
   const mapped = closure_4.map((dims) => Math.round(Math.max(0, (dims.dims.width - innerWidth) / 2)));
   let overflowHorizontal = 0;
   if (mapped.length > 0) {
@@ -22,13 +22,13 @@ export const computeProfileFrameDimensions = function computeProfileFrameDimensi
   }
   const found = closure_4.filter((layer) => {
     layer = layer.layer;
-    let tmp3 = layer.type === innerWidth(8139).ProfileFrameLayerType.STAPLE;
+    let tmp3 = layer.type === innerWidth(8208).ProfileFrameLayerType.STAPLE;
     if (tmp3) {
-      tmp3 = layer.anchor === innerWidth(8140).ProfileFrameLayerAnchor.TOP;
+      tmp3 = layer.anchor === innerWidth(8209).ProfileFrameLayerAnchor.TOP;
     }
     return tmp3;
   });
-  const mapped1 = found.map((dims) => Math.max(0, dims.dims.height - (716 - innerWidth(8142).DefaultProfileFrameDimensions.OVERFLOW_TOP)));
+  const mapped1 = found.map((dims) => Math.max(0, dims.dims.height - (716 - innerWidth(8211).DefaultProfileFrameDimensions.OVERFLOW_TOP)));
   let overflowTop = 0;
   if (mapped1.length > 0) {
     const _Math3 = Math;
@@ -39,13 +39,13 @@ export const computeProfileFrameDimensions = function computeProfileFrameDimensi
   }
   const found1 = closure_4.filter((layer) => {
     layer = layer.layer;
-    let tmp3 = layer.type === innerWidth(8139).ProfileFrameLayerType.STAPLE;
+    let tmp3 = layer.type === innerWidth(8208).ProfileFrameLayerType.STAPLE;
     if (tmp3) {
-      tmp3 = layer.anchor === innerWidth(8140).ProfileFrameLayerAnchor.BOTTOM;
+      tmp3 = layer.anchor === innerWidth(8209).ProfileFrameLayerAnchor.BOTTOM;
     }
     return tmp3;
   });
-  const mapped2 = found1.map((dims) => Math.max(0, dims.dims.height - (424 - innerWidth(8142).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)));
+  const mapped2 = found1.map((dims) => Math.max(0, dims.dims.height - (424 - innerWidth(8211).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)));
   let overflowBottom = 0;
   if (mapped2.length > 0) {
     const _Math5 = Math;

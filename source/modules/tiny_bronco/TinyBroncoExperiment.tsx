@@ -1,13 +1,13 @@
-// Module ID: 14609
-// Function ID: 14610
+// Module ID: 14684
+// Function ID: 14685
 // Name: useIsTinyBroncoEnabled
-// Dependencies: [1468, 14610, 4741, 2]
+// Dependencies: [1433, 14685, 4773, 2]
 // Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled, useShouldShowTinyBroncoDismissibleContent
 
-// Module 14609 (useIsTinyBroncoEnabled)
+// Module 14684 (useIsTinyBroncoEnabled)
 import set from "set" /* 2 */;
-import TINY_BRONCO_DEV_ONLY from "TINY_BRONCO_DEV_ONLY" /* 14610 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import TINY_BRONCO_DEV_ONLY from "TINY_BRONCO_DEV_ONLY" /* 14685 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/tiny_bronco/TinyBroncoExperiment.tsx");

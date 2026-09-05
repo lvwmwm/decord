@@ -1,16 +1,16 @@
-// Module ID: 4686
-// Function ID: 4687
+// Module ID: 4718
+// Function ID: 4719
 // Name: resolveCreatingNotes
-// Dependencies: [109, 1215, 4557, 1980, 4687, 586, 706, 2]
+// Dependencies: [109, 502, 4583, 2011, 4719, 504, 573, 2]
 
-// Module 4686 (resolveCreatingNotes)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import GuildRoomObjectTypes from "GuildRoomObjectTypes" /* 4687 */;
+// Module 4718 (resolveCreatingNotes)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import GuildRoomObjectTypes from "GuildRoomObjectTypes" /* 4719 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "createRTCConnection" /* 4557 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "createRTCConnection" /* 4583 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
 
 require = arg1;
 function resolveCreatingNotes(roomId, objects) {

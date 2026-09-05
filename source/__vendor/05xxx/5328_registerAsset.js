@@ -1,10 +1,10 @@
 // Module ID: 5328
 // Function ID: 5329
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5328 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "8fce658b14b12e381e1ecc554a57f171", name: "img_roblox_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "51c56027f271f175240f0fff23cdb627", name: "img_account_sync_twitter_light_and_dark", type: "svg" });

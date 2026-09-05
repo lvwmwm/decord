@@ -1,25 +1,25 @@
-// Module ID: 5507
-// Function ID: 5508
+// Module ID: 5552
+// Function ID: 5553
 // Name: updateImpersonating
-// Dependencies: [1386, 1981, 1991, 1984, 4120, 1980, 4709, 1983, 673, 1393, 695, 4708, 1989, 706, 1219, 2]
+// Dependencies: [1957, 2012, 2021, 2015, 4199, 2011, 4741, 2014, 1074, 1964, 1242, 4740, 2020, 573, 1100, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5507 (updateImpersonating)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import ImpersonateType from "ImpersonateType" /* 1989 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "comparator" /* 1981 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_10 from "initialize" /* 1983 */;
-import ME from "ME" /* 673 */;
-import { isStaticChannelRoute } from "set" /* 1393 */;
+// Module 5552 (updateImpersonating)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import ImpersonateType from "ImpersonateType" /* 2020 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "comparator" /* 2012 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_10 from "initialize" /* 2014 */;
+import ME from "ME" /* 1074 */;
+import { isStaticChannelRoute } from "set" /* 1964 */;
 
 require = arg1;
 function updateImpersonating(closure_0, type) {
@@ -46,8 +46,8 @@ function updateImpersonating(closure_0, type) {
       if (!closure_7.can(constants.VIEW_CHANNEL, tmp21)) {
         const defaultChannel = store.getDefaultChannel(closure_0);
         if (null != defaultChannel) {
-          tmp7(1219).transitionTo(closure_12.CHANNEL(closure_0, defaultChannel.id));
-          const tmp7Result = tmp7(1219);
+          tmp7(1100).transitionTo(closure_12.CHANNEL(closure_0, defaultChannel.id));
+          const tmp7Result = tmp7(1100);
         }
       }
     }
@@ -88,7 +88,7 @@ export const updateImpersonatedChannels = function updateImpersonatedChannels(gu
   const set = new Set(optedInChannels.getOptedInChannels(guildId1));
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId1, { type: set(1989).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId1, { type: set(2020).ImpersonateType.NEW_MEMBER, optInChannels: set });
 };
 export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, c2) {
   (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, c2) {

@@ -1,10 +1,10 @@
-// Module ID: 4341
-// Function ID: 4342
+// Module ID: 4423
+// Function ID: 4424
 // Name: MobileHomeDrawerExperiment
-// Dependencies: [1469, 2]
+// Dependencies: [1434, 2]
 
-// Module 4341 (MobileHomeDrawerExperiment)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
+// Module 4423 (MobileHomeDrawerExperiment)
+import getUnitIdDefault from "getUnitId" /* 1434 */;
 
 const obj = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };
 obj[2] = { enableHome: true, landOnHome: true, enablePeekHint: false };

@@ -1,15 +1,15 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7405
+// Function ID: 7406
 // Name: emitMWRCSentryErrorOnFailure
-// Dependencies: [4463, 673, 3, 7339, 7340, 1623, 688, 4190, 2]
+// Dependencies: [4542, 1074, 3, 7406, 7407, 1608, 1093, 4255, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 7338 (emitMWRCSentryErrorOnFailure)
+// Module 7405 (emitMWRCSentryErrorOnFailure)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import ME from "ME" /* 673 */;
-import CustomCheckoutFlow2 from "CustomCheckoutFlow" /* 4463 */;
-import MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG from "MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG" /* 7339 */;
+import ME from "ME" /* 1074 */;
+import CustomCheckoutFlow2 from "CustomCheckoutFlow" /* 4542 */;
+import MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG from "MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG" /* 7406 */;
 
 function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
   [tmp4, tmp5] = arg0;
@@ -46,22 +46,22 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
   closure_1 = arg1;
   dependencyMap = arg2;
   CustomCheckoutFlow = arg3;
-  let obj = _require(7340);
+  let obj = _require(7407);
   obj = {};
-  const obj2 = _require(1623);
+  const obj2 = _require(1608);
   const tmp = _require;
   const merged = Object.assign(arg1);
   if (isMetaQuestResult) {
     obj.flowType = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     let tmp5 = obj;
   } else {
-    obj.deepLinkType = tmp(688).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
+    obj.deepLinkType = tmp(1093).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
     tmp5 = obj;
   }
   return obj.goToStandalonePremiumCheckout(tmp5, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    lib(4190).openURLExternally(searchParams.href);
+    lib(4255).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];
@@ -74,17 +74,17 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
   loadId = loadId.loadId;
   dependencyMap = arg2;
   CustomCheckoutFlow = arg3;
-  const obj = _require(7340);
+  const obj = _require(7407);
   const tmp = _require;
   if (obj2.isMetaQuest()) {
     let result = obj3.BILLING_MANAGE_SUBSCRIPTION_WITH_FLOW_TYPE(CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT, loadId);
   } else {
-    result = obj3.BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK(tmp(688).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT, loadId);
+    result = obj3.BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK(tmp(1093).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT, loadId);
   }
   return obj.goToBillingStandalonePageWithHandoff(result, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    loadId(4190).openURLExternally(searchParams.href);
+    loadId(4255).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];
@@ -99,18 +99,18 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
   CustomCheckoutFlow = arg4;
   let prop;
   if (!obj.isMetaQuest()) {
-    prop = tmp(688).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
+    prop = tmp(1093).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
   }
-  let tmpResult = tmp(1623);
+  let tmpResult = tmp(1608);
   let prop1;
   if (tmpResult.isMetaQuest()) {
     prop1 = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
-  tmpResult = tmp(7340);
+  tmpResult = tmp(7407);
   return tmpResult.goToBillingStandalonePageWithHandoff(Routes.BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE(closure_1, prop, newAnalyticsLoadId, prop1), (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    newAnalyticsLoadId(4190).openURLExternally(searchParams.href);
+    newAnalyticsLoadId(4255).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];

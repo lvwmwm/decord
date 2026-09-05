@@ -1,19 +1,19 @@
-// Module ID: 6879
-// Function ID: 6880
+// Module ID: 6939
+// Function ID: 6940
 // Name: ClearButton
-// Dependencies: [19, 17, 21, 4481, 709, 5084, 1233, 1296, 6880, 38, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 5123, 1114, 1178, 6940, 38, 2]
 
-// Module 6879 (ClearButton)
+// Module 6939 (ClearButton)
 import _modDef38 from "module_38" /* 38 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import registerAssetDefault from "registerAsset" /* 6880 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import registerAssetDefault from "registerAsset" /* 6940 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ClearButton(onPress) {
@@ -56,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((editable, ref) => {
   }
   let WITH_CONTENT = editable.clearButtonVisibility;
   if (WITH_CONTENT === undefined) {
-    WITH_CONTENT = onChangeText(1296).ClearButtonVisibility.WITH_CONTENT;
+    WITH_CONTENT = onChangeText(1178).ClearButtonVisibility.WITH_CONTENT;
   }
   const merged = Object.assign(editable, Object.create(null));
   ref = undefined;
@@ -64,14 +64,14 @@ const forwardRefResult = importAllResult.forwardRef((editable, ref) => {
   ref = onPress.useRef(null);
   const imperativeHandle = onPress.useImperativeHandle(ref, () => ref.current);
   let flag2 = true;
-  if (onChangeText(1296).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
-    if (tmp7(1296).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
+  if (onChangeText(1178).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
+    if (tmp7(1178).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
       let tmp9 = null != value;
       if (tmp9) {
         tmp9 = "" !== value;
       }
       flag2 = tmp9;
-    } else if (tmp7(1296).ClearButtonVisibility.NEVER === WITH_CONTENT) {
+    } else if (tmp7(1178).ClearButtonVisibility.NEVER === WITH_CONTENT) {
       flag2 = false;
     }
   }
@@ -179,7 +179,7 @@ const forwardRefResult = importAllResult.forwardRef((editable, ref) => {
   }
   obj1.importantForAccessibility = str4;
   obj1.accessibilityElementsHidden = !flag;
-  items1[1] = closure_7(onChangeText(1296).TextInput, obj1);
+  items1[1] = closure_7(onChangeText(1178).TextInput, obj1);
   let result1;
   if (renderTrailingComponent != null) {
     result1 = renderTrailingComponent();

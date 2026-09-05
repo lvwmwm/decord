@@ -1,14 +1,14 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5129
+// Function ID: 5130
 // Name: items
-// Dependencies: [5091, 5092, 5089, 2]
+// Dependencies: [5130, 5131, 5128, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData, getMaxTotalAttachmentSize
 
-// Module 5090 (items)
+// Module 5129 (items)
 import set from "set" /* 2 */;
-import cancel from "cancel" /* 5089 */;
-import getNitroFileUploadLimitBytes from "getNitroFileUploadLimitBytes" /* 5091 */;
-import getClipCreatedAt from "getClipCreatedAt" /* 5092 */;
+import cancel from "cancel" /* 5128 */;
+import getNitroFileUploadLimitBytes from "getNitroFileUploadLimitBytes" /* 5130 */;
+import getClipCreatedAt from "getClipCreatedAt" /* 5131 */;
 
 const items = [
   {

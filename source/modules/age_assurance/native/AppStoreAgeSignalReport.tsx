@@ -1,16 +1,16 @@
-// Module ID: 17380
-// Function ID: 17381
+// Module ID: 17460
+// Function ID: 17461
 // Name: collectAgeSignal
-// Dependencies: [32, 5, 1921, 673, 8501, 8380, 1205, 1234, 8498, 8500, 695, 4172, 4561, 2]
+// Dependencies: [32, 5, 1371, 1074, 8571, 8450, 1232, 1115, 8568, 8570, 1242, 5423, 4589, 2]
 // Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17380 (collectAgeSignal)
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
-import MIN_AGE_GATE from "MIN_AGE_GATE" /* 8380 */;
+// Module 17460 (collectAgeSignal)
+import isFeatureAgeGated from "isFeatureAgeGated" /* 5423 */;
+import MIN_AGE_GATE from "MIN_AGE_GATE" /* 8450 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 function collectAgeSignal() {
@@ -67,11 +67,11 @@ function _collectAgeSignal() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          obj2 = callback2(1205);
+          obj2 = callback2(1232);
           const obj3 = { tags: null };
           obj3[0] = { source: "parental_consent_manager", step: "collect_age_signal" };
           obj2.captureException(callback, obj3);
-          let obj4 = callback(1234);
+          let obj4 = callback(1115);
           let str = "android";
           if (obj4.isIOS()) {
             str = "ios";
@@ -138,9 +138,9 @@ function _performAgeCheck() {
         let constants = callback3;
         let obj2 = { tags: null };
         obj2[0] = { source: "parental_consent_manager", step: "perform_age_check" };
-        callback2(1205).captureException(constants, obj2);
+        callback2(1232).captureException(constants, obj2);
         constants = 3;
-        const obj11 = callback2(1205);
+        const obj11 = callback2(1232);
       } else if (2 === tmp7) {
         if (arg0 === 1) {
           constants = 3;
@@ -156,7 +156,7 @@ function _performAgeCheck() {
           dependencyMap = callback3(callback2, 2);
           callback3 = 32;
           c4 = 5;
-          let obj7 = callback(8498);
+          let obj7 = callback(8568);
           c5 = 3;
           constants = 1;
           let obj4 = { value: null, done: false };
@@ -175,7 +175,7 @@ function _performAgeCheck() {
           return obj5;
         } else {
           c5 = arg1;
-          obj4 = callback(8500);
+          obj4 = callback(8570);
           c5 = 4;
           constants = 1;
           const obj6 = { value: null, done: false };
@@ -186,9 +186,9 @@ function _performAgeCheck() {
         constants = 3;
         throw arg1;
       } else if (arg0 !== 2) {
-        const obj = callback2(695);
+        const obj = callback2(1242);
         obj7 = { platform: null };
-        obj2 = callback(1234);
+        obj2 = callback(1115);
         obj7[0] = obj2.getNativePlatform();
         obj.track(constants.PARENTAL_CONSENT_CHECKED, obj7);
         c4 = 0;

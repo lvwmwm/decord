@@ -1,13 +1,13 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15963
+// Function ID: 15964
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 6883, 15870, 21, 1498, 15888, 586, 6903, 688, 1233, 6902, 2]
+// Dependencies: [19, 6943, 15946, 21, 1483, 15964, 504, 6963, 1093, 1114, 6962, 2]
 // Exports: RegisterPhoneOrEmailInput
 
-// Module 15887 (RegisterPhoneOrEmailInput)
+// Module 15963 (RegisterPhoneOrEmailInput)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleSetLocationMetadata" /* 6883 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15870 */;
+import closure_4 from "handleSetLocationMetadata" /* 6943 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15946 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

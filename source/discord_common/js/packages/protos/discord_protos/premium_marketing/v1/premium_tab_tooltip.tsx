@@ -1,14 +1,14 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10686
+// Function ID: 10687
 // Name: create
-// Dependencies: [32, 1306, 10609, 10599, 2]
+// Dependencies: [32, 1188, 10680, 10670, 2]
 
-// Module 10615 (create)
-import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 10599 */;
-import create2 from "create" /* 10609 */;
+// Module 10686 (create)
+import _mod1188 from "module_1188" /* 1188 */;
+import create from "create" /* 10670 */;
+import create2 from "create" /* 10680 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { MessageType } from "module_1306" /* 1306 */;
+import { MessageType } from "module_1188" /* 1188 */;
 
 require = arg1;
 class PremiumTabTooltip$Type extends MessageType {
@@ -21,7 +21,7 @@ class PremiumTabTooltip$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(10609).ThemeAwareAsset;
+            return callback(10680).ThemeAwareAsset;
           }
     };
     obj = { no: 4, name: "header_localized", kind: "message", T: null };
@@ -37,7 +37,7 @@ class PremiumTabTooltip$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(10599).LocalizedString;
+            return callback(10670).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PremiumTabTooltip", items, T);
@@ -50,10 +50,10 @@ prototype["create"] = function create(arr) {
   let obj = { header: "", body: "" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, _mod1306.MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1188.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = _mod1306.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1306;
+    const result = _mod1188.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1188;
   }
   return obj;
 };
@@ -119,7 +119,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = _mod1306.UnknownFieldHandler.onRead;
+              onRead = _mod1188.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -135,35 +135,35 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(header, tag, writeUnknownFields) {
   if ("" !== header.header) {
-    tag.tag(1, _mod1306.WireType.LengthDelimited).string(header.header);
-    const tagResult = tag.tag(1, _mod1306.WireType.LengthDelimited);
+    tag.tag(1, _mod1188.WireType.LengthDelimited).string(header.header);
+    const tagResult = tag.tag(1, _mod1188.WireType.LengthDelimited);
   }
   if ("" !== header.body) {
-    tag.tag(2, _mod1306.WireType.LengthDelimited).string(header.body);
-    const tagResult1 = tag.tag(2, _mod1306.WireType.LengthDelimited);
+    tag.tag(2, _mod1188.WireType.LengthDelimited).string(header.body);
+    const tagResult1 = tag.tag(2, _mod1188.WireType.LengthDelimited);
   }
   if (header.asset) {
     const ThemeAwareAsset = create2.ThemeAwareAsset;
-    const tagResult2 = tag.tag(3, _mod1306.WireType.LengthDelimited);
-    const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult2 = tag.tag(3, _mod1188.WireType.LengthDelimited);
+    const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (header.headerLocalized) {
     const LocalizedString = create.LocalizedString;
-    const tagResult3 = tag.tag(4, _mod1306.WireType.LengthDelimited);
-    const joined1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(4, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(4, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult3 = tag.tag(4, _mod1188.WireType.LengthDelimited);
+    const joined1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(4, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(4, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (header.bodyLocalized) {
     const LocalizedString2 = create.LocalizedString;
-    const tagResult4 = tag.tag(5, _mod1306.WireType.LengthDelimited);
-    const joined2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(5, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(5, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult4 = tag.tag(5, _mod1188.WireType.LengthDelimited);
+    const joined2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(5, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(5, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1306.UnknownFieldHandler.onWrite;
+      onWrite = _mod1188.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, header, tag);
@@ -178,7 +178,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(10609).ThemeAwareAsset;
+      return callback(10680).ThemeAwareAsset;
     }
   },
 ,
@@ -197,7 +197,7 @@ items[4] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(10599).LocalizedString;
+    return callback(10670).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PremiumTabTooltip", items, tmp, T, PremiumTabTooltip$Type, prototype, items);

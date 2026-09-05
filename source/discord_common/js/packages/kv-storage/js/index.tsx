@@ -1,9 +1,9 @@
-// Module ID: 1956
-// Function ID: 1957
-// Dependencies: [1957, 2, 1959, 1963, 1966, 1967, 1968, 1969, 1970, 1971, 1960, 1962]
+// Module ID: 1987
+// Function ID: 1988
+// Dependencies: [1988, 2, 1990, 1994, 1997, 1998, 1999, 2000, 2001, 2002, 1991, 1993]
 
-// Module 1956
-import set from "set" /* 1957 */;
+// Module 1987
+import set from "set" /* 1988 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/index.tsx");
 for (const key10020 in require("prefix")) {

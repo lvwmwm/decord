@@ -1,15 +1,15 @@
-// Module ID: 5463
-// Function ID: 5464
+// Module ID: 5503
+// Function ID: 5504
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1428, 1909, 1908, 5229, 4134, 1912, 2]
+// Dependencies: [32, 1973, 1980, 1979, 5268, 4213, 1983, 2]
 
-// Module 5463 (parseServerGuildSticker)
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
+// Module 5503 (parseServerGuildSticker)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import { TypeTag } from "TypeTag" /* 1428 */;
-import { LibdiscoreStore } from "identity" /* 1909 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1912 */;
+import { TypeTag } from "TypeTag" /* 1973 */;
+import { LibdiscoreStore } from "identity" /* 1980 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1983 */;
 
 const require = arg1;
 function parseServerGuildSticker(item10023) {
@@ -30,13 +30,13 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  let obj = { type: items(5229).StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: items(5268).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
     obj = { type: null, value: null };
-    obj[0] = tmp(5229).StickerMetadataTypes.TAG;
+    obj[0] = tmp(5268).StickerMetadataTypes.TAG;
     const trimmed1 = str.trim();
     obj[1] = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -50,7 +50,7 @@ function deriveStickerMetadata(arg0, tags) {
       }
       if (tmp5) {
         obj = { type: null, value: null };
-        obj[0] = tmp(5229).StickerMetadataTypes.GUILD_NAME;
+        obj[0] = tmp(5268).StickerMetadataTypes.GUILD_NAME;
         obj[1] = toLocaleLowerCaseResult;
         items.push(obj);
       }
@@ -59,7 +59,7 @@ function deriveStickerMetadata(arg0, tags) {
     const byName = parseRawEmojiObjectDefault.getByName(str);
     if (null != byName) {
       obj1 = { type: null, value: null };
-      obj1[0] = tmp(5229).StickerMetadataTypes.CORRELATED_EMOJI;
+      obj1[0] = tmp(5268).StickerMetadataTypes.CORRELATED_EMOJI;
       obj1[1] = byName.surrogates;
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(closure_1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));

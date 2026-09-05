@@ -1,14 +1,14 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15419
+// Function ID: 15420
 // Name: radio
-// Dependencies: [19, 7906, 4169, 4166, 1233, 11400, 2]
+// Dependencies: [19, 7975, 1938, 1935, 1114, 11468, 2]
 
-// Module 15343 (radio)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+// Module 15419 (radio)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
 import closure_2 from "noop" /* 19 */;
-import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
-import createToggle from "createToggle" /* 11400 */;
+import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 1938 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -25,18 +25,18 @@ createToggle = {
   useOptions: function useAnimateStickerSettingOptions() {
     return React.useMemo(() => {
       let obj = { label: null, value: null };
-      const intl = callback(1233).intl;
-      obj[0] = intl.string(callback(1233).t["Xp+X2U"]);
+      const intl = callback(1114).intl;
+      obj[0] = intl.string(callback(1114).t["Xp+X2U"]);
       obj[1] = constants.ALWAYS_ANIMATE;
       const items = [obj, , ];
       obj = { label: null, value: null };
-      const intl2 = callback(1233).intl;
-      obj[0] = intl2.string(callback(1233).t.IlLT7e);
+      const intl2 = callback(1114).intl;
+      obj[0] = intl2.string(callback(1114).t.IlLT7e);
       obj[1] = constants.ANIMATE_ON_INTERACTION;
       items[1] = obj;
       obj = { label: null, value: null };
-      const intl3 = callback(1233).intl;
-      obj[0] = intl3.string(callback(1233).t.IGu8x3);
+      const intl3 = callback(1114).intl;
+      obj[0] = intl3.string(callback(1114).t.IGu8x3);
       obj[1] = constants.NEVER_ANIMATE;
       items[2] = obj;
       return items;

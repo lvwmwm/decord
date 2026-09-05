@@ -1,11 +1,11 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15102
+// Function ID: 15103
 // Name: getCreativeAnalyticsParams
-// Dependencies: [19, 21, 5411, 2]
+// Dependencies: [19, 21, 5451, 2]
 // Exports: QuestDockBountyProvider, QuestDockQuestProvider, getCreativeAnalyticsParams, getDeliveredAdCreativeId, getDeliveredQuest, useBountyCreative, useQuestCreative, useQuestDockBounty, useQuestDockCreative, useQuestDockQuest
 
-// Module 15026 (getCreativeAnalyticsParams)
-import AdCreativeType from "AdCreativeType" /* 5411 */;
+// Module 15102 (getCreativeAnalyticsParams)
+import AdCreativeType from "AdCreativeType" /* 5451 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -17,12 +17,12 @@ export const getCreativeAnalyticsParams = function getCreativeAnalyticsParams(cl
   const type = closure_0.type;
   if (AdCreativeType.AdCreativeType.QUEST === type) {
     let obj = { adCreativeType: null, adCreativeId: null };
-    obj[0] = tmp(5411).AdCreativeType.QUEST;
+    obj[0] = tmp(5451).AdCreativeType.QUEST;
     obj[1] = closure_0.quest.id;
     return obj;
-  } else if (tmp(5411).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(5451).AdCreativeType.BOUNTY === type) {
     obj = { adCreativeType: null, adCreativeId: null };
-    obj[0] = tmp(5411).AdCreativeType.BOUNTY;
+    obj[0] = tmp(5451).AdCreativeType.BOUNTY;
     obj[1] = closure_0.bounty.id;
     return obj;
   }
@@ -38,9 +38,9 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) 
   type = type.type;
   if (AdCreativeType.AdCreativeType.QUEST === type) {
     return type.quest.id;
-  } else if (tmp(5411).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(5451).AdCreativeType.BOUNTY === type) {
     return type.bounty.id;
-  } else if (tmp(5411).AdCreativeType.NO_FILL === type) {
+  } else if (tmp(5451).AdCreativeType.NO_FILL === type) {
     return null;
   }
 };

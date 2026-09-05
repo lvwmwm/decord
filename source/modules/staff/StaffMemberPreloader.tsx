@@ -1,14 +1,14 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 17489
+// Function ID: 17490
 // Name: preloadStaffMembers
-// Dependencies: [1908, 1921, 17410, 5475, 2]
+// Dependencies: [1979, 1371, 17490, 5520, 2]
 // Exports: preloadStaffMembers
 
-// Module 17409 (preloadStaffMembers)
-import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5475 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID" /* 17410 */;
+// Module 17489 (preloadStaffMembers)
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5520 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID" /* 17490 */;
 
 const result = require("set").fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
 

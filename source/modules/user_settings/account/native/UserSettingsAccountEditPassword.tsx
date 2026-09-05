@@ -1,33 +1,33 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14777
+// Function ID: 14778
 // Name: componentWillUnmount
-// Dependencies: [19, 17, 1379, 7321, 1921, 673, 21, 4481, 709, 4205, 6924, 6931, 12, 695, 6930, 6938, 14703, 4477, 1233, 4934, 6547, 4936, 6934, 586, 38, 1498, 2]
+// Dependencies: [19, 17, 1950, 7383, 1371, 1074, 21, 4560, 576, 4271, 6984, 6991, 12, 1242, 6990, 6998, 14778, 4556, 1114, 4973, 6606, 4975, 6994, 504, 38, 1483, 2]
 // Exports: default
 
-// Module 14702 (componentWillUnmount)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import TextInput from "TextInput" /* 6547 */;
-import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 6924 */;
-import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 6938 */;
-import registerAssetDefault from "registerAsset" /* 14703 */;
+// Module 14777 (componentWillUnmount)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import TextInput from "TextInput" /* 6606 */;
+import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 6984 */;
+import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 6998 */;
+import registerAssetDefault from "registerAsset" /* 14778 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleUpdateUser" /* 1379 */;
-import closure_8 from "handleFormClose" /* 7321 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_7 from "handleUpdateUser" /* 1950 */;
+import closure_8 from "handleFormClose" /* 7383 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
 ({ Image: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { newPassword: "call", password: 17084737 };
+let closure_14 = { newPassword: "call", password: 17080385 };
 createCacheKey = { onePass: { width: 20, height: 20 }, unverifiedWrapper: null, container: null, header: null, requiredActionsSubtitle: null, requiredActionsTitle: null, image: null };
 createCacheKey = { overflow: "hidden", borderRadius: ThemesDefault.radii.xs, marginVertical: 16 };
 createCacheKey[1] = createCacheKey;
@@ -206,7 +206,7 @@ prototype["render"] = function render() {
   obj8[8] = handleSubmit;
   items3[1] = closure_12(TextInput.TextInput, obj8);
   const obj9 = { text: null, onPress: null, loading: null, disabled: null };
-  const intl5 = tmp16(1233).intl;
+  const intl5 = tmp16(1114).intl;
   obj9[0] = intl5.string(getSystemLocale.t["FRep5/"]);
   obj9[1] = self.handleSubmit;
   obj9[2] = submitting;
@@ -230,7 +230,7 @@ EditPassword.contextType = require("ManaContext").ThemeContext;
 let result = require("set").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = flag(6934);
+  let obj = flag(6994);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
@@ -239,7 +239,7 @@ export default function EditPasswordWrapper() {
   if (flag == null) {
     flag = false;
   }
-  let tmpResult = tmp(586);
+  let tmpResult = tmp(504);
   let items = [closure_9, closure_8, closure_7];
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
     const currentUser = closure_1_9.getCurrentUser();
@@ -279,7 +279,7 @@ export default function EditPasswordWrapper() {
     obj[8] = null != obj.getBannerText(currentUser);
     return obj;
   });
-  tmpResult = tmp(1498);
+  tmpResult = tmp(1483);
   obj = { navigation: tmpResult.useNavigation() };
   const merged = Object.assign(stateFromStoresObject);
   return callback(EditPassword, obj);

@@ -1,12 +1,12 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 13179
+// Function ID: 13180
 // Name: createUploaderAttachments
-// Dependencies: [7864, 4678, 8056, 1233, 5088, 2]
+// Dependencies: [7933, 4710, 8125, 1114, 5127, 2]
 // Exports: default
 
-// Module 13111 (createUploaderAttachments)
+// Module 13179 (createUploaderAttachments)
 import set from "set" /* 2 */;
-import Changeset from "Changeset" /* 7864 */;
+import Changeset from "Changeset" /* 7933 */;
 
 const AttachmentType = Changeset.AttachmentType;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");

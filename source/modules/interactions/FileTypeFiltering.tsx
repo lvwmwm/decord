@@ -1,14 +1,14 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12158
+// Function ID: 12159
 // Name: fileTypesFormattedStringHelper
-// Dependencies: [32, 19, 1995, 1234, 1233, 586, 4865, 2]
+// Dependencies: [32, 19, 2025, 1115, 1114, 504, 4904, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 12090 (fileTypesFormattedStringHelper)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 12158 (fileTypesFormattedStringHelper)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
 
 require = arg1;
 function fileTypesFormattedStringHelper(arr, locale) {
@@ -53,7 +53,7 @@ const result = require("set").fileFinishedImporting("modules/interactions/FileTy
 export const useFileTypesFormattedString = function useFileTypesFormattedString(fileTypes) {
   const _require = fileTypes;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => locale.locale);
+  const stateFromStores = _require(504).useStateFromStores(items, () => locale.locale);
   const items1 = [fileTypes, stateFromStores];
   return React.useMemo(() => closure_1_11(closure_0, stateFromStores), items1);
 };

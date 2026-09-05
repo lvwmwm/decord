@@ -1,14 +1,14 @@
-// Module ID: 5832
-// Function ID: 5833
+// Module ID: 5883
+// Function ID: 5884
 // Name: CustomTypingAbstractUI
-// Dependencies: [21, 5542, 5833, 2]
+// Dependencies: [21, 5587, 5884, 2]
 // Exports: CustomTypingAbstractUI
 
-// Module 5832 (CustomTypingAbstractUI)
+// Module 5883 (CustomTypingAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5833 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5884 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CustomTypingAbstractUI.native.tsx");

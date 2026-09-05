@@ -1,10 +1,10 @@
-// Module ID: 5565
-// Function ID: 5566
+// Module ID: 5610
+// Function ID: 5611
 // Name: SPRING_CONFIG
-// Dependencies: [19, 1492, 4218, 1234, 4935, 2]
+// Dependencies: [19, 1477, 4296, 1115, 4974, 2]
 // Exports: useIOSPressEffects
 
-// Module 5565 (SPRING_CONFIG)
+// Module 5610 (SPRING_CONFIG)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,15 +1,12 @@
 // Module ID: 8494
 // Function ID: 8495
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [26, 65]
+// Dependencies: [65]
 
 // Module 8494 (__INTERNAL_VIEW_CONFIG)
-import result from "result" /* 26 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-let obj = { uiViewClassName: "RNSVGSvgView", validAttributes: null };
-obj = { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: result.colorAttribute, pointerEvents: true, hitSlop: true };
-obj[1] = obj;
+const obj = { uiViewClassName: "RNSVGFeColorMatrix", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, type: true, values: true } };
 
-export default setRuntimeConfigProvider.get("RNSVGSvgView", () => obj);
+export default setRuntimeConfigProvider.get("RNSVGFeColorMatrix", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

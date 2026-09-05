@@ -1,20 +1,20 @@
-// Module ID: 10963
-// Function ID: 10964
+// Module ID: 11032
+// Function ID: 11033
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8123, 21, 4481, 709, 10678, 4477, 1233, 2464, 2]
+// Dependencies: [19, 17, 8192, 21, 4560, 576, 10749, 4556, 1114, 2492, 2]
 // Exports: default
 
-// Module 10963 (GiftingBadgeLevelUpProgress)
+// Module 11032 (GiftingBadgeLevelUpProgress)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2464 */;
-import Text from "Text" /* 4477 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10678 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2492 */;
+import Text from "Text" /* 4556 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10749 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { getSingleRequirementThreshold as closure_4 } from "initialize" /* 8123 */;
+import { getSingleRequirementThreshold as closure_4 } from "initialize" /* 8192 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

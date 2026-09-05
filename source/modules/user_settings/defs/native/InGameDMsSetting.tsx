@@ -1,14 +1,14 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15887
+// Function ID: 15888
 // Name: radio
-// Dependencies: [19, 7906, 4166, 1305, 1233, 11400, 2]
+// Dependencies: [19, 7975, 1935, 1187, 1114, 11468, 2]
 
-// Module 15811 (radio)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import create from "create" /* 1305 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+// Module 15887 (radio)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import create from "create" /* 1187 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
 import closure_2 from "noop" /* 19 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -19,17 +19,17 @@ createToggle = {
   parent: require("MobileUserSettings").MobileUserSettings.CONNECTED_GAMES,
   useOptions: function useInGameDMsSettingOptions() {
     return React.useMemo(() => {
-      let obj = { value: callback(1305).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: null };
-      const intl = callback(1233).intl;
-      obj[1] = intl.string(callback(1233).t.JIFnN9);
+      let obj = { value: callback(1187).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: null };
+      const intl = callback(1114).intl;
+      obj[1] = intl.string(callback(1114).t.JIFnN9);
       const items = [obj, , ];
-      obj = { value: callback(1305).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: null };
-      const intl2 = callback(1233).intl;
-      obj[1] = intl2.string(callback(1233).t.rRdsk1);
+      obj = { value: callback(1187).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: null };
+      const intl2 = callback(1114).intl;
+      obj[1] = intl2.string(callback(1114).t.rRdsk1);
       items[1] = obj;
-      obj = { value: callback(1305).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: null };
-      const intl3 = callback(1233).intl;
-      obj[1] = intl3.string(callback(1233).t.AolKwN);
+      obj = { value: callback(1187).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: null };
+      const intl3 = callback(1114).intl;
+      obj[1] = intl3.string(callback(1114).t.AolKwN);
       items[2] = obj;
       return items;
     }, []);

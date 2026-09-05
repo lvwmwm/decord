@@ -1,16 +1,16 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15493
+// Function ID: 15494
 // Name: toggle
-// Dependencies: [15404, 7906, 1234, 15406, 11400, 1233, 2]
+// Dependencies: [15480, 7975, 1115, 15482, 11468, 1114, 2]
 
-// Module 15417 (toggle)
+// Module 15493 (toggle)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set2 from "set" /* 1234 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15406 */;
-import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 15404 */;
-import createToggle from "createToggle" /* 11400 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set2 from "set" /* 1115 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import hasAndroidNotificationChannels from "hasAndroidNotificationChannels" /* 15482 */;
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 15480 */;
+import createToggle from "createToggle" /* 11468 */;
 
 ({ useAndroidNotificationVibrationsEnabled: obj1, setAndroidNotificationVibrationsEnabled } = _initializeAndroidNotificationSettingsStore);
 const toggle = createToggle.createToggle({

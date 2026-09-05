@@ -1,15 +1,15 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10808
+// Function ID: 10809
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4395, 673, 10740, 695, 2]
+// Dependencies: [4477, 1074, 10809, 1242, 2]
 // Exports: trackPaymentFlowStartedAnalyticsAndCTP
 
-// Module 10739 (commonTriggerPointConfiguration)
+// Module 10808 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4395 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 10740 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4477 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 10809 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration([], ExperimentBuckets.CommonTriggerPoints.PAYMENT_FLOW_STARTED, { location: "payment flow started" });

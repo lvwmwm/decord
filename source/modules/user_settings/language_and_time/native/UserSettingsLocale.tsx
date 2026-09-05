@@ -1,16 +1,16 @@
-// Module ID: 15347
-// Function ID: 15348
+// Module ID: 15423
+// Function ID: 15424
 // Name: handleLanguageChange
-// Dependencies: [5, 19, 17, 1996, 1995, 21, 4481, 709, 9287, 586, 7063, 5640, 1233, 5643, 15348, 2]
+// Dependencies: [5, 19, 17, 2026, 2025, 21, 4560, 576, 9358, 504, 7123, 5685, 1114, 5688, 15424, 2]
 
-// Module 15347 (handleLanguageChange)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15423 (handleLanguageChange)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { setAppLocale } from "_setAppLocale" /* 1996 */;
-import closure_7 from "_getSystemLocale" /* 1995 */;
+import { setAppLocale } from "_setAppLocale" /* 2026 */;
+import closure_7 from "_getSystemLocale" /* 2025 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -104,13 +104,13 @@ let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function UserSettingsLocale() {
   const tmp = callback2();
   const _require = tmp;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_7];
   obj = { contentContainerStyle: tmp.content, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   obj = { bottom: true, children: null };
   obj1 = { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null };
-  const availableLocales = _require(1233).getAvailableLocales();
+  const availableLocales = _require(1114).getAvailableLocales();
   obj1[3] = availableLocales.map((localizedName) => {
     ({ name, value } = localizedName);
     let obj = { value, label: name, subLabel: null, icon: null };
@@ -120,8 +120,8 @@ const memoResult = importAllResult.memo(function UserSettingsLocale() {
     obj[3] = closure_1_8(closure_1_4, obj);
     return closure_1_8(lib(closure_1_2[13]).TableRadioRow, obj, name);
   });
-  obj[1] = jsx(_require(5640).TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
-  obj[1] = jsx(_require(7063).SafeAreaPaddingView, { bottom: true, children: null });
+  obj[1] = jsx(_require(5685).TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
+  obj[1] = jsx(_require(7123).SafeAreaPaddingView, { bottom: true, children: null });
   return <closure_5 bottom>{null}</closure_5>;
 });
 const result = require("set").fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");

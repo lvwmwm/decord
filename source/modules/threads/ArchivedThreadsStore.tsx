@@ -1,19 +1,19 @@
-// Module ID: 7698
-// Function ID: 7699
+// Module ID: 7766
+// Function ID: 7767
 // Name: listKey
-// Dependencies: [32, 1390, 1386, 4496, 4122, 1396, 7699, 12, 1398, 11, 7245, 586, 706, 2]
+// Dependencies: [32, 1961, 1957, 4575, 4201, 1966, 7767, 12, 1968, 11, 7307, 504, 573, 2]
 
-// Module 7698 (listKey)
+// Module 7766 (listKey)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import set from "set" /* 1396 */;
-import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7699 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import set from "set" /* 1966 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7767 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "generateOldThreadCutoff" /* 4496 */;
-import closure_7 from "storeThread" /* 4122 */;
+import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1961 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "generateOldThreadCutoff" /* 4575 */;
+import closure_7 from "storeThread" /* 4201 */;
 
 require = arg1;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
@@ -112,7 +112,7 @@ function resortListState(value) {
     const mapped = sorted.map((id) => id.id);
     const tmp7Result = applyDefault(store.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
-  } else if (sortOrder === sortOrder(1396).ThreadSortOrder.LATEST_ACTIVITY) {
+  } else if (sortOrder === sortOrder(1966).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
     let id2 = closure_6.lastMessageId(id);
   } else {
@@ -296,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
     } else {
       return false;
     }
-    obj = channel(7245);
+    obj = channel(7307);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;

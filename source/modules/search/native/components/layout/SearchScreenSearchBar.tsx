@@ -1,15 +1,15 @@
-// Module ID: 16550
-// Function ID: 16551
-// Dependencies: [19, 17, 21, 4481, 4202, 6565, 1890, 16551, 16553, 16558, 2]
+// Module ID: 16627
+// Function ID: 16628
+// Dependencies: [19, 17, 21, 4560, 4267, 6625, 1874, 16628, 16630, 16635, 2]
 
-// Module 16550
-import _modDef16551 from "module_16551" /* 16551 */;
-import SearchFilterPrefixRowDefault from "SearchFilterPrefixRow" /* 16553 */;
-import _modDef16558 from "module_16558" /* 16558 */;
+// Module 16627
+import _modDef16628 from "module_16628" /* 16628 */;
+import SearchFilterPrefixRowDefault from "SearchFilterPrefixRow" /* 16630 */;
+import _modDef16635 from "module_16635" /* 16635 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -55,7 +55,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, arg1) 
   items1[1] = headerWithBackButton;
   const items2 = [backButton, , ];
   obj = { style: tmp.headerSearch, children: null };
-  const items3 = [callback(_modDef16551, { ref: memo, searchContext, setSuggestionsDismissed }), ];
+  const items3 = [callback(_modDef16628, { ref: memo, searchContext, setSuggestionsDismissed }), ];
   obj = { style: tmp.suggestionsAnchor, children: null };
   obj1 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed, containerStyle: null };
   const items4 = [tmp.suggestions, ];
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, arg1) 
   items2[1] = closure_6(View, obj);
   const tmp10 = SearchFilterPrefixRowDefault;
   const tmp8 = importDefault;
-  items2[2] = callback(View, { style: tmp.headerControlsRight, children: callback(_modDef16558, { searchContext, onOpen: callback, onClose: callback1 }) });
+  items2[2] = callback(View, { style: tmp.headerControlsRight, children: callback(_modDef16635, { searchContext, onOpen: callback, onClose: callback1 }) });
   obj[1] = items2;
   return closure_6(View, obj);
 }));

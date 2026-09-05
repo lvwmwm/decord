@@ -1,15 +1,15 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13184
+// Function ID: 13185
 // Name: createConnectionsRoleTag
-// Dependencies: [17, 673, 709, 685, 2]
+// Dependencies: [17, 1074, 576, 1091, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 13116 (createConnectionsRoleTag)
+// Module 13184 (createConnectionsRoleTag)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
-import int2hslRaw from "int2hslRaw" /* 685 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ME from "ME" /* 1074 */;
+import int2hslRaw from "int2hslRaw" /* 1091 */;
 
 const processColor = get_ActivityIndicator.processColor;
 const DEFAULT_ROLE_COLOR_HEX = ME.DEFAULT_ROLE_COLOR_HEX;

@@ -1,26 +1,26 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7279
+// Function ID: 7280
 // Name: getMemberListId
-// Dependencies: [4394, 4503, 1215, 1386, 4401, 1991, 1984, 1908, 4572, 5240, 1921, 673, 1233, 4125, 1214, 12, 503, 586, 706, 2]
+// Dependencies: [4476, 4582, 502, 1957, 4480, 2021, 2015, 1979, 4600, 5279, 1371, 1074, 1114, 4204, 1241, 12, 1086, 504, 573, 2]
 
-// Module 7219 (getMemberListId)
+// Module 7279 (getMemberListId)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import closure_4 from "getHash" /* 4394 */;
-import closure_5 from "reset" /* 4503 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleInviteData" /* 4401 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "sortActivity" /* 4572 */;
-import closure_13 from "filterPlayingActivities" /* 5240 */;
-import closure_14 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1241 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import closure_4 from "getHash" /* 4476 */;
+import closure_5 from "reset" /* 4582 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "handleInviteData" /* 4480 */;
+import closure_9 from "trackCommunicationDisabled" /* 2021 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_11 from "createGuildRecordFromRust" /* 1979 */;
+import closure_12 from "sortActivity" /* 4600 */;
+import closure_13 from "filterPlayingActivities" /* 5279 */;
+import closure_14 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 let require = arg1;
 function getMemberListId(arg0) {
@@ -200,7 +200,7 @@ prototype["insert"] = function insert(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id);
           }
-          obj = { type: null, key: null, id: null, title: null, count: null, index: "call" };
+          obj = { type: null, key: null, id: null, title: null, count: null, index: "accessible" };
           obj[0] = obj.GROUP;
           obj[1] = id;
           obj[2] = id;
@@ -300,7 +300,7 @@ prototype["update"] = function update(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id2);
           }
-          obj = { type: null, key: null, id: null, title: null, count: null, index: "call" };
+          obj = { type: null, key: null, id: null, title: null, count: null, index: "accessible" };
           obj[0] = obj.GROUP;
           obj[1] = id2;
           obj[2] = id2;

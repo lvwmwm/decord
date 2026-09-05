@@ -1,16 +1,16 @@
-// Module ID: 9354
-// Function ID: 9355
+// Module ID: 9425
+// Function ID: 9426
 // Name: styles
-// Dependencies: [19, 17, 673, 21, 4481, 709, 4448, 9355, 2008, 1233, 503, 4477, 1296, 8523, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 4527, 9426, 1896, 1114, 1086, 4556, 1178, 8593, 2]
 // Exports: default
 
-// Module 9354 (styles)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 9425 (styles)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { Permissions } from "ME" /* 673 */;
+import { Permissions } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -48,9 +48,9 @@ export default function GuildSelector(disabled) {
   let found = guilds.find((id) => id.id === selectedGuildId);
   let obj = { style: tmp.selectorGroup, children: null };
   obj = { variant: "eyebrow", color: "text-default", children: null };
-  let intl = selectedGuildId(1233).intl;
-  obj[2] = intl.string(selectedGuildId(1233).t["1DXFFd"]);
-  const items1 = [callback(selectedGuildId(4477).Text, obj), , , ];
+  let intl = selectedGuildId(1114).intl;
+  obj[2] = intl.string(selectedGuildId(1114).t["1DXFFd"]);
+  const items1 = [callback(selectedGuildId(4556).Text, obj), , , ];
   let tmp6Result = null;
   if (null != error) {
     tmp6Result = null;
@@ -58,7 +58,7 @@ export default function GuildSelector(disabled) {
       obj = { style: null, children: null };
       obj[0] = tmp.error;
       obj[1] = error;
-      tmp6Result = tmp6(tmp7(1296).LegacyText, obj);
+      tmp6Result = tmp6(tmp7(1178).LegacyText, obj);
     }
   }
   items1[1] = tmp6Result;
@@ -67,14 +67,14 @@ export default function GuildSelector(disabled) {
     name = found.name;
   }
   if (name == null) {
-    const intl2 = tmp7(1233).intl;
-    name = intl2.string(tmp7(1233).t.oM4E1A);
+    const intl2 = tmp7(1114).intl;
+    name = intl2.string(tmp7(1114).t.oM4E1A);
   }
-  items1[2] = callback(selectedGuildId(8523).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(8523).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = callback(selectedGuildId(8593).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(8593).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj2 = { style: tmp.label, children: null };
-  const intl3 = tmp7(1233).intl;
-  obj2[1] = intl3.format(selectedGuildId(1233).t.t9Jm9o, {});
-  items1[3] = callback(selectedGuildId(1296).LegacyText, obj2);
+  const intl3 = tmp7(1114).intl;
+  obj2[1] = intl3.format(selectedGuildId(1114).t.t9Jm9o, {});
+  items1[3] = callback(selectedGuildId(1178).LegacyText, obj2);
   obj[1] = items1;
   return closure_8(View, obj);
 };

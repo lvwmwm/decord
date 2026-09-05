@@ -1,10 +1,10 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11473
+// Function ID: 11474
 // Name: getActivitySessionKey
 // Dependencies: [2]
 // Exports: getActivitySessionKey
 
-// Module 11405 (getActivitySessionKey)
+// Module 11473 (getActivitySessionKey)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getActivitySessionKey.tsx");

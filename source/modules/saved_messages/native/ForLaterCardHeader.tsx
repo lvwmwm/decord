@@ -1,30 +1,30 @@
-// Module ID: 12147
-// Function ID: 12148
+// Module ID: 12215
+// Function ID: 12216
 // Name: HeaderIcon
-// Dependencies: [17, 1908, 21, 4481, 709, 7149, 586, 5539, 10841, 1296, 5032, 4681, 4989, 1233, 4477, 2]
+// Dependencies: [17, 1979, 21, 4560, 576, 7209, 504, 5584, 10910, 1178, 5071, 4713, 5028, 1114, 4556, 2]
 // Exports: ForLaterCardHeader
 
-// Module 12147 (HeaderIcon)
+// Module 12215 (HeaderIcon)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 709 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7149 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10841 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import ThemesDefault from "Themes" /* 576 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7209 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10910 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function HeaderIcon(channel) {
   channel = channel.channel;
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getGuild(channel.guild_id));
   if (null != stateFromStores) {
     obj = { guild: null, size: null };
     obj[0] = stateFromStores;
-    obj[1] = tmp2(5539).GuildIconSizes.XSMALL;
+    obj[1] = tmp2(5584).GuildIconSizes.XSMALL;
     let tmp6Result = callback(GuildIconSizesDefault, obj);
     const tmp13 = GuildIconSizesDefault;
   } else {
@@ -35,13 +35,13 @@ function HeaderIcon(channel) {
     if (isGroupDMResult) {
       obj = { channel: null, size: null };
       obj[0] = channel;
-      obj[1] = tmp2(1296).AvatarSizes.XSMALL;
+      obj[1] = tmp2(1178).AvatarSizes.XSMALL;
       tmp6Result = tmp6(FacepileGroupDMAvatarDefault, obj);
       const tmp10 = FacepileGroupDMAvatarDefault;
     } else {
       obj1 = { style: null, children: null };
       obj1[0] = tmp.dmIcon;
-      obj1[1] = tmp6(tmp2(5032).ChatIcon, { size: "xxs" });
+      obj1[1] = tmp6(tmp2(5071).ChatIcon, { size: "xxs" });
       tmp6Result = tmp6(View, obj1);
     }
   }
@@ -50,11 +50,11 @@ function HeaderIcon(channel) {
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = callback2();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getGuild(channel.guild_id));
   const tmp5 = computeChannelNameDefault(channel, false);
-  obj1 = channel(4989);
+  obj1 = channel(5028);
   const channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, stateFromStores);
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
@@ -62,10 +62,10 @@ function ChannelName(channel) {
   }
   let formatToPlainStringResult = tmp5;
   if (channel.isDM()) {
-    const intl = tmp2(1233).intl;
+    const intl = tmp2(1114).intl;
     obj = { username: null };
     obj[0] = tmp5;
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1233).t.smD7XV, obj);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1114).t.smD7XV, obj);
   }
   obj = { style: tmp.channelNameContainer, children: null };
   let tmp12 = null;
@@ -74,7 +74,7 @@ function ChannelName(channel) {
     obj1[0] = tmp.channelTypeIcon;
     tmp12 = callback(channelIconComponentWithGuild, obj1);
   }
-  const items1 = [tmp12, callback(channel(4477).Text, { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult })];
+  const items1 = [tmp12, callback(channel(4556).Text, { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult })];
   obj[1] = items1;
   return closure_6(View, obj);
 }

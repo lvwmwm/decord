@@ -1,16 +1,16 @@
-// Module ID: 8091
-// Function ID: 8092
+// Module ID: 8160
+// Function ID: 8161
 // Name: handleFormOpen
-// Dependencies: [673, 1425, 8092, 674, 586, 8093, 706, 2]
+// Dependencies: [1074, 1970, 8161, 1075, 504, 8162, 573, 2]
 
-// Module 8091 (handleFormOpen)
-import initializeDefault from "initialize" /* 586 */;
-import INVITE from "INVITE" /* 674 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import date from "date" /* 1425 */;
-import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8092 */;
-import useBioMaxLength from "useBioMaxLength" /* 8093 */;
-import ME from "ME" /* 673 */;
+// Module 8160 (handleFormOpen)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import INVITE from "INVITE" /* 1075 */;
+import date from "date" /* 1970 */;
+import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8161 */;
+import useBioMaxLength from "useBioMaxLength" /* 8162 */;
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 function handleFormOpen() {

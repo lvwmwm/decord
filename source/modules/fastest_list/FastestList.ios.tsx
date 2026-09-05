@@ -1,9 +1,9 @@
-// Module ID: 7011
-// Function ID: 7012
+// Module ID: 7071
+// Function ID: 7072
 // Name: noop
-// Dependencies: [19, 17, 21, 7006, 7000, 7012, 7004, 2]
+// Dependencies: [19, 17, 21, 7066, 7060, 7072, 7064, 2]
 
-// Module 7011 (noop)
+// Module 7071 (noop)
 import importAllResult from "noop" /* 19 */;
 import { RefreshControl } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

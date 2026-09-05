@@ -1,30 +1,30 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11207
+// Function ID: 11208
 // Name: Heading
-// Dependencies: [19, 17, 1995, 1991, 1908, 7148, 673, 1497, 21, 4481, 4197, 709, 4477, 1233, 11140, 586, 5368, 11, 10749, 5539, 11141, 1296, 8300, 7102, 8121, 11142, 4448, 4336, 1219, 6978, 4343, 1625, 8110, 11143, 4936, 7147, 2]
+// Dependencies: [19, 17, 2025, 2021, 1979, 7208, 1074, 1482, 21, 4560, 4262, 576, 4556, 1114, 11208, 504, 5407, 11, 10818, 5584, 11209, 1178, 8370, 7162, 8190, 11210, 4527, 4418, 1100, 7038, 4425, 1609, 8179, 11211, 4975, 7207, 2]
 // Exports: default
 
-// Module 11139 (Heading)
+// Module 11207 (Heading)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import map from "map" /* 4197 */;
-import Text from "Text" /* 4477 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7147 */;
-import LinkButtonDefault from "LinkButton" /* 11140 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 11141 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import map from "map" /* 4262 */;
+import Text from "Text" /* 4556 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7207 */;
+import LinkButtonDefault from "LinkButton" /* 11208 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11209 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
-import { Routes } from "ME" /* 673 */;
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
+import { Routes } from "ME" /* 1074 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1482 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Heading(children) {
@@ -106,10 +106,10 @@ function MemberJoinDates(userId) {
     tmp2 = closure_14;
   }
   ({ textVariant, columnGap } = tmp2);
-  let obj = userId(586);
+  let obj = userId(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  obj1 = userId(586);
+  obj1 = userId(504);
   const items1 = [closure_7];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let guild = null;
@@ -118,7 +118,7 @@ function MemberJoinDates(userId) {
     }
     return guild;
   });
-  let obj2 = userId(586);
+  let obj2 = userId(504);
   const items2 = [closure_6];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => {
     let member = null;
@@ -127,24 +127,24 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  let obj3 = userId(5368);
+  let obj3 = userId(5407);
   let obj4 = DISCORD_EPOCHDefault;
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(5368);
+  let obj5 = userId(5407);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
   const createdAtDate1 = obj5.getCreatedAtDate(joinedAt, stateFromStores);
   obj = { themeType, children: null };
-  const intl = tmp4(1233).intl;
-  obj[1] = intl.string(userId(1233).t.a6XYD9);
+  const intl = tmp4(1114).intl;
+  obj[1] = intl.string(userId(1114).t.a6XYD9);
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(10749).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
-  const intl2 = tmp4(1233).intl;
-  obj1[2] = intl2.formatToPlainString(userId(1233).t["9t7w53"], { date: createdAtDate });
+  obj1 = { themeType, icon: callback(tmp4(10818).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  const intl2 = tmp4(1114).intl;
+  obj1[2] = intl2.formatToPlainString(userId(1114).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
   const items5 = [callback(TextWithIcon, obj1), ];
   let tmp13Result = null != stateFromStores1 && null != createdAtDate1;
@@ -153,18 +153,18 @@ function MemberJoinDates(userId) {
     obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     obj3[0] = textVariant;
     obj3[4] = closure_8;
-    const items6 = [tmp15(tmp4(4477).Text, obj3), ];
+    const items6 = [tmp15(tmp4(4556).Text, obj3), ];
     obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
     obj4[0] = themeType;
     obj5 = { guild: null, size: null };
     obj5[0] = stateFromStores1;
-    obj5[1] = tmp4(5539).GuildIconSizes.XXSMALL;
+    obj5[1] = tmp4(5584).GuildIconSizes.XXSMALL;
     obj4[1] = tmp15(GuildIconSizesDefault, obj5);
-    const intl3 = tmp4(1233).intl;
+    const intl3 = tmp4(1114).intl;
     const obj6 = { guildName: null, date: null };
     obj6[0] = stateFromStores1.name;
     obj6[1] = createdAtDate1;
-    obj4[2] = intl3.formatToPlainString(tmp4(1233).t.FdLNDK, obj6);
+    obj4[2] = intl3.formatToPlainString(tmp4(1114).t.FdLNDK, obj6);
     obj4[3] = createdAtDate1;
     items6[1] = tmp15(TextWithIcon, obj4);
     obj2[0] = items6;
@@ -194,13 +194,13 @@ function FriendsSinceDate(themeType) {
     obj = { children: null };
     obj = { themeType: null, children: null };
     obj[0] = themeType;
-    const intl = tmp3(1233).intl;
-    obj[1] = intl.string(tmp3(1233).t.wlTO8v);
+    const intl = tmp3(1114).intl;
+    obj[1] = intl.string(tmp3(1114).t.wlTO8v);
     const items = [callback(Heading, obj), ];
     obj1 = { variant: null, color: "text-default", children: null };
     obj1[0] = tmp.textVariant;
     obj1[2] = friendsSinceDate;
-    items[1] = callback(tmp3(4477).Text, obj1);
+    items[1] = callback(tmp3(4556).Text, obj1);
     obj[0] = items;
     tmp6 = callback2(View, obj);
   }
@@ -220,8 +220,8 @@ function PolicyLinks(arg0) {
     if (tmp5Result) {
       obj = { url: null, label: null, themeType: null };
       obj[0] = termsOfServiceUrl;
-      const intl2 = tmp7(1233).intl;
-      obj[1] = intl2.string(tmp7(1233).t.s7STcY);
+      const intl2 = tmp7(1114).intl;
+      obj[1] = intl2.string(tmp7(1114).t.s7STcY);
       obj[2] = themeType;
       tmp5Result = tmp5(PolicyLink, obj);
     }
@@ -230,8 +230,8 @@ function PolicyLinks(arg0) {
     if (tmp5Result) {
       obj1 = { url: null, label: null, themeType: null };
       obj1[0] = privacyPolicyUrl;
-      const intl3 = tmp7(1233).intl;
-      obj1[1] = intl3.string(tmp7(1233).t.kH3JR5);
+      const intl3 = tmp7(1114).intl;
+      obj1[1] = intl3.string(tmp7(1114).t.kH3JR5);
       obj1[2] = themeType;
       tmp5Result = tmp5(PolicyLink, obj1);
     }

@@ -1,13 +1,13 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9645
+// Function ID: 9646
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1495, 1234, 1639, 1627, 9575, 2]
+// Dependencies: [32, 19, 1480, 1115, 1623, 1611, 9646, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 9574 (useStableSafeAreaInsets)
-import context from "context" /* 1495 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1627 */;
-import enforcingDefault from "enforcing" /* 1639 */;
+// Module 9645 (useStableSafeAreaInsets)
+import context from "context" /* 1480 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1611 */;
+import enforcingDefault from "enforcing" /* 1623 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -15,7 +15,7 @@ require = arg1;
 const result = require("set").fileFinishedImporting("modules/safe_area/useStableSafeAreaInsets.native.tsx");
 
 export default function useStableSafeAreaInsets() {
-  appEntryKey = appEntryKey(1495).useAppEntryKey();
+  appEntryKey = appEntryKey(1480).useAppEntryKey();
   const tmp2 = callback(React.useState(() => {
     let DEFAULT_APP_ENTRY_KEY = appEntryKey;
     if (appEntryKey === undefined) {

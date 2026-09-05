@@ -1,16 +1,16 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14166
+// Function ID: 14167
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4218, 4481, 8598, 709, 8597, 4935, 4939, 4938, 4477, 2]
+// Dependencies: [19, 17, 21, 4296, 4560, 8668, 576, 8667, 4974, 4978, 4977, 4556, 2]
 // Exports: ContextMenuItem
 
-// Module 14080 (ContextMenuItem)
-import ThemesDefault from "Themes" /* 709 */;
-import CONTEXT_MENU_LONG_PRESS_DURATION_MS from "CONTEXT_MENU_LONG_PRESS_DURATION_MS" /* 8598 */;
+// Module 14166 (ContextMenuItem)
+import ThemesDefault from "Themes" /* 576 */;
+import CONTEXT_MENU_LONG_PRESS_DURATION_MS from "CONTEXT_MENU_LONG_PRESS_DURATION_MS" /* 8668 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "module_4296" /* 4296 */;
 
 require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -28,9 +28,9 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
   const obj2 = { borderBottomWidth: 1, borderBottomColor: ThemesDefault.colors.BORDER_SUBTLE };
   obj[5] = { backgroundColor: ThemesDefault.colors.BACKGROUND_MOD_SUBTLE };
   if ("destructive" === arg0) {
-    let TEXT_STRONG = tmp2(709).colors.TEXT_FEEDBACK_CRITICAL;
+    let TEXT_STRONG = tmp2(576).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
-    TEXT_STRONG = tmp2(709).colors.TEXT_STRONG;
+    TEXT_STRONG = tmp2(576).colors.TEXT_STRONG;
   }
   obj[6] = { width: 20, height: 20, tintColor: TEXT_STRONG };
   obj[7] = { flexShrink: 1 };

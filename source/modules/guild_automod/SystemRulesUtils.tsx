@@ -1,10 +1,10 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17542
+// Function ID: 17543
 // Name: set
 // Dependencies: [2]
 // Exports: isDefaultRuleId
 
-// Module 17462 (set)
+// Module 17542 (set)
 import set from "set" /* 2 */;
 
 let set = new Set(["1030554520465440818"]);

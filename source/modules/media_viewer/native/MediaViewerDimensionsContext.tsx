@@ -1,12 +1,12 @@
-// Module ID: 8223
-// Function ID: 8224
+// Module ID: 8293
+// Function ID: 8294
 // Name: MediaViewerDimensionsProvider
-// Dependencies: [19, 21, 1492, 38, 2]
+// Dependencies: [19, 21, 1477, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8223 (MediaViewerDimensionsProvider)
+// Module 8293 (MediaViewerDimensionsProvider)
 import _modDef38 from "module_38" /* 38 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 5830
-// Function ID: 5831
+// Module ID: 5881
+// Function ID: 5882
 // Name: CrownIllocon
-// Dependencies: [21, 5542, 5831, 2]
+// Dependencies: [21, 5587, 5882, 2]
 // Exports: CrownIllocon
 
-// Module 5830 (CrownIllocon)
+// Module 5881 (CrownIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5831 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5882 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CrownIllocon.native.tsx");

@@ -1,10 +1,10 @@
 // Module ID: 11097
 // Function ID: 11098
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11097 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 59.666666666666664, height: 59.666666666666664, scales: [3], hash: "98f28dd3128f04f38057757d2f825a42", name: "asset_gold_badge_small", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "3712e3aa74966ab918e86302cf0f502f", name: "SpendEarnOrbs", type: "lottie" });

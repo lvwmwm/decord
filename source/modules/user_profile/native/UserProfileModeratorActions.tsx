@@ -1,25 +1,25 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13048
+// Function ID: 13049
 // Name: ModeratorActionRow
-// Dependencies: [19, 5382, 1386, 1981, 1991, 1908, 4120, 4500, 673, 4108, 21, 4481, 709, 5560, 8121, 4448, 10810, 586, 7209, 11767, 1395, 9332, 4681, 4675, 4673, 4125, 1233, 9846, 8328, 9848, 8523, 5062, 11262, 2008, 5475, 7318, 4731, 11768, 1399, 11672, 4109, 11785, 11771, 9056, 9934, 9052, 12462, 7813, 4422, 11787, 9362, 11789, 12981, 12552, 7697, 7147, 5642, 2]
+// Dependencies: [19, 5421, 1957, 2012, 2021, 1979, 4199, 4579, 1074, 4187, 21, 4560, 576, 5605, 8190, 4527, 10879, 504, 7269, 11835, 1965, 9403, 4713, 4707, 4705, 4204, 1114, 9917, 8398, 9919, 8593, 5101, 11330, 1896, 5520, 7380, 4763, 11836, 1384, 11740, 4188, 11853, 11839, 9127, 10005, 9123, 12530, 7882, 4501, 11855, 9433, 11857, 13049, 12620, 7765, 7207, 5687, 2]
 // Exports: default
 
-// Module 12980 (ModeratorActionRow)
+// Module 13048 (ModeratorActionRow)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5382 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "comparator" /* 1981 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "updateVoiceState" /* 4500 */;
-import ME from "ME" /* 673 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
+import ThemesDefault from "Themes" /* 576 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5421 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "comparator" /* 2012 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 2012 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "updateVoiceState" /* 4579 */;
+import ME from "ME" /* 1074 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ModeratorActionRow(isDestructive) {
@@ -352,7 +352,7 @@ export default function UserProfileModeratorActions(user) {
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(4731);
+              let arr = callback(4763);
               arr = arr.pop();
             }
           };

@@ -1,11 +1,11 @@
-// Module ID: 7048
-// Function ID: 7049
+// Module ID: 7108
+// Function ID: 7109
 // Name: isConnected
-// Dependencies: [586, 12, 706, 2]
+// Dependencies: [504, 12, 573, 2]
 
-// Module 7048 (isConnected)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7108 (isConnected)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_2 = {};
 const Store = initializeDefault.Store;

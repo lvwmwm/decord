@@ -1,14 +1,14 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 9911
+// Function ID: 9912
 // Name: MusicIcon
-// Dependencies: [19, 21, 709, 4196, 9841, 2]
+// Dependencies: [19, 21, 576, 4261, 9912, 2]
 // Exports: MusicIcon
 
-// Module 9840 (MusicIcon)
+// Module 9911 (MusicIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9841 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 9912 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10081
+// Function ID: 10082
 // Name: DesktopNotificationTypes
-// Dependencies: [673, 1234, 586, 706, 2]
+// Dependencies: [1074, 1115, 504, 573, 2]
 
-// Module 10010 (DesktopNotificationTypes)
+// Module 10081 (DesktopNotificationTypes)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import set2 from "set" /* 1234 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import set2 from "set" /* 1115 */;
+import ME from "ME" /* 1074 */;
 
 const DesktopNotificationTypes = ME.DesktopNotificationTypes;
 ({ NotificationPermissionTypes: c3, TTSNotificationTypes } = ME);

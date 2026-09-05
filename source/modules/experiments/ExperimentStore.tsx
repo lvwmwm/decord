@@ -1,23 +1,23 @@
-// Module ID: 4394
-// Function ID: 4395
+// Module ID: 4476
+// Function ID: 4477
 // Name: getHash
-// Dependencies: [32, 1215, 1217, 4395, 673, 3, 4396, 1214, 695, 4399, 592, 12, 706, 2]
+// Dependencies: [32, 502, 1073, 4477, 1074, 3, 1362, 1241, 1242, 4478, 510, 12, 573, 2]
 // Exports: registerExperiment
 
-// Module 4394 (getHash)
+// Module 4476 (getHash)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
-import Storage5 from "Storage" /* 592 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcher from "dispatcher" /* 706 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1214 */;
-import clearAllDefault from "clearAll" /* 1217 */;
-import Version from "Version" /* 4396 */;
-import isInRange from "isInRange" /* 4399 */;
+import Storage5 from "Storage" /* 510 */;
+import dispatcher from "dispatcher" /* 573 */;
+import clearAllDefault from "clearAll" /* 1073 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1241 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import Version from "Version" /* 1362 */;
+import isInRange from "isInRange" /* 4478 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4395 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4477 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function getHash(arg0) {
@@ -598,11 +598,11 @@ function handleLogout(isSwitchingAccount) {
   const Storage = Storage5.Storage;
   Storage.remove(c11);
   if (!isSwitchingAccount.isSwitchingAccount) {
-    const Storage2 = tmp(592).Storage;
+    const Storage2 = tmp(510).Storage;
     Storage2.remove(exerimentOverrides);
-    const Storage3 = tmp(592).Storage;
+    const Storage3 = tmp(510).Storage;
     Storage3.remove(userExperimentOverrides);
-    const Storage4 = tmp(592).Storage;
+    const Storage4 = tmp(510).Storage;
     Storage4.remove(guildExperimentOverrides);
     closure_24 = {};
     closure_25 = {};
@@ -628,13 +628,13 @@ function loadLocalOverrides() {
     obj = {};
   }
   const items = [obj, , ];
-  const Storage2 = tmp3(592).Storage;
+  const Storage2 = tmp3(510).Storage;
   let value = Storage2.get(userExperimentOverrides);
   if (value == null) {
     value = {};
   }
   items[1] = value;
-  const Storage3 = tmp3(592).Storage;
+  const Storage3 = tmp3(510).Storage;
   let value1 = Storage3.get(guildExperimentOverrides);
   if (value1 == null) {
     value1 = {};

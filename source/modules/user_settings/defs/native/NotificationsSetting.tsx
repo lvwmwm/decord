@@ -1,15 +1,15 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 15478
+// Function ID: 15479
 // Name: route
-// Dependencies: [673, 11400, 1233, 9705, 14376, 15403, 2]
+// Dependencies: [1074, 11468, 1114, 9776, 14450, 15479, 2]
 
-// Module 15402 (route)
+// Module 15478 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import BellIcon from "BellIcon" /* 9705 */;
-import getNamedExperiment from "getNamedExperiment" /* 14376 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import BellIcon from "BellIcon" /* 9776 */;
+import getNamedExperiment from "getNamedExperiment" /* 14450 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -19,14 +19,14 @@ obj = {
   parent: null,
   IconComponent: BellIcon.BellIcon,
   usePredicate() {
-    return !getNamedExperiment.useIsDeclarativeSettingsUIAvailable();
+    return !getNamedExperiment.useIsDeclarativeSettingsUIAvailable("LegacyNotificationsSetting");
   },
   screen: obj
 };
 obj = {
   route: ME.UserSettingsSections.NOTIFICATIONS,
   getComponent() {
-    return require(15403) /* SystemNotificationsSubLabel */.default;
+    return require(15479) /* SystemNotificationsSubLabel */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,20 +1,20 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16891
+// Function ID: 16892
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 673, 21, 4481, 709, 1233, 12382, 4194, 5552, 4492, 4731, 12374, 695, 5084, 16798, 1296, 9495, 14848, 8523, 1627, 16807, 16814, 16805, 4953, 7535, 7540, 16808, 1234, 4477, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1114, 12450, 4259, 5597, 4571, 4763, 12442, 1242, 5123, 16876, 1178, 9566, 14923, 8593, 1611, 16885, 16892, 16883, 4992, 7602, 7607, 16886, 1115, 4556, 2]
 // Exports: default
 
-// Module 16813 (PendingSpamMessageRequestRow)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
-import MessageRequestEmptyDefault from "MessageRequestEmpty" /* 16808 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16814 */;
+// Module 16891 (PendingSpamMessageRequestRow)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4992 */;
+import MessageRequestEmptyDefault from "MessageRequestEmpty" /* 16886 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16892 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function PendingSpamMessageRequestRow(isLastRow) {
@@ -195,22 +195,22 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = callback2();
   importDefault = tmp;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(16807);
+  let obj = goToMessageRequestPreview(16885);
   dependencyMap = obj.useSpamMessageRequestCount();
   arr = useSortedSpamMessageRequestsDefault();
-  obj1 = goToMessageRequestPreview(16805);
+  obj1 = goToMessageRequestPreview(16883);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
   useMountLayoutEffectDefault(() => {
-    let obj = lib(695);
+    let obj = lib(1242);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(closure_1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(7540).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    lib(7535).increment(obj);
+    obj = { name: goToMessageRequestPreview(7607).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    lib(7602).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
-    let intl = tmp4(1233).intl;
-    obj[0] = intl.string(tmp4(1233).t.hasFPQ);
+    let intl = tmp4(1114).intl;
+    obj[0] = intl.string(tmp4(1114).t.hasFPQ);
     return callback(MessageRequestEmptyDefault, obj);
   } else {
     const items = ["header-section"];
@@ -235,11 +235,11 @@ export default function SpamMessageList(goToMessageRequestPreview) {
         let obj = { style: null, children: null };
         obj[0] = lib.sectionContainer;
         obj = { variant: "eyebrow", color: "text-default", children: null };
-        const intl = goToMessageRequestPreview(1233).intl;
+        const intl = goToMessageRequestPreview(1114).intl;
         obj = { count: null };
         obj[0] = arr.length;
-        obj[2] = intl.format(goToMessageRequestPreview(1233).t.aNh5Kf, obj);
-        obj[1] = closure_1_8(goToMessageRequestPreview(4477).Text, obj);
+        obj[2] = intl.format(goToMessageRequestPreview(1114).t.aNh5Kf, obj);
+        obj[1] = closure_1_8(goToMessageRequestPreview(4556).Text, obj);
         let tmp11Result = closure_1_8(closure_1_5, obj);
       } else {
         obj1 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };

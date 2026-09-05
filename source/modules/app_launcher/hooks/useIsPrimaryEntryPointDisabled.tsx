@@ -1,14 +1,14 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12143
+// Function ID: 12144
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [4507, 4120, 502, 586, 9511, 11989, 9475, 9339, 1234, 1233, 2]
+// Dependencies: [1918, 4199, 1085, 504, 9582, 12057, 9546, 9410, 1115, 1114, 2]
 // Exports: default
 
-// Module 12075 (useIsPrimaryEntryPointDisabled)
-import getPlatformDefault from "getPlatform" /* 9339 */;
-import closure_3 from "createExecutable" /* 4507 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "sum" /* 502 */;
+// Module 12143 (useIsPrimaryEntryPointDisabled)
+import getPlatformDefault from "getPlatform" /* 9410 */;
+import closure_3 from "createExecutable" /* 1918 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
@@ -21,16 +21,16 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     channel = context.channel;
   }
   const items = [closure_4];
-  const stateFromStores = channel(586).useStateFromStores(items, () => closure_1_4.can(closure_1_5.USE_EMBEDDED_ACTIVITIES, channel));
-  const obj = channel(586);
+  const stateFromStores = channel(504).useStateFromStores(items, () => closure_1_4.can(closure_1_5.USE_EMBEDDED_ACTIVITIES, channel));
+  const obj = channel(504);
   let id;
   if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(9511).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(9582).useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11989).ActivityAction.LEAVE !== activityAction) {
-    if (tmp2(11989).ActivityAction.START === activityAction) {
+  if (channel(12057).ActivityAction.LEAVE !== activityAction) {
+    if (tmp2(12057).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -39,11 +39,11 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== tmp2(9511).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== tmp2(9582).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
-          let tmp2Result = tmp2(9475);
+          let tmp2Result = tmp2(9546);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -52,7 +52,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
       }
     } else {
       flag = false;
-      if (tmp2(11989).ActivityAction.JOIN === activityAction) {
+      if (tmp2(12057).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -60,7 +60,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         if (isGuildVoiceResult1) {
           flag = !stateFromStores;
         } else {
-          tmp2Result = tmp2(9475);
+          tmp2Result = tmp2(9546);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -71,15 +71,15 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   }
   let disabled = flag;
   let reason;
-  if (activityAction !== channel(11989).ActivityAction.LEAVE) {
+  if (activityAction !== channel(12057).ActivityAction.LEAVE) {
     const tmp10 = application instanceof closure_3 ? application.embeddedActivityConfig : application.embedded_activity_config;
     getPlatformDefault;
-    tmp2(1234);
+    tmp2(1115);
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;
       if (!supported_platforms.includes(tmp14)) {
-        const intl = tmp2(1233).intl;
-        reason = intl.string(tmp2(1233).t.z2YTgJ);
+        const intl = tmp2(1114).intl;
+        reason = intl.string(tmp2(1114).t.z2YTgJ);
         disabled = false;
       }
     }
@@ -89,8 +89,8 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     }
     disabled = flag;
     if (isThreadResult) {
-      const intl2 = tmp2(1233).intl;
-      reason = intl2.string(tmp2(1233).t.ddSR3v);
+      const intl2 = tmp2(1114).intl;
+      reason = intl2.string(tmp2(1114).t.ddSR3v);
       disabled = true;
     }
   }
@@ -99,8 +99,8 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     tmp16 = null == reason;
   }
   if (tmp16) {
-    const intl3 = tmp2(1233).intl;
-    reason = intl3.string(tmp2(1233).t.f41E1g);
+    const intl3 = tmp2(1114).intl;
+    reason = intl3.string(tmp2(1114).t.f41E1g);
   }
   return { disabled, reason };
 };

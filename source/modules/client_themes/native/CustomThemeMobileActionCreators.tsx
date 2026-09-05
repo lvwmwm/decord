@@ -1,12 +1,12 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 11948
+// Function ID: 11949
 // Name: updateCustomTheme
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
-// Module 11880 (updateCustomTheme)
+// Module 11948 (updateCustomTheme)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/client_themes/native/CustomThemeMobileActionCreators.tsx");
 

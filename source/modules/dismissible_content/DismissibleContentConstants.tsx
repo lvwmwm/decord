@@ -1,9 +1,9 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1954
+// Function ID: 1955
 // Name: ContentDismissActionType
 // Dependencies: [2]
 
-// Module 1383 (ContentDismissActionType)
+// Module 1954 (ContentDismissActionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/dismissible_content/DismissibleContentConstants.tsx");

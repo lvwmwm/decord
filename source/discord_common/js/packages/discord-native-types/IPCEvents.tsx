@@ -1,9 +1,9 @@
-// Module ID: 5522
-// Function ID: 5523
+// Module ID: 5567
+// Function ID: 5568
 // Name: IPCEvents
 // Dependencies: [2]
 
-// Module 5522 (IPCEvents)
+// Module 5567 (IPCEvents)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/discord-native-types/IPCEvents.tsx");

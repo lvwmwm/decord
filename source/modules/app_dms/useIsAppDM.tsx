@@ -1,11 +1,11 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 12145
+// Function ID: 12146
 // Name: useIsAppDM
-// Dependencies: [1921, 644, 2]
+// Dependencies: [1371, 563, 2]
 // Exports: default
 
-// Module 12077 (useIsAppDM)
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
+// Module 12145 (useIsAppDM)
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/app_dms/useIsAppDM.
 export default function useIsAppDM(arg0) {
   const _require = arg0;
   const items = [closure_2];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     let tmp = null != closure_0 && obj.isDM();
     if (tmp) {
       tmp = 1 === obj.recipients.length;

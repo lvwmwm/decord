@@ -1,20 +1,20 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11453
+// Function ID: 11454
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4481, 709, 1499, 7063, 11386, 11387, 4477, 1233, 4936, 4731, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1484, 7123, 11454, 11455, 4556, 1114, 4975, 4763, 2]
 // Exports: default
 
-// Module 11385 (GiftCodeRedeemError)
+// Module 11453 (GiftCodeRedeemError)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1484 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -37,13 +37,13 @@ export default function GiftCodeRedeemError(children) {
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(11386);
+    let tmp9Result = tmp9(11454);
   } else {
-    tmp9Result = tmp9(11387);
+    tmp9Result = tmp9(11455);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj1[2] = intl.formatToMarkdownString(getSystemLocale.t.JUvC0s, {});
   items[1] = closure_6(Text.Text, obj1);
   items[2] = closure_6(Text.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
@@ -51,7 +51,7 @@ export default function GiftCodeRedeemError(children) {
   const items1 = [closure_7(closure_5, obj), ];
   const obj3 = { style: tmp.footer, children: null };
   const obj4 = { text: null, size: "md", onPress: null };
-  const intl2 = tmp2(1233).intl;
+  const intl2 = tmp2(1114).intl;
   obj4[0] = intl2.string(getSystemLocale.t.cpT0Cq);
   obj4[2] = function onPress() {
     return callback(table[12]).pop();

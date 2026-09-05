@@ -1,13 +1,13 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 13921
+// Function ID: 13922
 // Name: items
-// Dependencies: [19, 21, 13927, 8383, 2]
+// Dependencies: [19, 21, 13917, 8453, 2]
 // Exports: GuildBadgeToadstool
 
-// Module 13931 (items)
+// Module 13921 (items)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8383 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13927 */;
+import inlineStyles from "inlineStyles" /* 8453 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13917 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

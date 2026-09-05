@@ -1,16 +1,16 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17896
+// Function ID: 17897
 // Name: _handleIncomingURL
-// Dependencies: [5, 1386, 4557, 7347, 673, 3, 7408, 17815, 4735, 695, 13860, 4461, 4466, 510, 8308, 15868, 17817, 2]
+// Dependencies: [5, 1957, 4583, 1895, 1074, 3, 7475, 17895, 4767, 1242, 13850, 4540, 4545, 1255, 8378, 15944, 17897, 2]
 // Exports: default
 
-// Module 17816 (_handleIncomingURL)
+// Module 17896 (_handleIncomingURL)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createRTCConnection" /* 4557 */;
-import closure_6 from "getState" /* 7347 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "createRTCConnection" /* 4583 */;
+import closure_6 from "getState" /* 1895 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function _handleIncomingURL() {

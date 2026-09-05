@@ -1,10 +1,10 @@
 // Module ID: 9372
 // Function ID: 9373
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9372 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 18, height: 18.5, scales: [2, 3], hash: "84a5f82b0047a661ec45232254da9031", name: "app_installed_check", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "67f86c057cc3cdebb258af63ee3c92db", name: "UploadIcon", type: "png" });

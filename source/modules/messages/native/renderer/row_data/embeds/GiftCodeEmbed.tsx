@@ -1,31 +1,31 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13189
+// Function ID: 13190
 // Name: getGiftStyleUrl
-// Dependencies: [17, 1215, 11361, 1921, 4530, 673, 1923, 13122, 13123, 13124, 13125, 13126, 13127, 13128, 13129, 13130, 13131, 13132, 10953, 4325, 7876, 1362, 4299, 1233, 11740, 11741, 709, 4074, 7867, 7877, 13133, 13134, 13135, 13136, 13137, 7166, 4139, 2]
+// Dependencies: [17, 502, 11429, 1371, 5510, 1074, 1373, 13190, 13191, 13192, 13193, 13194, 13195, 13196, 13197, 13198, 13199, 13200, 11022, 4404, 7945, 4411, 4378, 1114, 11808, 11809, 576, 4153, 7936, 7946, 13201, 13202, 13203, 13204, 13205, 7226, 4218, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 13121 (getGiftStyleUrl)
+// Module 13189 (getGiftStyleUrl)
 import set from "set" /* 2 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7876 */;
-import metadataDefault from "metadata" /* 10953 */;
-import registerAssetDefault from "registerAsset" /* 13122 */;
-import registerAssetDefault2 from "registerAsset" /* 13123 */;
-import registerAssetDefault3 from "registerAsset" /* 13124 */;
-import registerAssetDefault4 from "registerAsset" /* 13125 */;
-import registerAssetDefault5 from "registerAsset" /* 13126 */;
-import registerAssetDefault6 from "registerAsset" /* 13127 */;
-import registerAssetDefault7 from "registerAsset" /* 13128 */;
-import registerAssetDefault8 from "registerAsset" /* 13129 */;
-import registerAssetDefault9 from "registerAsset" /* 13130 */;
-import registerAssetDefault10 from "registerAsset" /* 13131 */;
-import registerAssetDefault11 from "registerAsset" /* 13132 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7945 */;
+import metadataDefault from "metadata" /* 11022 */;
+import registerAssetDefault from "registerAsset" /* 13190 */;
+import registerAssetDefault2 from "registerAsset" /* 13191 */;
+import registerAssetDefault3 from "registerAsset" /* 13192 */;
+import registerAssetDefault4 from "registerAsset" /* 13193 */;
+import registerAssetDefault5 from "registerAsset" /* 13194 */;
+import registerAssetDefault6 from "registerAsset" /* 13195 */;
+import registerAssetDefault7 from "registerAsset" /* 13196 */;
+import registerAssetDefault8 from "registerAsset" /* 13197 */;
+import registerAssetDefault9 from "registerAsset" /* 13198 */;
+import registerAssetDefault10 from "registerAsset" /* 13199 */;
+import registerAssetDefault11 from "registerAsset" /* 13200 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "updateGiftCode" /* 11361 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "addSku" /* 4530 */;
-import ME from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "updateGiftCode" /* 11429 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "addSku" /* 5510 */;
+import ME from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
@@ -74,13 +74,13 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
       obj[0] = colors.borderColor;
       let tmp4 = backgroundColor;
       if (obj2.isThemeDark(forcedTheme)) {
-        const embedBackground = _require(4299).getEmbedBackground();
+        const embedBackground = _require(4378).getEmbedBackground();
         let tmp5Result = closure_4(embedBackground);
         if (tmp5Result == null) {
           tmp5Result = backgroundColor;
         }
         tmp4 = tmp5Result;
-        const tmp3Result = _require(4299);
+        const tmp3Result = _require(4378);
         const tmp5 = closure_4;
       }
       obj[1] = tmp4;

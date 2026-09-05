@@ -1,27 +1,27 @@
-// Module ID: 7701
-// Function ID: 7702
+// Module ID: 7769
+// Function ID: 7770
 // Name: collectForumAnalyticsMetadata
-// Dependencies: [5467, 4122, 7702, 7244, 1386, 4862, 4120, 4861, 7217, 673, 1393, 1232, 7703, 1396, 7704, 11, 7705, 2]
+// Dependencies: [5507, 4201, 7770, 7306, 1957, 4901, 4199, 4900, 7277, 1074, 1964, 1113, 7771, 1966, 7772, 11, 7773, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumChannelSessionId, getForumPostAttachmentMimetypes, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
-// Module 7701 (collectForumAnalyticsMetadata)
+// Module 7769 (collectForumAnalyticsMetadata)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import set2 from "set" /* 1396 */;
-import getForumChannelSessionIdDefault from "getForumChannelSessionId" /* 7703 */;
-import setFilterTagIdsDefault from "setFilterTagIds" /* 7704 */;
-import closure_3 from "handleThreadCreateOrUpdate" /* 5467 */;
-import closure_4 from "storeThread" /* 4122 */;
-import closure_5 from "updateFromGuild" /* 7702 */;
-import closure_6 from "updateState" /* 7244 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleChanged" /* 4862 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "map" /* 4861 */;
-import closure_12 from "handleLoadThreadsSuccess" /* 7217 */;
-import { Permissions } from "ME" /* 673 */;
-import { ChannelFlags } from "set" /* 1393 */;
-import { ThreadSortOrderReadableForAnalytics as closure_15 } from "AbortCodes" /* 1232 */;
+import set2 from "set" /* 1966 */;
+import getForumChannelSessionIdDefault from "getForumChannelSessionId" /* 7771 */;
+import setFilterTagIdsDefault from "setFilterTagIds" /* 7772 */;
+import closure_3 from "handleThreadCreateOrUpdate" /* 5507 */;
+import closure_4 from "storeThread" /* 4201 */;
+import closure_5 from "updateFromGuild" /* 7770 */;
+import closure_6 from "updateState" /* 7306 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "handleChanged" /* 4901 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "map" /* 4900 */;
+import closure_12 from "handleLoadThreadsSuccess" /* 7277 */;
+import { Permissions } from "ME" /* 1074 */;
+import { ChannelFlags } from "set" /* 1964 */;
+import { ThreadSortOrderReadableForAnalytics as closure_15 } from "AbortCodes" /* 1113 */;
 
 require = arg1;
 function collectForumAnalyticsMetadata(sessionId) {
@@ -65,11 +65,11 @@ function collectForumAnalyticsMetadata(sessionId) {
       const obj3 = setFilterTagIdsDefault;
       obj[7] = setFilterTagIdsDefault.getSortOrderAnalytics(channel.id);
       if (sessionId == null) {
-        let tmp8Result = tmp8(7703);
+        let tmp8Result = tmp8(7771);
         sessionId = tmp8Result.getForumChannelSessionId(channel.id);
       }
       obj[8] = sessionId;
-      tmp8Result = tmp8(7704);
+      tmp8Result = tmp8(7772);
       obj[9] = tmp8Result.getLayoutAnalytics(channel.id);
       obj[10] = channel.defaultSortOrder;
       const obj4 = setFilterTagIdsDefault;
@@ -251,14 +251,14 @@ export const collectForumPostAnalyticsMetadata = function collectForumPostAnalyt
           }
           obj.forum_post_applied_tag_ids = items;
           obj.forum_post_is_pinned = channel.hasFlag(ChannelFlags.PINNED);
-          let tmp8Result = tmp8(7705);
+          let tmp8Result = tmp8(7773);
           const readStateSnapshotAnalytics = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let isNew;
           if (readStateSnapshotAnalytics != null) {
             isNew = readStateSnapshotAnalytics.isNew;
           }
           obj.forum_post_is_new = isNew;
-          tmp8Result = tmp8(7705);
+          tmp8Result = tmp8(7773);
           const readStateSnapshotAnalytics1 = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let hasUnreads;
           if (readStateSnapshotAnalytics1 != null) {

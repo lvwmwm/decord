@@ -1,26 +1,26 @@
-// Module ID: 5240
-// Function ID: 5241
+// Module ID: 5279
+// Function ID: 5280
 // Name: filterPlayingActivities
-// Dependencies: [5241, 1339, 4517, 5371, 4520, 11389, 4572, 4499, 673, 4529, 4166, 1399, 10822, 656, 12, 586, 706, 2]
+// Dependencies: [5280, 1221, 1931, 5410, 7397, 11457, 4600, 4578, 1074, 7399, 1935, 1384, 10891, 1332, 12, 504, 573, 2]
 
-// Module 5240 (filterPlayingActivities)
+// Module 5279 (filterPlayingActivities)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10822 */;
-import closure_3 from "upsertAccount" /* 5241 */;
-import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_5 from "gameFromServer" /* 4517 */;
-import closure_6 from "checkIdleAFK" /* 5371 */;
-import closure_7 from "setLibraryApplications" /* 4520 */;
-import closure_8 from "updateActivities" /* 11389 */;
-import closure_9 from "sortActivity" /* 4572 */;
-import { sortActivity } from "sortActivity" /* 4572 */;
-import closure_11 from "handleUpdate" /* 4499 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 1332 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10891 */;
+import closure_3 from "upsertAccount" /* 5280 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_5 from "gameFromServer" /* 1931 */;
+import closure_6 from "checkIdleAFK" /* 5410 */;
+import closure_7 from "setLibraryApplications" /* 7397 */;
+import closure_8 from "updateActivities" /* 11457 */;
+import closure_9 from "sortActivity" /* 4600 */;
+import { sortActivity } from "sortActivity" /* 4600 */;
+import closure_11 from "handleUpdate" /* 4578 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function filterPlayingActivities(arg0) {
@@ -71,22 +71,22 @@ function shouldShowActivity(flags) {
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          let tmpResult = tmp(4529);
+          let tmpResult = tmp(7399);
           shouldShowActivityResult = tmpResult.shouldShareApplicationActivity(flags.application_id, closure_7);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        tmpResult = tmp(4529);
+        tmpResult = tmp(7399);
         let result = tmpResult.shouldShareApplicationActivity(flags.application_id, closure_7);
       } else {
         const searchGamesByNameResult = closure_5.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(4529).shouldShareApplicationActivity(searchGamesByNameResult[0], closure_7);
-          const tmpResult1 = tmp(4529);
+          result = tmp(7399).shouldShareApplicationActivity(searchGamesByNameResult[0], closure_7);
+          const tmpResult1 = tmp(7399);
         } else {
-          const ShowCurrentGame = tmp(4166).ShowCurrentGame;
+          const ShowCurrentGame = tmp(1935).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
@@ -97,8 +97,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(4529).shouldShareApplicationActivity(flags.application_id, closure_7);
-        const tmpResult2 = tmp(4529);
+        result1 = tmp(7399).shouldShareApplicationActivity(flags.application_id, closure_7);
+        const tmpResult2 = tmp(7399);
       }
       return result1;
     }

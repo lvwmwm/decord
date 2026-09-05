@@ -1,0 +1,12 @@
+// Module ID: 900
+// Function ID: 901
+// Name: __SENTRY_DEBUG__
+// Dependencies: []
+
+// Module 900 (__SENTRY_DEBUG__)
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+let __SENTRY_DEBUG__ = typeof globalThis.__SENTRY_DEBUG__ === "undefined";
+if (typeof globalThis.__SENTRY_DEBUG__ !== "undefined") {
+  __SENTRY_DEBUG__ = globalThis.__SENTRY_DEBUG__;
+}
+arg5.DEBUG_BUILD = __SENTRY_DEBUG__;

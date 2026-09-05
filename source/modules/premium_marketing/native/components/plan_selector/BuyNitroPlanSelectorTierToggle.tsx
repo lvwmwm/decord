@@ -1,17 +1,17 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13406
+// Function ID: 13407
 // Name: items
-// Dependencies: [32, 19, 17, 7366, 1923, 21, 4481, 709, 4218, 4482, 4485, 4484, 4948, 688, 13286, 4449, 4450, 4477, 1233, 2]
+// Dependencies: [32, 19, 17, 7432, 1373, 21, 4560, 576, 4296, 4561, 4564, 4563, 4987, 1093, 13358, 4528, 4529, 4556, 1114, 2]
 // Exports: default
 
-// Module 13334 (items)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 13406 (items)
+import ThemesDefault from "Themes" /* 576 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importDefaultResult;
@@ -21,7 +21,7 @@ let c3 = importDefaultResult;
 [tmp7, tmp8] = importDefaultResult(require("items").Gradients.PREMIUM_TIER_2, 2);
 let items = [tmp7, tmp8, tmp7, tmp8, tmp7];
 let closure_12 = [0, 0.25, 0.5, 0.75, 1];
-createCacheKey = { pill: null, tab: null, indicator: null, gradientLayer: null, gradientTrack: null, gradientFill: null, tabText: null };
+createCacheKey = { pill: null, tab: null, indicator: null, gradientLayer: null, gradientTrack: null, gradientFill: null };
 createCacheKey = { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", borderRadius: ThemesDefault.radii.lg, backgroundColor: ThemesDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, padding: ThemesDefault.space.PX_4 };
 createCacheKey[0] = createCacheKey;
 const importDefaultResultResult = importDefaultResult(require("items").Gradients.PREMIUM_TIER_2, 2);
@@ -36,7 +36,6 @@ obj4.right = undefined;
 obj4.width = 240;
 createCacheKey[4] = obj4;
 createCacheKey[5] = { flex: 1 };
-createCacheKey[6] = { fontStyle: "italic" };
 let closure_13 = createCacheKey.createStyles(createCacheKey);
 let closure_14 = { code: "function BuyNitroPlanSelectorTierToggleTsx1(){const{nitroProgress}=this.__closure;return{opacity:nitroProgress.get()};}" };
 let closure_15 = { code: "function BuyNitroPlanSelectorTierToggleTsx2(){const{gradientFlowX}=this.__closure;return{transform:[{translateX:gradientFlowX.get()}]};}" };
@@ -217,7 +216,7 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
           const result = current.set(closure_0, arg0);
         }
       },
-      style: closure_3.tab,
+      style: tab.tab,
       disabled: sharedValue1,
       onPress() {
         const result = callback(sharedValue1[15]).triggerHapticFeedback(sharedValue(sharedValue1[16]).SELECTION);
@@ -228,14 +227,14 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
       children: null
     };
     obj = { selected: tmp, disabled: sharedValue1 };
-    obj = { variant: "heading-sm/extrabold", color: str, style: closure_3.tabText, children: null };
+    obj = { variant: "nitro-xs", color: str, children: null };
     const intl = callback(sharedValue1[18]).intl;
     if (arg0 === sharedValue2.TIER_0) {
       let tUbSDK = callback(sharedValue1[18]).t.tUbSDK;
     } else {
       tUbSDK = ref[arg0];
     }
-    obj[3] = intl.string(tUbSDK).toUpperCase();
+    obj[2] = intl.string(tUbSDK);
     obj[6] = sharedValue3(callback(sharedValue1[17]).Text, obj);
     return sharedValue3(closure_5, obj, arg0);
   });

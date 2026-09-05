@@ -1,23 +1,23 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16743
+// Function ID: 16744
 // Name: Loading
-// Dependencies: [19, 17, 1981, 1908, 4303, 673, 21, 4481, 709, 5532, 5526, 586, 5553, 4305, 5482, 1219, 4335, 1627, 5533, 16666, 2]
+// Dependencies: [19, 17, 2012, 1979, 4382, 1074, 21, 4560, 576, 5577, 5571, 504, 5598, 4384, 5527, 1100, 4417, 1611, 5578, 16744, 2]
 
-// Module 16665 (Loading)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import MemberVerificationModalDefault from "MemberVerificationModal" /* 5526 */;
-import ActivityIndicator from "ActivityIndicator" /* 5532 */;
-import _modDef5533 from "module_5533" /* 5533 */;
+// Module 16743 (Loading)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import MemberVerificationModalDefault from "MemberVerificationModal" /* 5571 */;
+import ActivityIndicator from "ActivityIndicator" /* 5577 */;
+import _modDef5578 from "module_5578" /* 5578 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "comparator" /* 1981 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "comparator" /* 2012 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import makeAuthenticated from "makeAuthenticated" /* 16666 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import makeAuthenticated from "makeAuthenticated" /* 16744 */;
 
 require = arg1;
 function Loading() {
@@ -168,9 +168,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(_modDef5533, { marginLeft: null, marginRight: null });
+    obj[2] = jsx(_modDef5578, { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = _modDef5533;
+    const tmp3Result = _modDef5578;
   }
   return tmp10;
 });

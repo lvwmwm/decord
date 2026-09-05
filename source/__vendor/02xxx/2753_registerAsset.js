@@ -1,10 +1,10 @@
 // Module ID: 2753
 // Function ID: 2754
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 2753 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zX2luYm94", scales: [1], hash: "c7f2795d1917279dfa24dac2e9fedc0b", name: "uk.messages.c7f2795d1917279dfa24dac2e9fedc0b.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications", scales: [1], hash: "6da65e6eff3590b54eacf80338418194", name: "NotificationSettings.compiled.messages", type: "jsona" });

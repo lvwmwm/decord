@@ -1,12 +1,12 @@
-// Module ID: 8148
-// Function ID: 8149
+// Module ID: 8217
+// Function ID: 8218
 // Name: useAvatarDecoration
-// Dependencies: [32, 1991, 644, 2]
+// Dependencies: [32, 2021, 563, 2]
 // Exports: getAvatarDecoration, useAvatarDecoration
 
-// Module 8148 (useAvatarDecoration)
+// Module 8217 (useAvatarDecoration)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "trackCommunicationDisabled" /* 2021 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecoration.tsx");
@@ -15,7 +15,7 @@ export const useAvatarDecoration = function useAvatarDecoration(user, guildId) {
   const _require = user;
   dependencyMap = guildId;
   let items = [closure_3];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     const items = [closure_1_3];
     const first = closure_1_2(items, 1)[0];
     let member = null;

@@ -1,9 +1,9 @@
-// Module ID: 4701
-// Function ID: 4702
+// Module ID: 4733
+// Function ID: 4734
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4701 (metadata)
+// Module 4733 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-bg-2.webp.js");

@@ -1,23 +1,23 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9686
+// Function ID: 9687
 // Name: StageChannelRaiseHandAck
-// Dependencies: [5, 32, 19, 17, 4186, 1391, 673, 21, 1233, 4481, 709, 4681, 586, 4953, 9616, 8550, 9605, 5383, 8341, 8343, 8328, 8324, 1296, 4477, 4937, 4936, 9607, 9512, 4416, 1363, 9410, 4989, 2]
+// Dependencies: [5, 32, 19, 17, 4251, 1962, 1074, 21, 1114, 4560, 576, 4713, 504, 4992, 9687, 8620, 9676, 5422, 8411, 8413, 8398, 8394, 1178, 4556, 4976, 4975, 9678, 9583, 4495, 4269, 9481, 5028, 2]
 // Exports: default
 
-// Module 9615 (StageChannelRaiseHandAck)
-import ThemesDefault from "Themes" /* 709 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9607 */;
+// Module 9686 (StageChannelRaiseHandAck)
+import ThemesDefault from "Themes" /* 576 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4992 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9678 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "setContent" /* 4186 */;
-import closure_9 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import { Fonts } from "ME" /* 673 */;
+import closure_8 from "setContent" /* 4251 */;
+import closure_9 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import { Fonts } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class StageChannelRaiseHandAck {
@@ -60,19 +60,19 @@ class StageChannelRaiseHandAck {
                 if (null != lib) {
                   if (obj9.shouldAgeVerifyToSpeakForCurrentUser(lib.id)) {
                     obj1 = { entryPoint: null };
-                    obj1[0] = tmp42(8343).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
-                    const result = closure_1_1(8341).showAgeVerificationGetStartedModal(obj1);
-                    const obj4 = closure_1_1(8341);
+                    obj1[0] = tmp42(8413).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
+                    const result = closure_1_1(8411).showAgeVerificationGetStartedModal(obj1);
+                    const obj4 = closure_1_1(8411);
                   } else {
                     dependencyMap(true);
                     dependencyMap = 1;
                     c4 = 2;
                     c5 = 1;
                     const obj2 = { value: null, done: false };
-                    obj2[0] = tmp42(8328).audienceAckRequestToSpeak(lib, false);
+                    obj2[0] = tmp42(8398).audienceAckRequestToSpeak(lib, false);
                     return obj2;
                   }
-                  obj9 = lib(5383);
+                  obj9 = lib(5422);
                 }
                 c5 = 3;
               }
@@ -88,8 +88,8 @@ class StageChannelRaiseHandAck {
               dependencyMap = 0;
               dependencyMap(false);
               if (null == closure_1_8.getKey()) {
-                closure_1_2(8324).openStageChannel(lib);
-                const obj8 = closure_1_2(8324);
+                closure_1_2(8394).openStageChannel(lib);
+                const obj8 = closure_1_2(8394);
               }
             }
             dependencyMap = 0;
@@ -298,12 +298,12 @@ export default function GlobalStageChannelStatus(arg0) {
   }
   let stringResult = computeChannelNameDefault(channel);
   if (stringResult == null) {
-    const intl = id(1233).intl;
-    stringResult = intl.string(id(1233).t["/YzI63"]);
+    const intl = id(1114).intl;
+    stringResult = intl.string(id(1114).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(9512)(id);
-  let obj = id(586);
+  let invitedHeaderText = tmp3(9583)(id);
+  let obj = id(504);
   const items = [closure_9];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_9.getStageInstanceByChannel(id), items1);
@@ -314,7 +314,7 @@ export default function GlobalStageChannelStatus(arg0) {
   }
   if (!invitedHeaderText) {
     if (!tmp7) {
-      let tmp8Result = tmp8(1363);
+      let tmp8Result = tmp8(4269);
       let str = "dark-content";
     }
     if (null != channel) {
@@ -338,13 +338,13 @@ export default function GlobalStageChannelStatus(arg0) {
           obj[0] = tmp.noticeContainer;
           obj1 = { animated: true, barStyle: null };
           obj1[1] = str;
-          const items2 = [callback2(tmp3(9410), obj1), , ];
+          const items2 = [callback2(tmp3(9481), obj1), , ];
           const obj2 = { style: null, size: null, source: null };
           obj2[0] = activeSpeakerIcon;
-          obj2[1] = tmp8(1296).Icon.Sizes.REFRESH_SMALL_16;
-          tmp8Result = tmp8(4989);
+          obj2[1] = tmp8(1178).Icon.Sizes.REFRESH_SMALL_16;
+          tmp8Result = tmp8(5028);
           obj2[2] = tmp8Result.getChannelIconWithGuild(channel, guild);
-          items2[1] = callback2(tmp8(1296).Icon, obj2);
+          items2[1] = callback2(tmp8(1178).Icon, obj2);
           tmp13Result = "" !== str2;
           if (tmp13Result) {
             const items3 = [tmp.topic, ];
@@ -361,7 +361,7 @@ export default function GlobalStageChannelStatus(arg0) {
             }
             items4[1] = tmp17;
             obj3[1] = items4;
-            tmp13Result = tmp13(tmp8(1296).LegacyText, obj3);
+            tmp13Result = tmp13(tmp8(1178).LegacyText, obj3);
           }
           const items5 = [tmp13Result, ];
           let tmp15Result = !tmp12;
@@ -374,12 +374,12 @@ export default function GlobalStageChannelStatus(arg0) {
             items6[1] = invitedHeaderText;
             obj4[0] = items6;
             obj4[1] = combined;
-            tmp15Result = tmp15(tmp8(1296).LegacyText, obj4);
+            tmp15Result = tmp15(tmp8(1178).LegacyText, obj4);
           }
           const obj5 = { numberOfLines: 1, children: null };
           items5[1] = tmp15Result;
           obj5[1] = items5;
-          items2[2] = closure_11(tmp8(1296).LegacyText, obj5);
+          items2[2] = closure_11(tmp8(1178).LegacyText, obj5);
           obj[1] = items2;
           tmp13Result = tmp13(View, obj);
           const tmp14 = View;

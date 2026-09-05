@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12581
+// Function ID: 12582
 // Name: BOOST_EXPIRING_DISPLAY_WINDOW_DAYS
 // Dependencies: [11, 2]
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp
 
-// Module 12513 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
+// Module 12581 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 

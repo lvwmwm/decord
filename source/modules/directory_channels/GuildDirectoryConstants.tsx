@@ -1,15 +1,15 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12305
+// Function ID: 12306
 // Name: DirectoryEntryTypes
-// Dependencies: [673, 1233, 4125, 503, 2]
+// Dependencies: [1074, 1114, 4204, 1086, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 12237 (DirectoryEntryTypes)
+// Module 12305 (DirectoryEntryTypes)
 import set from "set" /* 2 */;
-import fromStringAll from "fromString" /* 503 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import ME from "ME" /* 673 */;
+import fromStringAll from "fromString" /* 1086 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import ME from "ME" /* 1074 */;
 
 ({ ChannelTypes: c3, Permissions: c4 } = ME);
 let obj = { CREATE: "CREATE", HUB_SCHOOL_CLUB: "HUB_SCHOOL_CLUB", HUB_STUDY: "HUB_STUDY", HUB_CLASS: "HUB_CLASS", HUB_SOCIAL: "HUB_SOCIAL", HUB_MAJOR: "HUB_MAJOR", HUB_DORM: "HUB_DORM" };

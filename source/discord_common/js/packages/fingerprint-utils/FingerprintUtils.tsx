@@ -1,10 +1,10 @@
-// Module ID: 510
-// Function ID: 511
+// Module ID: 1255
+// Function ID: 1256
 // Name: extractId
 // Dependencies: [2]
 // Exports: extractId, maybeExtractId
 
-// Module 510 (extractId)
+// Module 1255 (extractId)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/fingerprint-utils/FingerprintUtils.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12931
+// Function ID: 12932
 // Name: deferJoinActivityApplication
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: default
 
-// Module 12863 (deferJoinActivityApplication)
+// Module 12931 (deferJoinActivityApplication)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/deferJoinActivityInChannel.tsx");
 

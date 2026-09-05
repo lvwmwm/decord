@@ -1,17 +1,17 @@
-// Module ID: 17663
-// Function ID: 17664
+// Module ID: 17743
+// Function ID: 17744
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 17649, 15129, 21, 17653, 1233, 17643, 2]
+// Dependencies: [32, 19, 17729, 15205, 21, 17733, 1114, 17723, 2]
 // Exports: default
 
-// Module 17663 (GuildRoleSubscriptionGroupGatingModal)
+// Module 17743 (GuildRoleSubscriptionGroupGatingModal)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17643 */;
-import HeaderDefault from "Header" /* 17653 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17723 */;
+import HeaderDefault from "Header" /* 17733 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "usePriceTiers" /* 17649 */;
-import { GuildRoleSubscriptionsTierScenes as closure_5 } from "MAX_SUBSCRIPTION_TIERS" /* 15129 */;
+import closure_4 from "usePriceTiers" /* 17729 */;
+import { GuildRoleSubscriptionsTierScenes as closure_5 } from "MAX_SUBSCRIPTION_TIERS" /* 15205 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

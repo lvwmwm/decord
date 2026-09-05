@@ -1,14 +1,14 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12431
+// Function ID: 12432
 // Name: EmojiSuggestionBarSmallAnimated
-// Dependencies: [19, 10219, 21, 709, 4481, 12358, 4218, 10239, 10257, 4205, 2]
+// Dependencies: [19, 10290, 21, 576, 4560, 12426, 4296, 10310, 10328, 4271, 2]
 
-// Module 12363 (EmojiSuggestionBarSmallAnimated)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4218 from "module_4218" /* 4218 */;
+// Module 12431 (EmojiSuggestionBarSmallAnimated)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4296 from "module_4296" /* 4296 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function EmojiSuggestionBarSmallAnimated(displayEmojis) {
@@ -16,7 +16,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   ({ reducedMotion: importDefault, handlePress: dependencyMap, handlePressEmojiUnavailable: closure_3, transitionState } = displayEmojis);
   let suggestionBarHeight;
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
-  let obj = displayEmojis(12358);
+  let obj = displayEmojis(12426);
   suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, closure_6, onOccupiedHeightChange);
   const tmp = callback(displayEmojis.anchorTop);
   class A {
@@ -29,11 +29,11 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
       return obj;
     }
   }
-  obj = { interpolate: displayEmojis(4218).interpolate, heightSv: suggestionBarHeight, CONTAINER_SMALL_WRAPPER_HEIGHT: closure_6 };
+  obj = { interpolate: displayEmojis(4296).interpolate, heightSv: suggestionBarHeight, CONTAINER_SMALL_WRAPPER_HEIGHT: closure_6 };
   A.__closure = obj;
   A.__workletHash = 1856279964267;
   A.__initData = closure_8;
-  const animatedStyle = displayEmojis(4218).useAnimatedStyle(A);
+  const animatedStyle = displayEmojis(4296).useAnimatedStyle(A);
   obj = {
     style: items,
     children: displayEmojis.map((emoji, index) => {
@@ -52,7 +52,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
     })
   };
   items = [tmp.containerSmall, animatedStyle];
-  return suggestionBarHeight(_modDef4218.View, obj);
+  return suggestionBarHeight(_modDef4296.View, obj);
 }
 let c3 = importAllResult;
 const sum = require("IMAGE_SIZE").IMAGE_SIZE + 2 * ThemesDefault.space.PX_8 + 2;

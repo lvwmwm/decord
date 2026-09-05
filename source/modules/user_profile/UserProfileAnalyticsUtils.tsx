@@ -1,28 +1,28 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8191
+// Function ID: 8192
 // Name: getProfileProperties
-// Dependencies: [8123, 7047, 7592, 4503, 1991, 4572, 4130, 1921, 7554, 8114, 673, 502, 1431, 8117, 695, 4708, 8129, 2]
+// Dependencies: [8192, 7107, 7659, 4582, 2021, 4600, 4209, 1371, 7621, 8183, 1074, 1085, 1396, 8186, 1242, 4740, 8198, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8122 (getProfileProperties)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
-import useDisplayProfile from "useDisplayProfile" /* 8117 */;
-import isUserProfilePerformanceAnalyticsEnabled from "isUserProfilePerformanceAnalyticsEnabled" /* 8129 */;
-import closure_3 from "initialize" /* 8123 */;
-import closure_4 from "recomputeFromAppTokens" /* 7047 */;
-import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
-import closure_6 from "recomputeAffinities" /* 7592 */;
-import closure_7 from "reset" /* 4503 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "sortActivity" /* 4572 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import closure_12 from "createUserWidgetFromServer" /* 7554 */;
-import { TrackUserProfileProperties as closure_13 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import ME from "ME" /* 673 */;
-import { StatusTypes } from "sum" /* 502 */;
+// Module 8191 (getProfileProperties)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
+import useDisplayProfile from "useDisplayProfile" /* 8186 */;
+import isUserProfilePerformanceAnalyticsEnabled from "isUserProfilePerformanceAnalyticsEnabled" /* 8198 */;
+import closure_3 from "initialize" /* 8192 */;
+import closure_4 from "recomputeFromAppTokens" /* 7107 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7107 */;
+import closure_6 from "recomputeAffinities" /* 7659 */;
+import closure_7 from "reset" /* 4582 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "sortActivity" /* 4600 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import closure_12 from "createUserWidgetFromServer" /* 7621 */;
+import { TrackUserProfileProperties as closure_13 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import ME from "ME" /* 1074 */;
+import { StatusTypes } from "sum" /* 1085 */;
 
 require = arg1;
 function getProfileProperties(guildMemberProfile) {
@@ -373,9 +373,9 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
     }
     if (!tmp5) {
       trackResult = {};
-      let tmpResult = tmp(4708);
+      let tmpResult = tmp(4740);
       const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(guildId));
-      tmpResult = tmp(4708);
+      tmpResult = tmp(4740);
       const merged1 = Object.assign(tmpResult.collectChannelAnalyticsMetadataFromId(channelId));
       const merged2 = Object.assign(getTrackUserProfileProperties(userId));
       userId = userId.userId;

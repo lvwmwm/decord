@@ -1,10 +1,10 @@
-// Module ID: 7495
-// Function ID: 7496
+// Module ID: 7562
+// Function ID: 7563
 // Name: fromServer
-// Dependencies: [1935, 7485, 685, 2]
+// Dependencies: [1386, 7552, 1091, 2]
 
-// Module 7495 (fromServer)
-import toJSDefault from "toJS" /* 1935 */;
+// Module 7562 (fromServer)
+import toJSDefault from "toJS" /* 1386 */;
 
 const require = arg1;
 toJSDefault;
@@ -20,16 +20,16 @@ class prototype extends tmp2 {
 prototype["fromServer"] = function fromServer(arg0) {
   ({ background_colors, button_colors, confetti_colors } = arg0);
   const mapped = background_colors.map((color) => {
-    const tmp = callback2(7485);
-    return tmp(callback(685).int2hex(color));
+    const tmp = callback2(7552);
+    return tmp(callback(1091).int2hex(color));
   });
   const mapped1 = button_colors.map((color) => {
-    const tmp = callback2(7485);
-    return tmp(callback(685).int2hex(color));
+    const tmp = callback2(7552);
+    return tmp(callback(1091).int2hex(color));
   });
   const mapped2 = confetti_colors.map((color) => {
-    const tmp = callback2(7485);
-    return tmp(callback(685).int2hex(color));
+    const tmp = callback2(7552);
+    return tmp(callback(1091).int2hex(color));
   });
   if (typeof prototype !== "function") {
     HermesBuiltin.throwTypeError();

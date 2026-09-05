@@ -1,17 +1,17 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9469
+// Function ID: 9470
 // Name: areParticipantStatesEqual
-// Dependencies: [32, 1385, 4497, 4503, 4532, 4500, 4502, 586, 2]
+// Dependencies: [32, 1956, 4576, 4582, 1908, 4579, 4581, 504, 2]
 // Exports: default
 
-// Module 9398 (areParticipantStatesEqual)
+// Module 9469 (areParticipantStatesEqual)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "getParticipants" /* 4497 */;
-import closure_5 from "reset" /* 4503 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_7 from "updateVoiceState" /* 4500 */;
-import { isActivityParticipant } from "ParticipantTypes" /* 4502 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "getParticipants" /* 4576 */;
+import closure_5 from "reset" /* 4582 */;
+import closure_6 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_7 from "updateVoiceState" /* 4579 */;
+import { isActivityParticipant } from "ParticipantTypes" /* 4581 */;
 
 const require = arg1;
 function areParticipantStatesEqual(arg0, arg1) {
@@ -33,11 +33,11 @@ export default function useIsPrivateAudioOnlyCall(id) {
     }, items1, areParticipantStatesEqual), 1)[0]);
   }
   dependencyMap = tmp3;
-  obj = _require(586);
+  obj = _require(504);
   const tmp = _require;
   const items2 = [closure_7, closure_6, closure_5];
   const items3 = [id, tmp3];
-  return _require(586).useStateFromStores(items2, () => {
+  return _require(504).useStateFromStores(items2, () => {
     let isPrivateResult = _private.isPrivate();
     if (isPrivateResult) {
       isPrivateResult = !closure_1_7.hasVideo(tmp.id);

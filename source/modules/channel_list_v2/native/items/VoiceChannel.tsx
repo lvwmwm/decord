@@ -1,22 +1,22 @@
-// Module ID: 16157
-// Function ID: 16158
+// Module ID: 16235
+// Function ID: 16236
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 19, 17, 7460, 4120, 4496, 4709, 4558, 10047, 673, 21, 709, 5018, 5524, 2008, 4735, 9591, 16155, 16158, 9400, 586, 16148, 10811, 4471, 7882, 9699, 695, 16149, 16038, 10844, 1233, 4673, 16052, 16043, 11991, 2]
+// Dependencies: [5, 19, 17, 7527, 4199, 4575, 4741, 4584, 10118, 1074, 21, 576, 5057, 5569, 1896, 4767, 9662, 16233, 16236, 9471, 504, 16226, 10880, 4550, 7951, 9770, 1242, 16227, 16116, 10913, 1114, 4705, 16130, 16121, 12059, 2]
 
-// Module 16157 (_handleVoiceChannelPress)
-import ThemesDefault from "Themes" /* 709 */;
-import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11991 */;
+// Module 16235 (_handleVoiceChannelPress)
+import ThemesDefault from "Themes" /* 576 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 12059 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 7460 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "generateOldThreadCutoff" /* 4496 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_10 from "getVoiceStatesForGuild" /* 4558 */;
-import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4558 */;
-import hairlineWidth from "hairlineWidth" /* 10047 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "handleConnectionOpen" /* 7527 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "generateOldThreadCutoff" /* 4575 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_10 from "getVoiceStatesForGuild" /* 4584 */;
+import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4584 */;
+import hairlineWidth from "hairlineWidth" /* 10118 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -308,13 +308,13 @@ let obj1 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borde
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   ({ selected, subtitle } = channel);
-  obj = channel(586);
+  obj = channel(504);
   const items = [closure_10];
   const items1 = [channel.guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getVoiceStates(channel.guild_id), items1);
   const arr3 = useEmbeddedAppsDefault(channel);
   const items2 = [closure_7, closure_6];
-  const stateFromStoresObject = channel(586).useStateFromStoresObject(items2, () => ({ locked: !closure_1_7.can(closure_1_14.CONNECT, channel), bypassLimit: closure_1_7.can(closure_1_14.MOVE_MEMBERS, channel), collapsed: closure_1_6.isCollapsed(channel.id) }));
+  const stateFromStoresObject = channel(504).useStateFromStoresObject(items2, () => ({ locked: !closure_1_7.can(closure_1_14.CONNECT, channel), bypassLimit: closure_1_7.can(closure_1_14.MOVE_MEMBERS, channel), collapsed: closure_1_6.isCollapsed(channel.id) }));
   obj = { channel, embeddedActivitiesCount: null, collapsed: null, voiceStates: null, selected: null, locked: null, bypassLimit: null, subtitle: null };
   let num;
   ({ locked, bypassLimit, collapsed } = stateFromStoresObject);

@@ -1,13 +1,13 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7709
+// Function ID: 7710
 // Name: getQuestLogger
-// Dependencies: [703, 502, 3, 2]
+// Dependencies: [1347, 1085, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7642 (getQuestLogger)
+// Module 7709 (getQuestLogger)
 import timestampDefault from "timestamp" /* 3 */;
-import closure_2 from "refreshSourceMapCookie" /* 703 */;
-import { NOOP } from "sum" /* 502 */;
+import closure_2 from "refreshSourceMapCookie" /* 1347 */;
+import { NOOP } from "sum" /* 1085 */;
 
 const result = require("set").fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
 

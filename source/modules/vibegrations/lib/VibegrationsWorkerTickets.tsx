@@ -1,12 +1,12 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16593
+// Function ID: 16594
 // Name: mintTicket
-// Dependencies: [5, 673, 527, 16518, 2]
+// Dependencies: [5, 1074, 1272, 16594, 2]
 // Exports: mintRemixTicket, mintWorkerTicket
 
-// Module 16517 (mintTicket)
+// Module 16593 (mintTicket)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function mintTicket(Endpoints) {

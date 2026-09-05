@@ -1,14 +1,14 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7243
+// Function ID: 7244
 // Name: _signOrder
-// Dependencies: [5, 673, 3, 4161, 527, 4154, 2]
+// Dependencies: [5, 1074, 3, 4240, 1272, 4233, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7183 (_signOrder)
+// Module 7243 (_signOrder)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 4161 */;
+import setDefault from "set" /* 4240 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _signOrder() {
@@ -72,7 +72,7 @@ function _signOrder() {
                 c4.expected_revision = dependencyMap;
               }
               c4 = 1;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj2 = { url: null, body: null, context: null, rejectWithError: true };
               obj2[0] = closure_3.ORDER_SIGN(callback);
               obj2[1] = c4;
@@ -94,7 +94,7 @@ function _signOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             c5 = closure_3;
-            if (c5 instanceof callback(527).HTTPResponseError) {
+            if (c5 instanceof callback(1272).HTTPResponseError) {
               if (400 === c5.status) {
                 if ((function isOrderShape(body) {
                   let tmp = null != body && typeof body === "object";

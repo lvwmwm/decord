@@ -1,15 +1,15 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14873
+// Function ID: 14874
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4481, 709, 14790, 14791, 4190, 4477, 14799, 1233, 2368, 2]
+// Dependencies: [19, 21, 4560, 576, 14865, 14866, 4255, 4556, 14874, 1114, 2396, 2]
 // Exports: default
 
-// Module 14798 (FamilyCenterParentalConsentNotice)
-import ThemesDefault from "Themes" /* 709 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14799 */;
+// Module 14873 (FamilyCenterParentalConsentNotice)
+import ThemesDefault from "Themes" /* 576 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14874 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { container: null, link: null };
@@ -22,9 +22,9 @@ const result = require("set").fileFinishedImporting("modules/parent_tools/native
 export default function FamilyCenterParentalConsentNotice() {
   const tmp = callback();
   const _require = tmp;
-  let obj = _require(14790);
+  let obj = _require(14865);
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  obj1 = _require(14791);
+  obj1 = _require(14866);
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (parentalConsentWarning != null) {
@@ -45,16 +45,16 @@ export default function FamilyCenterParentalConsentNotice() {
         obj = { style: null, text: null };
         obj[0] = tmp.container;
         if (0 === daysRemaining) {
-          const intl2 = tmp2(1233).intl;
+          const intl2 = tmp2(1114).intl;
           obj = { learnMoreHook: null };
           obj[0] = learnMoreHook;
-          let formatResult = intl2.format(tmp9(2368).S5kmfO, obj);
+          let formatResult = intl2.format(tmp9(2396).S5kmfO, obj);
         } else {
-          const intl = tmp2(1233).intl;
+          const intl = tmp2(1114).intl;
           obj1 = { count: null, learnMoreHook: null };
           obj1[0] = daysRemaining;
           obj1[1] = learnMoreHook;
-          formatResult = intl.format(tmp9(2368)["5jm+T3"], obj1);
+          formatResult = intl.format(tmp9(2396)["5jm+T3"], obj1);
         }
         obj[1] = formatResult;
         return jsx(FamilyCenterInlineWarningNoticeDefault, { style: null, text: null });

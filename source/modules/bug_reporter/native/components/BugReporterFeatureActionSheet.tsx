@@ -1,17 +1,17 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10211
+// Function ID: 10212
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4481, 709, 4477, 10116, 5560, 4448, 5644, 6921, 12, 5472, 6989, 10141, 7090, 7089, 1233, 6990, 6995, 2]
+// Dependencies: [32, 19, 17, 21, 4560, 576, 4556, 10187, 5605, 4527, 5689, 6981, 12, 5517, 7049, 10212, 7150, 7149, 1114, 7050, 7055, 2]
 // Exports: default
 
-// Module 10140 (BugReporterFeatureActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
+// Module 10211 (BugReporterFeatureActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -35,9 +35,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10116);
+  let obj = item(10187);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10116).getFeatureId(feature);
+  const featureId1 = item(10187).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -46,10 +46,10 @@ let closure_10 = importAllResult.memo((item) => {
       setFeature(item);
       setFeature(closure_1_2[9]).hideActionSheet();
     },
-    trailing: callback(item(5644).FormRadio, obj)
+    trailing: callback(item(5689).FormRadio, obj)
   };
   obj = { selected: featureId === featureId1 };
-  return callback(item(5560).TableRow, obj);
+  return callback(item(5605).TableRow, obj);
 });
 const obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("set").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

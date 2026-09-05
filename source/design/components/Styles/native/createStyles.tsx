@@ -1,18 +1,18 @@
-// Module ID: 4481
-// Function ID: 4482
+// Module ID: 4560
+// Function ID: 4561
 // Name: createCacheKey
-// Dependencies: [32, 17, 4473, 4300, 4205, 1234, 709, 4198, 4218, 4482, 4485, 4413, 2]
+// Dependencies: [32, 17, 4552, 4379, 4271, 1115, 576, 4263, 4296, 4561, 4564, 4492, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
-// Module 4481 (createCacheKey)
-import ThemesDefault from "Themes" /* 709 */;
-import set2 from "set" /* 1234 */;
-import getSemanticColorContextFromThemeContext from "getSemanticColorContextFromThemeContext" /* 4198 */;
-import ManaContext from "ManaContext" /* 4205 */;
+// Module 4560 (createCacheKey)
+import ThemesDefault from "Themes" /* 576 */;
+import set2 from "set" /* 1115 */;
+import getSemanticColorContextFromThemeContext from "getSemanticColorContextFromThemeContext" /* 4263 */;
+import ManaContext from "ManaContext" /* 4271 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_6 from "reset" /* 4300 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_6 from "reset" /* 4379 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -67,7 +67,7 @@ function parseThemedStyles(obj, enabledExperiments) {
         let tmp16 = require;
         let obj3 = getSemanticColorContextFromThemeContext;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(arg1);
-        let internal4 = tmp6(709).internal;
+        let internal4 = tmp6(576).internal;
         obj[key10022] = internal4.resolveSemanticColor(theme, obj2, semanticColorContextFromThemeContext);
         continue;
       } else {
@@ -90,12 +90,12 @@ function parseThemedStyles(obj, enabledExperiments) {
               }
               let result = obj2;
               if (tmp) {
-                let internal2 = tmp6(709).internal;
+                let internal2 = tmp6(576).internal;
                 result = internal2.adjustColorSaturation(obj2, saturation, str);
               }
               let adjustColorContrastResult = result;
               if (1 !== contrast) {
-                let internal3 = tmp6(709).internal;
+                let internal3 = tmp6(576).internal;
                 let tmp11 = internal3;
                 let tmp12 = result;
                 let tmp13 = contrast;

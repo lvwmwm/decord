@@ -1,21 +1,21 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16387
+// Function ID: 16388
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4473, 5240, 1921, 15022, 673, 21, 4481, 709, 586, 1296, 4205, 4218, 8148, 8743, 4935, 4197, 8742, 8088, 4449, 7320, 2008, 6595, 2]
+// Dependencies: [5, 32, 19, 17, 4552, 5279, 1371, 15098, 1074, 21, 4560, 576, 504, 1178, 4271, 4296, 8217, 8813, 4974, 4262, 8812, 8157, 4528, 7382, 1896, 6655, 2]
 
-// Module 16311 (YouBarAvatarLarge)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16387 (YouBarAvatarLarge)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_9 from "filterPlayingActivities" /* 5240 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
-import { StatusTypes } from "ME" /* 673 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_9 from "filterPlayingActivities" /* 5279 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15098 */;
+import { StatusTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function YouBarAvatarLarge(transitionState) {

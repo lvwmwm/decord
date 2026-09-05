@@ -1,21 +1,21 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 11886
+// Function ID: 11887
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8360, 8349, 673, 21, 4481, 709, 4477, 586, 11812, 1498, 8350, 11817, 11813, 8348, 7063, 1233, 4936, 5579, 11819, 500, 11833, 11835, 11837, 11839, 11840, 5553, 6940, 2]
+// Dependencies: [5, 32, 19, 17, 8430, 8419, 1074, 21, 4560, 576, 4556, 504, 11880, 1483, 8420, 11885, 11881, 8418, 7123, 1114, 4975, 5624, 11887, 1250, 11901, 11903, 11905, 11907, 11908, 5598, 7000, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11818 (AppealIngestionModal)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
+// Module 11886 (AppealIngestionModal)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8360 */;
-import SafetyHubView from "SafetyHubView" /* 8349 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
+import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8430 */;
+import SafetyHubView from "SafetyHubView" /* 8419 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: c9, AppealIngestionSections: c10 } = SafetyHubView);
@@ -73,10 +73,10 @@ export default function AppealIngestionModal(classificationId) {
       let obj2 = _undefined(flag3[21]);
       obj[0] = obj2.getHeaderCloseButton(flag(flag3[15]).close);
       obj[1] = function headerTitle() {
-        return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+        return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
       };
       obj[2] = function render() {
-        return closure_1_12(callback2(11819), { isDsaEligible: closure_0, isSpam: callback2, isCoppa: closure_2, isDeveloperClassification: dependencyMap });
+        return closure_1_12(callback2(11887), { isDsaEligible: closure_0, isSpam: callback2, isCoppa: closure_2, isDeveloperClassification: dependencyMap });
       };
       obj[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_SPEED_BUMP;
       obj[4] = closure_1_9;
@@ -85,10 +85,10 @@ export default function AppealIngestionModal(classificationId) {
       let obj4 = _undefined(flag3[21]);
       obj[0] = obj4.getHeaderBackButton();
       obj[1] = function headerTitle() {
-        return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+        return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
       };
       obj[2] = function render() {
-        return closure_1_12(callback2(11833), { isDsaEligible: closure_0 });
+        return closure_1_12(callback2(11901), { isDsaEligible: closure_0 });
       };
       obj[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL;
       obj[4] = closure_1_9;
@@ -96,10 +96,10 @@ export default function AppealIngestionModal(classificationId) {
       obj1 = {
         headerLeft: _undefined(flag3[21]).getHeaderBackButton(),
         headerTitle() {
-          return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+          return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
         },
         render() {
-          return closure_1_12(callback2(11835), { isDsaEligible: closure_0 });
+          return closure_1_12(callback2(11903), { isDsaEligible: closure_0 });
         },
         impressionName: _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION,
         impressionProperties: closure_1_9
@@ -109,10 +109,10 @@ export default function AppealIngestionModal(classificationId) {
       const obj7 = _undefined(flag3[21]);
       obj2[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj2[1] = function headerTitle() {
-        return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+        return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
       };
       obj2[2] = function render() {
-        return callback3(callback2(11837), {});
+        return callback3(callback2(11905), {});
       };
       obj2[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_REQUEST_SENT;
       obj2[4] = closure_1_9;
@@ -121,10 +121,10 @@ export default function AppealIngestionModal(classificationId) {
       const obj9 = _undefined(flag3[21]);
       obj3[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj3[1] = function headerTitle() {
-        return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+        return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
       };
       obj3[2] = function render() {
-        return callback3(callback2(11839), {});
+        return callback3(callback2(11907), {});
       };
       obj3[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_THANKS;
       obj3[4] = closure_1_9;
@@ -133,10 +133,10 @@ export default function AppealIngestionModal(classificationId) {
       const obj11 = _undefined(flag3[21]);
       obj4[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj4[1] = function headerTitle() {
-        return callback3(callback(4477).Text, { variant: "text-md/normal", children: "accessible" });
+        return callback3(callback(4556).Text, { variant: "text-md/normal", children: "accessible" });
       };
       obj4[2] = function render() {
-        return callback3(callback2(11840), {});
+        return callback3(callback2(11908), {});
       };
       obj4[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_SPAM;
       obj4[4] = closure_1_9;
@@ -295,7 +295,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
               v0 = 2;
               c5 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_2(11813).requestReview(tmp36, closure_1_0, closure_1_1);
+              obj1[0] = closure_1_2(11881).requestReview(tmp36, closure_1_0, closure_1_1);
               return obj1;
             }
           }
@@ -303,7 +303,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
           if (1 === tmp7) {
             dependencyMap = 0;
             body = closure_2;
-            obj1 = closure_1_0(8348);
+            obj1 = closure_1_0(8418);
             body = body.body;
             let code;
             if (body != null) {

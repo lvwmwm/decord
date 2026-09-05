@@ -1,9 +1,9 @@
-// Module ID: 6231
-// Function ID: 6232
+// Module ID: 6286
+// Function ID: 6287
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6231 (metadata)
+// Module 6286 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRocketNameplateAbstractUI-2x.png.js");

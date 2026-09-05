@@ -1,9 +1,9 @@
-// Module ID: 5425
-// Function ID: 5426
+// Module ID: 5465
+// Function ID: 5466
 // Name: getAsync
-// Dependencies: [5, 3, 1955, 2]
+// Dependencies: [5, 3, 1986, 2]
 
-// Module 5425 (getAsync)
+// Module 5465 (getAsync)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;
@@ -56,8 +56,8 @@ prototype["getAsync"] = function getAsync(arg0) {
 prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGuilds, database) {
   const self = this;
   const items = [...unavailableGuilds.unavailableGuilds];
-  const obj = set(1955);
-  set(1955).emojisTransaction(database).deleteAllExcept(items);
+  const obj = set(1986);
+  set(1986).emojisTransaction(database).deleteAllExcept(items);
   for (const item10027 of tmp2) {
     let handleOneGuildCreateResult = self.handleOneGuildCreate(item10027, arg1);
     continue;
@@ -112,17 +112,17 @@ prototype["resetInMemoryState"] = function resetInMemoryState() {
 
 };
 prototype["replace"] = function replace(arg0, arg1, database) {
-  const obj = set(1955);
-  const replaced = set(1955).emojisTransaction(database).replaceAll(arg0, arg1);
+  const obj = set(1986);
+  const replaced = set(1986).emojisTransaction(database).replaceAll(arg0, arg1);
 };
 prototype["delete"] = function delete(arg0, database) {
-  const obj = set(1955);
-  set(1955).emojisTransaction(database).delete(arg0);
+  const obj = set(1986);
+  set(1986).emojisTransaction(database).delete(arg0);
 };
 prototype["update"] = function update(arg0, arg1, arg2, database) {
-  const emojisTransactionResult = set(1955).emojisTransaction(database);
+  const emojisTransactionResult = set(1986).emojisTransaction(database);
   emojisTransactionResult.putAll(arg0, arg1);
-  const obj = set(1955);
+  const obj = set(1986);
   while (tmp2 !== undefined) {
     let deleteResult = emojisTransactionResult.delete(arg0, tmp3);
     continue;

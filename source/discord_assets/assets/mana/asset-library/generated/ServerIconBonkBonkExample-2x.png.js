@@ -1,9 +1,9 @@
-// Module ID: 6363
-// Function ID: 6364
+// Module ID: 6420
+// Function ID: 6421
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6363 (metadata)
+// Module 6420 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconBonkBonkExample-2x.png.js");

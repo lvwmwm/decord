@@ -1,10 +1,10 @@
-// Module ID: 503
-// Function ID: 504
+// Module ID: 1086
+// Function ID: 1087
 // Name: fromString
 // Dependencies: [32, 14, 2]
 // Exports: add, combine, flagNameOf, getBrandedFlag, has, hasAny, remove
 
-// Module 503 (fromString)
+// Module 1086 (fromString)
 import closure_2 from "_slicedToArray" /* 32 */;
 import tmp6Result from "module_0" /* 0 */;
 

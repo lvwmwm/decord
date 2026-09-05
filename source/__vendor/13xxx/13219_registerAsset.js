@@ -1,10 +1,10 @@
 // Module ID: 13219
 // Function ID: 13220
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13219 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "2a38db2647d78740ca056c705d4301a7", name: "wumpus-clock", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_templates/native/images", width: 32, height: 32, scales: [2, 3], hash: "10db56263423f61f9d871a4581be001b", name: "ic_guild_template", type: "png" });

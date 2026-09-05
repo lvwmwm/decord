@@ -1,19 +1,19 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16690
+// Function ID: 16691
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4481, 709, 4197, 13364, 4948, 8592, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4262, 13436, 4987, 8662, 2]
 // Exports: default
 
-// Module 16613 (GroupDMNitroCapBanner)
+// Module 16690 (GroupDMNitroCapBanner)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8592 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13364 */;
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8662 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13436 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

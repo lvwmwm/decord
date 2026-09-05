@@ -1,9 +1,9 @@
-// Module ID: 6483
-// Function ID: 6484
+// Module ID: 6540
+// Function ID: 6541
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6483 (metadata)
+// Module 6540 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TeaKettleSpotIllustration-2x.png.js");

@@ -1,23 +1,23 @@
-// Module ID: 8987
-// Function ID: 8988
+// Module ID: 9057
+// Function ID: 9058
 // Name: getMuteSettingLabel
-// Dependencies: [4122, 1386, 1908, 4130, 4709, 1921, 673, 682, 1233, 4681, 7697, 7059, 7054, 8988, 2]
+// Dependencies: [4201, 1957, 1979, 4209, 4741, 1371, 1074, 1084, 1114, 4713, 7765, 7119, 7114, 9058, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 8987 (getMuteSettingLabel)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import UserNotificationSettings from "UserNotificationSettings" /* 7054 */;
-import _modDef7059 from "module_7059" /* 7059 */;
-import getMuteSettingsAll from "getMuteSettings" /* 8988 */;
-import closure_4 from "storeThread" /* 4122 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { MuteUntilSeconds } from "MAX_FAVORITES" /* 682 */;
+// Module 9057 (getMuteSettingLabel)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import UserNotificationSettings from "UserNotificationSettings" /* 7114 */;
+import _modDef7119 from "module_7119" /* 7119 */;
+import getMuteSettingsAll from "getMuteSettings" /* 9058 */;
+import closure_4 from "storeThread" /* 4201 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { MuteUntilSeconds } from "MAX_FAVORITES" /* 1084 */;
 
 require = arg1;
 ({ ChannelTypes: c10, UserNotificationSettings: unpackModuleId } = ME);
@@ -67,10 +67,10 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp7Result = tmp7(7697);
+      let tmp7Result = tmp7(7765);
       const result = tmp7Result.setNotificationSettings(channel, { muted: false });
     } else {
-      tmp7Result = tmp7(7059);
+      tmp7Result = tmp7(7119);
       const result1 = tmp7Result.updateChannelOverrideSettings(guildId, channel.id, { muted: false, mute_config: null }, UserNotificationSettings.NotificationLabels.Unmuted);
     }
   }
@@ -85,15 +85,15 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp4Result = tmp4(7697);
+      let tmp4Result = tmp4(7765);
       const result = tmp4Result.setNotificationSettings(channel, muteSettings);
     } else {
-      tmp4Result = tmp4(7059);
+      tmp4Result = tmp4(7119);
       const result1 = tmp4Result.updateChannelOverrideSettings(guildId, channel.id, muteSettings, UserNotificationSettings.NotificationLabels.Muted);
     }
   } else if (null != guild) {
-    const result2 = _modDef7059.updateGuildNotificationSettings(guild.id, muteSettings, UserNotificationSettings.NotificationLabels.Muted);
-    const obj5 = _modDef7059;
+    const result2 = _modDef7119.updateGuildNotificationSettings(guild.id, muteSettings, UserNotificationSettings.NotificationLabels.Muted);
+    const obj5 = _modDef7119;
   }
 };
 export const getMuteSettings = function getMuteSettings(arg0) {

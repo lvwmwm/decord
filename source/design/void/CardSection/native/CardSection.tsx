@@ -1,17 +1,17 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8611
+// Function ID: 8612
 // Name: CardSection
-// Dependencies: [19, 17, 673, 21, 4481, 5479, 709, 8542, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 5524, 576, 8612, 2]
 // Exports: default
 
-// Module 8541 (CardSection)
+// Module 8611 (CardSection)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef8542 from "module_8542" /* 8542 */;
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef8612 from "module_8612" /* 8612 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 noopAll;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
@@ -33,7 +33,7 @@ export default function CardSection(arg0) {
     const items1 = [tmp.title, titleStyle];
     obj[0] = items1;
     obj[2] = title;
-    tmp4 = callback(_modDef8542, obj);
+    tmp4 = callback(_modDef8612, obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;

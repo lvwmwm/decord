@@ -1,9 +1,9 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8399
+// Function ID: 8400
 // Name: SafetyToastType
 // Dependencies: [2]
 
-// Module 8329 (SafetyToastType)
+// Module 8399 (SafetyToastType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/safety_common/Constants.tsx");

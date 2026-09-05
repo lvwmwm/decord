@@ -1,14 +1,14 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12392
+// Function ID: 12393
 // Name: iOSTrackAutocompleteOpen
-// Dependencies: [673, 695, 4708, 2]
+// Dependencies: [1074, 1242, 4740, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 12324 (iOSTrackAutocompleteOpen)
+// Module 12392 (iOSTrackAutocompleteOpen)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4708 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4740 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteAnalytics.tsx");

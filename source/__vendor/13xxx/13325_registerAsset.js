@@ -1,10 +1,10 @@
 // Module ID: 13325
 // Function ID: 13326
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13325 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 134, height: 56, scales: [2, 3], hash: "5491d41ca2212b1f11c074c452801d84", name: "img_discord_nitro_logo_centered_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 185, height: 32, scales: [2, 3], hash: "e0f9d218f8abae1fb9b3c6aeee68fd32", name: "img_logo_bundle_horizontal", type: "png" });

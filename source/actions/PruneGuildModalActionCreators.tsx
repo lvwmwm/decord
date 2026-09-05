@@ -1,11 +1,11 @@
-// Module ID: 16500
-// Function ID: 16501
-// Dependencies: [5, 673, 527, 2]
+// Module ID: 16576
+// Function ID: 16577
+// Dependencies: [5, 1074, 1272, 2]
 
-// Module 16500
-import sendRequest from "sendRequest" /* 527 */;
+// Module 16576
+import sendRequest from "sendRequest" /* 1272 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("actions/PruneGuildModalActionCreators.tsx");
@@ -19,14 +19,14 @@ export default {
     }
     const callback = arg2;
     return callback(function*() {
-      const HTTP = v0(527).HTTP;
+      const HTTP = v0(1272).HTTP;
       obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
       obj1[0] = closure_1_3.GUILD_PRUNE(v0);
       const obj2 = { days: null, include_roles: null };
       obj2[0] = dependencyMap;
       obj2[1] = closure_1_2;
       obj1[1] = obj2;
-      obj1[3] = v0(527).rejectWithMigratedError();
+      obj1[3] = v0(1272).rejectWithMigratedError();
       yield HTTP.get(obj1);
       return arg1.body.pruned;
     })();
@@ -65,14 +65,14 @@ export default {
               obj[0] = arg1;
               return obj;
             } else {
-              const HTTP = v0(527).HTTP;
+              const HTTP = v0(1272).HTTP;
               obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
               obj1[0] = closure_1_3.GUILD_PRUNE_V2(v0);
               const obj2 = { days: null, include_roles: null };
               obj2[0] = dependencyMap;
               obj2[1] = closure_1_2;
               obj1[1] = obj2;
-              obj1[3] = v0(527).rejectWithMigratedError();
+              obj1[3] = v0(1272).rejectWithMigratedError();
               dependencyMap = 1;
               v0 = 1;
               const obj3 = { value: null, done: false };

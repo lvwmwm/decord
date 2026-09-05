@@ -1,12 +1,12 @@
-// Module ID: 11127
-// Function ID: 11128
+// Module ID: 11195
+// Function ID: 11196
 // Name: SidebarVisibilityMethodStore
-// Dependencies: [641, 2]
+// Dependencies: [560, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 11127 (SidebarVisibilityMethodStore)
+// Module 11195 (SidebarVisibilityMethodStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let obj = keys.create(() => ({}));
 const result = set.fileFinishedImporting("modules/guild_sidebar/SidebarVisibilityMethodStore.tsx");

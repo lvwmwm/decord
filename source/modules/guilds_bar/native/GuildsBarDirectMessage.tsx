@@ -1,19 +1,19 @@
-// Module ID: 16265
-// Function ID: 16266
-// Dependencies: [19, 1215, 5239, 1386, 7569, 4130, 1921, 673, 21, 4481, 709, 16218, 586, 9699, 1233, 16220, 4492, 10844, 16266, 10841, 1296, 5542, 2]
+// Module ID: 16341
+// Function ID: 16342
+// Dependencies: [19, 502, 5278, 1957, 7636, 4209, 1371, 1074, 21, 4560, 576, 16294, 504, 9770, 1114, 16296, 4571, 10913, 16342, 10910, 1178, 5587, 2]
 
-// Module 16265
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16341
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "callConnect" /* 5239 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "updateGuildUnreadSentinel" /* 7569 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { ChannelTypes } from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "callConnect" /* 5278 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "updateGuildUnreadSentinel" /* 7636 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -107,7 +107,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   if (channel != null) {
     isMultiUserDMResult = channel.isMultiUserDM();
   }
-  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: null, expandedChildren: true, children: null };
+  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" };
   obj[6] = memo1;
   obj[7] = cutouts;
   obj[8] = badge;
@@ -139,7 +139,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
     }
   }
   obj[10] = tmp11Result;
-  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: null, expandedChildren: true, children: null });
+  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" });
 });
 let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 

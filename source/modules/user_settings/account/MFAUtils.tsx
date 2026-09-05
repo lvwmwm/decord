@@ -1,17 +1,17 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14794
+// Function ID: 14795
 // Name: getSMSBackupDisabledMessage
-// Dependencies: [1908, 4120, 1921, 673, 1233, 644, 6891, 2]
+// Dependencies: [1979, 4199, 1371, 1074, 1114, 563, 6951, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 14719 (getSMSBackupDisabledMessage)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _crypto from "_crypto" /* 6891 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 14794 (getSMSBackupDisabledMessage)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import _crypto from "_crypto" /* 6951 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ GuildFeatures: c5, Permissions: closure_6, UserFlags: error } = ME);
@@ -91,7 +91,7 @@ export const use2FARemoveDisableReason = function use2FARemoveDisableReason() {
     flag = false;
   }
   const items = [closure_2, closure_3, closure_4];
-  return flag(644).useStateFromStores(items, () => {
+  return flag(563).useStateFromStores(items, () => {
     const currentUser = closure_1_4.getCurrentUser();
     let hasAnyStaffLevelResult;
     if (currentUser != null) {

@@ -1,12 +1,12 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8113
+// Function ID: 8114
 // Name: getInteractionComponentStates
-// Dependencies: [8045, 586, 706, 2]
+// Dependencies: [8114, 504, 573, 2]
 
-// Module 8044 (getInteractionComponentStates)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import LimitedMapDefault from "LimitedMap" /* 8045 */;
+// Module 8113 (getInteractionComponentStates)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import LimitedMapDefault from "LimitedMap" /* 8114 */;
 
 let closure_0 = new LimitedMapDefault(196606);
 let c1 = 0;

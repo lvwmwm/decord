@@ -1,10 +1,10 @@
 // Module ID: 10652
 // Function ID: 10653
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10652 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 278.5, height: 48, scales: [2, 3], hash: "fd5849efd39a217c9ef72fb828af8485", name: "img_nitro_tier_0_activated_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 40, height: 40, scales: [2, 3], hash: "d4d023fcd230d5f7401c0e512db37851", name: "ic_checkmark", type: "png" });

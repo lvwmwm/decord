@@ -1,9 +1,9 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7282
+// Function ID: 7283
 // Name: SidebarType
 // Dependencies: [2]
 
-// Module 7222 (SidebarType)
+// Module 7282 (SidebarType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");

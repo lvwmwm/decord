@@ -1,24 +1,24 @@
-// Module ID: 17241
-// Function ID: 17242
+// Module ID: 17321
+// Function ID: 17322
 // Name: _backgroundSync
-// Dependencies: [32, 5, 1390, 1386, 4496, 7347, 7412, 673, 5462, 5419, 1908, 3, 684, 592, 7688, 1234, 706, 1205, 695, 1955, 527, 11, 12, 7586, 7589, 7587, 13595, 15494, 7410, 1394, 7420, 2]
+// Dependencies: [32, 5, 1961, 1957, 4575, 1895, 7479, 1074, 5502, 5459, 1979, 3, 1090, 510, 7755, 1115, 573, 1232, 1242, 1986, 1272, 11, 12, 7653, 7656, 7654, 13668, 15570, 7477, 1369, 7487, 2]
 // Exports: backgroundSync
 
-// Module 17241 (_backgroundSync)
+// Module 17321 (_backgroundSync)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 684 */;
+import setDefault from "set" /* 1090 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "generateOldThreadCutoff" /* 4496 */;
-import closure_9 from "getState" /* 7347 */;
-import closure_10 from "result" /* 7412 */;
-import ME from "ME" /* 673 */;
-import loadSavedGuildStickers from "loadSavedGuildStickers" /* 5462 */;
-import ensureGuildLoaded from "ensureGuildLoaded" /* 1386 */;
-import getEmojiToGroupId from "getEmojiToGroupId" /* 5419 */;
-import createGuildRecordFromRust from "createGuildRecordFromRust" /* 1908 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "generateOldThreadCutoff" /* 4575 */;
+import closure_9 from "getState" /* 1895 */;
+import closure_10 from "result" /* 7479 */;
+import ME from "ME" /* 1074 */;
+import loadSavedGuildStickers from "loadSavedGuildStickers" /* 5502 */;
+import ensureGuildLoaded from "ensureGuildLoaded" /* 1957 */;
+import getEmojiToGroupId from "getEmojiToGroupId" /* 5459 */;
+import createGuildRecordFromRust from "createGuildRecordFromRust" /* 1979 */;
 
 const require = arg1;
 function _backgroundSync() {
@@ -408,15 +408,15 @@ function _backgroundSyncPrivateChannels() {
               c3 = undefined;
               body = undefined;
               c5 = undefined;
-              const messagesResult = callback2(1955).messages();
+              const messagesResult = callback2(1986).messages();
               c3 = messagesResult;
               if (null != messagesResult) {
-                const HTTP = callback(527).HTTP;
+                const HTTP = callback(1272).HTTP;
                 obj1 = { url: null, body: null, timeout: 5000, rejectWithError: false };
                 obj1[0] = closure_1_12.MESSAGE_LOG_PRIVATE_CHANNELS;
                 const obj2 = { per_channel_limit: null, last_synced_message_id: null };
                 obj2[0] = closure_1_13;
-                const Storage2 = callback(592).Storage;
+                const Storage2 = callback(510).Storage;
                 obj2[1] = Storage2.get(closure_1_18);
                 obj1[1] = obj2;
                 c5 = 1;
@@ -428,7 +428,7 @@ function _backgroundSyncPrivateChannels() {
                 closure_1_14.log("Aborting BG sync because there is no database");
                 c6 = 3;
               }
-              const obj15 = callback2(1955);
+              const obj15 = callback2(1986);
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -447,7 +447,7 @@ function _backgroundSyncPrivateChannels() {
               const _JSON = JSON;
               callback2.size_private_channel_messages = JSON.stringify(body).length;
               if (null != body.latest_message_id) {
-                const Storage = callback(592).Storage;
+                const Storage = callback(510).Storage;
                 const result = Storage.set(closure_18, body.latest_message_id);
               }
               c5 = {};
@@ -470,7 +470,7 @@ function _backgroundSyncPrivateChannels() {
               return obj6;
             } else {
               if (!obj14.isEmpty(c5)) {
-                obj1 = callback2(706);
+                obj1 = callback2(573);
                 const obj7 = { type: "BACKGROUND_SYNC_CHANNEL_MESSAGES", changesByChannelId: null };
                 obj7[1] = body.changes_by_channel_id;
                 obj1.dispatch(obj7);
@@ -565,11 +565,11 @@ function _backgroundSyncGuildData() {
               let guilds;
               let api_code_version;
               closure_11 = undefined;
-              const items = [callback2(7586).getCommittedVersions(), , ];
-              const obj18 = callback2(7586);
-              items[1] = callback2(7589).getCommittedVersions();
-              const obj19 = callback2(7589);
-              items[2] = callback2(7587).canUseGuildVersions();
+              const items = [callback2(7653).getCommittedVersions(), , ];
+              const obj18 = callback2(7653);
+              items[1] = callback2(7656).getCommittedVersions();
+              const obj19 = callback2(7656);
+              items[2] = callback2(7654).canUseGuildVersions();
               c5 = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
@@ -590,8 +590,8 @@ function _backgroundSyncGuildData() {
               dependencyMap2 = callback3(callback3, 3);
               c5 = 32;
               c6 = 5;
-              closure_7 = 1390;
-              const HTTP = callback(527).HTTP;
+              closure_7 = 1961;
+              const HTTP = callback(1272).HTTP;
               let obj3 = { url: null, body: null, timeout: 5000, rejectWithError: false };
               obj3[0] = constants.BACKGROUND_SYNC;
               if (closure_7) {
@@ -599,12 +599,12 @@ function _backgroundSyncGuildData() {
                 obj4[0] = c5;
                 obj4[1] = c6.highest_last_message_id;
                 obj4[2] = c6.api_code_version;
-                let obj11 = callback(13595);
+                let obj11 = callback(13668);
                 obj4[3] = obj11.isChannelMetadataObfuscationEnabled("background-sync");
                 let obj5 = obj4;
               } else {
                 obj5 = { channel_privacy: null };
-                let obj9 = callback(13595);
+                let obj9 = callback(13668);
                 obj5[0] = obj9.isChannelMetadataObfuscationEnabled("background-sync");
               }
               obj3[1] = obj5;
@@ -669,7 +669,7 @@ function _backgroundSyncGuildData() {
                   }
                 }
                 closure_11 = [];
-                obj2 = callback2(706);
+                obj2 = callback2(573);
                 obj9 = { type: "BACKGROUND_SYNC", guilds: null, emojis: null, stickers: null, apiCodeVersion: null, promisesForBackgroundSyncToWaitOn: null };
                 obj9[1] = guilds;
                 obj9[2] = guilds.map((data_mode) => {
@@ -731,7 +731,7 @@ function _backgroundSyncGuildData() {
               c6 = 3;
               throw body;
             } else if (arg0 !== 2) {
-              obj = callback(15494);
+              obj = callback(15570);
               obj.writeCaches(true);
               const _Date = Date;
               callback.time_save_guild_data = Date.now() - callback2;
@@ -839,7 +839,7 @@ function _backgroundSyncGuildChannels() {
                 let changes;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                let obj20 = callback2(1955);
+                let obj20 = callback2(1986);
                 throwTypeErrorResult = obj20.messages();
                 c4 = throwTypeErrorResult;
                 if (null != throwTypeErrorResult) {
@@ -994,7 +994,7 @@ function _backgroundSyncGuildChannels() {
                     throwTypeErrorResult = closure_18;
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    let HTTP = callback(527).HTTP;
+                    let HTTP = callback(1272).HTTP;
                     let obj3 = { url: null, body: null, timeout: 5000, rejectWithError: false };
                     throwTypeErrorResult = lib2;
                     obj3[0] = lib2.MESSAGE_LOG_GUILD_CHANNELS;
@@ -1100,7 +1100,7 @@ function _backgroundSyncGuildChannels() {
                       let tmp58 = closure_18;
                       let tmp59 = callback2;
                       let tmp60 = dependencyMap;
-                      obj4 = callback2(706);
+                      obj4 = callback2(573);
                       let obj7 = { type: "BACKGROUND_SYNC_CHANNEL_MESSAGES", changesByChannelId: null };
                       let tmp61 = closure_18;
                       obj7[1] = closure_18;
@@ -1327,7 +1327,7 @@ function _processChannelChanges() {
                 let tmp23 = callback;
                 let tmp24 = dependencyMap;
                 let tmp25 = callback3;
-                let tmp26 = callback3(obj2.partition(modified_messages, callback(7410).isLikelyNotDelta), 2);
+                let tmp26 = callback3(obj2.partition(modified_messages, callback(7477).isLikelyNotDelta), 2);
                 let arr4 = tmp26[1];
                 dependencyMap2 = arr4;
                 let push = new_messages.push;
@@ -1369,7 +1369,7 @@ function _processChannelChanges() {
               let tmp50 = table;
               let tmp51 = callback;
               let tmp52 = dependencyMap;
-              length = arr.filter(callback(1394).isNotNullish);
+              length = arr.filter(callback(1369).isNotNullish);
               let tmp53 = closure_14;
               let tmp54 = length;
               let _HermesInternal = HermesInternal;

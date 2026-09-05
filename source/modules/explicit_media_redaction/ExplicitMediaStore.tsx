@@ -1,13 +1,13 @@
-// Module ID: 7232
-// Function ID: 7233
+// Module ID: 7293
+// Function ID: 7294
 // Name: getFpMessageInfo
-// Dependencies: [684, 586, 11, 7233, 706, 2]
+// Dependencies: [1090, 504, 11, 7294, 573, 2]
 
-// Module 7232 (getFpMessageInfo)
+// Module 7293 (getFpMessageInfo)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
 
 const require = arg1;
 let closure_3 = 14 * setDefault.Millis.DAY;
@@ -58,7 +58,7 @@ Object.defineProperty(prototype, "validContentScanVersion", {
       const _Math = Math;
       return Math.min(num2, 4);
     }
-    obj = require(7233) /* apexExperiment */;
+    obj = require(7294) /* apexExperiment */;
   },
   set: undefined
 });

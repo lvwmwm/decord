@@ -1,31 +1,31 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7851
+// Function ID: 7852
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4473, 1301, 1303, 4302, 1921, 1923, 673, 4540, 7784, 7778, 21, 4481, 709, 4197, 4139, 7785, 5140, 5095, 7786, 7787, 1233, 5647, 4190, 1994, 7789, 7790, 4448, 7782, 7791, 7792, 13219, 13220, 12143, 12152, 13223, 688, 586, 9287, 7141, 4477, 1234, 8738, 5542, 4948, 7102, 9242, 9894, 9895, 9250, 695, 9896, 4343, 7138, 13224, 4936, 7982, 2]
+// Dependencies: [32, 19, 17, 4552, 1183, 1185, 4381, 1371, 1373, 1074, 4607, 7852, 7846, 21, 4560, 576, 4262, 4218, 7853, 5179, 5134, 7854, 7855, 1114, 5692, 4255, 2024, 7857, 7858, 4527, 7850, 7859, 7860, 13291, 13292, 12211, 12220, 13295, 1093, 504, 9358, 7201, 4556, 1115, 8808, 5587, 4987, 7162, 9313, 9965, 9966, 9321, 1242, 9967, 4425, 7198, 13296, 4975, 8051, 2]
 // Exports: default
 
-// Module 7783 (AlwaysCompressImagesSwitch)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import preloadDefault from "preload" /* 5542 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8738 */;
+// Module 7851 (AlwaysCompressImagesSwitch)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import preloadDefault from "preload" /* 5587 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8808 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_7 from "handleThemeChange" /* 1301 */;
-import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
-import closure_9 from "handleConnectionOpen" /* 4302 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import ME from "ME" /* 673 */;
-import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4540 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7784 */;
-import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7778 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_7 from "handleThemeChange" /* 1183 */;
+import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1185 */;
+import closure_9 from "handleConnectionOpen" /* 4381 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import ME from "ME" /* 1074 */;
+import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4607 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7852 */;
+import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7846 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function AlwaysCompressImagesSwitch(isKestrelTreatment) {
@@ -45,16 +45,16 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj = { style: null, children: null };
       obj[0] = tmp.compressionContainer;
       obj = { start: true, end: true, label: null, value: null, onValueChange: null, subLabel: null };
-      const intl = tmp2(1233).intl;
-      obj[2] = intl.string(tmp2(1233).t.ix8XIj);
+      const intl = tmp2(1114).intl;
+      obj[2] = intl.string(tmp2(1114).t.ix8XIj);
       obj[3] = stateFromStores;
       obj[4] = callback;
       obj1 = { style: null, variant: "text-xs/normal", children: null };
       obj1[0] = tmp.compressionHint;
-      const intl2 = tmp2(1233).intl;
-      obj1[2] = intl2.string(tmp2(1233).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4477).Text, obj1);
-      obj[1] = callback2(tmp2(7141).TableSwitchRow, obj);
+      const intl2 = tmp2(1114).intl;
+      obj1[2] = intl2.string(tmp2(1114).t["wC0+Ph"]);
+      obj[5] = callback2(tmp2(4556).Text, obj1);
+      obj[1] = callback2(tmp2(7201).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }

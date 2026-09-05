@@ -1,15 +1,15 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13845
+// Function ID: 13846
 // Name: MarkupGameMention
-// Dependencies: [19, 21, 4481, 709, 5068, 1233, 4514, 4472, 8495, 5542, 8610, 8616, 4477, 7247, 2]
+// Dependencies: [19, 21, 4560, 576, 5107, 1114, 1924, 4551, 8565, 5587, 8680, 8686, 4556, 7309, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 13855 (MarkupGameMention)
+// Module 13845 (MarkupGameMention)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import importDefaultResult1 from "importDefaultResult1" /* 7247 */;
+import ThemesDefault from "Themes" /* 576 */;
+import importDefaultResult1 from "importDefaultResult1" /* 7309 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class MarkupGameMention {

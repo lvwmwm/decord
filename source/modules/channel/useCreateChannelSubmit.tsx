@@ -1,14 +1,14 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9735
+// Function ID: 9736
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 673, 1954, 503, 9665, 1362, 1233, 2]
+// Dependencies: [5, 32, 19, 1074, 1894, 1086, 9736, 4411, 1114, 2]
 // Exports: default
 
-// Module 9664 (useCreateChannelSubmit)
+// Module 9735 (useCreateChannelSubmit)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ ChannelTypes: error, Permissions: closure_8 } = ME);

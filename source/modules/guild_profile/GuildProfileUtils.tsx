@@ -1,14 +1,14 @@
-// Module ID: 7670
-// Function ID: 7671
+// Module ID: 7737
+// Function ID: 7738
 // Name: getEstablishedDate
-// Dependencies: [1390, 673, 1426, 2]
+// Dependencies: [1961, 1074, 1971, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7670 (getEstablishedDate)
+// Module 7737 (getEstablishedDate)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import createChannelRecord from "createChannelRecord" /* 1390 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
+import ME from "ME" /* 1074 */;
+import createChannelRecord from "createChannelRecord" /* 1961 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
 
 let closure_2 = createChannelRecord.createChannelRecordFromInvite;
 const GuildFeatures = ME.GuildFeatures;

@@ -1,14 +1,14 @@
-// Module ID: 6312
-// Function ID: 6313
+// Module ID: 6367
+// Function ID: 6368
 // Name: ProfileEffectsAbstractUI
-// Dependencies: [21, 5542, 6313, 2]
+// Dependencies: [21, 5587, 6368, 2]
 // Exports: ProfileEffectsAbstractUI
 
-// Module 6312 (ProfileEffectsAbstractUI)
+// Module 6367 (ProfileEffectsAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6313 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6368 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ProfileEffectsAbstractUI.native.tsx");

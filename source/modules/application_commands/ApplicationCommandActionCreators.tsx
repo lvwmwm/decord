@@ -1,19 +1,19 @@
-// Module ID: 7710
-// Function ID: 7711
+// Module ID: 7778
+// Function ID: 7779
 // Name: setActiveCommand
-// Dependencies: [1215, 7711, 673, 38, 7456, 706, 527, 11, 1954, 2]
+// Dependencies: [502, 7779, 1074, 38, 7523, 573, 1272, 11, 1894, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 7710 (setActiveCommand)
+// Module 7778 (setActiveCommand)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7456 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "handleInit" /* 7711 */;
-import { Endpoints } from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7523 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "handleInit" /* 7779 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandActionCreators.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10985
+// Function ID: 10986
 // Name: makeAutocompleterSearchParams
-// Dependencies: [32, 19, 5238, 1215, 5469, 10913, 10917, 586, 10923, 10300, 10912, 2]
+// Dependencies: [32, 19, 5277, 502, 5509, 10982, 10986, 504, 10992, 10371, 10981, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 10916 (makeAutocompleterSearchParams)
-import getQuickSwitcherOptions from "getQuickSwitcherOptions" /* 10917 */;
+// Module 10985 (makeAutocompleterSearchParams)
+import getQuickSwitcherOptions from "getQuickSwitcherOptions" /* 10986 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_handleConnectionOpen" /* 5238 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "handleChannelSelect" /* 5469 */;
-import { ALLOWED_TYPES } from "ALLOWED_TYPES" /* 10913 */;
+import closure_5 from "_handleConnectionOpen" /* 5277 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "handleChannelSelect" /* 5509 */;
+import { ALLOWED_TYPES } from "ALLOWED_TYPES" /* 10982 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/share/useShareSearchResults.tsx");

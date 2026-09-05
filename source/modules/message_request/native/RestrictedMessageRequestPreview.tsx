@@ -1,19 +1,19 @@
-// Module ID: 16817
-// Function ID: 16818
+// Module ID: 16895
+// Function ID: 16896
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 1386, 4743, 1921, 21, 4481, 709, 1627, 586, 16818, 16820, 12371, 2]
+// Dependencies: [32, 19, 17, 1957, 4781, 1371, 21, 4560, 576, 1611, 504, 16896, 16898, 12439, 2]
 // Exports: default
 
-// Module 16817 (RestrictedMessageRequestPreview)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16895 (RestrictedMessageRequestPreview)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "reinjectEphemerals" /* 4743 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "reinjectEphemerals" /* 4781 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
@@ -45,11 +45,11 @@ export default function RestrictedMessageRequestPreview(channelId) {
   const tmp5 = first(React.useState(false), 2);
   first = tmp5[0];
   React = tmp5[1];
-  obj1 = channelId(586);
+  obj1 = channelId(504);
   const items = [closure_8];
   const items1 = [channelId];
   closure_5 = obj1.useStateFromStores(items, () => closure_1_8.getMessages(channelId).length > 0, items1);
-  let obj2 = channelId(586);
+  let obj2 = channelId(504);
   const items2 = [closure_7];
   const items3 = [channelId];
   const stateFromStores = obj2.useStateFromStores(items2, () => closure_1_7.getChannel(channelId), items3);
@@ -62,7 +62,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
   }
   const items4 = [closure_9];
   const items5 = [first1];
-  const stateFromStores1 = channelId(586).useStateFromStores(items4, () => {
+  const stateFromStores1 = channelId(504).useStateFromStores(items4, () => {
     let user;
     if (null != first1) {
       user = closure_1_9.getUser(tmp);
@@ -115,21 +115,21 @@ export default function RestrictedMessageRequestPreview(channelId) {
       obj1 = { channel: null, user: null };
       obj1[0] = stateFromStores;
       obj1[1] = stateFromStores1;
-      const items8 = [callback(tmp2(16818), obj1), ];
+      const items8 = [callback(tmp2(16896), obj1), ];
       obj2 = { channelId: null };
       obj2[0] = channelId;
-      items8[1] = callback(tmp2(16820), obj2);
+      items8[1] = callback(tmp2(16898), obj2);
       obj[5] = items8;
       const items9 = [closure_11(closure_5, obj), ];
       const obj3 = { style: null, children: null };
       const items10 = [tmp.footer, ];
       const obj4 = { paddingBottom: null };
-      obj4[0] = tmp2(709).space.PX_8 + ref(1627)().bottom;
+      obj4[0] = tmp2(576).space.PX_8 + ref(1611)().bottom;
       items10[1] = obj4;
       obj3[0] = items10;
       const obj5 = { channel: null };
       obj5[0] = stateFromStores;
-      obj3[1] = callback(tmp2(12371), obj5);
+      obj3[1] = callback(tmp2(12439), obj5);
       items9[1] = callback(first1, obj3);
       obj[1] = items9;
       tmp13Result = tmp13(tmp14, obj);

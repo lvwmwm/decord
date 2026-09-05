@@ -1,18 +1,18 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7992
+// Function ID: 7993
 // Name: identityHook
-// Dependencies: [1908, 1921, 7924, 673, 11, 1233, 7191, 4708, 2]
+// Dependencies: [1979, 1371, 7993, 1074, 11, 1114, 7251, 4740, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 7923 (identityHook)
+// Module 7992 (identityHook)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7191 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import getJoinButtonLabels from "getJoinButtonLabels" /* 7924 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4740 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7251 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import getJoinButtonLabels from "getJoinButtonLabels" /* 7993 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function identityHook(arg0) {
@@ -145,7 +145,7 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
     } else {
       tmp6 = tmp3;
     }
-    const intl = tmp6(1233).intl;
+    const intl = tmp6(1114).intl;
     let name;
     if (guild != null) {
       name = guild.name;
@@ -167,18 +167,18 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
 export const isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = function isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild) {
   return useIsCreatorMonetizationEnabledGuild.isCreatorMonetizationEnabledGuild(guild);
 };
-export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleSubscriptionPurchaseMessageTierClick(guildId, channelId, messageId, roleSubscriptionListingId) {
+export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleSubscriptionPurchaseMessageTierClick(guild_id) {
   let obj = collectGuildAnalyticsMetadataDefault;
-  obj = { guild_id: guildId, user_id: null, channel_id: null, message_id: null, role_subscription_listing_id: null };
+  obj = { guild_id, user_id: null, channel_id: null, message_id: null, role_subscription_listing_id: null };
   const currentUser = authStore.getCurrentUser();
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
   obj[1] = id;
-  obj[2] = channelId;
-  obj[3] = messageId;
-  obj[4] = roleSubscriptionListingId;
+  obj[2] = arg1;
+  obj[3] = arg2;
+  obj[4] = arg3;
   obj.trackWithMetadata(constants.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, obj);
 };
 export const getRoleSubscriptionPurchaseSystemMessageEventProperties = function getRoleSubscriptionPurchaseSystemMessageEventProperties(guild_id, author) {

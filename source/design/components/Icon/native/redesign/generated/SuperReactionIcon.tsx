@@ -1,14 +1,14 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9373
+// Function ID: 9374
 // Name: SuperReactionIcon
-// Dependencies: [19, 21, 709, 4196, 9303, 2]
+// Dependencies: [19, 21, 576, 4261, 9374, 2]
 // Exports: SuperReactionIcon
 
-// Module 9302 (SuperReactionIcon)
+// Module 9373 (SuperReactionIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9303 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 9374 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

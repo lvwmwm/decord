@@ -1,13 +1,13 @@
-// Module ID: 10186
-// Function ID: 10187
+// Module ID: 10257
+// Function ID: 10258
 // Name: items
-// Dependencies: [673, 10187, 1233, 2]
+// Dependencies: [1074, 10258, 1114, 2]
 
-// Module 10186 (items)
+// Module 10257 (items)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import parsedItemUsesEveryoneRoleDefault from "parsedItemUsesEveryoneRole" /* 10187 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import parsedItemUsesEveryoneRoleDefault from "parsedItemUsesEveryoneRole" /* 10258 */;
 
 const TOKEN_REGEX = ME.TOKEN_REGEX;
 const items = [
@@ -21,9 +21,9 @@ const items = [
           if (null == extractEveryoneRoleResult) {
             return false;
           } else {
-            let tmp8Result = tmp8(10187);
+            let tmp8Result = tmp8(10258);
             if (tmp8Result.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-              tmp8Result = tmp8(10187);
+              tmp8Result = tmp8(10258);
               const everyoneMemberCountResult = tmp8Result.everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
               const _Math = Math;
               const _Math2 = Math;
@@ -33,14 +33,14 @@ const items = [
               } else if (getGuildId.isThread()) {
               }
               let obj = { body: null, footer: null };
-              const intl = tmp6(1233).intl;
+              const intl = tmp6(1114).intl;
               obj = { role: null, count: null };
               obj[0] = extractEveryoneRoleResult;
               const _Math4 = Math;
               const result = Math.trunc(everyoneMemberCountResult / powResult) * powResult;
               obj[1] = result.toLocaleString();
               obj[0] = intl.formatToPlainString(_2YaiQ1, obj);
-              const intl2 = tmp6(1233).intl;
+              const intl2 = tmp6(1114).intl;
               obj[1] = intl2.string(getSystemLocale.t.mVyrtu);
               return obj;
             } else {
@@ -54,7 +54,7 @@ const items = [
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "accessible"
+    animation: "call"
   },
   {
     check(arg0) {

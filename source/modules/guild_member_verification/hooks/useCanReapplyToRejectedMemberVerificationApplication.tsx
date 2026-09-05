@@ -1,16 +1,16 @@
-// Module ID: 5501
-// Function ID: 5502
+// Module ID: 5546
+// Function ID: 5547
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4465, 4303, 673, 586, 5502, 2]
+// Dependencies: [5, 32, 19, 4544, 4382, 1074, 504, 5547, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 5501 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 5546 (useCanReapplyToRejectedMemberVerificationApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateInvite" /* 4465 */;
-import closure_7 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_6 from "updateInvite" /* 4544 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");

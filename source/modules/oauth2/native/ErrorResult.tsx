@@ -1,18 +1,18 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9249
+// Function ID: 9250
 // Name: error
-// Dependencies: [19, 17, 21, 4481, 709, 7063, 9179, 4477, 1233, 4936, 4731, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 7123, 9250, 4556, 1114, 4975, 4763, 2]
 // Exports: default
 
-// Module 9178 (error)
+// Module 9249 (error)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import registerAssetDefault from "registerAsset" /* 9179 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import registerAssetDefault from "registerAsset" /* 9250 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -37,8 +37,8 @@ export default function ErrorResult(error) {
   const items = [callback(closure_3, obj), ];
   obj1 = { style: tmp.text, variant: "text-md/medium", children: null };
   if (error == null) {
-    const intl = tmp3(1233).intl;
-    error = intl.string(tmp3(1233).t.mqn873);
+    const intl = tmp3(1114).intl;
+    error = intl.string(tmp3(1114).t.mqn873);
   }
   obj1[2] = error;
   items[1] = callback(Text.Text, obj1);
@@ -47,12 +47,12 @@ export default function ErrorResult(error) {
   let tmp6Result = null;
   if (!error.hideFooter) {
     const obj2 = { size: "lg", text: null, onPress: null };
-    const intl2 = tmp3(1233).intl;
-    obj2[1] = intl2.string(tmp3(1233).t.cpT0Cq);
+    const intl2 = tmp3(1114).intl;
+    obj2[1] = intl2.string(tmp3(1114).t.cpT0Cq);
     obj2[2] = function onPress() {
       return callback(table[10]).pop();
     };
-    tmp6Result = tmp6(tmp3(4936).Button, obj2);
+    tmp6Result = tmp6(tmp3(4975).Button, obj2);
   }
   items1[1] = tmp6Result;
   obj[2] = items1;

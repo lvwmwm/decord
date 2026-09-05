@@ -1,22 +1,22 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11964
+// Function ID: 11965
 // Name: TypingIndicatorInner
-// Dependencies: [19, 17, 9414, 4480, 5421, 7620, 11897, 1921, 673, 21, 11898, 586, 4481, 709, 11899, 11900, 11911, 11903, 4680, 695, 4218, 4197, 4205, 4935, 4939, 11912, 1296, 4477, 11915, 2]
+// Dependencies: [19, 17, 9485, 4559, 5461, 7687, 11965, 1371, 1074, 21, 11966, 504, 4560, 576, 11967, 11968, 11979, 11971, 4712, 1242, 4296, 4262, 4271, 4974, 4978, 11980, 1178, 4556, 11983, 2]
 // Exports: hasTypingIndicatorContent, useTypingUserIdsForDisplay
 
-// Module 11896 (TypingIndicatorInner)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11964 (TypingIndicatorInner)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useChatShowingAutoComplete as closure_5 } from "updateChatInputContainerHeight" /* 9414 */;
-import closure_6 from "getUserAgnosticState" /* 4480 */;
-import closure_7 from "fromServer" /* 5421 */;
-import { SlowmodeType } from "setCooldown" /* 7620 */;
-import closure_9 from "handleTypingStart" /* 11897 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { useChatShowingAutoComplete as closure_5 } from "updateChatInputContainerHeight" /* 9485 */;
+import closure_6 from "getUserAgnosticState" /* 4559 */;
+import closure_7 from "fromServer" /* 5461 */;
+import { SlowmodeType } from "setCooldown" /* 7687 */;
+import closure_9 from "handleTypingStart" /* 11965 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function TypingIndicatorInner(channel) {

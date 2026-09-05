@@ -1,14 +1,14 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14664
+// Function ID: 14665
 // Name: PasskeyUpsellFullModal
-// Dependencies: [19, 14582, 21, 14585, 11860, 2]
+// Dependencies: [19, 14657, 21, 14660, 11928, 2]
 // Exports: default
 
-// Module 14589 (PasskeyUpsellFullModal)
+// Module 14664 (PasskeyUpsellFullModal)
 import noopAll from "noop" /* 19 */;
-import Modal from "Modal" /* 11860 */;
-import getScreens from "getScreens" /* 14585 */;
-import { WebAuthnScreens } from "WebAuthnScreens" /* 14582 */;
+import Modal from "Modal" /* 11928 */;
+import getScreens from "getScreens" /* 14660 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14657 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

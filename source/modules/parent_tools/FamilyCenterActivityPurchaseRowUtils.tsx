@@ -1,33 +1,33 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 14902
+// Function ID: 14903
 // Name: getCollectibleTypeName
-// Dependencies: [7480, 7481, 1923, 1949, 1233, 2368, 1431, 2]
+// Dependencies: [7547, 7548, 1373, 1889, 1114, 2396, 1396, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14827 (getCollectibleTypeName)
+// Module 14902 (getCollectibleTypeName)
 import set from "set" /* 2 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import fromServer from "fromServer" /* 7480 */;
-import fromServer2 from "fromServer" /* 7481 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import fromServer from "fromServer" /* 7547 */;
+import fromServer2 from "fromServer" /* 7548 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = tmp(1233).intl;
+    const intl5 = tmp(1114).intl;
     return intl5.string(messagesProxyDefault.obi47v);
-  } else if (tmp(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl4 = tmp(1233).intl;
+  } else if (tmp(1889).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl4 = tmp(1114).intl;
     return intl4.string(messagesProxyDefault.RX8BMR);
-  } else if (tmp(1949).CollectiblesItemType.NAMEPLATE === type) {
-    const intl3 = tmp(1233).intl;
+  } else if (tmp(1889).CollectiblesItemType.NAMEPLATE === type) {
+    const intl3 = tmp(1114).intl;
     return intl3.string(messagesProxyDefault.nNGEHk);
-  } else if (tmp(1949).CollectiblesItemType.BUNDLE === type) {
-    const intl2 = tmp(1233).intl;
+  } else if (tmp(1889).CollectiblesItemType.BUNDLE === type) {
+    const intl2 = tmp(1114).intl;
     return intl2.string(messagesProxyDefault.VS1fKo);
-  } else if (tmp(1949).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp(1233).intl;
+  } else if (tmp(1889).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl = tmp(1114).intl;
     return intl.string(messagesProxyDefault.JiIY1l);
   } else {
     return "";

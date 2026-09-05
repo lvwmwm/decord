@@ -1,24 +1,24 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17734
+// Function ID: 17735
 // Name: ApplicationRejectedNotice
-// Dependencies: [19, 17, 1908, 673, 21, 4481, 586, 17630, 12155, 17603, 1233, 15137, 17644, 2]
+// Dependencies: [19, 17, 1979, 1074, 21, 4560, 504, 17710, 12223, 17683, 1114, 15213, 17724, 2]
 // Exports: default
 
-// Module 17654 (ApplicationRejectedNotice)
+// Module 17734 (ApplicationRejectedNotice)
 import noopAll from "noop" /* 19 */;
-import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15137 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17630 */;
-import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17644 */;
+import useGroupListingsFetchContext from "useGroupListingsFetchContext" /* 15213 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17710 */;
+import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled" /* 17724 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ApplicationRejectedNotice(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(586);
+  let obj = guildId(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getGuild(guildId));
   if (stateFromStores != null) {
@@ -33,42 +33,42 @@ function ApplicationRejectedNotice(guildId) {
   ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = useOnboardingMonetizationEnableFlowDefault(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: null };
-    let tmp9Result = tmp9(12155);
+    let tmp9Result = tmp9(12223);
     obj[0] = resubmissionError.getAnyErrorMessage();
     let tmp14 = callback(tmp9Result, obj);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: null };
     obj[0] = requestRejectedNoticeText;
-    tmp14 = callback(tmp9(17603), obj);
+    tmp14 = callback(tmp9(17683), obj);
   } else if (tmp13) {
     obj1 = { notice: null };
-    tmp9Result = tmp9(17603);
-    const intl3 = tmp2(1233).intl;
-    obj1[0] = intl3.string(tmp2(1233).t.MyJpJT);
+    tmp9Result = tmp9(17683);
+    const intl3 = tmp2(1114).intl;
+    obj1[0] = intl3.string(tmp2(1114).t.MyJpJT);
     tmp14 = callback(tmp9Result, obj1);
   } else if (null != reapplyNoticeText) {
     const obj2 = { notice: null, ctaLabel: null, onClick: null, submitting: null };
     obj2[0] = reapplyNoticeText;
-    const intl2 = tmp2(1233).intl;
-    obj2[1] = intl2.string(tmp2(1233).t["YKw/NQ"]);
+    const intl2 = tmp2(1114).intl;
+    obj2[1] = intl2.string(tmp2(1114).t["YKw/NQ"]);
     obj2[2] = tmp12;
     obj2[3] = tmp11;
-    tmp14 = callback(tmp9(17603), obj2);
-    const tmp9Result1 = tmp9(17603);
+    tmp14 = callback(tmp9(17683), obj2);
+    const tmp9Result1 = tmp9(17683);
   } else if (true === hasItem1) {
     const obj3 = { notice: null };
-    const intl = tmp2(1233).intl;
-    obj3[0] = intl.string(tmp2(1233).t.e2g9sW);
-    tmp14 = callback(tmp9(17603), obj3);
-    const tmp9Result2 = tmp9(17603);
+    const intl = tmp2(1114).intl;
+    obj3[0] = intl.string(tmp2(1114).t.e2g9sW);
+    tmp14 = callback(tmp9(17683), obj3);
+    const tmp9Result2 = tmp9(17683);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj4 = { notice: null };
-      const intl4 = tmp2(1233).intl;
-      obj4[0] = intl4.string(tmp2(1233).t.rxI9sl);
-      tmp14 = callback(tmp9(17603), obj4);
-      const tmp9Result3 = tmp9(17603);
+      const intl4 = tmp2(1114).intl;
+      obj4[0] = intl4.string(tmp2(1114).t.rxI9sl);
+      tmp14 = callback(tmp9(17683), obj4);
+      const tmp9Result3 = tmp9(17683);
     }
   }
   let tmp24 = null;

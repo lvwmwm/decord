@@ -1,19 +1,19 @@
-// Module ID: 17040
-// Function ID: 17041
-// Dependencies: [109, 19, 17, 17041, 4498, 17042, 9013, 1386, 4499, 673, 21, 17044, 17017, 9012, 9394, 9144, 644, 9392, 9143, 17048, 1234, 9043, 9014, 1233, 9040, 9042, 17049, 9145, 4301, 1372, 5544, 16957, 14047, 2]
+// Module ID: 17118
+// Function ID: 17119
+// Dependencies: [109, 19, 17, 17119, 4577, 17120, 9083, 1957, 4578, 1074, 21, 17122, 17095, 9082, 9465, 9215, 563, 9463, 9214, 17126, 1115, 9114, 9084, 1114, 9111, 9113, 17127, 9216, 4380, 1943, 5589, 17035, 14133, 2]
 
-// Module 17040
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17044 */;
+// Module 17118
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17122 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 17041 */;
-import closure_8 from "set" /* 4498 */;
-import closure_9 from "handleAudioRouteChanged" /* 17042 */;
-import closure_10 from "handleAudioRouteChanged" /* 9013 */;
-import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "handleUpdate" /* 4499 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 17119 */;
+import closure_8 from "set" /* 4577 */;
+import closure_9 from "handleAudioRouteChanged" /* 17120 */;
+import closure_10 from "handleAudioRouteChanged" /* 9083 */;
+import closure_11 from "ensureGuildLoaded" /* 1957 */;
+import closure_12 from "handleUpdate" /* 4578 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -217,7 +217,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        let obj = { onPress: null, ref: "Array" };
+        let obj = { onPress: null, ref: "a" };
         obj[0] = closure_15;
         tmp = obj;
       }

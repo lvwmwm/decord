@@ -1,15 +1,15 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7223
+// Function ID: 7224
 // Name: useIsNewMember
-// Dependencies: [1983, 1991, 4108, 1399, 684, 586, 2]
+// Dependencies: [2014, 2021, 4187, 1384, 1090, 504, 2]
 // Exports: default, getIsNewMember
 
-// Module 7163 (useIsNewMember)
-import setDefault from "set" /* 684 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import closure_3 from "initialize" /* 1983 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
+// Module 7223 (useIsNewMember)
+import setDefault from "set" /* 1090 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import closure_3 from "initialize" /* 2014 */;
+import closure_4 from "trackCommunicationDisabled" /* 2021 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
@@ -17,7 +17,7 @@ const result = require("set").fileFinishedImporting("modules/guild_onboarding_ho
 export default function useIsNewMember(arg0) {
   const _require = arg0;
   const items = [closure_4, closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let flag = true;
     if (!closure_1_3.isFullServerPreview(callback)) {
       const selfMember = obj.getSelfMember(tmp);

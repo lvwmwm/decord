@@ -1,12 +1,12 @@
-// Module ID: 14947
-// Function ID: 14948
+// Module ID: 15022
+// Function ID: 15023
 // Name: isSourceError
-// Dependencies: [1234, 2]
+// Dependencies: [1115, 2]
 // Exports: isSourceError
 
-// Module 14947 (isSourceError)
+// Module 15022 (isSourceError)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
+import set2 from "set" /* 1115 */;
 
 let closure_2 = [-1000, -1003, -1004, -1008];
 const result = set.fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");

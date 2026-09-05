@@ -1,20 +1,20 @@
-// Module ID: 15284
-// Function ID: 15285
+// Module ID: 15360
+// Function ID: 15361
 // Name: EmojiGlyph
-// Dependencies: [32, 19, 1924, 21, 15285, 15287, 15289, 15291, 15293, 15295, 15297, 15299, 15301, 15303, 15305, 15307, 15309, 15311, 15313, 15315, 15317, 15319, 15321, 15323, 15325, 15327, 4481, 7070, 1431, 4218, 4935, 4939, 11053, 1233, 3502, 1941, 5562, 12, 4934, 2]
+// Dependencies: [32, 19, 1374, 21, 15361, 15363, 15365, 15367, 15369, 15371, 15373, 15375, 15377, 15379, 15381, 15383, 15385, 15387, 15389, 15391, 15393, 15395, 15397, 15399, 15401, 15403, 4560, 7130, 1396, 4296, 4974, 4978, 11121, 1114, 3549, 1392, 5607, 12, 4973, 2]
 // Exports: default
 
-// Module 15284 (EmojiGlyph)
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import CUSTOM_TYPING_INDICATOR_EMOJI_COUNT from "CUSTOM_TYPING_INDICATOR_EMOJI_COUNT" /* 1941 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import Stack from "Stack" /* 4934 */;
-import EmojiDefault from "Emoji" /* 7070 */;
+// Module 15360 (EmojiGlyph)
+import CUSTOM_TYPING_INDICATOR_EMOJI_COUNT from "CUSTOM_TYPING_INDICATOR_EMOJI_COUNT" /* 1392 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import Stack from "Stack" /* 4973 */;
+import EmojiDefault from "Emoji" /* 7130 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import { EmojiIntention } from "set" /* 1374 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function EmojiGlyph(emoji) {
@@ -40,7 +40,7 @@ function EmojiGlyph(emoji) {
 }
 function PlaceholderEmojiGlyph(pressed) {
   pressed = pressed.pressed;
-  let obj = pressed(4218);
+  let obj = pressed(4296);
   const fn = function t() {
     const value = pressed.get();
     let obj = { opacity: null, transform: null };
@@ -56,13 +56,13 @@ function PlaceholderEmojiGlyph(pressed) {
     obj[1] = items;
     return obj;
   };
-  obj = { pressed, withSpring: pressed(4935).withSpring, interpolate: pressed(4218).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4939).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
+  obj = { pressed, withSpring: pressed(4974).withSpring, interpolate: pressed(4296).interpolate, PLACEHOLDER_EMOJI_RESTING_OPACITY: 0.4, ON_PRESS_SPRING: pressed(4978).ON_PRESS_SPRING, PLACEHOLDER_EMOJI_ACTIVE_SCALE: 1.14 };
   fn.__closure = obj;
   fn.__workletHash = 16574219123934;
   fn.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) };
-  return jsx(_modDef4218.View, { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) });
+  return jsx(_modDef4296.View, { style: animatedStyle, children: jsx(pressed.Icon, { size: "custom", style: obj1 }) });
 }
 function CustomTypingIndicatorEmojiSlot(index) {
   index = index.index;
@@ -138,7 +138,7 @@ let result = require("set").fileFinishedImporting("modules/custom_typing_indicat
 export default function CustomTypingIndicatorEmojiSlots(arg0) {
   ({ emojis: require, onChange: importDefault } = arg0);
   dependencyMap = undefined;
-  dependencyMap = callback(React.useState(() => dependencyMap(12).sampleSize(closure_8, dependencyMap(1941).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT)), 1)[0];
+  dependencyMap = callback(React.useState(() => dependencyMap(12).sampleSize(closure_8, dependencyMap(1392).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT)), 1)[0];
   let obj = { direction: "horizontal", spacing: 8, children: null };
   obj = { length: CUSTOM_TYPING_INDICATOR_EMOJI_COUNT.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
   obj[2] = Array.from(obj, (arg0, index) => {

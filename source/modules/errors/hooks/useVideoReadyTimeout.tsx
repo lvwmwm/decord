@@ -1,11 +1,11 @@
-// Module ID: 9537
-// Function ID: 9538
+// Module ID: 9608
+// Function ID: 9609
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 684, 4365, 9536, 4582, 9538, 9541, 2]
+// Dependencies: [19, 1090, 4447, 9607, 4615, 9609, 9612, 2]
 // Exports: default
 
-// Module 9537 (useVideoReadyTimeout)
-import setDefault from "set" /* 684 */;
+// Module 9608 (useVideoReadyTimeout)
+import setDefault from "set" /* 1090 */;
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

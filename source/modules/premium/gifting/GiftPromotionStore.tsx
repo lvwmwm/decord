@@ -1,11 +1,11 @@
-// Module ID: 7354
-// Function ID: 7355
+// Module ID: 7420
+// Function ID: 7421
 // Name: initialize
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7354 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7420 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = { giftOptionsReceiptMap: {} };
 const PersistedStore = initializeDefault.PersistedStore;

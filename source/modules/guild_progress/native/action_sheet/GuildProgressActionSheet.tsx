@@ -1,22 +1,22 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12476
+// Function ID: 12477
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 8994, 1981, 12401, 673, 21, 4481, 709, 586, 12406, 4193, 695, 12409, 12410, 9749, 6177, 1233, 8993, 5099, 5765, 4492, 4448, 1228, 6293, 12411, 7122, 5755, 4477, 4936, 5084, 7138, 1296, 2]
+// Dependencies: [5, 19, 17, 9064, 2012, 12469, 1074, 21, 4560, 576, 504, 12474, 4258, 1242, 12477, 12478, 9820, 6232, 1114, 9063, 5138, 5812, 4571, 4527, 1109, 6348, 12479, 7182, 5802, 4556, 4975, 5123, 7198, 1178, 2]
 // Exports: default
 
-// Module 12408 (GuildProgressHeader)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
+// Module 12476 (GuildProgressHeader)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 8994 */;
-import closure_7 from "comparator" /* 1981 */;
-import Steps from "Steps" /* 12401 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "handleFormInit" /* 9064 */;
+import closure_7 from "comparator" /* 2012 */;
+import Steps from "Steps" /* 12469 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class GuildProgressHeader {
@@ -83,16 +83,16 @@ export default function GuildProgressActionSheet(guild) {
               closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              closure_1_1(8993).init(closure_1_5);
-              const obj6 = closure_1_1(8993);
-              closure_1_0(12406).hideActionSheet(closure_1_0.id);
-              const obj7 = closure_1_0(12406);
+              closure_1_1(9063).init(closure_1_5);
+              const obj6 = closure_1_1(9063);
+              closure_1_0(12474).hideActionSheet(closure_1_0.id);
+              const obj7 = closure_1_0(12474);
               obj1 = { size: null };
               obj1[0] = closure_1_10;
               dependencyMap = 1;
               c3 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = closure_1_1(5099).openImagePicker(obj1);
+              obj2[0] = closure_1_1(5138).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -106,7 +106,7 @@ export default function GuildProgressActionSheet(guild) {
           } else {
             base64 = arg1.base64;
             if (null != base64) {
-              obj = closure_1_1(8993);
+              obj = closure_1_1(9063);
               obj.updateIcon(closure_5, base64);
             }
             c3 = 3;

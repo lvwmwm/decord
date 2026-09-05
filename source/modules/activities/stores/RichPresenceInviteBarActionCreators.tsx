@@ -1,12 +1,12 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11474
+// Function ID: 11475
 // Name: markChannelInvited
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: dismissSession, markChannelInvited
 
-// Module 11406 (markChannelInvited)
+// Module 11474 (markChannelInvited)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/activities/stores/RichPresenceInviteBarActionCreators.tsx");
 

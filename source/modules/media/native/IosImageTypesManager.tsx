@@ -1,11 +1,11 @@
-// Module ID: 5121
-// Function ID: 5122
+// Module ID: 5160
+// Function ID: 5161
 // Name: _initialize
-// Dependencies: [32, 17, 3, 4669, 2]
+// Dependencies: [32, 17, 3, 1898, 2]
 
-// Module 5121 (_initialize)
+// Module 5160 (_initialize)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 4669 */;
+import initializeDefault from "initialize" /* 1898 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 

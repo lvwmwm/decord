@@ -1,10 +1,10 @@
 // Module ID: 9879
 // Function ID: 9880
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9879 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [2, 3], hash: "c902e6fcc190a5ea75515cf2b526309d", name: "video", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 100, height: 100, scales: [1], hash: "2466a8cae3eebcc6d13072f6ff1957c4", name: "img-auth-qrcode-overlay", type: "png" });

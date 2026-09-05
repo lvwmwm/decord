@@ -1,16 +1,16 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 14126
+// Function ID: 14127
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4481, 709, 1362, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4411, 4556, 2]
 // Exports: default
 
-// Module 14040 (EmptyState)
+// Module 14126 (EmptyState)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
+import ThemesDefault from "Themes" /* 576 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -37,11 +37,11 @@ export default function EmptyState(Illustration) {
     tmp8Result = null;
     if (tmp6) {
       obj = { resizeMode: "contain", source: null, style: null };
-      obj[1] = tmp2(1362).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
+      obj[1] = tmp2(4411).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj[2] = items1;
       tmp8Result = callback(closure_3, obj);
-      const tmp2Result = tmp2(1362);
+      const tmp2Result = tmp2(4411);
       const tmp8 = callback;
       const tmp9 = closure_3;
     }
@@ -58,7 +58,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj2[3] = items4;
     obj2[4] = title;
-    tmp14 = callback(tmp2(4477).Text, obj2);
+    tmp14 = callback(tmp2(4556).Text, obj2);
   }
   items3[1] = tmp14;
   let tmp16 = null;
@@ -67,7 +67,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj3[3] = items5;
     obj3[4] = body;
-    tmp16 = callback(tmp2(4477).Text, obj3);
+    tmp16 = callback(tmp2(4556).Text, obj3);
   }
   items3[2] = tmp16;
   items3[3] = children;

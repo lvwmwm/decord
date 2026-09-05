@@ -1,22 +1,22 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14453
+// Function ID: 14454
 // Name: processColor
-// Dependencies: [32, 17, 1385, 4522, 4503, 1386, 4532, 4557, 4130, 1921, 673, 709, 7690, 7689, 9969, 10821, 4681, 1233, 4669, 2]
+// Dependencies: [32, 17, 1956, 4788, 4582, 1957, 1908, 4583, 4209, 1371, 1074, 576, 7758, 7756, 10040, 10890, 4713, 1114, 1898, 2]
 
-// Module 14378 (processColor)
-import ThemesDefault from "Themes" /* 709 */;
-import initializeDefault from "initialize" /* 4669 */;
+// Module 14453 (processColor)
+import ThemesDefault from "Themes" /* 576 */;
+import initializeDefault from "initialize" /* 1898 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import closure_5 from "addApplication" /* 4522 */;
-import closure_6 from "reset" /* 4503 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_9 from "createRTCConnection" /* 4557 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import { InputModes } from "ME" /* 673 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import closure_5 from "addApplication" /* 4788 */;
+import closure_6 from "reset" /* 4582 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_9 from "createRTCConnection" /* 4583 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import { InputModes } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 let set = arg1;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_TOKENIZE_MISSING_REQUIRED_OPTION", embeddedActivity: "Missing required option for tokenize.", isStreaming: "clearLastReportedViewableIndices" };
+    obj.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: "15.30", isPushToTalk: "3.30", embeddedActivity: "halv fire", isStreaming: "klokkesl\u00E6t" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_TOKENIZE_MISSING_REQUIRED_OPTION", embeddedActivity: "Missing required option for tokenize.", isStreaming: "clearLastReportedViewableIndices" };
+set.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: "15.30", isPushToTalk: "3.30", embeddedActivity: "halv fire", isStreaming: "klokkesl\u00E6t" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

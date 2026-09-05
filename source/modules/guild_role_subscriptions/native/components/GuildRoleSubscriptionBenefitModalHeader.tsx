@@ -1,24 +1,24 @@
-// Module ID: 17676
-// Function ID: 17677
+// Module ID: 17756
+// Function ID: 17757
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 673, 21, 4481, 709, 5479, 15151, 7063, 8980, 4477, 1233, 1296, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4560, 576, 5524, 15227, 7123, 9050, 4556, 1114, 1178, 2]
 // Exports: default
 
-// Module 17676 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 17756 (GuildRoleSubscriptionBenefitModalHeader)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import renderDefault from "render" /* 8980 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 15151 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import renderDefault from "render" /* 9050 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 15227 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { Fonts } from "ME" /* 673 */;
+import { Fonts } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 require = arg1;
 noopAll;
@@ -79,7 +79,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   }
   const obj6 = { style: items4, children: null };
   items4[1] = disabledButton;
-  const intl2 = tmp4(1233).intl;
+  const intl2 = tmp4(1114).intl;
   obj6[1] = intl2.string(getSystemLocale.t["R3BPH+"]);
   obj5[4] = callback2(Button.LegacyText, obj6);
   items1[2] = callback2(renderDefault, obj5);

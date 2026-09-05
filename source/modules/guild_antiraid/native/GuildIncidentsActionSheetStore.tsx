@@ -1,14 +1,14 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11830
+// Function ID: 11831
 // Name: useGuildIncidentsActionSheetStore
-// Dependencies: [7947, 641, 702, 2]
+// Dependencies: [8016, 560, 1249, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 11762 (useGuildIncidentsActionSheetStore)
+// Module 11830 (useGuildIncidentsActionSheetStore)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 702 */;
-import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7947 */;
-import keys from "keys" /* 641 */;
+import batchUpdates from "batchUpdates" /* 1249 */;
+import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8016 */;
+import keys from "keys" /* 560 */;
 
 const DEFAULT_LOCKDOWN_DURATION = GUILD_REPORT_RAID_MOBILE_KEY.DEFAULT_LOCKDOWN_DURATION;
 const obj = keys.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false }));
@@ -17,19 +17,19 @@ const result = set.fileFinishedImporting("modules/guild_antiraid/native/GuildInc
 export const useGuildIncidentsActionSheetStore = obj;
 export const setTime = function setTime(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_3.setState({ time: closure_0, hasTimeChanges: true }));
+  _require(1249).batchUpdates(() => closure_1_3.setState({ time: closure_0, hasTimeChanges: true }));
 };
 export const setInitialTime = function setInitialTime(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_3.setState({ time: closure_0, hasTimeChanges: false }));
+  _require(1249).batchUpdates(() => closure_1_3.setState({ time: closure_0, hasTimeChanges: false }));
 };
 export const setPauseInvites = function setPauseInvites(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_3.setState({ pauseInvites: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_3.setState({ pauseInvites: closure_0 }));
 };
 export const setPauseDms = function setPauseDms(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_3.setState({ pauseDms: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_3.setState({ pauseDms: closure_0 }));
 };
 export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsActionSheetStore() {
   batchUpdates.batchUpdates(() => {

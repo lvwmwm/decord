@@ -1,12 +1,12 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 9644
+// Function ID: 9645
 // Name: useIframeLifecycle
-// Dependencies: [19, 673, 1228, 2]
+// Dependencies: [19, 1074, 1109, 2]
 // Exports: default
 
-// Module 9573 (useIframeLifecycle)
+// Module 9644 (useIframeLifecycle)
 import closure_2 from "noop" /* 19 */;
-import { ComponentActions } from "ME" /* 673 */;
+import { ComponentActions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useIframeLifecycle.tsx");

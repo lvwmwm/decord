@@ -1,9 +1,9 @@
-// Module ID: 4178
-// Function ID: 4179
+// Module ID: 4780
+// Function ID: 4781
 // Name: isFeatureTeenByDefault
 // Dependencies: [2]
 
-// Module 4178 (isFeatureTeenByDefault)
+// Module 4780 (isFeatureTeenByDefault)
 import set from "set" /* 2 */;
 
 class SettingsConfig {

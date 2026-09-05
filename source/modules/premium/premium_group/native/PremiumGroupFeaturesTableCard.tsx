@@ -1,21 +1,21 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13485
+// Function ID: 13486
 // Name: BetaPill
-// Dependencies: [17, 7366, 21, 4481, 709, 4477, 1233, 13413, 1296, 4948, 4329, 9310, 2]
+// Dependencies: [17, 7432, 21, 4560, 576, 4556, 1114, 13486, 1178, 4987, 4409, 9381, 2]
 // Exports: default
 
-// Module 13412 (BetaPill)
+// Module 13485 (BetaPill)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import Text from "Text" /* 4477 */;
-import items3 from "items" /* 7366 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13413 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import Text from "Text" /* 4556 */;
+import items3 from "items" /* 7432 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13486 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 class BetaPill {
   constructor() {
@@ -57,14 +57,14 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     let obj = { borderWidth: 2, direction: null, colors: null, borderRadius: null, style: null, children: null };
     obj[1] = Button.GradientBorder.Direction.HORIZONTAL;
     obj[2] = Gradients.PREMIUM_TIER_2;
-    obj[3] = tmp2(709).radii.sm;
+    obj[3] = tmp2(576).radii.sm;
     obj[4] = style;
     obj = { start: null, end: null, colors: null, locations: null, style: null, children: null };
     obj[0] = { x: 0, y: 0 };
     obj[1] = { x: 1, y: 0 };
     let obj2 = hexToRgba;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4948);
+    const tmp2Result = tmp2(4987);
     items[1] = hexToRgba.hexWithOpacity("#B845C1", 0.15);
     const obj4 = hexToRgba;
     items[2] = hexToRgba.hexWithOpacity("#AB5D8A", 0.15);
@@ -73,7 +73,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(9310), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(9381), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     obj1 = { variant: "text-sm/normal", style: null, children: null };

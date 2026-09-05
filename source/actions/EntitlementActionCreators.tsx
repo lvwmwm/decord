@@ -1,13 +1,13 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7400
+// Function ID: 7401
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 673, 706, 527, 4763, 2]
+// Dependencies: [5, 1074, 573, 1272, 4802, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7333 (_fetchUserEntitlements)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7400 (_fetchUserEntitlements)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchUserEntitlements() {
@@ -154,7 +154,7 @@ function _fetchGiftableEntitlements() {
     yield closure_1_0(closure_1_2[4]).httpGetWithCountryCodeQuery(obj1);
     if (1 === tmp7) {
       c3 = 0;
-      let obj3 = callback(706);
+      let obj3 = callback(573);
       obj3.dispatch({ type: "ENTITLEMENTS_GIFTABLE_FETCH_FAIL" });
       c5 = 3;
     } else if (arg0 === 1) {
@@ -162,7 +162,7 @@ function _fetchGiftableEntitlements() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1;
-      const obj = callback(706);
+      const obj = callback(573);
       obj3 = { type: "ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS", entitlements: null };
       obj3[1] = body.body;
       obj.dispatch(obj3);
@@ -194,7 +194,7 @@ export const fetchUserEntitlementsForApplication = function fetchUserEntitlement
     obj = { type: "ENTITLEMENT_FETCH_APPLICATION_START", applicationId: closure_0 };
     obj.dispatch(obj);
   });
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   obj = { url: Endpoints.ENTITLEMENTS_FOR_APPLICATION(closure_18), oldFormErrors: true, query: { exclude_consumed: flag }, rejectWithError: true };
   const value = HTTP.get(obj);
   return value.then((body) => {

@@ -1,12 +1,12 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9058
+// Function ID: 9059
 // Name: getMuteSettings
-// Dependencies: [4074, 2]
+// Dependencies: [4153, 2]
 // Exports: getMuteSettings
 
-// Module 8988 (getMuteSettings)
+// Module 9058 (getMuteSettings)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 4074 */;
+import hooksDefault from "hooks" /* 4153 */;
 
 const result = set.fileFinishedImporting("modules/channel/ChannelMuteUtils.tsx");
 

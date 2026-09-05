@@ -1,15 +1,15 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8157
+// Function ID: 8158
 // Name: getDecorationSizeForAvatarSize
-// Dependencies: [1432, 1296, 4448, 8089, 2008, 2]
+// Dependencies: [1397, 1178, 4527, 8158, 1896, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 8088 (getDecorationSizeForAvatarSize)
+// Module 8157 (getDecorationSizeForAvatarSize)
 import set from "set" /* 2 */;
-import Button from "Button" /* 1296 */;
-import DECORATION_TO_AVATAR_RATIO from "DECORATION_TO_AVATAR_RATIO" /* 1432 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+import Button from "Button" /* 1178 */;
+import DECORATION_TO_AVATAR_RATIO from "DECORATION_TO_AVATAR_RATIO" /* 1397 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
 
 let closure_3 = DECORATION_TO_AVATAR_RATIO.DECORATION_TO_AVATAR_RATIO;
 let result = set.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
@@ -32,7 +32,7 @@ export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutFo
       inset = 0;
     }
     obj[2] = inset + arg1;
-    obj[3] = _require(1296).CutoutType.RECTANGULAR;
+    obj[3] = _require(1178).CutoutType.RECTANGULAR;
     const nativeCutouts = memo.nativeCutouts;
     let mapped;
     if (nativeCutouts != null) {
@@ -53,5 +53,5 @@ export const openAvatarDecorationActionSheet = function openAvatarDecorationActi
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
   const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8089, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8158, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
 };

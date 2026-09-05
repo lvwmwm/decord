@@ -1,25 +1,25 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9456
+// Function ID: 9457
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4498, 673, 21, 4481, 709, 7063, 4936, 1233, 9386, 4477, 9387, 586, 9377, 38, 9384, 4448, 1228, 1296, 9388, 7090, 7089, 6567, 2]
+// Dependencies: [5, 32, 19, 17, 4577, 1074, 21, 4560, 576, 7123, 4975, 1114, 9457, 4556, 9458, 504, 9448, 38, 9455, 4527, 1109, 1178, 9459, 7150, 7149, 6627, 2]
 // Exports: default
 
-// Module 9385 (TransferFooter)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import registerAssetDefault from "registerAsset" /* 9386 */;
-import registerAssetDefault2 from "registerAsset" /* 9387 */;
+// Module 9456 (TransferFooter)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import registerAssetDefault from "registerAsset" /* 9457 */;
+import registerAssetDefault2 from "registerAsset" /* 9458 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "set" /* 4498 */;
-import { ComponentActions } from "ME" /* 673 */;
+import closure_10 from "set" /* 4577 */;
+import { ComponentActions } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function TransferFooter(arg0) {
@@ -31,7 +31,7 @@ function TransferFooter(arg0) {
   }
   obj[1] = transferring;
   obj[2] = onPress;
-  const intl = tmp3(1233).intl;
+  const intl = tmp3(1114).intl;
   obj[3] = intl.string(getSystemLocale.t.FYi3ry);
   obj[2] = closure_12(Button.Button, obj);
   return closure_12(SafeAreaPaddingView.SafeAreaPaddingView, obj);
@@ -123,7 +123,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(9384).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
+              obj1[0] = closure_1_0(9455).transferToPlaystationWithAlert(closure_1_0, dependencyMap[closure_1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -135,9 +135,9 @@ export default function GameConsoleListActionSheet(arg0) {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4448);
+            obj = v0(4527);
             obj.hideActionSheet();
-            const ComponentDispatch = closure_1_0(1228).ComponentDispatch;
+            const ComponentDispatch = closure_1_0(1109).ComponentDispatch;
             ComponentDispatch.dispatch(closure_1_11.TOGGLE_CALL_CONTROL_DRAWER);
             dependencyMap = 3;
             return { value: "HermesInternal", done: null };

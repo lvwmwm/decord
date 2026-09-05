@@ -1,9 +1,9 @@
-// Module ID: 1951
-// Function ID: 1952
+// Module ID: 1891
+// Function ID: 1892
 // Name: PaletteKeys
 // Dependencies: [2]
 
-// Module 1951 (PaletteKeys)
+// Module 1891 (PaletteKeys)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/nameplates/types.tsx");

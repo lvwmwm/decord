@@ -1,10 +1,10 @@
-// Module ID: 7761
-// Function ID: 7762
+// Module ID: 7829
+// Function ID: 7830
 // Name: POLL_ATTACHMENT_FOLDER
-// Dependencies: [1337, 2]
+// Dependencies: [1219, 2]
 
-// Module 7761 (POLL_ATTACHMENT_FOLDER)
-import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1337 */;
+// Module 7829 (POLL_ATTACHMENT_FOLDER)
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1219 */;
 import set from "set" /* 2 */;
 
 const items = [, ];

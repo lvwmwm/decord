@@ -1,10 +1,10 @@
-// Module ID: 9568
-// Function ID: 9569
+// Module ID: 9639
+// Function ID: 9640
 // Name: WakeLock
-// Dependencies: [19, 17, 1234, 9569, 2]
+// Dependencies: [19, 17, 1115, 9640, 2]
 // Exports: default, useWakeLock
 
-// Module 9568 (WakeLock)
+// Module 9639 (WakeLock)
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 

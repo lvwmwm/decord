@@ -1,9 +1,9 @@
-// Module ID: 5793
-// Function ID: 5794
+// Module ID: 5844
+// Function ID: 5845
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5793 (metadata)
+// Module 5844 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChestLogoSpotIllustration-2x.png.js");

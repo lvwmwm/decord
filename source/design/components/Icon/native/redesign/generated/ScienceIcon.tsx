@@ -1,14 +1,14 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16478
+// Function ID: 16479
 // Name: ScienceIcon
-// Dependencies: [19, 21, 709, 4196, 11743, 2]
+// Dependencies: [19, 21, 576, 4261, 11811, 2]
 // Exports: ScienceIcon
 
-// Module 16402 (ScienceIcon)
+// Module 16478 (ScienceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11743 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 11811 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

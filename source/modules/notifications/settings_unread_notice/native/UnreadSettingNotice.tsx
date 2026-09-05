@@ -1,17 +1,17 @@
-// Module ID: 11349
-// Function ID: 11350
+// Module ID: 11417
+// Function ID: 11418
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [19, 17, 682, 21, 4481, 709, 11350, 4477, 1233, 5084, 11351, 2]
+// Dependencies: [19, 17, 1084, 21, 4560, 576, 11418, 4556, 1114, 5123, 11419, 2]
 // Exports: default
 
-// Module 11349 (UnreadSettingNoticeConnected)
+// Module 11417 (UnreadSettingNoticeConnected)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11350 */;
+import ThemesDefault from "Themes" /* 576 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11418 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES" /* 682 */;
+import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES" /* 1084 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -34,9 +34,9 @@ export default function UnreadSettingNoticeConnected(channel) {
   const items = [callback(UnreadSettingNoticeImpressionTrackingDefault, obj), , ];
   obj = { style: tmp.informations, children: null };
   obj1 = { variant: "text-md/semibold", children: null };
-  const intl = _require(1233).intl;
-  obj1[1] = intl.string(_require(1233).t.i4xQ5o);
-  obj[1] = callback(_require(4477).Text, obj1);
+  const intl = _require(1114).intl;
+  obj1[1] = intl.string(_require(1114).t.i4xQ5o);
+  obj[1] = callback(_require(4556).Text, obj1);
   items[1] = callback(View, obj);
   const obj2 = { style: tmp.actions, children: null };
   const obj3 = {
@@ -49,10 +49,10 @@ export default function UnreadSettingNoticeConnected(channel) {
     children: null
   };
   const obj4 = { variant: "text-xs/medium", color: "text-link", children: null };
-  const intl2 = _require(1233).intl;
-  obj4[2] = intl2.string(_require(1233).t.KyUKhT);
-  obj3[3] = callback(_require(4477).Text, obj4);
-  obj2[1] = callback(_require(5084).PressableOpacity, obj3);
+  const intl2 = _require(1114).intl;
+  obj4[2] = intl2.string(_require(1114).t.KyUKhT);
+  obj3[3] = callback(_require(4556).Text, obj4);
+  obj2[1] = callback(_require(5123).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   return callback2(View, obj);

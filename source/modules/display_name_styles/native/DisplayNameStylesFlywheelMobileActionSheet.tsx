@@ -1,18 +1,18 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 16936
+// Function ID: 16937
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1921, 673, 1383, 21, 1355, 1362, 4416, 586, 4139, 1233, 2758, 7320, 6978, 4301, 1372, 7090, 7063, 7094, 5647, 1234, 5542, 16859, 8738, 4477, 4936, 4481, 709, 2]
+// Dependencies: [19, 17, 1371, 1074, 1954, 21, 4279, 4411, 4495, 504, 4218, 1114, 2786, 7382, 7038, 4380, 1943, 7150, 7123, 7154, 5692, 1115, 5587, 16937, 8808, 4556, 4975, 4560, 576, 2]
 // Exports: default
 
-// Module 16858 (DisplayNameStylesFlywheelMobileActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16936 (DisplayNameStylesFlywheelMobileActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ UserSettingsSections: closure_6, Fonts: error } = ME);
@@ -39,19 +39,19 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   dependencyMap = undefined;
   let obj = React;
   ref = React.useRef(null);
-  const enabled = React.useContext(markAsDismissed(1355).AccessibilityPreferencesContext).reducedMotion.enabled;
-  obj1 = markAsDismissed(1362);
-  const isThemeDarkResult = obj1.isThemeDark(ref(4416)());
+  const enabled = React.useContext(markAsDismissed(4279).AccessibilityPreferencesContext).reducedMotion.enabled;
+  obj1 = markAsDismissed(4411);
+  const isThemeDarkResult = obj1.isThemeDark(ref(4495)());
   const tmp6 = callback2();
-  let obj2 = markAsDismissed(586);
+  let obj2 = markAsDismissed(504);
   const items = [closure_5];
   const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj3 = ref(4139);
+  let obj3 = ref(4218);
   let result = obj3.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const intl = markAsDismissed(1233).intl;
+  const intl = markAsDismissed(1114).intl;
   const string = intl.string;
-  const tmp9 = ref(2758);
+  const tmp9 = ref(2786);
   if (result) {
     let stringResult = string(tmp9.TyUdka);
   } else {
@@ -91,11 +91,11 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       markAsDismissed(closure_1_8.USER_DISMISS);
     }
   };
-  const items4 = [callback(markAsDismissed(7094).ActionSheetHeaderBar, obj1), , , , ];
+  const items4 = [callback(markAsDismissed(7154).ActionSheetHeaderBar, obj1), , , , ];
   obj2 = { style: tmp6.imageContainer, children: null };
   let tmp14Result = enabled;
   if (enabled) {
-    tmp14Result = tmp14(tmp2(5647).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+    tmp14Result = tmp14(tmp2(5692).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   }
   const items5 = [tmp14Result, ];
   if (enabled) {
@@ -110,9 +110,9 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       str2 = "text-overlay-light";
     }
     obj3[2] = str2;
-    const intl2 = tmp2(1233).intl;
-    obj3[3] = intl2.string(tmp4(2758).Uzms61);
-    items4[2] = tmp14(tmp2(4477).Text, obj3);
+    const intl2 = tmp2(1114).intl;
+    obj3[3] = intl2.string(tmp4(2786).Uzms61);
+    items4[2] = tmp14(tmp2(4556).Text, obj3);
     const obj4 = { variant: "text-lg/medium", style: null, color: null, children: null };
     obj4[1] = tmp6.subtitle;
     if (isThemeDarkResult) {
@@ -121,41 +121,41 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     const obj5 = { bottom: true, children: null };
     obj4[2] = str;
     obj4[3] = stringResult;
-    items4[3] = tmp14(tmp2(4477).Text, obj4);
+    items4[3] = tmp14(tmp2(4556).Text, obj4);
     const obj6 = { style: null, children: null };
     obj6[0] = tmp6.actions;
     const obj7 = { text: null, variant: "primary", size: "lg", onPress: null };
-    const intl3 = tmp2(1233).intl;
-    obj7[0] = intl3.string(tmp2(1233).t["4P5I8V"]);
+    const intl3 = tmp2(1114).intl;
+    obj7[0] = intl3.string(tmp2(1114).t["4P5I8V"]);
     obj7[3] = callback;
-    const items6 = [tmp14(tmp2(4936).Button, obj7), ];
+    const items6 = [tmp14(tmp2(4975).Button, obj7), ];
     const obj8 = { text: null, variant: "secondary", size: "lg", onPress: null };
-    const intl4 = tmp2(1233).intl;
-    obj8[0] = intl4.string(tmp2(1233).t.TulDPl);
+    const intl4 = tmp2(1114).intl;
+    obj8[0] = intl4.string(tmp2(1114).t.TulDPl);
     obj8[3] = callback1;
-    items6[1] = tmp14(tmp2(4936).Button, obj8);
+    items6[1] = tmp14(tmp2(4975).Button, obj8);
     obj6[1] = items6;
     items4[4] = tmp15(tmp16, obj6);
     obj[1] = items4;
     obj5[1] = tmp15(tmp16, obj);
-    obj[4] = tmp14(tmp2(7063).SafeAreaPaddingView, obj5);
-    return tmp14(tmp2(7090).BottomSheet, obj);
+    obj[4] = tmp14(tmp2(7123).SafeAreaPaddingView, obj5);
+    return tmp14(tmp2(7150).BottomSheet, obj);
   } else {
     if (tmp2Result.isIOS()) {
       const obj9 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
       const obj10 = { uri: null };
-      obj10[0] = tmp4(16859);
+      obj10[0] = tmp4(16937);
       obj9[0] = obj10;
       obj9[1] = tmp6.image;
       obj9[3] = !enabled;
-      tmp14Result = tmp14(tmp4(5542), obj9);
-      const tmp4Result = tmp4(5542);
+      tmp14Result = tmp14(tmp4(5587), obj9);
+      const tmp4Result = tmp4(5587);
     } else {
       const obj11 = { url: null, style: null, autoplay: true };
-      obj11[0] = tmp4(16859);
+      obj11[0] = tmp4(16937);
       obj11[1] = tmp6.image;
-      tmp14Result = tmp14(tmp2(8738).APNGPlayer, obj11);
+      tmp14Result = tmp14(tmp2(8808).APNGPlayer, obj11);
     }
-    tmp2Result = tmp2(1234);
+    tmp2Result = tmp2(1115);
   }
 };

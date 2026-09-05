@@ -1,13 +1,13 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 17789
+// Function ID: 17790
 // Name: _getTemplates
-// Dependencies: [5, 673, 706, 527, 2]
+// Dependencies: [5, 1074, 573, 1272, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 17709 (_getTemplates)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 17789 (_getTemplates)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _getTemplates() {

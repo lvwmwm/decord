@@ -1,9 +1,9 @@
-// Module ID: 5817
-// Function ID: 5818
+// Module ID: 5868
+// Function ID: 5869
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5817 (metadata)
+// Module 5868 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassIllocon-2x.png.js");

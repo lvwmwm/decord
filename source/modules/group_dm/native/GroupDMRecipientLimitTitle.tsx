@@ -1,21 +1,21 @@
-// Module ID: 16677
-// Function ID: 16678
+// Module ID: 16755
+// Function ID: 16756
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 673, 21, 4481, 709, 1234, 11523, 4197, 1233, 4477, 8592, 12120, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1115, 11591, 4262, 1114, 4556, 8662, 12188, 2]
 // Exports: default
 
-// Module 16677 (GroupDMRecipientLimitTitle)
+// Module 16755 (GroupDMRecipientLimitTitle)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import map from "map" /* 4197 */;
-import Text from "Text" /* 4477 */;
-import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11523 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import map from "map" /* 4262 */;
+import Text from "Text" /* 4556 */;
+import GroupDMNitroAcquisitionStrategy from "GroupDMNitroAcquisitionStrategy" /* 11591 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MAX_GROUP_DM_PARTICIPANTS } from "ME" /* 673 */;
+import { MAX_GROUP_DM_PARTICIPANTS } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 require = arg1;
 noopAll;
@@ -61,7 +61,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
       str2 = "text-feedback-critical";
     }
   }
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   const formatToPlainStringResult = intl.formatToPlainString(getSystemLocale.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   obj = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp.title, maxFontSizeMultiplier: 2, children: title };
   const items = [callback(Text.Text, obj), ];
@@ -74,7 +74,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
     obj1 = { size: "xxs", color: null, style: null, accessible: false };
     obj1[1] = token2;
     obj1[2] = tmp.nitroWheelIcon;
-    tmp15Result = tmp15(tmp2(8592).NitroWheelIcon, obj1);
+    tmp15Result = tmp15(tmp2(8662).NitroWheelIcon, obj1);
   }
   obj2 = { children: null };
   const items1 = [tmp15Result, ];
@@ -89,12 +89,12 @@ export default function GroupDMRecipientLimitTitle(arg0) {
     const _HermesInternal = HermesInternal;
     obj4[2] = "" + title + ", " + formatToPlainStringResult;
     const obj5 = { top: null, bottom: null, left: null, right: null };
-    obj5[0] = tmp5(709).space.PX_8;
-    obj5[1] = tmp5(709).space.PX_8;
-    obj5[2] = tmp5(709).space.PX_16;
-    obj5[3] = tmp5(709).space.PX_16;
+    obj5[0] = tmp5(576).space.PX_8;
+    obj5[1] = tmp5(576).space.PX_8;
+    obj5[2] = tmp5(576).space.PX_16;
+    obj5[3] = tmp5(576).space.PX_16;
     obj4[3] = obj5;
-    obj4[4] = tmp5(12120);
+    obj4[4] = tmp5(12188);
     obj4[5] = tmp13Result;
     tmp15Result = tmp15(closure_3, obj4);
   } else {

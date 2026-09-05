@@ -1,13 +1,13 @@
-// Module ID: 7523
-// Function ID: 7524
+// Module ID: 7590
+// Function ID: 7591
 // Name: CollectiblesShopPerfCheckpoint
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: trackShopPerf
 
-// Module 7523 (CollectiblesShopPerfCheckpoint)
+// Module 7590 (CollectiblesShopPerfCheckpoint)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/collectibles/utils/CollectiblesPerfLogging.tsx");

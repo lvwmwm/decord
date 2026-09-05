@@ -1,9 +1,9 @@
-// Module ID: 1979
-// Function ID: 1980
+// Module ID: 2010
+// Function ID: 2011
 // Name: CHANGELOG_MODAL_KEY
 // Dependencies: [2]
 
-// Module 1979 (CHANGELOG_MODAL_KEY)
+// Module 2010 (CHANGELOG_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");

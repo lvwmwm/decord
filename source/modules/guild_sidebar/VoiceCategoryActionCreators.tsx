@@ -1,12 +1,12 @@
-// Module ID: 16118
-// Function ID: 16119
+// Module ID: 16196
+// Function ID: 16197
 // Name: voiceCategoryExpand
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 16118 (voiceCategoryExpand)
+// Module 16196 (voiceCategoryExpand)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
 

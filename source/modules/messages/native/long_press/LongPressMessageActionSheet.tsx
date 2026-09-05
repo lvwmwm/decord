@@ -1,21 +1,21 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11658
+// Function ID: 11659
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7869, 11591, 11592, 4131, 1215, 1908, 4120, 4474, 673, 21, 7102, 7122, 4708, 11589, 7907, 11593, 7787, 586, 7209, 11594, 11595, 4166, 7207, 11596, 4747, 1399, 11597, 8047, 11598, 7140, 11599, 7138, 1623, 11661, 11662, 1233, 10109, 4428, 4439, 4424, 10179, 11666, 11620, 5034, 11668, 10173, 11670, 8687, 5055, 10884, 11672, 11674, 8592, 11676, 11639, 4444, 9364, 5032, 5051, 4430, 10558, 7904, 8594, 10749, 2500, 5042, 7216, 7228, 11678, 4678, 7231, 7693, 11551, 2]
+// Dependencies: [32, 19, 7938, 11659, 11660, 4210, 502, 1979, 4199, 4553, 1074, 21, 7162, 7182, 4740, 11657, 7976, 11661, 7855, 504, 7269, 11662, 11663, 1935, 7267, 11664, 4785, 1384, 11665, 8116, 11666, 7200, 11667, 7198, 1608, 11729, 11730, 1114, 10180, 4507, 4518, 4503, 10250, 11734, 11688, 5073, 11736, 10244, 11738, 8757, 5094, 10953, 11740, 11742, 8662, 11744, 11707, 4523, 9435, 5071, 5090, 4509, 10629, 7973, 8664, 10818, 2528, 5081, 7276, 7289, 11746, 4710, 7292, 7761, 11619, 2]
 // Exports: default
 
-// Module 11590 (LongPressMessageActionSheet)
+// Module 11658 (LongPressMessageActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 7869 */;
-import closure_6 from "handleSelectedGuildChange" /* 11591 */;
-import closure_7 from "getTimeSafe" /* 11592 */;
-import { isMessageComponentsV2 } from "hasFlag" /* 4131 */;
-import closure_9 from "fetchFingerprint" /* 1215 */;
-import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4474 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7938 */;
+import closure_6 from "handleSelectedGuildChange" /* 11659 */;
+import closure_7 from "getTimeSafe" /* 11660 */;
+import { isMessageComponentsV2 } from "hasFlag" /* 4210 */;
+import closure_9 from "fetchFingerprint" /* 502 */;
+import closure_10 from "createGuildRecordFromRust" /* 1979 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4199 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4553 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

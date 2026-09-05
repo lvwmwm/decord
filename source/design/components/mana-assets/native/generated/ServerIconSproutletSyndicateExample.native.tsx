@@ -1,14 +1,14 @@
-// Module ID: 6378
-// Function ID: 6379
+// Module ID: 6435
+// Function ID: 6436
 // Name: ServerIconSproutletSyndicateExample
-// Dependencies: [21, 5542, 6379, 2]
+// Dependencies: [21, 5587, 6436, 2]
 // Exports: ServerIconSproutletSyndicateExample
 
-// Module 6378 (ServerIconSproutletSyndicateExample)
+// Module 6435 (ServerIconSproutletSyndicateExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6379 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6436 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconSproutletSyndicateExample.native.tsx");

@@ -1,10 +1,10 @@
 // Module ID: 13534
 // Function ID: 13535
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13534 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 160, height: 82, scales: [2, 3], hash: "0d2c2c590995b34f0429dc331d39457b", name: "subscribe_confirm", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 177.5, height: 112, scales: [2, 3], hash: "d63f711157bc9a870f14f2f22d76c3fb", name: "guild_subscription_no_guilds_dark", type: "png" });

@@ -1,12 +1,12 @@
 // Module ID: 10523
 // Function ID: 10524
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10385, 10517]
+// Dependencies: [41, 42, 93, 95, 98, 10456, 10439]
 
 // Module 10523 (_isNativeReflectConstruct)
-import now from "now" /* 10385 */;
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10517 */;
-import UKCasualDateParser from "_classCallCheck" /* 41 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import now from "now" /* 10456 */;
+import NLCasualDateParser from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_1 from "_possibleConstructorReturn" /* 93 */;
 import closure_2 from "_getPrototypeOf" /* 95 */;
@@ -97,12 +97,12 @@ if (self2) {
     }
     const _Object3 = Object;
     let closure_7 = fn(now);
-    class UKCasualDateParser {
+    class NLCasualDateParser {
       constructor() {
         self = this;
-        tmp = UKCasualDateParser(this, UKCasualDateParser);
+        tmp = NLCasualDateParser(this, NLCasualDateParser);
         tmp2 = closure_2;
-        obj = closure_2(UKCasualDateParser);
+        obj = closure_2(NLCasualDateParser);
         tmp3 = closure_1;
         if (_isNativeReflectConstruct()) {
           tmp7 = globalThis;
@@ -117,36 +117,35 @@ if (self2) {
         return tmp3(self, constructResult);
       }
     }
-    _inherits(UKCasualDateParser, _isNativeReflectConstruct2.AbstractParserWithLeftRightBoundaryChecking);
-    let obj = { key: "innerPatternString", value: null };
-    obj[1] = function innerPatternString(arg0) {
-      return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
+    _inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+    let obj = { key: "innerPattern", value: null };
+    obj[1] = function innerPattern(arg0) {
+      return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
     };
     let items = [obj, ];
     obj = { key: "innerExtract", value: null };
     obj[1] = function innerExtract(reference) {
-      const formatted = arg1[1].toLowerCase();
-      if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+      const formatted = arg1[0].toLowerCase();
+      if ("nu" === formatted) {
+        return closure_7.now(reference.reference);
+      } else if ("vandaag" === formatted) {
         return closure_7.today(reference.reference);
-      } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return closure_7.yesterday(reference.reference);
-      } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-        return closure_7.tomorrow(reference.reference);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-        return closure_7.theDayAfter(reference.reference, 2);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-        return closure_7.theDayAfter(reference.reference, 3);
-      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return closure_7.theDayBefore(reference.reference, 2);
-      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return closure_7.theDayBefore(reference.reference, 3);
       } else {
-        return tmp2;
+        if ("morgen" !== formatted) {
+          if ("morgend" !== formatted) {
+            if ("gisteren" === formatted) {
+              return closure_7.yesterday(reference.reference);
+            } else {
+              return tmp2;
+            }
+          }
+        }
+        return closure_7.tomorrow(reference.reference);
       }
-      const str = arg1[1];
+      const str = arg1[0];
     };
     items[1] = obj;
-    exports.default = _createClass(UKCasualDateParser, items);
+    exports.default = _createClass(NLCasualDateParser, items);
   } else {
     const _Object2 = Object;
   }

@@ -1,27 +1,27 @@
-// Module ID: 695
-// Function ID: 696
+// Module ID: 1242
+// Function ID: 1243
 // Name: expandEventProperties
-// Dependencies: [109, 19, 696, 703, 673, 14120, 4510, 1915, 694, 500, 14118, 1205, 706, 7607, 1233, 7, 511, 2, 14121]
+// Dependencies: [109, 19, 1243, 1347, 1074, 1349, 1350, 1351, 1357, 1250, 1358, 1232, 573, 1359, 1114, 7, 1256, 2, 1361]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
-// Module 695 (expandEventProperties)
+// Module 1242 (expandEventProperties)
 import reportAll from "report" /* 7 */;
-import v1 from "v1" /* 511 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef1205 from "module_1205" /* 1205 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7607 */;
-import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 14118 */;
-import MEAll from "ME" /* 14121 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _modDef1232 from "module_1232" /* 1232 */;
+import v1 from "v1" /* 1256 */;
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 1358 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 1359 */;
+import MEAll from "ME" /* 1361 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
-import withEqualityFn from "withEqualityFn" /* 696 */;
-import closure_9 from "refreshSourceMapCookie" /* 703 */;
-import ME from "ME" /* 673 */;
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 14120 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4510 */;
-import isBlockedDomain from "isBlockedDomain" /* 1915 */;
+import withEqualityFn from "withEqualityFn" /* 1243 */;
+import closure_9 from "refreshSourceMapCookie" /* 1347 */;
+import ME from "ME" /* 1074 */;
+import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 1349 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 1350 */;
+import isBlockedDomain from "isBlockedDomain" /* 1351 */;
 import importAllResult from "noop" /* 19 */;
-import encodeProperties from "encodeProperties" /* 500 */;
-import importAllResult1 from "encodeProperties" /* 500 */;
+import encodeProperties from "encodeProperties" /* 1250 */;
+import importAllResult1 from "encodeProperties" /* 1250 */;
 
 require = arg1;
 function expandEventProperties(arg0) {
@@ -38,7 +38,7 @@ function expandEventProperties(arg0) {
       const obj7 = getHermesInstrumentedStatsSummaryDefault;
       tmp.cpu_core_count = getHermesInstrumentedStatsSummaryDefault.getCPUCoreCount();
       tmp.accessibility_features = getAccessibilityFeatures();
-      tmp.rendered_locale = obj2(1233).intl.currentLocale;
+      tmp.rendered_locale = obj2(1114).intl.currentLocale;
       const _Math = Math;
       const _performance = performance;
       tmp.uptime_app = Math.floor((performance.now() - closure_18) / c15);
@@ -121,7 +121,7 @@ if (isBlockedDomain.isLibdiscoreInitialized()) {
 function addBreadcrumb(arg0) {
   const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = IGNORE_ANALYTICS_BREADCRUMB_EVENTS2.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(arg0)) {
-    let obj = _modDef1205;
+    let obj = _modDef1232;
     obj = { category: "analytics", message: null };
     obj[1] = arg0;
     obj.addBreadcrumb(obj);
@@ -193,8 +193,8 @@ obj = {
   [AnalyticEvents.RPC_SUBSCRIPTION_REQUESTED]: obj24,
   [AnalyticEvents.ACTIVITY_HANDSHAKE]: obj25,
   [AnalyticEvents.CHANNEL_BANNER_VIEWED]: obj26,
-  [arg1(500).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj27,
-  [arg1(500).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj28,
+  [arg1(1250).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj27,
+  [arg1(1250).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj28,
   [AnalyticEvents.PREMIUM_UPSELL_VIEWED]: obj29,
   [AnalyticEvents.FORUM_CHANNEL_SEARCHED]: obj30,
   [AnalyticEvents.FORUM_CHANNEL_SCROLLED]: obj31,

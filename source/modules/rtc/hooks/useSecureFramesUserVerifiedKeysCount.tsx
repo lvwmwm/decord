@@ -1,12 +1,12 @@
-// Module ID: 9093
-// Function ID: 9094
+// Module ID: 9164
+// Function ID: 9165
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 9063, 9064, 586, 2]
+// Dependencies: [19, 9134, 9135, 504, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 9093 (useSecureFramesUserVerifiedKeysCount)
+// Module 9164 (useSecureFramesUserVerifiedKeysCount)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "initialize" /* 9063 */;
+import closure_3 from "initialize" /* 9134 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");

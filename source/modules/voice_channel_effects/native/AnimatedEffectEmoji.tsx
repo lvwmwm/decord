@@ -1,19 +1,19 @@
-// Module ID: 9559
-// Function ID: 9560
+// Module ID: 9630
+// Function ID: 9631
 // Name: Emoji
-// Dependencies: [19, 17, 4473, 21, 684, 4481, 709, 5542, 1296, 586, 4218, 4482, 7287, 2]
+// Dependencies: [19, 17, 4552, 21, 1090, 4560, 576, 5587, 1178, 504, 4296, 4561, 7349, 2]
 // Exports: default
 
-// Module 9559 (Emoji)
-import setDefault from "set" /* 684 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import preloadDefault from "preload" /* 5542 */;
+// Module 9630 (Emoji)
+import ThemesDefault from "Themes" /* 576 */;
+import setDefault from "set" /* 1090 */;
+import Button from "Button" /* 1178 */;
+import preloadDefault from "preload" /* 5587 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Emoji(url) {

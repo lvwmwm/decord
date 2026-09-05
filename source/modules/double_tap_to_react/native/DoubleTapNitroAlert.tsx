@@ -1,20 +1,20 @@
-// Module ID: 7905
-// Function ID: 7906
+// Module ID: 7974
+// Function ID: 7975
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 7900, 673, 7906, 21, 4481, 7320, 4867, 4871, 6550, 1233, 2]
+// Dependencies: [19, 17, 7969, 1074, 7975, 21, 4560, 7382, 4906, 4910, 6610, 1114, 2]
 // Exports: default
 
-// Module 7905 (DoubleTapNitroAlert)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6550 */;
+// Module 7974 (DoubleTapNitroAlert)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6610 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7900 */;
-import { UserSettingsSections } from "ME" /* 673 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
+import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7969 */;
+import { UserSettingsSections } from "ME" /* 1074 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7975 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
@@ -23,13 +23,13 @@ const result = require("set").fileFinishedImporting("modules/double_tap_to_react
 
 export default function DoubleTapNitroAlert(emojiName) {
   const callback = React.useCallback(() => {
-    let obj = callback(7320);
+    let obj = callback(7382);
     obj = { screen: constants.TEXT, params: obj };
     obj = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(7320);
+    let obj = callback(7382);
     obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj, () => {
       callback(table[8]).dismissAlert(closure_4);

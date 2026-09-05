@@ -1,14 +1,14 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14498
+// Function ID: 14499
 // Name: addRegularStoreListing
-// Dependencies: [1995, 14424, 586, 1394, 706, 2]
+// Dependencies: [2025, 14499, 504, 1369, 573, 2]
 
-// Module 14423 (addRegularStoreListing)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
-import closure_4 from "createFromServer" /* 14424 */;
+// Module 14498 (addRegularStoreListing)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import closure_3 from "_getSystemLocale" /* 2025 */;
+import closure_4 from "createFromServer" /* 14499 */;
 import set from "set" /* 2 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 15519
-// Function ID: 15520
+// Module ID: 15595
+// Function ID: 15596
 // Name: CarIcon
-// Dependencies: [19, 21, 709, 4196, 15520, 2]
+// Dependencies: [19, 21, 576, 4261, 15596, 2]
 // Exports: CarIcon
 
-// Module 15519 (CarIcon)
+// Module 15595 (CarIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15520 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15596 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 12078
-// Function ID: 12079
+// Module ID: 12146
+// Function ID: 12147
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 12078 (getItemSubtitleForMaxPlayers)
+// Module 12146 (getItemSubtitleForMaxPlayers)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
 

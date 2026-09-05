@@ -1,15 +1,15 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17476
+// Function ID: 17477
 // Name: _terminate
-// Dependencies: [4532, 4578, 4545, 684, 3, 7058, 17397, 1234, 2]
+// Dependencies: [1908, 4610, 4585, 1090, 3, 7118, 17477, 1115, 2]
 
-// Module 17396 (_terminate)
+// Module 17476 (_terminate)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 684 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_4 from "initialize" /* 4578 */;
-import { Features } from "DesktopSources" /* 4545 */;
+import setDefault from "set" /* 1090 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_4 from "initialize" /* 4610 */;
+import { Features } from "DesktopSources" /* 4585 */;
 
 let require = arg1;
 const SECOND = setDefault.Millis.SECOND;

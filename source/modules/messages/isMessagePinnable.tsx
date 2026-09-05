@@ -1,14 +1,14 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11664
+// Function ID: 11665
 // Name: isMessagePinnable
-// Dependencies: [4120, 673, 7210, 7209, 2]
+// Dependencies: [4199, 1074, 7270, 7269, 2]
 // Exports: default
 
-// Module 11596 (isMessagePinnable)
-import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7209 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7210 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
+// Module 11664 (isMessagePinnable)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 7269 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7270 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ ChannelTypes: c4, Permissions: c5 } = ME);

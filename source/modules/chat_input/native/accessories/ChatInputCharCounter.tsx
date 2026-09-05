@@ -1,16 +1,16 @@
-// Module ID: 12361
-// Function ID: 12362
+// Module ID: 12429
+// Function ID: 12430
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1921, 673, 1923, 21, 4481, 586, 4139, 9233, 9242, 4194, 1233, 5084, 4477, 8592, 2]
+// Dependencies: [32, 19, 1371, 1074, 1373, 21, 4560, 504, 4218, 9304, 9313, 4259, 1114, 5123, 4556, 8662, 2]
 
-// Module 12361 (ChatInputCharCounter)
+// Module 12429 (ChatInputCharCounter)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import { UpsellTypes } from "ME" /* 673 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import { UpsellTypes } from "ME" /* 1074 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -21,12 +21,12 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
   let stateFromStores;
   dependencyMap = undefined;
   let callback;
-  let obj = analyticsLocations(586);
+  let obj = analyticsLocations(504);
   const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores(_undefined[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
   const tmp = callback4();
   [tmp6, c2] = callback(importAllResult.useState(0), 2);
-  const tmp7 = stateFromStores(9233)();
+  const tmp7 = stateFromStores(9304)();
   callback = tmp7;
   const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(length) {
@@ -42,9 +42,9 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
     obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
     obj[3] = "-" + tmp6;
-    const items2 = [callback2(tmp2(4477).Text, obj), callback2(tmp2(8592).NitroWheelIcon, { size: "sm" })];
+    const items2 = [callback2(tmp2(4556).Text, obj), callback2(tmp2(8662).NitroWheelIcon, { size: "sm" })];
     obj[2] = items2;
-    tmp10 = callback3(tmp2(5084).PressableOpacity, obj);
+    tmp10 = callback3(tmp2(5123).PressableOpacity, obj);
   }
   return tmp10;
 });

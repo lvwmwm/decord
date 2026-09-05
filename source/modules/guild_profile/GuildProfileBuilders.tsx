@@ -1,16 +1,16 @@
-// Module ID: 5503
-// Function ID: 5504
+// Module ID: 5548
+// Function ID: 5549
 // Name: getEmoji
-// Dependencies: [5419, 4134, 5504, 1394, 5505, 2]
+// Dependencies: [5459, 4213, 5549, 1369, 5550, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5503 (getEmoji)
+// Module 5548 (getEmoji)
 import set from "set" /* 2 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import getEmojiToGroupId from "getEmojiToGroupId" /* 5419 */;
-import MAX_TRAITS from "MAX_TRAITS" /* 5504 */;
-import GuildProfileVisibility from "GuildProfileVisibility" /* 5505 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4213 */;
+import getEmojiToGroupId from "getEmojiToGroupId" /* 5459 */;
+import MAX_TRAITS from "MAX_TRAITS" /* 5549 */;
+import GuildProfileVisibility from "GuildProfileVisibility" /* 5550 */;
 
 function getEmoji(guildId) {
   ({ emojiId, emojiName } = guildId);

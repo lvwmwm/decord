@@ -1,10 +1,10 @@
 // Module ID: 11567
 // Function ID: 11568
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11567 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/light-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "11d1f1c27d6ce094f9dea47191c76875", name: "feedback-modal-sad-desaturated", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "a22308efe22f297561f3f188b87b515b", name: "ic_flower_star_24px", type: "png" });

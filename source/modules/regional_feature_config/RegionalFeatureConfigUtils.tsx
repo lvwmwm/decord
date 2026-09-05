@@ -1,12 +1,12 @@
-// Module ID: 4172
-// Function ID: 4173
+// Module ID: 5423
+// Function ID: 5424
 // Name: isFeatureAgeGated
-// Dependencies: [4173, 586, 2]
+// Dependencies: [4775, 504, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 4172 (isFeatureAgeGated)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "getRegionalFeatureConfig" /* 4173 */;
+// Module 5423 (isFeatureAgeGated)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "getRegionalFeatureConfig" /* 4775 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigUtils.tsx");
@@ -17,7 +17,7 @@ export const isFeatureAgeGated = function isFeatureAgeGated(arg0) {
 export const useIsFeatureAgeGated = function useIsFeatureAgeGated(AGE_GATED_SPACES) {
   const _require = AGE_GATED_SPACES;
   const items = [closure_2];
-  return _require(586).useStateFromStores(items, () => closure_1_2.isFeatureAgeGated(closure_0));
+  return _require(504).useStateFromStores(items, () => closure_1_2.isFeatureAgeGated(closure_0));
 };
 export const isSettingTeenByDefault = function isSettingTeenByDefault(arg0) {
   return closure_2.isSettingTeenByDefault(arg0);
@@ -25,7 +25,7 @@ export const isSettingTeenByDefault = function isSettingTeenByDefault(arg0) {
 export const useIsSettingTeenByDefault = function useIsSettingTeenByDefault(GUILD_ACTIVITY_STATUS) {
   const _require = GUILD_ACTIVITY_STATUS;
   const items = [closure_2];
-  return _require(586).useStateFromStores(items, () => closure_1_2.isSettingTeenByDefault(closure_0));
+  return _require(504).useStateFromStores(items, () => closure_1_2.isSettingTeenByDefault(closure_0));
 };
 export const hasAgeGatedFeatures = function hasAgeGatedFeatures() {
   return closure_2.hasAgeGatedFeatures();

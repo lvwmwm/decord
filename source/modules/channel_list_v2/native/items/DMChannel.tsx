@@ -1,18 +1,18 @@
-// Module ID: 16161
-// Function ID: 16162
-// Dependencies: [19, 4496, 4709, 10047, 4710, 21, 4481, 709, 10844, 4492, 586, 15956, 16038, 9699, 2]
+// Module ID: 16239
+// Function ID: 16240
+// Dependencies: [19, 4575, 4741, 10118, 4742, 21, 4560, 576, 10913, 4571, 504, 16032, 16116, 9770, 2]
 
-// Module 16161
-import ThemesDefault from "Themes" /* 709 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9699 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 15956 */;
-import getChannelModeDefault from "getChannelMode" /* 16038 */;
+// Module 16239
+import ThemesDefault from "Themes" /* 576 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9770 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 16032 */;
+import getChannelModeDefault from "getChannelMode" /* 16116 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "generateOldThreadCutoff" /* 4496 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import closure_4 from "generateOldThreadCutoff" /* 4575 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     channel(closure_1_2[9]).transitionToChannel(channel.id);
   }, items1);
-  let obj = channel(586);
+  let obj = channel(504);
   const items2 = [closure_4];
   const items3 = [channel.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items2, () => ({ hasUnread: closure_1_4.hasUnread(channel.id), mentionCount: closure_1_4.getMentionCount(channel.id) }), items3);
@@ -39,8 +39,8 @@ const memoResult = importAllResult.memo((channel) => {
   const tmp = callback();
   const items4 = [closure_5];
   const items5 = [channel];
-  const stateFromStores = channel(586).useStateFromStores(items4, () => closure_1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
-  const obj2 = channel(586);
+  const stateFromStores = channel(504).useStateFromStores(items4, () => closure_1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
+  const obj2 = channel(504);
   ({ isIncomingCall, isOngoingCall } = useCallA11yStateDefault(channel.id));
   obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null };
   const tmp6 = useCallA11yStateDefault(channel.id);

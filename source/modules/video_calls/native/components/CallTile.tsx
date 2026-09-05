@@ -1,29 +1,29 @@
-// Module ID: 9986
-// Function ID: 9987
+// Module ID: 10057
+// Function ID: 10058
 // Name: StreamPreviewTile
-// Dependencies: [19, 17, 4503, 1921, 9396, 4502, 21, 4481, 4329, 709, 7102, 1627, 586, 4729, 8110, 9523, 9953, 9552, 9560, 9987, 9992, 9993, 9371, 9393, 9994, 1296, 9403, 4218, 4482, 9995, 2]
+// Dependencies: [19, 17, 4582, 1371, 9467, 4581, 21, 4560, 4409, 576, 7162, 1611, 504, 4761, 8179, 9594, 10024, 9623, 9631, 10058, 10063, 10064, 9442, 9464, 10065, 1178, 9474, 4296, 4561, 10066, 2]
 
-// Module 9986 (StreamPreviewTile)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import registerAssetDefault from "registerAsset" /* 9371 */;
-import registerAssetDefault2 from "registerAsset" /* 9393 */;
-import StreamPreviewContainerDefault from "StreamPreviewContainer" /* 9987 */;
-import registerAssetDefault3 from "registerAsset" /* 9992 */;
-import registerAssetDefault4 from "registerAsset" /* 9993 */;
-import registerAssetDefault5 from "registerAsset" /* 9994 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 9995 */;
+// Module 10057 (StreamPreviewTile)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import registerAssetDefault from "registerAsset" /* 9442 */;
+import registerAssetDefault2 from "registerAsset" /* 9464 */;
+import StreamPreviewContainerDefault from "StreamPreviewContainer" /* 10058 */;
+import registerAssetDefault3 from "registerAsset" /* 10063 */;
+import registerAssetDefault4 from "registerAsset" /* 10064 */;
+import registerAssetDefault5 from "registerAsset" /* 10065 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 10066 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "reset" /* 4503 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9396 */;
-import ParticipantTypes from "ParticipantTypes" /* 4502 */;
+import closure_6 from "reset" /* 4582 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9467 */;
+import ParticipantTypes from "ParticipantTypes" /* 4581 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
 
 require = arg1;
 class StreamPreviewTile {
@@ -86,7 +86,7 @@ class TileOverlay {
     ({ bottom, left, top, right } = tmp4);
     tmp5 = reveal;
     reveal = closure_3.useContext(require("useRevealProviderValue").RevealContext).reveal;
-    obj = require("module_4218");
+    obj = require("module_4296");
     class T {
       constructor() {
         tmp = reveal;
@@ -152,7 +152,7 @@ class TileOverlay {
     obj4[1] = tmp7(View, obj5);
     items1[1] = jsx(View, obj4);
     obj2[2] = items1;
-    return tmp7(require("module_4218").View, obj2);
+    return tmp7(require("module_4296").View, obj2);
   }
 }
 let c3 = importAllResult;

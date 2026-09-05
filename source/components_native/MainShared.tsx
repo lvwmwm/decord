@@ -1,27 +1,27 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16908
+// Function ID: 16909
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1386, 4557, 21, 586, 9419, 4335, 9610, 16831, 1234, 14505, 1233, 16833, 14500, 14360, 2, 16834, 16835, 16836, 16837, 16845, 16846, 16876]
+// Dependencies: [19, 17, 1957, 4583, 21, 504, 9490, 4417, 9681, 16909, 1115, 14580, 1114, 16911, 14575, 14434, 2, 16912, 16913, 16914, 16915, 16923, 16924, 16954]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 16830 (BurstReactionAnimationContainer)
-import initialize from "initialize" /* 586 */;
-import coerceMainRoute from "coerceMainRoute" /* 4335 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 9419 */;
-import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9610 */;
-import KeyCommandsView from "KeyCommandsView" /* 14500 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16831 */;
-import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16834 */;
-import MenuContainerDefault from "MenuContainer" /* 16835 */;
-import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16836 */;
-import StyleSheetDefault from "StyleSheet" /* 16837 */;
-import MuteDeafenDefault from "MuteDeafen" /* 16845 */;
-import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16846 */;
-import AnimatedToastDefault from "AnimatedToast" /* 16876 */;
+// Module 16908 (BurstReactionAnimationContainer)
+import initialize from "initialize" /* 504 */;
+import coerceMainRoute from "coerceMainRoute" /* 4417 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 9490 */;
+import isVoicePanelEnabled from "isVoicePanelEnabled" /* 9681 */;
+import KeyCommandsView from "KeyCommandsView" /* 14575 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 16909 */;
+import BurstReactionAnimationContainerInnerDefault from "BurstReactionAnimationContainerInner" /* 16912 */;
+import MenuContainerDefault from "MenuContainer" /* 16913 */;
+import ActionSheetPresenterDefault from "ActionSheetPresenter" /* 16914 */;
+import StyleSheetDefault from "StyleSheet" /* 16915 */;
+import MuteDeafenDefault from "MuteDeafen" /* 16923 */;
+import trackActionSheetImpressionDefault from "trackActionSheetImpression" /* 16924 */;
+import AnimatedToastDefault from "AnimatedToast" /* 16954 */;
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createRTCConnection" /* 4557 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "createRTCConnection" /* 4583 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

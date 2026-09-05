@@ -1,17 +1,17 @@
-// Module ID: 12512
-// Function ID: 12513
+// Module ID: 12580
+// Function ID: 12581
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 12494, 5386, 1991, 1908, 586, 12513, 4376, 11, 1233, 2]
+// Dependencies: [32, 19, 12562, 5426, 2021, 1979, 504, 12581, 4458, 11, 1114, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 12512 (useMaybeGetSortedBoosts)
+// Module 12580 (useMaybeGetSortedBoosts)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleModifyingAppliedBoostStart" /* 12494 */;
-import closure_6 from "handleConnectionReset" /* 5386 */;
-import closure_7 from "trackCommunicationDisabled" /* 1991 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "handleModifyingAppliedBoostStart" /* 12562 */;
+import closure_6 from "handleConnectionReset" /* 5426 */;
+import closure_7 from "trackCommunicationDisabled" /* 2021 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx");
@@ -101,7 +101,7 @@ export const useGetBoostUserConfig = function useGetBoostUserConfig(boost) {
   const date = new Date(obj.extractTimestamp(boost.id));
   const items = [closure_7];
   const items1 = [boost];
-  const stateFromStoresObject = _require(586).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(504).useStateFromStoresObject(items, () => {
     const member = closure_1_7.getMember(boost.guildId, boost.userId);
     let nick = closure_1_7.getNick(boost.guildId, boost.userId);
     if (nick == null) {

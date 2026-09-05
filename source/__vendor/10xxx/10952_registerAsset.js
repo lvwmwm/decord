@@ -1,10 +1,10 @@
 // Module ID: 10952
 // Function ID: 10953
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10952 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 216, height: 115, scales: [1], hash: "fe842af4f5691380d31cd9c08c20f016", name: "gift_coffee", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "925ba669dce4508a3d121b3e5d7504b9", name: "PlusLargeIcon", type: "png" });

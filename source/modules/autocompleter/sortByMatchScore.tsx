@@ -1,10 +1,10 @@
-// Module ID: 5473
-// Function ID: 5474
+// Module ID: 5518
+// Function ID: 5519
 // Name: sortByMatchScore
 // Dependencies: [2]
 // Exports: default
 
-// Module 5473 (sortByMatchScore)
+// Module 5518 (sortByMatchScore)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12109
+// Function ID: 12110
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4481, 11983, 9338, 1233, 1350, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 12051, 9409, 1114, 4272, 4556, 2]
 // Exports: default
 
-// Module 12041 (EmptyState)
+// Module 12109 (EmptyState)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyles({ container: { position: "relative", justifyContent: "center", alignItems: "center" }, textContainer: { justifyContent: "center", width: "100%" }, text: { marginTop: 16, textAlign: "center" } });
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11983);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(9338).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(12051);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(9409).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(closure_1_1[6]).intl;
@@ -38,16 +38,16 @@ export default function EmptyState(showsGenericMessage) {
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.textContainer, children: null };
   obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null };
-  let intl = flag(1233).intl;
+  let intl = flag(1114).intl;
   let string = intl.string;
-  let t = flag(1233).t;
+  let t = flag(1114).t;
   if (flag) {
     let stringResult = string(t.aOkFv8);
   } else {
     stringResult = string(t.LSNOYf);
   }
   obj1[3] = stringResult;
-  obj[1] = jsx(flag(4477).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null });
+  obj[1] = jsx(flag(4556).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null });
   obj[1] = <View style={tmp.textContainer}>{null}</View>;
   return <View style={tmp.textContainer}>{null}</View>;
 };

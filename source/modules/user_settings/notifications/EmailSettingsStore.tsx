@@ -1,11 +1,11 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 13742
+// Function ID: 13743
 // Name: reset
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 13667 (reset)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 13742 (reset)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function reset() {
   closure_0 = {};

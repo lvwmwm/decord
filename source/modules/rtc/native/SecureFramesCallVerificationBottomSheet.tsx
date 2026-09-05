@@ -1,14 +1,14 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17113
+// Function ID: 17114
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4557, 673, 21, 586, 9090, 8291, 9096, 1233, 9079, 2]
+// Dependencies: [19, 4583, 1074, 21, 504, 9161, 8361, 9167, 1114, 9150, 2]
 // Exports: default
 
-// Module 17035 (SecureFramesCallVerificationBottomSheet)
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9096 */;
+// Module 17113 (SecureFramesCallVerificationBottomSheet)
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9167 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import { AnalyticsSections } from "ME" /* 673 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import { AnalyticsSections } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ let result = require("set").fileFinishedImporting("modules/rtc/native/SecureFram
 
 export default function SecureFramesCallVerificationBottomSheet(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(586);
+  let obj = channelId(504);
   const items = [closure_4];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -35,15 +35,15 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
     channelId(closure_1_2[6]).showShareActionSheet(obj, closure_1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   obj = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
-  const intl = channelId(1233).intl;
-  obj[0] = intl.string(channelId(1233).t.cTQI5t);
-  const intl2 = channelId(1233).intl;
-  obj[1] = intl2.string(channelId(1233).t["MPp7+C"]);
-  const intl3 = channelId(1233).intl;
+  const intl = channelId(1114).intl;
+  obj[0] = intl.string(channelId(1114).t.cTQI5t);
+  const intl2 = channelId(1114).intl;
+  obj[1] = intl2.string(channelId(1114).t["MPp7+C"]);
+  const intl3 = channelId(1114).intl;
   obj = { helpArticle: null };
   const tmp3 = SecureFramesVerificationBottomSheetDefault;
-  obj[0] = channelId(9079).getSecureFramesHelpdeskArticle();
-  obj[2] = intl3.format(channelId(1233).t.wKxADe, obj);
+  obj[0] = channelId(9150).getSecureFramesHelpdeskArticle();
+  obj[2] = intl3.format(channelId(1114).t.wKxADe, obj);
   obj[3] = stateFromStores;
   obj[4] = callback;
   return <tmp3 helpArticle={null} />;

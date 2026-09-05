@@ -1,13 +1,13 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 15016
+// Function ID: 15017
 // Name: BountyVideoEndMode
-// Dependencies: [32, 19, 5404, 11452, 2]
+// Dependencies: [32, 19, 5444, 11520, 2]
 // Exports: useBountiesModalTiming
 
-// Module 14941 (BountyVideoEndMode)
+// Module 15016 (BountyVideoEndMode)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5444 */;
 
 const require = arg1;
 let obj = { END_CARD: "END_CARD", END_CARD_WITH_CTA: "END_CARD_WITH_CTA", LOOP: "LOOP", APP_STORE_LOOP: "APP_STORE_LOOP" };

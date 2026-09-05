@@ -1,26 +1,26 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9732
+// Function ID: 9733
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1390, 1430, 1386, 1908, 4120, 4130, 1921, 673, 8331, 21, 4481, 709, 5041, 5049, 5062, 5058, 5055, 5048, 5067, 5039, 5047, 5059, 5057, 5054, 5046, 5066, 1233, 4477, 1994, 4206, 5560, 5644, 8523, 1296, 6921, 586, 38, 4681, 5376, 9662, 9663, 1498, 9664, 4708, 5579, 9666, 7315, 9667, 12, 9670, 4934, 6547, 5642, 9671, 9678, 7141, 5056, 4673, 9679, 500, 9692, 5553, 6940, 2]
+// Dependencies: [32, 19, 17, 1961, 1975, 1957, 1979, 4199, 4209, 1371, 1074, 8401, 21, 4560, 576, 5080, 5088, 5101, 5097, 5094, 5087, 5106, 5078, 5086, 5098, 5096, 5093, 5085, 5105, 1114, 4556, 2024, 4277, 5605, 5689, 8593, 1178, 6981, 504, 38, 4713, 5415, 9733, 9734, 1483, 9735, 4740, 5624, 9737, 7377, 9738, 12, 9741, 4973, 6606, 5687, 9742, 9749, 7201, 5095, 4705, 9750, 1250, 9763, 5598, 7000, 2]
 // Exports: default
 
-// Module 9661 (ChannelTypeRow)
-import ThemesDefault from "Themes" /* 709 */;
-import useInitialValueDefault from "useInitialValue" /* 5553 */;
+// Module 9732 (ChannelTypeRow)
+import ThemesDefault from "Themes" /* 576 */;
+import useInitialValueDefault from "useInitialValue" /* 5598 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { isGuildVocalChannelType } from "createChannelRecord" /* 1390 */;
-import { isGuildOwner } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { RowType } from "RowType" /* 8331 */;
+import { isGuildVocalChannelType } from "createChannelRecord" /* 1961 */;
+import { isGuildOwner } from "GuildNSFWContentLevel" /* 1975 */;
+import closure_9 from "ensureGuildLoaded" /* 1957 */;
+import closure_10 from "createGuildRecordFromRust" /* 1979 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_12 from "markAllUserIdListsStale" /* 4209 */;
+import closure_13 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { RowType } from "RowType" /* 8401 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ChannelTypeRow(selected) {
@@ -782,6 +782,6 @@ export default function CreateChannelModal(arg0) {
     obj[1] = items;
     return obj;
   }));
-  return callback(_require(6940).Navigator, { screens, initialRouteStack });
+  return callback(_require(7000).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

@@ -1,16 +1,19 @@
 // Module ID: 10496
 // Function ID: 10497
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10379]
+// Dependencies: [41, 42, 93, 95, 98, 10494, 10432, 10433, 10439]
 
 // Module 10496 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10379 */;
-import RUMergeDateRangeRefiner from "_classCallCheck" /* 41 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10432 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10494 */;
+import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_1 from "_possibleConstructorReturn" /* 93 */;
-import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_possibleConstructorReturn" /* 93 */;
+import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const FRMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,29 +33,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: null };
-      obj[0] = __esModule;
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class RUMergeDateRangeRefiner {
+const regExp = new RegExp("(?:on\\s*?)?(" + WEEKDAY_DICTIONARY.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:au|\\-|\\\u2013|jusqu'au?|\\s)\\s*(" + WEEKDAY_DICTIONARY.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:de)?\\s*)(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s*)(" + WEEKDAY_DICTIONARY.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class FRMonthNameLittleEndianParser {
   constructor() {
     self = this;
-    tmp = RUMergeDateRangeRefiner(this, RUMergeDateRangeRefiner);
-    tmp2 = closure_2;
-    obj = closure_2(RUMergeDateRangeRefiner);
-    tmp3 = closure_1;
+    tmp = closure_2(this, FRMonthNameLittleEndianParser);
+    tmp2 = closure_4;
+    obj = closure_4(FRMonthNameLittleEndianParser);
+    tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -66,14 +54,46 @@ class RUMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMergeDateRangeRefiner, fn(_isNativeReflectConstruct2).default);
+_inherits(FRMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
-    key: "patternBetween",
-    value: function patternBetween() {
-      return /^\s*(и до|и по|до|по|-)\s*$/i;
+    key: "innerPattern",
+    value: function innerPattern() {
+      return regExp;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = FRMonthNameLittleEndianParser(10494).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = FRMonthNameLittleEndianParser(10494).parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", result);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", tmp2(10494).parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", tmp2(10433).findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+        }
+        if (index[2]) {
+          const start3 = parsingResult.start;
+          const result1 = tmp2(10494).parseOrdinalNumberPattern(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+        }
+        return parsingResult;
+      }
     }
   }
 ];
 
-export default _createClass(RUMergeDateRangeRefiner, items);
+export default _createClass(FRMonthNameLittleEndianParser, items);

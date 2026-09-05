@@ -1,14 +1,14 @@
-// Module ID: 8999
-// Function ID: 9000
+// Module ID: 9069
+// Function ID: 9070
 // Name: fetchVanityUrl
-// Dependencies: [673, 527, 706, 2]
+// Dependencies: [1074, 1272, 573, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 8999 (fetchVanityUrl)
+// Module 9069 (fetchVanityUrl)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLActionCreators.tsx");
@@ -31,11 +31,11 @@ export const setCode = function setCode(code) {
 };
 export const saveCode = function saveCode(id, code) {
   const _require = arg2;
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   obj = { url: Endpoints.GUILD_VANITY_URL(id), body: obj, oldFormErrors: true, rejectWithError: null };
   obj = { code };
-  obj[3] = _require(527).rejectWithMigratedError();
-  const obj3 = _require(527);
+  obj[3] = _require(1272).rejectWithMigratedError();
+  const obj3 = _require(1272);
   return HTTP.patch(obj).then((body) => {
     ({ code, uses } = body.body);
     callback(table[2]).dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });

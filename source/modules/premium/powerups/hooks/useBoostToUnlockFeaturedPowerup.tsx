@@ -1,16 +1,16 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12504
+// Function ID: 12505
 // Name: items
-// Dependencies: [32, 19, 1908, 4367, 4368, 673, 4371, 586, 4387, 2]
+// Dependencies: [32, 19, 1979, 4449, 4450, 1074, 4453, 504, 4469, 2]
 // Exports: default
 
-// Module 12436 (items)
+// Module 12504 (items)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "calculateAppliedBoosts" /* 4367 */;
-import { GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS as closure_7 } from "BoostedGuildTiers" /* 4368 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "calculateAppliedBoosts" /* 4449 */;
+import { GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS as closure_7 } from "BoostedGuildTiers" /* 4450 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 let obj = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_1_SKU_ID, threshold: 1 };

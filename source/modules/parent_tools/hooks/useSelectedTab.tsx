@@ -1,14 +1,14 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14871
+// Function ID: 14872
 // Name: useSelectedMyFamilyTab
-// Dependencies: [7470, 7471, 673, 644, 7472, 695, 2]
+// Dependencies: [7537, 7538, 1074, 563, 7539, 1242, 2]
 // Exports: default
 
-// Module 14796 (useSelectedMyFamilyTab)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7470 */;
-import items from "items" /* 7471 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+// Module 14871 (useSelectedMyFamilyTab)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7537 */;
+import items from "items" /* 7538 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 ({ FamilyCenterAction: c4, FamilyCenterSubPages } = items);
@@ -18,10 +18,10 @@ export default function useSelectedMyFamilyTab() {
   let obj = {
     selectedTab: defaultAreStatesEqual.useStateFromStores(items, () => selectedTab.getSelectedTab()),
     handleTabChange(tab) {
-      let obj = callback(7472);
+      let obj = callback(7539);
       tab = obj.selectTab(tab);
       obj = { action: TabChange.TabChange, tab };
-      callback(695).track(constants.FAMILY_CENTER_ACTION, obj);
+      callback(1242).track(constants.FAMILY_CENTER_ACTION, obj);
     }
   };
   items = [closure_3];

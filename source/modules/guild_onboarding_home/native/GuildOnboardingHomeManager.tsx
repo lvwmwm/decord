@@ -1,21 +1,21 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17370
+// Function ID: 17371
 // Name: prototype
-// Dependencies: [32, 5, 1983, 1215, 1386, 1991, 1908, 4302, 4715, 4716, 4108, 7058, 1399, 4731, 17291, 2008, 12217, 688, 12216, 7162, 7163, 2]
+// Dependencies: [32, 5, 2014, 502, 1957, 2021, 1979, 4381, 4747, 4748, 4187, 7118, 1384, 4763, 17371, 1896, 12285, 1093, 12284, 7222, 7223, 2]
 
-// Module 17290 (prototype)
-import initializeDefault from "initialize" /* 7058 */;
+// Module 17370 (prototype)
+import initializeDefault from "initialize" /* 7118 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "initialize" /* 1983 */;
-import closure_6 from "fetchFingerprint" /* 1215 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "handleConnectionOpen" /* 4302 */;
-import closure_11 from "handleSettingsLoadSuccess" /* 4715 */;
-import closure_12 from "set" /* 4716 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
+import closure_5 from "initialize" /* 2014 */;
+import closure_6 from "fetchFingerprint" /* 502 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "handleConnectionOpen" /* 4381 */;
+import closure_11 from "handleSettingsLoadSuccess" /* 4747 */;
+import closure_12 from "set" /* 4748 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
 
 const require = arg1;
 initializeDefault;

@@ -1,10 +1,10 @@
 // Module ID: 2949
 // Function ID: 2950
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 2949 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_assurance", scales: [1], hash: "a445839f6a4fd33b4fdbd5f9fd27987c", name: "AgeAssurance.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "efe467bd970b27bcfc802627f57679ad", name: "da.messages.efe467bd970b27bcfc802627f57679ad.compiled.messages", type: "jsona" });

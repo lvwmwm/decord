@@ -1,9 +1,9 @@
-// Module ID: 14631
-// Function ID: 14632
+// Module ID: 14706
+// Function ID: 14707
 // Name: NameValidationState
 // Dependencies: [2]
 
-// Module 14631 (NameValidationState)
+// Module 14706 (NameValidationState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesTypes.tsx");

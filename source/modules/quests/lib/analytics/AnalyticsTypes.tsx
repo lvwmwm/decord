@@ -1,12 +1,12 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7728
+// Function ID: 7729
 // Name: getQuestContentName
-// Dependencies: [5407, 2]
+// Dependencies: [5447, 2]
 // Exports: getContentProperties, getQuestContentName, getQuestStatus
 
-// Module 7661 (getQuestContentName)
+// Module 7728 (getQuestContentName)
 import set from "set" /* 2 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5407 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5447 */;
 
 let closure_2 = Object.keys(QuestsVisibleMessagesChangedSource.QuestContent);
 const result = set.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");

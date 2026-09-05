@@ -1,12 +1,12 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9047
+// Function ID: 9048
 // Name: openClearAllIncomingRequestsConfirmationModal
-// Dependencies: [8978, 2]
+// Dependencies: [9048, 2]
 // Exports: default
 
-// Module 8977 (openClearAllIncomingRequestsConfirmationModal)
+// Module 9047 (openClearAllIncomingRequestsConfirmationModal)
 import set from "set" /* 2 */;
-import openClearAllIncomingRequestsConfirmationModal from "openClearAllIncomingRequestsConfirmationModal" /* 8978 */;
+import openClearAllIncomingRequestsConfirmationModal from "openClearAllIncomingRequestsConfirmationModal" /* 9048 */;
 
 const result = set.fileFinishedImporting("modules/people/ClearAllIncomingRequestsConfirmationModal.tsx");
 

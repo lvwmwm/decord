@@ -1,14 +1,14 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11480
+// Function ID: 11481
 // Name: parseRegisteredExperiments
-// Dependencies: [32, 19, 4394, 4395, 7824, 4402, 7822, 586, 2]
+// Dependencies: [32, 19, 4476, 4477, 7893, 4481, 7891, 504, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11412 (parseRegisteredExperiments)
+// Module 11480 (parseRegisteredExperiments)
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_5 from "getHash" /* 4394 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4395 */;
+import closure_5 from "getHash" /* 4476 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4477 */;
 
 const require = arg1;
 function parseRegisteredExperiments(registeredExperiments) {
@@ -86,11 +86,11 @@ export const getLegacyExperiments = function getLegacyExperiments() {
   return obj;
 };
 export const useLegacyExperiments = function useLegacyExperiments() {
-  let obj = stateFromStoresObject(586);
+  let obj = stateFromStoresObject(504);
   const items = [closure_5];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => store.getRegisteredExperiments());
   const items1 = [closure_5];
-  const stateFromStoresObject1 = stateFromStoresObject(586).useStateFromStoresObject(items1, () => store.getAllExperimentOverrideDescriptors());
+  const stateFromStoresObject1 = stateFromStoresObject(504).useStateFromStoresObject(items1, () => store.getAllExperimentOverrideDescriptors());
   obj = { experiments: useMemo(() => closure_1_8(stateFromStoresObject), items2), overridesInfo: useMemo(() => closure_1_9(stateFromStoresObject1), items3) };
   items2 = [stateFromStoresObject];
   items3 = [stateFromStoresObject1];

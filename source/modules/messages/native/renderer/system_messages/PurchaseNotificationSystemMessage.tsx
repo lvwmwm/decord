@@ -1,13 +1,13 @@
-// Module ID: 7954
-// Function ID: 7955
+// Module ID: 8023
+// Function ID: 8024
 // Name: createPurchaseNotificationSystemMessage
-// Dependencies: [1954, 7955, 2]
+// Dependencies: [1894, 8024, 2]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 7954 (createPurchaseNotificationSystemMessage)
+// Module 8023 (createPurchaseNotificationSystemMessage)
 import set from "set" /* 2 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import createGuildProductPurchaseSystemMessage from "createGuildProductPurchaseSystemMessage" /* 7955 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import createGuildProductPurchaseSystemMessage from "createGuildProductPurchaseSystemMessage" /* 8024 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 

@@ -1,10 +1,10 @@
 // Module ID: 9713
 // Function ID: 9714
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9713 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "e955954d3b070442dffa061da0dc1d1a", name: "ic_clock", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "597f6d42c10c1b83f08e644762fab88e", name: "ic_voice_channel_16px", type: "png" });

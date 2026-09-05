@@ -1,10 +1,10 @@
-// Module ID: 5400
-// Function ID: 5401
+// Module ID: 5440
+// Function ID: 5441
 // Name: GuildsNodeType
 // Dependencies: [38, 12, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 5400 (GuildsNodeType)
+// Module 5440 (GuildsNodeType)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;

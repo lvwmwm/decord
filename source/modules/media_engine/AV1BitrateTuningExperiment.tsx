@@ -1,11 +1,11 @@
-// Module ID: 13741
-// Function ID: 13742
+// Module ID: 13814
+// Function ID: 13815
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 
-// Module 13741 (apexExperiment)
+// Module 13814 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null, 2: { bitrate: 3000000 } };
 obj[2] = { bitrate: 2500000 };

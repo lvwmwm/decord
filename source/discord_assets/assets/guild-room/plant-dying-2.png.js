@@ -1,9 +1,9 @@
-// Module ID: 4703
-// Function ID: 4704
+// Module ID: 4735
+// Function ID: 4736
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4703 (metadata)
+// Module 4735 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/plant-dying-2.png.js");

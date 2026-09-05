@@ -1,20 +1,20 @@
-// Module ID: 15799
-// Function ID: 15800
+// Module ID: 15875
+// Function ID: 15876
 // Name: toggle
-// Dependencies: [1908, 15793, 7906, 11401, 14749, 15800, 4166, 4865, 1233, 4955, 6935, 15801, 11400, 2]
+// Dependencies: [1979, 15869, 7975, 11469, 14824, 15876, 1935, 4904, 1114, 4994, 6995, 15877, 11468, 2]
 
-// Module 15799 (toggle)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import setDefault from "set" /* 4865 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
-import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15800 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15801 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15793 */;
-import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11401 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15875 (toggle)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import setDefault from "set" /* 4904 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14824 */;
+import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15876 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15877 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15869 */;
+import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11469 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 ({ getSelectedGuildId: c4, useUserSafetySettingsSelectedGuildStore: c5 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
@@ -34,9 +34,9 @@ createToggle = {
   useDescription() {
     const allowFriendsFromMutualGuildsOnly = useAllowFriendsFromMutualGuildsOnly.useAllowFriendsFromMutualGuildsOnly();
     if (callback2().selectedGuildId === closure_6) {
-      const intl2 = tmp(1233).intl;
+      const intl2 = tmp(1114).intl;
       const string2 = intl2.string;
-      let XXGmuB = tmp(1233).t;
+      let XXGmuB = tmp(1114).t;
       if (allowFriendsFromMutualGuildsOnly) {
         XXGmuB = XXGmuB.XXGmuB;
         let string2Result = string2(XXGmuB);
@@ -44,9 +44,9 @@ createToggle = {
         string2Result = string2(XXGmuB.wbYDfT);
       }
     } else {
-      const intl = tmp(1233).intl;
+      const intl = tmp(1114).intl;
       const string = intl.string;
-      const t = tmp(1233).t;
+      const t = tmp(1114).t;
       if (allowFriendsFromMutualGuildsOnly) {
         let stringResult = string(t.F9WY3f);
       } else {
@@ -72,14 +72,14 @@ createToggle = {
     if (tmp === closure_6) {
       const _require = !arg0;
       let obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null, onCancel: null };
-      const intl = _require(1233).intl;
-      obj[0] = intl.string(_require(1233).t.Hq4ApA);
-      const intl2 = _require(1233).intl;
-      obj[1] = intl2.string(_require(1233).t.qTCYun);
-      const intl3 = _require(1233).intl;
-      obj[2] = intl3.string(_require(1233).t.p89ACt);
-      const intl4 = _require(1233).intl;
-      obj[3] = intl4.string(_require(1233).t.gm1Vej);
+      const intl = _require(1114).intl;
+      obj[0] = intl.string(_require(1114).t.Hq4ApA);
+      const intl2 = _require(1114).intl;
+      obj[1] = intl2.string(_require(1114).t.qTCYun);
+      const intl3 = _require(1114).intl;
+      obj[2] = intl3.string(_require(1114).t.p89ACt);
+      const intl4 = _require(1114).intl;
+      obj[3] = intl4.string(_require(1114).t.gm1Vej);
       obj[4] = componentDidMountDefault.Colors.RED;
       obj[5] = function onConfirm() {
         const DefaultGuildsRestrictedV2 = callback(closure_1_2[6]).DefaultGuildsRestrictedV2;
@@ -99,14 +99,14 @@ createToggle = {
       setDefault.show(obj);
       const obj3 = setDefault;
     } else {
-      obj = _require(6935);
+      obj = _require(6995);
       const sanitizedRestrictedGuilds = obj.getSanitizedRestrictedGuilds();
       if (arg0) {
         sanitizedRestrictedGuilds.delete(tmp);
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = _require(4166).RestrictedGuildIds;
+      let RestrictedGuildIds = _require(1935).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
       const tmp2 = _require;

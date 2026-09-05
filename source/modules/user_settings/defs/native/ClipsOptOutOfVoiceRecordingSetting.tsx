@@ -1,12 +1,12 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14975
+// Function ID: 14976
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 7906, 4166, 706, 11400, 1233, 2]
+// Dependencies: [5, 7975, 1935, 573, 11468, 1114, 2]
 
-// Module 14900 (_updateClipsAllowVoiceRecording)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 14975 (_updateClipsAllowVoiceRecording)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function _updateClipsAllowVoiceRecording() {
@@ -43,7 +43,7 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(4166).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(1935).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -59,7 +59,7 @@ function _updateClipsAllowVoiceRecording() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = callback2(706);
+            obj = callback2(573);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c3 = 3;
             return { value: "HermesInternal", done: null };

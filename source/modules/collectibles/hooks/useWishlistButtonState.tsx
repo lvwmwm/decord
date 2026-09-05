@@ -1,14 +1,14 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8829
+// Function ID: 8830
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7554, 7102, 1901, 586, 8706, 8713, 1362, 1233, 2]
+// Dependencies: [5, 32, 19, 7621, 7162, 1925, 504, 8776, 8783, 4411, 1114, 2]
 // Exports: useWishlistButtonState
 
-// Module 8759 (useWishlistButtonState)
+// Module 8829 (useWishlistButtonState)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7554 */;
+import closure_6 from "createUserWidgetFromServer" /* 7621 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useWishlistButtonState.tsx");

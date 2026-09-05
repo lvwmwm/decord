@@ -1,16 +1,16 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17357
+// Function ID: 17358
 // Name: ActivityFeedbackReasons
-// Dependencies: [19, 4509, 673, 11558, 21, 695, 17278, 11579, 1233, 11561, 4193, 17279, 2]
+// Dependencies: [19, 1920, 1074, 11626, 21, 1242, 17358, 11647, 1114, 11629, 4258, 17359, 2]
 // Exports: default
 
-// Module 17277 (ActivityFeedbackReasons)
+// Module 17357 (ActivityFeedbackReasons)
 import noopAll from "noop" /* 19 */;
-import closeActionSheetDefault from "closeActionSheet" /* 11579 */;
-import getActivityReportOptionsDefault from "getActivityReportOptions" /* 17278 */;
-import { ActivityFeedbackReasons } from "items3" /* 4509 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { FeedbackType } from "FeedbackRating" /* 11558 */;
+import closeActionSheetDefault from "closeActionSheet" /* 11647 */;
+import getActivityReportOptionsDefault from "getActivityReportOptions" /* 17358 */;
+import { ActivityFeedbackReasons } from "items3" /* 1920 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { FeedbackType } from "FeedbackRating" /* 11626 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -29,13 +29,13 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
   }
   let obj = { headerLabel: null, showHeaderCloseButton: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
   const tmp2 = getActivityReportOptionsDefault(true, true === prop);
-  const intl = activityApplication(1233).intl;
+  const intl = activityApplication(1114).intl;
   obj = { applicationName: activityApplication.name };
-  obj[0] = intl.formatToPlainString(activityApplication(1233).t.QXYwoD, obj);
-  const intl2 = activityApplication(1233).intl;
-  obj[2] = intl2.string(activityApplication(1233).t["9hk2KF"]);
-  const intl3 = activityApplication(1233).intl;
-  obj[3] = intl3.string(activityApplication(1233).t.g1q5fr);
+  obj[0] = intl.formatToPlainString(activityApplication(1114).t.QXYwoD, obj);
+  const intl2 = activityApplication(1114).intl;
+  obj[2] = intl2.string(activityApplication(1114).t["9hk2KF"]);
+  const intl3 = activityApplication(1114).intl;
+  obj[3] = intl3.string(activityApplication(1114).t.g1q5fr);
   obj[4] = tmp2;
   obj[5] = items;
   obj[6] = ActivityFeedbackReasons.OTHER;

@@ -1,10 +1,10 @@
 // Module ID: 17216
 // Function ID: 17217
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 17216 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 1080, height: 2400, scales: [1], hash: "98ba52ca11c0740336b7f6cfc50c1516", name: "sunbeam_gradient_mobile", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "2b649615a70a14244330a855517175bb", name: "report", type: "png" });

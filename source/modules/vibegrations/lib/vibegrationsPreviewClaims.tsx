@@ -1,10 +1,10 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16591
+// Function ID: 16592
 // Name: map
 // Dependencies: [32, 2]
 // Exports: awaitVibegrationsPreviewClaim, clearVibegrationsPreviewClaims, resolveVibegrationsPreviewClaim
 
-// Module 16515 (map)
+// Module 16591 (map)
 import closure_0 from "_slicedToArray" /* 32 */;
 
 const map = new Map();

@@ -1,12 +1,12 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17124
+// Function ID: 17125
 // Name: activityPlatformToConnectedAccountType
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 17046 (activityPlatformToConnectedAccountType)
+// Module 17124 (activityPlatformToConnectedAccountType)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 ({ ActivityGamePlatforms: c0, PlatformTypes: closure_1 } = ME);
 const result = set.fileFinishedImporting("modules/game_console/activityPlatformToConnectedAccountType.tsx");

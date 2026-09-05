@@ -1,13 +1,13 @@
-// Module ID: 13338
-// Function ID: 13339
+// Module ID: 13410
+// Function ID: 13411
 // Name: useCommonTriggerPoint
-// Dependencies: [32, 19, 4394, 586, 2]
+// Dependencies: [32, 19, 4476, 504, 2]
 // Exports: useCommonTriggerPoint
 
-// Module 13338 (useCommonTriggerPoint)
+// Module 13410 (useCommonTriggerPoint)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getHash" /* 4394 */;
+import closure_4 from "getHash" /* 4476 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/useCommonTriggerPoint.tsx");
@@ -15,9 +15,9 @@ const result = require("set").fileFinishedImporting("modules/experiments/trigger
 export const useCommonTriggerPoint = function useCommonTriggerPoint(OpenNitroTriggerPoint) {
   const _require = OpenNitroTriggerPoint;
   let items = [closure_4];
-  const obj = _require(586);
+  const obj = _require(504);
   const items1 = [OpenNitroTriggerPoint, , ];
-  [arr2[1], arr2[2]] = callback(_require(586).useStateFromStoresArray(items, () => {
+  [arr2[1], arr2[2]] = callback(_require(504).useStateFromStoresArray(items, () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
   }), 2);

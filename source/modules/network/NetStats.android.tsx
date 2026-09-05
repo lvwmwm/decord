@@ -1,21 +1,21 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7459
+// Function ID: 7460
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 17, 5238, 7394, 1908, 673, 3, 1474, 1473, 7407, 684, 592, 706, 4342, 7395, 7408, 9, 2]
+// Dependencies: [5, 17, 5277, 7460, 1979, 1074, 3, 1463, 1462, 7474, 1090, 510, 573, 4424, 7461, 7475, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7393 (receiveNetworkInfoformation)
+// Module 7459 (receiveNetworkInfoformation)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 684 */;
-import configure from "configure" /* 1474 */;
+import setDefault from "set" /* 1090 */;
+import configure from "configure" /* 1463 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_handleConnectionOpen" /* 5238 */;
-import closure_6 from "result" /* 7394 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import importDefaultResult from "notifyListeners" /* 1473 */;
-import importDefaultResult2 from "dispatcher" /* 706 */;
+import closure_5 from "_handleConnectionOpen" /* 5277 */;
+import closure_6 from "result" /* 7460 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import importDefaultResult from "notifyListeners" /* 1462 */;
+import importDefaultResult2 from "dispatcher" /* 573 */;
 
 require = arg1;
 function receiveNetworkInfoformation(arg0) {
@@ -203,10 +203,10 @@ prototype["writeExistingEventStorage"] = function writeExistingEventStorage() {
         const existingEvents = closure_1_0.existingEvents;
         length = existingEvents.concat(items);
         if (0 === length.length) {
-          const Storage2 = closure_1_0(592).Storage;
+          const Storage2 = closure_1_0(510).Storage;
           Storage2.remove("previousNetStatsEvents");
         } else {
-          const Storage = closure_1_0(592).Storage;
+          const Storage = closure_1_0(510).Storage;
           const result = Storage.set("previousNetStatsEvents", length);
         }
         c3 = 3;
@@ -303,19 +303,19 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     closure_1_19();
     const obj7 = closure_1_1(closure_1_2[13]);
     let callback = yield obj7.getAppFirstVisibleTimestamp();
-    const obj4 = callback(7395);
+    const obj4 = callback(7461);
     let lib = yield obj4.getSession();
     const obj5 = { type: null, properties: null };
     obj5[0] = constants.APP_NETWORK_USAGE;
     const obj6 = {};
-    const merged = Object.assign(callback(7408).getDeviceMetadata());
+    const merged = Object.assign(callback(7475).getDeviceMetadata());
     const _Date = Date;
     obj6.client_track_timestamp = Date.now();
     if (lib != null) {
       const uuid = lib.uuid;
     }
     obj6.client_heartbeat_session_id = uuid;
-    obj = callback(7408);
+    obj = callback(7475);
     obj6.load_id = obj.currentLoadId();
     obj6.num_guilds = guildCount.getGuildCount();
     obj6.was_authenticated = lib(9).wasAuthenticated;
@@ -372,7 +372,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     obj6.download_bytes_received = closure_10.downloadBytesReceived;
     obj6.download_num_requests = closure_10.downloadNumRequests;
     obj6.media_player_bytes_received = closure_10.mediaPlayerBytesReceived;
-    obj1 = callback(7407);
+    obj1 = callback(7474);
     obj6.rtc_bytes = obj1.getRTCTotalBytes();
     obj6.num_message_sends = closure_15;
     if (0 !== closure_15) {

@@ -1,10 +1,10 @@
 // Module ID: 10659
 // Function ID: 10660
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10659 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 277, height: 44, scales: [2, 3], hash: "80b2b0d70a370a3545b5c6b85cfa62d7", name: "img_boost_activated_border", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_keyboard/native/images", width: 173.5, height: 80, scales: [2, 3], hash: "bef971c8357e3a1bbe631b70aec03333", name: "empty_permission", type: "png" });

@@ -1,27 +1,27 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12731
+// Function ID: 12732
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 1386, 12651, 673, 21, 4481, 709, 1498, 6921, 12664, 4379, 1233, 12659, 5647, 4477, 4448, 12665, 2008, 6546, 1296, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 1957, 12719, 1074, 21, 4560, 576, 1483, 6981, 12732, 4461, 1114, 12727, 5692, 4556, 4527, 12733, 1896, 6605, 1178, 4975, 2]
 // Exports: default
 
-// Module 12663 (HubEmailConnectionContent)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import Text from "Text" /* 4477 */;
-import Button2 from "Button" /* 4936 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12659 */;
+// Module 12731 (HubEmailConnectionContent)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import Text from "Text" /* 4556 */;
+import Button2 from "Button" /* 4975 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12727 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import HubEmailConnectionSteps from "HubEmailConnectionSteps" /* 12651 */;
-import { MarketingURLs } from "ME" /* 673 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import HubEmailConnectionSteps from "HubEmailConnectionSteps" /* 12719 */;
+import { MarketingURLs } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -245,17 +245,17 @@ export default function HubEmailConnectionContent(arg0) {
       }
       formatToPlainStringResult = stringResult;
       if (null != prop) {
-        const intl2 = tmp2(1233).intl;
+        const intl2 = tmp2(1114).intl;
         obj = { guildName: null, count: null };
         obj[0] = invite.guild.name;
         obj[1] = invite.approximate_member_count;
-        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1233).t["4T4+p1"], obj);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1114).t["4T4+p1"], obj);
       }
     }
   }
   obj = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
-  obj1 = { paddingBottom: invite(6921)().insets.bottom + invite(709).space.PX_16 };
+  obj1 = { paddingBottom: invite(6981)().insets.bottom + invite(576).space.PX_16 };
   items[1] = obj1;
   obj[1] = items;
   obj2 = { style: tmp.container, children: null };
@@ -263,7 +263,7 @@ export default function HubEmailConnectionContent(arg0) {
   const tmp7 = callback(React.useState(null), 2);
   const items1 = [callback2(ref, { style: tmp.header, children: callback2(AccountAgeTier10LargeBadge.InkQuillSpotIllustration, { scale: 0.75 }) }), callback2(Text.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult }), , ];
   let obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl3 = tmp2(1233).intl;
+  const intl3 = tmp2(1114).intl;
   obj5[3] = intl3.format(getSystemLocale.t["6kzaqs"], {
     onClick() {
       invite(paths[18]).openLazy(callback(paths[20])(paths[19], paths.paths), "HubEmailConnectionDescriptionActionsheet");
@@ -278,12 +278,12 @@ export default function HubEmailConnectionContent(arg0) {
       invite(paths[18]).openLazy(callback(paths[20])(paths[19], paths.paths), "HubEmailConnectionDescriptionActionsheet");
     }
   };
-  const intl4 = tmp2(1233).intl;
+  const intl4 = tmp2(1114).intl;
   obj7[0] = intl4.string(getSystemLocale.t["K/7rLI"]);
-  const intl5 = tmp2(1233).intl;
+  const intl5 = tmp2(1114).intl;
   obj7[1] = intl5.string(getSystemLocale.t.ImAOh5);
   obj7[2] = first;
-  const intl6 = tmp2(1233).intl;
+  const intl6 = tmp2(1114).intl;
   obj7[6] = intl6.format(getSystemLocale.t.RPT0vj, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   obj7[7] = tmp.textInput;
   obj7[8] = tmp4[1];
@@ -311,12 +311,12 @@ export default function HubEmailConnectionContent(arg0) {
       }
     }, 100);
   };
-  items1[3] = callback2(invite(6546), obj7);
+  items1[3] = callback2(invite(6605), obj7);
   obj2[1] = items1;
   const items2 = [closure_13(ref, obj2), callback2(ref, { style: tmp.growSpacing }), ];
   const obj11 = { style: tmp.buttonContainer, children: null };
   const obj12 = { size: "lg", text: null, onPress: null, loading: null };
-  const intl7 = tmp2(1233).intl;
+  const intl7 = tmp2(1114).intl;
   obj12[1] = intl7.string(getSystemLocale.t["8vmKO0"]);
   obj12[2] = function signup() {
     const self = this;

@@ -1,13 +1,13 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15891
+// Function ID: 15892
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 7906, 21, 1233, 11400, 14614, 2]
+// Dependencies: [19, 7975, 21, 1114, 11468, 14689, 2]
 // Exports: default
 
-// Module 15815 (UserSettingsSensitiveContentFilters)
-import _modDef14614 from "module_14614" /* 14614 */;
+// Module 15891 (UserSettingsSensitiveContentFilters)
+import _modDef14689 from "module_14689" /* 14689 */;
 import closure_3 from "noop" /* 19 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7975 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -15,28 +15,28 @@ const result = require("set").fileFinishedImporting("modules/user_settings/famil
 
 export default function UserSettingsSensitiveContentFilters() {
   const node = React.useMemo(() => {
-    let obj = callback(11400);
+    let obj = callback(11468);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
-    const intl = callback(1233).intl;
-    obj[0] = intl.string(callback(1233).t.GYpoAq);
+    const intl = callback(1114).intl;
+    obj[0] = intl.string(callback(1114).t.GYpoAq);
     const items = [, ];
     ({ PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1] } = closure_4);
     obj[1] = items;
-    const intl2 = callback(1233).intl;
-    obj[2] = intl2.string(callback(1233).t.Wnojv1);
+    const intl2 = callback(1114).intl;
+    obj[2] = intl2.string(callback(1114).t.Wnojv1);
     const items1 = [obj, ];
     obj1 = { label: null, settings: null, subLabel: null };
-    const intl3 = callback(1233).intl;
-    obj1[0] = intl3.string(callback(1233).t["16/3Bi"]);
+    const intl3 = callback(1114).intl;
+    obj1[0] = intl3.string(callback(1114).t["16/3Bi"]);
     const items2 = [, ];
     ({ PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1] } = closure_4);
     obj1[1] = items2;
-    const intl4 = callback(1233).intl;
-    obj1[2] = intl4.string(callback(1233).t.XgH9eh);
+    const intl4 = callback(1114).intl;
+    obj1[2] = intl4.string(callback(1114).t.XgH9eh);
     items1[1] = obj1;
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(_modDef14614, { node });
+  return jsx(_modDef14689, { node });
 };

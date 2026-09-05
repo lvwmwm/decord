@@ -1,13 +1,13 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16834
+// Function ID: 16835
 // Name: getGuildPermissionSpec
-// Dependencies: [502, 1233, 1394, 2]
+// Dependencies: [1085, 1114, 1369, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 16756 (getGuildPermissionSpec)
+// Module 16834 (getGuildPermissionSpec)
 import set from "set" /* 2 */;
-import sum from "sum" /* 502 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import sum from "sum" /* 1085 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 function getGuildPermissionSpec(permissionOptions) {
   let obj = {};
@@ -480,8 +480,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   arr = items.push(tmp2.MANAGE_WEBHOOKS);
   items.push(Permissions.MANAGE_GUILD);
   let obj = { title: null, permissions: null };
-  const intl = _require(1233).intl;
-  obj[0] = intl.string(_require(1233).t["mYck+B"]);
+  const intl = _require(1114).intl;
+  obj[0] = intl.string(_require(1114).t["mYck+B"]);
   _require = tmp;
   obj[1] = items.map((arg0) => table[arg0.toString(arg0)]);
   const permissions = obj.permissions;
@@ -490,8 +490,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   const items2 = [, , , , , ];
   ({ CREATE_INSTANT_INVITE: arr4[0], CHANGE_NICKNAME: arr4[1], MANAGE_NICKNAMES: arr4[2], KICK_MEMBERS: arr4[3], BAN_MEMBERS: arr4[4], MODERATE_MEMBERS: arr4[5] } = Permissions);
   obj = { title: null, permissions: null };
-  const intl2 = _require(1233).intl;
-  obj[0] = intl2.string(_require(1233).t.Ny49TN);
+  const intl2 = _require(1114).intl;
+  obj[0] = intl2.string(_require(1114).t.Ny49TN);
   _require = tmp;
   obj[1] = items2.map((arg0) => table[arg0.toString(arg0)]);
   const permissions1 = obj.permissions;
@@ -504,8 +504,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
     found = items3.filter((arg0) => arg0 !== constants.USE_EXTERNAL_SOUNDS);
   }
   obj = { title: null, permissions: null };
-  const intl3 = tmp6(1233).intl;
-  obj[0] = intl3.string(_require(1233).t.cKobO5);
+  const intl3 = tmp6(1114).intl;
+  obj[0] = intl3.string(_require(1114).t.cKobO5);
   _require = tmp;
   obj[1] = found.map((arg0) => table[arg0.toString(arg0)]);
   const permissions2 = obj.permissions;
@@ -514,8 +514,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   const items4 = [, , , , , , , , , , ];
   ({ CONNECT: arr9[0], SPEAK: arr9[1], STREAM: arr9[2], USE_SOUNDBOARD: arr9[3], USE_EXTERNAL_SOUNDS: arr9[4], USE_VAD: arr9[5], PRIORITY_SPEAKER: arr9[6], MUTE_MEMBERS: arr9[7], DEAFEN_MEMBERS: arr9[8], MOVE_MEMBERS: arr9[9], SET_VOICE_CHANNEL_STATUS: arr9[10] } = Permissions);
   obj1 = { title: null, permissions: null };
-  const intl4 = tmp6(1233).intl;
-  obj1[0] = intl4.string(_require(1233).t["46Ra1b"]);
+  const intl4 = tmp6(1114).intl;
+  obj1[0] = intl4.string(_require(1114).t["46Ra1b"]);
   _require = tmp;
   obj1[1] = items4.map((arg0) => table[arg0.toString(arg0)]);
   const permissions3 = obj1.permissions;
@@ -524,8 +524,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   const items5 = [, , ];
   ({ USE_APPLICATION_COMMANDS: arr11[0], USE_EMBEDDED_ACTIVITIES: arr11[1], USE_EXTERNAL_APPS: arr11[2] } = Permissions);
   const obj2 = { title: null, permissions: null };
-  const intl5 = tmp6(1233).intl;
-  obj2[0] = intl5.string(_require(1233).t["rrh/W6"]);
+  const intl5 = tmp6(1114).intl;
+  obj2[0] = intl5.string(_require(1114).t["rrh/W6"]);
   _require = tmp;
   obj2[1] = items5.map((arg0) => table[arg0.toString(arg0)]);
   const permissions4 = obj2.permissions;
@@ -533,8 +533,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   items1[4] = obj2;
   if (showCreatorMonetizationAnalyticsPermission.showStageChannelPermissions) {
     const obj3 = { title: null, permissions: null };
-    const intl6 = tmp6(1233).intl;
-    obj3[0] = intl6.string(tmp6(1233).t.yniauk);
+    const intl6 = tmp6(1114).intl;
+    obj3[0] = intl6.string(tmp6(1114).t.yniauk);
     const items6 = [tmp2.REQUEST_TO_SPEAK];
     _require = tmp;
     obj3[1] = items6.map((arg0) => table[arg0.toString(arg0)]);
@@ -549,8 +549,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
     items1.push(obj3);
   }
   const obj4 = { title: null, permissions: null };
-  const intl7 = tmp6(1233).intl;
-  obj4[0] = intl7.string(_require(1233).t.b8lplT);
+  const intl7 = tmp6(1114).intl;
+  obj4[0] = intl7.string(_require(1114).t.b8lplT);
   const items7 = [, ];
   ({ CREATE_EVENTS: arr15[0], MANAGE_EVENTS: arr15[1] } = Permissions);
   _require = tmp;
@@ -565,8 +565,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   }
   items1.push(obj4);
   const obj5 = { title: null, permissions: null };
-  const intl8 = tmp6(1233).intl;
-  obj5[0] = intl8.string(_require(1233).t["3uI5CX"]);
+  const intl8 = tmp6(1114).intl;
+  obj5[0] = intl8.string(_require(1114).t["3uI5CX"]);
   const items8 = [Permissions.ADMINISTRATOR];
   _require = tmp;
   obj5[1] = items8.map((arg0) => table[arg0.toString(arg0)]);
@@ -650,7 +650,7 @@ export const generateChannelAppsSection = function generateChannelAppsSection(ar
   }
   items[1] = prop;
   items[2] = Permissions.USE_EXTERNAL_APPS;
-  const found = items.filter(_require(1394).isNotNullish);
+  const found = items.filter(_require(1369).isNotNullish);
   _require = arg0;
   obj[1] = found.map((arg0) => table[arg0.toString(arg0)]);
   return obj;

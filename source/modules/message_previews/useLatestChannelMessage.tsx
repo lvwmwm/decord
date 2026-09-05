@@ -1,13 +1,13 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15318
+// Function ID: 15319
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13642, 586, 15243, 2]
+// Dependencies: [32, 19, 13718, 504, 15319, 2]
 // Exports: default
 
-// Module 15242 (useLatestChannelMessage)
+// Module 15318 (useLatestChannelMessage)
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useEffect } from "noop" /* 19 */;
-import closure_5 from "initialize" /* 13642 */;
+import closure_5 from "initialize" /* 13718 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");

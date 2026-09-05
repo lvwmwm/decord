@@ -1,16 +1,16 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12523
+// Function ID: 12524
 // Name: GuildPowerupsImage
-// Dependencies: [4473, 21, 4481, 586, 1235, 8739, 5542, 2]
+// Dependencies: [4552, 21, 4560, 504, 1116, 8809, 5587, 2]
 // Exports: default
 
-// Module 12455 (GuildPowerupsImage)
-import initialize from "initialize" /* 586 */;
-import preloadDefault from "preload" /* 5542 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8739 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+// Module 12523 (GuildPowerupsImage)
+import initialize from "initialize" /* 504 */;
+import preloadDefault from "preload" /* 5587 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8809 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let closure_5 = createCacheKey.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });

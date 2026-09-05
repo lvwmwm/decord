@@ -1,17 +1,17 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14642
+// Function ID: 14643
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [19, 17, 7875, 21, 4481, 1234, 709, 8096, 5560, 4448, 1233, 5539, 9113, 5644, 12, 7090, 4477, 8804, 8523, 2]
+// Dependencies: [19, 17, 7944, 21, 4560, 1115, 576, 8165, 5605, 4527, 1114, 5584, 9184, 5689, 12, 7150, 4556, 8874, 8593, 2]
 // Exports: default
 
-// Module 14567 (UserPrimaryGuildListBottomSheet)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14642 (UserPrimaryGuildListBottomSheet)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { GuildTagBadgeSize } from "items" /* 7875 */;
+import { GuildTagBadgeSize } from "items" /* 7944 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -120,11 +120,11 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
   let obj = { scrollable: true, startExpanded: true, header: null, children: null };
   obj = { style: tmp.titleContainer, children: null };
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-  const intl = availableGuilds(1233).intl;
-  obj[3] = intl.string(availableGuilds(1233).t.Fo0g9x);
-  obj[1] = callback(availableGuilds(4477).Text, obj);
+  const intl = availableGuilds(1114).intl;
+  obj[3] = intl.string(availableGuilds(1114).t.Fo0g9x);
+  obj[1] = callback(availableGuilds(4556).Text, obj);
   obj[2] = callback(memo, obj);
-  obj[3] = callback(availableGuilds(8804).BottomSheetFlashList, {
+  obj[3] = callback(availableGuilds(8874).BottomSheetFlashList, {
     ItemSeparatorComponent() {
       return closure_1_6(availableGuilds(closure_1_2[18]).FormDivider, { iconPush: true, style: divider.divider });
     },
@@ -156,5 +156,5 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return closure_1_6(closure_1_9, obj);
     }
   });
-  return callback(availableGuilds(7090).BottomSheet, obj);
+  return callback(availableGuilds(7150).BottomSheet, obj);
 };

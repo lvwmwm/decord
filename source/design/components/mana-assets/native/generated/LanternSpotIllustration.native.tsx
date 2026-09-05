@@ -1,14 +1,14 @@
-// Module ID: 6160
-// Function ID: 6161
+// Module ID: 6215
+// Function ID: 6216
 // Name: LanternSpotIllustration
-// Dependencies: [21, 5542, 6161, 2]
+// Dependencies: [21, 5587, 6216, 2]
 // Exports: LanternSpotIllustration
 
-// Module 6160 (LanternSpotIllustration)
+// Module 6215 (LanternSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6161 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6216 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LanternSpotIllustration.native.tsx");

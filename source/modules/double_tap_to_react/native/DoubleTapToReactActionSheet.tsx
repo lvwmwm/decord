@@ -1,22 +1,22 @@
-// Module ID: 12313
-// Function ID: 12314
+// Module ID: 12381
+// Function ID: 12382
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4473, 5419, 673, 1924, 21, 4481, 1234, 709, 4218, 4482, 4953, 586, 4935, 4166, 4134, 7899, 1431, 7070, 695, 7122, 11056, 4448, 7138, 4477, 1233, 12223, 12314, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 4552, 5459, 1074, 1374, 21, 4560, 1115, 576, 4296, 4561, 4992, 504, 4974, 1935, 4213, 7968, 1396, 7130, 1242, 7182, 11124, 4527, 7198, 4556, 1114, 12291, 12382, 4975, 2]
 // Exports: default
 
-// Module 12313 (EmojiConfetti)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 12381 (EmojiConfetti)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_8 from "getEmojiToGroupId" /* 5419 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_8 from "getEmojiToGroupId" /* 5459 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 function EmojiConfetti(children) {
@@ -27,15 +27,15 @@ function EmojiConfetti(children) {
   let sharedValue1;
   let sharedValue2;
   let sharedValue3;
-  sharedValue = top(4218).useSharedValue(0);
-  let obj = top(4218);
-  sharedValue1 = top(4218).useSharedValue(0);
-  let obj2 = top(4218);
-  sharedValue2 = top(4218).useSharedValue(0.2);
-  let obj3 = top(4218);
-  sharedValue3 = top(4218).useSharedValue(0);
-  let obj4 = top(4218);
-  const mountLayoutEffect = top(4953).useMountLayoutEffect(() => {
+  sharedValue = top(4296).useSharedValue(0);
+  let obj = top(4296);
+  sharedValue1 = top(4296).useSharedValue(0);
+  let obj2 = top(4296);
+  sharedValue2 = top(4296).useSharedValue(0.2);
+  let obj3 = top(4296);
+  sharedValue3 = top(4296).useSharedValue(0);
+  let obj4 = top(4296);
+  const mountLayoutEffect = top(4992).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
     if (!closure_2) {
@@ -76,7 +76,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(closure_1_2[13]).withTiming(1, { duration: 360 });
     const result5 = obj4.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(closure_1_2[13]).withTiming(0, { duration: 240 })));
   });
-  let obj5 = top(4953);
+  let obj5 = top(4992);
   const fn = function f() {
     let obj = { scale: sharedValue2.get() };
     const items = [obj, ];
@@ -109,8 +109,8 @@ function EmojiConfetti(children) {
   fn.__closure = { sizeValue: sharedValue2, left, rotationValue: sharedValue1, top, positionValue: sharedValue, opacityValue: sharedValue3 };
   fn.__workletHash = 1455873119263;
   fn.__initData = closure_14;
-  const style = top(4218).useAnimatedStyle(fn);
-  return callback3(left(4218).View, { style, children: children.emojiComponent });
+  const style = top(4296).useAnimatedStyle(fn);
+  return callback3(left(4296).View, { style, children: children.emojiComponent });
 }
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;

@@ -1,9 +1,9 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8354
+// Function ID: 8355
 // Name: hide_icymi_tab
 // Dependencies: [2]
 
-// Module 8284 (hide_icymi_tab)
+// Module 8354 (hide_icymi_tab)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/labs/LabFeatures.tsx");

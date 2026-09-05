@@ -1,25 +1,25 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10262
+// Function ID: 10263
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1390, 1981, 4130, 1921, 673, 10192, 4961, 21, 4481, 709, 4681, 4983, 5402, 4325, 8529, 2]
+// Dependencies: [19, 17, 1961, 2012, 4209, 1371, 1074, 10263, 5000, 21, 4560, 576, 4713, 5022, 5442, 4404, 8599, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10191 (AutocompleteFormDivider)
+// Module 10262 (AutocompleteFormDivider)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import nameFromUserDefault from "nameFromUser" /* 4325 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 4983 */;
-import DividerDefault from "Divider" /* 8529 */;
-import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1390 */;
-import closure_4 from "comparator" /* 1981 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10192 */;
-import regExp from "regExp" /* 4961 */;
+import ThemesDefault from "Themes" /* 576 */;
+import nameFromUserDefault from "nameFromUser" /* 4404 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import TIMESTAMP_FORMATS from "TIMESTAMP_FORMATS" /* 5022 */;
+import DividerDefault from "Divider" /* 8599 */;
+import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1961 */;
+import closure_4 from "comparator" /* 2012 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10263 */;
+import regExp from "regExp" /* 5000 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function AutocompleteFormDivider() {

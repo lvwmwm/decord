@@ -1,23 +1,20 @@
 // Module ID: 8481
 // Function ID: 8482
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 8482, 21, 8391, 8398, 8399, 8405, 8484, 8407]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8468, 8482, 8477]
 
 // Module 8481 (_isNativeReflectConstruct)
 import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import extractPropsDefault from "extractProps" /* 8398 */;
-import extractFontDefault from "extractFont" /* 8405 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8407 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8484 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8477 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8482 */;
 import closure_3 from "_classCallCheck" /* 41 */;
 import closure_4 from "_possibleConstructorReturn" /* 93 */;
 import closure_5 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
-import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 8482 */;
 import { jsx } from "jsxProd" /* 21 */;
 
-const Text = arg1;
+const Circle = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -38,69 +35,56 @@ function _isNativeReflectConstruct() {
   }
 }
 noopAll;
-class Text {
+class Circle {
   constructor() {
     self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_3(this, closure_0);
-    items1 = [...items];
+    tmp = closure_3(this, Circle);
     tmp2 = closure_5;
-    obj = closure_5(closure_0);
+    obj = closure_5(Circle);
     tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      let tmp = matrix;
-      if (matrix) {
-        tmp = !matrix.matrix;
-      }
-      if (tmp) {
-        tmp = closure_1_1(closure_1_2[8])(matrix);
-      }
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const propsAndStylesResult = lib(closure_1_2[9]).propsAndStyles(matrix);
-      const obj = lib(closure_1_2[9]);
-      const merged = Object.assign(propsAndStylesResult, lib(closure_1_2[10]).pickNotNil(closure_1_1(closure_1_2[11])(propsAndStylesResult, true)));
-      if (lib.root) {
-        const root = lib.root;
-        root.setNativeProps(propsAndStylesResult);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(Text, _isNativeReflectConstructDefault);
-let items = [
+_inheritsDefault(Circle, _isNativeReflectConstructDefault);
+const items = [
   {
     key: "render",
     value: function render() {
-      let obj = Text(8398);
-      const propsAndStylesResult = obj.propsAndStyles(this.props);
-      obj = {};
-      const merged = Object.assign(propsAndStylesResult);
-      obj.x = null;
-      obj.y = null;
-      const tmp2Result = extractPropsDefault(obj, this);
-      const merged1 = Object.assign(tmp2Result, extractFontDefault(propsAndStylesResult, true));
-      tmp2Result.ref = this.refMethod;
-      obj = {};
-      const tmp2 = extractPropsDefault;
-      const merged2 = Object.assign(tmp2Result);
-      return jsx(__INTERNAL_VIEW_CONFIGDefault, {});
+      const self = this;
+      const props = this.props;
+      let obj = {};
+      ({ cx, cy, r } = props);
+      const merged = Object.assign(self(8468).extract(this, props));
+      obj.cx = cx;
+      obj.cy = cy;
+      obj.r = r;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const obj2 = self(8468);
+      const merged1 = Object.assign(obj);
+      return jsx(__INTERNAL_VIEW_CONFIGDefault, {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Text, items);
-importDefaultResultResult.displayName = "Text";
+const importDefaultResultResult = importDefaultResult(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default importDefaultResultResult;

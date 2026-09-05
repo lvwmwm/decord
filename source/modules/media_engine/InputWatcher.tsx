@@ -1,12 +1,12 @@
-// Module ID: 13834
-// Function ID: 13835
+// Module ID: 14075
+// Function ID: 14076
 // Name: logger
-// Dependencies: [32, 5, 4548, 4, 4365, 4582, 1235, 13773, 4103, 5520, 706, 2]
+// Dependencies: [32, 5, 4602, 4, 4447, 4615, 1116, 14014, 4182, 5565, 573, 2]
 
-// Module 13834 (logger)
+// Module 14075 (logger)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons" /* 4548 */;
+import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons" /* 4602 */;
 
 const require = arg1;
 const logger = new require("log").Logger("InputWatcher");

@@ -1,21 +1,21 @@
-// Module ID: 11651
-// Function ID: 11652
+// Module ID: 11719
+// Function ID: 11720
 // Name: normal
-// Dependencies: [4713, 11652, 11653, 2]
+// Dependencies: [4745, 11720, 11721, 2]
 
-// Module 11651 (normal)
+// Module 11719 (normal)
 import set from "set" /* 2 */;
-import NativeShadowType from "NativeShadowType" /* 11653 */;
+import NativeShadowType from "NativeShadowType" /* 11721 */;
 
 function normal(border) {
   const _require = border;
   const obj = { border: border.colors.BORDER_SUBTLE, borderWidth: 1, fill: border.colors.CARD_SECONDARY_BG, label: null, opacity: 1, answerBackground: null, answerFill: null, radioStyle: null, radioBackground: null, radioForeground: null };
-  const match = _require(4713).match(arg1);
-  const str = _require(4713);
-  obj[3] = match.with(_require(11652).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
+  const match = _require(4745).match(arg1);
+  const str = _require(4745);
+  obj[3] = match.with(_require(11720).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
   obj[5] = border.colors.BACKGROUND_MOD_MUTED;
   obj[6] = border.colors.BACKGROUND_MOD_SUBTLE;
-  obj[7] = _require(11653).PollRadioStyle.HOLLOW;
+  obj[7] = _require(11721).PollRadioStyle.HOLLOW;
   obj[8] = border.colors.INTERACTIVE_TEXT_ACTIVE;
   obj[9] = border.colors.WHITE;
   return obj;
@@ -27,12 +27,12 @@ function normalVote(border, arg1) {
   let obj = {};
   const _require = border;
   obj = { border: border.colors.BORDER_SUBTLE, borderWidth: 1, fill: border.colors.CARD_SECONDARY_BG, label: null, opacity: 1, answerBackground: null, answerFill: null, radioStyle: null, radioBackground: null, radioForeground: null };
-  const match = _require(4713).match(arg1);
-  const str = _require(4713);
-  obj[3] = match.with(_require(11652).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
+  const match = _require(4745).match(arg1);
+  const str = _require(4745);
+  obj[3] = match.with(_require(11720).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
   obj[5] = border.colors.BACKGROUND_MOD_MUTED;
   obj[6] = border.colors.BACKGROUND_MOD_SUBTLE;
-  obj[7] = _require(11653).PollRadioStyle.HOLLOW;
+  obj[7] = _require(11721).PollRadioStyle.HOLLOW;
   obj[8] = border.colors.INTERACTIVE_TEXT_ACTIVE;
   obj[9] = border.colors.WHITE;
   const merged = Object.assign(obj);

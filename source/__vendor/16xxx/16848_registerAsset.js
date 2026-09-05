@@ -1,10 +1,10 @@
 // Module ID: 16848
 // Function ID: 16849
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 16848 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/app_icons/images", width: 259, height: 93, scales: [2, 3], hash: "b6b1b6176f7b7fe50aec94892b5609a1", name: "app_icon_marketing", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 292, height: 182, scales: [2, 3], hash: "580ec4f595fa69a80ec70eff21ac3c71", name: "webhook_empty_darker", type: "png" });

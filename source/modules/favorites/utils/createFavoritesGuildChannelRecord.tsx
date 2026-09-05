@@ -1,12 +1,12 @@
-// Module ID: 4119
-// Function ID: 4120
+// Module ID: 4198
+// Function ID: 4199
 // Name: createFavoritesGuildChannelRecord
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4119 (createFavoritesGuildChannelRecord)
+// Module 4198 (createFavoritesGuildChannelRecord)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const ChannelTypes = ME.ChannelTypes;
 const result = set.fileFinishedImporting("modules/favorites/utils/createFavoritesGuildChannelRecord.tsx");

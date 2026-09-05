@@ -1,16 +1,16 @@
-// Module ID: 8177
-// Function ID: 8178
+// Module ID: 8246
+// Function ID: 8247
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 673, 21, 4481, 4166, 8178, 1431, 8184, 5084, 1233, 8185, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4560, 1935, 8247, 1396, 8254, 5123, 1114, 8255, 2]
 // Exports: default
 
-// Module 8177 (UserProfileBanner)
+// Module 8246 (UserProfileBanner)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { BANNER_HEIGHT } from "ME" /* 673 */;
+import { BANNER_HEIGHT } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

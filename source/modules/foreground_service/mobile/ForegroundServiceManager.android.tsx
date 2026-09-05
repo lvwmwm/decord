@@ -1,13 +1,13 @@
-// Module ID: 7689
-// Function ID: 7690
+// Module ID: 7756
+// Function ID: 7757
 // Name: initialize
-// Dependencies: [17, 672, 656, 4669, 2]
+// Dependencies: [17, 7757, 1332, 1898, 2]
 
-// Module 7689 (initialize)
+// Module 7756 (initialize)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import setRequestedByAll from "setRequestedBy" /* 672 */;
-import initializeDefault from "initialize" /* 4669 */;
+import initializeDefault from "initialize" /* 1898 */;
+import setRequestedByAll from "setRequestedBy" /* 7757 */;
 
 let obj = importDefault;
 const NativeModules = get_ActivityIndicator.NativeModules;
@@ -77,7 +77,7 @@ prototype["updateServiceHandler"] = function updateServiceHandler(arg0, usesGate
       const result = serviceNotifications.set(arg0, usesGateway);
       self.handleChange();
     }
-    tmp16 = obj(656);
+    tmp16 = obj(1332);
   }
 };
 prototype["removeServiceHandler"] = function removeServiceHandler(arg0) {

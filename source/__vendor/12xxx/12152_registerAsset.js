@@ -1,10 +1,10 @@
 // Module ID: 12152
 // Function ID: 12153
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 12152 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/scheduled_messages", width: 297, height: 238, scales: [1], hash: "0ad2bf31ea242663dc2fd22966e4c43e", name: "wumpus-calendar-plus", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "242a17e76bd7bf11bfa37a179ab55a99", name: "ArrowsUpDownIcon", type: "png" });

@@ -1,10 +1,10 @@
 // Module ID: 2561
 // Function ID: 2562
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 2561 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hY3Rpdml0eV9wcml2YWN5", scales: [1], hash: "12640a7514a1cb010d25e09a1af70052", name: "uk.messages.12640a7514a1cb010d25e09a1af70052.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/overlay/web/v3", scales: [1], hash: "6c39ef1bf213cec6bbd51be68d36c0f1", name: "OverlayWidgets.compiled.messages", type: "jsona" });

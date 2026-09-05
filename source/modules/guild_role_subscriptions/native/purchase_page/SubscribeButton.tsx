@@ -1,19 +1,19 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16547
+// Function ID: 16548
 // Name: emphasisHook
-// Dependencies: [5, 32, 19, 17, 1980, 4114, 673, 1393, 21, 15151, 586, 9295, 4477, 4866, 1233, 5524, 4074, 1296, 16465, 4448, 16472, 2008, 16461, 5018, 4936, 10230, 2]
+// Dependencies: [5, 32, 19, 17, 2011, 4193, 1074, 1964, 21, 15227, 504, 9366, 4556, 4905, 1114, 5569, 4153, 1178, 16541, 4527, 16548, 1896, 16537, 5057, 4975, 10301, 2]
 // Exports: default
 
-// Module 16471 (emphasisHook)
-import Text from "Text" /* 4477 */;
+// Module 16547 (emphasisHook)
+import Text from "Text" /* 4556 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
-import { AnalyticsLocations } from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "makeGroupListingIndexSubscriptionListingTag" /* 4193 */;
+import { AnalyticsLocations } from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -24,23 +24,23 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(15151);
-  obj1 = activeListingId(4074)(activeSubscription.currentPeriodEnd);
+  let obj = changeToListingId(15227);
+  obj1 = activeListingId(4153)(activeSubscription.currentPeriodEnd);
   obj = { children: null };
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
-  const intl = activeSubscription(1233).intl;
+  const intl = activeSubscription(1114).intl;
   obj1 = { activeListingName: callback2(obj.useName(activeListingId), 1)[0], billingEndDate: obj1.format("MMMM Do"), emphasisHook };
-  obj[2] = intl.format(activeSubscription(1233).t.lA7ztO, obj1);
-  const items = [callback3(activeSubscription(4477).Text, obj), callback3(activeSubscription(1296).Spacer, { size: 16 }), ];
+  obj[2] = intl.format(activeSubscription(1114).t.lA7ztO, obj1);
+  const items = [callback3(activeSubscription(4556).Text, obj), callback3(activeSubscription(1178).Spacer, { size: 16 }), ];
   const obj2 = { text: null, onPress: null };
-  const intl2 = activeSubscription(1233).intl;
-  obj2[0] = intl2.string(activeSubscription(1233).t.SACegK);
+  const intl2 = activeSubscription(1114).intl;
+  obj2[0] = intl2.string(activeSubscription(1114).t.SACegK);
   obj2[1] = function onPress() {
     let obj = activeListingId(closure_1_3[19]);
     obj = { activeSubscription, activeListingId, changeToListingId };
     obj.openLazy(activeSubscription(closure_1_3[21])(closure_1_3[20], closure_1_3.paths), "ChangeSubscriptionCard:" + changeToListingId, obj);
   };
-  items[2] = callback3(activeSubscription(16465).ArrowButton, obj2);
+  items[2] = callback3(activeSubscription(16541).ArrowButton, obj2);
   obj[0] = items;
   return callback4(View, obj);
 }

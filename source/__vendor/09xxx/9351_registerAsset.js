@@ -1,10 +1,10 @@
 // Module ID: 9351
 // Function ID: 9352
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9351 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "04e956cfab49d64a3f8a18b66aa5fc1e", name: "ChatSmileIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_identity/images", width: 303, height: 198, scales: [2, 3], hash: "af6f5b1f2e3f6f41820436ec96e0f065", name: "guild_identity_education_light", type: "png" });

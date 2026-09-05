@@ -1,17 +1,17 @@
-// Module ID: 10266
-// Function ID: 10267
+// Module ID: 10337
+// Function ID: 10338
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 1908, 5419, 5540, 673, 4137, 644, 2]
+// Dependencies: [5, 32, 19, 1979, 5459, 5585, 1074, 4216, 563, 2]
 // Exports: useEmojiAndSource
 
-// Module 10266 (useEmojiAndSource)
+// Module 10337 (useEmojiAndSource)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "getEmojiToGroupId" /* 5419 */;
-import getEmojiSourceData from "getEmojiSourceData" /* 5540 */;
-import { GuildFeatures } from "ME" /* 673 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "getEmojiToGroupId" /* 5459 */;
+import getEmojiSourceData from "getEmojiSourceData" /* 5585 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 ({ ExpressionSourceGuildRecord: error, EmojiSourceDataTypes: closure_8, getEmojiSourceData: c9 } = getEmojiSourceData);

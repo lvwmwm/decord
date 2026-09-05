@@ -1,15 +1,15 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8909
+// Function ID: 8910
 // Name: styles
-// Dependencies: [19, 21, 4481, 709, 4941, 4218, 4935, 8029, 2]
+// Dependencies: [19, 21, 4560, 576, 4980, 4296, 4974, 8098, 2]
 // Exports: FloatingActionButton
 
-// Module 8839 (styles)
-import ThemesDefault from "Themes" /* 709 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
+// Module 8909 (styles)
+import ThemesDefault from "Themes" /* 576 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4980 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 const styles = createCacheKey.createStyles(() => {
@@ -31,7 +31,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   ({ icon, positionBottom } = positionRight);
   positionRight = positionRight.positionRight;
   const merged = Object.assign(positionRight, Object.create(null));
-  let obj = positionBottom(4218);
+  let obj = positionBottom(4296);
   class F {
     constructor() {
       tmp = positionBottom;
@@ -52,7 +52,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
       return obj;
     }
   }
-  obj = { withSpring: positionBottom(4935).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4974).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -66,11 +66,11 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   let cloneElementResult = icon;
   if (validElement.isValidElement(icon)) {
     const obj2 = { color: null };
-    obj2[0] = positionRight(709).colors.WHITE;
+    obj2[0] = positionRight(576).colors.WHITE;
     cloneElementResult = validElement.cloneElement(icon, obj2);
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles());
-  obj[1] = jsx(positionBottom(8029).BaseIconButton, {});
-  return jsx(positionRight(4218).View, { style: animatedStyle, children: null });
+  obj[1] = jsx(positionBottom(8098).BaseIconButton, {});
+  return jsx(positionRight(4296).View, { style: animatedStyle, children: null });
 };

@@ -1,19 +1,18 @@
 // Module ID: 10534
 // Function ID: 10535
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10361, 10530, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10526, 10434, 10435, 10439]
 
 // Module 10534 (_isNativeReflectConstruct)
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10530 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10526 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENCasualYearMonthDayParser = require;
+const NLTimeUnitCasualRelativeFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,13 +32,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
-class ENCasualYearMonthDayParser {
+const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class NLTimeUnitCasualRelativeFormatParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, ENCasualYearMonthDayParser);
+    tmp = closure_2(this, NLTimeUnitCasualRelativeFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(ENCasualYearMonthDayParser);
+    obj = closure_4(NLTimeUnitCasualRelativeFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -54,7 +53,7 @@ class ENCasualYearMonthDayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
     key: "innerPattern",
@@ -64,28 +63,19 @@ const items = [
   },
   {
     key: "innerExtract",
-    value: function innerExtract(arg0, arg1) {
-      if (arg1[3]) {
-        const _parseInt = parseInt;
-        let parsed = parseInt(arg1[3]);
-      } else {
-        parsed = ENCasualYearMonthDayParser(10530).MONTH_DICTIONARY[str.toLowerCase(str)];
-      }
-      if (parsed >= 1) {
-        if (parsed <= 12) {
-          const _parseInt2 = parseInt;
-          const obj = { day: null, month: null, year: null };
-          const _parseInt3 = parseInt;
-          const parsed1 = parseInt(arg1[1]);
-          obj[0] = parseInt(arg1[4]);
-          obj[1] = parsed;
-          obj[2] = parsed1;
-          return obj;
+    value: function innerExtract(reference) {
+      const formatted = arg1[1].toLowerCase();
+      const parseDurationResult = NLTimeUnitCasualRelativeFormatParser(10526).parseDuration(arg1[2]);
+      if ("vorig" !== formatted) {
+        if ("afgelopen" !== formatted) {
+          let reverseDurationResult = parseDurationResult;
         }
+        const ParsingComponents = tmp2(10435).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      return null;
+      reverseDurationResult = tmp2(10434).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENCasualYearMonthDayParser, items);
+export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);

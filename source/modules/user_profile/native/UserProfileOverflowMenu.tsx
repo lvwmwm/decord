@@ -1,21 +1,21 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13097
+// Function ID: 13098
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4497, 1386, 4130, 1980, 7148, 673, 4502, 11314, 21, 586, 13030, 13036, 12921, 8121, 7102, 7122, 8117, 8146, 8147, 12922, 13037, 13038, 9103, 9104, 7129, 8698, 500, 8110, 1233, 4494, 4448, 4731, 13047, 2008, 8972, 11316, 8334, 11315, 8559, 1234, 12552, 695, 9111, 4735, 4166, 7130, 4325, 4193, 7136, 12924, 4218, 8596, 13046, 8028, 8602, 709, 13048, 2]
+// Dependencies: [32, 19, 17, 4576, 1957, 4209, 2011, 7208, 1074, 4581, 11382, 21, 504, 13098, 13104, 12989, 8190, 7162, 7182, 8186, 8215, 8216, 12990, 13105, 13106, 9174, 9175, 7189, 8768, 1250, 8179, 1114, 4573, 4527, 4763, 13115, 1896, 9042, 11384, 8404, 11383, 8629, 1115, 12620, 1242, 9182, 4767, 1935, 7190, 4404, 4258, 7196, 12992, 4296, 8666, 13114, 8097, 8672, 576, 13116, 2]
 // Exports: default
 
-// Module 13029 (UserProfileOverflowMenu)
+// Module 13097 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4497 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "handleConnectionOpen" /* 1980 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
-import ME from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 11314 */;
+import closure_6 from "getParticipants" /* 4576 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "handleConnectionOpen" /* 2011 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
+import ME from "ME" /* 1074 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 11382 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

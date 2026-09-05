@@ -1,9 +1,9 @@
-// Module ID: 6509
-// Function ID: 6510
+// Module ID: 6568
+// Function ID: 6569
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6509 (metadata)
+// Module 6568 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WateringCanSpotIllustration-2x.png.js");

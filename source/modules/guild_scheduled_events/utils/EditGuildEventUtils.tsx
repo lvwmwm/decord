@@ -1,14 +1,14 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9704
+// Function ID: 9705
 // Name: EditGuildEventScreens
-// Dependencies: [1215, 1392, 9594, 9634, 2]
+// Dependencies: [502, 1963, 9665, 9705, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 9633 (EditGuildEventScreens)
-import getRRule from "getRRule" /* 9594 */;
-import getChannelFromEvent from "getChannelFromEvent" /* 9634 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
+// Module 9704 (EditGuildEventScreens)
+import getRRule from "getRRule" /* 9665 */;
+import getChannelFromEvent from "getChannelFromEvent" /* 9705 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
 
 require = arg1;
 ({ GuildScheduledEventEntityTypes: c3, GuildScheduledEventStatus: c4, GuildScheduledEventPrivacyLevel: c5, FAKE_EVENT_ID: closure_6 } = GUILD_EVENT_MAX_NAME_LENGTH);

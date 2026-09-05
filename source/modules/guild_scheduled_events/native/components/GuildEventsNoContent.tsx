@@ -1,19 +1,19 @@
-// Module ID: 9736
-// Function ID: 9737
+// Module ID: 9807
+// Function ID: 9808
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4120, 673, 502, 21, 4481, 5479, 709, 586, 8337, 9712, 9714, 4477, 1233, 8993, 2]
+// Dependencies: [19, 17, 4199, 1074, 1085, 21, 4560, 5524, 576, 504, 8407, 9783, 9785, 4556, 1114, 9063, 2]
 // Exports: default
 
-// Module 9736 (GuildEventsNoContent)
+// Module 9807 (GuildEventsNoContent)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import { GuildSettingsSections } from "ME" /* 673 */;
-import sum from "sum" /* 502 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import { GuildSettingsSections } from "ME" /* 1074 */;
+import sum from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 const require = arg1;
 noopAll;
@@ -32,32 +32,32 @@ export default function GuildEventsNoContent(guild) {
   guild = guild.guild;
   const onClose = guild.onClose;
   const tmp = callback2();
-  let obj = guild(586);
+  let obj = guild(504);
   const items = [closure_4];
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => closure_1_4.can(closure_1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
-  obj = { icon: onClose(9712), IconComponent: guild(9714).CalendarIcon };
-  const items2 = [callback(onClose(8337), obj), , , ];
+  obj = { icon: onClose(9783), IconComponent: guild(9785).CalendarIcon };
+  const items2 = [callback(onClose(8407), obj), , , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = guild(1233).intl;
-  obj1[4] = intl.string(guild(1233).t["WgZ+3D"]);
-  items2[1] = callback(guild(4477).Text, obj1);
+  const intl = guild(1114).intl;
+  obj1[4] = intl.string(guild(1114).t["WgZ+3D"]);
+  items2[1] = callback(guild(4556).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
-  const intl2 = guild(1233).intl;
-  obj2[3] = intl2.string(guild(1233).t["v/S/PG"]);
-  items2[2] = callback(guild(4477).Text, obj2);
+  const intl2 = guild(1114).intl;
+  obj2[3] = intl2.string(guild(1114).t["v/S/PG"]);
+  items2[2] = callback(guild(4556).Text, obj2);
   if (stateFromStores) {
     const obj3 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj3[0] = tmp.subtitle;
-    const intl3 = tmp2(1233).intl;
+    const intl3 = tmp2(1114).intl;
     const obj4 = { onClick: null };
     obj4[0] = function onClick() {
       onClose();
       onClose(closure_1_2[15]).open(guild.id, closure_1_5.ROLES);
     };
-    obj3[3] = intl3.format(tmp2(1233).t["K+DH2o"], obj4);
-    stateFromStores = callback(tmp2(4477).Text, obj3);
+    obj3[3] = intl3.format(tmp2(1114).t["K+DH2o"], obj4);
+    stateFromStores = callback(tmp2(4556).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj[1] = items2;

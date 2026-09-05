@@ -1,9 +1,9 @@
-// Module ID: 6197
-// Function ID: 6198
+// Module ID: 6252
+// Function ID: 6253
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6197 (metadata)
+// Module 6252 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MushroomSpotIllustration-2x.png.js");

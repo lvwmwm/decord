@@ -1,9 +1,9 @@
-// Module ID: 6059
-// Function ID: 6060
+// Module ID: 6114
+// Function ID: 6115
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6059 (metadata)
+// Module 6114 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLevel2SpotIllustration-2x.png.js");

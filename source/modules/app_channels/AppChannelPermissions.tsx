@@ -1,12 +1,12 @@
-// Module ID: 4127
-// Function ID: 4128
+// Module ID: 4206
+// Function ID: 4207
 // Name: Permissions
-// Dependencies: [673, 503, 2]
+// Dependencies: [1074, 1086, 2]
 
-// Module 4127 (Permissions)
+// Module 4206 (Permissions)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import importAllResult from "fromString" /* 503 */;
+import ME from "ME" /* 1074 */;
+import importAllResult from "fromString" /* 1086 */;
 
 const Permissions = ME.Permissions;
 const items = [, , , , , , ];

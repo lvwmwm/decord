@@ -1,14 +1,14 @@
-// Module ID: 7463
-// Function ID: 7464
+// Module ID: 7530
+// Function ID: 7531
 // Name: handleChange
-// Dependencies: [1386, 1980, 4709, 586, 706, 2]
+// Dependencies: [1957, 2011, 4741, 504, 573, 2]
 
-// Module 7463 (handleChange)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "ensureGuildLoaded" /* 1386 */;
-import closure_1 from "handleConnectionOpen" /* 1980 */;
-import closure_2 from "updateUserGuildSettingsInternal" /* 4709 */;
+// Module 7530 (handleChange)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "ensureGuildLoaded" /* 1957 */;
+import closure_1 from "handleConnectionOpen" /* 2011 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 4741 */;
 
 function handleChange() {
   channelId = channelId.getChannelId();

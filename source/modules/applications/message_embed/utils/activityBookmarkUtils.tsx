@@ -1,12 +1,12 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7692
+// Function ID: 7693
 // Name: extractActivityBookmarkParams
-// Dependencies: [1485, 2]
+// Dependencies: [1365, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 7625 (extractActivityBookmarkParams)
+// Module 7692 (extractActivityBookmarkParams)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
 
 const result = set.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 

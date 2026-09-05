@@ -1,22 +1,22 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14671
+// Function ID: 14672
 // Name: useAuthSessions
-// Dependencies: [19, 1215, 14597, 586, 1233, 4074, 2]
+// Dependencies: [19, 502, 14672, 504, 1114, 4153, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14596 (useAuthSessions)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
+// Module 14671 (useAuthSessions)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hooksDefault from "hooks" /* 4153 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "handleInit" /* 14597 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "handleInit" /* 14672 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
 export const useAuthSessions = function useAuthSessions() {
   const items = [closure_5];
-  stateFromStoresObject = stateFromStoresObject(586).useStateFromStoresObject(items, () => sessions.getSessions());
+  stateFromStoresObject = stateFromStoresObject(504).useStateFromStoresObject(items, () => sessions.getSessions());
   const items1 = [stateFromStoresObject];
   return React.useMemo(() => {
     const otherSessions = [...authSessionIdHash];

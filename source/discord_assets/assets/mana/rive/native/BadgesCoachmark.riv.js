@@ -1,9 +1,9 @@
-// Module ID: 4266
-// Function ID: 4267
+// Module ID: 4344
+// Function ID: 4345
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4266 (metadata)
+// Module 4344 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BadgesCoachmark.riv.js");

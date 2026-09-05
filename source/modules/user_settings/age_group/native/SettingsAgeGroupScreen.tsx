@@ -1,28 +1,28 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14720
+// Function ID: 14721
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 7906, 673, 21, 4481, 709, 8341, 1994, 4477, 1233, 2918, 14607, 11400, 14646, 14614, 2]
+// Dependencies: [19, 17, 7975, 1074, 21, 4560, 576, 8411, 2024, 4556, 1114, 2946, 14682, 11468, 14721, 14689, 2]
 // Exports: default
 
-// Module 14645 (SettingsAgeGroupHeader)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2918 */;
-import Text from "Text" /* 4477 */;
-import _modDef14614 from "module_14614" /* 14614 */;
+// Module 14720 (SettingsAgeGroupHeader)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2946 */;
+import Text from "Text" /* 4556 */;
+import _modDef14689 from "module_14689" /* 14689 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7975 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function SettingsAgeGroupHeader() {
   let obj = { style: callback3().headerContainer, children: null };
   const callback = React.useCallback(() => {
-    const obj = callback(8341);
-    obj.openUrl(callback(1994).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+    const obj = callback(8411);
+    obj.openUrl(callback(2024).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
   obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = getSystemLocale.intl;
@@ -43,7 +43,7 @@ let closure_9 = createCacheKey.createStyles(createCacheKey);
 const result = require("set").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
 
 export default function SettingsAgeGroupScreen() {
-  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14607).useIsTinyBroncoSettingsEnabled();
+  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14682).useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
   const node = React.useMemo(() => {
     let obj = isTinyBroncoSettingsEnabled(closure_1_2[13]);
@@ -64,5 +64,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = TinyBroncoAgeGroupHeader;
     return obj.createList(obj);
   }, items);
-  return callback(_modDef14614, { node });
+  return callback(_modDef14689, { node });
 };

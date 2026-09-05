@@ -1,12 +1,12 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10901
+// Function ID: 10902
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4473, 586, 1939, 10833, 4329, 686, 2]
+// Dependencies: [19, 4552, 504, 1390, 10902, 4409, 672, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 10832 (useDisplayNameStylesAccessibleColors)
+// Module 10901 (useDisplayNameStylesAccessibleColors)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");

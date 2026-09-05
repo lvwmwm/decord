@@ -1,25 +1,25 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12421
+// Function ID: 12422
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [19, 17, 4473, 4862, 1921, 673, 21, 1296, 4481, 709, 4197, 4477, 1233, 5084, 6880, 586, 4206, 4755, 9105, 7892, 12354, 4299, 4218, 4482, 11601, 695, 11599, 1219, 4754, 12355, 7709, 12143, 7779, 2]
+// Dependencies: [19, 17, 4552, 4901, 1371, 1074, 21, 1178, 4560, 576, 4262, 4556, 1114, 5123, 6940, 504, 4277, 4794, 9176, 7961, 12422, 4378, 4296, 4561, 11669, 1242, 11667, 1100, 4793, 12423, 7777, 12211, 7847, 2]
 
-// Module 12353 (ChatInputReplyBarNoAuthor)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import map from "map" /* 4197 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import registerAssetDefault from "registerAsset" /* 6880 */;
+// Module 12421 (ChatInputReplyBarNoAuthor)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import map from "map" /* 4262 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import registerAssetDefault from "registerAsset" /* 6940 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_7 from "handleChanged" /* 4862 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_7 from "handleChanged" /* 4901 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
@@ -347,7 +347,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj[3] = tmp9;
   obj[4] = onCancelEditing.onCancelEditing;
-  obj1 = { source: registerAssetDefault, size: tmp2(1296).Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  obj1 = { source: registerAssetDefault, size: tmp2(1178).Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   obj[5] = callback(Button.Icon, obj1);
   const obj2 = { style: tmp.contextBarRow, children: null };
   const obj3 = { children: null };

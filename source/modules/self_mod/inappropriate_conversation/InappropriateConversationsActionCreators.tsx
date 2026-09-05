@@ -1,14 +1,14 @@
-// Module ID: 10887
-// Function ID: 10888
+// Module ID: 10956
+// Function ID: 10957
 // Name: playVibingWumpusMusic
-// Dependencies: [673, 706, 527, 527, 2]
+// Dependencies: [1074, 573, 1272, 1272, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10887 (playVibingWumpusMusic)
+// Module 10956 (playVibingWumpusMusic)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");

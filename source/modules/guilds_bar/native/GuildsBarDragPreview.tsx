@@ -1,16 +1,16 @@
-// Module ID: 16284
-// Function ID: 16285
+// Module ID: 16360
+// Function ID: 16361
 // Name: PreviewItem
-// Dependencies: [19, 5398, 16208, 16209, 21, 4481, 15946, 4218, 4935, 7013, 4205, 4197, 709, 16217, 16239, 4105, 2]
+// Dependencies: [19, 5438, 16284, 16285, 21, 4560, 16022, 4296, 4974, 7073, 4271, 4262, 576, 16293, 16315, 4184, 2]
 
-// Module 16284 (PreviewItem)
-import isIterable from "isIterable" /* 4105 */;
+// Module 16360 (PreviewItem)
+import isIterable from "isIterable" /* 4184 */;
 import importAllResult from "noop" /* 19 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5398 */;
-import closure_5 from "withEqualityFn" /* 16208 */;
-import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 16209 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5438 */;
+import closure_5 from "withEqualityFn" /* 16284 */;
+import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 16285 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PreviewItem(dragRegion) {
@@ -341,7 +341,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "cuid", scrollPosition: "m", dragRegion: "heading-xl/extrabold", windowSize: "mobile-text-heading-primary", dropComplete: "header", listInsets: null };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "LongPressCommandMention", scrollPosition: null, dragRegion: true, windowSize: "button", dropComplete: null, listInsets: null };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

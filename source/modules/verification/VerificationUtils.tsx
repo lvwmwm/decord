@@ -1,13 +1,13 @@
-// Module ID: 6533
-// Function ID: 6534
+// Module ID: 6592
+// Function ID: 6593
 // Name: UserRequiredActions
-// Dependencies: [673, 1233, 12, 2]
+// Dependencies: [1074, 1114, 12, 2]
 
-// Module 6533 (UserRequiredActions)
+// Module 6592 (UserRequiredActions)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ME from "ME" /* 1074 */;
 
 const UserRequiredActions = ME.UserRequiredActions;
 const VerificationTypes = ME.VerificationTypes;

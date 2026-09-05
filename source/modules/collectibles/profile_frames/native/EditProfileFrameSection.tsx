@@ -1,17 +1,17 @@
-// Module ID: 14558
-// Function ID: 14559
+// Module ID: 14633
+// Function ID: 14634
 // Name: PX_8
-// Dependencies: [19, 17, 7482, 8153, 21, 709, 4481, 13102, 14557, 13103, 7122, 8752, 2]
+// Dependencies: [19, 17, 7549, 8222, 21, 576, 4560, 13170, 14632, 13171, 7182, 8822, 2]
 
-// Module 14558 (PX_8)
-import ThemesDefault from "Themes" /* 709 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13102 */;
+// Module 14633 (PX_8)
+import ThemesDefault from "Themes" /* 576 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13170 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isProfileFrameRecord } from "fromServer" /* 7482 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_6 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8153 */;
+import { isProfileFrameRecord } from "fromServer" /* 7549 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_6 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8222 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -85,10 +85,10 @@ const memoResult1 = importAllResult.memo((isSelected) => {
   obj = { style: callback3().previewContainer, children: null };
   obj = { profileFrame, previewWidth: size * closure_6, previewHeight: size - 2 * PX_8, profileBackgroundColor: null };
   const tmp = callback3();
-  obj[3] = setSelectedProfileFrame(709).colors.BACKGROUND_BASE_LOW;
-  obj[1] = callback(setSelectedProfileFrame(8752), obj);
+  obj[3] = setSelectedProfileFrame(576).colors.BACKGROUND_BASE_LOW;
+  obj[1] = callback(setSelectedProfileFrame(8822), obj);
   obj[5] = callback(View, obj);
-  return callback(profileFrame(13103).EditCollectiblesListItemProduct, obj);
+  return callback(profileFrame(13171).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditProfileFrameItem";
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/EditProfileFrameSection.tsx");

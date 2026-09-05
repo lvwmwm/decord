@@ -1,31 +1,31 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12782
+// Function ID: 12783
 // Name: voiceRouteRewriter
-// Dependencies: [109, 9396, 1390, 1386, 4306, 1981, 1980, 673, 9397, 3, 4320, 12715, 5372, 1219, 12720, 4731, 4735, 5475, 9610, 4335, 706, 4729, 4412, 12721, 2]
+// Dependencies: [109, 9467, 1961, 1957, 4385, 2012, 2011, 1074, 9468, 3, 4399, 12783, 5411, 1100, 12788, 4763, 4767, 5520, 9681, 4417, 573, 4761, 4491, 12789, 2]
 // Exports: cleanupRouteManager, extractParamsFromVoiceModalRoute, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
 
-// Module 12714 (voiceRouteRewriter)
+// Module 12782 (voiceRouteRewriter)
 import timestampDefault from "timestamp" /* 3 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4412 */;
-import _modDef4729 from "module_4729" /* 4729 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import _modDef5372 from "module_5372" /* 5372 */;
-import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5475 */;
-import MemoryRouter from "MemoryRouter" /* 12715 */;
-import saveLastRoute from "saveLastRoute" /* 12720 */;
-import initializeDefault from "initialize" /* 12721 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4491 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import _modDef5411 from "module_5411" /* 5411 */;
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5520 */;
+import MemoryRouter from "MemoryRouter" /* 12783 */;
+import saveLastRoute from "saveLastRoute" /* 12788 */;
+import initializeDefault from "initialize" /* 12789 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
-import { setVoiceChatDrawerState } from "VoiceChatDrawerState" /* 9396 */;
-import { isGuildSelectableChannelType as closure_6 } from "createChannelRecord" /* 1390 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "initialize" /* 4306 */;
-import closure_9 from "comparator" /* 1981 */;
-import closure_10 from "handleConnectionOpen" /* 1980 */;
-import ME from "ME" /* 673 */;
-import { VoiceChatDrawerState } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9397 */;
-import { RouteParam, RouteParam as RouteParam2, RouteParam as RouteParam3, RouteParam as RouteParam4 } from "RouteParam" /* 4320 */;
+import { setVoiceChatDrawerState } from "VoiceChatDrawerState" /* 9467 */;
+import { isGuildSelectableChannelType as closure_6 } from "createChannelRecord" /* 1961 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "initialize" /* 4385 */;
+import closure_9 from "comparator" /* 2012 */;
+import closure_10 from "handleConnectionOpen" /* 2011 */;
+import ME from "ME" /* 1074 */;
+import { VoiceChatDrawerState } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9468 */;
+import { RouteParam, RouteParam as RouteParam2, RouteParam as RouteParam3, RouteParam as RouteParam4 } from "RouteParam" /* 4399 */;
 
 require = arg1;
 function voiceRouteRewriter(pathname) {
@@ -122,7 +122,7 @@ function saveLastNonVoiceRouteListener(pathname) {
   }
 }
 function updateSelectedChannelListener(location) {
-  let obj = channel2(12715);
+  let obj = channel2(12783);
   obj = { path: items, strict: false, exact: false };
   const matchPathResult = obj.matchPath(location.pathname, obj);
   let params;
@@ -169,9 +169,9 @@ function updateSelectedChannelListener(location) {
         isGuildVoiceResult = isGuildStageVoiceResult;
       }
       if (isGuildVoiceResult) {
-        let tmpResult = tmp(4735);
-        _modDef4731.popWithKey(tmpResult.getVoiceChannelKey(channel.id));
-        const obj21 = _modDef4731;
+        let tmpResult = tmp(4767);
+        _modDef4763.popWithKey(tmpResult.getVoiceChannelKey(channel.id));
+        const obj21 = _modDef4763;
       }
       const guild = showTooManyUserGuildsAlertDefault.selectGuild(guildId);
       obj19 = closure_15;
@@ -188,7 +188,7 @@ function updateSelectedChannelListener(location) {
         const tmp42 = true !== location.navigationReplace || true === location.openChannel;
       }
       obj3[5] = tmp41;
-      const channel1 = _modDef5372.selectChannel(obj3);
+      const channel1 = _modDef5411.selectChannel(obj3);
     }
   }
   channel2 = store.getChannel(voiceChannelId2);
@@ -239,7 +239,7 @@ function updateSelectedChannelListener(location) {
     const _HermesInternal2 = HermesInternal;
     obj8.verbose("UpdateSelectedChannelListener -> voice route present! " + json2 + " " + JSON.stringify(obj5) + " ");
   }
-  tmpResult = tmp(9610);
+  tmpResult = tmp(9681);
   if (!tmpResult.isVoicePanelEnabled(channel2)) {
     const guild1 = showTooManyUserGuildsAlertDefault.selectGuild(voiceGuildId2);
     const obj10 = showTooManyUserGuildsAlertDefault;
@@ -248,26 +248,26 @@ function updateSelectedChannelListener(location) {
     obj6[1] = voiceChannelId2;
     obj6[2] = voiceMessageId2;
     obj6[3] = jumpType;
-    const channel3 = _modDef5372.selectChannel(obj6);
-    const obj11 = _modDef5372;
+    const channel3 = _modDef5411.selectChannel(obj6);
+    const obj11 = _modDef5411;
   }
   obj1 = { match: matchPathResult, location };
   obj8 = closure_15;
-  const tmpResult1 = channel2(4335);
+  const tmpResult1 = channel2(4417);
   if (!tmpResult1.isModalOpen(tmpResult2.getVoiceChannelKey(channel2.id))) {
-    const obj15 = _modDef4731;
-    obj15.popAboveKey(tmp(4735).getVoiceChannelKey(channel2.id));
-    const tmpResult3 = tmp(4735);
+    const obj15 = _modDef4763;
+    obj15.popAboveKey(tmp(4767).getVoiceChannelKey(channel2.id));
+    const tmpResult3 = tmp(4767);
     dispatcherDefault.wait(() => {
       channel2(closure_1_2[16]).openGuildVoiceModal(channel2);
     });
     const obj17 = dispatcherDefault;
   }
-  tmpResult2 = channel2(4735);
+  tmpResult2 = channel2(4767);
   if (tmp21) {
     setVoiceChatDrawerState(channel2.id, VoiceChatDrawerState.OPEN);
     if (tmp25) {
-      const obj18 = _modDef4729;
+      const obj18 = _modDef4761;
       const result = obj18.jumpToVoiceChannelMessage(voiceGuildId2, voiceChannelId2, voiceMessageId2, jumpType);
     }
     tmp25 = null != voiceGuildId2 && null != voiceChannelId2 && null != voiceMessageId2;
@@ -284,17 +284,17 @@ function extractParams(arg0) {
     const params = match.params;
     ({ guildId, channelId } = params);
     if (_location.jumpType === GuildThemeSourcePreference.JumpType.INSTANT) {
-      let ANIMATED = tmp5(4412).JumpType.INSTANT;
+      let ANIMATED = tmp5(4491).JumpType.INSTANT;
     } else {
-      ANIMATED = tmp5(4412).JumpType.ANIMATED;
+      ANIMATED = tmp5(4491).JumpType.ANIMATED;
     }
-    let tmp5Result = tmp5(4320);
+    let tmp5Result = tmp5(4399);
     if (!tmp5Result.isValidGuildId(guildId)) {
       guildId = closure_11;
     }
     obj = { guildId: null, channelId: null, messageId: null, jumpType: null, skipMessageFetch: null };
     obj[0] = guildId;
-    tmp5Result = tmp5(4320);
+    tmp5Result = tmp5(4399);
     let tmp = null;
     if (tmp5Result.isValidChannelId(channelId)) {
       tmp = channelId;
@@ -344,7 +344,7 @@ export const extractParamsFromVoiceModalRoute = function extractParamsFromVoiceM
 export const popVoiceRoute = function popVoiceRoute(guildId) {
   const lastNonVoiceRoute = closure_8.lastNonVoiceRoute;
   logger.log("popVoiceRoute: last non-voice route is " + lastNonVoiceRoute);
-  let obj = _modDef5372;
+  let obj = _modDef5411;
   obj = { guildId, channelId: null };
   const channel = store.getChannel(store2.getLastSelectedChannelId());
   let type;

@@ -1,13 +1,13 @@
-// Module ID: 11978
-// Function ID: 11979
+// Module ID: 12046
+// Function ID: 12047
 // Name: completeAppLauncherOnboarding
-// Dependencies: [4301, 1372, 2]
+// Dependencies: [4380, 1943, 2]
 // Exports: default
 
-// Module 11978 (completeAppLauncherOnboarding)
+// Module 12046 (completeAppLauncherOnboarding)
 import set from "set" /* 2 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4301 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4380 */;
 
 let result = set.fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
 

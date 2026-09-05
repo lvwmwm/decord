@@ -1,14 +1,14 @@
-// Module ID: 15305
-// Function ID: 15306
+// Module ID: 15381
+// Function ID: 15382
 // Name: EmojiNerdFaceIcon
-// Dependencies: [19, 21, 709, 4196, 15306, 2]
+// Dependencies: [19, 21, 576, 4261, 15382, 2]
 // Exports: EmojiNerdFaceIcon
 
-// Module 15305 (EmojiNerdFaceIcon)
+// Module 15381 (EmojiNerdFaceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15306 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15382 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

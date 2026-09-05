@@ -1,12 +1,12 @@
-// Module ID: 17283
-// Function ID: 17284
+// Module ID: 17363
+// Function ID: 17364
 // Name: getInAppReportsFeedbackOptions
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: default
 
-// Module 17283 (getInAppReportsFeedbackOptions)
+// Module 17363 (getInAppReportsFeedbackOptions)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 let obj = { COULD_NOT_FIND: "I couldn't find what I was looking for", CONFUSING_LANGUAGE: "I found the language confusing", OTHER: "Other" };
 const result = set.fileFinishedImporting("modules/in_app_reports/getInAppReportsFeedbackOptions.tsx");

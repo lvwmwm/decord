@@ -1,22 +1,22 @@
-// Module ID: 11480
-// Function ID: 11481
+// Module ID: 11548
+// Function ID: 11549
 // Name: maybeStartLurking
-// Dependencies: [5, 1390, 1430, 1386, 1991, 1984, 1908, 4120, 673, 1393, 7041, 7037, 7279, 8305, 8027, 4731, 11481, 2008, 7184, 4448, 11494, 11502, 1394, 4682, 4735, 5372, 2]
+// Dependencies: [5, 1961, 1975, 1957, 2021, 2015, 1979, 4199, 1074, 1964, 7101, 7097, 7341, 8375, 8096, 4763, 11549, 1896, 7244, 4527, 11562, 11570, 1369, 4714, 4767, 5411, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11480 (maybeStartLurking)
+// Module 11548 (maybeStartLurking)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { isGuildVocalChannelType } from "createChannelRecord" /* 1390 */;
-import { isGuildLurker } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_10 from "createGuildRecordFromRust" /* 1908 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
-import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 7041 */;
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7037 */;
+import { isGuildVocalChannelType } from "createChannelRecord" /* 1961 */;
+import { isGuildLurker } from "GuildNSFWContentLevel" /* 1975 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_10 from "createGuildRecordFromRust" /* 1979 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 7101 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7097 */;
 
 const require = arg1;
 function maybeStartLurking() {

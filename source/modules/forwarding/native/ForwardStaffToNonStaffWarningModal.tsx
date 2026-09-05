@@ -1,13 +1,13 @@
-// Module ID: 11618
-// Function ID: 11619
+// Module ID: 11686
+// Function ID: 11687
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 4871, 1233, 2]
+// Dependencies: [21, 4910, 1114, 2]
 // Exports: default
 
-// Module 11618 (ForwardStaffToNonStaffWarningModal)
+// Module 11686 (ForwardStaffToNonStaffWarningModal)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 ({ jsx: obj1, Fragment: c3, jsxs: c4 } = jsxProd);

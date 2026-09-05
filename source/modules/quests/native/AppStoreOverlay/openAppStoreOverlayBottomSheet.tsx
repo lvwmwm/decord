@@ -1,12 +1,12 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11500
+// Function ID: 11501
 // Name: openAppStoreOverlayBottomSheet
-// Dependencies: [673, 4448, 11433, 2008, 7651, 1228, 11429, 2]
+// Dependencies: [1074, 4527, 11501, 1896, 7718, 1109, 11497, 2]
 // Exports: openAppStoreOverlayBottomSheet
 
-// Module 11432 (openAppStoreOverlayBottomSheet)
+// Module 11500 (openAppStoreOverlayBottomSheet)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 ({ AnalyticEvents: c3, ComponentActions: c4 } = ME);
 let result = set.fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayBottomSheet.tsx");
@@ -14,7 +14,7 @@ let result = set.fileFinishedImporting("modules/quests/native/AppStoreOverlay/op
 export const openAppStoreOverlayBottomSheet = function openAppStoreOverlayBottomSheet(appId) {
   const _require = arg1;
   appId = appId.appId;
-  let obj = appId(4448);
+  let obj = appId(4527);
   obj = {
     metadata: appId,
     onOpen() {
@@ -35,5 +35,5 @@ export const openAppStoreOverlayBottomSheet = function openAppStoreOverlayBottom
       });
     }
   };
-  obj.openLazy(_require(2008)(11433, dependencyMap.paths), "QuestAppStoreOverlayBottomSheet", obj);
+  obj.openLazy(_require(1896)(11501, dependencyMap.paths), "QuestAppStoreOverlayBottomSheet", obj);
 };

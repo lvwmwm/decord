@@ -1,31 +1,31 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16639
+// Function ID: 16640
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 1386, 7810, 673, 21, 4481, 586, 7267, 4739, 12597, 12599, 16563, 16605, 16607, 16614, 16615, 16623, 16625, 16626, 16632, 16639, 38, 8195, 2]
+// Dependencies: [32, 19, 17, 1957, 7878, 1074, 21, 4560, 504, 7329, 4771, 12665, 12667, 16640, 16682, 16684, 16691, 16692, 16700, 16702, 16703, 16709, 16716, 38, 8265, 2]
 // Exports: default
 
-// Module 16562 (SearchTabsPage)
+// Module 16639 (SearchTabsPage)
 import _modDef38 from "module_38" /* 38 */;
-import mapDefault from "map" /* 8195 */;
-import GuildNSFWDefault from "GuildNSFW" /* 12597 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 12599 */;
-import ClearAllHistoryDefault from "ClearAllHistory" /* 16563 */;
-import _modDef16605 from "module_16605" /* 16605 */;
-import SearchableMembersScreenDefault from "SearchableMembersScreen" /* 16607 */;
-import _modDef16614 from "module_16614" /* 16614 */;
-import _modDef16615 from "module_16615" /* 16615 */;
-import _modDef16623 from "module_16623" /* 16623 */;
-import _modDef16625 from "module_16625" /* 16625 */;
-import _modDef16632 from "module_16632" /* 16632 */;
-import InitialPinsScreenDefault from "InitialPinsScreen" /* 16639 */;
+import mapDefault from "map" /* 8265 */;
+import GuildNSFWDefault from "GuildNSFW" /* 12665 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 12667 */;
+import ClearAllHistoryDefault from "ClearAllHistory" /* 16640 */;
+import _modDef16682 from "module_16682" /* 16682 */;
+import SearchableMembersScreenDefault from "SearchableMembersScreen" /* 16684 */;
+import _modDef16691 from "module_16691" /* 16691 */;
+import _modDef16692 from "module_16692" /* 16692 */;
+import _modDef16700 from "module_16700" /* 16700 */;
+import _modDef16702 from "module_16702" /* 16702 */;
+import _modDef16709 from "module_16709" /* 16709 */;
+import InitialPinsScreenDefault from "InitialPinsScreen" /* 16716 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 7810 */;
-import { SearchTypes } from "ME" /* 673 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 7878 */;
+import { SearchTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function SearchTabsPage(selectMediaTab) {
@@ -38,7 +38,7 @@ function SearchTabsPage(selectMediaTab) {
       callback(true);
     }, 10);
   }, []);
-  let obj = searchContext(586);
+  let obj = searchContext(504);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (searchContext.type === closure_1_8.GUILD_CHANNEL) {
@@ -46,9 +46,9 @@ function SearchTabsPage(selectMediaTab) {
     }
     return closure_1_6.getChannel(channelId);
   });
-  obj1 = searchContext(7267);
+  obj1 = searchContext(7329);
   const isChannelSpoilerGated = obj1.useIsChannelSpoilerGated(stateFromStores);
-  searchContext(4739);
+  searchContext(4771);
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
       if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
@@ -72,7 +72,7 @@ function SearchTabsPage(selectMediaTab) {
     } else if (tmp11.PEOPLE === tab) {
       const obj2 = { searchContext: null };
       obj2[0] = searchContext;
-      return jsx(_modDef16605, { searchContext: null });
+      return jsx(_modDef16682, { searchContext: null });
     } else if (tmp11.MEMBERS === tab) {
       const obj3 = { searchContext: null };
       obj3[0] = searchContext;
@@ -80,38 +80,38 @@ function SearchTabsPage(selectMediaTab) {
     } else if (tmp11.GUILD_CHANNELS === tab) {
       const obj4 = { searchContext: null };
       obj4[0] = searchContext;
-      return jsx(_modDef16614, { searchContext: null });
+      return jsx(_modDef16691, { searchContext: null });
     } else if (tmp11.MEDIA === tab) {
       const obj5 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj5[0] = tab;
       obj5[1] = searchContext;
       obj5[2] = isFocused;
       obj5[3] = width;
-      return jsx(_modDef16615, { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(_modDef16692, { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.FILES === tab) {
       const obj6 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj6[0] = tab;
       obj6[1] = searchContext;
       obj6[2] = isFocused;
       obj6[3] = width;
-      return jsx(_modDef16623, { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(_modDef16700, { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.LINKS === tab) {
       const obj7 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj7[0] = tab;
       obj7[1] = searchContext;
       obj7[2] = isFocused;
       obj7[3] = width;
-      return jsx(_modDef16625, { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(_modDef16702, { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.THREADS === tab) {
       const obj8 = { searchContext: null };
       obj8[0] = searchContext;
-      return jsx(tmp4(16626).SearchTabsThreadScreen, { searchContext: null });
+      return jsx(tmp4(16703).SearchTabsThreadScreen, { searchContext: null });
     } else if (tmp11.MESSAGES === tab) {
       const obj9 = { tab: null, searchContext: null, isFocused: null };
       obj9[0] = tab;
       obj9[1] = searchContext;
       obj9[2] = isFocused;
-      return jsx(_modDef16632, { tab: null, searchContext: null, isFocused: null });
+      return jsx(_modDef16709, { tab: null, searchContext: null, isFocused: null });
     } else if (tmp11.PINS === tab) {
       const obj10 = { tab: null, searchContext: null, isFocused: null };
       obj10[0] = tab;

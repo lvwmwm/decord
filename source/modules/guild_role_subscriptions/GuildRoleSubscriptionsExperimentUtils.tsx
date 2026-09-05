@@ -1,12 +1,12 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 13893
+// Function ID: 13894
 // Name: GuildFeatures
-// Dependencies: [1908, 673, 644, 2]
+// Dependencies: [1979, 1074, 563, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 13903 (GuildFeatures)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 13893 (GuildFeatures)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 let items = [, , ];
@@ -39,7 +39,7 @@ export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTe
 export const useGuildEligibleForTierTemplates = function useGuildEligibleForTierTemplates(guildId) {
   const _require = guildId;
   items = [closure_2];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     const guild = closure_1_2.getGuild(closure_0);
     let flag;
     if (guild != null) {

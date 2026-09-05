@@ -1,11 +1,11 @@
-// Module ID: 13158
-// Function ID: 13159
+// Module ID: 13226
+// Function ID: 13227
 // Name: getJoinOrStartButtonState
-// Dependencies: [19, 1233, 9475, 9459, 2]
+// Dependencies: [19, 1114, 9546, 9531, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 13158 (getJoinOrStartButtonState)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 13226 (getJoinOrStartButtonState)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_2 from "noop" /* 19 */;
 
 require = arg1;
@@ -23,15 +23,15 @@ function getJoinOrStartButtonState(channel) {
     tmp6 = tmp2;
   }
   obj[2] = stringResult;
-  const result = tmp6(9475).isActivitiesInTextEnabled(channel.channel);
+  const result = tmp6(9546).isActivitiesInTextEnabled(channel.channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
       if (embeddedActivity.launchId === currentEmbeddedActivity.launchId) {
         obj = {};
         const merged = Object.assign(obj);
         obj.disabled = true;
-        const intl10 = tmp6(1233).intl;
-        obj.text = intl10.string(tmp6(1233).t.DPfdsq);
+        const intl10 = tmp6(1114).intl;
+        obj.text = intl10.string(tmp6(1114).t.DPfdsq);
         obj.tooltip = undefined;
         return obj;
       }
@@ -43,35 +43,35 @@ function getJoinOrStartButtonState(channel) {
     obj.disabled = !result;
     let stringResult1;
     if (!result) {
-      const intl9 = tmp6(1233).intl;
-      stringResult1 = intl9.string(tmp6(1233).t.f41E1g);
+      const intl9 = tmp6(1114).intl;
+      stringResult1 = intl9.string(tmp6(1114).t.f41E1g);
     }
     obj.tooltip = stringResult1;
     return obj;
   } else {
     if (null != joinability) {
-      if (joinability !== tmp6(9459).EmbeddedActivityJoinability.CAN_JOIN) {
-        if (tmp6(9459).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
-          const intl8 = tmp6(1233).intl;
-          let stringResult2 = intl8.string(tmp6(1233).t.hHGrWz);
-        } else if (tmp6(9459).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
-          const intl7 = tmp6(1233).intl;
-          stringResult2 = intl7.string(tmp6(1233).t["4WuFRE"]);
-        } else if (tmp6(9459).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
-          const intl6 = tmp6(1233).intl;
-          stringResult2 = intl6.string(tmp6(1233).t.uGDCcw);
-        } else if (tmp6(9459).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
-          const intl5 = tmp6(1233).intl;
-          stringResult2 = intl5.string(tmp6(1233).t.UXoQTp);
-        } else if (tmp6(9459).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
-          const intl4 = tmp6(1233).intl;
-          stringResult2 = intl4.string(tmp6(1233).t.rZfiNq);
-        } else if (tmp6(9459).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
-          const intl3 = tmp6(1233).intl;
-          stringResult2 = intl3.string(tmp6(1233).t.w5SAps);
+      if (joinability !== tmp6(9531).EmbeddedActivityJoinability.CAN_JOIN) {
+        if (tmp6(9531).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+          const intl8 = tmp6(1114).intl;
+          let stringResult2 = intl8.string(tmp6(1114).t.hHGrWz);
+        } else if (tmp6(9531).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+          const intl7 = tmp6(1114).intl;
+          stringResult2 = intl7.string(tmp6(1114).t["4WuFRE"]);
+        } else if (tmp6(9531).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+          const intl6 = tmp6(1114).intl;
+          stringResult2 = intl6.string(tmp6(1114).t.uGDCcw);
+        } else if (tmp6(9531).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+          const intl5 = tmp6(1114).intl;
+          stringResult2 = intl5.string(tmp6(1114).t.UXoQTp);
+        } else if (tmp6(9531).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+          const intl4 = tmp6(1114).intl;
+          stringResult2 = intl4.string(tmp6(1114).t.rZfiNq);
+        } else if (tmp6(9531).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+          const intl3 = tmp6(1114).intl;
+          stringResult2 = intl3.string(tmp6(1114).t.w5SAps);
         } else {
-          const intl2 = tmp6(1233).intl;
-          stringResult2 = intl2.string(tmp6(1233).t.Etp6uI);
+          const intl2 = tmp6(1114).intl;
+          stringResult2 = intl2.string(tmp6(1114).t.Etp6uI);
         }
         obj1 = {};
         const merged2 = Object.assign(obj);
@@ -82,7 +82,7 @@ function getJoinOrStartButtonState(channel) {
     }
     return obj;
   }
-  const tmp6Result = tmp6(9475);
+  const tmp6Result = tmp6(9546);
 }
 let result = require("set").fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");
 

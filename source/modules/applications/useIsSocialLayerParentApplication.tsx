@@ -1,13 +1,13 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9243
+// Function ID: 9244
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 673, 8786, 2]
+// Dependencies: [19, 1074, 8856, 2]
 // Exports: default, getIsSocialLayerParentApplication
 
-// Module 9172 (useIsSocialLayerParentApplication)
-import getApplicationFlags from "getApplicationFlags" /* 8786 */;
+// Module 9243 (useIsSocialLayerParentApplication)
+import getApplicationFlags from "getApplicationFlags" /* 8856 */;
 import closure_2 from "noop" /* 19 */;
-import { ApplicationFlags } from "ME" /* 673 */;
+import { ApplicationFlags } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/useIsSocialLayerParentApplication.tsx");

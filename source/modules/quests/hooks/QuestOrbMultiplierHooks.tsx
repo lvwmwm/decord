@@ -1,14 +1,14 @@
-// Module ID: 11224
-// Function ID: 11225
+// Module ID: 11292
+// Function ID: 11293
 // Name: getQuestOrbMultiplierEligibilityForUser
-// Dependencies: [1921, 586, 11225, 4139, 2]
+// Dependencies: [1371, 504, 11293, 4218, 2]
 // Exports: useQuestOrbMultiplierEligibility
 
-// Module 11224 (getQuestOrbMultiplierEligibilityForUser)
-import initialize from "initialize" /* 586 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import items2 from "items" /* 11225 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 11292 (getQuestOrbMultiplierEligibilityForUser)
+import initialize from "initialize" /* 504 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4218 */;
+import items2 from "items" /* 11293 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub) {
@@ -19,10 +19,10 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
     if (obj2.canUseMoreQuestOrbs(isFractionalPremiumWithNoStandardSub)) {
       const questOrbMultiplierSource = items2.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
       if (questOrbMultiplierSource === items2.QuestOrbMultiplierSource.CREPE) {
-        QuestOrbMultiplierEligibilityType2 = tmp3(11225).QuestOrbMultiplierEligibilityType;
+        QuestOrbMultiplierEligibilityType2 = tmp3(11293).QuestOrbMultiplierEligibilityType;
         let NITRO = QuestOrbMultiplierEligibilityType2.CREPE;
       } else {
-        NITRO = tmp3(11225).QuestOrbMultiplierEligibilityType.NITRO;
+        NITRO = tmp3(11293).QuestOrbMultiplierEligibilityType.NITRO;
       }
       const obj = items2;
     } else {

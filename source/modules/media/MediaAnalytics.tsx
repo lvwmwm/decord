@@ -1,13 +1,13 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11874
+// Function ID: 11875
 // Name: logMediaAttachmentPlaybackStarted
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 11806 (logMediaAttachmentPlaybackStarted)
+// Module 11874 (logMediaAttachmentPlaybackStarted)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/media/MediaAnalytics.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8116
+// Function ID: 8117
 // Name: _executeMessageComponentInteraction
-// Dependencies: [5, 1215, 7872, 673, 11, 7697, 8048, 1954, 527, 7390, 8049, 706, 4751, 2, 4749]
+// Dependencies: [5, 502, 7941, 1074, 11, 7765, 8117, 1894, 1272, 7456, 8118, 573, 4790, 2, 4787]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8047 (_executeMessageComponentInteraction)
+// Module 8116 (_executeMessageComponentInteraction)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import _fetchMessageInteractionData from "_fetchMessageInteractionData" /* 8048 */;
-import getFirstSkemaFieldError from "getFirstSkemaFieldError" /* 8049 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import _fetchMessageInteractionData from "_fetchMessageInteractionData" /* 8117 */;
+import getFirstSkemaFieldError from "getFirstSkemaFieldError" /* 8118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "deleteNonce" /* 7872 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "deleteNonce" /* 7941 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function _executeMessageComponentInteraction() {
@@ -83,7 +83,7 @@ function _executeMessageComponentInteraction() {
                 closure_9 = callback2(11).fromTimestamp(Date.now());
                 if (c5.canQueueInteraction(callback2, closure_9)) {
                   c3 = 1;
-                  let obj8 = callback2(7697);
+                  let obj8 = callback2(7765);
                   sessionId = 3;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -111,7 +111,7 @@ function _executeMessageComponentInteraction() {
                 const obj4 = { messageId: null, data: null, onFailure: null };
                 obj4[0] = callback2;
                 let obj5 = { interactionType: null, applicationId: null, customId: null, componentId: null };
-                obj5[0] = callback(1954).InteractionTypes.MESSAGE_COMPONENT;
+                obj5[0] = callback(1894).InteractionTypes.MESSAGE_COMPONENT;
                 obj5[1] = c5;
                 obj5[2] = c3;
                 obj5[3] = sessionId;
@@ -126,13 +126,13 @@ function _executeMessageComponentInteraction() {
                     obj = _undefined(_undefined2[9]);
                   }
                 };
-                callback(8048).addQueued(closure_9, obj4);
+                callback(8117).addQueued(closure_9, obj4);
                 if (null != c8) {
-                  obj1 = callback(8048);
+                  obj1 = callback(8117);
                   const result = obj1.queueInteractionComponentState(callback2, closure_9, c8, sessionId);
                 }
                 obj6 = { type: null, nonce: null, guild_id: null, channel_id: null, message_flags: null, message_id: null, application_id: null, session_id: null, data: null };
-                obj6[0] = callback(1954).InteractionTypes.MESSAGE_COMPONENT;
+                obj6[0] = callback(1894).InteractionTypes.MESSAGE_COMPONENT;
                 obj6[1] = closure_9;
                 obj6[2] = c7;
                 obj6[3] = constants;
@@ -145,11 +145,11 @@ function _executeMessageComponentInteraction() {
                 obj7[1] = c3;
                 const merged = Object.assign(callback3(c8));
                 obj6[8] = obj7;
-                const HTTP = callback(527).HTTP;
+                const HTTP = callback(1272).HTTP;
                 obj8 = { url: null, body: null, timeout: 3000, rejectWithError: null };
                 obj8[0] = constants.INTERACTIONS;
                 obj8[1] = obj6;
-                obj5 = callback(527);
+                obj5 = callback(1272);
                 obj8[3] = obj5.rejectWithMigratedError();
                 sessionId = 4;
                 c5 = 1;
@@ -199,17 +199,17 @@ function mapMessageComponentLocalStateForAPI(type) {
   } else {
     type = type.type;
     if (PermissionOverwriteType.ComponentType.TEXT_INPUT !== type) {
-      if (tmp(1954).ComponentType.FILE_UPLOAD !== type) {
-        if (tmp(1954).ComponentType.RADIO_GROUP !== type) {
-          if (tmp(1954).ComponentType.CHECKBOX_GROUP !== type) {
-            if (tmp(1954).ComponentType.CHECKBOX !== type) {
-              if (tmp(1954).ComponentType.STRING_SELECT === type) {
+      if (tmp(1894).ComponentType.FILE_UPLOAD !== type) {
+        if (tmp(1894).ComponentType.RADIO_GROUP !== type) {
+          if (tmp(1894).ComponentType.CHECKBOX_GROUP !== type) {
+            if (tmp(1894).ComponentType.CHECKBOX !== type) {
+              if (tmp(1894).ComponentType.STRING_SELECT === type) {
                 return type;
               } else {
-                if (tmp(1954).ComponentType.USER_SELECT !== type) {
-                  if (tmp(1954).ComponentType.ROLE_SELECT !== type) {
-                    if (tmp(1954).ComponentType.MENTIONABLE_SELECT !== type) {
-                      if (tmp(1954).ComponentType.CHANNEL_SELECT !== type) {
+                if (tmp(1894).ComponentType.USER_SELECT !== type) {
+                  if (tmp(1894).ComponentType.ROLE_SELECT !== type) {
+                    if (tmp(1894).ComponentType.MENTIONABLE_SELECT !== type) {
+                      if (tmp(1894).ComponentType.CHANNEL_SELECT !== type) {
                         return null;
                       }
                     }
@@ -444,7 +444,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
             let tmp11 = tmp8;
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1954).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1894).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }

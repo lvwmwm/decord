@@ -1,15 +1,15 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16977
+// Function ID: 16978
 // Name: getLayoutStyle
-// Dependencies: [709, 1296, 5539, 7112, 2]
+// Dependencies: [576, 1178, 5584, 7172, 2]
 // Exports: default
 
-// Module 16899 (getLayoutStyle)
+// Module 16977 (getLayoutStyle)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import GuildIconSizes from "GuildIconSizes" /* 5539 */;
-import GameIcon from "GameIcon" /* 7112 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import GuildIconSizes from "GuildIconSizes" /* 5584 */;
+import GameIcon from "GameIcon" /* 7172 */;
 
 let obj = { layout: { margin: { marginLeft: 8, marginRight: 8, marginVertical: 0 } }, container: null, voiceUsers: null, voiceOrStageSummaryRow: null, channelName: null, messagePreview: null, timestamp: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, category: null, typing: null, activeThreadCount: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, separator: null, searchButton: null };
 obj = { borderRadius: ThemesDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 } };

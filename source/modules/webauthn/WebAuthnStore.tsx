@@ -1,11 +1,11 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 14656
+// Function ID: 14657
 // Name: hasFetchedCredentials
-// Dependencies: [1954, 586, 706, 2]
+// Dependencies: [1894, 504, 573, 2]
 
-// Module 14581 (hasFetchedCredentials)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 14656 (hasFetchedCredentials)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const require = arg1;
 let c2 = false;
@@ -51,7 +51,7 @@ const webAuthnStore = new WebAuthnStore(dispatcherDefault, {
   },
   AUTHENTICATOR_CREATE: function handleAuthenticatorCreate(credential) {
     credential = credential.credential;
-    if (credential.type === credential(1954).AuthenticatorType.WEBAUTHN) {
+    if (credential.type === credential(1894).AuthenticatorType.WEBAUTHN) {
       const tmp2 = undefined === items.find((id) => id.id === credential.id);
       if (tmp2) {
         items = [];
@@ -66,7 +66,7 @@ const webAuthnStore = new WebAuthnStore(dispatcherDefault, {
   },
   AUTHENTICATOR_UPDATE: function handleAuthenticatorUpdate(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1954).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1894).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {
@@ -81,7 +81,7 @@ const webAuthnStore = new WebAuthnStore(dispatcherDefault, {
   },
   AUTHENTICATOR_DELETE: function handleAuthenticatorDelete(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1954).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1894).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {

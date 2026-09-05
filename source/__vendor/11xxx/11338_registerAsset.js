@@ -1,10 +1,10 @@
 // Module ID: 11338
 // Function ID: 11339
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11338 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d36bc1b1c0c4b7686eb847b7455190cc", name: "EducationIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/dark", width: 280, height: 120, scales: [2, 3], hash: "9c2cfd53ed0ab3abd70ee33b26a982e5", name: "channel_following_success_2", type: "png" });

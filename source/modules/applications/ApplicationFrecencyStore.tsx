@@ -1,16 +1,16 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9291
+// Function ID: 9292
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1385, 1339, 4510, 682, 1954, 4569, 12, 586, 706, 2]
+// Dependencies: [1956, 1221, 1350, 1084, 1894, 4597, 12, 504, 573, 2]
 
-// Module 9220 (handleUserSettingsProtoStoreChange)
+// Module 9291 (handleUserSettingsProtoStoreChange)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4569 */;
-import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4597 */;
+import closure_2 from "participantFromServer" /* 1956 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 1084 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationFrecency = obj.frecencyWithoutFetchingLatest.applicationFrecency;

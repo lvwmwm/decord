@@ -1,10 +1,10 @@
-// Module ID: 1907
-// Function ID: 1908
+// Module ID: 1978
+// Function ID: 1979
 // Name: cloneGuildThemeSettings
 // Dependencies: [2]
 // Exports: cloneGuildTheme, cloneGuildThemeSettings, fromServerGuildTheme, fromServerGuildThemeSettings, toServerGuildThemeSettings
 
-// Module 1907 (cloneGuildThemeSettings)
+// Module 1978 (cloneGuildThemeSettings)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_themes/guildThemeSerialization.tsx");

@@ -1,10 +1,10 @@
 // Module ID: 15362
 // Function ID: 15363
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 15362 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "08d0c70a708cd25acecb7a8b0cb0eb23", name: "hu", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3feea67804381f17d046d28e82abf627", name: "EmojiAngryFaceWithHornsIcon", type: "png" });

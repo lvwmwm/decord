@@ -1,13 +1,13 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15924
+// Function ID: 15925
 // Name: updateNotifSettingValue
-// Dependencies: [13604, 13605, 706, 2]
+// Dependencies: [13680, 13681, 573, 2]
 // Exports: updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 15848 (updateNotifSettingValue)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import create from "create" /* 13605 */;
-import closure_3 from "initialize" /* 13604 */;
+// Module 15924 (updateNotifSettingValue)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import create from "create" /* 13681 */;
+import closure_3 from "initialize" /* 13680 */;
 
 require = arg1;
 function updateNotifSettingValue(GAMING_DEFAULT, createNew) {

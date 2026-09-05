@@ -1,14 +1,14 @@
-// Module ID: 5386
-// Function ID: 5387
+// Module ID: 5426
+// Function ID: 5427
 // Name: handleConnectionReset
-// Dependencies: [1386, 1991, 5387, 706, 586, 2]
+// Dependencies: [1957, 2021, 5427, 573, 504, 2]
 
-// Module 5386 (handleConnectionReset)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import acknowledgeDefault from "acknowledge" /* 5387 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import importDefaultResult from "trackCommunicationDisabled" /* 1991 */;
+// Module 5426 (handleConnectionReset)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import acknowledgeDefault from "acknowledge" /* 5427 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import importDefaultResult from "trackCommunicationDisabled" /* 2021 */;
 
 function handleConnectionReset() {
   navigation.reset();

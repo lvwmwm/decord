@@ -1,14 +1,14 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11259
+// Function ID: 11260
 // Name: useEmojiColorPalette
-// Dependencies: [4473, 1301, 586, 1362, 7888, 2]
+// Dependencies: [4552, 1183, 504, 4411, 7957, 2]
 // Exports: useEmojiColorPalette
 
-// Module 11191 (useEmojiColorPalette)
-import initialize from "initialize" /* 586 */;
-import buildPlatformedThemedEmojiColorPalette from "buildPlatformedThemedEmojiColorPalette" /* 7888 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_3 from "handleThemeChange" /* 1301 */;
+// Module 11259 (useEmojiColorPalette)
+import initialize from "initialize" /* 504 */;
+import buildPlatformedThemedEmojiColorPalette from "buildPlatformedThemedEmojiColorPalette" /* 7957 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_3 from "handleThemeChange" /* 1183 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/emojis/hooks/useEmojiColorPalette.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 13878
-// Function ID: 13879
+// Module ID: 13868
+// Function ID: 13869
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 673, 7471, 21, 1234, 13879, 709, 6978, 1627, 1485, 13858, 4731, 13873, 2008, 7320, 11845, 4190, 4866, 1233, 8980, 7029, 1296, 2]
+// Dependencies: [32, 19, 17, 1074, 7538, 21, 1115, 13869, 576, 7038, 1611, 1365, 13848, 4763, 13863, 1896, 7382, 11913, 4255, 4905, 1114, 9050, 7089, 1178, 2]
 // Exports: default
 
-// Module 13878 (DCDQRScanner)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import registerAssetDefault from "registerAsset" /* 7029 */;
-import renderDefault from "render" /* 8980 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13879 */;
+// Module 13868 (DCDQRScanner)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import registerAssetDefault from "registerAsset" /* 7089 */;
+import renderDefault from "render" /* 9050 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13869 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UserSettingsSections } from "ME" /* 673 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7471 */;
+import { UserSettingsSections } from "ME" /* 1074 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7538 */;
 import jsxProd from "jsxProd" /* 21 */;
-import set from "set" /* 1234 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 function DCDQRScanner(arg0) {
@@ -131,12 +131,12 @@ export default function QRScannerModal(showHelp) {
   obj1 = { accessibilityRole: "button", accessibilityLabel: null, source: null, style: null, onPress: null };
   const tmp7 = useSafeAreaInsetsDefault();
   let tmp8 = closure_9;
-  let intl = onScanSuccess(1233).intl;
-  obj1[1] = intl.string(onScanSuccess(1233).t.cpT0Cq);
+  let intl = onScanSuccess(1114).intl;
+  obj1[1] = intl.string(onScanSuccess(1114).t.cpT0Cq);
   obj1[2] = registerAssetDefault;
   const items2 = [tmp12.closeButton, { marginTop: top }];
   obj1[3] = items2;
-  obj1[4] = _modDef4731.pop;
+  obj1[4] = _modDef4763.pop;
   items1[1] = tmp14(renderDefault, obj1);
   let tmp14Result = null;
   if (tmp) {
@@ -150,9 +150,9 @@ export default function QRScannerModal(showHelp) {
       obj2[0] = items3;
       const obj4 = { style: null, children: null };
       obj4[0] = tmp12.text;
-      let intl2 = tmp17(1233).intl;
-      obj4[1] = intl2.string(tmp17(1233).t.dklV0G);
-      obj2[1] = tmp14(tmp17(1296).LegacyText, obj4);
+      let intl2 = tmp17(1114).intl;
+      obj4[1] = intl2.string(tmp17(1114).t.dklV0G);
+      obj2[1] = tmp14(tmp17(1178).LegacyText, obj4);
       tmp14Result = tmp14(tmp9, obj2);
     }
   }

@@ -1,9 +1,9 @@
-// Module ID: 5839
-// Function ID: 5840
+// Module ID: 5890
+// Function ID: 5891
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5839 (metadata)
+// Module 5890 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DevCommerceWideAbstractUI-2x.png.js");

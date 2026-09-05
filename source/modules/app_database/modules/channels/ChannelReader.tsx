@@ -1,11 +1,11 @@
-// Module ID: 1976
-// Function ID: 1977
+// Module ID: 2007
+// Function ID: 2008
 // Name: getSync
-// Dependencies: [5, 3, 1955, 2]
+// Dependencies: [5, 3, 1986, 2]
 
-// Module 1976 (getSync)
+// Module 2007 (getSync)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1986 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 let closure_3 = new timestampDefault("ChannelReader");

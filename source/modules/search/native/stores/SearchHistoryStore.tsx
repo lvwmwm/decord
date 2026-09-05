@@ -1,14 +1,14 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16641
+// Function ID: 16642
 // Name: deserialize
-// Dependencies: [7810, 1400, 12, 586, 706, 2]
+// Dependencies: [7878, 1969, 12, 504, 573, 2]
 
-// Module 16564 (deserialize)
+// Module 16641 (deserialize)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
 
 const SearchHistoryItemTypes = MessageEmbedTypes.SearchHistoryItemTypes;
 class SearchHistory {

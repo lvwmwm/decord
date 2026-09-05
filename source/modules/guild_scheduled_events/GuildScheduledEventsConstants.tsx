@@ -1,11 +1,11 @@
-// Module ID: 1392
-// Function ID: 1393
+// Module ID: 1963
+// Function ID: 1964
 // Name: GUILD_EVENT_MAX_NAME_LENGTH
-// Dependencies: [673, 684, 2]
+// Dependencies: [1074, 1090, 2]
 
-// Module 1392 (GUILD_EVENT_MAX_NAME_LENGTH)
-import ME from "ME" /* 673 */;
-import setDefault from "set" /* 684 */;
+// Module 1963 (GUILD_EVENT_MAX_NAME_LENGTH)
+import ME from "ME" /* 1074 */;
+import setDefault from "set" /* 1090 */;
 import set from "set" /* 2 */;
 
 const ChannelTypes = ME.ChannelTypes;

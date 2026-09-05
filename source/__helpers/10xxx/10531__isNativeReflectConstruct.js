@@ -1,19 +1,17 @@
 // Module ID: 10531
 // Function ID: 10532
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10530, 10361, 10362, 10368]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10446]
 
 // Module 10531 (_isNativeReflectConstruct)
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10361 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10530 */;
-import closure_2 from "_classCallCheck" /* 41 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10446 */;
+import NLTimeExpressionParser from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import closure_3 from "_possibleConstructorReturn" /* 93 */;
-import closure_4 from "_getPrototypeOf" /* 95 */;
+import closure_1 from "_possibleConstructorReturn" /* 93 */;
+import closure_2 from "_getPrototypeOf" /* 95 */;
+import closure_3 from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,14 +31,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:on\\s{0,3})?(" + WEEKDAY_DICTIONARY.ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:al|\\-|\\\u2013|fino|alle|allo)?\\s{0,3}(" + WEEKDAY_DICTIONARY.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s{0,3}(?:dal)?\\s{0,3})(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s{0,3})(" + WEEKDAY_DICTIONARY.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class ENMonthNameLittleEndianParser {
+class NLTimeExpressionParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, ENMonthNameLittleEndianParser);
-    tmp2 = closure_4;
-    obj = closure_4(ENMonthNameLittleEndianParser);
-    tmp3 = closure_3;
+    tmp = NLTimeExpressionParser(this, NLTimeExpressionParser);
+    tmp2 = closure_2;
+    obj = closure_2(NLTimeExpressionParser);
+    tmp3 = closure_1;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -54,46 +51,43 @@ class ENMonthNameLittleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const items = [
+_inherits(NLTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+let items = [
   {
-    key: "innerPattern",
-    value: function innerPattern() {
-      return regExp;
+    key: "primaryPrefix",
+    value: function primaryPrefix() {
+      return "(?:(?:om)\\s*)?";
     }
   },
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = ENMonthNameLittleEndianParser(10530).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const result = ENMonthNameLittleEndianParser(10530).parseOrdinalNumberPattern(index[1]);
-      if (result > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", result);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", tmp2(10530).parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", tmp2(10362).findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|om|\\?)\\s*";
+    }
+  },
+  {
+    key: "primarySuffix",
+    value: function primarySuffix() {
+      return "(?:\\s*(?:uur))?(?!/)(?=\\W|$)";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      let fnResult = null;
+      if (!str.match(/^\s*\d{4}\s*$/)) {
+        let self = this;
+        self = this;
+        let fn = callback2(callback(self.prototype), "extractPrimaryTimeComponents", this);
+        if (typeof fn === "function") {
+          fn = (items) => fn.apply(self, items);
         }
-        if (index[2]) {
-          const start3 = parsingResult.start;
-          const result1 = tmp2(10530).parseOrdinalNumberPattern(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", result1);
-        }
-        return parsingResult;
+        const items = [arg0, arg1];
+        fnResult = fn(items);
       }
+      return fnResult;
     }
   }
 ];
 
-export default _createClass(ENMonthNameLittleEndianParser, items);
+export default _createClass(NLTimeExpressionParser, items);

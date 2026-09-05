@@ -1,11 +1,11 @@
-// Module ID: 13418
-// Function ID: 13419
+// Module ID: 13491
+// Function ID: 13492
 // Name: createFromServer
-// Dependencies: [1935, 1934, 2]
+// Dependencies: [1386, 1385, 2]
 
-// Module 13418 (createFromServer)
-import toJSDefault from "toJS" /* 1935 */;
-import closure_0 from "createdAt" /* 1934 */;
+// Module 13491 (createFromServer)
+import toJSDefault from "toJS" /* 1386 */;
+import closure_0 from "createdAt" /* 1385 */;
 
 toJSDefault;
 const obj = { PRIMARY: 1, [1]: "PRIMARY", MEMBER: 2, [2]: "MEMBER" };

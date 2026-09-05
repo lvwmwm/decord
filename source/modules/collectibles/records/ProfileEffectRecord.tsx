@@ -1,12 +1,12 @@
-// Module ID: 7481
-// Function ID: 7482
+// Module ID: 7548
+// Function ID: 7549
 // Name: fromServer
-// Dependencies: [1948, 1949, 2]
+// Dependencies: [1888, 1889, 2]
 // Exports: isProfileEffectRecord
 
-// Module 7481 (fromServer)
-import fromServerDefault from "fromServer" /* 1948 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+// Module 7548 (fromServer)
+import fromServerDefault from "fromServer" /* 1888 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
 
 require = arg1;
 fromServerDefault;

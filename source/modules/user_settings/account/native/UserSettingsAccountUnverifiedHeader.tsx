@@ -1,22 +1,22 @@
-// Module ID: 6938
-// Function ID: 6939
+// Module ID: 6998
+// Function ID: 6999
 // Name: handleOpenEmailVerification
-// Dependencies: [19, 1921, 21, 4481, 709, 5576, 1233, 586, 5084, 4477, 2]
+// Dependencies: [19, 1371, 21, 4560, 576, 5621, 1114, 504, 5123, 4556, 2]
 // Exports: default
 
-// Module 6938 (handleOpenEmailVerification)
+// Module 6998 (handleOpenEmailVerification)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import _modDef5576 from "module_5576" /* 5576 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import _modDef5621 from "module_5621" /* 5621 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handleOpenEmailVerification() {
-  _modDef5576.open();
+  _modDef5621.open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {
@@ -64,13 +64,13 @@ export default function UserSettingsAccountUnverifiedHeader() {
     obj = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
     obj[0] = tmp.accountWarningText;
     obj[3] = tmp4.title;
-    const items1 = [callback(tmp2(4477).Text, obj), ];
+    const items1 = [callback(tmp2(4556).Text, obj), ];
     obj1 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
     obj1[0] = tmp.accountWarningButton;
     obj1[3] = tmp4.button;
-    items1[1] = callback(tmp2(4477).Text, obj1);
+    items1[1] = callback(tmp2(4556).Text, obj1);
     obj[3] = items1;
-    tmp5 = callback2(tmp2(5084).PressableOpacity, obj);
+    tmp5 = callback2(tmp2(5123).PressableOpacity, obj);
   }
   return tmp5;
 };

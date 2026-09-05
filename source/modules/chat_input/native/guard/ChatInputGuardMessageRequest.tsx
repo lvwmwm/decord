@@ -1,11 +1,11 @@
-// Module ID: 12371
-// Function ID: 12372
-// Dependencies: [5, 19, 1921, 21, 1498, 12372, 586, 12374, 4194, 1233, 5552, 4492, 12380, 2]
+// Module ID: 12439
+// Function ID: 12440
+// Dependencies: [5, 19, 1371, 21, 1483, 12440, 504, 12442, 4259, 1114, 5597, 4571, 12448, 2]
 
-// Module 12371
-import ChatInputGuardDefault from "ChatInputGuard" /* 12380 */;
+// Module 12439
+import ChatInputGuardDefault from "ChatInputGuard" /* 12448 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = lib(4492);
+              obj = lib(4571);
               obj.transitionToChannel(lib.id, { navigationReplace: true });
               c3 = 3;
               return { value: "HermesInternal", done: null };
@@ -154,13 +154,13 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
     }
     return applyArgumentsResult;
   }
-  let obj = channel(1498);
+  let obj = channel(1483);
   importDefault = obj.useNavigation();
-  const isMessageRequestRestrictedViewer = channel(12372).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(12372);
+  const isMessageRequestRestrictedViewer = channel(12440).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(12440);
   const items = [_onAcceptClick];
-  const stateFromStores = channel(586).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
-  const obj3 = channel(586);
+  const stateFromStores = channel(504).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
+  const obj3 = channel(504);
   obj = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -175,7 +175,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
 
     }
   };
-  const messageRequestActions = channel(12374).useMessageRequestActions(obj);
+  const messageRequestActions = channel(12442).useMessageRequestActions(obj);
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   let tmp6 = isAcceptLoading;
   if (!isAcceptLoading) {
@@ -191,15 +191,15 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
     tmp6 = isOptimisticRejected;
   }
   obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(12374);
+  const obj4 = channel(12442);
   const tmp7 = _onRejectClick;
-  let intl = tmp(1233).intl;
-  obj[1] = intl.string(channel(1233).t["e/eQVB"]);
-  const intl2 = tmp(1233).intl;
-  const t = tmp(1233).t;
+  let intl = tmp(1114).intl;
+  obj[1] = intl.string(channel(1114).t["e/eQVB"]);
+  const intl2 = tmp(1114).intl;
+  const t = tmp(1114).t;
   obj[2] = intl2.string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI);
-  const intl3 = tmp(1233).intl;
-  obj[3] = intl3.string(channel(1233).t.Kz8Pwr);
+  const intl3 = tmp(1114).intl;
+  obj[3] = intl3.string(channel(1114).t.Kz8Pwr);
   obj[4] = function onAcceptClick(arg0) {
     const self = this;
     const apply = _onAcceptClick.apply;
@@ -218,8 +218,8 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
     isAcceptLoading = isOptimisticAccepted;
   }
   obj[6] = isAcceptLoading;
-  const intl4 = tmp(1233).intl;
-  const t2 = tmp(1233).t;
+  const intl4 = tmp(1114).intl;
+  const t2 = tmp(1114).t;
   obj[7] = intl4.string(isMessageRequestRestrictedViewer ? t2.BVN4pL : t2.B2nygW);
   obj[8] = function onRejectClick(arg0) {
     const self = this;

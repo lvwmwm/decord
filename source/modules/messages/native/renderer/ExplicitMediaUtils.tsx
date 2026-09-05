@@ -1,15 +1,15 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8125
+// Function ID: 8126
 // Name: getAttachmentObscurityProps
-// Dependencies: [673, 1399, 7231, 7236, 4741, 1233, 2]
+// Dependencies: [1074, 1384, 7292, 7297, 4773, 1114, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8056 (getAttachmentObscurityProps)
+// Module 8125 (getAttachmentObscurityProps)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import getEligibleHarmTypesConfigsForContext from "getEligibleHarmTypesConfigsForContext" /* 7231 */;
-import ContentHarmTypeChannel from "ContentHarmTypeChannel" /* 7236 */;
+import ME from "ME" /* 1074 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import getEligibleHarmTypesConfigsForContext from "getEligibleHarmTypesConfigsForContext" /* 7292 */;
+import ContentHarmTypeChannel from "ContentHarmTypeChannel" /* 7297 */;
 
 const MessageAttachmentFlags = ME.MessageAttachmentFlags;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/ExplicitMediaUtils.tsx");
@@ -36,15 +36,15 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
     num3 = 0;
   }
   obj[1] = num3;
-  let tmpResult = tmp(7231);
-  obj = { type: tmp(7236).ObscuredMediaTypes.Attachment, media: obj };
+  let tmpResult = tmp(7292);
+  obj = { type: tmp(7297).ObscuredMediaTypes.Attachment, media: obj };
   const mediaObscuredReasonFromBitmask = tmpResult.getMediaObscuredReasonFromBitmask(obj, enabledContentHarmTypeFlags);
-  tmpResult = tmp(7231);
+  tmpResult = tmp(7292);
   let isVerifiedTeenResult = tmp5;
   obj1 = { type: ContentHarmTypeChannel.ObscuredMediaTypes.Attachment, media: obj };
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    isVerifiedTeenResult = tmp(4741).isVerifiedTeen();
-    const tmpResult1 = tmp(4741);
+    isVerifiedTeenResult = tmp(4773).isVerifiedTeen();
+    const tmpResult1 = tmp(4773);
   }
   let tmp7 = shouldObscureSpoiler;
   if (shouldObscureSpoiler) {
@@ -56,16 +56,16 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
   if (shouldObscureSpoiler) {
     str2 = str;
     if (hasFlagResult) {
-      const intl = tmp(1233).intl;
-      str2 = intl.string(tmp(1233).t["F+x38C"]).toUpperCase();
-      const str3 = intl.string(tmp(1233).t["F+x38C"]);
+      const intl = tmp(1114).intl;
+      str2 = intl.string(tmp(1114).t["F+x38C"]).toUpperCase();
+      const str3 = intl.string(tmp(1114).t["F+x38C"]);
     }
   }
   obj2[1] = str2;
   obj2[2] = mediaObscuredReasonFromBitmask.length > 0;
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    const intl2 = tmp(1233).intl;
-    str = intl2.string(tmp(1233).t.SpxcUR);
+    const intl2 = tmp(1114).intl;
+    str = intl2.string(tmp(1114).t.SpxcUR);
   }
   obj2[3] = str;
   obj2[4] = tmpResult.isMediaScanPending({ type: ContentHarmTypeChannel.ObscuredMediaTypes.Attachment, media: obj }, enabledContentHarmTypeFlags);
@@ -86,9 +86,9 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   let isMediaScanPendingResult = !isAuthorBot;
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask(obj, enabledContentHarmTypeFlags);
   if (!isAuthorBot) {
-    let tmpResult = tmp(7231);
+    let tmpResult = tmp(7292);
     obj = { type: null, media: null };
-    obj[0] = tmp(7236).ObscuredMediaTypes.GenericMedia;
+    obj[0] = tmp(7297).ObscuredMediaTypes.GenericMedia;
     obj[1] = mediaItem;
     isMediaScanPendingResult = tmpResult.isMediaScanPending(obj, enabledContentHarmTypeFlags);
   }
@@ -97,7 +97,7 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   }
   let isVerifiedTeenResult = tmp4;
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    tmpResult = tmp(4741);
+    tmpResult = tmp(4773);
     isVerifiedTeenResult = tmpResult.isVerifiedTeen();
   }
   obj1 = { isSpoiler: isSpoilered, spoilerDescription: null, isObscured: null, obscureDescription: null, obscureAwaitingScan: null, verifyAge: null, obscureHideControls: null, obscureIsOpaque: null };
@@ -106,8 +106,8 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
     obj1[2] = tmp4;
     let stringResult = null;
     if (tmp4) {
-      const intl4 = tmp(1233).intl;
-      stringResult = intl4.string(tmp(1233).t.SpxcUR);
+      const intl4 = tmp(1114).intl;
+      stringResult = intl4.string(tmp(1114).t.SpxcUR);
     }
     obj1[3] = stringResult;
     obj1[4] = isMediaScanPendingResult;
@@ -120,20 +120,20 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
     obj1[7] = tmp4;
     return obj1;
   } else if ("image" === type) {
-    const intl3 = tmp(1233).intl;
-    let stringResult1 = intl3.string(tmp(1233).t.sb2W2J);
+    const intl3 = tmp(1114).intl;
+    let stringResult1 = intl3.string(tmp(1114).t.sb2W2J);
   } else {
     if ("video" === type) {
-      const intl2 = tmp(1233).intl;
-      stringResult1 = intl2.string(tmp(1233).t.ehBaMc);
+      const intl2 = tmp(1114).intl;
+      stringResult1 = intl2.string(tmp(1114).t.ehBaMc);
     } else if ("file" !== type) {
       if ("generic" === type) {
-        const intl5 = tmp(1233).intl;
-        stringResult1 = intl5.string(tmp(1233).t.G71b77);
+        const intl5 = tmp(1114).intl;
+        stringResult1 = intl5.string(tmp(1114).t.G71b77);
       }
     }
-    const intl = tmp(1233).intl;
-    stringResult1 = intl.string(tmp(1233).t["3Gc2XP"]);
+    const intl = tmp(1114).intl;
+    stringResult1 = intl.string(tmp(1114).t["3Gc2XP"]);
   }
 };
 export function getAttachmentObscurityDefaults() {

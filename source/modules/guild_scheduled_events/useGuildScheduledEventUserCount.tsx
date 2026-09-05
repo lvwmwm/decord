@@ -1,13 +1,13 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9780
+// Function ID: 9781
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 7459, 586, 9710, 2]
+// Dependencies: [19, 7526, 504, 9781, 2]
 // Exports: default
 
-// Module 9709 (useGuildScheduledEventUserCount)
+// Module 9780 (useGuildScheduledEventUserCount)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "scheduledEventSort" /* 7459 */;
+import closure_4 from "scheduledEventSort" /* 7526 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/useGuildScheduledEventUserCount.tsx");
@@ -18,7 +18,7 @@ export default function useGuildScheduledEventUserCount(arg0, arg1, arg2) {
   dependencyMap = arg2;
   let items = [closure_4];
   let items1 = [arg1, arg0, arg2];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_4.getUserCount(closure_1, closure_2));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_1_4.getUserCount(closure_1, closure_2));
   useEffect(() => {
     let tmp2 = null != closure_0;
     if (tmp2) {

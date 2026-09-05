@@ -1,18 +1,18 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9763
+// Function ID: 9764
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 1908, 8331, 21, 4481, 709, 1498, 38, 9664, 5376, 1954, 1233, 5579, 7315, 4477, 1296, 9693, 1395, 2]
+// Dependencies: [32, 19, 17, 1979, 8401, 21, 4560, 576, 1483, 38, 9735, 5415, 1894, 1114, 5624, 7377, 4556, 1178, 9764, 1965, 2]
 // Exports: default
 
-// Module 9692 (AddModerators)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 9763 (AddModerators)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import { RowType } from "RowType" /* 8331 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import { RowType } from "RowType" /* 8401 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -50,11 +50,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = callback(5376).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.ROLE);
-        const obj2 = callback(5376);
+        let moderatorOverwrite = callback(5415).createModeratorOverwrite(row.id, callback(1894).PermissionOverwriteType.ROLE);
+        const obj2 = callback(5415);
       } else {
-        moderatorOverwrite = callback(5376).createModeratorOverwrite(row.id, callback(1954).PermissionOverwriteType.MEMBER);
-        const obj = callback(5376);
+        moderatorOverwrite = callback(5415).createModeratorOverwrite(row.id, callback(1894).PermissionOverwriteType.MEMBER);
+        const obj = callback(5415);
       }
       return moderatorOverwrite;
     });

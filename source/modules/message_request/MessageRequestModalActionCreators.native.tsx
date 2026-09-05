@@ -1,19 +1,19 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12446
+// Function ID: 12447
 // Name: openAcceptMessageRequestConfirmModal
-// Dependencies: [12375, 673, 695, 4866, 1233, 4955, 4448, 12379, 2008, 2]
+// Dependencies: [12443, 1074, 1242, 4905, 1114, 4994, 4527, 12447, 1896, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 12378 (openAcceptMessageRequestConfirmModal)
+// Module 12446 (openAcceptMessageRequestConfirmModal)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import _modDef4866 from "module_4866" /* 4866 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12375 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import _modDef4905 from "module_4905" /* 4905 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12443 */;
 
 let closure_3 = MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -36,9 +36,9 @@ export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRe
   obj[4] = onConfirm;
   obj[5] = onCancel;
   obj[6] = componentDidMountDefault.Colors.BRAND;
-  _modDef4866.show(obj);
+  _modDef4905.show(obj);
 };
 export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
   ({ onConfirm, onCancel, channel } = arg0);
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12379, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12447, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

@@ -1,13 +1,13 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9682
+// Function ID: 9683
 // Name: useMyCurrentStageChannel
-// Dependencies: [1386, 1980, 586, 2]
+// Dependencies: [1957, 2011, 504, 2]
 // Exports: default
 
-// Module 9611 (useMyCurrentStageChannel)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "handleConnectionOpen" /* 1980 */;
+// Module 9682 (useMyCurrentStageChannel)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import closure_3 from "handleConnectionOpen" /* 2011 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 8276
-// Function ID: 8277
+// Module ID: 8346
+// Function ID: 8347
 // Name: fetchGuildAffinities
-// Dependencies: [673, 527, 706, 2]
+// Dependencies: [1074, 1272, 573, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8276 (fetchGuildAffinities)
+// Module 8346 (fetchGuildAffinities)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");
@@ -17,8 +17,8 @@ export const fetchGuildAffinities = function fetchGuildAffinities() {
   const obj = { url: Endpoints.GUILD_AFFINITIES, oldFormErrors: true, rejectWithError: sendRequest.rejectWithMigratedError() };
   const value = HTTP.get(obj);
   return value.then((guildAffinities) => {
-    callback(706).dispatch({ type: "LOAD_GUILD_AFFINITIES_SUCCESS", guildAffinities: guildAffinities.body.guild_affinities });
+    callback(573).dispatch({ type: "LOAD_GUILD_AFFINITIES_SUCCESS", guildAffinities: guildAffinities.body.guild_affinities });
   }, () => {
-    callback(706).dispatch({ type: "LOAD_GUILD_AFFINITIES_FAILURE" });
+    callback(573).dispatch({ type: "LOAD_GUILD_AFFINITIES_FAILURE" });
   });
 };

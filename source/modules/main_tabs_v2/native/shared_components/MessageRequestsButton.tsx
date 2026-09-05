@@ -1,19 +1,19 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16028
+// Function ID: 16029
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 7159, 7160, 21, 4481, 586, 15953, 4936, 1233, 8028, 13185, 9812, 2]
+// Dependencies: [19, 17, 7219, 7220, 21, 4560, 504, 16029, 4975, 1114, 8097, 13253, 9883, 2]
 // Exports: default
 
-// Module 15952 (MessageRequestAnimation)
-import initialize from "initialize" /* 586 */;
-import registerAssetDefault from "registerAsset" /* 9812 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 13185 */;
+// Module 16028 (MessageRequestAnimation)
+import initialize from "initialize" /* 504 */;
+import registerAssetDefault from "registerAsset" /* 9883 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 13253 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "processChannel" /* 7159 */;
-import closure_6 from "processChannel" /* 7160 */;
+import closure_5 from "processChannel" /* 7219 */;
+import closure_6 from "processChannel" /* 7220 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function MessageRequestAnimation(color) {
@@ -21,10 +21,10 @@ function MessageRequestAnimation(color) {
   let stateFromStores;
   ref = React.useRef(null);
   const items = [closure_5];
-  stateFromStores = ref(586).useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
-  const obj = ref(586);
+  stateFromStores = ref(504).useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
+  const obj = ref(504);
   const items1 = [closure_6];
-  const stateFromStores1 = ref(586).useStateFromStores(items1, () => spamChannelsCount.getSpamChannelsCount());
+  const stateFromStores1 = ref(504).useStateFromStores(items1, () => spamChannelsCount.getSpamChannelsCount());
   const items2 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (stateFromStores > 0) {
@@ -36,7 +36,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15953).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(16029).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -69,29 +69,29 @@ export default function MessageRequestsButton(alternateVariant) {
       obj = { icon: null, variant: "secondary", text: null, size: "sm", accessibilityLabel: null };
       obj[0] = callback(MessageRequestAnimation, {});
       obj[2] = str;
-      const intl3 = tmp3(1233).intl;
-      obj[4] = intl3.string(tmp3(1233).t.e7GWjQ);
+      const intl3 = tmp3(1114).intl;
+      obj[4] = intl3.string(tmp3(1114).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4936).Button, obj);
+      let tmp21 = callback(tmp3(4975).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
       obj1 = { variant: "secondary", size: "sm", icon: null, accessibilityLabel: null };
       obj1[2] = callback(MessageRequestAnimation, {});
-      const intl2 = tmp3(1233).intl;
-      obj1[3] = intl2.string(tmp3(1233).t.e7GWjQ);
+      const intl2 = tmp3(1114).intl;
+      obj1[3] = intl2.string(tmp3(1114).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(8028).IconButton, obj1);
+      tmp21 = callback(tmp3(8097).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(13185).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(13253).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
     const obj2 = { source: null, IconComponent: null, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
     obj2[0] = registerAssetDefault;
     obj2[1] = MessageRequestAnimation;
-    const intl = tmp3(1233).intl;
-    obj2[2] = intl.string(tmp3(1233).t.e7GWjQ);
+    const intl = tmp3(1114).intl;
+    obj2[2] = intl.string(tmp3(1114).t.e7GWjQ);
     let str1;
     if (str > 0) {
       str1 = str.toString();

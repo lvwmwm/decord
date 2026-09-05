@@ -1,11 +1,11 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8402
+// Function ID: 8403
 // Name: getSystemLocale
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 
-// Module 8332 (getSystemLocale)
+// Module 8402 (getSystemLocale)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
 

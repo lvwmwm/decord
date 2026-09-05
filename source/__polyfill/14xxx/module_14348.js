@@ -1,14 +1,17 @@
 // Module ID: 14348
 // Function ID: 14349
-// Dependencies: []
+// Dependencies: [14346]
 
 // Module 14348
-arg5.default = () => (arg0) => {
-  closure_0 = arg0;
-  const features = {
-    clear() {
-      return closure_0.send("clear");
-    }
-  };
-  return { features };
+import _mod14346 from "module_14346" /* 14346 */;
+
+
+export default (arg0, arg1) => {
+  const tmp = _mod14346(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
 };

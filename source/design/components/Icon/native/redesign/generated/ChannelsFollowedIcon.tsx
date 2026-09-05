@@ -1,14 +1,14 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16839
+// Function ID: 16840
 // Name: ChannelsFollowedIcon
-// Dependencies: [19, 21, 709, 4196, 16762, 2]
+// Dependencies: [19, 21, 576, 4261, 16840, 2]
 // Exports: ChannelsFollowedIcon
 
-// Module 16761 (ChannelsFollowedIcon)
+// Module 16839 (ChannelsFollowedIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 16762 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 16840 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

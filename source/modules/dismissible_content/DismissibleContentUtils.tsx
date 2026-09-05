@@ -1,28 +1,28 @@
-// Module ID: 1374
-// Function ID: 1375
+// Module ID: 1945
+// Function ID: 1946
 // Name: addVersionedDismissedContent
-// Dependencies: [32, 5, 1339, 1375, 1376, 1378, 1383, 673, 1373, 1384, 11, 1369, 4323, 586, 1372, 706, 10166, 695, 1377, 2]
+// Dependencies: [32, 5, 1221, 1946, 1947, 1949, 1954, 1074, 1944, 1955, 11, 1940, 4402, 504, 1943, 573, 10237, 1242, 1948, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 1374 (addVersionedDismissedContent)
+// Module 1945 (addVersionedDismissedContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1373 */;
-import set2 from "set" /* 1377 */;
-import getVersionedDismissibleContentCurrentVersion from "getVersionedDismissibleContentCurrentVersion" /* 1384 */;
-import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4323 */;
-import handleDCShownToUser from "handleDCShownToUser" /* 10166 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1940 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1944 */;
+import set2 from "set" /* 1948 */;
+import getVersionedDismissibleContentCurrentVersion from "getVersionedDismissibleContentCurrentVersion" /* 1955 */;
+import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4402 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 10237 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleConnectionClosedOrResumed" /* 1339 */;
-import { DCFEventTypes } from "getDCFEvents" /* 1375 */;
-import closure_7 from "set" /* 1376 */;
-import withContent from "withContent" /* 1378 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_5 from "handleConnectionClosedOrResumed" /* 1221 */;
+import { DCFEventTypes } from "getDCFEvents" /* 1946 */;
+import closure_7 from "set" /* 1947 */;
+import withContent from "withContent" /* 1949 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -521,13 +521,13 @@ export const getDismissedRecurringDismissibleContentState = function getDismisse
   let obj = isSingleUseDismissibleContent;
   let num = 0;
   if (obj.isVersionedDismissibleContent(id)) {
-    let tmp2Result = tmp2(1384);
+    let tmp2Result = tmp2(1955);
     num = tmp2Result.getVersionedDismissibleContentCurrentVersion(id);
   }
   obj = { lastDismissedVersion: num, lastDismissedAtMs: null, lastDismissedObjectId: null, numTimesDismissed: null };
   const date = new Date();
   obj[1] = new Date().getTime().toString();
-  tmp2Result = tmp2(1373);
+  tmp2Result = tmp2(1944);
   let str2 = "0";
   if (tmp2Result.isSnowflakeBoundDismissibleContent(id)) {
     const _Date = Date;
@@ -628,7 +628,7 @@ export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurri
       }
     }
     if (undefined === tmp5) {
-      return { isDismissed: false, lastDismissedAtMs: "r" };
+      return { isDismissed: false, lastDismissedAtMs: "PX_16" };
     } else {
       let flag = true;
       if (null != cooldownConfig) {
@@ -724,7 +724,7 @@ export const useIsSingleUseGuildDismissibleContentDismissed = function useIsSing
   const _require = dismissibleContent;
   closure_1 = arg1;
   const items = [closure_5];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let tmp2 = null != dismissibleContent;
     if (tmp2) {
       let flag2 = true;

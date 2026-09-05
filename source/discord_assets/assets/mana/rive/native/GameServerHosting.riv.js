@@ -1,9 +1,9 @@
-// Module ID: 4287
-// Function ID: 4288
+// Module ID: 4365
+// Function ID: 4366
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4287 (metadata)
+// Module 4365 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/GameServerHosting.riv.js");

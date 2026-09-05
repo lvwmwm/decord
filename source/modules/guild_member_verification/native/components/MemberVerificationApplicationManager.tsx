@@ -1,12 +1,12 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17378
+// Function ID: 17379
 // Name: prototype
-// Dependencies: [4302, 4303, 7058, 4866, 4305, 5482, 5496, 2]
+// Dependencies: [4381, 4382, 7118, 4905, 4384, 5527, 5541, 2]
 
-// Module 17298 (prototype)
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "handleConnectionOpen" /* 4302 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4303 */;
+// Module 17378 (prototype)
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "handleConnectionOpen" /* 4381 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4382 */;
 
 let require = arg1;
 initializeDefault;

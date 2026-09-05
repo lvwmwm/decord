@@ -1,13 +1,13 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 2024
+// Function ID: 2025
 // Name: combined
-// Dependencies: [1995, 673, 4104, 1234, 2]
+// Dependencies: [2025, 1074, 4183, 1115, 2]
 
-// Module 1994 (combined)
-import set from "set" /* 1234 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4104 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
-import ME from "ME" /* 673 */;
+// Module 2024 (combined)
+import set from "set" /* 1115 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4183 */;
+import closure_3 from "_getSystemLocale" /* 2025 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 const LocalizedLinks = ME.LocalizedLinks;

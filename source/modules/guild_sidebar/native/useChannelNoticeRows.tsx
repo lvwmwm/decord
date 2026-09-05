@@ -1,19 +1,19 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16259
+// Function ID: 16260
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12407, 1981, 1908, 1921, 7467, 673, 1383, 644, 7103, 7105, 16184, 7326, 1372, 4301, 16106, 16185, 2]
+// Dependencies: [32, 19, 12475, 2012, 1979, 1371, 7534, 1074, 1954, 563, 7163, 7165, 16260, 7388, 1943, 4380, 16184, 16261, 2]
 // Exports: default
 
-// Module 16183 (useChannelNoticeRows)
+// Module 16259 (useChannelNoticeRows)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "completeStep" /* 12407 */;
-import closure_6 from "comparator" /* 1981 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import { ChannelListChannelNoticeRow as closure_9 } from "ChannelListGuildActionRow" /* 7467 */;
-import { MFALevels } from "ME" /* 673 */;
-import ContentDismissActionType from "ContentDismissActionType" /* 1383 */;
+import closure_5 from "completeStep" /* 12475 */;
+import closure_6 from "comparator" /* 2012 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import { ChannelListChannelNoticeRow as closure_9 } from "ChannelListGuildActionRow" /* 7534 */;
+import { MFALevels } from "ME" /* 1074 */;
+import ContentDismissActionType from "ContentDismissActionType" /* 1954 */;
 
 const require = arg1;
 ({ ContentDismissActionType: unpackModuleId, DismissibleContentGroupName: closure_12 } = ContentDismissActionType);

@@ -1,13 +1,13 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 8036
+// Function ID: 8037
 // Name: isCrosspost
-// Dependencies: [673, 1399, 2]
+// Dependencies: [1074, 1384, 2]
 // Exports: default
 
-// Module 7967 (isCrosspost)
+// Module 8036 (isCrosspost)
 import set from "set" /* 2 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import ME from "ME" /* 673 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import ME from "ME" /* 1074 */;
 
 ({ MessageFlags: obj1, MessageReferenceTypes: c3, MessageTypes: c4 } = ME);
 const result = set.fileFinishedImporting("modules/messages/isCrosspost.tsx");

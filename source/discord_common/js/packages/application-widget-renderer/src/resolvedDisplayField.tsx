@@ -1,12 +1,12 @@
-// Module ID: 8858
-// Function ID: 8859
+// Module ID: 8928
+// Function ID: 8929
 // Name: resolveTextComponentValues
-// Dependencies: [8859, 8860, 2]
+// Dependencies: [8929, 8930, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 8858 (resolveTextComponentValues)
+// Module 8928 (resolveTextComponentValues)
 import set from "set" /* 2 */;
-import resolveFieldValue2 from "resolveFieldValue" /* 8859 */;
+import resolveFieldValue2 from "resolveFieldValue" /* 8929 */;
 
 let result = set.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
 
@@ -26,7 +26,7 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
     let iter = resolveFieldValue(subtitle_1.fields.text, items);
     let str = null;
     if (!flag2) {
-      const items1 = [tmp9(8859).ResolvedValueType.STRING, tmp9(8859).ResolvedValueType.NUMBER];
+      const items1 = [tmp9(8929).ResolvedValueType.STRING, tmp9(8929).ResolvedValueType.NUMBER];
       str = resolveFieldValue(subtitle_1.fields.label, items1);
     }
     if (null == iter) {
@@ -100,9 +100,9 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     if (null == iter) {
       obj = { status: "skeleton" };
     } else {
-      if (iter.type === tmp6(8859).ResolvedValueType.STRING) {
+      if (iter.type === tmp6(8929).ResolvedValueType.STRING) {
         let formatResult = iter.value;
-      } else if (iter.presentationType === tmp6(8860).ApplicationWidgetFieldPresentationType.DURATION) {
+      } else if (iter.presentationType === tmp6(8930).ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
         formatResult = closure_2.format(iter.value);

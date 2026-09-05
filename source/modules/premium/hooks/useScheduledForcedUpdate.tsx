@@ -1,10 +1,10 @@
-// Module ID: 13397
-// Function ID: 13398
+// Module ID: 13470
+// Function ID: 13471
 // Name: useScheduledForcedUpdate
-// Dependencies: [19, 7374, 2]
+// Dependencies: [19, 7440, 2]
 // Exports: default
 
-// Module 13397 (useScheduledForcedUpdate)
+// Module 13470 (useScheduledForcedUpdate)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

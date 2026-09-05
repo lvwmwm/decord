@@ -1,22 +1,22 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 16948
+// Function ID: 16949
 // Name: PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID
-// Dependencies: [32, 19, 8123, 16854, 10594, 1339, 1380, 673, 1923, 682, 586, 16871, 1623, 7991, 7381, 16872, 13280, 10671, 10670, 13498, 8128, 8115, 4301, 1372, 16873, 16868, 16851, 13394, 16862, 9106, 11899, 2]
+// Dependencies: [32, 19, 8192, 16932, 10665, 1221, 1951, 1074, 1373, 1084, 504, 16949, 1608, 8060, 7447, 16950, 13352, 10742, 10741, 13571, 8197, 8184, 4380, 1943, 16951, 16946, 16929, 13467, 16940, 9177, 11967, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 16870 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
-import apexExperimentDefault from "apexExperiment" /* 16871 */;
-import useGiftingPromotionAssetsReadyDefault from "useGiftingPromotionAssetsReady" /* 16873 */;
+// Module 16948 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
+import apexExperimentDefault from "apexExperiment" /* 16949 */;
+import useGiftingPromotionAssetsReadyDefault from "useGiftingPromotionAssetsReady" /* 16951 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "initialize" /* 8123 */;
-import closure_6 from "onInitializeSync" /* 16854 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10594 */;
-import closure_8 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_9 from "handleRequiredAction" /* 1380 */;
-import { PlatformTypes } from "ME" /* 673 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
+import closure_5 from "initialize" /* 8192 */;
+import closure_6 from "onInitializeSync" /* 16932 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10665 */;
+import closure_8 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_9 from "handleRequiredAction" /* 1951 */;
+import { PlatformTypes } from "ME" /* 1074 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 1084 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -27,12 +27,12 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/upsell_tooltip/native/useMainViewTooltipActionSheetEligibilityMap.tsx");
 
 export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActionSheetMap() {
-  let obj = isEligibleToShowGiftingBadgeCoachmark(586);
+  let obj = isEligibleToShowGiftingBadgeCoachmark(504);
   let items = [closure_8];
   let stateFromStores = obj.useStateFromStores(items, () => closure_8.hasLoaded(constants.PRELOADED_USER_SETTINGS));
   obj1 = apexExperimentDefault;
   obj = { location: MainViewTooltipActionSheets };
-  let obj3 = isEligibleToShowGiftingBadgeCoachmark(586);
+  let obj3 = isEligibleToShowGiftingBadgeCoachmark(504);
   const items1 = [closure_9];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => closure_9.hasAction());
   if (stateFromStores) {
@@ -42,10 +42,10 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     stateFromStores = !stateFromStores1;
   }
   if (stateFromStores) {
-    let tmpResult = tmp(1623);
+    let tmpResult = tmp(1608);
     stateFromStores = !tmpResult.isMetaQuest();
   }
-  tmpResult = tmp(586);
+  tmpResult = tmp(504);
   const items2 = [closure_6];
   [tmp8, tmp9] = callback(tmpResult.useStateFromStoresArray(items2, () => {
     const items = [, ];
@@ -58,12 +58,12 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = closure_6);
     return items;
   }), 2);
-  const premiumDiscountOffer = isEligibleToShowGiftingBadgeCoachmark(7991).usePremiumDiscountOffer();
-  const tmpResult1 = isEligibleToShowGiftingBadgeCoachmark(7991);
-  const premiumTrialOffer = isEligibleToShowGiftingBadgeCoachmark(7381).usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16872).PremiumTrialOfferActionSheetKillSwitchExperiment;
-  const tmpResult2 = isEligibleToShowGiftingBadgeCoachmark(7381);
-  const promotionMarketingComponent = isEligibleToShowGiftingBadgeCoachmark(13280).usePromotionMarketingComponent(tmp(10671).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const premiumDiscountOffer = isEligibleToShowGiftingBadgeCoachmark(8060).usePremiumDiscountOffer();
+  const tmpResult1 = isEligibleToShowGiftingBadgeCoachmark(8060);
+  const premiumTrialOffer = isEligibleToShowGiftingBadgeCoachmark(7447).usePremiumTrialOffer();
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16950).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const tmpResult2 = isEligibleToShowGiftingBadgeCoachmark(7447);
+  const promotionMarketingComponent = isEligibleToShowGiftingBadgeCoachmark(13352).usePromotionMarketingComponent(tmp(10742).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -72,9 +72,9 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   if ("mobileBottomSheet" === oneofKind) {
     mobileBottomSheet = promotionMarketingComponent.properties.properties.mobileBottomSheet;
   }
-  const tmpResult3 = isEligibleToShowGiftingBadgeCoachmark(13280);
+  const tmpResult3 = isEligibleToShowGiftingBadgeCoachmark(13352);
   const items3 = [closure_7];
-  const stateFromStores2 = isEligibleToShowGiftingBadgeCoachmark(586).useStateFromStores(items3, () => {
+  const stateFromStores2 = isEligibleToShowGiftingBadgeCoachmark(504).useStateFromStores(items3, () => {
     const giftPromotion = store.getGiftPromotion();
     let id;
     if (giftPromotion != null) {
@@ -82,10 +82,10 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     return id;
   });
-  const tmpResult4 = isEligibleToShowGiftingBadgeCoachmark(586);
+  const tmpResult4 = isEligibleToShowGiftingBadgeCoachmark(504);
   const items4 = [closure_7];
-  const stateFromStores3 = isEligibleToShowGiftingBadgeCoachmark(586).useStateFromStores(items4, () => {
-    const marketingComponentByType = store.getMarketingComponentByType(isEligibleToShowGiftingBadgeCoachmark(10671).MarketingComponentType.GIFT_ICON_COACHMARK);
+  const stateFromStores3 = isEligibleToShowGiftingBadgeCoachmark(504).useStateFromStores(items4, () => {
+    const marketingComponentByType = store.getMarketingComponentByType(isEligibleToShowGiftingBadgeCoachmark(10742).MarketingComponentType.GIFT_ICON_COACHMARK);
     let giftIconCoachmark = null;
     if (null != marketingComponentByType) {
       giftIconCoachmark = null;
@@ -95,10 +95,10 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     return giftIconCoachmark;
   });
-  const tmpResult5 = isEligibleToShowGiftingBadgeCoachmark(586);
+  const tmpResult5 = isEligibleToShowGiftingBadgeCoachmark(504);
   const items5 = [closure_7];
-  const stateFromStores4 = isEligibleToShowGiftingBadgeCoachmark(586).useStateFromStores(items5, () => {
-    const marketingComponentByType = store.getMarketingComponentByType(isEligibleToShowGiftingBadgeCoachmark(10671).MarketingComponentType.GIFT_REMINDER_COACHMARK);
+  const stateFromStores4 = isEligibleToShowGiftingBadgeCoachmark(504).useStateFromStores(items5, () => {
+    const marketingComponentByType = store.getMarketingComponentByType(isEligibleToShowGiftingBadgeCoachmark(10742).MarketingComponentType.GIFT_REMINDER_COACHMARK);
     let prop = null;
     if (null != marketingComponentByType) {
       prop = null;
@@ -108,9 +108,9 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10670).GiftPromotionReminderExperiment;
-  const tmpResult6 = isEligibleToShowGiftingBadgeCoachmark(586);
-  isEligibleToShowGiftingBadgeCoachmark = isEligibleToShowGiftingBadgeCoachmark(13498).useIsEligibleToShowGiftingBadgeCoachmark({ platform: "native", location: tmp5 });
+  const GiftPromotionReminderExperiment = tmp(10741).GiftPromotionReminderExperiment;
+  const tmpResult6 = isEligibleToShowGiftingBadgeCoachmark(504);
+  isEligibleToShowGiftingBadgeCoachmark = isEligibleToShowGiftingBadgeCoachmark(13571).useIsEligibleToShowGiftingBadgeCoachmark({ platform: "native", location: tmp5 });
   const items6 = [isEligibleToShowGiftingBadgeCoachmark];
   const effect = React.useEffect(() => {
     if (isEligibleToShowGiftingBadgeCoachmark) {
@@ -118,21 +118,21 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       const obj = isEligibleToShowGiftingBadgeCoachmark(closure_1_2[20]);
     }
   }, items6);
-  const tmpResult7 = isEligibleToShowGiftingBadgeCoachmark(13498);
+  const tmpResult7 = isEligibleToShowGiftingBadgeCoachmark(13571);
   const items7 = [closure_5];
   let isDismissed = null != stateFromStores2;
-  const stateFromStores5 = isEligibleToShowGiftingBadgeCoachmark(586).useStateFromStores(items7, () => null != badgeById.getBadgeById(isEligibleToShowGiftingBadgeCoachmark(8115).BadgeId.GIFTING));
+  const stateFromStores5 = isEligibleToShowGiftingBadgeCoachmark(504).useStateFromStores(items7, () => null != badgeById.getBadgeById(isEligibleToShowGiftingBadgeCoachmark(8184).BadgeId.GIFTING));
   if (isDismissed) {
-    isDismissed = tmp(4301).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1372).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores2).isDismissed;
-    const tmpResult9 = tmp(4301);
+    isDismissed = tmp(4380).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1943).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores2).isDismissed;
+    const tmpResult9 = tmp(4380);
   }
   let isDismissed2 = null != stateFromStores2;
   if (isDismissed2) {
-    isDismissed2 = tmp(4301).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1372).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores2).isDismissed;
-    const tmpResult10 = tmp(4301);
+    isDismissed2 = tmp(4380).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1943).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores2).isDismissed;
+    const tmpResult10 = tmp(4380);
   }
   let tmp22 = null;
-  const tmpResult8 = isEligibleToShowGiftingBadgeCoachmark(586);
+  const tmpResult8 = isEligibleToShowGiftingBadgeCoachmark(504);
   if (!isDismissed) {
     tmp22 = stateFromStores3;
   }
@@ -143,21 +143,21 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const tmp4Result = useGiftingPromotionAssetsReadyDefault;
   ({ isGiftCoachmarkAssetReady, isGiftReminderAssetReady } = useGiftingPromotionAssetsReadyDefault(tmp22, tmp23));
   const tmp4ResultResult = useGiftingPromotionAssetsReadyDefault(tmp22, tmp23);
-  const tmpResult11 = isEligibleToShowGiftingBadgeCoachmark(16868);
-  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(16851).useShouldShowRobloxConnectionCoachmark();
-  const tmpResult12 = isEligibleToShowGiftingBadgeCoachmark(16851);
+  const tmpResult11 = isEligibleToShowGiftingBadgeCoachmark(16946);
+  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(16929).useShouldShowRobloxConnectionCoachmark();
+  const tmpResult12 = isEligibleToShowGiftingBadgeCoachmark(16929);
   const items8 = [, ];
   ({ LEAGUE_OF_LEGENDS: arr9[0], RIOT_GAMES: arr9[1] } = PlatformTypes);
-  const isEligibleForBogoPromotion = isEligibleToShowGiftingBadgeCoachmark(13394).useIsEligibleForBogoPromotion();
+  const isEligibleForBogoPromotion = isEligibleToShowGiftingBadgeCoachmark(13467).useIsEligibleForBogoPromotion();
   const tmp27 = PlatformTypes;
-  const tmpResult13 = isEligibleToShowGiftingBadgeCoachmark(13394);
-  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(16862).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
-  const tmpResult14 = isEligibleToShowGiftingBadgeCoachmark(16862);
+  const tmpResult13 = isEligibleToShowGiftingBadgeCoachmark(13467);
+  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(16940).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
+  const tmpResult14 = isEligibleToShowGiftingBadgeCoachmark(16940);
   const items9 = [PlatformTypes.BATTLENET];
-  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(16862).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items9 });
-  const tmpResult15 = isEligibleToShowGiftingBadgeCoachmark(16862);
-  const isDisplayNameStylesFlywheelSettersEnabled = isEligibleToShowGiftingBadgeCoachmark(9106).useIsDisplayNameStylesFlywheelSettersEnabled(tmp5);
-  isEligibleToShowGiftingBadgeCoachmark(11899);
+  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(16940).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items9 });
+  const tmpResult15 = isEligibleToShowGiftingBadgeCoachmark(16940);
+  const isDisplayNameStylesFlywheelSettersEnabled = isEligibleToShowGiftingBadgeCoachmark(9177).useIsDisplayNameStylesFlywheelSettersEnabled(tmp5);
+  isEligibleToShowGiftingBadgeCoachmark(11967);
   obj = {};
   if (stateFromStores) {
     obj1 = { isEligible: null, newSnowflakeId: null, actionSheetProperties: null };
@@ -168,7 +168,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj1[1] = priceChangeId;
     obj1[2] = {};
-    obj[tmp(1372).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj1;
+    obj[tmp(1943).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj1;
     let tmp36 = null != premiumDiscountOffer;
     if (tmp36) {
       tmp36 = null == premiumDiscountOffer.expiresAt;
@@ -188,7 +188,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       obj4 = {};
     }
     obj2[2] = obj4;
-    obj[tmp(1372).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET] = obj2;
+    obj[tmp(1943).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET] = obj2;
     let hasItem = null != premiumTrialOffer;
     if (hasItem) {
       hasItem = null == premiumTrialOffer.expiresAt;
@@ -214,13 +214,13 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       obj7 = {};
     }
     obj5[2] = obj7;
-    obj[tmp(1372).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj5;
+    obj[tmp(1943).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj5;
     let dismissibleContent;
     if (mobileBottomSheet != null) {
       dismissibleContent = mobileBottomSheet.dismissibleContent;
     }
     const obj8 = { isEligible: null, newSnowflakeId: null, actionSheetProperties: null };
-    obj8[0] = dismissibleContent === tmp(1372).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
+    obj8[0] = dismissibleContent === tmp(1943).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
     let promotionId;
     if (promotionMarketingComponent != null) {
       promotionId = promotionMarketingComponent.promotionId;
@@ -239,13 +239,13 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj9[2] = promotionId1;
     obj8[2] = obj9;
-    obj[tmp(1372).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj8;
+    obj[tmp(1943).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj8;
     let dismissibleContent1;
     if (mobileBottomSheet != null) {
       dismissibleContent1 = mobileBottomSheet.dismissibleContent;
     }
     const obj10 = { isEligible: null, newSnowflakeId: null, actionSheetProperties: null };
-    obj10[0] = dismissibleContent1 === tmp(1372).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
+    obj10[0] = dismissibleContent1 === tmp(1943).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
     let promotionId2;
     if (promotionMarketingComponent != null) {
       promotionId2 = promotionMarketingComponent.promotionId;
@@ -264,7 +264,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj11[2] = promotionId3;
     obj10[2] = obj11;
-    obj[tmp(1372).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj10;
+    obj[tmp(1943).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj10;
     let tmp49 = tmp33;
     if (tmp33) {
       tmp49 = isGiftCoachmarkAssetReady;
@@ -275,7 +275,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     const obj13 = { coachmarkComponent: null };
     obj13[0] = stateFromStores3;
     obj12[2] = obj13;
-    obj[tmp(1372).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj12;
+    obj[tmp(1943).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj12;
     let tmp50 = !tmp33;
     if (tmp33) {
       tmp50 = null == stateFromStores4;
@@ -302,50 +302,50 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     const obj15 = { coachmarkComponent: null };
     obj15[0] = stateFromStores4;
     obj14[2] = obj15;
-    obj[tmp(1372).DismissibleContent.GIFTING_PROMOTION_REMINDER] = obj14;
+    obj[tmp(1943).DismissibleContent.GIFTING_PROMOTION_REMINDER] = obj14;
     if (isEligibleToShowGiftingBadgeCoachmark) {
       isEligibleToShowGiftingBadgeCoachmark = stateFromStores5;
     }
     const obj16 = { isEligible: null, actionSheetProperties: null };
     obj16[0] = isEligibleToShowGiftingBadgeCoachmark;
     obj16[1] = {};
-    obj[tmp(1372).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj16;
+    obj[tmp(1943).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj16;
     const obj17 = { isEligible: true, actionSheetProperties: null };
     obj17[1] = {};
-    obj[tmp(1372).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj17;
+    obj[tmp(1943).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj17;
     const obj18 = { isEligible: null, actionSheetProperties: null };
     obj18[0] = shouldShowRobloxConnectionCoachmark;
     obj18[1] = {};
-    obj[tmp(1372).DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj18;
+    obj[tmp(1943).DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj18;
     const obj19 = { isEligible: null, actionSheetProperties: null };
     obj19[0] = isEligibleForBogoPromotion;
     obj19[1] = {};
-    obj[tmp(1372).DismissibleContent.MOBILE_BOGO_PROMOTION_ACTION_SHEET] = obj19;
+    obj[tmp(1943).DismissibleContent.MOBILE_BOGO_PROMOTION_ACTION_SHEET] = obj19;
     const obj20 = { isEligible: null, actionSheetProperties: null };
     obj20[0] = isDisplayNameStylesFlywheelSettersEnabled;
     obj20[1] = {};
-    obj[tmp(1372).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj20;
+    obj[tmp(1943).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj20;
     const obj21 = { isEligible: null, actionSheetProperties: null };
     obj21[0] = shouldShowConnectionDeprecationBottomSheet;
     const obj22 = { platformTypes: null };
     obj22[0] = items8;
     obj21[1] = obj22;
-    obj[tmp(1372).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE] = obj21;
+    obj[tmp(1943).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE] = obj21;
     const obj23 = { isEligible: null, actionSheetProperties: null };
     obj23[0] = shouldShowConnectionDeprecationBottomSheet1;
     const obj24 = { platformTypes: null };
     const items10 = [tmp27.BATTLENET];
     obj24[0] = items10;
     obj23[1] = obj24;
-    obj[tmp(1372).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE] = obj23;
+    obj[tmp(1943).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE] = obj23;
     const obj25 = { isEligible: null, actionSheetProperties: null };
     obj25[0] = tmpResult11.useProfileFramesMarketing(tmp5).isAnnouncementEligible;
     obj25[1] = {};
-    obj[tmp(1372).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj25;
+    obj[tmp(1943).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj25;
     const obj26 = { isEligible: null, actionSheetProperties: null };
     obj26[0] = tmp32;
     obj26[1] = {};
-    obj[tmp(1372).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj26;
+    obj[tmp(1943).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj26;
     let tmp34 = obj;
   } else {
     tmp34 = obj;

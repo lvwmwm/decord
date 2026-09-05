@@ -1,12 +1,12 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9211
+// Function ID: 9212
 // Name: useGetGuildJoinRequest
-// Dependencies: [19, 4303, 586, 5496, 2]
+// Dependencies: [19, 4382, 504, 5541, 2]
 // Exports: default
 
-// Module 9140 (useGetGuildJoinRequest)
+// Module 9211 (useGetGuildJoinRequest)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4303 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4382 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");
@@ -14,16 +14,16 @@ const result = require("set").fileFinishedImporting("modules/guild_member_verifi
 export default function useGetGuildJoinRequest(arg0) {
   const _require = arg0;
   const items = [closure_4];
-  const stateFromStores = _require(586).useStateFromStores(items, () => {
+  const stateFromStores = _require(504).useStateFromStores(items, () => {
     let request = null;
     if (null != closure_0) {
       request = closure_1_4.getRequest(tmp);
     }
     return request;
   });
-  let obj = _require(586);
+  let obj = _require(504);
   const items1 = [closure_4];
-  const stateFromStores1 = _require(586).useStateFromStores(items1, () => obj.hasFetchedRequestToJoinGuilds);
+  const stateFromStores1 = _require(504).useStateFromStores(items1, () => obj.hasFetchedRequestToJoinGuilds);
   const items2 = [stateFromStores1];
   const effect = React.useEffect(() => {
     if (!stateFromStores1) {

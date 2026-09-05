@@ -1,12 +1,12 @@
-// Module ID: 644
-// Function ID: 645
+// Module ID: 563
+// Function ID: 564
 // Name: defaultAreStatesEqual
-// Dependencies: [32, 19, 640, 645, 2]
+// Dependencies: [32, 19, 558, 564, 2]
 // Exports: statesWillNeverBeEqual, useStateFromStoresArray, useStateFromStoresObject
 
-// Module 644 (defaultAreStatesEqual)
-import shallowEqual from "shallowEqual" /* 640 */;
-import shallowEqualDefault from "shallowEqual" /* 640 */;
+// Module 563 (defaultAreStatesEqual)
+import shallowEqual from "shallowEqual" /* 558 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 
@@ -47,7 +47,7 @@ function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVer
     tmp7 = null != state && tmp(state, tmp6);
   } else {
     tmp5 = state;
-    const obj2 = _require(640);
+    const obj2 = _require(558);
   }
   callback3(() => {
     current.getStateFromStores = closure_1;

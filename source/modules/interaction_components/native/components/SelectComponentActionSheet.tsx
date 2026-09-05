@@ -1,18 +1,18 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11822
+// Function ID: 11823
 // Name: SelectionHeader
-// Dependencies: [19, 17, 1386, 1980, 7091, 21, 4481, 709, 7089, 1233, 4936, 9684, 4206, 5560, 5572, 9368, 6921, 1350, 1627, 1492, 5637, 586, 4448, 7090, 6567, 2]
+// Dependencies: [19, 17, 1957, 2011, 7151, 21, 4560, 576, 7149, 1114, 4975, 9755, 4277, 5605, 5617, 9439, 6981, 4272, 1611, 1477, 5682, 504, 4527, 7150, 6627, 2]
 // Exports: default
 
-// Module 11754 (SelectionHeader)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11822 (SelectionHeader)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
-import { ACTION_SHEET_START_HEIGHT_RATIO as closure_7 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "handleConnectionOpen" /* 2011 */;
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_7 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function SelectionHeader(renderIcon) {
@@ -50,17 +50,17 @@ function SelectionHeader(renderIcon) {
     label = selectionActionComponent.placeholder;
   }
   if (label == null) {
-    const intl = tmp6(1233).intl;
-    label = intl.string(tmp6(1233).t.Otr6W2);
+    const intl = tmp6(1114).intl;
+    label = intl.string(tmp6(1114).t.Otr6W2);
   }
   let obj = { title: label, subtitle: null, trailing: null };
   let formatToPlainStringResult;
   if (selectionActionComponent.maxValues > 1) {
     if (selectionActionComponent.minValues > 0) {
-      const intl2 = tmp6(1233).intl;
+      const intl2 = tmp6(1114).intl;
       obj = { count: null };
       obj[0] = selectionActionComponent.minValues;
-      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1233).t.Jmwzdx, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1114).t.Jmwzdx, obj);
     }
   }
   obj[1] = formatToPlainStringResult;
@@ -74,12 +74,12 @@ function SelectionHeader(renderIcon) {
     obj[1] = str;
     obj[2] = selectButtonDisabled;
     obj[3] = renderIcon.submitSelection;
-    const intl3 = tmp6(1233).intl;
-    obj[4] = intl3.string(tmp6(1233).t.XqMe3N);
-    tmp5Result = tmp5(tmp6(4936).Button, obj);
+    const intl3 = tmp6(1114).intl;
+    obj[4] = intl3.string(tmp6(1114).t.XqMe3N);
+    tmp5Result = tmp5(tmp6(4975).Button, obj);
   }
   obj[2] = tmp5Result;
-  const children = [closure_8(renderIcon(7089).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(7149).BottomSheetTitleHeader, obj), ];
   let tmp5Result1 = null;
   if (null != onQueryChange) {
     tmp5Result1 = null;
@@ -114,8 +114,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result1 = tmp5(selectedOptions(9684), obj1);
-      const tmp13 = selectedOptions(9684);
+      tmp5Result1 = tmp5(selectedOptions(9755), obj1);
+      const tmp13 = selectedOptions(9755);
     }
   }
   children[1] = tmp5Result1;
@@ -125,7 +125,7 @@ function SelectionOptionItem(item) {
   item = item.item;
   ({ onPressOptionItem: importDefault, selected, disabled, index: dependencyMap, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
   ({ clearable, start, end, iconContainerStyle, skipIcon, multi, renderIcon } = item);
-  let obj = item(4206);
+  let obj = item(4277);
   let flag = selected;
   if (selected == null) {
     flag = false;
@@ -136,7 +136,7 @@ function SelectionOptionItem(item) {
   if (selected == null) {
     flag2 = false;
   }
-  let radioA11yNative = item(4206).useRadioA11yNative({ selected: flag2, disabled });
+  let radioA11yNative = item(4277).useRadioA11yNative({ selected: flag2, disabled });
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
@@ -180,17 +180,17 @@ function SelectionOptionItem(item) {
     }
     const obj2 = { checked: null };
     obj2[0] = selected;
-    tmp6Result = tmp6(tmp2(5572).FormCheckbox, obj2);
+    tmp6Result = tmp6(tmp2(5617).FormCheckbox, obj2);
   } else {
     tmp6Result = null;
     if (true === selected) {
-      tmp6Result = tmp6(tmp2(9368).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result = tmp6(tmp2(9439).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result;
   obj1[1] = items1;
   obj[12] = closure_10(View, obj1);
-  return closure_8(item(5560).TableRow, obj);
+  return closure_8(item(5605).TableRow, obj);
 }
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { selectionOptionItemIconWrapper: null, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };

@@ -1,15 +1,15 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12499
+// Function ID: 12500
 // Name: usePowerupActiveStatus
-// Dependencies: [1908, 4367, 4368, 673, 4369, 586, 2]
+// Dependencies: [1979, 4449, 4450, 1074, 4451, 504, 2]
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 12431 (usePowerupActiveStatus)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "calculateAppliedBoosts" /* 4367 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
-import { GuildFeatures } from "ME" /* 673 */;
-import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4369 */;
+// Module 12499 (usePowerupActiveStatus)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "calculateAppliedBoosts" /* 4449 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4450 */;
+import { GuildFeatures } from "ME" /* 1074 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4451 */;
 
 const require = arg1;
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: c4, PowerupActiveStatusType: c5, POWERUPS_INCLUDED_IN_LEVEL: closure_6, BOOSTING_TIER_TO_LEVEL_SKU_ID: error } = BoostedGuildTiers);
@@ -113,7 +113,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
             obj1[3] = levelPowerup;
             obj = obj1;
           } else if (hasItem1) {
-            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: true };
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: false };
             obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
             obj2[1] = skuId;
             obj2[3] = skuId;
@@ -133,7 +133,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
     }
   });
   if (mapped.length <= 0) {
-    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "context" };
+    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "isArray" };
     obj[0] = constants.INACTIVE;
     let first = obj;
   } else {
@@ -237,7 +237,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
             obj1[3] = levelPowerup;
             obj = obj1;
           } else if (hasItem1) {
-            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: true };
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: false };
             obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
             obj2[1] = skuId;
             obj2[3] = skuId;

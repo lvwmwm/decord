@@ -1,14 +1,14 @@
-// Module ID: 10291
-// Function ID: 10292
+// Module ID: 10362
+// Function ID: 10363
 // Name: BackspaceIcon
-// Dependencies: [19, 21, 709, 4196, 10292, 2]
+// Dependencies: [19, 21, 576, 4261, 10363, 2]
 // Exports: BackspaceIcon
 
-// Module 10291 (BackspaceIcon)
+// Module 10362 (BackspaceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10292 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 10363 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

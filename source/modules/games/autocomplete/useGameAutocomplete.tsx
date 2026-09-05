@@ -1,17 +1,17 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8899
+// Function ID: 8900
 // Name: fetchStore
-// Dependencies: [32, 19, 5069, 673, 586, 5070, 8830, 2]
+// Dependencies: [32, 19, 5108, 1074, 504, 5109, 8900, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 8829 (fetchStore)
-import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5070 */;
-import _fetchGameAutocomplete from "_fetchGameAutocomplete" /* 8830 */;
+// Module 8899 (fetchStore)
+import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5109 */;
+import _fetchGameAutocomplete from "_fetchGameAutocomplete" /* 8900 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import importDefaultResult from "set" /* 5069 */;
-import { QueryIds } from "ME" /* 673 */;
-import initialize from "initialize" /* 586 */;
+import importDefaultResult from "set" /* 5108 */;
+import { QueryIds } from "ME" /* 1074 */;
+import initialize from "initialize" /* 504 */;
 
 require = arg1;
 let c4 = importDefaultResult;

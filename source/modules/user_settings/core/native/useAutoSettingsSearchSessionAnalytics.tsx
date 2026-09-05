@@ -1,22 +1,22 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16905
+// Function ID: 16906
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 7347, 14616, 586, 688, 8202, 4953, 6936, 2]
+// Dependencies: [19, 1895, 14691, 504, 1093, 8272, 4992, 6996, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 16827 (useAutoSettingsSearchSessionAnalytics)
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4953 */;
-import usePreviousDefault from "usePrevious" /* 8202 */;
+// Module 16905 (useAutoSettingsSearchSessionAnalytics)
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4992 */;
+import usePreviousDefault from "usePrevious" /* 8272 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getState" /* 7347 */;
-import closure_5 from "zustandStore" /* 14616 */;
+import closure_4 from "getState" /* 1895 */;
+import closure_5 from "zustandStore" /* 14691 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/user_settings/core/native/useAutoSettingsSearchSessionAnalytics.tsx");
 
 export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSearchSessionAnalytics() {
   const items = [closure_4];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => {
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => {
     state = state.getState();
     return state === stateFromStores(table[4]).AppStates.ACTIVE;
   });

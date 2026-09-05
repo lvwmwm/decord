@@ -1,10 +1,10 @@
 // Module ID: 12264
 // Function ID: 12265
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 12264 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "fcd5f78c5aaa2fef71964631510c3784", name: "img_artists_creators", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "8eabe75983473aecbcb03200bb7a397b", name: "ic_alert", type: "png" });

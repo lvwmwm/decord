@@ -1,22 +1,22 @@
-// Module ID: 10027
-// Function ID: 10028
+// Module ID: 10098
+// Function ID: 10099
 // Name: getFirstGuildIncidentId
-// Dependencies: [1339, 1908, 4120, 4302, 1921, 10009, 7947, 673, 644, 11, 7946, 503, 4125, 10028, 2]
+// Dependencies: [1221, 1979, 4199, 4381, 1371, 10080, 8016, 1074, 563, 11, 8015, 1086, 4204, 10099, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10027 (getFirstGuildIncidentId)
+// Module 10098 (getFirstGuildIncidentId)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import fromStringAll from "fromString" /* 503 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import DATE_CONFIG from "DATE_CONFIG" /* 7946 */;
-import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_7 from "handleConnectionOpen" /* 4302 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "computeAlertSettings" /* 10009 */;
-import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7947 */;
-import ME from "ME" /* 673 */;
+import fromStringAll from "fromString" /* 1086 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 8015 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_7 from "handleConnectionOpen" /* 4381 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "computeAlertSettings" /* 10080 */;
+import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8016 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function getFirstGuildIncidentId(guildId) {
@@ -41,7 +41,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp22 = tmp17;
         if (obj7.hasDetectedActivity(tmp18)) {
           let tmp8 = tmp20;
-          let tmp19Result = tmp19(7946);
+          let tmp19Result = tmp19(8015);
           let tmp9 = tmp17;
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let tmp11 = importAll;
@@ -63,7 +63,7 @@ function getFirstGuildIncidentId(guildId) {
           }
         } else {
           let tmp6 = tmp20;
-          tmp19Result = tmp19(7946);
+          tmp19Result = tmp19(8015);
           let tmp7 = tmp17;
         }
       }
@@ -76,14 +76,14 @@ function getFirstGuildIncidentId(guildId) {
 const result = require("set").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
 
 export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
-  let obj = stateFromStores1(644);
+  let obj = stateFromStores1(563);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [closure_9];
-  stateFromStores1 = stateFromStores1(644).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
-  const obj2 = stateFromStores1(644);
+  stateFromStores1 = stateFromStores1(563).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
+  const obj2 = stateFromStores1(563);
   const items2 = [closure_5];
-  const stateFromStoresArray = stateFromStores1(644).useStateFromStoresArray(items2, () => {
+  const stateFromStoresArray = stateFromStores1(563).useStateFromStoresArray(items2, () => {
     const keys = closure_1_1(closure_1_3[9]).keys(stateFromStores1);
     return keys.map((arg0) => guild.getGuild(arg0));
   });
@@ -100,7 +100,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         let tmp20 = dependencyMap;
         let tmp17 = stateFromStores1;
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(7946);
+        let obj8 = stateFromStores1(8015);
         let tmp21 = tmp15;
         if (obj8.hasDetectedActivity(tmp16)) {
           let tmp9 = importAll;
@@ -120,7 +120,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         } else {
           let tmp6 = tmp17;
           let tmp7 = tmp19;
-          let tmp18Result = tmp18(7946);
+          let tmp18Result = tmp18(8015);
           let tmp8 = tmp15;
         }
       }
@@ -131,7 +131,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
 };
 export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   const _require = id;
-  let obj = _require(644);
+  let obj = _require(563);
   const items = [closure_5, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const guild = closure_1_5.getGuild(closure_0);
@@ -148,7 +148,7 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
     }
   });
   const items1 = [closure_9];
-  const stateFromStores1 = _require(644).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(563).useStateFromStores(items1, () => {
     let guildIncident = null;
     if (null != closure_0) {
       guildIncident = closure_1_9.getGuildIncident(tmp);
@@ -158,8 +158,8 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(7946).isUnderLockdown(stateFromStores1);
-    const tmpResult = _require(7946);
+    isUnderLockdownResult = _require(8015).isUnderLockdown(stateFromStores1);
+    const tmpResult = _require(8015);
   }
   obj[2] = isUnderLockdownResult;
   return obj;
@@ -250,7 +250,7 @@ export const useDisabledActions = function useDisabledActions(id) {
   if (id == null) {
     id = closure_11;
   }
-  let obj = id(644);
+  let obj = id(563);
   const items = [closure_9];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_9.getGuildIncident(id), items1);
@@ -298,7 +298,7 @@ export const useDisabledActions = function useDisabledActions(id) {
 export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
   const _require = arg0;
   const items = [closure_6, closure_5];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     const guild = closure_1_5.getGuild(callback);
     return callback(closure_1_3[13]).canReportRaid(guild, closure_1_6);
   });

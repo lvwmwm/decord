@@ -1,16 +1,16 @@
-// Module ID: 11279
-// Function ID: 11280
+// Module ID: 11347
+// Function ID: 11348
 // Name: canSeeChannelSummaries
-// Dependencies: [1430, 1908, 673, 1393, 1911, 644, 2]
+// Dependencies: [1975, 1979, 1074, 1964, 1982, 563, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 11279 (canSeeChannelSummaries)
+// Module 11347 (canSeeChannelSummaries)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1393 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
+import set2 from "set" /* 1964 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1975 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
 
 function canSeeChannelSummaries(channel, flag, arg2) {
   if (flag === undefined) {
@@ -139,7 +139,7 @@ export const useGuildEligibleForSummaries = function useGuildEligibleForSummarie
   const _require = arg0;
   const items = [closure_3];
   const items1 = [arg0];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     let id;
     if (lib != null) {
       id = lib.id;

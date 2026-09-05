@@ -1,14 +1,14 @@
-// Module ID: 9726
-// Function ID: 9727
+// Module ID: 9797
+// Function ID: 9798
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 7459, 586, 9727, 9594, 12, 11, 684, 9710, 2]
+// Dependencies: [32, 19, 7526, 504, 9798, 9665, 12, 11, 1090, 9781, 2]
 // Exports: default
 
-// Module 9726 (useGuildEventRecurrences)
-import usePrevValueDefault from "usePrevValue" /* 9727 */;
+// Module 9797 (useGuildEventRecurrences)
+import usePrevValueDefault from "usePrevValue" /* 9798 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "scheduledEventSort" /* 7459 */;
+import closure_5 from "scheduledEventSort" /* 7526 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
@@ -17,15 +17,15 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
   const _require = arg0;
   importDefault = arg1;
   dependencyMap = byWeekday;
-  let obj = _require(586);
+  let obj = _require(504);
   let items = [first];
   const stateFromStores = obj.useStateFromStores(items, () => first.getGuildScheduledEvent(closure_0));
   const tmp4 = usePrevValueDefault(byWeekday);
   closure_4 = tmp4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      let tmpResult = tmp(9594);
-      tmpResult = tmp(9594);
+      let tmpResult = tmp(9665);
+      tmpResult = tmp(9665);
       let _Date = Date;
       let rRule = tmpResult.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
@@ -57,8 +57,8 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
       if (null != callback2) {
         const mapped = first.map((getTime) => {
           const time = getTime.getTime();
-          const rounded = Math.floor(time / callback(684).Millis.SECOND);
-          return callback(11).fromTimestamp(rounded * callback(684).Millis.SECOND);
+          const rounded = Math.floor(time / callback(1090).Millis.SECOND);
+          return callback(11).fromTimestamp(rounded * callback(1090).Millis.SECOND);
         });
         const guildEventUserCounts = callback2(byWeekday[9]).getGuildEventUserCounts(tmp, closure_0, mapped);
         const obj = callback2(byWeekday[9]);

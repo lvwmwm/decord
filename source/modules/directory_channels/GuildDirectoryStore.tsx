@@ -1,14 +1,14 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12312
+// Function ID: 12313
 // Name: isFetching
-// Dependencies: [12237, 12236, 586, 706, 2]
+// Dependencies: [12305, 12304, 504, 573, 2]
 
-// Module 12244 (isFetching)
+// Module 12312 (isFetching)
 import set2 from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import guildDirectoryEntryFromServer from "guildDirectoryEntryFromServer" /* 12236 */;
-import DirectoryEntryTypes from "DirectoryEntryTypes" /* 12237 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import guildDirectoryEntryFromServer from "guildDirectoryEntryFromServer" /* 12304 */;
+import DirectoryEntryTypes from "DirectoryEntryTypes" /* 12305 */;
 
 const DirectoryEntryCategories = DirectoryEntryTypes.DirectoryEntryCategories;
 let closure_3 = Object.freeze({});

@@ -1,18 +1,18 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 13038
+// Function ID: 13039
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 4503, 1215, 21, 4218, 4936, 4481, 709, 9991, 586, 4547, 4482, 7013, 4477, 1233, 2]
+// Dependencies: [19, 17, 4582, 502, 21, 4296, 4975, 4560, 576, 10062, 504, 4612, 4561, 7073, 4556, 1114, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 12970 (VoicePanelStreamPreview)
+// Module 13038 (VoicePanelStreamPreview)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4218" /* 4218 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import importDefaultResult from "module_4296" /* 4296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -51,8 +51,8 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(9991)(guildId, channelId, ownerId).previewUrl;
-  let obj = mode(586);
+  const previewUrl = stream(10062)(guildId, channelId, ownerId).previewUrl;
+  let obj = mode(504);
   const items = [closure_4, closure_5];
   const items1 = [stream];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -66,7 +66,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     }
     return tmp2;
   }, items1);
-  obj1 = mode(4218);
+  obj1 = mode(4296);
   class T {
     constructor() {
       obj = mode;
@@ -88,7 +88,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
       return obj;
     }
   }
-  obj = { mode, withTiming: mode(4482).withTiming, OPACITY_TIMING: closure_10 };
+  obj = { mode, withTiming: mode(4561).withTiming, OPACITY_TIMING: closure_10 };
   T.__closure = obj;
   T.__workletHash = 15496474861955;
   T.__initData = closure_12;
@@ -107,33 +107,33 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     obj2[0] = previewUrl;
     obj1[1] = obj2;
     obj1[2] = tmp.streamPreviewImage;
-    tmp14 = callback(tmp2(4218).Image, obj1);
+    tmp14 = callback(tmp2(4296).Image, obj1);
   }
   const items2 = [tmp14, ];
   const obj3 = { style: animatedStyle, layout, children: null };
   const tmp11 = closure_7;
   const tmp12 = closure_8;
-  const tmp4 = stream(9991);
+  const tmp4 = stream(10062);
   if (stateFromStores) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.ownStreamTextContainer;
     const obj5 = { variant: "text-sm/semibold", color: "text-overlay-light", style: null, children: null };
     obj5[2] = tmp.ownStreamText;
-    const intl2 = tmp8(1233).intl;
-    obj5[3] = intl2.string(tmp8(1233).t["ro/HN8"]);
-    obj4[1] = tmp16(tmp8(4477).Text, obj5);
+    const intl2 = tmp8(1114).intl;
+    obj5[3] = intl2.string(tmp8(1114).t["ro/HN8"]);
+    obj4[1] = tmp16(tmp8(4556).Text, obj5);
     let tmp16Result = tmp16(closure_3, obj4);
   } else {
     const obj6 = { layout: null, disabled: null, text: null, size: "sm", variant: "primary-overlay", onPress: null };
     obj6[0] = layout;
     obj6[1] = disabled;
-    const intl = tmp8(1233).intl;
-    obj6[2] = intl.string(tmp8(1233).t["7Xq/nV"]);
+    const intl = tmp8(1114).intl;
+    obj6[2] = intl.string(tmp8(1114).t["7Xq/nV"]);
     obj6[5] = onPress;
     tmp16Result = tmp16(closure_9, obj6);
   }
   obj3[2] = tmp16Result;
-  items2[1] = callback(stream(7013), obj3);
+  items2[1] = callback(stream(7073), obj3);
   obj[5] = items2;
   return tmp11(tmp12, obj);
 };

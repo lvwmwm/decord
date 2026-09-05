@@ -1,24 +1,24 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11285
+// Function ID: 11286
 // Name: resolveAsset
-// Dependencies: [5404, 673, 11218, 11219, 11220, 11221, 11222, 7641, 11229, 11230, 5412, 1485, 1894, 2]
+// Dependencies: [5444, 1074, 11286, 11287, 11288, 11289, 11290, 7708, 11297, 11298, 5452, 1365, 1878, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 11217 (resolveAsset)
+// Module 11285 (resolveAsset)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1894 */;
-import set2 from "set" /* 5412 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7641 */;
-import metadataDefault from "metadata" /* 11218 */;
-import metadataDefault2 from "metadata" /* 11219 */;
-import metadataDefault3 from "metadata" /* 11220 */;
-import metadataDefault4 from "metadata" /* 11221 */;
-import _getDefaultRewardName from "_getDefaultRewardName" /* 11222 */;
-import metadataDefault5 from "metadata" /* 11229 */;
-import metadataDefault6 from "metadata" /* 11230 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5404 */;
+import ME from "ME" /* 1074 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1878 */;
+import set2 from "set" /* 5452 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7708 */;
+import metadataDefault from "metadata" /* 11286 */;
+import metadataDefault2 from "metadata" /* 11287 */;
+import metadataDefault3 from "metadata" /* 11288 */;
+import metadataDefault4 from "metadata" /* 11289 */;
+import _getDefaultRewardName from "_getDefaultRewardName" /* 11290 */;
+import metadataDefault5 from "metadata" /* 11297 */;
+import metadataDefault6 from "metadata" /* 11298 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5444 */;
 
 function resolveAsset(id, questBarHeroVideo) {
   if (questBarHeroVideo.startsWith("blob:")) {

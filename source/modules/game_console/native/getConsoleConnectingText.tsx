@@ -1,13 +1,13 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17175
+// Function ID: 17176
 // Name: getConsoleConnectingText
-// Dependencies: [673, 1233, 2]
+// Dependencies: [1074, 1114, 2]
 // Exports: getConsoleConnectingText
 
-// Module 17097 (getConsoleConnectingText)
+// Module 17175 (getConsoleConnectingText)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const PlatformTypes = ME.PlatformTypes;
 const result = set.fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 16431
-// Function ID: 16432
+// Module ID: 16507
+// Function ID: 16508
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 7091, 1924, 21, 1233, 4481, 709, 11053, 7695, 5084, 8687, 8061, 8281, 10214, 4331, 7804, 1492, 7138, 4477, 16428, 5086, 4299, 4205, 16424, 5542, 1431, 6547, 4325, 8028, 4426, 15139, 16377, 2]
+// Dependencies: [5, 32, 19, 17, 7151, 1374, 21, 1114, 4560, 576, 11121, 7763, 5123, 8757, 8130, 8351, 10285, 4413, 7872, 1477, 7198, 4556, 16504, 5125, 4378, 4271, 16500, 5587, 1396, 6606, 4404, 8097, 4505, 15215, 16453, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 16431 (AddEmojiButton)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import context from "context" /* 16377 */;
+// Module 16507 (AddEmojiButton)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import context from "context" /* 16453 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
+import { EmojiIntention } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function AddEmojiButton(channel) {
@@ -124,13 +124,13 @@ function ReactActionSheetBase(content) {
             } else {
               closure_0 = tmp4;
               closure_1_5(true);
-              v0(8281).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
-              const obj5 = v0(8281);
+              v0(8351).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
+              const obj5 = v0(8351);
               obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = closure_1_0.id;
               obj1[1] = closure_1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(8281).feedItemActioned(obj1);
+              v0(8351).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };
@@ -452,11 +452,11 @@ export const getStatusReplyContent = function getStatusReplyContent(reply) {
   }
   if (null != attachments) {
     if (attachments.length > 0) {
-      const intl2 = tmp5(1233).intl;
+      const intl2 = tmp5(1114).intl;
       obj = { attachmentsCount: null };
       obj[0] = attachments.length;
       const _HermesInternal2 = HermesInternal;
-      items.push("> -# *" + intl2.formatToPlainString(tmp5(1233).t["JiNPo+"], obj) + "*");
+      items.push("> -# *" + intl2.formatToPlainString(tmp5(1114).t["JiNPo+"], obj) + "*");
     }
   }
   items.push(reply.reply);

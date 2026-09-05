@@ -1,9 +1,9 @@
-// Module ID: 6203
-// Function ID: 6204
+// Module ID: 6258
+// Function ID: 6259
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6203 (metadata)
+// Module 6258 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinSpotIllustration-2x.png.js");

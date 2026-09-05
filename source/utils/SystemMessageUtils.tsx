@@ -1,29 +1,29 @@
-// Module ID: 7917
-// Function ID: 7918
+// Module ID: 7986
+// Function ID: 7987
 // Name: getSystemMessageUserJoinMobile
-// Dependencies: [32, 4131, 1215, 1386, 1908, 4130, 1921, 673, 1233, 11, 7918, 7922, 4680, 4681, 7923, 7925, 4754, 4745, 7926, 7927, 7449, 2]
+// Dependencies: [32, 4210, 502, 1957, 1979, 4209, 1371, 1074, 1114, 11, 7987, 7991, 4712, 4713, 7992, 7994, 4793, 4783, 7995, 7996, 7516, 2]
 
-// Module 7917 (getSystemMessageUserJoinMobile)
+// Module 7986 (getSystemMessageUserJoinMobile)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4754 */;
-import reactParserFor from "reactParserFor" /* 7918 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7922 */;
-import identityHook from "identityHook" /* 7923 */;
-import getGuildProductPurchaseSystemMessageContentMobile from "getGuildProductPurchaseSystemMessageContentMobile" /* 7925 */;
-import getApplicationSubscriptionSystemMessageASTContent from "getApplicationSubscriptionSystemMessageASTContent" /* 7926 */;
-import getPrivateChannelIntegrationAddedSystemMessageContent from "getPrivateChannelIntegrationAddedSystemMessageContent" /* 7927 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4783 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4793 */;
+import reactParserFor from "reactParserFor" /* 7987 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7991 */;
+import identityHook from "identityHook" /* 7992 */;
+import getGuildProductPurchaseSystemMessageContentMobile from "getGuildProductPurchaseSystemMessageContentMobile" /* 7994 */;
+import getApplicationSubscriptionSystemMessageASTContent from "getApplicationSubscriptionSystemMessageASTContent" /* 7995 */;
+import getPrivateChannelIntegrationAddedSystemMessageContent from "getPrivateChannelIntegrationAddedSystemMessageContent" /* 7996 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "hasFlag" /* 4131 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "hasFlag" /* 4210 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function getSystemMessageUserJoinMobile(id) {
@@ -53,7 +53,7 @@ export default {
           obj = { username: null, usernameOnClick: null, otherUsername: null, otherUsernameOnClick: null };
           obj[0] = name;
           obj[1] = closure_12;
-          let tmp6Result = tmp6(4680);
+          let tmp6Result = tmp6(4712);
           obj[2] = tmp6Result.getName(null, channel_id, null);
           obj[3] = closure_12;
           return reactParserFor.astToString(intl18.formatToParts(getSystemLocale.t["7/Xl0S"], obj));
@@ -67,7 +67,7 @@ export default {
               obj = { username: null, usernameOnClick: null, otherUsername: null, otherUsernameOnClick: null };
               obj[0] = name;
               obj[1] = closure_12;
-              tmp6Result = tmp6(4680);
+              tmp6Result = tmp6(4712);
               obj[2] = tmp6Result.getName(null, channel_id, null);
               obj[3] = closure_12;
               let astToStringResult = reactParserFor.astToString(intl17.formatToParts(getSystemLocale.t.QtZ0RD, obj));
@@ -250,23 +250,23 @@ export default {
                     astToStringResult6 = null;
                     if (null != guild) {
                       if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
-                        let tmp34Result = tmp34(7918);
-                        const intl5 = tmp34(1233).intl;
+                        let tmp34Result = tmp34(7987);
+                        const intl5 = tmp34(1114).intl;
                         const obj14 = { guildName: null };
                         obj14[0] = guild.name;
-                        astToStringResult6 = tmp34Result.astToString(intl5.formatToParts(tmp34(1233).t.wt3ZUM, obj14));
-                      } else if (tmp34(7922).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
-                        tmp34Result = tmp34(7918);
-                        const intl4 = tmp34(1233).intl;
+                        astToStringResult6 = tmp34Result.astToString(intl5.formatToParts(tmp34(1114).t.wt3ZUM, obj14));
+                      } else if (tmp34(7991).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
+                        tmp34Result = tmp34(7987);
+                        const intl4 = tmp34(1114).intl;
                         obj15 = { guildName: null };
                         obj15[0] = guild.name;
-                        astToStringResult6 = tmp34Result.astToString(intl4.formatToParts(tmp34(1233).t.AkqI0g, obj15));
+                        astToStringResult6 = tmp34Result.astToString(intl4.formatToParts(tmp34(1114).t.AkqI0g, obj15));
                       } else {
-                        const intl3 = tmp34(1233).intl;
+                        const intl3 = tmp34(1114).intl;
                         obj16 = { guildName: null };
                         obj16[0] = guild.name;
-                        astToStringResult6 = tmp34(7918).astToString(intl3.formatToParts(tmp34(1233).t["a+lJKl"], obj16));
-                        const tmp34Result1 = tmp34(7918);
+                        astToStringResult6 = tmp34(7987).astToString(intl3.formatToParts(tmp34(1114).t["a+lJKl"], obj16));
+                        const tmp34Result1 = tmp34(7987);
                       }
                     }
                   }
@@ -291,7 +291,7 @@ export default {
                     if ("" !== content) {
                       const _Date = Date;
                       const date = new Date(content);
-                      str = date.toLocaleString(tmp21(1233).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+                      str = date.toLocaleString(tmp21(1114).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
                     }
                     obj17[2] = str;
                     astToStringResult7 = obj5.astToString(intl2.formatToParts(getSystemLocale.t.iOuWPk, obj17));
@@ -369,14 +369,14 @@ export default {
     const _require = arg0;
     let formatResult = null;
     if (null != table[arg0]) {
-      const intl = _require(1233).intl;
+      const intl = _require(1114).intl;
       let obj = { learnOnClick: null };
       obj = { onClick: null };
       obj[0] = function onClick() {
         return window.open(closure_1_13[closure_0]);
       };
       obj[0] = obj;
-      formatResult = intl.format(_require(1233).t.xw1Ij0, obj);
+      formatResult = intl.format(_require(1114).t.xw1Ij0, obj);
     }
     return formatResult;
   }

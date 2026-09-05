@@ -1,15 +1,15 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14763
+// Function ID: 14764
 // Name: route
-// Dependencies: [7906, 673, 11400, 1233, 14689, 14692, 2]
+// Dependencies: [7975, 1074, 11468, 1114, 14764, 14767, 2]
 
-// Module 14688 (route)
+// Module 14763 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14689 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14764 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.ACCOUNT_STANDING,
   getComponent() {
-    return require(14692) /* SettingsAccountStandingScreen */.default;
+    return require(14767) /* SettingsAccountStandingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

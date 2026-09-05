@@ -1,13 +1,13 @@
-// Module ID: 11441
-// Function ID: 11442
+// Module ID: 11509
+// Function ID: 11510
 // Name: useMediaModalFooterActionStore
-// Dependencies: [641, 702, 2]
+// Dependencies: [560, 1249, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 11441 (useMediaModalFooterActionStore)
+// Module 11509 (useMediaModalFooterActionStore)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 702 */;
-import keys from "keys" /* 641 */;
+import batchUpdates from "batchUpdates" /* 1249 */;
+import keys from "keys" /* 560 */;
 
 const obj = keys.create(() => ({}));
 const result = set.fileFinishedImporting("modules/media_viewer/native/useMediaModalFooterAction.tsx");
@@ -15,7 +15,7 @@ const result = set.fileFinishedImporting("modules/media_viewer/native/useMediaMo
 export const useMediaModalFooterActionStore = obj;
 export const setMediaModalFooterAction = function setMediaModalFooterAction(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_2.setState({ footerAction: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_2.setState({ footerAction: closure_0 }));
 };
 export const clearMediaModalFooterAction = function clearMediaModalFooterAction() {
   batchUpdates.batchUpdates(() => state.setState({ footerAction: "Array" }));

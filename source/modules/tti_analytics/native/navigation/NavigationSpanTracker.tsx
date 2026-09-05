@@ -1,9 +1,9 @@
-// Module ID: 17783
-// Function ID: 17784
+// Module ID: 17863
+// Function ID: 17864
 // Name: getLastBundle
-// Dependencies: [511, 17784, 2]
+// Dependencies: [1256, 17864, 2]
 
-// Module 17783 (getLastBundle)
+// Module 17863 (getLastBundle)
 import set from "set" /* 2 */;
 
 class NavigationSpanTracker {
@@ -37,9 +37,9 @@ prototype["beginNavigation"] = function beginNavigation(arg0) {
   const timestamp = Date.now();
   const obj = { traceId: null, navigationSpanId: null, spanTtiName: null, destinationKey: null, properties: null, startEpochMs: null, startMonotonicMs: null, deadlineTimer: null };
   const nowResult = performance.now();
-  obj[0] = self(511).v4();
-  const obj2 = self(511);
-  obj[1] = self(511).v4();
+  obj[0] = self(1256).v4();
+  const obj2 = self(1256);
+  obj[1] = self(1256).v4();
   ({ spanTtiName: obj[2], destinationKey: obj[3], properties: obj[4] } = arg0);
   obj[5] = timestamp;
   obj[6] = nowResult;
@@ -64,9 +64,9 @@ prototype["flush"] = function flush(arg0) {
     }
     self.active = null;
     if ("deadline_exceeded" === arg0) {
-      let INTERRUPTED = _require(17784).NavigationSpanStatus.DEADLINE_EXCEEDED;
+      let INTERRUPTED = _require(17864).NavigationSpanStatus.DEADLINE_EXCEEDED;
     } else {
-      INTERRUPTED = _require(17784).NavigationSpanStatus.INTERRUPTED;
+      INTERRUPTED = _require(17864).NavigationSpanStatus.INTERRUPTED;
     }
     const bundle = self.buildBundle(str, str.spanTtiName, true, INTERRUPTED);
     self.lastBundle = bundle;

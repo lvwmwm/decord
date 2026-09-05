@@ -1,17 +1,17 @@
-// Module ID: 5367
-// Function ID: 5368
+// Module ID: 5406
+// Function ID: 5407
 // Name: callback
-// Dependencies: [5, 5242, 673, 3, 527, 706, 695, 5368, 4721, 500, 2]
+// Dependencies: [5, 5281, 1074, 3, 1272, 573, 1242, 5407, 4753, 1250, 2]
 
-// Module 5367 (callback)
+// Module 5406 (callback)
 import timestampDefault from "timestamp" /* 3 */;
-import encodeProperties from "encodeProperties" /* 500 */;
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef4721 from "module_4721" /* 4721 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import encodeProperties from "encodeProperties" /* 1250 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import _modDef4753 from "module_4753" /* 4753 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5242 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "set" /* 5281 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function callback(arg0, arg1) {
@@ -36,10 +36,10 @@ let obj = {
     const HTTP = sendRequest.HTTP;
     const value = HTTP.get({ url: closure_6.CONNECTIONS, oldFormErrors: true, rejectWithError: true });
     return value.then((accounts) => {
-      let obj = callback(706);
+      let obj = callback(573);
       obj = { type: "USER_CONNECTIONS_UPDATE", local: true, accounts: accounts.body };
       return obj.dispatch(obj);
-    }, () => callback(706).dispatch({ type: "USER_CONNECTIONS_UPDATE", local: true, accounts: [] }));
+    }, () => callback(573).dispatch({ type: "USER_CONNECTIONS_UPDATE", local: true, accounts: [] }));
   },
   authorize(arg0) {
     closure_0 = arg0;
@@ -96,7 +96,7 @@ let obj = {
   },
   callback,
   connect(arg0, arg1, name, location, friend_sync) {
-    let obj = _modDef4721;
+    let obj = _modDef4753;
     obj = { url: closure_6.CONNECTION(arg0, arg1), body: null, context: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { name, friend_sync: null };
     friend_sync = undefined;
@@ -138,7 +138,7 @@ let obj = {
     return this.update(type, id, { show_activity: closure_0 });
   },
   update(arg0, arg1, body) {
-    let obj = _modDef4721;
+    let obj = _modDef4753;
     obj = { url: closure_6.CONNECTION(arg0, arg1), body, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: encodeProperties.NetworkActionNames.USER_CONNECTIONS_UPDATE, properties: null };
     const merged = Object.assign(body);
@@ -153,8 +153,8 @@ let obj = {
     let obj = dispatcherDefault;
     obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING", integrationId: id, joining: true };
     obj.dispatch(obj);
-    const HTTP = _require(527).HTTP;
-    obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: _require(527).rejectWithMigratedError() };
+    const HTTP = _require(1272).HTTP;
+    obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: _require(1272).rejectWithMigratedError() };
     HTTP.post(obj, (ok) => {
       let obj = callback(closure_1_2[5]);
       obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING", integrationId: closure_0, joining: false };

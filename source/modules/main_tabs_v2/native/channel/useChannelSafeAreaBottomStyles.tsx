@@ -1,20 +1,20 @@
-// Module ID: 11289
-// Function ID: 11290
+// Module ID: 11357
+// Function ID: 11358
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5238, 4121, 1386, 4532, 4557, 673, 1393, 4481, 709, 11290, 4968, 4345, 644, 1625, 1234, 4197, 7804, 2]
+// Dependencies: [19, 5277, 4200, 1957, 1908, 4583, 1074, 1964, 4560, 576, 11358, 5007, 4427, 563, 1609, 1115, 4262, 7872, 2]
 // Exports: default
 
-// Module 11289 (useChannelSafeAreaBottomStyles)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11357 (useChannelSafeAreaBottomStyles)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5238 */;
-import closure_5 from "initialize" /* 4121 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_8 from "createRTCConnection" /* 4557 */;
-import { InputModes } from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import closure_4 from "_handleConnectionOpen" /* 5277 */;
+import closure_5 from "initialize" /* 4200 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_8 from "createRTCConnection" /* 4583 */;
+import { InputModes } from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_11 = { LURKER: "lurker", VOICE: "voice", CHAT: "chat", DIRECTORY: "directory", EXPRESSION_PICKER: "expression", MEDIA: "media", APPS: "apps", NONE: "none" };

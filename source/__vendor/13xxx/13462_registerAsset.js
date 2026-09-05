@@ -1,10 +1,10 @@
 // Module ID: 13462
 // Function ID: 13463
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13462 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 177, height: 112, scales: [2, 3], hash: "ca47b5bc4b94bd1dd969b5ea6e31ef36", name: "guild_subscription_no_guilds_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 199.5, scales: [2, 3], hash: "84a21c838928df371966fa4ffd9053d1", name: "nitro_home_banner", type: "png" });

@@ -1,24 +1,24 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16703
+// Function ID: 16704
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 1386, 673, 1232, 21, 4481, 709, 7209, 6921, 11154, 4492, 16627, 644, 1499, 2]
+// Dependencies: [19, 17, 1957, 1074, 1113, 21, 4560, 576, 7269, 6981, 11222, 4571, 16704, 563, 1484, 2]
 
-// Module 16626 (ThreadsScreen)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6921 */;
-import ThreadListSectionDefault from "ThreadListSection" /* 16627 */;
+// Module 16703 (ThreadsScreen)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6981 */;
+import ThreadListSectionDefault from "ThreadListSection" /* 16704 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import { SearchTypes } from "ME" /* 673 */;
-import { OpenThreadAnalyticsLocations as closure_7 } from "AbortCodes" /* 1232 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import { SearchTypes } from "ME" /* 1074 */;
+import { OpenThreadAnalyticsLocations as closure_7 } from "AbortCodes" /* 1113 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ThreadsScreen(channel) {
   channel = channel.channel;
-  let obj = channel(7209);
+  let obj = channel(7269);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const callback = importAllResult.useCallback(() => {
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo((searchContext) => {
   } else {
     channelId = null;
   }
-  let obj = channelId(644);
+  let obj = channelId(563);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getChannel(channelId));
   let tmp4 = null;
@@ -75,10 +75,10 @@ const memoResult = importAllResult.memo((searchContext) => {
   return tmp4;
 });
 const memoResult1 = importAllResult.memo(() => {
-  let obj = channelId(1499);
+  let obj = channelId(1484);
   channelId = obj.useRoute().params.channelId;
   const items = [closure_5];
-  const stateFromStores = channelId(644).useStateFromStores(items, () => closure_1_5.getChannel(channelId));
+  const stateFromStores = channelId(563).useStateFromStores(items, () => closure_1_5.getChannel(channelId));
   let tmp3 = null;
   if (null != stateFromStores) {
     obj = { style: null, channel: null };

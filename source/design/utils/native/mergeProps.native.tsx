@@ -1,10 +1,10 @@
-// Module ID: 4202
-// Function ID: 4203
+// Module ID: 4267
+// Function ID: 4268
 // Name: chainCallbacks
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 4202 (chainCallbacks)
+// Module 4267 (chainCallbacks)
 import set from "set" /* 2 */;
 
 function chainCallbacks(arg0, arg1) {

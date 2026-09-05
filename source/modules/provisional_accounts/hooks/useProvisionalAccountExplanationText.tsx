@@ -1,13 +1,13 @@
-// Module ID: 12561
-// Function ID: 12562
+// Module ID: 12629
+// Function ID: 12630
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 673, 12562, 1233, 1994, 2]
+// Dependencies: [19, 1074, 12630, 1114, 2024, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 12561 (useProvisionalAccountExplanationText)
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12562 */;
+// Module 12629 (useProvisionalAccountExplanationText)
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12630 */;
 import closure_3 from "noop" /* 19 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");

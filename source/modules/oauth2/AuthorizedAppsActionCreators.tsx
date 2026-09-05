@@ -1,14 +1,14 @@
-// Module ID: 7110
-// Function ID: 7111
+// Module ID: 7170
+// Function ID: 7171
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 7047, 673, 4365, 706, 527, 2]
+// Dependencies: [5, 7107, 1074, 4447, 573, 1272, 2]
 
-// Module 7110 (tokensToAppTokensMap)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7170 (tokensToAppTokensMap)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "recomputeFromAppTokens" /* 7047 */;
-import { FetchState } from "recomputeFromAppTokens" /* 7047 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "recomputeFromAppTokens" /* 7107 */;
+import { FetchState } from "recomputeFromAppTokens" /* 7107 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function tokensToAppTokensMap(arg0, arr) {
@@ -85,11 +85,11 @@ function _fetchAuthorizedApps() {
               c1 = 1;
               const obj3 = { value: null, done: false };
               obj3[0] = value.then((body) => {
-                let obj = v3(706);
+                let obj = v3(573);
                 obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == closure_0, tokens: closure_1_8(body.body, closure_0) };
                 return obj.dispatch(obj);
               }, () => {
-                let request = v3(706);
+                let request = v3(573);
                 if (null == closure_0) {
                   request = { type: "full" };
                 } else {
@@ -166,7 +166,7 @@ obj = {
   },
   delete(arg0) {
     const self = this;
-    const HTTP = self(527).HTTP;
+    const HTTP = self(1272).HTTP;
     const obj = { url: Endpoints.OAUTH2_TOKEN(arg0), oldFormErrors: true, rejectWithError: true };
     HTTP.del({ url: Endpoints.OAUTH2_TOKEN(arg0), oldFormErrors: true, rejectWithError: true }).then(() => {
       const response = self.fetch();

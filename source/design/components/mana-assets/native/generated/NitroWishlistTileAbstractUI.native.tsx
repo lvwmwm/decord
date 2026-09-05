@@ -1,14 +1,14 @@
-// Module ID: 6250
-// Function ID: 6251
+// Module ID: 6305
+// Function ID: 6306
 // Name: NitroWishlistTileAbstractUI
-// Dependencies: [21, 5542, 6251, 2]
+// Dependencies: [21, 5587, 6306, 2]
 // Exports: NitroWishlistTileAbstractUI
 
-// Module 6250 (NitroWishlistTileAbstractUI)
+// Module 6305 (NitroWishlistTileAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6251 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6306 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWishlistTileAbstractUI.native.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14092
-// Function ID: 14093
+// Module ID: 14178
+// Function ID: 14179
 // Name: Slider
-// Dependencies: [19, 17, 21, 4481, 709, 4449, 4450, 8208, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4528, 4529, 8278, 2]
 // Exports: Slider
 
-// Module 14092 (Slider)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14178 (Slider)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -58,7 +58,7 @@ export const Slider = function Slider(step) {
   obj.minimumTrackTintColor = tmp2.minimumTrackTintColor.backgroundColor;
   obj.maximumTrackTintColor = tmp2.maximumTrackTintColor.backgroundColor;
   obj.tapToSeek = true;
-  items1[1] = callback(step(8208), obj);
+  items1[1] = callback(step(8278), obj);
   let tmp8Result = null;
   if (null != endIcon) {
     obj1 = { style: null, children: null };

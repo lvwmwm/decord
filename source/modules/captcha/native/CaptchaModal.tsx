@@ -1,23 +1,23 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17287
+// Function ID: 17288
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15870, 15871, 21, 4481, 6884, 1499, 17208, 7090, 4934, 5647, 4477, 1233, 4936, 11209, 17209, 15878, 2]
+// Dependencies: [19, 17, 15946, 15947, 21, 4560, 6944, 1484, 17288, 7150, 4973, 5692, 4556, 1114, 4975, 11277, 17289, 15954, 2]
 // Exports: default
 
-// Module 17207 (CaptchaModal)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
-import Background from "Background" /* 7090 */;
+// Module 17287 (CaptchaModal)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1484 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
+import Background from "Background" /* 7150 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15870 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15871 */;
+import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15946 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15947 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ Keyboard: c4, View: c5 } = get_ActivityIndicator);
@@ -37,7 +37,7 @@ export default function CaptchaModal(arg0) {
   ({ close: dependencyMap, sitekey: closure_3, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let navigation;
   let callback;
-  const tmp2 = callback2(onReject(6884)());
+  const tmp2 = callback2(onReject(6944)());
   let obj = createStandardNavigationFactories;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -59,21 +59,21 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(17208)({ onReject, analyticsType: memo });
+  callback = onReject(17288)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
   obj = { style: tmp2.contentContainer, spacing: 12, children: null };
   const items1 = [callback(AccountAgeTier10LargeBadge.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
-    const intl = tmp3(1233).intl;
-    headerText = intl.string(tmp3(1233).t.FpoiHe);
+    const intl = tmp3(1114).intl;
+    headerText = intl.string(tmp3(1114).t.FpoiHe);
   }
   const items2 = [callback(Text.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   obj = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
   if (bodyText == null) {
-    const intl2 = tmp3(1233).intl;
-    bodyText = intl2.string(tmp3(1233).t["/CidxO"]);
+    const intl2 = tmp3(1114).intl;
+    bodyText = intl2.string(tmp3(1114).t["/CidxO"]);
   }
   obj1 = { startHeight: 900, startExpanded: true, children: null };
   let obj2 = { children: null };
@@ -139,7 +139,7 @@ export default function CaptchaModal(arg0) {
     },
     text: null
   };
-  const intl3 = tmp3(1233).intl;
+  const intl3 = tmp3(1114).intl;
   obj3[2] = intl3.string(getSystemLocale.t["cY+Oob"]);
   items1[2] = callback(Button.Button, obj3);
   obj[2] = items1;

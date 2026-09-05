@@ -1,21 +1,21 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15209
+// Function ID: 15210
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [19, 17, 21, 4481, 4477, 1233, 1296, 15134, 15135, 15136, 15139, 15140, 2]
+// Dependencies: [19, 17, 21, 4560, 4556, 1114, 1178, 15210, 15211, 15212, 15215, 15216, 2]
 // Exports: default
 
-// Module 15133 (GuildRoleSubscriptionsSectionHeader)
+// Module 15209 (GuildRoleSubscriptionsSectionHeader)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 15134 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15135 */;
-import useFetchListingsForGuild from "useFetchListingsForGuild" /* 15136 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 15139 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 15210 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15211 */;
+import useFetchListingsForGuild from "useFetchListingsForGuild" /* 15212 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 15215 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function GuildRoleSubscriptionsSectionHeader() {

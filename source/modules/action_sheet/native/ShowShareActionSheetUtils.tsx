@@ -1,17 +1,17 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 8363
+// Function ID: 8364
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [673, 8294, 695, 8295, 1485, 1234, 5523, 2]
+// Dependencies: [1074, 8364, 1242, 8365, 1365, 1115, 5568, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8293 (trackAppClickInNativeShareSheet)
+// Module 8363 (trackAppClickInNativeShareSheet)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import getExtensionFromContentType from "getExtensionFromContentType" /* 5523 */;
-import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 8294 */;
-import apexExperiment from "apexExperiment" /* 8295 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import getExtensionFromContentType from "getExtensionFromContentType" /* 5568 */;
+import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 8364 */;
+import apexExperiment from "apexExperiment" /* 8365 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = SHARE_PREPARING_MODAL_KEY.SHARE_SHEET_PRESENT_DELAY_MS;
@@ -32,14 +32,14 @@ export const getMediaShareParams = function getMediaShareParams(source) {
     if (true !== source.disableDownload) {
       if (null != source.shareURI) {
         if (obj11.isDiscordDirectAssetUrl(source.shareURI)) {
-          let tmpResult = tmp(1234);
+          let tmpResult = tmp(1115);
           if (tmpResult.isAndroid()) {
             obj = { presentDelayMs: null };
             obj[0] = closure_4;
           }
           ({ videoURI, contentType } = source);
           if (null != videoURI) {
-            tmpResult = tmp(5523);
+            tmpResult = tmp(5568);
             const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
             obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj[0] = videoURI;
@@ -54,7 +54,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj[1] = tmp11;
             return obj;
           } else {
-            const decideFileExtensionResult1 = tmp(5523).decideFileExtension(source.uri, contentType, true);
+            const decideFileExtensionResult1 = tmp(5568).decideFileExtension(source.uri, contentType, true);
             const obj2 = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj2[0] = source.shareURI;
             let tmp6;

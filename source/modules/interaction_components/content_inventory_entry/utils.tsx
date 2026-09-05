@@ -1,13 +1,13 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8109
+// Function ID: 8110
 // Name: isContentInventoryFallbackEmbed
-// Dependencies: [673, 1399, 2]
+// Dependencies: [1074, 1384, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 8040 (isContentInventoryFallbackEmbed)
+// Module 8109 (isContentInventoryFallbackEmbed)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import hasFlag from "hasFlag" /* 1399 */;
+import ME from "ME" /* 1074 */;
+import hasFlag from "hasFlag" /* 1384 */;
 
 const MessageEmbedFlags = ME.MessageEmbedFlags;
 const result = set.fileFinishedImporting("modules/interaction_components/content_inventory_entry/utils.tsx");

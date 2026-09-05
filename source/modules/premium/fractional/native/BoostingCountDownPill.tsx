@@ -1,26 +1,26 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13517
+// Function ID: 13518
 // Name: handlePress
-// Dependencies: [17, 21, 4481, 709, 4448, 13445, 2008, 1233, 4477, 2]
+// Dependencies: [17, 21, 4560, 576, 4527, 13518, 1896, 1114, 4556, 2]
 // Exports: default
 
-// Module 13444 (handlePress)
+// Module 13517 (handlePress)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import Text from "Text" /* 4477 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import Text from "Text" /* 4556 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 function handlePress() {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { aboutText: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t["07lzz7"]);
-  obj.openLazy(asyncRequireImpl(13445, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  obj.openLazy(asyncRequireImpl(13518, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -62,7 +62,7 @@ export default function BoostingCountDownPill(style) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   const obj3 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: null };
-  const intl = tmp10(1233).intl;
+  const intl = tmp10(1114).intl;
   obj3[3] = intl.string(getSystemLocale.t["5nrJDO"]);
   obj2[1] = closure_5(Text.Text, obj3);
   items1[1] = closure_5(closure_4, obj2);

@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8088
+// Function ID: 8089
 // Name: isMessageNewerThanImprovedMarkdownEpoch
 // Dependencies: [11, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 8019 (isMessageNewerThanImprovedMarkdownEpoch)
+// Module 8088 (isMessageNewerThanImprovedMarkdownEpoch)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 

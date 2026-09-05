@@ -1,18 +1,18 @@
-// Module ID: 7186
-// Function ID: 7187
+// Module ID: 7246
+// Function ID: 7247
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1982, 7036, 1386, 1984, 1908, 673, 1393, 7187, 7190, 7199, 7166, 7202, 7204, 7162, 7205, 7206, 4391, 7207, 7164, 1394, 7252, 4494, 4682, 2]
+// Dependencies: [5, 2013, 7096, 1957, 2015, 1979, 1074, 1964, 7247, 7250, 7259, 7226, 7262, 7264, 7222, 7265, 7266, 4473, 7267, 7224, 1369, 7314, 4573, 4714, 2]
 // Exports: default
 
-// Module 7186 (_isAccessibleChannelOrThreadPath)
+// Module 7246 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "isSubscriptionGated" /* 1982 */;
-import closure_5 from "shouldShowOnboarding" /* 7036 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
-import set from "set" /* 1393 */;
+import closure_4 from "isSubscriptionGated" /* 2013 */;
+import closure_5 from "shouldShowOnboarding" /* 7096 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
+import set from "set" /* 1964 */;
 
 const require = arg1;
 function _isAccessibleChannelOrThreadPath() {

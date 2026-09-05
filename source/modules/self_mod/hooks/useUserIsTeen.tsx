@@ -1,12 +1,12 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8644
+// Function ID: 8645
 // Name: useUserIsTeen
-// Dependencies: [1921, 586, 2]
+// Dependencies: [1371, 504, 2]
 // Exports: useUserIsTeen
 
-// Module 8574 (useUserIsTeen)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
+// Module 8644 (useUserIsTeen)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");

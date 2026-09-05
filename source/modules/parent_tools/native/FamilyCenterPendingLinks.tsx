@@ -1,33 +1,33 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14924
+// Function ID: 14925
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 7471, 21, 4481, 709, 8575, 11851, 1233, 2368, 4477, 8576, 5084, 4731, 14850, 2008, 1296, 9495, 14851, 14848, 14852, 14843, 2]
+// Dependencies: [19, 17, 7538, 21, 4560, 576, 8645, 11919, 1114, 2396, 4556, 8646, 5123, 4763, 14925, 1896, 1178, 9566, 14926, 14923, 14927, 14918, 2]
 // Exports: default
 
-// Module 14849 (FamilyCenterPendingLinkRow)
+// Module 14924 (FamilyCenterPendingLinkRow)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import Text from "Text" /* 4477 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8575 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8576 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11851 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import Text from "Text" /* 4556 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8645 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8646 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11919 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UserLinkStatus } from "items" /* 7471 */;
+import { UserLinkStatus } from "items" /* 7538 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback4();
-  str(8575);
+  str(8645);
   if (undefined === str) {
     return null;
   } else {
     if (tmp4) {
-      const intl3 = tmp5(1233).intl;
+      const intl3 = tmp5(1114).intl;
       str = undefined;
       if (str != null) {
         str = str.toString();
@@ -35,7 +35,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       let obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
       obj = { name: null };
       obj[0] = str;
-      obj[1] = intl3.formatToPlainString(tmp2(2368).oUpA6X, obj);
+      obj[1] = intl3.formatToPlainString(tmp2(2396).oUpA6X, obj);
       obj[2] = function onPress() {
         let obj = closure_1_1(closure_1_2[13]);
         obj = { otherUser: str };
@@ -43,15 +43,15 @@ function FamilyCenterPendingLinkRow(otherUser) {
       };
       obj[3] = tmp.actionButton;
       obj1 = { size: null, disableColor: true, source: null };
-      obj1[0] = tmp5(1296).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14848);
-      obj[4] = closure_5(tmp5(1296).Icon, obj1);
-      let tmp8Result = tmp17(tmp5(5084).PressableOpacity, obj);
+      obj1[0] = tmp5(1178).Icon.Sizes.SMALL;
+      obj1[2] = tmp2(14923);
+      obj[4] = closure_5(tmp5(1178).Icon, obj1);
+      let tmp8Result = tmp17(tmp5(5123).PressableOpacity, obj);
       let tmp14 = tmp17;
     } else {
       let tmp12Result = null;
       if (!tmp7) {
-        const intl = tmp5(1233).intl;
+        const intl = tmp5(1114).intl;
         let str1;
         if (str != null) {
           str1 = str.toString();
@@ -59,7 +59,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
         const obj2 = { name: null };
         obj2[0] = str1;
-        obj[1] = intl.formatToPlainString(tmp2(2368).jc1Ip7, obj2);
+        obj[1] = intl.formatToPlainString(tmp2(2396).jc1Ip7, obj2);
         obj[2] = function onPress() {
           let obj = closure_1_1(closure_1_2[13]);
           obj = { otherUser: str };
@@ -69,14 +69,14 @@ function FamilyCenterPendingLinkRow(otherUser) {
         ({ actionButton: arr[0], actionButtonFirst: arr[1] } = tmp);
         obj[3] = items;
         const obj3 = { size: null, disableColor: true, source: null };
-        obj3[0] = tmp5(1296).Icon.Sizes.SMALL;
-        obj3[2] = tmp2(9495);
-        obj[4] = closure_5(tmp5(1296).Icon, obj3);
-        tmp12Result = tmp12(tmp5(5084).PressableOpacity, obj);
+        obj3[0] = tmp5(1178).Icon.Sizes.SMALL;
+        obj3[2] = tmp2(9566);
+        obj[4] = closure_5(tmp5(1178).Icon, obj3);
+        tmp12Result = tmp12(tmp5(5123).PressableOpacity, obj);
       }
       const items1 = [tmp12Result, ];
       tmp14 = closure_5;
-      const intl2 = tmp5(1233).intl;
+      const intl2 = tmp5(1114).intl;
       let str2;
       if (str != null) {
         str2 = str.toString();
@@ -85,7 +85,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       const obj5 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
       const obj6 = { name: null };
       obj6[0] = str2;
-      obj5[1] = intl2.formatToPlainString(tmp2(2368)["4GtllP"], obj6);
+      obj5[1] = intl2.formatToPlainString(tmp2(2396)["4GtllP"], obj6);
       obj5[2] = function onPress() {
         let obj = closure_1_1(closure_1_2[13]);
         obj = { otherUser: str };
@@ -93,10 +93,10 @@ function FamilyCenterPendingLinkRow(otherUser) {
       };
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
-      obj7[0] = tmp5(1296).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14848);
-      obj5[4] = tmp14(tmp5(1296).Icon, obj7);
-      items1[1] = tmp14(tmp5(5084).PressableOpacity, obj5);
+      obj7[0] = tmp5(1178).Icon.Sizes.SMALL;
+      obj7[2] = tmp2(14923);
+      obj5[4] = tmp14(tmp5(1178).Icon, obj7);
+      items1[1] = tmp14(tmp5(5123).PressableOpacity, obj5);
       obj4[0] = items1;
       tmp8Result = closure_6(closure_7, obj4);
       const tmp8 = closure_6;
@@ -105,7 +105,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14843), obj8);
+    return tmp14(tmp2(14918), obj8);
   }
   tmp4 = useIsInAdultAgeGroupDefault();
 }

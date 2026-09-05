@@ -1,17 +1,17 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12281
+// Function ID: 12282
 // Name: StyleSheet
-// Dependencies: [19, 17, 21, 4481, 1234, 4218, 4935, 4416, 7013, 4925, 1362, 5544, 2]
+// Dependencies: [19, 17, 21, 4560, 1115, 4296, 4974, 4495, 7073, 4964, 4411, 5589, 2]
 
-// Module 12213 (StyleSheet)
-import useThemeDefault from "useTheme" /* 4416 */;
-import animatedComponentDefault from "animatedComponent" /* 4925 */;
-import setDefault from "set" /* 5544 */;
-import setDefault2 from "set" /* 7013 */;
+// Module 12281 (StyleSheet)
+import useThemeDefault from "useTheme" /* 4495 */;
+import animatedComponentDefault from "animatedComponent" /* 4964 */;
+import setDefault from "set" /* 5589 */;
+import setDefault2 from "set" /* 7073 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import set from "set" /* 1234 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import set from "set" /* 1115 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ export default importAllResult.memo(function HeaderGlassBlur(shown) {
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = callback();
-  let obj = shown(4218);
+  let obj = shown(4296);
   const fn = function k() {
     let opacity = 0;
     if (shown.get()) {
@@ -47,7 +47,7 @@ export default importAllResult.memo(function HeaderGlassBlur(shown) {
   fn.__workletHash = 3451055086565;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = shown(4218);
+  let obj2 = shown(4296);
   const fn2 = function p() {
     let obj = shown(closure_1_2[6]);
     let num = 0;
@@ -57,7 +57,7 @@ export default importAllResult.memo(function HeaderGlassBlur(shown) {
     obj = { blurAmount: obj.withSpring(num) };
     return obj;
   };
-  obj = { withSpring: shown(4935).withSpring, shown };
+  obj = { withSpring: shown(4974).withSpring, shown };
   fn2.__closure = obj;
   fn2.__workletHash = 5642055202507;
   fn2.__initData = closure_9;
@@ -75,13 +75,13 @@ export default importAllResult.memo(function HeaderGlassBlur(shown) {
   const items1 = [StyleSheet.absoluteFillObject, blurStyle];
   const items2 = [closure_4(tmp11, { blurStyle: "ultra-thin", blurTheme: str, style: items1, animatedProps }), ];
   obj2 = { style: tmp.strokeContainer, children: null };
-  let tmp6Result = tmp6(5544);
+  let tmp6Result = tmp6(5589);
   const items3 = [closure_4(setDefault, { style: tmp.stroke }), ];
-  tmp6Result = tmp6(5544);
+  tmp6Result = tmp6(5589);
   const obj3 = { style: tmp.stroke };
-  obj6 = shown(1362);
-  const tmp2Result = tmp2(1362);
-  items3[1] = closure_4(tmp6Result, { style: tmp2(1362).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
+  obj6 = shown(4411);
+  const tmp2Result = tmp2(4411);
+  items3[1] = closure_4(tmp6Result, { style: tmp2(4411).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
   obj2[1] = items3;
   items2[1] = closure_5(tmp6Result, obj2);
   obj1[1] = items2;

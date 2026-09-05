@@ -1,17 +1,17 @@
-// Module ID: 4594
-// Function ID: 4595
+// Module ID: 4627
+// Function ID: 4628
 // Name: destroy
-// Dependencies: [5, 4545, 4585, 4595, 4597, 4598, 4599, 4628, 2]
+// Dependencies: [5, 4585, 4618, 4628, 4630, 4631, 4632, 4661, 2]
 
-// Module 4594 (destroy)
-import onDefault from "on" /* 4585 */;
-import WantsVideoQuality from "WantsVideoQuality" /* 4595 */;
-import logger2 from "logger" /* 4597 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4598 */;
-import cloneDeepDefault from "cloneDeep" /* 4599 */;
-import flatRestDefault from "flatRest" /* 4628 */;
+// Module 4627 (destroy)
+import onDefault from "on" /* 4618 */;
+import WantsVideoQuality from "WantsVideoQuality" /* 4628 */;
+import logger2 from "logger" /* 4630 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4631 */;
+import cloneDeepDefault from "cloneDeep" /* 4632 */;
+import flatRestDefault from "flatRest" /* 4661 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
 
 require = arg1;
 ({ ConnectionStates: c4, DEFAULT_VOICE_BITRATE: c5, MediaTypes: closure_6, ResolutionTypes: error, MediaEngineContextTypes: closure_8, VIDEO_QUALITY_FRAMERATE: c9, SIMULCAST_HQ_QUALITY: c10 } = DesktopSources);
@@ -128,13 +128,7 @@ prototype["setUseElectronVideo"] = function setUseElectronVideo(mediaEngine) {
 prototype["setClipRecordUser"] = function setClipRecordUser(arg0, arg1, arg2) {
 
 };
-prototype["setViewerSideClip"] = function setViewerSideClip(arg0) {
-
-};
 prototype["setRemoteAudioHistory"] = function setRemoteAudioHistory(arg0) {
-
-};
-prototype["setClipsKeyFrameInterval"] = function setClipsKeyFrameInterval(arg0) {
 
 };
 prototype["setQualityDecoupling"] = function setQualityDecoupling(arg0) {

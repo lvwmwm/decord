@@ -1,17 +1,17 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9265
+// Function ID: 9266
 // Name: PlayStationLinkError
-// Dependencies: [19, 9184, 673, 21, 1498, 9195, 1233, 9196, 2]
+// Dependencies: [19, 9255, 1074, 21, 1483, 9266, 1114, 9267, 2]
 // Exports: PlayStationLinkError
 
-// Module 9194 (PlayStationLinkError)
+// Module 9265 (PlayStationLinkError)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import useConnectRetry from "useConnectRetry" /* 9195 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9196 */;
-import { PlayStationLinkModalScenes as closure_2 } from "PlayStationLinkModalScenes" /* 9184 */;
-import { AbortCodes } from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import useConnectRetry from "useConnectRetry" /* 9266 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9267 */;
+import { PlayStationLinkModalScenes as closure_2 } from "PlayStationLinkModalScenes" /* 9255 */;
+import { AbortCodes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -24,14 +24,14 @@ export const PlayStationLinkError = function PlayStationLinkError(arg0) {
   const navigation = obj.useNavigation();
   const connectRetry = useConnectRetry.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-    const intl2 = tmp(1233).intl;
-    let stringResult = intl2.string(tmp(1233).t["3dIn2A"]);
+    const intl2 = tmp(1114).intl;
+    let stringResult = intl2.string(tmp(1114).t["3dIn2A"]);
   } else {
-    const intl = tmp(1233).intl;
-    stringResult = intl.string(tmp(1233).t.qE9nqE);
+    const intl = tmp(1114).intl;
+    stringResult = intl.string(tmp(1114).t.qE9nqE);
   }
   obj = { title: null, body: null, onClose: null, onRetry: null };
-  const intl3 = tmp(1233).intl;
+  const intl3 = tmp(1114).intl;
   obj[0] = intl3.string(getSystemLocale.t.eY3qHd);
   obj[1] = stringResult;
   obj[2] = onClose;

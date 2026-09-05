@@ -1,12 +1,12 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7319
+// Function ID: 7320
 // Name: _createHandoffToken
-// Dependencies: [5, 673, 511, 527, 2]
+// Dependencies: [5, 1074, 1256, 1272, 2]
 
-// Module 7257 (_createHandoffToken)
-import v1 from "v1" /* 511 */;
+// Module 7319 (_createHandoffToken)
+import v1 from "v1" /* 1256 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function _createHandoffToken() {

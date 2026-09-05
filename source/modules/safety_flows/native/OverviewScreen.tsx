@@ -1,13 +1,13 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 17871
+// Function ID: 17872
 // Name: OverviewScreen
-// Dependencies: [19, 21, 4481, 17792, 1498, 17793, 8351, 8352, 4934, 709, 4477, 1233, 2662, 5642, 8509, 17787, 11858, 17794, 10927, 2]
+// Dependencies: [19, 21, 4560, 17872, 1483, 17873, 8421, 8422, 4973, 576, 4556, 1114, 2690, 5687, 8579, 17867, 11926, 17874, 10996, 2]
 // Exports: default
 
-// Module 17791 (OverviewScreen)
+// Module 17871 (OverviewScreen)
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -16,9 +16,9 @@ const result = require("set").fileFinishedImporting("modules/safety_flows/native
 
 export default function OverviewScreen() {
   let tmp = callback2();
-  let obj = task(17792);
+  let obj = task(17872);
   task = obj.useSafetyFlowTask().task;
-  obj1 = task(1498);
+  obj1 = task(1483);
   const navigation = obj1.useNavigation();
   const items = [task, navigation];
   const callback = React.useCallback(() => {
@@ -34,48 +34,48 @@ export default function OverviewScreen() {
       navigation.push(screensForTaskType[0]);
     }
   }, items);
-  obj = { spacing: navigation(709).space.PX_16, style: tmp.content, children: null };
+  obj = { spacing: navigation(576).space.PX_16, style: tmp.content, children: null };
   obj = { variant: "display-lg", style: tmp.title, children: null };
-  const intl = task(1233).intl;
-  obj[2] = intl.string(navigation(2662).RRamMH);
-  const items1 = [callback(task(4477).Text, obj), , ];
+  const intl = task(1114).intl;
+  obj[2] = intl.string(navigation(2690).RRamMH);
+  const items1 = [callback(task(4556).Text, obj), , ];
   obj1 = { variant: "text-md/medium", color: "text-strong", children: null };
-  const intl2 = task(1233).intl;
-  obj1[2] = intl2.string(navigation(2662).I2Ctk1);
-  items1[1] = callback(task(4477).Text, obj1);
-  const obj2 = { spacing: navigation(709).space.PX_8, children: null };
+  const intl2 = task(1114).intl;
+  obj1[2] = intl2.string(navigation(2690).I2Ctk1);
+  items1[1] = callback(task(4556).Text, obj1);
+  const obj2 = { spacing: navigation(576).space.PX_8, children: null };
   const flow_context = task.flow_context;
   let mapped;
   if (flow_context != null) {
     const tasks = flow_context.tasks;
     if (tasks != null) {
       mapped = tasks.map((task_type) => {
-        const obj = { tip: task(17787).TASK_TYPE_TO_TITLE[task_type.task_type], index: arg1 + 1 };
-        return callback(navigation(8509), obj, task_type.task_type);
+        const obj = { tip: task(17867).TASK_TYPE_TO_TITLE[task_type.task_type], index: arg1 + 1 };
+        return callback(navigation(8579), obj, task_type.task_type);
       });
     }
   }
   const obj3 = { children: null };
   const obj4 = { children: null };
-  const items2 = [callback(task(5642).TableRowGroup, { hasIcons: true, children: mapped }), ];
+  const items2 = [callback(task(5687).TableRowGroup, { hasIcons: true, children: mapped }), ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl3 = tmp2(1233).intl;
-  obj5[2] = intl3.string(navigation(2662)["0TnUrG"]);
-  items2[1] = callback(task(4477).Text, obj5);
+  const intl3 = tmp2(1114).intl;
+  obj5[2] = intl3.string(navigation(2690)["0TnUrG"]);
+  items2[1] = callback(task(4556).Text, obj5);
   obj2[1] = items2;
-  items1[2] = closure_5(task(4934).Stack, obj2);
+  items1[2] = closure_5(task(4973).Stack, obj2);
   obj[2] = items1;
-  obj4[0] = closure_5(task(4934).Stack, obj);
-  const items3 = [callback(task(8352).ModalContent, obj4), ];
+  obj4[0] = closure_5(task(4973).Stack, obj);
+  const items3 = [callback(task(8422).ModalContent, obj4), ];
   const obj6 = { children: null };
-  const items4 = [callback(navigation(17794), {}), ];
+  const items4 = [callback(navigation(17874), {}), ];
   const obj7 = { variant: "primary", text: null, onPress: null };
-  const intl4 = tmp2(1233).intl;
-  obj7[1] = intl4.string(navigation(2662).Ks6opt);
+  const intl4 = tmp2(1114).intl;
+  obj7[1] = intl4.string(navigation(2690).Ks6opt);
   obj7[2] = callback;
-  items4[1] = callback(task(10927).ModalActionButton, obj7);
+  items4[1] = callback(task(10996).ModalActionButton, obj7);
   obj6[0] = items4;
-  items3[1] = closure_5(task(11858).ModalFooter, obj6);
+  items3[1] = closure_5(task(11926).ModalFooter, obj6);
   obj3[0] = items3;
-  return closure_5(task(8351).ModalScreen, obj3);
+  return closure_5(task(8421).ModalScreen, obj3);
 };

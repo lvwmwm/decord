@@ -1,14 +1,14 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16826
+// Function ID: 16827
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 1991, 1921, 1954, 586, 16749, 5475, 1394, 2]
+// Dependencies: [32, 19, 2021, 1371, 1894, 504, 16827, 5520, 1369, 2]
 // Exports: default
 
-// Module 16748 (useGetOrFetchChannelOverwriteUsers)
+// Module 16826 (useGetOrFetchChannelOverwriteUsers)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/channel_settings/useGetOrFetchChannelOverwriteUsers.tsx");

@@ -122,8 +122,8 @@ class AnimatedProps {
         tmp11 = global[tmp10];
         tmp12 = num;
         if (null != importDefault) {
-          tmp13 = f19282;
-          if (!f19282(importDefault, tmp10)) {
+          tmp13 = f19362;
+          if (!f19362(importDefault, tmp10)) {
             obj3[tmp10] = tmp11;
           }
           num = num + 1;

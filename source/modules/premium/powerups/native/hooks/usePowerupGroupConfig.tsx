@@ -1,12 +1,12 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12549
+// Function ID: 12550
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 1908, 586, 8096, 1233, 2400, 12482, 12483, 1394, 2]
+// Dependencies: [19, 1979, 504, 8165, 1114, 2428, 12550, 12551, 1369, 2]
 // Exports: default
 
-// Module 12481 (usePowerupGroupConfig)
+// Module 12549 (usePowerupGroupConfig)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");

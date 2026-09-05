@@ -1,11 +1,11 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 17640
+// Function ID: 17641
 // Name: hasLoaded
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 17560 (hasLoaded)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 17640 (hasLoaded)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = {};
 const Store = initializeDefault.Store;

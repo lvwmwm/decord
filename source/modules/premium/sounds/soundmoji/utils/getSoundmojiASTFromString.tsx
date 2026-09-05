@@ -1,17 +1,17 @@
-// Module ID: 4972
-// Function ID: 4973
+// Module ID: 5011
+// Function ID: 5012
 // Name: getSoundmojiASTFromString
-// Dependencies: [4973, 4743, 673, 4978, 4979, 4980, 4982, 1431, 2]
+// Dependencies: [5012, 4781, 1074, 5017, 5018, 5019, 5021, 1396, 2]
 // Exports: default, getSoundmojiFromMessage
 
-// Module 4972 (getSoundmojiASTFromString)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import getSoundmojiRenderingExperiment from "getSoundmojiRenderingExperiment" /* 4978 */;
-import isSoundValidDefault from "isSoundValid" /* 4979 */;
-import getSoundStringDefault from "getSoundString" /* 4982 */;
-import closure_3 from "handleSoundCreateOrUpdate" /* 4973 */;
-import closure_4 from "reinjectEphemerals" /* 4743 */;
-import { MessageStates } from "ME" /* 673 */;
+// Module 5011 (getSoundmojiASTFromString)
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import getSoundmojiRenderingExperiment from "getSoundmojiRenderingExperiment" /* 5017 */;
+import isSoundValidDefault from "isSoundValid" /* 5018 */;
+import getSoundStringDefault from "getSoundString" /* 5021 */;
+import closure_3 from "handleSoundCreateOrUpdate" /* 5012 */;
+import closure_4 from "reinjectEphemerals" /* 4781 */;
+import { MessageStates } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx");
@@ -25,7 +25,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
     const tmp9 = isSoundValidDefault(soundById, guildId.guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(4980)(channelId, messageId, tmp2, soundboardSounds);
+        const tmp16 = tmp8(5019)(channelId, messageId, tmp2, soundboardSounds);
         tmp5 = tmp16;
         if (tmp9) {
           tmp5 = tmp16;
@@ -106,7 +106,7 @@ export const getSoundmojiFromMessage = function getSoundmojiFromMessage(guildId,
     const tmp9 = isSoundValidDefault(soundById, guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(4980)(channelId, messageId, soundId, arg4);
+        const tmp16 = tmp8(5019)(channelId, messageId, soundId, arg4);
         if (tmp9) {
           if (null == tmp16) {
             const message = store2.getMessage(channelId, messageId);

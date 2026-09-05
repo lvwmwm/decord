@@ -1,10 +1,10 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17089
+// Function ID: 17090
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [19, 9539, 2]
+// Dependencies: [19, 9610, 2]
 // Exports: default
 
-// Module 17011 (useExternalPipAspectRatioUpdater)
+// Module 17089 (useExternalPipAspectRatioUpdater)
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");

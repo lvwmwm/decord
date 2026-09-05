@@ -1,13 +1,13 @@
-// Module ID: 10141
-// Function ID: 10142
+// Module ID: 10212
+// Function ID: 10213
 // Name: useScaledSectionHeight
-// Dependencies: [10142, 4943, 2]
+// Dependencies: [10213, 4982, 2]
 // Exports: default
 
-// Module 10141 (useScaledSectionHeight)
+// Module 10212 (useScaledSectionHeight)
 import set from "set" /* 2 */;
-import getFontScale from "getFontScale" /* 4943 */;
-import PX_24 from "PX_24" /* 10142 */;
+import getFontScale from "getFontScale" /* 4982 */;
+import PX_24 from "PX_24" /* 10213 */;
 
 ({ USERS_LIST_SECTION_HEIGHT: obj1, USERS_LIST_SECTION_TEXT_HEIGHT: c3 } = PX_24);
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledSectionHeight.tsx");

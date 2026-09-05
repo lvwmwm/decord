@@ -1,18 +1,18 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16205
+// Function ID: 16206
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 673, 1393, 10047, 21, 4481, 709, 1219, 4448, 16128, 2008, 12311, 1233, 12711, 2]
+// Dependencies: [19, 1074, 1964, 10118, 21, 4560, 576, 1100, 4527, 16206, 1896, 12379, 1114, 12779, 2]
 // Exports: default
 
-// Module 16127 (GuildRoleSubscriptionsRow)
-import ThemesDefault from "Themes" /* 709 */;
-import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 12311 */;
-import registerAssetDefault from "registerAsset" /* 12711 */;
+// Module 16205 (GuildRoleSubscriptionsRow)
+import ThemesDefault from "Themes" /* 576 */;
+import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 12379 */;
+import registerAssetDefault from "registerAsset" /* 12779 */;
 import closure_3 from "noop" /* 19 */;
-import { Routes } from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
+import { Routes } from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { container: null };
@@ -42,7 +42,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
     };
     obj.openLazy(id(closure_1_2[10])(closure_1_2[9], closure_1_2.paths), rolesubscriptionschannelactionsheet, obj);
   }, items1);
-  const ChannelModes = id(12311).ChannelModes;
+  const ChannelModes = id(12379).ChannelModes;
   if (selected) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp6 = tmp4;
@@ -52,16 +52,16 @@ export default function GuildRoleSubscriptionsRow(selected) {
   }
   let obj = { onPress: callback, onLongPress: callback1, style: callback().container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null };
   const tmp = callback();
-  const intl = tmp6(1233).intl;
-  obj[4] = intl.string(tmp6(1233).t["KzCF/6"]);
+  const intl = tmp6(1114).intl;
+  obj[4] = intl.string(tmp6(1114).t["KzCF/6"]);
   obj[5] = { selected };
   obj[6] = DEFAULT;
   obj = { name: null, mode: null };
-  const intl2 = tmp6(1233).intl;
-  obj[0] = intl2.string(tmp6(1233).t["KzCF/6"]);
+  const intl2 = tmp6(1114).intl;
+  obj[0] = intl2.string(tmp6(1114).t["KzCF/6"]);
   obj[1] = DEFAULT;
-  obj[7] = jsx(tmp6(12311).BaseChannelName, { name: null, mode: null });
+  obj[7] = jsx(tmp6(12379).BaseChannelName, { name: null, mode: null });
   obj = { disableColor: true, mode: DEFAULT, source: registerAssetDefault };
-  obj[8] = jsx(tmp6(12311).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
+  obj[8] = jsx(tmp6(12379).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
   return jsx(BaseChannelSubtitleDefault, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
 };

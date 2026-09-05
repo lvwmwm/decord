@@ -1,13 +1,13 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17624
+// Function ID: 17625
 // Name: AsyncFromSyncIterator
-// Dependencies: [5, 673, 706, 5475, 11505, 1228, 2]
+// Dependencies: [5, 1074, 573, 5520, 11573, 1109, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 17544 (AsyncFromSyncIterator)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 17624 (AsyncFromSyncIterator)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function AsyncFromSyncIterator(arg0) {

@@ -1,16 +1,16 @@
-// Module ID: 10076
-// Function ID: 10077
+// Module ID: 10147
+// Function ID: 10148
 // Name: getMuteTimeOptions
-// Dependencies: [4709, 673, 682, 1233, 11, 1399, 4123, 586, 2]
+// Dependencies: [4741, 1074, 1084, 1114, 11, 1384, 4202, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10076 (getMuteTimeOptions)
+// Module 10147 (getMuteTimeOptions)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { UserNotificationSettings } from "ME" /* 673 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { UserNotificationSettings } from "ME" /* 1074 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
 
 require = arg1;
 ({ MuteUntilSeconds: closure_6, ChannelNotificationSettingsFlags: error } = MAX_FAVORITES);

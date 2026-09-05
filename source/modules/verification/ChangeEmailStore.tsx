@@ -1,13 +1,13 @@
-// Module ID: 5578
-// Function ID: 5579
+// Module ID: 5623
+// Function ID: 5624
 // Name: ChangeEmailFields
-// Dependencies: [641, 702, 2]
+// Dependencies: [560, 1249, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 5578 (ChangeEmailFields)
+// Module 5623 (ChangeEmailFields)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 702 */;
-import keys from "keys" /* 641 */;
+import batchUpdates from "batchUpdates" /* 1249 */;
+import keys from "keys" /* 560 */;
 
 let closure_2 = { errors: null, emailToken: null };
 let obj = keys.create(() => closure_2);
@@ -18,7 +18,7 @@ export const useChangeEmailStore = obj;
 export const setChangeEmailError = function setChangeEmailError(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
-  _require(702).batchUpdates(() => closure_1_3.setState((errors) => {
+  _require(1249).batchUpdates(() => closure_1_3.setState((errors) => {
     obj = { errors: null };
     obj = {};
     const merged = Object.assign(errors.errors);
@@ -54,7 +54,7 @@ export const useChangeEmailError = function useChangeEmailError(arg0) {
 };
 export const setEmailToken = function setEmailToken(arg0) {
   const _require = arg0;
-  _require(702).batchUpdates(() => closure_1_3.setState({ emailToken: closure_0 }));
+  _require(1249).batchUpdates(() => closure_1_3.setState({ emailToken: closure_0 }));
 };
 export const resetChangeEmailStore = function resetChangeEmailStore() {
   batchUpdates.batchUpdates(() => state.setState(closure_2, true));

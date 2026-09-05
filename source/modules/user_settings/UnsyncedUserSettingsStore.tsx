@@ -1,19 +1,19 @@
-// Module ID: 1303
-// Function ID: 1304
+// Module ID: 1185
+// Function ID: 1186
 // Name: CHANNEL_SIDEBAR_WIDTH
-// Dependencies: [1304, 682, 673, 1337, 1338, 586, 592, 12, 706, 2]
+// Dependencies: [1186, 1084, 1074, 1219, 1220, 504, 510, 12, 573, 2]
 
-// Module 1303 (CHANNEL_SIDEBAR_WIDTH)
+// Module 1185 (CHANNEL_SIDEBAR_WIDTH)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import Storage3 from "Storage" /* 592 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import SystemThemeState2 from "SystemThemeState" /* 1304 */;
-import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1337 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1338 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import Storage3 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
+import SystemThemeState2 from "SystemThemeState" /* 1186 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1219 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1220 */;
+import ME from "ME" /* 1074 */;
 
 const SystemThemeState = SystemThemeState2.SystemThemeState;
 const ListDensityMode = MAX_FAVORITES.ListDensityMode;

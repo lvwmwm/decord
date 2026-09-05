@@ -1,17 +1,17 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 9027
+// Function ID: 9028
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 8956, 673, 8958, 581, 684, 706, 527, 1205, 2]
+// Dependencies: [5, 9026, 1074, 9028, 559, 1090, 573, 1272, 1232, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 8957 (getApplicationsFromConfigs)
-import setDefault from "set" /* 684 */;
+// Module 9027 (getApplicationsFromConfigs)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "updateApplicationConfigs" /* 8956 */;
-import { FetchState } from "updateApplicationConfigs" /* 8956 */;
-import { Endpoints } from "ME" /* 673 */;
-import importDefaultResult from "fails" /* 581 */;
-import importDefaultResult1 from "dispatcher" /* 706 */;
+import closure_4 from "updateApplicationConfigs" /* 9026 */;
+import { FetchState } from "updateApplicationConfigs" /* 9026 */;
+import { Endpoints } from "ME" /* 1074 */;
+import importDefaultResult from "fails" /* 559 */;
+import importDefaultResult1 from "dispatcher" /* 573 */;
 
 const require = arg1;
 function getApplicationsFromConfigs(arg0) {
@@ -84,7 +84,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          obj1 = callback(706);
+          obj1 = callback(573);
           obj1.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
           if (!closure_9.pending) {
             closure_9.fail(() => {
@@ -93,7 +93,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
               });
             });
           }
-          obj2 = callback(1205);
+          obj2 = callback(1232);
           obj2.captureException(closure_1_1);
           throw closure_1_1;
         } else if (arg0 === 1) {
@@ -110,7 +110,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
           const obj3 = { type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS", applications: null, configs: null };
           obj3[1] = closure_0.body.applications;
           obj3[2] = closure_0.body.configs;
-          callback(706).dispatch(obj3);
+          callback(573).dispatch(obj3);
           closure_9.succeed();
           c3 = 0;
           c5 = 3;
@@ -192,9 +192,9 @@ function _fetchDeveloperWidgetConfigsFromApi() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(706);
+          let obj3 = callback(573);
           obj3.dispatch({ type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_FAILURE" });
-          let obj4 = callback(1205);
+          let obj4 = callback(1232);
           obj4.captureException(callback);
           throw callback;
         } else if (arg0 === 1) {
@@ -208,7 +208,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
           return obj3;
         } else {
           closure_0 = arg1;
-          obj = callback(706);
+          obj = callback(573);
           obj4 = { type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS", applications: null, configs: null };
           obj4[1] = closure_0.body.applications;
           obj4[2] = closure_0.body.configs;
@@ -290,11 +290,11 @@ function _fetchWidgetConfigsFromApi() {
           } else if (1 === tmp7) {
             c4 = 0;
             dependencyMap = closure_3;
-            obj3 = body(706);
+            obj3 = body(573);
             const obj4 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_FAILURE", applicationId: null };
             obj4[1] = callback;
             obj3.dispatch(obj4);
-            let obj5 = body(1205);
+            let obj5 = body(1232);
             obj5.captureException(dependencyMap);
             throw dependencyMap;
           } else if (arg0 === 1) {
@@ -308,7 +308,7 @@ function _fetchWidgetConfigsFromApi() {
             return obj5;
           } else {
             body = body.body;
-            obj = body(706);
+            obj = body(573);
             const obj6 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS", applicationId: null, applications: null, configs: null };
             obj6[1] = callback;
             obj6[2] = callback2(body);

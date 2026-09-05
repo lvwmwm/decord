@@ -1,17 +1,17 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17503
+// Function ID: 17504
 // Name: updateVoiceSettings
-// Dependencies: [1215, 4555, 1386, 1980, 13755, 673, 706, 7058, 2]
+// Dependencies: [502, 13995, 1957, 2011, 13996, 1074, 573, 7118, 2]
 
-// Module 17423 (updateVoiceSettings)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "bitrate" /* 4555 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "mode" /* 13755 */;
-import { VideoQualityMode } from "ME" /* 673 */;
+// Module 17503 (updateVoiceSettings)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "bitrate" /* 13995 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import closure_6 from "mode" /* 13996 */;
+import { VideoQualityMode } from "ME" /* 1074 */;
 
 function updateVoiceSettings() {
   let obj = store2;

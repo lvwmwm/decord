@@ -1,12 +1,12 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17808
+// Function ID: 17809
 // Name: initialize
-// Dependencies: [684, 586, 706, 2]
+// Dependencies: [1090, 504, 573, 2]
 
-// Module 17728 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 17808 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
 
 const HOUR = setDefault.Millis.HOUR;
 let obj = { lastReportedAtMs: null };

@@ -1,16 +1,16 @@
-// Module ID: 5414
-// Function ID: 5415
+// Module ID: 5454
+// Function ID: 5455
 // Name: settingsPathToRoute
-// Dependencies: [32, 682, 673, 5415, 695, 5416, 2]
+// Dependencies: [32, 1084, 1074, 5455, 1242, 5456, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 5414 (settingsPathToRoute)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import WebUserSettings from "WebUserSettings" /* 5415 */;
-import keysSorter from "keysSorter" /* 5416 */;
+// Module 5454 (settingsPathToRoute)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import WebUserSettings from "WebUserSettings" /* 5455 */;
+import keysSorter from "keysSorter" /* 5456 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import { UserSettingsPath } from "MAX_FAVORITES" /* 682 */;
-import ME from "ME" /* 673 */;
+import { UserSettingsPath } from "MAX_FAVORITES" /* 1084 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ AnalyticEvents: c5, Routes: closure_6 } = ME);

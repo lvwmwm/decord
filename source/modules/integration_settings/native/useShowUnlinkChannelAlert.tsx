@@ -1,10 +1,10 @@
-// Module ID: 10865
-// Function ID: 10866
+// Module ID: 10934
+// Function ID: 10935
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 8555, 4866, 1233, 4955, 2]
+// Dependencies: [5, 19, 8625, 4905, 1114, 4994, 2]
 // Exports: default
 
-// Module 10865 (useShowUnlinkChannelAlert)
+// Module 10934 (useShowUnlinkChannelAlert)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -44,19 +44,19 @@ export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
   }), items);
   const items1 = [arg1, callback];
   return React.useCallback(() => {
-    let obj = callback2(4866);
+    let obj = callback2(4905);
     obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, confirmColor: null };
-    const intl = callback(1233).intl;
-    obj[0] = intl.string(callback(1233).t.JmUENg);
-    const intl2 = callback(1233).intl;
+    const intl = callback(1114).intl;
+    obj[0] = intl.string(callback(1114).t.JmUENg);
+    const intl2 = callback(1114).intl;
     obj = { applicationName: callback2 };
-    obj[1] = intl2.format(callback(1233).t["6l2osp"], obj);
-    const intl3 = callback(1233).intl;
-    obj[2] = intl3.string(callback(1233).t["ETE/oC"]);
-    const intl4 = callback(1233).intl;
-    obj[3] = intl4.string(callback(1233).t["cY+Oob"]);
+    obj[1] = intl2.format(callback(1114).t["6l2osp"], obj);
+    const intl3 = callback(1114).intl;
+    obj[2] = intl3.string(callback(1114).t["ETE/oC"]);
+    const intl4 = callback(1114).intl;
+    obj[3] = intl4.string(callback(1114).t["cY+Oob"]);
     obj[4] = callback;
-    obj[5] = callback2(4955).Colors.RED;
+    obj[5] = callback2(4994).Colors.RED;
     obj.show(obj);
   }, items1);
 };

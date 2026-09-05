@@ -1,13 +1,13 @@
-// Module ID: 4867
-// Function ID: 4868
+// Module ID: 4906
+// Function ID: 4907
 // Name: useAlertStore
-// Dependencies: [32, 641, 702, 4868, 4870, 2]
+// Dependencies: [32, 560, 1249, 4907, 4909, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4867 (useAlertStore)
-import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 4870 */;
+// Module 4906 (useAlertStore)
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 4909 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 const require = arg1;
 keys = keys.create(() => ({ alerts: [] }));
@@ -28,7 +28,7 @@ export const dismissAlerts = function dismissAlerts() {
   }, items), 2);
   const first = tmp[0];
   const arr4 = tmp[1];
-  first(702).batchUpdates(() => {
+  first(1249).batchUpdates(() => {
     closure_1_4.setState({ alerts: arr4 });
     const item = first.forEach((onDismiss) => {
       onDismiss = onDismiss.onDismiss;
@@ -40,7 +40,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(4868)();
+    arr4(4907)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -57,7 +57,7 @@ export const dismissAlert = function dismissAlert(c6) {
       }
       tmp2 = key === c6;
     }
-    _require(702).batchUpdates(() => {
+    _require(1249).batchUpdates(() => {
       closure_1_4.setState((alerts) => {
         alerts = alerts.alerts;
         return { alerts: alerts.filter((key) => key.key !== closure_0) };
@@ -68,9 +68,9 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(4868)();
+      found(4907)();
     }
-    const obj = _require(702);
+    const obj = _require(1249);
   }
 };
 export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
@@ -81,7 +81,7 @@ export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallb
   if (0 === keys.getState().alerts.length) {
     markAccessibilityFocusDefault();
   }
-  _require(702).batchUpdates(() => {
+  _require(1249).batchUpdates(() => {
     closure_1_4.setState((alerts) => {
       alerts = [...alerts.alerts];
       const obj = { key: closure_0, node: closure_1, onDismiss: closure_2, dismissable: null };

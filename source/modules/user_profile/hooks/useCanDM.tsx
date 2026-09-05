@@ -1,15 +1,15 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13104
+// Function ID: 13105
 // Name: useCanDM
-// Dependencies: [7591, 4121, 1215, 1991, 4130, 4166, 586, 2]
+// Dependencies: [7658, 4200, 502, 2021, 4209, 1935, 504, 2]
 // Exports: canDm, default
 
-// Module 13036 (useCanDM)
-import closure_2 from "recountRelationshipTypes" /* 7591 */;
-import closure_3 from "initialize" /* 4121 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "markAllUserIdListsStale" /* 4130 */;
+// Module 13104 (useCanDM)
+import closure_2 from "recountRelationshipTypes" /* 7658 */;
+import closure_3 from "initialize" /* 4200 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "markAllUserIdListsStale" /* 4209 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
@@ -18,21 +18,21 @@ export default function useCanDM(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
   const items = [closure_4];
-  closure_2 = _require(586).useStateFromStores(items, () => id.getId() === closure_0);
-  const obj = _require(586);
+  closure_2 = _require(504).useStateFromStores(items, () => id.getId() === closure_0);
+  const obj = _require(504);
   const items1 = [closure_3];
-  closure_3 = _require(586).useStateFromStores(items1, () => {
+  closure_3 = _require(504).useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_1;
     if (isLurkingResult) {
       isLurkingResult = lurking.isLurking(tmp);
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(4166).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(1935).RestrictedGuildIds;
   closure_4 = RestrictedGuildIds.useSetting();
-  const obj2 = _require(586);
+  const obj2 = _require(504);
   const items2 = [closure_6, closure_5, closure_2];
-  return _require(586).useStateFromStores(items2, () => {
+  return _require(504).useStateFromStores(items2, () => {
     let tmp = !gameFriendsForUser;
     if (!gameFriendsForUser) {
       tmp = !closure_3;
@@ -63,7 +63,7 @@ export const canDm = function canDm(userId, guildId) {
   if (isLurkingResult) {
     isLurkingResult = lurking.isLurking(guildId);
   }
-  const RestrictedGuildIds = _require(4166).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(1935).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
   let isFriendResult = friend.isFriend(userId);
   let tmp8 = !tmp4;
@@ -80,7 +80,7 @@ export const canDm = function canDm(userId, guildId) {
   if (!tmp8) {
     let setting = gameFriendsForUser.getGameFriendsForUser(userId).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(4166).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(1935).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
     tmp8 = setting;

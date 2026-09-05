@@ -1,12 +1,12 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7606
+// Function ID: 7607
 // Name: addGlobalTag
-// Dependencies: [670, 2]
+// Dependencies: [1345, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 7539 (addGlobalTag)
+// Module 7606 (addGlobalTag)
 import set from "set" /* 2 */;
-import DesignIds from "DesignIds" /* 670 */;
+import DesignIds from "DesignIds" /* 1345 */;
 
 const obj = { design_id: DesignIds.DesignIds.DESIGN_TABS_IA };
 const result = set.fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12060
+// Function ID: 12061
 // Name: SubmittingOverlay
-// Dependencies: [21, 4481, 709, 4218, 4935, 4939, 4952, 2]
+// Dependencies: [21, 4560, 576, 4296, 4974, 4978, 4991, 2]
 // Exports: SubmittingOverlay
 
-// Module 11992 (SubmittingOverlay)
+// Module 12060 (SubmittingOverlay)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const jsx = jsxProd.jsx;
 let obj = { ellipsis: null };
@@ -21,7 +21,7 @@ const result = set.fileFinishedImporting("modules/app_launcher/native/screens/ho
 
 export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   submitting = submitting.submitting;
-  let obj = submitting(4218);
+  let obj = submitting(4296);
   class S {
     constructor() {
       tmp = submitting;
@@ -35,7 +35,7 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
       return obj;
     }
   }
-  obj = { withSpring: submitting(4935).withSpring, submitting, SUBTLE_SPRING: submitting(4939).SUBTLE_SPRING };
+  obj = { withSpring: submitting(4974).withSpring, submitting, SUBTLE_SPRING: submitting(4978).SUBTLE_SPRING };
   S.__closure = obj;
   S.__workletHash = 492443733468;
   S.__initData = closure_5;
@@ -43,8 +43,8 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   obj = { style: items, children: null };
   items = [submitting.style, callback().ellipsis, animatedStyle];
   if (submitting) {
-    submitting = tmp5(submitting(4952).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(submitting(4991).Ellipsis, { variant: "active", size: "md" });
   }
   obj[1] = submitting;
-  return jsx(_modDef4218.View, { style: items, children: null });
+  return jsx(_modDef4296.View, { style: items, children: null });
 };

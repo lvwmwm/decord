@@ -1,14 +1,14 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8241
+// Function ID: 8242
 // Name: useSharedStyles
-// Dependencies: [7148, 4481, 709, 2]
+// Dependencies: [7208, 4560, 576, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8172 (useSharedStyles)
+// Module 8241 (useSharedStyles)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 ({ AVATAR_CONTAINER_SIZE: obj1, AVATAR_CUSTOM_STATUS_GAP: c3, AVATAR_PADDING: c4, CARD_PADDING: c5, PROFILE_CONTENT_BOTTOM_PADDING: closure_6, PROFILE_SIDE_PADDING: error, PROFILE_TOP_LAYER_Z_INDEX: closure_8 } = ARBITRARY_LARGE_OFFSET);
 let closure_9 = createCacheKey.createStyles(() => {

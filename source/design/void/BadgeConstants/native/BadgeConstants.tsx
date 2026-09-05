@@ -1,10 +1,10 @@
-// Module ID: 1298
-// Function ID: 1299
+// Module ID: 1180
+// Function ID: 1181
 // Name: PX_16
-// Dependencies: [709, 2]
+// Dependencies: [576, 2]
 
-// Module 1298 (PX_16)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 1180 (PX_16)
+import ThemesDefault from "Themes" /* 576 */;
 
 const PX_16 = ThemesDefault.space.PX_16;
 const PX_12 = ThemesDefault.space.PX_12;

@@ -1,11 +1,11 @@
-// Module ID: 1380
-// Function ID: 1381
+// Module ID: 1951
+// Function ID: 1952
 // Name: handleRequiredAction
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 1380 (handleRequiredAction)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 1951 (handleRequiredAction)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleRequiredAction(requiredAction) {
   requiredAction = requiredAction.requiredAction;

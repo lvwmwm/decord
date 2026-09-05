@@ -1,13 +1,13 @@
-// Module ID: 13388
-// Function ID: 13389
+// Module ID: 13461
+// Function ID: 13462
 // Name: roundFPCountdownUnits
-// Dependencies: [1233, 7373, 4163, 1205, 2]
+// Dependencies: [1114, 7439, 4242, 1232, 2]
 // Exports: default
 
-// Module 13388 (roundFPCountdownUnits)
+// Module 13461 (roundFPCountdownUnits)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useCountdownDefault from "useCountdown" /* 7373 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useCountdownDefault from "useCountdown" /* 7439 */;
 
 function roundFPCountdownUnits(arg0) {
   obj = {};

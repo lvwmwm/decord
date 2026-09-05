@@ -1,20 +1,20 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16304
+// Function ID: 16305
 // Name: Wrapper
-// Dependencies: [19, 17, 7569, 1908, 5398, 4709, 4500, 673, 21, 4481, 586, 8989, 4477, 1233, 16229, 4341, 4338, 2]
+// Dependencies: [19, 17, 7636, 1979, 5438, 4741, 4579, 1074, 21, 4560, 504, 9059, 4556, 1114, 16305, 4423, 4420, 2]
 // Exports: default
 
-// Module 16228 (Wrapper)
+// Module 16304 (Wrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 7569 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "insertUnsortedGuilds" /* 5398 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_9 from "updateVoiceState" /* 4500 */;
-import { NOOP } from "ME" /* 673 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7636 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "insertUnsortedGuilds" /* 5438 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_9 from "updateVoiceState" /* 4579 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function Wrapper(folder) {
@@ -226,7 +226,7 @@ const result = require("set").fileFinishedImporting("modules/home_drawer/native/
 
 export default function HomeDrawerFolderExpandedChildren(folderId) {
   folderId = folderId.folderId;
-  let obj = folderId(586);
+  let obj = folderId(504);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guildFolderById = null;
@@ -235,7 +235,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4341).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4423).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

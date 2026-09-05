@@ -1,16 +1,16 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9745
+// Function ID: 9746
 // Name: AppChannelApplicationIcon
-// Dependencies: [19, 21, 4481, 709, 5542, 1431, 2]
+// Dependencies: [19, 21, 4560, 576, 5587, 1396, 2]
 // Exports: default
 
-// Module 9674 (AppChannelApplicationIcon)
+// Module 9745 (AppChannelApplicationIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import preloadDefault from "preload" /* 5542 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import preloadDefault from "preload" /* 5587 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 noopAll;
 createCacheKey = { icon: null };

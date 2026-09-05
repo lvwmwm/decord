@@ -1,18 +1,18 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9086
+// Function ID: 9087
 // Name: nativeEventEmitter
-// Dependencies: [17, 673, 4545, 9017, 12, 1205, 586, 706, 2]
+// Dependencies: [17, 1074, 4585, 9087, 12, 1232, 504, 573, 2]
 
-// Module 9016 (nativeEventEmitter)
+// Module 9086 (nativeEventEmitter)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import initializeDefault from "initialize" /* 586 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
-import enforcingDefault from "enforcing" /* 9017 */;
-import enforcing from "enforcing" /* 9017 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
+import enforcingDefault from "enforcing" /* 9087 */;
+import enforcing from "enforcing" /* 9087 */;
 
 const RTCConnectionStates = ME.RTCConnectionStates;
 const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;
@@ -75,15 +75,15 @@ const audioManagerStore = new AudioManagerStore(dispatcherDefault, {
         if (tmp8) {
           let tmp4Result = tmp4(12);
           if (tmp4Result.isString(simpleDeviceType)) {
-            tmp4Result = tmp4(1205);
+            tmp4Result = tmp4(1232);
             let obj = { extra: null };
             obj = { deviceString: null };
             obj[0] = tmp10;
             obj[0] = obj;
             tmp4Result.captureMessage("AudioManagerStore received a string for an android audio device", obj);
           } else {
-            tmp4(9017).setActiveAudioDevice(tmp10);
-            const tmp4Result1 = tmp4(9017);
+            tmp4(9087).setActiveAudioDevice(tmp10);
+            const tmp4Result1 = tmp4(9087);
           }
         }
         const obj2 = enforcingDefault;
@@ -101,14 +101,14 @@ const audioManagerStore = new AudioManagerStore(dispatcherDefault, {
     if (c9) {
       let obj = applyDefault;
       if (obj.isString(device)) {
-        let tmpResult = tmp(1205);
+        let tmpResult = tmp(1232);
         obj = { extra: null };
         obj = { deviceString: null };
         obj[0] = device;
         obj[0] = obj;
         tmpResult.captureMessage("AudioManagerStore received a string for an android audio device", obj);
       } else {
-        tmpResult = tmp(9017);
+        tmpResult = tmp(9087);
         tmpResult.setActiveAudioDevice(device);
       }
     }

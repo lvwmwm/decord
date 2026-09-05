@@ -1,13 +1,13 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12240
+// Function ID: 12241
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4345, 4218, 1625, 4482, 4485, 10882, 2]
+// Dependencies: [19, 21, 4427, 4296, 1609, 4561, 4564, 10951, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 12172 (MediaKeyboardButtonIcon)
+// Module 12240 (MediaKeyboardButtonIcon)
 import noopAll from "noop" /* 19 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4345 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4427 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -23,7 +23,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     const merged = Object.assign(arg0, undefined);
     const tmp6 = useKeyboardTypeDefault();
     _require = tmp6;
-    let obj = _require(4218);
+    let obj = _require(4296);
     const fn = function s() {
       const tmp = callback;
       const tmp4 = callback === callback(closure_1_2[4]).KeyboardTypes.MEDIA || callback === callback(closure_1_2[4]).KeyboardTypes.APP_LAUNCHER;
@@ -39,9 +39,9 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     };
     obj = { keyboard: null, KeyboardTypes: null, withTiming: null, timingStandard: null };
     obj[0] = tmp6;
-    obj[1] = _require(1625).KeyboardTypes;
-    obj[2] = _require(4482).withTiming;
-    obj[3] = _require(4485).timingStandard;
+    obj[1] = _require(1609).KeyboardTypes;
+    obj[2] = _require(4561).withTiming;
+    obj[3] = _require(4564).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 10698563185643;
     fn.__initData = closure_4;
@@ -50,7 +50,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(10882).PlusLargeIcon, {});
-    return jsx(_modDef4218.View, { style: null, children: null });
+    obj[1] = jsx(_require(10951).PlusLargeIcon, {});
+    return jsx(_modDef4296.View, { style: null, children: null });
   }
 };

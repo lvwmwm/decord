@@ -1,16 +1,16 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7935
+// Function ID: 7936
 // Name: generateBlockedGroupRowData
-// Dependencies: [7864, 502, 12, 1362, 709, 4329, 7867, 2]
+// Dependencies: [7933, 1085, 12, 4411, 576, 4409, 7936, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 7866 (generateBlockedGroupRowData)
+// Module 7935 (generateBlockedGroupRowData)
 import set from "set" /* 2 */;
-import sum from "sum" /* 502 */;
-import ThemesDefault from "Themes" /* 709 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import Changeset from "Changeset" /* 7864 */;
-import processColorOrThrow from "processColorOrThrow" /* 7867 */;
+import ThemesDefault from "Themes" /* 576 */;
+import sum from "sum" /* 1085 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import Changeset from "Changeset" /* 7933 */;
+import processColorOrThrow from "processColorOrThrow" /* 7936 */;
 import apply from "apply" /* 12 */;
 
 const SeparatorAction = Changeset.SeparatorAction;
@@ -21,15 +21,15 @@ let closure_5 = apply.memoize((arg0) => {
   if (obj.isThemeDark(arg0)) {
     str = ThemesDefault.unsafe_rawColors.PRIMARY_700;
   }
-  let tmpResult = tmp(1362);
+  let tmpResult = tmp(4411);
   let str2 = "#FAFAFA";
   if (tmpResult.isThemeDark(arg0)) {
     str2 = ThemesDefault.unsafe_rawColors.PRIMARY_630;
   }
-  tmpResult = tmp(1362);
+  tmpResult = tmp(4411);
   if (tmpResult.isThemeDark(arg0)) {
-    let GREY1 = tmp(4329).hexWithOpacity(ThemesDefault.unsafe_rawColors.PRIMARY_300, 0.6);
-    const tmpResult1 = tmp(4329);
+    let GREY1 = tmp(4409).hexWithOpacity(ThemesDefault.unsafe_rawColors.PRIMARY_300, 0.6);
+    const tmpResult1 = tmp(4409);
   } else {
     GREY1 = UNSAFE_Colors.GREY1;
   }

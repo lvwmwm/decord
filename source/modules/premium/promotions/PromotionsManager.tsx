@@ -1,19 +1,19 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17469
+// Function ID: 17470
 // Name: _terminate
-// Dependencies: [5, 1995, 1921, 4145, 10594, 1923, 673, 502, 7058, 13281, 4139, 13394, 2]
+// Dependencies: [5, 2025, 1371, 4224, 10665, 1373, 1074, 1085, 7118, 13353, 4218, 13467, 2]
 
-// Module 17389 (_terminate)
-import initializeDefault from "initialize" /* 7058 */;
-import fetchActivePromotions from "fetchActivePromotions" /* 13281 */;
+// Module 17469 (_terminate)
+import initializeDefault from "initialize" /* 7118 */;
+import fetchActivePromotions from "fetchActivePromotions" /* 13353 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import closure_6 from "reset" /* 4145 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10594 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
-import { EntitlementTypes } from "ME" /* 673 */;
-import { SubscriptionTypes } from "sum" /* 502 */;
+import closure_4 from "_getSystemLocale" /* 2025 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import closure_6 from "reset" /* 4224 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10665 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
+import { EntitlementTypes } from "ME" /* 1074 */;
+import { SubscriptionTypes } from "sum" /* 1085 */;
 
 require = arg1;
 initializeDefault;

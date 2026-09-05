@@ -1,14 +1,14 @@
-// Module ID: 1911
-// Function ID: 1912
+// Module ID: 1982
+// Function ID: 1983
 // Name: getFavoritesAwareGuildName
-// Dependencies: [1425, 673, 1233, 2]
+// Dependencies: [1970, 1074, 1114, 2]
 // Exports: getFavoritesAwareGuildName, isFavoritableChannel, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
-// Module 1911 (getFavoritesAwareGuildName)
+// Module 1982 (getFavoritesAwareGuildName)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import date from "date" /* 1425 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import date from "date" /* 1970 */;
 
 const FAVORITES_RAW_GUILD_ID = date.FAVORITES_RAW_GUILD_ID;
 const FAVORITES = ME.FAVORITES;

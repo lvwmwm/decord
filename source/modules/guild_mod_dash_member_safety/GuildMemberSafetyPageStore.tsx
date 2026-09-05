@@ -1,17 +1,17 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7495
+// Function ID: 7496
 // Name: getSearchIndex
-// Dependencies: [32, 1991, 1921, 684, 7429, 7452, 7457, 7431, 12, 7433, 2]
+// Dependencies: [32, 2021, 1371, 1090, 7496, 7519, 7524, 7498, 12, 7500, 2]
 
-// Module 7428 (getSearchIndex)
+// Module 7495 (getSearchIndex)
 import apply from "apply" /* 12 */;
-import setDefault from "set" /* 684 */;
-import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes" /* 7429 */;
-import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7431 */;
-import hasStringMatch from "hasStringMatch" /* 7452 */;
+import setDefault from "set" /* 1090 */;
+import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes" /* 7496 */;
+import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7498 */;
+import hasStringMatch from "hasStringMatch" /* 7519 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_3 from "trackCommunicationDisabled" /* 2021 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 let closure_5 = 3 * setDefault.Millis.SECOND;
@@ -50,7 +50,7 @@ prototype["initialize"] = function initialize() {
     const guildMemberSafetyMembers = new getGuildMemberSecondaryIndexes.GuildMemberSafetyMembers(self.guildId);
     self._members = guildMemberSafetyMembers;
     ({ guildId, _members } = self);
-    const guildMemberSafetyPagination = new require(7457) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
+    const guildMemberSafetyPagination = new require(7524) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
     self._pagination = guildMemberSafetyPagination;
   }
 };
@@ -92,8 +92,8 @@ Object.defineProperty(prototype, "searchChunkSize", {
       num = 0;
       if (self._initialized) {
         const _pagination = self._pagination;
-        num = require(7457) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
-        const obj = require(7457) /* items */;
+        num = require(7524) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
+        const obj = require(7524) /* items */;
       }
     }
     return num;
@@ -693,7 +693,7 @@ prototype["getPaginationState"] = function getPaginationState() {
     }
     return paginationState;
   }
-  paginationState = require(7457) /* items */.createDefaultMemberSafetyPaginationState();
+  paginationState = require(7524) /* items */.createDefaultMemberSafetyPaginationState();
 };
 prototype["getPaginatedMembers"] = function getPaginatedMembers() {
   const self = this;

@@ -1,12 +1,12 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11369
+// Function ID: 11370
 // Name: LIKELY_ATO_MORE_TIPS_MODAL_KEY
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 11301 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
+// Module 11369 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/ato_alerts/Constants.tsx");
 

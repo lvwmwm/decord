@@ -1,19 +1,19 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11536
+// Function ID: 11537
 // Name: MediaViewerAltTextSheet
-// Dependencies: [19, 21, 4481, 709, 11469, 5087, 7090, 7089, 1233, 4477, 2]
+// Dependencies: [19, 21, 4560, 576, 11537, 5126, 7150, 7149, 1114, 4556, 2]
 // Exports: default
 
-// Module 11468 (MediaViewerAltTextSheet)
+// Module 11536 (MediaViewerAltTextSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import Background from "Background" /* 7090 */;
-import useMessagePreviewHeightStore from "useMessagePreviewHeightStore" /* 11469 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import Background from "Background" /* 7150 */;
+import useMessagePreviewHeightStore from "useMessagePreviewHeightStore" /* 11537 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -33,7 +33,7 @@ export default function MediaViewerAltTextSheet(children) {
   }
   obj = { header: null, contentStyles: null, children: null };
   obj = { title: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj[0] = intl.string(getSystemLocale.t.J3IOO1);
   obj[0] = jsx(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, { title: null });
   const items = [tmp.container, { minHeight: num }];

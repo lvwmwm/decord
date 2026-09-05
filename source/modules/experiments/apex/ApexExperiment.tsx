@@ -1,17 +1,17 @@
-// Module ID: 1469
-// Function ID: 1470
+// Module ID: 1434
+// Function ID: 1435
 // Name: getUnitId
-// Dependencies: [32, 1215, 1209, 1470, 510, 1394, 586, 2]
+// Dependencies: [32, 502, 1236, 1435, 1255, 1369, 504, 2]
 // Exports: default
 
-// Module 1469 (getUnitId)
-import extractId from "extractId" /* 510 */;
-import initialize from "initialize" /* 586 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import loggerDefault from "logger" /* 1470 */;
+// Module 1434 (getUnitId)
+import initialize from "initialize" /* 504 */;
+import extractId from "extractId" /* 1255 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import loggerDefault from "logger" /* 1435 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "initialize" /* 1209 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "initialize" /* 1236 */;
 
 require = arg1;
 function getUnitId(arg0, guildId) {
@@ -40,14 +40,14 @@ function useUnitId(arg0, guildId) {
   } else if ("user" === arg0) {
     return tmp4;
   } else if ("installation" === arg0) {
-    let tmpResult = tmp(510);
+    let tmpResult = tmp(1255);
     let str3 = tmpResult.maybeExtractId(tmp5);
     if (str3 == null) {
       str3 = "";
     }
     return str3;
   } else {
-    tmpResult = tmp(1394);
+    tmpResult = tmp(1369);
     tmpResult.assertNever(arg0);
   }
   const obj = initialize;

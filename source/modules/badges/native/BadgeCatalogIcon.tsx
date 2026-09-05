@@ -1,10 +1,10 @@
-// Module ID: 11122
-// Function ID: 11123
+// Module ID: 11190
+// Function ID: 11191
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 11123, 5542, 8383, 2]
+// Dependencies: [32, 19, 17, 21, 11191, 5587, 8453, 2]
 // Exports: default
 
-// Module 11122 (BadgeCatalogIcon)
+// Module 11190 (BadgeCatalogIcon)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -75,7 +75,7 @@ export default function BadgeCatalogIcon(style) {
     if (url === complex_icon_animated_url) {
       let xml = tmp4.xml;
     } else {
-      let obj5 = complex_icon_animated_url(11123);
+      let obj5 = complex_icon_animated_url(11191);
       xml = obj5.getCachedSvgXml(complex_icon_animated_url);
     }
     obj = { style: null, "aria-hidden": true, children: null };
@@ -86,7 +86,7 @@ export default function BadgeCatalogIcon(style) {
       obj1[0] = xml;
       obj1[1] = size;
       obj1[2] = size;
-      tmp15Result = tmp15(complex_icon_animated_url(8383).SvgXml, obj1);
+      tmp15Result = tmp15(complex_icon_animated_url(8453).SvgXml, obj1);
     }
     obj[2] = tmp15Result;
     return <View style={null} aria-hidden>{null}</View>;
@@ -107,7 +107,7 @@ export default function BadgeCatalogIcon(style) {
       obj5[1] = size;
       obj3[1] = obj5;
       obj3[2] = tmp7;
-      obj[2] = tmp8(isMatch(5542), obj3);
+      obj[2] = tmp8(isMatch(5587), obj3);
     }
     return <View {...obj} />;
   }

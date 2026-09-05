@@ -1,27 +1,27 @@
-// Module ID: 9019
-// Function ID: 9020
+// Module ID: 9089
+// Function ID: 9090
 // Name: trackDeviceChanged
-// Dependencies: [5, 4556, 1386, 4532, 4557, 1980, 1921, 673, 9020, 4545, 3, 695, 633, 706, 9021, 9023, 9024, 9038, 2]
+// Dependencies: [5, 9090, 1957, 1908, 4583, 2011, 1371, 1074, 9091, 4585, 3, 1242, 551, 573, 9092, 9094, 9095, 9109, 2]
 
-// Module 9019 (trackDeviceChanged)
+// Module 9089 (trackDeviceChanged)
 import timestampDefault from "timestamp" /* 3 */;
-import debounceDefault from "debounce" /* 633 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import snapVolumeToDefault from "snapVolumeToDefault" /* 9021 */;
-import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9023 */;
-import _getFilterBlob from "_getFilterBlob" /* 9024 */;
-import isPremiumResolution from "isPremiumResolution" /* 9038 */;
+import debounceDefault from "debounce" /* 551 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import snapVolumeToDefault from "snapVolumeToDefault" /* 9092 */;
+import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9094 */;
+import _getFilterBlob from "_getFilterBlob" /* 9095 */;
+import isPremiumResolution from "isPremiumResolution" /* 9109 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4556 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_7 from "createRTCConnection" /* 4557 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { SoundOutputChannel } from "SoundOutputChannel" /* 9020 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
+import closure_4 from "initialize" /* 9090 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_7 from "createRTCConnection" /* 4583 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { SoundOutputChannel } from "SoundOutputChannel" /* 9091 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4585 */;
 
 require = arg1;
 function trackDeviceChanged(inputDevices, inputDeviceId, found, Video, arg4) {
@@ -319,7 +319,7 @@ obj = {
       if (null != tmp24) {
         str2 = tmp24.name;
       }
-      let tmp4Result = tmp4(695);
+      let tmp4Result = tmp4(1242);
       obj2 = { mode: null, location_stack: null, voice_channel_type: null, input_device_name: null, audio_subsystem: null, audio_layer: null };
       obj2[0] = mode;
       obj2[1] = analyticsLocations;
@@ -349,7 +349,7 @@ obj = {
         if (null != tmp12) {
           str = tmp12.name;
         }
-        tmp4Result = tmp4(695);
+        tmp4Result = tmp4(1242);
         obj3 = { location_stack: null, voice_channel_type: null, input_device_name: null, audio_subsystem: null, audio_layer: null, old_threshold: null, new_threshold: null, old_auto_threshold: null, new_auto_threshold: null };
         obj3[0] = analyticsLocations;
         let type1;
@@ -642,7 +642,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9023)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
+              obj1[0] = v0(9094)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -654,7 +654,7 @@ obj = {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(706);
+            obj = v0(573);
             const obj3 = { type: "AUDIO_SET_DEBUG_LOGGING", enabled: null };
             obj3[1] = closure_0;
             obj.dispatch(obj3);
@@ -729,7 +729,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9023)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
+              obj1[0] = v0(9094)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -741,7 +741,7 @@ obj = {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(706);
+            obj = v0(573);
             const obj3 = { type: "AUDIO_SET_SUBSYSTEM", subsystem: null };
             obj3[1] = closure_0;
             obj.dispatch(obj3);

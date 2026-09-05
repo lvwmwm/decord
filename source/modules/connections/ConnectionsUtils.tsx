@@ -1,19 +1,19 @@
-// Module ID: 5368
-// Function ID: 5369
+// Module ID: 5407
+// Function ID: 5408
 // Name: officialApplicationIds
-// Dependencies: [1984, 1908, 4120, 5369, 673, 1485, 38, 1233, 12, 5370, 586, 4301, 1372, 2]
+// Dependencies: [2015, 1979, 4199, 5408, 1074, 1365, 38, 1114, 12, 5409, 504, 4380, 1943, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
-// Module 5368 (officialApplicationIds)
+// Module 5407 (officialApplicationIds)
 import applyDefault from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import ChannelTypesDefault from "ChannelTypes" /* 5370 */;
-import closure_3 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import OperatorTypes from "OperatorTypes" /* 5369 */;
-import ME from "ME" /* 673 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import ChannelTypesDefault from "ChannelTypes" /* 5409 */;
+import closure_3 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import OperatorTypes from "OperatorTypes" /* 5408 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ MetadataFields: closure_6, OperatorTypes: error } = OperatorTypes);
@@ -53,19 +53,19 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     if (tmp14) {
       tmp14 = connectionMetadataField === constants.PAYPAL_VERIFIED;
     }
-    let H97H4S = _require(1233).t.H97H4S;
+    let H97H4S = _require(1114).t.H97H4S;
     if (tmp14) {
-      H97H4S = tmp11(1233).t["N95b+f"];
+      H97H4S = tmp11(1114).t["N95b+f"];
     }
     tmp11 = _require;
   } else if (tmp2.NOT_EQUAL === operator) {
-    H97H4S = _require(1233).t["D9B/q2"];
+    H97H4S = _require(1114).t["D9B/q2"];
   } else if (tmp2.LESS_THAN === operator) {
-    H97H4S = _require(1233).t["3ru8/N"];
+    H97H4S = _require(1114).t["3ru8/N"];
     const _Math2 = Math;
     _require = Math.max(0, rounded - 1);
   } else if (tmp2.GREATER_THAN === operator) {
-    H97H4S = _require(1233).t.wCVDHn;
+    H97H4S = _require(1114).t.wCVDHn;
     const _Math = Math;
     _require = Math.max(0, rounded + 1);
   } else {
@@ -83,7 +83,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     if (null != operator) {
       if (constants3.REDDIT === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl26 = _require(1233).intl;
+          const intl26 = _require(1114).intl;
           let obj = { platformQuantityHook: null };
           obj[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -91,7 +91,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl26.format(H97H4S, obj);
         } else if (tmp67.REDDIT_TOTAL_KARMA === connectionMetadataField) {
-          const intl25 = _require(1233).intl;
+          const intl25 = _require(1114).intl;
           obj = { platformQuantityHook: null };
           obj[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -99,19 +99,19 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl25.format(H97H4S, obj);
         } else if (tmp67.REDDIT_GOLD === connectionMetadataField) {
-          const intl24 = _require(1233).intl;
+          const intl24 = _require(1114).intl;
           obj1 = { platformQuantityHook: null };
           obj1[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t["+/5TCx"]);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t["+/5TCx"]);
           };
           formatResult = intl24.format(H97H4S, obj1);
         } else if (tmp67.REDDIT_MOD === connectionMetadataField) {
-          const intl23 = _require(1233).intl;
+          const intl23 = _require(1114).intl;
           const obj2 = { platformQuantityHook: null };
           obj2[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t["9rPbEs"]);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t["9rPbEs"]);
           };
           formatResult = intl23.format(H97H4S, obj2);
         } else {
@@ -119,7 +119,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.STEAM === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl22 = _require(1233).intl;
+          const intl22 = _require(1114).intl;
           const obj3 = { platformQuantityHook: null };
           obj3[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -127,7 +127,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl22.format(H97H4S, obj3);
         } else if (tmp58.STEAM_GAME_COUNT === connectionMetadataField) {
-          const intl21 = _require(1233).intl;
+          const intl21 = _require(1114).intl;
           const obj4 = { platformQuantityHook: null };
           obj4[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -135,7 +135,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl21.format(H97H4S, obj4);
         } else if (tmp58.STEAM_ITEM_COUNT_TF2 === connectionMetadataField) {
-          const intl20 = _require(1233).intl;
+          const intl20 = _require(1114).intl;
           const obj5 = { platformQuantityHook: null };
           obj5[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -143,7 +143,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl20.format(H97H4S, obj5);
         } else if (tmp58.STEAM_ITEM_COUNT_DOTA2 === connectionMetadataField) {
-          const intl19 = _require(1233).intl;
+          const intl19 = _require(1114).intl;
           const obj6 = { platformQuantityHook: null };
           obj6[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -155,7 +155,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.BLUESKY === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl18 = _require(1233).intl;
+          const intl18 = _require(1114).intl;
           const obj7 = { platformQuantityHook: null };
           obj7[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -163,7 +163,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl18.format(H97H4S, obj7);
         } else if (tmp51.BLUESKY_FOLLOWERS_COUNT === connectionMetadataField) {
-          const intl17 = _require(1233).intl;
+          const intl17 = _require(1114).intl;
           const obj8 = { platformQuantityHook: null };
           obj8[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -171,7 +171,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl17.format(H97H4S, obj8);
         } else if (tmp51.BLUESKY_STATUSES_COUNT === connectionMetadataField) {
-          const intl16 = _require(1233).intl;
+          const intl16 = _require(1114).intl;
           const obj9 = { platformQuantityHook: null };
           obj9[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -183,7 +183,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.TWITTER === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl15 = _require(1233).intl;
+          const intl15 = _require(1114).intl;
           const obj10 = { platformQuantityHook: null };
           obj10[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -191,15 +191,15 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl15.format(H97H4S, obj10);
         } else if (tmp42.TWITTER_VERIFIED === connectionMetadataField) {
-          const intl14 = _require(1233).intl;
+          const intl14 = _require(1114).intl;
           const obj11 = { platformQuantityHook: null };
           obj11[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t.xRygZL);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t.xRygZL);
           };
           formatResult = intl14.format(H97H4S, obj11);
         } else if (tmp42.TWITTER_FOLLOWERS_COUNT === connectionMetadataField) {
-          const intl13 = _require(1233).intl;
+          const intl13 = _require(1114).intl;
           const obj12 = { platformQuantityHook: null };
           obj12[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -207,7 +207,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl13.format(H97H4S, obj12);
         } else if (tmp42.TWITTER_STATUSES_COUNT === connectionMetadataField) {
-          const intl12 = _require(1233).intl;
+          const intl12 = _require(1114).intl;
           const obj13 = { platformQuantityHook: null };
           obj13[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -219,7 +219,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.PAYPAL === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl11 = _require(1233).intl;
+          const intl11 = _require(1114).intl;
           const obj14 = { platformQuantityHook: null };
           obj14[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -227,11 +227,11 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl11.format(H97H4S, obj14);
         } else if (tmp37.PAYPAL_VERIFIED === connectionMetadataField) {
-          const intl10 = _require(1233).intl;
+          const intl10 = _require(1114).intl;
           const obj15 = { platformQuantityHook: null };
           obj15[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t.slSQuB);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t.slSQuB);
           };
           formatResult = intl10.format(H97H4S, obj15);
         } else {
@@ -239,7 +239,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.EBAY === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl9 = _require(1233).intl;
+          const intl9 = _require(1114).intl;
           const obj16 = { platformQuantityHook: null };
           obj16[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -247,15 +247,15 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl9.format(H97H4S, obj16);
         } else if (tmp26.EBAY_TOP_RATED_SELLER === connectionMetadataField) {
-          const intl8 = _require(1233).intl;
+          const intl8 = _require(1114).intl;
           const obj17 = { platformQuantityHook: null };
           obj17[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t.TEEYwa);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t.TEEYwa);
           };
           formatResult = intl8.format(H97H4S, obj17);
         } else if (tmp26.EBAY_POSITIVE_FEEDBACK_PERCENTAGE === connectionMetadataField) {
-          const intl7 = _require(1233).intl;
+          const intl7 = _require(1114).intl;
           const obj18 = { platformQuantityHook: null };
           obj18[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -263,7 +263,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl7.format(H97H4S, obj18);
         } else if (tmp26.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT === connectionMetadataField) {
-          const intl6 = _require(1233).intl;
+          const intl6 = _require(1114).intl;
           const obj19 = { platformQuantityHook: null };
           obj19[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -271,7 +271,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl6.format(H97H4S, obj19);
         } else if (tmp26.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT === connectionMetadataField) {
-          const intl5 = _require(1233).intl;
+          const intl5 = _require(1114).intl;
           const obj20 = { platformQuantityHook: null };
           obj20[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -283,15 +283,15 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
         }
       } else if (tmp76.TIKTOK === connectionType) {
         if (constants.TIKTOK_VERIFIED === connectionMetadataField) {
-          const intl4 = _require(1233).intl;
+          const intl4 = _require(1114).intl;
           const obj21 = { platformQuantityHook: null };
           obj21[0] = function platformQuantityHook() {
-            const intl = callback(1233).intl;
-            return intl.string(callback(1233).t.uv7ety);
+            const intl = callback(1114).intl;
+            return intl.string(callback(1114).t.uv7ety);
           };
           formatResult = intl4.format(H97H4S, obj21);
         } else if (tmp17.TIKTOK_FOLLOWER_COUNT === connectionMetadataField) {
-          const intl3 = _require(1233).intl;
+          const intl3 = _require(1114).intl;
           const obj22 = { platformQuantityHook: null };
           obj22[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -299,7 +299,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl3.format(H97H4S, obj22);
         } else if (tmp17.TIKTOK_FOLLOWING_COUNT === connectionMetadataField) {
-          const intl2 = _require(1233).intl;
+          const intl2 = _require(1114).intl;
           const obj23 = { platformQuantityHook: null };
           obj23[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -307,7 +307,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           };
           formatResult = intl2.format(H97H4S, obj23);
         } else if (tmp17.TIKTOK_LIKES_COUNT === connectionMetadataField) {
-          let intl = _require(1233).intl;
+          let intl = _require(1114).intl;
           obj = { platformQuantityHook: null };
           obj[0] = function platformQuantityHook() {
             const intl = callback(closure_1_2[7]).intl;
@@ -397,7 +397,7 @@ export const getCreatedAtDate = function getCreatedAtDate(date, locale) {
 export const useShowLinkedRolesAdminNux = function useShowLinkedRolesAdminNux(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_5];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const sortedRoles = closure_1_3.getSortedRoles(lib.id);
     const someResult = sortedRoles.some((tags) => null === tags.tags.guild_connections);
     const result = lib(closure_1_2[11]).UNSAFE_isDismissibleContentDismissed(lib(closure_1_2[12]).DismissibleContent.CONNECTIONS_NUX);

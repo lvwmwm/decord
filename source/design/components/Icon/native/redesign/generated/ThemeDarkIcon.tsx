@@ -1,14 +1,14 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11320
+// Function ID: 11321
 // Name: ThemeDarkIcon
-// Dependencies: [19, 21, 709, 4196, 11253, 2]
+// Dependencies: [19, 21, 576, 4261, 11321, 2]
 // Exports: ThemeDarkIcon
 
-// Module 11252 (ThemeDarkIcon)
+// Module 11320 (ThemeDarkIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11253 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 11321 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

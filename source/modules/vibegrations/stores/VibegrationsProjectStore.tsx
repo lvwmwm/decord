@@ -1,15 +1,15 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16587
+// Function ID: 16588
 // Name: isProjectOwner
-// Dependencies: [32, 1921, 7188, 586, 706, 2]
+// Dependencies: [32, 1371, 7248, 504, 573, 2]
 // Exports: canPublishProject
 
-// Module 16511 (isProjectOwner)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import frozen from "frozen" /* 7188 */;
+// Module 16587 (isProjectOwner)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import frozen from "frozen" /* 7248 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -112,8 +112,8 @@ prototype["getSharedProjects"] = function getSharedProjects(guildId) {
   }
   return items;
 };
-prototype["getIntegrationStatus"] = function getIntegrationStatus(closure_1) {
-  let value = map1.get(closure_1);
+prototype["getIntegrationStatus"] = function getIntegrationStatus(projectId) {
+  let value = map1.get(projectId);
   if (value == null) {
     value = null;
   }

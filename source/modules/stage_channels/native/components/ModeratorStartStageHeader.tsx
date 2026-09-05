@@ -1,13 +1,13 @@
-// Module ID: 10002
-// Function ID: 10003
-// Dependencies: [19, 17, 21, 4481, 5637, 9962, 9956, 2]
+// Module ID: 10073
+// Function ID: 10074
+// Dependencies: [19, 17, 21, 4560, 5682, 10033, 10027, 2]
 
-// Module 10002
-import HideStageChannelCallIcon from "HideStageChannelCallIcon" /* 9956 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9962 */;
+// Module 10073
+import HideStageChannelCallIcon from "HideStageChannelCallIcon" /* 10027 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10033 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ const memoResult = importAllResult.memo((channel) => {
   if (speaker) {
     obj = { channelId: null };
     obj[0] = channel.id;
-    speaker = tmp7(tmp8(9956).MusicMuteButton, obj);
+    speaker = tmp7(tmp8(10027).MusicMuteButton, obj);
   }
   items[2] = speaker;
   obj = { channelId: channel.id };

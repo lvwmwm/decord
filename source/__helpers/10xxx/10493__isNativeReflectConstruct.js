@@ -1,17 +1,19 @@
 // Module ID: 10493
 // Function ID: 10494
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10361, 10490, 10362, 10492]
+// Dependencies: [41, 42, 93, 95, 98, 10432, 10494, 10459, 10439]
 
 // Module 10493 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct2 from "_isNativeReflectConstruct" /* 10492 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10432 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10494 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUMonthNameParser = require;
+const FRWeekdayParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +33,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUMonthNameParser {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(?:ce)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(WEEKDAY_DICTIONARY.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)", "i");
+class FRWeekdayParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, RUMonthNameParser);
+    tmp = closure_2(this, FRWeekdayParser);
     tmp2 = closure_4;
-    obj = closure_4(RUMonthNameParser);
+    obj = closure_4(FRWeekdayParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,39 +54,36 @@ class RUMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMonthNameParser, _isNativeReflectConstruct2.AbstractParserWithLeftBoundaryChecking);
+_inherits(FRWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
-    key: "innerPatternString",
-    value: function innerPatternString(arg0) {
-      return "((?:\u0432)\\s*)?(" + RUMonthNameParser(10361).matchAnyPattern(RUMonthNameParser(10490).MONTH_DICTIONARY) + ")\\s*(?:[,-]?\\s*(" + RUMonthNameParser(10490).YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)";
+    key: "innerPattern",
+    value: function innerPattern() {
+      return regExp;
     }
   },
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const formatted = index[2].toLowerCase();
-      if (index[0].length <= 3) {
-        if (!RUMonthNameParser(10490).FULL_MONTH_NAME_DICTIONARY[formatted]) {
-          return null;
-        }
-      }
-      const parsingResult = createParsingResult.createParsingResult(index.index, index.index + index[0].length);
-      const start = parsingResult.start;
-      start.imply("day", 1);
-      const tmp9 = RUMonthNameParser(10490).MONTH_DICTIONARY[formatted];
-      const start2 = parsingResult.start;
-      start2.assign("month", tmp9);
-      if (index[3]) {
-        const start4 = parsingResult.start;
-        start4.assign("year", tmp7(10490).parseYear(index[3]));
+    value: function innerExtract(reference) {
+      const formatted = arg1[1].toLowerCase();
+      const tmp4 = FRWeekdayParser(10494).WEEKDAY_DICTIONARY[formatted];
+      if (undefined === tmp4) {
+        return null;
       } else {
-        const start3 = parsingResult.start;
-        start3.imply("year", tmp7(10362).findYearClosestToRef(createParsingResult.refDate, 1, tmp9));
+        const formatted1 = arg1[2] || "".toLowerCase();
+        let str4 = "last";
+        if ("dernier" != formatted1) {
+          str4 = null;
+          if ("prochain" == formatted1) {
+            str4 = "next";
+          }
+        }
+        return tmp2(10459).createParsingComponentsAtWeekday(reference.reference, tmp4, str4);
       }
-      return parsingResult;
+      const str = arg1[1];
+      tmp2 = FRWeekdayParser;
     }
   }
 ];
 
-export default _createClass(RUMonthNameParser, items);
+export default _createClass(FRWeekdayParser, items);

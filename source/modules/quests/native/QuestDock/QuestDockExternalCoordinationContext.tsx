@@ -1,18 +1,18 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15099
+// Function ID: 15100
 // Name: QuestDockMode
-// Dependencies: [19, 15017, 5404, 15019, 21, 684, 7014, 4218, 15018, 11208, 1234, 2]
+// Dependencies: [19, 15093, 5444, 15095, 21, 1090, 7074, 4296, 15094, 11276, 1115, 2]
 // Exports: useExternalScrollEventHandler
 
-// Module 15023 (QuestDockMode)
-import setDefault from "set" /* 684 */;
+// Module 15099 (QuestDockMode)
+import setDefault from "set" /* 1090 */;
 import importAllResult from "noop" /* 19 */;
-import closure_3 from "QuestDockMode" /* 15017 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5404 */;
-import { QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15019 */;
+import closure_3 from "QuestDockMode" /* 15093 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5444 */;
+import { QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 15095 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7014 */;
-import set from "set" /* 1234 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7074 */;
+import set from "set" /* 1115 */;
 
 const require = arg1;
 const SECOND = setDefault.Millis.SECOND;

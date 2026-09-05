@@ -1,12 +1,12 @@
-// Module ID: 13064
-// Function ID: 13065
+// Module ID: 13132
+// Function ID: 13133
 // Name: useTrackPdpClick
-// Dependencies: [19, 673, 8697, 8109, 7487, 695, 2]
+// Dependencies: [19, 1074, 8767, 8178, 7554, 1242, 2]
 // Exports: useTrackPdpClick
 
-// Module 13064 (useTrackPdpClick)
+// Module 13132 (useTrackPdpClick)
 import closure_3 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 10799
-// Function ID: 10800
+// Module ID: 10868
+// Function ID: 10869
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4473, 4522, 7595, 1386, 4572, 4130, 10791, 673, 21, 4481, 709, 4494, 38, 10800, 10801, 4193, 10802, 8972, 7596, 586, 1296, 4477, 4325, 10807, 7102, 8148, 1233, 10827, 4434, 4432, 4936, 1902, 7811, 5032, 8110, 2008, 8149, 10828, 9304, 4965, 7892, 4755, 9105, 10830, 9367, 10838, 9113, 5559, 10839, 5560, 2]
+// Dependencies: [19, 17, 4552, 4788, 7662, 1957, 4600, 4209, 10860, 1074, 21, 4560, 576, 4573, 38, 10869, 10870, 4258, 10871, 9042, 7663, 504, 1178, 4556, 4404, 10876, 7162, 8217, 1114, 10896, 4513, 4511, 4975, 1926, 7880, 5071, 8179, 1896, 8218, 10897, 9375, 5004, 7961, 4794, 9176, 10899, 9438, 10907, 9184, 5604, 10908, 5605, 2]
 
-// Module 10799 (UserRowSubLabel)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10807 */;
+// Module 10868 (UserRowSubLabel)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10876 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_6 from "addApplication" /* 4522 */;
-import closure_7 from "initialize" /* 7595 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "sortActivity" /* 4572 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import { UserRowModes } from "UserRowModes" /* 10791 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_6 from "addApplication" /* 4788 */;
+import closure_7 from "initialize" /* 7662 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "sortActivity" /* 4600 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import { UserRowModes } from "UserRowModes" /* 10860 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function UserRowSubLabel(arg0) {
@@ -42,9 +42,9 @@ function UserRowSubLabel(arg0) {
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4325).getUserTag(user);
-    callback(tmp(4477).Text, obj);
-    const tmpResult = tmp(4325);
+    obj[3] = tmp(4404).getUserTag(user);
+    callback(tmp(4556).Text, obj);
+    const tmpResult = tmp(4404);
   }
   if (null == stateFromStores) {
     obj1 = { style: null };
@@ -63,10 +63,10 @@ function UserRowSubLabel(arg0) {
     const obj4 = { uri: null };
     obj4[0] = str;
     obj3[2] = obj4;
-    const items1 = [callback(tmp(1296).Icon, obj3, stateFromStores.id), ];
+    const items1 = [callback(tmp(1178).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4477).Text, obj5);
+    items1[1] = callback(tmp(4556).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "Array" };
+      let obj = { accessibilityActions: null, actions: "a" };
       obj[0] = items;
       return obj;
     } else {

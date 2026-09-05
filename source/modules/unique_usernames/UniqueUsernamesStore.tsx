@@ -1,16 +1,16 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14709
+// Function ID: 14710
 // Name: isRateLimited
-// Dependencies: [1401, 684, 586, 706, 2]
+// Dependencies: [1437, 1090, 504, 573, 2]
 
-// Module 14634 (isRateLimited)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1401 */;
+// Module 14709 (isRateLimited)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import privDefault from "priv" /* 1437 */;
 
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
-let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "Array" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "Array" }, source: "PX_16", fetched: "2026-06-mobile-friendship-anniversary" } } };
+let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "Array" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "Array" }, source: "PX_16", fetched: "2026-05-mana-type-consolidation" } } };
 const Store = initializeDefault.Store;
 class UniqueUsernamesStore extends Store {
 }
@@ -87,7 +87,7 @@ obj = {
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
     obj.suggestions.migration = { suggestion: { username: "Array" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "Array" }, source: "PX_16", fetched: "2026-06-mobile-friendship-anniversary" };
+    obj.suggestions.registration = { suggestion: { username: "Array" }, source: "PX_16", fetched: "2026-05-mana-type-consolidation" };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

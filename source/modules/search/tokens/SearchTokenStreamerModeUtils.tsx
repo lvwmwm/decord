@@ -1,13 +1,13 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12345
+// Function ID: 12346
 // Name: getValidOrderedFilterTokens
-// Dependencies: [4326, 673, 12272, 2]
+// Dependencies: [4405, 1074, 12340, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 12277 (getValidOrderedFilterTokens)
-import SearchTokenTypes from "SearchTokenTypes" /* 12272 */;
-import closure_2 from "initialize" /* 4326 */;
-import ME from "ME" /* 673 */;
+// Module 12345 (getValidOrderedFilterTokens)
+import SearchTokenTypes from "SearchTokenTypes" /* 12340 */;
+import closure_2 from "initialize" /* 4405 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function getValidOrderedFilterTokens(closure_0, items) {

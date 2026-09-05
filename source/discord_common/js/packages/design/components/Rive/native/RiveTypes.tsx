@@ -1,11 +1,11 @@
-// Module ID: 4265
-// Function ID: 4266
+// Module ID: 4343
+// Function ID: 4344
 // Name: FIT_MAP
-// Dependencies: [4213, 2]
+// Dependencies: [4291, 2]
 
-// Module 4265 (FIT_MAP)
+// Module 4343 (FIT_MAP)
 import set from "set" /* 2 */;
-import DataBindByName from "DataBindByName" /* 4213 */;
+import DataBindByName from "DataBindByName" /* 4291 */;
 
 let obj = { fill: DataBindByName.Fit.Fill, contain: DataBindByName.Fit.Contain, cover: DataBindByName.Fit.Cover, "fit-width": DataBindByName.Fit.FitWidth, "fit-height": DataBindByName.Fit.FitHeight, none: DataBindByName.Fit.None, "scale-down": DataBindByName.Fit.ScaleDown, layout: DataBindByName.Fit.Layout };
 obj = { "top-left": DataBindByName.Alignment.TopLeft, "top-center": DataBindByName.Alignment.TopCenter, "top-right": DataBindByName.Alignment.TopRight, "center-left": DataBindByName.Alignment.CenterLeft, center: DataBindByName.Alignment.Center, "center-right": DataBindByName.Alignment.CenterRight, "bottom-left": DataBindByName.Alignment.BottomLeft, "bottom-center": DataBindByName.Alignment.BottomCenter, "bottom-right": DataBindByName.Alignment.BottomRight };

@@ -1,13 +1,13 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 17176
+// Function ID: 17177
 // Name: getConsoleColor
-// Dependencies: [673, 709, 2]
+// Dependencies: [1074, 576, 2]
 // Exports: default
 
-// Module 17098 (getConsoleColor)
+// Module 17176 (getConsoleColor)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ME from "ME" /* 1074 */;
 
 const obj = { [XBOX]: ThemesDefault.unsafe_rawColors.PLATFORM_XBOX, [PLAYSTATION]: ThemesDefault.unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION_STAGING]: ThemesDefault.unsafe_rawColors.PLATFORM_PLAYSTATION };
 ({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = ME.PlatformTypes);

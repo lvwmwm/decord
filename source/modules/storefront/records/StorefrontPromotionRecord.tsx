@@ -1,10 +1,10 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 8788
+// Function ID: 8789
 // Name: parseSkuIds
-// Dependencies: [32, 1935, 2]
+// Dependencies: [32, 1386, 2]
 
-// Module 8718 (parseSkuIds)
-import toJSDefault from "toJS" /* 1935 */;
+// Module 8788 (parseSkuIds)
+import toJSDefault from "toJS" /* 1386 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 
 function parseSkuIds(sku_ids) {

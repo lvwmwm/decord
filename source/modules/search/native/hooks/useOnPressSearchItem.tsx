@@ -1,19 +1,19 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 16642
+// Function ID: 16643
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1386, 12271, 7810, 16566, 7809, 673, 1393, 12270, 12293, 1485, 4193, 1233, 8300, 4190, 1498, 16546, 16567, 1228, 7267, 8191, 4494, 4492, 8323, 2008, 4735, 4739, 12864, 4968, 5018, 5524, 1219, 12290, 2]
+// Dependencies: [5, 19, 1957, 12339, 7878, 16643, 7877, 1074, 1964, 12338, 12361, 1365, 4258, 1114, 8370, 4255, 1483, 16623, 16644, 1109, 7329, 8261, 4573, 4571, 8393, 1896, 4767, 4771, 12932, 5007, 5057, 5569, 1100, 12358, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 16565 (handleVoiceOrStageChannelConnectPress)
+// Module 16642 (handleVoiceOrStageChannelConnectPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "prototype" /* 12271 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16566 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7809 */;
-import ME from "ME" /* 673 */;
-import { StaticChannelRoute } from "set" /* 1393 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "prototype" /* 12339 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16643 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7877 */;
+import ME from "ME" /* 1074 */;
+import { StaticChannelRoute } from "set" /* 1964 */;
 
 const require = arg1;
 function handleVoiceOrStageChannelConnectPress() {
@@ -335,7 +335,7 @@ export const useOnPressMediaItem = function useOnPressMediaItem(searchContext) {
 export const useOnPressGroupDMItem = function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
   let navigation;
-  navigation = searchContext(1498).useNavigation();
+  navigation = searchContext(1483).useNavigation();
   const items = [navigation, searchContext];
   return React.useCallback((channelId) => {
     searchContext = channelId;
@@ -362,7 +362,7 @@ export const useOnPressGroupDMItem = function useOnPressGroupDMItem(searchContex
 export const useOnPressDMItem = function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
   let navigation;
-  navigation = searchContext(1498).useNavigation();
+  navigation = searchContext(1483).useNavigation();
   const items = [navigation, searchContext];
   return React.useCallback((userId) => {
     searchContext = arg1;

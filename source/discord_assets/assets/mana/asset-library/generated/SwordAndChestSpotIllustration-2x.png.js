@@ -1,9 +1,9 @@
-// Module ID: 6475
-// Function ID: 6476
+// Module ID: 6532
+// Function ID: 6533
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6475 (metadata)
+// Module 6532 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SwordAndChestSpotIllustration-2x.png.js");

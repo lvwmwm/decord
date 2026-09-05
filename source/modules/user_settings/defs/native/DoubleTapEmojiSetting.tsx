@@ -1,22 +1,22 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15888
+// Function ID: 15889
 // Name: SettingsEmoji
-// Dependencies: [5, 19, 7906, 673, 1924, 21, 4481, 709, 4166, 7899, 1431, 7070, 11053, 695, 7122, 11056, 11400, 1233, 2]
+// Dependencies: [5, 19, 7975, 1074, 1374, 21, 4560, 576, 1935, 7968, 1396, 7130, 11121, 1242, 7182, 11124, 11468, 1114, 2]
 
-// Module 15812 (SettingsEmoji)
+// Module 15888 (SettingsEmoji)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import EmojiDefault from "Emoji" /* 7070 */;
-import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji" /* 7899 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import EmojiDefault from "Emoji" /* 7130 */;
+import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji" /* 7968 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { EmojiIntention } from "set" /* 1374 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import createToggle from "createToggle" /* 11400 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function SettingsEmoji(emoji) {
@@ -73,7 +73,7 @@ const pressable = createToggle.createPressable({
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(11053);
+    let obj = _require(11121);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       closure_0 = arg0;
@@ -212,7 +212,7 @@ let obj1 = {
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(11053);
+    let obj = _require(11121);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       closure_0 = arg0;

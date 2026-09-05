@@ -1,0 +1,10 @@
+// Module ID: 10397
+// Function ID: 10398
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 10397 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2, 3], hash: "2ed56d0310ca0815cf3884cb061fb3d0", name: "ic_play", type: "png" });

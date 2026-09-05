@@ -1,21 +1,21 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12430
+// Function ID: 12431
 // Name: LeftSlot
-// Dependencies: [32, 19, 17, 11894, 21, 4481, 709, 4197, 4205, 12106, 1625, 12179, 4218, 12178, 12177, 2]
+// Dependencies: [32, 19, 17, 11962, 21, 4560, 576, 4262, 4271, 12174, 1609, 12247, 4296, 12246, 12245, 2]
 
-// Module 12362 (LeftSlot)
-import ThemesDefault from "Themes" /* 709 */;
-import ManaContext from "ManaContext" /* 4205 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import renderChatInputActionButtonGiftAndThreadDefault from "renderChatInputActionButtonGiftAndThread" /* 12177 */;
-import FadeTransitionItem from "FadeTransitionItem" /* 12178 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12179 */;
+// Module 12430 (LeftSlot)
+import ThemesDefault from "Themes" /* 576 */;
+import ManaContext from "ManaContext" /* 4271 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import renderChatInputActionButtonGiftAndThreadDefault from "renderChatInputActionButtonGiftAndThread" /* 12245 */;
+import FadeTransitionItem from "FadeTransitionItem" /* 12246 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12247 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_6 } from "TextAreaCta" /* 11894 */;
+import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_6 } from "TextAreaCta" /* 11962 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function LeftSlot(state) {
@@ -27,8 +27,8 @@ function LeftSlot(state) {
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   const tmp = useChatInputFloatingBounceDefault(obj);
   const merged = Object.assign(FadeTransitionItem.interactivityProps(isInteractive));
-  obj.children = callback2(renderChatInputActionButtonGiftAndThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "PX_16", shouldShowThread: "premium_tier_0_yearly" });
-  return callback2(_modDef4218.View, obj);
+  obj.children = callback2(renderChatInputActionButtonGiftAndThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "PX_16", shouldShowThread: "setRequestSession" });
+  return callback2(_modDef4296.View, obj);
 }
 let c4 = importAllResult;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -46,10 +46,10 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   let callback;
   importAllResult = undefined;
   ({ keyboardType, showKeyboardIcon, shouldShowGiftButton, onPressExpression } = channel);
-  let obj = channel(4197);
-  const token = obj.useToken(onPressAction(709).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  obj1 = channel(4197);
-  const sum = token + 2 * obj1.useToken(onPressAction(709).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  let obj = channel(4262);
+  const token = obj.useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  obj1 = channel(4262);
+  const sum = token + 2 * obj1.useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp6 = callback3();
   callback = tmp6;
@@ -75,12 +75,12 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     obj = { item: null, renderItem: null };
     obj[0] = tmp15;
     obj[1] = tmp10;
-    tmp14Result = callback2(tmp(4205).TransitionItem, obj);
+    tmp14Result = callback2(tmp(4271).TransitionItem, obj);
     const tmp14 = callback2;
   }
   const items1 = [tmp14Result, ];
-  obj1 = { active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-  items1[1] = callback2(onPressAction(12106), obj1);
+  obj1 = { active: keyboardType === channel(1609).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
+  items1[1] = callback2(onPressAction(12174), obj1);
   obj[1] = items1;
   return closure_8(View, obj);
 });

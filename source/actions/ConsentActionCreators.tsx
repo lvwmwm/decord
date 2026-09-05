@@ -1,15 +1,15 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 14855
+// Function ID: 14856
 // Name: handleRequestSuccess
-// Dependencies: [673, 706, 1233, 527, 2]
+// Dependencies: [1074, 573, 1114, 1272, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 14780 (handleRequestSuccess)
+// Module 14855 (handleRequestSuccess)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 function handleRequestSuccess(body) {
   if (tmp) {

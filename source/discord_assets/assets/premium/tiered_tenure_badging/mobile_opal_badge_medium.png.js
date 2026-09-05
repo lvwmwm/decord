@@ -1,9 +1,9 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11181
+// Function ID: 11182
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11113 (metadata)
+// Module 11181 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_opal_badge_medium.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15685
+// Function ID: 15686
 // Name: _testCaptcha
-// Dependencies: [5, 673, 527, 2]
+// Dependencies: [5, 1074, 1272, 2]
 // Exports: testCaptcha
 
-// Module 15609 (_testCaptcha)
+// Module 15685 (_testCaptcha)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _testCaptcha() {

@@ -1,25 +1,25 @@
-// Module ID: 11761
-// Function ID: 11762
+// Module ID: 11829
+// Function ID: 11830
 // Name: DurationSelectionActionSheet
-// Dependencies: [19, 10009, 11762, 7947, 673, 21, 4481, 7138, 7089, 1233, 7140, 644, 7946, 4448, 1296, 5560, 5642, 7141, 9554, 8518, 5393, 4936, 11763, 695, 11764, 2]
+// Dependencies: [19, 10080, 11830, 8016, 1074, 21, 4560, 7198, 7149, 1114, 7200, 563, 8015, 4527, 1178, 5605, 5687, 7201, 9625, 8588, 5433, 4975, 11831, 1242, 11832, 2]
 
-// Module 11761 (DurationSelectionActionSheet)
+// Module 11829 (DurationSelectionActionSheet)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "computeAlertSettings" /* 10009 */;
-import useGuildIncidentsActionSheetStore from "useGuildIncidentsActionSheetStore" /* 11762 */;
-import { getTimeframes } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7947 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "computeAlertSettings" /* 10080 */;
+import useGuildIncidentsActionSheetStore from "useGuildIncidentsActionSheetStore" /* 11830 */;
+import { getTimeframes } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8016 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function DurationSelectionActionSheet(onClose) {
   onClose = onClose.onClose;
   let obj = { children: null };
   obj = { title: null };
-  const intl = onClose(1233).intl;
-  obj[0] = intl.string(onClose(1233).t.vKYZzc);
-  const items = [callback2(onClose(7089).BottomSheetTitleHeader, obj), ];
+  const intl = onClose(1114).intl;
+  obj[0] = intl.string(onClose(1114).t.vKYZzc);
+  const items = [callback2(onClose(7149).BottomSheetTitleHeader, obj), ];
   obj = {
     hasIcons: false,
     children: getTimeframes().map((label) => {
@@ -33,9 +33,9 @@ function DurationSelectionActionSheet(onClose) {
       }, label.value);
     })
   };
-  items[1] = callback2(onClose(7140).ActionSheetRow.Group, obj);
+  items[1] = callback2(onClose(7200).ActionSheetRow.Group, obj);
   obj[0] = items;
-  return callback3(onClose(7138).ActionSheet, obj);
+  return callback3(onClose(7198).ActionSheet, obj);
 }
 ({ resetGuildIncidentsActionSheetStore: c5, setInitialTime: closure_6, setPauseDms: error, setPauseInvites: closure_8, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = useGuildIncidentsActionSheetStore);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = ME);

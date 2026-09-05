@@ -1,12 +1,12 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12415
+// Function ID: 12416
 // Name: isStaff
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 12347 (isStaff)
+// Module 12415 (isStaff)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const UserFlags = ME.UserFlags;
 const result = set.fileFinishedImporting("modules/user/isStaffFromRawUser.tsx");

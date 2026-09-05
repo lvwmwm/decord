@@ -1,14 +1,14 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9572
+// Function ID: 9573
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4507, 4522, 673, 9347, 7103, 9174, 4708, 4343, 9502, 2]
+// Dependencies: [5, 1918, 4788, 1074, 9418, 7163, 9245, 4740, 4425, 9573, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 9501 (_installApplicationOnDemandIfNeeded)
+// Module 9572 (_installApplicationOnDemandIfNeeded)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "createExecutable" /* 4507 */;
-import closure_4 from "addApplication" /* 4522 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_3 from "createExecutable" /* 1918 */;
+import closure_4 from "addApplication" /* 4788 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 function _installApplicationOnDemandIfNeeded() {
@@ -77,7 +77,7 @@ function _installApplicationOnDemandIfNeeded() {
                 if (obj11.shouldInstallApplicationOnDemand(obj2)) {
                   application = application.getApplication(callback);
                   if (null == application) {
-                    let obj5 = callback(7103);
+                    let obj5 = callback(7163);
                     c3 = 2;
                     application = 1;
                     const obj3 = { value: null, done: false };
@@ -90,7 +90,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(9347);
+                obj11 = callback(9418);
               }
             } else if (arg0 === 1) {
               application = 3;
@@ -104,7 +104,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj = arg1;
               application = c3.createFromServer(obj);
             }
-            USER_INSTALL = callback(9174).ApplicationIntegrationType.USER_INSTALL;
+            USER_INSTALL = callback(9245).ApplicationIntegrationType.USER_INSTALL;
             scopes = undefined;
             if (application != null) {
               const integrationTypesConfig = application.integrationTypesConfig;
@@ -118,7 +118,7 @@ function _installApplicationOnDemandIfNeeded() {
               }
             }
             if (null != c3) {
-              obj2 = callback(4708);
+              obj2 = callback(4740);
               obj5 = { application_id: null, location: null, section_name: null, source: null };
               obj5[0] = callback;
               obj5[1] = c3.location;

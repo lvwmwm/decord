@@ -1,9 +1,9 @@
-// Module ID: 4175
-// Function ID: 4176
+// Module ID: 4777
+// Function ID: 4778
 // Name: items
 // Dependencies: [2]
 
-// Module 4175 (items)
+// Module 4777 (items)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/Countries.tsx");

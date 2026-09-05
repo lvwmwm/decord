@@ -1,14 +1,14 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11153
+// Function ID: 11154
 // Name: ChevronSmallDownIcon
-// Dependencies: [19, 21, 709, 4196, 11086, 2]
+// Dependencies: [19, 21, 576, 4261, 11154, 2]
 // Exports: ChevronSmallDownIcon
 
-// Module 11085 (ChevronSmallDownIcon)
+// Module 11153 (ChevronSmallDownIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11086 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 11154 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

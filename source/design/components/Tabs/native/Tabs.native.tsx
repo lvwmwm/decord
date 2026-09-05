@@ -1,17 +1,17 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12614
+// Function ID: 12615
 // Name: defaultCountFormatter
-// Dependencies: [19, 17, 1995, 21, 4218, 4481, 709, 4935, 9424, 12547, 6595, 1234, 2]
+// Dependencies: [19, 17, 2025, 21, 4296, 4560, 576, 4974, 9495, 12615, 6655, 1115, 2]
 // Exports: Tabs
 
-// Module 12546 (defaultCountFormatter)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 12614 (defaultCountFormatter)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "module_4296" /* 4296 */;
 
 const require = arg1;
 function defaultCountFormatter(toLocaleString) {
@@ -30,9 +30,9 @@ let closure_11 = createCacheKey.createStyles((gap) => {
   obj[1] = obj;
   obj[2] = { position: "absolute", width: "100%", height: "100%", flexDirection: "row", alignItems: "flex-end", marginLeft: ThemesDefault.space.PX_16 };
   if ("gradient-background" === arg1) {
-    let TEXT_BRAND = tmp(709).colors.TEXT_STRONG;
+    let TEXT_BRAND = tmp(576).colors.TEXT_STRONG;
   } else {
-    TEXT_BRAND = tmp(709).colors.TEXT_BRAND;
+    TEXT_BRAND = tmp(576).colors.TEXT_BRAND;
   }
   obj1 = { position: "absolute", width: "100%", height: "100%", flexDirection: "row", alignItems: "flex-end", marginLeft: ThemesDefault.space.PX_16 };
   obj[3] = { height: 2, backgroundColor: TEXT_BRAND, borderTopStartRadius: ThemesDefault.radii.xs, borderTopEndRadius: ThemesDefault.radii.xs };

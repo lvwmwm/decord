@@ -1,14 +1,14 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 11008
+// Function ID: 11009
 // Name: CollectiblesShopGiftModalContent
-// Dependencies: [19, 7475, 673, 502, 21, 9294, 1234, 4152, 10940, 10938, 10753, 10735, 10757, 10941, 10944, 10672, 8128, 8115, 586, 7102, 7122, 1901, 7474, 10756, 1233, 2]
+// Dependencies: [19, 7542, 1074, 1085, 21, 9365, 1115, 4231, 11009, 11007, 10822, 10804, 10826, 11010, 11013, 10743, 8197, 8184, 504, 7162, 7182, 1925, 7541, 10825, 1114, 2]
 // Exports: default
 
-// Module 10939 (CollectiblesShopGiftModalContent)
+// Module 11008 (CollectiblesShopGiftModalContent)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7475 */;
-import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME" /* 673 */;
-import { PaymentGateways } from "sum" /* 502 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7542 */;
+import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME" /* 1074 */;
+import { PaymentGateways } from "sum" /* 1085 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 let require = arg1;

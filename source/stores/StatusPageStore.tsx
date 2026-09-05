@@ -1,12 +1,12 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13756
+// Function ID: 13757
 // Name: initialize
-// Dependencies: [592, 586, 706, 2]
+// Dependencies: [510, 504, 573, 2]
 
-// Module 13681 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import Storage2 from "Storage" /* 592 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 13756 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import Storage2 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 require = arg1;
 const MaintenanceStore = "MaintenanceStore";

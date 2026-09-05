@@ -1,25 +1,25 @@
-// Module ID: 11541
-// Function ID: 11542
+// Module ID: 11609
+// Function ID: 11610
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1386, 1991, 1984, 1908, 4120, 673, 21, 4481, 709, 1627, 586, 1498, 4681, 11542, 9667, 1233, 7090, 7089, 5084, 4448, 8555, 11544, 7318, 8525, 11540, 9961, 1296, 6567, 9680, 4477, 2]
+// Dependencies: [19, 17, 1957, 2021, 2015, 1979, 4199, 1074, 21, 4560, 576, 1611, 504, 1483, 4713, 11610, 9738, 1114, 7150, 7149, 5123, 4527, 8625, 11612, 7380, 8595, 11608, 10032, 1178, 6627, 9751, 4556, 2]
 // Exports: default
 
-// Module 11541 (ChannelMembersActionSheet)
+// Module 11609 (ChannelMembersActionSheet)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11542 */;
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import getAppChannelBotUserIdFromApplication from "getAppChannelBotUserIdFromApplication" /* 11610 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -82,26 +82,26 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(9667);
+        let tmp5Result = tmp5(9738);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(9667);
+        tmp5Result = tmp5(9738);
         obj = { appChannelBotUserId: null };
         obj[0] = tmp11;
         const items5 = [];
         obj = { title: null, data: null };
         const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj);
-        const intl4 = tmp5(1233).intl;
-        obj[0] = intl4.string(tmp5(1233).t["LPJmL/"]);
+        const intl4 = tmp5(1114).intl;
+        obj[0] = intl4.string(tmp5(1114).t["LPJmL/"]);
         obj[1] = existingRolesRows;
         items5.push(obj);
         obj1 = { title: null, data: null };
-        const intl5 = tmp5(1233).intl;
-        obj1[0] = intl5.string(tmp5(1233).t["9Oq93m"]);
+        const intl5 = tmp5(1114).intl;
+        obj1[0] = intl5.string(tmp5(1114).t["9Oq93m"]);
         obj1[1] = existingMembersRows;
         items5.push(obj1);
         obj2 = { title: null, subtitle: null, trailing: null };
-        const intl6 = tmp5(1233).intl;
-        obj2[0] = intl6.string(tmp5(1233).t.ES4CC6);
+        const intl6 = tmp5(1114).intl;
+        obj2[0] = intl6.string(tmp5(1114).t.ES4CC6);
         const _HermesInternal = HermesInternal;
         obj2[1] = "#" + tmp9;
         let tmp32Result = canResult;
@@ -114,33 +114,33 @@ export default function ChannelMembersActionSheet(arg0) {
             const obj2 = closure_1_1(sectionRowWrapper[22]);
             const result = closure_1_0(sectionRowWrapper[23]).navigateToChannelDetailsScreen(closure_4, closure_1_9.PERMISSIONS, closure_0, "channel-members-action-sheet");
           };
-          let intl = tmp5(1233).intl;
-          obj3[2] = intl.string(tmp5(1233).t.XPDhcc);
-          obj3[3] = tmp32(tmp5(7318).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5084).PressableOpacity, obj3);
+          let intl = tmp5(1114).intl;
+          obj3[2] = intl.string(tmp5(1114).t.XPDhcc);
+          obj3[3] = tmp32(tmp5(7380).SettingsIcon, {});
+          tmp32Result = tmp32(tmp5(5123).PressableOpacity, obj3);
         }
         const obj4 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj2[2] = tmp32Result;
-        obj4[1] = closure_11(tmp5(7089).BottomSheetTitleHeader, obj2);
+        obj4[1] = closure_11(tmp5(7149).BottomSheetTitleHeader, obj2);
         const obj5 = { style: null, children: null };
         obj5[0] = tmp.container;
         if (canResult) {
           const obj6 = { label: null, onPress: null, icon: null };
-          const intl3 = tmp5(1233).intl;
-          obj6[0] = intl3.string(tmp5(1233).t.dMJ3Y6);
+          const intl3 = tmp5(1114).intl;
+          obj6[0] = intl3.string(tmp5(1114).t.dMJ3Y6);
           obj6[1] = function onPress() {
             return closure_1_0(sectionRowWrapper[26]).openAddMembersActionSheet(stateFromStores);
           };
-          obj6[2] = tmp32(tmp5(9961).GroupPlusIcon, {});
-          tmp32Result = tmp32(tmp5(8525).RowButton, obj6);
+          obj6[2] = tmp32(tmp5(10032).GroupPlusIcon, {});
+          tmp32Result = tmp32(tmp5(8595).RowButton, obj6);
         } else {
           const obj7 = { style: null, children: null };
           obj7[0] = tmp.warning;
           const obj8 = { messageType: null, children: null };
-          obj8[0] = tmp5(1296).HelpMessageTypes.INFO;
-          const intl2 = tmp5(1233).intl;
-          obj8[1] = intl2.string(tmp5(1233).t.VOuiSj);
-          obj7[1] = tmp32(tmp5(1296).HelpMessage, obj8);
+          obj8[0] = tmp5(1178).HelpMessageTypes.INFO;
+          const intl2 = tmp5(1114).intl;
+          obj8[1] = intl2.string(tmp5(1114).t.VOuiSj);
+          obj7[1] = tmp32(tmp5(1178).HelpMessage, obj8);
           tmp32Result = tmp32(tmp14, obj7);
         }
         const items6 = [tmp32Result, ];
@@ -162,10 +162,10 @@ export default function ChannelMembersActionSheet(arg0) {
           return closure_1_11(closure_1_0(sectionRowWrapper[31]).Text, obj);
         };
         obj9[3] = items5;
-        items6[1] = closure_11(tmp5(6567).BottomSheetSectionList, obj9);
+        items6[1] = closure_11(tmp5(6627).BottomSheetSectionList, obj9);
         obj5[1] = items6;
         obj4[3] = closure_12(stateFromStores, obj5);
-        return closure_11(tmp5(7090).BottomSheet, obj4);
+        return closure_11(tmp5(7150).BottomSheet, obj4);
       }
     }
   }

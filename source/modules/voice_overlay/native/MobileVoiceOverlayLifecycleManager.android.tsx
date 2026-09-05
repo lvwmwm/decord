@@ -1,24 +1,24 @@
-// Module ID: 14453
-// Function ID: 14454
+// Module ID: 14528
+// Function ID: 14529
 // Name: importDefaultResult1
-// Dependencies: [1386, 1981, 1908, 4532, 4120, 4557, 4130, 5380, 1921, 4500, 9909, 673, 14454, 14455, 14456, 14457, 6932, 13712, 14458, 14459, 8553, 1233, 14460, 9920, 7689, 4681, 5402, 695, 4708, 4669, 2]
+// Dependencies: [1957, 2012, 1979, 1908, 4199, 4583, 4209, 5419, 1371, 4579, 9980, 1074, 14529, 14530, 14531, 14532, 6992, 13787, 14533, 14534, 8623, 1114, 14535, 9991, 7756, 4713, 5442, 1242, 4740, 1898, 2]
 
-// Module 14453 (importDefaultResult1)
-import initializeDefault from "initialize" /* 4669 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4532 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import importDefaultResult1 from "createRTCConnection" /* 4557 */;
-import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5380 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import importDefaultResult2 from "updateVoiceState" /* 4500 */;
-import closure_13 from "getUserAgnosticState" /* 9909 */;
-import ME from "ME" /* 673 */;
-import registerAsset from "registerAsset" /* 14454 */;
-import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1233 */;
+// Module 14528 (importDefaultResult1)
+import initializeDefault from "initialize" /* 1898 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 2012 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 1908 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import importDefaultResult1 from "createRTCConnection" /* 4583 */;
+import closure_9 from "markAllUserIdListsStale" /* 4209 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5419 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import importDefaultResult2 from "updateVoiceState" /* 4579 */;
+import closure_13 from "getUserAgnosticState" /* 9980 */;
+import ME from "ME" /* 1074 */;
+import registerAsset from "registerAsset" /* 14529 */;
+import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1114 */;
 
 const require = arg1;
 ({ AnalyticEvents: closure_14, Permissions: closure_15 } = ME);

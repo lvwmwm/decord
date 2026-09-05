@@ -1,17 +1,17 @@
-// Module ID: 16992
-// Function ID: 16993
+// Module ID: 17070
+// Function ID: 17071
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 19, 4473, 1301, 16984, 7091, 1492, 586, 1362, 1369, 7276, 2]
+// Dependencies: [5, 19, 4552, 1183, 17062, 7151, 1477, 504, 4411, 1940, 7338, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16992 (useSoundButtonStyleConfig)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+// Module 17070 (useSoundButtonStyleConfig)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_6 from "handleThemeChange" /* 1301 */;
-import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16984 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_6 from "handleThemeChange" /* 1183 */;
+import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 17062 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
 
 const require = arg1;
 ({ SOUNDS_PER_ROW: error, SOUND_ROW_PADDING: closure_8 } = SOUND_BUTTON_HEIGHT);
@@ -23,10 +23,10 @@ export const useSoundButtonStyleConfig = function useSoundButtonStyleConfig() {
 export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSounds(shouldFetch) {
   shouldFetch = shouldFetch.shouldFetch;
   const items = [closure_5];
-  const stateFromStores = shouldFetch(586).useStateFromStores(items, () => saturation.saturation);
-  let obj = shouldFetch(586);
+  const stateFromStores = shouldFetch(504).useStateFromStores(items, () => saturation.saturation);
+  let obj = shouldFetch(504);
   const items1 = [closure_6];
-  const items2 = [stateFromStores, shouldFetch(586).useStateFromStores(items1, () => shouldFetch(table[8]).isThemeDark(theme.theme)), shouldFetch];
+  const items2 = [stateFromStores, shouldFetch(504).useStateFromStores(items1, () => shouldFetch(table[8]).isThemeDark(theme.theme)), shouldFetch];
   const effect = React.useEffect(() => {
     function _fetchAndHydrateColors() {
       const self = this;

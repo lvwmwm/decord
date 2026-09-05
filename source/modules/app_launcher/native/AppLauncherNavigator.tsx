@@ -1,22 +1,22 @@
-// Module ID: 12014
-// Function ID: 12015
-// Dependencies: [109, 19, 1497, 673, 21, 7844, 4481, 709, 7102, 7122, 4345, 1625, 6940, 4708, 1499, 12015, 12059, 12085, 12127, 11147, 2]
+// Module ID: 12082
+// Function ID: 12083
+// Dependencies: [109, 19, 1482, 1074, 21, 7913, 4560, 576, 7162, 7182, 4427, 1609, 7000, 4740, 1484, 12083, 12127, 12153, 12195, 11215, 2]
 
-// Module 12014
-import ThemesDefault from "Themes" /* 709 */;
-import contextDefault from "context" /* 7102 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
-import AppRowLabelDefault from "AppRowLabel" /* 12015 */;
-import AppLauncherApplicationViewScreenInnerDefault from "AppLauncherApplicationViewScreenInner" /* 12059 */;
-import AppLauncherCommandViewFooterDefault from "AppLauncherCommandViewFooter" /* 12085 */;
-import DEFAULT_CONTENT_PADDINGDefault from "DEFAULT_CONTENT_PADDING" /* 12127 */;
+// Module 12082
+import ThemesDefault from "Themes" /* 576 */;
+import contextDefault from "context" /* 7162 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7182 */;
+import AppRowLabelDefault from "AppRowLabel" /* 12083 */;
+import AppLauncherApplicationViewScreenInnerDefault from "AppLauncherApplicationViewScreenInner" /* 12127 */;
+import AppLauncherCommandViewFooterDefault from "AppLauncherCommandViewFooter" /* 12153 */;
+import DEFAULT_CONTENT_PADDINGDefault from "DEFAULT_CONTENT_PADDING" /* 12195 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1482 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7913 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_3 = ["initialRouteName"];
@@ -32,12 +32,12 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   ({ expandBottomSheet, overrideParams } = arg0);
   ({ bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, contentStyle, keyboardCloseReasonRef, onActivityItemSelected, width } = arg0);
   const tmp3 = contextDefault;
-  let obj = entrypoint(4345);
+  let obj = entrypoint(4427);
   if (overrideParams == null) {
-    overrideParams = obj.useKeyboardContextForType(entrypoint(1625).KeyboardTypes.APP_LAUNCHER);
+    overrideParams = obj.useKeyboardContextForType(entrypoint(1609).KeyboardTypes.APP_LAUNCHER);
   }
   const tmp4 = callback2();
-  const accessibilityNativeStackOptions = entrypoint(6940).useAccessibilityNativeStackOptions();
+  const accessibilityNativeStackOptions = entrypoint(7000).useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj12 = callback(overrideParams, closure_3);
   const items = [entrypoint];
@@ -95,10 +95,10 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   items2[3] = closure_8(closure_10.Screen, obj10);
   obj[2] = items2;
   obj[1] = closure_9(closure_10.Navigator, obj);
-  obj14[0] = closure_8(entrypoint(7102).AnalyticsLocationProvider, obj);
-  obj13[0] = closure_8(entrypoint(1499).NavigationContainer, obj14);
+  obj14[0] = closure_8(entrypoint(7162).AnalyticsLocationProvider, obj);
+  obj13[0] = closure_8(entrypoint(1484).NavigationContainer, obj14);
   let tmp19 = "customId" in overrideParams;
-  const children = tmp8(tmp5(1499).NavigationIndependentTree, obj13);
+  const children = tmp8(tmp5(1484).NavigationIndependentTree, obj13);
   if (!tmp19) {
     tmp19 = "referrerId" in overrideParams;
   }
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
     entrypointParams = { customId: null, referrerId: null };
     const obj15 = { customId: null, referrerId: null };
   }
-  return closure_8(entrypoint(11147).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
+  return closure_8(entrypoint(11215).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
 });
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/AppLauncherNavigator.tsx");
 

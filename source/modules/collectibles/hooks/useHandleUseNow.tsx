@@ -1,14 +1,14 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 11085
+// Function ID: 11086
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 675, 1949, 1233, 8102, 11018, 8098, 6924, 2]
+// Dependencies: [5, 32, 19, 1076, 1889, 1114, 8171, 11086, 8167, 6984, 2]
 // Exports: useHandleUseNow
 
-// Module 11017 (useHandleUseNow)
+// Module 11085 (useHandleUseNow)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { isExternalProduct } from "items" /* 675 */;
+import { isExternalProduct } from "items" /* 1076 */;
 
 let require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");

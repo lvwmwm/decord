@@ -1,14 +1,14 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 6003
+// Function ID: 6004
 // Name: ForceIllocon
-// Dependencies: [21, 5542, 5949, 2]
+// Dependencies: [21, 5587, 6004, 2]
 // Exports: ForceIllocon
 
-// Module 5948 (ForceIllocon)
+// Module 6003 (ForceIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5949 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6004 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ForceIllocon.native.tsx");

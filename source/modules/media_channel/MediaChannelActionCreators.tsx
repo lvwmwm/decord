@@ -1,13 +1,13 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11875
+// Function ID: 11876
 // Name: _fetchMediaPostEmbed
-// Dependencies: [5, 673, 706, 527, 4379, 2]
+// Dependencies: [5, 1074, 573, 1272, 4461, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11807 (_fetchMediaPostEmbed)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 11875 (_fetchMediaPostEmbed)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchMediaPostEmbed() {
@@ -29,7 +29,7 @@ function _fetchMediaPostEmbed() {
       yield HTTP.get(obj2);
       if (1 === tmp7) {
         c4 = 0;
-        const obj3 = body(706);
+        const obj3 = body(573);
         const obj4 = { type: "MEDIA_POST_EMBED_FETCH_FAILURE", threadId: null };
         obj4[1] = callback;
         obj3.dispatch(obj4);
@@ -39,7 +39,7 @@ function _fetchMediaPostEmbed() {
         throw body;
       } else if (arg0 !== 2) {
         body = body.body;
-        const obj = body(706);
+        const obj = body(573);
         const obj5 = { type: "MEDIA_POST_EMBED_FETCH_SUCCESS", threadId: null, mediaPostEmbed: null };
         obj5[1] = callback;
         obj5[2] = body;

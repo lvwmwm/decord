@@ -1,11 +1,11 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17280
+// Function ID: 17281
 // Name: IdGenerator
-// Dependencies: [2, 507]
+// Dependencies: [2, 1252]
 
-// Module 17200 (IdGenerator)
+// Module 17280 (IdGenerator)
 import set from "set" /* 2 */;
-import generate from "generate" /* 507 */;
+import generate from "generate" /* 1252 */;
 
 const result = set.fileFinishedImporting("lib/IdGenerator.tsx");
 

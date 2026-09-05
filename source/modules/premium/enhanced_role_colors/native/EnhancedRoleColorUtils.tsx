@@ -1,19 +1,19 @@
-// Module ID: 7892
-// Function ID: 7893
+// Module ID: 7961
+// Function ID: 7962
 // Name: processColorStrings
-// Dependencies: [32, 19, 17, 1301, 502, 686, 1394, 4965, 2]
+// Dependencies: [32, 19, 17, 1183, 1085, 672, 1369, 5004, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7892 (processColorStrings)
-import nDefault from "n" /* 686 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 4965 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4965 */;
+// Module 7961 (processColorStrings)
+import nDefault from "n" /* 672 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5004 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5004 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleThemeChange" /* 1301 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import closure_6 from "handleThemeChange" /* 1183 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 
 require = arg1;
 function processColorStrings(colorStrings) {

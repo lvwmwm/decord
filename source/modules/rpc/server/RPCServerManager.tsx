@@ -1,29 +1,29 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14458
+// Function ID: 14459
 // Name: loadServer
-// Dependencies: [32, 9439, 7636, 1386, 1991, 1908, 4532, 4572, 4557, 4130, 1980, 1921, 4500, 4383, 673, 4509, 9440, 4545, 1234, 706, 695, 14384, 586, 1394, 9488, 9494, 14389, 9489, 7657, 2]
+// Dependencies: [32, 9510, 7703, 1957, 2021, 1979, 1908, 4600, 4583, 4209, 2011, 1371, 4579, 4465, 1074, 1920, 9511, 4585, 1115, 573, 1242, 14459, 504, 1369, 9559, 9565, 14464, 9560, 7724, 2]
 
-// Module 14383 (loadServer)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import set2 from "set" /* 1234 */;
+// Module 14458 (loadServer)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import set2 from "set" /* 1115 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "map" /* 9439 */;
-import closure_5 from "initializeState" /* 7636 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "trackCommunicationDisabled" /* 1991 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_10 from "sortActivity" /* 4572 */;
-import closure_11 from "createRTCConnection" /* 4557 */;
-import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "handleConnectionOpen" /* 1980 */;
-import closure_14 from "mergeGuildAvatar" /* 1921 */;
-import closure_15 from "updateVoiceState" /* 4500 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
-import ME from "ME" /* 673 */;
-import { ActivityLayoutMode } from "items3" /* 4509 */;
-import { FrameLayoutModes } from "FrameLayoutModes" /* 9440 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
+import closure_4 from "map" /* 9510 */;
+import closure_5 from "initializeState" /* 7703 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "trackCommunicationDisabled" /* 2021 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import closure_9 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_10 from "sortActivity" /* 4600 */;
+import closure_11 from "createRTCConnection" /* 4583 */;
+import closure_12 from "markAllUserIdListsStale" /* 4209 */;
+import closure_13 from "handleConnectionOpen" /* 2011 */;
+import closure_14 from "mergeGuildAvatar" /* 1371 */;
+import closure_15 from "updateVoiceState" /* 4579 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4465 */;
+import ME from "ME" /* 1074 */;
+import { ActivityLayoutMode } from "items3" /* 1920 */;
+import { FrameLayoutModes } from "FrameLayoutModes" /* 9511 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4585 */;
 
 require = arg1;
 ({ ActivityActionTypes: closure_17, RelationshipTypes: closure_18, AnalyticEvents: closure_19, RPCEvents: closure_20, RPCCloseCodes: closure_21 } = ME);
@@ -75,48 +75,38 @@ class RPCServerManager {
       }
     };
     obj.handleSpeaking = function handleSpeaking(speakingFlags) {
-      let result1 = obj;
       if (0 !== obj.rpcServer.subscriptions.length) {
-        let userId = speakingFlags;
         if (0 !== speakingFlags.speakingFlags) {
           let SPEAKING_STOP = closure_1_20.SPEAKING_START;
         } else {
           SPEAKING_STOP = closure_1_20.SPEAKING_STOP;
         }
-        if (userId.context === closure_1_24.DEFAULT) {
+        if (speakingFlags.context === closure_1_24.DEFAULT) {
           const voiceChannelId = closure_1_13.getVoiceChannelId();
           if (null != voiceChannelId) {
             const channel = closure_1_6.getChannel(voiceChannelId);
             if (null != channel) {
-              const voiceState = closure_1_15.getVoiceState(channel.getGuildId(), userId.userId);
+              const voiceState = closure_1_15.getVoiceState(channel.getGuildId(), speakingFlags.userId);
               if (null != voiceState) {
-                const rpcServer2 = result1.rpcServer;
+                const rpcServer = tmp2.rpcServer;
                 obj = { channel_id: null };
                 obj[0] = voiceState.channelId;
                 obj = { channel_id: null, user_id: null };
                 obj[0] = voiceState.channelId;
-                obj[1] = userId.userId;
-                const result = rpcServer2.dispatchToSubscriptions(SPEAKING_STOP, obj, obj);
-                let activeSessionIdForChannel = null;
+                obj[1] = speakingFlags.userId;
+                const result = rpcServer.dispatchToSubscriptions(SPEAKING_STOP, obj, obj);
                 if (null != voiceState.channelId) {
                   obj = closure_1_1(closure_1_2[21]);
-                  activeSessionIdForChannel = obj.getActiveSessionIdForChannel(voiceState.channelId);
+                  let activeSessionIdsForChannel = obj.getActiveSessionIdsForChannel(voiceState.channelId);
+                } else {
+                  activeSessionIdsForChannel = [];
                 }
-                if (null != activeSessionIdForChannel) {
-                  if (0 !== userId.speakingFlags) {
-                    let VOICE_SESSION_SPEAKING_STOP = closure_1_20.VOICE_SESSION_SPEAKING_START;
-                  } else {
-                    VOICE_SESSION_SPEAKING_STOP = closure_1_20.VOICE_SESSION_SPEAKING_STOP;
-                  }
-                  const rpcServer = result1.rpcServer;
-                  obj1 = { session_id: null };
-                  obj1[0] = activeSessionIdForChannel;
-                  const obj2 = { session_id: null, user_id: null };
-                  obj2[0] = activeSessionIdForChannel;
-                  userId = userId.userId;
-                  obj2[1] = userId;
-                  result1 = rpcServer.dispatchToSubscriptions(VOICE_SESSION_SPEAKING_STOP, obj1, obj2);
+                if (0 !== speakingFlags.speakingFlags) {
+                  const VOICE_SESSION_SPEAKING_START = closure_1_20.VOICE_SESSION_SPEAKING_START;
+                } else {
+                  const VOICE_SESSION_SPEAKING_STOP = closure_1_20.VOICE_SESSION_SPEAKING_STOP;
                 }
+                activeSessionIdsForChannel[Symbol.iterator]();
               }
             }
           }
@@ -551,20 +541,20 @@ prototype["init"] = function init() {
   const self = this;
   this.rpcServer.getCurrentUser = () => currentUser.getCurrentUser();
   this.rpcServer.onConnect = (app_id) => {
-    let obj = callback(706);
+    let obj = callback(573);
     obj = { type: "RPC_APP_CONNECTED", socketId: app_id.id, application: app_id.application, source: app_id.source };
     obj.dispatch(obj);
     obj = { app_id: app_id.application.id, transport: app_id.transport };
-    callback(695).track(constants.AUTHORIZED_APP_CONNECTED, obj);
+    callback(1242).track(constants.AUTHORIZED_APP_CONNECTED, obj);
   };
   this.rpcServer.onDisconnect = (id, reason) => {
-    let obj = callback(14384);
+    let obj = callback(14459);
     obj.releaseSocket(id.id);
     obj = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
-    callback(706).dispatch(obj);
+    callback(573).dispatch(obj);
   };
   const items = [closure_6, closure_7, closure_10, closure_15, closure_9, closure_11];
-  const batchedStoreListener = new self(586).BatchedStoreListener(items.concat(this.stores), () => {
+  const batchedStoreListener = new self(504).BatchedStoreListener(items.concat(this.stores), () => {
     const result = closure_1_1(closure_1_2[21]).reconcileParticipants();
     const rpcServer = self.rpcServer;
     rpcServer.updateSubscriptions();

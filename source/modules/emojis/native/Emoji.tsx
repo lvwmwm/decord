@@ -1,16 +1,16 @@
-// Module ID: 7070
-// Function ID: 7071
+// Module ID: 7130
+// Function ID: 7131
 // Name: Emoji
-// Dependencies: [19, 17, 1301, 21, 1234, 4138, 1296, 5542, 1362, 7071, 7072, 2]
+// Dependencies: [19, 17, 1183, 21, 1115, 4217, 1178, 5587, 4411, 7131, 7132, 2]
 // Exports: default
 
-// Module 7070 (Emoji)
+// Module 7130 (Emoji)
 import noopAll from "noop" /* 19 */;
-import set from "set" /* 1234 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import preloadDefault from "preload" /* 5542 */;
+import set from "set" /* 1115 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4217 */;
+import preloadDefault from "preload" /* 5587 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleThemeChange" /* 1301 */;
+import closure_4 from "handleThemeChange" /* 1183 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -37,9 +37,9 @@ export default function Emoji(arg0) {
         obj[1] = fastImageStyle;
         const tmp10 = preloadDefault;
         if (tmpResult.isThemeDark(theme.theme)) {
-          let tmp9Result = tmp9(7071);
+          let tmp9Result = tmp9(7131);
         } else {
-          tmp9Result = tmp9(7072);
+          tmp9Result = tmp9(7132);
         }
         obj[2] = tmp9Result;
         obj1 = { uri: null };
@@ -47,11 +47,11 @@ export default function Emoji(arg0) {
         obj[3] = obj1;
         obj[4] = onError;
         let tmp6Result = tmp6(tmp10, obj);
-        tmpResult = tmp(1362);
+        tmpResult = tmp(4411);
       }
       obj[1] = tmp6Result;
       return tmp6(tmp7, obj);
     }
   }
-  tmp6Result = tmp6(tmp(1296).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+  tmp6Result = tmp6(tmp(1178).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
 };

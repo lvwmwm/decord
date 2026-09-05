@@ -1,9 +1,9 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 7975
+// Function ID: 7976
 // Name: MobileUserSettings
 // Dependencies: [2]
 
-// Module 7906 (MobileUserSettings)
+// Module 7975 (MobileUserSettings)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/core/native/SettingsConstants.tsx");

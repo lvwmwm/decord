@@ -1,12 +1,12 @@
-// Module ID: 4373
-// Function ID: 4374
+// Module ID: 4455
+// Function ID: 4456
 // Name: handleGuildBoostsUpdate
-// Dependencies: [4145, 586, 706, 2]
+// Dependencies: [4224, 504, 573, 2]
 
-// Module 4373 (handleGuildBoostsUpdate)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "reset" /* 4145 */;
+// Module 4455 (handleGuildBoostsUpdate)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "reset" /* 4224 */;
 
 function handleGuildBoostsUpdate(guildBoostSlot) {
   guildBoostSlot = guildBoostSlot.guildBoostSlot;

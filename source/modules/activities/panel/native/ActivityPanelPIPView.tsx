@@ -1,26 +1,26 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 17017
+// Function ID: 17018
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4473, 9587, 1386, 1385, 4509, 9434, 16940, 673, 12206, 21, 1296, 4481, 709, 1627, 586, 1492, 16935, 11286, 4218, 16941, 4205, 4482, 4935, 16942, 16943, 1233, 6595, 4110, 16937, 9564, 2]
+// Dependencies: [19, 17, 4552, 9658, 1957, 1956, 1920, 9505, 17018, 1074, 12274, 21, 1178, 4560, 576, 1611, 504, 1477, 17013, 11354, 4296, 17019, 4271, 4561, 4974, 17020, 17021, 1114, 6655, 4189, 17015, 9635, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16939 (BaseActivityPanelPIPView)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+// Module 17017 (BaseActivityPanelPIPView)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_6 from "module_9587" /* 9587 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "participantFromServer" /* 1385 */;
-import { ActivityLayoutMode } from "items3" /* 4509 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9434 */;
-import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16940 */;
-import { ThemeTypes } from "ME" /* 673 */;
-import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12206 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_6 from "module_9658" /* 9658 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "participantFromServer" /* 1956 */;
+import { ActivityLayoutMode } from "items3" /* 1920 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9505 */;
+import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 17018 */;
+import { ThemeTypes } from "ME" /* 1074 */;
+import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12274 */;
 import { jsx } from "jsxProd" /* 21 */;
-import Button from "Button" /* 1296 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import Button from "Button" /* 1178 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class BaseActivityPanelPIPView {
@@ -66,7 +66,7 @@ class BaseActivityPanelPIPView {
     }, items1);
     tmp8 = setMode((shouldDisableSafeAreas) => shouldDisableSafeAreas.shouldDisableSafeAreas());
     closure_10 = tmp8;
-    obj3 = require("module_4218");
+    obj3 = require("module_4296");
     class J {
       constructor() {
         point = pipState.get();
@@ -107,7 +107,7 @@ class BaseActivityPanelPIPView {
           tmp13 = transitionState;
           obj1[0] = transitionState;
           obj1[1] = require("ManaContext").TransitionStates;
-          obj1[2] = require("module_4218").runOnJS;
+          obj1[2] = require("module_4296").runOnJS;
           tmp14 = transitionCleanUp;
           obj1[3] = transitionCleanUp;
           transitionComplete.__closure = obj1;
@@ -176,7 +176,7 @@ class BaseActivityPanelPIPView {
         return;
       }
     }
-    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: closure_10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4218").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: closure_19, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_13 };
+    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: closure_10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4296").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: closure_19, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_13 };
     J.__closure = obj;
     J.__workletHash = 14326479117867;
     J.__initData = closure_21;
@@ -190,14 +190,14 @@ class BaseActivityPanelPIPView {
     items2[1] = height;
     class W {
       constructor() {
-        obj = require("module_4218");
+        obj = require("module_4296");
         tmp = obj.runOnJS(setMode)(width.PANEL);
         return;
       }
     }
     obj2 = { runOnJS: null, setMode: null, ActivityPanelModes: null };
     memo = closure_3.useMemo(() => ({ width, height, pointerEvents: "none" }), items2);
-    obj2[0] = require("module_4218").runOnJS;
+    obj2[0] = require("module_4296").runOnJS;
     obj2[1] = setMode;
     obj2[2] = width;
     W.__closure = obj2;
@@ -249,7 +249,7 @@ class BaseActivityPanelPIPView {
     obj7[1] = tmp15Result;
     obj6[1] = tmp15(tmp17, obj7);
     obj5.children = tmp15(require("LegacyBaseButton").GestureDetector, obj6);
-    obj4[1] = tmp15(require("module_4218").View, obj5);
+    obj4[1] = tmp15(require("module_4296").View, obj5);
     return tmp15(require("ManaContext").ThemeContextProvider, obj4);
   }
 }
@@ -281,7 +281,7 @@ const memoResult = importAllResult.memo((transitionState) => {
   let stateFromStores1;
   let memo;
   const items = [closure_8];
-  const stateFromStoresObject = _require(586).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(504).useStateFromStoresObject(items, () => {
     const connectedActivityLocation = store.getConnectedActivityLocation();
     const obj = { channelId: lib(_undefined[29]).getEmbeddedActivityLocationChannelId(connectedActivityLocation), activity: store.getSelfEmbeddedActivityForLocation(connectedActivityLocation) };
     return obj;
@@ -291,7 +291,7 @@ const memoResult = importAllResult.memo((transitionState) => {
   if (activity != null) {
     applicationId = activity.applicationId;
   }
-  let tmpResult = tmp(586);
+  let tmpResult = tmp(504);
   const items1 = [closure_8];
   stateFromStores = tmpResult.useStateFromStores(items1, () => {
     let pipOrientationLockStateForApp;
@@ -300,11 +300,11 @@ const memoResult = importAllResult.memo((transitionState) => {
     }
     return pipOrientationLockStateForApp;
   });
-  tmpResult = tmp(586);
+  tmpResult = tmp(504);
   const items2 = [memo];
   stateFromStores1 = tmpResult.useStateFromStores(items2, () => memo.getChannel(c2));
   _require = undefined;
-  const tmp8 = transitionCleanUp(1627)();
+  const tmp8 = transitionCleanUp(1611)();
   _require = tmp8;
   const items3 = [tmp8.right];
   memo = activity.useMemo(() => {

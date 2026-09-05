@@ -1,17 +1,17 @@
-// Module ID: 5497
-// Function ID: 5498
+// Module ID: 5542
+// Function ID: 5543
 // Name: updateSubmittedGuildJoinRequestTotal
-// Dependencies: [1921, 4303, 4074, 4305, 4116, 4304, 684, 586, 706, 2]
+// Dependencies: [1371, 4382, 4153, 4384, 4195, 4383, 1090, 504, 573, 2]
 
-// Module 5497 (updateSubmittedGuildJoinRequestTotal)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hooksDefault from "hooks" /* 4074 */;
-import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4304 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4303 */;
+// Module 5542 (updateSubmittedGuildJoinRequestTotal)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import hooksDefault from "hooks" /* 4153 */;
+import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4383 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4384 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4382 */;
 
 require = arg1;
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
@@ -21,7 +21,7 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
         dependencyMap[guildId] = dependencyMap[guildId] + 1;
         const result = map.set(guildId, hooksDefault());
       }
-      if (applicationStatus === tmp12(4305).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(4384).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         dependencyMap[guildId] = Math.max(0, dependencyMap[guildId] - 1);
         const result1 = map.set(guildId, hooksDefault());

@@ -1,24 +1,24 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12311
+// Function ID: 12312
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 12244, 12242, 21, 4481, 709, 586, 5560, 5539, 12245, 9721, 1233, 4477, 9722, 1627, 4936, 1498, 5541, 12250, 12241, 2]
+// Dependencies: [32, 19, 17, 12312, 12310, 21, 4560, 576, 504, 5605, 5584, 12313, 9792, 1114, 4556, 9793, 1611, 4975, 1483, 5586, 12318, 12309, 2]
 // Exports: default
 
-// Module 12243 (GuildDirectoryCreateOrAddHeader)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4477 */;
-import Button from "Button" /* 4936 */;
-import useSegmentedControlState from "useSegmentedControlState" /* 9721 */;
-import SegmentedControl from "SegmentedControl" /* 9722 */;
+// Module 12311 (GuildDirectoryCreateOrAddHeader)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import Text from "Text" /* 4556 */;
+import Button from "Button" /* 4975 */;
+import useSegmentedControlState from "useSegmentedControlState" /* 9792 */;
+import SegmentedControl from "SegmentedControl" /* 9793 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "isFetching" /* 12244 */;
-import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 12242 */;
+import closure_8 from "isFetching" /* 12312 */;
+import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 12310 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function GuildDirectoryCreateOrAddHeader(arg0) {
@@ -85,12 +85,12 @@ let closure_13 = importAllResult.memo((guild) => {
   guild = guild.guild;
   const directoryChannelId = guild.directoryChannelId;
   ({ start, end } = guild);
-  let obj = guild(586);
+  let obj = guild(504);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getDirectoryEntry(directoryChannelId, guild.id));
-  obj = { label: guild.name, icon: callback(directoryChannelId(5539), obj), trailing: callback(directoryChannelId(12245), { entry: stateFromStores }), start, end };
+  obj = { label: guild.name, icon: callback(directoryChannelId(5584), obj), trailing: callback(directoryChannelId(12313), { entry: stateFromStores }), start, end };
   obj = { style: callback3().guildIcon, guild };
-  return callback(guild(5560).TableRow, obj);
+  return callback(guild(5605).TableRow, obj);
 });
 let closure_14 = importAllResult.memo((guild) => {
   guild = guild.guild;
@@ -107,11 +107,11 @@ let closure_14 = importAllResult.memo((guild) => {
     end: null
   };
   obj = { style: callback3().guildIcon, guild };
-  obj[2] = callback(handleItemPress(5539), obj);
-  obj[3] = callback(guild(5560).TableRow.Arrow, {});
+  obj[2] = callback(handleItemPress(5584), obj);
+  obj[3] = callback(guild(5605).TableRow.Arrow, {});
   obj[4] = start;
   obj[5] = end;
-  return callback(guild(5560).TableRow, obj);
+  return callback(guild(5605).TableRow, obj);
 });
 let obj2 = { paddingHorizontal: ThemesDefault.space.PX_12, width: "100%", marginTop: 18 };
 const result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");

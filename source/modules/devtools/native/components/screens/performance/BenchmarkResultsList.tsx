@@ -1,13 +1,13 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15734
+// Function ID: 15735
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 5642, 5560, 15654, 2]
+// Dependencies: [19, 21, 5687, 5605, 15730, 2]
 // Exports: default
 
-// Module 15658 (BenchmarkResultsList)
+// Module 15734 (BenchmarkResultsList)
 import noopAll from "noop" /* 19 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -27,7 +27,7 @@ export default function BenchmarkResultsList(results) {
             ({ label: obj[0], elapsedMs } = kind);
             const _HermesInternal = HermesInternal;
             obj[1] = "" + elapsedMs.toFixed(1) + " ms total";
-            let tmp5 = callback2(callback(5560).TableRow, obj, kind.id);
+            let tmp5 = callback2(callback(5605).TableRow, obj, kind.id);
           } else {
             obj = { label: null, subLabel: null };
             const meanMs = kind.meanMs;
@@ -36,10 +36,10 @@ export default function BenchmarkResultsList(results) {
             const _HermesInternal2 = HermesInternal;
             obj[0] = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
             ({ dropped, frames } = kind);
-            const FRAME_BUDGET_MS = callback(15654).FRAME_BUDGET_MS;
+            const FRAME_BUDGET_MS = callback(15730).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
             obj[1] = "" + dropped + "/" + frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
-            tmp5 = callback2(callback(5560).TableRow, obj, kind.id);
+            tmp5 = callback2(callback(5605).TableRow, obj, kind.id);
           }
           return tmp5;
         }),

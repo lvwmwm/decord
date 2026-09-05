@@ -1,13 +1,13 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8345
+// Function ID: 8346
 // Name: initialize
-// Dependencies: [1908, 8276, 586, 706, 2]
+// Dependencies: [1979, 8346, 504, 573, 2]
 
-// Module 8275 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import fetchGuildAffinities from "fetchGuildAffinities" /* 8276 */;
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+// Module 8345 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import fetchGuildAffinities from "fetchGuildAffinities" /* 8346 */;
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
 
 require = arg1;
 let closure_3 = { guildAffinitiesByGuildId: {}, guildAffinities: [], lastFetched: 0 };

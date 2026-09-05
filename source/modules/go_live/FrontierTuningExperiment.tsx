@@ -1,11 +1,11 @@
-// Module ID: 4666
-// Function ID: 4667
-// Dependencies: [4540, 1469, 2]
+// Module ID: 4699
+// Function ID: 4700
+// Dependencies: [4607, 1434, 2]
 
-// Module 4666
+// Module 4699
 import set from "set" /* 2 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4540 */;
-import importDefaultResult from "getUnitId" /* 1469 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4607 */;
+import importDefaultResult from "getUnitId" /* 1434 */;
 
 let obj = { maxBitrate: null, maxResolution: null, maxFPS: null, maskReportedQuality: false };
 obj = {};

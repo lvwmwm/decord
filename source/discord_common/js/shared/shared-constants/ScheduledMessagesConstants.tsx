@@ -1,9 +1,9 @@
-// Module ID: 7778
-// Function ID: 7779
+// Module ID: 7846
+// Function ID: 7847
 // Name: MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS
 // Dependencies: [2]
 
-// Module 7778 (MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS)
+// Module 7846 (MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ScheduledMessagesConstants.tsx");

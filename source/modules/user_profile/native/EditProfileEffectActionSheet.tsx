@@ -1,19 +1,19 @@
-// Module ID: 14552
-// Function ID: 14553
+// Module ID: 14627
+// Function ID: 14628
 // Name: EditProfileEffectInner
-// Dependencies: [32, 19, 17, 7491, 7481, 673, 21, 4481, 709, 8117, 8101, 7102, 7122, 695, 8102, 8098, 8095, 7090, 4477, 1233, 8103, 10663, 586, 14553, 8097, 8118, 14554, 13106, 13107, 8104, 11040, 4948, 2]
+// Dependencies: [32, 19, 17, 7558, 7548, 1074, 21, 4560, 576, 8186, 8170, 7162, 7182, 1242, 8171, 8167, 8164, 7150, 4556, 1114, 8172, 10734, 504, 14628, 8166, 8187, 14629, 13174, 13175, 8173, 11108, 4987, 2]
 // Exports: default
 
-// Module 14552 (EditProfileEffectInner)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14627 (EditProfileEffectInner)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7491 */;
-import { isProfileEffectRecord } from "fromServer" /* 7481 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_6 from "map" /* 7558 */;
+import { isProfileEffectRecord } from "fromServer" /* 7548 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function EditProfileEffectInner(user) {
@@ -101,7 +101,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = callback3();
-  const tmp2 = purchase(8104)(previewSkuId);
+  const tmp2 = purchase(8173)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -125,11 +125,11 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(11040), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  const items1 = [callback(purchase(11108), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4948), obj);
+  items1[1] = callback(purchase(4987), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
@@ -161,16 +161,16 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   if (str == null) {
     str = "";
   }
-  const tmp4Result = isTryItOut(8117)(str);
+  const tmp4Result = isTryItOut(8186)(str);
   dependencyMap = tmp4Result;
   const tmp6 = first(memo.useState(currentProfileEffect), 2);
   first = tmp6[0];
-  let obj = guildId(8101);
-  let tmp2Result = tmp2(7102);
-  const analyticsLocations = tmp2Result(tmp2(7122).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
+  let obj = guildId(8170);
+  let tmp2Result = tmp2(7162);
+  const analyticsLocations = tmp2Result(tmp2(7182).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = memo.useMemo(() => {
-    const obj = { type: isTryItOut(7122).EDIT_PROFILE_EFFECT_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
+    const obj = { type: isTryItOut(7182).EDIT_PROFILE_EFFECT_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
     let tmp = null != dependencyMap;
     if (tmp) {
       let result;
@@ -185,14 +185,14 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const items1 = [memo];
   const items2 = [first, guildId, isTryItOut];
   const callback = memo.useCallback(() => {
-    let obj = isTryItOut(695);
+    let obj = isTryItOut(1242);
     obj = {};
     const merged = Object.assign(memo);
     obj.is_fullscreen = true;
     obj.track(closure_1_8.OPEN_POPOUT, obj);
   }, items1);
   const callback1 = memo.useCallback((items) => {
-    let obj = guildId(8102);
+    let obj = guildId(8171);
     let purchasedItem = obj.getPurchasedItem(items, "firstProfileEffect");
     if (purchasedItem == null) {
       purchasedItem = first;
@@ -201,10 +201,10 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
       purchasedItem = null;
     }
     if (isTryItOut) {
-      let tmpResult = tmp(8098);
+      let tmpResult = tmp(8167);
       const result = tmpResult.setTryItOutProfileEffect(purchasedItem);
     } else {
-      tmpResult = tmp(8095);
+      tmpResult = tmp(8164);
       obj = { guildId: null, profileEffect: null };
       obj[0] = guildId;
       obj[1] = purchasedItem;
@@ -216,15 +216,15 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   obj1 = { style: tmp.container, children: null };
   const items3 = [callback(closure_5, { style: tmp.bounceOffset }), , ];
   const obj3 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = guildId(1233).intl;
-  obj3[3] = intl.string(guildId(1233).t["/6nv6N"]);
-  items3[1] = callback(guildId(4477).Text, obj3);
+  const intl = guildId(1114).intl;
+  obj3[3] = intl.string(guildId(1114).t["/6nv6N"]);
+  items3[1] = callback(guildId(4556).Text, obj3);
   items3[2] = callback(EditProfileEffectInner, { user, selectedProfileEffect: first, setSelectedProfileEffect: tmp6[1], guildId, isTryItOut });
   obj1[1] = items3;
   const items4 = [callback2(closure_5, obj1), ];
   const obj4 = { user, currentSkuId: null, selectedSkuId: null, isTryItOut: null, onApply: null, analyticsLocations: null, analyticsSource: null };
   let skuId;
-  tmp2Result = tmp2(8103);
+  tmp2Result = tmp2(8172);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }
@@ -237,9 +237,9 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   obj4[3] = isTryItOut;
   obj4[4] = callback1;
   obj4[5] = analyticsLocations;
-  obj4[6] = isTryItOut(7122).EDIT_PROFILE_EFFECT_SHEET;
+  obj4[6] = isTryItOut(7182).EDIT_PROFILE_EFFECT_SHEET;
   items4[1] = callback(tmp2Result, obj4);
   obj[4] = items4;
-  obj[1] = callback2(guildId(7090).BottomSheet, obj);
-  return callback(guildId(7102).AnalyticsLocationProvider, obj);
+  obj[1] = callback2(guildId(7150).BottomSheet, obj);
+  return callback(guildId(7162).AnalyticsLocationProvider, obj);
 };

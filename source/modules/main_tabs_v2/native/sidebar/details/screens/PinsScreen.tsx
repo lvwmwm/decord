@@ -1,15 +1,15 @@
-// Module ID: 16784
-// Function ID: 16785
-// Dependencies: [19, 17, 1386, 7810, 21, 4481, 709, 1501, 586, 12231, 16639, 2]
+// Module ID: 16862
+// Function ID: 16863
+// Dependencies: [19, 17, 1957, 7878, 21, 4560, 576, 1486, 504, 12299, 16716, 2]
 
-// Module 16784
-import ThemesDefault from "Themes" /* 709 */;
-import InitialPinsScreenDefault from "InitialPinsScreen" /* 16639 */;
+// Module 16862
+import ThemesDefault from "Themes" /* 576 */;
+import InitialPinsScreenDefault from "InitialPinsScreen" /* 16716 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 7810 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 7878 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -18,10 +18,10 @@ obj = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 obj[0] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  let obj = channelId(1501);
+  let obj = channelId(1486);
   channelId = obj.useRoute().params.channelId;
   const items = [closure_4];
-  const stateFromStores = channelId(586).useStateFromStores(items, () => {
+  const stateFromStores = channelId(504).useStateFromStores(items, () => {
     const channel = closure_1_4.getChannel(channelId);
     let guild_id;
     if (channel != null) {
@@ -29,8 +29,8 @@ const memoResult = importAllResult.memo(() => {
     }
     return guild_id;
   });
-  const obj2 = channelId(586);
-  const channelDetailsSearchContext = channelId(12231).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const obj2 = channelId(504);
+  const channelDetailsSearchContext = channelId(12299).useChannelDetailsSearchContext(channelId, stateFromStores);
   obj = { style: callback().container, children: jsx(InitialPinsScreenDefault, obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;

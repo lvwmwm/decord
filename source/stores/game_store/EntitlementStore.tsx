@@ -1,18 +1,18 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7394
+// Function ID: 7395
 // Name: addEntitlement
-// Dependencies: [4523, 4520, 4530, 673, 1923, 586, 12, 4529, 676, 706, 2]
+// Dependencies: [7395, 7397, 5510, 1074, 1373, 504, 12, 7399, 1077, 573, 2]
 
-// Module 7332 (addEntitlement)
+// Module 7394 (addEntitlement)
 import applyDefault from "apply" /* 12 */;
-import initializeAll from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getComboId from "getComboId" /* 4529 */;
-import closure_3 from "createFromServer" /* 4523 */;
-import closure_4 from "setLibraryApplications" /* 4520 */;
-import closure_5 from "addSku" /* 4530 */;
-import ME from "ME" /* 673 */;
-import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_8 } from "GuildFeatures" /* 1923 */;
+import initializeAll from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getComboId from "getComboId" /* 7399 */;
+import closure_3 from "createFromServer" /* 7395 */;
+import closure_4 from "setLibraryApplications" /* 7397 */;
+import closure_5 from "addSku" /* 5510 */;
+import ME from "ME" /* 1074 */;
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_8 } from "GuildFeatures" /* 1373 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ prototype["getForSubscription"] = function getForSubscription(arg0) {
     return set;
   }
 };
-prototype["isEntitledToSku"] = function isEntitledToSku(arg0, arg1, applicationId) {
+prototype["isEntitledToSku"] = function isEntitledToSku(arg0, arg1, id) {
   let tmp = arg3;
   if (arg3 === undefined) {
     tmp = null;
@@ -197,13 +197,13 @@ prototype["isEntitledToSku"] = function isEntitledToSku(arg0, arg1, applicationI
       continue;
     }
   }
-  if (set1.has(applicationId)) {
+  if (set1.has(id)) {
     return false;
   } else {
     if (null != tmp) {
-      let libraryApplication = store.getLibraryApplication(applicationId, tmp);
+      let libraryApplication = store.getLibraryApplication(id, tmp);
     } else {
-      libraryApplication = store.getActiveLibraryApplication(applicationId);
+      libraryApplication = store.getActiveLibraryApplication(id);
     }
     let tmp13 = null == libraryApplication || libraryApplication.sku.id !== arg1;
     if (!tmp13) {

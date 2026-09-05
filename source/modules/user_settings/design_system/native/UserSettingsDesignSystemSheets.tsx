@@ -1,28 +1,28 @@
-// Module ID: 15721
-// Function ID: 15722
+// Module ID: 15797
+// Function ID: 15798
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 673, 21, 4481, 7138, 7089, 9647, 7139, 4934, 6547, 7140, 4448, 4936, 1233, 10159, 5767, 5562, 4477, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4560, 7198, 7149, 9718, 7199, 4973, 6606, 7200, 4527, 4975, 1114, 10230, 5814, 5607, 4556, 2]
 // Exports: default
 
-// Module 15721 (DemoActionSheet)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import PressableCard from "PressableCard" /* 5562 */;
-import metadataDefault from "metadata" /* 5767 */;
-import TextInput from "TextInput" /* 6547 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7089 */;
-import ActionSheet from "ActionSheet" /* 7138 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7140 */;
-import PromoSheet from "PromoSheet" /* 10159 */;
+// Module 15797 (DemoActionSheet)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import PressableCard from "PressableCard" /* 5607 */;
+import metadataDefault from "metadata" /* 5814 */;
+import TextInput from "TextInput" /* 6606 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 7149 */;
+import ActionSheet from "ActionSheet" /* 7198 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7200 */;
+import PromoSheet from "PromoSheet" /* 10230 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { NOOP } from "ME" /* 673 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function DemoActionSheet() {
@@ -48,14 +48,14 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(9647).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(9718).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
   if (tmp2) {
     obj = { onPress: null };
     obj[0] = NOOP;
-    tmp14Result = tmp14(tmp15(7139).ActionSheetCloseButton, obj);
+    tmp14Result = tmp14(tmp15(7199).ActionSheetCloseButton, obj);
   }
   obj1 = { header: closure_7(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), children: null };
   obj[3] = tmp14Result;

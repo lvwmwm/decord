@@ -1,12 +1,12 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8450
+// Function ID: 8451
 // Name: MIN_AGE_GATE
-// Dependencies: [1623, 4460, 1234, 2]
+// Dependencies: [1608, 4539, 1115, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 8380 (MIN_AGE_GATE)
+// Module 8450 (MIN_AGE_GATE)
 import set from "set" /* 2 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
 
 let c2 = 26;
 let c3 = 2;
@@ -18,11 +18,11 @@ export const isAppStoreAgeSignalSupported = function isAppStoreAgeSignalSupporte
   if (obj.isMetaQuest()) {
     return false;
   } else {
-    let tmpResult = tmp(4460);
+    let tmpResult = tmp(4539);
     if (tmpResult.getIsRunningOnSimulator()) {
       return false;
     } else {
-      tmpResult = tmp(4460);
+      tmpResult = tmp(4539);
       const parts = tmpResult.getSystemVersion().split(".");
       const _parseInt = parseInt;
       const parsed = parseInt(parts[0], 10);

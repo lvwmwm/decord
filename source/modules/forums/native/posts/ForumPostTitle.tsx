@@ -1,15 +1,15 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 12016
+// Function ID: 12017
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4481, 1235, 4477, 2]
+// Dependencies: [19, 21, 4560, 1116, 4556, 2]
 // Exports: default
 
-// Module 11948 (ForumPostTitle)
+// Module 12016 (ForumPostTitle)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4477 */;
+import Text from "Text" /* 4556 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
 
 require = arg1;
 noopAll;

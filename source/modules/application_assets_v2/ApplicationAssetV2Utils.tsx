@@ -1,13 +1,13 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 9029
+// Function ID: 9030
 // Name: getApplicationAssetUrl
-// Dependencies: [527, 1465, 2]
+// Dependencies: [1272, 1430, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 8959 (getApplicationAssetUrl)
+// Module 9029 (getApplicationAssetUrl)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import handleImageLoad from "handleImageLoad" /* 1465 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import handleImageLoad from "handleImageLoad" /* 1430 */;
 
 let result = set.fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 

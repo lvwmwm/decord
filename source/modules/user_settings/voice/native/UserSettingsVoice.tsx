@@ -1,26 +1,26 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9979
+// Function ID: 9980
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 9909, 9910, 21, 4481, 5642, 9911, 4934, 9912, 9914, 4477, 1233, 9918, 9919, 9921, 7063, 2]
+// Dependencies: [19, 17, 9980, 9981, 21, 4560, 5687, 9982, 4973, 9983, 9985, 4556, 1114, 9989, 9990, 9992, 7123, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 9908 (UserSettingsVoice)
+// Module 9979 (UserSettingsVoice)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import apexExperimentDefault from "apexExperiment" /* 9911 */;
-import handleInputModePressDefault from "handleInputModePress" /* 9912 */;
-import SoundboardVolumeDefault from "SoundboardVolume" /* 9918 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9919 */;
-import VoiceProcessingOptionsDefault from "VoiceProcessingOptions" /* 9921 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import apexExperimentDefault from "apexExperiment" /* 9982 */;
+import handleInputModePressDefault from "handleInputModePress" /* 9983 */;
+import SoundboardVolumeDefault from "SoundboardVolume" /* 9989 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9990 */;
+import VoiceProcessingOptionsDefault from "VoiceProcessingOptions" /* 9992 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isMobileOverlaySupported } from "getUserAgnosticState" /* 9909 */;
-import { USER_SETTINGS_VOICE_GUILD_URL as closure_5 } from "combined" /* 9910 */;
+import { isMobileOverlaySupported } from "getUserAgnosticState" /* 9980 */;
+import { USER_SETTINGS_VOICE_GUILD_URL as closure_5 } from "combined" /* 9981 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -35,11 +35,11 @@ export default function UserSettingsVoice() {
   obj = { style: tmp.container, children: null };
   const items = [callback(handleInputModePressDefault, {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp4(tmp2(9914), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(9985), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   obj = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
-  const intl = tmp7(1233).intl;
+  const intl = tmp7(1114).intl;
   obj[2] = intl.format(getSystemLocale.t["V+B3FH"], { guideURL: closure_5 });
   items[2] = callback(Text.Text, obj);
   items[3] = callback(SoundboardVolumeDefault, {});

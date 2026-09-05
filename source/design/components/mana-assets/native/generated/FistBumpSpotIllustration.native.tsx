@@ -1,14 +1,14 @@
-// Module ID: 5944
-// Function ID: 5945
+// Module ID: 5999
+// Function ID: 6000
 // Name: FistBumpSpotIllustration
-// Dependencies: [21, 5542, 5945, 2]
+// Dependencies: [21, 5587, 6000, 2]
 // Exports: FistBumpSpotIllustration
 
-// Module 5944 (FistBumpSpotIllustration)
+// Module 5999 (FistBumpSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5945 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6000 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FistBumpSpotIllustration.native.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7834
-// Function ID: 7835
+// Module ID: 7903
+// Function ID: 7904
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 4122, 5018, 5524, 2008, 7697, 4735, 2]
+// Dependencies: [5, 4201, 5057, 5569, 1896, 7765, 4767, 2]
 // Exports: default
 
-// Module 7834 (useHandleJoinThreadVoice)
+// Module 7903 (useHandleJoinThreadVoice)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "storeThread" /* 4122 */;
+import closure_4 from "storeThread" /* 4201 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/threads/native/useHandleJoinThreadVoice.tsx");

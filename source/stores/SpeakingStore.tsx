@@ -1,20 +1,20 @@
-// Module ID: 5380
-// Function ID: 5381
+// Module ID: 5419
+// Function ID: 5420
 // Name: anyoneHasFlagInContext
-// Dependencies: [32, 1386, 4532, 4557, 1980, 673, 4545, 4125, 586, 5381, 706, 2]
+// Dependencies: [32, 1957, 1908, 4583, 2011, 1074, 4585, 4204, 504, 5420, 573, 2]
 
-// Module 5380 (anyoneHasFlagInContext)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import getUnitIdDefault from "getUnitId" /* 5381 */;
+// Module 5419 (anyoneHasFlagInContext)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import getUnitIdDefault from "getUnitId" /* 5420 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_6 from "createRTCConnection" /* 4557 */;
-import closure_7 from "handleConnectionOpen" /* 1980 */;
-import { Permissions } from "ME" /* 673 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_6 from "createRTCConnection" /* 4583 */;
+import closure_7 from "handleConnectionOpen" /* 2011 */;
+import { Permissions } from "ME" /* 1074 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
 
 function anyoneHasFlagInContext(DEFAULT, VOICE, arg2) {
   let flag = arg2;

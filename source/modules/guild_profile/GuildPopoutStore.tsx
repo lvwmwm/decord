@@ -1,13 +1,13 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13968
+// Function ID: 13969
 // Name: initialize
-// Dependencies: [1215, 7279, 586, 706, 2]
+// Dependencies: [502, 7341, 504, 573, 2]
 
-// Module 13978 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _startLurking from "_startLurking" /* 7279 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
+// Module 13968 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _startLurking from "_startLurking" /* 7341 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
 
 require = arg1;
 let closure_3 = { UNSET: "unset", FETCHING: "fetching", FAILED: "failed", SUCCEEDED: "succeeded" };

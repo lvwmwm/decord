@@ -1,12 +1,12 @@
-// Module ID: 588
-// Function ID: 589
+// Module ID: 506
+// Function ID: 507
 // Name: initialize
-// Dependencies: [589, 590, 10, 38, 2]
+// Dependencies: [507, 508, 10, 38, 2]
 
-// Module 588 (initialize)
+// Module 506 (initialize)
 import set from "set" /* 2 */;
 import isTracingDefault from "isTracing" /* 10 */;
-import loggerDefault from "logger" /* 590 */;
+import loggerDefault from "logger" /* 508 */;
 
 let closure_4 = [];
 let c5 = false;

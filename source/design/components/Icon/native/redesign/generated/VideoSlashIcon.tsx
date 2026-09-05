@@ -1,14 +1,14 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13046
+// Function ID: 13047
 // Name: VideoSlashIcon
-// Dependencies: [19, 21, 709, 4196, 12979, 2]
+// Dependencies: [19, 21, 576, 4261, 13047, 2]
 // Exports: VideoSlashIcon
 
-// Module 12978 (VideoSlashIcon)
+// Module 13046 (VideoSlashIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12979 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 13047 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

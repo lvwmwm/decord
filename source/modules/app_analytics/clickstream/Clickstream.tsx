@@ -1,17 +1,17 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7465
+// Function ID: 7466
 // Name: isClickstreamEnabled
-// Dependencies: [32, 1215, 4557, 11, 7400, 695, 7401, 2]
+// Dependencies: [32, 502, 4583, 11, 7466, 1242, 7467, 2]
 // Exports: trackClickstream
 
-// Module 7399 (isClickstreamEnabled)
+// Module 7465 (isClickstreamEnabled)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7400 */;
-import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7401 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7466 */;
+import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7467 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "createRTCConnection" /* 4557 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "createRTCConnection" /* 4583 */;
 
 require = arg1;
 function isClickstreamEnabled(flag) {
@@ -58,7 +58,7 @@ let c7 = -1;
 let c8 = false;
 let result = require("set").fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
 
-export const trackClickstream = function trackClickstream(GUILD_VIEWED_CLICKSTREAM, arg1) {
+export const trackClickstream = function trackClickstream(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, arg1) {
   let obj = DISCORD_EPOCHDefault;
   const extractTimestampResult = obj.extractTimestamp(store.getId());
   if (extractTimestampResult !== c7) {
@@ -68,10 +68,10 @@ export const trackClickstream = function trackClickstream(GUILD_VIEWED_CLICKSTRE
   const result = clickstreamExperimentEnabled.clickstreamExperimentEnabled();
   c8 = result;
   if (result) {
-    if (!map.has(GUILD_VIEWED_CLICKSTREAM)) {
-      const result1 = obj3.set(GUILD_VIEWED_CLICKSTREAM, []);
+    if (!map.has(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM)) {
+      const result1 = obj3.set(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, []);
     }
-    const value = obj3.get(GUILD_VIEWED_CLICKSTREAM);
+    const value = obj3.get(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM);
     if (value != null) {
       obj = { timestamp: null, rtc_state: null };
       const _Date = Date;

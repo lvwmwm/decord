@@ -1,16 +1,16 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9767
+// Function ID: 9768
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 7459, 1392, 21, 4481, 1233, 4074, 9594, 1498, 4477, 4936, 1890, 9633, 1350, 9637, 9694, 9639, 2]
+// Dependencies: [32, 19, 7526, 1963, 21, 4560, 1114, 4153, 9665, 1483, 4556, 4975, 1874, 9704, 4272, 9708, 9765, 9710, 2]
 // Exports: default
 
-// Module 9696 (EditGuildEventDetails)
+// Module 9767 (EditGuildEventDetails)
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort" /* 7459 */;
-import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
+import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort" /* 7526 */;
+import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
@@ -80,8 +80,8 @@ export default function EditGuildEventDetails(guildEvent) {
       (function assertGuildEventDetailsValid(guildEvent) {
         if (0 === guildEvent.name.length) {
           const _Error = Error;
-          const intl = callback(1233).intl;
-          error = new Error(intl.string(callback(1233).t.GoV0uR));
+          const intl = callback(1114).intl;
+          error = new Error(intl.string(callback(1114).t.GoV0uR));
           throw error;
         }
       })(guildEvent);

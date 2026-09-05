@@ -1,25 +1,25 @@
-// Module ID: 5385
-// Function ID: 5386
+// Module ID: 5425
+// Function ID: 5426
 // Name: sortKey
-// Dependencies: [4503, 1386, 5386, 1991, 4130, 1921, 4500, 4558, 5382, 1391, 5388, 4675, 4116, 4680, 5389, 4547, 2]
+// Dependencies: [4582, 1957, 5426, 2021, 4209, 1371, 4579, 4584, 5421, 1962, 5428, 4707, 4195, 4712, 5429, 4612, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5385 (sortKey)
-import version from "version" /* 4116 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4675 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5388 */;
-import getHighestHoistedRole from "getHighestHoistedRole" /* 5389 */;
-import closure_3 from "reset" /* 4503 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleConnectionReset" /* 5386 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "updateVoiceState" /* 4500 */;
-import { getComparator } from "getVoiceStatesForGuild" /* 4558 */;
-import closure_11 from "buildStageChannelUserRoles" /* 5382 */;
-import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
+// Module 5425 (sortKey)
+import version from "version" /* 4195 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4707 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5428 */;
+import getHighestHoistedRole from "getHighestHoistedRole" /* 5429 */;
+import closure_3 from "reset" /* 4582 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "handleConnectionReset" /* 5426 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "updateVoiceState" /* 4579 */;
+import { getComparator } from "getVoiceStatesForGuild" /* 4584 */;
+import closure_11 from "buildStageChannelUserRoles" /* 5421 */;
+import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
 
 require = arg1;
 function sortKey(speaker) {
@@ -177,7 +177,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       const merged = Object.assign(obj);
       obj.type = obj.VOICE;
       obj.id = user.id;
-      let tmp11Result = tmp11(4675);
+      let tmp11Result = tmp11(4707);
       obj.rtsState = tmp11Result.getAudienceRequestToSpeakState(voiceStateForChannel);
       items.push(obj);
       streamForUser = streamForUser.getStreamForUser(userId, self.guildId);
@@ -186,12 +186,12 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       }
       if (null != streamForUser) {
         if (streamForUser.channelId === self.channelId) {
-          tmp11Result = tmp11(4547);
+          tmp11Result = tmp11(4612);
           obj1 = {};
           const merged1 = Object.assign(obj);
           obj1.id = tmp11Result.encodeStreamKey(streamForUser);
           obj1.type = obj.STREAM;
-          obj1.rtsState = tmp11(4675).RequestToSpeakStates.NONE;
+          obj1.rtsState = tmp11(4707).RequestToSpeakStates.NONE;
           items.push(obj1);
           const encodeStreamKeyResult = tmp11Result.encodeStreamKey(streamForUser);
         }

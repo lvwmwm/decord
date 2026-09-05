@@ -1,12 +1,12 @@
-// Module ID: 17071
-// Function ID: 17072
+// Module ID: 17149
+// Function ID: 17150
 // Name: useActivityUsers
-// Dependencies: [1921, 1385, 644, 2]
+// Dependencies: [1371, 1956, 563, 2]
 // Exports: default
 
-// Module 17071 (useActivityUsers)
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import closure_3 from "participantFromServer" /* 1385 */;
+// Module 17149 (useActivityUsers)
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import closure_3 from "participantFromServer" /* 1956 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useActivityUsers.tsx");
@@ -16,7 +16,7 @@ export default function useActivityUsers(arg0, arg1) {
   dependencyMap = arg1;
   let items = [closure_3, closure_2];
   const items1 = [arg1, arg0];
-  return _require(644).useStateFromStoresArray(items, () => {
+  return _require(563).useStateFromStoresArray(items, () => {
     if (null == closure_1) {
       return [];
     } else {

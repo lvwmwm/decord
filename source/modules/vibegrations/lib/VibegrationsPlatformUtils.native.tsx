@@ -1,11 +1,11 @@
-// Module ID: 16512
-// Function ID: 16513
-// Dependencies: [7347, 13640, 9616, 2]
+// Module ID: 16588
+// Function ID: 16589
+// Dependencies: [1895, 13716, 9687, 2]
 
-// Module 16512
-import NativeModulesDefault from "NativeModules" /* 9616 */;
-import closure_2 from "getState" /* 7347 */;
-import { LocalNotificationTypes } from "LocalNotificationTypes" /* 13640 */;
+// Module 16588
+import NativeModulesDefault from "NativeModules" /* 9687 */;
+import closure_2 from "getState" /* 1895 */;
+import { LocalNotificationTypes } from "LocalNotificationTypes" /* 13716 */;
 
 let result = require("set").fileFinishedImporting("modules/vibegrations/lib/VibegrationsPlatformUtils.native.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 6320
-// Function ID: 6321
+// Module ID: 6375
+// Function ID: 6376
 // Name: QrLoginSpotIllustration
-// Dependencies: [21, 5542, 6321, 2]
+// Dependencies: [21, 5587, 6376, 2]
 // Exports: QrLoginSpotIllustration
 
-// Module 6320 (QrLoginSpotIllustration)
+// Module 6375 (QrLoginSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6321 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6376 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/QrLoginSpotIllustration.native.tsx");

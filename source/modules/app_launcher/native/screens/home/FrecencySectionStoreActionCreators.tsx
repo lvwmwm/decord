@@ -1,12 +1,12 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 12055
+// Function ID: 12056
 // Name: setFrecencySectionSelection
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11987 (setFrecencySectionSelection)
+// Module 12055 (setFrecencySectionSelection)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStoreActionCreators.tsx");
 

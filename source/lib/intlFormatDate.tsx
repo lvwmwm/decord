@@ -1,11 +1,11 @@
-// Module ID: 4183
-// Function ID: 4184
+// Module ID: 4248
+// Function ID: 4249
 // Name: makeIntlFormatter
-// Dependencies: [1995, 4180, 1233, 2]
+// Dependencies: [2025, 4245, 1114, 2]
 // Exports: makeFormatter
 
-// Module 4183 (makeIntlFormatter)
-import closure_2 from "_getSystemLocale" /* 1995 */;
+// Module 4248 (makeIntlFormatter)
+import closure_2 from "_getSystemLocale" /* 2025 */;
 
 const require = arg1;
 function makeIntlFormatter(locale, arg1) {

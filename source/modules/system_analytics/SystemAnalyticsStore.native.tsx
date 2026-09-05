@@ -1,10 +1,10 @@
-// Module ID: 4554
-// Function ID: 4555
+// Module ID: 4605
+// Function ID: 4606
 // Name: getSystemAnalyticsInfo
 // Dependencies: [2]
 // Exports: getSystemAnalyticsInfo
 
-// Module 4554 (getSystemAnalyticsInfo)
+// Module 4605 (getSystemAnalyticsInfo)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/system_analytics/SystemAnalyticsStore.native.tsx");

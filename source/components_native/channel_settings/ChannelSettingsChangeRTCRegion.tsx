@@ -1,20 +1,20 @@
-// Module ID: 16776
-// Function ID: 16777
+// Module ID: 16854
+// Function ID: 16855
 // Name: handleSetRegion
-// Dependencies: [850, 19, 1386, 16732, 21, 4481, 709, 4205, 1233, 8555, 5643, 5640, 8523, 586, 38, 2]
+// Dependencies: [718, 19, 1957, 16810, 21, 4560, 576, 4271, 1114, 8625, 5688, 5685, 8593, 504, 38, 2]
 // Exports: default
 
-// Module 16776 (handleSetRegion)
+// Module 16854 (handleSetRegion)
 import _modDef38 from "module_38" /* 38 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import TableRadioRow from "TableRadioRow" /* 5643 */;
-import Form from "Form" /* 8523 */;
-import closure_3 from "_toArray" /* 850 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "initialize" /* 16732 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import TableRadioRow from "TableRadioRow" /* 5688 */;
+import Form from "Form" /* 8593 */;
+import closure_3 from "_toArray" /* 718 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "initialize" /* 16810 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -84,7 +84,7 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
     c0 = null;
     tmp = null;
   }
-  self(8555).updateChannel({ rtcRegion: tmp });
+  self(8625).updateChannel({ rtcRegion: tmp });
   self.setState({ submitting: true }, () => {
     let obj = self(closure_1_2[9]);
     obj = { rtcRegion: c0 };
@@ -98,7 +98,7 @@ prototype["renderRegions"] = function renderRegions() {
   const self = this;
   const substr = callback(this.state.regions).slice(0);
   const mapped = substr.map(this.renderRegion, this);
-  return jsx(self(5640).TableRadioGroup, {
+  return jsx(self(5685).TableRadioGroup, {
     defaultValue: this.state.selectedRegionId,
     onChange(arg0) {
       return self.handleSetRegion(arg0);
@@ -117,7 +117,7 @@ const result = require("set").fileFinishedImporting("components_native/channel_s
 export default function ConnectedChannelSettingsChangeRTCRegion(channelId) {
   channelId = channelId.channelId;
   const items = [closure_4];
-  const channel = channelId(586).useStateFromStores(items, () => closure_1_4.getChannel(channelId));
+  const channel = channelId(504).useStateFromStores(items, () => closure_1_4.getChannel(channelId));
   _modDef38(null != channel, "ConnectedChannelSettingsChangeRTCRegion: channel cannot be undefined");
   return <ChannelSettingsChangeRTCRegion channel={channel} />;
 };

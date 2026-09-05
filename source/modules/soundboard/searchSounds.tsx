@@ -1,14 +1,14 @@
-// Module ID: 7281
-// Function ID: 7282
+// Module ID: 7343
+// Function ID: 7344
 // Name: trackSearchStart
-// Dependencies: [5419, 673, 633, 695, 4134, 5472, 7282, 2]
+// Dependencies: [5459, 1074, 551, 1242, 4213, 5517, 7344, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 7281 (trackSearchStart)
-import debounceDefault from "debounce" /* 633 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_3 from "getEmojiToGroupId" /* 5419 */;
-import ME from "ME" /* 673 */;
+// Module 7343 (trackSearchStart)
+import debounceDefault from "debounce" /* 551 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import closure_3 from "getEmojiToGroupId" /* 5459 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function trackSearchStart(location_stack, channel_id) {
@@ -49,13 +49,13 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result = null;
     if (null != name.emojiName) {
-      result = stateFromStores(4134).convertSurrogateToName(name.emojiName, false);
-      const obj2 = stateFromStores(4134);
+      result = stateFromStores(4213).convertSurrogateToName(name.emojiName, false);
+      const obj2 = stateFromStores(4213);
     }
     let byName = null;
     if (null != result) {
-      byName = stateFromStores(4134).getByName(result);
-      const obj3 = stateFromStores(4134);
+      byName = stateFromStores(4213).getByName(result);
+      const obj3 = stateFromStores(4213);
     }
     if (null != customEmojiById) {
       const items = [customEmojiById.name];
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result1 = sum6 > 0;
     if (0 < sum6) {
-      result1 = lib(7282).canUseSoundboardSound(stateFromStores, name, tmp3);
-      const obj4 = lib(7282);
+      result1 = lib(7344).canUseSoundboardSound(stateFromStores, name, tmp3);
+      const obj4 = lib(7344);
     }
     let sum7 = sum6;
     if (result1) {

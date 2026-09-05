@@ -1,18 +1,18 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11586
+// Function ID: 11587
 // Name: onTapMention
-// Dependencies: [5, 11516, 9871, 8305, 4190, 11479, 8110, 7122, 4448, 11519, 2008, 11, 4166, 1233, 7130, 4193, 4865, 10258, 2]
+// Dependencies: [5, 11584, 9942, 8375, 4255, 11547, 8179, 7182, 4527, 11587, 1896, 11, 1935, 1114, 7190, 4258, 4904, 10329, 2]
 
-// Module 11518 (onTapMention)
+// Module 11586 (onTapMention)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import presentAddedFriendToast from "presentAddedFriendToast" /* 4193 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import setDefault from "set" /* 4865 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7122 */;
-import _copy from "_copy" /* 7130 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8110 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11516 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import presentAddedFriendToast from "presentAddedFriendToast" /* 4258 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import setDefault from "set" /* 4904 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7182 */;
+import _copy from "_copy" /* 7190 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8179 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11584 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -89,7 +89,7 @@ let closure_5 = importDefaultResult((arg0) => {
             } else {
               if (null != attachmentUrl) {
                 if ("" !== attachmentUrl) {
-                  let obj3 = callback2(9871);
+                  let obj3 = callback2(9942);
                   dependencyMap = 2;
                   c4 = 1;
                   const obj2 = { value: null, done: false };
@@ -104,9 +104,9 @@ let closure_5 = importDefaultResult((arg0) => {
             throw arg1;
           } else if (arg0 !== 2) {
             callback = arg1;
-            obj = callback(8305);
+            obj = callback(8375);
             obj.trackLinkClicked(callback);
-            obj1 = callback(4190);
+            obj1 = callback(4255);
             obj1.openURL(callback);
           }
           c4 = 3;
@@ -186,7 +186,7 @@ let closure_4 = importDefaultResult((arg0) => {
             } else {
               if (null != attachmentUrl) {
                 if ("" !== attachmentUrl) {
-                  let obj2 = callback2(9871);
+                  let obj2 = callback2(9942);
                   dependencyMap = 2;
                   c4 = 1;
                   obj2 = { value: null, done: false };
@@ -203,7 +203,7 @@ let closure_4 = importDefaultResult((arg0) => {
             callback = arg1;
             obj = { urlString: null };
             obj[0] = callback;
-            callback(11516)(obj);
+            callback(11584)(obj);
           }
           c4 = 3;
           const obj3 = { value: null, done: true };
@@ -230,7 +230,7 @@ obj[2] = function() {
   return applyArgumentsResult;
 };
 obj[3] = function onTapMention(closure_0) {
-  let obj = parsedUserId(11479);
+  let obj = parsedUserId(11547);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(closure_0);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
@@ -249,7 +249,7 @@ obj[3] = function onTapMention(closure_0) {
         obj[0] = guildId;
         obj[1] = roleId;
         obj[2] = channelId;
-        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp(2008)(11519, tmp2.paths), "RoleMembersActionSheet", obj);
+        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp(1896)(11587, tmp2.paths), "RoleMembersActionSheet", obj);
         const obj9 = ACTION_SHEET_HEIGHT_HALFDefault;
       }
     }
@@ -258,7 +258,7 @@ obj[3] = function onTapMention(closure_0) {
         obj1 = { guildId: null, roleId: null, channelId: null };
         obj1[0] = guildId;
         const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
-        const tmp10 = tmp(2008)(11519, tmp2.paths);
+        const tmp10 = tmp(1896)(11587, tmp2.paths);
         obj1[1] = DISCORD_EPOCHDefault.castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1[2] = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj1);
@@ -266,12 +266,12 @@ obj[3] = function onTapMention(closure_0) {
       }
     }
     if (null == roleName) {
-      const DeveloperMode = tmp(4166).DeveloperMode;
+      const DeveloperMode = tmp(1935).DeveloperMode;
       if (DeveloperMode.getSetting()) {
         if (null != parsedUserId) {
           const obj2 = { secondaryConfirmText: null, onConfirmSecondary: null };
-          const intl = tmp(1233).intl;
-          obj2[0] = intl.string(tmp(1233).t["/AXYnE"]);
+          const intl = tmp(1114).intl;
+          obj2[0] = intl.string(tmp(1114).t["/AXYnE"]);
           obj2[1] = function onConfirmSecondary() {
             parsedUserId(closure_1_3[14]).copy(parsedUserId);
             const obj = parsedUserId(closure_1_3[14]);
@@ -281,12 +281,12 @@ obj[3] = function onTapMention(closure_0) {
         }
         let obj3 = setDefault;
         obj3 = { title: null, body: null, confirmText: null, isDismissable: true };
-        const intl2 = tmp(1233).intl;
-        obj3[0] = intl2.string(tmp(1233).t.r0DLNm);
-        const intl3 = tmp(1233).intl;
-        obj3[1] = intl3.string(tmp(1233).t.Fqqbhg);
-        const intl4 = tmp(1233).intl;
-        obj3[2] = intl4.string(tmp(1233).t.BddRzS);
+        const intl2 = tmp(1114).intl;
+        obj3[0] = intl2.string(tmp(1114).t.r0DLNm);
+        const intl3 = tmp(1114).intl;
+        obj3[1] = intl3.string(tmp(1114).t.Fqqbhg);
+        const intl4 = tmp(1114).intl;
+        obj3[2] = intl4.string(tmp(1114).t.BddRzS);
         const merged = Object.assign(obj4);
         obj3.show(obj3);
       }
@@ -307,7 +307,7 @@ obj[5] = function onTapInlineCode(nativeEvent) {
   }
 };
 obj[6] = function onTapEmoji(emojiNode) {
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(10258, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(10329, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 let result = require("set").fileFinishedImporting("components_native/chat/contentHandlers.tsx");
 

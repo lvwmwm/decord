@@ -1,21 +1,21 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17048
+// Function ID: 17049
 // Name: VoicePanel
-// Dependencies: [19, 1386, 4736, 21, 586, 16971, 17015, 4105, 4205, 2]
+// Dependencies: [19, 1957, 4768, 21, 504, 17049, 17093, 4184, 4271, 2]
 
-// Module 16970 (VoicePanel)
-import isIterable from "isIterable" /* 4105 */;
-import ManaContext from "ManaContext" /* 4205 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 16971 */;
+// Module 17048 (VoicePanel)
+import isIterable from "isIterable" /* 4184 */;
+import ManaContext from "ManaContext" /* 4271 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 17049 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "withEqualityFn" /* 4736 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "withEqualityFn" /* 4768 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function VoicePanel(arg0) {
   const _require = arg0;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const channel = closure_1_4.getChannel(channelId.channelId);

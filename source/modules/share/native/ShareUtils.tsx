@@ -1,15 +1,15 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13902
+// Function ID: 13903
 // Name: _sendShareMessage
-// Dependencies: [5, 4862, 4474, 4194, 11185, 9236, 7709, 5089, 5088, 7615, 9222, 7390, 2]
+// Dependencies: [5, 4901, 4553, 4259, 11253, 9307, 7777, 5128, 5127, 7682, 9293, 7456, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13912 (_sendShareMessage)
-import dispatcherDefault from "dispatcher" /* 4194 */;
-import registerAssetDefault from "registerAsset" /* 11185 */;
+// Module 13902 (_sendShareMessage)
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import registerAssetDefault from "registerAsset" /* 11253 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 
 const require = arg1;
 function _sendShareMessage() {
@@ -78,13 +78,13 @@ function _sendShareMessage() {
               if (dependencyMap == null) {
                 lib2 = "";
               }
-              constants = lib2(7615).parse(lib2, lib2);
+              constants = lib2(7682).parse(lib2, lib2);
               if (c4.length > 0) {
-                let obj2 = lib2(9236);
+                let obj2 = lib2(9307);
                 obj2.clearAll(id, c4.ChannelMessage);
               }
-              future = new lib(9222).Future();
-              let obj3 = lib2(7390);
+              future = new lib(9293).Future();
+              let obj3 = lib2(7456);
               obj2 = { location: null, doNotNotifyOnError: true, attachmentsToUpload: null, onAttachmentUploadError: null };
               obj2[0] = constants.SHARE_MODAL;
               obj2[2] = c4;

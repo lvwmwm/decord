@@ -1,13 +1,13 @@
-// Module ID: 4380
-// Function ID: 4381
+// Module ID: 4462
+// Function ID: 4463
 // Name: prototype
-// Dependencies: [673, 527, 1233, 2]
+// Dependencies: [1074, 1272, 1114, 2]
 
-// Module 4380 (prototype)
+// Module 4462 (prototype)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Links = ME.Links;
 const V8APIError = sendRequest.V8APIError;

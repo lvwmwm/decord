@@ -1,16 +1,16 @@
-// Module ID: 13161
-// Function ID: 13162
+// Module ID: 13229
+// Function ID: 13230
 // Name: updateParty
-// Dependencies: [1215, 4130, 5240, 673, 12, 586, 706, 2]
+// Dependencies: [502, 4209, 5279, 1074, 12, 504, 573, 2]
 
-// Module 13161 (updateParty)
+// Module 13229 (updateParty)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import closure_4 from "filterPlayingActivities" /* 5240 */;
-import ME from "ME" /* 673 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "markAllUserIdListsStale" /* 4209 */;
+import closure_4 from "filterPlayingActivities" /* 5279 */;
+import ME from "ME" /* 1074 */;
 
 function updateParty(closure_6, id, activities, status) {
   const found = activities.find((party) => {

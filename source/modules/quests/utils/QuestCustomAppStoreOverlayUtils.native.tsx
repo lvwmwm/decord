@@ -1,36 +1,36 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 15018
+// Function ID: 15019
 // Name: fetchCustomAppStoreOverlayContent
-// Dependencies: [11421, 11428, 11430, 2]
+// Dependencies: [11489, 11496, 11498, 2]
 // Exports: canOpenCustomAppStoreOverlayFromCta, prefetchCustomAppStoreOverlayContent
 
-// Module 14943 (fetchCustomAppStoreOverlayContent)
+// Module 15018 (fetchCustomAppStoreOverlayContent)
 import set from "set" /* 2 */;
-import apexExperiment from "apexExperiment" /* 11421 */;
-import supportedConsoles from "supportedConsoles" /* 11428 */;
+import apexExperiment from "apexExperiment" /* 11489 */;
+import supportedConsoles from "supportedConsoles" /* 11496 */;
 
 function fetchCustomAppStoreOverlayContent(cta) {
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;
   let enabled = CustomAppStoreOverlayExperiment.getConfig({ location: "quest_open_game_link" }).enabled;
   if (enabled) {
-    let tmpResult = tmp(11428);
+    let tmpResult = tmp(11496);
     enabled = null != tmpResult.getInlineStoreParamsFromCta(cta);
   }
   let inlineStoreParamsFromCta = null;
   if (enabled) {
-    tmpResult = tmp(11428);
+    tmpResult = tmp(11496);
     inlineStoreParamsFromCta = tmpResult.getInlineStoreParamsFromCta(cta);
   }
   if (null == inlineStoreParamsFromCta) {
     let resolved = Promise.resolve(null);
   } else {
-    const tmpResult1 = tmp(11430);
-    let url = tmp(11428).getDirectAppStoreLinkFromCta(cta);
+    const tmpResult1 = tmp(11498);
+    let url = tmp(11496).getDirectAppStoreLinkFromCta(cta);
     if (url == null) {
       url = cta.url;
     }
     resolved = tmpResult1.getAppStoreOverlayContent(inlineStoreParamsFromCta, url);
-    const tmpResult2 = tmp(11428);
+    const tmpResult2 = tmp(11496);
   }
   return resolved;
 }

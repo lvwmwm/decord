@@ -1,20 +1,20 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17346
+// Function ID: 17347
 // Name: handleDeletedEntityIds
-// Dependencies: [5419, 5462, 1386, 1984, 1908, 5238, 3, 7058, 706, 586, 7584, 1214, 11, 2]
+// Dependencies: [5459, 5502, 1957, 2015, 1979, 5277, 3, 7118, 573, 504, 7651, 1241, 11, 2]
 
-// Module 17266 (handleDeletedEntityIds)
+// Module 17346 (handleDeletedEntityIds)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault2 from "initialize" /* 7058 */;
-import getAllDefault from "getAll" /* 7584 */;
-import closure_2 from "getEmojiToGroupId" /* 5419 */;
-import closure_3 from "loadSavedGuildStickers" /* 5462 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "_handleConnectionOpen" /* 5238 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import initializeDefault2 from "initialize" /* 7118 */;
+import getAllDefault from "getAll" /* 7651 */;
+import closure_2 from "getEmojiToGroupId" /* 5459 */;
+import closure_3 from "loadSavedGuildStickers" /* 5502 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "_handleConnectionOpen" /* 5277 */;
 
 function handleDeletedEntityIds(guild_id) {
   importDefault = guild_id;

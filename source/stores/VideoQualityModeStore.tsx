@@ -1,13 +1,13 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13996
+// Function ID: 13997
 // Name: mode
-// Dependencies: [673, 586, 706, 2]
+// Dependencies: [1074, 504, 573, 2]
 
-// Module 13755 (mode)
+// Module 13996 (mode)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
 
 const AUTO = ME.VideoQualityMode.AUTO;
 const Store = initializeDefault.Store;

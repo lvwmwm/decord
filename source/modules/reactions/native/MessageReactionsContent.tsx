@@ -1,34 +1,34 @@
-// Module ID: 11188
-// Function ID: 11189
+// Module ID: 11256
+// Function ID: 11257
 // Name: useReactors
-// Dependencies: [32, 19, 17, 4473, 1386, 1991, 7694, 4120, 673, 21, 4218, 4477, 4481, 709, 586, 4132, 656, 7695, 7696, 5553, 12, 7102, 11189, 4680, 4325, 8110, 7077, 1296, 1431, 9732, 1234, 5635, 8529, 11190, 1233, 11191, 4329, 4166, 7070, 11192, 4482, 1492, 4439, 4448, 11193, 2008, 7149, 7129, 11194, 4449, 4450, 1627, 8163, 7090, 6567, 592, 7209, 7716, 7757, 11195, 7012, 2]
+// Dependencies: [32, 19, 17, 4552, 1957, 2021, 7762, 4199, 1074, 21, 4296, 4556, 4560, 576, 504, 4211, 1332, 7763, 7764, 5598, 12, 7162, 11257, 4712, 4404, 8179, 7137, 1178, 1396, 9803, 1115, 5680, 8599, 11258, 1114, 11259, 4409, 1935, 7130, 11260, 4561, 1477, 4518, 4527, 11261, 1896, 7209, 7189, 11262, 4528, 4529, 1611, 8232, 7150, 6627, 510, 7269, 7784, 7825, 11263, 7072, 2]
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
-// Module 11188 (useReactors)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4477 */;
-import BottomSheetModal from "BottomSheetModal" /* 6567 */;
-import EmojiDefault from "Emoji" /* 7070 */;
-import Background from "Background" /* 7090 */;
-import getNoResultsSource from "getNoResultsSource" /* 8163 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 11191 */;
+// Module 11256 (useReactors)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import Text from "Text" /* 4556 */;
+import BottomSheetModal from "BottomSheetModal" /* 6627 */;
+import EmojiDefault from "Emoji" /* 7130 */;
+import Background from "Background" /* 7150 */;
+import getNoResultsSource from "getNoResultsSource" /* 8232 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 11259 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "trackCommunicationDisabled" /* 1991 */;
-import closure_13 from "reactionKey" /* 7694 */;
-import closure_14 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_11 from "ensureGuildLoaded" /* 1957 */;
+import closure_12 from "trackCommunicationDisabled" /* 2021 */;
+import closure_13 from "reactionKey" /* 7762 */;
+import closure_14 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "module_4218" /* 4218 */;
-import { Storage } from "Storage" /* 592 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "module_4296" /* 4296 */;
+import { Storage } from "Storage" /* 510 */;
 
 require = arg1;
 function useReactors(channelId) {
@@ -138,15 +138,15 @@ function ReactionTab(arg0) {
   let tmp8 = null;
   if (null != emojiColorPalette) {
     obj = { backgroundColor: null };
-    let tmp3Result = tmp3(4329);
+    let tmp3Result = tmp3(4409);
     obj[0] = tmp3Result.hexOpacityToRgba(emojiColorPalette.backgroundColor, emojiColorPalette.opacity);
     tmp8 = obj;
   }
   const emoji = reaction.emoji;
-  tmp3Result = tmp3(586);
+  tmp3Result = tmp3(504);
   const items = [closure_10];
   const stateFromStores = tmp3Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const AnimateEmoji = tmp3(4166).AnimateEmoji;
+  const AnimateEmoji = tmp3(1935).AnimateEmoji;
   let emojiURL;
   if (null != emoji.id) {
     obj1 = { id: null, animated: null, size: 48 };
@@ -312,11 +312,11 @@ function EmojiOptionsButton(channelId) {
   closure_2 = undefined;
   dependencyMap = undefined;
   ({ reactions, reactionSelectedIndex } = channelId);
-  let obj = channelId(586);
+  let obj = channelId(504);
   const items = [closure_11];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_11.getChannel(channelId), items1);
-  const tmp3 = messageId(11192)(stateFromStores);
+  const tmp3 = messageId(11260)(stateFromStores);
   closure_2 = tmp3;
   dependencyMap = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3];
@@ -330,11 +330,11 @@ function EmojiOptionsButton(channelId) {
     children: null
   };
   obj = { variant: "text-xs/semibold", color: "text-subtle", children: null };
-  const intl = channelId(1233).intl;
-  obj[2] = intl.string(channelId(1233).t.pCaYID);
-  const items3 = [callback2(channelId(4477).Text, obj), ];
+  const intl = channelId(1114).intl;
+  obj[2] = intl.string(channelId(1114).t.pCaYID);
+  const items3 = [callback2(channelId(4556).Text, obj), ];
   const tmp = callback4();
-  items3[1] = callback2(channelId(7149).ChevronSmallRightIcon, { color: messageId(709).colors.ICON_SUBTLE, size: "xs" });
+  items3[1] = callback2(channelId(7209).ChevronSmallRightIcon, { color: messageId(576).colors.ICON_SUBTLE, size: "xs" });
   obj[2] = items3;
   return callback3(closure_7, obj);
 }
@@ -342,7 +342,7 @@ function ReactionTabs(setReactionSelectedIndex) {
   const tmp = callback4();
   ({ reactions, reactionSelectedIndex } = setReactionSelectedIndex);
   setReactionSelectedIndex = setReactionSelectedIndex.setReactionSelectedIndex;
-  let obj = setReactionSelectedIndex(7129);
+  let obj = setReactionSelectedIndex(7189);
   obj = { style: tmp.reactionTab, children: null };
   obj = {
     tabs: reactions.map((emoji) => {
@@ -360,18 +360,18 @@ function ReactionTabs(setReactionSelectedIndex) {
       const result = reactionSelectedIndex(closure_1_3[49]).triggerHapticFeedback(setReactionSelectedIndex(closure_1_3[50]).IMPACT_LIGHT);
       setReactionSelectedIndex(arg0);
     },
-    initialNumTabsToRender: reactionSelectedIndex(4132).MAX_REACTIONS
+    initialNumTabsToRender: reactionSelectedIndex(4211).MAX_REACTIONS
   };
   ({ tab: obj3[1], tabActive: obj3[2], tabSelected: obj3[3] } = tmp);
-  const items = [callback2(setReactionSelectedIndex(11194), obj), callback2(setReactionSelectedIndex(8529), { outer: true }), ];
+  const items = [callback2(setReactionSelectedIndex(11262), obj), callback2(setReactionSelectedIndex(8599), { outer: true }), ];
   obj1 = { style: tmp.removeButtonContainer, children: null };
   const obj2 = { style: tmp.emojiTextIdentifier, variant: "eyebrow", color: "text-default", children: null };
   const tmp4 = callback2;
-  const tmp5 = setReactionSelectedIndex(11194);
-  obj2[3] = reactionSelectedIndex(4132).getReactionEmojiName(reactions[reactionSelectedIndex].emoji);
-  const items1 = [callback2(reactionSelectedIndex(4477).Text, obj2), ];
+  const tmp5 = setReactionSelectedIndex(11262);
+  obj2[3] = reactionSelectedIndex(4211).getReactionEmojiName(reactions[reactionSelectedIndex].emoji);
+  const items1 = [callback2(reactionSelectedIndex(4556).Text, obj2), ];
   const obj3 = {};
-  const obj6 = reactionSelectedIndex(4132);
+  const obj6 = reactionSelectedIndex(4211);
   const merged = Object.assign(setReactionSelectedIndex);
   items1[1] = tmp4(obj.useExperiment({ location: "ReactionTabs" }, { autoTrackExposure: false }).tidaWebformEnabled ? EmojiOptionsButton : RemoveAllButton, obj3);
   obj1[1] = items1;

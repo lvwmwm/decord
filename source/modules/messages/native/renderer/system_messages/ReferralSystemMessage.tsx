@@ -1,18 +1,18 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 8052
+// Function ID: 8053
 // Name: createReferralSystemMessage
-// Dependencies: [7386, 1215, 4481, 709, 7984, 7895, 7877, 7982, 7998, 2]
+// Dependencies: [7452, 502, 4560, 576, 8053, 7964, 7946, 8051, 8067, 2]
 // Exports: createReferralSystemMessage
 
-// Module 7983 (createReferralSystemMessage)
-import ThemesDefault from "Themes" /* 709 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import registerAssetDefault from "registerAsset" /* 7982 */;
-import createReferralTrialEmbedRedesign from "createReferralTrialEmbedRedesign" /* 7984 */;
-import createReferralTrialEmbedRedeemable from "createReferralTrialEmbedRedeemable" /* 7998 */;
-import closure_3 from "emitChanges" /* 7386 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+// Module 8052 (createReferralSystemMessage)
+import ThemesDefault from "Themes" /* 576 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import registerAssetDefault from "registerAsset" /* 8051 */;
+import createReferralTrialEmbedRedesign from "createReferralTrialEmbedRedesign" /* 8053 */;
+import createReferralTrialEmbedRedeemable from "createReferralTrialEmbedRedeemable" /* 8067 */;
+import closure_3 from "emitChanges" /* 7452 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { iconTintColor: ThemesDefault.colors.ICON_STRONG, iconDividerColor: ThemesDefault.colors.ICON_STRONG };
@@ -41,7 +41,7 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
         const merged = Object.assign(createCommonMessageDefault(message));
         obj.referralTrialOfferInfo = referralTrialEmbedRedeemable;
         const tmp17 = callback(theme);
-        obj.iconUrl = tmp8(7877).getAssetUriForEmbed(registerAssetDefault);
+        obj.iconUrl = tmp8(7946).getAssetUriForEmbed(registerAssetDefault);
         ({ iconTintColor: obj4.iconTintColor, iconDividerColor: obj4.iconDividerColor } = tmp17);
         return obj;
       }
@@ -56,7 +56,7 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
         const merged1 = Object.assign(createCommonMessageDefault(message));
         obj.referralTrialOfferInfoRedesign = referralTrialEmbedRedesign;
         const tmp4 = callback(theme);
-        obj.iconUrl = tmp23(7877).getAssetUriForEmbed(registerAssetDefault);
+        obj.iconUrl = tmp23(7946).getAssetUriForEmbed(registerAssetDefault);
         ({ iconTintColor: obj.iconTintColor, iconDividerColor: obj.iconDividerColor } = tmp4);
         obj.timestamp = undefined;
         return obj;

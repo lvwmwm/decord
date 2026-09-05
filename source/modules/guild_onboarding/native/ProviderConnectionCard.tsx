@@ -1,13 +1,13 @@
-// Module ID: 7118
-// Function ID: 7119
+// Module ID: 7178
+// Function ID: 7179
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 673, 21, 4416, 5244, 1233, 7119, 7120, 695, 4708, 1431, 1362, 1296, 4424, 7117, 2]
+// Dependencies: [5, 19, 1074, 21, 4495, 5283, 1114, 7179, 7180, 1242, 4740, 1396, 4411, 1178, 4503, 7177, 2]
 // Exports: default
 
-// Module 7118 (ProviderConnectionCard)
+// Module 7178 (ProviderConnectionCard)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -72,8 +72,8 @@ export default function ProviderConnectionCard(connection) {
               return obj;
             } else {
               obj1 = {};
-              const obj5 = v0(695);
-              const merged = Object.assign(closure_1_0(4708).collectGuildAnalyticsMetadata(v0));
+              const obj5 = v0(1242);
+              const merged = Object.assign(closure_1_0(4740).collectGuildAnalyticsMetadata(v0));
               obj1.connection_type = "provider";
               const provider_id = closure_1_0.provider_id;
               c0 = provider_id;

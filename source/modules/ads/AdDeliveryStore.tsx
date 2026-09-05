@@ -1,16 +1,16 @@
-// Module ID: 7633
-// Function ID: 7634
+// Module ID: 7700
+// Function ID: 7701
 // Name: map
-// Dependencies: [684, 7634, 581, 5411, 586, 5410, 706, 2]
+// Dependencies: [1090, 7701, 559, 5451, 504, 5450, 573, 2]
 
-// Module 7633 (map)
-import failsDefault from "fails" /* 581 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import AdPlacement from "AdPlacement" /* 5410 */;
-import AdCreativeType from "AdCreativeType" /* 5411 */;
-import result3 from "result" /* 7634 */;
+// Module 7700 (map)
+import initializeDefault from "initialize" /* 504 */;
+import failsDefault from "fails" /* 559 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import AdPlacement from "AdPlacement" /* 5450 */;
+import AdCreativeType from "AdCreativeType" /* 5451 */;
+import result3 from "result" /* 7701 */;
 
 require = arg1;
 let closure_9 = 30 * setDefault.Millis.SECOND;
@@ -35,20 +35,20 @@ Object.defineProperty(prototype, "lastFetchedQuestToDeliver", {
   },
   set: undefined
 });
-prototype["isFetchingAdToDeliverByPlacement"] = function isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP) {
+prototype["isFetchingAdToDeliverByPlacement"] = function isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA) {
   let flag;
   if (map != null) {
-    flag = map.get(QUEST_HOME_BANNER_DESKTOP);
+    flag = map.get(MOBILE_HOME_DOCK_AREA);
   }
   if (flag == null) {
     flag = false;
   }
   return flag;
 };
-prototype["canRefreshAd"] = function canRefreshAd(QUEST_HOME_BANNER_DESKTOP) {
+prototype["canRefreshAd"] = function canRefreshAd(MOBILE_HOME_DOCK_AREA) {
   let value;
   if (map4 != null) {
-    value = map4.get(QUEST_HOME_BANNER_DESKTOP);
+    value = map4.get(MOBILE_HOME_DOCK_AREA);
   }
   let tmp3 = null == value;
   if (!tmp3) {

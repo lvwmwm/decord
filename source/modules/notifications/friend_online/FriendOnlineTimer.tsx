@@ -1,16 +1,16 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17807
+// Function ID: 17808
 // Name: _reportSessionMeaningfullyOnline
-// Dependencies: [5, 5240, 17728, 673, 502, 684, 527, 1205, 706, 7058, 4166, 2]
+// Dependencies: [5, 5279, 17808, 1074, 1085, 1090, 1272, 1232, 573, 7118, 1935, 2]
 
-// Module 17727 (_reportSessionMeaningfullyOnline)
-import setDefault from "set" /* 684 */;
-import initializeDefault from "initialize" /* 7058 */;
+// Module 17807 (_reportSessionMeaningfullyOnline)
+import setDefault from "set" /* 1090 */;
+import initializeDefault from "initialize" /* 7118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "filterPlayingActivities" /* 5240 */;
-import closure_5 from "initialize" /* 17728 */;
-import { Endpoints } from "ME" /* 673 */;
-import { StatusTypes } from "sum" /* 502 */;
+import closure_4 from "filterPlayingActivities" /* 5279 */;
+import closure_5 from "initialize" /* 17808 */;
+import { Endpoints } from "ME" /* 1074 */;
+import { StatusTypes } from "sum" /* 1085 */;
 
 let require = arg1;
 function _reportSessionMeaningfullyOnline() {
@@ -25,9 +25,9 @@ function _reportSessionMeaningfullyOnline() {
     if (1 === tmp7) {
       c3 = 0;
       const lib = dependencyMap;
-      if (lib instanceof lib(527).HTTPResponseError) {
+      if (lib instanceof lib(1272).HTTPResponseError) {
         if (429 === lib.status) {
-          obj1 = callback(706);
+          obj1 = callback(573);
           let obj3 = { type: "FRIEND_ONLINE_TIMER_REPORTED", timestampMs: null };
           const _Date = Date;
           obj3[1] = Date.now();
@@ -35,7 +35,7 @@ function _reportSessionMeaningfullyOnline() {
           c5 = 3;
         }
       }
-      obj3 = callback(1205);
+      obj3 = callback(1232);
       const obj4 = { tags: null };
       obj4[0] = { app_context: "session_timer" };
       obj3.captureException(lib, obj4);

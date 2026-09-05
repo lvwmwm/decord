@@ -1,13 +1,13 @@
-// Module ID: 9622
-// Function ID: 9623
+// Module ID: 9693
+// Function ID: 9694
 // Name: set
-// Dependencies: [673, 592, 586, 706, 2]
+// Dependencies: [1074, 510, 504, 573, 2]
 
-// Module 9622 (set)
-import initializeDefault from "initialize" /* 586 */;
-import Storage2 from "Storage" /* 592 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 9693 (set)
+import initializeDefault from "initialize" /* 504 */;
+import Storage2 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const StorageKeys = ME.StorageKeys;

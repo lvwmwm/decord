@@ -1,27 +1,27 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9729
+// Function ID: 9730
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 1390, 9659, 9628, 673, 21, 4481, 709, 5084, 1296, 6932, 9660, 4477, 1233, 4936, 4731, 9661, 2008, 4448, 2]
+// Dependencies: [32, 19, 17, 1961, 9730, 9699, 1074, 21, 4560, 576, 5123, 1178, 6992, 9731, 4556, 1114, 4975, 4763, 9732, 1896, 4527, 2]
 // Exports: default
 
-// Module 9658 (StageChannelUpsell)
+// Module 9729 (StageChannelUpsell)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import Button2 from "Button" /* 4936 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import registerAssetDefault from "registerAsset" /* 6932 */;
-import registerAssetDefault2 from "registerAsset" /* 9660 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import Button2 from "Button" /* 4975 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import registerAssetDefault from "registerAsset" /* 6992 */;
+import registerAssetDefault2 from "registerAsset" /* 9731 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { createChannelRecord } from "createChannelRecord" /* 1390 */;
-import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9659 */;
-import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9628 */;
-import { ChannelTypes } from "ME" /* 673 */;
+import { createChannelRecord } from "createChannelRecord" /* 1961 */;
+import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9730 */;
+import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9699 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

@@ -1,13 +1,13 @@
-// Module ID: 12179
-// Function ID: 12180
+// Module ID: 12247
+// Function ID: 12248
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 11894, 4218, 4482, 4935, 2]
+// Dependencies: [32, 19, 11962, 4296, 4561, 4974, 2]
 // Exports: default
 
-// Module 12179 (useChatInputFloatingBounce)
+// Module 12247 (useChatInputFloatingBounce)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import TextAreaCta from "TextAreaCta" /* 11894 */;
+import TextAreaCta from "TextAreaCta" /* 11962 */;
 
 const require = arg1;
 ({ CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: c4, CHAT_INPUT_FLOATING_COLLAPSED_SCALE: c5, CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG: closure_6, CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG: error } = TextAreaCta);

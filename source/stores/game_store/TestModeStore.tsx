@@ -1,15 +1,15 @@
-// Module ID: 8787
-// Function ID: 8788
+// Module ID: 8857
+// Function ID: 8858
 // Name: reset
-// Dependencies: [1302, 1339, 4520, 586, 4166, 706, 2]
+// Dependencies: [1184, 1221, 7397, 504, 1935, 573, 2]
 
-// Module 8787 (reset)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import closure_5 from "initialize" /* 1302 */;
-import closure_6 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_7 from "setLibraryApplications" /* 4520 */;
+// Module 8857 (reset)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import closure_5 from "initialize" /* 1184 */;
+import closure_6 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_7 from "setLibraryApplications" /* 7397 */;
 import set from "set" /* 2 */;
 
 require = arg1;

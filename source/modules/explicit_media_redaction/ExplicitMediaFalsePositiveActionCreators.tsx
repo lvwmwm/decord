@@ -1,12 +1,12 @@
-// Module ID: 9326
-// Function ID: 9327
+// Module ID: 9397
+// Function ID: 9398
 // Name: disableFalsePositiveButton
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: disableFalsePositiveButton
 
-// Module 9326 (disableFalsePositiveButton)
+// Module 9397 (disableFalsePositiveButton)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function disableFalsePositiveButton(channelId, messageId) {
   let obj = dispatcherDefault;

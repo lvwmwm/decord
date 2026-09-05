@@ -1,13 +1,13 @@
-// Module ID: 9095
-// Function ID: 9096
+// Module ID: 9166
+// Function ID: 9167
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 4571, 673, 21, 586, 9090, 8291, 9096, 1233, 9079, 2]
+// Dependencies: [19, 4599, 1074, 21, 504, 9161, 8361, 9167, 1114, 9150, 2]
 // Exports: default
 
-// Module 9095 (SecureFramesStreamVerificationBottomSheet)
+// Module 9166 (SecureFramesStreamVerificationBottomSheet)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 4571 */;
-import { AnalyticsSections } from "ME" /* 673 */;
+import closure_4 from "initialize" /* 4599 */;
+import { AnalyticsSections } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ let result = require("set").fileFinishedImporting("modules/rtc/native/SecureFram
 export default function SecureFramesStreamVerificationBottomSheet(channelId) {
   channelId = channelId.channelId;
   const streamKey = channelId.streamKey;
-  let obj = channelId(586);
+  let obj = channelId(504);
   const items = [closure_4];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -35,15 +35,15 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
     channelId(closure_1_2[6]).showShareActionSheet(obj, closure_1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   obj = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
-  const intl = channelId(1233).intl;
-  obj[0] = intl.string(channelId(1233).t.QogHld);
-  const intl2 = channelId(1233).intl;
-  obj[1] = intl2.string(channelId(1233).t.qODBkW);
-  const intl3 = channelId(1233).intl;
+  const intl = channelId(1114).intl;
+  obj[0] = intl.string(channelId(1114).t.QogHld);
+  const intl2 = channelId(1114).intl;
+  obj[1] = intl2.string(channelId(1114).t.qODBkW);
+  const intl3 = channelId(1114).intl;
   obj = { helpArticle: null };
-  const tmp3 = streamKey(9096);
-  obj[0] = channelId(9079).getSecureFramesHelpdeskArticle();
-  obj[2] = intl3.format(channelId(1233).t["H3+ktv"], obj);
+  const tmp3 = streamKey(9167);
+  obj[0] = channelId(9150).getSecureFramesHelpdeskArticle();
+  obj[2] = intl3.format(channelId(1114).t["H3+ktv"], obj);
   obj[3] = stateFromStores;
   obj[4] = callback;
   return <tmp3 helpArticle={null} />;

@@ -1,19 +1,19 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10267
+// Function ID: 10268
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7213, 21, 4481, 709, 7816, 1627, 10197, 1234, 10198, 4448, 7063, 4937, 1233, 4308, 4682, 8555, 7090, 6567, 5084, 4477, 10179, 8337, 5036, 4471, 10196, 2008, 2]
+// Dependencies: [32, 19, 17, 7273, 21, 4560, 576, 7885, 1611, 10268, 1115, 10269, 4527, 7123, 4976, 1114, 4387, 4714, 8625, 7150, 6627, 5123, 4556, 10250, 8407, 5075, 4550, 10267, 1896, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10196 (ForumGuidelinesActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
+// Module 10267 (ForumGuidelinesActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { FORUM_GUIDELINES_ACTION_SHEET as closure_6 } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7213 */;
+import { FORUM_GUIDELINES_ACTION_SHEET as closure_6 } from "FORUM_GUIDELINES_ACTION_SHEET" /* 7273 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);
@@ -192,5 +192,5 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(asyncRequireImpl(10196, dependencyMap.paths), closure_6, obj);
+  obj.openLazy(asyncRequireImpl(10267, dependencyMap.paths), closure_6, obj);
 };

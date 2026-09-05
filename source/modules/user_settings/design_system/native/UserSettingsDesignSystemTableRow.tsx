@@ -1,36 +1,36 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15767
+// Function ID: 15768
 // Name: MyTableRow
-// Dependencies: [32, 19, 17, 4302, 1921, 673, 21, 5560, 7318, 586, 1627, 4934, 5642, 4477, 1431, 1296, 7141, 5559, 5640, 5643, 5566, 14026, 14023, 14024, 14025, 8525, 4948, 2]
+// Dependencies: [32, 19, 17, 4381, 1371, 1074, 21, 5605, 7380, 504, 1611, 4973, 5687, 4556, 1396, 1178, 7201, 5604, 5685, 5688, 5611, 14112, 14109, 14110, 14111, 8595, 4987, 2]
 // Exports: default
 
-// Module 15691 (MyTableRow)
-import initialize from "initialize" /* 586 */;
-import Button from "Button" /* 1296 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5559 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import TableRowIcon from "TableRowIcon" /* 5566 */;
-import context from "context" /* 5640 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
-import TableRadioRow from "TableRadioRow" /* 5643 */;
-import TableSwitchRow from "TableSwitchRow" /* 7141 */;
-import SettingsIcon from "SettingsIcon" /* 7318 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8525 */;
-import registerAssetDefault from "registerAsset" /* 14023 */;
-import registerAssetDefault2 from "registerAsset" /* 14024 */;
-import registerAssetDefault3 from "registerAsset" /* 14025 */;
-import registerAssetDefault4 from "registerAsset" /* 14026 */;
+// Module 15767 (MyTableRow)
+import initialize from "initialize" /* 504 */;
+import Button from "Button" /* 1178 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5604 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import TableRowIcon from "TableRowIcon" /* 5611 */;
+import context from "context" /* 5685 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
+import TableRadioRow from "TableRadioRow" /* 5688 */;
+import TableSwitchRow from "TableSwitchRow" /* 7201 */;
+import SettingsIcon from "SettingsIcon" /* 7380 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8595 */;
+import registerAssetDefault from "registerAsset" /* 14109 */;
+import registerAssetDefault2 from "registerAsset" /* 14110 */;
+import registerAssetDefault3 from "registerAsset" /* 14111 */;
+import registerAssetDefault4 from "registerAsset" /* 14112 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleConnectionOpen" /* 4302 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "handleConnectionOpen" /* 4381 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

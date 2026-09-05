@@ -1,12 +1,12 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 7896
+// Function ID: 7897
 // Name: internalJsonWrite
-// Dependencies: [32, 1306, 2]
+// Dependencies: [32, 1188, 2]
 
-// Module 7827 (internalJsonWrite)
-import _mod1306 from "module_1306" /* 1306 */;
+// Module 7896 (internalJsonWrite)
+import _mod1188 from "module_1188" /* 1188 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { MessageType } from "module_1306" /* 1306 */;
+import { MessageType } from "module_1188" /* 1188 */;
 
 require = arg1;
 class Duration$Type extends MessageType {
@@ -21,7 +21,7 @@ class Duration$Type extends MessageType {
 }
 let prototype = Duration$Type.prototype;
 prototype["internalJsonWrite"] = function internalJsonWrite(seconds) {
-  const PbLong = _mod1306.PbLong;
+  const PbLong = _mod1188.PbLong;
   const toNumberResult = PbLong.from(seconds.seconds).toNumber();
   if (toNumberResult <= 315576000000) {
     if (toNumberResult >= -315576000000) {
@@ -54,7 +54,7 @@ prototype["internalJsonWrite"] = function internalJsonWrite(seconds) {
 prototype["internalJsonRead"] = function internalJsonRead(str) {
   if (typeof str !== "string") {
     const _Error3 = Error;
-    let obj = _mod1306;
+    let obj = _mod1188;
     error = new Error("Unable to parse Duration from JSON " + obj.typeofJsonValue(str) + ". Expected string.");
     throw error;
   } else {
@@ -69,7 +69,7 @@ prototype["internalJsonRead"] = function internalJsonRead(str) {
         const self = this;
         obj = this.create();
       }
-      const PbLong = _mod1306.PbLong;
+      const PbLong = _mod1188.PbLong;
       str = PbLong.from(match[1]);
       if (str.toNumber() <= 315576000000) {
         if (str.toNumber() >= -315576000000) {
@@ -95,10 +95,10 @@ prototype["create"] = function create(arr) {
   let obj = { seconds: "0", nanos: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, _mod1306.MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1188.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = _mod1306.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1306;
+    const result = _mod1188.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1188;
   }
   return obj;
 };
@@ -141,7 +141,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = _mod1306.UnknownFieldHandler.onRead;
+              onRead = _mod1188.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -157,17 +157,17 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(seconds, tag, writeUnknownFields) {
   if ("0" !== seconds.seconds) {
-    tag.tag(1, _mod1306.WireType.Varint).int64(seconds.seconds);
-    const tagResult = tag.tag(1, _mod1306.WireType.Varint);
+    tag.tag(1, _mod1188.WireType.Varint).int64(seconds.seconds);
+    const tagResult = tag.tag(1, _mod1188.WireType.Varint);
   }
   if (0 !== seconds.nanos) {
-    tag.tag(2, _mod1306.WireType.Varint).int32(seconds.nanos);
-    const tagResult1 = tag.tag(2, _mod1306.WireType.Varint);
+    tag.tag(2, _mod1188.WireType.Varint).int32(seconds.nanos);
+    const tagResult1 = tag.tag(2, _mod1188.WireType.Varint);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1306.UnknownFieldHandler.onWrite;
+      onWrite = _mod1188.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, seconds, tag);

@@ -1,12 +1,12 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7683
+// Function ID: 7684
 // Name: isAutocompleteSeparatingBoundary
-// Dependencies: [4961, 673, 2]
+// Dependencies: [5000, 1074, 2]
 // Exports: boundAutocompleteWord
 
-// Module 7616 (isAutocompleteSeparatingBoundary)
-import ME from "ME" /* 673 */;
-import regExp from "regExp" /* 4961 */;
+// Module 7683 (isAutocompleteSeparatingBoundary)
+import ME from "ME" /* 1074 */;
+import regExp from "regExp" /* 5000 */;
 import set from "set" /* 2 */;
 
 function isAutocompleteSeparatingBoundary(c22, arg1) {

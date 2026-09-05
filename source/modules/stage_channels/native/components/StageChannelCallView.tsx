@@ -1,20 +1,20 @@
-// Module ID: 9970
-// Function ID: 9971
+// Module ID: 10041
+// Function ID: 10042
 // Name: StageChannelCallBackground
-// Dependencies: [19, 21, 9606, 4481, 1627, 9971, 9972, 4218, 9410, 9973, 2]
+// Dependencies: [19, 21, 9677, 4560, 1611, 10042, 10043, 4296, 9481, 10044, 2]
 // Exports: default
 
-// Module 9970 (StageChannelCallBackground)
+// Module 10041 (StageChannelCallBackground)
 import noopAll from "noop" /* 19 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import componentDidMountDefault from "componentDidMount" /* 9410 */;
-import FocusedControlsHeader from "FocusedControlsHeader" /* 9606 */;
-import useStageActionBarAnimation from "useStageActionBarAnimation" /* 9971 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 9972 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 9973 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import componentDidMountDefault from "componentDidMount" /* 9481 */;
+import FocusedControlsHeader from "FocusedControlsHeader" /* 9677 */;
+import useStageActionBarAnimation from "useStageActionBarAnimation" /* 10042 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 10043 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 10044 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function StageChannelCallBackground(arg0) {
@@ -24,7 +24,7 @@ function StageChannelCallBackground(arg0) {
   obj = { children: null };
   const tmp = callback3();
   const items = [tmp.container, stageActionBarAnimation];
-  obj[0] = callback(_modDef4218.View, { style: items, children });
+  obj[0] = callback(_modDef4296.View, { style: items, children });
   return callback(StageChannelBackgroundDefault, obj);
 }
 noopAll;

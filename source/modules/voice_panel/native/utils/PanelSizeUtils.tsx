@@ -1,12 +1,12 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17080
+// Function ID: 17081
 // Name: VOICE_PANEL_DRAWER_MAX_WIDTH
-// Dependencies: [12205, 2]
+// Dependencies: [12273, 2]
 // Exports: getMaxPanelWidth, getPanelX
 
-// Module 17002 (VOICE_PANEL_DRAWER_MAX_WIDTH)
+// Module 17080 (VOICE_PANEL_DRAWER_MAX_WIDTH)
 import set from "set" /* 2 */;
-import VoicePanelModes from "VoicePanelModes" /* 12205 */;
+import VoicePanelModes from "VoicePanelModes" /* 12273 */;
 
 const VOICE_PANEL_DRAWER_MAX_WIDTH = VoicePanelModes.VOICE_PANEL_DRAWER_MAX_WIDTH;
 function getMaxPanelWidth(windowWidth) {

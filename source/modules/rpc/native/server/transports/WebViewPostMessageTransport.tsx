@@ -1,12 +1,12 @@
-// Module ID: 9479
-// Function ID: 9480
-// Dependencies: [3, 9480, 9481, 9487, 9491, 2]
+// Module ID: 9550
+// Function ID: 9551
+// Dependencies: [3, 9551, 9552, 9558, 9562, 2]
 
-// Module 9479
+// Module 9550
 import timestampDefault from "timestamp" /* 3 */;
-import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 9480 */;
-import loggerDefault from "logger" /* 9491 */;
-import importDefaultResult from "map" /* 9481 */;
+import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 9551 */;
+import loggerDefault from "logger" /* 9562 */;
+import importDefaultResult from "map" /* 9552 */;
 
 importDefaultResult = new importDefaultResult(require("validateSocketClient").validateSocketClient, new timestampDefault("RPCServer:PostMessage"), loggerDefault, (arg0, info, id) => {
   const combined = "Socket Message: " + id.id;

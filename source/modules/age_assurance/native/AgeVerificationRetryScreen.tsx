@@ -1,18 +1,18 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8582
+// Function ID: 8583
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 673, 8349, 21, 4481, 709, 4741, 8343, 8508, 1233, 8341, 1234, 5647, 4477, 5642, 5560, 1994, 2]
+// Dependencies: [5, 19, 17, 1074, 8419, 21, 4560, 576, 4773, 8413, 8578, 1114, 8411, 1115, 5692, 4556, 5687, 5605, 2024, 2]
 // Exports: default
 
-// Module 8512 (GetStartedScreen)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 8582 (GetStartedScreen)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8349 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8419 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, ScrollView: closure_6, View: error } = get_ActivityIndicator);

@@ -1,13 +1,13 @@
-// Module ID: 10727
-// Function ID: 10728
+// Module ID: 10796
+// Function ID: 10797
 // Name: getSubtitle
-// Dependencies: [19, 1233, 8706, 7166, 2]
+// Dependencies: [19, 1114, 8776, 7226, 2]
 // Exports: getBannerMode, useWishlistBannerConfig
 
-// Module 10727 (getSubtitle)
+// Module 10796 (getSubtitle)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const useMemo = noop.useMemo;
 let obj = { FULL_WISHLIST: "FULL_WISHLIST", MIXED: "MIXED", SHOP_ONLY: "SHOP_ONLY", SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" };

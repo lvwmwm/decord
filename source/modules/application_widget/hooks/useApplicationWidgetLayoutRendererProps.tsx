@@ -1,16 +1,16 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 9021
+// Function ID: 9022
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 8952, 8953, 1995, 8954, 586, 8955, 8856, 1394, 8959, 2]
+// Dependencies: [32, 19, 9022, 9023, 2025, 9024, 504, 9025, 8926, 1369, 9029, 2]
 // Exports: default
 
-// Module 8951 (useApplicationWidgetLayoutRendererProps)
+// Module 9021 (useApplicationWidgetLayoutRendererProps)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleFeaturedOrDeveloperFetchSuccess" /* 8952 */;
-import closure_6 from "map" /* 8953 */;
-import { FetchState } from "map" /* 8953 */;
-import closure_8 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "handleFeaturedOrDeveloperFetchSuccess" /* 9022 */;
+import closure_6 from "map" /* 9023 */;
+import { FetchState } from "map" /* 9023 */;
+import closure_8 from "_getSystemLocale" /* 2025 */;
 
 const require = arg1;
 let closure_9 = [];

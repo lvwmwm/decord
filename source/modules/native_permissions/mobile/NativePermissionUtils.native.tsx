@@ -1,21 +1,21 @@
-// Module ID: 5107
-// Function ID: 5108
+// Module ID: 5146
+// Function ID: 5147
 // Name: combineStatuses
-// Dependencies: [5, 19, 17, 4738, 21, 1234, 1623, 5104, 3, 5108, 5110, 2008, 4867, 1233, 2]
+// Dependencies: [5, 19, 17, 4770, 21, 1115, 1608, 5143, 3, 5147, 5149, 1896, 4906, 1114, 2]
 
-// Module 5107 (combineStatuses)
+// Module 5146 (combineStatuses)
 import timestampDefault from "timestamp" /* 3 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useAlertStore from "useAlertStore" /* 4867 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5108 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useAlertStore from "useAlertStore" /* 4906 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5147 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4738 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4770 */;
 import { jsx } from "jsxProd" /* 21 */;
-import set from "set" /* 1234 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
-import { NativePermissionBaseUtils } from "requestAuthorization" /* 5104 */;
+import set from "set" /* 1115 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
+import { NativePermissionBaseUtils } from "requestAuthorization" /* 5143 */;
 
 require = arg1;
 function combineStatuses(items) {

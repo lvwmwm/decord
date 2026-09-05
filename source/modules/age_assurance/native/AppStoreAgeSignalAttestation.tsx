@@ -1,11 +1,11 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8568
+// Function ID: 8569
 // Name: getPlayIntegrityCloudProjectNumber
-// Dependencies: [5, 8499, 1234, 8500, 2]
+// Dependencies: [5, 8569, 1115, 8570, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, warmAgeSignalAttestation
 
-// Module 8498 (getPlayIntegrityCloudProjectNumber)
-import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8499 */;
+// Module 8568 (getPlayIntegrityCloudProjectNumber)
+import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8569 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;

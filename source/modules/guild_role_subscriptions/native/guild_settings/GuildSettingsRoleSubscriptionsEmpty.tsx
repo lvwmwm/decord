@@ -1,16 +1,16 @@
-// Module ID: 17598
-// Function ID: 17599
+// Module ID: 17678
+// Function ID: 17679
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
-// Dependencies: [19, 1908, 673, 4510, 21, 1498, 17599, 17600, 17601, 586, 2]
+// Dependencies: [19, 1979, 1074, 1350, 21, 1483, 17679, 17680, 17681, 504, 2]
 // Exports: default
 
-// Module 17598 (GuildSettingsRoleSubscriptionsEmptyContent)
+// Module 17678 (GuildSettingsRoleSubscriptionsEmptyContent)
 import noopAll from "noop" /* 19 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import PlaceholderDefault from "Placeholder" /* 17600 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4510 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import PlaceholderDefault from "Placeholder" /* 17680 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 1350 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -19,7 +19,7 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   let obj = useNavigation;
   const str = obj.useNavigation();
   if (tmp3.loading) {
-    let tmp7 = jsx(tmp2(17600), {});
+    let tmp7 = jsx(tmp2(17680), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
@@ -27,7 +27,7 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
         obj = { guild: null };
         obj[0] = guild;
-        tmp7 = jsx(tmp2(17601), { guild: null });
+        tmp7 = jsx(tmp2(17681), { guild: null });
       }
     }
     if (null == tmp4) {
@@ -47,7 +47,7 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 
 export default function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(586);
+  let obj = guildId(504);
   const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getGuild(guildId));
   if (null == stateFromStores) {

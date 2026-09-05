@@ -1,18 +1,18 @@
-// Module ID: 11447
-// Function ID: 11448
+// Module ID: 11515
+// Function ID: 11516
 // Name: questMatchesActivity
-// Dependencies: [32, 4522, 11389, 5404, 673, 4509, 7657, 7632, 7655, 11448, 2]
+// Dependencies: [32, 4788, 11457, 5444, 1074, 1920, 7724, 7699, 7722, 11516, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 11447 (questMatchesActivity)
-import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7632 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 11448 */;
+// Module 11515 (questMatchesActivity)
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7699 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 11516 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "addApplication" /* 4522 */;
-import closure_5 from "updateActivities" /* 11389 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5404 */;
-import { ActivityGamePlatforms } from "ME" /* 673 */;
-import { XBOX_ACTIVITY_APPLICATION_ID as closure_10 } from "items3" /* 4509 */;
+import closure_4 from "addApplication" /* 4788 */;
+import closure_5 from "updateActivities" /* 11457 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5444 */;
+import { ActivityGamePlatforms } from "ME" /* 1074 */;
+import { XBOX_ACTIVITY_APPLICATION_ID as closure_10 } from "items3" /* 1920 */;
 
 require = arg1;
 function questMatchesActivity(arg0, id) {
@@ -38,8 +38,8 @@ function questMatchesActivity(arg0, id) {
           let tmp13 = tmp2 != formatted.application_id;
           if (tmp13) {
             const application_id = formatted.application_id;
-            const allApplicationIds = application_id(7657).getAllApplicationIds(id);
-            const obj = application_id(7657);
+            const allApplicationIds = application_id(7724).getAllApplicationIds(id);
+            const obj = application_id(7724);
             tmp13 = tmp2 != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
             const tmp16 = tmp2 != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
           }
@@ -49,7 +49,7 @@ function questMatchesActivity(arg0, id) {
       tmp9 = formatted.platform === ActivityGamePlatforms.PS4 || formatted.platform === tmp8.PS5;
     }
     formatted = formatted.name.toLowerCase();
-    const consoleApplicationId = application_id(7657).getConsoleApplicationId(id);
+    const consoleApplicationId = application_id(7724).getConsoleApplicationId(id);
     let flag = false;
     if (tmp2 != consoleApplicationId) {
       application = application.getApplication(consoleApplicationId);
@@ -61,7 +61,7 @@ function questMatchesActivity(arg0, id) {
       flag = tmp2;
     }
     tmp10 = flag;
-    const obj3 = application_id(7657);
+    const obj3 = application_id(7724);
     const str = formatted.name;
   }
 }
@@ -90,8 +90,8 @@ function getQuestByActivity(result, arg1) {
 }
 function questMatchesApplicationId(arg0, quest) {
   const _require = arg0;
-  const allApplicationIds = _require(7657).getAllApplicationIds(quest);
-  const obj = _require(7657);
+  const allApplicationIds = _require(7724).getAllApplicationIds(quest);
+  const obj = _require(7724);
   return null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
 }
 ({ DISCORD_APPLICATION_ID: closure_6, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: error, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_8 } = QuestsExperimentLocations);

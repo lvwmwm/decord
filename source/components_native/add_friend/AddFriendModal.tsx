@@ -1,21 +1,21 @@
-// Module ID: 13863
-// Function ID: 13864
+// Module ID: 13853
+// Function ID: 13854
 // Name: AddFriendModalScene
-// Dependencies: [32, 19, 17, 1921, 673, 12610, 21, 4481, 5479, 709, 12612, 4953, 695, 1234, 1501, 4731, 4325, 1233, 8291, 7315, 13864, 5579, 4477, 13865, 13867, 1627, 6940, 2]
+// Dependencies: [32, 19, 17, 1371, 1074, 12678, 21, 4560, 5524, 576, 12680, 4992, 1242, 1115, 1486, 4763, 4404, 1114, 8361, 7377, 13854, 5624, 4556, 13855, 13857, 1611, 7000, 2]
 // Exports: default
 
-// Module 13863 (AddFriendModalScene)
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+// Module 13853 (AddFriendModalScene)
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12610 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12678 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 const require = arg1;
 function AddFriendModalScene(onSkip) {
@@ -146,5 +146,5 @@ export default function AddFriendModal(arg0) {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback2(_require(6940).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback2(_require(7000).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

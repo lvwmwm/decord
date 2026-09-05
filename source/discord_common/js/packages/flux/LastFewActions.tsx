@@ -1,10 +1,10 @@
-// Module ID: 591
-// Function ID: 592
+// Module ID: 509
+// Function ID: 510
 // Name: add
 // Dependencies: [2]
 // Exports: add, clear, last, serialize
 
-// Module 591 (add)
+// Module 509 (add)
 import set from "set" /* 2 */;
 
 let closure_0 = [];

@@ -1,15 +1,15 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13091
+// Function ID: 13092
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7554, 1383, 684, 586, 7326, 1372, 2]
+// Dependencies: [32, 19, 7621, 1954, 1090, 504, 7388, 1943, 2]
 // Exports: default
 
-// Module 13023 (useWishlistSuggestionsDismissibleContent)
-import setDefault from "set" /* 684 */;
+// Module 13091 (useWishlistSuggestionsDismissibleContent)
+import setDefault from "set" /* 1090 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createUserWidgetFromServer" /* 7554 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_4 from "createUserWidgetFromServer" /* 7621 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 
 const require = arg1;
 let closure_6 = 90 * setDefault.Millis.DAY;

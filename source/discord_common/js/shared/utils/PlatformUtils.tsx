@@ -1,10 +1,10 @@
-// Module ID: 1235
-// Function ID: 1236
+// Module ID: 1116
+// Function ID: 1117
 // Name: PlatformTypes
 // Dependencies: [2]
 // Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isDesktop, isIOS, isLinux, isMac, isMacWeb, isOculusWeb, isWeb, isWindows, platformPrefersDeepLink, platformSupportsActivityJoin
 
-// Module 1235 (PlatformTypes)
+// Module 1116 (PlatformTypes)
 import set from "set" /* 2 */;
 
 let obj = { WINDOWS: "WINDOWS", OSX: "OSX", LINUX: "LINUX", WEB: "WEB" };

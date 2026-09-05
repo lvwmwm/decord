@@ -1,18 +1,18 @@
-// Module ID: 16639
-// Function ID: 16640
+// Module ID: 16716
+// Function ID: 16717
 // Name: InitialPinsScreen
-// Dependencies: [19, 11607, 7221, 12271, 7810, 7809, 673, 21, 586, 16569, 11606, 16565, 12290, 16608, 16573, 16572, 16632, 2]
+// Dependencies: [19, 11675, 7281, 12339, 7878, 7877, 1074, 21, 504, 16646, 11674, 16642, 12358, 16685, 16650, 16649, 16709, 2]
 
-// Module 16639 (InitialPinsScreen)
-import _modDef16632 from "module_16632" /* 16632 */;
+// Module 16716 (InitialPinsScreen)
+import _modDef16709 from "module_16709" /* 16709 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "handleChannelDelete" /* 11607 */;
-import { FetchState } from "handleChannelDelete" /* 11607 */;
-import closure_6 from "handleReaction" /* 7221 */;
-import closure_7 from "prototype" /* 12271 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
-import { SearchResultContentEntityTypes as closure_11 } from "SearchEntrypointAnalyticsLocations" /* 7809 */;
-import { SearchTypes } from "ME" /* 673 */;
+import closure_4 from "handleChannelDelete" /* 11675 */;
+import { FetchState } from "handleChannelDelete" /* 11675 */;
+import closure_6 from "handleReaction" /* 7281 */;
+import closure_7 from "prototype" /* 12339 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
+import { SearchResultContentEntityTypes as closure_11 } from "SearchEntrypointAnalyticsLocations" /* 7877 */;
+import { SearchTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -158,7 +158,7 @@ let c3 = importAllResult;
 const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
   searchContext = searchContext.searchContext;
   ({ tab, isFocused } = searchContext);
-  let obj = searchContext(586);
+  let obj = searchContext(504);
   const items = [closure_7];
   const items1 = [searchContext];
   if (!obj.useStateFromStores(items, () => closure_1_7.isInitialSearchQuery(searchContext), items1)) {
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
     obj[0] = searchContext;
     obj[1] = tab;
     obj[2] = isFocused;
-    let tmp5 = jsx(_modDef16632, { searchContext: null, tab: null, isFocused: null });
+    let tmp5 = jsx(_modDef16709, { searchContext: null, tab: null, isFocused: null });
   } else {
     obj = { searchContext: null, tab: null, isFocused: null };
     obj[0] = searchContext;

@@ -1,18 +1,18 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 7185
+// Function ID: 7186
 // Name: RoleDot
-// Dependencies: [19, 17, 1991, 1984, 673, 21, 4481, 709, 7126, 4166, 7129, 7130, 4193, 1233, 7127, 7135, 7144, 4477, 5084, 586, 7146, 7147, 2]
+// Dependencies: [19, 17, 2021, 2015, 1074, 21, 4560, 576, 7186, 1935, 7189, 7190, 4258, 1114, 7187, 7195, 7204, 4556, 5123, 504, 7206, 7207, 2]
 // Exports: default
 
-// Module 7125 (RoleDot)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 7185 (RoleDot)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 2015 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function RoleDot(color) {
@@ -134,7 +134,7 @@ class RoleItem {
 function RolesList(guildMemberRoleIds) {
   guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
   const guildId = guildMemberRoleIds.guildId;
-  let obj = guildMemberRoleIds(586);
+  let obj = guildMemberRoleIds(504);
   const items = [closure_6];
   const items1 = [guildMemberRoleIds, guildId];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -163,7 +163,7 @@ let result = require("set").fileFinishedImporting("modules/user_profile/native/U
 export default function UserProfileRolesCard(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
-  let obj = userId(586);
+  let obj = userId(504);
   const items = [closure_5];
   const items1 = [userId, guildId];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getMember(guildId, userId), items1);
@@ -177,15 +177,15 @@ export default function UserProfileRolesCard(userId) {
   let tmp4 = null;
   if (0 !== roles.length) {
     obj = { title: null, style: null, children: null };
-    const intl = tmp(1233).intl;
-    obj[0] = intl.string(tmp(1233).t["LPJmL/"]);
+    const intl = tmp(1114).intl;
+    obj[0] = intl.string(tmp(1114).t["LPJmL/"]);
     obj[1] = userId.style;
     obj = { guildId: null, guildMemberRoleIds: null };
     obj[0] = guildId;
     obj[1] = roles;
     obj[2] = callback(RolesList, obj);
-    tmp4 = callback(guildId(7147), obj);
-    const tmp7 = guildId(7147);
+    tmp4 = callback(guildId(7207), obj);
+    const tmp7 = guildId(7207);
   }
   return tmp4;
 };

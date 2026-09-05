@@ -1,13 +1,13 @@
-// Module ID: 12387
-// Function ID: 12388
-// Dependencies: [19, 4121, 1386, 11894, 673, 21, 586, 1219, 4708, 11257, 9759, 1305, 7279, 5475, 12380, 1233, 2]
+// Module ID: 12455
+// Function ID: 12456
+// Dependencies: [19, 4200, 1957, 11962, 1074, 21, 504, 1100, 4740, 11325, 9830, 1187, 7341, 5520, 12448, 1114, 2]
 
-// Module 12387
+// Module 12455
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "initialize" /* 4121 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import { TextAreaCta } from "TextAreaCta" /* 11894 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "initialize" /* 4200 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import { TextAreaCta } from "TextAreaCta" /* 11962 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
   channel = channel.channel;
   let guildId;
   guildId = channel.getGuildId();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_5];
   const items1 = [guildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -78,25 +78,25 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
   }
   if (type === constants.DIRECTORY_ENTRY) {
     obj = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-    const intl6 = tmp2(1233).intl;
-    obj[1] = intl6.string(tmp2(1233).t.G42YmG);
-    const intl7 = tmp2(1233).intl;
-    obj[2] = intl7.string(tmp2(1233).t.GlKb5i);
+    const intl6 = tmp2(1114).intl;
+    obj[1] = intl6.string(tmp2(1114).t.G42YmG);
+    const intl7 = tmp2(1114).intl;
+    obj[2] = intl7.string(tmp2(1114).t.GlKb5i);
     obj[3] = callback;
-    const intl8 = tmp2(1233).intl;
-    obj[4] = intl8.string(tmp2(1233).t.RLch70);
+    const intl8 = tmp2(1114).intl;
+    obj[4] = intl8.string(tmp2(1114).t.RLch70);
     obj[5] = callback2;
-    let tmp15Result = jsx(guildId(12380), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(12380);
+    let tmp15Result = jsx(guildId(12448), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(12448);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       obj = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl3 = tmp2(1233).intl;
-      obj[1] = intl3.string(tmp2(1233).t.Hl0Mqh);
+      const intl3 = tmp2(1114).intl;
+      obj[1] = intl3.string(tmp2(1114).t.Hl0Mqh);
       let stringResult;
       if (isLurking) {
-        const intl4 = tmp2(1233).intl;
-        stringResult = intl4.string(tmp2(1233).t.VJlc0S);
+        const intl4 = tmp2(1114).intl;
+        stringResult = intl4.string(tmp2(1114).t.VJlc0S);
       }
       obj[2] = stringResult;
       let tmp10;
@@ -104,21 +104,21 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
         tmp10 = callback2;
       }
       obj[3] = tmp10;
-      const intl5 = tmp2(1233).intl;
-      obj[4] = intl5.string(tmp2(1233).t["3aOv+h"]);
+      const intl5 = tmp2(1114).intl;
+      obj[4] = intl5.string(tmp2(1114).t["3aOv+h"]);
       obj[5] = callback1;
       obj1 = obj;
     } else {
       obj1 = { type: "button-action", message: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl = tmp2(1233).intl;
-      obj1[1] = intl.string(tmp2(1233).t.G42YmG);
-      const intl2 = tmp2(1233).intl;
-      obj1[2] = intl2.string(tmp2(1233).t.RLch70);
+      const intl = tmp2(1114).intl;
+      obj1[1] = intl.string(tmp2(1114).t.G42YmG);
+      const intl2 = tmp2(1114).intl;
+      obj1[2] = intl2.string(tmp2(1114).t.RLch70);
       obj1[3] = callback2;
     }
-    tmp15Result = jsx(guildId(12380), obj1);
+    tmp15Result = jsx(guildId(12448), obj1);
     const tmp15 = jsx;
-    const tmp17 = guildId(12380);
+    const tmp17 = guildId(12448);
   }
   return tmp15Result;
 });

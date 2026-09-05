@@ -1,14 +1,14 @@
-// Module ID: 5824
-// Function ID: 5825
+// Module ID: 5875
+// Function ID: 5876
 // Name: ControllerSpotIllustration
-// Dependencies: [21, 5542, 5825, 2]
+// Dependencies: [21, 5587, 5876, 2]
 // Exports: ControllerSpotIllustration
 
-// Module 5824 (ControllerSpotIllustration)
+// Module 5875 (ControllerSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5825 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5876 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ControllerSpotIllustration.native.tsx");

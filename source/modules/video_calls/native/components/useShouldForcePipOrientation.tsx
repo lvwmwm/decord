@@ -1,16 +1,16 @@
-// Module ID: 9418
-// Function ID: 9419
+// Module ID: 9489
+// Function ID: 9490
 // Name: useShouldForcePipOrientation
-// Dependencies: [1385, 4497, 1215, 4509, 4502, 9419, 586, 9405, 8262, 2]
+// Dependencies: [1956, 4576, 502, 1920, 4581, 9490, 504, 9476, 8332, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 9418 (useShouldForcePipOrientation)
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9419 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "getParticipants" /* 4497 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import { OrientationLockState } from "items3" /* 4509 */;
-import ParticipantTypes from "ParticipantTypes" /* 4502 */;
+// Module 9489 (useShouldForcePipOrientation)
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9490 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "getParticipants" /* 4576 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import { OrientationLockState } from "items3" /* 1920 */;
+import ParticipantTypes from "ParticipantTypes" /* 4581 */;
 
 const require = arg1;
 ({ isStreamParticipant: error, ParticipantTypes: closure_8 } = ParticipantTypes);
@@ -21,7 +21,7 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   let OrientationType = dependencyMap;
   const tmp = usePipVideoOrStreamDefault(channel.id);
   const items = [closure_4, closure_5];
-  const stateFromStores = channel(586).useStateFromStores(items, () => {
+  const stateFromStores = channel(504).useStateFromStores(items, () => {
     const participant = closure_1_4.getParticipant(channel.id, closure_1_5.getId());
     let tmp2 = null;
     if (null != participant) {
@@ -35,10 +35,10 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
     }
     return tmp2;
   });
-  let obj = channel(586);
+  let obj = channel(504);
   let obj2 = closure_5;
   const items1 = [closure_3, closure_4];
-  const stateFromStoresObject = channel(586).useStateFromStoresObject(items1, () => {
+  const stateFromStoresObject = channel(504).useStateFromStoresObject(items1, () => {
     let obj = closure_1_3;
     const currentEmbeddedActivity = closure_1_3.getCurrentEmbeddedActivity();
     const selectedParticipant = closure_1_4.getSelectedParticipant(channel.id);
@@ -82,17 +82,17 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != focusedEmbeddedActivityParticipant) {
     if (callback(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(8262).OrientationType.LANDSCAPE;
+        return tmp2(8332).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(8262).OrientationType;
+    OrientationType = tmp2(8332).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(8262).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8332).OrientationType.PORTRAIT;
     }
   }
 };

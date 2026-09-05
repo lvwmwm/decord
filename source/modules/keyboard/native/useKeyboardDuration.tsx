@@ -1,13 +1,13 @@
-// Module ID: 5535
-// Function ID: 5536
+// Module ID: 5580
+// Function ID: 5581
 // Name: getKeyboardDuration
-// Dependencies: [1495, 1234, 1496, 2]
+// Dependencies: [1480, 1115, 1481, 2]
 // Exports: getKeyboardDuration
 
-// Module 5535 (getKeyboardDuration)
+// Module 5580 (getKeyboardDuration)
 import set from "set" /* 2 */;
-import context from "context" /* 1495 */;
-import computeEntryStateDefault from "computeEntryState" /* 1496 */;
+import context from "context" /* 1480 */;
+import computeEntryStateDefault from "computeEntryState" /* 1481 */;
 
 const result = set.fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");
 

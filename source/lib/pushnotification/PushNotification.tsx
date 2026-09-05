@@ -1,13 +1,13 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9687
+// Function ID: 9688
 // Name: NativeModules
-// Dependencies: [17, 1234, 9617, 9618, 9619, 2]
+// Dependencies: [17, 1115, 9688, 9689, 9690, 2]
 
-// Module 9616 (NativeModules)
+// Module 9687 (NativeModules)
 import set from "set" /* 2 */;
-import RNCPushNotificationIOSDefault from "RNCPushNotificationIOS" /* 9617 */;
-import enforcing from "enforcing" /* 9618 */;
-import openNotificationSettingsDefault from "openNotificationSettings" /* 9619 */;
+import RNCPushNotificationIOSDefault from "RNCPushNotificationIOS" /* 9688 */;
+import enforcing from "enforcing" /* 9689 */;
+import openNotificationSettingsDefault from "openNotificationSettings" /* 9690 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;

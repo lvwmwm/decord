@@ -1,11 +1,11 @@
-// Module ID: 4671
-// Function ID: 4672
+// Module ID: 4703
+// Function ID: 4704
 // Name: initialize
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 4671 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 4703 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = {};
 const PersistedStore = initializeDefault.PersistedStore;

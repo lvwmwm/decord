@@ -1,17 +1,17 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14757
+// Function ID: 14758
 // Name: AGE_GROUP_CONFIRM_ROW_PROPS
-// Dependencies: [8341, 8343, 1233, 2918, 4741, 14607, 2]
+// Dependencies: [8411, 8413, 1114, 2946, 4773, 14682, 2]
 // Exports: useShowAccountStatusAgeGroupRow, useShowAssignedAdultAgeGroupRow
 
-// Module 14682 (AGE_GROUP_CONFIRM_ROW_PROPS)
+// Module 14757 (AGE_GROUP_CONFIRM_ROW_PROPS)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 2918 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8343 */;
-import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14607 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 2946 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8411 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8413 */;
+import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14682 */;
 
 let result = set.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupScreenRowProps.tsx");
 

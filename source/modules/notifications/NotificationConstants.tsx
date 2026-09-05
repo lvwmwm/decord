@@ -1,9 +1,9 @@
-// Module ID: 4133
-// Function ID: 4134
+// Module ID: 4212
+// Function ID: 4213
 // Name: AccountNotificationFlags
 // Dependencies: [2]
 
-// Module 4133 (AccountNotificationFlags)
+// Module 4212 (AccountNotificationFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/notifications/NotificationConstants.tsx");

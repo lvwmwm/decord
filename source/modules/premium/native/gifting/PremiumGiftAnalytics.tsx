@@ -1,12 +1,12 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11221
+// Function ID: 11222
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 673, 10628, 10592, 1234, 695, 1233, 10739, 2]
+// Dependencies: [19, 1074, 10699, 10663, 1115, 1242, 1114, 10808, 2]
 // Exports: default
 
-// Module 11153 (PremiumGiftAnalytics)
+// Module 11221 (PremiumGiftAnalytics)
 import closure_3 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");

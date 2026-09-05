@@ -1,12 +1,12 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11877
+// Function ID: 11878
 // Name: useUserIsConsideredAdult
-// Dependencies: [1921, 586, 2]
+// Dependencies: [1371, 504, 2]
 // Exports: default
 
-// Module 11809 (useUserIsConsideredAdult)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
+// Module 11877 (useUserIsConsideredAdult)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useUserIsConsideredAdult.tsx");

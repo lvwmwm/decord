@@ -1,28 +1,28 @@
-// Module ID: 16825
-// Function ID: 16826
+// Module ID: 16903
+// Function ID: 16904
 // Name: SettingHeaderBadge
-// Dependencies: [32, 19, 17, 1995, 14616, 673, 21, 7844, 4481, 709, 15330, 1296, 4477, 1499, 13338, 16826, 6935, 644, 7102, 7122, 14618, 7408, 14619, 6940, 14086, 4197, 5084, 1233, 16327, 16827, 14507, 16828, 38, 2]
+// Dependencies: [32, 19, 17, 2025, 14691, 1074, 21, 7913, 4560, 576, 15406, 1178, 4556, 1484, 13410, 16904, 6995, 563, 7162, 7182, 14693, 7475, 14694, 7000, 14172, 4262, 5123, 1114, 16403, 16905, 14582, 16906, 38, 2]
 
-// Module 16825 (SettingHeaderBadge)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import SettingsBadgeType from "SettingsBadgeType" /* 15330 */;
+// Module 16903 (SettingHeaderBadge)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 15406 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1995 */;
-import closure_7 from "zustandStore" /* 14616 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "_getSystemLocale" /* 2025 */;
+import closure_7 from "zustandStore" /* 14691 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7844 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7913 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingsBadgeType.SettingsBadgeType.BETA) {
     const obj = { size: null };
-    obj[0] = tmp(1296).BetaSizes.SMALL;
-    return callback(tmp(1296).BetaTag, obj);
+    obj[0] = tmp(1178).BetaSizes.SMALL;
+    return callback(tmp(1178).BetaTag, obj);
   }
 }
 function LeftAlignedHeaderTitle(children) {

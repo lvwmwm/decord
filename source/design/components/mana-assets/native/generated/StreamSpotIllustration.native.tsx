@@ -1,14 +1,14 @@
-// Module ID: 6430
-// Function ID: 6431
+// Module ID: 6487
+// Function ID: 6488
 // Name: StreamSpotIllustration
-// Dependencies: [21, 5542, 6431, 2]
+// Dependencies: [21, 5587, 6488, 2]
 // Exports: StreamSpotIllustration
 
-// Module 6430 (StreamSpotIllustration)
+// Module 6487 (StreamSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6431 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6488 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/StreamSpotIllustration.native.tsx");

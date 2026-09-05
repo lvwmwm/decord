@@ -1,12 +1,12 @@
-// Module ID: 14518
-// Function ID: 14519
+// Module ID: 14593
+// Function ID: 14594
 // Name: createPendingImage
-// Dependencies: [6929, 1394, 2]
+// Dependencies: [6989, 1369, 2]
 // Exports: createPendingImage
 
-// Module 14518 (createPendingImage)
+// Module 14593 (createPendingImage)
 import set from "set" /* 2 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 6929 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 6989 */;
 
 const result = set.fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");
 
@@ -17,14 +17,14 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
   }
   ({ imageUri, staticImageUri, description, originalAsset, originalMd5 } = assetOrigin);
   if (AssetOriginTypes.AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
-    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: "00" };
+    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: "citt\u00E0" };
     obj[0] = NEW_ASSET;
     obj[1] = imageUri;
     obj[2] = staticImageUri;
     obj[3] = description;
     obj[5] = originalMd5;
     return obj;
-  } else if (tmp3(6929).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
+  } else if (tmp3(6989).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
     obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: null, originalMd5: null };
     obj[0] = NEW_ASSET;
     obj[1] = imageUri;
@@ -33,13 +33,13 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
     obj[4] = originalAsset;
     obj[5] = originalMd5;
     return obj;
-  } else if (tmp3(6929).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
-    obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: true };
+  } else if (tmp3(6989).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
+    obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: false };
     obj1[0] = NEW_ASSET;
     obj1[1] = imageUri;
     obj1[3] = originalAsset;
     return obj1;
   } else {
-    tmp3(1394).assertNever(NEW_ASSET);
+    tmp3(1369).assertNever(NEW_ASSET);
   }
 };

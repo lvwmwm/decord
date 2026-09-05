@@ -1,25 +1,25 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 15006
+// Function ID: 15007
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4473, 5404, 21, 4481, 709, 4482, 4485, 586, 1627, 4218, 4205, 14932, 14933, 9898, 2]
+// Dependencies: [19, 17, 4552, 5444, 21, 4560, 576, 4561, 4564, 504, 1611, 4296, 4271, 15007, 15008, 9969, 2]
 // Exports: default
 
-// Module 14931 (BountiesScrollPromptFooterContent)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4482 */;
-import timingNone from "timingNone" /* 4485 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9898 */;
-import apexExperiment from "apexExperiment" /* 14932 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 14933 */;
+// Module 15006 (BountiesScrollPromptFooterContent)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4561 */;
+import timingNone from "timingNone" /* 4564 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 9969 */;
+import apexExperiment from "apexExperiment" /* 15007 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 15008 */;
 import closure_3 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5444 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function BountiesScrollPromptFooterContent(zIndex) {
@@ -38,7 +38,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
     }
     return tmp2;
   }, items);
-  let obj = zIndex(586);
+  let obj = zIndex(504);
   const items1 = [closure_5];
   const stateFromStores = obj.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   const tmp6 = useSafeAreaInsetsDefault();
@@ -53,12 +53,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   if (stateFromStores) {
     str = "halt";
   }
-  obj[1] = closure_7(zIndex(4205).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
-  const items5 = [closure_7(_modDef4218.View, obj), ];
+  obj[1] = closure_7(zIndex(4271).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  const items5 = [closure_7(_modDef4296.View, obj), ];
   const items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(_modDef4218.View, { style: items6, onLayout: onContentLayout, children });
+  items5[1] = closure_7(_modDef4296.View, { style: items6, onLayout: onContentLayout, children });
   obj[2] = items5;
-  return closure_8(_modDef4218.View, obj);
+  return closure_8(_modDef4296.View, obj);
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {

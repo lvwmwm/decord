@@ -1,13 +1,13 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 15871
+// Function ID: 15872
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [1908, 15793, 673, 586, 2]
+// Dependencies: [1979, 15869, 1074, 504, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
-// Module 15795 (useUserSafetySettingsSelectedGuildId)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15793 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 15871 (useUserSafetySettingsSelectedGuildId)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15869 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: c3, useUserSafetySettingsSelectedGuildStore: c4 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
@@ -22,7 +22,7 @@ export const useAllServersOptionSelected = function useAllServersOptionSelected(
 export const useIsSelectedGuildAHub = function useIsSelectedGuildAHub() {
   const selectedGuildId = callback().selectedGuildId;
   const items = [closure_2];
-  const stateFromStores = selectedGuildId(586).useStateFromStores(items, () => closure_1_2.getGuild(selectedGuildId));
+  const stateFromStores = selectedGuildId(504).useStateFromStores(items, () => closure_1_2.getGuild(selectedGuildId));
   let flag;
   if (stateFromStores != null) {
     const features = stateFromStores.features;

@@ -1,14 +1,14 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7887
+// Function ID: 7888
 // Name: _formatMessageCountLabel
-// Dependencies: [1232, 11, 1233, 2]
+// Dependencies: [1113, 11, 1114, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 7818 (_formatMessageCountLabel)
+// Module 7887 (_formatMessageCountLabel)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import AbortCodes from "AbortCodes" /* 1232 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import AbortCodes from "AbortCodes" /* 1113 */;
 
 function _formatMessageCountLabel(count, iTS3Xe, id) {
   let str = "0";

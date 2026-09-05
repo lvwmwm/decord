@@ -1,14 +1,14 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12426
+// Function ID: 12427
 // Name: MAX_SUGGESTIONS_LARGE
-// Dependencies: [32, 19, 4473, 673, 21, 1296, 4218, 4935, 4205, 4482, 586, 12323, 12359, 12360, 9242, 2]
+// Dependencies: [32, 19, 4552, 1074, 21, 1178, 4296, 4974, 4271, 4561, 504, 12391, 12427, 12428, 9313, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 12358 (MAX_SUGGESTIONS_LARGE)
+// Module 12426 (MAX_SUGGESTIONS_LARGE)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { UpsellTypes } from "ME" /* 673 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { UpsellTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -97,7 +97,7 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
   closure_1 = cleanUp;
   dependencyMap = closure_6;
   closure_3 = onOccupiedHeightChange;
-  const sharedValue = _require(4218).useSharedValue(0);
+  const sharedValue = _require(4296).useSharedValue(0);
   const items = [transitionState, sharedValue, cleanUp, closure_6, onOccupiedHeightChange];
   const effect = sharedValue.useEffect(() => {
     if (transitionState === transitionState(table[8]).TransitionStates.YEETED) {

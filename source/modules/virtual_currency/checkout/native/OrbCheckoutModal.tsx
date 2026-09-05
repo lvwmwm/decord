@@ -1,18 +1,18 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 13152
+// Function ID: 13153
 // Name: OrbCheckoutModalContent
-// Dependencies: [19, 673, 502, 21, 13085, 10973, 4934, 13086, 11212, 10739, 695, 13087, 4731, 8351, 8352, 11858, 38, 511, 1233, 5579, 11860, 2]
+// Dependencies: [19, 1074, 1085, 21, 13153, 11042, 4973, 13154, 11280, 10808, 1242, 13155, 4763, 8421, 8422, 11926, 38, 1256, 1114, 5624, 11928, 2]
 // Exports: default
 
-// Module 13084 (OrbCheckoutModalContent)
-import Stack from "Stack" /* 4934 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10973 */;
-import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 13085 */;
-import OrbCheckoutErrorCard from "OrbCheckoutErrorCard" /* 13086 */;
+// Module 13152 (OrbCheckoutModalContent)
+import Stack from "Stack" /* 4973 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11042 */;
+import useOrbCheckoutModalContextProvider from "useOrbCheckoutModalContextProvider" /* 13153 */;
+import OrbCheckoutErrorCard from "OrbCheckoutErrorCard" /* 13154 */;
 import closure_3 from "noop" /* 19 */;
 import noop from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
-import { InternalPaymentGateways } from "sum" /* 502 */;
+import ME from "ME" /* 1074 */;
+import { InternalPaymentGateways } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -25,7 +25,7 @@ function OrbCheckoutModalContent(orbBalance) {
   if (tmp6) {
     obj = { error: null };
     obj[0] = orbRedemptionError.message;
-    tmp6 = callback5(tmp(13086).OrbCheckoutErrorCard, obj);
+    tmp6 = callback5(tmp(13154).OrbCheckoutErrorCard, obj);
   }
   const items = [tmp6, , ];
   if (product == null) {
@@ -54,7 +54,7 @@ function OrbCheckoutModalScreen(startTime) {
   dependencyMap = undefined;
   let virtualCurrencyBalance;
   let callback;
-  let obj = startTime(13085);
+  let obj = startTime(13153);
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   const onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
   startTime = onRedeemVirtualCurrency;
@@ -65,7 +65,7 @@ function OrbCheckoutModalScreen(startTime) {
   virtualCurrencyBalance = undefined;
   callback = undefined;
   let callback2;
-  obj1 = startTime(13085);
+  obj1 = startTime(13153);
   const orbCheckoutModalContext1 = obj1.useOrbCheckoutModalContext();
   skuId = orbCheckoutModalContext1.skuId;
   const loadId = orbCheckoutModalContext1.loadId;
@@ -76,7 +76,7 @@ function OrbCheckoutModalScreen(startTime) {
   callback = orbProductContext;
   const items = [loadId, skuId, analyticsLocations, orbProductContext];
   const tmp5 = callback4(() => {
-    let obj = { load_id: dependencyMap, application_id: startTime(11212).get1PShopApplicationIdForSKU(skuId), location_stack: virtualCurrencyBalance, sku_id: skuId, currency: closure_1_9.DISCORD_ORB, payment_gateway: closure_1_10.VIRTUAL_CURRENCY };
+    let obj = { load_id: dependencyMap, application_id: startTime(11280).get1PShopApplicationIdForSKU(skuId), location_stack: virtualCurrencyBalance, sku_id: skuId, currency: closure_1_9.DISCORD_ORB, payment_gateway: closure_1_10.VIRTUAL_CURRENCY };
     let tmp2 = null != closure_4;
     if (tmp2) {
       const orbPriceAmount = tmp.orbPriceAmount;
@@ -98,28 +98,28 @@ function OrbCheckoutModalScreen(startTime) {
       const merged = Object.assign(closure_5);
       obj.has_saved_payment_source = false;
       obj.continue_session_initial_step = null;
-      const result = startTime(10739).trackPaymentFlowStartedAnalyticsAndCTP(obj);
-      const obj11 = startTime(10739);
+      const result = startTime(10808).trackPaymentFlowStartedAnalyticsAndCTP(obj);
+      const obj11 = startTime(10808);
     } else if (arg0 === tmp2.PAYMENT_FLOW_COMPLETED) {
       obj = {};
       const merged1 = Object.assign(closure_5);
       obj.duration_ms = diff;
-      skuId(695).track(tmp2.PAYMENT_FLOW_COMPLETED, obj);
-      const obj9 = skuId(695);
+      skuId(1242).track(tmp2.PAYMENT_FLOW_COMPLETED, obj);
+      const obj9 = skuId(1242);
     } else if (arg0 === tmp2.PAYMENT_FLOW_SUCCEEDED) {
       obj1 = {};
       const merged2 = Object.assign(closure_5);
       obj1.duration_ms = diff;
-      skuId(695).track(tmp2.PAYMENT_FLOW_SUCCEEDED, obj1);
-      const obj7 = skuId(695);
+      skuId(1242).track(tmp2.PAYMENT_FLOW_SUCCEEDED, obj1);
+      const obj7 = skuId(1242);
     } else if (arg0 === tmp2.PAYMENT_FLOW_CANCELED) {
-      let obj4 = skuId(695);
+      let obj4 = skuId(1242);
       const obj2 = {};
       const merged3 = Object.assign(closure_5);
       obj2.duration_ms = diff;
       obj4.track(tmp2.PAYMENT_FLOW_CANCELED, obj2);
     } else {
-      obj = skuId(695);
+      obj = skuId(1242);
       const obj3 = {};
       const merged4 = Object.assign(closure_5);
       obj3.duration_ms = diff;
@@ -135,7 +135,7 @@ function OrbCheckoutModalScreen(startTime) {
     }
   }, items1);
   dependencyMap = tmp7;
-  virtualCurrencyBalance = startTime(13087).useVirtualCurrencyBalance();
+  virtualCurrencyBalance = startTime(13155).useVirtualCurrencyBalance();
   const tmp9 = callback(virtualCurrencyBalance);
   callback = tmp9;
   const items2 = [tmp7];
@@ -158,11 +158,11 @@ function OrbCheckoutModalScreen(startTime) {
     current = virtualCurrencyBalance;
   }
   const items4 = [tmp7, virtualCurrencyBalance, onRedeemVirtualCurrency];
-  let obj3 = startTime(13087);
+  let obj3 = startTime(13155);
   const tmp6 = callback3;
   obj = { children: null };
   obj = { children: callback5(OrbCheckoutModalContent, { orbBalance: current }) };
-  const items5 = [callback5(startTime(8352).ModalContent, obj), ];
+  const items5 = [callback5(startTime(8422).ModalContent, obj), ];
   obj1 = {
     children: callback5(OrbCheckoutModalFooter, {
       onPress: callback3(() => {
@@ -176,9 +176,9 @@ function OrbCheckoutModalScreen(startTime) {
       }, items4)
     })
   };
-  items5[1] = callback5(startTime(11858).ModalFooter, obj1);
+  items5[1] = callback5(startTime(11926).ModalFooter, obj1);
   obj[0] = items5;
-  return callback6(startTime(8351).ModalScreen, obj);
+  return callback6(startTime(8421).ModalScreen, obj);
 }
 let result = require("set").fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx");
 

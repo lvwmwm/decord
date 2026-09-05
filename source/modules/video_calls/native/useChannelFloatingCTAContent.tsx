@@ -1,13 +1,13 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 17058
+// Function ID: 17059
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 4532, 4557, 644, 9143, 1372, 2]
+// Dependencies: [19, 1908, 4583, 563, 9214, 1943, 2]
 // Exports: default
 
-// Module 16980 (useChannelFloatingCTAContent)
+// Module 17058 (useChannelFloatingCTAContent)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_5 from "createRTCConnection" /* 4557 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_5 from "createRTCConnection" /* 4583 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useChannelFloatingCTAContent.tsx");

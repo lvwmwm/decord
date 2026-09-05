@@ -1,12 +1,12 @@
-// Module ID: 7997
-// Function ID: 7998
+// Module ID: 8066
+// Function ID: 8067
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 7997 (apexExperiment)
+// Module 8066 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

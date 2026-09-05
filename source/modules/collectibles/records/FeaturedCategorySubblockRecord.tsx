@@ -1,11 +1,11 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 7575
+// Function ID: 7576
 // Name: fromServer
-// Dependencies: [7509, 2]
+// Dependencies: [7576, 2]
 
-// Module 7508 (fromServer)
+// Module 7575 (fromServer)
 import set from "set" /* 2 */;
-import FeaturedSubblockType from "FeaturedSubblockType" /* 7509 */;
+import FeaturedSubblockType from "FeaturedSubblockType" /* 7576 */;
 
 let prototype;
 prototype = function FeaturedCategorySubblockRecord(unpublished_at) {

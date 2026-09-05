@@ -1,12 +1,12 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11754
+// Function ID: 11755
 // Name: result
-// Dependencies: [684, 11, 2]
+// Dependencies: [1090, 11, 2]
 // Exports: default
 
-// Module 11686 (result)
+// Module 11754 (result)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import setDefault from "set" /* 684 */;
+import setDefault from "set" /* 1090 */;
 
 const result = 2 * setDefault.Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");

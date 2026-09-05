@@ -1,16 +1,16 @@
-// Module ID: 9391
-// Function ID: 9392
+// Module ID: 9462
+// Function ID: 9463
 // Name: XboxInstallAlert
-// Dependencies: [19, 9162, 21, 4481, 709, 4955, 1233, 1296, 9373, 1234, 4190, 2]
+// Dependencies: [19, 9233, 21, 4560, 576, 4994, 1114, 1178, 9444, 1115, 4255, 2]
 // Exports: default
 
-// Module 9391 (XboxInstallAlert)
+// Module 9462 (XboxInstallAlert)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9162 */;
+import ThemesDefault from "Themes" /* 576 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9233 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -25,22 +25,22 @@ export default function XboxInstallAlert(arg0) {
   const _require = callback();
   let obj = {};
   const merged = Object.assign(arg0);
-  const intl = _require(1233).intl;
-  obj.title = intl.string(_require(1233).t["12Kx2v"]);
-  const intl2 = _require(1233).intl;
-  obj.body = intl2.string(_require(1233).t.msZW3j);
-  const intl3 = _require(1233).intl;
-  obj.confirmText = intl3.string(_require(1233).t["n+VrqG"]);
-  const intl4 = _require(1233).intl;
-  obj.cancelText = intl4.string(_require(1233).t.kYaBOg);
+  const intl = _require(1114).intl;
+  obj.title = intl.string(_require(1114).t["12Kx2v"]);
+  const intl2 = _require(1114).intl;
+  obj.body = intl2.string(_require(1114).t.msZW3j);
+  const intl3 = _require(1114).intl;
+  obj.confirmText = intl3.string(_require(1114).t["n+VrqG"]);
+  const intl4 = _require(1114).intl;
+  obj.cancelText = intl4.string(_require(1114).t.kYaBOg);
   obj.fillCancelText = true;
   obj.renderConfirmRightIcon = function renderConfirmRightIcon() {
     return closure_1_5(lib(closure_1_2[7]).Icon, { source: closure_1_1(closure_1_2[8]), style: lib.externalLinkIcon });
   };
   obj.onConfirm = function onConfirm() {
-    const obj = lib(1234);
-    const isAndroidResult = lib(1234).isAndroid();
-    const openURL = callback(4190).openURL;
+    const obj = lib(1115);
+    const isAndroidResult = lib(1115).isAndroid();
+    const openURL = callback(4255).openURL;
     if (isAndroidResult) {
       openURL(closure_3);
     } else {

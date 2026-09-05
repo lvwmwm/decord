@@ -1,15 +1,15 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6978
+// Function ID: 6979
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4481, 709, 5579, 2]
+// Dependencies: [19, 21, 4560, 576, 5624, 2]
 // Exports: default
 
-// Module 6918 (AuthNavbarPlaceholder)
+// Module 6978 (AuthNavbarPlaceholder)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import HeaderBackImage from "HeaderBackImage" /* 5579 */;
+import ThemesDefault from "Themes" /* 576 */;
+import HeaderBackImage from "HeaderBackImage" /* 5624 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

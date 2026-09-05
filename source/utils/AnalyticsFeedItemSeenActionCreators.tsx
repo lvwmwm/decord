@@ -1,12 +1,12 @@
-// Module ID: 7830
-// Function ID: 7831
+// Module ID: 7899
+// Function ID: 7900
 // Name: markAnalyticsFeedItemSeen
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 7830 (markAnalyticsFeedItemSeen)
+// Module 7899 (markAnalyticsFeedItemSeen)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("utils/AnalyticsFeedItemSeenActionCreators.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7501
+// Function ID: 7502
 // Name: hasMemberSupplemental
-// Dependencies: [7435, 2]
+// Dependencies: [7502, 2]
 // Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 7434 (hasMemberSupplemental)
+// Module 7501 (hasMemberSupplemental)
 import set from "set" /* 2 */;
 
 let closure_2 = {};

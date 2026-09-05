@@ -1,25 +1,25 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 9568
+// Function ID: 9569
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 9439, 9440, 673, 4509, 4383, 8228, 1235, 9445, 9446, 1205, 9498, 9479, 4866, 1233, 1394, 706, 1228, 511, 2]
+// Dependencies: [5, 17, 9510, 9511, 1074, 1920, 4465, 8298, 1116, 9516, 9517, 1232, 9569, 9550, 4905, 1114, 1369, 573, 1109, 1256, 2]
 
-// Module 9497 (postMessageToWebView)
-import v1 from "v1" /* 511 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import _modDef4866 from "module_4866" /* 4866 */;
-import enforcingDefault from "enforcing" /* 9445 */;
-import leaveFrameDefault from "leaveFrame" /* 9498 */;
+// Module 9568 (postMessageToWebView)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1109 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import v1 from "v1" /* 1256 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import _modDef4905 from "module_4905" /* 4905 */;
+import enforcingDefault from "enforcing" /* 9516 */;
+import leaveFrameDefault from "leaveFrame" /* 9569 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9439 */;
-import { isLaunched } from "FrameLayoutModes" /* 9440 */;
-import { ComponentActions } from "ME" /* 673 */;
-import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4509 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
-import WebView from "WebView" /* 8228 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
+import closure_4 from "map" /* 9510 */;
+import { isLaunched } from "FrameLayoutModes" /* 9511 */;
+import { ComponentActions } from "ME" /* 1074 */;
+import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 1920 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4465 */;
+import WebView from "WebView" /* 8298 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
 
 require = arg1;
 function postMessageToWebView() {
@@ -174,7 +174,7 @@ class FramesNativeManager extends tmp5 {
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   ({ code, message } = reason);
-  let obj = _modDef4866;
+  let obj = _modDef4905;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });

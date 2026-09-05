@@ -1,19 +1,19 @@
-// Module ID: 13733
-// Function ID: 13734
+// Module ID: 1907
+// Function ID: 1908
 // Name: noop
-// Dependencies: [703, 4532, 4545, 684, 4585, 581, 3, 4561, 13734, 1234, 38, 2]
+// Dependencies: [1347, 1908, 4585, 1090, 4618, 559, 3, 4589, 14079, 1115, 38, 2]
 
-// Module 13733 (noop)
+// Module 1907 (noop)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import failsDefault from "fails" /* 581 */;
-import setDefault from "set" /* 684 */;
-import set from "set" /* 1234 */;
-import sleep from "sleep" /* 4561 */;
-import onDefault from "on" /* 4585 */;
-import closure_3 from "refreshSourceMapCookie" /* 703 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4532 */;
-import DesktopSources from "DesktopSources" /* 4545 */;
+import failsDefault from "fails" /* 559 */;
+import setDefault from "set" /* 1090 */;
+import set from "set" /* 1115 */;
+import sleep from "sleep" /* 4589 */;
+import onDefault from "on" /* 4618 */;
+import closure_3 from "refreshSourceMapCookie" /* 1347 */;
+import closure_4 from "_detectH265HardwareDecode" /* 1908 */;
+import DesktopSources from "DesktopSources" /* 4585 */;
 
 require = arg1;
 function noop() {
@@ -76,13 +76,13 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  obj = self(4561);
+  obj = self(4589);
   self.connectionStartTime = obj.now();
   self.helloTimeout = setTimeout(() => {
     self.handleClose(false, 0, "The connection timed out after " + self(closure_1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: closure_4.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(13734).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(14079).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
@@ -379,7 +379,7 @@ prototype["handleHello"] = function handleHello(d) {
     tmp = require;
     const tmp2 = dependencyMap;
   }
-  const diff = tmp4(4561).now() - self.connectionStartTime;
+  const diff = tmp4(4589).now() - self.connectionStartTime;
   ({ logger, heartbeatInterval } = self);
   if (heartbeatInterval == null) {
     heartbeatInterval = "??";

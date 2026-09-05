@@ -1,11 +1,11 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16063
+// Function ID: 16064
 // Name: findActivityWithMostParticipants
-// Dependencies: [4130, 2]
+// Dependencies: [4209, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 15985 (findActivityWithMostParticipants)
-import closure_0 from "markAllUserIdListsStale" /* 4130 */;
+// Module 16063 (findActivityWithMostParticipants)
+import closure_0 from "markAllUserIdListsStale" /* 4209 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");
 

@@ -1,25 +1,25 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 16909
+// Function ID: 16910
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1385, 4497, 9414, 1215, 4532, 673, 4502, 21, 4481, 1296, 709, 9419, 586, 9405, 9404, 4735, 9418, 5087, 9421, 8262, 9519, 9523, 9533, 9552, 9560, 9463, 9520, 9417, 10018, 4218, 4482, 5637, 16832, 1627, 2]
+// Dependencies: [32, 19, 17, 1956, 4576, 9485, 502, 1908, 1074, 4581, 21, 4560, 1178, 576, 9490, 504, 9476, 9475, 4767, 9489, 5126, 9492, 8332, 9590, 9594, 9604, 9623, 9631, 9535, 9591, 9488, 10089, 4296, 4561, 5682, 16910, 1611, 2]
 // Exports: default
 
-// Module 16831 (PictureInPictureGlobal)
-import ThemesDefault from "Themes" /* 709 */;
-import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9417 */;
+// Module 16909 (PictureInPictureGlobal)
+import ThemesDefault from "Themes" /* 576 */;
+import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9488 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "participantFromServer" /* 1385 */;
-import closure_9 from "getParticipants" /* 4497 */;
-import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9414 */;
-import closure_11 from "fetchFingerprint" /* 1215 */;
-import closure_12 from "_detectH265HardwareDecode" /* 4532 */;
-import { PictureInPicturePositions } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+import closure_8 from "participantFromServer" /* 1956 */;
+import closure_9 from "getParticipants" /* 4576 */;
+import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9485 */;
+import closure_11 from "fetchFingerprint" /* 502 */;
+import closure_12 from "_detectH265HardwareDecode" /* 1908 */;
+import { PictureInPicturePositions } from "ME" /* 1074 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import Button from "Button" /* 1296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import Button from "Button" /* 1178 */;
 
 const require = arg1;
 let c4 = importAllResult;

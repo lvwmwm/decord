@@ -1,16 +1,16 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15926
+// Function ID: 15927
 // Name: VisualEffectViewOverrideOverlay_
-// Dependencies: [19, 17, 4480, 707, 21, 4481, 709, 4218, 4935, 4939, 8523, 15851, 15853, 15854, 10827, 5635, 586, 15614, 2]
+// Dependencies: [19, 17, 4559, 574, 21, 4560, 576, 4296, 4974, 4978, 8593, 15927, 15929, 15930, 10896, 5680, 504, 15690, 2]
 
-// Module 15850 (VisualEffectViewOverrideOverlay_)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15926 (VisualEffectViewOverrideOverlay_)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getUserAgnosticState" /* 4480 */;
-import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 707 */;
+import closure_4 from "getUserAgnosticState" /* 4559 */;
+import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 574 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

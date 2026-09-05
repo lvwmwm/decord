@@ -1,15 +1,15 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12364
+// Function ID: 12365
 // Name: setAutocompleteOptions
-// Dependencies: [1386, 673, 9764, 4125, 5474, 586, 706, 2]
+// Dependencies: [1957, 1074, 9835, 4204, 5519, 504, 573, 2]
 
-// Module 12296 (setAutocompleteOptions)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5474 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 9764 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 12364 (setAutocompleteOptions)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5519 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 9835 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 let closure_6 = [];
@@ -173,7 +173,7 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(dispatch
         }
       };
       let tmp4 = sortByMatchScoreDefault;
-      let items = [obj(9764).AutocompleterResultTypes.USER];
+      let items = [obj(9835).AutocompleterResultTypes.USER];
       tmp4 = new tmp4(onAutocompleterResultsChange, items, 50);
       obj.autocompleter = tmp4;
       const autocompleter = obj.autocompleter;

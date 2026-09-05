@@ -1,14 +1,14 @@
-// Module ID: 5818
-// Function ID: 5819
+// Module ID: 5869
+// Function ID: 5870
 // Name: CompassSpotIllustration
-// Dependencies: [21, 5542, 5819, 2]
+// Dependencies: [21, 5587, 5870, 2]
 // Exports: CompassSpotIllustration
 
-// Module 5818 (CompassSpotIllustration)
+// Module 5869 (CompassSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5819 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5870 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CompassSpotIllustration.native.tsx");

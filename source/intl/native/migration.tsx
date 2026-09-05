@@ -1,14 +1,14 @@
-// Module ID: 14098
-// Function ID: 14099
+// Module ID: 14184
+// Function ID: 14185
 // Name: IntlLink
-// Dependencies: [19, 21, 4481, 709, 1355, 4190, 4192, 1296, 2]
+// Dependencies: [19, 21, 4560, 576, 4279, 4255, 4257, 1178, 2]
 // Exports: IntlLink
 
-// Module 14098 (IntlLink)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14184 (IntlLink)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyles((arg0) => {
@@ -39,6 +39,6 @@ export const IntlLink = function IntlLink(children) {
     }
   }
   const tmp = target;
-  const tmp3 = callback(React.useContext(target(1355).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1296).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(1355).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  const tmp3 = callback(React.useContext(target(4279).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1178).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(4279).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 };

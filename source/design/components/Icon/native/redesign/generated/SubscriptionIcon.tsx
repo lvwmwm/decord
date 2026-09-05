@@ -1,14 +1,14 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14987
+// Function ID: 14988
 // Name: SubscriptionIcon
-// Dependencies: [19, 21, 709, 4196, 14913, 2]
+// Dependencies: [19, 21, 576, 4261, 14988, 2]
 // Exports: SubscriptionIcon
 
-// Module 14912 (SubscriptionIcon)
+// Module 14987 (SubscriptionIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14913 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 14988 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

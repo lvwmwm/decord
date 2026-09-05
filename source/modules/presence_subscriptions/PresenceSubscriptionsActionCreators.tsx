@@ -1,12 +1,12 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11475
+// Function ID: 11476
 // Name: subscribe
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: subscribe
 
-// Module 11407 (subscribe)
+// Module 11475 (subscribe)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/presence_subscriptions/PresenceSubscriptionsActionCreators.tsx");
 

@@ -1,27 +1,27 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17635
+// Function ID: 17636
 // Name: HeaderSection
-// Dependencies: [19, 17, 7068, 17530, 673, 5369, 21, 4481, 709, 5368, 12, 6550, 4477, 1233, 4934, 5084, 1994, 5640, 5643, 17556, 4936, 11136, 4448, 17558, 2008, 17559, 17561, 586, 8523, 17544, 2]
+// Dependencies: [19, 17, 7128, 17610, 1074, 5408, 21, 4560, 576, 5407, 12, 6610, 4556, 1114, 4973, 5123, 2024, 5685, 5688, 17636, 4975, 11204, 4527, 17638, 1896, 17639, 17641, 504, 8593, 17624, 2]
 // Exports: default
 
-// Module 17555 (HeaderSection)
+// Module 17635 (HeaderSection)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import combinedDefault from "combined" /* 1994 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6550 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11136 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import combinedDefault from "combined" /* 2024 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6610 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11204 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getRoleMemberCount" /* 7068 */;
-import closure_6 from "handleSetSection" /* 17530 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
-import OperatorTypes from "OperatorTypes" /* 5369 */;
+import closure_5 from "getRoleMemberCount" /* 7128 */;
+import closure_6 from "handleSetSection" /* 17610 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
+import OperatorTypes from "OperatorTypes" /* 5408 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function HeaderSection(arg0) {
@@ -54,10 +54,10 @@ function HeaderSection(arg0) {
     obj3[1] = clearConnections;
     obj3[2] = locked;
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-critical", children: null };
-    const intl3 = tmp10(1233).intl;
-    obj4[2] = intl3.string(tmp10(1233).t.ntW1cc);
-    obj3[3] = tmp13(tmp10(4477).Text, obj4);
-    tmp13Result = tmp13(tmp10(5084).PressableOpacity, obj3);
+    const intl3 = tmp10(1114).intl;
+    obj4[2] = intl3.string(tmp10(1114).t.ntW1cc);
+    obj3[3] = tmp13(tmp10(4556).Text, obj4);
+    tmp13Result = tmp13(tmp10(5123).PressableOpacity, obj3);
   }
   const obj5 = { children: null };
   const obj6 = { children: null };
@@ -65,7 +65,7 @@ function HeaderSection(arg0) {
   obj1[1] = items2;
   const items3 = [closure_11(View, obj1), ];
   const obj7 = { variant: "text-sm/medium", children: null };
-  const intl4 = tmp10(1233).intl;
+  const intl4 = tmp10(1114).intl;
   const obj8 = { helpdeskArticleUrl: combinedDefault.getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
   obj7[1] = intl4.format(getSystemLocale.t.q5f7tK, obj8);
   items3[1] = callback(Text.Text, obj7);
@@ -77,7 +77,7 @@ function HeaderSection(arg0) {
 function AndOrRadios(setPendingRoleConfigurations) {
   ({ locked, roleConnectionConfigurations } = setPendingRoleConfigurations);
   importDefault = setPendingRoleConfigurations.setPendingRoleConfigurations;
-  if (roleConnectionConfigurations(5368).ConnectionConfigurationRuleOperator.OR === roleConnectionConfigurations(5368).ConnectionConfigurationRuleOperator.AND) {
+  if (roleConnectionConfigurations(5407).ConnectionConfigurationRuleOperator.OR === roleConnectionConfigurations(5407).ConnectionConfigurationRuleOperator.AND) {
     if (0 === roleConnectionConfigurations.length) {
       let items = [];
     } else {
@@ -90,30 +90,30 @@ function AndOrRadios(setPendingRoleConfigurations) {
     let obj = applyDefault;
     const values = Object.values(obj.groupBy(roleConnectionConfigurations, (connectionType) => "" + connectionType.connectionType + ":" + connectionType.applicationId));
     obj = { title: null, value: null, onChange: null, hasIcons: false, children: null };
-    const intl = tmp(1233).intl;
-    obj[0] = intl.string(tmp(1233).t.Xs7PHX);
+    const intl = tmp(1114).intl;
+    obj[0] = intl.string(tmp(1114).t.Xs7PHX);
     obj[1] = setPendingRoleConfigurations.currentOperator;
     obj[2] = function onChange(arg0) {
       callback(roleConnectionConfigurations, arg0);
     };
     obj = { value: null, label: null, disabled: null };
-    obj[0] = tmp(5368).ConnectionConfigurationRuleOperator.OR;
-    const intl2 = tmp(1233).intl;
-    obj[1] = intl2.string(tmp(1233).t.W3iY58);
+    obj[0] = tmp(5407).ConnectionConfigurationRuleOperator.OR;
+    const intl2 = tmp(1114).intl;
+    obj[1] = intl2.string(tmp(1114).t.W3iY58);
     let tmp11 = locked;
     if (!locked) {
       tmp11 = values.length < 2;
     }
     obj[2] = tmp11;
-    const items2 = [closure_10(tmp(5643).TableRadioRow, obj), ];
+    const items2 = [closure_10(tmp(5688).TableRadioRow, obj), ];
     obj1 = { value: null, label: null, disabled: null };
-    obj1[0] = tmp(5368).ConnectionConfigurationRuleOperator.AND;
-    const intl3 = tmp(1233).intl;
-    obj1[1] = intl3.string(tmp(1233).t.gHXS9A);
+    obj1[0] = tmp(5407).ConnectionConfigurationRuleOperator.AND;
+    const intl3 = tmp(1114).intl;
+    obj1[1] = intl3.string(tmp(1114).t.gHXS9A);
     obj1[2] = locked;
-    items2[1] = closure_10(tmp(5643).TableRadioRow, obj1);
+    items2[1] = closure_10(tmp(5688).TableRadioRow, obj1);
     obj[4] = items2;
-    return closure_11(tmp(5640).TableRadioGroup, obj);
+    return closure_11(tmp(5685).TableRadioGroup, obj);
   }
 }
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
@@ -206,7 +206,7 @@ function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integratio
   obj1 = { spacing: ThemesDefault.space.PX_24, children: null };
   arr = Array.from(map.values());
   obj1[1] = arr.map((configurationItems) => closure_1_10(callback(locked[19]), { configurationItems, onConfigurationChange: handleConfigurationChange, locked, integrations: closure_3 }, configurationItems[0].configuration.connectionType + ":" + configurationItems[0].index));
-  return callback(_require(4934).Stack, obj1);
+  return callback(_require(4973).Stack, obj1);
 }
 function AddConnectionButton(locked) {
   ({ handleConnectionTapped: require, excludedConnections: importDefault, excludedApplications: dependencyMap, roleId: closure_3, integrations: View, gameApplicationIds: closure_5 } = locked);
@@ -376,7 +376,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   obj3 = {
     handleConnectionTapped(connectionType) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessible", operator: "bm", value: 1090584578 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessible", operator: "assign", value: 1090584578 };
       obj[2] = arg1;
       items.push(obj);
       if (AND === guild(stateFromStoresArray[9]).ConnectionConfigurationRuleOperator.AND) {

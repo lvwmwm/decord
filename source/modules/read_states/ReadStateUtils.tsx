@@ -1,13 +1,13 @@
-// Module ID: 9774
-// Function ID: 9775
+// Module ID: 9845
+// Function ID: 9846
 // Name: getHasImportantUnread
-// Dependencies: [4496, 4709, 4710, 586, 2]
+// Dependencies: [4575, 4741, 4742, 504, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 9774 (getHasImportantUnread)
-import closure_2 from "generateOldThreadCutoff" /* 4496 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+// Module 9845 (getHasImportantUnread)
+import closure_2 from "generateOldThreadCutoff" /* 4575 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
@@ -22,7 +22,7 @@ export const getHasImportantUnread = function getHasImportantUnread(channel) {
 export const useHasImportantUnread = function useHasImportantUnread(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let hasUnreadResult = closure_1_2.hasUnread(id.id);
     if (hasUnreadResult) {
       hasUnreadResult = closure_1_3.resolveUnreadSetting(id) === closure_1_4.ALL_MESSAGES;

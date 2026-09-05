@@ -1,11 +1,11 @@
-// Module ID: 12322
-// Function ID: 12323
+// Module ID: 12390
+// Function ID: 12391
 // Name: isMentionAnchorValid
-// Dependencies: [32, 19, 10191, 2]
+// Dependencies: [32, 19, 10262, 2]
 // Exports: default
 
-// Module 12322 (isMentionAnchorValid)
-import AutocompleteFormDivider from "AutocompleteFormDivider" /* 10191 */;
+// Module 12390 (isMentionAnchorValid)
+import AutocompleteFormDivider from "AutocompleteFormDivider" /* 10262 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 
@@ -88,7 +88,7 @@ export default function useMentionAnchor(arr) {
           }
         }
         tmp19 = tmp22;
-        obj5 = _require(10191);
+        obj5 = _require(10262);
       }
       if (null != tmp19) {
         obj = { kind: "pending", anchor: null, seenText: null };

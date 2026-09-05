@@ -1,27 +1,27 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7541
+// Function ID: 7542
 // Name: openCollectiblesShop
-// Dependencies: [5, 4480, 1995, 7475, 7490, 7491, 7492, 7493, 7497, 7477, 7503, 7504, 675, 673, 7518, 7519, 4336, 706, 7520, 7521, 7523, 527, 4379, 7277, 7522, 7487, 7524, 7525, 2]
+// Dependencies: [5, 4559, 2025, 7542, 7557, 7558, 7559, 7560, 7564, 7544, 7570, 7571, 1076, 1074, 7585, 7586, 4418, 573, 7587, 7588, 7590, 1272, 4461, 7339, 7589, 7554, 7591, 7592, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 7474 (openCollectiblesShop)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7487 */;
-import pushLayer from "pushLayer" /* 7520 */;
+// Module 7541 (openCollectiblesShop)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4418 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7554 */;
+import pushLayer from "pushLayer" /* 7587 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getUserAgnosticState" /* 4480 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7475 */;
-import { addDebugLog } from "useCollectiblesDebugStore" /* 7490 */;
-import closure_8 from "map" /* 7491 */;
-import closure_9 from "items" /* 7492 */;
-import { CollectiblesCategoriesRecord as closure_10, CollectiblesMarketingsRecord as closure_11, CollectiblesShopHomeRecord as closure_14 } from "fromServer" /* 7493 */;
-import closure_12 from "fromServer" /* 7477 */;
-import closure_13 from "fromServer" /* 7503 */;
-import { CollectiblesMobileShopScreen as closure_15 } from "items" /* 675 */;
-import ME from "ME" /* 673 */;
-import getMarketingBySurface from "getMarketingBySurface" /* 7518 */;
+import closure_4 from "getUserAgnosticState" /* 4559 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7542 */;
+import { addDebugLog } from "useCollectiblesDebugStore" /* 7557 */;
+import closure_8 from "map" /* 7558 */;
+import closure_9 from "items" /* 7559 */;
+import { CollectiblesCategoriesRecord as closure_10, CollectiblesMarketingsRecord as closure_11, CollectiblesShopHomeRecord as closure_14 } from "fromServer" /* 7560 */;
+import closure_12 from "fromServer" /* 7544 */;
+import closure_13 from "fromServer" /* 7570 */;
+import { CollectiblesMobileShopScreen as closure_15 } from "items" /* 1076 */;
+import ME from "ME" /* 1074 */;
+import getMarketingBySurface from "getMarketingBySurface" /* 7585 */;
 import "map";
 
 require = arg1;
@@ -688,8 +688,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            obj2 = callback(7277);
-            const aPIError = new callback(4379).APIError(callback);
+            obj2 = callback(7339);
+            const aPIError = new callback(4461).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -784,8 +784,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            obj2 = callback(7277);
-            const aPIError = new callback(4379).APIError(callback);
+            obj2 = callback(7339);
+            const aPIError = new callback(4461).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -1332,7 +1332,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4336).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4418).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {

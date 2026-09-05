@@ -1,10 +1,10 @@
-// Module ID: 4110
-// Function ID: 4111
+// Module ID: 4189
+// Function ID: 4190
 // Name: getEmbeddedActivityLocationChannelId
 // Dependencies: [2]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
-// Module 4110 (getEmbeddedActivityLocationChannelId)
+// Module 4189 (getEmbeddedActivityLocationChannelId)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");

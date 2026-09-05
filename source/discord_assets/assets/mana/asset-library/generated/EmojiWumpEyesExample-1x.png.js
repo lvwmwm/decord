@@ -1,9 +1,9 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11976
+// Function ID: 11977
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11908 (metadata)
+// Module 11976 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiWumpEyesExample-1x.png.js");

@@ -1,24 +1,24 @@
-// Module ID: 1390
-// Function ID: 1391
+// Module ID: 1961
+// Function ID: 1962
 // Name: createChannelRecord
-// Dependencies: [1391, 673, 1393, 1394, 503, 12, 1395, 1396, 1397, 1398, 1399, 1400, 1401, 11, 2]
+// Dependencies: [1962, 1074, 1964, 1369, 1086, 12, 1965, 1966, 1967, 1968, 1384, 1969, 1437, 11, 2]
 // Exports: castChannelRecord, createChannelRecordFromInvite, createChannelRecordFromServer, getAccessPermissions, getBasicAccessPermissions, isChannelChatInSidebar, isChannelMainAreaUploadAllowed, isChannelThreadsForcedOpenedInFullView, isGuildChannelType, isGuildReadableType, isGuildSelectableChannelType, isGuildTextChannelType, isGuildVocalChannelOrVocalThreadType, isGuildVocalChannelType, isMultiUserDM, isPrivate, isReadableType, isTextChannel, isThread, isVocalThreadType, isVoiceChannel
 
-// Module 1390 (createChannelRecord)
+// Module 1961 (createChannelRecord)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import Permissions from "Permissions" /* 1395 */;
-import set31 from "set" /* 1396 */;
-import set32 from "set" /* 1397 */;
-import set33 from "set" /* 1398 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import exact from "exact" /* 1400 */;
-import privDefault from "priv" /* 1401 */;
-import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import ME from "ME" /* 673 */;
-import { ChannelFlags } from "set" /* 1393 */;
-import importAllResult from "fromString" /* 503 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import privDefault from "priv" /* 1437 */;
+import Permissions from "Permissions" /* 1965 */;
+import set31 from "set" /* 1966 */;
+import set32 from "set" /* 1967 */;
+import set33 from "set" /* 1968 */;
+import exact from "exact" /* 1969 */;
+import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import ME from "ME" /* 1074 */;
+import { ChannelFlags } from "set" /* 1964 */;
+import importAllResult from "fromString" /* 1086 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -638,7 +638,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
   }
 }
 UnknownChannelRecord["fromServer"] = function fromServer(application_id) {
-  obj = { application_id: application_id.application_id, appliedTags: application_id.applied_tags, availableTags: null, bitrate_: null, defaultAutoArchiveDuration: null, defaultForumLayout: null, defaultReactionEmoji: null, defaultSortOrder: null, defaultTagSetting: null, defaultThreadRateLimitPerUser: null, flags_: null, gameId: null, guild_id: null, icon: null, iconEmoji: null, id: null, isMessageRequest: null, isMessageRequestTimestamp: null, isSpam: null, lastMessageId: null, lastNonMessageActivityTimestamp: null, lastPinTimestamp: null, member: null, memberCount: null, memberIdsPreview: null, memberListId: null, messageCount: null, name: null, nicks: null, nsfw_: null, originChannelId: null, ownerId: null, parent_id: null, parentChannelThreadType: "fill", permissionOverwrites_: true, position_: true, rateLimitPerUser_: true, rawRecipients: true, recipients: true, recipientFlags: true, rtcRegion: "D", safetyWarnings: "DD", blockedUserWarningDismissed: "validate", template: null, themeColor: "\u{1F939}\u200D\u2640\uFE0F", threadMetadata: true, topic_: 9, totalMessageSent: 306, type: null, userLimit_: "\u{1F6D2}", version: 9, videoQualityMode: 937, linkedLobby: "parse", hdStreamingUntil: null, hdStreamingBuyerId: "\u{1F939}\u200D\u2642\uFE0F", voiceHangout: true };
+  obj = { application_id: application_id.application_id, appliedTags: application_id.applied_tags, availableTags: null, bitrate_: null, defaultAutoArchiveDuration: null, defaultForumLayout: null, defaultReactionEmoji: null, defaultSortOrder: null, defaultTagSetting: null, defaultThreadRateLimitPerUser: null, flags_: null, gameId: null, guild_id: null, icon: null, iconEmoji: null, id: null, isMessageRequest: null, isMessageRequestTimestamp: null, isSpam: null, lastMessageId: null, lastNonMessageActivityTimestamp: null, lastPinTimestamp: null, member: null, memberCount: null, memberIdsPreview: null, memberListId: null, messageCount: null, name: null, nicks: null, nsfw_: null, originChannelId: null, ownerId: null, parent_id: null, parentChannelThreadType: "fill", permissionOverwrites_: true, position_: true, rateLimitPerUser_: true, rawRecipients: true, recipients: true, recipientFlags: true, rtcRegion: "D", safetyWarnings: "DD", blockedUserWarningDismissed: null, template: null, themeColor: null, threadMetadata: null, topic_: null, totalMessageSent: null, type: null, userLimit_: null, version: null, videoQualityMode: null, linkedLobby: null, hdStreamingUntil: null, hdStreamingBuyerId: null, voiceHangout: null };
   if (null == application_id.available_tags) {
     obj[2] = undefined;
     ({ bitrate: obj[3], default_auto_archive_duration: obj[4], default_forum_layout: obj[5] } = application_id);
@@ -743,7 +743,7 @@ UnknownChannelRecord["fromServer"] = function fromServer(application_id) {
     }
     obj[48] = UNKNOWN;
     ({ user_limit: obj[49], version: obj[50], video_quality_mode: obj[51], linked_lobby: obj[52], hd_streaming_until: obj[53], hd_streaming_buyer_id: obj[54], voice_hangout: obj[55] } = application_id);
-    return obj3(1400).dangerouslyCast(obj, UnknownChannelRecord);
+    return obj3(1969).dangerouslyCast(obj, UnknownChannelRecord);
   } else {
     const available_tags = application_id.available_tags;
     if (null == available_tags) {
@@ -835,7 +835,7 @@ GuildVocalChannelRecord["fromServer"] = function fromServer(application_id) {
   if (tmp7 == null) {
     tmp7 = UnknownChannelRecord;
   }
-  return obj(1400).dangerouslyCast(obj, tmp7);
+  return obj(1969).dangerouslyCast(obj, tmp7);
 };
 class GuildTextualChannelRecord extends ChannelRecordBase {
   constructor(arg0) {
@@ -910,7 +910,7 @@ GuildTextualChannelRecord["fromServer"] = function fromServer(application_id) {
   if (tmp7 == null) {
     tmp7 = UnknownChannelRecord;
   }
-  return obj(1400).dangerouslyCast(obj, tmp7);
+  return obj(1969).dangerouslyCast(obj, tmp7);
 };
 class GuildAnnouncementChannelRecord extends GuildTextualChannelRecord {
 }
@@ -1033,7 +1033,7 @@ ForumChannelRecord["fromServer"] = function fromServer(available_tags) {
     }
     obj[24] = GUILD_TEXT;
     obj[25] = available_tags.version;
-    return obj1(1400).dangerouslyCast(obj, ForumChannelRecord);
+    return obj1(1969).dangerouslyCast(obj, ForumChannelRecord);
   }
 };
 class IdAsNumberCache {

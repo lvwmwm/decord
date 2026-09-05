@@ -1,12 +1,12 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10911
+// Function ID: 10912
 // Name: useRecipientsLabel
-// Dependencies: [19, 1921, 1233, 586, 1394, 4325, 2]
+// Dependencies: [19, 1371, 1114, 504, 1369, 4404, 2]
 // Exports: useRecipientsLabel
 
-// Module 10842 (useRecipientsLabel)
+// Module 10911 (useRecipientsLabel)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/useRecipientsLabel.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/useRec
 export const useRecipientsLabel = function useRecipientsLabel(channel) {
   const _require = channel;
   const items = [closure_4];
-  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(504).useStateFromStoresArray(items, () => {
     const recipients = channel.recipients;
     const mapped = recipients.map((arg0) => user.getUser(arg0));
     const found = mapped.filter(channel(closure_1_2[4]).isNotNullish);

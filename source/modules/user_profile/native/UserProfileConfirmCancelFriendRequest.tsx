@@ -1,13 +1,13 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12621
+// Function ID: 12622
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 4871, 1233, 4871, 2]
+// Dependencies: [19, 21, 4910, 1114, 4910, 2]
 // Exports: default
 
-// Module 12553 (UserProfileConfirmCancelFriendRequest)
+// Module 12621 (UserProfileConfirmCancelFriendRequest)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4871 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4910 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 4277
-// Function ID: 4278
+// Module ID: 4355
+// Function ID: 4356
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4277 (metadata)
+// Module 4355 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointCard.riv.js");

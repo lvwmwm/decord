@@ -1,19 +1,19 @@
-// Module ID: 8559
-// Function ID: 8560
+// Module ID: 8629
+// Function ID: 8630
 // Name: _submitHamReportForFirstDM
-// Dependencies: [5, 1391, 4131, 1934, 673, 8560, 8561, 8563, 1426, 4708, 2]
+// Dependencies: [5, 1962, 4210, 1385, 1074, 8630, 8631, 8633, 1971, 4740, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8559 (_submitHamReportForFirstDM)
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4708 */;
-import ReportNames from "ReportNames" /* 8560 */;
-import _showReportModal from "_showReportModal" /* 8561 */;
+// Module 8629 (_submitHamReportForFirstDM)
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4740 */;
+import ReportNames from "ReportNames" /* 8630 */;
+import _showReportModal from "_showReportModal" /* 8631 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_5 from "hasFlag" /* 4131 */;
-import closure_6 from "createdAt" /* 1934 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_5 from "hasFlag" /* 4210 */;
+import closure_6 from "createdAt" /* 1385 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 function _submitHamReportForFirstDM() {
@@ -72,9 +72,9 @@ function _submitReportForInappropriateConversationSafetyAlert() {
       callback2 = dependencyMap;
       c5 = 1;
       obj1 = { name: null, record: null };
-      obj1[0] = callback(8560).ReportNames.MESSAGE;
+      obj1[0] = callback(8630).ReportNames.MESSAGE;
       obj1[1] = callback;
-      yield callback(8563).submitHeadlessReport(obj1, { variant: "safety_alerts_headless_v1" });
+      yield callback(8633).submitHeadlessReport(obj1, { variant: "safety_alerts_headless_v1" });
       if (1 === tmp7) {
         c5 = 0;
         if (callback2 != null) {
@@ -181,7 +181,7 @@ export const showReportModalForGuildScheduledEvent = function showReportModalFor
   obj = { report_type: ReportNames.ReportNames.GUILD_SCHEDULED_EVENT };
   const merged = Object.assign(obj);
   obj1.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, obj);
-  obj = { name: tmp(8560).ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
+  obj = { name: tmp(8630).ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
   obj1 = { onSubmit: arg1 };
   _showReportModal.showReportModal(obj, {}, obj1);
 };
@@ -259,7 +259,7 @@ export const showUnauthenticatedReportModalForTida = function showUnauthenticate
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   let obj = collectGuildAnalyticsMetadataDefault;
   obj = { report_type: ReportNames.UnauthenticatedReportNames.MESSAGE };
-  const merged = Object.assign({ message_id: "left", channel_id: "call" });
+  const merged = Object.assign({ message_id: "hash", channel_id: "call" });
   obj.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, obj);
   const tmp = new closure_5({});
   obj = { name: ReportNames.UnauthenticatedReportNames.MESSAGE, record: tmp };

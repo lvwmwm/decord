@@ -1,13 +1,13 @@
-// Module ID: 17443
-// Function ID: 17444
+// Module ID: 17523
+// Function ID: 17524
 // Name: getErrorMessageFromErrorCode
-// Dependencies: [673, 1233, 2]
+// Dependencies: [1074, 1114, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 17443 (getErrorMessageFromErrorCode)
+// Module 17523 (getErrorMessageFromErrorCode)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ME from "ME" /* 1074 */;
 
 ({ AbortCodes: obj1, GuildFeatures: c3 } = ME);
 const result = set.fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLUtils.tsx");

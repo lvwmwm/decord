@@ -1,11 +1,11 @@
-// Module ID: 1212
-// Function ID: 1213
+// Module ID: 1239
+// Function ID: 1240
 // Name: UnitType
-// Dependencies: [1213, 2]
+// Dependencies: [1240, 2]
 
-// Module 1212 (UnitType)
+// Module 1239 (UnitType)
 import set from "set" /* 2 */;
-import LOGGED_OUT_USER_ID_SENTINEL from "LOGGED_OUT_USER_ID_SENTINEL" /* 1213 */;
+import LOGGED_OUT_USER_ID_SENTINEL from "LOGGED_OUT_USER_ID_SENTINEL" /* 1240 */;
 
 const obj = { User: 1, [1]: "User", Installation: 2, [2]: "Installation", Guild: 3, [3]: "Guild" };
 const result = set.fileFinishedImporting("../discord_common/js/packages/apex/ApexTypes.tsx");

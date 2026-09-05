@@ -1,17 +1,17 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7774
+// Function ID: 7775
 // Name: collectThreadMetadata
-// Dependencies: [7702, 7244, 1390, 4120, 673, 1219, 11, 2]
+// Dependencies: [7770, 7306, 1961, 4199, 1074, 1100, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7706 (collectThreadMetadata)
+// Module 7774 (collectThreadMetadata)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import transitionTo from "transitionTo" /* 1219 */;
-import closure_3 from "updateFromGuild" /* 7702 */;
-import closure_4 from "updateState" /* 7244 */;
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+import transitionTo from "transitionTo" /* 1100 */;
+import closure_3 from "updateFromGuild" /* 7770 */;
+import closure_4 from "updateState" /* 7306 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1961 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");

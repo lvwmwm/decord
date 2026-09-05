@@ -1,13 +1,13 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 7524
+// Function ID: 7525
 // Name: items
-// Dependencies: [32, 1991, 7430, 2]
+// Dependencies: [32, 2021, 7497, 2]
 // Exports: createDefaultMemberSafetyPaginationState, getSearchChunkLimit
 
-// Module 7457 (items)
-import result2 from "result" /* 7430 */;
+// Module 7524 (items)
+import result2 from "result" /* 7497 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "trackCommunicationDisabled" /* 2021 */;
 
 require = arg1;
 let items = [12, 25, 50, 100];

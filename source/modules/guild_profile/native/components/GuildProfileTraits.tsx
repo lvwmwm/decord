@@ -1,18 +1,18 @@
-// Module ID: 9131
-// Function ID: 9132
+// Module ID: 9202
+// Function ID: 9203
 // Name: TraitEmoji
-// Dependencies: [19, 17, 21, 4481, 709, 1431, 4138, 7070, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 1396, 4217, 7130, 4556, 2]
 // Exports: default
 
-// Module 9131 (TraitEmoji)
-import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
-import Text from "Text" /* 4477 */;
+// Module 9202 (TraitEmoji)
+import ThemesDefault from "Themes" /* 576 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4217 */;
+import Text from "Text" /* 4556 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function TraitEmoji(emoji) {
@@ -33,7 +33,7 @@ function TraitEmoji(emoji) {
     obj[0] = emojiURL;
     obj[1] = getEmojiUnavailableReasonDefault.isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
     obj[2] = tmp.emojiImage;
-    return callback(tmp5(7070), obj);
+    return callback(tmp5(7130), obj);
   }
 }
 function GuildProfileTraitView(trait) {

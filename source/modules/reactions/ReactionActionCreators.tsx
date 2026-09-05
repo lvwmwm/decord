@@ -1,21 +1,21 @@
-// Module ID: 7696
-// Function ID: 7697
+// Module ID: 7764
+// Function ID: 7765
 // Name: checkReactionResponse
-// Dependencies: [5, 1215, 1386, 4743, 673, 684, 4865, 1233, 1228, 706, 7695, 527, 7697, 695, 4708, 1362, 7715, 4138, 2]
+// Dependencies: [5, 502, 1957, 4781, 1074, 1090, 4904, 1114, 1109, 573, 7763, 1272, 7765, 1242, 4740, 4411, 7783, 4217, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7696 (checkReactionResponse)
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import setDefault2 from "set" /* 4865 */;
-import ReactionTypes2 from "ReactionTypes" /* 7695 */;
+// Module 7764 (checkReactionResponse)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1109 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import setDefault2 from "set" /* 4904 */;
+import ReactionTypes2 from "ReactionTypes" /* 7763 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "reinjectEphemerals" /* 4743 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "reinjectEphemerals" /* 4781 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function checkReactionResponse(arg0, arg1, isRetry) {
@@ -161,7 +161,7 @@ function _getReactors() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              if (c5 === callback(7695).ReactionTypes.VOTE) {
+              if (c5 === callback(7763).ReactionTypes.VOTE) {
                 let tmp28 = (function makeURLForVoteReactors(c0, c1, c2) {
                   let name = c2.id;
                   if (name == null) {
@@ -177,7 +177,7 @@ function _getReactors() {
                 tmp28 = callback3(obj2);
               }
               closure_6 = tmp28;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
               obj3[0] = closure_6;
               const obj4 = { limit: null, after: null, type: null };
@@ -185,7 +185,7 @@ function _getReactors() {
               obj4[1] = c4;
               obj4[2] = c5;
               obj3[1] = obj4;
-              let obj5 = callback(527);
+              let obj5 = callback(1272);
               obj3[3] = obj5.rejectWithMigratedError();
               const value = HTTP.get(obj3);
               c3 = 2;
@@ -202,12 +202,12 @@ function _getReactors() {
           } else {
             closure_7 = arg1;
             let tmp14;
-            if (c5 === callback(7695).ReactionTypes.VOTE) {
+            if (c5 === callback(7763).ReactionTypes.VOTE) {
               body = closure_7.body.users;
             } else {
               body = closure_7.body;
             }
-            tmp14 = callback2(706);
+            tmp14 = callback2(573);
             obj = { type: "MESSAGE_REACTION_ADD_USERS", channelId: null, messageId: null, users: null, emoji: null, reactionType: null };
             obj[1] = callback;
             obj[2] = callback2;
@@ -316,14 +316,14 @@ function _addReaction() {
               }
               if (!isRetry) {
                 if (callback6(callback, callback2, dependencyMap, burst)) {
-                  let obj5 = callback2(4865);
+                  let obj5 = callback2(4904);
                   let obj2 = { title: null, body: null, confirmText: null };
-                  let intl = callback(1233).intl;
-                  obj2[0] = intl.string(callback(1233).t["uaUU/g"]);
-                  const intl2 = callback(1233).intl;
-                  obj2[1] = intl2.string(callback(1233).t.psMorl);
-                  const intl3 = callback(1233).intl;
-                  obj2[2] = intl3.string(callback(1233).t["NX+WJN"]);
+                  let intl = callback(1114).intl;
+                  obj2[0] = intl.string(callback(1114).t["uaUU/g"]);
+                  const intl2 = callback(1114).intl;
+                  obj2[1] = intl2.string(callback(1114).t.psMorl);
+                  const intl3 = callback(1114).intl;
+                  obj2[2] = intl3.string(callback(1114).t["NX+WJN"]);
                   obj5.show(obj2);
                   c8 = 3;
                   return { value: "HermesInternal", done: null };
@@ -353,7 +353,7 @@ function _addReaction() {
               c7 = 3;
               c8 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(7697).unarchiveThreadIfNecessary(callback);
+              obj6[0] = callback2(7765).unarchiveThreadIfNecessary(callback);
               return obj6;
             }
           } else if (arg0 === 1) {
@@ -365,7 +365,7 @@ function _addReaction() {
             obj7[0] = arg1;
             return obj7;
           } else {
-            let HTTP = callback(527).HTTP;
+            let HTTP = callback(1272).HTTP;
             let put = HTTP.put;
             let obj8 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
             const obj9 = { channelId: null, messageId: null, emoji: null, userId: "@me" };
@@ -375,7 +375,7 @@ function _addReaction() {
             obj8[0] = callback4(obj9);
             obj = { location: null, type: null };
             obj[0] = MESSAGE;
-            let fn = callback(7695).ReactionTypes;
+            let fn = callback(7763).ReactionTypes;
             if (burst) {
               let NORMAL = fn.BURST;
             } else {
@@ -383,7 +383,7 @@ function _addReaction() {
             }
             obj[1] = NORMAL;
             obj8[1] = obj;
-            obj = callback(527);
+            obj = callback(1272);
             obj8[3] = obj.rejectWithMigratedError();
             HTTP = put(obj8);
             put = HTTP.then(() => {
@@ -786,7 +786,7 @@ function _removeReaction() {
               obj2[0] = c4;
               obj2[1] = burst;
               callback3("MESSAGE_REACTION_REMOVE", callback, callback2, dependencyMap, obj2);
-              let obj5 = callback2(7697);
+              let obj5 = callback2(7765);
               c4 = 2;
               c5 = 1;
               let obj3 = { value: null, done: false };
@@ -802,7 +802,7 @@ function _removeReaction() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            let HTTP = callback(527).HTTP;
+            let HTTP = callback(1272).HTTP;
             let del = HTTP.del;
             let tmp16 = closure_14;
             obj5 = { channelId: null, messageId: null, emoji: null, userId: null, type: null, useTypeEndpoint: true };
@@ -814,7 +814,7 @@ function _removeReaction() {
               callback2 = "@me";
             }
             obj5[3] = callback2;
-            let ReactionTypes = callback(7695).ReactionTypes;
+            let ReactionTypes = callback(7763).ReactionTypes;
             if (burst) {
               let NORMAL = ReactionTypes.BURST;
             } else {
@@ -828,7 +828,7 @@ function _removeReaction() {
             tmp16 = burst;
             obj6[1] = burst;
             obj[1] = obj6;
-            obj5 = callback(527);
+            obj5 = callback(1272);
             obj[3] = obj5.rejectWithMigratedError();
             HTTP = del(obj);
             del = HTTP.then(() => {
@@ -856,7 +856,7 @@ function _removeReaction() {
                 closure_0 = arg0;
                 c3 = 0;
                 c4 = 0;
-                return (/* F125331 */ function*() { ... })();
+                return (/* F125617 */ function*() { ... })();
               });
               return function() {
                 const self = this;

@@ -1,16 +1,16 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17925
+// Function ID: 17926
 // Name: onTimersDelayCallback
-// Dependencies: [673, 3, 695, 633, 1920, 2]
+// Dependencies: [1074, 3, 1242, 551, 1356, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 17845 (onTimersDelayCallback)
+// Module 17925 (onTimersDelayCallback)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import debounceDefault from "debounce" /* 633 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import setTimeoutAll from "setTimeout" /* 1920 */;
+import debounceDefault from "debounce" /* 551 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import setTimeoutAll from "setTimeout" /* 1356 */;
 
 function onTimersDelayCallback(timerId, expectedDelay, actualDelay, executionTime) {
   let obj = { timerId, expectedDelay, actualDelay, executionTime };

@@ -1,13 +1,13 @@
-// Module ID: 10351
-// Function ID: 10352
+// Module ID: 10422
+// Function ID: 10423
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [32, 19, 673, 10352, 7616, 586, 2]
+// Dependencies: [32, 19, 1074, 10423, 7683, 504, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 10351 (useHorizontalAutocompleteResults)
+// Module 10422 (useHorizontalAutocompleteResults)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ AutoCompleteResultTypes: c4, ChannelTypes: c5 } = ME);

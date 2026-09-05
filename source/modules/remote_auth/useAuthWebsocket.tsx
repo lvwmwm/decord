@@ -1,15 +1,15 @@
-// Module ID: 15913
-// Function ID: 15914
+// Module ID: 15989
+// Function ID: 15990
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 673, 3, 15912, 581, 6904, 13559, 15914, 1228, 527, 6534, 15916, 2]
+// Dependencies: [5, 32, 19, 1074, 3, 15988, 559, 6964, 13633, 15990, 1109, 1272, 6593, 15992, 2]
 // Exports: useAuthWebsocket
 
-// Module 15913 (useAuthWebsocket)
+// Module 15989 (useAuthWebsocket)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 ({ ComponentActions: closure_6, Endpoints: error } = ME);

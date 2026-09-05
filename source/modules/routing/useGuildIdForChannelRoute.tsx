@@ -1,14 +1,14 @@
-// Module ID: 4493
-// Function ID: 4494
+// Module ID: 4572
+// Function ID: 4573
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1389, 4302, 673, 586, 1911, 2]
+// Dependencies: [1960, 4381, 1074, 504, 1982, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4493 (useGuildIdForChannelRoute)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "initializeFromUserSettings" /* 1389 */;
-import closure_3 from "handleConnectionOpen" /* 4302 */;
-import { FAVORITES } from "ME" /* 673 */;
+// Module 4572 (useGuildIdForChannelRoute)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "initializeFromUserSettings" /* 1960 */;
+import closure_3 from "handleConnectionOpen" /* 4381 */;
+import { FAVORITES } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");

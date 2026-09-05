@@ -1,11 +1,11 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 7583
+// Function ID: 7584
 // Name: fromServer
-// Dependencies: [7506, 2]
+// Dependencies: [7573, 2]
 
-// Module 7516 (fromServer)
+// Module 7583 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7506 */;
+import ShopBlockType from "ShopBlockType" /* 7573 */;
 
 let prototype;
 prototype = function SocialLayerStorefrontPromotionalBannerBlockRecord(arg0) {

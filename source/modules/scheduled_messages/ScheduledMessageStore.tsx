@@ -1,11 +1,11 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12213
+// Function ID: 12214
 // Name: handleScheduledMessageRemovalStart
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 12145 (handleScheduledMessageRemovalStart)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12213 (handleScheduledMessageRemovalStart)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import set from "set" /* 2 */;
 
 function handleScheduledMessageRemovalStart(scheduledMessageId) {

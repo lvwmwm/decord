@@ -1,13 +1,13 @@
-// Module ID: 5513
-// Function ID: 5514
+// Module ID: 5558
+// Function ID: 5559
 // Name: processCallbacks
-// Dependencies: [5514, 5238, 706, 2]
+// Dependencies: [5559, 5277, 573, 2]
 // Exports: addPostConnectionCallback
 
-// Module 5513 (processCallbacks)
-import closure_0 from "initialize" /* 5514 */;
-import closure_1 from "_handleConnectionOpen" /* 5238 */;
-import importDefaultResult from "dispatcher" /* 706 */;
+// Module 5558 (processCallbacks)
+import closure_0 from "initialize" /* 5559 */;
+import closure_1 from "_handleConnectionOpen" /* 5277 */;
+import importDefaultResult from "dispatcher" /* 573 */;
 
 function processCallbacks() {
   if (null == store.getType()) {

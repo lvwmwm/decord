@@ -1,20 +1,20 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11871
+// Function ID: 11872
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 9137, 1215, 1991, 1908, 4120, 4302, 673, 4108, 682, 644, 4126, 1233, 9138, 9139, 7320, 2]
+// Dependencies: [19, 9208, 502, 2021, 1979, 4199, 4381, 1074, 4187, 1084, 563, 4205, 1114, 9209, 9210, 7382, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11803 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11871 (useCurrentUserHasAutomodQuarantinedProfile)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "zustandStore" /* 9137 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "handleConnectionOpen" /* 4302 */;
-import ME from "ME" /* 673 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
-import { ProfileCustomizationSubsection as closure_12 } from "MAX_FAVORITES" /* 682 */;
+import closure_3 from "zustandStore" /* 9208 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "handleConnectionOpen" /* 4381 */;
+import ME from "ME" /* 1074 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
+import { ProfileCustomizationSubsection as closure_12 } from "MAX_FAVORITES" /* 1084 */;
 
 const require = arg1;
 ({ Permissions: c9, UserSettingsSections: c10 } = ME);
@@ -24,7 +24,7 @@ export const useCurrentUserHasAutomodQuarantinedProfile = function useCurrentUse
   const _require = arg0;
   const items = [closure_4, closure_5];
   const items1 = [arg0];
-  return _require(644).useStateFromStores(items, () => {
+  return _require(563).useStateFromStores(items, () => {
     if (null == callback) {
       return false;
     } else {
@@ -37,12 +37,12 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
   const _require = id;
   let items = [closure_4, closure_5, closure_8, closure_6];
   let items1 = [id];
-  return _require(644).useStateFromStoresObject(items, () => {
+  return _require(563).useStateFromStoresObject(items, () => {
     let guildId = id;
     if (id == null) {
       guildId = closure_1_8.getGuildId();
     }
-    let obj = { nick: "left", bio: "call" };
+    let obj = { nick: "hash", bio: "call" };
     let guild = closure_1_6.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

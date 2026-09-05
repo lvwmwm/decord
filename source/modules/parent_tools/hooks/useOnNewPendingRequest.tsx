@@ -1,12 +1,12 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14880
+// Function ID: 14881
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7470, 8575, 586, 4953, 7472, 2]
+// Dependencies: [19, 7537, 8645, 504, 4992, 7539, 2]
 // Exports: default
 
-// Module 14805 (useOnNewPendingRequest)
+// Module 14880 (useOnNewPendingRequest)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "freshTeenActivityWithMap" /* 7470 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7537 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");

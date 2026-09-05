@@ -1,14 +1,14 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 12097
+// Function ID: 12098
 // Name: usePinnedSearchBarBottomBorder
-// Dependencies: [19, 21, 4481, 709, 4218, 4935, 4939, 2]
+// Dependencies: [19, 21, 4560, 576, 4296, 4974, 4978, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 12029 (usePinnedSearchBarBottomBorder)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 12097 (usePinnedSearchBarBottomBorder)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { border: null };
@@ -24,7 +24,7 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     triggerScrollHeight = 1;
   }
   let sharedValue;
-  let obj = triggerScrollHeight(4218);
+  let obj = triggerScrollHeight(4296);
   sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = React.useEffect(() => {
@@ -44,13 +44,13 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     obj = { opacity: obj.withSpring(num, triggerScrollHeight(closure_1_2[6]).springStandard) };
     return obj;
   };
-  obj = { withSpring: triggerScrollHeight(4935).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4939).springStandard };
+  obj = { withSpring: triggerScrollHeight(4974).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4978).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 5466161440826;
   fn.__initData = closure_6;
   obj = { scrollHandler: callback, bottomBorderComponent: null };
-  const animatedStyle = triggerScrollHeight(4218).useAnimatedStyle(fn);
+  const animatedStyle = triggerScrollHeight(4296).useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
-  obj[1] = jsx(sharedValue(4218).View, { style: items2 }, key);
+  obj[1] = jsx(sharedValue(4296).View, { style: items2 }, key);
   return obj;
 };

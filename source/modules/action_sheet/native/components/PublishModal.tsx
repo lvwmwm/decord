@@ -1,18 +1,18 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11670
+// Function ID: 11671
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4481, 5401, 11603, 1296, 1233, 2]
+// Dependencies: [32, 19, 17, 21, 4560, 5441, 11671, 1178, 1114, 2]
 // Exports: default
 
-// Module 11602 (PublishModal)
+// Module 11670 (PublishModal)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11603 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11671 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -60,10 +60,10 @@ export default function PublishModal(channelId) {
       }
       obj1 = { numGuildsFollowing: null };
       obj1[0] = num2;
-      obj[1] = intl.format(tmp11(1233).t.GCGrNP, obj1);
+      obj[1] = intl.format(tmp11(1114).t.GCGrNP, obj1);
       let tmp12 = obj;
     } else {
-      obj[1] = intl.string(tmp11(1233).t["8FpqOs"]);
+      obj[1] = intl.string(tmp11(1114).t["8FpqOs"]);
       tmp12 = obj;
     }
     obj[1] = jsx(Button.LegacyText, tmp12);

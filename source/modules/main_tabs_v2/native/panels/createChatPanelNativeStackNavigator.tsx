@@ -1,11 +1,11 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15942
+// Function ID: 15943
 // Name: ChatPanelNativeStackNavigator
-// Dependencies: [19, 21, 1499, 4335, 14087, 7844, 2]
+// Dependencies: [19, 21, 1484, 4417, 14173, 7913, 2]
 // Exports: default
 
-// Module 15866 (ChatPanelNativeStackNavigator)
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
+// Module 15942 (ChatPanelNativeStackNavigator)
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1484 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,0 +1,10 @@
+// Module ID: 3609
+// Function ID: 3610
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 3609 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb25uZWN0ZWRfZGV2aWNlcw==", scales: [1], hash: "da3d789a569a577edbdb5e5a7b295f6b", name: "vi.messages.da3d789a569a577edbdb5e5a7b295f6b.compiled.messages", type: "jsona" });

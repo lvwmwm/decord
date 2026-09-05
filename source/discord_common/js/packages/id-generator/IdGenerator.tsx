@@ -1,12 +1,12 @@
-// Module ID: 507
-// Function ID: 508
+// Module ID: 1252
+// Function ID: 1253
 // Name: generate
-// Dependencies: [14, 508, 2]
+// Dependencies: [14, 1253, 2]
 
-// Module 507 (generate)
+// Module 1252 (generate)
 import set from "set" /* 2 */;
 import IntegerDefault from "Integer" /* 14 */;
-import Buffer from "Buffer" /* 508 */;
+import Buffer from "Buffer" /* 1253 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/id-generator/IdGenerator.tsx");
 class IdGenerator {

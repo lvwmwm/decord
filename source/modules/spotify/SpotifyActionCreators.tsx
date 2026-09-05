@@ -1,16 +1,16 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11751
+// Function ID: 11752
 // Name: apiRequest
-// Dependencies: [11682, 8270, 673, 4365, 527, 706, 684, 1234, 8614, 2]
+// Dependencies: [11750, 8340, 1074, 4447, 1272, 573, 1090, 1115, 8684, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 11683 (apiRequest)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import set from "set" /* 1234 */;
-import setDefault from "set" /* 8614 */;
-import closure_3 from "isProtocolRegistered" /* 11682 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8270 */;
-import ME from "ME" /* 673 */;
+// Module 11751 (apiRequest)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import set from "set" /* 1115 */;
+import setDefault from "set" /* 8684 */;
+import closure_3 from "isProtocolRegistered" /* 11750 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8340 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function apiRequest(arg0, arg1, arg2, arg3) {
@@ -330,7 +330,7 @@ const result = require("set").fileFinishedImporting("modules/spotify/SpotifyActi
 export const SpotifyAPI = obj;
 export const getAccessToken = function getAccessToken(id) {
   const _require = id;
-  const HTTP = _require(527).HTTP;
+  const HTTP = _require(1272).HTTP;
   const value = HTTP.get({ url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id), oldFormErrors: true, rejectWithError: false });
   obj = { url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id), oldFormErrors: true, rejectWithError: false };
   return value.catch((body) => {

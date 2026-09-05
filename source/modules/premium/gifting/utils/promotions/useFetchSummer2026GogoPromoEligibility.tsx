@@ -1,13 +1,13 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10739
+// Function ID: 10740
 // Name: useFetchSummer2026GogoPromoEligibility
-// Dependencies: [32, 19, 673, 527, 2]
+// Dependencies: [32, 19, 1074, 1272, 2]
 // Exports: useFetchSummer2026GogoPromoEligibility
 
-// Module 10668 (useFetchSummer2026GogoPromoEligibility)
+// Module 10739 (useFetchSummer2026GogoPromoEligibility)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/gifting/utils/promotions/useFetchSummer2026GogoPromoEligibility.tsx");

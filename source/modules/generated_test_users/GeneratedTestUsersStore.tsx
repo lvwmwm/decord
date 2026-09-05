@@ -1,12 +1,12 @@
-// Module ID: 15512
-// Function ID: 15513
+// Module ID: 15588
+// Function ID: 15589
 // Name: handleAddUser
-// Dependencies: [1934, 586, 706, 2]
+// Dependencies: [1385, 504, 573, 2]
 
-// Module 15512 (handleAddUser)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "createdAt" /* 1934 */;
+// Module 15588 (handleAddUser)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "createdAt" /* 1385 */;
 
 function handleAddUser(id) {
   if (null == closure_1.users) {

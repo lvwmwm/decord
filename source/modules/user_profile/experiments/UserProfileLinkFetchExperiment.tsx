@@ -1,12 +1,12 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8180
+// Function ID: 8181
 // Name: getIsUserProfileLinkFetchEnabled
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: getIsUserProfileLinkFetchEnabled
 
-// Module 8111 (getIsUserProfileLinkFetchEnabled)
+// Module 8180 (getIsUserProfileLinkFetchEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

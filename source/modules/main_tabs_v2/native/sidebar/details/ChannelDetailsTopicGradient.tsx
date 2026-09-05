@@ -1,18 +1,18 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16733
+// Function ID: 16734
 // Name: useChannelTopicGradientBackground
-// Dependencies: [19, 4197, 709, 686, 2]
+// Dependencies: [19, 4262, 576, 672, 2]
 // Exports: useChannelTopicGradientBackground
 
-// Module 16656 (useChannelTopicGradientBackground)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16733 (useChannelTopicGradientBackground)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsTopicGradient.tsx");
 
 export const useChannelTopicGradientBackground = function useChannelTopicGradientBackground() {
-  token = token(4197).useToken(ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  token = token(4262).useToken(ThemesDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   return React.useMemo(() => {
     const obj = closure_1_1(closure_1_2[3])(token);

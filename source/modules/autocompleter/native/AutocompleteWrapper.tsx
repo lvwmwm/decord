@@ -1,27 +1,27 @@
-// Module ID: 12317
-// Function ID: 12318
+// Module ID: 12385
+// Function ID: 12386
 // Name: getStickersItemLayout
-// Dependencies: [32, 19, 17, 7712, 5419, 5238, 5462, 673, 4960, 10192, 4961, 10353, 1924, 21, 6978, 10354, 4481, 1234, 709, 12318, 1492, 6921, 5637, 586, 4197, 10048, 12320, 12321, 4166, 5641, 10352, 12322, 7272, 10191, 5471, 10262, 12323, 7454, 1954, 7616, 11923, 1625, 4708, 12324, 12325, 9242, 4983, 12163, 4218, 12326, 7456, 12333, 4477, 1233, 8529, 12334, 12335, 2]
+// Dependencies: [32, 19, 17, 7780, 5459, 5277, 5502, 1074, 4999, 10263, 5000, 10424, 1374, 21, 7038, 10425, 4560, 1115, 576, 12386, 1477, 6981, 5682, 504, 4262, 10119, 12388, 12389, 1935, 5686, 10423, 12390, 7334, 10262, 5516, 10333, 12391, 7521, 1894, 7683, 11991, 1609, 4740, 12392, 12393, 9313, 5022, 12231, 4296, 12394, 7523, 12401, 4556, 1114, 8599, 12402, 12403, 2]
 
-// Module 12317 (getStickersItemLayout)
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import AutocompleteLabel from "AutocompleteLabel" /* 12318 */;
+// Module 12385 (getStickersItemLayout)
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import AutocompleteLabel from "AutocompleteLabel" /* 12386 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleInit" /* 7712 */;
-import closure_8 from "getEmojiToGroupId" /* 5419 */;
-import closure_9 from "_handleConnectionOpen" /* 5238 */;
-import closure_10 from "loadSavedGuildStickers" /* 5462 */;
-import ME from "ME" /* 673 */;
-import { BOOLEAN_CHOICES } from "TRUE_OPTION_NAME" /* 4960 */;
-import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10192 */;
-import regExp from "regExp" /* 4961 */;
-import { AutocompleteTypes } from "AutocompleteTypes" /* 10353 */;
-import { EmojiInteractionPoint } from "set" /* 1924 */;
+import closure_7 from "handleInit" /* 7780 */;
+import closure_8 from "getEmojiToGroupId" /* 5459 */;
+import closure_9 from "_handleConnectionOpen" /* 5277 */;
+import closure_10 from "loadSavedGuildStickers" /* 5502 */;
+import ME from "ME" /* 1074 */;
+import { BOOLEAN_CHOICES } from "TRUE_OPTION_NAME" /* 4999 */;
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10263 */;
+import regExp from "regExp" /* 5000 */;
+import { AutocompleteTypes } from "AutocompleteTypes" /* 10424 */;
+import { EmojiInteractionPoint } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function getStickersItemLayout(arg0, arg1) {

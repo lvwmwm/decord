@@ -1,10 +1,10 @@
-// Module ID: 4536
-// Function ID: 4537
+// Module ID: 1912
+// Function ID: 1913
 // Name: constants
-// Dependencies: [17, 4537, 2]
+// Dependencies: [17, 1913, 2]
 
-// Module 4536 (constants)
-import importDefaultResult from "enforcing" /* 4537 */;
+// Module 1912 (constants)
+import importDefaultResult from "enforcing" /* 1913 */;
 
 const constants = importDefaultResult.getConstants();
 let closure_3 = ["getConstants", "setInputDevice", "setInputDeviceById", "setOutputDevice", "setOutputDeviceById", "setVideoInputDevice", "setVideoInputDeviceById", "addListener", "removeListeners"];

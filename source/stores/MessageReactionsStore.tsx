@@ -1,16 +1,16 @@
-// Module ID: 7694
-// Function ID: 7695
+// Module ID: 7762
+// Function ID: 7763
 // Name: reactionKey
-// Dependencies: [4121, 1934, 1386, 1921, 7695, 586, 7696, 706, 2]
+// Dependencies: [4200, 1385, 1957, 1371, 7763, 504, 7764, 573, 2]
 
-// Module 7694 (reactionKey)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import checkReactionResponseAll from "checkReactionResponse" /* 7696 */;
-import closure_2 from "initialize" /* 4121 */;
-import closure_3 from "createdAt" /* 1934 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
+// Module 7762 (reactionKey)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import checkReactionResponseAll from "checkReactionResponse" /* 7764 */;
+import closure_2 from "initialize" /* 4200 */;
+import closure_3 from "createdAt" /* 1385 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
 
 function reactionKey(arg0, arg1, item10022) {
   ({ name, id } = arg1);

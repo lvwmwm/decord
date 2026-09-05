@@ -1,13 +1,13 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8413
+// Function ID: 8414
 // Name: AgeVerificationModalEntryPoint
-// Dependencies: [1386, 673, 695, 2]
+// Dependencies: [1957, 1074, 1242, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 8343 (AgeVerificationModalEntryPoint)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+// Module 8413 (AgeVerificationModalEntryPoint)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationAnalyticsUtils.tsx");
 

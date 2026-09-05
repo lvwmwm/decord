@@ -1,11 +1,11 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 4986
+// Function ID: 4987
 // Name: useShineEffectStyles
-// Dependencies: [32, 19, 21, 4942, 686, 1362, 4218, 4482, 4481, 2]
+// Dependencies: [32, 19, 21, 4981, 672, 4411, 4296, 4561, 4560, 2]
 // Exports: ButtonShine
 
-// Module 4947 (useShineEffectStyles)
-import _modDef4218 from "module_4218" /* 4218 */;
+// Module 4986 (useShineEffectStyles)
+import _modDef4296 from "module_4296" /* 4296 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -13,12 +13,12 @@ import { jsx } from "jsxProd" /* 21 */;
 const require = arg1;
 function useShineEffectStyles(width, variant) {
   const _require = width;
-  let obj = _require(4942);
+  let obj = _require(4981);
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
-  const obj2 = enabled(686)(buttonTextColorStyles.color);
-  const hexResult = enabled(686)(buttonTextColorStyles.color).alpha(0.1).hex();
-  enabled = React.useContext(_require(1362).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const alphaResult = enabled(686)(buttonTextColorStyles.color).alpha(0.1);
+  const obj2 = enabled(672)(buttonTextColorStyles.color);
+  const hexResult = enabled(672)(buttonTextColorStyles.color).alpha(0.1).hex();
+  enabled = React.useContext(_require(4411).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const alphaResult = enabled(672)(buttonTextColorStyles.color).alpha(0.1);
   const fn = function o() {
     if (null == width) {
       let obj = { transform: null };
@@ -48,15 +48,15 @@ function useShineEffectStyles(width, variant) {
     }
     return tmp5;
   };
-  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: _require(4218).withRepeat, withSequence: _require(4218).withSequence, withTiming: _require(4482).withTiming, withDelay: _require(4218).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
+  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: _require(4296).withRepeat, withSequence: _require(4296).withSequence, withTiming: _require(4561).withTiming, withDelay: _require(4296).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
   fn.__closure = obj;
   fn.__workletHash = 15814138938406;
   fn.__initData = closure_6;
   obj = { shineStyles: null, shineAnimatedStyle: null };
-  const animatedStyle = _require(4218).useAnimatedStyle(fn);
-  let obj4 = _require(4218);
+  const animatedStyle = _require(4296).useAnimatedStyle(fn);
+  let obj4 = _require(4296);
   let items = [{ rotate: "30deg" }];
-  obj[0] = _require(4481).createStyles({ shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: { width: 56, height: "500%", transform: items, backgroundColor: hexResult, top: "-100%", alignItems: "center" }, shineInner: { width: 16, height: "100%", backgroundColor: hexResult } })();
+  obj[0] = _require(4560).createStyles({ shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: { width: 56, height: "500%", transform: items, backgroundColor: hexResult, top: "-100%", alignItems: "center" }, shineInner: { width: 16, height: "100%", backgroundColor: hexResult } })();
   obj[1] = animatedStyle;
   return obj;
 }
@@ -80,7 +80,7 @@ export const ButtonShine = function ButtonShine(variant) {
   items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
   obj = {
     style: shineStyles.shine,
-    children: jsx(_modDef4218.View, {
+    children: jsx(_modDef4296.View, {
       onLayout(nativeEvent) {
         return callback(nativeEvent.nativeEvent.layout.width);
       },
@@ -89,6 +89,6 @@ export const ButtonShine = function ButtonShine(variant) {
     })
   };
   obj = { style: shineStyles.shineInner };
-  obj[2] = jsx(_modDef4218.View, { style: shineStyles.shineInner });
-  return jsx(_modDef4218.View, { style: shineStyles.shineInner });
+  obj[2] = jsx(_modDef4296.View, { style: shineStyles.shineInner });
+  return jsx(_modDef4296.View, { style: shineStyles.shineInner });
 };

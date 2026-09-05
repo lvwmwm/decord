@@ -1,12 +1,12 @@
-// Module ID: 7819
-// Function ID: 7820
+// Module ID: 7888
+// Function ID: 7889
 // Name: getInitialParserState
-// Dependencies: [7820, 4471, 2]
+// Dependencies: [7889, 4550, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7819 (getInitialParserState)
+// Module 7888 (getInitialParserState)
 import set from "set" /* 2 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4471 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4550 */;
 
 function getInitialParserState(channelId) {
   const renderOptions = channelId.renderOptions;

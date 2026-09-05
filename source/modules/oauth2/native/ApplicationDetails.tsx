@@ -1,24 +1,24 @@
-// Module ID: 9359
-// Function ID: 9360
+// Module ID: 9430
+// Function ID: 9431
 // Name: ApplicationDetailsEntry
-// Dependencies: [19, 17, 21, 4481, 709, 9169, 8816, 9360, 11, 9167, 4424, 1233, 5056, 9171, 9362, 4444, 8269, 9364, 9331, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 9240, 8886, 9431, 11, 9238, 4503, 1114, 5095, 9242, 9433, 4523, 8339, 9435, 9402, 4556, 2]
 // Exports: default
 
-// Module 9359 (ApplicationDetailsEntry)
+// Module 9430 (ApplicationDetailsEntry)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ClockIcon from "ClockIcon" /* 4444 */;
-import Text from "Text" /* 4477 */;
-import LockIcon from "LockIcon" /* 5056 */;
-import set from "set" /* 8269 */;
-import items2 from "items" /* 9167 */;
-import getApplicationDetailsText from "getApplicationDetailsText" /* 9171 */;
-import ShieldIcon from "ShieldIcon" /* 9331 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ClockIcon from "ClockIcon" /* 4523 */;
+import Text from "Text" /* 4556 */;
+import LockIcon from "LockIcon" /* 5095 */;
+import set from "set" /* 8339 */;
+import items2 from "items" /* 9238 */;
+import getApplicationDetailsText from "getApplicationDetailsText" /* 9242 */;
+import ShieldIcon from "ShieldIcon" /* 9402 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ApplicationDetailsEntry(children) {
@@ -71,11 +71,11 @@ export default function ApplicationDetails(arg0) {
   let tmp15 = null;
   if (null != joined) {
     obj = { iconComponent: null, text: null };
-    obj[0] = tmp5(4424).LinkIcon;
-    const intl = tmp5(1233).intl;
+    obj[0] = tmp5(4503).LinkIcon;
+    const intl = tmp5(1114).intl;
     obj1 = { origin: null };
     obj1[0] = joined;
-    obj[1] = intl.format(tmp5(1233).t["5k5OKD"], obj1);
+    obj[1] = intl.format(tmp5(1114).t["5k5OKD"], obj1);
     tmp15 = callback(ApplicationDetailsEntry, obj);
   }
   const items = [tmp15, , , , , , ];
@@ -88,14 +88,14 @@ export default function ApplicationDetails(arg0) {
   let tmp18Result = null;
   if (null != connectedAccount) {
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp5(9362).HammerIcon;
-    const intl2 = tmp5(1233).intl;
-    obj3[1] = intl2.string(tmp5(1233).t["8qui3M"]);
+    obj3[0] = tmp5(9433).HammerIcon;
+    const intl2 = tmp5(1114).intl;
+    obj3[1] = intl2.string(tmp5(1114).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj3);
   }
   items[2] = tmp18Result;
   const obj4 = { iconComponent: ClockIcon.ClockIcon, text: null };
-  const intl3 = tmp5(1233).intl;
+  const intl3 = tmp5(1114).intl;
   obj4[1] = intl3.formatToPlainString(getSystemLocale.t["+1bjc8"], { date });
   items[3] = callback(ApplicationDetailsEntry, obj4);
   tmp18Result = null;
@@ -103,11 +103,11 @@ export default function ApplicationDetails(arg0) {
     tmp18Result = null;
     if (null != approximateGuildCount) {
       const obj5 = { iconComponent: null, text: null };
-      obj5[0] = tmp5(9364).RobotIcon;
-      const intl4 = tmp5(1233).intl;
+      obj5[0] = tmp5(9435).RobotIcon;
+      const intl4 = tmp5(1114).intl;
       const obj6 = { guildCount: null };
       obj6[0] = approximateGuildCount;
-      obj5[1] = intl4.formatToPlainString(tmp5(1233).t.UHGHSP, obj6);
+      obj5[1] = intl4.formatToPlainString(tmp5(1114).t.UHGHSP, obj6);
       tmp18Result = tmp18(tmp19, obj5);
     }
   }
@@ -117,17 +117,17 @@ export default function ApplicationDetails(arg0) {
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      let obj = callback(9169);
+      let obj = callback(9240);
       const textForDisclosure = obj.getTextForDisclosure(toFixed);
-      if (callback(9169).ApplicationDisclosure.IP_LOCATION === toFixed) {
+      if (callback(9240).ApplicationDisclosure.IP_LOCATION === toFixed) {
         obj = { iconComponent: null };
-        obj[0] = tmp(8816).GlobeEarthIcon;
+        obj[0] = tmp(8886).GlobeEarthIcon;
         let tmp4 = obj;
       } else {
         tmp4 = null;
-        if (tmp(9169).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+        if (tmp(9240).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
           obj = { iconComponent: null };
-          obj[0] = tmp(9360).EmbedIcon;
+          obj[0] = tmp(9431).EmbedIcon;
           tmp4 = obj;
         }
       }

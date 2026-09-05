@@ -1,19 +1,19 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16224
+// Function ID: 16225
 // Name: handlePress
-// Dependencies: [19, 10047, 4710, 21, 4481, 709, 4194, 1233, 4436, 4681, 10844, 16038, 2]
+// Dependencies: [19, 10118, 4742, 21, 4560, 576, 4259, 1114, 4515, 4713, 10913, 16116, 2]
 
-// Module 16146 (handlePress)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import dispatcherDefault from "dispatcher" /* 4194 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import getChannelModeDefault from "getChannelMode" /* 16038 */;
+// Module 16224 (handlePress)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4515 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import getChannelModeDefault from "getChannelMode" /* 16116 */;
 import importAllResult from "noop" /* 19 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handlePress() {
@@ -39,8 +39,8 @@ const memoResult = importAllResult.memo((channel) => {
   }, items);
   const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
   const tmp2 = computeChannelNameDefault(channel);
-  const intl = channel(1233).intl;
-  obj[4] = intl.formatToPlainString(channel(1233).t.yjQ9P8, { channelName: tmp2 });
+  const intl = channel(1114).intl;
+  obj[4] = intl.formatToPlainString(channel(1114).t.yjQ9P8, { channelName: tmp2 });
   obj[5] = { selected };
   obj[6] = channel;
   obj[7] = selected;

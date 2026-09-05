@@ -1,10 +1,10 @@
 // Module ID: 10950
 // Function ID: 10951
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10950 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 216, height: 115, scales: [1], hash: "6aec591fd331d7a257e3dc97a1b2a4c2", name: "gift_cake", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 256, height: 128, scales: [2, 3], hash: "fe7e2c7efcbe72663147a76476794c5c", name: "img_invite_empty_dark", type: "png" });

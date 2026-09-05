@@ -1,14 +1,14 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 13006
+// Function ID: 13007
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4473, 684, 586, 4365, 2]
+// Dependencies: [32, 19, 4552, 1090, 504, 4447, 2]
 // Exports: useTimestampTickedNow
 
-// Module 12938 (useTimestampTickedNow)
-import setDefault from "set" /* 684 */;
+// Module 13006 (useTimestampTickedNow)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
@@ -26,12 +26,12 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   importDefault = undefined;
   const now = callback(React.useState(() => {
     const timestamp = Date.now();
-    const rounded = Math.floor(timestamp / _undefined(684).Millis.SECOND);
-    return rounded * _undefined(684).Millis.SECOND;
+    const rounded = Math.floor(timestamp / _undefined(1090).Millis.SECOND);
+    return rounded * _undefined(1090).Millis.SECOND;
   }), 2);
   _require = now[1];
   const items = [closure_5];
-  let stateFromStores = _require(586).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let stateFromStores = _require(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let slowTickMode = !isAppFocused;
   if (isAppFocused) {
     if (stateFromStores) {

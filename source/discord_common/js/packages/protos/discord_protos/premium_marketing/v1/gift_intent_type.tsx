@@ -1,9 +1,9 @@
-// Module ID: 1926
-// Function ID: 1927
+// Module ID: 1376
+// Function ID: 1377
 // Name: GiftIntentType
 // Dependencies: [2]
 
-// Module 1926 (GiftIntentType)
+// Module 1376 (GiftIntentType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_intent_type.tsx");

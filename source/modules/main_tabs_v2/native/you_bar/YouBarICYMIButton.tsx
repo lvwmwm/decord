@@ -1,16 +1,16 @@
-// Module ID: 16314
-// Function ID: 16315
-// Dependencies: [19, 15022, 21, 4481, 709, 16315, 16316, 12943, 4336, 1233, 2]
+// Module ID: 16390
+// Function ID: 16391
+// Dependencies: [19, 15098, 21, 4560, 576, 16391, 16392, 13011, 4418, 1114, 2]
 
-// Module 16314
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import FlashIcon from "FlashIcon" /* 12943 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16315 */;
-import YouBarButtonIconDefault from "YouBarButtonIcon" /* 16316 */;
-import { YOU_BAR_BUTTON_ICON_SIZE } from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
+// Module 16390
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import FlashIcon from "FlashIcon" /* 13011 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16391 */;
+import YouBarButtonIconDefault from "YouBarButtonIcon" /* 16392 */;
+import { YOU_BAR_BUTTON_ICON_SIZE } from "CONNECTION_BANNER_HEIGHT" /* 15098 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function YouBarICYMIButton(hasNameplate)
       rootNavigationRef.navigate("icymi", obj);
     }
   };
-  const intl = tmp5(1233).intl;
+  const intl = tmp5(1114).intl;
   obj[5] = intl.string(getSystemLocale.t["jnXV/V"]);
   return jsx(YouBarButtonIconDefault, { size: "custom", style: tmp.icon, color: null });
 });

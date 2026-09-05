@@ -1,15 +1,15 @@
-// Module ID: 16972
-// Function ID: 16973
+// Module ID: 17050
+// Function ID: 17051
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1386, 1980, 673, 4110, 9454, 9474, 9463, 1228, 2]
+// Dependencies: [5, 19, 1957, 2011, 1074, 4189, 9526, 9545, 9535, 1109, 2]
 // Exports: default
 
-// Module 16972 (useTransitionToConnectedActivityInVoice)
+// Module 17050 (useTransitionToConnectedActivityInVoice)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
-import { ComponentActions } from "ME" /* 673 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "handleConnectionOpen" /* 2011 */;
+import { ComponentActions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");

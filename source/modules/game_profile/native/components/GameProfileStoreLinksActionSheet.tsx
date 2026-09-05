@@ -1,22 +1,22 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8710
+// Function ID: 8711
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4481, 709, 8613, 4190, 1627, 7138, 6567, 4477, 1233, 4936, 4448, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8683, 4255, 1611, 7198, 6627, 4556, 1114, 4975, 4527, 2]
 // Exports: default
 
-// Module 8640 (GameProfileStoreLinksActionSheet)
+// Module 8710 (GameProfileStoreLinksActionSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import Text from "Text" /* 4477 */;
-import BottomSheetModal from "BottomSheetModal" /* 6567 */;
-import ActionSheet from "ActionSheet" /* 7138 */;
-import _getDeepLinkUrlDefault from "_getDeepLinkUrl" /* 8613 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import _modDef4255 from "module_4255" /* 4255 */;
+import Text from "Text" /* 4556 */;
+import BottomSheetModal from "BottomSheetModal" /* 6627 */;
+import ActionSheet from "ActionSheet" /* 7198 */;
+import _getDeepLinkUrlDefault from "_getDeepLinkUrl" /* 8683 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -34,7 +34,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   ({ websiteButtons, trackAction: require } = gameName);
   importDefault = undefined;
   const tmp = callback3();
-  importDefault = _getDeepLinkUrlDefault(_modDef4190.openURL);
+  importDefault = _getDeepLinkUrlDefault(_modDef4255.openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };

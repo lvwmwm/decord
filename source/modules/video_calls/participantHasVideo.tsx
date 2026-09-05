@@ -1,14 +1,14 @@
-// Module ID: 9551
-// Function ID: 9552
+// Module ID: 9622
+// Function ID: 9623
 // Name: canRenderParticipantVideo
-// Dependencies: [1215, 4532, 4502, 4545, 586, 2]
+// Dependencies: [502, 1908, 4581, 4585, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 9551 (canRenderParticipantVideo)
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
-import ParticipantTypes from "ParticipantTypes" /* 4502 */;
-import { Features } from "DesktopSources" /* 4545 */;
+// Module 9622 (canRenderParticipantVideo)
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "_detectH265HardwareDecode" /* 1908 */;
+import ParticipantTypes from "ParticipantTypes" /* 4581 */;
+import { Features } from "DesktopSources" /* 4585 */;
 
 const require = arg1;
 function canRenderParticipantVideo(participant, closure_1_4) {
@@ -87,5 +87,5 @@ export { canRenderParticipantVideo };
 export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
   const _require = stateFromStores;
   const items = [closure_3];
-  return _require(586).useStateFromStores(items, () => closure_1_8(closure_0, closure_1_3));
+  return _require(504).useStateFromStores(items, () => closure_1_8(closure_0, closure_1_3));
 };

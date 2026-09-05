@@ -1,16 +1,16 @@
-// Module ID: 16061
-// Function ID: 16062
+// Module ID: 16139
+// Function ID: 16140
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4302, 673, 4166, 10153, 1911, 1219, 10152, 1233, 3178, 2]
+// Dependencies: [19, 4381, 1074, 1935, 10224, 1982, 1100, 10223, 1114, 3225, 2]
 // Exports: default
 
-// Module 16061 (useFavoritesGuildResetAction)
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+// Module 16139 (useFavoritesGuildResetAction)
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10224 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleConnectionOpen" /* 4302 */;
-import { Routes } from "ME" /* 673 */;
+import closure_4 from "handleConnectionOpen" /* 4381 */;
+import { Routes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
@@ -31,9 +31,9 @@ export default function useFavoritesGuildResetAction() {
     hasAccess = obj.useFavoritesAccess().hasAccess;
   }
   obj = { isAvailable: hasAccess, label: null, subLabel: null, perform: null };
-  const intl = tmp(1233).intl;
+  const intl = tmp(1114).intl;
   obj[1] = intl.string(messagesProxyDefault.YkET6R);
-  const intl2 = tmp(1233).intl;
+  const intl2 = tmp(1114).intl;
   obj[2] = intl2.string(messagesProxyDefault.ZzcwNk);
   obj[3] = callback;
   return obj;

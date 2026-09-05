@@ -1,12 +1,12 @@
-// Module ID: 4984
-// Function ID: 4985
+// Module ID: 5023
+// Function ID: 5024
 // Name: staticRouteToTranslation
-// Dependencies: [1984, 1233, 2]
+// Dependencies: [2015, 1114, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 4984 (staticRouteToTranslation)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "createGuildRoleRecordFromRust" /* 1984 */;
+// Module 5023 (staticRouteToTranslation)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_2 from "createGuildRoleRecordFromRust" /* 2015 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");

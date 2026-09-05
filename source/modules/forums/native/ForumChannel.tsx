@@ -1,29 +1,29 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12760
+// Function ID: 12761
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 4121, 5467, 1386, 4862, 5374, 11933, 673, 502, 21, 4481, 709, 5479, 7804, 4477, 1233, 7816, 7242, 586, 12693, 7212, 9, 8606, 8616, 5084, 8610, 7112, 4448, 12695, 2008, 4936, 12083, 12696, 8792, 7831, 12697, 4681, 11959, 11932, 12698, 8804, 7699, 5086, 4194, 12701, 7209, 7102, 7122, 5018, 11354, 7829, 12702, 7709, 10180, 10198, 4449, 4450, 10196, 5524, 6921, 11352, 8839, 12705, 12219, 2]
+// Dependencies: [19, 17, 4200, 5507, 1957, 4901, 5413, 12001, 1074, 1085, 21, 4560, 576, 5524, 7872, 4556, 1114, 7885, 7304, 504, 12761, 7272, 9, 8676, 8686, 5123, 8680, 7172, 4527, 12763, 1896, 4975, 12151, 12764, 8862, 7900, 12765, 4713, 12027, 12000, 12766, 8874, 7767, 5125, 4259, 12769, 7269, 7162, 7182, 5057, 11422, 7898, 12770, 7777, 10251, 10269, 4528, 4529, 10267, 5569, 6981, 11420, 8909, 12773, 12287, 2]
 // Exports: default
 
-// Module 12692 (forumKeyExtractor)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import dispatcherDefault from "dispatcher" /* 4194 */;
-import Text from "Text" /* 4477 */;
-import useGradientBottom from "useGradientBottom" /* 7804 */;
-import registerAssetDefault from "registerAsset" /* 12701 */;
+// Module 12760 (forumKeyExtractor)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import Text from "Text" /* 4556 */;
+import useGradientBottom from "useGradientBottom" /* 7872 */;
+import registerAssetDefault from "registerAsset" /* 12769 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 4121 */;
-import closure_6 from "handleThreadCreateOrUpdate" /* 5467 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "handleChanged" /* 4862 */;
-import closure_9 from "recomputeGuild" /* 5374 */;
-import { useForumChannelStore } from "set" /* 11933 */;
-import ME from "ME" /* 673 */;
-import { Fonts } from "sum" /* 502 */;
+import closure_5 from "initialize" /* 4200 */;
+import closure_6 from "handleThreadCreateOrUpdate" /* 5507 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "handleChanged" /* 4901 */;
+import closure_9 from "recomputeGuild" /* 5413 */;
+import { useForumChannelStore } from "set" /* 12001 */;
+import ME from "ME" /* 1074 */;
+import { Fonts } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -53,14 +53,14 @@ function SearchSection(numPosts) {
   let obj = { style: tmp.section, children: null };
   obj = { style: tmp.divider, variant: "text-xs/bold", color: "text-muted", children: null };
   if (0 === numPosts) {
-    const intl2 = tmp4(1233).intl;
-    let stringResult = intl2.string(tmp4(1233).t.DbgHxi);
+    const intl2 = tmp4(1114).intl;
+    let stringResult = intl2.string(tmp4(1114).t.DbgHxi);
   } else {
-    const intl = tmp4(1233).intl;
+    const intl = tmp4(1114).intl;
     obj = { numPosts: null, query: null };
     obj[0] = numPosts;
     obj[1] = numPosts.searchQuery;
-    stringResult = intl.formatToPlainString(tmp4(1233).t["tBz/8b"], obj);
+    stringResult = intl.formatToPlainString(tmp4(1114).t["tBz/8b"], obj);
   }
   obj[3] = stringResult;
   obj[1] = closure_14(Text.Text, obj);
@@ -147,9 +147,9 @@ function SortAndViewOptions(channel) {
     };
     obj.openLazy(id(closure_1_2[30])(closure_1_2[29], closure_1_2.paths), combined, obj);
   }, items);
-  const intl = id(1233).intl;
+  const intl = id(1114).intl;
   const string = intl.string;
-  const t = id(1233).t;
+  const t = id(1114).t;
   if (isMediaChannelResult) {
     let stringResult = string(t.JxU0wr);
   } else {
@@ -157,20 +157,20 @@ function SortAndViewOptions(channel) {
   }
   isMediaChannelResult = channel.isMediaChannel();
   const tmp4 = id;
-  return closure_14(id(4936).Button, { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: closure_14(id(12083).ArrowsUpDownIcon, { size: "xxs" }) });
+  return closure_14(id(4975).Button, { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: closure_14(id(12151).ArrowsUpDownIcon, { size: "xxs" }) });
 }
 function TagFilter(channel) {
   channel = channel.channel;
   let obj = { variant: "secondary", text: null, onPress: null, size: "sm", icon: null };
-  const intl = channel(1233).intl;
-  obj[1] = intl.string(channel(1233).t["112vVE"]);
+  const intl = channel(1114).intl;
+  obj[1] = intl.string(channel(1114).t["112vVE"]);
   obj[2] = function onPress() {
     let obj = closure_1_1(closure_1_2[28]);
     obj = { channel };
     obj.openLazy(channel(closure_1_2[30])(closure_1_2[33], closure_1_2.paths), "ForumTagFilterActionSheet", obj);
   };
-  obj[4] = callback(channel(8792).TagIcon, { size: "xxs" });
-  return callback(channel(4936).Button, obj);
+  obj[4] = callback(channel(8862).TagIcon, { size: "xxs" });
+  return callback(channel(4975).Button, obj);
 }
 function getForumItemType(arg0) {
   let str = "thread";

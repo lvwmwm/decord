@@ -1,20 +1,20 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 9541
+// Function ID: 9542
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 21, 4481, 709, 9471, 4477, 1233, 4865, 1296, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 9542, 4556, 1114, 4904, 1178, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 9470 (ConfirmActivityGateContent)
+// Module 9541 (ConfirmActivityGateContent)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import Text from "Text" /* 4477 */;
-import setDefault from "set" /* 4865 */;
-import SvgComponentDefault from "SvgComponent" /* 9471 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import Text from "Text" /* 4556 */;
+import setDefault from "set" /* 4904 */;
+import SvgComponentDefault from "SvgComponent" /* 9542 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ConfirmActivityGateContent(children) {

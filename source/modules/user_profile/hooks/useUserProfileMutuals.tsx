@@ -1,23 +1,23 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12602
+// Function ID: 12603
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7592, 5398, 7554, 586, 12, 9727, 2]
+// Dependencies: [32, 19, 7659, 5438, 7621, 504, 12, 9798, 2]
 // Exports: default
 
-// Module 12534 (useUserProfileMutuals)
-import usePrevValueDefault from "usePrevValue" /* 9727 */;
+// Module 12602 (useUserProfileMutuals)
+import usePrevValueDefault from "usePrevValue" /* 9798 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_5 from "recomputeAffinities" /* 7592 */;
-import closure_6 from "insertUnsortedGuilds" /* 5398 */;
-import closure_7 from "createUserWidgetFromServer" /* 7554 */;
+import closure_5 from "recomputeAffinities" /* 7659 */;
+import closure_6 from "insertUnsortedGuilds" /* 5438 */;
+import closure_7 from "createUserWidgetFromServer" /* 7621 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useUserProfileMutuals.tsx");
 
 export default function useUserProfileMutuals(arg0) {
   const _require = arg0;
-  let obj = _require(586);
+  let obj = _require(504);
   let items = [closure_7];
   const tmp = stateFromStores(obj.useStateFromStoresArray(items, () => {
     const items = [closure_1_7.getMutualFriendsCount(lib.id), closure_1_7.getMutualFriends(lib.id), closure_1_7.getMutualGuilds(lib.id), closure_1_7.isFetchingProfile(lib.id), closure_1_7.isFetchingFriends(lib.id)];
@@ -27,10 +27,10 @@ export default function useUserProfileMutuals(arg0) {
   importDefault = tmp3;
   dependencyMap = tmp4;
   const items1 = [closure_5];
-  stateFromStores = _require(586).useStateFromStores(items1, () => userAffinitiesMap.getUserAffinitiesMap());
-  const obj2 = _require(586);
+  stateFromStores = _require(504).useStateFromStores(items1, () => userAffinitiesMap.getUserAffinitiesMap());
+  const obj2 = _require(504);
   const items2 = [closure_6];
-  const stateFromStores1 = _require(586).useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
+  const stateFromStores1 = _require(504).useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
   const items3 = [tmp3, stateFromStores];
   let tmp7 = stateFromStores1(() => {
     let sortByResult = closure_1;
@@ -73,7 +73,7 @@ export default function useUserProfileMutuals(arg0) {
     }
     return dependencyMap;
   }, items4);
-  const obj3 = _require(586);
+  const obj3 = _require(504);
   const tmp9 = usePrevValueDefault(tmp2);
   const tmp10 = usePrevValueDefault(tmp7);
   obj = { mutualFriendsCount: tmp2, mutualFriends: null, mutualGuilds: null, isFetching: null, isFetchingFriends: null };

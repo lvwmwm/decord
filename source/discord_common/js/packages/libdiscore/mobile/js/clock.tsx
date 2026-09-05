@@ -1,12 +1,12 @@
-// Module ID: 1918
-// Function ID: 1919
+// Module ID: 1354
+// Function ID: 1355
 // Name: monotonicNowMs
-// Dependencies: [1917, 2]
+// Dependencies: [1353, 2]
 // Exports: monotonicNowMs
 
-// Module 1918 (monotonicNowMs)
+// Module 1354 (monotonicNowMs)
 import set from "set" /* 2 */;
-import typedGlobal from "typedGlobal" /* 1917 */;
+import typedGlobal from "typedGlobal" /* 1353 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/clock.tsx");
 

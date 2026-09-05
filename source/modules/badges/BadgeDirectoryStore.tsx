@@ -1,17 +1,17 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8192
+// Function ID: 8193
 // Name: initialize
-// Dependencies: [1921, 684, 1401, 8124, 581, 8128, 586, 706, 2]
+// Dependencies: [1371, 1090, 1437, 8193, 559, 8197, 504, 573, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8123 (initialize)
-import failsDefault from "fails" /* 581 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1401 */;
-import urlUserId from "urlUserId" /* 8128 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 8192 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import failsDefault from "fails" /* 559 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import privDefault from "priv" /* 1437 */;
+import urlUserId from "urlUserId" /* 8197 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const HOUR = setDefault.Millis.HOUR;

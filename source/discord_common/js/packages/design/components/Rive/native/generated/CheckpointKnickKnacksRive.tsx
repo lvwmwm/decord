@@ -1,11 +1,11 @@
-// Module ID: 4282
-// Function ID: 4283
+// Module ID: 4360
+// Function ID: 4361
 // Name: CheckpointKnickKnacksRive
-// Dependencies: [109, 19, 21, 4212, 4283, 4267, 2]
+// Dependencies: [109, 19, 21, 4290, 4361, 4345, 2]
 
-// Module 4282 (CheckpointKnickKnacksRive)
-import BaseRive from "BaseRive" /* 4212 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4267 */;
+// Module 4360 (CheckpointKnickKnacksRive)
+import BaseRive from "BaseRive" /* 4290 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4345 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

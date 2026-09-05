@@ -1,9 +1,9 @@
-// Module ID: 6529
-// Function ID: 6530
+// Module ID: 6588
+// Function ID: 6589
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6529 (metadata)
+// Module 6588 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusMahjongSpotIllustration-2x.png.js");

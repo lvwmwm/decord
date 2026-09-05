@@ -1,25 +1,25 @@
-// Module ID: 8777
-// Function ID: 8778
+// Module ID: 8847
+// Function ID: 8848
 // Name: memoResult1
-// Dependencies: [19, 17, 7177, 673, 21, 4481, 709, 8695, 7486, 8778, 7487, 8780, 8791, 4477, 1233, 8767, 1234, 8792, 8592, 8109, 8760, 1949, 4139, 4197, 4329, 8794, 586, 4948, 8795, 2]
+// Dependencies: [19, 17, 7237, 1074, 21, 4560, 576, 8765, 7553, 8848, 7554, 8850, 8861, 4556, 1114, 8837, 1115, 8862, 8662, 8178, 8830, 1889, 4218, 4262, 4409, 8864, 504, 4987, 8865, 2]
 
-// Module 8777 (memoResult1)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import map from "map" /* 4197 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import Text from "Text" /* 4477 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import useCurrentUser from "useCurrentUser" /* 8109 */;
-import useCanPurchaseFrames from "useCanPurchaseFrames" /* 8760 */;
-import getCardProductName from "getCardProductName" /* 8794 */;
+// Module 8847 (memoResult1)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4218 */;
+import map from "map" /* 4262 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import Text from "Text" /* 4556 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import useCurrentUser from "useCurrentUser" /* 8178 */;
+import useCanPurchaseFrames from "useCanPurchaseFrames" /* 8830 */;
+import getCardProductName from "getCardProductName" /* 8864 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateProduct" /* 7177 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "updateProduct" /* 7237 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -232,15 +232,15 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   obj1 = useCanPurchaseFrames;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
-    let tmp2Result = tmp2(7486);
+    let tmp2Result = tmp2(7553);
     const productType = tmp2Result.getProductType(product);
-    isProfileFramesEarlyAccessPhase = productType === tmp2(1949).CollectiblesItemType.PROFILE_FRAME;
+    isProfileFramesEarlyAccessPhase = productType === tmp2(1889).CollectiblesItemType.PROFILE_FRAME;
   }
   let obj3 = getPremiumPlanItemDefault;
-  tmp2Result = tmp2(7487);
+  tmp2Result = tmp2(7554);
   const shopDiscountSource = tmp2Result.getShopDiscountSource(currentUser);
   const tmp8 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
-  const token = map.useToken(tmp7(709).colors.BACKGROUND_BASE_LOW);
+  const token = map.useToken(tmp7(576).colors.BACKGROUND_BASE_LOW);
   const tmp2Result1 = map;
   const tmp2Result2 = hexToRgba;
   const tmp2Result3 = hexToRgba;
@@ -274,7 +274,7 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
     const items4 = [tmp17(closure_11, obj2), ];
     obj3 = { product: null };
     obj3[0] = product;
-    items4[1] = tmp17(tmp7(8795), obj3);
+    items4[1] = tmp17(tmp7(8865), obj3);
     obj1[1] = items4;
     tmp15Result = tmp15(View, obj1);
   }

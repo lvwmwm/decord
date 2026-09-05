@@ -1,11 +1,11 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 15048
+// Function ID: 15049
 // Name: BountiesAutoScrollOverlayNuxGradient
-// Dependencies: [19, 17, 21, 709, 4218, 4482, 4485, 4948, 2]
+// Dependencies: [19, 17, 21, 576, 4296, 4561, 4564, 4987, 2]
 // Exports: default
 
-// Module 14973 (BountiesAutoScrollOverlayNuxGradient)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15048 (BountiesAutoScrollOverlayNuxGradient)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -19,7 +19,7 @@ let result = require("set").fileFinishedImporting("modules/quests/native/Bountie
 export default function BountiesAutoScrollOverlayNuxGradient(active) {
   active = active.active;
   let sharedValue;
-  let obj = active(4218);
+  let obj = active(4296);
   sharedValue = obj.useSharedValue(0);
   const items = [active, sharedValue];
   const effect = React.useEffect(() => {
@@ -29,7 +29,7 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
     }
     const result = sharedValue.set(active(closure_1_2[5]).withTiming(num, active(closure_1_2[6]).timingSlow));
   }, items);
-  obj1 = active(4218);
+  obj1 = active(4296);
   const fn = function _() {
     return { opacity: sharedValue.get() };
   };
@@ -45,9 +45,9 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
   obj[2] = [0, 1];
   obj[3] = { x: 0.5, y: 1 };
   obj[4] = { x: 0.5, y: 0 };
-  const items3 = [callback(sharedValue(4948), obj), ];
+  const items3 = [callback(sharedValue(4987), obj), ];
   obj1 = { style: StyleSheet.absoluteFillObject, colors: ["rgba(0,0,0,0.4)", "rgba(0,0,0,0)"], locations: [0, 0.5], start: { x: 0.5, y: 1 }, end: { x: 0.5, y: 0 } };
-  items3[1] = callback(sharedValue(4948), obj1);
+  items3[1] = callback(sharedValue(4987), obj1);
   obj[2] = items3;
-  return callback2(sharedValue(4218).View, obj);
+  return callback2(sharedValue(4296).View, obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 5228
-// Function ID: 5229
+// Module ID: 5267
+// Function ID: 5268
 // Name: getStickerPreview
-// Dependencies: [4862, 586, 706, 2]
+// Dependencies: [4901, 504, 573, 2]
 
-// Module 5228 (getStickerPreview)
+// Module 5267 (getStickerPreview)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import handleChanged from "handleChanged" /* 4862 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import handleChanged from "handleChanged" /* 4901 */;
 
 const DraftType = handleChanged.DraftType;
 let closure_1 = {};

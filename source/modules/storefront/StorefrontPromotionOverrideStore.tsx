@@ -1,11 +1,11 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8786
+// Function ID: 8787
 // Name: getPromotionIdOverride
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8716 (getPromotionIdOverride)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 8786 (getPromotionIdOverride)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let c0;
 const Store = initializeDefault.Store;

@@ -1,10 +1,10 @@
-// Module ID: 4381
-// Function ID: 4382
+// Module ID: 4463
+// Function ID: 4464
 // Name: prototype
-// Dependencies: [4161, 2]
+// Dependencies: [4240, 2]
 
-// Module 4381 (prototype)
-import setDefault from "set" /* 4161 */;
+// Module 4463 (prototype)
+import setDefault from "set" /* 4240 */;
 
 setDefault;
 const prototype = function StripeError(error) {

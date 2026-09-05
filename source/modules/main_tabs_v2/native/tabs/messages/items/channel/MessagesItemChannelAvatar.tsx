@@ -1,18 +1,18 @@
-// Module ID: 15958
-// Function ID: 15959
-// Dependencies: [19, 4473, 1215, 4572, 11897, 1921, 10047, 21, 4481, 709, 1296, 586, 10841, 2]
+// Module ID: 16034
+// Function ID: 16035
+// Dependencies: [19, 4552, 502, 4600, 11965, 1371, 10118, 21, 4560, 576, 1178, 504, 10910, 2]
 
-// Module 15958
-import ThemesDefault from "Themes" /* 709 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10841 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "sortActivity" /* 4572 */;
-import closure_6 from "handleTypingStart" /* 11897 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10047 */;
+// Module 16034
+import ThemesDefault from "Themes" /* 576 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10910 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "sortActivity" /* 4600 */;
+import closure_6 from "handleTypingStart" /* 11965 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10118 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -41,9 +41,9 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     muted = !channelSelected;
   }
   const tmpResult = closure_10(muted);
-  const REFRESH_MEDIUM_32 = channel(1296).AvatarSizes.REFRESH_MEDIUM_32;
+  const REFRESH_MEDIUM_32 = channel(1178).AvatarSizes.REFRESH_MEDIUM_32;
   dependencyMap = id.getId();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => {
     const typingUsers = closure_1_6.getTypingUsers(channel.id);
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     return false;
   });
   const items1 = [stateFromStores];
-  const stateFromStores1 = channel(586).useStateFromStores(items1, () => {
+  const stateFromStores1 = channel(504).useStateFromStores(items1, () => {
     const useReducedMotion = stateFromStores.useReducedMotion;
     let tmp = !useReducedMotion;
     if (!useReducedMotion) {
@@ -72,29 +72,29 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     }
     return tmp;
   });
-  const obj2 = channel(586);
+  const obj2 = channel(504);
   let tmp = closure_10;
   let tmp3 = channel;
   const items2 = [closure_7];
-  const stateFromStores2 = channel(586).useStateFromStores(items2, () => {
+  const stateFromStores2 = channel(504).useStateFromStores(items2, () => {
     let recipientId;
     if (true === channel.isDM()) {
       recipientId = channel.getRecipientId();
     }
     return closure_1_7.getUser(recipientId);
   });
-  const obj3 = channel(586);
+  const obj3 = channel(504);
   const items3 = [closure_5];
-  const stateFromStores3 = channel(586).useStateFromStores(items3, () => {
+  const stateFromStores3 = channel(504).useStateFromStores(items3, () => {
     let isMobileOnlineResult = channel.isDM();
     if (isMobileOnlineResult) {
       isMobileOnlineResult = closure_1_5.isMobileOnline(channel.getRecipientId());
     }
     return isMobileOnlineResult;
   });
-  const obj5 = channel(586);
+  const obj5 = channel(504);
   const items4 = [closure_5];
-  const stateFromStores4 = channel(586).useStateFromStores(items4, () => {
+  const stateFromStores4 = channel(504).useStateFromStores(items4, () => {
     let isVROnlineResult = channel.isDM();
     if (isVROnlineResult) {
       isVROnlineResult = closure_1_5.isVROnline(channel.getRecipientId());
@@ -112,7 +112,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "accessible", size: 11233710712756618000000000000000000000000000000000000000000000000000000000000000, animate: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000004698189917150596, typing: -0.000000000000000000000000010201609226653101, autoStatusCutout: 63266210436244060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "accessible", size: "<string:307298308>", animate: "<string:906248450>", typing: "<string:1715535874>", autoStatusCutout: "<string:1358955583>" };
       obj[0] = stateFromStores2;
       obj[1] = stateFromStores2.avatarDecoration;
       obj[3] = stateFromStores3;
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
       obj[8] = REFRESH_MEDIUM_32;
       obj[9] = stateFromStores1;
       obj[10] = stateFromStores;
-      tmp11Result = jsx(tmp3(1296).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "accessible", size: 11233710712756618000000000000000000000000000000000000000000000000000000000000000, animate: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000004698189917150596, typing: -0.000000000000000000000000010201609226653101, autoStatusCutout: 63266210436244060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      tmp11Result = jsx(tmp3(1178).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "accessible", size: "<string:307298308>", animate: "<string:906248450>", typing: "<string:1715535874>", autoStatusCutout: "<string:1358955583>" });
       const tmp11 = jsx;
     }
   }

@@ -1,11 +1,11 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14506
+// Function ID: 14507
 // Name: sum
-// Dependencies: [502, 2]
+// Dependencies: [1085, 2]
 
-// Module 14431 (sum)
+// Module 14506 (sum)
 import set from "set" /* 2 */;
-import sum from "sum" /* 502 */;
+import sum from "sum" /* 1085 */;
 
 const result = set.fileFinishedImporting("modules/rpc/server/commands/platformBehaviors.tsx");
 

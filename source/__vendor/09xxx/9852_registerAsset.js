@@ -1,0 +1,10 @@
+// Module ID: 9852
+// Function ID: 9853
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 9852 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 251, height: 147, scales: [2, 3], hash: "c013c533d835389917bf422e9978d1be", name: "img_app_crash_light", type: "png" });

@@ -1,28 +1,28 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14957
+// Function ID: 14958
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [673, 4511, 21, 4481, 1296, 4416, 1627, 7436, 7108, 7090, 7089, 1233, 6567, 5560, 4448, 9181, 1431, 1362, 7105, 7102, 7122, 2]
+// Dependencies: [1074, 1921, 21, 4560, 1178, 4495, 1611, 7503, 7168, 7150, 7149, 1114, 6627, 5605, 4527, 9252, 1396, 4411, 7165, 7162, 7182, 2]
 // Exports: default
 
-// Module 14882 (AddApplicationIdentityTableRow)
+// Module 14957 (AddApplicationIdentityTableRow)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import items2 from "items" /* 4511 */;
+import ME from "ME" /* 1074 */;
+import items2 from "items" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import Button from "Button" /* 1296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import Button from "Button" /* 1178 */;
 
 function AddApplicationIdentityTableRow(application) {
   application = application.application;
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7105)(application));
-  const tmp2 = analyticsLocations(7105)(application);
-  analyticsLocations = analyticsLocations(7102)(analyticsLocations(7122).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(7102);
-  let obj = _require(1296);
-  const iconSource = application.getIconSource(obj.getIconSize(_require(1296).IconSizes.LARGE));
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7165)(application));
+  const tmp2 = analyticsLocations(7165)(application);
+  analyticsLocations = analyticsLocations(7162)(analyticsLocations(7182).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(7162);
+  let obj = _require(1178);
+  const iconSource = application.getIconSource(obj.getIconSize(_require(1178).IconSizes.LARGE));
   obj = {
     start,
     end,
@@ -42,12 +42,12 @@ function AddApplicationIdentityTableRow(application) {
     obj = { source: null, style: null, disableColor: true };
     obj[0] = iconSource;
     obj[1] = tmp4.icon;
-    tmp7Result = tmp7(tmp5(1296).Icon, obj);
+    tmp7Result = tmp7(tmp5(1178).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5560).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5605).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5560).TableRow, obj, application.id);
+  return closure_5(_require(5605).TableRow, obj, application.id);
 }
 const AnalyticsLocations = ME.AnalyticsLocations;
 let closure_4 = items2.getMigratedApplicationIdentityConnectionsScreenApplications;

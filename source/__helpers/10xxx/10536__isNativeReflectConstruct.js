@@ -1,18 +1,18 @@
 // Module ID: 10536
 // Function ID: 10537
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 96, 98, 10355, 10375]
+// Dependencies: [41, 42, 93, 95, 98, 10526, 10434, 10435, 10439]
 
 // Module 10536 (_isNativeReflectConstruct)
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10375 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
+import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10526 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
-import closure_5 from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeExpressionParser = require;
+const NLTimeUnitAgoFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,94 +32,43 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENTimeExpressionParser {
+const regExp = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
+class NLTimeUnitAgoFormatParser {
   constructor(arg0) {
     self = this;
-    tmp = closure_2(this, ENTimeExpressionParser);
-    items = [];
-    items[0] = global;
+    tmp = closure_2(this, NLTimeUnitAgoFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeExpressionParser);
+    obj = closure_4(NLTimeUnitAgoFormatParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = global;
+    return tmp3Result;
   }
 }
-_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
-let items = [
+_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const items = [
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
+    key: "innerPattern",
+    value: function innerPattern() {
+      return this.strictMode ? regExp1 : regExp;
     }
   },
   {
-    key: "primaryPrefix",
-    value: function primaryPrefix() {
-      return "(?:(?:alle|dalle)\\s*)??";
-    }
-  },
-  {
-    key: "primarySuffix",
-    value: function primarySuffix() {
-      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      const self = this;
-      const tmp = callback3(callback2(self.prototype), "extractPrimaryTimeComponents", this);
-      closure_1 = tmp;
-      let fn = tmp;
-      if (typeof tmp === "function") {
-        fn = (items) => callback.apply(self, items);
-      }
-      const items = [arg0, arg1];
-      const fnResult = fn(items);
-      if (fnResult) {
-        const first = arg1[0];
-        if (first.endsWith("sera")) {
-          let value = fnResult.get("hour");
-          if (value >= 6) {
-            if (value < 12) {
-              fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.PM);
-            }
-          }
-          if (value < 6) {
-            fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.AM);
-          }
-        }
-        const first1 = arg1[0];
-        if (first1.endsWith("pomeriggio")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.PM);
-          value = fnResult.get("hour");
-          let tmp14 = value >= 0;
-          if (tmp14) {
-            tmp14 = value <= 6;
-          }
-          if (tmp14) {
-            fnResult.assign("hour", fnResult.get("hour") + 12);
-          }
-        }
-        const first2 = arg1[0];
-        if (first2.endsWith("mattina")) {
-          fnResult.assign("meridiem", ENTimeExpressionParser(10355).Meridiem.AM);
-          if (fnResult.get("hour") < 12) {
-            fnResult.assign("hour", fnResult.get("hour"));
-          }
-        }
-      }
-      return fnResult;
+    key: "innerExtract",
+    value: function innerExtract(reference) {
+      const parseDurationResult = NLTimeUnitAgoFormatParser(10526).parseDuration(arg1[1]);
+      const ParsingComponents = NLTimeUnitAgoFormatParser(10435).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, NLTimeUnitAgoFormatParser(10434).reverseDuration(NLTimeUnitAgoFormatParser(10526).parseDuration(arg1[1])));
     }
   }
 ];
 
-export default _createClass(ENTimeExpressionParser, items);
+export default _createClass(NLTimeUnitAgoFormatParser, items);

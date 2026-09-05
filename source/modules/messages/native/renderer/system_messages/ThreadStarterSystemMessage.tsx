@@ -1,16 +1,16 @@
-// Module ID: 7943
-// Function ID: 7944
+// Module ID: 8012
+// Function ID: 8013
 // Name: createThreadStarterSystemMessage
-// Dependencies: [7528, 673, 38, 1233, 7895, 2]
+// Dependencies: [7595, 1074, 38, 1114, 7964, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 7943 (createThreadStarterSystemMessage)
+// Module 8012 (createThreadStarterSystemMessage)
 import _modDef38 from "module_38" /* 38 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import closure_3 from "processMessage" /* 7528 */;
-import { ReferencedMessageState } from "processMessage" /* 7528 */;
-import { MessageTypes } from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import closure_3 from "processMessage" /* 7595 */;
+import { ReferencedMessageState } from "processMessage" /* 7595 */;
+import { MessageTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");

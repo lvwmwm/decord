@@ -1,11 +1,11 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7776
+// Function ID: 7777
 // Name: handleSummarizeThreadFinish
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7708 (handleSummarizeThreadFinish)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 7776 (handleSummarizeThreadFinish)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleSummarizeThreadFinish() {
   c0 = false;

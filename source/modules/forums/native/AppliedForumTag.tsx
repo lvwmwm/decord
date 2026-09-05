@@ -1,19 +1,19 @@
-// Module ID: 10556
-// Function ID: 10557
+// Module ID: 10627
+// Function ID: 10628
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 5419, 1924, 21, 4481, 709, 586, 10557, 1233, 7070, 1431, 4477, 2]
+// Dependencies: [19, 17, 5459, 1374, 21, 4560, 576, 504, 10628, 1114, 7130, 1396, 4556, 2]
 // Exports: AppliedForumTagPill
 
-// Module 10556 (AppliedForumTag)
+// Module 10627 (AppliedForumTag)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10557 */;
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10628 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getEmojiToGroupId" /* 5419 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
+import closure_4 from "getEmojiToGroupId" /* 5459 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class AppliedForumTag {

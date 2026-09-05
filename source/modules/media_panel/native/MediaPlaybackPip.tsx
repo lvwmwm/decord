@@ -1,22 +1,22 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17225
+// Function ID: 17226
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1386, 4743, 4130, 1921, 673, 17010, 21, 4481, 709, 4197, 586, 4681, 8194, 4477, 17146, 4948, 7390, 7184, 4218, 4482, 1233, 8832, 5583, 4434, 695, 14461, 4107, 17143, 8206, 8204, 14983, 2]
+// Dependencies: [32, 19, 17, 1957, 4781, 4209, 1371, 1074, 17088, 21, 4560, 576, 4262, 504, 4713, 8264, 4556, 17226, 4987, 7456, 7244, 4296, 4561, 1114, 8902, 5628, 4513, 1242, 14536, 4186, 17223, 8276, 8274, 15058, 2]
 // Exports: default
 
-// Module 17145 (MediaInfo)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17225 (MediaInfo)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "reinjectEphemerals" /* 4743 */;
-import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes" /* 17010 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "reinjectEphemerals" /* 4781 */;
+import closure_10 from "markAllUserIdListsStale" /* 4209 */;
+import closure_11 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes" /* 17088 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function MediaInfo(message) {
@@ -28,9 +28,9 @@ function MediaInfo(message) {
   let React;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = callback4();
-  let obj = message(4197);
-  const token = obj.useToken(first(709).colors.BACKGROUND_SURFACE_HIGH);
-  obj1 = message(586);
+  let obj = message(4262);
+  const token = obj.useToken(first(576).colors.BACKGROUND_SURFACE_HIGH);
+  obj1 = message(504);
   const items = [closure_8, closure_11, closure_10];
   const items1 = [message];
   const stateFromStores = obj1.useStateFromStores(items, () => {
@@ -41,7 +41,7 @@ function MediaInfo(message) {
     const channel = closure_1_8.getChannel(channel_id);
     let channelName = null;
     if (null != channel) {
-      const obj = message(4681);
+      const obj = message(4713);
       channelName = obj.computeChannelName(channel, closure_1_11, closure_1_10, true, true);
     }
     return channelName;
@@ -67,7 +67,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8194)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8264)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -76,7 +76,7 @@ function MediaInfo(message) {
           return callback(nativeEvent.nativeEvent.layout.width);
         };
         obj[4] = str2;
-        const tmp14 = callback2(tmp2(4477).Text, obj);
+        const tmp14 = callback2(tmp2(4556).Text, obj);
         obj = { accessibilityElementsHidden: null, style: null, onLayout: null, children: null };
         obj[0] = isControlVisible;
         obj[1] = tmp.infoContent;
@@ -91,7 +91,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(17146).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(17226).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };
@@ -99,7 +99,7 @@ function MediaInfo(message) {
           const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           obj4[3] = items4;
           obj4[4] = tmp.infoContainerGradient;
-          items3[1] = tmp13(tmp4(4948), obj4);
+          items3[1] = tmp13(tmp4(4987), obj4);
           obj2[1] = items3;
           tmp16Result = tmp16(tmp15, obj2);
         }
@@ -108,7 +108,7 @@ function MediaInfo(message) {
         if (tmp13Result) {
           const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
           obj5[3] = stateFromStores;
-          tmp13Result = tmp13(tmp2(4477).Text, obj5);
+          tmp13Result = tmp13(tmp2(4556).Text, obj5);
         }
         items5[1] = tmp13Result;
         obj1[1] = items5;
@@ -144,7 +144,7 @@ function PiPControls(message) {
       }
     }
   }, items);
-  let obj = message(4218);
+  let obj = message(4296);
   const fn = function c() {
     let obj = message(closure_1_2[22]);
     let num = 0;
@@ -154,22 +154,22 @@ function PiPControls(message) {
     obj = { opacity: obj.withTiming(num, { duration: 200 }) };
     return obj;
   };
-  obj = { withTiming: message(4482).withTiming, visible };
+  obj = { withTiming: message(4561).withTiming, visible };
   fn.__closure = obj;
   fn.__workletHash = 3641278982291;
   fn.__initData = closure_19;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const intl = message(1233).intl;
+  const intl = message(1114).intl;
   const string = intl.string;
-  const t = message(1233).t;
+  const t = message(1114).t;
   if (isVoiceMessage) {
     let stringResult = string(t.KTonHP);
   } else {
     stringResult = string(t["13/7kX"]);
   }
-  const intl2 = tmp3(1233).intl;
+  const intl2 = tmp3(1114).intl;
   const string2 = intl2.string;
-  const t2 = tmp3(1233).t;
+  const t2 = tmp3(1114).t;
   if (isVoiceMessage) {
     let string2Result = string2(t2["6rhrVG"]);
   } else {
@@ -177,16 +177,16 @@ function PiPControls(message) {
   }
   obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback2(message(8832).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback2(message(8902).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
-  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5583).ArrowLargeLeftIcon, { size: "sm" }) });
-  obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5583).ArrowLargeLeftIcon, { size: "sm" }) };
+  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5628).ArrowLargeLeftIcon, { size: "sm" }) });
+  obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5628).ArrowLargeLeftIcon, { size: "sm" }) };
   const items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
-  items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4434).XLargeIcon, { size: "sm" }) });
+  items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4513).XLargeIcon, { size: "sm" }) });
   obj[1] = items2;
-  return callback3(visible(4218).View, obj);
+  return callback3(visible(4296).View, obj);
 }
 ({ Easing: c5, StyleSheet, TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = ME);

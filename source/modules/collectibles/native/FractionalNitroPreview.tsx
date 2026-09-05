@@ -1,20 +1,20 @@
-// Module ID: 13073
-// Function ID: 13074
+// Module ID: 13141
+// Function ID: 13142
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 673, 21, 4481, 709, 1233, 4948, 5542, 13074, 13075, 7073, 4477, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1114, 4987, 5587, 13142, 13143, 7133, 4556, 2]
 // Exports: FractionalNitroPreview
 
-// Module 13073 (FractionalNitroPreview)
+// Module 13141 (FractionalNitroPreview)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 13074 */;
-import NitroIconDefault from "NitroIcon" /* 13075 */;
+import ThemesDefault from "Themes" /* 576 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 13142 */;
+import NitroIconDefault from "NitroIcon" /* 13143 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { VerticalGradient } from "ME" /* 673 */;
+import { VerticalGradient } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -35,7 +35,7 @@ const result = require("set").fileFinishedImporting("modules/collectibles/native
 export const FractionalNitroPreview = function FractionalNitroPreview() {
   const tmp = callback3();
   const _require = tmp;
-  let items = [_require(1233).t.E1NP2x, _require(1233).t.kpMomJ, _require(1233).t.xT1Vfn, _require(1233).t.myyAEr, _require(1233).t.zTk8Ul];
+  let items = [_require(1114).t.E1NP2x, _require(1114).t.kpMomJ, _require(1114).t.xT1Vfn, _require(1114).t.myyAEr, _require(1114).t.zTk8Ul];
   let obj = { style: tmp.container, children: null };
   obj = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   const items1 = [callback(LinearGradientDefault, obj), , , ];

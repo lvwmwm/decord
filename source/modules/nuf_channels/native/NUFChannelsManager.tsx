@@ -1,18 +1,18 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13767
+// Function ID: 13768
 // Name: _initialize
-// Dependencies: [1991, 1908, 4302, 1921, 673, 4108, 592, 4325, 7058, 4336, 4335, 1399, 4448, 13693, 2008, 2]
+// Dependencies: [2021, 1979, 4381, 1371, 1074, 4187, 510, 4404, 7118, 4418, 4417, 1384, 4527, 13768, 1896, 2]
 
-// Module 13692 (_initialize)
-import Storage3 from "Storage" /* 592 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import closure_5 from "handleConnectionOpen" /* 4302 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { GuildFeatures } from "ME" /* 673 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
+// Module 13767 (_initialize)
+import Storage3 from "Storage" /* 510 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4418 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "trackCommunicationDisabled" /* 2021 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import closure_5 from "handleConnectionOpen" /* 4381 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { GuildFeatures } from "ME" /* 1074 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4187 */;
 
 require = arg1;
 let c9 = "2020_02_nuf_channels";
@@ -94,23 +94,23 @@ class NUFChannelsManager extends tmp2 {
       }
     };
     applyArgumentsResult.requiresVoiceChannelsOnboard = function requiresVoiceChannelsOnboard() {
-      const Storage = applyArgumentsResult(592).Storage;
+      const Storage = applyArgumentsResult(510).Storage;
       const value = Storage.get(closure_10);
       let isNewUserResult = !value;
       if (!value) {
-        isNewUserResult = applyArgumentsResult(4325).isNewUser(currentUser.getCurrentUser());
-        const tmpResult = applyArgumentsResult(4325);
+        isNewUserResult = applyArgumentsResult(4404).isNewUser(currentUser.getCurrentUser());
+        const tmpResult = applyArgumentsResult(4404);
       }
       return isNewUserResult;
     };
     applyArgumentsResult.handleVoiceChannelsOnboard = function handleVoiceChannelsOnboard() {
-      const Storage = applyArgumentsResult(592).Storage;
+      const Storage = applyArgumentsResult(510).Storage;
       const result = Storage.set(closure_10, true);
     };
     applyArgumentsResult.clear = function clear() {
-      const Storage = applyArgumentsResult(592).Storage;
+      const Storage = applyArgumentsResult(510).Storage;
       Storage.remove(closure_9);
-      const Storage2 = applyArgumentsResult(592).Storage;
+      const Storage2 = applyArgumentsResult(510).Storage;
       Storage2.remove(closure_10);
     };
     return applyArgumentsResult;
@@ -122,11 +122,11 @@ prototype["_initialize"] = function _initialize() {
   const value = Storage.get(c9);
   let isNewUserResult = !value;
   if (!value) {
-    let tmpResult = tmp(4325);
+    let tmpResult = tmp(4404);
     isNewUserResult = tmpResult.isNewUser(currentUser.getCurrentUser());
   }
   if (isNewUserResult) {
-    tmpResult = tmp(4336);
+    tmpResult = tmp(4418);
     const rootNavigationRef = tmpResult.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const self = this;

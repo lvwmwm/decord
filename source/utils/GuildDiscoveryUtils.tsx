@@ -1,16 +1,16 @@
-// Module ID: 7279
-// Function ID: 7280
+// Module ID: 7341
+// Function ID: 7342
 // Name: _startLurking
-// Dependencies: [5, 4121, 4401, 1908, 673, 1219, 7280, 7184, 5475, 695, 527, 1482, 2]
+// Dependencies: [5, 4200, 4480, 1979, 1074, 1100, 7342, 7244, 5520, 1242, 1272, 1471, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7279 (_startLurking)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+// Module 7341 (_startLurking)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4121 */;
-import closure_5 from "handleInviteData" /* 4401 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "initialize" /* 4200 */;
+import closure_5 from "handleInviteData" /* 4480 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function _startLurking() {

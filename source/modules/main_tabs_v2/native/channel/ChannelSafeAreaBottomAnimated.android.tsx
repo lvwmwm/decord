@@ -1,11 +1,11 @@
-// Module ID: 12576
-// Function ID: 12577
-// Dependencies: [19, 17, 21, 11284, 11289, 4218, 2]
+// Module ID: 12644
+// Function ID: 12645
+// Dependencies: [19, 17, 21, 11352, 11357, 4296, 2]
 
-// Module 12576
-import _modDef4218 from "module_4218" /* 4218 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11284 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11289 */;
+// Module 12644
+import _modDef4296 from "module_4296" /* 4296 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11352 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11357 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
@@ -17,7 +17,7 @@ const memoResult = importAllResult.memo(function ChannelSafeAreaBottom(channelId
   let _require;
   const tmp = useChannelSafeAreaHeightSharedValueDefault();
   _require = tmp;
-  let obj = _require(4218);
+  let obj = _require(4296);
   const fn = function n() {
     return { height: closure_0.get() };
   };
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(function ChannelSafeAreaBottom(channelId
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle, children: <closure_4 style={items} /> };
   items = [absoluteFill.absoluteFill, useChannelSafeAreaBottomStylesDefault(channelId.channelId)];
-  return jsx(_modDef4218.View, { style: animatedStyle, children: <closure_4 style={items} /> });
+  return jsx(_modDef4296.View, { style: animatedStyle, children: <closure_4 style={items} /> });
 });
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottomAnimated.android.tsx");
 

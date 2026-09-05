@@ -1,13 +1,13 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17903
+// Function ID: 17904
 // Name: i18nManager
-// Dependencies: [17, 1234, 17824, 1273, 1233, 2]
+// Dependencies: [17, 1115, 17904, 1155, 1114, 2]
 // Exports: default
 
-// Module 17823 (i18nManager)
+// Module 17903 (i18nManager)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 17824 */;
-import set from "set" /* 1234 */;
+import enforcingDefault from "enforcing" /* 17904 */;
+import set from "set" /* 1115 */;
 
 if (set.isAndroid()) {
   let i18nManager = enforcingDefault;
@@ -21,11 +21,11 @@ export default function newIntlMessagesProvider() {
     closure_0 = arg0;
     closure_2.keysRequest((arr) => {
       closure_1_2.valuesResult(arr.map((code) => {
-        const result = callback(1273).runtimeHashMessageKey(code);
-        const tmp4 = callback(1233).t[result];
+        const result = callback(1155).runtimeHashMessageKey(code);
+        const tmp4 = callback(1114).t[result];
         let str = "";
         if (null != tmp4) {
-          const intl = callback(1233).intl;
+          const intl = callback(1114).intl;
           str = intl.reserialize(tmp4);
         }
         return str;

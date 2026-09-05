@@ -1,10 +1,10 @@
 // Module ID: 12606
 // Function ID: 12607
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 12606 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 240, height: 130, scales: [2, 3], hash: "bf9007773f0fafb040422c6eba8b56d6", name: "no_mutual_servers_darker", type: "png" });

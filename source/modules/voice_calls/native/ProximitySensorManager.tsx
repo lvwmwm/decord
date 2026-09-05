@@ -1,18 +1,18 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 17470
+// Function ID: 17471
 // Name: handleChange
-// Dependencies: [17, 1385, 4503, 4557, 9013, 1234, 17391, 9014, 7058, 2]
+// Dependencies: [17, 1956, 4582, 4583, 9083, 1115, 17471, 9084, 7118, 2]
 
-// Module 17390 (handleChange)
-import set2 from "set" /* 1234 */;
-import initializeDefault from "initialize" /* 7058 */;
-import RouteTypes from "RouteTypes" /* 9014 */;
-import enforcingDefault from "enforcing" /* 17391 */;
-import closure_2 from "participantFromServer" /* 1385 */;
-import closure_3 from "reset" /* 4503 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import closure_5 from "handleAudioRouteChanged" /* 9013 */;
-import set from "set" /* 1234 */;
+// Module 17470 (handleChange)
+import set2 from "set" /* 1115 */;
+import initializeDefault from "initialize" /* 7118 */;
+import RouteTypes from "RouteTypes" /* 9084 */;
+import enforcingDefault from "enforcing" /* 17471 */;
+import closure_2 from "participantFromServer" /* 1956 */;
+import closure_3 from "reset" /* 4582 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import closure_5 from "handleAudioRouteChanged" /* 9083 */;
+import set from "set" /* 1115 */;
 
 require = arg1;
 function handleChange() {

@@ -1,14 +1,14 @@
-// Module ID: 11420
-// Function ID: 11421
+// Module ID: 11488
+// Function ID: 11489
 // Name: isIosAttributionEligible
-// Dependencies: [11421, 1234, 7632, 11423, 2]
+// Dependencies: [11489, 1115, 7699, 11491, 2]
 // Exports: getIosAttributionClickFramework, isCampaignIosAttributionEnabled, isIosAttributionEligible
 
-// Module 11420 (isIosAttributionEligible)
+// Module 11488 (isIosAttributionEligible)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7632 */;
-import apexExperiment from "apexExperiment" /* 11421 */;
+import set2 from "set" /* 1115 */;
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7699 */;
+import apexExperiment from "apexExperiment" /* 11489 */;
 
 const result = set.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionEligibility.tsx");
 
@@ -33,14 +33,14 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
   const IosAttributionFeatureGate = apexExperiment.IosAttributionFeatureGate;
   let enabled = IosAttributionFeatureGate.getConfig({ location: "quest_ios_attribution" }).enabled;
   if (enabled) {
-    let tmpResult = tmp(1234);
+    let tmpResult = tmp(1115);
     enabled = tmpResult.isIOS();
   }
   let activeIosAttributionFramework = null;
   if (enabled) {
     activeIosAttributionFramework = null;
     if (arg0) {
-      tmpResult = tmp(7632);
+      tmpResult = tmp(7699);
       const adContext = tmpResult.getAdContext(sourceQuestContent, adContentId);
       let prop;
       if (adContext != null) {
@@ -48,8 +48,8 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
       }
       activeIosAttributionFramework = null;
       if (true === prop) {
-        activeIosAttributionFramework = tmp(11423).getActiveIosAttributionFramework();
-        const tmpResult1 = tmp(11423);
+        activeIosAttributionFramework = tmp(11491).getActiveIosAttributionFramework();
+        const tmpResult1 = tmp(11491);
       }
     }
   }

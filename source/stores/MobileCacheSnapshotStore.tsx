@@ -1,13 +1,13 @@
-// Module ID: 1217
-// Function ID: 1218
+// Module ID: 1073
+// Function ID: 1074
 // Name: clearAll
-// Dependencies: [586, 706, 38, 592, 2]
+// Dependencies: [504, 573, 38, 510, 2]
 
-// Module 1217 (clearAll)
+// Module 1073 (clearAll)
 import _modDef38 from "module_38" /* 38 */;
-import initializeDefault from "initialize" /* 586 */;
-import Storage2 from "Storage" /* 592 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import Storage2 from "Storage" /* 510 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 require = arg1;
 let MobileCacheSnapshotStore;

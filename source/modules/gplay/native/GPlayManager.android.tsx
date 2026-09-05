@@ -1,26 +1,26 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10708
+// Function ID: 10709
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 7354, 7355, 1215, 4145, 7177, 9297, 7178, 673, 4463, 1923, 21, 3, 7180, 706, 9296, 1214, 4074, 7363, 4154, 4845, 695, 4866, 1233, 10638, 2008, 4731, 7345, 2]
+// Dependencies: [109, 5, 19, 17, 7420, 7421, 502, 4224, 7237, 9368, 7238, 1074, 4542, 1373, 21, 3, 7240, 573, 9367, 1241, 4153, 7429, 4233, 4884, 1242, 4905, 1114, 10709, 1896, 4763, 7412, 2]
 
-// Module 10637 (handleConnectionStateUpdated)
+// Module 10708 (handleConnectionStateUpdated)
 import timestampDefault from "timestamp" /* 3 */;
 import noopAll from "noop" /* 19 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getPlanIdForProduct from "getPlanIdForProduct" /* 9296 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getPlanIdForProduct from "getPlanIdForProduct" /* 9367 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 7354 */;
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7355 */;
-import closure_9 from "fetchFingerprint" /* 1215 */;
-import closure_10 from "reset" /* 4145 */;
-import closure_11 from "updateProduct" /* 7177 */;
-import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 9297 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 7178 */;
-import ME from "ME" /* 673 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4463 */;
-import { SubscriptionPlanInfo } from "GuildFeatures" /* 1923 */;
+import closure_6 from "initialize" /* 7420 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7421 */;
+import closure_9 from "fetchFingerprint" /* 502 */;
+import closure_10 from "reset" /* 4224 */;
+import closure_11 from "updateProduct" /* 7237 */;
+import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 9368 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 7238 */;
+import ME from "ME" /* 1074 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4542 */;
+import { SubscriptionPlanInfo } from "GuildFeatures" /* 1373 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -93,14 +93,14 @@ function _handlePurchaseUpdated() {
                   let tmp19 = closure_3;
                   let tmp20 = callback;
                   let tmp21 = dependencyMap;
-                  let obj4 = callback(706);
+                  let obj4 = callback(573);
                   obj = { type: "GPLAY_UPDATE_PENDING_DOWNGRADE", pendingDowngrade: null };
                   let tmp22 = closure_9;
                   obj[1] = closure_9.pendingDowngrade;
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4845);
+                  let obj7 = lib(4884);
                   c6 = 8;
                   let num4 = 1;
                   c7 = 1;
@@ -123,7 +123,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4845);
+                obj1 = lib(4884);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -136,7 +136,7 @@ function _handlePurchaseUpdated() {
             c5 = 0;
             obj4 = { type: "GPLAY_VERIFICATION_END", productId: null };
             obj4[1] = lib.productId;
-            callback(706).dispatch(obj4);
+            callback(573).dispatch(obj4);
             c7 = 3;
             obj = { value: null, done: true };
             obj[0] = arg1;
@@ -333,14 +333,14 @@ function _executePendingDowngrade() {
           if (2 === tmp8) {
             c3 = 1;
             lib = dependencyMap;
-            let obj5 = pendingDowngrade(4154);
+            let obj5 = pendingDowngrade(4233);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4866);
+            let obj6 = lib(4905);
             const obj2 = { title: null, body: null };
-            const intl = pendingDowngrade(1233).intl;
-            obj2[0] = intl.string(pendingDowngrade(1233).t["U+H+kd"]);
-            const intl2 = pendingDowngrade(1233).intl;
-            obj2[1] = intl2.string(pendingDowngrade(1233).t.LFFx5G);
+            const intl = pendingDowngrade(1114).intl;
+            obj2[0] = intl.string(pendingDowngrade(1114).t["U+H+kd"]);
+            const intl2 = pendingDowngrade(1114).intl;
+            obj2[1] = intl2.string(pendingDowngrade(1114).t.LFFx5G);
             obj6.show(obj2);
             let newSubscriptionSkuId;
             if (pendingDowngrade != null) {
@@ -354,15 +354,15 @@ function _executePendingDowngrade() {
             }
             obj3[2] = purchaseToken;
             obj3[3] = lib.message;
-            lib(695).track(constants.GPLAY_PURCHASE_FAILED, obj3);
-            const obj9 = lib(695);
+            lib(1242).track(constants.GPLAY_PURCHASE_FAILED, obj3);
+            const obj9 = lib(1242);
           } else if (3 === tmp8) {
             if (arg0 === 1) {
               c5 = 3;
               throw arg1;
             } else if (arg0 === 2) {
               c3 = 0;
-              obj3 = lib(706);
+              obj3 = lib(573);
               obj3.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
               c5 = 3;
               const obj4 = { value: null, done: true };
@@ -381,7 +381,7 @@ function _executePendingDowngrade() {
             throw arg1;
           } else if (arg0 === 2) {
             c3 = 0;
-            obj = lib(706);
+            obj = lib(573);
             obj.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
             c5 = 3;
             obj6 = { value: null, done: true };
@@ -391,11 +391,11 @@ function _executePendingDowngrade() {
             c3 = 1;
           }
           c3 = 0;
-          lib(706).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
-          const obj11 = lib(706);
+          lib(573).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
+          const obj11 = lib(573);
         }
         c3 = 0;
-        lib(706).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
+        lib(573).dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         throw dependencyMap;
       } catch (tmp64) {
         dependencyMap = tmp64;
@@ -464,7 +464,7 @@ function _fetchAndAlertActiveSubscription() {
             closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            obj1 = closure_1_0(4845);
+            obj1 = closure_1_0(4884);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
@@ -483,8 +483,8 @@ function _fetchAndAlertActiveSubscription() {
           callback = premiumTypeSubscription.getPremiumTypeSubscription();
           if (null == callback) {
             const _Error = Error;
-            const intl = callback(1233).intl;
-            error = new Error(intl.string(callback(1233).t.PjfUXe));
+            const intl = callback(1114).intl;
+            error = new Error(intl.string(callback(1114).t.PjfUXe));
             throw error;
           } else {
             callback2();

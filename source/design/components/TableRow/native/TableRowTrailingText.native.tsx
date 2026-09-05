@@ -1,12 +1,12 @@
-// Module ID: 5569
-// Function ID: 5570
+// Module ID: 5614
+// Function ID: 5615
 // Name: TableRowTrailingText
-// Dependencies: [19, 21, 4477, 2]
+// Dependencies: [19, 21, 4556, 2]
 // Exports: TableRowTrailingText
 
-// Module 5569 (TableRowTrailingText)
+// Module 5614 (TableRowTrailingText)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4477 */;
+import Text from "Text" /* 4556 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

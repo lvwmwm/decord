@@ -1,24 +1,24 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17395
+// Function ID: 17396
 // Name: MainAreaCanUpload
-// Dependencies: [5, 19, 17, 1386, 4862, 673, 21, 4481, 4375, 5560, 15462, 1233, 4747, 4441, 10125, 8028, 5635, 8043, 38, 586, 12090, 5140, 5095, 17316, 1954, 4865, 5099, 11929, 9236, 10565, 1890, 10564, 5097, 4934, 709, 5642, 2]
+// Dependencies: [5, 19, 17, 1957, 4901, 1074, 21, 4560, 4457, 5605, 15538, 1114, 4785, 4520, 10196, 8097, 5680, 8112, 38, 504, 12158, 5179, 5134, 17396, 1894, 4904, 5138, 11997, 9307, 10636, 1874, 10635, 5136, 4973, 576, 5687, 2]
 // Exports: default
 
-// Module 17315 (MainAreaCanUpload)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import formatSize from "formatSize" /* 4375 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4441 */;
-import flattenComponents from "flattenComponents" /* 4747 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import FileUpIcon from "FileUpIcon" /* 15462 */;
+// Module 17395 (MainAreaCanUpload)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import formatSize from "formatSize" /* 4457 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4520 */;
+import flattenComponents from "flattenComponents" /* 4785 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import FileUpIcon from "FileUpIcon" /* 15538 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import { NOOP } from "ME" /* 673 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function MainAreaCanUpload(arg0) {
@@ -51,28 +51,28 @@ function File(upload) {
   obj = { uri: upload.item.uri, isImage: upload.isImage, isVideo: upload.isVideo, width: 32, height: 32, defaultPreview: null };
   obj = { style: callback2().defaultAttachmentIconWrapper, children: null };
   const tmp = callback2();
-  obj[1] = callback(upload(10125).AttachmentIcon, { fileName: upload.filename });
+  obj[1] = callback(upload(10196).AttachmentIcon, { fileName: upload.filename });
   obj[5] = callback(View, obj);
-  obj[0] = callback(handleRemoveFile(10125), obj);
+  obj[0] = callback(handleRemoveFile(10196), obj);
   let filename = upload.filename;
   if (filename == null) {
-    const intl = tmp3(1233).intl;
-    filename = intl.string(tmp3(1233).t.ZMirp0);
+    const intl = tmp3(1114).intl;
+    filename = intl.string(tmp3(1114).t.ZMirp0);
   }
   obj[1] = filename;
   const obj2 = {
     variant: "tertiary",
     size: "sm",
-    icon: callback(upload(5635).XSmallIcon, { size: "sm" }),
+    icon: callback(upload(5680).XSmallIcon, { size: "sm" }),
     onPress() {
       return handleRemoveFile(upload.id);
     },
     accessibilityLabel: null
   };
-  const intl2 = tmp3(1233).intl;
-  obj2[4] = intl2.string(upload(1233).t.N86XcP);
-  obj[2] = callback(upload(8028).IconButton, obj2);
-  return callback(upload(5560).TableRow, obj);
+  const intl2 = tmp3(1114).intl;
+  obj2[4] = intl2.string(upload(1114).t.N86XcP);
+  obj[2] = callback(upload(8097).IconButton, obj2);
+  return callback(upload(5605).TableRow, obj);
 }
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 let closure_11 = createCacheKey.createStyles({ defaultAttachmentIconWrapper: { width: 32, alignItems: "center" } });
@@ -261,7 +261,7 @@ export default function FileUploadActionComponent(maxValues) {
               let tmp29 = closure_4;
               let tmp30 = closure_1_5;
               let tmp31 = lib;
-              if (!closure_1_5(lib.map((result1) => callback(5099).getFileFromUploadItem(result1).filename))) {
+              if (!closure_1_5(lib.map((result1) => callback(5138).getFileFromUploadItem(result1).filename))) {
                 let tmp32 = closure_4;
                 let tmp33 = v0;
                 let num6 = 3;
@@ -275,7 +275,7 @@ export default function FileUploadActionComponent(maxValues) {
             let tmp35 = closure_4;
             let tmp36 = lib;
             closure_3 = lib.map((arg0) => {
-              let obj = callback(4747);
+              let obj = callback(4785);
               const componentUploadId = obj.makeComponentUploadId(dependencyMap);
               obj = { channelId: callback2, id: componentUploadId, file: null, draftType: null, allowOptimization: false };
               obj = {};
@@ -283,7 +283,7 @@ export default function FileUploadActionComponent(maxValues) {
               obj.id = componentUploadId;
               obj[2] = obj;
               obj[3] = InteractionModal.InteractionModal;
-              callback2(9236).setFile(obj);
+              callback2(9307).setFile(obj);
               return componentUploadId;
             });
             let tmp37 = closure_1_10;
@@ -334,7 +334,7 @@ export default function FileUploadActionComponent(maxValues) {
       extensions: allowedExtensions,
       uploadLimit: InteractionModal,
       onDismissKeyboard() {
-        return InteractionModal(10565).hideMediaKeyboardActionSheet();
+        return InteractionModal(10636).hideMediaKeyboardActionSheet();
       },
       onRestoreKeyboard: effectiveKestrelLimit,
       onSelectFiles(arg0) {
@@ -386,8 +386,8 @@ export default function FileUploadActionComponent(maxValues) {
         obj.handleViewAllDialog(obj);
       };
       obj[10] = function onManageLimited() {
-        obj = InteractionModal(10564);
-        obj = { onDismissKeyboard: InteractionModal(10565).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_8 };
+        obj = InteractionModal(10635);
+        obj = { onDismissKeyboard: InteractionModal(10636).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_8 };
         const result = obj.handleLimitedPickerDialog(obj);
       };
       obj[11] = tmp4(tmp5[29]).hideMediaKeyboardActionSheet;

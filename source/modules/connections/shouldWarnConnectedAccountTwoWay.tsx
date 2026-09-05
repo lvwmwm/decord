@@ -1,11 +1,11 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14964
+// Function ID: 14965
 // Name: set
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 14889 (set)
-import ME from "ME" /* 673 */;
+// Module 14964 (set)
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const items = [, , , ];

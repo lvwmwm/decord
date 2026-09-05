@@ -1,15 +1,15 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7868
+// Function ID: 7869
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4481, 709, 1296, 7801, 2]
+// Dependencies: [19, 21, 4560, 576, 1178, 7869, 2]
 // Exports: default
 
-// Module 7800 (MaskedBadge)
-import ThemesDefault from "Themes" /* 709 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7801 */;
+// Module 7868 (MaskedBadge)
+import ThemesDefault from "Themes" /* 576 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7869 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };
@@ -39,7 +39,7 @@ export default function MaskedBadge(backgroundColor) {
     obj[2] = items1;
     obj[3] = value;
     obj[4] = maxValue;
-    let tmp7Result = jsx(backgroundColor(1296).MaskedBadge, { maskStyle: null, dotStyle: null, style: null, value: null, maxValue: null });
+    let tmp7Result = jsx(backgroundColor(1178).MaskedBadge, { maskStyle: null, dotStyle: null, style: null, value: null, maxValue: null });
     const tmp7 = jsx;
   } else {
     tmp7Result = null;

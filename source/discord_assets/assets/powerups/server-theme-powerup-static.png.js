@@ -1,9 +1,9 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16170
+// Function ID: 16171
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16092 (metadata)
+// Module 16170 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/powerups/server-theme-powerup-static.png.js");

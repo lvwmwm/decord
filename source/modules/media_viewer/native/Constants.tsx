@@ -1,9 +1,9 @@
-// Module ID: 8222
-// Function ID: 8223
+// Module ID: 8292
+// Function ID: 8293
 // Name: THUMBNAIL_MARGIN
 // Dependencies: [2]
 
-// Module 8222 (THUMBNAIL_MARGIN)
+// Module 8292 (THUMBNAIL_MARGIN)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/media_viewer/native/Constants.tsx");

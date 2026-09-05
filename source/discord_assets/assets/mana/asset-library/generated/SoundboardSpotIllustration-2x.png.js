@@ -1,9 +1,9 @@
-// Module ID: 6421
-// Function ID: 6422
+// Module ID: 6478
+// Function ID: 6479
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6421 (metadata)
+// Module 6478 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundboardSpotIllustration-2x.png.js");

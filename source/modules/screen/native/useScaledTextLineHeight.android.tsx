@@ -1,14 +1,14 @@
-// Module ID: 10048
-// Function ID: 10049
+// Module ID: 10119
+// Function ID: 10120
 // Name: map
-// Dependencies: [10049, 4477, 4943, 2]
+// Dependencies: [10120, 4556, 4982, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight, useScaledTextLineHeight
 
-// Module 10048 (map)
+// Module 10119 (map)
 import set from "set" /* 2 */;
-import Text from "Text" /* 4477 */;
-import getFontScale from "getFontScale" /* 4943 */;
-import enforcingDefault from "enforcing" /* 10049 */;
+import Text from "Text" /* 4556 */;
+import getFontScale from "getFontScale" /* 4982 */;
+import enforcingDefault from "enforcing" /* 10120 */;
 
 const map = new Map();
 let result = set.fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");

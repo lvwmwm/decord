@@ -1,17 +1,17 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14704
+// Function ID: 14705
 // Name: route
-// Dependencies: [19, 1921, 7906, 673, 21, 586, 4325, 11803, 4477, 11400, 1233, 14630, 2]
+// Dependencies: [19, 1371, 7975, 1074, 21, 504, 4404, 11871, 4556, 11468, 1114, 14705, 2]
 
-// Module 14629 (route)
+// Module 14704 (route)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import useCurrentUserHasAutomodQuarantinedProfile from "useCurrentUserHasAutomodQuarantinedProfile" /* 11803 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import useCurrentUserHasAutomodQuarantinedProfile from "useCurrentUserHasAutomodQuarantinedProfile" /* 11871 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 noopAll;
@@ -48,7 +48,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(14630) /* UsernameStatusMessage */.default;
+    return require(14705) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

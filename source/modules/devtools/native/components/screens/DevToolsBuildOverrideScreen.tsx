@@ -1,16 +1,16 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15580
+// Function ID: 15581
 // Name: jsx
-// Dependencies: [32, 19, 17, 11357, 21, 4481, 709, 8792, 15505, 6921, 586, 11721, 4934, 5642, 5560, 4428, 7130, 4193, 15082, 4439, 5640, 5643, 6547, 4936, 1394, 2]
+// Dependencies: [32, 19, 17, 11425, 21, 4560, 576, 8862, 15581, 6981, 504, 11789, 4973, 5687, 5605, 4507, 7190, 4258, 15158, 4518, 5685, 5688, 6606, 4975, 1369, 2]
 
-// Module 15504 (jsx)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15580 (jsx)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getCurrentBuildOverride" /* 11357 */;
+import closure_6 from "getCurrentBuildOverride" /* 11425 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -28,13 +28,13 @@ items[1] = { label: "Commit SHA", value: "id", icon: jsx(require("HashmarkIcon")
 let obj3 = { label: "Commit SHA", value: "id", icon: jsx(require("HashmarkIcon").HashmarkIcon, {}) };
 const memoResult = importAllResult.memo(() => {
   let tmp = callback2();
-  let obj = first(586);
+  let obj = first(504);
   items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 11721).DEVICE_FIELD];
+      tmp = overrides[first(undefined, 11789).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -45,12 +45,12 @@ const memoResult = importAllResult.memo(() => {
   obj = { style: tmp.content, contentContainerStyle: null, children: null };
   obj = {};
   let merged = Object.assign(tmp.contentContainer);
-  obj.paddingBottom = tmp.contentContainer.padding + first(6921)({ includeKeyboardHeight: true }).insets.bottom;
+  obj.paddingBottom = tmp.contentContainer.padding + first(6981)({ includeKeyboardHeight: true }).insets.bottom;
   obj[1] = obj;
   let tmp10Result = null;
   if (null != stateFromStores) {
     obj1 = { icon: null, label: null, subLabel: null, onPress: null };
-    obj1[0] = tmp7(tmp3(4428).CopyIcon, {});
+    obj1[0] = tmp7(tmp3(4507).CopyIcon, {});
     first = stateFromStores;
     const found = items.find((value) => value.value === first.type);
     let label;
@@ -61,28 +61,28 @@ const memoResult = importAllResult.memo(() => {
     obj1[1] = label;
     obj1[2] = stateFromStores.id;
     obj1[3] = function onPress() {
-      first(7130).copy(first.id);
-      const obj = first(7130);
-      const result = first(4193).presentCopiedToClipboard();
+      first(7190).copy(first.id);
+      const obj = first(7190);
+      const result = first(4258).presentCopiedToClipboard();
     };
-    const items1 = [tmp7(tmp3(5560).TableRow, obj1), , ];
+    const items1 = [tmp7(tmp3(5605).TableRow, obj1), , ];
     let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
-    obj3[0] = tmp7(tmp3(15082).RefreshIcon, {});
-    obj3[2] = tmp3(11721).refreshBuildOverride;
-    items1[1] = tmp7(tmp3(5560).TableRow, obj3);
+    obj3[0] = tmp7(tmp3(15158).RefreshIcon, {});
+    obj3[2] = tmp3(11789).refreshBuildOverride;
+    items1[1] = tmp7(tmp3(5605).TableRow, obj3);
     const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
-    obj4[0] = tmp7(tmp3(4439).TrashIcon, { color: "text-feedback-critical" });
-    obj4[3] = tmp3(11721).clearBuildOverride;
-    items1[2] = tmp7(tmp3(5560).TableRow, obj4);
+    obj4[0] = tmp7(tmp3(4518).TrashIcon, { color: "text-feedback-critical" });
+    obj4[3] = tmp3(11789).clearBuildOverride;
+    items1[2] = tmp7(tmp3(5605).TableRow, obj4);
     obj2[2] = items1;
-    tmp10Result = tmp10(tmp3(5642).TableRowGroup, obj2);
+    tmp10Result = tmp10(tmp3(5687).TableRowGroup, obj2);
   }
   const items2 = [tmp10Result, , , ];
   let str = "";
   if (null != stateFromStores) {
     str = "New";
   }
-  items2[1] = jsx(first(5640).TableRadioGroup, {
+  items2[1] = jsx(first(5685).TableRadioGroup, {
     title: `${str} Override Type`,
     defaultValue: first.type,
     onChange(type) {
@@ -92,7 +92,7 @@ const memoResult = importAllResult.memo(() => {
     children: items.map((value) => {
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(5643).TableRadioRow, { value, label, icon }, value);
+      return callback(first(5688).TableRadioRow, { value, label, icon }, value);
     })
   });
   const found1 = items.find((value) => value.value === first.type);
@@ -123,11 +123,11 @@ const memoResult = importAllResult.memo(() => {
     children: items.map((value) => {
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(5643).TableRadioRow, { value, label, icon }, value);
+      return callback(first(5688).TableRadioRow, { value, label, icon }, value);
     })
   };
   const tmp8 = ScrollView;
-  obj7[1] = jsx(first(6547).TextInput, {
+  obj7[1] = jsx(first(6606).TextInput, {
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
@@ -141,27 +141,27 @@ const memoResult = importAllResult.memo(() => {
     autoComplete: "off",
     isClearable: true
   });
-  obj6[2] = jsx(first(5560).TableRow, { icon, label: null });
-  items2[2] = jsx(first(5642).TableRowGroup, { title: label1, hasIcons: true, children: null });
-  items2[3] = jsx(first(4936).Button, {
+  obj6[2] = jsx(first(5605).TableRow, { icon, label: null });
+  items2[2] = jsx(first(5687).TableRowGroup, { title: label1, hasIcons: true, children: null });
+  items2[3] = jsx(first(4975).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = first(11721).setBuildOverrideForBranch(tmp.id);
-        const obj3 = first(11721);
+        const result = first(11789).setBuildOverrideForBranch(tmp.id);
+        const obj3 = first(11789);
       } else if ("id" === type) {
-        const result1 = first(11721).setBuildOverrideForId(tmp.id);
-        const obj2 = first(11721);
+        const result1 = first(11789).setBuildOverrideForId(tmp.id);
+        const obj2 = first(11789);
       } else {
-        first(1394).assertNever(tmp.type);
-        const obj = first(1394);
+        first(1369).assertNever(tmp.type);
+        const obj = first(1369);
       }
     }
   });
   obj8[1] = items2;
-  obj[2] = jsxs(first(4934).Stack, { spacing: 16, children: null });
+  obj[2] = jsxs(first(4973).Stack, { spacing: 16, children: null });
   return <tmp8 />;
 });
 let result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");

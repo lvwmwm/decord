@@ -1,18 +1,18 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12632
+// Function ID: 12633
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [32, 19, 1908, 4120, 5497, 4303, 673, 11, 586, 5496, 2]
+// Dependencies: [32, 19, 1979, 4199, 5542, 4382, 1074, 11, 504, 5541, 2]
 // Exports: default
 
-// Module 12564 (useGetJoinRequestAndGuildForInterviewChannel)
-import initialize from "initialize" /* 586 */;
+// Module 12632 (useGetJoinRequestAndGuildForInterviewChannel)
+import initialize from "initialize" /* 504 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 5497 */;
-import closure_8 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import { Permissions } from "ME" /* 673 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 5542 */;
+import closure_8 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import { Permissions } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx");
@@ -53,19 +53,19 @@ export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
   const effect = joinRequest.useEffect(() => {
     if (!tmp) {
       dependencyMap(true);
-      const requestToJoinGuilds = first(5496).fetchRequestToJoinGuilds();
-      const obj = first(5496);
+      const requestToJoinGuilds = first(5541).fetchRequestToJoinGuilds();
+      const obj = first(5541);
     }
   }, items1);
   const items2 = [joinRequest, castResult];
   const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
       callback(true);
-      const joinRequestForInterview = first(5496).fetchJoinRequestForInterview(closure_3);
+      const joinRequestForInterview = first(5541).fetchJoinRequestForInterview(closure_3);
       joinRequestForInterview.finally(() => {
         callback(false);
       });
-      const obj = first(5496);
+      const obj = first(5541);
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };

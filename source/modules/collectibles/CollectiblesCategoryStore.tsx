@@ -1,15 +1,15 @@
-// Module ID: 7475
-// Function ID: 7476
+// Module ID: 7542
+// Function ID: 7543
 // Name: updateCategoriesAndProducts
-// Dependencies: [1995, 7476, 684, 581, 706, 12, 7487, 586, 2]
+// Dependencies: [2025, 7543, 1090, 559, 573, 12, 7554, 504, 2]
 
-// Module 7475 (updateCategoriesAndProducts)
-import failsDefault from "fails" /* 581 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
-import closure_4 from "fromServer" /* 7476 */;
+// Module 7542 (updateCategoriesAndProducts)
+import initializeDefault from "initialize" /* 504 */;
+import failsDefault from "fails" /* 559 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import closure_3 from "_getSystemLocale" /* 2025 */;
+import closure_4 from "fromServer" /* 7543 */;
 
 const require = arg1;
 function updateCategoriesAndProducts(map) {
@@ -18,7 +18,7 @@ function updateCategoriesAndProducts(map) {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  const productsFromCategories = map1(7487).getProductsFromCategories(map, true);
+  const productsFromCategories = map1(7554).getProductsFromCategories(map, true);
   map1 = new Map(productsFromCategories.map((skuId) => {
     const items = [skuId.skuId, skuId];
     return items;
@@ -28,8 +28,8 @@ function updateCategoriesAndProducts(map) {
       const result = map1.set(skuId.skuId, skuId);
     }
   });
-  const obj = map1(7487);
-  const productsFromCategories1 = map1(7487).getProductsFromCategories(map, false);
+  const obj = map1(7554);
+  const productsFromCategories1 = map1(7554).getProductsFromCategories(map, false);
   map2 = new Map(productsFromCategories1.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;

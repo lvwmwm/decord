@@ -1,12 +1,12 @@
-// Module ID: 4727
-// Function ID: 4728
+// Module ID: 4759
+// Function ID: 4760
 // Name: handleGuildRoomError
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: handleGuildRoomError
 
-// Module 4727 (handleGuildRoomError)
+// Module 4759 (handleGuildRoomError)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const NOOP_NULL = ME.NOOP_NULL;
 const result = set.fileFinishedImporting("modules/guild_rooms/GuildRoomErrorUtils.native.tsx");

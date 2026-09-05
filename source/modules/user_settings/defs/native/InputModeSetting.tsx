@@ -1,13 +1,13 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15248
+// Function ID: 15249
 // Name: pressable
-// Dependencies: [4532, 7906, 4545, 586, 1233, 11400, 9912, 2]
+// Dependencies: [1908, 7975, 4585, 504, 1114, 11468, 9983, 2]
 
-// Module 15172 (pressable)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4532 */;
-import { InputModes } from "DesktopSources" /* 4545 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15248 (pressable)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_2 from "_detectH265HardwareDecode" /* 1908 */;
+import { InputModes } from "DesktopSources" /* 4585 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -19,11 +19,11 @@ createToggle = {
   useTrailing: function useInputModeSettingTrailing() {
     const items = [closure_2];
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = tmp(1233).intl;
-      let stringResult = intl2.string(tmp(1233).t.Q8gkVL);
+      const intl2 = tmp(1114).intl;
+      let stringResult = intl2.string(tmp(1114).t.Q8gkVL);
     } else {
-      const intl = tmp(1233).intl;
-      stringResult = intl.string(tmp(1233).t.cHCEOJ);
+      const intl = tmp(1114).intl;
+      stringResult = intl.string(tmp(1114).t.cHCEOJ);
     }
     return stringResult;
   },

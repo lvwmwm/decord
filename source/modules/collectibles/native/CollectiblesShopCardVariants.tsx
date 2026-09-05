@@ -1,17 +1,17 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8865
+// Function ID: 8866
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4481, 709, 8772, 8796, 7073, 8797, 8695, 7486, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8842, 8866, 7133, 8867, 8765, 7553, 2]
 
-// Module 8795 (VariantOption)
-import ThemesDefault from "Themes" /* 709 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7073 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 8772 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8796 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 8797 */;
+// Module 8865 (VariantOption)
+import ThemesDefault from "Themes" /* 576 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7133 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 8842 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8866 */;
+import PlusSmallIcon from "PlusSmallIcon" /* 8867 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -74,7 +74,7 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
 const memoResult = importAllResult.memo(function CardProductVariants(product) {
   product = product.product;
   let defaultVariantIndex;
-  let obj = defaultVariantIndex(8695);
+  let obj = defaultVariantIndex(8765);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo(function CardProductVariants(product) {
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(7486);
+  obj2 = defaultVariantIndex(7553);
 });
 const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 5038
-// Function ID: 5039
+// Module ID: 5077
+// Function ID: 5078
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 709, 4196, 5006, 2]
+// Dependencies: [19, 21, 576, 4261, 5045, 2]
 // Exports: TextSpoilerIcon
 
-// Module 5038 (TextSpoilerIcon)
+// Module 5077 (TextSpoilerIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5006 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 5045 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

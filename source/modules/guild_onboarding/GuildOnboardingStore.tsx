@@ -1,15 +1,15 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 7096
+// Function ID: 7097
 // Name: shouldShowOnboarding
-// Dependencies: [673, 586, 1911, 706, 2]
+// Dependencies: [1074, 504, 1982, 573, 2]
 // Exports: isOnboarding
 
-// Module 7036 (shouldShowOnboarding)
+// Module 7096 (shouldShowOnboarding)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import ME2 from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME2 from "ME" /* 1074 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
 
 const ME = ME2.ME;
 let obj = { STARTED: "started", READY: "ready", COMPLETED: "completed", NOT_APPLICABLE: "not_applicable" };

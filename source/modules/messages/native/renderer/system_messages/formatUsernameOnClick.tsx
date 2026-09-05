@@ -1,13 +1,13 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7962
+// Function ID: 7963
 // Name: formatUsernameOnClick
-// Dependencies: [1921, 7892, 7894, 2]
+// Dependencies: [1371, 7961, 7963, 2]
 // Exports: default
 
-// Module 7893 (formatUsernameOnClick)
-import processColorStrings from "processColorStrings" /* 7892 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7894 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
+// Module 7962 (formatUsernameOnClick)
+import processColorStrings from "processColorStrings" /* 7961 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7963 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");

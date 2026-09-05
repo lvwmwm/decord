@@ -1,13 +1,13 @@
-// Module ID: 7576
-// Function ID: 7577
+// Module ID: 7643
+// Function ID: 7644
 // Name: handleCacheOrSocketLoaded
-// Dependencies: [1908, 4130, 586, 706, 2]
+// Dependencies: [1979, 4209, 504, 573, 2]
 
-// Module 7576 (handleCacheOrSocketLoaded)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "createGuildRecordFromRust" /* 1908 */;
-import closure_1 from "markAllUserIdListsStale" /* 4130 */;
+// Module 7643 (handleCacheOrSocketLoaded)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "createGuildRecordFromRust" /* 1979 */;
+import closure_1 from "markAllUserIdListsStale" /* 4209 */;
 
 function handleCacheOrSocketLoaded() {
   let flag = false;

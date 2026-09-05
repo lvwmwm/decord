@@ -1,12 +1,12 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 12508
+// Function ID: 12509
 // Name: useIsNewGamesCoachmarkEnabled
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 12440 (useIsNewGamesCoachmarkEnabled)
+// Module 12508 (useIsNewGamesCoachmarkEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

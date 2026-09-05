@@ -1,12 +1,12 @@
-// Module ID: 10264
-// Function ID: 10265
+// Module ID: 10335
+// Function ID: 10336
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [1995, 586, 1233, 2]
+// Dependencies: [2025, 504, 1114, 2]
 // Exports: default
 
-// Module 10264 (useMaybeAddPollsMarketingEasterEggNote)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "_getSystemLocale" /* 1995 */;
+// Module 10335 (useMaybeAddPollsMarketingEasterEggNote)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "_getSystemLocale" /* 2025 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
@@ -18,10 +18,10 @@ export default function useMaybeAddPollsMarketingEasterEggNote(arg0) {
   if (":pizza:" === arg0) {
     formatToPlainStringResult = arg0;
     if (tmp4) {
-      const intl = tmp(1233).intl;
+      const intl = tmp(1114).intl;
       const obj = { emojiName: null };
       obj[0] = arg0;
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1233).t["1knDPI"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t["1knDPI"], obj);
     }
   }
   return formatToPlainStringResult;

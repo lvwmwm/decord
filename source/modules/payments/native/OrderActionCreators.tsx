@@ -1,14 +1,14 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7429
+// Function ID: 7430
 // Name: getOrders
-// Dependencies: [5, 4463, 673, 3, 527, 4154, 706, 7183, 2]
+// Dependencies: [5, 4542, 1074, 3, 1272, 4233, 573, 7243, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7363 (getOrders)
+// Module 7429 (getOrders)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4463 */;
-import { Endpoints } from "ME" /* 673 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4542 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function getOrders() {
@@ -236,7 +236,7 @@ function _createOrder() {
             } else {
               dispatchResult = callback2;
               dispatchResult = dependencyMap;
-              dispatchResult = callback2(706).dispatch({ type: "ORDER_CREATE_START" });
+              dispatchResult = callback2(573).dispatch({ type: "ORDER_CREATE_START" });
               dispatchResult = callback2;
               c4 = 1;
               dispatchResult = c3;
@@ -306,7 +306,7 @@ function _createOrder() {
               if (null != logger) {
                 obj3.external_gateway_facet = logger;
               }
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj7 = { url: null, body: null, rejectWithError: true, retries: 3 };
               obj7[0] = constants.ORDER_CREATE;
               obj7[1] = obj3;
@@ -322,7 +322,7 @@ function _createOrder() {
             const obj9 = { response: null };
             obj9[0] = closure_11;
             logger.error("failed to create order", obj9);
-            obj6 = callback2(706);
+            obj6 = callback2(573);
             constants = 3;
             logger = 1;
             const obj10 = { value: null, done: false };
@@ -366,7 +366,7 @@ function _createOrder() {
               constants = 5;
               logger = 1;
               const obj15 = { value: null, done: false };
-              obj15[0] = callback2(706).dispatch(obj14);
+              obj15[0] = callback2(573).dispatch(obj14);
               return obj15;
             }
           } else if (arg0 === 1) {
@@ -611,13 +611,13 @@ function _patchOrderLineItem() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              callback2(706).dispatch({ type: "ORDER_UPDATE_START" });
+              callback2(573).dispatch({ type: "ORDER_UPDATE_START" });
               c4 = 1;
               const obj2 = { expected_revision: null, subscription_plan_id: null };
               obj2[0] = c3;
               obj2[1] = dependencyMap;
               c4 = obj2;
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj3 = { url: null, body: null, rejectWithError: true };
               obj3[0] = c5.ORDER_PATCH_LINE_ITEM(callback, callback2);
               obj3[1] = c4;
@@ -630,7 +630,7 @@ function _patchOrderLineItem() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = c3;
-            let obj5 = callback(4154);
+            let obj5 = callback(4233);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrderLineItem" };
             const obj6 = { orderId: null, orderLineItemId: null, subscriptionPlanId: null };
@@ -644,7 +644,7 @@ function _patchOrderLineItem() {
             obj7[1] = callback;
             obj7[2] = callback2;
             logger.error("failed to update order line item id", obj7);
-            let obj9 = callback2(706);
+            let obj9 = callback2(573);
             c5 = 3;
             logger = 1;
             const obj8 = { value: null, done: false };
@@ -684,7 +684,7 @@ function _patchOrderLineItem() {
               c5 = 5;
               logger = 1;
               const obj13 = { value: null, done: false };
-              obj13[0] = callback2(706).dispatch(obj12);
+              obj13[0] = callback2(573).dispatch(obj12);
               return obj13;
             }
           } else if (arg0 === 1) {
@@ -784,7 +784,7 @@ function _patchOrder() {
               obj1[0] = body;
               return obj1;
             } else {
-              callback2(706).dispatch({ type: "ORDER_UPDATE_START" });
+              callback2(573).dispatch({ type: "ORDER_UPDATE_START" });
               c4 = 1;
               const obj2 = { expected_revision: null };
               obj2[0] = callback2;
@@ -798,7 +798,7 @@ function _patchOrder() {
               if (null != c4) {
                 c5.external_gateway_facet = c4;
               }
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj3 = { url: null, body: null, rejectWithError: true };
               obj3[0] = c5.ORDER_UPDATE(callback);
               obj3[1] = c5;
@@ -811,7 +811,7 @@ function _patchOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             closure_7 = c3;
-            let obj5 = callback(4154);
+            let obj5 = callback(4233);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrder" };
             const obj6 = { orderId: null, orderLineItems: null };
@@ -823,7 +823,7 @@ function _patchOrder() {
             obj7[0] = closure_7;
             obj7[1] = callback;
             logger.error("failed to patch order", obj7);
-            let obj9 = callback2(706);
+            let obj9 = callback2(573);
             c5 = 3;
             logger = 1;
             const obj8 = { value: null, done: false };
@@ -862,7 +862,7 @@ function _patchOrder() {
               c5 = 5;
               logger = 1;
               const obj13 = { value: null, done: false };
-              obj13[0] = callback2(706).dispatch(obj12);
+              obj13[0] = callback2(573).dispatch(obj12);
               return obj13;
             }
           } else if (arg0 === 1) {
@@ -961,7 +961,7 @@ function _updateOrder() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              lib(706).dispatch({ type: "ORDER_UPDATE_START" });
+              lib(573).dispatch({ type: "ORDER_UPDATE_START" });
               c4 = 1;
               obj2 = { expected_revision: null };
               obj2[0] = dependencyMap;
@@ -992,7 +992,7 @@ function _updateOrder() {
                 obj3[1] = c4;
                 obj2.gifting_facet = obj3;
               }
-              const HTTP = callback(527).HTTP;
+              const HTTP = callback(1272).HTTP;
               const obj4 = { url: null, body: null, rejectWithError: true };
               obj4[0] = c5.ORDER_UPDATE(callback);
               obj4[1] = obj2;
@@ -1005,7 +1005,7 @@ function _updateOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = obj2;
-            obj5 = callback(4154);
+            obj5 = callback(4233);
             const obj6 = { tags: null, extra: null };
             obj6[0] = { source: "OrderActionCreators_updateOrder" };
             const obj7 = { orderId: null, giftInfo: null };
@@ -1017,7 +1017,7 @@ function _updateOrder() {
             obj8[0] = logger;
             obj8[1] = callback;
             logger.error("failed to update order", obj8);
-            let obj9 = lib(706);
+            let obj9 = lib(573);
             c5 = 3;
             logger = 1;
             obj9 = { value: null, done: false };
@@ -1056,7 +1056,7 @@ function _updateOrder() {
               c5 = 5;
               logger = 1;
               const obj14 = { value: null, done: false };
-              obj14[0] = lib(706).dispatch(obj13);
+              obj14[0] = lib(573).dispatch(obj13);
               return obj14;
             }
           } else if (arg0 === 1) {

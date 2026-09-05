@@ -1,13 +1,13 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8175
+// Function ID: 8176
 // Name: navigateToNitroManagement
-// Dependencies: [673, 7320, 2]
+// Dependencies: [1074, 7382, 2]
 // Exports: navigateToNitroManagement
 
-// Module 8106 (navigateToNitroManagement)
+// Module 8175 (navigateToNitroManagement)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import openUserSettings from "openUserSettings" /* 7320 */;
+import ME from "ME" /* 1074 */;
+import openUserSettings from "openUserSettings" /* 7382 */;
 
 const UserSettingsSections = ME.UserSettingsSections;
 const result = set.fileFinishedImporting("modules/user_profile/native/EditCollectiblesActionCreators.tsx");

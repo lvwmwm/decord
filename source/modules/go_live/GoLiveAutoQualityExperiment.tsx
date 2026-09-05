@@ -1,15 +1,15 @@
-// Module ID: 9885
-// Function ID: 9886
+// Module ID: 9956
+// Function ID: 9957
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1209, 4575, 4540, 1469, 586, 592, 4670, 2]
+// Dependencies: [1236, 4606, 4607, 1434, 504, 510, 4702, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 9885 (getGoLiveAutoQualityExperimentConfig)
-import Storage3 from "Storage" /* 592 */;
-import closure_2 from "initialize" /* 1209 */;
-import closure_3 from "ApplicationStreamPresets" /* 4575 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4540 */;
-import importDefaultResult from "getUnitId" /* 1469 */;
+// Module 9956 (getGoLiveAutoQualityExperimentConfig)
+import Storage3 from "Storage" /* 510 */;
+import closure_2 from "initialize" /* 1236 */;
+import closure_3 from "ApplicationStreamPresets" /* 4606 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4607 */;
+import importDefaultResult from "getUnitId" /* 1434 */;
 
 require = arg1;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
@@ -36,7 +36,7 @@ export const getGoLiveAutoQualityExperimentConfig = function getGoLiveAutoQualit
 export const useGoLiveAutoQualityExperimentConfig = function useGoLiveAutoQualityExperimentConfig(location) {
   location = location.location;
   const items = [closure_2];
-  return location(586).useStateFromStores(items, () => closure_1_6.getConfig({ location }));
+  return location(504).useStateFromStores(items, () => closure_1_6.getConfig({ location }));
 };
 export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
   const Storage = Storage3.Storage;
@@ -51,10 +51,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         const obj = { preset: null, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
-        tmp(4670).updateStreamSettings(obj);
-        const Storage2 = tmp(592).Storage;
+        tmp(4702).updateStreamSettings(obj);
+        const Storage2 = tmp(510).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4670);
+        const tmpResult = tmp(4702);
       }
     }
   }

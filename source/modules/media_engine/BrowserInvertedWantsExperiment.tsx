@@ -1,13 +1,13 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13806
+// Function ID: 13807
 // Name: getBrowserInvertedWantsConfig
-// Dependencies: [1468, 1235, 2]
+// Dependencies: [1433, 1116, 2]
 // Exports: getBrowserInvertedWantsConfig
 
-// Module 13731 (getBrowserInvertedWantsConfig)
+// Module 13806 (getBrowserInvertedWantsConfig)
 import set from "set" /* 2 */;
-import PlatformTypes from "PlatformTypes" /* 1235 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import PlatformTypes from "PlatformTypes" /* 1116 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 let obj = { 1: null };
 obj[1] = { invertWants: true };

@@ -1,20 +1,20 @@
-// Module ID: 12635
-// Function ID: 12636
+// Module ID: 12703
+// Function ID: 12704
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1921, 12609, 21, 4481, 5637, 709, 1498, 4477, 1233, 6984, 6985, 12608, 644, 6978, 38, 7018, 6933, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 12677, 21, 4560, 5682, 576, 1483, 4556, 1114, 7044, 7045, 12676, 563, 7038, 38, 7078, 6993, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12635 (AddPhoneScreen)
-import ThemesDefault from "Themes" /* 709 */;
-import AddPhoneDefault from "AddPhone" /* 6984 */;
+// Module 12703 (AddPhoneScreen)
+import ThemesDefault from "Themes" /* 576 */;
+import AddPhoneDefault from "AddPhone" /* 7044 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 12609 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12677 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -30,22 +30,22 @@ let obj1 = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW,
 let result = require("set").fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
 
 export const AddPhoneScreen = function AddPhoneScreen() {
-  let obj = _require(1498);
+  let obj = _require(1483);
   _require = obj.useNavigation();
   const tmp = callback4();
   obj = { style: tmp.header, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = _require(1233).intl;
-  obj[4] = intl.string(_require(1233).t.Xgb497);
-  const items = [callback2(_require(4477).Text, obj), ];
+  const intl = _require(1114).intl;
+  obj[4] = intl.string(_require(1114).t.Xgb497);
+  const items = [callback2(_require(4556).Text, obj), ];
   obj1 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = _require(1233).intl;
-  obj1[3] = intl2.string(_require(1233).t.qFmzyo);
-  items[1] = callback2(_require(4477).Text, obj1);
+  const intl2 = _require(1114).intl;
+  obj1[3] = intl2.string(_require(1114).t.qFmzyo);
+  items[1] = callback2(_require(4556).Text, obj1);
   obj[1] = items;
   const obj2 = { style: tmp.container, reason: null, header: null, onComplete: null };
   const tmp2 = callback3(View, obj);
-  obj2[1] = _require(6985).ChangePhoneReason.CONTACT_SYNC;
+  obj2[1] = _require(7045).ChangePhoneReason.CONTACT_SYNC;
   obj2[2] = tmp2;
   obj2[3] = function onComplete(arg0) {
     return callback(closure_1_2[15]).submitPhone(arg0, callback);

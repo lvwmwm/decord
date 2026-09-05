@@ -1,12 +1,12 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 13299
+// Function ID: 13300
 // Name: useCheckoutPlan
-// Dependencies: [19, 7358, 1234, 7342, 2]
+// Dependencies: [19, 7424, 1115, 7409, 2]
 // Exports: useCheckoutPlan, useCheckoutPlanDiscountPrices, useCheckoutPlanPriceString
 
-// Module 13227 (useCheckoutPlan)
+// Module 13299 (useCheckoutPlan)
 import closure_2 from "noop" /* 19 */;
-import { useNativeCheckoutStore } from "context" /* 7358 */;
+import { useNativeCheckoutStore } from "context" /* 7424 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
@@ -15,7 +15,7 @@ export const useCheckoutPlan = function useCheckoutPlan(arg0) {
   const _require = arg0;
   const tmp2 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   dependencyMap = tmp2;
-  let obj = _require(1234);
+  let obj = _require(1115);
   const tmp3 = obj.isIOS() && useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
   const React = tmp3;
   obj = {
@@ -44,7 +44,7 @@ export const useCheckoutPlanDiscountPrices = function useCheckoutPlanDiscountPri
   const tmp2 = regularPriceString((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   dependencyMap = tmp2;
   const tmp = regularPriceString((orderRequired) => orderRequired.orderRequired);
-  let tmp3 = memo(1234).isIOS() && tmp;
+  let tmp3 = memo(1115).isIOS() && tmp;
   discountedPriceString = tmp3;
   const items = [tmp2, productId, tmp3];
   memo = discountedPriceString.useMemo(() => {
@@ -108,7 +108,7 @@ export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(pr
   const tmp3 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   dependencyMap = tmp3;
   const tmp2 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
-  const tmp4 = _require(1234).isIOS() && tmp2;
+  const tmp4 = _require(1115).isIOS() && tmp2;
   const React = tmp4;
   const items = [tmp3, productId, tmp4];
   const memo = React.useMemo(() => {

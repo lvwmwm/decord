@@ -1,14 +1,14 @@
-// Module ID: 5097
-// Function ID: 5098
+// Module ID: 5136
+// Function ID: 5137
 // Name: doesImageMatchUpload
-// Dependencies: [5089, 527, 5098, 1915, 2]
+// Dependencies: [5128, 1272, 5137, 1351, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 5097 (doesImageMatchUpload)
+// Module 5136 (doesImageMatchUpload)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import isBlockedDomain from "isBlockedDomain" /* 1915 */;
-import cancel from "cancel" /* 5089 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import isBlockedDomain from "isBlockedDomain" /* 1351 */;
+import cancel from "cancel" /* 5128 */;
 
 const result = set.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
 class DefaultHttpClient {
@@ -122,11 +122,11 @@ export const canUploadNatively = function canUploadNatively(item) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    let tmpResult = tmp(5098);
+    let tmpResult = tmp(5137);
     fileIsInAppDirResult = tmpResult.fileIsInAppDir(item.uri);
   }
   if (fileIsInAppDirResult) {
-    tmpResult = tmp(1915);
+    tmpResult = tmp(1351);
     fileIsInAppDirResult = tmpResult.isLibdiscoreInitialized();
   }
   return fileIsInAppDirResult;

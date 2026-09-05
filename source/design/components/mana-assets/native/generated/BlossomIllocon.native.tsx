@@ -1,14 +1,14 @@
-// Module ID: 5750
-// Function ID: 5751
+// Module ID: 5797
+// Function ID: 5798
 // Name: BlossomIllocon
-// Dependencies: [21, 5542, 5751, 2]
+// Dependencies: [21, 5587, 5798, 2]
 // Exports: BlossomIllocon
 
-// Module 5750 (BlossomIllocon)
+// Module 5797 (BlossomIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5751 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5798 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BlossomIllocon.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6129
+// Function ID: 6130
 // Name: GiftBoxSpotIllustration
-// Dependencies: [21, 5542, 6075, 2]
+// Dependencies: [21, 5587, 6130, 2]
 // Exports: GiftBoxSpotIllustration
 
-// Module 6074 (GiftBoxSpotIllustration)
+// Module 6129 (GiftBoxSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6075 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6130 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftBoxSpotIllustration.native.tsx");

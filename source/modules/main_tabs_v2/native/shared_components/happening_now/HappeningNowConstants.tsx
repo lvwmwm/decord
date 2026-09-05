@@ -1,11 +1,11 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15294
+// Function ID: 15295
 // Name: HAPPENING_NOW_PANELS_CONTAINER_PADDING
-// Dependencies: [1296, 2]
+// Dependencies: [1178, 2]
 
-// Module 15218 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
+// Module 15294 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
 import set from "set" /* 2 */;
-import Button from "Button" /* 1296 */;
+import Button from "Button" /* 1178 */;
 
 const obj = { padding: Button.STATUS_PADDING - 1 };
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx");

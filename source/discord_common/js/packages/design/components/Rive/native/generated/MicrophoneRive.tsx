@@ -1,11 +1,11 @@
-// Module ID: 4288
-// Function ID: 4289
+// Module ID: 4366
+// Function ID: 4367
 // Name: MicrophoneRive
-// Dependencies: [109, 19, 21, 4212, 4289, 4267, 2]
+// Dependencies: [109, 19, 21, 4290, 4367, 4345, 2]
 
-// Module 4288 (MicrophoneRive)
-import BaseRive from "BaseRive" /* 4212 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4267 */;
+// Module 4366 (MicrophoneRive)
+import BaseRive from "BaseRive" /* 4290 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4345 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

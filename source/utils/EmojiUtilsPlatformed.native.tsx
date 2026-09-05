@@ -1,17 +1,17 @@
-// Module ID: 7715
-// Function ID: 7716
+// Module ID: 7783
+// Function ID: 7784
 // Name: getURL
-// Dependencies: [32, 5, 17, 4135, 4460, 1234, 12, 1431, 7716, 1489, 4329, 7755, 7760, 2]
+// Dependencies: [32, 5, 17, 4214, 4539, 1115, 12, 1396, 7784, 1474, 4409, 7823, 7828, 2]
 
-// Module 7715 (getURL)
+// Module 7783 (getURL)
 import applyDefault from "apply" /* 12 */;
-import set from "set" /* 1234 */;
-import onDismiss from "onDismiss" /* 7755 */;
+import set from "set" /* 1115 */;
+import onDismiss from "onDismiss" /* 7823 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "defaultImageSrcGenerator" /* 4135 */;
-import importDefaultResult from "set" /* 7760 */;
+import closure_7 from "defaultImageSrcGenerator" /* 4214 */;
+import importDefaultResult from "set" /* 7828 */;
 
 require = arg1;
 function getURL(name) {
@@ -145,9 +145,9 @@ let obj = {
     if (!obj.isAndroid()) {
       found = applyDefault.filter(emojis, (unicodeVersion) => {
         unicodeVersion = unicodeVersion.unicodeVersion;
-        const systemVersionMajor = callback(4460).getSystemVersionMajor();
-        const obj = callback(4460);
-        const systemVersionMinor = callback(4460).getSystemVersionMinor();
+        const systemVersionMajor = callback(4539).getSystemVersionMajor();
+        const obj = callback(4539);
+        const systemVersionMinor = callback(4539).getSystemVersionMinor();
         let flag = true;
         if (unicodeVersion > 8) {
           if (9 === unicodeVersion) {

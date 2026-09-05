@@ -1,17 +1,17 @@
-// Module ID: 15926
-// Function ID: 15927
-// Dependencies: [19, 17, 21, 4481, 4331, 7806, 1627, 4205, 5086, 15927, 2]
+// Module ID: 16002
+// Function ID: 16003
+// Dependencies: [19, 17, 21, 4560, 4413, 7874, 1611, 4271, 5125, 16003, 2]
 
-// Module 15926
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ManaContext from "ManaContext" /* 4205 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4331 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5086 */;
-import useActiveThemeType from "useActiveThemeType" /* 7806 */;
-import _modDef15927 from "module_15927" /* 15927 */;
+// Module 16002
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import ManaContext from "ManaContext" /* 4271 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4413 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5125 */;
+import useActiveThemeType from "useActiveThemeType" /* 7874 */;
+import _modDef16003 from "module_16003" /* 16003 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -25,7 +25,7 @@ const memoResult = importAllResult.memo(function MainTabs() {
   obj = { style: items, children: null };
   items = [callback3().container, { marginLeft: rect.left, marginRight: rect.right }];
   obj = { gradient: tmp, children: null };
-  const items1 = [callback(getMixedGradientColorDefault, { absolute: true, mix: isCustomThemeActive }), callback(_modDef15927, {})];
+  const items1 = [callback(getMixedGradientColorDefault, { absolute: true, mix: isCustomThemeActive }), callback(_modDef16003, {})];
   obj[1] = items1;
   obj[1] = callback2(ManaContext.ThemeContextProvider, obj);
   return callback(View, obj);

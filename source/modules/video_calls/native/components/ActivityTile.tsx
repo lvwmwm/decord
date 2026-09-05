@@ -1,22 +1,22 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9631
+// Function ID: 9632
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1385, 1921, 673, 1300, 4509, 21, 1296, 4481, 709, 586, 1394, 7108, 4680, 4325, 9561, 7102, 7122, 9548, 1233, 9459, 9461, 9563, 9458, 5084, 9564, 9580, 4477, 4937, 4205, 2]
+// Dependencies: [5, 32, 19, 17, 1956, 1371, 1074, 1182, 1920, 21, 1178, 4560, 576, 504, 1369, 7168, 4712, 4404, 9632, 7162, 7182, 9619, 1114, 9531, 9533, 9634, 9530, 5123, 9635, 9651, 4556, 4976, 4271, 2]
 // Exports: default
 
-// Module 9560 (ActivityTileInner)
+// Module 9631 (ActivityTileInner)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import ManaContext from "ManaContext" /* 4205 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ManaContext from "ManaContext" /* 4271 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1385 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ActivityLayoutMode } from "items3" /* 4509 */;
+import closure_6 from "participantFromServer" /* 1956 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ActivityLayoutMode } from "items3" /* 1920 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ActivityTileInner(participant) {
@@ -81,7 +81,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(9461)(obj1);
+                obj2[0] = v0(9533)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -92,7 +92,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = closure_1_0(9563);
+            obj = closure_1_0(9634);
             const result = obj.setOrientationLockState(closure_3);
           }
           dependencyMap = 3;

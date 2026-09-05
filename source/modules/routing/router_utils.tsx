@@ -1,16 +1,16 @@
-// Module ID: 1219
-// Function ID: 1220
+// Module ID: 1100
+// Function ID: 1101
 // Name: transitionTo
-// Dependencies: [673, 3, 1220, 1228, 1231, 2]
+// Dependencies: [1074, 3, 1101, 1109, 1112, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1219 (transitionTo)
+// Module 1100 (transitionTo)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
-import set2 from "set" /* 1231 */;
-import ME from "ME" /* 673 */;
-import _extends from "_extends" /* 1220 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1109 */;
+import set2 from "set" /* 1112 */;
+import ME from "ME" /* 1074 */;
+import _extends from "_extends" /* 1101 */;
 
 function transitionTo(ME, closure_1) {
   closure_0 = ME;

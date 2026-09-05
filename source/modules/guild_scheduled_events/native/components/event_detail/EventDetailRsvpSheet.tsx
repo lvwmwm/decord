@@ -1,24 +1,24 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9801
+// Function ID: 9802
 // Name: EmptyDisplay
-// Dependencies: [19, 17, 4572, 1921, 502, 21, 4481, 709, 5479, 8337, 9731, 4477, 1233, 8523, 5542, 7102, 586, 1296, 9732, 4325, 8110, 9733, 6567, 5532, 2]
+// Dependencies: [19, 17, 4600, 1371, 1085, 21, 4560, 576, 5524, 8407, 9802, 4556, 1114, 8593, 5587, 7162, 504, 1178, 9803, 4404, 8179, 9804, 6627, 5577, 2]
 
-// Module 9730 (EmptyDisplay)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import preloadDefault from "preload" /* 5542 */;
-import StageSparkleInnerDefault from "StageSparkleInner" /* 8337 */;
-import Form from "Form" /* 8523 */;
-import registerAssetDefault from "registerAsset" /* 9731 */;
+// Module 9801 (EmptyDisplay)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import preloadDefault from "preload" /* 5587 */;
+import StageSparkleInnerDefault from "StageSparkleInner" /* 8407 */;
+import Form from "Form" /* 8593 */;
+import registerAssetDefault from "registerAsset" /* 9802 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4572 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { Fonts } from "sum" /* 502 */;
+import closure_5 from "sortActivity" /* 4600 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { Fonts } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "createTextStyle" /* 5479 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "createTextStyle" /* 5524 */;
 
 require = arg1;
 function EmptyDisplay(arg0) {
@@ -228,11 +228,11 @@ const memoResult = importAllResult.memo((eventUser) => {
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = callback3();
-  analyticsLocations = analyticsLocations(7102)().analyticsLocations;
-  let obj = eventUser(586);
+  analyticsLocations = analyticsLocations(7162)().analyticsLocations;
+  let obj = eventUser(504);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getUser(eventUser.user_id));
-  obj1 = eventUser(586);
+  obj1 = eventUser(504);
   const items1 = [closure_5];
   const items2 = [eventUser.user_id];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: closure_1_5.isMobileOnline(eventUser.user_id), isVROnline: closure_1_5.isVROnline(eventUser.user_id), status: closure_1_5.getStatus(eventUser.user_id) }), items2);
@@ -246,19 +246,19 @@ const memoResult = importAllResult.memo((eventUser) => {
     obj[2] = isMobileOnline;
     obj[3] = isVROnline;
     obj[4] = status;
-    obj[5] = tmp4(1296).AvatarSizes.REFRESH_MEDIUM_32;
-    tmp7Result = tmp7(tmp4(1296).Avatar, obj);
+    obj[5] = tmp4(1178).AvatarSizes.REFRESH_MEDIUM_32;
+    tmp7Result = tmp7(tmp4(1178).Avatar, obj);
   }
   obj[1] = tmp7Result;
   obj1 = { user: stateFromStores, nick: null, usernameStyle: null, nicknameStyle: null };
   const member = eventUser.member;
   let nick;
-  let tmp2Result = tmp2(9732);
+  let tmp2Result = tmp2(9803);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    tmp2Result = tmp2(4325);
+    tmp2Result = tmp2(4404);
     nick = tmp2Result.getName(eventUser.user);
   }
   obj1[1] = nick;
@@ -267,7 +267,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj[3] = function onPress() {
     analyticsLocations(closure_1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(8523).FormRow, obj, eventUser.user_id);
+  return closure_7(eventUser(8593).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj3 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };

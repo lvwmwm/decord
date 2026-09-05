@@ -1,14 +1,14 @@
-// Module ID: 5836
-// Function ID: 5837
+// Module ID: 5887
+// Function ID: 5888
 // Name: DevCommerceTallAbstractUI
-// Dependencies: [21, 5542, 5837, 2]
+// Dependencies: [21, 5587, 5888, 2]
 // Exports: DevCommerceTallAbstractUI
 
-// Module 5836 (DevCommerceTallAbstractUI)
+// Module 5887 (DevCommerceTallAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5837 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5888 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevCommerceTallAbstractUI.native.tsx");

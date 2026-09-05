@@ -1,12 +1,12 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7522
+// Function ID: 7523
 // Name: commandPermissions
-// Dependencies: [32, 1954, 7456, 2]
+// Dependencies: [32, 1894, 7523, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 7455 (commandPermissions)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7456 */;
+// Module 7522 (commandPermissions)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1894 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7523 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;

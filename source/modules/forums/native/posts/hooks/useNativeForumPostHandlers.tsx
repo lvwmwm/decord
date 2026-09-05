@@ -1,19 +1,19 @@
-// Module ID: 10148
-// Function ID: 10149
+// Module ID: 10219
+// Function ID: 10220
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4186, 1386, 4130, 1921, 7217, 7246, 673, 1232, 7695, 38, 4681, 4989, 1485, 7828, 9871, 8191, 1234, 4449, 4450, 7699, 4492, 4343, 10149, 11186, 11184, 2]
+// Dependencies: [19, 4251, 1957, 4209, 1371, 7277, 7308, 1074, 1113, 7763, 38, 4713, 5028, 1365, 7897, 9942, 8261, 1115, 4528, 4529, 7767, 4571, 4425, 10220, 11254, 11252, 2]
 // Exports: default
 
-// Module 10148 (useNativeForumPostHandlers)
+// Module 10219 (useNativeForumPostHandlers)
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "setContent" /* 4186 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "handleLoadThreadsSuccess" /* 7217 */;
-import closure_10 from "handleLoadThreadsSuccess" /* 7246 */;
-import ME from "ME" /* 673 */;
-import { OpenThreadAnalyticsLocations as closure_15 } from "AbortCodes" /* 1232 */;
+import closure_5 from "setContent" /* 4251 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "handleLoadThreadsSuccess" /* 7277 */;
+import closure_10 from "handleLoadThreadsSuccess" /* 7308 */;
+import ME from "ME" /* 1074 */;
+import { OpenThreadAnalyticsLocations as closure_15 } from "AbortCodes" /* 1113 */;
 
 const require = arg1;
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = ME);
@@ -23,7 +23,7 @@ export default function useNativeForumPostHandlers(threadId) {
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (NORMAL === undefined) {
-    NORMAL = threadId(7695).ReactionTypes.NORMAL;
+    NORMAL = threadId(7763).ReactionTypes.NORMAL;
   }
   let callback1;
   const items = [threadId];

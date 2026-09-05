@@ -1,12 +1,12 @@
-// Module ID: 13829
-// Function ID: 13830
+// Module ID: 14070
+// Function ID: 14071
 // Name: _queryAudioEffects
-// Dependencies: [5, 673, 4, 1235, 706, 695, 2]
+// Dependencies: [5, 1074, 4, 1116, 573, 1242, 2]
 // Exports: default
 
-// Module 13829 (_queryAudioEffects)
+// Module 14070 (_queryAudioEffects)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const require = arg1;
 function _queryAudioEffects() {
@@ -65,14 +65,14 @@ function _queryAudioEffects() {
                 return obj2;
               }
               obj12 = dependencyMap;
-              obj13 = callback(1235);
+              obj13 = callback(1116);
               tmp47 = callback;
             }
           } else if (1 === tmp7) {
             c6 = 0;
             dependencyMap = logger;
             logger.error("Failed to probe audio effects for device", dependencyMap);
-            obj2 = lib(695);
+            obj2 = lib(1242);
             obj2.track(constants.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
             c8 = 3;
             return { value: "HermesInternal", done: null };
@@ -90,12 +90,12 @@ function _queryAudioEffects() {
             const obj4 = { type: "MEDIA_ENGINE_SET_DEVICE_AUDIO_EFFECTS", deviceId: null };
             obj4[1] = callback;
             const merged = Object.assign(lib);
-            lib(706).dispatch(obj4);
-            const obj8 = lib(706);
+            lib(573).dispatch(obj4);
+            const obj8 = lib(573);
             const obj5 = { succeeded: true, active_effects: null, available_effects: null };
             obj5[1] = lib.active;
             obj5[2] = lib.available;
-            lib(695).track(constants.AUDIO_EFFECTS_PROBE_COMPLETED, obj5);
+            lib(1242).track(constants.AUDIO_EFFECTS_PROBE_COMPLETED, obj5);
             c6 = 0;
             c8 = 3;
             obj = { value: null, done: true };

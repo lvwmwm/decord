@@ -1,13 +1,13 @@
-// Module ID: 14414
-// Function ID: 14415
-// Dependencies: [4383, 673, 527, 695, 2]
+// Module ID: 14489
+// Function ID: 14490
+// Dependencies: [4465, 1074, 1272, 1242, 2]
 
-// Module 14414
+// Module 14489
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4383 */;
-import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4465 */;
+import ME from "ME" /* 1074 */;
 
 const RPC_LOCAL_SCOPE = RPC_SCOPE_CONFIG.RPC_LOCAL_SCOPE;
 ({ Endpoints: c3, AnalyticEvents: c4, RPCCommands } = ME);

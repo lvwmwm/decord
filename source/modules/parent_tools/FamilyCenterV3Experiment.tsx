@@ -1,12 +1,12 @@
-// Module ID: 7527
-// Function ID: 7528
+// Module ID: 7594
+// Function ID: 7595
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 7527 (apexExperiment)
+// Module 7594 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-01-family-center-v3", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/parent_tools/FamilyCenterV3Experiment.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 16015
+// Function ID: 16016
 // Name: LeftPanelContent
-// Dependencies: [32, 19, 17, 673, 21, 15940, 5541, 4481, 709, 4338, 1627, 15941, 15942, 15943, 16025, 16205, 4218, 15946, 16285, 4341, 11465, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 16016, 5586, 4560, 576, 4420, 1611, 16017, 16018, 16019, 16103, 16281, 4296, 16022, 16361, 4423, 11533, 2]
 
-// Module 15939 (LeftPanelContent)
-import ThemesDefault from "Themes" /* 709 */;
-import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4341 */;
-import setLevels from "setLevels" /* 11465 */;
-import setLevelsDefault from "setLevels" /* 11465 */;
-import context from "context" /* 15946 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16285 */;
+// Module 16015 (LeftPanelContent)
+import ThemesDefault from "Themes" /* 576 */;
+import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4423 */;
+import setLevels from "setLevels" /* 11533 */;
+import setLevelsDefault from "setLevels" /* 11533 */;
+import context from "context" /* 16022 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16361 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function LeftPanelContent(panelStyles) {

@@ -1,18 +1,18 @@
-// Module ID: 1908
-// Function ID: 1909
+// Module ID: 1979
+// Function ID: 1980
 // Name: createGuildRecordFromRust
-// Dependencies: [1427, 1909, 1430, 1215, 1425, 1429, 1911, 11, 1426, 1912, 2]
+// Dependencies: [1972, 1980, 1975, 502, 1970, 1974, 1982, 11, 1971, 1983, 2]
 
-// Module 1908 (createGuildRecordFromRust)
+// Module 1979 (createGuildRecordFromRust)
 import set2 from "set" /* 2 */;
-import date2 from "date" /* 1425 */;
-import fromGuildPropertiesWithAdditionalFieldsAll from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import areSetsEqual from "areSetsEqual" /* 1429 */;
-import identity from "identity" /* 1909 */;
-import items from "items" /* 1912 */;
-import isValueEqual from "isValueEqual" /* 1427 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import closure_9 from "fetchFingerprint" /* 1215 */;
+import date2 from "date" /* 1970 */;
+import fromGuildPropertiesWithAdditionalFieldsAll from "fromGuildPropertiesWithAdditionalFields" /* 1971 */;
+import areSetsEqual from "areSetsEqual" /* 1974 */;
+import identity from "identity" /* 1980 */;
+import items from "items" /* 1983 */;
+import isValueEqual from "isValueEqual" /* 1972 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1975 */;
+import closure_9 from "fetchFingerprint" /* 502 */;
 
 function createGuildRecordFromRust(features) {
   const obj = {};

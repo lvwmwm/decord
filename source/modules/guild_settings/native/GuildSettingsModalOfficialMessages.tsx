@@ -1,27 +1,27 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17790
+// Function ID: 17791
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4473, 1908, 8994, 5558, 4474, 502, 21, 4481, 709, 1233, 15191, 11252, 15193, 4481, 1498, 586, 8993, 5579, 7315, 4448, 16215, 2008, 9721, 4218, 5560, 14522, 685, 4477, 9722, 4163, 7207, 686, 1296, 15206, 2]
+// Dependencies: [32, 19, 17, 4552, 1979, 9064, 5603, 4553, 1085, 21, 4560, 576, 1114, 15267, 11320, 15269, 4560, 1483, 504, 9063, 5624, 7377, 4527, 16291, 1896, 9792, 4296, 5605, 14597, 1091, 4556, 9793, 4242, 7267, 672, 1178, 15282, 2]
 // Exports: default
 
-// Module 17710 (MessagePreview)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import Text from "Text" /* 4477 */;
-import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 7207 */;
-import registerAssetDefault from "registerAsset" /* 15206 */;
+// Module 17790 (MessagePreview)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import Text from "Text" /* 4556 */;
+import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 7267 */;
+import registerAssetDefault from "registerAsset" /* 15282 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "handleFormInit" /* 8994 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4474 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "handleFormInit" /* 9064 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4553 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function MessagePreview(theme) {
@@ -39,7 +39,7 @@ function MessagePreview(theme) {
   }
   let obj = useCanManageGuildOfficialMessages;
   const accessibleGuildOfficialTextColor = obj.getAccessibleGuildOfficialTextColor(selectedColor, semanticColor, num);
-  let obj2 = tmp3(686)(selectedColor);
+  let obj2 = tmp3(672)(selectedColor);
   const hexResult = accessibleGuildOfficialTextColor.hex();
   const alphaResult = obj2.alpha(closure_10);
   obj = { style: items, pointerEvents: "none", children: null };
@@ -67,7 +67,7 @@ function MessagePreview(theme) {
   items2[1] = callback2(closure_5, obj2);
   obj[1] = items2;
   obj[2] = callback2(closure_5, obj);
-  return callback(_modDef4218.View, obj);
+  return callback(_modDef4296.View, obj);
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: c9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MESSAGE_GROUP_SPACING);

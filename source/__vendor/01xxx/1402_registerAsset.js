@@ -1,0 +1,10 @@
+// Module ID: 1402
+// Function ID: 1403
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 1402 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 256, height: 256, scales: [1], hash: "7c8f476123d28d103efe381543274c25", name: "default_avatar_2", type: "png" });

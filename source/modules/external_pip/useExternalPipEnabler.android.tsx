@@ -1,13 +1,13 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 17001
+// Function ID: 17002
 // Name: useExternalPIPEnabler
-// Dependencies: [4497, 1215, 4557, 586, 16924, 2]
+// Dependencies: [4576, 502, 4583, 504, 17002, 2]
 // Exports: default
 
-// Module 16923 (useExternalPIPEnabler)
-import closure_2 from "getParticipants" /* 4497 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
+// Module 17001 (useExternalPIPEnabler)
+import closure_2 from "getParticipants" /* 4576 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/external_pip/useExternalPipEnabler.android.tsx");
@@ -16,7 +16,7 @@ export default function useExternalPIPEnabler(disabled) {
   disabled = disabled.disabled;
   const items = [closure_2, closure_4, closure_3];
   const items1 = [disabled];
-  return disabled(586).useStateFromStoresObject(items, () => {
+  return disabled(504).useStateFromStoresObject(items, () => {
     const channelId = closure_1_4.getChannelId();
     if (null != channelId) {
       if (!disabled) {

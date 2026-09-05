@@ -1,16 +1,16 @@
-// Module ID: 16987
-// Function ID: 16988
+// Module ID: 17065
+// Function ID: 17066
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4120, 5398, 1921, 673, 502, 644, 4139, 2]
+// Dependencies: [19, 4199, 5438, 1371, 1074, 1085, 563, 4218, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 16987 (useSortedGuildIdsForSoundboard)
+// Module 17065 (useSortedGuildIdsForSoundboard)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_5 from "insertUnsortedGuilds" /* 5398 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
-import { Permissions } from "sum" /* 502 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_5 from "insertUnsortedGuilds" /* 5438 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 1074 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/soundboard/useSortedGuildIdsForSoundboard.tsx");

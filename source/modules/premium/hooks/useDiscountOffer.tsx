@@ -1,15 +1,15 @@
-// Module ID: 7992
-// Function ID: 7993
+// Module ID: 8061
+// Function ID: 8062
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1921, 7384, 1923, 586, 4139, 4365, 2]
+// Dependencies: [32, 19, 1371, 7450, 1373, 504, 4218, 4447, 2]
 // Exports: default
 
-// Module 7992 (useDiscountOffer)
+// Module 8061 (useDiscountOffer)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "emitChanges" /* 7384 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "emitChanges" /* 7450 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 const require = arg1;
 ({ PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: error } = GuildFeatures);

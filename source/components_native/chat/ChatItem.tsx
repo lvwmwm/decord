@@ -1,22 +1,22 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8652
+// Function ID: 8653
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4473, 673, 7864, 21, 709, 8583, 683, 8584, 7210, 8585, 4481, 1234, 8057, 4197, 686, 4948, 2]
+// Dependencies: [32, 19, 17, 4552, 1074, 7933, 21, 576, 8653, 1089, 8654, 7270, 8655, 4560, 1115, 8126, 4262, 672, 4987, 2]
 // Exports: default
 
-// Module 8582 (DCDChatItem)
-import set from "set" /* 683 */;
-import ThemesDefault from "Themes" /* 709 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7210 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 8583 */;
+// Module 8652 (DCDChatItem)
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1089 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7270 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 8653 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { MessageTypes } from "ME" /* 673 */;
-import Changeset from "Changeset" /* 7864 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { MessageTypes } from "ME" /* 1074 */;
+import Changeset from "Changeset" /* 7933 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function DCDChatItem(message) {
@@ -31,15 +31,15 @@ function DCDChatItem(message) {
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       obj = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = callback(tmp21(8584).default, obj);
+      tmp3Result = callback(tmp21(8654).default, obj);
     } else if (isSystemMessageDefault(message)) {
       obj1 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8585).default, obj1);
+      tmp3Result = tmp3(tmp21(8655).default, obj1);
     } else {
       obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8584).default, obj);
+      tmp3Result = tmp3(tmp21(8654).default, obj);
     }
   }
   return tmp3Result;

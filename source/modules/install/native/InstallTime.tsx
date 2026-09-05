@@ -1,14 +1,14 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13699
+// Function ID: 13700
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1215, 592, 13624, 4561, 2]
+// Dependencies: [502, 510, 13700, 4589, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 13623 (getFirstInstallTimeMillis)
-import Storage4 from "Storage" /* 592 */;
-import sleep from "sleep" /* 4561 */;
-import enforcingDefault from "enforcing" /* 13624 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
+// Module 13699 (getFirstInstallTimeMillis)
+import Storage4 from "Storage" /* 510 */;
+import sleep from "sleep" /* 4589 */;
+import enforcingDefault from "enforcing" /* 13700 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
 
 require = arg1;
 function getFirstInstallTimeMillis(arg0) {
@@ -35,7 +35,7 @@ function getFirstInstallTimeMillis(arg0) {
     if (authenticated.isAuthenticated()) {
       const _Date2 = Date;
       const timestamp = Date.now();
-      const Storage3 = tmp4(592).Storage;
+      const Storage3 = tmp4(510).Storage;
       const result = Storage3.set(str, timestamp);
       num2 = timestamp;
     }
@@ -45,7 +45,7 @@ function getFirstInstallTimeMillis(arg0) {
       const _Date = Date;
       num2 = Date.now();
     }
-    const Storage2 = tmp4(592).Storage;
+    const Storage2 = tmp4(510).Storage;
     const result1 = Storage2.set(str, num2);
   }
 }

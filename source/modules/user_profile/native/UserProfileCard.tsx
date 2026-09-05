@@ -1,19 +1,19 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7207
+// Function ID: 7208
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7148, 21, 4481, 709, 5084, 4477, 7149, 2]
+// Dependencies: [19, 17, 7208, 21, 4560, 576, 5123, 4556, 7209, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 7147 (UserProfileCard)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7149 */;
+// Module 7207 (UserProfileCard)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7209 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: c4 } = ARBITRARY_LARGE_OFFSET);

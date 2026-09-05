@@ -1,15 +1,15 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17186
+// Function ID: 17187
 // Name: ConnectButton
-// Dependencies: [19, 1386, 21, 4481, 709, 12204, 17048, 586, 4739, 7267, 5372, 4867, 17109, 17112, 17113, 12865, 17107, 1233, 4477, 2]
+// Dependencies: [19, 1957, 21, 4560, 576, 12272, 17126, 504, 4771, 7329, 5411, 4906, 17187, 17190, 17191, 12933, 17185, 1114, 4556, 2]
 // Exports: default
 
-// Module 17108 (ConnectButton)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17186 (ConnectButton)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 createCacheKey = { connectButton: null, connectText: null };

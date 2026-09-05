@@ -1,12 +1,12 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10331
+// Function ID: 10332
 // Name: styles
-// Dependencies: [4481, 709, 2]
+// Dependencies: [4560, 576, 2]
 
-// Module 10260 (styles)
+// Module 10331 (styles)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import ThemesDefault from "Themes" /* 576 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 let obj = { emojiContainer: { flexDirection: "row", alignItems: "center" }, emojiDescriptionWrapper: { flexDirection: "column", flex: 1 }, emojiWrapper: { marginLeft: -8, marginRight: 8 }, emojiIcon: null, divider: null, ctaButton: null };
 obj = { width: 40, height: 40, marginRight: 12, borderRadius: ThemesDefault.radii.sm, resizeMode: "contain" };

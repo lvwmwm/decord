@@ -1,18 +1,18 @@
-// Module ID: 16704
-// Function ID: 16705
-// Dependencies: [19, 17, 11016, 21, 4481, 709, 1627, 15938, 1492, 4338, 16705, 1235, 2]
+// Module ID: 16782
+// Function ID: 16783
+// Dependencies: [19, 17, 11084, 21, 4560, 576, 1611, 16014, 1477, 4420, 16783, 1116, 2]
 
-// Module 16704
-import ThemesDefault from "Themes" /* 709 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useChatLayoutDefault from "useChatLayout" /* 4338 */;
-import trackTabPressed from "trackTabPressed" /* 15938 */;
-import handleBackButtonPressDefault from "handleBackButtonPress" /* 16705 */;
+// Module 16782
+import ThemesDefault from "Themes" /* 576 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import useChatLayoutDefault from "useChatLayout" /* 4420 */;
+import trackTabPressed from "trackTabPressed" /* 16014 */;
+import handleBackButtonPressDefault from "handleBackButtonPress" /* 16783 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11016 */;
+import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11084 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
   }
   if (useChatLayoutDefault().isChatBesideChannelList) {
     const items = [items1.container, ];
-    let tmp3Result = tmp3(1235);
+    let tmp3Result = tmp3(1116);
     let tmp7;
     if (tmp3Result.isAndroid()) {
       obj = {};
@@ -50,7 +50,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
     obj = { style: null, children: null };
     items[1] = tmp7;
     obj[0] = items;
-    tmp3Result = tmp3(1235);
+    tmp3Result = tmp3(1116);
     if (tmp3Result.isAndroid()) {
       obj1 = { style: null, children: null };
       items1 = [, ];

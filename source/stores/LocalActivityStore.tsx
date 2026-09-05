@@ -1,26 +1,26 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11457
+// Function ID: 11458
 // Name: updateActivities
-// Dependencies: [32, 1385, 4522, 4504, 11390, 5241, 1339, 4503, 1386, 4517, 11392, 1980, 4499, 673, 4166, 11042, 12, 11393, 4657, 656, 11394, 1399, 586, 706, 2]
+// Dependencies: [32, 1956, 4788, 1915, 11458, 5280, 1221, 4582, 1957, 1931, 11460, 2011, 4578, 1074, 1935, 11110, 12, 11461, 4690, 1332, 11462, 1384, 504, 573, 2]
 
-// Module 11389 (updateActivities)
-import initializeDefault from "initialize" /* 586 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 11457 (updateActivities)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 1332 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "participantFromServer" /* 1385 */;
-import closure_5 from "addApplication" /* 4522 */;
-import closure_6 from "initialize" /* 4504 */;
-import closure_7 from "updateActivities" /* 11390 */;
-import closure_8 from "upsertAccount" /* 5241 */;
-import closure_9 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_10 from "reset" /* 4503 */;
-import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "gameFromServer" /* 4517 */;
-import closure_13 from "makeTwitchRequest" /* 11392 */;
-import closure_14 from "handleConnectionOpen" /* 1980 */;
-import closure_15 from "handleUpdate" /* 4499 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "participantFromServer" /* 1956 */;
+import closure_5 from "addApplication" /* 4788 */;
+import closure_6 from "initialize" /* 1915 */;
+import closure_7 from "updateActivities" /* 11458 */;
+import closure_8 from "upsertAccount" /* 5280 */;
+import closure_9 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_10 from "reset" /* 4582 */;
+import closure_11 from "ensureGuildLoaded" /* 1957 */;
+import closure_12 from "gameFromServer" /* 1931 */;
+import closure_13 from "makeTwitchRequest" /* 11460 */;
+import closure_14 from "handleConnectionOpen" /* 2011 */;
+import closure_15 from "handleUpdate" /* 4578 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function updateActivities() {
@@ -349,9 +349,9 @@ const localActivityStore = new LocalActivityStore(dispatcherDefault, {
         let tmp12 = num;
         let tmp13 = callback;
         let tmp14 = dependencyMap;
-        let obj2 = callback(11394);
+        let obj2 = callback(11462);
         let tmp15 = tmp9;
-        let obj3 = callback(1399);
+        let obj3 = callback(1384);
         let num2;
         if (tmp10 != null) {
           num2 = tmp10.flags;
@@ -363,7 +363,7 @@ const localActivityStore = new LocalActivityStore(dispatcherDefault, {
         let tmp18 = tmp9;
         let tmp19 = constants2;
         let hasFlagResult = obj3.hasFlag(num2, constants.INSTANCE);
-        let tmp13Result = tmp13(11394);
+        let tmp13Result = tmp13(11462);
         let tmp20 = tmp11;
         let tmp21 = obj2;
         let tmp22 = tmp10;

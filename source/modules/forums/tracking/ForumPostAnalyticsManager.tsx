@@ -1,13 +1,13 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7773
+// Function ID: 7774
 // Name: handleThreadCreate
-// Dependencies: [5467, 1215, 1386, 7058, 11, 7245, 2]
+// Dependencies: [5507, 502, 1957, 7118, 11, 7307, 2]
 
-// Module 7705 (handleThreadCreate)
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "handleThreadCreateOrUpdate" /* 5467 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
+// Module 7773 (handleThreadCreate)
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "handleThreadCreateOrUpdate" /* 5507 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
 
 let require = arg1;
 initializeDefault;

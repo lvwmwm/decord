@@ -1,20 +1,20 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16925
+// Function ID: 16926
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [19, 17, 1921, 1383, 21, 4481, 709, 586, 4139, 4448, 7090, 16848, 1296, 9892, 4477, 1233, 4936, 13291, 2]
+// Dependencies: [19, 17, 1371, 1954, 21, 4560, 576, 504, 4218, 4527, 7150, 16926, 1178, 9963, 4556, 1114, 4975, 13363, 2]
 // Exports: default
 
-// Module 16847 (AppIconsCoachmarkActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
-import registerAssetDefault from "registerAsset" /* 9892 */;
-import registerAssetDefault2 from "registerAsset" /* 16848 */;
+// Module 16925 (AppIconsCoachmarkActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4218 */;
+import registerAssetDefault from "registerAsset" /* 9963 */;
+import registerAssetDefault2 from "registerAsset" /* 16926 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
@@ -35,7 +35,7 @@ let result = require("set").fileFinishedImporting("modules/app_icons/native/AppI
 export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   let tmp = callback3();
-  let obj = markAsDismissed(586);
+  let obj = markAsDismissed(504);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   obj1 = getPremiumPlanItemDefault;
@@ -58,30 +58,30 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer, children: null };
   const isPremiumResult = obj1.isPremium(stateFromStores);
-  const items3 = [callback(markAsDismissed(1296).Icon, { source: registerAssetDefault, size: markAsDismissed(1296).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
+  const items3 = [callback(markAsDismissed(1178).Icon, { source: registerAssetDefault, size: markAsDismissed(1178).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = markAsDismissed(1233).intl;
-  obj4[2] = intl.string(markAsDismissed(1233).t.EfA4Cq);
-  items3[1] = callback(markAsDismissed(4477).Text, obj4);
+  const intl = markAsDismissed(1114).intl;
+  obj4[2] = intl.string(markAsDismissed(1114).t.EfA4Cq);
+  items3[1] = callback(markAsDismissed(4556).Text, obj4);
   obj2[1] = items3;
   items2[1] = callback2(closure_5, obj2);
   const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: null };
-  const intl2 = markAsDismissed(1233).intl;
+  const intl2 = markAsDismissed(1114).intl;
   const string = intl2.string;
-  const t = markAsDismissed(1233).t;
+  const t = markAsDismissed(1114).t;
   if (isPremiumResult) {
     let stringResult = string(t.IgchKK);
   } else {
     stringResult = string(t.D0XzaS);
   }
   obj5[3] = stringResult;
-  items2[2] = callback(markAsDismissed(4477).Text, obj5);
+  items2[2] = callback(markAsDismissed(4556).Text, obj5);
   obj[1] = items2;
   const items4 = [callback2(closure_5, obj), ];
   const obj6 = { style: tmp.footer, children: null };
   const obj7 = { text: null, onPress: null };
-  const intl3 = tmp2(1233).intl;
-  obj7[0] = intl3.string(markAsDismissed(1233).t.Pt547C);
+  const intl3 = tmp2(1114).intl;
+  obj7[0] = intl3.string(markAsDismissed(1114).t.Pt547C);
   obj7[1] = function onPress() {
     closure_1_1(closure_1_2[9]).hideActionSheet();
     if (markAsDismissed != null) {
@@ -91,14 +91,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     const tmp = closure_1_2;
     const result = markAsDismissed(closure_1_2[17]).navigateToAppIconSettings();
   };
-  const items5 = [callback(markAsDismissed(4936).Button, obj7), ];
+  const items5 = [callback(markAsDismissed(4975).Button, obj7), ];
   const obj8 = { variant: "secondary", text: null, onPress: null };
-  const intl4 = tmp2(1233).intl;
-  obj8[1] = intl4.string(markAsDismissed(1233).t.iSrIIZ);
+  const intl4 = tmp2(1114).intl;
+  obj8[1] = intl4.string(markAsDismissed(1114).t.iSrIIZ);
   obj8[2] = callback;
-  items5[1] = callback(markAsDismissed(4936).Button, obj8);
+  items5[1] = callback(markAsDismissed(4975).Button, obj8);
   obj6[1] = items5;
   items4[1] = callback2(closure_5, obj6);
   obj[2] = items4;
-  return callback2(markAsDismissed(7090).BottomSheet, obj);
+  return callback2(markAsDismissed(7150).BottomSheet, obj);
 };

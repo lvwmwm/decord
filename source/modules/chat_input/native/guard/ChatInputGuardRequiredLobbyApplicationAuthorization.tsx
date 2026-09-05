@@ -1,13 +1,13 @@
-// Module ID: 12392
-// Function ID: 12393
-// Dependencies: [19, 17, 21, 4481, 709, 12380, 1233, 4190, 2]
+// Module ID: 12460
+// Function ID: 12461
+// Dependencies: [19, 17, 21, 4560, 576, 12448, 1114, 4255, 2]
 
-// Module 12392
-import ThemesDefault from "Themes" /* 709 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12380 */;
+// Module 12460
+import ThemesDefault from "Themes" /* 576 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12448 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -31,23 +31,23 @@ const memoResult = importAllResult.memo(function ChatInputGuardRequiredLobbyAppl
       if (shouldRelaunchLinkedLobbyApplication) {
         obj = { type: "simple-action", icon: null, message: null };
         obj[1] = tmp5;
-        const intl3 = connectionEntrypointUrl(1233).intl;
+        const intl3 = connectionEntrypointUrl(1114).intl;
         obj = { name: null };
         obj[0] = requiredLinkedLobbyApplication.name;
-        obj[2] = intl3.format(connectionEntrypointUrl(1233).t["SU2mY/"], obj);
+        obj[2] = intl3.format(connectionEntrypointUrl(1114).t["SU2mY/"], obj);
         return jsx(ChatInputGuardDefault, { name: null });
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
         obj1 = { type: "simple-action", icon: null, message: null, actionLabel: null, actionOnPress: null };
         obj1[1] = tmp5;
-        const intl = connectionEntrypointUrl(1233).intl;
+        const intl = connectionEntrypointUrl(1114).intl;
         const obj2 = { name: null };
         obj2[0] = requiredLinkedLobbyApplication.name;
-        obj1[2] = intl.format(connectionEntrypointUrl(1233).t.EvDn1D, obj2);
+        obj1[2] = intl.format(connectionEntrypointUrl(1114).t.EvDn1D, obj2);
         let stringResult;
         if (null != connectionEntrypointUrl) {
-          const intl2 = tmp10(1233).intl;
-          stringResult = intl2.string(tmp10(1233).t.S0W8Z5);
+          const intl2 = tmp10(1114).intl;
+          stringResult = intl2.string(tmp10(1114).t.S0W8Z5);
         }
         obj1[3] = stringResult;
         let fn;

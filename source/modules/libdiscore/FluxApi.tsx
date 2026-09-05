@@ -1,12 +1,12 @@
-// Module ID: 1914
-// Function ID: 1915
+// Module ID: 1985
+// Function ID: 1986
 // Name: fluxApi
-// Dependencies: [1915, 2]
+// Dependencies: [1351, 2]
 // Exports: hasFluxApi
 
-// Module 1914 (fluxApi)
+// Module 1985 (fluxApi)
 import set from "set" /* 2 */;
-import isBlockedDomain from "isBlockedDomain" /* 1915 */;
+import isBlockedDomain from "isBlockedDomain" /* 1351 */;
 
 isBlockedDomain = isBlockedDomain.getFluxApi();
 const result = set.fileFinishedImporting("modules/libdiscore/FluxApi.tsx");

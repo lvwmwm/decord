@@ -1,10 +1,10 @@
-// Module ID: 13102
-// Function ID: 13103
+// Module ID: 13170
+// Function ID: 13171
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 13102 (useCollectibleListLayout)
+// Module 13170 (useCollectibleListLayout)
 import closure_0 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 

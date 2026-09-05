@@ -1,11 +1,11 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8787
+// Function ID: 8788
 // Name: handleReset
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8717 (handleReset)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 8787 (handleReset)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleReset() {
   closure_0 = {};

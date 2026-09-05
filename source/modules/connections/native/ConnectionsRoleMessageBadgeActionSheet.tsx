@@ -1,30 +1,30 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11819
+// Function ID: 11820
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 1908, 11752, 5369, 673, 21, 4481, 709, 1233, 5368, 4432, 4477, 4416, 12, 4197, 5244, 11498, 9367, 1296, 1431, 1362, 38, 7102, 7122, 586, 695, 4708, 5475, 7090, 7144, 4936, 4448, 11501, 8110, 2]
+// Dependencies: [32, 19, 17, 1385, 502, 2021, 2015, 1979, 11820, 5408, 1074, 21, 4560, 576, 1114, 5407, 4511, 4556, 4495, 12, 4262, 5283, 11566, 9438, 1178, 1396, 4411, 38, 7162, 7182, 504, 1242, 4740, 5520, 7150, 7204, 4975, 4527, 11569, 8179, 2]
 // Exports: default
 
-// Module 11751 (PopoutCheck)
+// Module 11819 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4432 */;
-import Text from "Text" /* 4477 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5368 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4511 */;
+import Text from "Text" /* 4556 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5407 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createdAt" /* 1934 */;
-import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "map" /* 11752 */;
-import { OperatorTypes } from "OperatorTypes" /* 5369 */;
-import ME from "ME" /* 673 */;
+import closure_7 from "createdAt" /* 1385 */;
+import closure_8 from "fetchFingerprint" /* 502 */;
+import closure_9 from "trackCommunicationDisabled" /* 2021 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_11 from "createGuildRecordFromRust" /* 1979 */;
+import closure_12 from "map" /* 11820 */;
+import { OperatorTypes } from "OperatorTypes" /* 5408 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PopoutCheck(arg0) {

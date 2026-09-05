@@ -1,11 +1,11 @@
-// Module ID: 11887
-// Function ID: 11888
-// Dependencies: [673, 527, 2]
+// Module ID: 11955
+// Function ID: 11956
+// Dependencies: [1074, 1272, 2]
 
-// Module 11887
+// Module 11955
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");

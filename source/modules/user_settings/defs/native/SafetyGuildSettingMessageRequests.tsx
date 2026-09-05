@@ -1,37 +1,37 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15878
+// Function ID: 15879
 // Name: showMessageRequestRestrictionModal
-// Dependencies: [1908, 15793, 7906, 11401, 4166, 4865, 1233, 4955, 15803, 8341, 8343, 6935, 15800, 14749, 11400, 2]
+// Dependencies: [1979, 15869, 7975, 11469, 1935, 4904, 1114, 4994, 15879, 8411, 8413, 6995, 15876, 14824, 11468, 2]
 
-// Module 15802 (showMessageRequestRestrictionModal)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import setDefault from "set" /* 4865 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
-import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6935 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8343 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14749 */;
-import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15800 */;
-import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15803 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15793 */;
-import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11401 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15878 (showMessageRequestRestrictionModal)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import setDefault from "set" /* 4904 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6995 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8411 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8413 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14824 */;
+import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15876 */;
+import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15879 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15869 */;
+import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11469 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function showMessageRequestRestrictionModal(arg0) {
   const _require = arg0;
   let obj = setDefault;
   obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null, onCancel: null };
-  const intl = _require(1233).intl;
-  obj[0] = intl.string(_require(1233).t.yAfu1p);
-  const intl2 = _require(1233).intl;
-  obj[1] = intl2.string(_require(1233).t.Ry2z74);
-  const intl3 = _require(1233).intl;
-  obj[2] = intl3.string(_require(1233).t.p89ACt);
-  const intl4 = _require(1233).intl;
-  obj[3] = intl4.string(_require(1233).t.gm1Vej);
+  const intl = _require(1114).intl;
+  obj[0] = intl.string(_require(1114).t.yAfu1p);
+  const intl2 = _require(1114).intl;
+  obj[1] = intl2.string(_require(1114).t.Ry2z74);
+  const intl3 = _require(1114).intl;
+  obj[2] = intl3.string(_require(1114).t.p89ACt);
+  const intl4 = _require(1114).intl;
+  obj[3] = intl4.string(_require(1114).t.gm1Vej);
   obj[4] = componentDidMountDefault.Colors.RED;
   obj[5] = function onConfirm() {
     const MessageRequestRestrictedDefault = callback(closure_1_2[4]).MessageRequestRestrictedDefault;
@@ -77,9 +77,9 @@ createToggle = {
       }
       tmp7 = hasItem;
     }
-    const MessageRequestRestrictedDefault = tmp(4166).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = tmp(1935).MessageRequestRestrictedDefault;
     const obj3 = useParentalControlledExplicitContentSettings;
-    const MessageRequestRestrictedGuildIds = tmp(4166).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedGuildIds = tmp(1935).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp9 = !setting1.includes(selectedGuildId);
     let tmp10 = !tmp7;

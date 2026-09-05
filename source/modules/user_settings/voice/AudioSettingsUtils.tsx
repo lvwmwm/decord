@@ -1,27 +1,27 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9092
+// Function ID: 9093
 // Name: snapVolumeToDefault
-// Dependencies: [682, 4582, 9022, 4976, 2]
+// Dependencies: [1084, 4615, 9093, 5015, 2]
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 9021 (snapVolumeToDefault)
+// Module 9092 (snapVolumeToDefault)
 import set from "set" /* 2 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4582 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4615 */;
 
 let closure_2 = MAX_FAVORITES.ProtoAudioSettingsContextTypes;
 let result = set.fileFinishedImporting("modules/user_settings/voice/AudioSettingsUtils.tsx");
 
 export const snapVolumeToDefault = function snapVolumeToDefault(USER, DEFAULT) {
   if (DEFAULT === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-    USER = tmp(9022).AudioSettingsDefaultVolumes.STREAM;
+    USER = tmp(9093).AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = tmp(9022).AudioSettingsDefaultVolumes.USER;
+    USER = tmp(9093).AudioSettingsDefaultVolumes.USER;
   }
   let tmp3 = USER;
-  let tmpResult = tmp(4976);
+  let tmpResult = tmp(5015);
   const result = tmpResult.amplitudeToPerceptual(USER);
-  tmpResult = tmp(4976);
+  tmpResult = tmp(5015);
   if (Math.abs(result - tmpResult.amplitudeToPerceptual(USER)) < 1) {
     tmp3 = USER;
   }

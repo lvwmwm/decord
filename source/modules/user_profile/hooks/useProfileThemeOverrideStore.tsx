@@ -1,16 +1,16 @@
-// Module ID: 8159
-// Function ID: 8160
+// Module ID: 8228
+// Function ID: 8229
 // Name: useProfileThemeOverrideStore
-// Dependencies: [673, 641, 4416, 8160, 1362, 2]
+// Dependencies: [1074, 560, 4495, 8229, 4411, 2]
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride
 
-// Module 8159 (useProfileThemeOverrideStore)
+// Module 8228 (useProfileThemeOverrideStore)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import getProfileTheme from "getProfileTheme" /* 8160 */;
-import keys from "keys" /* 641 */;
+import ME from "ME" /* 1074 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import getProfileTheme from "getProfileTheme" /* 8229 */;
+import keys from "keys" /* 560 */;
 
 const ThemeTypes = ME.ThemeTypes;
 let tmp2 = keys.create()((arg0) => {

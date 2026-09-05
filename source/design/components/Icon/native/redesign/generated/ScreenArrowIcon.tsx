@@ -1,14 +1,14 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12532
+// Function ID: 12533
 // Name: ScreenArrowIcon
-// Dependencies: [19, 21, 709, 4196, 9901, 2]
+// Dependencies: [19, 21, 576, 4261, 9972, 2]
 // Exports: ScreenArrowIcon
 
-// Module 12464 (ScreenArrowIcon)
+// Module 12532 (ScreenArrowIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9901 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 9972 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

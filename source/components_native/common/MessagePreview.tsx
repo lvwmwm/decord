@@ -1,13 +1,13 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 16818
+// Function ID: 16819
 // Name: MessagePreview
-// Dependencies: [19, 8290, 673, 21, 586, 1233, 16567, 13184, 2]
+// Dependencies: [19, 8360, 1074, 21, 504, 1114, 16644, 13252, 2]
 // Exports: default
 
-// Module 16740 (MessagePreview)
+// Module 16818 (MessagePreview)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "messages" /* 8290 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "messages" /* 8360 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("components_native/common/Me
 export default function MessagePreview(channelId) {
   const onBeforeJumpToMessage = channelId.onBeforeJumpToMessage;
   let jumpTargetId;
-  let obj = onBeforeJumpToMessage(586);
+  let obj = onBeforeJumpToMessage(504);
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ messages: closure_4.messages, jumpTargetId: closure_4.jumpTargetId }));
   jumpTargetId = stateFromStoresObject.jumpTargetId;
@@ -35,5 +35,5 @@ export default function MessagePreview(channelId) {
     callback(table[6]).clearMessages();
   }, []);
   obj = { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 };
-  return jsx(onBeforeJumpToMessage(13184).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
+  return jsx(onBeforeJumpToMessage(13252).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
 };

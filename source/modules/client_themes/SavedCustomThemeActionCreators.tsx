@@ -1,14 +1,14 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15264
+// Function ID: 15265
 // Name: fetchUserCustomThemes
-// Dependencies: [4414, 673, 706, 527, 2]
+// Dependencies: [4493, 1074, 573, 1272, 2]
 // Exports: fetchUserCustomThemes
 
-// Module 15188 (fetchUserCustomThemes)
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_3 from "validateSavedTheme" /* 4414 */;
-import { Endpoints } from "ME" /* 673 */;
+// Module 15264 (fetchUserCustomThemes)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import closure_3 from "validateSavedTheme" /* 4493 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
@@ -30,9 +30,9 @@ export const fetchUserCustomThemes = function fetchUserCustomThemes() {
       if (custom_themes == null) {
         custom_themes = [];
       }
-      callback(706).dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
+      callback(573).dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
     }).catch((error) => {
-      let obj = callback(706);
+      let obj = callback(573);
       obj = { type: "SAVED_CUSTOM_THEMES_FETCH_FAILURE", error };
       obj.dispatch(obj);
     });
@@ -45,7 +45,7 @@ export const fetchUserCustomThemes = function fetchUserCustomThemes() {
       if (custom_themes == null) {
         custom_themes = [];
       }
-      callback(706).dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
+      callback(573).dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
     });
   }
 };

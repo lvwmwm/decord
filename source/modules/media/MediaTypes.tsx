@@ -1,15 +1,15 @@
-// Module ID: 4752
-// Function ID: 4753
+// Module ID: 4791
+// Function ID: 4792
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [673, 1399, 1954, 4678, 1485, 2]
+// Dependencies: [1074, 1384, 1894, 4710, 1365, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4752 (messageAttachmentToUnfurledMediaItem)
+// Module 4791 (messageAttachmentToUnfurledMediaItem)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4678 */;
+import ME from "ME" /* 1074 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4710 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {
   obj = hasFlag;
@@ -29,7 +29,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (tmpResult.hasFlag(num3, MessageAttachmentFlags.IS_ANIMATED)) {
     num4 = obj.IS_ANIMATED | 0;
   }
-  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1954).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
+  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1894).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
   let tmp6;
   if (null != flags.content_scan_version) {
     obj = { version: null, flags: null };

@@ -1,11 +1,11 @@
-// Module ID: 15490
-// Function ID: 15491
-// Dependencies: [19, 21, 5084, 1233, 8291, 7, 8983, 2]
+// Module ID: 15566
+// Function ID: 15567
+// Dependencies: [19, 21, 5123, 1114, 8361, 7, 9053, 2]
 
-// Module 15490
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import ShareIcon from "ShareIcon" /* 8983 */;
+// Module 15566
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import ShareIcon from "ShareIcon" /* 9053 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -15,7 +15,7 @@ const memoResult = importAllResult.memo(function ShareLogsButton() {
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t["Aw+09z"]);
   obj[1] = function onPress() {
-    let obj = callback(8291);
+    let obj = callback(8361);
     obj = { message: callback(7).stringify() };
     return obj.showShareActionSheet(obj, "Debug Logs");
   };

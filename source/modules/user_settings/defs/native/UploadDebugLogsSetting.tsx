@@ -1,16 +1,16 @@
-// Module ID: 15460
-// Function ID: 15461
+// Module ID: 15536
+// Function ID: 15537
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 673, 21, 641, 702, 1234, 10117, 4194, 4436, 1233, 11400, 2]
+// Dependencies: [5, 17, 1074, 21, 560, 1249, 1115, 10188, 4259, 4515, 1114, 11468, 2]
 
-// Module 15460 (_handleUploadDebugLogSettingPress)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 15536 (_handleUploadDebugLogSettingPress)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import { DebugLogCategory } from "ME" /* 673 */;
+import { DebugLogCategory } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import keys from "keys" /* 641 */;
-import createToggle from "createToggle" /* 11400 */;
+import keys from "keys" /* 560 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 function _handleUploadDebugLogSettingPress() {
@@ -71,11 +71,11 @@ function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            obj1 = callback2(4194);
+            obj1 = callback2(4259);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4436).CircleInformationIcon;
-            const intl = callback(1233).intl;
-            obj1[2] = intl.string(callback(1233).t.VzHcSm);
+            obj1[1] = callback(4515).CircleInformationIcon;
+            const intl = callback(1114).intl;
+            obj1[2] = intl.string(callback(1114).t.VzHcSm);
             obj1.open(obj1);
             c3 = 0;
             (function onUploadDebugLogsRequestFinish() {
@@ -88,12 +88,12 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4436).CircleInformationIcon;
-            const intl2 = callback(1233).intl;
-            obj2[2] = intl2.string(callback(1233).t.BvyxE7);
-            callback2(4194).open(obj2);
+            obj2[1] = callback(4515).CircleInformationIcon;
+            const intl2 = callback(1114).intl;
+            obj2[2] = intl2.string(callback(1114).t.BvyxE7);
+            callback2(4259).open(obj2);
             c3 = 1;
-            const obj6 = callback2(4194);
+            const obj6 = callback2(4259);
           }
           c3 = 0;
           (function onUploadDebugLogsRequestFinish() {

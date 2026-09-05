@@ -1,10 +1,10 @@
 // Module ID: 5364
 // Function ID: 5365
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5364 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 128, height: 128, scales: [1], hash: "665fb7ab43f458f1e2e4d5c788dac4b4", name: "img_meta_quest_white", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "153924e2c4b62b4b147186cc6eff6db0", name: "img_account_sync_riot_white", type: "svg" });

@@ -1,17 +1,17 @@
-// Module ID: 5555
-// Function ID: 5556
+// Module ID: 5600
+// Function ID: 5601
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4481, 5556, 5559, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 5601, 5604, 1114, 2]
 // Exports: default
 
-// Module 5555 (TermsField)
+// Module 5600 (TermsField)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import TermsFieldListItemDefault from "TermsFieldListItem" /* 5556 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5559 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import TermsFieldListItemDefault from "TermsFieldListItem" /* 5601 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5604 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -29,7 +29,7 @@ export default function TermsField(field) {
     flag = false;
   }
   obj = { start: true, end: true, checked: flag, label: null, onPress: null };
-  const intl = tmp5(1233).intl;
+  const intl = tmp5(1114).intl;
   obj[3] = intl.string(getSystemLocale.t["2EXfGJ"]);
   obj[4] = onChange;
   items[1] = callback(TableCheckboxRow.TableCheckboxRow, obj);

@@ -1,14 +1,14 @@
-// Module ID: 16952
-// Function ID: 16953
-// Dependencies: [19, 17, 9434, 21, 4481, 4936, 11086, 1233, 8028, 2]
+// Module ID: 17030
+// Function ID: 17031
+// Dependencies: [19, 17, 9505, 21, 4560, 4975, 11154, 1114, 8097, 2]
 
-// Module 16952
-import registerAssetDefault from "registerAsset" /* 11086 */;
+// Module 17030
+import registerAssetDefault from "registerAsset" /* 11154 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9434 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -25,20 +25,20 @@ const memoResult = importAllResult.memo(function MinimizeActivityButton(arg0) {
       obj[0] = tmp2.buttonParent;
       obj = { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
       obj[0] = registerAssetDefault;
-      const intl2 = setMode(1233).intl;
-      obj[1] = intl2.string(setMode(1233).t.brPQ5U);
+      const intl2 = setMode(1114).intl;
+      obj[1] = intl2.string(setMode(1114).t.brPQ5U);
       obj[2] = callback;
       obj[3] = activityName;
-      obj[1] = jsx(setMode(4936).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      obj[1] = jsx(setMode(4975).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
       let tmp3 = <View icon={null} accessibilityLabel={null} onPress={null} text={null} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} shrink />;
     }
     return tmp3;
   }
   obj = { icon: registerAssetDefault, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
-  const intl = setMode(1233).intl;
-  obj[1] = intl.string(setMode(1233).t.brPQ5U);
+  const intl = setMode(1114).intl;
+  obj[1] = intl.string(setMode(1114).t.brPQ5U);
   obj[2] = callback;
-  tmp3 = jsx(setMode(8028).IconButton, { icon: registerAssetDefault, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
+  tmp3 = jsx(setMode(8097).IconButton, { icon: registerAssetDefault, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
 });
 const result = require("set").fileFinishedImporting("modules/activities/panel/native/MinimizeActivityButton.tsx");
 

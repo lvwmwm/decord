@@ -1,14 +1,14 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10891
+// Function ID: 10892
 // Name: isListeningOnSpotify
-// Dependencies: [673, 8270, 5244, 2]
+// Dependencies: [1074, 8340, 5283, 2]
 // Exports: default
 
-// Module 10822 (isListeningOnSpotify)
+// Module 10891 (isListeningOnSpotify)
 import set from "set" /* 2 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5244 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8270 */;
-import ME from "ME" /* 673 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5283 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8340 */;
+import ME from "ME" /* 1074 */;
 
 ({ ActivityTypes: obj1, PlatformTypes: c3 } = ME);
 const isSpotifyParty = SPOTIFY_APP_PROTOCOL.isSpotifyParty;

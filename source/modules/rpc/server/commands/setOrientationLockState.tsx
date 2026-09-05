@@ -1,15 +1,15 @@
-// Module ID: 14418
-// Function ID: 14419
-// Dependencies: [9439, 4383, 4509, 502, 9486, 9483, 706, 2]
+// Module ID: 14493
+// Function ID: 14494
+// Dependencies: [9510, 4465, 1920, 1085, 9557, 9554, 573, 2]
 
-// Module 14418
-import dispatcherDefault from "dispatcher" /* 706 */;
-import prototypeDefault from "prototype" /* 9483 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9486 */;
-import closure_2 from "map" /* 9439 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
-import { OrientationLockState } from "items3" /* 4509 */;
-import sum from "sum" /* 502 */;
+// Module 14493
+import dispatcherDefault from "dispatcher" /* 573 */;
+import prototypeDefault from "prototype" /* 9554 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9557 */;
+import closure_2 from "map" /* 9510 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4465 */;
+import { OrientationLockState } from "items3" /* 1920 */;
+import sum from "sum" /* 1085 */;
 
 const RPCErrors = sum.RPCErrors;
 const result = require("set").fileFinishedImporting("modules/rpc/server/commands/setOrientationLockState.tsx");

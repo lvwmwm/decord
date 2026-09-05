@@ -1,30 +1,30 @@
-// Module ID: 16423
-// Function ID: 16424
+// Module ID: 16499
+// Function ID: 16500
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 7244, 1386, 5374, 4120, 673, 1924, 21, 4132, 7696, 4481, 709, 1234, 4329, 586, 4494, 7390, 11053, 5084, 1233, 8687, 4477, 11191, 685, 1431, 11184, 10826, 11248, 11620, 11666, 16415, 5032, 7695, 7902, 11593, 8281, 11612, 11601, 4197, 4948, 686, 7149, 2]
+// Dependencies: [32, 19, 17, 7306, 1957, 5413, 4199, 1074, 1374, 21, 4211, 7764, 4560, 576, 1115, 4409, 504, 4573, 7456, 11121, 5123, 1114, 8757, 4556, 11259, 1091, 1396, 11252, 10895, 11316, 11688, 11734, 16491, 5071, 7763, 7971, 11661, 8351, 11680, 11669, 4262, 4987, 672, 7209, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 16423 (AddEmojiButton)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set from "set" /* 1234 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import checkReactionResponse from "checkReactionResponse" /* 7696 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11620 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11666 */;
+// Module 16499 (AddEmojiButton)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set from "set" /* 1115 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4211 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import checkReactionResponse from "checkReactionResponse" /* 7764 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11688 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11734 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "updateState" /* 7244 */;
-import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import closure_10 from "recomputeGuild" /* 5374 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import closure_8 from "updateState" /* 7306 */;
+import closure_9 from "ensureGuildLoaded" /* 1957 */;
+import closure_10 from "recomputeGuild" /* 5413 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
+import { EmojiIntention } from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function AddEmojiButton(channel) {
@@ -220,7 +220,7 @@ function ForwardButton(disabled) {
   items[2] = disabled;
   obj[1] = items;
   obj[3] = disabled;
-  const intl = tmp3(1233).intl;
+  const intl = tmp3(1114).intl;
   obj[4] = intl.string(getSystemLocale.t.xIUfJS);
   obj[5] = closure_16(ForwardingIconDefault, { size: "sm" });
   return closure_16(PressableBase.PressableOpacity, obj);
@@ -238,7 +238,7 @@ function ReplyButton(disabled) {
   items[2] = disabled;
   obj[1] = items;
   obj[3] = disabled;
-  const intl = tmp3(1233).intl;
+  const intl = tmp3(1114).intl;
   obj[4] = intl.string(getSystemLocale.t["5NwaNY"]);
   obj[5] = closure_16(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" });
   return closure_16(PressableBase.PressableOpacity, obj);
@@ -334,7 +334,7 @@ let closure_20 = createCacheKey.createStyles(() => {
   const tmp4Result = hexToRgba;
   obj[17] = { paddingVertical: 6, paddingHorizontal: 8, backgroundColor: ThemesDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: ThemesDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
   obj[18] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4, justifySelf: "end" };
-  obj3 = { width: 20, height: 20, tintColor: tmp(709).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj3 = { width: 20, height: 20, tintColor: tmp(576).colors.INTERACTIVE_TEXT_DEFAULT };
   obj[19] = obj3;
   return obj;
 });
@@ -669,7 +669,7 @@ export const useThread = function useThread(id) {
   closure_1 = arg1;
   dependencyMap = arg2;
   const items = [closure_9, closure_8];
-  const stateFromStoresObject = _require(586).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(504).useStateFromStoresObject(items, () => {
     if (null != message) {
       if (null != guild) {
         let channel = canForwardMessage.getChannel(tmp.id);

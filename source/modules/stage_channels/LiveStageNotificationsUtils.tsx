@@ -1,13 +1,13 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 9814
+// Function ID: 9815
 // Name: useCanSendStageStartNotification
-// Dependencies: [4401, 4120, 502, 586, 2]
+// Dependencies: [4480, 4199, 1085, 504, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 9743 (useCanSendStageStartNotification)
-import closure_2 from "handleInviteData" /* 4401 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "sum" /* 502 */;
+// Module 9814 (useCanSendStageStartNotification)
+import closure_2 from "handleInviteData" /* 4480 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/LiveStageNotificationsUtils.tsx");
@@ -16,7 +16,7 @@ export const useCanSendStageStartNotification = function useCanSendStageStartNot
   const _require = first;
   const items = [closure_3];
   const items1 = [first];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
       canResult = closure_1_3.can(closure_1_4.MENTION_EVERYONE, tmp);
@@ -31,7 +31,7 @@ export const useDefaultSendStartStageNotificationToggle = function useDefaultSen
   }
   const items = [closure_2];
   const items1 = [guild_id];
-  const stateFromStores = guild_id(586).useStateFromStores(items, () => closure_1_2.getMemberCount(guild_id), items1);
+  const stateFromStores = guild_id(504).useStateFromStores(items, () => closure_1_2.getMemberCount(guild_id), items1);
   let tmp3 = null == first;
   if (!tmp3) {
     let tmp4 = null == stateFromStores;

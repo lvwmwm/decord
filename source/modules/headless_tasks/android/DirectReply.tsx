@@ -1,13 +1,13 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 17938
+// Function ID: 17939
 // Name: promise
-// Dependencies: [5, 17, 4474, 3, 17852, 7390, 2]
+// Dependencies: [5, 17, 4553, 3, 17932, 7456, 2]
 
-// Module 17858 (promise)
+// Module 17938 (promise)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 
 let closure_5 = new timestampDefault("DirectReply");
 let tmp = new timestampDefault("DirectReply");
@@ -27,7 +27,7 @@ export default (arg0) => {
           closure_0 = arg0;
           c3 = 0;
           c4 = 0;
-          return (/* F125556 */ function*() { ... })();
+          return (/* F125842 */ function*() { ... })();
         });
         closure_0 = tmp;
         const apply = tmp.apply;

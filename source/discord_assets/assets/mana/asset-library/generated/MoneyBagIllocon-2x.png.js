@@ -1,9 +1,9 @@
-// Module ID: 6191
-// Function ID: 6192
+// Module ID: 6246
+// Function ID: 6247
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6191 (metadata)
+// Module 6246 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MoneyBagIllocon-2x.png.js");

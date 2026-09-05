@@ -1,13 +1,13 @@
-// Module ID: 4346
-// Function ID: 4347
+// Module ID: 4428
+// Function ID: 4429
 // Name: zustandStore
-// Dependencies: [4347, 4349, 511, 2]
+// Dependencies: [4429, 4431, 1256, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4346 (zustandStore)
+// Module 4428 (zustandStore)
 import set from "set" /* 2 */;
-import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4347 */;
-import PortalKeyboardState from "PortalKeyboardState" /* 4349 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4429 */;
+import PortalKeyboardState from "PortalKeyboardState" /* 4431 */;
 
 const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ keyboard: null, state: PortalKeyboardState.PortalKeyboardState.EMPTY, renderers: [] }));
 const result = set.fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
@@ -49,14 +49,14 @@ export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, a
   if (!tmp3) {
     obj = { keyboard: null, state: null };
     obj = { id: null, type: null, channelId: null, chatInputRef: null };
-    obj[0] = tmp5(511).v4();
+    obj[0] = tmp5(1256).v4();
     obj[1] = type;
     obj[2] = closure_0;
     obj[3] = arg2;
     obj[0] = obj;
-    obj[1] = tmp5(4349).PortalKeyboardState.REQUEST_OPEN;
+    obj[1] = tmp5(4431).PortalKeyboardState.REQUEST_OPEN;
     obj.setState(obj);
-    const tmp5Result = tmp5(511);
+    const tmp5Result = tmp5(1256);
   }
 };
 export const registerPortalKeyboardRenderer = function registerPortalKeyboardRenderer(id) {
@@ -127,7 +127,7 @@ export const closePortalKeyboardRequest = function closePortalKeyboardRequest() 
   const field = zustandStore.getField("state");
   if (tmp4) {
     obj = { state: null };
-    obj[0] = tmp2(4349).PortalKeyboardState.REQUEST_CLOSE;
+    obj[0] = tmp2(4431).PortalKeyboardState.REQUEST_CLOSE;
     obj.setState(obj);
   }
 };

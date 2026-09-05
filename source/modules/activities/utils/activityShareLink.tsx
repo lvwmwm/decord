@@ -1,13 +1,13 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 14487
+// Function ID: 14488
 // Name: items
-// Dependencies: [4464, 1485, 1233, 2]
+// Dependencies: [4543, 1365, 1114, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14412 (items)
+// Module 14487 (items)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import getPathsFromURL from "getPathsFromURL" /* 4464 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import getPathsFromURL from "getPathsFromURL" /* 4543 */;
 
 const items = [getPathsFromURL.parseQuestsEmbedCode];
 const result = set.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
@@ -29,12 +29,12 @@ export const resolveActivityShareMessageContent = function resolveActivityShareM
   });
   let combined = replaced;
   if (!_require) {
-    const intl = _require(1233).intl;
+    const intl = _require(1114).intl;
     const obj = { applicationName: null, link: null };
     obj[0] = closure_14.name;
     obj[1] = closure_12;
     let _HermesInternal = HermesInternal;
-    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1233).t.dZJpdG, obj);
+    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1114).t.dZJpdG, obj);
   }
   return combined;
 };

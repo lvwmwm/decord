@@ -1,10 +1,10 @@
 // Module ID: 17652
 // Function ID: 17653
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 17652 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3ef4b3974aa9916e2392a41f76914807", name: "ImagePlusIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 250, height: 200, scales: [2, 3], hash: "a58504e7154ded917c4b5c349c82a3a7", name: "img_bans_empty_dark", type: "png" });

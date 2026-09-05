@@ -1,10 +1,10 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13149
+// Function ID: 13150
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 7486, 8780, 2]
+// Dependencies: [19, 7553, 8850, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 13081 (useVirtualCurrencyData)
+// Module 13149 (useVirtualCurrencyData)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

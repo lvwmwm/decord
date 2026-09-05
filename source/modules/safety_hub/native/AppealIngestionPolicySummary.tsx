@@ -1,19 +1,19 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11899
+// Function ID: 11900
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4481, 709, 8348, 4329, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8418, 4409, 4556, 1114, 2]
 // Exports: default
 
-// Module 11831 (AppealIngestionPolicySummary)
+// Module 11899 (AppealIngestionPolicySummary)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import Text from "Text" /* 4477 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8348 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import Text from "Text" /* 4556 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8418 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -38,7 +38,7 @@ export default function AppealIngestionPolicySummary(classification) {
   obj = { style: tmp.policy, children: null };
   const tmp2Result = hexToRgba;
   obj = { style: tmp.sectionTitle, variant: "text-sm/bold", children: null };
-  const intl = tmp2(1233).intl;
+  const intl = tmp2(1114).intl;
   obj[2] = intl.string(getSystemLocale.t.xsdcxh);
   const items = [callback(Text.Text, obj), ];
   const hexWithOpacityResult = hexToRgba.hexWithOpacity(tmp.borderColor.color, 0.08);

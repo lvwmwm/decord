@@ -1,12 +1,12 @@
-// Module ID: 14691
-// Function ID: 14692
+// Module ID: 14766
+// Function ID: 14767
 // Name: ACCOUNT_STANDING_SHORT_STATUS
-// Dependencies: [8350, 1233, 2]
+// Dependencies: [8420, 1114, 2]
 
-// Module 14691 (ACCOUNT_STANDING_SHORT_STATUS)
+// Module 14766 (ACCOUNT_STANDING_SHORT_STATUS)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import ContentIdType from "ContentIdType" /* 8350 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import ContentIdType from "ContentIdType" /* 8420 */;
 
 const obj = {};
 obj[ContentIdType.AccountStandingState.ALL_GOOD] = getSystemLocale.t["/Idfao"];

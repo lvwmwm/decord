@@ -1,21 +1,21 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17311
+// Function ID: 17312
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4481, 709, 4739, 4741, 7063, 5647, 4477, 4936, 8341, 8343, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4771, 4773, 7123, 5692, 4556, 4975, 8411, 8413, 2]
 // Exports: default
 
-// Module 17231 (AgeGateVerify)
+// Module 17311 (AgeGateVerify)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4739 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import Button from "Button" /* 4936 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4771 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import Button from "Button" /* 4975 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -50,8 +50,8 @@ export default function AgeGateVerify(source) {
     const obj3 = { text: null, onPress: null, grow: true };
     obj3[0] = verifyAgreementButtonText;
     obj3[1] = function onPress() {
-      let obj = callback2(8341);
-      obj = { entryPoint: callback(8343).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      let obj = callback2(8411);
+      obj = { entryPoint: callback(8413).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     };
     obj2[1] = tmp7(Button.Button, obj3);

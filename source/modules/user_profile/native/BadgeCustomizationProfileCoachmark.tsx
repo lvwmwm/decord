@@ -1,13 +1,13 @@
-// Module ID: 16724
-// Function ID: 16725
+// Module ID: 16802
+// Function ID: 16803
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1921, 1383, 586, 4139, 1233, 4205, 11059, 2]
+// Dependencies: [19, 1371, 1954, 504, 4218, 1114, 4271, 11127, 2]
 // Exports: default
 
-// Module 16724 (BadgeCustomizationProfileCoachmark)
+// Module 16802 (BadgeCustomizationProfileCoachmark)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");

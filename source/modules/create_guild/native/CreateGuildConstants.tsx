@@ -1,9 +1,9 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6980
+// Function ID: 6981
 // Name: NUXGuildTemplatesAnalytics
 // Dependencies: [2]
 
-// Module 6920 (NUXGuildTemplatesAnalytics)
+// Module 6980 (NUXGuildTemplatesAnalytics)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/create_guild/native/CreateGuildConstants.tsx");

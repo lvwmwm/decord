@@ -1,10 +1,10 @@
-// Module ID: 9587
-// Function ID: 9588
-// Dependencies: [641, 702, 2]
+// Module ID: 9658
+// Function ID: 9659
+// Dependencies: [560, 1249, 2]
 
-// Module 9587
+// Module 9658
 import set2 from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let obj = keys.create((arg0, arg1) => {
   closure_0 = arg0;
@@ -16,7 +16,7 @@ let obj = keys.create((arg0, arg1) => {
     },
     requestSafeAreaDisableLock(arg0) {
       ({ key: closure_0, lockEnabled: closure_1 } = arg0);
-      callback(702).batchUpdates(() => {
+      callback(1249).batchUpdates(() => {
         closure_1_0((lockKeys) => {
           lockKeys = lockKeys.lockKeys;
           const hasItem = lockKeys.has(closure_0);

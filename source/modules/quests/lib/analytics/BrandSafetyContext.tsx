@@ -1,28 +1,28 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11194
+// Function ID: 11195
 // Name: getBrandSafetyContext
-// Dependencies: [11127, 1386, 1908, 4130, 4302, 1921, 11128, 7632, 1431, 4681, 2]
+// Dependencies: [11195, 1957, 1979, 4209, 4381, 1371, 11196, 7699, 1396, 4713, 2]
 // Exports: getBrandSafetyContext
 
-// Module 11126 (getBrandSafetyContext)
+// Module 11194 (getBrandSafetyContext)
 import set from "set" /* 2 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 11128 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 11127 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "handleConnectionOpen" /* 4302 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 11196 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 11195 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "handleConnectionOpen" /* 4381 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
 
 ({ getVisibleChannelIdsMethod: c3, getVisibleGuildIdsMethod: c4 } = SidebarVisibilityMethodStore);
 let closure_10 = MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN.MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN;
 let result = set.fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = _require(7632);
+  let obj = _require(7699);
   const result = obj.isBillableQuestContent(questContent);
-  obj1 = _require(7632);
+  obj1 = _require(7699);
   const adContext = obj1.getAdContext(questContent);
   const tmp4 = callback2();
   const tmp5 = callback();

@@ -1,58 +1,51 @@
 // Module ID: 14354
 // Function ID: 14355
-// Dependencies: [19, 14336, 14355, 21]
-// Exports: default
+// Dependencies: [14323, 14355, 14298, 14351]
 
 // Module 14354
-import noop from "noop" /* 19 */;
-import map from "map" /* 14336 */;
-import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 14355 */;
-import closure_2 from "jsxProd" /* 21 */;
+import all from "all" /* 14323 */;
 
-if (noop) {
-  const __esModule = noop.__esModule;
-}
-if (!map) {
-  let obj = { default: null };
-  obj[0] = map;
-  let tmp4 = obj;
-} else {
-  tmp4 = map;
-}
-map = tmp4;
-if (!_isNativeReflectConstruct) {
-  obj = { default: null };
-  obj[0] = _isNativeReflectConstruct;
-  let tmp6 = obj;
-} else {
-  tmp6 = _isNativeReflectConstruct;
-}
-_isNativeReflectConstruct = tmp6;
 
-export default () => () => {
-  closure_0 = closure_0.default();
-  obj = {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
-      }
-    },
-    features: obj
-  };
-  obj = {
-    storybookSwitcher(arg0) {
-      closure_0 = arg0;
-      return (arg0) => {
-        closure_0 = arg0;
-        return function StorybookSwitcherContainer(arg0) {
-          let obj = { storybookUi: closure_0, emitter: closure_0, children: null };
-          obj = {};
-          const merged = Object.assign(arg0);
-          obj[2] = <closure_0 />;
-          return <closure_3_1.default />;
-        };
-      };
+export default (arg0, arg1, arg2, arg3) => {
+  let obj = arg3;
+  if (!arg3) {
+    obj = {};
+  }
+  let flag = obj.enumerable;
+  let name = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (all(arg2)) {
+    tmp3(14355)(arg2, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = arg2;
+    } else {
+      tmp3(14298)(arg1, arg2);
     }
-  };
-  return obj;
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp[tmp2];
+      }
+      if (flag) {
+        arg0[arg1] = arg2;
+      } else {
+        obj = { value: null, enumerable: false, configurable: null, writable: null };
+        obj[0] = arg2;
+        obj[2] = !obj.nonConfigurable;
+        obj[3] = !obj.nonWritable;
+        tmp3(14351).f(arg0, arg1, obj);
+        const tmp3Result = tmp3(14351);
+      }
+    } catch (err) {
+    }
+  }
+  return arg0;
 };

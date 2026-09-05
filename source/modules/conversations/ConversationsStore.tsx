@@ -1,20 +1,20 @@
-// Module ID: 7529
-// Function ID: 7530
+// Module ID: 7596
+// Function ID: 7597
 // Name: removePendingListFetch
-// Dependencies: [1215, 1386, 4130, 1980, 1921, 7530, 7531, 1401, 11, 4745, 7532, 1394, 4132, 586, 706, 2]
+// Dependencies: [502, 1957, 4209, 2011, 1371, 7597, 7598, 1437, 11, 4783, 7599, 1369, 4211, 504, 573, 2]
 
-// Module 7529 (removePendingListFetch)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1401 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4745 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "initialize" /* 7530 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7531 */;
+// Module 7596 (removePendingListFetch)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import privDefault from "priv" /* 1437 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4783 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "markAllUserIdListsStale" /* 4209 */;
+import closure_6 from "handleConnectionOpen" /* 2011 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "initialize" /* 7597 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7598 */;
 
 require = arg1;
 function removePendingListFetch(channelId, requestKey) {
@@ -198,7 +198,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj2 = messageId(4132);
+      obj2 = messageId(4211);
     }
   }
 }
@@ -549,8 +549,8 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7532).mapConversation);
-      const found = mapped.filter(set(1394).isNotNullish);
+      const mapped = rawConversations.map(set(7599).mapConversation);
+      const found = mapped.filter(set(1369).isNotNullish);
       const peekResult = navigation.peek(channelId);
       if (isJump) {
         let prop;
@@ -1110,7 +1110,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4745).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4783).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1134,7 +1134,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4745);
+            const obj = id(4783);
           }
           return flag;
         }

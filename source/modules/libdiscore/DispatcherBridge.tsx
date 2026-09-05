@@ -1,20 +1,20 @@
-// Module ID: 17843
-// Function ID: 17844
+// Module ID: 17923
+// Function ID: 17924
 // Name: importDefaultResult2
-// Dependencies: [4480, 5421, 5463, 12985, 1215, 1984, 1908, 673, 3, 1914, 1912, 695, 706, 7347, 1205, 2]
+// Dependencies: [4559, 5461, 5503, 13053, 502, 2015, 1979, 1074, 3, 1985, 1983, 1242, 573, 1895, 1232, 2]
 
-// Module 17843 (importDefaultResult2)
+// Module 17923 (importDefaultResult2)
 import timestampDefault from "timestamp" /* 3 */;
-import _modDef1205 from "module_1205" /* 1205 */;
-import items6 from "items" /* 1912 */;
-import closure_3 from "getUserAgnosticState" /* 4480 */;
-import importDefaultResult from "fromServer" /* 5421 */;
-import importDefaultResult1 from "parseServerGuildSticker" /* 5463 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import importDefaultResult2 from "getNote" /* 12985 */;
-import importDefaultResult3 from "createGuildRoleRecordFromRust" /* 1984 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import importDefaultResult4 from "createGuildRecordFromRust" /* 1908 */;
+import _modDef1232 from "module_1232" /* 1232 */;
+import items6 from "items" /* 1983 */;
+import closure_3 from "getUserAgnosticState" /* 4559 */;
+import importDefaultResult from "fromServer" /* 5461 */;
+import importDefaultResult1 from "parseServerGuildSticker" /* 5503 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import importDefaultResult2 from "getNote" /* 13053 */;
+import importDefaultResult3 from "createGuildRoleRecordFromRust" /* 2015 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import importDefaultResult4 from "createGuildRecordFromRust" /* 1979 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -279,7 +279,7 @@ prototype["handleFatalError"] = function handleFatalError(error, type) {
   let obj = logger;
   logger.error("Fatal dispatch error for action", type, "hasAuthoritativeStore:", result, error);
   obj = { actionType: type, hasAuthoritativeStore: result };
-  _modDef1205.captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "fatal_dispatch" } });
+  _modDef1232.captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "fatal_dispatch" } });
   if (result) {
     const result1 = items6.clearLibdiscoreExperimentCache();
     throw error;
@@ -293,7 +293,7 @@ prototype["handleFatalError"] = function handleFatalError(error, type) {
       continue;
     }
   }
-  const obj2 = _modDef1205;
+  const obj2 = _modDef1232;
 };
 prototype["handleStoreError"] = function handleStoreError(storeToken, type) {
   const tokenToStore = this.tokenToStore;
@@ -316,7 +316,7 @@ prototype["handleStoreError"] = function handleStoreError(storeToken, type) {
   }
   error = new Error(str3);
   logger.error("Store", name, "failed to handle action", type, "mode:", mode, error);
-  _modDef1205.captureException(error, { extra: { actionType: type, storeName: name, storeMode: mode }, tags: { source: "libdiscore", errorKind: "store_dispatch" } });
+  _modDef1232.captureException(error, { extra: { actionType: type, storeName: name, storeMode: mode }, tags: { source: "libdiscore", errorKind: "store_dispatch" } });
   if ("typescript-libdiscore-dual-read" !== mode) {
     if ("libdiscore" === mode) {
       const result = items6.clearLibdiscoreExperimentCache();
@@ -337,7 +337,7 @@ prototype["handleStoreError"] = function handleStoreError(storeToken, type) {
   }
   const obj = { actionType: type, storeName: name, storeMode: mode };
   obj2 = logger;
-  const obj3 = _modDef1205;
+  const obj3 = _modDef1232;
 };
 prototype["withStoreToken"] = function withStoreToken(storeToken, type, arg2) {
   const tokenToStore = this.tokenToStore;

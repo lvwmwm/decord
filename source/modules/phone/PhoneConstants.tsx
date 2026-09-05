@@ -1,9 +1,9 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 7043
+// Function ID: 7044
 // Name: PHONE_VERIFICATION_MODAL_KEY
 // Dependencies: [2]
 
-// Module 6983 (PHONE_VERIFICATION_MODAL_KEY)
+// Module 7043 (PHONE_VERIFICATION_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/phone/PhoneConstants.tsx");

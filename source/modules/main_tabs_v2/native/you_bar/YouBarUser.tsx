@@ -1,15 +1,15 @@
-// Module ID: 16309
-// Function ID: 16310
-// Dependencies: [19, 17, 1921, 15022, 21, 4481, 709, 586, 4218, 4935, 4325, 16310, 16311, 16312, 2]
+// Module ID: 16385
+// Function ID: 16386
+// Dependencies: [19, 17, 1371, 15098, 21, 4560, 576, 504, 4296, 4974, 4404, 16386, 16387, 16388, 2]
 
-// Module 16309
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16385
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15022 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 15098 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -28,11 +28,11 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   let _require;
   let sharedValue;
   const tmp = callback2();
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   _require = tmp5;
-  obj1 = _require(4218);
+  obj1 = _require(4296);
   sharedValue = obj1.useSharedValue(isQuestRendered ? closure_8 : closure_7);
   const items1 = [!isQuestRendered, sharedValue];
   const effect = importAllResult.useEffect(() => {
@@ -47,8 +47,8 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   S.__closure = { nameMargin: sharedValue };
   S.__workletHash = 12063452832866;
   S.__initData = closure_12;
-  const animatedStyle = _require(4218).useAnimatedStyle(S);
-  let obj3 = sharedValue(4325);
+  const animatedStyle = _require(4296).useAnimatedStyle(S);
+  let obj3 = sharedValue(4404);
   const name = obj3.useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
@@ -57,26 +57,26 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
       obj = { isLargeAvatar: null, onPress: null };
       obj[0] = tmp5;
       obj[1] = isQuestRendered.onAvatarPress;
-      const items2 = [callback(tmp9(16311), obj), ];
+      const items2 = [callback(tmp9(16387), obj), ];
       obj1 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj1[0] = items3;
       const obj2 = { userId: null, username: null };
       obj2[0] = stateFromStores.id;
       obj2[1] = name;
-      obj1[1] = callback(tmp9(16312), obj2);
-      items2[1] = callback(tmp9(4218).View, obj1);
+      obj1[1] = callback(tmp9(16388), obj2);
+      items2[1] = callback(tmp9(4296).View, obj1);
       obj[1] = items2;
     }
     return tmp11(tmp12, obj);
   }
   obj3 = { style: items4, children: null };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(16310), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(16386), { isLarge: !isQuestRendered }), ];
   const tmp2 = _require;
-  const tmp2Result = _require(4218);
+  const tmp2Result = _require(4296);
   const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-  items5[1] = callback(sharedValue(4218).View, { style: items6, children: callback(View, obj5) });
+  items5[1] = callback(sharedValue(4296).View, { style: items6, children: callback(View, obj5) });
   obj3[1] = items5;
   obj = obj3;
 });

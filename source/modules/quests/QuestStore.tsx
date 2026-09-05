@@ -1,21 +1,21 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7703
+// Function ID: 7704
 // Name: initializeState
-// Dependencies: [32, 7637, 7638, 5404, 12, 5412, 7641, 1205, 7632, 5407, 7642, 7643, 7634, 586, 706, 2]
+// Dependencies: [32, 7704, 7705, 5444, 12, 5452, 7708, 1232, 7699, 5447, 7709, 7710, 7701, 504, 573, 2]
 
-// Module 7636 (initializeState)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef1205 from "module_1205" /* 1205 */;
-import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7632 */;
-import result6 from "result" /* 7634 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7641 */;
-import getQuestLogger from "getQuestLogger" /* 7642 */;
-import progressFromServer from "progressFromServer" /* 7643 */;
+// Module 7703 (initializeState)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _modDef1232 from "module_1232" /* 1232 */;
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7699 */;
+import result6 from "result" /* 7701 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7708 */;
+import getQuestLogger from "getQuestLogger" /* 7709 */;
+import progressFromServer from "progressFromServer" /* 7710 */;
 import closure_28 from "_slicedToArray" /* 32 */;
-import closure_29 from "useConsoleQuestUIStore" /* 7637 */;
-import closure_30 from "_toPropertyKey" /* 7638 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
+import closure_29 from "useConsoleQuestUIStore" /* 7704 */;
+import closure_30 from "_toPropertyKey" /* 7705 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5444 */;
 
 require = arg1;
 function initializeState() {
@@ -146,7 +146,7 @@ function _runExpirationCheck() {
   if (_require) {
     questStore.emitChange();
   }
-  let result = _require(7632).findNextUpcomingExpirationEpochMs(Array.from(store.values()));
+  let result = _require(7699).findNextUpcomingExpirationEpochMs(Array.from(store.values()));
   if (null != result) {
     const _Math = Math;
     const _Date = Date;
@@ -354,7 +354,7 @@ const questStore = new QuestStore(dispatcherDefault, {
     mapped = quests.map((id) => id.id);
     const found = items.filter((arg0) => !mapped.includes(arg0));
     if (found.length > 0) {
-      let obj = _modDef1205;
+      let obj = _modDef1232;
       obj = { category: "quests.store", message: null, data: null };
       const _HermesInternal = HermesInternal;
       obj[1] = "handleFetchCurrentQuestsSuccess: " + found.length + " quest(s) removed during rebuild";
@@ -379,13 +379,13 @@ const questStore = new QuestStore(dispatcherDefault, {
       let tmp13 = mapped;
       let tmp14 = dependencyMap;
       let tmp15 = dependencyMap;
-      let obj5 = mapped(7632);
+      let obj5 = mapped(7699);
       let result1 = map1.set(nextResult.id, obj5.isQuestExpired(nextResult));
       let targetedContent = nextResult.targetedContent;
-      if (targetedContent.includes(mapped(5407).QuestContent.QUEST_BAR)) {
+      if (targetedContent.includes(mapped(5447).QuestContent.QUEST_BAR)) {
         let tmp17 = tmp12;
         let tmp18 = tmp14;
-        let tmp13Result = tmp13(7642);
+        let tmp13Result = tmp13(7709);
         obj1 = { location: null };
         let tmp19 = QuestsExperimentLocations;
         obj1[0] = QuestsExperimentLocations.QUESTS_STORE;
@@ -419,7 +419,7 @@ const questStore = new QuestStore(dispatcherDefault, {
         let tmp32 = mapped;
         let tmp33 = dependencyMap;
         let tmp34 = dependencyMap;
-        let obj10 = mapped(7632);
+        let obj10 = mapped(7699);
         let result4 = map1.set(tmp26.id, obj10.isQuestExpired(tmp26));
       }
       continue;
@@ -548,7 +548,7 @@ const questStore = new QuestStore(dispatcherDefault, {
           let tmp24 = map3;
           let tmp25 = tmp36;
           let tmp26 = tmp38;
-          let tmp37Result = tmp37(7632);
+          let tmp37Result = tmp37(7699);
           let result4 = map3.set(tmp10, tmp37Result.isQuestExpired(result2));
         }
       }

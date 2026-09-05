@@ -1,22 +1,22 @@
-// Module ID: 14602
-// Function ID: 14603
+// Module ID: 14677
+// Function ID: 14678
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 14582, 21, 4481, 1498, 6538, 4194, 1233, 10581, 4441, 8523, 1296, 4936, 2]
+// Dependencies: [5, 32, 19, 17, 14657, 21, 4560, 1483, 6597, 4259, 1114, 10652, 4520, 8593, 1178, 4975, 2]
 // Exports: default
 
-// Module 14602 (WebAuthnNameStep)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 1296 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import Button2 from "Button" /* 4936 */;
-import Form from "Form" /* 8523 */;
+// Module 14677 (WebAuthnNameStep)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 1178 */;
+import useNavigation from "useNavigation" /* 1483 */;
+import Button2 from "Button" /* 4975 */;
+import Form from "Form" /* 8593 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { WebAuthnScreens } from "WebAuthnScreens" /* 14582 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14657 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -139,9 +139,9 @@ export default function WebAuthnNameStep(arg0) {
   first = tmp5Result[0];
   obj = { children: null };
   obj = { showTopContainer: false, value: first, onChange: tmp5Result[1], style: tmp.margin, error: tmp8, title: null, placeholder: null, disabled: null, clearButtonVisibility: null, autoFocus: true, showBorder: true, required: true, large: true };
-  let intl = tmp2(1233).intl;
+  let intl = tmp2(1114).intl;
   obj[5] = intl.string(getSystemLocale.t["Jzd+z/"]);
-  const intl2 = tmp2(1233).intl;
+  const intl2 = tmp2(1114).intl;
   obj[6] = intl2.string(getSystemLocale.t["I/sJtJ"]);
   obj[7] = tmp6[0];
   obj[8] = Button.ClearButtonVisibility.WITH_CONTENT;
@@ -162,7 +162,7 @@ export default function WebAuthnNameStep(arg0) {
     disabled: null,
     size: "lg"
   };
-  const intl3 = tmp2(1233).intl;
+  const intl3 = tmp2(1114).intl;
   obj2[1] = intl3.string(getSystemLocale.t["5dyZ1S"]);
   obj2[2] = "" === first;
   obj1[1] = callback2(Button2.Button, obj2);

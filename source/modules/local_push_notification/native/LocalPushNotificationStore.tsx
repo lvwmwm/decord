@@ -1,18 +1,18 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13715
+// Function ID: 13716
 // Name: set
-// Dependencies: [1908, 5374, 13640, 673, 9616, 4074, 1233, 586, 706, 2]
+// Dependencies: [1979, 5413, 13716, 1074, 9687, 4153, 1114, 504, 573, 2]
 
-// Module 13639 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
-import NativeModulesDefault from "NativeModules" /* 9616 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "recomputeGuild" /* 5374 */;
-import LocalNotificationTypes from "LocalNotificationTypes" /* 13640 */;
-import { VerificationLevels } from "ME" /* 673 */;
+// Module 13715 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hooksDefault from "hooks" /* 4153 */;
+import NativeModulesDefault from "NativeModules" /* 9687 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "recomputeGuild" /* 5413 */;
+import LocalNotificationTypes from "LocalNotificationTypes" /* 13716 */;
+import { VerificationLevels } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -47,9 +47,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(dispatcherDefa
             set.add(userInfo);
           }
         }
-        const result = callback(9616).cancelLocalNotifications(userInfo);
-        const obj = callback(9616);
-        const result1 = callback(9616).cancelLocalNotifications(userInfo);
+        const result = callback(9687).cancelLocalNotifications(userInfo);
+        const obj = callback(9687);
+        const result1 = callback(9687).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -81,8 +81,8 @@ const localPushNotificationStore = new LocalPushNotificationStore(dispatcherDefa
               obj[2] = guild.name;
               const intl = getSystemLocale.intl;
               obj[3] = intl.string(getSystemLocale.t["hrDBa+"]);
-              const result = tmp15(9616).scheduleLocalNotification(obj);
-              const tmp15Result = tmp15(9616);
+              const result = tmp15(9687).scheduleLocalNotification(obj);
+              const tmp15Result = tmp15(9687);
             }
             tmp15 = importDefault;
           }

@@ -1,23 +1,23 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11412
+// Function ID: 11413
 // Name: startInterval
-// Dependencies: [1215, 1386, 1908, 1980, 4709, 673, 4710, 682, 684, 11, 1399, 586, 10078, 706, 2]
+// Dependencies: [502, 1957, 1979, 2011, 4741, 1074, 4742, 1084, 1090, 11, 1384, 504, 10149, 573, 2]
 
-// Module 11344 (startInterval)
+// Module 11412 (startInterval)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import useChannelPresetSettings from "useChannelPresetSettings" /* 10078 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
-import closure_7 from "updateUserGuildSettingsInternal" /* 4709 */;
-import { UserNotificationSettings } from "ME" /* 673 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
-import { ChannelNotificationSettingsFlags as closure_10 } from "MAX_FAVORITES" /* 682 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import useChannelPresetSettings from "useChannelPresetSettings" /* 10149 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "handleConnectionOpen" /* 2011 */;
+import closure_7 from "updateUserGuildSettingsInternal" /* 4741 */;
+import { UserNotificationSettings } from "ME" /* 1074 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
+import { ChannelNotificationSettingsFlags as closure_10 } from "MAX_FAVORITES" /* 1084 */;
 import set from "set" /* 2 */;
 
 require = arg1;

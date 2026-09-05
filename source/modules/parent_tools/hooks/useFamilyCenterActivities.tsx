@@ -1,13 +1,13 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14894
+// Function ID: 14895
 // Name: useActionsForDisplayType
-// Dependencies: [7470, 7471, 644, 7526, 7174, 2]
+// Dependencies: [7537, 7538, 563, 7593, 7234, 2]
 // Exports: useActionTotalsForDisplayType, useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 14819 (useActionsForDisplayType)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7470 */;
-import { TeenActionDisplayType } from "items" /* 7471 */;
+// Module 14894 (useActionsForDisplayType)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7537 */;
+import { TeenActionDisplayType } from "items" /* 7538 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActivities.tsx");
@@ -15,12 +15,12 @@ let result = require("set").fileFinishedImporting("modules/parent_tools/hooks/us
 export const useActionsForDisplayType = function useActionsForDisplayType(displayType) {
   const _require = displayType;
   const items = [closure_2];
-  return _require(644).useStateFromStoresArray(items, () => closure_1_2.getActionsForDisplayType(closure_0));
+  return _require(563).useStateFromStoresArray(items, () => closure_1_2.getActionsForDisplayType(closure_0));
 };
 export const useActionTotalsForDisplayType = function useActionTotalsForDisplayType(displayType) {
   const _require = displayType;
   const items = [closure_2];
-  return _require(644).useStateFromStores(items, () => closure_1_2.getTotalForDisplayType(closure_0));
+  return _require(563).useStateFromStores(items, () => closure_1_2.getTotalForDisplayType(closure_0));
 };
 export const useHasActionForAnyDisplayType = function useHasActionForAnyDisplayType() {
   const items = [closure_2];
@@ -32,12 +32,12 @@ export const useHasActionForAnyDisplayType = function useHasActionForAnyDisplayT
 export const useFormattedTotalForDisplayType = function useFormattedTotalForDisplayType(displayType) {
   const _require = displayType;
   const items = [closure_2];
-  let num = _require(644).useStateFromStores(items, () => closure_1_2.getTotalForDisplayType(closure_0));
+  let num = _require(563).useStateFromStores(items, () => closure_1_2.getTotalForDisplayType(closure_0));
   if (num == null) {
     num = 0;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    let tmpResult = tmp(7526);
+    let tmpResult = tmp(7593);
     return tmpResult.formatTotalTime(num);
   } else if (displayType === tmp3.PURCHASES) {
     const totalSpendAmount = obj2.getTotalSpendAmount();
@@ -46,7 +46,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     if (null != totalSpendAmount) {
       result = num;
       if (null != totalSpendCurrency) {
-        tmpResult = tmp(7174);
+        tmpResult = tmp(7234);
         result = tmpResult.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
       }
     }
@@ -55,12 +55,12 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     const totalGiftValue = obj2.getTotalGiftValue();
     let result1 = num;
     if (null != totalGiftValue) {
-      result1 = tmp(7174).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-      const tmpResult1 = tmp(7174);
+      result1 = tmp(7234).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+      const tmpResult1 = tmp(7234);
     }
     return result1;
   } else {
     return num;
   }
-  const obj = _require(644);
+  const obj = _require(563);
 };

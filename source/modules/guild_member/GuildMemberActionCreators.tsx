@@ -1,15 +1,15 @@
-// Module ID: 7060
-// Function ID: 7061
+// Module ID: 7120
+// Function ID: 7121
 // Name: updateGuildSelfMember
-// Dependencies: [1983, 673, 5507, 706, 527, 2]
+// Dependencies: [2014, 1074, 5552, 573, 1272, 2]
 // Exports: updateGuildSelfMember
 
-// Module 7060 (updateGuildSelfMember)
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import updateImpersonating from "updateImpersonating" /* 5507 */;
-import closure_3 from "initialize" /* 1983 */;
-import { Endpoints } from "ME" /* 673 */;
+// Module 7120 (updateGuildSelfMember)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import updateImpersonating from "updateImpersonating" /* 5552 */;
+import closure_3 from "initialize" /* 2014 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");

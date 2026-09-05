@@ -1,17 +1,17 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14702
+// Function ID: 14703
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14616, 21, 4481, 709, 1890, 6937, 6990, 2]
+// Dependencies: [19, 17, 14691, 21, 4560, 576, 1874, 6997, 7050, 2]
 // Exports: default
 
-// Module 14627 (SettingSearchBar)
-import ThemesDefault from "Themes" /* 709 */;
-import SearchField from "SearchField" /* 6990 */;
+// Module 14702 (SettingSearchBar)
+import ThemesDefault from "Themes" /* 576 */;
+import SearchField from "SearchField" /* 7050 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "zustandStore" /* 14616 */;
+import closure_4 from "zustandStore" /* 14691 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 createCacheKey = { container: null };
@@ -24,10 +24,10 @@ export default function SettingSearchBar() {
   const tmp = callback();
   callback = React.useCallback(() => {
     store.setState({ isActive: false, query: "", isFocused: false });
-    const result = callback(1890).dismissGlobalKeyboard();
+    const result = callback(1874).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = callback(6937).trackSettingSearchInputFocused();
+    const result = callback(6997).trackSettingSearchInputFocused();
     store.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {

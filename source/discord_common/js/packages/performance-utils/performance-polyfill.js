@@ -1,9 +1,9 @@
-// Module ID: 651
-// Function ID: 652
+// Module ID: 570
+// Function ID: 571
 // Name: u
 // Dependencies: [2]
 
-// Module 651 (u)
+// Module 570 (u)
 import set from "set" /* 2 */;
 
 let _Date = Date;

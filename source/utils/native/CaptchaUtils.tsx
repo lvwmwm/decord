@@ -1,18 +1,18 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17289
+// Function ID: 17290
 // Name: CaptchaManager
-// Dependencies: [19, 17, 1995, 1301, 673, 21, 695, 7535, 7540, 586, 511, 582, 17210, 11209, 4731, 17211, 2008, 2]
+// Dependencies: [19, 17, 2025, 1183, 1074, 21, 1242, 7602, 7607, 504, 1256, 1326, 17290, 11277, 4763, 17291, 1896, 2]
 // Exports: InlineHcaptcha
 
-// Module 17209 (CaptchaManager)
-import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 582 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import siteKeyDefault from "siteKey" /* 17210 */;
+// Module 17289 (CaptchaManager)
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 1326 */;
+import siteKeyDefault from "siteKey" /* 17290 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "handleThemeChange" /* 1301 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
+import closure_6 from "handleThemeChange" /* 1183 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -174,10 +174,10 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
   ({ onVerify: importDefault, onError: dependencyMap } = siteKey);
   const merged = Object.assign(siteKey, Object.create(null));
   let React;
-  let obj = siteKey(586);
+  let obj = siteKey(504);
   let items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  const v4Result = siteKey(511).v4();
+  const v4Result = siteKey(1256).v4();
   React = v4Result;
   let items1 = [v4Result, siteKey];
   const effect = React.useEffect(() => {
@@ -246,7 +246,7 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
     },
     languageCode: stateFromStores
   };
-  let obj2 = siteKey(511);
+  let obj2 = siteKey(1256);
   const merged1 = Object.assign(merged);
   return jsx(siteKeyDefault, {
     siteKey,

@@ -1,16 +1,16 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10400
+// Function ID: 10401
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4481, 709, 4860, 1233, 4477, 5084, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4899, 1114, 4556, 5123, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10329 (StickerPackInformationPopout)
+// Module 10400 (StickerPackInformationPopout)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4860 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4899 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -34,28 +34,28 @@ export default function StickerPackInformationPopout(stickerPack) {
   const tmp = callback3();
   _require = tmp;
   let items = [];
-  let obj = _require(4860);
+  let obj = _require(4899);
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
-    const intl = tmp2(1233).intl;
-    obj[1] = intl.string(tmp2(1233).t.W11rMa);
+    const intl = tmp2(1114).intl;
+    obj[1] = intl.string(tmp2(1114).t.W11rMa);
     items.push(obj);
   }
   obj = { style: items1, children: null };
   items1 = [tmp.informationContainer, style];
   obj1 = { style: tmp.headerContainer, children: null };
   const obj2 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = tmp2(1233).intl;
-  obj2[3] = intl2.format(_require(1233).t.XDm6yN, { stickerPackName: stickerPack.name });
-  const items2 = [callback(_require(4477).Text, obj2), ];
+  const intl2 = tmp2(1114).intl;
+  obj2[3] = intl2.format(_require(1114).t.XDm6yN, { stickerPackName: stickerPack.name });
+  const items2 = [callback(_require(4556).Text, obj2), ];
   const obj4 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: null, children: null };
-  const intl3 = tmp2(1233).intl;
-  obj4[2] = intl3.string(_require(1233).t.cpT0Cq);
+  const intl3 = tmp2(1114).intl;
+  obj4[2] = intl3.string(_require(1114).t.cpT0Cq);
   const obj5 = { variant: "text-md/bold", color: "text-brand", children: null };
-  const intl4 = tmp2(1233).intl;
-  obj5[2] = intl4.string(_require(1233).t.cpT0Cq);
-  obj4[3] = callback(_require(4477).Text, obj5);
-  items2[1] = callback(_require(5084).PressableOpacity, obj4);
+  const intl4 = tmp2(1114).intl;
+  obj5[2] = intl4.string(_require(1114).t.cpT0Cq);
+  obj4[3] = callback(_require(4556).Text, obj5);
+  items2[1] = callback(_require(5123).PressableOpacity, obj4);
   obj1[1] = items2;
   const items3 = [
     callback2(closure_2, obj1),
@@ -82,8 +82,8 @@ export const doesStickerPackHavePopoutInformation = function doesStickerPackHave
   let obj = getStickerExtensionFromFormatType;
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
-    const intl = tmp(1233).intl;
-    obj[1] = intl.string(tmp(1233).t.W11rMa);
+    const intl = tmp(1114).intl;
+    obj[1] = intl.string(tmp(1114).t.W11rMa);
     items.push(obj);
   }
   return items.length > 0;

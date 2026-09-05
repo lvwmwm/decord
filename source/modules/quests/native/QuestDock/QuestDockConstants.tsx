@@ -1,11 +1,11 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15095
+// Function ID: 15096
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
-// Dependencies: [709, 2]
+// Dependencies: [576, 2]
 
-// Module 15019 (QUEST_DOCK_COLLAPSED_HEIGHT)
+// Module 15095 (QUEST_DOCK_COLLAPSED_HEIGHT)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 
 let obj = { mass: 0.5, damping: 80, stiffness: 320 };
 obj = {};

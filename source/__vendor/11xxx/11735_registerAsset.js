@@ -1,10 +1,10 @@
 // Module ID: 11735
 // Function ID: 11736
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11735 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 19, height: 19, scales: [2, 3], hash: "77f70d67a495166d7b55949a3fa57226", name: "ic_channel_arrow", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4efa5140d546996fe7cb2ba013410d48", name: "ArrowAngleLeftUpIcon", type: "png" });

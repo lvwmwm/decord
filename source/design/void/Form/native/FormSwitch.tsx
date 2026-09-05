@@ -1,16 +1,16 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8605
+// Function ID: 8606
 // Name: FormSwitch
-// Dependencies: [19, 17, 21, 4481, 709, 4416, 1362, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4495, 4411, 2]
 // Exports: default
 
-// Module 8535 (FormSwitch)
+// Module 8605 (FormSwitch)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
+import ThemesDefault from "Themes" /* 576 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
 import { Switch } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

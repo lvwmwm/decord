@@ -1,14 +1,14 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11671
+// Function ID: 11672
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 11604, 684, 586, 11264, 2]
+// Dependencies: [32, 19, 11672, 1090, 504, 11332, 2]
 // Exports: default
 
-// Module 11603 (useChannelFollowerStats)
-import setDefault from "set" /* 684 */;
+// Module 11671 (useChannelFollowerStats)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getFollowerStatsForChannel" /* 11604 */;
+import closure_5 from "getFollowerStatsForChannel" /* 11672 */;
 
 const require = arg1;
 const HOUR = setDefault.Millis.HOUR;
@@ -21,14 +21,14 @@ export default function useChannelFollowerStats(arg0) {
   dependencyMap = tmp[1];
   const items = [closure_5];
   const items1 = [arg0];
-  stateFromStores = _require(586).useStateFromStores(items, () => closure_1_5.getFollowerStatsForChannel(closure_0), items1);
+  stateFromStores = _require(504).useStateFromStores(items, () => closure_1_5.getFollowerStatsForChannel(closure_0), items1);
   const items2 = [arg0, stateFromStores, first];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(11264).fetchChannelFollowerStats(closure_0);
-        const obj = first(11264);
+        const channelFollowerStats = first(11332).fetchChannelFollowerStats(closure_0);
+        const obj = first(11332);
       }
     } else {
       const _Date = Date;

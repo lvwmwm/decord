@@ -1,12 +1,12 @@
-// Module ID: 8508
-// Function ID: 8509
+// Module ID: 8578
+// Function ID: 8579
 // Name: useIsManualAgeVerificationHidden
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 8508 (useIsManualAgeVerificationHidden)
+// Module 8578 (useIsManualAgeVerificationHidden)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const obj = { 1: null };
 obj[1] = { isHidden: true };

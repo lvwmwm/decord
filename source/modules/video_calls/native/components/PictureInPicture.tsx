@@ -1,17 +1,17 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9488
+// Function ID: 9489
 // Name: PictureInPicturePositions
-// Dependencies: [32, 19, 17, 9396, 673, 21, 4481, 1296, 9418, 1492, 6921, 9421, 4218, 4935, 9422, 9423, 6595, 1234, 2]
+// Dependencies: [32, 19, 17, 9467, 1074, 21, 4560, 1178, 9489, 1477, 6981, 9492, 4296, 4974, 9493, 9494, 6655, 1115, 2]
 
-// Module 9417 (PictureInPicturePositions)
+// Module 9488 (PictureInPicturePositions)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { toggleFocus } from "VoiceChatDrawerState" /* 9396 */;
-import { PictureInPicturePositions } from "ME" /* 673 */;
+import { toggleFocus } from "VoiceChatDrawerState" /* 9467 */;
+import { PictureInPicturePositions } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import Button from "Button" /* 1296 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import Button from "Button" /* 1178 */;
 
 const require = arg1;
 let c4 = importAllResult;

@@ -1,10 +1,10 @@
 // Module ID: 2141
 // Function ID: 2142
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 2141 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "6a429731d2a9e33e0bfb2eab2a72054e", name: "GiftCard.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", scales: [1], hash: "4d7230ce1b7e24c9fa588098435f82ef", name: "es-419.messages.4d7230ce1b7e24c9fa588098435f82ef.compiled.messages", type: "jsona" });

@@ -1,9 +1,9 @@
-// Module ID: 5470
-// Function ID: 5471
+// Module ID: 5515
+// Function ID: 5516
 // Name: HeaderRecord
 // Dependencies: [2]
 
-// Module 5470 (HeaderRecord)
+// Module 5515 (HeaderRecord)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");

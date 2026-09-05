@@ -1,27 +1,27 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 14620
+// Function ID: 14621
 // Name: HideBadgeMenu
-// Dependencies: [19, 17, 8091, 1921, 8123, 673, 7091, 1923, 21, 4481, 709, 4449, 8598, 8596, 1233, 14546, 4436, 5562, 11122, 8028, 6908, 11131, 6904, 4218, 4482, 4485, 12999, 8597, 6595, 1350, 11130, 1627, 586, 4139, 7102, 7122, 7092, 9321, 9291, 695, 8128, 4194, 1492, 10924, 14547, 4477, 5532, 7090, 7089, 6567, 2]
+// Dependencies: [19, 17, 8160, 1371, 8192, 1074, 7151, 1373, 21, 4560, 576, 4528, 8668, 8666, 1114, 14621, 4515, 5607, 11190, 8097, 6968, 11199, 6964, 4296, 4561, 4564, 13067, 8667, 6655, 4272, 11198, 1611, 504, 4218, 7162, 7182, 7152, 9392, 9362, 1242, 8197, 4259, 1477, 10993, 14622, 4556, 5577, 7150, 7149, 6627, 2]
 // Exports: default
 
-// Module 14545 (HideBadgeMenu)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
-import PressableCard from "PressableCard" /* 5562 */;
-import ContextMenu from "ContextMenu" /* 8596 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11122 */;
-import PX_16 from "PX_16" /* 14546 */;
+// Module 14620 (HideBadgeMenu)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4515 */;
+import PressableCard from "PressableCard" /* 5607 */;
+import ContextMenu from "ContextMenu" /* 8666 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11190 */;
+import PX_16 from "PX_16" /* 14621 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormOpen" /* 8091 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "initialize" /* 8123 */;
-import ME from "ME" /* 673 */;
-import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_13 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
+import closure_6 from "handleFormOpen" /* 8160 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "initialize" /* 8192 */;
+import ME from "ME" /* 1074 */;
+import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_13 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function HideBadgeMenu(children) {
@@ -67,15 +67,15 @@ function BadgeTileContent(arg0) {
         const obj2 = { size: "sm", variant: "secondary-overlay", icon: null, accessibilityLabel: null, accessibilityHint: null, onPress: null };
         const obj3 = { size: "sm", color: null };
         obj3[1] = ThemesDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-        obj2[2] = tmp10(tmp8(6908).EyeSlashIcon, obj3);
+        obj2[2] = tmp10(tmp8(6968).EyeSlashIcon, obj3);
         if (showAccessibilityLabel == null) {
           showAccessibilityLabel = badge.name;
         }
         obj2[3] = showAccessibilityLabel;
-        const intl = tmp8(1233).intl;
-        obj2[4] = intl.string(tmp8(1233).t.hHHpvU);
+        const intl = tmp8(1114).intl;
+        obj2[4] = intl.string(tmp8(1114).t.hHHpvU);
         obj2[5] = onShowPress;
-        obj1[1] = tmp10(tmp8(8028).IconButton, obj2);
+        obj1[1] = tmp10(tmp8(8097).IconButton, obj2);
         let tmp10Result = tmp10(closure_5, obj1);
         const tmp14 = closure_5;
       }

@@ -1,12 +1,12 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11663
+// Function ID: 11664
 // Name: usePollMessageContextItemTypes
-// Dependencies: [1215, 586, 2]
+// Dependencies: [502, 504, 2]
 // Exports: default
 
-// Module 11595 (usePollMessageContextItemTypes)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
+// Module 11663 (usePollMessageContextItemTypes)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
 
 require = arg1;
 let obj = { END_EARLY: 0, [0]: "END_EARLY" };

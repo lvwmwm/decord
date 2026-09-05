@@ -1,13 +1,13 @@
-// Module ID: 7535
-// Function ID: 7536
+// Module ID: 7602
+// Function ID: 7603
 // Name: set
-// Dependencies: [673, 1234, 7536, 7537, 17, 7538, 7539, 527, 2]
+// Dependencies: [1074, 1115, 7603, 7604, 17, 7605, 7606, 1272, 2]
 
-// Module 7535 (set)
-import ME from "ME" /* 673 */;
-import enforcing from "enforcing" /* 7538 */;
+// Module 7602 (set)
+import ME from "ME" /* 1074 */;
+import enforcing from "enforcing" /* 7605 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set from "set" /* 1234 */;
+import set from "set" /* 1115 */;
 
 let obj = require;
 const Endpoints = ME.Endpoints;
@@ -41,17 +41,17 @@ class MonitoringAgent {
 const prototype = MonitoringAgent.prototype;
 prototype["_getMetricWithDefaults"] = function _getMetricWithDefaults(name, COUNT) {
   let tags = name.tags;
-  obj = { name: name.name, type: COUNT, tags: obj(7539).getGlobalTagsArray() };
+  obj = { name: name.name, type: COUNT, tags: obj(7606).getGlobalTagsArray() };
   if (null != tags) {
     const item = tags.forEach((arg0) => {
       const tags = obj.tags;
       tags.push(arg0);
     });
   }
-  let tmpResult = tmp(1234);
+  let tmpResult = tmp(1115);
   let str = "web";
   if (!tmpResult.isWeb()) {
-    tmpResult = tmp(1234);
+    tmpResult = tmp(1115);
     const platformName = tmpResult.getPlatformName();
     let tmp6 = null;
     if (set.has(platformName)) {
@@ -64,10 +64,10 @@ prototype["_getMetricWithDefaults"] = function _getMetricWithDefaults(name, COUN
     const _HermesInternal = HermesInternal;
     tags1.push("platform:" + str);
   }
-  const CurrentReleaseChannel = tmp(7536).CurrentReleaseChannel;
+  const CurrentReleaseChannel = tmp(7603).CurrentReleaseChannel;
   let tmp9 = null;
   if (null != CurrentReleaseChannel) {
-    const ALL = tmp(7537).ReleaseChannelsSets.ALL;
+    const ALL = tmp(7604).ReleaseChannelsSets.ALL;
     tmp9 = null;
     if (ALL.has(CurrentReleaseChannel)) {
       tmp9 = CurrentReleaseChannel;
@@ -124,7 +124,7 @@ prototype["_flush"] = function _flush() {
     obj[0] = Endpoints.METRICS_V2;
     obj = { metrics: null, client_info: null };
     obj[0] = items;
-    obj[1] = { built_at: "1788499157532", build_number: "6352" };
+    obj[1] = { built_at: "1788585562456", build_number: "6365" };
     obj[1] = obj;
     HTTP.post(obj).catch(() => {
       if (self._metrics.length + items.length < 100) {

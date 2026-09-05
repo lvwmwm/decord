@@ -1,18 +1,17 @@
 // Module ID: 10489
 // Function ID: 10490
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10490, 10364, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10437, 10439]
 
 // Module 10489 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10490 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10439 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUTimeUnitWithinFormatParser = require;
+const FRCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,13 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = "(?:(?:\u043E\u043A\u043E\u043B\u043E|\u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E)\\s*(?:~\\s*)?)?(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")" + REGEX_PARTS.REGEX_PARTS.rightBoundary;
-class RUTimeUnitWithinFormatParser {
+class FRCasualTimeParser {
   constructor() {
     self = this;
-    tmp = closure_2(this, RUTimeUnitWithinFormatParser);
+    tmp = closure_2(this, FRCasualTimeParser);
     tmp2 = closure_4;
-    obj = closure_4(RUTimeUnitWithinFormatParser);
+    obj = closure_4(FRCasualTimeParser);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -53,35 +51,45 @@ class RUTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const items = [
   {
-    key: "patternLeftBoundary",
-    value: function patternLeftBoundary() {
-      return RUTimeUnitWithinFormatParser(10490).REGEX_PARTS.leftBoundary;
-    }
-  },
-  {
     key: "innerPattern",
-    value: function innerPattern(option) {
-      let _RegExp = RegExp;
-      if (option.option.forwardDate) {
-        _RegExp = new _RegExp(tmp, RUTimeUnitWithinFormatParser(10490).REGEX_PARTS.flags);
-      } else {
-        const _HermesInternal = HermesInternal;
-        const combined = "(?:\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435|\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0438)\\s*" + tmp;
-        _RegExp = new _RegExp(combined, RUTimeUnitWithinFormatParser(10490).REGEX_PARTS.flags);
-      }
-      return _RegExp;
+    value: function innerPattern(arg0) {
+      return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i;
     }
   },
   {
     key: "innerExtract",
-    value: function innerExtract(reference) {
-      const ParsingComponents = RUTimeUnitWithinFormatParser(10364).ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, RUTimeUnitWithinFormatParser(10490).parseDuration(arg1[1]));
+    value: function innerExtract(createParsingComponents) {
+      const formatted = arg1[2].toLowerCase();
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      if ("apr\u00E8s-midi" !== formatted) {
+        if ("aprem" !== formatted) {
+          if ("soir" === formatted) {
+            parsingComponents.imply("hour", 18);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10437).Meridiem.PM);
+          } else if ("matin" === formatted) {
+            parsingComponents.imply("hour", 8);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10437).Meridiem.AM);
+          } else if ("a midi" === formatted) {
+            parsingComponents.imply("hour", 12);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10437).Meridiem.AM);
+          } else if ("\u00E0 minuit" === formatted) {
+            parsingComponents.imply("hour", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10437).Meridiem.AM);
+          }
+        }
+        return parsingComponents;
+      }
+      parsingComponents.imply("hour", 14);
+      parsingComponents.imply("minute", 0);
+      parsingComponents.imply("meridiem", FRCasualTimeParser(10437).Meridiem.PM);
     }
   }
 ];
 
-export default _createClass(RUTimeUnitWithinFormatParser, items);
+export default _createClass(FRCasualTimeParser, items);

@@ -1,10 +1,10 @@
 // Module ID: 14658
 // Function ID: 14659
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 14658 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "a771c2f944e647febf3b69e668380eb7", name: "hi.messages.a771c2f944e647febf3b69e668380eb7.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 380, height: 290, scales: [1], hash: "e8d550faf4e256dff3cc4faddf07f107", name: "img_keychain", type: "png" });

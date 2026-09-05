@@ -1,10 +1,10 @@
-// Module ID: 1470
-// Function ID: 1471
+// Module ID: 1435
+// Function ID: 1436
 // Name: logger
-// Dependencies: [32, 19, 4, 586, 2]
+// Dependencies: [32, 19, 4, 504, 2]
 // Exports: default
 
-// Module 1470 (logger)
+// Module 1435 (logger)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useEffect } from "noop" /* 19 */;
 
@@ -29,7 +29,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
       callback = tmp2;
       const items = [evaluationAndAssignment];
       const items1 = [tmp, tmp2];
-      const tmp3 = callback(evaluationAndAssignment(586).useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(revision, closure_1, trackedVariantId, closure_2), items1), 2);
+      const tmp3 = callback(evaluationAndAssignment(504).useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(revision, closure_1, trackedVariantId, closure_2), items1), 2);
       const first = tmp3[0];
       closure_3 = first;
       let variantId;

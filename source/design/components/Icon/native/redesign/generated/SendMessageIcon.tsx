@@ -1,14 +1,14 @@
-// Module ID: 4426
-// Function ID: 4427
+// Module ID: 4505
+// Function ID: 4506
 // Name: SendMessageIcon
-// Dependencies: [19, 21, 709, 4196, 4427, 2]
+// Dependencies: [19, 21, 576, 4261, 4506, 2]
 // Exports: SendMessageIcon
 
-// Module 4426 (SendMessageIcon)
+// Module 4505 (SendMessageIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4427 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 4506 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

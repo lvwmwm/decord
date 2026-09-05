@@ -1,13 +1,13 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 8106
+// Function ID: 8107
 // Name: transformEmbeds
-// Dependencies: [17, 673, 8038, 8039, 4858, 8040, 1234, 7877, 4678, 8020, 4163, 7231, 7236, 4741, 1233, 2]
+// Dependencies: [17, 1074, 8107, 8108, 4897, 8109, 1115, 7946, 4710, 8089, 4242, 7292, 7297, 4773, 1114, 2]
 // Exports: default
 
-// Module 8037 (transformEmbeds)
+// Module 8106 (transformEmbeds)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const processColor = get_ActivityIndicator.processColor;
 const MessageEmbedTypes = ME.MessageEmbedTypes;

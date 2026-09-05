@@ -1,15 +1,15 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16581
+// Function ID: 16582
 // Name: ApplicationStatusIcon
-// Dependencies: [19, 17, 21, 4481, 709, 4305, 4441, 6556, 16506, 4477, 1233, 16502, 4163, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4384, 4520, 6616, 16582, 4556, 1114, 16578, 4242, 2]
 
-// Module 16505 (ApplicationStatusIcon)
-import ThemesDefault from "Themes" /* 709 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4305 */;
+// Module 16581 (ApplicationStatusIcon)
+import ThemesDefault from "Themes" /* 576 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4384 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ApplicationStatusIcon(status) {
@@ -18,12 +18,12 @@ function ApplicationStatusIcon(status) {
     let obj = { size: "sm", color: null, secondaryColor: null };
     obj[1] = ThemesDefault.colors.STATUS_POSITIVE_BACKGROUND;
     obj[2] = ThemesDefault.colors.STATUS_POSITIVE_TEXT;
-    return callback(tmp(4441).CircleCheckIcon, obj);
-  } else if (tmp(4305).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+    return callback(tmp(4520).CircleCheckIcon, obj);
+  } else if (tmp(4384).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     obj = { size: "sm", color: null, secondaryColor: null };
     obj[1] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
     obj[2] = ThemesDefault.colors.WHITE;
-    return callback(tmp(6556).CircleXIcon, obj);
+    return callback(tmp(6616).CircleXIcon, obj);
   } else {
     return null;
   }
@@ -43,16 +43,16 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ guildId, userId, selectedJoinRequestId } = arg0);
   const tmp = callback3();
   _require = tmp;
-  let obj = _require(16506);
+  let obj = _require(16582);
   const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     obj = { children: null };
     obj = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
     obj[2] = tmp.label;
-    const intl = tmp2(1233).intl;
-    obj[3] = intl.string(tmp2(1233).t["hxa+G3"]);
-    let items = [callback(tmp2(4477).Text, obj), ];
+    const intl = tmp2(1114).intl;
+    obj[3] = intl.string(tmp2(1114).t["hxa+G3"]);
+    let items = [callback(tmp2(4556).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.container;
     obj1[1] = otherGuildJoinRequestsForUser.map((createdAt) => {

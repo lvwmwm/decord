@@ -1,15 +1,15 @@
-// Module ID: 11251
-// Function ID: 11252
-// Dependencies: [19, 17, 10024, 673, 21, 4481, 709, 11252, 4731, 10025, 7320, 10099, 4477, 2]
+// Module ID: 11319
+// Function ID: 11320
+// Dependencies: [19, 17, 10095, 1074, 21, 4560, 576, 11320, 4763, 10096, 7382, 10170, 4556, 2]
 
-// Module 11251
-import ThemesDefault from "Themes" /* 709 */;
+// Module 11319
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set" /* 10024 */;
-import ME from "ME" /* 673 */;
+import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set" /* 10095 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -23,8 +23,8 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
   let type;
   type = notification.type;
   let obj = { style: callback().iconContainer, children: null };
-  obj = { size: "sm", color: type(709).colors.WHITE };
-  obj[1] = jsx(notification(11252).ThemeDarkIcon, { size: "sm", color: type(709).colors.WHITE });
+  obj = { size: "sm", color: type(576).colors.WHITE };
+  obj[1] = jsx(notification(11320).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE });
   const items = [notification.title];
   const items1 = [type];
   const memo = importAllResult.useMemo(() => ({ type: "simple", text: notification.title }), items);
@@ -38,8 +38,8 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
     obj = { screen: closure_1_7.FAMILY_CENTER };
     notification(closure_1_2[10]).openUserSettings(obj);
   }, items1);
-  obj = { icon: <View size="sm" color={type(709).colors.WHITE} />, header: memo, children: jsx(notification(4477).Text, obj1), onPress: callback, notification };
-  return jsx(notification(10099).NotificationPressable, { icon: <View size="sm" color={type(709).colors.WHITE} />, header: memo, children: jsx(notification(4477).Text, obj1), onPress: callback, notification });
+  obj = { icon: <View size="sm" color={type(576).colors.WHITE} />, header: memo, children: jsx(notification(4556).Text, obj1), onPress: callback, notification };
+  return jsx(notification(10170).NotificationPressable, { icon: <View size="sm" color={type(576).colors.WHITE} />, header: memo, children: jsx(notification(4556).Text, obj1), onPress: callback, notification });
 });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 

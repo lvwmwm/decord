@@ -1,13 +1,13 @@
-// Module ID: 8830
-// Function ID: 8831
+// Module ID: 8900
+// Function ID: 8901
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 5069, 673, 5070, 706, 527, 2]
+// Dependencies: [5, 5108, 1074, 5109, 573, 1272, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8830 (_fetchGameAutocomplete)
+// Module 8900 (_fetchGameAutocomplete)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5069 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "set" /* 5108 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchGameAutocomplete() {
@@ -84,7 +84,7 @@ function _fetchGameAutocomplete() {
           } else if (1 === tmp7) {
             constants = 0;
             dependencyMap = closure_4;
-            obj3 = lib(706);
+            obj3 = lib(573);
             const obj6 = { type: "GAME_AUTOCOMPLETE_FETCH_FAILURE", query: null };
             obj6[1] = c0;
             obj3.dispatch(obj6);
@@ -99,7 +99,7 @@ function _fetchGameAutocomplete() {
               lib = [];
             }
             lib = lib.map((id) => ({ id: String(id.id), name: id.name, icon: id.icon }));
-            obj = lib(706);
+            obj = lib(573);
             const obj7 = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: null, results: null };
             obj7[1] = c0;
             obj7[2] = lib;

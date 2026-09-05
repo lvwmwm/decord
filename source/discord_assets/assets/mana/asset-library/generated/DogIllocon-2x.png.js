@@ -1,9 +1,9 @@
-// Module ID: 5879
-// Function ID: 5880
+// Module ID: 5930
+// Function ID: 5931
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5879 (metadata)
+// Module 5930 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DogIllocon-2x.png.js");

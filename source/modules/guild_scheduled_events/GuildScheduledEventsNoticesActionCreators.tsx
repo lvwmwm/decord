@@ -1,12 +1,12 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17056
+// Function ID: 17057
 // Name: hideLiveChannelNotice
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 16978 (hideLiveChannelNotice)
+// Module 17056 (hideLiveChannelNotice)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsNoticesActionCreators.tsx");
 

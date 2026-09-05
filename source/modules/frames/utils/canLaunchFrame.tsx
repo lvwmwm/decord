@@ -1,13 +1,13 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 9506
+// Function ID: 9507
 // Name: canLaunchFrame
-// Dependencies: [673, 9218, 8786, 2]
+// Dependencies: [1074, 9289, 8856, 2]
 // Exports: canLaunchFrame
 
-// Module 9435 (canLaunchFrame)
+// Module 9506 (canLaunchFrame)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 9218 */;
+import ME from "ME" /* 1074 */;
+import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 9289 */;
 
 const ApplicationFlags = ME.ApplicationFlags;
 const result = set.fileFinishedImporting("modules/frames/utils/canLaunchFrame.tsx");
@@ -15,9 +15,9 @@ const result = set.fileFinishedImporting("modules/frames/utils/canLaunchFrame.ts
 export const canLaunchFrame = function canLaunchFrame(application) {
   if (null != application) {
     if (obj.isRealApplication(application)) {
-      let tmpResult = tmp(8786);
+      let tmpResult = tmp(8856);
       let hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      tmpResult = tmp(8786);
+      tmpResult = tmp(8856);
       if (hasApplicationFlagResult) {
         hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);
       }

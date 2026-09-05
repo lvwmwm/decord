@@ -1,12 +1,12 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15341
+// Function ID: 15342
 // Name: markDisplayNameStyleFontSeen
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 15265 (markDisplayNameStyleFontSeen)
+// Module 15341 (markDisplayNameStyleFontSeen)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesActionCreators.tsx");
 

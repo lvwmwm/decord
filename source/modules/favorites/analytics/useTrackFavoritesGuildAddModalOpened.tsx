@@ -1,12 +1,12 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 10980
+// Function ID: 10981
 // Name: useTrackFavoritesGuildAddModalOpened
-// Dependencies: [19, 673, 695, 2]
+// Dependencies: [19, 1074, 1242, 2]
 // Exports: default
 
-// Module 10911 (useTrackFavoritesGuildAddModalOpened)
+// Module 10980 (useTrackFavoritesGuildAddModalOpened)
 import closure_2 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 const result = require("set").fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildAddModalOpened.tsx");
 

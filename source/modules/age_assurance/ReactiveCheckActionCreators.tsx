@@ -1,12 +1,12 @@
-// Module ID: 13689
-// Function ID: 13690
+// Module ID: 13764
+// Function ID: 13765
 // Name: _resetAgeVerification
-// Dependencies: [5, 673, 527, 706, 2]
+// Dependencies: [5, 1074, 1272, 573, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 13689 (_resetAgeVerification)
+// Module 13764 (_resetAgeVerification)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchReactiveCheckResult() {
@@ -126,7 +126,7 @@ function _resetAgeVerification() {
             return obj;
           } else {
             closure_0 = tmp2;
-            const HTTP = closure_1_0(527).HTTP;
+            const HTTP = closure_1_0(1272).HTTP;
             obj1 = { url: null, rejectWithError: true };
             obj1[0] = closure_1_4.AGE_VERIFICATION_RESET;
             v0 = 1;
@@ -144,7 +144,7 @@ function _resetAgeVerification() {
           obj3[0] = arg1;
           return obj3;
         } else {
-          obj = v0(706);
+          obj = v0(573);
           obj.dispatch({ type: "AGE_VERIFICATION_RESET" });
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

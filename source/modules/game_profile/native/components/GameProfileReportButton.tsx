@@ -1,10 +1,10 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8897
+// Function ID: 8898
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 4448, 8616, 4731, 8828, 2008, 8828, 4936, 1233, 2]
+// Dependencies: [19, 21, 4527, 8686, 4763, 8898, 1896, 8898, 4975, 1114, 2]
 // Exports: default
 
-// Module 8827 (GameProfileReportButton)
+// Module 8897 (GameProfileReportButton)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -24,8 +24,8 @@ export default function GameProfileReportButton(applicationId) {
     obj2.pushLazy(applicationId(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), obj, applicationId(closure_1_2[7]).MODAL_KEY);
   }, items);
   let obj = { variant: "secondary", size: "md", text: null, onPress: null };
-  const intl = applicationId(1233).intl;
-  obj[2] = intl.string(applicationId(1233).t.qP2cXd);
+  const intl = applicationId(1114).intl;
+  obj[2] = intl.string(applicationId(1114).t.qP2cXd);
   obj[3] = callback;
-  return jsx(applicationId(4936).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+  return jsx(applicationId(4975).Button, { variant: "secondary", size: "md", text: null, onPress: null });
 };

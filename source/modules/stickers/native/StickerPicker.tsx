@@ -1,17 +1,17 @@
-// Module ID: 10315
-// Function ID: 10316
-// Dependencies: [32, 19, 17, 1921, 5462, 4169, 673, 21, 4481, 709, 695, 10316, 10318, 586, 7102, 7122, 10212, 702, 10322, 7275, 4860, 10323, 9242, 7129, 10332, 6990, 1233, 10342, 10343, 10348, 2]
+// Module ID: 10386
+// Function ID: 10387
+// Dependencies: [32, 19, 17, 1371, 5502, 1938, 1074, 21, 4560, 576, 1242, 10387, 10389, 504, 7162, 7182, 10283, 1249, 10393, 7337, 4899, 10394, 9313, 7189, 10403, 7050, 1114, 10413, 10414, 10419, 2]
 
-// Module 10315
-import ThemesDefault from "Themes" /* 709 */;
+// Module 10386
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "loadSavedGuildStickers" /* 5462 */;
-import ME from "ME" /* 673 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "loadSavedGuildStickers" /* 5502 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -31,48 +31,48 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
   let analyticsLocations;
   ({ bottomSheetRef, bottomSheetIndex, paddingTop, stickerFormats, inPortalKeyboard } = channel);
   let tmp = callback();
-  let obj = channel(10316);
+  let obj = channel(10387);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  obj1 = channel(10318);
+  obj1 = channel(10389);
   const stickerCategories = obj1.useStickerCategories(channel);
-  let obj2 = channel(586);
+  let obj2 = channel(504);
   const items = [closure_8];
   const stateFromStores = obj2.useStateFromStores(items, () => obj.hasLoadedStickerPacks);
   const tmp6 = analyticsLocations(undefined.useState(0), 2);
   dependencyMap = tmp7;
-  analyticsLocations = onPressSticker(7102)(onPressSticker(7122).STICKER_PICKER).analyticsLocations;
-  const tmp9 = onPressSticker(7102);
+  analyticsLocations = onPressSticker(7162)(onPressSticker(7182).STICKER_PICKER).analyticsLocations;
+  const tmp9 = onPressSticker(7162);
   [tmp11, c4] = analyticsLocations(undefined.useState(null), 2);
   const tmp10 = analyticsLocations(undefined.useState(null), 2);
-  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(10212)({ hasCategories: true }));
+  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(10283)({ hasCategories: true }));
   const items1 = [, ];
   ({ id: arr3[0], guild_id: arr3[1] } = channel);
   callback = importAllResult.useCallback((arg0) => {
     if ("" === arg0) {
-      channel(702).batchUpdates(() => {
+      channel(1249).batchUpdates(() => {
         callback(0);
         callback2(null);
       });
-      const obj2 = channel(702);
+      const obj2 = channel(1249);
     } else {
-      _undefined(channel(10322).searchAllStickers(arg0));
-      const obj = channel(10322);
+      _undefined(channel(10393).searchAllStickers(arg0));
+      const obj = channel(10393);
     }
   }, []);
   const effect = importAllResult.useEffect(() => {
-    let obj = onPressSticker(695);
+    let obj = onPressSticker(1242);
     obj = { type: closure_1_13.STICKER, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(closure_1_9.CHAT_INPUT_COMPONENT_VIEWED, obj);
   }, items1);
   const items2 = [channel, onPressSticker, analyticsLocations];
   const items3 = [channel];
   const callback1 = importAllResult.useCallback((pack_id) => {
-    let obj = channel(7275);
+    let obj = channel(7337);
     const stickerSendability = obj.getStickerSendability(pack_id, closure_1_7.getCurrentUser(), channel);
-    if (stickerSendability === channel(7275).StickerSendability.SENDABLE) {
+    if (stickerSendability === channel(7337).StickerSendability.SENDABLE) {
       onPressSticker(pack_id);
-    } else if (stickerSendability === tmp(7275).StickerSendability.SENDABLE_WITH_PREMIUM) {
-      let tmpResult = tmp(4860);
+    } else if (stickerSendability === tmp(7337).StickerSendability.SENDABLE_WITH_PREMIUM) {
+      let tmpResult = tmp(4899);
       if (tmpResult.isStandardSticker(pack_id)) {
         const stickerPack = closure_1_8.getStickerPack(pack_id.pack_id);
         if (null != stickerPack) {
@@ -85,15 +85,15 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
           obj = { page: null };
           obj[0] = DM_CHANNEL2;
           obj[0] = obj;
-          obj[1] = tmp(10323).AnalyticsPopoutType.STICKER_PACK_DETAIL;
+          obj[1] = tmp(10394).AnalyticsPopoutType.STICKER_PACK_DETAIL;
           obj[2] = stickerPack;
-          onPressSticker(10323)(obj);
-          const tmp17 = onPressSticker(10323);
+          onPressSticker(10394)(obj);
+          const tmp17 = onPressSticker(10394);
         }
       } else {
-        tmpResult = tmp(4860);
+        tmpResult = tmp(4899);
         if (tmpResult.isGuildSticker(pack_id)) {
-          let obj2 = onPressSticker(9242);
+          let obj2 = onPressSticker(9313);
           obj1 = { initialUpsellKey: null, analyticsLocation: null, analyticsLocations: null };
           obj1[0] = closure_1_12.GLOBAL_STICKER;
           if (null != tmp3.guild_id) {
@@ -112,14 +112,14 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     }
   }, items2);
   const callback2 = importAllResult.useCallback(() => {
-    let obj = onPressSticker(695);
+    let obj = onPressSticker(1242);
     obj = { type: closure_1_13.STICKER_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(closure_1_9.CHAT_INPUT_COMPONENT_VIEWED, obj);
   }, items3);
-  let obj3 = onPressSticker(7129);
+  let obj3 = onPressSticker(7189);
   const items4 = [channel];
   const callback3 = importAllResult.useCallback((renderableSticker) => {
-    let obj = channel(10332);
+    let obj = channel(10403);
     obj = { renderableSticker, channel };
     const result = obj.showStickerDetailActionSheet(obj);
   }, items4);
@@ -130,11 +130,11 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     obj1 = { style: null, children: null };
     obj1[0] = tmp.header;
     obj2 = { size: "md", placeholder: null, onChange: null, onFocus: null, isRound: true };
-    const intl = tmp2(1233).intl;
-    obj2[1] = intl.string(tmp2(1233).t.dt5h1C);
+    const intl = tmp2(1114).intl;
+    obj2[1] = intl.string(tmp2(1114).t.dt5h1C);
     obj2[2] = callback;
     obj2[3] = callback2;
-    obj1[1] = tmp18(tmp2(6990).SearchField, obj2);
+    obj1[1] = tmp18(tmp2(7050).SearchField, obj2);
     tmp18Result = tmp18(tmp20, obj1);
   }
   const items5 = [tmp18Result, , ];
@@ -142,7 +142,7 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     if (0 === stickerCategories.length) {
       obj3 = { style: null, children: null };
       obj3[0] = tmp.emptyState;
-      tmp = tmp18(tmp8(10342), {});
+      tmp = tmp18(tmp8(10413), {});
       obj3[1] = tmp;
       tmp18Result = tmp18(tmp20, obj3);
     } else {
@@ -162,8 +162,8 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
       obj4[8] = stickerFormats;
       obj4[9] = tmp11;
       obj4[10] = inPortalKeyboard;
-      tmp18Result = tmp18(tmp8(10343), obj4);
-      const tmp8Result = tmp8(10343);
+      tmp18Result = tmp18(tmp8(10414), obj4);
+      const tmp8Result = tmp8(10414);
     }
   } else {
     const obj5 = { animating: true, size: "large", style: null };
@@ -173,10 +173,10 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     obj6[0] = stickerCategories;
     obj6[1] = tmp6[0];
     obj6[2] = safeAreaStyle;
-    items5[2] = tmp18(tmp8(10348), obj6);
+    items5[2] = tmp18(tmp8(10419), obj6);
     obj[1] = items5;
     obj[1] = closure_15(tmp20, obj);
-    return tmp18(channel(7102).AnalyticsLocationProvider, obj);
+    return tmp18(channel(7162).AnalyticsLocationProvider, obj);
   }
 });
 let result = require("set").fileFinishedImporting("modules/stickers/native/StickerPicker.tsx");

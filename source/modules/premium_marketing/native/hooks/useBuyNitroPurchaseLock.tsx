@@ -1,12 +1,12 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13356
+// Function ID: 13357
 // Name: useIsBuyNitroPurchaseBlocked
-// Dependencies: [7177, 641, 586, 2]
+// Dependencies: [7237, 560, 504, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 13284 (useIsBuyNitroPurchaseBlocked)
-import closure_2 from "updateProduct" /* 7177 */;
-import keys from "keys" /* 641 */;
+// Module 13356 (useIsBuyNitroPurchaseBlocked)
+import closure_2 from "updateProduct" /* 7237 */;
+import keys from "keys" /* 560 */;
 
 const require = arg1;
 let closure_3 = keys.create(() => ({ isLocked: false, hasCompletedInitialLoad: false }));

@@ -1,24 +1,24 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17148
+// Function ID: 17149
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4481, 709, 4329, 17071, 9983, 1296, 4946, 4477, 4218, 4952, 2]
+// Dependencies: [32, 19, 17, 21, 4560, 576, 4409, 17149, 10054, 1178, 4985, 4556, 4296, 4991, 2]
 // Exports: default
 
-// Module 17070 (ParticipantsSummary)
+// Module 17148 (ParticipantsSummary)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import Text from "Text" /* 4477 */;
-import PillWrapper from "PillWrapper" /* 4946 */;
-import EllipsisCircle from "EllipsisCircle" /* 4952 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 9983 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17071 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import Text from "Text" /* 4556 */;
+import PillWrapper from "PillWrapper" /* 4985 */;
+import EllipsisCircle from "EllipsisCircle" /* 4991 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10054 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17149 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
 
 require = arg1;
 function ParticipantsSummary(arg0) {
@@ -61,7 +61,7 @@ export default function ActivityShelfItemSummary(submitting) {
     tmp7Result = tmp7(EllipsisCircle.Ellipsis, { variant: "active", size: "md" });
   }
   obj2[1] = tmp7Result;
-  items[1] = closure_5(_modDef4218.View, obj2);
+  items[1] = closure_5(_modDef4296.View, obj2);
   obj[1] = items;
   const items2 = [closure_6(View, obj), closure_5(ParticipantsSummary, { channelId, applicationId })];
   obj[1] = items2;

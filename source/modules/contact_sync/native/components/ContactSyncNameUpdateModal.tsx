@@ -1,25 +1,25 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14845
+// Function ID: 14846
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 12610, 21, 4731, 4481, 709, 5637, 12612, 12616, 4194, 1233, 5552, 12629, 5579, 6940, 2]
+// Dependencies: [5, 32, 19, 17, 12678, 21, 4763, 4560, 576, 5682, 12680, 12684, 4259, 1114, 5597, 12697, 5624, 7000, 2]
 // Exports: default
 
-// Module 14770 (onClose)
-import ThemesDefault from "Themes" /* 709 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import NavigationStack from "NavigationStack" /* 6940 */;
+// Module 14845 (onClose)
+import ThemesDefault from "Themes" /* 576 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import NavigationStack from "NavigationStack" /* 7000 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContactSyncScenes } from "ContactSyncLandingPage" /* 12610 */;
+import { ContactSyncScenes } from "ContactSyncLandingPage" /* 12678 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import HeaderBackImage from "HeaderBackImage" /* 5579 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import HeaderBackImage from "HeaderBackImage" /* 5624 */;
 
 require = arg1;
 function onClose() {
-  let arr = _modDef4731;
+  let arr = _modDef4763;
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -44,14 +44,14 @@ function ContactSyncNameInputScreen() {
         closure_1 = tmp3;
         callback(true);
         c3 = 1;
-        yield closure_1_1(12616).updateName(callback);
+        yield closure_1_1(12684).updateName(callback);
         if (1 === tmp7) {
           c3 = 0;
-          obj1 = closure_1_1(4194);
+          obj1 = closure_1_1(4259);
           const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
-          const intl = callback(1233).intl;
-          obj2[1] = intl.string(callback(1233).t.R0RpRX);
-          obj2[2] = closure_1_1(5552);
+          const intl = callback(1114).intl;
+          obj2[1] = intl.string(callback(1114).t.R0RpRX);
+          obj2[2] = closure_1_1(5597);
           obj1.open(obj2);
           callback(false);
           c4 = 3;

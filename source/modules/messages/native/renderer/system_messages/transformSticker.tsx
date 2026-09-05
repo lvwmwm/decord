@@ -1,18 +1,18 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7998
+// Function ID: 7999
 // Name: transformSticker
-// Dependencies: [4169, 4860, 7930, 7882, 1233, 4166, 2]
+// Dependencies: [1938, 4899, 7999, 7951, 1114, 1935, 2]
 // Exports: transformSticker
 
-// Module 7929 (transformSticker)
+// Module 7998 (transformSticker)
 import set from "set" /* 2 */;
-import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
+import STICKER_PICKER_TAB_PANEL_ID from "STICKER_PICKER_TAB_PANEL_ID" /* 1938 */;
 
 const StickerAnimationSettings = STICKER_PICKER_TAB_PANEL_ID.StickerAnimationSettings;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
 
 export const transformSticker = function transformSticker(tmp5Result1) {
-  const AnimateStickers = _require(4166).AnimateStickers;
+  const AnimateStickers = _require(1935).AnimateStickers;
   _require = tmp5Result1;
   let obj = {};
   const setting = AnimateStickers.getSetting();
@@ -22,16 +22,16 @@ export const transformSticker = function transformSticker(tmp5Result1) {
     str = "";
   }
   obj.asset = str;
-  let tmpResult = tmp(4860);
+  let tmpResult = tmp(4899);
   obj = { isPreview: !tmp5 };
   let str2 = tmpResult.getStickerAssetUrl(tmp5Result1, obj);
   if (str2 == null) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp(7930).NativeLottieRenderMode;
+  const NativeLottieRenderMode = tmp(7999).NativeLottieRenderMode;
   obj.renderMode = setting === StickerAnimationSettings.ALWAYS_ANIMATE ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
-  tmpResult = tmp(7882);
+  tmpResult = tmp(7951);
   obj = {
     expensive() {
       const intl = tmp5Result1(closure_1_1[4]).intl;
@@ -39,10 +39,10 @@ export const transformSticker = function transformSticker(tmp5Result1) {
     },
     cheap: null
   };
-  let intl = tmp(1233).intl;
-  obj[1] = intl.string(_require(1233).t["fT+Yjp"]);
+  let intl = tmp(1114).intl;
+  obj[1] = intl.string(_require(1114).t["fT+Yjp"]);
   obj.accessibilityLabel = tmpResult.getAccessibilityLabelOrCheapFallbackUnsafe(obj);
-  const intl2 = tmp(1233).intl;
-  obj.accessibilityHint = intl2.string(_require(1233).t.GCEruV);
+  const intl2 = tmp(1114).intl;
+  obj.accessibilityHint = intl2.string(_require(1114).t.GCEruV);
   return obj;
 };

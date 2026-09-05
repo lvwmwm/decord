@@ -1,13 +1,13 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 7994
+// Function ID: 7995
 // Name: getGuildProductPurchaseSystemMessageContentMobile
-// Dependencies: [673, 1233, 2]
+// Dependencies: [1074, 1114, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 7925 (getGuildProductPurchaseSystemMessageContentMobile)
+// Module 7994 (getGuildProductPurchaseSystemMessageContentMobile)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const NOOP = ME.NOOP;
 const result = set.fileFinishedImporting("modules/guild_products/GuildProductSystemMessageUtils.tsx");

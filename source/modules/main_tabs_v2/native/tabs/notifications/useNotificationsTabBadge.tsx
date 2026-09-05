@@ -1,18 +1,18 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16394
+// Function ID: 16395
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 7572, 586, 7573, 2]
+// Dependencies: [19, 7639, 504, 7640, 2]
 // Exports: default
 
-// Module 16318 (useNotificationsTabBadge)
+// Module 16394 (useNotificationsTabBadge)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "_validate" /* 7572 */;
+import closure_3 from "_validate" /* 7639 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");
 
 export default function useNotificationsTabBadge() {
-  let obj = stateFromStores(586);
+  let obj = stateFromStores(504);
   const items = [closure_3];
   stateFromStores = obj.useStateFromStores(items, () => localItems.localItems);
   const items1 = [stateFromStores];

@@ -1,11 +1,11 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9619
+// Function ID: 9620
 // Name: useAnalyticsContext
-// Dependencies: [19, 695, 2]
+// Dependencies: [19, 1242, 2]
 // Exports: useAnalyticsContext
 
-// Module 9548 (useAnalyticsContext)
-import expandEventProperties from "expandEventProperties" /* 695 */;
+// Module 9619 (useAnalyticsContext)
+import expandEventProperties from "expandEventProperties" /* 1242 */;
 import closure_2 from "noop" /* 19 */;
 
 require = arg1;

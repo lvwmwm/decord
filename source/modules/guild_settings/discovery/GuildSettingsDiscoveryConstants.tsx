@@ -1,12 +1,12 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16477
+// Function ID: 16478
 // Name: GuildPrimaryCategory
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: calculateLocaleOptions
 
-// Module 16401 (GuildPrimaryCategory)
+// Module 16477 (GuildPrimaryCategory)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 let obj = { GENERAL_CHATTING: 14, [14]: "GENERAL_CHATTING", GAMING: 1, [1]: "GAMING", MUSIC: 2, [2]: "MUSIC", ENTERTAINMENT: 3, [3]: "ENTERTAINMENT", CREATIVE_ARTS: 4, [4]: "CREATIVE_ARTS", SCIENCE_AND_TECH: 5, [5]: "SCIENCE_AND_TECH", EDUCATION: 6, [6]: "EDUCATION", SPORTS: 7, [7]: "SPORTS", FASHION_AND_BEAUTY: 8, [8]: "FASHION_AND_BEAUTY", RELATIONSHIPS_AND_IDENTITY: 9, [9]: "RELATIONSHIPS_AND_IDENTITY", TRAVEL_AND_FOOD: 10, [10]: "TRAVEL_AND_FOOD", FITNESS_AND_HEALTH: 11, [11]: "FITNESS_AND_HEALTH", FINANCE: 12, [12]: "FINANCE", OTHER: 13, [13]: "OTHER", EMOJI: 43, [43]: "EMOJI", BOTS: 49, [49]: "BOTS" };
 const items = [
@@ -626,8 +626,8 @@ export const calculateLocaleOptions = function calculateLocaleOptions() {
       let obj = { id: null, value: null, label: null, image: "Array" };
       obj[0] = value;
       obj[1] = value;
-      const intl = callback(1233).intl;
-      obj[2] = intl.string(callback(1233).t.WKEPHR);
+      const intl = callback(1114).intl;
+      obj[2] = intl.string(callback(1114).t.WKEPHR);
     } else {
       obj = { id: null, value: null, label: null, image: "Array" };
       obj[0] = value;

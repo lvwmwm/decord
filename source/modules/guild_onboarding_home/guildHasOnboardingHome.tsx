@@ -1,13 +1,13 @@
-// Module ID: 4717
-// Function ID: 4718
+// Module ID: 4749
+// Function ID: 4750
 // Name: guildHasOnboardingHome
-// Dependencies: [673, 1911, 2]
+// Dependencies: [1074, 1982, 2]
 // Exports: default
 
-// Module 4717 (guildHasOnboardingHome)
+// Module 4749 (guildHasOnboardingHome)
 import set from "set" /* 2 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import ME from "ME" /* 673 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
+import ME from "ME" /* 1074 */;
 
 ({ GuildFeatures: obj1, ME: c3 } = ME);
 const result = set.fileFinishedImporting("modules/guild_onboarding_home/guildHasOnboardingHome.tsx");

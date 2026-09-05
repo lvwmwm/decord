@@ -1,18 +1,18 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 14929
+// Function ID: 14930
 // Name: FamilyCenterParentalControlsSettings
-// Dependencies: [32, 19, 17, 673, 7471, 21, 4481, 709, 1498, 7102, 7122, 6934, 7527, 14818, 14836, 1233, 2368, 7795, 14855, 14856, 9721, 7472, 7063, 14857, 9722, 12548, 2]
+// Dependencies: [32, 19, 17, 1074, 7538, 21, 4560, 576, 1483, 7162, 7182, 6994, 7594, 14893, 14911, 1114, 2396, 7863, 14930, 14931, 9792, 7539, 7123, 14932, 9793, 12616, 2]
 // Exports: default
 
-// Module 14854 (FamilyCenterParentalControlsSettings)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14929 (FamilyCenterParentalControlsSettings)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UserSettingsSections } from "ME" /* 673 */;
-import { FamilyCenterSubPages } from "items" /* 7471 */;
+import { UserSettingsSections } from "ME" /* 1074 */;
+import { FamilyCenterSubPages } from "items" /* 7538 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -105,7 +105,7 @@ export default function FamilyCenterParentalControlsSettings() {
         }
       }
     }
-    stackNavigation.setOptions({ title: "left", headerRight: "call" });
+    stackNavigation.setOptions({ title: "hash", headerRight: "call" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;

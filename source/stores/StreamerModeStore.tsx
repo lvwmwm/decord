@@ -1,15 +1,15 @@
-// Module ID: 4326
-// Function ID: 4327
+// Module ID: 4405
+// Function ID: 4406
 // Name: initialize
-// Dependencies: [1215, 673, 695, 586, 4327, 706, 2]
+// Dependencies: [502, 1074, 1242, 504, 4406, 573, 2]
 
-// Module 4326 (initialize)
-import initializeDefault from "initialize" /* 586 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import apexExperiment from "apexExperiment" /* 4327 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+// Module 4405 (initialize)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import apexExperiment from "apexExperiment" /* 4406 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 require = arg1;
 let obj = { enabled: false, autoToggle: true, hideInstantInvites: true, hidePersonalInformation: true, disableSounds: true, disableNotifications: true, disabledOverlayWidgets: [], enableContentProtection: false };

@@ -1,12 +1,12 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14866
+// Function ID: 14867
 // Name: useParentalConsentWarning
-// Dependencies: [14792, 586, 2]
+// Dependencies: [14867, 504, 2]
 // Exports: useParentalConsentWarning
 
-// Module 14791 (useParentalConsentWarning)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "initialize" /* 14792 */;
+// Module 14866 (useParentalConsentWarning)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "initialize" /* 14867 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14783
+// Function ID: 14784
 // Name: frozen
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 14708 (frozen)
+// Module 14783 (frozen)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const AnalyticsSections = ME.AnalyticsSections;
 const frozen = Object.freeze({ LANDING: AnalyticsSections.IOS_TWO_FA_LANDING, SCAN: AnalyticsSections.IOS_TWO_FA_SCAN, ENTER_CODE: AnalyticsSections.IOS_TWO_FA_ENTER_CODE, SUCCESS: AnalyticsSections.IOS_TWO_FA_SUCCESS, ADD_SMS: AnalyticsSections.IOS_TWO_FA_ADD_SMS, VERIFY_SMS: AnalyticsSections.IOS_TWO_FA_VERIFY_SMS });

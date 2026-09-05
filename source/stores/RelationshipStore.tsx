@@ -1,15 +1,15 @@
-// Module ID: 4130
-// Function ID: 4131
+// Module ID: 4209
+// Function ID: 4210
 // Name: markAllUserIdListsStale
-// Dependencies: [32, 4131, 1921, 673, 706, 586, 2]
+// Dependencies: [32, 4210, 1371, 1074, 573, 504, 2]
 
-// Module 4130 (markAllUserIdListsStale)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 4209 (markAllUserIdListsStale)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "hasFlag" /* 4131 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { RelationshipTypes } from "ME" /* 673 */;
+import closure_3 from "hasFlag" /* 4210 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { RelationshipTypes } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 function markAllUserIdListsStale() {

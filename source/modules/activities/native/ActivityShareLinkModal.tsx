@@ -1,22 +1,22 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14486
+// Function ID: 14487
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1386, 1921, 1385, 10791, 4474, 21, 4481, 709, 586, 10912, 12064, 14410, 7108, 1394, 14412, 7390, 7615, 4194, 1233, 7130, 4193, 1492, 1627, 1234, 5586, 7795, 5579, 7315, 4424, 5086, 10915, 10926, 2]
+// Dependencies: [5, 32, 19, 17, 1957, 1371, 1956, 10860, 4553, 21, 4560, 576, 504, 10981, 12132, 14485, 7168, 1369, 14487, 7456, 7682, 4259, 1114, 7190, 4258, 1477, 1611, 1115, 5631, 7863, 5624, 7377, 4503, 5125, 10984, 10995, 2]
 // Exports: default
 
-// Module 14411 (ActivityShareLinkModal)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 14486 (ActivityShareLinkModal)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "participantFromServer" /* 1385 */;
-import { UserRowModes } from "UserRowModes" /* 10791 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "participantFromServer" /* 1956 */;
+import { UserRowModes } from "UserRowModes" /* 10860 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
@@ -136,7 +136,7 @@ export default function ActivityShareLinkModal(applicationId) {
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(10912).getOrResolveChannelIdFromDestinationId));
+              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(10981).getOrResolveChannelIdFromDestinationId));
               return obj1;
             } else {
               c3 = 3;
@@ -146,8 +146,8 @@ export default function ActivityShareLinkModal(applicationId) {
           c3 = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          closure_0 = arg1.filter(closure_1_0(1394).isNotNullish);
-          closure_1 = closure_1_0(14412).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_0 = arg1.filter(closure_1_0(1369).isNotNullish);
+          closure_1 = closure_1_0(14487).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             closure_0 = v3((arg0) => {
@@ -223,17 +223,17 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = closure_1_0(14412);
+          const obj5 = closure_1_0(14487);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
-          const intl = closure_1_0(1233).intl;
+          const intl = closure_1_0(1114).intl;
           const obj3 = { applicationName: null };
           obj3[0] = name.name;
-          obj2[1] = intl.formatToPlainString(closure_1_0(1233).t.jQULqL, obj3);
-          closure_1_1(4194).open(obj2);
+          obj2[1] = intl.formatToPlainString(closure_1_0(1114).t.jQULqL, obj3);
+          closure_1_1(4259).open(obj2);
           callback(true, closure_7);
-          const obj6 = closure_1_1(4194);
-          const result = closure_1_0(14410).closeActivityShareLinkModal();
-          const obj9 = closure_1_0(14410);
+          const obj6 = closure_1_1(4259);
+          const result = closure_1_0(14485).closeActivityShareLinkModal();
+          const obj9 = closure_1_0(14485);
         }
         c3 = 3;
         obj = { value: null, done: true };

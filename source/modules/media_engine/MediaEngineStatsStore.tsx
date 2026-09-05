@@ -1,14 +1,14 @@
-// Module ID: 4570
-// Function ID: 4571
+// Module ID: 4598
+// Function ID: 4599
 // Name: updateAveragedStatsHelper
-// Dependencies: [1215, 4571, 4547, 586, 706, 2]
+// Dependencies: [502, 4599, 4612, 504, 573, 2]
 
-// Module 4570 (updateAveragedStatsHelper)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import isStreamKey from "isStreamKey" /* 4547 */;
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "initialize" /* 4571 */;
+// Module 4598 (updateAveragedStatsHelper)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import isStreamKey from "isStreamKey" /* 4612 */;
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "initialize" /* 4599 */;
 
 require = arg1;
 function updateAveragedStatsHelper(arg0, arg1, arg2, arr, arr2) {

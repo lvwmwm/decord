@@ -1,23 +1,23 @@
-// Module ID: 14646
-// Function ID: 14647
+// Module ID: 14721
+// Function ID: 14722
 // Name: handleOpenBlog
-// Dependencies: [32, 19, 17, 14608, 1383, 21, 4481, 709, 1372, 14641, 14647, 8341, 14642, 7326, 4436, 4477, 1233, 5084, 5635, 14679, 4936, 2]
+// Dependencies: [32, 19, 17, 14683, 1954, 21, 4560, 576, 1943, 14716, 14722, 8411, 14717, 7388, 4515, 4556, 1114, 5123, 5680, 14754, 4975, 2]
 // Exports: TinyBroncoAgeGroupHeader
 
-// Module 14646 (handleOpenBlog)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
-import AgeGroupState from "AgeGroupState" /* 14641 */;
-import messagesProxyDefault from "messagesProxy" /* 14647 */;
+// Module 14721 (handleOpenBlog)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8411 */;
+import AgeGroupState from "AgeGroupState" /* 14716 */;
+import messagesProxyDefault from "messagesProxy" /* 14722 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { TINY_BRONCO_BLOG_URL } from "TINY_BRONCO_BLOG_URL" /* 14608 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { TINY_BRONCO_BLOG_URL } from "TINY_BRONCO_BLOG_URL" /* 14683 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function handleOpenBlog() {
@@ -26,9 +26,9 @@ function handleOpenBlog() {
 function AccountStatusNotice(arg0) {
   let _require;
   const tmp = callback4();
-  let obj = _require(14642);
+  let obj = _require(14717);
   const shouldShowTinyBroncoAccountStatus = obj.useShouldShowTinyBroncoAccountStatus();
-  obj1 = _require(7326);
+  obj1 = _require(7388);
   const tmp5 = callback(obj1.useSelectedDismissibleContent(shouldShowTinyBroncoAccountStatus ? items : closure_12), 2);
   _require = tmp6;
   [][0] = tmp5[1];
@@ -40,22 +40,22 @@ function AccountStatusNotice(arg0) {
       obj[0] = tmp.notice;
       obj = { style: null, children: null };
       obj[0] = tmp.noticeIcon;
-      obj[1] = callback2(tmp2(4436).CircleInformationIcon, { size: "xs", color: "text-link" });
+      obj[1] = callback2(tmp2(4515).CircleInformationIcon, { size: "xs", color: "text-link" });
       items = [callback2(View, obj), , ];
       obj1 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
       obj1[0] = tmp.noticeBody;
-      const intl = tmp2(1233).intl;
+      const intl = tmp2(1114).intl;
       const obj2 = { handleOnBlogHook: null };
       obj2[0] = handleOpenBlog;
       obj1[3] = intl.format(obj3[arg0.ageGroup], obj2);
-      items[1] = callback2(tmp2(4477).Text, obj1);
+      items[1] = callback2(tmp2(4556).Text, obj1);
       obj3 = { style: null, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 12, onPress: null, children: null };
       obj3[0] = tmp.noticeDismiss;
-      const intl2 = tmp2(1233).intl;
-      obj3[3] = intl2.string(tmp2(1233).t.WAI6xu);
+      const intl2 = tmp2(1114).intl;
+      obj3[3] = intl2.string(tmp2(1114).t.WAI6xu);
       obj3[5] = tmp7;
-      obj3[6] = callback2(tmp2(5635).XSmallIcon, { size: "sm", color: "icon-strong" });
-      items[2] = callback2(tmp2(5084).PressableOpacity, obj3);
+      obj3[6] = callback2(tmp2(5680).XSmallIcon, { size: "sm", color: "icon-strong" });
+      items[2] = callback2(tmp2(5123).PressableOpacity, obj3);
       obj[1] = items;
       tmp8 = callback3(View, obj);
     }
@@ -66,45 +66,45 @@ function AgeGroupDescription(ageGroup) {
   ageGroup = ageGroup.ageGroup;
   if (AgeGroupState.AgeGroupState.ADULT === ageGroup) {
     let obj = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl3 = tmp(1233).intl;
+    const intl3 = tmp(1114).intl;
     obj = { handleOnAgeGatedContentHook: null };
-    obj[0] = tmp(14679).handleOpenAgeGatedContentSupportArticle;
+    obj[0] = tmp(14754).handleOpenAgeGatedContentSupportArticle;
     obj[2] = intl3.format(messagesProxyDefault.gi4ulu, obj);
-    return callback2(tmp(4477).Text, obj);
-  } else if (tmp(14641).AgeGroupState.TEEN === ageGroup) {
+    return callback2(tmp(4556).Text, obj);
+  } else if (tmp(14716).AgeGroupState.TEEN === ageGroup) {
     obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl2 = tmp(1233).intl;
+    const intl2 = tmp(1114).intl;
     const obj2 = { handleOnAgeGatedContentHook: null, handleOnConfirmAgeHook: null };
-    obj2[0] = tmp(14679).handleOpenAgeGatedContentSupportArticle;
-    obj2[1] = tmp(14641).handleShowAgeVerification;
+    obj2[0] = tmp(14754).handleOpenAgeGatedContentSupportArticle;
+    obj2[1] = tmp(14716).handleShowAgeVerification;
     obj1[2] = intl2.format(messagesProxyDefault["221iML"], obj2);
-    return callback2(tmp(4477).Text, obj1);
-  } else if (tmp(14641).AgeGroupState.UNVERIFIED === ageGroup) {
+    return callback2(tmp(4556).Text, obj1);
+  } else if (tmp(14716).AgeGroupState.UNVERIFIED === ageGroup) {
     obj = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl = tmp(1233).intl;
+    const intl = tmp(1114).intl;
     obj3 = { handleOnAgeGatedContentHook: null, handleOnConfirmAgeHook: null };
-    obj3[0] = tmp(14679).handleOpenAgeGatedContentSupportArticle;
-    obj3[1] = tmp(14641).handleShowAgeVerification;
+    obj3[0] = tmp(14754).handleOpenAgeGatedContentSupportArticle;
+    obj3[1] = tmp(14716).handleShowAgeVerification;
     obj[2] = intl.format(messagesProxyDefault["W0/7DD"], obj3);
-    return callback2(tmp(4477).Text, obj);
+    return callback2(tmp(4556).Text, obj);
   }
 }
 function AgeGroupCallToAction(ageGroup) {
   ageGroup = ageGroup.ageGroup;
   if (AgeGroupState.AgeGroupState.ADULT === ageGroup) {
     return null;
-  } else if (tmp(14641).AgeGroupState.TEEN === ageGroup) {
+  } else if (tmp(14716).AgeGroupState.TEEN === ageGroup) {
     let obj = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
-    const intl2 = tmp(1233).intl;
+    const intl2 = tmp(1114).intl;
     obj[3] = intl2.string(messagesProxyDefault["+7NlgO"]);
-    obj[4] = tmp(14679).handleOpenAgeGatedContentSupportArticle;
-    return callback2(tmp(4936).Button, obj);
-  } else if (tmp(14641).AgeGroupState.UNVERIFIED === ageGroup) {
+    obj[4] = tmp(14754).handleOpenAgeGatedContentSupportArticle;
+    return callback2(tmp(4975).Button, obj);
+  } else if (tmp(14716).AgeGroupState.UNVERIFIED === ageGroup) {
     obj = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
-    const intl = tmp(1233).intl;
+    const intl = tmp(1114).intl;
     obj[3] = intl.string(messagesProxyDefault["cI+bc/"]);
-    obj[4] = tmp(14641).handleShowAgeVerification;
-    return callback2(tmp(4936).Button, obj);
+    obj[4] = tmp(14716).handleShowAgeVerification;
+    return callback2(tmp(4975).Button, obj);
   }
 }
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

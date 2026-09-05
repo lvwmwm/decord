@@ -1,24 +1,24 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16073
+// Function ID: 16074
 // Name: IconOrPreview
-// Dependencies: [19, 17, 1391, 1921, 15218, 673, 502, 21, 15996, 15997, 4481, 709, 7102, 586, 7108, 695, 9464, 2008, 8110, 15991, 4680, 15998, 15219, 15992, 1296, 16001, 10822, 16002, 9840, 12934, 8638, 5058, 9152, 1233, 4329, 9988, 5542, 15993, 16004, 9991, 8070, 16006, 8179, 2]
+// Dependencies: [19, 17, 1962, 1371, 15294, 1074, 1085, 21, 16074, 16075, 4560, 576, 7162, 504, 7168, 1242, 9536, 1896, 8179, 16069, 4712, 16076, 15295, 16070, 1178, 16079, 10891, 16080, 9911, 13002, 8708, 5097, 9223, 1114, 4409, 10059, 5587, 16071, 16082, 10062, 8139, 16084, 8248, 2]
 
-// Module 15995 (IconOrPreview)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9991 */;
-import useLiveStageData from "useLiveStageData" /* 15993 */;
-import registerAssetDefault from "registerAsset" /* 15996 */;
-import registerAssetDefault2 from "registerAsset" /* 15997 */;
-import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16004 */;
+// Module 16073 (IconOrPreview)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10062 */;
+import useLiveStageData from "useLiveStageData" /* 16071 */;
+import registerAssetDefault from "registerAsset" /* 16074 */;
+import registerAssetDefault2 from "registerAsset" /* 16075 */;
+import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16082 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15218 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15294 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function IconOrPreview(arg0) {
@@ -57,7 +57,7 @@ function IconOrPreview(arg0) {
     tmp9 = null != large_image;
   }
   if (tmp9) {
-    let obj = _require(8070);
+    let obj = _require(8139);
     let application_id;
     if (activity != null) {
       application_id = activity.application_id;
@@ -88,7 +88,7 @@ function IconOrPreview(arg0) {
     tmp17 = null != small_image;
   }
   if (tmp17) {
-    obj1 = _require(8070);
+    obj1 = _require(8139);
     let application_id1;
     if (activity != null) {
       application_id1 = activity.application_id;
@@ -101,15 +101,15 @@ function IconOrPreview(arg0) {
     assetImage = obj1.getAssetImage(application_id1, small_image1, items1);
   }
   if (null != assetImage) {
-    let obj3 = _require(8179);
+    let obj3 = _require(8248);
     const memoizedImageSourceResult = obj3.memoizedImageSource(assetImage);
-    let obj4 = _require(8179);
+    let obj4 = _require(8248);
     const dominantRGBFromImage = obj4.useDominantRGBFromImage(assetImage, memoizedImageSourceResult);
     ({ r, g, b } = dominantRGBFromImage);
-    const rgbToHexResult = _require(4329).rgbToHex(r, g, b);
+    const rgbToHexResult = _require(4409).rgbToHex(r, g, b);
     importDefault = rgbToHexResult;
-    const obj6 = _require(4329);
-    const hexWithOpacityResult = _require(4329).hexWithOpacity(rgbToHexResult, 0.2);
+    const obj6 = _require(4409);
+    const hexWithOpacityResult = _require(4409).hexWithOpacity(rgbToHexResult, 0.2);
     dependencyMap = hexWithOpacityResult;
     const items2 = [rgbToHexResult, tmp.cardImageAssetContainer];
     const memo = importAllResult.useMemo(() => {
@@ -122,38 +122,38 @@ function IconOrPreview(arg0) {
       obj[0] = memo;
       obj = { stream: null, children: null, style: null, ctaText: null, disabled: true };
       obj[0] = stream;
-      let tmp2Result = tmp2(9988);
+      let tmp2Result = tmp2(10059);
       obj1 = { style: null, textStyle: null, allowFontScaling: false };
       ({ cardImageStreamLive: obj13[0], stageStreamLiveText: obj13[1] } = tmp);
-      obj[1] = callback(tmp28(1296).LiveTag, obj1);
+      obj[1] = callback(tmp28(1178).LiveTag, obj1);
       obj[2] = tmp.cardImageStreamPreview;
-      const intl5 = tmp28(1233).intl;
-      obj[3] = intl5.string(tmp28(1233).t["7Xq/nV"]);
+      const intl5 = tmp28(1114).intl;
+      obj[3] = intl5.string(tmp28(1114).t["7Xq/nV"]);
       obj[1] = callback(tmp2Result, obj);
       return callback(closure_4, obj);
     } else {
-      if (tmp2(10822)(activity)) {
-        const intl4 = tmp28(1233).intl;
-        let stringResult = intl4.string(tmp28(1233).t.rmnkz4);
+      if (tmp2(10891)(activity)) {
+        const intl4 = tmp28(1114).intl;
+        let stringResult = intl4.string(tmp28(1114).t.rmnkz4);
       } else {
         let type;
         if (activity != null) {
           type = activity.type;
         }
         if (type === constants.LISTENING) {
-          const intl3 = tmp28(1233).intl;
-          stringResult = intl3.string(tmp28(1233).t.kUEnxN);
-        } else if (tmp2(12934)(activity)) {
-          const intl2 = tmp28(1233).intl;
-          stringResult = intl2.string(tmp28(1233).t.T0uYK9);
+          const intl3 = tmp28(1114).intl;
+          stringResult = intl3.string(tmp28(1114).t.kUEnxN);
+        } else if (tmp2(13002)(activity)) {
+          const intl2 = tmp28(1114).intl;
+          stringResult = intl2.string(tmp28(1114).t.T0uYK9);
         } else {
           let type1;
           if (activity != null) {
             type1 = activity.type;
           }
           if (type1 !== tmp37.CUSTOM_STATUS) {
-            const intl = tmp28(1233).intl;
-            stringResult = intl.string(tmp28(1233).t["2TbM/G"]);
+            const intl = tmp28(1114).intl;
+            stringResult = intl.string(tmp28(1114).t["2TbM/G"]);
           }
         }
       }
@@ -165,11 +165,11 @@ function IconOrPreview(arg0) {
       obj4 = { style: null, source: null };
       obj4[0] = tmp.cardImageAsset;
       obj4[1] = memoizedImageSourceResult;
-      obj3[1] = callback(tmp2(5542), obj4);
+      obj3[1] = callback(tmp2(5587), obj4);
       obj2[2] = callback(closure_4, obj3);
       return callback(closure_4, obj2);
     }
-    const obj7 = _require(4329);
+    const obj7 = _require(4409);
   } else {
     let type2;
     if (activity != null) {
@@ -180,7 +180,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       tmp2Result = items[userId % items.length];
     } else {
-      tmp2Result = tmp2(16006);
+      tmp2Result = tmp2(16084);
     }
   }
 }

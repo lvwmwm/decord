@@ -1,11 +1,11 @@
-// Module ID: 6536
-// Function ID: 6537
+// Module ID: 6595
+// Function ID: 6596
 // Name: hasConsented
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 6536 (hasConsented)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 6595 (hasConsented)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let c0 = false;
 let c1 = false;

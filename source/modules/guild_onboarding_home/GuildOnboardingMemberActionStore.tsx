@@ -1,11 +1,11 @@
-// Module ID: 4716
-// Function ID: 4717
+// Module ID: 4748
+// Function ID: 4749
 // Name: set
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 4716 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 4748 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 import set from "set" /* 2 */;
 
 let obj = {};

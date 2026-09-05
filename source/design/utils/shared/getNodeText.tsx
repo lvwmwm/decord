@@ -1,11 +1,11 @@
-// Module ID: 4200
-// Function ID: 4201
+// Module ID: 4265
+// Function ID: 4266
 // Name: getNodeText
-// Dependencies: [2, 4201]
+// Dependencies: [2, 4266]
 
-// Module 4200 (getNodeText)
+// Module 4265 (getNodeText)
 import set from "set" /* 2 */;
-import getNodeText from "getNodeText" /* 4201 */;
+import getNodeText from "getNodeText" /* 4266 */;
 
 const result = set.fileFinishedImporting("design/utils/shared/getNodeText.tsx");
 

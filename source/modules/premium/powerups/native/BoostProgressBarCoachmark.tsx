@@ -1,15 +1,15 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16168
+// Function ID: 16169
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 1383, 21, 4481, 8993, 1233, 2400, 4205, 11059, 2]
+// Dependencies: [19, 17, 1954, 21, 4560, 9063, 1114, 2428, 4271, 11127, 2]
 // Exports: default
 
-// Module 16090 (BoostProgressBarCoachmark)
+// Module 16168 (BoostProgressBarCoachmark)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
@@ -30,24 +30,24 @@ export default function BoostProgressBarCoachmark(guild) {
   const items1 = [guild.id, markAsDismissed];
   callback1 = callback.useCallback(() => {
     markAsDismissed(closure_1_5.TAKE_ACTION);
-    markAsDismissed(8993).saveGuild(guild.id, { premiumProgressBarEnabled: true });
+    markAsDismissed(9063).saveGuild(guild.id, { premiumProgressBarEnabled: true });
   }, items1);
   const items2 = [callback, callback1, tmp.riveContainer];
   const memo = callback.useMemo(() => {
     const obj = { title: null, description: null, visible: true, position: "bottom", offsetY: 8, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
-    const intl = guild(1233).intl;
-    obj[0] = intl.string(markAsDismissed(2400).uwV2dH);
-    const intl2 = guild(1233).intl;
-    obj[1] = intl2.string(markAsDismissed(2400).MIwlcR);
+    const intl = guild(1114).intl;
+    obj[0] = intl.string(markAsDismissed(2428).uwV2dH);
+    const intl2 = guild(1114).intl;
+    obj[1] = intl2.string(markAsDismissed(2428).MIwlcR);
     obj[5] = callback;
     obj[6] = function renderImgComponent() {
       return closure_1_6(closure_1_4, { style: riveContainer.riveContainer, children: closure_1_6(closure_1_0(closure_1_2[8]).BoostThisServerRive, { stateMachine: "State Machine 1" }) });
     };
-    const intl3 = guild(1233).intl;
-    obj[7] = intl3.string(guild(1233).t["0CJWP2"]);
+    const intl3 = guild(1114).intl;
+    obj[7] = intl3.string(guild(1114).t["0CJWP2"]);
     obj[9] = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(11059).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(11127).useCoachmark(guild.targetRef, memo);
   return null;
 };

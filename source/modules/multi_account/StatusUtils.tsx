@@ -1,12 +1,12 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10092
+// Function ID: 10093
 // Name: getStatusExpiryParts
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: getStatusExpiryParts
 
-// Module 10021 (getStatusExpiryParts)
+// Module 10092 (getStatusExpiryParts)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
 
@@ -39,19 +39,19 @@ export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
   const formatTimeResult = data.formatTime(date, { format: "short" });
   if (tmp2) {
     let obj = { kind: "today", dateString: null, timeString: null };
-    const data4 = tmp10(1233).intl.data;
+    const data4 = tmp10(1114).intl.data;
     obj[1] = data4.formatRelativeTime(0, "day", { numeric: "auto" });
     obj[2] = formatTimeResult;
     obj1 = obj;
   } else if (tmp7) {
     obj = { kind: "tomorrow", dateString: null, timeString: null };
-    const data3 = tmp10(1233).intl.data;
+    const data3 = tmp10(1114).intl.data;
     obj[1] = data3.formatRelativeTime(1, "day", { numeric: "auto" });
     obj[2] = formatTimeResult;
     obj1 = obj;
   } else {
     obj1 = { kind: "date", dateString: null, timeString: null };
-    const data2 = tmp10(1233).intl.data;
+    const data2 = tmp10(1114).intl.data;
     obj1[1] = data2.formatDate(date, { dateStyle: "short" });
     obj1[2] = formatTimeResult;
   }

@@ -1,32 +1,32 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16800
+// Function ID: 16801
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1378, 5240, 7554, 8114, 7148, 1383, 21, 16715, 16293, 1234, 8186, 8172, 12996, 8604, 8121, 9106, 11130, 11899, 1372, 7326, 12928, 4936, 10179, 709, 1233, 16723, 16724, 16711, 1499, 8117, 11042, 8173, 586, 8158, 8169, 12877, 16725, 8962, 13001, 13002, 11048, 16726, 13005, 15619, 12930, 11139, 8529, 13011, 16728, 12983, 13016, 13022, 9721, 4218, 7096, 11044, 11084, 9699, 12546, 12548, 2]
+// Dependencies: [32, 19, 17, 1949, 5279, 7621, 8183, 7208, 1954, 21, 16793, 16369, 1115, 8256, 8241, 13064, 8674, 8190, 9177, 11198, 11967, 1943, 7388, 12996, 4975, 10250, 576, 1114, 16801, 16802, 16789, 1484, 8186, 11110, 8242, 504, 8227, 8238, 12945, 16803, 9032, 13069, 13070, 11116, 16804, 13073, 15695, 12998, 11207, 8599, 13079, 16806, 13051, 13084, 13090, 9792, 4296, 7156, 11112, 11152, 9770, 12614, 12616, 2]
 // Exports: default
 
-// Module 16722 (YouAvatar)
-import set from "set" /* 1234 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8172 */;
-import OpenableUserProfileAvatarDefault from "OpenableUserProfileAvatar" /* 8186 */;
-import WidgetRendererDefault from "WidgetRenderer" /* 8604 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12996 */;
+// Module 16800 (YouAvatar)
+import set from "set" /* 1115 */;
+import useSharedStylesDefault from "useSharedStyles" /* 8241 */;
+import OpenableUserProfileAvatarDefault from "OpenableUserProfileAvatar" /* 8256 */;
+import WidgetRendererDefault from "WidgetRenderer" /* 8674 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13064 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useIsContentShown } from "withContent" /* 1378 */;
-import closure_8 from "filterPlayingActivities" /* 5240 */;
-import closure_9 from "createUserWidgetFromServer" /* 7554 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7148 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { useIsContentShown } from "withContent" /* 1949 */;
+import closure_8 from "filterPlayingActivities" /* 5279 */;
+import closure_9 from "createUserWidgetFromServer" /* 7621 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7208 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(16715).trackYouTabAvatarPress();
-    const obj = callback(16715);
-    const result1 = callback(16293).showYouAccountActionSheet();
+    const result = callback(16793).trackYouTabAvatarPress();
+    const obj = callback(16793);
+    const result1 = callback(16369).showYouAccountActionSheet();
   }, []);
   let obj = set;
   const isAndroidResult = obj.isAndroid();

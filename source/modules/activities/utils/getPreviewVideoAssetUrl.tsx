@@ -1,12 +1,12 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12058
+// Function ID: 12059
 // Name: getPreviewVideoAssetUrl
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 11990 (getPreviewVideoAssetUrl)
+// Module 12058 (getPreviewVideoAssetUrl)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/activities/utils/getPreviewVideoAssetUrl.tsx");

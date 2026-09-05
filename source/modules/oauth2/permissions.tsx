@@ -1,13 +1,13 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 9248
+// Function ID: 9249
 // Name: Permissions
-// Dependencies: [673, 503, 1233, 2]
+// Dependencies: [1074, 1086, 1114, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 9177 (Permissions)
+// Module 9248 (Permissions)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const Permissions = ME.Permissions;
 const items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];

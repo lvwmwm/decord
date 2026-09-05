@@ -1,14 +1,14 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7570
+// Function ID: 7571
 // Name: fromServer
-// Dependencies: [7478, 7479, 7477, 675, 673, 4526, 2]
+// Dependencies: [7545, 7546, 7544, 1076, 1074, 5513, 2]
 
-// Module 7503 (fromServer)
-import closure_2 from "fromServer" /* 7478 */;
-import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7479 */;
-import { CollectiblesVariantProductRecord as closure_4 } from "fromServer" /* 7477 */;
-import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items" /* 675 */;
-import { PREMIUM_TYPE_NONE } from "ME" /* 673 */;
+// Module 7570 (fromServer)
+import closure_2 from "fromServer" /* 7545 */;
+import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7546 */;
+import { CollectiblesVariantProductRecord as closure_4 } from "fromServer" /* 7544 */;
+import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items" /* 1076 */;
+import { PREMIUM_TYPE_NONE } from "ME" /* 1074 */;
 
 let prototype;
 prototype = function CollectiblesPurchaseRecord(arg0) {
@@ -26,7 +26,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   }
   const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
   let mapped;
-  const tmp5 = sku_id(4526)(prices);
+  const tmp5 = sku_id(5513)(prices);
   if (bundled_products != null) {
     mapped = bundled_products.map(fromServer.fromServer);
   }

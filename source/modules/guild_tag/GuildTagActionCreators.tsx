@@ -1,13 +1,13 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13914
+// Function ID: 13915
 // Name: _adoptGuildIdentity
-// Dependencies: [5, 1921, 673, 527, 706, 2]
+// Dependencies: [5, 1371, 1074, 1272, 573, 2]
 // Exports: adoptGuildIdentity
 
-// Module 13924 (_adoptGuildIdentity)
+// Module 13914 (_adoptGuildIdentity)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _adoptGuildIdentity() {

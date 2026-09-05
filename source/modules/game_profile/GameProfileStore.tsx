@@ -1,11 +1,11 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 8682
+// Function ID: 8683
 // Name: getSimilarGames
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8612 (getSimilarGames)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 8682 (getSimilarGames)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = {};
 let closure_1 = {};

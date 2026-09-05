@@ -1,14 +1,14 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11929
+// Function ID: 11930
 // Name: _requestManualReview
-// Dependencies: [5, 673, 8329, 684, 527, 8341, 8334, 2]
+// Dependencies: [5, 1074, 8399, 1090, 1272, 8411, 8404, 2]
 // Exports: handleManualReviewCta, invalidateManualReviewCache
 
-// Module 11861 (_requestManualReview)
-import setDefault from "set" /* 684 */;
+// Module 11929 (_requestManualReview)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
-import { SafetyToastType } from "SafetyToastType" /* 8329 */;
+import { Endpoints } from "ME" /* 1074 */;
+import { SafetyToastType } from "SafetyToastType" /* 8399 */;
 
 const require = arg1;
 function _requestManualReview() {
@@ -88,12 +88,12 @@ function _handleManualReviewCta() {
                 })();
                 return obj1;
               } else if (closure_0.status !== constants2.DECIDED_TEEN) {
-                let obj2 = callback(8341);
+                let obj2 = callback(8411);
                 const result = obj2.showManualReviewWebview(closure_0.verification_webview_url);
                 c3 = 1;
               }
             }
-            const result1 = callback(8341).showManualReviewDecidedTeenModal();
+            const result1 = callback(8411).showManualReviewDecidedTeenModal();
             c3 = 0;
             c9 = false;
             constants = 3;
@@ -107,7 +107,7 @@ function _handleManualReviewCta() {
           throw dependencyMap;
         } else if (2 === tmp8) {
           c3 = 1;
-          obj1 = callback(8334);
+          obj1 = callback(8404);
           obj1.showFailedToast(constants.TIGGER_PAWTECT_ERROR);
         } else if (arg0 === 1) {
           constants = 3;

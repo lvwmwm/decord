@@ -1,25 +1,25 @@
-// Module ID: 13372
-// Function ID: 13373
+// Module ID: 13445
+// Function ID: 13446
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [19, 1921, 7386, 586, 8112, 2]
+// Dependencies: [19, 1371, 7452, 504, 8181, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 13372 (MAX_REFERRALS_SENT)
+// Module 13445 (MAX_REFERRALS_SENT)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "emitChanges" /* 7386 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "emitChanges" /* 7452 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");
 
 export const MAX_REFERRALS_SENT = 3;
 export const useReferralProgramBannerDetails = function useReferralProgramBannerDetails() {
-  let obj = stateFromStoresArray(586);
+  let obj = stateFromStoresArray(504);
   const items = [closure_4];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => authStore.getSentUserIds());
   const items1 = [closure_3];
   const items2 = [stateFromStoresArray];
-  const stateFromStoresArray1 = stateFromStoresArray(586).useStateFromStoresArray(items1, () => {
+  const stateFromStoresArray1 = stateFromStoresArray(504).useStateFromStoresArray(items1, () => {
     const mapped = stateFromStoresArray.map((arg0) => user.getUser(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
@@ -29,8 +29,8 @@ export const useReferralProgramBannerDetails = function useReferralProgramBanner
     });
   }, items2);
   obj = { referralSentUsers: stateFromStoresArray1, hasSentAllReferrals: 3 === stateFromStoresArray.length, refreshAt: null };
-  const obj2 = stateFromStoresArray(586);
+  const obj2 = stateFromStoresArray(504);
   const items3 = [closure_4];
-  obj[2] = stateFromStoresArray(586).useStateFromStores(items3, () => authStore.getRefreshAt());
+  obj[2] = stateFromStoresArray(504).useStateFromStores(items3, () => authStore.getRefreshAt());
   return obj;
 };

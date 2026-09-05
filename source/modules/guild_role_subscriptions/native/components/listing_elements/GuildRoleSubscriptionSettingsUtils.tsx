@@ -1,12 +1,12 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16540
+// Function ID: 16541
 // Name: getCoverImageURI
-// Dependencies: [4114, 4763, 2]
+// Dependencies: [4193, 4802, 2]
 // Exports: getCoverImageURI
 
-// Module 16464 (getCoverImageURI)
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4763 */;
-import closure_2 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
+// Module 16540 (getCoverImageURI)
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4802 */;
+import closure_2 from "makeGroupListingIndexSubscriptionListingTag" /* 4193 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionSettingsUtils.tsx");

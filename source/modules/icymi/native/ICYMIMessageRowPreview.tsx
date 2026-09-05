@@ -1,13 +1,13 @@
-// Module ID: 16420
-// Function ID: 16421
+// Module ID: 16496
+// Function ID: 16497
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 673, 21, 7828, 4171, 7865, 7240, 4416, 4481, 709, 4166, 7863, 8582, 8057, 1233, 2]
+// Dependencies: [19, 1074, 21, 7897, 7879, 7934, 7302, 4495, 4560, 576, 1935, 7932, 8652, 8126, 1114, 2]
 
-// Module 16420 (ICYMIMessageRowPreview)
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+// Module 16496 (ICYMIMessageRowPreview)
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
-import { MessageEmbedTypes } from "ME" /* 673 */;
+import { MessageEmbedTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -23,8 +23,8 @@ function ICYMIMessageRowPreview(pointerEvents) {
   let setting1;
   let setting2;
   let obj = createCacheKey;
-  obj = { seeMoreLabelColor: messageOptions(709).colors.TEXT_DEFAULT };
-  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4416)());
+  obj = { seeMoreLabelColor: messageOptions(576).colors.TEXT_DEFAULT };
+  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4495)());
   const RenderEmbeds = explicitContentFromProto.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
   const InlineEmbedMedia = explicitContentFromProto.InlineEmbedMedia;
@@ -58,7 +58,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(8582), obj);
+  return setting2(messageOptions(8652), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -165,11 +165,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(7240)(message);
+  const tmp3 = merged(7302)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(7865).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7934).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

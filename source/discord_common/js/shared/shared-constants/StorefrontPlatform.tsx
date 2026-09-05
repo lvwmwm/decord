@@ -1,9 +1,9 @@
-// Module ID: 10752
-// Function ID: 10753
+// Module ID: 10821
+// Function ID: 10822
 // Name: StorefrontPlatform
 // Dependencies: [2]
 
-// Module 10752 (StorefrontPlatform)
+// Module 10821 (StorefrontPlatform)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/StorefrontPlatform.tsx");

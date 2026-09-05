@@ -1,33 +1,31 @@
-// Module ID: 17821
-// Function ID: 17822
+// Module ID: 17901
+// Function ID: 17902
 // Name: onStageConnectionError
-// Dependencies: [5, 5513, 7459, 1215, 1386, 1921, 6537, 673, 4548, 1392, 12346, 3, 4194, 1233, 11185, 4336, 1228, 8323, 4492, 7280, 9718, 4335, 16340, 7573, 8110, 7122, 4494, 9111, 695, 4708, 1234, 9464, 11, 16338, 7408, 10, 7409, 5238, 13645, 12349, 586, 12714, 9870, 4461, 688, 11559, 8281, 8278, 706, 4731, 1219, 4730, 13860, 2]
+// Dependencies: [5, 5558, 7526, 502, 1957, 1371, 6596, 1074, 4602, 1963, 12414, 3, 4259, 1114, 11253, 4418, 1109, 8393, 4571, 7342, 9789, 4417, 16416, 7640, 8179, 7182, 4573, 9182, 1242, 4740, 1115, 9536, 11, 16414, 7475, 10, 7476, 5277, 13629, 12417, 504, 12782, 9941, 4540, 1093, 11627, 8351, 8348, 573, 4763, 1100, 4762, 13850, 2]
 // Exports: default
 
-// Module 17821 (onStageConnectionError)
+// Module 17901 (onStageConnectionError)
 import timestampDefault from "timestamp" /* 3 */;
 import isTracingDefault from "isTracing" /* 10 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import dispatcherDefault2 from "dispatcher" /* 4194 */;
-import parseQueryDefault from "parseQuery" /* 4461 */;
-import fetchMessagesDefault from "fetchMessages" /* 9870 */;
-import registerAssetDefault from "registerAsset" /* 11185 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import dispatcherDefault from "dispatcher" /* 4259 */;
+import parseQueryDefault from "parseQuery" /* 4540 */;
+import fetchMessagesDefault from "fetchMessages" /* 9941 */;
+import registerAssetDefault from "registerAsset" /* 11253 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "scheduledEventSort" /* 7459 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { NotificationTypes } from "str2" /* 6537 */;
-import ME from "ME" /* 673 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4548 */;
-import { GuildScheduledEventEntityTypes as closure_16 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import { MultiAccountSwitchLocation as closure_17 } from "MAX_ACCOUNTS" /* 12346 */;
+import closure_6 from "scheduledEventSort" /* 7526 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { NotificationTypes } from "str2" /* 6596 */;
+import ME from "ME" /* 1074 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4602 */;
+import { GuildScheduledEventEntityTypes as closure_16 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import { MultiAccountSwitchLocation as closure_17 } from "MAX_ACCOUNTS" /* 12414 */;
 
 require = arg1;
 function onStageConnectionError() {
-  let obj = dispatcherDefault2;
+  let obj = dispatcherDefault;
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", content: null, icon: null };
   const intl = getSystemLocale.intl;
   obj[1] = intl.string(getSystemLocale.t.ah3RLk);
@@ -247,7 +245,7 @@ function _connectToStage2() {
       dependencyMap = tmp3;
       yield closure_1_20();
       c5 = 1;
-      const obj2 = callback(8323);
+      const obj2 = callback(8393);
       yield obj2.connectOrLurkStage(callback, closure_1, true);
       if (2 === tmp7) {
         c5 = 0;
@@ -258,7 +256,7 @@ function _connectToStage2() {
         throw arg1;
       } else if (arg0 !== 2) {
         closure_2 = arg1;
-        const obj = callback(8323);
+        const obj = callback(8393);
         obj.navigateToStage(closure_2, null);
         c5 = 0;
       }
@@ -402,11 +400,11 @@ function _handleGuildEventNotification() {
                 channel_id = tmp43.channel_id;
                 if (null == channel_id) {
                   (function onVoiceConnectionError() {
-                    let obj = guild_scheduled_event_id(4194);
+                    let obj = guild_scheduled_event_id(4259);
                     obj = { key: "VOICE_CONNECTION_ERROR_GENERIC", content: null, icon: null };
-                    const intl = channel_id(1233).intl;
-                    obj[1] = intl.string(channel_id(1233).t.S69lJR);
-                    obj[2] = guild_scheduled_event_id(11185);
+                    const intl = channel_id(1114).intl;
+                    obj[1] = intl.string(channel_id(1114).t.S69lJR);
+                    obj[2] = guild_scheduled_event_id(11253);
                     obj.open(obj);
                   })();
                   c4 = 3;
@@ -423,7 +421,7 @@ function _handleGuildEventNotification() {
                 }
               } else if (tmp46.EXTERNAL === NumberResult) {
                 guild_scheduled_event_id = tmp43.guild_scheduled_event_id;
-                let obj6 = callback(7280);
+                let obj6 = callback(7342);
                 obj6.transitionToGuild(tmp43.guild_id);
                 dependencyMap = 1;
                 c4 = 1;
@@ -446,7 +444,7 @@ function _handleGuildEventNotification() {
             } else {
               id = guildScheduledEvent.getGuildScheduledEvent(guild_scheduled_event_id);
               if (null != id) {
-                obj3 = channel_id(9718);
+                obj3 = channel_id(9789);
                 const obj7 = { eventId: null, event: null };
                 obj7[0] = id.id;
                 obj7[1] = id;
@@ -462,7 +460,7 @@ function _handleGuildEventNotification() {
             c4 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = channel_id(4492);
+            obj = channel_id(4571);
             obj.transitionToChannel(channel_id);
           }
           c4 = 3;
@@ -540,9 +538,9 @@ function _handleRelationshipAddNotification() {
               callback = Number(lib.rel_type);
               if (callback === constants2.PENDING_INCOMING) {
                 user_id = lib.user_id;
-                lib(4335).navigateToRootTab({ screen: "notifications" });
-                const obj8 = lib(4335);
-                user_id(16340).setTab(lib(7573).NotificationCenterTabs.ForYou);
+                lib(4417).navigateToRootTab({ screen: "notifications" });
+                const obj8 = lib(4417);
+                user_id(16416).setTab(lib(7640).NotificationCenterTabs.ForYou);
                 dependencyMap = 2;
                 c4 = 1;
                 let obj3 = { value: null, done: false };
@@ -551,14 +549,14 @@ function _handleRelationshipAddNotification() {
               } else {
                 if (callback !== constants2.FRIEND) {
                   if (lib.notification_type === constants.REMINDER) {
-                    let obj5 = lib(4336);
+                    let obj5 = lib(4418);
                     const rootNavigationRef = obj5.getRootNavigationRef();
                     if (rootNavigationRef != null) {
                       rootNavigationRef.navigate("friends", { screen: "requests" });
                     }
                   }
                 } else {
-                  obj3 = callback(4494);
+                  obj3 = callback(4573);
                   const obj4 = { recipientIds: null };
                   obj4[0] = lib.user_id;
                   obj3.openPrivateChannel(obj4);
@@ -577,9 +575,9 @@ function _handleRelationshipAddNotification() {
           } else {
             obj = { userId: null, sourceAnalyticsLocations: null };
             obj[0] = user_id;
-            const items = [callback(7122).PUSH_NOTIFICATION];
+            const items = [callback(7182).PUSH_NOTIFICATION];
             obj[1] = items;
-            callback(8110)(obj);
+            callback(8179)(obj);
             c4 = 3;
             const obj6 = { value: null, done: true };
             obj6[0] = undefined;
@@ -723,7 +721,7 @@ function _handleCallConnectNotification() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              lib(4492).transitionToChannel(lib.channel_id);
+              lib(4571).transitionToChannel(lib.channel_id);
               dependencyMap = 2;
               c4 = 1;
               let obj3 = { value: null, done: false };
@@ -739,7 +737,7 @@ function _handleCallConnectNotification() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            const tmp60 = callback(9111);
+            const tmp60 = callback(9182);
             const call = tmp60.call;
             const channel_id = lib.channel_id;
             if (typeof call === "unknown") {
@@ -747,24 +745,24 @@ function _handleCallConnectNotification() {
             } else {
               call(channel_id, false, false);
             }
-            obj = callback(695);
+            obj = callback(1242);
             const obj5 = { location: null, guild_id: null, ringer_user_id: null };
-            obj5[0] = callback(7122).PUSH_NOTIFICATION;
+            obj5[0] = callback(7182).PUSH_NOTIFICATION;
             obj5[1] = lib.guild_id;
             obj5[2] = lib.user_id;
-            obj2 = lib(4708);
+            obj2 = lib(4740);
             const merged = Object.assign(obj2.collectChannelAnalyticsMetadataFromId(lib.channel_id));
             obj.track(constants.RING_CALL_ACCEPTED, obj5);
-            obj3 = lib(1234);
+            obj3 = lib(1115);
             if (obj3.isAndroid()) {
               if (lib.is_fullscreen_call_ui) {
-                obj4 = callback(695);
+                obj4 = callback(1242);
                 let obj6 = { action_type: "join" };
-                obj6 = lib(4708);
+                obj6 = lib(4740);
                 const merged1 = Object.assign(obj6.collectChannelAnalyticsMetadataFromId(lib.channel_id));
                 obj4.track(constants.CALLKIT_CLICKED, obj6);
               }
-              callback(9464)(lib.channel_id);
+              callback(9536)(lib.channel_id);
             }
             c4 = 3;
             return { value: "HermesInternal", done: null };
@@ -838,7 +836,7 @@ function _handleFriendSuggestionCreateNotification() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              navigation = lib(4336).getRootNavigationRef();
+              navigation = lib(4418).getRootNavigationRef();
               if (null != navigation) {
                 const obj3 = { screen: "add-friends", params: null };
                 obj3[1] = { sourcePage: "Notifications" };
@@ -862,9 +860,9 @@ function _handleFriendSuggestionCreateNotification() {
           } else {
             obj = { userId: null, sourceAnalyticsLocations: null };
             obj[0] = user_id;
-            const items = [navigation(7122).PUSH_NOTIFICATION];
+            const items = [navigation(7182).PUSH_NOTIFICATION];
             obj[1] = items;
-            navigation(8110)(obj);
+            navigation(8179)(obj);
             c4 = 3;
             return { value: "HermesInternal", done: null };
           }
@@ -968,14 +966,14 @@ function _maybeAckNotificationCenter() {
               const obj8 = prop(11);
               const _HermesInternal = HermesInternal;
               const items = ["incoming_friend_requests_" + lib.user_id + "_" + closure_2];
-              const result = lib(16338).markNotificationCenterLocalItemsAcked(items);
-              const obj10 = lib(16338);
+              const result = lib(16414).markNotificationCenterLocalItemsAcked(items);
+              const obj10 = lib(16414);
             }
           } else if (arg0 === 1) {
             c4 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = lib(16338);
+            obj = lib(16414);
             const result1 = obj.markNotificationCenterRemoteItemAcked(prop);
           }
           c4 = 3;
@@ -998,79 +996,69 @@ function _maybeAckNotificationCenter() {
   }
   return applyArgumentsResult;
 }
-function receiveNotification_(notif_type) {
-  const _require = notif_type;
-  let obj = _require(12714);
+function receiveNotification_(type) {
+  const _require = type;
+  let obj = _require(12782);
   const result = obj.initializeRouteManagerIfNeeded();
-  if ("MESSAGE_CREATE" === notif_type.type) {
+  if ("MESSAGE_CREATE" === type.type) {
     const _HermesInternal2 = HermesInternal;
-    logger.log("Notification clicked of type " + notif_type.type + " with guild:" + notif_type.guild_id + " channel:" + notif_type.channel_id + " message:" + notif_type.message_id);
+    logger.log("Notification clicked of type " + type.type + " with guild:" + type.guild_id + " channel:" + type.channel_id + " message:" + type.message_id);
     obj = { guildId: null, channelId: null, messageId: null, isPreload: true };
-    ({ guild_id: obj10[0], channel_id: obj10[1], message_id: obj10[2] } = notif_type);
+    ({ guild_id: obj10[0], channel_id: obj10[1], message_id: obj10[2] } = type);
     const messages = fetchMessagesDefault.fetchMessages(obj);
-    let flag = true;
     const obj9 = fetchMessagesDefault;
   } else {
-    flag = false;
-    if ("GENERIC_PUSH_NOTIFICATION_SENT" === notif_type.type) {
-      flag = false;
-      if (null != notif_type.deeplink) {
-        flag = false;
-        if ("" !== notif_type.deeplink) {
-          const payload = parseQueryDefault(notif_type.deeplink).payload;
-          if (payload.type === tmp(688).LinkingTypes.MESSAGE) {
+    if ("GENERIC_PUSH_NOTIFICATION_SENT" === type.type) {
+      if (null != type.deeplink) {
+        if ("" !== type.deeplink) {
+          const payload = parseQueryDefault(type.deeplink).payload;
+          if (payload.type === tmp(1093).LinkingTypes.MESSAGE) {
             let tracking_type;
-            if (notif_type != null) {
-              tracking_type = notif_type.tracking_type;
+            if (type != null) {
+              tracking_type = type.tracking_type;
             }
             if (tracking_type == null) {
-              tracking_type = notif_type.type;
+              tracking_type = type.type;
             }
             if (tmp8) {
-              tmp(11559).receivedNotification(payload.messageId, payload.channelId, tracking_type);
-              const tmpResult = tmp(11559);
+              tmp(11627).receivedNotification(payload.messageId, payload.channelId, tracking_type);
+              const tmpResult = tmp(11627);
             }
-            let tmp38Result = tmp38(9870);
+            let tmp20Result = tmp20(9941);
             obj = { guildId: null, channelId: null, messageId: null, isPreload: true };
             ({ guildId: obj8[0], channelId: obj8[1], messageId: obj8[2] } = payload);
-            const messages1 = tmp38Result.fetchMessages(obj);
-            flag = true;
+            const messages1 = tmp20Result.fetchMessages(obj);
             tmp8 = null != tracking_type && null != payload.messageId && null != payload.channelId;
           } else {
-            if (payload.type === tmp(688).LinkingTypes.ICYMI) {
-              if (null != notif_type.channel_id) {
-                if (null != notif_type.message_id) {
-                  tmp38Result = tmp38(8281);
-                  const forNotification = tmp38Result.fetchForNotification(notif_type.channel_id, notif_type.message_id);
-                  flag = false;
+            if (payload.type === tmp(1093).LinkingTypes.ICYMI) {
+              if (null != type.channel_id) {
+                if (null != type.message_id) {
+                  tmp20Result = tmp20(8351);
+                  const forNotification = tmp20Result.fetchForNotification(type.channel_id, type.message_id);
                 }
               }
             }
-            flag = false;
-            if (payload.type === tmp(688).LinkingTypes.ICYMI) {
-              flag = false;
-              if (null != notif_type.user_id) {
-                flag = false;
-                if (null != notif_type.notification_center_id) {
+            if (payload.type === tmp(1093).LinkingTypes.ICYMI) {
+              if (null != type.user_id) {
+                if (null != type.notification_center_id) {
                   let status_emoji_id = null;
-                  if (null != notif_type.status_emoji_id) {
+                  if (null != type.status_emoji_id) {
                     status_emoji_id = null;
-                    if ("0" !== notif_type.status_emoji_id) {
-                      status_emoji_id = notif_type.status_emoji_id;
+                    if ("0" !== type.status_emoji_id) {
+                      status_emoji_id = type.status_emoji_id;
                     }
                   }
                   obj1 = { id: null, type: null, score: 1000, data: null };
-                  obj1[0] = notif_type.notification_center_id;
-                  obj1[1] = tmp(8278).ICYMIItemTypes.CUSTOM_STATUS;
+                  obj1[0] = type.notification_center_id;
+                  obj1[1] = tmp(8348).ICYMIItemTypes.CUSTOM_STATUS;
                   const obj2 = { user_id: null, text: null, emoji_id: null, emoji_name: null, emoji_animated: null };
-                  ({ user_id: obj3[0], status_text: obj3[1] } = notif_type);
+                  ({ user_id: obj3[0], status_text: obj3[1] } = type);
                   obj2[2] = status_emoji_id;
-                  obj2[3] = notif_type.status_emoji_name;
-                  obj2[4] = notif_type.status_emoji_animated;
+                  obj2[3] = type.status_emoji_name;
+                  obj2[4] = type.status_emoji_animated;
                   obj1[3] = obj2;
-                  const forStatusNotification = tmp38(8281).fetchForStatusNotification(obj1);
-                  flag = false;
-                  const tmp38Result1 = tmp38(8281);
+                  const forStatusNotification = tmp20(8351).fetchForStatusNotification(obj1);
+                  const tmp20Result1 = tmp20(8351);
                 }
               }
             }
@@ -1079,92 +1067,7 @@ function receiveNotification_(notif_type) {
       }
     }
     const _HermesInternal = HermesInternal;
-    logger.log("Notification clicked of type " + notif_type.type);
-  }
-  dispatcherDefault.dispatch({ type: "PUSH_NOTIFICATION_CLICK" });
-  const obj11 = dispatcherDefault;
-  const obj3 = { notif_type: "tracking_type" in notif_type ? notif_type.tracking_type : notif_type.type, notif_user_id: null, message_id: null, message_type: null, has_message: null, guild_id: null, channel_id: null, channel_type: null, rel_type: null, notification_id: null, has_image_thumbnail: null, join_id: null, notif_instance_id: null, notif_type_id: null, mention_type: null };
-  let user_id = null;
-  if ("user_id" in notif_type) {
-    user_id = notif_type.user_id;
-  }
-  obj3[1] = user_id;
-  let message_id = null;
-  if ("message_id" in notif_type) {
-    message_id = notif_type.message_id;
-  }
-  obj3[2] = message_id;
-  let message_type_ = null;
-  if ("message_type_" in notif_type) {
-    message_type_ = notif_type.message_type_;
-  }
-  obj3[3] = message_type_;
-  obj3[4] = "message" in notif_type && null != notif_type.message;
-  let guild_id = null;
-  if ("guild_id" in notif_type) {
-    guild_id = notif_type.guild_id;
-  }
-  obj3[5] = guild_id;
-  let channel_id = null;
-  if ("channel_id" in notif_type) {
-    channel_id = notif_type.channel_id;
-  }
-  obj3[6] = channel_id;
-  let channel_type = null;
-  if ("channel_type" in notif_type) {
-    channel_type = notif_type.channel_type;
-  }
-  obj3[7] = channel_type;
-  let NumberResult = null;
-  if ("rel_type" in notif_type) {
-    const _Number = Number;
-    NumberResult = Number(notif_type.rel_type);
-  }
-  obj3[8] = NumberResult;
-  let notification_id = null;
-  if ("notification_id" in notif_type) {
-    notification_id = notif_type.notification_id;
-  }
-  obj3[9] = notification_id;
-  obj3[10] = "image_url" in notif_type && null != notif_type.image_url;
-  let join_id = null;
-  if ("join_id" in notif_type) {
-    join_id = notif_type.join_id;
-  }
-  obj3[11] = join_id;
-  let notif_instance_id = null;
-  if ("notif_instance_id" in notif_type) {
-    notif_instance_id = notif_type.notif_instance_id;
-  }
-  obj3[12] = notif_instance_id;
-  let notif_type_id = null;
-  if ("notif_type_id" in notif_type) {
-    notif_type_id = notif_type.notif_type_id;
-  }
-  obj3[13] = notif_type_id;
-  let mention_type = null;
-  if ("mention_type" in notif_type) {
-    mention_type = notif_type.mention_type;
-  }
-  obj3[14] = mention_type;
-  expandEventPropertiesDefault.track(constants.NOTIFICATION_CLICKED, obj3);
-  (function maybeAckNotificationCenter(notif_type) {
-    const self = this;
-    const apply = closure_33.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  })(notif_type);
-  if (null != notif_type.deeplink) {
-    if ("" !== notif_type.deeplink) {
-      const obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
-      obj4[0] = tmp19(4461)(notif_type.deeplink).payload;
-      obj4[2] = flag;
-      tmp19(13860)(obj4);
-    }
+    logger.log("Notification clicked of type " + type.type);
   }
 }
 require("processCallbacks").addPostConnectionCallback;
@@ -1177,30 +1080,30 @@ export default function receiveNotification(getData) {
   if (null == getData.getData) {
     return false;
   } else {
-    data(7408).trackAppOpened("notification");
+    data(7475).trackAppOpened("notification");
     data = getData.getData();
-    const obj3 = data(7408);
+    const obj3 = data(7475);
     const tmp11 = importDefault;
     const _HermesInternal = HermesInternal;
     isTracingDefault.mark("\u2757", "Receive notification " + data.type);
     if (null != data.receiving_user_id) {
       if (null != id.getId()) {
         if (data.receiving_user_id !== obj.getId()) {
-          tmp7(7409);
-          tmp7(5238);
-          tmp7(13645);
+          tmp7(7476);
+          tmp7(5277);
+          tmp7(13629);
           let receiving_user_id = data.receiving_user_id;
-          receiving_user_id = tmp7(12349).switchAccount(receiving_user_id, false, arg1 ? tmp5.PUSH_NOTIFICATION_INITIAL : tmp5.PUSH_NOTIFICATION);
+          receiving_user_id = tmp7(12417).switchAccount(receiving_user_id, false, arg1 ? tmp5.PUSH_NOTIFICATION_INITIAL : tmp5.PUSH_NOTIFICATION);
           receiving_user_id.then(() => {
             const Emitter = closure_1_1(closure_1_3[40]).Emitter;
             Emitter.batched(() => closure_1_34(closure_0));
           });
-          const tmp7Result2 = tmp7(12349);
+          const tmp7Result2 = tmp7(12417);
         }
       }
       obj = id;
     }
-    let Emitter = tmp11(586).Emitter;
+    let Emitter = tmp11(504).Emitter;
     return Emitter.batched(() => closure_1_34(data));
   }
 };

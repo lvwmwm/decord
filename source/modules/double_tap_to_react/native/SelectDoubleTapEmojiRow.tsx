@@ -1,19 +1,19 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12382
+// Function ID: 12383
 // Name: num2
-// Dependencies: [19, 17, 4473, 7091, 1924, 21, 4481, 1234, 709, 586, 5084, 7070, 1431, 10214, 1492, 4138, 7899, 11053, 7695, 8687, 2]
+// Dependencies: [19, 17, 4552, 7151, 1374, 21, 4560, 1115, 576, 504, 5123, 7130, 1396, 10285, 1477, 4217, 7968, 11121, 7763, 8757, 2]
 
-// Module 12314 (num2)
-import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import EmojiDefault from "Emoji" /* 7070 */;
+// Module 12382 (num2)
+import ThemesDefault from "Themes" /* 576 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import EmojiDefault from "Emoji" /* 7130 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
-import set from "set" /* 1924 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
+import set from "set" /* 1374 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -52,7 +52,7 @@ let closure_13 = importAllResult.memo((emoji) => {
   emoji = emoji.emoji;
   ({ onPress: importDefault, selected } = emoji);
   const tmp = callback();
-  let obj = emoji(586);
+  let obj = emoji(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = {
@@ -101,7 +101,7 @@ let closure_13 = importAllResult.memo((emoji) => {
   obj1[4] = url;
   obj[1] = closure_9(EmojiDefault, obj1);
   obj[4] = closure_9(View, obj);
-  return closure_9(emoji(5084).PressableOpacity, obj);
+  return closure_9(emoji(5123).PressableOpacity, obj);
 });
 const obj8 = { height: 12, width: 12, color: ThemesDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/SelectDoubleTapEmojiRow.tsx");
@@ -125,7 +125,7 @@ export default importAllResult.memo((selectedEmoji) => {
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
     let obj = onPressEmoji(substr[15]);
-    obj = { emoji, channel: "Array", intention: "Array" };
+    obj = { emoji, channel: "Array", intention: -1 };
     obj[2] = constants.DEFAULT_REACT_EMOJI;
     return !obj.isEmojiFilteredOrLocked(obj);
   });

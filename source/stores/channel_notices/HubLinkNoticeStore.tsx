@@ -1,14 +1,14 @@
-// Module ID: 13683
-// Function ID: 13684
+// Module ID: 13758
+// Function ID: 13759
 // Name: checkGuildIsHub
-// Dependencies: [7154, 1908, 673, 586, 706, 2]
+// Dependencies: [7214, 1979, 1074, 504, 573, 2]
 
-// Module 13683 (checkGuildIsHub)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "set" /* 7154 */;
-import closure_1 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 13758 (checkGuildIsHub)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "set" /* 7214 */;
+import closure_1 from "createGuildRecordFromRust" /* 1979 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 function checkGuildIsHub(id) {
   const guild = store.getGuild(id);

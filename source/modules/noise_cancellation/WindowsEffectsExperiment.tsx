@@ -1,12 +1,12 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 9996
+// Function ID: 9997
 // Name: getWindowsAudioEffectsExperimentConfig
-// Dependencies: [1209, 1468, 586, 2]
+// Dependencies: [1236, 1433, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 9925 (getWindowsAudioEffectsExperimentConfig)
-import closure_2 from "initialize" /* 1209 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+// Module 9996 (getWindowsAudioEffectsExperimentConfig)
+import closure_2 from "initialize" /* 1236 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const require = arg1;
 let obj = { preferSystemEffects: false };
@@ -26,5 +26,5 @@ export const getWindowsAudioEffectsExperimentConfig = function getWindowsAudioEf
 export const useWindowsAudioEffectsExperimentConfig = function useWindowsAudioEffectsExperimentConfig(location) {
   location = location.location;
   const items = [closure_2];
-  return location(586).useStateFromStores(items, () => closure_1_3.getConfig({ location }));
+  return location(504).useStateFromStores(items, () => closure_1_3.getConfig({ location }));
 };

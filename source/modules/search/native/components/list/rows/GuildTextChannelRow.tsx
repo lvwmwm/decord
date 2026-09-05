@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
-// Dependencies: [19, 7810, 21, 11, 16579, 12272, 16582, 2]
+// Module ID: 16663
+// Function ID: 16664
+// Dependencies: [19, 7878, 21, 11, 16656, 12340, 16659, 2]
 
-// Module 16586
+// Module 16663
 import importAllResult from "noop" /* 19 */;
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_4 } from "MessageEmbedTypes" /* 7810 */;
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_4 } from "MessageEmbedTypes" /* 7878 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

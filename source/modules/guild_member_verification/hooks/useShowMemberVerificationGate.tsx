@@ -1,14 +1,14 @@
-// Module ID: 5018
-// Function ID: 5019
+// Module ID: 5057
+// Function ID: 5058
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1991, 1908, 1921, 5019, 586, 2]
+// Dependencies: [2021, 1979, 1371, 5058, 504, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 5018 (shouldShowMembershipVerificationGate)
-import isValidFormResponse from "isValidFormResponse" /* 5019 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
+// Module 5057 (shouldShowMembershipVerificationGate)
+import isValidFormResponse from "isValidFormResponse" /* 5058 */;
+import closure_2 from "trackCommunicationDisabled" /* 2021 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 function shouldShowMembershipVerificationGate(guildId, items) {
@@ -49,7 +49,7 @@ export const useShowMemberVerificationGate = function useShowMemberVerificationG
   const _require = guild_id;
   let items = [closure_3, closure_4, closure_2];
   const items1 = [guild_id];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       const items = [closure_1_3, closure_1_4, closure_1_2];

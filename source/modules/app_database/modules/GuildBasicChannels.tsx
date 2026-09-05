@@ -1,23 +1,23 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7648
+// Function ID: 7649
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 5238, 1390, 1215, 1386, 1984, 1908, 4120, 1387, 3, 1955, 7582, 503, 4129, 2]
+// Dependencies: [32, 5, 5277, 1961, 502, 1957, 2015, 1979, 4199, 1958, 3, 1986, 7649, 1086, 4208, 2]
 
-// Module 7581 (hasBasicChannelChanged)
+// Module 7648 (hasBasicChannelChanged)
 import timestampDefault from "timestamp" /* 3 */;
-import fromStringAll from "fromString" /* 503 */;
-import itemsDefault from "items" /* 1955 */;
+import fromStringAll from "fromString" /* 1086 */;
+import itemsDefault from "items" /* 1986 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "_handleConnectionOpen" /* 5238 */;
-import { createChannelRecordFromServer as closure_7 } from "createChannelRecord" /* 1390 */;
-import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "ensureGuildLoaded" /* 1386 */;
-import { ChannelLoader } from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "createGuildRoleRecordFromRust" /* 1984 */;
-import closure_12 from "createGuildRecordFromRust" /* 1908 */;
-import closure_13 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_14 from "hasChannel" /* 1387 */;
+import closure_6 from "_handleConnectionOpen" /* 5277 */;
+import { createChannelRecordFromServer as closure_7 } from "createChannelRecord" /* 1961 */;
+import closure_8 from "fetchFingerprint" /* 502 */;
+import closure_9 from "ensureGuildLoaded" /* 1957 */;
+import { ChannelLoader } from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "createGuildRoleRecordFromRust" /* 2015 */;
+import closure_12 from "createGuildRecordFromRust" /* 1979 */;
+import closure_13 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_14 from "hasChannel" /* 1958 */;
 import set from "set" /* 2 */;
 
 let set = arg1;

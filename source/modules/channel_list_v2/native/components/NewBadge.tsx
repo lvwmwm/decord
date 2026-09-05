@@ -1,20 +1,20 @@
-// Module ID: 12228
-// Function ID: 12229
+// Module ID: 12296
+// Function ID: 12297
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4481, 1234, 709, 1362, 7805, 4416, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 1115, 576, 4411, 7873, 4495, 4556, 1114, 2]
 // Exports: default
 
-// Module 12228 (NewBadge)
+// Module 12296 (NewBadge)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set from "set" /* 1234 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7805 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set from "set" /* 1115 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7873 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -28,13 +28,13 @@ let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
   obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
   if (tmpResult.isThemeLight(arg1)) {
     if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(709).colors.BACKGROUND_BRAND;
+      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.BACKGROUND_BRAND;
     }
     obj[6] = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj[1] = obj;
     return obj;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(709).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
 const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
@@ -50,7 +50,7 @@ export default function NewBadge() {
     str = "text-brand";
   }
   obj[2] = str;
-  const intl = tmp7(1233).intl;
+  const intl = tmp7(1114).intl;
   obj[3] = intl.string(getSystemLocale.t.y2b7CA);
   obj[1] = jsx(Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View variant="text-xxs/bold" style={tmp4.text} color={null}>{null}</View>;

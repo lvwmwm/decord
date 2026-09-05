@@ -1,13 +1,13 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15074
+// Function ID: 15075
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1921, 675, 15000, 15001, 15002, 586, 4139, 7486, 2]
+// Dependencies: [19, 1371, 1076, 15075, 15076, 15077, 504, 4218, 7553, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 14999 (useFilteredAndSortedProducts)
+// Module 15074 (useFilteredAndSortedProducts)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 675 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 1076 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useFilteredAndSortedProducts.tsx");

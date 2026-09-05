@@ -1,14 +1,14 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8606
+// Function ID: 8607
 // Name: FormTextColors
-// Dependencies: [19, 21, 4481, 5401, 709, 1296, 2]
+// Dependencies: [19, 21, 4560, 5441, 576, 1178, 2]
 
-// Module 8536 (FormTextColors)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import result2 from "result" /* 5401 */;
+// Module 8606 (FormTextColors)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import result2 from "result" /* 5441 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

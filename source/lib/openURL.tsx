@@ -1,10 +1,10 @@
-// Module ID: 4184
-// Function ID: 4185
+// Module ID: 4249
+// Function ID: 4250
 // Name: _openURL
-// Dependencies: [5, 4185, 8307, 2008, 2]
+// Dependencies: [5, 4250, 8377, 1896, 2]
 // Exports: default
 
-// Module 4184 (_openURL)
+// Module 4249 (_openURL)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;

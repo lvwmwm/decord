@@ -1,14 +1,14 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17688
+// Function ID: 17689
 // Name: useIsMFAEnabled
-// Dependencies: [8994, 1921, 673, 644, 2]
+// Dependencies: [9064, 1371, 1074, 563, 2]
 // Exports: useIsMFAEnabled
 
-// Module 17608 (useIsMFAEnabled)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import closure_2 from "handleFormInit" /* 8994 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { MFALevels } from "ME" /* 673 */;
+// Module 17688 (useIsMFAEnabled)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import closure_2 from "handleFormInit" /* 9064 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { MFALevels } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useIsMFAEnabled.tsx");

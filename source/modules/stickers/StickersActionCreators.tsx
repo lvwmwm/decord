@@ -1,19 +1,19 @@
-// Module ID: 10317
-// Function ID: 10318
+// Module ID: 10388
+// Function ID: 10389
 // Name: _fetchStickerPack
-// Dependencies: [5, 5238, 1995, 4863, 1921, 5462, 673, 682, 4763, 527, 706, 4860, 5130, 1369, 12, 4865, 1233, 2]
+// Dependencies: [5, 5277, 2025, 4902, 1371, 5502, 1074, 1084, 4802, 1272, 573, 4899, 5169, 1940, 12, 4904, 1114, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 10317 (_fetchStickerPack)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 10388 (_fetchStickerPack)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5238 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import closure_6 from "handleConnectionOpen" /* 4863 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "loadSavedGuildStickers" /* 5462 */;
-import { Endpoints } from "ME" /* 673 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
+import closure_4 from "_handleConnectionOpen" /* 5277 */;
+import closure_5 from "_getSystemLocale" /* 2025 */;
+import closure_6 from "handleConnectionOpen" /* 4902 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "loadSavedGuildStickers" /* 5502 */;
+import { Endpoints } from "ME" /* 1074 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 1084 */;
 
 const require = arg1;
 function _fetchStickerPack() {
@@ -112,17 +112,17 @@ function _fetchStickerPacks() {
               } else {
                 if (!closure_8.isFetchingStickerPacks) {
                   if (!closure_8.hasLoadedStickerPacks) {
-                    let obj3 = sticker_packs(706);
+                    let obj3 = sticker_packs(573);
                     obj3.wait(() => {
                       sticker_packs(tmp3[10]).dispatch({ type: "STICKER_PACKS_FETCH_START" });
                     });
-                    const HTTP = locale(527).HTTP;
+                    const HTTP = locale(1272).HTTP;
                     obj3 = { url: null, query: null, rejectWithError: null };
                     obj3[0] = constants.STICKER_PACKS;
                     const obj4 = { locale: null };
                     obj4[0] = locale;
                     obj3[1] = obj4;
-                    let obj6 = locale(527);
+                    let obj6 = locale(1272);
                     obj3[2] = obj6.rejectWithMigratedError();
                     c3 = 2;
                     c4 = 1;
@@ -138,7 +138,7 @@ function _fetchStickerPacks() {
               throw body;
             } else if (arg0 !== 2) {
               sticker_packs = body.body.sticker_packs;
-              obj = sticker_packs(706);
+              obj = sticker_packs(573);
               obj6 = { type: "STICKER_PACKS_FETCH_SUCCESS", packs: null };
               obj6[1] = sticker_packs;
               obj.dispatch(obj6);
@@ -223,14 +223,14 @@ function _fetchSticker() {
           } else {
             body = body.body;
             if (obj10.isGuildSticker(body)) {
-              obj3 = callback2(706);
+              obj3 = callback2(573);
               const obj4 = { type: "GUILD_STICKER_FETCH_SUCCESS", sticker: null };
               obj4[1] = body;
               obj3.dispatch(obj4);
             } else {
-              obj = body(4860);
+              obj = body(4899);
               if (obj.isStandardSticker(body)) {
-                obj1 = callback2(706);
+                obj1 = callback2(573);
                 const obj5 = { type: "PACK_STICKER_FETCH_SUCCESS", sticker: null };
                 obj5[1] = body;
                 obj1.dispatch(obj5);
@@ -241,7 +241,7 @@ function _fetchSticker() {
               }
             }
             c4 = 3;
-            obj10 = body(4860);
+            obj10 = body(4899);
           }
         } catch (tmp24) {
           c4 = tmp;
@@ -384,10 +384,10 @@ function _deleteGuildSticker() {
               obj[0] = arg1;
               return obj;
             } else {
-              const HTTP = lib(527).HTTP;
+              const HTTP = lib(1272).HTTP;
               obj1 = { url: null, rejectWithError: null };
               obj1[0] = closure_1_9.GUILD_STICKER(lib.guild_id, lib.id);
-              obj1[1] = lib(527).rejectWithMigratedError();
+              obj1[1] = lib(1272).rejectWithMigratedError();
               dependencyMap = 1;
               c1 = 1;
               const obj2 = { value: null, done: false };
@@ -497,11 +497,11 @@ function _updateGuildSticker() {
     c4 = 0;
     c3 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(527).HTTP;
+      const HTTP = callback(1272).HTTP;
       obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = closure_1_9.GUILD_STICKER(callback, closure_1);
       obj1[1] = dependencyMap;
-      obj1[2] = callback(527).rejectWithMigratedError();
+      obj1[2] = callback(1272).rejectWithMigratedError();
       yield HTTP.patch(obj1);
       return body.body;
     })();
@@ -600,7 +600,7 @@ export const clearStickerPreview = function clearStickerPreview(channelId, draft
 };
 export const favoriteSticker = function favoriteSticker(id) {
   const _require = id;
-  const FrecencyUserSettingsActionCreators = _require(1369).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1940).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
     let tmp = stickerIds;
@@ -639,7 +639,7 @@ export const favoriteSticker = function favoriteSticker(id) {
 };
 export const unfavoriteSticker = function unfavoriteSticker(id) {
   const _require = id;
-  const FrecencyUserSettingsActionCreators = _require(1369).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1940).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
     stickerIds.stickerIds = stickerIds.filter((arg0) => arg0 !== closure_0);

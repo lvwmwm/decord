@@ -1,10 +1,10 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 11840
+// Function ID: 11841
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 10853, 10855, 1233, 4680, 11773, 2]
+// Dependencies: [19, 21, 10922, 10924, 1114, 4712, 11841, 2]
 // Exports: default
 
-// Module 11772 (GuildDisableCommunicationModal)
+// Module 11840 (GuildDisableCommunicationModal)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

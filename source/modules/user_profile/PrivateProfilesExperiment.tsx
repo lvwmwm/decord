@@ -1,14 +1,14 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13075
+// Function ID: 13076
 // Name: apexExperiment
-// Dependencies: [1468, 13008, 13009, 2]
+// Dependencies: [1433, 13076, 13077, 2]
 // Exports: getIsInPrivateProfilesExperiment, useIsInPrivateProfilesExperiment
 
-// Module 13007 (apexExperiment)
+// Module 13075 (apexExperiment)
 import set from "set" /* 2 */;
-import apexExperiment2 from "apexExperiment" /* 13008 */;
-import apexExperiment3 from "apexExperiment" /* 13009 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import apexExperiment2 from "apexExperiment" /* 13076 */;
+import apexExperiment3 from "apexExperiment" /* 13077 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-private-profiles", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/user_profile/PrivateProfilesExperiment.tsx");

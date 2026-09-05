@@ -1,12 +1,12 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7695
+// Function ID: 7696
 // Name: trackingConfigWithDefaults
-// Dependencies: [1215, 7622, 2]
+// Dependencies: [502, 7689, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7628 (trackingConfigWithDefaults)
-import closure_0 from "fetchFingerprint" /* 1215 */;
-import { LinkType } from "LinkType" /* 7622 */;
+// Module 7695 (trackingConfigWithDefaults)
+import closure_0 from "fetchFingerprint" /* 502 */;
+import { LinkType } from "LinkType" /* 7689 */;
 
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
 

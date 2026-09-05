@@ -1,9 +1,9 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15822
+// Function ID: 15823
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15746 (metadata)
+// Module 15822 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/header_light.jpg.js");

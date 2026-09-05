@@ -1,15 +1,15 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12236
+// Function ID: 12237
 // Name: useUploadDisabled
-// Dependencies: [4862, 4120, 4861, 673, 586, 7161, 2]
+// Dependencies: [4901, 4199, 4900, 1074, 504, 7221, 2]
 // Exports: default
 
-// Module 12168 (useUploadDisabled)
+// Module 12236 (useUploadDisabled)
 import set from "set" /* 2 */;
-import handleChanged from "handleChanged" /* 4862 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_4 from "map" /* 4861 */;
-import ME from "ME" /* 673 */;
+import handleChanged from "handleChanged" /* 4901 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_4 from "map" /* 4900 */;
+import ME from "ME" /* 1074 */;
 
 const DraftType = handleChanged.DraftType;
 ({ MAX_UPLOAD_COUNT: c5, Permissions: closure_6 } = ME);
@@ -18,7 +18,7 @@ const result = set.fileFinishedImporting("modules/media_keyboard/native/useUploa
 export default function useUploadDisabled(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_4];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let tmp = closure_1_4.getUploads(lib.id, closure_1_2.ChannelMessage).length >= closure_1_5;
     if (!tmp) {
       let tmp4 = obj.id === lib(closure_1_1[5]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;

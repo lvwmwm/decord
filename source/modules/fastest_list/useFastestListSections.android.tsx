@@ -1,10 +1,10 @@
-// Module ID: 7003
-// Function ID: 7004
+// Module ID: 7063
+// Function ID: 7064
 // Name: useFastestListSections
-// Dependencies: [19, 5553, 7004, 7005, 2]
+// Dependencies: [19, 5598, 7064, 7065, 2]
 // Exports: default
 
-// Module 7003 (useFastestListSections)
+// Module 7063 (useFastestListSections)
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");

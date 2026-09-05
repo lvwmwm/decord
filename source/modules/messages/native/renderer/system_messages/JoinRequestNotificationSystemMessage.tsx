@@ -1,18 +1,18 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 8045
+// Function ID: 8046
 // Name: createJoinRequestNotificationSystemMessage
-// Dependencies: [5497, 4303, 1908, 1921, 673, 1233, 11, 7895, 2]
+// Dependencies: [5542, 4382, 1979, 1371, 1074, 1114, 11, 7964, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 7976 (createJoinRequestNotificationSystemMessage)
+// Module 8045 (createJoinRequestNotificationSystemMessage)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import closure_3 from "updateSubmittedGuildJoinRequestTotal" /* 5497 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4303 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { MessageTypes } from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import closure_3 from "updateSubmittedGuildJoinRequestTotal" /* 5542 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4382 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { MessageTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");

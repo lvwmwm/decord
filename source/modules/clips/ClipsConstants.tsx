@@ -1,12 +1,12 @@
-// Module ID: 4539
-// Function ID: 4540
+// Module ID: 5132
+// Function ID: 5133
 // Name: result
-// Dependencies: [684, 3, 2]
+// Dependencies: [1090, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds
 
-// Module 4539 (result)
+// Module 5132 (result)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 684 */;
+import setDefault from "set" /* 1090 */;
 
 let obj = {};
 const result = 30 * setDefault.Millis.SECOND;
@@ -29,8 +29,8 @@ const tmp5 = new timestampDefault("Clips");
 const result5 = require("set").fileFinishedImporting("modules/clips/ClipsConstants.tsx");
 
 export const ClipsLengthSettings = obj;
-export const ClipsViewerConnectivitySettings = { ALL: 0, [0]: "ALL", FRIENDS: 1, [1]: "FRIENDS" };
-export const ClipSaveTypes = { DECOUPLED: "decoupled", VIEWER: "viewer", STREAMER: "streamer", VOICE: "voice" };
+export const ClipSaveTypes = { DECOUPLED: "decoupled", STREAMER: "streamer", VOICE: "voice" };
+export const CLIP_RUNTIME = "v3";
 export const ClipsUserEducationType = { Error: 0, [0]: "Error", Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled" };
 export const DEFAULT_SAVE_CLIP_KEYBIND = "alt+c";
 export const DEFAULT_SAVE_SCREENSHOT_KEYBIND = "f12";

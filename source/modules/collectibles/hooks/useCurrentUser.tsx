@@ -1,13 +1,13 @@
-// Module ID: 8109
-// Function ID: 8110
+// Module ID: 8178
+// Function ID: 8179
 // Name: useCurrentUser
-// Dependencies: [1921, 586, 38, 2]
+// Dependencies: [1371, 504, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8109 (useCurrentUser)
+// Module 8178 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
-import initialize from "initialize" /* 586 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import initialize from "initialize" /* 504 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");

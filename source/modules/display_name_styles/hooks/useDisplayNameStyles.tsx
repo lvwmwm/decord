@@ -1,14 +1,14 @@
-// Module ID: 4755
-// Function ID: 4756
+// Module ID: 4794
+// Function ID: 4795
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1991, 1921, 4756, 586, 4758, 2]
+// Dependencies: [19, 2021, 1371, 4795, 504, 4797, 2]
 // Exports: default
 
-// Module 4755 (useDisplayNameStyles)
+// Module 4794 (useDisplayNameStyles)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "trackCommunicationDisabled" /* 2021 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
 
 const useContext = noop.useContext;
 const result = set.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");

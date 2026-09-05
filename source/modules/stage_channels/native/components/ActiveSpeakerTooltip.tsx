@@ -1,17 +1,17 @@
-// Module ID: 10003
-// Function ID: 10004
-// Dependencies: [32, 19, 17, 4497, 9974, 673, 21, 4481, 709, 586, 5392, 5084, 9983, 4477, 1233, 2]
+// Module ID: 10074
+// Function ID: 10075
+// Dependencies: [32, 19, 17, 4576, 10045, 1074, 21, 4560, 576, 504, 5432, 5123, 10054, 4556, 1114, 2]
 
-// Module 10003
-import ThemesDefault from "Themes" /* 709 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 9983 */;
+// Module 10074
+import ThemesDefault from "Themes" /* 576 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10054 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getParticipants" /* 4497 */;
+import closure_5 from "getParticipants" /* 4576 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 9974 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 10045 */;
 
 const require = arg1;
 ({ useActiveSpeakerPillScrollHandler: closure_6, useActiveSpeakerPillState: error } = require("useActiveSpeakerPillScrollHandler"));
@@ -29,14 +29,14 @@ let obj2 = { lineHeight: 18, color: ThemesDefault.colors.TEXT_SUBTLE };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
   const tmp = callback5();
-  let obj = channel(586);
+  let obj = channel(504);
   let items = [closure_5];
   const items1 = [channel.id];
   const first = callback(obj.useStateFromStores(items, () => {
     const speakingParticipants = closure_1_5.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), closure_1_5.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(5392).isVersionEqual), 1)[0];
+  }, items1, channel(5432).isVersionEqual), 1)[0];
   let tmp5 = null;
   if (0 !== first.length) {
     tmp5 = null;
@@ -59,15 +59,15 @@ const memoResult = importAllResult.memo((channel) => {
       obj3[0] = tmp.participantNameplateContainer;
       const obj4 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
       obj4[0] = tmp.participantNameplateSpeakingText;
-      const intl = tmp2(1233).intl;
+      const intl = tmp2(1114).intl;
       const obj5 = { count: null };
       obj5[0] = first.length;
-      obj4[3] = intl.format(tmp2(1233).t["+dia6l"], obj5);
-      obj3[1] = callback3(tmp2(4477).Text, obj4);
+      obj4[3] = intl.format(tmp2(1114).t["+dia6l"], obj5);
+      obj3[1] = callback3(tmp2(4556).Text, obj4);
       items2[1] = callback3(View, obj3);
       obj[1] = items2;
       obj[3] = callback4(View, obj);
-      tmp5 = callback3(tmp2(5084).PressableOpacity, obj);
+      tmp5 = callback3(tmp2(5123).PressableOpacity, obj);
       const tmp10 = UserSummaryItemDefault;
     }
   }

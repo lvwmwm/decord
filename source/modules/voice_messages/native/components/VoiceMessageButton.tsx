@@ -1,27 +1,27 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12255
+// Function ID: 12256
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 32, 19, 17, 4186, 7613, 1386, 4862, 11892, 11893, 673, 4474, 4738, 21, 4481, 709, 7904, 4335, 4735, 12188, 4218, 11459, 1492, 11805, 5088, 5089, 7390, 9238, 11601, 1228, 4194, 1233, 10018, 4336, 5100, 4193, 9688, 6595, 12190, 12171, 9934, 2]
+// Dependencies: [5, 32, 19, 17, 4251, 7680, 1957, 4901, 11960, 11961, 1074, 4553, 4770, 21, 4560, 576, 7973, 4417, 4767, 12256, 4296, 11527, 1477, 11873, 5127, 5128, 7456, 9309, 11669, 1109, 4259, 1114, 10089, 4418, 5139, 4258, 9759, 6655, 12258, 12239, 10005, 2]
 
-// Module 12187 (VoiceMessageRecordingCancelledToastIcon)
-import ThemesDefault from "Themes" /* 709 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 7904 */;
-import _startAudioRecording from "_startAudioRecording" /* 12188 */;
+// Module 12255 (VoiceMessageRecordingCancelledToastIcon)
+import ThemesDefault from "Themes" /* 576 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 7973 */;
+import _startAudioRecording from "_startAudioRecording" /* 12256 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "setContent" /* 4186 */;
-import closure_9 from "getState" /* 7613 */;
-import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "handleChanged" /* 4862 */;
-import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11892 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11893 */;
-import ME from "ME" /* 673 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4474 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4738 */;
+import closure_8 from "setContent" /* 4251 */;
+import closure_9 from "getState" /* 7680 */;
+import closure_10 from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "handleChanged" /* 4901 */;
+import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11960 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11961 */;
+import ME from "ME" /* 1074 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4553 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4770 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function VoiceMessageRecordingCancelledToastIcon() {
@@ -69,13 +69,13 @@ const memoResult = importAllResult.memo((disabled) => {
   c14 = undefined;
   let tmp = state((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   dependencyMap = tmp;
-  let obj = _require(4218);
+  let obj = _require(4296);
   sharedValue = obj.useSharedValue(0);
   _require = undefined;
   sharedValue1 = undefined;
   let ref = importAllResult.useRef(false);
   _require = ref;
-  obj1 = _require(4218);
+  obj1 = _require(4296);
   sharedValue1 = obj1.useSharedValue(false);
   let items = [ref, sharedValue1];
   const items1 = [
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((disabled) => {
   currentState = importAllResult.useRef(true);
   closure_8 = importAllResult.useRef(currentState.currentState);
   closure_9 = importAllResult.useRef(null);
-  const tmp9 = sharedValue1(11459)();
+  const tmp9 = sharedValue1(11527)();
   _require = undefined;
   _require = sharedValue((arg0) => {
     closure_0 = arg0;
@@ -326,7 +326,7 @@ const memoResult = importAllResult.memo((disabled) => {
     };
   }, items4);
   const items5 = [first, tmp5[2], channelId];
-  const isModalOpen = _require(4335).useIsModalOpen();
+  const isModalOpen = _require(4417).useIsModalOpen();
   const effect4 = importAllResult.useEffect(() => {
     function cancel() {
       const self = this;
@@ -598,7 +598,7 @@ const memoResult = importAllResult.memo((disabled) => {
       return;
     }
   }
-  obj = { voiceMessageAnimationState: tmp, runOnJS: _require(4218).runOnJS, triggerHapticGuarded };
+  obj = { voiceMessageAnimationState: tmp, runOnJS: _require(4296).runOnJS, triggerHapticGuarded };
   W.__closure = obj;
   W.__workletHash = 9127775028714;
   W.__initData = closure_30;
@@ -629,9 +629,9 @@ const memoResult = importAllResult.memo((disabled) => {
       const obj = callback(store[19]);
     }
   }, items9);
-  let obj3 = _require(4335);
-  const tmp21 = sharedValue1(9688);
-  let intl = _require(1233).intl;
+  let obj3 = _require(4417);
+  const tmp21 = sharedValue1(9759);
+  let intl = _require(1114).intl;
   const tmp22 = sharedValue(function*() {
     if (c2 === 2) {
       c2 = 3;
@@ -688,7 +688,7 @@ const memoResult = importAllResult.memo((disabled) => {
       }
     }
   });
-  const sum = 0.5 * tmp9 + (sharedValue1(1492)().width - tmp9);
+  const sum = 0.5 * tmp9 + (sharedValue1(1477)().width - tmp9);
   c14 = sum;
   const items10 = [disabled, tmp5[1], tmp, callback1, sum, callback2, callback3];
   ({ accessibilityActions, onAccessibilityAction } = tmp21(sharedValue(function*() {
@@ -746,7 +746,7 @@ const memoResult = importAllResult.memo((disabled) => {
         throw tmp12;
       }
     }
-  }), intl.string(_require(1233).t.lwy6aX)));
+  }), intl.string(_require(1114).t.lwy6aX)));
   const memo = importAllResult.useMemo(() => {
     const Gesture = callback(store[37]).Gesture;
     const PanResult = Gesture.Pan();
@@ -800,7 +800,7 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items10);
   obj = { gesture: memo, children: null };
-  obj1 = { ref: sharedValue1(12190)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
+  obj1 = { ref: sharedValue1(12258)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
   const tmp21Result = tmp21(sharedValue(function*() {
     if (c2 === 2) {
       c2 = 3;
@@ -856,15 +856,15 @@ const memoResult = importAllResult.memo((disabled) => {
         throw tmp12;
       }
     }
-  }), intl.string(_require(1233).t.lwy6aX));
-  obj1[1] = _require(9934).MicrophoneIcon;
-  const intl2 = _require(1233).intl;
-  obj1[3] = intl2.string(_require(1233).t.lwy6aX);
+  }), intl.string(_require(1114).t.lwy6aX));
+  obj1[1] = _require(10005).MicrophoneIcon;
+  const intl2 = _require(1114).intl;
+  obj1[3] = intl2.string(_require(1114).t.lwy6aX);
   obj1[4] = accessibilityActions;
   obj1[5] = onAccessibilityAction;
   obj1[6] = disabled;
-  obj[1] = jsx(sharedValue1(12171), { ref: sharedValue1(12190)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
-  return jsx(_require(6595).GestureDetector, { gesture: memo, children: null });
+  obj[1] = jsx(sharedValue1(12239), { ref: sharedValue1(12258)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
+  return jsx(_require(6655).GestureDetector, { gesture: memo, children: null });
 });
 let result = require("set").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");
 

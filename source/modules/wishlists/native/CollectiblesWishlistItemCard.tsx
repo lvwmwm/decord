@@ -1,13 +1,13 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11034
+// Function ID: 11035
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 7479, 10966, 21, 586, 8699, 8702, 8703, 2]
+// Dependencies: [19, 7546, 11035, 21, 504, 8769, 8772, 8773, 2]
 // Exports: default
 
-// Module 10965 (CollectiblesWishlistItemCard)
+// Module 11034 (CollectiblesWishlistItemCard)
 import closure_3 from "noop" /* 19 */;
-import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse" /* 7479 */;
-import closure_5 from "initialize" /* 10966 */;
+import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse" /* 7546 */;
+import closure_5 from "initialize" /* 11035 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

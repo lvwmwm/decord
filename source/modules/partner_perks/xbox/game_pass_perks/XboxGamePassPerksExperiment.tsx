@@ -1,12 +1,12 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7556
+// Function ID: 7557
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1433, 2]
 // Exports: getIsXboxGamePassPerksEnabled, useIsXboxGamePassPerksEnabled
 
-// Module 7489 (apexExperiment)
+// Module 7556 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-crepe", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/partner_perks/xbox/game_pass_perks/XboxGamePassPerksExperiment.tsx");

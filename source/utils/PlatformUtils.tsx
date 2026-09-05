@@ -1,9 +1,9 @@
-// Module ID: 1234
-// Function ID: 1235
+// Module ID: 1115
+// Function ID: 1116
 // Name: set
-// Dependencies: [2, 1235]
+// Dependencies: [2, 1116]
 
-// Module 1234 (set)
+// Module 1115 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/PlatformUtils.tsx");

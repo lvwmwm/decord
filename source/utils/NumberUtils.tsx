@@ -1,12 +1,12 @@
-// Module ID: 1896
-// Function ID: 1897
+// Module ID: 1880
+// Function ID: 1881
 // Name: shortenAndLocalizeNumber
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber
 
-// Module 1896 (shortenAndLocalizeNumber)
+// Module 1880 (shortenAndLocalizeNumber)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 let c2 = 1000000;
 let result = set.fileFinishedImporting("utils/NumberUtils.tsx");

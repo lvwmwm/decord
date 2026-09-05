@@ -1,11 +1,11 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11672
+// Function ID: 11673
 // Name: getFollowerStatsForChannel
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 11604 (getFollowerStatsForChannel)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 11672 (getFollowerStatsForChannel)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let closure_0 = { FAILED: "failed", SUCCEEDED: "succeeded" };
 let closure_1 = {};

@@ -1,12 +1,12 @@
-// Module ID: 13744
-// Function ID: 13745
+// Module ID: 13817
+// Function ID: 13818
 // Name: _initStats
-// Dependencies: [4577, 673, 4561, 2]
+// Dependencies: [4609, 1074, 4589, 2]
 
-// Module 13744 (_initStats)
-import sleep from "sleep" /* 4561 */;
-import closure_2 from "handleConnectionInfoChange" /* 4577 */;
-import ME from "ME" /* 673 */;
+// Module 13817 (_initStats)
+import sleep from "sleep" /* 4589 */;
+import closure_2 from "handleConnectionInfoChange" /* 4609 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ NetworkConnectionTypes: c3, NetworkConnectionSpeeds: c4 } = ME);

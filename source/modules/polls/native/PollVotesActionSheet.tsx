@@ -1,32 +1,32 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11716
+// Function ID: 11717
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4473, 5419, 1386, 4743, 1921, 21, 4481, 709, 586, 1431, 7070, 1233, 5084, 4477, 7693, 6595, 11649, 7102, 11655, 11188, 7695, 4680, 4325, 5560, 1296, 9732, 8110, 4218, 4482, 8804, 4416, 1362, 11656, 11657, 7122, 4448, 7090, 2]
+// Dependencies: [32, 5, 19, 17, 4552, 5459, 1957, 4781, 1371, 21, 4560, 576, 504, 1396, 7130, 1114, 5123, 4556, 7761, 6655, 11717, 7162, 11723, 11256, 7763, 4712, 4404, 5605, 1178, 9803, 8179, 4296, 4561, 8874, 4495, 4411, 11724, 11725, 7182, 4527, 7150, 2]
 // Exports: default
 
-// Module 11648 (PollEmoji)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import Text from "Text" /* 4477 */;
-import EmojiDefault from "Emoji" /* 7070 */;
+// Module 11716 (PollEmoji)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import Text from "Text" /* 4556 */;
+import EmojiDefault from "Emoji" /* 7130 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_10 from "getEmojiToGroupId" /* 5419 */;
-import closure_11 from "ensureGuildLoaded" /* 1386 */;
-import closure_12 from "reinjectEphemerals" /* 4743 */;
-import closure_13 from "mergeGuildAvatar" /* 1921 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_10 from "getEmojiToGroupId" /* 5459 */;
+import closure_11 from "ensureGuildLoaded" /* 1957 */;
+import closure_12 from "reinjectEphemerals" /* 4781 */;
+import closure_13 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PollEmoji(emoji) {
   emoji = emoji.emoji;
   const tmp = callback3();
-  let obj = emoji(586);
+  let obj = emoji(504);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != emoji.id) {
@@ -338,18 +338,18 @@ function NoResults() {
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11656);
+    let tmp2Result = tmp2(11724);
   } else {
-    tmp2Result = tmp2(11657);
+    tmp2Result = tmp2(11725);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];
   obj = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp9(1233).intl;
+  const intl = tmp9(1114).intl;
   obj[3] = intl.string(getSystemLocale.t.vhQK3o);
   items[1] = closure_14(Text.Text, obj);
   obj1 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: null };
-  const intl2 = tmp9(1233).intl;
+  const intl2 = tmp9(1114).intl;
   obj1[3] = intl2.string(getSystemLocale.t.bwytdh);
   items[2] = closure_14(Text.Text, obj1);
   obj[1] = items;
@@ -394,7 +394,7 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
   if (selected) {
     str = "interactive-text-active";
   }
-  const intl = answer(1233).intl;
+  const intl = answer(1114).intl;
   let obj = { numVotes: num, option: answer.poll_media.text };
   obj = { ref, onPress: callback, style: null, accessibilityRole: "tab", accessibilityState: null, accessibilityLabel: null, children: null };
   const items1 = [tmp.answerButton, ];
@@ -405,7 +405,7 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
   items1[1] = answerSelected;
   obj[2] = items1;
   obj[4] = { selected };
-  obj[5] = intl.formatToPlainString(answer(1233).t.wqBc7A, obj);
+  obj[5] = intl.formatToPlainString(answer(1114).t.wqBc7A, obj);
   let tmp8 = null;
   if (null != answer.poll_media.emoji) {
     obj = { style: null, emoji: null };
@@ -420,15 +420,15 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
     obj1[0] = tmp.answerText;
     obj1[2] = str;
     obj1[4] = answer.poll_media.text;
-    tmp11 = callback(tmp3(4477).Text, obj1);
+    tmp11 = callback(tmp3(4556).Text, obj1);
   }
   items2[1] = tmp11;
   const obj2 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };
   const items3 = [" ", "(", num.toLocaleString(), ")"];
   obj2[3] = items3;
-  items2[2] = closure_15(answer(4477).Text, obj2);
+  items2[2] = closure_15(answer(4556).Text, obj2);
   obj[6] = items2;
-  return closure_15(answer(5084).PressableHighlight, obj);
+  return closure_15(answer(5123).PressableHighlight, obj);
 });
 let closure_20 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 let result = require("set").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");

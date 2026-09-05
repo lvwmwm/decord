@@ -1,10 +1,10 @@
-// Module ID: 13827
-// Function ID: 13828
+// Module ID: 14068
+// Function ID: 14069
 // Name: modKey
-// Dependencies: [1234, 2]
+// Dependencies: [1115, 2]
 
-// Module 13827 (modKey)
-import set from "set" /* 1234 */;
+// Module 14068 (modKey)
+import set from "set" /* 1115 */;
 
 if (set.isMac()) {
   let str = "cmd";

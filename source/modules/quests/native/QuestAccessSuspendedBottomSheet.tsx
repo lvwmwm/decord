@@ -1,13 +1,13 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15119
+// Function ID: 15120
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 4448, 15042, 11841, 10159, 1233, 4936, 2]
+// Dependencies: [19, 21, 4527, 15118, 11909, 10230, 1114, 4975, 2]
 // Exports: default
 
-// Module 15043 (QuestAccessSuspendedBottomSheet)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Button from "Button" /* 4936 */;
-import PromoSheet from "PromoSheet" /* 10159 */;
+// Module 15119 (QuestAccessSuspendedBottomSheet)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Button from "Button" /* 4975 */;
+import PromoSheet from "PromoSheet" /* 10230 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -16,9 +16,9 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Quest
 
 export default function QuestAccessSuspendedBottomSheet() {
   const callback = React.useCallback(() => {
-    callback2(4448).hideActionSheet(callback(15042).ACTION_SHEET_KEY);
-    const obj = callback2(4448);
-    callback(11841).openAccountStanding();
+    callback2(4527).hideActionSheet(callback(15118).ACTION_SHEET_KEY);
+    const obj = callback2(4527);
+    callback(11909).openAccountStanding();
   }, []);
   let obj = { title: null, description: null, actions: null };
   const intl = getSystemLocale.intl;

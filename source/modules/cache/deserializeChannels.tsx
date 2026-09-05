@@ -1,11 +1,11 @@
-// Module ID: 1977
-// Function ID: 1978
+// Module ID: 2008
+// Function ID: 2009
 // Name: deserializeChannels
-// Dependencies: [32, 503, 2]
+// Dependencies: [32, 1086, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 1977 (deserializeChannels)
-import fromStringAll from "fromString" /* 503 */;
+// Module 2008 (deserializeChannels)
+import fromStringAll from "fromString" /* 1086 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 function deserializeChannels(arg0) {

@@ -1,25 +1,25 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14715
+// Function ID: 14716
 // Name: route
-// Dependencies: [17, 7906, 673, 21, 4481, 709, 14641, 14642, 14643, 1372, 5560, 11400, 1233, 14644, 14607, 14645, 2]
+// Dependencies: [17, 7975, 1074, 21, 4560, 576, 14716, 14717, 14718, 1943, 5605, 11468, 1114, 14719, 14682, 14720, 2]
 
-// Module 14640 (route)
+// Module 14715 (route)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import DismissibleContent from "DismissibleContent" /* 1372 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14607 */;
-import AgeGroupState from "AgeGroupState" /* 14641 */;
-import isTinyBroncoAnnouncementCountry from "isTinyBroncoAnnouncementCountry" /* 14642 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14643 */;
+import ThemesDefault from "Themes" /* 576 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import DismissibleContent from "DismissibleContent" /* 1943 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import useIsTinyBroncoSettingsEnabled from "useIsTinyBroncoSettingsEnabled" /* 14682 */;
+import AgeGroupState from "AgeGroupState" /* 14716 */;
+import isTinyBroncoAnnouncementCountry from "isTinyBroncoAnnouncementCountry" /* 14717 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14718 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import createToggle from "createToggle" /* 11400 */;
-import useAlwaysShow from "useAlwaysShow" /* 14644 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import createToggle from "createToggle" /* 11468 */;
+import useAlwaysShow from "useAlwaysShow" /* 14719 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -42,7 +42,7 @@ const obj1 = {
     let tmp8 = shouldShowTinyBroncoAccountStatus;
     if (shouldShowTinyBroncoAccountStatus) {
       obj = { dismissibleContent: null, containerStyle: null, noGradient: true };
-      obj[0] = tmp2(1372).DismissibleContent.TINY_BRONCO_SETTINGS;
+      obj[0] = tmp2(1943).DismissibleContent.TINY_BRONCO_SETTINGS;
       obj[1] = tmp.badge;
       tmp8 = callback(DismissiblePremiumNewBadgeDefault, obj);
       const tmp11 = DismissiblePremiumNewBadgeDefault;
@@ -60,7 +60,7 @@ obj1[4] = useIsTinyBroncoSettingsEnabled.useIsTinyBroncoSettingsEnabled;
 obj1[5] = {
   route: ME.UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(14645) /* SettingsAgeGroupHeader */.default;
+    return require(14720) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj1);

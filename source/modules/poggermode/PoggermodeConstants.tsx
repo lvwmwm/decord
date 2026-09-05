@@ -1,9 +1,9 @@
-// Module ID: 7612
-// Function ID: 7613
+// Module ID: 7679
+// Function ID: 7680
 // Name: ConfettiLocation
 // Dependencies: [2]
 
-// Module 7612 (ConfettiLocation)
+// Module 7679 (ConfettiLocation)
 import set from "set" /* 2 */;
 
 let obj = { LEVEL_1: 0, [0]: "LEVEL_1", LEVEL_2: 1, [1]: "LEVEL_2", LEVEL_3: 2, [2]: "LEVEL_3", LEVEL_4: 3, [3]: "LEVEL_4", LEVEL_5: 4, [4]: "LEVEL_5" };

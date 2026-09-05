@@ -1,20 +1,20 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 9773
+// Function ID: 9774
 // Name: canEveryoneRoleViewEvent
-// Dependencies: [1391, 1386, 1981, 1908, 4120, 7459, 1392, 673, 4125, 9703, 586, 2]
+// Dependencies: [1962, 1957, 2012, 1979, 4199, 7526, 1963, 1074, 4204, 9774, 504, 2]
 // Exports: default
 
-// Module 9702 (canEveryoneRoleViewEvent)
-import applyOverwritesAll from "applyOverwrites" /* 4125 */;
-import canViewInviteModal from "canViewInviteModal" /* 9703 */;
-import closure_3 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "comparator" /* 1981 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import { isGuildEventEnded } from "scheduledEventSort" /* 7459 */;
-import { GuildScheduledEventEntityTypes as closure_9 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 9773 (canEveryoneRoleViewEvent)
+import applyOverwritesAll from "applyOverwrites" /* 4204 */;
+import canViewInviteModal from "canViewInviteModal" /* 9774 */;
+import closure_3 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "comparator" /* 2012 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import { isGuildEventEnded } from "scheduledEventSort" /* 7526 */;
+import { GuildScheduledEventEntityTypes as closure_9 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1963 */;
+import { Permissions } from "ME" /* 1074 */;
 
 require = arg1;
 function canEveryoneRoleViewEvent(guildEvent, items1) {
@@ -79,7 +79,7 @@ export default function useCanInviteForGuildEvent(arg0) {
   const _require = arg0;
   let items = [closure_5, closure_4, closure_6, closure_3];
   const items1 = [arg0];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const items = [closure_1_5, closure_1_4, closure_1_6, closure_1_3];
     return closure_1_12(closure_0, items);
   }, items1);

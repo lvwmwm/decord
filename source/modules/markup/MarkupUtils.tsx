@@ -1,14 +1,14 @@
-// Module ID: 4471
-// Function ID: 4472
+// Module ID: 4550
+// Function ID: 4551
 // Name: get defaultRules
-// Dependencies: [4472, 4958, 12, 4959, 7918, 2]
+// Dependencies: [4551, 4997, 12, 4998, 7987, 2]
 
-// Module 4471 (get defaultRules)
-import MarkupText from "MarkupText" /* 4472 */;
-import MarkupTextDefault from "MarkupText" /* 4472 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 4958 */;
-import parseLinkDefault from "parseLink" /* 4959 */;
-import reactParserForAll from "reactParserFor" /* 7918 */;
+// Module 4550 (get defaultRules)
+import MarkupText from "MarkupText" /* 4551 */;
+import MarkupTextDefault from "MarkupText" /* 4551 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 4997 */;
+import parseLinkDefault from "parseLink" /* 4998 */;
+import reactParserForAll from "reactParserFor" /* 7987 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;

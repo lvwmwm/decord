@@ -1,10 +1,10 @@
 // Module ID: 13473
 // Function ID: 13474
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 13473 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "5f9cf938bde196c596c6b50aa389dd8b", name: "img_wumpus_nitro_classic", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 134, height: 56, scales: [2, 3], hash: "3d54a60f579be5dc72492b0eeac44a2b", name: "img_discord_nitro_logo_centered_light", type: "png" });

@@ -1,25 +1,25 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17646
+// Function ID: 17647
 // Name: InvitesDisabledRow
-// Dependencies: [32, 19, 17, 10009, 8310, 1386, 1908, 8994, 673, 21, 4481, 1233, 1994, 5559, 4477, 5566, 5552, 12303, 586, 12, 7948, 7946, 4448, 11761, 2008, 4194, 10863, 6979, 1296, 17567, 6980, 2]
+// Dependencies: [32, 19, 17, 10080, 8380, 1957, 1979, 9064, 1074, 21, 4560, 1114, 2024, 5604, 4556, 5611, 5597, 12371, 504, 12, 8017, 8015, 4527, 11829, 1896, 4259, 10932, 7039, 1178, 17647, 7040, 2]
 // Exports: default
 
-// Module 17566 (InvitesDisabledRow)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import combinedDefault from "combined" /* 1994 */;
-import registerAssetDefault from "registerAsset" /* 5552 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5559 */;
+// Module 17646 (InvitesDisabledRow)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import combinedDefault from "combined" /* 2024 */;
+import registerAssetDefault from "registerAsset" /* 5597 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5604 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "computeAlertSettings" /* 10009 */;
-import importDefaultResult from "createFromServer" /* 8310 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "handleFormInit" /* 8994 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "computeAlertSettings" /* 10080 */;
+import importDefaultResult from "createFromServer" /* 8380 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import closure_9 from "handleFormInit" /* 9064 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class InvitesDisabledRow {
@@ -214,10 +214,10 @@ const result = require("set").fileFinishedImporting("modules/guild_settings/nati
 
 export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(586);
+  let obj = guildId(504);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getGuild(guildId));
-  guildId(586);
+  guildId(504);
   [][0] = closure_9;
   let tmp6 = null;
   if (null != stateFromStores) {
@@ -226,7 +226,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
     obj[0] = stateFromStores;
     obj[1] = tmp5;
     obj[2] = guildId.contentContainerStyle;
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(6980).NavScrim, {})];
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(7040).NavScrim, {})];
     obj[0] = items1;
     tmp6 = callback2(closure_13, obj);
   }

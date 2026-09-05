@@ -1,16 +1,16 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10164
+// Function ID: 10165
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4710, 21, 4481, 709, 1233, 10094, 5041, 4477, 1296, 2]
+// Dependencies: [19, 17, 4742, 21, 4560, 576, 1114, 10165, 5080, 4556, 1178, 2]
 // Exports: default
 
-// Module 10093 (NotificationSettingsMockChannels)
+// Module 10164 (NotificationSettingsMockChannels)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4710 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4742 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -27,16 +27,16 @@ export default function NotificationSettingsMockChannels(unreadSetting) {
   const tmp = callback2();
   const _require = tmp;
   let obj = { badged: true, unread: true, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, name: null };
-  const intl = _require(1233).intl;
-  obj[3] = intl.string(_require(1233).t.EjLobP);
+  const intl = _require(1114).intl;
+  obj[3] = intl.string(_require(1114).t.EjLobP);
   let items = [obj, , ];
   obj = { badged: false, unread: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: null };
-  const intl2 = _require(1233).intl;
-  obj[3] = intl2.string(_require(1233).t.Wgpwpp);
+  const intl2 = _require(1114).intl;
+  obj[3] = intl2.string(_require(1114).t.Wgpwpp);
   items[1] = obj;
   obj = { badged: false, unread: false, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: null };
-  const intl3 = _require(1233).intl;
-  obj[3] = intl3.string(_require(1233).t.g9VImh);
+  const intl3 = _require(1114).intl;
+  obj[3] = intl3.string(_require(1114).t.g9VImh);
   items[2] = obj;
   if (unreadSetting.unreadSetting === UnreadSetting.ALL_MESSAGES) {
     items[1].resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;

@@ -1,11 +1,11 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16376
+// Function ID: 16377
 // Name: ManageAccountsScreens
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 
-// Module 16300 (ManageAccountsScreens)
+// Module 16376 (ManageAccountsScreens)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const AuthStates = ME.AuthStates;
 const LOGIN = AuthStates.LOGIN;

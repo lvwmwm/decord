@@ -1,21 +1,21 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 12021
+// Function ID: 12022
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1393, 21, 4481, 7215, 11935, 11945, 11954, 11957, 2]
+// Dependencies: [32, 19, 17, 1964, 21, 4560, 7275, 12003, 12013, 12022, 12025, 2]
 // Exports: default
 
-// Module 11953 (ForumPostList)
+// Module 12021 (ForumPostList)
 import noopAll from "noop" /* 19 */;
-import useAvailableTags from "useAvailableTags" /* 7215 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11935 */;
-import ForumPostAppliedTagPills from "ForumPostAppliedTagPills" /* 11945 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11954 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11957 */;
+import useAvailableTags from "useAvailableTags" /* 7275 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12003 */;
+import ForumPostAppliedTagPills from "ForumPostAppliedTagPills" /* 12013 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 12022 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 12025 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ChannelFlags } from "set" /* 1393 */;
+import { ChannelFlags } from "set" /* 1964 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

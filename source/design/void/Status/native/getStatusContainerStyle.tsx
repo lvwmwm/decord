@@ -1,12 +1,12 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14104
+// Function ID: 14105
 // Name: STATUS_PADDING
-// Dependencies: [1297, 2]
+// Dependencies: [1179, 2]
 // Exports: default
 
-// Module 14018 (STATUS_PADDING)
+// Module 14104 (STATUS_PADDING)
 import set from "set" /* 2 */;
-import STATUS_PADDING from "STATUS_PADDING" /* 1297 */;
+import STATUS_PADDING from "STATUS_PADDING" /* 1179 */;
 
 STATUS_PADDING = STATUS_PADDING.STATUS_PADDING;
 const StatusSizes = STATUS_PADDING.StatusSizes;

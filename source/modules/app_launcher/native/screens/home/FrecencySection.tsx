@@ -1,21 +1,21 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12052
+// Function ID: 12053
 // Name: Placeholder
-// Dependencies: [32, 19, 17, 1385, 11985, 673, 21, 4481, 709, 9218, 1394, 7108, 11986, 11147, 586, 9338, 4708, 4218, 4482, 1233, 9368, 11987, 11983, 1954, 8832, 11988, 4477, 8596, 11085, 5084, 11989, 7456, 5542, 11992, 2]
+// Dependencies: [32, 19, 17, 1956, 12053, 1074, 21, 4560, 576, 9289, 1369, 7168, 12054, 11215, 504, 9409, 4740, 4296, 4561, 1114, 9439, 12055, 12051, 1894, 8902, 12056, 4556, 8666, 11153, 5123, 12057, 7523, 5587, 12060, 2]
 // Exports: default
 
-// Module 11984 (Placeholder)
-import ThemesDefault from "Themes" /* 709 */;
-import usePlaceholderWidth from "usePlaceholderWidth" /* 11986 */;
+// Module 12052 (Placeholder)
+import ThemesDefault from "Themes" /* 576 */;
+import usePlaceholderWidth from "usePlaceholderWidth" /* 12054 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "participantFromServer" /* 1385 */;
-import closure_8 from "initialize" /* 11985 */;
-import { FrecencySectionSelection } from "initialize" /* 11985 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_7 from "participantFromServer" /* 1956 */;
+import closure_8 from "initialize" /* 12053 */;
+import { FrecencySectionSelection } from "initialize" /* 12053 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Placeholder() {
@@ -102,7 +102,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = app(11983).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(12051).getAppLauncherIconSource(app.section.application);
     let obj = { style: null, disabled: null, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
     obj[0] = disabled ? tmp.appContainerDisabled : tmp.appContainer;
     obj[1] = disabled;
@@ -129,15 +129,15 @@ function FrecentApp(app) {
       obj = { style: null, source: null };
       obj[0] = tmp.appIcon;
       obj[1] = appLauncherIconSource;
-      tmp3 = callback2(onAppSelected(5542), obj);
+      tmp3 = callback2(onAppSelected(5587), obj);
     }
     const items = [tmp3, ];
     obj = { submitting: null, style: null };
     obj[0] = submitting;
     obj[1] = tmp.submittingOverlay;
-    items[1] = callback2(app(11992).SubmittingOverlay, obj);
+    items[1] = callback2(app(12060).SubmittingOverlay, obj);
     obj[6] = items;
-    return closure_12(app(5084).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(5123).PressableOpacity, obj, app.applicationId);
   }
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);

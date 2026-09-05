@@ -1,23 +1,23 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17810
+// Function ID: 17811
 // Name: getBackoffJitter
-// Dependencies: [5, 5238, 5242, 5371, 13843, 11869, 8266, 8288, 673, 684, 12, 17731, 706, 13616, 17732, 7058, 2]
+// Dependencies: [5, 5277, 5281, 5410, 13833, 11937, 8336, 8358, 1074, 1090, 12, 17811, 573, 13692, 17812, 7118, 2]
 
-// Module 17730 (getBackoffJitter)
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 7058 */;
-import apexExperiment from "apexExperiment" /* 13616 */;
-import mapDefault from "map" /* 13843 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 17732 */;
+// Module 17810 (getBackoffJitter)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import initializeDefault from "initialize" /* 7118 */;
+import apexExperiment from "apexExperiment" /* 13692 */;
+import mapDefault from "map" /* 13833 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 17812 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5238 */;
-import closure_5 from "set" /* 5242 */;
-import closure_6 from "checkIdleAFK" /* 5371 */;
-import closure_7 from "updateImpressionCaches" /* 11869 */;
-import closure_8 from "map" /* 8266 */;
-import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8288 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import closure_4 from "_handleConnectionOpen" /* 5277 */;
+import closure_5 from "set" /* 5281 */;
+import closure_6 from "checkIdleAFK" /* 5410 */;
+import closure_7 from "updateImpressionCaches" /* 11937 */;
+import closure_8 from "map" /* 8336 */;
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8358 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 import apply from "apply" /* 12 */;
 import set from "set" /* 2 */;
 
@@ -158,10 +158,10 @@ function scheduleNextFetch() {
         obj1 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
         obj1[1] = tmp;
         obj1[2] = obj;
-        tmp2(706).dispatch(obj1);
+        tmp2(573).dispatch(obj1);
         const _setTimeout = setTimeout;
         const result = obj3.set(tmp, setTimeout(() => callback2({ feedId: closure_12, feature: callback(table[14]).ContentInventoryFeature.INBOX }), sum));
-        const tmp2Result = tmp2(706);
+        const tmp2Result = tmp2(573);
       }
     }
     tmp2 = importDefault;

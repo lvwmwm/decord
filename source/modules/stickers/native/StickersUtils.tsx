@@ -1,17 +1,17 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10389
+// Function ID: 10390
 // Name: useStickerCategories
-// Dependencies: [19, 17, 1908, 1921, 10319, 673, 1337, 10316, 5229, 10320, 10321, 1625, 2]
+// Dependencies: [19, 17, 1979, 1371, 10390, 1074, 1219, 10387, 5268, 10391, 10392, 1609, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10318 (useStickerCategories)
+// Module 10389 (useStickerCategories)
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10319 */;
-import { GuildNSFWContentLevel } from "ME" /* 673 */;
-import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10390 */;
+import { GuildNSFWContentLevel } from "ME" /* 1074 */;
+import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1219 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
@@ -42,15 +42,15 @@ export const useStickerCategories = function useStickerCategories(channel) {
       return tmp2;
     });
     return found1.map((type) => {
-      if (type.type !== callback(5229).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== tmp(5229).StickerCategoryTypes.RECENT) {
+      if (type.type !== callback(5268).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== tmp(5268).StickerCategoryTypes.RECENT) {
           return type;
         }
       }
-      if (type.type === callback(5229).StickerCategoryTypes.FAVORITE) {
-        let tmp4 = lib(10320);
+      if (type.type === callback(5268).StickerCategoryTypes.FAVORITE) {
+        let tmp4 = lib(10391);
       } else {
-        tmp4 = lib(10321);
+        tmp4 = lib(10392);
       }
       const obj = {};
       const merged = Object.assign(type);

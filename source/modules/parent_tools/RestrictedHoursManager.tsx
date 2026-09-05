@@ -1,18 +1,18 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17298
+// Function ID: 17299
 // Name: scheduleUpcomingWarning
-// Dependencies: [10010, 1921, 7470, 1233, 2368, 1943, 10012, 706, 7527, 17213, 7058, 2]
+// Dependencies: [10081, 1371, 7537, 1114, 2396, 1394, 10083, 573, 7594, 17293, 7118, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 17218 (scheduleUpcomingWarning)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import initializeDefault from "initialize" /* 7058 */;
-import apexExperiment from "apexExperiment" /* 7527 */;
-import closeRestrictedHoursModal from "closeRestrictedHoursModal" /* 17213 */;
-import closure_3 from "DesktopNotificationTypes" /* 10010 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7470 */;
+// Module 17298 (scheduleUpcomingWarning)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import messagesProxyDefault from "messagesProxy" /* 2396 */;
+import initializeDefault from "initialize" /* 7118 */;
+import apexExperiment from "apexExperiment" /* 7594 */;
+import closeRestrictedHoursModal from "closeRestrictedHoursModal" /* 17293 */;
+import closure_3 from "DesktopNotificationTypes" /* 10081 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7537 */;
 
 require = arg1;
 function scheduleUpcomingWarning() {
@@ -56,13 +56,13 @@ function scheduleUpcomingWarning() {
       const combined = "" + tmp7.rule.ruleId + ":" + tmp7.startAtMs;
       if (combined !== combined) {
         ({ startAtMs, rule } = tmp7);
-        const intl = tmp5(1233).intl;
+        const intl = tmp5(1114).intl;
         const _Date2 = Date;
         const date2 = new Date(startAtMs);
-        let tmp5Result = tmp5(10012);
-        const items = [tmp5(1943).JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
+        let tmp5Result = tmp5(10083);
+        const items = [tmp5(1394).JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
         const stringResult = intl.string(messagesProxyDefault["0JlDg0"]);
-        tmp5Result = tmp5(10012);
+        tmp5Result = tmp5(10083);
         const _HermesInternal2 = HermesInternal;
         const formatDaysResult = tmp5Result.formatDays(items);
         const trimmed = "" + tmp5Result.formatDays(items) + " " + tmp5Result.getScheduleRuleDateRange(rule).trim();

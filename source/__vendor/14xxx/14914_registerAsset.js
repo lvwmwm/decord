@@ -1,0 +1,10 @@
+// Module ID: 14914
+// Function ID: 14915
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 14914 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 343, height: 149, scales: [1, 2, 3], hash: "486816aa941617e34b6723be8f7303c9", name: "family_center_linking_banner_image", type: "png" });

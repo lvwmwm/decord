@@ -1,16 +1,16 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14097
+// Function ID: 14098
 // Name: OverflowSquircle
-// Dependencies: [19, 17, 21, 4481, 709, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 4556, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 14011 (OverflowSquircle)
+// Module 14097 (OverflowSquircle)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function OverflowSquircle(arg0) {

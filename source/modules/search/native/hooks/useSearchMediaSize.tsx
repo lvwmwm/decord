@@ -1,12 +1,12 @@
-// Module ID: 16568
-// Function ID: 16569
+// Module ID: 16645
+// Function ID: 16646
 // Name: useSearchMediaSize
-// Dependencies: [7810, 2]
+// Dependencies: [7878, 2]
 // Exports: default
 
-// Module 16568 (useSearchMediaSize)
+// Module 16645 (useSearchMediaSize)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7810 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7878 */;
 
 ({ SEARCH_LIST_HORIZONTAL_PADDING: c0, MEDIA_NUM_COLUMNS: closure_1, MEDIA_ITEM_GAP_WIDTH: obj1 } = MessageEmbedTypes);
 const result = set.fileFinishedImporting("modules/search/native/hooks/useSearchMediaSize.tsx");

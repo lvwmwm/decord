@@ -1,12 +1,12 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7288
+// Function ID: 7289
 // Name: ReportToModPermissions
-// Dependencies: [673, 503, 2]
+// Dependencies: [1074, 1086, 2]
 
-// Module 7227 (ReportToModPermissions)
+// Module 7288 (ReportToModPermissions)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import importAllResult from "fromString" /* 503 */;
+import ME from "ME" /* 1074 */;
+import importAllResult from "fromString" /* 1086 */;
 
 const Permissions = ME.Permissions;
 const combineResult = importAllResult.combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);

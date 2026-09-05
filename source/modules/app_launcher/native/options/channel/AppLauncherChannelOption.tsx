@@ -1,13 +1,13 @@
-// Module ID: 12122
-// Function ID: 12123
+// Module ID: 12190
+// Function ID: 12191
 // Name: AppLauncherChannelOption
-// Dependencies: [32, 19, 1386, 21, 586, 4681, 12108, 12123, 4448, 12123, 2008, 2]
+// Dependencies: [32, 19, 1957, 21, 504, 4713, 12176, 12191, 4527, 12191, 1896, 2]
 // Exports: default
 
-// Module 12122 (AppLauncherChannelOption)
+// Module 12190 (AppLauncherChannelOption)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

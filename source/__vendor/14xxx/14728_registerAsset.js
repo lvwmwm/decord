@@ -1,10 +1,10 @@
 // Module ID: 14728
 // Function ID: 14729
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 14728 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "cb806289f81913ccee7a9e209b850638", name: "blocked_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "9056dc45902a6209cc91f126f558416d", name: "en-GB.messages.9056dc45902a6209cc91f126f558416d.compiled.messages", type: "jsona" });

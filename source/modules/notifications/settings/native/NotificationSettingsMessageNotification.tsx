@@ -1,16 +1,16 @@
-// Module ID: 10085
-// Function ID: 10086
+// Module ID: 10156
+// Function ID: 10157
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4481, 709, 10086, 4477, 1233, 5084, 10087, 10084, 4448, 10089, 2008, 10078, 10091, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 10157, 4556, 1114, 5123, 10158, 10155, 4527, 10160, 1896, 10149, 10162, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10085 (NotificationSettingsMessageNotification)
+// Module 10156 (NotificationSettingsMessageNotification)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10087 */;
+import ThemesDefault from "Themes" /* 576 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10158 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 class NotificationSettingsMessageNotification {
@@ -89,7 +89,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
   let obj = {
     context: "guild",
     style: style.style,
-    setting: _require(10084).useGuildPresetSettings(style.guildId).notification,
+    setting: _require(10155).useGuildPresetSettings(style.guildId).notification,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { guildId: style.guildId };
@@ -103,7 +103,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
   let obj = {
     context: "channel",
     style: style.style,
-    setting: _require(10078).useChannelPresetSettings(style.channel).notification,
+    setting: _require(10149).useChannelPresetSettings(style.channel).notification,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { channel: style.channel };

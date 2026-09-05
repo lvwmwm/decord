@@ -1,12 +1,12 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 7270
+// Function ID: 7271
 // Name: isSystemMessage
-// Dependencies: [683, 2]
+// Dependencies: [1089, 2]
 // Exports: default
 
-// Module 7210 (isSystemMessage)
+// Module 7270 (isSystemMessage)
 import set from "set" /* 2 */;
-import set2 from "set" /* 683 */;
+import set2 from "set" /* 1089 */;
 
 const result = set.fileFinishedImporting("modules/messages/isSystemMessage.tsx");
 

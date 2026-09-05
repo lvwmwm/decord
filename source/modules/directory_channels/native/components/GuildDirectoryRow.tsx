@@ -1,21 +1,21 @@
-// Module ID: 12267
-// Function ID: 12268
-// Dependencies: [5, 32, 19, 17, 1386, 1908, 673, 21, 4481, 709, 586, 7280, 5475, 9759, 1305, 1431, 1233, 5562, 5539, 1426, 4477, 12245, 4936, 2]
+// Module ID: 12335
+// Function ID: 12336
+// Dependencies: [5, 32, 19, 17, 1957, 1979, 1074, 21, 4560, 576, 504, 7342, 5520, 9830, 1187, 1396, 1114, 5607, 5584, 1971, 4556, 12313, 4975, 2]
 
-// Module 12267
-import ThemesDefault from "Themes" /* 709 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12245 */;
+// Module 12335
+import ThemesDefault from "Themes" /* 576 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12313 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import { JoinGuildSources } from "ME" /* 673 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import { JoinGuildSources } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c5 = importAllResult;
@@ -146,7 +146,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   let tmp = callback2();
   ({ description, approximateMemberCount, approximatePresenceCount } = entry);
-  let obj = entry(586);
+  let obj = entry(504);
   const items = [closure_8];
   const tmp4 = null != obj.useStateFromStores(items, () => closure_1_8.getGuild(entry.guildId));
   importDefault = tmp4;
@@ -155,11 +155,11 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   obj1 = getAvatarURLDefault;
   obj = { id: entry.guildId, icon: entry.icon, size: 40 };
   const guildIconURL = obj1.getGuildIconURL(obj);
-  const intl = tmp2(1233).intl;
-  let stringResult = intl.string(tmp2(1233).t.VJlc0S);
+  const intl = tmp2(1114).intl;
+  let stringResult = intl.string(tmp2(1114).t.VJlc0S);
   if (tmp4) {
-    const intl2 = tmp2(1233).intl;
-    stringResult = intl2.string(tmp2(1233).t.cqWE2Z);
+    const intl2 = tmp2(1114).intl;
+    stringResult = intl2.string(tmp2(1114).t.cqWE2Z);
   }
   obj = { style: tmp.container, children: null };
   obj1 = { style: tmp.guildWrapper, children: null };
@@ -168,13 +168,13 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   const obj4 = { style: tmp.guildIcon, icon: guildIconURL, guild: null, selected: false };
   let result;
   if (null == guildIconURL) {
-    result = tmp2(1426).fromGuildDirectoryEntry(entry);
-    const tmp2Result = tmp2(1426);
+    result = tmp2(1971).fromGuildDirectoryEntry(entry);
+    const tmp2Result = tmp2(1971);
   }
   obj4[2] = result;
   const items1 = [closure_10(GuildIconSizesDefault, obj4), ];
   const obj5 = { style: tmp.guildInfoContainer, children: null };
-  const items2 = [closure_10(entry(4477).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name }), ];
+  const items2 = [closure_10(entry(4556).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name }), ];
   const obj6 = { style: tmp.memberInfo, children: null };
   let tmp10Result = null;
   if (null != approximatePresenceCount) {
@@ -183,11 +183,11 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     obj8[0] = tmp.dotOnline;
     const items3 = [tmp9(tmp11, obj8), ];
     const obj9 = { variant: "text-xs/medium", color: "text-default", children: null };
-    const intl3 = tmp2(1233).intl;
+    const intl3 = tmp2(1114).intl;
     const obj10 = { membersOnline: null };
     obj10[0] = approximatePresenceCount;
-    obj9[2] = intl3.format(tmp2(1233).t["LC+S+m"], obj10);
-    items3[1] = tmp9(tmp2(4477).Text, obj9);
+    obj9[2] = intl3.format(tmp2(1114).t["LC+S+m"], obj10);
+    items3[1] = tmp9(tmp2(4556).Text, obj9);
     obj7[0] = items3;
     tmp10Result = tmp10(closure_11, obj7);
   }
@@ -199,11 +199,11 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     obj12[0] = tmp.dotOffline;
     const items5 = [tmp9(tmp11, obj12), ];
     const obj13 = { variant: "text-xs/medium", color: "text-default", children: null };
-    const intl4 = tmp2(1233).intl;
+    const intl4 = tmp2(1114).intl;
     const obj14 = { count: null };
     obj14[0] = approximateMemberCount;
-    obj13[2] = intl4.format(tmp2(1233).t.zRl6XR, obj14);
-    items5[1] = tmp9(tmp2(4477).Text, obj13);
+    obj13[2] = intl4.format(tmp2(1114).t.zRl6XR, obj14);
+    items5[1] = tmp9(tmp2(4556).Text, obj13);
     obj11[0] = items5;
     tmp10Result = tmp10(closure_11, obj11);
   }
@@ -226,7 +226,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj16 = { lineClamp: 3, style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj16[1] = tmp.guildDescription;
     obj16[4] = description;
-    tmp9Result = tmp9(tmp2(4477).Text, obj16);
+    tmp9Result = tmp9(tmp2(4556).Text, obj16);
   }
   items7[1] = tmp9Result;
   items7[2] = closure_10(View, { style: tmp.flex });
@@ -251,10 +251,10 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   obj18[2] = str2;
   obj18[3] = stringResult;
-  items7[3] = closure_10(entry(4936).Button, obj18);
+  items7[3] = closure_10(entry(4975).Button, obj18);
   obj1[1] = items7;
   obj[1] = closure_12(View, obj1);
-  return closure_10(entry(5562).Card, obj);
+  return closure_10(entry(5607).Card, obj);
 });
 let result = require("set").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
 

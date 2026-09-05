@@ -1,12 +1,12 @@
-// Module ID: 11287
-// Function ID: 11288
+// Module ID: 11355
+// Function ID: 11356
 // Name: useSafeAreaBottomKeyboardInfoController
-// Dependencies: [19, 1623, 1234, 1639, 1640, 1495, 1641, 4218, 1889, 2]
+// Dependencies: [19, 1608, 1115, 1623, 1624, 1480, 1625, 4296, 1873, 2]
 // Exports: default
 
-// Module 11287 (useSafeAreaBottomKeyboardInfoController)
+// Module 11355 (useSafeAreaBottomKeyboardInfoController)
 import closure_3 from "noop" /* 19 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
 
 const require = arg1;
 isMetaQuest = isMetaQuest.isMetaQuest();

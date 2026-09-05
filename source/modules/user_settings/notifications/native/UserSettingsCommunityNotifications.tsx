@@ -1,15 +1,15 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15518
+// Function ID: 15519
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10009, 21, 4481, 586, 11, 8523, 4934, 5642, 7141, 1233, 1369, 2]
+// Dependencies: [19, 10080, 21, 4560, 504, 11, 8593, 4973, 5687, 7201, 1114, 1940, 2]
 // Exports: default
 
-// Module 15442 (UserSettingsCommunityNotifications)
+// Module 15518 (UserSettingsCommunityNotifications)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
-import closure_3 from "computeAlertSettings" /* 10009 */;
+import closure_3 from "computeAlertSettings" /* 10080 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -18,7 +18,7 @@ let closure_6 = createCacheKey.createStyles({ container: { paddingHorizontal: 16
 let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsCommunityNotifications.tsx");
 
 export default function UserSettingsCommunityNotifications() {
-  let obj = stateFromStores(586);
+  let obj = stateFromStores(504);
   let items = [closure_3];
   stateFromStores = obj.useStateFromStores(items, () => guildAlertSettings.getGuildAlertSettings());
   const tmp = callback2();
@@ -54,8 +54,8 @@ export default function UserSettingsCommunityNotifications() {
       obj[2] = items;
       return closure_1_5(stateFromStores(closure_1_2[8]).TableRowGroup, obj, arg0);
     });
-    obj[0] = callback(tmp2(4934).Stack, obj);
-    tmp5 = callback(tmp2(8523).Form, obj);
+    obj[0] = callback(tmp2(4973).Stack, obj);
+    tmp5 = callback(tmp2(8593).Form, obj);
   }
   return tmp5;
 };

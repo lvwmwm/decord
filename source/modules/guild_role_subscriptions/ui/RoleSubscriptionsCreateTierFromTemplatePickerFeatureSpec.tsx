@@ -1,13 +1,13 @@
-// Module ID: 13902
-// Function ID: 13903
-// Dependencies: [4394, 4120, 673, 1233, 586, 13903, 2]
+// Module ID: 13892
+// Function ID: 13893
+// Dependencies: [4476, 4199, 1074, 1114, 504, 13893, 2]
 
-// Module 13902
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "getHash" /* 4394 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import ME from "ME" /* 673 */;
+// Module 13892
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_2 from "getHash" /* 4476 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ GuildFeatures: c4, Permissions: c5 } = ME);

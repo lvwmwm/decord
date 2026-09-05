@@ -1,12 +1,12 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10393
+// Function ID: 10394
 // Name: searchAllStickers
-// Dependencies: [5402, 7275, 2]
+// Dependencies: [5442, 7337, 2]
 // Exports: searchAllStickers, searchSendableStickers, searchUnsendableStickers
 
-// Module 10322 (searchAllStickers)
+// Module 10393 (searchAllStickers)
 import set from "set" /* 2 */;
-import NOOPDefault from "NOOP" /* 5402 */;
+import NOOPDefault from "NOOP" /* 5442 */;
 
 const result = set.fileFinishedImporting("modules/stickers/StickersSearchUtils.tsx");
 

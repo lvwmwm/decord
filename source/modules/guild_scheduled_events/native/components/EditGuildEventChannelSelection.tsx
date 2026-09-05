@@ -1,20 +1,20 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9728
+// Function ID: 9729
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 4120, 4130, 1921, 7459, 673, 21, 4481, 709, 6561, 9655, 9641, 4681, 586, 4989, 9643, 9644, 1233, 4477, 5084, 1890, 9658, 9627, 4448, 9355, 2008, 1296, 9640, 2]
+// Dependencies: [19, 17, 4199, 4209, 1371, 7526, 1074, 21, 4560, 576, 6621, 9726, 9712, 4713, 504, 5028, 9714, 9715, 1114, 4556, 5123, 1874, 9729, 9698, 4527, 9426, 1896, 1178, 9711, 2]
 // Exports: default
 
-// Module 9657 (EditGuildEventChannelSelection)
+// Module 9728 (EditGuildEventChannelSelection)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "scheduledEventSort" /* 7459 */;
-import ME from "ME" /* 673 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_6 from "markAllUserIdListsStale" /* 4209 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "scheduledEventSort" /* 7526 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -40,36 +40,36 @@ export default function EditGuildEventChannelSelection(guild) {
   closure_8 = undefined;
   let constants;
   const tmp = callback2();
-  let obj = guild(6561);
+  let obj = guild(6621);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   closure_5 = tmp5;
-  obj1 = guild(9655);
+  obj1 = guild(9726);
   closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(9641);
+  let obj2 = guild(9712);
   closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp7 = channel(4681)(channel);
-  let obj3 = guild(586);
+  const tmp7 = channel(4713)(channel);
+  let obj3 = guild(504);
   const items = [closure_5];
   closure_8 = obj3.useStateFromStores(items, () => closure_5.can(closure_1_10.MANAGE_CHANNELS, guild));
-  let obj4 = guild(586);
+  let obj4 = guild(504);
   const items1 = [closure_8];
   const items2 = [guildEventId];
   constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    let tmp2Result = tmp2(4989);
+    let tmp2Result = tmp2(5028);
     let channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(9643);
+    channelIcon = tmp6(9714);
   }
   if (null != channel) {
-    tmp2Result = tmp2(4989);
+    tmp2Result = tmp2(5028);
     let LocationIcon = tmp2Result.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(9644).LocationIcon;
+    LocationIcon = tmp2(9715).LocationIcon;
   }
-  let intl = tmp2(1233).intl;
+  let intl = tmp2(1114).intl;
   let string = intl.string;
-  let t = tmp2(1233).t;
+  let t = tmp2(1114).t;
   if (channelType === constants.GUILD_STAGE_VOICE) {
     let stringResult = string(t.S7GjDz);
   } else {
@@ -78,10 +78,10 @@ export default function EditGuildEventChannelSelection(guild) {
   obj = { style: items3, children: null };
   items3 = [tmp.container, guild.style];
   obj = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
-  const items4 = [callback(guild(4477).Text, obj), ];
+  const items4 = [callback(guild(4556).Heading, obj), ];
   obj1 = { accessibilityLabel: stringResult, accessibilityHint: null, accessibilityValue: null, accessibilityRole: "button", style: null, onPress: null, children: null };
-  const intl2 = tmp2(1233).intl;
-  obj1[1] = intl2.string(guild(1233).t.AaXbMD);
+  const intl2 = tmp2(1114).intl;
+  obj1[1] = intl2.string(guild(1114).t.AaXbMD);
   obj1[2] = { text: tmp7 };
   const items5 = [, , ];
   ({ padding: arr6[0], radius: arr6[1] } = inputStyles);
@@ -147,14 +147,14 @@ export default function EditGuildEventChannelSelection(guild) {
     obj3 = { source: null, style: null };
     obj3[0] = channelIcon;
     obj3[1] = tmp.channelIcon;
-    tmp12Result = tmp12(tmp2(1296).Icon, obj3);
+    tmp12Result = tmp12(tmp2(1178).Icon, obj3);
   }
   const items6 = [tmp12Result, , ];
   obj4 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
-  items6[1] = callback(guild(4477).Text, obj4);
-  items6[2] = callback(guild(1296).Icon, { source: channel(9640) });
+  items6[1] = callback(guild(4556).Text, obj4);
+  items6[2] = callback(guild(1178).Icon, { source: channel(9711) });
   obj1[6] = items6;
-  items4[1] = closure_12(guild(5084).PressableOpacity, obj1);
+  items4[1] = closure_12(guild(5123).PressableOpacity, obj1);
   obj[1] = items4;
   return closure_12(View, obj);
 };

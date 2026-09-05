@@ -1,9 +1,9 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 6228
+// Function ID: 6229
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6173 (metadata)
+// Module 6228 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LongMessageSpotIllustration-2x.png.js");

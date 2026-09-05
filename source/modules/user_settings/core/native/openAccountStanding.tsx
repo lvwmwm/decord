@@ -1,13 +1,13 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11909
+// Function ID: 11910
 // Name: openAccountStanding
-// Dependencies: [673, 7320, 2]
+// Dependencies: [1074, 7382, 2]
 // Exports: openAccountStanding
 
-// Module 11841 (openAccountStanding)
+// Module 11909 (openAccountStanding)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import openUserSettings from "openUserSettings" /* 7320 */;
+import ME from "ME" /* 1074 */;
+import openUserSettings from "openUserSettings" /* 7382 */;
 
 const UserSettingsSections = ME.UserSettingsSections;
 const result = set.fileFinishedImporting("modules/user_settings/core/native/openAccountStanding.tsx");

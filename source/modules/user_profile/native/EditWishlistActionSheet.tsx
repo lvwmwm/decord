@@ -1,25 +1,25 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13089
+// Function ID: 13090
 // Name: exitingAnimation
-// Dependencies: [32, 19, 17, 4473, 8707, 8708, 1921, 7554, 8114, 7091, 21, 4481, 709, 4218, 4482, 586, 1627, 7102, 7122, 13018, 13019, 13000, 8713, 8122, 11083, 1233, 6567, 5642, 7141, 7013, 10964, 8028, 4439, 2]
+// Dependencies: [32, 19, 17, 4552, 8777, 8778, 1371, 7621, 8183, 7151, 21, 4560, 576, 4296, 4561, 504, 1611, 7162, 7182, 13086, 13087, 13068, 8783, 8191, 11151, 1114, 6627, 5687, 7201, 7073, 11033, 8097, 4518, 2]
 // Exports: default
 
-// Module 13021 (exitingAnimation)
-import ThemesDefault from "Themes" /* 709 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4482 */;
+// Module 13089 (exitingAnimation)
+import ThemesDefault from "Themes" /* 576 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4561 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_8 from "get" /* 8707 */;
-import { getWishlistProductLines } from "fromServer" /* 8708 */;
-import closure_10 from "mergeGuildAvatar" /* 1921 */;
-import closure_11 from "createUserWidgetFromServer" /* 7554 */;
-import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8114 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7091 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_8 from "get" /* 8777 */;
+import { getWishlistProductLines } from "fromServer" /* 8778 */;
+import closure_10 from "mergeGuildAvatar" /* 1371 */;
+import closure_11 from "createUserWidgetFromServer" /* 7621 */;
+import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8183 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 7151 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import { LinearTransition } from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import { LinearTransition } from "module_4296" /* 4296 */;
 import closure_17 from "module_300" /* 300 */;
 import dampingResult from "module_100" /* 100 */;
 
@@ -74,30 +74,30 @@ export default function EditWishlistActionSheet(wishlistId) {
   closure_10 = undefined;
   let tmp = callback3();
   dependencyMap = tmp;
-  let obj = wishlistId(586);
+  let obj = wishlistId(504);
   let items = [stateFromStores2];
   callback = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(7102)(analyticsLocations, tmp4(7122).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(7162)(analyticsLocations, tmp4(7182).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(7102);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(13018)(obj));
+  let tmp5 = analyticsContext(7162);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(13086)(obj));
   if (null != rowWidth) {
     obj = { width: null };
     obj[0] = rowWidth;
     let tmp7 = obj;
   }
-  let tmp2Result = tmp2(586);
+  let tmp2Result = tmp2(504);
   const items1 = [first];
   stateFromStores = tmp2Result.useStateFromStores(items1, () => first.getWishlist(wishlistId));
-  tmp2Result = tmp2(586);
+  tmp2Result = tmp2(504);
   const items2 = [first];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => first.isFetching(wishlistId));
-  let tmp6 = analyticsContext(13018)(obj);
+  let tmp6 = analyticsContext(13086)(obj);
   const items3 = [closure_10, closure_11];
-  stateFromStores2 = wishlistId(586).useStateFromStores(items3, () => {
+  stateFromStores2 = wishlistId(504).useStateFromStores(items3, () => {
     currentUser = currentUser.getCurrentUser();
     let wishlistSettings = null;
     if (null != currentUser) {
@@ -158,22 +158,22 @@ export default function EditWishlistActionSheet(wishlistId) {
     const result = analyticsContext(itemWrapper[22]).removeSkuFromWishlist(wishlistId, closure_1_1, analyticsLocations);
   }, items7);
   obj1 = { scrollable: true, startExpanded: true, title: null, children: null };
-  const tmp2Result1 = wishlistId(586);
-  let intl = tmp2(1233).intl;
-  obj1[2] = intl.string(wishlistId(1233).t["OEgx/4"]);
-  let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1627)().bottom }, children: null };
+  const tmp2Result1 = wishlistId(504);
+  let intl = tmp2(1114).intl;
+  obj1[2] = intl.string(wishlistId(1114).t["OEgx/4"]);
+  let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1611)().bottom }, children: null };
   let obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.toggleRow, children: null };
   const obj5 = { hasIcons: false, children: null };
   obj6 = { label: null, subLabel: null, value: null, onValueChange: null };
-  let intl2 = tmp2(1233).intl;
-  obj6[0] = intl2.string(wishlistId(1233).t.b2nFyA);
-  const intl3 = tmp2(1233).intl;
-  obj6[1] = intl3.string(wishlistId(1233).t.dw58pE);
+  let intl2 = tmp2(1114).intl;
+  obj6[0] = intl2.string(wishlistId(1114).t.b2nFyA);
+  const intl3 = tmp2(1114).intl;
+  obj6[1] = intl3.string(wishlistId(1114).t.dw58pE);
   obj6[2] = first;
   obj6[3] = callback;
-  obj5[1] = callback2(wishlistId(7141).TableSwitchRow, obj6);
-  obj4[1] = callback2(wishlistId(5642).TableRowGroup, obj5);
+  obj5[1] = callback2(wishlistId(7201).TableSwitchRow, obj6);
+  obj4[1] = callback2(wishlistId(5687).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -185,7 +185,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp16Result;
     obj3[1] = items8;
     obj2[1] = closure_15(tmp19, obj3);
-    obj1[3] = tmp16(tmp2(6567).BottomSheetScrollView, obj2);
+    obj1[3] = tmp16(tmp2(6627).BottomSheetScrollView, obj2);
     return tmp16(tmp4Result, obj1);
   }
   tmp16Result = null;

@@ -1,16 +1,16 @@
-// Module ID: 9147
-// Function ID: 9148
+// Module ID: 9218
+// Function ID: 9219
 // Name: CloseButton
-// Dependencies: [19, 9148, 673, 21, 7315, 6932, 9146, 1233, 9149, 9156, 9157, 9161, 9369, 9374, 9375, 9155, 9198, 6940, 2]
+// Dependencies: [19, 9219, 1074, 21, 7377, 6992, 9217, 1114, 9220, 9227, 9228, 9232, 9440, 9445, 9446, 9226, 9269, 7000, 2]
 // Exports: default
 
-// Module 9147 (CloseButton)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 6932 */;
-import HeaderActionButton from "HeaderActionButton" /* 7315 */;
+// Module 9218 (CloseButton)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import registerAssetDefault from "registerAsset" /* 6992 */;
+import HeaderActionButton from "HeaderActionButton" /* 7377 */;
 import closure_3 from "noop" /* 19 */;
-import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9148 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9219 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -36,12 +36,12 @@ const result = require("set").fileFinishedImporting("modules/user_settings/conne
 
 export default function XboxLinkModal(locationStack) {
   let twoWayLinkStyles;
-  let obj = twoWayLinkStyles(9155);
+  let obj = twoWayLinkStyles(9226);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = React.useMemo(() => {
     function onClose() {
-      return callback(9146).hideModal();
+      return callback(9217).hideModal();
     }
     function blank() {
       return null;
@@ -52,7 +52,7 @@ export default function XboxLinkModal(locationStack) {
       headerTitle: blank,
       headerStyle: onClose.navHeader,
       render() {
-        return callback2(callback(9149), {});
+        return callback2(callback(9220), {});
       }
     };
     obj = {
@@ -60,10 +60,10 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_1_7,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(onClose(9156).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+        return callback2(onClose(9227).TwoWayLinkStepHeader, { idx: 1, total: 2 });
       },
       render() {
-        return callback2(callback(9157), {});
+        return callback2(callback(9228), {});
       }
     };
     obj = {
@@ -71,11 +71,11 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_1_7,
       headerStyle: onClose.navHeader,
       headerTitle() {
-        return callback2(onClose(9156).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+        return callback2(onClose(9227).TwoWayLinkStepHeader, { idx: 2, total: 2 });
       },
       render(arg0) {
         ({ callbackCode, callbackState } = arg0);
-        return callback2(callback(9161), { callbackCode, callbackState });
+        return callback2(callback(9232), { callbackCode, callbackState });
       }
     };
     return {
@@ -88,7 +88,7 @@ export default function XboxLinkModal(locationStack) {
         headerTitle: blank,
         headerStyle: onClose.navHeader,
         render() {
-          return callback2(callback(9369), {});
+          return callback2(callback(9440), {});
         }
       },
       [closure_1_4.EDUCATION]: {
@@ -111,9 +111,9 @@ export default function XboxLinkModal(locationStack) {
       }
     };
   }, items);
-  const accountLinkStepTracking = twoWayLinkStyles(9198).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
+  const accountLinkStepTracking = twoWayLinkStyles(9269).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null };
-  const intl = twoWayLinkStyles(1233).intl;
-  obj[3] = intl.string(twoWayLinkStyles(1233).t["13/7kX"]);
-  return jsx(twoWayLinkStyles(6940).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null });
+  const intl = twoWayLinkStyles(1114).intl;
+  obj[3] = intl.string(twoWayLinkStyles(1114).t["13/7kX"]);
+  return jsx(twoWayLinkStyles(7000).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null });
 };

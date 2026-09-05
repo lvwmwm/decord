@@ -1,10 +1,10 @@
-// Module ID: 1349
-// Function ID: 1350
-// Dependencies: [2, 1350, 1355, 1356, 1357, 1358, 1359, 1360, 1361]
+// Module ID: 4412
+// Function ID: 4413
+// Dependencies: [2, 4272, 4279, 4280, 4281, 4284, 4285, 4286, 4287]
 
-// Module 1349
+// Module 4412
 import set from "set" /* 2 */;
-import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1356 */;
+import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 4280 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");
 for (const key10018 in require("AccessibilityAnnouncer")) {

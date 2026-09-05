@@ -1,37 +1,37 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14114
+// Function ID: 14115
 // Name: getStatusSize
-// Dependencies: [19, 17, 673, 1297, 21, 4481, 709, 12960, 14017, 14018, 8743, 8088, 14029, 8742, 14019, 4938, 9555, 9556, 2]
+// Dependencies: [19, 17, 1074, 1179, 21, 4560, 576, 13028, 14103, 14104, 8813, 8157, 14115, 8812, 14105, 4977, 9626, 9627, 2]
 
-// Module 14028 (getStatusSize)
-import ThemesDefault from "Themes" /* 709 */;
-import getDecorationSizeForAvatarSize from "getDecorationSizeForAvatarSize" /* 8088 */;
-import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 12960 */;
+// Module 14114 (getStatusSize)
+import ThemesDefault from "Themes" /* 576 */;
+import getDecorationSizeForAvatarSize from "getDecorationSizeForAvatarSize" /* 8157 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 13028 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { StatusTypes } from "ME" /* 673 */;
-import STATUS_PADDING from "STATUS_PADDING" /* 1297 */;
+import { StatusTypes } from "ME" /* 1074 */;
+import STATUS_PADDING from "STATUS_PADDING" /* 1179 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function getStatusSize(arg0) {
   if (StaticNativeCutoutAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12960).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12960).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12960).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12960).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(13028).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(13028).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(13028).AvatarSizes.SMALL !== arg0) {
+          if (tmp(13028).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12960).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12960).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12960).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12960).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12960).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12960).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12960).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12960).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12960).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(13028).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(13028).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(13028).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(13028).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(13028).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(13028).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(13028).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(13028).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(13028).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }

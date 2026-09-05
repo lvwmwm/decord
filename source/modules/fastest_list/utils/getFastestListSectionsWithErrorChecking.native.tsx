@@ -1,12 +1,12 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7065
+// Function ID: 7066
 // Name: getFastestListSectionsWithErrorChecking
-// Dependencies: [6999, 2]
+// Dependencies: [7059, 2]
 // Exports: default
 
-// Module 7005 (getFastestListSectionsWithErrorChecking)
+// Module 7065 (getFastestListSectionsWithErrorChecking)
 import set from "set" /* 2 */;
-import logFastestListError from "logFastestListError" /* 6999 */;
+import logFastestListError from "logFastestListError" /* 7059 */;
 
 const result = set.fileFinishedImporting("modules/fastest_list/utils/getFastestListSectionsWithErrorChecking.native.tsx");
 

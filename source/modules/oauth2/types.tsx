@@ -1,9 +1,9 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9247
+// Function ID: 9248
 // Name: OAuth2Prompts
 // Dependencies: [2]
 
-// Module 9176 (OAuth2Prompts)
+// Module 9247 (OAuth2Prompts)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/oauth2/types.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 17005
+// Function ID: 17006
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4497, 1215, 4532, 4557, 4502, 586, 2]
+// Dependencies: [32, 19, 4576, 502, 1908, 4583, 4581, 504, 2]
 // Exports: default
 
-// Module 16927 (useExternalPipParticipant)
+// Module 17005 (useExternalPipParticipant)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getParticipants" /* 4497 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_7 from "createRTCConnection" /* 4557 */;
-import ParticipantTypes from "ParticipantTypes" /* 4502 */;
+import closure_4 from "getParticipants" /* 4576 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_7 from "createRTCConnection" /* 4583 */;
+import ParticipantTypes from "ParticipantTypes" /* 4581 */;
 
 const require = arg1;
 ({ isStreamParticipant: closure_8, ParticipantTypes: c9 } = ParticipantTypes);
@@ -64,7 +64,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (stateFromStores1.current !== id2) {
-      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "context", focusedParticipantType: null };
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "isArray", focusedParticipantType: -11665405 };
       obj[2] = _undefined.current;
     } else {
       let type1;

@@ -1,14 +1,14 @@
-// Module ID: 15521
-// Function ID: 15522
+// Module ID: 15597
+// Function ID: 15598
 // Name: TrainIcon
-// Dependencies: [19, 21, 709, 4196, 15522, 2]
+// Dependencies: [19, 21, 576, 4261, 15598, 2]
 // Exports: TrainIcon
 
-// Module 15521 (TrainIcon)
+// Module 15597 (TrainIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15522 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15598 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

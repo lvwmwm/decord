@@ -1,14 +1,14 @@
-// Module ID: 17777
-// Function ID: 17778
+// Module ID: 17857
+// Function ID: 17858
 // Name: experimentStoreUpdateHandler
-// Dependencies: [1209, 1915, 1912, 640, 1468, 7058, 2]
+// Dependencies: [1236, 1351, 1983, 558, 1433, 7118, 2]
 
-// Module 17777 (experimentStoreUpdateHandler)
-import shallowEqualDefault from "shallowEqual" /* 640 */;
-import items2 from "items" /* 1912 */;
-import isBlockedDomain from "isBlockedDomain" /* 1915 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "initialize" /* 1209 */;
+// Module 17857 (experimentStoreUpdateHandler)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import isBlockedDomain from "isBlockedDomain" /* 1351 */;
+import items2 from "items" /* 1983 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "initialize" /* 1236 */;
 
 require = arg1;
 function experimentStoreUpdateHandler() {
@@ -16,7 +16,7 @@ function experimentStoreUpdateHandler() {
   if (obj.isLibdiscoreInitialized()) {
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj = {};
-      const ALL_LIBDISCORE_EXPERIMENTS = tmp(1912).ALL_LIBDISCORE_EXPERIMENTS;
+      const ALL_LIBDISCORE_EXPERIMENTS = tmp(1983).ALL_LIBDISCORE_EXPERIMENTS;
       for (const item10018 of ALL_LIBDISCORE_EXPERIMENTS) {
         obj[item10018.id] = item10018.getCurrentConfig();
         continue;
@@ -32,7 +32,7 @@ function experimentStoreUpdateHandler() {
         const obj4 = isBlockedDomain;
       }
     }
-    tmpResult = tmp(1912);
+    tmpResult = tmp(1983);
   }
 }
 let c4 = null;

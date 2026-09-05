@@ -1,10 +1,10 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 15013
+// Function ID: 15014
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [32, 19, 4218, 14934, 2]
+// Dependencies: [32, 19, 4296, 15009, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 14938 (getRecapOrbCountFromPullProgress)
+// Module 15013 (getRecapOrbCountFromPullProgress)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

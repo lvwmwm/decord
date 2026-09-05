@@ -1,10 +1,10 @@
 // Module ID: 11138
 // Function ID: 11139
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11138 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fe0742351cd038dd9567f8c1afd0c1cd", name: "CirclePlusIcon-primary", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "1f7ad1fdc74f906f486dc69b445bb809", name: "wumpus-wump", type: "png" });

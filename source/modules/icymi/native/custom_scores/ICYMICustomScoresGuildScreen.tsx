@@ -1,21 +1,21 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16457
+// Function ID: 16458
 // Name: ICYMICustomScoreChannelRow
-// Dependencies: [32, 19, 17, 7458, 1386, 1908, 4709, 8265, 21, 4481, 709, 586, 4681, 8280, 1233, 4448, 16382, 2008, 4989, 5560, 1296, 10074, 4477, 7461, 1627, 16383, 11085, 8804, 2]
+// Dependencies: [32, 19, 17, 7525, 1957, 1979, 4741, 8335, 21, 4560, 576, 504, 4713, 8350, 1114, 4527, 16458, 1896, 5028, 5605, 1178, 10145, 4556, 7528, 1611, 16459, 11153, 8874, 2]
 // Exports: default
 
-// Module 16381 (ICYMICustomScoreChannelRow)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16457 (ICYMICustomScoreChannelRow)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleReset" /* 7458 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "createGuildRecordFromRust" /* 1908 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_10 from "filterStaffGuild" /* 8265 */;
+import closure_6 from "handleReset" /* 7525 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "createGuildRecordFromRust" /* 1979 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_10 from "filterStaffGuild" /* 8335 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function ICYMICustomScoreChannelRow(channelId) {
@@ -142,7 +142,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   let guildChannels;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = navigation(586);
+  let obj = navigation(504);
   let items = [closure_8];
   stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getGuild(guildId));
   obj1 = React;
@@ -162,14 +162,14 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
     }
     navigation.setOptions({ title: str });
   }, items1);
-  let tmp2Result = tmp2(586);
+  let tmp2Result = tmp2(504);
   const items2 = [closure_10];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => closure_1_10.getCustomGuildScore(guildId));
-  tmp2Result = tmp2(8280);
+  tmp2Result = tmp2(8350);
   const numberToCustomScoreResult = tmp2Result.numberToCustomScore(stateFromStores1);
   React = numberToCustomScoreResult;
   const items3 = [closure_6];
-  guildChannels = navigation(586).useStateFromStoresObject(items3, () => closure_1_6.getGuild(guildId)).guildChannels;
+  guildChannels = navigation(504).useStateFromStoresObject(items3, () => closure_1_6.getGuild(guildId)).guildChannels;
   const items4 = [numberToCustomScoreResult, guildChannels];
   const memo = obj1.useMemo(() => {
     const items = [];
@@ -313,11 +313,11 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
     }
   }, items5);
   obj = { contentInset: null, showsVerticalScrollIndicator: false, renderItem: null, data: null, keyExtractor: null };
-  obj1 = { bottom: guildId(1627)().bottom, top: guildId(709).space.PX_12 };
+  obj1 = { bottom: guildId(1611)().bottom, top: guildId(576).space.PX_12 };
   obj[0] = obj1;
   obj[2] = callback;
   obj[3] = memo;
   obj[4] = keyExtractor;
-  obj[1] = callback(navigation(8804).AnimatedFlashList, obj);
+  obj[1] = callback(navigation(8874).AnimatedFlashList, obj);
   return callback(guildChannels, obj);
 };

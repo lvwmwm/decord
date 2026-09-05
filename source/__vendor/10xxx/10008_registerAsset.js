@@ -1,0 +1,10 @@
+// Module ID: 10008
+// Function ID: 10009
+// Name: registerAsset
+// Dependencies: [1122]
+
+// Module 10008 (registerAsset)
+import registerAsset from "registerAsset" /* 1122 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/light_theme", width: 24, height: 24, scales: [2, 3], hash: "494f8fec7816d9dd79747ac9155bc550", name: "voice_bar_mute_off", type: "png" });

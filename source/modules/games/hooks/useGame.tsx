@@ -1,14 +1,14 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7309
+// Function ID: 7310
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4505, 673, 586, 684, 7248, 2]
+// Dependencies: [5, 19, 1916, 1074, 504, 1090, 7310, 2]
 // Exports: useGames
 
-// Module 7247 (importDefaultResult1)
-import setDefault from "set" /* 684 */;
+// Module 7309 (importDefaultResult1)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "noop" /* 19 */;
-import importDefaultResult1 from "handleLoadMessages" /* 4505 */;
-import initialize from "initialize" /* 586 */;
+import importDefaultResult1 from "createGamesFromMessage" /* 1916 */;
+import initialize from "initialize" /* 504 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -20,7 +20,7 @@ initialize = {
       return null;
     } else {
       if (importDefaultResult1.hasNoData(closure_0)) {
-        let NO_DATA = require(586) /* initialize */.NO_DATA;
+        let NO_DATA = require(504) /* initialize */.NO_DATA;
       } else {
         NO_DATA = obj.getGame(closure_0);
         if (NO_DATA == null) {

@@ -1,14 +1,14 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15244
+// Function ID: 15245
 // Name: render
-// Dependencies: [19, 7177, 21, 15169, 586, 2]
+// Dependencies: [19, 7237, 21, 15245, 504, 2]
 
-// Module 15168 (render)
-import componentDidMountDefault from "componentDidMount" /* 15169 */;
-import importDefaultResult from "updateProduct" /* 7177 */;
+// Module 15244 (render)
+import componentDidMountDefault from "componentDidMount" /* 15245 */;
+import importDefaultResult from "updateProduct" /* 7237 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
-import importDefaultResult1 from "initialize" /* 586 */;
+import importDefaultResult1 from "initialize" /* 504 */;
 
 const PureComponent = importAllResult.PureComponent;
 class PremiumRestorationAlert extends PureComponent {

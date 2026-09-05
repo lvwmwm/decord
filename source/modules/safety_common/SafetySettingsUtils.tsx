@@ -1,13 +1,13 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14688
+// Function ID: 14689
 // Name: trackSafetySettingsNoticeAnalytics
-// Dependencies: [673, 695, 2]
+// Dependencies: [1074, 1242, 2]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 14613 (trackSafetySettingsNoticeAnalytics)
+// Module 14688 (trackSafetySettingsNoticeAnalytics)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/safety_common/SafetySettingsUtils.tsx");

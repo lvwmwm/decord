@@ -1,20 +1,20 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 11566
+// Function ID: 11567
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 673, 21, 4481, 7126, 709, 685, 1296, 11499, 11500, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 7186, 576, 1091, 1178, 11567, 11568, 2]
 // Exports: default
 
-// Module 11498 (OfficialConnectionIcon)
+// Module 11566 (OfficialConnectionIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import useRoleIcon from "useRoleIcon" /* 7126 */;
-import registerAssetDefault from "registerAsset" /* 11499 */;
-import registerAssetDefault2 from "registerAsset" /* 11500 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import useRoleIcon from "useRoleIcon" /* 7186 */;
+import registerAssetDefault from "registerAsset" /* 11567 */;
+import registerAssetDefault2 from "registerAsset" /* 11568 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -63,10 +63,10 @@ export default function OfficialConnectionIcon(arg0) {
     roleColor = closure_4;
   }
   let PRIMARY_630 = ThemesDefault.unsafe_rawColors.WHITE;
-  let tmp2Result = tmp2(685);
-  tmp2Result = tmp2(685);
+  let tmp2Result = tmp2(1091);
+  tmp2Result = tmp2(1091);
   if (tmp2Result.getDarkness(hex2intResult) < 0.3) {
-    PRIMARY_630 = tmp7(709).unsafe_rawColors.PRIMARY_630;
+    PRIMARY_630 = tmp7(576).unsafe_rawColors.PRIMARY_630;
   }
   obj1 = { style: items1, children: null };
   items1 = [style, obj];

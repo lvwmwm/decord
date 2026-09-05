@@ -1,15 +1,15 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10946
+// Function ID: 10947
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 1984, 21, 4481, 586, 4477, 1233, 10878, 2]
+// Dependencies: [19, 17, 2015, 21, 4560, 504, 4556, 1114, 10947, 2]
 // Exports: default
 
-// Module 10877 (InviteRolesDisplay)
+// Module 10946 (InviteRolesDisplay)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 2015 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -21,7 +21,7 @@ export default function InviteRolesDisplay(roleIds) {
   roleIds = roleIds.roleIds;
   const guildId = roleIds.guildId;
   const tmp = callback3();
-  let obj = roleIds(586);
+  let obj = roleIds(504);
   const items = [closure_4];
   const items1 = [roleIds, guildId];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -34,9 +34,9 @@ export default function InviteRolesDisplay(roleIds) {
     obj[0] = tmp.container;
     obj = { variant: "text-xs/semibold", color: "text-muted", style: null, children: null };
     obj[2] = tmp.label;
-    const intl = tmp2(1233).intl;
-    obj[3] = intl.string(tmp2(1233).t.stcSfI);
-    const items2 = [callback(tmp2(4477).Text, obj), ];
+    const intl = tmp2(1114).intl;
+    obj[3] = intl.string(tmp2(1114).t.stcSfI);
+    const items2 = [callback(tmp2(4556).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.rolesRow;
     obj1[1] = stateFromStoresArray.map((id) => closure_1_5(guildId(closure_1_2[8]), { role: id, guildId }, id.id));

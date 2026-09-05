@@ -1,18 +1,18 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16592
+// Function ID: 16593
 // Name: reloadVibegrationsAppFrames
-// Dependencies: [5, 9439, 16511, 673, 9440, 706, 16514, 9436, 527, 7188, 7103, 8957, 2]
+// Dependencies: [5, 9510, 16587, 1074, 9511, 573, 16590, 9507, 1272, 7248, 7163, 9027, 2]
 // Exports: createProject, deleteProject, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 16516 (reloadVibegrationsAppFrames)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9436 */;
-import vibegrationLocation from "vibegrationLocation" /* 16514 */;
+// Module 16592 (reloadVibegrationsAppFrames)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9507 */;
+import vibegrationLocation from "vibegrationLocation" /* 16590 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9439 */;
-import closure_5 from "isProjectOwner" /* 16511 */;
-import { Endpoints } from "ME" /* 673 */;
-import { isLaunched } from "FrameLayoutModes" /* 9440 */;
+import closure_4 from "map" /* 9510 */;
+import closure_5 from "isProjectOwner" /* 16587 */;
+import { Endpoints } from "ME" /* 1074 */;
+import { isLaunched } from "FrameLayoutModes" /* 9511 */;
 
 require = arg1;
 function reloadVibegrationsAppFrames(application_id) {
@@ -133,7 +133,7 @@ function _listProjects() {
           } else {
             if (1 === tmp7) {
               c4 = 0;
-              obj3 = body(706);
+              obj3 = body(573);
               obj3.dispatch({ type: "VIBEGRATIONS_PROJECTS_FETCH_FAIL" });
             } else if (arg0 === 1) {
               constants = 3;
@@ -146,7 +146,7 @@ function _listProjects() {
               return obj4;
             } else {
               body = body.body;
-              obj = body(706);
+              obj = body(573);
               const obj5 = { type: "VIBEGRATIONS_PROJECTS_FETCH_SUCCESS", projects: null, guildId: null };
               obj5[1] = body;
               obj5[2] = callback;

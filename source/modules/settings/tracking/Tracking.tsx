@@ -1,14 +1,14 @@
-// Module ID: 6937
-// Function ID: 6938
+// Module ID: 6997
+// Function ID: 6998
 // Name: trackSettingSearchInputFocused
-// Dependencies: [673, 695, 6936, 2]
+// Dependencies: [1074, 1242, 6996, 2]
 // Exports: trackSettingSearchClosed, trackSettingSearchInputFocused, trackSettingSearchQueryEntered, trackSettingSearchResultPress
 
-// Module 6937 (trackSettingSearchInputFocused)
+// Module 6997 (trackSettingSearchInputFocused)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getSearchSessionIdDefault from "getSearchSessionId" /* 6936 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import getSearchSessionIdDefault from "getSearchSessionId" /* 6996 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/settings/tracking/Tracking.tsx");

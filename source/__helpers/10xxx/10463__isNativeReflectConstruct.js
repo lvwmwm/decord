@@ -1,18 +1,17 @@
 // Module ID: 10463
 // Function ID: 10464
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 10455, 10363, 10364, 10368]
+// Dependencies: [41, 42, 93, 95, 98, 10431, 10434, 10435, 10451]
 
 // Module 10463 (_isNativeReflectConstruct)
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10368 */;
-import WEEKDAY_DICTIONARY from "WEEKDAY_DICTIONARY" /* 10455 */;
+import Filter from "Filter" /* 10451 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const NLTimeUnitCasualRelativeFormatParser = require;
+const ENMergeRelativeAfterDateRefiner = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,13 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + WEEKDAY_DICTIONARY.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class NLTimeUnitCasualRelativeFormatParser {
+class ENMergeRelativeAfterDateRefiner {
   constructor() {
     self = this;
-    tmp = closure_2(this, NLTimeUnitCasualRelativeFormatParser);
+    tmp = closure_2(this, ENMergeRelativeAfterDateRefiner);
     tmp2 = closure_4;
-    obj = closure_4(NLTimeUnitCasualRelativeFormatParser);
+    obj = closure_4(ENMergeRelativeAfterDateRefiner);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -53,29 +51,40 @@ class NLTimeUnitCasualRelativeFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeRelativeAfterDateRefiner, Filter.MergingRefiner);
 const items = [
   {
-    key: "innerPattern",
-    value: function innerPattern() {
-      return regExp;
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, arg1, text) {
+      let match = str.match(/^\s*$/i);
+      if (match) {
+        let tmp4 = null != text.text.match(/^[+-]/i);
+        if (!tmp4) {
+          tmp4 = null != text.text.match(/^-/i);
+          const str2 = text.text;
+        }
+        match = tmp4;
+        str = text.text;
+      }
+      return match;
     }
   },
   {
-    key: "innerExtract",
-    value: function innerExtract(reference) {
-      const formatted = arg1[1].toLowerCase();
-      const parseDurationResult = NLTimeUnitCasualRelativeFormatParser(10455).parseDuration(arg1[2]);
-      if ("vorig" !== formatted) {
-        if ("afgelopen" !== formatted) {
-          let reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10364).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      const parseDurationResult = ENMergeRelativeAfterDateRefiner(10431).parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      if (null != str.match(/^-/i)) {
+        reverseDurationResult = tmp(10434).reverseDuration(parseDurationResult);
       }
-      reverseDurationResult = tmp2(10363).reverseDuration(parseDurationResult);
+      const ParsingComponents = tmp(10435).ParsingComponents;
+      const ReferenceWithTimezone = tmp(10435).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = ParsingComponents.createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      ({ reference, index } = start);
+      return new ENMergeRelativeAfterDateRefiner(10435).ParsingResult(reference, index, "" + start.text + arg0 + text.text, relativeFromReference);
     }
   }
 ];
 
-export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ENMergeRelativeAfterDateRefiner, items);

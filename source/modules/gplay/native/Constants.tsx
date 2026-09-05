@@ -1,9 +1,9 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7238
+// Function ID: 7239
 // Name: GPlayConnectionState
 // Dependencies: [2]
 
-// Module 7178 (GPlayConnectionState)
+// Module 7238 (GPlayConnectionState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gplay/native/Constants.tsx");

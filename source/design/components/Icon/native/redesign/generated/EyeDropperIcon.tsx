@@ -1,14 +1,14 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15350
+// Function ID: 15351
 // Name: EyeDropperIcon
-// Dependencies: [19, 21, 709, 4196, 15275, 2]
+// Dependencies: [19, 21, 576, 4261, 15351, 2]
 // Exports: EyeDropperIcon
 
-// Module 15274 (EyeDropperIcon)
+// Module 15350 (EyeDropperIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15275 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15351 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

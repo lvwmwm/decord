@@ -1,37 +1,37 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10254
+// Function ID: 10255
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4473, 1301, 4862, 1991, 4120, 1980, 7620, 4861, 1921, 673, 1393, 1383, 1337, 1232, 502, 21, 4481, 709, 7102, 586, 1362, 4345, 9233, 4681, 7816, 7615, 7215, 4325, 6921, 4218, 7709, 4492, 7390, 12, 7829, 8555, 10184, 10185, 4866, 1233, 10186, 10188, 1234, 10189, 10190, 10193, 1372, 10194, 2008, 10195, 10196, 8523, 1296, 7214, 1625, 1496, 6881, 8110, 10199, 4477, 10200, 10350, 10554, 10555, 8792, 10556, 10560, 7315, 11178, 5048, 10564, 7699, 4448, 11180, 8687, 4936, 5032, 2]
+// Dependencies: [5, 32, 19, 17, 4552, 1183, 4901, 2021, 4199, 2011, 7687, 4900, 1371, 1074, 1964, 1954, 1219, 1113, 1085, 21, 4560, 576, 7162, 504, 4411, 4427, 9304, 4713, 7885, 7682, 7275, 4404, 6981, 4296, 7777, 4571, 7456, 12, 7898, 8625, 10255, 10256, 4905, 1114, 10257, 10259, 1115, 10260, 10261, 10264, 1943, 10265, 1896, 10266, 10267, 8593, 1178, 7274, 1609, 1481, 6941, 8179, 10270, 4556, 10271, 10421, 10625, 10626, 8862, 10627, 10631, 7377, 11246, 5087, 10635, 7767, 4527, 11248, 8757, 4975, 5071, 2]
 // Exports: default
 
-// Module 10183 (Tags)
-import ThemesDefault from "Themes" /* 709 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4345 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6921 */;
-import TagIcon from "TagIcon" /* 8792 */;
+// Module 10254 (Tags)
+import ThemesDefault from "Themes" /* 576 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4427 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6981 */;
+import TagIcon from "TagIcon" /* 8862 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_11 from "handleThemeChange" /* 1301 */;
-import closure_12 from "handleChanged" /* 4862 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_14 from "trackCommunicationDisabled" /* 1991 */;
-import closure_15 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_16 from "handleConnectionOpen" /* 1980 */;
-import closure_17 from "setCooldown" /* 7620 */;
-import { SlowmodeType } from "setCooldown" /* 7620 */;
-import closure_19 from "map" /* 4861 */;
-import closure_20 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ChannelFlags } from "set" /* 1393 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
-import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1337 */;
-import { OpenThreadAnalyticsLocations as closure_27 } from "AbortCodes" /* 1232 */;
-import sum from "sum" /* 502 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_11 from "handleThemeChange" /* 1183 */;
+import closure_12 from "handleChanged" /* 4901 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_14 from "trackCommunicationDisabled" /* 2021 */;
+import closure_15 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_16 from "handleConnectionOpen" /* 2011 */;
+import closure_17 from "setCooldown" /* 7687 */;
+import { SlowmodeType } from "setCooldown" /* 7687 */;
+import closure_19 from "map" /* 4900 */;
+import closure_20 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ChannelFlags } from "set" /* 1964 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
+import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1219 */;
+import { OpenThreadAnalyticsLocations as closure_27 } from "AbortCodes" /* 1113 */;
+import sum from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function Tags(tags) {
@@ -73,10 +73,10 @@ function ActionBar(channel) {
   closure_8 = undefined;
   ({ onShowExpressionPicker, lastInput, onLayout } = channel);
   const tmp = callback3();
-  let obj = channel(586);
+  let obj = channel(504);
   const items = [closure_19];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_19.getUploads(channel.id, closure_1_13.ChannelMessage));
-  obj1 = channel(586);
+  obj1 = channel(504);
   const items1 = [closure_15];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let canResult = !isEdit;
@@ -88,7 +88,7 @@ function ActionBar(channel) {
   const tmp6 = useKeyboardTypeDefault();
   closure_7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
-  const tmp8 = tmp6 === channel(1625).KeyboardTypes.MEDIA;
+  const tmp8 = tmp6 === channel(1609).KeyboardTypes.MEDIA;
   closure_8 = tmp8;
   if (!isMediaChannelResult) {
     let tmp9 = stateFromStores1;
@@ -112,7 +112,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(10560), obj);
+    isMediaChannelResult = callback(tmp5(10631), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -120,12 +120,12 @@ function ActionBar(channel) {
     const items4 = [stateFromStores1, , , ];
     if (tmp10) {
       const obj2 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
-      const intl2 = tmp2(1233).intl;
-      obj2[0] = intl2.string(tmp2(1233).t["112vVE"]);
+      const intl2 = tmp2(1114).intl;
+      obj2[0] = intl2.string(tmp2(1114).t["112vVE"]);
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(8792).TagIcon;
+      obj2[2] = tmp2(8862).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = closure_1_1(closure_1_2[76]);
@@ -151,25 +151,25 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(closure_1_2[52])(closure_1_2[77], closure_1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(7315).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(7377).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(10188).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(10259).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
-      const intl3 = tmp2(1233).intl;
-      obj3[0] = intl3.string(tmp2(1233).t.iZ7Mz9);
+      const intl3 = tmp2(1114).intl;
+      obj3[0] = intl3.string(tmp2(1114).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(8687).ReactionIcon;
+      obj3[2] = tmp2(8757).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(7315).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(7377).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.postButtonWrapper;
-    const intl4 = tmp2(1233).intl;
+    const intl4 = tmp2(1114).intl;
     const string = intl4.string;
-    const t = tmp2(1233).t;
+    const t = tmp2(1114).t;
     if (isEdit) {
       let stringResult = string(t["R3BPH+"]);
     } else {
@@ -183,14 +183,14 @@ function ActionBar(channel) {
     }
     obj5[2] = submitting;
     const obj6 = { size: "sm", color: null };
-    obj6[1] = tmp5(709).colors.WHITE;
-    obj5[3] = callback(tmp2(5032).ChatIcon, obj6);
+    obj6[1] = tmp5(576).colors.WHITE;
+    obj5[3] = callback(tmp2(5071).ChatIcon, obj6);
     obj5[4] = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4[1] = callback(tmp2(4936).Button, obj5);
+    obj4[1] = callback(tmp2(4975).Button, obj5);
     items4[3] = callback(tmp13, obj4);
     obj1[1] = items4;
     items3[1] = tmp12(tmp13, obj1);
@@ -198,15 +198,15 @@ function ActionBar(channel) {
     return tmp12(tmp13, obj);
   } else {
     const obj7 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
-    let intl = tmp2(1233).intl;
-    obj7[0] = intl.string(tmp2(1233).t.aDZSuz);
+    let intl = tmp2(1114).intl;
+    obj7[0] = intl.string(tmp2(1114).t.aDZSuz);
     const items6 = [, ];
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(11178).KeyboardIcon;
+      let ImageIcon = tmp2(11246).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(5048).ImageIcon;
+      ImageIcon = tmp2(5087).ImageIcon;
     }
     obj7[2] = ImageIcon;
     obj7[3] = function onPress() {
@@ -219,7 +219,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(closure_1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(7315).HeaderActionButton, obj7);
+    callback(tmp2(7377).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }

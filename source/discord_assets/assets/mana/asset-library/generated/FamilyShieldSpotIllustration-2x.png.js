@@ -1,9 +1,9 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 5986
+// Function ID: 5987
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5933 (metadata)
+// Module 5986 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FamilyShieldSpotIllustration-2x.png.js");

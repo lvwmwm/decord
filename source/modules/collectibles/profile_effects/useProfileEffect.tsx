@@ -1,14 +1,14 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8226
+// Function ID: 8227
 // Name: useProfileEffect
-// Dependencies: [19, 7475, 7491, 7481, 586, 7474, 2]
+// Dependencies: [19, 7542, 7558, 7548, 504, 7541, 2]
 // Exports: default
 
-// Module 8157 (useProfileEffect)
+// Module 8226 (useProfileEffect)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "updateCategoriesAndProducts" /* 7475 */;
-import closure_4 from "map" /* 7491 */;
-import { isProfileEffectRecord } from "fromServer" /* 7481 */;
+import closure_3 from "updateCategoriesAndProducts" /* 7542 */;
+import closure_4 from "map" /* 7558 */;
+import { isProfileEffectRecord } from "fromServer" /* 7548 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffect.tsx");
@@ -16,7 +16,7 @@ let result = require("set").fileFinishedImporting("modules/collectibles/profile_
 export default function useProfileEffect(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_4];
-  const stateFromStores = _require(586).useStateFromStores(items, () => {
+  const stateFromStores = _require(504).useStateFromStores(items, () => {
     if (null != closure_0) {
       const product = closure_1_3.getProduct(tmp);
       let first;

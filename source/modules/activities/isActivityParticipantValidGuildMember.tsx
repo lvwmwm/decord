@@ -1,10 +1,10 @@
-// Module ID: 1953
-// Function ID: 1954
+// Module ID: 1893
+// Function ID: 1894
 // Name: isActivityParticipantValidGuildMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 1953 (isActivityParticipantValidGuildMember)
+// Module 1893 (isActivityParticipantValidGuildMember)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/isActivityParticipantValidGuildMember.tsx");

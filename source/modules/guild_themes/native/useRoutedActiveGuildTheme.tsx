@@ -1,17 +1,17 @@
-// Module ID: 4334
-// Function ID: 4335
+// Module ID: 4416
+// Function ID: 4417
 // Name: getGuildIdFromNavigationState
-// Dependencies: [32, 19, 673, 4335, 4336, 4361, 4362, 2]
+// Dependencies: [32, 19, 1074, 4417, 4418, 4443, 4444, 2]
 // Exports: default
 
-// Module 4334 (getGuildIdFromNavigationState)
-import coerceMainRoute from "coerceMainRoute" /* 4335 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4336 */;
-import contextDefault from "context" /* 4361 */;
-import resolveSavedActiveGuildTheme from "resolveSavedActiveGuildTheme" /* 4362 */;
+// Module 4416 (getGuildIdFromNavigationState)
+import coerceMainRoute from "coerceMainRoute" /* 4417 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4418 */;
+import contextDefault from "context" /* 4443 */;
+import resolveSavedActiveGuildTheme from "resolveSavedActiveGuildTheme" /* 4444 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { ME } from "ME" /* 673 */;
+import { ME } from "ME" /* 1074 */;
 
 require = arg1;
 function getGuildIdFromNavigationState(routes) {

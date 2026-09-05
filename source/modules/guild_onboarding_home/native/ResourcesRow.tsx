@@ -1,17 +1,17 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16557
+// Function ID: 16558
 // Name: ResourcesRow
-// Dependencies: [19, 17, 16482, 21, 4481, 709, 16483, 12216, 4448, 16484, 2008, 5084, 4477, 1233, 2]
+// Dependencies: [19, 17, 16558, 21, 4560, 576, 16559, 12284, 4527, 16560, 1896, 5123, 4556, 1114, 2]
 // Exports: default
 
-// Module 16481 (ResourcesRow)
+// Module 16557 (ResourcesRow)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16483 */;
+import ThemesDefault from "Themes" /* 576 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16559 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16482 */;
+import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16558 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -56,12 +56,12 @@ export default function ResourcesRow(guildId) {
       obj.openLazy(guildId(closure_1_2[10])(closure_1_2[9], closure_1_2.paths), closure_1_4, obj);
     };
     obj = { variant: "text-md/medium", color: "text-default", children: null };
-    const intl = guildId(1233).intl;
+    const intl = guildId(1114).intl;
     obj1 = { count: null };
     obj1[0] = arr.length - 2;
-    obj[2] = intl.format(guildId(1233).t.F6iMs4, obj1);
-    obj[2] = callback(guildId(4477).Text, obj);
-    tmp6 = callback(guildId(5084).PressableOpacity, obj);
+    obj[2] = intl.format(guildId(1114).t.F6iMs4, obj1);
+    obj[2] = callback(guildId(4556).Text, obj);
+    tmp6 = callback(guildId(5123).PressableOpacity, obj);
   }
   items[1] = tmp6;
   obj[2] = items;

@@ -1,16 +1,16 @@
-// Module ID: 17411
-// Function ID: 17412
+// Module ID: 17491
+// Function ID: 17492
 // Name: prototype
-// Dependencies: [5, 1921, 4141, 4145, 7332, 1923, 7058, 1945, 4845, 7333, 2]
+// Dependencies: [5, 1371, 4220, 4224, 7394, 1373, 7118, 1885, 4884, 7400, 2]
 
-// Module 17411 (prototype)
-import initializeDefault from "initialize" /* 7058 */;
+// Module 17491 (prototype)
+import initializeDefault from "initialize" /* 7118 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import closure_4 from "handlePaymentSourceCreateEnd" /* 4141 */;
-import closure_5 from "reset" /* 4145 */;
-import closure_6 from "addEntitlement" /* 7332 */;
-import GuildFeatures from "GuildFeatures" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import closure_4 from "handlePaymentSourceCreateEnd" /* 4220 */;
+import closure_5 from "reset" /* 4224 */;
+import closure_6 from "addEntitlement" /* 7394 */;
+import GuildFeatures from "GuildFeatures" /* 1373 */;
 
 let require = arg1;
 ({ PREMIUM_SUBSCRIPTION_APPLICATION: error, PremiumTypes: closure_8 } = GuildFeatures);
@@ -233,7 +233,7 @@ let prototype = function SubscriptionManager() {
             dependencyMap = 1;
             c2 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = closure_1_0(4845).fetchIpCountryCode();
+            obj1[0] = closure_1_0(4884).fetchIpCountryCode();
             return obj1;
           }
         } else {
@@ -247,7 +247,7 @@ let prototype = function SubscriptionManager() {
               obj2[0] = arg1;
               return obj2;
             } else if (null != closure_1_4.ipCountryCode) {
-              obj1 = closure_1_0(4845);
+              obj1 = closure_1_0(4884);
               dependencyMap = 2;
               c2 = 1;
               const obj3 = { value: null, done: false };

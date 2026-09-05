@@ -1,13 +1,13 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9521
+// Function ID: 9522
 // Name: NativeModules
-// Dependencies: [17, 1234, 9451, 4460, 641, 702, 2]
+// Dependencies: [17, 1115, 9522, 4539, 560, 1249, 2]
 
-// Module 9450 (NativeModules)
-import enforcingDefault from "enforcing" /* 9451 */;
+// Module 9521 (NativeModules)
+import enforcingDefault from "enforcing" /* 9522 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set from "set" /* 1234 */;
-import keys from "keys" /* 641 */;
+import set from "set" /* 1115 */;
+import keys from "keys" /* 560 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 if (set.isAndroid()) {
@@ -27,7 +27,7 @@ let closure_5 = keys.create((arg0) => {
     } else {
       resolved = Promise.resolve(undefined);
     }
-    tmpResult = _require(4460);
+    tmpResult = _require(4539);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState1 = DCDDeviceThermalStateManager.getThermalState();

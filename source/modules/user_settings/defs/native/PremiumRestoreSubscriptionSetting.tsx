@@ -1,17 +1,17 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15243
+// Function ID: 15244
 // Name: pressable
-// Dependencies: [1921, 21, 7353, 4866, 1233, 15168, 2008, 586, 1234, 11400, 8592, 2]
+// Dependencies: [1371, 21, 7419, 4905, 1114, 15244, 1896, 504, 1115, 11468, 8662, 2]
 
-// Module 15167 (pressable)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import set from "set" /* 1234 */;
-import _modDef4866 from "module_4866" /* 4866 */;
-import applyAppleReceiptDefault from "applyAppleReceipt" /* 7353 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 15243 (pressable)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import set from "set" /* 1115 */;
+import _modDef4905 from "module_4905" /* 4905 */;
+import applyAppleReceiptDefault from "applyAppleReceipt" /* 7419 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -60,7 +60,7 @@ createToggle = {
         });
       }
     };
-    _modDef4866.openLazy(obj);
+    _modDef4905.openLazy(obj);
   },
   withArrow: true,
   usePredicate: function useHasPremiumRestoreSubscriptionSetting() {

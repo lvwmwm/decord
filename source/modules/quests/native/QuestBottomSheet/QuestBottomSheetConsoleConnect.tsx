@@ -1,17 +1,17 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15163
+// Function ID: 15164
 // Name: NonInlineConsoleConnection
-// Dependencies: [19, 17, 673, 21, 709, 4481, 11415, 11706, 11418, 11428, 4448, 7320, 15044, 2008, 11124, 11125, 11129, 5411, 7661, 5407, 9181, 5642, 5560, 8811, 1233, 8638, 2]
+// Dependencies: [19, 17, 1074, 21, 576, 4560, 11483, 11774, 11486, 11496, 4527, 7382, 15120, 1896, 11192, 11193, 11197, 5451, 7728, 5447, 9252, 5687, 5605, 8881, 1114, 8708, 2]
 // Exports: default
 
-// Module 15087 (NonInlineConsoleConnection)
-import ThemesDefault from "Themes" /* 709 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5642 */;
+// Module 15163 (NonInlineConsoleConnection)
+import ThemesDefault from "Themes" /* 576 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5687 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function NonInlineConsoleConnection(arg0) {
@@ -32,34 +32,34 @@ function ConsoleRow(onPress) {
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
     let obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(8811).PlaystationNeutralIcon, {});
-    const intl3 = onPress(1233).intl;
-    obj[2] = intl3.string(onPress(1233).t.JafL6p);
+    obj[1] = callback(onPress(8881).PlaystationNeutralIcon, {});
+    const intl3 = onPress(1114).intl;
+    obj[2] = intl3.string(onPress(1114).t.JafL6p);
     let stringResult;
     if (null != merged.account) {
-      const intl4 = tmp8(1233).intl;
-      stringResult = intl4.string(tmp8(1233).t["u30/ut"]);
+      const intl4 = tmp8(1114).intl;
+      stringResult = intl4.string(tmp8(1114).t["u30/ut"]);
     }
     obj[3] = stringResult;
     obj[4] = function onPress() {
       return onPress(merged);
     };
-    return callback(onPress(5560).TableRow, obj);
+    return callback(onPress(5605).TableRow, obj);
   } else if (tmp2.XBOX === type) {
     obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(8638).XboxNeutralIcon, {});
-    const intl = onPress(1233).intl;
-    obj[2] = intl.string(onPress(1233).t.Nfvo72);
+    obj[1] = callback(onPress(8708).XboxNeutralIcon, {});
+    const intl = onPress(1114).intl;
+    obj[2] = intl.string(onPress(1114).t.Nfvo72);
     let stringResult1;
     if (null != merged.account) {
-      const intl2 = tmp4(1233).intl;
-      stringResult1 = intl2.string(tmp4(1233).t["u30/ut"]);
+      const intl2 = tmp4(1114).intl;
+      stringResult1 = intl2.string(tmp4(1114).t["u30/ut"]);
     }
     obj[3] = stringResult1;
     obj[4] = function onPress() {
       return onPress(merged);
     };
-    return callback(onPress(5560).TableRow, obj);
+    return callback(onPress(5605).TableRow, obj);
   } else {
     return null;
   }
@@ -86,11 +86,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
     obj = { questId: quest.id, initialStep: closure_1, sourceQuestContent: closure_2 };
     obj.openLazy(quest(closure_1_2[13])(closure_1_2[12], closure_1_2.paths), "QuestBottomSheet", obj);
   }
-  let obj = quest(11415);
+  let obj = quest(11483);
   xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  closure_4 = quest(11706).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(11706);
-  closure_5 = quest(11418).useQuestImpressionId();
+  closure_4 = quest(11774).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(11774);
+  closure_5 = quest(11486).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   obj = {
     consoles: xboxAndPlaystationAccounts.useMemo(() => {

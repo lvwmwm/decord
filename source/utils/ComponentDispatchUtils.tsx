@@ -1,14 +1,14 @@
-// Module ID: 1228
-// Function ID: 1229
+// Module ID: 1109
+// Function ID: 1110
 // Name: ComponentDispatcher
-// Dependencies: [673, 1229, 3, 1230, 2]
+// Dependencies: [1074, 1110, 3, 1111, 2]
 
-// Module 1228 (ComponentDispatcher)
+// Module 1109 (ComponentDispatcher)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import ME from "ME" /* 673 */;
-import logFluxActionAll from "logFluxAction" /* 1229 */;
-import safeDispatch from "safeDispatch" /* 1230 */;
+import ME from "ME" /* 1074 */;
+import logFluxActionAll from "logFluxAction" /* 1110 */;
+import safeDispatch from "safeDispatch" /* 1111 */;
 
 const ComponentActionsKeyed = ME.ComponentActionsKeyed;
 let closure_3 = new timestampDefault("ComponentDispatchUtils");

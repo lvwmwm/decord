@@ -1,14 +1,14 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8101
+// Function ID: 8102
 // Name: FacebookNeutralIcon
-// Dependencies: [19, 21, 709, 4196, 8033, 2]
+// Dependencies: [19, 21, 576, 4261, 8102, 2]
 // Exports: FacebookNeutralIcon
 
-// Module 8032 (FacebookNeutralIcon)
+// Module 8101 (FacebookNeutralIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8033 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8102 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

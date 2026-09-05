@@ -1,12 +1,12 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8288
+// Function ID: 8289
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 673, 21, 7092, 4448, 8219, 2]
+// Dependencies: [19, 1074, 21, 7152, 4527, 8289, 2]
 // Exports: default
 
-// Module 8218 (MediaModalSheetWrapper)
+// Module 8288 (MediaModalSheetWrapper)
 import closure_2 from "noop" /* 19 */;
-import { MEDIA_MODAL_KEY } from "ME" /* 673 */;
+import { MEDIA_MODAL_KEY } from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/MediaModalSheetWrapper.tsx");

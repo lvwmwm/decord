@@ -1,22 +1,22 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17447
+// Function ID: 17448
 // Name: _shouldSkipContactSyncStep
-// Dependencies: [5, 17, 15882, 5242, 1921, 673, 12610, 4738, 12612, 1234, 9749, 706, 1499, 12615, 4335, 17368, 4731, 1219, 12678, 2]
+// Dependencies: [5, 17, 15958, 5281, 1371, 1074, 12678, 4770, 12680, 1115, 9820, 573, 1484, 12683, 4417, 17448, 4763, 1100, 12746, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17367 (_shouldSkipContactSyncStep)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import trackNUFStep from "trackNUFStep" /* 12615 */;
-import NEW_USER_MODAL_KEY from "NEW_USER_MODAL_KEY" /* 17368 */;
+// Module 17447 (_shouldSkipContactSyncStep)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import trackNUFStep from "trackNUFStep" /* 12683 */;
+import NEW_USER_MODAL_KEY from "NEW_USER_MODAL_KEY" /* 17448 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 15882 */;
-import closure_6 from "set" /* 5242 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12610 */;
-import { NotificationAuthorizationStatus as closure_11 } from "NativePermissionStatus" /* 4738 */;
+import closure_5 from "initialize" /* 15958 */;
+import closure_6 from "set" /* 5281 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12678 */;
+import { NotificationAuthorizationStatus as closure_11 } from "NativePermissionStatus" /* 4770 */;
 
 require = arg1;
 function _shouldSkipContactSyncStep() {
@@ -49,13 +49,13 @@ function _shouldSkipContactSyncStep() {
             return obj;
           } else {
             const callback = tmp4;
-            let obj2 = closure_1_0(12612);
+            let obj2 = closure_1_0(12680);
             const result = obj2.isContactSyncAvailable();
             if (result) {
               c1 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(12612).checkContactPermissions();
+              obj1[0] = closure_1_0(12680).checkContactPermissions();
               return obj1;
             } else {
               dependencyMap = 3;
@@ -66,7 +66,7 @@ function _shouldSkipContactSyncStep() {
           throw arg1;
         } else if (arg0 !== 2) {
           if (arg1 === constants.UNAUTHORIZED) {
-            obj = callback(1234);
+            obj = callback(1115);
             obj.isIOS();
           }
         }
@@ -93,12 +93,12 @@ function lastStepComplete(STEP_GUILD_TEMPLATE) {
   trackNUFStep.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
   const obj = trackNUFStep;
   if (obj2.isModalOpen(NEW_USER_MODAL_KEY.NEW_USER_MODAL_KEY)) {
-    _modDef4731.popWithKey(tmp(17368).NEW_USER_MODAL_KEY);
-    const obj3 = _modDef4731;
+    _modDef4763.popWithKey(tmp(17448).NEW_USER_MODAL_KEY);
+    const obj3 = _modDef4763;
   }
-  let tmpResult = tmp(1219);
+  let tmpResult = tmp(1100);
   tmpResult.transitionTo(constants.ME, { navigationReplace: true });
-  tmpResult = tmp(12678);
+  tmpResult = tmp(12746);
   const result = tmpResult.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(flag, first1, first) {
@@ -215,13 +215,13 @@ function _getNextOnboardingStep() {
               return obj5;
             } else if (arg1) {
               callback = dependencyMap;
-              obj3 = flag(12615);
+              obj3 = flag(12683);
               const obj6 = { skip: null };
               obj6[0] = flag;
               obj3.trackNUFStep(closure_3, key, obj6);
               if (null != transitionStep2) {
                 callback2(key);
-                obj2 = callback(706);
+                obj2 = callback(573);
                 obj2.wait(transitionStep2);
                 const obj7 = { lastShownStepIndex: null, onboardingStepIndex: null, continueNavigation: false };
                 obj7[0] = callback;

@@ -1,14 +1,14 @@
-// Module ID: 15885
-// Function ID: 15886
+// Module ID: 15961
+// Function ID: 15962
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 1215, 6536, 15870, 15869, 586, 6534, 2]
+// Dependencies: [19, 502, 6595, 15946, 15945, 504, 6593, 2]
 // Exports: default
 
-// Module 15885 (useInitialRegistrationStep)
+// Module 15961 (useInitialRegistrationStep)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "hasConsented" /* 6536 */;
-import { resetRegistration } from "useRegistrationUIStore" /* 15870 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "hasConsented" /* 6595 */;
+import { resetRegistration } from "useRegistrationUIStore" /* 15946 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/auth/native/useInit
 export default function useInitialRegistrationStep(arg0) {
   const _require = arg0;
   const items = [closure_5];
-  const stateFromStores = _require(586).useStateFromStores(items, () => authenticationConsentRequired.getAuthenticationConsentRequired());
+  const stateFromStores = _require(504).useStateFromStores(items, () => authenticationConsentRequired.getAuthenticationConsentRequired());
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
     let tmp2 = callback === callback(closure_1_2[4]).getRegistrationSteps()[1];

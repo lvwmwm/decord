@@ -1,12 +1,12 @@
-// Module ID: 4573
-// Function ID: 4574
+// Module ID: 4601
+// Function ID: 4602
 // Name: hasRichActivity
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 4573 (hasRichActivity)
+// Module 4601 (hasRichActivity)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const ActivityTypes = ME.ActivityTypes;
 const result = set.fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");

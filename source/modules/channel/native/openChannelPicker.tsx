@@ -1,15 +1,15 @@
-// Module ID: 11261
-// Function ID: 11262
+// Module ID: 11329
+// Function ID: 11330
 // Name: openChannelPicker
-// Dependencies: [1981, 1908, 4448, 11262, 2008, 1233, 2]
+// Dependencies: [2012, 1979, 4527, 11330, 1896, 1114, 2]
 // Exports: default
 
-// Module 11261 (openChannelPicker)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import closure_3 from "comparator" /* 1981 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+// Module 11329 (openChannelPicker)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import closure_3 from "comparator" /* 2012 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
@@ -40,5 +40,5 @@ export default function openChannelPicker(onClose) {
   obj[2] = found.map((channel) => channel.channel);
   obj[3] = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj.openLazy(asyncRequireImpl(11262, dependencyMap.paths), "ChannelPicker", obj);
+  obj.openLazy(asyncRequireImpl(11330, dependencyMap.paths), "ChannelPicker", obj);
 };

@@ -1,19 +1,19 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 12574
+// Function ID: 12575
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4473, 4388, 21, 4481, 709, 586, 12507, 12508, 12499, 12503, 4205, 2]
+// Dependencies: [19, 17, 4552, 4470, 21, 4560, 576, 504, 12575, 12576, 12567, 12571, 4271, 2]
 // Exports: default
 
-// Module 12506 (GuildPowerupsGameServerCard)
+// Module 12574 (GuildPowerupsGameServerCard)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12503 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12508 */;
+import ThemesDefault from "Themes" /* 576 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12571 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_5 from "handleGameServerInstanceCreated" /* 4388 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_5 from "handleGameServerInstanceCreated" /* 4470 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -25,14 +25,14 @@ const result = require("set").fileFinishedImporting("modules/premium/powerups/na
 
 export default function GuildPowerupsGameServerCard(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(586);
+  let obj = guildId(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getStateForGuild(guildId));
   const tmp = callback();
   const tmp2 = guildId;
   const tmp5 = importDefault;
   const tmp7 = useGameServerPerkDefault(guildId);
-  obj1 = guildId(586);
+  obj1 = guildId(504);
   const items1 = [closure_4];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   let tmp10 = null;
@@ -47,7 +47,7 @@ export default function GuildPowerupsGameServerCard(guildId) {
       const obj2 = { reducedMotion: null };
       obj2[0] = stateFromStores1;
       obj1[1] = obj2;
-      obj[1] = jsx(tmp2(4205).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
+      obj[1] = jsx(tmp2(4271).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
       obj[4] = <View style={null}>{null}</View>;
       obj[6] = tmp6;
       obj[7] = tmp9;

@@ -1,9 +1,9 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12206
+// Function ID: 12207
 // Name: PollMediaUploadAttachmentStatus
 // Dependencies: [2]
 
-// Module 12138 (PollMediaUploadAttachmentStatus)
+// Module 12206 (PollMediaUploadAttachmentStatus)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/polls/PollTypes.tsx");

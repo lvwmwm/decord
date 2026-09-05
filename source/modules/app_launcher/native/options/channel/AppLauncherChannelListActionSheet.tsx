@@ -1,21 +1,21 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 12191
+// Function ID: 12192
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1908, 21, 4481, 709, 5041, 4989, 12111, 5402, 4448, 12098, 12099, 4681, 5560, 4477, 2]
+// Dependencies: [32, 19, 1979, 21, 4560, 576, 5080, 5028, 12179, 5442, 4527, 12166, 12167, 4713, 5605, 4556, 2]
 // Exports: default
 
-// Module 12123 (ChannelIcon)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import computeChannelNameDefault from "computeChannelName" /* 4681 */;
-import TextIcon3 from "TextIcon" /* 5041 */;
-import TableRowInner from "TableRowInner" /* 5560 */;
-import stylesDefault from "styles" /* 12111 */;
+// Module 12191 (ChannelIcon)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import computeChannelNameDefault from "computeChannelName" /* 4713 */;
+import TextIcon3 from "TextIcon" /* 5080 */;
+import TableRowInner from "TableRowInner" /* 5605 */;
+import stylesDefault from "styles" /* 12179 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class ChannelIcon {

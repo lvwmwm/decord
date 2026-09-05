@@ -1,18 +1,18 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 8790
+// Function ID: 8791
 // Name: useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
-// Dependencies: [19, 8721, 4504, 7554, 1908, 4572, 7168, 586, 8271, 8722, 2]
+// Dependencies: [19, 8791, 1915, 7621, 1979, 4600, 7228, 504, 8341, 8792, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 8720 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
-import initialize from "initialize" /* 586 */;
+// Module 8790 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
+import initialize from "initialize" /* 504 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "map" /* 8721 */;
-import closure_4 from "initialize" /* 4504 */;
-import closure_5 from "createUserWidgetFromServer" /* 7554 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "sortActivity" /* 4572 */;
-import closure_8 from "handleUserSettingsStoreUpdate" /* 7168 */;
+import closure_3 from "map" /* 8791 */;
+import closure_4 from "initialize" /* 1915 */;
+import closure_5 from "createUserWidgetFromServer" /* 7621 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "sortActivity" /* 4600 */;
+import closure_8 from "handleUserSettingsStoreUpdate" /* 7228 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");
@@ -21,7 +21,7 @@ export const useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds = fu
   userIds = userIds.userIds;
   let items = [closure_3, closure_8];
   const items1 = [userIds];
-  return userIds(586).useStateFromStoresArray(items, () => {
+  return userIds(504).useStateFromStoresArray(items, () => {
     const items = [];
     while (tmp2 !== undefined) {
       let tmp4 = closure_1_3;
@@ -63,7 +63,7 @@ export const useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds = func
   const _require = memo;
   let items = [closure_5, closure_8];
   const items1 = [memo];
-  return _require(586).useStateFromStoresArray(items, () => {
+  return _require(504).useStateFromStoresArray(items, () => {
     const items = [];
     while (tmp2 !== undefined) {
       let tmp4 = closure_1_5;
@@ -255,11 +255,11 @@ export const useIsCurrentUserPlayingSocialLayerStorefrontGames = function useIsC
 };
 export const useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds = function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
   let items = [closure_6];
-  stateFromStores = stateFromStores(586).useStateFromStores(items, () => guildIds.getGuildIds());
-  const obj = stateFromStores(586);
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => guildIds.getGuildIds());
+  const obj = stateFromStores(504);
   const items1 = [closure_8];
   const items2 = [stateFromStores];
-  return stateFromStores(586).useStateFromStoresArray(items1, () => {
+  return stateFromStores(504).useStateFromStoresArray(items1, () => {
     const items = [];
     while (tmp2 !== undefined) {
       let tmp4 = closure_1_8;

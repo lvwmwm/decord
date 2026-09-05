@@ -1,10 +1,10 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15146
+// Function ID: 15147
 // Name: prototype
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 15070 (prototype)
+// Module 15146 (prototype)
 import set from "set" /* 2 */;
 
 const prototype = function VttParserError(arg0, error) {

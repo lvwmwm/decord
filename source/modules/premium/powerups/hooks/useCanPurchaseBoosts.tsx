@@ -1,14 +1,14 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12505
+// Function ID: 12506
 // Name: useCanPurchaseBoosts
-// Dependencies: [1921, 1923, 7331, 586, 2]
+// Dependencies: [1371, 1373, 7393, 504, 2]
 // Exports: default
 
-// Module 12437 (useCanPurchaseBoosts)
-import initialize from "initialize" /* 586 */;
-import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7331 */;
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
-import { FractionalPremiumStates } from "GuildFeatures" /* 1923 */;
+// Module 12505 (useCanPurchaseBoosts)
+import initialize from "initialize" /* 504 */;
+import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7393 */;
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
+import { FractionalPremiumStates } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseBoosts.tsx");

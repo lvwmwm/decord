@@ -1,16 +1,16 @@
-// Module ID: 10017
-// Function ID: 10018
+// Module ID: 10088
+// Function ID: 10089
 // Name: computeThreadNotificationSetting
-// Dependencies: [1386, 4709, 4122, 1232, 673, 1399, 586, 2]
+// Dependencies: [1957, 4741, 4201, 1113, 1074, 1384, 504, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10017 (computeThreadNotificationSetting)
-import hasFlag from "hasFlag" /* 1399 */;
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_4 from "storeThread" /* 4122 */;
-import { ThreadMemberFlags } from "AbortCodes" /* 1232 */;
-import { UserNotificationSettings } from "ME" /* 673 */;
+// Module 10088 (computeThreadNotificationSetting)
+import hasFlag from "hasFlag" /* 1384 */;
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_4 from "storeThread" /* 4201 */;
+import { ThreadMemberFlags } from "AbortCodes" /* 1113 */;
+import { UserNotificationSettings } from "ME" /* 1074 */;
 
 require = arg1;
 function computeThreadNotificationSetting(channel) {
@@ -33,11 +33,11 @@ function computeThreadNotificationSetting(channel) {
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
       return tmp8.ALL_MESSAGES;
     } else {
-      let tmp6Result = tmp6(1399);
+      let tmp6Result = tmp6(1384);
       if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
         return tmp8.ONLY_MENTIONS;
       } else {
-        tmp6Result = tmp6(1399);
+        tmp6Result = tmp6(1384);
         if (tmp6Result.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
           return tmp8.NO_MESSAGES;
         } else {
@@ -68,5 +68,5 @@ export const useThreadNotificationSetting = function useThreadNotificationSettin
   const _require = channel;
   const items = [closure_4, closure_3, closure_2];
   const items1 = [channel];
-  return _require(586).useStateFromStores(items, () => closure_1_7(closure_0), items1);
+  return _require(504).useStateFromStores(items, () => closure_1_7(closure_0), items1);
 };

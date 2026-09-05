@@ -1,11 +1,11 @@
-// Module ID: 15949
-// Function ID: 15950
+// Module ID: 16025
+// Function ID: 16026
 // Name: keys
-// Dependencies: [641, 2]
+// Dependencies: [560, 2]
 
-// Module 15949 (keys)
+// Module 16025 (keys)
 import set from "set" /* 2 */;
-import keys from "keys" /* 641 */;
+import keys from "keys" /* 560 */;
 
 let c0 = null;
 const obj = keys.create((arg0, arg1) => {

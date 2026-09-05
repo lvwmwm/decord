@@ -1,21 +1,21 @@
-// Module ID: 10153
-// Function ID: 10154
+// Module ID: 10224
+// Function ID: 10225
 // Name: useFavoritesAccess
-// Dependencies: [4302, 1921, 1389, 1425, 1923, 10154, 10155, 586, 1945, 11, 1305, 1911, 2]
+// Dependencies: [4381, 1371, 1960, 1970, 1373, 10225, 10226, 504, 1885, 11, 1187, 1982, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 10153 (useFavoritesAccess)
+// Module 10224 (useFavoritesAccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initialize from "initialize" /* 586 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
-import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1945 */;
-import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 10154 */;
-import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10155 */;
-import closure_3 from "handleConnectionOpen" /* 4302 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "initializeFromUserSettings" /* 1389 */;
-import { MAX_FAVORITE_CHANNELS } from "date" /* 1425 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+import initialize from "initialize" /* 504 */;
+import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1885 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1982 */;
+import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 10225 */;
+import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10226 */;
+import closure_3 from "handleConnectionOpen" /* 4381 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "initializeFromUserSettings" /* 1960 */;
+import { MAX_FAVORITE_CHANNELS } from "date" /* 1970 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 require = arg1;
 function useFavoritesAccess(FavoritesGuildActionSheet) {
@@ -119,7 +119,7 @@ export const useFavorites = function useFavorites() {
 export const useFavorite = function useFavorite(arg0) {
   const _require = arg0;
   const items = [closure_5];
-  return _require(586).useStateFromStores(items, () => closure_1_5.getFavorite(closure_0));
+  return _require(504).useStateFromStores(items, () => closure_1_5.getFavorite(closure_0));
 };
 export const useFavoritedChannelIds = function useFavoritedChannelIds() {
   const items = [closure_5];
@@ -137,7 +137,7 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
     let tmp6 = favoriteChannels[key10010];
     let tmp7 = favoriteChannels;
     let tmp8 = dependencyMap;
-    if (tmp6.type !== favoriteChannels(1305).FavoriteChannelType.CATEGORY) {
+    if (tmp6.type !== favoriteChannels(1187).FavoriteChannelType.CATEGORY) {
       continue;
     } else {
       let obj = { id: null, name: null };
@@ -180,10 +180,10 @@ export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, 
   let tmp = arg0;
   const _require = arg0;
   const items = [closure_3];
-  const stateFromStores = _require(586).useStateFromStores(items, () => guildId.getGuildId());
-  const obj = _require(586);
-  const obj2 = _require(1911);
-  _require(586);
+  const stateFromStores = _require(504).useStateFromStores(items, () => guildId.getGuildId());
+  const obj = _require(504);
+  const obj2 = _require(1982);
+  _require(504);
   [][0] = arg0;
   if (!isFavoritesGuildIdResult) {
     if (tmp == null) {

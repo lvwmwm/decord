@@ -1,12 +1,12 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15420
+// Function ID: 15421
 // Name: route
-// Dependencies: [1995, 673, 586, 1233, 11400, 15345, 15347, 2]
+// Dependencies: [2025, 1074, 504, 1114, 11468, 15421, 15423, 2]
 
-// Module 15344 (route)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import closure_2 from "_getSystemLocale" /* 1995 */;
-import createToggle from "createToggle" /* 11400 */;
+// Module 15420 (route)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import closure_2 from "_getSystemLocale" /* 2025 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {
@@ -18,14 +18,14 @@ createToggle = {
   IconComponent: require("LanguageIcon").LanguageIcon,
   useTrailing: function useLanguageSettingTrailing() {
     const items = [closure_2];
-    _require = _require(586).useStateFromStores(items, () => locale.locale);
-    const obj = _require(586);
+    _require = _require(504).useStateFromStores(items, () => locale.locale);
+    const obj = _require(504);
     const tmp = _require;
-    const availableLocales = _require(1233).getAvailableLocales();
+    const availableLocales = _require(1114).getAvailableLocales();
     const found = availableLocales.find((value) => value.value === closure_0);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1233).intl;
+      const intl = tmp(1114).intl;
       stringResult = intl.string(found.localizedName);
     }
     return stringResult;
@@ -35,7 +35,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.LANGUAGE,
   getComponent() {
-    return require(15347) /* handleLanguageChange */.default;
+    return require(15423) /* handleLanguageChange */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

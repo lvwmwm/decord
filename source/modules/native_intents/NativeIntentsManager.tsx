@@ -1,23 +1,23 @@
-// Module ID: 17778
-// Function ID: 17779
+// Module ID: 17858
+// Function ID: 17859
 // Name: indexingEnabled
-// Dependencies: [32, 1386, 1908, 4120, 4130, 1980, 1921, 673, 17779, 17780, 4681, 12962, 1431, 1394, 4325, 7058, 2]
+// Dependencies: [32, 1957, 1979, 4199, 4209, 2011, 1371, 1074, 17859, 17860, 4713, 13030, 1396, 1369, 4404, 7118, 2]
 
-// Module 17778 (indexingEnabled)
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import computeChannelName from "computeChannelName" /* 4681 */;
-import initializeDefault from "initialize" /* 7058 */;
-import getChannelIconURL from "getChannelIconURL" /* 12962 */;
-import experimentDefault from "experiment" /* 17779 */;
-import setDefault from "set" /* 17780 */;
+// Module 17858 (indexingEnabled)
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import computeChannelName from "computeChannelName" /* 4713 */;
+import initializeDefault from "initialize" /* 7118 */;
+import getChannelIconURL from "getChannelIconURL" /* 13030 */;
+import experimentDefault from "experiment" /* 17859 */;
+import setDefault from "set" /* 17860 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_7 from "markAllUserIdListsStale" /* 4209 */;
+import closure_8 from "handleConnectionOpen" /* 2011 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function indexingEnabled() {
@@ -41,9 +41,9 @@ function makeSearchItem(channel, guild, flag) {
   const items2 = [];
   channel = authStore.getChannel(channel.parent_id);
   if (null != channel) {
-    let tmpResult = tmp(4681);
+    let tmpResult = tmp(4713);
     const channelName2 = tmpResult.computeChannelName(channel, tmp3, tmp4, true);
-    tmpResult = tmp(4681);
+    tmpResult = tmp(4713);
     const channelName3 = tmpResult.computeChannelName(channel, tmp3, tmp4, false);
     items2.push(channelName2);
     items2.push(channelName3);
@@ -189,9 +189,9 @@ function setChannelActivity(channelId) {
       if (channel.type === constants.DM) {
         const recipients = channel.recipients;
         const mapped = recipients.map(tmp11.getUser);
-        const first = callback(mapped.filter(tmp10(1394).isNotNullish), 1)[0];
+        const first = callback(mapped.filter(tmp10(1369).isNotNullish), 1)[0];
         if (null != first) {
-          let tmpResult = tmp(4325);
+          let tmpResult = tmp(4404);
           const globalName = tmpResult.getGlobalName(first);
           if (null != globalName) {
             items1.push(globalName);
@@ -202,7 +202,7 @@ function setChannelActivity(channelId) {
           if (null != nickname) {
             items1.push(nickname);
           }
-          tmpResult = tmp(4325);
+          tmpResult = tmp(4404);
           const name = tmpResult.getName(first);
           if (null != name) {
             items1.push(name);
@@ -221,14 +221,14 @@ function setChannelActivity(channelId) {
       obj[4] = sum;
       obj[5] = items3;
       obj[6] = sum;
-      tmp(17780).setActivity(obj);
+      tmp(17860).setActivity(obj);
       obj6 = closure_7;
       tmp10 = require;
       tmp11 = closure_9;
-      const tmpResult1 = tmp(17780);
+      const tmpResult1 = tmp(17860);
     } else {
-      tmp(17780).resignActivity();
-      const tmpResult2 = tmp(17780);
+      tmp(17860).resignActivity();
+      const tmpResult2 = tmp(17860);
     }
   }
 }
@@ -313,15 +313,15 @@ prototype["handleInit"] = function handleInit() {
   let obj2 = setDefault;
   obj[1] = !obj2.hasSearch();
   if (obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).clearEnabled) {
-    let tmp2Result = tmp2(17780);
+    let tmp2Result = tmp2(17860);
     tmp2Result.clearSearchIndex();
   }
-  tmp2Result = tmp2(17779);
+  tmp2Result = tmp2(17859);
   obj = { autoTrackExposure: true, disable: !setDefault.hasSearch() };
   if (tmp2Result.getCurrentConfig({ location: "NativeIntentsManager" }, obj).searchEnabled) {
     obj1 = { autoTrackExposure: true, disable: null };
-    const tmp2Result2 = tmp2(17779);
-    obj1[1] = !tmp2(17780).hasSearch();
+    const tmp2Result2 = tmp2(17859);
+    obj1[1] = !tmp2(17860).hasSearch();
     if (tmp2Result2.getCurrentConfig({ location: "NativeIntentsManager" }, obj1).searchEnabled) {
       const guildsArray = store.getGuildsArray();
       const mapped = guildsArray.map((arg0) => callback(arg0));
@@ -340,7 +340,7 @@ prototype["handleInit"] = function handleInit() {
       setDefault.indexDomains(mapped);
       const obj12 = setDefault;
     }
-    const tmp2Result3 = tmp2(17780);
+    const tmp2Result3 = tmp2(17860);
   }
 };
 prototype["handleLogout"] = function handleLogout() {
@@ -363,7 +363,7 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
       const guild = store.getGuild(channel.guild_id);
       if (null != guild) {
         if (null == guild) {
-          let tmpResult = tmp(17780);
+          let tmpResult = tmp(17860);
           let id;
           if (guild != null) {
             id = guild.id;
@@ -379,7 +379,7 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
           const items1 = [obj];
           tmpResult.indexDomains(items1);
         } else {
-          tmpResult = tmp(1431);
+          tmpResult = tmp(1396);
           ({ id: obj5[0], icon: obj5[1] } = guild);
           const guildIconURL = tmpResult.getGuildIconURL({ id: null, icon: null, size: 128 });
           let startsWithResult;
@@ -420,11 +420,11 @@ prototype["handleGuildCreateOrUpdate"] = function handleGuildCreateOrUpdate(guil
   if (obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).searchEnabled) {
     guild = store.getGuild(guild.id);
     if (null != guild) {
-      let tmpResult = tmp(17780);
+      let tmpResult = tmp(17860);
       const items = [makeGuildDomain(guild, "GUILD_UPDATE" === guild.type)];
       tmpResult.indexDomains(items);
     } else {
-      tmpResult = tmp(17780);
+      tmpResult = tmp(17860);
       const items1 = [guild.id];
       tmpResult.deleteSearchDomains(items1);
     }

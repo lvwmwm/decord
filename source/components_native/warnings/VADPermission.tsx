@@ -1,11 +1,11 @@
-// Module ID: 16843
-// Function ID: 16844
+// Module ID: 16921
+// Function ID: 16922
 // Name: render
-// Dependencies: [19, 21, 16840, 4955, 1233, 2]
+// Dependencies: [19, 21, 16918, 4994, 1114, 2]
 
-// Module 16843 (render)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import componentDidMountDefault from "componentDidMount" /* 4955 */;
+// Module 16921 (render)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import componentDidMountDefault from "componentDidMount" /* 4994 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

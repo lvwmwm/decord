@@ -1,10 +1,10 @@
 // Module ID: 11741
 // Function ID: 11742
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 11741 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 50, height: 50, scales: [2, 3], hash: "1f317b3826e833bdfd8eb425b9e3f548", name: "img_poop_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4ca3f49624db00fa92c0d848adcbd326", name: "StampIcon", type: "png" });

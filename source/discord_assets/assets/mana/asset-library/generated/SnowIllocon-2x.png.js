@@ -1,9 +1,9 @@
-// Module ID: 6413
-// Function ID: 6414
+// Module ID: 6470
+// Function ID: 6471
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6413 (metadata)
+// Module 6470 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SnowIllocon-2x.png.js");

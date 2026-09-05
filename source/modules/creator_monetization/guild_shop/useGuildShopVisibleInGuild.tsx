@@ -1,15 +1,15 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 7262
+// Function ID: 7263
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [673, 7198, 7190, 7203, 7193, 2]
+// Dependencies: [1074, 7258, 7250, 7263, 7253, 2]
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild
 
-// Module 7202 (useGuildShopVisibleInGuild)
+// Module 7262 (useGuildShopVisibleInGuild)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import computeCanEveryoneInGuildSeeRoleSubscriptions from "computeCanEveryoneInGuildSeeRoleSubscriptions" /* 7190 */;
-import useShouldHideGuildPurchaseEntryPoints from "useShouldHideGuildPurchaseEntryPoints" /* 7193 */;
-import useGuildEligibleForGuildProducts from "useGuildEligibleForGuildProducts" /* 7198 */;
+import ME from "ME" /* 1074 */;
+import computeCanEveryoneInGuildSeeRoleSubscriptions from "computeCanEveryoneInGuildSeeRoleSubscriptions" /* 7250 */;
+import useShouldHideGuildPurchaseEntryPoints from "useShouldHideGuildPurchaseEntryPoints" /* 7253 */;
+import useGuildEligibleForGuildProducts from "useGuildEligibleForGuildProducts" /* 7258 */;
 
 const GuildFeatures = ME.GuildFeatures;
 let result = set.fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopVisibleInGuild.tsx");
@@ -20,13 +20,13 @@ export const useGuildShopVisibleInGuild = function useGuildShopVisibleInGuild(id
     id = id.id;
   }
   const guildEligibleForGuildProducts = useGuildEligibleForGuildProducts.useGuildEligibleForGuildProducts(id);
-  let tmpResult = tmp(7190);
+  let tmpResult = tmp(7250);
   let id1;
   if (id != null) {
     id1 = id.id;
   }
   const roleSubscriptionsVisibleInGuild = tmpResult.useRoleSubscriptionsVisibleInGuild(id1);
-  tmpResult = tmp(7203);
+  tmpResult = tmp(7263);
   const guildShopPreviewVisible = tmpResult.useGuildShopPreviewVisible(id);
   const obj = useGuildEligibleForGuildProducts;
   let id2;

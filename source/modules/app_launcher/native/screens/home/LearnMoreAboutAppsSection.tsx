@@ -1,21 +1,21 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12095
+// Function ID: 12096
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 673, 21, 4481, 709, 4190, 1994, 1233, 12028, 9338, 4477, 5084, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 4255, 2024, 1114, 12096, 9409, 4556, 5123, 2]
 // Exports: default
 
-// Module 12027 (LearnMoreAboutAppsSection)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9338 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12028 */;
+// Module 12095 (LearnMoreAboutAppsSection)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9409 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12096 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -34,8 +34,8 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 export default function LearnMoreAboutAppsSection(visible) {
   const tmp = callback3();
   const callback = React.useCallback(() => {
-    const obj = callback(4190);
-    obj.openURL(callback(1994).getAppsSupportURL(constants.APPS_LEARN_MORE));
+    const obj = callback(4255);
+    obj.openURL(callback(2024).getAppsSupportURL(constants.APPS_LEARN_MORE));
   }, []);
   const intl = getSystemLocale.intl;
   const stringResult = intl.string(getSystemLocale.t["kw8/Ec"]);

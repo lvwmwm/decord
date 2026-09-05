@@ -1,12 +1,12 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15304
+// Function ID: 15305
 // Name: useSyncedModeThemeName
-// Dependencies: [1301, 1347, 586, 1346, 1233, 2598, 2]
+// Dependencies: [1183, 1230, 504, 1229, 1114, 2626, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 15228 (useSyncedModeThemeName)
-import closure_3 from "handleThemeChange" /* 1301 */;
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes" /* 1347 */;
+// Module 15304 (useSyncedModeThemeName)
+import closure_3 from "handleThemeChange" /* 1183 */;
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes" /* 1230 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/user_settings/defs/
 export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
   const _require = DARK;
   const items = [closure_3];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     const syncedClientTheme = closure_1_3.getSyncedClientTheme(DARK);
     const themeName = DARK(closure_1_2[3]).getThemeName(closure_1_3.themePreferenceForSystemTheme(DARK));
     let prop;

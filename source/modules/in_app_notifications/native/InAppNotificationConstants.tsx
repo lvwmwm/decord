@@ -1,16 +1,16 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10095
+// Function ID: 10096
 // Name: set
-// Dependencies: [709, 4218, 2]
+// Dependencies: [576, 4296, 2]
 
-// Module 10024 (set)
-import ThemesDefault from "Themes" /* 709 */;
-import _mod4218 from "module_4218" /* 4218 */;
+// Module 10095 (set)
+import ThemesDefault from "Themes" /* 576 */;
+import _mod4296 from "module_4296" /* 4296 */;
 import set from "set" /* 2 */;
 
 let set = new Set([10, 25]);
 const obj = { duration: 220, easing: null };
-const Easing = _mod4218.Easing;
+const Easing = _mod4296.Easing;
 obj[1] = Easing.bezier(0.16, 1, 0.3, 1);
 const result = set.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationConstants.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 6406
-// Function ID: 6407
+// Module ID: 6463
+// Function ID: 6464
 // Name: SleepingWumpusSpotIllustration
-// Dependencies: [21, 5542, 6407, 2]
+// Dependencies: [21, 5587, 6464, 2]
 // Exports: SleepingWumpusSpotIllustration
 
-// Module 6406 (SleepingWumpusSpotIllustration)
+// Module 6463 (SleepingWumpusSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6407 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6464 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SleepingWumpusSpotIllustration.native.tsx");

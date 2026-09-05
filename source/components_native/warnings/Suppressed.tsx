@@ -1,13 +1,13 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16917
+// Function ID: 16918
 // Name: render
-// Dependencies: [19, 13676, 21, 16840, 1233, 16841, 16842, 4955, 2]
+// Dependencies: [19, 13751, 21, 16918, 1114, 16919, 16920, 4994, 2]
 
-// Module 16839 (render)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import registerAssetDefault from "registerAsset" /* 16841 */;
-import registerAssetDefault2 from "registerAsset" /* 16842 */;
-import closure_3 from "initialize" /* 13676 */;
+// Module 16917 (render)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import registerAssetDefault from "registerAsset" /* 16919 */;
+import registerAssetDefault2 from "registerAsset" /* 16920 */;
+import closure_3 from "initialize" /* 13751 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -28,18 +28,18 @@ Suppressed.prototype["render"] = function render() {
   const t = getSystemLocale.t;
   if (isAFKChannelResult) {
     let stringResult = string(t.KuYcnU);
-    const intl3 = tmp2(1233).intl;
-    let stringResult1 = intl3.string(tmp2(1233).t["RaFZ3+"]);
+    const intl3 = tmp2(1114).intl;
+    let stringResult1 = intl3.string(tmp2(1114).t["RaFZ3+"]);
     let tmp7 = registerAssetDefault;
     let tmp6 = importDefault;
   } else {
     stringResult = string(t.FJSZVM);
-    const intl2 = tmp2(1233).intl;
-    stringResult1 = intl2.string(tmp2(1233).t.etJjgW);
+    const intl2 = tmp2(1114).intl;
+    stringResult1 = intl2.string(tmp2(1114).t.etJjgW);
     tmp6 = importDefault;
     tmp7 = registerAssetDefault2;
   }
-  return jsx(tmp6(4955), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+  return jsx(tmp6(4994), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
 };
 const result = require("set").fileFinishedImporting("components_native/warnings/Suppressed.tsx");
 

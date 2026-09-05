@@ -1,29 +1,29 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 16023
+// Function ID: 16024
 // Name: withEqualityFn
-// Dependencies: [673, 697, 4218, 4482, 15948, 4105, 2]
+// Dependencies: [1074, 1244, 4296, 4561, 16024, 4184, 2]
 // Exports: computeMaxX
 
-// Module 15947 (withEqualityFn)
+// Module 16023 (withEqualityFn)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import isIterable from "isIterable" /* 4105 */;
-import identity from "identity" /* 697 */;
+import ME from "ME" /* 1074 */;
+import isIterable from "isIterable" /* 4184 */;
+import identity from "identity" /* 1244 */;
 
 const DM_WIDTH = ME.DM_WIDTH;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   dependencyMap = arg1;
-  let obj = { panelX: _require(4218).makeMutable(0), snapX: null, isOpenTarget: null, gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
-  const obj2 = _require(4218);
-  obj[1] = _require(4218).makeMutable(0);
-  let obj3 = _require(4218);
-  obj[2] = _require(4218).makeMutable(false);
-  const obj4 = _require(4218);
-  obj[3] = _require(4218).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
+  let obj = { panelX: _require(4296).makeMutable(0), snapX: null, isOpenTarget: null, gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
+  const obj2 = _require(4296);
+  obj[1] = _require(4296).makeMutable(0);
+  let obj3 = _require(4296);
+  obj[2] = _require(4296).makeMutable(false);
+  const obj4 = _require(4296);
+  obj[3] = _require(4296).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
   obj[5] = { current: 0 };
-  const obj5 = _require(4218);
-  obj[6] = _require(4218).makeMutable(false);
+  const obj5 = _require(4296);
+  obj[6] = _require(4296).makeMutable(false);
   obj[7] = function setPanelX(arg0, arg1) {
     const tmp = dependencyMap();
     ({ panelX, snapX, isOpenTarget, gestureState } = tmp);
@@ -33,14 +33,14 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       if (tmp2) {
         num = tmp.maxX;
       }
-      const result1 = panelX.set(callback(4482).withTiming(num, tmp9(15948).HOME_DRAWER_SETTLE_TIMING));
-      const obj3 = callback(4482);
-      const result2 = snapX.set(callback(4482).withTiming(0, tmp9(15948).HOME_DRAWER_SETTLE_TIMING));
+      const result1 = panelX.set(callback(4561).withTiming(num, tmp9(16024).HOME_DRAWER_SETTLE_TIMING));
+      const obj3 = callback(4561);
+      const result2 = snapX.set(callback(4561).withTiming(0, tmp9(16024).HOME_DRAWER_SETTLE_TIMING));
       const obj = {};
       const merged = Object.assign(gestureState.get());
       obj.active = false;
       const result3 = gestureState.set(obj);
-      const tmp9Result = callback(4482);
+      const tmp9Result = callback(4561);
     }
   };
   obj[8] = function updateMaxX(width, left) {

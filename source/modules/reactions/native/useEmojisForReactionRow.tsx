@@ -1,12 +1,12 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11731
+// Function ID: 11732
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1924, 10214, 1492, 4138, 2]
+// Dependencies: [19, 1374, 10285, 1477, 4217, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 11663 (useEmojisForReactionRow)
+// Module 11731 (useEmojisForReactionRow)
 import closure_3 from "noop" /* 19 */;
-import { EmojiIntention } from "set" /* 1924 */;
+import { EmojiIntention } from "set" /* 1374 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 15925
+// Function ID: 15926
 // Name: DraggableContainer
-// Dependencies: [19, 7652, 707, 21, 4481, 709, 4218, 11285, 11965, 6595, 4935, 4939, 5084, 14506, 15499, 15850, 15498, 2]
+// Dependencies: [19, 7719, 574, 21, 4560, 576, 4296, 11353, 12033, 6655, 4974, 4978, 5123, 14581, 15575, 15926, 15574, 2]
 // Exports: default
 
-// Module 15849 (DraggableContainer)
-import ThemesDefault from "Themes" /* 709 */;
-import _mod4218 from "module_4218" /* 4218 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15499 */;
-import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15850 */;
+// Module 15925 (DraggableContainer)
+import ThemesDefault from "Themes" /* 576 */;
+import _mod4296 from "module_4296" /* 4296 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15575 */;
+import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15926 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "initialize" /* 7652 */;
-import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 707 */;
+import closure_4 from "initialize" /* 7719 */;
+import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 574 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function DraggableContainer(children) {
@@ -157,9 +157,9 @@ let closure_16 = importAllResult.memo(() => {
 let result = require("set").fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
 
 export default function DevWidget() {
-  let obj = _mod4218;
+  let obj = _mod4296;
   const sharedValue = obj.useSharedValue(closure_4.devWidgetPosition.x);
-  const sharedValue1 = _mod4218.useSharedValue(closure_4.devWidgetPosition.y);
+  const sharedValue1 = _mod4296.useSharedValue(closure_4.devWidgetPosition.y);
   obj = { children: null };
   const items = [callback(VisualEffectViewOverrideOverlay_Default, { x: sharedValue, y: sharedValue1 }), ];
   obj = {

@@ -1,14 +1,14 @@
-// Module ID: 6372
-// Function ID: 6373
+// Module ID: 6429
+// Function ID: 6430
 // Name: ServerIconGeargrindExample
-// Dependencies: [21, 5542, 6373, 2]
+// Dependencies: [21, 5587, 6430, 2]
 // Exports: ServerIconGeargrindExample
 
-// Module 6372 (ServerIconGeargrindExample)
+// Module 6429 (ServerIconGeargrindExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6373 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6430 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconGeargrindExample.native.tsx");

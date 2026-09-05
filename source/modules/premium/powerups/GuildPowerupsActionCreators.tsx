@@ -1,15 +1,15 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12488
+// Function ID: 12489
 // Name: guildPowerupsAckNotification
-// Dependencies: [4368, 673, 706, 12421, 4763, 527, 12422, 1394, 2]
+// Dependencies: [4450, 1074, 573, 12489, 4802, 1272, 12490, 1369, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 12420 (guildPowerupsAckNotification)
+// Module 12488 (guildPowerupsAckNotification)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4368 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4450 */;
 
 ({ GUILD_POWERUP_APPLICATION_ID: c3, GuildPowerupType: c4 } = BoostedGuildTiers);
 const Endpoints = ME.Endpoints;
@@ -26,11 +26,11 @@ export const guildPowerupsResetNotifications = function guildPowerupsResetNotifi
 export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(closure_0) {
   const _require = closure_0;
   if (true === arg1) {
-    const MOCK_LEVELS = _require(12421).MOCK_LEVELS;
-    const combined = MOCK_LEVELS.concat(_require(12421).MOCK_PERKS);
+    const MOCK_LEVELS = _require(12489).MOCK_LEVELS;
+    const combined = MOCK_LEVELS.concat(_require(12489).MOCK_PERKS);
     let obj = {};
-    obj[constants.LEVEL] = _require(12421).MOCK_LEVELS;
-    obj[constants.PERK] = _require(12421).MOCK_PERKS;
+    obj[constants.LEVEL] = _require(12489).MOCK_LEVELS;
+    obj[constants.PERK] = _require(12489).MOCK_PERKS;
     let obj2 = dispatcherDefault;
     obj = { type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS", guildId: null, allPowerups: null, powerupCatalog: null };
     obj[1] = closure_0;
@@ -54,8 +54,8 @@ export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(
     obj2[0] = closure_3;
     obj2[1] = closure_0;
     obj1[1] = obj2;
-    const obj5 = _require(4763);
-    obj1[3] = _require(527).rejectWithMigratedError();
+    const obj5 = _require(4802);
+    obj1[3] = _require(1272).rejectWithMigratedError();
     const result = obj5.httpGetWithCountryCodeQuery(obj1);
     return result.then((body) => {
       const callback = body;
@@ -96,8 +96,8 @@ export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = _require(4763);
-  obj = { url: Endpoints.GUILD_POWERUPS(closure_0), query: { include_ends_at: flag }, oldFormErrors: true, rejectWithError: _require(527).rejectWithMigratedError() };
+  let obj = _require(4802);
+  obj = { url: Endpoints.GUILD_POWERUPS(closure_0), query: { include_ends_at: flag }, oldFormErrors: true, rejectWithError: _require(1272).rejectWithMigratedError() };
   const result = obj.httpGetWithCountryCodeQuery(obj);
   return result.then((body) => {
     let obj = {};

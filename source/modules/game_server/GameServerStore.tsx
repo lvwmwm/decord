@@ -1,12 +1,12 @@
-// Module ID: 4388
-// Function ID: 4389
+// Module ID: 4470
+// Function ID: 4471
 // Name: handleGameServerInstanceCreated
-// Dependencies: [4389, 4390, 586, 706, 2]
+// Dependencies: [4471, 4472, 504, 573, 2]
 
-// Module 4388 (handleGameServerInstanceCreated)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4390 */;
+// Module 4470 (handleGameServerInstanceCreated)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4472 */;
 
 function handleGameServerInstanceCreated(arg0) {
   ({ guildId, gameServer } = arg0);

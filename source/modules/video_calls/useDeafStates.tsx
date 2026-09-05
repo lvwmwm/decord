@@ -1,13 +1,13 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 10018
+// Function ID: 10019
 // Name: useDeafStates
-// Dependencies: [1215, 4532, 4500, 586, 2]
+// Dependencies: [502, 1908, 4579, 504, 2]
 // Exports: default, getDeafStates
 
-// Module 9947 (useDeafStates)
-import closure_2 from "fetchFingerprint" /* 1215 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_4 from "updateVoiceState" /* 4500 */;
+// Module 10018 (useDeafStates)
+import closure_2 from "fetchFingerprint" /* 502 */;
+import closure_3 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_4 from "updateVoiceState" /* 4579 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useDeafStates.tsx");
@@ -16,7 +16,7 @@ export default function useDeafStates(arg0) {
   const _require = arg0;
   const items = [closure_4, closure_3, closure_2];
   const items1 = [arg0];
-  return _require(586).useStateFromStoresObject(items, () => {
+  return _require(504).useStateFromStoresObject(items, () => {
     let obj = closure_0;
     if (closure_1_4 !== undefined) {
       if (obj3 !== undefined) {

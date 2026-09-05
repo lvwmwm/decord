@@ -1,14 +1,14 @@
-// Module ID: 5928
-// Function ID: 5929
+// Module ID: 5981
+// Function ID: 5982
 // Name: ExperimentalMarvelRivalsWidgetAbstractUI
-// Dependencies: [21, 5542, 5929, 2]
+// Dependencies: [21, 5587, 5982, 2]
 // Exports: ExperimentalMarvelRivalsWidgetAbstractUI
 
-// Module 5928 (ExperimentalMarvelRivalsWidgetAbstractUI)
+// Module 5981 (ExperimentalMarvelRivalsWidgetAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5929 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5982 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");

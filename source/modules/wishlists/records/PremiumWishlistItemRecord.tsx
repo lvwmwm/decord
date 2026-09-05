@@ -1,13 +1,13 @@
-// Module ID: 8711
-// Function ID: 8712
+// Module ID: 8781
+// Function ID: 8782
 // Name: fromServer
-// Dependencies: [4524, 8709, 673, 2]
+// Dependencies: [5511, 8779, 1074, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8711 (fromServer)
-import fromServerDefault from "fromServer" /* 8709 */;
-import closure_0 from "createFromServer" /* 4524 */;
-import { SKUProductLines } from "ME" /* 673 */;
+// Module 8781 (fromServer)
+import fromServerDefault from "fromServer" /* 8779 */;
+import closure_0 from "createFromServer" /* 5511 */;
+import { SKUProductLines } from "ME" /* 1074 */;
 
 fromServerDefault;
 let prototype;

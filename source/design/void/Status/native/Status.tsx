@@ -1,21 +1,21 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14105
+// Function ID: 14106
 // Name: Status
-// Dependencies: [32, 19, 17, 1297, 673, 12961, 21, 4481, 14017, 709, 14020, 14021, 14022, 14023, 14024, 14025, 14026, 14018, 14027, 4218, 4935, 14004, 2]
+// Dependencies: [32, 19, 17, 1179, 1074, 13029, 21, 4560, 14103, 576, 14106, 14107, 14108, 14109, 14110, 14111, 14112, 14104, 14113, 4296, 4974, 14090, 2]
 // Exports: StatusWithTyping, default
 
-// Module 14019 (Status)
+// Module 14105 (Status)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 14017 */;
-import STATUS_PADDINGDefault from "STATUS_PADDING" /* 14018 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 14103 */;
+import STATUS_PADDINGDefault from "STATUS_PADDING" /* 14104 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { STATUS_PADDING } from "STATUS_PADDING" /* 1297 */;
-import { StatusTypes } from "ME" /* 673 */;
-import n from "n" /* 12961 */;
+import { STATUS_PADDING } from "STATUS_PADDING" /* 1179 */;
+import { StatusTypes } from "ME" /* 1074 */;
+import n from "n" /* 13029 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -49,7 +49,7 @@ let closure_14 = createCacheKey.createStyles((items) => {
     tmp5 = importDefault;
   }
   obj = { ellipsis: { backgroundColor: PRIMARY_400, borderRadius: height, height, width: statusTypingDimensions.width, paddingStart: 4, paddingEnd: 2, marginRight: 0 }, ellipsisDot: null };
-  obj = { width: dotSize, height: dotSize, backgroundColor: tmp5(709).colors.WHITE };
+  obj = { width: dotSize, height: dotSize, backgroundColor: tmp5(576).colors.WHITE };
   obj[1] = obj;
   return obj;
 });
@@ -75,23 +75,23 @@ export default function Status(isMobileOnline) {
   obj[0] = items;
   obj = { style: callback2().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(14020);
+    let tmp4Result = tmp4(14106);
   } else if (flag2) {
-    tmp4Result = tmp4(14021);
+    tmp4Result = tmp4(14107);
   } else if (flag) {
-    tmp4Result = tmp4(14022);
+    tmp4Result = tmp4(14108);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(14023);
+    tmp4Result = tmp4(14109);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(14024);
+    tmp4Result = tmp4(14110);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(14026);
+        tmp4Result = tmp4(14112);
       }
     }
-    tmp4Result = tmp4(14025);
+    tmp4Result = tmp4(14111);
   }
   obj[1] = tmp4Result;
   obj[1] = closure_11(closure_4, obj);

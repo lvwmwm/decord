@@ -1,12 +1,12 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5126
+// Function ID: 5127
 // Name: getIsScreenLandscape
-// Dependencies: [19, 1493, 1495, 2]
+// Dependencies: [19, 1478, 1480, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 5087 (getIsScreenLandscape)
+// Module 5126 (getIsScreenLandscape)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "getDimensionsStoreStateForEntry" /* 1493 */;
+import closure_3 from "getDimensionsStoreStateForEntry" /* 1478 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
@@ -19,7 +19,7 @@ export const getIsScreenLandscape = function getIsScreenLandscape() {
   return state.getState().byAppEntry[str].screenIsLandscape;
 };
 export const useIsScreenLandscape = function useIsScreenLandscape() {
-  appEntryKey = appEntryKey(1495).useAppEntryKey();
+  appEntryKey = appEntryKey(1480).useAppEntryKey();
   const items = [appEntryKey];
   return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
 };

@@ -1,17 +1,17 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17627
+// Function ID: 17628
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 17532, 21, 4481, 709, 1987, 1394, 4448, 14520, 7090, 7089, 1233, 4936, 4948, 15274, 5084, 685, 2]
+// Dependencies: [32, 19, 17, 17612, 21, 4560, 576, 2018, 1369, 4527, 14595, 7150, 7149, 1114, 4975, 4987, 15350, 5123, 1091, 2]
 // Exports: default
 
-// Module 17547 (RoleGradientPickerActionSheet)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17627 (RoleGradientPickerActionSheet)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17532 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17612 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ View: c5, Pressable: closure_6 } = get_ActivityIndicator);

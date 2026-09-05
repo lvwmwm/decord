@@ -1,21 +1,21 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15867
+// Function ID: 15868
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 7906, 673, 21, 4481, 709, 1233, 1994, 15792, 12612, 15795, 7239, 11400, 14740, 14614, 15796, 4477, 2]
+// Dependencies: [32, 19, 17, 7975, 1074, 21, 4560, 576, 1114, 2024, 15868, 12680, 15871, 7301, 11468, 14815, 14689, 15872, 4556, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15791 (ContentAndSocialSettings)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import Text from "Text" /* 4477 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15796 */;
+// Module 15867 (ContentAndSocialSettings)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import Text from "Text" /* 4556 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15872 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7906 */;
-import { HelpdeskArticles } from "ME" /* 673 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7975 */;
+import { HelpdeskArticles } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
@@ -203,16 +203,16 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
     let intl2 = getSystemLocale.intl;
     const obj3 = { helpdeskArticle: null };
-    obj3[0] = tmp2(1994).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj3[0] = tmp2(2024).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj2[2] = intl2.format(getSystemLocale.t.V8wClM, obj3);
     items[1] = callback2(Text.Text, obj2);
     obj[1] = items;
     tmp7 = callback3(closure_6, obj);
-    const tmp2Result = tmp2(1994);
+    const tmp2Result = tmp2(2024);
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(14614), obj);
+    tmp7 = callback2(tmp2(14689), obj);
   }
   return tmp7;
 };

@@ -1,24 +1,24 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 13475
+// Function ID: 13476
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [32, 19, 17, 673, 7366, 1923, 21, 709, 4481, 4948, 688, 4477, 5542, 1233, 13289, 13290, 13293, 13294, 4923, 1623, 10688, 1296, 7102, 1492, 695, 2]
+// Dependencies: [32, 19, 17, 1074, 7432, 1373, 21, 576, 4560, 4987, 1093, 4556, 5587, 1114, 13361, 13362, 13365, 13366, 4962, 1608, 10757, 1178, 7162, 1477, 1242, 2]
 // Exports: default
 
-// Module 13402 (PremiumFeaturesCardBackground)
-import keys from "keys" /* 688 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import preloadDefault from "preload" /* 5542 */;
-import PaginationDefault from "Pagination" /* 10688 */;
+// Module 13475 (PremiumFeaturesCardBackground)
+import ThemesDefault from "Themes" /* 576 */;
+import keys from "keys" /* 1093 */;
+import Text from "Text" /* 4556 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import preloadDefault from "preload" /* 5587 */;
+import PaginationDefault from "Pagination" /* 10757 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { Gradients } from "items" /* 7366 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { Gradients } from "items" /* 7432 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class PremiumFeaturesCardBackground {
@@ -58,7 +58,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   let React;
   const tmp = callback4();
-  let obj = width(4923);
+  let obj = width(4962);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(React.useState(0), 2);
   const first = tmp5[0];
@@ -70,35 +70,35 @@ function PremiumFeaturesCarousel(arg0) {
   let items = [tmp8];
   const memo = React.useMemo(() => {
     let obj = { title: null, imageSrc: null, imageStyle: null, premiumTypes: null };
-    const intl = width(1233).intl;
-    obj[0] = intl.string(width(1233).t["3cyhe3"]);
-    obj[1] = lib(13289);
+    const intl = width(1114).intl;
+    obj[0] = intl.string(width(1114).t["3cyhe3"]);
+    obj[1] = lib(13361);
     obj[2] = lib.emojiImage;
     const items = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = closure_1_9);
     obj[3] = new Set(items);
     const items1 = [obj, , , ];
     obj = { title: null, imageSrc: null, premiumTypes: null };
-    const intl2 = width(1233).intl;
-    obj[0] = intl2.string(width(1233).t["8AhJqy"]);
-    obj[1] = lib(13290);
+    const intl2 = width(1114).intl;
+    obj[0] = intl2.string(width(1114).t["8AhJqy"]);
+    obj[1] = lib(13362);
     const items2 = [, ];
     ({ TIER_0: arr3[0], TIER_2: arr3[1] } = closure_1_9);
     const set = new Set(items);
     obj[2] = new Set(items2);
     items1[1] = obj;
     obj = { title: null, imageSrc: null, premiumTypes: null };
-    const intl3 = width(1233).intl;
-    obj[0] = intl3.string(width(1233).t["t/Mvdj"]);
-    obj[1] = lib(13293);
+    const intl3 = width(1114).intl;
+    obj[0] = intl3.string(width(1114).t["t/Mvdj"]);
+    obj[1] = lib(13365);
     const items3 = [closure_1_9.TIER_2];
     const set1 = new Set(items2);
     obj[2] = new Set(items3);
     items1[2] = obj;
     obj1 = { title: null, imageSrc: null, premiumTypes: null };
-    const intl4 = width(1233).intl;
-    obj1[0] = intl4.string(width(1233).t["n+DGY/"]);
-    obj1[1] = lib(13294);
+    const intl4 = width(1114).intl;
+    obj1[0] = intl4.string(width(1114).t["n+DGY/"]);
+    obj1[1] = lib(13366);
     const items4 = [closure_1_9.TIER_2];
     const set2 = new Set(items3);
     obj1[2] = new Set(items4);
@@ -128,7 +128,7 @@ function PremiumFeaturesCarousel(arg0) {
   const callback = React.useCallback((nativeEvent) => {
     dependencyMap(Math.max(0, Math.min(mapped.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / c4))));
   }, items2);
-  if (!width(1623).isThumbstickScrollDevice) {
+  if (!width(1608).isThumbstickScrollDevice) {
     if (!isScreenReaderEnabled) {
       let tmp17 = callback2;
       obj = { style: null, data: null, renderItem: null, width: null, loop: false, onConfigurePanGesture: null, scrollAnimationDuration: 200, mode: "parallax", modeConfig: null, onSnapToItem: null };
@@ -150,7 +150,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj1[0] = tmp.indicators;
     obj1[1] = mapped.length;
     obj1[2] = first;
-    items3[1] = tmp17(width(1296).CarouselPagination, obj1);
+    items3[1] = tmp17(width(1178).CarouselPagination, obj1);
     obj[1] = items3;
     return closure_11(closure_6, obj);
   }
@@ -184,11 +184,11 @@ export default function PremiumFeaturesCarouselSection(style) {
   dependencyMap = undefined;
   let callback;
   const tmp = callback4();
-  analyticsLocations = first(7102)().analyticsLocations;
+  analyticsLocations = first(7162)().analyticsLocations;
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
-  let obj = analyticsLocations(1492);
+  let obj = analyticsLocations(1477);
   const tmp4 = callback(React.useState(obj.getWindowDimensions().width), 2);
   callback = tmp4[1];
   const items = [analyticsLocations, first];
@@ -202,7 +202,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   items1 = [tmp.container, style.style];
   callback = React.useCallback(() => {
     if (!first) {
-      let obj = first(695);
+      let obj = first(1242);
       obj = { location_stack: null };
       obj[0] = analyticsLocations;
       obj.track(closure_1_7.PREMIUM_MARKETING_SCROLLED_TO_LAST, obj);
@@ -210,9 +210,9 @@ export default function PremiumFeaturesCarouselSection(style) {
     }
   }, items);
   obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-  const intl = analyticsLocations(1233).intl;
-  obj[4] = intl.string(analyticsLocations(1233).t.RGadQR);
-  const items2 = [callback2(analyticsLocations(4477).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
+  const intl = analyticsLocations(1114).intl;
+  obj[4] = intl.string(analyticsLocations(1114).t.RGadQR);
+  const items2 = [callback2(analyticsLocations(4556).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
   obj[2] = items2;
   return callback3(closure_6, obj);
 };

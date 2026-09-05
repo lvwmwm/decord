@@ -1,15 +1,15 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 6951
+// Function ID: 6952
 // Name: _crypto
-// Dependencies: [17, 1623, 6892, 1205, 2]
+// Dependencies: [17, 1608, 6952, 1232, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 6891 (_crypto)
+// Module 6951 (_crypto)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import _modDef1205 from "module_1205" /* 1205 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
-import encodeDefault from "encode" /* 6892 */;
+import _modDef1232 from "module_1232" /* 1232 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
+import encodeDefault from "encode" /* 6952 */;
 
 let _crypto;
 if (window != null) {
@@ -63,7 +63,7 @@ export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {
   return "otpauth://totp/" + encodeURIResult + ":" + encodeURIResult1 + "?secret=" + formatted + "&issuer=" + encodeURIComponent(str);
 };
 export const captureWebAuthnException = function captureWebAuthnException(closure_1, tags) {
-  let obj = _modDef1205;
+  let obj = _modDef1232;
   obj = {};
   const merged = Object.assign(tags);
   tags = undefined;

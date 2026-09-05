@@ -1,0 +1,27 @@
+// Module ID: 706
+// Function ID: 707
+// Name: getAsyncContextStrategy
+// Dependencies: [690, 707]
+
+// Module 706 (getAsyncContextStrategy)
+import getGlobalSingleton from "getGlobalSingleton" /* 690 */;
+import withScope from "withScope" /* 707 */;
+
+require = arg1;
+const dependencyMap = arg6;
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+arg5.getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
+  const sentryCarrier = getGlobalSingleton.getSentryCarrier(arg0);
+  if (sentryCarrier.acs) {
+    let acs = sentryCarrier.acs;
+  } else {
+    acs = withScope.getStackAsyncContextStrategy();
+    const tmpResult = withScope;
+  }
+  return acs;
+};
+arg5.setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
+  const mainCarrier = getGlobalSingleton.getMainCarrier();
+  const obj = getGlobalSingleton;
+  getGlobalSingleton.getSentryCarrier(mainCarrier).acs = acs;
+};

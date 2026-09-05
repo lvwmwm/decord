@@ -1,23 +1,23 @@
-// Module ID: 4946
-// Function ID: 4947
+// Module ID: 4985
+// Function ID: 4986
 // Name: PillWrapper
-// Dependencies: [32, 19, 17, 21, 4941, 4481, 709, 4942, 4205, 4197, 4947, 4948, 4218, 1362, 4952, 1355, 4935, 4939, 2]
+// Dependencies: [32, 19, 17, 21, 4980, 4560, 576, 4981, 4271, 4262, 4986, 4987, 4296, 4411, 4991, 4279, 4974, 4978, 2]
 // Exports: ButtonPill
 
-// Module 4946 (PillWrapper)
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import ManaContext from "ManaContext" /* 4205 */;
-import _modDef4218 from "module_4218" /* 4218 */;
-import MINIMUM_HIT_AREA2 from "MINIMUM_HIT_AREA" /* 4941 */;
-import styleProperties from "styleProperties" /* 4942 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
+// Module 4985 (PillWrapper)
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import ManaContext from "ManaContext" /* 4271 */;
+import _modDef4296 from "module_4296" /* 4296 */;
+import MINIMUM_HIT_AREA2 from "MINIMUM_HIT_AREA" /* 4980 */;
+import styleProperties from "styleProperties" /* 4981 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4980 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function PillWrapper(expressivePressState) {
@@ -44,7 +44,7 @@ function PillWrapper(expressivePressState) {
   if (shiny) {
     obj = { variant: null };
     obj[0] = variant;
-    tmp7 = callback2(tmp(4947).ButtonShine, obj);
+    tmp7 = callback2(tmp(4986).ButtonShine, obj);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
@@ -65,10 +65,10 @@ function PillWrapper(expressivePressState) {
         obj2[1] = tmp5.expressivePill.borderRadius;
         const merged = Object.assign(expressivePressState);
         obj1[4] = obj2;
-        obj[1] = callback2(tmp(4205).ExpressiveButtonRive, obj1);
+        obj[1] = callback2(tmp(4271).ExpressiveButtonRive, obj1);
         tmp11Result = tmp11(closure_5, obj);
         const tmp12 = closure_5;
-        tmpResult = tmp(1362);
+        tmpResult = tmp(4411);
       }
       obj3 = { children: null };
       const items3 = [tmp11Result, ];
@@ -77,7 +77,7 @@ function PillWrapper(expressivePressState) {
       obj4[0] = items4;
       const items5 = [children, tmp7];
       obj4[1] = items5;
-      items3[1] = tmp9(tmp6(4218).View, obj4);
+      items3[1] = tmp9(tmp6(4296).View, obj4);
       obj3[0] = items3;
     }
     return tmp9(tmp10, obj3);
@@ -92,7 +92,7 @@ function PillWrapper(expressivePressState) {
   const items7 = [callback2(LinearGradientDefault, obj5), ];
   const items8 = [style, buttonPillStyles];
   const items9 = [children, tmp7];
-  items7[1] = closure_8(_modDef4218.View, { style: items8, children: items9 });
+  items7[1] = closure_8(_modDef4296.View, { style: items8, children: items9 });
   obj6[0] = items7;
   obj3 = obj6;
 }
@@ -179,7 +179,7 @@ class LoadingButtonPill {
     items2[0] = tmp3.childContainer;
     items2[1] = tmp8;
     items3 = [, ];
-    items3[0] = jsx(require("module_4218").View, { style: items2, children });
+    items3[0] = jsx(require("module_4296").View, { style: items2, children });
     obj = { style: items4, children: null };
     items4 = [, ];
     items4[0] = tmp3.ellipsis;
@@ -195,7 +195,7 @@ class LoadingButtonPill {
       tmp12Result = tmp12(require("EllipsisCircle").Ellipsis, obj1);
     }
     obj[1] = tmp12Result;
-    items3[1] = tmp12(require("module_4218").View, obj);
+    items3[1] = tmp12(require("module_4296").View, obj);
     obj[6] = items3;
     return tmp10(tmp11, obj);
   }

@@ -1,12 +1,12 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6938
+// Function ID: 6939
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 4477, 2]
+// Dependencies: [19, 21, 4556, 2]
 // Exports: default
 
-// Module 6878 (FreeFormLabel)
+// Module 6938 (FreeFormLabel)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4477 */;
+import Text from "Text" /* 4556 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

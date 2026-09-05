@@ -1,12 +1,12 @@
-// Module ID: 17036
-// Function ID: 17037
+// Module ID: 17114
+// Function ID: 17115
 // Name: Permissions
-// Dependencies: [4120, 502, 4125, 586, 2]
+// Dependencies: [4199, 1085, 4204, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
 
-// Module 17036 (Permissions)
-import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "sum" /* 502 */;
+// Module 17114 (Permissions)
+import closure_3 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "sum" /* 1085 */;
 
 const require = arg1;
 let items = [, , ];
@@ -23,7 +23,7 @@ export default function useCanSetVoiceChannelStatus(arg0) {
   dependencyMap = arg2;
   items = [closure_3];
   items1 = [arg0, flag, arg2];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     closure_1 = closure_1_3;
     return closure_1 ? closure_1_5 : closure_1_4.every((arg0) => {
       if (null == table) {

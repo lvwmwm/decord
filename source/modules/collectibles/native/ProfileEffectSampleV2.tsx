@@ -1,19 +1,19 @@
-// Module ID: 8729
-// Function ID: 8730
+// Module ID: 8799
+// Function ID: 8800
 // Name: ProfileEffectSample
-// Dependencies: [17, 8728, 21, 4481, 709, 5542, 8730, 8731, 2]
+// Dependencies: [17, 8798, 21, 4560, 576, 5587, 8800, 8801, 2]
 // Exports: default
 
-// Module 8729 (ProfileEffectSample)
+// Module 8799 (ProfileEffectSample)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 709 */;
-import preloadDefault from "preload" /* 5542 */;
-import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8728 */;
-import metadataDefault from "metadata" /* 8730 */;
-import StaticEffectDefault from "StaticEffect" /* 8731 */;
+import ThemesDefault from "Themes" /* 576 */;
+import preloadDefault from "preload" /* 5587 */;
+import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8798 */;
+import metadataDefault from "metadata" /* 8800 */;
+import StaticEffectDefault from "StaticEffect" /* 8801 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);

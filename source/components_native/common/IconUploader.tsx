@@ -1,22 +1,22 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10928
+// Function ID: 10929
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 673, 21, 4481, 5099, 5539, 1431, 10860, 5084, 1233, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4560, 5138, 5584, 1396, 10929, 5123, 1114, 2]
 // Exports: default
 
-// Module 10859 (IconUploader)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import GuildIconSizes from "GuildIconSizes" /* 5539 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import registerAssetDefault from "registerAsset" /* 10860 */;
+// Module 10928 (IconUploader)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import getAvatarURL from "getAvatarURL" /* 1396 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import GuildIconSizes from "GuildIconSizes" /* 5584 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import registerAssetDefault from "registerAsset" /* 10929 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UPLOAD_MEDIUM_SIZE } from "ME" /* 673 */;
+import { UPLOAD_MEDIUM_SIZE } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);

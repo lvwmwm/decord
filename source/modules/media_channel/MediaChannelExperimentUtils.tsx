@@ -1,12 +1,12 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 9733
+// Function ID: 9734
 // Name: useGuildEligibleForMediaChannels
-// Dependencies: [673, 2]
+// Dependencies: [1074, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 9662 (useGuildEligibleForMediaChannels)
+// Module 9733 (useGuildEligibleForMediaChannels)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const GuildFeatures = ME.GuildFeatures;
 const result = set.fileFinishedImporting("modules/media_channel/MediaChannelExperimentUtils.tsx");

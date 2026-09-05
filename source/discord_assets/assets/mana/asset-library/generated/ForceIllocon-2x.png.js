@@ -1,9 +1,9 @@
-// Module ID: 5949
-// Function ID: 5950
+// Module ID: 6004
+// Function ID: 6005
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5949 (metadata)
+// Module 6004 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ForceIllocon-2x.png.js");

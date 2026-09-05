@@ -1,12 +1,12 @@
-// Module ID: 11192
-// Function ID: 11193
+// Module ID: 11260
+// Function ID: 11261
 // Name: useCanRemoveAllReactions
-// Dependencies: [4120, 673, 7209, 586, 2]
+// Dependencies: [4199, 1074, 7269, 504, 2]
 // Exports: default
 
-// Module 11192 (useCanRemoveAllReactions)
-import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
-import { Permissions } from "ME" /* 673 */;
+// Module 11260 (useCanRemoveAllReactions)
+import closure_2 from "getUncachedChannelPermissions" /* 4199 */;
+import { Permissions } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");

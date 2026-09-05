@@ -1,13 +1,13 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8117
+// Function ID: 8118
 // Name: _fetchMessageInteractionData
-// Dependencies: [5, 673, 706, 527, 2]
+// Dependencies: [5, 1074, 573, 1272, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8048 (_fetchMessageInteractionData)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 8117 (_fetchMessageInteractionData)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchMessageInteractionData() {

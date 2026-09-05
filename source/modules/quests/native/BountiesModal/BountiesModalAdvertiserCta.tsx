@@ -1,21 +1,21 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 15039
+// Function ID: 15040
 // Name: BountiesModalAdvertiserCtaContent
-// Dependencies: [109, 19, 17, 4473, 5404, 21, 4218, 4481, 709, 4482, 4485, 14965, 11217, 4942, 11418, 11428, 5411, 7661, 5409, 8526, 5542, 4477, 4936, 14932, 586, 14933, 9898, 2]
+// Dependencies: [109, 19, 17, 4552, 5444, 21, 4296, 4560, 576, 4561, 4564, 15040, 11285, 4981, 11486, 11496, 5451, 7728, 5449, 8596, 5587, 4556, 4975, 15007, 504, 15008, 9969, 2]
 // Exports: default
 
-// Module 14964 (BountiesModalAdvertiserCtaContent)
-import ThemesDefault from "Themes" /* 709 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4482 */;
-import timingNone from "timingNone" /* 4485 */;
+// Module 15039 (BountiesModalAdvertiserCtaContent)
+import ThemesDefault from "Themes" /* 576 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4561 */;
+import timingNone from "timingNone" /* 4564 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5404 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5444 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "module_4218" /* 4218 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "module_4296" /* 4296 */;
 
 require = arg1;
 function BountiesModalAdvertiserCtaContent(bounty) {

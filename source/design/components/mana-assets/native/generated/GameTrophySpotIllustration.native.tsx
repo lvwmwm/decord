@@ -1,14 +1,14 @@
-// Module ID: 6038
-// Function ID: 6039
+// Module ID: 6093
+// Function ID: 6094
 // Name: GameTrophySpotIllustration
-// Dependencies: [21, 5542, 6039, 2]
+// Dependencies: [21, 5587, 6094, 2]
 // Exports: GameTrophySpotIllustration
 
-// Module 6038 (GameTrophySpotIllustration)
+// Module 6093 (GameTrophySpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6039 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6094 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameTrophySpotIllustration.native.tsx");

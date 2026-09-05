@@ -1,14 +1,14 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 9181
+// Function ID: 9182
 // Name: useGetGameForAppId
-// Dependencies: [19, 4505, 7108, 7247, 1394, 586, 2]
+// Dependencies: [19, 1916, 7168, 7309, 1369, 504, 2]
 // Exports: default, useGetGamesForAppIds
 
-// Module 9110 (useGetGameForAppId)
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7108 */;
-import importDefaultResult1 from "importDefaultResult1" /* 7247 */;
+// Module 9181 (useGetGameForAppId)
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7168 */;
+import importDefaultResult1 from "importDefaultResult1" /* 7309 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleLoadMessages" /* 4505 */;
+import closure_4 from "createGamesFromMessage" /* 1916 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/games/hooks/useGetGameForAppId.tsx");
@@ -34,7 +34,7 @@ export default function useGetGameForAppId(applicationId) {
   return obj;
 };
 export const useGetGamesForAppIds = function useGetGamesForAppIds(stateFromStoresArray) {
-  const tmp = memo(7108)(stateFromStoresArray);
+  const tmp = memo(7168)(stateFromStoresArray);
   const _require = tmp;
   const items = [tmp];
   memo = React.useMemo(() => {
@@ -42,10 +42,10 @@ export const useGetGamesForAppIds = function useGetGamesForAppIds(stateFromStore
     const mapped = found.map((getCanonicalGameId) => getCanonicalGameId.getCanonicalGameId());
     return mapped.filter(lib(closure_1_2[4]).isNotNullish);
   }, items);
-  const games = _require(7247).useGames(memo);
-  const obj = _require(7247);
+  const games = _require(7309).useGames(memo);
+  const obj = _require(7309);
   const items1 = [closure_4];
-  return _require(586).useStateFromStoresArray(items1, () => {
+  return _require(504).useStateFromStoresArray(items1, () => {
     const mapped = memo.map((closure_0) => game.getGame(closure_0));
     return mapped.filter(lib(closure_1_2[4]).isNotNullish);
   });

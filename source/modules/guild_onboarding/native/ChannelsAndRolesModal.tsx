@@ -1,22 +1,22 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11549
+// Function ID: 11550
 // Name: ChannelsAndRolesScreen
-// Dependencies: [32, 19, 17, 1908, 7041, 21, 4481, 709, 644, 7273, 9721, 1233, 9722, 11482, 11488, 10855, 2]
+// Dependencies: [32, 19, 17, 1979, 7101, 21, 4560, 576, 563, 7335, 9792, 1114, 9793, 11550, 11556, 10924, 2]
 // Exports: default
 
-// Module 11481 (ChannelsAndRolesScreen)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7273 */;
-import _modDef10855 from "module_10855" /* 10855 */;
+// Module 11549 (ChannelsAndRolesScreen)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 563 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7335 */;
+import _modDef10924 from "module_10924" /* 10924 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 7041 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 7101 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function ChannelsAndRolesScreen(guildId) {
@@ -115,5 +115,5 @@ export default function ChannelsAndRolesModal(arg0) {
       return closure_1_8(closure_1_11, { guildId: closure_0, defaultTab: closure_1 });
     }
   };
-  return tmp3(_modDef10855, obj);
+  return tmp3(_modDef10924, obj);
 };

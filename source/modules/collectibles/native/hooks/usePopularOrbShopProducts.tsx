@@ -1,19 +1,19 @@
-// Module ID: 14994
-// Function ID: 14995
+// Module ID: 15069
+// Function ID: 15070
 // Name: MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL
-// Dependencies: [5, 32, 19, 8151, 1921, 7475, 7477, 675, 684, 7486, 586, 4139, 678, 14995, 14996, 679, 8803, 8150, 8714, 14997, 14999, 2]
+// Dependencies: [5, 32, 19, 8220, 1371, 7542, 7544, 1076, 1090, 7553, 504, 4218, 1079, 15070, 15071, 1080, 8873, 8219, 8784, 15072, 15074, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 14994 (MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL)
-import setDefault from "set" /* 684 */;
+// Module 15069 (MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "getFetchState" /* 8151 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import closure_8 from "updateCategoriesAndProducts" /* 7475 */;
-import closure_9 from "fromServer" /* 7477 */;
-import { CollectiblesMobileShopScreen as closure_10 } from "items" /* 675 */;
+import closure_6 from "getFetchState" /* 8220 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import closure_8 from "updateCategoriesAndProducts" /* 7542 */;
+import closure_9 from "fromServer" /* 7544 */;
+import { CollectiblesMobileShopScreen as closure_10 } from "items" /* 1076 */;
 
 const require = arg1;
 let closure_11 = 10 * setDefault.Millis.SECOND;
@@ -45,15 +45,15 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   const tmp4 = callback(React.useState(false), 2);
   React = tmp4[1];
   const items = [POPULARITY];
-  const stateFromStores = enabled(586).useStateFromStores(items, () => POPULARITY.getCurrentUser());
-  let obj2 = enabled(586);
+  const stateFromStores = enabled(504).useStateFromStores(items, () => POPULARITY.getCurrentUser());
+  let obj2 = enabled(504);
   let tmp8 = first;
-  const canUseShopDiscountsResult = first(4139).canUseShopDiscounts(stateFromStores);
+  const canUseShopDiscountsResult = first(4218).canUseShopDiscounts(stateFromStores);
   c6 = canUseShopDiscountsResult;
   if ("recency" === enabled.sortType) {
-    POPULARITY = tmp5(678).CollectibleSearchSortType.RECENCY;
+    POPULARITY = tmp5(1079).CollectibleSearchSortType.RECENCY;
   } else {
-    POPULARITY = tmp5(678).CollectibleSearchSortType.POPULARITY;
+    POPULARITY = tmp5(1079).CollectibleSearchSortType.POPULARITY;
   }
   const items1 = [enabled, POPULARITY];
   const effect = obj.useEffect(() => {
@@ -203,26 +203,26 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     }
     callback2(false);
   }, items2);
-  let tmp5Result = tmp5(8803);
+  let tmp5Result = tmp5(8873);
   let fetchCollectiblesProducts = tmp5Result.useFetchCollectiblesProducts(first);
   const items3 = [first];
   const effect2 = obj.useEffect(() => {
     if (0 !== first.length) {
-      let obj = enabled(8150);
+      let obj = enabled(8219);
       obj = { skuIds: null };
       obj[0] = tmp;
       const result = obj.maybeFetchProductsBySkuIds(obj);
     }
   }, items3);
-  tmp5Result = tmp5(8714);
+  tmp5Result = tmp5(8784);
   const getOrFetchStorefrontPricesForSkuIds = tmp5Result.useGetOrFetchStorefrontPricesForSkuIds({ skuIds: first });
-  let obj3 = first(4139);
+  let obj3 = first(4218);
   const items4 = [c6];
-  stateFromStoresArray = enabled(586).useStateFromStoresArray(items4, () => first.map((closure_0) => productsForSku.getProductsForSku(closure_0)));
-  const tmp5Result1 = enabled(586);
+  stateFromStoresArray = enabled(504).useStateFromStoresArray(items4, () => first.map((closure_0) => productsForSku.getProductsForSku(closure_0)));
+  const tmp5Result1 = enabled(504);
   const items5 = [c6];
-  stateFromStoresArray1 = enabled(586).useStateFromStoresArray(items5, () => first.map((closure_0) => fetchStateForSku.getFetchStateForSku(closure_0)));
-  const tmp17 = tmp8(14997)();
+  stateFromStoresArray1 = enabled(504).useStateFromStoresArray(items5, () => first.map((closure_0) => fetchStateForSku.getFetchStateForSku(closure_0)));
+  const tmp17 = tmp8(15072)();
   constants = tmp17;
   const items6 = [tmp17, first, stateFromStoresArray, canUseShopDiscountsResult];
   memo = obj.useMemo(() => callback3(first).map((product) => {
@@ -304,9 +304,9 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     obj = { product, hasShopDiscount: closure_6 };
     return null != obj.getProductOrbPrice(obj);
   }), items8);
-  const tmp5Result2 = enabled(586);
+  const tmp5Result2 = enabled(504);
   obj = { products: memo2, screen: constants.ORBS, bypassAndroidUnsyncedFilter: true };
-  filteredAndSortedProducts = enabled(14999).useFilteredAndSortedProducts(obj);
+  filteredAndSortedProducts = enabled(15074).useFilteredAndSortedProducts(obj);
   const items9 = [filteredAndSortedProducts];
   const memo3 = obj.useMemo(() => filteredAndSortedProducts.slice(0, 10), items9);
   if (!fetchCollectiblesProducts) {

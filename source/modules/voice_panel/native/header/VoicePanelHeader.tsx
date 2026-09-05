@@ -1,30 +1,30 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17100
+// Function ID: 17101
 // Name: MusicMuteButton
-// Dependencies: [32, 19, 17, 4497, 4394, 9828, 1215, 1386, 4532, 4130, 5380, 1921, 12205, 12208, 12203, 4502, 502, 21, 4481, 709, 4218, 4935, 7013, 4925, 5544, 12204, 9962, 586, 9830, 16957, 1233, 9839, 9841, 9842, 4923, 16959, 17023, 4681, 4197, 12209, 4482, 17024, 16979, 17025, 5585, 17026, 9019, 9099, 9060, 4205, 16452, 17027, 11086, 17029, 9141, 689, 17040, 9960, 17050, 17051, 2]
+// Dependencies: [32, 19, 17, 4576, 4476, 9899, 502, 1957, 1908, 4209, 5419, 1371, 12273, 12276, 12271, 4581, 1085, 21, 4560, 576, 4296, 4974, 7073, 4964, 5589, 12272, 10033, 504, 9901, 17035, 1114, 9910, 9912, 9913, 4962, 17037, 17101, 4713, 4262, 12277, 4561, 17102, 17057, 17103, 5630, 17104, 9089, 9170, 9131, 4271, 16528, 17105, 11154, 17107, 9212, 1094, 17118, 10031, 17128, 17129, 2]
 
-// Module 17022 (MusicMuteButton)
-import ThemesDefault from "Themes" /* 709 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9962 */;
+// Module 17100 (MusicMuteButton)
+import ThemesDefault from "Themes" /* 576 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10033 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4497 */;
-import closure_7 from "getHash" /* 4394 */;
-import closure_8 from "initialize" /* 9828 */;
-import closure_9 from "fetchFingerprint" /* 1215 */;
-import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "anyoneHasFlagInContext" /* 5380 */;
-import closure_14 from "mergeGuildAvatar" /* 1921 */;
-import VoicePanelModes from "VoicePanelModes" /* 12205 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 12208 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12203 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
-import { ThemeTypes } from "sum" /* 502 */;
+import closure_6 from "getParticipants" /* 4576 */;
+import closure_7 from "getHash" /* 4476 */;
+import closure_8 from "initialize" /* 9899 */;
+import closure_9 from "fetchFingerprint" /* 502 */;
+import closure_10 from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_12 from "markAllUserIdListsStale" /* 4209 */;
+import closure_13 from "anyoneHasFlagInContext" /* 5419 */;
+import closure_14 from "mergeGuildAvatar" /* 1371 */;
+import VoicePanelModes from "VoicePanelModes" /* 12273 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 12276 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12271 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function MusicMuteButton(channelId) {
@@ -34,16 +34,16 @@ function MusicMuteButton(channelId) {
   if (tmp3 != null) {
     const speaker = tmp3.speaker;
   }
-  let obj = stateFromStores(586);
+  let obj = stateFromStores(504);
   const items = [closure_8];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6 = null;
   if (obj2.useShowStageMusicMuteButton(channelId)) {
     tmp6 = null;
     if (speaker) {
-      const intl = tmp4(1233).intl;
+      const intl = tmp4(1114).intl;
       const string = intl.string;
-      const t = tmp4(1233).t;
+      const t = tmp4(1114).t;
       if (stateFromStores) {
         let stringResult = string(t.ScHlfl);
       } else {
@@ -51,13 +51,13 @@ function MusicMuteButton(channelId) {
       }
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      obj[1] = tmp(stateFromStores ? 9839 : 9841);
+      obj[1] = tmp(stateFromStores ? 9910 : 9912);
       obj[2] = function onPress() {
         return stateFromStores(closure_1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(tmp(16957), obj);
+      closure_23(tmp(17035), obj);
       const tmp7 = closure_23;
-      const tmpResult = tmp(16957);
+      const tmpResult = tmp(17035);
     }
   }
   return tmp6;

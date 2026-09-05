@@ -1,11 +1,11 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7571
+// Function ID: 7572
 // Name: fromServer
-// Dependencies: [7476, 7505, 7507, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7506, 2]
+// Dependencies: [7543, 7572, 7574, 7577, 7578, 7579, 7580, 7581, 7582, 7583, 7584, 7573, 2]
 
-// Module 7504 (fromServer)
-import closure_2 from "fromServer" /* 7476 */;
-import { CountdownTimerBlockRecord, FeaturedBlockRecord, FeedBlockRecord, GameServerHostingBannerBlockRecord as closure_6, HeroBlockRecord, ImmersiveBannerBlockRecord as closure_8, RewardHeroBlockRecord, ShelfBlockRecord, SocialLayerStorefrontPromotionalBannerBlockRecord as closure_11, WideBannerBlockRecord } from "fromServer" /* 7505 */;
+// Module 7571 (fromServer)
+import closure_2 from "fromServer" /* 7543 */;
+import { CountdownTimerBlockRecord, FeaturedBlockRecord, FeedBlockRecord, GameServerHostingBannerBlockRecord as closure_6, HeroBlockRecord, ImmersiveBannerBlockRecord as closure_8, RewardHeroBlockRecord, ShelfBlockRecord, SocialLayerStorefrontPromotionalBannerBlockRecord as closure_11, WideBannerBlockRecord } from "fromServer" /* 7572 */;
 
 const require = arg1;
 let prototype;

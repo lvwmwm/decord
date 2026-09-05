@@ -1,19 +1,19 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15707
+// Function ID: 15708
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4480, 586, 4866, 2]
+// Dependencies: [19, 4559, 504, 4905, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 15631 (useManaTextMigrationHighlightRestartNotice)
+// Module 15707 (useManaTextMigrationHighlightRestartNotice)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getUserAgnosticState" /* 4480 */;
+import closure_4 from "getUserAgnosticState" /* 4559 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
 
 export const useManaTextMigrationHighlightRestartNotice = function useManaTextMigrationHighlightRestartNotice() {
   const items = [closure_4];
-  const stateFromStores = _require(586).useStateFromStores(items, () => closure_4.get("highlight_mana_text"));
+  const stateFromStores = _require(504).useStateFromStores(items, () => closure_4.get("highlight_mana_text"));
   _require = React.useRef(true);
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {

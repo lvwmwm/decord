@@ -1,18 +1,18 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8776
+// Function ID: 8777
 // Name: getUserWishlistKey
-// Dependencies: [32, 19, 7554, 1215, 1921, 8707, 8708, 586, 8713, 12, 8714, 8118, 8719, 8724, 2]
+// Dependencies: [32, 19, 7621, 502, 1371, 8777, 8778, 504, 8783, 12, 8784, 8187, 8789, 8794, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 8706 (getUserWishlistKey)
+// Module 8776 (getUserWishlistKey)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { useEffect } from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7554 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import closure_9 from "get" /* 8707 */;
-import { getWishlistSkuIds } from "fromServer" /* 8708 */;
+import closure_6 from "createUserWidgetFromServer" /* 7621 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import closure_9 from "get" /* 8777 */;
+import { getWishlistSkuIds } from "fromServer" /* 8778 */;
 
 const require = arg1;
 function getUserWishlistKey(arg0, arg1) {
@@ -245,7 +245,7 @@ export const useIsSkuInWishlist = function useIsSkuInWishlist(stateFromStores, s
   const _require = stateFromStores;
   closure_1 = skuId;
   const items = [closure_9];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let hasSkuIdResult = null != closure_0;
     if (hasSkuIdResult) {
       hasSkuIdResult = closure_1_9.hasSkuId(tmp, closure_1);

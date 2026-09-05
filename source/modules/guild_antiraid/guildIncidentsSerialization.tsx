@@ -1,10 +1,10 @@
-// Module ID: 1906
-// Function ID: 1907
+// Module ID: 1977
+// Function ID: 1978
 // Name: fromServerGuildIncidentsData
 // Dependencies: [2]
 // Exports: fromServerGuildIncidentsData, toServerGuildIncidentsData
 
-// Module 1906 (fromServerGuildIncidentsData)
+// Module 1977 (fromServerGuildIncidentsData)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_antiraid/guildIncidentsSerialization.tsx");

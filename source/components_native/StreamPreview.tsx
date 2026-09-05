@@ -1,20 +1,20 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 10059
+// Function ID: 10060
 // Name: render
-// Dependencies: [19, 17, 1301, 21, 4481, 709, 4205, 1362, 9989, 9990, 1233, 5084, 9991, 586, 2]
+// Dependencies: [19, 17, 1183, 21, 4560, 576, 4271, 4411, 10060, 10061, 1114, 5123, 10062, 504, 2]
 // Exports: default
 
-// Module 9988 (render)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9991 */;
+// Module 10059 (render)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10062 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleThemeChange" /* 1301 */;
+import closure_5 from "handleThemeChange" /* 1183 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ Image: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -38,9 +38,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(9989);
+    let tmp6Result = tmp6(10060);
   } else {
-    tmp6Result = tmp6(9990);
+    tmp6Result = tmp6(10061);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);

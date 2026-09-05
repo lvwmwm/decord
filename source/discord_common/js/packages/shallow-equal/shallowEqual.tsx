@@ -1,10 +1,10 @@
-// Module ID: 640
-// Function ID: 641
+// Module ID: 558
+// Function ID: 559
 // Name: shallowEqual
 // Dependencies: [2]
 // Exports: areArraysShallowEqual, default
 
-// Module 640 (shallowEqual)
+// Module 558 (shallowEqual)
 import set from "set" /* 2 */;
 
 let closure_0 = {};

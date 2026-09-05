@@ -1,12 +1,12 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16842
+// Function ID: 16843
 // Name: handleWebhookCreateUpdate
-// Dependencies: [16765, 12, 586, 706, 2]
+// Dependencies: [16843, 12, 504, 573, 2]
 
-// Module 16764 (handleWebhookCreateUpdate)
+// Module 16842 (handleWebhookCreateUpdate)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleWebhookCreateUpdate(arg0) {
   ({ guildId, webhook } = arg0);

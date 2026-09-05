@@ -1,11 +1,11 @@
-// Module ID: 4675
-// Function ID: 4676
+// Module ID: 4707
+// Function ID: 4708
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4500, 586, 2]
+// Dependencies: [4579, 504, 2]
 // Exports: default, getAudienceRequestToSpeakState
 
-// Module 4675 (useAudienceRequestToSpeakState)
-import closure_2 from "updateVoiceState" /* 4500 */;
+// Module 4707 (useAudienceRequestToSpeakState)
+import closure_2 from "updateVoiceState" /* 4579 */;
 
 const require = arg1;
 const obj = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };
@@ -16,7 +16,7 @@ export default function useAudienceRequestToSpeakState(arg0, arg1) {
   dependencyMap = arg1;
   const items = [closure_2];
   const items1 = [arg0, arg1];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null != closure_0) {
       if (null != closure_1) {
         const voiceStateForChannel = closure_1_2.getVoiceStateForChannel(tmp8, tmp);

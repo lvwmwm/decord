@@ -1,13 +1,13 @@
-// Module ID: 8336
-// Function ID: 8337
+// Module ID: 8406
+// Function ID: 8407
 // Name: _startStageInstance
-// Dependencies: [5, 673, 527, 2]
+// Dependencies: [5, 1074, 1272, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8336 (_startStageInstance)
-import sendRequest from "sendRequest" /* 527 */;
+// Module 8406 (_startStageInstance)
+import sendRequest from "sendRequest" /* 1272 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 673 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 require = arg1;
 function _startStageInstance() {
@@ -21,7 +21,7 @@ function _startStageInstance() {
     c6 = 0;
     c5 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(527).HTTP;
+      const HTTP = callback(1272).HTTP;
       obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = constants.STAGE_INSTANCES;
       const obj2 = { channel_id: null, topic: null, privacy_level: null, guild_scheduled_event_id: null, send_start_notification: null };
@@ -31,7 +31,7 @@ function _startStageInstance() {
       obj2[3] = closure_4;
       obj2[4] = constants;
       obj1[1] = obj2;
-      obj1[2] = callback(527).rejectWithMigratedError();
+      obj1[2] = callback(1272).rejectWithMigratedError();
       yield HTTP.post(obj1);
       return body.body;
     })();
@@ -54,14 +54,14 @@ function _updateStageInstance() {
     c4 = 0;
     c3 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(527).HTTP;
+      const HTTP = callback(1272).HTTP;
       obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = c3.STAGE_INSTANCE(callback);
       const obj2 = { topic: null, privacy_level: null };
       obj2[0] = dependencyMap;
       obj2[1] = closure_2;
       obj1[1] = obj2;
-      obj1[2] = callback(527).rejectWithMigratedError();
+      obj1[2] = callback(1272).rejectWithMigratedError();
       yield HTTP.patch(obj1);
       return body.body;
     })();

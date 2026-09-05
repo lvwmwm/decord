@@ -1,14 +1,14 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12350
+// Function ID: 12351
 // Name: fetch
-// Dependencies: [5, 1386, 673, 684, 3, 527, 1482, 2]
+// Dependencies: [5, 1957, 1074, 1090, 3, 1272, 1471, 2]
 
-// Module 12282 (fetch)
-import sendRequest from "sendRequest" /* 527 */;
-import parseDefault from "parse" /* 1482 */;
+// Module 12350 (fetch)
+import sendRequest from "sendRequest" /* 1272 */;
+import parseDefault from "parse" /* 1471 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ SearchTypes: c5, Endpoints: closure_6 } = ME);
@@ -111,7 +111,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
                   if (!isNaN(callback)) {
                     num2 = 5000;
                     if (0 !== callback) {
-                      num2 = callback * closure_1_1(684).Millis.SECOND;
+                      num2 = callback * closure_1_1(1090).Millis.SECOND;
                     }
                   }
                   closure_3.retryDelay = num2;

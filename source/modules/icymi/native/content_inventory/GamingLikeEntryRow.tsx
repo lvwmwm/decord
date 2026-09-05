@@ -1,19 +1,19 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16501
+// Function ID: 16502
 // Name: items
-// Dependencies: [19, 17, 1921, 21, 12940, 8066, 12945, 16376, 709, 586, 4755, 9105, 7108, 8064, 8605, 8616, 8061, 16426, 2008, 8281, 4731, 16430, 1233, 16432, 4477, 4325, 7574, 11, 686, 5084, 5542, 16433, 2]
+// Dependencies: [19, 17, 1371, 21, 13008, 8135, 13013, 16452, 576, 504, 4794, 9176, 7168, 8133, 8675, 8686, 8130, 16502, 1896, 8351, 4763, 16506, 1114, 16508, 4556, 4404, 7641, 11, 672, 5123, 5587, 16509, 2]
 // Exports: default
 
-// Module 16425 (items)
-import ThemesDefault from "Themes" /* 709 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8066 */;
-import ActiveTimestampAll from "ActiveTimestamp" /* 12940 */;
-import TrendingType from "TrendingType" /* 12945 */;
+// Module 16501 (items)
+import ThemesDefault from "Themes" /* 576 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8135 */;
+import ActiveTimestampAll from "ActiveTimestamp" /* 13008 */;
+import TrendingType from "TrendingType" /* 13013 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_6 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16376 */;
+import createICYMIStyles from "createICYMIStyles" /* 16452 */;
 
 require = arg1;
 ({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);

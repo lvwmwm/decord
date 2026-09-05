@@ -1,11 +1,11 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12654
+// Function ID: 12655
 // Name: handleInviteData
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 12586 (handleInviteData)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 12654 (handleInviteData)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 function handleInviteData(invite) {
   const guild = invite.invite.guild;

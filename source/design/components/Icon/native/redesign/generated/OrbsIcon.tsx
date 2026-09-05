@@ -1,14 +1,14 @@
-// Module ID: 8767
-// Function ID: 8768
+// Module ID: 8837
+// Function ID: 8838
 // Name: OrbsIcon
-// Dependencies: [19, 21, 709, 4196, 8768, 2]
+// Dependencies: [19, 21, 576, 4261, 8838, 2]
 // Exports: OrbsIcon
 
-// Module 8767 (OrbsIcon)
+// Module 8837 (OrbsIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8768 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 8838 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

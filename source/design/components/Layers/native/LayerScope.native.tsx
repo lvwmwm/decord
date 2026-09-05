@@ -1,16 +1,16 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7156
+// Function ID: 7157
 // Name: Layer
-// Dependencies: [32, 19, 17, 673, 21, 5553, 7097, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 5598, 7157, 2]
 // Exports: LayerScope
 
-// Module 7096 (Layer)
-import useInitialValueDefault from "useInitialValue" /* 5553 */;
-import add from "add" /* 7097 */;
+// Module 7156 (Layer)
+import useInitialValueDefault from "useInitialValue" /* 5598 */;
+import add from "add" /* 7157 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NOOP } from "ME" /* 673 */;
+import { NOOP } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -19,7 +19,7 @@ function Layer(zIndex) {
   let context;
   dependencyMap = undefined;
   let callback;
-  context = React.useContext(zIndex(7097).LayerContext);
+  context = React.useContext(zIndex(7157).LayerContext);
   dependencyMap = callback(React.useState({}), 2)[1];
   callback = React.useRef(null);
   const items = [context];

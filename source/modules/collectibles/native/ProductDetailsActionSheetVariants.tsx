@@ -1,19 +1,19 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13150
+// Function ID: 13151
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4481, 709, 8772, 5084, 1233, 8796, 7073, 7486, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8842, 5123, 1114, 8866, 7133, 7553, 4556, 2]
 // Exports: default
 
-// Module 13082 (VariantOption)
+// Module 13150 (VariantOption)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7073 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 8772 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8796 */;
+import ThemesDefault from "Themes" /* 576 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7133 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 8842 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 8866 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function VariantOption(onPress) {
@@ -22,10 +22,10 @@ function VariantOption(onPress) {
   let obj = getProductPurchaseState;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   if (isPurchased) {
-    const intl = tmp2(1233).intl;
+    const intl = tmp2(1114).intl;
     obj = { variantLabel: null };
     obj[0] = variant.name;
-    let name = intl.formatToPlainString(tmp2(1233).t["SfQB4+"], obj);
+    let name = intl.formatToPlainString(tmp2(1114).t["SfQB4+"], obj);
   } else {
     name = variant.name;
   }
@@ -62,7 +62,7 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
   const colors = ThemesDefault.colors;
   obj = { variantOption: obj, variantOptionInner: null };
   obj[6] = arg0 ? colors.BUTTON_OUTLINE_PRIMARY_TEXT : colors.BORDER_STRONG;
-  obj = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: tmp(709).radii.round, borderWidth: 1, borderColor: tmp(709).colors.BACKGROUND_BASE_LOW };
+  obj = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: tmp(576).radii.round, borderWidth: 1, borderColor: tmp(576).colors.BACKGROUND_BASE_LOW };
   obj[1] = obj;
   return obj;
 });

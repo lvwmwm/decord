@@ -1,22 +1,22 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16735
+// Function ID: 16736
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4481, 709, 10153, 10907, 4448, 10157, 2008, 10156, 5647, 4934, 4477, 1233, 3178, 4936, 12685, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 10224, 10976, 4527, 10228, 1896, 10227, 5692, 4973, 4556, 1114, 3225, 4975, 12753, 2]
 // Exports: default
 
-// Module 16658 (FavoritesEmptyState)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import Button from "Button" /* 4936 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10153 */;
+// Module 16735 (FavoritesEmptyState)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import Button from "Button" /* 4975 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10224 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -52,15 +52,15 @@ export default function FavoritesEmptyState() {
   items[1] = callback2(Stack.Stack, obj);
   if (obj.useFavoritesAccess("favorites_empty_state").hasAccess) {
     const obj3 = { variant: "primary", text: null, icon: null, onPress: null };
-    const intl4 = tmp2(1233).intl;
-    obj3[1] = intl4.string(tmp9(3178)["6kk0gM"]);
-    obj3[2] = tmp8(tmp2(12685).PlusMediumIcon, {});
+    const intl4 = tmp2(1114).intl;
+    obj3[1] = intl4.string(tmp9(3225)["6kk0gM"]);
+    obj3[2] = tmp8(tmp2(12753).PlusMediumIcon, {});
     obj3[3] = callback;
     let obj4 = obj3;
   } else {
     obj4 = { variant: "primary", text: null, onPress: null };
-    const intl3 = tmp2(1233).intl;
-    obj4[1] = intl3.string(tmp9(3178).yYVbdv);
+    const intl3 = tmp2(1114).intl;
+    obj4[1] = intl3.string(tmp9(3225).yYVbdv);
     obj4[2] = callback1;
   }
   items[2] = callback(Button.Button, obj4);

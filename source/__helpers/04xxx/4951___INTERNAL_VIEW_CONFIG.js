@@ -1,30 +1,19 @@
 // Module ID: 4951
 // Function ID: 4952
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [78, 80, 65]
+// Dependencies: [17, 26, 106, 65]
 
 // Module 4951 (__INTERNAL_VIEW_CONFIG)
-import pointsDiffer from "pointsDiffer" /* 78 */;
-import processColorElement from "processColorElement" /* 80 */;
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+import result from "result" /* 26 */;
+import weakSet from "weakSet" /* 106 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-let obj = { startPoint: { diff: pointsDiffer }, endPoint: null, colors: null, locations: true, useAngle: true, angleCenter: null, angle: true, borderRadii: true };
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-obj[1] = { diff: pointsDiffer };
-if ("default" in processColorElement) {
-  processColorElement = processColorElement.default;
-}
-obj[2] = { process: processColorElement };
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-obj = { uiViewClassName: "RNLinearGradient", validAttributes: obj };
-obj[5] = { diff: pointsDiffer };
+const codegenNativeComponent = get_ActivityIndicator.codegenNativeComponent;
+let obj = { uiViewClassName: "RNSTabsHost", directEventTypes: { topNativeFocusChange: { registrationName: "onNativeFocusChange" } }, validAttributes: null };
+obj = { tabBarHidden: true, nativeContainerBackgroundColor: result.colorAttribute, tabBarBackgroundColor: result.colorAttribute, tabBarItemTitleFontFamily: true, tabBarItemTitleFontSize: true, tabBarItemTitleFontSizeActive: true, tabBarItemTitleFontWeight: true, tabBarItemTitleFontStyle: true, tabBarItemTitleFontColor: result.colorAttribute, tabBarItemTitleFontColorActive: result.colorAttribute, tabBarItemIconColor: result.colorAttribute, tabBarItemIconColorActive: result.colorAttribute, tabBarItemActiveIndicatorColor: result.colorAttribute, tabBarItemActiveIndicatorEnabled: true, tabBarItemRippleColor: result.colorAttribute, tabBarItemLabelVisibilityMode: true, tabBarTintColor: result.colorAttribute, tabBarMinimizeBehavior: true, tabBarControllerMode: true, controlNavigationStateInJS: true };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onNativeFocusChange: true }));
+obj[2] = obj;
 
-export default setRuntimeConfigProvider.get("RNLinearGradient", () => obj);
+export default setRuntimeConfigProvider.get("RNSTabsHost", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

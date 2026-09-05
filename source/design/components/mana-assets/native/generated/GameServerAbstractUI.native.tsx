@@ -1,14 +1,14 @@
-// Module ID: 6036
-// Function ID: 6037
+// Module ID: 6091
+// Function ID: 6092
 // Name: GameServerAbstractUI
-// Dependencies: [21, 5542, 6037, 2]
+// Dependencies: [21, 5587, 6092, 2]
 // Exports: GameServerAbstractUI
 
-// Module 6036 (GameServerAbstractUI)
+// Module 6091 (GameServerAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 6037 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 6092 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameServerAbstractUI.native.tsx");

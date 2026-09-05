@@ -1,0 +1,42 @@
+// Module ID: 4291
+// Function ID: 4292
+// Name: DataBindByName
+// Dependencies: [42, 41, 4292, 4314, 4319, 4320, 4321, 4322, 4323, 4324, 4325, 4315, 4326, 4327, 4328, 4331, 4332, 4333, 4334, 4335, 4336, 4337, 4338, 4339, 4340]
+
+// Module 4291 (DataBindByName)
+import _createClassDefault from "_createClass" /* 42 */;
+import closure_0 from "_classCallCheck" /* 41 */;
+
+class DataBindByName {
+  constructor(arg0) {
+    tmp = closure_0(this, DataBindByName);
+    this.byName = global;
+    return;
+  }
+}
+
+export const DataBindByName = _createClassDefault(DataBindByName);
+export const NitroRiveView = require("NitroRiveView").NitroRiveView;
+export const RiveView = require("defaultOnError").RiveView;
+export const Fit = require("module_4319").Fit;
+export const Alignment = require("module_4320").Alignment;
+export const RiveFileFactory = require("_fromURL").RiveFileFactory;
+export const RiveImages = require("RiveImages").RiveImages;
+export const RiveFonts = require("resolveWeight").RiveFonts;
+export const RiveColor = require("RiveColor").RiveColor;
+export const RiveEventType = require("module_4325").RiveEventType;
+export const RiveErrorType = require("module_4315").RiveErrorType;
+export const ArtboardByIndex = require("ArtboardByIndex").ArtboardByIndex;
+export const ArtboardByName = require("ArtboardByIndex").ArtboardByName;
+export const useRive = require("useRive").useRive;
+export const useRiveNumber = require("getNumberProperty").useRiveNumber;
+export const useRiveString = require("getStringProperty").useRiveString;
+export const useRiveBoolean = require("getBooleanProperty").useRiveBoolean;
+export const useRiveEnum = require("getEnumProperty").useRiveEnum;
+export const useRiveColor = require("useRiveColor").useRiveColor;
+export const useRiveTrigger = require("useRiveTrigger").useRiveTrigger;
+export const useRiveList = require("_temp2").useRiveList;
+export const useViewModelInstance = require("useViewModelInstance").useViewModelInstance;
+export const useRiveFile = require("useRiveFile").useRiveFile;
+export const RiveRuntime = require("_initialize").RiveRuntime;
+export const DataBindMode = require("module_4340").DataBindMode;

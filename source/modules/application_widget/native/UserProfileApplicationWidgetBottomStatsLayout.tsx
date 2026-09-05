@@ -1,15 +1,15 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 9018
+// Function ID: 9019
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4481, 709, 8856, 8943, 4477, 8944, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8926, 9013, 4556, 9014, 2]
 // Exports: default
 
-// Module 8948 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 9018 (UserProfileApplicationWidgetBottomStatsLayout)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;

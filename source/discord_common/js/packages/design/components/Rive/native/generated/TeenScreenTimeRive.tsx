@@ -1,12 +1,12 @@
-// Module ID: 4294
-// Function ID: 4295
+// Module ID: 4372
+// Function ID: 4373
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 4212, 4295, 4267, 2]
+// Dependencies: [109, 19, 21, 4290, 4373, 4345, 2]
 
-// Module 4294 (TeenScreenTimeRive)
-import BaseRive from "BaseRive" /* 4212 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4267 */;
-import metadataDefault from "metadata" /* 4295 */;
+// Module 4372 (TeenScreenTimeRive)
+import BaseRive from "BaseRive" /* 4290 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4345 */;
+import metadataDefault from "metadata" /* 4373 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

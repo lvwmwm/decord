@@ -1,15 +1,15 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12594
+// Function ID: 12595
 // Name: loadMessageRequestData
-// Dependencies: [5, 4743, 4496, 12527, 673, 586, 12, 527, 706, 2]
+// Dependencies: [5, 4781, 4575, 12595, 1074, 504, 12, 1272, 573, 2]
 // Exports: useMessageRequestPreview
 
-// Module 12526 (loadMessageRequestData)
+// Module 12594 (loadMessageRequestData)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "reinjectEphemerals" /* 4743 */;
-import closure_5 from "generateOldThreadCutoff" /* 4496 */;
-import closure_6 from "isMessagePreviewEnabledForChannel" /* 12527 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "reinjectEphemerals" /* 4781 */;
+import closure_5 from "generateOldThreadCutoff" /* 4575 */;
+import closure_6 from "isMessagePreviewEnabledForChannel" /* 12595 */;
+import { Endpoints } from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -312,7 +312,7 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
   }
   const items = [closure_6, closure_4, closure_5];
   const items1 = [id];
-  const stateFromStoresObject = id(586).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = id(504).useStateFromStoresObject(items, () => {
     const lastMessageIdResult = closure_1_5.lastMessageId(id);
     const messageRequestPreview = closure_1_6.getMessageRequestPreview(id);
     if (null == messageRequestPreview.message) {
@@ -328,10 +328,10 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
     return messageRequestPreview;
   }, items1);
   ({ loaded, message, error } = stateFromStoresObject);
-  const obj2 = id(586);
+  const obj2 = id(504);
   const items2 = [closure_6];
   const items3 = [id];
-  const stateFromStores = id(586).useStateFromStores(items2, () => closure_1_6.shouldLoadMessageRequestPreview(id), items3);
+  const stateFromStores = id(504).useStateFromStores(items2, () => closure_1_6.shouldLoadMessageRequestPreview(id), items3);
   if (flag) {
     flag = !loaded;
   }

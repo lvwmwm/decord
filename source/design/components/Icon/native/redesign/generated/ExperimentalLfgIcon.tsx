@@ -1,14 +1,14 @@
-// Module ID: 5031
-// Function ID: 5032
+// Module ID: 5070
+// Function ID: 5071
 // Name: ExperimentalLfgIcon
-// Dependencies: [19, 21, 709, 4196, 5021, 2]
+// Dependencies: [19, 21, 576, 4261, 5060, 2]
 // Exports: ExperimentalLfgIcon
 
-// Module 5031 (ExperimentalLfgIcon)
+// Module 5070 (ExperimentalLfgIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5021 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 5060 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

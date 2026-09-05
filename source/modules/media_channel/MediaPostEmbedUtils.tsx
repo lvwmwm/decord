@@ -1,18 +1,18 @@
-// Module ID: 4676
-// Function ID: 4677
+// Module ID: 4708
+// Function ID: 4709
 // Name: getMediaPostEmbedCommonData
-// Dependencies: [1908, 4130, 1921, 673, 4677, 1233, 4680, 1431, 1399, 4681, 4464, 4682, 2]
+// Dependencies: [1979, 4209, 1371, 1074, 4709, 1114, 4712, 1396, 1384, 4713, 4543, 4714, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 4676 (getMediaPostEmbedCommonData)
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import getPathsFromURL from "getPathsFromURL" /* 4464 */;
-import MAX_THUMBNAIL_COUNT from "MAX_THUMBNAIL_COUNT" /* 4677 */;
-import getNicknameDefault from "getNickname" /* 4680 */;
-import closure_3 from "createGuildRecordFromRust" /* 1908 */;
-import closure_4 from "markAllUserIdListsStale" /* 4130 */;
-import closure_5 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+// Module 4708 (getMediaPostEmbedCommonData)
+import getAvatarURLDefault from "getAvatarURL" /* 1396 */;
+import getPathsFromURL from "getPathsFromURL" /* 4543 */;
+import MAX_THUMBNAIL_COUNT from "MAX_THUMBNAIL_COUNT" /* 4709 */;
+import getNicknameDefault from "getNickname" /* 4712 */;
+import closure_3 from "createGuildRecordFromRust" /* 1979 */;
+import closure_4 from "markAllUserIdListsStale" /* 4209 */;
+import closure_5 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ GuildFeatures: closure_6, MessageAttachmentFlags: error } = ME);
@@ -32,9 +32,9 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (!canAccess) {
       has_media_attachment = mediaPostEmbedData.has_media_attachment;
     }
-    const intl = tmp17(1233).intl;
+    const intl = tmp17(1114).intl;
     const string = intl.string;
-    const t = tmp17(1233).t;
+    const t = tmp17(1114).t;
     if (canAccess) {
       let stringResult = string(t.UsZEBI);
     } else {
@@ -69,7 +69,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (flag) {
       flag = !has_media_attachment;
     }
-    let tmp17Result = tmp17(1399);
+    let tmp17Result = tmp17(1384);
     const thumbnail2 = mediaPostEmbedData.thumbnail;
     let num2;
     if (thumbnail2 != null) {
@@ -91,8 +91,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj[3] = thumbnailImage;
     let stringResult1;
     if (has_media_attachment) {
-      const intl2 = tmp17(1233).intl;
-      stringResult1 = intl2.string(tmp17(1233).t.Yonlia);
+      const intl2 = tmp17(1114).intl;
+      stringResult1 = intl2.string(tmp17(1114).t.Yonlia);
     }
     obj[4] = stringResult1;
     ({ parent_channel_id: obj5[5], channel_id: obj5[6] } = mediaPostEmbedData);
@@ -116,7 +116,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj[13] = name;
     let channelName;
     if (null != parentChannel) {
-      tmp17Result = tmp17(4681);
+      tmp17Result = tmp17(4713);
       channelName = tmp17Result.computeChannelName(parentChannel, closure_5, closure_4);
     }
     obj[14] = channelName;
@@ -133,10 +133,10 @@ export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(ur
   if (null != url) {
     const parseURLSafelyResult = getPathsFromURL.parseURLSafely(url);
     if (null != parseURLSafelyResult) {
-      let tmp2Result = tmp2(4464);
+      let tmp2Result = tmp2(4543);
       const result = tmp2Result.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
       if (null != result) {
-        tmp2Result = tmp2(4682);
+        tmp2Result = tmp2(4714);
         tryParseChannelPathResult = tmp2Result.tryParseChannelPath(result);
       }
     }
@@ -156,10 +156,10 @@ export const getMediaPostEmbedChannelPath = function getMediaPostEmbedChannelPat
   if (null != url) {
     const parseURLSafelyResult = getPathsFromURL.parseURLSafely(url);
     if (null != parseURLSafelyResult) {
-      let tmpResult = tmp(4464);
+      let tmpResult = tmp(4543);
       const result = tmpResult.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
       if (null != result) {
-        tmpResult = tmp(4682);
+        tmpResult = tmp(4714);
         return tmpResult.tryParseChannelPath(result);
       }
     }

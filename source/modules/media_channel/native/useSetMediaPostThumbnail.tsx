@@ -1,13 +1,13 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11236
+// Function ID: 11237
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 4862, 4861, 644, 5089, 9236, 4448, 2]
+// Dependencies: [19, 4901, 4900, 563, 5128, 9307, 4527, 2]
 // Exports: default
 
-// Module 11168 (useSetMediaPostThumbnail)
+// Module 11236 (useSetMediaPostThumbnail)
 import closure_3 from "noop" /* 19 */;
-import { DraftType } from "handleChanged" /* 4862 */;
-import closure_5 from "map" /* 4861 */;
+import { DraftType } from "handleChanged" /* 4901 */;
+import closure_5 from "map" /* 4900 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");

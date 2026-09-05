@@ -1,9 +1,9 @@
-// Module ID: 803
-// Function ID: 804
+// Module ID: 670
+// Function ID: 671
 // Name: Radius
 // Dependencies: [2]
 
-// Module 803 (Radius)
+// Module 670 (Radius)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/radii/generated/generated-definitions.tsx");

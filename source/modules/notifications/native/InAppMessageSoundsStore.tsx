@@ -1,14 +1,14 @@
-// Module ID: 10033
-// Function ID: 10034
+// Module ID: 10104
+// Function ID: 10105
 // Name: isInAppMessageSoundsEnabled
-// Dependencies: [592, 697, 4105, 2]
+// Dependencies: [510, 1244, 4184, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10033 (isInAppMessageSoundsEnabled)
+// Module 10104 (isInAppMessageSoundsEnabled)
 import set from "set" /* 2 */;
-import Storage2 from "Storage" /* 592 */;
-import isIterable from "isIterable" /* 4105 */;
-import identity from "identity" /* 697 */;
+import Storage2 from "Storage" /* 510 */;
+import isIterable from "isIterable" /* 4184 */;
+import identity from "identity" /* 1244 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
 let closure_3 = identity.createWithEqualityFn(() => {

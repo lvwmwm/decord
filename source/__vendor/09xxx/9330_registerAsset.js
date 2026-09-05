@@ -1,10 +1,10 @@
 // Module ID: 9330
 // Function ID: 9331
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 9330 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9710a1ee79723d3b78a21470e6bc1f77", name: "ShieldIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BrandInvertedIcon", width: 60, height: 60, scales: [2, 3], hash: "d3530007d60b5d4f6a3d08cddf26f42c", name: "BrandInvertedIcon", type: "png" });

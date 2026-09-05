@@ -1,13 +1,13 @@
-// Module ID: 7981
-// Function ID: 7982
+// Module ID: 8050
+// Function ID: 8051
 // Name: getPriceString
-// Dependencies: [4144, 4139, 7174, 2]
+// Dependencies: [4223, 4218, 7234, 2]
 // Exports: getPriceString
 
-// Module 7981 (getPriceString)
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7174 */;
-import closure_2 from "addSubscriptionPlan" /* 4144 */;
+// Module 8050 (getPriceString)
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4218 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 7234 */;
+import closure_2 from "addSubscriptionPlan" /* 4223 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
@@ -29,7 +29,7 @@ export const getPriceString = function getPriceString(hasAnyPremiumGroup) {
           const formatPriceResult = formatSingleCurrencyPrice.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(7174).formatRate(formatPriceResult, interval, intervalCount);
+            return tmp2(7234).formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }

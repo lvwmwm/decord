@@ -1,17 +1,17 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 8007
+// Function ID: 8008
 // Name: createGuildStreamSystemMessage
-// Dependencies: [4548, 7911, 7891, 7893, 1233, 7895, 2]
+// Dependencies: [4602, 7980, 7960, 7962, 1114, 7964, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 7938 (createGuildStreamSystemMessage)
+// Module 8007 (createGuildStreamSystemMessage)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import StreamIssueReportReasons from "StreamIssueReportReasons" /* 4548 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7891 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7893 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7895 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7911 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import StreamIssueReportReasons from "StreamIssueReportReasons" /* 4602 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7960 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7980 */;
 
 const StreamTypes = StreamIssueReportReasons.StreamTypes;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");

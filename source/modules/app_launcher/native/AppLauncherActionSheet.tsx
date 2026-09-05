@@ -1,13 +1,13 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16759
+// Function ID: 16760
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1497, 21, 4218, 11147, 9338, 11148, 7090, 12014, 12128, 7092, 2]
+// Dependencies: [32, 19, 1482, 21, 4296, 11215, 9409, 11216, 7150, 12082, 12196, 7152, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 16681 (AppLauncherActionSheet)
+// Module 16759 (AppLauncherActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1482 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

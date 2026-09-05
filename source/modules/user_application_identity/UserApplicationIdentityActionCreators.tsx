@@ -1,13 +1,13 @@
-// Module ID: 8954
-// Function ID: 8955
+// Module ID: 9024
+// Function ID: 9025
 // Name: fetchStore
-// Dependencies: [5, 8953, 673, 706, 527, 586, 2]
+// Dependencies: [5, 9023, 1074, 573, 1272, 504, 2]
 
-// Module 8954 (fetchStore)
+// Module 9024 (fetchStore)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "map" /* 8953 */;
-import ME from "ME" /* 673 */;
-import initialize from "initialize" /* 586 */;
+import importDefaultResult from "map" /* 9023 */;
+import ME from "ME" /* 1074 */;
+import initialize from "initialize" /* 504 */;
 
 const require = arg1;
 let c4 = importDefaultResult;

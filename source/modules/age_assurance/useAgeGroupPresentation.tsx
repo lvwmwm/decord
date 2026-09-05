@@ -1,16 +1,16 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14716
+// Function ID: 14717
 // Name: AgeGroupState
-// Dependencies: [673, 4741, 8341, 1994, 8343, 1233, 2]
+// Dependencies: [1074, 4773, 8411, 2024, 8413, 1114, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification, useAgeGroupState, useAgeGroupValueLabel
 
-// Module 14641 (AgeGroupState)
+// Module 14716 (AgeGroupState)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import combinedDefault from "combined" /* 1994 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4741 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8341 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8343 */;
+import ME from "ME" /* 1074 */;
+import combinedDefault from "combined" /* 2024 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4773 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8411 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8413 */;
 
 const HelpdeskArticles = ME.HelpdeskArticles;
 let obj = { ADULT: "adult", TEEN: "teen", UNVERIFIED: "unverified" };
@@ -50,14 +50,14 @@ export const useAgeGroupValueLabel = function useAgeGroupValueLabel() {
     tmp5 = tmp4;
   }
   if (tmp5.ADULT === UNVERIFIED) {
-    const intl3 = tmp(1233).intl;
-    return intl3.string(tmp(1233).t.XxRj7f);
+    const intl3 = tmp(1114).intl;
+    return intl3.string(tmp(1114).t.XxRj7f);
   } else if (tmp5.TEEN === UNVERIFIED) {
-    const intl2 = tmp(1233).intl;
-    return intl2.string(tmp(1233).t.sK0dmH);
+    const intl2 = tmp(1114).intl;
+    return intl2.string(tmp(1114).t.sK0dmH);
   } else if (tmp5.UNVERIFIED === UNVERIFIED) {
-    const intl = tmp(1233).intl;
-    return intl.string(tmp(1233).t.lKDPGA);
+    const intl = tmp(1114).intl;
+    return intl.string(tmp(1114).t.lKDPGA);
   }
   obj2 = useAgeVerificationRunner;
 };

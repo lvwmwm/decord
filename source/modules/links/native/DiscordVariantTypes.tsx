@@ -1,11 +1,11 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16382
+// Function ID: 16383
 // Name: DISCORD_VARIANTS
-// Dependencies: [709, 2]
+// Dependencies: [576, 2]
 
-// Module 16306 (DISCORD_VARIANTS)
+// Module 16382 (DISCORD_VARIANTS)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 
 let obj = { production: null, ci: null, main: null, beta: null, dev: null };
 obj = { scheme: "discord-prod", label: "Discord", color: ThemesDefault.unsafe_rawColors.BRAND_500 };

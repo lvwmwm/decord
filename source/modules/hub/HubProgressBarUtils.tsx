@@ -1,34 +1,34 @@
-// Module ID: 12601
-// Function ID: 12602
+// Module ID: 12669
+// Function ID: 12670
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1339, 5242, 9760, 673, 586, 1305, 1233, 1394, 1399, 2]
+// Dependencies: [19, 1221, 5281, 9831, 1074, 504, 1187, 1114, 1369, 1384, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 12601 (getHubProgressTitleForStep)
-import create from "create" /* 1305 */;
+// Module 12669 (getHubProgressTitleForStep)
+import create from "create" /* 1187 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
-import closure_4 from "set" /* 5242 */;
-import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9760 */;
-import { PlatformTypes } from "ME" /* 673 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1221 */;
+import closure_4 from "set" /* 5281 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9831 */;
+import { PlatformTypes } from "ME" /* 1074 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
   if (create.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
-    const intl3 = tmp(1233).intl;
-    return intl3.string(tmp(1233).t.iNR25n);
-  } else if (tmp(1305).HubProgressStep.INVITE_USER === nextHubProgressStep) {
-    const intl2 = tmp(1233).intl;
-    return intl2.string(tmp(1233).t["3NlTYU"]);
-  } else if (tmp(1305).HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
-    const intl = tmp(1233).intl;
-    return intl.string(tmp(1233).t.HFvFte);
-  } else if (tmp(1305).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
+    const intl3 = tmp(1114).intl;
+    return intl3.string(tmp(1114).t.iNR25n);
+  } else if (tmp(1187).HubProgressStep.INVITE_USER === nextHubProgressStep) {
+    const intl2 = tmp(1114).intl;
+    return intl2.string(tmp(1114).t["3NlTYU"]);
+  } else if (tmp(1187).HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
+    const intl = tmp(1114).intl;
+    return intl.string(tmp(1114).t.HFvFte);
+  } else if (tmp(1187).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;
   } else {
-    tmp(1394).assertNever(nextHubProgressStep);
+    tmp(1369).assertNever(nextHubProgressStep);
   }
 };
 export const useHubProgressBarCompletedSteps = function useHubProgressBarCompletedSteps(guild) {

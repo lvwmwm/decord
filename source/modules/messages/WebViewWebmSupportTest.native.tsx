@@ -1,13 +1,13 @@
-// Module ID: 4679
-// Function ID: 4680
+// Module ID: 4711
+// Function ID: 4712
 // Name: isIOSWithWebM
-// Dependencies: [1234, 4460, 2]
+// Dependencies: [1115, 4539, 2]
 // Exports: isIOSWithWebM
 
-// Module 4679 (isIOSWithWebM)
+// Module 4711 (isIOSWithWebM)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4460 */;
+import set2 from "set" /* 1115 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4539 */;
 
 const ARM64_ = "ARM64_";
 const result = set.fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");

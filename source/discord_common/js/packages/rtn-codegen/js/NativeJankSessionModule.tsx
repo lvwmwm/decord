@@ -1,9 +1,9 @@
-// Module ID: 17329
-// Function ID: 17330
+// Module ID: 17409
+// Function ID: 17410
 // Name: NativeJankSessionModule
 // Dependencies: [17, 2]
 
-// Module 17329 (NativeJankSessionModule)
+// Module 17409 (NativeJankSessionModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

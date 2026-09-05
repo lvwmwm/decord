@@ -1,13 +1,13 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5108
+// Function ID: 5109
 // Name: set
-// Dependencies: [1401, 586, 5070, 706, 2]
+// Dependencies: [1437, 504, 5109, 573, 2]
 
-// Module 5069 (set)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import privDefault from "priv" /* 1401 */;
-import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5070 */;
+// Module 5108 (set)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import privDefault from "priv" /* 1437 */;
+import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5109 */;
 import set from "set" /* 2 */;
 
 require = arg1;

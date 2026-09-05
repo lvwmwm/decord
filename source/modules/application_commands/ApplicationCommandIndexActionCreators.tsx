@@ -1,13 +1,13 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9294
+// Function ID: 9295
 // Name: _fetchApplicationCommandIndex
-// Dependencies: [5, 673, 706, 527, 684, 695, 1394, 2]
+// Dependencies: [5, 1074, 573, 1272, 1090, 1242, 1369, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 9223 (_fetchApplicationCommandIndex)
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 9294 (_fetchApplicationCommandIndex)
+import dispatcherDefault from "dispatcher" /* 573 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 
 const require = arg1;
 function _fetchApplicationCommandIndex() {
@@ -60,7 +60,7 @@ function _fetchApplicationCommandIndex() {
                   closure_0 = arg0;
                   c2 = 0;
                   c3 = 0;
-                  return (/* F125356 */ function*() { ... })();
+                  return (/* F125642 */ function*() { ... })();
                 });
                 closure_7 = tmp;
                 const apply = tmp.apply;
@@ -73,7 +73,7 @@ function _fetchApplicationCommandIndex() {
               }
               function end(error) {
                 const diff = performance.now() - c3;
-                let obj = lib2(695);
+                let obj = lib2(1242);
                 obj = { duration_ms: diff, error: error.error, aborted: lib2.signal.aborted, include_applications: true, retries: Math.max(constants - 1, 0), kind: null, command_type: null, url: dependencyMap, target_type: lib.type, target_id: null, failure_statuses: null };
                 const type = lib.type;
                 if ("channel" === type) {
@@ -86,8 +86,8 @@ function _fetchApplicationCommandIndex() {
                     if ("application" === type) {
                       channelId = tmp3.applicationId;
                     } else {
-                      lib(1394).assertNever(tmp3);
-                      const obj3 = lib(1394);
+                      lib(1369).assertNever(tmp3);
+                      const obj3 = lib(1369);
                     }
                   }
                 }
@@ -113,7 +113,7 @@ function _fetchApplicationCommandIndex() {
                 c2 = closure_1_5.APPLICATION_COMMAND_INDEX_USER;
               }
               function fetch() {
-                const HTTP = lib(527).HTTP;
+                const HTTP = lib(1272).HTTP;
                 const value = HTTP.get({
                   url: dependencyMap,
                   retries: 3 - c4 - 1,

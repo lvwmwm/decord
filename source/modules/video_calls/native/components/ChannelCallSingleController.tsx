@@ -1,15 +1,15 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 10022
+// Function ID: 10023
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4503, 1215, 673, 4502, 21, 695, 4708, 586, 9952, 9954, 9955, 2]
+// Dependencies: [19, 4582, 502, 1074, 4581, 21, 1242, 4740, 504, 10023, 10025, 10026, 2]
 // Exports: ChannelCallSingleController
 
-// Module 9951 (ChannelCallSingleController)
+// Module 10022 (ChannelCallSingleController)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4502 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4581 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -25,7 +25,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     const merged = Object.assign(selectedParticipant(closure_1_2[7]).collectVoiceAnalyticsMetadata(channel.id));
     obj.track(closure_1_6.VIDEO_LAYOUT_TOGGLED, obj);
   }, items);
-  selectedParticipant(586);
+  selectedParticipant(504);
   [][0] = closure_4;
   const type = selectedParticipant.type;
   if (ParticipantTypes.STREAM === type) {
@@ -33,7 +33,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 9952 : 9954);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10023 : 10025);
       let obj = { participant: null, channel: null };
       obj[0] = selectedParticipant;
       obj[1] = channel;
@@ -44,7 +44,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     obj = { participant: null, channel: null };
     obj[0] = selectedParticipant;
     obj[1] = channel;
-    return jsx(channel(9955), { participant: null, channel: null });
+    return jsx(channel(10026), { participant: null, channel: null });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

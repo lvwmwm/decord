@@ -1,23 +1,23 @@
-// Module ID: 10352
-// Function ID: 10353
+// Module ID: 10423
+// Function ID: 10424
 // Name: getAutocompleteOptions
-// Dependencies: [7711, 7712, 5069, 5462, 1386, 1991, 1908, 673, 4960, 4961, 10353, 1924, 12, 9340, 5402, 4166, 9770, 7272, 10354, 10317, 7275, 1431, 1233, 2]
+// Dependencies: [7779, 7780, 5108, 5502, 1957, 2021, 1979, 1074, 4999, 5000, 10424, 1374, 12, 9411, 5442, 1935, 9841, 7334, 10425, 10388, 7337, 1396, 1114, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10352 (getAutocompleteOptions)
+// Module 10423 (getAutocompleteOptions)
 import applyDefault from "apply" /* 12 */;
-import _executeCommandDefault from "_executeCommand" /* 9340 */;
-import closure_3 from "handleInit" /* 7711 */;
-import closure_4 from "handleInit" /* 7712 */;
-import closure_5 from "set" /* 5069 */;
-import closure_6 from "loadSavedGuildStickers" /* 5462 */;
-import closure_7 from "ensureGuildLoaded" /* 1386 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import ME from "ME" /* 673 */;
-import regExp from "regExp" /* 4961 */;
-import { AutocompleteTypes } from "AutocompleteTypes" /* 10353 */;
-import set from "set" /* 1924 */;
+import _executeCommandDefault from "_executeCommand" /* 9411 */;
+import closure_3 from "handleInit" /* 7779 */;
+import closure_4 from "handleInit" /* 7780 */;
+import closure_5 from "set" /* 5108 */;
+import closure_6 from "loadSavedGuildStickers" /* 5502 */;
+import closure_7 from "ensureGuildLoaded" /* 1957 */;
+import closure_8 from "trackCommunicationDisabled" /* 2021 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import ME from "ME" /* 1074 */;
+import regExp from "regExp" /* 5000 */;
+import { AutocompleteTypes } from "AutocompleteTypes" /* 10424 */;
+import set from "set" /* 1374 */;
 
 const require = arg1;
 ({ AutoCompleteResultTypes: c10, MAX_AUTOCOMPLETE_RESULTS: unpackModuleId } = ME);
@@ -226,7 +226,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 const obj4 = _private(tmp3[19]);
               }
               const items2 = [query];
-              const items3 = [_private, (arg0, arg1) => arg1 === callback(7275).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(7337).StickerSendability.SENDABLE];
               items1 = flag(tmp3[14]).queryStickers(items2, true, items3);
               const tmp2Result = flag(tmp3[14]);
             }
@@ -242,8 +242,8 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 obj = { id: null, animated: null, size: null };
                 ({ id: obj3[0], animated: obj3[1] } = name);
                 obj[2] = closure_19;
-                let url = callback2(1431).getEmojiURL(obj);
-                const obj2 = callback2(1431);
+                let url = callback2(1396).getEmojiURL(obj);
+                const obj2 = callback2(1396);
               } else {
                 url = name.url;
               }

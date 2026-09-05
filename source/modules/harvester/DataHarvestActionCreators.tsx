@@ -1,15 +1,15 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14863
+// Function ID: 14864
 // Name: getDataHarvestStatus
-// Dependencies: [673, 706, 527, 6924, 2]
+// Dependencies: [1074, 573, 1272, 6984, 2]
 // Exports: getDataHarvestStatus, requestDataHarvest
 
-// Module 14788 (getDataHarvestStatus)
+// Module 14863 (getDataHarvestStatus)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import ME from "ME" /* 673 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 6924 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import ME from "ME" /* 1074 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 6984 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/harvester/DataHarvestActionCreators.tsx");
@@ -21,11 +21,11 @@ export const getDataHarvestStatus = function getDataHarvestStatus() {
   obj = { url: Endpoints.USER_HARVEST, oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
   return value.then((body) => {
-    let obj = callback(706);
+    let obj = callback(573);
     obj = { type: "UPDATE_DATA_HARVEST_TYPE", harvestType: body.body };
     obj.dispatch(obj);
   }).catch((error) => {
-    let obj = callback(706);
+    let obj = callback(573);
     obj = { type: "LOAD_DATA_HARVEST_TYPE_FAILURE", error };
     obj.dispatch(obj);
   });

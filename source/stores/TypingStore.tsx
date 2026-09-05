@@ -1,16 +1,16 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11965
+// Function ID: 11966
 // Name: handleTypingStart
-// Dependencies: [1215, 1386, 7620, 673, 684, 7161, 527, 706, 586, 2]
+// Dependencies: [502, 1957, 7687, 1074, 1090, 7221, 1272, 573, 504, 2]
 
-// Module 11897 (handleTypingStart)
-import initializeDefault from "initialize" /* 586 */;
-import setDefault from "set" /* 684 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import { SlowmodeType } from "setCooldown" /* 7620 */;
-import { Endpoints } from "ME" /* 673 */;
+// Module 11965 (handleTypingStart)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import setDefault from "set" /* 1090 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import { SlowmodeType } from "setCooldown" /* 7687 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function handleTypingStart(arg0) {
@@ -163,7 +163,7 @@ const typingStore = new TypingStore(dispatcherDefault, {
     id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(7161).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(7221).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;

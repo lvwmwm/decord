@@ -1,12 +1,12 @@
-// Module ID: 7820
-// Function ID: 7821
+// Module ID: 7889
+// Function ID: 7890
 // Name: checkSpoilerEmbeds
-// Dependencies: [673, 4858, 4396, 7821, 4464, 1205, 2]
+// Dependencies: [1074, 4897, 1362, 7890, 4543, 1232, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 7820 (checkSpoilerEmbeds)
-import getEffectiveVideoProvider from "getEffectiveVideoProvider" /* 4858 */;
-import ME from "ME" /* 673 */;
+// Module 7889 (checkSpoilerEmbeds)
+import getEffectiveVideoProvider from "getEffectiveVideoProvider" /* 4897 */;
+import ME from "ME" /* 1074 */;
 import set from "set" /* 2 */;
 
 function checkSpoilerEmbeds(ast, inline) {
@@ -40004,8 +40004,8 @@ export const removeBuildOverrideLinks = function removeBuildOverrideLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(4396).isBuildOverrideLink(type.target);
-      const obj = callback(4396);
+      tmp = !callback(1362).isBuildOverrideLink(type.target);
+      const obj = callback(1362);
     }
     return tmp;
   });
@@ -40014,8 +40014,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(7821).isExperimentEmbedURL(type.target);
-      const obj = callback(7821);
+      tmp = !callback(7890).isExperimentEmbedURL(type.target);
+      const obj = callback(7890);
     }
     return tmp;
   });
@@ -40171,7 +40171,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
             if (obj3.isEmbedInline(first1)) {
               items2 = [];
             }
-            obj3 = _require(4858);
+            obj3 = _require(4897);
           }
         } else {
           items2 = arr;
@@ -40275,16 +40275,16 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     const found = arr4.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(4396).isBuildOverrideLink(type.target);
-        const obj = callback(4396);
+        tmp = !callback(1362).isBuildOverrideLink(type.target);
+        const obj = callback(1362);
       }
       return tmp;
     });
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(7821).isExperimentEmbedURL(type.target);
-        const obj = callback(7821);
+        tmp = !callback(7890).isExperimentEmbedURL(type.target);
+        const obj = callback(7890);
       }
       return tmp;
     });

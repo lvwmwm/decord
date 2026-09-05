@@ -1,19 +1,19 @@
-// Module ID: 17353
-// Function ID: 17354
+// Module ID: 17433
+// Function ID: 17434
 // Name: handlePressNext
-// Dependencies: [17354, 673, 695, 6924, 4865, 1233, 8095, 8097, 4731, 17355, 2008, 12636, 2]
+// Dependencies: [17434, 1074, 1242, 6984, 4904, 1114, 8164, 8166, 4763, 17435, 1896, 12704, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 17353 (handlePressNext)
+// Module 17433 (handlePressNext)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import setDefault from "set" /* 4865 */;
-import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 6924 */;
-import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12636 */;
-import ADD_AVATAR_MODAL_KEY2 from "ADD_AVATAR_MODAL_KEY" /* 17354 */;
+import ME from "ME" /* 1074 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import setDefault from "set" /* 4904 */;
+import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 6984 */;
+import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12704 */;
+import ADD_AVATAR_MODAL_KEY2 from "ADD_AVATAR_MODAL_KEY" /* 17434 */;
 
 const ADD_AVATAR_MODAL_KEY = ADD_AVATAR_MODAL_KEY2.ADD_AVATAR_MODAL_KEY;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -34,7 +34,7 @@ export const handlePressNext = function handlePressNext(pendingImage, first, fn)
   if (null != fn) {
     fn();
   } else {
-    obj = _modDef4731;
+    obj = _modDef4763;
     obj.popWithKey(ADD_AVATAR_MODAL_KEY);
     _startContactSyncForDiscoverability.nextOnboardingStep({ skip: false });
     const obj2 = _startContactSyncForDiscoverability;
@@ -45,14 +45,14 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   let obj = expandEventPropertiesDefault;
   obj.track(AnalyticEvents.NUO_TRANSITION, { flow_type: "Mobile NUX Post Reg", from_step: "Skip avatar modal", skip_attempt: true });
   obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false };
-  const intl = _require(1233).intl;
-  obj[0] = intl.string(_require(1233).t.DnKHuV);
-  const intl2 = _require(1233).intl;
-  obj[1] = intl2.string(_require(1233).t["1EPySE"]);
-  const intl3 = _require(1233).intl;
-  obj[2] = intl3.string(_require(1233).t["7eZ3ji"]);
-  const intl4 = _require(1233).intl;
-  obj[3] = intl4.string(_require(1233).t.nhJ8OC);
+  const intl = _require(1114).intl;
+  obj[0] = intl.string(_require(1114).t.DnKHuV);
+  const intl2 = _require(1114).intl;
+  obj[1] = intl2.string(_require(1114).t["1EPySE"]);
+  const intl3 = _require(1114).intl;
+  obj[2] = intl3.string(_require(1114).t["7eZ3ji"]);
+  const intl4 = _require(1114).intl;
+  obj[3] = intl4.string(_require(1114).t.nhJ8OC);
   obj[4] = function onConfirm() {
     callback(closure_1_2[6]).setPendingChanges({ avatar: null });
     const obj = callback(closure_1_2[6]);
@@ -70,5 +70,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   setDefault.show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  _modDef4731.pushLazy(asyncRequireImpl(17355, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  _modDef4763.pushLazy(asyncRequireImpl(17435, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

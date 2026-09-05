@@ -1,13 +1,13 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 10988
+// Function ID: 10989
 // Name: apexExperiment
-// Dependencies: [1921, 1468, 586, 2]
+// Dependencies: [1371, 1433, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 10919 (apexExperiment)
-import initialize from "initialize" /* 586 */;
-import closure_2 from "mergeGuildAvatar" /* 1921 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+// Module 10988 (apexExperiment)
+import initialize from "initialize" /* 504 */;
+import closure_2 from "mergeGuildAvatar" /* 1371 */;
+import ApexExperiment from "ApexExperiment" /* 1433 */;
 
 require = arg1;
 ApexExperiment = { 1: null };

@@ -1,13 +1,13 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15232
+// Function ID: 15233
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 15129, 1923, 1233, 15155, 2]
+// Dependencies: [19, 15205, 1373, 1114, 15231, 2]
 // Exports: default
 
-// Module 15156 (useTrialIntervalOptions)
+// Module 15232 (useTrialIntervalOptions)
 import closure_2 from "noop" /* 19 */;
-import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS" /* 15129 */;
-import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1923 */;
+import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS" /* 15205 */;
+import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1373 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
@@ -20,11 +20,11 @@ export default function useTrialIntervalOptions(arg0) {
       let obj = { value: interval, label: null, isDefault: null };
       if (interval.interval === constants.DAY) {
         if (7 === interval.interval_count) {
-          const intl = lib(1233).intl;
+          const intl = lib(1114).intl;
           obj = { defaultLimit: null };
-          obj[0] = lib(15155).formatPlanIntervalDuration(interval);
-          let formatToPlainStringResult = intl.formatToPlainString(lib(1233).t.XfSsr1, obj);
-          const obj4 = lib(15155);
+          obj[0] = lib(15231).formatPlanIntervalDuration(interval);
+          let formatToPlainStringResult = intl.formatToPlainString(lib(1114).t.XfSsr1, obj);
+          const obj4 = lib(15231);
         }
         obj[1] = formatToPlainStringResult;
         let tmp5 = interval.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj[2] = tmp5;
         return obj;
       }
-      formatToPlainStringResult = lib(15155).formatPlanIntervalDuration(interval);
+      formatToPlainStringResult = lib(15231).formatPlanIntervalDuration(interval);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

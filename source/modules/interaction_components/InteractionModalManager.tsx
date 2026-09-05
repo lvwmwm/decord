@@ -1,14 +1,14 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 17388
+// Function ID: 17389
 // Name: _handleInteractionModalCreate
-// Dependencies: [5, 4522, 7872, 673, 1954, 17309, 2008, 695, 1912, 1205, 17320, 17323, 7058, 2]
+// Dependencies: [5, 4788, 7941, 1074, 1894, 17389, 1896, 1242, 1983, 1232, 17400, 17403, 7118, 2]
 
-// Module 17308 (_handleInteractionModalCreate)
-import initializeDefault from "initialize" /* 7058 */;
+// Module 17388 (_handleInteractionModalCreate)
+import initializeDefault from "initialize" /* 7118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4522 */;
-import closure_5 from "deleteNonce" /* 7872 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_4 from "addApplication" /* 4788 */;
+import closure_5 from "deleteNonce" /* 7941 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 
 let require = arg1;
 function _handleInteractionModalCreate() {
@@ -65,8 +65,8 @@ function _handleInteractionModalCreate() {
             openInteractionModal.openInteractionModal(lib);
             const obj3 = { type: "interaction_modal", application_id: null };
             obj3[1] = lib.application.id;
-            callback(695).track(constants.OPEN_MODAL, obj3);
-            const AndroidPullModeRenderingExperiment = lib(1912).AndroidPullModeRenderingExperiment;
+            callback(1242).track(constants.OPEN_MODAL, obj3);
+            const AndroidPullModeRenderingExperiment = lib(1983).AndroidPullModeRenderingExperiment;
             if (AndroidPullModeRenderingExperiment.getCurrentConfig().treatmentId >= 2) {
               callback = (function getInteractionModalDebugData(closure_0) {
                 interactionDebugContext = interactionDebugContext.getInteractionDebugContext(closure_0.nonce);
@@ -111,7 +111,7 @@ function _handleInteractionModalCreate() {
                 obj[12] = tmp11;
                 return obj;
               })(lib);
-              obj = callback(1205);
+              obj = callback(1232);
               const obj4 = { category: "interaction_modal", message: "Interaction modal opened", data: null };
               obj4[2] = callback;
               obj.addBreadcrumb(obj4);

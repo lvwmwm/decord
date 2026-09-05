@@ -1,18 +1,18 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 16969
+// Function ID: 16970
 // Name: HistorySeparator
-// Dependencies: [19, 17, 1386, 4496, 1921, 673, 21, 4481, 709, 7280, 16892, 586, 1296, 10841, 5542, 12962, 4494, 4492, 7800, 16028, 1492, 16897, 1233, 7012, 2]
+// Dependencies: [19, 17, 1957, 4575, 1371, 1074, 21, 4560, 576, 7342, 16970, 504, 1178, 10910, 5587, 13030, 4573, 4571, 7868, 16106, 1477, 16975, 1114, 7072, 2]
 
-// Module 16891 (HistorySeparator)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 16969 (HistorySeparator)
+import ThemesDefault from "Themes" /* 576 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "generateOldThreadCutoff" /* 4496 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import { ChannelTypes } from "ME" /* 673 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "generateOldThreadCutoff" /* 4575 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import { ChannelTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 function HistorySeparator() {
@@ -52,7 +52,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
     guildId(closure_1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj[1] = callback(onGuildSelect(16892), obj);
+  obj[1] = callback(onGuildSelect(16970), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {
@@ -91,7 +91,7 @@ let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId
   }
   if (type === ChannelTypes.DM) {
     if (null != stateFromStores1) {
-      obj = { style: null, user: null, guildId: "Array", size: true };
+      obj = { style: null, user: null, guildId: "Array", size: false };
       obj[0] = tmp.privateChannelIcon;
       obj[1] = stateFromStores1;
       obj[3] = tmp2(tmp3[12]).AvatarSizes.LARGE_48;

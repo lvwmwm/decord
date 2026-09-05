@@ -1,11 +1,11 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16572
+// Function ID: 16573
 // Name: showMembersManagementActionSheet
-// Dependencies: [1921, 1233, 4448, 16497, 2008, 7205, 16498, 7135, 2]
+// Dependencies: [1371, 1114, 4527, 16573, 1896, 7265, 16574, 7195, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 16496 (showMembersManagementActionSheet)
-import closure_3 from "mergeGuildAvatar" /* 1921 */;
+// Module 16572 (showMembersManagementActionSheet)
+import closure_3 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
@@ -14,8 +14,8 @@ export default function showMembersManagementActionSheet(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = { label: null, onPress: null };
-  const intl = guild(1233).intl;
-  obj[0] = intl.string(guild(1233).t.pEasFX);
+  const intl = guild(1114).intl;
+  obj[0] = intl.string(guild(1114).t.pEasFX);
   obj[1] = function onPress() {
     let obj = closure_1_1(closure_1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
@@ -23,13 +23,13 @@ export default function showMembersManagementActionSheet(guild) {
   };
   const items = [obj];
   if (canPrune == null) {
-    let tmpResult = tmp(7205);
+    let tmpResult = tmp(7265);
     canPrune = tmpResult.canPruneGuildMembers(guild, authStore.getCurrentUser());
   }
   if (canPrune) {
     obj = { label: null, onPress: null, isDestructive: true };
-    const intl2 = tmp(1233).intl;
-    obj[0] = intl2.string(tmp(1233).t["2mIlKQ"]);
+    const intl2 = tmp(1114).intl;
+    obj[0] = intl2.string(tmp(1114).t["2mIlKQ"]);
     obj[1] = function onPress() {
       let obj = closure_1_1(closure_1_2[2]);
       obj = { guild };
@@ -37,15 +37,15 @@ export default function showMembersManagementActionSheet(guild) {
     };
     items.push(obj);
   }
-  tmpResult = tmp(7135);
+  tmpResult = tmp(7195);
   const result = tmpResult.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = { label: null, action: null };
-  const intl = guild(1233).intl;
-  obj[0] = intl.string(guild(1233).t.pEasFX);
+  const intl = guild(1114).intl;
+  obj[0] = intl.string(guild(1114).t.pEasFX);
   obj[1] = function action() {
     let obj = closure_1_1(closure_1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
@@ -53,13 +53,13 @@ export const getMembersManagementActions = function getMembersManagementActions(
   };
   const items = [obj];
   if (canPrune == null) {
-    canPrune = tmp(7205).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const tmpResult = tmp(7205);
+    canPrune = tmp(7265).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const tmpResult = tmp(7265);
   }
   if (canPrune) {
     obj = { label: null, action: null, variant: "destructive" };
-    const intl2 = tmp(1233).intl;
-    obj[0] = intl2.string(tmp(1233).t["2mIlKQ"]);
+    const intl2 = tmp(1114).intl;
+    obj[0] = intl2.string(tmp(1114).t["2mIlKQ"]);
     obj[1] = function action() {
       let obj = closure_1_1(closure_1_2[2]);
       obj = { guild };

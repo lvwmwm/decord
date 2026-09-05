@@ -1,19 +1,19 @@
-// Module ID: 17493
-// Function ID: 17494
+// Module ID: 17573
+// Function ID: 17574
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1908, 4120, 1921, 673, 4169, 21, 1233, 17494, 9304, 13452, 4481, 709, 1627, 586, 9600, 17496, 6979, 4372, 4477, 4375, 4936, 17497, 8523, 4934, 5642, 5560, 5056, 10105, 1296, 4325, 5567, 17503, 2]
+// Dependencies: [19, 17, 1979, 4199, 1371, 1074, 1938, 21, 1114, 17574, 9375, 13525, 4560, 576, 1611, 504, 9671, 17576, 7039, 4454, 4556, 4457, 4975, 17577, 8593, 4973, 5687, 5605, 5095, 10176, 1178, 4404, 5612, 17583, 2]
 
-// Module 17493 (BoostedGuildTiers)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 17573 (BoostedGuildTiers)
+import ThemesDefault from "Themes" /* 576 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createGuildRecordFromRust" /* 1908 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
-import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
+import closure_5 from "createGuildRecordFromRust" /* 1979 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
+import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 1938 */;
 import jsxProd from "jsxProd" /* 21 */;
-import { intl, intl as intl2, intl as intl3, intl as intl4 } from "getSystemLocale" /* 1233 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import { intl, intl as intl2, intl as intl3, intl as intl4 } from "getSystemLocale" /* 1114 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
 // Module ID: 15208
 // Function ID: 15209
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 15208 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 216, height: 216, scales: [1], hash: "e8cc96dfc04f2226c8870fdf46cc16af", name: "ExampleVoiceChatActivity", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e42f1b42dc7bf4b285d5f4924a46e5c4", name: "TicketIcon", type: "png" });

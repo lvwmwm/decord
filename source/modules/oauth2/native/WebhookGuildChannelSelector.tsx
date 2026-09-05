@@ -1,20 +1,20 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 9427
+// Function ID: 9428
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1390, 4130, 1921, 21, 4481, 709, 4448, 9355, 2008, 1233, 4681, 9173, 4477, 1296, 8523, 2]
+// Dependencies: [5, 32, 19, 17, 1961, 4209, 1371, 21, 4560, 576, 4527, 9426, 1896, 1114, 4713, 9244, 4556, 1178, 8593, 2]
 // Exports: default
 
-// Module 9356 (styles)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 9427 (styles)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { createChannelRecord } from "createChannelRecord" /* 1390 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import { createChannelRecord } from "createChannelRecord" /* 1961 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -56,7 +56,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       obj[0] = intl.string(selectedGuildId(onChannelChange[13]).t["Re/64R"]);
       const channels = tmp.channels;
       obj[1] = channels.map((id) => {
-        const obj = { label: callback(4681).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
+        const obj = { label: callback(4713).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
         return obj;
       });
       obj[2] = function onItemSelect(arg0) {

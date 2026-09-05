@@ -1,10 +1,10 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14827
+// Function ID: 14828
 // Name: spendingLimitEqual
 // Dependencies: [2]
 // Exports: getCurrencySymbol, getNextRenewalDateLabel, sanitizeAmountInput, spendingLimitEqual
 
-// Module 14752 (spendingLimitEqual)
+// Module 14827 (spendingLimitEqual)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/parent_tools/SpendingLimitUtils.tsx");

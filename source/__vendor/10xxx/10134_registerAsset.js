@@ -1,10 +1,10 @@
 // Module ID: 10134
 // Function ID: 10135
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 10134 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "4f3507228f76eea58da6db7d8807bb01", name: "ic_file_small_ps", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4ff7b09e67486edcd0ad75a5131670be", name: "CirclePlayIcon-primary", type: "png" });

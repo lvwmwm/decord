@@ -1,14 +1,14 @@
-// Module ID: 674
-// Function ID: 675
+// Module ID: 1075
+// Function ID: 1076
 // Name: INVITE
-// Dependencies: [675, 680, 681, 504, 2]
+// Dependencies: [1076, 1081, 1082, 1083, 2]
 
-// Module 674 (INVITE)
+// Module 1075 (INVITE)
 import set from "set" /* 2 */;
-import items2 from "items" /* 675 */;
-import CONFERENCE_MODE_ENABLED from "CONFERENCE_MODE_ENABLED" /* 680 */;
-import GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID from "GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID" /* 681 */;
-import getAuthenticationPath from "getAuthenticationPath" /* 504 */;
+import items2 from "items" /* 1076 */;
+import CONFERENCE_MODE_ENABLED from "CONFERENCE_MODE_ENABLED" /* 1081 */;
+import GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID from "GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID" /* 1082 */;
+import getAuthenticationPath from "getAuthenticationPath" /* 1083 */;
 
 const CollectibleShopTab = items2.CollectibleShopTab;
 ({ ApplicationDirectoryProfileSections: closure_1, GlobalDiscoveryAppsSections: obj1 } = GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID);

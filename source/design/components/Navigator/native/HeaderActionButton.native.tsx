@@ -1,17 +1,17 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7377
+// Function ID: 7378
 // Name: HeaderActionButton
-// Dependencies: [19, 1300, 21, 4481, 709, 4477, 4941, 4938, 5084, 2]
+// Dependencies: [19, 1182, 21, 4560, 576, 4556, 4980, 4977, 5123, 2]
 
-// Module 7315 (HeaderActionButton)
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import IconSizesDefault from "IconSizes" /* 4938 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4941 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1300 */;
+// Module 7377 (HeaderActionButton)
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import IconSizesDefault from "IconSizes" /* 4977 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4980 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1182 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

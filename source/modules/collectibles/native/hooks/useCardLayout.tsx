@@ -1,13 +1,13 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 15825
+// Function ID: 15826
 // Name: useCardLayout
-// Dependencies: [8694, 1492, 2]
+// Dependencies: [8764, 1477, 2]
 // Exports: useCardLayout
 
-// Module 15749 (useCardLayout)
+// Module 15825 (useCardLayout)
 import set from "set" /* 2 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 8694 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
+import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 8764 */;
 
 let result = set.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
@@ -18,7 +18,7 @@ export const useCardLayout = function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    let obj = { columns: null, cardWidth: "Array", rowWidth: "context" };
+    let obj = { columns: null, cardWidth: "Array", rowWidth: "isArray" };
     obj[0] = num;
     return obj;
   } else {
@@ -33,9 +33,9 @@ export const useCardLayout = function useCardLayout() {
       const _Math = Math;
       let bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp2(8694).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp2(8764).COLLECTIBLES_SHOP_CARD_GAP;
     }
-    const result1 = (width - (bound + tmp2(8694).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result1 = (width - (bound + tmp2(8764).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     let tmp10 = tmp2;
     let tmp11 = result1;
     let tmp12 = num;
@@ -69,13 +69,13 @@ export const useCardLayout = function useCardLayout() {
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp11, tmp14(8694).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const bound2 = Math.min(bound1, tmp14(8694).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp11, tmp14(8764).COLLECTIBLES_SHOP_CARD_WIDTH);
+    const bound2 = Math.min(bound1, tmp14(8764).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result3 = bound2 * tmp12;
     const diff2 = tmp12 - 1;
-    if (result3 + (bound + tmp10(8694).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+    if (result3 + (bound + tmp10(8764).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "call" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "padding" };
       }
       return obj;
     }
@@ -83,6 +83,6 @@ export const useCardLayout = function useCardLayout() {
     obj[0] = tmp12;
     obj[1] = bound2;
     const result4 = bound2 * tmp12;
-    obj[2] = result4 + tmp14(8694).COLLECTIBLES_SHOP_CARD_GAP * diff2;
+    obj[2] = result4 + tmp14(8764).COLLECTIBLES_SHOP_CARD_GAP * diff2;
   }
 };

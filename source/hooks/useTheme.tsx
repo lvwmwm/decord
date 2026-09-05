@@ -1,13 +1,13 @@
-// Module ID: 4416
-// Function ID: 4417
+// Module ID: 4495
+// Function ID: 4496
 // Name: useTheme
-// Dependencies: [673, 1362, 2]
+// Dependencies: [1074, 4411, 2]
 // Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 4416 (useTheme)
+// Module 4495 (useTheme)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
+import ME from "ME" /* 1074 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4411 */;
 
 function useTheme() {
   return AccessibilityAnnouncer.useThemeContext().theme;

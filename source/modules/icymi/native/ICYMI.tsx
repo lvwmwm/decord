@@ -1,40 +1,40 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16450
+// Function ID: 16451
 // Name: SettingsButton
-// Dependencies: [32, 19, 17, 4473, 1215, 1908, 8277, 8265, 16375, 1383, 21, 4481, 709, 16376, 8028, 14924, 8281, 4448, 16378, 2008, 4436, 16389, 4477, 1233, 6885, 7063, 5086, 4299, 5084, 16325, 16327, 5635, 8280, 1492, 1627, 1499, 7408, 586, 16315, 16409, 16412, 7327, 1372, 16399, 1498, 8278, 7791, 7792, 15015, 689, 16413, 16419, 16424, 16437, 16438, 16439, 16440, 16441, 16442, 16443, 16444, 7804, 16445, 8804, 1234, 11828, 4331, 16446, 16377, 4205, 2]
+// Dependencies: [32, 19, 17, 4552, 502, 1979, 8347, 8335, 16451, 1954, 21, 4560, 576, 16452, 8097, 14999, 8351, 4527, 16454, 1896, 4515, 16465, 4556, 1114, 6945, 7123, 5125, 4378, 5123, 16401, 16403, 5680, 8350, 1477, 1611, 1484, 7475, 504, 16391, 16485, 16488, 7389, 1943, 16475, 1483, 8348, 7859, 7860, 15091, 1094, 16489, 16495, 16500, 16513, 16514, 16515, 16516, 16517, 16518, 16519, 16520, 7872, 16521, 8874, 1115, 11896, 4413, 16522, 16453, 4271, 2]
 // Exports: ICYMITab
 
-// Module 16374 (SettingsButton)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4299 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4331 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4436 */;
-import PressableBase from "PressableBase" /* 5084 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5086 */;
-import XSmallIcon from "XSmallIcon" /* 5635 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6885 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7063 */;
-import IconButton from "IconButton" /* 8028 */;
-import generateHydrationId from "generateHydrationId" /* 8280 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 14924 */;
-import goBack from "goBack" /* 16325 */;
-import IconWithBadge from "IconWithBadge" /* 16327 */;
-import jsxDefault from "jsx" /* 16446 */;
+// Module 16450 (SettingsButton)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4378 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4413 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4515 */;
+import PressableBase from "PressableBase" /* 5123 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5125 */;
+import XSmallIcon from "XSmallIcon" /* 5680 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6945 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 7123 */;
+import IconButton from "IconButton" /* 8097 */;
+import generateHydrationId from "generateHydrationId" /* 8350 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 14999 */;
+import goBack from "goBack" /* 16401 */;
+import IconWithBadge from "IconWithBadge" /* 16403 */;
+import jsxDefault from "jsx" /* 16522 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_8 from "fetchFingerprint" /* 1215 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "initialize" /* 8277 */;
-import closure_11 from "filterStaffGuild" /* 8265 */;
-import { NUM_GUILDS_EXTENDED_ONBOARDING as closure_12 } from "NUM_GUILDS_EXTENDED_ONBOARDING" /* 16375 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_8 from "fetchFingerprint" /* 502 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "initialize" /* 8347 */;
+import closure_11 from "filterStaffGuild" /* 8335 */;
+import { NUM_GUILDS_EXTENDED_ONBOARDING as closure_12 } from "NUM_GUILDS_EXTENDED_ONBOARDING" /* 16451 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1954 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import createICYMIStyles from "createICYMIStyles" /* 16376 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import createICYMIStyles from "createICYMIStyles" /* 16452 */;
 
 require = arg1;
 function SettingsButton() {
@@ -59,11 +59,11 @@ function InfoButton() {
     size: "sm",
     icon: callback(CircleInformationIcon.CircleInformationIcon, { size: "sm" }),
     onPress() {
-      callback2(8281).itemInteracted("info_button", "info_button", "press_info_button");
-      const obj = callback2(8281);
-      callback2(8281).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
-      const obj2 = callback2(8281);
-      callback(16389).pushICYMIInfoModal({ extendedOnboarding: true });
+      callback2(8351).itemInteracted("info_button", "info_button", "press_info_button");
+      const obj = callback2(8351);
+      callback2(8351).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
+      const obj2 = callback2(8351);
+      callback(16465).pushICYMIInfoModal({ extendedOnboarding: true });
     }
   });
 }
@@ -74,13 +74,13 @@ function ICYMIHeaderTextWrapper() {
     children: importAllResult.useMemo(() => {
       let obj = { children: null };
       obj = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
-      const intl = callback(1233).intl;
-      obj[4] = intl.string(callback(1233).t.SY4sdZ);
-      const items = [callback2(callback(4477).Text, obj), ];
+      const intl = callback(1114).intl;
+      obj[4] = intl.string(callback(1114).t.SY4sdZ);
+      const items = [callback2(callback(4556).Text, obj), ];
       obj = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: null };
-      const intl2 = callback(1233).intl;
-      obj[3] = intl2.string(callback(1233).t.Ac2OZA);
-      items[1] = callback2(callback(4477).Text, obj);
+      const intl2 = callback(1114).intl;
+      obj[3] = intl2.string(callback(1114).t.Ac2OZA);
+      items[1] = callback2(callback(4556).Text, obj);
       obj[0] = items;
       return callback3(closure_15, obj);
     }, [])
@@ -190,7 +190,7 @@ function ICYMI(inNestedNavigator) {
     } else {
       obj = { scrollToTop: null };
       obj[0] = function scrollToTop() {
-        callback(7791).showForLaterModal(callback(7792).SavedMessageSortTypes.BOOKMARK);
+        callback(7859).showForLaterModal(callback(7860).SavedMessageSortTypes.BOOKMARK);
       };
       ref1.current = obj;
     }
@@ -413,7 +413,7 @@ export const ICYMITab = function ICYMITab(route) {
   route = route.route;
   let _require;
   importDefault = undefined;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => id.getId());
   const tmp6 = useIsWindowLargeDefault();
@@ -451,9 +451,9 @@ export const ICYMITab = function ICYMITab(route) {
   const items2 = [closure_14(getMixedGradientColorDefault, { absolute: true }), ];
   const tmp14 = closure_16;
   const tmpResult = jsxDefault;
-  items2[1] = closure_14(_require(4205).ThemeContextProvider, { gradient: tmp3, children: closure_14(ICYMI, { inNestedNavigator }, "" + stateFromStores) });
+  items2[1] = closure_14(_require(4271).ThemeContextProvider, { gradient: tmp3, children: closure_14(ICYMI, { inNestedNavigator }, "" + stateFromStores) });
   obj3.children = items2;
   obj2[0] = tmp14(tmp11, obj3);
-  obj1[0] = closure_14(_require(16377).ICYMIContextProvider, obj2);
+  obj1[0] = closure_14(_require(16453).ICYMIContextProvider, obj2);
   return closure_14(tmpResult, obj1);
 };

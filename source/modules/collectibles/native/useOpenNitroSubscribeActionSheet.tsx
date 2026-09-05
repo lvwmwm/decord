@@ -1,13 +1,13 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13148
+// Function ID: 13149
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 673, 1923, 7102, 7356, 2]
+// Dependencies: [19, 1074, 1373, 7162, 7422, 2]
 // Exports: default
 
-// Module 13080 (useOpenNitroSubscribeActionSheet)
+// Module 13148 (useOpenNitroSubscribeActionSheet)
 import closure_2 from "noop" /* 19 */;
-import ME from "ME" /* 673 */;
-import { PremiumTypes } from "GuildFeatures" /* 1923 */;
+import ME from "ME" /* 1074 */;
+import { PremiumTypes } from "GuildFeatures" /* 1373 */;
 
 ({ AnalyticsPages: c3, AnalyticsSections: c4 } = ME);
 const result = require("set").fileFinishedImporting("modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx");

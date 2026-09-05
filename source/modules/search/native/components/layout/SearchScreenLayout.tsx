@@ -1,16 +1,16 @@
-// Module ID: 16559
-// Function ID: 16560
+// Module ID: 16636
+// Function ID: 16637
 // Name: SearchFreezeContainer
-// Dependencies: [19, 17, 12271, 21, 4481, 16446, 586, 16560, 16647, 2]
+// Dependencies: [19, 17, 12339, 21, 4560, 16522, 504, 16637, 16724, 2]
 
-// Module 16559 (SearchFreezeContainer)
-import jsxDefault from "jsx" /* 16446 */;
-import NoSearchResultsScreenDefault from "NoSearchResultsScreen" /* 16560 */;
-import _modDef16647 from "module_16647" /* 16647 */;
+// Module 16636 (SearchFreezeContainer)
+import jsxDefault from "jsx" /* 16522 */;
+import NoSearchResultsScreenDefault from "NoSearchResultsScreen" /* 16637 */;
+import _modDef16724 from "module_16724" /* 16724 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "prototype" /* 12271 */;
+import closure_4 from "prototype" /* 12339 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -30,13 +30,13 @@ let closure_8 = createCacheKey.createStyles({ hidden: { opacity: 0 }, visible: {
 const memoResult = importAllResult.memo((width) => {
   const searchContext = width.searchContext;
   const containerStyle = width.containerStyle;
-  let obj = searchContext(586);
+  let obj = searchContext(504);
   const items = [closure_4];
   const items1 = [searchContext];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.isAutocompleteVisible(searchContext), items1);
   obj = { children: null };
   obj = { visible: !stateFromStores, containerStyle, children: callback(NoSearchResultsScreenDefault, { searchContext, width: width.width }) };
-  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(_modDef16647, { searchContext }) })];
+  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(_modDef16724, { searchContext }) })];
   obj[0] = items2;
   return callback2(closure_6, obj);
 });

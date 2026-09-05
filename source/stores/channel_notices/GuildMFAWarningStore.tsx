@@ -1,14 +1,14 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13757
+// Function ID: 13758
 // Name: handleUserStoreUpdates
-// Dependencies: [1981, 1921, 673, 586, 706, 2]
+// Dependencies: [2012, 1371, 1074, 504, 573, 2]
 
-// Module 13682 (handleUserStoreUpdates)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_0 from "comparator" /* 1981 */;
-import closure_1 from "mergeGuildAvatar" /* 1921 */;
-import { MFALevels } from "ME" /* 673 */;
+// Module 13757 (handleUserStoreUpdates)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_0 from "comparator" /* 2012 */;
+import closure_1 from "mergeGuildAvatar" /* 1371 */;
+import { MFALevels } from "ME" /* 1074 */;
 
 function handleUserStoreUpdates() {
   currentUser = currentUser.getCurrentUser();

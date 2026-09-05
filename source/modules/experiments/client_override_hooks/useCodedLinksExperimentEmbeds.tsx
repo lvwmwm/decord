@@ -1,16 +1,16 @@
-// Module ID: 11411
-// Function ID: 11412
+// Module ID: 11479
+// Function ID: 11480
 // Name: canSeeExperimentEmbeds
-// Dependencies: [32, 19, 1921, 4394, 1209, 586, 11412, 11413, 2]
+// Dependencies: [32, 19, 1371, 4476, 1236, 504, 11480, 11481, 2]
 // Exports: canSeeExperimentEmbeds, useCanSeeExperimentEmbeds, useCodedLinksExperimentEmbeds
 
-// Module 11411 (canSeeExperimentEmbeds)
-import initialize from "initialize" /* 586 */;
+// Module 11479 (canSeeExperimentEmbeds)
+import initialize from "initialize" /* 504 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import closure_5 from "getHash" /* 4394 */;
-import closure_6 from "initialize" /* 1209 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import closure_5 from "getHash" /* 4476 */;
+import closure_6 from "initialize" /* 1236 */;
 
 require = arg1;
 let closure_7 = {};

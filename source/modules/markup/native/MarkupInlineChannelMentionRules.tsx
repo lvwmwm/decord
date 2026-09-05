@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10128
+// Function ID: 10129
 // Name: inlineChannelMentionReact
-// Dependencies: [19, 21, 8027, 1296, 1394, 2]
+// Dependencies: [19, 21, 8096, 1178, 1369, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 10057 (inlineChannelMentionReact)
+// Module 10128 (inlineChannelMentionReact)
 import noopAll from "noop" /* 19 */;
 import { jsxs } from "jsxProd" /* 21 */;
 
@@ -15,14 +15,14 @@ const result = require("set").fileFinishedImporting("modules/markup/native/Marku
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = u1F4AC(8027).smartOutput(inContent, output, key);
-    const obj3 = u1F4AC(8027);
+    let smartOutputResult = u1F4AC(8096).smartOutput(inContent, output, key);
+    const obj3 = u1F4AC(8096);
   } else {
     const obj = { children: null };
-    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8027).smartOutput(inContent, output, key)];
+    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8096).smartOutput(inContent, output, key)];
     obj[0] = items;
-    smartOutputResult = jsxs(u1F4AC(1296).LegacyText, { children: null }, key.key);
-    const obj2 = u1F4AC(8027);
+    smartOutputResult = jsxs(u1F4AC(1178).LegacyText, { children: null }, key.key);
+    const obj2 = u1F4AC(8096);
   }
   return smartOutputResult;
 };
@@ -31,16 +31,16 @@ export function createInlineChannelReact(arg0) {
   if (arg0 === undefined) {
     str = "\u{1F4AC}";
   }
-  return (node, output, key) => {
+  return (arg0, output, key) => {
     const obj = { children: null };
-    const items = [str, str(closure_1_1[2]).smartOutput(node, output, key), undefined];
+    const items = [str, str(closure_1_1[2]).smartOutput(tmp2, output, key), undefined];
     obj[0] = items;
     closure_1_2(str(closure_1_1[3]).LegacyText, obj, key.key);
   };
 }
-export const inlineChannelReact = (node, output, key) => {
+export const inlineChannelReact = (arg0, output, key) => {
   const obj = { children: null };
-  const items = [str, str(closure_1_1[2]).smartOutput(node, output, key), undefined];
+  const items = [str, str(closure_1_1[2]).smartOutput(tmp2, output, key), undefined];
   obj[0] = items;
   closure_1_2(str(closure_1_1[3]).LegacyText, obj, key.key);
 };

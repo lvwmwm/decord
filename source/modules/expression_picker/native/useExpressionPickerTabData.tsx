@@ -1,12 +1,12 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10277
+// Function ID: 10278
 // Name: useExpressionPickerTabData
-// Dependencies: [19, 1337, 1233, 2]
+// Dependencies: [19, 1219, 1114, 2]
 // Exports: default
 
-// Module 10206 (useExpressionPickerTabData)
+// Module 10277 (useExpressionPickerTabData)
 import closure_2 from "noop" /* 19 */;
-import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1337 */;
+import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1219 */;
 
 const require = arg1;
 ({ ExpressionPickerOrder: c3, ExpressionPickerViewType: c4 } = ExpressionPickerViewType);

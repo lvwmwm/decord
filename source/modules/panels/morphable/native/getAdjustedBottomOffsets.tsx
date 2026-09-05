@@ -1,11 +1,11 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 17012
+// Function ID: 17013
 // Name: t
-// Dependencies: [1234, 2]
+// Dependencies: [1115, 2]
 // Exports: default
 
-// Module 16934 (t)
-import set from "set" /* 1234 */;
+// Module 17012 (t)
+import set from "set" /* 1115 */;
 
 set = set.isAndroid();
 const fn = function t(arg0) {

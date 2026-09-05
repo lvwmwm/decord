@@ -1,12 +1,12 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11363
+// Function ID: 11364
 // Name: LOCATION_CONTEXT_MOBILE
-// Dependencies: [1233, 2]
+// Dependencies: [1114, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 11295 (LOCATION_CONTEXT_MOBILE)
+// Module 11363 (LOCATION_CONTEXT_MOBILE)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 
 const result = set.fileFinishedImporting("modules/self_mod/Constants.tsx");
 

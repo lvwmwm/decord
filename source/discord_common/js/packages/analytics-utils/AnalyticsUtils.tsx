@@ -1,17 +1,17 @@
-// Module ID: 500
-// Function ID: 501
+// Module ID: 1250
+// Function ID: 1251
 // Name: encodeProperties
-// Dependencies: [501, 654, 655, 656, 38, 2, 659, 660, 661]
+// Dependencies: [1251, 1330, 1331, 1332, 38, 2, 1335, 1336, 1337]
 // Exports: isThrottled, trackMaker
 
-// Module 500 (encodeProperties)
+// Module 1250 (encodeProperties)
 import set from "set" /* 2 */;
-import logger from "logger" /* 501 */;
-import ImpressionGroups from "ImpressionGroups" /* 654 */;
-import queueTrackingEventMaker from "queueTrackingEventMaker" /* 655 */;
-import encodeProperties from "encodeProperties" /* 659 */;
-import ImpressionNames from "ImpressionNames" /* 660 */;
-import getOS from "getOS" /* 661 */;
+import logger from "logger" /* 1251 */;
+import ImpressionGroups from "ImpressionGroups" /* 1330 */;
+import queueTrackingEventMaker from "queueTrackingEventMaker" /* 1331 */;
+import encodeProperties from "encodeProperties" /* 1335 */;
+import ImpressionNames from "ImpressionNames" /* 1336 */;
+import getOS from "getOS" /* 1337 */;
 
 let closure_4 = {};
 let closure_5 = {};

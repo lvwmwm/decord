@@ -1,24 +1,24 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16330
+// Function ID: 16331
 // Name: canConnectToChannel
-// Dependencies: [1385, 1391, 1390, 4503, 1215, 1386, 1908, 4120, 4130, 1980, 4709, 4500, 673, 689, 586, 13632, 9591, 4110, 13633, 9475, 11, 5377, 2]
+// Dependencies: [1956, 1962, 1961, 4582, 502, 1957, 1979, 4199, 4209, 2011, 4741, 4579, 1074, 1094, 504, 13708, 9662, 4189, 13709, 9546, 11, 5416, 2]
 // Exports: default
 
-// Module 16254 (canConnectToChannel)
-import set from "set" /* 689 */;
-import closure_3 from "participantFromServer" /* 1385 */;
-import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
-import { isVoiceChannel } from "createChannelRecord" /* 1390 */;
-import closure_6 from "reset" /* 4503 */;
-import closure_7 from "fetchFingerprint" /* 1215 */;
-import closure_8 from "ensureGuildLoaded" /* 1386 */;
-import closure_9 from "createGuildRecordFromRust" /* 1908 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_11 from "markAllUserIdListsStale" /* 4130 */;
-import closure_12 from "handleConnectionOpen" /* 1980 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4709 */;
-import closure_14 from "updateVoiceState" /* 4500 */;
-import { BasicPermissions } from "ME" /* 673 */;
+// Module 16330 (canConnectToChannel)
+import set from "set" /* 1094 */;
+import closure_3 from "participantFromServer" /* 1956 */;
+import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1962 */;
+import { isVoiceChannel } from "createChannelRecord" /* 1961 */;
+import closure_6 from "reset" /* 4582 */;
+import closure_7 from "fetchFingerprint" /* 502 */;
+import closure_8 from "ensureGuildLoaded" /* 1957 */;
+import closure_9 from "createGuildRecordFromRust" /* 1979 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_11 from "markAllUserIdListsStale" /* 4209 */;
+import closure_12 from "handleConnectionOpen" /* 2011 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4741 */;
+import closure_14 from "updateVoiceState" /* 4579 */;
+import { BasicPermissions } from "ME" /* 1074 */;
 
 require = arg1;
 function canConnectToChannel(type) {

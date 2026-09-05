@@ -1,16 +1,16 @@
-// Module ID: 15068
-// Function ID: 15069
+// Module ID: 15144
+// Function ID: 15145
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4481, 709, 686, 15069, 15071, 4926, 4477, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 672, 15145, 15147, 4965, 4556, 2]
 // Exports: VideoQuestCaptions
 
-// Module 15068 (VideoQuestCaptions)
-import ThemesDefault from "Themes" /* 709 */;
+// Module 15144 (VideoQuestCaptions)
+import ThemesDefault from "Themes" /* 576 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
-import importDefaultResult from "n" /* 686 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
+import importDefaultResult from "n" /* 672 */;
 
 const require = arg1;
 createCacheKey = { container: null, captionBox: null, captionText: null };

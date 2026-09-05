@@ -1,24 +1,24 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11589
+// Function ID: 11590
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1386, 4120, 4130, 1921, 10142, 673, 21, 4481, 644, 9667, 6989, 11522, 11531, 11532, 1233, 9960, 9961, 4301, 1372, 11534, 11539, 7318, 11540, 1890, 9749, 8525, 2]
+// Dependencies: [32, 19, 17, 1957, 4199, 4209, 1371, 10213, 1074, 21, 4560, 563, 9738, 7049, 11590, 11599, 11600, 1114, 10031, 10032, 4380, 1943, 11602, 11607, 7380, 11608, 1874, 9820, 8595, 2]
 // Exports: default
 
-// Module 11521 (useMemberListAction)
+// Module 11589 (useMemberListAction)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import ME from "ME" /* 673 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "left", listActionHeight: "call" };
+let closure_14 = { listActionRenderer: "hash", listActionHeight: "call" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

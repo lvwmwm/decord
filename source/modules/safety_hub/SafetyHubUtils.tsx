@@ -1,18 +1,18 @@
-// Module ID: 8348
-// Function ID: 8349
+// Module ID: 8418
+// Function ID: 8419
 // Name: parseMessageEmbedForProps
-// Dependencies: [1215, 8349, 673, 4074, 4678, 1233, 8350, 586, 2]
+// Dependencies: [502, 8419, 1074, 4153, 4710, 1114, 8420, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 8348 (parseMessageEmbedForProps)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hooksDefault from "hooks" /* 4074 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4678 */;
-import ContentIdType from "ContentIdType" /* 8350 */;
-import closure_3 from "fetchFingerprint" /* 1215 */;
-import SafetyHubView from "SafetyHubView" /* 8349 */;
-import ME from "ME" /* 673 */;
+// Module 8418 (parseMessageEmbedForProps)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hooksDefault from "hooks" /* 4153 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4710 */;
+import ContentIdType from "ContentIdType" /* 8420 */;
+import closure_3 from "fetchFingerprint" /* 502 */;
+import SafetyHubView from "SafetyHubView" /* 8419 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 function parseMessageEmbedForProps(fields) {

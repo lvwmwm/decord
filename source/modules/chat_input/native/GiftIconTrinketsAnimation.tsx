@@ -1,19 +1,19 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12250
+// Function ID: 12251
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4473, 21, 4481, 4197, 709, 586, 1901, 1234, 8738, 5542, 2]
+// Dependencies: [19, 17, 4552, 21, 4560, 4262, 576, 504, 1925, 1115, 8808, 5587, 2]
 
-// Module 12182 (GiftIconTrinketsAnimation)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import set from "set" /* 1234 */;
-import map from "map" /* 4197 */;
-import preloadDefault from "preload" /* 5542 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8738 */;
+// Module 12250 (GiftIconTrinketsAnimation)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import set from "set" /* 1115 */;
+import map from "map" /* 4262 */;
+import preloadDefault from "preload" /* 5587 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8808 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

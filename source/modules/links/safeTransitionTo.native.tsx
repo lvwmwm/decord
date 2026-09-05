@@ -1,13 +1,13 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7244
+// Function ID: 7245
 // Name: _safeTransitionTo
-// Dependencies: [5, 1908, 673, 4682, 7185, 1219, 7186, 4866, 1233, 7216, 2500, 7253, 2]
+// Dependencies: [5, 1979, 1074, 4714, 7245, 1100, 7246, 4905, 1114, 7276, 2528, 7315, 2]
 // Exports: default
 
-// Module 7184 (_safeTransitionTo)
+// Module 7244 (_safeTransitionTo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createGuildRecordFromRust" /* 1908 */;
-import { Routes } from "ME" /* 673 */;
+import closure_4 from "createGuildRecordFromRust" /* 1979 */;
+import { Routes } from "ME" /* 1074 */;
 
 const require = arg1;
 function _safeTransitionTo() {

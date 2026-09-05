@@ -1,12 +1,12 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 5019
+// Function ID: 5020
 // Name: getSoundFromSounds
-// Dependencies: [4743, 4975, 4981, 691, 2]
+// Dependencies: [4781, 5014, 5020, 1096, 2]
 // Exports: default
 
-// Module 4980 (getSoundFromSounds)
-import closure_2 from "reinjectEphemerals" /* 4743 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4975 */;
+// Module 5019 (getSoundFromSounds)
+import closure_2 from "reinjectEphemerals" /* 4781 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 5014 */;
 
 const require = arg1;
 function getSoundFromSounds(arr) {
@@ -30,7 +30,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (guild_id2 == null) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return _require(4981).soundboardSoundFromAPI(found, guild_id2);
+    return _require(5020).soundboardSoundFromAPI(found, guild_id2);
   } else {
     message = message.getMessage(arg0, arg1);
     if (null != message) {
@@ -41,7 +41,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
           type = messageReference.type;
         }
       }
-      if (type === _require(691).MessageReferenceTypes.FORWARD) {
+      if (type === _require(1096).MessageReferenceTypes.FORWARD) {
         let messageSnapshots;
         if (message != null) {
           messageSnapshots = message.messageSnapshots;
@@ -84,7 +84,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (guild_id == null) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return tmp3(4981).soundboardSoundFromAPI(found1, guild_id);
+        return tmp3(5020).soundboardSoundFromAPI(found1, guild_id);
       }
       tmp3 = _require;
     }

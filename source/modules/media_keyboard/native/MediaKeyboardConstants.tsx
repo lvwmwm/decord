@@ -1,12 +1,12 @@
-// Module ID: 1622
-// Function ID: 1623
+// Module ID: 1607
+// Function ID: 1608
 // Name: DRAG_HANDLE
-// Dependencies: [1623, 709, 2]
+// Dependencies: [1608, 576, 2]
 
-// Module 1622 (DRAG_HANDLE)
+// Module 1607 (DRAG_HANDLE)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 709 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
+import ThemesDefault from "Themes" /* 576 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
 
 if (isMetaQuest.isMetaQuest()) {
   let obj = { slotHeight: 24, barColor: null, barWidth: null, barHeight: null, barMarginTop: null };

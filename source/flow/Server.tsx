@@ -1,9 +1,9 @@
-// Module ID: 1954
-// Function ID: 1955
+// Module ID: 1894
+// Function ID: 1895
 // Name: PermissionOverwriteType
 // Dependencies: [2]
 
-// Module 1954 (PermissionOverwriteType)
+// Module 1894 (PermissionOverwriteType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("flow/Server.tsx");

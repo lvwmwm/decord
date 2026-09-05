@@ -1,26 +1,26 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 9951
+// Function ID: 9952
 // Name: stopScreenshare
-// Dependencies: [19, 17, 4503, 4532, 673, 4545, 4460, 7689, 4534, 9012, 4670, 4547, 9019, 9039, 9881, 9875, 1623, 9900, 9901, 9902, 9903, 586, 9887, 7102, 1233, 2]
+// Dependencies: [19, 17, 4582, 1908, 1074, 4585, 4539, 7756, 1910, 9082, 4702, 4612, 9089, 9110, 9952, 9946, 1608, 9971, 9972, 9973, 9974, 504, 9958, 7162, 1114, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 9880 (stopScreenshare)
-import inject from "inject" /* 4534 */;
-import isStreamKey from "isStreamKey" /* 4547 */;
-import watchStream from "watchStream" /* 4670 */;
-import contextDefault from "context" /* 7102 */;
-import initializeDefault from "initialize" /* 7689 */;
-import _handleToggleVideo from "_handleToggleVideo" /* 9012 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9019 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 9875 */;
-import useHasVideoPermissionDefault from "useHasVideoPermission" /* 9875 */;
-import apexExperimentDefault from "apexExperiment" /* 9887 */;
+// Module 9951 (stopScreenshare)
+import inject from "inject" /* 1910 */;
+import isStreamKey from "isStreamKey" /* 4612 */;
+import watchStream from "watchStream" /* 4702 */;
+import contextDefault from "context" /* 7162 */;
+import initializeDefault from "initialize" /* 7756 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9082 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9089 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 9946 */;
+import useHasVideoPermissionDefault from "useHasVideoPermission" /* 9946 */;
+import apexExperimentDefault from "apexExperiment" /* 9958 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4532 */;
-import { ApplicationStreamStates } from "ME" /* 673 */;
-import { Features } from "DesktopSources" /* 4545 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4460 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "_detectH265HardwareDecode" /* 1908 */;
+import { ApplicationStreamStates } from "ME" /* 1074 */;
+import { Features } from "DesktopSources" /* 4585 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4539 */;
 
 require = arg1;
 function stopScreenshare() {
@@ -28,8 +28,8 @@ function stopScreenshare() {
   voiceEngine.stopBroadcast();
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    let tmpResult = tmp(4670);
-    tmpResult = tmp(4547);
+    let tmpResult = tmp(4702);
+    tmpResult = tmp(4612);
     tmpResult.stopStream(tmpResult.encodeStreamKey(currentUserActiveStream));
   }
   const obj = inject;
@@ -62,12 +62,12 @@ export default function useScreenshareUtils(arg0) {
   importDefault = tmp;
   dependencyMap = tmp2;
   const items = [stateFromStores1];
-  const stateFromStores = _require(586).useStateFromStores(items, () => stateFromStores1.supports(constants.VIDEO));
-  let obj = _require(586);
+  const stateFromStores = _require(504).useStateFromStores(items, () => stateFromStores1.supports(constants.VIDEO));
+  let obj = _require(504);
   const showMobileGoLiveUpsell = apexExperimentDefault.useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
   let obj2 = apexExperimentDefault;
   const items1 = [showMobileGoLiveUpsell];
-  stateFromStores1 = _require(586).useStateFromStores(items1, () => showMobileGoLiveUpsell.getCurrentUserActiveStream());
+  stateFromStores1 = _require(504).useStateFromStores(items1, () => showMobileGoLiveUpsell.getCurrentUserActiveStream());
   const analyticsLocations = contextDefault().analyticsLocations;
   const items2 = [stateFromStores1, arg0, stateFromStores, tmp, closure_8 >= 12, showMobileGoLiveUpsell, analyticsLocations];
   return stateFromStores.useMemo(() => {
@@ -85,8 +85,8 @@ export default function useScreenshareUtils(arg0) {
     let obj = { isFeatureEnabled: tmp3, isActive: tmp, text: null, onPress: null, imgSource: null };
     if (!showMobileGoLiveUpsell) {
       if (tmp) {
-        const intl = callback(1233).intl;
-        let stringResult = intl.string(callback(1233).t.CpkXwZ);
+        const intl = callback(1114).intl;
+        let stringResult = intl.string(callback(1114).t.CpkXwZ);
       }
       obj[2] = stringResult;
       let flag = tmp4;
@@ -107,7 +107,7 @@ export default function useScreenshareUtils(arg0) {
             }
           }
         } else {
-          fn = callback(9012).showScreenshareDisabledAlert;
+          fn = callback(9082).showScreenshareDisabledAlert;
         }
       } else {
         fn = function l() {
@@ -119,23 +119,23 @@ export default function useScreenshareUtils(arg0) {
       }
       obj[3] = fn;
       if (obj2.isMetaQuest()) {
-        tmp19(tmp ? 9900 : 9901);
+        tmp19(tmp ? 9971 : 9972);
       } else {
         if (tmp4) {
-          let tmp20 = 9902;
+          let tmp20 = 9973;
         } else {
-          tmp20 = tmp ? 9903 : 9902;
+          tmp20 = tmp ? 9974 : 9973;
         }
         obj[4] = tmp19(tmp20);
         return obj;
       }
-      obj2 = callback(1623);
+      obj2 = callback(1608);
       tmp11 = closure_1;
       tmp12 = dependencyMap;
       const tmp13 = analyticsLocations;
     }
-    const intl2 = callback(1233).intl;
-    stringResult = intl2.string(callback(1233).t.fjBNo1);
+    const intl2 = callback(1114).intl;
+    stringResult = intl2.string(callback(1114).t.fjBNo1);
   }, items2);
 };
 export const handleCloseScreenshare = function handleCloseScreenshare() {

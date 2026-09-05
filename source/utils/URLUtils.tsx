@@ -1,15 +1,15 @@
-// Module ID: 1485
-// Function ID: 1486
+// Module ID: 1365
+// Function ID: 1366
 // Name: isDiscordProxiedAssetUrl
-// Dependencies: [673, 1486, 1487, 1485, 1394, 12, 2]
+// Dependencies: [1074, 1366, 1367, 1365, 1369, 12, 2]
 
-// Module 1485 (isDiscordProxiedAssetUrl)
+// Module 1365 (isDiscordProxiedAssetUrl)
 import applyDefault from "apply" /* 12 */;
-import ME from "ME" /* 673 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1394 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
-import ipDefault from "ip" /* 1486 */;
-import UrlAll from "Url" /* 1487 */;
+import ME from "ME" /* 1074 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1365 */;
+import ipDefault from "ip" /* 1366 */;
+import UrlAll from "Url" /* 1367 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1369 */;
 import set from "set" /* 2 */;
 
 function isDiscordProxiedAssetUrl(url, arg1, arg2) {

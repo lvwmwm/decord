@@ -1,16 +1,16 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10687
+// Function ID: 10688
 // Name: create
-// Dependencies: [32, 1306, 10609, 10601, 10600, 10599, 2]
+// Dependencies: [32, 1188, 10680, 10672, 10671, 10670, 2]
 
-// Module 10616 (create)
-import _mod1306 from "module_1306" /* 1306 */;
-import create from "create" /* 10599 */;
-import create2 from "create" /* 10600 */;
-import create3 from "create" /* 10601 */;
-import create4 from "create" /* 10609 */;
+// Module 10687 (create)
+import _mod1188 from "module_1188" /* 1188 */;
+import create from "create" /* 10670 */;
+import create2 from "create" /* 10671 */;
+import create3 from "create" /* 10672 */;
+import create4 from "create" /* 10680 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { MessageType } from "module_1306" /* 1306 */;
+import { MessageType } from "module_1188" /* 1188 */;
 
 require = arg1;
 class PremiumTabPopover$Type extends MessageType {
@@ -23,7 +23,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(10609).ThemeAwareAsset;
+            return callback(10680).ThemeAwareAsset;
           }
     };
     items[3] = {
@@ -31,7 +31,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(10601).CTAButton;
+            return callback(10672).CTAButton;
           }
     };
     items[4] = { no: 5, name: "help_article_id", kind: "scalar", T: 9 };
@@ -40,7 +40,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(10600).HelpArticle;
+            return callback(10671).HelpArticle;
           }
     };
     obj = { no: 7, name: "header_localized", kind: "message", T: null };
@@ -56,7 +56,7 @@ class PremiumTabPopover$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(10599).LocalizedString;
+            return callback(10670).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PremiumTabPopover", items, T);
@@ -69,10 +69,10 @@ prototype["create"] = function create(arr) {
   let obj = { header: "", body: "", helpArticleId: "" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
-  _Object.defineProperty(obj, _mod1306.MESSAGE_TYPE, obj);
+  _Object.defineProperty(obj, _mod1188.MESSAGE_TYPE, obj);
   if (undefined !== arr) {
-    const result = _mod1306.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1306;
+    const result = _mod1188.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1188;
   }
   return obj;
 };
@@ -156,7 +156,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
             if (true === onRead) {
               let tmp8 = require;
               let tmp9 = dependencyMap;
-              onRead = _mod1306.UnknownFieldHandler.onRead;
+              onRead = _mod1188.UnknownFieldHandler.onRead;
             }
             let tmp10 = obj;
             let tmp11 = tmp5;
@@ -172,51 +172,51 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(header, tag, writeUnknownFields) {
   if ("" !== header.header) {
-    tag.tag(1, _mod1306.WireType.LengthDelimited).string(header.header);
-    const tagResult = tag.tag(1, _mod1306.WireType.LengthDelimited);
+    tag.tag(1, _mod1188.WireType.LengthDelimited).string(header.header);
+    const tagResult = tag.tag(1, _mod1188.WireType.LengthDelimited);
   }
   if ("" !== header.body) {
-    tag.tag(2, _mod1306.WireType.LengthDelimited).string(header.body);
-    const tagResult1 = tag.tag(2, _mod1306.WireType.LengthDelimited);
+    tag.tag(2, _mod1188.WireType.LengthDelimited).string(header.body);
+    const tagResult1 = tag.tag(2, _mod1188.WireType.LengthDelimited);
   }
   if (header.asset) {
     const ThemeAwareAsset = create4.ThemeAwareAsset;
-    const tagResult2 = tag.tag(3, _mod1306.WireType.LengthDelimited);
-    const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult2 = tag.tag(3, _mod1188.WireType.LengthDelimited);
+    const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (header.button) {
     const CTAButton = create3.CTAButton;
-    const tagResult3 = tag.tag(4, _mod1306.WireType.LengthDelimited);
-    const joined1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult3 = tag.tag(4, _mod1188.WireType.LengthDelimited);
+    const joined1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("" !== header.helpArticleId) {
-    tag.tag(5, _mod1306.WireType.LengthDelimited).string(header.helpArticleId);
-    const tagResult4 = tag.tag(5, _mod1306.WireType.LengthDelimited);
+    tag.tag(5, _mod1188.WireType.LengthDelimited).string(header.helpArticleId);
+    const tagResult4 = tag.tag(5, _mod1188.WireType.LengthDelimited);
   }
   if (header.helpArticle) {
     const HelpArticle = create2.HelpArticle;
-    const tagResult5 = tag.tag(6, _mod1306.WireType.LengthDelimited);
-    const joined2 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(6, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult2 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(6, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult5 = tag.tag(6, _mod1188.WireType.LengthDelimited);
+    const joined2 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(6, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(6, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (header.headerLocalized) {
     const LocalizedString = create.LocalizedString;
-    const tagResult6 = tag.tag(7, _mod1306.WireType.LengthDelimited);
-    const joined3 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(7, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult3 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(7, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult6 = tag.tag(7, _mod1188.WireType.LengthDelimited);
+    const joined3 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(7, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(7, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (header.bodyLocalized) {
     const LocalizedString2 = create.LocalizedString;
-    const tagResult7 = tag.tag(8, _mod1306.WireType.LengthDelimited);
-    const joined4 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(8, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult4 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(8, _mod1306.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult7 = tag.tag(8, _mod1188.WireType.LengthDelimited);
+    const joined4 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(8, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult4 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(8, _mod1188.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1306.UnknownFieldHandler.onWrite;
+      onWrite = _mod1188.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, header, tag);
@@ -231,7 +231,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(10609).ThemeAwareAsset;
+      return callback(10680).ThemeAwareAsset;
     }
   },
   {
@@ -239,7 +239,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(10601).CTAButton;
+      return callback(10672).CTAButton;
     }
   },
   { no: 5, name: "help_article_id", kind: "scalar", T: 9 },
@@ -248,7 +248,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(10600).HelpArticle;
+      return callback(10671).HelpArticle;
     }
   },
 ,
@@ -267,7 +267,7 @@ items[7] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(10599).LocalizedString;
+    return callback(10670).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PremiumTabPopover", items, tmp, T, PremiumTabPopover$Type, prototype, items);

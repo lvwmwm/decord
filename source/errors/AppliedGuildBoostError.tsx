@@ -1,13 +1,13 @@
-// Module ID: 4384
-// Function ID: 4385
+// Module ID: 4466
+// Function ID: 4467
 // Name: _getMessageFromRateLimit
-// Dependencies: [4162, 4163, 684, 1233, 2]
+// Dependencies: [4241, 4242, 1090, 1114, 2]
 
-// Module 4384 (_getMessageFromRateLimit)
-import setDefault from "set" /* 684 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import prototypeDefault from "prototype" /* 4162 */;
-import resetCache from "resetCache" /* 4163 */;
+// Module 4466 (_getMessageFromRateLimit)
+import setDefault from "set" /* 1090 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import prototypeDefault from "prototype" /* 4241 */;
+import resetCache from "resetCache" /* 4242 */;
 
 require = arg1;
 prototypeDefault;

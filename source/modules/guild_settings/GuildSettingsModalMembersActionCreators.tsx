@@ -1,12 +1,12 @@
-// Module ID: 11770
-// Function ID: 11771
-// Dependencies: [673, 706, 527, 1233, 2]
+// Module ID: 11838
+// Function ID: 11839
+// Dependencies: [1074, 573, 1272, 1114, 2]
 
-// Module 11770
+// Module 11838
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 527 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import sendRequest from "sendRequest" /* 1272 */;
+import ME from "ME" /* 1074 */;
 
 ({ Endpoints: c3, ME: c4 } = ME);
 const result = set.fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersActionCreators.tsx");
@@ -48,11 +48,11 @@ export default {
     }
     let obj = dispatcherDefault;
     obj.dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME" });
-    const HTTP = _require(527).HTTP;
+    const HTTP = _require(1272).HTTP;
     obj = { url: GUILD_MEMBER_NICKResult, body: obj, oldFormErrors: true, rejectWithError: null };
     obj = { nick };
-    obj[3] = _require(527).rejectWithMigratedError();
-    const obj4 = _require(527);
+    obj[3] = _require(1272).rejectWithMigratedError();
+    const obj4 = _require(1272);
     HTTP.patch(obj).then(() => {
       callback2(table[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_SUCCESS" });
     }, (status) => {

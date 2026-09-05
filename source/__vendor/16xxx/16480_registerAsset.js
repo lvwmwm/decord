@@ -1,10 +1,10 @@
 // Module ID: 16480
 // Function ID: 16481
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 16480 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 14, height: 14, scales: [2, 3], hash: "c34a0c861b7d42ccaa05d56a524cbcd8", name: "ic_public", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2bf7738cbb1d2827663b492fedbd65fb", name: "MedalIcon", type: "png" });

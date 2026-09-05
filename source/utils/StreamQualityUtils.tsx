@@ -1,22 +1,22 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9109
+// Function ID: 9110
 // Name: isPremiumResolution
-// Dependencies: [19, 4575, 1215, 1908, 4557, 1921, 673, 4540, 1923, 4545, 1233, 586, 4663, 695, 2]
+// Dependencies: [19, 4606, 502, 1979, 4583, 1371, 1074, 4607, 1373, 4585, 1114, 504, 4696, 1242, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9038 (isPremiumResolution)
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 9109 (isPremiumResolution)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ApplicationStreamPresets" /* 4575 */;
-import closure_5 from "fetchFingerprint" /* 1215 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "createRTCConnection" /* 4557 */;
-import closure_8 from "mergeGuildAvatar" /* 1921 */;
-import { AnalyticEvents } from "ME" /* 673 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4540 */;
-import { StreamQualitiesToPremiumType as closure_15 } from "GuildFeatures" /* 1923 */;
-import { ResolutionTypes } from "DesktopSources" /* 4545 */;
+import closure_4 from "ApplicationStreamPresets" /* 4606 */;
+import closure_5 from "fetchFingerprint" /* 502 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "createRTCConnection" /* 4583 */;
+import closure_8 from "mergeGuildAvatar" /* 1371 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4607 */;
+import { StreamQualitiesToPremiumType as closure_15 } from "GuildFeatures" /* 1373 */;
+import { ResolutionTypes } from "DesktopSources" /* 4585 */;
 
 require = arg1;
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: unpackModuleId, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = RESOLUTION_720);

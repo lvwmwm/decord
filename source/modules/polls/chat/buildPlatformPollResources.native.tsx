@@ -1,19 +1,19 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11718
+// Function ID: 11719
 // Name: buildPlatformPollResources
-// Dependencies: [12, 11651, 4481, 709, 7877, 7084, 5573, 1434, 2]
+// Dependencies: [12, 11719, 4560, 576, 7946, 7144, 5618, 1399, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 11650 (buildPlatformPollResources)
-import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
-import registerAssetDefault from "registerAsset" /* 5573 */;
-import registerAssetDefault2 from "registerAsset" /* 7084 */;
+// Module 11718 (buildPlatformPollResources)
+import ensureAvatarSource from "ensureAvatarSource" /* 1399 */;
+import registerAssetDefault from "registerAsset" /* 5618 */;
+import registerAssetDefault2 from "registerAsset" /* 7144 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
 let closure_3 = importDefaultResult.mapValues(require("normal").pollStyleSets, (arg0) => {
   const _require = arg0;
-  closure_1 = _require(4481).createNativeStyleProperties((arg0) => {
+  closure_1 = _require(4560).createNativeStyleProperties((arg0) => {
     let tmp = callback(callback2(closure_1_2[3]), arg0);
     return callback2(closure_1_2[0]).pickBy(tmp, (num) => {
       let tmp = typeof num !== "number";
@@ -45,9 +45,9 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   importDefault = layoutType;
   const obj = { styles: importDefaultResult.mapValues(closure_3, (arg0) => arg0(closure_0, closure_1)), selectedIcon: null, checkmarkIcon: null };
   const obj2 = importDefaultResult;
-  obj[1] = _require(7877).getAssetUriForEmbed(registerAssetDefault2);
-  const obj3 = _require(7877);
-  obj[2] = _require(7877).getAssetUriForEmbed(registerAssetDefault);
+  obj[1] = _require(7946).getAssetUriForEmbed(registerAssetDefault2);
+  const obj3 = _require(7946);
+  obj[2] = _require(7946).getAssetUriForEmbed(registerAssetDefault);
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {

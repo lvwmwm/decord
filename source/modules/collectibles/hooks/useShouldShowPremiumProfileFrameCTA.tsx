@@ -1,14 +1,14 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13160
+// Function ID: 13161
 // Name: useShouldShowPremiumProfileFrameCTA
-// Dependencies: [13093, 8760, 1949, 2]
+// Dependencies: [13161, 8830, 1889, 2]
 // Exports: default
 
-// Module 13092 (useShouldShowPremiumProfileFrameCTA)
+// Module 13160 (useShouldShowPremiumProfileFrameCTA)
 import set from "set" /* 2 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import useCanPurchaseFramesDefault from "useCanPurchaseFrames" /* 8760 */;
-import useShouldShowPremiumProfileFrameEADefault from "useShouldShowPremiumProfileFrameEA" /* 13093 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
+import useCanPurchaseFramesDefault from "useCanPurchaseFrames" /* 8830 */;
+import useShouldShowPremiumProfileFrameEADefault from "useShouldShowPremiumProfileFrameEA" /* 13161 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
 

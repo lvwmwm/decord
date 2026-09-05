@@ -1,12 +1,12 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11662
+// Function ID: 11663
 // Name: useShouldHideMediaOptions
-// Dependencies: [1386, 1393, 644, 2]
+// Dependencies: [1957, 1964, 563, 2]
 // Exports: default
 
-// Module 11594 (useShouldHideMediaOptions)
-import closure_2 from "ensureGuildLoaded" /* 1386 */;
-import { ChannelFlags } from "set" /* 1393 */;
+// Module 11662 (useShouldHideMediaOptions)
+import closure_2 from "ensureGuildLoaded" /* 1957 */;
+import { ChannelFlags } from "set" /* 1964 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_channel/useShouldHideMediaOptions.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/media_channel/useSh
 export default function useShouldHideMediaOptions(arg0) {
   const _require = arg0;
   const items = [closure_2];
-  const stateFromStores = _require(644).useStateFromStores(items, () => {
+  const stateFromStores = _require(563).useStateFromStores(items, () => {
     const channel = closure_1_2.getChannel(closure_0);
     let parent_id;
     if (channel != null) {

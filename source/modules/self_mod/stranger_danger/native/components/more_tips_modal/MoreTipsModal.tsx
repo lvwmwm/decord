@@ -1,22 +1,22 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11375
+// Function ID: 11376
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 10846, 673, 21, 4481, 709, 11308, 4477, 1233, 11309, 7315, 4731, 6932, 1296, 1627, 644, 11302, 7535, 7540, 6940, 2]
+// Dependencies: [19, 17, 10915, 1074, 21, 4560, 576, 11376, 4556, 1114, 11377, 7377, 4763, 6992, 1178, 1611, 563, 11370, 7602, 7607, 7000, 2]
 // Exports: default
 
-// Module 11307 (MoreTipsModalScreen)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text from "Text" /* 4477 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11308 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11309 */;
+// Module 11375 (MoreTipsModalScreen)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import Text from "Text" /* 4556 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11376 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11377 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 10846 */;
-import { AnalyticEvents } from "ME" /* 673 */;
+import closure_6 from "handleConnectionOpen" /* 10915 */;
+import { AnalyticEvents } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function MoreTipsModalScreen(learnMore) {
@@ -71,7 +71,7 @@ export default function MoreTipsModal(channelId) {
   importDefault = warningId;
   const senderId = channelId.senderId;
   dependencyMap = senderId;
-  let MORE_TIPS = _require(644);
+  let MORE_TIPS = _require(563);
   const items = [c6];
   const stateFromStores = MORE_TIPS.useStateFromStores(items, () => _undefined5.getChannelSafetyWarning(c0, c1));
   let React = stateFromStores;
@@ -122,5 +122,5 @@ export default function MoreTipsModal(channelId) {
       return closure_1_8(closure_1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(6940).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback(_require(7000).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

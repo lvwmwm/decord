@@ -1,9 +1,9 @@
-// Module ID: 13074
-// Function ID: 13075
+// Module ID: 13142
+// Function ID: 13143
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13074 (metadata)
+// Module 13142 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/fn_pdp_preview_header.png.js");

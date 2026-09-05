@@ -1,12 +1,12 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16416
+// Function ID: 16417
 // Name: setTab
-// Dependencies: [706, 2]
+// Dependencies: [573, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 16340 (setTab)
+// Module 16416 (setTab)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 const result = set.fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");
 

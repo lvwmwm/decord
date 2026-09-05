@@ -1,16 +1,16 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 10947
+// Function ID: 10948
 // Name: RolePill
-// Dependencies: [19, 17, 673, 21, 4481, 709, 4166, 7126, 7130, 4193, 5084, 7144, 4477, 2]
+// Dependencies: [19, 17, 1074, 21, 4560, 576, 1935, 7186, 7190, 4258, 5123, 7204, 4556, 2]
 // Exports: default
 
-// Module 10878 (RolePill)
+// Module 10947 (RolePill)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
+import ThemesDefault from "Themes" /* 576 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 noopAll;
@@ -33,9 +33,9 @@ export default function RolePill(role) {
   role = role.role;
   ({ guildId, color } = role);
   let combined;
-  const DeveloperMode = role(4166).DeveloperMode;
+  const DeveloperMode = role(1935).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7126);
+  let obj = role(7186);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
@@ -80,8 +80,8 @@ export default function RolePill(role) {
     }
     obj2[2] = guildId;
     obj2[3] = color;
-    let tmp10Result = tmp10(combined(7144), obj2);
-    const tmp15 = combined(7144);
+    let tmp10Result = tmp10(combined(7204), obj2);
+    const tmp15 = combined(7204);
   } else {
     const items = [tmp9.bubble, ];
     if (null != color) {
@@ -105,8 +105,8 @@ export default function RolePill(role) {
     tmp10Result = tmp10(tmp12, obj6);
   }
   items1[1] = tmp10Result;
-  items1[2] = closure_6(role(4477).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(4556).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   obj1[1] = items1;
   obj[4] = closure_7(View, obj1);
-  return closure_6(role(5084).PressableHighlight, obj);
+  return closure_6(role(5123).PressableHighlight, obj);
 };

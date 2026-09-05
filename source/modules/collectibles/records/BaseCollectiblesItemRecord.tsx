@@ -1,10 +1,10 @@
-// Module ID: 1948
-// Function ID: 1949
+// Module ID: 1888
+// Function ID: 1889
 // Name: fromServer
-// Dependencies: [1935, 2]
+// Dependencies: [1386, 2]
 
-// Module 1948 (fromServer)
-import toJSDefault from "toJS" /* 1935 */;
+// Module 1888 (fromServer)
+import toJSDefault from "toJS" /* 1386 */;
 
 toJSDefault;
 let prototype;

@@ -1,14 +1,14 @@
-// Module ID: 6537
-// Function ID: 6538
+// Module ID: 6596
+// Function ID: 6597
 // Name: str2
-// Dependencies: [1624, 1623, 1234, 2]
+// Dependencies: [1364, 1608, 1115, 2]
 // Exports: getDevicePushProvider
 
-// Module 6537 (str2)
+// Module 6596 (str2)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1234 */;
-import getConstants from "getConstants" /* 1624 */;
-import isMetaQuest from "isMetaQuest" /* 1623 */;
+import set2 from "set" /* 1115 */;
+import getConstants from "getConstants" /* 1364 */;
+import isMetaQuest from "isMetaQuest" /* 1608 */;
 
 getConstants = getConstants.getConstants();
 let str;

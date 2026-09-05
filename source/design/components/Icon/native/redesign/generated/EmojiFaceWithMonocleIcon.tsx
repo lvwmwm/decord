@@ -1,14 +1,14 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15373
+// Function ID: 15374
 // Name: EmojiFaceWithMonocleIcon
-// Dependencies: [19, 21, 709, 4196, 15298, 2]
+// Dependencies: [19, 21, 576, 4261, 15374, 2]
 // Exports: EmojiFaceWithMonocleIcon
 
-// Module 15297 (EmojiFaceWithMonocleIcon)
+// Module 15373 (EmojiFaceWithMonocleIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15298 */;
+import ThemesDefault from "Themes" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4261 */;
+import registerAsset from "registerAsset" /* 15374 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

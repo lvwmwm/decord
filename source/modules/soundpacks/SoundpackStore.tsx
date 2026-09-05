@@ -1,13 +1,13 @@
-// Module ID: 9832
-// Function ID: 9833
+// Module ID: 9903
+// Function ID: 9904
 // Name: Soundpacks
-// Dependencies: [9833, 586, 706, 2]
+// Dependencies: [9904, 504, 573, 2]
 
-// Module 9832 (Soundpacks)
+// Module 9903 (Soundpacks)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import Soundpacks2 from "Soundpacks" /* 9833 */;
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import Soundpacks2 from "Soundpacks" /* 9904 */;
 
 const Soundpacks = Soundpacks2.Soundpacks;
 let closure_1 = { soundpack: Soundpacks.CLASSIC, lastSoundpackExperimentId: null };

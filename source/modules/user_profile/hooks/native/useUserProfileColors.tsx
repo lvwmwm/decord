@@ -1,17 +1,17 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 8238
+// Function ID: 8239
 // Name: useUserProfileColors
-// Dependencies: [4473, 502, 4416, 7124, 586, 4197, 709, 8160, 685, 2]
+// Dependencies: [4552, 1085, 4495, 7184, 504, 4262, 576, 8229, 1091, 2]
 // Exports: useUserProfileColors
 
-// Module 8169 (useUserProfileColors)
-import initialize from "initialize" /* 586 */;
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
-import useThemeDefault from "useTheme" /* 4416 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7124 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import { ThemeTypes } from "sum" /* 502 */;
+// Module 8238 (useUserProfileColors)
+import initialize from "initialize" /* 504 */;
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
+import useThemeDefault from "useTheme" /* 4495 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7184 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import { ThemeTypes } from "sum" /* 1085 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileColors.tsx");
@@ -40,7 +40,7 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
     if (null != secondaryColor) {
       if (null != profileThemeValues) {
         ({ overlay, sectionBox, overlaySyncedWithUserTheme } = profileThemeValues);
-        let tmp3Result = tmp3(8160);
+        let tmp3Result = tmp3(8229);
         let tmp7 = overlay;
         if (stateFromStores) {
           tmp7 = overlaySyncedWithUserTheme;
@@ -49,13 +49,13 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
         obj = {};
         const merged = Object.assign(obj);
         obj.containerBackground = tmp6;
-        tmp3Result = tmp3(685);
-        obj.gradientSecondaryBackground = tmp3Result.int2hex(tmp3(8160).calculateOverlayedColor(secondaryColor, overlay));
-        const tmp3Result1 = tmp3(8160);
-        obj.avatarBackground = tmp3(685).int2hex(result);
-        const tmp3Result2 = tmp3(685);
-        const tmp3Result3 = tmp3(685);
-        obj.statusBackground = tmp3Result3.int2hex(tmp3(8160).calculateOverlayedColor(result, sectionBox));
+        tmp3Result = tmp3(1091);
+        obj.gradientSecondaryBackground = tmp3Result.int2hex(tmp3(8229).calculateOverlayedColor(secondaryColor, overlay));
+        const tmp3Result1 = tmp3(8229);
+        obj.avatarBackground = tmp3(1091).int2hex(result);
+        const tmp3Result2 = tmp3(1091);
+        const tmp3Result3 = tmp3(1091);
+        obj.statusBackground = tmp3Result3.int2hex(tmp3(8229).calculateOverlayedColor(result, sectionBox));
         return obj;
       }
     }

@@ -1,14 +1,14 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9569
+// Function ID: 9570
 // Name: leaveFrame
-// Dependencies: [9439, 673, 4383, 7058, 9447, 9453, 695, 706, 2]
+// Dependencies: [9510, 1074, 4465, 7118, 9518, 9524, 1242, 573, 2]
 
-// Module 9498 (leaveFrame)
-import dispatcherDefault from "dispatcher" /* 706 */;
-import initializeDefault from "initialize" /* 7058 */;
-import closure_3 from "map" /* 9439 */;
-import ME from "ME" /* 673 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4383 */;
+// Module 9569 (leaveFrame)
+import dispatcherDefault from "dispatcher" /* 573 */;
+import initializeDefault from "initialize" /* 7118 */;
+import closure_3 from "map" /* 9510 */;
+import ME from "ME" /* 1074 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4465 */;
 
 let require = arg1;
 ({ AnalyticEvents: c4, RPCCloseCodes: c5 } = ME);
@@ -21,14 +21,15 @@ class FramesManager extends tmp3 {
       RPC_APP_DISCONNECTED(arg0) {
             applyArgumentsResult.handleRPCDisconnect(arg0);
           },
-      FRAME_LAUNCH(applicationId) {
-            const result = applyArgumentsResult(9447).trackFrameSessionStart(applicationId.applicationId);
+      FRAME_LAUNCH(arg0) {
+            ({ applicationId, analyticsContext } = arg0);
+            const result = applyArgumentsResult(9518).trackFrameSessionStart(applicationId, analyticsContext);
           },
       FRAME_LAUNCH_FAIL(applicationId) {
-            const result = applyArgumentsResult(9453).discardPendingFrameLaunch(applicationId.applicationId);
+            const result = applyArgumentsResult(9524).discardPendingFrameLaunch(applicationId.applicationId);
           },
       FRAME_STOP(applicationId) {
-            applyArgumentsResult(9447).trackFrameSessionEnd(applicationId.applicationId);
+            applyArgumentsResult(9518).trackFrameSessionEnd(applicationId.applicationId);
           }
     };
     applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(arg0) {

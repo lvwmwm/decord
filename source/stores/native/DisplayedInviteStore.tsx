@@ -1,11 +1,11 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8739
+// Function ID: 8740
 // Name: getDisplayedInviteCode
-// Dependencies: [586, 706, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8669 (getDisplayedInviteCode)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
+// Module 8739 (getDisplayedInviteCode)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
 
 let c1 = null;
 let c2 = null;

@@ -1,15 +1,15 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15311
+// Function ID: 15312
 // Name: slider
-// Dependencies: [19, 15187, 682, 7906, 21, 702, 15236, 11136, 1233, 11400, 1234, 2]
+// Dependencies: [19, 15263, 1084, 7975, 21, 1249, 15312, 11204, 1114, 11468, 1115, 2]
 
-// Module 15235 (slider)
-import getSystemLocale from "getSystemLocale" /* 1233 */;
+// Module 15311 (slider)
+import getSystemLocale from "getSystemLocale" /* 1114 */;
 import closure_2 from "noop" /* 19 */;
-import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15187 */;
-import { FontScales } from "MAX_FAVORITES" /* 682 */;
+import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE" /* 15263 */;
+import { FontScales } from "MAX_FAVORITES" /* 1084 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11400 */;
+import createToggle from "createToggle" /* 11468 */;
 
 require = arg1;
 createToggle = {

@@ -1,13 +1,13 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16159
+// Function ID: 16160
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [1908, 4367, 673, 586, 4371, 2]
+// Dependencies: [1979, 4449, 1074, 504, 4453, 2]
 // Exports: default
 
-// Module 16081 (useIsGuildThemePerkEnabled)
-import closure_2 from "createGuildRecordFromRust" /* 1908 */;
-import closure_3 from "calculateAppliedBoosts" /* 4367 */;
-import { GuildFeatures } from "ME" /* 673 */;
+// Module 16159 (useIsGuildThemePerkEnabled)
+import closure_2 from "createGuildRecordFromRust" /* 1979 */;
+import closure_3 from "calculateAppliedBoosts" /* 4449 */;
+import { GuildFeatures } from "ME" /* 1074 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useIsGuildThemePerkEnabled.tsx");
@@ -16,7 +16,7 @@ export default function useIsGuildThemePerkEnabled(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_3];
   const items1 = [arg0];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     let tmp2 = null != callback;
     if (tmp2) {
       const guild = closure_1_2.getGuild(tmp);

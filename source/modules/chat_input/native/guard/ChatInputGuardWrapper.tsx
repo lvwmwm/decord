@@ -1,21 +1,21 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 12433
+// Function ID: 12434
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4121, 1390, 1991, 1908, 5374, 4130, 1921, 11894, 673, 6983, 21, 586, 5019, 4109, 4126, 12366, 12367, 11298, 11297, 12368, 12369, 4708, 8972, 4731, 6982, 2008, 6985, 5576, 11501, 11154, 12371, 12381, 12380, 4436, 1233, 12383, 12386, 12387, 12388, 12392, 12393, 12396, 12397, 9714, 12399, 2]
+// Dependencies: [19, 4200, 1961, 2021, 1979, 5413, 4209, 1371, 11962, 1074, 7043, 21, 504, 5058, 4188, 4205, 12434, 12435, 11366, 11365, 12436, 12437, 4740, 9042, 4763, 7042, 1896, 7045, 5621, 11569, 11222, 12439, 12449, 12448, 4515, 1114, 12451, 12454, 12455, 12456, 12460, 12461, 12464, 12465, 9785, 12467, 2]
 // Exports: default
 
-// Module 12365 (ChatInputGuardWrapper)
+// Module 12433 (ChatInputGuardWrapper)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "initialize" /* 4121 */;
-import { isThread } from "createChannelRecord" /* 1390 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRecordFromRust" /* 1908 */;
-import closure_7 from "recomputeGuild" /* 5374 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import { TextAreaCta } from "TextAreaCta" /* 11894 */;
-import ME from "ME" /* 673 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 6983 */;
+import closure_3 from "initialize" /* 4200 */;
+import { isThread } from "createChannelRecord" /* 1961 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
+import closure_6 from "createGuildRecordFromRust" /* 1979 */;
+import closure_7 from "recomputeGuild" /* 5413 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import { TextAreaCta } from "TextAreaCta" /* 11962 */;
+import ME from "ME" /* 1074 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7043 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

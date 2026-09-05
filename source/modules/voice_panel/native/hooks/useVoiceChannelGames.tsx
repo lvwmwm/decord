@@ -1,15 +1,15 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17162
+// Function ID: 17163
 // Name: useVoiceChannelGames
-// Dependencies: [19, 1215, 4572, 5240, 1921, 586, 9109, 9110, 5072, 2]
+// Dependencies: [19, 502, 4600, 5279, 1371, 504, 9180, 9181, 5111, 2]
 // Exports: default
 
-// Module 17084 (useVoiceChannelGames)
+// Module 17162 (useVoiceChannelGames)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "sortActivity" /* 4572 */;
-import closure_6 from "filterPlayingActivities" /* 5240 */;
-import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "sortActivity" /* 4600 */;
+import closure_6 from "filterPlayingActivities" /* 5279 */;
+import closure_7 from "mergeGuildAvatar" /* 1371 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useVoiceChannelGames.tsx");
@@ -20,7 +20,7 @@ export default function useVoiceChannelGames(arg0, arg1, arg2) {
   dependencyMap = arg2;
   let items = [stateFromStores, closure_6, closure_5];
   const items1 = [arg0, arg1, arg2];
-  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(504).useStateFromStoresArray(items, () => {
     if (closure_2) {
       const _Set = Set;
       const id = stateFromStores.getId();
@@ -52,11 +52,11 @@ export default function useVoiceChannelGames(arg0, arg1, arg2) {
       return [];
     }
   }, items1);
-  const obj = _require(586);
-  const getGamesForAppIds = _require(9110).useGetGamesForAppIds(stateFromStoresArray);
-  let obj2 = _require(9110);
+  const obj = _require(504);
+  const getGamesForAppIds = _require(9181).useGetGamesForAppIds(stateFromStoresArray);
+  let obj2 = _require(9181);
   const items2 = [closure_7];
-  stateFromStores = _require(586).useStateFromStores(items2, () => {
+  stateFromStores = _require(504).useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (currentUser != null) {

@@ -1,18 +1,18 @@
-// Module ID: 1236
-// Function ID: 1237
+// Module ID: 1118
+// Function ID: 1119
 // Name: getAvailableLocales
-// Dependencies: [19, 1237, 1273, 1295, 2]
+// Dependencies: [19, 1119, 1155, 1177, 2]
 // Exports: getAvailableLocales, getLanguages, getNormalizedLocale, useSyncMessages
 
-// Module 1236 (getAvailableLocales)
+// Module 1118 (getAvailableLocales)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
-  _require = _require(1237).default;
-  const found = _require(1295).filter((enabled) => enabled.enabled);
+  _require = _require(1119).default;
+  const found = _require(1177).filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
     code = code.code;
     const obj = { value: code, name: code.name, localizedName: null };
@@ -35,10 +35,10 @@ export const getAvailableLocales = function getAvailableLocales() {
   });
 };
 export const getLanguages = function getLanguages() {
-  return require(1295) /* items */;
+  return require(1177) /* items */;
 };
 export const getNormalizedLocale = function getNormalizedLocale(str, arg1) {
-  const found = parts(1295).filter((enabled) => enabled.enabled);
+  const found = parts(1177).filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
   if (mapped.includes(str)) {
     return str;
@@ -66,7 +66,7 @@ export const getNormalizedLocale = function getNormalizedLocale(str, arg1) {
     }
     return found2;
   }
-  const arr = parts(1295);
+  const arr = parts(1177);
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
   closure_0 = arg0;

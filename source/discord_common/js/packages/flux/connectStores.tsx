@@ -1,10 +1,10 @@
-// Module ID: 646
-// Function ID: 647
+// Module ID: 565
+// Function ID: 566
 // Name: connectStores
-// Dependencies: [109, 19, 21, 645, 640, 2]
+// Dependencies: [109, 19, 21, 564, 558, 2]
 // Exports: default
 
-// Module 646 (connectStores)
+// Module 565 (connectStores)
 import _objectWithoutPropertiesDefault from "_objectWithoutProperties" /* 109 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

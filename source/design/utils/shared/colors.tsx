@@ -1,12 +1,12 @@
-// Module ID: 8745
-// Function ID: 8746
+// Module ID: 8815
+// Function ID: 8816
 // Name: flattenColorOverOpaqueBackground
-// Dependencies: [686, 2]
+// Dependencies: [672, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 8745 (flattenColorOverOpaqueBackground)
+// Module 8815 (flattenColorOverOpaqueBackground)
 import set from "set" /* 2 */;
-import nDefault from "n" /* 686 */;
+import nDefault from "n" /* 672 */;
 
 const result = set.fileFinishedImporting("design/utils/shared/colors.tsx");
 

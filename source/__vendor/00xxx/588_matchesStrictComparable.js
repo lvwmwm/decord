@@ -1,0 +1,27 @@
+// Module ID: 588
+// Function ID: 589
+// Name: matchesStrictComparable
+// Dependencies: []
+
+// Module 588 (matchesStrictComparable)
+
+export default function matchesStrictComparable(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return (arg0) => {
+    let tmp = null != arg0;
+    if (tmp) {
+      let tmp4 = arg0[closure_0] === closure_1;
+      if (tmp4) {
+        let tmp5 = undefined !== tmp3;
+        if (!tmp5) {
+          const _Object = Object;
+          tmp5 = tmp2 in Object(arg0);
+        }
+        tmp4 = tmp5;
+      }
+      tmp = tmp4;
+    }
+    return tmp;
+  };
+};

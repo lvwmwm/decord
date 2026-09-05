@@ -1,24 +1,24 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16493
+// Function ID: 16494
 // Name: CutoutGuildIconWithUserCustom
-// Dependencies: [19, 17, 1386, 1991, 1908, 673, 21, 16376, 709, 8743, 5539, 1296, 4943, 586, 4755, 9105, 4680, 4477, 4681, 16418, 1233, 5041, 16416, 5084, 7574, 8602, 2]
+// Dependencies: [19, 17, 1957, 2021, 1979, 1074, 21, 16452, 576, 8813, 5584, 1178, 4982, 504, 4794, 9176, 4712, 4556, 4713, 16494, 1114, 5080, 16492, 5123, 7641, 8672, 2]
 // Exports: default
 
-// Module 16417 (CutoutGuildIconWithUserCustom)
-import ThemesDefault from "Themes" /* 709 */;
-import Button from "Button" /* 1296 */;
-import GuildIconSizes from "GuildIconSizes" /* 5539 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5539 */;
-import SolidCutout from "SolidCutout" /* 8743 */;
-import SolidCutoutDefault from "SolidCutout" /* 8743 */;
+// Module 16493 (CutoutGuildIconWithUserCustom)
+import ThemesDefault from "Themes" /* 576 */;
+import Button from "Button" /* 1178 */;
+import GuildIconSizes from "GuildIconSizes" /* 5584 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5584 */;
+import SolidCutout from "SolidCutout" /* 8813 */;
+import SolidCutoutDefault from "SolidCutout" /* 8813 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 673 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "trackCommunicationDisabled" /* 2021 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16376 */;
+import createICYMIStyles from "createICYMIStyles" /* 16452 */;
 
 require = arg1;
 function CutoutGuildIconWithUserCustom(guild) {

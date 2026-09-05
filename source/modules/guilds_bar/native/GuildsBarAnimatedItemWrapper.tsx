@@ -1,17 +1,17 @@
-// Module ID: 16218
-// Function ID: 16219
+// Module ID: 16294
+// Function ID: 16295
 // Name: UnreadIndicator
-// Dependencies: [19, 4945, 16209, 21, 4481, 709, 4197, 4205, 4935, 4218, 7013, 16219, 15946, 1233, 1350, 5544, 8743, 2]
+// Dependencies: [19, 4984, 16285, 21, 4560, 576, 4262, 4271, 4974, 4296, 7073, 16295, 16022, 1114, 4272, 5589, 8813, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 16218 (UnreadIndicator)
-import ThemesDefault from "Themes" /* 709 */;
-import map from "map" /* 4197 */;
+// Module 16294 (UnreadIndicator)
+import ThemesDefault from "Themes" /* 576 */;
+import map from "map" /* 4262 */;
 import closure_3 from "noop" /* 19 */;
-import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4945 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16209 */;
+import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4984 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16285 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 class UnreadIndicator {
@@ -124,7 +124,7 @@ class UnreadIndicator {
     obj1[2] = MOUNTED;
     obj1[3] = require("ManaContext").TransitionStates;
     obj1[4] = cleanUp;
-    obj1[5] = require("module_4218").runOnJS;
+    obj1[5] = require("module_4296").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
     fn2.__initData = closure_15;
@@ -162,17 +162,17 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, width, height) => {
   let str = "transparent";
   let str2 = "transparent";
   if (!arg1) {
-    str2 = tmp(709).colors.MOBILE_GUILDBAR_ICON_BACKGROUND_DEFAULT;
+    str2 = tmp(576).colors.MOBILE_GUILDBAR_ICON_BACKGROUND_DEFAULT;
   }
   obj[6] = str2;
   obj[1] = obj;
   if (arg0) {
     if (!arg1) {
-      str = tmp(709).colors.BACKGROUND_SURFACE_HIGH;
+      str = tmp(576).colors.BACKGROUND_SURFACE_HIGH;
     }
     let BACKGROUND_BRAND = str;
   } else {
-    BACKGROUND_BRAND = tmp(709).colors.BACKGROUND_BRAND;
+    BACKGROUND_BRAND = tmp(576).colors.BACKGROUND_BRAND;
   }
   obj[2] = { backgroundColor: BACKGROUND_BRAND };
   return obj;

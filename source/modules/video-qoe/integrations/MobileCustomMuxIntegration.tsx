@@ -1,12 +1,12 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15142
+// Function ID: 15143
 // Name: logger
-// Dependencies: [4, 15062, 15064, 2]
+// Dependencies: [4, 15138, 15140, 2]
 
-// Module 15066 (logger)
+// Module 15142 (logger)
 import set from "set" /* 2 */;
 import log from "log" /* 4 */;
-import UDefault from "U" /* 15064 */;
+import UDefault from "U" /* 15140 */;
 
 const logger = new log.Logger("MobileCustomMuxIntegration");
 let c4 = "1.0.0";

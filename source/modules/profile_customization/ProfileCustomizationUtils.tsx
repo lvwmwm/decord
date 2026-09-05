@@ -1,17 +1,17 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 8166
+// Function ID: 8167
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8091, 7554, 1991, 586, 1362, 1233, 2]
+// Dependencies: [19, 8160, 7621, 2021, 504, 4411, 1114, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8097 (useAvatarsWithGuilds)
-import initialize from "initialize" /* 586 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import AccessibilityAnnouncer4 from "AccessibilityAnnouncer" /* 1362 */;
+// Module 8166 (useAvatarsWithGuilds)
+import initialize from "initialize" /* 504 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import AccessibilityAnnouncer4 from "AccessibilityAnnouncer" /* 4411 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleFormOpen" /* 8091 */;
-import closure_4 from "createUserWidgetFromServer" /* 7554 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "handleFormOpen" /* 8160 */;
+import closure_4 from "createUserWidgetFromServer" /* 7621 */;
+import closure_5 from "trackCommunicationDisabled" /* 2021 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/profile_customization/ProfileCustomizationUtils.tsx");
@@ -49,7 +49,7 @@ export const useAvatarsWithGuilds = function useAvatarsWithGuilds(arg0) {
 export const useGuildMemberAndUserPendingNameplate = function useGuildMemberAndUserPendingNameplate(user, guildId) {
   const _require = user;
   dependencyMap = guildId;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
@@ -59,7 +59,7 @@ export const useGuildMemberAndUserPendingNameplate = function useGuildMemberAndU
     return member;
   });
   const items1 = [closure_3];
-  const stateFromStoresObject = _require(586).useStateFromStoresObject(items1, () => ({ pendingNameplate: closure_1_3.getPendingChanges(closure_1).pendingNameplate, pendingErrors: closure_1_3.getErrors(closure_1).nameplate }));
+  const stateFromStoresObject = _require(504).useStateFromStoresObject(items1, () => ({ pendingNameplate: closure_1_3.getPendingChanges(closure_1).pendingNameplate, pendingErrors: closure_1_3.getErrors(closure_1).nameplate }));
   obj = { userNameplate: user.nameplate, guildNameplate: null, pendingNameplate: null, pendingErrors: null };
   let nameplate;
   ({ pendingNameplate, pendingErrors } = stateFromStoresObject);
@@ -77,7 +77,7 @@ export const useGuildMemberAndUserPendingNameplate = function useGuildMemberAndU
 export const useGuildMemberOrUserPendingDisplayNameStyles = function useGuildMemberOrUserPendingDisplayNameStyles(stateFromStores, guildId) {
   const _require = stateFromStores;
   dependencyMap = guildId;
-  let obj = _require(586);
+  let obj = _require(504);
   const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
@@ -90,7 +90,7 @@ export const useGuildMemberOrUserPendingDisplayNameStyles = function useGuildMem
     return member;
   });
   const items1 = [closure_3];
-  const stateFromStoresObject = _require(586).useStateFromStoresObject(items1, () => ({ pendingDisplayNameStyles: closure_1_3.getPendingChanges(closure_1).pendingDisplayNameStyles, tryItOutDisplayNameStyles: closure_1_3.getTryItOutChanges().tryItOutDisplayNameStyles, pendingErrors: closure_1_3.getErrors(closure_1).displayNameStyles }));
+  const stateFromStoresObject = _require(504).useStateFromStoresObject(items1, () => ({ pendingDisplayNameStyles: closure_1_3.getPendingChanges(closure_1).pendingDisplayNameStyles, tryItOutDisplayNameStyles: closure_1_3.getTryItOutChanges().tryItOutDisplayNameStyles, pendingErrors: closure_1_3.getErrors(closure_1).displayNameStyles }));
   let displayNameStyles;
   ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles, pendingErrors } = stateFromStoresObject);
   if (stateFromStores != null) {
@@ -169,17 +169,17 @@ export const useUserProfileFrame = function useUserProfileFrame(arg0) {
 export const useAvatarDecorationSettings = function useAvatarDecorationSettings(arg0) {
   const _require = arg0;
   const items = [closure_3];
-  return _require(586).useStateFromStoresObject(items, () => ({ pendingAvatarDecoration: closure_1_3.getPendingChanges(closure_0).pendingAvatarDecoration, errors: closure_1_3.getErrors(closure_0).avatarDecoration }));
+  return _require(504).useStateFromStoresObject(items, () => ({ pendingAvatarDecoration: closure_1_3.getPendingChanges(closure_0).pendingAvatarDecoration, errors: closure_1_3.getErrors(closure_0).avatarDecoration }));
 };
 export const useProfileEffectSettings = function useProfileEffectSettings(arg0) {
   const _require = arg0;
   const items = [closure_3];
-  return _require(586).useStateFromStoresObject(items, () => ({ pendingProfileEffect: closure_1_3.getPendingChanges(closure_0).pendingProfileEffect, errors: closure_1_3.getErrors(closure_0).profileEffect }));
+  return _require(504).useStateFromStoresObject(items, () => ({ pendingProfileEffect: closure_1_3.getPendingChanges(closure_0).pendingProfileEffect, errors: closure_1_3.getErrors(closure_0).profileEffect }));
 };
 export const useProfileFrameSettings = function useProfileFrameSettings(arg0) {
   const _require = arg0;
   const items = [closure_3];
-  return _require(586).useStateFromStoresObject(items, () => ({ pendingProfileFrame: closure_1_3.getPendingChanges(closure_0).pendingProfileFrame, errors: closure_1_3.getErrors(closure_0).profileFrame }));
+  return _require(504).useStateFromStoresObject(items, () => ({ pendingProfileFrame: closure_1_3.getPendingChanges(closure_0).pendingProfileFrame, errors: closure_1_3.getErrors(closure_0).profileFrame }));
 };
 export const getProfilePreviewValue = function getProfilePreviewValue(arg0) {
   ({ userValue, guildValue, pendingValue, guildId } = arg0);

@@ -1,10 +1,10 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12262
+// Function ID: 12263
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 4923, 1234, 1233, 2]
+// Dependencies: [19, 17, 21, 4962, 1115, 1114, 2]
 
-// Module 12194 (ChatInputAccessibilityDivider)
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4923 */;
+// Module 12262 (ChatInputAccessibilityDivider)
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4962 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
@@ -18,13 +18,13 @@ const memoResult = importAllResult.memo(() => {
     tmp3 = null;
     if (!tmpResult.isAndroid()) {
       obj = { nativeID: "chat-input-accessibility-divider", accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null };
-      const intl = tmp(1233).intl;
-      obj[2] = intl.string(tmp(1233).t["uKZtC/"]);
+      const intl = tmp(1114).intl;
+      obj[2] = intl.string(tmp(1114).t["uKZtC/"]);
       const items = [absoluteFill.absoluteFill, { height: 1 }];
       obj[4] = items;
       tmp3 = <closure_3 nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={null} accessibilityRole="header" style={null} />;
     }
-    tmpResult = tmp(1234);
+    tmpResult = tmp(1115);
   }
   return tmp3;
 });

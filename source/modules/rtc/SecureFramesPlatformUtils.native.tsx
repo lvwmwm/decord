@@ -1,18 +1,18 @@
-// Module ID: 9083
-// Function ID: 9084
-// Dependencies: [1386, 4557, 9081, 673, 4731, 9084, 2008, 4448, 9095, 1233, 4866, 1296, 7184, 9098, 2]
+// Module ID: 9154
+// Function ID: 9155
+// Dependencies: [1957, 4583, 9152, 1074, 4763, 9155, 1896, 4527, 9166, 1114, 4905, 1178, 7244, 9169, 2]
 
-// Module 9083
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4448 */;
-import _modDef4731 from "module_4731" /* 4731 */;
-import _modDef4866 from "module_4866" /* 4866 */;
-import _safeTransitionToDefault from "_safeTransitionTo" /* 7184 */;
-import closure_3 from "ensureGuildLoaded" /* 1386 */;
-import closure_4 from "createRTCConnection" /* 4557 */;
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9081 */;
-import ME from "ME" /* 673 */;
+// Module 9154
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4527 */;
+import _modDef4763 from "module_4763" /* 4763 */;
+import _modDef4905 from "module_4905" /* 4905 */;
+import _safeTransitionToDefault from "_safeTransitionTo" /* 7244 */;
+import closure_3 from "ensureGuildLoaded" /* 1957 */;
+import closure_4 from "createRTCConnection" /* 4583 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9152 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY: c5, SECURE_FRAMES_STREAM_VERIFICATION_BOTTOM_SHEET_KEY: closure_6, SECURE_FRAMES_USER_VERIFICATION_MODAL_KEY: error } = SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY);
@@ -23,30 +23,30 @@ export default {
   openSecureFramesStreamVerification(streamKey, channelId) {
     let obj = ACTION_SHEET_HEIGHT_HALFDefault;
     obj = { streamKey, channelId };
-    obj.openLazy(asyncRequireImpl(9095, dependencyMap.paths), closure_6, obj);
+    obj.openLazy(asyncRequireImpl(9166, dependencyMap.paths), closure_6, obj);
   },
   openSecureFramesUserVerificationModal(id, id2, arg2) {
     if (arg2()) {
-      let obj = _modDef4731;
+      let obj = _modDef4763;
       obj = { userId: null, channelId: null };
       obj[0] = id;
       obj[1] = id2;
-      obj.pushLazy(asyncRequireImpl(9084, dependencyMap.paths), obj, closure_7);
+      obj.pushLazy(asyncRequireImpl(9155, dependencyMap.paths), obj, closure_7);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
     confirmText = confirmText.confirmText;
     ({ title, subtitle } = confirmText);
     if (confirmText === undefined) {
-      const intl = onConfirm(1233).intl;
-      confirmText = intl.string(onConfirm(1233).t["cY+Oob"]);
+      const intl = onConfirm(1114).intl;
+      confirmText = intl.string(onConfirm(1114).t["cY+Oob"]);
     }
     onConfirm = confirmText.onConfirm;
-    let obj = _modDef4866;
+    let obj = _modDef4905;
     obj = { title, body: subtitle, confirmText, cancelText: null, confirmColor: null };
-    const intl2 = onConfirm(1233).intl;
-    obj[3] = intl2.string(onConfirm(1233).t["ETE/oC"]);
-    obj[4] = onConfirm(1296).ButtonColors.RED;
+    const intl2 = onConfirm(1114).intl;
+    obj[3] = intl2.string(onConfirm(1114).t["ETE/oC"]);
+    obj[4] = onConfirm(1178).ButtonColors.RED;
     obj.confirm(obj).then((arg0) => {
       if (arg0) {
         onConfirm();
@@ -73,7 +73,7 @@ export default {
         obj[1] = channelId;
         obj[2] = guildId;
         obj[3] = fingerprint;
-        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9098, dependencyMap.paths), closure_5, obj);
+        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9169, dependencyMap.paths), closure_5, obj);
         const obj4 = ACTION_SHEET_HEIGHT_HALFDefault;
       }
     }
@@ -82,6 +82,6 @@ export default {
     obj[0] = intl.string(getSystemLocale.t["5ICxE6"]);
     const intl2 = getSystemLocale.intl;
     obj[1] = intl2.string(getSystemLocale.t["v1eXp/"]);
-    _modDef4866.show(obj);
+    _modDef4905.show(obj);
   }
 };

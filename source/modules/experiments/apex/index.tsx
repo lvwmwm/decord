@@ -1,11 +1,11 @@
-// Module ID: 1468
-// Function ID: 1469
+// Module ID: 1433
+// Function ID: 1434
 // Name: ApexExperiment
-// Dependencies: [1209, 2, 1469, 1471]
+// Dependencies: [1236, 2, 1434, 1436]
 
-// Module 1468 (ApexExperiment)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
-import importDefaultResult from "initialize" /* 1209 */;
+// Module 1433 (ApexExperiment)
+import getUnitIdDefault from "getUnitId" /* 1434 */;
+import importDefaultResult from "initialize" /* 1236 */;
 
 const result = require("set").fileFinishedImporting("modules/experiments/apex/index.tsx");
 

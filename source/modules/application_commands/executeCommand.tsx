@@ -1,21 +1,21 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9411
+// Function ID: 9412
 // Name: _executeCommand
-// Dependencies: [5, 5419, 1995, 1908, 4861, 1921, 7712, 673, 4474, 7456, 706, 7697, 7454, 1954, 9341, 9343, 38, 9344, 4708, 7710, 9236, 4134, 1394, 7686, 8048, 7766, 8047, 9345, 8112, 7685, 7390, 5095, 5090, 1233, 7774, 2]
+// Dependencies: [5, 5459, 2025, 1979, 4900, 1371, 7780, 1074, 4553, 7523, 573, 7765, 7521, 1894, 9412, 9414, 38, 9415, 4740, 7778, 9307, 4213, 1369, 7753, 8117, 7834, 8116, 9416, 8181, 7752, 7456, 5134, 5129, 1114, 7842, 2]
 // Exports: default, retryCommandMessage
 
-// Module 9340 (_executeCommand)
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7456 */;
-import _fetchMessageInteractionDataAll from "_fetchMessageInteractionData" /* 8048 */;
+// Module 9411 (_executeCommand)
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7523 */;
+import _fetchMessageInteractionDataAll from "_fetchMessageInteractionData" /* 8117 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "getEmojiToGroupId" /* 5419 */;
-import closure_6 from "_getSystemLocale" /* 1995 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "map" /* 4861 */;
-import closure_9 from "mergeGuildAvatar" /* 1921 */;
-import closure_10 from "handleInit" /* 7712 */;
-import ME from "ME" /* 673 */;
-import { DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE as closure_15 } from "MESSAGE_GROUP_SPACING" /* 4474 */;
+import closure_5 from "getEmojiToGroupId" /* 5459 */;
+import closure_6 from "_getSystemLocale" /* 2025 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "map" /* 4900 */;
+import closure_9 from "mergeGuildAvatar" /* 1371 */;
+import closure_10 from "handleInit" /* 7780 */;
+import ME from "ME" /* 1074 */;
+import { DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE as closure_15 } from "MESSAGE_GROUP_SPACING" /* 4553 */;
 
 require = arg1;
 function _executeCommand() {
@@ -1316,7 +1316,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[3] = tmp;
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      obj1 = obj(7686);
+      obj1 = obj(7753);
       nonce = obj1.createNonce();
     }
     obj[4] = nonce;
@@ -1329,7 +1329,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: null };
     ({ messageId: obj4[0], onCreate: obj4[1], onSuccess: obj4[2], onFailure: obj4[3] } = interactionLifecycleOptions);
     obj = { interactionType: null, applicationId: null, channelId: null };
-    obj[0] = obj(1954).InteractionTypes.APPLICATION_COMMAND;
+    obj[0] = obj(1894).InteractionTypes.APPLICATION_COMMAND;
     obj[1] = applicationId;
     obj[2] = id;
     obj[4] = obj;
@@ -1384,9 +1384,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     const obj3 = _fetchMessageInteractionDataAll;
     const tmp10 = obj;
     obj1 = { type: null, message: null };
-    obj1[0] = tmp10(7766).MessageDataType.COMMAND;
+    obj1[0] = tmp10(7834).MessageDataType.COMMAND;
     obj1[1] = obj;
-    onMessageSuccess(7766).enqueue(obj1, (ok) => {
+    onMessageSuccess(7834).enqueue(obj1, (ok) => {
       ({ nonce, applicationId, channelId, guildId } = callback);
       if (guildId == null) {
         guildId = null;
@@ -1400,7 +1400,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         callback2();
       }
     });
-    const obj6 = onMessageSuccess(7766);
+    const obj6 = onMessageSuccess(7834);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -1595,25 +1595,25 @@ function _displayInteractionLifecycleInChat() {
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
   if (ApplicationCommandSectionType.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (tmp(7456).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (tmp(7456).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (tmp(7456).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (tmp(7456).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (tmp(7456).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (tmp(7456).CommandOrigin.MINI_SHELF === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (tmp(7456).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (tmp(7456).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return tmp(7456).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+    return tmp(7523).ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (tmp(7523).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (tmp(7523).CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (tmp(7523).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (tmp(7523).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (tmp(7523).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (tmp(7523).CommandOrigin.MINI_SHELF === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (tmp(7523).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (tmp(7523).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return tmp(7523).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return tmp(7456).ApplicationCommandTriggerLocations.SLASH_UI;
+    return tmp(7523).ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
@@ -1816,14 +1816,14 @@ function _stageAttachments() {
                 if (callback2 != null) {
                   tmp(dependencyMap, arg0);
                 }
-                let obj = callback2(8048);
-                const intl = callback(1233).intl;
-                obj = { maxSize: callback(5095).sizeString(dependencyMap) };
-                obj.setFailed(closure_1, closure_1_11.ENTITY_TOO_LARGE, intl.formatToPlainString(callback(1233).t.fxEKdS, obj));
+                let obj = callback2(8117);
+                const intl = callback(1114).intl;
+                obj = { maxSize: callback(5134).sizeString(dependencyMap) };
+                obj.setFailed(closure_1, closure_1_11.ENTITY_TOO_LARGE, intl.formatToPlainString(callback(1114).t.fxEKdS, obj));
               };
-              dependencyMap = lib(5095).maxFileSize(callback2);
-              const obj11 = lib(5095);
-              maxTotalAttachmentSize = lib(5090).getMaxTotalAttachmentSize({ location: "executeCommand.stageAttachments" });
+              dependencyMap = lib(5134).maxFileSize(callback2);
+              const obj11 = lib(5134);
+              maxTotalAttachmentSize = lib(5129).getMaxTotalAttachmentSize({ location: "executeCommand.stageAttachments" });
               totalSize = 1;
               c8 = 1;
               obj1 = { value: null, done: false };
@@ -1850,7 +1850,7 @@ function _stageAttachments() {
                   totalSize = 4;
                   c8 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(7774)(lib);
+                  obj3[0] = callback(7842)(lib);
                   return obj3;
                 }
               }
@@ -1861,11 +1861,11 @@ function _stageAttachments() {
           } else {
             if (2 === tmp8) {
               c6 = 0;
-              obj3 = callback2(8048);
-              let intl = lib(1233).intl;
+              obj3 = callback2(8117);
+              let intl = lib(1114).intl;
               const obj4 = { count: null };
               obj4[0] = lib.length;
-              obj3.setFailed(callback, undefined, intl.formatToPlainString(lib(1233).t["9h1/1p"], obj4));
+              obj3.setFailed(callback, undefined, intl.formatToPlainString(lib(1114).t["9h1/1p"], obj4));
               callback3(lib, true);
               totalSize = 3;
               c8 = 1;

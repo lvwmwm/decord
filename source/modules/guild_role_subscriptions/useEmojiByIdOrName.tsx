@@ -1,11 +1,11 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15241
+// Function ID: 15242
 // Name: useEmojiByIdOrName
-// Dependencies: [5419, 586, 2]
+// Dependencies: [5459, 504, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 15165 (useEmojiByIdOrName)
-import closure_2 from "getEmojiToGroupId" /* 5419 */;
+// Module 15241 (useEmojiByIdOrName)
+import closure_2 from "getEmojiToGroupId" /* 5459 */;
 
 const require = arg1;
 function useEmojiByIdOrName(guildId, emojiId) {
@@ -13,7 +13,7 @@ function useEmojiByIdOrName(guildId, emojiId) {
   dependencyMap = emojiId;
   const items = [closure_2];
   const items1 = [guildId, emojiId];
-  return _require(586).useStateFromStores(items, () => {
+  return _require(504).useStateFromStores(items, () => {
     if (null == closure_1) {
       return null;
     } else {

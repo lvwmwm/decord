@@ -1,15 +1,15 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10734
+// Function ID: 10735
 // Name: useFetchPurchases
-// Dependencies: [32, 19, 4394, 7491, 644, 7474, 10664, 2]
+// Dependencies: [32, 19, 4476, 7558, 563, 7541, 10735, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 10663 (useFetchPurchases)
-import setDefault from "set" /* 10664 */;
+// Module 10734 (useFetchPurchases)
+import setDefault from "set" /* 10735 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import closure_6 from "getHash" /* 4394 */;
-import closure_7 from "map" /* 7491 */;
+import closure_6 from "getHash" /* 4476 */;
+import closure_7 from "map" /* 7558 */;
 
 const require = arg1;
 function useFetchPurchases(flag) {

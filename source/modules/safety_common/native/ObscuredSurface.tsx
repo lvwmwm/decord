@@ -1,18 +1,18 @@
-// Module ID: 8641
-// Function ID: 8642
+// Module ID: 8711
+// Function ID: 8712
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4481, 709, 8642, 5042, 4477, 1233, 2]
+// Dependencies: [19, 17, 21, 4560, 576, 8712, 5081, 4556, 1114, 2]
 // Exports: default
 
-// Module 8641 (ObscuredSurface)
+// Module 8711 (ObscuredSurface)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import Text from "Text" /* 4477 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5042 */;
-import context from "context" /* 8642 */;
+import ThemesDefault from "Themes" /* 576 */;
+import Text from "Text" /* 4556 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5081 */;
+import context from "context" /* 8712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;
@@ -47,15 +47,15 @@ export default function ObscuredSurface(obscured) {
     obj3[1] = ThemesDefault.colors.TEXT_DEFAULT;
     const items1 = [callback(ImageWarningIcon.ImageWarningIcon, obj3), , ];
     if (heading == null) {
-      const intl = tmp4(1233).intl;
-      heading = intl.string(tmp4(1233).t.xC8Saf);
+      const intl = tmp4(1114).intl;
+      heading = intl.string(tmp4(1114).t.xC8Saf);
     }
     const obj4 = { variant: "heading-md/semibold", color: "text-strong", children: null };
     obj4[2] = heading;
     items1[1] = callback(Text.Text, obj4);
     if (description == null) {
-      const intl2 = tmp4(1233).intl;
-      description = intl2.string(tmp4(1233).t["0fc/DG"]);
+      const intl2 = tmp4(1114).intl;
+      description = intl2.string(tmp4(1114).t["0fc/DG"]);
     }
     const obj5 = { variant: "text-sm/normal", color: "text-muted", children: null };
     obj5[2] = description;

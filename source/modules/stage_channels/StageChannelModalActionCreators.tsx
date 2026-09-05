@@ -1,19 +1,19 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8393
+// Function ID: 8394
 // Name: connectToStage
-// Dependencies: [5, 4503, 1386, 1908, 4120, 1980, 1395, 8324, 7259, 5475, 12859, 12860, 5372, 4547, 4670, 12862, 2]
+// Dependencies: [5, 4582, 1957, 1979, 4199, 2011, 1965, 8394, 7321, 5520, 12927, 12928, 5411, 4612, 4702, 12930, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8323 (connectToStage)
-import _modDef5372 from "module_5372" /* 5372 */;
-import openStageChannelSettingsAll from "openStageChannelSettings" /* 8324 */;
-import _initializeDefault from "_initialize" /* 12860 */;
+// Module 8393 (connectToStage)
+import _modDef5411 from "module_5411" /* 5411 */;
+import openStageChannelSettingsAll from "openStageChannelSettings" /* 8394 */;
+import _initializeDefault from "_initialize" /* 12928 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "reset" /* 4503 */;
-import closure_6 from "ensureGuildLoaded" /* 1386 */;
-import closure_7 from "createGuildRecordFromRust" /* 1908 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_9 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "reset" /* 4582 */;
+import closure_6 from "ensureGuildLoaded" /* 1957 */;
+import closure_7 from "createGuildRecordFromRust" /* 1979 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_9 from "handleConnectionOpen" /* 2011 */;
 
 const require = arg1;
 function connectToStage(channel, flag) {
@@ -22,16 +22,16 @@ function connectToStage(channel, flag) {
   }
   if (!flag) {
     const _require = channel;
-    const canResult = closure_8.can(_require(1395).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+    const canResult = closure_8.can(_require(1965).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
       let num = openStageChannelSettingsAll.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(8324).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(8394).openStageBlockedUsersSheet(channel, () => {
           closure_1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(8324);
+        const tmp7Result = tmp7(8394);
       }
       tmp6 = num;
       const obj2 = openStageChannelSettingsAll;
@@ -44,19 +44,19 @@ function connectToStage(channel, flag) {
   _initializeDefault.initialize();
   const obj = closure_9;
   const obj4 = _initializeDefault;
-  const voiceChannel = _modDef5372.selectVoiceChannel(channel.id);
+  const voiceChannel = _modDef5411.selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4670).watchStream(found, { noFocus: true });
-      const obj6 = _require(4670);
+      _require(4702).watchStream(found, { noFocus: true });
+      const obj6 = _require(4702);
     }
     return true;
   }
-  const obj5 = _modDef5372;
+  const obj5 = _modDef5411;
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -77,19 +77,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12862).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12862);
+    result = _require(12930).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12930);
   }
   if (result) {
-    result = flag2(8324).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(8394).showChannelChangeConfirmationAlert(channel, () => {
       closure_1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(8324);
+    const obj2 = flag2(8394);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(8324).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(8324);
+      flag2(8394).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(8394);
     }
   }
 }

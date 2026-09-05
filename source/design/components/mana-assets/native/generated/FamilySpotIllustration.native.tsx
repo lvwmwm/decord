@@ -1,14 +1,14 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 5987
+// Function ID: 5988
 // Name: FamilySpotIllustration
-// Dependencies: [21, 5542, 5935, 2]
+// Dependencies: [21, 5587, 5988, 2]
 // Exports: FamilySpotIllustration
 
-// Module 5934 (FamilySpotIllustration)
+// Module 5987 (FamilySpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5542 */;
-import metadataDefault from "metadata" /* 5935 */;
+import preloadDefault from "preload" /* 5587 */;
+import metadataDefault from "metadata" /* 5988 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");

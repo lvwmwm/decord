@@ -1,10 +1,10 @@
 // Module ID: 5304
 // Function ID: 5305
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5304 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "5d0fc8ffcdec42d0b7247a83095dc9f2", name: "img_account_sync_xbox_white", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "a9a658fd475f7a20d9e2c83953494ec4", name: "img_bungie_dark", type: "svg" });

@@ -1,13 +1,13 @@
-// Module ID: 15767
-// Function ID: 15768
+// Module ID: 15843
+// Function ID: 15844
 // Name: route
-// Dependencies: [673, 11400, 14767, 15768, 2]
+// Dependencies: [1074, 11468, 14842, 15844, 2]
 
-// Module 15767 (route)
+// Module 15843 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14767 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14842 */;
+import createToggle from "createToggle" /* 11468 */;
 
 obj = {
   useTitle() {
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
   getComponent() {
-    return require(15768) /* CollectiblesShopViewAllCategoryItemsScreen */.default;
+    return require(15844) /* CollectiblesShopViewAllCategoryItemsScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

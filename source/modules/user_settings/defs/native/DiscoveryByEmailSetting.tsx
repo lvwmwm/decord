@@ -1,17 +1,17 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14848
+// Function ID: 14849
 // Name: toggle
-// Dependencies: [7906, 673, 1233, 4166, 1399, 12616, 11400, 2]
+// Dependencies: [7975, 1074, 1114, 1935, 1384, 12684, 11468, 2]
 
-// Module 14773 (toggle)
+// Module 14848 (toggle)
 import set from "set" /* 2 */;
-import ME from "ME" /* 673 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import hasFlag from "hasFlag" /* 1399 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import MobileUserSettings from "MobileUserSettings" /* 7906 */;
-import _updateDiscoverabilityDefault from "_updateDiscoverability" /* 12616 */;
-import createToggle from "createToggle" /* 11400 */;
+import ME from "ME" /* 1074 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import hasFlag from "hasFlag" /* 1384 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 1935 */;
+import MobileUserSettings from "MobileUserSettings" /* 7975 */;
+import _updateDiscoverabilityDefault from "_updateDiscoverability" /* 12684 */;
+import createToggle from "createToggle" /* 11468 */;
 
 const FriendDiscoveryFlags = ME.FriendDiscoveryFlags;
 const toggle = createToggle.createToggle({

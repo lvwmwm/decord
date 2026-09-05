@@ -1,21 +1,21 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17368
+// Function ID: 17369
 // Name: syncLocalState
-// Dependencies: [5, 1215, 4532, 4557, 4499, 4500, 4498, 9162, 4545, 3, 38, 9019, 9938, 7058, 4365, 9377, 1394, 4865, 1233, 17289, 9380, 2]
+// Dependencies: [5, 502, 1908, 4583, 4578, 4579, 4577, 9233, 4585, 3, 38, 9089, 10009, 7118, 4447, 9448, 1369, 4904, 1114, 17369, 9451, 2]
 
-// Module 17288 (syncLocalState)
+// Module 17368 (syncLocalState)
 import timestampDefault from "timestamp" /* 3 */;
-import start from "start" /* 4365 */;
-import initializeDefault from "initialize" /* 7058 */;
+import start from "start" /* 4447 */;
+import initializeDefault from "initialize" /* 7118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4532 */;
-import closure_6 from "createRTCConnection" /* 4557 */;
-import closure_7 from "handleUpdate" /* 4499 */;
-import closure_8 from "updateVoiceState" /* 4500 */;
-import closure_9 from "set" /* 4498 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9162 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4545 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "_detectH265HardwareDecode" /* 1908 */;
+import closure_6 from "createRTCConnection" /* 4583 */;
+import closure_7 from "handleUpdate" /* 4578 */;
+import closure_8 from "updateVoiceState" /* 4579 */;
+import closure_9 from "set" /* 4577 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 9233 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4585 */;
 
 require = arg1;
 function syncLocalState() {
@@ -240,14 +240,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(9377);
+      let obj = callback(9448);
       obj.disconnectRemote();
       obj = { title: null, body: null };
-      const intl = callback(1233).intl;
-      obj[0] = intl.string(callback(1233).t.wGMxr3);
-      const intl2 = callback(1233).intl;
-      obj[1] = intl2.string(callback(1233).t.i5k8b5);
-      callback2(4865).show(obj);
+      const intl = callback(1114).intl;
+      obj[0] = intl.string(callback(1114).t.wGMxr3);
+      const intl2 = callback(1114).intl;
+      obj[1] = intl2.string(callback(1114).t.i5k8b5);
+      callback2(4904).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

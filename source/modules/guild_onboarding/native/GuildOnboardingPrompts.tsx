@@ -1,30 +1,30 @@
-// Module ID: 7062
-// Function ID: 7063
+// Module ID: 7122
+// Function ID: 7123
 // Name: _getBackgroundGradientColor
-// Dependencies: [32, 5, 19, 17, 4473, 5527, 1386, 1908, 1980, 7040, 7041, 7037, 673, 21, 1219, 4481, 5637, 709, 1489, 4329, 5542, 4948, 688, 586, 1627, 1498, 4218, 7045, 7046, 1431, 1894, 695, 4708, 4482, 5579, 7063, 7064, 1394, 5484, 4477, 1233, 2]
+// Dependencies: [32, 5, 19, 17, 4552, 5572, 1957, 1979, 2011, 7100, 7101, 7097, 1074, 21, 1100, 4560, 5682, 576, 1474, 4409, 5587, 4987, 1093, 504, 1611, 1483, 4296, 7105, 7106, 1396, 1878, 1242, 4740, 4561, 5624, 7123, 7124, 1369, 5529, 4556, 1114, 2]
 // Exports: default
 
-// Module 7062 (_getBackgroundGradientColor)
-import keys from "keys" /* 688 */;
-import ThemesDefault from "Themes" /* 709 */;
-import hexToRgba from "hexToRgba" /* 4329 */;
-import LinearGradientDefault from "LinearGradient" /* 4948 */;
-import preloadDefault from "preload" /* 5542 */;
+// Module 7122 (_getBackgroundGradientColor)
+import ThemesDefault from "Themes" /* 576 */;
+import keys from "keys" /* 1093 */;
+import hexToRgba from "hexToRgba" /* 4409 */;
+import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import preloadDefault from "preload" /* 5587 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4473 */;
-import closure_9 from "get" /* 5527 */;
-import closure_10 from "ensureGuildLoaded" /* 1386 */;
-import closure_11 from "createGuildRecordFromRust" /* 1908 */;
-import closure_12 from "handleConnectionOpen" /* 1980 */;
-import closure_13 from "handleUpdate" /* 7040 */;
-import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 7041 */;
-import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7037 */;
-import ME from "ME" /* 673 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4552 */;
+import closure_9 from "get" /* 5572 */;
+import closure_10 from "ensureGuildLoaded" /* 1957 */;
+import closure_11 from "createGuildRecordFromRust" /* 1979 */;
+import closure_12 from "handleConnectionOpen" /* 2011 */;
+import closure_13 from "handleUpdate" /* 7100 */;
+import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 7101 */;
+import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 7097 */;
+import ME from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function _getBackgroundGradientColor() {

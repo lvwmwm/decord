@@ -1,9 +1,9 @@
-// Module ID: 8607
-// Function ID: 8608
+// Module ID: 8677
+// Function ID: 8678
 // Name: GameFlags
 // Dependencies: [2]
 
-// Module 8607 (GameFlags)
+// Module 8677 (GameFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameFlags.tsx");

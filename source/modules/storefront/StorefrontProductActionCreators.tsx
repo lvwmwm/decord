@@ -1,16 +1,16 @@
-// Module ID: 8150
-// Function ID: 8151
+// Module ID: 8219
+// Function ID: 8220
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1995, 8151, 7496, 673, 684, 706, 4763, 4380, 2]
+// Dependencies: [5, 2025, 8220, 7563, 1074, 1090, 573, 4802, 4462, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8150 (_maybeFetchProductsWithSkus)
-import setDefault from "set" /* 684 */;
+// Module 8219 (_maybeFetchProductsWithSkus)
+import setDefault from "set" /* 1090 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "getFetchState" /* 8151 */;
-import closure_6 from "fromServer" /* 7496 */;
-import { Endpoints } from "ME" /* 673 */;
+import closure_4 from "_getSystemLocale" /* 2025 */;
+import closure_5 from "getFetchState" /* 8220 */;
+import closure_6 from "fromServer" /* 7563 */;
+import { Endpoints } from "ME" /* 1074 */;
 
 const require = arg1;
 function _maybeFetchProductsWithSkus() {

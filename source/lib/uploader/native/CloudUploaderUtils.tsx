@@ -1,15 +1,15 @@
-// Module ID: 5134
-// Function ID: 5135
+// Module ID: 5173
+// Function ID: 5174
 // Name: getUploadPayload
-// Dependencies: [1995, 1215, 703, 5090, 12, 695, 2]
+// Dependencies: [2025, 502, 1347, 5129, 12, 1242, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 5134 (getUploadPayload)
+// Module 5173 (getUploadPayload)
 import applyDefault from "apply" /* 12 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
-import closure_4 from "fetchFingerprint" /* 1215 */;
-import closure_5 from "refreshSourceMapCookie" /* 703 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 1242 */;
+import closure_3 from "_getSystemLocale" /* 2025 */;
+import closure_4 from "fetchFingerprint" /* 502 */;
+import closure_5 from "refreshSourceMapCookie" /* 1347 */;
 
 const require = arg1;
 function getUploadPayload(c0) {

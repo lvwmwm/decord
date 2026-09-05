@@ -1,9 +1,9 @@
-// Module ID: 7622
-// Function ID: 7623
+// Module ID: 7689
+// Function ID: 7690
 // Name: LinkType
 // Dependencies: [2]
 
-// Module 7622 (LinkType)
+// Module 7689 (LinkType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/applications/message_embed/MessageEmbedConstants.tsx");

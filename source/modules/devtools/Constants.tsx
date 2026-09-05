@@ -1,11 +1,11 @@
-// Module ID: 707
-// Function ID: 708
+// Module ID: 574
+// Function ID: 575
 // Name: STORAGE_KEY_LOG_DISPATCHES
-// Dependencies: [708, 2]
+// Dependencies: [575, 2]
 
-// Module 707 (STORAGE_KEY_LOG_DISPATCHES)
+// Module 574 (STORAGE_KEY_LOG_DISPATCHES)
 import set from "set" /* 2 */;
-import unsafe_getRawColor from "unsafe_getRawColor" /* 708 */;
+import unsafe_getRawColor from "unsafe_getRawColor" /* 575 */;
 
 const result = 2 * unsafe_getRawColor.getRadii().xl;
 const result1 = set.fileFinishedImporting("modules/devtools/Constants.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 11626
+// Function ID: 11627
 // Name: FeedbackRating
-// Dependencies: [1305, 2]
+// Dependencies: [1187, 2]
 
-// Module 11558 (FeedbackRating)
+// Module 11626 (FeedbackRating)
 import set from "set" /* 2 */;
-import create from "create" /* 1305 */;
+import create from "create" /* 1187 */;
 
 let obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };
 const items = [create.InAppFeedbackType.VIDEO_BACKGROUND, create.InAppFeedbackType.STREAM, create.InAppFeedbackType.ACTIVITY, create.InAppFeedbackType.VOICE, create.InAppFeedbackType.IN_APP_REPORTS, create.InAppFeedbackType.SEARCH_RESULTS, create.InAppFeedbackType.VIBEGRATIONS];

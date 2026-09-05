@@ -1,23 +1,23 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16278
+// Function ID: 16279
 // Name: EmptyBody
-// Dependencies: [19, 17, 16124, 21, 4481, 709, 10153, 10907, 4448, 10157, 2008, 10156, 4477, 1233, 3178, 5041, 5062, 5032, 4934, 2]
+// Dependencies: [19, 17, 16202, 21, 4560, 576, 10224, 10976, 4527, 10228, 1896, 10227, 4556, 1114, 3225, 5080, 5101, 5071, 4973, 2]
 // Exports: default
 
-// Module 16202 (EmptyBody)
-import ThemesDefault from "Themes" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1233 */;
-import messagesProxyDefault from "messagesProxy" /* 3178 */;
-import Text from "Text" /* 4477 */;
-import Stack from "Stack" /* 4934 */;
-import ChatIcon from "ChatIcon" /* 5032 */;
-import TextIcon from "TextIcon" /* 5041 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5062 */;
+// Module 16278 (EmptyBody)
+import ThemesDefault from "Themes" /* 576 */;
+import getSystemLocale from "getSystemLocale" /* 1114 */;
+import messagesProxyDefault from "messagesProxy" /* 3225 */;
+import Text from "Text" /* 4556 */;
+import Stack from "Stack" /* 4973 */;
+import ChatIcon from "ChatIcon" /* 5071 */;
+import TextIcon from "TextIcon" /* 5080 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5101 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useHasFavoritesGuildSuggestions as closure_5 } from "items" /* 16124 */;
+import { useHasFavoritesGuildSuggestions as closure_5 } from "items" /* 16202 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 function EmptyBody() {
@@ -94,9 +94,9 @@ export default function FavoritesGuildSidebarHeader() {
     tmp7 = callback2(View, obj);
   }
   const items = [tmp7, , ];
-  obj = { spacing: tmp6(709).space.PX_8, style: tmp.copy, children: null };
+  obj = { spacing: tmp6(576).space.PX_8, style: tmp.copy, children: null };
   obj1 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp4(1233).intl;
+  const intl = tmp4(1114).intl;
   obj1[2] = intl.string(messagesProxyDefault["1n0TGE"]);
   const items1 = [callback2(Text.Heading, obj1), callback2(EmptyBody, {})];
   obj[2] = items1;

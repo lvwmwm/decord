@@ -1,10 +1,10 @@
 // Module ID: 5358
 // Function ID: 5359
 // Name: registerAsset
-// Dependencies: [1240]
+// Dependencies: [1122]
 
 // Module 5358 (registerAsset)
-import registerAsset from "registerAsset" /* 1240 */;
+import registerAsset from "registerAsset" /* 1122 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "e3f87032d39c6463934b80bdbb1aa83c", name: "img_domain_light", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "f0c9d04e77af1368c39d93a975075c0b", name: "img_account_sync_epic_dark_and_white", type: "png" });

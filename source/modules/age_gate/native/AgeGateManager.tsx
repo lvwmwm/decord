@@ -1,18 +1,18 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17304
+// Function ID: 17305
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1386, 1980, 4302, 1218, 673, 7058, 4739, 4731, 17225, 2008, 688, 2]
+// Dependencies: [5, 1957, 2011, 4381, 1098, 1074, 7118, 4771, 4763, 17305, 1896, 1093, 2]
 
-// Module 17224 (handlePostConnectionOpen)
-import _modDef4731 from "module_4731" /* 4731 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4739 */;
-import initializeDefault from "initialize" /* 7058 */;
+// Module 17304 (handlePostConnectionOpen)
+import _modDef4763 from "module_4763" /* 4763 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4771 */;
+import initializeDefault from "initialize" /* 7118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1386 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "handleConnectionOpen" /* 4302 */;
-import result from "result" /* 1218 */;
-import ME from "ME" /* 673 */;
+import closure_4 from "ensureGuildLoaded" /* 1957 */;
+import closure_5 from "handleConnectionOpen" /* 2011 */;
+import closure_6 from "handleConnectionOpen" /* 4381 */;
+import result from "result" /* 1098 */;
+import ME from "ME" /* 1074 */;
 
 require = arg1;
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY: error, AgeGateSource: closure_8 } = result);
@@ -49,7 +49,7 @@ prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
 };
 prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   source = source.source;
-  _modDef4731.pushLazy(callback(function*() {
+  _modDef4763.pushLazy(callback(function*() {
     closure_1 = tmp5;
     closure_0 = tmp2;
     yield closure_1_0(paths[10])(paths[9], paths.paths);
@@ -63,7 +63,7 @@ prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   }), { source }, closure_7);
 };
 prototype["handleAgeGateModalClose"] = function handleAgeGateModalClose() {
-  _modDef4731.popWithKey(closure_7);
+  _modDef4763.popWithKey(closure_7);
 };
 prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
   guild = guild.guild;

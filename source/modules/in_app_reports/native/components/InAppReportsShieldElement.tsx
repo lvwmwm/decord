@@ -1,15 +1,15 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8648
+// Function ID: 8649
 // Name: ShieldElement
-// Dependencies: [19, 17, 21, 4481, 5647, 2]
+// Dependencies: [19, 17, 21, 4560, 5692, 2]
 // Exports: default
 
-// Module 8578 (ShieldElement)
+// Module 8648 (ShieldElement)
 import noopAll from "noop" /* 19 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5647 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5692 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

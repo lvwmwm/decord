@@ -1,12 +1,12 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9369
+// Function ID: 9370
 // Name: useStoreFrontPrice
-// Dependencies: [19, 673, 4139, 2]
+// Dependencies: [19, 1074, 4218, 2]
 // Exports: default
 
-// Module 9298 (useStoreFrontPrice)
+// Module 9369 (useStoreFrontPrice)
 import closure_2 from "noop" /* 19 */;
-import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME" /* 673 */;
+import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME" /* 1074 */;
 
 const require = arg1;
 let obj = { PRICE_AVAILABLE: "PRICE_AVAILABLE", SUBSCRIPTION_PLAN_UNAVAILABLE: "SUBSCRIPTION_PLAN_UNAVAILABLE", STOREFRONT_UNAVAILABLE: "STOREFRONT_UNAVAILABLE", MISMATCHING_COUNTRIES: "MISMATCHING_COUNTRIES", COUNTRY_PRICE_UNAVAILABLE: "COUNTRY_PRICE_UNAVAILABLE" };
@@ -30,12 +30,12 @@ export default function useStoreFrontPrice(arg0, arg1) {
       if (null == tmp3) {
         priceState = closure_1_4.COUNTRY_PRICE_UNAVAILABLE;
       } else {
-        obj = callback(4139);
+        obj = callback(4218);
         const countryPrices = obj.getCountryPrices(tmp.id, closure_1_3.MOBILE);
         obj = { purchaseType: null, currency: null };
         obj[0] = closure_1_3.MOBILE;
         obj[1] = tmp11.currency;
-        const experimentalGetPriceResult = callback(4139).experimentalGetPrice(tmp.id, obj);
+        const experimentalGetPriceResult = callback(4218).experimentalGetPrice(tmp.id, obj);
         if (countryPrices.countryCode !== tmp11.country) {
           priceState = closure_1_4.MISMATCHING_COUNTRIES;
         } else if (null == experimentalGetPriceResult) {
@@ -44,7 +44,7 @@ export default function useStoreFrontPrice(arg0, arg1) {
           priceState = closure_1_4.PRICE_AVAILABLE;
         }
         const price = experimentalGetPriceResult;
-        const obj2 = callback(4139);
+        const obj2 = callback(4218);
       }
     }
     return { price, priceState };

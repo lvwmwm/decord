@@ -1,15 +1,15 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13257
+// Function ID: 13258
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 1386, 7700, 21, 4481, 1499, 13190, 7795, 4936, 1233, 7829, 586, 6990, 7699, 2]
+// Dependencies: [19, 17, 1957, 7768, 21, 4560, 1484, 13258, 7863, 4975, 1114, 7898, 504, 7050, 7767, 2]
 
-// Module 13189 (ForumChannelCloseSearchButton)
+// Module 13257 (ForumChannelCloseSearchButton)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "initialize" /* 7700 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "initialize" /* 7768 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -52,19 +52,19 @@ const memoResult = importAllResult.memo((channelId) => {
 const memoResult1 = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(13190);
+  let obj = channelId(13258);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   const tmp = callback();
   const items = [closure_6];
   const items1 = [channelId];
-  const stateFromStores = channelId(586).useStateFromStores(items, () => {
+  const stateFromStores = channelId(504).useStateFromStores(items, () => {
     let searchQuery = null;
     if (null != channelId) {
       searchQuery = closure_1_6.getSearchQuery(tmp);
     }
     return searchQuery;
   }, items1);
-  channelId(586);
+  channelId(504);
   [][0] = channelId;
   let tmp8Result = null;
   if (canSearchForumPostsByChannelId) {
@@ -103,8 +103,8 @@ const memoResult1 = importAllResult.memo((channelId) => {
         obj[1] = tmp8(tmp10, obj);
         tmp8Result = tmp8(tmp9, obj);
       } else {
-        const intl = tmp2(1233).intl;
-        const t = tmp2(1233).t;
+        const intl = tmp2(1114).intl;
+        const t = tmp2(1114).t;
         intl.string(tmp6 ? t["5h0QOP"] : t.Iy2gnS);
       }
       tmp9 = View;

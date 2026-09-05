@@ -1,25 +1,25 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16388
+// Function ID: 16389
 // Name: Username
-// Dependencies: [19, 17, 4503, 1386, 4120, 4572, 4130, 5240, 4500, 673, 21, 4481, 709, 16292, 10830, 9113, 11085, 16291, 586, 11042, 10811, 10809, 10810, 16313, 10807, 10826, 4477, 4325, 2]
+// Dependencies: [19, 17, 4582, 1957, 4199, 4600, 4209, 5279, 4579, 1074, 21, 4560, 576, 16368, 10899, 9184, 11153, 16367, 504, 11110, 10880, 10878, 10879, 16389, 10876, 10895, 4556, 4404, 2]
 
-// Module 16312 (Username)
-import ThemesDefault from "Themes" /* 709 */;
-import memoResult1Default from "memoResult1" /* 9113 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10830 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11085 */;
-import apexExperiment from "apexExperiment" /* 16292 */;
+// Module 16388 (Username)
+import ThemesDefault from "Themes" /* 576 */;
+import memoResult1Default from "memoResult1" /* 9184 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 10899 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11153 */;
+import apexExperiment from "apexExperiment" /* 16368 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "reset" /* 4503 */;
-import closure_5 from "ensureGuildLoaded" /* 1386 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
-import closure_7 from "sortActivity" /* 4572 */;
-import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "filterPlayingActivities" /* 5240 */;
-import closure_10 from "updateVoiceState" /* 4500 */;
-import { ActivityTypes } from "ME" /* 673 */;
+import closure_4 from "reset" /* 4582 */;
+import closure_5 from "ensureGuildLoaded" /* 1957 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4199 */;
+import closure_7 from "sortActivity" /* 4600 */;
+import closure_8 from "markAllUserIdListsStale" /* 4209 */;
+import closure_9 from "filterPlayingActivities" /* 5279 */;
+import closure_10 from "updateVoiceState" /* 4579 */;
+import { ActivityTypes } from "ME" /* 1074 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

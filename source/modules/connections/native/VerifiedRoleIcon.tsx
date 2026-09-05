@@ -1,19 +1,19 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7204
+// Function ID: 7205
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 673, 21, 709, 4481, 7145, 7126, 4424, 2]
+// Dependencies: [19, 17, 1074, 21, 576, 4560, 7205, 7186, 4503, 2]
 // Exports: default
 
-// Module 7144 (VerifiedRoleIcon)
+// Module 7204 (VerifiedRoleIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 709 */;
-import LinkIcon from "LinkIcon" /* 4424 */;
-import useRoleIcon from "useRoleIcon" /* 7126 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7145 */;
+import ThemesDefault from "Themes" /* 576 */;
+import LinkIcon from "LinkIcon" /* 4503 */;
+import useRoleIcon from "useRoleIcon" /* 7186 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7205 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 673 */;
+import ME from "ME" /* 1074 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4481 */;
+import createCacheKey from "createCacheKey" /* 4560 */;
 
 require = arg1;
 noopAll;

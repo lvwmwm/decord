@@ -1,15 +1,15 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13747
+// Function ID: 13748
 // Name: _handlePresenceUpdate
-// Dependencies: [7592, 4572, 1921, 673, 13673, 586, 706, 2]
+// Dependencies: [7659, 4600, 1371, 1074, 13748, 504, 573, 2]
 
-// Module 13672 (_handlePresenceUpdate)
-import initializeDefault from "initialize" /* 586 */;
-import dispatcherDefault from "dispatcher" /* 706 */;
-import closure_2 from "recomputeAffinities" /* 7592 */;
-import closure_3 from "sortActivity" /* 4572 */;
-import closure_4 from "mergeGuildAvatar" /* 1921 */;
-import { ActivityTypes } from "ME" /* 673 */;
+// Module 13747 (_handlePresenceUpdate)
+import initializeDefault from "initialize" /* 504 */;
+import dispatcherDefault from "dispatcher" /* 573 */;
+import closure_2 from "recomputeAffinities" /* 7659 */;
+import closure_3 from "sortActivity" /* 4600 */;
+import closure_4 from "mergeGuildAvatar" /* 1371 */;
+import { ActivityTypes } from "ME" /* 1074 */;
 
 function _handlePresenceUpdate(user) {
   user = user.user;

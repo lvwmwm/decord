@@ -1,9 +1,9 @@
-// Module ID: 677
-// Function ID: 678
+// Module ID: 1078
+// Function ID: 1079
 // Name: CollectibleSearchItemType
 // Dependencies: [2]
 
-// Module 677 (CollectibleSearchItemType)
+// Module 1078 (CollectibleSearchItemType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchItemType.tsx");
